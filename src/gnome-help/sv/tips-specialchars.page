@@ -7,6 +7,7 @@
 
     <revision pkgversion="3.8.2" version="0.3" date="2013-05-18" status="review"/>
     <revision pkgversion="3.10" date="2013-11-01" status="review"/>
+    <revision pkgversion="3.26" date="2017-11-27" status="review"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -19,6 +20,10 @@
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
       <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Andre Klapper</name>
+      <email>ak-47@gmx.net</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -40,7 +45,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Anders Jonsson</mal:name>
       <mal:email>anders.jonsson@norsjovallen.se</mal:email>
-      <mal:years>2016</mal:years>
+      <mal:years>2016, 2017</mal:years>
     </mal:credit>
   </info>
 
@@ -52,19 +57,11 @@
     <title>Metoder att mata in tecken</title>
   </links>
 
-  <section id="charmap">
-    <title>Teckentabell</title>
-    <p>GNOME erbjuder ett teckentabellsprogram som låter dig bläddra genom alla tecken i Unicode. Använd teckentabellen för att hitta tecknet du önskar och kopiera och klistra sedan in det där du behöver det.</p>
-
-    <p>Du kan hitta <app>Teckentabell</app> i översiktsvyn <gui>Aktiviteter</gui>. För mer information om teckentabellen, se <link href="help:gucharmap">manualen för Teckentabell</link>.</p>
-
-  </section>
-
   <section id="characters">
     <title>Tecken</title>
-    <p>Ett annat användbart program som följer med GNOME är <app>Tecken</app>. Det låter dig söka efter och infoga ovanliga tecken genom att bläddra genom teckenkategorier eller leta efter nyckelord.</p>
+    <p>GNOME kommer med ett teckentabellprogram som låter dig söka efter och infoga ovanliga tecken, inklusive emojitecken, genom att bläddra genom teckenkategorier eller leta efter nyckelord.</p>
 
-    <p>Du kan starta <app>Tecken</app> i översiktsvyn <gui>Aktiviteter</gui>. För mer information om Tecken, se <link href="help:gnome-characters">handboken för Tecken</link>.</p>
+    <p>Du kan köra <app>Tecken</app> från översiktsvyn Aktiviteter.</p>
 
   </section>
 
@@ -73,19 +70,43 @@
     <p>En Compose-tangent är en speciell tangent som låter dig trycka ner flera tangenter i rad för att få ett specialtecken. För att till exempel skriva det apostroferade tecknet <em>é</em> kan du trycka på <key>compose</key> och sedan <key>'</key> och sedan <key>e</key>.</p>
     <p>Tangentbord har inte specifika compose-tangenter. Istället kan du definiera en av de existerande tangenterna på ditt tangentbord som en compose-tangent.</p>
 
+    <note style="important">
+      <p>Du måste ha <app>Justering</app> installerat på din dator för att ändra denna inställning.</p>
+      <if:if xmlns:if="http://projectmallard.org/if/1.0/" test="action:install">
+        <p><link style="button" action="install:gnome-tweaks">Installera <app>Justering</app></link></p>
+      </if:if>
+    </note>
+
     <steps>
       <title>Definiera en compose-tangent</title>
       <item>
-        <p>Öppna översiktsvyn <gui xref="shell-introduction#activities">Aktiviteter</gui> och börja skriv <gui>Tangentbord</gui>.</p>
+        <p>Öppna översiktsvyn <gui xref="shell-introduction#activities">Aktiviteter</gui> och börja skriv <gui>Justering</gui>.</p>
       </item>
       <item>
-        <p>Klicka på <gui>Tangentbord</gui> för att öppna panelen.</p>
+        <p>Klicka på <gui>Justering</gui> för att öppna programmet.</p>
       </item>
-      <item><p>Välj fliken <gui>Genvägar</gui> och klicka på <gui>Skriva</gui>.</p></item>
-      <item><p>Klicka på <gui>Compose-tangenten</gui> i den högra panelen.</p></item>
-      <item><p>Klicka på <gui>Inaktiverad</gui> och välj tangenten som du vill ska bete sig som en compose-tangent från rullgardinsmenyn. Du kan välja endera av <key>Ctrl</key>-tangenterna, den högra <key>Alt</key>-tangenten, den högra <key>Win</key>-tangenten eller <key xref="keyboard-key-super">Super</key>-tangenten om du har en, <key xref="keyboard-key-menu">Meny</key>-tangenten eller <key>Caps Lock</key>. Tangenten du väljer kommer därefter att fungera som en compose-tangent och inte längre för sitt tidigare ändamål.</p></item>
+      <item>
+        <p>Klicka på <gui>Tangentbord &amp; mus</gui>-fliken.</p>
+      </item>
+      <item>
+        <p>Tryck på <gui>Inaktiverad</gui> intill inställningen <gui>Compose-tangent</gui>.</p>
+      </item>
+      <item>
+        <p>Slå på växeln i dialogen och välj tangentbordsgenvägen du vill använda.</p>
+      </item>
+      <item>
+        <p>Kryssa i kryssrutan för den knapp du vill använda som Compose-tangent.</p>
+      </item>
+      <item>
+        <p>Stäng dialogrutan.</p>
+      </item>
+      <item>
+        <p>Stäng fönstret <gui>Justering</gui>.</p>
+      </item>
     </steps>
+
     <p>Du kan mata in många vanliga tecken genom att använda compose-tangenten, till exempel:</p>
+
     <list>
       <item><p>Tryck <key>compose</key> sedan <key>'</key> och sedan ett tecken för att placera en akut accent ovanför det tecknet, som till exempel <em>é</em>.</p></item>
       <item><p>Tryck <key>compose</key> sedan <key>`</key> och sedan ett tecken för att placera en grav accent ovanför det tecknet, som till exempel <em>è</em>.</p></item>
@@ -98,9 +119,9 @@
 <section id="ctrlshiftu">
   <title>Kodpunkter</title>
 
-  <p>Du kan mata in vilket Unicode-tecken som helst genom att använd bara ditt tangentbord med tecknets numeriska kodpunkt. Varje tecken identifieras med en fyra-teckens kodpunkt. För att hitta kodpunkten för ett tecken, hitta tecknet i teckentabellprogrammet och titta i statusraden eller fliken <gui>Teckendetaljer</gui>. Kodpunkten är de fyra tecknen efter <gui>U+</gui>.</p>
+  <p>Du kan mata in vilket Unicode-tecken som helst genom att använda bara ditt tangentbord med tecknets numeriska kodpunkt. Varje tecken identifieras med en fyra-teckens kodpunkt. För att hitta kodpunkten för ett tecken, slå upp det i programmet <app>Tecken</app>. Kodpunkten är de fyra tecknen efter <gui>U+</gui>.</p>
 
-  <p>För att mata in ett tecken via dess kodpunkt, håll ner <key>Ctrl</key> och <key>Skift</key> och skriv <key>U</key> följt av den fyra tecken långa kodpunkten, och släpp sedan <key>Ctrl</key> och <key>Skift</key>. Om du ofta använder tecken som du inte kan nå enkelt med andra metoder kan det vara värdefullt att memorera kodpunkterna för de tecknen så att du kan mata in dem snabbt.</p>
+  <p>För att mata in ett tecken via dess kodpunkt, tryck <keyseq><key>Ctrl</key><key>Skift</key><key>U</key></keyseq>, skriv sedan den fyra tecken långa kodpunkten, och tryck <key>Blanksteg</key> eller <key>Retur</key>. Om du ofta använder tecken som du inte kan nå enkelt med andra metoder kan det vara värdefullt att memorera kodpunkterna för de tecknen så att du kan mata in dem snabbt.</p>
 
 </section>
 

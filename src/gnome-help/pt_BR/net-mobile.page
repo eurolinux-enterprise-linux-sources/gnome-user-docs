@@ -6,6 +6,7 @@
 
     <revision pkgversion="3.14" date="2014-11-10" status="review"/>
     <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.24" date="2017-03-26" status="final"/>
 
     <credit type="author">
       <name>Projeto de documentação do GNOME</name>
@@ -44,7 +45,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Rafael Fontenelle</mal:name>
       <mal:email>rafaelff@gnome.org</mal:email>
-      <mal:years>2012-2016.</mal:years>
+      <mal:years>2012-2018.</mal:years>
     </mal:credit>
   </info>
 
@@ -61,7 +62,7 @@
   <item>
     <p>Selecione <gui><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-excellent-symbolic.svg" width="16" height="16"/> Banda larga móvel desligada</gui>. A seção <gui>Banda larga</gui> do menu se expandirá.</p>
       <note>
-        <p>Se <gui>Banda larga</gui> não aparecer no menu de status do sistema, certifique-se de que seu dispositivo não esteja definido como armazenamento de dados (em inglês, "mass storage").</p>
+        <p>Se <gui>Banda larga</gui> não aparecer no menu de status do sistema, certifique-se de que seu dispositivo não esteja definido como armazenamento de dados (em inglês, “mass storage”).</p>
       </note>
     </item>
     <item><p>Selecione <gui>Conectar</gui>. Se você está conectando pela primeira vez, o assistente <gui>Configurar uma conexão de banda larga móvel</gui> é iniciado. A tela de abertura exibe uma lista de informação necessária. Clique em <gui style="button">Próximo</gui>.</p></item>
@@ -70,5 +71,9 @@
     <item><p>Selecione um plano de acordo com o tipo de dispositivo que você está conectando. Isso vai determinar o nome do ponto de acesso (APN). Clique em <gui style="button">Próximo</gui>.</p></item>
     <item><p>Confirme as configurações que você selecionou clicando em <gui style="button">Aplicar</gui>. O assistente vai fechar o painel de <gui>Rede</gui> vai exibir as propriedades da sua conexão.</p></item>
   </steps>
+
+    <note style="tip">
+      <p>Alguns telefones possuem uma configuração chamada <em>Ancoragem USB</em> que requer nenhuma configuração no computador. Quando a configuração estiver ativada no telefone, a conexão será mostrada como <gui>Ethernet conectada</gui> no menu de sistema e <gui>Ethernet USB</gui> no painel de rede.</p>
+    </note>
 
 </page>

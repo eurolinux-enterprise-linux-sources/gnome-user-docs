@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="fonts" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="appearance"/>
+    <link type="seealso" xref="fonts-user"/>
+    <revision pkgversion="3.11" date="2014-01-29" status="draft"/>
+
+    <credit type="author copyright">
+      <name>Matthias Clasen</name>
+      <email>matthias.clasen@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Jana Svarova</name>
+      <email>jana.svarova@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+
+    <desc>Adicione fontes extras para todos os usuários.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Adicionando uma fonte extra para todos os usuários</title>
+
+  <p>Você pode instalar uma fonte extra que estará disponível para os usuários em aplicativos que usam <sys>fontconfig</sys> para manipulação de fonte.</p>
+
+  <steps>
+    <title>Instalando uma fonte extra</title>
+    <item>
+      <p>Copie a fonte para o diretório <file>/usr/local/share/fonts/</file> para instalá-la.</p>
+    </item>
+    <item>
+      <p>Você pode precisar executar o seguinte comando para atualizar o cache de fonte:</p>
+      <screen><output>$ </output><input>fc-cache /usr/local/share/fonts/</input></screen>
+    </item>
+  </steps>
+
+  <p>Você pode precisar reiniciar aplicativos em execução para ver as alterações. Sessões de usuários não precisam ser reiniciadas.</p>
+  
+  <p>Alternativamente, você também pode instalar fontes em outro diretório de sistema além do <file>/usr/local/share/fonts/</file> se aquele diretório estiver listado no arquivo <file>/etc/fonts/fonts.conf</file>. Se não estiver, então você precisa criar seu próprio arquivo de configuração para todo sistema em <file>/etc/fonts/local.conf</file> contendo o diretório que você deseja usar. Veja a página man <cmd>fonts-conf</cmd>(5) para mais informações.</p>
+  <p>Se você está usando um diretório alternativo, lembre-se de especificar o nome do diretório quando atualizar o cache de fontes com o comando <cmd>fc-cache</cmd>:</p>
+  <screen><output>$ </output><input>fc-cache <var>nome_diretório</var></input></screen>
+
+</page>

@@ -35,70 +35,61 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Add keyboard layouts and switch between them.</desc>
+    <desc>Toetsenbordindelingen toevoegen en verwisselen.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Justin van Steijn</mal:name>
+      <mal:email>justin50@live.nl</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hannie Dumoleyn</mal:name>
+      <mal:email>hannie@ubuntu-nl.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
   </info>
 
-  <title>Use alternative keyboard layouts</title>
+  <title>Alternatieve toetsenbordindelingen gebruiken</title>
 
-  <p>Keyboards come in hundreds of different layouts for different languages.
-  Even for a single language, there are often multiple keyboard layouts, such
-  as the Dvorak layout for English. You can make your keyboard behave like a
-  keyboard with a different layout, regardless of the letters and symbols
-  printed on the keys. This is useful if you often switch between multiple
-  languages.</p>
+  <p>Toetsenborden zijn er in honderden verschillende indelingen voor verschillende talen. Zelfs voor één taal zijn er vaak meerdere toetsenbordindelingen, zoals de Dvorak-indeling voor Engels. U kunt uw toetsenbord zo instellen dat deze zich gedraagt als een toetsenbord met een andere indeling, ongeacht de letters en symbolen die u op de toetsen ziet staan. Dit is handig wanneer u vaak wisselt van taal.</p>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Region &amp; Language</gui>.</p>
+      <p>Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht en begin met het typen van <gui>Regio en taal</gui>.</p>
     </item>
     <item>
-      <p>Click on <gui>Region &amp; Language</gui> to open the panel.</p>
+      <p>Klik op <gui>Regio &amp; taal</gui> om het paneel te openen.</p>
     </item>
     <item>
-      <p>Click the <gui>+</gui> button in the <gui>Input Sources</gui> section,
-      select the language which is associated with the layout, then select a
-      layout and press <gui>Add</gui>.</p>
+      <p>Klik op de <gui>+</gui> knop in de sectie <gui>Invoerbronnen</gui>, kies de taal die hoort bij de indeling, kies dan een indeling en druk op <gui>Toevoegen</gui>.</p>
     </item>
   </steps>
 
-  <note style="sidebar">
-    <p>You can preview an image of any layout by selecting it in the list of
-    <gui>Input Sources</gui> and clicking
-    <gui><media its:translate="no" type="image" src="figures/input-keyboard-symbolic.png" width="16" height="16"><span its:translate="yes">preview</span></media></gui></p>
+  <note style="tip">
+    <p>If there are multiple user accounts on your system, there is a separate
+    instance of the <gui>Region &amp; Language</gui> panel for the login screen.
+    Click the <gui>Login Screen</gui> button at the top right to toggle between
+    the two instances.</p>
+
+    <p>Some rarely used keyboard layout variants are not available by default when you click
+    the <gui>+</gui> button. To make also those input sources available you can open a terminal
+    window by pressing <keyseq><key>Ctrl</key><key>Alt</key><key>T</key></keyseq>
+    and run this command:</p>
+    <p><cmd its:translate="no">gsettings set org.gnome.desktop.input-sources show-all-sources true</cmd></p>
   </note>
 
-  <p>Certain languages offer some extra configuration options. You can
-  identify those languages because they have a
-  <gui><media its:translate="no" type="image" src="figures/system-run-symbolic.svg" width="16" height="16"><span its:translate="yes">preview</span></media></gui> icon next to them. If you want to access
-  these extra parameters, select the language from the <gui>Input Source</gui>
-  list and a new
-  <gui style="button"><media its:translate="no" type="image" src="figures/emblem-system-symbolic.svg" width="16" height="16"><span its:translate="yes">preferences</span></media></gui> button will give you access
-  to the extra settings.</p>
+  <note style="sidebar">
+    <p>U kunt een voorbeeld bekijken van een indeling door deze in de lijst met <gui>Invoerbronnen</gui> te selecteren en te klikken op <gui><media its:translate="no" type="image" src="figures/input-keyboard-symbolic.png" width="16" height="16"><span its:translate="yes">voorbeeld</span></media></gui></p>
+  </note>
 
-  <p>When you use multiple layouts, you can choose to have all windows use the
-  same layout or to set a different layout for each window. Using a different
-  layout for each window is useful, for example, if you're writing an article
-  in another language in a word processor window. Your keyboard selection will
-  be remembered for each window as you switch between windows. Press the
-  <gui style="button">Options</gui> button to select how you want to manage
-  multiple layouts.</p>
+  <p>Sommige talen bieden een aantal extra configuratieopties. U herkent deze talen aan een <gui><media its:translate="no" type="image" src="figures/system-run-symbolic.svg" width="16" height="16"><span its:translate="yes">voorbeeld</span></media></gui> pictogram dat u ernaast ziet staan. Als u toegang wilt hebben tot deze extra parameters, selecteer dan de taal in de lijst met <gui>Invoerbronnen</gui>; een nieuwe <gui style="button"><media its:translate="no" type="image" src="figures/emblem-system-symbolic.svg" width="16" height="16"><span its:translate="yes">voorkeuren</span></media></gui> knop geeft u toegang tot de extra instellingen.</p>
 
-  <p>The top bar will display a short identifier for the current layout, such as
-  <gui>en</gui> for the standard English layout. Click the layout indicator and
-  select the layout you want to use from the menu. If the selected language has
-  any extra settings, they will be shown below the list of available layouts.
-  This gives you a quick overview of your settings. You can also open an image
-  with the current keyboard layout for reference.</p>
+  <p>Wanneer u meerdere indelingen gebruikt, kunt u ervoor kiezen dat alle vensters dezelfde indeling gebruiken of een andere indeling instellen voor elk venster. Het gebruik van een andere indeling voor elk venster is bijvoorbeeld handig wanneer u in een tekstverwerkingsvenster een artikel schrijft in een andere taal. De keuze van uw toetsenbord zal worden onthouden voor elk venster wanneer u van venster wisselt. Druk op de knop <gui style="button">Opties</gui> om te selecteren hoe u om wilt gaan met meerdere indelingen.</p>
 
-  <p>The fastest way to change to another layout is by using the 
-  <gui>Input Source</gui> <gui>Keyboard Shortcuts</gui>. These shortcuts open 
-  the <gui>Input Source</gui> chooser where you can move forward and backward. 
-  By default, you can switch to the next input source with 
-  <keyseq><key xref="keyboard-key-super">Super</key><key>Space</key></keyseq>
-  and to the previous one with
-  <keyseq><key>Shift</key><key>Super</key><key>Space</key></keyseq>. You can
-  change these shortcuts in the <gui>Keyboard</gui> settings.</p>
+  <p>In de bovenbalk ziet u een korte identificatie van de huidige indeling, zoals <gui>en</gui> voor de standaard Engelse indeling. Klik op de indelingenindicator en kies uit het menu de indeling die u wilt gebruiken. Als de geselecteerde taal over extra instellingen beschikt, dan ziet u deze onder de lijst met beschikbare indelingen. Dit geeft u een snel overzicht van uw instellingen. U kunt ook een afbeelding openen met de huidige toetsenbordindeling ter referentie.</p>
+
+  <p>De snelste manier om naar een andere indeling te gaan is via de <gui>Sneltoetsen</gui> voor <gui>Invoerbronnen</gui>. Met deze sneltoetsen opent u de <gui>Invoebron</gui>kiezer waarin u heen en weer kunt bewegen. Standaard gaat u naar de volgende invoerbron met <keyseq><key xref="keyboard-key-super">Super</key><key>Spatiebalk</key></keyseq> en naar de vorige met <keyseq><key>Shift</key><key>Super</key><key>Spatiebalk</key></keyseq>. U kunt deze sneltoetsen wijzigen in de <gui>Toetsenbord</gui>-instellingen.</p>
 
   <p><media type="image" src="figures/input-methods-switcher.png"/></p>
 

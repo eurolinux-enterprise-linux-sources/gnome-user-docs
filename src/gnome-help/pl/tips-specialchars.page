@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="tips-specialchars" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="tips"/>
+    <link type="seealso" xref="keyboard-layouts"/>
+
+    <revision pkgversion="3.8.2" version="0.3" date="2013-05-18" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
+    <revision pkgversion="3.26" date="2017-11-27" status="review"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Andre Klapper</name>
+      <email>ak-47@gmx.net</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Wpisywanie znaków, których nie ma na klawiaturze, w tym z innych alfabetów, symbole matematyczne i inne kształty.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Wpisywanie znaków specjalnych</title>
+
+  <p>Można wpisywać i przeglądać tysiące znaków z większości pism świata, nawet tych, których nie ma na klawiaturze. Ta strona opisuje kilka różnych sposobów wpisywania znaków specjalnych.</p>
+
+  <links type="section">
+    <title>Metody wprowadzania znaków</title>
+  </links>
+
+  <section id="characters">
+    <title>Znaki</title>
+    <p>GNOME zawiera tablicę znaków umożliwiającą wyszukiwanie i wstawianie nietypowych znaków, w tym emoji, przez przeglądanie kategorii znaków i wyszukiwanie słów kluczowych.</p>
+
+    <p>Można uruchomić program <app>Znaki</app> z ekranu podglądu.</p>
+
+  </section>
+
+  <section id="compose">
+    <title>Klawisz Compose</title>
+    <p>„Compose” to specjalny klawisz umożliwiający naciśnięcie kilku klawiszy po kolei, aby uzyskać znak specjalny. Na przykład, aby wpisać literę diakrytyczną <em>é</em>, można nacisnąć klawisz <key>Compose</key> plus <key>'</key> i <key>e</key>.</p>
+    <p>Klawiatury nie mają konkretnego klawisza Compose. Zamiast tego można określić, aby jeden z istniejących klawiszy działał jako klawisz Compose.</p>
+
+    <note style="important">
+      <p>Aby zmienić to ustawienie, na komputerze musi być zainstalowany program <app>Dostrajanie</app>.</p>
+      <if:if xmlns:if="http://projectmallard.org/if/1.0/" test="action:install">
+        <p><link style="button" action="install:gnome-tweaks">Zainstaluj program <app>Dostrajanie</app></link></p>
+      </if:if>
+    </note>
+
+    <steps>
+      <title>Określanie klawisza Compose</title>
+      <item>
+        <p>Otwórz <gui xref="shell-introduction#activities">ekran podglądu</gui> i zacznij pisać <gui>Dostrajanie</gui>.</p>
+      </item>
+      <item>
+        <p>Kliknij ikonę <gui>Dostrajanie</gui>, aby otworzyć program.</p>
+      </item>
+      <item>
+        <p>Kliknij kartę <gui>Klawiatura i mysz</gui>.</p>
+      </item>
+      <item>
+        <p>Kliknij przycisk <gui>Wyłączone</gui> obok ustawienia <gui>Klawisz Compose</gui>.</p>
+      </item>
+      <item>
+        <p>Włącz klawisz Compose w oknie i wybierz skrót klawiszowy do użycia.</p>
+      </item>
+      <item>
+        <p>Zaznacz pole wyboru klawisza, który ustawić jako klawisz Compose.</p>
+      </item>
+      <item>
+        <p>Zamknij okno.</p>
+      </item>
+      <item>
+        <p>Zamknij okno programu <gui>Dostrajanie</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Można wpisywać wiele popularnych znaków za pomocą klawisza Compose, na przykład:</p>
+
+    <list>
+      <item><p>Naciśnij klawisz <key>Compose</key> plus <key>'</key> i literę, aby umieścić kreskę nad tą literą, taką jak <em>é</em>.</p></item>
+      <item><p>Naciśnij klawisz <key>Compose</key> plus <key>`</key> (grawis) i literę, aby umieścić grawis nad tą literą, taką jak <em>è</em>.</p></item>
+      <item><p>Naciśnij klawisz <key>Compose</key> plus <key>'</key> i literę, aby umieścić kreskę nad tą literą, taką jak <em>é</em>.</p></item>
+      <item><p>Naciśnij klawisz <key>Compose</key> plus <key>-</key> i literę, aby umieścić makron nad tą literą, taką jak <em>ē</em>.</p></item>
+    </list>
+    <p><link href="https://pl.wikipedia.org/wiki/Klawisz_komponujący#Efekty_korzystania_z_klawisza_komponującego">Artykuł o klawiszu Compose w Wikipedii</link> zawiera więcej dostępnych sekwencji.</p>
+  </section>
+
+<section id="ctrlshiftu">
+  <title>Punkty kodowe</title>
+
+  <p>Można wpisać każdy znak Unicode używając tylko klawiatury za pomocą numerycznego punktu kodowego znaku. Każdy znak ma czteroznakowy punkt kodowy. Aby znaleźć punkt kodowy dla znaku, wyszukaj go w programie <app>Znaki</app>. Punkt kodowy to cztery znaki po <gui>U+</gui>.</p>
+
+  <p>Aby wpisać znak według jego punktu kodowego, naciśnij klawisze <keyseq><key>Ctrl</key><key>Shift</key><key>U</key></keyseq>, a następnie wpisz czteroznakowy kod i naciśnij <key>spację</key> lub <key>Enter</key>. Jeśli często używane są znaki, których nie da się łatwo wpisać za pomocą pozostałych metod, to może być warto zapamiętać ich punkty kodowe, aby móc je szybko wpisywać.</p>
+
+</section>
+
+  <section id="layout">
+    <title>Układy klawiatury</title>
+    <p>Można ustawić klawiaturę tak, aby działała jak klawiatura dla innego języka, niezależnie od liter wydrukowanych na klawiszach. Można nawet łatwo przełączać się między różnymi układami klawiatury za pomocą ikony na górnym pasku. <link xref="keyboard-layouts"/> zawiera więcej informacji.</p>
+  </section>
+
+<section id="im">
+  <title>Metody wprowadzania</title>
+
+  <p>Metoda wprowadzania rozszerza poprzednio opisane metody, umożliwiając wpisywanie znaków nie tylko za pomocą klawiatury, ale także dowolnych urządzeń wejściowych. Na przykład, można wpisywać znaki myszą za pomocą metody gestów lub japońskie znaki na klawiaturze dla alfabetu łacińskiego.</p>
+
+  <p>Aby wybrać metodę wprowadzania, kliknij pole tekstowe prawym przyciskiem myszy i w menu <gui>Metoda wprowadzania</gui> wybierz metodę do użycia. Nie ma domyślnej metody wprowadzania, więc dokumentacja metod zawiera informacje o tym, jak ich używać.</p>
+
+</section>
+
+</page>

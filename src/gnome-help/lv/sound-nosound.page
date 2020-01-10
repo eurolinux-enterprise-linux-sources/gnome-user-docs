@@ -15,31 +15,23 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Check that the sound is not muted, that cables are plugged in properly,
-    and that the sound card is detected.</desc>
+    <desc>Pārbaudiet, vai skaņa nav apklusināta, vai kabeļi ir iesprausti kārtīgi un vai skaņu karte ir atpazīta.</desc>
   </info>
 
-<title>I cannot hear any sounds on the computer</title>
+<title>Es nedzirdu nekādas skaņas no datora</title>
 
-  <p>If you cannot hear any sounds on your computer, for example when you try
-  to play music, go through the following troubleshooting tips.</p>
+  <p>Ja nedzirdat nekādas skaņas savā datorā, piemēram, atskaņojot mūziku, ejiet cauri sekojošajiem atkļūdošanas padomiem.</p>
 
 <section id="mute">
   <title>Pārliecinieties, ka skaņa nav apklusināta</title>
 
-  <p>Open the <gui xref="shell-introduction#yourname">system menu</gui> and make sure that
-  the sound is not muted or turned down.</p>
+  <p>Atveriet <gui xref="shell-introduction#yourname">sistēmas izvēlni</gui> un pārliecinieties, ka skaņa nav atslēgta vai izslēgta pavisam.</p>
 
-  <p>Some laptops have mute switches or keys on their keyboards — try pressing
-  that key to see if it unmutes the sound.</p>
+  <p>Dažiem klēpjdatoriem ir skaņas atslēgšanas slēdži vai pogas uz tastatūrām — pamēģiniet nospiest šo taustiņu, lai pārbaudītu, vai tas ieslēdz skaņu.</p>
 
-  <p>You should also check that you have not muted the application that you are
-  using to play sound (for example, your music player or movie player). The
-  application may have a mute or volume button in its main window, so check
-  that.</p>
+  <p>Vajadzētu arī pārliecināties, ka lietotne, kuru izmantojat, lai atskaņotu, piemēram, mūziku, nav apklusināta. Lietotnei vajadzētu būt skaņas regulācijas pogai galvenajā logā — pārbaudiet to.</p>
 
-  <p>Also, you can check the <gui>Applications</gui> tab in the <gui>Sound</gui>
-  GUI:</p>
+  <p>Arī pārbaudiet <gui>Lietotņu</gui> cilni <gui>Skaņas</gui> GUI:</p>
   <steps>
     <item>
     <p>Atveriet lietotni <app>Iestatījumi</app> no <gui>Aktivitāšu</gui> pārskata.</p>
@@ -48,8 +40,7 @@
       <p>Spiediet <gui>Skaņa</gui>.</p>
     </item>
     <item>
-      <p>Go to the <gui>Applications</gui> tab and check that your application
-      is not muted.</p>
+      <p>Ejiet uz cilni <gui>Lietotnes</gui> un pārliecinieties, ka jūsu lietotne nav apklusināta.</p>
     </item>
   </steps>
 
@@ -57,28 +48,17 @@
 
 <section id="speakers">
   <title>Pārliecinieties, ka skaļruņi ir ieslēgti un pareizi savienoti</title>
-  <p>If your computer has external speakers, make sure that they are turned on
-  and that the volume is turned up. Make sure that the speaker cable is securely
-  plugged into the "output" audio socket on your computer. This socket
-  is usually light green in color.</p>
+  <p>Ja datoram ir ārējie skaļruņi, pārliecinieties, ka tie ir ieslēgti un ir uzgriezts skaļums. Pārliecinieties, ka skaļruņa kabelis ir droši iesprausts “izejas” audio kontaktā jūsu datorā. Parasti kontakts ir gaiši zaļā krāsā.</p>
 
-  <p>Some sound cards can switch between the socket they use for output
-  (to the speakers) and the socket for input (from a microphone, for instance).
-  The output socket may be different when running Linux, Windows or Mac OS.
-  Try connecting the speaker cable to a different audio socket on your
-  computer.</p>
+  <p>Dažas skaņu kartes spēj pārslēgties starp kontaktiem, kuru izmanto izejai (skaļruņiem) un kontaktiem ieejai (piemēram, mikrofonam). Izejas kontakts Linux var atšķirties no tā, kurš ir, piemēram, Windows vai Mac OS. Pamēģiniet pieslēgt atskaņotāju citā kontaktā.</p>
 
- <p>A final thing to check is that the audio cable is securely plugged into the
- back of the speakers. Some speakers have more than one input, too.</p>
+ <p>Pēdējā lieta, ko pārbaudīt ir tas, vai audio kabelis ir droši iesprausts skaļruņu aizmugurē. Dažiem skaļruņiem var būt vairāk nekā viena ieeja.</p>
 </section>
 
 <section id="device">
   <title>Pārbaudiet, vai pareizā skaņas ierīce ir izvēlēta</title>
 
-  <p>Some computers have multiple "sound devices" installed. Some of these are
-  capable of outputting sound and some are not, so you should check that you
-  have the correct sound device selected. This might involve some
-  trial-and-error to choose the right one.</p>
+  <p>Dažiem datoriem ir instalētas vairākas “skaņu ierīces”.  Dažas no tām var atskaņot skaņu, bet dažas nē, tāpēc vajadzētu pārbaudīt, vai ir izvēlēta pareizā skaņas ierīce. Šeit varētu būt nepieciešami vairāki izmēģinājumi, lai atrastu pareizo.</p>
 
   <steps>
     <item>
@@ -88,12 +68,9 @@
       <p>Spiediet <gui>Skaņa</gui>, lai atvērtu paneli.</p>
     </item>
     <item>
-      <p>In the <gui>Output</gui> tab, change the <gui>Profile</gui>
-      settings for the selected device and play a sound to see if it works.
-      You might need to go through the list and try each profile.</p>
+      <p>Cilnē <gui>Izvade</gui> mainiet <gui>Profila</gui> iestatījumus izvēlētajai ierīcei un nospēlējiet skaņu, lai redzētu, vai tas strādās. Varbūt vajadzēs iet cauri visam sarakstam un izmēģināt visus profilus.</p>
 
-      <p>If that does not work, you might want to try doing the same for any
-      other devices that are listed.</p>
+      <p>Ja tas nestrādā, vajadzētu to pašu izmēģināt visām pārējām uzskaitītajām ierīcēm.</p>
     </item>
   </steps>
 
@@ -103,36 +80,24 @@
 
  <title>Pārbaudiet, vai skaņu karte tika pareizi atpazīta</title>
 
-  <p>Your sound card may not have been detected properly probably because 
-  the drivers for the card are not installed. You may need to install the drivers
-  for the card manually. How you do this depends on the type of the card. </p>
+  <p>Ja skaņu karte nav atpazīta, iespējams, iespējams, ka nav uzinstalēti draiveri. Iespējams, jums vajadzēs ieinstalēt šīs kartes draiverus. Kā tas ir izdarāms, ir atkarīgs no skaņas kartes.</p>
 
-  <p>Run the <cmd>lspci</cmd> command in the Terminal to find out what sound
-  card you have:</p>
+  <p>Palaidiet <cmd>lspci</cmd> komandu no termināļa, lai uzzinātu, kāda jums ir skaņas karte:</p>
   <steps>
     <item>
       <p>Dodieties uz <gui>Aktivitāte</gui> pārskatu un atveriet Termināli.</p>
     </item>
     <item>
-      <p>Run <cmd>lspci</cmd> as <link xref="user-admin-explain">superuser</link>;
-      either type <cmd>sudo lspci</cmd> and type your password, or type
-      <cmd>su</cmd>, enter the <em>root</em> (administrative) password,
-      then type <cmd>lspci</cmd>.</p>
+      <p>Palaidiet <cmd>lspci</cmd> kā <link xref="user-admin-explain">superlietotājam</link>; cita iespēja ir ierakstīt <cmd>sudo lspci</cmd> un ierakstīt paroli, vai ierakstīt <cmd>su</cmd>, un ievadīt <em>galveno</em> (administratora) paroli, un ierakstīt <cmd>lspci</cmd>.</p>
     </item>
     <item>
-      <p>Check if an <em>audio controller</em> or <em>audio device</em> is listed:
-      in such case you should see the make and model number of the sound card. 
-      Also, <cmd>lspci -v</cmd> shows a list with more detailed information.</p>
+      <p>Pārliecinieties, ka <em>audio kontrolieris</em> vai <em>audio ierīce</em> ir sarakstā: ja ir, jābūt redzamam tās markai un modeļa numuram. Kā arī, <cmd>lspci -v</cmd> parāda sarakstu ar detalizētāku informāciju.</p>
     </item>
   </steps>
 
-  <p>You may be able to find and install drivers for your card. It is best to
-  ask on support forums (or otherwise) for your Linux distribution for
-  instructions.</p>
+  <p>Jūs varētu varēt atrast un instalēt savas skaņu kartes draiverus. Vislabāk attiecīgās Linux distribūcijas instalēšanas norādījumus taujāt ir palīdzības forumos (vai citādi).</p>
 
-  <p>If you cannot get drivers for your sound card, you might prefer to buy a
-  new sound card. You can get sound cards that can be installed inside the
-  computer and external USB sound cards.</p>
+  <p>Ja nevarat dabūt savas skaņu kartes draiverus, jūs varētu dot priekšroku jaunas skaņu kartes iegādei. Ir pieejamas gan datora iekšējās skaņas kartes, gan ārējās USB skaņas kartes.</p>
 
 </section>
 

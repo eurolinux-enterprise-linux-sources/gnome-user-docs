@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="lockdown-file-saving" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="user-settings#lockdown"/>
+    <link type="seealso" xref="dconf-lockdown"/>
+    <revision pkgversion="3.11" date="2014-10-14" status="candidate"/>
+
+    <credit type="author copyright">
+      <name>Jana Svarova</name>
+      <email>jana.svarova@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+    <desc>A felhasználó megakadályozása abban, hogy fájlokat mentsen a lemezre.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>ur.balazs@fsf.hu</mal:email>
+      <mal:years>2018.</mal:years>
+    </mal:credit>
+  </info>
+  
+  <title>Fájlmentés letiltása</title>
+
+  <p>Letilthatja a <gui>Mentés</gui> és <gui>Mentés másként</gui> párbeszédablakokat. Ez akkor lehet hasznos, ha átmeneti hozzáférés ad egy felhasználónak, vagy ha nem szeretné, hogy a felhasználó fájlokat mentsen a számítógépre.</p>
+
+  <note style="warning">
+    <p>Ez a funkció csak azokban az alkalmazásokban működik, amely támogatja azt! Nem minden GNOME és harmadik féltől származó alkalmazás rendelkezik a funkció engedélyezésével. Ezeknek a változtatásoknak nem lesz hatása azokban az alkalmazásokban, amelyek nem támogatják ezt a funkciót.</p>
+  </note>
+
+  <steps>
+    <title>Fájlmentés letiltása</title>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-user'])"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-user-dir'])"/>
+    <item>
+      <p>Hozza létre az <file>/etc/dconf/db/local.d/00-filesaving</file> kulcsfájlt, hogy információkat biztosítson a <sys>helyi</sys> adatbázisnak.</p>
+      <listing>
+        <title><file>/etc/dconf/db/local.d/00-filesaving</file></title>
+<code>
+# A dconf útvonal megadása
+[org/gnome/desktop/lockdown]
+
+# A felhasználó megakadályozása abban, hogy fájlokat mentsen a lemezre
+disable-save-to-disk=true
+</code>
+     </listing>
+    </item>
+    <item>
+      <p>Azért, hogy megakadályozza a felhasználót a beállítások felülbírálásában, hozza létre az <file>/etc/dconf/db/local.d/locks/filesaving</file> fájlt a következő tartalommal:</p>
+      <listing>
+        <title><file>/etc/dconf/db/local.db/locks/filesaving</file></title>
+<code>
+# Fájlmentési beállítások zárolása
+/org/gnome/desktop/lockdown/disable-save-to-disk
+</code>
+      </listing>
+    </item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-logoutin'])"/>
+  </steps>
+
+</page>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="login-fingerprint" xml:lang="gl">
+
+  <info>
+    <link type="guide" xref="login#management"/>
+    <link type="seealso" xref="dconf"/>
+    <revision pkgversion="3.12" date="2014-06-17" status="candidate"/>
+
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>davidk@gnome.org</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Evita que os usuarios poidan inciair sesión usando un escaner de pegadas dixitais.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Diéguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2010-2018</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Desactivar o inicio de sesión usando unha pegada dixital</title>
+
+  <p>Users with a fingerprint scanner can use their fingerprints
+  instead of a password to log in. Fingerprint login
+  <link href="help:gnome-help#session-fingerprint">needs to be set up by the
+  user</link> before it can be used.</p>
+
+  <p>Fingerprint readers are not always reliable, so you may wish to disable
+  login using the reader for security reasons.</p>
+
+  <steps>
+    <title>Desactivar o inicio de sesión usando un lector de pegadas dixitais:</title>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-user'])"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-user-dir'])"/>
+    <item>
+      <p>Create the key file
+      <file>/etc/dconf/db/local.d/00-login</file> to provide
+      information for the <sys>local</sys> database.</p>
+      <listing>
+        <title><file>/etc/dconf/db/local.d/00-login</file></title>
+<code>
+# Especificar a ruta de dconf
+[org/gnome/login-screen]
+
+# Desactivar o lector de pegadas dixitais
+enable-fingerprint-authentication=false
+</code>
+      </listing>
+    </item>
+    <item>
+      <p>To prevent the user from overriding these settings, create the file
+      <file>/etc/dconf/db/local.d/locks/login</file> with the following
+      content:</p>
+      <listing>
+        <title><file>/etc/dconf/db/local.d/locks/fingerprintreader</file></title>
+<code>
+# Mostra a lista de chaves usadas para configurar o inicio de sesión
+/org/gnome/login-screen/enable-fingerprint-authentication
+</code>
+      </listing>
+    </item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-logoutin'])"/>
+  </steps>
+
+</page>

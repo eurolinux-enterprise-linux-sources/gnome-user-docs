@@ -28,8 +28,9 @@
       <years>2015</years>
     </credit>
 
-    <desc>Allow applications to access your accounts online for photos,
-    contacts, calendars, and more.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Permet que les aplicacions accedeixin als seus comptes en línia per obtenir fotos, contactes, calendaris i més.</desc>
 
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>David Aguilera</mal:name>
@@ -38,54 +39,38 @@
     </mal:credit>
   </info>
 
-  <title>Add an account</title>
+  <title>Afegeix un compte</title>
 
-  <p>Adding an account will help link your online accounts with your GNOME
-  desktop. Thus, your email program, chat program and other related
-  applications will be set up for you.</p>
+  <p>Afegir un compte us ajudarà a enllaçar els comptes en línia amb l'escriptori del GNOME. D'aquesta manera, es configurarà el programa de correu electrònic, el programa de xat i altres aplicacions relacionades.</p>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Online Accounts</gui>.</p>
+      <p>Obriu el resum de les <gui xref="shell-introduction#activities">Activititats</gui> i comenceu a escriure <gui>Comptes en línia</gui>.</p>
     </item>
     <item>
-      <p>Click on <gui>Online Accounts</gui> to open the panel.</p>
+      <p>Feu clic a <gui>Comptes en línia</gui> per obrir el panell.</p>
     </item>
     <item>
-      <p>Click the <gui>+</gui> button in the lower-left corner of the
-      window.</p>
+      <p>Select an account from the list on the right.</p>
     </item>
     <item>
-      <p>Select the type of account which you want to add.</p>
+      <p>Seleccioneu el tipus de compte que voleu afegir.</p>
     </item>
     <item>
-      <p>A small website window or dialog will open where you can enter your
-      online account credentials. For example, if you are setting up a Google
-      account, enter your Google username and password. Some providers allow
-      you to create a new account from the login dialog.</p>
+      <p>S'obrirà una petita finestra o diàleg on podreu introduir les credencials del compte en línia. Per exemple, si esteu configurant un compte de Google, introduïu el vostre nom d'usuari i contrasenya de Google. Alguns proveïdors permeten crear un compte nou des del diàleg d'inici de sessió.</p>
     </item>
     <item>
-      <p>If you have entered your credentials correctly, you will be prompted
-      to allow GNOME access to your online account. Authorize access to
-      continue.</p>
+      <p>Si heu introduït correctament les vostres credencials, s'us demanarà que permeteu l'accés de GNOME al vostre compte en línia. Autoritzeu l'accés per continuar.</p>
     </item>
     <item>
-      <p>All services that are offered by an account provider will be enabled
-      by default. <link xref="accounts-disable-service">Switch</link>
-      individual services to <gui>OFF</gui> to disable them.</p>
+      <p>Tots els serveis que ofereix un proveïdor de compte s'activaran de manera predeterminada. <link xref="accounts-disable-service">Canvieu</link> els serveis individuals a <gui>OFF</gui> per desactivar-los</p>
     </item>
   </steps>
 
-  <p>After you have added accounts, applications can use those accounts for
-  the services you have chosen to allow. See <link xref="accounts-disable-service"/>
-  for information on controlling which services to allow.</p>
+  <p>Després d'haver afegit comptes, les aplicacions poden utilitzar aquests comptes per als serveis que hagueu seleccionat per permetre. Veure <link xref="accounts-disable-service"/> per a més informació sobre com controlar quins serveis es permeten.</p>
 
   <note style="tip">
-    <p>Many online services provide an authorization token which GNOME stores
-    instead of your password. If you remove an account, you should also revoke
-    that certificate in the online service. See <link xref="accounts-remove"/>
-    for more information.</p>
+    <p>Molts serveis en línia proporcionen un 'testimoni d'autorització' que GNOME emmagatzema en comptes de la vostra contrasenya. Si suprimiu un compte, també haureu de revocar aquest certificat en el servei en línia. Veure <link xref="accounts-remove"/> per a més informació.</p>
   </note>
 
 </page>

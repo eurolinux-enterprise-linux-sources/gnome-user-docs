@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-device-drivers" xml:lang="pt">
+
+  <info>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Contribuintes ao wiki de documentação de Ubuntu</name>
+    </credit>
+
+    <credit type="author">
+      <name>Phil Bulh</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Some device drivers don’t work very well with certain wireless
+    adapters, so you may need to find a better one.</desc>
+  </info>
+
+  <title>Solucionador de problemas de rede sem fios</title>
+
+  <subtitle>Assegure-se de que os controladores de seu dispositivo estão instalados</subtitle>
+
+<!-- Needs links (see below) -->
+
+  <p>Neste passo pode verificar se é capaz de fazer funcionar os controladores do dispositivo para seu adaptador sem fios. Um <em>controlador de dispositivo</em> é um programa software que lhe diz à computador como fazer que o hardware funcione corretamente. Inclusive se a computador tem reconhecido o adaptador sem fios, pode que não tenha controladores que funcionem bem. Pode que encontre diferentes controladores para o adaptador sem fios que não funcionem. Tente algumas das seguintes opções:</p>
+
+  <list>
+    <item>
+      <p>Verifique que seu adaptador sem fios está na lista de dispositivos suportados.</p>
+      <p>A maioria das distribuições GNU/Linux mantêm uma lista de dispositivos sem fios para as que têm suporte. Algumas vezes, estas listas proporcionam informação adicional sobre como obter os controladores para que certos dispositivos funcionem corretamente. Vá à lista para a sua distribuição (por exemplo, <link href="https://help.ubuntu.com/community/WifiDocs/WirelessCardsSupported">Ubuntu</link>, <link href="https://wiki.archlinux.org/index.php/Wireless_network_configuration">Arch</link>, <link href="http://linuxwireless.org/en/users/Drivers">Fedora</link> ou <link href="http://en.opensuse.org/HCL:Network_(Wireless)">openSUSE</link>) e consulte se a sua marca e modelo de adaptador sem fios está listada. Pode que seja capaz de usar alguma da informação para fazer que seus controladores sem fios funcionem.</p>
+    </item>
+    <item>
+      <p>Procurar controladores restringidos (binários).</p>
+      <p>Many Linux distributions only come with device drivers which are
+      <em>free</em> and <em>open source</em>. This is because they cannot
+      distribute drivers which are proprietary, or closed-source. If the
+      correct driver for your wireless adapter is only available in a non-free,
+      or “binary-only” version, it may not be installed by default. If this is
+      the case, look on the wireless adapter manufacturer’s website to see if
+      they have any Linux drivers.</p>
+      <p>Algumas distribuições de Linux têm uma ferramenta que pode descarregar controladores restringidos. Se a sua distribuição tem uma delas, a utilize para determinar se pode encontrar os controladores sem fios.</p>
+    </item>
+    <item>
+      <p>Utilizar os controladores de Windows para seu adaptador.</p>
+      <p>Em general, não pode usar um controlador de dispositivo desenhado para outro sistema operativo (como Windows) em outro sistema operativo (como Linux). Isto é porque manejam os dispositivos de maneiras diferentes. No entanto, para os adaptadores sem fios pode instalar uma capa de compatibilidade chamada <em>NDISwrapper</em> que lhe permite usar em Linux alguns controladores sem fios para Windows. Isto é útil porque a maioria dos adaptadores sem fios sempre têm controladores para Windows, mas algumas vezes não há os controladores disponíveis para Linux . Pode aprender como usar NDISwrapper <link href="http://sourceforge.net/apps/mediawiki/ndiswrapper/index.php?title=Main_Page">aqui</link>. Tenha em conta que não todos os controladores sem fios se podem usar mediante NDISwrapper.</p>
+    </item>
+  </list>
+
+  <p>Se nenhuma destas opções funciona, é possível que queira experimentar um adaptador sem fios diferente para ver se pode conseguir que funcione. Os adaptadores USB sem fios normalmente são muito baratos e podê-los-á ligar a qualquer computador. Deve verificar que o adaptador é compatível com a sua distribuição de Linux antes do comprar.</p>
+
+</page>

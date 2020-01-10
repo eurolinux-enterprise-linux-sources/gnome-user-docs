@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="lockdown-printing" xml:lang="sv">
+     
+  <info>
+    <link type="guide" xref="user-settings#lockdown"/>
+    <link type="seealso" xref="dconf-lockdown"/>
+    <revision pkgversion="3.11" date="2014-12-04" status="review"/>
+
+    <credit type="author copyright">
+      <name>Jana Svarova</name>
+      <email>jana.svarova@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Förhindra användaren från att skriva ut dokument.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Inaktivera utskrift</title>
+
+  <p>Du kan inaktivera utskriftsdialogen från att visas för användare. Detta kan vara användbart om du ger en användare tillfällig åtkomst eller om du inte vill att användaren ska skriva ut till nätverksskrivare.</p>
+
+  <note style="warning">
+    <p>Denna funktion kommer endast att fungera i program som stöder den! Det är inte alla GNOME-program och program från tredje part som har denna funktion aktiverad. Dessa ändringar kommer inte att påverka program som inte stöder denna funktion.</p>
+  </note>
+
+  <steps>
+    <title>Inaktivera utskrift</title>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-user'])"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-user-dir'])"/>
+    <item>
+      <p>Skapa nyckelfilen <file>/etc/dconf/db/local.d/00-printing</file> för att tillhandahålla information åt databasen <sys>local</sys>.</p>
+      <listing>
+        <title><file>/etc/dconf/db/local.d/00-printing</file></title>
+<code>
+# Ange dconf-sökvägen
+[org/gnome/desktop/lockdown]
+ 
+# Förhindra program från att skriva ut
+disable-printing=true
+</code>
+     </listing>
+    </item>
+    <item>
+      <p>För att förhindra användaren från att åsidosätta dessa inställningar, skapa filen <file>/etc/dconf/db/local.d/locks/printing</file> med följande innehåll:</p>
+      <listing>
+        <title><file>/etc/dconf/db/local.db/locks/printing</file></title>
+<code>
+# Lås utskriftsinställningar
+/org/gnome/desktop/lockdown/disable-printing
+</code>
+      </listing>
+    </item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-logoutin'])"/>
+  </steps>
+
+</page>

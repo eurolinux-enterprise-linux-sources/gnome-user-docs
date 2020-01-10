@@ -7,6 +7,7 @@
 
     <revision pkgversion="3.8.2" version="0.3" date="2013-05-18" status="review"/>
     <revision pkgversion="3.10" date="2013-11-01" status="review"/>
+    <revision pkgversion="3.26" date="2017-11-27" status="review"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -19,6 +20,10 @@
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
       <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Andre Klapper</name>
+      <email>ak-47@gmx.net</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -46,19 +51,11 @@
     <title>Způsoby vkládání znaků</title>
   </links>
 
-  <section id="charmap">
-    <title>Mapa znaků</title>
-    <p>GNOME přichází s aplikací <app>Mapa znaků</app>, která umožňuje procházet všechny znaky Unikódu. Můžete ji použít k vyhledání požadovaného znaku, a k jeho případnému zkopírování a vložení.</p>
-
-    <p><app>Mapu znaků</app> najdete v přehledu <gui>Činností</gui>. Více informací o ní najdete v <link href="help:gucharmap">příručce k Mapě znaků</link>.</p>
-
-  </section>
-
   <section id="characters">
     <title>Znaky</title>
-    <p>Další užitečnou aplikací dodávanou s GNOME jsou <app>Znaky</app>. Méně běžné znaky v ní najdete roztříděné do kategorií nebo je můžete vyhledávat podle klíčkových slov.</p>
+    <p>GNOME přináší aplikaci <app>Znaky</app>, která umožňuje vyhledávat a vkládat méně obvyklé znaky, včetně emodži, a to buď ručním vyhledáním v kategoriích nebo vyhledáním na základě zadaného slova.</p>
 
-    <p><app>Znaky</app> spustíte z přehledu <gui>Činností</gui>. Více informací o této aplikaci najdete v <link href="help:gnome-characters">příručce ke Znakům</link>.</p>
+    <p><app>Znaky</app> můžete spustit z přehledu <gui>Činností</gui>.</p>
 
   </section>
 
@@ -67,19 +64,43 @@
     <p>Klávesa <key>Compose</key> je speciální klávesa, která umožňuje zmáčknout více kláves po sobě, abyste získali speciální znak. Například pro napsání dlouhého <em>é</em> zmáčkněte <key>Compose</key>, pak <key>'</key> a pak <key>e</key>.</p>
     <p>Drtivá většina klávesnic nemá zvlášť klávesu <key>Compose</key>. Můžete si ji ale namapovat na některou jinou existující klávesu na své klávesnici.</p>
 
+    <note style="important">
+      <p>Abyste mohli změnit tato nastavení, musíte mít v počítači nainstalovánu aplikaci <app>Vyladění</app>.</p>
+      <if:if xmlns:if="http://projectmallard.org/if/1.0/" test="action:install">
+        <p><link style="button" action="install:gnome-tweaks">Nainstalovat aplikaci <app>Vyladění</app></link></p>
+      </if:if>
+    </note>
+
     <steps>
       <title>Nadefinování klávesy Compose</title>
       <item>
-        <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Klávesnice</gui>.</p>
+        <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Vyladění</gui>.</p>
       </item>
       <item>
-        <p>Kliknutím na <gui>Klávesnice</gui> otevřete příslušný panel.</p>
+        <p>Kliknutím na <gui>Vyladění</gui> otevřete aplikaci.</p>
       </item>
-      <item><p>Vyberte kartu <gui>Zkratky</gui> a klikněte na <gui>Psaní</gui>.</p></item>
-      <item><p>Klikněte v pravém panelu na <gui>Klávesa Compose</gui>.</p></item>
-      <item><p>Klikněte na <gui>Vypnuto</gui> a v rozbalovací nabídce vyberte klávesu, kterou si přejete, aby se chovala, jako klávesa Compose. Můžete volit z kláves <key>Ctrl</key>, pravé klávesy <key>Alt</key>, pravé klávesy <key>Win</key> nebo <key xref="keyboard-key-super">Super</key> (pokud jednu z nich máte), klávesy <key xref="keyboard-key-menu">Menu</key> a klávesy <key>Caps Lock</key>. Klávesa, kterou vyberete bude nadále fungovat jen jako klávesa Compose a ke svému původnímu účelu již sloužit nebude.</p></item>
+      <item>
+        <p>Klikněte na kartu <gui>Klávesnice a myš</gui>.</p>
+      </item>
+      <item>
+        <p>Klikněte na <gui>Vypnuto</gui> vedle nastavení <gui>Klávesa Compose</gui>.</p>
+      </item>
+      <item>
+        <p>V dialogovém okně zapněte přepínač a zvolte klávesovou zkratku, kterou chcete používat.</p>
+      </item>
+      <item>
+        <p>Zaškrtněte políčko u klávesy, kterou chcete nastavit jako klávesu Compose.</p>
+      </item>
+      <item>
+        <p>Zavřete dialogové okno.</p>
+      </item>
+      <item>
+        <p>Zavřete okno <gui>Vyladění</gui>.</p>
+      </item>
     </steps>
+
     <p>Pomocí klávesy <key>Compose</key> můžete psát řadu běžných znaků, například:</p>
+
     <list>
       <item><p>Zmáčkněte <key>Compose</key>, pak <key>'</key> a pak písmeno, nad které se přidá čárka, jako třeba <em>é</em>.</p></item>
       <item><p>Zmáčkněte <key>Compose</key>, pak <key>`</key> a pak písmeno, nad které se přidá obrácená čárka (těžký akcent), jako třeba <em>è</em>.</p></item>
@@ -92,9 +113,9 @@
 <section id="ctrlshiftu">
   <title>Kódy znaků</title>
 
-  <p>Znaky Unikódu můžete zadávat čistě pomocí klávesnice použitím číselného kódu znaku. Každý znak je představován čtyřmístným kódem znaku v šestnáctkové soustavě. Když si chcete tento kód zjistit, najděte si znak v mapě znaků a podívejte se na stavovou lištu nebo na kartu <gui>Informace o znaku</gui>. Jde o čtyři znaky (šestnáctkové číslice) za <gui>U+</gui>.</p>
+  <p>Znaky Unikódu můžete zadávat čistě pomocí klávesnice použitím číselného kódu znaku. Každý znak je představován čtyřmístným kódem znaku v šestnáctkové soustavě. Když si chcete tento kód zjistit, najděte si znak v aplikaci <app>Znaky</app>. Kód tvoří čtyři znaky (šestnáctkové číslice) za <gui>U+</gui>.</p>
 
-  <p>Když chcete zadat znak pomocí jeho kódu, podržte zmáčknuté klávesy <key>Ctrl</key> a <key>Shift</key>, napište <key>U</key> následované čtyřmi znaky kódu a pak <key>Ctrl</key> a <key>Shift</key> pusťte. Pokud často používáte nějaké znaky, které nejsou snadno dostupné jinými metodami, může stát za to, naučit se zpaměti kódy těchto znaků, abyste je mohli rychle zadávat.</p>
+  <p>Když chcete zadat znak pomocí jeho kódu, zmáčkněte <key>Ctrl</key><key>Shift</key><key>U</key>, následně napište čtyři znaky kódu a pak zmáčkněte <key>mezerník</key> nebo <key>Enter</key>. Pokud často používáte nějaké znaky, které nejsou snadno dostupné jinými metodami, může stát za to, naučit se zpaměti kódy těchto znaků, abyste je mohli rychle zadávat.</p>
 
 </section>
 

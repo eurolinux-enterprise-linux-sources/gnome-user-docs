@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="accounts-add" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="accounts" group="add"/>
+
+    <revision pkgversion="3.5.5" date="2012-08-14" status="draft"/>
+    <revision pkgversion="3.9.92" date="2012-09-18" status="candidate"/>
+    <revision pkgversion="3.13.92" date="2013-09-20" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+      <years>2015</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Umożliwienie programom na dostęp do kont online zawierających zdjęcia, kontakty, kalendarze i wiele więcej.</desc>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Dodawanie konta</title>
+
+  <p>Dodanie konta pomoże powiązać konta online ze środowiskiem GNOME. Dzięki temu klient poczty, komunikator i inne podobne programy zostaną skonfigurowane bez udziału użytkownika.</p>
+
+  <steps>
+    <item>
+      <p>Otwórz <gui xref="shell-introduction#activities">ekran podglądu</gui> i zacznij pisać <gui>Konta online</gui>.</p>
+    </item>
+    <item>
+      <p>Kliknij <gui>Konta online</gui>, aby otworzyć panel.</p>
+    </item>
+    <item>
+      <p>Wybierz konto z listy po prawej.</p>
+    </item>
+    <item>
+      <p>Wybierz typ konta do dodania.</p>
+    </item>
+    <item>
+      <p>Zostanie otwarte małe okno ze stroną internetową, gdzie można podać dane uwierzytelniające konta online. Na przykład, jeśli ustawiane jest konto Google, to podaj nazwę użytkownika i hasło Google. Niektóre serwisy umożliwiają utworzenie nowego konta prosto z okna logowania.</p>
+    </item>
+    <item>
+      <p>Jeśli poprawnie podano dane uwierzytelniające, to użytkownik zostanie poproszony o udzielenie GNOME dostępu do konta online. Upoważnij dostęp, aby kontynuować.</p>
+    </item>
+    <item>
+      <p>Domyślnie wszystkie usługi oferowane przez konto będą włączone. <link xref="accounts-disable-service">Przełącz</link> poszczególne usługi na <gui>◯</gui> (wyłączone), aby je wyłączyć.</p>
+    </item>
+  </steps>
+
+  <p>Po dodaniu kont, programy mogą ich używać dla wybranych usług. <link xref="accounts-disable-service"/> zawiera informacje o kontrolowaniu włączonych usług.</p>
+
+  <note style="tip">
+    <p>Wiele serwisów internetowych dostarcza token uwierzytelnienia, który jest przechowywane w GNOME zamiast hasła. W przypadku usunięcia konta należy także unieważnić ten certyfikat w serwisie. <link xref="accounts-remove"/> zawiera więcej informacji.</p>
+  </note>
+
+</page>

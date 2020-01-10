@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="dconf-profiles" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="setup"/>
+    <link type="seealso" xref="dconf-custom-defaults"/>
+    <link type="seealso" xref="dconf"/>
+    <revision version="0.1" date="2013-03-25" status="draft"/>
+  
+    <credit type="author copyright">
+      <name>Ryan Lortie</name>
+      <email>desrt@desrt.ca</email>
+      <years>2012</years>
+    </credit>
+    
+    <credit type="editor">
+      <name>Jana Švárová</name>
+      <email>jana.svarova@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Ez az oldal részletes információkat nyújt a profil kiválasztásával kapcsolatban.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>ur.balazs@fsf.hu</mal:email>
+      <mal:years>2018.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Egy profil kiválasztása</title>
+  
+  <p>Indításkor a <sys>dconf</sys> megnézi a DCONF_PROFILE környezeti változót. Ha be van állítva, akkor a <sys>dconf</sys> megpróbálja megnyitni az elnevezett profilt, és megszakítja, ha az sikertelen. Ha a környezeti változó nincs beállítva, akkor a <sys>dconf</sys> megpróbálja megnyitni a „user” nevű profilt. Ha az sikertelen, akkor visszavált egy belső, beprogramozott beállításra.</p>
+
+  <p>Egy profilban minden egyes sor egy <sys>dconf</sys> adatbázist határoz meg. Az első sor jelzi a változtatások kiírásához használt adatbázist, és a további sorok jelzik a csak olvasható adatbázisokat. Itt egy példa:</p>
+<code>
+user-db:user
+system-db:local
+system-db:site
+</code>
+
+<note style="important">
+  <p>Egy munkamenet <sys>dconf</sys> profilját a bejelentkezéskor határozzák meg, így a felhasználóknak ki kell jelentkezniük és be kell lépniük a munkamenetükre történő új <sys>dconf</sys> felhasználói profil alkalmazásához.</p>
+</note>
+
+</page>

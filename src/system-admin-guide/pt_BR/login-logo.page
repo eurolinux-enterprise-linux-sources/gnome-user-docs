@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="login-logo" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="login#appearance"/>
+    <!--<link type="seealso" xref="gdm-restart"/>-->
+    <revision pkgversion="3.11" date="2014-01-29" status="draft"/>
+
+    <credit type="author copyright">
+      <name>Matthias Clasen</name>
+      <email>matthias.clasen@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="author copyright">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="author copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Edite um perfil <sys its:translate="no">dconf</sys> do <sys its:translate="no">GDM</sys> para exibir uma imagem em uma tela de autenticação.</desc>
+   
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Adicionando um logo de boas-vindas para a tela de login</title>
+
+  <p>A logo de boas-vindas da tela de autenticação é controlada pela chave GSettings <sys>org.gnome.login-screen.logo</sys>. Já que o <sys>GDM</sys> usa seu próprio perfil <sys>dconf</sys>, você pode adicionar um logo de boas-vindas alterando você pode definir o plano de fundo padrão alterando as configurações naquele perfil.</p>
+  
+  <p>Ao escolher uma imagem apropriada para a logo da sua tela de autenticação, considere os seguintes requisitos de imagem:</p>
+  
+  <list>
+  <item><p>Há suporte a todos os formatos mais comuns: ANI, BPM, GIF, ICNS, ICO, JPEG, JPEG 2000, PCX, PNM, PBM, PGM, PPM, GTIFF, RAS, TGA, TIFF, XBM, WBMP, XPM, and SVG.</p></item>
+  <item><p>O tamanho da imagem escala proporcionalmente à altura de 48 pixels. Então, se você definir a logo para 1920x1080, por exemplo, ele muda para uma miniatura de 85x48 da imagem original.</p></item>
+  </list>
+  
+  <steps>
+  <title>Definindo a chave org.gnome.login-screen.logo</title>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-gdm'])"/>
+  <item><p>Crie um banco de dados <sys>gdm</sys> para configurações de todo sistema em <file>/etc/dconf/db/gdm.d/<var>01-logo</var></file>:</p>
+  <code>[org/gnome/login-screen]
+  logo='<var>/usr/share/pixmaps/logo/boas-vindas.png</var>'
+  </code>
+  <p>Substitua <var>/usr/share/pixmaps/logo/boas-vindas.png</var> com o caminho do arquivo de imagem que você deseja usar como a logo de boas-vindas.</p></item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+  </steps>
+
+  <section id="login-logo-not-update">
+  <title>E se a logo não for atualizada?</title>
+
+  <p>Certifique-se de que você tenha executado o comando <cmd>dconf update</cmd> para atualizar os bancos de dados de sistema.</p>
+
+  <p>No caso da logo não ser atualizada, tente reiniciar o <sys>GDM</sys>.</p>
+  </section>
+
+</page>

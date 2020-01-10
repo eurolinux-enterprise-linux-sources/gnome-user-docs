@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task a11y" id="a11y-stickykeys" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="a11y#mobility" group="keyboard"/>
+    <link type="guide" xref="keyboard" group="a11y"/>
+
+    <revision pkgversion="3.8.0" date="2013-03-13" status="candidate"/>
+    <revision pkgversion="3.9.92" date="2013-09-18" status="candidate"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Wpisywanie skrótów klawiszowych po jednym klawiszu na raz, zamiast naciskania wszystkich klawiszy jednocześnie.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Włączenie trwałych klawiszy</title>
+
+  <p><em>Trwałe klawisze</em> umożliwiają wpisywanie skrótów klawiszowych po jednym klawiszu na raz, zamiast naciskania wszystkich klawiszy jednocześnie. Na przykład skrót klawiszowy <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq> przełącza między oknami. Z wyłączonymi trwałymi klawiszami trzeba nacisnąć oba klawisze jednocześnie, a po ich włączeniu wystarczy nacisnąć klawisz <key>Super</key>, a następnie klawisz <key>Tab</key>.</p>
+
+  <p>Można włączyć trwałe klawisze, jeśli naciskanie kilku klawiszy na raz sprawia trudności.</p>
+
+  <steps>
+    <item>
+      <p>Otwórz <gui xref="shell-introduction#activities">ekran podglądu</gui> i zacznij pisać <gui>Ułatwienia dostępu</gui>.</p>
+    </item>
+    <item>
+      <p>Kliknij <gui>Ułatwienia dostępu</gui>, aby otworzyć panel.</p>
+    </item>
+    <item>
+      <p>Naciśnij <gui>Wspomaganie pisania (AccessX)</gui> w sekcji <gui>Pisanie</gui>.</p>
+    </item>
+    <item>
+      <p>Przełącz <gui>Trwałe klawisze</gui> na <gui>|</gui> (włączone).</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <title>Szybkie przełączanie trwałych klawiszy</title>
+    <p>Pod <gui>Włączanie za pomocą klawiatury</gui> wybierz <gui>Włączanie funkcji ułatwień dostępu za pomocą klawiatury</gui>, aby przełączać trwałe klawisze za pomocą klawiatury. Po włączeniu tej opcji można nacisnąć klawisz <key>Shift</key> pięć razy pod rząd, aby włączyć lub wyłączyć trwałe klawisze.</p>
+    <p>Można także włączać i wyłączać trwałe klawisze klikając <link xref="a11y-icon">ikonę ułatwień dostępu</link> na górnym pasku i wybierając <gui>Trwałe klawisze</gui>. Ikona ułatwień dostępu jest widoczna, jeśli włączono co najmniej jedno ustawienie w panelu <gui>Ułatwienia dostępu</gui>.</p>
+  </note>
+
+  <p>Naciśnięcie dwóch klawiszy jednocześnie może tymczasowo wyłączać trwałe klawisze, aby można było wprowadzić skrót klawiszowy w zwykły sposób.</p>
+
+  <p>Na przykład: jeśli trwałe klawisze są włączone, ale naciśnięto klawisze <key>Super</key> i <key>Tab</key> jednocześnie, system nie będzie czekał na następne klawisze. Czekałby, jeśli naciśnięto by tylko jeden klawisz. Jest to przydatne, jeśli naciskanie niektórych skrótów klawiszowych sprawia trudności, a innych nie (np. z klawiszami blisko siebie).</p>
+
+  <p>Wybierz <gui>Wyłączenie po jednoczesnym przyciśnięciu dwóch klawiszy</gui>, aby włączyć tę funkcję.</p>
+
+  <p>Komputer może wydawać dźwięk po rozpoczęciu wpisywania skrótu klawiszowego z włączonymi trwałymi klawiszami. Jest to przydatne, jeśli potrzeba wiedzieć, że trwałe klawisze oczekują wpisania skrótu, więc następne naciśnięcie klawisza zostanie zinterpretowane jako część skrótu. Wybierz <gui>Sygnał dźwiękowy po naciśnięciu klawisza modyfikacji</gui>, aby włączyć tę funkcję.</p>
+
+</page>

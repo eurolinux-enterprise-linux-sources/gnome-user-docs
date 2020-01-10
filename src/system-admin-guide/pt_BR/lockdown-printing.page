@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="lockdown-printing" xml:lang="pt-BR">
+     
+  <info>
+    <link type="guide" xref="user-settings#lockdown"/>
+    <link type="seealso" xref="dconf-lockdown"/>
+    <revision pkgversion="3.11" date="2014-12-04" status="review"/>
+
+    <credit type="author copyright">
+      <name>Jana Svarova</name>
+      <email>jana.svarova@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Evite que o usuário imprima documentos.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Desabilitando impressão</title>
+
+  <p>Você pode desabilitar o diálogo de impressão de ser mostrado para usuários. Isso pode ser útil se você está dando acesso temporário para um usuário ou você não deseja que o usuário imprima para impressoras da rede.</p>
+
+  <note style="warning">
+    <p>Esse recurso vai funcionar apenas em aplicativos que oferecerem suporte a isso. Nem todos os aplicativos do GNOME e de terceiros possuem esse recurso habilitado. Essas alterações terão não terão efeito em aplicativos que não oferecem suporte a esse recurso.</p>
+  </note>
+
+  <steps>
+    <title>Desabilitando impressão</title>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-user'])"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-user-dir'])"/>
+    <item>
+      <p>Crie o arquivo de chave <file>/etc/dconf/db/local.d/00-printing</file> para fornecer informações para o banco de dados de <sys>local</sys>.</p>
+      <listing>
+        <title><file>/etc/dconf/db/local.d/00-printing</file></title>
+<code>
+# Especifica o caminho dconf
+[org/gnome/desktop/lockdown]
+ 
+# Evita que aplicativos possam imprimir
+disable-printing=true
+</code>
+     </listing>
+    </item>
+    <item>
+      <p>Para evitar que o usuário sobrescreva essas configurações, crie o arquivo <file>/etc/dconf/db/local.d/locks/printing</file> com o seguinte conteúdo:</p>
+      <listing>
+        <title><file>/etc/dconf/db/local.db/locks/printing</file></title>
+<code>
+# Bloqueia configurações de impressão
+/org/gnome/desktop/lockdown/disable-printing
+</code>
+      </listing>
+    </item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-logoutin'])"/>
+  </steps>
+
+</page>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="extensions-lockdown" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="software#extension"/>
+    <link type="seealso" xref="extensions-enable"/>
+    <link type="seealso" xref="extensions"/>
+    <revision pkgversion="3.12" date="2014-06-17" status="review"/>
+
+    <credit type="author copyright">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Förbjud användaren att aktivera eller inaktivera GNOME Shell-tillägg.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Låsa aktiverade tillägg</title>
+  
+  <p>I GNOME Shell kan du förhindra användaren från att aktivera eller inaktivera tillägg genom att låsa nycklarna <code>org.gnome.shell.enabled-extensions</code> och <code>org.gnome.shell.development-tools</code>. Detta låter dig tillhandahålla en uppsättning tillägg som användaren måste använda.</p>
+   
+  <p>Att låsa nyckeln <code>org.gnome.shell.development-tools</code> säkerställer att användaren inte kan använda GNOME Shells inbyggda felsökare och inspektionsverktyg (<app>Looking Glass</app>) för att inaktivera några obligatoriska tillägg.</p>
+   
+  <steps>
+    <title>Lås nycklarna org.gnome.shell.enabled-extensions och org.gnome.shell.development-tools</title>
+    <item>
+      <p>Skapa en profil <code>user</code> i <file>/etc/dconf/profile/user</file>:</p>
+      <listing>
+        <code>
+user-db:user
+system-db:local
+</code>
+      </listing>
+    </item>
+    <item>
+      <p>Skapa en databas <code>local</code> för maskinomfattande inställningar i <file>/etc/dconf/db/local.d/00-extensions</file>:</p>
+      <listing>
+        <code>
+[org/gnome/shell]
+# Lista alla tillägg du vill ha aktiverade för alla användare
+enabled-extensions=['<input>mittillagg1@mittnamn.example.com</input>', '<input>mittillagg2@mittnamn.example.com</input>']
+# Inaktivera åtkomst till Looking Glass
+development-tools=false
+</code>
+      </listing>
+      <p>Nyckeln <code>enabled-extensions</code> anger de aktiverade tilläggen med tilläggens uuid (<code>mittillagg1@mittnamn.example.com</code> och <code>mittillagg2@mittnamn.example.com</code>).</p>
+      <p>Nyckeln <code>development-tools</code> är inställd till false (falskt) för att inaktivera åtkomst till Looking Glass.</p>
+    </item>
+    <item>
+      <p>Åsidosätt användarens inställning och förhindra användaren från att ändra den i <file>/etc/dconf/db/local.d/locks/extensions</file>:</p>
+      <listing>
+        <code>
+# Lås listan över aktiverade tillägg
+/org/gnome/shell/enabled-extensions
+/org/gnome/shell/development-tools
+</code>
+</listing>
+    </item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+  </steps>
+  
+  <p>Efter att ha låst nycklarna <code>org.gnome.shell.enabled-extensions</code> och <code>org.gnome.shell.development-tools</code> kommer alla tillägg som finns installerade i <file>~/.local/share/gnome-shell/extensions</file> eller <file>/usr/share/gnome-shell/extensions</file> men inte är listade i nyckeln <code>org.gnome.shell.enabled-extensions</code> inte att läsas in av GNOME Shell. Användaren är därmed förhindrad från att använda dem.</p>
+
+</page>

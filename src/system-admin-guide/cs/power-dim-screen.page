@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="power-dim-screen" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="user-settings"/>
+    <link type="seealso" xref="dconf-profiles"/>
+    <link type="seealso" xref="dconf-lockdown"/>
+    <revision pkgversion="3.12" date="2014-06-20" status="candidate"/>
+
+    <credit type="author copyright">
+      <name>Matthias Clasen</name>
+      <email>matthias.clasen@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Jana Svarova</name>
+      <email>jana.svarova@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+
+    <desc>Jak zařídit, aby obrazovka po určené době nečinnosti uživatele zhasla.</desc>
+  </info>
+
+  <title>Stmívání obrazovky při nečinnosti uživatele</title>
+
+  <p>Můžete nechat počítač, aby zhasl obrazovku, když je počítač nečinný (není používán) po nějakou určenou dobu.</p>
+
+  <steps>
+    <title>Stmívání obrazovky na nečinném počítači</title>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-user'])"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-user-dir'])"/>
+    <item>
+      <p>Vytvořte soubor s klíči <file>/etc/dconf/db/local.d/00-power</file>, který bude poskytovat informace pro databázi <sys>local</sys>.</p>
+      <listing>
+        <title><file>/etc/dconf/db/local.d/00-power</file></title>
+<code>
+# Specify the dconf path
+[org/gnome/settings-daemon/plugins/power]
+
+# Enable screen dimming
+idle-dim=true
+
+# Set brightness after dimming
+idle-brightness=30
+</code>
+      </listing>
+    </item>
+    <item>
+      <p>Vytvořte soubor s klíči <file>/etc/dconf/db/local.d/00-session</file>, který bude poskytovat informace pro databázi <sys>local</sys>.</p>
+      <listing>
+        <title><file>/etc/dconf/db/local.d/00-session</file></title>
+<code>
+# Specify the dconf path
+[org/gnome/desktop/session]
+
+# The number of seconds of inactivity before the session is considered idle
+idle-delay=uint32 300
+</code>
+      </listing>
+      <p>Musíte vložit <code>uint32</code> spolu s celočíselnou hodnotou klíče, jak bylo ukázáno.</p>
+    </item>
+    <item>
+      <p>Aby uživatel nemohl tato nastavení přepsat, vytvořte soubor <file>/etc/dconf/db/local.d/locks/power-saving</file> s následujícím obsahem:</p>
+      <listing>
+        <title><file>/etc/dconf/db/local.db/locks/power-saving</file></title>
+<code>
+# Lock screen dimming and idle timeout
+/org/gnome/settings-daemon/plugins/power/idle-dim
+/org/gnome/settings-daemon/plugins/power/idle-brightness
+/org/gnome/desktop/session/idle-delay
+</code>
+      </listing>
+      <p>Jestli chcete uživateli ponechat možnost toto nastavení změnit, tento krok přeskočte.</p>
+    </item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-logoutin'])"/>
+  </steps>
+
+</page>

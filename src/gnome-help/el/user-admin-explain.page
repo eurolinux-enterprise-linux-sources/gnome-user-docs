@@ -67,13 +67,24 @@
 
   <p>Μερικές φορές χρειάζεστε να χρησιμοποιήσετε αυτές τις εφαρμογές, έτσι μπορεί να πάρετε προσωρινά δικαιώματα διαχειριστή για να σας επιτραπεί η εκτέλεση των αλλαγών. Αν μια εφαρμογή χρειάζεται δικαιώματα διαχειριστή, θα ζητήσει τον κωδικό πρόσβασής σας. Για παράδειγμα, αν θέλετε να εγκαταστήσετε κάποιο νέο λογισμικό, ο εγκαταστάτης λογισμικού (διαχειριστής πακέτου) θα ζητήσει τον κωδικό πρόσβασης διαχειριστή, έτσι ώστε να μπορέσει να προσθέσει την νέα εφαρμογή στο σύστημα. Μόλις έχει τελειώσει, τα δικαιώματα διαχειριστή θα αφαιρεθούν πάλι.</p>
 
-  <p>Τα δικαιώματα διαχειριστή συσχετίζονται με τον λογαριασμό χρήστη σας. Οι <gui>διαχειριστές</gui> επιτρέπεται να έχουν αυτά τα δικαιώματα, ενώ οι <gui>τυπικοί</gui> χρήστες όχι. Χωρίς διαχειριστικά δικαιώματα, δεν θα μπορέσετε να εγκαταστήσετε λογισμικό. Μερικοί λογαριασμοί χρήστη (για παράδειγμα, ο λογαριασμός "υπερχρήστη") έχει μόνιμα δικαιώματα διαχειριστή. Δεν πρέπει να χρησιμοποιείτε δικαιώματα διαχειριστή συνέχεια, επειδή μπορεί τυχαία να αλλάξετε κάτι που δεν σκοπεύατε (όπως να διαγράψετε ένα απαιτούμενο αρχείο συστήματος, για παράδειγμα).</p>
+  <p>Administrative privileges are associated with your user account.
+  <gui>Administrator</gui> users are allowed to have these privileges while
+  <gui>Standard</gui> users are not. Without administrative privileges you will
+  not be able to install software. Some user accounts (for example, the “root”
+  account) have permanent administrative privileges. You should not use
+  administrative privileges all of the time, because you might accidentally
+  change something you did not intend to (like delete a needed system file, for
+  example).</p>
 
   <p>Περιληπτικά, τα δικαιώματα διαχειριστή σας επιτρέπουν να αλλάξετε σημαντικά μέρη του συστήματός σας όταν απαιτείται, αλλά αποτρέπουν την τυχαία εκτέλεση τους.</p>
 
   <note>
-    <title>Τι σημαίνει «υπερχρήστης»</title>
-    <p>Ένας χρήστης με δικαιώματα διαχειριστή λέγεται μερικές φορές <em>υπερχρήστης</em>. Αυτό συμβαίνει απλά επειδή αυτός ο χρήστης έχει περισσότερα δικαιώματα από τους κανονικούς χρήστες. Μπορεί να δείτε άτομα να συζητούν πράγματα όπως <cmd>su</cmd> και <cmd>sudo</cmd>· αυτά είναι προγράμματα που σας δίνουν προσωρινά δικαιώματα «υπερχρήστη» (διαχειριστή).</p>
+    <title>What does “super user” mean?</title>
+    <p>A user with administrative privileges is sometimes called a <em>super
+    user</em>. This is simply because that user has more privileges than normal
+    users. You might see people discussing things like <cmd>su</cmd> and
+    <cmd>sudo</cmd>; these are programs for temporarily giving you “super user”
+    (administrative) privileges.</p>
   </note>
 
 <section id="advantages">
@@ -83,7 +94,11 @@
 
   <p>Εάν έχετε δικαιώματα διαχειριστή συνέχεια, μπορεί τυχαία να αλλάξετε ένα σημαντικό αρχείο, ή να εκτελέσετε κατά λάθος μια εφαρμογή που αλλάζει κάτι σημαντικό. Εάν έχετε δικαιώματα διαχειριστή μόνο προσωρινά, όταν τα χρειάζεστε, μειώνεται ο κίνδυνος να συμβούν αυτά τα λάθη.</p>
 
-  <p>Μόνο συγκεκριμένοι έμπιστοι χρήστες πρέπει να επιτρέπεται να έχουν δικαιώματα διαχειριστή. Αυτό αποτρέπει άλλους χρήστες από την ανάμειξη με τον υπολογιστή και την εκτέλεση πραγμάτων όπως απεγκατάσταση εφαρμογών που χρειάζεστε, εγκατάσταση εφαρμογών που δεν θέλετε, ή αλλαγή σημαντικών αρχείων. Αυτό είναι χρήσιμο από άποψη ασφάλειας.</p>
+  <p>Only certain trusted users should be allowed to have administrative
+  privileges. This prevents other users from messing with the computer and
+  doing things like uninstalling applications that you need, installing
+  applications that you don’t want, or changing important files. This is useful
+  from a security standpoint.</p>
 
 </section>
 

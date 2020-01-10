@@ -31,7 +31,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2013.</mal:years>
+      <mal:years>2011-2018</mal:years>
     </mal:credit>
   </info>
 
@@ -44,7 +44,7 @@ application from the <gui>Activities</gui> overview, and click
 <gui>Other Locations</gui> in the sidebar. The file manager
 will find any computers on your local area network that advertize
 their ability to serve files. If you want to connect to a server
-on the internet, or if you do not see the computer you're looking
+on the internet, or if you do not see the computer you’re looking
 for, you can manually connect to a server by typing in its
 internet/network address.</p>
 
@@ -102,7 +102,8 @@ internet/network address.</p>
     <p><sys>ssh://nomeusuario@nomedoservidor.exemplo.com/cartafol</sys></p>
   </example>
 
-  <p>Ao usar SSH, todos os datos que envía (incluíndo o contrasinal) van cifrados, polo que outros usuarios da súa rede non poderán velos.</p>
+  <p>When using SSH, all the data you send (including your password)
+  is encrypted so that other users on your network can’t see it.</p>
 </item>
 <item>
   <title>FTP (con rexistro)</title>
@@ -131,21 +132,22 @@ internet/network address.</p>
 </item>
 <item>
   <title>WebDAV e WebDAV seguro</title>
-  <p>Baseado no protocolo HTTP usando no web, WebDAV é usado en ocasións para compartir ficheiros nunha rede local e para almacenar ficheiros en internet. Se o servidor co que está conectando admite as conexións seguras, debería escoller esta opcón. WebDAV seguro usa un cifrado SSL forte, polo que outros usuarios non poderán ver o seu contrasinal.</p>
+  <p>Based on the HTTP protocol used on the web, WebDAV is sometimes used to
+  share files on a local network and to store files on the internet. If the
+  server you’re connecting to supports secure connections, you should choose
+  this option. Secure WebDAV uses strong SSL encryption, so that other users
+  can’t see your password.</p>
   <p>A WebDAV URL looks like this:</p>
   <example>
     <p><sys>dav://example.hostname.com/path</sys></p>
   </example>
 </item>
 <item>
-  <title>NFS share</title>
-  <p>UNIX computers traditionally use the Network File System protocol to
-  share files over a local network. With NFS, security is based on the UID of
-  the user accessing the share, so no authentication credentials are
-  needed when connecting.</p>
+  <title>Compartición NFS</title>
+  <p>Os computadores UNIX tradicionalmente usan o protocolo Network File System para compartir ficheiros sobre a rede local. Con NFS, a seguridade basease nos UID do usuario que accede ao compartido, polo que non se precisan credenciais de autenticación ao conectarse.</p>
   <p>A typical NFS share URL looks like this:</p>
   <example>
-    <p><sys>nfs://servername/path</sys></p>
+    <p><sys>nfs://nomedoservidor/ruta</sys></p>
   </example>
 </item>
 </terms>

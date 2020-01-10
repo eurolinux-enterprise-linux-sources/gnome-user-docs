@@ -70,12 +70,28 @@
 
 <title>VPN へ接続する</title>
 
-<p>VPN (<em>Virtual Private Network</em>) とはインターネット経由でローカルのネットワークに接続する方法です。たとえば、出張中に勤務先のローカルネットワークに接続したいとします。どこか (ホテルなど) でインターネット接続を見つけたとして、勤務先の VPN に接続します。実際にはホテルのインターネット接続を経由していながら、まるで勤務先のネットワークに直接、接続しているように接続することができます。VPN 接続は通常、ログインしていないユーザーによるローカルネットワークへのアクセスを防ぐため<em>暗号化</em>されます。</p>
+<p>A VPN (or <em>Virtual Private Network</em>) is a way of connecting to a
+ local network over the internet. For example, say you want to connect to the
+ local network at your workplace while you’re on a business trip. You would
+ find an internet connection somewhere (like at a hotel) and then connect to
+ your workplace’s VPN. It would be as if you were directly connected to the
+ network at work, but the actual network connection would be through the
+ hotel’s internet connection. VPN connections are usually <em>encrypted</em>
+ to prevent people from accessing the local network you’re connecting to
+ without logging in.</p>
 
-<p>VPN にはいくつか異なる種類があります。接続する VPN の種類によっては追加ソフトウェアを別途インストールしなければならないことがあります。VPN 担当者に接続の詳細を問い合わせ、必要な <em>VPN クライアント</em>を確認します。次に、ソフトウェアインストーラーアプリケーションを起動し、目的の VPN 用の <app>NetworkManager</app> パッケージを検索し、(見つかれば) インストールします。</p>
+<p>There are a number of different types of VPN. You may have to install some
+ extra software depending on what type of VPN you’re connecting to. Find out
+ the connection details from whoever is in charge of the VPN and see which
+ <em>VPN client</em> you need to use. Then, go to the software installer
+ application and search for the <app>NetworkManager</app> package which works
+ with your VPN (if there is one) and install it.</p>
 
 <note>
- <p>お使いの VPN 用の NetworkManager パッケージがない場合、VPN ソフトウェアの提供会社のクライアントソフトウェアをダウンロードしてインストールしなければならないでしょう。正しく設定するには別の手順に従ってください。</p>
+ <p>If there isn’t a NetworkManager package for your type of VPN, you will
+ probably have to download and install some client software from the company
+ that provides the VPN software. You’ll probably have to follow some different
+ instructions to get that working.</p>
 </note>
 
 <p>To set up the VPN connection:</p>

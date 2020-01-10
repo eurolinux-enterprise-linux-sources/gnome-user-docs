@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="login-fingerprint" xml:lang="ko">
+
+  <info>
+    <link type="guide" xref="login#management"/>
+    <link type="seealso" xref="dconf"/>
+    <revision pkgversion="3.12" date="2014-06-17" status="candidate"/>
+
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>davidk@gnome.org</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>지문 스캐너를 사용하여 로그인 하는 것을 차단합니다.</desc>
+  </info>
+
+  <title>지문 로그인 비허가</title>
+
+  <p>지문 스캐너가 있는 사용자는 비밀번호 대신 지문을 사용할 수 있습니다. 지문 로그인은 사용하기 전에 <link href="help:gnome-help#session-fingerprint">사용자마다 설정을 해야 합니다.</link>.</p>
+
+  <p>지문 리더기를 신뢰하지 못한다면 보안상의 이유로 리더기 로그인을 비활성화 시킬 수 있습니다.</p>
+
+  <steps>
+    <title>지문 리더기 로그인 비활성화:</title>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-user'])"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-user-dir'])"/>
+    <item>
+      <p><sys>로컬</sys> 데이터베이스의 정보를 제공하기 위해 키 파일 <file>/etc/dconf/db/local.d/00-login</file>를 생성하세요.</p>
+      <listing>
+        <title><file>/etc/dconf/db/local.d/00-login</file></title>
+<code>
+# dconf 경로를 지정합니다
+[org/gnome/login-screen]
+
+# 지문 리더기 비활성화
+enable-fingerprint-authentication=false
+
+</code>
+      </listing>
+    </item>
+    <item>
+      <p>이 설정을 사용자가 번복하는 것을 막기 위해, <file>/etc/dconf/db/local.d/locks/login</file>에 다음 내용의 파일을 생성하세요:</p>
+      <listing>
+        <title><file>/etc/dconf/db/local.d/locks/fingerprintreader</file></title>
+<code>
+# 로그인 구성에 사용되는 키 목록
+/org/gnome/login-screen/enable-fingerprint-authentication
+
+</code>
+      </listing>
+    </item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-logoutin'])"/>
+  </steps>
+
+</page>

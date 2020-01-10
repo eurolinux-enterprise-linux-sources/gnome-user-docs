@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-check" xml:lang="pl">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Projekt dokumentacji GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Natalia Ruz Leiva</name>
+      <email>nruz@alumnos.inf.utfsm.cl</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>Testowanie dysku twardego pod kątem problemów, aby zapewnić bezpieczeństwo danych.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Sprawdzanie, czy dysk twardy sprawia problemy</title>
+
+<section id="disk-status">
+ <title>Sprawdzanie dysku twardego</title>
+  <p>Dyski twarde mają wbudowane narzędzie do sprawdzania stanu dysku o nazwie <app>SMART</app>, które nieustannie sprawdza dysk pod kątem potencjalnych problemów. SMART ostrzega także, jeśli dysk niedługo ulegnie awarii, pomagając uniknąć utraty ważnych danych.</p>
+
+  <p>Chociaż SMART jest uruchamiany automatycznie, można także sprawdzić stan dysku uruchamiając program <app>Dyski</app>:</p>
+
+<steps>
+ <title>Sprawdzanie stanu dysku za pomocą programu Dyski</title>
+
+  <item>
+    <p>Otwórz program <app>Dyski</app> z <gui>ekranu podglądu</gui>.</p>
+  </item>
+  <item>
+    <p>Wybierz dysk do sprawdzenia z listy urządzeń do przechowywania danych po lewej. Zostaną wyświetlone informacje i stan dysku.</p>
+  </item>
+  <item>
+    <p>Kliknij przycisk menu i wybierz <gui>Dane i testy SMART…</gui>. Pozycja <gui>Ogólna ocena</gui> powinna wskazywać „Dysk jest OK”.</p>
+  </item>
+  <item>
+    <p>Więcej informacji jest dostępnych pod <gui>Atrybutami SMART</gui>. Można także kliknąć przycisk <gui style="button">Rozpocznij test</gui>, aby wykonać test.</p>
+  </item>
+
+</steps>
+
+</section>
+
+<section id="disk-not-healthy">
+
+ <title>Co, jeśli stan dysku nie jest OK?</title>
+
+  <p>Nawet jeśli <gui>Ogólna ocena</gui> wskazuje, że dysk <em>nie jest</em> OK, to może nie być powodu do paniki. Lepiej jednak wykonać <link xref="backup-why">kopię zapasową</link>, aby uniknąć utraty danych.</p>
+
+  <p>Jeśli stan to „Pre-Fail”, to dysk jest nadal całkiem OK, ale wykryto objawy zużycia, co może oznaczać awarię w bliskiej przyszłości. Jeśli dysk twardy (lub komputer) ma kilka lat, to ten komunikat może pojawić się obok kilku pozycji. Należy <link xref="backup-how">regularnie wykonywać kopie zapasowe ważnych plików</link> i okresowo sprawdzać stan dysku, aby kontrolować, czy sytuacja się pogarsza.</p>
+
+  <p>Jeśli tak się dzieje, należy zabrać komputer/dysk twardy do serwisu, który przeprowadzi dalszą diagnozę lub naprawę.</p>
+
+</section>
+
+</page>

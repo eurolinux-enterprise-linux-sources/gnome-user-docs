@@ -24,12 +24,14 @@
       <years>2015</years>
     </credit>
 
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
     <desc>Eliminar acceso a un fornecedor de servizo en liña para os seus aplicativos.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2013.</mal:years>
+      <mal:years>2011-2018</mal:years>
     </mal:credit>
   </info>
 
@@ -38,15 +40,9 @@
   <p>Pode eliminar unha conta en liña que non desexa usar.</p>
 
   <note style="tip">
-    <p>Many online services provide an authorization token which GNOME stores
-    instead of your password. If you remove an account, you should also revoke
-    that certificate in the online service. This will ensure that no other
-    application or website can connect to that service using the authorization
-    for GNOME.</p>
+    <p>Algúns servizos en liña fornecen un token de autorización que GNOME almacena no lugar do seu contrasinal. Se eliminou unha conta terá que revocar o certificado no servizo en liña. Isto asegura que ningún outro aplicativo ou sitio pode conectarse ao servizo usando a autorización de GNOME.</p>
 
-    <p>How to revoke the authorization depends on the service provider. Check
-    your settings on the provider's website for authorized or connected apps
-    or sites. Look for an app called "GNOME" and remove it.</p>
+    <p>Como revocar a autorización dependerá do fornecedor do servizo. Comprobe as súas preferencias no sitio do fornecedor para autorizar ou conectar aplicativos ou sitios. Olle por un aplicativo chamado «GNOME» e elimíneo.</p>
   </note>
 
   <steps>
@@ -57,7 +53,7 @@
       <p>Prema <gui>Contas en liñla</gui> para abrir o panel.</p>
     </item>
     <item>
-      <p>Select the account which you wish to remove.</p>
+      <p>Seleccione a conta que quere eliminar.</p>
     </item>
     <item>
       <p>Prema o botón <key>-</key> na parte inferior esquerda da xanela.</p>
@@ -68,8 +64,6 @@
   </steps>
 
   <note style="tip">
-    <p>Instead of deleting the account completely, it is possible to
-    <link xref="accounts-disable-service">restrict the services</link> accessed
-    by your desktop.</p>
+    <p>No lugar de retirar a conta completamente, é posíbel <link xref="accounts-disable-service">restrinxir os servizos</link> aos que accede o seu escritorio.</p>
   </note>
 </page>

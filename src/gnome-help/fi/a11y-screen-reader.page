@@ -29,39 +29,42 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Jiri Grönroos</mal:name>
       <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
-      <mal:years>2012-2016.</mal:years>
+      <mal:years>2012-2018.</mal:years>
     </mal:credit>
   </info>
 
   <title>Lue näytön sisältöä ääneen</title>
 
-  <p>GNOME provides the <app>Orca</app> screen reader to speak the user
-  interface. Depending on how you installed GNOME, you might not have
-  Orca installed. If not, install Orca first.</p>
+  <p>GNOME tarjoaa <app>Orca</app>-näytönlukijan käyttöliittymän jatkuvaan pistekirjoituksella lukemiseen. Orca ei välttämättä ole asennettuna koneellesi oletuksena, joten asenna Orca ennen kuin jatkat.</p>
 
   <p if:test="action:install"><link style="button" action="install:orca">Asenna Orca</link></p>
+  
+  <p>Käynnistä <app>Orca</app> näppäimistöllä seuraavasti:</p>
+  
+  <steps>
+    <item>
+    <p>Paina <key>Super</key>+<key>Alt</key>+<key>S</key>.</p>
+    </item>
+  </steps>
+  
+  <p>Tai käynnistä <app>Orca</app> hiirtä ja näppäimistöä käyttäen:</p>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Universal Access</gui>.</p>
+      <p>Avaa <gui xref="shell-introduction#activities">Toiminnot</gui>-yleisnäkymä ja aloita kirjoittamaan <gui>Esteettömyys</gui>.</p>
     </item>
     <item>
-      <p>Click <gui>Universal Access</gui> to open the panel.</p>
+      <p>Napsauta <gui>Esteettömyys</gui> avataksesi paneelin.</p>
     </item>
     <item>
-      <p>Click <gui>Screen Reader</gui> in the <gui>Seeing</gui> section, then
-      switch <gui>Screen Reader</gui> on in the dialog.</p>
+      <p>Napsauta <gui>Näkeminen</gui>-osiossa kohtaa <gui>Näytönlukija</gui> ja aseta <gui>Näytönlukija</gui> Päällä-tilaan.</p>
     </item>
   </steps>
 
   <note style="tip">
-    <title>Quickly turn Screen Reader on and off</title>
-    <p>You can turn Screen Reader on and off by clicking the
-    <link xref="a11y-icon">accessibility icon</link> in the top bar and
-    selecting <gui>Screen Reader</gui>.</p>
+    <title>Ota näytönlukija nopeasti käyttöön tai pois käytöstä</title>
+    <p>Voit ottaa näytönlukijan käyttöön tai poistaa sen käytöstä napsauttamalla yläpalkista <link xref="a11y-icon">esteettömyyskuvaketta</link> ja valitsemalla <gui>Näytönlukija</gui>.</p>
   </note>
 
-  <p>Refer to the <link href="help:orca">Orca Help</link> for
-  more information.</p>
+  <p>Lisätietoja on saatavilla <link href="help:orca">Orcan ohjeesta</link>.</p>
 </page>

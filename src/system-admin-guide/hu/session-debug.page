@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="session-debug" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="sundry#session"/>
+    <revision version="0.1" date="2014-01-28" status="draft"/>
+
+    <credit type="author copyright">
+      <name>Matthias Clasen</name>
+      <email>matthias.clasen@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Jana Svarova</name>
+      <email>jana.svarova@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+
+    <desc>Mi történt a <file>~/.xsession-errors</file> fájllal?</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>ur.balazs@fsf.hu</mal:email>
+      <mal:years>2018.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Munkameneti problémák hibakeresése</title>
+
+  <p>Ha további információkat szeretne megtudni egy munkamenetben lévő problémával kapcsolatban, vagy ki szeretné javítani azt, akkor nézze meg a rendszernaplót, amely naplóadatokat tárol a felhasználói munkamenetekhez és az alkalmazásokhoz.</p>
+
+  <p>A <file>~/.xsession-errors</file> X munkamenet naplófájlja elavulttá vált, és többé nincs használatban.</p>
+
+<section id="session-log-systemd">
+  <title>Munkamenetnapló megtekintése systemd alapú rendszereken</title>
+  <p>A systemd alapú rendszereken a munkamenetnapló adatait a <app>systemd</app> naplójában találja, amely bináris formátumban tárolja az adatokat. A naplók megtekintéséhez használja a <cmd>journalctl</cmd> parancsot.</p>
+
+  <steps>
+    <title>A felhasználói munkamenet naplóinak megtekintéséhez:</title>
+    <item><p>Határozza meg a felhasználó-azonosítóját (<sys>uid</sys>) a következő parancs futtatásával:</p>
+    <screen><output>$ </output><input>id --user</input>
+1000</screen></item>
+    <item><p>Nézze meg a fent meghatározott felhasználó-azonosítóhoz tartozó naplóbejegyzéseket:</p>
+    <screen><output>$ </output><input>journalctl _UID=1000</input></screen>
+    </item>
+  </steps>
+
+  <p>A systemd naplójával kapcsolatos további információkért nézze meg a <link href="man:journalctl"><cmd>journalctl</cmd></link>(1) kézikönyvoldalát.</p>
+</section>
+
+</page>

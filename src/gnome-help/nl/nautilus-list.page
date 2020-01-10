@@ -31,111 +31,105 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Control what information is displayed in columns in list view.</desc>
+    <desc>Beheren welke informatie weergegeven wordt in kolommen in de lijstweergave.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Justin van Steijn</mal:name>
+      <mal:email>justin50@live.nl</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hannie Dumoleyn</mal:name>
+      <mal:email>hannie@ubuntu-nl.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
   </info>
 
-  <title>Files list columns preferences</title>
+  <title>Bestandsbeheer-voorkeuren: lijstkolommen</title>
 
-  <p>There are eleven columns of information that you can display in the
-  <gui>Files</gui> list view. Click <gui>Files</gui> in the top bar, pick
-  <gui>Preferences</gui> and choose the <gui>List Columns</gui> tab to select
-  which columns will be visible.</p>
+  <p>Er zijn elf informatiekolommen die u in de lijstweergave van bestandsbeheer kunt weergeven. Klik in de bovenbalk op <gui>Bestanden</gui> , klik op <gui>Voorkeuren</gui> en kies het tabblad <gui>Lijstkolommen</gui> om te kiezen welke kolommen zichtbaar zullen zijn.</p>
 
   <note style="tip">
-    <p>Use the <gui>Move Up</gui> and <gui>Move Down</gui> buttons to choose
-    the order in which the selected columns will appear. Click <gui>Reset to
-    Default</gui> to undo any changes and return to the default columns.</p>
+    <p>Gebruik de knoppen <gui>Naar boven</gui> en <gui>Naar beneden</gui> om de volgorde te kiezen waarin de geselecteerde kolommen zullen verschijnen. Klik op <gui>Terug naar standaardweergave</gui> om de wijzigingen ongedaan te maken en terug te gaan naar de standaardkolommen.</p>
   </note>
 
   <terms>
     <item>
-      <title><gui>Name</gui></title>
-      <p>The name of folders and files.</p>
+      <title><gui>Naam</gui></title>
+      <p>De naam van mappen en bestanden.</p>
       <note style="tip">
-        <p>The <gui>Name</gui> column cannot be hidden.</p>
+        <p>De kolom <gui>Naam</gui> kan niet worden verborgen.</p>
       </note>
     </item>
     <item>
-      <title><gui>Size</gui></title>
-      <p>The size of a folder is given as the number of items contained in the
-      folder. The size of a file is given as bytes, KB, or MB.</p>
+      <title><gui>Grootte</gui></title>
+      <p>De grootte van een map wordt aangegeven als het aantal items in die map. De grootte van een bestand wordt gegeven in bytes, KB of MB.</p>
     </item>
     <item>
       <title><gui>Type</gui></title>
-      <p>Displayed as folder, or file type such as PDF document, JPEG image,
-      MP3 audio, and more.</p>
+      <p>Weergegeven als map, of bestandstype zoals PDF-document, JPEG-afbeelding, MP3 audio.</p>
     </item>
     <item>
-      <title><gui>Modified</gui></title>
-      <p>Gives the date of the last time the file was modified.</p>
+      <title><gui>Gewijzigd</gui></title>
+      <p>Geeft de datum van de laatste keer dat het bestand werd gewijzigd.</p>
     </item>
     <item>
-      <title><gui>Owner</gui></title>
-      <p>The name of the user the folder or file is owned by.</p>
+      <title><gui>Eigenaar</gui></title>
+      <p>De naam van de gebruiker die eigenaar is van de map of het bestand.</p>
     </item>
     <item>
-      <title><gui>Group</gui></title>
-      <p>The group the file is owned by. Each user is normally in their own
-      group, but it is possible to have many users in one group. For example, a
-      department may have their own group in a work environment.</p>
+      <title><gui>Groep</gui></title>
+      <p>De groep waartoe het bestand behoort. Elke gebruiker zit normaalgesproken in een eigen groep, maar het is mogelijk dat meerdere gebruikers in één groep zitten. Zo kan een afdeling een eigen groep hebben in een werkomgeving.</p>
     </item>
     <item>
-      <title><gui>Permissions</gui></title>
-      <p>Displays the file access permissions. For example,
-      <gui>drwxrw-r--</gui></p>
+      <title><gui>Rechten</gui></title>
+      <p>Geeft de toegangsrechten tot het bestand weer, bijv. <gui>drwxrw-r--</gui></p>
       <list>
         <item>
-          <p>The first character is the file type. <gui>-</gui> means regular
-          file and <gui>d</gui> means directory (folder). In rare cases, other
-          characters can also be shown.</p>
+          <p>Het eerste teken <gui>-</gui> is het bestandstype. <gui>-</gui> betekent normaal bestand en <gui>d</gui> betekent directory (map). In zeldzame gevallen kunnen er ook andere tekens weergegeven worden.</p>
         </item>
         <item>
-          <p>The next three characters <gui>rwx</gui> specify permissions for
-          the user who owns the file.</p>
+          <p>De volgende drie tekens <gui>rwx</gui> geven de rechten aan voor de gebruiker die eigenaar is van het bestand.</p>
         </item>
         <item>
-          <p>The next three <gui>rw-</gui> specify permissions for all members
-          of the group that owns the file.</p>
+          <p>De volgende drie tekens <gui>rw-</gui> geven de rechten aan voor alle leden van de groep die eigenaar is van het bestand.</p>
         </item>
         <item>
-          <p>The last three characters in the column <gui>r--</gui> specify
-          permissions for all other users on the system.</p>
+          <p>De laatste drie tekens in de kolom <gui>r--</gui> geven de rechten aan voor alle andere gebruikers van het systeem.</p>
         </item>
       </list>
-      <p>Each permission has the following meanings:</p>
+      <p>De betekenis van de rechten:</p>
       <list>
         <item>
-          <p><gui>r</gui>: readable, meaning that you can open the file or
-          folder</p>
+          <p><gui>r</gui>: leesbaar, hetgeen inhoudt dat u het bestand of de map kunt openen</p>
         </item>
         <item>
-          <p><gui>w</gui>: writable, meaning that you can save changes to it</p>
+          <p><gui>w</gui>: schrijfbaar, hetgeen betekent dat u wijzigingen kunt opslaan</p>
         </item>
         <item>
-          <p><gui>x</gui>: executable, meaning that you can run it if it is a
-          program or script file, or you can access subfolders and files if it
-          is a folder</p>
+          <p><gui>x</gui>: uitvoerbaar, hetgeen betekent dat u het kan uitvoeren als het een programma of scriptbestand is, of dat u toegang heeft tot submappen en bestanden als het een map is</p>
         </item>
         <item>
-          <p><gui>-</gui>: permission not set</p>
+          <p><gui>-</gui>: permissie niet ingesteld</p>
         </item>
       </list>
     </item>
     <item>
-      <title><gui>MIME Type</gui></title>
-      <p>Displays the MIME type of the item.</p>
+      <title><gui>MIME-type</gui></title>
+      <p>Geeft het MIME-type van het item weer.</p>
     </item>
     <item>
-      <title><gui>Location</gui></title>
-      <p>The path to the location of the file.</p>
+      <title><gui>Locatie</gui></title>
+      <p>Het pad naar de locatie van het bestand.</p>
     </item>
     <item>
-      <title><gui>Modified – Time</gui></title>
-      <p>Gives the date and time of the last time the file was modified.</p>
+      <title><gui>Gewijzigd — Tijd</gui></title>
+      <p>Geeft de datum en tijd van de laatste keer dat het bestand werd gewijzigd.</p>
     </item>
     <item>
-      <title><gui>Accessed</gui></title>
-      <p>Gives the date or time of the last time the file was modified.</p>
+      <title><gui>Benaderd</gui></title>
+      <p>Geeft de datum of tijd van de laatste keer dat het bestand werd gewijzigd.</p>
     </item>
   </terms>
 

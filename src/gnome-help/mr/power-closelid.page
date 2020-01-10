@@ -9,6 +9,7 @@
     <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
     <revision pkgversion="3.10" date="2013-11-08" status="review"/>
     <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.26" date="2017-09-30" status="candidate"/>
 
     <credit type="author">
       <name>GNOME डॉक्युमेंटेशन प्रकल्प</name>
@@ -36,7 +37,12 @@
 
   <title>लीड बंद केल्यानंतर माझे संगणक बंद का होते?</title>
 
-  <p>लॅपटॉपचे लिड बंद केल्यानंतर, पावर साठवण्याकरिता तुमचे संगणक <link xref="power-suspend"><em>सस्पेंड</em></link> केले जातील. याचा अर्थ संगणक प्रत्यक्षरित्या बंद केले जात नाही - ते फक्त स्लीप मोडमध्ये गेले आहे. लिड उघडून पुन्हा सुरू करणे शक्य आहे. पुन्हा सुरू न झाल्यास, माउस क्लिक करण्याचा प्रयत्न करा किंवा कि दाबा. तेही कार्य न झाल्यास, पावर बटन दाबा.</p>
+  <p>When you close the lid of your laptop, your computer will
+  <link xref="power-suspend"><em>suspend</em></link> in order to save power.
+  This means that the computer is not actually turned off — it has just gone to
+  sleep. You can resume it by opening the lid. If it does not resume, try
+  clicking the mouse or pressing a key. If that still does not work, press the
+  power button.</p>
 
   <p>काही संगणकांना योग्यरित्या सस्पेंड करणे अशक्य आहे, कारण त्यांचे हार्डवेअर कार्यप्रणालीतर्फे पूर्णपणे समर्थीत केले जात नाही (उदाहरणार्थ, Linux ड्राइव्हर्स अपूर्ण आहेत). ह्या घटनामध्ये, तुम्ही लिड बंद केल्यानंतर संगणकाला पुन्हा सुरू करू शकत नाही. <link xref="power-suspendfail">सस्पेंडसह अडचणीचे निवारण करा</link>, किंवा लिड बंद केल्यानंतर तुम्ही संगणकाला सस्पेंड होण्यापासून टाळू शकता.</p>
 
@@ -49,11 +55,11 @@
   </note>
 
   <note style="important">
-    <p>You need to have the <app>Tweak Tool</app> installed on your computer to
+    <p>You need to have <app>Tweaks</app> installed on your computer to
     change this setting.</p>
     <if:if xmlns:if="http://projectmallard.org/if/1.0/" test="action:install">
-      <p><link style="button" action="install:gnome-tweak-tool">Install
-      <app>Tweak Tool</app></link></p>
+      <p><link style="button" action="install:gnome-tweaks">Install
+      <app>Tweaks</app></link></p>
     </if:if>
   </note>
 
@@ -66,20 +72,21 @@
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Tweak Tool</gui>.</p>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui>
+      overview and start typing <gui>Tweaks</gui>.</p>
     </item>
     <item>
-      <p>Click <gui>Tweak Tool</gui> to open the application.</p>
+      <p>Click <gui>Tweaks</gui> to open the application.</p>
     </item>
     <item>
       <p>Click the <gui>Power</gui> tab.</p>
     </item>
     <item>
-      <p>Switch <gui>Don't suspend on lid close</gui> to <gui>ON</gui>.</p>
+      <p>Switch <gui>Suspend when laptop lid is closed</gui> to
+      <gui>OFF</gui>.</p>
     </item>
     <item>
-      <p>Close the <gui>Tweak Tool</gui> window.</p>
+      <p>Close the <gui>Tweaks</gui> window.</p>
     </item>
   </steps>
 

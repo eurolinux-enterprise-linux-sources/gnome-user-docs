@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="power-nowireless" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="power#problems"/>
+    <link type="seealso" xref="power-suspendfail"/>
+    <link type="seealso" xref="hardware-driver"/>
+
+    <revision pkgversion="3.7.1" version="0.2" date="2012-11-16" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-10-28" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Projekt dokumentacji GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Niektóre urządzenia bezprzewodowe nie radzą sobie z uśpieniem komputera, i mogą nie wznowić działania po przebudzeniu.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Po przebudzeniu komputera sieć bezprzewodowa nie działa</title>
+
+  <p>Po przebudzeniu komputera z uśpienia może się okazać, że bezprzewodowe połączenie internetowe nie działa. Zdarza się to, kiedy <link xref="hardware-driver">sterownik</link> urządzenia bezprzewodowego nie obsługuje w pełni pewnych funkcji oszczędzania prądu.</p>
+
+  <p>W takim przypadku spróbuj wyłączyć sieć bezprzewodową i włączyć ją ponownie:</p>
+
+  <steps>
+    <item>
+      <p>Otwórz <gui xref="shell-introduction#activities">ekran podglądu</gui> i zacznij pisać <gui>Sieć</gui>.</p>
+    </item>
+    <item>
+      <p>Kliknij <gui>Sieć</gui>, aby otworzyć panel.</p>
+    </item>
+    <item>
+      <p>Wybierz <gui>Wi-Fi</gui>.</p>
+    </item>
+    <item>
+      <p>Przełącz sieć bezprzewodową na <gui>◯</gui> (wyłączone) i z powrotem na <gui>|</gui> (włączone).</p>
+    </item>
+    <item>
+      <p>Jeśli sieć bezprzewodowa nadal nie działa, przełącz <gui>Tryb samolotowy</gui> na <gui>|</gui> (włączone) i z powrotem na <gui>◯</gui> (wyłączone).</p>
+    </item>
+  </steps>
+
+  <p>Jeśli to nie zadziała, ponowne uruchomienie komputera powinno naprawić sieć bezprzewodową. Jeśli po tym nadal są problemy, połącz się z Internetem za pomocą kabla Ethernet i zaktualizuj komputer.</p>
+
+</page>

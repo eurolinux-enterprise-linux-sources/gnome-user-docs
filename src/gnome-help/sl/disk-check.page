@@ -20,7 +20,7 @@
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
     <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
 
-    <desc>Svoj disk lahko preizkusite za težave in se prepričate, da je zdrav.</desc>
+    <desc>Test your hard disk for problems to make sure that it’s healthy.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
@@ -30,10 +30,11 @@
  <title>Preverjanje trdega diska</title>
   <p>Trdi diski imajo vgrajeno orodje za preverjanje zdrava <app>SMART</app>, ki stalno preverja za morebitne težave diska. SMART vas tudi opozori, če je disk pred odpovedjo in vam pomaga pri izogibanju izgube pomembnih podatkov.</p>
 
-  <p>Čeprav se SMART izvaja samodejno, lahko zdravje diska preverite tudi s programom <app>Diski</app>:</p>
+  <p>Although SMART runs automatically, you can also check your disk’s
+ health by running the <app>Disks</app> application:</p>
 
 <steps>
- <title>Preverite zdravje diska s programom Diski</title>
+ <title>Check your disk’s health using the Disks application</title>
 
   <item>
     <p>Open <app>Disks</app> from the <gui>Activities</gui> overview.</p>
@@ -44,7 +45,7 @@
   </item>
   <item>
     <p>Click the menu button and select <gui>SMART Data &amp; Self-Tests…</gui>.
-    The <gui>Overall Assessment</gui> should say "Disk is OK".</p>
+    The <gui>Overall Assessment</gui> should say “Disk is OK”.</p>
   </item>
   <item>
     <p>See more information under <gui>SMART Attributes</gui>, or click the
@@ -57,14 +58,19 @@
 
 <section id="disk-not-healthy">
 
- <title>Kaj storiti, če disk ne deluje brezhibno?</title>
+ <title>What if the disk isn’t healthy?</title>
 
   <p>Even if the <gui>Overall Assessment</gui> indicates that the disk
-  <em>isn't</em> healthy, there may be no cause for alarm. However, it's better
+  <em>isn’t</em> healthy, there may be no cause for alarm. However, it’s better
   to be prepared with a <link xref="backup-why">backup</link> to prevent data
   loss.</p>
 
-  <p>V primeru da stanje pravi "Pre-fail" je disk v razumno dobrem stanju, vendar so bili zaznani znaki obrabe, kar pomeni, da se bo lahko kmalu pokvaril. V primeru da je vaš trdi disk (ali računalnik) star nekaj let, boste to sporočilo verjetno videli vsaj na nekaj preverjanjih stanja. <link xref="backup-how">Redno ustvarjajte varnostne kopije pomembnih datotek</link> in občasno preverite ali se stanje diska slabša.</p>
+  <p>If the status says “Pre-fail”, the disk is still reasonably healthy but
+ signs of wear have been detected which mean it might fail in the near future.
+ If your hard disk (or computer) is a few years old, you are likely to see
+ this message on at least some of the health checks. You should
+ <link xref="backup-how">backup your important files regularly</link> and check
+ the disk status periodically to see if it gets worse.</p>
 
   <p>V primeru da se stanje poslabša, odpeljite računalnik/trdi disk k profesionalcu za nadaljnjo diagnozo in popravilo.</p>
 

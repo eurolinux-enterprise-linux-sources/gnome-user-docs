@@ -9,6 +9,7 @@
     <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
     <revision pkgversion="3.10" date="2013-11-08" status="review"/>
     <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.26" date="2017-09-30" status="candidate"/>
 
     <credit type="author">
       <name>Gnome-documentatieproject</name>
@@ -26,66 +27,61 @@
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <desc>Laptops worden in de pauzestand gezet wanneer ze dicht gedaan worden, om energie te sparen.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Justin van Steijn</mal:name>
+      <mal:email>justin50@live.nl</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hannie Dumoleyn</mal:name>
+      <mal:email>hannie@ubuntu-nl.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
   </info>
 
-  <title>Waarom wordt mijn computer uitgeschakeld wanneer ik hem dicht doe?</title>
+  <title>Waarom wordt mijn computer uitgeschakeld wanneer ik hem dichtdoe?</title>
 
-  <p>When you close the lid of your laptop, your computer will
-  <link xref="power-suspend"><em>suspend</em></link> in order to save power.
-  This means that the computer is not actually turned off - it has just gone to
-  sleep. You can resume it by opening the lid. If it does not resume, try
-  clicking the mouse or pressing a key. If that still does not work, press the
-  power button.</p>
+  <p>Wanneer u uw laptop dichtdoet, wordt deze in de <link xref="power-suspend"><em>pauzestand</em></link> gezet om energie te sparen. Dit houdt in dat de computer niet werkelijk wordt uitgeschakeld maar in de pauzestand wordt gezet. U kunt hem weer activeren door hem open te maken. Als dat niet gebeurt, probeer dan een muisklik te geven of op een toets te drukken. Als dat nog niet werkt, druk dan op de aan/uitknop.</p>
 
-  <p>Some computers are unable to suspend properly, normally because their
-  hardware is not completely supported by the operating system (for example,
-  the Linux drivers are incomplete). In this case, you may find that you are
-  unable to resume your computer after you have closed the lid. You can try to
-  <link xref="power-suspendfail">fix the problem with suspend</link>, or you
-  can prevent the computer from trying to suspend when you close the lid.</p>
+  <p>Sommige computers kunnen niet op de juiste manier in de pauzestand worden gezet, meestal omdat hun hardware niet volledig wordt ondersteund door het besturingssysteem (bijv. de Linux stuurprogramma's zijn onvolledig). In dit geval kan het zijn dat u uw laptop niet kunt activeren nadat hij dicht is gemaakt. U kunt <link xref="power-suspendfail">het probleem met de pauzestand oplossen</link> proberen, of u kunt voorkomen dat de computer in de pauzestand wordt gezet wanneer hij dicht gedaan wordt.</p>
 
 <section id="nosuspend">
   <title>Voorkomen dat de computer in de pauzestand wordt gezet wanneer hij dicht wordt gedaan</title>
 
   <note style="important">
-    <p>These instructions will only work if you are using <app>systemd</app>.
-    Contact your distribution for more information.</p>
+    <p>Deze instructies werken alleen als u <app>systemd</app> gebruikt. Neem contact op met uw distributie voor meer informatie.</p>
   </note>
 
   <note style="important">
-    <p>You need to have the <app>Tweak Tool</app> installed on your computer to
-    change this setting.</p>
+    <p>U dient <app>Afstelhulp (Tweaks)</app> te hebben geïnstalleerd op uw computer om deze instelling te wijzigen.</p>
     <if:if xmlns:if="http://projectmallard.org/if/1.0/" test="action:install">
-      <p><link style="button" action="install:gnome-tweak-tool">Install
-      <app>Tweak Tool</app></link></p>
+      <p><link style="button" action="install:gnome-tweak-tool"><app>Afstelhulp</app> installeren</link></p>
     </if:if>
   </note>
 
-  <p>If you do not want the computer to suspend when you close the lid, you can
-  change the setting for that behavior.</p>
+  <p>Als u niet wilt dat de computer in de pauzestand wordt gezet wanneer u hem dichtdoet, kunt u de instellingen daarvoor wijzigen:</p>
 
   <note style="warning">
-    <p>Be very careful if you change this setting. Some laptops can overheat
-    if they are left running with the lid closed, especially if they are in
-    a confined place like a backpack.</p>
+    <p>Wees zeer voorzichtig als u deze instelling wijzigt. Sommige laptops kunnen oververhit raken als ze actief blijven als de klep gesloten is, vooral als de laptop in een afgesloten plaats zoals een rugzak zit.</p>
   </note>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Tweak Tool</gui>.</p>
+      <p>Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht en typ <gui>Afstelhulp</gui>.</p>
     </item>
     <item>
-      <p>Click <gui>Tweak Tool</gui> to open the application.</p>
+      <p>Klik op <gui>Afstelhulp</gui> om de toepassing te openen.</p>
     </item>
     <item>
-      <p>Click the <gui>Power</gui> tab.</p>
+      <p>Klik op het tabblad <gui>Energie</gui>.</p>
     </item>
     <item>
-      <p>Switch <gui>Don't suspend on lid close</gui> to <gui>ON</gui>.</p>
+      <p>Zet <gui>In de pauzestand bij sluiten deksel</gui> <gui>UIT</gui>.</p>
     </item>
     <item>
-      <p>Close the <gui>Tweak Tool</gui> window.</p>
+      <p>Sluit het <gui>Afstelhulp</gui>-venster.</p>
     </item>
   </steps>
 

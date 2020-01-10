@@ -66,12 +66,17 @@
 
   <p>ネットワーク接続を使用する可能性があるアプリケーションが多々あります。たとえば、ネットワークに接続している場合、ファイルを共有したり他のユーザーに遠隔からのデスクトップの表示を許可したりすることができます。コンピューターのセットアップ方法によっては、こうしたサービスが意図した通りに動作するようファイアウォールを調整する必要があります。</p>
 
-  <p>ネットワークサービスを提供するプログラムはそれぞれ特定の<em>ネットワークポート</em>を使用します。ネットワーク上の他のコンピューターにサービスへのアクセスを許可するには、場合によってそのサービスに割り当てられているポートをファイアウォール上で「開く」必要があります。</p>
+  <p>Each program that provides network services uses a specific <em>network
+  port</em>. To enable other computers on the network to access a service, you
+  may need to “open” its assigned port on the firewall:</p>
 
 
   <steps>
     <item>
-      <p>画面左上にある<gui>アクティビティ</gui>からファイアウォールアプリケーションを起動します。ファイアウォール管理ツール (Firestarter、 GUFW など) が見つからない場合は必要に応じてインストールしえください。</p>
+      <p>Go to <gui>Activities</gui> in the top left corner of the screen and
+      start your firewall application. You may need to install a firewall
+      manager yourself if you can’t find one (for example, Firestarter or
+      GUFW).</p>
     </item>
     <item>
       <p>他のユーザーにアクセスを許可するかしないかに応じて、ネットワークサービスのポートを開いたり無効にしたりします。変更が必要なポートは<link xref="net-firewall-ports">サービスによって異なります</link>。</p>

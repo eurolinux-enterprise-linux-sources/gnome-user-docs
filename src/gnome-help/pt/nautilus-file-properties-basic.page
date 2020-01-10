@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-file-properties-basic" xml:lang="pt">
+
+  <info>
+    <link type="guide" xref="files#more-file-tasks"/>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Ver informação básica do ficheiro, atribuir permissões e selecionar aplicações predeterminados.</desc>
+
+  </info>
+
+  <title>Propriedades do ficheiro</title>
+
+  <p>Pode ver informação sobre um ficheiro ou diretório, carregue com o botão direito e selecione <gui>Propriedades</gui>. Também pode selecionar o ficheiro e carregar <keyseq><key>Alt</key><key>Enter</key></keyseq>.</p>
+
+  <p>A janela de propriedades do ficheiro mostra-lhe informação tal como o tipo de ficheiro, seu tamanhou e quando o modificou por última vez. Se precisa esta informação com frequência, pode mostrar nas <link xref="nautilus-list">colunas da vista de pronta</link> ou nas <link xref="nautilus-display#icon-captions">lendas dos ícones</link>.</p>
+
+  <p>A informação básica dada na flange <gui>Básico</gui> explica-se a continuação. Também estão as flanges <gui><link xref="nautilus-file-properties-permissions">Permissões</link></gui> e <gui><link xref="files-open#default">Abrir com</link></gui>. Para certos tipos de ficheiros, como imagens e vídeos, terá uma flange adicional que proporcione informação sobre o tamanho, a duração e o codec.</p>
+
+<section id="basic">
+ <title>Propriedades básicas</title>
+ <terms>
+  <item>
+    <title><gui>Nome</gui></title>
+    <p>Pode mudar o nome do ficheiro mudando este campo. Também pode mudar o nome dum ficheiro fora da janela de propriedades. Consulte a <link xref="files-rename"/>.</p>
+  </item>
+  <item>
+    <title><gui>Tipo</gui></title>
+    <p>This helps you identify the type of the file, such as PDF document,
+    OpenDocument Text, or JPEG image. The file type determines which
+    applications can open the file, among other things. For example, you
+    can’t open a picture with a music player. See <link xref="files-open"/>
+    for more information on this.</p>
+    <p>Entre parêntese mostra-se o <em>tipo MIME</em> do ficheiro; o tipo MIME é uma forma regular que as computadores usam para referir ao tipo de ficheiro.</p>
+  </item>
+
+  <item>
+    <title>Conteúdo</title>
+    <p>Este campo mostra-se se está consultando as propriedades duma diretório. Mostra o número de elementos da diretório. Se a diretório inclui outras diretórios, a cada diretório interna conta-se como um elemento, ainda que contenha a sua vez outros elementos. A cada ficheiro conta-se como um elemento. Se a diretório está vacia, o conteúdo não mostrassé <gui>nada</gui>.</p>
+  </item>
+
+  <item>
+    <title>Tamanhou</title>
+    <p>Este campo mostra-se se está a ver um ficheiro (não uma diretório). o tamanho dum ficheiro indica-lhe quanto espaço ocupa no disco. Também é um indicador de quanto demorará em descarregar um ficheiro ou no enviar por e-mail (quanto maior é o ficheiro, mais demora ao se enviar/se receber).</p>
+    <p>Os tamanhos pode-se dar em bytes, KB, MB ou GB; nos três últimos casos, o tamanho em bytes aparece entre parênteses. Tecnicamente, 1KB são 1024 bytes, 1MB são 1024 KB, e assim sucessivamente.</p>
+  </item>
+
+  <item>
+    <title>Pasta pai</title>
+    <p>The location of each file on your computer is given by its <em>absolute
+    path</em>. This is a unique “address” of the file on your computer, made up
+    of a list of the folders that you would need to go into to find the file.
+    For example, if Jim had a file called <file>Resume.pdf</file> in his Home
+    folder, its parent folder would be <file>/home/jim</file> and its location
+    would be <file>/home/jim/Resume.pdf</file>.</p>
+  </item>
+
+  <item>
+    <title>Espaço livre</title>
+    <p>Isto só se mostra para as diretórios. Indica a quantidade total de espaço disponível no disco no que se encontra a diretório. É útil para verificar se o disco duro está cheio.</p>
+  </item>
+
+  <item>
+    <title>Acedido</title>
+    <p>Data e hora da última abertura do ficheiro.</p>
+  </item>
+
+  <item>
+    <title>Modificado</title>
+    <p>Data e hora da última vez que se mudou e guardou o ficheiro.</p>
+  </item>
+ </terms>
+</section>
+
+</page>

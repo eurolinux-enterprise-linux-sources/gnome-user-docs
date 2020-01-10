@@ -5,7 +5,7 @@
 
 
     <credit type="author">
-      <name>Projek Dokumentasi GNOME</name>
+      <name>Proyek Dokumentasi GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
 
@@ -17,7 +17,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Andika Triwidada</mal:name>
       <mal:email>andika@gmail.com</mal:email>
-      <mal:years>2011, 2012, 2013, 2014.</mal:years>
+      <mal:years>2011-2014, 2017.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ahmad Haris</mal:name>
+      <mal:email>ahmadharis1982@gmail.com</mal:email>
+      <mal:years>2017.</mal:years>
     </mal:credit>
   </info>
 
@@ -25,49 +31,29 @@
 
   <p>Kata <em>volume</em> dipakai untuk menjelaskan suatu perangkat penyimpanan, seperti sebuah hard disk. Itu juga bisa mengacu kepada sebuah <em>bagian</em> dari penyimpanan pada perangkat, karena Anda dapat memecah penyimpanan ke dalam bongkahan-bongkahan. Komputer membuat penyimpanan ini dapat diakses melalui sistem berkas Anda dalam suatu proses yang dikenal sebagai <em>mengait</em>. Volume yang dikat mungkin berubah hard disk, USB, DVD-RW, kartu SD, dan media lain. Bila suatu volume saat ini sedang dikait, Anda dapat membaca (dan mungkin menulis) berkas-berkas padanya.</p>
 
-  <p>Often, a mounted volume is called a <em>partition</em>, though they are not
- necessarily the same thing. A “partition” refers to a <em>physical</em> area of
- storage on a single disk drive. Once a partition has been mounted, it can be
- referred to as a volume because you can access the files on it. You can think
- of volumes as the labeled, accessible “storefronts” to the functional “back
- rooms” of partitions and drives.</p>
+  <p>Seringkali, suatu volume yang dikait dinamai sebagai <em>partisi</em>, walaupun belum tentu mereka merupakan hal yang sama. Suatu "partisi" mengacu ke suatu wilayah penyimpanan <em>fisik</em> pada suatu disk tunggal. Sekali sebuah partisi telah dikait, itu dapat diacu sebagai suatu volume karena Anda dapat mengakses berkas-berkas padanya. </p>
 
 <section id="manage">
  <title>Lihat dan kelola volume dan partisi memakai utilitas disk</title>
 
-  <p>Anda dapat memeriksa dan mengubah volume penyimpanan komputer Anda dengan utilitas diska.</p>
+  <p>Anda dapat memeriksa dan mengubah volume penyimpanan komputer Anda dengan utilitas disk.</p>
 
 <steps>
   <item>
-    <p>Open the <gui>Activities</gui> overview and start <app>Disks</app>.</p>
+    <p>Buka ringkasan <gui>Aktivitas</gui> dan mulai <app>Disk</app>.</p>
   </item>
   <item>
-    <p>In the list of storage devices on the left, you will find hard disks,
-    CD/DVD drives, and other physical devices. Click the device you want to
-    inspect.</p>
+    <p>Pada daftar perangkat penyimpanan di sebelah kiri, Anda akan menemukan hardisk, drive CD/DVD, dan perangkat fisik lainnya. Klik pada perangkat yang akan Anda periksa.</p>
   </item>
   <item>
-    <p>The right pane provides a visual breakdown of the volumes and
-    partitions present on the selected device. It also contains a variety of
-    tools used to manage these volumes.</p>
+    <p>Di panel kanan, area berlabel <gui>Volume</gui> menyediakan rincian visual dari volumen dari partisi yang ada pada perangkat yang dipilih. Itu juga memuat berbagai perkakas yang dipakai untuk mengelola volume ini.</p>
     <p>Berhati-hatilah: mungkin saja menghapus sepenuhnya data pada disk Anda dengan utilitas ini.</p>
   </item>
 </steps>
 
-  <p>Your computer most likely has at least one <em>primary</em> partition and a
- single <em>swap</em> partition. The swap partition is used by the operating
- system for memory management, and is rarely mounted.  The primary partition
- contains your operating system, applications, settings, and personal files.
- These files can also be distributed among multiple partitions for security or
- convenience.</p>
+  <p>Komputer Anda kemungkinan besar memiliki setidaknya satu <em>primer</em> partisi dan satu <em>swap</em> partisi. Partisi swap digunakan oleh sistem operasi untuk manajemen memori, dan jarang dipasang. Partisi utama berisi sistem operasi, aplikasi, pengaturan, dan file pribadi. File-file ini juga dapat didistribusikan di antara beberapa partisi untuk keamanan atau kenyamanan.</p>
 
-  <p>One primary partition must contain information that your computer uses to
-  start up, or <em>boot</em>. For this reason it is sometimes called a boot
-  partition, or boot volume. To determine if a volume is bootable, select the
-  partition and click the menu button in the toolbar underneath the partition
-  list. Then, click <gui>Edit Partition…</gui> and look at its
-  <gui>Flags</gui>. External media such as USB drives and CDs may also contain
-  a bootable volume.</p>
+  <p>Salah satu partisi utama harus berisi informasi yang menggunakan komputer Anda untuk memulai, atau <em>boot</em>. Untuk alasan ini kadang-kadang disebut partisi boot, atau volume boot. Untuk menentukan apakah volume bisa dipakai boot, pilih partisi dan klik tombol menu pada bilah alat di bawah daftar partisi. Lalu klik <gui>Sunting Partisi...</gui> dan lihat pada <gui>Bendera</gui> . Media eksternal seperti USB drive dan CD juga mengandung volume yang bisa dipakai boot.</p>
 
 </section>
 

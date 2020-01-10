@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="extensions-enable" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="software#extension"/>
+    <link type="seealso" xref="extensions-lockdown"/>
+    <link type="seealso" xref="extensions"/>
+    <revision pkgversion="3.12" date="2014-06-17" status="review"/>
+
+    <credit type="author copyright">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Erweiterungen der GNOME-Shell für alle Benutzer aktivieren.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Erweiterungen systemweit aktivieren</title>
+  
+  <p>Um Erweiterungen allen Benutzern des Systems zugänglich zu machen, installieren Sie diese in den Ordner <file>/usr/share/gnome-shell/extensions</file>. Beachten Sie, dass systemweit neu installierte Erweiterungen in der Voreinstellung zunächst deaktiviert sind. Um die Erweiterungen für alle Benutzer zu aktivieren, muss der Schlüssel <code>org.gnome.shell.enabled-extensions</code> gesetzt werden.</p>
+
+  <steps>
+    <title>Setzen des Schlüssels org.gnome.shell.enabled-extensions</title>
+    <item>
+      <p>Legen Sie ein <code>Benutzer</code>profil an unter <file>/etc/dconf/profile/user</file>:</p>
+      <listing>
+        <code>
+user-db:user
+system-db:local
+</code>
+      </listing>
+    </item>
+    <item>
+      <p>Erstellen Sie eine <code>local</code>-Datenbank für systemweite Einstellungen in <file>/etc/dconf/db/local.d/00-extensions</file>:</p>
+      <listing>
+        <code>
+[org/gnome/shell]
+# Alle Erweiterungen auflisten, die für alle Benutzer aktiviert werden sollen
+enabled-extensions=['<input>meine_erweiterung1@meinname.example.com</input>', '<input>meine_erweiterung2@meinname.example.com</input>']
+</code>
+      </listing>
+      <p>Der Schlüssel <code>enabled-extensions</code> gibt die aktivierten Erweiterungen anhand der UUIDs der Erweiterungen an (<code>meine_erweiterung1@meinname.example.com</code> und <code>meine_erweiterung2@meinname.example.com</code>).</p>
+    </item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+  </steps>
+
+</page>

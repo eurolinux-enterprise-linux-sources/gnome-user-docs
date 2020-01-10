@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="mime-types-custom-user" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="software#management"/>
+    <link type="seealso" xref="mime-types"/>
+    <revision pkgversion="3.12" date="2014-06-17" status="review"/>
+
+    <credit type="author">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+    <title>Lägga till en anpassad MIME-typ för enskilda användare</title>
+    <p>För att lägga till en anpassad MIME-typ för enskilda användare och registrera ett standardprogram för den MIME-typen behöver du skapa en ny MIME-typsspecifikationsfil i katalogen <file>~/.local/share/mime/packages/</file> och en <file>.desktop</file>-fil i katalogen <file>~/.local/share/applications/</file>.</p>
+    <steps>
+      <title>Lägg till en anpassad MIME-typ <code>application/x-nytyp</code> för enskilda användare</title>
+      <item>
+        <p>Skapa filen <file>~/.local/share/mime/packages/application-x-nytyp.xml</file>:</p>
+        <code mime="application/xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info"&gt;
+  &lt;mime-type type="application/x-nytyp"&gt;
+    &lt;comment&gt;ny mime-typ&lt;/comment&gt;
+    &lt;glob pattern="*.xyz"/&gt;
+  &lt;/mime-type&gt;
+&lt;/mime-info&gt;</code>
+      <p>Exempelfilen <file>application-x-nytyp.xml</file> ovan definierar en ny MIME-typ <sys>application/x-nytyp</sys> och tilldelar filnamn med ändelsen <file>.xyz</file> till den MIME-typen.</p>
+      </item>
+      <item>
+        <p>Skapa en ny <file>.desktop</file>-fil som exempelvis har namnet <file>mittprogram1.desktop</file> och placera den i katalogen <file>~/.local/share/applications/</file>:</p>
+        <code>[Desktop Entry]
+Type=Application
+MimeType=application/x-nytyp
+Name=<var>Mitt program 1</var>
+Exec=<var>mittprogram1</var></code>
+      <p>Exempelfilen <file>mittprogram1.desktop</file> ovan associerar MIME-typen <code>application/x-nytyp</code> med ett program som har namnet <app>Mitt program 1</app>, vilket körs med kommandot <cmd>mittprogram1</cmd>.</p>
+      </item>
+      <item>
+        <p>Uppdatera MIME-databasen för att dina ändringar ska börja gälla:</p>
+        <screen><output>$ </output><input>update-mime-database ~/.local/share/mime</input>
+        </screen>
+      </item>
+      <item>
+        <p>Uppdatera programdatabasen:</p>
+        <screen><output>$ </output><input>update-desktop-database ~/.local/share/applications</input>
+        </screen>
+      </item>
+      <item>
+        <p>För att bekräfta att du har associerat <file>*.xyz</file>-filer med MIME-typen <sys>application/x-nytyp</sys>, skapa först en tom fil, till exempel <file>test.xyz</file>:</p>
+        <screen><output>$ </output><input>touch test.xyz</input></screen>
+        <p>Kör sedan kommandot <cmd>gio info</cmd>:</p>
+        <screen><output>$ </output><input>gio info test.xyz | grep "standard::content-type"</input>
+  standard::content-type: application/x-nytyp</screen>
+        </item>
+        <item>
+          <p>För att bekräfta att <file>mittprogram1.desktop</file> har ställts in som registrerat standardprogram för MIME-typen <sys>application/x-nytyp</sys>, kör kommandot <cmd>gio mime</cmd>:</p>
+        <screen><output>$ </output><input>gio mime application/x-nytyp</input>
+Standardprogram för ”application/x-nytyp”: mittprogram1.desktop
+Registrerade program:
+	mittprogram1.desktop
+Rekommenderade program:
+	mittprogram1.desktop</screen>
+      </item>
+    </steps>
+</page>

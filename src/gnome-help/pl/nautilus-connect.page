@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-connect" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="sharing"/>
+
+    <revision pkgversion="3.6.0" date="2012-10-06" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Wyświetlanie i modyfikowanie plików na innym komputerze przez FTP, SSH, zasoby Windows lub WebDAV.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Przeglądanie plików na serwerze lub udziale sieciowym</title>
+
+<p>Można połączyć się z serwerem lub zasobem sieciowym, aby przeglądać i wyświetlać pliki na tym serwerze tak, jakby były na tym komputerze. To wygodny sposób na pobieranie i wysyłanie plików w Internecie oraz udostępnianie plików innym osobom w lokalnej sieci.</p>
+
+<p>Aby przeglądać pliki przez sieć, otwórz program <app>Pliki</app> z <gui>ekranu podglądu</gui> i kliknij <gui>Inne położenia</gui> na panelu bocznym. Menedżer plików wyszuka komputery w lokalnej sieci, które ogłaszają możliwość udostępniania plików. Aby połączyć z serwerem w Internecie lub potrzebny komputer się nie pojawia, można ręcznie połączyć wpisując jego adres internetowy/sieciowy.</p>
+
+<steps>
+  <title>Łączenie z serwerem plików</title>
+  <item><p>W menedżerze plików kliknij <gui>Inne położenia</gui> na panelu bocznym.</p>
+  </item>
+  <item><p>Na pasku <gui>Połącz z serwerem</gui> wpisz adres serwera w formie <link xref="#urls">adresu URL</link>. <link xref="#types">Poniżej</link> znajdują się informacje o obsługiwanych adresach URL.</p>
+  <note>
+    <p>Jeśli już wcześniej połączono się z serwerem, to można kliknąć go na liście <gui>Ostatnio używane serwery</gui>.</p>
+  </note>
+  </item>
+  <item>
+    <p>Kliknij przycisk <gui>Połącz</gui>. Zostaną wyświetlone pliki na serwerze. Można przeglądać je tak samo, jak pliki na tym komputerze. Serwer zostanie także dodany do panelu bocznego, więc w przyszłości można go łatwo otworzyć.</p>
+  </item>
+</steps>
+
+<section id="urls">
+ <title>Zapisywanie adresów URL</title>
+
+<p>Adres <em>URL</em> (ang. <em>Uniform Resource Locator</em>) to forma adresu odnoszącego się do położenia lub pliku w sieci. Tak wygląda adres:</p>
+  <example>
+    <p><sys>protokół://nazwa-serwera.example.com/katalog</sys></p>
+  </example>
+<p><em>Protokół</em> określa protokół lub typ serwera. Część <em>example.com</em> adresu nazywa się <em>nazwą domeny</em>. Jeśli wymagana jest nazwa użytkownika, to jest wstawiana przed nazwą serwera:</p>
+  <example>
+    <p><sys>protokół://nazwa-użytkownika@nazwa-serwera.example.com/katalog</sys></p>
+  </example>
+<p>Niektóre protokoły wymagają podania numeru portu. Wstaw go po nazwie domeny:</p>
+  <example>
+    <p><sys>protokół://nazwa-serwera.example.com:port/katalog</sys></p>
+  </example>
+<p>Poniżej opisano konkretne przykłady różnych obsługiwanych typów serwerów.</p>
+</section>
+
+<section id="types">
+ <title>Rodzaje serwerów</title>
+
+<p>Można łączyć się z różnymi typami serwerów. Część serwerów jest publiczna, umożliwiając wszystkim łączenie się z nimi. Inne serwery wymagają logowania za pomocą nazwy użytkownika i hasła.</p>
+<p>Użytkownik może nie mieć uprawnień do wykonywania pewnych działań na plikach na serwerze. Na przykład, publiczne witryny FTP zazwyczaj nie pozwalają usuwać plików.</p>
+<p>Wpisany adres URL zależy od protokołu używanego przez serwer do eksportowania swoich plików.</p>
+<terms>
+<item>
+  <title>SSH</title>
+  <p>Konto <em>SSH</em> na serwerze umożliwia łączenie za pomocą tej metody. Wielu dostawców serwerów internetowych dostarcza swoim użytkownikom konta SSH, aby mogli bezpiecznie wysyłać pliki. Serwery SSH zawsze wymagają logowania.</p>
+  <p>Typowy adres SSH:</p>
+  <example>
+    <p><sys>ssh://nazwa-użytkownika@nazwa-serwera.example.com/katalog</sys></p>
+  </example>
+
+  <p>Podczas używania SSH wszystkie wysyłane dane (w tym hasło) są zaszyfrowane, więc inni użytkownicy sieci nie mogą ich zobaczyć.</p>
+</item>
+<item>
+  <title>FTP (z logowaniem)</title>
+  <p>FTP to popularny sposób wymiany plików w Internecie. Ponieważ dane przesyłane przez FTP nie są zaszyfrowane, wiele serwerów dostarcza teraz dostęp przez SSH. Jednak niektóre serwery nadal umożliwiają lub wymagają używania FTP do wysyłania i pobierania plików. Witryny FTP z logowaniem zwykle umożliwiają usuwanie i wysyłanie plików.</p>
+  <p>Typowy adres FTP:</p>
+  <example>
+    <p><sys>ftp://nazwa-użytkownika@ftp.example.com/ścieżka/</sys></p>
+  </example>
+</item>
+<item>
+  <title>Publiczny FTP</title>
+  <p>Witryny umożliwiające pobieranie plików czasami dostarczają publiczny lub anonimowy dostęp do FTP. Te serwery nie wymagają nazwy użytkownika i hasła, i zazwyczaj nie umożliwiają usuwania ani wysyłania plików.</p>
+  <p>Typowy adres anonimowego FTP:</p>
+  <example>
+    <p><sys>ftp://ftp.example.com/ścieżka/</sys></p>
+  </example>
+  <p>Niektóre anonimowe witryny FTP wymagają logowania za pomocą publicznej nazwy użytkownika i hasła, albo publicznej nazwy użytkownika i adresu e-mail jako hasła. Dla tych serwerów używaj metody <gui>FTP (z logowaniem)</gui> i danych logowania podanych przez witrynę FTP.</p>
+</item>
+<item>
+  <title>Zasób systemu Windows</title>
+  <p>Komputery z systemem Windows używają własnościowego protokołu do udostępniania plików przez sieć lokalną. Komputery w sieci Windows są czasami grupowane w <em>domeny</em> w celach organizacyjnych i do lepszej kontroli dostępu. Można połączyć z zasobem Windows z menedżera plików, jeśli użytkownik ma właściwe uprawnienia na zdalnym komputerze.</p>
+  <p>Typowy adres zasobu Windows:</p>
+  <example>
+    <p><sys>smb://nazwa-serwera/Zasób</sys></p>
+  </example>
+</item>
+<item>
+  <title>WebDAV i zabezpieczony WebDAV</title>
+  <p>Oparty na protokole internetowym HTTP, WebDAV jest czasami używany do udostępniania plików w sieci lokalnej i przechowywania plików w Internecie. Jeśli serwer obsługuje zabezpieczone połączenia, to należy wybrać tę metodę. Zabezpieczone WebDAV używa silnego szyfrowania SSL, więc inni użytkownicy nie mogą zobaczyć hasła.</p>
+  <p>Typowy adres WebDAV:</p>
+  <example>
+    <p><sys>dav://nazwa-serwera.example.com/ścieżka</sys></p>
+  </example>
+</item>
+<item>
+  <title>Zasób NFS</title>
+  <p>Komputery z systemem UNIX tradycyjnie używają protokołu NFS do udostępniania plików przez sieć lokalną. W przypadku NFS bezpieczeństwo opiera się na UID użytkownika używającego zasobu, więc żadne dane logowania nie są potrzebne podczas łączenia.</p>
+  <p>Typowy adres zasobu NFS:</p>
+  <example>
+    <p><sys>nfs://nazwa-serwera/ścieżka</sys></p>
+  </example>
+</item>
+</terms>
+</section>
+
+</page>

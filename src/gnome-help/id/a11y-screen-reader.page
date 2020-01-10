@@ -23,39 +23,48 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Andika Triwidada</mal:name>
       <mal:email>andika@gmail.com</mal:email>
-      <mal:years>2011, 2012, 2013, 2014.</mal:years>
+      <mal:years>2011-2014, 2017.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ahmad Haris</mal:name>
+      <mal:email>ahmadharis1982@gmail.com</mal:email>
+      <mal:years>2017.</mal:years>
     </mal:credit>
   </info>
 
   <title>Baca layar keras-keras</title>
 
-  <p>GNOME provides the <app>Orca</app> screen reader to speak the user
-  interface. Depending on how you installed GNOME, you might not have
-  Orca installed. If not, install Orca first.</p>
+  <p>GNOME menyediakan pembaca layar <app>Orca</app> untuk mengucapkan antar muka pengguna. Tergantung pada bagaimana Anda memasang GNOME, Orca mungkin tidak terpasang. Bila tidak, pasanglah Orca terlebih dahulu.</p>
 
-  <p if:test="action:install"><link style="button" action="install:orca">Install Orca</link></p>
+  <p if:test="action:install"><link style="button" action="install:orca">Pasang Orca</link></p>
+  
+  <p>Untuk memulai <app>Orca</app> menggunakan papan ketik:</p>
+  
+  <steps>
+    <item>
+    <p>Tekan <key>Super</key>+<key>Alt</key>+<key>S</key>.</p>
+    </item>
+  </steps>
+  
+  <p>Untuk memulai <app>Orca</app> memakai sebuah tetikus dan papan ketik:</p>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Universal Access</gui>.</p>
+      <p>Buka ringkasan <gui xref="shell-introduction#activities">Aktivitas</gui> dan mulai mengetik <gui>Akses Universal</gui>.</p>
     </item>
     <item>
-      <p>Click <gui>Universal Access</gui> to open the panel.</p>
+      <p>Klik <gui>Akses Universal</gui> untuk membuka panel.</p>
     </item>
     <item>
-      <p>Click <gui>Screen Reader</gui> in the <gui>Seeing</gui> section, then
-      switch <gui>Screen Reader</gui> on in the dialog.</p>
+      <p>Klik <gui>Pembaca Layar</gui> dalam seksi <gui>Penglihatan</gui>, lalu nyalakan <gui>Pembaca Layar</gui> dalam dialog.</p>
     </item>
   </steps>
 
   <note style="tip">
-    <title>Quickly turn Screen Reader on and off</title>
-    <p>You can turn Screen Reader on and off by clicking the
-    <link xref="a11y-icon">accessibility icon</link> in the top bar and
-    selecting <gui>Screen Reader</gui>.</p>
+    <title>Menyalakan dan mematikan Pembaca Layar secara cepat</title>
+    <p>Anda dapat secara cepat menyalakan dan mematikan Pembaca Layar dengan mengklik <link xref="a11y-icon">ikon aksesibilitas</link> pada bilah puncak dan memilih <gui>Pembaca Layar</gui>.</p>
   </note>
 
-  <p>Refer to the <link href="help:orca">Orca Help</link> for
-  more information.</p>
+  <p>Lihat <link href="help:orca">Bantuan Orca</link> untuk informasi lebih lanjut.</p>
 </page>

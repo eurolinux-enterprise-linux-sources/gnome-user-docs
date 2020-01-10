@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="backup-thinkabout" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="files#backup"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany.antopolski@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Projekt dokumentacji GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Lista katalogów, w których można odnaleźć dokumenty, pliki i ustawienia warte zachowania.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Gdzie mogę znaleźć pliki do zachowania w kopii zapasowej?</title>
+
+  <p>Najtrudniejszym krokiem podczas tworzenia kopii zapasowej jest decyzja, które pliki zachować i gdzie je znaleźć. Poniżej znajduje się lista najczęstszych miejsc ważnych plików i ustawień, które warto zachować.</p>
+
+<list>
+ <item>
+  <p>Pliki użytkownika (dokumenty, muzyka, zdjęcia i filmy)</p>
+  <p its:locNote="translators: xdg dirs are localised by package xdg-user-dirs and need to be translated.  You can find the correct translations for your language here: http://translationproject.org/domain/xdg-user-dirs.html">Są zwykle przechowywane w katalogu domowym (<file>/home/nazwa-użytkownika</file>). Mogą być w podkatalogach, takich jak Pulpit, Obrazy, Muzyka i Wideo.</p>
+  <p>Jeśli na nośniku kopii zapasowej jest wystarczająco miejsca (na przykład, jeśli to zewnętrzny dysk twardy), to rozważ zachowanie całego katalogu domowego. Można sprawdzić, ile miejsca na dysku zajmuje za pomocą <app>Analizatora wykorzystania dysku</app>.</p>
+ </item>
+
+ <item>
+  <p>Ukryte pliki</p>
+  <p>Pliki i katalogi z nazwami zaczynającymi się od kropki (.) są domyślnie ukryte. Aby je wyświetlić, kliknij przycisk <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">Opcje widoku</span></media></gui> na pasku narzędziowym, a następnie zaznacz opcję <gui>Ukryte pliki</gui>, albo naciśnij klawisze <keyseq><key>Ctrl</key><key>H</key></keyseq>. Można skopiować te pliki do kopii zapasowej tak samo, jak inne pliki.</p>
+ </item>
+
+ <item>
+  <p>Ustawienia użytkownika (preferencje pulpitu, motywy i ustawienia programów)</p>
+  <p>Większość programów przechowuje swoje ustawienia w ukrytych katalogach w katalogu domowym (powyżej znajdują się informacje o ukrytych plikach).</p>
+  <p>Większość ustawień programów jest przechowywanych w ukrytych katalogach <file>.config</file> i <file>.local</file> w katalogu domowym.</p>
+ </item>
+
+ <item>
+  <p>Ustawienia systemowe</p>
+  <p>Ustawienia ważnych części systemu nie są przechowywane w katalogu domowym. Mogą one być w wielu miejscach, ale większość jest w katalogu <file>/etc</file>. Generalnie nie ma potrzeby zachowywania tych plików na komputerze domowym. W przypadku serwera należy zachować pliki działających usług.</p>
+ </item>
+</list>
+
+</page>

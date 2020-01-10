@@ -23,8 +23,9 @@
       <email>ak-47@gmx.net</email>
     </credit>
 
-    <desc>Applications can use the accounts created in <app>Online
-    Accounts</app> and the services they exploit.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Sovellukset voivat käyttää <app>verkkotileissä</app> määriteltyjä palveluja.</desc>
 
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -36,45 +37,33 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Jiri Grönroos</mal:name>
       <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
-      <mal:years>2012-2016.</mal:years>
+      <mal:years>2012-2018.</mal:years>
     </mal:credit>
   </info>
 
   <title>Verkkopalvelut ja sovellukset</title>
 
-  <p>Once you have added an online account, any application can use that
-  account for any of the available services that you have not
-  <link xref="accounts-disable-service">disabled</link>. Different
-  providers provide different services. This page lists the different
-  services and some of the applications that are known to use them.</p>
+  <p>Kun olet lisännyt verkkotilin, mikä tahansa sovellus voi käyttää sen tilin kaikkia palveluja, <link xref="accounts-disable-service">joita et ole erikseen poistanut käytöstä</link>. Eri palveluntarjoajat tarjoavat erilaisia palveluja. Tämä sivu listaa erilaisia palveluja ja joitain sovelluksia, joiden tiedetään hyödyntävän kyseisiä palveluja.</p>
 
   <terms>
     <item>
       <title>Kalenteri</title>
-      <p>The Calendar service allows you to view, add, and edit events in
-      an online calendar. It is used by applications like <app>Calendar</app>,
-      <app>Evolution</app>, and <app>California</app>.</p>
+      <p>Kalenteripalvelu mahdollistaa verkkokalenterissa olevien tapahtumien näkemisen, lisäämisen ja muokkauksen. Monet sovellukset, kuten <app>Kalenteri</app>, <app>Evolution</app> ja <app>California</app>, käyttävät kalenteripalvelua.</p>
     </item>
 
     <item>
       <title>Keskustelu</title>
-      <p>The Chat service allows you to chat with your contacts on popular
-      instant messaging platforms. It is used by the <app>Empathy</app>
-      application.</p>
+      <p>Keskustelupalvelu mahdollistaa keskustelun tuttavien kanssa suosituissa pikaviestinalustoissa. Sitä käyttää <app>Empathy</app>-sovellus.</p>
     </item>
 
     <item>
       <title>Yhteystiedot</title>
-      <p>The Contacts service allows you to see the published details of your
-      contacts on various services. It is used by applications like
-      <app>Contacts</app> and <app>Evolution</app>.</p>
+      <p>Yhteystietopalvelu mahdollistaa yhteystietojen näkemisen useista eri palveluista. Sitä käyttäviä sovelluksia ovat <app>Yhteystiedot</app> ja <app>Evolution</app>.</p>
     </item>
 
     <item>
       <title>Asiakirjat</title>
-      <p>The Documents service allows you to view your online documents
-      such as those in Google docs. You can view your documents using the
-      <app>Documents</app> application.</p>
+      <p>Asiakirjapalvelu mahdollistaa verkossa olevien, esimerkiksi Google Docsissa, olevien asiakirjojen katselun. Voit katsella asiakirjojasi käyttäen <app>Asiakirjat</app>-sovellusta.</p>
     </item>
 
     <item>
@@ -88,8 +77,7 @@
 
     <item>
       <title>Sähköposti</title>
-      <p>The Mail service allows you to send and receive email through an
-      email provider like Google. It is used by <app>Evolution</app>.</p>
+      <p>Sähköpostipalvelut mahdollistaa sähköpostin lähettämisen ja vastaanottamisen eri palveluntarjoajilta, kuten Googlelta. Tätä palvelua käyttää <app>Evolution</app>.</p>
     </item>
 
 <!-- TODO: Not sure what this does. Doesn't seem to do anything in Maps app.

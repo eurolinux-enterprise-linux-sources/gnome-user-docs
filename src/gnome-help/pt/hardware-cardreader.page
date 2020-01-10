@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="hardware-cardreader" xml:lang="pt">
+
+  <info>
+    <link type="guide" xref="media#photos"/>
+    <link type="guide" xref="hardware#problems"/>
+
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+
+    <credit type="author">
+      <name>Projeto de documentação de GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Resolver problemas de leitores de cartões multimédia</desc>
+  </info>
+
+<title>Problemas com leitores de cartões</title>
+
+<p>Michos computadores contêm leitores para cartões de armazenamento SD, MMC, MS, CF e outras. Dever-se-iam detetar automaticamente e <link xref="disk-partitions">montar</link>. Aqui pode ler alguma resolução de problemas se não são detetadas e montadas automaticamente:</p>
+
+<steps>
+<item>
+<p>Assegure-se de que o cartão está inserido corretamente. Muitos cartões parece que estão ao revés quando se inseriram corretamente. Assegure-se também de que o cartão está bem colocado na ranhura; alguns cartões, especialmente as CF requerem que se faça um pouco de força para as inserir corretamente. (Tenha cuidado de não empurrar muito forte. Se choca contra algo solido, não a force.)</p>
+</item>
+
+<item>
+  <p>Abra <app>Ficheiros</app> desde a vista de <gui xref="shell-introduction#activities">Ativities</gui>. Aparece o cartão inserido na lista <gui>Dispositivos</gui> em barra-a lateral da esquerda? Algumas vezes, o cartão aparece nesta lista mas não está montada; carregue sobre ela uma vez para a montar. (Se barra-a lateral não está visível, carregue <key>F9</key> ou carregue em <gui style="menu">Ficheiros</gui> na barra superior e escolha <gui style="menuitem">Varra lateral</gui>.)</p>
+</item>
+
+<item>
+  <p>Se seu cartão não aparece na barra lateral, carregue <keyseq><key>Ctrl</key><key>L</key></keyseq>, escreva <input>computador:///</input> e carregue <key>Enter</key>. Se seu leitor de cartões está configurado corretamente, o leitor deveria aparecer como um dispositivo quando não tem um cartão, e o cartão em si quando se tenha montado.</p>
+</item>
+
+<item>
+<p>Se vê o leitor de cartões mas não o cartão, o problema pode estar em o cartão em se. Tente com um cartão diferente ou prove o cartão num leitor de cartões se é-lhe possível.</p>
+</item>
+</steps>
+
+<p>Se não há nenhum cartão nem nenhum dispositivo disponível na localização <gui>Equipa</gui>, é possível que o leitor de cartões não funcione corretamente em Linux devido a problemas com o controlador. Se seu leitor de cartões é interno (dentro da computador em vez de estar por fora) isto mais provável. A melhor solução é ligar o dispositivo (câmara, telefone movel, etc) diretamente a um porto USB da computador. Os leitores de cartões externos USB também estão disponíveis, e estão melhor suportados em Linux.</p>
+
+</page>

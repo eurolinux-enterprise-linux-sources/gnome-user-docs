@@ -58,7 +58,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Rafael Fontenelle</mal:name>
       <mal:email>rafaelff@gnome.org</mal:email>
-      <mal:years>2012-2016.</mal:years>
+      <mal:years>2012-2018.</mal:years>
     </mal:credit>
   </info>
 
@@ -77,6 +77,13 @@
       <p>Clique no botão <gui>+</gui> na seção <gui>Fontes de entrada</gui>, selecione um idioma que esteja associado com a disposição e, então, selecione uma disposição e pressione <gui>Adicionar</gui>.</p>
     </item>
   </steps>
+
+  <note style="tip">
+    <p>Se houver várias contas de usuário em seu sistema, há uma instância separada da região e do painel <gui>Região &amp; idioma</gui> para a tela de início de sessão. Clique no botão <gui>Tela de início de sessão</gui> no canto superior direito para alternar entre as duas instâncias.</p>
+
+    <p>Algumas variantes de layout de teclado raramente usadas não estão disponíveis por padrão quando você clica no botão <gui>+</gui>. Para disponibilizar também essas fontes de entrada, você pode abrir uma janela de terminal pressionando <keyseq><key>Ctrl</key><key>Alt</key><key>T</key></keyseq> e executar este comando:</p>
+    <p><cmd its:translate="no">gsettings set org.gnome.desktop.input-sources show-all-sources true</cmd></p>
+  </note>
 
   <note style="sidebar">
     <p>Você pode visualizar uma imagem de qualquer disposição selecionando-a na lista de <gui>Fontes de entrada</gui> e clicando em <gui><media its:translate="no" type="image" src="figures/input-keyboard-symbolic.png" width="16" height="16"><span its:translate="yes">visualizar</span></media></gui></p>

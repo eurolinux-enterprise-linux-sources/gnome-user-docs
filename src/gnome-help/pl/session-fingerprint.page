@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="session-fingerprint" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="hardware-auth"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-03" status="review"/>
+    <revision pkgversion="3.12" date="2014-06-16" status="final"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="final"/>
+
+    <credit type="author">
+      <name>Projekt dokumentacji GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+      <years>2011</years>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Jim Campbell</name>
+      <email>jcampbell@gnome.org</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Można logować się do komputera za pomocą obsługiwanego czytnika linii papilarnych zamiast hasła.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Logowanie za pomocą odcisku palca</title>
+
+  <p>Jeśli komputer ma obsługiwany czytnik linii papilarnych, to można zapisać swoje linie papilarne i używać ich do logowania się.</p>
+
+<section id="record">
+  <title>Zapisywanie odcisku palca</title>
+
+  <p>Zanim będzie można logować się za pomocą odcisku palca, należy go zapisać, aby komputer mógł go używać do identyfikacji użytkownika.</p>
+
+  <note style="tip">
+    <p>Jeśli palec jest zbyt suchy, to zarejestrowanie jego odcisku może sprawiać trudności. Jeśli tak się dzieje, to odrobinę nawilż palec, wysusz go czystą, niekłaczącą się ścierką i spróbuj ponownie.</p>
+  </note>
+
+  <p>Do modyfikowania kont innych użytkowników wymagane są <link xref="user-admin-explain">uprawnienia administratora</link>.</p>
+
+  <steps>
+    <item>
+      <p>Otwórz <gui xref="shell-introduction#activities">ekran podglądu</gui> i zacznij pisać <gui>Użytkownicy</gui>.</p>
+    </item>
+    <item>
+      <p>Kliknij <gui>Użytkownicy</gui>, aby otworzyć panel.</p>
+    </item>
+    <item>
+      <p>Kliknij przycisk <gui>Wyłączone</gui> obok <gui>Logowania za pomocą odcisku palca</gui>, aby dodać odcisk palca dla wybranego konta. Jeśli dodawany jest odcisk palca dla innego użytkownika, to należy najpierw kliknąć przycisk <gui>Odblokuj</gui>.</p>
+    </item>
+    <item>
+      <p>Wybierz palec, którego odcisk zapisać, a następnie kliknij przycisk <gui style="button">Dalej</gui>.</p>
+    </item>
+    <item>
+      <p>Postępuj zgodnie z instrukcjami w oknie i <em>niezbyt szybko</em> przeciągnij palec przez czytnik linii papilarnych. Kiedy komputer będzie miał dobry zapis odcisków palca, wyświetli komunikat <gui>Gotowe</gui>.</p>
+    </item>
+    <item>
+      <p>Kliknij przycisk <gui>Dalej</gui>. Zostanie wyświetlony komunikat potwierdzający, że pomyślnie zapisano odcisk palca. Kliknij przycisk <gui>Zamknij</gui>, aby ukończyć.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="verify">
+  <title>Sprawdzanie, czy odcisk palca działa</title>
+
+  <p>Teraz sprawdź, czy logowanie za pomocą odcisku palca działa. Jeśli zarejestrowano odcisk palca, to nadal można logować się za pomocą hasła.</p>
+
+  <steps>
+    <item>
+      <p>Zapisz otwarte dokumenty, a następnie <link xref="shell-exit#logout">wyloguj się</link>.</p>
+    </item>
+    <item>
+      <p>Na ekranie logowania wybierz swoją nazwę użytkownika z listy. Pojawi się pole wpisywania hasła.</p>
+    </item>
+    <item>
+      <p>Można przeciągnąć palec przez czytnik linii papilarnych zamiast wpisywać hasło.</p>
+    </item>
+  </steps>
+
+</section>
+
+</page>

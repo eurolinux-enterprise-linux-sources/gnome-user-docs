@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="screen-shot-record" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="tips"/>
+
+    <revision pkgversion="3.6.1" date="2012-11-10" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.14.0" date="2015-01-14" status="review"/>
+
+    <credit type="author copyright">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany.antopolski@gmail.com</email>
+      <years>2011</years>
+    </credit>
+    <credit type="author copyright">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2015</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Zapisanie obrazu lub nagranie wideo tego, co dzieje się na ekranie.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Zrzuty i nagrania ekranu</title>
+
+  <p>Można zrobić zdjęcie ekranu (<em>zrzut ekranu</em>) lub nagrać wideo tego, co dzieje się na ekranie (<em>nagranie ekranu</em>). Jest to przydatne na przykład do pokazywania innym, jak zrobić coś na komputerze. Zrzuty i nagrania ekranu to zwykłe pliki obrazów i filmów, więc można je wysyłać pocztą e-mail i udostępniać w Internecie.</p>
+
+<section id="screenshot">
+  <title>Wykonanie zrzutu ekranu</title>
+
+  <steps>
+    <item>
+      <p>Otwórz program <app>Zrzut ekranu</app> z <gui xref="shell-introduction#activities">ekranu podglądu</gui>.</p>
+    </item>
+    <item>
+      <p>W oknie <app>Zrzut ekranu</app> wybierz, czy zapisać cały ekran, obecne okno lub obszar ekranu. Ustaw opóźnienie, jeśli potrzeba wybrać okno lub przygotować ekran na zrzut w inny sposób. Następnie wybierz efekty.</p>
+    </item>
+    <item>
+       <p>Kliknij przycisk <gui>Wykonaj zrzut ekranu</gui>.</p>
+       <p>Jeśli wybrano opcję <gui>Zaznaczony obszar</gui>, to kursor zmieni się w krzyżyk. Kliknij i przeciągnij obszar do zapisania jako zrzut ekranu.</p>
+    </item>
+    <item>
+      <p>W oknie <gui>Zapis zrzutu ekranu</gui> wpisz nazwę pliku i wybierz katalog, a następnie kliknij przycisk <gui>Zapisz</gui>.</p>
+      <p>Można także zaimportować zrzut ekranu bezpośrednio do programu do obróbki obrazów bez zapisywania go. Kliknij przycisk <gui>Skopiuj do schowka</gui>, a następnie wklej obraz do innego programu lub przeciągnij do niego miniaturę zrzutu.</p>
+    </item>
+  </steps>
+
+  <section id="keyboard-shortcuts">
+    <title>Skróty klawiszowe</title>
+
+    <p>W każdej chwili można szybko wykonywać zrzuty ekranu, okna lub obszaru za pomocą tych globalnych skrótów klawiszowych:</p>
+
+    <list style="compact">
+      <item>
+        <p><key>Prt Scrn</key> wykonuje zrzut ekranu.</p>
+      </item>
+      <item>
+        <p><keyseq><key>Alt</key><key>Prt Scrn</key></keyseq> wykonuje zrzut okna.</p>
+      </item>
+      <item>
+        <p><keyseq><key>Shift</key><key>Prt Scrn</key></keyseq> wykonuje zrzut zaznaczonego obszaru.</p>
+      </item>
+    </list>
+
+    <p>Po użyciu skrótu klawiszowego obraz jest automatycznie zapisywany w katalogu <file>Obrazy</file> w katalogu domowym jako plik o nazwie zaczynającej się od <file>Zrzut ekranu</file> i zawierającej datę i czas jego wykonania.</p>
+    <note style="note">
+      <p>Jeśli użytkownik nie ma katalogu <file>Obrazy</file>, to obrazy będą zapisywane w katalogu domowym.</p>
+    </note>
+    <p>Można także przytrzymać klawisz <key>Ctrl</key> podczas używania powyższych skrótów, aby skopiować zrzut do schowka zamiast go zapisywać.</p>
+  </section>
+
+</section>
+
+<section id="screencast">
+  <title>Wykonywanie nagrania ekranu</title>
+
+  <p>Można wykonać nagranie wideo tego, co dzieje się na ekranie:</p>
+
+  <steps>
+    <item>
+      <p>Naciśnij klawisze <keyseq><key>Ctrl</key><key>Alt</key><key>Shift</key><key>R</key></keyseq>, aby zacząć nagrywać to, co dzieje się na ekranie.</p>
+      <p>W czasie trwania nagrywania w górnym prawym rogu ekranu wyświetlane jest czerwone kółko.</p>
+    </item>
+    <item>
+      <p>Po ukończeniu naciśnij klawisze <keyseq><key>Ctrl</key><key>Alt</key><key>Shift</key><key>R</key></keyseq> ponownie, aby zatrzymać nagrywanie.</p>
+    </item>
+    <item>
+      <p>Plik wideo jest automatycznie zapisywany w katalogu <file>Wideo</file> w katalogu domowym jako plik o nazwie zaczynającej się od <file>Nagranie ekranu</file> i zawierającej datę i czas jego wykonania.</p>
+    </item>
+  </steps>
+
+  <note style="note">
+    <p>Jeśli użytkownik nie ma katalogu <file>Wideo</file>, to pliki wideo będą zapisywane w katalogu domowym.</p>
+  </note>
+
+</section>
+
+</page>

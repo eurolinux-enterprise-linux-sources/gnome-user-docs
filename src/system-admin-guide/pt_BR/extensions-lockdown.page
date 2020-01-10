@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="extensions-lockdown" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="software#extension"/>
+    <link type="seealso" xref="extensions-enable"/>
+    <link type="seealso" xref="extensions"/>
+    <revision pkgversion="3.12" date="2014-06-17" status="review"/>
+
+    <credit type="author copyright">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Proíba o usuário de habilitar ou desabilitar extensões do GNOME Shell.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Bloqueando extensões habilitadas</title>
+  
+  <p>No GNOME Shell, você pode evitar que o usuário habilite ou desabilite extensões bloqueando as chaves <code>org.gnome.shell.enabled-extensions</code> e <code>org.gnome.shell.development-tools</code>. Isso permite que você forneça um conjunto de extensões que o usuário tem que usar.</p>
+   
+  <p>Bloquear a chave <code>org.gnome.shell.development-tools</code> garante que o usuário não possa usar a ferramenta de inspeção e depuração integrada do GNOME Shell (<app>Looking Glass</app>) para desabilitar quaisquer extensões obrigatórias.</p>
+   
+  <steps>
+    <title>Bloquear as chaves org.gnome.shell.enabled-extensions e org.gnome.shell.development-tools</title>
+    <item>
+      <p>Crie um perfil <code>user</code> em <file>/etc/dconf/profile/user</file>:</p>
+      <listing>
+        <code>
+user-db:user
+system-db:local
+</code>
+      </listing>
+    </item>
+    <item>
+      <p>Crie um banco de dados <code>local</code> para configuração de toda máquina em <file>/etc/dconf/db/local.d/00-extensions</file>:</p>
+      <listing>
+        <code>
+[org/gnome/shell]
+# Lista todas as extensões que você deseja ter habilitadas para todos usuários
+enabled-extensions=['<input>minhaextensao1@meunome.exemplo.com</input>', '<input>minhaextensao2@meunome.exemplo.com</input>']
+# Desabilita acesso ao Looking Glass
+development-tools=false
+</code>
+      </listing>
+      <p>A chave <code>enabled-extensions</code> especifica as extensões habilitadas usando o uuid as extensões (<code>minhaextensao1@meunome.exemplo.com</code> e <code>minhaextensao2@meunome.exemplo.com</code>).</p>
+      <p>A chave <code>development-tools</code> está definida para falso para desabilitar o acesso ao Looking Glass.</p>
+    </item>
+    <item>
+      <p>Sobrescreva a configuração do usuário e evite que o usuário altere-a em <file>/etc/dconf/db/local.d/locks/extensions</file>:</p>
+      <listing>
+        <code>
+# Bloqueia a lista de extensões habilitadas
+/org/gnome/shell/enabled-extensions
+/org/gnome/shell/development-tools
+</code>
+</listing>
+    </item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+  </steps>
+  
+  <p>Após bloquear as chaves <code>org.gnome.shell.enabled-extensions</code> e <code>org.gnome.shell.development-tools</code>, quaisquer extensões instaladas em <file>~/.local/share/gnome-shell/extensions</file> ou <file>/usr/share/gnome-shell/extensions</file> que não estejam listadas na chave <code>org.gnome.shell.enabled-extensions</code> não serão carregadas pelo GNOME Shell, de forma a evitar que o usuário use-as.</p>
+
+</page>

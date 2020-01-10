@@ -19,12 +19,13 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Algúns dispositivos non funcionan correctamente con certos adaptadores sen fíos, así que pode que teña que atopar un mellor.</desc>
+    <desc>Some device drivers don’t work very well with certain wireless
+    adapters, so you may need to find a better one.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2013.</mal:years>
+      <mal:years>2011-2018</mal:years>
     </mal:credit>
   </info>
 
@@ -38,8 +39,7 @@
 
   <list>
     <item>
-      <p>Check to see if your wireless adapter is on a list of supported
-      devices.</p>
+      <p>Comprobe que o seu adaptador sen fíos está na lista de dispositivos compatíbeis.</p>
       <p>Most Linux distributions keep a list of wireless devices that they
       have support for. Sometimes, these lists provide extra information on how
       to get the drivers for certain adapters working properly. Go to the list
@@ -53,12 +53,18 @@
       working.</p>
     </item>
     <item>
-      <p>Look for restricted (binary) drivers.</p>
-      <p>Algunhas distribucións Linux só veñen cos controladores de dispositivos que son <em>libres</em> e <em>open source</em>. Isto é porque no poden distribuír controladores que son privativos, ou de fontes pechadas. Se o controlador axeitado para o seu adaptador sen fíos só está dispoñibel como unha versión «só binaria», podería non estar instalado por omisión. Se este é o caso, vexa o sitio web do fabricante do adaptador sen fíos para ver se hai controladores Linux.</p>
+      <p>Buscar controladores restrinxidos (binarios).</p>
+      <p>Many Linux distributions only come with device drivers which are
+      <em>free</em> and <em>open source</em>. This is because they cannot
+      distribute drivers which are proprietary, or closed-source. If the
+      correct driver for your wireless adapter is only available in a non-free,
+      or “binary-only” version, it may not be installed by default. If this is
+      the case, look on the wireless adapter manufacturer’s website to see if
+      they have any Linux drivers.</p>
       <p>Algunhas distribucións Linux teñen unha ferramenta que pode descargar controldaores restrinxidos por vostede. Se a súa distribución ten unha desas ferramentas, úsea para ver se pode atopar calquera controlador sen fíos.</p>
     </item>
     <item>
-      <p>Use the Windows drivers for your adapter.</p>
+      <p>Use os controladores de Windows para o seu adaptador.</p>
       <p>En xeral, só pode usar un controlador de dispositivo deseñado para un sistema operativo (por exemplo Windows) noutro sistema operativo (como Linux). Isto é porque teñen diferentes formas de xestionar os dispositivos. Para os adaptadores sen fíos, porén, pode instalar unha capa de compatibilidade chamada <em>NDISwrapper</em> que lle permite usar algúns controladores de Windows en Linux. Isto é útil porque os adaptadores sen fíos teñen sempre un controlador dispoñíbel para Windows, mentres que para Linux non sempre están dispoñíbeis. Pode saber máis sobre como usar NDISwrapper <link href="http://sourceforge.net/apps/mediawiki/ndiswrapper/index.php?title=Main_Page">aquí</link>. Teña en conta que non todos os controladores sen fíos poden usarse con NDISwrapper.</p>
     </item>
   </list>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="desktop-shield" xml:lang="gl">
+
+  <info>
+    <link type="guide" xref="appearance"/>
+
+    <revision pkgversion="3.22" date="2017-01-09" status="draft"/>
+
+    <credit type="author copyright">
+      <name>Matthias Clasen</name>
+      <email its:translate="no">matthias.clasen@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="author copyright">
+      <name>Michael Hill</name>
+      <email its:translate="no">mdhillca@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Jana Svarova</name>
+      <email its:translate="no">jana.svarova@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email its:translate="no">pknbe@volny.cz</email>
+      <years>2017</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Cambiar o fondo da pantalla de bloqueo.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Diéguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2010-2018</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Cambiar a pantalla de bloqueo</title>
+
+  <p>The <em>lock screen shield</em> is the screen that quickly slides down when
+  the system is locked. The background of the lock screen shield is controlled by
+  the <sys>org.gnome.desktop.screensaver.picture-uri</sys> GSettings key. Since
+  <sys>GDM</sys> uses its own <sys>dconf</sys> profile, you can set the default
+  background by changing the settings in that profile.</p>
+
+<steps>
+  <title>Estabelecer a chave org.gnome.desktop.screensaver.picture-uri</title>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-gdm'])"/>
+  <item><p>Cree unha base de datos <sys>gdm</sys> para as preferencias a nivel de maquina en <file>/etc/dconf/db/gdm.d/<var>01-protector de pantalla</var></file>:</p>
+  <code>[org/gnome/desktop/screensaver]
+picture-uri='file://<var>/opt/corp/background.jpg</var>'</code>
+  <p>Substitúa <var>/opt/corp/background.jpg</var> coa ruta ao ficheiro de imaxe que qeure usar como fondo da pantalla de bloqueo.</p>
+  <p>Os formatos admitidos son PNG, JPG, JPEG e TGA. A imaxe será escalada se é reciso para axustarse á pantalla.</p>
+  </item>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+  <item><p>Debe pechar a sesión antes de que os cambio a nivel de sistema se apliquen.</p>
+  </item>
+</steps>
+
+<p>A seguinte vez que bloquee a pantalla, a nova pantalla de bloqueo mostrará o fondo. Por diante mostrarase a hora, data e o día da semana actual.</p>
+
+<section id="troubleshooting-background">
+  <title>Que pasa se o fondo non se actualiza?</title>
+
+  <p>Asegúrese que executa a orde <cmd its:translate="no">dconf update</cmd> para actualizar as bases de datos do sistema.</p>
+
+  <p>No caso que o fondo de pantalla non se actualice, tente reiniciar <sys>GDM</sys>.</p>
+</section>
+
+</page>

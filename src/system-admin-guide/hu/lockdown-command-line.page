@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="lockdown-command-line" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="software#management"/>
+    <revision pkgversion="3.12" date="2014-06-18" status="review"/>
+
+    <credit type="author copyright">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>A felhasználók megakadályozása a parancssorhoz való hozzáférésben.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>ur.balazs@fsf.hu</mal:email>
+      <mal:years>2018.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Parancssori hozzáférés letiltása</title>
+
+  <p>Az alább bemutatott lépéseket követve megakadályozhatja a felhasználókat abban, hogy képesek legyenek hozzáférni a parancssorhoz a virtuális terminálokon és a terminál alkalmazásokon keresztül.</p>
+
+  <list>
+    <item>
+      <p>Akadályozza meg a felhasználókat az <keyseq><key>Alt</key><key>F2</key></keyseq> parancssorhoz való hozzáférésben.</p>
+    </item>
+    <item>
+      <p>Tiltsa le a virtuális terminálra (VT) dobás.</p>
+    </item>
+    <item>
+      <p>Távolítsa el a <app>Terminált</app> és minden más terminál alkalmazást a GNOME Shellben lévő <gui>Tevékenységek</gui> áttekintőből. Meg kell akadályoznia a felhasználókat abban is, hogy új terminál alkalmazásokat telepítsenek.</p>
+    </item>
+  </list>
+
+<section id="command-prompt">
+  <title>A parancssor letiltása</title>
+
+  <steps>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-user'])"/>
+    <item>
+      <p>Hozzon létre egy <sys>helyi</sys> adatbázist a rendszerszintű beállításokhoz az <file>/etc/dconf/db/local.d/00-lockdown</file> fájlban:</p>
+      <code># A dconf útvonal megadása
+[org/gnome/desktop/lockdown]
+
+# A parancssor letiltása
+disable-command-line=true</code>
+    </item>
+    <item>
+      <p>Bírálja felül a felhasználó beállítását, és akadályozza meg az <file>/etc/dconf/db/local.d/locks/lockdown</file> fájlban, hogy a felhasználó megváltoztassa azt:</p>
+      <code># A használt kulcsok felsorolása a beállítások zárolásához
+/org/gnome/desktop/lockdown/disable-command-line</code>
+    </item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-logoutin'])"/>
+  </steps>
+</section>
+
+<section id="virtual-terminal">
+  <title>A virtuális terminálra (VT) dobás letiltása</title>
+
+  <p>A felhasználók normál esetben a <keyseq><key>Ctrl</key><key>Alt</key><key><var>funkcióbillentyű</var></key></keyseq> (például <keyseq><key>Ctrl</key><key>Alt</key><key>F2</key></keyseq>) gyorsbillentyűket használhatják a GNOME asztalról egy virtuális terminálra történő váltáshoz.</p>
+
+  <p>Ha a számítógép az <em>X ablakkezelő rendszert</em> futtatja, akkor letilthatja az összes virtuális terminálhoz való hozzáférést egy <code>DontVTSwitch</code> beállítás hozzáadásával az <file>/etc/X11/xorg.conf.d</file> fájlban lévő <code>Serverflags</code> szakaszhoz.</p>
+
+  <steps>
+    <item>
+      <p>Hozzon létre vagy szerkesszen egy X beállítófájlt az <file>/etc/X11/xorg.conf.d</file> könyvtárban:</p>
+      <code>Section "Serverflags"
+
+Option "DontVTSwitch" "yes"
+
+EndSection</code>
+    </item>
+    <item>
+      <p>Indítsa újra a GDM-et, hogy a változtatás életbe lépjen.</p>
+    </item>
+  </steps>
+
+</section>
+
+<!-- TODO: add section for removing applications from the Activities overview. -->
+</page>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-resize" xml:lang="sv">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Dokumentationsprojekt för GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.25.90" date="2017-08-17" status="review"/>
+
+    <desc>Förminska eller förstora ett filsystem och dess partition.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016, 2017</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Justera storleken på ett filsystem</title>
+
+  <p>Ett filsystem kan förstoras så att det använder det fria utrymmet efter sin partition. Ofta är detta även möjligt medan filsystemet är monterat.</p>
+  <p>För att skapa utrymme för en annan partition efter filsystemet kan det krympas i enlighet med det fria utrymme som finns inuti det.</p>
+  <p>Alla filsystem har inte stöd för storleksändring.</p>
+  <p>Partitionsstorleken kommer att ändras tillsammans med filsystemets storlek. Det är också möjligt att ändra storleken på en partition utan ett filsystem på samma sätt.</p>
+
+<steps>
+  <title>Ändra storlek på filsystem/partition</title>
+  <item>
+    <p>Öppna <app>Diskar</app> från översiktsvyn <gui>Aktiviteter</gui>.</p>
+  </item>
+  <item>
+    <p>Välj disken som innehåller filsystemet i fråga från listan över lagringsenheter till vänster. Om det finns mer än en volym på disken, välj volymen som innehåller filsystemet.</p>
+  </item>
+  <item>
+    <p>I verktygsfältet under avsnittet <gui>Volymer</gui>, klicka på menyknappen. Klicka sedan på <gui>Ändra storlek på filsystem…</gui> eller <gui>Ändra storlek…</gui> om det inte finns något filsystem.</p>
+  </item>
+  <item>
+    <p>En dialogruta kommer att öppnas där den nya storleken kan väljas. Filsystemet kommer att monteras för att beräkna den minsta storleken utifrån aktuellt innehåll. Om storleksminskning inte stöds är den minsta storleken den aktuella storleken. Lämna tillräckligt med utrymme i filsystemet då du krymper det så att det kan arbeta snabbt och pålitligt.</p>
+    <p>Beroende på hur mycket data som måste flyttas från den krympta delen så kan storleksändringen av filsystemet ta längre tid.</p>
+    <note style="warning">
+      <p>Storleksändringen av filsystemet involverar automatisk <link xref="disk-repair">reparation</link> av filsystemet. Det är därför rekommenderat att säkerhetskopiera viktiga data innan du startar. Åtgärden får inte stoppas, i annat fall leder det till att filsystemet skadas.</p>
+    </note>
+  </item>
+  <item>
+      <p>Bekräfta att starta åtgärden genom att klicka på <gui style="button">Ändra storlek</gui>.</p>
+   <p>Åtgärden kommer att avmontera filsystemet om stöd för storleksändring på ett monterat filsystem saknas. Vänta tålmodigt medan filsystemets storlek ändras.</p>
+  </item>
+  <item>
+    <p>Då de nödvändiga åtgärderna för storleksändring och reparation är klara kan filsystemet användas igen.</p>
+  </item>
+</steps>
+
+</page>

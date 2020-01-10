@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="user-admin-change" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="user-accounts#privileges"/>
+    <link type="seealso" xref="user-admin-explain"/>
+
+    <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
+    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Projekt dokumentacji GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Można umożliwić użytkownikom wprowadzanie zmian w systemie dając im uprawnienia administracyjne.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Zmiana, kto ma uprawnienia administracyjne</title>
+
+  <p>Uprawnienia administracyjne są sposobem na decydowanie, kto może wprowadzać zmiany w ważnych częściach systemu. Można zmienić, którzy użytkownicy je mają, a którzy nie. To dobry sposób na zabezpieczanie komputera i uniemożliwianie wprowadzania potencjalnie szkodliwych, nieupoważnionych zmian.</p>
+
+  <p>Do zmiany typów kont wymagane są <link xref="user-admin-explain">uprawnienia administratora</link>.</p>
+
+  <steps>
+    <item>
+      <p>Otwórz <gui xref="shell-introduction#activities">ekran podglądu</gui> i zacznij pisać <gui>Użytkownicy</gui>.</p>
+    </item>
+    <item>
+      <p>Kliknij <gui>Użytkownicy</gui>, aby otworzyć panel.</p>
+    </item>
+    <item>
+      <p>Kliknij przycisk <gui style="button">Odblokuj</gui> w górnym prawym rogu i wpisz swoje hasło.</p>
+    </item>
+    <item>
+      <p>Wybierz użytkownika, którego uprawnienia zmienić.</p>
+    </item>
+    <item>
+      <p>Kliknij przycisk <gui>Standardowe</gui> obok napisu <gui>Typ konta</gui> i wybierz <gui>Administrator</gui>.</p>
+    </item>
+    <item>
+      <p>Uprawnienia użytkownika zostaną zmienione po następnym zalogowaniu.</p>
+    </item>
+  </steps>
+
+  <note>
+    <p>Pierwsze konto użytkownika na komputerze to zwykle konto z uprawnieniami administratora. To konto utworzone podczas pierwszej instalacji systemu.</p>
+    <p>Zbyt dużo użytkowników typu <gui>Administrator</gui> na jednym komputerze jest niezalecane.</p>
+  </note>
+
+</page>

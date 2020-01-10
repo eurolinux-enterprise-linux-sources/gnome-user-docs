@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="extensions-lockdown" xml:lang="ko">
+
+  <info>
+    <link type="guide" xref="software#extension"/>
+    <link type="seealso" xref="extensions-enable"/>
+    <link type="seealso" xref="extensions"/>
+    <revision pkgversion="3.12" date="2014-06-17" status="review"/>
+
+    <credit type="author copyright">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>사용자가 GNOME 셸 확장자를 사용하게 하거나 사용하지 못하게 합니다.</desc>
+  </info>
+
+  <title>활성화된 확장자 잠금</title>
+  
+  <p>GNOME 셸에서는 <code>org.gnome.shell.enabled-extensions</code> and <code>org.gnome.shell.development-tools</code> 키를 잠근다면 확장자 활성화 또는 비활성화를 막을 수 있습니다. 이렇게 한다면 사용자가 사용해야 하는 확장자 세트를 제공할 수 있습니다.</p>
+   
+  <p>Locking down the <code>org.gnome.shell.development-tools</code> key
+  ensures that the user cannot use GNOME Shell’s integrated debugger and
+  inspector tool (<app>Looking Glass</app>) to disable any mandatory
+  extensions.</p>
+   
+  <steps>
+    <title>키 org.gnome.shell.enabled-extensions 그리고 org.gnome.shell.development-tools 잠금</title>
+    <item>
+      <p><file>/etc/dconf/profile/user</file>에 <code>사용자</code> 프로필을 생성하세요:</p>
+      <listing>
+        <code>
+user-db:user
+system-db:local
+</code>
+      </listing>
+    </item>
+    <item>
+      <p>컴퓨터의 전반적인 설정을 위해 <file>/etc/dconf/db/local.d/00-extensions</file>에 <code>로컬</code> 데이터베이스를 생성하세요:</p>
+      <listing>
+        <code>
+[org/gnome/shell]
+# 모든 사용자에게 활성화시킬 모든 확장자 목록
+활성화된 확장자=['<input>myextension1@myname.example.com</input>', '<input>myextension2@myname.example.com</input>']
+# Looking Glass에 대한 접근 비활성화
+development-tools=false
+</code>
+      </listing>
+      <p>The <code>enabled-extensions</code> key specifies the enabled
+      extensions using the extensions’ uuid
+      (<code>myextension1@myname.example.com</code> and
+      <code>myextension2@myname.example.com</code>).</p>
+      <p>Looking Glass에 대한 접근을 비활성화 시키기 위해 <code>development-tools</code> 키를 false로 설정하세요.</p>
+    </item>
+    <item>
+      <p>Override the user’s setting and prevent the user from changing it in
+      <file>/etc/dconf/db/local.d/locks/extensions</file>:</p>
+      <listing>
+        <code>
+# 활성화된 확장자 목록을 잠그세요
+/org/gnome/shell/enabled-extensions
+/org/gnome/shell/development-tools
+</code>
+</listing>
+    </item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+  </steps>
+  
+  <p><code>org.gnome.shell.enabled-extensions</code>와 <code>org.gnome.shell.development-tools</code> 키를 잠근 후, <file>~/.local/share/gnome-shell/extensions</file> 또는 <file>/usr/share/gnome-shell/extensions</file>에 설치된 <code>org.gnome.shell.enabled-extensions</code> 키에 목록화 되어있지 않은 어떠한 확장자도 GNOME 셸에 의해 로드되지 않으므로 사용자가 그것들을 사용할 수 없게 합니다.</p>
+
+</page>

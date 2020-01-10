@@ -14,41 +14,41 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Press <keyseq><key>Ctrl</key><key>S</key></keyseq> to select multiple
-    files which have similar names.</desc>
+    <desc>Druk op <keyseq><key>Ctrl</key><key>S</key></keyseq> om meerdere bestanden met vergelijkbare namen te selecteren.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Justin van Steijn</mal:name>
+      <mal:email>justin50@live.nl</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hannie Dumoleyn</mal:name>
+      <mal:email>hannie@ubuntu-nl.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
   </info>
 
-  <title>Select files by pattern</title>
+  <title>Selecteer bestanden met een patroon</title>
 
-  <p>You can select files in a folder using a pattern on the file name.
-  Press <keyseq><key>Ctrl</key><key>S</key></keyseq> to bring up the
-  <gui>Select Items Matching</gui> window. Type in a pattern using
-  common parts of the file names plus wild card characters. There are
-  two wild card characters available:</p>
+  <p>U kunt bestanden in een map selecteren met gebruikmaking van een filter voor de bestandsnaam. Druk op <keyseq><key>Ctrl</key><key>S</key></keyseq> om het venster <gui>Items selecteren die overeenkomen</gui>  te krijgen. Typ een filter in van algemene delen van de bestandsnamen plus jokertekens. Er zijn twee jokertekens beschikbaar:</p>
 
   <list style="compact">
-    <item><p><file>*</file> matches any number of any characters, even
-    no characters at all.</p></item>
-    <item><p><file>?</file> matches exactly one of any character.</p></item>
+    <item><p><file>*</file> komt overeen met een willekeurig aantal tekens, dus ook nul tekens.</p></item>
+    <item><p><file>?</file> komt overeen met exact één willekeurig teken.</p></item>
   </list>
 
-  <p>For example:</p>
+  <p>Bijvoorbeeld:</p>
 
   <list>
-    <item><p>If you have an OpenDocument Text file, a PDF file, and an
-    image that all have the same base name <file>Invoice</file>, select
-    all three with the pattern</p>
-    <example><p><file>Invoice.*</file></p></example></item>
+    <item><p>Als u een OpenDocument-tekstbestand, een PDF-bestand en een afbeelding heeft die allemaal dezelfde basisnaam <file>Factuur</file> hebben, selecteer ze dan alle drie met het filter.</p>
+    <example><p><file>Factuur.*</file></p></example></item>
 
-    <item><p>If you have some photos that are named like
-    <file>Vacation-001.jpg</file>, <file>Vacation-002.jpg</file>,
-    <file>Vacation-003.jpg</file>; select them all with the pattern</p>
-    <example><p><file>Vacation-???.jpg</file></p></example></item>
+    <item><p>Als u een aantal foto's heeft die als volgt genoemd zijn <file>Vakantie-001.jpg</file>, <file>Vakantie-002.jpg</file>, <file>Vakantie-003.jpg</file>; kunt u deze selecteren met het patroon</p>
+    <example><p><file>Vakantie-???.jpg</file></p></example></item>
 
-    <item><p>If you have photos as before, but you have edited some of them and
-    added <file>-edited</file> to the end of the file name of the photos you
-    have edited, select the edited photos with</p>
-    <example><p><file>Vacation-???-edited.jpg</file></p></example></item>
+    <item><p>Als u foto's heeft, maar u heeft sommige daarvan bewerkt en <file>-bewerkt</file> toegevoegd aan het einde van de bestandsnaam van de foto's die u bewerkt heeft, selecteer de bewerkte foto's dan met</p>
+    <example><p><file>Vakantie-???-bewerkt.jpg</file></p></example></item>
   </list>
 
 </page>

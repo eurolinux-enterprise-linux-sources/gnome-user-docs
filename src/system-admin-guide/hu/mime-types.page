@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="mime-types" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="software#management"/>
+    <link type="seealso" xref="mime-types-application"/>
+    <link type="seealso" xref="mime-types-application-user"/>
+    <link type="seealso" xref="mime-types-custom-user"/>
+    <revision pkgversion="3.12" date="2014-06-17" status="review"/>
+
+    <credit type="author">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>A MIME-típusokat egy fájl formátumának azonosításához használják.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>ur.balazs@fsf.hu</mal:email>
+      <mal:years>2018.</mal:years>
+    </mal:credit>
+  </info>
+
+    <title>Mik azok a MIME-típusok?</title>
+    <p>A GNOME-ban a MIME (<em>Multipurpose Internet Mail Extension</em>) típusokat egy fájl formátumának azonosításához használják. A GNOME asztali környezet a következőkhöz használ MIME-típusokat:</p>
+    <list>
+      <item>
+        <p>Annak meghatározásához, hogy alapértelmezetten mely alkalmazásnak kell megnyitnia egy bizonyos fájlformátumot.</p>
+      </item>
+      <item>
+        <p>Egyéb alkalmazások regisztrálásához, amelyek szintén képesek megnyitni egy bizonyos fájlformátumot.</p>
+      </item>
+      <item>
+        <p>Egy fájl típusát leíró szöveg biztosításához, például a <app>Fájlok</app> alkalmazás fájltulajdonság párbeszédablakában.</p>
+      </item>
+      <item>
+        <p>Egy bizonyos fájlformátumot ábrázoló ikon biztosításához, például a <app>Fájlok</app> alkalmazás fájltulajdonság párbeszédablakában.</p>
+      </item>
+    </list>
+    <p>A MIME-típusok nevei egy adott formátumot követnek:</p>
+<screen>
+<var>média-típus</var>/<var>altípus-azonosító</var>
+</screen>
+<p>Az <sys>image/jpeg</sys> egy olyan MIME-típus példa, ahol az <sys>image</sys> a média típusa és a <sys>jpeg</sys> az altípus azonosítója.</p>
+    <p>A GNOME a <em>freedesktop.org megosztott MIME-információ</em> specifikációját követi a következők meghatározásához:</p>
+    <list>
+    <item>
+      <p>A rendszerszintű és a felhasználóra jellemző helyekhez az összes MIME-típus specifikációs fájl tárolásához.</p>
+    </item>
+    <item>
+      <p>Hogyan kell regisztrálni egy MIME-típust azért, hogy az asztali környezet tudja, mely alkalmazások használhatók egy bizonyos fájlformátum megnyitásához.</p>
+    </item>
+    <item>
+      <p>Hogyan tudja a felhasználó megváltoztatni, hogy mely alkalmazásoknak kell megnyitni az egyes fájlformátumokat.</p>
+    </item>
+    </list>
+    <section id="mime-database">
+      <title>Mi az a MIME-adatbázis?</title>
+      <p>A MIME-adatbázis az összes MIME-típus specifikációs fájlnak a gyűjteménye, amelyet a GNOME az ismert MIME-típusokkal kapcsolatos információk tárolásához használ.</p>
+      <p>A rendszer adminisztrátorának szemszögéből a MIME-adatbázis legfontosabb része az <file>/usr/share/mime/packages/</file> könyvtár, ahol az ismert MIME-típusokról szóló információkat megadó MIME-típusokkal kapcsolatos fájlok vannak tárolva. Egy ilyen fájl példája az <file>/usr/share/mime/packages/freedesktop.org.xml</file>, amely a rendszeren alapértelmezetten elérhető szabványos MIME-típusokról ad információkat. Ezt a fájlt a <sys>shared-mime-info</sys> csomag biztosítja.</p>
+    </section>
+    <section id="mime-types-more-information">
+    <title>További információk beszerzése</title>
+    <p>A MIME-típus rendszert bemutató részletes információkért nézze meg a freedesktop.org weboldalán található <em>freedesktop.org megosztott MIME-információk specifikációját</em>:</p>
+    <list>
+      <item>
+        <p><link href="http://www.freedesktop.org/wiki/Specifications/shared-mime-info-spec/"> http://www.freedesktop.org/wiki/Specifications/shared-mime-info-spec/</link></p>
+      </item>
+    </list>
+    </section>
+</page>

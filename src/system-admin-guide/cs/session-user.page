@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="session-user" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="sundry#session"/>
+    <link type="guide" xref="login#management"/>
+    <link type="seealso" xref="session-custom"/>
+    <revision pkgversion="3.4.2" date="2012-12-01" status="draft"/>
+    <revision pkgversion="3.8" date="2013-08-06" status="review"/>
+    <revision pkgversion="3.12" date="2014-06-17" status="review"/>
+
+    <credit type="author copyright">
+      <name>minnie_eg</name>
+      <email>amany.elguindy@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Jana Svarova</name>
+      <email>jana.svarova@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Jak pro uživatele určit výchozí sezení.</desc>
+   </info>
+
+  <title>Nastavení výchozího sezení uživatele</title>
+
+  <p>Výchozí sezení se získává z programu nazvaného <app>AccountsService</app>. Ten uchovává tyto informace ve složce <file>/var/lib/AccountsService/users/</file>.</p>
+
+<note style="note">
+  <p>V GNOME 2 se k vytvoření výchozího sezení uživatele používá soubor <file>.dmrc</file> v domovské složce uživatele. V současnosti se už ale soubory <file>.dmrc</file> nepoužívají.</p>
+</note>
+
+  <steps>
+    <title>Určení výchozího sezení pro uživatele</title>
+    <item>
+      <p>Ujistěte se, že máte v systému nainstalovaný balíček <sys>gnome-session-xsession</sys>.</p>
+    </item>
+    <item>
+      <p>Přejděte do složky <file>/usr/share/xsessions</file>, kde najdete soubory <file>.desktop</file> pro jednotlivá dostupná sezení. Podle obsahu těchto souboru si najděte, které sezení chcete použít.</p>
+    </item>
+    <item>
+      <p>Když chcete uživateli určit výchozí sezení, aktualizujte uživatelův záznam pro službu <sys>AccountService</sys> v souboru <file>/var/lib/AccountsService/users/<var>uzivatelskejmeno</var></file>:</p>
+<code>[User]
+Language=
+XSession=gnome-classic</code>
+       <p>V této ukázce bylo jako výchozí sezení nastaveno <link href="help:gnome-help/gnome-classic">GNOME klasické</link> pomocí souboru <file>/usr/share/xsessions/gnome-classic.desktop</file>.</p>
+     </item>
+  </steps>
+
+  <p>Po té, co určíte uživateli výchozí sezení, bude toto sezení použito při příštím přihlášení uživatele, pokud si uživatel na přihlašovací obrazovce nevybere výslovně jiné sezení.</p>
+
+</page>

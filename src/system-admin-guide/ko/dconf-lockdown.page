@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="dconf-lockdown" xml:lang="ko">
+
+  <info>
+    <link type="guide" xref="user-settings#lockdown"/>
+    <link type="guide" xref="setup"/>
+<!--    <link type="seealso" xref="dconf-profiles" />-->
+    <revision version="0.1" date="2012-05-21" status="review"/>
+    <revision pkgversion="3.8" date="2013-04-26" status="review"/>
+    <revision pkgversion="3.15" date="2015-02-13" status="review"/>
+
+    <credit type="author copyright">
+      <name>Ryan Lortie</name>
+      <email>desrt@desrt.ca</email>
+      <years>2012</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013, 2015</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>사용자가 특정 설정을 변경하는 것으로부터 예방하기 위해 <sys its:translate="no">dconf</sys>의 <em>잠금</em> 모드를 사용하세요.</desc>
+  </info>
+
+  <title>특정 설정 잠금</title>
+
+  <!-- TODO: reveiw against dconf-custom-defaults.page -->
+
+  <p><sys its:translate="no">dconf</sys> 키를 <em>잠금</em>하기 위해, 당신은 키 파일 디렉터리에 있는 <file its:translate="no">locks</file> 서브 디렉터리를 생성해야합니다. 이 디렉터리안에 있는 파일들은 잠겨진 키의 리스트입니다. 당신은 이 디렉터리에 얼마든지 파일을 추가할 수 있습니다. 다음은 어떻게 보이는지에 대한 예제입니다:</p>
+
+  <steps>
+    <title>설정 잠금</title>
+    <item>
+      <p>당신이 키를 잠그기 전에 설정해야 할 것이 있습니다. 이 예제는 한번 설정했던 <link xref="desktop-background">배경화면 설정</link>을 잠그는 방법입니다. 여기서 당신은 <link xref="dconf-profiles"><sys>사용자</sys> 프로필</link>과 당신이 잠그길 원하는 설정의 <link xref="dconf-keyfiles">키 파일</link>이 있어야 합니다.</p>
+    </item>
+    <item>
+      <p><file its:translate="no">/etc/dconf/db/local.d/locks</file> 디렉터리를 생성합니다.</p>
+    </item>
+    <item>
+      <p><file its:translate="no">/etc/dconf/db/local.d/locks/</file> 디렉터리에 파일을 생성하고 각 줄마다 하나의 키를 나열합니다. 예를 들면, <file its:translate="no">/etc/dconf/db/local.d/locks/00_default-wallpaper</file>:</p>
+<code its:translate="no">
+# <span its:translate="yes">배경화면 변경 차단</span>
+/org/gnome/desktop/background/picture-uri
+/org/gnome/desktop/background/picture-options
+/org/gnome/desktop/background/primary-color
+/org/gnome/desktop/background/secondary-color
+</code>
+    </item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+  </steps>
+
+  <note>
+    <p><app its:translate="no">dconf</app> 0.7.4에서, 잠금은 성능상의 이유로 키 단위로만 적용됩니다; 당신은 아직 모든 부분을 잠글 수 없을 것입니다. 향후에 이것을 처리할 계획이 있습니다.</p>
+  </note>
+
+</page>

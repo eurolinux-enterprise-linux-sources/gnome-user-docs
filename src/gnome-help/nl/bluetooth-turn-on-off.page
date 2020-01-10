@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" version="1.0 if/1.0" id="bluetooth-turn-on-off" xml:lang="nl">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="bluetooth-turn-on-off" xml:lang="nl">
 
   <info>
     <link type="guide" xref="bluetooth" group="#first"/>
@@ -36,79 +36,52 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Enable or disable the Bluetooth device on your computer.</desc>
+    <desc>Het Bluetooth-apparaat van uw computer in- of uitschakelen.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Justin van Steijn</mal:name>
+      <mal:email>justin50@live.nl</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hannie Dumoleyn</mal:name>
+      <mal:email>hannie@ubuntu-nl.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
   </info>
 
-<title>Turn Bluetooth on or off</title>
+<title>Bluetooth in- of uitschakelen</title>
 
-<if:choose>
-  <if:when test="platform:unity">
-    <p>You can turn Bluetooth on to connect to other Bluetooth devices, or turn
-    it off to conserve power. To turn Bluetooth on, click the Bluetooth icon in
-    the menu bar and switch <gui>Bluetooth</gui> to <gui>ON</gui>.</p>
-  </if:when>
-
-  <p>You can turn Bluetooth on to connect to other Bluetooth devices, or turn
-  it off to conserve power. To turn Bluetooth on:</p>
+  <p>U kunt Bluetooth inschakelen om verbinding te maken met andere Bluetooth-apparaten of u kunt dit uitschakelen om energie te sparen. Om Bluetooth in te schakelen:</p>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Bluetooth</gui>.</p>
+      <p>Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht en typ <gui>Bluetooth</gui>.</p>
     </item>
     <item>
-      <p>Click on <gui>Bluetooth</gui> to open the panel.</p>
+      <p>Klik op het <gui>Bluetooth</gui> om het paneel te openen.</p>
     </item>
     <item>
-      <p>Set the switch at the top to <gui>ON</gui>.</p>
+      <p>Zet de schakelaar aan de bovenkant <gui>AAN</gui>.</p>
     </item>
   </steps>
-</if:choose>
 
-<if:choose>
-  <if:when test="platform:unity">
-    <p>Many laptop computers have a hardware switch or key combination to turn
-    Bluetooth on and off. If the Bluetooth hardware is turned off, you will not
-    see a Bluetooth icon in the menu bar. Look for a switch on your computer or
-    a key on your keyboard. The keyboard key is often accessed with the help of
-    the <key>Fn</key> key.</p>
-  </if:when>
-  <p>Many laptop computers have a hardware switch or key combination to turn
-  Bluetooth on and off. Look for a switch on your computer or a key on your
-  keyboard. The keyboard key is often accessed with the help of the
-  <key>Fn</key> key.</p>
-</if:choose>
+  <p>Veel laptops hebben een schakelaar of toetscombinatie waarmee Bluetooth kan worden in- of uitgeschakeld. Zoek naar een schakelaar of een toets op uw toetsenbord. De toets op het toetsenbord vindt u vaak met behulp van de <key>Fn</key>-toets.</p>
 
-<if:choose>
-  <if:when test="platform:unity">
-    <p>To turn Bluetooth off, click the Bluetooth icon and switch
-    <gui>Bluetooth</gui> to <gui>OFF</gui>.</p>
-  </if:when>
-  <p>To turn Bluetooth off:</p>
+  <p>Om Bluetooth uit te schakelen:</p>
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#yourname">system menu</gui> from the
-      right side of the top bar.</p>
+      <p>Open het <gui xref="shell-introduction#yourname">Systeemmenu</gui> aan de rechterzijde van de bovenbalk.</p>
     </item>
     <item>
-      <p>Select
-      <gui><media its:translate="no" type="image" mime="image/svg" src="figures/bluetooth-active-symbolic.svg"/>
-      Not In Use</gui>. The Bluetooth section of the menu will expand.</p>
+      <p>Selecteer <gui><media its:translate="no" type="image" mime="image/svg" src="figures/bluetooth-active-symbolic.svg"/> Niet in gebruik</gui>. Het Bluetooth-onderdeel van het menu zal uitklappen.</p>
     </item>
     <item>
-      <p>Select <gui>Turn Off</gui>.</p>
+      <p>Selecteer <gui>Uitschakelen</gui>.</p>
     </item>
   </steps>
-</if:choose>
 
-<if:choose>
-  <if:when test="platform:unity">
-    <note><p>Your computer is <link xref="bluetooth-visibility">visible</link>
-    if <gui>Visible</gui> is switched to <gui>ON</gui> in the Bluetooth
-    menu.</p></note>
-  </if:when>
-  <note><p>Your computer is <link xref="bluetooth-visibility">visible</link> as
-  long as the <gui>Bluetooth</gui> panel is open.</p></note>
-</if:choose>
+  <note><p>Uw computer is <link xref="bluetooth-visibility">zichtbaar</link> zolang het <gui>Bluetooth</gui>-paneel open staat.</p></note>
 
 </page>

@@ -7,6 +7,7 @@
 
     <revision pkgversion="3.8.2" version="0.3" date="2013-05-18" status="review"/>
     <revision pkgversion="3.10" date="2013-11-01" status="review"/>
+    <revision pkgversion="3.26" date="2017-11-27" status="review"/>
 
     <credit type="author">
       <name>Šon Mek Kens</name>
@@ -19,6 +20,10 @@
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
       <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Andre Klaper</name>
+      <email>ak-47@gmx.net</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -34,19 +39,11 @@
     <title>Načini unošenja znakova</title>
   </links>
 
-  <section id="charmap">
-    <title>Tablica znakova</title>
-    <p>Gnom sadrži program tablice znakova koji vam omogućava da razgledate sve znakove Unikoda. Koristite tablicu znakova da pronađete znak koji želite, i zatim ga umnožite i ubacite gde vam je potrebno.</p>
-
-    <p>Možete naći <app>Tablicu znakova</app> u pregledu <gui>Aktivnosti</gui>. Za više podataka o tablici znakova, pogledajte <link href="help:gucharmap">Uputstvo tablice znakova</link>.</p>
-
-  </section>
-
   <section id="characters">
     <title>Znakovi</title>
-    <p>Još jedan koristan program koji se isporučuje sa Gnomom je <app>Znakovi</app>. Omogućava vam da nađete i da umetnete neobične znakove tako što ćete razgledati kategorije znakova ili potražiti ključnim rečima.</p>
+    <p>Gnom dolazi sa programom tablice znakova koji vam omogućava vam da nađete i da umetnete neobične znakove, uključujući i emodžije, tako što ćete razgledati kategorije znakova ili potražiti ključnim rečima.</p>
 
-    <p>Ovaj program možete da pokrenete iz pregleda aktivnosti. Za više podataka o ovom programu, pogledajte <link href="help:gnome-characters">Uputstvo za znakove</link>.</p>
+    <p>Možete pokrenuti program <app>Znakovi</app> iz pregleda Aktivnosti.</p>
 
   </section>
 
@@ -55,19 +52,43 @@
     <p>Sastavni taster je poseban taster koji vam omogućava da pritisnete više tastera u nizu da biste dobili poseban znak. Na primer, da upišete e sa naglaskom (<em>é</em>), možete da pritisnete <key>sastavni</key> zatim <key>'</key> zatim <key>e</key>.</p>
     <p>Tastature nemaju posebne sastavne tastere. Umesto toga, možete da odredite jedan od postojećih tastera na vašoj tastaturi kao sastavni taster.</p>
 
+    <note style="important">
+      <p>Trebalo bi da ste instalirali program <app>Alat za lickanje</app> na vašem računaru da biste mogli da izmenite ovo podešavanje.</p>
+      <if:if xmlns:if="http://projectmallard.org/if/1.0/" test="action:install">
+        <p><link style="button" action="install:gnome-tweak-tool">Instalirajte <app>Alat za lickanje</app></link></p>
+      </if:if>
+    </note>
+
     <steps>
       <title>Odredite sastavni taster</title>
       <item>
-        <p>Otvorite pregled <gui xref="shell-introduction#activities">Aktivnosti</gui> i počnite da kucate <gui>Tastatura</gui>.</p>
+        <p>Otvorite pregled <gui xref="shell-introduction#activities">Aktivnosti</gui> i počnite da kucate <gui>Alat za lickanje</gui>.</p>
       </item>
       <item>
-        <p>Kliknite na <gui>Tastatura</gui> da otvorite panel.</p>
+        <p>Kliknite na <gui>Alat za lickanje</gui> da ga otvorite.</p>
       </item>
-      <item><p>Izaberite jezičak <gui>Prečice</gui> i pritisnite <gui>Kucanje</gui>.</p></item>
-      <item><p>Kliknite na <gui>Sastavni taster</gui> sa desne strane.</p></item>
-      <item><p>Kliknite na <gui>Isključeno</gui> i izaberite taster koji će da se ponaša kao sastavni taster iz padajućeg izbornika. Možete da izaberete jedan od <key>Ktrl</key> tastera, desni taster <key>Alt</key>, desni taster <key>prozora</key> ili <key xref="keyboard-key-super">Super</key> taster ako imate jedan, taster <key xref="keyboard-key-menu">Izbornik</key> ili <key>Zaklj. slova</key>. Bilo koji taster koji izaberete će tada raditi samo kao sastavni taster, i neće više raditi ono za šta je prvobitno predviđen.</p></item>
+      <item>
+        <p>Kliknite na jezičak <gui>Tastatura i miš</gui>.</p>
+      </item>
+      <item>
+        <p>Kliknite <gui>Isključi</gui> pored podešavanja <gui>Sastavni taster</gui>.</p>
+      </item>
+      <item>
+        <p>U prozorčetu prebacite prekidač na uključeno i izaberite prečicu tastature koju želite da koristite.</p>
+      </item>
+      <item>
+        <p>Štiklirajte kvadratić tastera koji želite da postavite kao „Sastavni taster“.</p>
+      </item>
+      <item>
+        <p>Zatvorite prozorče.</p>
+      </item>
+      <item>
+        <p>Zatvorite prozor <gui>Alata za lickanje</gui>.</p>
+      </item>
     </steps>
+
     <p>Možete da otkucate mnogo opštih znakova koristeći sastavni taster, na primer:</p>
+
     <list>
       <item><p>Pritisnite <key>sastavni</key> zatim <key>'</key> zatim neko slovo da postavite dugouzlazni naglasak iznad slova, kao što je <em>é</em>.</p></item>
       <item><p>Pritisnite <key>sastavni</key> zatim <key>'</key> zatim neko slovo da postavite kratkouzlazni naglasak iznad slova, kao što je <em>è</em>.</p></item>
@@ -80,9 +101,9 @@
 <section id="ctrlshiftu">
   <title>Kodni prikaz</title>
 
-  <p>Možete da unesete bilo koji znak Unikoda koristeći samo vašu tastaturu sa brojevnim kodnim prikazom znaka. Svaki znak je određen četvoroznačnim kodnim prikazom. Da pronađete kodni prikaz nekog znaka, pronađite znak u tablici znakova i pogledajte na traku stanja ili u jezičku <gui>Detalji o znaku</gui>. Kodni prikaz jesu četiri znaka nakon <gui>U+</gui>.</p>
+  <p>Možete da unesete bilo koji znak Unikoda koristeći samo vašu tastaturu sa brojevnim kodnim prikazom znaka. Svaki znak je određen četvoroznačnim kodnim prikazom. Da pronađete kodni prikaz nekog znaka, pronađite znak u programu <app>Znakovi</app>. Kodni prikaz jesu četiri znaka nakon <gui>U+</gui>.</p>
 
-  <p>Da unesete znak njegovim kodnim prikazom, držite pritisnutim <key>Ktrl</key> i <key>Šift</key>, ukucajte <key>U</key> i za njim kodni prikaz u vidu četiri znaka, zatim otpustite <key>Ktrl</key> i <key>Šift</key>. Ako često koristite znake kojima možete da pristupite na druge načine, možete uvideti da je korisno da memorišete kodni prikaz tih znakova tako da ih možete uneti na brzinu.</p>
+  <p>Da unesete znak njegovim kodnim prikazom, pritisnite <keyseq><key>Ktrl</key><key>Šift</key><key>U</key></keyseq>, zatim ukucajte kodni prikaz u vidu četiri znaka i pritisnite <key>Razmak</key> ili <key>Unesi</key>. Ako često koristite znake kojima možete da pristupite na druge načine, možete uvideti da je korisno da memorišete kodni prikaz tih znakova tako da ih možete uneti na brzinu.</p>
 
 </section>
 

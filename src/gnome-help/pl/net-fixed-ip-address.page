@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-fixed-ip-address" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="net-wired"/>
+    <link type="seealso" xref="net-findip"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-13" status="final"/>
+    <revision pkgversion="3.15" date="2014-12-04" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.24" date="2017-03-26" status="final"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Używanie statycznego adresu IP może ułatwić udostępnianie niektórych usług sieciowych z komputera.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Tworzenie połączenia o stałym adresie IP</title>
+
+  <p>Większość sieci automatycznie przydziela komputerowi <link xref="net-what-is-ip-address">adres IP</link> i pozostałe informacje podczas łączenia. Mogą one zmieniać się co jakiś czas, ale komputer może wymagać niezmiennego adresu IP (np. jeśli jest serwerem plików).</p>
+
+  <steps>
+    <title>Aby nadać komputerowi stały (statyczny) adres IP:</title>
+    <item>
+      <p>Otwórz <gui xref="shell-introduction#activities">ekran podglądu</gui> i zacznij pisać <gui>Sieć</gui>.</p>
+    </item>
+    <item>
+      <p>Kliknij <gui>Sieć</gui>, aby otworzyć panel.</p>
+    </item>
+    <item>
+      <p>W lewym panelu wybierz połączenie sieciowe, które ma mieć stały adres. Jeśli sieć jest podłączona kablem, to kliknij <gui>Przewodowe</gui>, a następnie przycisk <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">ustawienia</span></media> w dolnym prawym rogu panelu. W przypadku połączenia <gui>Wi-Fi</gui> przycisk <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">ustawienia</span></media> będzie położony obok aktywnej sieci.</p>
+    </item>
+    <item>
+      <p>Kliknij <gui>IPv4</gui> lub <gui>IPv6</gui> w lewym panelu i zmień <gui>Adresy</gui> na <em>Ręcznie</em>.</p>
+    </item>
+    <item>
+      <p>Wpisz <gui xref="net-what-is-ip-address">Adres IP</gui> i <gui>Bramę</gui>, a także odpowiednią <gui>Maskę sieci</gui>.</p>
+    </item>
+    <item>
+      <p>W sekcji <gui>DNS</gui> przełącz <gui>Automatycznie</gui> na <gui>◯</gui> (wyłączone). Wpisz adres IP serwera DNS do użycia. Wpisz adresy dodatkowych serwerów DNS za pomocą przycisku <gui>+</gui>.</p>
+    </item>
+    <item>
+      <p>W sekcji <gui>Trasy</gui> przełącz <gui>Automatycznie</gui> to <gui>◯</gui> (wyłączone). Wpisz <gui>Adres</gui>, <gui>Maskę sieci</gui>, <gui>Bramę</gui> i <gui>Parametry</gui> trasy do użycia. Wpisz dodatkowe trasy za pomocą przycisku <gui>+</gui>.</p>
+    </item>
+    <item>
+      <p>Kliknij przycisk <gui>Zastosuj</gui>. Połączenie sieciowe powinno teraz mieć stały adres IP.</p>
+    </item>
+  </steps>
+
+</page>

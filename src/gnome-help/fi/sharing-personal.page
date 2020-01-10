@@ -17,8 +17,7 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Let other people access files in your <file>Public</file>
-    folder.</desc>
+    <desc>Salli muiden käyttää <file>Julkinen</file>-kansiossasi olevaa sisältöä.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Timo Jyrinki</mal:name>
@@ -29,11 +28,11 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Jiri Grönroos</mal:name>
       <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
-      <mal:years>2012-2016.</mal:years>
+      <mal:years>2012-2018.</mal:years>
     </mal:credit>
   </info>
 
-  <title>Share your personal files</title>
+  <title>Jaa henkilökohtaisia tiedostoja</title>
 
   <p>You can allow access to the <file>Public</file> folder in your
   <file>Home</file> folder from another computer on the network. Configure
@@ -46,20 +45,17 @@
 
     <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
       <if:when test="action:install">
-        <p>
-<link action="install:gnome-user-share" style="button">Install gnome-user-share</link>
-        </p>
+        <p><link action="install:gnome-user-share" style="button">Asenna gnome-user-share</link></p>
       </if:when>
     </if:choose>
   </note>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Sharing</gui>.</p>
+      <p>Avaa <gui xref="shell-introduction#activities">Toiminnot</gui>-yleisnäkymä ja ala kirjoittamaan <gui>Jakaminen</gui>.</p>
     </item>
     <item>
-      <p>Click on <gui>Sharing</gui> to open the panel.</p>
+      <p>Napsauta <gui>Jakaminen</gui> avataksesi paneelin.</p>
     </item>
     <item>
       <p>If <gui>Sharing</gui> is <gui>OFF</gui>, switch it to
@@ -102,7 +98,7 @@
   </section>
 
   <section id="networks">
-  <title>Networks</title>
+  <title>Verkot</title>
 
   <p>The <gui>Networks</gui> section lists the networks to which you are
   currently connected. Use the <gui>ON | OFF</gui> switch next to each to

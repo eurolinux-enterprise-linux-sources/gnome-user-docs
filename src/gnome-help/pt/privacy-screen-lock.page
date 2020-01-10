@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="privacy-screen-lock" xml:lang="pt">
+
+  <info>
+    <link type="guide" xref="privacy"/>
+    <link type="seealso" xref="session-screenlocks"/>
+    <link type="seealso" xref="shell-exit#lock-screen"/>
+
+    <revision pkgversion="3.8" date="2013-05-21" status="candidate"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-30" status="final"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hilh</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit>
+      <name>Jim Campbelh</name>
+      <email>jwcampbell@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Impedir que outras pessoas possam usar seu escritório quando se afaste da sua computador.</desc>
+  </info>
+
+  <title>Bloquear automaticamente seu ecrã</title>
+  
+  <p>When you leave your computer, you should
+  <link xref="shell-exit#lock-screen">lock the screen</link> to prevent
+  other people from using your desktop and accessing your files. If you
+  sometimes forget to lock your screen, you may wish to have your computer’s
+  screen lock automatically after a set period of time. This will help to
+  secure your computer when you aren’t using it.</p>
+
+  <note><p>Quando seu ecrã está bloqueado, seus aplicações e os processos do sistema seguirão em execução, mas precisará introduzir a sua palavra-passe para voltar ao usar.</p></note>
+  
+  <steps>
+    <title>Para configurar o tempo que demora seu ecrã em se bloquear automaticamente:</title>
+    <item>
+      <p>Abra a vista de <gui xref="shell-introduction#activities">Atividades</gui> comece a escrever <gui>Privacidade</gui>.</p>
+    </item>
+    <item>
+      <p>Carregue em <gui>Privacidade</gui> para abrir o painel.</p>
+    </item>
+    <item>
+      <p>Selecione <gui>Ecrã de bloqueio</gui>.</p>
+    </item>
+    <item>
+      <p>Assegure-se de que o <gui>Bloqueio automático do ecrã</gui> está <gui>ativado</gui> e selecione o tempo na lista desdobrável.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Applications can present notifications to you that are still displayed
+    on your lock screen. This is convenient, for example, to see if you have
+    any email without unlocking your screen. If you’re concerned about other
+    people seeing these notifications, switch <gui>Show Notifications</gui>
+    off.</p>
+  </note>
+
+  <p>Quando seu ecrã esteja bloqueado e queira a desbloquear, carregue <key>Esc</key>, ou mova o rato de abaixo a acima do ecrã. Então, introduza a sua palavra-passe e carregue <key>Enter</key> ou carregue <gui>Desbloquear</gui>. Alternativamente, simplesmente comece a escrever a sua palavra-passe e o painel de bloqueio subir-se-á automaticamente enquanto escreve.</p>
+
+</page>

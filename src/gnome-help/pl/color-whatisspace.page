@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="color-whatisspace" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="color#profiles"/>
+    <link type="seealso" xref="color-whatisprofile"/>
+    <desc>Przestrzeń kolorów to określony zakres kolorów.</desc>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Czym jest przestrzeń kolorów?</title>
+
+  <p>Przestrzeń kolorów to określony zakres kolorów. Powszechnie używane przestrzenie kolorów to sRGB, AdobeRGB i ProPhotoRGB.</p>
+
+  <p>System wzrokowy człowieka nie jest prostym czujnikiem RGB, ale możemy przybliżyć odpowiedź oczu za pomocą diagramu chromatyczności CIE 1931, pokazującego ją w kształcie podkowy. Jak widać, ludzki wzrok wykrywa więcej odcieni zieleni niż czerwieni i niebieskiego. Za pomocą trójchromatycznej przestrzeni kolorów, takiej jak RGB, przedstawiamy kolory na komputerze trzema wartościami, co ogranicza do kodowania <em>trójkąta</em> kolorów.</p>
+
+  <note>
+    <p>Używanie modeli, takich jak diagram chromatyczności CIE 1931, jest ogromnym uproszczeniem systemu wzrokowego człowieka, a prawdziwe gamy są wyrażane jako kadłuby 3D, zamiast rzutów 2D. Rzut 2D trójwymiarowego kształtu może być mylący, więc aby zobaczyć kadłub 3D, użyj programu <code>gcm-viewer</code>.</p>
+  </note>
+
+  <figure>
+    <desc>sRGB, AdobeRGB i ProPhotoRGB przedstawione jako białe trójkąty</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-space.png"/>
+  </figure>
+
+  <p>sRGB to najmniejsza przestrzeń, która może zakodować najmniejszą liczbę kolorów. To przybliżenie 10-letniego monitora kineskopowego, więc większość współczesnych monitorów może z łatwością wyświetlać więcej kolorów. sRGB to standard <em>najniższego wspólnego mianownika</em> i jest używany w większości programów (oraz w Internecie).</p>
+  <p>AdobeRGB jest często używana jako <em>przestrzeń robocza</em>. Może zakodować więcej kolorów niż sRGB, co oznacza, że można zmieniać kolory zdjęcia bez większych obaw o utratę najbardziej intensywnych kolorów czy zdławienie czerni.</p>
+  <p>ProPhoto to największa dostępna przestrzeń, często używana do archiwizacji dokumentów. Może zakodować prawie cały zakres kolorów wykrywanych przez oko człowieka, a nawet zakodować kolory dla nas niewidoczne!</p>
+
+  <p>Więc jeśli przestrzeń ProPhoto jest dużo lepsza, to dlaczego nie używamy jej do wszystkich zastosowań? Odpowiedź ma związek z <em>kwantyzacją</em>. Jeśli używanych jest tylko 8 bitów (256 poziomów) do zakodowania każdego koloru, to większy zakres ma większe różnice między wartościami.</p>
+  <p>Większe różnice oznaczają większe błędy między uchwyconym a przechowanym kolorem, co jest dużym problemem w przypadku niektórych kolorów. Okazuje się, że kluczowe kolory, takie jak kolory skóry są bardzo ważne, i nawet małe błędy na zdjęciu są widoczne dla niewyszkolonych oczu.</p>
+  <p>Oczywiście, używanie obrazów 16-bitowych zapewnia mniejsze różnice między wartościami i o wiele mniejsze błędy kwantyzacji, ale podwaja to rozmiar każdego obrazu. Większość istniejących dzisiaj obrazów jest 8-bitowych (8 bitów na piksel).</p>
+  <p>Zarządzanie kolorami to proces konwersji między jedną przestrzenią kolorów a drugą, gdzie przestrzeń może być powszechnie używana, np. sRGB, albo być niestandardową przestrzenią, np. profilem monitora lub drukarki.</p>
+
+</page>

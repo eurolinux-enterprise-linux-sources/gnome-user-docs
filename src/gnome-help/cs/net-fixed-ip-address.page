@@ -8,6 +8,7 @@
     <revision pkgversion="3.4.0" date="2012-03-13" status="final"/>
     <revision pkgversion="3.15" date="2014-12-04" status="final"/>
     <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.24" date="2017-03-26" status="final"/>
 
     <credit type="author">
       <name>Jim Campbell</name>
@@ -42,9 +43,10 @@
 
   <title>Vytvoření připojení se pevnou adresou IP</title>
 
-  <p>Většina sítí přiřadí vašemu počítači <link xref="net-what-is-ip-address">adresu IP</link> a další údaje automaticky po připojení k síti. Tyto údaje se mohou pravidelně měnit, ale v některých případech můžete chtít mít pro svůj počítač pevnou adresu IP, abyste ji znali (například, když se jedná o souborový server).</p> <p>Pevnou (statickou) adresu IP přidělíte počítači následovně:</p>
+  <p>Většina sítí přiřadí vašemu počítači <link xref="net-what-is-ip-address">adresu IP</link> a další údaje automaticky po připojení k síti. Tyto údaje se mohou pravidelně měnit, ale v některých případech můžete chtít mít pro svůj počítač pevnou adresu IP, abyste ji znali (například, když se jedná o souborový server).</p>
 
   <steps>
+    <title>Pevnou (statickou) adresu IP přidělíte počítači následovně:</title>
     <item>
       <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Síť</gui>.</p>
     </item>
@@ -52,16 +54,19 @@
       <p>Kliknutím na <gui>Síť</gui> otevřete příslušný panel.</p>
     </item>
     <item>
-      <p>V levém panelu vyberte síťové připojení, kterému chcete přidělit pevnou adresu. Když jste k síti připojeni kabelem, klikněte na <gui>Drátové</gui> a pak klikněte na tlačítko <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">nastavení</span></media> v pravém dolním rohu panelu. U připojení <gui>Wi-Fi</gui> je tlačítko <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">nastavení</span></media> umístěno vedle aktivní sítě.</p>
+      <p>V levém panelu vyberte síťové připojení, u kterého chcete mít pevnou adresu.Pokud jste k síti připojeni kabelem, klikněte na <gui>Drátové</gui> a pak klikněte na tlačítko <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">nastavení</span></media> v pravém dolním rohu panelu. U připojení <gui>Wi-Fi</gui> je tlačítko <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">nastavení</span></media> umístěno vedle aktivní sítě.</p>
     </item>
     <item>
-      <p>Klikněte na kartu <gui>IPv4</gui> nebo <gui>IPv6</gui> a změňte <gui>Adresy</gui> na <em>Ruční</em>.</p>
+      <p>Klikněte na <gui>IPv4</gui> nebo <gui>IPv6</gui> v levém panelu a změňte <gui>Adresy</gui> na <em>Ruční</em>.</p>
     </item>
     <item>
-      <p>Do příslušných polí zadejte údaje <em>Adresa</em>, <em>Síťová maska</em> a <em>Brána</em>. Jak je zvolit záleží na nastavení vaší síti. Existují konkrétní pravidla určující, které adresy IP a síťové masky jsou platné pro danou síť.</p>
+      <p>Zadejte <gui xref="net-what-is-ip-address">Adresu IP</gui> a <gui>Bránu</gui>, včetně příslušné <gui>Masky sítě</gui>.</p>
     </item>
     <item>
-      <p>Pokud je potřeba, zadejte adresy <em>serverů pro překlad doménových názvů</em> do pole <gui>Servery DNS</gui>. Jedná se o adresy IP serverů, které vyhledávají doménové názvy. Většina firemních sítí a poskytovatelů připojení k Internetu má pro tento účel vyhrazené servery DNS.</p>
+      <p>V části <gui>DNS</gui> přepněte <gui>Automatické</gui> na <gui>○</gui> (vypnuto). Zadejte adresu IP serveru DNS, který chcete používat. Pomocí tlačítka <gui>+</gui> můžete přidat další servery DNS.</p>
+    </item>
+    <item>
+      <p>V části <gui>Směrování</gui> přepněte <gui>Automatické</gui> na <gui>○</gui> (vypnuto). Zadejte <gui>Adresu</gui>, <gui>Masku sítě</gui>, <gui>Bránu</gui> a <gui>Metriku</gui> pro cestu, kterou chcete používat. Další cesty můžete přidat tlačítkem <gui>+</gui>.</p>
     </item>
     <item>
       <p>Klikněte na <gui>Použít</gui>. Síťové připojení by nyní mělo mít pevnou adresu IP.</p>

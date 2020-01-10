@@ -54,6 +54,19 @@
     </item>
   </steps>
 
+  <note style="tip">
+    <p>If there are multiple user accounts on your system, there is a separate
+    instance of the <gui>Region &amp; Language</gui> panel for the login screen.
+    Click the <gui>Login Screen</gui> button at the top right to toggle between
+    the two instances.</p>
+
+    <p>Some rarely used keyboard layout variants are not available by default when you click
+    the <gui>+</gui> button. To make also those input sources available you can open a terminal
+    window by pressing <keyseq><key>Ctrl</key><key>Alt</key><key>T</key></keyseq>
+    and run this command:</p>
+    <p><cmd its:translate="no">gsettings set org.gnome.desktop.input-sources show-all-sources true</cmd></p>
+  </note>
+
   <note style="sidebar">
     <p>Можете да прикажете слику неког распореда тако што ћете га изабрати на списку <gui>Извори улаза</gui> и кликнути на <gui><media its:translate="no" type="image" src="figures/input-keyboard-symbolic.png" width="16" height="16"><span its:translate="yes">преглед</span></media></gui></p>
   </note>

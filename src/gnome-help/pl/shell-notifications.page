@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" version="1.0 if/1.0" id="shell-notifications" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="shell-overview#desktop"/>
+
+    <revision pkgversion="3.8.0" version="0.3" date="2013-04-23" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.16" date="2015-03-02" status="outdated"/>
+
+    <credit type="author">
+      <name>Marina Zhurakhinskaya</name>
+      <email>marinaz@redhat.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013, 2015</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Komunikaty o pewnych zdarzeniach są wyświetlane na górze ekranu.</desc> 
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Powiadomienia i obszar powiadamiania</title>
+
+<section id="what">
+  <title>Czym jest powiadomienie?</title>
+
+  <p>Jeśli program lub składnik systemu chce zwrócić na siebie uwagę użytkownika, to na górze ekranu zostanie wyświetlone powiadomienie.</p>
+
+  <p>Na przykład, po otrzymaniu nowej wiadomości w komunikatorze lub wiadomości e-mail zostanie wyświetlone powiadomienie z informacją o niej.</p>
+
+<!--  <p>To minimize distraction, some notifications first appear as a single line.
+  You can move your mouse over them to see their full content.</p>-->
+
+  <p>Inne powiadomienia mają przyciski z opcjami. Aby zamknąć takie powiadomienie bez wybierania żadnej opcji, kliknij przycisk zamknięcia.</p>
+
+  <p>Kliknięcie przycisku zamknięcia na niektórych powiadomieniach je odrzuca. Inne, takie jak powiadomienia odtwarzacza muzyki lub komunikatora, będą ukryte w obszarze powiadamiania.</p>
+
+</section>
+
+<section id="messagetray">
+
+  <title>Obszar powiadamiania</title>
+
+  <p if:test="!platform:gnome-classic">Obszar powiadamiania umożliwia powrót do powiadomień w dogodnej chwili. Jest wyświetlany po kliknięciu zegara lub naciśnięciu klawiszy <keyseq><key xref="keyboard-key-super">Super</key><key>M</key></keyseq>. Obszar powiadamiania zawiera wszystkie powiadomienia, na które nie zareagowano lub które są w obszarze na stałe.</p>
+
+  <p if:test="platform:gnome-classic">Obszar powiadamiania umożliwia powrót do powiadomień w dogodnej chwili. Jest wyświetlany po przeniesieniu myszy do dolnego prawego rogu ekranu lub naciśnięciu klawiszy <keyseq><key xref="keyboard-key-super">Super</key><key>M</key></keyseq>. Można go także wyświetlić klikając niebieską ikonę z liczbą po prawej stronie listy okien. Obszar powiadamiania zawiera wszystkie powiadomienia, na które nie zareagowano lub które są w obszarze na stałe.</p>
+
+  <p>Można wyświetlać powiadomienia klikając elementy w obszarze powiadamiania. Są to zwykle komunikaty wysyłane przez programy. Wiadomości z komunikatora są wyświetlane inaczej: jako wiadomości od konkretnych kontaktów.</p>
+
+  <p>Można zamknąć obszar powiadamiania naciskając klawisze <keyseq><key>Super</key><key>M</key></keyseq> ponownie lub klawisz <key>Esc</key>.</p>
+
+</section>
+
+<section id="hidenotifications">
+
+  <title>Ukrywanie powiadomień</title>
+
+  <p>Jeśli użytkownik jest w trakcie pracy i nie chce, żeby mu przeszkadzać, to można wyłączyć powiadomienia.</p>
+
+  <steps>
+    <item>
+      <p>Otwórz <gui xref="shell-introduction#activities">ekran podglądu</gui> i zacznij pisać <gui>Powiadomienia</gui>.</p>
+    </item>
+    <item>
+      <p>Kliknij <gui>Powiadomienia</gui>, aby otworzyć panel.</p>
+    </item>
+    <item>
+      <p>Przełącz <gui>Wyskakujące powiadomienia</gui> na <gui>◯</gui> (wyłączone).</p>
+    </item>
+  </steps>
+
+  <p if:test="!platform:gnome-classic">Po wyłączeniu większość powiadomień nie będzie wyświetlanych na górze ekranu. Powiadomienia będą nadal dostępne w obszarze powiadamiania po jego wyświetleniu (klikając zegar lub naciskając klawisze <keyseq><key>Super</key><key>M</key></keyseq>), i będą wyświetlane z powrotem po przełączeniu ich na <gui>|</gui> (włączone).</p>
+
+  <p>Można także wyłączyć lub ponownie włączyć powiadomienia dla poszczególnych programów w panelu <gui>Powiadomienia</gui>.</p>
+
+  <p if:test="platform:gnome-classic">Po wyłączeniu większość powiadomień nie będzie wyświetlanych na dole ekranu. Bardzo ważne powiadomienia, takie jak o krytycznie niskim poziomie naładowania akumulatora będą nadal wyświetlane. Powiadomienia będą nadal dostępne w obszarze powiadamiania po jego wyświetleniu (przenosząc mysz do dolnego prawego rogu ekranu lub naciskając klawisze <keyseq><key>Super</key><key>M</key></keyseq>), i będą wyświetlane z powrotem po przełączeniu ich na <gui>|</gui> (włączone).</p>
+
+</section>
+
+</page>

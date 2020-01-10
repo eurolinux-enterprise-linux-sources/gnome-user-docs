@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="desktop-shield" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="appearance"/>
+
+    <revision pkgversion="3.22" date="2017-01-09" status="draft"/>
+
+    <credit type="author copyright">
+      <name>Matthias Clasen</name>
+      <email its:translate="no">matthias.clasen@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="author copyright">
+      <name>Michael Hill</name>
+      <email its:translate="no">mdhillca@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Jana Svarova</name>
+      <email its:translate="no">jana.svarova@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email its:translate="no">pknbe@volny.cz</email>
+      <years>2017</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Ändra bakgrunden för låsskärmsskölden.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ändra låsskärmsskölden</title>
+
+  <p><em>Låsskärmsskölden</em> är skärmen som snabbt glider ner då systemet låses. Bakgrunden för låsskärmsskölden styrs av GSettings-nyckeln <sys>org.gnome.desktop.screensaver.picture-uri</sys>. Eftersom <sys>GDM</sys> använder sin egen <sys>dconf</sys>-profil kan du ställa in standardbakgrunden genom att ändra inställningarna i den profilen.</p>
+
+<steps>
+  <title>Ställ in nyckeln org.gnome.desktop.screensaver.picture-uri</title>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-gdm'])"/>
+  <item><p>Skapa en <sys>gdm</sys>-databas för maskinomfattande inställningar i <file>/etc/dconf/db/gdm.d/<var>01-screensaver</var></file>:</p>
+  <code>[org/gnome/desktop/screensaver]
+picture-uri='file://<var>/opt/corp/bakgrund.jpg</var>'</code>
+  <p>Ersätt <var>/opt/corp/bakgrund.jpg</var> med sökvägen till bildfilen som du vill använda som bakgrund till låsskärmen.</p>
+  <p>Format som stöds är PNG, JPG, JPEG och TGA. Bilden kommer att skalas om nödvändigt för att passa på skärmen.</p>
+  </item>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+  <item><p>Du måste logga ut för att de systemomfattande inställningarna ska börja gälla.</p>
+  </item>
+</steps>
+
+<p>Nästa gång du låser skärmen kommer den nya låsskärmsskölden att visas i bakgrunden. I förgrunden kommer aktuell tid, datum och samt dag i veckan att visas.</p>
+
+<section id="troubleshooting-background">
+  <title>Vad är orsaken om bakgrunden inte uppdateras?</title>
+
+  <p>Säkerställ att du har kört kommandot <cmd its:translate="no">dconf update</cmd> för att uppdatera systemdatabaserna.</p>
+
+  <p>Om bakgrunden inte uppdateras, försök att starta om <sys>GDM</sys>.</p>
+</section>
+
+</page>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-preview" xml:lang="mr">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" version="1.0 if/1.0" id="files-preview" xml:lang="mr">
 
   <info>
     <link type="guide" xref="files#common-file-tasks"/>
@@ -30,6 +30,12 @@
   </info>
 
 <title>फाइल आणि फोल्डर्सचे अवलोकन करा</title>
+
+<note if:test="platform:ubuntu" style="important">
+  <p>You need to have <app>Sushi</app> installed on your computer to perform
+  these steps.</p>
+  <p its:locNote="Translators: This button is only shown on Ubuntu, where this   link format is preferred over 'install:gnome-sushi'."><link style="button" href="apt:gnome-sushi">Install <app>Sushi</app></link></p>
+</note>
 
 <p>ॲप्लिकेशनमध्ये न उघडता तुम्ही पटकन फाइल्सचे पूर्वावलोकन करू शकता. कोणतिही फाइल निवडा आणि स्पेसवार दाबा. फाइल सोप्या प्रिव्हयु पटलात उघडेल. पूर्वावलोकन टाळण्याकरिता स्पेसबार दाबा.</p>
 

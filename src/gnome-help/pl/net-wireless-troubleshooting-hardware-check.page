@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-hardware-check" xml:lang="pl">
+
+  <info>
+    <link type="next" xref="net-wireless-troubleshooting-device-drivers"/>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Współtwórcy wiki dokumentacji Ubuntu</name>
+    </credit>
+    <credit type="author">
+      <name>Projekt dokumentacji GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Chociaż adapter bezprzewodowy jest podłączony, to mógł nie zostać poprawnie wykryty przez komputer.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Rozwiązywanie problemów z połączeniem bezprzewodowym</title>
+  <subtitle>Sprawdź, czy adapter bezprzewodowy został wykryty</subtitle>
+
+  <p>Chociaż adapter bezprzewodowy jest podłączony do komputera, to mógł nie zostać wykryty jako urządzenie sieciowe. W tym kroku sprawdzimy, czy urządzenie zostało poprawnie wykryte.</p>
+
+  <steps>
+    <item>
+      <p>Otwórz okno terminala, wpisz <cmd>lshw -C network</cmd> i naciśnij klawisz <key>Enter</key>. Jeśli wyświetlony zostanie komunikat o błędzie, to należy zainstalować program <app>lshw</app> na komputerze.</p>
+    </item>
+    <item>
+      <p>Przejrzyj wyświetlone informacje i znajdź sekcję <em>Wireless interface</em> (interfejs bezprzewodowy). Jeśli adapter bezprzewodowy został poprawnie wykryty, to powinny zostać wyświetlony tekst podobny (ale nie identyczny) do tego:</p>
+      <code>*-network
+       description: Wireless interface
+       product: PRO/Wireless 3945ABG [Golan] Network Connection
+       vendor: Intel Corporation</code>
+    </item>
+    <item>
+      <p>Jeśli urządzenia bezprzewodowego nie ma na liście, to przejdź do <link xref="net-wireless-troubleshooting-device-drivers">kroku sterowników</link>.</p>
+      <p>Jeśli urządzenia bezprzewodowego <em>nie</em> ma na liście, to następny krok zależy od typu używanego urządzenia. Przejdź do tej sekcji poniżej, która opisuje typ adaptera bezprzewodowego w komputerze (<link xref="#pci">wewnętrzny PCI</link>, <link xref="#usb">USB</link> lub <link xref="#pcmcia">PCMCIA</link>).</p>
+    </item>
+  </steps>
+
+<section id="pci">
+  <title>Adapter bezprzewodowy PCI (wewnętrzny)</title>
+
+  <p>Wewnętrzne adaptery PCI są najczęściej używane i można je znaleźć w większości laptopów wyprodukowany w ciągu ostatnich kilku lat. Aby sprawdzić, czy adapter bezprzewodowy PCI został wykryty:</p>
+
+  <steps>
+    <item>
+      <p>Otwórz terminal, wpisz <cmd>lspci</cmd> i naciśnij klawisz <key>Enter</key>.</p>
+    </item>
+    <item>
+      <p>Przejrzyj wyświetloną listę urządzeń i poszukaj urządzeń oznaczonych jako <code>Network controller</code> (kontroler sieciowy) lub <code>Ethernet controller</code> (kontroler ethernetowy). Kilka urządzeń może być oznaczonych w ten sposób, adapter bezprzewodowy może zawierać takie słowa, jak <code>wireless</code> (bezprzewodowy), <code>WLAN</code>, <code>wifi</code> lub <code>802.11</code>. Przykład takiego wpisu:</p>
+      <code>Network controller: Intel Corporation PRO/Wireless 3945ABG [Golan] Network Connection</code>
+    </item>
+    <item>
+      <p>Jeśli na liście jest używany adapter bezprzewodowy, to przejdź do <link xref="net-wireless-troubleshooting-device-drivers">kroku sterowników</link>. Jeśli na liście nie ma niczego powiązanego z adapterem bezprzewodowym, to przejdź do <link xref="#not-recognized">instrukcji poniżej</link>.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="usb">
+  <title>Adapter bezprzewodowy USB</title>
+
+  <p>Adaptery bezprzewodowe podłączone do portu USB komputera są mniej popularne. Mogą być podłączone bezpośrednio do portu USB lub być podłączone kablem USB. Adaptery 3G/komórkowe wyglądają bardzo podobnie do adapterów bezprzewodowych (Wi-Fi), więc jeśli masz adapter USB, to upewnij się, że nie jest to adapter 3G. Aby sprawdzić, czy adapter bezprzewodowy USB został wykryty:</p>
+
+  <steps>
+    <item>
+      <p>Otwórz terminal, wpisz <cmd>lsusb</cmd> i naciśnij klawisz <key>Enter</key>.</p>
+    </item>
+    <item>
+      <p>Przejrzyj wyświetloną listę urządzeń i poszukaj tych, które mogą odnosić się do urządzenia bezprzewodowego lub sieciowego. Adapter bezprzewodowy może zawierać takie słowa, jak <code>wireless</code> (bezprzewodowy), <code>WLAN</code>, <code>wifi</code> lub <code>802.11</code>. Przykład takiego wpisu:</p>
+      <code>Bus 005 Device 009: ID 12d1:140b Huawei Technologies Co., Ltd. EC1260 Wireless Data Modem HSD USB Card</code>
+    </item>
+    <item>
+      <p>Jeśli na liście jest używany adapter bezprzewodowy, to przejdź do <link xref="net-wireless-troubleshooting-device-drivers">kroku sterowników</link>. Jeśli na liście nie ma niczego powiązanego z adapterem bezprzewodowym, to przejdź do <link xref="#not-recognized">instrukcji poniżej</link>.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="pcmcia">
+  <title>Urządzenie PCMCIA</title>
+
+  <p>Adaptery bezprzewodowe PCMCIA są zwykle prostokątnymi kartami wkładanymi do gniazda na boku laptopa. Można je znaleźć w starszych komputerach. Aby sprawdzić, czy adapter PCMCIA został wykryty:</p>
+
+  <steps>
+    <item>
+      <p>Uruchom komputer <em>bez</em> podłączonego adaptera bezprzewodowego.</p>
+    </item>
+    <item>
+      <p>Otwórz terminal i wpisz poniższe polecenie, a następnie naciśnij klawisz <key>Enter</key>:</p>
+      <code>tail -f /var/log/messages</code>
+      <p>Zostanie wyświetlona lista komunikatów związanych ze sprzętem komputera, i zostanie automatycznie zaktualizowana, jeśli coś ulegnie zmianie.</p>
+    </item>
+    <item>
+      <p>Włóż adapter bezprzewodowy do gniazda PCMCIA i zobacz, co uległo zmianie w oknie terminala. Zmiany powinny zawierać jakieś informacje o adapterze bezprzewodowym. Przejrzyj je i zobacz, czy można je zidentyfikować.</p>
+    </item>
+    <item>
+      <p>Aby zatrzymać działanie polecenia w terminalu, naciśnij klawisze <keyseq><key>Ctrl</key><key>C</key></keyseq>. Następnie można zamknąć terminal.</p>
+    </item>
+    <item>
+      <p>Jeśli znaleziono jakieś informacje o adapterze bezprzewodowym, to przejdź do <link xref="net-wireless-troubleshooting-device-drivers">kroku sterowników</link>. Jeśli nic nie znaleziono, to przejdź do <link xref="#not-recognized">instrukcji poniżej</link>.</p>
+    </item>
+  </steps>
+</section>
+
+<section id="not-recognized">
+  <title>Adapter bezprzewodowy nie został wykryty</title>
+
+  <p>Jeśli adapter bezprzewodowy nie został wykryty, to może nie działać poprawnie lub właściwe sterowniki mogą nie zostać zainstalowane. Sposób wyszukiwania i instalowania sterowników zależy od używanej dystrybucji systemu Linux (np. Ubuntu, Arch, Fedora lub openSUSE).</p>
+
+  <p>Aby uzyskać konkretną pomoc, poszukaj wsparcia na stronie używanej dystrybucji. Można znaleźć na przykład listy pocztowe i kanały IRC, na których można zapytać o swój adapter bezprzewodowy (najczęściej w języku angielskim).</p>
+
+</section>
+
+</page>

@@ -18,7 +18,7 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Et ole ehkä asentanut vaadittavia tiedostomuotoja, tai DVD voi olla väärästä sijainnista.</desc>
+    <desc>Et ole ehkä asentanut vaadittavia koodekkeja, tai DVD voi olla aluerajoitettu.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Timo Jyrinki</mal:name>
@@ -29,23 +29,23 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Jiri Grönroos</mal:name>
       <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
-      <mal:years>2012-2016.</mal:years>
+      <mal:years>2012-2018.</mal:years>
     </mal:credit>
   </info>
 
   <title>Miksi DVD:t eivät toimi?</title>
 
-  <p>Jos syötät koneeseen DVD-levyn, eikä tietokoneesi lue sitä, syinä voi olla puuttuva DVD-purkuohjelmisto (<em>koodekki</em>) tai DVD saattaa olla eri <em>alueelta</em> kuin mitä asemasi tukee.</p>
+  <p>Jos syötät tietokoneeseen DVD-levyn, eikä tietokoneesi toista sitä, syynä voi olla puuttuva DVD-purkuohjelmisto (ns. <em>koodekki</em>) tai DVD saattaa olla eri <em>alueelta</em> kuin mitä asemasi tukee.</p>
 
 <section id="codecs">
   <title>DVD-toistoon vaadittavan purkuohjelmiston asentaminen</title>
 
   <p>In order to play DVDs, you need to have the right <em>codecs</em>
   installed.  A codec is a piece of software that allows applications to read a
-  video or audio format. If your movie player software doesn't find the right
-  codecs, it may offer to install them for you. If not, you'll have to install
-  the codecs manually - ask for help on how to do this, for example on your
-  Linux distribution's support forums.</p>
+  video or audio format. If your movie player software doesn’t find the right
+  codecs, it may offer to install them for you. If not, you’ll have to install
+  the codecs manually — ask for help on how to do this, for example on your
+  Linux distribution’s support forums.</p>
 
   <p>DVDs are also <em>copy-protected</em> using a system called CSS. This
   prevents you from copying DVDs, but it also prevents you from playing them
@@ -61,19 +61,13 @@
 <section id="region">
   <title>DVD-aluekoodin tarkistaminen</title>
 
-  <p>DVDs have a <em>region code</em>, which tells you in which region of the
-  world they are allowed to be played. If the region of your computer's DVD
-  player does not match the region of the DVD you are trying to play, you won't
-  be able to play the DVD. For example, if you have a Region 1 DVD player, you
-  will only be allowed to play DVDs from North America.</p>
+  <p>Kaupallisissa DVD-elokuvissa on yleensä <em>aluekoodi</em>, joka määrittää mille maantieteellisille alueille elokuva on suunnattu. Usein DVD-asemat voivat toistaa vain samaa aluekoodia olevia levyjä. Jos käytössäsi on esimerkiksi aluekoodin 2 DVD-asema, se voi toistaa Suomesta ja muualta Euroopasta ostettuja DVD-elokuvia.</p>
 
   <p>It is often possible to change the region used by your DVD player, but it
   can only be done a few times before it locks into one region permanently. To
-  change the DVD region of your computer's DVD player, use <link href="http://linvdr.org/projects/regionset/">regionset</link>.</p>
+  change the DVD region of your computer’s DVD player, use <link href="http://linvdr.org/projects/regionset/">regionset</link>.</p>
 
-  <p>You can find
-  <link href="https://en.wikipedia.org/wiki/DVD_region_code">more information
-  about DVD region codes on Wikipedia</link>.</p>
+  <p>Lisätietoja DVD-aluekoodeista on saatavilla <link href="https://en.wikipedia.org/wiki/DVD_region_code">Wikipediasta</link>.</p>
 
 </section>
 

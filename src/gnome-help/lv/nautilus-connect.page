@@ -33,32 +33,19 @@
 
 <p>Jūs varat savienoties ar serveri vai tīkla koplietojumu, lai pārlūkotu un skatītu datnes šajā serverī tieši tāpat, kā tas būtu jūsu datorā. Tas ir ērts veids, lai internetā lejupielādētu vai augšupielādētu datnes, vai dalītos ar tām starp cilvēkiem jūsu lokālajā tīkla.</p>
 
-<p>To browse files over the network, open the <app>Files</app>
-application from the <gui>Activities</gui> overview, and click
-<gui>Other Locations</gui> in the sidebar. The file manager
-will find any computers on your local area network that advertize
-their ability to serve files. If you want to connect to a server
-on the internet, or if you do not see the computer you're looking
-for, you can manually connect to a server by typing in its
-internet/network address.</p>
+<p>Lai pārlūkotu datnes caur tīklu, atveriet <app>Datnes</app> lietotni no <gui>Aktivitātes</gui> pārskata. Tad spiediet <gui>Citas vietas</gui> sānjoslā. Datņu pārvaldnieks atradīs datorus jūsu lokālajā tīklā, kas izrāda spēju apkalpot datnes. Ja vēlaties savienoties ar internetā esošam serverim vai neredzat datoru, kuru meklējāt, jūs varat pašrocīgi savienoties ar serveri, ievadot tā interneta/tīkla adresi.</p>
 
 <steps>
   <title>Savienoties ar datņu serveri</title>
   <item><p>Datņu pārvaldniekā spiediet <gui>Citas vietas</gui> sānu joslā.</p>
   </item>
-  <item><p>In <gui>Connect to Server</gui>, enter the address of the server, in
-  the form of a
-   <link xref="#urls">URL</link>. Details on supported URLs are
-   <link xref="#types">listed below</link>.</p>
+  <item><p>Sadaļā <gui>Savienoties ar serveri</gui>, ievadiet servera adresi, <link xref="#urls">URL</link> formātā. Sīkāka informācija par atbalstītajiem URL ir pieejama <link xref="#types">sarakstā zemāk</link>.</p>
   <note>
     <p>Ja jau esat savienojies ar šo serveri iepriekš, jūs varat spiest uz tā <gui>Neseno serveru</gui> sarakstā.</p>
   </note>
   </item>
   <item>
-    <p>Click <gui>Connect</gui>. The files on the server will be shown. You
-    can browse the files just as you would for those on your own computer. The
-    server will also be added to the sidebar so you can access it quickly in
-    the future.</p>
+    <p>Spiediet <gui>Savienoties</gui>. Tiks parādītas serverī esošās datnes. Jūs varat pārlūkot datnes tāpat kā savā datorā. Serveris automātiski tiks pievienots sānjoslā un turpmāk jūs tam varēsiet ātri piekļūt.</p>
   </item>
 </steps>
 
@@ -132,10 +119,7 @@ internet/network address.</p>
 </item>
 <item>
   <title>NFS koplietojums</title>
-  <p>UNIX computers traditionally use the Network File System protocol to
-  share files over a local network. With NFS, security is based on the UID of
-  the user accessing the share, so no authentication credentials are
-  needed when connecting.</p>
+  <p>UNIX datori parasti izmanto Network File System protokolu, lai koplietotu datnes lokālajā tīklā. Ar NFS, drošība balstās uz UID lietotājam, kas mēģina piekļūt koplietojumam, tāpēc savienojoties nav nepieciešami autentificēšanās akreditācijas dati.</p>
   <p>Tipisks NFS koplietojuma URL izskatās šādi:</p>
   <example>
     <p><sys>nfs://servera_nosaukums/ceļš</sys></p>

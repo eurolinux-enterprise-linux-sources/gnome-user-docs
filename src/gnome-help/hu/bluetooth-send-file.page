@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:if="http://projectmallard.org/if/1.0/" type="guide" style="task" version="1.0 if/1.0" id="bluetooth-send-file" xml:lang="hu">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="bluetooth-send-file" xml:lang="hu">
 
   <info>
     <link type="guide" xref="bluetooth"/>
@@ -48,7 +48,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Kelemen Gábor</mal:name>
       <mal:email>kelemeng at gnome dot hu</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015, 2016, 2017</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -78,19 +78,14 @@
 
   <title>Fájlok küldése Bluetooth-eszközre</title>
 
-<if:choose>
-  <if:when test="platform:unity">
-    <p>Az összekapcsolt Bluetooth-eszközökre, például telefonokra és más számítógépekre fájlokat küldhet. Egyes eszköztípusok nem engedélyezik fájlok, vagy bizonyos típusú fájlok küldését. Fájlokat három módon küldhet: a menüsáv Bluetooth ikonjának használatával, a Bluetooth beállításai ablakból vagy közvetlenül a fájlkezelőből.</p>
-  </if:when>
   <p>Az összekapcsolt Bluetooth-eszközökre, például telefonokra és más számítógépekre fájlokat küldhet. Egyes eszköztípusok nem engedélyezik fájlok, vagy bizonyos típusú fájlok küldését. Fájlokat a Bluetooth beállításai ablakból küldhet.</p>
-</if:choose>
 
   <steps>
     <item>
       <p>Nyissa meg a <gui xref="shell-introduction#activities">Tevékenységek</gui> áttekintést, és kezdje el begépelni a <gui>Bluetooth</gui> szót.</p>
     </item>
     <item>
-      <p>Kattintson a <gui>Bluetooth</gui> ikonra a panel megnyitásához.</p>
+      <p>Kattintson a <gui>Bluetooth</gui> elemre a panel megnyitásához.</p>
     </item>
     <item>
       <p>Győződjön meg róla, hogy a Bluetooth be van kapcsolva: a címsorban lévő kapcsolónak <gui>BE</gui> állapotban kell lennie.</p>

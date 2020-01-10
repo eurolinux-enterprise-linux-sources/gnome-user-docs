@@ -28,13 +28,20 @@
       <years>2015</years>
     </credit>
 
-    <desc>Allow applications to access your accounts online for photos,
-    contacts, calendars, and more.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Mengizinkan aplikasi mengakses akun daring Anda untuk foto, kontak, kalender, dan lebih banyak lagi.</desc>
 
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Andika Triwidada</mal:name>
       <mal:email>andika@gmail.com</mal:email>
-      <mal:years>2011, 2012, 2013, 2014.</mal:years>
+      <mal:years>2011-2014, 2017.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ahmad Haris</mal:name>
+      <mal:email>ahmadharis1982@gmail.com</mal:email>
+      <mal:years>2017.</mal:years>
     </mal:credit>
   </info>
 
@@ -44,44 +51,32 @@
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Online Accounts</gui>.</p>
+      <p>Buka ringkasan <gui xref="shell-introduction#activities">Aktivitas</gui> dan mulai mengetik <gui>Akun Daring</gui>.</p>
     </item>
     <item>
-      <p>Click on <gui>Online Accounts</gui> to open the panel.</p>
+      <p>Klik pada <gui>Akun Daring</gui> untuk membuka panel.</p>
     </item>
     <item>
-      <p>Click the <gui>+</gui> button in the lower-left corner of the
-      window.</p>
+      <p>Select an account from the list on the right.</p>
     </item>
     <item>
       <p>Pilih tipe akun yang ingin Anda tambah.</p>
     </item>
     <item>
-      <p>A small website window or dialog will open where you can enter your
-      online account credentials. For example, if you are setting up a Google
-      account, enter your Google username and password. Some providers allow
-      you to create a new account from the login dialog.</p>
+      <p>Suatu dialog atau jendela situs web kecil akan terbuka dimana Anda dapat memasukkan kredensial akun daring Anda. Sebagai contoh, bila Anda menyiapkan akun Google, masukkan nama pengguna dan sandi Google Anda. Beberapa penyedia mengizinkan Anda membuat sebuah akun baru dari dialog log masuk.</p>
     </item>
     <item>
       <p>Bila Anda telah memasukkan kredensial dengan benar, Anda akan ditanya untuk mengijinkan GNOME mengakses akun daring Anda. Berikan otorisasi akses untuk melanjutkan.</p>
     </item>
     <item>
-      <p>All services that are offered by an account provider will be enabled
-      by default. <link xref="accounts-disable-service">Switch</link>
-      individual services to <gui>OFF</gui> to disable them.</p>
+      <p>Semua layanan yang ditawarkan oleh penyedia akun akan difungsikan secara baku. <link xref="accounts-disable-service">Matikan</link> layanan individu untuk menonaktifkan mereka.</p>
     </item>
   </steps>
 
-  <p>After you have added accounts, applications can use those accounts for
-  the services you have chosen to allow. See <link xref="accounts-disable-service"/>
-  for information on controlling which services to allow.</p>
+  <p>Setelah Anda menambahkan akun, aplikasi dapat menggunakan akun-akun tersebut untuk layanan yang telah Anda pilih untuk diizinkan. Lihat <link xref="accounts-disable-service"/> untuk informasi tentang mengendalikan layanan mana yang diizinkan.</p>
 
   <note style="tip">
-    <p>Many online services provide an authorization token which GNOME stores
-    instead of your password. If you remove an account, you should also revoke
-    that certificate in the online service. See <link xref="accounts-remove"/>
-    for more information.</p>
+    <p>Banyak layanan daring menyediakan suatu token otorisasi yang disimpan oleh GNOME sebagai pengganti kata sandi. Bila Anda menghapus suatu akun, Anda juga mesti mencabut sertifikat itu dalam layanan daring. Lihat <link xref="accounts-remove"/> untuk informasi lebih lanjut.</p>
   </note>
 
 </page>

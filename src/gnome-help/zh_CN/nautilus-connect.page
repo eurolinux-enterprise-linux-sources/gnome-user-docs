@@ -44,7 +44,7 @@ application from the <gui>Activities</gui> overview, and click
 <gui>Other Locations</gui> in the sidebar. The file manager
 will find any computers on your local area network that advertize
 their ability to serve files. If you want to connect to a server
-on the internet, or if you do not see the computer you're looking
+on the internet, or if you do not see the computer you’re looking
 for, you can manually connect to a server by typing in its
 internet/network address.</p>
 
@@ -106,7 +106,8 @@ internet/network address.</p>
     <p><sys>ssh://username@servername.example.com/folder</sys></p>
   </example>
 
-  <p>在使用 SSH 时，您发送的所有数据(包括密码)都是经过加密的，因此网络中的其他人不能截获它。</p>
+  <p>When using SSH, all the data you send (including your password)
+  is encrypted so that other users on your network can’t see it.</p>
 </item>
 <item>
   <title>FTP (需登录)</title>
@@ -142,7 +143,11 @@ internet/network address.</p>
 </item>
 <item>
   <title>WebDAV 和安全 WebDAV</title>
-  <p>WebDAV 基于 HTTP 协议，它有时用于局域网中共享文件，或者在互联网中存储文件。如果您连接的服务器支持加密连接，您可以选中此项。安全 WebDAV 使用更强的 SSL 加密，因此他人无法查看您的密码。</p>
+  <p>Based on the HTTP protocol used on the web, WebDAV is sometimes used to
+  share files on a local network and to store files on the internet. If the
+  server you’re connecting to supports secure connections, you should choose
+  this option. Secure WebDAV uses strong SSL encryption, so that other users
+  can’t see your password.</p>
   <p>A WebDAV URL looks like this:</p>
   <example>
     <p><sys>dav://example.hostname.com/path</sys></p>

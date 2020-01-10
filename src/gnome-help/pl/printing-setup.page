@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="printing-setup" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="printing#setup" group="#first"/>
+    <link type="seealso" xref="printing-setup-default-printer" group="#first"/>
+
+    <revision pkgversion="3.10.2" date="2013-11-03" status="candidate"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jcampbell@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Konfiguracja drukarki podłączonej do komputera.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Konfiguracja lokalnej drukarki</title>
+
+  <p>System może automatycznie wykryć wiele typów drukarek po podłączeniu. Większość drukarek jest podłączanych za pomocą kabla USB podłączanego do komputera.</p>
+
+  <note style="tip">
+    <p>Na tym etapie nie trzeba wybierać, czy ma zostać zainstalowana drukarka sieciowa lub lokalna. Są one wyświetlane razem.</p>
+  </note>
+
+  <steps>
+    <item>
+      <p>Upewnij się, że drukarka jest włączona.</p>
+    </item>
+    <item>
+      <p>Podłącz drukarkę do komputera odpowiednim kablem. Podczas wyszukiwania sterowników system może coś wyświetlać na ekranie, a także poprosić o uwierzytelnienie się, aby je zainstalować.</p>
+    </item>
+    <item>
+      <p>Po ukończeniu instalacji drukarki system wyświetli komunikat. Wybierz <gui>Wydrukuj stronę testową</gui>, aby wydrukować stronę testową lub <gui>Opcje</gui>, aby wprowadzić dodatkowe zmiany w konfiguracji drukarki.</p>
+    </item>
+  </steps>
+
+  <p>Jeśli drukarka nie została automatycznie skonfigurowana, to można ją dodać w ustawieniach drukarki:</p>
+
+  <steps>
+    <item>
+      <p>Otwórz <gui xref="shell-introduction#activities">ekran podglądu</gui> i zacznij pisać <gui>Drukarki</gui>.</p>
+    </item>
+    <item>
+      <p>Kliknij <gui>Drukarki</gui>.</p>
+    </item>
+    <item>
+      <p>Kliknij przycisk <gui>Odblokuj</gui> w górnym prawym rogu i wpisz swoje hasło.</p>
+    </item>
+    <item>
+      <p>Kliknij przycisk <gui>+</gui>.</p>
+    </item>
+    <item>
+      <p>W oknie, które zostanie otwarte, wybierz nową drukarkę. Kliknij przycisk <gui>Dodaj</gui>.</p>
+    </item>
+  </steps>
+
+  <p>Jeśli drukarki nie ma w oknie <gui>Dodanie nowej drukarki</gui>, to być może należy zainstalować dla niej sterowniki.</p>
+
+  <p>Po zainstalowaniu drukarki można <link xref="printing-setup-default-printer">zmienić domyślną</link>.</p>
+
+</page>

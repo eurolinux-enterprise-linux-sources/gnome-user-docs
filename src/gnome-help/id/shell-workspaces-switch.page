@@ -9,7 +9,7 @@
     <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
 
     <credit type="author">
-      <name>Projek Dokumentasi GNOME</name>
+      <name>Proyek Dokumentasi GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
 
@@ -20,7 +20,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Andika Triwidada</mal:name>
       <mal:email>andika@gmail.com</mal:email>
-      <mal:years>2011, 2012, 2013, 2014.</mal:years>
+      <mal:years>2011-2014, 2017.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ahmad Haris</mal:name>
+      <mal:email>ahmadharis1982@gmail.com</mal:email>
+      <mal:years>2017.</mal:years>
     </mal:credit>
   </info>
 
@@ -29,8 +35,7 @@
  <steps>  
  <title>Memakai tetikus:</title>
  <item>
-    <p if:test="!platform:gnome-classic">Open the
-    <gui xref="shell-introduction#activities">Activities</gui> overview.</p>
+    <p if:test="!platform:gnome-classic">Buka ringkasan <gui xref="shell-introduction#activities">Aktivitas</gui>.</p>
   <p if:test="platform:gnome-classic">At the top left of the screen, click the
   <gui xref="shell-introduction#activities">Applications</gui> menu and choose 
   <gui>Activities Overview</gui>.</p>
@@ -55,15 +60,15 @@
   <item>
     <p>Press
     <keyseq><key xref="keyboard-key-super">Super</key><key>Page Up</key></keyseq>
-    to move to a workspace which is above the current workspace in the
-    workspace selector.</p>
-  </item>
-  <item>
-    <p>Press <keyseq><key>Super</key><key>Page Down</key></keyseq> to move to a
-    workspace which is below the current workspace in the workspace selector.
+    or <keyseq><key>Ctrl</key><key>Alt</key><key>Up</key></keyseq> to move to
+    the workspace shown above the current workspace in the workspace selector.
     </p>
   </item>
+  <item>
+    <p>Press <keyseq><key>Super</key><key>Page Down</key></keyseq> or
+    <keyseq><key>Ctrl</key><key>Alt</key><key>Down</key></keyseq> to move to the
+    workspace shown below the current workspace in the workspace selector.</p>
+  </item>
  </list>
-
 
 </page>

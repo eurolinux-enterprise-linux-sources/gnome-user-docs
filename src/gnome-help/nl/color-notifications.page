@@ -19,27 +19,30 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>You can be notified if your color profile is old and inaccurate.</desc>
+    <desc>U kan gewaarschuwd worden als uw kleurprofiel oud en inaccuraat is.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Justin van Steijn</mal:name>
+      <mal:email>justin50@live.nl</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hannie Dumoleyn</mal:name>
+      <mal:email>hannie@ubuntu-nl.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
   </info>
 
-  <title>Can I get notified when my color profile is inaccurate?</title>
+  <title>Kan ik gewaarschuwd worden als mijn kleurprofiel inaccuraat is?</title>
 
-  <p>You can be reminded to recalibrate your devices after a specific period of
-  time. Unfortunately, it is not possible to tell without recalibrating whether
-  a device profile is accurate, so it is best to recalibrate devices
-  regularly.</p>
+  <p>Na een bepaalde tijd kunt u er aan herinnerd worden dat u uw apparaten opnieuw moet kalibreren. Helaas is het zonder opnieuw kalibreren niet mogelijk te zeggen of een apparaatprofiel nauwkeurig is; daarom is het het beste dat u uw apparaten regelmatig opnieuw kalibreert.</p>
 
-  <p>Some companies have very specific calibration expiry policies for
-  profiles, as an inaccurate color profile can make a huge difference to an end
-  product.</p>
+  <p>Sommige bedrijven voeren een streng beleid met betrekking tot de ouderdom van de kleurprofielen, omdat een inaccuraat kleurprofiel voor een eindproduct een groot verschil kan uitmaken.</p>
 
-  <p>If you set the timeout policy and a profile is older than the policy then
-  a red warning triangle will be shown in the <gui>Color</gui> panel next to
-  the profile. A warning notification will also be shown every time you log
-  into your computer.</p>
+  <p>Als u een ouderdomsbeleid instelt en een profiel is ouder dan het beleid voorschrijft, dan wordt er in het <gui>Kleur</gui>-venster een rood waarschuwingsdriehoekje naast het profiel weergegeven. Er zal ook elke keer een waarschuwingsmelding worden weergegeven wanneer u zich op de computer aanmeldt.</p>
 
-  <p>To set the policy for display and printer devices, you specify the
-  maximum age of the profile in days:</p>
+  <p>Om het beleid voor printers en weergaveapparaten in te stellen, kiest u de maximum profielouderdom in dagen:</p>
 
 <screen>
 <output style="prompt">$ </output><input>gsettings set org.gnome.settings-daemon.plugins.color recalibrate-printer-threshold 180</input>

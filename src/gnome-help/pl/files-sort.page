@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-sort" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="files#common-file-tasks"/>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-25" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Porządkowanie plików według nazw, rozmiaru, typu i daty modyfikacji.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Porządkowanie plików i katalogów</title>
+
+<p>Można uporządkować pliki w katalogu na różne sposoby, na przykład porządkując je według dat lub rozmiarów plików. <link xref="#ways"/> poniżej zawiera listę często używanych sposobów porządkowania plików. <link xref="nautilus-views"/> zawiera informacje o zmianie domyślnej kolejności porządkowania.</p>
+
+<p>Dostępne sposoby porządkowania plików zależą od używanego <em>widoku</em>. Można zmienić obecny widok za pomocą przycisków listy lub ikony na pasku narzędziowym.</p>
+
+<section id="icon-view">
+  <title>Widok ikon</title>
+
+  <p>Aby uporządkować pliki w innej kolejności, kliknij przycisk opcji widoku na pasku narzędziowym i wybierz <gui>Nazwa</gui>, <gui>Rozmiar</gui>, <gui>Typ</gui>, <gui>Data modyfikacji</gui> lub <gui>Data dostępu</gui>.</p>
+
+  <p>Na przykład, jeśli wybrano <gui>Nazwa</gui>, to pliki będą porządkowane według ich nazw w kolejności alfabetycznej. <link xref="#ways"/> opisuje inne opcje.</p>
+
+  <p>Można uporządkować w odwrotnej kolejności wybierając <gui>Odwrócona kolejność</gui> w menu.</p>
+
+</section>
+
+<section id="list-view">
+  <title>Widok listy</title>
+
+  <p>Aby uporządkować pliki w innej kolejności, kliknij jeden z nagłówków kolumn w menedżerze plików. Na przykład, kliknij <gui>Typ</gui>, aby uporządkować według typów plików. Kliknij nagłówek kolumny ponownie, aby uporządkować w odwrotnej kolejności.</p>
+  <p>W widoku listy można wyświetlić kolumny z większą liczbą atrybutów i porządkować według tych kolumn. Kliknij przycisk opcji widoku na pasku narzędziowym, wybierz <gui>Widoczne kolumny…</gui> i zaznacz kolumny, które mają być widoczne. Będzie można wtedy porządkować według tych kolumn. <link xref="nautilus-list"/> zawiera opisy dostępnych kolumn.</p>
+
+</section>
+
+<section id="ways">
+  <title>Sposoby porządkowania plików</title>
+
+  <terms>
+    <item>
+      <title>Nazwa</title>
+      <p>Porządkuje alfabetycznie według nazw plików.</p>
+    </item>
+    <item>
+      <title>Rozmiar</title>
+      <p>Porządkuje według rozmiarów plików (ile miejsca na dysku zajmują). Domyślnie porządkuje od najmniejszych do największych.</p>
+    </item>
+    <item>
+      <title>Typ</title>
+      <p>Porządkuje alfabetycznie według typów plików. Pliki tego samego typu są grupowane razem, a następnie porządkowane według nazw.</p>
+    </item>
+    <item>
+      <title>Ostatnia modyfikacja</title>
+      <p>Porządkuje według daty i czasu ostatniej zmiany pliku. Domyślnie porządkuje od najstarszych do najnowszych.</p>
+    </item>
+  </terms>
+
+</section>
+
+</page>

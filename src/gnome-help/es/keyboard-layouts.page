@@ -40,7 +40,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2011 - 2016</mal:years>
+      <mal:years>2011 - 2018</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -77,6 +77,19 @@
       <p>Pulse el botón <key>+</key> en la sección <gui>Fuentes de entrada</gui>, seleccione el idioma asociado a la distribución, seleccione una distribución y pulse <gui>Añadir</gui>.</p>
     </item>
   </steps>
+
+  <note style="tip">
+    <p>If there are multiple user accounts on your system, there is a separate
+    instance of the <gui>Region &amp; Language</gui> panel for the login screen.
+    Click the <gui>Login Screen</gui> button at the top right to toggle between
+    the two instances.</p>
+
+    <p>Some rarely used keyboard layout variants are not available by default when you click
+    the <gui>+</gui> button. To make also those input sources available you can open a terminal
+    window by pressing <keyseq><key>Ctrl</key><key>Alt</key><key>T</key></keyseq>
+    and run this command:</p>
+    <p><cmd its:translate="no">gsettings set org.gnome.desktop.input-sources show-all-sources true</cmd></p>
+  </note>
 
   <note style="sidebar">
     <p>Puede previsualizar una imagen de cualquier distribución seleccionándola en la lista de <gui>Fuentes de entrada</gui> y pulsando <gui><media its:translate="no" type="image" src="figures/input-keyboard-symbolic.png" width="16" height="16"><span its:translate="yes">vista previa</span></media></gui></p>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="power-dim-screen" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="user-settings"/>
+    <link type="seealso" xref="dconf-profiles"/>
+    <link type="seealso" xref="dconf-lockdown"/>
+    <revision pkgversion="3.12" date="2014-06-20" status="candidate"/>
+
+    <credit type="author copyright">
+      <name>Matthias Clasen</name>
+      <email>matthias.clasen@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Jana Svarova</name>
+      <email>jana.svarova@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+
+    <desc>Faça a tela escurecer após uma quantidade específica de tempo quando usuário estiver inativo.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Escurecendo a tela quando o usuário está inativo</title>
+
+  <p>Você pode fazer a tela do computador escurecer após o computador estar inativo (não usado) para algum período de tempo.</p>
+
+  <steps>
+    <title>Escurecendo a tela do computador inativo</title>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-user'])"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-user-dir'])"/>
+    <item>
+      <p>Crie o arquivo de chave <file>/etc/dconf/db/local.d/00-power</file> para fornecer informações para o banco de dados de <sys>local</sys>.</p>
+      <listing>
+        <title><file>/etc/dconf/db/local.d/00-power</file></title>
+<code>
+# Especifica o caminho dconf
+[org/gnome/settings-daemon/plugins/power]
+
+# Habilita o escurecimento de tela
+idle-dim=true
+
+# Configure o brilho após escurecimento
+idle-brightness=30
+</code>
+      </listing>
+    </item>
+    <item>
+      <p>Crie o arquivo de chave <file>/etc/dconf/db/local.d/00-session</file> para fornecer informações para o banco de dados de <sys>local</sys>.</p>
+      <listing>
+        <title><file>/etc/dconf/db/local.d/00-session</file></title>
+<code>
+# Especifica o caminho dconf
+[org/gnome/desktop/session]
+
+# O número de segundos de inatividade antes da sessão ser considerada como inativa
+idle-delay=uint32 300
+</code>
+      </listing>
+      <p>Você deve incluir o <code>uint32</code> junto com os valores inteiros da chave como mostrado.</p>
+    </item>
+    <item>
+      <p>Para evitar que o usuário sobrescreva essas configurações, crie o arquivo <file>/etc/dconf/db/local.d/locks/power-saving</file> com o seguinte conteúdo:</p>
+      <listing>
+        <title><file>/etc/dconf/db/local.db/locks/power-saving</file></title>
+<code>
+# Trava tempo limite de inativo e de escurecimento a tela
+/org/gnome/settings-daemon/plugins/power/idle-dim
+/org/gnome/settings-daemon/plugins/power/idle-brightness
+/org/gnome/desktop/session/idle-delay
+</code>
+      </listing>
+      <p>Se você deseja que o usuário altere essas configurações, ignore esta etapa.</p>
+    </item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-logoutin'])"/>
+  </steps>
+
+</page>

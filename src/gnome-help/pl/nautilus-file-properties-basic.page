@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-file-properties-basic" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="files#more-file-tasks"/>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Wyświetlanie podstawowych informacji o pliku, ustawianie uprawnień i wybieranie domyślnych programów.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Właściwości pliku</title>
+
+  <p>Aby wyświetlić informacje o pliku lub katalogu, kliknij go prawym przyciskiem myszy i wybierz <gui>Właściwości</gui>. Można także zaznaczyć plik i nacisnąć klawisze <keyseq><key>Alt</key><key>Enter</key></keyseq>.</p>
+
+  <p>Okno właściwości pliku wyświetla takie informacje, jak typ pliku, jego rozmiar i czas ostatniej modyfikacji. Jeśli te informacje są często potrzebne, to można je wyświetlać w <link xref="nautilus-list">kolumnach widoku listy</link> lub <link xref="nautilus-display#icon-captions">podpisach ikon</link>.</p>
+
+  <p>Poniżej wyjaśnione są informacje podawane w karcie <gui>Podstawowe</gui>. Dostępne są także karty <gui><link xref="nautilus-file-properties-permissions">Uprawnienia</link></gui> i <gui><link xref="files-open#default">Otwieranie</link></gui>. Pewne typy plików, takie jak obrazy i filmy, mają dodatkową kartę zawierającą takie informacje, jak wymiary, czas trwania i kodek.</p>
+
+<section id="basic">
+ <title>Podstawowe właściwości</title>
+ <terms>
+  <item>
+    <title><gui>Nazwa</gui></title>
+    <p>Można zmienić nazwę pliku zmieniając to pole. Można także zmienić nazwę pliku poza oknem właściwości, jak opisano w <link xref="files-rename"/>.</p>
+  </item>
+  <item>
+    <title><gui>Typ</gui></title>
+    <p>Pomaga to zidentyfikować typ pliku, np. dokument PDF, plik tekstowy OpenDocument lub obraz JPEG. Typ pliku określa między innymi, które programy mogą go otwierać. Na przykład, nie da się otworzyć zdjęcia w odtwarzaczu muzyki. <link xref="files-open"/> zawiera więcej informacji na ten temat.</p>
+    <p><em>Typ MIME</em> pliku jest wyświetlany w nawiasie. Jest to standardowy sposób, w jaki komputery odnoszą się do typu pliku.</p>
+  </item>
+
+  <item>
+    <title>Zawartość</title>
+    <p>To pole jest wyświetlane we właściwościach katalogu (nie pliku). Pomaga określić liczbę elementów w katalogu. Jeśli katalog zawiera inne katalogi, to każdy wewnętrzny katalog jest liczony jako jeden element, nawet jeśli zawiera on więcej elementów. Każdy plik jest także liczony jako jeden element. Jeśli katalog jest pusty, to pole zawartości będzie wyświetlało <gui>nic</gui>.</p>
+  </item>
+
+  <item>
+    <title>Rozmiar</title>
+    <p>To pole jest wyświetlane we właściwościach pliku (nie katalogu). Rozmiar pliku mówi, ile miejsca na dysku on zajmuje. Jest to także wskaźnik, jak długo będzie trwało jego pobieranie lub wysyłanie w wiadomości e-mail (wysyłanie/odbieranie dużych plików zajmuje więcej czasu).</p>
+    <p>Rozmiar może być podawany w bajtach, KB, MB lub GB. W przypadku tych trzech ostatnich w nawiasie podawany jest także rozmiar w bajtach. 1 KB to 1024 bajty, 1 MB to 1024 KB i tak dalej.</p>
+  </item>
+
+  <item>
+    <title>Katalog nadrzędny</title>
+    <p>Położenie każdego pliku na komputerze jest określane przez jego <em>ścieżkę bezwzględną</em>. To unikalny „adres” pliku na komputerze, utworzony z listy katalogów, do których trzeba by było przejść, aby go odnaleźć. Na przykład, jeśli Alicja ma plik o nazwie <file>CV.pdf</file> w swoim katalogu domowym, to katalogiem nadrzędny jest <file>/home/alicja</file>, a położeniem <file>/home/alicja/CV.pdf</file>.</p>
+  </item>
+
+  <item>
+    <title>Wolne miejsce</title>
+    <p>To pole jest wyświetlane tylko we właściwościach katalogu. Zawiera ono ilość dostępnego miejsca na dysku, na którym znajduje się katalog. Jest to przydatne do sprawdzania, czy dysk twardy jest zapełniony.</p>
+  </item>
+
+  <item>
+    <title>Dostęp</title>
+    <p>Data i czas ostatniego otwarcia pliku.</p>
+  </item>
+
+  <item>
+    <title>Modyfikacja</title>
+    <p>Data i czas ostatniej zmiany i zapisu pliku.</p>
+  </item>
+ </terms>
+</section>
+
+</page>

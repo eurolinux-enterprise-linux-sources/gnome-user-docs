@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="dconf-keyfiles" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="setup"/>
+<!--    <link type="seealso" xref="dconf-profiles" />-->
+    <revision pkgversion="3.9" date="2013-08-06" status="stub"/>
+
+    <credit type="author copyright">
+      <name>Ryan Lortie</name>
+      <email>desrt@desrt.ca</email>
+      <years>2012</years>
+    </credit>
+    <credit type="author">
+      <name>Aruna Sankaranarayanan</name>
+      <email>aruna.evam@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Använd <sys its:translate="no">dconf</sys>-<em>nyckelfiler</em> för att konfigurera specifika inställningar med en textredigerare.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Styra systeminställningar med nyckelfiler</title>
+
+  <p>Systemdatabasfiler finns i <file its:translate="no">/etc/dconf/db</file>, och kan inte redigeras eftersom de är skrivna i GVDB-format. För att ändra systeminställningar med en textredigerare kan du ändra <em>nyckelfiler</em> som finns i <em>nyckelfilskataloger</em>. Varje nyckelfilskatalog motsvarar en specifik systemdatabasfil, och har samma namn som databasfilen med ändelsen ”.d” tillagd (till exempel <file>/etc/dconf/db/local.d</file>). Alla nyckelfilskataloger finns i <file its:translate="no">/etc/dconf/db</file>, och var och en innehåller nyckelfiler i ett speciellt format som kan kompileras in i <sys its:translate="no">dconf</sys>-databasen.</p>
+
+  <listing>
+    <title>En nyckelfil i denna katalog kommer likna det här:</title>
+      <code>
+# Användbara standardinställningar för vår webbplats
+
+[system/proxy/http]
+host='172.16.0.1'
+enabled=true
+
+[org/gnome/desktop/background]
+picture-uri='file:///usr/local/rupert-corp/company-wallpaper.jpeg'
+      </code>
+  </listing>
+
+  <note style="important">
+    <p><cmd>dconf update</cmd> måste köras när du modifierar en nyckelfil. Då du gör detta jämför <sys its:translate="no">dconf</sys> tidsstämpeln på en systemdatabasfil med tidsstämpeln för motsvarande nyckelfilskatalog. Om tidsstämpeln för nyckelfilskatalogen är nyare än den på databasfilen så genererar <sys its:translate="no">dconf</sys> <code>system-db</code>-filen på nytt och skickar en avisering till systemets <sys>Dbus</sys>, vilken i sin tur aviserar alla körande program att läsa om sina inställningar.</p>
+  </note>
+
+</page>

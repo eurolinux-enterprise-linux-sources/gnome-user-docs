@@ -46,7 +46,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Jiri Grönroos</mal:name>
       <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
-      <mal:years>2012-2016.</mal:years>
+      <mal:years>2012-2018.</mal:years>
     </mal:credit>
   </info>
 
@@ -56,11 +56,10 @@
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Region &amp; Language</gui>.</p>
+      <p>Avaa <gui xref="shell-introduction#activities">Toiminnot</gui>-yleisnäkymä ja ala kirjoittamaan <gui>Alue ja kielet</gui>.</p>
     </item>
     <item>
-      <p>Click on <gui>Region &amp; Language</gui> to open the panel.</p>
+      <p>Napsauta <gui>Alue ja kielet</gui> avataksesi paneelin.</p>
     </item>
     <item>
       <p>Click the <gui>+</gui> button in the <gui>Input Sources</gui> section,
@@ -68,6 +67,19 @@
       layout and press <gui>Add</gui>.</p>
     </item>
   </steps>
+
+  <note style="tip">
+    <p>If there are multiple user accounts on your system, there is a separate
+    instance of the <gui>Region &amp; Language</gui> panel for the login screen.
+    Click the <gui>Login Screen</gui> button at the top right to toggle between
+    the two instances.</p>
+
+    <p>Some rarely used keyboard layout variants are not available by default when you click
+    the <gui>+</gui> button. To make also those input sources available you can open a terminal
+    window by pressing <keyseq><key>Ctrl</key><key>Alt</key><key>T</key></keyseq>
+    and run this command:</p>
+    <p><cmd its:translate="no">gsettings set org.gnome.desktop.input-sources show-all-sources true</cmd></p>
+  </note>
 
   <note style="sidebar">
     <p>You can preview an image of any layout by selecting it in the list of
@@ -85,7 +97,7 @@
 
   <p>When you use multiple layouts, you can choose to have all windows use the
   same layout or to set a different layout for each window. Using a different
-  layout for each window is useful, for example, if you're writing an article
+  layout for each window is useful, for example, if you’re writing an article
   in another language in a word processor window. Your keyboard selection will
   be remembered for each window as you switch between windows. Press the
   <gui style="button">Options</gui> button to select how you want to manage

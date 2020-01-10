@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" version="1.0 if/1.0" id="bluetooth-turn-on-off" xml:lang="id">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="bluetooth-turn-on-off" xml:lang="id">
 
   <info>
     <link type="guide" xref="bluetooth" group="#first"/>
@@ -41,75 +41,47 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Andika Triwidada</mal:name>
       <mal:email>andika@gmail.com</mal:email>
-      <mal:years>2011, 2012, 2013, 2014.</mal:years>
+      <mal:years>2011-2014, 2017.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ahmad Haris</mal:name>
+      <mal:email>ahmadharis1982@gmail.com</mal:email>
+      <mal:years>2017.</mal:years>
     </mal:credit>
   </info>
 
 <title>Nyalakan atau matikan Bluetooth</title>
 
-<if:choose>
-  <if:when test="platform:unity">
-    <p>You can turn Bluetooth on to connect to other Bluetooth devices, or turn
-    it off to conserve power. To turn Bluetooth on, click the Bluetooth icon in
-    the menu bar and switch <gui>Bluetooth</gui> to <gui>ON</gui>.</p>
-  </if:when>
-
-  <p>You can turn Bluetooth on to connect to other Bluetooth devices, or turn
-  it off to conserve power. To turn Bluetooth on:</p>
+  <p>Anda dapat menyalakan Bluetooth untuk menyambung ke perangkat Bluetooth lain, atau mematikannya untuk menghemat daya. Untuk menyalakan Bluetooth:</p>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Bluetooth</gui>.</p>
+      <p>Buka ringkasan <gui xref="shell-introduction#activities">Aktivitas</gui> dan mulai mengetik <gui>Bluetooth</gui>.</p>
     </item>
     <item>
-      <p>Click on <gui>Bluetooth</gui> to open the panel.</p>
+      <p>Klik pada <gui>Bluetooth</gui> untuk membuka panel.</p>
     </item>
     <item>
-      <p>Set the switch at the top to <gui>ON</gui>.</p>
+      <p>Atur saklar di puncak ke <gui>NYALA</gui>.</p>
     </item>
   </steps>
-</if:choose>
 
-<if:choose>
-  <if:when test="platform:unity">
-    <p>Banyak komputer laptop memiliki tombol perangkat keras atau kombinasi tombol untuk menyalakan dan mematikan Bluetooth. Jika perangkat keras Bluetooth dinonaktifkan, Anda tidak akan melihat ikon Bluetooth di bilah menu. Carilah sebuah tombol di komputer Anda atau tombol pada papan tik Anda. Tombol papan tik sering diakses dengan bantuan tombol <key>Fn</key>.</p>
-  </if:when>
-  <p>Many laptop computers have a hardware switch or key combination to turn
-  Bluetooth on and off. Look for a switch on your computer or a key on your
-  keyboard. The keyboard key is often accessed with the help of the
-  <key>Fn</key> key.</p>
-</if:choose>
+  <p>Banyak komputer laptop memiliki tombol perangkat keras atau kombinasi tombol untuk menyalakan dan mematikan Bluetooth. Carilah sebuah tombol di komputer Anda atau tombol pada papan tik Anda. Tombol papan tik sering diakses dengan bantuan tombol <key>Fn</key>.</p>
 
-<if:choose>
-  <if:when test="platform:unity">
-    <p>To turn Bluetooth off, click the Bluetooth icon and switch
-    <gui>Bluetooth</gui> to <gui>OFF</gui>.</p>
-  </if:when>
   <p>Untuk mematikan Bluetooth:</p>
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#yourname">system menu</gui> from the
-      right side of the top bar.</p>
+      <p>Buka <gui xref="shell-introduction#yourname">menu sistem</gui> pada bagian kanan dari bilah atas.</p>
     </item>
     <item>
-      <p>Select
-      <gui><media its:translate="no" type="image" mime="image/svg" src="figures/bluetooth-active-symbolic.svg"/>
-      Not In Use</gui>. The Bluetooth section of the menu will expand.</p>
+      <p>Pilih <gui><media its:translate="no" type="image" mime="image/svg" src="figures/bluetooth-active-symbolic.svg"/> Tidak Digunakan</gui>. Area menu Bluetooth akan ditampilkan.</p>
     </item>
     <item>
       <p>Pilih <gui>Matikan</gui>.</p>
     </item>
   </steps>
-</if:choose>
 
-<if:choose>
-  <if:when test="platform:unity">
-    <note><p>Your computer is <link xref="bluetooth-visibility">visible</link>
-    if <gui>Visible</gui> is switched to <gui>ON</gui> in the Bluetooth
-    menu.</p></note>
-  </if:when>
   <note><p>Komputer Anda <link xref="bluetooth-visibility">nampak</link> selama panel <gui>Bluetooth</gui> terbuka.</p></note>
-</if:choose>
 
 </page>

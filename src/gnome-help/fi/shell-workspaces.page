@@ -26,7 +26,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Jiri Grönroos</mal:name>
       <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
-      <mal:years>2012-2016.</mal:years>
+      <mal:years>2012-2018.</mal:years>
     </mal:credit>
   </info>
 
@@ -36,49 +36,34 @@
         <p>Työtilan valinta</p>
     </media>
 
-  <p if:test="!platform:gnome-classic">Workspaces refer to the grouping of
-  windows on your desktop. You can create multiple workspaces, which act like
-  virtual desktops. Workspaces are meant to reduce clutter and make the desktop
-  easier to navigate.</p>
+  <p if:test="!platform:gnome-classic">Työtilat viittaavat ikkunoiden ryhmittämiseen työpöydällä. Voit luoda useita työtiloja, jotka toimivat kuten virtuaaliset työpöydät. Työpöytien on tarkoitus helpottaa ikkunoiden kanssa työskentelyä ja tehdä työpöydällä liikkumisesta aiempaa helpompaa.</p>
 
-  <p if:test="platform:gnome-classic">Workspaces refer to the grouping of
-  windows on your desktop. You can use multiple workspaces, which act like
-  virtual desktops. Workspaces are meant to reduce clutter and make the desktop
-  easier to navigate.</p>
+  <p if:test="platform:gnome-classic">Työtilat viittaavat ikkunoiden ryhmittämiseen työpöydällä. Voit käyttää useita työtiloja, jotka toimivat kuten virtuaaliset työpöydät. Työpöytien on tarkoitus helpottaa ikkunoiden kanssa työskentelyä ja tehdä työpöydällä liikkumisesta aiempaa helpompaa.</p>
 
   <p>Järjestä esimerkiksi tiettyyn käyttöön tarkoitetut sovellukset omiin työtiloihin. Sähköposti ja pikaviestin ensimmäisessä työtilassa, toisessa työtilassa musiikkisovellus, kolmannessa työtilassa kuvat jne.</p>
 
-<p>Using workspaces:</p>
+<p>Työtilojen käyttäminen:</p>
 
 <list>
   <item>
-    <p if:test="!platform:gnome-classic">In the
-    <gui xref="shell-introduction#activities">Activities</gui> overview, move your cursor
-    to the right-most side of the screen.</p>
+    <p if:test="!platform:gnome-classic">Siirrä hiiren osoitin näytön oikeaan laitaan <gui xref="shell-introduction#activities">Toiminnot</gui>-yleisnäkymässä.</p>
     <p if:test="platform:gnome-classic">Press the
     <key xref="keyboard-key-super">Super</key> key to open the
     <gui>Activities</gui> overview and then move your cursor to the right-most
     side of the screen.</p>
   </item>
   <item>
-    <p if:test="!platform:gnome-classic">A vertical panel will appear showing
-    workspaces in use, plus an empty workspace. This is the
-    workspace selector.</p>
-    <p if:test="platform:gnome-classic">A vertical panel will appear showing
-    available workspaces. This is the workspace selector.</p>
+    <p if:test="!platform:gnome-classic">Pystytasossa oleva paneeli ilmestyy, ja siinä näkyy käytössä olevat työtilat sekä tyhjä työtila. Tämä on työtilanvalitsin.</p>
+    <p if:test="platform:gnome-classic">Pystytasossa oleva paneeli ilmestyy, ja siinä näkyy käytettävissä olevat työtilat. Tämä on työtilanvalitsin.</p>
   </item>
   <item if:test="!platform:gnome-classic">
-    <p>To add a workspace, drag and drop a window from an existing workspace
-    onto the empty workspace in the workspace selector. This workspace now
-    contains the window you have dropped,
-    and a new empty workspace will appear below it.</p>
+    <p>Lisää uusi työtila vetämällä ja pudottamalla ikkuna olemassa olevasta työtilasta tyhjään työtilaan työtilanvaihtimessa. Työtilassa on nyt se ikkuna, jonka sinne pudotit, ja tämän työtilan alle ilmestyy tyhjä työtila.</p>
   </item>
   <item if:test="!platform:gnome-classic">
-    <p>To remove a workspace, simply close all of its windows or move them to
-    other workspaces.</p>
+    <p>Poista työtila sulkemalla kaikki siinä olevat ikkunat tai siirtämällä kyseiset ikkunat toiseen työtilaan.</p>
   </item>
 </list>
 
-<p if:test="!platform:gnome-classic">There is always at least one workspace.</p>
+<p if:test="!platform:gnome-classic">Työtiloja on aina vähintään yksi.</p>
 
 </page>

@@ -10,6 +10,7 @@
 
     <revision pkgversion="3.7.1" version="0.2" date="2012-11-16" status="outdated"/>
     <revision pkgversion="3.10" date="2013-11-04" status="candidate"/>
+    <revision pkgversion="3.28" date="2018-04-05" status="review"/>
 
     <credit type="author">
       <name>Richard Hughes</name>
@@ -26,7 +27,7 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Calibrating your scanner is important to capture accurate colors.</desc>
+    <desc>Calibrar l'escàner és important per capturar colors precisos.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>David Aguilera</mal:name>
@@ -35,37 +36,40 @@
     </mal:credit>
   </info>
 
-  <title>How do I calibrate my scanner?</title>
+  <title>Com calibro el meu escànner?</title>
 
-  <p>If you want your scanner to represent the color accurately in scans, you
-  should calibrate it.</p>
+  <p>Si voleu que el vostre escàner representi el color amb precisió en els escaneigs, heu de calibrar-lo.</p>
 
   <steps>
     <item>
-      <p>Make sure your scanner is connected to your computer with a cable or
-      over the network.</p>
+      <p>Assegureu-vos que l'escàner estigui connectat a l'ordinador amb un cable o a través de la xarxa.</p>
     </item>
     <item>
-      <p>Scan your calibration target and save it as an uncompressed TIFF
-      file.</p>
+      <p>Escanegeu el vostre objectiu de calibratge i deseu-lo com a fitxer TIFF no comprimit.</p>
     </item>
     <item>
       <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Color</gui>.</p>
+      start typing <gui>Settings</gui>.</p>
     </item>
     <item>
-      <p>Click on <gui>Color</gui> to open the panel and select your
-      scanner.</p>
+      <p>Click on <gui>Settings</gui>.</p>
     </item>
     <item>
-      <p>Press <gui style="button">Calibrate…</gui> to commence the
-      calibration.</p>
+      <p>Click <gui>Devices</gui> in the sidebar.</p>
+    </item>
+    <item>
+      <p>Click <gui>Color</gui> in the sidebar to open the panel.</p>
+    </item>
+    <item>
+      <p>Select your scanner.</p>
+    </item>
+    <item>
+      <p>Premeu <gui style="button">Calibrar…</gui> per iniciar la calibració.</p>
     </item>
   </steps>
 
   <note style="tip">
-    <p>Scanner devices are incredibly stable over time and temperature, so do
-    not usually need to be recalibrated.</p>
+    <p>Els dispositius d'escàner són increïblement estables al llarg del temps i temperatura, de manera que generalment no cal recalibrar-los.</p>
   </note>
 
 </page>

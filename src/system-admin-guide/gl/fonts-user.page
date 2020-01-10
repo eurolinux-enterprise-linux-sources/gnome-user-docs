@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="fonts-user" xml:lang="gl">
+
+  <info>
+    <link type="guide" xref="appearance"/>
+    <revision pkgversion="3.11" date="2014-01-29" status="draft"/>
+
+    <credit type="author copyright">
+      <name>Matthias Clasen</name>
+      <email>matthias.clasen@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Jana Svarova</name>
+      <email>jana.svarova@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Engadir tipos de letra adicionais para usuarios individuais.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Diéguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2010-2018</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Engadir un tipo de letra adicional para usuarios individuais</title>
+
+  <p>You can install an extra font which will be available to a specific user
+  on your system in applications that use <sys>fontconfig</sys> for
+  font handling.</p>
+
+  <steps>
+    <title>Instalar un tipo de letra adicional</title>
+    <item>
+      <p>Copie o tipo de letra no cartafol <file>~/.local/share/fonts/</file> para instalala.</p>
+    </item>
+    <item>
+      <p>You may need to run the following command to update the font cache:</p>
+      <screen><output>$ </output><input>fc-cache ~/.local/share/fonts</input></screen>
+    </item>
+  </steps>
+
+  <p>You may need to restart running applications to see the changes. User
+  sessions do not need to be restarted.</p>
+
+</page>

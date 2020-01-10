@@ -8,6 +8,7 @@
     <revision pkgversion="3.4.0" date="2012-03-13" status="final"/>
     <revision pkgversion="3.15" date="2014-12-04" status="final"/>
     <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.24" date="2017-03-26" status="final"/>
 
     <credit type="author">
       <name>Jim Campbell</name>
@@ -42,13 +43,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Christian Kirbach</mal:name>
       <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2016.</mal:years>
+      <mal:years>2011-2017.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Mario Blättermann</mal:name>
       <mal:email>mario.blaettermann@gmail.com</mal:email>
-      <mal:years>2011-2013.</mal:years>
+      <mal:years>2011-2013, 2017.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -60,9 +61,10 @@
 
   <title>Eine Verbindung über eine feste IP-Adresse herstellen</title>
 
-  <p>Die meisten Netzwerke weisen Ihrem Rechner automatisch eine <link xref="net-what-is-ip-address">IP-Adresse</link> und andere Einzelheiten zu, sobald Sie sich mit diesem Netzwerk verbinden. Diese Details können sich von Zeit zu Zeit ändern, Sie könnten also eine feste IP-Adresse für Ihren Rechner haben wollen, damit Sie seine IP-Adresse immer kennen (zum Beispiel wenn es sich um einen Dateiserver handelt).</p> <p>So geben Sie Ihrem Rechner eine feste (statische) IP-Adresse:</p>
+  <p>Die meisten Netzwerke weisen Ihrem Rechner automatisch eine <link xref="net-what-is-ip-address">IP-Adresse</link> und andere Einzelheiten zu, sobald Sie sich mit diesem Netzwerk verbinden. Diese Details können sich von Zeit zu Zeit ändern, Sie könnten also eine feste IP-Adresse für Ihren Rechner haben wollen, damit Sie seine IP-Adresse immer kennen (zum Beispiel wenn es sich um einen Dateiserver handelt).</p>
 
   <steps>
+    <title>So geben Sie Ihrem Rechner eine feste (statische) IP-Adresse:</title>
     <item>
       <p>Öffnen Sie die <gui xref="shell-introduction#activities">Aktivitäten</gui>-Übersicht und tippen Sie <gui>Netzwerk</gui>.</p>
     </item>
@@ -70,16 +72,19 @@
       <p>Klicken Sie auf <gui>Netzwerk</gui>, um das Panel zu öffnen.</p>
     </item>
     <item>
-      <p>Wählen Sie im linken Teilfenster die Netzwerkverbindung, für die Sie eine feste Adresse vergeben wollen. Wenn Sie ein kabelgebundenes Netzwerk anschließen, klicken Sie auf <gui>Kabelgebunden</gui> und anschließend auf den <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">Einstellungen</span></media>-Knopf. Im Falle einer <gui>WLAN</gui>-Verbindung befindet sich der Knopf <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">Einstellungen</span></media> neben dem aktiven Netzwerk.</p>
+      <p>Wählen Sie im linken Teilfenster die Netzwerkverbindung, für die Sie eine feste Adresse vergeben wollen. Wenn Sie ein kabelgebundenes Netzwerk anschließen, klicken Sie auf <gui>Kabelgebunden</gui> und anschließend auf den <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">Einstellungen</span></media>-Knopf in der rechten unteren Ecke des Panels. Im Falle einer <gui>WLAN</gui>-Verbindung befindet sich der Knopf <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">Einstellungen</span></media> neben dem aktiven Netzwerk.</p>
     </item>
     <item>
-      <p>Klicken Sie auf den Reiter <gui>IPv4</gui> oder auf <gui>IPv6</gui> und ändern Sie <gui>Adressen</gui> auf <em>Manuell</em>.</p>
+      <p>Klicken Sie auf <gui>IPv4</gui> oder <gui>IPv6</gui> in der linken Seitenleiste und ändern Sie <gui>Adressen</gui> auf <em>Manuell</em>.</p>
     </item>
     <item>
-      <p>Geben Sie die Daten zu <em>Adresse</em>, <em>Netzmaske</em> und <em>Gateway</em> in die entsprechenden Felder ein. Welche Einstellungen Sie konkret wählen, hängt von Ihrem Netzwerkaufbau ab. Es gibt bestimmte Regeln, welche IP-Adressen und Netzmasken in einem bestimmten Netzwerk gültig sind.</p>
+      <p>Geben Sie <gui xref="net-what-is-ip-address">IP-Adresse</gui> und <gui>Gateway</gui> sowie die entsprechende <gui>Netzmaske</gui> ein.</p>
     </item>
     <item>
-      <p>Wenn nötig, tragen Sie die Adresse des <em>Domain Name Servers</em> im <gui>DNS-Server</gui>-Feld ein. Das ist die IP-Adresse eines Servers, der Domain-Namen auflöst; die meisten Unternehmensnetzwerke und Internet-Dienstanbieter haben dedizierte DNS-Server.</p>
+      <p>Stellen Sie <gui>Automatisch</gui> im Abschnitt <gui>DNS</gui> auf <gui>AUS</gui>. Geben Sie die IP-Adresse des DNS-Servers ein, den Sie verwenden möchten. Geben Sie zusätzliche DNS-Server-Adressen mit Hilfe des Knopfes <key>+</key> ein.</p>
+    </item>
+    <item>
+      <p>Stellen Sie <gui>Automatisch</gui> im Abschnitt <gui>Routen</gui> auf <gui>AUS</gui>. Geben Sie <gui>Adresse</gui>, <gui>Netzmaske</gui>, <gui>Gateway</gui> und <gui>Metrik</gui> für eine Route ein, die Sie verwenden möchten. Geben Sie zusätzliche Routen mit Hilfe des Knopfes <key>+</key> ein.</p>
     </item>
     <item>
       <p>Klicken Sie auf <gui>Anwenden</gui>. Die Netzwerkverbindung sollte nun eine feste IP-Adresse haben.</p>

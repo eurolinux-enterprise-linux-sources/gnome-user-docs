@@ -5,58 +5,38 @@
 
     <link type="guide" xref="color#calibration"/>
 
-    <desc>Calibration and characterization are different things entirely.</desc>
+    <desc>Kalibratie en karakterisering zijn totaal verschillende dingen.</desc>
 
     <credit type="author">
       <name>Richard Hughes</name>
       <email>richard@hughsie.com</email>
     </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Justin van Steijn</mal:name>
+      <mal:email>justin50@live.nl</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hannie Dumoleyn</mal:name>
+      <mal:email>hannie@ubuntu-nl.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
   </info>
 
-  <title>What's the difference between calibration and characterization?</title>
-  <p>
-    Many people are initially confused about the difference between calibration
-    and characterization.
-    Calibration is the process of modifying the color behavior of a device.
-    This is typically done using two mechanisms:
-  </p>
+  <title>Wat is het verschil tussen kalibreren en karakteriseren?</title>
+  <p>Veel mensen kennen het verschil tussen kalibreren en karakteriseren niet. Kalibreren is het aanpassen van het kleurgedrag van een apparaat. Dit gebeurt meestal met het gebruik van twee mechanismen:</p>
   <list>
-    <item><p>Changing controls or internal settings that it has</p></item>
-    <item><p>Applying curves to its color channels</p></item>
+    <item><p>Het aanpassen van interne instellingen van het apparaat</p></item>
+    <item><p>Het vervormen van de kleurkanalen</p></item>
   </list>
-  <p>
-    The idea of calibration is to put a device in a defined state with regard
-    to its color response.
-    Often this is used as a day to day means of maintaining reproducible behavior.
-    Typically calibration will be stored in device or systems specific file
-    formats that record the device settings or per-channel calibration curves.
-  </p>
-  <p>
-    Characterization (or profiling) is <em>recording</em> the way
-    a device reproduces or responds to color.
-    Typically the result is stored in a device ICC profile.
-    Such a profile does not in itself modify color in any way.
-    It allows a system such as a CMM (Color Management Module) or a color aware
-    application to modify color when combined with another device profile.
-    Only by knowing the characteristics of two devices, can a way of
-    transferring color from one device representation to another be achieved.
-  </p>
+  <p>Het idee van kalibreren is om de kleurreactie van apparaten in een voorgedefinieerde staat te brengen. Dit wordt vaak gebruikt om het reproduceerbare gedrag van het apparaat van dag tot dag te behouden. Het resultaat van de kalibratie wordt normaal in het apparaat opgeslagen of in systeem-specifieke bestanden met daarin opgeslagen de apparaatinstellingen of kalibratiecurves per kanaal.</p>
+  <p>Karakteriseren (of profileren) is het <em>opnemen</em> van de manier waarop een apparaat een kleur produceert of op een kleur reageert. De resultaten worden normaal opgeslagen in een ICC-profiel voor het apparaat. Zo'n profiel kan uit zichzelf geen kleuren aanpassen. Maar met zo'n profiel kan een systeem zoals een CMM (color management module) of een kleur-bewuste toepassing de kleur veranderen zodat u ziet wat u op het andere apparaat zou zien. Alleen wanneer u weet wat de karakterisering van de twee apparaten is, kunt u de kleuren van het ene apparaat op het andere apparaat weergeven.</p>
   <note>
-    <p>
-      Note that a characterization (profile) will only be valid for a device
-      if it's in the same state of calibration as it was when it was
-      characterized.
-    </p>
+    <p>Houd er rekening mee dat een karakterisering (profiel) alleen geldig is voor een apparaat indien het in dezelfde staat van kalibratie is als toen het gekarakteriseerd werd.</p>
   </note>
-  <p>
-    In the case of display profiles there is some additional confusion because
-    often the calibration information is stored in the profile for convenience.
-    By convention it is stored in a tag called the <em>vcgt</em> tag.
-    Although it is stored in the profile, none of the normal ICC based tools
-    or applications are aware of it, or do anything with it.
-    Similarly, typical display calibration tools and applications will not be
-    aware of, or do anything with the ICC characterization (profile) information.
-  </p>
+  <p>Als het om beeldschermprofielen gaat is er nog wat extra verwarring omdat de kalibratie-informatie vaak voor het gemak in het profiel wordt opgeslagen. Het is gebruikelijk deze informatie in de <em>vcgt</em>-tag op te slaan. Alhoewel het is opgeslagen in het profiel, zijn geen van de normale, op ICC-gebaseerde, hulpmiddelen of toepassingen zich ervan bewust. Tegelijkertijd zullen typische monitor-kalibratieprogramma's zich er niet bewust van zijn, en zullen het ICC-profiel dan ook niet gebruiken.</p>
 
 </page>

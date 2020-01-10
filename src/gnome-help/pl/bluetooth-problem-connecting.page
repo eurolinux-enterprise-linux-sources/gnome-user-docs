@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="problem" id="bluetooth-problem-connecting" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="bluetooth#problems"/>
+    <link type="seealso" xref="hardware-driver"/>
+
+    <revision pkgversion="3.4" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-09" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Adapter może być wyłączony lub może nie mieć sterowników, albo Bluetooth może być wyłączony lub zablokowany.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Nie mogę połączyć mojego urządzenia Bluetooth</title>
+
+  <p>Może być wiele przyczyn, dlaczego nie można połączyć się z urządzeniem Bluetooth, takim jak telefon lub słuchawki z mikrofonem.</p>
+
+  <terms>
+    <item>
+      <title>Połączenie jest zablokowane lub niezaufane</title>
+      <p>Niektóre urządzenia Bluetooth domyślnie blokują połączenia, albo wymagają zmiany ustawienia, aby zezwolić na połączenia. Upewnij się, że urządzenie zezwala na połączenia.</p>
+    </item>
+    <item>
+      <title>Komputer nie wykrywa sprzętu Bluetooth</title>
+      <p>Adapter Bluetooth mógł nie zostać wykryty przez komputer. Może to być spowodowane niezainstalowaniem <link xref="hardware-driver">sterowników</link> adaptera. Niektóre adaptery Bluetooth nie są obsługiwane w systemie Linux, więc nie ma dla nich odpowiednich sterowników. W takim przypadku należy użyć innego adaptera.</p>
+    </item>
+    <item>
+      <title>Adapter jest wyłączony</title>
+        <p>Upewnij się, że adapter Bluetooth jest włączony. Otwórz panel Bluetooth i sprawdź, czy nie jest <link xref="bluetooth-turn-on-off">wyłączony</link>.</p>
+    </item>
+    <item>
+      <title>Połączenie Bluetooth urządzenia jest wyłączone</title>
+      <p>Sprawdź, czy Bluetooth jest włączony na urządzeniu, z którym komputer jest łączony, i czy jest <link xref="bluetooth-visibility">widoczny</link>. Na przykład, podczas łączenia z telefonem należy upewnić się, że nie jest w trybie samolotowym.</p>
+    </item>
+    <item>
+      <title>Komputer nie ma adaptera Bluetooth</title>
+      <p>Wiele komputerów nie ma wbudowanych adapterów Bluetooth. Można dokupić adapter.</p>
+    </item>
+  </terms>
+
+</page>

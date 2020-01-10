@@ -19,7 +19,7 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>You can be notified if your color profile is old and inaccurate.</desc>
+    <desc>Pot ser notificat si el seu perfil de color és antic i inexacte.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>David Aguilera</mal:name>
@@ -28,24 +28,15 @@
     </mal:credit>
   </info>
 
-  <title>Can I get notified when my color profile is inaccurate?</title>
+  <title>Puc rebre notificacions quan el meu perfil de color no sigui correcte?</title>
 
-  <p>You can be reminded to recalibrate your devices after a specific period of
-  time. Unfortunately, it is not possible to tell without recalibrating whether
-  a device profile is accurate, so it is best to recalibrate devices
-  regularly.</p>
+  <p>Pot recordar-se-li recalibrar els dispositius després d'un període de temps determinat. Malauradament, no és possible avisar-lo sense haver de recalibrar ni que el perfil del dispositiu sigui correcte, per tant, és millor recalibrar els dispositius amb regularitat.</p>
 
-  <p>Some companies have very specific calibration expiry policies for
-  profiles, as an inaccurate color profile can make a huge difference to an end
-  product.</p>
+  <p>Algunes empreses tenen polítiques específiques de caducitat per als perfils, ja que un perfil de color incorrecte pot provocar una gran diferència en el producte final.</p>
 
-  <p>If you set the timeout policy and a profile is older than the policy then
-  a red warning triangle will be shown in the <gui>Color</gui> panel next to
-  the profile. A warning notification will also be shown every time you log
-  into your computer.</p>
+  <p>Si estableix la política de temps d'espera i un perfil és anterior, es mostrarà un triangle vermell d'advertència al costat del perfil en el panell  <gui>Color</gui>. També es mostrarà una notificació d'advertència cada vegada que inicieu sessió al vostre ordinador.</p>
 
-  <p>To set the policy for display and printer devices, you specify the
-  maximum age of the profile in days:</p>
+  <p>Per establir la política de visualització dels dispositius d'impressió, especifiqueu en dies l'antiguitat màxima del perfil:</p>
 
 <screen>
 <output style="prompt">$ </output><input>gsettings set org.gnome.settings-daemon.plugins.color recalibrate-printer-threshold 180</input>

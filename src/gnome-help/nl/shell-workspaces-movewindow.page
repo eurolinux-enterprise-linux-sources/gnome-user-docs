@@ -20,53 +20,49 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Go to the <gui>Activities</gui> overview and drag the window to a
-    different workspace.</desc>
+    <desc>Ga naar het <gui>Activiteiten</gui>-overzicht en sleep het venster naar een ander werkblad.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Justin van Steijn</mal:name>
+      <mal:email>justin50@live.nl</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hannie Dumoleyn</mal:name>
+      <mal:email>hannie@ubuntu-nl.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
   </info>
 
-  <title>Move a window to a different workspace</title>
+  <title>Een venster verplaatsen naar een ander werkblad</title>
 
   <steps>
-    <title>Using the mouse:</title>
+    <title>Met de muis:</title>
     <item>
-      <p if:test="!platform:gnome-classic">Open the
-      <gui xref="shell-introduction#activities">Activities</gui> overview.</p>
-      <p if:test="platform:gnome-classic">Open the
-      <gui xref="shell-introduction#activities">Activities Overview</gui> from the
-      <gui xref="shell-introduction#activities">Applications</gui> menu
-      at the top left of the screen.</p>
+      <p if:test="!platform:gnome-classic">Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht.</p>
+      <p if:test="platform:gnome-classic">Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht vanuit het <gui xref="shell-introduction#activities">Toepassingen</gui>-menu aan de linker-bovenkant van het scherm.</p>
     </item>
     <item>
-      <p>Click and drag the window toward the right of the screen.</p>
+      <p>Sleep het venster naar de rechterkant van het scherm.</p>
     </item>
     <item>
-      <p>The <em xref="shell-workspaces">workspace selector</em> will
-      appear.</p>
+      <p>De <em xref="shell-workspaces">werkbladwisselaar</em> zal verschijnen.</p>
     </item>
     <item>
-      <p if:test="!platform:gnome-classic">Drop the window onto an empty
-      workspace. This workspace now contains the window you have dropped, and a
-      new empty workspace appears at the bottom of the <em>workspace
-      selector</em>.</p>
-      <p if:test="platform:gnome-classic">Drop the window onto an empty
-      workspace. This workspace now contains the window you have dropped.</p>
+      <p if:test="!platform:gnome-classic">Laat het venster vallen in een lege werkruimte. De werkruimte bevat nu het venster dat u heeft laten vallen en er verschijnt een nieuwe lege werkruimte onderaan de <em>werkruimtekiezer</em>.</p>
+      <p if:test="platform:gnome-classic">Laat het venster vallen in een lege werkruimte Deze werkruimte bevat nu het venster dat u heeft laten vallen.</p>
     </item>
   </steps>
 
   <steps>
-    <title>Using the keyboard:</title>
+    <title>Via het toetsenbord:</title>
     <item>
-      <p>Select the window that you want to move (for example, using the
-      <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq>
-      <em xref="shell-windows-switching">window switcher</em>).</p>
+      <p>Selecteer het venster dat u wilt verplaatsen (bijvoorbeeld met de <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq> <em xref="shell-windows-switching">vensterwisselaar</em>).</p>
     </item>
     <item>
-      <p>Press <keyseq><key>Super</key><key>Shift</key><key>Page
-      Up</key></keyseq> to move the window to a workspace which is above the
-      current workspace on the <em>workspace selector</em>.</p>
-      <p>Press <keyseq><key>Super</key><key>Shift</key><key>Page
-      Down</key></keyseq> to move the window to a workspace which is below the
-      current workspace on the <em>workspace selector</em>.</p>
+      <p>Druk op <keyseq><key>Super</key><key>Shift</key><key>Page Up</key></keyseq> om het venster naar het werkblad boven het huidige werkblad in de <gui>werkbladwisselaar</gui> te verplaatsen .</p>
+      <p>Druk op <keyseq><key>Super</key><key>Shift</key><key>Page Down</key></keyseq> om het venster naar het werkblad onder het huidige werkblad in de <gui>werkbladwisselaar</gui> te verplaatsen .</p>
     </item>
   </steps>
 

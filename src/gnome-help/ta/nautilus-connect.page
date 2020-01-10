@@ -44,7 +44,7 @@ application from the <gui>Activities</gui> overview, and click
 <gui>Other Locations</gui> in the sidebar. The file manager
 will find any computers on your local area network that advertize
 their ability to serve files. If you want to connect to a server
-on the internet, or if you do not see the computer you're looking
+on the internet, or if you do not see the computer you’re looking
 for, you can manually connect to a server by typing in its
 internet/network address.</p>
 
@@ -102,7 +102,8 @@ internet/network address.</p>
     <p><sys>ssh://username@servername.example.com/folder</sys></p>
   </example>
 
-  <p>SSH ஐப் பயன்படுத்தும் போது நீங்கள் அனுப்பும் அனைத்து தரவும் (உங்கள் கடவுச்சொல் உட்பட) உங்கள் பிணையத்தின் பிற பயனர்கள் பார்க்க முடியாதபடி குறியாக்கம் செய்யப்படுகின்றன.</p>
+  <p>When using SSH, all the data you send (including your password)
+  is encrypted so that other users on your network can’t see it.</p>
 </item>
 <item>
   <title>FTP (புகுபதிவுடன்)</title>
@@ -131,7 +132,11 @@ internet/network address.</p>
 </item>
 <item>
   <title>WebDAV மற்றும் Secure WebDAV</title>
-  <p>இணையத்தில் பயன்படுத்தப்படும் HTTP நெறிமுறையின் அடிப்படையில் அமைந்ததான, WebDAV முறை சில நேரங்களில் ஒரு அக பிணையத்தில் கோப்புகளைப் பகிர்ந்து கொள்ளவும் இணையத்தில் கோப்புகளைச் சேமிக்கவும் பயன்படுத்தப்படுகிறது. நீங்கள் இணைக்கும் சேவையகம் பாதுகாப்பான இணைப்புகளை ஆதரிக்கும் என்றால், நீங்கள் இந்த விருப்பத்தை தேர்வு செய்ய வேண்டும். மற்ற பயனர்கள் உங்கள் கடவுச்சொல்லைப் பார்க்க முடியாதபடி Secure WebDAV வலுவான SSL குறியாக்கத்தைப் பயன்படுத்துகிறது.</p>
+  <p>Based on the HTTP protocol used on the web, WebDAV is sometimes used to
+  share files on a local network and to store files on the internet. If the
+  server you’re connecting to supports secure connections, you should choose
+  this option. Secure WebDAV uses strong SSL encryption, so that other users
+  can’t see your password.</p>
   <p>A WebDAV URL looks like this:</p>
   <example>
     <p><sys>dav://example.hostname.com/path</sys></p>

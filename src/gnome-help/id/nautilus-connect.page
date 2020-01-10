@@ -32,7 +32,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Andika Triwidada</mal:name>
       <mal:email>andika@gmail.com</mal:email>
-      <mal:years>2011, 2012, 2013, 2014.</mal:years>
+      <mal:years>2011-2014, 2017.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ahmad Haris</mal:name>
+      <mal:email>ahmadharis1982@gmail.com</mal:email>
+      <mal:years>2017.</mal:years>
     </mal:credit>
   </info>
 
@@ -49,7 +55,7 @@ application from the <gui>Activities</gui> overview, and click
 <gui>Other Locations</gui> in the sidebar. The file manager
 will find any computers on your local area network that advertize
 their ability to serve files. If you want to connect to a server
-on the internet, or if you do not see the computer you're looking
+on the internet, or if you do not see the computer you’re looking
 for, you can manually connect to a server by typing in its
 internet/network address.</p>
 
@@ -119,7 +125,8 @@ internet/network address.</p>
     <p><sys>ssh://nama@servername.example.com/folder</sys></p>
   </example>
 
-  <p>Ketika memakai SSH, semua data yang Anda kirim (termasuk sandi Anda) dienkripsi sehingga pengguna lain pada jaringan Anda tak bisa melihatnya.</p>
+  <p>When using SSH, all the data you send (including your password)
+  is encrypted so that other users on your network can’t see it.</p>
 </item>
 <item>
   <title>FTP (dengan login)</title>
@@ -163,7 +170,11 @@ internet/network address.</p>
 </item>
 <item>
   <title>WebDAV dan WebDAV Aman</title>
-  <p>Berdasarkan protokol HTTP digunakan di web, WebDAV kadang-kadang digunakan untuk berbagi file pada jaringan lokal dan untuk menyimpan file di internet. Jika server yang anda hubungi mendukung koneksi yang aman, Anda harus memilih opsi ini. Aman WebDAV menggunakan enkripsi SSL kuat, sehingga pengguna lain tidak dapat melihat password Anda.</p>
+  <p>Based on the HTTP protocol used on the web, WebDAV is sometimes used to
+  share files on a local network and to store files on the internet. If the
+  server you’re connecting to supports secure connections, you should choose
+  this option. Secure WebDAV uses strong SSL encryption, so that other users
+  can’t see your password.</p>
   <p>A WebDAV URL looks like this:</p>
   <example>
     <p><sys>dav://example.hostname.com/path</sys></p>

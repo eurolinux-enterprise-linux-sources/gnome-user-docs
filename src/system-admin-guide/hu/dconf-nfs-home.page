@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="dconf-nfs-home" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="setup"/>
+    <link type="guide" xref="login#management"/>
+    <revision version="0.1" date="2013-03-19" status="draft"/>
+    <revision pkgversion="3.8" date="2013-05-09" status="review"/>
+    <revision pkgversion="3.12" date="2014-06-17" status="review"/>
+
+    <credit type="author copyright">
+      <name>Jana Svarova</name>
+      <email>jana.svarova@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>A <sys>dconf</sys> rendszerbeállításainak frissítése, hogy a beállításokat egy <sys>NFS</sys> saját könyvtárban tárolja.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>ur.balazs@fsf.hu</mal:email>
+      <mal:years>2018.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Beállítások tárolása <sys>NFS</sys> megosztáson</title>
+
+  <p>Ahhoz, hogy a <sys its:translate="no">dconf</sys> helyesen működjön <sys>hálózati fájlrendszeren</sys> (<sys>NFS</sys>) lévő saját könyvtárak használatakor, a <sys its:translate="no">dconf</sys> <em>kulcsfájl háttérprogramját</em> kell használni.</p>
+
+  <steps>
+    <item>
+      <p>Hozza létre vagy szerkessze az <file its:translate="no">/etc/dconf/profile/user</file> fájlt minden egyes ügyfélgépen.</p>
+    </item>
+    <item>
+      <p>Ennek a fájlnak a legelejéhez adja hozzá a következő sort:</p>
+      <code><input its:translate="no">service-db:keyfile/user</input></code>
+    </item>
+  </steps>
+  <p>A <sys its:translate="no">dconf</sys> <em>kulcsfájl háttérprogramja</em> csak azután lép életbe, amikor a felhasználó következő alkalommal bejelentkezik. Lekérdezi a kulcsfájlt annak meghatározásához, hogy történtek-e frissítések, így a beállítások esetleg nem frissülnek azonnal.</p>
+  <p>Ha egy <em>kulcsfájl háttérprogram</em> nincs használatban, akkor a felhasználói beállítások esetleg nem kérhetők le vagy nem frissíthetők megfelelően.</p>
+
+</page>

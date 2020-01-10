@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="login-banner" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="login#appearance"/>
+    <!--<link type="seealso" xref="gdm-restart"/>-->
+    <revision pkgversion="3.8" date="2013-04-19" status="review"/>
+    <revision pkgversion="3.14" date="2014-06-17" status="review"/>
+
+    <credit type="author copyright">
+      <name>Matthias Clasen</name>
+      <email>matthias.clasen@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="author copyright">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Jana Svarova</name>
+      <email>jana.svarova@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="author copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>davidk@gnome.org</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Mostrar texto adicional en la pantalla de inicio de sesión.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Display a text banner on the login screen</title>
+
+  <p>You can display extra text on the login screen, such as who to contact for
+  support, by setting the
+  <sys>org.gnome.login-screen.banner-message-enable</sys> and
+  <sys>org.gnome.login-screen.banner-message-text</sys> GSettings keys.</p>
+
+  <steps>
+    <title>Display a text banner on the login screen:</title>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-gdm'])"/>
+    <item><p>Cree un archivo de claves <sys>gdm</sys> para configuración global en <file its:translate="no">/etc/dconf/db/gdm.d/01-banner-message</file>:</p>
+      <code its:translate="no">[org/gnome/login-screen]
+banner-message-enable=true
+banner-message-text='<input its:translate="yes">Escriba aquí el texto del banner.</input>'
+</code>
+    </item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+  </steps>
+
+  <note>
+    <p>You should keep the banner message short, as longer messages do
+    not fit on the screen. The banner message cannot be read from
+    an external file.</p>
+  </note>
+
+</page>

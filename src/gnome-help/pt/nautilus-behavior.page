@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-behavior" xml:lang="pt">
+
+  <info>
+    <link type="guide" xref="nautilus-prefs" group="nautilus-behavior"/>
+
+    <desc>Um só clique para abrir ficheiros, executar ou ver ficheiros de texto executáveis, e especificar o comportamento da caixote do lixo.</desc>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hilh</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+<title>Preferências de comportamento do gestor de ficheiros</title>
+<p>Pode controlar se faz uma clique simples ou dupla aos ficheiros, como manejam-se  os ficheiros de texto executáveis e o comportamento da caixote do lixo. Carregue <gui>Ficheiros</gui> na barra superior, escolha <gui>Preferências</gui> e selecione a flange <gui>Comportamento</gui>.</p>
+
+<section id="behavior">
+<title>Comportamento</title>
+<terms>
+ <item>
+  <title><gui>Um só clique para abrir elementos</gui></title>
+  <title><gui>Um duplo clique para abrir elementos</gui></title>
+  <p>De maneira predeterminada, ao carregar uma vez selecionam-se ficheiros, e clicando duas vezes abrem-se. Pode optar por abrir ficheiros e diretórios clicándolos uma sozinha vez. No modo duma sozinha clique, pode manter apertada a tecla <key>Ctrl</key> enquanto clica com o rato para selecionar um ou mais ficheiros.</p>
+ </item>
+</terms>
+
+</section>
+<section id="executable">
+<title>Ficheiros de texto executáveis</title>
+ <p>Um ficheiro de texto executável é um ficheiro que contém um programa que pode executar. Os <link xref="nautilus-file-properties-permissions">permissões do ficheiro</link> também devem permitir que o ficheiro possa se executar como um programa. Os mais frequentes costumam ser scripts de <sys>Shelh</sys>, <sys>Python</sys> e <sys>Perl</sys>. Têm extensões <file>.sh</file>, <file>.py</file> e <file>.pl</file> respetivamente.</p>
+ 
+ <p>Quando abre um ficheiro de texto executável, pode escolher entre:</p>
+ 
+ <list>
+  <item>
+    <p><gui>Executar ficheiros de texto executáveis quando se abrem</gui></p>
+  </item>
+  <item>
+    <p><gui>Ver ficheiros de texto executáveis quando se abrem</gui></p>
+  </item>
+  <item>
+    <p><gui>Perguntar a cada vez</gui></p>
+  </item>
+ </list>
+
+ <p>Se <gui>Perguntar a cada vez</gui> está selecionada, aparecerá um diálogo perguntando se quer executar ou ver o ficheiro de texto selecionado.</p>
+
+ <p>Os ficheiros de texto executáveis também se chamam <em>scripts</em>. Todos os scripts da diretório <file>~/.local/share/nautilus/scripts</file> aparecerão no menu contextual para um ficheiro no submenu <gui style="menuitem">Scripts</gui>. Quando se executa um script desde uma diretório local, todos os ficheiros selecionados passarão o script como parâmetros. Para executar um script sobre um ficheiro:</p>
+
+<steps>
+  <item>
+    <p>Navegue até a diretório que quer.</p>
+  </item>
+  <item>
+    <p>Selecione o ficheiro que quer.</p>
+  </item>
+  <item>
+    <p>Carregue com o botão direito sobre o ficheiro para abrir o menu contextual e selecione o script que executar do menu<gui style="menuitem">Scripts</gui>.</p>
+  </item>
+</steps>
+
+ <note style="important">
+  <p>Um script não passará como parâmetros quando se execute desde uma diretório remota, como uma diretório que mostra contido site ou <sys>ftp</sys>.</p>
+ </note>
+
+</section>
+
+<section id="trash">
+<info>
+<link type="seealso" xref="files-delete"/>
+<title type="link">Preferências da caixote do lixo do gestor de ficheiros</title>
+</info>
+<title>Papelera</title>
+
+<terms>
+ <item>
+  <title><gui>Perguntar antes de esvaziar a caixote do lixo</gui></title>
+  <p>Esta opção está selecionada de forma predeterminada. Quando se vai esvaziar a caixote do lixo, aparece uma mensagem confirmando se quer esvaziar a caixote do lixo ou eliminar os ficheiros.</p>
+ </item>
+</terms>
+</section>
+
+</page>

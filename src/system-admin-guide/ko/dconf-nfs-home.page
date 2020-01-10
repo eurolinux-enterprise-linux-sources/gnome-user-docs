@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="dconf-nfs-home" xml:lang="ko">
+
+  <info>
+    <link type="guide" xref="setup"/>
+    <link type="guide" xref="login#management"/>
+    <revision version="0.1" date="2013-03-19" status="draft"/>
+    <revision pkgversion="3.8" date="2013-05-09" status="review"/>
+    <revision pkgversion="3.12" date="2014-06-17" status="review"/>
+
+    <credit type="author copyright">
+      <name>Jana Svarova</name>
+      <email>jana.svarova@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc><sys>NFS</sys> 홈 디렉터리에 있는 설정을 저장하려면 <sys>dconf</sys>에 대한 설정 구성을 업데이트하세요.</desc>
+  </info>
+
+  <title><sys>NFS</sys>를 통해 설정 저장</title>
+
+  <p><sys>Network File System</sys> (<sys>NFS</sys>)를 사용할때 <sys its:translate="no">dconf</sys>를 올바르게 작동하려면 <sys its:translate="no">dconf</sys> <em>keyfile back end</em>를 사용해야만 합니다.</p>
+
+  <steps>
+    <item>
+      <p>모든 클라이언트에게 <file its:translate="no">/etc/dconf/profile/user</file> 파일을 생성하거나 수정하세요.</p>
+    </item>
+    <item>
+      <p>이 파일의 맨 처음 부분에서 다음 줄을 추가하세요:</p>
+      <code><input its:translate="no">service-db:keyfile/user</input></code>
+    </item>
+  </steps>
+  <p><sys its:translate="no">dconf</sys> <em>keyfile back end</em>은 사용자가 로그인 한 이후로부터만 효력을 발휘합니다. 키파일을 집계하면서 업데이트가 수행되었는지 확인하기 때문에, 설정은 즉각적으로 업데이트되지 않습니다.</p>
+  <p><em>keyfile back end</em>가 사용되지 않았다면, 사용자 설정이 제대로 정정되지 않거나 업데이트 되지 않았다는 것입니다.</p>
+
+</page>

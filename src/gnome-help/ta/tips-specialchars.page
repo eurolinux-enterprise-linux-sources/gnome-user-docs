@@ -7,6 +7,7 @@
 
     <revision pkgversion="3.8.2" version="0.3" date="2013-05-18" status="review"/>
     <revision pkgversion="3.10" date="2013-11-01" status="review"/>
+    <revision pkgversion="3.26" date="2017-11-27" status="review"/>
 
     <credit type="author">
       <name>ஷான் மெக்கேன்ஸ்</name>
@@ -19,6 +20,10 @@
     <credit type="editor">
       <name>எக்காட்டெரினா ஜெராசிமோவா</name>
       <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>ஆன்ட்ரி க்ளாப்பர்</name>
+      <email>ak-47@gmx.net</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -34,51 +39,73 @@
 
   <title>சிறப்பு எழுத்துக்களை உள்ளிடுதல்</title>
 
-  <p>உலகின் பெரும்பாலான எழுத்து முறைகளின் ஆயிரக்கணக்கான எழுத்துகளை நீங்கள் காணவும் உள்ளிடவும் முடியும், உங்கள் விசைப்பலகையில் இல்லாதவையும் உட்பட. சிறப்பு எழுத்துகளை உள்ளிடும் சில வழிகளை இந்தப் பக்கம் பட்டியலிடுகிறது.</p>
+  <p>You can enter and view thousands of characters from most of the world’s
+  writing systems, even those not found on your keyboard. This page lists
+  some different ways you can enter special characters.</p>
 
   <links type="section">
     <title>எழுத்துக்களை உள்ளிடும் முறைகள்</title>
   </links>
 
-  <section id="charmap">
-    <title>எழுத்து மேப்</title>
-    <p>GNOME இல் ஒரு எழுத்து மேப் பயன்பாடு உள்ளது, அதைக் கொண்டு நீங்கள் ஒருங்குறியிலான அனைத்து எழுத்துகளையும் உலவலாம். எழுத்து மேப்பைப் பயன்படுத்தி நீங்கள் விரும்பும் எழுத்தைக் கண்டறிந்து பிறகு வேண்டிய இடத்தில் அதை ஒட்டிக்கொள்ளலாம்.</p>
-
-    <p><gui>செயல்பாடுகள்</gui> மேலோட்டத்தில் <app>எழுத்து மேப்</app> ஐக் கண்டறியலாம். எழுத்து மேப் குறித்த கூடுதல் தகவலுக்கு <link href="help:gucharmap">எழுத்து மேப் கையேட்டைப்</link> பார்க்கவும்.</p>
-
-  </section>
-
   <section id="characters">
     <title>Characters</title>
-    <p>Another useful application shipped with GNOME is <app>Characters</app>.
-    It lets you find and insert unusual characters by browsing character
-    categories or searching for keywords.</p>
+    <p>GNOME comes with a character map application that allows you to
+    find and insert unusual characters, including emoji, by browsing
+    character categories or searching for keywords.</p>
 
-    <p>You can launch Characters from the Activities overview. For more
-    information on Characters, see the <link href="help:gnome-characters">
-    Characters Manual</link>.</p>
+    <p>You can launch <app>Characters</app> from the Activities overview.</p>
 
   </section>
 
   <section id="compose">
     <title>கம்போஸ் விசை</title>
     <p>கம்போஸ் விசை என்பது, ஒரு வரிசையிலுள்ள பல விசைகளை ஒன்றாக அழுத்தி ஒரு சிறப்பு எழுத்தை வரவழைக்க உதவும் விசையாகும். உதாரணமாக நீங்கள் உச்சரிப்பு அழுத்தம் கொண்ட<em>é</em> என்ற எழுத்தை தட்டச்சு செய்ய <key>கம்போஸ்</key> விசையை அழுத்தி பிறகு <key>'</key> பிறகு <key>e</key> ஐ அழுத்தலாம்.</p>
-    <p>விசைப்பலகையில் கம்போஸ் விசைகள் இருக்காது. ஆனால் முன்பே உள்ள உங்கள் விசைகளை கம்போஸ் விசையாகப் பயன்படுத்தும்படி அமைக்க முடியும்.</p>
+    <p>Keyboards don’t have specific compose keys. Instead, you can define
+    one of the existing keys on your keyboard as a compose key.</p>
+
+    <note style="important">
+      <p>You need to have <app>Tweaks</app> installed on your computer to
+      change this setting.</p>
+      <if:if xmlns:if="http://projectmallard.org/if/1.0/" test="action:install">
+        <p><link style="button" action="install:gnome-tweaks">Install
+        <app>Tweaks</app></link></p>
+      </if:if>
+    </note>
 
     <steps>
       <title>ஒரு கம்போஸ் விசையை வரையறுத்தல்</title>
       <item>
-        <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-        start typing <gui>Keyboard</gui>.</p>
+        <p>Open the <gui xref="shell-introduction#activities">Activities</gui>
+        overview and start typing <gui>Tweaks</gui>.</p>
       </item>
       <item>
-        <p>Click on <gui>Keyboard</gui> to open the panel.</p>
+        <p>Click <gui>Tweaks</gui> to open the application.</p>
       </item>
-      <item><p><gui>குறுக்குவழிகள்</gui> தாவலைத் தேர்ந்தெடுத்து <gui>தட்டச்சு</gui> ஐ சொடுக்கவும்.</p></item>
-      <item><p>வலது பலகத்தில் <gui>கம்போஸ் விசை</gui> ஐ சொடுக்கவும்.</p></item>
-      <item><p><gui>முடக்கப்பட்டது</gui> ஐ சொடுக்கி, கீழ் தோன்று பட்டியலில் இருந்து கம்போஸ் விசையாக செயல்பட நீங்கள் விரும்பும் விசையை தேர்ந்தெடுக்கவும். நீங்கள் <key>Ctrl</key> விசைகள், வலது <key>Alt</key> விசை, வலது <key>Win</key> அல்லது <key xref="keyboard-key-super">Super</key> விசை, <key xref="keyboard-key-menu">Menu</key> விசை அல்லது <key>Caps Lock</key> விசை எதையும் தேர்வு செய்யலாம். நீங்கள் தேர்ந்தெடுக்கும் விசை எதுவாயினும் அதற்குப் பின் அது கம்போஸ் விசையாக மட்டுமே வேலை செய்யுமே தவிர அதன் வழக்கமான வேலையைச் செய்ய பயன்படாது.</p></item>
+      <item>
+        <p>Click the <gui>Keyboard &amp; Mouse</gui> tab.</p>
+      </item>
+      <item>
+        <p>Click <gui>Disabled</gui> next to the <gui>Compose Key</gui>
+        setting.</p>
+      </item>
+      <item>
+        <p>Turn the switch on in the dialog and pick the keyboard shortcut you
+        want to use.</p>
+      </item>
+      <item>
+        <p>Tick the checkbox of the key that you want to set as the Compose
+        key.</p>
+      </item>
+      <item>
+        <p>Close the dialog.</p>
+      </item>
+      <item>
+        <p>Close the <gui>Tweaks</gui> window.</p>
+      </item>
     </steps>
+
     <p>நீங்கள் கம்போஸ் விசையைப் பயன்படுத்தி பல பொதுவான எழுத்துக்களைத் தட்டச்சு செய்யலாம், உதாரணமாக:</p>
+
     <list>
       <item><p><key>compose</key> ஐ அழுத்தி பிறகு <key>'</key> ஐ அழுத்தி பிறகு <em>é</em> போன்று அக்யூட் அழுத்தத்தைச் சேர்க்க வேண்டிய எழுத்தை அழுத்தவும்.</p></item>
       <item><p><key>compose</key> ஐ அழுத்தி பிறகு <key>`</key> ஐ (பேக் டிக்) அழுத்தி பிறகு <em>è</em> போன்று கிரேவ் அழுத்தத்தைச் சேர்க்க வேண்டிய எழுத்தை அழுத்தவும்.</p></item>
@@ -91,9 +118,18 @@
 <section id="ctrlshiftu">
   <title>குறியீட்டுப் புள்ளிகள்</title>
 
-  <p>நீங்கள் எந்த ஒரு ஒருங்குறி எழுத்தையும் அதன் குறியீட்டுப் புள்ளியைக் கொண்டு உங்கள் விசைப்பலகையை மட்டும் கொண்டு உள்ளிட முடியும். ஒவ்வொரு எழுத்தும் நான்கெழுத்து குறியீட்டுப் புள்ளியால் அடையாளம் காணப்படுகிறது. ஒரு எழுத்தின் குறியீட்டுப் புள்ளியைக் கண்டுபிடிக்க, எழுத்து மேப் பயன்பாட்டில் அந்த எழுத்தைக் கண்டுபிடித்து நிலைப் பட்டியைக் காணவும் அல்லது <gui>எழுத்து விவரங்கள்</gui> தாவலைக் காணவும். <gui>U+</gui> க்கு அடுத்துள்ள நான்கு எழுத்துகளே குறியீட்டுப் புள்ளியாகும்.</p>
+  <p>You can enter any Unicode character using only your keyboard with the
+  numeric code point of the character. Every character is identified by a
+  four-character code point. To find the code point for a character, look it up
+  in the <app>Characters</app> application. The code point is the four characters
+  after <gui>U+</gui>.</p>
 
-  <p>ஒரு எழுத்தை அதன் குறியீட்டுப் புள்ளி கொண்டு உள்ளிட, <key>Ctrl</key> மற்றும்<key>Shift</key> ஐ அழுத்திக் கொண்டு <key>U</key> ஐ அழுத்தி, தொடர்ந்து நான்கெழுத்து குறியீட்டுப் புள்ளியை அழுத்தி பின் <key>Ctrl</key> மற்றும் <key>Shift</key> ஐ விடவும். மற்ற முறைகளில் எளிதாக பயன்படுத்த முடியாத எழுத்துகளை நீங்கள் அடிக்கடி பயன்படுத்தினால், அந்த எழுத்துகளின் குறியீட்டுப் புள்ளிகளை மனனம் செய்து கொண்டால் அவற்றை விரைவாக தட்டச்சு செய்ய உதவும்.</p>
+  <p>To enter a character by its code point, press
+  <keyseq><key>Ctrl</key><key>Shift</key><key>U</key></keyseq>, then type the
+  four-character code and press <key>Space</key> or <key>Enter</key>. If you often
+  use characters that you can’t easily access with other methods, you might find
+  it useful to memorize the code point for those characters so you can enter
+  them quickly.</p>
 
 </section>
 

@@ -23,36 +23,41 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2013.</mal:years>
+      <mal:years>2011-2018</mal:years>
     </mal:credit>
   </info>
 
   <title>Ler a pantalla</title>
 
-  <p>GNOME provides the <app>Orca</app> screen reader to speak the user
-  interface. Depending on how you installed GNOME, you might not have
-  Orca installed. If not, install Orca first.</p>
+  <p>GNOME fornece o lector de pantalla <app>Orca</app> para ler a interface de usuario. Dependendo de como instalara GNOME, pode non ter Orca instalado. Se non é así, instale Orca primeiro.</p>
 
   <p if:test="action:install"><link style="button" action="install:orca">Instalar Orca</link></p>
+  
+  <p>Para iniciar <app>Orca</app> use o teclado:</p>
+  
+  <steps>
+    <item>
+    <p>Prema <key>Super</key>+<key>Alt</key>+<key>S</key>.</p>
+    </item>
+  </steps>
+  
+  <p>Ou inicie <app>Orca</app> usando un rato e teclado:</p>
 
   <steps>
     <item>
       <p>Abra a vista de <gui xref="shell-introduction#activities">Actividades</gui> e comece a escribir <gui>Acceso universal</gui>.</p>
     </item>
     <item>
-      <p>Click <gui>Universal Access</gui> to open the panel.</p>
+      <p>Prema <gui>Acceso universal</gui> para abrir o panel.</p>
     </item>
     <item>
-      <p>Click <gui>Screen Reader</gui> in the <gui>Seeing</gui> section, then
-      switch <gui>Screen Reader</gui> on in the dialog.</p>
+      <p>Prema <gui>Lector de pantalla</gui> na sección <gui>Visión</gui> e logo active o <gui>Lector de pantalla</gui> no diálogo.</p>
     </item>
   </steps>
 
   <note style="tip">
-    <title>Quickly turn Screen Reader on and off</title>
-    <p>You can turn Screen Reader on and off by clicking the
-    <link xref="a11y-icon">accessibility icon</link> in the top bar and
-    selecting <gui>Screen Reader</gui>.</p>
+    <title>Activar e desactivar rapidamente o Lector de pantalla</title>
+    <p>Pode activar e desactivar de forma rápida o Lector de Pantalla desde a <link xref="a11y-icon">icona de accesibilidade</link> na barra superior e seleccoine <gui>Lector de pantalla</gui>.</p>
   </note>
 
   <p>Visite a <link href="help:orca">axuda de Orca</link> para obter máis información.</p>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="keyboard-layouts" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="prefs-language"/>
+    <link type="guide" xref="keyboard" group="i18n"/>
+    <link type="guide" xref="keyboard-shortcuts-set"/>
+
+    <revision pkgversion="3.8" version="0.3" date="2013-04-30" status="review"/>
+    <revision pkgversion="3.10" date="2013-10-28" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+
+    <credit type="author copyright">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+      <years>2012</years>
+    </credit>
+    <credit type="author">
+       <name>Julita Inca</name>
+       <email>yrazes@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Juanjo Marín</name>
+      <email>juanj.marin@juntadeandalucia.es</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Dodawanie układów klawiatury i przełączanie między nimi.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Alternatywne układy klawiatury</title>
+
+  <p>Klawiatury mają setki różnych układów dla różnych języków. Nawet dla jednego języka często dostępnych jest wiele układów klawiatury, np. układ Dvoraka dla języka angielskiego. Można ustawić inny układ dla klawiatury, niezależnie od liter i symboli wydrukowanych na klawiszach. Jest to przydatne, jeśli potrzeba często przełączać między kilkoma językami.</p>
+
+  <steps>
+    <item>
+      <p>Otwórz <gui xref="shell-introduction#activities">ekran podglądu</gui> i zacznij pisać <gui>Region i język</gui>.</p>
+    </item>
+    <item>
+      <p>Kliknij <gui>Region i język</gui>, aby otworzyć panel.</p>
+    </item>
+    <item>
+      <p>Kliknij przycisk <gui>+</gui> w sekcji <gui>Źródła wprowadzania</gui>, wybierz język powiązany z układem, a następnie wybierz układ i kliknij przycisk <gui>Dodaj</gui>.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Jeśli na komputerze jest wiele kont użytkowników, to dostępny jest oddzielny panel <gui>Region i język</gui> dla ekranu logowania. Kliknij przycisk <gui>Ekran logowania</gui> w górnym prawym rogu, aby przełączyć między panelami.</p>
+
+    <p>Część rzadko używanych układów klawiatury nie jest domyślnie dostępna po kliknięciu przycisku <gui>+</gui>. Aby były one dostępne, można otworzyć okno terminala naciskając klawisze <keyseq><key>Ctrl</key><key>Alt</key><key>T</key></keyseq> i wykonać to polecenie:</p>
+    <p><cmd its:translate="no">gsettings set org.gnome.desktop.input-sources show-all-sources true</cmd></p>
+  </note>
+
+  <note style="sidebar">
+    <p>Można wyświetlić podgląd układu zaznaczając go na liście <gui>Źródła wprowadzania</gui> i klikając przycisk <gui><media its:translate="no" type="image" src="figures/input-keyboard-symbolic.png" width="16" height="16"><span its:translate="yes">podgląd</span></media></gui>.</p>
+  </note>
+
+  <p>Pewne języki oferują dodatkowe opcje konfiguracji. Języki z opcjami mają ikonę <gui><media its:translate="no" type="image" src="figures/system-run-symbolic.svg" width="16" height="16"><span its:translate="yes">podgląd</span></media></gui>. Aby z nich skorzystać, wybierz język z listy <gui>Źródło wprowadzania</gui>, a następnie nowy przycisk <gui style="button"><media its:translate="no" type="image" src="figures/emblem-system-symbolic.svg" width="16" height="16"><span its:translate="yes">preferencje</span></media></gui>.</p>
+
+  <p>Podczas używania wielu układów można wybrać, aby wszystkie okna miały ten sam układ lub aby każde okno miało swój własny. Używanie różnych układów dla każdego okna jest przydatne na przykład do pisania artykułu w innym języku w oknie edytora tekstu. Wybór klawiatury będzie pamiętany dla każdego okna podczas przełączania między oknami. Kliknij przycisk <gui style="button">Opcje</gui>, aby wybrać sposób zarządzania wieloma układami.</p>
+
+  <p>Górny pasek będzie wyświetlał krótki identyfikator obecnego układu, na przykład <gui>pl</gui> dla standardowego układu języka polskiego. Kliknij wskaźnik układu i wybierz układ do użycia z menu. Jeśli wybrany język ma dodatkowe ustawienia, to będą wyświetlane pod listą dostępnych układów. Daje to szybki przegląd ustawień. Można także otworzyć podgląd obecnego układu.</p>
+
+  <p>Najszybszym sposobem zmiany na inny układ jest użycie <gui>skrótów klawiszowych</gui> <gui>źródeł wprowadzania</gui>. Te skróty otwierają okno wyboru <gui>Źródła wprowadzania</gui>, w którym można przechodzić do przodu i do tyłu. Domyślnie można przełączać na następne źródło wprowadzania za pomocą klawiszy <keyseq><key xref="keyboard-key-super">Super</key><key>Spacja</key></keyseq> i na poprzedni za pomocą klawiszy <keyseq><key>Shift</key><key>Super</key><key>Spacja</key></keyseq>. Można zmienić te skróty w ustawieniach <gui>Klawiatury</gui>.</p>
+
+  <p><media type="image" src="figures/input-methods-switcher.png"/></p>
+
+</page>

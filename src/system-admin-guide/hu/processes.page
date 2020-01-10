@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" id="processes" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="software#management"/>
+    <revision pkgversion="3.12" date="2014-06-17" status="review"/>
+
+    <credit type="author copyright">
+      <name>Matthias Clasen</name>
+      <email>matthias.clasen@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Aruna Sankaranarayanan</name>
+      <email>aruna.evam@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+
+    <desc>Mely folyamatokat kell várhatóan látnom egy tiszta, gyári GNOME munkamenetben?</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>ur.balazs@fsf.hu</mal:email>
+      <mal:years>2018.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Jellemző folyamatok</title>
+
+  <p>Egy gyári <app>GNOME</app> munkamenetben úgynevezett <link href="man:daemon"><app>démon</app></link> programok futnak a rendszeren háttérfolyamatként. Alapértelmezetten a következő futó démonokat kell megtalálnia:</p>
+
+   <terms>
+     <item>
+       <title>dbus-daemon</title>
+       <p>A <app>dbus-daemon</app> egy üzenetbusz démont biztosít, amelyet a programok az egymás közötti üzenetek kicseréléséhez használhatnak. A <app>dbus-daemon</app> a D-Bus programkönyvtárral van megvalósítva, amely pont-pont kommunikációt biztosít bármely két alkalmazás között.</p>
+       <p>Bővebb információkért nézze meg a <link href="man:dbus-daemon">dbus-daemon</link> kézikönyvoldalát.</p>
+     </item>
+     <item>
+       <title>gnome-keyring-daemon</title>
+       <p>A különféle programok és weboldalak hitelesítési adatai (mint például a felhasználónév és jelszó) a <app>gnome-keyring-daemon</app> használatával vannak biztonságosan tárolva. Ezek az információk egy kulcstartófájl nevű titkosított fájlba vannak kiírva, és a felhasználó saját könyvtárába vannak elmentve.</p>
+       <p>Bővebb információkért nézze meg a <link href="man:gnome-keyring-daemon">gnome-keyring-daemon</link> kézikönyvoldalát.</p>
+     </item>
+     <item>
+       <title>gnome-session</title>
+       <p>A <app>gnome-session</app> program a felelős a GNOME asztali környezet futtatásáért egy olyan megjelenítéskezelő használatával, mint például a <app>GDM</app>, <app>LightDM</app> vagy <app>NODM</app>. A felhasználó alapértelmezett munkamenetét a rendszer adminisztrátora állítja be a rendszer telepítésekor. A <app>gnome-session</app> jellemzően azt a legutolsó munkamenetet tölti be, amely sikeresen futott a rendszeren.</p>
+       <p>Bővebb információkért nézze meg a <link href="man:gnome-session">gnome-session</link> kézikönyvoldalát.</p>
+     </item>
+     <item>
+       <title>gnome-settings-daemon</title>
+       <p>A <app>gnome-settings-daemon</app> kezeli egy GNOME munkamenet és az összes olyan program beállításait, amelyek a munkameneten belül futnak.</p>
+       <p>Bővebb információkért nézze meg a <link href="man:gnome-settings-daemon">gnome-settings-daemon</link> kézikönyvoldalát.</p>
+     </item>
+     <item>
+       <title>gnome-shell</title>
+       <p>A <app>gnome-shell</app> alap felhasználói felület funkcionalitást biztosít a GNOME-hoz, mint például programok indítása, könyvtárak tallózása, fájlok megtekintése és így tovább.</p>
+       <p>Bővebb információkért nézze meg a <link href="man:gnome-shell">gnome-shell</link> kézikönyvoldalát.</p>
+     </item>
+     <item>
+       <title>pulseaudio</title>
+       <p>A <app>PulseAudio</app> egy hangkiszolgáló a Linux, POSIX és Windows rendszerekhez, amely lehetővé teszi a programok számára, hogy a <app>Pulseaudio</app> démonon keresztül adjanak ki hangot.</p>
+       <p>Bővebb információkért nézze meg a <link href="man:pulseaudio">pulseaudio</link> kézikönyvoldalát.</p>
+     </item>
+   </terms>
+
+  <p>A felhasználó beállításaitól függően láthat még a következők közül is néhányat többek között:</p>
+   <list ui:expanded="false">
+   <title>További folyamatok</title>
+     <item><p><app>at-spi2-dbus-launcher</app></p></item>
+     <item><p><app>at-spi2-registryd</app></p></item>
+     <item><p><app>gnome-screensaver</app></p></item>
+     <item><p><app>gnome-shell-calendar-server</app></p></item>
+     <item><p><app>goa-daemon</app></p></item>
+     <item><p><app>gsd-printer</app></p></item>
+     <item><p>különféle <app>Evolution</app> előállító folyamatok</p></item>
+     <item><p>különféle <app>GVFS</app> folyamatok</p></item>
+   </list>
+
+</page>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="lockdown-command-line" xml:lang="ko">
+
+  <info>
+    <link type="guide" xref="software#management"/>
+    <revision pkgversion="3.12" date="2014-06-18" status="review"/>
+
+    <credit type="author copyright">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>사용자가 명령줄에 접근하지 못하도록 차단합니다.</desc>
+  </info>
+
+  <title>명령줄 접근 비활성화</title>
+
+  <p>아래에 설명된 단계에 따라, 가상 터미널과 터미널 애플리케이션을 통해 명령줄로 접근하려는 사용자를 막을 수 있습니다.</p>
+
+  <list>
+    <item>
+      <p><keyseq><key>Alt</key><key>F2</key></keyseq> 명령 프롬프트에 접근하는 사용자를 막습니다.</p>
+    </item>
+    <item>
+      <p>가상 터미널 (VT) 드롭을 비활성화합니다.</p>
+    </item>
+    <item>
+      <p><app>Terminal</app>과 GNOME 셸의 <gui>Activities</gui>의 다른 모든 터미널 애플리케이션을 지웁니다. 사용자가 터미널 애플리케이션을 새롭게 설치하는 것을 차단해야합니다.</p>
+    </item>
+  </list>
+
+<section id="command-prompt">
+  <title>명령 프롬프트 비활성화</title>
+
+  <steps>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-user'])"/>
+    <item>
+      <p><file>/etc/dconf/db/local.d/00-lockdown</file>에 컴퓨터의 전반적인 설정에 대한 <sys>local</sys> 데이터베이스를 생성하세요:</p>
+      <code># dconf 경로 명시
+[org/gnome/desktop/lockdown]
+
+# 명령 프롬프트 비활성화
+disable-command-line=true</code>
+    </item>
+    <item>
+      <p>Override the user’s setting and prevent the user from changing it in
+      <file>/etc/dconf/db/local.d/locks/lockdown</file>:</p>
+      <code># 잠금을 설정하기 위한 키 목록
+/org/gnome/desktop/lockdown/disable-command-line</code>
+    </item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-logoutin'])"/>
+  </steps>
+</section>
+
+<section id="virtual-terminal">
+  <title>가상 터미널 드롭 비활성화</title>
+
+  <p>바로가기키 <keyseq><key>Ctrl</key><key>Alt</key><key><var>function key</var></key></keyseq> (예를 들어, <keyseq><key>Ctrl</key><key>Alt</key><key>F2</key></keyseq>)를 사용하여 GNOME 데스크톱에서 가상 터미널로 전환 할 수 있습니다.</p>
+
+  <p><em>X Window System</em>가 실행되고 있다면, <file>/etc/X11/xorg.conf.d</file> 파일에 있는 <code>Serverflags</code> 섹션에 <code>DontVTSwitch</code> 옵션을 추가함으로써 모든 가상 터미널에 접근을 비활성화 시킬 수 있습니다.</p>
+
+  <steps>
+    <item>
+      <p><file>/etc/X11/xorg.conf.d</file>에 X 구성 파일을 생성하거나 수정하세요:</p>
+      <code>섹션 "Serverflags"
+
+옵션 "DontVTSwitch" "yes"
+
+EndSection</code>
+    </item>
+    <item>
+      <p>변경 사항을 적용시키기 위해 GDM을 재시작하세요.</p>
+    </item>
+  </steps>
+
+</section>
+
+<!-- TODO: add section for removing applications from the Activities overview. -->
+</page>

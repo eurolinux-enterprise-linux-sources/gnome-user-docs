@@ -38,7 +38,7 @@ application from the <gui>Activities</gui> overview, and click
 <gui>Other Locations</gui> in the sidebar. The file manager
 will find any computers on your local area network that advertize
 their ability to serve files. If you want to connect to a server
-on the internet, or if you do not see the computer you're looking
+on the internet, or if you do not see the computer you’re looking
 for, you can manually connect to a server by typing in its
 internet/network address.</p>
 
@@ -96,7 +96,8 @@ internet/network address.</p>
     <p><sys>ssh://username@servername.example.com/folder</sys></p>
   </example>
 
-  <p>જ્યારે SSH ને વાપરી રહ્યા હોય, બધી માહિતી જે તમે મોકલી છે (તમારાં પાસવર્ડને સમાવી રહ્યા છે) એનક્રિપ્ટ થયેલ છે કે તમારાં નેટવર્ક પર બીજા વપરાશકર્તાઓ તેને જોઇ શકતા નથી.</p>
+  <p>When using SSH, all the data you send (including your password)
+  is encrypted so that other users on your network can’t see it.</p>
 </item>
 <item>
   <title>FTP (પ્રવેશ સાથે)</title>
@@ -129,7 +130,11 @@ internet/network address.</p>
 </item>
 <item>
   <title>WebDAV અને સુરક્ષિત WebDAV</title>
-  <p>વેબ પર વાપરેલ HTTP પ્રોટોકોલ પર આધારિત છે, WebDAV કોઇકવાર સ્થાનિક નેટવર્ક પર ફાઇલોને વહેંચવા માટે વાપરેલ છે અને ઇન્ટરનેટ પર સંગ્રહવા માટે. જો સર્વર જે તમે સુરક્ષિત જોડાણ આધાર આપવા માટે જોડાઇ રહ્યુ છે, તમે આ વિકલ્પને પસંદ કરવુ જોઇએ. સુરક્ષિત WebDAV એ મજબૂત SSL એનક્રિપ્શનને વાપરે છે, તેથી બીજા વપરાશકર્તાઓ તમારાં પાસવર્ડને જોઇ શકતા નથી.</p>
+  <p>Based on the HTTP protocol used on the web, WebDAV is sometimes used to
+  share files on a local network and to store files on the internet. If the
+  server you’re connecting to supports secure connections, you should choose
+  this option. Secure WebDAV uses strong SSL encryption, so that other users
+  can’t see your password.</p>
   <p>A WebDAV URL looks like this:</p>
   <example>
     <p><sys>dav://example.hostname.com/path</sys></p>

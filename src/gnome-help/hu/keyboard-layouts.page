@@ -46,7 +46,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Kelemen Gábor</mal:name>
       <mal:email>kelemeng at gnome dot hu</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015, 2016, 2017</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -83,12 +83,19 @@
       <p>Nyissa meg a <gui xref="shell-introduction#activities">Tevékenységek</gui> áttekintést, és kezdje el begépelni a <gui>Terület és nyelv</gui> kifejezést.</p>
     </item>
     <item>
-      <p>Kattintson a <gui>Terület és nyelv</gui> ikonra a panel megnyitásához.</p>
+      <p>Kattintson a <gui>Terület és nyelv</gui> elemre a panel megnyitásához.</p>
     </item>
     <item>
       <p>Nyomja meg a <gui>+</gui> gombot a <gui>Bemeneti források</gui> szakaszban, válassza ki a kiosztáshoz tartozó nyelvet, és nyomja meg a <gui>Hozzáadás</gui> gombot.</p>
     </item>
   </steps>
+
+  <note style="tip">
+    <p>Ha a rendszeren több felhasználói fiók is van, akkor a <gui>Terület és nyelv</gui> panelből egy külön példány is elérhető a bejelentkezési képernyőhöz. Kattintson a jobb felső <gui>Bejelentkezési képernyő</gui> gombra a két példány közti váltáshoz.</p>
+
+    <p>Egyes ritkábban használt billentyűzet-kiosztás változatok nem érhetők el alapesetben a <gui>+</gui> gombra kattintáskor. Ezen beviteli források elérhetővé tételéhez </p>
+    <p><cmd its:translate="no">gsettings set org.gnome.desktop.input-sources show-all-sources true</cmd></p>
+  </note>
 
   <note style="sidebar">
     <p>Bármely kiosztás képét megjelenítheti. Válassza ki a <gui>Bemeneti források</gui> listából a kiosztást, majd nyomja meg az <gui><media its:translate="no" type="image" src="figures/input-keyboard-symbolic.png" width="16" height="16"><span its:translate="yes">előnézet</span></media></gui> gombot.</p>

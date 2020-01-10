@@ -8,6 +8,7 @@
     <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
     <revision pkgversion="3.10" date="2013-11-11" status="review"/>
     <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.28" date="2018-03-28" status="review"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -41,21 +42,26 @@
   <steps>
     <title>Když chcete svoji síť nastavit ručně:</title>
     <item>
-      <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Síť</gui>.</p>
+      <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Nastavení</gui>.</p>
     </item>
     <item>
-      <p>Kliknutím na <gui>Síť</gui> otevřete příslušný panel.</p>
+      <p>Klikněte na <gui>Nastavení</gui>.</p>
     </item>
     <item>
-      <p>V levém panelu vyberte síťové připojení, které chcete ručně nastavit. Když jste k síti připojeni kabelem, klikněte na <gui>Drátové</gui> a pak klikněte na tlačítko <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">nastavení</span></media> v pravém dolním rohu panelu. U připojení <gui>Wi-Fi</gui> je tlačítko <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">nastavení</span></media> umístěno vedle aktivní sítě.</p>
+      <p>V levém panelu vyberte síťové připojení, které chcete ručně nastavit. Když jste k síti připojeni kabelem, klikněte na <gui>Síť</gui>, a když bezdrátově, tak na <gui>Wi-Fi</gui></p>
       <p>Ujistěte se, že vaše bezdrátová karta je zapnutá, nebo že síťový kabel je zastrčený.</p>
     </item>
-    <item>
-      <p>Klikněte na <gui>IPv4</gui> a změňte <gui>Adresy</gui> na <gui>Ruční</gui>.</p>
+    <item>      
+      <p>Klikněte na tlačítko <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">nastavení</span></media>.</p>
+      <note>
+        <p>Pro připojení přes <gui>Wi-Fi</gui> se tlačítko <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">nastavení</span></media> nachází vedle aktivní sítě.</p>
+      </note>
     </item>
     <item>
-      <p>Zadejte <gui>Adresu</gui> a <gui>Bránu</gui>, včetně příslušné <gui>Masky sítě</gui>.</p>
-      <p>Musí se jednat o <em>adresu IP</em>, tzn. o čtyři čísla oddělená tečkou (např. 123.45.6.78).</p>
+      <p>Klikněte na <gui>IPv4</gui> nebo <gui>IPv6</gui> v levém panelu a změňte <gui>Adresy</gui> na <em>Ruční</em>.</p>
+    </item>
+    <item>
+      <p>Zadejte <gui xref="net-what-is-ip-address">Adresu IP</gui> a <gui>Bránu</gui>, včetně příslušné <gui>Masky sítě</gui>.</p>
     </item>
     <item>
       <p>V části <gui>DNS</gui> přepněte <gui>Automatické</gui> na <gui>○</gui> (vypnuto). Zadejte adresu IP serveru DNS, který chcete používat. Pomocí tlačítka <gui>+</gui> můžete přidat další servery DNS.</p>

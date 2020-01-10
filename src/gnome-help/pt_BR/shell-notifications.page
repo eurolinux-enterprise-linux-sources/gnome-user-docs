@@ -25,8 +25,7 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Messages drop down from the top of the screen telling you when
-    certain events happen.</desc> 
+    <desc>Mensagens surgem na parte superior da tela lhe informando quando certos eventos acontecem.</desc> 
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Rodolfo Ribeiro Gomes</mal:name>
       <mal:email>rodolforg@gmail.com</mal:email>
@@ -48,7 +47,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Rafael Fontenelle</mal:name>
       <mal:email>rafaelff@gnome.org</mal:email>
-      <mal:years>2012-2016.</mal:years>
+      <mal:years>2012-2018.</mal:years>
     </mal:credit>
   </info>
 
@@ -57,18 +56,14 @@
 <section id="what">
   <title>O que é uma notificação?</title>
 
-  <p>If an application or a system component wants to get your attention, a
-  notification will be shown at the top of the screen.</p>
+  <p>Se um aplicativo ou um componente do sistema quer obter sua atenção, uma notificação será mostrada na parte superior da tela.</p>
 
-  <p>For example, if you get a new chat message or a new email, you will get a
-  notification informing you.</p>
+  <p>Por exemplo, se você recebe uma nova mensagem de bate-papo, você receberá uma notificação lhe informando disso.</p>
 
 <!--  <p>To minimize distraction, some notifications first appear as a single line.
   You can move your mouse over them to see their full content.</p>-->
 
-  <p>Outras notificações possuem botões de opção selecionável. Para fechar uma dessas notificações sem selecionar uma de suas opções, clique on botão fechar.</p>
-
-<!--  <media type="image" width="500" src="figures/notification-buttons.png"/>-->
+  <p>Outras notificações possuem botões de opção selecionável. Para fechar uma dessas notificações sem selecionar uma de suas opções, clique no botão fechar.</p>
 
   <p>Ao clicar no botão fechar em algumas notificações, está dispensando-as. Outros como Rhythmbox ou seu aplicativo de bate-papo, vão permanecer ocultos na área de notificação.</p>
 
@@ -78,12 +73,7 @@
 
   <title>A área de notificação</title>
 
-  <p if:test="!platform:gnome-classic">The message tray gives you a way to get
-  back to your notifications when it is convenient for you. It appears when you
-  click on the clock, or press
-  <keyseq><key xref="keyboard-key-super">Super</key><key>M</key></keyseq>. The
-  message tray contains all the notifications that you have not acted upon or
-  that permanently reside in it.</p>
+  <p if:test="!platform:gnome-classic">A área de notificação lhe fornece uma maneira de recuperar suas notificações quando lhe for conveniente. Ela aparece quando você clica no relógio, o pressiona <keyseq><key xref="keyboard-key-super">Super</key><key>M</key></keyseq>. A área de notificação contém todas as notificações sobre as quais você não tomou uma atitude ou que residem permanentemente lá.</p>
 
   <p if:test="platform:gnome-classic">A área de notificação lhe fornece uma maneira de recuperar suas notificações quando lhe for conveniente. Ela aparece quando você move o mouse para o canto inferior direito da tela ou pressiona <keyseq> <key xref="keyboard-key-super">Super</key><key>M</key></keyseq>. Você também pode mostrar a área de notificação clicando no ícone de número azul no lado direito da lista de janelas. Nela estão todas as notificações sobre as quais você não tomou uma atitude ou que residem permanentemente lá.</p>
 
@@ -101,35 +91,21 @@
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Notifications</gui>.</p>
+      <p>Abra o panorama de <gui xref="shell-introduction#activities">Atividades</gui> e comece a digitar <gui>Notificações</gui>.</p>
     </item>
     <item>
       <p>Clique em <gui>Notificações</gui> para abrir o painel.</p>
     </item>
     <item>
-      <p>Switch <gui>Notification Banners</gui> to <gui>OFF</gui>.</p>
+      <p>Alterne <gui>Banners de notificação</gui> para <key>○</key>.</p>
     </item>
   </steps>
 
-  <p if:test="!platform:gnome-classic">When switched off, most notifications
-  will not pop up at the top of the screen. <!--Very important notifications, such
-  as when your battery is critically low, will still pop up.--> Notifications will
-  still be available in the message tray when you display it (by clicking on
-  the clock, or by pressing <keyseq><key>Super</key><key>M</key></keyseq>), and
-  they will start popping up again when you switch the toggle to <gui>ON</gui>
-  again.</p>
+  <p if:test="!platform:gnome-classic">Quando você desativa, a maioria das notificações não vai aparecer na parte inferior da tela. As notificações ainda estarão disponíveis na área de notificação ao exibi-la (clicando no relógio, ou pressionando <keyseq><key>Super</key><key>M</key></keyseq>) e as notificações serão mostradas quando você reativá-las alterando para <key>❙</key> novamente.</p>
 
-  <p>You can also disable or re-enable notifications for individual
-  applications from the <gui>Notifications</gui> panel.</p>
+  <p>Você também pode desabilitar ou reabilitar notificações para aplicativos individuais a partir do painel de <gui>Notificações</gui>.</p>
 
-  <p if:test="platform:gnome-classic">When switched off, most notifications will
-  not pop up at the bottom of the screen. Very important notifications, such as
-  when your battery is critically low, will still pop up. Notifications will
-  still be available in the message tray when you display it (by moving your mouse
-  to the bottom-right corner of the screen, or by pressing <keyseq><key>Super</key>
-  <key>M</key></keyseq>), and they will start popping up again when you switch the
-  toggle to <gui>ON</gui> again.</p>
+  <p if:test="platform:gnome-classic">Ao desativar, a maioria das notificações não aparecerá na parte inferior da tela. Notificações muito importantes, como quando a carga da sua bateria está em nível crítico, ainda aparecerão. As notificações ainda estarão disponíveis na área de notificação ao exibi-la (movendo o mouse para o canto inferior direito da tela ou pressionando <keyseq><key>Super</key><key>M</key></keyseq>) e as notificações serão mostradas quando você reativá-las alterando para <key>❙</key> novamente.</p>
 
 </section>
 

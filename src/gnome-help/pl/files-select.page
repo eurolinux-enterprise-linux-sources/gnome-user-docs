@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-select" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="files#faq"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-28" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Naciśnij klawisze <keyseq><key>Ctrl</key><key>S</key></keyseq>, aby zaznaczyć wiele plików z podobnymi nazwami.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Zaznaczanie plików według wzorów</title>
+
+  <p>Można zaznaczyć pliki w katalogu za pomocą wzoru nazw plików. Naciśnij klawisze <keyseq><key>Ctrl</key><key>S</key></keyseq>, aby otworzyć okno <gui>Zaznaczenie pasujących elementów</gui>. Wpisz wzór za pomocą wspólnych części nazw plików plus wieloznaczniki. Dostępne są dwa:</p>
+
+  <list style="compact">
+    <item><p><file>*</file> dopasowuje dowolną liczbę dowolnych znaków, nawet zero.</p></item>
+    <item><p><file>?</file> dopasowuje dokładnie jeden znak.</p></item>
+  </list>
+
+  <p>Na przykład:</p>
+
+  <list>
+    <item><p>Jeśli plik tekstowy OpenDocument, plik PDF i plik obrazu mają tą samą nazwę <file>Faktura</file>, to zaznacz wszystkie trzy za pomocą wzoru</p>
+    <example><p><file>Faktura.*</file></p></example></item>
+
+    <item><p>Jeśli zdjęcia mają nazwy <file>Wakacje-001.jpg</file>, <file>Wakacje-002.jpg</file>, <file>Wakacje-003.jpg</file> itd., to zaznacz je za pomocą wzoru</p>
+    <example><p><file>Wakacje-???.jpg</file></p></example></item>
+
+    <item><p>Jeśli zdjęcia mają nazwy jak wyżej, ale zmieniono niektóre z nich i dodano <file>-zmienione</file> na końcu ich nazw, to zaznacz zmienione zdjęcia za pomocą</p>
+    <example><p><file>Wakacje-???-zmienione.jpg</file></p></example></item>
+  </list>
+
+</page>

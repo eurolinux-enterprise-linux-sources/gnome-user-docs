@@ -22,39 +22,41 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Map the Wacom tablet to a specific monitor.</desc>
+    <desc>Het Wacom-tablet aan een bepaald beeldscherm koppelen.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Justin van Steijn</mal:name>
+      <mal:email>justin50@live.nl</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hannie Dumoleyn</mal:name>
+      <mal:email>hannie@ubuntu-nl.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
   </info>
 
-  <title>Choose a monitor</title>
+  <title>Een monitor kiezen</title>
 
 <steps>
   <item>
-    <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-    start typing <gui>Wacom Tablet</gui>.</p>
+    <p>Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht en typ <gui>Wacom-tablet</gui>.</p>
   </item>
   <item>
-    <p>Click on <gui>Wacom Tablet</gui> to open the panel.</p>
+    <p>Klik op <gui>Wacom-tablet</gui> om het paneel te openen.</p>
     <!-- TODO: document how to connet the tablet using Bluetooth/add link -->
-    <note style="tip"><p>If no tablet is detected, you'll be asked to
-    <gui>Please plug in or turn on your Wacom tablet</gui>. Click the
-    <gui>Bluetooth Settings</gui> link to connect a wireless tablet.</p></note>
+    <note style="tip"><p>Als er geen tablet gedetecteerd is ziet u de opmerking <gui> Sluit het Wacom-tablet aan en zet het aan</gui>. Klik op de <gui>Bluetooth-instellingen</gui>-link om met een draadloze tablet te verbinden.</p></note>
   </item>
-  <item><p>Click <gui>Map to Monitor…</gui></p></item>
-  <item><p>Check <gui>Map to single monitor</gui>.</p></item>
-  <item><p>Next to <gui>Output</gui>, select the monitor you wish to receive
-   input from your graphics tablet.</p>
-     <note style="tip"><p>Only the monitors that are configured will be
-      selectable.</p></note>
+  <item><p>Klik op <gui>Map to Monitor…</gui>.</p></item>
+  <item><p>Plaats een vinkje bij <gui>Koppelen aan één monitor</gui></p></item>
+  <item><p>Selecteer bij <gui>Uitvoer</gui> de monitor waar de invoer van uw tekentablet naartoe moet.</p>
+     <note style="tip"><p>U kunt alleen monitoren die geconficureerd zijn kiezen.</p></note>
   </item>
   <item>
-    <p>Switch <gui>Keep aspect ratio (letterbox)</gui> to <gui>ON</gui> to
-    match the drawing area of the tablet to the proportions of the monitor.
-      This setting, also called <em>force proportions</em>,
-      <em>letterboxes</em> the drawing area on a tablet to correspond more
-      directly to a display. For example, a 4∶3 tablet would be mapped so that
-      the drawing area would correspond to a widescreen display.</p>
+    <p>Zet <gui>Beeldverhouding behouden (zwarte balken)</gui> AAN om het tekengebied van het tablet overeen te laten komen met de verhoudingen van de monitor. Deze instelling, ook wel <em>verhoudingen forceren</em> genoemd, <em>plaatst zwarte balken</em> in het tekengebied van een tablet zodat het beter overeenkomt met het scherm. Zo zou een 4:3 tablet aangepast worden zodat het tekengebied overeenkomt met een breedbeeldscherm.</p>
   </item>
-  <item><p>Click <gui>Close</gui>.</p></item>
+  <item><p>Klik op <gui>Sluiten</gui>.</p></item>
 </steps>
 
 </page>

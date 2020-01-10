@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="login-enterprise" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="login#management"/>
+    <revision pkgversion="3.12" date="2014-01-28" status="draft"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Active Directory vagy IPA tartományi hitelesítési adatok használata a GNOME-ba történő bejelentkezéshez.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>ur.balazs@fsf.hu</mal:email>
+      <mal:years>2018.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Vállalati hitelesítési adatok használata a GNOME-ba történő bejelentkezéshez</title>
+  
+  <p>Ha a hálózaton van elérhető Active Directory vagy IPA tartomány, és ön rendelkezik tartományi fiókkal, akkor használhatja a tartományi hitelesítési adatait a GNOME-ba történő bejelentkezéshez.</p>
+  <p>Ha a számítógép sikeresen be lett állítva a tartományi fiókokhoz, akkor a felhasználók a fiókjuk használatával jelentkezhetnek be a GNOME-ba. A bejelentkezési parancssornál írja be a tartományi felhasználónevét, azt követően egy <sys>@</sys> jelet, majd a tartomány nevét. Például ha a tartományneve <var>example.com</var> és a felhasználóneve <var>User</var>, akkor ezt írja be:</p>
+  <screen><input>User@example.com</input></screen>
+  <p>Azokban az esetekben, ahol a számítógép már be van állítva a tartományi fiókokhoz, egy hasznos tippet kell látnia, amely ismerteti a bejelentkezési formátumot.</p>
+
+  <section id="enterprise-login-welcome-screens">
+    <title>Vállalati hitelesítési adatok használata az üdvözlőképernyők közben</title>
+    <p>Ha még nem állította be a számítógépet a vállalati hitelesítési adatokhoz, akkor ezt megteheti az <gui>Üdvözlő</gui> képernyőkön, amely a <app>GNOME kezdeti beállítás</app> program része.</p>
+    <steps>
+    <title>Vállalati hitelesítési adatok beállítása</title>
+      <item>
+        <p>A <gui>Bejelentkezési</gui> üdvözlőképernyőn válassza ki a <gui>Vállalati bejelentkezés beállítása</gui> lehetőséget.</p>
+      </item>
+      <item>
+        <p>Írja be a tartomány nevét a <gui>Tartomány</gui> mezőbe, ha még nincs előre kitöltve.</p>
+      </item>
+      <item>
+        <p>Írja be a tartományi fiók felhasználónevét és jelszavát a megfelelő mezőkbe.</p>
+      </item>
+      <item>
+        <p>Kattintson a <gui>Következő</gui> gombra.</p>
+      </item>
+    </steps>
+    <p>Attól függően, hogy a tartomány hogyan van beállítva, egy felugró ablak jelenhet meg a tartományi adminisztrátor nevét és jelszavát kérve a folytatáshoz.</p>
+  </section>
+  <section id="enterprise-login-change-to">
+    <title>Változtatások a vállalati hitelesítési adatok használatához a GNOME-ba történő bejelentkezésnél</title>
+    <p>Ha már befejezte a kezdeti beállítást, és szeretne egy tartományi fiókot indítani a GNOME-ba történő bejelentkezéshez, akkor ezt a GNOME beállításaiban lévő Felhasználók panelről valósíthatja meg.</p>
+  <steps>
+    <title>Vállalati hitelesítési adatok beállítása</title>
+    <item>
+      <p>Nyissa meg a <gui href="help:gnome-help/shell-terminology">Tevékenységek</gui> áttekintőt, és kezdje el gépelni a <gui>Felhasználók</gui> szót.</p>
+    </item>
+    <item>
+      <p>Kattintson a <gui>Felhasználókra</gui> a panel megnyitásához.</p>
+    </item>
+    <item>
+      <p>Kattintson a <gui>Feloldás</gui> gombra, és írja be a számítógép adminisztrátorának jelszavát.</p>
+    </item>
+    <item>
+      <p>Kattintson a <gui>[+]</gui> gombra az ablak bal alsó részén.</p>
+    </item>
+    <item>
+      <p>Kattintson a <gui>Vállalati bejelentkezés</gui> gombra.</p>
+    </item>
+    <item>
+      <p>Adja meg a vállalati fiókjának tartományát, felhasználónevét és jelszavát, majd kattintson a <gui>Hozzáadás</gui> gombra.</p>
+   </item>
+  </steps>
+  <p>Attól függően, hogy a tartomány hogyan van beállítva, egy felugró ablak jelenhet meg a tartományi adminisztrátor nevét és jelszavát kérve a folytatáshoz.</p>
+  </section>
+  <section id="enterprise-login-troubleshoot">
+    <title>Hibaelhárítás és speciális beállítások</title>
+    <p>A <cmd>realm</cmd> parancs és annak különféle alparancsai használhatók a vállalati bejelentkezési funkció hibaelhárításhoz. Például annak megtekintéséhez, hogy a számítógép be lett-e állítva a vállalati bejelentkezésekhez, futtassa a következő parancsot:</p>
+    <screen><output>$ </output><input>realm list</input></screen>
+    <p>A hálózati adminisztrátorokat arra ösztönzik, hogy előre csatlakoztassák a munkaállomásokat egy megfelelő tartományhoz. Ezt a <cmd>realm join</cmd> kezdőparancs használatával lehet elvégezni, vagy a <cmd>realm join</cmd> automatizált módon történő futtatásával egy parancsfájlból.</p>
+  </section>
+  <section id="enterprise-login-more-information">
+     <title>További információk beszerzése</title>
+   <list>
+    <item>
+      <p>A realmd <link href="http://www.freedesktop.org/software/realmd/docs/">adminisztrációs útmutatója</link> részletesebb információkat nyújt a vállalati bejelentkezési funkcióról.</p>
+    </item>
+   </list>
+  </section>
+
+</page>

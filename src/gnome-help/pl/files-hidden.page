@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-hidden" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="files#faq"/>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-29" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="candidate"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Ustawianie pliku jako niewidoczny w menedżerze plików.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Ukrywanie pliku</title>
+
+  <p>Menedżer plików <app>Pliki</app> umożliwia ukrywanie i odkrywanie plików według uznania. Kiedy plik jest ukryty, nie jest wyświetlany w menedżerze plików, ale nadal jest w swoim katalogu.</p>
+
+  <p>Aby ukryć plik, <link xref="files-rename">zmień jego nazwę</link> tak, aby zaczynała się od znaku <file>.</file>. Na przykład, aby ukryć plik o nazwie <file>przykład.txt</file>, należy zmienić jego nazwę na <file>.przykład.txt</file>.</p>
+
+<note>
+  <p>Można ukrywać katalogi w ten sam sposób, co pliki. Ukryj katalog umieszczając znak <file>.</file> na początku jego nazwy.</p>
+</note>
+
+<section id="show-hidden">
+ <title>Wyświetlanie wszystkich ukrytych plików</title>
+
+  <p>Aby wyświetlić wszystkie ukryte pliki w katalogu, przejdź do niego i kliknij przycisk opcji widoku na pasku narzędziowym, a następnie zaznacz opcję <gui>Ukryte pliki</gui>, albo naciśnij klawisze <keyseq><key>Ctrl</key><key>H</key></keyseq>. Zostaną wyświetlone wszystkie ukryte pliki razem ze zwykłymi, nieukrytymi plikami.</p>
+
+  <p>Aby z powrotem je ukryć, kliknij przycisk opcji widoku na pasku narzędziowym i odznacz opcję <gui>Ukryte pliki</gui>, albo ponownie naciśnij klawisze <keyseq><key>Ctrl</key><key>H</key></keyseq>.</p>
+
+</section>
+
+<section id="unhide">
+ <title>Odkrywanie pliku</title>
+
+  <p>Aby odkryć plik, przejdź do zawierającego do katalogu i kliknij przycisk opcji widoku na pasku narzędziowym, a następnie zaznacz opcję <gui>Ukryte pliki</gui>. Znajdź ukryty plik i zmień jego nazwę tak, aby nie zaczynała się od znaku <file>.</file>. Na przykład, aby odkryć plik o nazwie <file>.przykład.txt</file>, należy zmienić jego nazwę na <file>przykład.txt</file>.</p>
+
+  <p>Po zmianie nazwy pliku można kliknąć przycisk opcji widoku na pasku narzędziowym i odznaczyć opcję <gui>Ukryte pliki</gui> lub nacisnąć klawisze <keyseq><key>Ctrl</key><key>H</key></keyseq>, aby ponownie ukryć pozostałe ukryte pliki.</p>
+
+  <note><p>Domyślnie ukryte pliki będą wyświetlane w menedżerze plików do jego zamknięcia. <link xref="nautilus-views"/> zawiera informacje, jak zmienić to ustawienie, aby menedżer plików zawsze wyświetlał ukryte pliki.</p></note>
+
+  <note><p>Większość ukrytych plików ma znak <file>.</file> na początku nazwy, ale inne mogą mieć znak <file>~</file> na końcu nazwy. Są to pliki kopii zapasowych. <link xref="files-tilde"/> zawiera więcej informacji.</p></note>
+
+</section>
+
+</page>

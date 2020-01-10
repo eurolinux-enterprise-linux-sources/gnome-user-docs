@@ -27,46 +27,44 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>The unique identifier assigned to network hardware.</desc>
+    <desc>De unieke code toegekend aan netwerkhardware.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Justin van Steijn</mal:name>
+      <mal:email>justin50@live.nl</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hannie Dumoleyn</mal:name>
+      <mal:email>hannie@ubuntu-nl.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
   </info>
 
-  <title>What is a MAC address?</title>
+  <title>Wat is een MAC-adres?</title>
 
-  <p>A <em>MAC address</em> is the unique identifier that is assigned by the
-  manufacturer to a piece of network hardware (like a wireless card or an
-  ethernet card). MAC stands for <em>Media Access Control</em>, and each
-  identifier is intended to be unique to a particular device.</p>
+  <p>Een <em>MAC-adres</em> is een uniek identificatienummer dat door de fabrikant is toegekend aan een hardwareonderdeel (zoals een draadloze kaart of een ethernetkaart). MAC staat voor <em>Media Access Control</em>, en het is de bedoeling dat elk apparaat een ander identificatienummer heeft.</p>
 
-  <p>A MAC address consists of six sets of two characters, each separated by a
-  colon. <code>00:1B:44:11:3A:B7</code> is an example of a MAC address.</p>
+  <p>Een MAC-adres bestaat uit zes sets van twee tekens, elk gescheiden door een dubbele punt. <code>00:1B:44:11:3A:B7</code> is een voorbeeld van een MAC-adres.</p>
 
-  <p>To identify the MAC address of your own network hardware:</p>
+  <p>Het identificeren van het MAC-adres van uw eigen netwerkhardware:</p>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Network</gui>.</p>
+      <p>Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht en typ <gui>Netwerk</gui>.</p>
     </item>
     <item>
-      <p>Click on <gui>Network</gui> to open the panel.</p>
+      <p>Klik op <gui>Netwerk</gui> om het paneel te openen.</p>
     </item>
     <item>
-      <p>Choose which device, <gui>Wi-Fi</gui> or <gui>Wired</gui>, from
-      the left pane.</p>
-      <p>The MAC address for the wired device will be displayed as the
-      <gui>Hardware Address</gui> on the right.</p>
+      <p>Kies welk apparaat, <gui>Wifi</gui> of <gui>Bekabeld</gui>, in het linkerpaneel.</p>
+      <p>Het MAC-adres voor het aangesloten apparaat zal rechts weergegeven worden als <gui>Hardware-adres</gui>.</p>
       
-      <p>Click the
-      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
-      button to see the MAC address for the wireless device displayed as the
-      <gui>Hardware Address</gui> in the <gui>Details</gui> panel.</p>
+      <p>Klik op de <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">instellingen</span></media>-knop voor het MAC-adres van het draadloze apparaat dat weergegeven wordt als het <gui>Hardware-adres</gui> in het paneel <gui>Details</gui>.</p>
     </item>
   </steps>
 
-  <p>In practice, you may need to modify or "spoof" a MAC address. For example,
-  some internet service providers may require that a specific MAC address be
-  used to access their service. If the network card stops working, and you need
-  to swap a new card in, the service won't work anymore. In such cases, you
-  would need to spoof the MAC address.</p>
+  <p>In de praktijk kan het zijn dat het wijzigen of ‘spoofen’ van een MAC-adres nodig is. Zo kunnen sommige internetproviders eisen dat er een bepaald MAC-adres gebruikt wordt om toegang te krijgen tot hun dienst. Als de netwerkkaart niet meer werkt, en u deze moet verruilen voor een nieuwe kaart, dan werkt de dienst niet meer. In een dergelijk geval dient u het MAC-adres te ‘spoofen’.</p>
 
 </page>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="color-notifications" xml:lang="pt">
+
+  <info>
+    <link type="guide" xref="color#problems"/>
+    <link type="seealso" xref="color-why-calibrate"/>
+
+    <revision pkgversion="3.7.1" version="0.2" date="2012-11-16" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-04" status="review"/>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Pode receber uma notificação se seu perfil de cor é antiga ou não é preciso.</desc>
+  </info>
+
+  <title>Posso obter uma notificação quando meu perfil de cor não é preciso?</title>
+
+  <p>Pode estabelecer um lembrete para recalibrar seus dispositivos passado certo tempo. Por desgraça, não é possível dizer se um perfil dum dispositivo sem recalibrar é preciso, pelo que o melhor é recalibrar os dispositivos regularmente.</p>
+
+  <p>Algumas empresas têm umas diretoras muito especificas para fazer que seus perfis caduquen, já que perfis de cor imprecisos podem marcar uma diferença enorme num produto final.</p>
+
+  <p>Se estabelece a diretora de tempo de caducidad e um perfil é mais antigo que a diretora então mostrar-se-á um triângulo vermelho de advertência no diálogo <gui>Cor</gui> junto ao perfil. Também mostrar-se-á uma notificação de advertência a cada vez que inicie sessão na sua computador.</p>
+
+  <p>Para estabelecer o regulamento para dispositivos de ecrã e impressoras, especifique o tempo máximo de aplicação do regulamento, em dias:</p>
+
+<screen>
+<output style="prompt">$ </output><input>gsettings set org.gnome.settings-daemon.plugins.color recalibrate-printer-threshold 180</input>
+<output style="prompt">$ </output><input>gsettings set org.gnome.settings-daemon.plugins.color recalibrate-display-threshold 90</input>
+</screen>
+
+</page>

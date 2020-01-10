@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="dconf-custom-defaults" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="setup"/>
+    <link type="seealso" xref="dconf-profiles"/>
+    <link type="seealso" xref="dconf-lockdown"/>
+    <link type="seealso" xref="dconf"/>
+    <revision pkgversion="3.6" version="0.1" date="2012-05-21" status="draft"/>
+
+    <credit type="author copyright">
+      <name>Ryan Lortie</name>
+      <email>desrt@desrt.ca</email>
+      <years>2012</years>
+    </credit>
+    <credit type="author copyright">
+      <name>Jeremy Bicha</name>
+      <email>jbicha@ubuntu.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="author copyright">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Jana Svarova</name>
+      <email>jana.svarova@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Legen Sie systemweite Voreinstellungen mit <sys its:translate="no">dconf</sys>-Profilen fest.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Benutzerdefinierte Vorgabewerte für Systemeinstellungen</title>
+
+  <!-- TODO: reveiw against dconf-lockdown.page -->
+
+  <p>Systemweite Standardeinstellungen können Sie festlegen, indem Sie eine Voreinstellung für einen Schlüssel in einem <sys its:translate="no">dconf</sys>-Profil setzen. Diese Voreinstellungen können vom Benutzer außer Kraft gesetzt werden.</p>
+
+<section id="example">
+  <title>Einen Vorgabewert festlegen</title>
+
+  <p>Um eine Voreinstellung für einen Schlüssel festzulegen, muss das <sys>Benutzer</sys>profil vorhanden sein und der Wert für den Schlüssel muss zu einer <sys its:translate="no">dconf</sys>-Datenbank hinzugefügt worden sein.</p>
+
+  <steps>
+    <title>Beispiel zum Einrichten des Standardhintergrundes</title>
+    <item>
+      <p>Legen Sie das <file its:translate="no">user</file>-Profil an:</p>
+      <listing its:translate="no">
+        <title><file>/etc/dconf/profile/user</file></title>
+        <code>user-db:user
+system-db:local</code>
+      </listing>
+      <p><input its:translate="no">local</input> ist der Name einer <sys its:translate="no">dconf</sys>-Datenbank.</p>
+    </item>
+    <item>
+      <p>Erstellen Sie eine <em>Schlüsseldatei</em> für die <input its:translate="no">local</input>-Datenbank, welche die folgenden Einstellungen enthält:</p>
+      <listing its:translate="no">
+        <title><file>/etc/dconf/db/local.d/01-background</file></title>
+<code># <span its:translate="yes">dconf-Pfad</span>
+[org/gnome/desktop/background]
+
+# <span its:translate="yes">dconf-Schlüsselnamen und zugehörige Werte</span>
+picture-uri='file:///usr/local/share/backgrounds/wallpaper.jpg'
+picture-options='scaled'
+primary-color='000000'
+secondary-color='FFFFFF'</code>
+      </listing>
+    </item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+  </steps>
+
+  <note>
+    <p>Wenn das <sys its:translate="no">user</sys>-Profil erstellt oder verändert wird, muss sich der Benutzer abmelden und erneut anmelden, bevor die Änderungen wirksam werden.</p>
+  </note>
+
+</section>
+
+</page>

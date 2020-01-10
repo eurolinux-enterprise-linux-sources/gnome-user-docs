@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" version="1.0 ui/1.0" id="keyboard-shortcuts-set" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="keyboard"/>
+    <link type="seealso" xref="shell-keyboard-shortcuts"/>
+
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-23" status="review"/>
+    <revision pkgversion="3.9.92" date="2013-10-11" status="candidate"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+    <revision pkgversion="3.17.90" date="2015-08-30" status="candidate"/>
+
+    <credit type="author">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Julita Inca</name>
+      <email>yrazes@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Juanjo Marín</name>
+      <email>juanj.marin@juntadeandalucia.es</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Dodawanie i zmienianie skrótów klawiszowych w ustawieniach <gui>Klawiatury</gui>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ustawianie skrótów klawiszowych</title>
+
+<p>Aby zmienić klawisz lub klawisze do naciśnięcia dla skrótu:</p>
+
+  <steps>
+    <item>
+      <p>Otwórz <gui xref="shell-introduction#activities">ekran podglądu</gui> i zacznij pisać <gui>Klawiatura</gui>.</p>
+    </item>
+    <item>
+      <p>Kliknij <gui>Klawiatura</gui>, aby otworzyć panel.</p>
+    </item>
+    <item>
+      <p>Wybierz kartę <gui>Skróty</gui>.</p>
+    </item>
+    <item>
+      <p>Wybierz kategorię z lewego panelu i rząd dla wybranego działania po prawej. Obecnie określony skrót zostanie zmieniony na napis <gui>Nowy skrót…</gui></p>
+    </item>
+    <item>
+      <p>Przytrzymaj wybraną kombinację klawiszy lub naciśnij klawisz <key>Backspace</key>, aby usunąć wybór.</p>
+    </item>
+  </steps>
+
+
+<section id="defined">
+<title>Standardowe skróty</title>
+  <p>Jest wiele standardowych skrótów, które można zmieniać, pogrupowanych w te kategorie:</p>
+
+<table rules="rows" frame="top bottom" ui:expanded="false">
+<title>Uruchamianie</title>
+  <tr>
+	<td><p>Uruchamianie przeglądarki pomocy</p></td>
+	<td><p>Wyłączone</p></td>
+  </tr>
+  <tr>
+	<td><p>Uruchamianie kalkulatora</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-calculator.svg"> <key>Calculator</key> key symbol</media> lub <key>Kalkulator</key></p></td>
+  </tr>
+  <tr>
+	<td><p>Uruchamianie klienta poczty</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-mail.svg"> <key>Mail</key> key symbol</media> lub <key>Poczta</key></p></td>
+  </tr>
+  <tr>
+	<td><p>Uruchamianie przeglądarki WWW</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-world.svg"> <key>WWW</key> key symbol</media> lub <media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-home.svg"> <key>WWW</key> key symbol</media> lub <key>WWW</key></p></td>
+  </tr>
+  <tr>
+	<td><p>Katalog domowy</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-folder.svg"> <key>Explorer</key> key symbol</media> lub <media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-computer.svg"> <key>Explorer</key> key symbol</media> lub <key>Menedżer plików</key></p></td>
+  </tr>
+  <tr>
+	<td><p>Wyszukiwanie</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-search.svg"> <key>Search</key> key symbol</media> lub <key>Wyszukiwanie</key></p></td>
+  </tr>
+</table>
+
+<table rules="rows" frame="top bottom" ui:expanded="false">
+<title>Nawigacja</title>
+  <tr>
+	<td><p>Przenoszenie okna na 1. obszar roboczy</p></td>
+	<td><p>Wyłączone</p></td>
+  </tr>
+  <tr>
+	<td><p>Przenoszenie okna na 2. obszar roboczy</p></td>
+	<td><p>Wyłączone</p></td>
+  </tr>
+  <tr>
+	<td><p>Przenoszenie okna na 3. obszar roboczy</p></td>
+	<td><p>Wyłączone</p></td>
+  </tr>
+  <tr>
+	<td><p>Przenoszenie okna na 4. obszar roboczy</p></td>
+	<td><p>Wyłączone</p></td>
+  </tr>
+  <tr>
+	<td><p>Przenoszenie okna do obszaru roboczego po lewej</p></td>
+	<td><p><keyseq><key>Shift</key><key>Ctrl</key><key>Alt</key><key>←</key></keyseq></p></td>
+  </tr>
+  <tr>
+	<td><p>Przenoszenie okna do obszaru roboczego po prawej</p></td>
+	<td><p><keyseq><key>Shift</key><key>Ctrl</key><key>Alt</key><key>→</key></keyseq></p></td>
+  </tr>
+  <tr>
+	<td><p>Przenoszenie okna do obszaru roboczego na górze</p></td>
+	<td><p><keyseq><key>Shift</key><key xref="keyboard-key-super">Super</key> <key>Page Up</key></keyseq></p></td>
+  </tr>
+  <tr>
+	<td><p>Przenoszenie okna do obszaru roboczego na dole</p></td>
+	<td><p><keyseq><key>Shift</key><key>Super</key><key>Page Down</key></keyseq></p></td>
+  </tr>
+  <tr>
+	<td><p>Przełączanie programów</p></td>
+	<td><p><keyseq><key>Super</key><key>Tab</key></keyseq></p></td>
+  </tr>
+  <tr>
+  <td><p>Przełączanie okien</p></td>
+  <td><p>Wyłączone</p></td>
+  </tr>
+  <tr>
+	<td><p>Przełączanie okien programu</p></td>
+	<td><p>Wyłączone</p></td>
+  </tr>
+  <tr>
+	<td><p>Przełączanie elementów systemowych</p></td>
+	<td><p><keyseq><key>Ctrl</key><key>Alt</key><key>Tab</key></keyseq></p></td>
+  </tr>
+  <tr>
+	<td><p>Bezpośrednie przełączanie okien</p></td>
+	<td><p><keyseq><key>Alt</key><key>Esc</key></keyseq></p></td>
+  </tr>
+  <tr>
+	<td><p>Bezpośrednie przełączanie okien programu</p></td>
+	<td><p><keyseq><key>Alt</key><key>F6</key></keyseq></p></td>
+  </tr>
+  <tr>
+	<td><p>Bezpośrednie przełączanie elementów systemowych</p></td>
+	<td><p><keyseq><key>Ctrl</key><key>Alt</key><key>Esc</key></keyseq></p></td>
+  </tr>
+  <tr>
+	<td><p>Ukrywanie wszystkich zwykłych okien</p></td>
+	<td><p>Wyłączone</p></td>
+  </tr>
+  <tr>
+	<td><p>Przełączanie na 1. obszar roboczy</p></td>
+	<td><p>Wyłączone</p></td>
+  </tr>
+  <tr>
+	<td><p>Przełączanie na 2. obszar roboczy</p></td>
+	<td><p>Wyłączone</p></td>
+  </tr>
+  <tr>
+	<td><p>Przełączanie na 3. obszar roboczy</p></td>
+	<td><p>Wyłączone</p></td>
+  </tr>
+  <tr>
+	<td><p>Przełączanie na 4. obszar roboczy</p></td>
+	<td><p>Wyłączone</p></td>
+  </tr>
+  <tr>
+	<td><p>Przechodzenie do obszaru roboczego po lewej</p></td>
+	<td><p><keyseq><key>Ctrl</key><key>Alt</key><key>←</key></keyseq></p></td>
+  </tr>
+  <tr>
+	<td><p>Przechodzenie do obszaru roboczego po prawej</p></td>
+	<td><p><keyseq><key>Ctrl</key><key>Alt</key><key>→</key></keyseq></p></td>
+  </tr>
+  <tr>
+	<td><p>Przechodzenie do obszaru roboczego na górze</p></td>
+	<td><p><keyseq><key>Super</key><key>Page Up</key></keyseq></p></td>
+  </tr>
+  <tr>
+	<td><p>Przechodzenie do obszaru roboczego na dole</p></td>
+	<td><p><keyseq><key>Super</key><key>Page Down</key></keyseq></p></td>
+  </tr>
+</table>
+
+<table rules="rows" frame="top bottom" ui:expanded="false">
+<title>Zrzuty ekranu</title>
+  <tr>
+	<td><p>Zapisanie zrzutu ekranu do pliku</p></td>
+	<td><p><key>Print</key></p></td>
+  </tr>
+  <tr>
+	<td><p>Zapisanie zrzutu okna do pliku</p></td>
+	<td><p><keyseq><key>Alt</key><key>Print</key></keyseq></p></td>
+  </tr>
+  <tr>
+	<td><p>Zapisanie zrzutu obszaru do pliku</p></td>
+	<td><p><keyseq><key>Shift</key><key>Print</key></keyseq></p></td>
+  </tr>
+  <tr>
+	<td><p>Skopiowanie zrzutu ekranu do schowka</p></td>
+	<td><p><keyseq><key>Ctrl</key><key>Print</key></keyseq></p></td>
+  </tr>
+  <tr>
+	<td><p>Skopiowanie zrzutu okna do schowka</p></td>
+	<td><p><keyseq><key>Ctrl</key><key>Alt</key><key>Print</key></keyseq></p></td>
+  </tr>
+  <tr>
+	<td><p>Skopiowanie zrzutu obszaru do schowka</p></td>
+	<td><p><keyseq><key>Shift</key><key>Ctrl</key><key>Print</key></keyseq></p></td>
+  </tr>
+  <tr>
+  <td><p>Nagranie pulpitu</p></td>
+  <td><p><keyseq><key>Shift</key><key>Ctrl</key><key>Alt</key><key>R</key> </keyseq></p></td>
+  </tr>
+</table>
+
+<table rules="rows" frame="top bottom" ui:expanded="false">
+<title>Dźwięk i multimedia</title>
+  <tr>
+	<td><p>Wyciszenie</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-mute.svg"> <key>Mute</key> key symbol</media> (Wyciszenie dźwięku)</p></td>
+  </tr>
+  <tr>
+	<td><p>Zmniejszenie głośności</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-voldown.svg"> <key>Volume Down</key> key symbol</media> (Zmniejszenie głośności)</p></td>
+  </tr>
+  <tr>
+	<td><p>Zwiększenie głośności</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-volup.svg"> <key>Volume Up</key> key symbol</media> (Zwiększenie głośności)</p></td>
+  </tr>
+  <tr>
+	<td><p>Uruchomienie odtwarzacza multimediów</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-media.svg"> <key>Media</key> key symbol</media> (Odtwarzacz multimediów)</p></td>
+  </tr>
+  <tr>
+	<td><p>Odtwarzanie (lub odtwarzanie/wstrzymanie)</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-play.svg"> <key>Play</key> key symbol</media> (Odtwarzanie dźwięku)</p></td>
+  </tr>
+  <tr>
+	<td><p>Wstrzymanie odtwarzania</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-pause.svg"> <key>Pause</key> key symbol</media> (Wstrzymanie dźwięku)</p></td>
+  </tr>
+  <tr>
+	<td><p>Zatrzymanie odtwarzania</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-stop.svg"> <key>Stop</key> key symbol</media> (Zatrzymanie dźwięku)</p></td>
+  </tr>
+  <tr>
+	<td><p>Poprzednia ścieżka</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-previous.svg"> <key>Previous</key> key symbol</media> (Poprzednia ścieżka)</p></td>
+  </tr>
+  <tr>
+	<td><p>Następna ścieżka</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-next.svg"> <key>Next</key> key symbol</media> (Następna ścieżka)</p></td>
+  </tr>
+  <tr>
+	<td><p>Wysunięcie</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-eject.svg"> <key>Eject</key> key symbol</media> (Wysunięcie)</p></td>
+  </tr>
+</table>
+
+<table rules="rows" frame="top bottom" ui:expanded="false">
+<title>System</title>
+  <tr>
+	<td><p>Wyświetlanie okna wykonywania polecenia</p></td>
+	<td><p><keyseq><key>Alt</key><key>F2</key></keyseq></p></td>
+  </tr>
+  <tr>
+	<td><p>Wyświetlanie ekranu podglądu</p></td>
+	<td><p><keyseq><key>Alt</key><key>F1</key></keyseq></p></td>
+  </tr>
+  <tr>
+	<td><p>Wylogowanie</p></td>
+	<td><p><keyseq><key>Ctrl</key><key>Alt</key><key>Delete</key></keyseq></p></td>
+  </tr>
+  <tr>
+	<td><p>Zablokowanie ekranu</p></td>
+	<td><p><keyseq><key>Super</key><key>L</key></keyseq></p></td>
+  </tr>
+  <tr>
+  <td><p>Wyświetlanie obszaru powiadamiania</p></td>
+  <td><p><keyseq><key>Super</key><key>M</key></keyseq></p></td>
+  </tr>
+  <tr>
+  <td><p>Aktywacja powiadomienia</p></td>
+  <td><p><keyseq><key>Super</key><key>N</key></keyseq></p></td>
+  </tr>
+  <tr>
+  <td><p>Wyświetlanie wszystkich programów</p></td>
+  <td><p><keyseq><key>Super</key><key>A</key></keyseq></p></td>
+  </tr>
+  <tr>
+  <td><p>Otwieranie menu programu</p></td>
+  <td><p><keyseq><key>Super</key><key>F10</key></keyseq></p></td>
+  </tr>
+</table>
+
+<table rules="rows" frame="top bottom" ui:expanded="false">
+<title>Pisanie</title>
+  <tr>
+  <td><p>Przełączanie na następne źródło wprowadzania</p></td>
+  <td><p><keyseq><key>Super</key><key>Spacja</key></keyseq></p></td>
+  </tr>
+
+  <tr>
+  <td><p>Przełączanie na poprzednie źródło wprowadzania</p></td>
+  <td><p>Wyłączone</p></td>
+  </tr>
+  <tr>
+  <td><p>Przełączanie na następne źródło tylko za pomocą modyfikatorów</p></td>
+  <td><p>Wyłączone</p></td>
+  </tr>
+  <tr>
+  <td><p>Klawisz Compose</p></td>
+  <td><p>Wyłączone</p></td>
+  </tr>
+  <tr>
+  <td><p>Klawisz alternatywnych znaków</p></td>
+  <td><p>Wyłączone</p></td>
+  </tr>
+</table>
+
+<table rules="rows" frame="top bottom" ui:expanded="false">
+<title>Ułatwienia dostępu</title>
+  <tr>
+	<td><p>Włączanie i wyłączanie powiększania</p></td>
+	<td><p><keyseq><key>Alt</key><key>Super</key><key>8</key></keyseq></p></td>
+  </tr>
+  <tr>
+	<td><p>Powiększenie</p></td>
+  <td><p><keyseq><key>Alt</key><key>Super</key><key>=</key></keyseq></p></td>
+  </tr>
+  <tr>
+	<td><p>Oddalenie</p></td>
+  <td><p><keyseq><key>Alt</key><key>Super</key><key>-</key></keyseq></p></td>
+  </tr>
+  <tr>
+	<td><p>Włączanie i wyłączanie czytnika ekranu</p></td>
+	<td><p>Wyłączone</p></td>
+  </tr>
+  <tr>
+	<td><p>Włączanie i wyłączanie klawiatury ekranowej</p></td>
+	<td><p>Wyłączone</p></td>
+  </tr>
+  <tr>
+	<td><p>Zwiększanie rozmiaru czcionki</p></td>
+	<td><p>Wyłączone</p></td>
+  </tr>
+  <tr>
+	<td><p>Zmniejszanie rozmiaru czcionki</p></td>
+	<td><p>Wyłączone</p></td>
+  </tr>
+  <tr>
+	<td><p>Włączanie i wyłączanie wysokiego kontrastu</p></td>
+	<td><p>Wyłączone</p></td>
+  </tr>
+</table>
+
+<table rules="rows" frame="top bottom" ui:expanded="false">
+<title>Okna</title>
+  <tr>
+	<td><p>Aktywacja menu okna</p></td>
+	<td><p><keyseq><key>Alt</key><key>Spacja</key></keyseq></p></td>
+  </tr>
+  <tr>
+	<td><p>Przełączanie trybu pełnoekranowego</p></td>
+	<td><p>Wyłączone</p></td>
+  </tr>
+  <tr>
+	<td><p>Przełączanie stanu maksymalizacji</p></td>
+	<td><p><keyseq><key>Alt</key><key>F10</key></keyseq></p></td>
+  </tr>
+  <tr>
+	<td><p>Maksymalizacja okna</p></td>
+	<td><p><keyseq><key>Super</key><key>↑</key></keyseq></p></td>
+  </tr>
+  <tr>
+	<td><p>Przywracanie okna</p></td>
+  <td><p><keyseq><key>Super</key><key>↓</key></keyseq></p></td>
+  </tr>
+  <tr>
+	<td><p>Przełączanie trybu zwinięcia</p></td>
+	<td><p>Wyłączone</p></td>
+  </tr>
+  <tr>
+	<td><p>Zamknięcie okna</p></td>
+	<td><p><keyseq><key>Alt</key><key>F4</key></keyseq></p></td>
+  </tr>
+  <tr>
+  <td><p>Ukrycie okna</p></td>
+  <td><p><keyseq><key>Super</key><key>H</key></keyseq></p></td>
+  </tr>
+  <tr>
+	<td><p>Przenoszenie okna</p></td>
+	<td><p><keyseq><key>Alt</key><key>F7</key></keyseq></p></td>
+  </tr>
+  <tr>
+	<td><p>Zmiana rozmiaru okna</p></td>
+	<td><p><keyseq><key>Alt</key><key>F8</key></keyseq></p></td>
+  </tr>
+  <tr>
+	<td><p>Przełączanie wyświetlania okna na wszystkich obszarach lub jednym</p></td>
+	<td><p>Wyłączone</p></td>
+  </tr>
+  <tr>
+	<td><p>Podnoszenie okna, jeśli jest zakryte, w innym przypadku obniżanie</p></td>
+	<td><p>Wyłączone</p></td>
+  </tr>
+  <tr>
+	<td><p>Podnoszenie okna nad innymi oknami</p></td>
+	<td><p>Wyłączone</p></td>
+  </tr>
+  <tr>
+	<td><p>Obniżanie okna pod innymi oknami</p></td>
+	<td><p>Wyłączone</p></td>
+  </tr>
+  <tr>
+	<td><p>Maksymalizacja okna w pionie</p></td>
+	<td><p>Wyłączone</p></td>
+  </tr>
+  <tr>
+	<td><p>Maksymalizacja okna w poziomie</p></td>
+	<td><p>Wyłączone</p></td>
+  </tr>
+  <tr>
+  <td><p>Podział widoku po lewej</p></td>
+  <td><p><keyseq><key>Super</key><key>←</key></keyseq></p></td>
+  </tr>
+  <tr>
+  <td><p>Podział widoku po prawej</p></td>
+  <td><p><keyseq><key>Super</key><key>→</key></keyseq></p></td>
+  </tr>
+</table>
+
+</section>
+
+<section id="custom">
+<title>Niestandardowe skróty</title>
+
+  <p>Aby utworzyć własny skrót w ustawieniach <app>Klawiatury</app>:</p>
+
+  <steps>
+    <item>
+      <p>Kliknij przycisk <gui style="button">+</gui>. Zostanie otwarte okno <gui>Niestandardowy skrót</gui>.</p>
+    </item>
+    <item>
+      <p>Wpisz <gui>Nazwę</gui>, aby móc identyfikować skrót i <gui>Polecenie</gui> uruchamiające program, a następnie kliknij przycisk <gui>Dodaj</gui>. Na przykład, jeśli skrót ma otwierać program <app>Rhythmbox</app>, to można go nazwać <input>Muzyka</input> i użyć polecenia <input>rhythmbox</input>.</p>
+    </item>
+    <item>
+      <p>Kliknij napis <gui>Wyłączone</gui> w dodanym rzędzie. Kiedy zmieni się na napis <gui>Nowy skrót…</gui>, przytrzymaj wybraną kombinację klawiszy.</p>
+    </item>
+  </steps>
+
+  <p>Wpisane polecenie musi być prawidłowe. Można sprawdzić, czy działa otwierając Terminal i wpisując je w nim. Polecenie otwierające program może nie być takie same, co nazwa programu.</p>
+
+  <p>Aby zmienić polecenie powiązane z niestandardowym skrótem klawiszowym, podwójnie kliknij <em>nazwę</em> skrótu. Zostanie otwarte okno <gui>Niestandardowy skrót</gui>, w którym można zmienić polecenie.</p>
+
+</section>
+
+</page>

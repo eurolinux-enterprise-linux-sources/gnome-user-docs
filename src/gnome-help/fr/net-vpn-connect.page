@@ -82,12 +82,28 @@
 
 <title>Connexion à un VPN</title>
 
-<p>Un VPN (<em>Virtual Private Network</em> ou <em>Réseau Privé Virtuel</em>) est une façon de se connecter à un réseau local en passant par Internet. Voici un exemple : admettons que vous vouliez vous connecter au réseau local de votre entreprise alors que vous êtes en déplacement professionnel. Recherchez d'abord une connexion Internet disponible (comme à votre hôtel), et connectez-vous ensuite au VPN de votre entreprise. La connexion est identique à celle que vous avez à votre réseau d'entreprise quand vous êtes sur place, sauf qu'elle passe par le réseau Internet de votre hôtel. Les connexions VPN sont normalement <em>chiffrées</em> pour empêcher les personnes ne possédant pas les identifiants de votre réseau local d'y accéder.</p>
+<p>A VPN (or <em>Virtual Private Network</em>) is a way of connecting to a
+ local network over the internet. For example, say you want to connect to the
+ local network at your workplace while you’re on a business trip. You would
+ find an internet connection somewhere (like at a hotel) and then connect to
+ your workplace’s VPN. It would be as if you were directly connected to the
+ network at work, but the actual network connection would be through the
+ hotel’s internet connection. VPN connections are usually <em>encrypted</em>
+ to prevent people from accessing the local network you’re connecting to
+ without logging in.</p>
 
-<p>Il y a plusieurs types différents de VPN. Il vous faudra peut-être installer un logiciel supplémentaire selon le type de VPN auquel vous voulez vous connecter. Demandez les détails de la connexion à la personne en charge du VPN et quel <em>client VPN</em> vous devez utiliser. Ouvrez ensuite votre gestionnaire de paquets, recherchez le paquet <app>NetworkManager</app> qui prend en charge votre VPN et installez-le.</p>
+<p>There are a number of different types of VPN. You may have to install some
+ extra software depending on what type of VPN you’re connecting to. Find out
+ the connection details from whoever is in charge of the VPN and see which
+ <em>VPN client</em> you need to use. Then, go to the software installer
+ application and search for the <app>NetworkManager</app> package which works
+ with your VPN (if there is one) and install it.</p>
 
 <note>
- <p>S'il n'existe pas de paquet « NetworkManager » pour votre type de VPN, vous devrez sans doute télécharger et installer un logiciel client chez le fournisseur qui a fourni le logiciel du VPN. Il y a certainement aussi une procédure à suivre pour le rendre opérationnel.</p>
+ <p>If there isn’t a NetworkManager package for your type of VPN, you will
+ probably have to download and install some client software from the company
+ that provides the VPN software. You’ll probably have to follow some different
+ instructions to get that working.</p>
 </note>
 
 <p>To set up the VPN connection:</p>

@@ -24,49 +24,52 @@
       <years>2015</years>
     </credit>
 
-    <desc>Remove access to an online service provider from your
-    applications.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>De toegang van uw toepassingen tot een dienstenprovider verwijderen.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Justin van Steijn</mal:name>
+      <mal:email>justin50@live.nl</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hannie Dumoleyn</mal:name>
+      <mal:email>hannie@ubuntu-nl.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
   </info>
 
-  <title>Remove an account</title>
+  <title>Een account verwijderen</title>
 
-  <p>You can remove an online account which you no longer wish to use.</p>
+  <p>U kunt een online-account dat u niet langer wilt gebruiken verwijderen.</p>
 
   <note style="tip">
-    <p>Many online services provide an authorization token which GNOME stores
-    instead of your password. If you remove an account, you should also revoke
-    that certificate in the online service. This will ensure that no other
-    application or website can connect to that service using the authorization
-    for GNOME.</p>
+    <p>Veel onlinediensten verstrekken een autorisatiecode die door Gnome wordt opgeslagen in plaats van uw wachtwoord. Als u een account verwijdert, moet u ook dat certificaat intrekken in de onlinedienst. Dit zorgt ervoor dat een andere toepassing of website niet met die dienst kan verbinden met de autorisatie voor Gnome.</p>
 
-    <p>How to revoke the authorization depends on the service provider. Check
-    your settings on the provider's website for authorized or connected apps
-    or sites. Look for an app called "GNOME" and remove it.</p>
+    <p>Hoe u de autorisatie intrekt hangt af van de dienstenprovider. Ga naar uw instellingen op de website van de provider en zoek naar geautoriseerde of verbonden toepassingen of websites. Zoek naar een toepassing genaamd ‘Gnome’ en verwijder die.</p>
   </note>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Online Accounts</gui>.</p>
+      <p>Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht en typ <gui>Online-accounts</gui>.</p>
     </item>
     <item>
-      <p>Click on <gui>Online Accounts</gui> to open the panel.</p>
+      <p>Klik op <gui>Online-accounts</gui> om het paneel te openen.</p>
     </item>
     <item>
-      <p>Select the account which you wish to remove.</p>
+      <p>Selecteer het account dat u wilt verwijderen.</p>
     </item>
     <item>
-      <p>Click the <gui>-</gui> button in the lower-left corner of the
-      window.</p>
+      <p>Klik op de <gui>-</gui> knop linksonder in het venster.</p>
     </item>
     <item>
-      <p>Click <gui>Remove</gui> in the confirmation dialog.</p>
+      <p>Klik op <gui>Verwijderen</gui> in het bevestigingsvenster.</p>
     </item>
   </steps>
 
   <note style="tip">
-    <p>Instead of deleting the account completely, it is possible to
-    <link xref="accounts-disable-service">restrict the services</link> accessed
-    by your desktop.</p>
+    <p>In plaats van het volledig verwijderen van het account kunt u kiezen voor het <link xref="accounts-disable-service">beperken van de diensten</link> zodat uw computer geen toegang heeft tot uitgeschakelde diensten.</p>
   </note>
 </page>

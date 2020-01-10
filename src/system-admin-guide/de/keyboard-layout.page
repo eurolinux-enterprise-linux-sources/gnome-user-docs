@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="keyboard-layout" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="login#management"/>
+    <revision pkgversion="3.11" date="2014-01-29" status="draft"/>
+
+    <credit type="author copyright">
+      <name>minnie_eg</name>
+      <email>amany.elguindy@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Den Tastaturbelegungswähler im Anmeldebildschirm anzeigen.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Mehrere Tastaturbelegungen im Anmeldebildschirm anzeigen</title>
+
+  <p>Sie können die Tastaturbelegungseinstellungen des Systems ändern, um alternative Belegungen hinzuzufügen, die durch die Benutzer im Anmeldebildschirm ausgewählt werden können. Dies kann für Benutzer hilfreich sein, die normalerweise nicht die Standardbelegung verwenden und daher die Belegung schon im Anmeldebildschirm auswählen wollen.</p>
+
+  <steps>
+    <title>Ändern der Einstellungen für die Tastaturbelegung</title>
+    <item>
+      <p>Die Codes der gewünschten sprachbezogenen Belegungen finden Sie in der Datei <file>/usr/share/X11/xkb/rules/base.lst</file> im Abschnitt <sys>! layout</sys>.</p>
+    </item>
+    <item>
+      <p>Verwenden Sie das Werkzeug <cmd>localectl</cmd> wie folgt zum Ändern der Tastaturbelegung des Systems:</p>
+      <screen><cmd>localectl set-x11-keymap <var>Belegung</var></cmd></screen>
+      <p>Sie können mehrere Belegungen in Form einer durch Kommata getrennten Liste angeben. Um beispielsweise <sys>de</sys> als Standardbelegung und <sys>us</sys> als sekundäre Belegung festzulegen, führen Sie folgenden Befehl aus:</p>
+      <screen><output>$ </output><input>localectl set-x11-keymap de,us</input></screen>
+    </item>
+    <item>
+      <p>Nach dem Abmelden sind die definierten Belegungen in der oberen Leiste des Anmeldebildschirms verfügbar.</p>
+    </item>
+  </steps>
+  <p>Beachten Sie, dass Sie auch das Werkzeug <cmd>localectl</cmd> zum systemweiten Festlegen des vorgegebenen Tastaturmodells, der Variante und Optionen verwenden können. In der Handbuchseite zu <cmd>localectl</cmd>(1) finden Sie weitere Informationen.</p>
+
+  <section id="keyboard-layout-no-localectl">
+  <title>Mehrere Tastaturbelegungen ohne localectl anzeigen</title>
+
+  <p>Auf Systemen, wo <cmd>localectl</cmd> nicht zur Verfügung steht, können Sie die systemweiten Tastatureinstellungen durch Bearbeiten einer Konfigurationsdatei in <file>/usr/share/X11/xorg.conf.d/</file> ändern.</p>
+
+  <steps>
+    <title>Ändern der Einstellungen für die Tastaturbelegung</title>
+    <item>
+      <p>Die Codes der gewünschten sprachbezogenen Belegungen finden Sie in der Datei <file>/usr/share/X11/xkb/rules/base.lst</file> im Abschnitt <sys>! layout</sys>.</p>
+    </item>
+    <item>
+      <p>Fügen Sie die Belegungscodes zu <file>/usr/share/X11/xorg.conf.d/10-evdev.conf</file> auf folgende Weise hinzu:</p>
+      <screen>
+        Section "InputClass"
+          Identifier "evdev keyboard catchall"
+          MatchIsKeyboard "on"
+          MatchDevicePath "/dev/input/event*"
+          Driver "evdev"
+          <input>Option "XkbLayout" "en,fr"</input>
+        EndSection
+      </screen>
+      <p>Mehrere Belegungen können als durch Kommata getrennte Liste hinzugefügt werden, wie in dem Beispiel für Englisch (<sys>en</sys>) und Französisch (<sys>fr</sys>) gezeigt.</p>
+    </item>
+    <item>
+      <p>Nach dem Abmelden sind die definierten Belegungen in der oberen Leiste des Anmeldebildschirms verfügbar.</p>
+    </item>
+  </steps>
+
+  </section>
+
+</page>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="fonts-user" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="appearance"/>
+    <revision pkgversion="3.11" date="2014-01-29" status="draft"/>
+
+    <credit type="author copyright">
+      <name>Matthias Clasen</name>
+      <email>matthias.clasen@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Jana Svarova</name>
+      <email>jana.svarova@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Lägg till extra typsnitt för enskilda användare.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Lägga till ett extra typsnitt för enskilda användare</title>
+
+  <p>Du kan installera ett extra typsnitt som kommer vara tillgängligt för en specifik användare på ditt system i program som använder <sys>fontconfig</sys> för typsnittshantering.</p>
+
+  <steps>
+    <title>Installera ett extra typsnitt</title>
+    <item>
+      <p>Kopiera typsnittet till katalogen <file>~/.local/share/fonts/</file> för att installera det.</p>
+    </item>
+    <item>
+      <p>Du kan behöva köra följande kommando för att uppdatera typsnittscachen:</p>
+      <screen><output>$ </output><input>fc-cache ~/.local/share/fonts</input></screen>
+    </item>
+  </steps>
+
+  <p>Du kan behöva starta om körande program för att se ändringarna. Användarsessioner behöver inte startas om.</p>
+
+</page>

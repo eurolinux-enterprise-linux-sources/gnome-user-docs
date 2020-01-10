@@ -64,7 +64,11 @@
       <code>Network controller: Intel Corporation PRO/Wireless 3945ABG [Golan] Network Connection</code>
     </item>
     <item>
-      <p>如果您的设备通过上述命令可以识别，接下来进入<link xref="net-wireless-troubleshooting-device-drivers">设备驱动</link>页面。如果上述命令没有显示出您的无线网卡，那么参阅<link xref="#not-recognized">下一页的指导</link>。</p>
+      <p>If you found your wireless adapter in the list, proceed to the
+      <link xref="net-wireless-troubleshooting-device-drivers">Device Drivers
+      step</link>. If you didn’t find anything related to your wireless
+      adapter, see
+      <link xref="#not-recognized">the instructions below</link>.</p>
     </item>
   </steps>
 
@@ -84,7 +88,11 @@
       <code>Bus 005 Device 009: ID 12d1:140b Huawei Technologies Co., Ltd. EC1260 Wireless Data Modem HSD USB Card</code>
     </item>
     <item>
-      <p>如果您的设备通过上述命令可以识别，接下来进入<link xref="net-wireless-troubleshooting-device-drivers">设备驱动</link>页面。如果上述命令没有显示出您的无线网卡，那么参阅<link xref="#not-recognized">下一页的指导</link>。</p>
+      <p>If you found your wireless adapter in the list, proceed to the
+      <link xref="net-wireless-troubleshooting-device-drivers">Device Drivers
+      step</link>. If you didn’t find anything related to your wireless
+      adapter, see
+      <link xref="#not-recognized">the instructions below</link>.</p>
     </item>
   </steps>
 
@@ -102,7 +110,9 @@
     <item>
       <p>打开一个终端，输入下面的内容，然后按<key>回车键</key>：</p>
       <code>tail -f /var/log/messages</code>
-      <p>这将显示您计算机中硬件设备的列表信息，如果硬件发生变化会自动更新。</p>
+      <p>This will display a list of messages related to your computer’s
+      hardware, and will automatically update if anything to do with your
+      hardware changes.</p>
     </item>
     <item>
       <p>插入无线适配器到 PCMCIA 插槽，查看终端窗口有何变化，应当出现一些无线适配器相关的信息。找到它们看看能否标记它。</p>
@@ -111,7 +121,11 @@
       <p>要停止终端中正在运行的命令，按 <keyseq><key>Ctrl</key><key>C</key></keyseq> 键，然后就可以关闭终端窗口了。</p>
     </item>
     <item>
-      <p>如果之前的命令可以识别您的设备，请继续转到<link xref="net-wireless-troubleshooting-device-drivers">设备驱动程序</link>页面。如果上述命令不显示与您的无线适配器相关的任何输出，请查看本页底部的说明。</p>
+      <p>If you found any information about your wireless adapter, proceed to
+      the <link xref="net-wireless-troubleshooting-device-drivers">Device
+      Drivers step</link>. If you didn’t find anything related to your wireless
+      adapter, see <link xref="#not-recognized">the instructions
+      below</link>.</p>
     </item>
   </steps>
 </section>
@@ -124,7 +138,9 @@
   see if there are any drivers you can install will depend on which Linux
   distribution you are using (like Ubuntu, Arch, Fedora or openSUSE).</p>
 
-  <p>要获得帮助，请查看您所用发行版的帮助信息。这包括对应的邮件列表、网络聊天室等。</p>
+  <p>To get specific help, look at the support options on your distribution’s
+  website. These might include mailing lists and web chats where you can ask
+  about your wireless adapter, for example.</p>
 
 </section>
 

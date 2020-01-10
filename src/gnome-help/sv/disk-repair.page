@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-repair" xml:lang="sv">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Dokumentationsprojekt för GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.25.90" date="2017-08-17" status="review"/>
+
+    <desc>Kontrollera om ett filsystem är skadat och för tillbaka det till ett användbart tillstånd.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016, 2017</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Reparera ett skadat filsystem</title>
+
+  <p>Filsystem kan förvanskas på grund av oväntad strömförlust, systemkrascher och osäker borttagning av enheten. Efter en sådan incident rekommenderas det att <em>reparera</em> eller åtminstone <em>kontrollera</em> filsystemet för att förhindra framtida dataförlust.</p>
+  <p>Ibland krävs en reparation för att montera eller ändra ett filsystem. Även om en <em>kontroll</em> inte rapporterar någon skada kan filsystemet fortfarande vara markerat som ”smutsigt” internt och behöva en reparation.</p>
+
+<steps>
+  <title>Kontrollera om ett filsystem är skadat</title>
+  <item>
+    <p>Öppna <app>Diskar</app> från översiktsvyn <gui>Aktiviteter</gui>.</p>
+  </item>
+  <item>
+    <p>Välj disken som innehåller filsystemet i fråga från listan över lagringsenheter till vänster. Om det finns mer än en volym på disken, välj volymen som innehåller filsystemet.</p>
+  </item>
+  <item>
+    <p>I verktygsfältet under avsnittet <gui>Volymer</gui>, klicka på menyknappen. Klicka sedan på <gui>Kontrollera filsystem…</gui>.</p>
+  </item>
+  <item>
+    <p>Beroende på hur mycket data som finns lagrade på filsystemet kan en kontroll ta längre tid. Bekräfta att starta åtgärden i dialogrutan som visas.</p>
+   <p>Åtgärden kommer inte att ändra filsystemet men kommer att avmontera det om detta krävs. Vänta tålmodigt medan filsystemet kontrolleras.</p>
+  </item>
+  <item>
+    <p>Då det är klart kommer du att meddelas om huruvida filsystemet är skadat. Observera att i vissa fall kan filsystemet behöva repareras även om det är oskadat för att återställa en intern ”smutsig”-markering.</p>
+  </item>
+</steps>
+
+<note style="warning">
+ <title>Möjlig dataförlust vid reparation</title>
+  <p>Om filsystemets struktur är skadad kan det påverka filerna som lagras i det. I vissa fall kan dessa filer inte tas tillbaka till en giltig form igen och kommer att tas bort eller flyttas till en speciell katalog. Dessa återtagna fildelar kan vanligen hittas i katalogen <em>lost+found</em> i toppnivåkatalogen för filsystemet.</p>
+  <p>Om data är för värdefulla för att förloras under denna process rekommenderas du att säkerhetskopiera dem genom att spara en avbild av volymen innan reparation.</p>
+  <p>Denna avbild kan sedan behandlas med forensiska analysverktyg som <app>sleuthkit</app> för att vidare återhämta saknade filer och datadelar som inte återställdes under reparationen, och även tidigare borttagna filer.</p>
+</note>
+
+<steps>
+  <title>Reparera ett filsystem</title>
+  <item>
+    <p>Öppna <app>Diskar</app> från översiktsvyn <gui>Aktiviteter</gui>.</p>
+  </item>
+  <item>
+    <p>Välj disken som innehåller filsystemet i fråga från listan över lagringsenheter till vänster. Om det finns mer än en volym på disken, välj volymen som innehåller filsystemet.</p>
+  </item>
+  <item>
+    <p>I verktygsfältet under avsnittet <gui>Volymer</gui>, klicka på menyknappen. Klicka sedan på <gui>Reparera filsystem…</gui>.</p>
+  </item>
+  <item>
+    <p>Beroende på hur mycket data som finns lagrade på filsystemet kan en reparation ta längre tid. Bekräfta att starta åtgärden i dialogrutan som visas.</p>
+   <p>Åtgärden kommer att avmontera filsystemet om detta krävs. Reparationsåtgärden försöker återföra filsystemet till ett konsistent tillstånd och flyttar skadade filer till en speciell mapp. Vänta tålmodigt medan filsystemet repareras.</p>
+  </item>
+  <item>
+    <p>Då det är klart kommer du att meddelas om huruvida filsystemet kunde repareras. Om det lyckades kan det användas igen som vanligt.</p>
+    <p>Om filsystemet inte kunde repareras, säkerhetskopiera det genom att spara en avbild av volymen för att kunna återfå viktiga filer senare. Detta kan göras genom att montera avbilden skrivskyddat eller genom att använda forensiska analysverktyg som <app>sleuthkit</app>.</p>
+    <p>För att använda volymen igen måste den <link xref="disk-format">formateras</link> med ett nytt filsystem. Alla data kommer att förkastas.</p>
+  </item>
+</steps>
+
+</page>

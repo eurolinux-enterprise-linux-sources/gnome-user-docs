@@ -8,6 +8,7 @@
     <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
     <revision pkgversion="3.10" date="2013-11-11" status="review"/>
     <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.28" date="2018-03-28" status="review"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -24,7 +25,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2011 - 2016</mal:years>
+      <mal:years>2011 - 2018</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -53,21 +54,30 @@
   <steps>
     <title>ParaeEstablecer la configuración de la red manualmente:</title>
     <item>
-      <p>Abra la vista de <gui xref="shell-introduction#activities">Actividades</gui> y empiece a escribir <gui>Red</gui>.</p>
+      <p>Abra la vista de <gui xref="shell-introduction#activities">Actividades</gui> y empiece a escribir <gui>Configuración</gui>.</p>
     </item>
     <item>
-      <p>Pulse en <gui>Red</gui> para abrir el panel.</p>
+      <p>Pulse en <gui>Configuración</gui>.</p>
     </item>
     <item>
-      <p>En el panel de la izquierda, seleccione la conexión de red que quiere configurar manualmente. Si se conecta a la red por cable, pulse en <gui>Cableada</gui>, y luego pulse el botón <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">configuración</span></media> en la esquina inferior derecha del panel. Para una conexión <gui>Inalámbrica</gui>, el botón de <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">configuración</span></media> se situará junto a la red activa.</p>
+      <p>In the left pane, select the network connection that you want to set
+      up manually. If you plug in to the network with a cable, click
+      <gui>Network</gui>. Otherwise click <gui>Wi-Fi</gui>.</p>
       <p>Asegúrese de que su tarjeta inalámbrica está encendida o que el cable de red está conectado.</p>
     </item>
+    <item>      
+      <p>Pulse el botón <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">configuración</span></media>.</p>
+      <note>
+        <p>For a <gui>Wi-Fi</gui> connection, the 
+        <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
+        button will be located next to the active network.</p>
+      </note>
+    </item>
     <item>
-      <p>Pulse en <gui>IPv4</gui> y cambie las <gui>Direcciones</gui> a <gui>Manual</gui>.</p>
+      <p>Pulse en la pestaña <gui>IPv4</gui> o <gui>IPv6</gui> y cambie la opción <gui>Direcciones</gui> a <em>Manual</em>.</p>
     </item>
     <item>
       <p>Escriba la <gui>Dirección</gui> y la <gui>Puerta de enlace</gui>, así como la <gui>Máscara de red</gui> apropiada.</p>
-      <p>Estas tres direcciones deben ser <em>direcciones IP</em>; esto es, deben ser cuatro números separados por puntos (ej. 123.45.6.78).</p>
     </item>
     <item>
       <p>En la sección <gui>DNS</gui> cambie <gui>Automático</gui> a <gui>Apagado</gui>. Introduzca la dirección IP de los servidores DNS que quiere usar. Introduzca direcciones de servidores DNS adicionales usando el botón <key>+</key>.</p>

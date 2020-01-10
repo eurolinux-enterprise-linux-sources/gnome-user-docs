@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+To use a step in this file:
+<include href="dconf-snippets.xml"
+         xpointer="xpointer(/*/*[@xml:id='THE_XML_ID'])"
+         xmlns="http://www.w3.org/2001/XInclude"/>
+-->
+<steps xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its">
+
+  <item xml:id="dconf-profile-user">
+    <p>Cree o perfíl <file its:translate="no">user</file> que contén as seguintes liñas:</p>
+    <listing its:translate="no">
+      <title><file>/etc/dconf/profile/user</file></title>
+      <code>user-db:user
+system-db:local</code>
+    </listing>
+    <p><input its:translate="no">local</input> é o nome dunha base de datos <sys its:translate="no" xref="dconf">dconf</sys>.</p>
+  </item>
+  <item xml:id="dconf-profile-user-dir">
+    <p>Cree un cartafol <file>/etc/dconf/db/local.d/</file> se non existe.</p>
+  </item>
+
+  <item xml:id="dconf-profile-gdm">
+    <p>Cree o perfíl <file its:translate="no">gdm</file> que contén as seguintes liñas:</p>
+    <listing its:translate="no">
+      <title><file>/etc/dconf/profile/gdm</file></title>
+      <code>user-db:user
+system-db:gdm
+file-db:/usr/share/gdm/greeter-dconf-defaults</code>
+    </listing>
+    <p><input its:translate="no">gdm</input> é o nome dunha base de datos <sys its:translate="no" xref="dconf">dconf</sys>.</p>
+  </item>
+
+  <item xml:id="dconf-update">
+    <p>Actualizar a base de datos do sistema:</p>
+    <screen><output style="prompt">#</output><input>actualizar dconf</input></screen>
+  </item>
+  <item xml:id="dconf-logoutin">
+    <p>Os usuarios deben pechar a sesión e iniciala de novo para que a configuración a nivel de sistema se aplique.</p>
+  </item>
+</steps>

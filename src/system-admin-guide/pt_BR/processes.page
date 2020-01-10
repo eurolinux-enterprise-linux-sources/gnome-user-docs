@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" id="processes" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="software#management"/>
+    <revision pkgversion="3.12" date="2014-06-17" status="review"/>
+
+    <credit type="author copyright">
+      <name>Matthias Clasen</name>
+      <email>matthias.clasen@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Aruna Sankaranarayanan</name>
+      <email>aruna.evam@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+
+    <desc>Quais os processos que eu devo esperar ver executando em uma sessão original GNOME?</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Processos típicos</title>
+
+  <p>Em uma sessão padrão do <app>GNOME</app>, os programas chamados <link href="man:daemon"><app>daemons</app></link> são executados no sistema como processos em segundo plano. Você deve encontrar os seguintes daemons executando por padrão:</p>
+
+   <terms>
+     <item>
+       <title>dbus-daemon</title>
+       <p>O <app>dbus-daemon</app> fornece um daemon de barramento de mensagens que os programas podem usar para trocar mensagens um com o outro. <app>dbus-daemon</app> é implementado com a biblioteca D-Bus que fornece comunicação um-para-um entre dois aplicativos.</p>
+       <p>Para mais informações, veja a página de manual para <link href="man:dbus-daemon">dbus-daemon</link>.</p>
+     </item>
+     <item>
+       <title>gnome-keyring-daemon</title>
+       <p>Credenciais como nome de usuário e senha para vários programas e sites são armazenados de forma segura usando o <app>gnome-keyring-daemon</app>. Essa informação é escrita em um arquivo criptografado, chamado de arquivo “keyring” ou chaveiro, e salvada no diretório pessoal do usuário.</p>
+       <p>Para mais informações, veja a página de manual para <link href="man:gnome-keyring-daemon">gnome-keyring-daemon</link>.</p>
+     </item>
+     <item>
+       <title>gnome-session</title>
+       <p>O programa <app>gnome-session</app> é responsável por executar o ambiente GNOME com a ajuda do gerenciador de telas, tal como <app>GDM</app>, <app>LightDM</app>, ou <app>NODM</app>. A sessão padrão para o usuário é definida durante a instalação do sistema pelo administrador do sistema. O <app>gnome-session</app> geralmente carrega a última sessão que funcionou com sucesso no sistema.</p>
+       <p>Para mais informações, veja a página de manual para <link href="man:gnome-session">gnome-session</link>.</p>
+     </item>
+     <item>
+       <title>gnome-settings-daemon</title>
+       <p>O <app>gnome-settings-daemon</app> lida com as configurações de uma sessão GNOME e de todos os programas que são executados na sessão.</p>
+       <p>Para mais informações, veja a página de manual para <link href="man:gnome-settings-daemon">gnome-settings-daemon</link>.</p>
+     </item>
+     <item>
+       <title>gnome-shell</title>
+       <p><app>gnome-shell</app> fornece a funcionalidade principal da interface de usuário para o GNOME, tal como lançar programas, navegar por diretórios, visualizar arquivos e por aí vai.</p>
+       <p>Para mais informações, veja a página de manual para <link href="man:gnome-shell">gnome-shell</link>.</p>
+     </item>
+     <item>
+       <title>pulseaudio</title>
+       <p><app>PulseAudio</app> é um servidor de som para sistemas Linux, POSIX e Windows que permite que programas emitam áudio via o daemon do <app>Pulseaudio</app>.</p>
+       <p>Para mais informações, veja a página de manual para <link href="man:pulseaudio">pulseaudio</link>.</p>
+     </item>
+   </terms>
+
+  <p>Dependendo da configuração do usuário, você também pode ver alguns dos seguintes, entre outros:</p>
+   <list ui:expanded="false">
+   <title>Processos adicionais</title>
+     <item><p><app>at-spi2-dbus-launcher</app></p></item>
+     <item><p><app>at-spi2-registryd</app></p></item>
+     <item><p><app>gnome-screensaver</app></p></item>
+     <item><p><app>gnome-shell-calendar-server</app></p></item>
+     <item><p><app>goa-daemon</app></p></item>
+     <item><p><app>gsd-printer</app></p></item>
+     <item><p>vários processos de fábrica do <app>Evolution</app></p></item>
+     <item><p>vários processos <app>GVFS</app></p></item>
+   </list>
+
+</page>

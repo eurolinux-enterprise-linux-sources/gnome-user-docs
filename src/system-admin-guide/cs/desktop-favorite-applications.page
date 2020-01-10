@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="desktop-favorite-applications" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="appearance"/>
+    <revision pkgversion="3.8" date="2013-04-28" status="draft"/>
+
+    <credit type="author">
+      <name>Aruna Sankaranarayanan</name>
+      <email>aruna.evam@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Jak si přizpůsobit výchozí aplikace v přehledu činností.</desc>
+
+  </info>
+
+  <title>Výchozí oblíbené aplikace</title>
+
+  <p>Oblíbené aplikace jsou ty, které vidíte v <link href="help:gnome-help/shell-terminology">postranním panelu</link>. Můžete použít <sys its:translate="no">dconf</sys> k nastavení oblíbených aplikací pro jednoho uživatele nebo sady stejných oblíbených aplikací pro všechny uživatele. V obou případech musíte nejdříve upravit profil <sys its:translate="no">dconf</sys> v <file its:translate="no">/etc/dconf/profile</file>.</p>
+
+<section id="per-user">
+  <title>Nastavení různých oblíbených aplikací pro různé uživatele</title>
+
+  <p>Můžete nastavit výchozí oblíbené aplikace jednotlivým uživatelům tak, že upravíte jejich soubory s uživatelskými databázemi v <file its:translate="no">~/.config/dconf/user</file>. Úryvek v následujícím příkladu používá <sys its:translate="no">dconf</sys> k nastavení aplikací <app>gedit</app>, <app>Terminál</app> a <app>Nautilus</app> jako výchozích oblíbených pro uživatele. Kód příkladu si uživatel může později v případě potřeby upravit.</p>
+
+  <!--The code itself need not be translated but the comments withing the
+  code have to be translated.-Aruna-->
+
+  <listing>
+    <title>Obsah souboru <file its:translate="no">/etc/dconf/profile</file>:</title>
+      <code>
+      # Tento řádek umožňuje uživateli výchozí oblíbené dodatečně změnit
+      user-db:user
+      </code>
+  </listing>
+
+  <listing>
+    <title>Obsah souboru <file its:translate="no">~/.config/dconf/user</file>:</title>
+      <code>
+      # Nastavuje aplikace gedit, terminal a nautilus jako výchozí oblíbené
+      [org/gnome/shell]
+      favorite-apps = [<input>'gedit.desktop'</input>, <input>'gnome-terminal.desktop'</input>, <input>'nautilus.desktop'</input>]
+      </code>
+  </listing>
+
+  <note style="tip">
+    <p>Výše uvedená nastavení můžete také <link xref="dconf-lockdown">uzamknout</link>, aby je uživatelé nemohli měnit.</p>
+  </note>
+
+</section>
+
+<section id="all-users">
+  <title>Nastavení stejných oblíbených aplikací pro všechny uživatele</title>
+
+  <p>Abyste měli stejné oblíbené pro všechny uživatele, musíte pomocí <link xref="dconf-keyfiles">souborů s klíči dconf</link> upravit systémovou databázi. Následující úryvek kódu v první části mění profil <sys its:translate="no">dconf</sys> a v druhé vytvoří soubor s klíči pro nastavení výchozích oblíbených aplikací pro všechny zaměstnance v první patře budovy organizace.</p>
+
+  <!--The code itself need not be translated but the comments within the
+  code have to be translated.-Aruna-->
+
+  <listing>
+    <title>Obsah souboru <file its:translate="no">/etc/dconf/profile</file>:</title>
+      <code>
+      user-db:user
+
+      # Tento řádek definuje soubor se systémovou databází nazvaný first_floor
+      system-db:first_floor
+      </code>
+  </listing>
+
+  <note style="info">
+    <p>Nastavení z databázového souboru <code>user</code> mají přednost před nastaveními z databázového souboru <code>first_floor</code>, <link xref="dconf-lockdown">zámky</link> zavedené pro databázový soubor <code>first_floor</code> mají prioritu nad těmi týkajícími se databáze <code>user</code>.</p>
+  </note>
+
+  <listing>
+    <title>Obsah souboru <file its:translate="no">/etc/dconf/db/first_floor.d/00_floor1_settings</file>:</title>
+      <code>
+      # Úryvek nastavuje aplikace gedit, terminal a nautilus jako výchozí oblíbené
+      # pro všechny uživatele v prvním patře
+
+      [org/gnome/shell]
+      favorite-apps = [<input>'gedit.desktop'</input>, <input>'gnome-terminal.desktop'</input>, <input>'nautilus.desktop'</input>]
+      </code>
+  </listing>
+
+    <p>Začleňte své změny do systémové databáze spuštěním <cmd>dconf update</cmd>.</p>
+
+</section>
+
+</page>

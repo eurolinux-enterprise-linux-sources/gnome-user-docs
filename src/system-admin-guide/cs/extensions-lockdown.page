@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="extensions-lockdown" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="software#extension"/>
+    <link type="seealso" xref="extensions-enable"/>
+    <link type="seealso" xref="extensions"/>
+    <revision pkgversion="3.12" date="2014-06-17" status="review"/>
+
+    <credit type="author copyright">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Jak zabránit uživateli v povolení nebo zakázání rozšíření GNOME Shell.</desc>
+  </info>
+
+  <title>Uzamknutí povolených rozšíření</title>
+  
+  <p>V GNOME Shellu můžete zamknutím klíčů <code>org.gnome.shell.enabled-extensions</code> a <code>org.gnome.shell.development-tools</code> zabránit uživatelům, aby povolovali nebo zakazovali rozšíření. Díky tomu můžete poskytovat sadu rozšíření, které uživatel musí povinně mít.</p>
+   
+  <p>Zamknutí klíče <code>org.gnome.shell.development-tools</code> zajistí, že uživatel nebude moci použít integrovaný ladicí program a inspekční nástroj v GNOME Shellu (<app>Looking Glass</app>) k zakázání povinných rozšíření.</p>
+   
+  <steps>
+    <title>Zamknutí klíčů org.gnome.shell.enabled-extensions a org.gnome.shell.development-tools</title>
+    <item>
+      <p>Vytvořte profil <em>user</em> v <file>/etc/dconf/profile/user</file>:</p>
+      <listing>
+        <code>
+user-db:user
+system-db:local
+</code>
+      </listing>
+    </item>
+    <item>
+      <p>Vytvořte databázi <em>local</em> pro celosystémové nastavení v <file>/etc/dconf/db/local.d/00-extensions</file>:</p>
+      <listing>
+        <code>
+[org/gnome/shell]
+# Seznam všech rozšíření, které chcete, aby měli všichni uživatelé povolené
+enabled-extensions=['<input>myextension1@myname.example.com</input>', '<input>myextension2@myname.example.com</input>']
+# Zakáže přístup k Looking Glass
+development-tools=false
+</code>
+      </listing>
+      <p>Klíč <code>enabled-extensions</code> povoluje rozšíření pomocí jejich uuid (<code>mojerozsireni1@mojejmeno.priklad.cz</code> a <code>mojerozsireni2@mojejmeno.priklad.cz</code>).</p>
+      <p>Klíč <code>development-tools</code> je nastavený na „vypnuto“, aby se zakázal přístup k <app>Looking Glass</app>.</p>
+    </item>
+    <item>
+      <p>Přepište nastavení uživatelů a zabraňte jim v jejich změnách pomocí <file>/etc/dconf/db/local.d/locks/extensions</file>:</p>
+      <listing>
+        <code>
+# Zamykíá seznam povolených rozšíření
+/org/gnome/shell/enabled-extensions
+/org/gnome/shell/development-tools
+</code>
+</listing>
+    </item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+  </steps>
+  
+  <p>Po zamknutí klíčů <code>org.gnome.shell.enabled-extensions</code> a <code>org.gnome.shell.development-tools</code>, nebudou žádá rozšíření, která jsou nainstalovaná v <file>~/.local/share/gnome-shell/extensions</file> nebo <file>/usr/share/gnome-shell/extensions</file> a nejsou uvedená v klíči <code>org.gnome.shell.enabled-extensions</code>, GNOME Shellem načítána, čímž se zabrání uživatelům je používat.</p>
+
+</page>

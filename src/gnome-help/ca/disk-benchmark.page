@@ -23,7 +23,7 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Run benchmarks on your hard disk to check how fast it is.</desc>
+    <desc>Executeu "benchmarks" al vostre disc dur per comprovar-ne la rapidesa.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>David Aguilera</mal:name>
@@ -32,50 +32,34 @@
     </mal:credit>
   </info>
 
-<title>Test the performance of your hard disk</title>
+<title>Proveu el rendiment del vostre disc dur</title>
 
-  <p>To test the speed of your hard disk:</p>
+  <p>Per testejar la velocitat del vostre disc dur.</p>
 
   <steps>
     <item>
-      <p>Open <app>Disks</app> from the
-      <gui xref="shell-introduction#activities">Activities</gui> overview.</p>
+      <p>Obriu <app>Discs</app>des de la drescripcií general d' <gui xref="shell-introduction#activities">Activitats</gui>.</p>
     </item>
     <item>
-      <p>Choose the disk from the list in the left pane.</p>
+      <p>Trieu el disc de la llista al panell esquerre.</p>
     </item>
     <item>
-      <p>Click the menu button and select <gui>Benchmark disk…</gui> from the
-      menu.</p>
+      <p>Feu clic al botó de menú i seleccioneu <gui>Disc de referència</gui> des del menú.</p>
     </item>
     <item>
       <p>Click <gui>Start Benchmark…</gui> and adjust the <gui>Transfer
       Rate</gui> and <gui>Access Time</gui> parameters as desired.</p>
     </item>
     <item>
-      <p>Click <gui>Start Benchmarking</gui> to test how fast data can be read
-      from the disk. <link xref="user-admin-explain">Administrative
-      privileges</link> may be required. Enter your password, or the password
-      for the requested administrator account.</p>
+      <p>Feu clic <gui>Iniciar el test</gui> per comprovar com de ràpid  es poden llegir les dades des del disc. Poden ser necessaris<link xref="user-admin-explain">Privilegis administratius</link> may be required. Entreu la vostra contrasenya, o la contrasenya pel compte d'administrador.</p>
       <note>
-        <p>If <gui>Perform write-benchmark</gui> is checked, the benchmark
-        will test how fast data can be read from and written to the disk. This
-        will take longer to complete.</p>
+        <p>Si està seleccionat<gui>Efectuar un test d'escriptura</gui>, el test comprovarà com de ràpid es poden llegir i escriure les dades al disc. Aquesta opció trigarà més a completar-se.</p>
       </note>
     </item>
   </steps>
 
-  <p>When the test is finished, the results will appear on the graph. The green
-  points and connecting lines indicate the samples taken; these correspond to
-  the right axis, showing access time, plotted against the bottom axis,
-  representing percentage time elapsed during the benchmark. The blue line
-  represents read rates, while the red line represents write rates; these are
-  shown as access data rates on the left axis, plotted against percentage of
-  the disk traveled, from the outside to the spindle, along the bottom
-  axis.</p>
+  <p>Quan finalitzi la prova, els resultats apareixeran en un gràfic. Els punts verds i les línies de connexió indiquen les mostres preses; Aquests corresponen a l'eix de la dreta, mostrant el temps d'accés, traçat contra l'eix inferior, que representa el percentatge temps de transcorregut durant el test. La línia blava representa les taxes de lectura, mentre que la línia vermella representa les taxes d'escriptura; es mostren com a velocitats de dades d'accés a l'eix esquerre, representades en percentatge del disc recorregut, des de l'exterior fins a l'eix, al llarg de l'eix inferior.</p>
 
-  <p>Below the graph, values are displayed for minimum, maximum and average
-  read and write rates, average access time and time elapsed since the last
-  benchmark test.</p>
+  <p>A sota del gràfic, es mostren els valors per a les taxes de lectura i escriptura mínimes, màximes i mitjanes, el temps d'accés mitjà i el temps transcorregut des de l'última prova de referència.</p>
 
 </page>

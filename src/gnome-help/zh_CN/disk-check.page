@@ -20,7 +20,7 @@
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
     <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
 
-    <desc>您可以测试硬盘是否有问题以确保其健康。</desc>
+    <desc>Test your hard disk for problems to make sure that it’s healthy.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -36,10 +36,11 @@
  <title>检查硬盘</title>
   <p>硬盘中含有一个内置健康检查工具，叫做作 <app>SMART</app>，该工具可以不断检查磁盘的潜在问题。如果磁盘即将发生故障，SMART 还会提出警告，帮助您避免重要数据的丢失。</p>
 
-  <p>虽然 SMART 是自动运行的，您也可以通过运行<app>磁盘</app>工具来检查磁盘健康状况：</p>
+  <p>Although SMART runs automatically, you can also check your disk’s
+ health by running the <app>Disks</app> application:</p>
 
 <steps>
- <title>使用磁盘程序来检查磁盘健康状况</title>
+ <title>Check your disk’s health using the Disks application</title>
 
   <item>
     <p>Open <app>Disks</app> from the <gui>Activities</gui> overview.</p>
@@ -50,7 +51,7 @@
   </item>
   <item>
     <p>Click the menu button and select <gui>SMART Data &amp; Self-Tests…</gui>.
-    The <gui>Overall Assessment</gui> should say "Disk is OK".</p>
+    The <gui>Overall Assessment</gui> should say “Disk is OK”.</p>
   </item>
   <item>
     <p>See more information under <gui>SMART Attributes</gui>, or click the
@@ -63,14 +64,19 @@
 
 <section id="disk-not-healthy">
 
- <title>如果磁盘不健康怎么办？</title>
+ <title>What if the disk isn’t healthy?</title>
 
   <p>Even if the <gui>Overall Assessment</gui> indicates that the disk
-  <em>isn't</em> healthy, there may be no cause for alarm. However, it's better
+  <em>isn’t</em> healthy, there may be no cause for alarm. However, it’s better
   to be prepared with a <link xref="backup-why">backup</link> to prevent data
   loss.</p>
 
-  <p>如果状态显示“即将发生故障 (Pre-Fail)”，磁盘依然相当健康，但是有损坏的迹象出现，可能不久就会出错。如果您的硬盘(或计算机)用了很久，您可能会在一些健康检测中看到这个提示。您应该<link xref="backup-how">定期备份重要数据</link>，并经常检查磁盘状态，注意它是否变坏。</p>
+  <p>If the status says “Pre-fail”, the disk is still reasonably healthy but
+ signs of wear have been detected which mean it might fail in the near future.
+ If your hard disk (or computer) is a few years old, you are likely to see
+ this message on at least some of the health checks. You should
+ <link xref="backup-how">backup your important files regularly</link> and check
+ the disk status periodically to see if it gets worse.</p>
 
   <p>如果磁盘持续老化，您最好将计算机/硬盘交由专业人员进行进一步诊断或维修。</p>
 

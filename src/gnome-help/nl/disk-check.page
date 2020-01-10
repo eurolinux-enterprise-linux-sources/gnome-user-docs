@@ -20,39 +20,44 @@
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
     <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
 
-    <desc>Test your hard disk for problems to make sure that it's healthy.</desc>
+    <desc>Testen of er problemen zijn met u harde schijf om te zorgen dat deze in een goede staat verkeert.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Justin van Steijn</mal:name>
+      <mal:email>justin50@live.nl</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hannie Dumoleyn</mal:name>
+      <mal:email>hannie@ubuntu-nl.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
   </info>
 
-<title>Check your hard disk for problems</title>
+<title>Controleer of er problemen zijn met u harde schijf</title>
 
 <section id="disk-status">
- <title>Checking the hard disk</title>
-  <p>Hard disks have a built-in health-check tool called <app>SMART</app>
- (Self-Monitoring, Analysis, and Reporting Technology), which continually
- checks the disk for potential problems. SMART also warns you if the disk
- is about to fail, helping you avoid loss of important data.</p>
+ <title>De harde schijf controleren</title>
+  <p>Harde schijven hebben een ingebouwd controlehulpmiddel genaamd <app>SMART</app> (Self-Monitoring, Analysis, and Reporting Technology), dat voortdurend de schijf controleert op mogelijke problemen. SMART waarschuwt u ook wanneer de schijf op het punt staat te falen, waardoor u het verlies van belangrijke gegevens kunt voorkomen.</p>
 
-  <p>Although SMART runs automatically, you can also check your disk's
- health by running the <app>Disks</app> application:</p>
+  <p>Alhoewel SMART automatisch draait, kunt u ook de gezondheid van uw schijf controleren via de toepassing <app>Schijfgereedschap</app>:</p>
 
 <steps>
- <title>Check your disk's health using the Disks application</title>
+ <title>De gezondheid van uw schijf controleren via de toepassing Schijven</title>
 
   <item>
-    <p>Open <app>Disks</app> from the <gui>Activities</gui> overview.</p>
+    <p>Open <app>Schijven</app> vanuit het <gui>Activiteiten</gui>-overzicht.</p>
   </item>
   <item>
-    <p>Select the disk you want to check from the list of storage devices on
-    the left. Information and status of the disk will be shown.</p>
+    <p>Selecteer de schijf die u wilt controleren in de lijst met opslagapparaten aan de linkerkant. U ziet dan informatie over en de status van de schijf verschijnen.</p>
   </item>
   <item>
-    <p>Click the menu button and select <gui>SMART Data &amp; Self-Tests…</gui>.
-    The <gui>Overall Assessment</gui> should say "Disk is OK".</p>
+    <p>Klik op de menuknop en kies <gui>SMART-gegevens en zelftests…</gui>. Bij de <gui>Totaalbeoordeling</gui> zou moeten staan ‘Schijf is in orde’.</p>
   </item>
   <item>
-    <p>See more information under <gui>SMART Attributes</gui>, or click the
-    <gui style="button">Start Self-test</gui> button to run a self-test.</p>
+    <p>Meer informatie vindt u onder <gui>SMART-Attributen</gui>; u kunt ook klikken op de knop <gui style="button">Zelftest starten</gui> om een zelftest te doen.</p>
   </item>
 
 </steps>
@@ -61,22 +66,13 @@
 
 <section id="disk-not-healthy">
 
- <title>What if the disk isn't healthy?</title>
+ <title>Wat als de schijf niet gezond is?</title>
 
-  <p>Even if the <gui>Overall Assessment</gui> indicates that the disk
-  <em>isn't</em> healthy, there may be no cause for alarm. However, it's better
-  to be prepared with a <link xref="backup-why">backup</link> to prevent data
-  loss.</p>
+  <p>Zelfs als de <gui>Totaalbeoordeling</gui> aangeeft dat de schijf <em>niet</em>gezond is, is er nog geen reden tot paniek. Maar het is wel beter is om voorbereid te zijn door het maken van een <link xref="backup-why">reservekopie</link> om gegevensverlies te voorkomen.</p>
 
-  <p>If the status says "Pre-fail", the disk is still reasonably healthy but
- signs of wear have been detected which mean it might fail in the near future.
- If your hard disk (or computer) is a few years old, you are likely to see
- this message on at least some of the health checks. You should
- <link xref="backup-how">backup your important files regularly</link> and check
- the disk status periodically to see if it gets worse.</p>
+  <p>Als de status ‘Pre-fail’ is, zal de schijf nog steeds redelijk gezond zijn, maar er zijn tekenen van slijtage gedetecteerd wat betekent dat hij mogelijk stuk gaat in de nabije toekomst. Als uw harde schijf (of computer) al een paar jaar oud is, zult u waarschijnlijk dit bericht zien bij op z'n minst sommige van de controles. U zou regelmatig een <link xref="backup-how">reservekopie moeten maken van uw belangrijke bestanden</link> en de schijfstatus periodiek controleren om te zien of het erger wordt.</p>
 
-  <p>If it gets worse, you may wish to take the computer/hard disk to a
- professional for further diagnosis or repair.</p>
+  <p>Als het erger wordt kunt u de computer/harde schijf naar een reparateur brengen voor verdere diagnose of reparatie.</p>
 
 </section>
 

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="login-enterprise" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="login#management"/>
+    <revision pkgversion="3.12" date="2014-01-28" status="draft"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Use suas credenciais de domínio Active Directory ou IPA para iniciar sessão do GNOME.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Usando credenciais corporativas para se autenticar no GNOME</title>
+  
+  <p>Se sua rede possui um domínio Active Directory ou IPA disponível, e você tem uma conta de domínio, você pode usar suas credenciais de domínio para se autenticar no GNOME.</p>
+  <p>Se a máquina tiver sido configurada com sucesso para contas de domínio, usuários podem se autenticar no GNOME usando suas contas. No prompt de login, digite o nome de usuário de domínio seguido por um sinal <sys>@</sys> e, então, seu nome de domínio. Por exemplo, se seu nome de domínio for <var>exemplo.com</var> e o nome de usuário for <var>Usuario</var>, digite:</p>
+  <screen><input>Usuario@exemplo.com</input></screen>
+  <p>Em casos em que a máquina já está configurada para contas de domínio, você deve ver uma dica útil descrevendo o formato de autenticação.</p>
+
+  <section id="enterprise-login-welcome-screens">
+    <title>Usando credenciais corporativas durante telas de boas-vindas</title>
+    <p>Se você ainda não configurou a máquina para credenciais corporativas, você pode fazê-lo nas telas de boas-vindas que são parte do programa <app>Definições iniciais do GNOME</app> (em inglês, GNOME Initial Setup).</p>
+    <steps>
+    <title>Configurando credenciais corporativas</title>
+      <item>
+        <p>Na tela de boas-vindas <gui>Iniciar sessão</gui>, escolha <gui>Definir sessão corporativa</gui>.</p>
+      </item>
+      <item>
+        <p>Digite o nome de seu domínio no campo <gui>Domínio</gui> se já está estiver preenchido.</p>
+      </item>
+      <item>
+        <p>Digite usuário e senha de sua conta de domínio nos campos relevantes.</p>
+      </item>
+      <item>
+        <p>Clique <gui>Próximo</gui>.</p>
+      </item>
+    </steps>
+    <p>Dependendo de como o domínio é configurado, um prompt pode ser mostrado solicitando um nome e senha do administrador do domínio para prosseguir.</p>
+  </section>
+  <section id="enterprise-login-change-to">
+    <title>Alterando o uso de credenciais corporativas para se autenticar no GNOME</title>
+    <p>Se você já completou a definição inicial, e deseja iniciar um conta de domínio para se autenticar no GNOME, então você pode fazer isso a partir do painel <gui>Usuários</gui> nas configurações do GNOME.</p>
+  <steps>
+    <title>Configurando credenciais corporativas</title>
+    <item>
+      <p>Abra o panorama de <gui href="help:gnome-help/shell-terminology">Atividades</gui> e comece a digitar <gui>Usuários</gui>.</p>
+    </item>
+    <item>
+      <p>Clique em <gui>Usuários</gui> para abrir o painel.</p>
+    </item>
+    <item>
+      <p>Clique no botão <gui>Desbloquear</gui> e digite a senha do administrador do computador.</p>
+    </item>
+    <item>
+      <p>Clique no botão <gui>[+]</gui> na porção inferior-esquerda da janela.</p>
+    </item>
+    <item>
+      <p>Clique no botão <gui>Sessão corporativa</gui>.</p>
+    </item>
+    <item>
+      <p>Digite o domínio, usuário e senha de sua conta corporativa, e clique em <gui>Adicionar</gui>.</p>
+   </item>
+  </steps>
+  <p>Dependendo de como seu domínio é configurado, um prompt pode ser mostrado solicitando um nome e senha do administrador do domínio para prosseguir.</p>
+  </section>
+  <section id="enterprise-login-troubleshoot">
+    <title>Resolução de problemas e definições avançadas</title>
+    <p>O comando <cmd>realm</cmd> e seus vários subcomandos podem ser usados para resolver problemas no recurso de sessão corporativa. Por exemplo, para ver se a máquina foi configurada para sessões corporativas, execute o seguinte comando:</p>
+    <screen><output>$ </output><input>realm list</input></screen>
+    <p>Administradores de rede são encorajados a antecipadamente ingressar as estações de trabalho a um domínio relevante. Isso pode ser feito usando o comando inicial <cmd>realm join</cmd>, ou executando <cmd>realm join</cmd> de uma forma automatizada de um script.</p>
+  </section>
+  <section id="enterprise-login-more-information">
+     <title>Obtendo mais informações</title>
+   <list>
+    <item>
+      <p>O <link href="http://www.freedesktop.org/software/realmd/docs/"> guia de administração</link> do realmd fornece informações mais detalhadas sobre usar o recurso de sessão corporativa.</p>
+    </item>
+   </list>
+  </section>
+
+</page>

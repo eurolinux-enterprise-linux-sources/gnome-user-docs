@@ -18,39 +18,53 @@
       <email>jsvarova@gnome.org</email>
     </credit>
 
-    <desc>Use the <app>Orca</app> screen reader to speak the user
-    interface.</desc>
+    <desc>Gebruik de <app>Orca</app> schermlezer om de gebruikersinterface uit te spreken.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Justin van Steijn</mal:name>
+      <mal:email>justin50@live.nl</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hannie Dumoleyn</mal:name>
+      <mal:email>hannie@ubuntu-nl.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
   </info>
 
-  <title>Read screen aloud</title>
+  <title>Scherm hardop lezen</title>
 
-  <p>GNOME provides the <app>Orca</app> screen reader to speak the user
-  interface. Depending on how you installed GNOME, you might not have
-  Orca installed. If not, install Orca first.</p>
+  <p>Gnome levert de <app>Orca</app>-schermlezer waarmee de gebruikersinterface kan worden uitgesproken. Afhankelijk van hoe u Gnome geïnstalleerd heeft kan het zijn dat Orca bij u niet geïnstalleerd is. Als dat het geval is dient u Orca eerst te installeren.</p>
 
-  <p if:test="action:install"><link style="button" action="install:orca">Install Orca</link></p>
+  <p if:test="action:install"><link style="button" action="install:orca">Orca installeren</link></p>
+  
+  <p>Om <app>Orca</app> te starten via het toetsenbord:</p>
+  
+  <steps>
+    <item>
+    <p>Druk op <key>Super</key>+<key>Alt</key>+<key>S</key>.</p>
+    </item>
+  </steps>
+  
+  <p>Of om <app>Orca</app> te starten via muis en toetsenbord:</p>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Universal Access</gui>.</p>
+      <p>Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht en typ <gui>Universele toegang</gui>.</p>
     </item>
     <item>
-      <p>Click <gui>Universal Access</gui> to open the panel.</p>
+      <p>Klik op <gui>Universele toegang</gui> om het paneel te openen.</p>
     </item>
     <item>
-      <p>Click <gui>Screen Reader</gui> in the <gui>Seeing</gui> section, then
-      switch <gui>Screen Reader</gui> on in the dialog.</p>
+      <p>Klik op <gui>Schermlezer</gui> onder het kopje <gui>Zicht</gui>, en zet vervolgens <gui>Schermlezer</gui> aan in het venster.</p>
     </item>
   </steps>
 
   <note style="tip">
-    <title>Quickly turn Screen Reader on and off</title>
-    <p>You can turn Screen Reader on and off by clicking the
-    <link xref="a11y-icon">accessibility icon</link> in the top bar and
-    selecting <gui>Screen Reader</gui>.</p>
+    <title>Schermlezer snel in- of uitschakelen</title>
+    <p>U kunt Schermlezer aan- en uitzetten door te klikken op het <link xref="a11y-icon">toegankelijkheidspictogram</link> in de bovenbalk en <gui>Schermlezer</gui> te selecteren.</p>
   </note>
 
-  <p>Refer to the <link href="help:orca">Orca Help</link> for
-  more information.</p>
+  <p>Kijk in de <link href="help:orca">Hulp voor Orca</link> voor meer informatie.</p>
 </page>

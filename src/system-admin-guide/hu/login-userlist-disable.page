@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="login-userlist-disable" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="login#appearance"/>
+    <revision pkgversion="3.11" date="2014-01-29" status="draft"/>
+    <revision pkgversion="3.14" date="2014-06-17" status="review"/>
+
+    <credit type="author copyright">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>A felhasználóknak be kell gépelniük a felhasználónevüket a bejelentkezési képernyőn.</desc>
+   
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>ur.balazs@fsf.hu</mal:email>
+      <mal:years>2018.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>A felhasználólista letiltása</title>
+
+  <p>Letilthatja a bejelentkezési képernyőn megjelenő felhasználólistát az <sys>org.gnome.login-screen.disable-user-list</sys> GSettings kulcs beállításával.</p>
+  <p>Ha a felhasználólista le van tiltva, akkor a felhasználóknak be kell gépelniük a felhasználónevüket és a jelszavukat a mezőkbe a bejelentkezéshez.</p>
+  <steps>
+    <title>Az org.gnome.login-screen.disable-user-list kulcs beállítása</title>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-gdm'])"/>
+    <item>
+      <p>Hozzon létre egy <sys>gdm</sys> kulcsfájlt a rendszerszintű beállításokhoz az <file>/etc/dconf/db/gdm.d/00-login-screen</file> fájlban:</p>
+        <code>[org/gnome/login-screen]
+# Ne jelenjen meg a felhasználólista
+disable-user-list=true
+</code>
+    </item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+  </steps>
+
+</page>

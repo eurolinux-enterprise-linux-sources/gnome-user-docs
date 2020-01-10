@@ -31,6 +31,8 @@
       <email>kittykat3756@gmail.com</email>
     </credit>
 
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
     <desc>Definējiet vai mainiet tastatūras saīsnes <gui>Tastatūra</gui> iestatījumos.</desc>
   </info>
 
@@ -77,7 +79,7 @@
   </tr>
   <tr>
 	<td><p>Palaist tīmekļa pārlūkprogrammu</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-world.svg"> <key>WWW</key> key symbol</media> or <media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-home.svg"> <key>WWW</key> key symbol</media> or <key>WWW</key></p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-world.svg"> <key>WWW</key> key symbol</media> vai <media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-home.svg"> <key>WWW</key> key symbol</media> vai <key>WWW</key></p></td>
   </tr>
   <tr>
 	<td><p>Mājas mape</p></td>
@@ -443,20 +445,14 @@
 <section id="custom">
 <title>Pielāgotās saīsnes</title>
 
-  <p>To create your own application keyboard shortcut in the
-  <app>Keyboard</app> settings:</p>
+  <p>Izveidojiet savas lietotņu tastatūras saīsnes <gui>Tastatūra</gui> iestatījumos:</p>
 
   <steps>
     <item>
-      <p>Click the <gui style="button">+</gui> button. The <gui>Custom
-      Shortcut</gui> window will appear.</p>
+      <p>Spiediet pogu <gui style="button">+</gui>. Parādīsies <gui>Pielāgota saīsne</gui> dialoglodziņš.</p>
     </item>
     <item>
-      <p>Type a <gui>Name</gui> to identify the shortcut, and a
-      <gui>Command</gui> to run an application, then click <gui>Add</gui>.
-      For example, if you wanted the shortcut to open <app>Rhythmbox</app>, you
-      could name it <input>Music</input> and use the <input>rhythmbox</input>
-      command.</p>
+      <p>Rakstiet <gui>Nosaukums</gui> laukā, lai identificētu saīsni, un <gui>Komanda</gui> laukā, lai palaistu lietotni, un tad klikšķiniet <gui>Pievienot</gui>. Piemēram, ja jūs vēlaties izveidot saīsni, lai palaistu <app>Rhythmbox</app>, jūs varētu to nosaukt <input>Mūzika</input> un izmantot <input>rhythmbox</input> komandu.</p>
     </item>
     <item>
       <p>Spiediet <gui>Deaktivēts</gui> rindā, kura tikko tika pievienota. Kad tā mainās uz <gui>jauns paātrinātājs…</gui>, turiet nospiestu vēlamo saīsnes taustiņu kombināciju.</p>

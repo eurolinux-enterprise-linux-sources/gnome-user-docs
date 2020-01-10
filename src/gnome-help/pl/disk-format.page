@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-format" xml:lang="pl">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Projekt dokumentacji GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>Usuwanie wszystkich plików i katalogów na zewnętrznym dysku twardym lub dysku USB.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Formatowanie dysku wymiennego</title>
+
+  <p>W przypadku wymiennych dysków, takich jak dysk USB lub zewnętrzny dysk twardy, można całkowicie usunąć wszystkie pliki i katalogi. Nazywa się to <em>formatowaniem</em> dysku.</p>
+
+<steps>
+  <title>Formatowanie dysku wymiennego</title>
+  <item>
+    <p>Otwórz program <app>Dyski</app> z <gui>ekranu podglądu</gui>.</p>
+  </item>
+  <item>
+    <p>Wybierz dysk do wyczyszczenia z listy urządzeń do przechowywania danych po lewej.</p>
+
+    <note style="warning">
+      <p>Upewnij się, że wybrano właściwy dysk! Jeśli wybrano inny dysk, to wszystkie jego pliki zostaną usunięte.</p>
+    </note>
+  </item>
+  <item>
+    <p>Na pasku narzędziowym pod sekcją <gui>Woluminy</gui> kliknij przycisk menu. Następnie kliknij <gui>Sformatuj…</gui>.</p>
+  </item>
+  <item>
+    <p>W wyświetlonym oknie wybierz <gui>Typ</gui> systemu plików dla dysku.</p>
+   <p>Jeśli oprócz komputera z systemem Linux używane są komputery z systemami Windows lub macOS, to wybierz <gui>FAT</gui>. Jeśli urządzenie będzie używane tylko w systemie Windows, to <gui>NTFS</gui> może być lepszą opcją. <gui>Typy systemów plików</gui> mają krótkie opisy.</p>
+  </item>
+  <item>
+    <p>Wpisz nazwę dysku i kliknij przycisk <gui>Sformatuj…</gui>, aby przejść do okna potwierdzenia. Uważnie przeczytaj podane informacje i kliknij przycisk <gui>Sformatuj…</gui>, aby wyczyścić dysk.</p>
+  </item>
+  <item>
+    <p>Po ukończeniu formatowania kliknij ikonę wysunięcia, aby bezpiecznie usunąć dysk. Powinien być teraz pusty i gotowy do użycia.</p>
+  </item>
+</steps>
+
+<note style="warning">
+ <title>Formatowanie dysku nie usuwa plików na zawsze</title>
+  <p>Formatowanie dysku nie jest całkowicie bezpiecznym sposobem usuwania wszystkich danych. Sformatowany plik wygląda, jakby nie miał żadnych plików, ale specjalistyczne oprogramowanie może je odzyskać. Do bezpiecznego usuwania plików należy użyć narzędzia wiersza poleceń, takiego jak <app>shred</app>.</p>
+</note>
+
+</page>

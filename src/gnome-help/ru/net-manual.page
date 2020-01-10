@@ -8,6 +8,7 @@
     <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
     <revision pkgversion="3.10" date="2013-11-11" status="review"/>
     <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.28" date="2018-03-28" status="review"/>
 
     <credit type="author">
       <name>Фил Булл (Phil Bull)</name>
@@ -18,7 +19,8 @@
       <email>mdhillca@gmail.com</email>
     </credit>
 
-    <desc>Если настройки сети не назначаются автоматически, придётся задать их вручную.</desc>
+    <desc>You may have to enter network settings if they don’t get assigned
+    automatically.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -54,33 +56,44 @@
 
   <title>Настройка параметров соединения вручную</title>
 
-  <p>Если ваша сеть не назначает автоматически параметры сетевого соединения для вашего компьютера, вам придётся ввести их самому. В этой теме предполагается, что вам известны правильные настройки. Если нет, нужно узнать их у администратора сети или взглянуть на настройки сетевого маршрутизатора или коммутатора.</p>
+  <p>If your network doesn’t automatically assign network settings to your
+  computer, you may have to manually enter the settings yourself. This topic
+  assumes that you already know the correct settings to use. If not, you may
+  need to ask your network administrator or look at the settings of your router
+  or network switch.</p>
 
   <steps>
     <title>Чтобы настроить параметры сетевого соединения вручную:</title>
     <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Network</gui>.</p>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui>
+      overview and start typing <gui>Settings</gui>.</p>
     </item>
     <item>
-      <p>Нажмите <gui>Сеть</gui> чтобы открыть этот раздел настроек.</p>
+      <p>Click on <gui>Settings</gui>.</p>
     </item>
     <item>
       <p>In the left pane, select the network connection that you want to set
       up manually. If you plug in to the network with a cable, click
-      <gui>Wired</gui>, then click the
-      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media> button in the lower right corner of
-      the panel. For a <gui>Wi-Fi</gui> connection, the 
-      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
-      button will be located next to the active network.</p>
+      <gui>Network</gui>. Otherwise click <gui>Wi-Fi</gui>.</p>
       <p>Убедитесь, что беспроводная карта включена или сетевой кабель подключён к компьютеру.</p>
     </item>
-    <item>
-      <p>Нажмите <gui>IPv4</gui> и измените <gui>Адреса</gui> на <gui>Вручную</gui>.</p>
+    <item>      
+      <p>Click the
+      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
+      button.</p>
+      <note>
+        <p>For a <gui>Wi-Fi</gui> connection, the 
+        <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
+        button will be located next to the active network.</p>
+      </note>
     </item>
     <item>
-      <p>Введите <gui>Адрес</gui> и <gui>Маршрут</gui>, а также соответствующую<gui>Сетевую маску</gui>.</p>
-      <p>Эти три адреса должны быть <em>IP-адресами</em>, то есть, они должны состоять из четырёх чисел, разделённых точками (например, 123.45.6.78).</p>
+      <p>Click on <gui>IPv4</gui> or <gui>IPv6</gui> in the left pane
+      and change the <gui>Addresses</gui> to <em>Manual</em>.</p>
+    </item>
+    <item>
+      <p>Type in the <gui xref="net-what-is-ip-address">IP Address</gui> and
+      <gui>Gateway</gui>, as well as the appropriate <gui>Netmask</gui>.</p>
     </item>
     <item>
       <p>In the <gui>DNS</gui> section, switch <gui>Automatic</gui> to

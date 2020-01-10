@@ -8,6 +8,7 @@
     <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
     <revision pkgversion="3.10" date="2013-11-11" status="review"/>
     <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.28" date="2018-03-28" status="review"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -36,13 +37,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Christian Kirbach</mal:name>
       <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2016.</mal:years>
+      <mal:years>2011-2017.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Mario Blättermann</mal:name>
       <mal:email>mario.blaettermann@gmail.com</mal:email>
-      <mal:years>2011-2013.</mal:years>
+      <mal:years>2011-2013, 2017.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -59,21 +60,33 @@
   <steps>
     <title>So richten Sie Ihre Netzwerkeinstellungen manuell ein:</title>
     <item>
-      <p>Öffnen Sie die <gui xref="shell-introduction#activities">Aktivitäten</gui>-Übersicht und tippen Sie <gui>Netzwerk</gui>.</p>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui>
+      overview and start typing <gui>Settings</gui>.</p>
     </item>
     <item>
-      <p>Klicken Sie auf <gui>Netzwerk</gui>, um das Panel zu öffnen.</p>
+      <p>Click on <gui>Settings</gui>.</p>
     </item>
     <item>
-      <p>Wählen Sie im linken Teilfenster die Netzwerkverbindung, die Sie manuell einrichten wollen. Wenn Sie beispielsweise ein kabelgebundenes Netzwerk anschließen, klicken Sie auf <gui>Kabelgebunden</gui> und dann auf den <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">Einstellungen</span></media>-Knopf in der unteren linken Ecke des Panels. Im Falle einer <gui>WLAN</gui>-Verbindung befindet sich der Knopf <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">Einstellungen</span></media> neben dem aktiven Netzwerk.</p>
+      <p>In the left pane, select the network connection that you want to set
+      up manually. If you plug in to the network with a cable, click
+      <gui>Network</gui>. Otherwise click <gui>Wi-Fi</gui>.</p>
       <p>Stellen Sie sicher, dass Ihr Funknetzwerkadapter eingeschaltet oder das Netzwerkkabel eingesteckt ist.</p>
     </item>
-    <item>
-      <p>Klicken Sie auf <gui>IPv4</gui> und ändern Sie die <gui>Adressen</gui> auf <gui>Manuell</gui>.</p>
+    <item>      
+      <p>Click the
+      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
+      button.</p>
+      <note>
+        <p>For a <gui>Wi-Fi</gui> connection, the 
+        <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
+        button will be located next to the active network.</p>
+      </note>
     </item>
     <item>
-      <p>Geben Sie die <gui>Adresse</gui> und <gui>Gateway</gui>-Adresse sowie die entsprechende <gui>Netzmaske</gui> ein.</p>
-      <p>Diese Adressen müssen <em>IP-Adressen</em> sein. Das heißt, sie müssen aus vier Zahlen bestehen, durch Punkte getrennt, beispielsweise »123.45.6.78«.</p>
+      <p>Klicken Sie auf <gui>IPv4</gui> oder <gui>IPv6</gui> in der linken Seitenleiste und ändern Sie <gui>Adressen</gui> auf <em>Manuell</em>.</p>
+    </item>
+    <item>
+      <p>Geben Sie <gui xref="net-what-is-ip-address">IP-Adresse</gui> und <gui>Gateway</gui> sowie die entsprechende <gui>Netzmaske</gui> ein.</p>
     </item>
     <item>
       <p>Stellen Sie <gui>Automatisch</gui> im Abschnitt <gui>DNS</gui> auf <gui>AUS</gui>. Geben Sie die IP-Adresse des DNS-Servers ein, den Sie verwenden möchten. Geben Sie zusätzliche DNS-Server-Adressen mit Hilfe des Knopfes <key>+</key> ein.</p>

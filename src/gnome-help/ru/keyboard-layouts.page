@@ -87,13 +87,32 @@
     </item>
   </steps>
 
+  <note style="tip">
+    <p>If there are multiple user accounts on your system, there is a separate
+    instance of the <gui>Region &amp; Language</gui> panel for the login screen.
+    Click the <gui>Login Screen</gui> button at the top right to toggle between
+    the two instances.</p>
+
+    <p>Some rarely used keyboard layout variants are not available by default when you click
+    the <gui>+</gui> button. To make also those input sources available you can open a terminal
+    window by pressing <keyseq><key>Ctrl</key><key>Alt</key><key>T</key></keyseq>
+    and run this command:</p>
+    <p><cmd its:translate="no">gsettings set org.gnome.desktop.input-sources show-all-sources true</cmd></p>
+  </note>
+
   <note style="sidebar">
     <p>Получить предварительный просмотр любой раскладки с помощью изображения можно, выбрав её в списке <gui>Источников ввода</gui> и нажав <gui><media its:translate="no" type="image" src="figures/input-keyboard-symbolic.png" width="16" height="16"><span its:translate="yes">предпросмотр</span></media></gui></p>
   </note>
 
   <p>Некоторые языки предлагают дополнительные параметры настройки. Отличить такие языки можно по дополнительному значку <gui><media its:translate="no" type="image" src="figures/system-run-symbolic.svg" width="16" height="16"><span its:translate="yes">предпросмотр</span></media></gui>. Для доступа к этим дополнительным параметрам выберите язык из списка в <gui>Источниках ввода</gui>, и появившаяся кнопка <gui style="button"><media its:translate="no" type="image" src="figures/emblem-system-symbolic.svg" width="16" height="16"><span its:translate="yes">параметры</span></media></gui> даст доступ к этим настройкам.</p>
 
-  <p>При использовании нескольких раскладок можно выбрать, должны ли все окна использовать одну и ту же раскладку, или для каждого окна можно выбирать отдельную раскладку. Использование отдельных раскладок для каждого окна удобно, например, если вы пишете статью на другом языке в окне текстового редактора. При переключении между окнами выбранная вами раскладка будет запоминаться для каждого окна. Нажмите кнопку <gui style="button">Параметры</gui> чтобы указать, как именно обрабатывать несколько раскладок.</p>
+  <p>When you use multiple layouts, you can choose to have all windows use the
+  same layout or to set a different layout for each window. Using a different
+  layout for each window is useful, for example, if you’re writing an article
+  in another language in a word processor window. Your keyboard selection will
+  be remembered for each window as you switch between windows. Press the
+  <gui style="button">Options</gui> button to select how you want to manage
+  multiple layouts.</p>
 
   <p>В верхней панели показывается краткий идентификатор текущей раскладки, например, <gui>en</gui> для стандартной английской раскладки. Нажмите на индикатор раскладки и выберите в меню нужную раскладку. Если у выбранного языка есть дополнительные параметры, они будут показаны под списком доступных раскладок. Здесь даётся короткий обзор параметров. Для дополнительной справки можно также открыть изображение текущей раскладки клавиатуры.</p>
 

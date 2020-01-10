@@ -49,7 +49,7 @@
   <p>Administrative privileges are associated with your user account.
   <gui>Administrator</gui> users are allowed to have these privileges while
   <gui>Standard</gui> users are not. Without administrative privileges you will
-  not be able to install software. Some user accounts (for example, the "root"
+  not be able to install software. Some user accounts (for example, the “root”
   account) have permanent administrative privileges. You should not use
   administrative privileges all of the time, because you might accidentally
   change something you did not intend to (like delete a needed system file, for
@@ -58,8 +58,12 @@
   <p>சுருக்கமாக நிர்வாக அனுமதிகள், தேவைப்படும் போது கணினியின் முக்கிய அம்சங்களில் மாற்றம் செய்ய உங்களை அனுமதிக்கிறது, அதே சமயம் நீஙக்ள் தற்செயலாக அதைச் செய்யாமல் தடுக்கிறது.</p>
 
   <note>
-    <title>"super user" என்றால் என்ன?</title>
-    <p>நிர்வாக அனுமதிகள் கொண்ட ஒரு பயனரை <em>super user</em> என்றும் அழைப்போம். இந்தப் பயனருக்கு மற்ற வழக்கமான பயனர்களை விட கூடுதல் அனுமதிகள் இருப்பதே இதற்குக் காரணம். சிலர்  <cmd>su</cmd> மற்றும் <cmd>sudo</cmd> ஆகியவை பற்றிப் பேசுவதை நீங்கள் கேட்டிருக்கலாம்; இவை உங்களுக்கு தற்காலிகமாக "super user" (நிர்வாக) அனுமதிகளை வழங்கும் நிரல்களாகும்.</p>
+    <title>What does “super user” mean?</title>
+    <p>A user with administrative privileges is sometimes called a <em>super
+    user</em>. This is simply because that user has more privileges than normal
+    users. You might see people discussing things like <cmd>su</cmd> and
+    <cmd>sudo</cmd>; these are programs for temporarily giving you “super user”
+    (administrative) privileges.</p>
   </note>
 
 <section id="advantages">
@@ -69,7 +73,11 @@
 
   <p>உங்களுக்கு எல்லா நேரமும் நிர்வாக அனுமதிகள் இருந்தால், நீங்கள் ஏதேனும் முக்கியமான கோப்பை எதிர்பாராமல் மாற்றிவிடலாம் அல்லது முக்கிய மாற்றங்களைச் செய்யும் ஒரு பயன்பாட்டை தவறுதலாக இயக்கிவிடலாம். தேவையான போது மட்டும் தற்காலிகமாக நிர்வாக அனுமதிகளைப் பெறுவது இத்தகைய சிக்கல்கள் ஏற்படும் ஆபத்தைக் குறைக்கிறது.</p>
 
-  <p>நம்பகமான சில குறிப்பிட்ட பயனர்களுக்கு மட்டுமே நிர்வாக அனுமதிகள் வழங்கப்பட வேண்டும். இது மற்ற பயனர்கள் கணினியில் கண்டபடி மாற்றங்கள் செய்வதையும், உங்களுக்கு தேவையான பயன்பாட்டை நிறுவல்நீக்குதல் அல்லது தேவையில்லாத பயன்பாடுகளை நிறுவுதல் அல்லது முக்கிய கோப்புகளில் மாற்றங்கள் செய்தல் போன்ற செயல்களைச் செய்வதையும் தடுக்கும். பாதுகாப்பு நோக்கில் இது மிகப் பயனுள்ளது.</p>
+  <p>Only certain trusted users should be allowed to have administrative
+  privileges. This prevents other users from messing with the computer and
+  doing things like uninstalling applications that you need, installing
+  applications that you don’t want, or changing important files. This is useful
+  from a security standpoint.</p>
 
 </section>
 

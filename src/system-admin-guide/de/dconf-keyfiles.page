@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="dconf-keyfiles" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="setup"/>
+<!--    <link type="seealso" xref="dconf-profiles" />-->
+    <revision pkgversion="3.9" date="2013-08-06" status="stub"/>
+
+    <credit type="author copyright">
+      <name>Ryan Lortie</name>
+      <email>desrt@desrt.ca</email>
+      <years>2012</years>
+    </credit>
+    <credit type="author">
+      <name>Aruna Sankaranarayanan</name>
+      <email>aruna.evam@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Verwenden Sie <sys its:translate="no">dconf</sys>-<em>Schlüsseldateien</em>, um spezifische Einstellungen in einem Texteditor zu bearbeiten.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Systemeinstellungen mit Schlüsseldateien steuern</title>
+
+  <p>Systemdatenbankdateien in <file its:translate="no">/etc/dconf/db</file> können nicht bearbeitet werden, da sie im GVDB-Format vorliegen. Um Systemeinstellungen mit einem Texteditor zu bearbeiten, können Sie die in <em>Schlüsseldatei-Ordnern</em> befindlichen <em>Schlüsseldateien</em> bearbeiten. Jeder Schlüsseldatei-Ordner korrespondiert zu einer bestimmten Systemdatenbankdatei und trägt den gleichen Namen wie diese, lediglich um die Endung ».d« erweitert (zum Beispiel <file>/etc/dconf/db/local.d</file>). Alle Schlüsseldatei-Ordner befinden sich in <file its:translate="no">/etc/dconf/db</file> und jeder enthält Dateien in einem speziellen Format, das in die <sys its:translate="no">dconf</sys>-Datenbank kompiliert werden kann.</p>
+
+  <listing>
+    <title>Eine Schlüsseldatei in diesem Ordner wird etwa wie folgt aussehen:</title>
+      <code>
+# Einige sinnvolle Standardeinstellungen für unsere Seite
+
+[system/proxy/http]
+host='172.16.0.1'
+enabled=true
+
+[org/gnome/desktop/background]
+picture-uri='file:///usr/local/rupert-corp/company-wallpaper.jpeg'
+      </code>
+  </listing>
+
+  <note style="important">
+    <p><cmd>dconf update</cmd> muss immer dann ausgeführt werden, wenn Sie eine Schlüsseldatei ändern. Wenn sie das tun, vergleicht <sys its:translate="no">dconf</sys> den Zeitstempel in einer Systemdatenbankdatei mit dem Zeitstempel des zugehörigen Schlüsseldatei-Ordners. Falls der Zeitstempel des Schlüsseldatei-Ordners neuer ist als der der Systemdatenbankdatei, regeneriert <sys its:translate="no">dconf</sys> die <code>system-db</code>-Datei und sendet eine Benachrichtigung an den <sys>Dbus</sys> des Systems, wodurch wiederum alle laufenden Anwendungen aufgefordert werden, Ihre Einstellungen neu einzulesen.</p>
+  </note>
+
+</page>

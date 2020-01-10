@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="fonts" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="appearance"/>
+    <link type="seealso" xref="fonts-user"/>
+    <revision pkgversion="3.11" date="2014-01-29" status="draft"/>
+
+    <credit type="author copyright">
+      <name>Matthias Clasen</name>
+      <email>matthias.clasen@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Jana Svarova</name>
+      <email>jana.svarova@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+
+    <desc>Eine zusätzliche Schrift für alle Benutzer hinzufügen.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Eine zusätzliche Schrift für alle Benutzer hinzufügen</title>
+
+  <p>Sie können eine zusätzliche Schrift für Benutzer Ihres Systems für Anwendungen installieren, die <sys>fontconfig</sys> für den Umgang mit Schriften verwenden.</p>
+
+  <steps>
+    <title>Eine zusätzliche Schrift installieren</title>
+    <item>
+      <p>Kopieren Sie die Schrift in den Ordner <file>/usr/local/share/fonts/</file>, um sie zu installieren.</p>
+    </item>
+    <item>
+      <p>Führen Sie den folgenden Befehl aus, um den Schrift-Zwischenspeicher zu aktualisieren:</p>
+      <screen><output>$ </output><input>fc-cache /usr/local/share/fonts/</input></screen>
+    </item>
+  </steps>
+
+  <p>Laufende Anwendungen müssen neu gestartet werden, damit die Änderungen wirksam werden. Benutzersitzungen müssen nicht neu gestartet werden.</p>
+  
+  <p>Alternativ können Sie Schriften auch in einem anderen Ordner als <file>/usr/local/share/fonts/</file> installieren, sofern der Ordner in der Datei <file>/etc/fonts/fonts.conf</file> aufgelistet ist. Falls nicht, müssen sie Ihre eigene systemweite Konfigurationsdatei in <file>/etc/fonts/local.conf</file> anlegen. Sie muss den Ordner enthalten, den Sie verwenden wollen. Weitere Informationen finden Sie in der Handbuchseite zu <cmd>fonts-conf</cmd>(5).</p>
+  <p>Wenn Sie einen anderen Ordner verwenden, dann denken Sie daran, den Ordnernamen anzugeben, wenn Sie den Schriften-Zwischenspeicher mit dem Befehl <cmd>fc-cache</cmd> aktualisieren:</p>
+  <screen><output>$ </output><input>fc-cache <var>Ordnername</var></input></screen>
+
+</page>

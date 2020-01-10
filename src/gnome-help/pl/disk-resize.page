@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-resize" xml:lang="pl">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Projekt dokumentacji GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.25.90" date="2017-08-17" status="review"/>
+
+    <desc>Zmniejszanie lub powiększanie systemu plików i jego partycji.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Dostosowanie rozmiaru systemu plików</title>
+
+  <p>Można powiększyć system plików, aby użyć wolnego miejsca po jego partycji. Często jest to możliwe nawet, jeśli system plików jest zamontowany.</p>
+  <p>Aby zwolnić miejsce na inną partycję po systemie plików, można go zmniejszyć zgodnie z wolnym miejscem, jakie zawiera.</p>
+  <p>Nie wszystkie systemy plików obsługują zmianę rozmiaru.</p>
+  <p>Rozmiar partycji zostanie zmieniony razem z rozmiarem systemu plików. Można także zmienić rozmiar partycji bez systemu plików w ten sam sposób.</p>
+
+<steps>
+  <title>Zmiana rozmiaru systemu plików/partycji</title>
+  <item>
+    <p>Otwórz program <app>Dyski</app> z <gui>ekranu podglądu</gui>.</p>
+  </item>
+  <item>
+    <p>Wybierz dysk zawierający system plików z listy urządzeń do przechowywania danych po lewej. Jeśli na dysku jest więcej niż jeden wolumin, to wybierz ten zawierający system plików.</p>
+  </item>
+  <item>
+    <p>Na pasku narzędziowym pod sekcją <gui>Woluminy</gui> kliknij przycisk menu. Następnie kliknij <gui>Zmień rozmiar systemu plików…</gui> lub <gui>Zmień rozmiar…</gui>, jeśli nie ma systemu plików.</p>
+  </item>
+  <item>
+    <p>Zostanie otwarte okno, w którym można wybrać nowy rozmiar. System plików zostanie zamontowany, aby obliczyć minimalny rozmiar według ilości obecnej zawartości. Jeśli zmniejszanie nie jest obsługiwane, to minimalny rozmiar wynosi tyle, co obecny rozmiar. Zostaw wystarczającą ilość miejsca na systemie plików, aby zapewnić jego szybkie i niezawodne działanie.</p>
+    <p>W zależności od ilości danych, jakie trzeba przenieść ze zmniejszanej części, zmiana rozmiaru systemu plików może zająć chwilę dłużej.</p>
+    <note style="warning">
+      <p>Zmiana rozmiaru systemu plików automatycznie obejmuje jego <link xref="disk-repair">naprawę</link>. Dlatego zalecane jest utworzenie kopii zapasowej ważnych danych przed rozpoczęciem. Tego działania nie można zatrzymać, bo spowoduje to uszkodzenie systemu plików.</p>
+    </note>
+  </item>
+  <item>
+      <p>Potwierdź, aby rozpocząć działanie klikając przycisk <gui style="button">Zmień rozmiar</gui>.</p>
+   <p>Spowoduje to odmontowanie systemu plików, jeśli zmiana rozmiaru zamontowanego systemu plików jest nieobsługiwana. Zachowaj cierpliwość podczas zmiany rozmiaru.</p>
+  </item>
+  <item>
+    <p>Po ukończeniu zmiany rozmiaru i naprawy system plików jest gotowy do ponownego użytku.</p>
+  </item>
+</steps>
+
+</page>

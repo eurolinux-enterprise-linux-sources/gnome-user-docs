@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="reference" id="net-firewall-ports" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="net-security"/>
+    <link type="seealso" xref="net-firewall-on-off"/>
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Do włączenia/wyłączenia dostępu programu do sieci w zaporze sieciowej potrzebny jest właściwy port.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Często używane porty sieciowe</title>
+
+  <p>To lista portów sieciowych często używanych przez programy dostarczające usługi sieciowe, takie jak udostępnianie plików i zdalne przeglądanie pulpitu. Można zmienić ustawienia zapory sieciowej systemu, aby <link xref="net-firewall-on-off">zablokować lub włączyć dostęp</link> do tych programów. Lista nie jest pełna, jako że istnieją tysiące portów.</p>
+
+  <table shade="rows" frame="top">
+    <thead>
+      <tr>
+	<td>
+	  <p>Port</p>
+	</td>
+	<td>
+	  <p>Nazwa</p>
+	</td>
+	<td>
+	  <p>Opis</p>
+	</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+	<td>
+	  <p>5353/UDP</p>
+	</td>
+	<td>
+	  <p>mDNS, Avahi</p>
+	</td>
+	<td>
+	  <p>Umożliwia komputerom odnajdywanie się nawzajem i opisywanie udostępnianych usług bez potrzeby ręcznego podawania informacji.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/UDP</p>
+	</td>
+	<td>
+	  <p>Drukowanie</p>
+	</td>
+	<td>
+	  <p>Umożliwia wysyłanie zadań wydruku do drukarki przez sieć.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>631/TCP</p>
+	</td>
+	<td>
+	  <p>Drukowanie</p>
+	</td>
+	<td>
+	  <p>Umożliwia udostępnianie drukarki innym osobom przez sieć.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5298/TCP</p>
+	</td>
+	<td>
+	  <p>Obecność</p>
+	</td>
+	<td>
+	  <p>Umożliwia rozgłaszanie stanu komunikatora (np. „dostępny” lub „zajęty”) innym osobom w sieci.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>5900/TCP</p>
+	</td>
+	<td>
+	  <p>Zdalny pulpit</p>
+	</td>
+	<td>
+	  <p>Umożliwia udostępnianie pulpitu, aby inne osoby mogły go przeglądać lub pomagać zdalnie.</p>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <p>3689/TCP</p>
+	</td>
+	<td>
+	  <p>Udostępnianie muzyki (DAAP)</p>
+	</td>
+	<td>
+	  <p>Umożliwia udostępnianie kolekcji muzyki innym osobom w sieci lokalnej.</p>
+	</td>
+      </tr>
+    </tbody>
+  </table>
+
+</page>

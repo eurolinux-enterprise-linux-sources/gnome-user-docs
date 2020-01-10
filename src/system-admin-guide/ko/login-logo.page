@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="login-logo" xml:lang="ko">
+
+  <info>
+    <link type="guide" xref="login#appearance"/>
+    <!--<link type="seealso" xref="gdm-restart"/>-->
+    <revision pkgversion="3.11" date="2014-01-29" status="draft"/>
+
+    <credit type="author copyright">
+      <name>Matthias Clasen</name>
+      <email>matthias.clasen@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="author copyright">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="author copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>로그인 화면에서 이미지를 표시하기 위해 <sys its:translate="no">GDM</sys> <sys its:translate="no">dconf</sys> 프로필을 수정합니다.</desc>
+   </info>
+
+  <title>로그인 화면에 환영 로고 추가</title>
+
+  <p>로그인 화면의 환영 로고는 <sys>org.gnome.login-screen.logo</sys> GSetting 키에 의해 통제됩니다. <sys>GDM</sys>는 자가적인 <sys>dconf</sys> 프로필을 사용하기 때문에, 프로필 설정 변경을 통해 환영 로고를 추가해야 합니다.</p>
+  
+  <p>로그인 화면에서 로고로 쓰기에 적절한 그림을 골랐을 때, 다음의 조건을 따르는지 확인합니다:</p>
+  
+  <list>
+  <item><p>지원되는 주요 형식: ANI, BPM, GIF, ICNS, ICO, JPEG, JPEG 2000, PCX, PNM, PBM, PGM, PPM, GTIFF, RAS, TGA, TIFF, XBM, WBMP, XPM, SVG.</p></item>
+  <item><p>사진의 크기가 세로 48 픽셀이기 때문에 만약, 예를 들어, 1920x1080 사이즈로 로고를 설정한다면 85x48 사이즈의 썸네일로 변환해야 합니다.</p></item>
+  </list>
+  
+  <steps>
+  <title>키 org.gnome.login-screen.logo 설정</title>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-gdm'])"/>
+  <item><p>컴퓨터 전반적인 설정을 위해 <file>/etc/dconf/db/gdm.d/<var>01-logo</var></file> <sys>gdm</sys> 데이터베이스를 생성하세요:</p>
+  <code>[org/gnome/login-screen]
+  logo='<var>/usr/share/pixmaps/logo/greeter-logo.png</var>'
+  </code>
+  <p><var>/usr/share/pixmaps/logo/greeter-logo.png</var>를 환영 로고로 쓸 당신이 원하는 사진 파일의 경로로 교체하세요.</p></item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+  </steps>
+
+  <section id="login-logo-not-update">
+  <title>로고가 업데이트 되지 않는다면 어떻게 해야합니까?</title>
+
+  <p>시스템 데이터베이스를 업데이트할 때 <cmd>dconf update</cmd> 명령이 실행되는지 확인합니다.</p>
+
+  <p>로고가 업데이트되지 않는 경우, <sys>GDM</sys>를 재시작하세요.</p>
+  </section>
+
+</page>

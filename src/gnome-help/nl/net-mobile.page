@@ -6,6 +6,7 @@
 
     <revision pkgversion="3.14" date="2014-11-10" status="review"/>
     <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.24" date="2017-03-26" status="final"/>
 
     <credit type="author">
       <name>Gnome-documentatieproject</name>
@@ -20,50 +21,47 @@
       <email>amigadave@amigadave.com</email>
     </credit>
 
-    <desc>Use your phone or Internet stick to connect to the mobile broadband
-    network.</desc>
+    <desc>Gebruik uw telefoon of internetstick om verbinding te maken met het mobiele breedband netwerk.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Justin van Steijn</mal:name>
+      <mal:email>justin50@live.nl</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hannie Dumoleyn</mal:name>
+      <mal:email>hannie@ubuntu-nl.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
   </info>
 
-  <title>Connect to mobile broadband</title>
+  <title>Met mobiel breedband verbinden</title>
 
-  <p>You can set up a connection to a cellular (3G) network with your
-  computer's built-in 3G modem, your mobile phone, or an Internet stick.</p>
+  <p>U kunt een verbinding instellen met een mobiel netwerk (3G) met de in uw computer ingebouwde 3G-modem, uw mobiele telefoon of een internetstick.</p>
 
   <steps>
-    <item><p>If you do not have a built-in 3G modem, connect your phone or
-    Internet stick to a USB port on your computer.</p>
+    <item><p>Als u geen ingebouwd 3G-modem heeft, sluit dan uw telefoon of internetstick aan op een USB-poort van uw computer.</p>
     </item>
     <item>
-    <p>Open the <gui xref="shell-introduction#yourname">system menu</gui> from the right
-    side of the top bar.</p>
+    <p>Open het <gui xref="shell-introduction#yourname">Systeemmenu</gui> aan de rechterzijde van de bovenbalk.</p>
   </item>
   <item>
-    <p>Select
-    <gui><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-excellent-symbolic.svg" width="16" height="16"/>
-      Mobile Broadband Off</gui>. The <gui>Mobile Broadband</gui> section of
-      the menu will expand.</p>
+    <p>Kies <gui><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-excellent-symbolic.svg" width="16" height="16"/> Mobiel breedband uit</gui>. De sectie <gui>Mobiel breedband</gui> zal worden uitgeklapt.</p>
       <note>
-        <p>If <gui>Mobile Broadband</gui> does not appear in the system
-        status menu, ensure that your device is not set to connect as Mass
-        Storage.</p>
+        <p>Als <gui>Mobiel breedband</gui> niet verschijnt in het statusmenu van het systeem, zorg er dan voor dat uw apparaat niet is ingesteld als massa-opslagapparaat.</p>
       </note>
     </item>
-    <item><p>Select <gui>Connect</gui>. If you are connecting for the first
-    time, the <gui>Set up a Mobile Broadband Connection</gui> wizard is
-    launched. The opening screen displays a list of required information. Click
-    <gui style="button">Next</gui>.</p></item>
-    <item><p>Choose your provider's country or region from the list. Click
-    <gui style="button">Next</gui>.</p></item>
-    <item><p>Choose your provider from the list. Click
-    <gui style="button">Next</gui>.</p></item>
-    <item><p>Select a plan according to the type of device you are
-    connecting. This will determine the Access Point Name. Click
-    <gui style="button">Next</gui>.</p></item>
-    <item><p>Confirm the settings you have selected by clicking
-    <gui style="button">Apply</gui>. The wizard will close and the
-    <gui>Network</gui> panel will display the properties of your
-    connection.</p></item>
+    <item><p>Kies <gui>Verbinden</gui>. Als u voor de eerste keer verbinding maakt, dan wordt de wizard <gui>Een mobiel breedband-verbinding instellen</gui> gestart. het openingsscherm geeft een lijst met vereiste informatie weer. Klik op <gui style="button">Volgende</gui>.</p></item>
+    <item><p>Kies het land of de regio van uw provider uit de lijst. Klik op <gui style="button">Volgende</gui>.</p></item>
+    <item><p>Kies uw provider uit de lijst. Klik op <gui style="button">Volgende</gui>.</p></item>
+    <item><p>Kies een plan op basis van het type apparaat waarmee u verbinding maakt. Hiermee wordt de Access Point Name bepaald. Klik op <gui style="button">Volgende</gui>.</p></item>
+    <item><p>Bevestig de instellingen die u gekozen heeft door op de knop <gui style="button">Toepassen</gui> te klikken. De wizard zal gesloten worden en in het <gui>Netwerk</gui>-paneel krijgt u de eigenschappen van uw verbinding te zien.</p></item>
   </steps>
+
+    <note style="tip">
+      <p>Sommige telefoons hebben een instelling <em>USB tethering</em> genaamd, waarbij geen instelling op de computer nodig is. Wanneer de instelling op de telefoon geactiveerd is, zal de verbinding verschijnen als <gui>Ethernet verbonden</gui> in het systeemmenu  en <gui>USB ethernet</gui>  in het netwerkpaneel.</p>
+    </note>
 
 </page>

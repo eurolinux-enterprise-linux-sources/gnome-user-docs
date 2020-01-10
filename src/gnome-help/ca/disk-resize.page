@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-resize" xml:lang="ca">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Projecte de documentació del GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.25.90" date="2017-08-17" status="review"/>
+
+    <desc>Reduir o augmentar un sistema de fitxers i la seva partició.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>David Aguilera</mal:name>
+      <mal:email>david.aguilera.moncusi@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Ajusteu la mida d'un sistema de fitxers</title>
+
+  <p>Es pot augmentar un sistema de fitxers per fer ús de l'espai lliure després de la seva partició. Moltes vegades això és possible mentre es munta el sistema de fitxers.</p>
+  <p>Per fer espai per a una altra partició després del sistema de fitxers, es pot reduir d'acord amb el seu espai lliure.</p>
+  <p>No tots els sistemes de fitxers tenen suport pel canvi de mida.</p>
+  <p>La mida de la partició es canviarà juntament amb la mida del sistema de fitxers. També és possible canviar la mida d'una partició sense un sistema de fitxers de la mateixa manera.</p>
+
+<steps>
+  <title>Canviar la mida d'un sistema de fitxers / partició</title>
+  <item>
+    <p>Obrir<app>Discs</app> des de la vista d'<gui>Activitats</gui>.</p>
+  </item>
+  <item>
+    <p>Seleccioneu el disc que conté el sistema de fitxers en qüestió a la llista de dispositius d'emmagatzematge de l'esquerra. Si hi ha més d'un volum al disc, seleccioneu el volum que conté el sistema de fitxers.</p>
+  </item>
+  <item>
+    <p>A la barra d'eines, sota la secció<gui>Volums</gui>, feu clic al botó de menú. Aleshore feu clic a <gui>Canviar el mida del sistema de fitxers ...</gui> o <gui>Canvia la mida ...</gui> si no hi ha sistema de fitxers.</p>
+  </item>
+  <item>
+    <p>S'obrirà un diàleg on es podrà triar la nova mida. El sistema de fitxers es muntarà per calcular la mida mínima per a la quantitat de contingut actual. Si no és compatible amb reduir la mida , la mida mínima serà la mida actual. Deixeu espai suficient dins del sistema de fitxers quan es redueixi per garantir que funcioni de manera ràpida i fiable.</p>
+    <p>En funció de la quantitat de dades que s'han d'eliminar de la part reduïda, el canvi de mida del sistema de fitxers pot trigar un temps més llarg.</p>
+    <note style="warning">
+      <p>El canvi de mida del sistema de fitxers implica automàticament<link xref="disk-repair">reparar</link> el sistema de fitxers. Per tant, es recomana fer una còpia de seguretat de dades importants abans de començar. L'acció no es pot aturar o es malmetrà el sistema de fitxers.</p>
+    </note>
+  </item>
+  <item>
+      <p>Confirmar l'inici de l'acció fent clic a<gui style="button">Redimensionar</gui>.</p>
+   <p>L'acció desmuntarà el sistema de fitxers si no s'admet el redimensionat amb el sistema de fitxers muntat. Tingueu paciència mentre es canvia la mida del sistema de fitxers.</p>
+  </item>
+  <item>
+    <p>Un cop finalitzat el canvi de mida i completades les accions necessàries per a la reparació, el sistema de fitxers estarà a punt per ser usat de nou.</p>
+  </item>
+</steps>
+
+</page>

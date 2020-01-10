@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="shell-windows-switching" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="shell-windows#working-with-windows"/>
+    <link type="guide" xref="shell-overview#apps"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-07" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+
+    <credit type="author">
+      <name>Projekt dokumentacji GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Naciśnij klawisze <keyseq><key>Super</key><key>Tab</key></keyseq>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Przełączanie między oknami</title>
+
+  <p>Można wyświetlić wszystkie uruchomione programy mające graficzny interfejs użytkownika w <em>przełączniku okien</em>. Sprawia to, że przełączanie między zadaniami jest działaniem jednoetapowym i dostarcza pełny obraz uruchomionych programów.</p>
+
+  <p>Z obszaru roboczego:</p>
+
+  <steps>
+    <item>
+      <p>Naciśnij klawisze <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq>, aby otworzyć <gui>przełącznik okien</gui>.</p>
+    </item>
+    <item>
+      <p>Zwolnij klawisz <key xref="keyboard-key-super">Super</key>, aby wybrać następne (wyróżnione) okno w przełączniku.</p>
+    </item>
+    <item>
+      <p>Jeśli nie chcesz wybrać następnego okna, to ciągle przytrzymując klawisz <key xref="keyboard-key-super"> Super</key> naciśnij klawisz <key>Tab</key>, aby przejść przez listę otwartych okien lub klawisze <keyseq><key>Shift</key><key>Tab</key></keyseq>, aby przejść do tyłu.</p>
+    </item>
+  </steps>
+
+  <p if:test="platform:gnome-classic">Można także użyć listy okien na dolnym pasku, aby mieć dostęp do wszystkich otwartych okien i przełączać między nimi.</p>
+
+  <note style="tip" if:test="!platform:gnome-classic">
+    <p>Okna w przełączniku okien są grupowane według programów. Podczas przełączania wyświetlany jest podgląd programów z wieloma oknami. Przytrzymaj klawisz <key xref="keyboard-key-super">Super</key> i naciśnij <key>`</key> (klawisz nad klawiszem <key>Tab</key>), aby przejść między nimi.</p>
+  </note>
+
+  <p>Można także przechodzić między ikonami programów w przełączniku okien za pomocą klawiszy <key>→</key> lub <key>←</key> lub wybierając jeden klikając go myszą.</p>
+
+  <p>Podgląd programu z jednym oknem można wyświetlić za pomocą klawisza <key>↓</key>.</p>
+
+  <p>Na <gui>ekranie podglądu</gui> kliknij <link xref="shell-windows">okno</link>, aby na nie przełączyć i opuścić podgląd. Jeśli otwartych jest kilka <link xref="shell-windows#working-with-workspaces">obszarów roboczych</link>, to można kliknąć każdy obszar, aby wyświetlić otwarte na nim okna.</p>
+
+</page>

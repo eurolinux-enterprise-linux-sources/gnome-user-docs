@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="tip" id="disk-partitions" xml:lang="pt">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Projeto de documentação de GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+
+    <desc>Entender que são os volumes e partições e usar o aplicação de utilidade de discos para os gerir.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Gerir volumes e partições</title>
+
+  <p>A palavra <em>volume</em> usa-se para descrever um dispositivo de armazenamento, como um disco duro. Também se pode referir a <em>parte</em> do armazenamento nesse dispositivo, já que pode dividir o dispositivo em várias áreas. A computador faz acessível este armazenamento a través de seu sistema de ficheiros num processo que se denomina <em>montagem</em>. Os volumes que se podem montar são discos duros, unidades USB, DVD-RW, cartões SD e outros dispositivos.</p>
+
+  <p>Com frequência, um volume montado chama-se <em>partição</em>, ainda que não são idênticos. Uma «partição» refere-se a uma ou mais áreas <em>físicas</em> de armazenamento numa sozinha unidade. Uma vez que a partição se montou, se lhe pode chamar um volume. Pode pensar em volumes como o etiquetado, «escaparates» acessíveis ao «quarto trastero» funcional das partições e os dispositivos.</p>
+
+<section id="manage">
+ <title>Ver e gerir volumes e partições utilizando a utilidade de discos</title>
+
+  <p>You can check and modify your computer’s storage volumes with the disk
+ utility.</p>
+
+<steps>
+  <item>
+    <p>Abra a vista de <gui>Atividades</gui> e inicie o aplicação <app>Discos</app>.</p>
+  </item>
+  <item>
+    <p>Na lista de dispositivos de armazenamento da esquerda encontrará discos duros, unidades de CD/DVD e outros dispositivos físicos. Carregue no dispositivo que queira inspecionar.</p>
+  </item>
+  <item>
+    <p>O painel direito proporciona um desmembre visual dos volumes e partições presentes no dispositivo selecionado. Também contém uma variedade de ferramentas utilizadas para manejar estes volumes.</p>
+    <p>Tenha cuidadoÑ com estas ferramentas é possível eliminar completamente os dados em seu disco.</p>
+  </item>
+</steps>
+
+  <p>É muito provável que o seu computador tenha ao menos uma partição <em>primária</em> e uma única partição <em>de intercâmbio</em>. A partição de intercâmbio utiliza-a o sistema operativo para a gestão de cor, e monta-se em raras ocasiões. A partição primária contém o sistema operativo, aplicações, configurações e ficheiros pessoais. Estes ficheiros podem-se  distribuir entre várias partições por segurança ou comodidade.</p>
+
+  <p>Uma partição primário deve conter informação que o seu computador precisa para se iniciar, ou <em>arrancar</em>. Por esta razón, às vezes denomina-se-lhe partição de arranque, ou volume de arranque. Para saber se um determinado volume é de arranque, selecione a partição e carregue o ícone da roda dentada na barra de ferramentas, abaixo da lista de partições. Carregue em <gui>Editar partição…</gui> e olhe suas <gui>Opções</gui>. Os meios externos, tais como unidades USB ou de CD também podem conter volumes de arranque.</p>
+
+</section>
+
+</page>

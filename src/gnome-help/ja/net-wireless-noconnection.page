@@ -59,34 +59,34 @@
     </mal:credit>
   </info>
 
-<title>正しいパスワードを入力したのに接続できません</title>
+<title>I’ve entered the correct password, but I still can’t connect</title>
 
-<p>間違いなく正しい<link xref="net-wireless-wepwpa">ワイヤレスパスワード</link>を入力したにも関わらず無線ネットワークに接続できない場合には、次のいずれかを試してみてください。</p>
+<p>If you’re sure that you entered the correct <link xref="net-wireless-wepwpa">wireless password</link> but you still can’t successfully connect to a wireless network, try some of the following:</p>
 
 <list>
  <item>
   <p>Double-check that you have the correct password</p>
-  <p>パスワードは大文字と小文字を区別するため、大文字と小文字が間違っていないか確認してください。</p>
+  <p>Passwords are case-sensitive (it matters whether they have capital or lower-case letters), so check that you didn’t get the case of one of the letters wrong.</p>
  </item>
 
  <item>
   <p>16 進数か ASCII のパスキーを試してみてください</p>
-  <p>入力したパスワードは、パスキーと呼ばれる 16 進数の文字列 (数字の 0 から 9 と文字 a から f) として別の方法で表すこともできます。パスワードにはそれぞれ対応するパスキーがあります。パスワードまたはパスフレーズと同様、パスキーにもアクセスできる場合は、パスキーを入力してみてください。パスワードの入力が求められたら、正しい<gui>無線セキュリティ</gui>オプションを選択していることを確認してください (たとえば、WEP 暗号を使用した接続に 40 文字のパスキーを入力する場合は<gui>WEP 40/128 ビットキー</gui>を選択します)。</p>
+  <p>The password you enter can also be represented in a different way — as a string of characters in hexadecimal (numbers 0-9 and letters a-f) called a pass key. Each password has an equivalent pass key. If you have access to the pass key as well as the password/passphrase, try typing the pass key instead. Make sure you select the correct <gui>wireless security</gui> option when asked for your password (for example, select <gui>WEP 40/128-bit Key</gui> if you’re typing the 40-character pass key for a WEP-encrypted connection).</p>
  </item>
 
  <item>
   <p>ワイヤレスカードを一度オフにしてからオンにし直します</p>
-  <p>ワイヤレスカードが動作しなくなったり、何らかの問題が生じて接続しなくなる場合があります。カードを一度オフにしてからオンにし直しリセットしてみてください。詳細については <link xref="net-wireless-troubleshooting"/> を参照してください。</p>
+  <p>Sometimes wireless cards get stuck or experience a minor problem that means they won’t connect. Try turning the card off and then on again to reset it — see <link xref="net-wireless-troubleshooting"/> for more information.</p>
  </item>
 
  <item>
-  <p>Check that you're using the correct type of wireless security</p>
-  <p>無線セキュリティのパスワード入力が求められたら、使用する無線セキュリティの種類を選択します。ルーターまたは無線基地局で使用している種類を選択してください。これはデフォルトで選択されるべきですが、何らかの理由で選択されないことがあります。ルーターまたは無線基地局で使用している種類が分からない場合は順番に試してみてください。</p>
+  <p>Check that you’re using the correct type of wireless security</p>
+  <p>When prompted for your wireless security password, you can choose which type of wireless security to use. Make sure you choose the one that is used by the router or wireless base station. This should be selected by default, but sometimes it will not be for some reason. If you don’t know which one it is, use trial and error to go through the different options.</p>
  </item>
 
  <item>
   <p>使用しているワイヤレスカードに対応しているか確認してください</p>
-  <p>ワイヤレスカードの中には対応していないものもあります。無線接続を表示しても、ドライバーの機能不足によりネットワークに接続できません。代替となるワイヤレスドライバーが入手できないか、または追加の設定を行う必要がないかどうか (別の<em>ファームウェア</em>のインストールなど) を確認してください。詳細については <link xref="net-wireless-troubleshooting"/> を参照してください。</p>
+  <p>Some wireless cards aren’t supported very well. They show up as a wireless connection, but they can’t connect to a network because their drivers lack the ability to do this. See if you can get an alternative wireless driver, or if you need to perform some extra set-up (like installing a different <em>firmware</em>). See <link xref="net-wireless-troubleshooting"/> for more information.</p>
  </item>
 
 </list>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="login-banner" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="login#appearance"/>
+    <!--<link type="seealso" xref="gdm-restart"/>-->
+    <revision pkgversion="3.8" date="2013-04-19" status="review"/>
+    <revision pkgversion="3.14" date="2014-06-17" status="review"/>
+
+    <credit type="author copyright">
+      <name>Matthias Clasen</name>
+      <email>matthias.clasen@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="author copyright">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Jana Svarova</name>
+      <email>jana.svarova@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="author copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>davidk@gnome.org</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Visa extra text på inloggningsskärmen.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Visa en textbanderoll på inloggningsskärmen</title>
+
+  <p>Du kan visa extra text på inloggningsskärmen, så som vem som ska kontaktas för support, genom att ställa in GSettings-nycklarna <sys>org.gnome.login-screen.banner-message-enable</sys> och <sys>org.gnome.login-screen.banner-message-text</sys>.</p>
+
+  <steps>
+    <title>Visa en textbanderoll på inloggningsskärmen:</title>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-gdm'])"/>
+    <item><p>Skapa en <sys>gdm</sys>-nyckelfil för maskinomfattande inställningar i <file its:translate="no">/etc/dconf/db/gdm.d/01-banner-message</file>:</p>
+      <code its:translate="no">[org/gnome/login-screen]
+banner-message-enable=true
+banner-message-text='<input its:translate="yes">Skriv in banderollmeddelandet här.</input>'
+</code>
+    </item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+  </steps>
+
+  <note>
+    <p>Du bör hålla banderollmeddelandet kort, då längre meddelanden inte kommer att rymmas på skärmen. Banderollmeddelandet kan inte läsas från en extern fil.</p>
+  </note>
+
+</page>

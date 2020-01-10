@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="user-admin-explain" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="user-accounts#privileges"/>
+
+    <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
+    <revision pkgversion="3.10" date="2013-11-03" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Projekt dokumentacji GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Do zmiany ważnych części systemu wymagane są uprawnienia administracyjne.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Jak działają uprawnienia administracyjne?</title>
+
+  <p>Poza plikami utworzonymi przez <em>użytkownika</em> komputer ma wiele plików wymaganych przez system do poprawnego działania. Jeśli te ważne <em>pliki systemowe</em> zostaną niewłaściwie zmienione, to różne rzeczy mogą przestać działać, więc domyślnie są one chronione przed zmianami. Pewne programy także modyfikują ważne części systemu, więc one także są chronione.</p>
+
+  <p>Ochrona polega na tym, że tylko użytkownicy z <em>uprawnieniami administracyjnymi</em> mogą zmieniać te pliki lub używać tych programów. W codziennym użytku nie ma potrzeby zmieniać żadnych plików systemowych ani używać tych programów, więc domyślnie użytkownik nie ma uprawnień administracyjnych.</p>
+
+  <p>Czasami istnieje potrzeba użycia tych programów, więc można tymczasowo uzyskać uprawnienia administracyjne, aby móc wprowadzić zmiany. Jeśli program wymaga uprawnień administracyjnych, to poprosi o podanie hasła użytkownika. Na przykład, aby zainstalować nowe oprogramowanie, instalator oprogramowania (menedżer pakietów) poprosi o podanie hasła administratora, aby mógł dodać nowy program na komputerze. Po ukończeniu uprawnienia administracyjne zostaną zabrane.</p>
+
+  <p>Uprawnienia administracyjne są powiązane z kontem użytkownika. Użytkownicy typu <gui>Administrator</gui> mogą mieć te uprawnienia, podczas gdy <gui>Standardowi</gui> użytkownicy nie mogą. Bez uprawnień administracyjnych nie można instalować oprogramowania. Niektóre konta użytkowników (np. konto „root”) zawsze mają uprawnienia administracyjne. Nie należy używać ich cały czas, ponieważ można przypadkowo coś zmienić (np. usunąć wymagany plik systemowy).</p>
+
+  <p>Podsumowując, uprawnienia administracyjne umożliwiają zmienianie ważnych części systemu w razie potrzeby, ale uniemożliwiają zrobienie tego przypadkiem.</p>
+
+  <note>
+    <title>Co oznacza „root”?</title>
+    <p>Użytkownik z uprawnieniami administracyjnymi jest czasami nazywany <em>rootem</em>. Taki użytkownik ma więcej uprawnień niż zwykły użytkownik. Można napotkać terminy <cmd>su</cmd> i <cmd>sudo</cmd>, są to programy do tymczasowego nadawania użytkownikowi uprawnień „roota” (administracyjnych).</p>
+  </note>
+
+<section id="advantages">
+  <title>Do czego przydatne są uprawnienia administracyjne?</title>
+
+  <p>Wymaganie, aby użytkownik miał uprawnienia administracyjne przed zmianą ważnych części systemu jest przydatne, ponieważ pomaga uniemożliwić zepsucie się systemu, celowo lub nie.</p>
+
+  <p>Gdyby użytkownik miał uprawnienia administracyjne przez cały czas, to może przypadkowo zmienić ważny plik lub uruchomić program, który błędnie zmieni coś ważnego. Używanie uprawnień administracyjnych tymczasowo, kiedy są potrzebne, zmniejsza ryzyko zdarzenia się tych pomyłek.</p>
+
+  <p>Tylko pewni zaufani użytkownicy powinni mieć możliwość używania uprawnień administracyjnych. Uniemożliwia to innym użytkownikom zepsucie komputera i robienie takich rzeczy, jak usuwanie programów, których potrzebujesz, lub zmienianie ważnych plików. Jest to przydatne z punktu widzenia bezpieczeństwa.</p>
+
+</section>
+
+</page>

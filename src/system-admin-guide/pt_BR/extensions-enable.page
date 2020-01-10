@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="extensions-enable" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="software#extension"/>
+    <link type="seealso" xref="extensions-lockdown"/>
+    <link type="seealso" xref="extensions"/>
+    <revision pkgversion="3.12" date="2014-06-17" status="review"/>
+
+    <credit type="author copyright">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Habilite extensões do GNOME Shell para todos os usuários.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Habilitando extensões para toda a máquina</title>
+  
+  <p>Para tornar extensões disponíveis para todos os usuários no sistema, instale-as no diretório <file>/usr/share/gnome-shell/extensions</file>. Note que extensões recentemente instaladas para todo o sistema são desabilitadas por padrão. Para habilitá-las para todos os usuários, você precisa definir a chave <code>org.gnome.shell.enabled-extensions</code>.</p>
+
+  <steps>
+    <title>Definindo a chave org.gnome.shell.enabled-extensions</title>
+    <item>
+      <p>Crie um perfil <code>user</code> em <file>/etc/dconf/profile/user</file>:</p>
+      <listing>
+        <code>
+user-db:user
+system-db:local
+</code>
+      </listing>
+    </item>
+    <item>
+      <p>Crie um banco de dados <code>local</code> para configuração de toda máquina em <file>/etc/dconf/db/local.d/00-extensions</file>:</p>
+      <listing>
+        <code>
+[org/gnome/shell]
+# Lista todas as extensões que você deseja ter habilitadas para todos usuários
+enabled-extensions=['<input>minhaextensao1@meunome.exemplo.com</input>', '<input>minhaextensao2@meunome.exemplo.com</input>']
+</code>
+      </listing>
+      <p>A chave <code>enabled-extensions</code> especifica as extensões habilitadas usando o uuid as extensões (<code>minhaextensao1@meunome.exemplo.com</code> e <code>minhaextensao2@meunome.exemplo.com</code>).</p>
+    </item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+  </steps>
+
+</page>

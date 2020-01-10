@@ -8,6 +8,7 @@
     <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
     <revision pkgversion="3.10" date="2013-11-11" status="review"/>
     <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.28" date="2018-03-28" status="review"/>
 
     <credit type="author">
       <name>Фил Бул</name>
@@ -29,21 +30,33 @@
   <steps>
     <title>Да ручно подесите мрежна подешавања:</title>
     <item>
-      <p>Отворите преглед <gui xref="shell-introduction#activities">Активности</gui> и почните да куцате <gui>Мрежа</gui>.</p>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui>
+      overview and start typing <gui>Settings</gui>.</p>
     </item>
     <item>
-      <p>Кликните на <gui>Мрежа</gui> да отворите панел.</p>
+      <p>Click on <gui>Settings</gui>.</p>
     </item>
     <item>
-      <p>У левом окну, изаберите мрежну везу коју желите ручно да подесите. Ако се каблом прикључите на мрежу, кликните <gui>Жичана</gui>, затим кликните на дугме <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">подешавања</span></media> у доњем десном углу панела. За <gui>Бежичну</gui> везу, дугме <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">подешавања</span></media> ће се налазити поред радне мреже.</p>
+      <p>In the left pane, select the network connection that you want to set
+      up manually. If you plug in to the network with a cable, click
+      <gui>Network</gui>. Otherwise click <gui>Wi-Fi</gui>.</p>
       <p>Уверите се да је ваша бежична картица укључена или да је мрежни кабал прикључен.</p>
     </item>
-    <item>
-      <p>Кликните <gui>ИПв4</gui> и измените <gui>Адресе</gui> на <gui>Ручно</gui>.</p>
+    <item>      
+      <p>Click the
+      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
+      button.</p>
+      <note>
+        <p>For a <gui>Wi-Fi</gui> connection, the 
+        <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
+        button will be located next to the active network.</p>
+      </note>
     </item>
     <item>
-      <p>Укуцајте <gui>Адресу</gui> и <gui>Мрежни пролаз</gui>, као и одговарајућу <gui>Мрежну маску</gui>.</p>
-      <p>То морају бити <em>ИП адресе</em>; тако је, морају бити у виду четири броја раздвојена тачкама (нпр. 123.45.6.78).</p>
+      <p>Кликните на <gui>ИПв4</gui> или <gui>ИПв6</gui> у левом окну и измените <gui>Адресе</gui> на <em>Ручно</em>.</p>
+    </item>
+    <item>
+      <p>Укуцајте <gui xref="net-what-is-ip-address">Адресу</gui> и <gui>Мрежни пролаз</gui>, као и одговарајућу <gui>Мрежну маску</gui>.</p>
     </item>
     <item>
       <p>У одељку <gui>ДНС</gui>, пребаците <gui>Самостално</gui> на <gui>ИСКЉ.</gui>. Унесите ИП адресу ДНС сервера који желите да користите. Унесите додатне адресе ДНС сервера користећи дугме <gui>+</gui>.</p>

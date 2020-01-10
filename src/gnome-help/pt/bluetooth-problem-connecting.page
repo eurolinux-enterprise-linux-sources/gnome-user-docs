@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="problem" id="bluetooth-problem-connecting" xml:lang="pt">
+
+  <info>
+    <link type="guide" xref="bluetooth#problems"/>
+    <link type="seealso" xref="hardware-driver"/>
+
+    <revision pkgversion="3.4" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-09" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Phil Bulh</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hilh</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Pode que o adaptador esteja apagado ou que não tenha controladores, ou pode que tenha desativar ou bloqueado o Bluetooth.</desc>
+  </info>
+
+  <title>Não posso ligar meu dispositivo Bluetooth</title>
+
+  <p>Existem várias razões pelas que é possível que não possa ligar a um dispositivo Bluetooth, como um telefone ou uns auriculares.</p>
+
+  <terms>
+    <item>
+      <title>Conexão bloqueado ou sem confiança</title>
+      <p>Alguns dispositivos Bluetooth bloqueiam as conexões de maneira predeterminada ou requerem que se lhes mude a configuração para permitir as conexões. Certifique-se de que seu dispositivo permite as conexões.</p>
+    </item>
+    <item>
+      <title>Hardware Bluetooth não reconhecido</title>
+      <p>É possível que o seu computador não tenha reconhecido seu adaptador Bluetooth. Isto pode se dever a que não tenha instalados os <link xref="hardware-driver">controladores</link> para seu adaptador. Alguns adaptadores Bluetooth não estão suportados em Linux, e por tanto não lhe será possível conseguir os controladores apropriados para eles. Em tal caso, provavelmente tendrá que conseguir outro adaptador Bluetooth diferente.</p>
+    </item>
+    <item>
+      <title>O adaptador não está conetado</title>
+        <p>Certifique-se de que seu adaptador Bluetooth está acendido. Abar o painel de Bluetooth e comprove que não está <link xref="bluetooth-turn-on-off">desativado</link>.</p>
+    </item>
+    <item>
+      <title>Conexão do dispositivo Bluetooth apagada</title>
+      <p>Verifique que o dispositivo ao que está tentando se ligar tem ativado o Bluetooth e que <link xref="bluetooth-visibility">se pode descobrir ou esteja visível</link>. Por exemplo, se está tentando ligar a um tv́fono, comprove que não está em modo avión.</p>
+    </item>
+    <item>
+      <title>Não existe um dispositivo Bluetooth na sua computador</title>
+      <p>Muitas computadores não têm adaptadores de Bluetooth. Pode comprar um adaptador se quer usar Bluetooth.</p>
+    </item>
+  </terms>
+
+</page>

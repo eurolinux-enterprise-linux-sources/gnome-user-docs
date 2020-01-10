@@ -54,12 +54,17 @@
 
   <p>Многие приложения используют подключение к сети. Например, вы можете предоставить общий доступ к своим файлам в сети или позволить кому-либо удалённо просматривать ваш рабочий стол. В зависимости от настроек компьютера, возможно, вам понадобится настроить межсетевой экран, чтобы обеспечить нормальную работу этих сетевых сервисов.</p>
 
-  <p>Каждая предоставляющая сетевые услуги программа использует определённый <em>сетевой порт</em>. Чтобы разрешить другим компьютерам в сети доступ к услуге, может понадобиться «открыть» этот порт в межсетевом экране:</p>
+  <p>Each program that provides network services uses a specific <em>network
+  port</em>. To enable other computers on the network to access a service, you
+  may need to “open” its assigned port on the firewall:</p>
 
 
   <steps>
     <item>
-      <p>Зайдите в <gui>Обзор</gui> в верхнем левом углу экрана и запустите приложение для работы с межсетевым экраном. Если его там нет, нужно будет установить одно из таких приложений (например, Firestarter или GUFW).</p>
+      <p>Go to <gui>Activities</gui> in the top left corner of the screen and
+      start your firewall application. You may need to install a firewall
+      manager yourself if you can’t find one (for example, Firestarter or
+      GUFW).</p>
     </item>
     <item>
       <p>Откройте или закройте порт сетевой службы, в зависимости от того, хотите ли вы, чтобы другие люди имели к ней доступ. Доступность какого порта нужно изменить, будет <link xref="net-firewall-ports">зависеть от службы</link>.</p>

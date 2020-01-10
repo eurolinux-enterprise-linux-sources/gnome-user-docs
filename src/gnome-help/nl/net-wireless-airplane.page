@@ -7,6 +7,7 @@
     <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
     <revision pkgversion="3.10" date="2013-11-10" status="review"/>
     <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.24" date="2017-03-26" status="final"/>
 
     <credit type="author">
       <name>Gnome-documentatieproject</name>
@@ -23,34 +24,46 @@
       <years>2015</years>
     </credit>
 
-    <desc>Open Network Settings and switch Airplane Mode to ON.</desc>
+    <desc>Open de Netwerkinstellingen en zet de Vliegtuigmodus AAN.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Justin van Steijn</mal:name>
+      <mal:email>justin50@live.nl</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hannie Dumoleyn</mal:name>
+      <mal:email>hannie@ubuntu-nl.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
   </info>
 
-<title>Turn off wireless (airplane mode)</title>
+<title>Het draadloze netwerk uitschakelen (vliegtuig-modus)</title>
 
-<p>If you have your computer on an airplane (or some other area where wireless
- connections are not allowed), you should switch off your wireless. You may
- also want to switch off your wireless for other reasons (to save battery power,
- for example). To do this:</p>
+<p>Als u zich met uw computer in een vliegtuig bevindt (of een andere plek waar u geen draadloze verbinding mag hebben), dan dient u het draadloze netwerk uit te schakelen. Of misschien wilt u uw draadloze netwerk uitschakelen om een andere reden (bijvoorbeeld om energie te besparen).</p>
+
+  <note>
+    <p><em>Vliegtuigmodus</em> schakelt al uw draadloze verbindingen uit, waaronder wifi-, 3G- en Bluetooth-verbindingen.</p>
+  </note>
+
+  <p>Vliegtuigstand inschakelen:</p>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Network</gui>.</p>
+      <p>Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht en typ <gui>Netwerk</gui>.</p>
     </item>
     <item>
-      <p>Click on <gui>Network</gui> to open the panel.</p>
+      <p>Klik op <gui>Netwerk</gui> om het paneel te openen.</p>
     </item>
     <item>
-      <p>Switch <gui>Airplane Mode</gui> to <gui>ON</gui>. This will turn off
-      your wireless connection until you disable airplane mode again.</p>
+      <p>Zet <gui>Vliegtuigmodus</gui> <gui>AAN</gui>.  Hiermee schakelt u uw draadloze verbinding uit totdat u de vliegtuigmodus weer uitzet.</p>
     </item>
   </steps>
 
-  <note>
-    <p>Using <em>Airplane Mode</em> will completely turn off all wireless
-    connections, including WiFi, 3G and Bluetooth connections.</p>
+  <note style="tip">
+    <p>U kunt uw wifiverbinding uit zetten vanuit het <gui xref="shell-introduction#yourname">systeemmenu</gui> door op de naam van de verbinding te klikken en <gui>Uitzetten</gui> te kiezen..</p>
   </note>
 
 </page>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="dconf-lockdown" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="user-settings#lockdown"/>
+    <link type="guide" xref="setup"/>
+<!--    <link type="seealso" xref="dconf-profiles" />-->
+    <revision version="0.1" date="2012-05-21" status="review"/>
+    <revision pkgversion="3.8" date="2013-04-26" status="review"/>
+    <revision pkgversion="3.15" date="2015-02-13" status="review"/>
+
+    <credit type="author copyright">
+      <name>Ryan Lortie</name>
+      <email>desrt@desrt.ca</email>
+      <years>2012</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013, 2015</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>A <em>zárolási</em> mód használata a <sys its:translate="no">dconf</sys> programban, hogy megakadályozza a felhasználókat bizonyos beállítások megváltoztatásában.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>ur.balazs@fsf.hu</mal:email>
+      <mal:years>2018.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Bizonyos beállítások zárolása</title>
+
+  <!-- TODO: reveiw against dconf-custom-defaults.page -->
+
+  <p>Egy <sys its:translate="no">dconf</sys> kulcs <em>zárolásához</em> létre kell hoznia egy <file its:translate="no">locks</file> alkönyvtárat a kulcsfájl könyvtárában. A könyvtáron belüli fájlok tartalmazzák a zárolandó kulcsok listáját. Csakúgy, mint a kulcsfájloknál, akármennyi fájlt hozzáadhat ehhez a könyvtárhoz. Itt egy példa arra, hogy hogyan kell egy ilyennek kinéznie:</p>
+
+  <steps>
+    <title>Egy beállítás zárolása</title>
+    <item>
+      <p>Mielőtt zárolni tudna egy kulcsot, előtte be kell állítania. Ez a példa bemutatja, hogy <link xref="desktop-background">egy háttérbeállítást</link> hogyan kell zárolni, miután be lett állítva. Ezen a ponton rendelkezni kell <link xref="dconf-profiles">egy <sys>felhasználói</sys> profillal</link> és <link xref="dconf-keyfiles">egy kulcsfájllal</link> annál a beállításnál, amelyet zárolni szeretne.</p>
+    </item>
+    <item>
+      <p>Hozzon létre egy <file its:translate="no">/etc/dconf/db/local.d/locks</file> nevű könyvtárat.</p>
+    </item>
+    <item>
+      <p>Hozzon létre egy fájlt az <file its:translate="no">/etc/dconf/db/local.d/locks/</file> könyvtárban, és soronként egy kulcsot adjon meg. Például hozza létre az <file its:translate="no">/etc/dconf/db/local.d/locks/00_default-wallpaper</file> fájlt:</p>
+<code its:translate="no">
+# <span its:translate="yes">a háttér változtatásának megakadályozása</span>
+/org/gnome/desktop/background/picture-uri
+/org/gnome/desktop/background/picture-options
+/org/gnome/desktop/background/primary-color
+/org/gnome/desktop/background/secondary-color
+</code>
+    </item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+  </steps>
+
+  <note>
+    <p>A <app its:translate="no">dconf</app> 0.7.4 esetén a zárolás csak kulcsalapon támogatott teljesítménybeli okokból. Még nem zárolhat teljes alútvonalakat. Tervbe van véve ennek megvalósítása a jövőbeni kiadásokban.</p>
+  </note>
+
+</page>

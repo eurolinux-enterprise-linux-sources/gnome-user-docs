@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" version="1.0 if/1.0" id="shell-windows-lost" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="shell-windows#working-with-windows"/>
+
+    <revision pkgversion="3.8.0" date="2013-04-23" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+
+    <credit type="author">
+      <name>Projekt dokumentacji GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Sprawdź <gui>ekran podglądu</gui> i inne obszary robocze.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Odnajdywanie zgubionego okna</title>
+
+  <p>Okno na innym obszarze roboczym lub schowane za innym oknem można łatwo znaleźć za pomocą <gui xref="shell-introduction#activities">ekranu podglądu</gui>:</p>
+
+  <list>
+    <item>
+      <p>Otwórz <gui>ekran podglądu</gui>. Jeśli zgubione okno jest na obecnym <link xref="shell-windows#working-with-workspaces">obszarze roboczym</link>, to będzie wyświetlane tutaj jako miniatura. Kliknij miniaturę, aby je wyświetlić, albo</p>
+    </item>
+    <item>
+      <p>Kliknij inny obszar roboczy na <link xref="shell-workspaces">przełączniku obszarów roboczych</link> po prawej stronie ekranu, aby znaleźć zgubione okno, albo</p>
+    </item>
+    <item>
+      <p>Kliknij program na pasku ulubionych prawym przyciskiem myszy, a zostaną wyświetlone jego otwarte okna. Kliknij okno na liście, aby na nie przełączyć.</p>
+    </item>
+  </list>
+
+  <p>Używanie przełącznika okien:</p>
+
+  <list>
+    <item>
+      <p>Naciśnij klawisze <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq>, aby wyświetlić <link xref="shell-windows-switching">przełącznik okien</link>. Ciągle przytrzymując klawisz <key>Super</key> naciśnij klawisz <key>Tab</key>, aby przejść między otwartymi oknami lub klawisze <keyseq><key>Shift</key><key>Tab</key> </keyseq>, aby przejść do tyłu.</p>
+    </item>
+    <item if:test="!platform:gnome-classic">
+      <p>Jeśli program ma kilka otwartych okien, to przytrzymaj klawisz <key>Super</key> i naciśnij <key>`</key> (klawisz nad klawiszem <key>Tab</key>), aby przejść między nimi.</p>
+    </item>
+  </list>
+
+</page>

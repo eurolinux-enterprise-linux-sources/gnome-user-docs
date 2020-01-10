@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="mime-types-custom-user" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="software#management"/>
+    <link type="seealso" xref="mime-types"/>
+    <revision pkgversion="3.12" date="2014-06-17" status="review"/>
+
+    <credit type="author">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>ur.balazs@fsf.hu</mal:email>
+      <mal:years>2018.</mal:years>
+    </mal:credit>
+  </info>
+
+    <title>Egyéni MIME-típus hozzáadása az egyéni felhasználóknak</title>
+    <p>Az egyéni felhasználók számára történő egyéni MIME-típus hozzáadásához, és a MIME-típushoz való alapértelmezett alkalmazás regisztrálásához létre kell hoznia egy új MIME-típus specifikációs fájlt a <file>~/.local/share/mime/packages/</file> könyvtárban, valamint egy <file>.desktop</file> fájlt a <file>~/.local/share/applications/</file> könyvtárban.</p>
+    <steps>
+      <title>Egyéni <code>application/x-newtype</code> MIME-típus hozzáadása az egyéni felhasználóknak</title>
+      <item>
+        <p>Hozza létre a <file>~/.local/share/mime/packages/application-x-newtype.xml</file> fájlt:</p>
+        <code mime="application/xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info"&gt;
+  &lt;mime-type type="application/x-newtype"&gt;
+    &lt;comment&gt;Új MIME-típus&lt;/comment&gt;
+    &lt;glob pattern="*.xyz"/&gt;
+  &lt;/mime-type&gt;
+&lt;/mime-info&gt;</code>
+      <p>A fenti <file>application-x-newtype.xml</file> mintafájl egy új <sys>application/x-newtype</sys> MIME-típust határoz meg, és hozzárendeli az <file>.xyz</file> kiterjesztésű fájlneveket a MIME-típushoz.</p>
+      </item>
+      <item>
+        <p>Hozzon létre például egy új <file>myapplication1.desktop</file> nevű <file>.desktop</file> fájlt, és helyezze el a <file>~/.local/share/applications/</file> könyvtárba:</p>
+        <code>[Desktop Entry]
+Type=Application
+MimeType=application/x-newtype
+Name=<var>Saját alkalmazás 1</var>
+Exec=<var>myapplication1</var></code>
+      <p>A fenti <file>myapplication1.desktop</file> mintafájl hozzárendeli az <code>application/x-newtype</code> MIME-típust egy <app>Saját alkalmazás 1</app> nevű alkalmazáshoz, amely a <cmd>myapplication1</cmd> paranccsal futtatható.</p>
+      </item>
+      <item>
+        <p>Frissítse a MIME-adatbázist, hogy a változtatások életbe lépjenek:</p>
+        <screen><output>$ </output><input>update-mime-database ~/.local/share/mime</input>
+        </screen>
+      </item>
+      <item>
+        <p>Frissítse az alkalmazás-adatbázist:</p>
+        <screen><output>$ </output><input>update-desktop-database ~/.local/share/applications</input>
+        </screen>
+      </item>
+      <item>
+        <p>Annak ellenőrzéséhez, hogy sikeresen hozzárendelte az <file>*.xyz</file> fájlokat az <sys>application/x-newtype</sys> MIME-típushoz, először hozzon létre egy üres fájlt, például a <file>teszt.xyz</file> fájlt:</p>
+        <screen><output>$ </output><input>touch teszt.xyz</input></screen>
+        <p>Ezután futtassa a <cmd>gio info</cmd> parancsot:</p>
+        <screen><output>$ </output><input>gio info teszt.xyz | grep "standard::content-type"</input>
+  standard::content-type: application/x-newtype</screen>
+        </item>
+        <item>
+          <p>Annak ellenőrzéséhez, hogy az <file>myapplication1.desktop</file> helyesen be lett állítva alapértelmezetten regisztrált alkalmazásként az <sys>application/x-newtype</sys> MIME-típushoz, futtassa a <cmd>gio mime</cmd> parancsot:</p>
+        <screen><output>$ </output><input>gio mime application/x-newtype</input>
+Default application for “application/x-newtype”: myapplication1.desktop
+Registered applications:
+	myapplication1.desktop
+Recommended applications:
+	myapplication1.desktop</screen>
+      </item>
+    </steps>
+</page>

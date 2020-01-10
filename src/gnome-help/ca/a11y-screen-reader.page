@@ -29,33 +29,36 @@
 
   <title>Llegir la pantalla en veu alta</title>
 
-  <p>GNOME provides the <app>Orca</app> screen reader to speak the user
-  interface. Depending on how you installed GNOME, you might not have
-  Orca installed. If not, install Orca first.</p>
+  <p>GNOME proveeix del lector de pantalla <app>Orca</app> per llegir l'interfició d'usuari. Depenent de com hagueu instal·lat GNOME, podeu no tenir-lo instal·lat. Si no ho està, instal·leu Orca primer.</p>
 
-  <p if:test="action:install"><link style="button" action="install:orca">Install Orca</link></p>
+  <p if:test="action:install"><link style="button" action="install:orca">Instal·lar Orca</link></p>
+  
+  <p>Per iniciar <app>Orca</app> utilitzant el teclat:</p>
+  
+  <steps>
+    <item>
+    <p>Premeu <key>Super</key>+<key>Alt</key>+<key>S</key>.</p>
+    </item>
+  </steps>
+  
+  <p>O per iniciar <app>Orca</app> utilitzant el ratolí i el teclat.</p>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Universal Access</gui>.</p>
+      <p>Obriu la descripció general de les <gui xref="shell-introduction#activities">Activities</gui>  i comenceu a escriure  <gui>Accés Universal</gui>.</p>
     </item>
     <item>
-      <p>Click <gui>Universal Access</gui> to open the panel.</p>
+      <p>Feu clic a <gui>Accés Universal</gui> per obrir el panell.</p>
     </item>
     <item>
-      <p>Click <gui>Screen Reader</gui> in the <gui>Seeing</gui> section, then
-      switch <gui>Screen Reader</gui> on in the dialog.</p>
+      <p>Cliqueu a <gui>Lector de pantalla</gui>a la secció <gui>Veure</gui>,  aleshores activeu <gui>Lector de pantalla</gui> al diàleg.</p>
     </item>
   </steps>
 
   <note style="tip">
-    <title>Quickly turn Screen Reader on and off</title>
-    <p>You can turn Screen Reader on and off by clicking the
-    <link xref="a11y-icon">accessibility icon</link> in the top bar and
-    selecting <gui>Screen Reader</gui>.</p>
+    <title>Permuta ràpidament el Lector de Pantalla entre actiu i inactiu</title>
+    <p>Podeu activar i desactivar el Lector de pantalla fent clic a la icona<link xref="a11y-icon">accessibilitat</link> a la barra superior i seleccionant <gui>Lector de pantalla</gui>.</p>
   </note>
 
-  <p>Refer to the <link href="help:orca">Orca Help</link> for
-  more information.</p>
+  <p>Consulteu l'<link href="help:orca">ajuda d'Orca</link> per a més informació.</p>
 </page>

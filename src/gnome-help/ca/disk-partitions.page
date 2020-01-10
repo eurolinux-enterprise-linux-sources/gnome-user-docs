@@ -11,8 +11,7 @@
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
 
-    <desc>Understand what volumes and partitions are and use the disk utility
-    to manage them.</desc>
+    <desc>Enteneu quins volums i particions hi ha i utilitza la utilitat del disc per gestionar-los.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -22,61 +21,33 @@
     </mal:credit>
   </info>
 
- <title>Manage volumes and partitions</title>
+ <title>Gestioneu els volums i les particions</title>
 
-  <p>The word <em>volume</em> is used to describe a storage device, like a hard
- disk. It can also refer to a <em>part</em> of the storage on that device,
- because you can split the storage up into chunks. The computer makes this
- storage accessible via your file system in a process referred to as
- <em>mounting</em>. Mounted volumes may be hard drives, USB drives, DVD-RWs, SD
- cards, and other media. If a volume is currently mounted, you can read (and
- possibly write) files on it.</p>
+  <p>La paraula <em>volum</em> s'utilitza per descriure un dispositiu d'emmagatzematge, com un disc dur. També pot referir-se a una <em>part</em> del dispositiu d'emmagatzemament, perquè podeu dividir l'emmagatzematge en trossos. L'ordinador fa que s'hi pugui accedir a través del vostre sistema de fitxers en un procés anomenat <em>muntage</em>. Els volums muntats poden ser discs durs, unitats USB, DVD-RW, targetes SD i altres suports. Si un volum està muntat, podeu llegir (i possiblement escriure-hi) fitxers.</p>
 
-  <p>Often, a mounted volume is called a <em>partition</em>, though they are not
- necessarily the same thing. A “partition” refers to a <em>physical</em> area of
- storage on a single disk drive. Once a partition has been mounted, it can be
- referred to as a volume because you can access the files on it. You can think
- of volumes as the labeled, accessible “storefronts” to the functional “back
- rooms” of partitions and drives.</p>
+  <p>Sovint, un volum muntat s'anomena <em>partició</em>, tot i que no són necessàriament el mateix. na "partició" fa referència a una àrea <em>física</em> d'emmagatzematge en una única unitat de disc. Una vegada que s'ha muntat una partició, es pot referir a un volum perquè pot accedir als fitxers en ell. Podeu pensar en els volums com els "magatzems" etiquetats i accessibles a les "habitacions posteriors" funcionals de les particions i discs..</p>
 
 <section id="manage">
- <title>View and manage volumes and partitions using the disk utility</title>
+ <title>Consulteu i gestioneu volums i particions mitjançant la utilitat del disc</title>
 
-  <p>You can check and modify your computer's storage volumes with the disk
- utility.</p>
+  <p>Podeu consultar i modificar els volums d'emmagatzematge de l'ordinador amb la utilitat del disc.</p>
 
 <steps>
   <item>
-    <p>Open the <gui>Activities</gui> overview and start <app>Disks</app>.</p>
+    <p>Obriu la vista conjunt d'<gui>Activitats</gui> i inicieu <app>Discs</app>.</p>
   </item>
   <item>
-    <p>In the list of storage devices on the left, you will find hard disks,
-    CD/DVD drives, and other physical devices. Click the device you want to
-    inspect.</p>
+    <p>A la llista de dispositius d'emmagatzematge de l'esquerra, trobareu discs durs, unitats de CD / DVD i altres dispositius físics. Feu clic al dispositiu que vulgueu inspeccionar.</p>
   </item>
   <item>
-    <p>The right pane provides a visual breakdown of the volumes and
-    partitions present on the selected device. It also contains a variety of
-    tools used to manage these volumes.</p>
-    <p>Be careful: it is possible to completely erase the data on your disk with
-    these utilities.</p>
+    <p>El panell dret proporciona un desglossament visual dels volums i les particions presents al dispositiu seleccionat. També conté diverses eines per gestionar aquests volums.</p>
+    <p>Aneu amb compte: és possible esborrar completament les dades del vostre disc amb aquestes utilitats.</p>
   </item>
 </steps>
 
-  <p>Your computer most likely has at least one <em>primary</em> partition and a
- single <em>swap</em> partition. The swap partition is used by the operating
- system for memory management, and is rarely mounted.  The primary partition
- contains your operating system, applications, settings, and personal files.
- These files can also be distributed among multiple partitions for security or
- convenience.</p>
+  <p>És probable que el vostre ordinador tingui com a mínim una partició<em>primaria</em> i una única partició d'<em>intercanvi</em>. La partició d'intercanvi la utilitza el sistema operatiu per a la gestió de la memòria, i rarament es munta. La partició principal conté el vostre sistema operatiu, aplicacions, configuració i fitxers personals. Aquests fitxers també es poden distribuir entre diverses particions per seguretat o comoditat.</p>
 
-  <p>One primary partition must contain information that your computer uses to
-  start up, or <em>boot</em>. For this reason it is sometimes called a boot
-  partition, or boot volume. To determine if a volume is bootable, select the
-  partition and click the menu button in the toolbar underneath the partition
-  list. Then, click <gui>Edit Partition…</gui> and look at its
-  <gui>Flags</gui>. External media such as USB drives and CDs may also contain
-  a bootable volume.</p>
+  <p>Una partició primària ha de contenir informació que l'ordinador utilitza per iniciar-se, o bé<em>arrencar</em>. Per aquest motiu a vegades se l'anomena partició d'arrencada o volum d'arrencada. Per determinar si un volum es pot arrencar, seleccioneu la partició i feu clic al botó de menú de la barra d'eines a sota de la llista de particions. Aleshores, feu clic a <gui>Editar Partició…</gui> i mireu les <gui>Marques</gui>. Els mitjans externs, com ara unitats USB i CD, també poden contenir un volum d'arrencada.</p>
 
 </section>
 

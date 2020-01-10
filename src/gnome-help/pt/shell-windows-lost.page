@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" version="1.0 if/1.0" id="shell-windows-lost" xml:lang="pt">
+
+  <info>
+    <link type="guide" xref="shell-windows#working-with-windows"/>
+
+    <revision pkgversion="3.8.0" date="2013-04-23" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+
+    <credit type="author">
+      <name>Projeto de documentação de GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hilh</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Verificar a vista de <gui>Atividades</gui> ou olhar em outras áreas de trabalho.</desc>
+  </info>
+
+  <title>Encontrar uma janela perdida</title>
+
+  <p>Uma janela num área de trabalho diferente, ou oculta por trás de outra janela é fácil de encontrar utilizando a vista de <gui xref="shell-introduction#activities">Atividades</gui>:</p>
+
+  <list>
+    <item>
+      <p>Abra a vista de <gui>Atividades</gui>. Se a janela que está a procurar está no <link xref="shell-windows#working-with-workspaces">área de trabalho</link>, mostrar-se-á aqui como uma miniatura. Para mostrá-la de novo, simplesmente carregue a miniatura, ou</p>
+    </item>
+    <item>
+      <p>Carregue em diferentes áreas de trabalho no <link xref="shell-workspaces">seletor de áreas de trabalho</link> à direita do ecrã para tratar de encontrar a janela, ou</p>
+    </item>
+    <item>
+      <p>Carregue com o botão direito sobre o aplicação no tabuleiro e listar-se-ão as janelas abertas. Carregue na janela da lista à que quer mudar.</p>
+    </item>
+  </list>
+
+  <p>Usando o seletor de janelas:</p>
+
+  <list>
+    <item>
+      <p>Carregue <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq> para mostrar o <link xref="shell-windows-switching">seletor de janelas</link>. Mantenha premida a tecla <key>Super</key> e carregue <key>Tab</key> para mudar entre a lista de janelas abertas, ou carregue <keyseq><key>Shift</key><key>Tab</key></keyseq> para mudar para atrás.</p>
+    </item>
+    <item if:test="!platform:gnome-classic">
+      <p>Se um aplicação tem múltiplas janelas abertas, carregue <key>Super</key> e <key>`</key> (ou a tecla em cima da tecla <key>Tab</key>) para passar por elas.</p>
+    </item>
+  </list>
+
+</page>

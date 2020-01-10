@@ -13,7 +13,7 @@
       <email>philbull@gmail.com</email>
     </credit>
 
-    <desc>Double-check the password, and other things to try.</desc>
+    <desc>Varmista, että kirjoittamasi salasana oli oikein, ja muita yrittämisen arvoisia asioita.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -25,7 +25,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Jiri Grönroos</mal:name>
       <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
-      <mal:years>2012-2016.</mal:years>
+      <mal:years>2012-2018.</mal:years>
     </mal:credit>
   </info>
 
@@ -35,28 +35,28 @@
 
 <list>
  <item>
-  <p>Double-check that you have the correct password</p>
-  <p>Salasanoissa välitetään Ubuntussa <em>aina</em> isoista ja pienistä kirjaimista, joten tarkista aivan ensimmäisenä näiden merkkien oikeinkirjoitus.</p>
+  <p>Varmista, että kirjoittamasi salasana on oikein</p>
+  <p>Passwords are case-sensitive (it matters whether they have capital or lower-case letters), so check that you didn’t get the case of one of the letters wrong.</p>
  </item>
 
  <item>
   <p>Yritä käyttää hex- tai ASCII-salausavainta</p>
-  <p>Salasana on mahdollista esittää myös eri tavalla - niin sanottuna salausavaimena, eli numeroiden 0-9 ja merkkien a-f yhdistelmänä. Jokaisella salasanalla on oma salausavain. Jos tiedät sekä salasanan että salausavaimen, yritä syöttää salausavain salasanan sijaan.  Varmista, että valitset oikeanlaisen <gui>langattoman tietoturvan</gui> salasanaa kysyttäessä (valitse <gui>WEP 40/128-bit-avain (hexa tai ASCII)</gui>, jos syötät WEP-salauksen 40-merkkistä salausavainta).</p>
+  <p>The password you enter can also be represented in a different way — as a string of characters in hexadecimal (numbers 0-9 and letters a-f) called a pass key. Each password has an equivalent pass key. If you have access to the pass key as well as the password/passphrase, try typing the pass key instead. Make sure you select the correct <gui>wireless security</gui> option when asked for your password (for example, select <gui>WEP 40/128-bit Key</gui> if you’re typing the 40-character pass key for a WEP-encrypted connection).</p>
  </item>
 
  <item>
   <p>Kytke langaton verkkoyhteys pois päältä ja sitten takaisin päälle</p>
-  <p>Joskus langattomat verkkokortit jumiutuvat tai kohtaavat ongelman, josta ne eivät voi enää palautua. Kokeile kytkeä langaton verkkolaite tietokoneestasi ensin pois päältä ja sitten nollaamalla se (jos se ei ole mahdollista, käynnistä se). Lisätietoja saat ohjeesta <link xref="net-wireless-troubleshooting"/>.</p>
+  <p>Sometimes wireless cards get stuck or experience a minor problem that means they won’t connect. Try turning the card off and then on again to reset it — see <link xref="net-wireless-troubleshooting"/> for more information.</p>
  </item>
 
  <item>
-  <p>Check that you're using the correct type of wireless security</p>
-  <p>Kun Ubuntu kysyy sinulta verkon salasanaa, voit valita myös verkon salaustyypin. Varmista että valitsemasi salaustyyppi on langattoman tukiaseman tukema. Tämän asetuksen pitäisi olla oletuksena oikea, mutta joskus se ei ole jostakin syystä. Jos et tiedä verkkosi salaustyyppiä, kannattaa kokeilla eri vaihtoehtoja ja testata niiden toimivuutta.</p>
+  <p>Varmista, että käytät oikeatyyppistä verkon salaustekniikkaa</p>
+  <p>When prompted for your wireless security password, you can choose which type of wireless security to use. Make sure you choose the one that is used by the router or wireless base station. This should be selected by default, but sometimes it will not be for some reason. If you don’t know which one it is, use trial and error to go through the different options.</p>
  </item>
 
  <item>
   <p>Varmista, että langaton verkkokorttisi on kunnolla tuettu</p>
-  <p>Joitain langattomia verkkokortteja ei tueta kovin hyvin. Ne näkyvät langattomien verkkojen listalla, mutta niillä verkkoyhteyden muodostaminen epäonnistuu yleensä ajureiden puutteiden vuoksi. Tarkista vaihtoehtoisten ajureiden saatavuus tai halutessasi voit tehdä joitain ylimääräisiä ja teknisempiä tehtäviä (kuten eri <em>laiteohjelmistojen</em> asennusta). Saat lisätietoja ohjeaiheesta <link xref="net-wireless-troubleshooting"/>.</p>
+  <p>Some wireless cards aren’t supported very well. They show up as a wireless connection, but they can’t connect to a network because their drivers lack the ability to do this. See if you can get an alternative wireless driver, or if you need to perform some extra set-up (like installing a different <em>firmware</em>). See <link xref="net-wireless-troubleshooting"/> for more information.</p>
  </item>
 
 </list>

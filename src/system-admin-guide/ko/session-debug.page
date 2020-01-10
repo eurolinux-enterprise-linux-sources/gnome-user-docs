@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="session-debug" xml:lang="ko">
+
+  <info>
+    <link type="guide" xref="sundry#session"/>
+    <revision version="0.1" date="2014-01-28" status="draft"/>
+
+    <credit type="author copyright">
+      <name>Matthias Clasen</name>
+      <email>matthias.clasen@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Jana Svarova</name>
+      <email>jana.svarova@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+
+    <desc><file>~/.xsession-errors</file>은 무엇입니까?</desc>
+  </info>
+
+  <title>디버그 세션 문제</title>
+
+  <p>세션에 더 많은 문제를 찾고 싶거나 고치기를 원한다면, 사용자 세션과 애플리케이션의 로그 데이터가 저장 되어있는 시스템 로그를 참고합니다.</p>
+
+  <p><file>~/.xsession-errors</file> X 세션 로그 파일은 반대되고 더이상 사용되지 않습니다.</p>
+
+<section id="session-log-systemd">
+  <title>시스템 systemd-based에 있는 세션 로그 보기</title>
+  <p>시스템 systemd-based에서 2진 형식으로 데이터를 저장하는 <app>systemd</app> 저널에 있는 세션 로그 데이터를 볼 수 있습니다. 로그를 보려면 <cmd>journalctl</cmd> 명령을 사용합니다.</p>
+
+  <steps>
+    <title>사용자 세션 로그를 보려면:</title>
+    <item><p>다음의 명령을 실행함으로써 사용자 ID (<sys>uid</sys>)를 확정하세요:</p>
+    <screen><output>$ </output><input>id --user</input>
+1000</screen></item>
+    <item><p>위의 사항이 결정되면 사용자 ID에 대한 저널 로그를 봅니다:</p>
+    <screen><output>$ </output><input>journalctl _UID=1000</input></screen>
+    </item>
+  </steps>
+
+  <p>systemd journal에 대해 더 많은 정보를 보려면, <link href="man:journalctl"><cmd>journalctl</cmd></link>(1) 매뉴얼 페이지를 참고합니다.</p>
+</section>
+
+</page>

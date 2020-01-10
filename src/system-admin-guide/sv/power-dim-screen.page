@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="power-dim-screen" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="user-settings"/>
+    <link type="seealso" xref="dconf-profiles"/>
+    <link type="seealso" xref="dconf-lockdown"/>
+    <revision pkgversion="3.12" date="2014-06-20" status="candidate"/>
+
+    <credit type="author copyright">
+      <name>Matthias Clasen</name>
+      <email>matthias.clasen@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Jana Svarova</name>
+      <email>jana.svarova@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+
+    <desc>Dämpa skärmens ljusstyrka efter en viss tidsperiod då användaren är inaktiv.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Dämpa skärmen när användaren är inaktiv</title>
+
+  <p>Du kan få datorskärmen att dämpas efter att datorn varit inaktiv (inte använts) för en viss tidsperiod.</p>
+
+  <steps>
+    <title>Dämpa skärmen på en inaktiv dator</title>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-user'])"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-user-dir'])"/>
+    <item>
+      <p>Skapa nyckelfilen <file>/etc/dconf/db/local.d/00-power</file> för att tillhandahålla information åt databasen <sys>local</sys>.</p>
+      <listing>
+        <title><file>/etc/dconf/db/local.d/00-power</file></title>
+<code>
+# Ange dconf-sökvägen
+[org/gnome/settings-daemon/plugins/power]
+
+# Aktivera dämpande av skärm
+idle-dim=true
+
+# Ställ in ljusstyrka efter dämpande
+idle-brightness=30
+</code>
+      </listing>
+    </item>
+    <item>
+      <p>Skapa nyckelfilen <file>/etc/dconf/db/local.d/00-session</file> för att tillhandahålla information åt databasen <sys>local</sys>.</p>
+      <listing>
+        <title><file>/etc/dconf/db/local.d/00-session</file></title>
+<code>
+# Ange dconf-sökvägen
+[org/gnome/desktop/session]
+
+# Antalet inaktiva sekunder innan sessionen anses vara inaktiv
+idle-delay=uint32 300
+</code>
+      </listing>
+      <p>Du måste inkludera <code>uint32</code> tillsammans med heltalsnyckelvärdena på samma sätt som visas.</p>
+    </item>
+    <item>
+      <p>För att förhindra användaren från att åsidosätta dessa inställningar, skapa filen <file>/etc/dconf/db/local.d/locks/power-saving</file> med följande innehåll:</p>
+      <listing>
+        <title><file>/etc/dconf/db/local.db/locks/power-saving</file></title>
+<code>
+# Lås dämpande av skärm och tidsgräns för inaktivitet
+/org/gnome/settings-daemon/plugins/power/idle-dim
+/org/gnome/settings-daemon/plugins/power/idle-brightness
+/org/gnome/desktop/session/idle-delay
+</code>
+      </listing>
+      <p>Om du vill låta användaren ändra dessa inställningar, hoppa över detta steg.</p>
+    </item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-logoutin'])"/>
+  </steps>
+
+</page>

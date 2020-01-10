@@ -24,7 +24,7 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Uma introdução visual à sua área de trabalho, a barra superior e o panorama de <gui>Atividades</gui>.</desc>
+    <desc>Uma introdução visual a sua área de trabalho, a barra superior e o panorama de <gui>Atividades</gui>.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Rodolfo Ribeiro Gomes</mal:name>
@@ -47,7 +47,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Rafael Fontenelle</mal:name>
       <mal:email>rafaelff@gnome.org</mal:email>
-      <mal:years>2012-2016.</mal:years>
+      <mal:years>2012-2018.</mal:years>
     </mal:credit>
   </info>
 
@@ -88,19 +88,9 @@
   </if:when>
 </if:choose>
 
-  <p if:test="!platform:gnome-classic">To access your windows and applications,
-  click the <gui>Activities</gui> button, or just move your mouse pointer to
-  the top-left hot corner. You can also press the
-  <key xref="keyboard-key-super">Super</key> key on your keyboard. You can
-  see your windows and applications in the overview. You can also just start
-  typing to search your applications, files, folders, and the web.</p>
+  <p if:test="!platform:gnome-classic">Para acessar suas janelas e aplicativos, clique no botão <gui>Atividades</gui> ou simplesmente arraste o ponteiro do seu mouse para o canto superior esquerdo ativo. Você também pode pressionar o <key xref="keyboard-key-super">Super</key> do seu teclado. Você pode ver suas janelas e seus aplicativos no panorama. Você também pode simplesmente começar a digitar para pesquisar pelos seus aplicativos, arquivos, pastas e na web.</p>
 
-  <p if:test="platform:gnome-classic">To access your windows and applications,
-  click the <gui xref="shell-introduction#activities">Applications</gui> menu
-  at the top left of the screen and select the <gui>Activities Overview</gui>
-  item. You can also press the <key xref="keyboard-key-super">Super</key> key
-  to see your windows and applications in the <gui>Activities</gui> overview. 
-  Just start typing to search your applications, files, and folders.</p>
+  <p if:test="platform:gnome-classic">Para acessar suas janelas e aplicativos, clique no menu <gui xref="shell-introduction#activities">Aplicativos</gui> no canto esquerdo superior da tela e selecione o item do <gui>Panorama de atividades</gui>. Você também pode pressionar a tecla <key xref="keyboard-key-super">Super</key> para ver suas janelas e aplicativos no <gui>Panorama de atividades</gui>. Basta começar digitando para pesquisar seus aplicativos, arquivos e pastas.</p>
 
   <!-- TODO: retake without the flashy bit -->
   <media type="image" src="figures/shell-dash.png" height="300" style="floatstart floatleft" if:test="!target:mobile">
@@ -133,21 +123,13 @@
       <media type="image" src="figures/shell-appmenu-shell.png" width="250" style="floatend floatright" if:test="!target:mobile">
         <p>Menu de aplicativo do <app>Terminal</app></p>
       </media>
-      <p>Application menu, located beside the <gui>Activities</gui> button,
-      shows the name of the active application alongside with its icon and
-      provides quick access to application preferences or help. The items that
-      are available in the application menu vary depending on the application.
-      </p>
+      <p>O menu Aplicativo, localizado ao lado do botão de <gui>Atividades</gui>, mostra o nome do aplicativo ativo ao lado de seu ícone e fornece um acesso rápido às preferências ou ajuda de aplicativos. Os itens que estão disponíveis no menu de aplicativo variam dependendo do aplicativo.</p>
     </if:when>
     <if:when test="platform:gnome-classic">
       <media type="image" src="figures/shell-appmenu-classic.png" width="154" height="133" style="floatend floatright" if:test="!target:mobile">
         <p>Menu de aplicativo do <app>Terminal</app></p>
       </media>
-      <p>Application menu, located next to the <gui>Applications</gui> and
-      <gui>Places</gui> menus, shows the name of the active application
-      alongside with its icon and provides quick access to application
-      preferences or help. The items that are available in the application menu
-      vary depending on the application.</p>
+      <p>O menu Aplicativo, localizado próximo dos menus <gui>Aplicativos</gui> e <gui>Locais</gui>, mostra o nome do aplicativo ativo ao lado de seu ícone e fornece um acesso rápido às preferências ou ajuda de aplicativos. Os itens que estão disponíveis no menu de aplicativo variam dependendo do aplicativo.</p>
     </if:when>
   </if:choose>
 
@@ -159,7 +141,7 @@
 <if:choose>
   <if:when test="!platform:gnome-classic">
     <media type="image" src="figures/shell-appts.png" width="250" style="floatend floatright" if:test="!target:mobile">
-      <p>Clock, calendar, appointments and notifications</p>
+      <p>Relógio, agenda, compromissos e notificações</p>
     </media>
   </if:when>
   <if:when test="platform:gnome-classic">
@@ -169,12 +151,7 @@
   </if:when>
 </if:choose>
 
-  <p>Click the clock on the top bar to see the current date, a month-by-month
-  calendar, a list of your upcoming appointments and new notifications. You can
-  also open the calendar by pressing
-  <keyseq><key>Super</key><key>M</key></keyseq>. You can access the date and
-  time settings and open your full <app>Evolution</app> calendar directly from
-  the menu.</p>
+  <p>Clique no relógio no meio da barra superior para ver a data atual, uma agenda mensal e uma lista dos compromissos futuros. Você também pode abrir o calendário pressionando <keyseq><key>Super</key><key>M</key></keyseq>. Você pode acessar as configurações de data e hora e abrir sua agenda completa do <app>Evolution</app> a partir do menu.</p>
 
   <list style="compact">
     <item>
@@ -212,7 +189,7 @@
   <app>Empathy</app>.</p>-->
 
 <!--
-<p>If you set yourself to Unavailable, you won't be bothered by message popups
+<p>If you set yourself to Unavailable, you won’t be bothered by message popups
 at the bottom of your screen. Messages will still be available in the message
 tray when you move your mouse to the bottom-right corner. But only urgent
 messages will be presented, such as when your battery is critically low.</p>
@@ -223,7 +200,7 @@ messages will be presented, such as when your battery is critically low.</p>
 </list>
 -->
 
-  <p>Quando você sai do seu computador, você pode bloquear sua tela para evitar que outras pessoas a utilizem. Você também pode alternar entre usuários rapidamente, sem precisar encerrar sua sessão completamente, para dar acesso a alguém ao computador. Ou você pode suspender ou desligar o computador a partir do menu.</p>
+  <p>Quando você sai do seu computador, você pode bloquear sua tela para evitar que outras pessoas o utilizem. Você também pode alternar entre usuários rapidamente, sem precisar encerrar sua sessão completamente, para dar acesso a alguém ao computador, ou você pode suspender ou desligar o computador a partir do menu. Se você tiver uma tela que aceita rotação vertical ou horizontal, você pode girar rapidamente a tela a partir do menu de sistema. Se sua tela não aceitar rotação, você não verá o botão.</p>
 
   <list style="compact">
     <item>

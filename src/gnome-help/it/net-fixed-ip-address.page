@@ -8,6 +8,7 @@
     <revision pkgversion="3.4.0" date="2012-03-13" status="final"/>
     <revision pkgversion="3.15" date="2014-12-04" status="final"/>
     <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.24" date="2017-03-26" status="final"/>
 
     <credit type="author">
       <name>Jim Campbell</name>
@@ -42,9 +43,10 @@
 
   <title>Creare una connessione con un indirizzo IP statico</title>
 
-  <p>La maggior parte delle reti assegneranno automaticamente al computer un <link xref="net-what-is-ip-address">indirizzo IP</link> e altri dettagli appena verrà stabilita una connessione a Internet. Questi dettagli possono cambiare periodicamente, ma si potrebbe preferire avere un indirizzo IP statico per sapere sempre qual'è l'indirizzo del computer (per esempio, se si tratta di un server di file).</p> <p>Per assegnare al computer un indirizzo IP statico:</p>
+  <p>La maggior parte delle reti assegneranno automaticamente al computer un <link xref="net-what-is-ip-address">indirizzo IP</link> e altri dettagli appena verrà stabilita una connessione a Internet. Questi dettagli possono cambiare periodicamente, ma si potrebbe preferire avere un indirizzo IP statico per sapere sempre qual'è l'indirizzo del computer (per esempio, se si tratta di un server di file).</p>
 
   <steps>
+    <title>Per assegnare al computer un indirizzo IP statico:</title>
     <item>
       <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
       start typing <gui>Network</gui>.</p>
@@ -53,7 +55,7 @@
       <p>Click on <gui>Network</gui> to open the panel.</p>
     </item>
     <item>
-      <p>In the left pane, select the network connection that you want to give
+      <p>In the left pane, select the network connection that you want to have
       a fixed address. If you plug in to the network with a cable, click
       <gui>Wired</gui>, then click the
       <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media> button in the lower right corner of
@@ -62,17 +64,23 @@
       button will be located next to the active network.</p>
     </item>
     <item>
-      <p>Click on the <gui>IPv4</gui> or <gui>IPv6</gui> tab
+      <p>Click on <gui>IPv4</gui> or <gui>IPv6</gui> in the left pane
       and change the <gui>Addresses</gui> to <em>Manual</em>.</p>
     </item>
     <item>
-      <p>Enter the <em>Address</em>, <em>Netmask</em>, and <em>Gateway</em>
-      information into the appropriate boxes. How you choose these will depend
-      on your network setup; there are specific rules governing which IP
-      addresses and netmasks are valid for a given network.</p>
+      <p>Type in the <gui xref="net-what-is-ip-address">IP Address</gui> and
+      <gui>Gateway</gui>, as well as the appropriate <gui>Netmask</gui>.</p>
     </item>
     <item>
-      <p>Se necessario, inserire un indirizzo <em>Domain Name Server</em> nella casella <gui>Server DNS</gui>. Questo è l'indirizzo IP di un server che controlla i nomi del dominio; la maggior parte delle reti aziendali e dei provider Internet hanno server DNS dedicati.</p>
+      <p>In the <gui>DNS</gui> section, switch <gui>Automatic</gui> to
+      <gui>OFF</gui>. Enter the IP address of a DNS server you want to use.
+      Enter additional DNS server addresses using the <gui>+</gui> button.</p>
+    </item>
+    <item>
+      <p>In the <gui>Routes</gui> section, switch <gui>Automatic</gui> to
+      <gui>OFF</gui>. Enter the <gui>Address</gui>, <gui>Netmask</gui>,
+      <gui>Gateway</gui> and <gui>Metric</gui> for a route you want to use.
+      Enter additional routes using the <gui>+</gui> button.</p>
     </item>
     <item>
       <p>Click <gui>Apply</gui>. The network connection should now have a fixed

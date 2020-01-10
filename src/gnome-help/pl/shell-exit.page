@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="shell-exit" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="shell-overview"/>
+    <link type="guide" xref="power"/>
+    <link type="guide" xref="index" group="#first"/>
+
+    <revision pkgversion="3.6.0" date="2012-09-15" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+    <revision pkgversion="3.24.2" date="2017-06-11" status="candidate"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Andre Klapper</name>
+      <email>ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name>Alexandre Franke</name>
+      <email>afranke@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David Faour</name>
+      <email>dfaour.gnome@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Jak wylogować się, przełączyć użytkownika i tak dalej.</desc>
+    <!-- Should this be a guide which links to other topics? -->
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Wylogowywanie, wyłączanie komputera i przełączanie użytkowników</title>
+
+  <p>Po ukończeniu korzystania z komputera można go wyłączyć, uśpić (aby oszczędzać prąd) lub zostawić go włączonego i wylogować się.</p>
+
+<section id="logout">
+  <title>Wylogowywanie i przełączanie użytkowników</title>
+
+  <p>Aby umożliwić innym użytkownikom korzystanie z komputera, można się wylogować lub nie wylogowywać się i tylko przełączyć użytkowników. W tym drugim przypadku wszystkie programy będą nadal działały i wszystkie zostanie na swoim miejscu do czasu ponownego zalogowania się.</p>
+
+  <p>Aby to zrobić, kliknij <link xref="shell-introduction#yourname">menu systemowe</link> po prawej stronie górnego paska, kliknij swoją nazwę użytkownika, a następnie wybierz <gui>Wyloguj się</gui> lub <gui>Przełącz użytkownika</gui>.</p>
+
+  <note if:test="!platform:gnome-classic">
+    <p>Elementy <gui>Wyloguj się</gui> i <gui>Przełącz użytkownika</gui> są wyświetlane w menu tylko, jeśli na komputerze jest więcej niż jedno konto użytkownika.</p>
+  </note>
+
+  <note if:test="platform:gnome-classic">
+    <p>Element <gui>Przełącz użytkownika</gui> jest wyświetlany w menu tylko, jeśli na komputerze jest więcej niż jedno konto użytkownika.</p>
+  </note>
+
+</section>
+
+<section id="lock-screen">
+  <info>
+    <link type="seealso" xref="session-screenlocks"/>
+  </info>
+
+  <title>Blokowanie ekranu</title>
+
+  <p>Jeśli komputer jest zostawiany tylko na chwilę, to należy zablokować ekran, aby inne osoby nie mogły używać plików użytkownika lub uruchomionych programów. Po powrocie podnieś kurtynę <link xref="shell-lockscreen">ekranu blokady</link> i wpisz swoje hasło, aby zalogować się z powrotem. Jeśli użytkownik nie zablokuje ekranu, to po pewnym czasie zostanie on automatycznie zablokowany.</p>
+
+  <p>Aby zablokować ekran, kliknij menu systemowe po prawej stronie górnego paska i kliknij przycisk blokady ekranu na dole menu.</p>
+
+  <p>Kiedy ekran jest zablokowany, inni użytkownicy mogą logować się na swoje konta klikając <gui>Zaloguj jako inny użytkownik</gui> na ekranie hasła. Można później wrócić do swojego konta.</p>
+
+</section>
+
+<section id="suspend">
+  <info>
+    <link type="seealso" xref="power-suspend"/>
+  </info>
+
+  <title>Usypianie</title>
+
+  <p>Aby oszczędzać prąd, usypiaj komputer, kiedy nie jest używany. Jeśli komputer to laptop, to GNOME domyślnie usypia go automatycznie po zamknięciu pokrywy. Zapisuje to stan w pamięci komputera i wyłącza większość jego funkcji. Podczas uśpienia komputer nadal używa trochę prądu.</p>
+
+  <p>Aby ręcznie uśpić komputer, kliknij menu systemowe po prawej stronie górnego paska. Teraz można przytrzymać klawisz <key>Alt</key> i kliknąć przycisk wyłączania komputera albo kliknąć i przytrzymać ten przycisk.</p>
+
+</section>
+
+<section id="shutdown">
+<!--<info>
+  <link type="seealso" xref="power-off"/>
+</info>-->
+
+  <title>Wyłączanie i ponowne uruchamianie komputera</title>
+
+  <p>Aby całkowicie wyłączyć komputer lub wykonać pełne ponowne uruchomienie, kliknij menu systemowe po prawej stronie górnego paska i kliknij przycisk wyłączania komputera na dole menu. Zostanie otwarte okno z opcjami <gui>Uruchom ponownie</gui> i <gui>Wyłącz komputer</gui>.</p>
+
+  <p>Jeśli inni użytkownicy są zalogowani, to komputer może nie pozwolić na wyłączenie lub ponowne uruchomienie, ponieważ zakończyłoby to ich sesje. Użytkownik administracyjny może zostać poproszony o hasło, aby wyłączyć komputer.</p>
+
+  <note style="tip">
+    <p>Można wyłączyć komputer, jeśli ma zostać przeniesiony i nie ma akumulatora, jeśli poziom naładowania akumulatora jest niski lub słabo trzyma napięcie. Wyłączony komputer używa także <link xref="power-batterylife">mniej prądu</link> niż podczas uśpienia.</p>
+  </note>
+
+</section>
+
+</page>

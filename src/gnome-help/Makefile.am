@@ -31,14 +31,30 @@ HELP_MEDIA = \
 	figures/color-profile-default.png \
 	figures/color-space.png \
 	figures/display-dual-monitors.webm \
-	figures/documents-icon.png \
 	figures/emblem-system-symbolic.svg \
 	figures/emblem-system.png \
 	figures/gnome.png \
 	figures/go-down.png \
 	figures/input-keyboard-symbolic.png \
 	figures/input-methods-switcher.png \
+	figures/keyboard-key-calculator.svg \
+	figures/keyboard-key-computer.svg \
+	figures/keyboard-key-eject.svg \
+	figures/keyboard-key-folder.svg \
+	figures/keyboard-key-home.svg \
+	figures/keyboard-key-mail.svg \
+	figures/keyboard-key-media.svg \
 	figures/keyboard-key-menu.svg \
+	figures/keyboard-key-mute.svg \
+	figures/keyboard-key-next.svg \
+	figures/keyboard-key-pause.svg \
+	figures/keyboard-key-play.svg \
+	figures/keyboard-key-previous.svg \
+	figures/keyboard-key-search.svg \
+	figures/keyboard-key-stop.svg \
+	figures/keyboard-key-voldown.svg \
+	figures/keyboard-key-volup.svg \
+	figures/keyboard-key-world.svg \
 	figures/nautilus-icons.png \
 	figures/network-cellular-3g-symbolic.svg \
 	figures/network-cellular-4g-symbolic.svg \
@@ -70,19 +86,16 @@ HELP_MEDIA = \
 	figures/shell-activities.png \
 	figures/shell-appmenu-classic.png \
 	figures/shell-appmenu-shell.png \
-	figures/shell-apps-open.png \
 	figures/shell-appts-classic.png \
 	figures/shell-appts.png \
 	figures/shell-dash.png \
 	figures/shell-exit-classic.png \
 	figures/shell-exit.png \
 	figures/shell-lock.png \
-	figures/shell-notification.png \
 	figures/shell-top-bar-classic.png \
 	figures/shell-top-bar.png \
 	figures/shell-window-list-classic.png \
 	figures/shell-workspaces.png \
-	figures/shell.png \
 	figures/top-bar-icons-classic.png \
 	figures/top-bar-icons.png \
 	figures/universal-access-menu.png \
@@ -94,7 +107,6 @@ HELP_MEDIA = \
 	figures/network-wireless-signal-none-symbolic.svg \
 	figures/network-wireless-signal-ok-symbolic.svg \
 	figures/network-wireless-signal-weak-symbolic.svg \
-	figures/notification-buttons.png \
 	figures/system-run-symbolic.svg \
 	figures/view-more-symbolic.svg \
 	figures/yelp-icon-big.png
@@ -137,12 +149,12 @@ HELP_FILES = \
 	bluetooth-send-file.page \
 	bluetooth-turn-on-off.page \
 	bluetooth-visibility.page \
-	color.page \
 	clock-calendar.page \
 	clock-set.page \
 	clock-timezone.page \
 	clock-world.page \
 	clock.page \
+	color.page \
 	color-assignprofiles.page \
 	color-calibrate-camera.page \
 	color-calibrate-printer.page \
@@ -174,6 +186,8 @@ HELP_FILES = \
 	disk-check.page \
 	disk-format.page \
 	disk-partitions.page \
+	disk-repair.page \
+	disk-resize.page \
 	disk.page \
 	display-blank.page \
 	display-brightness.page \
@@ -388,4 +402,4 @@ HELP_FILES = \
 	wacom-stylus.page \
 	wacom.page
 
-HELP_LINGUAS = as ca cs de el fi fr es gl gu he hi hu id it ja kn lv mr nl pa pt_BR ru sl sr sr@latin sv te vi ta zh_CN
+HELP_LINGUAS = as ca cs da de el fi fr es gl gu he hi hr hu id it ja kn lv mr nl pa pl pt pt_BR ro ru sl sr sr@latin sv te vi ta zh_CN

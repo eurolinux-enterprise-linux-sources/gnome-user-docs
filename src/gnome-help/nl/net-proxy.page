@@ -29,62 +29,63 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>A proxy is an intermediary for web traffic, it can be used for accessing web services anonymously, for control or security purposes.</desc>
+    <desc>Een proxy is een intermediair voor netwerkverkeer; het kan gebruikt worden voor anonieme toegang tot netwerkdiensten, meestal voor controle- of beveiligingsdoeleinden.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Justin van Steijn</mal:name>
+      <mal:email>justin50@live.nl</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hannie Dumoleyn</mal:name>
+      <mal:email>hannie@ubuntu-nl.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
   </info>
 
-  <title>Define proxy settings</title>
+  <title>Proxy-instellingen definiëren</title>
 
 <section id="what">
-  <title>What is a proxy?</title>
+  <title>Wat is een proxy?</title>
 
-  <p>A <em>web proxy</em> filters websites that you look at, it receives
-  requests from your web browser to fetch web pages and their elements, and
-  following a policy will decide to pass them you back. They are commonly used
-  in businesses and at public wireless hotspots to control what websites you
-  can look at, prevent you from accessing the internet without logging in, or
-  to do security checks on websites.</p>
+  <p>Een <em>webproxy</em> filtert websites die u bekijkt. De proxy ontvangt verzoeken van uw webbrowser om de webpagina's en hun onderdelen op te halen en beslist aan de hand van bepaalde regels of ze aan u worden doorgegeven. Ze worden veel gebruikt bij bedrijven en publieke draadloos-hotspots om te bepalen welke websites u kunt bekijken, te voorkomen dat u toegang heeft tot het internet zonder in te loggen, of om veiligheidscontroles op websites uit te voeren.</p>
 
 </section>
 
 <section id="change">
-  <title>Change proxy method</title>
+  <title>Proxymethode wijzigen</title>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Network</gui>.</p>
+      <p>Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht en typ <gui>Netwerk</gui>.</p>
     </item>
     <item>
-      <p>Click on <gui>Network</gui> to open the panel.</p>
+      <p>Klik op <gui>Netwerk</gui> om het paneel te openen.</p>
     </item>
     <item>
-      <p>Select <gui>Network proxy</gui> from the list on the left.</p>
+      <p>Kies <gui>Netwerkproxy</gui> uit de lijst aan de linkerkant van het venster.</p>
     </item>
     <item>
-      <p>Choose which proxy method you want to use from:</p>
+      <p>Kies uit de volgende methodes welke proxymethode u wilt gebruiken:</p>
       <terms>
         <item>
-          <title><gui itst:context="proxy">None</gui></title>
-          <p>The applications will use a direct connection to fetch the content
-          from the web.</p>
+          <title><gui itst:context="proxy">Geen</gui></title>
+          <p>De toepassingen zullen een directe verbinding gebruiken om de inhoud van het web op te halen.</p>
         </item>
         <item>
-          <title><gui>Manual</gui></title>
-          <p>For each proxied protocol, define the address of a proxy and port
-          for the protocols. The protocols are <gui>HTTP</gui>,
-          <gui>HTTPS</gui>, <gui>FTP</gui> and <gui>SOCKS</gui>.</p>
+          <title><gui>Handmatig</gui></title>
+          <p>Voor elk proxy-protocol het adres van een proxy en de poort voor de protocollen bepalen. De protocollen zijn: <gui>HTTP</gui>, <gui>HTTPS</gui>, <gui>FTP</gui> en <gui>SOCKS</gui>.</p>
         </item>
         <item>
-          <title><gui>Automatic</gui></title>
-          <p>A URL pointing to a resource, which contains the appropriate
-          configuration for your system.</p>
+          <title><gui>Automatisch</gui></title>
+          <p>Een URL verwijst naar een bron met de juiste configuratie voor uw systeem.</p>
         </item>
       </terms>
     </item>
   </steps>
 
-  <p>Applications that use the network connection will use your specified proxy
-  settings.</p>
+  <p>Toepassingen die de netwerkverbinding gebruiken zullen uw gekozen proxy-instellingen gebruiken.</p>
 
 </section>
 

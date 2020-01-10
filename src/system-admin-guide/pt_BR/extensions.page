@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="extensions" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="software#extension"/>
+    <link type="seealso" xref="extensions-lockdown"/>
+    <link type="seealso" xref="extensions-enable"/>
+    <revision pkgversion="3.9" date="2013-08-07" status="review"/>
+
+    <credit type="author copyright">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Extensões do GNOME Shell permite personalização da interface padrão do GNOME Shell.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>O que são as extensões do GNOME Shell?</title>
+  
+  <p>Extensões do GNOME Shell permitem personalização da interface padrão do GNOME Shell e suas partes, tal como gerenciamento de janela e inicialização de aplicativo.</p>
+  
+  <p>Cada extensão do GNOME Shell é identificada por um identificador único, o uuid. O uuid também é usado para o nome do diretório no qual uma extensão está instalada. Você também pode instalar a extensão por usuário em <file>~/.local/share/gnome-shell/extensions/&lt;uuid&gt;</file> ou para todo sistema em <file>/usr/share/gnome-shell/extensions/&lt;uuid&gt;</file>.</p>
+  
+  <p>Para ver as extensões instaladas, você pode usar o <app>Looking Glass</app>, a ferramenta de inspeção e depuração integrada no GNOME Shell.</p>
+  
+  <steps>
+    <title>Vendo extensões instaladas</title>
+    <item>
+      <p>Pressione <keyseq type="combo"><key>Alt</key><key>F2</key></keyseq>, digite <em>lg</em> e pressione <key>Enter</key> para abrir <app>Looking Glass</app>.</p>
+    </item>
+    <item>
+      <p>Na barra superior do <app>Looking Glass</app>, clique em <gui>Extensions</gui> para abrir a lista de extensões instaladas.</p>
+    </item>
+  </steps>
+
+</page>

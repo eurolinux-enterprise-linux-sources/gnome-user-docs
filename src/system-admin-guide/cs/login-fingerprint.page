@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="login-fingerprint" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="login#management"/>
+    <link type="seealso" xref="dconf"/>
+    <revision pkgversion="3.12" date="2014-06-17" status="candidate"/>
+
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>davidk@gnome.org</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Jak zabránit uživateli přihlásit se pomocí čtečky otisku prstů.</desc>
+  </info>
+
+  <title>Zakázání přihlášení pomocí otisku prstu</title>
+
+  <p>Uživatelé se čtečkou otisku prstu mohou k přihlášení používat své otisky prstů místo hesla. Než je možné přihlašování otiskem prstu používat, <link href="help:gnome-help#session-fingerprint">musí si to uživatel nastavit</link>.</p>
+
+  <p>Čtečka otisků prstů ale není vždy spolehlivá, takže můžete chtít z bezpečnostních důvodů přihlašování pomocí čtečky zakázat.</p>
+
+  <steps>
+    <title>Vypnutí přihlašování pomocí čtečky otisků prstů:</title>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-user'])"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-user-dir'])"/>
+    <item>
+      <p>Vytvořte soubor s klíči <file>/etc/dconf/db/local.d/00-login</file>, který bude poskytovat informace pro databázi <sys>local</sys>.</p>
+      <listing>
+        <title><file>/etc/dconf/db/local.d/00-login</file></title>
+<code>
+# Určuje cestu v dconf
+[org/gnome/login-screen]
+
+# Zakazuje čtečku otisků prstů
+enable-fingerprint-authentication=false
+</code>
+      </listing>
+    </item>
+    <item>
+      <p>Aby uživatel nemohl tato nastavení přepsat, vytvořte soubor <file>/etc/dconf/db/local.d/locks/login</file> s následujícím obsahem:</p>
+      <listing>
+        <title><file>/etc/dconf/db/local.d/locks/fingerprintreader</file></title>
+<code>
+# Uvádí klíče používané k nastavení přihlašování
+/org/gnome/login-screen/enable-fingerprint-authentication
+</code>
+      </listing>
+    </item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-logoutin'])"/>
+  </steps>
+
+</page>

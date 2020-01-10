@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="network-server-list" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="network"/>
+    <revision pkgversion="3.8" date="2013-06-03" status="draft"/>
+
+    <credit type="author copyright">
+      <name>Matthias Clasen</name>
+      <email>matthias.clasen@gmail.com</email>
+      <years>2012</years>
+    </credit>
+   <credit type="editor">
+      <name>Jana Svarova</name>
+      <email>jana.svarova@gmail.com</email>
+      <years>2013</years>
+    </credit>
+   <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@gvolny.cz</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Jak můžete uživatelům poskytnou jednoduchý přístup k různým sdíleným souborům.</desc>
+  </info>
+
+  <title>Nastavení výchozího seznamu serverů</title>
+
+  <p><app>Nautilus</app> (aplikace <app>Soubory</app>) uchovává seznam serverů pro sdílení souborů v souboru <file>~/.config/nautilus/servers</file> ve formátu XBEL. Když chcete sdílené soubory jednoduše zpřístupnit uživatelům, stačí přidat seznam serverů pro sdílení do tohoto souboru.</p>
+  
+  <note style="tip">
+    <p><em>XBEL</em> (<em>XML Bookmark Exchange Language</em> — jazyk XML pro výměnu záložek) je standard XML, který umožňuje sdílet adresy URI (Uniform Resource Identifiers — jednotný identifikátor prostředku). V GNOME je XBEL používán ke sdílení záložek pracovního prostředí v aplikacích, jako je <app>Nautilus</app>.</p>
+  </note>
+
+  <example>
+    <p>Příklad souboru <file>~/.config/nautilus/servers</file>:</p>
+    <code>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"&gt;
+   &lt;bookmark href="<input>ftp://ftp.gnome.org/</input>"&gt;
+      &lt;title&gt;<input>GNOME FTP</input>&lt;/title&gt;
+   &lt;/bookmark&gt;
+&lt;/xbel&gt;
+</code>
+    <p>V příkladu výše vytvoří <app>Nautilus</app> záložku nazvanou <em>GNOME FTP</em> s adresou <code>ftp://ftp.gnome.org/</code>.</p>
+  </example>
+
+</page>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="dconf-lockdown" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="user-settings#lockdown"/>
+    <link type="guide" xref="setup"/>
+<!--    <link type="seealso" xref="dconf-profiles" />-->
+    <revision version="0.1" date="2012-05-21" status="review"/>
+    <revision pkgversion="3.8" date="2013-04-26" status="review"/>
+    <revision pkgversion="3.15" date="2015-02-13" status="review"/>
+
+    <credit type="author copyright">
+      <name>Ryan Lortie</name>
+      <email>desrt@desrt.ca</email>
+      <years>2012</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013, 2015</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Verwenden Sie den <em>Sperrmodus</em> in <sys its:translate="no">dconf</sys>, um Benutzer an der Änderung spezifischer Einstellungen zu hindern.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Spezifische Einstellungen sperren</title>
+
+  <!-- TODO: reveiw against dconf-custom-defaults.page -->
+
+  <p>Um einen <sys its:translate="no">dconf</sys>-Schlüssel zu <em>sperren</em>, müssen Sie einen <file its:translate="no">locks</file>-Unterordner im Schlüsseldatei-Ordner anlegen. Die Dateien in diesem Ordner enthalten eine Liste der zu sperrenden Schlüssel. Wie bei Schlüsseldateien auch können Sie eine beliebige Anzahl Dateien in diesem Ordner ablegen. Hier ist ein Beispiel dafür, wie es aussehen könnte:</p>
+
+  <steps>
+    <title>Eine Einstellung sperren</title>
+    <item>
+      <p>Bevor Sie einen Schlüssel sperren können, müssen Sie ihn erste setzen. Dieses Beispiel zeigt, wie Sie eine <link xref="desktop-background">Hintergrundeinstellung</link> sperren können, sobald sie gesetzt ist. Dazu sollten Sie ein <link xref="dconf-profiles"> <sys>Benutzer</sys>-Profil</link> und eine <link xref="dconf-keyfiles">Schlüsseldatei</link> mit den Einstellungen haben, die Sie sperren wollen.</p>
+    </item>
+    <item>
+      <p>Legen Sie einen Ordner namens <file its:translate="no">/etc/dconf/db/local.d/locks</file> an.</p>
+    </item>
+    <item>
+      <p>Erstellen Sie eine Datei im Ordner <file its:translate="no">/etc/dconf/db/local.d/locks/</file> und schreiben Sie jeden Schlüssel in eine eigene Zeile. Zum Beispiel erstellen Sie <file its:translate="no">/etc/dconf/db/local.d/locks/00_default-wallpaper</file> wie folgt:</p>
+<code its:translate="no">
+# <span its:translate="yes">Änderungen des Hintergrundbildes unterbinden</span>
+/org/gnome/desktop/background/picture-uri
+/org/gnome/desktop/background/picture-options
+/org/gnome/desktop/background/primary-color
+/org/gnome/desktop/background/secondary-color
+</code>
+    </item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+  </steps>
+
+  <note>
+    <p>Seit Version <app its:translate="no">dconf</app> 0.7.4 ist das Anpassen von Zugriffsrechten aus Geschwindigkeitsgründen nur pro Schlüssel möglich. Es können keine vollständigen Unterpfade angepasst werden Es gibt Pläne diese Möglichkeit in der Zukunft anzugehen.</p>
+  </note>
+
+</page>

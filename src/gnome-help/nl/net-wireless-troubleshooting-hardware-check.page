@@ -10,7 +10,7 @@
     <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
-      <name>Contributors to the Ubuntu documentation wiki</name>
+      <name>Mensen die bijdragen aan de Ubuntu-documentatie wiki</name>
     </credit>
     <credit type="author">
       <name>Gnome-documentatieproject</name>
@@ -19,161 +19,115 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Even though your wireless adapter is connected, it may not have been
-    recognized properly by the computer.</desc>
+    <desc>Alhoewel uw draadloos netwerk-adapter aangesloten is, kan het zijn dat hij niet op de juiste manier herkend is door de computer.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Justin van Steijn</mal:name>
+      <mal:email>justin50@live.nl</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hannie Dumoleyn</mal:name>
+      <mal:email>hannie@ubuntu-nl.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
   </info>
 
-  <title>Wireless connection troubleshooter</title>
-  <subtitle>Check that the wireless adapter was recognized</subtitle>
+  <title>Problemen met een draadloos verbinding oplossen</title>
+  <subtitle>Nagaan of de draadloos netwerk-adapter herkend werd</subtitle>
 
-  <p>Even though the wireless adapter is connected to the computer, it may not
-  have been recognized as a network device by the computer. In this step, you
-  will check whether the device was recognized properly.</p>
+  <p>Alhoewel de draadloos netwerk-adapter aangesloten is op de computer, is het mogelijk dat deze niet herkend is als een netwerkapparaat door de computer. In deze stap gaat u na of het apparaat op de juiste manier herkend werd.</p>
 
   <steps>
     <item>
-      <p>Open a Terminal window, type <cmd>lshw -C network</cmd> and press
-      <key>Enter</key>. If this gives an error message, you may need to install
-      the <app>lshw</app> program on your computer.</p>
+      <p>Open een terminalvenster, typ <cmd>lshw -C network</cmd> en druk op <key>Enter</key>. Als u een foutmelding krijgt, dan kunt u het programma <app>lshw</app> op uw computer installeren.</p>
     </item>
     <item>
-      <p>Look through the information that appeared and find the <em>Wireless
-      interface</em> section. If your wireless adapter was detected properly,
-      you should see something similar (but not identical) to this:</p>
-      <code><![CDATA[*-network
+      <p>Lees de informatie die verschijnt en controleer de sectie <em>Wireless interface</em>. Als uw draadloos netwerk-adapter op de juiste manier gedetecteerd is, dan zou de uitvoer er ongeveer zo uit moeten zien:</p>
+      <code>*-network
        description: Wireless interface
        product: PRO/Wireless 3945ABG [Golan] Network Connection
-       vendor: Intel Corporation]]></code>
+       vendor: Intel Corporation</code>
     </item>
     <item>
-      <p>If a wireless device is listed, continue on to the
-      <link xref="net-wireless-troubleshooting-device-drivers">Device Drivers
-      step</link>.</p>
-      <p>If a wireless device is <em>not</em> listed, the next steps you take
-      will depend on the type of device that you use. Refer to the section
-      below that is relevant to the type of wireless adapter that your computer
-      has (<link xref="#pci">internal PCI</link>, <link xref="#usb">USB</link>,
-      or <link xref="#pcmcia">PCMCIA</link>).</p>
+      <p>Als er een draadloos netwerk-apparaat in de lijst staat, ga dan door naar de pagina <link xref="net-wireless-troubleshooting-device-drivers">Stuurprogramma's</link>.</p>
+      <p>Als een draadloos apparaat <em>niet</em> in de lijst staat, dan zal de volgende stap afhangen van het apparaat dat u gebruikt. Ga naar de sectie hieronder die relevant is voor het type draadloos apparaat dat uw computer heeft (<link xref="#pci">interne PCI</link>, <link xref="#usb">USB</link>, of <link xref="#pcmcia">PCMCIA</link>).</p>
     </item>
   </steps>
 
 <section id="pci">
-  <title>PCI (internal) wireless adapter</title>
+  <title>PCI (interne) draadloze adapter</title>
 
-  <p>Internal PCI adapters are the most common, and are found in most laptops
-  made within the past few years. To check if your PCI wireless adapter was
-  recognized:</p>
+  <p>Interne PCI-adapters komen het meest voor en worden gebruikt in laptops die gemaakt zijn in de afgelopen paar jaren. Hoe controleert u of uw draadloze PCI-adapter werd herkend:</p>
 
   <steps>
     <item>
-      <p>Open a Terminal, type <cmd>lspci</cmd> and press <key>Enter</key>.</p>
+      <p>Open een terminalvenster, typ <cmd>lspci</cmd> in en druk daarna op <key>Enter</key>.</p>
     </item>
     <item>
-      <p>Look through the list of devices that is shown and find any that are
-      marked <code>Network controller</code> or <code>Ethernet
-      controller</code>. Several devices may be marked in this way; the one
-      corresponding to your wireless adapter might include words like
-      <code>wireless</code>, <code>WLAN</code>, <code>wifi</code> or
-      <code>802.11</code>. Here is an example of what the entry might look
-      like:</p>
+      <p>Doorzoek de getoonde lijst met apparaten en vind de apparaten die gemarkeerd zijn als <code>Network controller</code> of <code>Ethernet controller</code>. Er kunnen meerdere apparaten hetzelfde gemarkeerd zijn; diegene die overeenkomt met uw draadloze adapter kan woorden bevatten als <code>wireless</code>, <code>WLAN</code>, <code>wifi</code> of <code>802.11</code>. Hier is een voorbeeld hoe dit er mogelijk uit kan zien:</p>
       <code>Network controller: Intel Corporation PRO/Wireless 3945ABG [Golan] Network Connection</code>
     </item>
     <item>
-      <p>If you found your wireless adapter in the list, proceed to the
-      <link xref="net-wireless-troubleshooting-device-drivers">Device Drivers
-      step</link>. If you didn't find anything related to your wireless
-      adapter, see
-      <link xref="#not-recognized">the instructions below</link>.</p>
+      <p>Als u uw draadloos netwerk-adapter gevonden heeft in de lijst, ga door naar de stap <link xref="net-wireless-troubleshooting-device-drivers">Stuurprogramma's</link>. Als u niets bent tegengekomen over uw draadloos netwerk-adapter, zie <link xref="#not-recognized">onderstaande instructies</link>.</p>
     </item>
   </steps>
 
 </section>
 
 <section id="usb">
-  <title>USB wireless adapter</title>
+  <title>Draadloze USB-adapter</title>
 
-  <p>Wireless adapters that plug into a USB port on your computer are less
-  common. They can plug directly into a USB port, or may be connected by a USB
-  cable. 3G/mobile broadband adapters look quite similar to wireless (wifi)
-  adapters, so if you think you have a USB wireless adapter, double-check that
-  it is not actually a 3G adapter. To check if your USB wireless adapter was
-  recognized:</p>
+  <p>Draadloze adapters, die via een USB-poort op uw computer worden aangesloten, komen minder vaak voor. Deze kunnen direct in een USB-poort worden aangesloten of via een USB-kabel. 3G/mobiele breedbandadapters lijken heel erg op draadloze (wifi) adapters, dus als u denkt dat u een draadloze USB-adapter heeft, controleer dan nogmaals of het toch geen 3G-adapter is. Hoe controleert u of uw draadloze USB-adapter werd herkend:</p>
 
   <steps>
     <item>
-      <p>Open a Terminal, type <cmd>lsusb</cmd> and press <key>Enter</key>.</p>
+      <p>Open een terminalvenster, typ <cmd>lsusb</cmd> in en druk daarna op <key>Enter</key>.</p>
     </item>
     <item>
-      <p>Look through the list of devices that is shown and find any that seem
-      to refer to a wireless or network device. The one corresponding to your
-      wireless adapter might include words like <code>wireless</code>,
-      <code>WLAN</code>, <code>wifi</code> or <code>802.11</code>. Here is an
-      example of what the entry might look like:</p>
-      <code><![CDATA[Bus 005 Device 009: ID 12d1:140b Huawei Technologies Co., Ltd. EC1260 Wireless Data Modem HSD USB Card]]></code>
+      <p>Doorzoek de getoonde lijst met apparaten en vind de apparaten die schijnen te refereren aan een draadloos- of netwerkapparaat. Diegene die overeenkomt met uw draadloze adapter kan woorden bevatten als <code>wireless</code>, <code>WLAN</code>, <code>wifi</code> of <code>802.11</code>. Hier is een voorbeeld hoe dit er mogelijk uit kan zien:</p>
+      <code>Bus 005 Device 009: ID 12d1:140b Huawei Technologies Co., Ltd. EC1260 Wireless Data Modem HSD USB Card</code>
     </item>
     <item>
-      <p>If you found your wireless adapter in the list, proceed to the
-      <link xref="net-wireless-troubleshooting-device-drivers">Device Drivers
-      step</link>. If you didn't find anything related to your wireless
-      adapter, see
-      <link xref="#not-recognized">the instructions below</link>.</p>
+      <p>Als u uw draadloos netwerk-adapter gevonden heeft in de lijst, ga door naar de stap <link xref="net-wireless-troubleshooting-device-drivers">Stuurprogramma's</link>. Als u niets bent tegengekomen over uw draadloos netwerk-adapter, zie <link xref="#not-recognized">onderstaande instructies</link>.</p>
     </item>
   </steps>
 
 </section>
 
 <section id="pcmcia">
-  <title>Checking for a PCMCIA device</title>
+  <title>Controleren op een PCMCIA-kaart</title>
 
-  <p>PCMCIA wireless adapters are typically rectangular cards which slot into
-  the side of your laptop. They are more commonly found in older computers. To
-  check if your PCMCIA adapter was recognized:</p>
+  <p>Draadloze PCMCIA-adapters zijn meestal rechthoekige kaarten die aan de zijkant van uw laptop worden aangesloten. Ze komen vaak voor op oudere computers. Hoe controleert u of uw draadloze PCMCIA-adapter werd herkend:</p>
 
   <steps>
     <item>
-      <p>Start your computer <em>without</em> the wireless adapter plugged
-      in.</p>
+      <p>Start uw computer <em>zonder</em> draadloos netwerk-adapter.</p>
     </item>
     <item>
-      <p>Open a Terminal and type the following, then press
-      <key>Enter</key>:</p>
+      <p>Open een terminalvenster, typ het volgende in en druk daarna op <key>Enter</key>.</p>
       <code>tail -f /var/log/messages</code>
-      <p>This will display a list of messages related to your computer's
-      hardware, and will automatically update if anything to do with your
-      hardware changes.</p>
+      <p>Hierdoor zal er een lijst met berichten getoond worden, afhankelijk van de hardware van uw computer en deze zal automatisch bijgewerkt worden als er iets dat te maken heeft met uw hardware wijzigt.</p>
     </item>
     <item>
-      <p>Insert your wireless adapter into the PCMCIA slot and see what
-      changes in the Terminal window. The changes should include some
-      information about your wireless adapter. Look through them and see if you
-      can identify it.</p>
+      <p>Steek uw draadloos netwerk-adapter in de PCMCIA-sleuf en kijk wat er verandert in het terminalvenster. Er zou enige informatie over uw draadloos netwerk-adapter te zien moeten zijn. Lees deze door en kijk of u hem kunt herkennen.</p>
     </item>
     <item>
-      <p>To stop the command from running in the Terminal, press
-      <keyseq><key>Ctrl</key><key>C</key></keyseq>. After you have done that,
-      you can close the Terminal if you like.</p>
+      <p>Om het uitvoeren van een opdracht in de terminal te stoppen, druk op <keyseq><key>Ctrl</key><key>C</key></keyseq>. Nadat u dat gedaan heeft kunt u de terminal sluiten als u wilt.</p>
     </item>
     <item>
-      <p>If you found any information about your wireless adapter, proceed to
-      the <link xref="net-wireless-troubleshooting-device-drivers">Device
-      Drivers step</link>. If you didn't find anything related to your wireless
-      adapter, see <link xref="#not-recognized">the instructions
-      below</link>.</p>
+      <p>Als u informatie over uw draadloos netwerkadapter bent tegengekomen, ga dan door naar de stap <link xref="net-wireless-troubleshooting-device-drivers">Besturingsprogramma's</link>. Als u niets over uw draadloos netwerk-adapter bent tegengekomen, zie <link xref="#not-recognized">onderstaande instructies</link>.</p>
     </item>
   </steps>
 </section>
 
 <section id="not-recognized">
-  <title>Wireless adapter was not recognized</title>
+  <title>Draadloze adapter niet herkend</title>
 
-  <p>If your wireless adapter was not recognized, it might not be working
-  properly or the correct drivers may not be installed for it. How you check to
-  see if there are any drivers you can install will depend on which Linux
-  distribution you are using (like Ubuntu, Arch, Fedora or openSUSE).</p>
+  <p>Wanneer uw draadloze adapter niet werd herkend, kan het zijn dat deze mogelijk niet goed werkt of dat het verkeerde stuurprogramma geïnstalleerd is. Hoe u kunt controleren of er stuurprogramma's zijn die u kunt installeren, hangt af van de GNU/Linux-distributie die u gebruikt (zoals Ubuntu, Arch, Fedora en openSUSE).</p>
 
-  <p>To get specific help, look at the support options on your distribution's
-  website. These might include mailing lists and web chats where you can ask
-  about your wireless adapter, for example.</p>
+  <p>Kijk op de website van uw distributie om specifieke hulp te krijgen. Hier kunt u bijvoorbeeld mailinglijsten en chat-kanalen vinden waar u vragen kunt stellen over uw draadloos netwerk-adapter.</p>
 
 </section>
 

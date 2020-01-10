@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-removedrive" xml:lang="pt">
+
+  <info>
+    <link type="guide" xref="files#removable"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Jim Campbelh</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hilh</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2012</years>
+    </credit>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-10-08" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Ejetar ou desmontar uma memória USB, um CD, um DVD ou outro dispositivo.</desc>
+  </info>
+
+  <title>Extrair uma unidade externa de forma segura</title>
+
+  <p>Quando use dispositivos de armazenamento externo, como memorias USB ou similares, deverá os extrair com segurança antes dos desligar. Se simplesmente desliga o dispositivo, corre o risco de fazê-lo quando a aplicação todaviao está utilizando. Isto podria provocar que algum de seus ficheiros se perca ou se dãõe. Quando use um disco oúptico como um CD ou um DVD, poderá seguir estes mesmos passos para excarregar o disco da sua computador.</p>
+
+  <steps>
+    <title>Para excarregar um dispositivo removível:</title>
+    <item>
+      <p>Desde a vista de <gui xref="shell-introduction#activities">Atividades</gui> abra <app>Ficheiros</app>.</p>
+    </item>
+    <item>
+      <p>Localize o dispositivo em barra-a lateral. Deberia ter um pequem̃ou ícone de expulssão junto ao nome. Carregue nesse ícone para excarregar o dispositivo ou extraí-lo com segurança.</p>
+      <p>Alternativamente, carregue com o botão direito do rato sobre o nome do dispositivo e escolha <gui>Ejetar</gui>.</p>
+    </item>
+  </steps>
+
+  <section id="remove-busy-device">
+    <title>Extrair um dispositivo em uso de forma segura</title>
+
+  <p>Se algum dos ficheiros alojados no dispositivo está aberto em qualquer aplicação não poderá extrair o dispositivo com segurança. Aparecerá uma janela diciéndole que <gui>O volume está ocupado</gui>. Para extrair o dispositivo com segurança:</p>
+
+  <steps>
+    <item><p>Carregue <gui>Cancelar</gui>.</p></item>
+    <item><p>Feche todos os ficheiros do dispositivo.</p></item>
+    <item><p>Carregue o ícone de extrair para tirar ou excarregar o dispositivo com segurança.</p></item>
+    <item><p>Alternativamente, carregue com o botão direito do rato sobre o nome do dispositivo e escolha <gui>Ejetar</gui>.</p></item>
+  </steps>
+
+  <note style="warning"><p>Também pode selecionar <gui>Extrair de todos modos</gui> para extrair o dispositivo sem fechar os ficheiros. Isto pode provocar erros nos aplicações que tivessem esses ficheiros abertos.</p></note>
+
+  </section>
+
+</page>

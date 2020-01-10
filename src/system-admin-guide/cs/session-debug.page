@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="session-debug" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="sundry#session"/>
+    <revision version="0.1" date="2014-01-28" status="draft"/>
+
+    <credit type="author copyright">
+      <name>Matthias Clasen</name>
+      <email>matthias.clasen@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Jana Svarova</name>
+      <email>jana.svarova@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+
+    <desc>Co se stalo se souborem <file>~/.xsession-errors</file>?</desc>
+  </info>
+
+  <title>Ladění problémů se sezením</title>
+
+  <p>V případě, že potřebujete najít více informací o problému v sezení, nebo jej chcete opravit, podívejte se do systémového záznamu, kde jsou uchované záznamy ze sezení uživatele a aplikací.</p>
+
+  <p>Záznam sezení X v <file>~/.xsession-errors</file> byl zavrhnut a není nadále používán.</p>
+
+<section id="session-log-systemd">
+  <title>Zobrazení záznamu sezení na systémech používajících systemd</title>
+  <p>V systémech používajících systemd najdete záznam sezení v žurnálu <app>systemd</app>, který uchovává data v binárním formátu. Pro zobrazení těchto záznamů použijte příkaz <cmd>journalctl</cmd>.</p>
+
+  <steps>
+    <title>Když si chcete zobrazit záznam uživatelova sezení:</title>
+    <item><p>Zjistěte uživatelovo ID (<sys>uid</sys>) spuštěním následujícího příkazu:</p>
+    <screen><output>$ </output><input>id --user</input>
+1000</screen></item>
+    <item><p>Zobrazení žurnálových záznamů pro uživatelské ID zjištěné výše:</p>
+    <screen><output>$ </output><input>journalctl _UID=1000</input></screen>
+    </item>
+  </steps>
+
+  <p>Více informací o žurnálu systemd najdete v manuálové stránce <link href="man:journalctl"><cmd>journalctl</cmd></link> (1).</p>
+</section>
+
+</page>

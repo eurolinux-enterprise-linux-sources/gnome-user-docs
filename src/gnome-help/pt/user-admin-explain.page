@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="user-admin-explain" xml:lang="pt">
+
+  <info>
+    <link type="guide" xref="user-accounts#privileges"/>
+
+    <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
+    <revision pkgversion="3.10" date="2013-11-03" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Projeto de documentação de GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Precisa privilégios de administrador para mudar partes importantes de seu sistema.</desc>
+  </info>
+
+  <title>Como funcionam os privilégios de administrador?</title>
+
+  <p>Da mesma maneira que tem os ficheiros que <em>você</em> cria, o seu computador também tem um número de ficheiros que precisa o sistema para trabalhar adequadamente. Se estes <em>ficheiros do sistema</em> importantes mudam-se incorretamente, pode causar vários tipos de problemas e é por isto que, de maneira predeterminada, estão protegidos das mudanças. Certos aplicações também modificam partes importantes do sistema e por isso também estão protegidas.</p>
+
+  <p>A maneira na que estão protegidos é permitindo só aos utilizadores com <em>privilégios administrativas</em> mudar os ficheiros ou usar as aplicações, No uso diário, não precisará mudar nenhum ficheiro de sistema ou usar estes aplicações, de modo que de maneira predeterminada não terá privilégios administrativas.</p>
+
+  <p>Às vezes é necessário utilizar estes aplicações, pelo que pode obter temporariamente privilégios de administrador para poder realizar as mudanças. Se um aplicação precisa privilégios de administrador, pedir-se-lhe-á a sua palavra-passe. Por exemplo, se quer instalar um software novo, o instalador de software (gestor de pacotes) pedir-lhe-á a sua palavra-passe de administrador para que possa acrescentar o aplicação novo ao sistema. Uma vez que tenha terminado, suas privilégios de administrador tirar-se-lhe-ão de novo.</p>
+
+  <p>Administrative privileges are associated with your user account.
+  <gui>Administrator</gui> users are allowed to have these privileges while
+  <gui>Standard</gui> users are not. Without administrative privileges you will
+  not be able to install software. Some user accounts (for example, the “root”
+  account) have permanent administrative privileges. You should not use
+  administrative privileges all of the time, because you might accidentally
+  change something you did not intend to (like delete a needed system file, for
+  example).</p>
+
+  <p>Em resumo, os privilégios de administrador permitem-lhe mudar partes importantes de seu sistema quando o precise, mas lhe impedem o fazer acidentalmente.</p>
+
+  <note>
+    <title>What does “super user” mean?</title>
+    <p>A user with administrative privileges is sometimes called a <em>super
+    user</em>. This is simply because that user has more privileges than normal
+    users. You might see people discussing things like <cmd>su</cmd> and
+    <cmd>sudo</cmd>; these are programs for temporarily giving you “super user”
+    (administrative) privileges.</p>
+  </note>
+
+<section id="advantages">
+  <title>Por que são úteis os privilégios de administrador?</title>
+
+  <p>Exigir aos utilizadores ter privilégios de administrador antes de realizar mudanças importantes do sistema é útil, porque ajuda a evitar que seu sistema se rompa, de maneira intencionada ou acidental.</p>
+
+  <p>Se tivesse privilégios de administrador o tempo todo, poderia mudar acidentalmente um ficheiro importante, ou executar por erro um aplicação que muda algo importante. Ter privilégios de administrador de maneira temporária, quando os precisa, reduz o risco de que sucedam estes erros.</p>
+
+  <p>Only certain trusted users should be allowed to have administrative
+  privileges. This prevents other users from messing with the computer and
+  doing things like uninstalling applications that you need, installing
+  applications that you don’t want, or changing important files. This is useful
+  from a security standpoint.</p>
+
+</section>
+
+</page>

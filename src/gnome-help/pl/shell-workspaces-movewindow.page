@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" version="1.0 if/1.0" id="shell-workspaces-movewindow" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="shell-windows#working-with-workspaces"/>
+    <link type="seealso" xref="shell-workspaces"/>
+
+    <revision pkgversion="3.8" version="0.3" date="2013-05-10" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-04" status="candidate"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <credit type="author">
+      <name>Projekt dokumentacji GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Przejdź do <gui>ekranu podglądu</gui> i przeciągnij okno na inny obszar roboczy.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Przenoszenie okna do innego obszaru roboczego</title>
+
+  <steps>
+    <title>Używanie myszy:</title>
+    <item>
+      <p if:test="!platform:gnome-classic">Otwórz <gui xref="shell-introduction#activities">ekran podglądu</gui>.</p>
+      <p if:test="platform:gnome-classic">Otwórz <gui xref="shell-introduction#activities">ekran podglądu</gui> w menu <gui xref="shell-introduction#activities">Programy</gui> w górnym lewym rogu ekranu.</p>
+    </item>
+    <item>
+      <p>Kliknij i przeciągnij okno do prawej strony ekranu.</p>
+    </item>
+    <item>
+      <p>Pojawi się <em xref="shell-workspaces">przełącznik obszarów roboczych</em>.</p>
+    </item>
+    <item>
+      <p if:test="!platform:gnome-classic">Upuść okno na pusty obszar roboczy. Ten obszar będzie teraz zawierał upuszczone okno, a nowy obszar pojawi się na dole <em>przełącznika obszarów roboczych</em>.</p>
+      <p if:test="platform:gnome-classic">Upuść okno na pusty obszar roboczy. Ten obszar będzie teraz zawierał upuszczone okno.</p>
+    </item>
+  </steps>
+
+  <steps>
+    <title>Używanie klawiatury:</title>
+    <item>
+      <p>Wybierz okno do przeniesienia (np. za pomocą <em xref="shell-windows-switching">przełącznika okien</em> <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq>).</p>
+    </item>
+    <item>
+      <p>Naciśnij klawisze <keyseq><key>Super</key><key>Shift</key><key>Page Up</key></keyseq>, aby przenieść okno do obszaru roboczego nad obecnym obszarem na <em>przełączniku obszarów roboczych</em>.</p>
+      <p>Naciśnij klawisze <keyseq><key>Super</key><key>Shift</key><key>Page Down</key></keyseq>, aby przenieść okno do obszaru roboczego pod obecnym obszarem na <em>przełączniku obszarów roboczych</em>.</p>
+    </item>
+  </steps>
+
+</page>

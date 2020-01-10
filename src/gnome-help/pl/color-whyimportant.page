@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="color-whyimportant" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="color"/>
+    <desc>Zarządzanie kolorami jest ważne dla projektantów, fotografów i grafików.</desc>
+
+    <credit type="author">
+      <name>Richard Hughes</name>
+      <email>richard@hughsie.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Dlaczego zarządzanie kolorami jest ważne?</title>
+  <p>Zarządzanie kolorami to proces polegający na uchwyceniu koloru za pomocą urządzenia wejściowego, wyświetleniu go na ekranie i wydrukowaniu, zachowując dokładne kolory i zakres kolorów na każdym nośniku.</p>
+
+  <p>Potrzebę zarządzania kolorami najłatwiej wyjaśnić za pomocą zdjęcia ptaka w zimie.</p>
+
+  <figure>
+    <desc>Ptak widoczny w wizjerze aparatu</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-camera.png"/>
+  </figure>
+
+  <p>Ekrany zwykle za bardzo nasycają niebieski kanał, przez co obraz jest chłodny.</p>
+
+  <figure>
+    <desc>To samo zdjęcie widoczne na ekranie typowego laptopa biznesowego</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-display.png"/>
+  </figure>
+
+  <p>Zauważ, że biel nie jest całkiem biała, a czarne oczy są teraz brązowe.</p>
+
+  <figure>
+    <desc>To samo zdjęcie po wydrukowaniu na typowej drukarce atramentowej</desc>
+    <media its:translate="no" type="image" mime="image/png" src="figures/color-printer.png"/>
+  </figure>
+
+  <p>Podstawowy problem to fakt, że każde urządzenie obsługuje inny zakres kolorów. Więc chociaż można zrobić zdjęcie z jaskrawoniebieskimi kolorami, to większość drukarek nie potrafi ich odtworzyć.</p>
+  <p>Większość urządzeń nagrywa w RGB (czerwony, zielony, niebieski) i musi konwertować do CMYK (cyjan, magenta, żółty i czarny), aby wydrukować. Innym problemem jest to, że nie da się wyprodukować <em>białego</em> tuszu, więc biel może być tylko tak dobra, jak papier.</p>
+
+  <p>Innym problemem są jednostki. Bez określenia skali, według jakiej kolor jest mierzony, nie da się powiedzieć, czy 100% czerwieni jest blisko podczerwieni, czy tylko najgłębszym czerwonym tuszem w drukarce. Co jest 50% czerwieni na jednym ekranie jest prawdopodobnie 62% na innym. To jakby powiedzieć komuś, że przejechano 7 jednostek odległości — bez podania jednostki nie wiadomo, czy chodzi o 7 kilometrów, czy o 7 metrów.</p>
+
+  <p>W przypadku kolorów te jednostki są nazywane gamą. Gama to w zasadzie zakres kolorów, który można odtworzyć. Urządzenia (np. lustrzanki cyfrowe) mogą mieć bardzo szeroką gamę, mogąc uchwycić wszystkie kolory zachodu słońca, ale projektor ma bardzo małą gamę, i wszystkie kolory będą wyblakłe.</p>
+
+  <p>W niektórych przypadkach można wykonać <em>korekcję</em> wyjścia urządzenia przez zmianę wysyłanych do niego danych, ale w przypadkach, w których to niemożliwe (nie można wydrukować jasnoniebieskiego) musimy pokazać użytkownikowi, jak wyglądają kolory wynikowe.</p>
+
+  <p>W przypadku zdjęć użycie pełnego zakresu tonalnego urządzenia ma sens, aby zachować płynne zmiany kolorów. W przypadku innych grafik można potrzebować dokładnie dopasować kolor, co jest ważne, jeśli logo firmy Red Hat drukowane na kubku <em>musi</em> być dokładnie takie, jak w oficjalnym logo.</p>
+
+</page>

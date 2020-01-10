@@ -31,6 +31,8 @@
       <email>kittykat3756@gmail.com</email>
     </credit>
 
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
     <desc>Määritä tai vaihda pikanäppäimiä <gui>Näppäimistön</gui> asetuksissa.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -42,7 +44,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Jiri Grönroos</mal:name>
       <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
-      <mal:years>2012-2016.</mal:years>
+      <mal:years>2012-2018.</mal:years>
     </mal:credit>
   </info>
 
@@ -52,8 +54,7 @@
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Keyboard</gui>.</p>
+      <p>Avaa <gui xref="shell-introduction#activities">Toiminnot</gui>-yleisnäkymä ja ala kirjoittamaan <gui>Näppäimistö</gui>.</p>
     </item>
     <item>
       <p>Napsauta <gui>Näppäimistö</gui>.</p>
@@ -74,7 +75,7 @@
 
 
 <section id="defined">
-<title>Pre-defined shortcuts</title>
+<title>Ennalta määritetyt pikanäppäimet</title>
   <p>There are a number of pre-configured shortcuts that can be changed,
   grouped into these categories:</p>
 
@@ -86,15 +87,15 @@
   </tr>
   <tr>
 	<td><p>Käynnistä laskin</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-calculator.svg"> <key>Calculator</key> key symbol</media> or <key>Calculator</key></p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-calculator.svg"> <key>Calculator</key> key symbol</media> tai <key>Laskin</key></p></td>
   </tr>
   <tr>
 	<td><p>Käynnistä sähköpostiohjelma</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-mail.svg"> <key>Mail</key> key symbol</media> or <key>Mail</key></p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-mail.svg"> <key>Mail</key> key symbol</media> tai <key>Sähköposti</key></p></td>
   </tr>
   <tr>
 	<td><p>Käynnistä www-selain</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-world.svg"> <key>WWW</key> key symbol</media> or <media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-home.svg"> <key>WWW</key> key symbol</media> or <key>WWW</key></p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-world.svg"> <key>WWW</key> key symbol</media> tai <media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-home.svg"> <key>WWW</key> key symbol</media> tai <key>WWW</key></p></td>
   </tr>
   <tr>
 	<td><p>Kotikansio</p></td>
@@ -102,12 +103,12 @@
   </tr>
   <tr>
 	<td><p>Etsi</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-search.svg"> <key>Search</key> key symbol</media> or <key>Search</key></p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-search.svg"> <key>Search</key> key symbol</media> tai <key>Haku</key></p></td>
   </tr>
 </table>
 
 <table rules="rows" frame="top bottom" ui:expanded="false">
-<title>Navigation</title>
+<title>Liikkuminen</title>
   <tr>
 	<td><p>Siirrä ikkuna työtilaan 1</p></td>
 	<td><p>Poissa käytöstä</p></td>
@@ -134,24 +135,22 @@
   </tr>
   <tr>
 	<td><p>Siirrä ikkuna ylempänä olevaan työtilaan</p></td>
-	<td><p><keyseq><key>Shift</key><key xref="keyboard-key-super">Super</key>
-  <key>Page Up</key></keyseq></p></td>
+	<td><p><keyseq><key>Shift</key><key xref="keyboard-key-super">Super</key> <key>Page Up</key></keyseq></p></td>
   </tr>
   <tr>
 	<td><p>Siirrä ikkuna alempana olevaan työtilaan</p></td>
-	<td><p><keyseq><key>Shift</key><key>Super</key><key>Page Down</key></keyseq>
-  </p></td>
+	<td><p><keyseq><key>Shift</key><key>Super</key><key>Page Down</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Switch applications</p></td>
+	<td><p>Vaihda sovelluksien välillä</p></td>
 	<td><p><keyseq><key>Super</key><key>Tab</key></keyseq></p></td>
   </tr>
   <tr>
-  <td><p>Switch windows</p></td>
+  <td><p>Vaihtele ikkunoiden välillä</p></td>
   <td><p>Poissa käytöstä</p></td>
   </tr>
   <tr>
-	<td><p>Switch windows of an application</p></td>
+	<td><p>Vaihda sovelluksen ikkunoiden välillä</p></td>
 	<td><p>Poissa käytöstä</p></td>
   </tr>
   <tr>
@@ -211,15 +210,15 @@
 <table rules="rows" frame="top bottom" ui:expanded="false">
 <title>Kuvakaappaukset</title>
   <tr>
-	<td><p>Save a screenshot to file</p></td>
+	<td><p>Tallenna kuvakaappaus tiedostoon</p></td>
 	<td><p><key>Print</key></p></td>
   </tr>
   <tr>
-	<td><p>Save a screenshot of a window to file</p></td>
+	<td><p>Tallenna kuvakaappaus ikkunasta tiedostoon</p></td>
 	<td><p><keyseq><key>Alt</key><key>Print</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Save a screenshot of an area to file</p></td>
+	<td><p>Tallenna kuvakaappaus alueesta tiedostoon</p></td>
 	<td><p><keyseq><key>Shift</key><key>Print</key></keyseq></p></td>
   </tr>
   <tr>
@@ -231,18 +230,17 @@
 	<td><p><keyseq><key>Ctrl</key><key>Alt</key><key>Print</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Copy a screenshot of an area to clipboard</p></td>
+	<td><p>Kopioi kuvakaappaus alueesta leikepöydälle</p></td>
 	<td><p><keyseq><key>Shift</key><key>Ctrl</key><key>Print</key></keyseq></p></td>
   </tr>
   <tr>
-  <td><p>Record a screencast</p></td>
-  <td><p><keyseq><key>Shift</key><key>Ctrl</key><key>Alt</key><key>R</key>
-  </keyseq></p></td>
+  <td><p>Tallenna työpöytävideo</p></td>
+  <td><p><keyseq><key>Shift</key><key>Ctrl</key><key>Alt</key><key>R</key> </keyseq></p></td>
   </tr>
 </table>
 
 <table rules="rows" frame="top bottom" ui:expanded="false">
-<title>Sound and Media</title>
+<title>Ääni ja media</title>
   <tr>
 	<td><p>Volume mute</p></td>
 	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-mute.svg"> <key>Mute</key> key symbol</media> (Audio mute)</p></td>
@@ -260,23 +258,23 @@
 	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-media.svg"> <key>Media</key> key symbol</media> (Audio media)</p></td>
   </tr>
   <tr>
-	<td><p>Play (or play/pause)</p></td>
+	<td><p>Toista (tai toista/keskeytä)</p></td>
 	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-play.svg"> <key>Play</key> key symbol</media> (Audio play)</p></td>
   </tr>
   <tr>
-	<td><p>Pause playback</p></td>
+	<td><p>Keskeytä toisto</p></td>
 	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-pause.svg"> <key>Pause</key> key symbol</media> (Audio pause)</p></td>
   </tr>
   <tr>
-	<td><p>Stop playback</p></td>
+	<td><p>Pysäytä toisto</p></td>
 	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-stop.svg"> <key>Stop</key> key symbol</media> (Audio stop)</p></td>
   </tr>
   <tr>
-	<td><p>Previous track</p></td>
+	<td><p>Edellinen kappale</p></td>
 	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-previous.svg"> <key>Previous</key> key symbol</media> (Audio previous)</p></td>
   </tr>
   <tr>
-	<td><p>Next track</p></td>
+	<td><p>Seuraava kappale</p></td>
 	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-next.svg"> <key>Next</key> key symbol</media> (Audio next)</p></td>
   </tr>
   <tr>
@@ -324,12 +322,12 @@
 <table rules="rows" frame="top bottom" ui:expanded="false">
 <title>Kirjoittaminen</title>
   <tr>
-  <td><p>Switch to next input source</p></td>
+  <td><p>Vaihda seuraavaan syötelähteeseen</p></td>
   <td><p><keyseq><key>Super</key><key>Space</key></keyseq></p></td>
   </tr>
 
   <tr>
-  <td><p>Switch to previous input source</p></td>
+  <td><p>Vaihda edelliseen syötelähteeseen</p></td>
   <td><p>Poissa käytöstä</p></td>
   </tr>
   <tr>
@@ -441,11 +439,11 @@
 	<td><p>Poissa käytöstä</p></td>
   </tr>
   <tr>
-	<td><p>Maximize window vertically</p></td>
+	<td><p>Suurenna ikkuna pystysuunnassa</p></td>
 	<td><p>Poissa käytöstä</p></td>
   </tr>
   <tr>
-	<td><p>Maximize window horizontally</p></td>
+	<td><p>Suurenna ikkuna vaakasuunnassa</p></td>
 	<td><p>Poissa käytöstä</p></td>
   </tr>
   <tr>

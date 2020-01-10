@@ -28,8 +28,9 @@
       <years>2015</years>
     </credit>
 
-    <desc>Allow applications to access your accounts online for photos,
-    contacts, calendars, and more.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Ļaut lietotnēm piekļūt saviem kontiem fotogrāfijām, kontaktiem, kalendāriem un vēl.</desc>
 </info>
 
   <title>Pievienot kontu</title>
@@ -44,36 +45,26 @@
       <p>Spiediet <gui>Tiešsaistes konti</gui>, lai atvērtu paneli.</p>
     </item>
     <item>
-      <p>Spiediet <gui>+</gui> pogu loga apakšējajā kreisajā stūrī.</p>
+      <p>Izvēlieties kontu, saraksta pa labi.</p>
     </item>
     <item>
       <p>Izvēlieties konta veidu, kuru vēlaties pievienot.</p>
     </item>
     <item>
-      <p>A small website window or dialog will open where you can enter your
-      online account credentials. For example, if you are setting up a Google
-      account, enter your Google username and password. Some providers allow
-      you to create a new account from the login dialog.</p>
+      <p>Mazs tīmekļa vietnes logs vai dialoglodziņš tiks atvērts, kurā jūs varēsiet ievadīt sava tiešsaistes konta akreditācijas datus. Piemēram, ja iestatāt Google kontu, ievadiet savu Google lietotājvārdu un paroli. Daži pakalpojumu sniedzēji jums ļauj veidot jaunu kontu no ierakstīšanās dialoglodziņa.</p>
     </item>
     <item>
       <p>Ja esat ievadījis jūsu akreditācijas datus korekti, jums tiks vaicāts atļaut GNOME pieeju jūsu tiešsaistes kontam. Lai turpinātu, sankcionējiet piekļuvi.</p>
     </item>
     <item>
-      <p>All services that are offered by an account provider will be enabled
-      by default. <link xref="accounts-disable-service">Switch</link>
-      individual services to <gui>OFF</gui> to disable them.</p>
+      <p>Visi servisi, kurus piedāvā konta pakalpojumu sniedzējs, tiks aktivizēti pēc noklusējuma. <link xref="accounts-disable-service">Pārslēdziet</link> atsevišķus servisus uz <gui>◯</gui>, ja nevēlaties tos izmantot.</p>
     </item>
   </steps>
 
-  <p>After you have added accounts, applications can use those accounts for
-  the services you have chosen to allow. See <link xref="accounts-disable-service"/>
-  for information on controlling which services to allow.</p>
+  <p>Pēc kontu pievienošanas, lietotnes var izmantot tos kontus pakalpojumiem, kurus izvēlējāties atļaut. Skatiet <link xref="accounts-disable-service"/>, lai uzzinātu vairāk par to, kurus pakalpojumus atļaut.</p>
 
   <note style="tip">
-    <p>Many online services provide an authorization token which GNOME stores
-    instead of your password. If you remove an account, you should also revoke
-    that certificate in the online service. See <link xref="accounts-remove"/>
-    for more information.</p>
+    <p>Daudzi tiešsaistes pakalpojumi sniedz pilnvarošanas marķieri, ko GNOME saglabā, nevis jūsu paroli. Ja izņemsiet kontu, jums vajadzētu arī atsaukt tā sertifikātu tiešsaistes pakalpojumā. Skatiet <link xref="accounts-remove"/>, lai uzzinātu vairāk.</p>
   </note>
 
 </page>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="login-logo" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="login#appearance"/>
+    <!--<link type="seealso" xref="gdm-restart"/>-->
+    <revision pkgversion="3.11" date="2014-01-29" status="draft"/>
+
+    <credit type="author copyright">
+      <name>Matthias Clasen</name>
+      <email>matthias.clasen@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="author copyright">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="author copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2013</years>
+    </credit>
+
+    <desc>Jak upravit profil <sys its:translate="no">GDM</sys> v <sys its:translate="no">dconf</sys>, aby se zobrazoval obrázek na přihlašovací obrazovce.</desc>
+   </info>
+
+  <title>Přidání uvítacího loga na přihlašovací obrazovku</title>
+
+  <p>Uvítací logo na přihlašovací obrazovce se řídí klíčem GSettings <sys>org.gnome.login-screen.logo</sys>. Protože <sys>GDM</sys> používá svůj vlastní profil <sys>dconf</sys>, můžete přidat uvítací logo změnou nastavení v tomto profilu.</p>
+  
+  <p>Když vybíráte vhodný obrázek pro logo na přihlašovací obrazovku, vezměte v úvahu následující doporučení pro obrázek:</p>
+  
+  <list>
+  <item><p>Podporované jsou všechny hlavní formáty: ANI, BPM, GIF, ICNS, ICO, JPEG, JPEG 2000, PCX, PNM, PBM, PGM, PPM, GTIFF, RAS, TGA, TIFF, XBM, WBMP, XPM a SVG.</p></item>
+  <item><p>Velikost obrázku se proporčně přeškáluje na výšku 48 pixelů. Takže, když například nastavíte logo o rozměrech 1920 × 1080 pixelů, změní se na miniaturu původního obrázku o rozměrech 85 × 48 pixelů.</p></item>
+  </list>
+  
+  <steps>
+  <title>Nastavení klíče org.gnome.login-screen.logo</title>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-gdm'])"/>
+  <item><p>Vytvořte databázi <sys>gdm</sys> pro celosystémové nastavení v <file>/etc/dconf/db/gdm.d/<var>01-logo</var></file>:</p>
+  <code>[org/gnome/login-screen]
+  logo='<var>/usr/share/pixmaps/logo/greeter-logo.png</var>'
+  </code>
+  <p>Místo <var>/usr/share/pixmaps/logo/greeter-logo.png</var> uveďte cestu k souboru s obrázkem, který chcete použít jako uvítací logo.</p></item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+  </steps>
+
+  <section id="login-logo-not-update">
+  <title>Co když se logo neaktualizovalo?</title>
+
+  <p>Ujistěte se, že jste spustili příkaz <cmd>dconf update</cmd> pro aktualizaci systémové databáze.</p>
+
+  <p>V případě, že se logo neaktualizuje, zkuste restartovat <sys>GDM</sys>.</p>
+  </section>
+
+</page>

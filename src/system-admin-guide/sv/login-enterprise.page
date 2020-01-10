@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="login-enterprise" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="login#management"/>
+    <revision pkgversion="3.12" date="2014-01-28" status="draft"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Använd dina Active Directory- eller IPA-domänautentiseringsuppgifter för att logga in i GNOME.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Använda företagsautentiseringsuppgifter för att logga in i GNOME</title>
+  
+  <p>Om ditt nätverk har en Active Directory- eller IPA-domän tillgänglig, och du har ett domänkonto, kan du använda dina domänautentiseringsuppgifter för att logga in i GNOME.</p>
+  <p>Om maskinen har konfigurerats för domänkonton kan användare logga in i GNOME med sina konton. I inloggningsrutan, skriv in användarnamnet på domänen följt av tecknet <sys>@</sys>, och sedan ditt domännamn. Om exempelvis ditt domännamn är <var>example.com</var> och användarnamnet är <var>Kontonamn</var>, skriv:</p>
+  <screen><input>Kontonamn@example.com</input></screen>
+  <p>I fall där maskinen redan konfigurerats för domänkonton bör du se ett hjälpsamt tips som beskriver inloggningsformatet.</p>
+
+  <section id="enterprise-login-welcome-screens">
+    <title>Använd företagsautentiseringsuppgifter under välkomstskärmar</title>
+    <p>Om du inte ännu har konfigurerat maskinen för företagsautentiseringsuppgifter kan du göra det på <gui>Välkommen</gui>-skärmarna som är en del av programmet <app>GNOME initial konfiguration</app>.</p>
+    <steps>
+    <title>Konfigurera företagsautentiseringsuppgifter</title>
+      <item>
+        <p>Vid välkomstskärmen <gui>Inloggning</gui>, välj <gui>Konfigurera företagsinloggning</gui>.</p>
+      </item>
+      <item>
+        <p>Skriv in namnet på din domän i <gui>Domain</gui>-fältet om det inte redan är ifyllt.</p>
+      </item>
+      <item>
+        <p>Skriv in användare och lösenord för ditt domänkonto i de relevanta fälten.</p>
+      </item>
+      <item>
+        <p>Klicka <gui>Nästa</gui>.</p>
+      </item>
+    </steps>
+    <p>Beroende på hur domänen har konfigurerats kan en ruta dyka upp och efterfråga domänadministratörens namn och lösenord för att fortsätta.</p>
+  </section>
+  <section id="enterprise-login-change-to">
+    <title>Ändra till att använda företagsautentiseringsuppgifter för att logga in i GNOME</title>
+    <p>Om du redan har slutfört initial konfiguration och vill starta ett domänkonto för att logga in i GNOME kan du göra detta från panelen Användare i GNOME-inställningarna.</p>
+  <steps>
+    <title>Konfigurera företagsautentiseringsuppgifter</title>
+    <item>
+      <p>Öppna översiktsvyn <gui href="help:gnome-help/shell-terminology">Aktiviteter</gui> och börja skriva <gui>Användare</gui>.</p>
+    </item>
+    <item>
+      <p>Klicka på <gui>Användare</gui> för att öppna panelen.</p>
+    </item>
+    <item>
+      <p>Klicka på knappen <gui>Lås upp</gui> och skriv in datoradministratörens lösenord.</p>
+    </item>
+    <item>
+      <p>Klicka på <gui>[+]</gui>-knappen i nedre vänstra hörnet av fönstret.</p>
+    </item>
+    <item>
+      <p>Klicka på knappen <gui>Företagsinloggning</gui>.</p>
+    </item>
+    <item>
+      <p>Ange domänen, användarnamnet och lösenordet för ditt företagskonto, och klicka på <gui>Lägg till</gui>.</p>
+   </item>
+  </steps>
+  <p>Beroende på hur din domän har konfigurerats kan en ruta dyka upp och fråga dig om domänadministratörens namn och lösenord för att fortsätta.</p>
+  </section>
+  <section id="enterprise-login-troubleshoot">
+    <title>Problemlösning och avancerad konfiguration</title>
+    <p>Kommandot <cmd>realm</cmd> och dess diverse underkommandon kan användas för problemlösning kring funktionen företagsinloggning. För att se huruvida maskinen har konfigurerats för företagsinloggningar kan du exempelvis köra följande kommando:</p>
+    <screen><output>$ </output><input>realm list</input></screen>
+    <p>Nätverksadministratörer uppmuntras att i förväg ansluta arbetsstationer till en relevant domän. Detta kan göras med kickstartkommandot <cmd>realm join</cmd> eller genom att köra <cmd>realm join</cmd> automatiskt från ett skript.</p>
+  </section>
+  <section id="enterprise-login-more-information">
+     <title>Få mer information</title>
+   <list>
+    <item>
+      <p>Den <link href="http://www.freedesktop.org/software/realmd/docs/">administrativa guiden</link> för realmd tillhandahåller mer detaljerad information om hur funktionen för företagsinloggning kan användas.</p>
+    </item>
+   </list>
+  </section>
+
+</page>

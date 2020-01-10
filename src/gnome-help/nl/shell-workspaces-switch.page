@@ -15,49 +15,47 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Use the workspace selector.</desc>
+    <desc>De werkbladwisselaar gebruiken.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Justin van Steijn</mal:name>
+      <mal:email>justin50@live.nl</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hannie Dumoleyn</mal:name>
+      <mal:email>hannie@ubuntu-nl.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
   </info>
 
  <title>Wisselen tussen werkbladen</title>
 
  <steps>  
- <title>Using the mouse:</title>
+ <title>Met de muis:</title>
  <item>
-    <p if:test="!platform:gnome-classic">Open the
-    <gui xref="shell-introduction#activities">Activities</gui> overview.</p>
-  <p if:test="platform:gnome-classic">At the top left of the screen, click the
-  <gui xref="shell-introduction#activities">Applications</gui> menu and choose 
-  <gui>Activities Overview</gui>.</p>
+    <p if:test="!platform:gnome-classic">Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht.</p>
+  <p if:test="platform:gnome-classic">Klik links bovenaan het scherm op het <gui xref="shell-introduction#activities">Toepassingen</gui>-menu en kies het <gui>Activiteiten</gui>-overzicht.</p>
  </item>
  <item>
-  <p>Click on a workspace in the <link xref="shell-workspaces">workspace
-  selector</link> on the right side of the screen to view the open windows on
-  that workspace.</p>
+  <p>Klik op een werkruimte in de <link xref="shell-workspaces">werkruimtekiezer</link> aan de rechterkant van het scherm om de geopende vensters in die werkruimte te bekijken.</p>
  </item>
  <item>
-  <p>Click on any window thumbnail to activate the workspace.</p>
+  <p>Klik op een vensterminiatuur om de werkruimte te activeren.</p>
  </item>
  </steps>
  
-  <p if:test="platform:gnome-classic">Alternatively, you can switch between
-  workspaces by clicking the workspace identifier at the right-hand side of
-  the window list on the bottom bar and selecting the workspace you want to
-  use from the menu.</p>
+  <p if:test="platform:gnome-classic">U kunt ook wisselen tussen werkruimtes door te klikken op de ID van de werkruimte aan de rechterkant van de vensterlijst op de balk onderaan en in het menu de werkruimte te selecteren die u wilt gebruiken.</p>
 
  <list>
- <title>Using the keyboard:</title>  
+ <title>Via het toetsenbord:</title>  
   <item>
-    <p>Press
-    <keyseq><key xref="keyboard-key-super">Super</key><key>Page Up</key></keyseq>
-    to move to a workspace which is above the current workspace in the
-    workspace selector.</p>
+    <p>Druk op <keyseq><key>Super</key><key>Page Up</key></keyseq> of  <keyseq><key>Ctrl</key><key>Alt</key><key>Up</key></keyseq> om naar het werkblad boven het huidige werkblad in de werkbladselector te gaan.</p>
   </item>
   <item>
-    <p>Press <keyseq><key>Super</key><key>Page Down</key></keyseq> to move to a
-    workspace which is below the current workspace in the workspace selector.
-    </p>
+    <p>Druk op <keyseq><key>Super</key><key>Page Down</key></keyseq> of  <keyseq><key>Ctrl</key><key>Alt</key><key>Down</key></keyseq> om naar het werkblad onder het huidige werkblad in de werkbladwisselaar te gaan.</p>
   </item>
  </list>
-
 
 </page>

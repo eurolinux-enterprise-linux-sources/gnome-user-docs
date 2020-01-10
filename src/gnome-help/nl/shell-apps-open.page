@@ -23,68 +23,50 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Launch apps from the <gui>Activities</gui> overview.</desc>
+    <desc>Toepassingen starten vanuit het <gui>activiteiten</gui>-overzicht.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Justin van Steijn</mal:name>
+      <mal:email>justin50@live.nl</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hannie Dumoleyn</mal:name>
+      <mal:email>hannie@ubuntu-nl.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
   </info>
 
-  <title>Start applications</title>
+  <title>Toepassingen starten</title>
 
-  <p if:test="!platform:gnome-classic">Move your mouse pointer to the
-  <gui>Activities</gui> corner at the top left of the screen to show the
-  <gui xref="shell-introduction#activities">Activities</gui> overview. This is where you
-  can find all of your applications. You can also open the overview by pressing
-  the <key xref="keyboard-key-super">Super</key> key.</p>
+  <p if:test="!platform:gnome-classic">Breng de muiswijzer naar de <gui>Activiteiten</gui>-hoek linksboven van het scherm voor het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht. Hier vindt u al uw toepassingen. U kunt het overzicht ook openen door te drukken op de <key xref="keyboard-key-super">Super</key>-toets.</p>
   
-  <p if:test="platform:gnome-classic">You can start applications from the
-  <gui xref="shell-introduction#activities">Applications</gui> menu at the top
-  left of the screen, or you can use the <gui>Activities</gui> overview by
-  pressing the <key xref="keyboard-key-super">Super</key> key.</p>
+  <p if:test="platform:gnome-classic">U kunt toepassingen starten vanuit het <gui xref="shell-introduction#activities">Toepassingen</gui>-menu links van het scherm, of u kunt het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht gebruiken door te drukken op de <key xref="keyboard-key-super">Super</key>-toets.</p>
 
-  <p>There are several ways of opening an application once you're in the
-  <gui>Activities</gui> overview:</p>
+  <p>Er zijn verschillende manieren om een toepassing te openen vaqnuit het <gui>Activiteiten</gui>-overzicht:</p>
 
   <list>
     <item>
-      <p>Start typing the name of an application - searching begins instantly.
-      (If this doesn't happen, click the search bar at the top of the screen
-      and start typing.) If you don't know the exact name of an application, try
-      to type an related term. Click the application's icon to start it.</p>
+      <p>Begin met het typen van de naam van een toepassing — het zoeken wordt meteen gestart. (Als dit niet het geval is, klik dan op de zoekbalk bovenaan het scherm en begin met typen.) Als u niet precies de naam van de toepassing weet, probeer dan een gerelateerde term te typen. Klik op het pictogram van de toepassing om deze te starten.</p>
     </item>
     <item>
-      <p>Some applications have icons in the <em>dash</em>, the vertical strip
-      of icons on the left-hand side of the <gui>Activities</gui> overview.
-      Click one of these to start the corresponding application.</p>
-      <p>If you have applications that you use very frequently, you can
-      <link xref="shell-apps-favorites">add them to the dash</link>
-      yourself.</p>
+      <p>Sommige toepassingen hebben pictogrammen in de <em>Starter</em>, de verticale strook met pictogrammen aan de linkerkant van het <gui>Activiteiten</gui>-overzicht. Klik op een ervan om de bijbehorende toepassing te starten.</p>
+      <p>Als er toepassingen zijn die u veel gebruikt, kunt u deze zelf <link xref="shell-apps-favorites">toevoegen aan de Starter</link>.</p>
     </item>
     <item>
-      <p>Click the grid button at the bottom of the dash. You will see the
-      frequently used applications if the <gui style="button">Frequent</gui>
-      view is enabled. If you want to run a new application, press the
-      <gui style="button">All</gui> button at the bottom to view all the
-      applications. Press on the application to start it.</p>
+      <p>Klik op het raster onderaan de starter. Als de <gui style="button">Vaak gebruikt</gui>-weergave ingeschakeld is, ziet u de vaak gebruikte toepassingen. Als u een nieuwe toepassing wilt starten klikt u op de knop <gui style="button">Alles</gui> onderaan het scherm waarmee alle toepassingen getoond worden. Klik op de toepassing die u wilt starten.</p>
     </item>
     <item>
-      <p>You can launch an application in a separate
-      <link xref="shell-workspaces">workspace</link> by dragging its icon from
-      the dash, and dropping it onto one of the workspaces on the right-hand
-      side of the screen. The application will open in the chosen
-      workspace.</p>
-      <p>You can launch an application in a <em>new</em> workspace by dragging
-      its icon to the empty workspace at the bottom of the workspace
-      switcher, or to the small gap between two workspaces.</p>
+      <p>U kunt een toepassing starten in een apart <link xref="shell-workspaces">werkblad</link> door het pictogram van de Starter te slepen naar één van de werkbladen aan de rechterkant van het scherm. De toepassing zal in het gekozen werkblad geopend worden.</p>
+      <p>U kunt een toepassing starten in een <em>nieuw</em> werkblad door het pictogram ervan te slepen naar het lege werkblad onderaan de werkbladwisselaar of naar de lege ruimte tussen twee werkbladen.</p>
     </item>
   </list>
 
   <note style="tip">
-    <title>Quickly running a command</title>
-    <p>Another way of launching an application is to press
-    <keyseq><key>Alt</key><key>F2</key></keyseq>, enter its
-    <em>command name</em>, and then press the <key>Enter</key> key.</p>
-    <p>For example, to launch <app>Rhythmbox</app>, press
-    <keyseq><key>Alt</key><key>F2</key></keyseq> and type
-    '<cmd>rhythmbox</cmd>' (without the single-quotes). The name of the app is
-    the command to launch the program.</p>
+    <title>Een opdracht snel uitvoeren</title>
+    <p>Een andere manier om een toepassing te starten is door op <keyseq><key>Alt</key><key>F2</key></keyseq> te drukken, de <em>opdrachtnaam</em> ervan in te voeren en op de <key>Enter</key>-toets te drukken.</p>
+    <p>Om bijvoorbeeld <app>Rhythmbox</app> te starten: druk op <keyseq><key>Alt</key><key>F2</key></keyseq> en typ ‘<cmd>rhythmbox</cmd>’ (zonder de aanhalingstekens). De naam van de toepassing is de opdracht om het programma te starten.</p>
   </note>
 
 </page>

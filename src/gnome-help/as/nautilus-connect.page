@@ -38,7 +38,7 @@ application from the <gui>Activities</gui> overview, and click
 <gui>Other Locations</gui> in the sidebar. The file manager
 will find any computers on your local area network that advertize
 their ability to serve files. If you want to connect to a server
-on the internet, or if you do not see the computer you're looking
+on the internet, or if you do not see the computer you’re looking
 for, you can manually connect to a server by typing in its
 internet/network address.</p>
 
@@ -96,7 +96,8 @@ internet/network address.</p>
     <p><sys>ssh://username@servername.example.com/folder</sys></p>
   </example>
 
-  <p>SSH ব্যৱহাৰ কৰোতে, আপুনি পঠোৱা সকলো তথ্য (আপোনাৰ পাছৱাৰ্ডৰ সৈতে) ইনক্ৰিপ্টেড থাকে যাতে আপোনাৰ নেটৱাৰ্কত থকা অন্য ব্যৱহাৰকাৰীসকলে ইয়াক চাব নোৱাৰে।</p>
+  <p>When using SSH, all the data you send (including your password)
+  is encrypted so that other users on your network can’t see it.</p>
 </item>
 <item>
   <title>FTP (লগিনৰ সৈতে)</title>
@@ -131,9 +132,9 @@ internet/network address.</p>
   <title>WebDAV আৰু সুৰক্ষিত WebDAV</title>
   <p>Based on the HTTP protocol used on the web, WebDAV is sometimes used to
   share files on a local network and to store files on the internet. If the
-  server you're connecting to supports secure connections, you should choose
+  server you’re connecting to supports secure connections, you should choose
   this option. Secure WebDAV uses strong SSL encryption, so that other users
-  can't see your password.</p>
+  can’t see your password.</p>
   <p>A WebDAV URL looks like this:</p>
   <example>
     <p><sys>dav://example.hostname.com/path</sys></p>

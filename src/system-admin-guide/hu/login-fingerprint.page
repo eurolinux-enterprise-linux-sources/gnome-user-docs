@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="login-fingerprint" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="login#management"/>
+    <link type="seealso" xref="dconf"/>
+    <revision pkgversion="3.12" date="2014-06-17" status="candidate"/>
+
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>davidk@gnome.org</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>A felhasználó megakadályozása abban, hogy képes legyen bejelentkezni ujjlenyomat-olvasó használatával.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>ur.balazs@fsf.hu</mal:email>
+      <mal:years>2018.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ujjlenyomat használatával történő bejelentkezés letiltása</title>
+
+  <p>A felhasználók egy ujjlenyomat-olvasóval az ujjlenyomatukat használhatják jelszó helyett a bejelentkezéshez. Az ujjlenyomatos bejelentkezést <link href="help:gnome-help#session-fingerprint">be kell állítania a felhasználónak</link>, mielőtt használható lenne.</p>
+
+  <p>Az ujjlenyomat-olvasók nem mindig megbízhatóak, ezért érdemes lehet letiltani az olvasó használatával történő bejelentkezést biztonsági okokból.</p>
+
+  <steps>
+    <title>Ujjlenyomat-olvasó használatával történő bejelentkezés letiltása:</title>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-user'])"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-user-dir'])"/>
+    <item>
+      <p>Hozza létre az <file>/etc/dconf/db/local.d/00-login</file> kulcsfájlt, hogy információkat biztosítson a <sys>helyi</sys> adatbázisnak.</p>
+      <listing>
+        <title><file>/etc/dconf/db/local.d/00-login</file></title>
+<code>
+# A dconf útvonal megadása
+[org/gnome/login-screen]
+
+# Ujjlenyomat-olvasó letiltása
+enable-fingerprint-authentication=false
+</code>
+      </listing>
+    </item>
+    <item>
+      <p>Azért, hogy megakadályozza a felhasználót a beállítások felülbírálásában, hozza létre az <file>/etc/dconf/db/local.d/locks/login</file> fájlt a következő tartalommal:</p>
+      <listing>
+        <title><file>/etc/dconf/db/local.d/locks/fingerprintreader</file></title>
+<code>
+# A bejelentkezés beállításához használt kulcsok felsorolása
+/org/gnome/login-screen/enable-fingerprint-authentication
+</code>
+      </listing>
+    </item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-logoutin'])"/>
+  </steps>
+
+</page>

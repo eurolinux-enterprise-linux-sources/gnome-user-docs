@@ -50,7 +50,7 @@ application from the <gui>Activities</gui> overview, and click
 <gui>Other Locations</gui> in the sidebar. The file manager
 will find any computers on your local area network that advertize
 their ability to serve files. If you want to connect to a server
-on the internet, or if you do not see the computer you're looking
+on the internet, or if you do not see the computer you’re looking
 for, you can manually connect to a server by typing in its
 internet/network address.</p>
 
@@ -118,7 +118,8 @@ internet/network address.</p>
     <p><sys>ssh://username@servername.example.com/folder</sys></p>
   </example>
 
-  <p>Quando si usa SSH, tutti i dati inviati (inclusa la password iniziale) sono cifrati, in modo che altri utenti sulla rete non riescano a intercettarli.</p>
+  <p>When using SSH, all the data you send (including your password)
+  is encrypted so that other users on your network can’t see it.</p>
 </item>
 <item>
   <title>FTP (con login)</title>
@@ -154,7 +155,11 @@ internet/network address.</p>
 </item>
 <item>
   <title>WebDAV e WebDAV sicuro</title>
-  <p>Basato sul protocollo HTTP, utilizzato largamente sul web, WebDAV è spesso utilizzato per condividere file su una rete locale o per memorizzarli su un server Internet. Se il server a cui si è connessi supporta connessioni cifrate, è meglio selezionare quest'ultima opzione. WebDAV sicuro utilizza un robusto sistema di cifratura SSL per nascondere la password agli altri utenti.</p>
+  <p>Based on the HTTP protocol used on the web, WebDAV is sometimes used to
+  share files on a local network and to store files on the internet. If the
+  server you’re connecting to supports secure connections, you should choose
+  this option. Secure WebDAV uses strong SSL encryption, so that other users
+  can’t see your password.</p>
   <p>A WebDAV URL looks like this:</p>
   <example>
     <p><sys>dav://example.hostname.com/path</sys></p>

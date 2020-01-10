@@ -35,7 +35,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Jiri Grönroos</mal:name>
       <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
-      <mal:years>2012-2016.</mal:years>
+      <mal:years>2012-2018.</mal:years>
     </mal:credit>
   </info>
 
@@ -47,21 +47,14 @@
   <p>If an application or a system component wants to get your attention, a
   notification will be shown at the top of the screen.</p>
 
-  <p>For example, if you get a new chat message or a new email, you will get a
-  notification informing you.</p>
+  <p>Jos esimerkiksi saat uuden pikaviestimen viestin tai sähköpostin, sinulle näytetään ilmoitus.</p>
 
 <!--  <p>To minimize distraction, some notifications first appear as a single line.
   You can move your mouse over them to see their full content.</p>-->
 
-  <p>Other notifications have selectable option buttons. To close one of these
-  notifications without selecting one of its options, click the close
-  button.</p>
+  <p>Joissain ilmoituksissa on valintapainikkeet. Sulkeaksesi tällaisen ilmoituksen valitsematta jotain tarjottua valintaa, napsauta sulkemispainiketta.</p>
 
-<!--  <media type="image" width="500" src="figures/notification-buttons.png"/>-->
-
-  <p>Clicking the close button on some notifications dismisses them. Others,
-  like Rhythmbox or your chat application, will stay hidden in the message 
-  tray.</p>
+  <p>Sulkemispainikkeen napsauttaminen joidenkin ilmoitusten osalla sulkee ne. Jotkin muut ilmoitukset, kuten Rytmilaatikon tai pikaviestimen, pysyvät piilossa viestialueella.</p>
 
 </section>
 
@@ -69,12 +62,7 @@
 
   <title>Viestialue</title>
 
-  <p if:test="!platform:gnome-classic">The message tray gives you a way to get
-  back to your notifications when it is convenient for you. It appears when you
-  click on the clock, or press
-  <keyseq><key xref="keyboard-key-super">Super</key><key>M</key></keyseq>. The
-  message tray contains all the notifications that you have not acted upon or
-  that permanently reside in it.</p>
+  <p if:test="!platform:gnome-classic">Viestialue mahdollistaa ilmoitusten lukemisen silloin, kun se sinulle sopii. Viestialue ilmestyy näkyviin, kun napsautat yläpalkin kelloa, tai painat <keyseq><key xref="keyboard-key-super">Super</key><key>M</key></keyseq>. Viestialue sisältää kaikki ilmoitukset, joihin ei ole reagoinut, tai joiden on tarkoitus olla siinä pysyvästi.</p>
 
   <p if:test="platform:gnome-classic">The message tray gives you a way to get
   back to your notifications when it is convenient for you. It appears when you
@@ -84,10 +72,7 @@
   side of the window list. The message tray contains all the notifications that
   you have not acted upon or that permanently reside in it.</p>
 
-  <p>You can view the notifications by clicking on the message tray items.
-  These are usually messages sent by applications. However, chat notifications
-  are given special treatment, and are represented by the individual contacts
-  who sent you the chat messages.</p>
+  <p>Voit tarkastella yksittäisiä ilmoituksia napsauttamalla niitä viestialueella. Pikaviestinten ilmoituksia kohdellaan erillään muista ilmoituksista, ja niiden osalta näytetään viestien lähettäjät erillään.</p>
 
   <p>You can close the message tray by pressing
   <keyseq><key>Super</key><key>M</key></keyseq> again or <key>Esc</key>.</p>
@@ -98,32 +83,23 @@
 
   <title>Ilmoitusten piilottaminen</title>
 
-  <p>If you're working on something and do not want to be bothered, you can
-  switch off notifications.</p>
+  <p>Jos työskentelet, etkä halua tulla häirityksi, voit poistaa ilmoitukset käytöstä.</p>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Notifications</gui>.</p>
+      <p>Avaa <gui xref="shell-introduction#activities">Toiminnot</gui>-yleisnäkymä ja ala kirjoittamaan <gui>Ilmoitukset</gui>.</p>
     </item>
     <item>
-      <p>Click on <gui>Notifications</gui> to open the panel.</p>
+      <p>Napsauta <gui>Ilmoitukset</gui> avataksesi paneelin.</p>
     </item>
     <item>
-      <p>Switch <gui>Notification Banners</gui> to <gui>OFF</gui>.</p>
+      <p>Aseta <gui>Ponnahdusilmoitukset</gui> <gui>Pois</gui>-tilaan.</p>
     </item>
   </steps>
 
-  <p if:test="!platform:gnome-classic">When switched off, most notifications
-  will not pop up at the top of the screen. <!--Very important notifications, such
-  as when your battery is critically low, will still pop up.--> Notifications will
-  still be available in the message tray when you display it (by clicking on
-  the clock, or by pressing <keyseq><key>Super</key><key>M</key></keyseq>), and
-  they will start popping up again when you switch the toggle to <gui>ON</gui>
-  again.</p>
+  <p if:test="!platform:gnome-classic">Kun ilmoitukset ovat pois käytöstä, ilmoituksia ei näytetä näytön yläosassa. Ilmoitukset ovat silti nähtävissä viestialueella, jonka voit avata yläpalkin kellosta tai painamalla <keyseq><key>Super</key><key>M</key></keyseq>. Ilmoitukset tulevat taas näkyviin, kun asetat valinnan takaisin <gui>Päällä</gui>-tilaan.</p>
 
-  <p>You can also disable or re-enable notifications for individual
-  applications from the <gui>Notifications</gui> panel.</p>
+  <p>Voit poistaa käytöstä tai ottaa takaisin käyttöön ilmoitukset yksittäisten sovellusten kohdalla <gui>Ilmoitukset</gui>-paneelista.</p>
 
   <p if:test="platform:gnome-classic">When switched off, most notifications will
   not pop up at the bottom of the screen. Very important notifications, such as

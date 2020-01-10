@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-initial-check" xml:lang="pl">
+
+  <info>
+    <link type="next" xref="net-wireless-troubleshooting-hardware-info"/>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Współtwórcy wiki dokumentacji Ubuntu</name>
+    </credit>
+    <credit type="author">
+      <name>Projekt dokumentacji GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Upewnij się, że podstawowe ustawienia sieci są poprawne i przygotuj się na następne kroki rozwiązywania problemów.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Rozwiązywanie problemów z siecią bezprzewodową</title>
+  <subtitle>Sprawdź połączenie</subtitle>
+
+  <p>W tym kroku sprawdzimy podstawowe informacje o połączeniu bezprzewodowym, aby upewnić się, że problem z siecią nie jest spowodowany przez względnie prostą przyczynę, np. wyłączenie połączenia bezprzewodowego, i przygotować się na następne kroki rozwiązywania problemów.</p>
+
+  <steps>
+    <item>
+      <p>Upewnij się, że laptop nie jest połączony do sieci <em>przewodowej</em>.</p>
+    </item>
+    <item>
+      <p>Jeśli używany jest zewnętrzny adapter bezprzewodowy (taki jak adapter USB lub karta PCMCIA podłączana do laptopa), to upewnij się, że jest dobrze podłączony do właściwego gniazda na komputerze.</p>
+    </item>
+    <item>
+      <p>Jeśli karta bezprzewodowa jest <em>w środku</em> komputera, to upewnij się, że przełącznik sieci bezprzewodowych jest włączony (jeśli komputer go ma). Laptopy często mają przełączniki, których można użyć naciskając kombinację klawiszy.</p>
+    </item>
+    <item>
+      <p>Kliknij obszar stanu systemu na górnym pasku i wybierz <gui>Wi-Fi</gui>, a następnie <gui>Ustawienia Wi-Fi</gui>. Upewnij się, że <gui>Wi-Fi</gui> jest ustawione na <gui>|</gui> (włączone). Sprawdź także, czy <link xref="net-wireless-airplane">tryb samolotowy</link> jest <em>wyłączony</em>.</p>
+    </item>
+    <item>
+      <p>Otwórz terminal, wpisz <cmd>nmcli device</cmd> i naciśnij klawisz <key>Enter</key>.</p>
+      <p>Zostaną wyświetlone informacje o interfejsach sieciowych i stanie połączenia. Przejrzyj listę informacji i zobacz, czy jest na niej element związany z adapterem sieci bezprzewodowej. Jeśli stan to <code>połączono</code>, to adapter działa i jest połączony z routerem bezprzewodowym.</p>
+    </item>
+  </steps>
+
+  <p>Jeśli połączono z routerem bezprzewodowym, ale nadal nie ma dostępu do Internetu, to router może nie być poprawnie skonfigurowany, albo dostawca Internetu ma problemy techniczne. Przejrzyj podręczniki konfiguracji routera i dostawcy Internetu, aby upewnić się, że ustawienia są poprawne, lub skontaktuj się z dostawcą po pomoc.</p>
+
+  <p>Jeśli informacje z polecenia <cmd>nmcli device</cmd> nie wskazują, że połączono z siecią, to kliknij przycisk <gui>Następna</gui>, aby przejść do następnej części podręcznika rozwiązywania błędów.</p>
+
+</page>

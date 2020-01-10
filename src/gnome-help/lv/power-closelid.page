@@ -9,6 +9,7 @@
     <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
     <revision pkgversion="3.10" date="2013-11-08" status="review"/>
     <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.26" date="2017-09-30" status="candidate"/>
 
     <credit type="author">
       <name>GNOME dokumentācijas projekts</name>
@@ -30,7 +31,7 @@
 
   <title>Kāpēc dators izslēdzas, aizverot tā vāku?</title>
 
-  <p>Aizverot klēpjdatora vāku, tas <link xref="power-suspend"><em>iesnaudīsies</em></link>, lai ietaupītu enerģiju. Tātad dators īstenība nav izslēgts, tikai "iemidzis". Jūs varat to atmodināt, atverot vāku. Dažiem datoriem būs arī jānospiež peles poga vai kāds tastatūras taustiņš. Ja arī tas nelīdz, spiediet ieslēgšanas pogu.</p>
+  <p>Aizverot klēpjdatora vāku, tas <link xref="power-suspend"><em>iesnaudīsies</em></link>, lai ietaupītu enerģiju. Tātad dators īstenība nav izslēgts, tikai “iemidzis”. Jūs varat to atmodināt, atverot vāku. Dažiem datoriem būs arī jānospiež peles poga vai kāds tastatūras taustiņš. Ja arī tas nelīdz, spiediet ieslēgšanas pogu.</p>
 
   <p>Daži datori nespēj pareizi iesnausties, parasti tāpēc, ka to aparatūrai trūkst operētājsistēmas atbalsta (piemēram, tai ir nepilnīgi draiveri). Tad dators var neatmosties, kad atver vāku. Jūs varat mēģināt <link xref="power-suspendfail">atrisināt iesnaušanās problēmu</link>, vai arī atslēgt automātisko iesnaušanos, kad aizver vāku.</p>
 
@@ -42,16 +43,13 @@
   </note>
 
   <note style="important">
-    <p>You need to have the <app>Tweak Tool</app> installed on your computer to
-    change this setting.</p>
+    <p>Jābūt uzinstalētai <app>Piedarei</app>, lai mainītu šo iestatījumu.</p>
     <if:if xmlns:if="http://projectmallard.org/if/1.0/" test="action:install">
-      <p><link style="button" action="install:gnome-tweak-tool">Install
-      <app>Tweak Tool</app></link></p>
+      <p><link style="button" action="install:gnome-tweak-tool">Instalēt <app>Piedari</app></link></p>
     </if:if>
   </note>
 
-  <p>If you do not want the computer to suspend when you close the lid, you can
-  change the setting for that behavior.</p>
+  <p>Ja automātiskā iesnaušanās, aizverot vāku, ir nevēlama, jūs varat izmainīt ar šo uzvedību saistītos iestatījumus. Jums būs jāievada <link xref="user-admin-change">administratora parole</link>, lai mainītu šos iestatījumus.</p>
 
   <note style="warning">
     <p>Kad izmainīts šis iestatījums, esiet uzmanīgi. Daži klēpjdatori var pārkarst, ja tos atstāj strādāt ar aizvērtu vāku, it īpaši somā vai līdzīgā noslēgtā telpā.</p>
@@ -59,19 +57,19 @@
 
   <steps>
     <item>
-      <p>Atveriet <gui xref="shell-introduction#activities">Aktivitāšu</gui> pārskatu un sāciet rakstīt <gui>Piedares rīks</gui>.</p>
+      <p>Atveriet <gui xref="shell-introduction#activities">Aktivitāšu</gui> pārskatu un sāciet rakstīt <gui>Piedare</gui>.</p>
     </item>
     <item>
-      <p>Spiediet <gui>Piedares rīks</gui>, lai atvērtu lietotni.</p>
+      <p>Spiediet <gui>Piedare</gui>, lai atvērtu lietotni.</p>
     </item>
     <item>
       <p>Spiediet <gui>Barošanas</gui> cilni.</p>
     </item>
     <item>
-      <p>Switch <gui>Don't suspend on lid close</gui> to <gui>ON</gui>.</p>
+      <p>Pārslēdziet <gui>Iesnaudināt, kad ir aizvērts klēpjdatora vāks</gui> uz <gui>◯</gui>.</p>
     </item>
     <item>
-      <p>Aizveriet <gui>Piedares rīka</gui> logu.</p>
+      <p>Aizveriet <gui>Piedares</gui> logu.</p>
     </item>
   </steps>
 

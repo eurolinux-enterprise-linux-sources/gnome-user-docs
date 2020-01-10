@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="dconf-custom-defaults" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="setup"/>
+    <link type="seealso" xref="dconf-profiles"/>
+    <link type="seealso" xref="dconf-lockdown"/>
+    <link type="seealso" xref="dconf"/>
+    <revision pkgversion="3.6" version="0.1" date="2012-05-21" status="draft"/>
+
+    <credit type="author copyright">
+      <name>Ryan Lortie</name>
+      <email>desrt@desrt.ca</email>
+      <years>2012</years>
+    </credit>
+    <credit type="author copyright">
+      <name>Jeremy Bicha</name>
+      <email>jbicha@ubuntu.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="author copyright">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Jana Svarova</name>
+      <email>jana.svarova@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Defina configurações padrões para todo o sistema usando perfis <sys its:translate="no">dconf</sys>.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Personalizando valores padrões para configurações de sistema</title>
+
+  <!-- TODO: reveiw against dconf-lockdown.page -->
+
+  <p>Configurações padrões para todo o sistema podem ser definidas fornecendo um padrão para a chave em um perfil <sys its:translate="no">dconf</sys>. Esses padrões podem ser sobrepostos pelo usuário.</p>
+
+<section id="example">
+  <title>Definindo um valor padrão</title>
+
+  <p>Para definir um valor padrão para uma chave, o perfil de <sys>user</sys> deve existir e o valor da chave deve ser adicionada ao banco de dados de <sys its:translate="no">dconf</sys>.</p>
+
+  <steps>
+    <title>Um exemplo demonstrando como definir o plano de fundo padrão</title>
+    <item>
+      <p>Crie o perfil <file its:translate="no">user</file>:</p>
+      <listing its:translate="no">
+        <title><file>/etc/dconf/profile/user</file></title>
+        <code>user-db:user
+system-db:local</code>
+      </listing>
+      <p><input its:translate="no">local</input> é o nome de um banco de dados <sys its:translate="no">dconf</sys>.</p>
+    </item>
+    <item>
+      <p>Crie um <em>arquivo-chave</em> para o banco de dados <input its:translate="no">local</input> que contenha as configurações padrões:</p>
+      <listing its:translate="no">
+        <title><file>/etc/dconf/db/local.d/01-background</file></title>
+<code># <span its:translate="yes">caminho dconf</span>
+[org/gnome/desktop/background]
+
+# <span its:translate="yes">nomes de chaves dconf e seus valores correspondentes</span>
+picture-uri='file:///usr/local/share/backgrounds/wallpaper.jpg'
+picture-options='scaled'
+primary-color='000000'
+secondary-color='FFFFFF'</code>
+      </listing>
+    </item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+  </steps>
+
+  <note>
+    <p>Quando o perfil <sys its:translate="no">user</sys> for criado ou alterado, o usuário precisará encerrar a sessão e iniciá-la novamente para que as alterações sejam aplicadas.</p>
+  </note>
+
+</section>
+
+</page>

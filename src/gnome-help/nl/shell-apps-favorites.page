@@ -24,40 +24,41 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Add (or remove) frequently-used program icons on the dash.</desc>
+    <desc>Veelgebruikte programmapictogrammen toevoegen aan (of verwijderen uit) de Starter.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Justin van Steijn</mal:name>
+      <mal:email>justin50@live.nl</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hannie Dumoleyn</mal:name>
+      <mal:email>hannie@ubuntu-nl.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
   </info>
 
-  <title>Pin your favorite apps to the dash</title>
+  <title>Zet uw favoriete toepassingen op de Starter</title>
 
-  <p>To add an application to the <link xref="shell-introduction#activities">dash</link>
-  for easy access:</p>
+  <p>Om een toepassing toe te voegen aan de <link xref="shell-introduction#activities">Starter</link> voor snelle toegang:</p>
 
   <steps>
     <item>
-      <p if:test="!platform:gnome-classic">Open the
-      <gui xref="shell-introduction#activities">Activities</gui> overview by
-      clicking <gui>Activities</gui> at the top left of the screen</p>
-      <p if:test="platform:gnome-classic">Click the
-      <gui xref="shell-introduction#activities">Applications</gui> menu at the
-      top left of the screen and choose the <gui>Activities Overview</gui> item
-      from the menu.</p></item>
+      <p if:test="!platform:gnome-classic">Open het  <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht door te klikken op <gui>Activities</gui> aan de linker-bovenkant van het scherm.</p>
+      <p if:test="platform:gnome-classic">Klik op het <gui xref="shell-introduction#activities">Toepassingen</gui>-menu in de linkerbovenhoek van het scherm en kies het onderdeel <gui>Activiteitenoverzicht</gui> uit het menu.</p></item>
     <item>
-      <p>Click the grid button in the dash and find the application you want to
-      add.</p>
+      <p>Klik op de rasterknop in de starter en zoek de toepassing die u wilt toevoegen.</p>
     </item>
     <item>
-      <p>Right-click the application icon and select <gui>Add to
-      Favorites</gui>.</p>
-      <p>Alternatively, you can click-and-drag the icon into the dash.</p>
+      <p>Klik met de rechtermuisknop op het pictogram van de toepassing en kies <gui>Toevoegen aan favorieten</gui>.</p>
+      <p>U kunt ook het pictogram naar de starter slepen.</p>
     </item>
   </steps>
 
-  <p>To remove an application icon from the dash, right-click the application
-  icon and select <gui>Remove from Favorites</gui>.</p>
+  <p>Om een toepassingspictogram uit de Starter te verwijderen, klik met rechts op het toepassingspictogram en selecteer <gui>Uit favorieten verwijderen</gui>.</p>
 
-  <note style="tip" if:test="platform:gnome-classic"><p>Favorite applications
-    also appear in the <gui>Favorites</gui> section of the
-    <gui xref="shell-introduction#activities">Applications</gui> menu.</p>
+  <note style="tip" if:test="platform:gnome-classic"><p>Favoriete toepassingen verschijnen ook in de sectie <gui>Favorieten</gui> van het <gui xref="shell-introduction#activities">Toepassingen</gui>-menu.</p>
   </note>
 
 </page>

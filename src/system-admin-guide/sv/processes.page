@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" id="processes" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="software#management"/>
+    <revision pkgversion="3.12" date="2014-06-17" status="review"/>
+
+    <credit type="author copyright">
+      <name>Matthias Clasen</name>
+      <email>matthias.clasen@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Aruna Sankaranarayanan</name>
+      <email>aruna.evam@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+
+    <desc>Vilka processer kan jag förvänta mig se köras i en ren GNOME-session utan några förändringar?</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Typiska processer</title>
+
+  <p>I en oförändrad <app>GNOME</app>-session körs program som kallas <link href="man:daemon"><app>demoner</app></link> på systemet som bakgrundsprocesser. Du bör hitta följande demoner vilka körs som standard:</p>
+
+   <terms>
+     <item>
+       <title>dbus-daemon</title>
+       <p><app>dbus-daemon</app> tillhandahåller en meddelandebussdemon vilken program kan använda för att utbyta meddelanden med varandra. <app>dbus-daemon</app> implementeras med D-Bus-biblioteket vilket tillhandahåller ett-till-ett-kommunikation mellan vilket par program som helst.</p>
+       <p>För mer information, se manualsidan för <link href="man:dbus-daemon">dbus-daemon</link>.</p>
+     </item>
+     <item>
+       <title>gnome-keyring-daemon</title>
+       <p>Autentiseringsuppgifter så som namn och lösenord för diverse program och webbplatser lagras på ett säkert sätt med <app>gnome-keyring-daemon</app>. Denna information skrivs in i en krypterad fil som kallas nyckelringsfilen och sparas i användarens hemkatalog.</p>
+       <p>För mer information, se manualsidan för <link href="man:gnome-keyring-daemon">gnome-keyring-daemon</link>.</p>
+     </item>
+     <item>
+       <title>gnome-session</title>
+       <p>Programmet <app>gnome-session</app> ansvarar för att köra skrivbordsmiljön GNOME med hjälp av en displayhanterare som <app>GDM</app>, <app>LightDM</app> eller <app>NODM</app>. Standardsessionen för användaren ställs in då systemet installeras av systemadministratören. <app>gnome-session</app> läser vanligen in den senaste session som kördes utan problem på systemet.</p>
+       <p>För mer information, se manualsidan för <link href="man:gnome-session">gnome-session</link>.</p>
+     </item>
+     <item>
+       <title>gnome-settings-daemon</title>
+       <p><app>gnome-settings-daemon</app> hanterar inställningar för en GNOME-session och för alla program som körs i sessionen.</p>
+       <p>För mer information, se manualsidan för <link href="man:gnome-settings-daemon">gnome-settings-daemon</link>.</p>
+     </item>
+     <item>
+       <title>gnome-shell</title>
+       <p><app>gnome-shell</app> tillhandahåller kärnfunktionaliteten för GNOME:s användargränssnitt så som att köra program, bläddra i katalogen, visa filer och så vidare.</p>
+       <p>För mer information, se manualsidan för <link href="man:gnome-shell">gnome-shell</link>.</p>
+     </item>
+     <item>
+       <title>pulseaudio</title>
+       <p><app>PulseAudio</app> är en ljudserver för Linux-, POSIX- och Windows-system som låter program mata ut ljud via <app>Pulseaudio</app>-demonen.</p>
+       <p>För mer information, se manualsidan för <link href="man:pulseaudio">pulseaudio</link>.</p>
+     </item>
+   </terms>
+
+  <p>Beroende på användarens konfiguration kan du bland annat se några av de följande:</p>
+   <list ui:expanded="false">
+   <title>Ytterligare processer</title>
+     <item><p><app>at-spi2-dbus-launcher</app></p></item>
+     <item><p><app>at-spi2-registryd</app></p></item>
+     <item><p><app>gnome-screensaver</app></p></item>
+     <item><p><app>gnome-shell-calendar-server</app></p></item>
+     <item><p><app>goa-daemon</app></p></item>
+     <item><p><app>gsd-printer</app></p></item>
+     <item><p>diverse <app>Evolution</app>-fabriksprocesser</p></item>
+     <item><p>diverse <app>GVFS</app>-processer</p></item>
+   </list>
+
+</page>

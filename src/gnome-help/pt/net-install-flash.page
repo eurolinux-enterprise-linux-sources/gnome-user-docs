@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-install-flash" xml:lang="pt">
+
+  <info>
+    <link type="guide" xref="net-browser"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Phil Bulh</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Pode precisar instalar Flash para poder ver lugares site como Youtube, que mostra vídeos e páginas site interativas.</desc>
+  </info>
+
+  <title>Instalar o complemento Flash</title>
+
+  <p><app>Flash</app> is a <em>plug-in</em> for your web browser that allows
+  you to watch videos and use interactive web pages on some websites. Some
+  websites won’t work without Flash.</p>
+
+  <p>Se não tem Flash instalado, é provável que veja uma mensagem que lhe diz isto quando visite um lugar site que o precisa. Flash está disponível como descarga livre (mas não é de codigo aberto) para a maioria de navegadores site. A maioria das distribuições GNU/Linux têm uma versão de Flash que pode instalar também através de seu instalador de software (gestor de pacotes).</p>
+
+  <steps>
+    <title>Se Flash está disponível no instalador de software:</title>
+    <item>
+      <p>Abra o aplicação de instalação de software e procure <input>flash</input>.</p>
+    </item>
+    <item>
+      <p>Procure o <gui>Complemento Adobe Flash</gui>, <gui>Adobe Flash Player</gui> ou similar e carregue para instalá-lo.</p>
+    </item>
+    <item>
+      <p>Se tem alguma janela do navegador aberta, feche-a e volte a abrí-la. O navegador deve dar-se conta de que Flash está instalado quando se abra de novo e agora deveria ser capaz de ver lugares site que usem Flash.</p>
+    </item>
+  </steps>
+
+  <steps>
+    <title>Se Flash <em>não está</em> disponível no instalador de software:</title>
+    <item>
+      <p>Vá ao <link href="http://get.adobe.com/flashplayer">sitio site de descarga de Flash Player</link>. Seu navegador e sistema operativo deveria detetar-se automaticamente.</p>
+    </item>
+    <item>
+      <p>Click where it says <gui>Select version to download</gui> and choose
+      the type of software installer that works for your Linux distribution. If
+      you don’t know which to use, choose the <file>.tar.gz</file> option.</p>
+    </item>
+    <item>
+      <p>Leia as <link href="http://kb2.adobe.com/cps/153/tn_15380.html">instruções de instalação de Flash</link> para aprender como instalar para seu navegador da Internet</p>
+    </item>
+  </steps>
+
+<section id="alternatives">
+  <title>Alternativas a Flash de codigo aberto</title>
+
+  <p>Existe um punhado de alternativas livres, de codigo aberto, disponíveis para Flash. Estas tendem a trabalhar melhor que o complemento Flash em alguns aspetos (por exemplo, na melhor manipulação da reprodução de som), mas pior em outros (por exemplo, por não ser capaz de mostrar algumas das páginas em Flash mais complicado no site).</p>
+
+  <p>Pode tentar utilizar um deles se não está satisfeito com o reprodutor de Flash, ou se quer utilizar tanto software de codigo aberto como seja possível na computador. Aqui estão algumas das opções:</p>
+
+  <list style="compact">
+    <item>
+      <p>LightSpark</p>
+    </item>
+    <item>
+      <p>Gnash</p>
+    </item>
+  </list>
+
+</section>
+
+</page>

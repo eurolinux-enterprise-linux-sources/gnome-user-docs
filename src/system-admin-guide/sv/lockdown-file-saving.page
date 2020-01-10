@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="lockdown-file-saving" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="user-settings#lockdown"/>
+    <link type="seealso" xref="dconf-lockdown"/>
+    <revision pkgversion="3.11" date="2014-10-14" status="candidate"/>
+
+    <credit type="author copyright">
+      <name>Jana Svarova</name>
+      <email>jana.svarova@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+    <desc>Förhindra användaren från att spara filer till disk.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+  
+  <title>Inaktivera filsparande</title>
+
+  <p>Du kan inaktivera dialogrutorna <gui>Spara</gui> och <gui>Spara som</gui>. Detta kan vara användbart om du ger tillfällig åtkomst till en användare eller om du inte vill att användaren ska spara filer på datorn.</p>
+
+  <note style="warning">
+    <p>Denna funktion kommer endast att fungera i program som stöder den! Det är inte alla GNOME-program och program från tredje part som har denna funktion aktiverad. Dessa ändringar kommer inte att påverka program som inte stöder denna funktion.</p>
+  </note>
+
+  <steps>
+    <title>Inaktivera filsparande</title>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-user'])"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-user-dir'])"/>
+    <item>
+      <p>Skapa nyckelfilen <file>/etc/dconf/db/local.d/00-filesaving</file> för att tillhandahålla information åt databasen <sys>local</sys>.</p>
+      <listing>
+        <title><file>/etc/dconf/db/local.d/00-filesaving</file></title>
+<code>
+# Ange dconf-sökvägen
+[org/gnome/desktop/lockdown]
+
+# Förhindra användaren från att spara filer till disk
+disable-save-to-disk=true
+</code>
+     </listing>
+    </item>
+    <item>
+      <p>För att förhindra användaren från att åsidosätta dessa inställningar, skapa filen <file>/etc/dconf/db/local.d/locks/filesaving</file> med följande innehåll:</p>
+      <listing>
+        <title><file>/etc/dconf/db/local.db/locks/filesaving</file></title>
+<code>
+# Lås inställningar för filsparande
+/org/gnome/desktop/lockdown/disable-save-to-disk
+</code>
+      </listing>
+    </item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-logoutin'])"/>
+  </steps>
+
+</page>

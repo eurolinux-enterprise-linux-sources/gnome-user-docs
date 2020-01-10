@@ -20,7 +20,7 @@
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
     <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
 
-    <desc>Verificare la presenza di problemi sul disco fisso per assicurarsi che sia in buono stato.</desc>
+    <desc>Test your hard disk for problems to make sure that it’s healthy.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -42,11 +42,11 @@
  <title>Controllare il disco fisso</title>
   <p>Per verificare lo stato di salute dei dischi fissi, questi hanno uno strumento integrato chiamato <app>SMART</app> (Self-Monitoring, Analysis, and Reporting Technology) che controlla continuamente la presenza di potenziali problemi. SMART, inoltre, avvisa l'utente se il disco si sta per rompere, aiutando a prevenire la perdita di dati importanti.</p>
 
-  <p>Although SMART runs automatically, you can also check your disk's
+  <p>Although SMART runs automatically, you can also check your disk’s
  health by running the <app>Disks</app> application:</p>
 
 <steps>
- <title>Check your disk's health using the Disks application</title>
+ <title>Check your disk’s health using the Disks application</title>
 
   <item>
     <p>Open <app>Disks</app> from the <gui>Activities</gui> overview.</p>
@@ -57,7 +57,7 @@
   </item>
   <item>
     <p>Click the menu button and select <gui>SMART Data &amp; Self-Tests…</gui>.
-    The <gui>Overall Assessment</gui> should say "Disk is OK".</p>
+    The <gui>Overall Assessment</gui> should say “Disk is OK”.</p>
   </item>
   <item>
     <p>See more information under <gui>SMART Attributes</gui>, or click the
@@ -70,14 +70,19 @@
 
 <section id="disk-not-healthy">
 
- <title>Cosa fare se il disco non è in buono stato?</title>
+ <title>What if the disk isn’t healthy?</title>
 
   <p>Even if the <gui>Overall Assessment</gui> indicates that the disk
-  <em>isn't</em> healthy, there may be no cause for alarm. However, it's better
+  <em>isn’t</em> healthy, there may be no cause for alarm. However, it’s better
   to be prepared with a <link xref="backup-why">backup</link> to prevent data
   loss.</p>
 
-  <p>Se lo stato mostra "Pre-fail", il disco è tuttora in buono stato, ma sono stati rilevati segni di usura che potrebbero portare a errori futuri. Se il disco fisso (oppure il computer) ha qualche anno, questo messaggio potrebbe apparire in alcuni controlli: <link xref="backup-how">eseguire il backup dei dati importanti regolarmente</link> e verificare periodicamente se lo stato del disco peggiora.</p>
+  <p>If the status says “Pre-fail”, the disk is still reasonably healthy but
+ signs of wear have been detected which mean it might fail in the near future.
+ If your hard disk (or computer) is a few years old, you are likely to see
+ this message on at least some of the health checks. You should
+ <link xref="backup-how">backup your important files regularly</link> and check
+ the disk status periodically to see if it gets worse.</p>
 
   <p>Nel caso in cui lo stato peggiori, potrebbe essere utile portare il disco fisso/computer da un professionista per ulteriori diagnosi o per la riparazione.</p>
 

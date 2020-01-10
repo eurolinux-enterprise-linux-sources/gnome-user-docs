@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="lockdown-online-accounts" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="user-settings#lockdown"/>
+    <revision pkgversion="3.14" date="2015-05-04" status="draft"/>
+    <link type="seealso" xref="dconf-lockdown"/>
+    
+    <credit type="author copyright">
+      <name>Jana Svarova</name>
+      <email>jana.svarova@gmail.com</email>
+      <years>2015</years>
+    </credit>
+
+   <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Néhány vagy az összes online fiók engedélyezése vagy letiltása.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>ur.balazs@fsf.hu</mal:email>
+      <mal:years>2018.</mal:years>
+    </mal:credit>
+  </info>
+  <title>Online fiókok engedélyezése vagy letiltása</title>
+
+  <p>A <app>GNOME online fiókok</app> (GOA) használhatók a személyes hálózati fiókok beállításához, amelyek azután automatikusan integrálódnak a GNOME asztali környezetbe és az alkalmazásokba. A felhasználó hozzáadhatja az online fiókjait, mint például Google, Facebook, Flickr, ownCloud, stb. az <app>Online fiókok</app> alkalmazáson keresztül.</p>
+
+  <p>A rendszer adminisztrátoraként a következőket teheti:</p>
+  <list>
+    <item><p>az összes online fiók engedélyezését;</p></item>
+    <item><p>néhány online fiók szelektív engedélyezését;</p></item>
+    <item><p>az összes online fiók letiltását.</p></item>
+  </list>
+
+  <section id="whitelist-goa">
+    <title>Online fiókok beállítása</title>
+<steps>
+  <item><p>Győződjön meg arról, hogy a <sys>gnome-online-accounts</sys> csomag telepítve van-e a rendszerre.</p>
+  </item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-user'])"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-user-dir'])"/>
+  <item>
+  <p>Hozza létre az <file>/etc/dconf/db/local.d/00-goa</file> kulcsfájlt, hogy információkat biztosítson a <sys>helyi</sys> adatbázisnak. A fájl a következő beállítást tartalmazza:</p>
+   <list>
+   <item><p>Csak néhány szolgáltató szelektív engedélyezéséhez:</p>
+  <screen>[org/gnome/online-accounts]
+whitelisted-providers= ['google', 'facebook']</screen>
+  </item>
+   <item><p>Az összes szolgáltató letiltásához:</p>
+   <screen>[org/gnome/online-accounts]
+whitelisted-providers= []</screen></item>
+  <item><p>Az összes elérhető szolgáltató engedélyezéséhez:</p>
+  <screen>[org/gnome/online-accounts]
+whitelisted-providers= ['all']</screen></item>
+  </list>
+      </item>
+      <item>
+      <p>Azért, hogy megakadályozza a felhasználót a beállítások felülbírálásában, hozza létre az <file>/etc/dconf/db/local.d/locks/goa</file> fájlt a következő tartalommal:</p>
+      <listing>
+        <title><file>/etc/dconf/db/local.db/locks/goa</file></title>
+<code>
+# Szolgáltatók listájának zárolása, amelyeknek engedélyezett a betöltés
+/org/gnome/online-accounts/whitelisted-providers
+</code>
+      </listing>
+    </item>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-logoutin'])"/>
+</steps>
+</section>
+</page>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="login-userlist-disable" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="login#appearance"/>
+    <revision pkgversion="3.11" date="2014-01-29" status="draft"/>
+    <revision pkgversion="3.14" date="2014-06-17" status="review"/>
+
+    <credit type="author copyright">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Den Benutzer zwingen, seinen Namen im Anmeldebildschirm einzugeben.</desc>
+   
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Deaktivieren der Benutzerliste</title>
+
+  <p>Sie können die im Anmeldebildschirm angezeigte Benutzerliste durch Setzen des GSettings-Schlüssels <sys>org.gnome.login-screen.disable-user-list</sys> deaktivieren.</p>
+  <p>Wenn die Benutzerliste deaktiviert ist, müssen Benutzer an der Eingabeaufforderung Benutzernamen und Passwort eingeben, um sich anzumelden.</p>
+  <steps>
+    <title>Setzen des Schlüssels org.gnome.login-screen.disable-user-list</title>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-gdm'])"/>
+    <item>
+      <p>Erstellen Sie eine <sys>gdm</sys>-Schlüsseldatei für systemweite Einstellungen in <file>/etc/dconf/db/gdm.d/00-login-screen</file>:</p>
+        <code>[org/gnome/login-screen]
+# Keine Benutzerliste anzeigen
+disable-user-list=true
+</code>
+    </item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+  </steps>
+
+</page>

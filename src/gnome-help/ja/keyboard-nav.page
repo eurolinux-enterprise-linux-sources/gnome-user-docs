@@ -27,6 +27,8 @@
        <email>kittykat3756@gmail.com</email>
     </credit>
 
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
     <desc>マウスなしでアプリケーションやデスクトップを使います。</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -93,7 +95,6 @@
     <td><p>矢印キー</p></td>
     <td>
       <p>ひとつのコントロール内のアイテム間、あるいは関連するコントロール間でフォーカスを移動します。ツールバーのボタンにフォーカスしたり、リストビューやアイコンビューのアイテムを選択したり、ラジオボタンのグループからどれかを選択したり、などの用途に矢印キーを使用します。</p>
-      <p>ツリービューでは、左右の矢印キーで、サブアイテムを持つアイテムの折りたたみや展開を行います。</p>
     </td>
   </tr>
   <tr>
@@ -103,6 +104,10 @@
   <tr>
     <td><p><keyseq><key>Shift</key>矢印キー</keyseq></p></td>
     <td><p>リストビューあるいはアイコンビューでは、現在選択中のアイテムから新規にフォーカスしたアイテムまで、その範囲に位置するアイテムをすべて選択します。</p></td>
+    <td><p>In a tree view, items that have children can be expanded or collapsed,
+    to show or hide their children: expand by pressing
+    <keyseq><key>Shift</key><key>→</key></keyseq>, and collapse by
+    pressing <keyseq><key>Shift</key><key>←</key></keyseq>.</p></td>
   </tr>
   <tr>
     <td><p><key>Space</key></p></td>

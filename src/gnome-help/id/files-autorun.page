@@ -13,7 +13,7 @@
     <revision pkgversion="3.18" date="2015-09-28" status="candidate"/>
 
     <credit type="author">
-      <name>Projek Dokumentasi GNOME</name>
+      <name>Proyek Dokumentasi GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="editor">
@@ -36,24 +36,26 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Andika Triwidada</mal:name>
       <mal:email>andika@gmail.com</mal:email>
-      <mal:years>2011, 2012, 2013, 2014.</mal:years>
+      <mal:years>2011-2014, 2017.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ahmad Haris</mal:name>
+      <mal:email>ahmadharis1982@gmail.com</mal:email>
+      <mal:years>2017.</mal:years>
     </mal:credit>
   </info>
 
   <!-- TODO: fix bad UI strings, then update help -->
   <title>Buat aplikasi untuk perangkat atau disc</title>
 
-  <p>You can have an application automatically start when you plug in a device
-  or insert a disc or media card. For example, you might want your photo
-  organizer to start when you plug in a digital camera. You can also turn this
-  off, so that nothing happens when you plug something in.</p>
+  <p>Anda dapat memiliki aplikasi secara otomatis dimulai ketika Anda pasang di perangkat atau memasukkan disk atau media card. Sebagai contoh, Anda mungkin ingin organizer foto Anda untuk memulai ketika Anda pasang di kamera digital. Anda juga dapat mematikan ini, sehingga tidak ada yang terjadi ketika Anda pasang sesuatu di.</p>
 
   <p>Untuk memutuskan aplikasi mana yang mesti mulai berjalan ketika Anda menancapkan berbagai perangkat:</p>
 
 <steps>
   <item>
-    <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-    start typing <gui>Details</gui>.</p>
+    <p>Buka ringkasan <gui xref="shell-introduction#activities">Aktivitas</gui> dan mulai mengetik <gui>Rincian</gui>.</p>
   </item>
   <item>
     <p>Klik pada <gui>Rincian</gui> untuk membuka panel.</p>
@@ -63,24 +65,15 @@
   </item>
   <item>
     <p>Temukan tipe media atau perangkat yang Anda inginkan, lalu pilih suatu aplikasi atau aksi bagi tipe media itu. Lihat di bawah bagi suatu penjelasan dari tipe-tipe media dan perangkat yang berbeda.</p>
-    <p>Instead of starting an application, you can also set it so that the
-    device will be shown in the file manager, with the <gui>Open folder</gui>
-    option. When that happens, you will be asked what to do, or nothing will
-    happen automatically.</p>
+    <p>Sebagai pengganti dari mulai menjalankan suatu aplikasi, Anda juga dapat menatanya sehingga perangkat akan ditampilkan dalam pengelola berkas, dengan opsi <gui>Buka folder</gui>. Ketika itu terjadi, Anda akan ditanyai apa yang akan dilakukan, atau tak ada apapun yang akan terjadi secara otomatis.</p>
   </item>
   <item>
-    <p>If you do not see the device or media type that you want to change in
-    the list (such as Blu-ray discs or E-book readers), click <gui>Other
-    Media…</gui> to see a more detailed list of devices. Select the type of
-    device or media from the <gui>Type</gui> drop-down and the application or
-    action from the <gui>Action</gui> drop-down.</p>
+    <p>Bila Anda tak melihat tipe media atau perangkat yang ingin Anda ubah dalam daftar (seperti misalnya cakram Blu-ray atau pembaca E-book), klik <gui>Media Lain...</gui> untuk melihat suatu daftar perangkat yang lebih terperinci. Pilih tipe perangkat atau media dari drop-down <gui>Tipe</gui> dan aplikasi atau aksi dari drop-down <gui>Aksi</gui>.</p>
   </item>
 </steps>
 
   <note style="tip">
-    <p>If you do not want any applications to be opened automatically, whatever
-    you plug in, select <gui>Never prompt or start programs on media
-    insertion</gui> at the bottom of the <gui>Details</gui> window.</p>
+    <p>Bila Anda tak ingin aplikasi manapun dibuka secara otomatis, apapun yang Anda tancapkan, pilih <gui>Jangan pernah tanyakan atau memulai program saat penyisipan media</gui> di bagian bawah jendela<gui>Detil</gui>.</p>
   </note>
 
 <section id="files-types-of-devices">
@@ -88,56 +81,34 @@
 <terms>
   <item>
     <title>Cakram audio</title>
-    <p>Choose your favorite music application or CD audio extractor to handle
-    audio CDs. If you use audio DVDs (DVD-A), select how to open them under
-    <gui>Other Media…</gui>. If you open an audio disc with the file manager,
-    the tracks will appear as WAV files that you can play in any audio player
-    application.</p>
+    <p>Pilih aplikasi musik atau audio CD extractor favorit Anda untuk menangani CD audio. Jika Anda menggunakan DVD audio (DVD-A), pilih cara untuk membuka mereka di bawah <gui>Media Lainnya...</gui>. Jika Anda membuka disc audio dengan file manager, trek akan muncul sebagai file WAV yang dapat Anda bermain di setiap aplikasi pemutar audio.</p>
   </item>
   <item>
     <title>Cakram video</title>
-    <p>Choose your favorite video application to handle video DVDs. Use the
-    <gui>Other Media…</gui> button to set an application for Blu-ray, HD DVD,
-    video CD (VCD), and super video CD (SVCD). If DVDs or other video discs
-    do not work correctly when you insert them, see <link xref="video-dvd"/>.
-    </p>
+    <p>Pilih aplikasi video favorit Anda untuk menangani DVD video. Gunakan tombol <gui>Media Lainnya...</gui> untuk mengatur aplikasi untuk Blu-ray, HD DVD, video CD (VCD), dan video CD super (SVCD). Jika DVD atau cakram video lainnya tidak bekerja dengan benar ketika Anda memasukkan mereka, lihat <link xref="video dvd"/>.</p>
   </item>
   <item>
     <title>Cakram kosong</title>
-    <p>Use the <gui>Other Media…</gui> button to select a disc-writing
-    application for blank CDs, blank DVDs, blank Blu-ray discs, and blank HD
-    DVDs.</p>
+    <p>Gunakan tombol <gui>Media Lainnya...</gui> untuk memilih aplikasi penulisan disk untuk mengosongkan CD, mengosongkan DVD, mengosongkan Blu-ray dan mengosongkan DVD HD.</p>
   </item>
   <item>
     <title>Kamera dan foto</title>
-    <p>Use the <gui>Photos</gui> drop-down to choose a photo-management
-    application to run when you plug in your digital camera, or when you insert
-    a media card from a camera, such as a CF, SD, MMC, or MS card. You can also
-    simply browse your photos using the file manager.</p>
-    <p>Under <gui>Other Media…</gui>, you can select an application to open
-    Kodak picture CDs, such as those you might have made in a store. These are
-    regular data CDs with JPEG images in a folder called
-    <file>Pictures</file>.</p>
+    <p>Gunakan <gui>Foto</gui> drop-down untuk memilih aplikasi foto-manajemen untuk menjalankan ketika Anda pasang di kamera digital Anda, atau ketika Anda memasukkan kartu media dari kamera, seperti CF, SD, MMC, atau kartu MS. Anda juga dapat hanya menelusuri foto menggunakan file manager.</p>
+    <p>Di bawah <gui>Media Lainnya...</gui>, Anda dapat memilih aplikasi untuk membuka Kodak CD gambar, seperti yang Anda mungkin telah dibuat di toko. Ini adalah CD data biasa dengan gambar JPEG dalam folder bernama <file>Gambar</file>.</p>
   </item>
   <item>
     <title>Pemutar musik</title>
-    <p>Pilih suatu aplikasi untuk mengelola pustaka musik pada pemutar musik portabel Anda, atau kelola sendiri berkas-berkas memakai manajer berkas.</p>
+    <p>Pilih suatu aplikasi untuk mengelola pustaka musik pada pemutar musik portabel Anda, atau kelola sendiri berkas-berkas memakai pengelola berkas.</p>
     </item>
     <item>
       <title>Pembaca e-book</title>
-      <p>Use the <gui>Other Media…</gui> button to choose an application to
-      manage the books on your e-book reader, or manage the files yourself
-      using the file manager.</p>
+      <p>Gunakan tombol <gui>Media Lainnya...</gui> untuk memilih aplikasi untuk mengelola buku pada pembaca e-book Anda, atau kelola sendiri berkas-berkas memakai pengelola berkas.</p>
     </item>
     <item>
       <title>Perangkat Lunak</title>
-      <p>Some discs and removable media contain software that is supposed to be
-      run automatically when the media is inserted. Use the <gui>Software</gui>
-      option to control what to do when media with autorun software is
-      inserted. You will always be prompted for a confirmation before software
-      is run.</p>
+      <p>Beberapa disk dan media yang dapat dilepas berisi perangkat lunak yang seharusnya dijalankan secara otomatis ketika media dimasukkan. Gunakan pilihan <gui>Perangkat Lunak</gui> untuk mengontrol apa yang harus dilakukan ketika Media dengan perangkat lunak yang jalan otomatis dimasukkan. Anda selalu akan diminta untuk konfirmasi sebelum perangkat lunak dijalankan.</p>
       <note style="warning">
-        <p>Jangan pernah jalankan perangkat lunak dari media yang tak Anda percayai.</p>
+        <p>Jangan pernah jalankan perangkat lunak dari media yang tidak Anda percayai.</p>
       </note>
    </item>
 </terms>

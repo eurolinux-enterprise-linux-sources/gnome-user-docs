@@ -24,6 +24,8 @@
       <years>2015</years>
     </credit>
 
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
     <desc>Noņemiet pieeju pie tiešsaistes pakalpojumu sniedzēja no jūsu lietotnēm.</desc>
   </info>
 
@@ -32,15 +34,9 @@
   <p>Jūs varat noņemt tiešsaistes kontu, kuru jūs vairs nevēlaties lietot.</p>
 
   <note style="tip">
-    <p>Many online services provide an authorization token which GNOME stores
-    instead of your password. If you remove an account, you should also revoke
-    that certificate in the online service. This will ensure that no other
-    application or website can connect to that service using the authorization
-    for GNOME.</p>
+    <p>Daudzi tiešsaistes pakalpojumi sniedz pilnvarošanas marķieri, ko GNOME saglabā, nevis jūsu paroli. Ja izņemsiet kontu, jums vajadzētu arī atsaukt tā sertifikātu tiešsaistes pakalpojumā. Tas nodrošina, ka neviena cita lietotne vai tīmekļa vietne nevar savienoties ar pakalpojumu, izmantojot GNOME pilnvarojumu.</p>
 
-    <p>How to revoke the authorization depends on the service provider. Check
-    your settings on the provider's website for authorized or connected apps
-    or sites. Look for an app called "GNOME" and remove it.</p>
+    <p>Veids, kā atsaukt pilnvaru, ir atkarīgs no pakalpojuma sniedzēja. Pakalpojuma sniedzēja tīmekļa vietnē, pārbaudiet savu pilnvaroto vai savienoto lietotņu vai vietņu iestatījumus. Meklējiet lietotni “GNOME” un izņemiet to.</p>
   </note>
 
   <steps>
@@ -62,8 +58,6 @@
   </steps>
 
   <note style="tip">
-    <p>Instead of deleting the account completely, it is possible to
-    <link xref="accounts-disable-service">restrict the services</link> accessed
-    by your desktop.</p>
+    <p>Tā vietā, lai pilnībā izdzēstu kontu, ir iespējams <link xref="accounts-disable-service">ierobežot servisus</link>, kam piekļūst jūsu darbvirsma.</p>
   </note>
 </page>

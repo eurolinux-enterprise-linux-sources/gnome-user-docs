@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="session-user" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="sundry#session"/>
+    <link type="guide" xref="login#management"/>
+    <link type="seealso" xref="session-custom"/>
+    <revision pkgversion="3.4.2" date="2012-12-01" status="draft"/>
+    <revision pkgversion="3.8" date="2013-08-06" status="review"/>
+    <revision pkgversion="3.12" date="2014-06-17" status="review"/>
+
+    <credit type="author copyright">
+      <name>minnie_eg</name>
+      <email>amany.elguindy@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Jana Svarova</name>
+      <email>jana.svarova@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Especifique a sessão padrão para um usuário.</desc>
+   
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Configurando uma sessão padrão de usuário</title>
+
+  <p>A sessão padrão é obtida de um programa chamado <app>AccountsService</app>. O <app>AccountsService</app> armazena essa informação no diretório <file>/var/lib/AccountsService/users/</file>.</p>
+
+<note style="note">
+  <p>No GNOME 2, o arquivo <file>.dmrc</file> no diretório pessoal do usuário era usado para criar sessões padrões. Esse arquivo <file>.dmrc</file> não é mais usado.</p>
+</note>
+
+  <steps>
+    <title>Especificando uma versão padrão para executar</title>
+    <item>
+      <p>Certifique-se de que você tenha o pacote <sys>gnome-session-xsession</sys> instalado em seu sistema.</p>
+    </item>
+    <item>
+      <p>Navegue para o diretório <file>/usr/share/xsessions</file> no qual você pode encontrar arquivos <file>.desktop</file> para cada uma das sessões disponíveis. Consulte os conteúdos dos arquivos <file>.desktop</file> para determinar a sessão que você deseja usar.</p>
+    </item>
+    <item>
+      <p>Para especificar uma sessão padrão para um usuário, atualize o <sys>serviço da conta</sys> do usuário no arquivo <file>/var/lib/AccountsService/users/<var>nome-de-usuário</var></file>:</p>
+<code>[User]
+Language=
+XSession=gnome-classic</code>
+       <p>Neste exemplo, <link href="help:gnome-help/gnome-classic">GNOME Clássico</link> foi definido como a sessão padrão, usando o arquivo <file>/usr/share/xsessions/gnome-classic.desktop</file>.</p>
+     </item>
+  </steps>
+
+  <p>Após especificar uma sessão padrão para o usuário, aquela sessão será usada na próxima vez que o usuário se autenticar, a menos que o usuário selecione uma sessão diferente na tela de autenticação.</p>
+
+</page>

@@ -31,81 +31,73 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>You can log in to your system using a supported fingerprint scanner
-    instead of typing in your password.</desc>
+    <desc>U kunt zich op uw systeem aanmelden via een ondersteunde vingerafdrukscanner in plaats van dat u uw wachtwoord intypt.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Justin van Steijn</mal:name>
+      <mal:email>justin50@live.nl</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hannie Dumoleyn</mal:name>
+      <mal:email>hannie@ubuntu-nl.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
   </info>
 
-  <title>Log in with a fingerprint</title>
+  <title>Aanmelden met een vingerafdruk</title>
 
-  <p>If your system has a supported fingerprint scanner, you can record your
-  fingerprint and use it to log in.</p>
+  <p>Als uw systeem een ondersteunde vingerafdrukscanner heeft, dan kunt u uw vingerafdruk opnemen de deze gebruiken om aan te melden.</p>
 
 <section id="record">
-  <title>Record a fingerprint</title>
+  <title>Een vingerafdruk vastleggen</title>
 
-  <p>Before you can log in with your fingerprint, you need to record it so that
-  the system can use it to identify you.</p>
+  <p>Voordat u kunt aanmelden met uw vingerafdruk dient u deze op te nemen, zodat het systeem deze kan gebruiken om u de identificeren.</p>
 
   <note style="tip">
-    <p>If your finger is too dry, you may have difficulty registering your
-    fingerprint. If this happens, moisten your finger slightly, dry it with a
-    clean, lint-free cloth, and retry.</p>
+    <p>Als uw vinger te droog is, dan kan het moeilijk zijn een vingerafdruk te verkrijgen. Als dit het geval is, maak uw vinger dan enigszins vochtig, droog hem met een schone, pluisvrije doek en probeer het opnieuw.</p>
   </note>
 
-  <p>You need <link xref="user-admin-explain">administrator privileges</link>
-  to edit user accounts other than your own.</p>
+  <p>Om andere gebruikersaccounts dan de uwe te bewerken dient u <link xref="user-admin-explain">beheerder</link> te zijn.</p>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Users</gui>.</p>
+      <p>Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht en typ <gui>Gebruikers</gui>.</p>
     </item>
     <item>
-      <p>Click on <gui>Users</gui> to open the panel.</p>
+      <p>Klik op <gui>Gebruikers</gui> om het paneel te openen.</p>
     </item>
     <item>
-      <p>Press on <gui>Disabled</gui>, next to <gui>Fingerprint Login</gui> to
-      add a fingerprint for the selected account. If you are adding the
-      fingerprint for a different user, you will first need to
-      <gui>Unlock</gui> the panel.</p>
+      <p>Druk op <gui>Uitgeschakeld</gui>, naast <gui>Aanmelden met vingerafdruk</gui>, om een vingerafdruk toe te voegen voor het geselecteerde account. Als u de vingerafdruk voor een andere gebruiker toevoegt, dan dient u eerst het paneel te <gui>Ontgrendelen</gui>.</p>
     </item>
     <item>
-      <p>Select the finger that you want to use for the fingerprint, then
-      <gui style="button">Next</gui>.</p>
+      <p>Kies de vinger die u voor de vingerafdruk wilt gebruiken, en daarna <gui style="button">Volgende</gui>.</p>
     </item>
     <item>
-      <p>Follow the instructions in the dialog and swipe your finger at a
-      <em>moderate speed</em> over your fingerprint reader. Once the computer
-      has a good record of your fingerprint, you will see a <gui>Done!</gui>
-      message.</p>
+      <p>Volg de instructies in het dialoogvenster en veeg met een <em>gematigde snelheid</em> met uw vinger over uw vingerafdruklezer. Zodra er een goede vingerafdruk is opgenomen, zult u de melding <gui>Klaar!</gui> te zien krijgen.</p>
     </item>
     <item>
-      <p>Select <gui>Next</gui>. You will see a confirmation message that
-      your fingerprint was saved successfully. Select <gui>Close</gui> to
-      finish.</p>
+      <p>Kies <gui>Volgende</gui>. U zult een bevestigingsmelding krijgen dat uw vingerafdruk met succes opgeslagen is. Kies <gui>Afsluiten</gui> om het af te ronden.</p>
     </item>
   </steps>
 
 </section>
 
 <section id="verify">
-  <title>Check that your fingerprint works</title>
+  <title>Controleren of uw vingerafdruk werkt</title>
 
-  <p>Now check that your new fingerprint login works. If you register a
-  fingerprint, you still have the option to log in with your password.</p>
+  <p>Controleer nu of het aanmelden met uw nieuwe vingerafdruk werkt. Als u een vingerafdruk registreert, heeft u nog altijd de optie om u met uw wachtwoord aan te melden.</p>
 
   <steps>
     <item>
-      <p>Save any open work, and then <link xref="shell-exit#logout">log
-      out</link>.</p>
+      <p>Sla al uw werk op, en kies dan <link xref="shell-exit#logout">afmelden</link>.</p>
     </item>
     <item>
-      <p>At the login screen, select your name from the list. The password
-      entry form will appear.</p>
+      <p>Kies in het aanmeldscherm uw naam in de lijst. Het wachtwoordinvoerveld zal verschijnen.</p>
     </item>
     <item>
-      <p>Instead of typing your password, you should be able to swipe your
-      finger on the fingerprint reader.</p>
+      <p>In plaats van uw wachtwoord in te typen, kunt u met uw vinger over de vingerafdruklezer vegen.</p>
     </item>
   </steps>
 

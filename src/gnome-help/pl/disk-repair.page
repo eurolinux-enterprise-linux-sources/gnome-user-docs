@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-repair" xml:lang="pl">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Projekt dokumentacji GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.25.90" date="2017-08-17" status="review"/>
+
+    <desc>Sprawdzanie, czy system plików jest uszkodzony i przywracanie go do stanu używalności.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Naprawianie uszkodzonego systemu plików</title>
+
+  <p>Systemy plików mogą zostać uszkodzone z powodu nagłej utraty zasilania, awarii systemu i niebezpiecznego usunięcia urządzenia. Po takim wypadku zalecane jest <em>naprawienie</em>, albo chociaż <em>sprawdzenie</em> systemu plików, aby uniknąć utraty danych w przyszłości.</p>
+  <p>Czasami naprawa jest wymagana, aby zamontować lub zmodyfikować system plików. Nawet jeśli <em>sprawdzenie</em> nie zgłasza żadnych uszkodzeń, to system plików może być wewnętrznie oznaczony jako „brudny” i wymagać naprawy.</p>
+
+<steps>
+  <title>Sprawdzanie, czy system plików jest uszkodzony</title>
+  <item>
+    <p>Otwórz program <app>Dyski</app> z <gui>ekranu podglądu</gui>.</p>
+  </item>
+  <item>
+    <p>Wybierz dysk zawierający system plików z listy urządzeń do przechowywania danych po lewej. Jeśli na dysku jest więcej niż jeden wolumin, to wybierz ten zawierający system plików.</p>
+  </item>
+  <item>
+    <p>Na pasku narzędziowym pod sekcją <gui>Woluminy</gui> kliknij przycisk menu. Następnie kliknij <gui>Sprawdź system plików…</gui>.</p>
+  </item>
+  <item>
+    <p>W zależności od ilości danych przechowywanych w systemie plików sprawdzanie może potrwać chwilę dłużej. Potwierdź w oknie, które się pojawi, aby rozpocząć działanie.</p>
+   <p>Działanie nie zmodyfikuje systemu plików, ale odmontuje go w razie potrzeby. Zachowaj cierpliwość podczas sprawdzania.</p>
+  </item>
+  <item>
+    <p>Po ukończeniu zostanie wyświetlona informacja, czy system plików jest uszkodzony. Zauważ, że w niektórych przypadkach nawet jeśli system plików nie jest uszkodzony, wymaga on naprawy, aby przywrócić wewnętrzne oznaczenie „czystości”.</p>
+  </item>
+</steps>
+
+<note style="warning">
+ <title>Możliwa utrata danych podczas naprawiania</title>
+  <p>Jeśli struktura systemu plików jest uszkodzona, to może to wpłynąć na przechowywane na nim pliki. W niektórych przypadkach tych plików nie da się przywrócić do prawidłowej postaci i zostaną usunięte lub przeniesione do specjalnego katalogu. Zwykle to katalog <em>lost+found</em> w głównym katalogu systemu plików.</p>
+  <p>Jeśli dane są zbyt wartościowe, aby utracić je podczas tego procesu, to zalecamy utworzyć ich kopię zapasową przez zapisanie obrazu woluminu przed naprawą.</p>
+  <p>Taki obraz można potem przetworzyć za pomocą narzędzi do analizy śledczej, takich jak <app>sleuthkit</app>, aby przywrócić brakujące pliki i części danych nieprzywrócone podczas naprawy, a także poprzednio usunięte pliki.</p>
+</note>
+
+<steps>
+  <title>Naprawianie systemu plików</title>
+  <item>
+    <p>Otwórz program <app>Dyski</app> z <gui>ekranu podglądu</gui>.</p>
+  </item>
+  <item>
+    <p>Wybierz dysk zawierający system plików z listy urządzeń do przechowywania danych po lewej. Jeśli na dysku jest więcej niż jeden wolumin, to wybierz ten zawierający system plików.</p>
+  </item>
+  <item>
+    <p>Na pasku narzędziowym pod sekcją <gui>Woluminy</gui> kliknij przycisk menu. Następnie kliknij <gui>Napraw system plików…</gui>.</p>
+  </item>
+  <item>
+    <p>W zależności od ilości danych przechowywanych w systemie plików naprawa może potrwać chwilę dłużej. Potwierdź w oknie, które się pojawi, aby rozpocząć działanie.</p>
+   <p>Działanie odmontuje system plików w razie potrzeby. Naprawa próbuje przywrócić system plików do spójnego stanu i przenosi uszkodzone pliki do specjalnego katalogu. Zachowaj cierpliwość podczas naprawy.</p>
+  </item>
+  <item>
+    <p>Po ukończeniu zostanie wyświetlona informacja, czy system plików został pomyślnie naprawiony. Jeśli tak się stało, to można używać go jak zwykle.</p>
+    <p>Jeśli system plików nie został naprawiony, to utwórz jego kopię zapasową przez zapisanie obrazu woluminu, aby odzyskać ważne pliki w późniejszym czasie. Można to zrobić montując obraz tylko do odczytu lub za pomocą narzędzi do analizy śledczej, takich jak <app>sleuthkit</app>.</p>
+    <p>Aby ponownie używać woluminu, należy go <link xref="disk-format">sformatować</link>, tworząc nowy system plików. Wszystkie dane zostaną usunięte.</p>
+  </item>
+</steps>
+
+</page>

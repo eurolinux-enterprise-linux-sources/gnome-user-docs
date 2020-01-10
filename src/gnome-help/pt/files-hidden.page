@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-hidden" xml:lang="pt">
+
+  <info>
+    <link type="guide" xref="files#faq"/>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-29" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="candidate"/>
+
+    <credit type="author">
+      <name>Phil Bulh</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hilh</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Fazer que um ficheiro seja invisível, para que não possa ver no gestor de ficheiros.</desc>
+  </info>
+
+<title>Ocultar um ficheiro</title>
+
+  <p>O gestor de ficheiro de GNOME, <app>Ficheiros</app>, oferece-lhe a possibilidade de ocultar e mostrar ficheiros a sua eleição. Quando um ficheiro está oculto, não se mostra no gestor de ficheiros, mas segue estando na diretório.</p>
+
+  <p>Para ocultar um ficheiro, <link xref="files-rename">renomeie-o</link> pondo-lhe um <file>.</file> ao princípio de seu nome. Por exemplo, para ocultar um ficheiro <file>exemplo.txt</file>, deverá mudar-lhe o nome a <file>.exemplo.txt</file>.</p>
+
+<note>
+  <p>You can hide folders in the same way that you can hide files. Hide a
+  folder by placing a <file>.</file> at the beginning of the folder’s name.</p>
+</note>
+
+<section id="show-hidden">
+ <title>Mostrar todos os ficheiros ocultos</title>
+
+  <p>Se quer ver todos os ficheiros ocultos duma diretório, vá a essa diretório e carregue o botão de opções da vista na barra de ferramentas e escolha <gui>Mostrar os ficheiros ocultos</gui> ou bem carregue <keyseq><key>Ctrl</key><key>H</key></keyseq>. Mostrasse-sén todos os ficheiros ocultos junto com os que não estavam ocultos.</p>
+
+  <p>Para voltar a ocultar estes ficheiros, carregue  carregue o botão de opções da vista na barra de ferramentas e escolha <gui>Mostrar ficheiros ocultos</gui> ou carregue <keyseq><key>Ctrl</key><key>H</key></keyseq> de novo.</p>
+
+</section>
+
+<section id="unhide">
+ <title>Mostrar um ficheiro oculto</title>
+
+  <p>Para mostrar um ficheiro oculto, vá à diretório que o contém e carregue o botão de opções da vista na barra de ferramentas e escolha <gui>Mostrar os ficheiros ocultos</gui>. Depois, procure o ficheiro oculto e renómbrelo de forma que não tenha um <file>.</file> ao princípio de seu nome. Por exemplo, para mostrar um ficheiro oculto chamado <file>.exemplo.txt</file>, deve renomeá-lo a <file>exemplo.txt</file>.</p>
+
+  <p>Uma vez que tenha renomeado o ficheiro carregue o botão de opções da vista na barra de ferramentas e escolha <gui>Mostrar ficheiros ocultos</gui> ou carregue <keyseq><key>Ctrl</key><key>H</key></keyseq> para ocultar qualquer outro ficheiro oculto outra vez.</p>
+
+  <note><p>De maneira predeterminada, só verá os ficheiros no gestor de ficheiros até que o feche. Para mudar esta configuração e que o gestor de ficheiros mostre sempre os ficheiros ocultos, consulte a <link xref="nautilus-views"/>.</p></note>
+
+  <note><p>A maioria dos ficheiros ocultos têm um <file>.</file> ao princípio de seu nome. Outros, em mudança, podem ter uma <file>~</file> ao final de seu nome. Estes são ficheiros de copia de segurança. Consulte a <link xref="files-tilde"/> para obter mais informação.</p></note>
+
+</section>
+
+</page>

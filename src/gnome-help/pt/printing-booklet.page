@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="printing-booklet" xml:lang="pt">
+
+  <info>
+    <link type="guide" xref="printing#paper"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Como imprimir um folheto dobrado, multipágina utilizando um papel de tamanho A4 ou Carta.</desc>
+  </info>
+
+  <title>Imprimir um folheto</title>
+
+  <p>Pode imprimir um folheto dum PDF:</p>
+
+  <p>Se quer imprimir um folheto desde um documento de <app>LibreOffice</app>, terá que o exportar primeiro a PDF elegendo <guiseq><gui>Ficheiro</gui><gui>Exportar como PDF…</gui></guiseq>. Seu documento deve ter um número de páginas múltiplo de 4 (4, 8, 12, 16,...). É possível que tenha que acrescentar até 3 páginas em alvo.</p>
+
+  <p>Se o número de páginas de seu documento PDF não é múltiplo de 4, deve anhadir o número de páginas em alvo adequado (1, 2 ou 3) para que seja múltiplo de 4. Para fazê-lo, pode:</p>
+
+  <steps>
+    <item>
+      <p>Crie um documento de <app>LibreOffice</app> com o número de páginas em alvo (1-3) que precise.</p>
+    </item>
+    <item>
+      <p>Exporte as páginas em alvo a um ficheiro PDF elegendo <guiseq><gui>Ficheiro</gui> <gui>Exportar como PDF…</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Misture as páginas em alvo com seu documento PDF utilizando <app>PDF-Shuffler</app> ou <app>PDF Mod</app>, colocando as páginas em alvo ao final.</p>
+    </item>
+  </steps>
+
+  <p>Selecione o tipo de impressora que usassé para imprimir, da lista de mais abaixo:</p>
+
+</page>

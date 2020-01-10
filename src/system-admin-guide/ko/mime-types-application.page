@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="mime-types-application" xml:lang="ko">
+
+  <info>
+    <link type="guide" xref="software#management"/>
+    <link type="seealso" xref="mime-types-application-user"/>
+    <link type="seealso" xref="mime-types-custom-user"/>
+    <link type="seealso" xref="mime-types-custom"/>
+    <revision pkgversion="3.12" date="2014-06-17" status="review"/>
+
+    <credit type="author">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+  </info>
+
+    <title>모든 사용자에게 기본 등록 애플리케이션 재정의</title>
+    <p><file>/usr/share/applications/defaults.list</file> 파일은 어떤 애플리케이션이 특정한 MIME 유형을 열 때 기본으로 등록되었는지를 명시합니다. 시스템의 모든 사용자에 대한 시스템 기본 값을 재정의하려면 기본 등록된 애플리케이션을 재정의할 MIME 유형 목록이 있는 <file>/usr/share/applications/mimeapps.list</file>파일을 만들어야 합니다.</p>
+    <steps>
+      <title>모든 사용자에게 기본 등록 애플리케이션 재정의</title>
+      <item>
+        <p>기본 등록 애플리케이션을 변경할 MIME 유형을 결정하기 위해 <file>/usr/share/applications/defaults.list</file> 파일을 찾습니다. 예를 들어, 다음의 <file>defaults.list</file> 샘플 파일은 <code>text/html</code>과 <code>application/xhtml+xml</code>의 기본 등록 애플리케이션 MIME 유형을 명시하고 있습니다:</p>
+        <code>[기본 애플리케이션]
+text/html=epiphany.desktop
+application/xhtml+xml=epiphany.desktop</code>
+        <p>
+          The default application (<app>Epiphany</app>) is
+          defined by specifying its corresponding <file>.desktop</file>
+          file (<file>epiphany.desktop</file>). The default location for
+          other applications’ <file>.desktop</file> files is
+          <file>/usr/share/applications/</file>.
+        </p>
+      </item>
+      <item>
+        <p><file>/usr/share/applications/mimeapps.list</file> 파일을 생성합니다. 그 파일에서 MIME 유형과 부합하는 기본 등록 애플리케이션을 명시합니다:</p>
+        <code>[기본 애플리케이션]
+text/html=<var>myapplication1.desktop</var>
+application/xhtml+xml=<var>myapplication2.desktop</var>
+
+[부가적인 연결]
+text/html=<var>myapplication1.desktop</var>;
+application/xhtml+xml=<var>myapplication2.desktop</var>;</code>
+      <p><code>text/html</code> MIME 유형은 <code>myapplication1.desktop</code>으로, <code>application/xhtml+xml</code> MIME 유형은 <code>myapplication2.desktop</code>으로 기본 등록 애플리케이션을 설정합니다.</p>
+        <p>이러한 설정이 제대로 작동되려면 <file>myapplication1.desktop</file>과 <file>myapplication2.desktop</file> 파일이 <file>/usr/share/applications/</file> 디렉터리에 있어야 합니다.</p>
+      </item>
+      <item>
+        <p>기본 등록 애플리케이션이 올바르게 설정되었는지 입증하기 위해 <cmd>gio mime</cmd> 명령을 사용 할 수 있습니다:</p>
+        <screen><output>$ </output><input>gio mime text/html</input>
+Default application for “text/html”: myapplication1.desktop
+Registered applications:
+	myapplication1.desktop
+	epiphany.desktop
+Recommended applications:
+	myapplication1.desktop
+	epiphany.desktop</screen>
+      </item>
+    </steps>
+</page>

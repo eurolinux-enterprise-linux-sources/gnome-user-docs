@@ -23,75 +23,65 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Arrange files by name, size, type, or when they were changed.</desc>
+    <desc>Bestanden rangschikken op naam, grootte, type of wanneer ze zijn aangepast.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Justin van Steijn</mal:name>
+      <mal:email>justin50@live.nl</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hannie Dumoleyn</mal:name>
+      <mal:email>hannie@ubuntu-nl.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
   </info>
 
-<title>Sort files and folders</title>
+<title>Bestanden en mappen sorteren</title>
 
-<p>You can sort files in different ways in a folder, for example by sorting them
-in order of date or file size. See <link xref="#ways"/> below for a list of
-common ways to sort files. See <link xref="nautilus-views"/> for information on
-how to change the default sort order.</p>
+<p>U kan bestanden in een map op verschillende manieren sorteren. bijvoorbeeld door ze op datum of bestandsgrootte te sorteren. Zie onderstaande <link xref="#ways"/> voor een lijst van veelgebruikte manieren om bestanden te sorteren. Zie <link xref="nautilus-views"/> voor informatie over hoe u de standaard sorteervolgorde kunt wijzigen.</p>
 
-<p>The way that you can sort files depends on the <em>folder view</em> that you
-are using. You can change the current view using the list or icon buttons in the
-toolbar.</p>
+<p>De manier waarop us bestanden kunt sorteren is afhankelijk van de door u gebruikte <em>folderweergave</em>. U kan met behulp van de lijst of pictogramknoppen in de taakbalk de huidige weergave wijzigen.</p>
 
 <section id="icon-view">
-  <title>Icon view</title>
+  <title>Pictogramweergave</title>
 
-  <p>To sort files in a different order, click the view options button in the
-  <!-- FIXME: Get a tooltip added for "View options" -->
-  toolbar and choose <gui>By Name</gui>, <gui>By Size</gui>, <gui>By
-  Type</gui>, <gui>By Modification Date</gui>, or <gui>By Access
-  Date</gui>.</p>
+  <p>Om bestanden in een andere volgorde te sorteren: klik in de taakbalk op de knop Weergaveopties en kies <gui>Op naam</gui>, <gui>Op grootte</gui>, <gui>Op type</gui>, <gui>Op wijzigingsdatum</gui> of op <gui>Benaderd</gui>.</p>
 
-  <p>As an example, if you select <gui>By Name</gui>, the files will be sorted
-  by their names, in alphabetical order. See <link xref="#ways"/> for other
-  options.</p>
+  <p>Als u bijvoorbeeld <gui>Op naam</gui> kiest, zullen de bestanden in alfabetische volgorde op naam worden gesorteerd. Zie <link xref="#ways"/> voor andere opties.</p>
 
-  <p>You can sort in the reverse order by selecting <gui>Reversed Order</gui>
-  from the menu.</p>
+  <p>U kunt in omgekeerde volgorde sorteren door in het menu <gui>Omgekeerde volgorde</gui> te kiezen.</p>
 
 </section>
 
 <section id="list-view">
-  <title>List view</title>
+  <title>Lijstweergave</title>
 
-  <p>To sort files in a different order, click one of the column headings in
-  the file manager. For example, click <gui>Type</gui> to sort by file type.
-  Click the column heading again to sort in the reverse order.</p>
-  <p>In list view, you can show columns with more attributes and sort on those
-  columns. Click the view options button in the toolbar, pick <gui>Visible
-  <!-- FIXME: Get a tooltip added for "View options" -->
-  Columns…</gui> and select the columns that you want to be visible. You will
-  then be able to sort by those columns. See <link xref="nautilus-list"/> for
-  descriptions of available columns.</p>
+  <p>Om bestanden in een andere volgorde te sorteren klikt u op één van de kolommen in bestandsbeheer. Klik bijvoorbeeld op <gui>Type</gui> om te sorteren op bestandstype. Klik opnieuw op de kolom om in de omgekeerde volgorde te sorteren.</p>
+  <p>In lijstweergave kunt u kolommen met meer attributen laten weergeven en op die kolommen sorteren. Klik in de taakbalk op de knop Weergaveopties en kies <gui>Zichtbare kolommen…</gui> en selecteer de kolommen waarvan u wilt dat die zichtbaar zijn. U kunt vervolgens op die kolommen sorteren. Zie <link xref="nautilus-list"/> voor een beschrijving van de beschikbare kolommen.</p>
 
 </section>
 
 <section id="ways">
-  <title>Ways of sorting files</title>
+  <title>Manieren om bestanden te sorteren</title>
 
   <terms>
     <item>
-      <title>Name</title>
-      <p>Sorts alphabetically by the name of the file.</p>
+      <title>Naam</title>
+      <p>Sorteert op alfabetische volgorde op de naam van het bestand.</p>
     </item>
     <item>
-      <title>Size</title>
-      <p>Sorts by the size of the file (how much disk space it takes up). Sorts
-      from smallest to largest by default.</p>
+      <title>Grootte</title>
+      <p>Sorteert op de bestandsgrootte (hoeveel schijfruimte het inneemt). Sorteert standaard van kleinste naar grootste bestand.</p>
     </item>
     <item>
       <title>Type</title>
-      <p>Sorts alphabetically by the file type. Files of the same type are
-      grouped together, then sorted by name.</p>
+      <p>Sorteert op alfabetisch volgorde op het bestandstype. Bestanden van hetzelfde type zijn gegroepeerd, vervolgens gesorteerd op naam.</p>
     </item>
     <item>
-      <title>Last Modified</title>
-      <p>Sorts by the date and time that a file was last changed. Sorts from
-      oldest to newest by default.</p>
+      <title>Laatst gewijzigd</title>
+      <p>Sorteert de datum en tijd waarop een bestand voor het laatst is gewijzigd. Sorteert standaard van oud naar nieuw.</p>
     </item>
   </terms>
 

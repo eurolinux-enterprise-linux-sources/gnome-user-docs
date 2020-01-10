@@ -28,61 +28,33 @@
 
 <title>Slēpt datni</title>
 
-  <p>The <app>Files</app> file manager gives you the ability to hide and unhide
-  files at your discretion. When a file is hidden, it is not displayed by the
-  file manager, but it is still there in its folder.</p>
+  <p><app>Datnes</app> datņu pārvaldnieks dod iespēju pēc izvēles paslēpt vai parādīt atsevišķas datnes. Kad datne ir paslēpta, to nerāda datņu pārvaldnieks, tomēr tā vēl joprojām atrodas mapē.</p>
 
-  <p>To hide a file, <link xref="files-rename">rename it</link> with a
-  <file>.</file> at the beginning of its name. For example, to hide a file
-  named <file>example.txt</file>, you should rename it to
-  <file>.example.txt</file>.</p>
+  <p>Lai paslēptu datni, <link xref="files-rename">pārdēvējiet to</link> ar <file>.</file> jaunā nosaukuma sākumā. Piemēram, lai noslēptu datni <file>piemērs.txt</file>, tas jāpārdēvē par <file>.piemērs.txt</file>.</p>
 
 <note>
-  <p>You can hide folders in the same way that you can hide files. Hide a
-  folder by placing a <file>.</file> at the beginning of the folder's name.</p>
+  <p>Jūs varat paslēpt mapes tāpat kā datnes. Pārsauciet mapi, ieliekot <file>.</file> tās nosaukuma sākumā.</p>
 </note>
 
 <section id="show-hidden">
  <title>Parādīt visas slēptās datnes</title>
 
-  <p>If you want to see all hidden files in a folder, go to that folder and
-  either click the
-  <!-- FIXME: Get a tooltip added for "View options" -->
-  view options button in the toolbar and pick <gui>Show Hidden Files</gui>, or press
-  <keyseq><key>Ctrl</key><key>H</key></keyseq>. You will see all hidden files,
-  along with regular files that are not hidden.</p>
+  <p>Ja vēlaties redzēt visas slēptās datnes mapē, dodieties uz šo mapi un vai nu spiediet skata opciju pogu rīkjoslā un izvēlieties <gui>Rādīt slēptās datnes</gui>, vai nospiediet <keyseq><key>Ctrl</key><key>H</key></keyseq>. Jūs redzēsiet visas slēptās datnes līdzās parastajām datnēm.</p>
 
-  <p>To hide these files again, either click the
-  <!-- FIXME: Get a tooltip added for "View options" -->
-  view options button in the toolbar and pick <gui>Show Hidden Files</gui>, or press
-  <keyseq><key>Ctrl</key><key>H</key></keyseq> again.</p>
+  <p>Lai slēptās datnes atkal padarītu neredzamus, vai nu izvēlieties skata opciju pogu rīkjoslā un izvēlieties <gui>Rādīt slēptās datnes</gui>, vai atkal piespiediet <keyseq><key>Ctrl</key><key>H</key></keyseq>.</p>
 
 </section>
 
 <section id="unhide">
  <title>Padarīt slēptu datni par parastu</title>
 
-  <p>To unhide a file, go to the folder containing the hidden file and click
-  the
-  <!-- FIXME: Get a tooltip added for "View options" -->
-  view options button in the toolbar and pick <gui>Show Hidden Files</gui>.
-  Then, find the hidden file and rename it so that it does not have a
-  <file>.</file> in front of its name. For example, to unhide a file called
-  <file>.example.txt</file>, you should rename it to
-  <file>example.txt</file>.</p>
+  <p>Lai padarītu slēptu datni par parastu, dodieties uz mapi, kurā atrodas slēptās datne, un spiediet skata opciju pogu un izvēlieties <gui>Rādīt slēptās datnes</gui>. Tad atrodiet vajadzīgo datni un pārdēvējiet to tā, lai nosaukums nesāktos ar <file>.</file>. Piemēram, lai padarītu redzamu datni <file>.piemērs.txt</file>, tā būtu jāpārdēvē par <file>piemērs.txt</file>.</p>
 
-  <p>Once you have renamed the file, you can either click the
-  <!-- FIXME: Get a tooltip added for "View options" -->
-  view options button in the toolbar and pick <gui>Show Hidden Files</gui>, or
-  press <keyseq><key>Ctrl</key><key>H</key></keyseq> to hide any other hidden
-  files again.</p>
+  <p>Kad datne ir pārdēvēta, jūs varat spiest skata opciju pogu rīkjoslā un izvēlēties <gui>Rādīt slēptās datnes</gui> vai piespiest <keyseq><key>Ctrl</key><key>H</key></keyseq>, lai atkal padarītu slēptās datnes neredzamus.</p>
 
   <note><p>Pēc noklusējuma slēptās datnes paliks redzamas līdz datņu pārvaldnieka aizvēršanai. Lai iestatītu slēpto datņu rādīšanu vienmēr, skatiet <link xref="nautilus-views"/>.</p></note>
 
-  <note><p>Most hidden files will have a <file>.</file> at the
-  beginning of their name, but others might have a <file>~</file> at the end of
-  their name instead. These files are backup files. See
-  <link xref="files-tilde"/> for more information.</p></note>
+  <note><p>Vairumam slēpto datņu ir <file>.</file> nosaukuma sākumā, bet citām var būt <file>~</file> nosaukuma beigās. Tās ir rezerves kopiju datnes. Skatiet <link xref="files-tilde"/>, lai uzzinātu vairāk.</p></note>
 
 </section>
 

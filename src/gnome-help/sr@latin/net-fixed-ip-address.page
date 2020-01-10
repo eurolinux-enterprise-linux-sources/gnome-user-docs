@@ -8,6 +8,7 @@
     <revision pkgversion="3.4.0" date="2012-03-13" status="final"/>
     <revision pkgversion="3.15" date="2014-12-04" status="final"/>
     <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.24" date="2017-03-26" status="final"/>
 
     <credit type="author">
       <name>Džim Kembel</name>
@@ -30,9 +31,10 @@
 
   <title>Napravite vezu sa stalnom IP adresom</title>
 
-  <p>Većina mreža će sama da dodeli <link xref="net-what-is-ip-address">IP adresu</link> i ostale detalje vašem računaru kada se priključite na mrežu. Ovi detalji mogu da se promene s vremena na vreme, ali vi ćete možda želeti da imate stalnu IP adresu za računar tako da znate uvek koja je njegova adresa (na primer, ako je to server datoteka).</p> <p>Da date vašem računaru stalnu (statičku) IP adresu:</p>
+  <p>Većina mreža će sama da dodeli <link xref="net-what-is-ip-address">IP adresu</link> i ostale detalje vašem računaru kada se priključite na mrežu. Ovi detalji mogu da se promene s vremena na vreme, ali vi ćete možda želeti da imate stalnu IP adresu za računar tako da znate uvek koja je njegova adresa (na primer, ako je to server datoteka).</p>
 
   <steps>
+    <title>Da date vašem računaru stalnu (statičku) IP adresu:</title>
     <item>
       <p>Otvorite pregled <gui xref="shell-introduction#activities">Aktivnosti</gui> i počnite da kucate <gui>Mreža</gui>.</p>
     </item>
@@ -43,13 +45,16 @@
       <p>U levom oknu, izaberite mrežnu vezu kojoj želite da dodelite stalnu adresu. Ako se kablom priključite na mrežu, kliknite <gui>Žičana</gui>, zatim kliknite na dugme <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">podešavanja</span></media> u donjem desnom uglu panela. Za <gui>Bežičnu</gui> vezu, dugme <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">podešavanja</span></media> će se nalaziti pored radne mreže.</p>
     </item>
     <item>
-      <p>Kliknite na jezičak <gui>IPv4</gui> ili <gui>IPv6</gui> i izmenite <gui>Adrese</gui> na <em>Ručno</em>.</p>
+      <p>Kliknite na <gui>IPv4</gui> ili <gui>IPv6</gui> u levom oknu i izmenite <gui>Adrese</gui> na <em>Ručno</em>.</p>
     </item>
     <item>
-      <p>Unesite podatke za <em>Adresu</em>, <em>Mrežnu masku</em>, i <em>Mrežni prolaz</em> u odgovarajuća polja. Kako ćete ovo izabrati zavisiće od vašeg podešavanja mreže; postoje naročita pravila koja odlučuju koje IP adrese i mrežne maske su ispravne za datu mrežu.</p>
+      <p>Ukucajte <gui xref="net-what-is-ip-address">Adresu</gui> i <gui>Mrežni prolaz</gui>, kao i odgovarajuću <gui>Mrežnu masku</gui>.</p>
     </item>
     <item>
-      <p>Ako je neophodno, unesite adresu <em>Servera naziva domena</em> u polje <gui>DNS serveri</gui>. Ovo je IP adresa servera koji pretražuje nazive domena; većina mrežnih udruženja i internet dostavljača imaju posvećene DNS servere.</p>
+      <p>U odeljku <gui>DNS</gui>, prebacite <gui>Samostalno</gui> na <gui>ISKLJ.</gui>. Unesite IP adresu DNS servera koji želite da koristite. Unesite dodatne adrese DNS servera koristeći dugme <gui>+</gui>.</p>
+    </item>
+    <item>
+      <p>U odeljku <gui>Rute</gui>, prebacite <gui>Samostalno</gui> na <gui>ISKLJ.</gui>. Unesite <gui>Adresu</gui>, <gui>Mrežnu masku</gui>, <gui>Mrežni prolaz</gui> i <gui>Metrički</gui> za rutu koju želite da koristite. Unesite dodatne rute koristeći dugme <gui>+</gui>.</p>
     </item>
     <item>
       <p>Pritisnite <gui>Primeni</gui>. Mrežna veza će sada imati stalnu IP adresu.</p>

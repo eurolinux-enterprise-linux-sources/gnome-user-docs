@@ -14,53 +14,43 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Troubleshoot media card readers</desc>
+    <desc>Problemen met de geheugenkaartlezer oplossen</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Justin van Steijn</mal:name>
+      <mal:email>justin50@live.nl</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hannie Dumoleyn</mal:name>
+      <mal:email>hannie@ubuntu-nl.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
   </info>
 
-<title>Media card reader problems</title>
+<title>Problemen met geheugenkaartlezers</title>
 
-<p>Many computers contain readers for SD, MMC, SM, MS, CF, and other storage media
-cards. These should be automatically detected and <link xref="disk-partitions">mounted</link>. Here are some
-troubleshooting steps if they are not:</p>
+<p>Veel computers hebben lezers voor SD (Secure Digital), MMC (MultiMediaCard), SmartMedia, geheugenstick, CompactFlash en andere opslagmediakaarten. Deze zouden automatisch gedetecteerd en <link xref="disk-partitions">aangekoppeld</link> moeten worden. Hier volgen een paar stappen voor het oplossen van het probleem als dat niet het geval is:</p>
 
 <steps>
 <item>
-<p> Make sure that the card is put in correctly. Many cards look as though they are
-upside down when correctly inserted. Also make sure that the card is firmly seated
-in the slot; some cards, especially CF, require a small amount of force to insert
-correctly. (Be careful not to push too hard! If you come up against something solid,
-do not force it.)</p>
+<p>Zorg ervoor dat de kaart op de juiste manier is ingebracht. Veel kaarten lijken "ondersteboven" te zitten wanneer ze op de juiste manier zijn ingebracht. Zorg er ook voor dat de kaart goed in de sleuf zit; vooral CompactFlash moet met enige kracht ingebracht worden. (Pas op dat u niet te hard drukt! Als u ergens tegenaan komt, forceer dan niet.)</p>
 </item>
 
 <item>
-  <p>Open <app>Files</app> from the
-  <gui xref="shell-introduction#activities">Activities</gui> overview. Does the inserted
-  card appear in the <gui>Devices</gui> list in the left sidebar? Sometimes the
-  card appears in this list but is not mounted; click it once to mount. (If the
-  sidebar is not visible, press <key>F9</key> or click <gui style="menu">Files</gui> in
-  the top bar and select the <gui style="menuitem">Sidebar</gui>.)</p>
+  <p>Open <app>Bestanden</app> via het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht. Verschijnt de ingebrachte kaart in de lijst met <gui>Apparaten</gui> in de linker zijbalk? Soms staat de kaart wel in de lijst, maar is hij niet aangekoppeld; klik er één keer op om hem aan te koppelen. (Als de zijbalk niet zichtbaar is, druk dan op <key>F9</key> of klik op <gui style="menu">Bestanden</gui> in de bovenbalk en kies de <gui> Zijbalk</gui>.)</p>
 </item>
 
 <item>
-  <p>If your card does not show up in the sidebar, press
-  <keyseq><key>Ctrl</key><key>L</key></keyseq>, then type
-  <input>computer:///</input> and press <key>Enter</key>. If your card reader
-  is correctly configured, the reader should come up as a drive when no card is
-  present, and the card itself when the card has been mounted.</p>
+  <p>Als uw kaart niet getoond wordt in de zijbalk, druk dan op <keyseq><key>Ctrl</key><key>L</key></keyseq>, typ vervolgens <input>computer:///</input> en druk op <key>Enter</key>. Als uw kaart op de juiste wijze is geconfigureerd, dan zou de lezer als een station te zien moeten zijn wanneer er geen kaart in zit, en de kaart zelf wanneer de kaart gekoppeld is.</p>
 </item>
 
 <item>
-<p>If you see the card reader but not the card, the problem may be with the card itself.
-Try a different card or check the card on a different reader if possible.</p>
+<p>Als u wel de kaartlezer ziet, maar niet de kaart, dan ligt het probleem mogelijk bij de kaart zelf. Probeer het met een andere kaart of controleer de kaart in een andere lezer, indien mogelijk.</p>
 </item>
 </steps>
 
-<p>If no cards or drives are shown when browsing the <gui>Computer</gui>
-location, it is possible that your card reader does not work with Linux due to
-driver issues. If your card reader is internal (inside the computer instead of
-sitting outside) this is more likely. The best solution is to directly connect
-your device (camera, cell phone, etc.) to a USB port on the computer. USB
-external card readers are also available, and are far better supported by
-Linux.</p>
+<p>Als er geen kaarten of schijven beschikbaar zijn in de map <gui>Computer</gui>, dan is het mogelijk dat uw kaartlezer niet werkt met Linux omdat er geen stuurprogramma voor is. Dit is het meer waarschijnlijk wanneer u een ingebouwde kaartlezer heeft (in de computer in plaats van daar buiten). De beste oplossing is om uw apparaat (camera, mobiele telefoon, enz.) direct op een usb-poort van de computer aan te sluiten. Externe usb-kaartlezers zijn ook te krijgen en worden veel beter ondersteund door Linux.</p>
 
 </page>

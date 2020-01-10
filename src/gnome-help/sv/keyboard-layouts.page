@@ -52,7 +52,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Anders Jonsson</mal:name>
       <mal:email>anders.jonsson@norsjovallen.se</mal:email>
-      <mal:years>2016</mal:years>
+      <mal:years>2016, 2017</mal:years>
     </mal:credit>
   </info>
 
@@ -71,6 +71,13 @@
       <p>Klicka på <gui>+</gui>-knappen i avsnittet <gui>Inmatningskällor</gui>, välj språket som är associerat med layouten, välj sedan en layout och tryck på <gui>Add</gui>.</p>
     </item>
   </steps>
+
+  <note style="tip">
+    <p>Om det finns flera användarkonton på ditt system finns det en separat instans av panelen <gui>Region &amp; språk</gui> för inloggningsskärmen. Klicka på <gui>Inloggningsskärm</gui>-knappen längst upp till höger för att växla mellan de två instanserna.</p>
+
+    <p>Några sällan använda varianter av tangentbordslayout finns inte tillgängliga som standard då du klickar på <gui>+</gui>-knappen. För att även göra dessa inmatningskällor tillgängliga kan du öppna ett terminalfönster genom att trycka ned <keyseq><key>Ctrl</key><key>Alt</key><key>T</key></keyseq> och köra detta kommando:</p>
+    <p><cmd its:translate="no">gsettings set org.gnome.desktop.input-sources show-all-sources true</cmd></p>
+  </note>
 
   <note style="sidebar">
     <p>Du kan förhandsgranska en bild av vilken layout som helst genom att välja den i listan av <gui>Inmatningskällor</gui> och klicka på <gui><media its:translate="no" type="image" src="figures/input-keyboard-symbolic.png" width="16" height="16"><span its:translate="yes">förhandsgranska</span></media></gui></p>

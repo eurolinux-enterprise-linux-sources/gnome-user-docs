@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-resize" xml:lang="de">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>GNOME-Dokumentationsprojekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.25.90" date="2017-08-17" status="review"/>
+
+    <desc>Ein Dateisystem und dessen Partition schrumpfen oder vergrößern.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011-2017.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011-2013, 2017.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Die Größe des Dateisystems anpassen</title>
+
+  <p>Ein Dateisystem kann vergrößert werden, um den freien Platz hinter dessen Partition nutzen zu können. Oft ist das sogar möglich, während das Dateisystem eingehängt ist.</p>
+  <p>Um Platz für eine weitere Partition im Dateisystem zu schaffen, kann es anhand des darin verfügbaren freien Platzes verkleinert werden.</p>
+  <p>Beachten Sie, dass nicht alle Dateisysteme Größenänderungen unterstützen.</p>
+  <p>Die Partitionsgröße wird zusammen mit der Dateisystemgröße geändert. Auf die gleiche Weise ist es auch möglich, die Größe einer Partition ohne Dateisystem zu ändern.</p>
+
+<steps>
+  <title>Größe eines Dateisystems oder Partition ändern</title>
+  <item>
+    <p>Öffnen Sie <app>Laufwerke</app> in der <gui>Aktivitäten</gui>-Übersicht.</p>
+  </item>
+  <item>
+    <p>Wählen Sie das Laufwerk, welches das fragliche Dateisystem enthält, aus der Liste der Speichergeräte an der linken Seite aus. Befinden sich mehrere Datenträger auf dem physischen Laufwerk, wählen Sie jenen aus, der das Dateisystem enthält.</p>
+  </item>
+  <item>
+    <p>Klicken Sie in der Werkzeugleiste unterhalb des Abschnitts <gui>Datenträger</gui> auf den Menü-Knopf. Klicken Sie dann auf <gui>Dateisystemgröße ändern …</gui> oder <gui>Größe ändern …</gui>.</p>
+  </item>
+  <item>
+    <p>In einem Dialog können Sie die neue Größe wählen. Das Dateisystem wird eingehängt, um die minimale Größe anhand der Größe des aktuellen Inhalts zu bestimmen. Wenn die Verkleinerung nicht unterstützt wird, ist die minimale Größe die aktuelle Größe. Lassen Sie genug Platz im Dateisystem beim Verkleinern, um sicherzustellen, dass es schnell und zuverlässig arbeiten kann.</p>
+    <p>Abhängig von der Menge der aus dem verkleinerten Teil zu verschiebenden Daten kann die Größenänderung des Dateisystems einige Zeit dauern.</p>
+    <note style="warning">
+      <p>Die Größenänderung des Dateisystems führt automatisch auch eine <link xref="disk-repair">Reparatur</link> aus. Daher ist es empfehlenswert, vor dem Start wichtige Daten zu sichern. Der Vorgang darf nicht gestoppt werden, was zu einem beschädigten Dateisystem führen würde.</p>
+    </note>
+  </item>
+  <item>
+      <p>Um den Start des Vorgangs zu bestätigen, klicken Sie auf <gui style="button">Größe ändern</gui>.</p>
+   <p>Der Vorgang hängt das Dateisystem aus, falls die Größenänderung eines eingehängten Dateisystems nicht unterstützt wird. Haben Sie Geduld, während die Größe des Dateisystems geändert wird.</p>
+  </item>
+  <item>
+    <p>Nach dem Abschluss der erforderlichen Größenänderungs- und Reparaturvorgänge ist das Dateisystem wieder zur Nutzung bereit.</p>
+  </item>
+</steps>
+
+</page>

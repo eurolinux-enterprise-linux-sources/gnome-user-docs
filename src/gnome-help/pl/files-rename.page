@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-rename" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="files#common-file-tasks"/>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>Projekt dokumentacji GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Zmiana nazwy pliku lub katalogu.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Zmiana nazwy pliku lub katalogu</title>
+
+  <p>Tak jak w innych menedżerach plików, w programie <app>Pliki</app> można zmieniać nazwy plików i katalogów.</p>
+
+  <steps>
+    <title>Aby zmienić nazwę pliku lub katalogu:</title>
+    <item><p>Kliknij element prawym przyciskiem myszy i wybierz <gui>Zmień nazwę</gui> lub zaznacz plik i naciśnij klawisz <key>F2</key>.</p></item>
+    <item><p>Wpisz nową nazwę i naciśnij klawisz <key>Enter</key> lub kliknij przycisk <gui>Zmień nazwę</gui>.</p></item>
+  </steps>
+
+  <p>Można także zmienić nazwę pliku w oknie <link xref="nautilus-file-properties-basic">Właściwości</link>.</p>
+
+  <p>Podczas zmiany nazwy pliku tylko jej pierwsza część jest zaznaczona, a druga, rozszerzenie pliku (część po ostatnim znaku <file>.</file>), nie jest. Rozszerzenie zwykle wskazuje typ pliku (np. <file>plik.pdf</file> to dokument PDF), i zazwyczaj nie ma potrzeby jego zmiany. Jeśli jednak istnieje taka potrzeba, to zaznacz całą nazwę pliku i ją zmień.</p>
+
+  <note style="tip">
+    <p>Jeśli zmieniono nazwę niewłaściwego pliku lub niewłaściwie nazwano plik, to można cofnąć zmianę. Aby to zrobić, od razu kliknij przycisk menu na pasku narzędziowym i wybierz <gui>Cofnij zmianę nazwy</gui>, lub naciśnij klawisze <keyseq><key>Ctrl</key><key>Z</key></keyseq>, aby przywrócić poprzednią nazwę.</p>
+  </note>
+
+  <section id="valid-chars">
+    <title>Prawidłowe znaki dla nazw plików</title>
+
+    <p>W nazwach plików można używać wszystkich znaków oprócz znaku <file>/</file> (ukośnik). Niektóre urządzenia używają jednak <em>systemu plików</em> mającego więcej ograniczeń nazw plików. Dlatego najlepiej jest unikać tych znaków: <file>|</file>, <file>\</file>, <file>?</file>, <file>*</file>, <file>&lt;</file>, <file>"</file>, <file>:</file>, <file>&gt;</file>, <file>/</file>.</p>
+
+    <note style="warning">
+    <p>Jeśli nazwa pliku zaczyna się od znaku <file>.</file>, to będzie on <link xref="files-hidden">ukryty</link> w menedżerze plików.</p>
+    </note>
+
+  </section>
+
+  <section id="common-probs">
+    <title>Często występujące problemy</title>
+
+    <terms>
+      <item>
+        <title>Nazwa pliku jest już używana</title>
+        <p>Dwa pliki lub katalogi nie mogą mieć tej samej nazwy w tym samym katalogu. Menedżer plików nie zezwoli na zmianę nazwy pliku na nazwę, która już istnieje w obecnym katalogu.</p>
+        <p>Wielkie i małe znaki w nazwach plików i katalogów mają znaczenie, więc <file>Plik.txt</file> to inna nazwa niż <file>PLIK.txt</file>. Używanie różnych nazw plików w ten sposób jest dozwolone, ale nie jest zalecane.</p>
+      </item>
+      <item>
+        <title>Nazwa pliku jest za długa</title>
+        <p>W niektórych systemach plików nazwy plików nie mogą mieć więcej niż 255 znaków. To ograniczenie do 255 znaków obejmuje zarówno nazwę pliku, jak i ścieżkę do niego (np. <file>/home/alicja/Dokumenty/praca/faktury/…</file>), więc należy unikać długich nazw plików i katalogów, jeśli to możliwe.</p>
+      </item>
+      <item>
+        <title>Opcja zmiany nazwy jest nieaktywna</title>
+        <p>Jeśli opcja <gui>Zmień nazwę</gui> jest nieaktywna, to użytkownik nie ma uprawnienia do zmiany nazwy pliku. Należy zachować ostrożność podczas zmieniania nazw takich plików, jako że zmiana nazw niektórych chronionych plików może spowodować niestabilność systemu. <link xref="nautilus-file-properties-permissions"/> zawiera więcej informacji.</p>
+      </item>
+    </terms>
+
+  </section>
+
+</page>

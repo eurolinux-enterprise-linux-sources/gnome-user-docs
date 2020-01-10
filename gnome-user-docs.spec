@@ -1,18 +1,18 @@
-Summary:        GNOME User Documentation
 Name:           gnome-user-docs
-Version:        3.22.0
+Version:        3.28.2
 Release:        1%{?dist}
+Summary:        GNOME User Documentation
+
 License:        CC-BY-SA
 URL:            http://help.gnome.org/
-#VCS: git:git://git.gnome.org/gnome-user-docs
-Source:         https://download.gnome.org/sources/%{name}/3.22/%{name}-%{version}.tar.xz
-Group:          Documentation
+Source0:        https://download.gnome.org/sources/%{name}/3.28/%{name}-%{version}.tar.xz
+
 BuildArch:      noarch
 
-BuildRequires: pkgconfig
-BuildRequires: gettext
-BuildRequires: itstool
-BuildRequires: yelp-tools
+BuildRequires:  gettext
+BuildRequires:  itstool
+BuildRequires:  pkgconfig
+BuildRequires:  yelp-tools
 
 %description
 This package contains end-user documentation for the GNOME desktop
@@ -31,10 +31,14 @@ make %{?_smp_mflags}
 %find_lang %{name} --all-name --with-gnome
 
 %files -f %{name}.lang
-%doc AUTHORS NEWS README
 %license COPYING
+%doc NEWS README
 
 %changelog
+* Tue May 08 2018 Kalev Lember <klember@redhat.com> - 3.28.2-1
+- Update to 3.28.2
+- Resolves: #1569268
+
 * Wed Mar  8 2017 Matthias Clasen <mclasen@redhat.com> - 3.22.0-1
 - Rebase to 3.22.0
   Resolves: #1386967

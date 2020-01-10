@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="disk-format" xml:lang="pt">
+  <info>
+    <link type="guide" xref="disk"/>
+
+
+    <credit type="author">
+      <name>Projeto de documentação de GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
+
+    <desc>Tirar todos os ficheiros e diretórios duma unidade de disco duro externo ou memória flash USB a formatando.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+<title>Limpar todo num disco removível</title>
+
+  <p>If you have a removable disk, like a USB memory stick or an external hard
+ disk, you may sometimes wish to completely remove all of its files and
+ folders. You can do this by <em>formatting</em> the disk — this deletes all
+ of the files on the disk and leaves it empty.</p>
+
+<steps>
+  <title>Formatar um disco removível</title>
+  <item>
+    <p>Abra <app>Discos</app> desde a vista de <gui>Atividades</gui>.</p>
+  </item>
+  <item>
+    <p>Selecione o disco que quer eliminar da lista de dispositivos de armazenamento da esquerda.</p>
+
+    <note style="warning">
+      <p>Assegure-se de que tem selecionado o disco correto. Se elege o disco equivocado, eliminar-se-ão todos os ficheiros no outro disco.</p>
+    </note>
+  </item>
+  <item>
+    <p>Na barra de ferramentas, abaixo da seção <gui>Volumes</gui>, carregue o ícone da roda dentada. Depois carregue <gui>Formatar…</gui>.</p>
+  </item>
+  <item>
+    <p>Na janela que aparece, selecione um <gui>Tipo</gui> de sistema de ficheiros para o disco.</p>
+   <p>Se quer usar o disco em computadores Windows e Mac VOS bem como em GNU/Linux, selecione <gui>FAT</gui>. Se só quer o usar com Windows, <gui>NTFS</gui> pode ser uma melhor opção. Mostrar-se-á uma pequena descrição dos <gui>tipos de sistema de ficheiro</gui> como uma etiqueta.</p>
+  </item>
+  <item>
+    <p>Atribua um nome ao disco e carregue <gui>Formatar…</gui> para continuar e mostrar uma janela de confirmação. Verifique os detalhes com cuidado e carregue <gui>Formatar</gui> para esvaziar o disco.</p>
+  </item>
+  <item>
+    <p>Uma vez que tenha acabado o formato, carregue o botão de extrair para tirar o disco. Agora deveria estar vazio e pronto para se usar de novo.</p>
+  </item>
+</steps>
+
+<note style="warning">
+ <title>O formato permanente não elimina de forma segura seus ficheiros</title>
+  <p>Formatar um disco não é uma maneira completamente segura de limpar todos seus dados. Um disco formatado parecerá que não contém ficheiros, mas é possível obter os ficheiros com um programa especial de recuperação. Se precisa eliminar os ficheiros com segurança, deverá usar uma ferramenta de linha de comandos como <app>shred</app>.</p>
+</note>
+
+</page>

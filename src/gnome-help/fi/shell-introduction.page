@@ -35,13 +35,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Jiri Grönroos</mal:name>
       <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
-      <mal:years>2012-2016.</mal:years>
+      <mal:years>2012-2018.</mal:years>
     </mal:credit>
   </info>
 
   <title>Johdanto Gnomeen</title>
 
-  <p>Gnome 3 sisältää täysin uudelleen suunnitellun käyttöliittymän, joka on suunniteltu olemaan poissa käyttäjän tieltä, vähentämään häiriötekijöitä sekä auttamaan asioiden valmiiksi saamisessa. Kun kirjaudut sisään ensimmäisen kerran, näet tyhjän työpöydän ja yläpalkin.</p>
+  <p>Gnome 3 sisältää täysin uudelleen suunnitellun käyttöliittymän, jonka on tarkoitus pysyä poissa käyttäjän tieltä, vähentää häiriötekijöitä sekä auttaa asioiden valmiiksi saamisessa. Kun kirjaudut sisään ensimmäisen kerran, näet tyhjän työpöydän ja yläpalkin.</p>
 
 <if:choose>
   <if:when test="!platform:gnome-classic">
@@ -76,32 +76,22 @@
   </if:when>
 </if:choose>
 
-  <p if:test="!platform:gnome-classic">To access your windows and applications,
-  click the <gui>Activities</gui> button, or just move your mouse pointer to
-  the top-left hot corner. You can also press the
-  <key xref="keyboard-key-super">Super</key> key on your keyboard. You can
-  see your windows and applications in the overview. You can also just start
-  typing to search your applications, files, folders, and the web.</p>
+  <p if:test="!platform:gnome-classic">Käytä ikkunoita ja sovelluksia napsauttamalla <gui>Toiminnot</gui>-painiketta, tai siirrä hiiren osoitin näytön vasempaan yläreunaan. Vaihtoehtoisesti voit painaa näppäimistöstä <key xref="keyboard-key-super">Super</key>-näppäintä. Näet avoinna olevat ikkunat ja sovellukset yleisnäkymässä. Aloita kirjoittaminen etsiäksesi sovelluksia, tiedostoja, kansioita, hakutuloksia internetistä ja muuta.</p>
 
-  <p if:test="platform:gnome-classic">To access your windows and applications,
-  click the <gui xref="shell-introduction#activities">Applications</gui> menu
-  at the top left of the screen and select the <gui>Activities Overview</gui>
-  item. You can also press the <key xref="keyboard-key-super">Super</key> key
-  to see your windows and applications in the <gui>Activities</gui> overview. 
-  Just start typing to search your applications, files, and folders.</p>
+  <p if:test="platform:gnome-classic">Käytä ikkunoita ja sovelluksia napsauttamalla <gui xref="shell-introduction#activities">Sovellukset</gui>-painiketta ja valitse Toiminnot-yleisnäkymä. Vaihtoehtoisesti voit painaa näppäimistöstä <key xref="keyboard-key-super">Super</key>-näppäintä. Näet avoinna olevat ikkunat ja sovellukset <gui>Toiminnot</gui>-yleisnäkymässä. Aloita kirjoittaminen etsiäksesi sovelluksia, tiedostoja ja kansioita.</p>
 
   <!-- TODO: retake without the flashy bit -->
   <media type="image" src="figures/shell-dash.png" height="300" style="floatstart floatleft" if:test="!target:mobile">
     <p>Telakka</p>
   </media>
 
-  <p>Yleisnäkymän vasemmassa laidassa on <em>telakka</em>. Telakkassa on suosikkisovelluksesi sekä avoinna olevat sovellukset. Napsauta telakassa olevaa kuvaketta avataksesi sovelluksen. Jos sovellus on jo käynnissä, se näkyy korostettuna telakassa. Tällöin kuvakkeen napsauttaminen tuo esiin viimeksi avoinna olleen ikkunan. Voit myös raahata kuvakkeen yleisnäkymään, tai mihin tahansa oikealla yleisnäkymän oikeassa laidassa näkyvään työtilaan.</p>
+  <p>Yleisnäkymän vasemmassa laidassa on <em>telakka</em>. Telakassa on suosikkisovelluksesi sekä avoinna olevat sovellukset. Napsauta telakassa olevaa kuvaketta avataksesi sovelluksen. Jos sovellus on jo käynnissä, se näkyy korostettuna telakassa. Tällöin kuvakkeen napsauttaminen tuo esiin viimeksi avoinna olleen ikkunan. Voit myös raahata kuvakkeen yleisnäkymään, tai mihin tahansa yleisnäkymän oikeassa laidassa näkyvään työtilaan.</p>
 
   <p>Kuvakkeen napsauttaminen hiiren oikealla avaa valikon, jonka kautta voit valita käynnissä olevan sovelluksen minkä tahansa ikkunan, tai avata uuden ikkunan. Voit myös avata uuden ikkunan haluamastasi sovelluksesta napsauttamalla kuvaketta <key>Ctrl</key>-näppäin pohjassa.</p>
 
   <p>Kun avaat yleisnäkymän, näet avoinna olevat ikkunat. Kaikki nykyisessä työtilassa avoinna olevat ikkunat esitetään pienoiskuvina. Kohdista haluamaasi ikkunaan napsauttamalla sen kuvaa.</p>
 
-  <p>Napsauta telakan alaosassa olevaa ruudukkopainiketta siirtyäksesi sovellusten yleisnäkymään. Sovellusten yleisnäkymässä näkyy kaikki koneelle asennetut sovellukset. Avaa haluamasi sovellus napsauttamalla sen kuvaketta, tai vetämällä kuvake yleisnäkymän oikeassa laidassa näkyvään työtilaan. Voit lisätä sovelluksen telakkaan vetämällä haluamasi kuvakkeen telakan päälle. Näin sovelluksen kuvake näkyy telakassa, vaikka kyseinen sovellus ei olisi käynnissä.</p>
+  <p>Napsauta telakan alaosassa olevaa ruudukkopainiketta siirtyäksesi sovellusten yleisnäkymään. Sovellusten yleisnäkymässä näytetään kaikki koneelle asennetut sovellukset. Avaa haluamasi sovellus napsauttamalla sen kuvaketta, tai vetämällä kuvake työtilaan. Voit lisätä sovelluksen telakkaan vetämällä haluamasi kuvakkeen telakan päälle. Näin sovelluksen kuvake näkyy telakassa, vaikka kyseinen sovellus ei olisi käynnissä.</p>
 
   <list style="compact">
     <item>
@@ -119,13 +109,13 @@
   <if:choose>
     <if:when test="!platform:gnome-classic">
       <media type="image" src="figures/shell-appmenu-shell.png" width="250" style="floatend floatright" if:test="!target:mobile">
-        <p>App Menu of <app>Terminal</app></p>
+        <p><app>Päätteen</app> sovellusvalikko</p>
       </media>
       <p>Sovellusvalikko, joka sijaitsee <gui>Toiminnot</gui>-painikkeen vieressä, esittää aktiivisena olevan sovelluksen nimen ja kuvakkeen. Sen avulla sovelluksen asetukset ja ohje ovat nopeasti käytettävissä. Valikon sisältö määräytyy sovelluskohtaisesti.</p>
     </if:when>
     <if:when test="platform:gnome-classic">
       <media type="image" src="figures/shell-appmenu-classic.png" width="154" height="133" style="floatend floatright" if:test="!target:mobile">
-        <p>App Menu of <app>Terminal</app></p>
+        <p><app>Päätteen</app> sovellusvalikko</p>
       </media>
       <p>Application menu, located next to the <gui>Applications</gui> and
       <gui>Places</gui> menus, shows the name of the active application
@@ -153,7 +143,7 @@
   </if:when>
 </if:choose>
 
-  <p>Napsauta yläpalkissa olevaa kellonaikaa nähdäksesi kuluvan päivän, kuukausikalenterin, luettelon tulevista tapahtumista ja uudet ilmoitukset. Kalenterin pikanäppäin on You can also open the calendar by pressing <keyseq><key>Super</key><key>M</key></keyseq>. Tätä kautta voit myös muuttaa päivää ja aikaa, tai avata <app>Evolution</app>-kalenterisovelluksen.</p>
+  <p>Napsauta yläpalkissa olevaa kellonaikaa nähdäksesi kuluvan päivän, kuukausikalenterin, luettelon tulevista tapahtumista ja uudet ilmoitukset. Kalenterin pikanäppäin on <keyseq><key>Super</key><key>M</key></keyseq>. Tätä kautta voit myös muuttaa päivää ja aikaa, tai avata <app>Evolution</app>-kalenterisovelluksen.</p>
 
   <list style="compact">
     <item>
@@ -191,7 +181,7 @@
   <app>Empathy</app>.</p>-->
 
 <!--
-<p>If you set yourself to Unavailable, you won't be bothered by message popups
+<p>If you set yourself to Unavailable, you won’t be bothered by message popups
 at the bottom of your screen. Messages will still be available in the message
 tray when you move your mouse to the bottom-right corner. But only urgent
 messages will be presented, such as when your battery is critically low.</p>
@@ -202,11 +192,11 @@ messages will be presented, such as when your battery is critically low.</p>
 </list>
 -->
 
-  <p>Kun poistut tietokoneeltasi, voit lukita näytön ja siten estää muita käyttämästä tietokonetta tunnuksellasi. Voit vaihtaa käyttäjien välillä kirjautumatta itse ulos, tai siirtää tietokoneen valmiustilaan tai sammuttaa tietokoneen.</p>
+  <p>Kun poistut tietokoneeltasi, voit lukita näytön ja siten estää muita käyttämästä tietokonetta käyttäjätililläsi. Voit vaihtaa käyttäjien välillä kirjautumatta itse ulos, tai siirtää tietokoneen valmiustilaan tai sammuttaa tietokoneen järjestelmävalikosta. Jos laitteistosi tukee näyttöä, jonka suuntaa voi kääntää, voit kääntää näytön kuvan järjestelmävalikosta. Jos näyttösi ei tue kääntöä, kääntöpainiketta ei ole näkyvissä.</p>
 
   <list style="compact">
     <item>
-      <p><link xref="shell-exit">Lue lisää käyttäjien vaihtamisesta, ulos kirjautumisesta sekä tietokoneen sammuttamisesta.</link></p>
+      <p><link xref="shell-exit">Lue lisää käyttäjien vaihtamisesta, uloskirjautumisesta sekä tietokoneen sammuttamisesta.</link></p>
     </item>
   </list>
 

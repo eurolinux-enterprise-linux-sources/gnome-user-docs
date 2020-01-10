@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" id="processes" xml:lang="ko">
+
+  <info>
+    <link type="guide" xref="software#management"/>
+    <revision pkgversion="3.12" date="2014-06-17" status="review"/>
+
+    <credit type="author copyright">
+      <name>Matthias Clasen</name>
+      <email>matthias.clasen@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Aruna Sankaranarayanan</name>
+      <email>aruna.evam@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+
+    <desc>본래 주요 GNOME 세션에서 실행될 것으로 예상하는 프로세스는 무엇입니까?</desc>
+  </info>
+
+  <title>대표 프로세스</title>
+
+  <p>주요 <app>GNOME</app> 세션에서 <link href="man:daemon"><app>daemons</app></link>이라 불리는 프로그램은 시스템상 백그라운드 프로세스에서 실행됩니다. 기본적으로 다음의 데몬을 찾을 수 있습니다:</p>
+
+   <terms>
+     <item>
+       <title>dbus-daemon</title>
+       <p><app>dbus-daemon</app>은 서로 메세지를 교환하는 버스 데몬 메세지를 제공합니다. <app>dbus-daemon</app>은 아무런 두 애플리케이션 사이에서의 일대일 의사소통을 제공하는 D-Bus 라이브러리에서 실행됩니다.</p>
+       <p>더 많은 정보는 <link href="man:dbus-daemon">dbus-daemon</link> 매뉴얼 페이지를 참고합니다.</p>
+     </item>
+     <item>
+       <title>gnome-keyring-daemon</title>
+       <p>다양한 프로그램과 웹사이트에서 사용자 이름과 비밀번호같은 증명서는 <app>gnome-keyring-daemon</app>를 사용하여 안전하게 저장됩니다. 이 정보는 키링 파일이라고 불리는 암호화된 파일에서 쓰이고 사용자의 홈 디렉터리에 보관됩니다.</p>
+       <p>더 많은 정보는 <link href="man:gnome-keyring-daemon">gnome-keyring-daemon</link> 매뉴얼 페이지를 참고합니다.</p>
+     </item>
+     <item>
+       <title>gnome-session</title>
+       <p><app>gnome-session</app> 프로그램은 <app>GDM</app>, <app>LightDM</app>, <app>NODM</app>과 같은 디스플레이 관리 요청을 사용하여 GNOME 데스크톱 환경을 실행합니다. 사용자의 기본 세션은 시스템 관리자에 의한 시스템 설치 시간 설정입니다. <app>gnome-session</app>은 보통 시스템에서 성공적으로 실행된 마지막 세션을 로드합니다.</p>
+       <p>더 많은 정보는 <link href="man:gnome-session">gnome-session</link> 매뉴얼 페이지를 참고합니다.</p>
+     </item>
+     <item>
+       <title>gnome-settings-daemon</title>
+       <p><app>gnome-settings-daemon</app>은 GNOME 세션에 대한 설정과 세션내에서 동작하는 모든 프로그램에 대한 설정을 다룹니다.</p>
+       <p>더 많은 정보는 <link href="man:gnome-settings-daemon">gnome-settings-daemon</link> 매뉴얼 페이지를 참고합니다.</p>
+     </item>
+     <item>
+       <title>gnome-shell</title>
+       <p><app>gnome-shell</app>은 프로그램 런칭, 디렉터리 브라우징, 파일 뷰어 등 GNOME에 대한 핵심 사용자 인터페이스 기능성을 제공합니다.</p>
+       <p>더 많은 정보는 <link href="man:gnome-shell">gnome-shell</link> 매뉴얼 페이지를 참고합니다.</p>
+     </item>
+     <item>
+       <title>pulseaudio</title>
+       <p><app>PulseAudio</app>은 <app>PulseAudio</app> 데몬을 통한 소리 출력 프로그램인 Linux, POSIX, Windows 시스템의 사운드 서버입니다.</p>
+       <p>더 많은 정보는 <link href="man:pulseaudio">pulseaudio</link> 매뉴얼 페이지를 참고합니다.</p>
+     </item>
+   </terms>
+
+  <p>사용자의 설정에 따라 다음 항목도 일부 표시될 수 있습니다:</p>
+   <list ui:expanded="false">
+   <title>부가 프로세스</title>
+     <item><p><app>at-spi2-dbus-launcher</app></p></item>
+     <item><p><app>at-spi2-registryd</app></p></item>
+     <item><p><app>gnome-screensaver</app></p></item>
+     <item><p><app>gnome-shell-calendar-server</app></p></item>
+     <item><p><app>goa-daemon</app></p></item>
+     <item><p><app>gsd-printer</app></p></item>
+     <item><p>다양한 <app>Evolution</app> 제조 프로세스</p></item>
+     <item><p>다양한 <app>GVFS</app> 프로세스</p></item>
+   </list>
+
+</page>

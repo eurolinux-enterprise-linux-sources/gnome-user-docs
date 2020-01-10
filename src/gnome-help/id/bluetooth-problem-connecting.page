@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:if="http://projectmallard.org/if/1.0/" type="guide" style="problem" version="1.0 if/1.0" id="bluetooth-problem-connecting" xml:lang="id">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="problem" id="bluetooth-problem-connecting" xml:lang="id">
 
   <info>
     <link type="guide" xref="bluetooth#problems"/>
@@ -31,11 +31,17 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Andika Triwidada</mal:name>
       <mal:email>andika@gmail.com</mal:email>
-      <mal:years>2011, 2012, 2013, 2014.</mal:years>
+      <mal:years>2011-2014, 2017.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ahmad Haris</mal:name>
+      <mal:email>ahmadharis1982@gmail.com</mal:email>
+      <mal:years>2017.</mal:years>
     </mal:credit>
   </info>
 
-  <title>I cannot connect my Bluetooth device</title>
+  <title>Saya tak bisa menyambung ke perangkat Bluetooth saya</title>
 
   <p>Ada sejumlah alasan mengapa Anda mungkin tak bisa menyambung ke suatu perangkat Bluetooth, seperti telepon atau headset.</p>
 
@@ -46,30 +52,15 @@
     </item>
     <item>
       <title>Perangkat keras Bluetooth tak dikenal</title>
-      <p>Your Bluetooth adapter or dongle may not have been recognized by the
-      computer. This could be because
-      <link xref="hardware-driver">drivers</link> for the adapter are not
-      installed. Some Bluetooth adapters are not supported on Linux, so you may
-      not be able to get the right drivers for them. In this case, you will
-      probably have to get a different Bluetooth adapter.</p>
+      <p>Adaptor atau dongle Bluetooth Anda mungkin belum dikenali oleh komputer. Ini bisa jadi karena <link xref="hardware-driver">driver</link> untuk adaptor tidak diinstal. Beberapa adaptor Bluetooth tidak didukung pada Linux, sehingga Anda mungkin tidak bisa mendapatkan driver yang tepat untuk mereka. Dalam hal ini, Anda mungkin harus memakai adaptor Bluetooth yang lain.</p>
     </item>
     <item>
-      <title>Adapter is not switched on</title>
-      <if:choose>
-        <if:when test="platform:unity">
-          <p>Pastikan bahwa adaptor Bluetooth Anda dinyalakan. Klik ikon Bluetooth pada <gui>bilah menu</gui> dan periksa bahwa itu tidak <link xref="bluetooth-turn-on-off">dinonaktifkan</link>.</p>
-        </if:when>
-        <p>Make sure that your Bluetooth adapter is switched on. Open the
-        Bluetooth panel and check that it is not
-        <link xref="bluetooth-turn-on-off">disabled</link>.</p>
-      </if:choose>
+      <title>Adaptor Bluetooth tidak dinyalakan</title>
+        <p>Pastikan bahwa adaptor Bluetooth Anda dinyalakan. Buka panel Bluetooth dan periksa bahwa itu tidak <link xref="bluetooth-turn-on-off">dinonaktifkan</link>.</p>
     </item>
     <item>
       <title>Koneksi perangkat Bluetooth dimatikan</title>
-      <p>Check that Bluetooth is turned on on the device you are trying to
-      connect to, and that it is <link xref="bluetooth-visibility">discoverable
-      or visible</link>. For example, if you are trying to connect to a phone,
-      make sure that it is not in airplane mode.</p>
+      <p>Periksalah bahwa Bluetooth dinyalakan pada perangkat yang Anda coba hubungi, dan itu <link xref="bluetooth-visibility">dapat ditemukan atau tampak</link>. Sebagai contoh, bila Anda mencoba menyambung ke suatu telepon, pastikan bahwa itu tidak dalam mode pesawat terbang.</p>
     </item>
     <item>
       <title>Tak ada adaptor Bluetooth dalam komputer Anda</title>

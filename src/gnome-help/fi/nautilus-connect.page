@@ -37,7 +37,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Jiri Grönroos</mal:name>
       <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
-      <mal:years>2012-2016.</mal:years>
+      <mal:years>2012-2018.</mal:years>
     </mal:credit>
   </info>
 
@@ -50,7 +50,7 @@ application from the <gui>Activities</gui> overview, and click
 <gui>Other Locations</gui> in the sidebar. The file manager
 will find any computers on your local area network that advertize
 their ability to serve files. If you want to connect to a server
-on the internet, or if you do not see the computer you're looking
+on the internet, or if you do not see the computer you’re looking
 for, you can manually connect to a server by typing in its
 internet/network address.</p>
 
@@ -127,19 +127,12 @@ internet/network address.</p>
 </item>
 <item>
   <title>Julkinen FTP</title>
-  <p>Sites that allow you to download files will sometimes provide
-  public or anonymous FTP access. These servers do not require a
-  username and password, and will usually not allow you to delete
-  or upload files.</p>
+  <p>Tiedostojen latauksia tarjoavat palvelimet saattavat tarjota julkisen (anonyymin) FTP-yhteyden. Nämä palvelimet eivät vaadi käyttäjätunnusta ja salasanaa, eivätkä yleensä salli tiedostojen poistamista tai lähettämistä.</p>
   <p>Tyypillinen anonyymi FTP-osoite näyttää tältä:</p>
   <example>
     <p><sys>ftp://ftp.esimerkkiosoite.fi/polku/</sys></p>
   </example>
-  <p>Some anonymous FTP sites require you to log in with a
-  public username and password, or with a public username using
-  your email address as the password. For these servers, use the
-  <gui>FTP (with login)</gui> method, and use the credentials
-  specified by the FTP site.</p>
+  <p>Jotkin anonyymi FTP-palvelimet edellyttävät sisäänkirjaantumisen julkisella käyttäjätunnuksella ja salasanalla, tai julkisella käyttäjätunnuksella käyttäen sähköpostiosoitettasi salasanana. Käytä <gui>FTP (sisäänkirjauksella)</gui> näille palvelimille, käyttäen FTP-palvelimen edellyttämiä tunnuksia.</p>
 </item>
 <item>
   <title>Windows-jako</title>
@@ -151,10 +144,14 @@ internet/network address.</p>
 </item>
 <item>
   <title>WebDAV ja salattu WebDAV</title>
-  <p>Internetissä käytettyyn HTTP-protokollaan perustuvaa WebDAVia käytetään toisinaan tiedostojen jakamiseen paikallisverkossa ja tiedostojen varastointiin internetissä. Käytäthän salattua yhteyttä, jos käyttämäsi WebDAV-palvelin tukee sitä. Salattu WebDAV-yhteys käyttää vahvaa SSL-salausta, jolloin muut käyttäjät eivät näe salasanaasi.</p>
+  <p>Based on the HTTP protocol used on the web, WebDAV is sometimes used to
+  share files on a local network and to store files on the internet. If the
+  server you’re connecting to supports secure connections, you should choose
+  this option. Secure WebDAV uses strong SSL encryption, so that other users
+  can’t see your password.</p>
   <p>Tyypillinen WebDAV-osoite näyttää tältä:</p>
   <example>
-    <p><sys>dav://example.hostname.com/path</sys></p>
+    <p><sys>dav://esimerkki.palvelin.fi/polku</sys></p>
   </example>
 </item>
 <item>
@@ -165,7 +162,7 @@ internet/network address.</p>
   needed when connecting.</p>
   <p>Tyypillisen NFS-jaon osoite näyttää tältä:</p>
   <example>
-    <p><sys>nfs://servername/path</sys></p>
+    <p><sys>nfs://palvelin/polku</sys></p>
   </example>
 </item>
 </terms>

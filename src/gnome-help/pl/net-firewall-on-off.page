@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-firewall-on-off" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="net-security" group="#first"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.10" date="2013-11-03" status="incomplete"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Można kontrolować, które programy mogą używać sieci. Pomaga to zabezpieczać komputer.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Włączanie i blokowanie zapory sieciowej</title>
+
+  <p>System powinien być wyposażony w <em>zaporę sieciową</em> (ang. firewall) umożliwiającą blokowanie dostępu innych osób w Internecie lub sieci lokalnej do programów na komputerze. Pomaga to zabezpieczać komputer.</p>
+
+  <p>Wiele programów może używać połączenia sieciowego. Na przykład, można udostępniać pliki lub umożliwić komuś zdalne przeglądanie pulpitu. W zależności od konfiguracji komputera, być może należy dostosować zaporę sieciową, aby te usługi mogły poprawnie działać.</p>
+
+  <p>Każdy program używający sieci korzysta z konkretnego <em>portu sieciowego</em>. Aby inne komputery w sieci mogły używać usług danego programu, należy „otworzyć” przydzielony mu port w zaporze sieciowej:</p>
+
+
+  <steps>
+    <item>
+      <p>Przejdź do <gui>ekranu podglądu</gui> w górnym lewym rogu ekranu i uruchom program do zarządzania zaporą sieciową. Jeśli żadnego nie ma, to należy go zainstalować (np. Firestarter lub GUFW).</p>
+    </item>
+    <item>
+      <p>Otwórz lub wyłącz port dla usługi sieciowej, w zależności od tego, czy inne osoby mają mieć do niej dostęp. Port, który należy zmienić <link xref="net-firewall-ports">zależy od usługi</link>.</p>
+    </item>
+    <item>
+      <p>Zapisz lub zastosuj zmiany, postępując zgodnie z instrukcjami podanymi przez narzędzie do zarządzania zaporą.</p>
+    </item>
+  </steps>
+
+</page>

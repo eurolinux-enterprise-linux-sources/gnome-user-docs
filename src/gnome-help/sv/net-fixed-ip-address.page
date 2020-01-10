@@ -8,6 +8,7 @@
     <revision pkgversion="3.4.0" date="2012-03-13" status="final"/>
     <revision pkgversion="3.15" date="2014-12-04" status="final"/>
     <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.24" date="2017-03-26" status="final"/>
 
     <credit type="author">
       <name>Jim Campbell</name>
@@ -42,15 +43,16 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Anders Jonsson</mal:name>
       <mal:email>anders.jonsson@norsjovallen.se</mal:email>
-      <mal:years>2016</mal:years>
+      <mal:years>2016, 2017</mal:years>
     </mal:credit>
   </info>
 
   <title>Skapa en anslutning med en fast IP-adress</title>
 
-  <p>De flesta nätverk kommer automatiskt att tilldela en <link xref="net-what-is-ip-address">IP-adress</link> och andra detaljer till din dator när du ansluter till nätverket. Dessa detaljer kan uppdateras regelbundet men du kanske önskar att få en fast IP-adress till din dator så du alltid vet vilken dess adress är (om den till exempel är en filserver).</p> <p>För att ge din dator en fast (statisk) IP-adress:</p>
+  <p>De flesta nätverk kommer automatiskt att tilldela en <link xref="net-what-is-ip-address">IP-adress</link> och andra detaljer till din dator när du ansluter till nätverket. Dessa detaljer kan uppdateras regelbundet men du kanske önskar att få en fast IP-adress till din dator så du alltid vet vilken dess adress är (om den till exempel är en filserver).</p>
 
   <steps>
+    <title>För att ge din dator en fast (statisk) IP-adress:</title>
     <item>
       <p>Öppna översiktsvyn <gui xref="shell-introduction#activities">Aktiviteter</gui> och börja skriv <gui>Nätverk</gui>.</p>
     </item>
@@ -58,16 +60,19 @@
       <p>Klicka på <gui>Nätverk</gui> för att öppna panelen.</p>
     </item>
     <item>
-      <p>I vänstra panelen, välj nätverksanslutningen som du vill ge en fast adress. Om du ansluter till nätverket med en kabel, klicka på <gui>Trådbundet</gui>, klicka sedan på knappen <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">inställningar</span></media> i nedre högra hörnet av panelen. För en <gui>Trådlös</gui>-anslutning kommer <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">inställningar</span></media>-knappen att finnas intill det aktiva nätverket.</p>
+      <p>I vänstra panelen, välj nätverksanslutningen som du vill ska ha en fast adress. Om du ansluter till nätverket med en kabel, klicka på <gui>Trådbundet</gui>, klicka sedan på knappen <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">inställningar</span></media> i nedre högra hörnet av panelen. För en <gui>Trådlös</gui>-anslutning kommer <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">inställningar</span></media>-knappen att finnas intill det aktiva nätverket.</p>
     </item>
     <item>
-      <p>Klicka på fliken <gui>IPv4</gui> eller <gui>IPv6</gui> och ändra <gui>Adresser</gui> till <em>Manuell</em>.</p>
+      <p>Klicka på <gui>IPv4</gui> eller <gui>IPv6</gui> i den vänstra panelen och ändra <gui>Adresser</gui> till <em>Manuell</em>.</p>
     </item>
     <item>
-      <p>Mata in information om <em>Adress</em>, <em>Nätmask</em> och <em>Gateway</em> i de avsedda fälten. Hur du väljer dessa beror på dina nätverksinställningar; det finns specifika regler som styr vilka IP-adresser och nätmasker som är giltiga för ett givet nätverk.</p>
+      <p>Skriv in <gui xref="net-what-is-ip-address">IP-adress</gui> och <gui>Gateway</gui> samt en lämplig <gui>Nätmask</gui>.</p>
     </item>
     <item>
-      <p>Om det behövs, mata in adressen till en <em>Domännamnsserver</em> i fältet <gui>DNS-servrar</gui>. Detta är IP-adressen till en server som slår upp domännamn; de flesta företagsnätverk och internetleverantörer har dedikerade DNS-servrar.</p>
+      <p>I avsnittet <gui>DNS</gui>, slå om <gui>Automatisk</gui> till <gui>AV</gui>. Mata in IP-adressen för en DNS-server som du vill använda. Mata in ytterligare DNS-serveradresser via <gui>+</gui>-knappen.</p>
+    </item>
+    <item>
+      <p>I avsnittet <gui>Rutter</gui>, slå om <gui>Automatisk</gui> till <gui>AV</gui>. Mata in <gui>Adress</gui>, <gui>Nätmask</gui>, <gui>Rutt</gui> och <gui>Metrisk</gui> för en rutt du vill använda. Mata in ytterligare rutter via <gui>+</gui>-knappen.</p>
     </item>
     <item>
       <p>Klicka på <gui>Verkställ</gui>. Nätverksanslutningen bör nu ha en fast IP-adress.</p>

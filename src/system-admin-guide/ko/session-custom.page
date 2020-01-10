@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="session-custom" xml:lang="ko">
+
+  <info>
+    <link type="guide" xref="sundry#session"/>
+    <link type="guide" xref="login#management"/>
+    <revision pkgversion="3.12" date="2014-06-17" status="review"/>
+
+    <credit type="author copyright">
+      <name>minnie_eg</name>
+      <email>amany.elguindy@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Jana Svarova</name>
+      <email>jana.svarova@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>데스크톱 세션 파일을 설치하여 사용자 지정 세션을 생성합니다.</desc>
+  </info>
+
+  <title>사용자 지정 세션 생성</title>
+
+ <p>사용자 지정 구성을 사용하여 독자적인 세션을 만드려면 다음의 절차를 따릅니다:</p>
+
+<steps>
+  <item><p><file>.desktop</file> 파일을 <file>/etc/X11/sessions/<var>new-session</var>.desktop</file>에 생성합니다. 파일이 다음의 기재 사항을 명시했는지 확인합니다:</p>
+  <code>[데스크톱 기재 사항]
+Encoding=UTF-8
+Type=Application
+Name=<input>Custom session</input>
+Comment=<input>This is our custom session</input>
+Exec=<input>gnome-session --session=new-session</input></code>
+   <p><code>Exec</code> 기재 사항은 실행할 명령을 가능한 인자와 함께 명시합니다. <cmd>gnome-session --session=<var>new-session</var></cmd> 명령을 사용하여 사용자 지정 세션을 실행 할 수 있습니다.</p>
+   <p>더 많은 정보는 <cmd>gnome-session</cmd>, see the <link href="man:gnome-session">gnome-session</link> 매뉴얼 페이지를 참고합니다.</p>
+  </item>
+  <item><p>세션에 이름과 요구하는 구성이 명시되있는 <file>/usr/share/gnome-session/sessions/<var>new-session</var>.session</file>에 사용자 지정 세션 파일을 생성합니다:</p>
+   <code>[GNOME 세션]
+Name=<input>Custom Session</input>
+RequiredComponents=<input>gnome-shell-classic;gnome-settings-daemon;</input></code>
+  <p><code>RequiredComponents</code>에 명시된 어떤 아이템은 상응하는 <file>.desktop</file> 파일이 <file>/usr/share/applications/</file>에 있어야 합니다.</p>
+  </item>
+</steps>
+
+  <p>사용자 지정 세션 파일을 구성한다면 새로운 세션은 GDM 로그인 화면의 세션 목록에서 사용 할 수 있습니다.</p>
+
+  <section id="custom-session-issues">
+  <title>알려진 문제</title>
+    <p>Debian 또는 Debian에 기반된 시스템에서는 다음과 같은 오류가 발생할 수 있습니다:</p>
+
+    <screen>Xsession: unable to launch ""
+    Xsession --- "" not found; falling back to default
+    session.</screen>
+
+    <p>이러한 일이 발생한다면 <file>/etc/X11/Xsession.d/20x11-common_process-args</file> 파일 변경을 위해 다음 단계를 따릅니다:</p>
+    <steps>
+    <item><p><code>STARTUP_FULL_PATH=$(/usr/bin/which <input>"$1"</input>|| true)</code>을 <code>STARTUP_FULL_PATH=$(/usr/bin/which <input>$1</input> || true)</code>로 변경</p></item>
+    <item><p><code>STARTUP=<input>"$1"</input></code>을 <code>STARTUP=<input>$1</input></code>로 변경</p></item>
+    </steps>
+  </section>
+
+</page>

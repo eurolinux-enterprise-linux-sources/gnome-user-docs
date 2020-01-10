@@ -9,7 +9,7 @@
     <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
-      <name>Contributors to the Ubuntu documentation wiki</name>
+      <name>Mensen die bijdragen aan de Ubuntu-documentatie wiki</name>
     </credit>
 
     <credit type="author">
@@ -19,71 +19,45 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Some device drivers don't work very well with certain wireless
-    adapters, so you may need to find a better one.</desc>
+    <desc>Sommige stuurprogramma's werken niet erg goed met bepaalde draadloos adapters; u moet misschien naar een beter stuurprogramma zoeken.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Justin van Steijn</mal:name>
+      <mal:email>justin50@live.nl</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hannie Dumoleyn</mal:name>
+      <mal:email>hannie@ubuntu-nl.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
   </info>
 
-  <title>Wireless network troubleshooter</title>
+  <title>Probleemoplosser draadloos netwerk</title>
 
-  <subtitle>Make sure that working device drivers are installed</subtitle>
+  <subtitle>Ervoor zorgen dat er goed werkende stuurprogramma's zijn geïnstalleerd</subtitle>
 
 <!-- Needs links (see below) -->
 
-  <p>In this step you can check to see if you can get working device drivers
-  for your wireless adapter. A <em>device driver</em> is a piece of software
-  which tells the computer how to make a hardware device work properly. Even
-  though the wireless adapter has been recognized by the computer, it may not
-  have drivers which work very well. You may be able to find different drivers
-  for the wireless adapter which do work. Try some of the options below:</p>
+  <p>In deze stap kunt u nagaan of u goed werkende stuurprogramma's voor uw draadloze adapter kunt vinden. Een <em>stuurprogramma</em> is een stukje software dat de computer vertelt hoe een hardware-apparaat naar behoren moet werken. Ook al is de draadloos adapter door de computer herkend, het kan zijn dat deze geen goed werkende stuurprogramma's heeft. Mogelijk kunt u andere stuurprogramma's vinden voor de draadloos adapter die wel werken. Probeer enkele van de onderstaande opties:</p>
 
   <list>
     <item>
-      <p>Check to see if your wireless adapter is on a list of supported
-      devices.</p>
-      <p>Most Linux distributions keep a list of wireless devices that they
-      have support for. Sometimes, these lists provide extra information on how
-      to get the drivers for certain adapters working properly. Go to the list
-      for your distribution (for example,
-      <link href="https://help.ubuntu.com/community/WifiDocs/WirelessCardsSupported">Ubuntu</link>,
-      <link href="https://wiki.archlinux.org/index.php/Wireless_network_configuration">Arch</link>,
-      <link href="http://linuxwireless.org/en/users/Drivers">Fedora</link> or
-      <link href="http://en.opensuse.org/HCL:Network_(Wireless)">openSUSE</link>)
-      and see if your make and model of wireless adapter is listed. You may be
-      able to use some of the information there to get your wireless drivers
-      working.</p>
+      <p>Nagaan of uw draadloos netwerk-adapter in een lijst met ondersteunde apparaten staat.</p>
+      <p>De meeste GNU/Linux-distributies houden een lijst bij van draadloos-apparaten waarvoor ze ondersteuning hebben. Soms bevatten deze lijsten extra informatie over hoe men aan goed werkende stuurprogramma's voor bepaalde adapters komt. Ga naar de lijst van uw distributie (bijvoorbeeld <link href="https://help.ubuntu.com/community/WifiDocs/WirelessCardsSupported">Ubuntu</link>, <link href="https://wiki.archlinux.org/index.php/Wireless_network_configuration">Arch</link>, <link href="http://linuxwireless.org/en/users/Drivers">Fedora</link> of <link href="http://en.opensuse.org/HCL:Network_(Wireless)">openSUSE</link>) en kijk of het merk en model van uw draadloos netwerk-adapter in de lijst voorkomt. Mogelijke kunt u de informatie die u daar vindt gebruiken om uw draadloos netwerk-adapter goed werkend te krijgen.</p>
     </item>
     <item>
-      <p>Look for restricted (binary) drivers.</p>
-      <p>Many Linux distributions only come with device drivers which are
-      <em>free</em> and <em>open source</em>. This is because they cannot
-      distribute drivers which are proprietary, or closed-source. If the
-      correct driver for your wireless adapter is only available in a non-free,
-      or "binary-only" version, it may not be installed by default. If this is
-      the case, look on the wireless adapter manufacturer's website to see if
-      they have any Linux drivers.</p>
-      <p>Some Linux distributions have a tool that can download restricted
-      drivers for you. If your distribution has one of these, use it to see if
-      it can find any wireless drivers for you.</p>
+      <p>Zoek naar beperkte (binaire) stuurprogramma's.</p>
+      <p>Veel Linux-distributies leveren alleen apparaat-stuurprogramma's die <em>vrij</em> en <em>open bron</em> zijn. Dit komt omdat zij geen stuurprogramma's kunnen verspreiden die niet-vrij (of ‘gesloten-bron’) zijn. Als het juiste stuurprogramma voor uw draadloos-netwerk-adapter alleen beschikbaar is in een niet-vrije, of ‘alleen-binaire’ versie, is het waarschijnlijk standaard niet geïnstalleerd. Als dat het geval is, kijk op de website van de draadloos-adapter-fabrikant om te zien of ze Linux-drivers hebben.</p>
+      <p>Sommige GNU/Linux-distributies hebben een hulpmiddel waarmee u beperkte stuurprogramma's kunt downloaden. Als uw distributie die heeft, gebruik die dan om er achter te komen of het draadloze stuurprogramma's voor u kunt vinden.</p>
     </item>
     <item>
-      <p>Use the Windows drivers for your adapter.</p>
-      <p>In general, you cannot use a device driver designed for one operating
-      system (like Windows) on another operating system (like Linux). This is
-      because they have different ways of handling devices. For wireless
-      adapters, however, you can install a compatibility layer called
-      <em>NDISwrapper</em> which lets you use some Windows wireless drivers on
-      Linux. This is useful because wireless adapters almost always have
-      Windows drivers available for them, whereas Linux drivers are sometimes
-      not available. You can learn more about how to use NDISwrapper
-      <link href="http://sourceforge.net/apps/mediawiki/ndiswrapper/index.php?title=Main_Page">here</link>.
-      Note that not all wireless drivers can be used through NDISwrapper.</p>
+      <p>De Windows-stuurprogramma's gebruiken voor uw adapter.</p>
+      <p>Over het algemeen kunt u niet een stuurprogramma dat ontworpen is voor het ene besturingssysteem (zoals Windows) in een ander besturingssysteem (zoals GNU/Linux) gebruiken. Dit komt doordat ze op een verschillende manier omgaan met apparaten. Maar voor draadloos netwerk-adapters kunt u een compatibiliteitslaag installeren genaamd <em>NDISwrapper</em>, waarmee u bepaalde stuurprogramma's voor draadloos netwerk-adapters van Windows in GNU/Linux kunt gebruiken. Dit is nuttig omdat draadloos netwerk-adapters bijna altijd over Windows stuurprogramma's beschikken, terwijl er soms geen Linux-stuurprogramma's beschikbaar zijn. U kunt <link href="http://sourceforge.net/apps/mediawiki/ndiswrapper/index.php?title=Main_Page">hier</link> meer te weten komen over hoe u NDISwrapper moet gebruiken. Bedenk wel dat niet alle draadlooze stuurprogramma's gebruikt kunnen worden via NDISwrapper.</p>
     </item>
   </list>
 
-  <p>If none of these options work, you may want to try a different wireless
-  adapter to see if you can get that working. USB wireless adapters are often
-  quite cheap, and will plug into any computer. You should check that the
-  adapter is compatible with your Linux distribution before buying it,
-  though.</p>
+  <p>Als geen van deze opties werken kunt u een andere draadloos-netwerk-adapter gebruiken om er achter te komen of die werkt. USB-draadloze-adapters zijn vaak redelijk goedkoop, en kunnen in alle computers gestoken worden. U zou echter eerst moeten controleren of de adapter compatibel is met uw GNU/Linux-distributie.</p>
 
 </page>

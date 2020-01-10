@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-firewall-on-off" xml:lang="pt">
+
+  <info>
+    <link type="guide" xref="net-security" group="#first"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.10" date="2013-11-03" status="incomplete"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Paul W. Frields</name>
+      <email>stickster@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Pode controlar que programas são acessível na rede. Isto lhe ajuda a manter o seu computador segura.</desc>
+  </info>
+
+  <title>Ativar e bloquear o acesso aa firewalh</title>
+
+  <p>Seu sistema deveria estar computadordo com um <em>firewalh</em> que lhe permita bloquear o acesso a programas outros os utilizadores em Internet ou na sua rede. Isto ajuda a que o seu computador esteja segura.</p>
+
+  <p>Muitos aplicações podem usar a sua conexão de rede. Por exemplo, pode partilhar ficheiros ou permitir que alguém veja seu escritório de forma remota. Dependendo de como esteja configurado o seu computador pode precisar configurar a firewalh para permitir que estes serviços funcionem segundo o previsto.</p>
+
+  <p>Each program that provides network services uses a specific <em>network
+  port</em>. To enable other computers on the network to access a service, you
+  may need to “open” its assigned port on the firewall:</p>
+
+
+  <steps>
+    <item>
+      <p>Go to <gui>Activities</gui> in the top left corner of the screen and
+      start your firewall application. You may need to install a firewall
+      manager yourself if you can’t find one (for example, Firestarter or
+      GUFW).</p>
+    </item>
+    <item>
+      <p>Abra ou feche o porto para seu serviço de rede, dependendo de se quer que a gente pode aceder a ele ou não. O porto que deve mudar <link xref="net-firewall-ports">dependerá do serviço</link></p>
+    </item>
+    <item>
+      <p>Guarde ou aplique as mudanças, seguindo as instruções adicionais que lhe proporciona a ferramenta da firewalh.</p>
+    </item>
+  </steps>
+
+</page>

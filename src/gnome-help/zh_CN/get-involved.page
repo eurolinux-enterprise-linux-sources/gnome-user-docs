@@ -11,6 +11,11 @@
       <name>Tiffany Antopolski</name>
       <email>tiffany@antopolski.com</email>
     </credit>
+    <credit type="author">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -21,18 +26,48 @@
   </info>
   <title>参加志愿者社区以改善本指南</title>
 
-  <section id="bug-report">
-   <title>报告错误或者提出建议</title>
-   <p>这份帮助文档是由社区志愿者编写的，也欢迎您的加入，如果您发现里面有错误(比如拼写错误，应当改写的操作说明)，您可以发送一份<em>缺陷报告</em>，要发送一份报告，请访问：<link href="https://bugzilla.gnome.org/">bugzilla.gnome.org</link>。</p>
-   <p>您需要注册用户，然后可以发送报告，通过邮箱接收它的更新状态。如果您还没有帐号，点击创建新帐号 <gui>New Account</gui> 链接来创建一个。</p>
-   <p>如果您已有帐号，登录后点击 <guiseq><gui>File a Bug</gui><gui>Core</gui><gui>gnome-user-docs</gui></guiseq>。在报告缺陷之前，请您先阅读写作指导：<link href="https://bugzilla.gnome.org/page.cgi?id=bug-writing.html">bug writing guidelines</link>，请先访问此<link href="https://bugzilla.gnome.org/browse.cgi?product=gnome-user-docs">链接</link>，查看是否已有类似的报告存在。</p>
-   <p>填写报告时，在 <gui>Component</gui> 菜单中，选择一个组件。如果您的报告是针对本文档，那么就选择 <gui>gnome-help</gui> 组件，如果您不确定是哪一个组件，请选择“常规” <gui>general</gui>。</p>
-   <p>如果是请求没有凶信的帮助主题内容，在 <gui>Severity</gui> 菜单选择 <gui>enhancement</gui> 项，填写内容描述，然后点 <gui>Commit</gui> 提交。</p>
-   <p>您的报告会有一个 ID 号，接受处理后会更新状态。感谢您对 GNOME 完善的帮助。</p>
+  <section id="submit-issue">
+
+   <title>Submit an issue</title>
+
+   <p>This help documentation is created by a volunteer community. You are
+   welcome to participate. If you notice a problem with these help pages
+   (like typos, incorrect instructions or topics that should be covered but
+   are not), you can submit a <em>new issue</em>. To submit a new issue, go to
+   the <link href="https://gitlab.gnome.org/GNOME/gnome-user-docs/issues">issue
+   tracker</link>.</p>
+
+   <p>You need to register, so you can submit an issue and receive updates by
+   email about its status. If you do not already have an account, click the
+   <gui><link href="https://gitlab.gnome.org/users/sign_in">Sign in / Register</link></gui>
+   button to create one.</p>
+
+   <p>Once you have an account, make sure you are logged in, then go back to the
+   <link href="https://gitlab.gnome.org/GNOME/gnome-user-docs/issues">documentation
+   issue tracker</link> and click
+   <gui><link href="https://gitlab.gnome.org/GNOME/gnome-user-docs/issues/new">New
+   issue</link></gui>. Before reporting a new issue, please
+   <link href="https://gitlab.gnome.org/GNOME/gnome-user-docs/issues">browse</link>
+   for the issue to see if something similar already exists.</p>
+
+   <p>Before submitting your issue, choose the appropriate label in the
+   <gui>Labels</gui> menu. If you are filing an issue against this
+   documentation, you should choose the <gui>gnome-help</gui> label. If you are
+   not sure which component your issue pertains to, do not choose any.</p>
+
+   <p>If you are requesting help about a topic that you feel is not covered,
+   choose <gui>Feature</gui> as the label. Fill in the Title and Description
+   sections and click <gui>Submit issue</gui>.</p>
+
+   <p>Your issue will be given an ID number, and its status will be updated as
+   it is being dealt with. Thanks for helping make the GNOME Help better!</p>
+
    </section>
 
    <section id="contact-us">
    <title>联系我们</title>
+
    <p>您可以发送<link href="mailto:gnome-doc-list@gnome.org">邮件</link>到 GNOME 文档列表，了解如何加入文档项目组。</p>
+
    </section>
 </page>

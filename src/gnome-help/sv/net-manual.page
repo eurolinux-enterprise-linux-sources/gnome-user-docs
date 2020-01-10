@@ -8,6 +8,7 @@
     <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
     <revision pkgversion="3.10" date="2013-11-11" status="review"/>
     <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.28" date="2018-03-28" status="review"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -36,7 +37,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Anders Jonsson</mal:name>
       <mal:email>anders.jonsson@norsjovallen.se</mal:email>
-      <mal:years>2016</mal:years>
+      <mal:years>2016, 2017</mal:years>
     </mal:credit>
   </info>
 
@@ -47,21 +48,26 @@
   <steps>
     <title>För att manuellt ange dina nätverksinställningar:</title>
     <item>
-      <p>Öppna översiktsvyn <gui xref="shell-introduction#activities">Aktiviteter</gui> och börja skriv <gui>Nätverk</gui>.</p>
+      <p>Öppna översiktsvyn <gui xref="shell-introduction#activities">Aktiviteter</gui> och börja skriv <gui>Inställningar</gui>.</p>
     </item>
     <item>
-      <p>Klicka på <gui>Nätverk</gui> för att öppna panelen.</p>
+      <p>Klicka på <gui>Inställningar</gui>.</p>
     </item>
     <item>
-      <p>I vänstra panelen, välj nätverksanslutningen som du vill ställa in manuellt. Om du ansluter till nätverket med en kabel, klicka på <gui>Trådbundet</gui> och klicka sedan på <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">inställningar</span></media>-knappen i det nedre högra hörnet i panelen. För en <gui>Trådlös</gui>-anslutning kommer <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">inställningar</span></media>-knappen att finnas intill det aktiva nätverket.</p>
+      <p>I vänstra panelen, välj nätverksanslutningen som du vill ställa in manuellt. Om du ansluter till nätverket med en kabel, klicka på <gui>Nätverk</gui>. Klicka i annat fall på <gui>Trådlöst nätverk</gui>.</p>
       <p>Säkerställ att ditt trådlösa kort är påslaget eller att nätverkskabeln är ansluten.</p>
     </item>
-    <item>
-      <p>Klicka på <gui>IPv4</gui> och ändra <gui>Adresser</gui> till <gui>Manuell</gui>.</p>
+    <item>      
+      <p>Klicka på knappen <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">inställningar</span></media>.</p>
+      <note>
+        <p>För en <gui>Trådlös</gui> anslutning kommer knappen <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">inställningar</span></media> finnas intill det aktiva nätverket.</p>
+      </note>
     </item>
     <item>
-      <p>Skriv in <gui>Adress</gui> och <gui>Gateway</gui> samt en lämplig <gui>Nätmask</gui>.</p>
-      <p>Dessa måste vara <em>IP-adresser</em>: det vill säga, de måste vara fyra nummer separerade av punkter (till exempel 123.45.6.78).</p>
+      <p>Klicka på <gui>IPv4</gui> eller <gui>IPv6</gui> i den vänstra panelen och ändra <gui>Adresser</gui> till <em>Manuell</em>.</p>
+    </item>
+    <item>
+      <p>Skriv in <gui xref="net-what-is-ip-address">IP-adress</gui> och <gui>Gateway</gui> samt en lämplig <gui>Nätmask</gui>.</p>
     </item>
     <item>
       <p>I avsnittet <gui>DNS</gui>, slå om <gui>Automatisk</gui> till <gui>AV</gui>. Mata in IP-adressen för en DNS-server som du vill använda. Mata in ytterligare DNS-serveradresser via <gui>+</gui>-knappen.</p>

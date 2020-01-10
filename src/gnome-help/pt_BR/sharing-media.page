@@ -17,7 +17,7 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Share media on your local network using UPnP.</desc>
+    <desc>Compartilhe mídias na sua rede local usando UPnP.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Rodolfo Ribeiro Gomes</mal:name>
@@ -40,20 +40,16 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Rafael Fontenelle</mal:name>
       <mal:email>rafaelff@gnome.org</mal:email>
-      <mal:years>2012-2016.</mal:years>
+      <mal:years>2012-2018.</mal:years>
     </mal:credit>
   </info>
 
   <title>Compartilhando suas músicas, fotos e vídeos</title>
 
-  <p>You can browse, search and play the media on your computer using a
-  <sys>UPnP</sys> or <sys>DLNA</sys> enabled device such as a phone, TV or game
-  console. Configure <gui>Media Sharing</gui> to allow these devices to access
-  the folders containing your music, photos and videos.</p>
+  <p>Você pode navegador, pesquisar e reproduzir a mídia em seu computador usando um dispositivo com capacidade de <sys>UPnP</sys> ou <sys>DLNA</sys> tal como um telefone, TV ou console de videogame. Configura <gui>Compartilhamento de mídia</gui> para permitir que esses dispositivos acessem as pastas contendo suas músicas, fotos e vídeos.</p>
 
   <note style="info package">
-    <p>You must have the <app>Rygel</app> package installed for <gui>Media
-    Sharing</gui> to be visible.</p>
+    <p>Você deve ter o pacote <app>Rygel</app> instalado para que <gui>Compartilhamento de mídia</gui> esteja visível.</p>
 
     <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
       <if:when test="action:install">
@@ -64,14 +60,13 @@
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Sharing</gui>.</p>
+      <p>Abra o panorama de <gui xref="shell-introduction#activities">Atividades</gui> e comece a digitar <gui>Compartilhamento</gui>.</p>
     </item>
     <item>
       <p>Clique em <gui>Compartilhamento</gui> para abrir o painel.</p>
     </item>
     <item>
-      <p>Se <gui>Compartilhar</gui> estiver em <gui>OFF</gui>, alterne-o para <gui>ON</gui>.</p>
+      <p>Se <gui>Compartilhar</gui> estiver em <key>○</key>, alterne-o para <key>❙</key>.</p>
 
       <note style="info"><p>Se o texto embaixo de <gui>Nome do computador</gui> permite que o edite, você pode <link xref="sharing-displayname">alterar</link> o nome que o seu computador exibe na rede.</p></note>
     </item>
@@ -79,30 +74,23 @@
       <p>Selecione <gui>Compartilhamento de multimídia</gui>.</p>
     </item>
     <item>
-      <p>Switch <gui>Media Sharing</gui> to <gui>ON</gui>.</p>
+      <p>Alterne o <gui>Compartilhamento de mídia</gui> para <key>❙</key>.</p>
     </item>
     <item>
-      <p>By default, <file>Music</file>, <file>Pictures</file> and 
-      <file>Videos</file> are shared. To remove one of these, click the
-      <gui>X</gui> next to the folder name.</p>
+      <p>Por padrão, <file>Músicas</file>, <file>Imagens</file> e <file>Vídeos</file> são compartilhados. Para remover um desses, clique no <gui>×</gui> próximo ao nome da pasta.</p>
     </item>
     <item>
-      <p>To add another folder, click <gui style="button">+</gui> to open the
-      <gui>Choose a folder</gui> window. Navigate <em>into</em> the desired
-      folder and click <gui style="button">Open</gui>.</p>
+      <p>Para adicionar uma outra pasta, clique no <gui style="button">+</gui> para abrir a janela <gui>Escolha uma pasta</gui>. Navegue <em>até</em> a pasta desejada e clique em <gui style="button">Abrir</gui>.</p>
     </item>
     <item>
-      <p>Click <gui style="button">X</gui>. You will now be able to browse
-      or play media in the folders you selected using the external device.</p>
+      <p>Clique <gui style="button">×</gui>. Você agora será capaz de navegador ou reproduzir mídia nas pastas que você selecionou usando o dispositivo externo.</p>
     </item>
   </steps>
 
   <section id="networks">
-  <title>Networks</title>
+  <title>Redes</title>
 
-  <p>The <gui>Networks</gui> section lists the networks to which you are
-  currently connected. Use the <gui>ON | OFF</gui> switch next to each to
-  choose where your media can be shared.</p>
+  <p>A seção <gui>Redes</gui> lista as redes às quais você está atualmente conectada. Use o alternador <gui>ON | OFF</gui> próximo a cada um para escolher onde sua mídia pode ser compartilhada.</p>
 
   </section>
 

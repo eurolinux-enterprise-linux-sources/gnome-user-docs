@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="desktop-background" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="appearance"/>
+    <revision pkgversion="3.11" date="2014-01-29" status="draft"/>
+    <revision pkgversion="3.14" date="2014-06-17" status="incomplete">
+      <desc>Všechno povídání a návody jsou hotové. Doplňující informace je potřeba dodat k obrázkům, podle komentáře níže. --shaunm</desc>
+    </revision>
+
+    <credit type="author copyright">
+      <name>Matthias Clasen</name>
+      <email>matthias.clasen@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Jana Svarova</name>
+      <email>jana.svarova@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>davidk@gnome.org</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+
+    <desc>Jak změnit výchozí pozadí pracovní plochy pro všechny uživatele.</desc>
+  </info>
+
+  <title>Nastavení vlastního pozadí</title>
+
+  <p>Můžete změnit výchozí pozadí pracovní plochy na takové, které si přejete. Například můžete chtít místo výchozího pozadí GNOME použít jako pozadí logo své firmy nebo univerzity.</p>
+
+  <steps>
+    <title>Nastavení výchozího pozadí</title>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-user'])"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-user-dir'])"/>
+    <item>
+      <p>Vytvořte soubor s klíči <file>/etc/dconf/db/local.d/00-background</file>, který bude poskytovat informace pro databázi <sys>local</sys>.</p>
+      <listing>
+        <title><file>/etc/dconf/db/local.d/00-background</file></title>
+<code>
+# Specify the dconf path
+[org/gnome/desktop/background]
+
+# Specify the path to the desktop background image file
+picture-uri='file:///usr/local/share/backgrounds/wallpaper.jpg'
+
+# Specify one of the rendering options for the background image:
+picture-options='scaled'
+
+# Specify the left or top color when drawing gradients, or the solid color
+primary-color='000000'
+
+# Specify the right or bottom color when drawing gradients
+secondary-color='FFFFFF'
+</code>
+      </listing>
+    </item>
+    <item>
+      <p>Aby uživatel nemohl tato nastavení přepsat, vytvořte soubor <file>etc/dconf/db/local.d/locks/background</file> s následujícím obsahem:</p>
+      <listing>
+        <title><file>/etc/dconf/db/local.d/locks/background</file></title>
+<code>
+# Lock desktop background settings
+/org/gnome/desktop/background/picture-uri
+/org/gnome/desktop/background/picture-options
+/org/gnome/desktop/background/primary-color
+/org/gnome/desktop/background/secondary-color
+</code>
+      </listing>
+    </item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-logoutin'])"/>
+  </steps>
+
+</page>

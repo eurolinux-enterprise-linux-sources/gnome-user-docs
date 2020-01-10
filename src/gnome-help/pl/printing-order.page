@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="printing-order" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="printing#paper"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Segregowanie i odwracanie kolejności wydruku.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Drukowanie stron w innej kolejności</title>
+
+  <section id="reverse">
+    <title>Odwracanie</title>
+
+    <p>Drukarki zwykle drukują najpierw pierwszą stronę, a na końcu ostatnią stronę, więc strony są w odwrotnej kolejności. W razie potrzeby można odwrócić kolejność wydruku.</p>
+
+    <steps>
+      <title>Aby odwrócić kolejność:</title>
+      <item>
+        <p>Naciśnij klawisze <keyseq><key>Ctrl</key><key>P</key></keyseq>, aby otworzyć okno wydruku.</p>
+      </item>
+      <item>
+        <p>W karcie <gui>Ogólne</gui>, sekcji <gui>Kopie</gui>, zaznacz opcję <gui>Odwrotnie</gui>. Ostatnia strona zostanie wydrukowana najpierw, i tak dalej.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="collate">
+    <title>Segregowanie</title>
+
+  <p>Jeśli drukowana jest więcej niż jedna kopia dokumentu, to domyślnie kartki będą grupowane według numerów stron (tzn. najpierw wszystkie kopie pierwszej strony, potem kopie drugiej strony itd.). <em>Segregowanie</em> spowoduje drukowanie każdej kopii z jej stronami w jednej grupie we właściwej kolejności.</p>
+
+  <steps>
+    <title>Aby posegregować:</title>
+    <item>
+     <p>Naciśnij klawisze <keyseq><key>Ctrl</key><key>P</key></keyseq>, aby otworzyć okno wydruku.</p>
+    </item>
+    <item>
+      <p>W karcie <gui>Ogólne</gui>, sekcji <gui>Kopie</gui>, zaznacz opcję <gui>Posegregowane</gui>.</p>
+    </item>
+  </steps>
+
+</section>
+
+</page>

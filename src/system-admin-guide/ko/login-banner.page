@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="login-banner" xml:lang="ko">
+
+  <info>
+    <link type="guide" xref="login#appearance"/>
+    <!--<link type="seealso" xref="gdm-restart"/>-->
+    <revision pkgversion="3.8" date="2013-04-19" status="review"/>
+    <revision pkgversion="3.14" date="2014-06-17" status="review"/>
+
+    <credit type="author copyright">
+      <name>Matthias Clasen</name>
+      <email>matthias.clasen@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="author copyright">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Jana Svarova</name>
+      <email>jana.svarova@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="author copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>davidk@gnome.org</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>로그인 화면에서 여분의 텍스트를 표시합니다.</desc>
+  </info>
+
+  <title>로그인 화면에서의 텍스트 배너 표시</title>
+
+  <p><sys>org.gnome.login-screen.banner-message-enable</sys> 그리고 <sys>org.gnome.login-screen.banner-message-text</sys> GSetting 키를 설정하여 지원 부서에 연락하는 것처럼 로그인 화면에 여분의 텍스트를 표시 할 수 있습니다.</p>
+
+  <steps>
+    <title>로그인 화면에 텍스트 배너 표시:</title>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-gdm'])"/>
+    <item><p><file its:translate="no">/etc/dconf/db/gdm.d/01-banner-message</file>에 전반적인 설정을 위한 <sys>gdm</sys> 키 파일을 생성합니다:</p>
+      <code its:translate="no">[org/gnome/login-screen]
+banner-message-enable=true
+banner-message-text='<input its:translate="yes">배너 메세지를 여기에 입력하세요.</input>'
+</code>
+    </item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+  </steps>
+
+  <note>
+    <p>메세지가 너무 길면 화면에 표시되지 않을 수 있으니, 배너 메세지는 짧게 작성하시길 바랍니다. 배너 메세지는 외부 파일에서 읽어 들일 수 없습니다.</p>
+  </note>
+
+</page>

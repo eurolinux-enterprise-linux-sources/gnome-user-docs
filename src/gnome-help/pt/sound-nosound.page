@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="sound-nosound" xml:lang="pt">
+
+  <info>
+    <link type="guide" xref="sound-broken"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>Projeto de documentação de GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Verifique que o som não está silenciado, que os cabos estão ligados corretamente e que o cartão de som se detetou.</desc>
+  </info>
+
+<title>Não posso ouvir nenhum som da computador</title>
+
+  <p>Se não pode escutar nenhum som na sua computador, por exemplo, quando tenta reproduzir música, siga estes passos para ver se pode solucionar o problema.</p>
+
+<section id="mute">
+  <title>Assegure-se de que o som não está silenciado</title>
+
+  <p>Abra o <gui xref="shell-introduction#yourname">menu do sistema</gui> em parte-a direita da barra superior e assegure-se de que o som não esteja silenciado ou na posição para baixo.</p>
+
+  <p>Alguns computadores portáteis têm interruptores de silêncio em seus teclados, prove a carregar essa tecla para ver se ativa-se o som.</p>
+
+  <p>Também deve verificar que não tem silenciado o aplicação que está a usar para reproduzir o som (por exemplo, seu reprodutor de música ou seu reprodutor de filmes). O aplicação pode ter um botão de silêncio ou de volume na sua janela principal, pelo que deve o verificar.</p>
+
+  <p>Também pode revisar a flange <gui>Aplicações</gui> na interface de utilizador de <gui>Som</gui>.</p>
+  <steps>
+    <item>
+    <p>Abra a <app>Configuração</app> desde a vista de <gui>Atividades</gui>.</p>
+    </item>
+    <item>
+      <p>Carregue <gui>Som</gui>.</p>
+    </item>
+    <item>
+      <p>Vá à flange <gui>Aplicações</gui> e comprove que seu aplicação está silenciado.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="speakers">
+  <title>Verifique que os altifalantes estejam ignições e conetados adequadamente</title>
+  <p>If your computer has external speakers, make sure that they are turned on
+  and that the volume is turned up. Make sure that the speaker cable is securely
+  plugged into the “output” audio socket on your computer. This socket
+  is usually light green in color.</p>
+
+  <p>Alguns cartões de som são capazes de mudar o zocalo que usam para a saída (dos altifalantes) e a entrada (desde o microfone, por exemplo). O zocalo de saída pode ser diferente quando se executa GNU/Linux, Windows ou Mac VOS. Experimente a ligar o cabo do altavoz aos diferentes zocalos de audio na computador sucessivamente, para ver se funciona.</p>
+
+ <p>Uma última coisa que verificar é que o cabo de som esteja ligado corretamente na parte trasera dos altifalantes. Alguns altifalantes têm mais duma entrada.</p>
+</section>
+
+<section id="device">
+  <title>Verifique que está selecionado o dispositivo de som correto</title>
+
+  <p>Some computers have multiple “sound devices” installed. Some of these are
+  capable of outputting sound and some are not, so you should check that you
+  have the correct sound device selected. This might involve some
+  trial-and-error to choose the right one.</p>
+
+  <steps>
+    <item>
+      <p>Abra a vista de <gui xref="shell-introduction#activities">Atividades</gui> e comece a escrever <gui>Som</gui>.</p>
+    </item>
+    <item>
+      <p>Carregue em <gui>Som</gui> para abrir o painel.</p>
+    </item>
+    <item>
+      <p>Na flange <gui>Saída</gui>, mude a configuração do <gui>Perfil</gui> para o dispositivo selecionado e reproduza um som para verificar que funciona. Pode precisar ir através da lista e experimentar a cada perfil.</p>
+
+      <p>Se isso não funciona, pode tentar fazer o mesmo com qualquer dos dispositivos que se mostram.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="hardware-detected">
+
+ <title>Verifique que o cartão de som se detetou corretamente.</title>
+
+  <p>Pode que seu cartão de som não se tenha detetado corretamente porque os controladores do cartão não estejam instalados. Pode precisar instalar manualmente os controladores do cartão. Como fazer isto depende do tipo de cartão que tenha.</p>
+
+  <p>Execute o comando <cmd>lspci</cmd> no terminal para obter mais informação sobre seu cartão de som:</p>
+  <steps>
+    <item>
+      <p>Vá à vista de <gui>Atividades</gui> e abra um Terminal.</p>
+    </item>
+    <item>
+      <p>Execute <cmd>lspci</cmd> como <link xref="user-admin-explain">superusuario</link>; ou bem escreva <cmd>suo lspci</cmd> e escreva a sua palavra-passe, ou escreva <cmd>a sua</cmd>, introduza a palavra-passe de <em>root</em> (administrador) e depois escreva <cmd>lspci</cmd>.</p>
+    </item>
+    <item>
+      <p>Verifique se mostra-se um <em>controlador de som</em> ou um <em>dispositivo de som</em>: nesse caso, deveria ver o número de série e o modelo do cartão de som. Também <cmd>lspci -v</cmd> mostra uma lista com informação mais detalhada.</p>
+    </item>
+  </steps>
+
+  <p>Pode que encontre e possa instalar os controladores para seu cartão. O melhor é pedir instruções nos foros de suporte (ou similares) para a sua distribuição de GNU/Linux.</p>
+
+  <p>Se não pode conseguir os controladores para o cartão de som, é possível que prefira comprar um cartão de som nova. Pode obter cartões de som que se possam instalar na computador e cartões de som externas USB.</p>
+
+</section>
+
+</page>

@@ -17,35 +17,39 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Switch the tablet between tablet mode and mouse mode.</desc>
+    <desc>Het tablet omschakelen tussen tabletmodus en muismodus.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Justin van Steijn</mal:name>
+      <mal:email>justin50@live.nl</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hannie Dumoleyn</mal:name>
+      <mal:email>hannie@ubuntu-nl.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
   </info>
 
-  <title>Set the Wacom tablet's tracking mode</title>
+  <title>De volgmodus van het Wacom-tablet instellen</title>
 
-<p><gui>Tracking Mode</gui> determines how the pointer is mapped to the screen.</p>
+<p><gui>Volgmodus</gui> bepaalt hoe de aanwijzer gekoppeld wordt aan het scherm.</p>
 
 <steps>
   <item>
-    <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-    start typing <gui>Wacom Tablet</gui>.</p>
+    <p>Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht en typ <gui>Wacom-tablet</gui>.</p>
   </item>
   <item>
-    <p>Click on <gui>Wacom Tablet</gui> to open the panel.</p>
+    <p>Klik op <gui>Wacom-tablet</gui> om het paneel te openen.</p>
     <!-- TODO: document how to connet the tablet using Bluetooth/add link -->
-    <note style="tip"><p>If no tablet is detected, you'll be asked to
-    <gui>Please plug in or turn on your Wacom tablet</gui>. Click the
-    <gui>Bluetooth Settings</gui> link to connect a wireless tablet.</p></note>
+    <note style="tip"><p>Als er geen tablet gedetecteerd is ziet u de opmerking <gui> Sluit het Wacom-tablet aan en zet het aan</gui>. Klik op de <gui>Bluetooth-instellingen</gui>-link om met een draadloze tablet te verbinden.</p></note>
   </item>
-  <item><p>Next to <gui>Tracking Mode</gui>, select <gui>Tablet (absolute)</gui>
-   or <gui>Touchpad (relative)</gui>.</p></item>
+  <item><p>Selecteer bij <gui>Volgmodus</gui> <gui>Tablet (absoluut)</gui> of <gui>Touchpad (relatief)</gui>.</p></item>
 </steps>
 
-<note style="info"><p>In <em>absolute</em> mode, each point on the tablet maps
- to a point on the screen. The top left corner of the screen, for instance,
- always corresponds to the same point on the tablet.</p>
- <p>In <em>relative</em> mode, if you lift the pointer off the tablet and put it
- down in a different position, the cursor on the screen doesn't move. This is
-    the way a mouse operates.</p>
+<note style="info"><p>In <em>absolute</em> modus wordt elk punt op het tablet toegewezen aan een punt op het scherm. Zo komt bijvoorbeeld de linkerbovenhoek van het scherm altijd overeen met hetzelfde punt op het tablet.</p>
+ <p>Als u in <em>relatieve</em> modus de aanwijzer van het tablet haalt en op een andere positie neerzet, wordt de cursor op het scherm niet verplaatst. Dat is de manier waarop een muis werkt.</p>
   </note>
 
 </page>

@@ -21,50 +21,51 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>You can allow users to make changes to the system by giving them
-    administrative privileges.</desc>
+    <desc>U kunt wijzigen welke gebruikers wijzigingen in het systeem mogen aanbrengen door hen beheerdersrechten te verlenen.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Justin van Steijn</mal:name>
+      <mal:email>justin50@live.nl</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hannie Dumoleyn</mal:name>
+      <mal:email>hannie@ubuntu-nl.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
   </info>
 
   <title>De persoon met beheersrechten wijzigen</title>
 
-  <p>Administrative privileges are a way of deciding who can make changes to
-  important parts of the system. You can change which users have administrative
-  privileges and which ones do not. They are a good way of keeping your system
-  secure and preventing potentially damaging unauthorized changes.</p>
+  <p>Door het toekennen van beheersrechten wordt bepaald wie er belangrijke delen van het systeem mogen wijzigen. U kunt wijzigen welke gebruikers wel en welke geen beheersrechten hebben. Het is een goede manier om uw systeem veilig te houden en te voorkomen dat eventuele ongeautoriseerde wijzigingen worden aangebracht.</p>
 
-  <p>You need <link xref="user-admin-explain">administrator privileges</link>
-  to change account types.</p>
+  <p>Om een accounttype te wijzigen dient u <link xref="user-admin-explain">beheerder</link> te zijn. </p>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Users</gui>.</p>
+      <p>Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht en typ <gui>Gebruikers</gui>.</p>
     </item>
     <item>
-      <p>Click <gui>Users</gui> to open the panel.</p>
+      <p>Klik op <gui>Gebruikersaccounts</gui> om het paneel te openen.</p>
     </item>
     <item>
-      <p>Press <gui style="button">Unlock</gui> in the top right corner and
-      type in your password when prompted.</p>
+      <p>Klik op <gui style="button">Ontgrendelen</gui> rechtsboven in de hoek en voer uw wachtwoord in wanneer daar om gevraagd wordt.</p>
     </item>
     <item>
-      <p>Select the user whose privileges you want to change.</p>
+      <p>Selecteer de gebruiker wiens rechten u wilt wijzigen.</p>
     </item>
     <item>
-      <p>Click the label <gui>Standard</gui> next to <gui>Account Type</gui>
-      and select <gui>Administrator</gui>.</p>
+      <p>Klik op het label <gui>Standaard</gui> naast <gui>Accounttype</gui> en selecteer <gui>Beheerder</gui>.</p>
     </item>
     <item>
-      <p>The user's privileges will be changed when they next log in.</p>
+      <p>De rechten van de gebruiker zullen gewijzigd worden bij de eerstvolgende aanmelding.</p>
     </item>
   </steps>
 
   <note>
-    <p>The first user account on the system is usually the one that has
-    administrator privileges. This is the user account that was created when
-    you first installed the system.</p>
-    <p>It is unwise to have too many users with <gui>Administrator</gui>
-    privileges on one system.</p>
+    <p>Het account van de hoofdgebruiker van het systeem heeft doorgaans beheerdersrechten. Dit is het gebruikersaccount dat aangemaakt werd toen u het systeem voor het eerst installeerde.</p>
+    <p>Het is onverstandig om veel gebruikers met <gui>Beheerders</gui>-rechten op een systeem te hebben.</p>
   </note>
 
 </page>

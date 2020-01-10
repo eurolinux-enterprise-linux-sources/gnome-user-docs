@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-behavior" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="nautilus-prefs" group="nautilus-behavior"/>
+
+    <desc>Pojedyncze kliknięcie otwiera pliki, uruchamianie lub wyświetlanie wykonywanych plików tekstowych i zachowanie kosza.</desc>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Preferencje zachowania menedżera plików</title>
+<p>Można zdecydować, czy otwierać pliki pojedynczym lub podwójnym kliknięciem, jak obsługiwać wykonywalne pliki tekstowe i jak kosz ma się zachowywać. Kliknij <gui>Pliki</gui> na górnym pasku, wybierz <gui>Preferencje</gui> i kartę <gui>Zachowanie</gui>.</p>
+
+<section id="behavior">
+<title>Zachowanie</title>
+<terms>
+ <item>
+  <title><gui>Przez pojedyncze kliknięcie</gui></title>
+  <title><gui>Przez podwójne kliknięcie</gui></title>
+  <p>Domyślnie kliknięcie zaznacza pliki, a podwójne kliknięcie je otwiera. Zamiast tego można wybrać otwieranie plików i katalogów po jedynym kliknięciu. W trybie otwierania przez pojedyncze kliknięcie można przytrzymać klawisz <key>Ctrl</key> podczas klikania, aby zaznaczyć jeden lub więcej plików.</p>
+ </item>
+</terms>
+
+</section>
+<section id="executable">
+<title>Wykonywalne pliki tekstowe</title>
+ <p>Wykonywalny plik tekstowy to plik zawierający program, który można uruchamiać (wykonywać). <link xref="nautilus-file-properties-permissions">Uprawnienia pliku</link> muszą także zezwalać na wykonywanie pliku jako programu. Najczęściej są to skrypty <sys>powłoki</sys>, języka <sys>Python</sys> i <sys>Perl</sys>. Mają one rozszerzenia <file>.sh</file>, <file>.py</file> i <file>.pl</file>.</p>
+ 
+ <p>Podczas otwierania wykonywalnego pliku tekstowego można wybrać:</p>
+ 
+ <list>
+  <item>
+    <p><gui>Uruchamianie</gui></p>
+  </item>
+  <item>
+    <p><gui>Wyświetlanie</gui></p>
+  </item>
+  <item>
+    <p><gui>Pytanie, co robić</gui></p>
+  </item>
+ </list>
+
+ <p>Wybranie <gui>Pytanie, co robić</gui> wyświetli okno z pytaniem, czy uruchomić lub wyświetlić dany plik tekstowy.</p>
+
+ <p>Wykonywalne pliki tekstowe są także zwane <em>skryptami</em>. Wszystkie skrypty w katalogu <file>~/.local/share/nautilus/scripts</file> będą wyświetlane w menu kontekstowym pliku w podmenu <gui style="menuitem">Skrypty</gui>. Kiedy skrypt jest wykonywany z lokalnego katalogu, wszystkie zaznaczone pliki zostaną wklejone do skryptu jako parametry. Aby wykonać skrypt na pliku:</p>
+
+<steps>
+  <item>
+    <p>Przejdź do wybranego katalogu.</p>
+  </item>
+  <item>
+    <p>Zaznacz wybrany plik.</p>
+  </item>
+  <item>
+    <p>Kliknij plik prawym przyciskiem myszy, aby otworzyć menu kontekstowe i wybierz wybrany skrypt do wykonania z menu <gui style="menuitem">Skrypty</gui>.</p>
+  </item>
+</steps>
+
+ <note style="important">
+  <p>Parametry nie zostaną przekazane do skryptu, kiedy jest wykonywany ze zdalnego katalogu, takiego jak treść WWW lub <sys>FTP</sys>.</p>
+ </note>
+
+</section>
+
+<section id="trash">
+<info>
+<link type="seealso" xref="files-delete"/>
+<title type="link">Preferencje kosza menedżera plików</title>
+</info>
+<title>Kosz</title>
+
+<terms>
+ <item>
+  <title><gui>Pytanie przed opróżnieniem kosza</gui></title>
+  <p>Ta opcja jest domyślnie zaznaczona. Podczas opróżniania kosza wyświetlany będzie komunikat proszący o potwierdzenie, czy na pewno opróżnić kosz lub usunąć pliki.</p>
+ </item>
+</terms>
+</section>
+
+</page>

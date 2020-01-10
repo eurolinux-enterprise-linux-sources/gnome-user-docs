@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="session-debug" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="sundry#session"/>
+    <revision version="0.1" date="2014-01-28" status="draft"/>
+
+    <credit type="author copyright">
+      <name>Matthias Clasen</name>
+      <email>matthias.clasen@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Jana Svarova</name>
+      <email>jana.svarova@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+
+    <desc>Vad hände med <file>~/.xsession-errors</file>?</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Felsöka sessionsproblem</title>
+
+  <p>Om du vill få mer information om ett problem i en session eller vill lösa det så kan du konsultera systemloggen, vilken lagrar loggdata för din användarsession och dina program.</p>
+
+  <p>Loggfilen <file>~/.xsession-errors</file> för X-sessionen är föråldrad och används inte längre.</p>
+
+<section id="session-log-systemd">
+  <title>Visa sessionslogg på systemd-baserade system</title>
+  <p>På systemd-baserade system kan du finna sessionsloggdata i <app>systemd</app>-journalen, vilken lagrar data i ett binärt format. För att visa loggarna, använd kommandot <cmd>journalctl</cmd>.</p>
+
+  <steps>
+    <title>För att visa dina användarsessionsloggar:</title>
+    <item><p>Ta reda på ditt användar-ID (<sys>uid</sys>) genom att köra följande kommando:</p>
+    <screen><output>$ </output><input>id --user</input>
+1000</screen></item>
+    <item><p>Visa journalloggarna för det användar-ID som erhållits ovan:</p>
+    <screen><output>$ </output><input>journalctl _UID=1000</input></screen>
+    </item>
+  </steps>
+
+  <p>För mer information om systemd-journalen, se manualsidan för <link href="man:journalctl"><cmd>journalctl</cmd></link>(1).</p>
+</section>
+
+</page>

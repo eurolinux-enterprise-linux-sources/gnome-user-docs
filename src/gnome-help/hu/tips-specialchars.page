@@ -7,6 +7,7 @@
 
     <revision pkgversion="3.8.2" version="0.3" date="2013-05-18" status="review"/>
     <revision pkgversion="3.10" date="2013-11-01" status="review"/>
+    <revision pkgversion="3.26" date="2017-11-27" status="review"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -19,6 +20,10 @@
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
       <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Andre Klapper</name>
+      <email>ak-47@gmx.net</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -34,7 +39,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Kelemen Gábor</mal:name>
       <mal:email>kelemeng at gnome dot hu</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015, 2016, 2017</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -70,19 +75,11 @@
     <title>Karakterbeviteli módszerek</title>
   </links>
 
-  <section id="charmap">
-    <title>Karaktertábla</title>
-    <p>A GNOME karaktertábla alkalmazása segítségével böngészheti az Unicode összes karakterét. A kívánt karakter megkereséséhez használja a karaktertáblát, majd másolja és illessze be azt oda, ahol szüksége van rá.</p>
-
-    <p>A <app>Karaktertábla</app> alkalmazást megtalálja a <gui>Tevékenységek</gui> áttekintésben. A karaktertáblával kapcsolatos további információkért lásd a <link href="help:gucharmap">karaktertábla kézikönyvét</link>.</p>
-
-  </section>
-
   <section id="characters">
     <title>Karakterek</title>
-    <p>A GNOME másik hasznos alkalmazása a <app>Karakterek</app>. Lehetővé teszi szokatlan karakterek megkeresését és beszúrását a karakterkategóriák tallózásával vagy kulcsszavak keresésével.</p>
+    <p>A GNOME tartalmaz egy karaktertábla alkalmazást is, amely lehetővé teszi szokatlan karakterek – beleértve az emodzsikat is – megkeresését és beszúrását a karakterkategóriák tallózásával vagy kulcsszavak keresésével.</p>
 
-    <p>A Karakterek alkalmazást megtalálja a Tevékenységek áttekintésben. A Karakterekkel kapcsolatos további információkért lásd a <link href="help:gucharmap">Karakterek kézikönyvét</link>.</p>
+    <p>Nyissa meg a <app>Karaktereket</app> a <gui>Tevékenységek</gui> áttekintésből.</p>
 
   </section>
 
@@ -91,19 +88,43 @@
     <p>A kombináló billentyű egy speciális billentyű, amely lehetővé teszi speciális karakterek beírását több billentyű egymás utáni lenyomásával. Például egy ékezetes <em>é</em> betű beírásához megnyomhatja a <key>kombináló</key> billentyűt, majd a <key>'</key>, végül az <key>e</key> billentyűket.</p>
     <p>A billentyűzeteken nincs fizikai kombináló billentyű. Ehelyett megadhatja, hogy a billentyűzetén található billentyűk közül melyiket szeretné kombináló billentyűként használni.</p>
 
+    <note style="important">
+      <p>Ezen beállítás módosításához telepítve kell lennie a <app>Finomhangolónak</app> a számítógépre.</p>
+      <if:if xmlns:if="http://projectmallard.org/if/1.0/" test="action:install">
+        <p><link style="button" action="install:gnome-tweak-tool">A <app>Finomhangoló</app> telepítése</link></p>
+      </if:if>
+    </note>
+
     <steps>
       <title>Kombináló billentyű definiálása</title>
       <item>
-        <p>Nyissa meg a <gui xref="shell-introduction#activities">Tevékenységek</gui> áttekintést, és kezdje el begépelni a <gui>Billentyűzet</gui> szót.</p>
+        <p>Nyissa meg a <gui xref="shell-introduction#activities">Tevékenységek</gui> áttekintést, és kezdje el begépelni a <gui>Finomhangoló</gui> szót.</p>
       </item>
       <item>
-        <p>Kattintson a <gui>Billentyűzet</gui> ikonra a panel megnyitásához.</p>
+        <p>Kattintson a <gui>Finomhangoló</gui> ikonra az alkalmazás megnyitásához.</p>
       </item>
-      <item><p>Válassza a <gui>Gyorsbillentyűk</gui> fület, és kattintson a <gui>Gépelés</gui> kategóriára.</p></item>
-      <item><p>Kattintson a <gui>Kombináló billentyű</gui> elemre a jobb oldalon.</p></item>
-      <item><p>Kattintson a <gui>Letiltva</gui> elemre, és a legördülő menüből válassza ki a billentyűt, amelyet kombináló billentyűként szeretne használni. Választhatja például bármelyik <key>Ctrl</key>, a jobb <key>Alt</key>, a jobb <key>Win</key> vagy a <key xref="keyboard-key-super">Super</key> billentyűt (ha van), a <key xref="keyboard-key-menu">Menü</key> vagy a <key>Caps Lock</key> billentyűt. A kiválasztott billentyű ezután csak kombináló billentyűként működik, és nem tudja az eredeti rendeltetésének megfelelően használni.</p></item>
+      <item>
+        <p>Kattintson a <gui>Billentyűzet és egér</gui> lapra.</p>
+      </item>
+      <item>
+        <p>Kattintson a <gui>Letiltva</gui> gombra a <gui>Kombináló billentyű</gui> beállítás mellett.</p>
+      </item>
+      <item>
+        <p>Kapcsolja be a kapcsolót az ablakban, és válassza ki a használni kívánt gyorsbillentyűt.</p>
+      </item>
+      <item>
+        <p>Jelölje be a kombináló billentyűként használni kívánt billentyű jelölőnégyzetét.</p>
+      </item>
+      <item>
+        <p>A párbeszédablak bezárása.</p>
+      </item>
+      <item>
+        <p>Zárja be a <gui>Finomhangoló</gui> ablakot.</p>
+      </item>
     </steps>
+
     <p>Számos általános karaktert beírhat a kombináló billentyű segítségével, például:</p>
+
     <list>
       <item><p>Nyomja meg a <key>kombináló</key> billentyűt, majd a <key>'</key> billentyűt, és egy betűt az éles mellékjel elhelyezéséhez, úgy mint az <em>é</em> betűn.</p></item>
       <item><p>Nyomja meg a <key>kombináló</key> billentyűt, majd a <key>`</key> (visszafelé ékezet) billentyűt, és egy betűt a tompa mellékjel elhelyezéséhez, úgy mint az <em>è</em> betűn.</p></item>
@@ -116,9 +137,9 @@
 <section id="ctrlshiftu">
   <title>Kódpontok</title>
 
-  <p>Bármely Unicode karaktert beírhatja a karakter numerikus kódpontjának begépelésével. Minden karaktert egy négykarakteres kódpont azonosít. Egy karakter kódpontját megtalálhatja, ha megkeresi a karaktert a Karaktertábla alkalmazásban, ekkor az megjelenik az állapotsoron és a <gui>Karakter adatai</gui> lapon is. A kódpont az <gui>U+</gui> utáni négy karakter.</p>
+  <p>Bármely Unicode karaktert beírhatja a karakter numerikus kódpontjának begépelésével. Minden karaktert egy négykarakteres kódpont azonosít. Egy karakter kódpontját megtalálhatja, ha megkeresi a karaktert a <app>Karakterek</app> alkalmazásban. A kódpont az <gui>U+</gui> utáni négy karakter.</p>
 
-  <p>Egy karakter kódponttal való beírásához tartsa lenyomva a <key>Ctrl</key> és <key>Shift</key> billentyűket, üsse le az <key>U</key> billentyűt, írja be a négykarakteres kódpontot, ezután engedje fel a <key>Ctrl</key> és <key>Shift</key> billentyűket. Ha gyakran használ más módszerekkel nehezen elérhető karaktereket, hasznos lehet a kódpontjaik memorizálása, hogy gyorsan beírhassa azokat.</p>
+  <p>Egy karakter kódponttal való beírásához tartsa lenyomva a <key>Ctrl</key> és <key>Shift</key> billentyűket, üsse le az <key>U</key> billentyűt, írja be a négykarakteres kódpontot, és nyomja meg a <key>Szóköz</key> vagy <key>Enter</key> billentyűt. Ha gyakran használ más módszerekkel nehezen elérhető karaktereket, hasznos lehet a kódpontjaik memorizálása, hogy gyorsan beírhassa azokat.</p>
 
 </section>
 

@@ -25,12 +25,12 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Jiri Grönroos</mal:name>
       <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
-      <mal:years>2012-2016.</mal:years>
+      <mal:years>2012-2018.</mal:years>
     </mal:credit>
   </info>
 
   <title>Mitä kuvakkeet yläpalkissa tarkoittavat?</title>
-<p>This section explains the meaning of icons located on the top right corner of the screen. More specifically, the different variations of the icons provided by the GNOME interface are described.</p>
+<p>Tämä osio selventää näytön oikeassa yläkulmassa olevien kuvakkeiden tarkoituksen. Tarkemmin sanottuna seuraavaksi käymme läpi Gnomen käyttöliittymän kuvakkeiden eri muunnelmat.</p>
 
 <if:choose>
 <if:when test="!platform:gnome-classic">
@@ -48,12 +48,12 @@
 <links type="section"/>
 
 <section id="universalicons">
-<title>Universal Access Menu Icons</title>
+<title>Esteettömyysvalikon kuvakkeet</title>
 
  <table shade="rows">
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/preferences-desktop-accessibility-symbolic.svg"/></td>
-      <td><p>Leads to a menu that turns on accessibility settings.</p></td>
+      <td><p>Avaa valikon, jonka kautta on mahdollista ottaa käyttöön tai poistaa käytöstä esteettömyysasetuksia.</p></td>
     </tr>
     
   </table>
@@ -61,48 +61,48 @@
 
 
 <section id="audioicons">
-<title>Volume Control Icons</title>
+<title>Äänenvoimakkuuden kuvakkeet</title>
 
  <table shade="rows">
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/audio-volume-high-symbolic.svg"/></td>
-      <td><p>The volume is set to high.</p></td>
+      <td><p>Äänenvoimakkuus on asetettu suurelle.</p></td>
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/audio-volume-medium-symbolic.svg"/></td>
-      <td><p>The volume is set to medium.</p></td>
+      <td><p>Äänenvoimakkuus on asetettu keskitasolle.</p></td>
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/audio-volume-low-symbolic.svg"/></td>
-      <td><p>The volume is set to low.</p></td>
+      <td><p>Äänenvoimakkuus on asetettu matalalle.</p></td>
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/audio-volume-muted-symbolic.svg"/></td>
-      <td><p>The volume is muted.</p></td>
+      <td><p>Äänenvoimakkuus on vaimennettu.</p></td>
     </tr>
   </table>
 </section>
 
 
 <section id="bluetoothicons">
-<title>Bluetooth Manager Icons</title>
+<title>Bluetooth-hallinnan kuvakkeet</title>
 
  <table shade="rows">
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/bluetooth-active-symbolic.svg"/></td>
-      <td><p>Bluetooth has been activated.</p></td>
+      <td><p>Bluetooth on aktivoitu.</p></td>
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/bluetooth-disabled-symbolic.svg"/></td>
-      <td><p>Bluetooth has been disabled.</p></td>
+      <td><p>Bluetooth on pois käytöstä.</p></td>
     </tr>
   </table>
 </section>
 
 <section id="networkicons">
-<title>Network Manager Icons</title>
+<title>Verkonhallinnan kuvakkeet</title>
 <p/>
-<p><app>Cellular Connection</app></p>
+<p><app>Mobiiliyhteys</app></p>
  <table shade="rows">
 
     <tr>
@@ -131,71 +131,71 @@
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-acquiring-symbolic.svg"/></td>
-      <td><p>Acquiring a cellular network connection.</p></td>
+      <td><p>Muodostetaan yhteyttä matkapuhelinverkkoon.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-excellent-symbolic.svg"/></td>
-      <td><p>Very high signal strength.</p></td>
+      <td><p>Erittäin vahva signaalin voimakkuus.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-good-symbolic.svg"/></td>
-      <td><p>High signal strength.</p></td>
+      <td><p>Vahva signaalin voimakkuus.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-ok-symbolic.svg"/></td>
-      <td><p>Medium signal strength.</p></td>
+      <td><p>Keskitason signaalin voimakkuus.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-weak-symbolic.svg"/></td>
-      <td><p>Low signal strength.</p></td>
+      <td><p>Matala signaalin voimakkuus.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-none-symbolic.svg"/></td>
-      <td><p>Extremely low signal strength.</p></td>
+      <td><p>Erittäin matala signaalin voimakkuus.</p></td>
     </tr></table>
 
 
 
 
-<p><app>Local Area Network (LAN) Connection</app></p>
+<p><app>Paikallisverkkoyhteys (LAN)</app></p>
  <table shade="rows">
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-error-symbolic.svg"/></td>
-      <td><p>There has been an error in finding the network.</p></td>
+      <td><p>Verkkoa etsittäessä on tapahtunut virhe.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-idle-symbolic.svg"/></td>
-      <td><p>The network is inactive.</p></td>
+      <td><p>Verkko ei ole aktiivinen.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-no-route-symbolic.svg"/></td>
-      <td><p>There is no route found for the network.</p></td>
+      <td><p>Verkkoon ei löydy reittiä.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-offline-symbolic.svg"/></td>
-      <td><p>The network is offline.</p></td>
+      <td><p>Verkko on yhteydettömässä tilassa.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-receive-symbolic.svg"/></td>
-      <td><p>The network is receiving data.</p></td>
+      <td><p>Verkko vastaanottaa dataa.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-transmit-receive-symbolic.svg"/></td>
-      <td><p>The network is transmitting and receiving data.</p></td>
+      <td><p>Verkko lähettää ja vastaanottaa dataa.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-transmit-symbolic.svg"/></td>
-      <td><p>The network is transmitting data.</p></td>
+      <td><p>Verkko lähettää dataa.</p></td>
     </tr>
 </table>
 
 
 
-<p><app>Virtual Private Network (VPN) Connection</app></p>
+<p><app>Virtuaalinen erillisverkkoyhteys (VPN)</app></p>
  <table shade="rows">
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-vpn-acquiring-symbolic.svg"/></td>
-      <td><p>Acquiring a network connection.</p></td>
+      <td><p>Muodostetaan verkkoyhteyttä.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-vpn-symbolic.svg"/></td>
@@ -204,63 +204,63 @@
 </table>
 
 
-<p><app>Wired Connection</app></p>
+<p><app>Kiinteä yhteys</app></p>
  <table shade="rows">
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wired-acquiring-symbolic.svg"/></td>
-      <td><p>Acquiring a network connection.</p></td>
+      <td><p>Muodostetaan verkkoyhteyttä.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wired-disconnected-symbolic.svg"/></td>
-      <td><p>Disconnected from the network.</p></td>
+      <td><p>Yhteys verkkoon on katkaistu.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wired-symbolic.svg"/></td>
-      <td><p>Connected to a wired network.</p></td>
+      <td><p>Yhdistetty langalliseen verkkoon.</p></td>
     </tr>
 </table>
 
 
-<p><app>Wireless Connection</app></p>
+<p><app>Langaton yhteys</app></p>
  <table shade="rows">
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-acquiring-symbolic.svg"/></td>
-      <td><p>Acquiring a wireless connection.</p></td>
+      <td><p>Muodostetaan langatonta yhteyttä.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-encrypted-symbolic.svg"/></td>
-      <td><p>The wireless network is encrypted.</p></td>
+      <td><p>Langaton verkko on salattu.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-connected-symbolic.svg"/></td>
-      <td><p>Connected to a wireless network.</p></td>
+      <td><p>Yhdistetty langattomaan verkkoon.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-excellent-symbolic.svg"/></td>
-      <td><p>Very high signal strength.</p></td>
+      <td><p>Erittäin vahva signaalin voimakkuus.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-good-symbolic.svg"/></td>
-      <td><p>High signal strength.</p></td>
+      <td><p>Vahva signaalin voimakkuus.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-ok-symbolic.svg"/></td>
-      <td><p>Medium signal strength.</p></td>
+      <td><p>Keskitason signaalin voimakkuus.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-weak-symbolic.svg"/></td>
-      <td><p>Low signal strength.</p></td>
+      <td><p>Matala signaalin voimakkuus.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-none-symbolic.svg"/></td>
-      <td><p>Very low signal strength.</p></td>
+      <td><p>Erittäin matala signaalin voimakkuus.</p></td>
     </tr>
 
   </table>
 </section>
 
 <section id="batteryicons">
-<title>Power Manager Icons</title>
+<title>Virranhallinnan kuvakkeet</title>
 
  <table shade="rows">
    <tr>
@@ -269,7 +269,7 @@
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-good-symbolic.svg"/></td>
-      <td><p>The battery is partially drained.</p></td>
+      <td><p>Akun varaus on osittain tyhjentynyt.</p></td>
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-low-symbolic.svg"/></td>
@@ -277,11 +277,11 @@
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-caution-symbolic.svg"/></td>
-      <td><p>Caution: The battery is very low.</p></td>
+      <td><p>Varoitus: Akun varaus on hyvin matala.</p></td>
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-empty-symbolic.svg"/></td>
-      <td><p>The battery is extremely low.</p></td>
+      <td><p>Akun varaus on erittäin matala.</p></td>
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-missing-symbolic.svg"/></td>
@@ -293,23 +293,23 @@
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-full-charging-symbolic.svg"/></td>
-      <td><p>The battery is full and charging.</p></td>
+      <td><p>Akku on täynnä ja se latautuu.</p></td>
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-good-charging-symbolic.svg"/></td>
-      <td><p>The battery is partially full and charging.</p></td>
+      <td><p>Akku on osittain täynnä ja latautuu.</p></td>
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-low-charging-symbolic.svg"/></td>
-      <td><p>The battery is low and charging.</p></td>
+      <td><p>Akun varaus on matala ja latautuu.</p></td>
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-caution-charging-symbolic.svg"/></td>
-      <td><p>The battery is very low and charging.</p></td>
+      <td><p>Akun varaus on erittäin matala ja latautuu.</p></td>
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-empty-charging-symbolic.svg"/></td>
-      <td><p>The battery is empty and charging.</p></td>
+      <td><p>Akku on tyhjä ja latautuu.</p></td>
     </tr>
   </table>
 </section>

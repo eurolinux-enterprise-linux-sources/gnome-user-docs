@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="logout-automatic" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="login#management"/>
+<!--    <link type="seealso" xref="dconf-profiles" />-->
+    <link type="seealso" xref="dconf-lockdown"/>
+    <link type="seealso" xref="login-automatic"/>
+
+    <revision pkgversion="3.12" date="2014-06-18" status="review"/>
+
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Avsluta en inaktiv användarsession.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Konfigurera automatisk utloggning</title>
+
+  <p>Användarsessioner som har varit inaktiva en viss tidsperiod kan avslutas automatiskt, Du kan ställa in olika beteende baserat på om maskinen kör på ett batteri eller från nätspänning genom att ställa in motsvarande <sys its:translate="no">dconf</sys>-nyckel och sedan låsa den.</p>
+
+  <note style="warning">
+    <p>Tänk på att användare potentiellt kan förlora osparade data om en inaktiv session avslutas automatiskt.</p>
+  </note>
+
+  <steps>
+    <title>Ställ in automatisk utloggning för en maskin på nätspänning</title>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-user'])"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-user-dir'])"/>
+    <item>
+      <p>Skapa en databas <code>local</code> för maskinomfattande inställningar i <file>/etc/dconf/db/local.d/00-autologout</file>:</p>
+      <listing>
+        <code>
+[org/gnome/settings-daemon/plugins/power]
+# Ställ tidsgränsen till 900 sekunder när på nätspänning
+sleep-inactive-ac-timeout=900
+# Ställ in åtgärd efter tidsgräns till att vara utloggning när på nätspänning
+sleep-inactive-ac-type='logout'
+</code>
+      </listing>
+    </item>
+    <item>
+      <p>Åsidosätt användarens inställning och förhindra användaren från att ändra den i <file>/etc/dconf/db/local.d/locks/autologout</file>:</p>
+      <listing>
+        <code>
+# Lås inställningar för automatisk utloggning
+/org/gnome/settings-daemon/plugins/power/sleep-inactive-ac-timeout
+/org/gnome/settings-daemon/plugins/power/sleep-inactive-ac-type
+</code>
+</listing>
+    </item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-logoutin'])"/>
+  </steps>
+
+  <!-- There will shortly be a way to get key descriptions using gsettings, we
+       should recommend this instead of listing the terms here. See
+       https://bugzilla.gnome.org/show_bug.cgi?id=668232 -->
+  <p>Följande GSettings-nycklar är av intresse:</p>
+  <terms>
+    <item>
+      <title><code>org.gnome.settings-daemon.plugins.power.sleep-inactive-ac-timeout</code></title>
+      <p>Antal sekunder som datorn behöver vara inaktiv innan den vilar om den körs på nätspänning.</p>
+    </item>
+    <item>
+      <title><code>org.gnome.settings-daemon.plugins.power.sleep-inactive-ac-type</code></title>
+      <p>Vad ska hända då tidsgränsen har passerat om datorn körs på nätspänning.</p>
+    </item>
+    <item>
+      <title><code>org.gnome.settings-daemon.plugins.power.sleep-inactive-battery-timeout</code></title>
+      <p>Antal sekunder som datorn behöver vara inaktiv innan den vilar om den körs på batteriström.</p>
+    </item>
+    <item>
+      <title><code>org.gnome.settings-daemon.plugins.power.sleep-inactive-battery-type</code></title>
+      <p>Vad ska hända då tidsgränsen har passerat om datorn körs på batteriström.</p>
+    </item>
+  </terms>
+
+  <p>Du kan köra <cmd>gsettings range</cmd> på en nyckel för att få en lista över värden som du kan använda. Till exempel:</p>
+  
+  <screen>$ <input>gsettings range org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type</input>
+enum
+'blank' # gör skärmen svart
+'suspend' # försätter systemet i vänteläge
+'shutdown' # startar en vanlig nedstängningsprocedur
+'hibernate' # försätter systemet i viloläge
+'interactive' # visar en ruta som frågar användaren vad som ska göras
+'nothing' # gör ingenting
+'logout' # logga ut från sessionen</screen>
+
+</page>

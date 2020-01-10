@@ -19,63 +19,61 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Print folded booklets (like a book or pamphlet) from a PDF using normal
-    A4/Letter-size paper.</desc>
+    <desc>Gevouwen boekjes (zoals een boek of een pamflet) afdrukken vanuit een PDF-bestand met normaal papier van A4-/Letter-formaat.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Justin van Steijn</mal:name>
+      <mal:email>justin50@live.nl</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hannie Dumoleyn</mal:name>
+      <mal:email>hannie@ubuntu-nl.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
   </info>
 
-  <title>Print a booklet on a double-sided printer</title>
+  <title>Een boekje afdrukken met een dubbelzijdige printer</title>
 
-  <p>You can make a folded booklet (like a small book or pamphlet) by printing
-  pages of a document in a special order and changing a couple of printing
-  options.</p>
+  <p>U kunt een gevouwen boekje (zoals een klein boek of een pamflet) maken door pagina's van een document in een speciale volgorde af te drukken en een paar afdrukopties te wijzigen.</p>
 
-  <p>These instructions are for printing a booklet from a PDF document.</p>
+  <p>Deze instructies zijn voor het afdrukken van een boekje uit een PDF-document.</p>
 
-  <p>If you want to print a booklet from a <app>LibreOffice</app> document,
-  first export it to a PDF by choosing <guiseq><gui>File</gui><gui>Export
-  as PDF…</gui></guiseq>. Your document needs to have a multiple of 4 number of
-  pages (4, 8, 12, 16,…). You may need to add up to 3 blank pages.</p>
+  <p>Als u een boekje wilt afdrukken van een <app>LibreOffice</app>-document, dan moet u het eerst exporteren naar een PDF via <guiseq><gui>Bestand</gui><gui>Exporteren als PDF…</gui></guiseq>. Uw document moet een veelvoud van 4 pagina's bevatten (4, 8, 12, 16,…). Het kan zijn dat u tot 3 lege pagina's moet toevoegen.</p>
 
-  <p>To print a booklet:</p>
+  <p>Om een boekje af te drukken:</p>
 
   <steps>
     <item>
-      <p>Open the print dialog. This can normally be done through
-      <gui style="menuitem">Print</gui> in the menu or using the
-      <keyseq><key>Ctrl</key><key>P</key></keyseq> keyboard shortcut.</p>
+      <p>Open het dialoogvenster Afdrukken. Dit doet u normaal via <gui style="menuitem">Afdrukken</gui> in het menu of via de sneltoets <keyseq><key>Ctrl</key><key>P</key></keyseq>.</p>
     </item>
     <item>
-      <p>Click the <gui>Properties...</gui> button </p>
-      <p>In the <gui>Orientation</gui> drop-down list, make sure that
-      <gui>Landscape</gui> is selected.</p>
-      <p>In the <gui>Duplex</gui> drop-down list, select <gui>Short Edge</gui>.
-      </p>
-      <p>Click <gui>OK</gui> to go back to the print dialog.</p>
+      <p>Klik op de knop <gui>Eigenschappen…</gui></p>
+      <p>Zorg ervoor dat in de keuzelijst <gui>Oriëntatie</gui> <gui>Liggend</gui> is geselecteerd.</p>
+      <p>Selecteer in de keuzelijst <gui>Duplex</gui> <gui>Korte zijde</gui>.</p>
+      <p>Klik op <gui>Ok</gui> om terug te keren naar het afdrukdialoogvenster.</p>
     </item>
     <item>
-      <p>Under <gui>Range and Copies</gui>, choose <gui>Pages</gui>.</p>
+      <p>Kies onder <gui>Bereik en kopieën</gui> <gui>Pagina's</gui>.</p>
     </item>
     <item>
-      <p>Type the numbers of the pages in this order (n is the total number of
-      pages, and a multiple of 4):</p>
-      <p>n, 1, 2, n-1, n-2, 3, 4, n-3, n-4, 5, 6, n-5, n-6, 7, 8, n-7, n-8, 9,
-      10, n-9, n-10, 11, 12, n-11…</p>
-      <p>Examples:</p>
+      <p>Typ het aantal pagina's in deze volgorde (n is het totaal aantal pagina's, en een veelvoud van 4):</p>
+      <p>n, 1, 2, n-1, n-2, 3, 4, n-3, n-4, 5, 6, n-5, n-6, 7, 8, n-7, n-8, 9, 10, n-9, n-10, 11, 12, n-11…</p>
+      <p>Voorbeelden: </p>
       <list>
-        <item><p>4 page booklet: Type <input>4,1,2,3</input></p></item>
-        <item><p>8 page booklet: Type <input>8,1,2,7,6,3,4,5</input></p></item>
-        <item><p>20 page booklet: Type
-        <input>20,1,2,19,18,3,4,17,16,5,6,15,14,7,8,13,12,9,10,11</input></p></item>
+        <item><p>Boekje met 4 pagina's: Typ <input>4,1,2,3</input></p></item>
+        <item><p>Boekje met 8 pagina's: Typ <input>8,1,2,7,6,3,4,5</input></p></item>
+        <item><p>Boekje met 20 pagina's: Typ<input>20,1,2,19,18,3,4,17,16,5,6,15,14,7,8,13,12,9,10,11</input></p></item>
       </list>
     </item>
     <item>
-      <p>Choose the <gui>Page Layout</gui> tab.</p>
-      <p>Under <gui>Layout</gui>, select <gui>Brochure</gui>.</p>
-      <p>Under <gui>Page Sides</gui>, in the <gui>Include</gui> drop-down list,
-      select <gui>All pages</gui>.</p>
+      <p>Selecteer het tabblad <gui>Paginalay-out</gui>.</p>
+      <p>Selecteer onder <gui>Lay-out</gui> <gui>Brochure</gui>.</p>
+      <p>Selecteer onder <gui>Paginazijden</gui> , in de keuzelijst <gui>Opnemen</gui>, <gui>Alle pagina's</gui>.</p>
     </item>
     <item>
-      <p>Click <gui>Print</gui>.</p>
+      <p>Klik op <gui>Afdrukken</gui>.</p>
     </item>
   </steps>
 

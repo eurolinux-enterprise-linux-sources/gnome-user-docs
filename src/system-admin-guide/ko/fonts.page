@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="fonts" xml:lang="ko">
+
+  <info>
+    <link type="guide" xref="appearance"/>
+    <link type="seealso" xref="fonts-user"/>
+    <revision pkgversion="3.11" date="2014-01-29" status="draft"/>
+
+    <credit type="author copyright">
+      <name>Matthias Clasen</name>
+      <email>matthias.clasen@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Jana Svarova</name>
+      <email>jana.svarova@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+
+    <desc>모든 사용자에 대해 추가 글꼴을 추가하세요.</desc>
+  </info>
+
+  <title>모든 사용자에 대해 추가 글꼴 추가</title>
+
+  <p>글꼴 처리의 <sys>fontconfig</sys>를 사용하는 애플리케이션에서 사용 가능한 추가 글꼴을 설치 할 수 있습니다.</p>
+
+  <steps>
+    <title>추가 글꼴 설치</title>
+    <item>
+      <p>설치할 글꼴을 <file>/usr/local/share/fonts/</file> 디렉터리로 복사하세요.</p>
+    </item>
+    <item>
+      <p>글꼴 캐시를 업데이트 하기 위해 다음의 명령을 실행해야 할 것입니다:</p>
+      <screen><output>$ </output><input>fc-cache /usr/local/share/fonts/</input></screen>
+    </item>
+  </steps>
+
+  <p>글꼴을 적용시키기 위해 실행 중인 애플리케이션을 재시작 해야 합니다. 사용자 세션은 다시 시작할 필요가 없습니다.</p>
+  
+  <p>또한, <file>/usr/local/share/fonts/</file> 디렉터리 대신 다른 시스템 디렉터리에 글꼴을 설치 할 수 있습니다 (해당 디렉터리가 <file>/etc/fonts/fonts.conf</file> 파일에 목록화 되어있는 경우). 그렇지 않다면, 당신이 사용하기를 원하는 디렉터리가 포함된 <file>/etc/fonts/local.conf</file>에 당신의 컴퓨터의 전반적인 구성 파일을 만들어야 합니다. 자세한 내용은 <cmd>fonts-conf</cmd>(5) 매뉴얼 페이지를 참고하세요.</p>
+  <p>대체 디렉터리를 사용하는 경우, <cmd>fc-cache</cmd> 명령으로 글꼴 캐시를 업데이트 할 때 디렉터리 이름을 지정하세요:</p>
+  <screen><output>$ </output><input>fc-cache <var>directory_name</var></input></screen>
+
+</page>

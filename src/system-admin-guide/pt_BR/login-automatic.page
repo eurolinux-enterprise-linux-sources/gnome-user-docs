@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="login-automatic" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="login#management"/>
+    <revision pkgversion="3.4.2" date="2012-12-01" status="review"/>
+    <revision pkgversion="3.8" date="2013-04-04" status="review"/>
+    <revision pkgversion="3.12" date="2014-06-18" status="review"/>
+    
+    <credit type="author copyright">
+      <name>minnie_eg</name>
+      <email>amany.elguindy@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2012, 2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Autentique automaticamente em uma conta de usuário na inicialização.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Configurando autenticação automática</title>
+
+  <p its:locNote="TRANSLATORS: 'Administrator' and 'Automatic Login' are   strings from the Users dialog in the Settings panel user interface.">Um usuário com um tipo de conta de <em>Administrador</em> pode <link href="help:gnome-help/user-autologin">habilitar <em>Início automático de sessão</em> do painel <app>Configurações</app></link>. Você também pode configurar início automático de sessão manualmente no arquivo de configuração personalizado <sys its:translate="no">GDM</sys>, conforme a seguir.</p>
+
+  <p>Edite o arquivo <file its:translate="no">/etc/gdm/custom.conf</file> e certifique-se de que a seção <code>[daemon]</code> no arquivo especifique o seguinte:</p>
+
+  <listing its:translate="no">
+    <title><file>custom.conf</file></title>
+<code>
+[daemon]
+AutomaticLoginEnable=<input>True</input>
+AutomaticLogin=<input>username</input>
+</code>
+  </listing>
+
+  <p>Substitua <input its:translate="no">username</input> com o usuário que você deseja que inicie a sessão automaticamente.</p>
+
+  <note>
+    <p>O arquivo <file its:translate="no">custom.conf</file> geralmente pode ser localizado em <file its:translate="no">/etc/gdm/</file>, mas a localização pode ser diferente dependendo de sua distribuição.</p>
+  </note>
+
+</page>

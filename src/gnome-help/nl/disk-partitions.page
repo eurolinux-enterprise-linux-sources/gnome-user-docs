@@ -11,66 +11,49 @@
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
 
-    <desc>Understand what volumes and partitions are and use the disk utility
-    to manage them.</desc>
+    <desc>Begrijpen wat Volumen en partities zijn en hoe het schijfgereedschap te gebruiken om ze te beheren.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Justin van Steijn</mal:name>
+      <mal:email>justin50@live.nl</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hannie Dumoleyn</mal:name>
+      <mal:email>hannie@ubuntu-nl.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
   </info>
 
- <title>Manage volumes and partitions</title>
+ <title>Volumes en partities beheren</title>
 
-  <p>The word <em>volume</em> is used to describe a storage device, like a hard
- disk. It can also refer to a <em>part</em> of the storage on that device,
- because you can split the storage up into chunks. The computer makes this
- storage accessible via your file system in a process referred to as
- <em>mounting</em>. Mounted volumes may be hard drives, USB drives, DVD-RWs, SD
- cards, and other media. If a volume is currently mounted, you can read (and
- possibly write) files on it.</p>
+  <p>Het woord <em>volume</em> wordt gebruikt om een opslagapparaat, zoals een harde schijf, aan te duiden. Het kan ook verwijzen naar een <em>deel</em> van de opslag op dat apparaat, want u kunt de opslag in stukken opsplitsen. De computer maakt deze opslag toegankelijk via het bestandssysteem in een proces dat <em>aankoppelen</em> genoemd wordt. Aangekoppelde volumes kunnen zijn: harde schijven, USB-sticks, dvd-rw's, SD-kaarten en andere media. Als een volume is aangekoppeld, dan kunt u bestanden erop lezen (en mogelijk schrijven).</p>
 
-  <p>Often, a mounted volume is called a <em>partition</em>, though they are not
- necessarily the same thing. A “partition” refers to a <em>physical</em> area of
- storage on a single disk drive. Once a partition has been mounted, it can be
- referred to as a volume because you can access the files on it. You can think
- of volumes as the labeled, accessible “storefronts” to the functional “back
- rooms” of partitions and drives.</p>
+  <p>Vaak wordt een aangekoppeld volume een <em>partitie</em> genoemd, hoewel het niet hetzelfde hoeft te zijn. een "partitie" verwijst naar een <em>fysiek</em> opslaggebied op een enkele harde schijf. Zodra een partitie is aangekoppeld kan het worden aangeduid als een volume, want u heeft toegang tot de bestanden erop. U kunt volumen zien als de van een label voorziene, toegankelijke "voorkant" van de functionele "achterkamers" van partities en schijven.</p>
 
 <section id="manage">
- <title>View and manage volumes and partitions using the disk utility</title>
+ <title>Volumes en partities bekijken en beheren via Schijfgereedschap</title>
 
-  <p>You can check and modify your computer's storage volumes with the disk
- utility.</p>
+  <p>U kunt de opslagvolumes van uw computer controleren en wijzigen via Schijfgereedschap.</p>
 
 <steps>
   <item>
-    <p>Open the <gui>Activities</gui> overview and start <app>Disks</app>.</p>
+    <p>Open het <gui>Activiteiten</gui>-overzicht en start <app>Schijven</app>.</p>
   </item>
   <item>
-    <p>In the list of storage devices on the left, you will find hard disks,
-    CD/DVD drives, and other physical devices. Click the device you want to
-    inspect.</p>
+    <p>In de lijst met opslagapparaten aan de linkerkant vindt u harde schijven, cd/dvd-stations en andere fysieke apparaten. Klik op het apparaat dat u wilt onderzoeken.</p>
   </item>
   <item>
-    <p>The right pane provides a visual breakdown of the volumes and
-    partitions present on the selected device. It also contains a variety of
-    tools used to manage these volumes.</p>
-    <p>Be careful: it is possible to completely erase the data on your disk with
-    these utilities.</p>
+    <p>In het rechterpaneel krijgt u een grafisch overzicht van de volumes en partities die zich op het geselecteerde apparaat bevinden. Het bevat ook een aantal hulpmiddelen die gebruikt worden om deze volumes te beheren.</p>
+    <p>Let op: met deze hulpmiddelen is het mogelijk om alle gegevens van uw schijf te verwijderen.</p>
   </item>
 </steps>
 
-  <p>Your computer most likely has at least one <em>primary</em> partition and a
- single <em>swap</em> partition. The swap partition is used by the operating
- system for memory management, and is rarely mounted.  The primary partition
- contains your operating system, applications, settings, and personal files.
- These files can also be distributed among multiple partitions for security or
- convenience.</p>
+  <p>Hoogstwaarschijnlijk heeft uw computer ten minste één <em>primaire</em> partitie en één <em>wisselgeheugen</em>partitie.De wisselgeheugenpartitie wordt door het besturingssysteem gebruikt voor geheugenbeheer en wordt zelden aangekoppeld. De primaire partitie bevat uw besturingssysteem, toepassingen, instellingen en persoonlijke bestanden. Deze bestanden kunnen zich ook op meerdere partities bevinden omwille van de veiligheid en het gemak.</p>
 
-  <p>One primary partition must contain information that your computer uses to
-  start up, or <em>boot</em>. For this reason it is sometimes called a boot
-  partition, or boot volume. To determine if a volume is bootable, select the
-  partition and click the menu button in the toolbar underneath the partition
-  list. Then, click <gui>Edit Partition…</gui> and look at its
-  <gui>Flags</gui>. External media such as USB drives and CDs may also contain
-  a bootable volume.</p>
+  <p>Eén primaire partitie moet informatie bevatten die gebruikt wordt door uw computer om op te starten, of <em>booten</em>. Daarom wordt deze soms bootpartitie of bootvolume genoemd. Om te bepalen of een volume opstartbaar is selecteert u de partitie en klikt u op de menuknop in de werkbalk onder de lijst met partities. Klik daarna op <gui>Partitie bewerken…</gui> en bekijk de <gui>partitieparameters</gui>. Externe media zoals usb-stations en cd's kunnen ook opstartbaar zijn.</p>
 
 </section>
 

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-troubleshooting-initial-check" xml:lang="pt">
+
+  <info>
+    <link type="next" xref="net-wireless-troubleshooting-hardware-info"/>
+    <link type="guide" xref="net-wireless-troubleshooting"/>
+
+    <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Contribuintes ao wiki de documentação de Ubuntu</name>
+    </credit>
+    <credit type="author">
+      <name>Projeto de documentação de GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Assegure-se de que a configuração básica de rede é correta e se prepare para os seguintes passos na resolução de problemas.</desc>
+  </info>
+
+  <title>Solucionador de problemas de rede sem fios</title>
+  <subtitle>Realizar uma verificação inicial da conexão</subtitle>
+
+  <p>In this step you will check some basic information about your wireless
+  network connection. This is to make sure that your networking problem isn’t
+  caused by a relatively simple issue, like the wireless connection being
+  turned off, and to prepare for the next few troubleshooting steps.</p>
+
+  <steps>
+    <item>
+      <p>Assegure-se que seu portátil não está ligado a uma conexão de Internet <em>instalada</em>-</p>
+    </item>
+    <item>
+      <p>Se tem um adaptador sem fios externo (como um adaptador sem fios USB ou um cartão PCMCIA ligada em seu portátil), se assegure de que está inserta na ranhura correta na computador.</p>
+    </item>
+    <item>
+      <p>Se seu cartão sem fios está <em>dentro</em> da sua computador, assegure-se que do interruptor do adaptador sem fios está aceso (se tem um). Os portáteis frequentemente têm interruptores que pode usar clicando uma combinação de teclas.</p>
+    </item>
+    <item>
+      <p>Carregue no área de estado do sistema na barra superior, selecione <gui>Inalámbrica</gui> e carregue em <gui>Configuração sem fios</gui>. Assegure-se de que <gui>Inalámbrica</gui> está <gui>Ativada</gui>. Também deve verificar que o <link xref="net-wireless-airplane">modo avião</link> <em>não</em> está ativado.</p>
+    </item>
+    <item>
+      <p>Abra o terminal, introduza <cmd>nmcli dispositivo</cmd> e carregue <key>Enter</key>.</p>
+      <p>Isto mostrará informação sobre susinterfaces de rede e o estado da conexão. Consulte na lista de informação se há uma seção relacionada com o adaptador de rede sem fios. Se o estado é <code>conetado</code> na seção de seu adaptador sem fios, significa que está a funcionar e conetado a seu router sem fios.</p>
+    </item>
+  </steps>
+
+  <p>Se está ligado a seu router sem fios, mas segue sem poder aceder a Internet, a sua router pode estar mau configurado ou seu provedor de serviços de Internet (ISP) pode ter problemas técnicos. Reveja seu router e as guias de configuração da sua ISP, ou contate com o suporte de seu ISP.</p>
+
+  <p>Se a informação desde <cmd>nmcli dispositivo</cmd> não indica que esteja conetado à rede, carregue <gui>Seguinte</gui> para continuar com a seguinte parte da guia de resolução de problemas.</p>
+
+</page>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" id="processes" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="software#management"/>
+    <revision pkgversion="3.12" date="2014-06-17" status="review"/>
+
+    <credit type="author copyright">
+      <name>Matthias Clasen</name>
+      <email>matthias.clasen@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Aruna Sankaranarayanan</name>
+      <email>aruna.evam@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+
+    <desc>Welche Prozesse sollten in einer unveränderten, im »Lieferzustand« befindlichen GNOME-Sitzung laufen?</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Typische Prozesse</title>
+
+  <p>In einer unveränderten <app>GNOME</app>-Sitzung werden Programme namens <link href="man:daemon"><app>Daemons</app></link> als Hintergrunddienste ausgeführt. In der Voreinstellung finden Sie folgende Hintergrunddienste:</p>
+
+   <terms>
+     <item>
+       <title>dbus-daemon</title>
+       <p>Der <app>dbus-daemon</app> stellt einen Message-Bus zur Verfügung, den Programme zum Austausch von Meldungen untereinander verwenden können. Der <app>dbus-daemon</app> ist mit der D-Bus-Bibliothek implementiert, welche eine 1:1-Kommunikation zwischen zwei beliebigen Anwendungen ermöglicht.</p>
+       <p>Weitere Informationen finden Sie in der Handbuchseite zu <link href="man:dbus-daemon">dbus-daemon</link>.</p>
+     </item>
+     <item>
+       <title>gnome-keyring-daemon</title>
+       <p>Anmeldedaten wie Benutzernamen und Passwörter werden für verschiedene Programme und Webseiten sicher mittels <app>gnome-keyring-daemon</app> gespeichert. Diese Informationen werden in eine verschlüsselte Datei im persönlichen Ordner des Benutzers geschrieben, welche die Schlüsselbund-Datei genannt wird.</p>
+       <p>Weitere Informationen finden Sie in der Handbuchseite zu <link href="man:gnome-keyring-daemon">gnome-keyring-daemon</link>.</p>
+     </item>
+     <item>
+       <title>gnome-session</title>
+       <p>Das Programm <app>gnome-session</app> ist für die Ausführung der GNOME-Arbeitsumgebung mit Hilfe eines Anmeldemanagers wie <app>GDM</app>, <app>LightDM</app> oder <app>NODM</app> zuständig. Die vorgegebene Sitzung des Benutzers wird zum Zeitpunkt der Installation vom Systemadministrator festgelegt. <app>gnome-session</app> lädt typischerweise die letzte Sitzung, die erfolgreich auf dem System lief.</p>
+       <p>Weitere Informationen finden Sie in der Handbuchseite zu <link href="man:gnome-session">gnome-session</link>.</p>
+     </item>
+     <item>
+       <title>gnome-settings-daemon</title>
+       <p>Der Dienst <app>gnome-settings-daemon</app> regelt Einstellungen für eine GNOME-Sitzung und für alle Programme, die in dieser Sitzung ausgeführt werden.</p>
+       <p>Weitere Informationen finden Sie in der Handbuchseite zu <link href="man:gnome-settings-daemon">gnome-settings-daemon</link>.</p>
+     </item>
+     <item>
+       <title>gnome-shell</title>
+       <p>Die <app>gnome-shell</app> stellt die Basisfunktionalität einer Benutzeroberfläche für GNOME bereit, zum Beispiel zum Starten von Anwendungen, Durchsuchen von Ordnern, Betrachten von Dateien usw.</p>
+       <p>Weitere Informationen finden Sie in der Handbuchseite zu <link href="man:gnome-shell">gnome-shell</link>.</p>
+     </item>
+     <item>
+       <title>pulseaudio</title>
+       <p><app>PulseAudio</app> ist ein Soundserver für Linux, POSIX und Windows-Systeme, mit dem Programme Klänge über den <app>Pulseaudio</app>-Hintergrunddienst ausgeben können.</p>
+       <p>Weitere Informationen finden Sie in der Handbuchseite zu <link href="man:pulseaudio">pulseaudio</link>.</p>
+     </item>
+   </terms>
+
+  <p>Abhängig von den Benutzereinstellungen finden Sie unter anderem noch folgende Prozesse:</p>
+   <list ui:expanded="false">
+   <title>Zusätzliche Prozesse</title>
+     <item><p><app>at-spi2-dbus-launcher</app></p></item>
+     <item><p><app>at-spi2-registryd</app></p></item>
+     <item><p><app>gnome-screensaver</app></p></item>
+     <item><p><app>gnome-shell-calendar-server</app></p></item>
+     <item><p><app>goa-daemon</app></p></item>
+     <item><p><app>gsd-printer</app></p></item>
+     <item><p>Verschiedene <app>Evolution</app>-Factory-Prozesse</p></item>
+     <item><p>Verschiedene <app>GVFS</app>-Prozesse</p></item>
+   </list>
+
+</page>

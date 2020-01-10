@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="keyboard-layouts" xml:lang="pt">
+
+  <info>
+    <link type="guide" xref="prefs-language"/>
+    <link type="guide" xref="keyboard" group="i18n"/>
+    <link type="guide" xref="keyboard-shortcuts-set"/>
+
+    <revision pkgversion="3.8" version="0.3" date="2013-04-30" status="review"/>
+    <revision pkgversion="3.10" date="2013-10-28" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+
+    <credit type="author copyright">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+      <years>2012</years>
+    </credit>
+    <credit type="author">
+       <name>Julita Inca</name>
+       <email>yrazes@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hilh</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Juanjo Marín</name>
+      <email>juanj.marin@juntadeandalucia.es</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Acrescentar distribuições do teclado e mudar entre elas.</desc>
+  </info>
+
+  <title>Utilizar distribuições de teclado alternativas</title>
+
+  <p>Os teclados vêm em centos de distribuições diferentes para diferentes idiomas. Inclusive para um sozinho idioma podem existir muitas distribuições de teclado, como a distribuição Dvorak para o inglés. Pode fazer que seu teclado se comporte como um teclado com uma distribuição diferente, independentemente de que letras e símbolos tenha escritos nas teclas. Isto é útil se tem que mudar entre vários idiomas com frequência.</p>
+
+  <steps>
+    <item>
+      <p>Abra a vista de <gui xref="shell-introduction#activities">Atividades</gui> e comece a escrever <gui>Región e idioma</gui>.</p>
+    </item>
+    <item>
+      <p>Carregue em <gui>Región e idioma</gui> para abrir o painel.</p>
+    </item>
+    <item>
+      <p>Carregue o botão <gui>+</gui> na seção <gui>Fontes primeiramente</gui>, selecione o idioma associado à distribuição, selecione uma distribuição e carregue <gui>Acrescentar</gui>.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>If there are multiple user accounts on your system, there is a separate
+    instance of the <gui>Region &amp; Language</gui> panel for the login screen.
+    Click the <gui>Login Screen</gui> button at the top right to toggle between
+    the two instances.</p>
+
+    <p>Some rarely used keyboard layout variants are not available by default when you click
+    the <gui>+</gui> button. To make also those input sources available you can open a terminal
+    window by pressing <keyseq><key>Ctrl</key><key>Alt</key><key>T</key></keyseq>
+    and run this command:</p>
+    <p><cmd its:translate="no">gsettings set org.gnome.desktop.input-sources show-all-sources true</cmd></p>
+  </note>
+
+  <note style="sidebar">
+    <p>Pode visualizar uma imagem de qualquer distribuição selecionando na lista de <gui>Fontes primeiramente</gui> e clicando <gui><media its:translate="no" type="image" src="figures/input-keyboard-symbolic.png" width="16" height="16"><span its:translate="yes">vista prévia</span></media></gui></p>
+  </note>
+
+  <p>Certos idiomas oferecem algumas opções de configuração adicionais. Pode identificar estes idiomas porque têm um ícone de <gui><media its:translate="no" type="image" src="figures/system-run-symbolic.svg" width="16" height="16"><span its:translate="yes">vista prévia</span></media></gui>. Se quer aceder a estes parâmetros adicionais, selecione o idioma na lista de <gui>Fontes primeiramente</gui> e mostrar-se-á um botão de <gui style="button"><media its:translate="no" type="image" src="figures/emblem-system-symbolic.svg" width="16" height="16"><span its:translate="yes">preferências</span></media></gui> que dar-lhe-á acesso à configuração adicional.</p>
+
+  <p>When you use multiple layouts, you can choose to have all windows use the
+  same layout or to set a different layout for each window. Using a different
+  layout for each window is useful, for example, if you’re writing an article
+  in another language in a word processor window. Your keyboard selection will
+  be remembered for each window as you switch between windows. Press the
+  <gui style="button">Options</gui> button to select how you want to manage
+  multiple layouts.</p>
+
+  <p>A barra superior mostrará um identificador curto para a distribuição atual, como <gui>é</gui> para a distribuição regular de espanhol. Carregue no indicador da distribuição e selecione a distribuição que quer usar no menu. Se o idioma selecionado tem alguma configuração adicional, mostrar-se-á abaixo da lista de distribuições disponíveis. Isto lhe dá uma vista geral rápida da configuração. Também pode abrir uma imagem com a distribuição atual do teclado para a usar como referência.</p>
+
+  <p>A maneira mais rápida de alterar para outra distribuição é utilizando os <gui>Atalhos do teclado</gui> das <gui>Fontes primeiramente</gui>. Estes atalhos abrem o seletor de <gui>Fontes primeiramente</gui>, onde pode se mover para adiante ou para atrás. De maneira predeterminada, pode alterar para a seguinte fonte primeiramente clicando <keyseq><key xref="keyboard-key-super">Super</key><key>Espaço</key></keyseq> e à fonte primeiramente anterior clicando <keyseq><key>Shift</key><key>Super</key> <key>Espaço</key></keyseq>. Pode mudar estes atalhos na configuração do <gui>Teclado</gui>.</p>
+
+  <p><media type="image" src="figures/input-methods-switcher.png"/></p>
+
+</page>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="ui" version="1.0 if/1.0" id="shell-workspaces" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="shell-windows#working-with-workspaces" group="#first"/>
+
+    <revision pkgversion="3.8.0" date="2013-04-23" status="review"/>
+    <revision pkgversion="3.10.3" date="2014-01-26" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <credit type="author">
+      <name>Projekt dokumentacji GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Obszary robocze są sposobem na grupowanie okien na pulpicie.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Czym są obszary robocze i do czego mogę je używać?</title>
+
+    <media type="image" src="figures/shell-workspaces.png" width="162" height="434" style="floatend floatright">
+        <p>Przełącznik obszarów roboczych</p>
+    </media>
+
+  <p if:test="!platform:gnome-classic">Obszary robocze odnoszą się do grupowania okien na pulpicie. Można utworzyć wiele obszarów, które działają jak wirtualne pulpity. Obszary robocze służą do zmniejszenia nieładu i ułatwiają nawigację na pulpicie.</p>
+
+  <p if:test="platform:gnome-classic">Obszary robocze odnoszą się do grupowania okien na pulpicie. Można używać wiele obszarów, które działają jak wirtualne pulpity. Obszary robocze służą do zmniejszenia nieładu i ułatwiają nawigację na pulpicie.</p>
+
+  <p>Można używać obszarów roboczych do organizowania pracy. Na przykład, można trzymać wszystkie programy do komunikacji, takie jak klient poczty i komunikator na jednym obszarze, a wykonywaną pracę na innym. Na trzecim można umieścić odtwarzacz muzyki.</p>
+
+<p>Używanie obszarów roboczych:</p>
+
+<list>
+  <item>
+    <p if:test="!platform:gnome-classic">Na <gui xref="shell-introduction#activities">ekranie podglądu</gui> przenieś kursor do prawej krawędzi ekranu.</p>
+    <p if:test="platform:gnome-classic">Naciśnij klawisz <key xref="keyboard-key-super">Super</key>, aby otworzyć <gui>ekran podglądu</gui>, a następnie przenieś kursor do prawej krawędzi ekranu.</p>
+  </item>
+  <item>
+    <p if:test="!platform:gnome-classic">Pojawi się pionowy panel wyświetlający używane obszary robocze, plus jeden pusty. To przełącznik obszarów roboczych.</p>
+    <p if:test="platform:gnome-classic">Pojawi się pionowy panel wyświetlający dostępne obszary robocze. To przełącznik obszarów roboczych.</p>
+  </item>
+  <item if:test="!platform:gnome-classic">
+    <p>Aby dodać obszar roboczy, przeciągnij okno z istniejącego obszaru na pusty obszar na przełączniku obszarów roboczych. Ten obszar będzie teraz zawierał upuszczone okno, a nowy pusty obszar pojawi się pod nim.</p>
+  </item>
+  <item if:test="!platform:gnome-classic">
+    <p>Aby usunąć obszar roboczy, zamknij wszystkie znajdujące się na nim okna lub przenieś je na inne obszary.</p>
+  </item>
+</list>
+
+<p if:test="!platform:gnome-classic">Zawsze jest co najmniej jeden obszar roboczy.</p>
+
+</page>

@@ -53,7 +53,12 @@
   </p>
   <p>ProPhoto એ વિસાળ જગ્યા ઉપલબ્ધ છે અને વારંવાર દસ્તાવેજ પેટી માટે વાપરેલ છે. તે માણસ દ્દારા શોધેલ વિશાળ રંગોની સીમાને એનકોડ કરી શકે છે, અને એનકોડ રંગો કે આંખ શોધી શકતી નથી!</p>
 
-  <p>હવે, જો ProPhoto સારી રીતે દેખાતુ હોય તો, બધા માટે તેને શા માટે આપણે વાપરવું? <em>પરિમાણીકરણ</em> સાથે કરવાનો જવાબ છે. જો તમારી પાસે ફક્ત દરેક ચેનલને એનકોડ કરવા માટે 8 બીટ (256 સ્તરો) હોય તો, પછી વિશાળ સીમા એ દરેક કિંમત વચ્ચે મોટા પગલાં રાખી રહ્યુ છે.</p>
+  <p>
+    Now, if ProPhoto is clearly better, why don’t we use it for everything?
+    The answer is to do with <em>quantization</em>.
+    If you only have 8 bits (256 levels) to encode each channel, then a
+    larger range is going to have bigger steps between each value.
+  </p>
   <p>
     Bigger steps mean a larger error between the captured color and the
     stored color, and for some colors this is a big problem.

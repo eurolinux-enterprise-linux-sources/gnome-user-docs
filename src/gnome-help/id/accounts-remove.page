@@ -24,55 +24,52 @@
       <years>2015</years>
     </credit>
 
-    <desc>Remove access to an online service provider from your
-    applications.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Menghapus akses ke suatu penyedia layanan daring dari aplikasi Anda.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Andika Triwidada</mal:name>
       <mal:email>andika@gmail.com</mal:email>
-      <mal:years>2011, 2012, 2013, 2014.</mal:years>
+      <mal:years>2011-2014, 2017.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ahmad Haris</mal:name>
+      <mal:email>ahmadharis1982@gmail.com</mal:email>
+      <mal:years>2017.</mal:years>
     </mal:credit>
   </info>
 
   <title>Menghapus sebuah akun</title>
 
-  <p>You can remove an online account which you no longer wish to use.</p>
+  <p>Anda dapat menghapus akun daring yang tidak ingin Anda pakai lagi.</p>
 
   <note style="tip">
-    <p>Many online services provide an authorization token which GNOME stores
-    instead of your password. If you remove an account, you should also revoke
-    that certificate in the online service. This will ensure that no other
-    application or website can connect to that service using the authorization
-    for GNOME.</p>
+    <p>Banyak layanan daring menyediakan suatu token otorisasi yang disimpan oleh GNOME sebagai pengganti kata sandi. Bila Anda menghapus suatu akun, Anda juga mesti mencabut sertifikat itu dalam layanan daring. Ini akan memastikan bahwa tidak ada aplikasi atau situs web lain yang dapat menyambung ke layanan tersebut memakai otorisasi untuk GNOME.</p>
 
-    <p>How to revoke the authorization depends on the service provider. Check
-    your settings on the provider's website for authorized or connected apps
-    or sites. Look for an app called "GNOME" and remove it.</p>
+    <p>Bagaimana cara mencabut otorisasi yang bergantung kepada penyedia layanan. Periksa pengaturan Anda pada situs web penyedia mengotorisasi atau menyambungkan apps atau situs. Carilah app bernama "GNOME" dan hapuslah.</p>
   </note>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Online Accounts</gui>.</p>
+      <p>Buka ringkasan <gui xref="shell-introduction#activities">Aktivitas</gui> dan mulai mengetik <gui>Akun Daring</gui>.</p>
     </item>
     <item>
-      <p>Click on <gui>Online Accounts</gui> to open the panel.</p>
+      <p>Klik pada <gui>Akun Daring</gui> untuk membuka panel.</p>
     </item>
     <item>
       <p>Pilih akun yang ingin Anda hapus.</p>
     </item>
     <item>
-      <p>Click the <gui>-</gui> button in the lower-left corner of the
-      window.</p>
+      <p>Klik tombol <gui>-</gui> di pojok kiri bawah jendela.</p>
     </item>
     <item>
-      <p>Click <gui>Remove</gui> in the confirmation dialog.</p>
+      <p>Klik <gui>Hapus</gui> dalam dialog konfirmasi.</p>
     </item>
   </steps>
 
   <note style="tip">
-    <p>Instead of deleting the account completely, it is possible to
-    <link xref="accounts-disable-service">restrict the services</link> accessed
-    by your desktop.</p>
+    <p>Alih-alih menghapus akun secara komplit, dimungkinkan untuk <link xref="accounts-disable-service">membatasi layanan</link> yang diakses oleh desktop Anda.</p>
   </note>
 </page>

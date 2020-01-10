@@ -9,6 +9,7 @@
     <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
     <revision pkgversion="3.10" date="2013-11-08" status="review"/>
     <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.26" date="2017-09-30" status="candidate"/>
 
     <credit type="author">
       <name>Έργο Τεκμηρίωσης GNOME</name>
@@ -66,7 +67,12 @@
 
   <title>Γιατί ο υπολογιστής μου απενεργοποιείται όταν κλείνω το καπάκι;</title>
 
-  <p>Όταν κλείνετε το καπάκι του φορητού σας, ο υπολογιστής σας θα <link xref="power-suspend"><em>ανασταλεί</em></link> για να εξοικονομήσει ισχύ. Αυτό σημαίνει ότι ο υπολογιστής δεν είναι στην πραγματικότητα ανενεργός - έχει απλά μεταβεί σε αδρανοποίηση. Μπορείτε να συνεχίσετε ανοίγοντας το καπάκι. Εάν δεν συνεχίσει, δοκιμάστε κάνοντας κλικ στο ποντίκι ή πατώντας ένα πλήκτρο. Εάν δεν δουλεύει ακόμα, πατήστε το κουμπί ισχύος.</p>
+  <p>When you close the lid of your laptop, your computer will
+  <link xref="power-suspend"><em>suspend</em></link> in order to save power.
+  This means that the computer is not actually turned off — it has just gone to
+  sleep. You can resume it by opening the lid. If it does not resume, try
+  clicking the mouse or pressing a key. If that still does not work, press the
+  power button.</p>
 
   <p>Μερικοί υπολογιστές δεν μπορούν να ανασταλούν σωστά, κανονικά επειδή το υλικό τους δεν υποστηρίζεται πλήρως από το λειτουργικό σύστημα (για παράδειγμα, οι οδηγοί Linux είναι ατελείς). Σε αυτήν την περίπτωση, μπορεί να βρείτε ότι δεν μπορείτε να συνεχίσετε τον υπολογιστή σας αφού έχετε κλείσει το καπάκι. Μπορείτε να δοκιμάσετε <link xref="power-suspendfail">να ρυθμίσετε το πρόβλημα με την αναστολή</link>, ή μπορείτε να αποτρέψετε τον υπολογιστή από την προσπάθεια αναστολής όταν κλείνετε το καπάκι.</p>
 
@@ -78,9 +84,11 @@
   </note>
 
   <note style="important">
-    <p>Πρέπει να έχετε εγκατεστημένο στον υπολογιστή σας το <app>Εργαλείο μικρορυθμίσεων</app> για να αλλάξετε αυτή την ρύμθιση.</p>
+    <p>You need to have <app>Tweaks</app> installed on your computer to
+    change this setting.</p>
     <if:if xmlns:if="http://projectmallard.org/if/1.0/" test="action:install">
-      <p><link style="button" action="install:gnome-tweak-tool">Εγκατάσταση <app>Εργαλείο μικρορυθμίσεων</app></link></p>
+      <p><link style="button" action="install:gnome-tweaks">Install
+      <app>Tweaks</app></link></p>
     </if:if>
   </note>
 
@@ -92,19 +100,21 @@
 
   <steps>
     <item>
-      <p>Ανοίξτε την επισκόπηση <gui xref="shell-introduction#activities">Δραστηριότητες</gui> και αρχίστε να πληκτρολογείτε <gui>Εργαλείο μικρορυθμίσεων</gui>.</p>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui>
+      overview and start typing <gui>Tweaks</gui>.</p>
     </item>
     <item>
-      <p>Κάντε κλικ στο <gui>Εργαλείο μικρορυθμίσεων</gui> για να ανοίξει η εφαρμογή.</p>
+      <p>Click <gui>Tweaks</gui> to open the application.</p>
     </item>
     <item>
       <p>Κάντε κλικ στην καρτέλα <gui>Ενέργεια</gui>.</p>
     </item>
     <item>
-      <p>Αλλάξτε το <gui>Να μην γίνεται αναστολή όταν κλείνει το καπάκι</gui> σε <gui>ΝΑΙ</gui>.</p>
+      <p>Switch <gui>Suspend when laptop lid is closed</gui> to
+      <gui>OFF</gui>.</p>
     </item>
     <item>
-      <p>Κλείστε το παράθυρο <gui>Εργαλείο μικρορυθμίσεων</gui>.</p>
+      <p>Close the <gui>Tweaks</gui> window.</p>
     </item>
   </steps>
 

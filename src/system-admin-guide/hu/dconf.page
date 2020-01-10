@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="dconf" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="setup"/>
+    <revision pkgversion="3.8" date="2013-08-08" status="incomplete"/>
+    <revision pkgversion="3.14" date="2014-06-17" status="incomplete"/>
+
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="collaborator">
+      <name>Ryan Lortie</name>
+      <email>desrt@desrt.ca</email>
+      <years>2013</years>
+    </credit>
+    <credit type="author copyright">
+      <name>Jim Campbell</name>
+      <email>jcampbell@gnome.org</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Mi az a <sys>dconf</sys>? Hogyan használható a beállítások szerkesztéséhez?</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>ur.balazs@fsf.hu</mal:email>
+      <mal:years>2018.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Felhasználó- és rendszerbeállítások kezelése dconf használatával</title>
+
+  <!-- TODO: improve wording throughout the page -->
+  <p>A <sys>dconf</sys> a fő beállítási segédprogramok egyike a GNOME-ban. A célja, hogy segítsen a GNOME rendszer- és alkalmazásbeállítások beállításában és kezelésében.</p>
+
+  <p>Hogy képet kaphasson a <sys>dconf</sys> GNOME-on belüli erejéről, létezik <sys>dconf</sys> kulcs majdnem az összes olyan beállításhoz, amelyre egy felhasználó rákattinthat a GNOME asztalon vagy bármely GNOME alkalmazásban. Ezen túlmenően van néhány olyan rendszer- és alkalmazásbeállítás, amelyet a felhasználói felületről ugyan nem lehet megváltoztatni, de a <sys>dconf</sys> használatával megváltoztathatók.</p>
+
+  <p>Adminisztrátorként ez azt jelenti, hogy a <sys>dconf</sys> használatának ismerete segíteni fog személyre szabni a GNOME-ot és a GNOME-alapú alkalmazásokat, hogy a legjobban illeszkedjenek egy adott környezet igényeihez.</p>
+
+  <!-- TODO: changes are written to the first database in the list, but
+       multiple databases can be writable. -->
+  <p>Egy <em>profil</em> a konfigurációs adatbázisok listája. Egy profilban lévő első adatbázis az írandó adatbázis, és a többi adatbázis csak olvasható. A rendszeradatbázisok mindegyike egy kulcsfájl könyvtárból kerül előállításra. Minden kulcsfájl könyvtár egy vagy több fájlt tartalmaz. Az egyes kulcsfájlok legalább egy dconf útvonalat, valamint egy vagy több kulcsot és a hozzájuk tartozó értékeket tartalmaznak.</p>
+
+  <p>Azok a kulcspárok, amelyek egy <sys>dconf</sys> <em>profilban</em> be vannak állítva, felülbírálják az alapértelmezett beállításokat, hacsak nincs valami probléma azzal az értékkel, amelyet beállított.</p>
+
+  <!-- TODO: databases -->
+  <p/>
+
+<section id="profile">
+  <!-- TODO: explain the profile syntax (maybe new page) -->
+  <title>Profilok</title>
+  <p>Általában azt szeretnénk, hogy a <sys>dconf</sys> profil egy <em>felhasználói adatbázisból</em> és legalább egy rendszeradatbázisból álljon. A profilnak soronként egy adatbázist kell felsorolnia.</p>
+  <p>Egy profilban az első sor az az adatbázis, amelybe a változtatások írva lesznek. Ez általában a <code>user-db:<input>user</input></code>, ahol a <input>user</input> annak a felhasználói adatbázisnak a neve, amely általában a <file>~/.config/dconf</file> fájlban található.</p>
+  <example>
+    <listing>
+      <title>Minta profil</title>
+      <code its:translate="no">user-db:user
+system-db:<input>local</input>
+system-db:<input>site</input></code>
+    </listing>
+  </example>
+  <!--TODO: explain local and site -->
+</section>
+
+<!--section id="key-file">
+  < TODO: link to dconf-keyfiles.page? >
+  <p></p>
+
+</section-->
+
+</page>

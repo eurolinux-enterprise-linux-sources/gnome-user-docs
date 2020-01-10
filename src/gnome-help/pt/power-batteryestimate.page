@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="power-batteryestimate" xml:lang="pt">
+
+  <info>
+
+    <link type="guide" xref="power#faq"/>
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.20" date="2016-06-15" status="final"/>
+
+    <desc>A duração da bateria mostrada quando clica sobre o <gui>ícone da bateria</gui> é só estimada.</desc>
+
+    <credit type="author">
+      <name>Projeto de documentação de GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Phil Bulh</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hilh</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+<title>A duração estimada da bateria não é correta</title>
+
+<p>Quando comprove o nível de carregamento restante da bateria, pode que observe que o tempo restante mostra um valor diferente do que dura realmente a bateria. Isto se deve a que o nível de carregamento restante da bateria só pode se estimar, ainda que as estimativas vão melhorando com o tempo.</p>
+
+<p>Para poder estimar o nível de bateria restante, devem-se ter em conta vários fatores. Um é a quantidade de energia que a computador está utilizando neste momento: o consumo de energia varia em função de cuántos programas tenha abertos, que dispositivos tem conetados, e de se está executando tarefas intensivas (como ver um vídeo em alta definição ou converter ficheiros de música, por exemplo). Isto muda duma hora para outra, e é dificil de predizer.</p>
+
+<p>Outro fator é como descarrega-se a bateria. Algumas baterias perdem seu carregamento mais rápidamente do que recebem. Sem um conhecimento preciso de como descarrega-se a bateria, só se poderá fazer uma estimação aproximado do nível de bateria restante.</p>
+
+<p>À medida que a bateria descarrega-se, o gestor de energia se irá fazendo uma ideia de suas propriedades de descarga e aprenderá a melhorar suas estimativas sobre o nível da bateria, ainda que nunca serán completamente precisas.</p>
+
+<note>
+  <p>Se obtém uma estimação completamente ridicula do nível da bateria (digamos, centos de deias), provavelmente é que o Gestor de energia não tenha os dados necessários para fazer uma estimação coerente.</p>
+  <p>Se desligar a alimentação, trabalha com o portátil utilizando a bateria durante um tempo, e depois volta a ligar a alimentação e deixa que se recarregue de novo, o gestor de energia deveria poder obter os dados que precisa.</p>
+</note>
+
+</page>

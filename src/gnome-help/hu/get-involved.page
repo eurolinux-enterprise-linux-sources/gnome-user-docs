@@ -11,6 +11,11 @@
       <name>Tiffany Antopolski</name>
       <email>tiffany@antopolski.com</email>
     </credit>
+    <credit type="author">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -22,7 +27,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Kelemen Gábor</mal:name>
       <mal:email>kelemeng at gnome dot hu</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015, 2016, 2017</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -51,18 +56,28 @@
   </info>
   <title>Vegyen részt ezen útmutató tökéletesítésében</title>
 
-  <section id="bug-report">
-   <title>Hiba jelentése vagy továbbfejlesztés kérése</title>
-   <p>Ezt a súgódokumentációt egy önkéntes közösség készítette. Közreműködését szívesen fogadjuk. Ha hibákat talál ezeken a súgóoldalakon (például elírásokat, helytelen utasításokat vagy hiányzó témákat), akkor küldjön <em>hibajelentést</em>. Ehhez keresse fel a <link href="https://bugzilla.gnome.org/">bugzilla.gnome.org</link> oldalt.</p>
-   <p>A hibák jelentéséhez regisztrálnia kell, így azok állapotának változásáról e-mailben értesülhet. Ha még nincs fiókja, a <gui>New Account</gui> hivatkozásra kattintva létrehozhat egyet.</p>
-   <p>Ha létrehozta fiókját, jelentkezzen be, kattintson a <guiseq><gui>File a Bug</gui><gui>Core</gui><gui>gnome-user-docs</gui></guiseq> hivatkozásokra. Hiba jelentése előtt olvassa el a <link href="https://bugzilla.gnome.org/page.cgi?id=bug-writing.html">hibajelentés-írási irányelveket</link>, és <link href="https://bugzilla.gnome.org/browse.cgi?product=gnome-user-docs">ellenőrizze</link>, hogy nincs-e már a hiba bejelentve.</p>
-   <p>A hiba bejelentéséhez válassza ki az összetevőt a <gui>Component</gui> menüben. Ha ebben a dokumentációban talált hibát, akkor a <gui>gnome-help</gui> összetevőt válassza. Ha nem biztos benne, hogy melyik összetevőt érinti a hiba, válassza a <gui>general</gui> összetevőt.</p>
-   <p>Ha egy olyan témát szeretne bejelenteni, amely nincs dokumentálva, válassza a <gui>Severity</gui> menü <gui>enhancement</gui> pontját. Töltse ki (angolul) a Summary és Description mezőket, és nyomja meg a <gui>Commit</gui> gombot.</p>
+  <section id="submit-issue">
+
+   <title>Hibajegy beküldése</title>
+
+   <p>Ezt a súgódokumentációt egy önkéntes közösség készítette. Közreműködését szívesen fogadjuk. Ha hibákat talál ezeken a súgóoldalakon (például elírásokat, helytelen utasításokat vagy hiányzó témákat), akkor küldjön <em>hibajelentést</em>. Ehhez keresse fel a <link href="https://gitlab.gnome.org/GNOME/gnome-user-docs/issues">hibakövető oldaltt</link>.</p>
+
+   <p>A hibák jelentéséhez regisztrálnia kell, így azok állapotának változásáról e-mailben értesülhet. Ha még nincs fiókja, a <gui><link href="https://gitlab.gnome.org/users/sign_in">Sign in / Register</link></gui> gombra kattintva létrehozhat egyet.</p>
+
+   <p>Ha létrehozta fiókját, jelentkezzen be, majd lépjen vissza a <link href="https://gitlab.gnome.org/GNOME/gnome-user-docs/issues">dokumentációs hibakövetőre</link> és kattintson a <gui><link href="https://gitlab.gnome.org/GNOME/gnome-user-docs/issues/new">New issue</link></gui> gombra. Új hiba bejelentése előtt érdemes <link href="https://gitlab.gnome.org/GNOME/gnome-user-docs/issues">ellenőrizni</link>, hogy nincs-e már a hiba bejelentve.</p>
+
+   <p>A hiba bejelentéséhez válassza ki a megfelelő címkét a <gui>Labels</gui> menüben. Ha ebben a dokumentációban talált hibát, akkor a <gui>gnome-help</gui> címkét válassza. Ha nem biztos benne, hogy melyik összetevőt érinti a hiba, akkor ne válasszon ki semmit.</p>
+
+   <p>Ha egy olyan témát szeretne bejelenteni, amely nincs dokumentálva, válassza a <gui>Feature</gui> címkét. Töltse ki (angolul) a Title és Description mezőket, és nyomja meg a <gui>Submit issue</gui> gombot.</p>
+
    <p>A hibajelentés kapni fog egy azonosítószámot, az állapota pedig a feldolgozása során frissülni fog. Köszönjük, hogy segít jobbá tenni a GNOME súgóját!</p>
+
    </section>
 
    <section id="contact-us">
    <title>Lépjen velünk kapcsolatba</title>
+
    <p>A dokumentációs csapathoz való csatlakozással kapcsolatos információkért küldjön egy <link href="mailto:gnome-doc-list@gnome.org">levelet</link> a GNOME dokumentációs levelezőlistára.</p>
+
    </section>
 </page>

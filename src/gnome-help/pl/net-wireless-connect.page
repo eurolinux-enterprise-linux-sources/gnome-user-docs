@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-connect" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="net-wireless" group="#first"/>
+    <link type="seealso" xref="net-wireless-troubleshooting"/>
+    <link type="seealso" xref="net-wireless-disconnecting"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.10" date="2013-12-05" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <credit type="author">
+      <name>Projekt dokumentacji GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <desc>Połącz się z Internetem — bezprzewodowo.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Łączenie z siecią bezprzewodową</title>
+
+<p>Jeśli komputer ma taką możliwość, to można połączyć się z siecią bezprzewodową w zasięgu, aby uzyskać dostęp do Internetu, przeglądać udostępniane pliki w sieci i tak dalej.</p>
+
+<steps>
+  <item>
+    <p>Otwórz <gui xref="shell-introduction#yourname">menu systemowe</gui> po prawej stronie górnego paska.</p>
+  </item>
+  <item>
+    <p>Wybierz <gui><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-excellent-symbolic.svg" width="16" height="16"/> Nie połączono z siecią Wi-Fi</gui>. Sekcja menu <gui>Sieć Wi-Fi</gui> zostanie rozwinięta.</p>
+  </item>
+  <item>
+    <p>Kliknij <gui>Wybierz sieć</gui>.</p>
+  </item>
+  <item>
+    <p>Kliknij nazwę sieci do użycia, a następnie przycisk <gui>Połącz</gui>.</p>
+    <p>Jeśli na liście nie ma nazwy sieci, to kliknij przycisk <gui>Więcej</gui>, aby zobaczyć, czy nie ma jej niżej na liście. Jeśli nadal jej nie widać, to komputer może być poza jej zasięgiem albo sieć <link xref="net-wireless-hidden">może być ukryta</link>.</p>
+  </item>
+  <item>
+    <p>Jeśli sieć jest chroniona hasłem (<link xref="net-wireless-wepwpa">kluczem szyfrowania</link>), to wpisz hasło i kliknij przycisk <gui>Połącz</gui>.</p>
+    <p>Jeśli klucz jest nieznany, to może on być zapisany na spodzie routera bezprzewodowego lub stacji bazowej, albo w instrukcji, albo należy poprosić o niego osobę administrującą siecią.</p>
+  </item>
+  <item>
+    <p>Ikona sieci zmieni się w trakcie próby połączenia się z siecią.</p>
+  </item>
+  <item>
+    <p>Jeśli połączenie się powiedzie, to ikona zmieni się na kropkę z kilkoma zaokrąglonymi paskami nad nią (<media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-excellent-symbolic.svg" width="16" height="16"/>). Więcej pasków wskazuje silniejsze połączenie z siecią. Mniej pasków oznacza słabsze i być może zawodne połączenie.</p>
+  </item>
+</steps>
+
+  <p>Jeśli połączenie się nie powiedzie, to użytkownik może zostać jeszcze raz poproszony o hasło lub po prostu poinformowany o rozłączeniu. Może to być spowodowane przez wiele rzeczy. Być może wpisano błędne hasło, sygnał bezprzewodowy może być za słaby, albo karta bezprzewodowa komputera sprawiać problemy. <link xref="net-wireless-troubleshooting"/> zawiera więcej informacji, jak to naprawić.</p>
+
+  <p>Silniejsze połączenie z siecią bezprzewodową niekoniecznie oznacza szybsze połączenie z Internetem czy szybsze pobieranie. Połączenie bezprzewodowe łączy komputer z <em>urządzeniem dostarczającym połączenie internetowe</em> (takim jak router lub modem), ale te dwa rodzaje połączeń są różne, więc mają różne prędkości.</p>
+
+</page>

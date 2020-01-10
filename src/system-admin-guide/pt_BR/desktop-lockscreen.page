@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="desktop-lockscreen" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="appearance"/>
+    <link type="seealso" xref="dconf-profiles"/>
+    <link type="seealso" xref="dconf-lockdown"/>
+    <revision pkgversion="3.8" date="2013-08-08" status="review"/>
+    <revision pkgversion="3.14" date="2014-06-18" status="final"/>
+
+    <credit type="author copyright">
+      <name>Jana Svarova</name>
+      <email>jana.svarova@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <credit type="editor">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+      <years>2014</years>
+    </credit>
+
+    <desc>Faça com que a tela bloqueie automaticamente de forma que o usuário tenha de inserir uma senha após ficar ocioso.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Bloqueando a tela quando o usuário está ocioso</title>
+
+  <p>Você pode fazer a tela bloquear automaticamente sempre que um usuário estiver inativo por alguma quantidade de tempo. Isso é útil se seus usuários podem deixar seus computadores desacompanhado em locais públicos ou inseguros.</p>
+
+  <steps>
+    <title>Habilitando bloqueio de tela automático</title>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-user'])"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-user-dir'])"/>
+    <item>
+      <p>Crie o arquivo de chave <file>/etc/dconf/db/local.d/00-screensaver</file> para fornecer informações para o banco de dados de <sys>local</sys>.</p>
+      <listing>
+	<title><file>/etc/dconf/db/local.d/00-screensaver</file></title>
+<code>
+# Especifica o caminho dconf
+[org/gnome/desktop/session]
+
+# Número de segundos de inatividade antes da tela apagar
+idle-delay=uint32 180
+
+# Especifica o caminho dconf
+[org/gnome/desktop/screensaver]
+
+# Bloqueia a tela após a tela estar apagada
+lock-enabled=true
+
+# Número de segundos após a tela ter apagado antes de bloquear a tela
+lock-delay=uint32 0
+</code>
+      </listing>
+      <p>Você deve incluir o <code>uint32</code> junto com os valores inteiros da chave como mostrado.</p>
+    </item>
+    <item>
+      <p>Para evitar que o usuário sobrescreva essas configurações, crie o arquivo <file>/etc/dconf/db/local.d/locks/screensaver</file> com o seguinte conteúdo:</p>
+      <listing>
+	<title><file>/etc/dconf/db/local.db/locks/screensaver</file></title>
+<code>
+# Bloqueia as configurações de proteção de tela do ambiente
+/org/gnome/desktop/session/idle-delay
+/org/gnome/desktop/screensaver/lock-enabled
+/org/gnome/desktop/screensaver/lock-delay
+</code>
+      </listing>
+    </item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-logoutin'])"/>
+  </steps>
+
+</page>

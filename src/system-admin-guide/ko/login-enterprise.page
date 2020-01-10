@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="login-enterprise" xml:lang="ko">
+
+  <info>
+    <link type="guide" xref="login#management"/>
+    <revision pkgversion="3.12" date="2014-01-28" status="draft"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Active Directory 또는 IPA 도메인 자격 증명서를 사용하여 GNOME에 로그인합니다.</desc>
+  </info>
+
+  <title>기업 자격 증명서를 사용하여 GNOME에 로그인</title>
+  
+  <p>이용 가능한 Active Directory 또는 IPA 도메인이 네트워크에 있고 도메인 계정이 있는 경우, 도메인 자격 증명서를 사용하여 GNOME에 로그인 할 수 있습니다.</p>
+  <p>도메인 계정이 성공적으로 구성이 되었다면 계정을 사용하여 GNOME에 로그인 할 수 있습니다. 로그인 프롬프트에서 사용자의 이름, <sys>@</sys> 그리고 사용자의 도메인 이름 순으로 입력합니다. 예를 들어, 당신의 도메인 이름이 <var>example.com</var>고 사용자 이름이 <var>User</var>라고 한다면:</p>
+  <screen><input>User@example.com</input></screen>
+  <p>도메인 계정에 대한 구성이 이미 끝난 경우, 로그인 형식을 설명하는 유용한 힌트를 봐야합니다.</p>
+
+  <section id="enterprise-login-welcome-screens">
+    <title>Welcome 화면 동안 기업 자격 증명서 사용</title>
+    <p>아직 기업 자격 증명서가 구성되지 않았다면, <app>GNOME Initial Setup</app> 프로그램의 일종인 <gui>Welcome</gui> 화면을 보여줄 수 있습니다.</p>
+    <steps>
+    <title>기업 자격 증명서 구성</title>
+      <item>
+        <p><gui>로그인</gui> welcome 화면에서 <gui>기업 로그인 설정</gui>을 선택하세요.</p>
+      </item>
+      <item>
+        <p>아직 준비되지 않았다면 <gui>Domain</gui> 필드에 도메인 이름을 입력합니다.</p>
+      </item>
+      <item>
+        <p>도메인 계정 사용자와 비밀번호를 관련 필드에 입력합니다.</p>
+      </item>
+      <item>
+        <p><gui>다음</gui>을 클릭합니다.</p>
+      </item>
+    </steps>
+    <p>Depending on how the domain is configured, a prompt may show up asking for
+      the domain administrator’s name and password in order to proceed.</p>
+  </section>
+  <section id="enterprise-login-change-to">
+    <title>기업 자격 증명서를 사용하여 GNOME에 로그인하도록 변경</title>
+    <p>기초 설정이 이미 완료되었고 GNOME에 도메인 계정을 사용하여 로그인하기를 원한다면, GNOME 설정의 사용자 패널에서 사용 가능합니다.</p>
+  <steps>
+    <title>기업 자격 증명서 구성</title>
+    <item>
+      <p><gui href="help:gnome-help/shell-terminology">활동</gui>개요를 열고 <gui>사용자</gui>를 입력합니다.</p>
+    </item>
+    <item>
+      <p>패널을 열기 위해 <gui>사용자</gui>를 클릭합니다.</p>
+    </item>
+    <item>
+      <p>Click the <gui>Unlock</gui> button and type the computer
+    administrator’s password.</p>
+    </item>
+    <item>
+      <p>창 왼쪽 아래에 있는 <gui>[+]</gui> 버튼을 클릭합니다.</p>
+    </item>
+    <item>
+      <p><gui>기업 로그인</gui> 버튼을 클릭합니다.</p>
+    </item>
+    <item>
+      <p>당신의 기업 계정의 도메인, 사용자 그리고 비밀번호를 입력하고 <gui>추가</gui>를 클릭합니다.</p>
+   </item>
+  </steps>
+  <p>Depending on how your domain is configured, a prompt may show up asking for
+    the domain administrator’s name and password in order to proceed.
+    </p>
+  </section>
+  <section id="enterprise-login-troubleshoot">
+    <title>문제 해결 및 고급 설정</title>
+    <p><cmd>realm</cmd> 명령과 다양한 서브 명령은 기업 로그인 기능 문제를 해결 할 때 쓰입니다. 예를 들어, 컴퓨터가 기업 로그인 구성을 끝냈는지 안 끝냈는지 알기 위해, 다음의 명령을 실행합니다:</p>
+    <screen><output>$ </output><input>realm list</input></screen>
+    <p>네트워크 관리자는 워크스테이션을 관련 도메인에 미리 결합하는 것이 좋습니다. 이 작업은 <cmd>realm join</cmd> 명령 사용 또는 스크립트의 자동화 방법에서의 <cmd>realm join</cmd> 실행으로 수행할 수 있습니다.</p>
+  </section>
+  <section id="enterprise-login-more-information">
+     <title>더 많은 정보 알아보기</title>
+   <list>
+    <item>
+      <p>제공된 <link href="http://www.freedesktop.org/software/realmd/docs/"> 관리자 가이드</link>에서 기업 로그인 기능 사용에 대한 더 많은 정보를 볼 수 있습니다.</p>
+    </item>
+   </list>
+  </section>
+
+</page>

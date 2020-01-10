@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="lockdown-printing" xml:lang="cs">
+     
+  <info>
+    <link type="guide" xref="user-settings#lockdown"/>
+    <link type="seealso" xref="dconf-lockdown"/>
+    <revision pkgversion="3.11" date="2014-12-04" status="review"/>
+
+    <credit type="author copyright">
+      <name>Jana Svarova</name>
+      <email>jana.svarova@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Jak zabránit uživatelům v tisku dokumentů.</desc>
+  </info>
+
+  <title>Zamezení v tisku</title>
+
+  <p>Můžete zakázat, aby se uživatelům zobrazovalo dialogové okno tisku. To se hodí, když poskytujete nějakému uživateli jen dočasný přístup, nebo nechcete, aby uživatelé tiskli na síťových tiskárnách.</p>
+
+  <note style="warning">
+    <p>Tato funkcionalita funguje jen v aplikacích, které ji podporují! Ne všechny aplikace GNOME a aplikace třetích stran mají tuto funkcionalitu zapnutou. U těch, které ji nepodporují, se nasledujíc nastavení nijak neprojeví.</p>
+  </note>
+
+  <steps>
+    <title>Zamezení v tisku</title>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-user'])"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-user-dir'])"/>
+    <item>
+      <p>Vytvořte soubor s klíči <file>/etc/dconf/db/local.d/00-printing</file>, který bude poskytovat informace pro databázi <sys>local</sys>.</p>
+      <listing>
+        <title><file>/etc/dconf/db/local.d/00-printing</file></title>
+<code>
+# Určuje cestu v dconf
+[org/gnome/desktop/lockdown]
+ 
+# Zabraňuje aplikacím v tisku
+disable-printing=true
+</code>
+     </listing>
+    </item>
+    <item>
+      <p>Aby uživatel nemohl tato nastavení přepsat, vytvořte soubor <file>/etc/dconf/db/local.d/locks/printing</file> s následujícím obsahem:</p>
+      <listing>
+        <title><file>/etc/dconf/db/local.db/locks/printing</file></title>
+<code>
+# Uzamyká nastavení pro tisk
+/org/gnome/desktop/lockdown/disable-printing
+</code>
+      </listing>
+    </item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-logoutin'])"/>
+  </steps>
+
+</page>

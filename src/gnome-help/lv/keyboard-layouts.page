@@ -50,11 +50,22 @@
       <p>Spiediet <gui>Reģions un valoda</gui>, lai atvērtu paneli.</p>
     </item>
     <item>
-      <p>Click the <gui>+</gui> button in the <gui>Input Sources</gui> section,
-      select the language which is associated with the layout, then select a
-      layout and press <gui>Add</gui>.</p>
+      <p>Spiediet <gui>+</gui> pogu sadaļā <gui>Ievades avoti</gui>, izvēlieties valodu, kas  ir saistīta ar izkārtojumu, tad izvēlieties izkārtojumu un spiediet <gui>Pievienot</gui>.</p>
     </item>
   </steps>
+
+  <note style="tip">
+    <p>If there are multiple user accounts on your system, there is a separate
+    instance of the <gui>Region &amp; Language</gui> panel for the login screen.
+    Click the <gui>Login Screen</gui> button at the top right to toggle between
+    the two instances.</p>
+
+    <p>Some rarely used keyboard layout variants are not available by default when you click
+    the <gui>+</gui> button. To make also those input sources available you can open a terminal
+    window by pressing <keyseq><key>Ctrl</key><key>Alt</key><key>T</key></keyseq>
+    and run this command:</p>
+    <p><cmd its:translate="no">gsettings set org.gnome.desktop.input-sources show-all-sources true</cmd></p>
+  </note>
 
   <note style="sidebar">
     <p>Jūs variet priekšskatīt jebkura izkārtojuma attēlu, izvēloties to no <gui>Ievades avotu</gui> saraksta un spiežot <gui><media its:translate="no" type="image" src="figures/input-keyboard-symbolic.png" width="16" height="16"><span its:translate="yes">priekšskatījums</span></media></gui></p>

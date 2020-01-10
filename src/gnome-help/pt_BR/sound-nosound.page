@@ -15,8 +15,7 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Check that the sound is not muted, that cables are plugged in properly,
-    and that the sound card is detected.</desc>
+    <desc>Verifique se o som não está no mudo, se os cabos estão conectados corretamente e se a placa de som foi detectada.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Rodolfo Ribeiro Gomes</mal:name>
@@ -39,41 +38,33 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Rafael Fontenelle</mal:name>
       <mal:email>rafaelff@gnome.org</mal:email>
-      <mal:years>2012-2016.</mal:years>
+      <mal:years>2012-2018.</mal:years>
     </mal:credit>
   </info>
 
-<title>I cannot hear any sounds on the computer</title>
+<title>Não consigo ouvir quaisquer som no computador</title>
 
-  <p>If you cannot hear any sounds on your computer, for example when you try
-  to play music, go through the following troubleshooting tips.</p>
+  <p>Se você não consegue ouvir som algum no seu computador (quando tenta escutar música, por exemplo), experimente esses passos para ver se consegue corrigir o problema.</p>
 
 <section id="mute">
   <title>Certificando-se de que o som não está mudo</title>
 
-  <p>Open the <gui xref="shell-introduction#yourname">system menu</gui> and make sure that
-  the sound is not muted or turned down.</p>
+  <p>Abra o <gui xref="shell-introduction#yourname">menu de sistema</gui> e certifique-se de que o som não está mudo ou desligado.</p>
 
-  <p>Some laptops have mute switches or keys on their keyboards — try pressing
-  that key to see if it unmutes the sound.</p>
+  <p>Alguns notebooks possuem botões ou teclas de mudo em seus teclados — tente pressioná-los para ver se isso traz de volta o som.</p>
 
-  <p>You should also check that you have not muted the application that you are
-  using to play sound (for example, your music player or movie player). The
-  application may have a mute or volume button in its main window, so check
-  that.</p>
+  <p>Você deveria verificar também se não retirou o áudio do aplicativo que você está usando para tocar o som (ex.: seu reprodutor de mídia ou de filmes). O aplicativo pode possuir um botão para retirar áudio ou de volume em sua janela principal, então verifique isso.</p>
 
-  <p>Also, you can check the <gui>Applications</gui> tab in the <gui>Sound</gui>
-  GUI:</p>
+  <p>Tente também verificar a aba <gui>Aplicativos</gui> na interface gráfica de <gui>Som</gui>:</p>
   <steps>
     <item>
-    <p>Open <app>Settings</app> from the <gui>Activities</gui> overview.</p>
+    <p>Abra <app>Configurações</app> no panorama de <gui>Atividades</gui>.</p>
     </item>
     <item>
-      <p>Click <gui>Sound</gui>.</p>
+      <p>Clique em <gui>Som</gui>.</p>
     </item>
     <item>
-      <p>Go to the <gui>Applications</gui> tab and check that your application
-      is not muted.</p>
+      <p>Acesse a aba <gui>Aplicativos</gui> e verifique se seu aplicativo não está mudo.</p>
     </item>
   </steps>
 
@@ -81,41 +72,29 @@
 
 <section id="speakers">
   <title>Verificar que os auto-falantes estão ligados e conectados corretamente</title>
-  <p>Se o seu computador possui auto-falantes externos, certifique-se de que eles estão ligados e que o volume está alto. Certifique-se de o cabo do auto-falante está conectado corretamente no soquete de áudio de "saída" do seu computador. Este soquete normalmente possui cor verde claro.</p>
+  <p>Se o seu computador possui auto-falantes externos, certifique-se de que eles estão ligados e que o volume está alto. Certifique-se de o cabo do auto-falante está conectado corretamente no soquete de áudio de “saída” do seu computador. Este soquete normalmente possui cor verde claro.</p>
 
-  <p>Some sound cards can switch between the socket they use for output
-  (to the speakers) and the socket for input (from a microphone, for instance).
-  The output socket may be different when running Linux, Windows or Mac OS.
-  Try connecting the speaker cable to a different audio socket on your
-  computer.</p>
+  <p>Algumas placas de som são capazes de alternar entre soquetes que elas usam para a saída (para os auto-falantes) e o soquete de entrada (para microfone, por exemplo). O soquete de saída pode ser diferente entre Linux, Windows ou Mac OS. Tente conectar o cabo do auto-falante em diferentes soquetes de áudio no computador.</p>
 
- <p>A final thing to check is that the audio cable is securely plugged into the
- back of the speakers. Some speakers have more than one input, too.</p>
+ <p>Uma última coisa para verificar é se o cabo de áudio está conectado corretamente na parte traseira dos auto-falantes. Alguns auto-falantes também possuem mais de um entrada.</p>
 </section>
 
 <section id="device">
-  <title>Check that the correct sound device is selected</title>
+  <title>Verificar se o dispositivo de som correto está selecionado</title>
 
-  <p>Some computers have multiple "sound devices" installed. Some of these are
-  capable of outputting sound and some are not, so you should check that you
-  have the correct sound device selected. This might involve some
-  trial-and-error to choose the right one.</p>
+  <p>Alguns computadores possuem múltiplos “dispositivos de som” instalados. Alguns deles são capazes de reproduzir som e alguns não. Então, você deveria verificar se você tem o dispositivo correto selecionado. Isso pode envolver algumas tentativas e erros para escolher o correto.</p>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Sound</gui>.</p>
+      <p>Abra o panorama de <gui xref="shell-introduction#activities">Atividades</gui> e comece a digitar <gui>Som</gui>.</p>
     </item>
     <item>
       <p>Clique em <gui>Som</gui> para abrir o painel.</p>
     </item>
     <item>
-      <p>In the <gui>Output</gui> tab, change the <gui>Profile</gui>
-      settings for the selected device and play a sound to see if it works.
-      You might need to go through the list and try each profile.</p>
+      <p>Na aba <gui>Saída</gui>, altere as configurações do <gui>Perfil</gui> para o dispositivo selecionado e reproduza um som para ver se ele funciona. Você pode precisar ir pela lista e tentar cada perfil.</p>
 
-      <p>If that does not work, you might want to try doing the same for any
-      other devices that are listed.</p>
+      <p>Se isso não funcionar, você pode querer tentar fazer o mesmo para outro dispositivo que esteja listado.</p>
     </item>
   </steps>
 
@@ -123,38 +102,26 @@
 
 <section id="hardware-detected">
 
- <title>Verificar que a placa de som foi detectada adequadamente</title>
+ <title>Verificar se a placa de som foi detectada adequadamente</title>
 
-  <p>Your sound card may not have been detected properly probably because 
-  the drivers for the card are not installed. You may need to install the drivers
-  for the card manually. How you do this depends on the type of the card. </p>
+  <p>Sua placa de som pode não ter sido detectada adequadamente porque os drivers para a placa não estejam instalados. Você pode precisar instalar os drivers para a placa manualmente. Como você faz isso depende do tipo de placa.</p>
 
-  <p>Run the <cmd>lspci</cmd> command in the Terminal to find out what sound
-  card you have:</p>
+  <p>Execute o comando <cmd>lspci</cmd> no Terminal para descobrir qual placa de som você tem:</p>
   <steps>
     <item>
       <p>Acesse o panorama de <gui>Atividades</gui> e abra um Terminal.</p>
     </item>
     <item>
-      <p>Run <cmd>lspci</cmd> as <link xref="user-admin-explain">superuser</link>;
-      either type <cmd>sudo lspci</cmd> and type your password, or type
-      <cmd>su</cmd>, enter the <em>root</em> (administrative) password,
-      then type <cmd>lspci</cmd>.</p>
+      <p>Execute <cmd>lspci</cmd> como <link xref="user-admin-explain">superusuário</link>; ou digite <cmd>sudo lspci</cmd> e digite sua senha, ou digite <cmd>su</cmd>, informe a senha (administrativa) do <em>root</em> e digite <cmd>lspci</cmd>.</p>
     </item>
     <item>
-      <p>Check if an <em>audio controller</em> or <em>audio device</em> is listed:
-      in such case you should see the make and model number of the sound card. 
-      Also, <cmd>lspci -v</cmd> shows a list with more detailed information.</p>
+      <p>Verifique se um <em>controlador de áudio</em> ou <em>dispositivo de áudio</em> está listado: em tal caso, você deve ver a marca e número de modelo da placa de som. Além disso, <cmd>lspci -v</cmd> mostra uma lista com mais informações detalhadas.</p>
     </item>
   </steps>
 
-  <p>You may be able to find and install drivers for your card. It is best to
-  ask on support forums (or otherwise) for your Linux distribution for
-  instructions.</p>
+  <p>Você pode conseguir localizar e instalar drivers para sua placa. É melhor perguntar em fóruns de suporte (ou outro local) da sua distribuição Linux por instruções.</p>
 
-  <p>If you cannot get drivers for your sound card, you might prefer to buy a
-  new sound card. You can get sound cards that can be installed inside the
-  computer and external USB sound cards.</p>
+  <p>Se você não conseguir obter drivers da sua placa de som, talvez você prefira comprar uma nova placa de som. Você pode obter placas de som que podem ser instaladas dentro do computador e placas de som USB externas.</p>
 
 </section>
 

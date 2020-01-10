@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="dconf-keyfiles" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="setup"/>
+<!--    <link type="seealso" xref="dconf-profiles" />-->
+    <revision pkgversion="3.9" date="2013-08-06" status="stub"/>
+
+    <credit type="author copyright">
+      <name>Ryan Lortie</name>
+      <email>desrt@desrt.ca</email>
+      <years>2012</years>
+    </credit>
+    <credit type="author">
+      <name>Aruna Sankaranarayanan</name>
+      <email>aruna.evam@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Use <em>arquivos de chave</em> <sys its:translate="no">dconf</sys> para definir configurações específicas com um editor de texto.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Controlando configurações de sistema com arquivos de chaves</title>
+
+  <p>Arquivos de banco de dados de sistema, localizados em <file its:translate="no">/etc/dconf/db</file>, não podem ser editados porque eles são escritos no formato GVDB. Para alterar as configurações de sistema usando um editor de texto, você pode modificar os <em>arquivos de chave</em> localizados em <em>diretórios de arquivo de chave</em>. Cada diretório de arquivo de chave corresponde a um arquivo de banco de dados de sistema em particular, e possui o mesmo nome que o arquivo de banco de dados com uma extensão “.d” anexada (por exemplo, <file>/etc/dconf/db/local.d</file>). Todos os diretórios de arquivo de chave são localizados em <file its:translate="no">/etc/dconf/db</file>, e cada um contém arquivos de chave em um formato especial que possa ser compilado em um banco de dados <sys its:translate="no">dconf</sys>.</p>
+
+  <listing>
+    <title>Um arquivo de chave neste diretório se parecerá com alguma coisa como:</title>
+      <code>
+# Algumas configurações padrões úteis para nosso site
+
+[system/proxy/http]
+host='172.16.0.1'
+enabled=true
+
+[org/gnome/desktop/background]
+picture-uri='file:///usr/local/roberto-corp/papel-de-parede-corporativo.jpeg'
+      </code>
+  </listing>
+
+  <note style="important">
+    <p><cmd>dconf update</cmd> deve ser executado sempre que você modificar um arquivo de chave. Quando você faz isso, <sys its:translate="no">dconf</sys> compara o carimbo de horário em um arquivo de banco de dados de sistema com o carimbo de horário no diretório de arquivo de chave correspondente. Se o carimbo de horário no diretório de arquivo de chave for mais recente que aquele no arquivo de banco de dados, o <sys its:translate="no">dconf</sys> gera novamente o arquivo <code>system-db</code> e envia uma notificação para o sistema <sys>Dbus</sys>, o qual notifica todos os aplicativos em execução para ler novamente suas configurações.</p>
+  </note>
+
+</page>

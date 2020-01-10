@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" version="1.0 if/1.0" id="bluetooth-remove-connection" xml:lang="pt-BR">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="bluetooth-remove-connection" xml:lang="pt-BR">
 
   <info>
     <link type="guide" xref="bluetooth"/>
@@ -59,7 +59,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Rafael Fontenelle</mal:name>
       <mal:email>rafaelff@gnome.org</mal:email>
-      <mal:years>2012-2016.</mal:years>
+      <mal:years>2012-2018.</mal:years>
     </mal:credit>
   </info>
 
@@ -69,26 +69,16 @@
 
   <steps>
     <item>
-    <if:choose>
-      <if:when test="platform:unity">
-        <p>Clique no ícone Bluetooth na <gui>barra superior</gui> e selecione <gui>Configurações de Bluetooth</gui>.</p>
-      </if:when>
       <p>Abra o panorama de <gui xref="shell-introduction#activities">Atividades</gui> e comece a digitar <gui>Bluetooth</gui>.</p>
-    </if:choose>
     </item>
     <item>
-    <if:choose>
-      <if:when test="platform:unity">
-        <p>Selecione <gui>Configurações de Bluetooth</gui> para abrir o painel.</p>
-      </if:when>
       <p>Clique em <gui>Bluetooth</gui> para abrir o painel.</p>
-    </if:choose>
     </item>
     <item>
       <p>Selecione o dispositivo, da lista, ao qual você deseja se conectar.</p>
     </item>
     <item>
-      <p>Na caixa de diálogo do dispositivo, alterne <gui>Conexão</gui> para <gui>OFF</gui>, ou remova o dispositivo da lista <gui>Dispositivos</gui>, clique <gui>Remover dispositivo</gui>.</p>
+      <p>Na caixa de diálogo do dispositivo, alterne <gui>Conexão</gui> para <key>○</key>, ou remova o dispositivo da lista <gui>Dispositivos</gui>, clique <gui>Remover dispositivo</gui>.</p>
     </item>
   </steps>
 

@@ -23,53 +23,48 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Run benchmarks on your hard disk to check how fast it is.</desc>
+    <desc>Prestatiemetingen (benchmarks) uitvoeren op uw harde schijf om te controleren hoe snel die is.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Justin van Steijn</mal:name>
+      <mal:email>justin50@live.nl</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hannie Dumoleyn</mal:name>
+      <mal:email>hannie@ubuntu-nl.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
   </info>
 
-<title>Test the performance of your hard disk</title>
+<title>De prestaties van u harde schijf testen</title>
 
-  <p>To test the speed of your hard disk:</p>
+  <p>Om de snelheid van uw harde schijf te testen:</p>
 
   <steps>
     <item>
-      <p>Open <app>Disks</app> from the
-      <gui xref="shell-introduction#activities">Activities</gui> overview.</p>
+      <p>Open <app>Schijven</app> vanuit het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht.</p>
     </item>
     <item>
-      <p>Choose the disk from the list in the left pane.</p>
+      <p>Kies de harde schijf uit de lijst in het linker paneel.</p>
     </item>
     <item>
-      <p>Click the menu button and select <gui>Benchmark disk…</gui> from the
-      menu.</p>
+      <p>Klik op de menuknop en selecteer <gui>Schijf benchmarken…</gui> uit het menu.</p>
     </item>
     <item>
-      <p>Click <gui>Start Benchmark…</gui> and adjust the <gui>Transfer
-      Rate</gui> and <gui>Access Time</gui> parameters as desired.</p>
+      <p>Klik op <gui>Benchmark uitvoeren…</gui> en pas de parameters <gui>Overdrachtsnelheid</gui> en <gui>Toegangstijd</gui> naar wens aan.</p>
     </item>
     <item>
-      <p>Click <gui>Start Benchmarking</gui> to test how fast data can be read
-      from the disk. <link xref="user-admin-explain">Administrative
-      privileges</link> may be required. Enter your password, or the password
-      for the requested administrator account.</p>
+      <p>Klik op <gui>Benchmark uitvoeren</gui> om te testen hoe snel gegevens van de schijf gelezen kunnen worden. Er zijn <link xref="user-admin-explain">Beheerdersrechten</link> voor nodig. Voer uw wachtwoord in, of het wachtwoord voor de beheerdersaccount.</p>
       <note>
-        <p>If <gui>Perform write-benchmark</gui> is checked, the benchmark
-        will test how fast data can be read from and written to the disk. This
-        will take longer to complete.</p>
+        <p>Als <gui>Schrijfbenchmark uitvoeren</gui> is aangevinkt, dan zal er getest worden hoe snel gegevens gelezen van en geschreven naar de schijf kunnen worden. Dit zal langer duren.</p>
       </note>
     </item>
   </steps>
 
-  <p>When the test is finished, the results will appear on the graph. The green
-  points and connecting lines indicate the samples taken; these correspond to
-  the right axis, showing access time, plotted against the bottom axis,
-  representing percentage time elapsed during the benchmark. The blue line
-  represents read rates, while the red line represents write rates; these are
-  shown as access data rates on the left axis, plotted against percentage of
-  the disk traveled, from the outside to the spindle, along the bottom
-  axis.</p>
+  <p>Wanneer de test klaar is zullen de resultaten verschijnen in de grafiek. De groene stippen en lijnen daartussen geven aan welke steekproeven er genomen zijn; ze komen overeen met de rechteras met de toegangstijd uitgezet tegen de onderste lijn, en stelt de tijd in procenten voor die verstreken is tijdens de meting. De blauwe lijn stelt de leessnelheid voor, en de rode lijn de schrijfsnelheid; deze tonen de gegevenstoegangsnelheid op de linkeras, uitgezet tegen de onderste lijn als percentage van de schijfbeweging van de buitenkant naar de as.</p>
 
-  <p>Below the graph, values are displayed for minimum, maximum and average
-  read and write rates, average access time and time elapsed since the last
-  benchmark test.</p>
+  <p>Onderaan de grafiek worden waarden weergegeven voor de minimale, maximale en gemiddelde lees- en schrijfsnelheid en de tijd die verstreken is sinds de laatste meting.</p>
 
 </page>

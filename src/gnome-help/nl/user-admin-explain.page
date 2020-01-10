@@ -20,72 +20,46 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>You need administrative privileges to change important parts of your
-    system.</desc>
+    <desc>U heeft beheerdersrechten nodig om belangrijke delen van uw systeem te wijzigen.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Justin van Steijn</mal:name>
+      <mal:email>justin50@live.nl</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hannie Dumoleyn</mal:name>
+      <mal:email>hannie@ubuntu-nl.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
   </info>
 
   <title>Hoe werken beheerdersrechten?</title>
 
-  <p>As well as the files that <em>you</em> create, your computer has a number
-  of files which are needed by the system for it to work properly. If these
-  important <em>system files</em> are changed incorrectly they can cause
-  various things to break, so they are protected from changes by default.
-  Certain applications also modify important parts of the system, and so are
-  also protected.</p>
+  <p>Naast de bestanden die <em>u</em> aanmaakt, heeft uw computer ook een aantal bestanden die het systeem nodig heeft om goed te kunnen werken. Als deze belangrijke <em>systeembestanden</em> op een verkeerde manier worden gewijzigd, dan kunnen er verschillende dingen stuk gaan, vandaar dat ze standaard tegen wijzigingen beschermd worden. Bepaalde toepassingen wijzigen ook belangrijke delen van het systeem en zijn daarom dus ook beschermd.</p>
 
-  <p>The way that they are protected is by only allowing users with
-  <em>administrative privileges</em> to change the files or use the
-  applications. In day-to-day use, you will not need to change any system files
-  or use these applications, so by default you do not have administrative
-  privileges.</p>
+  <p>De manier waarop ze beschermd worden, is door alleen gebruikers met <em>beheerdersrechten</em> toe te staan de bestanden te wijzigen of de toepassingen te gebruiken. In het dagelijkse gebruik hoeft u geen systeembestanden te wijzigen of deze toepassingen te gebruiken, dus hoeft u standaard geen beheerdersrechten te hebben.</p>
 
-  <p>Sometimes you need to use these applications, so you may be able to
-  temporarily get administrative privileges to allow you to make the changes.
-  If an application needs administrative privileges, it will ask for your
-  password. For example, if you want to install some new software, the software
-  installer (package manager) will ask for your administrator password so it
-  can add the new application to the system. Once it has finished, your
-  administrative privileges will be taken away again.</p>
+  <p>Soms wilt u deze toepassingen toch gebruiken; daarom kunt u tijdelijke beheerdersrechten krijgen om wijzigingen aan te kunnen brengen. Als een toepassing beheerdersrechten nodig heeft, dan wordt u naar uw wachtwoord gevraagd. Als u bijvoorbeeld nieuwe software wilt installeren, dan zal het software-installatieprogramma (pakketbeheer) u naar uw beheerderswachtwoord vragen zodat de nieuwe toepassing op uw systeem kan worden geïnstalleerd . Eenmaal voltooid zullen uw beheerdersrechten weer ingetrokken worden.</p>
 
-  <p>Administrative privileges are associated with your user account.
-  <gui>Administrator</gui> users are allowed to have these privileges while
-  <gui>Standard</gui> users are not. Without administrative privileges you will
-  not be able to install software. Some user accounts (for example, the "root"
-  account) have permanent administrative privileges. You should not use
-  administrative privileges all of the time, because you might accidentally
-  change something you did not intend to (like delete a needed system file, for
-  example).</p>
+  <p>Beheerdersrechten zijn geassocieerd met uw gebruikersaccount. <gui>Beheerder</gui>-gebruikers hebben deze rechten, <gui>Standaard</gui>-gebruikers niet. Als u geen beheerdersrechten heeft, dan kunt u geen software installeren. Sommige gebruikersaccounts (waaronder de “root”-account) hebben permanente beheerdersrechten. U moet niet aldoor beheerdersrechten gebruiken, want u zou per ongeluk onbedoeld iets kunnen wijzigen (zoals het wissen van een benodigd systeembestand).</p>
 
-  <p>In summary, administrative privileges allow you to change important parts
-  of your system when needed, but prevent you from doing it accidentally.</p>
+  <p>Samengevat stellen beheerdersrechten u in staat belangrijke delen van uw systeem te wijzigen indien nodig, maar ze voorkomen dat u het per ongeluk doet.</p>
 
   <note>
-    <title>Wat betekent "super user"?</title>
-    <p>A user with administrative privileges is sometimes called a <em>super
-    user</em>. This is simply because that user has more privileges than normal
-    users. You might see people discussing things like <cmd>su</cmd> and
-    <cmd>sudo</cmd>; these are programs for temporarily giving you "super user"
-    (administrative) privileges.</p>
+    <title>Wat betekent ‘supergebruiker’?</title>
+    <p>Een gebruiker met beheerdersrechten wordt soms een <em>supergebruiker</em> genoemd. Deze heet zo omdat hij meer rechten heeft dan een normale gebruiker. Het kan zijn dat u mensen hoort praten over dingen zoals <cmd>su</cmd> en <cmd>sudo</cmd>; dit zijn programma's om u tijdelijk ‘supergebruiker’-(beheerders)rechten te verlenen.</p>
   </note>
 
 <section id="advantages">
-  <title>Why are administrative privileges useful?</title>
+  <title>Waarom zijn beheerdersrechten nuttig?</title>
 
-  <p>Requiring users to have administrative privileges before important system
-  changes are made is useful because it helps to prevent your system from being
-  broken, intentionally or unintentionally.</p>
+  <p>Eisen dat gebruikers beheerdersrechten hebben voordat er belangrijke wijzigingen in het systeem worden aangebracht is nuttig omdat het helpt te voorkomen dat uw systeem, al dan niet opzettelijk, stuk gaat.</p>
 
-  <p>If you had administrative privileges all of the time, you might
-  accidentally change an important file, or run an application which changes
-  something important by mistake. Only getting administrative privileges
-  temporarily, when you need them, reduces the risk of these mistakes
-  happening.</p>
+  <p>Als u altijd beheerdersrechten zou hebben, dan zou u per ongeluk een belangrijk bestand kunnen wijzigen of een toepassing draaien die per abuis iets belangrijks wijzigt. Het tijdelijk verkrijgen van beheerdersrechten, wanneer u ze nodig heeft, vermindert het risico dat dergelijke vergissingen gebeuren.</p>
 
-  <p>Only certain trusted users should be allowed to have administrative
-  privileges. This prevents other users from messing with the computer and
-  doing things like uninstalling applications that you need, installing
-  applications that you don't want, or changing important files. This is useful
-  from a security standpoint.</p>
+  <p>Alleen bepaalde vertrouwde gebruikers dienen beheerdersrechten te krijgen. Dit voorkomt dat andere gebruikers knoeien met de computer en dingen doen zoals het verwijderen van toepassingen die u nodig heeft, toepassingen installeren die u niet wilt, of belangrijke bestanden wijzigen. Dit is nuttig vanuit het oogpunt van veiligheid.</p>
 
 </section>
 

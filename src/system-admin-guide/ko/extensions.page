@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="extensions" xml:lang="ko">
+
+  <info>
+    <link type="guide" xref="software#extension"/>
+    <link type="seealso" xref="extensions-lockdown"/>
+    <link type="seealso" xref="extensions-enable"/>
+    <revision pkgversion="3.9" date="2013-08-07" status="review"/>
+
+    <credit type="author copyright">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>GNOME 셸 확장자를 사용하여 GNOME 셸 인터페이스를 사용자 정의 할 수 있습니다.</desc>
+  </info>
+
+  <title>GNOME 셸 확장자는 무엇인가요?</title>
+  
+  <p>GNOME 셸 확장자를 사용하여 창 관리나 애플리케이션 런칭같은 부분과 기본 GNOME 셸 인터페이스를 사용자 정의 할 수 있습니다.</p>
+  
+  <p>각각의 GNOME 셸 확장자는 고유 식별자인 uuid를 가지고 있습니다. uuid는 확장자가 설치된 디렉터리의 이름에도 쓰입니다. 당신은 또한 <file>~/.local/share/gnome-shell/extensions/&lt;uuid&gt;</file>, 혹은 <file>/usr/share/gnome-shell/extensions/&lt;uuid&gt;</file>에서의 컴퓨터 전반에서 사용자마다 확장자를 설치할 수 있습니다.</p>
+  
+  <p>To view installed extensions, you can use <app>Looking Glass</app>, GNOME
+  Shell’s integrated debugger and inspector tool.</p>
+  
+  <steps>
+    <title>설치된 확장자 보기</title>
+    <item>
+      <p><keyseq type="combo"><key>Alt</key><key>F2</key></keyseq>를 누르고, <em>lg</em>를 입력하고 <app>Looking Glass</app>를 열기위해 <key>Enter</key>를 누르세요.</p>
+    </item>
+    <item>
+      <p><app>Looking Glass</app>의 상단바에서 설치된 확장자 목록을 열기 위해 <gui>Extensions</gui>를 클릭하세요.</p>
+    </item>
+  </steps>
+
+</page>

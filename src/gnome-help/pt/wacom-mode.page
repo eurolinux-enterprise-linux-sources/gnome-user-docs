@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="wacom-mode" xml:lang="pt">
+
+  <info>
+    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <link type="guide" xref="wacom"/>
+
+    <credit type="author copyright">
+      <name>Michael Hilh</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2012</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Mudar o modo da tableta entre modo tableta e modo rato.</desc>
+  </info>
+
+  <title>Set the Wacom tablet’s tracking mode</title>
+
+<p>O <gui>Modo de rastreamento</gui> determina como se corresponde o ponteiro com o ecrã.</p>
+
+<steps>
+  <item>
+    <p>Abra a vista de <gui xref="shell-introduction#activities">Atividades</gui> e comece a escrever <gui>Tablet Wacom</gui>.</p>
+  </item>
+  <item>
+    <p>Carregue em <gui>Tablet Wacom</gui> para abrir o painel.</p>
+    <!-- TODO: document how to connet the tablet using Bluetooth/add link -->
+    <note style="tip"><p>If no tablet is detected, you’ll be asked to
+    <gui>Please plug in or turn on your Wacom tablet</gui>. Click the
+    <gui>Bluetooth Settings</gui> link to connect a wireless tablet.</p></note>
+  </item>
+  <item><p>Junto a <gui>Modo de rastreamento</gui>, selecione <gui>Tablet (absoluto)</gui> ou <gui>Touchpad (relativo)</gui>.</p></item>
+</steps>
+
+<note style="info"><p>No modo <em>absoluto</em> a cada ponto da tableta corresponde-se com um ponto do ecrã. O canto superior esquerda do ecrã, por exemplo, sempre corresponde com o mesmo ponto da tableta.</p>
+ <p>In <em>relative</em> mode, if you lift the pointer off the tablet and put it
+ down in a different position, the cursor on the screen doesn’t move. This is
+    the way a mouse operates.</p>
+  </note>
+
+</page>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-list" xml:lang="pl">
+
+  <info>
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <link type="guide" xref="nautilus-prefs" group="nautilus-list"/>
+
+    <revision pkgversion="3.5.92" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.14.0" date="2014-09-23" status="review"/>
+    <revision pkgversion="3.18" date="2014-09-30" status="candidate"/>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2015</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Sterowanie, jakie informacje są wyświetlane w kolumnach widoku listy.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Preferencje kolumn listy plików</title>
+
+  <p>W widoku listy programu <gui>Pliki</gui> można wyświetlać jedenaście kolumn. Kliknij <gui>Pliki</gui> na górnym pasku, wybierz <gui>Preferencje</gui> i kartę <gui>Kolumny listy</gui>, aby wybrać, które kolumny będą widoczne.</p>
+
+  <note style="tip">
+    <p>Użyj przycisków <gui>W górę</gui> i <gui>W dół</gui>, aby wybrać kolejność, w jakiej wybrane kolumny będą wyświetlane. Kliknij przycisk <gui>Przywróć ustawienia domyślne</gui>, aby cofnąć wszystkie zmiany i wrócić do domyślnych kolumn.</p>
+  </note>
+
+  <terms>
+    <item>
+      <title><gui>Nazwa</gui></title>
+      <p>Nazwy katalogów i plików.</p>
+      <note style="tip">
+        <p>Kolumna <gui>Nazwa</gui> nie może być ukryta.</p>
+      </note>
+    </item>
+    <item>
+      <title><gui>Rozmiar</gui></title>
+      <p>Rozmiar katalogu jest podawany jako liczba elementów w nim zawartych. Rozmiar pliku jest podawany jako bajty, KB lub MB.</p>
+    </item>
+    <item>
+      <title><gui>Typ</gui></title>
+      <p>Wyświetlany jako katalog lub typ pliku, taki jak dokument PDF, obraz JPEG, dźwięk MP3 i tak dalej.</p>
+    </item>
+    <item>
+      <title><gui>Modyfikacja</gui></title>
+      <p>Podaje datę ostatniej modyfikacji pliku.</p>
+    </item>
+    <item>
+      <title><gui>Właściciel</gui></title>
+      <p>Nazwa użytkownika będącego właścicielem katalogu lub pliku.</p>
+    </item>
+    <item>
+      <title><gui>Grupa</gui></title>
+      <p>Grupa będąca właścicielem pliku. Każdy użytkownik zwykle jest w swojej własnej grupie, ale jedna grupa może mieć wielu użytkowników. Na przykład, wydział może mieć własną grupę w środowisku firmowym.</p>
+    </item>
+    <item>
+      <title><gui>Uprawnienia</gui></title>
+      <p>Wyświetla uprawnienia dostępu do pliku, np. <gui>drwxrw-r--</gui>.</p>
+      <list>
+        <item>
+          <p>Pierwszy znak to typ pliku <gui>-</gui> oznacza zwykły plik, a <gui>d</gui> oznacza katalog. W rzadkich przypadkach mogą być wyświetlane także inne znaki.</p>
+        </item>
+        <item>
+          <p>Kolejne trzy znaki, <gui>rwx</gui>, określają uprawnienia dla użytkownika będącego właścicielem pliku.</p>
+        </item>
+        <item>
+          <p>Kolejne trzy znaki, <gui>rw-</gui>, określają uprawnienia dla wszystkich członków grupy będącej właścicielem pliku.</p>
+        </item>
+        <item>
+          <p>Ostatnie trzy znaki, <gui>r--</gui>, określają uprawnienia dla wszystkich pozostałych użytkowników na komputerze.</p>
+        </item>
+      </list>
+      <p>Każde uprawnienie ma swoje znaczenie:</p>
+      <list>
+        <item>
+          <p><gui>r</gui>: można odczytywać, czyli można otwierać plik lub katalog,</p>
+        </item>
+        <item>
+          <p><gui>w</gui>: można zapisywać, czyli można go zmieniać,</p>
+        </item>
+        <item>
+          <p><gui>x</gui>: wykonywalny, czyli można go uruchamiać jako program lub skrypt, a w przypadku katalogu można otwierać podkatalogi i pliki,</p>
+        </item>
+        <item>
+          <p><gui>-</gui>: uprawnienie nie jest ustawione.</p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <title><gui>Typ MIME</gui></title>
+      <p>Wyświetla typ MIME elementu.</p>
+    </item>
+    <item>
+      <title><gui>Położenie</gui></title>
+      <p>Ścieżka do położenia pliku.</p>
+    </item>
+    <item>
+      <title><gui>Czas modyfikacji</gui></title>
+      <p>Podaje datę i czas ostatniej modyfikacji pliku.</p>
+    </item>
+    <item>
+      <title><gui>Dostęp</gui></title>
+      <p>Podaje datę lub czas ostatniej modyfikacji pliku.</p>
+    </item>
+  </terms>
+
+</page>

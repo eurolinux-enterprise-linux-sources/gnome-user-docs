@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="files-search" xml:lang="pt">
+
+  <info>
+    <link type="guide" xref="files#common-file-tasks"/>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-09-25" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <credit type="author">
+      <name>Projeto de documentação de GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hilh</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Procurar ficheiros baseando no nome do ficheiro e o tipo.</desc>
+  </info>
+
+  <title>Procurar ficheiros</title>
+
+  <p>Pode procurar ficheiros pelo seu nome ou seu tipo de ficheiro diretamente desde o gestor de ficheiros.</p>
+
+  <links type="topic" style="linklist">
+    <title>Outros aplicações de busca</title>
+    <!-- This is an extension point where search apps can add
+    their own topics. It's empty by default. -->
+  </links>
+
+  <steps>
+    <title>Procurar</title>
+    <item>
+      <p>Abra o aplicação <app>Ficheiros</app> desde a vista de <gui xref="shell-introduction#activities">Atividades</gui>.</p>
+    </item>
+    <item>
+      <p>Se sabe que os ficheiros que quer procurar estão numa diretório determinada, vá a essa diretório.</p>
+    </item>
+    <item>
+      <p>Type a word or words that you know appear in the file name, and they
+      will be shown in the search bar. For example, if you name all your
+      invoices with the word “Invoice”, type <input>invoice</input>. Words are
+      matched regardless of case.</p>
+      <note>
+        <p>Em vez de escrever diretamente para mostrar a barra de busca, pode carregar sobre a lupa na barra de ferramentas, ou carregar <keyseq><key>Ctrl</key><key>F</key></keyseq>.</p>
+      </note>
+    </item>
+    <item>
+      <p>Pode dimensionar os resultados por localização e tipo de ficheiro.</p>
+      <list>
+        <item>
+          <p>Carregue <gui>Pasta pessoal</gui> para restringir os resultados da busca a sua <file>Pasta pessoal</file> ou <gui>Todos os ficheiros</gui> para procurar em todos os lugares.</p>
+        </item>
+        <item>
+          <p>Click the <gui>+</gui> button and pick a <gui>File Type</gui> from
+	  the drop-down list to narrow the search results based on file type.
+	  Click the <gui>×</gui> button to remove this option and widen the
+	  search results.</p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <p>Pode abrir, copiar, eliminar ou trabalhar com seus ficheiros desde os resultados de procura, igual como se estivesse em qualquer diretório no gestor de ficheiros.</p>
+    </item>
+    <item>
+      <p>Carregue outra vez sobre a lupa na barra de ferramentas para sair da busca e voltar à diretório.</p>
+    </item>
+  </steps>
+
+</page>

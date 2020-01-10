@@ -20,7 +20,7 @@
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
     <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
 
-    <desc>ખાતરી કરવા માટે સમસ્યાઓ માટે તમારી હાર્ડ ડિસ્કને ચકાસો કે જે તે બરાબર ચાલી રહ્યુ છે.</desc>
+    <desc>Test your hard disk for problems to make sure that it’s healthy.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
@@ -33,10 +33,11 @@
  checks the disk for potential problems. SMART also warns you if the disk
  is about to fail, helping you avoid loss of important data.</p>
 
-  <p>છતાંપણ SMART આપમેળે ચાલે છે, તમે <app>ડિસ્ક</app> કાર્યક્રમને ચલાવીને તમે તમારી ડિસ્કની તંદુરસ્તીને પણ ચકાસી શકો છો:</p>
+  <p>Although SMART runs automatically, you can also check your disk’s
+ health by running the <app>Disks</app> application:</p>
 
 <steps>
- <title>ડિસ્ક કાર્યક્રમની મદદથી તમારી ડિસ્કની તબિયત ચકાસો</title>
+ <title>Check your disk’s health using the Disks application</title>
 
   <item>
     <p>Open <app>Disks</app> from the <gui>Activities</gui> overview.</p>
@@ -47,7 +48,7 @@
   </item>
   <item>
     <p>Click the menu button and select <gui>SMART Data &amp; Self-Tests…</gui>.
-    The <gui>Overall Assessment</gui> should say "Disk is OK".</p>
+    The <gui>Overall Assessment</gui> should say “Disk is OK”.</p>
   </item>
   <item>
     <p><gui>SMART ગુણધર્મો</gui> હેઠળ વધારે જાણકારી જુઓ, અથવા પોતાની જાતે ચકાસણી ચલાવવા માટે <gui style="button">પોતાની જાતે ચકાસણી શરૂ કરો</gui> બટન પર ક્લિક કરો.</p>
@@ -59,14 +60,14 @@
 
 <section id="disk-not-healthy">
 
- <title>શું થશે જો ડિસ્ક તંદુરસ્ત ના હોય?</title>
+ <title>What if the disk isn’t healthy?</title>
 
   <p>Even if the <gui>Overall Assessment</gui> indicates that the disk
-  <em>isn't</em> healthy, there may be no cause for alarm. However, it's better
+  <em>isn’t</em> healthy, there may be no cause for alarm. However, it’s better
   to be prepared with a <link xref="backup-why">backup</link> to prevent data
   loss.</p>
 
-  <p>If the status says "Pre-fail", the disk is still reasonably healthy but
+  <p>If the status says “Pre-fail”, the disk is still reasonably healthy but
  signs of wear have been detected which mean it might fail in the near future.
  If your hard disk (or computer) is a few years old, you are likely to see
  this message on at least some of the health checks. You should

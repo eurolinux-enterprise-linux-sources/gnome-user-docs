@@ -6,6 +6,7 @@
 
     <revision pkgversion="3.14" date="2014-11-10" status="review"/>
     <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.24" date="2017-03-26" status="final"/>
 
     <credit type="author">
       <name>GNOME dokumentācijas projekts</name>
@@ -20,50 +21,35 @@
       <email>amigadave@amigadave.com</email>
     </credit>
 
-    <desc>Use your phone or Internet stick to connect to the mobile broadband
-    network.</desc>
+    <desc>Izmantojiet savu tālruni vai interneta modemu puļķi, lai savienotos ar mobilo platjoslas tīklu.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
   <title>Savienoties ar mobilo platjoslu</title>
 
-  <p>You can set up a connection to a cellular (3G) network with your
-  computer's built-in 3G modem, your mobile phone, or an Internet stick.</p>
+  <p>Varat izveidot savienojumu ar mobilo (3G) tīklu ar datorā iebūvētu 3G modemu, savu mobilo tālruni vai interneta puļķi.</p>
 
   <steps>
-    <item><p>If you do not have a built-in 3G modem, connect your phone or
-    Internet stick to a USB port on your computer.</p>
+    <item><p>Ja jums nav iebūvēts 3G modems, pievienojiet savu tālruni vai interneta puļķi USB portā savā datorā.</p>
     </item>
     <item>
-    <p>Open the <gui xref="shell-introduction#yourname">system menu</gui> from the right
-    side of the top bar.</p>
+    <p>Atveriet <gui xref="shell-introduction#yourname">sistēmas izvēlni</gui> augšējās joslas labajā pusē.</p>
   </item>
   <item>
-    <p>Select
-    <gui><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-excellent-symbolic.svg" width="16" height="16"/>
-      Mobile Broadband Off</gui>. The <gui>Mobile Broadband</gui> section of
-      the menu will expand.</p>
+    <p>Izvēlieties <gui><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-excellent-symbolic.svg" width="16" height="16"/> Mobilā platjosla izslēgta</gui>. Tiks izvēsta sadaļa<gui>Mobilā platjosla</gui>.</p>
       <note>
-        <p>If <gui>Mobile Broadband</gui> does not appear in the system
-        status menu, ensure that your device is not set to connect as Mass
-        Storage.</p>
+        <p>Ja <gui>Mobilā platjosla</gui> neparādās sistēmas statusa izvēlnē, pārliecinieties, ka ierīce nav pievienota kā “masu krātuve”.</p>
       </note>
     </item>
-    <item><p>Select <gui>Connect</gui>. If you are connecting for the first
-    time, the <gui>Set up a Mobile Broadband Connection</gui> wizard is
-    launched. The opening screen displays a list of required information. Click
-    <gui style="button">Next</gui>.</p></item>
-    <item><p>Choose your provider's country or region from the list. Click
-    <gui style="button">Next</gui>.</p></item>
-    <item><p>Choose your provider from the list. Click
-    <gui style="button">Next</gui>.</p></item>
-    <item><p>Select a plan according to the type of device you are
-    connecting. This will determine the Access Point Name. Click
-    <gui style="button">Next</gui>.</p></item>
-    <item><p>Confirm the settings you have selected by clicking
-    <gui style="button">Apply</gui>. The wizard will close and the
-    <gui>Network</gui> panel will display the properties of your
-    connection.</p></item>
+    <item><p>Izvēlieties <gui>Savienot</gui>. Ja savienojaties pirmo reizi, tiks palaists vednis <gui>Iestatīt mobilās platjoslas savienojumu</gui>. Atvērtais ekrāns parādīs sarakstu ar nepieciešamo informāciju. Spiediet <gui style="button">Nākamais</gui>.</p></item>
+    <item><p>Sarakstā izvēlieties sava pakalpojuma sniedzēja valsti vai reģionu. Spiediet <gui style="button">Nākamais</gui>.</p></item>
+    <item><p>Sarakstā izvēlieties pakalpojuma sniedzēju. Spiediet <gui style="button">Nākamais</gui>.</p></item>
+    <item><p>Izvēlieties plānu atbilstoši savienotās ierīces veidam. Tas noteiks piekļuves punkta nosaukumu. Spiediet <gui style="button">Nākamais</gui>.</p></item>
+    <item><p>Apstipriniet izvēlētos iestatījumus, spiežot <gui style="button">Pielietot</gui>. Vednis aizvērsies un <gui>Tīkla</gui> rūts parādīs savienojuma īpašības.</p></item>
   </steps>
+
+    <note style="tip">
+      <p>Dažiem tālruņiem ir iestatījums <em>USB piesaiste (tethering)</em>, kas neprasa iestatīšanu no datora puses. Kad iestatījums ir uz tālruņa ir aktivizēts, savienojums parādīsies kā <gui>Ethernet savienots</gui> sistēmas izvēlnē un <gui>USB ethernet</gui> tīkla panelī.</p>
+    </note>
 
 </page>

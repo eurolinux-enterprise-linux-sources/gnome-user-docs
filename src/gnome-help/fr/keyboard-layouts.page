@@ -109,13 +109,32 @@
     </item>
   </steps>
 
+  <note style="tip">
+    <p>If there are multiple user accounts on your system, there is a separate
+    instance of the <gui>Region &amp; Language</gui> panel for the login screen.
+    Click the <gui>Login Screen</gui> button at the top right to toggle between
+    the two instances.</p>
+
+    <p>Some rarely used keyboard layout variants are not available by default when you click
+    the <gui>+</gui> button. To make also those input sources available you can open a terminal
+    window by pressing <keyseq><key>Ctrl</key><key>Alt</key><key>T</key></keyseq>
+    and run this command:</p>
+    <p><cmd its:translate="no">gsettings set org.gnome.desktop.input-sources show-all-sources true</cmd></p>
+  </note>
+
   <note style="sidebar">
     <p>Vous pouvez afficher l'aperçu d'un agencement en sélectionnant celui-ci dans la liste des <gui>Sources d'entrées</gui> et en cliquant sur <gui><media its:translate="no" type="image" src="figures/input-keyboard-symbolic.png" width="16" height="16"><span its:translate="yes">aperçu</span></media></gui></p>
   </note>
 
   <p>Certaines langues offrent des options de configurations supplémentaires. Vous pouvez les identifier grâce à l'icône <gui><media its:translate="no" type="image" src="figures/system-run-symbolic.svg" width="16" height="16"><span its:translate="yes">aperçu</span></media></gui> qui les accompagne. Pour accéder à ces paramètres supplémentaires, sélectionnez la langue dans la liste des <gui>Source d'entrées</gui> et appuyez sur le nouveau bouton <gui style="button"><media its:translate="no" type="image" src="figures/emblem-system-symbolic.svg" width="16" height="16"><span its:translate="yes">préférences</span></media></gui>.</p>
 
-  <p>Lorsque vous utilisez plusieurs agencements, vous pouvez choisir d'utiliser le même agencement pour toutes les fenêtres ou de configurer un agencement spécifique pour chaque fenêtre. Utiliser un agencement différent pour chaque fenêtre est utile si vous écrivez un article dans une langue différente dans une fenêtre de traitement de texte par exemple. L'agencement de clavier sélectionné est enregistré et appliqué à chaque fenêtre lorsque vous passez d'une fenêtre à l'autre. Cliquez sur le bouton <gui style="button">Options</gui> pour choisir la façon dont vous voulez gérer les agencements multiples.</p>
+  <p>When you use multiple layouts, you can choose to have all windows use the
+  same layout or to set a different layout for each window. Using a different
+  layout for each window is useful, for example, if you’re writing an article
+  in another language in a word processor window. Your keyboard selection will
+  be remembered for each window as you switch between windows. Press the
+  <gui style="button">Options</gui> button to select how you want to manage
+  multiple layouts.</p>
 
   <p>La barre du haut affiche un court indicateur de l'agencement actuel, par exemple <gui>fr</gui> pour un clavier français standard. Cliquez sur cet indicateur et choisissez l'agencement que vous voulez utiliser dans le menu déroulant. Si la langue choisie possède des paramètres supplémentaires, ils s'affichent sous la liste des agencements disponibles. Cela vous donne une vue générale rapide de vos paramètres. Vous pouvez aussi ouvrir l'image de l'agencement clavier actuel et vous y référer en cas de besoin.</p>
 

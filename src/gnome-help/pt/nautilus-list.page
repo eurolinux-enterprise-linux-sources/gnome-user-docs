@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-list" xml:lang="pt">
+
+  <info>
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <link type="guide" xref="nautilus-prefs" group="nautilus-list"/>
+
+    <revision pkgversion="3.5.92" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.14.0" date="2014-09-23" status="review"/>
+    <revision pkgversion="3.18" date="2014-09-30" status="candidate"/>
+
+    <credit type="author">
+      <name>Phil Bulh</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hilh</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2015</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Controlar que informação se visualiza em colunas na vista de lista.</desc>
+  </info>
+
+  <title>Preferências das colunas na lista de ficheiros</title>
+
+  <p>Há onze colunas de informação que pode visualizar na vista de lista de <gui>Ficheiros</gui>. Carregue em <gui>Ficheiros</gui> na barra superior, vá a <gui>Preferências</gui> e escolha <gui>Colunas da lista</gui> para selecionar que colunas serão visíveis.</p>
+
+  <note style="tip">
+    <p>Use os botões <gui>Subir</gui> e <gui>Baixar</gui> para selecionar a ordem no que aparecerán as colunas selecionadas. Carregue <gui>Restabelecer os valores predeterminados</gui> para desfazer todas as mudanças e voltar às colunas predeterminadas.</p>
+  </note>
+
+  <terms>
+    <item>
+      <title><gui>Nome</gui></title>
+      <p>O nome das diretórios e ficheiros.</p>
+      <note style="tip">
+        <p>A coluna <gui>Nome</gui> não se pode ocultar.</p>
+      </note>
+    </item>
+    <item>
+      <title><gui>Tamanhou</gui></title>
+      <p>O tamanhou duma diretório vem dado pelo número de elementos que contém dita diretório. O tamanhou dum ficheiro vem dado em bytes, KB ou MB.</p>
+    </item>
+    <item>
+      <title><gui>Tipo</gui></title>
+      <p>Mostrado como diretório, ou tipo de ficheiro como documento PDF, imagem JPEG, som Mp3, etcétera.</p>
+    </item>
+    <item>
+      <title><gui>Modificado</gui></title>
+      <p>Dá a data da última vez que se modificou o ficheiro.</p>
+    </item>
+    <item>
+      <title><gui>Proprietário</gui></title>
+      <p>O nome do utilizador proprietário da diretório ou ficheiro.</p>
+    </item>
+    <item>
+      <title><gui>Grupo</gui></title>
+      <p>O grupo ao que pertence o ficheiro. Normalmente, a cada utilizador pertence a seu proprio grupo, mas é possível que tenha vários utilizadores num grupo. Por exemplo, um departamento pode ter seu proprio grupo num meio de trabalho.</p>
+    </item>
+    <item>
+      <title><gui>Permissões</gui></title>
+      <p>Mostra as permissões de acesso do ficheiro. Ex. <gui>drwxrw-r--</gui></p>
+      <list>
+        <item>
+          <p>O primeiro caráter é o tipo de ficheiro. <gui>-</gui> significa que é um ficheiro normal e <gui>d</gui> significa que é uma diretório. Em certos casos podem-se mostrar outros carateres.</p>
+        </item>
+        <item>
+          <p>Os três carateres seguintes <gui>rwx</gui> especificam as permissões para o utilizador proprietário do ficheiro.</p>
+        </item>
+        <item>
+          <p>Os três seguintes <gui>rw-</gui> especificam as permissões para todos os membros do grupo ao que pertence o ficheiro.</p>
+        </item>
+        <item>
+          <p>Os três oúltimos carateres da coluna <gui>r--</gui> especificam as permissões para todos os demais utilizadores do sistema.</p>
+        </item>
+      </list>
+      <p>A cada permissão tem o seguinte significado:</p>
+      <list>
+        <item>
+          <p><gui>r</gui>: leitura, o que significa que pode abrir o ficheiro ou a diretório</p>
+        </item>
+        <item>
+          <p><gui>w</gui>: editável, o que significa que pode guardar mudanças nele</p>
+        </item>
+        <item>
+          <p><gui>x</gui>: executável, o que significa que pode o executar se é um programa ou um script, ou que pode aceder às subpastas e ficheiros se é uma diretório</p>
+        </item>
+        <item>
+          <p><gui>-</gui>: permissão não estabelecida</p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <title><gui>Tipo MIME</gui></title>
+      <p>Mostra o tipo MIME do elemento.</p>
+    </item>
+    <item>
+      <title><gui>Localização</gui></title>
+      <p>A caminho à localização do ficheiro.</p>
+    </item>
+    <item>
+      <title><gui>Modified — Time</gui></title>
+      <p>Dá a data e hora da última vez que se modificou o ficheiro.</p>
+    </item>
+    <item>
+      <title><gui>Acedido</gui></title>
+      <p>Dá a data  ou a hora da última vez que se modificou o ficheiro.</p>
+    </item>
+  </terms>
+
+</page>

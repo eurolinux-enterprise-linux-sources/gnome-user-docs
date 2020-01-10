@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-delete" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="files#common-file-tasks"/>
+    <link type="seealso" xref="files-recover"/>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-16" status="review"/>
+    <revision pkgversion="3.13.92" date="2013-09-20" status="candidate"/>
+    <revision pkgversion="3.16" date="2015-02-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+
+    <credit type="author">
+      <name>Cristopher Thomas</name>
+      <email>crisnoh@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jcampbell@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Usuwanie niepotrzebnych plików i katalogów.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Usuwanie plików i katalogów</title>
+
+  <p>Jeśli jakiś plik lub katalog jest już niepotrzebny, to można go usunąć. Po usunięciu element jest przenoszony do <gui>Kosza</gui>, gdzie jest przechowywany do czasu opróżnienia. Można <link xref="files-recover">przywracać elementy</link> z <gui>Kosza</gui> to ich oryginalnych położeń, jeśli okażą się z powrotem potrzebne lub zostały usunięte przez pomyłkę.</p>
+
+  <steps>
+    <title>Aby przenieść plik do kosza:</title>
+    <item><p>Zaznacz element do umieszczenia w koszu klikając go raz.</p></item>
+    <item><p>Naciśnij klawisz <key>Delete</key>. Można także przeciągnąć element do <gui>Kosza</gui> w panelu bocznym.</p></item>
+  </steps>
+
+  <p>Plik zostanie przeniesiony do kosza i zostanie wyświetlona opcja <gui>cofnięcia</gui> usunięcia. Przycisk <gui>Cofnij</gui> będzie wyświetlany przez kilka sekund. Jeśli zostanie kliknięty, to plik zostanie przywrócony do jego oryginalnego położenia.</p>
+
+  <p>Aby trwale usunąć pliki i zwolnić miejsce na komputerze, należy opróżnić kosz. Aby to zrobić, kliknij <gui>Kosz</gui> na panelu bocznym prawym przyciskiem myszy i wybierz <gui>Opróżnij kosz</gui>.</p>
+
+  <section id="permanent">
+    <title>Trwałe usuwanie pliku</title>
+    <p>Można od razu trwale usunąć plik, bez potrzeby wysyłania go do kosza.</p>
+
+  <steps>
+    <title>Aby trwale usunąć plik:</title>
+    <item><p>Zaznacz element do usunięcia.</p></item>
+    <item><p>Wciśnij i przytrzymaj klawisz <key>Shift</key>, a następnie naciśnij klawisz <key>Delete</key>.</p></item>
+    <item><p>Ponieważ nie można tego cofnąć, użytkownik zostanie zapytany o potwierdzenie przed usunięciem pliku lub katalogu.</p></item>
+  </steps>
+
+  <note><p>Usunięte pliki na <link xref="files#removable">urządzeniu wymiennym</link> mogą być niewidoczne w innych systemach operacyjnych, takich jak Windows lub macOS. Pliki nadal tam są, i będą dostępne po podłączeniu do komputera.</p></note>
+
+  </section>
+
+</page>

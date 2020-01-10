@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="login-automatic" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="login#management"/>
+    <revision pkgversion="3.4.2" date="2012-12-01" status="review"/>
+    <revision pkgversion="3.8" date="2013-04-04" status="review"/>
+    <revision pkgversion="3.12" date="2014-06-18" status="review"/>
+    
+    <credit type="author copyright">
+      <name>minnie_eg</name>
+      <email>amany.elguindy@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2012, 2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Logga in automatiskt på ett användarkonto vid uppstart.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Konfigurera automatisk inloggning</title>
+
+  <p its:locNote="TRANSLATORS: 'Administrator' and 'Automatic Login' are   strings from the Users dialog in the Settings panel user interface.">En användare med kontotypen <em>Administratör</em> kan <link href="help:gnome-help/user-autologin">aktivera <em>Automatisk inloggning</em> från panelen <app>Inställningar</app></link>. Du kan också konfigurera automatisk inloggning manuellt i filen för anpassad <sys its:translate="no">GDM</sys>-konfiguration enligt följande.</p>
+
+  <p>Redigera filen <file its:translate="no">/etc/gdm/custom.conf</file> och säkerställ att avsnittet <code>[daemon]</code> i filen anger följande:</p>
+
+  <listing its:translate="no">
+    <title><file>custom.conf</file></title>
+<code>
+[daemon]
+AutomaticLoginEnable=<input>True</input>
+AutomaticLogin=<input>username</input>
+</code>
+  </listing>
+
+  <p>Ersätt <input its:translate="no">username</input> med användaren som du vill ska loggas in automatiskt.</p>
+
+  <note>
+    <p>Filen <file its:translate="no">custom.conf</file> kan vanligen hittas i <file its:translate="no">/etc/gdm/</file>, men platsen kan variera beroende på din distribution.</p>
+  </note>
+
+</page>

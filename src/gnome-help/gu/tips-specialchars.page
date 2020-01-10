@@ -7,6 +7,7 @@
 
     <revision pkgversion="3.8.2" version="0.3" date="2013-05-18" status="review"/>
     <revision pkgversion="3.10" date="2013-11-01" status="review"/>
+    <revision pkgversion="3.26" date="2017-11-27" status="review"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -20,6 +21,10 @@
       <name>ઍકાટેરીના ગેરાસીમોવા</name>
       <email>kittykat3756@gmail.com</email>
     </credit>
+    <credit type="editor">
+      <name>એન્ડ્રે ક્લેપર</name>
+      <email>ak-47@gmx.net</email>
+    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
@@ -28,29 +33,21 @@
 
   <title>ખાસ અક્ષરોને દાખલ કરો</title>
 
-  <p>તમે મોટાભાગની દુનિયાની લખાણ સિસ્ટમોમાંથી હજારો અક્ષરોને દાખલ અને જોઇ શકો છો, તે તમારાં કિબોર્ડ પર મળ્યુ નથી. આ પાનું વિવિધ રીતે અમુકની યાદી કરે છે જે તમે ખાસ અક્ષરોને દાખલ કરી શકો છો.</p>
+  <p>You can enter and view thousands of characters from most of the world’s
+  writing systems, even those not found on your keyboard. This page lists
+  some different ways you can enter special characters.</p>
 
   <links type="section">
     <title>અક્ષરોને દાખલ કરવા માટેની પદ્દતિઓ</title>
   </links>
 
-  <section id="charmap">
-    <title>અક્ષર નક્ષો</title>
-    <p>GNOME એ અક્ષર નક્ષા કાર્યક્રમ સાથે આવે છે કે જે યુનિકોડમાં બધા અક્ષરોને બ્રાઉઝ કરવા માટે તમને પરવાનગી આપે છે. અક્ષરને શોધવા માટે અક્ષર નક્ષાને વાપરો જે તમે ઇચ્છો, અને and then copy and paste it to wherever you need it.</p>
-
-    <p>તમે <gui>પ્રવૃત્તિ</gui> ઝાંખીમાં <app>અક્ષર નક્ષા</app> ને શોધી શકો છો. અક્ષર નક્ષા પર વધારે જાણકારી માટે, <link href="help:gucharmap">અક્ષર નક્ષો પુસ્તિકા</link> જુઓ.</p>
-
-  </section>
-
   <section id="characters">
     <title>Characters</title>
-    <p>Another useful application shipped with GNOME is <app>Characters</app>.
-    It lets you find and insert unusual characters by browsing character
-    categories or searching for keywords.</p>
+    <p>GNOME comes with a character map application that allows you to
+    find and insert unusual characters, including emoji, by browsing
+    character categories or searching for keywords.</p>
 
-    <p>You can launch Characters from the Activities overview. For more
-    information on Characters, see the <link href="help:gnome-characters">
-    Characters Manual</link>.</p>
+    <p>You can launch <app>Characters</app> from the Activities overview.</p>
 
   </section>
 
@@ -60,22 +57,52 @@
     in a row to get a special character. For example, to type the accented
     letter <em>é</em>, you can press <key>compose</key> then <key>'</key>
     then <key>e</key>.</p>
-    <p>કિબોર્ડ પાસે ખાસ કમ્પોઝ કી નથી. તેને બદલે, તમે કમ્પોઝ કી તરીકે તમારાં કિબોર્ડ પર હાલની કીનાં એકને વ્યાખ્યાયિત કરી શકો છો.</p>
+    <p>Keyboards don’t have specific compose keys. Instead, you can define
+    one of the existing keys on your keyboard as a compose key.</p>
+
+    <note style="important">
+      <p>You need to have <app>Tweaks</app> installed on your computer to
+      change this setting.</p>
+      <if:if xmlns:if="http://projectmallard.org/if/1.0/" test="action:install">
+        <p><link style="button" action="install:gnome-tweaks">Install
+        <app>Tweaks</app></link></p>
+      </if:if>
+    </note>
 
     <steps>
       <title>કમ્પોઝ કી વ્યાખ્યાયિત કરો</title>
       <item>
-        <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-        start typing <gui>Keyboard</gui>.</p>
+        <p>Open the <gui xref="shell-introduction#activities">Activities</gui>
+        overview and start typing <gui>Tweaks</gui>.</p>
       </item>
       <item>
-        <p>પેનલને ખોલવા માટે <gui>કિબોર્ડ</gui> પર ક્લિક કરો.</p>
+        <p>Click <gui>Tweaks</gui> to open the application.</p>
       </item>
-      <item><p><gui>ટૂંકાણ</gui> ટૅબ પસંદ કરો અને <gui>ટાઇપીંગ</gui> પર ક્લિક કરો.</p></item>
-      <item><p>જમણી તકતીમાં <gui>કમ્પોઝ કી</gui> પર ક્લિક કરો.</p></item>
-      <item><p><gui>નિષ્ક્રિય</gui> પર ક્લિક કરો અને કી પસંદ કરો જે તમે ડ્રોપ-ડાઉન મેનુમાંથી કમ્પોઝ કી તરીકે વર્તવા માંગે છે. તમે ક્યાંતો <key>Ctrl</key> કી, જમણી <key>Alt</key> કી, જમણે <key>Win</key> અથવા <key xref="keyboard-key-super">Super</key> કીને પસંદ કરી શકો છો જો તમારી પાસે હોય, <key xref="keyboard-key-menu">મેનુ</key> કી અથવા  <key>Caps Lock</key>. કોઇપણ કી જે તમે પસંદ કરેલ હશે તે ફક્ત કમ્પોઝ કી તરીકે કામ કરશે, અને તેનાં મૂળભૂત હેતુ માટે લાંબા સમય સુધી કામ કરશે નહિં.</p></item>
+      <item>
+        <p>Click the <gui>Keyboard &amp; Mouse</gui> tab.</p>
+      </item>
+      <item>
+        <p>Click <gui>Disabled</gui> next to the <gui>Compose Key</gui>
+        setting.</p>
+      </item>
+      <item>
+        <p>Turn the switch on in the dialog and pick the keyboard shortcut you
+        want to use.</p>
+      </item>
+      <item>
+        <p>Tick the checkbox of the key that you want to set as the Compose
+        key.</p>
+      </item>
+      <item>
+        <p>Close the dialog.</p>
+      </item>
+      <item>
+        <p>Close the <gui>Tweaks</gui> window.</p>
+      </item>
     </steps>
+
     <p>તમે કમ્પોઝ કીની મદદથી ઘણાં સામાન્ય અક્ષરોને લખી શકો છો, ઉદાહરણ તરીકે:</p>
+
     <list>
       <item><p><key>કમ્પોઝ</key> દબાવો પછી <key>'</key> પછી તે અક્ષર પર ભેદક એક્સન મૂકવા માટે અક્ષર, જેમ કે <em>é</em>.</p></item>
       <item><p><key>કમ્પોઝ</key> દબાવો પછી <key>`</key> (ઊંધી ટીક) તે અક્ષર પર થડકો એક્સન મૂકવા માટે અક્ષર, જેમ કે <em>é</em>.</p></item>
@@ -88,12 +115,16 @@
 <section id="ctrlshiftu">
   <title>કોડ પોઇંટ</title>
 
-  <p>અક્ષરનાં આંકડાકીય કોડ પોઇંટ સાથે ફક્ત તમારા કિબોર્ડની મદદથી કોઇપણ યુનિકોડ અક્ષરને દાખલ કરી શકો છો. દરેક અક્ષર એ ચાર-અક્ષર કોડ પોઇંટ દ્દારા ઓળખાયેલ છે. અક્ષર માટે કોડ પોઇંટને શોધવા માટે, અક્ષર નક્ષા કાર્યક્રમમાં અક્ષરને શોધો અને પરિસ્થિતિ પટ્ટી અથવા <gui>અક્ષર વિગતો</gui> ટૅબમાં જુઓ. કોડ પોઇંટ એ <gui>U+</gui> પછી ચાર અક્ષરો છે.</p>
+  <p>You can enter any Unicode character using only your keyboard with the
+  numeric code point of the character. Every character is identified by a
+  four-character code point. To find the code point for a character, look it up
+  in the <app>Characters</app> application. The code point is the four characters
+  after <gui>U+</gui>.</p>
 
-  <p>To enter a character by its code point, hold down <key>Ctrl</key> and
-  <key>Shift</key>, type <key>U</key> followed by the four-character code
-  point, then release <key>Ctrl</key> and <key>Shift</key>. If you often use
-  characters that you can't easily access with other methods, you might find
+  <p>To enter a character by its code point, press
+  <keyseq><key>Ctrl</key><key>Shift</key><key>U</key></keyseq>, then type the
+  four-character code and press <key>Space</key> or <key>Enter</key>. If you often
+  use characters that you can’t easily access with other methods, you might find
   it useful to memorize the code point for those characters so you can enter
   them quickly.</p>
 

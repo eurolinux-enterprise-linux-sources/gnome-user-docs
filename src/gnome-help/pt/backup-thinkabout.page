@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="backup-thinkabout" xml:lang="pt">
+
+  <info>
+    <link type="guide" xref="files#backup"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany.antopolski@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Projeto de documentação de GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hilh</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Uma lista de diretórios onde pode encontrar documentos, ficheiros e configurações que podria querer guardar.</desc>
+  </info>
+
+  <title>Dónde posso encontrar os ficheiros dos que quero fazer copia de copia de segurança?</title>
+
+  <p>Decidir que ficheiros guardar e saber onde estão é o passo mais dificil ao tentar levar a cabo uma copia de copia de segurança. A continuação listam-se as localizações mais comuns de ficheiros e ajuste importantes que pode querer guardar.</p>
+
+<list>
+ <item>
+  <p>Ficheiros pessoais (documentos, música, fotos e vídeos)</p>
+  <p its:locNote="translators: xdg dirs are localised by package xdg-user-dirs and need to be translated.  You can find the correct translations for your language here: http://translationproject.org/domain/xdg-user-dirs.html">Geralmente estão alojar na sua diretório (<file>/home/seu_nome</file>). Podem estar em subpastas como Escritorio, Documentos, Imagens, Música e Vídeos.</p>
+  <p>Se o médio que usa para seus respaldos tem suficiente espaço (se é um disco duro externo, por exemplo), considere guardar completamente a sua diretório pessoal. Pode averiguar quanto espaço de disco duro usa a sua diretório pessoal utilizando o <app>Analizador de uso de disco</app>.</p>
+ </item>
+
+ <item>
+  <p>Ficheiros ocultos</p>
+  <p>De forma predeterminada oculta-se qualquer diretório ou ficheiro que comece por um ponto (.). Para ver ficheiros ocultos, carregue o botão <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">Opções da vista</span></media></gui> na barra de ferramentas e escolha <gui>Mostrar ficheiros ocultos</gui> ou carregue <keyseq><key>Ctrl</key><key>H</key></keyseq>. Pode copiá-los para uma localização de copia de segurança como qualquer outro tipo de ficheiro.</p>
+ </item>
+
+ <item>
+  <p>Configuração pessoal (preferências do escritório, temas e configuração do software)</p>
+  <p>A maioria dos aplicações alojam a sua configuração em diretórios ocultas dentro da sua diretório pessoal (para obter mais informação acerca de ficheiros ocultos, ver mais acima).</p>
+  <p>Most of your application settings will be stored in the hidden folders
+ <file>.config</file> and <file>.local</file> in your Home folder.</p>
+ </item>
+
+ <item>
+  <p>Configuração global do sistema</p>
+  <p>A configuração das partes importantes de seu sistema não aloja na sua diretório pessoal. Há várias localizações nas que se pode alojar, mas a maioria o fazem na diretório <file>/etc</file>. Em general, não precisa fazer uma copia de copia de segurança destes ficheiros num computador pessoal. Sem embargo, se trata-se dum servidor, deveria criar uma copia de copia de segurança dos ficheiros dos serviços que estejam em execução.</p>
+ </item>
+</list>
+
+</page>

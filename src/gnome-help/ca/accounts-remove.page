@@ -24,8 +24,9 @@
       <years>2015</years>
     </credit>
 
-    <desc>Remove access to an online service provider from your
-    applications.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Traieu l'accés a un proveïdor de serveis en línia de les vostres aplicacions.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>David Aguilera</mal:name>
@@ -34,45 +35,35 @@
     </mal:credit>
   </info>
 
-  <title>Remove an account</title>
+  <title>Suprimiu un compte</title>
 
-  <p>You can remove an online account which you no longer wish to use.</p>
+  <p>Podeu eliminar un compte en línia que ja no voleu utilitzar.</p>
 
   <note style="tip">
-    <p>Many online services provide an authorization token which GNOME stores
-    instead of your password. If you remove an account, you should also revoke
-    that certificate in the online service. This will ensure that no other
-    application or website can connect to that service using the authorization
-    for GNOME.</p>
+    <p>Molts serveis en línia proporcionen un testimoni d'autorització que GNOME emmagatzema en comptes de la vostra contrasenya. Si elimineu un compte, també heu de revocar aquest certificat en el servei en línia. Això garantirà que cap altra aplicació o lloc web es pugui connectar amb aquest servei utilitzant l'autorització del GNOME.</p>
 
-    <p>How to revoke the authorization depends on the service provider. Check
-    your settings on the provider's website for authorized or connected apps
-    or sites. Look for an app called "GNOME" and remove it.</p>
+    <p>La forma de revocar l'autorització depèn del proveïdor del servei. Comproveu la vostra configuració al lloc web del proveïdor per a aplicacions o llocs connectats o autoritzats. Busqueu una aplicació anomenada "GNOME" i suprimiu-la.</p>
   </note>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Online Accounts</gui>.</p>
+      <p>Obriu el resum de les <gui xref="shell-introduction#activities">Activititats</gui> i comenceu a escriure <gui>Comptes en línia</gui>.</p>
     </item>
     <item>
-      <p>Click on <gui>Online Accounts</gui> to open the panel.</p>
+      <p>Feu clic a <gui>Comptes en línia</gui> per obrir el panell.</p>
     </item>
     <item>
-      <p>Select the account which you wish to remove.</p>
+      <p>Seleccioneu el compte que voleu suprimir.</p>
     </item>
     <item>
-      <p>Click the <gui>-</gui> button in the lower-left corner of the
-      window.</p>
+      <p>Cliqueu al botó <gui>-</gui> a la cantonada inferior esquerra de la finestra.</p>
     </item>
     <item>
-      <p>Click <gui>Remove</gui> in the confirmation dialog.</p>
+      <p>Cliqueu <gui>Suprimir</gui> al diàleg de confirmació.</p>
     </item>
   </steps>
 
   <note style="tip">
-    <p>Instead of deleting the account completely, it is possible to
-    <link xref="accounts-disable-service">restrict the services</link> accessed
-    by your desktop.</p>
+    <p>En comptes d'esborrar totalment el compte, es possible <link xref="accounts-disable-service">restringir els serveis</link> als qual accedeix el vostre escriptori.</p>
   </note>
 </page>

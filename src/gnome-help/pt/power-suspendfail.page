@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="power-suspendfail" xml:lang="pt">
+
+  <info>
+    <link type="guide" xref="power#problems"/>
+    <link type="guide" xref="hardware-problems-graphics"/>
+    <link type="seealso" xref="hardware-driver"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <desc>Alguns componentes hardware da computador dão problemas ao suspender.</desc>
+
+    <credit type="author">
+      <name>Projeto de documentação de GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+<title>Por que minha computador não reage após o ter enviado suspendido?</title>
+
+<p>Se <link xref="power-suspend">suspende</link> o seu computador e depois tratar de acordá-lo ou de voltar a acendê-lo, é possível que não funcione como esperava. Isto poderia ser como seu hardware não permite suspender adequadamente.</p>
+
+<section id="resume">
+  <title>Minha computador está dormida e não posso o acordar</title>
+  <p>Se suspende o seu computador e depois pressiona uma tecla ou clica com seu rato, deveria acordar-se e mostrar um ecrã pedindo a sua palavra-passe. Se isto não ocorre, tente pressionando o botão de ignição (não o mantenha pressionado, o carregue só uma vez).</p>
+  <p>If this still does not help, make sure that your computer’s monitor is
+  switched on and try pressing a key on the keyboard again.</p>
+  <p>Como último recurso, apague a computador mantendo carregado o botão de ignição de 5 a 10 segundos. Ao fazê-lo perderá seus trabalhos sem guardar. Depois poderá acender a computador novamente.</p>
+  <p>Se isto ocorre sempre que põe o seu computador a dormir, pode que a suspensão não funcione em seu hardware.</p>
+  <note style="warning">
+    <p>Se o seu computador gasta energia e não tem uma fonte de alimentação alternativa (como uma bateria), apagar-se-á.</p>
+  </note>
+</section>
+
+<section id="hardware">
+  <title>Minha conexão sem fios (ou outro hardware) não funciona quando minha computador acordada</title>
+  <p>Se suspende o seu computador e depois acorda-o de novo, é possível que encontre que a sua conexão a Internet, o rato, ou algum outro dispositivo não funcionam corretamente. Isto poderia se dever a que o controlador do dispositivo não suporta a suspensão corretamente. Isto é um <link xref="hardware-driver">problema com o controlador</link> e não com o proprio dispositivo.</p>
+  <p>Se o dispositivo tem algum interruptor de ignição, experimente a apagá-lo e voltá-lo a acender. Em muitas ocasiões, o dispositivo volverá a funcionar de novo. Se liga-se mediante um cabo USB ou similar, desconételo e vuélvalo a ligar, a ver se funciona.</p>
+  <p>Se não se pode apagar ou desligarr o dispositivo, ou se isto não funciona, é possível que deva reiniciar a computador para que o dispositivo volte a funcionar.</p>
+</section>
+
+</page>

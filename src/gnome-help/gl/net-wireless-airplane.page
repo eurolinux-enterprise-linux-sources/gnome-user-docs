@@ -7,6 +7,7 @@
     <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
     <revision pkgversion="3.10" date="2013-11-10" status="review"/>
     <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.24" date="2017-03-26" status="final"/>
 
     <credit type="author">
       <name>Proxecto de documentación de GNOME</name>
@@ -29,13 +30,20 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2013.</mal:years>
+      <mal:years>2011-2018</mal:years>
     </mal:credit>
   </info>
 
 <title>Apagar o modo sen fíos (modo avión)</title>
 
-<p>Se ten o seu computador en modo avión (ou nalgunha outra área onde non estean permitidas as conexións sen fíos), debe apagar o seu sistema sen fíos. Tamén debería apagalo por outras razóns: (para aforrar batería, por exemplo). Para facer isto:</p>
+<p>Se ten o seu computador en modo avión (ou nalgunha outra área onde non estean permitidas as conexións sen fíos), debe apagar o seu sistema sen fíos. Tamén debería apagalo por outras razóns: (para aforrar batería, por exemplo).</p>
+
+  <note>
+    <p>Using <em>Airplane Mode</em> will completely turn off all wireless
+    connections, including WiFi, 3G and Bluetooth connections.</p>
+  </note>
+
+  <p>Para activar o modo Avión:</p>
 
   <steps>
     <item>
@@ -43,7 +51,7 @@
       start typing <gui>Network</gui>.</p>
     </item>
     <item>
-      <p>Click on <gui>Network</gui> to open the panel.</p>
+      <p>Prema en <gui>Rede</gui> para abrir o panel.</p>
     </item>
     <item>
       <p>Switch <gui>Airplane Mode</gui> to <gui>ON</gui>. This will turn off
@@ -51,9 +59,10 @@
     </item>
   </steps>
 
-  <note>
-    <p>Using <em>Airplane Mode</em> will completely turn off all wireless
-    connections, including WiFi, 3G and Bluetooth connections.</p>
+  <note style="tip">
+    <p>You can turn off your WiFi connection from the 
+    <gui xref="shell-introduction#yourname">system menu</gui> by clicking on 
+    the connection name and choosing <gui>Turn Off</gui>.</p>
   </note>
 
 </page>

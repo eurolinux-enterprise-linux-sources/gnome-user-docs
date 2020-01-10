@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="extensions-enable" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="software#extension"/>
+    <link type="seealso" xref="extensions-lockdown"/>
+    <link type="seealso" xref="extensions"/>
+    <revision pkgversion="3.12" date="2014-06-17" status="review"/>
+
+    <credit type="author copyright">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>GNOME Shell kiterjesztések engedélye az összes felhasználónak.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>ur.balazs@fsf.hu</mal:email>
+      <mal:years>2018.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Rendszerszintű kiterjesztések engedélyezése</title>
+  
+  <p>A rendszeren lévő összes felhasználó számára a kiterjesztések elérhetővé tételéhez telepítse azokat az <file>/usr/share/gnome-shell/extensions</file> könyvtárba. Ne feledje, hogy az újonnan telepített rendszerszintű kiterjesztések alapértelmezetten le vannak tiltva. Az összes felhasználó számára történő kiterjesztések engedélyezéséhez be kell állítania az <code>org.gnome.shell.enabled-extensions</code> kulcsot.</p>
+
+  <steps>
+    <title>Az org.gnome.shell.enabled-extensions kulcs beállítása</title>
+    <item>
+      <p>Hozzon létre egy <code>felhasználói</code> profilt az <file>/etc/dconf/profile/user</file> fájlban:</p>
+      <listing>
+        <code>
+user-db:user
+system-db:local
+</code>
+      </listing>
+    </item>
+    <item>
+      <p>Hozzon létre egy <code>helyi</code> adatbázist a rendszerszintű beállításokhoz az <file>/etc/dconf/db/local.d/00-extensions</file> fájlban:</p>
+      <listing>
+        <code>
+[org/gnome/shell]
+# Az összes kiterjesztés felsorolása, amelyet engedélyezni szeretne az összes felhasználónak
+enabled-extensions=['<input>kiterjesztes1@myname.example.com</input>', '<input>kiterjesztes2@myname.example.com</input>']
+</code>
+      </listing>
+      <p>Az <code>enabled-extensions</code> kulcs adja meg az engedélyezett kiterjesztéseket a kiterjesztések univerzálisan egyedi azonosítójának használatával (<code>kiterjesztes1@myname.example.com</code> és <code>kiterjesztes2@myname.example.com</code>).</p>
+    </item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+  </steps>
+
+</page>

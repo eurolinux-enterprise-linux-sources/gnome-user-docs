@@ -8,6 +8,7 @@
     <revision pkgversion="3.4.0" date="2012-03-13" status="final"/>
     <revision pkgversion="3.15" date="2014-12-04" status="final"/>
     <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.24" date="2017-03-26" status="final"/>
 
     <credit type="author">
       <name>Jim Campbell</name>
@@ -30,9 +31,10 @@
 
   <title>Veidot savienojumu ar fiksēto IP adresi.</title>
 
-  <p>Pārsvarā tīkli automātiski piešķirs <link xref="net-what-is-ip-address">IP adresi</link> un citu informāciju jūsu datoram, kad tas pieslēgsies tīklam. Šīs detaļas var periodiski mainīties, bet jūs varat vēlēties fiksēto IP adresi savam datoram, lai vienmēr zinātu, kāda tā ir (piemēram, ja dators ir datņu serveris).</p> <p>Lai jūsu datoram iedotu fiksēto (statisko) IP adresi:</p>
+  <p>Pārsvarā tīkli automātiski piešķirs <link xref="net-what-is-ip-address">IP adresi</link> un citu informāciju jūsu datoram, kad tas pieslēgsies tīklam. Šīs detaļas var periodiski mainīties, bet jūs varat vēlēties fiksēto IP adresi savam datoram, lai vienmēr zinātu, kāda tā ir (piemēram, ja dators ir datņu serveris).</p>
 
   <steps>
+    <title>Lai jūsu datoram iedotu fiksēto (statisko) IP adresi:</title>
     <item>
       <p>Atveriet <gui xref="shell-introduction#activities">Aktivitāšu</gui> pārskatu un sāciet rakstīt <gui>Tīkls</gui>.</p>
     </item>
@@ -40,30 +42,22 @@
       <p>Spiediet <gui>Tīkls</gui>, lai atvērtu paneli.</p>
     </item>
     <item>
-      <p>In the left pane, select the network connection that you want to give
-      a fixed address. If you plug in to the network with a cable, click
-      <gui>Wired</gui>, then click the
-      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media> button in the lower right corner of
-      the panel. For a <gui>Wi-Fi</gui> connection, the 
-      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
-      button will be located next to the active network.</p>
+      <p>Kreisajā rūtī izvēlieties tīkla savienojumu, kuram vēlaties fiksētu adresi. Ja savienojaties ar tīklu ar pievienotu vadu, tad izvēlieties <gui>Vadu</gui>, tad spiediet pogu <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">iestatījumi</span></media> rūts apakšējā labajā stūrī. <gui>Wi-Fi</gui> savienojumam <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">iestatījumi</span></media> poga būs novietota pie aktīvā tīkla.</p>
     </item>
     <item>
-      <p>Click on the <gui>IPv4</gui> or <gui>IPv6</gui> tab
-      and change the <gui>Addresses</gui> to <em>Manual</em>.</p>
+      <p>Spiediet uz <gui>IPv4</gui> vai <gui>IPv6</gui> kreisajā rūtī un mainiet <gui>Adreses</gui> uz <em>Pašrocīgs</em>.</p>
     </item>
     <item>
-      <p>Enter the <em>Address</em>, <em>Netmask</em>, and <em>Gateway</em>
-      information into the appropriate boxes. How you choose these will depend
-      on your network setup; there are specific rules governing which IP
-      addresses and netmasks are valid for a given network.</p>
+      <p>Ievadiet <gui xref="net-what-is-ip-address">IP adresi</gui> un <gui>Vārteju</gui>, kā arī atbilstošo <gui>Tīkla masku</gui>.</p>
     </item>
     <item>
-      <p>Ja nepieciešams, ievadiet <em>domēnu vārdu servera</em> adresi iekš <gui>DNS serveri</gui> ailes. Šī ir IP adrese serverim, kurā glabājas domēnu nosaukumi; lielākajai daļai korporatīvo tīklu un interneta sniedzēju ir savi DNS serveri.</p>
+      <p><gui>DNS</gui> sadaļā pārslēdziet <gui>Automātiski</gui> uz <gui>|</gui>. Ievadiet vēlamā DNS servera IP adresi. Ievadiet papildu DNS serveru adreses, izmantojot pogu <gui>+</gui>.</p>
     </item>
     <item>
-      <p>Click <gui>Apply</gui>. The network connection should now have a fixed
-      IP address.</p>
+      <p><gui>Maršruti</gui> sadaļā pārslēdziet <gui>Automātiski</gui> uz <gui>|</gui>. Ievadiet <gui>Adresi</gui>, <gui>Tīkla masku</gui>, <gui>Vārteju</gui> un <gui>Metriku</gui> maršrutam, kuru vēlaties izmantot. Ievadiet papildu maršrutus, izmantojot pogu <gui>+</gui>.</p>
+    </item>
+    <item>
+      <p>Spiediet <gui>Pielietot</gui>. Tīkla savienojumiem tagad vajadzētu būt fiksētajai IP adresei.</p>
     </item>
   </steps>
 

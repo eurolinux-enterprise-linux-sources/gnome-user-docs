@@ -6,9 +6,10 @@
 
     <revision pkgversion="3.14" date="2014-11-10" status="review"/>
     <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.24" date="2017-03-26" status="final"/>
 
     <credit type="author">
-      <name>Projek Dokumentasi GNOME</name>
+      <name>Proyek Dokumentasi GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="editor">
@@ -27,22 +28,27 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Andika Triwidada</mal:name>
       <mal:email>andika@gmail.com</mal:email>
-      <mal:years>2011, 2012, 2013, 2014.</mal:years>
+      <mal:years>2011-2014, 2017.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ahmad Haris</mal:name>
+      <mal:email>ahmadharis1982@gmail.com</mal:email>
+      <mal:years>2017.</mal:years>
     </mal:credit>
   </info>
 
   <title>Connect to mobile broadband</title>
 
   <p>You can set up a connection to a cellular (3G) network with your
-  computer's built-in 3G modem, your mobile phone, or an Internet stick.</p>
+  computer’s built-in 3G modem, your mobile phone, or an Internet stick.</p>
 
   <steps>
     <item><p>If you do not have a built-in 3G modem, connect your phone or
     Internet stick to a USB port on your computer.</p>
     </item>
     <item>
-    <p>Open the <gui xref="shell-introduction#yourname">system menu</gui> from the right
-    side of the top bar.</p>
+    <p>Buka <gui xref="shell-introduction#yourname">menu sistem</gui> pada bagian kanan dari bilah atas.</p>
   </item>
   <item>
     <p>Select
@@ -59,7 +65,7 @@
     time, the <gui>Set up a Mobile Broadband Connection</gui> wizard is
     launched. The opening screen displays a list of required information. Click
     <gui style="button">Next</gui>.</p></item>
-    <item><p>Choose your provider's country or region from the list. Click
+    <item><p>Choose your provider’s country or region from the list. Click
     <gui style="button">Next</gui>.</p></item>
     <item><p>Choose your provider from the list. Click
     <gui style="button">Next</gui>.</p></item>
@@ -71,5 +77,12 @@
     <gui>Network</gui> panel will display the properties of your
     connection.</p></item>
   </steps>
+
+    <note style="tip">
+      <p>Some phones have a setting called <em>USB tethering</em> that requires
+      no setup on the computer. When the setting is activated on the phone, the
+      connection will show up as <gui>Ethernet Connected</gui> in the system
+      menu and <gui>USB ethernet</gui> in the network panel.</p>
+    </note>
 
 </page>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="power-batteryestimate" xml:lang="pl">
+
+  <info>
+
+    <link type="guide" xref="power#faq"/>
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.20" date="2016-06-15" status="final"/>
+
+    <desc>Czas pracy na zasilaniu z akumulatora wyświetlany po kliknięciu <gui>ikony akumulatora</gui> jest liczbą szacunkową.</desc>
+
+    <credit type="author">
+      <name>Projekt dokumentacji GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Szacunkowy czas pracy na zasilaniu z akumulatora jest błędny</title>
+
+<p>Podczas sprawdzania pozostałego czasu pracy na zasilaniu z akumulatora może okazać, się, że podany czas różni się od czasu rzeczywistego. Dzieje się tak, ponieważ pozostały czas pracy na zasilaniu z akumulatora może być tylko szacowany. Zwykle szacunki z czasem są coraz bardziej dokładne.</p>
+
+<p>Aby oszacować pozostały czas pracy na zasilaniu z akumulatora, pod uwagę branych jest wiele czynników. Jednym jest poziom prądu obecnie używanego przez komputer: zapotrzebowanie na prąd różni się w zależności od liczby otwartych programów, liczby podłączonych urządzeń i czy wykonywane są wymagające zadania (takie jak oglądanie filmów o wysokiej rozdzielczości czy konwertowanie plików muzycznych). Co chwilę się to zmienia i trudno to przewidzieć.</p>
+
+<p>Innym czynnikiem jest sposób rozładowywania akumulatora. Niektóre akumulatory rozładowują się tym szybciej, im bardziej są puste. Bez dokładnej wiedzy o sposobie rozładowywania akumulatora można tylko w przybliżeniu oszacować pozostały czas pracy na zasilaniu z akumulatora.</p>
+
+<p>W trakcie rozładowywania akumulatora menedżer zasilania wylicza jego właściwości rozładunku i poznaje, jak lepiej szacować czas pracy na zasilaniu z akumulatora. Nigdy nie będzie on jednak zupełnie dokładny.</p>
+
+<note>
+  <p>Jeśli pozostały czas pracy na zasilaniu z akumulatora jest zupełnie niedorzeczny (np. setki godzin), to menedżer zasilania prawdopodobnie nie ma części danych potrzebnych do wykonania rozsądnego szacunku.</p>
+  <p>Menedżer zasilania powinien uzyskać potrzebne dane, jeśli użytkownik odłączy laptop z gniazdka, pozwoli mu działać jakiś czas na zasilaniu z akumulatora, a następnie podłączy go z powrotem i poczeka, aż się naładuje.</p>
+</note>
+
+</page>

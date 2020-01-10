@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="fonts-user" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="appearance"/>
+    <revision pkgversion="3.11" date="2014-01-29" status="draft"/>
+
+    <credit type="author copyright">
+      <name>Matthias Clasen</name>
+      <email>matthias.clasen@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Jana Svarova</name>
+      <email>jana.svarova@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>További betűkészletek hozzáadása egyéni felhasználóknak.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>ur.balazs@fsf.hu</mal:email>
+      <mal:years>2018.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>További betűkészlet hozzáadása egyéni felhasználóknak</title>
+
+  <p>Telepíthet további betűkészletet, amely elérhető lesz egy bizonyos felhasználónak a rendszeren azokban az alkalmazásokban, amelyek a <sys>fontconfig</sys> beállítást használják a betűkészletek kezeléséhez.</p>
+
+  <steps>
+    <title>További betűkészlet telepítése</title>
+    <item>
+      <p>Másolja a betűkészletet a <file>~/.local/share/fonts/</file> könyvtárba a telepítéshez.</p>
+    </item>
+    <item>
+      <p>Lehet, hogy le kell futtatnia a következő parancsot a betűkészlet gyorsítótárának frissítéséhez:</p>
+      <screen><output>$ </output><input>fc-cache ~/.local/share/fonts</input></screen>
+    </item>
+  </steps>
+
+  <p>Előfordulhat, hogy újra kell indítania a futó alkalmazásokat a változtatások megtekintéséhez. A felhasználói munkameneteket nem szükséges újraindítani.</p>
+
+</page>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="tip" version="1.0 ui/1.0" id="shell-keyboard-shortcuts" xml:lang="pt">
+
+  <info>
+    <link type="guide" xref="tips"/>
+    <link type="guide" xref="keyboard"/>
+    <link type="guide" xref="shell-overview#apps"/>
+    <link type="seealso" xref="keyboard-key-super"/>
+
+    <revision pkgversion="3.8.0" version="0.4" date="2013-04-23" status="review"/>
+    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.20" date="2016-08-13" status="candidate"/>
+
+    <credit type="author copyright">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hilh</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Mover pelo escritório utilizando o teclado.</desc>
+  </info>
+
+<title>Atalhos de teclado úteis</title>
+
+<p>Esta página proporciona-lhe uma vista geral dos atalhos de telcado que pode usar em seu escritório e aplicações duma forma eficiente. Se não pode usar um rato ou um dispositivo apuntador, consulte a <link xref="keyboard-nav"/> para obter mais informação sobre navegar pelos interfaces só com o teclado.</p>
+
+<table rules="rows" frame="top bottom" ui:expanded="true">
+<title>Primeiros passos no escritório</title>
+  <tr xml:id="alt-f1">
+    <td><p><keyseq><key>Alt</key><key>F1</key></keyseq> ou a tecla <key xref="keyboard-key-super">Super</key></p></td>
+    <td><p>Muda entre a vista geral de <gui>Atividades</gui> e o escritório. Em a vista geral, comece a escrever para procurar instantaneamente seus aplicações, contactos e documentos.</p></td>
+  </tr>
+  <tr xml:id="alt-f2">
+    <td><p><keyseq><key>Alt</key><key>F2</key></keyseq></p></td>
+    <td><p>Janela de comandos emergente (para executar comandos rapidamente)</p></td>
+  </tr>
+  <tr xml:id="super-tab">
+    <td><p><keyseq><key>Super</key><key>Tab</key></keyseq></p></td>
+    <td><p><link xref="shell-windows-switching">Mudança rápida entre janelas.</link> Mantenha premida <key>Shift</key> inverter a ordem.</p></td>
+  </tr>
+  <tr xml:id="super-tick">
+    <td><p><keyseq><key>Super</key><key>`</key></keyseq></p></td>
+    <td>
+      <p>Muda entre janelas do mesmo aplicação, ou desde o aplicação selecionado após <keyseq><key>Super</key><key>Tab</key></keyseq>.</p>
+      <p>Este atalho de teclado usa <key>`</key> em teclados estadounidenses, onde a tecla <key>`</key> está em cima da tecla <key>Tab</key>. Em qualquer outro teclado, o atalho usa-se com a tecla <key>Super</key> e qualquer que seja a tecla em cima da tecla <key>Tab</key>.</p>
+    </td>
+  </tr>
+  <tr xml:id="alt-escape">
+    <td><p><keyseq><key>Alt</key><key>Esc</key></keyseq></p></td>
+    <td>
+      <p>Switch between windows in the current workspace. Hold down
+      <key>Shift</key> for reverse order.</p>
+    </td>
+  </tr>
+  <tr xml:id="ctrl-alt-tab">
+    <!-- To be updated to <key>Tab</key> in the future. -->
+    <td><p><keyseq><key>Ctrl</key><key>Alt</key><key>Tab</key></keyseq></p></td>
+    <td>
+      <p>Põe o foco do teclado na barra superior. Na vista de <gui>Atividades</gui>, muda o foco do teclado entre a barra superior, o tabuleiro, a vista prévia de janelas, a lista de aplicações e o campo de busca. Use as teclas de setas para navegar.</p>
+    </td>
+  </tr>
+  <tr xml:id="super-a">
+    <td><p><keyseq><key>Super</key><key>A</key></keyseq></p></td>
+    <td><p>Mostrar a lista de aplicações.</p></td>
+  </tr>
+  <tr xml:id="super-updown">
+    <td><p>
+      <keyseq><key>Super</key><key>Page Up</key></keyseq> or
+      <keyseq><key>Ctrl</key><key>Alt</key><key>Up</key></keyseq>, and
+      <keyseq><key>Super</key><key>Page Down</key></keyseq> or
+      <keyseq><key>Ctrl</key><key>Alt</key><key>Down</key></keyseq>
+    </p></td>
+    <td><p><link xref="shell-workspaces-switch">Mudar entre áreas de trabalho</link>.</p></td>
+  </tr>
+  <tr xml:id="super-shift-updown">
+    <td><p><keyseq><key>Super</key><key>Shift</key><key>Re. Pág</key></keyseq> e <keyseq><key>Super</key><key>Shift</key><key>Av. Pág</key></keyseq></p></td>
+    <td><p><link xref="shell-workspaces-movewindow">Mover a janela atual a um área de trabalho diferente</link>.</p></td>
+  </tr>
+  <tr xml:id="super-shift-left">
+    <td><p><keyseq><key>Super</key><key>Shift</key><key>←</key></keyseq></p></td>
+    <td><p>Mover a janela um ecrã à esquerda.</p></td>
+  </tr>
+  <tr xml:id="super-shift-right">
+    <td><p><keyseq><key>Super</key><key>Shift</key><key>→</key></keyseq></p></td>
+    <td><p>Mover a janela um ecrã à direita.</p></td>
+  </tr>
+  <tr xml:id="ctrl-alt-Del">
+    <td><p><keyseq><key>Ctrl</key><key>Alt</key><key>Delete</key></keyseq></p></td>
+    <td><p><link xref="shell-exit">Apagar</link>.</p></td>
+  </tr>
+  <tr xml:id="ctrl-alt-l">
+    <td><p><keyseq><key>Super</key><key>L</key></keyseq></p></td>
+    <td><p><link xref="shell-exit#lock-screen">Bloquear o ecrã</link>.</p></td>
+  </tr>
+  <tr xml:id="super-m">
+    <td><p><keyseq><key>Super</key><key>M</key></keyseq></p></td>
+    <td><p>Abra a <link xref="shell-notifications#messagetray">bandeja de mensagens</link>. Carregue <keyseq><key>Super</key><key>M</key></keyseq> outra vez ou <key>Esc</key> para fechá-la.</p></td>
+  </tr>
+</table>
+
+<table rules="rows" frame="top bottom" ui:expanded="false">
+<title>Combinações de teclas de edição mais comuns</title>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>A</key></keyseq></p></td>
+    <td><p>Selecionar todo o texto ou todos os elementos numa lista.</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>X</key></keyseq></p></td>
+    <td><p>Cortar (tirar) o texto ou os elementos selecionados e colocar no escritório.</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>C</key></keyseq></p></td>
+    <td><p>Copiar o texto ou os elementos selecionados à área de transferência.</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>V</key></keyseq></p></td>
+    <td><p>Colar os conteúdos da área de transferência.</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>Z</key></keyseq></p></td>
+    <td><p>Desfazer a última ação.</p></td>
+  </tr>
+</table>
+
+<table rules="rows" frame="top bottom" ui:expanded="false">
+<title>Capturar o ecrã</title>
+  <tr>
+    <td><p><key>Prnt Scrn</key></p></td>
+    <td><p><link xref="screen-shot-record#screenshot">Tomar uma captura de ecrã</link>.</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Alt</key><key>Prnt Scrn</key></keyseq></p></td>
+    <td><p><link xref="screen-shot-record#screenshot">Tomar uma captura de ecrã de uma janela</link>.</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Shift</key><key>Prnt Scrn</key></keyseq></p></td>
+    <td><p><link xref="screen-shot-record#screenshot">Tomar uma captura de ecrã dum área do ecrã</link>. O ponteiro converte-se numa cruz. Carregue e arraste para selecionar um área.</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>Alt</key><key>Mayús</key><key>R</key></keyseq></p></td>
+    <td><p><link xref="screen-shot-record#screencast">Iniciar e finalizar uma grabação de video</link>.</p></td>
+  </tr>
+</table>
+
+</page>

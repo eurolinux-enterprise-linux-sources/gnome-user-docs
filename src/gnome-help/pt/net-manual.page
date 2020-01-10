@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-manual" xml:lang="pt">
+
+  <info>
+    <link type="guide" xref="net-wired"/>
+    <link type="guide" xref="net-wireless"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.10" date="2013-11-11" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.28" date="2018-03-28" status="review"/>
+
+    <credit type="author">
+      <name>Phil Bulh</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hilh</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <desc>You may have to enter network settings if they don’t get assigned
+    automatically.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Estabelecer a configuração da rede manualmente</title>
+
+  <p>If your network doesn’t automatically assign network settings to your
+  computer, you may have to manually enter the settings yourself. This topic
+  assumes that you already know the correct settings to use. If not, you may
+  need to ask your network administrator or look at the settings of your router
+  or network switch.</p>
+
+  <steps>
+    <title>Para configurar a rede manualmente:</title>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui>
+      overview and start typing <gui>Settings</gui>.</p>
+    </item>
+    <item>
+      <p>Click on <gui>Settings</gui>.</p>
+    </item>
+    <item>
+      <p>In the left pane, select the network connection that you want to set
+      up manually. If you plug in to the network with a cable, click
+      <gui>Network</gui>. Otherwise click <gui>Wi-Fi</gui>.</p>
+      <p>Assegure-se de que seu cartão sem fios está acesa ou que o cabo de rede está conetado.</p>
+    </item>
+    <item>      
+      <p>Click the
+      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
+      button.</p>
+      <note>
+        <p>For a <gui>Wi-Fi</gui> connection, the 
+        <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
+        button will be located next to the active network.</p>
+      </note>
+    </item>
+    <item>
+      <p>Click on <gui>IPv4</gui> or <gui>IPv6</gui> in the left pane
+      and change the <gui>Addresses</gui> to <em>Manual</em>.</p>
+    </item>
+    <item>
+      <p>Type in the <gui xref="net-what-is-ip-address">IP Address</gui> and
+      <gui>Gateway</gui>, as well as the appropriate <gui>Netmask</gui>.</p>
+    </item>
+    <item>
+      <p>Na seção <gui>DNS</gui> mude <gui>Automático</gui> a <gui>Apagado</gui>. Introduza o endereço IP dos servidores DNS que quer usar. Introduza direções de servidores DNS adicionais utilizando o botão <gui>+</gui>.</p>
+    </item>
+    <item>
+      <p>Na seção <gui>Rotas</gui>, mude a opção a opção <gui>Automático</gui> a <gui>Apagado</gui> . Introduza a <gui>Direção</gui>, a <gui>Máscara de rede</gui>, a <gui>Porta de ligação</gui> e a <gui>Métrica</gui> para a caminho que queira usar. Pode acrescentar mais caminhos utilizando o botão <gui>+</gui>.</p>
+    </item>
+    <item>
+      <p>Carregue <gui>Aplicar</gui>. Se não está ligado à rede,carregue no área de estado do sistema na barra superior e se ligue. Verifique os ajustes de rede tentando ver por exemplo um lugar site ou examinando os ficheiros partilhados na rede.</p>
+    </item>
+  </steps>
+
+</page>

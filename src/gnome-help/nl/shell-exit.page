@@ -9,6 +9,7 @@
     <revision pkgversion="3.6.0" date="2012-09-15" status="review"/>
     <revision pkgversion="3.10" date="2013-11-02" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+    <revision pkgversion="3.24.2" date="2017-06-11" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -26,38 +27,46 @@
       <name>Ekaterina Gerasimova</name>
       <email>kittykat3756@gmail.com</email>
     </credit>
+    <credit type="editor">
+      <name>David Faour</name>
+      <email>dfaour.gnome@gmail.com</email>
+    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <desc>Leer hoe u uw gebruikersaccount verlaat, door af te melden, van gebruiker te wisselen, enz.</desc>
     <!-- Should this be a guide which links to other topics? -->
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Justin van Steijn</mal:name>
+      <mal:email>justin50@live.nl</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hannie Dumoleyn</mal:name>
+      <mal:email>hannie@ubuntu-nl.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
   </info>
 
-  <title>Log out, power off or switch users</title>
+  <title>Afmelden, uitschakelen of van gebruiker wisselen</title>
 
-  <p>When you have finished using your computer, you can turn it off, suspend
-  it (to save power), or leave it powered on and log out.</p>
+  <p>Wanneer u klaar bent met het gebruiken van uw computer kunt u deze uitschakelen, in de pauzestand zetten (om energie te besparen), of hem aan laten staan en u alleen afmelden.</p>
 
 <section id="logout">
   <title>Afmelden of van gebruiker wisselen</title>
 
-  <p>To let other users use your computer, you can either log out, or leave
-  yourself logged in and just switch users. If you switch users, all of
-  your applications will continue running, and everything will be where you
-  left it when you log back in.</p>
+  <p>Om anderen uw computer te laten gebruiken kunt u zich afmelden of aangemeld blijven en alleen van gebruiker wisselen. Als u alleen maar van gebruiker wisselt, dan zullen al uw toepassingen blijven draaien en alles zal zich bevinden waar u het achterliet wanneer u zich weer aanmeldt.</p>
 
-  <p>To <gui>Log Out</gui> or <gui>Switch User</gui>, click the
-  <link xref="shell-introduction#yourname">system menu</link> on the right side of the
-  top bar, click your name and then choose the right option.</p>
+  <p><gui>Afmelden</gui> of <gui>Wisselen van gebruiker</gui> doet u als volgt: klik op het <link xref="unity-menubar-intro">systeemmenu</link> uiterst rechts in de bovenbalk, klik op uw naam en kies dan de gewenste optie.</p>
 
   <note if:test="!platform:gnome-classic">
-    <p>The <gui>Log Out</gui> and <gui>Switch User</gui> entries only appear in
-    the menu if you have more than one user account on your system.</p>
+    <p>De onderdelen <gui>Afmelden</gui> en <gui>Gebruiker wisselen</gui> verschijnen alleen in het menu als u meer dan één gebruikersaccount op uw systeem heeft.</p>
   </note>
 
   <note if:test="platform:gnome-classic">
-    <p>The <gui>Switch User</gui> entry only appears in the menu if you have
-    more than one user account on your system.</p>
+    <p>Het onderdeel <gui>Gebruiker wisselen</gui> verschijnt alleen in het menu als u meer dan één gebruikersaccount op uw systeem heeft.</p>
   </note>
 
 </section>
@@ -69,19 +78,11 @@
 
   <title>Het scherm vergrendelen</title>
 
-  <p>If you're leaving your computer for a short time, you should lock your
-  screen to prevent other people from accessing your files or running
-  applications. When you return, raise the
-  <link xref="shell-lockscreen">lock screen</link> curtain and enter your
-  password to log back in. If you don't lock your screen, it will lock
-  automatically after a certain amount of time.</p>
+  <p>Als u uw computer korte tijd achterlaat, dan moet u uw scherm vergrendelen om te voorkomen dat anderen toegang krijgen tot uw bestanden en draaiende toepassingen. Wanneer u terug komt, kunt u het <link xref="shell-lockscreen">vergrendelde scherm</link> opheffen en uw wachtwoord invoeren om u weer aan te melden. Als u uw scherm niet vergrendelt, dan zal het automatisch vergrendeld worden na een bepaalde tijd.</p>
 
-  <p>To lock your screen, click the system menu on the right side of the top
-  bar and press the lock screen button at the bottom of the menu.</p>
+  <p>Om uw scherm te vergrendelen: klik op het <gui>Systeemmenu</gui> rechts in de bovenbalk en klik op de knop <gui style="button">Scherm vergrendelen</gui> aan de onderkant van het menu.</p>
 
-  <p>When your screen is locked, other users can log in to their own accounts
-  by clicking <gui>Log in as another user</gui> on the password screen. You
-  can switch back to your desktop when they are finished.</p>
+  <p>Wanneer uw scherm vergrendeld is, kunnen andere gebruikers zich aanmelden via hun eigen account door te klikken op <gui>Gebruiker wisselen</gui> in het wachtwoordscherm. Wanneer zij klaar zijn kunt u terugkeren naar uw bureaublad.</p>
 
 </section>
 
@@ -90,18 +91,11 @@
     <link type="seealso" xref="power-suspend"/>
   </info>
 
-  <title>Suspend</title>
+  <title>Pauzestand</title>
 
-  <p>To save power, suspend your computer when you are not using it. If you use
-  a laptop, GNOME, by default, suspends your computer automatically when you
-  close the lid.
-  This saves your state to your computer's memory and powers off most of the
-  computer's functions. A very small amount of power is still used during
-  suspend.</p>
+  <p>Zet uw computer in de pauzestand wanneer u deze niet gebruikt, om zo stroom te besparen. Als u een laptop heeft, zal Gnome uw computer automatisch in de pauzestand zetten wanneer u hem dichtdoet . Hiermee wordt alles opgeslagen in het geheugen van de computer en worden de meeste van de functies op uw computer uitgeschakeld. Er wordt nog een heel klein beetje stroom gebruikt tijdens de pauzestand.</p>
 
-  <p>To suspend your computer manually, click the system menu on the right side
-  of the top bar and hold down the <key>Alt</key> key. The power off button
-  will change to suspend. Press the button.</p>
+  <p>Om uw computer handmatig in de pauzestand te zetten: klik op het <gui>Systeemmenu</gui> rechts in de bovenbalk. Van daaruit kunt u de <key>Alt</key>-toets ingedrukt houden terwijl u op de knop <gui style="button">Uitschakelen</gui> drukt, of u drukt gewoon lang op de knop <gui style="button">Uitschakelen</gui>.</p>
 
 </section>
 
@@ -110,22 +104,14 @@
   <link type="seealso" xref="power-off"/>
 </info>-->
 
-  <title>Power off or restart</title>
+  <title>Uitschakelen of opnieuw opstarten</title>
 
-  <p>If you want to power off your computer entirely, or do a full restart,
-  click the system menu on the right side of the top bar and press the power
-  off button at the bottom of the menu. A dialog will open offering you the
-  options to either <gui>Restart</gui> or <gui>Power Off</gui>.</p>
+  <p>Als u de computer uit wilt zetten of opnieuw wilt starten: klik op het <gui>Systeemmenu</gui> rechts in de bovenbalk en druk op de knop <gui style="button">Uitschakelen</gui> aan de onderkant van het menu. Er wordt een dialoogvenster geopend waarin u kunt kiezen tussen <gui>Opnieuw starten</gui> of <gui>Uitschakelen</gui>.</p>
 
-  <p>If there are other users logged in, you may not be allowed to power off or
-  restart the computer because this will end their sessions.  If you are an
-  administrative user, you may be asked for your password to power off.</p>
+  <p>Als er andere gebruikers aangemeld zijn, dan kan het zijn dat u de computer niet mag uitschakelen of herstarten omdat daarmee hun sessies beëindigd zullen worden. Als u beheerder bent, dan kan het zijn dat u uw wachtwoord moet invoeren om uit te schakelen.</p>
 
   <note style="tip">
-    <p>You may want to power off your computer if you wish to move it and do
-    not have a battery, if your battery is low or does not hold charge well. A
-    powered off computer also uses <link xref="power-batterylife">less
-    energy</link> than one which is suspended.</p>
+    <p>Het kan zijn dat u de computer uit wilt schakelen als u deze wilt verplaatsen en u geen accu heeft, als uw accu bijna leeg is of niet goed oplaadt. Een computer die uitgeschakeld is verbruikt ook <link xref="power-batterylife">minder energie</link> dan een computer in pauzestand.</p>
   </note>
 
 </section>

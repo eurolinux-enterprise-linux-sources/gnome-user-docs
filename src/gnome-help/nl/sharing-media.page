@@ -17,71 +17,68 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Share media on your local network using UPnP.</desc>
+    <desc>Media delen op uw lokale netwerk via UPnP.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Justin van Steijn</mal:name>
+      <mal:email>justin50@live.nl</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hannie Dumoleyn</mal:name>
+      <mal:email>hannie@ubuntu-nl.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
   </info>
 
-  <title>Share your music, photos and videos</title>
+  <title>Uw muziek, foto's en video's delen</title>
 
-  <p>You can browse, search and play the media on your computer using a
-  <sys>UPnP</sys> or <sys>DLNA</sys> enabled device such as a phone, TV or game
-  console. Configure <gui>Media Sharing</gui> to allow these devices to access
-  the folders containing your music, photos and videos.</p>
+  <p>U kunt de media op uw computer doorbladeren, doorzoeken en afspelen via een apparaat dat <sys>UPnP</sys> of <sys>DLNA</sys> ondersteunt, zoals een telefoon, TV of spelcomputer. Pas <gui>Mediadelen</gui> aan zodat deze apparaten toegang hebben tot de mappen met daarin uw muziek, foto's en video's.</p>
 
   <note style="info package">
-    <p>You must have the <app>Rygel</app> package installed for <gui>Media
-    Sharing</gui> to be visible.</p>
+    <p>Om <gui>Mediadelen</gui> zichtbaar te krijgen dient het pakket <app>Rygel</app> geïnstalleerd te zijn.</p>
 
     <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
       <if:when test="action:install">
-        <p><link action="install:rygel" style="button">Install Rygel</link></p>
+        <p><link action="install:rygel" style="button">Rygel installeren</link></p>
       </if:when>
     </if:choose>
   </note>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Sharing</gui>.</p>
+      <p>Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht en typ <gui>Delen</gui>.</p>
     </item>
     <item>
-      <p>Click on <gui>Sharing</gui> to open the panel.</p>
+      <p>Klik op <gui>Delen</gui> om het paneel te openen.</p>
     </item>
     <item>
-      <p>If <gui>Sharing</gui> is <gui>OFF</gui>, switch it to
-      <gui>ON</gui>.</p>
+      <p>Als <gui>Delen</gui> <gui>UIT</gui> staat, zet het dan <gui>AAN</gui>.</p>
 
-      <note style="info"><p>If the text below <gui>Computer Name</gui> allows
-      you to edit it, you can <link xref="sharing-displayname">change</link>
-      the name your computer displays on the network.</p></note>
+      <note style="info"><p>Als u de tekst onder <gui>Computernaam</gui>kunt bewerken, dan kunt u de naam van uw computer zoals die getoond wordt in het netwerk <link xref="sharing-displayname">wijzigen</link></p></note>
     </item>
     <item>
-      <p>Select <gui>Media Sharing</gui>.</p>
+      <p>Selecteer <gui>Media delen</gui>.</p>
     </item>
     <item>
-      <p>Switch <gui>Media Sharing</gui> to <gui>ON</gui>.</p>
+      <p>Zet <gui>Media delen</gui> <gui>AAN</gui>.</p>
     </item>
     <item>
-      <p>By default, <file>Music</file>, <file>Pictures</file> and 
-      <file>Videos</file> are shared. To remove one of these, click the
-      <gui>X</gui> next to the folder name.</p>
+      <p>Standaard worden <file>Muziek</file>, <file>Foto's</file> en <file>Video's</file> gedeeld. Als u één hiervan wilt verwijderen klikt u op de <gui>×</gui> naast de mapnaam.</p>
     </item>
     <item>
-      <p>To add another folder, click <gui style="button">+</gui> to open the
-      <gui>Choose a folder</gui> window. Navigate <em>into</em> the desired
-      folder and click <gui style="button">Open</gui>.</p>
+      <p>Om nog een map toe te voegen: klik op <gui style="button">+</gui> om het venster <gui>Een map kiezen</gui> te openen. Ga <em>naar</em> de gewenste map en klik op <gui style="button">Openen</gui>.</p>
     </item>
     <item>
-      <p>Click <gui style="button">X</gui>. You will now be able to browse
-      or play media in the folders you selected using the external device.</p>
+      <p>Klik op <gui style="button">×</gui>. Nu kunt u media doorbladeren of afspelen in de mappen die u gekozen heeft met het externe apparaat.</p>
     </item>
   </steps>
 
   <section id="networks">
-  <title>Networks</title>
+  <title>Netwerken</title>
 
-  <p>The <gui>Networks</gui> section lists the networks to which you are
-  currently connected. Use the <gui>ON | OFF</gui> switch next to each to
-  choose where your media can be shared.</p>
+  <p>De sectie <gui>Netwerken</gui> bevat een lijst met netwerken waarmee u verbonden bent. Gebruik de <gui>AAN | UIT</gui>-schakelaar naast elk ervan om te kiezen waar uw gedeeld gedeeld kunnen worden.</p>
 
   </section>
 

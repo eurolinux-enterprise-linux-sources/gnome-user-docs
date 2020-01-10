@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="wacom-multi-monitor" xml:lang="pl">
+
+  <info>
+    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <link type="guide" xref="wacom"/>
+
+    <credit type="author copyright">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2015</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Mapowanie tabletu firmy Wacom do konkretnego monitora.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Wybieranie monitora</title>
+
+<steps>
+  <item>
+    <p>Otwórz <gui xref="shell-introduction#activities">ekran podglądu</gui> i zacznij pisać <gui>Tablet firmy Wacom</gui>.</p>
+  </item>
+  <item>
+    <p>Kliknij <gui>Tablet firmy Wacom</gui>, aby otworzyć panel.</p>
+    <!-- TODO: document how to connet the tablet using Bluetooth/add link -->
+    <note style="tip"><p>Jeśli nie wykryto żadnego tabletu, to zostanie wyświetlony komunikat <gui>Proszę podłączyć lub włączyć tablet firmy Wacom</gui>. Kliknij odnośnik <gui>Ustawienia Bluetooth</gui>, aby podłączyć tablet bezprzewodowy.</p></note>
+  </item>
+  <item><p>Kliknij przycisk <gui>Mapuj do monitora…</gui>.</p></item>
+  <item><p>Zaznacz opcję <gui>Mapowanie do pojedynczego monitora</gui>.</p></item>
+  <item><p>Obok napisu <gui>Wyjście</gui> wybierz monitor, który ma odbierać wejście z tabletu.</p>
+     <note style="tip"><p>Można wybrać tylko skonfigurowane monitory.</p></note>
+  </item>
+  <item>
+    <p>Przełącz <gui>Zachowanie proporcji (kaszety)</gui> na <gui>|</gui> (włączone), aby dopasować obszar rysowania tabletu do proporcji monitora. To ustawienie, zwane także <em>wymuszonymi proporcjami</em>, dodaje nieaktywne obszary na dole i górze obszaru rysowania tabletu, aby obszar bardziej bezpośrednio pasował do ekranu. Na przykład, tablet o proporcjach 4∶3 będzie mapowany tak, aby obszar rysowania pasował do monitora szerokoekranowego.</p>
+  </item>
+  <item><p>Kliknij przycisk <gui>Zamknij</gui>.</p></item>
+</steps>
+
+</page>

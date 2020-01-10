@@ -24,17 +24,24 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>You need to uncheck the <gui>Available to all users</gui> option in the network connection settings.</desc>
+    <desc>U moet het vinkje bij de optie <gui>Beschikbaar voor alle gebruikers</gui> in de netwerkverbindingsinstellingen weghalen.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Justin van Steijn</mal:name>
+      <mal:email>justin50@live.nl</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hannie Dumoleyn</mal:name>
+      <mal:email>hannie@ubuntu-nl.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
   </info>
 
-  <title>Other users can't edit the network connections</title>
+  <title>Andere gebruikers kunnen de netwerkverbindingen niet bewerken</title>
 
-  <p>If you can edit a network connection but other users on your computer
-  can't, you may have set the connection to be <em>available to all users</em>.
-  This makes it so that everyone on the computer can <em>connect</em> using
-  that connection<!--, but only users
-  <link xref="user-admin-explain">with administrative rights</link> are allowed
-  to change its settings-->.</p>
+  <p>Als u wel een netwerkverbinding kunt bewerken, maar andere gebruikers op uw computer niet, dan heeft u mogelijk de verbinding zo ingesteld dat deze <gui>Beschikbaar voor alle gebruikers</gui> is. Dit betekent dat iedereen op de computer via die verbinding <em>verbinding</em> kan maken.</p>
 
 <!--
   <p>The reason for this is that, since everyone is affected if the settings
@@ -50,30 +57,25 @@
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Network</gui>.</p>
+      <p>Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht en typ <gui>Netwerk</gui>.</p>
     </item>
     <item>
-      <p>Click on <gui>Network</gui> to open the panel.</p>
+      <p>Klik op <gui>Netwerk</gui> om het paneel te openen.</p>
     </item>
     <item>
-      <p>Select <gui>Wi-Fi</gui> from the list on the left.</p>
+      <p>Selecteer <gui>Wifi</gui> in de lijst aan de linkerkant.</p>
     </item>
     <item>
-      <p>Click the 
-      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media> button to open the connection
-      details.</p>
+      <p>Klik op de knop <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">instellingen</span></media> om de verbindingsgegevens te openen.</p>
     </item>
     <item>
-      <p>Select <gui>Identity</gui> from the pane on the left.</p>
+      <p>Selecteer <gui>Identiteit</gui> vanuit het paneel aan de linkerkant.</p>
     </item>
     <item>
-      <p>At the bottom of the <gui>Identity</gui> panel, check the <gui>Make
-      available to other users</gui> option to allow other users to use the
-      network connection.</p>
+      <p>U moet in het paneel <gui>Identiteit</gui> een vinkje plaatsen bij de optie <gui>Beschikbaar voor andere gebruikers</gui> om andere gebruikers gebruik te laten maken van de netwerkverbinding.</p>
     </item>
     <item>
-      <p>Press <gui style="button">Apply</gui> to save the changes.</p>
+      <p>Klik op <gui style="button">Toepassen</gui> om de wijzigingen op te slaan.</p>
     </item>
   </steps>
 

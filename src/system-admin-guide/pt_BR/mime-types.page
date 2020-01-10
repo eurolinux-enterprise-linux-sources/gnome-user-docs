@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="mime-types" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="software#management"/>
+    <link type="seealso" xref="mime-types-application"/>
+    <link type="seealso" xref="mime-types-application-user"/>
+    <link type="seealso" xref="mime-types-custom-user"/>
+    <revision pkgversion="3.12" date="2014-06-17" status="review"/>
+
+    <credit type="author">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Tipos MIME são usados para identificar o formato de um arquivo.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+    <title>O que são tipos MIME?</title>
+    <p>No GNOME, tipos MIME (<em>Multipurpose Internet Mail Extension</em>) são usados para identificar o formato de um arquivo. O ambiente GNOME usa tipos MIME para:</p>
+    <list>
+      <item>
+        <p>Determinar qual aplicativo deve abrir um formato de arquivo específico por padrão.</p>
+      </item>
+      <item>
+        <p>Registrar outros aplicativos que também podem abrir um formato de arquivo específico.</p>
+      </item>
+      <item>
+        <p>Fornecer uma mensagem descrevendo o tipo de um arquivo, por exemplo, em um diálogo de propriedades de arquivo do aplicativo <app>Arquivos</app>.</p>
+      </item>
+      <item>
+        <p>Fornecer um ícone representando um formato de arquivo específico, por exemplo, em um diálogo de propriedades de arquivo do aplicativo <app>Arquivos</app>.</p>
+      </item>
+    </list>
+    <p>Nomes de tipos MIME seguem este formato:</p>
+<screen>
+<var>tipo-de-mídia</var>/<var>identificador-de-subtipo</var>
+</screen>
+<p><sys>image/jpeg</sys> é um exemplo de um tipo MIME no qual <sys>image</sys> é o tipo de mídia e <sys>jpeg</sys> é o identificador de subtipo.</p>
+    <p>GNOME segue a especificação <em>Shared MIME Info do freedesktop.org</em> para determina:</p>
+    <list>
+    <item>
+      <p>A localização do sistema e do usuário para armazenar todos os arquivos de especificação de tipo MIME.</p>
+    </item>
+    <item>
+      <p>Como registrar um tipo MIME de forma que o ambiente saiba quais aplicativos podem ser usados para abrir um formato de arquivo específico.</p>
+    </item>
+    <item>
+      <p>Como o usuário pode alterar quais aplicativos devem abrir que formatos de arquivo.</p>
+    </item>
+    </list>
+    <section id="mime-database">
+      <title>O que é o banco de dados MIME?</title>
+      <p>O banco de dados MIME é uma coleção de todos os arquivos de especificação de tipo MIME que o GNOME usa para armazenar informações sobre tipos MIME conhecidos.</p>
+      <p>A parte mais importante do banco de dados MIME, do ponto de vista do administrador de sistema, é o diretório <file>/usr/share/mime/packages/</file> no qual os arquivos relacionados a tipo MIME especificando informações sobre tipos MIME conhecidos são armazenados. Um exemplo de tal arquivo é <file>/usr/share/mime/packages/freedesktop.org.xml</file>, especificando informações sobre os tipos MIME disponíveis no sistema por padrão. Aquele arquivo é fornecido pelo pacote <sys>shared-mime-info</sys>.</p>
+    </section>
+    <section id="mime-types-more-information">
+    <title>Obtendo mais informações</title>
+    <p>Para informações detalhadas descrevendo o sistema de tipo MIME, veja a <em>especificação Shared MIME Info do freedesktop.org</em> localizada no site do freedesktop.org:</p>
+    <list>
+      <item>
+        <p><link href="http://www.freedesktop.org/wiki/Specifications/shared-mime-info-spec/"> http://www.freedesktop.org/wiki/Specifications/shared-mime-info-spec/</link></p>
+      </item>
+    </list>
+    </section>
+</page>

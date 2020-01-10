@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="login-fingerprint" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="login#management"/>
+    <link type="seealso" xref="dconf"/>
+    <revision pkgversion="3.12" date="2014-06-17" status="candidate"/>
+
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>davidk@gnome.org</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Evite que o usuário seja capaz de se autenticar usando um leitor de impressão digital.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Proibindo autenticação usando uma impressão digital</title>
+
+  <p>Usuários com um leitor de impressão digital podem usar suas impressões digitais em vez de uma senha para iniciar a sessão. Autenticação com impressão digital <link href="help:gnome-help#session-fingerprint">precisa ser configurada pelo usuário</link> antes que ela possa ser usada.</p>
+
+  <p>Leitores de impressão digital nem sempre são confiáveis, então você pode desejar desabilitar autenticação usando leitor por motivos de segurança.</p>
+
+  <steps>
+    <title>Desabilite autenticação usando um leitor de impressão digital:</title>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-user'])"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-user-dir'])"/>
+    <item>
+      <p>Crie o arquivo de chave <file>/etc/dconf/db/local.d/00-login</file> para fornecer informações para o banco de dados de <sys>local</sys>.</p>
+      <listing>
+        <title><file>/etc/dconf/db/local.d/00-login</file></title>
+<code>
+# Especifica o caminho dconf
+[org/gnome/login-screen]
+
+# Desabilita o leitor de impressão digital
+enable-fingerprint-authentication=false
+</code>
+      </listing>
+    </item>
+    <item>
+      <p>Para evitar que o usuário sobrescreva essas configurações, crie o arquivo <file>/etc/dconf/db/local.d/locks/login</file> com o seguinte conteúdo:</p>
+      <listing>
+        <title><file>/etc/dconf/db/local.d/locks/fingerprintreader</file></title>
+<code>
+# Lista as chaves usadas para configurar a autenticação
+/org/gnome/login-screen/enable-fingerprint-authentication
+</code>
+      </listing>
+    </item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-logoutin'])"/>
+  </steps>
+
+</page>

@@ -25,8 +25,7 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Display your appointments in the calendar area at the top of the
-    screen.</desc>
+    <desc>Mostreu les vostres cites a l'àrea del calendari a la part superior de la pantalla.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>David Aguilera</mal:name>
@@ -35,44 +34,38 @@
     </mal:credit>
   </info>
 
- <title>Calendar appointments</title>
+ <title>Cites de calendari</title>
 
   <note>
-    <p>This requires you to use your <app>Evolution</app> calendar or for you
-    to have an online account set up which <gui>Calendar</gui> supports.</p>
-    <p>Most distributions come with <app>Evolution</app> installed by default.
-    If yours does not, you may need to install it using your distribution's
-    package manager.</p>
+    <p>Això requereix que utilitzeu el vostre calendari <app>Evolution</app>  o perquè tingueu configurat un compte en línia que suporti <gui>Calendar</gui>.</p>
+    <p>La major part de distribucions venen amb <app>Evolution</app> instal·lat per defecte. Si a la vostra no ho està, és possible que hagueu d'instal·lar-la utilitzant el gestor de paquets de la vostra distribució.</p>
  </note>
 
-  <p>To view your appointments:</p>
+  <p>Per veure les vostres cites:</p>
   <steps>
     <item>
       <p>Feu clic al rellotge del quadre superior.</p>
     </item>
     <item>
-      <p>Click the date for which you want to see your appointments from the
-      calendar.</p>
+      <p>Feu clic a la data per la qual voleu veure les vostres cites del calendari.</p>
 
     <note>
-       <p>A dot is shown under each date that has an appointment.</p>
+       <p>Es mostra un punt sota cada data que té una cita.</p>
     </note>
 
-      <p>Existing appointments will be displayed to the left of the calendar.
-      As appointments are added to your <app>Evolution</app> calendar, they
-      will appear in the clock's appointment list.</p>
+      <p>Les cites existents es mostraran a l'esquerra del calendari. A mesura que s'afegeixen cites al vostre calendari <app>Evolution</app>, apareixeran a la llista de cites del rellotge.</p>
     </item>
   </steps>
 
  <if:choose>
  <if:when test="!platform:gnome-classic">
  <media type="image" src="figures/shell-appts.png" width="500">
-  <p>Clock, calendar, and appointments</p>
+  <p>Rellotge, calendari i cites</p>
  </media>
  </if:when>
  <if:when test="platform:gnome-classic">
  <media type="image" src="figures/shell-appts-classic.png" width="373" height="250">
-  <p>Clock, calendar, and appointments</p>
+  <p>Rellotge, calendari i cites</p>
  </media>
  </if:when>
  </if:choose>

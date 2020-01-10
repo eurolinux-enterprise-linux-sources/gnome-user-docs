@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" version="1.0 if/1.0" id="bluetooth-turn-on-off" xml:lang="sr">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="bluetooth-turn-on-off" xml:lang="sr">
 
   <info>
     <link type="guide" xref="bluetooth" group="#first"/>
@@ -41,11 +41,6 @@
 
 <title>Укључите или искључите блутут</title>
 
-<if:choose>
-  <if:when test="platform:unity">
-    <p>Можете да укључите блутут да се повежете на друге блутут уређаје, или да га искључите да сачувате енергију. Да укључите блутут, кликните на иконицу блутута на траци изборника и пребаците <gui>Блутут</gui> на <gui>УКЉ.</gui>.</p>
-  </if:when>
-
   <p>Можете да укључите блутут да се повежете на друге блутут уређаје, или да га искључите да сачувате енергију. Да укључите блутут:</p>
 
   <steps>
@@ -59,19 +54,9 @@
       <p>Пребаците прекидач на врху на <gui>УКЉ.</gui>.</p>
     </item>
   </steps>
-</if:choose>
 
-<if:choose>
-  <if:when test="platform:unity">
-    <p>Многи преносни рачунари имају физички прекидач или комбинацију тастера за укључивање и искључивање блутута. Ако је компонента блутута искључена, нећете видети иконицу блутута на траци изборника. Потражите прекидач на вашем рачунару или тастер на тастатури. Тастеру на тастатури се обично приступа уз помоћ <key>Fn</key> тастера.</p>
-  </if:when>
   <p>Многи преносни рачунари имају физички прекидач или комбинацију тастера за укључивање и искључивање блутута. Потражите прекидач на вашем рачунару или тастер на тастатури. Тастеру на тастатури се обично приступа уз помоћ <key>Fn</key> тастера.</p>
-</if:choose>
 
-<if:choose>
-  <if:when test="platform:unity">
-    <p>Да искључите блутут, кликните на иконицу блутута и пребаците <gui>Блутут</gui> на <gui>ИСКЉ.</gui>.</p>
-  </if:when>
   <p>Да искључите блутут:</p>
   <steps>
     <item>
@@ -84,13 +69,7 @@
       <p>Изаберите <gui>Искључи</gui>.</p>
     </item>
   </steps>
-</if:choose>
 
-<if:choose>
-  <if:when test="platform:unity">
-    <note><p>Ваш рачунар је <link xref="bluetooth-visibility">видљив</link> ако је <gui>Видљив</gui> пребачено на <gui>УКЉ.</gui> у изборнику блутута.</p></note>
-  </if:when>
   <note><p>Ваш рачунар је <link xref="bluetooth-visibility">видљив</link> све док је отворен панел <gui>блутута</gui>.</p></note>
-</if:choose>
 
 </page>

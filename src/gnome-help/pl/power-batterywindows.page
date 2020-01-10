@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="power-batterywindows" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="power#faq"/>
+    <link type="seealso" xref="power-batteryestimate"/>
+    <link type="seealso" xref="power-batterylife"/>
+    <link type="seealso" xref="power-batteryslow"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.20" date="2016-06-15" status="final"/>
+
+    <desc>Przyczyną problemu mogą być ulepszenia producenta i inny sposób szacowania czasu pracy na zasilaniu z komputera.</desc>
+    <credit type="author">
+      <name>Projekt dokumentacji GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Dlaczego akumulator wystarcza na krócej niż w systemie Windows/macOS?</title>
+
+<p>Niektóry komputery wydają się mieć krótszy czas pracy na zasilaniu z akumulatora podczas używania systemu Linux w porównaniu do systemu Windows lub macOS. Jedną przyczyną jest fakt, że producenci komputerów instalują specjalne oprogramowanie dla systemu Windows/macOS optymalizujące różne ustawienia sprzętu/oprogramowania dla danego modelu komputera. Te ulepszenia są często szczegółowe i mogą nie być udokumentowane, więc dołączenie ich do systemu Linux jest trudne.</p>
+
+<p>Niestety, nie ma łatwego sposobu zastosowania tych ulepszeń samodzielnie bez wiedzy, czym dokładnie są. Skorzystanie z pewnych <link xref="power-batterylife">metod oszczędzania prądu</link> może jednak pomóc. Jeśli komputer ma <link xref="power-batteryslow">procesor o zmiennej prędkości</link>, to zmiana jego ustawień także jest przydatna.</p>
+
+<p>Inną możliwą przyczyną tej rozbieżności jest fakt, że metoda szacowania czasu pracy na zasilaniu z akumulatora jest inna w systemie Windows/macOS niż w systemie Linux. Rzeczywisty czas pracy na zasilaniu z akumulatora może być dokładnie taki sam, ale różne metody dają różne szacunki.</p>
+	
+</page>

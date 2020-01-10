@@ -8,6 +8,7 @@
     <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
     <revision pkgversion="3.10" date="2013-11-11" status="review"/>
     <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.28" date="2018-03-28" status="review"/>
 
     <credit type="author">
       <name>Fil Bul</name>
@@ -29,21 +30,33 @@
   <steps>
     <title>Da ručno podesite mrežna podešavanja:</title>
     <item>
-      <p>Otvorite pregled <gui xref="shell-introduction#activities">Aktivnosti</gui> i počnite da kucate <gui>Mreža</gui>.</p>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui>
+      overview and start typing <gui>Settings</gui>.</p>
     </item>
     <item>
-      <p>Kliknite na <gui>Mreža</gui> da otvorite panel.</p>
+      <p>Click on <gui>Settings</gui>.</p>
     </item>
     <item>
-      <p>U levom oknu, izaberite mrežnu vezu koju želite ručno da podesite. Ako se kablom priključite na mrežu, kliknite <gui>Žičana</gui>, zatim kliknite na dugme <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">podešavanja</span></media> u donjem desnom uglu panela. Za <gui>Bežičnu</gui> vezu, dugme <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">podešavanja</span></media> će se nalaziti pored radne mreže.</p>
+      <p>In the left pane, select the network connection that you want to set
+      up manually. If you plug in to the network with a cable, click
+      <gui>Network</gui>. Otherwise click <gui>Wi-Fi</gui>.</p>
       <p>Uverite se da je vaša bežična kartica uključena ili da je mrežni kabal priključen.</p>
     </item>
-    <item>
-      <p>Kliknite <gui>IPv4</gui> i izmenite <gui>Adrese</gui> na <gui>Ručno</gui>.</p>
+    <item>      
+      <p>Click the
+      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
+      button.</p>
+      <note>
+        <p>For a <gui>Wi-Fi</gui> connection, the 
+        <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
+        button will be located next to the active network.</p>
+      </note>
     </item>
     <item>
-      <p>Ukucajte <gui>Adresu</gui> i <gui>Mrežni prolaz</gui>, kao i odgovarajuću <gui>Mrežnu masku</gui>.</p>
-      <p>To moraju biti <em>IP adrese</em>; tako je, moraju biti u vidu četiri broja razdvojena tačkama (npr. 123.45.6.78).</p>
+      <p>Kliknite na <gui>IPv4</gui> ili <gui>IPv6</gui> u levom oknu i izmenite <gui>Adrese</gui> na <em>Ručno</em>.</p>
+    </item>
+    <item>
+      <p>Ukucajte <gui xref="net-what-is-ip-address">Adresu</gui> i <gui>Mrežni prolaz</gui>, kao i odgovarajuću <gui>Mrežnu masku</gui>.</p>
     </item>
     <item>
       <p>U odeljku <gui>DNS</gui>, prebacite <gui>Samostalno</gui> na <gui>ISKLJ.</gui>. Unesite IP adresu DNS servera koji želite da koristite. Unesite dodatne adrese DNS servera koristeći dugme <gui>+</gui>.</p>

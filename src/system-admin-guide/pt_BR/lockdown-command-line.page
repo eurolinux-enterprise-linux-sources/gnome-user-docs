@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="lockdown-command-line" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="software#management"/>
+    <revision pkgversion="3.12" date="2014-06-18" status="review"/>
+
+    <credit type="author copyright">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Evite que usuários acessem a linha de comando.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Desabilitando acesso à linha de comando</title>
+
+  <p>Você pode evitar que usuários sejam capazes de acessar a linha de comando por meio de terminais virtuais e aplicativos seguindo os passos descritos abaixo.</p>
+
+  <list>
+    <item>
+      <p>Evite usuários de acessar o prompt de comando <keyseq><key>Alt</key><key>F2</key></keyseq>.</p>
+    </item>
+    <item>
+      <p>Desabilite cair para um terminal virtual (VT).</p>
+    </item>
+    <item>
+      <p>Remova <app>Terminal</app> e todos os outros aplicativos de terminal do panorama de <gui>Atividades</gui> no GNOME Shell. Você também precisará evitar que o usuário instale um novo aplicativo de terminal.</p>
+    </item>
+  </list>
+
+<section id="command-prompt">
+  <title>Desabilitando o prompt de comando</title>
+
+  <steps>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-user'])"/>
+    <item>
+      <p>Crie um banco de dados <sys>local</sys> para configuração de toda máquina em <file>/etc/dconf/db/local.d/00-lockdown</file>:</p>
+      <code># Especifica o caminho dconf
+[org/gnome/desktop/lockdown]
+
+# Desabilita o prompt de comando
+disable-command-line=true</code>
+    </item>
+    <item>
+      <p>Sobrescreva a configuração do usuário e evita que o usuário altere-a em <file>/etc/dconf/db/local.d/locks/lockdown</file>:</p>
+      <code># Lista as chaves usadas para configurar o bloqueio
+/org/gnome/desktop/lockdown/disable-command-line</code>
+    </item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-logoutin'])"/>
+  </steps>
+</section>
+
+<section id="virtual-terminal">
+  <title>Desabilitando cair para um terminal virtual</title>
+
+  <p>Usuários normalmente podem usar os atalhos de <keyseq><key>Ctrl</key><key>Alt</key><key><var>tecla de função</var></key></keyseq> (por exemplo, <keyseq><key>Ctrl</key><key>Alt</key><key>F2</key></keyseq>) para alterar do ambiente GNOME para um terminal virtual.</p>
+
+  <p>Se o computador estiver executando o <em>X Window System</em>, você pode desabilitar o acesso a todos os teclados virtuais adicionando uma opção <code>DontVTSwitch</code> à seção <code>Serverflags</code> no arquivo <file>/etc/X11/xorg.conf.d</file>.</p>
+
+  <steps>
+    <item>
+      <p>Crie ou edite um arquivo de configuração do X em <file>/etc/X11/xorg.conf.d</file>:</p>
+      <code>Section "Serverflags"
+
+Option "DontVTSwitch" "yes"
+
+EndSection</code>
+    </item>
+    <item>
+      <p>Reinicie o GDM para que a alteração tenha efeito.</p>
+    </item>
+  </steps>
+
+</section>
+
+<!-- TODO: add section for removing applications from the Activities overview. -->
+</page>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="desktop-favorite-applications" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="appearance"/>
+    <revision pkgversion="3.8" date="2013-04-28" status="draft"/>
+
+    <credit type="author">
+      <name>Aruna Sankaranarayanan</name>
+      <email>aruna.evam@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Personalize os favoritos padrões no Panorama de atividades.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Aplicativos favoritos padrões</title>
+
+  <p>Aplicativos favoritos são aqueles visíveis no <link href="help:gnome-help/shell-terminology">dash</link>. Você pode usar <sys its:translate="no">dconf</sys> para definir aplicativos favoritos para um usuário ou definir os mesmos aplicativos favoritos para todos usuários. Para ambos casos, você deve primeiro editar o perfil <sys its:translate="no">dconf</sys> encontrado em <file its:translate="no">/etc/dconf/profile</file>.</p>
+
+<section id="per-user">
+  <title>Definindo aplicativos favoritos diferentes para usuários diferentes</title>
+
+  <p>Você pode definir aplicativos favoritos padrões para cada usuário modificando seus arquivos de banco de dados de usuário localizados em <file its:translate="no">~/.config/dconf/user</file>. O trecho de exemplo a seguir usa <sys its:translate="no">dconf</sys> para definir <app>gedit</app>, <app>Terminal</app> e <app>Nautilus</app> como favoritos padrões para um usuário. O código exemplo permite que usuários modifiquem a lista posteriormente, se eles assim desejarem.</p>
+
+  <!--The code itself need not be translated but the comments withing the
+  code have to be translated.-Aruna-->
+
+  <listing>
+    <title>Conteúdo de <file its:translate="no">/etc/dconf/profile</file>:</title>
+      <code>
+      #Essa linha permite que o usuário altere os favoritos padrões posteriormente.
+      user-db:user
+      </code>
+  </listing>
+
+  <listing>
+    <title>Conteúdo de <file its:translate="no">~/.config/dconf/user</file>:</title>
+      <code>
+      #Define gedit, terminal e nautilus como favoritos padrões
+      [org/gnome/shell]
+      favorite-apps = [<input>'gedit.desktop'</input>, <input>'gnome-terminal.desktop'</input>, <input>'nautilus.desktop'</input>]
+      </code>
+  </listing>
+
+  <note style="tip">
+    <p>Você também pode <link xref="dconf-lockdown">bloquear</link> as configurações acima para evitar que usuários as alterem.</p>
+  </note>
+
+</section>
+
+<section id="all-users">
+  <title>Definindo os mesmos aplicativos favoritos para todos os usuários</title>
+
+  <p>Para ter os mesmos favoritos para todos os usuários, você deve modificar os arquivos de banco de dados de sistema usando <link xref="dconf-keyfiles">arquivos de chave dconf</link>. Os trechos de código a seguir editam o perfil <sys its:translate="no">dconf</sys> e, então, criam um arquivo de chave para definir os aplicativos favoritos padrões para todos os empregados no primeiro andar de uma organização.</p>
+
+  <!--The code itself need not be translated but the comments within the
+  code have to be translated.-Aruna-->
+
+  <listing>
+    <title>Conteúdo de <file its:translate="no">/etc/dconf/profile</file>:</title>
+      <code>
+      user-db:user
+
+      #Essa linha define um arquivo de banco de dados de sistema chamado first_floor
+      system-db:first_floor
+      </code>
+  </listing>
+
+  <note style="info">
+    <p>Configurações do arquivo de banco de dados <code>user</code> precederá sobre as configurações no arquivo de banco de dados <code>first_floor</code>, mas <link xref="dconf-lockdown">bloqueios</link> introduzidos no arquivo de banco de dados <code>first_floor</code> terá prioridade sobre aquelas presentes em <code>user</code>.</p>
+  </note>
+
+  <listing>
+    <title>Conteúdo de <file its:translate="no">/etc/dconf/db/first_floor.d/00_floor1_settings</file>:</title>
+      <code>
+      # Trecho definindo gedit, terminal e nautilus como favoritos
+      # padrões para todos os usuários no primeiro andar
+
+      [org/gnome/shell]
+      favorite-apps = [<input>'gedit.desktop'</input>, <input>'gnome-terminal.desktop'</input>, <input>'nautilus.desktop'</input>]
+      </code>
+  </listing>
+
+    <p>Incorpore suas alterações aos bancos de dados de sistema executando <cmd>dconf update</cmd>.</p>
+
+</section>
+
+</page>

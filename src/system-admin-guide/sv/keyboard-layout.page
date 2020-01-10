@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="keyboard-layout" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="login#management"/>
+    <revision pkgversion="3.11" date="2014-01-29" status="draft"/>
+
+    <credit type="author copyright">
+      <name>minnie_eg</name>
+      <email>amany.elguindy@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Fyll upp tangentbordslayoutväljaren på inloggningsskärmen.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Visa flera tangentbordslayouter på inloggningsskärmen</title>
+
+  <p>Du kan ändra systemets inställningar för tangentbordslayout för att lägga till alternativa skrivbordslayouter som användare kan välja från inloggningsskärmen. Detta kan vara hjälpsamt för användare som vanligen använder andra tangentbordslayouter än standardvalet, och som vill att dessa tangentbordslayouter ska finnas tillgängliga på inloggningsskärmen.</p>
+
+  <steps>
+    <title>Ändra systemets inställningar för tangentbordslayout</title>
+    <item>
+      <p>Hitta koderna för de önskade språklayouterna i filen <file>/usr/share/X11/xkb/rules/base.lst</file> under avsnittet med namnet <sys>! layout</sys>.</p>
+    </item>
+    <item>
+      <p>Använd verktyget <cmd>localectl</cmd> för att ändra systemets inställningar för tangentbordslayout enligt följande:</p>
+      <screen><cmd>localectl set-x11-keymap <var>layout</var></cmd></screen>
+      <p>Du kan ange flera layouter som en kommaseparerad lista. For att till exempel ställa in <sys>es</sys> som standardlayout och <sys>us</sys> som sekundär layout, kör följande kommando:</p>
+      <screen><output>$ </output><input>localectl set-x11-keymap es,us</input></screen>
+    </item>
+    <item>
+      <p>Logga ut så ser du att de definierade layouterna finns tillgängliga på inloggningsskärmens systemrad.</p>
+    </item>
+  </steps>
+  <p>Observera att du också kan använda verktyget <cmd>localectl</cmd> för att ange maskinomfattande standardvärden för modell, variant och flaggor för tangentbord. Se manualsidan för <cmd>localectl</cmd>(1) för mer information.</p>
+
+  <section id="keyboard-layout-no-localectl">
+  <title>Visa flera tangentbordslayouter utan att använda localectl</title>
+
+  <p>På system som inte tillhandahåller verktyget <cmd>localectl</cmd> kan du ändra systemets inställningar för tangentbordslayout genom att redigera en konfigurationsfil i <file>/usr/share/X11/xorg.conf.d/</file>.</p>
+
+  <steps>
+    <title>Ändra systemets inställningar för tangentbordslayout</title>
+    <item>
+      <p>Hitta koderna för de önskade språklayouterna i filen <file>/usr/share/X11/xkb/rules/base.lst</file> under avsnittet med namnet <sys>! layout</sys>.</p>
+    </item>
+    <item>
+      <p>Lägg till layoutkoderna till <file>/usr/share/X11/xorg.conf.d/10-evdev.conf</file> på följande sätt:</p>
+      <screen>
+        Section "InputClass"
+          Identifier "evdev keyboard catchall"
+          MatchIsKeyboard "on"
+          MatchDevicePath "/dev/input/event*"
+          Driver "evdev"
+          <input>Option "XkbLayout" "en,fr"</input>
+        EndSection
+      </screen>
+      <p>Flera layouter kan läggas till som en kommaseparerad lista, vilket kan ses i exemplet för engelska (<sys>en</sys>) och franska (<sys>fr</sys>) layouter.</p>
+    </item>
+    <item>
+      <p>Logga ut så ser du att de definierade layouterna finns tillgängliga på inloggningsskärmens systemrad.</p>
+    </item>
+  </steps>
+
+  </section>
+
+</page>

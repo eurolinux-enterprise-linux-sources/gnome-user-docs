@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="mime-types-custom" xml:lang="ko">
+
+  <info>
+    <link type="guide" xref="software#management"/>
+    <link type="seealso" xref="mime-types"/>
+    <link type="seealso" xref="mime-types-custom-user"/>
+    <revision pkgversion="3.12" date="2014-06-17" status="review"/>
+
+    <credit type="author">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+  </info>
+
+    <title>모든 사용자에 대한 사용자 지정 MIME 유형 추가</title>
+    <p>모든 사용자에 대한 사용자 지정 MIME 유형을 추가하고 MIME 유형의 기본 애플리케이션을 등록하려면, <file>/usr/share/mime/packages/</file> 디렉터리에 새로운 MIME 유형 설명 파일과 <file>/usr/share/applications/</file> 디렉터리에 <file>.desktop</file> 파일을 생성해야 합니다.</p>
+    <steps>
+      <title>모든 사용자에 대한 사용자 지정 <sys>application/x-newtype</sys> MIME 유형 추가</title>
+      <item>
+        <p><file>/usr/share/mime/packages/application-x-newtype.xml</file> 파일을 생성합니다:</p>
+        <code mime="application/xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info"&gt;
+  &lt;mime-type type="application/x-newtype"&gt;
+    &lt;comment&gt;new mime type&lt;/comment&gt;
+    &lt;glob pattern="*.xyz"/&gt;
+  &lt;/mime-type&gt;
+&lt;/mime-info&gt;</code>
+      <p>위의 샘플 <file>application-x-newtype.xml</file> 파일은 새로운 MIME 유형 <sys>application/x-newtype</sys>을 정의하고 그러한 MIME 유형의 파일 이름을 <file>.xyz</file> 확장자로 할당합니다.</p>
+      </item>
+      <item>
+        <p>예를 들어, <file>myapplication1.desktop</file>라는 새로운 <file>.desktop</file> 파일을 <file>/usr/share/applications/</file> 디렉터리에 생성합니다:</p>
+        <code>[데스크톱 기재 사항]
+Type=Application
+MimeType=application/x-newtype
+Name=<var>My Application 1</var>
+Exec=<var>myapplication1</var></code>
+      <p>위의 샘플 <file>myapplication1.desktop</file> 파일은 <sys>application/x-newtype</sys> MIME 유형을 <cmd>myapplication1</cmd> 명령으로 실행되는 <app>My Application 1</app>라는 애플리케이션과 결합시킵니다.</p>
+      </item>
+      <item>
+        <p>변경을 적용시키기 위해 MIME 데이터베이스를 루트 권한으로 업데이트 합니다:</p>
+        <screen><output># </output><input>update-mime-database /usr/share/mime</input>
+        </screen>
+      </item>
+      <item>
+        <p>애플리케이션 데이터베이스를 루트 권한으로 업데이트 합니다:</p>
+        <screen><output># </output><input>update-desktop-database /usr/share/applications</input>
+        </screen>
+      </item>
+      <item>
+        <p><file>*.xyz</file> 파일을 <sys>application/x-newtype</sys> MIME 유형과 성공적으로 결합이 되었다면, 먼저, 빈 파일을 생성합니다 (예제: <file>test.xyz</file>):</p>
+        <screen><output>$ </output><input>touch test.xyz</input></screen>
+        <p>그리고 나서 <cmd>gio info</cmd> 명령을 실행합니다:</p>
+        <screen><output>$ </output><input>gio info test.xyz | grep "standard::content-type"</input>
+  standard::content-type: application/x-newtype</screen>
+        </item>
+        <item>
+          <p><file>myapplication1.desktop</file>이 <sys>application/x-newtype</sys> MIME 유형의 기본 등록 애플리케이션으로 성공적으로 설정되었다는 것을 확인하기 위해, <cmd>gio mime</cmd> 명령을 실행합니다:</p>
+        <screen><output>$ </output><input>gio mime application/x-newtype</input>
+Default application for “application/x-newtype”: myapplication1.desktop
+Registered applications:
+	myapplication1.desktop
+Recommended applications:
+	myapplication1.desktop</screen>
+      </item>
+    </steps>
+</page>

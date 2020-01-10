@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:if="http://projectmallard.org/if/1.0/" type="guide" style="task" version="1.0 if/1.0" id="bluetooth-send-file" xml:lang="id">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="bluetooth-send-file" xml:lang="id">
 
   <info>
     <link type="guide" xref="bluetooth"/>
@@ -42,53 +42,43 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Andika Triwidada</mal:name>
       <mal:email>andika@gmail.com</mal:email>
-      <mal:years>2011, 2012, 2013, 2014.</mal:years>
+      <mal:years>2011-2014, 2017.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ahmad Haris</mal:name>
+      <mal:email>ahmadharis1982@gmail.com</mal:email>
+      <mal:years>2017.</mal:years>
     </mal:credit>
   </info>
 
   <title>Kirim berkas ke perangkat Bluetooth</title>
 
-<if:choose>
-  <if:when test="platform:unity">
-    <p>Anda dapat mengirim berkas ke perangkat Bluetooth terhubung, seperti beberapa ponsel atau komputer lainnya. Beberapa jenis perangkat tidak memungkinkan transfer berkas, atau tipe berkas tertentu. Anda dapat mengirim berkas dalam satu dari tiga cara: menggunakan ikon Bluetooth pada bilah menu, dari jendela pengaturan Bluetooth, atau langsung dari manajer berkas.</p>
-  </if:when>
-  <p>You can send files to connected Bluetooth devices, such as some mobile
-  phones or other computers. Some types of devices do not allow the transfer
-  of files, or specific types of files. You can send files using the Bluetooth
-  settings window.</p>
-</if:choose>
+  <p>Anda dapat mengirim berkas ke perangkat Bluetooth terhubung, seperti beberapa ponsel atau komputer lainnya. Beberapa jenis perangkat tidak memungkinkan transfer berkas, atau tipe berkas tertentu. Anda dapat mengirim berkas  menggunakan jendela pengaturan Bluetooth.</p>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Bluetooth</gui>.</p>
+      <p>Buka ringkasan <gui xref="shell-introduction#activities">Aktivitas</gui> dan mulai mengetik <gui>Bluetooth</gui>.</p>
     </item>
     <item>
-      <p>Click on <gui>Bluetooth</gui> to open the panel.</p>
+      <p>Klik pada <gui>Bluetooth</gui> untuk membuka panel.</p>
     </item>
     <item>
-      <p>Make sure Bluetooth is enabled: the switch in the titlebar should be
-      set to <gui>ON</gui>.</p>
+      <p>Pastikan Bluetooth difungsikan: saklar pada bilah judul mesti ditata ke <gui>NYALA</gui>.</p>
     </item>
     <item>
-      <p>In the <gui>Devices</gui> list, select the device to which to send the
-      files. If the desired device is not shown as <gui>Connected</gui> in the
-      list, you need to <link xref="bluetooth-connect-device">connect</link>
-      to it.</p>
+      <p>Dalam daftar <gui>Devices</gui>, pilih perangkat yang akan dikirimi berkas. Bila perangkat yang diinginkan tak ditampilkan sebagai <gui>Tersambung</gui> dalam daftar, Anda perlu <link xref="bluetooth-connect-device">menyambung</link> kesana.</p>
       <p>Suatu panel yang spesifik bagi perangkat eksternal muncul.</p>
     </item>
     <item>
-      <p>Click <gui>Send Files…</gui> and the file chooser will appear.</p>
+      <p>Klik <gui>Kirim Berkas…</gui> dan pemilih berkas akan muncul.</p>
     </item>
     <item>
       <p>Pilih berkas yang ingin Anda kirim dan klik <gui>Pilih</gui>.</p>
       <p>Untuk mengirim lebih dari satu berkas dalam suatu folder, tekan terus <key>Ctrl</key> ketika Anda memilih setiap berkas.</p>
     </item>
     <item>
-      <p>The owner of the receiving device usually has to press a button to
-      accept the file. The <gui>Bluetooth File Transfer</gui> dialog will show
-      the progress bar. Click <gui>Close</gui> when the transfer is
-      complete.</p>
+      <p>Pemilik dari perangkat yang menerima biasanya mesti menekan tombol untuk menerima berkas. Dialog <gui>Transfer Berkas Bluetooth</gui> akan menampilkan bilah kemajuan. Klik <gui>Tutup</gui> ketika transfer selesai.</p>
     </item>
   </steps>
 

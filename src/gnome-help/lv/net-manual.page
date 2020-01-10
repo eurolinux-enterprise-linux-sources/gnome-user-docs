@@ -8,6 +8,7 @@
     <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
     <revision pkgversion="3.10" date="2013-11-11" status="review"/>
     <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.28" date="2018-03-28" status="review"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -29,38 +30,39 @@
   <steps>
     <title>Lai pašrocīgi iestatītu tīkla iestatījumus:</title>
     <item>
-      <p>Atveriet <gui xref="shell-introduction#activities">Aktivitāšu</gui> pārskatu un sāciet rakstīt <gui>Tīkls</gui>.</p>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui>
+      overview and start typing <gui>Settings</gui>.</p>
     </item>
     <item>
-      <p>Spiediet <gui>Tīkls</gui>, lai atvērtu paneli.</p>
+      <p>Click on <gui>Settings</gui>.</p>
     </item>
     <item>
       <p>In the left pane, select the network connection that you want to set
       up manually. If you plug in to the network with a cable, click
-      <gui>Wired</gui>, then click the
-      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media> button in the lower right corner of
-      the panel. For a <gui>Wi-Fi</gui> connection, the 
-      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
-      button will be located next to the active network.</p>
+      <gui>Network</gui>. Otherwise click <gui>Wi-Fi</gui>.</p>
       <p>Pārliecinieties, ka bezvadu tīkla karte ir ieslēgta vai tīkla kabelis ir iesprausts.</p>
     </item>
-    <item>
-      <p>Spiediet uz <gui>IPv4</gui> nomainiet <gui>Adreses</gui> uz <gui>Pašrocīgi</gui>.</p>
+    <item>      
+      <p>Click the
+      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
+      button.</p>
+      <note>
+        <p>For a <gui>Wi-Fi</gui> connection, the 
+        <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
+        button will be located next to the active network.</p>
+      </note>
     </item>
     <item>
-      <p>Ievadiet <gui>Adresi</gui> un <gui>Vārteju</gui>, kā arī atbilstošo <gui>Tīkla masku</gui>.</p>
-      <p>Tām ir jābūt <em>IP adresēm</em>; tas ir, tām ir jābūt ar četriem skaitļiem, kas atdalīti ar punktu (piemēram, 123.45.6.78).</p>
+      <p>Spiediet uz <gui>IPv4</gui> vai <gui>IPv6</gui> kreisajā rūtī un mainiet <gui>Adreses</gui> uz <em>Pašrocīgs</em>.</p>
     </item>
     <item>
-      <p>In the <gui>DNS</gui> section, switch <gui>Automatic</gui> to
-      <gui>OFF</gui>. Enter the IP address of a DNS server you want to use.
-      Enter additional DNS server addresses using the <gui>+</gui> button.</p>
+      <p>Ievadiet <gui xref="net-what-is-ip-address">IP adresi</gui> un <gui>Vārteju</gui>, kā arī atbilstošo <gui>Tīkla masku</gui>.</p>
     </item>
     <item>
-      <p>In the <gui>Routes</gui> section, switch <gui>Automatic</gui> to
-      <gui>OFF</gui>. Enter the <gui>Address</gui>, <gui>Netmask</gui>,
-      <gui>Gateway</gui> and <gui>Metric</gui> for a route you want to use.
-      Enter additional routes using the <gui>+</gui> button.</p>
+      <p><gui>DNS</gui> sadaļā pārslēdziet <gui>Automātiski</gui> uz <gui>|</gui>. Ievadiet vēlamā DNS servera IP adresi. Ievadiet papildu DNS serveru adreses, izmantojot pogu <gui>+</gui>.</p>
+    </item>
+    <item>
+      <p><gui>Maršruti</gui> sadaļā pārslēdziet <gui>Automātiski</gui> uz <gui>|</gui>. Ievadiet <gui>Adresi</gui>, <gui>Tīkla masku</gui>, <gui>Vārteju</gui> un <gui>Metriku</gui> maršrutam, kuru vēlaties izmantot. Ievadiet papildu maršrutus, izmantojot pogu <gui>+</gui>.</p>
     </item>
     <item>
       <p>Spiediet <gui>Pielietot</gui>. Ja neesat savienojies ar tīklu, spiediet uz sistēmas statusa laukuma augšējā joslā un savienojieties. Pārbaudiet tīkla iestatījumus, piemēram, mēģinot apmeklēt kādu vietni vai aplūkojot tīklā koplietotas datnes.</p>

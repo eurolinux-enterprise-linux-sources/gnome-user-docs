@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="lockdown-online-accounts" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="user-settings#lockdown"/>
+    <revision pkgversion="3.14" date="2015-05-04" status="draft"/>
+    <link type="seealso" xref="dconf-lockdown"/>
+    
+    <credit type="author copyright">
+      <name>Jana Svarova</name>
+      <email>jana.svarova@gmail.com</email>
+      <years>2015</years>
+    </credit>
+
+   <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Activar o desactivar algunas o todas las cuentas en línea.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+  <title>Permitir o denegar el uso de cuentas en línea</title>
+
+  <p>The <app>GNOME Online Accounts</app> (GOA) are used for
+  setting personal network accounts which are then automatically integrated with
+  the GNOME Desktop and applications. The user can add their online accounts,
+  such as Google, Facebook, Flickr, ownCloud, etc. via the
+  <app>Online Accounts</app> application.</p>
+
+  <p>Como administrador del sistema, puede:</p>
+  <list>
+    <item><p>activar todas las cuentas en línea;</p></item>
+    <item><p>activar sólo ciertas cuentas en línea;</p></item>
+    <item><p>desactivar todas las cuentas en línea;</p></item>
+  </list>
+
+  <section id="whitelist-goa">
+    <title>Configurar las cuentas en línea</title>
+<steps>
+  <item><p>Make sure that you have the <sys>gnome-online-accounts</sys> package
+  installed on your system.</p>
+  </item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-user'])"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-user-dir'])"/>
+  <item>
+  <p>Cree el archivo <file>/etc/dconf/db/local.d/00-goa</file> para proporcionar información a la base de datos <sys>local</sys> con la siguiente configuración.</p>
+   <list>
+   <item><p>Para activar selectivamente unos pocos proveedores:</p>
+  <screen>[org/gnome/online-accounts]
+whitelisted-providers= ['google', 'facebook']</screen>
+  </item>
+   <item><p>Para desactivar todos los proveedores:</p>
+   <screen>[org/gnome/online-accounts]
+whitelisted-providers= []</screen></item>
+  <item><p>Para permitir todos los proveedores disponibles:</p>
+  <screen>[org/gnome/online-accounts]
+whitelisted-providers= ['all']</screen></item>
+  </list>
+      </item>
+      <item>
+      <p>To prevent the user from overriding these settings, create the file
+      <file>/etc/dconf/db/local.d/locks/goa</file> with the following
+      content:</p>
+      <listing>
+        <title><file>/etc/dconf/db/local.db/locks/goa</file></title>
+<code>
+# Lock the list of providers that are allowed to be loaded
+/org/gnome/online-accounts/whitelisted-providers
+</code>
+      </listing>
+    </item>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-logoutin'])"/>
+</steps>
+</section>
+</page>

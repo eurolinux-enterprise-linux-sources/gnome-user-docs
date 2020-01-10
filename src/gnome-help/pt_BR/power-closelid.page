@@ -9,6 +9,7 @@
     <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
     <revision pkgversion="3.10" date="2013-11-08" status="review"/>
     <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.26" date="2017-09-30" status="candidate"/>
 
     <credit type="author">
       <name>Projeto de documentação do GNOME</name>
@@ -48,13 +49,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Rafael Fontenelle</mal:name>
       <mal:email>rafaelff@gnome.org</mal:email>
-      <mal:years>2012-2016.</mal:years>
+      <mal:years>2012-2018.</mal:years>
     </mal:credit>
   </info>
 
   <title>Por que meu computador desliga quando fecho a tampa?</title>
 
-  <p>Quando você fecha a tampa de seu notebook, seu computador será <link xref="power-suspend"><em>suspenso</em></link> de forma a economizar energia. Isso significa que o computador não está exatamente desligado - ele está apenas dormindo. Você pode resumi-lo ("acordá-lo") abrindo a tampa. Se ele não resumir, tente clicar com o mouse ou pressionar uma tecla. Se isso ainda não funcionar, pressione o botão de liga/desliga.</p>
+  <p>Quando você fecha a tampa de seu notebook, seu computador será <link xref="power-suspend"><em>suspenso</em></link> de forma a economizar energia. Isso significa que o computador não está exatamente desligado — ele está apenas dormindo. Você pode resumi-lo (“acordá-lo”) abrindo a tampa. Se ele não resumir, tente clicar com o mouse ou pressionar uma tecla. Se isso ainda não funcionar, pressione o botão de liga/desliga.</p>
 
   <p>Alguns computadores não conseguem serem suspensos adequadamente, normalmente porque seu hardware não haver suporte completo no sistema operacional (por exemplo, os drivers do Linux estão incompletos). Neste caso, você pode descobrir que você não consegue resumir seu computador após ter fechado a tampa. Você pode tentar <link xref="power-suspendfail">corrigir o problema da suspensão</link> ou você pode fazer com que o computador não tente suspender quando você fecha a tampa.</p>
 
@@ -66,9 +67,9 @@
   </note>
 
   <note style="important">
-    <p>Você precisa ter a <app>Ferramenta de ajustes</app> instalada em seu computador para alterar essa configuração.</p>
+    <p>Você precisa ter <app>Ajustes</app> instalado em seu computador para alterar essa configuração.</p>
     <if:if xmlns:if="http://projectmallard.org/if/1.0/" test="action:install">
-      <p><link style="button" action="install:gnome-tweak-tool">Instalar <app>Ferramenta de ajustes</app></link></p>
+      <p><link style="button" action="install:gnome-tweaks">Instalar <app>Ajustes</app></link></p>
     </if:if>
   </note>
 
@@ -80,19 +81,19 @@
 
   <steps>
     <item>
-      <p>Abra o panorama de <gui xref="shell-introduction#activities">Atividades</gui> e comece a digitar <gui>Ferramentas de ajustes</gui>.</p>
+      <p>Abra o panorama de <gui xref="shell-introduction#activities">Atividades</gui> e comece a digitar <gui>Ajustes</gui>.</p>
     </item>
     <item>
-      <p>Clique em <gui>Ferramentas de ajustes</gui> para abrir o aplicativo.</p>
+      <p>Clique em <gui>Ajustes</gui> para abrir o aplicativo.</p>
     </item>
     <item>
       <p>Clique na aba <gui>Energia</gui>.</p>
     </item>
     <item>
-      <p>Alterne <gui>Não suspender ao fechar o notebook</gui> para <gui>ON</gui>.</p>
+      <p>Alterne <gui>Suspender quando a tampa do notebook é fechada</gui> para <key>○</key>.</p>
     </item>
     <item>
-      <p>Feche a janela do <gui>Ferramentas de ajustes</gui>.</p>
+      <p>Feche a janela do <gui>Ajustes</gui>.</p>
     </item>
   </steps>
 

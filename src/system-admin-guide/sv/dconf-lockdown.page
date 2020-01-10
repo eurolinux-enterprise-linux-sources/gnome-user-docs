@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="dconf-lockdown" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="user-settings#lockdown"/>
+    <link type="guide" xref="setup"/>
+<!--    <link type="seealso" xref="dconf-profiles" />-->
+    <revision version="0.1" date="2012-05-21" status="review"/>
+    <revision pkgversion="3.8" date="2013-04-26" status="review"/>
+    <revision pkgversion="3.15" date="2015-02-13" status="review"/>
+
+    <credit type="author copyright">
+      <name>Ryan Lortie</name>
+      <email>desrt@desrt.ca</email>
+      <years>2012</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013, 2015</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Använd <em>låsnings</em>läget i <sys its:translate="no">dconf</sys> för att förhindra användare från att ändra specifika inställningar.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Låsa specifika inställningar</title>
+
+  <!-- TODO: reveiw against dconf-custom-defaults.page -->
+
+  <p>För att <em>låsa</em> en <sys its:translate="no">dconf</sys>-nyckel behöver du skapa en underkatalog <file its:translate="no">locks</file> i nyckelfilskatalogen. Filerna inuti denna katalog innehåller en lista över nycklar att låsa. Precis som med nyckelfilerna kan du lägga till valfritt antal filer till denna katalog. Här är ett exempel på hur en kan se ut:</p>
+
+  <steps>
+    <title>Lås en inställning</title>
+    <item>
+      <p>Innan du kan låsa en nyckel behöver du ställa in den. Detta exempel visar hur du låser <link xref="desktop-background">en bakgrundsinställning</link> då den har ställts in. Du bör i detta läge ha <link xref="dconf-profiles">en profil <sys>user</sys></link> och <link xref="dconf-keyfiles">en nyckelfil</link> med inställningarna som du vill låsa.</p>
+    </item>
+    <item>
+      <p>Skapa en katalog med namnet <file its:translate="no">/etc/dconf/db/local.d/locks</file>.</p>
+    </item>
+    <item>
+      <p>Skapa en fil i katalogen <file its:translate="no">/etc/dconf/db/local.d/locks/</file> och lista en nyckel per rad. Till exempel, skapa <file its:translate="no">/etc/dconf/db/local.d/locks/00_default-wallpaper</file>:</p>
+<code its:translate="no">
+# <span its:translate="yes">förhindra ändringar till bakgrunden</span>
+/org/gnome/desktop/background/picture-uri
+/org/gnome/desktop/background/picture-options
+/org/gnome/desktop/background/primary-color
+/org/gnome/desktop/background/secondary-color
+</code>
+    </item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+  </steps>
+
+  <note>
+    <p>Vad gäller <app its:translate="no">dconf</app> 0.7.4 så stöds låsning bara för enskilda nycklar av prestandaskäl - du kan inte ännu låsa hela sökvägar. Det finns planer på att åtgärda detta i framtida utgåvor.</p>
+  </note>
+
+</page>

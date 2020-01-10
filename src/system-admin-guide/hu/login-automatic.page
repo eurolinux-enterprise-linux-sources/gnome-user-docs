@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="login-automatic" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="login#management"/>
+    <revision pkgversion="3.4.2" date="2012-12-01" status="review"/>
+    <revision pkgversion="3.8" date="2013-04-04" status="review"/>
+    <revision pkgversion="3.12" date="2014-06-18" status="review"/>
+    
+    <credit type="author copyright">
+      <name>minnie_eg</name>
+      <email>amany.elguindy@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2012, 2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Automatikus bejelentkezés egy felhasználói fiókba a rendszer indításakor.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>ur.balazs@fsf.hu</mal:email>
+      <mal:years>2018.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Automatikus bejelentkezés beállítása</title>
+
+  <p its:locNote="TRANSLATORS: 'Administrator' and 'Automatic Login' are   strings from the Users dialog in the Settings panel user interface.">Egy <em>adminisztrátor</em> típusú fiókkal rendelkező felhasználó <link href="help:gnome-help/user-autologin">engedélyezheti az <em>automatikus bejelentkezést</em> a <app>Beállítások</app></link> panelről. Beállíthatja az automatikus bejelentkezést kézzel is a <sys its:translate="no">GDM</sys> egyéni beállítófájljában az alább leírtak szerint.</p>
+
+  <p>Szerkessze az <file its:translate="no">/etc/gdm/custom.conf</file> fájlt, és győződjön meg arról, hogy a fájlban lévő <code>[daemon]</code> szakasz meghatározza-e az alábbiakat:</p>
+
+  <listing its:translate="no">
+    <title><file>custom.conf</file></title>
+<code>
+[daemon]
+AutomaticLoginEnable=<input>True</input>
+AutomaticLogin=<input>username</input>
+</code>
+  </listing>
+
+  <p>Cserélje ki a <input its:translate="no">username</input> értékét azzal a felhasználóval, akit automatikusan be szeretne léptetni.</p>
+
+  <note>
+    <p>A <file its:translate="no">custom.conf</file> fájl általában az <file its:translate="no">/etc/gdm/</file> mappában található, de a hely eltérhet a disztribúciótól függően.</p>
+  </note>
+
+</page>

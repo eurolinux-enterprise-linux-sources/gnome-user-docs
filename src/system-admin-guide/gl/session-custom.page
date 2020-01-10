@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="session-custom" xml:lang="gl">
+
+  <info>
+    <link type="guide" xref="sundry#session"/>
+    <link type="guide" xref="login#management"/>
+    <revision pkgversion="3.12" date="2014-06-17" status="review"/>
+
+    <credit type="author copyright">
+      <name>minnie_eg</name>
+      <email>amany.elguindy@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Jana Svarova</name>
+      <email>jana.svarova@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Create a custom session by installing a desktop session file.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Diéguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2010-2018</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Crear unha sesión personalizada</title>
+
+ <p>To create your own session with customized configuration, follow these
+  steps:</p>
+
+<steps>
+  <item><p>Create a <file>.desktop</file> file in
+  <file>/etc/X11/sessions/<var>new-session</var>.desktop</file>. Make sure that
+  the file specifies the following entries:</p>
+  <code>[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=<input>Sesión personalizada</input>
+Comment=<input>Esta é a súa sesión personalizada</input>
+Exec=<input>gnome-session --session=new-session</input></code>
+   <p>The <code>Exec</code> entry specifies the command, possibly
+   with arguments, to execute. You can run the custom session with the
+   <cmd>gnome-session --session=<var>new-session</var></cmd>
+   command.</p>
+   <p>For more information on the parameters that you can use with
+   <cmd>gnome-session</cmd>, see the <link href="man:gnome-session">gnome-session</link>
+   man page.</p>
+  </item>
+  <item><p>Create a custom session file in
+   <file>/usr/share/gnome-session/sessions/<var>new-session</var>.session</file>
+   where you can specify the name and required components for the session:</p>
+   <code>[GNOME Session]
+Name=<input>Sesión personalizada</input>
+RequiredComponents=<input>gnome-shell-classic;gnome-settings-daemon;</input></code>
+  <p>Note that any item that you specify in <code>RequiredComponents</code>
+  needs to have its corresponding <file>.desktop</file> file in
+  <file>/usr/share/applications/</file>.</p>
+  </item>
+</steps>
+
+  <p>After configuring the custom session files, the new session will be
+  available in the session list on the GDM login
+  screen.</p>
+
+  <section id="custom-session-issues">
+  <title>Fallos coñecidos</title>
+    <p>En sistemas Debian ou baseados en Debian, pode producirse o seguinte erro:</p>
+
+    <screen>Xsession: non é posíbel iniciar ""
+    Xsession --- "" non atopado; usando a sesión
+    predeterminada.</screen>
+
+    <p>Should this happen to you, follow these steps to change the  
+    <file>/etc/X11/Xsession.d/20x11-common_process-args</file> file:</p>
+    <steps>
+    <item><p>Cambie <code>STARTUP_FULL_PATH=$(/usr/bin/which <input>"$1"</input>|| true)</code> a <code>STARTUP_FULL_PATH=$(/usr/bin/which <input>$1</input> || true)</code></p></item>
+    <item><p>Cambie <code>STARTUP=<input>"$1"</input></code> a <code>STARTUP=<input>$1</input></code></p></item>
+    </steps>
+  </section>
+
+</page>

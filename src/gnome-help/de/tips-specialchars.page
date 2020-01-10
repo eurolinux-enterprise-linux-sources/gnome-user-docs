@@ -7,6 +7,7 @@
 
     <revision pkgversion="3.8.2" version="0.3" date="2013-05-18" status="review"/>
     <revision pkgversion="3.10" date="2013-11-01" status="review"/>
+    <revision pkgversion="3.26" date="2017-11-27" status="review"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -19,6 +20,10 @@
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
       <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Andre Klapper</name>
+      <email>ak-47@gmx.net</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -40,13 +45,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Christian Kirbach</mal:name>
       <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2016.</mal:years>
+      <mal:years>2011-2017.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Mario Blättermann</mal:name>
       <mal:email>mario.blaettermann@gmail.com</mal:email>
-      <mal:years>2011-2013.</mal:years>
+      <mal:years>2011-2013, 2017.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -64,19 +69,11 @@
     <title>Methoden zum Eingeben von Zeichen</title>
   </links>
 
-  <section id="charmap">
-    <title>Zeichentabelle</title>
-    <p>GNOME liefert eine Zeichentabelle, die Ihnen das Durchsuchen aller Unicode-Zeichen ermöglicht. Verwenden Sie diese Zeichentabelle, um die gewünschten Zeichen zu finden, und fügen Sie sie anschließend ein, wo immer Sie wollen.</p>
-
-    <p>Sie finden die <app>Zeichentabelle</app> in der <gui>Aktivitäten</gui>-Übersicht. Weitere Informationen zur Zeichentabelle finden Sie im <link href="help:gucharmap">Zeichentabelle-Handbuch</link>.</p>
-
-  </section>
-
   <section id="characters">
     <title>Zeichen</title>
-    <p>Eine weitere mit GNOME gelieferte nützliche Anwendung ist <app>Zeichen</app>. Damit können Sie mittels Kategorien oder Schlüsselwörtern nach unüblichen Zeichen suchen und diese einfügen.</p>
+    <p>GNOME liefert die Anwendung <app>Zeichen</app> mit. Mit ihr können Sie mittels Kategorien oder Schlüsselwörtern nach unüblichen Zeichen wie beispielsweise Emoticons suchen und diese einfügen, indem Sie Kategorien durchsuchen oder nach Schlüsselwörtern suchen.</p>
 
-    <p>Sie finden die Anwendung <app>Zeichen</app> in der <gui>Aktivitäten</gui>-Übersicht. Weitere Informationen zu dieser Anwendung finden Sie im <link href="help:gnome-characters">Zeichen-Handbuch</link>.</p>
+    <p>Öffnen Sie <app>Zeichen</app> in der Aktivitäten-Übersicht.</p>
 
   </section>
 
@@ -85,19 +82,43 @@
     <p>Eine Compose-Taste ist eine spezielle Taste, die Ihnen das Drücken mehrerer Tasten auf einmal ermöglicht, um ein spezielles Zeichen zu erzeugen. Um beispielsweise den akzentuierten Buchstaben <em>é</em> einzugeben, drücken Sie die <key>Compose-Taste</key>, dann <key>'</key> und dann <key>e</key>.</p>
     <p>Tastaturen haben keine festen Compose-Tasten. Stattdessen können Sie eine der vorhandenen Tasten Ihrer Tastatur als Compose-Taste festlegen.</p>
 
+    <note style="important">
+      <p>Das <app>Optimierungswerkzeug</app> muss auf Ihrem Rechner installiert sein, um diese Einstellung ändern zu können.</p>
+      <if:if xmlns:if="http://projectmallard.org/if/1.0/" test="action:install">
+        <p><link style="button" action="install:gnome-tweaks">Installieren Sie das <app>Optimierungswerkzeug</app></link></p>
+      </if:if>
+    </note>
+
     <steps>
       <title>Eine Compose-Taste festlegen</title>
       <item>
-        <p>Öffnen Sie die <gui xref="shell-introduction#activities">Aktivitäten</gui>-Übersicht und tippen Sie <gui>Tastatur</gui> ein.</p>
+        <p>Öffnen Sie die <gui xref="shell-introduction#activities">Aktivitäten</gui>-Übersicht und tippen Sie <gui>Optimierungswerkzeug</gui> ein.</p>
       </item>
       <item>
-        <p>Klicken Sie auf <gui>Tastatur</gui>, um das Panel zu öffnen.</p>
+        <p>Klicken Sie auf <gui>Optimierungswerkzeug</gui>, um die Anwendung zu öffnen.</p>
       </item>
-      <item><p>Wählen Sie <gui>Tastaturkürzel</gui> und klicken Sie auf <gui>Texteingabe</gui>.</p></item>
-      <item><p>Klicken Sie auf <gui>Compose-Taste</gui> im rechten Teilfenster.</p></item>
-      <item><p>Klicken Sie auf <gui>Deaktiviert</gui> und wählen Sie die Taste oder die Tasten aus, die Sie als Compose-Taste verwenden wollen. Sie können Tasten wie eine der <key>Strg</key>-Tasten, die rechte <key>Alt</key>-Taste, die rechte <key>Windows</key>- oder <key><link xref="keyboard-key-super">Super</link></key>-Taste verwenden, falls vorhanden, die <key><link xref="keyboard-key-menu">Menü</link></key>-Taste, oder die <key>Feststelltaste</key>. Allerdings werden dann alle von Ihnen ausgewählten Tasten nur noch als Compose-Tasten verwendbar sein und nicht mehr für ihren eigentlichen Zweck.</p></item>
+      <item>
+        <p>Klicken Sie auf den Reiter <gui>Tastatur und Maus</gui>.</p>
+      </item>
+      <item>
+        <p>Klicken Sie auf <gui>Deaktiviert</gui> im Abschnitt <gui>Compose-Taste</gui>.</p>
+      </item>
+      <item>
+        <p>Aktivieren Sie den Schalter im Dialog und suchen Sie die gewünschte Tastenkombination, die Sie verwenden wollen.</p>
+      </item>
+      <item>
+        <p>Aktivieren Sie das Ankreuzfeld an der Taste, die Sie als Compose-Taste verwenden wollen.</p>
+      </item>
+      <item>
+        <p>Schließen Sie den Dialog.</p>
+      </item>
+      <item>
+        <p>Schließen Sie das Fenster <gui>Optimierungswerkzeug</gui>.</p>
+      </item>
     </steps>
+
     <p>Sie können viele häufig vorkommende Zeichen mit der Compose-Taste eingeben, zum Beispiel:</p>
+
     <list>
       <item><p>Drücken Sie die <key>Compose-Taste</key>, dann <key>'</key> und dann den Buchstaben, über den Sie ein Acute-Akzentzeichen setzen wollen, zum Beispiel <em>é</em>.</p></item>
       <item><p>Drücken Sie die <key>Compose-Taste</key>, dann <key>`</key> und dann den Buchstaben, über den Sie ein Grave-Akzentzeichen setzen wollen, zum Beispiel <em>è</em>.</p></item>
@@ -110,9 +131,9 @@
 <section id="ctrlshiftu">
   <title>Ersetzungscodes</title>
 
-  <p>Sie können jedes Unicode-Zeichen ausschließlich über die Tastatur mit dem numerischen Ersetzungscode des Zeichens eingegeben werden. Jedes Zeichen wird über einen vierstelligen Code definiert. Um den Code für Ihr gewünschtes Zeichen zu suchen, suchen Sie nach dem Zeichen in der Zeichentabelle und schauen Sie in der Statuszeile nach den <gui>Zeichendetails</gui>. Der Code besteht aus vier Zeichen nach <gui>U+</gui>.</p>
+  <p>Sie können jedes Unicode-Zeichen ausschließlich über die Tastatur mit dem numerischen Ersetzungscode des Zeichens eingeben. Jedes Zeichen ist über einen vierstelligen Code definiert. Suchen Sie nach dem Zeichen in der Anwendung <app>Zeichen</app>, um den Code für Ihr gewünschtes Zeichen zu erhalten. Der Code besteht aus vier Zeichen nach <gui>U+</gui>.</p>
 
-  <p>Um ein Zeichen über dessen Ersetzungscode einzugeben, halten Sie die <key>Strg</key>- und <key>Umschalttaste</key> gedrückt, geben Sie <key>u</key> gefolgt von dem vierstelligen Ersetzungscode ein und lassen Sie dann die <key>Strg</key>- und <key>Umschalttaste</key> los. Falls Sie oft Zeichen verwenden, die Sie nicht leichter über andere Wege erreichen können, dann sollten Sie sich den entsprechenden Ersetzungscode merken, so dass Sie ihn schneller eingeben können.</p>
+  <p>Um ein Zeichen über dessen Ersetzungscode einzugeben, drücken Sie <keyseq><key>Strg</key><key>Umschalttaste</key><key>U</key></keyseq>, geben Sie dann den vierstelligen Ersetzungscode ein und drücken Sie dann die <key>Leertaste</key> oder die <key>Eingabetaste</key>. Falls Sie oft Zeichen verwenden, die Sie nicht leichter über andere Wege erreichen können, dann sollten Sie sich den entsprechenden Ersetzungscode einprägen, so dass Sie ihn schneller eingeben können.</p>
 
 </section>
 

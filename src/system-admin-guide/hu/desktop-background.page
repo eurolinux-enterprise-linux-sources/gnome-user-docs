@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="desktop-background" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="appearance"/>
+    <revision pkgversion="3.11" date="2014-01-29" status="draft"/>
+    <revision pkgversion="3.14" date="2014-06-17" status="incomplete">
+      <desc>Az összes leírás és utasítás naprakész. További információkat kell megadni a fénykép beállításaihoz az alábbi megjegyzés szerint. --shaunm</desc>
+    </revision>
+
+    <credit type="author copyright">
+      <name>Matthias Clasen</name>
+      <email>matthias.clasen@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <credit type="editor">
+      <name>Jana Svarova</name>
+      <email>jana.svarova@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>davidk@gnome.org</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+
+    <desc>Az asztal alapértelmezett hátterének megváltoztatása az összes felhasználónál.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>ur.balazs@fsf.hu</mal:email>
+      <mal:years>2018.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Egyéni háttér beállítása</title>
+
+  <p>Megváltoztathatja az asztal alapértelmezett hátterét arra, amit használni szeretne. Például ha a vállalatának vagy egyetemének logóját szeretné használni háttérként az alapértelmezett GNOME háttér helyett.</p>
+
+  <steps>
+    <title>Az alapértelmezett háttér beállítása</title>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-user'])"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-profile-user-dir'])"/>
+    <item>
+      <p>Hozza létre az <file>/etc/dconf/db/local.d/00-background</file> kulcsfájlt, hogy információkat biztosítson a <sys>helyi</sys> adatbázisnak.</p>
+      <listing>
+        <title><file>/etc/dconf/db/local.d/00-background</file></title>
+<code>
+# A dconf útvonal megadása
+[org/gnome/desktop/background]
+
+# Az útvonal megadása az asztal háttérképének fájljához
+picture-uri='file:///usr/local/share/backgrounds/wallpaper.jpg'
+
+# A megjelenítő lehetőségek egyikének magadása a háttérképnél:
+picture-options='scaled'
+
+# A bal vagy a felső szín megadása színátmenet rajzolásakor, vagy a konkrét szín
+primary-color='000000'
+
+# A jobb vagy az alsó szín megadása színátmenet rajzolásakor
+secondary-color='FFFFFF'
+</code>
+      </listing>
+    </item>
+    <item>
+      <p>Azért, hogy megakadályozza a felhasználót a beállítások felülbírálásában, hozza létre az <file>/etc/dconf/db/local.d/locks/background</file> fájlt a következő tartalommal:</p>
+      <listing>
+        <title><file>/etc/dconf/db/local.d/locks/background</file></title>
+<code>
+# Asztalháttér beállításainak zárolása
+/org/gnome/desktop/background/picture-uri
+/org/gnome/desktop/background/picture-options
+/org/gnome/desktop/background/primary-color
+/org/gnome/desktop/background/secondary-color
+</code>
+      </listing>
+    </item>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-update'])"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="dconf-snippets.xml" xpointer="xpointer(/*/*[@xml:id='dconf-logoutin'])"/>
+  </steps>
+
+</page>

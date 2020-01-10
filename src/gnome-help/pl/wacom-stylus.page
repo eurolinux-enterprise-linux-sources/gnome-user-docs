@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="wacom-stylus" xml:lang="pl">
+
+  <info>
+    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <link type="guide" xref="wacom"/>
+
+    <credit type="author copyright">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2012</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Określanie funkcji przycisków i siły nacisku rysika firmy Wacom.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Konfiguracja rysika</title>
+
+<steps>
+  <item>
+    <p>Otwórz <gui xref="shell-introduction#activities">ekran podglądu</gui> i zacznij pisać <gui>Tablet firmy Wacom</gui>.</p>
+  </item>
+  <item>
+    <p>Kliknij <gui>Tablet firmy Wacom</gui>, aby otworzyć panel.</p>
+    <!-- TODO: document how to connet the tablet using Bluetooth/add link -->
+    <note style="tip"><p>Jeśli nie wykryto żadnego tabletu, to zostanie wyświetlony komunikat <gui>Proszę podłączyć lub włączyć tablet firmy Wacom</gui>. Kliknij odnośnik <gui>Ustawienia Bluetooth</gui>, aby podłączyć tablet bezprzewodowy.</p></note>
+  </item>
+  <item><p>Dolna część panelu zawiera informacje i ustawienia rysika, w tym nazwę urządzenia (klasę rysika) i diagram po lewej. Ustawienia można dostosować:</p>
+    <list>
+      <item><p><gui>Siła nacisku gumki:</gui> użyj suwaka, aby dostosować siłę nacisku (jak fizyczny nacisk jest tłumaczony na wartości cyfrowe) między <gui>Lekka</gui> a <gui>Mocna</gui>.</p></item>
+      <item><p>Konfiguracja <gui>przycisku/kółka przewijania</gui> (zmieniają się, aby odzwierciedlać rysik). Kliknij menu obok każdej etykiety, aby wybrać jedną z tych funkcji: brak działania, kliknięcie lewym przyciskiem myszy, kliknięcie środkowym przyciskiem myszy, kliknięcie prawym przyciskiem myszy, przewinięcie do góry, przewinięcie w dół, przewinięcie w lewo, przewinięcie w prawo, wstecz lub dalej.</p></item>
+      <item><p><gui>Siła nacisku czubka:</gui> użyj suwaka, aby dostosować siłę nacisku między <gui>Lekka</gui> a <gui>Mocna</gui>.</p></item>
+    </list>
+  </item>
+</steps>
+
+<note style="info"><p>Jeśli używany jest więcej niż jeden rysik, to kiedy dodatkowy zbliży się do tabletu, zostanie wyświetlony przełącznik obok nazwy urządzenia rysika. Użyj go, aby wybrać rysik do konfiguracji.</p>
+</note>
+
+</page>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="lockdown-repartitioning" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="user-settings#lockdown"/>
+    <link type="seealso" xref="dconf-lockdown"/>
+    <revision pkgversion="3.14" date="2014-12-10" status="review"/>
+
+    <credit type="author copyright">
+      <name>Jana Svarova</name>
+      <email>jana.svarova@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Evite que o usuário altere partições do disco.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Desabilitando reparticionamento</title>
+
+  <p><sys>polkit</sys> permite que você defina permissões para operações individuais. Para <sys>udisks2</sys>, o utilitário para serviços de gerenciamento de disco, a configuração está localizada em <file>/usr/share/polkit-1/actions/org.freedesktop.udisks2.policy</file>. Esse arquivo contém um conjunto de ações e valores padrões, os quais podem ser sobrescritos pelo administrador de sistema.</p>
+
+  <note style="tip">
+    <p>A configuração <sys>polkit</sys> no <file>/etc</file> sobrescreve o que é fornecido por pacotes no <file>/usr/share</file>.</p>
+  </note>
+
+  <steps>
+    <title>Desabilitando reparticionamento</title>
+    <item>
+      <p>Crie um arquivo com o mesmo conteúdo que em <file>/usr/share/polkit-1/actions/org.freedesktop.udisks2.policy</file>: <cmd>cp /usr/share/polkit-1/actions/org.freedesktop.udisks2.policy /etc/share/polkit-1/actions/org.freedesktop.udisks2.policy</cmd></p>
+      <note style="important">
+        <p>Não altere o arquivo <file>/usr/share/polkit-1/actions/org.freedesktop.udisks2.policy</file>, suas alterações serão sobrescritos pela próxima atualização.</p>
+      </note>
+    </item>
+    <item>
+      <p>Exclua quaisquer ações que você não precise de dentro do elemento <code>policyconfig</code> e adicione as seguintes linhas ao arquivo <file>/etc/polkit-1/actions/org.freedesktop.udisks2.policy</file>:</p>
+      <listing>
+<code>
+  &lt;action id="org.freedesktop.udisks2.modify-device"&gt;
+     &lt;description&gt;Modifica as configurações de unidades&lt;/description&gt;
+     &lt;message&gt;Autenticação é necessária para modificar as configurações de unidades&lt;/message&gt;
+    &lt;defaults&gt;
+      &lt;allow_any&gt;no&lt;/allow_any&gt;
+      &lt;allow_inactive&gt;no&lt;/allow_inactive&gt;
+      &lt;allow_active&gt;yes&lt;/allow_active&gt;
+    &lt;/defaults&gt;
+&lt;/action&gt;
+</code>
+      </listing>
+      <p>Substitua <code>no</code> por <code>auth_admin</code> se você deseja garantir que apenas o usuário root seja capaz de carregar a ação.</p>
+    </item>
+    <item>
+      <p>Salve as alterações.</p>
+    </item>
+  </steps>
+
+  <p>Quando o usuário tenta alterar as configurações de disco, a seguinte mensagem é mostrada: <gui>Autenticação é necessária para modificar as configurações de unidades</gui>.</p>
+
+</page>

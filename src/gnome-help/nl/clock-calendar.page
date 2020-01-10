@@ -25,48 +25,53 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Display your appointments in the calendar area at the top of the
-    screen.</desc>
+    <desc>Uw afspraken weergeven in de agenda aan de bovenkant van het scherm.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Justin van Steijn</mal:name>
+      <mal:email>justin50@live.nl</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hannie Dumoleyn</mal:name>
+      <mal:email>hannie@ubuntu-nl.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
   </info>
 
- <title>Calendar appointments</title>
+ <title>Agenda-afspraken</title>
 
   <note>
-    <p>This requires you to use your <app>Evolution</app> calendar or for you
-    to have an online account set up which <gui>Calendar</gui> supports.</p>
-    <p>Most distributions come with <app>Evolution</app> installed by default.
-    If yours does not, you may need to install it using your distribution's
-    package manager.</p>
+    <p>Hiervoor moet u uw<app>Evolution</app>-agenda gebruiken of een online-account hebben ingesteld met ondersteuning voor <gui>Agenda</gui>.</p>
+    <p>Bij de meeste distributies is <app>Evolution</app> standaard geïnstalleerd. Als dat bij u niet het geval is, moet u het installeren met het pakketbeheerprogramma van uw distributie.</p>
  </note>
 
-  <p>To view your appointments:</p>
+  <p>Om uw afspraken te bekijken:</p>
   <steps>
     <item>
-      <p>Click on the clock on the top bar.</p>
+      <p>Klik op de klok in de bovenbalk.</p>
     </item>
     <item>
-      <p>Click the date for which you want to see your appointments from the
-      calendar.</p>
+      <p>Klik op de datum waarvoor u uw afspraken in de agenda wilt zien.</p>
 
     <note>
-       <p>A dot is shown under each date that has an appointment.</p>
+       <p>Er staat een punt onder elke datum waar een afspraak gepland is.</p>
     </note>
 
-      <p>Existing appointments will be displayed to the left of the calendar.
-      As appointments are added to your <app>Evolution</app> calendar, they
-      will appear in the clock's appointment list.</p>
+      <p>Bestaande afspraken worden weergegeven aan de linkerkant van de agenda. Wanneer afspraken worden toegevoegd aan uw <app>Evolution</app>-agenda, zullen ze in de afsprakenlijst van de klok weergegeven worden.</p>
     </item>
   </steps>
 
  <if:choose>
  <if:when test="!platform:gnome-classic">
  <media type="image" src="figures/shell-appts.png" width="500">
-  <p>Clock, calendar, and appointments</p>
+  <p>Klok, agenda en afspraken</p>
  </media>
  </if:when>
  <if:when test="platform:gnome-classic">
  <media type="image" src="figures/shell-appts-classic.png" width="373" height="250">
-  <p>Clock, calendar, and appointments</p>
+  <p>Klok, agenda en afspraken</p>
  </media>
  </if:when>
  </if:choose>

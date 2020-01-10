@@ -12,62 +12,56 @@
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
     <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
 
-    <desc>Remove all of the files and folders from an external hard disk or USB
-    flash drive by formatting it.</desc>
+    <desc>Verwijder alle bestanden en mappen van een externe harde schijf of usb-stick door te formatteren.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Justin van Steijn</mal:name>
+      <mal:email>justin50@live.nl</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hannie Dumoleyn</mal:name>
+      <mal:email>hannie@ubuntu-nl.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
   </info>
 
-<title>Wipe everything off a removable disk</title>
+<title>Alles van een verwijderbare schijf wissen</title>
 
-  <p>If you have a removable disk, like a USB memory stick or an external hard
- disk, you may sometimes wish to completely remove all of its files and
- folders. You can do this by <em>formatting</em> the disk - this deletes all
- of the files on the disk and leaves it empty.</p>
+  <p>Als u een verwisselbare schijf heeft, zoals een USB-stick of een externe harde schijf, dan wilt u misschien op enig moment alle bestanden en mappen daarop verwijderen. U kunt dit doen door de schijf te <em>formatteren</em> — dit verwijdert alle bestanden op de schijf en maakt hem dus helemaal leeg.</p>
 
 <steps>
-  <title>Format a removable disk</title>
+  <title>Formatteer de verwijderbare schijf</title>
   <item>
-    <p>Open <app>Disks</app> from the <gui>Activities</gui> overview.</p>
+    <p>Open <app>Schijven</app> vanuit het <gui>Activiteiten</gui>-overzicht.</p>
   </item>
   <item>
-    <p>Select the disk you want to wipe from the list of storage devices on the
-    left.</p>
+    <p>Selecteer de schijf die u wilt leegmaken in de de lijst met opslagapparaten aan de linkerkant.</p>
 
     <note style="warning">
-      <p>Make sure that you have selected the correct disk! If you choose the
-      wrong disk, all of the files on the other disk will be deleted!</p>
+      <p>Zorg ervoor dat u de juiste schijf selecteert! Als u de verkeerde schijf kiest, worden alle bestanden op de deze schijf verwijderd!</p>
     </note>
   </item>
   <item>
-    <p>In the toolbar underneath the <gui>Volumes</gui> section, click the
-    menu button. Then click <gui>Format…</gui>.</p>
+    <p>Klik in de werkbalk onder de sectie <gui>Volumen</gui> op de menuknop. Klik daarna op <gui>Volume formatteren</gui>.</p>
   </item>
   <item>
-    <p>In the window that pops up, choose a file system <gui>Type</gui> for the
-    disk.</p>
-   <p>If you use the disk on Windows and Mac OS computers in addition to Linux
-   computers, choose <gui>FAT</gui>. If you only use it on Windows, <gui>NTFS</gui>
-   may be a better option. A brief description of the <gui>file system type</gui>
-   will be presented as a label.</p>
+    <p>Kies een bestandssysteem voor de schijf  in het <gui>Type</gui>-veld in het venster dat verschijnt.</p>
+   <p>Indien u de schijf naast Linux ook op Windows en Mac computers gebruikt, kies dan <gui>FAT</gui>. Indien u hem alleen in Windows gebruikt, dan is <gui>NTFS</gui> wellicht een betere keus. Een korte beschrijving van het <gui>bestandssysteemtype</gui> zal als label gepresenteerd worden.</p>
   </item>
   <item>
-    <p>Give the disk a name and click <gui>Format…</gui> to continue and show a
-    confirmation window. Check the details carefully, and click
-    <gui>Format</gui> to wipe the disk.</p>
+    <p>Geef de schijf een naam en klik op <gui>Formatteren…</gui> om door te gaan en een bevestigingsvenster te tonen. Lees de details nauwkeurig en klik op  <gui>Formatteren</gui> om de schijf leeg te maken.</p>
   </item>
   <item>
-    <p>Once the formatting has finished, click the eject icon to safely remove
-    the disk. It should now be blank and ready to use again.</p>
+    <p>Als het formatteren voltooid is, klik dan op het uitwerpen-pictogram om de schijf veilig te verwijderen. De schijf zou nu leeg moeten zijn, en klaar voor gebruik.</p>
   </item>
 </steps>
 
 <note style="warning">
- <title>Formatting a disk does not securely delete your files</title>
-  <p>Formatting a disk is not a completely secure way of wiping all of its
- data. A formatted disk will not appear to have files on it, but it is
- possible that special recovery software could retrieve the files. If you
- need to securely delete the files, you will need to use a command-line
- utility, such as <app>shred</app>.</p>
+ <title>Formatteren van een schijf verwijdert niet veilig u bestanden</title>
+  <p>Het formatteren van een schiijf is niet een geheel veilige manier om alle gegevens erop te wissen. Op een geformatteerde schijf lijkt het alsof er geen bestanden op staan, maar bestanden kunnen mogelijk teruggehaald worden met speciale software. Als u veilig bestanden wilt verwijderen, dan heeft u een opdrachtregelhulpmiddel nodig zoals <app>shred</app>.</p>
 </note>
 
 </page>

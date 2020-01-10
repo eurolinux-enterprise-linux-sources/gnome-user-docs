@@ -28,12 +28,14 @@
       <years>2015</years>
     </credit>
 
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
     <desc>Permitir aos aplicativos acceder ás súas contas enliña para fotos, contactos, calendarios e máis.</desc>
 
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2013.</mal:years>
+      <mal:years>2011-2018</mal:years>
     </mal:credit>
   </info>
 
@@ -49,38 +51,26 @@
       <p>Prema <gui>Contas en liñla</gui> para abrir o panel.</p>
     </item>
     <item>
-      <p>Prema o símbolo <key>+</key> na esquina inferior esquerda da xanela.</p>
+      <p>Select an account from the list on the right.</p>
     </item>
     <item>
       <p>Seleccione o tipo de conta que quere engadir.</p>
     </item>
     <item>
-      <p>A small website window or dialog will open where you can enter your
-      online account credentials. For example, if you are setting up a Google
-      account, enter your Google username and password. Some providers allow
-      you to create a new account from the login dialog.</p>
+      <p>Abrirase unha pequena xanela con unha páxina web que lle permitirá escribir as credenciais da súa conta en liña. Por exemplo, se está configurando unh aconta de Google, escriba o seu usuario e contrasinal de Google. Algúns fornecedores permítenlle crear unha nova conta desde o diálogo de inicio de sesión.</p>
     </item>
     <item>
-      <p>If you have entered your credentials correctly, you will be prompted
-      to allow GNOME access to your online account. Authorize access to
-      continue.</p>
+      <p>Se escribiu as súas credenciais correctamente preguntaráselle para permitirlle a GNOME acceder ás súas contas en liña. Autorice o acceso para continuar.</p>
     </item>
     <item>
-      <p>All services that are offered by an account provider will be enabled
-      by default. <link xref="accounts-disable-service">Switch</link>
-      individual services to <gui>OFF</gui> to disable them.</p>
+      <p>Todos os servizos ofrecidos por un fornecedor de contas estarán activos por omisión, <link xref="accounts-disable-service">Tróqueos</link> de forma individual a <gui>O</gui> para desactivalos.</p>
     </item>
   </steps>
 
-  <p>After you have added accounts, applications can use those accounts for
-  the services you have chosen to allow. See <link xref="accounts-disable-service"/>
-  for information on controlling which services to allow.</p>
+  <p>Despois de engadir as contas, os aplicativos poden usalas para os servizos que permitiu. Vexa <link xref="accounts-disable-service"/> para obter máis información sobre como controlar o acceso aos servizos.</p>
 
   <note style="tip">
-    <p>Many online services provide an authorization token which GNOME stores
-    instead of your password. If you remove an account, you should also revoke
-    that certificate in the online service. See <link xref="accounts-remove"/>
-    for more information.</p>
+    <p>Algúns servizos en liña fornecen un token de autorización que GNOME almacena no lugar do seu contrasinal. Se eliminou unha conta terá que revocar o certificado no servizo en liña. Vexa <link xref="accounts-remove"/> para obter máis información.</p>
   </note>
 
 </page>

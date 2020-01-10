@@ -69,7 +69,14 @@
 
 <p>Μπορείτε να συνδεθείτε σε έναν διακομιστή ή ένα κοινόχρηστο δίκτυο για να περιηγηθείτε και να προβάλετε τα αρχεία, σαν να ήταν στον δικό σας υπολογιστή. Αυτός είναι ένας βολικός τρόπος να κάνετε λήψη ή να αποστείλετε αρχεία στο διαδίκτυο, ή να μοιραστείτε αρχεία με άλλα άτομα στο τοπικό σας δίκτυο.</p>
 
-<p>Για να περιηγηθείτε σε αρχεία μέσω του δικτύου, ανοίξτε την εφαρμογή <app>Αρχεία</app> από την επισκόπηση <gui>Δραστηριότητες</gui>, και κάντε κλικ στο <gui>Άλλες τοποθεσίες</gui> αριστερά της πλευρικής στήλης. Ο διαχειριστής αρχείων θα εντοπίσει όλους τους υπολογιστές στο τοπικό σας δίκτυο που είναι ικανοί να διαμοιράσουν αρχεία. Αν θέλετε να συνδεθείτε σε έναν διακομιστή στο διαδίκτυο, ή αν δεν βρίσκεται τον υπολογιστή που θέλεετε, μπορείτε να συνδεθείτε χειροκίνητα σε κάποιον διακομιστή πληκτρολογώντας τη διεύθυνση του στο διαδίκτυο.</p>
+<p>To browse files over the network, open the <app>Files</app>
+application from the <gui>Activities</gui> overview, and click
+<gui>Other Locations</gui> in the sidebar. The file manager
+will find any computers on your local area network that advertize
+their ability to serve files. If you want to connect to a server
+on the internet, or if you do not see the computer you’re looking
+for, you can manually connect to a server by typing in its
+internet/network address.</p>
 
 <steps>
   <title>Σύνδεση σε έναν διακομιστή αρχείων</title>
@@ -118,7 +125,8 @@
     <p><sys>ssh://username@servername.example.com/folder</sys></p>
   </example>
 
-  <p>Όταν χρησιμοποιείτε SSH, όλα τα δεδομένα που στείλατε (συμπεριλαμβανόμενου του κωδικού πρόσβασής σας) κρυπτογραφούνται έτσι ώστε άλλοι χρήστες στο δίκτυο σας να μην μπορούν να τα δουν.</p>
+  <p>When using SSH, all the data you send (including your password)
+  is encrypted so that other users on your network can’t see it.</p>
 </item>
 <item>
   <title>FTP (με σύνδεση)</title>
@@ -147,7 +155,11 @@
 </item>
 <item>
   <title>WebDAV και ασφαλές WebDAV</title>
-  <p>Με βάση το χρησιμοποιούμενο πρωτόκολλο HTTP στον ιστό, το WebDAV χρησιμοποιείται μερικές φορές για μερισμό αρχείων σε ένα τοπικό δίκτυο και αποθήκευση αρχείων στο διαδίκτυο. Εάν ο διακομιστής που συνδέεστε υποστηρίζει ασφαλείς συνδέσεις, θα πρέπει να διαλέξετε αυτήν την επιλογή. Το ασφαλές WebDAV χρησιμοποιεί ισχυρή κρυπτογράφηση SSL, έτσι ώστε οι άλλοι χρήστες να μην μπορούν να δουν τον κωδικό πρόσβασής σας.</p>
+  <p>Based on the HTTP protocol used on the web, WebDAV is sometimes used to
+  share files on a local network and to store files on the internet. If the
+  server you’re connecting to supports secure connections, you should choose
+  this option. Secure WebDAV uses strong SSL encryption, so that other users
+  can’t see your password.</p>
   <p>Μια διεύθυνση WebDAV μοιάζει με:</p>
   <example>
     <p><sys>dav://example.hostname.com/path</sys></p>

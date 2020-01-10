@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="wacom-stylus" xml:lang="pt">
+
+  <info>
+    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
+    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
+    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <link type="guide" xref="wacom"/>
+
+    <credit type="author copyright">
+      <name>Michael Hilh</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2012</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Definir as funções dos botões e o tato da pressão da Wacom stylus.</desc>
+  </info>
+
+  <title>Configurar a tableta</title>
+
+<steps>
+  <item>
+    <p>Abra a vista de <gui xref="shell-introduction#activities">Atividades</gui> e comece a escrever <gui>Tablet Wacom</gui>.</p>
+  </item>
+  <item>
+    <p>Carregue em <gui>Tablet Wacom</gui> para abrir o painel.</p>
+    <!-- TODO: document how to connet the tablet using Bluetooth/add link -->
+    <note style="tip"><p>If no tablet is detected, you’ll be asked to
+    <gui>Please plug in or turn on your Wacom tablet</gui>. Click the
+    <gui>Bluetooth Settings</gui> link to connect a wireless tablet.</p></note>
+  </item>
+  <item><p>A parte inferior do painel contém detalhes e configurações específicas para a sua tableta, com o nome do dispositivo (a classe de «stylus») e um diagrama à esquerda. Esta configuração pode-se ajustar:</p>
+    <list>
+      <item><p><gui>Eraser Pressure Feel:</gui> use the slider to adjust the
+       “feel” (how physical pressure is translated to digital values) between
+       <gui>Soft</gui> and <gui>Firm</gui>.</p></item>
+      <item><p>Configuração do <gui>Botão/roda de deslocação</gui> (isto muda para refletir a tableta). Carregue no menu junto à cada etiqueta para selecionar uma destas aciones	: «Sem ação», «Clique do botão esquerdo do rato», «Clique do botão direito do rato», «Clique do botão do meio do rato», «Deslocar para acima», «Deslocar para baixo», «Deslocar para a esquerda», «Deslocar para a direita», «Atrás», «Adiante».</p></item>
+      <item><p><gui>Tip Pressure Feel:</gui> use the slider to adjust the
+       “feel” between <gui>Soft</gui> and <gui>Firm</gui>.</p></item>
+    </list>
+  </item>
+</steps>
+
+<note style="info"><p>Se tem mais duma «stylus», quando a «stylus» adicional esteja para perto da tableta, aparecerá um paginador junto ao nome do dispositivo. Use o paginador para escolher que «stylus» configurar.</p>
+</note>
+
+</page>

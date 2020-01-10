@@ -84,9 +84,9 @@ Exec=<var>myapplication1</var></code>
         </p>
         <screen><output>$ </output><input>touch test.xyz</input></screen>
         <p>
-          Then run the <cmd>gvfs-info</cmd> command:
+          Then run the <cmd>gio info</cmd> command:
         </p>
-        <screen><output>$ </output><input>gvfs-info test.xyz | grep "standard::content-type"</input>
+        <screen><output>$ </output><input>gio info test.xyz | grep "standard::content-type"</input>
   standard::content-type: application/x-newtype</screen>
         </item>
         <item>
@@ -94,10 +94,10 @@ Exec=<var>myapplication1</var></code>
           To verify that <file>myapplication1.desktop</file> has been
           correctly set as the default registered application for the
           <sys>application/x-newtype</sys> MIME type, run the
-          <cmd>gvfs-mime --query</cmd> command:
+          <cmd>gio mime</cmd> command:
           </p>
-        <screen><output>$ </output><input>gvfs-mime --query application/x-newtype</input>
-Default application for 'application/x-newtype': myapplication1.desktop
+        <screen><output>$ </output><input>gio mime application/x-newtype</input>
+Default application for “application/x-newtype”: myapplication1.desktop
 Registered applications:
 	myapplication1.desktop
 Recommended applications:
