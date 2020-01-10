@@ -10,18 +10,17 @@
     <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
 
     <credit type="author">
-      <name>GNOME Documentation Project</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <name>Dokumentační projekt GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Go to the <gui>Activities</gui> overview and drag the window to a
-    different workspace.</desc>
+    <desc>Jděte do přehledu <gui>Činností</gui> a přetáhněte okno na jinou pracovní plochu.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
@@ -32,53 +31,38 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Marek Černocký</mal:name>
       <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:years>2014, 2015</mal:years>
     </mal:credit>
   </info>
 
-  <title>Move a window to a different workspace</title>
+  <title>Přesun okna na jinou pracovní plochu</title>
 
   <steps>
-    <title>Using the mouse:</title>
+    <title>Pomocí myši:</title>
     <item>
-      <p if:test="!platform:gnome-classic">Open the
-      <gui xref="shell-terminology">Activities</gui> overview.</p>
-      <p if:test="platform:gnome-classic">Open the
-      <gui xref="shell-terminology">Activities Overview</gui> from the
-      <link xref="shell-terminology"><gui style="menu">Applications</gui>
-      menu</link> at the top left of the screen.</p>
+      <p if:test="!platform:gnome-classic">Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui>.</p>
+      <p if:test="platform:gnome-classic">Otevřete <gui xref="shell-introduction#activities">Přehled činností</gui> z nabídky <gui xref="shell-introduction#activities">Aplikace</gui> v levém horním rohu obrazovky.</p>
     </item>
     <item>
-      <p>Click and drag the window toward the right of the screen.</p>
+      <p>Klikněte na okno a táhněte jej k pravému okraji obrazovky.</p>
     </item>
     <item>
-      <p>The <em xref="shell-terminology">workspace selector</em> will
-      appear.</p>
+      <p>Objeví se <em xref="shell-workspaces">výběr pracovních ploch</em>.</p>
     </item>
     <item>
-      <p if:test="!platform:gnome-classic">Drop the window onto an empty
-      workspace. This workspace now contains the window you have dropped, and a
-      new empty workspace appears at the bottom of the <em>workspace
-      selector</em>.</p>
-      <p if:test="platform:gnome-classic">Drop the window onto an empty
-      workspace. This workspace now contains the window you have dropped.</p>
+      <p if:test="!platform:gnome-classic">Upusťte okno na prázdné pracovní ploše. Tato pracovní plocha teď bude obsahovat okno, které jste upustili, v dolní části <em>voliče pracovních ploch</em> se objeví nová prázdná pracovní plocha.</p>
+      <p if:test="platform:gnome-classic">Upusťte okno na prázdné pracovní ploše. Tato pracovní plocha teď bude obsahovat okno, které jste upustili.</p>
     </item>
   </steps>
 
   <steps>
-    <title>Using the keyboard:</title>
+    <title>Pomocí klávesnice:</title>
     <item>
-      <p>Select the window that you want to move (for example, using the
-      <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq>
-      <em xref="shell-terminology">window switcher</em>).</p>
+      <p>Vyberte okno, které chcete přesunout (například pomocí <em xref="shell-windows-switching">přepínače oken</em> <keyseq><key xref="keyboard-key-super">Super</key> <key>Tab</key></keyseq>).</p>
     </item>
     <item>
-      <p>Press <keyseq><key>Super</key><key>Shift</key><key>Page
-      Up</key></keyseq> to move the window to a workspace which is above the
-      current workspace on the <em>workspace selector</em>.</p>
-      <p>Press <keyseq><key>Super</key><key>Shift</key><key>Page
-      Down</key></keyseq> to move the window to a workspace which is below the
-      current workspace on the <em>workspace selector</em>.</p>
+      <p>Zmáčknutím <keyseq><key>Super</key> <key>Shift</key> <key>Page Up</key></keyseq> přesunete okno na pracovní plochu nad aktuální pracovní plochou ve <em>výběru pracovních ploch</em>.</p>
+      <p>Zmáčknutím <keyseq><key>Super</key> <key>Shift</key> <key>Page Down</key></keyseq> přesunete okno na pracovní plochu pod aktuální pracovní plochou ve <em>výběru pracovních ploch</em>.</p>
     </item>
   </steps>
 

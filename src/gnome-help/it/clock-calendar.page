@@ -7,23 +7,26 @@
 
     <revision pkgversion="3.8.0" date="2013-03-09" status="outdated"/>
     <revision pkgversion="3.10" date="2013-11-04" status="review"/>
+    <revision pkgversion="3.16" date="2015-03-02" status="outdated"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
 
     <credit type="author">
       <name>Progetto documentazione di GNOME</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Display your appointments in the calendar at the top of the screen.</desc>
+    <desc>Display your appointments in the calendar area at the top of the
+    screen.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Luca Ferretti</mal:name>
@@ -44,7 +47,7 @@
     <p>This requires you to use your <app>Evolution</app> calendar or for you
     to have an online account set up which <gui>Calendar</gui> supports.</p>
     <p>Most distributions come with <app>Evolution</app> installed by default.
-    If yours does not, you may need to install it using your distribution
+    If yours does not, you may need to install it using your distribution's
     package manager.</p>
  </note>
 
@@ -56,17 +59,20 @@
     <item>
       <p>Click the date for which you want to see your appointments from the
       calendar.</p>
-    </item>
-    <item>
-      <p>Existing appointments will be displayed on the right. As appointments
-      are added to the calendar, they will appear in the clock's appointment
-      list.</p>
+
+    <note>
+       <p>A dot is shown under each date that has an appointment.</p>
+    </note>
+
+      <p>Existing appointments will be displayed to the left of the calendar.
+      As appointments are added to your <app>Evolution</app> calendar, they
+      will appear in the clock's appointment list.</p>
     </item>
   </steps>
 
  <if:choose>
  <if:when test="!platform:gnome-classic">
- <media type="image" src="figures/shell-appts.png" width="500" height="396">
+ <media type="image" src="figures/shell-appts.png" width="500">
   <p>Orologio, calendario e appuntamenti</p>
  </media>
  </if:when>
@@ -76,11 +82,5 @@
  </media>
  </if:when>
  </if:choose>
-
-  <p>Per accedere rapidamente al calendario completo di <app>Evolution</app>, fare clic sull'orologio, quindi fare clic su <gui>Apri calendario</gui>.</p>
-
-  <note>
-    <p>Questo funzionerà solo se è già stato creato un account <app>Evolution</app>, altrimenti apparirà una finestra con i passi necessari per aggiungerlo.</p>
-  </note>
 
 </page>

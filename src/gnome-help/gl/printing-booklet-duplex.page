@@ -6,15 +6,21 @@
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
       <email>tiffany@antopolski.com</email>
     </credit>
+    <credit type="author editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Imprimir pasquíns pregados (tipo libro ou panfleto) usando un tamaño de papel normal A4/Carta.</desc>
+    <desc>Print folded booklets (like a book or pamphlet) from a PDF using normal
+    A4/Letter-size paper.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
@@ -23,9 +29,11 @@
     </mal:credit>
   </info>
 
-  <title>Impresión de pasquíns dobrados</title>
+  <title>Print a booklet on a double-sided printer</title>
 
-  <p>Pode facer folletos pregados (como un pequeno libro ou pasquín) mediante a impresión de páxinas dun documento nunha orde especial e cambiando un par de opcións de impresión.</p>
+  <p>You can make a folded booklet (like a small book or pamphlet) by printing
+  pages of a document in a special order and changing a couple of printing
+  options.</p>
 
   <p>Estas instrucións son para imprimir un pasquín a partires dun documento PDF.</p>
 
@@ -38,8 +46,15 @@
       <p>Abra o diálogo de impresora. Isto pode facerse normalmente mediante <gui style="menuitem">Imprimir</gui> no menú ou usando o atallo de teclado <keyseq><key>Ctrl</key><key>P</key></keyseq>.</p>
     </item>
     <item>
-      <p>Go to the <gui>General</gui> tab. Under <gui>Range</gui>, choose
-      <gui>Pages</gui>.</p>
+      <p>Click the <gui>Properties...</gui> button </p>
+      <p>In the <gui>Orientation</gui> drop-down list, make sure that
+      <gui>Landscape</gui> is selected.</p>
+      <p>In the <gui>Duplex</gui> drop-down list, select <gui>Short Edge</gui>.
+      </p>
+      <p>Click <gui>OK</gui> to go back to the print dialog.</p>
+    </item>
+    <item>
+      <p>Under <gui>Range and Copies</gui>, choose <gui>Pages</gui>.</p>
     </item>
     <item>
       <p>Escriba os números das páxinas neste orde (n é o número total de páxinas, múltiplo de 4):</p>
@@ -52,12 +67,10 @@
       </list>
     </item>
     <item>
-      <p>Agora, vaia á lapela <gui>Configuración de páxina</gui>.</p>
-      <p>Under <gui>Layout</gui>, in the <gui>Two-sided</gui> drop-down list,
-      select <gui>Short Edge (Flip)</gui>.</p>
-      <p>In the <gui>Pages per side</gui> drop-down list, select
-      <gui>2</gui>.</p>
-      <p>No menú <gui>Ordenación de páxinas</gui> seleccione <gui>Esquerda a dereita</gui>.</p>
+      <p>Choose the <gui>Page Layout</gui> tab.</p>
+      <p>Under <gui>Layout</gui>, select <gui>Brochure</gui>.</p>
+      <p>Under <gui>Page Sides</gui>, in the <gui>Include</gui> drop-down list,
+      select <gui>All pages</gui>.</p>
     </item>
     <item>
       <p>Prema <gui>Imprimir</gui>.</p>

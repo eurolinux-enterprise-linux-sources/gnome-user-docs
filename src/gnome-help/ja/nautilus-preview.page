@@ -4,9 +4,8 @@
   <info>
     <link type="guide" xref="nautilus-prefs" group="nautilus-preview"/>
 
-    <desc>ファイルのサムネイル表示に関する設定をします。</desc>
-
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-30" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -16,13 +15,19 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <desc>ファイルのサムネイル表示に関する設定をします。</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -68,12 +73,12 @@
 
 <terms>
   <item>
-    <title><gui>ファイル</gui></title>
+    <title><gui>Files</gui></title>
     <p>デフォルトでは、<gui>ローカルファイルのみ</gui>が指定され、お使いのコンピューター上接続された外付けドライブ上のローカルファイルに対してだけプレビューが有効になります。<gui>常に</gui>あるいは<gui>しない</gui>を指定することもできます。ファイルマネージャーからは、LAN やインターネット上の<link xref="nautilus-connect">他のコンピューターのファイルを閲覧</link>できます。LAN 上のファイルをよく閲覧し、高帯域幅のネットワークをお使いであれば、プレビューオプションの<gui>常に</gui>を選択するとよいでしょう。</p>
     <p>また、<gui>ファイルの最大サイズ</gui>を設定して、プレビューするファイルのサイズを制限できます。</p>
   </item>
   <item>
-    <title><gui>フォルダー</gui></title>
+    <title><gui>Folders</gui></title>
     <p><link xref="nautilus-list">一覧表示の列</link>や、<link xref="nautilus-display#icon-captions">アイコンの見出し</link>にファイルサイズを表示している場合、フォルダーのサイズ情報として、該当のフォルダーの配下に含まれるファイルやフォルダーの数が表示されます。フォルダーに含まれるアイテムを計上すると、とりわけ巨大なフォルダーやネットワークを介する場合などは、処理が遅くなってしまう可能性があります。この機能を有効/無効にしたり、あるいは、お使いのコンピューターやローカルの外付けデバイスのファイルだけにたいして有効にしたりできます。</p>
   </item>
 </terms>

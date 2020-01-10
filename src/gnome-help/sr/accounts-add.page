@@ -1,28 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="accounts-add" xml:lang="sr">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="accounts-add" xml:lang="sr">
 
   <info>
-    <link type="guide" xref="accounts"/>
+    <link type="guide" xref="accounts" group="add"/>
 
     <revision pkgversion="3.5.5" date="2012-08-14" status="draft"/>
     <revision pkgversion="3.9.92" date="2012-09-18" status="candidate"/>
     <revision pkgversion="3.13.92" date="2013-09-20" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Џим Кембел</name>
-      <email its:translate="no">jwcampbell@gmail.com</email>
+      <email>jwcampbell@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Мајкл Хил</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Екатерина Герасимова</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
       <years>2014</years>
     </credit>
+    <credit type="editor">
+      <name>Шон Мек Кенс</name>
+      <email>shaunm@gnome.org</email>
+      <years>2015</years>
+    </credit>
 
-    <desc>Повежите се на налог на мрежи.</desc>
+    <desc>Дозволите програмима да приступе вашим налозима на мрежи због фотографија, контаката, календара и осталог.</desc>
 </info>
 
   <title>Додајте налог</title>
@@ -41,10 +47,9 @@
     </item>
     <item>
       <p>Изаберите врсту налога који желите да додате.</p>
-      <p>Ако желите да додате више од једне врсте налога, можете то да урадите касније.</p>
     </item>
     <item>
-      <p>Отвориће се прозорче веб сајта у коме ћете моћи да унесете податке вашег налога на мрежи. На пример, ако подешавате Гуглов налог, унесите ваше корисничко име и лозинку за Гугл.</p>
+      <p>Отвориће се прозорче веб сајта у коме ћете моћи да унесете податке вашег налога на мрежи. На пример, ако подешавате Гуглов налог, унесите ваше корисничко име и лозинку за Гугл. Неки достављачи вам омогућавају да направите нови налог из прозорчета за пријављивање.</p>
     </item>
     <item>
       <p>Ако сте исправно унели ваше податке, биће вам затражено да дозволите Гномов приступ вашем налогу на мрежи. Овластите приступ да наставите.</p>
@@ -54,10 +59,10 @@
     </item>
   </steps>
 
-  <p>Након што сте додали налоге, сви програми које сте изабрали самостално ће употребити ове податке када их будете покренули.</p>
+  <p>Након што додате налоге, програми ће моћи да користе те налоге за услуге које сте изабрали. Видите <link xref="accounts-disable-service"/> о томе како да одлучите које услуге ћете омогућити.</p>
 
   <note style="tip">
-    <p>Из безбедносних разлога, Гном неће ускладиштити вашу лозинку на вашем рачунару. Уместо тога, ускладиштиће прстен који обезбеђује услуга на мрежи. Ако желите да у потпуности опозовете везу између ваше радне површи и услуге на мрежи, <link xref="accounts-remove">уклоните</link> је.</p>
+    <p>Многе услуге на мрежи обезбеђују чин потврђивања идентитета који Гном чува уместо ваше лозинке. Ако уклоните налог, такође треба да опозовете то уверење са услуге на мрежи. Видите <link xref="accounts-remove"/> за више података.</p>
   </note>
 
 </page>

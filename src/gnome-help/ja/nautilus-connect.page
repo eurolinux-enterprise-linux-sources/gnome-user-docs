@@ -2,14 +2,13 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-connect" xml:lang="ja">
 
   <info>
-    <link type="guide" xref="files" group="more"/>
+    <link type="guide" xref="files#more-file-tasks"/>
     <link type="guide" xref="sharing"/>
 
     <revision pkgversion="3.6.0" date="2012-10-06" status="review"/>
     <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
     <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
-
-    <desc>FTP、SSH、Windows 共有、あるいは WebDAV を使って 他のコンピューターのファイルを表示、編集します</desc>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -19,12 +18,20 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>FTP、SSH、Windows 共有、あるいは WebDAV を使って 他のコンピューターのファイルを表示、編集します</desc>
+
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -68,19 +75,33 @@
 
 <p>ファイルサーバーや共有ディスクに接続し、ちょうど手元のコンピューターのファイルにアクセスするのと同じように、ネットワーク上のファイルにアクセスできます。インターネット上でファイルのダウンロードやアップロードをしたり、ローカルネットワーク内のユーザーとファイルを共有したりするときに、この機能は便利です。</p>
 
-<p>ネットワーク上のファイルを閲覧するには、<gui>アクティビティ</gui>画面から<app>ファイル</app>アプリケーションを起動し、サイドバーの<gui>ネットワークを表示</gui>をクリックします。ローカルエリアネットワーク上にファイルサーバーが見つかれば、ファイルマネージャーに表示されます。インターネット上のサーバーに接続したい場合、あるいは対象のサーバーが表示されない場合は、サーバーのアドレスを入力して手動で接続することができます。</p>
+<p>To browse files over the network, open the <app>Files</app>
+application from the <gui>Activities</gui> overview, and click
+<gui>Other Locations</gui> in the sidebar. The file manager
+will find any computers on your local area network that advertize
+their ability to serve files. If you want to connect to a server
+on the internet, or if you do not see the computer you're looking
+for, you can manually connect to a server by typing in its
+internet/network address.</p>
 
 <steps>
   <title>ファイルサーバーに接続する</title>
-  <item><p>In the file manager, click <gui>Connect to Server</gui> in the
+  <item><p>In the file manager, click <gui>Other Locations</gui> in the
    sidebar.</p>
   </item>
-  <item><p>サーバーのアドレスを <link xref="#urls">URL</link> 形式で入力します。サポート対象の URL の詳細については、<link xref="#types">後述の一覧</link>を参照してください。</p>
+  <item><p>In <gui>Connect to Server</gui>, enter the address of the server, in
+  the form of a
+   <link xref="#urls">URL</link>. Details on supported URLs are
+   <link xref="#types">listed below</link>.</p>
   <note>
     <p>以前に接続したサーバーがあれば、<gui>最近使用したサーバー</gui>の一覧からそのサーバーを選択できます。</p>
   </note>
   </item>
-  <item><p><gui>接続</gui>ボタンを押します。新しいウィンドウが開き、サーバー上のファイルが表示されます。お手元のコンピューターのファイルを閲覧するのと同じように、サーバー上のファイルを閲覧できます。接続したサーバーは、サイドバーに追加され、次回以降すぐにアクセスできます。</p>
+  <item>
+    <p>Click <gui>Connect</gui>. The files on the server will be shown. You
+    can browse the files just as you would for those on your own computer. The
+    server will also be added to the sidebar so you can access it quickly in
+    the future.</p>
   </item>
 </steps>
 
@@ -147,9 +168,20 @@
 <item>
   <title>WebDAV および Secure WebDAV</title>
   <p>Web で使われる HTTP プロトコルをベースにして、ローカルネットワーク上でファイルを共有したり、インターネット上にファイルを保存したりするのに、WebDAV がときどき使用されます。サーバーがセキュアな接続をサポートする場合は、それを利用した方がよいでしょう。Secure WebDAV は強力な SSL 暗号を使用しており、他のユーザーがあなたのパスワードを覗き見ることはできません。</p>
-  <p>典型的な WebDAV の URL は次のような書式になります。</p>
+  <p>A WebDAV URL looks like this:</p>
   <example>
-    <p><sys>http://example.hostname.com/path</sys></p>
+    <p><sys>dav://example.hostname.com/path</sys></p>
+  </example>
+</item>
+<item>
+  <title>NFS share</title>
+  <p>UNIX computers traditionally use the Network File System protocol to
+  share files over a local network. With NFS, security is based on the UID of
+  the user accessing the share, so no authentication credentials are
+  needed when connecting.</p>
+  <p>A typical NFS share URL looks like this:</p>
+  <example>
+    <p><sys>nfs://servername/path</sys></p>
   </example>
 </item>
 </terms>

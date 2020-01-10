@@ -3,7 +3,7 @@
 
   <info>
     <link type="seealso" xref="shell-apps-open"/>
-    <link type="guide" xref="shell-overview#apps"/>
+    <link type="guide" xref="shell-overview#desktop"/>
 
     <revision pkgversion="3.6.0" date="2012-10-14" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
@@ -41,7 +41,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2014</mal:years>
+      <mal:years>2011-2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -73,16 +73,28 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
   <title>Ajout de vos applications préférées au lanceur</title>
 
-  <p>Pour ajouter une application au <link xref="shell-terminology">lanceur (dash)</link> afin de pouvoir y accéder facilement :</p>
+  <p>To add an application to the <link xref="shell-introduction#activities">dash</link>
+  for easy access:</p>
 
   <steps>
     <item>
-      <p if:test="!platform:gnome-classic">Ouvrez la vue d'ensemble des <link xref="shell-terminology"><gui>Activités</gui></link> en cliquant sur <gui>Activités</gui> en haut à gauche de l'écran.</p>
-      <p if:test="platform:gnome-classic">Cliquez sur le <link xref="shell-terminology"> menu <gui>Applications</gui></link> en haut à gauche de l'écran et choisissez <gui>Vue d'ensemble des activités</gui> dans ce menu.</p></item>
+      <p if:test="!platform:gnome-classic">Open the
+      <gui xref="shell-introduction#activities">Activities</gui> overview by
+      clicking <gui>Activities</gui> at the top left of the screen</p>
+      <p if:test="platform:gnome-classic">Click the
+      <gui xref="shell-introduction#activities">Applications</gui> menu at the
+      top left of the screen and choose the <gui>Activities Overview</gui> item
+      from the menu.</p></item>
     <item>
       <p>Cliquez sur l'icône en forme de grille dans le lanceur pour trouver l'application à ajouter.</p>
     </item>
@@ -94,7 +106,9 @@
 
   <p>Pour supprimer du dash l'icône d'une application, cliquez avec le bouton droit sur l'icône de l'application et sélectionnez <gui>Enlever des favoris</gui>.</p>
 
-  <note style="tip" if:test="platform:gnome-classic"><p>Les applications favorites apparaissent aussi dans la section <gui>Favoris</gui> du menu <link xref="shell-terminology"><gui>Applications</gui> menu</link>.</p>
+  <note style="tip" if:test="platform:gnome-classic"><p>Favorite applications
+    also appear in the <gui>Favorites</gui> section of the
+    <gui xref="shell-introduction#activities">Applications</gui> menu.</p>
   </note>
 
 </page>

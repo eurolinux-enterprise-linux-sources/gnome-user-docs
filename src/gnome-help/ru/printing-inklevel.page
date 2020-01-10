@@ -6,6 +6,7 @@
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Anita Reitere</name>
@@ -25,7 +26,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011, 2012</mal:years>
+      <mal:years>2011-2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -39,9 +40,15 @@
       <mal:email>juliette.tux@gmail.com</mal:email>
       <mal:years>2013-2014</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
-  <title>Как проверить уровень чернил или тонера в принтере?</title>
+  <title>How can I check my printer's ink or toner levels?</title>
 
   <p>Способ проверки уровня чернил или тонера зависит от модели и производителя принтера, а также драйверов и приложений, установленных на компьютере.</p>
 
@@ -52,7 +59,11 @@
 
   <p>Драйверы и инструменты контроля состояния для большинства принтеров HP предоставляются проектом HP Linux Imaging and Printing (HPLIP). Другие производители могут предоставлять проприетарные драйверы с аналогичными возможностями.</p>
 
-  <p>В качестве альтернативы можно установить приложение для проверки уровня чернил Приложение <app>Inkblot</app> показывает уровень чернил для многих принтеров HP, Epson и Canon. Посмотрите, есть ли ваш принтер в <link href="http://libinklevel.sourceforge.net./#supported">списке поддерживаемых моделей</link>. Ещё одно приложение для контроля уровня чернил в принтерах Epson и некоторых других — <app>mktink</app>.</p>
+  <p>Alternatively, you can install an application to check or monitor
+  ink levels. <app>Inkblot</app> shows ink status for many HP, Epson
+  and Canon printers. See if your printer is on the <link href="http://libinklevel.sourceforge.net/#supported">list of
+  supported models</link>. Another ink levels application for Epson and
+  some other printers is <app>mtink</app>.</p>
 
   <p>Некоторые принтеры пока не до конца поддерживаются в Linux, а для некоторых индикация уровня чернил не предусмотрена конструкцией.</p>
 

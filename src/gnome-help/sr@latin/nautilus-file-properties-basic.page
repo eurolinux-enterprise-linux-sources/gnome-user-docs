@@ -2,23 +2,30 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-file-properties-basic" xml:lang="sr-Latn">
 
   <info>
-    <link type="guide" xref="files" group="more"/>
+    <link type="guide" xref="files#more-file-tasks"/>
 
-   <desc>Pogledajte osnovne podatke o datoteci, podesite ovlašćenja, i izaberite osnovne programe.</desc>
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
-   <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <credit type="author">
+      <name>Tifani Antopoloski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Šon Mek Kens</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Dejvid King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
 
-   <credit type="author">
-     <name>Tifani Antopoloski</name>
-     <email>tiffany@antopolski.com</email>
-   </credit>
-   <credit type="author">
-     <name>Šon Mek Kens</name>
-     <email>shaunm@gnome.org</email>
-   </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <desc>Pogledajte osnovne podatke o datoteci, podesite ovlašćenja, i izaberite osnovne programe.</desc>
+
   </info>
+
   <title>Svojstva datoteke</title>
 
   <p>Da pogledate podatke o datoteci ili fascikli, kliknite desnim tasterom miša na nju i izaberite <gui>Osobine</gui>. Možete takođe da izaberete datoteku i da pritisnete <keyseq><key>Alt</key><key>Unesi</key></keyseq>.</p>
@@ -37,7 +44,7 @@
   <item>
     <title><gui>Vrsta</gui></title>
     <p>Ovo će vam pomoći da odredite vrstu datoteke, kao što je PDF dokument, tekst Otvorenog dokumenta, ili JPEG slika. Vrsta datoteke određuje koji programi mogu da otvore datoteku, uz druge stvari. Na primer, ne možete da otvorite sliku programom za puštanje muzike. Pogledajte <link xref="files-open"/> za više podataka o ovome.</p>
-  <p><em>MIME vrsta</em> datoteke je prikazana u zagradi; MIME vrsta je uobičajeni način koji računari koriste da bi obavestili o vrsti datoteke.</p>
+    <p><em>MIME vrsta</em> datoteke je prikazana u zagradi; MIME vrsta je uobičajeni način koji računari koriste da bi obavestili o vrsti datoteke.</p>
   </item>
 
   <item>
@@ -47,25 +54,19 @@
 
   <item>
     <title>Veličina</title>
-    <p>Ovo polje se prikazuje ako posmatrate datoteku (a ne fasciklu). Veličina datoteke vam govori o tome koliko zauzima prostora na disku. Ovo vam takođe pokazuje koliko vremena će biti potrebno za preuzimanje datoteke ili slanje putem el. pošte (velikim datotekama je potrebno više vremena za slanje/prijem).</p>
+    <p>Ovo polje se prikazuje ako posmatrate datoteku (a ne fasciklu). Veličina datoteke vam govori o tome koliko zauzima prostora na disku. Ovo vam takođe pokazuje koliko vremena će biti potrebno za preuzimanje datoteke ili slanje putem e-pošte (velikim datotekama je potrebno više vremena za slanje/prijem).</p>
     <p>Veličine mogu biti date u bajtovima, KB, MB, ili GB; u slučaju poslednja tri, veličina u bajtovima će takođe biti data u zagradi. Tehnički, 1 KB je 1024 bajta, 1 MB je 1024 KB i tako redom.</p>
   </item>
 
   <item>
-    <title>Putanja</title>
-    <p>Putanja svake datoteke na vašem računaru je data njenom <em>apsolutnom putanjom</em>. To je jedinstvena „adresa“ datoteke na vašem računaru, koju čini spisak fascikli kroz koje ćete morati da prođete da biste pronašli datoteku. Na primer, ako Pera ima datoteku pod nazivom <file>Plate.pdf</file> u svojoj ličnoj fascikli, njena putanja će biti <file>/home/pera/Plate.pdf</file>.</p>
-  </item>
-
-  <item>
-    <title>Disk</title>
-    <p>Sistem datoteka ili uređaj na kome je uskladištena datoteka. Ovo vam pokazuje gde se fizički nalazi datoteka, na primer da li je na čvrstom disku ili na CD-u, ili na <link xref="nautilus-connect">mrežnom deljenju ili serveru datoteke</link>. Čvrsti diskovi mogu biti podeljeni na nekoliko <link xref="disk-partitions">particija diska</link>; particije će takođe biti prikazane pod odeljkom <gui>Disk</gui>.</p>
+    <title>Roditeljska fascikla</title>
+    <p>Putanja svake datoteke na vašem računaru je data njenom <em>apsolutnom putanjom</em>. To je jedinstvena „adresa“ datoteke na vašem računaru, koju čini spisak fascikli kroz koje ćete morati da prođete da biste pronašli datoteku. Na primer, ako Pera ima datoteku pod nazivom <file>Plate.pdf</file> u svojoj ličnoj fascikli, njena roditeljska fascikla biće <file>/home/pera</file> a njena putanja biće <file>/home/pera/Plate.pdf</file>.</p>
   </item>
 
   <item>
     <title>Slobodan prostor</title>
     <p>Ovo se prikazuje samo za fascikle. Prikazuje iznos prostora diska dostupnog na disku na kome se nalazi fascikla. Ovo je korisno prilikom provere zauzeća čvrstog diska.</p>
   </item>
-
 
   <item>
     <title>Pristupljen</title>

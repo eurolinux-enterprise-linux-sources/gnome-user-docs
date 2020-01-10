@@ -2,10 +2,11 @@
 <page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="files-search" xml:lang="sl">
 
   <info>
-    <link type="guide" xref="files"/>
+    <link type="guide" xref="files#common-file-tasks"/>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-25" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Dokumentacijski projekt GNOME</name>
@@ -19,15 +20,20 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Najdite datoteke na osnovi njihovega imena in vrste. Shranite svoje rezultate za kasnejšo uporabo.</desc>
+    <desc>Locate files based on file name and type.</desc>
   </info>
 
   <title>Iskanje datotek</title>
 
-  <p>Datoteke lahko iščete na osnovi njihovega imena ali vrste neposredno iz upravljalnika datotek. Pogosta iskanja lahko shranite in pojavila se bodo kot posebne mape v vaši domači mapi.</p>
+  <p>You can search for files based on their name or file type directly
+  within the file manager.</p>
 
   <links type="topic" style="linklist">
     <title>Drugi programi za iskanje</title>
@@ -39,7 +45,7 @@
     <title>Iskanje</title>
     <item>
       <p>Open the <app>Files</app> application from the
-      <gui xref="shell-terminology">Activities</gui> overview.</p>
+      <gui xref="shell-introduction#activities">Activities</gui> overview.</p>
     </item>
     <item>
       <p>V primeru da veste, da so datoteke, ki jih želite, v določeni mapi, pojdite v to mapo.</p>
@@ -78,17 +84,5 @@
       <p>V orodni vrstici znova kliknite povečevalno steklo za končanje iskanja in vrnitev v mapo.</p>
     </item>
   </steps>
-
-  <p>V primeru da določena iskanja pogosto izvajate, jih lahko shranite za hiter dostop.</p>
-
-  <steps>
-    <title>Shranitev iskanja</title>
-    <item><p>Začnite iskanje kot je prikazano zgoraj.</p></item>
-    <item><p>When you are happy with the search parameters, click the menu
-    button and select <gui>Save Search As</gui>.</p></item>
-    <item><p>Iskanju dajte ime in kliknite <gui>Shrani</gui>. Če želite, lahko za shranjevanje iskanja izberete drugo mapo. Ko si to mapo ogledate, boste svoje shranjeno iskanje videli kot oranžno ikono mape s povečevalnim steklom na njej.</p></item>
-  </steps>
-
-  <p>Za odstranitev iskanja datoteke enostavno <link xref="files-delete">izbrišite</link> iskanje kot bi izbrisali katerokoli drugo datoteko. Ko izbrišete shranjeno iskanje, datoteke, ki se ujemajo z iskanjem, niso izbrisane.</p>
 
 </page>

@@ -7,18 +7,20 @@
 
     <revision pkgversion="3.8.0" date="2013-03-09" status="outdated"/>
     <revision pkgversion="3.10" date="2013-11-04" status="review"/>
+    <revision pkgversion="3.16" date="2015-03-02" status="outdated"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
 
     <credit type="author">
       <name>GNOME-Dokumentationsprojekt</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -40,7 +42,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Christian Kirbach</mal:name>
       <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2014.</mal:years>
+      <mal:years>2011-2016.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -60,7 +62,7 @@
 
   <note>
     <p>Dafür müssen Sie den <app>Evolution</app>-Kalender nutzen oder ein Online-Konto eingerichtet haben, das von <gui>Kalender</gui> unterstützt wird.</p>
-    <p>In den meisten Distributionen wird <app>Evolution</app> standardmäßig installiert. Falls dies nicht der Fall ist, müssen Sie es über die Paketverwaltung Ihrer Distribution installieren.</p>
+    <p>In den meisten Distributionen wird <app>Evolution</app> standardmäßig installiert. Falls dies bei Ihnen nicht der Fall ist, müssen Sie es über die Paketverwaltung Ihrer Distribution installieren.</p>
  </note>
 
   <p>So zeigen Sie Ihre Termine an:</p>
@@ -70,15 +72,18 @@
     </item>
     <item>
       <p>Klicken Sie im Kalender auf das Datum, für welches Sie Ihre Termine sehen wollen.</p>
-    </item>
-    <item>
-      <p>Der Kalender zeigt vorhandene Termine rechts an. Sobald Einträge im Kalender hinzugefügt werden, werden diese in der Terminliste der Uhr angezeigt.</p>
+
+    <note>
+       <p>Ein Punkt wird unter jedem Datum angezeigt, an dem es einen Termin gibt.</p>
+    </note>
+
+      <p>Vorhandene Termine wenden links des Kalenders angezeigt. Sobald Einträge dem <app>Evolution</app>-Kalender hinzugefügt werden erscheinen diese in der Terminliste der Uhr.</p>
     </item>
   </steps>
 
  <if:choose>
  <if:when test="!platform:gnome-classic">
- <media type="image" src="figures/shell-appts.png" width="500" height="396">
+ <media type="image" src="figures/shell-appts.png" width="500">
   <p>Uhr, Kalender und Termine</p>
  </media>
  </if:when>
@@ -88,11 +93,5 @@
  </media>
  </if:when>
  </if:choose>
-
-  <p>Um schnell zum eigentlichen <app>Evolution</app>-Kalender zu gelangen, klicken Sie auf die Uhr und dann auf <gui>Kalender öffnen</gui>.</p>
-
-  <note>
-    <p>Dies funktioniert nur, wenn Sie ein <app>Evolution</app>-Konto haben. Andernfalls wird ein Fenster mit den nötigen Schritten erscheinen, um Ihr erstes Konto hinzuzufügen.</p>
-  </note>
 
 </page>

@@ -6,6 +6,7 @@
 
     <revision pkgversion="3.6.1" date="2012-11-10" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.14.0" date="2015-01-14" status="review"/>
 
     <credit type="author copyright">
       <name>Tiffany Antopolski</name>
@@ -21,11 +22,15 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2015</years>
+    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Take a picture or record a video of what is happening on your
-    screen.</desc>
+    <desc>Jak pořídit snímek nebo videonahrávku toho, co se děje na obrazovce.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
@@ -36,102 +41,81 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Marek Černocký</mal:name>
       <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:years>2014, 2015</mal:years>
     </mal:credit>
   </info>
 
-<title>Screenshots and screencasts</title>
+<title>Snímky a videonahrávky obrazovky</title>
 
-  <p>You can take a picture of your screen (a <em>screenshot</em>) or record a
-  video of what is happening on the screen (a <em>screencast</em>). This is
-  useful if you want to show someone how to do something on the computer, for
-  example. Screenshots and screencasts are just normal picture and video files,
-  so you can email them and share them on the web.</p>
+  <p>Můžete pořídit obrázek se svojí obrazovkou (<em>snímek obrazovky</em>) nebo videonahrávku s tím, co se na obrazovce děje (<em>nahrávka obrazovky</em>). To se hodí například, když chcete někomu ukázat, jak má něco na počítači udělat. Snímky a nahrávky obrazovky jsou ve skutečnosti normální soubory s obrázky a videi, takže je můžete posílat e-mailem nebo sdílet na webu.</p>
 
 <section id="screenshot">
-  <title>Take a screenshot</title>
+  <title>Pořídit snímek obrazovky</title>
 
   <steps>
     <item>
-      <p>Open <app>Screenshot</app> from the
-      <gui xref="shell-terminology">Activities</gui> overview.</p>
+      <p>Z přehledu <gui xref="shell-introduction#activities">Činnosti</gui> otevřete aplikaci <app>Snímek obrazovky</app>.</p>
     </item>
     <item>
-      <p>In the <app>Screenshot</app> window, select whether to grab the whole
-      screen, the current window, or an area of the screen. Set a delay if you
-      need to select a window or otherwise set up your desktop for the
-      screenshot. Then choose any effects you want.</p>
+      <p>V okně <app>Snímek obrazovky</app> vyberte, jestli chcete zachytit celou obrazovku, aktuální okno nebo nějakou oblast obrazovky. Nastavte si prodlevu v případě, že potřebujete čas na vybrání okna nebo nějaké nastavení uživatelského prostředí před pořízením snímku. Dále může zvolit některé z efektů.</p>
     </item>
     <item>
-       <p>Click <gui>Take Screenshot</gui>.</p>
-       <p>If you selected <gui>Select area to grab</gui>, the pointer changes
-       into a crosshair. Click and drag the area you want for the
-       screenshot.</p>
+       <p>Klikněte na <gui>Zachytit snímek obrazovky</gui>.</p>
+       <p>Pokud jste vybrali <gui>Vybrat zachytávanou oblast</gui>, změní se ukazatel na nitkový kříž. Kliknutím a táhnutím vyberte oblast, kterou chcete na snímku zachytit.</p>
     </item>
     <item>
-      <p>In the <gui>Save Screenshot</gui> window, enter a file name and choose
-      a folder, then click <gui>Save</gui>.</p>
-      <p>Alternatively, import the screenshot directly into an image-editing
-      application without saving it first. Click <gui>Copy to Clipboard</gui>
-      then paste the image in the other application, or drag the screenshot
-      thumbnail to the application.</p>
+      <p>V okně <gui>Uložení snímku obrazovky</gui> zadejte název souboru a zvolte složku. Nakonec klikněte na <gui>Uložit</gui>.</p>
+      <p>Případně můžete snímek obrazovky přímo naimportovat do aplikace pro úpravu obrázků, aniž byste jej nejdříve ukládali. Klikněte na <gui>Kopírovat do schránky</gui> a následně obrázek vložte do jiné aplikace nebo do ní přetáhněte náhled snímku.</p>
     </item>
   </steps>
 
-  <note style="tip">
+  <section id="keyboard-shortcuts">
     <title>Klávesové zkratky</title>
 
-    <p>Quickly take a screenshot of the desktop, a window, or an area at any
-    time using these global keyboard shortcuts:</p>
+    <p>K rychlému pořízení snímku obrazovky, okna nebo nějaké oblasti můžete kdykoliv použít globální klávesovou zkratku:</p>
 
     <list style="compact">
       <item>
-        <p><key>Prt Scrn</key> to take a screenshot of the desktop.</p>
+        <p><key>Prt Scrn</key> pořídí snímek celé obrazovky.</p>
       </item>
       <item>
-        <p><keyseq><key>Alt</key><key>Prt Scrn</key></keyseq> to take a
-        screenshot of a window.</p>
+        <p><keyseq><key>Alt</key><key>Prt Scrn</key></keyseq> pořídí snímek okna.</p>
       </item>
       <item>
-        <p><keyseq><key>Shift</key><key>Prt Scrn</key></keyseq> to take a
-        screenshot of an area you select.</p>
+        <p><keyseq><key>Shift</key><key>Prt Scrn</key></keyseq> pořídí snímek oblasti, kterou vyberete.</p>
       </item>
     </list>
 
-    <p>When you use a keyboard shortcut, the image is automatically saved in
-    your <file>Pictures</file> folder in your home folder with a file name that
-    begins with <file>Screenshot</file> and includes the date and time it was
-    taken.</p>
-    <p>You can also hold down <key>Ctrl</key> with any of the above shortcuts
-    to copy the screenshot image to the clipboard instead of saving it.</p>
-  </note>
+    <p>Když používáte klávesové zkratky, ukládají se obrázky automaticky do složky <file>Obrázky</file> ve vaší domovské složce. Název souboru začíná <file>Snímek obrazovky</file> a obsahuje datum a čas pořízení.</p>
+    <note style="note">
+      <p>V případě, že nemáte složku <file>Obrázky</file>, budou obrázky místo toho uloženy ve vaší domovské složce.</p>
+    </note>
+    <p>S kteroukoliv z výše uvedených klávesových zkratek můžete navíc držet současně zmáčknutou klávesu <key>Ctrl</key>. Snímek obrazovky se pak místo uložení zkopíruje do schránky.</p>
+  </section>
 
 </section>
 
 <section id="screencast">
-  <title>Make a screencast</title>
+  <title>Pořízení nahrávky obrazovky</title>
 
-  <p>You can make a video recording of what is happening on your screen:</p>
+  <p>Můžete vytvořit video s nahrávkou toho, co se děje na obrazovce:</p>
 
   <steps>
     <item>
-      <p>Press
-      <keyseq><key>Ctrl</key><key>Alt</key><key>Shift</key><key>R</key></keyseq>
-      to start recording what is on your screen.</p>
-      <p>A red circle is displayed in the bottom right corner of the screen
-      when the recording is in progress.</p>
+      <p>Zmáčknutím <keyseq><key>Ctrl</key><key>Alt</key><key>Shift</key><key>R</key></keyseq> začněte nahrávat, co se děje na vaší obrazovce.</p>
+      <p>Během probíhajícího nahrávání bude v pravém horním rohu obrazovky zobrazeno červené kolečko.</p>
     </item>
     <item>
-      <p>Once you have finished, press
-      <keyseq><key>Ctrl</key><key>Alt</key><key>Shift</key><key>R</key></keyseq>
-      again to stop the recording.</p>
+      <p>Až budete hotovi, zmáčkněte znovu <keyseq><key>Ctrl</key><key>Alt</key><key>Shift</key><key>R</key></keyseq> a nahrávání se zastaví.</p>
     </item>
     <item>
-      <p>The video is automatically saved in your <file>Videos</file> folder
-      in your home folder, with a file name that starts with
-      <file>Screencast</file> and includes the date and time it was taken.</p>
+      <p>Video se automaticky uloží do složky <file>Videa</file> ve vaší domovské složce, s názvem souboru začínajícím <file>Nahrávka obrazovky</file> a zahrnujícím datum a čas pořízení nahrávky.</p>
     </item>
   </steps>
+
+  <note style="note">
+    <p>V případě, že nemáte složku <file>Videa</file>, budou videa místo toho uloženy ve vaší domovské složce.</p>
+  </note>
 
 </section>
 

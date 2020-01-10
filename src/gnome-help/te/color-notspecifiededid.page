@@ -26,7 +26,15 @@
   </info>
 
   <title>అప్రమేయ మానిటర్ ప్రొఫైల్స్ కాలిబ్రేషన్ కాలపరిమితి ఎందుకు కలిగిలేవు?</title>
-  <p>ప్రతి మానిటర్ కొరకు వుపయోగించు అప్రమేయ రంగు ప్రొఫైల్ అనునది మానిటర్ లోపల మెమొరీ చిప్ నందు నిల్వవున్న EDID ప్రదర్శనపై ఆధారపడి స్వయంచాలకంగా జనియింపచేయబడును. మానిటర్ తయారుచేయబడినప్పుడు అది ప్రదర్శించగల రంగులలో అందుబాటులోని వాటి స్నాప్‌షాట్‌ను మాత్రమే EDID మనకు ఇచ్చును, మరియు రంగు దిద్దుబాటు కొరకు ఇతర సమాచారం కలిగిలేదు.</p>
+  <p>
+    The default color profile used for each monitor is generated
+    automatically based on the display 
+    <link href="https://en.wikipedia.org/wiki/Extended_Display_Identification_Data">
+    EDID</link> which is stored in a memory chip inside the monitor.
+    The EDID only gives us a snapshot of the available colors the monitor
+    was capable of displaying when it was manufactured, and does not
+    contain much other information for color correction.
+  </p>
 
   <figure>
     <desc>EDID నవీకరించలేని కారణంగా, అది గడువుతీరి తేదీ కలిగిలేదు.</desc>

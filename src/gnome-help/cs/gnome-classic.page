@@ -2,23 +2,22 @@
 <page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="question" version="1.0 if/1.0" id="gnome-classic" xml:lang="cs">
 
   <info>
-    <link type="guide" xref="shell-overview#desktop"/>
+<!--    <link type="guide" xref="shell-overview#desktop" />-->
 
     <revision pkgversion="3.10.1" date="2013-10-28" status="review"/>
 
     <credit type="author">
-      <name>GNOME Documentation Project</name>
+      <name>Dokumentační projekt GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="editor">
-      <name>Petr Kovar</name>
+      <name>Petr Kovář</name>
       <email>pknbe@volny.cz</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Consider switching to GNOME Classic if you prefer a more traditional
-     desktop experience.</desc>
+    <desc>Jestli dáváte přednost používání tradičního uživatelského prostředí, zvažte přepnutí na GNOME klasické.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
@@ -29,114 +28,84 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Marek Černocký</mal:name>
       <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:years>2014, 2015</mal:years>
     </mal:credit>
   </info>
 
-<title>What is GNOME Classic?</title>
+<title>Co je to GNOME klasické?</title>
 
 <if:choose>
   <if:when test="!platform:gnome-classic">
-  <p><em>GNOME Classic</em> is a feature for users who prefer a more traditional
-  desktop experience. While <em>GNOME Classic</em> is based on <em>GNOME 3</em>
-  technologies, it provides a number of changes to the user interface, such as
-  the <gui>Applications</gui> and
-  <gui>Places</gui> menus on the top bar, and a window
-  list at the bottom of the screen.</p>
+  <p><em>GNOME klasické</em> je vlastnost pro uživatele, kteří dávají přednost více tradičnímu ovládání uživatelského prostředí. I když je založené na technologiích <em>GNOME 3</em>, poskytuje řadu změn v uživatelském rozhraní, jako jsou nabídky <gui>Aplikace</gui> a <gui>Místa</gui> v horní liště a seznam oken v dolní části obrazovky.</p>
   </if:when>
   <if:when test="platform:gnome-classic">
-<p><em>GNOME Classic</em> is a feature for users who prefer a more traditional
-  desktop experience. While <em>GNOME Classic</em> is based on <em>GNOME 3</em>
-  technologies, it provides a number of changes to the user interface, such as
-  the <gui xref="shell-terminology">Applications</gui> and
-  <gui xref="shell-terminology">Places</gui> menus on the top bar, and a window
-  list at the bottom of the screen.</p>
+<p><em>GNOME klasické</em> je vlastnost pro uživatele, kteří dávají přednost více tradičnímu ovládání uživatelského prostředí. I když je založené na technologiích <em>GNOME 3</em>, poskytuje řadu změn v uživatelském rozhraní, jako jsou nabídky <gui xref="shell-introduction#activities">Aplikace</gui> a <gui>Místa</gui> v horní liště a seznam oken v dolní části obrazovky.</p>
   </if:when>
 </if:choose>
 
-<p>You can use the <gui>Applications</gui> menu on the top bar to launch
- applications. The <em xref="shell-terminology">
- <gui>Activities</gui> overview</em> is available by selecting the <gui>Activities
- Overview</gui> item from the menu.</p>
+<p>Ke spuštění aplikací můžete použít nabídku <gui>Aplikace</gui> na horní liště. Přehled <gui xref="shell-introduction#activities">Činností</gui> je přístupný přes položku <gui>Přehled činností</gui> v nabídce.</p>
 
-<p>To access the <em><gui>Activities</gui> overview</em>,
- you can also press the <key xref="keyboard-key-super">Super</key> key.</p>
+<p>K přístupu do <em>přehledu <gui>Činností</gui></em> můžete použít také zmáčknutí klávesy <key xref="keyboard-key-super">Super</key>.</p>
 
 <section id="gnome-classic-window-list">
-<title>Window list</title>
+<title>Seznam oken</title>
 
-<p>The window list at the bottom of the screen provides access to all your open
- windows and applications and lets you quickly minimize and restore them.</p>
+<p>Seznam oken ve spodní části obrazovky poskytuje přístup ke všem otevřeným oknům a aplikacím a umožňuje vám je rychle minimalizovat a obnovit do původní velikosti.</p>
 
-<p>At the right-hand side of the window list, GNOME displays a short
- identifier for the current workspace, such as <gui>1</gui> for the first
- (top) workspace. In addition, the identifier also displays the total number
- of available workspaces. To switch to a different workspace, you can click
- the identifier and select the workspace you want to use from the menu.</p>
+<p>Na pravé straně seznamu oken zobrazuje GNOME krátkou identifikaci aktuální pracovní plochy, např. <gui>1</gui> pro první (horní) pracovní plochu. Navíc zobrazuje identifikátor také celkový počet dostupných pracovních ploch. Když se chcete přepnout na jinou pracovní plochu, stačí kliknout na identifikátor a vybrat z nabídky pracovní plochu, kterou chcete.</p>
 
-<p>If an application or a system component wants to get your attention, it
- will display a blue icon at the right-hand side of the window list. Clicking
- the blue icon shows the <link xref="shell-notifications">message tray</link>,
- which lets you access all your notifications.</p>
+<p>Když chce některá aplikace nebo systémová komponenta získat vaši pozornost, zobrazí modrou ikonu na pravé straně seznamu oken. Kliknutím na modrou ikonu zobrazíte <link xref="shell-notifications">pořadač zpráv</link>, který poskytuje přístup ke všem upozorněním.</p>
 
 </section>
 
 <section id="gnome-classic-switch">
-<title>Switch to and from GNOME Classic</title>
+<title>Přepnutí na GNOME klasické a zpět</title>
 
 <note if:test="!platform:gnome-classic" style="important">
-<p>GNOME Classic is only available on systems with certain GNOME Shell extensions
- installed. Some Linux distributions may not have these extensions available or
- installed by default.</p>
+<p>GNOME klasické je dostupné jen na systémech s nainstalovanými konkrétními rozšířeními GNOME Shellu. V některýc linuxových distribucích nemusí mí tato rozšíření k dispozici nebo nemusí být nainstalována ve výchozím stavu.</p>
 </note>
 
   <steps>
-    <title>To switch from <em>GNOME</em> to <em>GNOME Classic</em>:</title>
+    <title>Když se chcete přepnout z <em>GNOME</em> na <em>GNOME klasické</em>:</title>
     <item>
-      <p>Save any open work, and then log out. Click the system menu on the right
-      side of the top bar, click your name and then choose the right option.</p>
+      <p>Uložte otevřenou práci a odhlaste se. Klikněte na systémovou nabídku na pravé straně horní lišty, klikněte na své jméno a pak vyberte příslušnou volbu.</p>
     </item>
     <item>
-      <p>A confirmation message will appear. Select <gui>Log Out</gui> to
-      confirm.</p>
+      <p>Objeví se potvrzovací zpráva. Potvrďte volbou <gui>Odhlásit se</gui>.</p>
     </item>
     <item>
-      <p>At the login screen, select your name from the list.</p>
+      <p>Na přihlašovací obrazovce vyberte v seznamu své jméno.</p>
     </item>
     <item>
-      <p>Enter your password in the password entry box.</p>
+      <p>Do vstupního pole pro heslo zadejte své heslo.</p>
     </item>
     <item>
-      <p>Click the options icon, which is displayed to the left of the <gui>Sign
-      In</gui> button, and select <gui>GNOME Classic</gui>.</p>
+      <p>Klikněte na ikonu voleb, která je zobrazená vedle tlačítka <gui>Přihlásit</gui> a vyberte <gui>GNOME klasické</gui>.</p>
     </item>
     <item>
-      <p>Click the <gui>Sign In</gui> button.</p>
+      <p>Klikněte na tlačítko <gui>Přihlásit se</gui>.</p>
     </item>
   </steps>
 
   <steps>
-    <title>To switch from <em>GNOME Classic</em> to <em>GNOME</em>:</title>
+    <title>Když se chcete přepnout z <em>GNOME klasického</em> na <em>GNOME</em>:</title>
     <item>
-      <p>Save any open work, and then log out. Click the system menu on the right
-      side of the top bar, click your name and then choose the right option.</p>
+      <p>Uložte otevřenou práci a odhlaste se. Klikněte na systémovou nabídku na pravé straně horní lišty, klikněte na své jméno a pak vyberte příslušnou volbu.</p>
     </item>
     <item>
-      <p>A confirmation message will appear. Select <gui>Log Out</gui> to
-      confirm.</p>
+      <p>Objeví se potvrzovací zpráva. Potvrďte volbou <gui>Odhlásit se</gui>.</p>
     </item>
     <item>
-      <p>At the login screen, select your name from the list.</p>
+      <p>Na přihlašovací obrazovce vyberte v seznamu své jméno.</p>
     </item>
     <item>
-      <p>Enter your password in the password entry box.</p>
+      <p>Do vstupního pole pro heslo zadejte své heslo.</p>
     </item>
     <item>
-      <p>Click the options icon, which is displayed to the left of the <gui>Sign
-      In</gui> button, and select <gui>GNOME</gui>.</p>
+      <p>Klikněte na ikonu voleb, která je zobrazená vedle tlačítka <gui>Přihlásit</gui> a vyberte <gui>GNOME</gui>.</p>
     </item>
     <item>
-      <p>Click the <gui>Sign In</gui> button.</p>
+      <p>Klikněte na tlačítko <gui>Přihlásit se</gui>.</p>
     </item>
   </steps>
   

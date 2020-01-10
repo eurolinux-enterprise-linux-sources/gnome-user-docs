@@ -4,7 +4,7 @@
     <link type="guide" xref="disk"/>
 
     <credit type="author">
-      <name>GNOME Documentation Project</name>
+      <name>Dokumentační projekt GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="author">
@@ -19,8 +19,7 @@
     <revision pkgversion="3.4.3" date="2012-06-15" status="review"/>
     <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
 
-    <desc>Use <gui>Disk Usage Analyzer</gui> or <gui>System Monitor</gui> to
-    check space and capacity.</desc>
+    <desc>Jak použít <gui>Analyzátor využití disku</gui> nebo <gui>Sledování systému</gui> ke zjištění volného místa a kapacity.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -32,73 +31,59 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Marek Černocký</mal:name>
       <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:years>2014, 2015</mal:years>
     </mal:credit>
   </info>
 
-<title>Check how much disk space is left</title>
+<title>Kontrola volného místa na disku</title>
 
-  <p>You can check how much disk space is left with <app>Disk Usage Analyzer</app>
- or <app>System Monitor</app>.</p>
+  <p>Kolik vám na disku zbývá volného místa můžete zjistit pomocí <app>Analyzátoru využití disku</app> nebo pomocí <app>Sledování systému</app>.</p>
 
 <section id="disk-usage-analyzer">
-<title>Check with Disk Usage Analyzer</title>
+<title>Kontrola pomocí Analyzátoru využití disku</title>
 
-  <p>To check the free disk space and disk capacity using <app>Disk Usage
-  Analyzer</app>:</p>
+  <p>Když chcete zjistit volné místo na disku a jeho kapacitu pomocí <app>Analyzátoru využití disku</app>: </p>
 
   <list>
     <item>
-      <p>Open <app>Disk Usage Analyzer</app> from the <gui>Activities</gui>
-      overview. The window will display a list of file locations together with
-      the usage and capacity of each.</p>
+      <p>Z přehledu <gui>Činnosti</gui> otevřete <app>Analyzátor využití disku</app>. Okno zobrazí seznam umístění souborů společně s použitým místem a celkovou kapacitou u každého.</p>
     </item>
     <item>
-      <p>Click one of the items in the list to view a detailed summary of the
-      usage for that item. Click the menu button, and then <gui>Scan
-      Folder…</gui> or <gui>Scan Remote Folder…</gui> to scan a different
-      location.</p>
+      <p>Kliknutím na položku v seznamu se zobrazí podrobný přehled využití pro tuto položku. Kliknutím na tlačítko s nabídkou a volbou <gui>Projít složku…</gui> nebo <gui>Projít vzdálenou složku…</gui> můžete provést analýzu jiného umístění.</p>
     </item>
   </list>
-  <p>The information is displayed according to <gui>Folder</gui>,
-  <gui>Size</gui>, <gui>Contents</gui> and when the data was last
-  <gui>Modified</gui>. See more details in <link href="help:baobab"><app>Disk
-  Usage Analyzer</app></link>.</p>
+  <p>Informace jsou zobrazeny podle <gui>Složky</gui>, <gui>Velikosti</gui>, <gui>Obsahu</gui> a toho, kdy byla data naposledy <gui>Změněna</gui>. Podrobnější informace viz <link href="help:baobab"><app>Analyzátor využití disku</app></link>.</p>
 
 </section>
 
 <section id="system-monitor">
 
-<title>Check with System Monitor</title>
+<title>Kontrola pomocí Sledování systému</title>
 
-  <p>To check the free disk space and disk capacity with <app>System Monitor</app>:</p>
+  <p>Když chcete zjistit volné místo na disku a jeho kapacitu pomocí <app>Sledování systému</app>: </p>
 
 <steps>
  <item>
-  <p>Open the <app>System Monitor</app> application from the <gui>Activities</gui>
-  overview.</p>
+  <p>Z přehledu <gui>Činnosti</gui> otevřete aplikaci <app>Sledování systému</app>.</p>
  </item>
  <item>
-  <p>Select the <gui>File Systems</gui> tab to view the system's partitions and
-  disk space usage.  The information is displayed according to <gui>Total</gui>,
-  <gui>Free</gui>, <gui>Available</gui> and <gui>Used</gui>.</p>
+  <p>Vyberte kartu <gui>Souborové systémy</gui>, aby se zobrazily diskové oddíly a využití místa na nich. Zobrazeny jsou údaje <gui>Celkem</gui>, <gui>Volné</gui>, <gui>K dispozici</gui> a <gui>Použito</gui>.</p>
  </item>
 </steps>
 </section>
 
 <section id="disk-full">
 
-<title>What if the disk is too full?</title>
+<title>Co dělat, když je disk plný?</title>
 
-  <p>If the disk is too full you should:</p>
+  <p>Pokud je disk příliš zaplněný, měli byste:</p>
 
  <list>
   <item>
-   <p>Delete files that aren't important or that you won't use anymore.</p>
+   <p>Smazat soubory, které nejsou důležité nebo je již nebudete nikdy potřebovat.</p>
   </item>
   <item>
-   <p>Make <link xref="backup-why">backups</link> of the important files that
-   you won't need for a while and delete them from the hard drive.</p>
+   <p>Provést <link xref="backup-why">zálohu</link> důležitých souborů, které běžně nepotřebujete a z disku je smazat.</p>
   </item>
  </list>
 </section>

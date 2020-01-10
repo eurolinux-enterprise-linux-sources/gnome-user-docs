@@ -6,10 +6,21 @@
     <link type="seealso" xref="net-findip"/>
 
     <revision pkgversion="3.4.0" date="2012-03-13" status="final"/>
+    <revision pkgversion="3.15" date="2014-12-04" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Jim Campbell</name>
-      <email its:translate="no">jwcampbell@gmail.com</email>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -19,7 +30,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -65,25 +76,37 @@
 
   <steps>
     <item>
-      <p><gui>トップバー</gui>で<gui>ネットワークアイコン</gui>をクリックし、<gui>ネットワーク設定</gui>を選択します。</p>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Network</gui>.</p>
     </item>
     <item>
-      <p>一覧からネットワーク接続を選択してから (<gui>有線</gui>または<gui>無線</gui>) <gui>設定</gui>をクリックします。</p>
+      <p><gui>ネットワーク</gui>を選択して設定パネルを開きます。</p>
     </item>
     <item>
-      <p><gui>IPv4 設定</gui>タブをクリックして<gui>メソッド</gui>を<em>手動</em>に変更します。</p>
+      <p>In the left pane, select the network connection that you want to give
+      a fixed address. If you plug in to the network with a cable, click
+      <gui>Wired</gui>, then click the
+      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media> button in the lower right corner of
+      the panel. For a <gui>Wi-Fi</gui> connection, the 
+      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
+      button will be located next to the active network.</p>
     </item>
     <item>
-      <p><gui>アドレス</gui>一覧に接続情報がない場合、または新規の接続を設定する場合には<gui>追加</gui>をクリックします。</p>
+      <p>Click on the <gui>IPv4</gui> or <gui>IPv6</gui> tab
+      and change the <gui>Addresses</gui> to <em>Manual</em>.</p>
     </item>
     <item>
-      <p><em>IP アドレス</em>、<em>ネットマスク</em>、<em>ゲートウェイ</em>の情報を該当ボックスに入力します。行うネットワークの設定により入力情報は異なります。ネットワークにより有効な IP アドレスやネットマスクを指定しているルールがあります。</p>
+      <p>Enter the <em>Address</em>, <em>Netmask</em>, and <em>Gateway</em>
+      information into the appropriate boxes. How you choose these will depend
+      on your network setup; there are specific rules governing which IP
+      addresses and netmasks are valid for a given network.</p>
     </item>
     <item>
       <p>必要であれば、<em>ドメインネームサーバー</em>のアドレスを <gui>DNS サーバー</gui>のボックスに入力します。これはドメイン名を検索するサーバーの IP アドレスになります。企業ネットワークやインターネットプロバイダーの場合、ほとんどが専用の DNS サーバーを持っています。</p>
     </item>
     <item>
-      <p><gui>保存</gui>をクリックします。これでこのネットワーク接続は固定 IP アドレスになるはずです。</p>
+      <p>Click <gui>Apply</gui>. The network connection should now have a fixed
+      IP address.</p>
     </item>
   </steps>
 

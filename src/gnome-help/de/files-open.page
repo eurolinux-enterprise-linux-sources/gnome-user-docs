@@ -2,10 +2,11 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-open" xml:lang="de">
 
   <info>
-    <link type="guide" xref="files" group="more"/>
+    <link type="guide" xref="files#more-file-tasks"/>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-30" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="candidate"/>
 
     <credit type="author">
       <name>Cristopher Thomas</name>
@@ -35,7 +36,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Christian Kirbach</mal:name>
       <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2014.</mal:years>
+      <mal:years>2011-2016.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -53,19 +54,11 @@
 
 <title>Dateien mit anderen Anwendungen öffnen</title>
 
-<p>Wenn Sie in der Dateiverwaltung auf eine Datei doppelt klicken, wird sie mit der Standardanwendung für diesen Dateityp geöffnet. Sie können sie aber auch mit einer anderen Anwendung öffnen, online nach Anwendungen suchen oder die Standardanwendung für alle Dateien des gleichen Typs ändern.</p>
+  <p>Wenn Sie in der Dateiverwaltung auf eine Datei doppelt klicken (oder mit der mittleren Maustaste), dann wird sie mit der Standardanwendung für diesen Dateityp geöffnet. Sie können sie aber auch mit einer anderen Anwendung öffnen, online nach Anwendungen suchen oder die Standardanwendung für alle Dateien des gleichen Typs ändern.</p>
 
-<p>To open a file with an application other than the default, right-click
-the file and select the application you want from the top of the menu. If
-you do not see the application you want, select <gui>Open With</gui>. By
-default, the file manager only shows applications it knows can handle the file.
-To look through all the applications on your computer, click <gui>Other
-Application…</gui>.</p>
+  <p>Um eine Datei mit einer anderen als der Standardanwendung zu öffnen, klicken Sie mit der rechten Maustaste auf die Datei und wählen Sie die Anwendung oben im Menü. Wenn die gewünschte Anwendung nicht dabei ist, klicken Sie auf <gui>Mit anderer Anwendung öffnen</gui>. Die Dateiverwaltung zeigt Ihnen nur die Anwendungen, von denen bekannt ist, dass Sie mit der Datei umgehen können. Um alle Anwendungen auf Ihrem Rechner zu durchsuchen, klicken Sie auf <gui>Alle Anwendungen anzeigen</gui>.</p>
 
-<p>If you still cannot find the application you want, you can search for
-more applications by clicking <gui>Find New Applications</gui>. The
-file manager will search online for packages containing applications
-that are known to handle files of that type.</p>
+<p>Wenn die gewünschte Anwendung auch hier nicht auffindbar ist, können Sie nach weiteren Anwendungen suchen, indem Sie auf <gui>Neue Anwendungen suchen</gui> klicken. Die Dateiverwaltung sucht dann online nach Softwarepaketen mit Anwendungen, die mit diesem Dateityp umgehen können.</p>
 
 <section id="default">
   <title>Ändern der Standardanwendung</title>
@@ -75,15 +68,13 @@ that are known to handle files of that type.</p>
     <item><p>Wählen Sie eine Datei des Typs, dessen Standardanwendung Sie wechseln möchten. Um zum Beispiel die Anwendung zu ändern, die MP3-Dateien öffnet, wählen Sie eine <file>.mp3</file>-Datei.</p></item>
     <item><p>Klicken Sie mit der rechten Maustaste auf die Datei und wählen Sie <gui>Eigenschaften</gui>.</p></item>
     <item><p>Wählen Sie den Reiter <gui>Öffnen mit</gui>.</p></item>
-    <item><p>Wählen Sie die gewünschte Anwendung und klicken Sie auf <gui>Als Vorgabe festlegen</gui>. Standardmäßig zeigt die Dateiverwaltung nur die Anwendungen, von denen bekannt ist, dass Sie mit der Datei umgehen können. Um alle Anwendungen auf Ihrem Rechner zu durchsuchen, klicken Sie auf <gui>Andere Anwendungen anzeigen</gui>.</p>
-    <p>If <gui>Other Applications</gui> contains an application you sometimes
-    want to use, but do not want to make the default, select that application
-    and click <gui>Add</gui>. This will add it to <gui>Recommended
-    Applications</gui>. You will then be able to use this application by
-    right-clicking the file and selecting it from the list.</p></item>
+    <item><p>Wählen Sie die gewünschte Datei aus und klicken Sie auf <gui>Als Vorgabe festlegen</gui>.</p>
+    <p>Wenn <gui>Weitere Anwendungen</gui> eine Anwendung enthält, die Sie manchmal verwenden, aber nicht als Vorgabe festlegen wollen, wählen Sie diese Anwendung und klicken Sie auf <gui>Hinzufügen</gui>. Dadurch wird sie zur Rubrik <gui>Empfohlene Anwendungen</gui> hinzugefügt. Sie können diese Anwendung danach verwenden, indem Sie mit der rechten Maustaste auf eine Datei klicken und sie aus der Liste auswählen.</p></item>
   </steps>
 
   <p>Das ändert die Standardanwendung nicht nur für die gewählte Datei, sondern für alle Dateien dieses Typs.</p>
+
+<!-- TODO: mention resetting the open with list with the "Reset" button -->
 
 </section>
 

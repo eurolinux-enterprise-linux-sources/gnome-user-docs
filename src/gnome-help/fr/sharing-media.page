@@ -8,15 +8,16 @@
     <revision pkgversion="3.10" version="0.2" date="2013-11-02" status="review"/>
     <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
     <revision pkgversion="3.14" date="2014-10-13" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
 
     <credit type="author">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Share media on your local network using UPnP.</desc>
+    <desc>Partager les médias sur votre réseau local en utilisant UPnP.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Luc Pionchon</mal:name>
@@ -33,7 +34,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2014</mal:years>
+      <mal:years>2011-2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -65,6 +66,12 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
   <title>Partage de votre musique, de vos photos et vidéos</title>
@@ -83,7 +90,8 @@
 
   <steps>
     <item>
-      <p>Ouvrez la vue d'ensemble des <gui xref="shell-terminology">Activités</gui> et commencez à saisir <gui>Partage</gui>.</p>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Sharing</gui>.</p>
     </item>
     <item>
       <p>Cliquez sur <gui>Partage</gui> pour ouvrir le panneau.</p>
@@ -97,30 +105,23 @@
       <p>Choisissez <gui>Partager les médias</gui>.</p>
     </item>
     <item>
-      <p>Switch <gui>Media Sharing</gui> to <gui>ON</gui>.</p>
+      <p>Basculer l'interrupteur <gui>Partager les médias</gui> sur <gui>Activé</gui>.</p>
     </item>
     <item>
-      <p>By default, <file>Music</file>, <file>Pictures</file> and 
-      <file>Videos</file> are shared. To remove one of these, click the
-      <gui>X</gui> next to the folder name.</p>
+      <p>Par défaut, les dossiers <file>Musique</file>, <file>Images</file> et <file>Vidéos</file> sont partagés. Pour en retirer un, cliquez sur <gui>X</gui> à côté de son nom.</p>
     </item>
     <item>
-      <p>To add another folder, click <gui style="button">+</gui> to open the
-      <gui>Choose a folder</gui> window. Navigate <em>into</em> the desired
-      folder and click <gui style="button">Open</gui>.</p>
+      <p>Pour ajouter un autre dossier, cliquez sur le bouton <gui style="button">+</gui> pour ouvrir la boîte de dialogue <gui>Choisir un dossier</gui>. Allez <em>dans</em> le dossier désiré et cliquez sur <gui style="button">Ouvrir</gui>.</p>
     </item>
     <item>
-      <p>Click <gui style="button">X</gui>. You will now be able to browse
-      or play media in the folders you selected using the external device.</p>
+      <p>Cliquez sur <gui style="button">X</gui>. Vous pouvez maintenant explorer ou lire les médias dans les dossiers que vous avez sélectionnés en utilisant le périphérique externe.</p>
     </item>
   </steps>
 
   <section id="networks">
-  <title>Networks</title>
+  <title>Réseaux</title>
 
-  <p>The <gui>Networks</gui> section lists the networks to which you are
-  currently connected. Use the <gui>ON | OFF</gui> switch next to each to
-  choose where your media can be shared.</p>
+  <p>La section <gui>Réseaux</gui> affiche la liste des réseaux auxquels vous êtes actuellement connecté. Utilisez l'interrupteur <gui>Activé | Désactivé</gui> de chaque réseau pour choisir avec qui vous autorisez le partage de votre média.</p>
 
   </section>
 

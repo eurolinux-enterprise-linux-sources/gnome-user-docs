@@ -11,58 +11,63 @@
 
     <credit type="author">
       <name>Richard Hughes</name>
-      <email its:translate="no">richard@hughsie.com</email>
+      <email>richard@hughsie.com</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Look in <guiseq><gui>Settings</gui><gui>Color</gui></guiseq> to add a color profile for your screen.</desc>
+    <desc>I <guiseq><gui>Inställningar</gui><gui>Färg</gui></guiseq> kan du lägga till en färgprofil för din skärm.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
   </info>
 
-  <title>How do I assign profiles to devices?</title>
+  <title>Hur associerar jag färgprofiler till enheter?</title>
 
-  <p>You may want to assign a color profile for your screen or printer so that
-  the colours which it shows are more accurate.</p>
+  <p>Du kan vilja associera en färgprofil med din skärm eller skrivare så att färgerna den återger är mer korrekta.</p>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-terminology">Activities</gui> overview and
-      start typing <gui>Color</gui>.</p>
+      <p>Öppna översiktsvyn <gui xref="shell-introduction#activities">Aktiviteter</gui> och börja skriv <gui>Färg</gui>.</p>
     </item>
     <item>
-      <p>Click on <gui>Color</gui> to open the panel.</p>
+      <p>Klicka på <gui>Färg</gui> för att öppna panelen.</p>
     </item>
     <item>
-      <p>Select the device for which you want to add a profile.</p>
+      <p>Välj enheten för vilken du vill lägga till en profil.</p>
     </item>
     <item>
-      <p>Click <gui>Add profile</gui> to select an existing profile or import
-      a new profile.</p>
+      <p>Klicka på <gui>Lägg till profil</gui> för att välja en existerande profil eller importera en ny profil.</p>
     </item>
     <item>
-      <p>Press <gui>Add</gui> to confirm your selection.</p>
+      <p>Tryck på <gui>Lägg till</gui> för att bekräfta ditt val.</p>
     </item>
   </steps>
 
-  <p>Each device can have multiple profiles assigned to it, but only one
-  profile can be the <em>default</em> profile. The default profile is used when
-  there is no extra information to allow the profile to be chosen
-  automatically. An example of this automatic selection would be if one profile
-  was created for glossy paper and another plain paper.</p>
+  <p>Varje enhet kan ha flera profiler associerade med sig, men det är bara en profil som kan vara <em>standardprofilen</em>. Standardprofilen används när det inte finns någon ytterligare information som låter enheten att välja en profil automatiskt. Ett exempel på detta automatiska val skulle kunna vara om en profil skapats för blankt papper och en annan för vanligt papper.</p>
 
   <!--
   <figure>
@@ -71,7 +76,6 @@
   </figure>
   -->
 
-  <p>If calibration hardware is connected, the <gui>Calibrate…</gui> button
-  will create a new profile.</p>
+  <p>Om kalibreringshårdvaran är ansluten kommer knappen <gui>Kalibrera…</gui> att skapa en ny profil.</p>
 
 </page>

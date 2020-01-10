@@ -2,14 +2,13 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-connect" xml:lang="es">
 
   <info>
-    <link type="guide" xref="files" group="more"/>
+    <link type="guide" xref="files#more-file-tasks"/>
     <link type="guide" xref="sharing"/>
 
     <revision pkgversion="3.6.0" date="2012-10-06" status="review"/>
     <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
     <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
-
-    <desc>Ver y editar archivos en otro equipo sobre FTP, SSH, compartidos de Windows o WebDAV.</desc>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -19,12 +18,20 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Ver y editar archivos en otro equipo sobre FTP, SSH, compartidos de Windows o WebDAV.</desc>
+
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2011 - 2014</mal:years>
+      <mal:years>2011 - 2016</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -50,18 +57,19 @@
 
 <p>Puede conectarse a un servidor o a un recurso compartido para buscar y ver los archivos en el servidor, exactamente como si estuvieran en su máquina local o dispositivo extraíble. Esta es una manera conveniente para descargar o subir archivos, o para compartir archivos con usuarios en su red local.</p>
 
-<p>Para examinar archivos en la red, abra la aplicación <app>Archivos</app> de la vista general de <gui>Actividades</gui> y pulse <gui>Navegar por la red</gui> en la barra lateral. El gestor de archivos buscará cualquier equipo en su red de área local que informe su habilidad para servir archivos. Si quiere conectarse a un servidor de Internet, o si no ve el equipo que está buscando, puede conectarse manualmente a un servidor introduciendo su dirección de red o de Internet.</p>
+<p>Para examinar archivos en la red, abra la aplicación <app>Archivos</app> de la vista de <gui>Actividades</gui> y pulse en <gui>Otras ubicaciones</gui> en la barra lateral. El gestor de archivos buscará cualquier equipo en su red de área local que informe su posibilidad para servir archivos. Si quiere conectarse a un servidor de Internet, o si no ve el equipo que está buscando, puede conectarse manualmente a un servidor introduciendo su dirección de red o de Internet.</p>
 
 <steps>
   <title>Conectar con un servidor de archivos</title>
-  <item><p>En el gestor de archivos, pulse <gui>Conectar al servidor</gui> en la barra lateral.</p>
+  <item><p>En el gestor de archivos, pulse <gui>Otras ubicaciones</gui> en la barra lateral.</p>
   </item>
-  <item><p>Introduzca la dirección del servidor, en el formulario de un <link xref="#urls">URL</link>. Los detalles sobre los URL soportados están <link xref="#types">listadas a continuación</link>.</p>
+  <item><p>En <gui>Conectar al servidor</gui>, introduzca la dirección del servidor, en forma de <link xref="#urls">URL</link>. Los detalles sobre los URL soportados se <link xref="#types">muestran a continuación</link>.</p>
   <note>
     <p>Si se ha conectado antes al servidor, puede pulsar en él en la lista <gui>Servidores recientes</gui>.</p>
   </note>
   </item>
-  <item><p>Pulse <gui>Conectar</gui>. Se abrirá una nueva ventana mostrando los archivos en el servidor. Puede examinar los archivos de igual forma que si estuviesen en su mismo equipo. El servidor se añadirá a la barra lateral, por lo que podrá acceder a él fácilmente en el futuro.</p>
+  <item>
+    <p>Pulse <gui>Conectar</gui>. Se mostrarán los archivos en el servidor. Puede examinar los archivos de igual forma que si estuviesen en su mismo equipo. El servidor se añadirá a la barra lateral, por lo que podrá acceder a él fácilmente en el futuro.</p>
   </item>
 </steps>
 
@@ -128,9 +136,17 @@
 <item>
   <title>WebDAV y WebDAV seguro</title>
   <p>Basado en el protocolo HTTP usado en la web, a veces se usa WebDAV para compartir archivos en una red local o guardarlos en Internet. Si el servidor al que se está conectando admite conexiones seguras, debería escoger esta opción. WebDAV seguro usa cifrado SSL fuerte, por lo que nadie podrá ver su contraseña ni sus datos.</p>
-  <p>Un URL de WebDAV típico se parece a esto:</p>
+  <p>Un URL de WebDAV se parece a esto:</p>
   <example>
-    <p><sys>http://ejemplo.servidor.com/ruta</sys></p>
+    <p><sys>dav://ejemplo.servidor.com/ruta</sys></p>
+  </example>
+</item>
+<item>
+  <title>Compartición NFS</title>
+  <p>Tradicionalmente, los equipos UNIX usando el protocolo NFS para comaprtir archivos en una red local. En NFS, la seguridad se basa en el UID del usuario que acceder al recurso compartido, por lo que no se necesitan credenciales de autenticación al conectarse.</p>
+  <p>Un URL de compartición NFS típico se parece a esto:</p>
+  <example>
+    <p><sys>nfs://servidor/ruta</sys></p>
   </example>
 </item>
 </terms>

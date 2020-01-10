@@ -3,7 +3,7 @@
 
   <info>
     <link type="seealso" xref="shell-apps-open"/>
-    <link type="guide" xref="shell-overview#apps"/>
+    <link type="guide" xref="shell-overview#desktop"/>
 
     <revision pkgversion="3.6.0" date="2012-10-14" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
@@ -29,7 +29,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2011 - 2014</mal:years>
+      <mal:years>2011 - 2016</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -53,12 +53,12 @@
 
   <title>Anclar sus aplicaciones favoritas al tablero</title>
 
-  <p>Para añadir una aplicación al <link xref="shell-terminology">tablero</link> y poder acceder a ella fácilmente:</p>
+  <p>Para añadir una aplicación al <link xref="shell-introduction#activities">tablero</link> y poder acceder a ella fácilmente:</p>
 
   <steps>
     <item>
-      <p if:test="!platform:gnome-classic">Abra la <link xref="shell-terminology">vista de actividades</link> pulsando en <gui>Actividades</gui> en la parte superior izquierda de la pantalla</p>
-      <p if:test="platform:gnome-classic">Pulse en el <link xref="shell-terminology">menú <gui>Aplicaciones</gui></link> en la parte superior izquierda de la pantalla y elija el elemento <gui>Vista de actividades</gui> del menú.</p></item>
+      <p if:test="!platform:gnome-classic">Abra la vista de <gui xref="shell-introduction#activities">Actividades</gui> pulsando en <gui>Actividades</gui> en la parte superior izquierda de la pantalla</p>
+      <p if:test="platform:gnome-classic">Pulse en el menú de <gui xref="shell-introduction#activities">Aplicaciones</gui> en la parte superior izquierda de la pantalla y elija el elemento <gui>Vista de actividades</gui> del menú.</p></item>
     <item>
       <p>Pulse en el botón de la rejilla en el tablero para buscar la aplicación que quiere.</p>
     </item>
@@ -70,7 +70,7 @@
 
   <p>Para quitar el icono de una aplicación del tablero, pulse con el botón derecho sobre el icono de la aplicación y seleccione <gui>Quitar de los favoritos</gui>.</p>
 
-  <note style="tip" if:test="platform:gnome-classic"><p>Las aplicaciones favoritas también aparecen en la sección <gui>Favoritos</gui> del <link xref="shell-terminology">menú de <gui>Aplicaciones</gui></link>.</p>
+  <note style="tip" if:test="platform:gnome-classic"><p>Las aplicaciones favoritas también aparecen en la sección <gui>Favoritos</gui> del menú de <gui xref="shell-introduction#activities">Aplicaciones</gui>.</p>
   </note>
 
 </page>

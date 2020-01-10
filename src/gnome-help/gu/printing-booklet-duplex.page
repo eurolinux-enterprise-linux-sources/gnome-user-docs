@@ -6,20 +6,28 @@
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>ટિફની એન્ટોપોલસ્કી</name>
       <email>tiffany@antopolski.com</email>
     </credit>
+    <credit type="author editor">
+      <name>પેટર કોવર</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>સામાન્ય A4/Letter-માપનું પેપરની મદદથી ફોલ્ડ થયેલ બુકલેટ (જેમ કે ચોપડી અથવા પેમ્પલેટ) ને છાપો.</desc>
+    <desc>Print folded booklets (like a book or pamphlet) from a PDF using normal
+    A4/Letter-size paper.</desc>
   </info>
 
-  <title>ફોલ્ડ થયેલ બુકલેટને છાપો</title>
+  <title>Print a booklet on a double-sided printer</title>
 
-  <p>તમે ખાસ ક્રમમાં દસ્તાવેજનાં પાનાંને છાપવા દ્દારા ફોલ્ડ થયેલ બુકલેટ (જેમ કે નાની બુક અથવા પેમ્પલેટ) ને બનાવી શકો છો અને ઘણાં છાપન વિકલ્પોને બદલી રહ્યા છે.</p>
+  <p>You can make a folded booklet (like a small book or pamphlet) by printing
+  pages of a document in a special order and changing a couple of printing
+  options.</p>
 
   <p>આ સૂચનાઓ PDF દસ્તાવેજમાંથી બુકલેટને છાપવા માટે હોય છે.</p>
 
@@ -35,8 +43,15 @@
       <p>પ્રિન્ટ સંવાદને ખોલો. આ સામાન્ય રીતે મેનુમાં <gui style="menuitem">છાપો</gui> મારફતે પૂર્ણ કરી શકાય છે અથવા <keyseq><key>Ctrl</key><key>P</key></keyseq> કિબોર્ડ ટૂંકાણોને વાપરી રહ્યા છે.</p>
     </item>
     <item>
-      <p>Go to the <gui>General</gui> tab. Under <gui>Range</gui>, choose
-      <gui>Pages</gui>.</p>
+      <p>Click the <gui>Properties...</gui> button </p>
+      <p>In the <gui>Orientation</gui> drop-down list, make sure that
+      <gui>Landscape</gui> is selected.</p>
+      <p>In the <gui>Duplex</gui> drop-down list, select <gui>Short Edge</gui>.
+      </p>
+      <p>Click <gui>OK</gui> to go back to the print dialog.</p>
+    </item>
+    <item>
+      <p>Under <gui>Range and Copies</gui>, choose <gui>Pages</gui>.</p>
     </item>
     <item>
       <p>પાનાંઓની સંખ્યા આ ક્રમમાં લખો (n એ પાનાંઓની કુલ સંખ્યા છે, અને 4 નો ગુણક છે):</p>
@@ -49,12 +64,10 @@
       </list>
     </item>
     <item>
-      <p>હવે, <gui>પાનાં સુયોજન</gui> ટેબ પર જાવ.</p>
-      <p>Under <gui>Layout</gui>, in the <gui>Two-sided</gui> drop-down list,
-      select <gui>Short Edge (Flip)</gui>.</p>
-      <p>In the <gui>Pages per side</gui> drop-down list, select
-      <gui>2</gui>.</p>
-      <p><gui>પાનાં ક્રમાંકિત</gui> મેનુમાં, <gui>ડાબેથી જમણે</gui> પસંદ કરો.</p>
+      <p>Choose the <gui>Page Layout</gui> tab.</p>
+      <p>Under <gui>Layout</gui>, select <gui>Brochure</gui>.</p>
+      <p>Under <gui>Page Sides</gui>, in the <gui>Include</gui> drop-down list,
+      select <gui>All pages</gui>.</p>
     </item>
     <item>
       <p><gui>છાપો</gui> પર ક્લિક કરો.</p>

@@ -4,9 +4,8 @@
   <info>
     <link type="guide" xref="nautilus-prefs" group="nautilus-preview"/>
 
-    <desc>Control when thumbnails are used for files.</desc>
-
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-30" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -16,44 +15,47 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <desc>Styr när miniatyrbilder används för filer.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
   </info>
 
-<title>File manager preview preferences</title>
+<title>Förhandsgranskningsinställningar för filhanterare</title>
 
-<p>The file manager creates thumbnails to preview image, video, and text
-files. Thumbnail previews can be slow for large files or over networks, so
-you can control when previews are made. Click <gui>Files</gui> in the top bar,
-pick <gui>Preferences</gui> and select the <gui>Preview</gui> tab.</p>
+<p>Filhanteraren skapar miniatyrbilder för att förhandsgranska bild-, video- och textfiler. Att skapa miniatyrbilder kan ta lång tid för stora filer eller över nätverk, så du kan styra när förhandsgranskning görs. Klicka på <gui>Filer</gui> i systemraden, välj <gui>Inställningar</gui> och välj fliken <gui>Förhandsgranskning</gui>.</p>
 
 <terms>
   <item>
     <title><gui>Filer</gui></title>
-    <p>By default, all previews are done for <gui>Local Files Only</gui>, those
-    on your computer or connected external drives. You can set this feature to
-    <gui>Always</gui> or <gui>Never</gui>. The file manager can
-    <link xref="nautilus-connect">browse files on other computers</link> over
-    a local area network or the internet. If you often browse files over a local
-    area network, and the network has high bandwidth, you may want to set the
-    preview option to <gui>Always</gui>.</p>
-    <p>In addition, you can use the <gui>Only for files smaller than</gui>
-    setting to limit the size of files previewed.</p>
+    <p>Som standard görs förhandsgranskningar <gui>Endast lokala filer</gui>, de på din dator eller anslutna externa hårddiskar. Du kan ställa in denna funktion på <gui>Alltid</gui> eller <gui>Aldrig</gui>. Filhanteraren kan <link xref="nautilus-connect">bläddra bland filer på andra datorer</link> över ett lokalt nätverk eller internet. Om du ofta bläddrar bland filer över ett lokalt nätverk och nätverket har en hög bandbredd kan det vara lämpligt att sätta förhandsgranskningsalternativet till <gui>Alltid</gui>.</p>
+    <p>Dessutom kan du använda inställningen <gui>Endast för filer mindre än</gui> för att begränsa storleken för filer som förhandsgranskas.</p>
   </item>
   <item>
     <title><gui>Mappar</gui></title>
-    <p>If you show file sizes in <link xref="nautilus-list">list view columns</link>
-    or <link xref="nautilus-display#icon-captions">icon captions</link>, folders will
-    be shown with a count of how many files and folders they contain. Counting items
-    in a folder can be slow, especially for very large folders, or over a network.
-    You can turn this feature on or off, or turn it on only for files on your
-    computer and local external drives.</p>
+    <p>Om du visar filstorlekar i <link xref="nautilus-list">listvykolumner</link> eller <link xref="nautilus-display#icon-captions">ikonrubriker</link>, kommer mappar att visas tillsammans med antalet filer och mappar de innehåller. Att räkna antal objekt i en mapp kan gå långsamt, speciellt för väldigt stora mappar, eller över ett nätverk. Du kan aktivera eller inaktivera denna funktion eller aktivera den enbart för filer på din dator och lokala externa hårddiskar.</p>
   </item>
 </terms>
 </page>

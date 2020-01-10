@@ -3,9 +3,11 @@
 
   <info>
     <link type="guide" xref="power"/>
+    <link type="seealso" xref="power-suspendfail"/>
 
     <desc>இடைநிறுத்துவது கணினியை உறக்க நிலைக்குக் கொண்டு செல்லும், இதனால் குறைவான மின்சாரமே பயன்படுத்தப்படும்.</desc>
     <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>GNOME ஆவணமாக்கத் திட்டப்பணி</name>
@@ -29,7 +31,10 @@
 
 <p>நீங்கள் கணினியை இடைநிறுத்தும் போது கணினி உறக்க நிலைக்குச் செல்கிறது. உங்கள் பயன்பாடுகள் மற்றும் ஆவணங்கள் அனைத்தும் திறந்தபடியே இருக்கும், ஆனால் மின் சக்தியை சேமிப்பதற்காக திரையும் கணினியின் பிற பாகங்களும் அணைக்கப்படும். இருப்பினும் கணினி இயக்கத்திலேயே இருக்கும், ஆகவே சிறிதளவு மின்சாரத்தைப் பயன்படுத்தும். ஒரு விசையை அழுத்தி அல்லது சொடுக்கியை சொடுக்கி கணினியை விழித்தெழச் செய்யலாம். அது வேலை செய்யாவிட்டால் பவர் பொத்தானை அழுத்தவும்.</p>
 
-<p>சில கணினிகளில் வன்பொருள் ஆதரவில் சிக்கல் இருக்கலாம். இதனால் <link xref="power-suspendfail">அவை சரியாக இடைநிறுத்த அல்லது ஹைபர்நேட் செய்யாமல் போகலாம்</link>. இடைநிறுத்துதல் அல்லது ஹைபர்நேட் அம்சத்தை நம்பி பயன்படுத்தும் முன்பு அது சரியாக வேலை செய்கிறதா என சோதிப்பது நல்லது.</p>
+<p>Some computers have problems with hardware support which mean that they
+<link xref="power-suspendfail">may not be able to suspend properly</link>. It is
+a good idea to test suspend on your computer to see if it does work before
+relying on it.</p>
 
 <note style="important">
   <title>எப்போதும் இடைநிறுத்தும் முன்பு உங்கள் வேலையை சேமிக்கவும்</title>

@@ -3,7 +3,7 @@
 
   <info>
     <link type="seealso" xref="shell-apps-open"/>
-    <link type="guide" xref="shell-overview#apps"/>
+    <link type="guide" xref="shell-overview#desktop"/>
 
     <revision pkgversion="3.6.0" date="2012-10-14" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
@@ -35,7 +35,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011, 2012</mal:years>
+      <mal:years>2011-2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -49,16 +49,28 @@
       <mal:email>juliette.tux@gmail.com</mal:email>
       <mal:years>2013-2014</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
   <title>Добавление приложений в боковую панель</title>
 
-  <p>Чтобы добавить приложение в <link xref="shell-terminology">боковую панель</link>:</p>
+  <p>To add an application to the <link xref="shell-introduction#activities">dash</link>
+  for easy access:</p>
 
   <steps>
     <item>
-      <p if:test="!platform:gnome-classic">Откройте <link xref="shell-terminology">режим <gui>Обзора</gui></link>, нажав на кнопку <gui>Обзор</gui> в левом верхнем углу экрана.</p>
-      <p if:test="platform:gnome-classic">Нажмите <link xref="shell-terminology">меню <gui>Приложения</gui></link> в верхней левой части экрана и выберите пункт <gui>Обзор</gui>.</p></item>
+      <p if:test="!platform:gnome-classic">Open the
+      <gui xref="shell-introduction#activities">Activities</gui> overview by
+      clicking <gui>Activities</gui> at the top left of the screen</p>
+      <p if:test="platform:gnome-classic">Click the
+      <gui xref="shell-introduction#activities">Applications</gui> menu at the
+      top left of the screen and choose the <gui>Activities Overview</gui> item
+      from the menu.</p></item>
     <item>
       <p>Нажмите кнопку с изображением сетки в боковой панели («Показать приложения») и найдите приложение, которое нужно добавить.</p>
     </item>
@@ -70,7 +82,9 @@
 
   <p>Чтобы удалить значок приложения из боковой панели, нажмите правой кнопкой мыши по значку приложения и выберите <gui>Удалить из избранного</gui>.</p>
 
-  <note style="tip" if:test="platform:gnome-classic"><p>Часто используемые приложения также можно найти в пункте <gui>Избранное</gui> <link xref="shell-terminology">меню <gui>Приложения</gui></link>.</p>
+  <note style="tip" if:test="platform:gnome-classic"><p>Favorite applications
+    also appear in the <gui>Favorites</gui> section of the
+    <gui xref="shell-introduction#activities">Applications</gui> menu.</p>
   </note>
 
 </page>

@@ -6,6 +6,7 @@
 
     <revision pkgversion="3.6.1" date="2012-11-10" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.14.0" date="2015-01-14" status="review"/>
 
     <credit type="author copyright">
       <name>Tifani Antopoloski</name>
@@ -21,6 +22,11 @@
       <name>Majkl Hil</name>
       <email>mdhillca@gmail.com</email>
     </credit>
+    <credit type="editor">
+      <name>Dejvid King</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2015</years>
+    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
@@ -29,14 +35,14 @@
 
 <title>Ekran u slici i videu</title>
 
-  <p>Možete da napravite sliku vašeg ekrana (<em>slika ekrana</em>) ili da snimite video onoga što se dešava na ekranu (<em>snimak ekrana</em>). Ovo je korisno ako želite nekome da pokažete kako da uradi nešto na računaru, na primer. Slike ekrana i snimci ekrana su obične datoteke slika i snimaka, tako da možete da ih šaljete el. poštom i da ih delite na vebu.</p>
+  <p>Možete da napravite sliku vašeg ekrana (<em>slika ekrana</em>) ili da snimite video onoga što se dešava na ekranu (<em>snimak ekrana</em>). Ovo je korisno ako želite nekome da pokažete kako da uradi nešto na računaru, na primer. Slike ekrana i snimci ekrana su obične datoteke slika i snimaka, tako da možete da ih šaljete e-poštom i da ih delite na vebu.</p>
 
 <section id="screenshot">
   <title>Pravi snimak ekrana</title>
 
   <steps>
     <item>
-      <p>Otvorite <app>Snimak ekrana</app> iz pregleda <gui xref="shell-terminology">aktivnosti</gui>.</p>
+      <p>Otvorite <app>Snimak ekrana</app> iz pregleda <gui xref="shell-introduction#activities">aktivnosti</gui>.</p>
     </item>
     <item>
       <p>U prozoru <app>Snimak ekrana</app>, izaberite da li želite da obuhvatite čitav ekran, tekući prozor, ili oblast ekrana. Podesite zastoj ako morate da izaberete prozor ili da drugačije podesite vašu radnu površ za snimanje. Zatim izaberite neki efekat ako želite.</p>
@@ -51,7 +57,7 @@
     </item>
   </steps>
 
-  <note style="tip">
+  <section id="keyboard-shortcuts">
     <title>Prečice tastature</title>
 
     <p>Napravite brzi snimak radne površi, prozora ili oblasti koristeći ove opšte prečice tastature:</p>
@@ -69,8 +75,11 @@
     </list>
 
     <p>Kada koristite prečicu tastature, slika se samostalno čuva u fascikli <file>Slike</file> u vašoj ličnoj fascikli sa nazivom datoteke koji počinje na <file>Snimak-ekrana</file> i sadrži datum i vreme pravljenja snimka.</p>
+    <note style="note">
+      <p>Ako nemate fasciklu <file>Slike</file>, slike će onda biti sačuvane u vašoj ličnoj fascikli.</p>
+    </note>
     <p>Možete takođe da držite pritisnutim <key>Ktrl</key> sa bilo kojom gornjom prečicom da biste umnožili sliku snimka ekrana u ostavu umesto da je čuvate.</p>
-  </note>
+  </section>
 
 </section>
 
@@ -82,7 +91,7 @@
   <steps>
     <item>
       <p>Pritisnite <keyseq><key>Ktrl</key><key>Alt</key><key>Šift</key><key>R</key></keyseq> da započnete snimanje vašeg ekrana.</p>
-      <p>Crveni kružić je prikazan u donjem desnom uglu ekrana za vreme snimanja.</p>
+      <p>Crveni kružić je prikazan u gornjem desnom uglu ekrana za vreme snimanja.</p>
     </item>
     <item>
       <p>Kada završite, pritisnite opet <keyseq><key>Ktrl</key><key>Alt</key><key>Šift</key><key>R</key></keyseq> da zaustavite snimanje.</p>
@@ -91,6 +100,10 @@
       <p>Snimak se samostalno čuva u fascikli <file>Video</file> u vašoj ličnoj fascikli, sa nazivom datoteke koji počinje na <file>Snimak-ekrana</file> i sadrži datum i vreme pravljenja snimka.</p>
     </item>
   </steps>
+
+  <note style="note">
+    <p>Ako nemate fasciklu <file>Video</file>, snimci će onda biti sačuvani u vašoj ličnoj fascikli.</p>
+  </note>
 
 </section>
 

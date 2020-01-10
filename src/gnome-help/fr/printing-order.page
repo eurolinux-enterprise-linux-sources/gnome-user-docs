@@ -6,6 +6,7 @@
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -35,7 +36,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2014</mal:years>
+      <mal:years>2011-2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -67,6 +68,12 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
   <title>Inversion de l'ordre d'impression</title>
@@ -76,14 +83,15 @@
 
     <p>Normalement, les imprimantes impriment en premier la première page et en dernier la dernière page de façon à ce qu'à la fin, elles se retrouvent dans l'ordre inverse et dans le bon sens quand vous les prenez. Si besoin est, vous pouvez inverser cet ordre.</p>
 
-    <p>Pour inverser l'ordre :</p>
-
     <steps>
+      <title>Pour inverser l'ordre :</title>
       <item>
-        <p>Cliquez sur <guiseq><gui>Fichier</gui><gui>Imprimer</gui></guiseq>.</p>
+        <p>Press <keyseq><key>Ctrl</key><key>P</key></keyseq> to open the Print
+        dialog.</p>
       </item>
       <item>
-        <p>Dans l'onglet <gui>Général</gui> de la fenêtre Imprimer et dans la colonne <em>Copies</em>, cochez la case <gui>Inverser</gui>. La dernière page se retrouve imprimée en premier et ainsi de suite.</p>
+        <p>In the <gui>General</gui> tab, under <gui>Copies</gui>, check
+        <gui>Reverse</gui>. The last page will be printed first, and so on.</p>
       </item>
     </steps>
 
@@ -92,23 +100,20 @@
   <section id="collate">
     <title>Rassemblement</title>
 
-  <p>If you are printing more than one copy of the document, the print-outs
-  will be grouped by page number by default (that is, all of the copies of page
-  one come out, then the copies of page two, and so on). <em>Collating</em>
-  will make each copy come out with its pages grouped together in the right
-  order instead.</p>
-
-  <p>Pour rassembler :</p>
+  <p>Si vous imprimer plusieurs copies du document, les épreuves vont être groupées par défaut par leur numéro de page (toutes les copies de la première page ensemble, puis toutes les copies de la deuxième, etc.). Au lieu de cela, la fonction <em>Rassembler</em> va faire en sorte que chaque copie du document sorte avec toutes ses pages regroupées dans le bon ordre.</p>
 
   <steps>
+    <title>To collate:</title>
     <item>
-      <p>Cliquez sur <guiseq><gui>Fichier</gui><gui>Imprimer</gui></guiseq>.</p>
+     <p>Press <keyseq><key>Ctrl</key><key>P</key></keyseq> to open the Print
+     dialog.</p>
     </item>
     <item>
-      <p>Dans l'onglet <gui>Général</gui> de la fenêtre Imprimer, dans la colonne <em>Copies</em>, cochez la case <gui>Rassembler</gui>.</p>
+      <p>In the <gui>General</gui> tab, under <gui>Copies</gui>, check
+      <gui>Collate</gui>.</p>
     </item>
   </steps>
- <!-- Need to add this image <media type="image" src="figures/reverse-collate.png"/> -->
+
 </section>
 
 </page>

@@ -11,23 +11,23 @@
 
     <credit type="author">
       <name>Проект документирования GNOME</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="author">
       <name>Natalia Ruz Leiva</name>
-      <email its:translate="no">nruz@alumnos.inf.utfsm.cl </email>
+      <email>nruz@alumnos.inf.utfsm.cl </email>
     </credit>
     <credit type="editor">
       <name>Майкл Хилл (Michael Hill)</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Шобха Тьяги (Shobha Tyagi)</name>
-      <email its:translate="no">tyagishobha@gmail.com</email>
+      <email>tyagishobha@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Екатерина Герасимова (Ekaterina Gerasimova)</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -43,7 +43,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011, 2012</mal:years>
+      <mal:years>2011-2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -57,6 +57,12 @@
       <mal:email>juliette.tux@gmail.com</mal:email>
       <mal:years>2013-2014</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
   <title>Изменение разрешения или ориентации экрана</title>
@@ -65,10 +71,11 @@
 
   <steps>
     <item>
-      <p>Откройте режим <gui xref="shell-terminology">Обзора</gui> и начните набирать<gui>Мониторы</gui>.</p>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Displays</gui>.</p>
     </item>
     <item>
-      <p>Нажмите <gui>Мониторы</gui> чтобы открыть этот раздел настроек.</p>
+      <p>Нажмите <gui>Мониторы</gui>, чтобы открыть этот раздел настроек.</p>
     </item>
     <item>
       <p>Если у вас есть несколько мониторов, и они не отражаются зеркально, то к каждому монитору можно применить отдельные настройки. Выберите монитор в области предварительного просмотра.</p>
@@ -84,7 +91,13 @@
 <section id="resolution">
   <title>Разрешение</title>
 
-  <p>Разрешение — это количество пикселей (точек на экране) которое можно отобразить в каждом направлении. Разрешение имеет <em>соотношение сторон</em>, то есть отношение ширины к высоте. Широкоэкранные дисплеи используют соотношение 16:9, а традиционные — 4:3. При выборе разрешения, не соответствующего соотношению сторон вашего монитора, во избежание искажения изображения, к нему будет применена технология леттербоксинга, т.е. сверху и снизу (или справа и слева) экрана будут добавлены чёрные полосы.</p>
+  <p>The resolution is the number of pixels (dots on the screen) in each
+  direction that can be displayed. Each resolution has an <em>aspect
+  ratio</em>, the ratio of the width to the height. Wide-screen displays use a
+  16∶9 aspect ratio, while traditional displays use 4∶3. If you choose a
+  resolution that does not match the aspect ratio of your display, the screen
+  will be letterboxed to avoid distortion, by adding black bars to the top and
+  bottom or both sides of the screen.</p>
 
   <p>Выбрать нужное разрешение можно из выпадающего списка <gui>Разрешение</gui>. Если выбрано разрешение, не подходящее для вашего экрана, изображение может стать <link xref="look-display-fuzzy">размытым или мозаичным</link>.</p>
 

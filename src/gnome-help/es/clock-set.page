@@ -2,28 +2,29 @@
 <page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="clock-set" xml:lang="es">
 
   <info>
-    <link type="guide" xref="clock"/>
+    <link type="guide" xref="clock" group="#first"/>
 
     <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
     <revision pkgversion="3.10" date="2013-11-01" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Proyecto de documentación de GNOME</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Pulse en el reloj en la barra superior y seleccione <gui>Configuración de fecha y hora</gui> para cambiar la fecha y/o la hora.</desc>
+    <desc>Use la <gui>Configuración de fecha y hora</gui> para cambiar la fecha y/o la hora.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2011 - 2014</mal:years>
+      <mal:years>2011 - 2016</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -51,22 +52,22 @@
 
   <steps>
     <item>
-      <p>Pulse en el reloj situado en el centro de la barra superior y seleccione <gui>Configuración de fecha y hora</gui>.</p>
+      <p>Abra la vista de <gui xref="shell-introduction#activities">Actividades</gui> y empiece a escribir <gui>Fecha y hora</gui>.</p>
     </item>
     <item>
-      <p>Si tiene una cuenta sin privilegios, deberá pulsar <gui>Desbloquear</gui> y escribir la <link xref="user-admin-explain">contraseña de administrador</link>.</p>
+      <p>Pulse en <gui>Fecha y hora</gui> para abrir el panel.</p>
     </item>
     <item>
-      <p>If you have an internet connection, you can set your date, time and
-      time zone to update automatically by switching <gui>Automatic Date &amp;
-      Time</gui> and <gui>Automatic Time Zone</gui> to <gui>ON</gui>.</p>
-      <p>If you do not have an internet connection, you can update these
-      manually by switching them to <gui>OFF</gui>, then clicking <gui>Date
-      &amp; Time</gui> and <gui>Time Zone</gui> to update.</p>
+      <p>Si tiene <gui>Activada</gui> la <gui>Zona horaria automática</gui>, su zona horaria se debería actualizar automáticamente si tiene una conexión a Internet. Para actualizar su zona horaria manualmente, <gui>Desactívela</gui>.</p>
+    </item> 
+    <item>
+      <p>Pulse en <gui>Fecha y hora</gui> y ajuste la fecha y la hora.</p>
     </item>
     <item>
-      <p>También puede cambiar el formato de hora, seleccionando el formato <gui>24 horas</gui> o <gui>AM/PM</gui></p>
+      <p>También puede cambiar el formato de hora, seleccionando el formato <gui>24 horas</gui> o <gui>AM/PM</gui> en <gui>Formato de hora</gui>.</p>
     </item>
   </steps>
+
+  <p>También puede querer <link xref="clock-timezone">configurar la zona horaria manualmente</link>.</p>
 
 </page>

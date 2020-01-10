@@ -2,14 +2,14 @@
 <page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" version="1.0 if/1.0" id="shell-apps-open" xml:lang="cs">
 
   <info>
-    <link type="guide" xref="shell-overview#apps"/>
+    <link type="guide" xref="shell-overview"/>
     <link type="guide" xref="index" group="#first"/>
 
     <revision pkgversion="3.6.0" date="2012-10-14" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
 
     <credit type="author">
-      <name>GNOME Documentation Project</name>
+      <name>Dokumentační projekt GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="editor">
@@ -23,7 +23,7 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Launch apps from the <gui>Activities</gui> overview.</desc>
+    <desc>Jak spustit aplikaci z přehledu <gui>Činnosti</gui>.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
@@ -34,66 +34,39 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Marek Černocký</mal:name>
       <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:years>2014, 2015</mal:years>
     </mal:credit>
   </info>
 
   <title>Spouštění aplikací</title>
 
-  <p if:test="!platform:gnome-classic">Move your mouse pointer to the
-  <gui>Activities</gui> corner at the top left of the screen to show the
-  <gui xref="shell-terminology">Activities</gui> overview. This is where you
-  can find all of your applications. You can also open the overview by pressing
-  the <key xref="keyboard-key-super">Super</key> key.</p>
+  <p if:test="!platform:gnome-classic">Najeďte ukazatelem myši do rohu <gui>Činnosti</gui> v levé horní části obrazovky, aby se vám zobrazil přehled <link xref="shell-introduction#activities">činností</link>. V něm můžete najít všechny své aplikace. Otevřít jej můžete také zmáčknutím klávesy <key xref="keyboard-key-super">Super</key>.</p>
   
-  <p if:test="platform:gnome-classic">You can start applications from the
-  <link xref="shell-terminology"><gui>Applications</gui> menu</link> at the top
-  left of the screen, or you can use the <gui>Activities</gui> overview by
-  pressing the <key xref="keyboard-key-super">Super</key> key.</p>
+  <p if:test="platform:gnome-classic">Aplikaci můžete spustit z nabídky <gui xref="shell-introduction#activities">Aplikace</gui> v levé horní části obrazovky nebo za použití přehledu <gui>Činnosti</gui> po zmáčknutí klávesy <key xref="keyboard-key-super">Super</key>.</p>
 
-  <p>There are several ways of opening an application once you're in the
-  <gui>Activities</gui> overview:</p>
+  <p>Když jste v přehledu <gui>Činností</gui>, máte k dispozici několik způsobů, jak otevřít aplikaci:</p>
 
   <list>
     <item>
-      <p>Start typing the name of an application - searching begins instantly.
-      (If this doesn't happen, click the search bar at the top of the screen
-      and start typing.) Click the application's icon to start it.</p>
+      <p>Začněte psát název aplikace a hledání ihned započne. (Pokud ne, klepněte na vyhledávací pole vpravo nahoře a až potom začněte psát.) Jestliže přesný název aplikace neznáte, zkuste napsat nějaké slovo vztahující se k aplikaci. Vyhledanou aplikaci spustíte kliknutím na její ikonu.</p>
     </item>
     <item>
-      <p>Some applications have icons in the <em>dash</em>, the vertical strip
-      of icons on the left-hand side of the <gui>Activities</gui> overview.
-      Click one of these to start the corresponding application.</p>
-      <p>Používáte-li některou aplikaci často, můžete  si ji <link xref="shell-apps-favorites">přidat do Oblíbených</link>.</p>
+      <p>Některé aplikace mají svoji ikonu v <em>Oblíbených</em>, což je svisly pruhu ikon na levém okraji přehledu <gui>Činností</gui>. Kliknutím na některou z ikon spustíte příslušnou aplikaci.</p>
+      <p>Používáte-li některou aplikaci často, můžete  si ji <link xref="shell-apps-favorites">do oblíbených přidat</link>.</p>
     </item>
     <item>
-      <p>Click the grid button at the bottom of the dash. You will see the
-      frequently used applications if the <gui style="button">Frequent</gui>
-      view is enabled. If you want to run a new application, press the
-      <gui style="button">All</gui> button at the bottom to view all the
-      applications. Press on the application to start it.</p>
+      <p>Klikněte na tlačítko s mřížkou v dolní části oblíbených. Když je zapnuté zobrazení <gui style="button">Časté</gui>, uvidíte často používané aplikace. Jestliže chcete spustit novou aplikaci, zmáčkněte v dolní části tlačítko <gui style="button">Všechny</gui>, abyste viděli všechny aplikace. Kliknutím na příslušnou ikonu aplikaci spustíte.</p>
     </item>
     <item>
-      <p>You can launch an application in a separate
-      <link xref="shell-workspaces">workspace</link> by dragging its icon from
-      the dash, and dropping it onto one of the workspaces on the right-hand
-      side of the screen. The application will open in the chosen
-      workspace.</p>
-      <p>You can launch an application in a <em>new</em> workspace by dragging
-      its icon to the empty workspace at the bottom of the workspace
-      switcher, or to the small gap between two workspaces.</p>
+      <p>Aplikaci můžete spustit na samostatné <link xref="shell-workspaces">pracovní ploše</link> tím, že přetáhnete její ikonu z oblíbených na jednu z pracovních ploch v postranním panelu vpravo na obrazovce. Aplikace se pak otevře na této pracovní ploše.</p>
+      <p>Aplikaci můžete spustit na <em>nové</em> pracovní ploše tím, že přetáhnete její ikonu na prázdnou pracovních plochu v dolní části přepínače pracovních ploch nebo na malou mezeru mezi dvěma pracovními plochami.</p>
     </item>
   </list>
 
   <note style="tip">
-    <title>Rychlé spouštění příkazu</title>
-    <p>Another way of launching an application is to press
-    <keyseq><key>Alt</key><key>F2</key></keyseq>, enter its
-    <em>command name</em>, and then press the <key>Enter</key> key.</p>
-    <p>For example, to launch <app>Rhythmbox</app>, press
-    <keyseq><key>Alt</key><key>F2</key></keyseq> and type
-    '<cmd>rhythmbox</cmd>' (without the single-quotes). The name of the app is
-    the command to launch the program.</p>
+    <title>Rychlé spuštění příkazu</title>
+    <p>Jiným způsobem spouštění aplikací je zmáčknout <keyseq><key>Alt</key><key>F2</key></keyseq>, napsat její <em>spouštěcí příkaz</em> a následně zmáčknout <key>Enter</key>.</p>
+    <p>Například spuštění přehrávače <app>Rhythmbox</app> se provede tak, že zmáčknete <keyseq><key>Alt</key><key>F2</key></keyseq> a napíšete „<cmd>rhythmbox</cmd>“ (bez uvozovek). Název aplikace je příkaz, který spustí program.</p>
   </note>
 
 </page>

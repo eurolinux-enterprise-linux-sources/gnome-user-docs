@@ -3,27 +3,29 @@
 
   <info>
     <link type="guide" xref="user-accounts#manage"/>
+    <link type="seealso" xref="user-admin-explain"/>
 
     <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
     <revision pkgversion="3.10" date="2013-11-01" status="review"/>
     <revision pkgversion="3.14.0" date="2014-10-08" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
-      <name>GNOME Documentation Project</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <name>Dokumentační projekt GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Add your photo to the login and user screens.</desc>
+    <desc>Jak přidat svoji fotografii do přihlašovací a uživatelské obrazovky.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
@@ -34,49 +36,34 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Marek Černocký</mal:name>
       <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:years>2014, 2015</mal:years>
     </mal:credit>
   </info>
 
-  <title>Change your login screen photo</title>
+  <title>Změna vaší fotografie na přihlašovací obrazovce</title>
 
-  <p>When you log in or switch users, you will see a list of users with
-  their login photos. You can change your photo to a stock image or an
-  image of your own. You can even take a new login photo with your
-  webcam.</p>
+  <p>Když se přihlašujete nebo přepínáte uživatele, vidíte seznam uživatelů s jejich fotografiemi. Svoji fotografii si můžete změnit, buď na standardní obrázek nebo svůj vlastní. Můžete si také pořídit svoji vlastní fotografii pomocí webové kamery.</p>
 
-  <p>You need <link xref="user-admin-explain">administrator privileges</link>
-  to edit user accounts other than your own.</p>
+  <p>Abyste mohli měnit jiný, než svůj, uživatelský účet, potřebujete <link xref="user-admin-explain">oprávnění správce</link>.</p>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-terminology">Activities</gui> overview and
-      start typing <gui>Users</gui>.</p>
+      <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Uživatelé</gui>.</p>
     </item>
     <item>
       <p>Kliknutím na <gui>Uživatelé</gui> otevřete příslušný panel.</p>
     </item>
     <item>
-      <p>If you want to edit a user other than yourself, press
-      <gui style="button">Unlock</gui> in the top right corner and type in your
-      password when prompted.</p>
+      <p>Pokud chcete upravovat jiný účet, než svůj, zmáčkněte <gui style="button">Odemknout</gui> v pravém horním rohu a po vyzvání napište své heslo.</p>
     </item>
     <item>
-      <p>Click the picture next to your name. A drop-down gallery will be shown
-      with some stock login photos. If you like one of them, click it to use it
-      for yourself.</p>
+      <p>Klikněte na obrázek vedle svého jména. Rozbalí se galerie se standardními přihlašovacími obrázky. Jestli pro sebe chcete některý z nich, stačí na něj kliknout.</p>
       <list>
         <item>
-          <p>If you would rather use a picture you already have on your
-          computer, click <gui>Browse for more pictures…</gui>.</p>
+          <p>Pokud byste raději použili obrázek, který již máte v počítači, klikněte na <gui>Procházet další obrázky…</gui></p>
         </item>
         <item>
-          <p>If you have a webcam, you can take a new login photo right now by
-          clicking <gui style="button" its:translate="no"><media type="image" src="figures/camera-photo-symbolic.svg"><span its:translate="yes">camera icon</span></media></gui>. Take your
-          picture, then move and resize the square outline to crop out the
-          parts you do not want. If you do not like the picture you took, click
-          <gui style="button">Take another picture</gui> to try again, or
-          <gui>Cancel</gui> to give up.</p>
+          <p>Pokud máte webovou kameru, můžete si ihned pořídit svoji fotografii kliknutím na <gui>Pořídit fotografii</gui>. Pořídí se snímek, na kterém potom na požadované místo posuňte obrys čtverce a upravte jeho velikost, abyste vyřízli část, kterou potřebujete. V případě, že se vám pořízený snímek nelíbí, proveďte buď nový pokus kliknutím na <gui style="button">Pořídit jiný snímek</gui> nebo to kliknutím na <gui>Zrušit</gui> skončete.</p>
         </item>
       </list>
     </item>

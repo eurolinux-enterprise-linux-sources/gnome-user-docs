@@ -7,34 +7,30 @@
 
     <revision pkgversion="3.8.0" date="2013-03-09" status="outdated"/>
     <revision pkgversion="3.10" date="2013-11-04" status="review"/>
+    <revision pkgversion="3.16" date="2015-03-02" status="outdated"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
 
     <credit type="author">
       <name>Projeto de documentação do GNOME</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Exiba seus compromissos na agenda no topo da tela.</desc>
+    <desc>Exiba seus compromissos na área da agenda no topo da tela.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Rodolfo Ribeiro Gomes</mal:name>
       <mal:email>rodolforg@gmail.com</mal:email>
       <mal:years>2011, 2012.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Ferreira</mal:name>
-      <mal:email>rafael.f.f1@gmail.com</mal:email>
-      <mal:years>2012, 2013, 2014.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -48,13 +44,19 @@
       <mal:email>joaosantana@outlook.com</mal:email>
       <mal:years>2013.</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
   </info>
 
  <title>Compromissos da agenda</title>
 
   <note>
     <p>Isso exige que você use sua agenda do <app>Evolution</app> ou que você tenha uma conta-online configurada que tenha suporte à <gui>Agenda</gui>.</p>
-    <p>A maioria das distribuições Linux vêm com <app>Evolution</app> instalado por padrão. Se a sua não o faz, você pode precisar instalá-lo usando o gerenciador de pacotes dela.</p>
+    <p>A maioria das distribuições Linux vem com <app>Evolution</app> instalado por padrão. Se este não for o caso da sua, você pode precisar instalá-lo usando o gerenciador de pacotes da distribuição.</p>
  </note>
 
   <p>Para ver seus compromissos:</p>
@@ -64,15 +66,18 @@
     </item>
     <item>
       <p>Clique na data da qual queira ver seus compromissos da agenda.</p>
-    </item>
-    <item>
-      <p>Os compromissos existentes serão mostrados à direita. À medida em que eles forem adicionados à agenda, eles aparecerão na lista de compromissos do relógio.</p>
+
+    <note>
+       <p>Um ponto é mostrado sob cada data que possui um compromisso.</p>
+    </note>
+
+      <p>Os compromissos existentes serão mostrados à esquerda da agenda. À medida em que eles forem adicionados à sua agenda do <app>Evolution</app>, eles aparecerão na lista de compromissos do relógio.</p>
     </item>
   </steps>
 
  <if:choose>
  <if:when test="!platform:gnome-classic">
- <media type="image" src="figures/shell-appts.png" width="500" height="396">
+ <media type="image" src="figures/shell-appts.png" width="500">
   <p>Relógio, agenda e compromissos</p>
  </media>
  </if:when>
@@ -82,11 +87,5 @@
  </media>
  </if:when>
  </if:choose>
-
-  <p>Para obter um acesso rápido à agenda completa do <app>Evolution</app>, clique no relógio e clique em <gui>Abrir agenda</gui>.</p>
-
-  <note>
-    <p>Isso só funcionará se você tiver uma conta cadastrada no <app>Evolution</app>. Caso contrário, uma janela aparecerá com os passos necessários para adicionar sua primeira conta.</p>
-  </note>
 
 </page>

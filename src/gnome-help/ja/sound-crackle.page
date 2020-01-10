@@ -6,6 +6,7 @@
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>GNOME ドキュメンテーションプロジェクト</name>
@@ -19,7 +20,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -66,17 +67,21 @@
 <list>
  <item>
   <p>スピーカーが正しく接続されているか確認します。</p>
-  <p>スピーカーがしっかり挿入されていない、あるいは間違ったジャックに挿入されていると、ノイズ混じりの音声が聞こえます。</p>
+  <p>If the speakers are not fully plugged in, or if they are plugged into the
+  wrong socket, you might hear a buzzing sound.</p>
  </item>
 
  <item>
-  <p>スピーカーやヘッドフォンケーブルの損傷を確認します。</p>
+  <p>Make sure the speaker/headphone cable is not damaged.</p>
   <p>オーディオケーブルとコネクターは徐々に消耗します。ケーブルあるいはヘッドフォンを別のオーディオデバイス（MP3 プレイヤーあるいは CD プレイヤーなど）に挿入し、ノイズ混じりの音声が聞こえるかどうかを確認してください。もし聞こえたら、ケーブルあるいはヘッドフォンを交換する必要があります。</p>
  </item>
 
  <item>
-  <p>サウンドドライバーの品質を確認します。</p>
-  <p>サウンドカードには、Linux で動かないものがあります。よいドライバーがないからです。この問題は他の問題より、特定するのが難しいです。インターネットでサウンドカードのメーカーやモデルを "Linux" という単語と共に検索し、誰かが同じ問題を抱えていないかどうか調べます。</p>
+  <p>Check if the sound drivers are not very good.</p>
+  <p>Some sound cards do not work very well on Linux because they do not have very
+  good drivers. This problem is more difficult to identify. Try searching for
+  the make and model of your sound card on the internet, plus the search term
+  "Linux", to see if other people are having the same problem.</p>
   <p><cmd>lspci</cmd> コマンドを使うと、サウンドカードに関するより多くの情報を得ることができます。</p>
  </item>
 </list>

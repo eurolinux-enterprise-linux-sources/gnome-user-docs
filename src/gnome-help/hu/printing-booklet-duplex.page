@@ -6,15 +6,20 @@
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
       <email>tiffany@antopolski.com</email>
     </credit>
+    <credit type="author editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Összehajtott füzetek (például könyv vagy szórólap) nyomtatása A4 méretű papírra.</desc>
+    <desc>Összehajtott füzetek (például könyv vagy szórólap) nyomtatása PDF-ből A4 méretű papírra.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Griechisch Erika</mal:name>
@@ -25,7 +30,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Kelemen Gábor</mal:name>
       <mal:email>kelemeng at gnome dot hu</mal:email>
-      <mal:years>2011, 2012, 2013, 2014</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -53,9 +58,9 @@
     </mal:credit>
   </info>
 
-  <title>Összehajtott füzetek nyomtatása</title>
+  <title>Füzet nyomtatása kétoldalas nyomtatóval</title>
 
-  <p>Összehajtott füzeteket (például kis könyvet vagy szórólapot) készíthet a dokumentum oldalainak speciális sorrendben való kinyomtatásával és néhány beállítás megváltoztatásával.</p>
+  <p>Összehajtott füzetet (például kis könyvet vagy szórólapot) készíthet a dokumentum oldalainak speciális sorrendben való kinyomtatásával, és néhány beállítás megváltoztatásával.</p>
 
   <p>Ezek az utasítások egy füzet PDF dokumentumból való nyomtatását ismertetik.</p>
 
@@ -68,7 +73,13 @@
       <p>Nyissa meg a nyomtatási ablakot. Ez általában a menü <gui style="menuitem">Nyomtatás</gui> pontjával, vagy a <keyseq><key>Ctrl</key><key>P</key></keyseq> gyorsbillentyűvel érhető el.</p>
     </item>
     <item>
-      <p>Lépjen az <gui>Általános</gui> lapra. A <gui>Tartomány</gui> alatt válassza az <gui>Oldalak</gui> lehetőséget.</p>
+      <p>Kattintson a <gui>Tulajdonságok</gui> gombra</p>
+      <p>A <gui>Tájolás</gui> legördülő listából mindenképp válassza a <gui>Fekvő</gui> értéket.</p>
+      <p>A <gui>Kétoldalas</gui> legördülő menüben válassza a <gui>Rövid él</gui> lehetőséget.</p>
+      <p>Kattintson az <gui>OK</gui> gombra a visszatéréshez a nyomtatás ablakba.</p>
+    </item>
+    <item>
+      <p>A <gui>Tartományok és példányszám</gui> alatt válassza az <gui>Oldalak</gui> lehetőséget.</p>
     </item>
     <item>
       <p>Írja be a lapok sorszámait a következő sorrendben (az n a lapok teljes száma, és 4 többszöröse):</p>
@@ -81,10 +92,9 @@
       </list>
     </item>
     <item>
-      <p>Válassza az <gui>Oldalbeállítás</gui> lapot.</p>
-      <p>Az <gui>Elrendezés</gui> alatt a <gui>Kétoldalas</gui> legördülő menüben válassza a <gui>Rövid él (fordított)</gui> lehetőséget.</p>
-      <p>A <gui>Lapok oldalanként</gui> legördülő listából válassza a <gui>2</gui> értéket.</p>
-      <p>Az <gui>Oldalsorrend</gui> menüben válassza a <gui>Balról jobbra</gui> lehetőséget.</p>
+      <p>Válassza az <gui>Oldalelrendezés</gui> lapot.</p>
+      <p>Az <gui>Elrendezés</gui> alatt válassza a <gui>Brosúra</gui> lehetőséget.</p>
+      <p>Az <gui>Oldalak</gui> alatt a <gui>Felvétel</gui> legördülő listából válassza a <gui>Minden oldal</gui> lehetőséget.</p>
     </item>
     <item>
       <p>Nyomja meg a <gui>Nyomtatás</gui> gombot.</p>

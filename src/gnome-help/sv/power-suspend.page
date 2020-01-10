@@ -3,9 +3,11 @@
 
   <info>
     <link type="guide" xref="power"/>
+    <link type="seealso" xref="power-suspendfail"/>
 
-    <desc>Suspend sends your computer to sleep so it uses less power.</desc>
+    <desc>Vänteläge försätter din dator i ett strömsparläge där den drar mindre ström.</desc>
     <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Dokumentationsprojekt för GNOME</name>
@@ -23,27 +25,29 @@
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
   </info>
 
-<title>What happens when I suspend my computer?</title>
+<title>Vad händer när jag försätter min dator i vänteläge?</title>
 
-<p>When you <em>suspend</em> the computer, you send it to sleep. All of your
-applications and documents remain open, but the screen and other parts of the
-computer switch off to save power. The computer is still switched on though,
-and it will still be using a small amount of power. You can wake it up by
-pressing a key or clicking the mouse. If that does not work, try pressing the
-power button.</p>
+<p>När du försätter din dator i <em>vänteläge</em> ber du den sova. Alla dina program och dokument är fortfarande öppna men skärmen och andra delar av datorn stängs av för att spara ström. Datorn är fortfarande på dock, och kommer fortfarande att använda en liten mängd ström. Du kan väcka den genom att trycka på en tangent eller klicka med musen. Om det inte fungerar prova att trycka på strömknappen.</p>
 
-<p>Some computers have problems with hardware support which mean that they
-<link xref="power-suspendfail">may not be able to suspend or hibernate
-properly</link>. It is a good idea to test suspend on your computer to see if
-it does work before relying on it.</p>
+<p>Vissa datorer har problem med hårdvarustöd vilket innebär att de <link xref="power-suspendfail">kanske inte kan försättas i vänteläge korrekt</link>. Det är en bra idé att prova vänteläget på din dator för att se om det fungerar innan du förlitar dig på det.</p>
 
 <note style="important">
-  <title>Always save your work before suspending</title>
-  <p>You should save all of your work before suspending the computer, just in
-  case something goes wrong and your open applications and documents cannot be
-  recovered when you resume the computer again.</p>
+  <title>Spara alltid ditt arbete innan du försätter datorn i vänteläge</title>
+  <p>Du bör spara allt ditt arbete innan du försätter datorn i vänteläge, i fall något går dåligt och dina öppna program och dokument inte kan återställas när du väcker datorn igen.</p>
 </note>
 
 </page>

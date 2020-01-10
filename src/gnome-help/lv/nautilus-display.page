@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" id="nautilus-display" xml:lang="lv">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-display" xml:lang="lv">
 
   <info>
     <link type="guide" xref="nautilus-prefs" group="nautilus-display"/>
 
-    <desc>Kontrolē ikonu parakstus, ko izmanto datņu pārvaldniekā.</desc>
-
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-30" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -16,8 +15,15 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-    <its:rules xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <desc>Kontrolē ikonu parakstus, ko izmanto datņu pārvaldniekā.</desc>
+
   </info>
 
 <title>Datņu pārvaldnieka attēlošanas iestatījumi</title>
@@ -26,13 +32,30 @@
 
 <section id="icon-captions">
   <title>Ikonu paraksti</title>
+  <!-- TODO: update screenshot for 3.18 and above. -->
   <media type="image" src="figures/nautilus-icons.png" width="250" height="110" style="floatend floatright">
     <p>Datņu pārvaldnieka ikonas ar parakstiem</p>
   </media>
   <p>Kad izmantojat ikonu skatu, jūs varat izvēlēties rādīt zem katras ikonas tās parakstā arī papildu informāciju par datnēm un mapēm. Tas noder, piemēram, ja bieži vajag redzēt, kam pieder datne vai, kad tā pēdējo reizi rediģēta.</p>
-  <p>Jūs varat pietuvināt mapi, spiežot <media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">lejup</span></media> pogu rīkjoslā un izvēloties vienu no <gui>Tālummaiņas</gui> opcijām. Tuvinot datņu pārvaldnieks parādīs ar vien vairāk informācijas parakstā. Jūs varat izvēlēties trīs lietas, ko rādīt parakstā. Pirmā tiks parādīta vairumā tuvinājuma līmeņu. Pēdējā būs redzama tikai ļoti lielā pietuvinājumā.</p>
+  <p>You can zoom in a folder by clicking the view options button in the
+  <!-- FIXME: Get a tooltip added for "View options" -->
+  toolbar and choosing a zoom level with the slider. As you zoom in, the
+  file manager will display more and more information in captions. You can
+  choose up to three things to show in captions. The first will be displayed at
+  most zoom levels. The last will only be shown at very large sizes.</p>
   <p>Informācija, kuru varat parādīt ikonu parakstos, ir tā pati, kas redzama saraksta skatā. Skatiet <link xref="nautilus-list"/>, lai uzzinātu vairāk.</p>
-  <note><p>Ja datņu pārvaldnieka logs ir atvērts, varat to pārlādēt, lai izmaiņas ikonu uzrakstos stātos spēkā. Spiediet <guiseq><gui>Skats</gui><gui>Pārlādēt</gui></guiseq> vai piespiediet <keyseq><key>Ctrl</key><key>R</key></keyseq>.</p></note>
+</section>
+
+<section id="list-view">
+
+  <title>Saraksta skats</title>
+
+  <p>When viewing files as a list, you can <gui>Navigate folders in a
+  tree</gui>. This shows expanders on each directory in the file list, so
+  that the contents of several folders can be shown at once. This is useful if
+  the folder structure is relevant, such as if your music files are organized
+  with a folder per artist, and a subfolder per album.</p>
+
 </section>
 
 </page>

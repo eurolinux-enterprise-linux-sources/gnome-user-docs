@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="accounts-disable-service" xml:lang="id">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="accounts-disable-service" xml:lang="id">
 
   <info>
     <link type="guide" xref="accounts"/>
 
     <revision pkgversion="3.5.5" date="2012-08-14" status="review"/>
     <revision pkgversion="3.13.92" date="2013-09-20" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
-      <email its:translate="no">philbull@gmail.com</email>
+      <email>philbull@gmail.com</email>
     </credit>
     
     <desc>Beberapa akun daring dapat dipakai untuk mengakses multi layanan (seperti kalender dan surel). Anda dapat mengendalikan mana saja layanan yang dapat dipakai oleh aplikasi.</desc>
@@ -23,13 +24,18 @@
 
   <title>Mengendalikan agar suatu akun dapat dipakai untuk mengakses layanan daring mana</title>
 
-  <p>Beberapa jenis akun daring memungkinkan Anda untuk mengakses beberapa layanan dengan akun pengguna yang sama. Sebagai contoh, akun Google menyediakan akses ke kalender, surel, kontak, dan obrolan. Anda mungkin ingin menggunakan akun Anda untuk beberapa layanan, tetapi tidak yang lain. Sebagai contoh, Anda mungkin ingin menggunakan akun Google Anda untuk surel tapi tidak mengobrol, karena Anda memiliki akun daring yang berbeda yang Anda gunakan untuk mengobrol.</p>
+  <p>Some types of online account providers allow you to access several services
+  with the same user account. For example, Google accounts provide access to
+  calendar, email, contacts and chat. You may want to use your account for some
+  services, but not others. For example, you may want to use your Google account
+  for email but not chat if you have a different online account that you use
+  for chat.</p>
 
   <p>Anda dapat menonaktifkan beberapa layanan yang disediakan oleh setiap akun daring</p>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-terminology">Activities</gui> overview and
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
       start typing <gui>Online Accounts</gui>.</p>
     </item>
     <item>
@@ -41,7 +47,8 @@
     </item>
     <item>
       <p>A list of services that are available with this account will be
-      shown under <gui>Use for</gui>.</p>
+      shown under <gui>Use for</gui>. See <link xref="accounts-which-application"/>
+      to see which applications access which services.</p>
     </item>
     <item>
       <p>Switch off any of the services that you do not want to use.</p>

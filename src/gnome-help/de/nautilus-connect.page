@@ -2,14 +2,13 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-connect" xml:lang="de">
 
   <info>
-    <link type="guide" xref="files" group="more"/>
+    <link type="guide" xref="files#more-file-tasks"/>
     <link type="guide" xref="sharing"/>
 
     <revision pkgversion="3.6.0" date="2012-10-06" status="review"/>
     <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
     <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
-
-    <desc>Dateien auf einem anderen Rechner ansehen und bearbeiten – via FTP, SSH, Windows-Freigaben oder WebDAV.</desc>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -19,7 +18,15 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Dateien auf einem anderen Rechner ansehen und bearbeiten – via FTP, SSH, Windows-Freigaben oder WebDAV.</desc>
+
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Hendrik Knackstedt</mal:name>
@@ -36,7 +43,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Christian Kirbach</mal:name>
       <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2014.</mal:years>
+      <mal:years>2011-2016.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -56,18 +63,19 @@
 
 <p>Sie können sich mit einem Server oder einer Netzwerkfreigabe verbinden, um Dateien auf diesem Server zu durchsuchen und anzusehen, genau so, als wären sie auf Ihrem Rechner. Das ist eine bequeme Art, Dateien im Internet hochzuladen oder herunterzuladen oder Dateien an andere Personen in Ihrem lokalen Netzwerk weiterzugeben.</p>
 
-<p>Um Dateien über ein Netzwerk zu durchsuchen, öffnen Sie die Anwendung <app>Dateien</app> in der <gui>Aktivitäten</gui>-Übersicht. Klicken Sie dann auf <gui>Netzwerk durchsuchen</gui> in der Seitenleiste. Die Dateiverwaltung findet alle Rechner in Ihrem lokalen Netzwerk, die signalisieren, dass sie Dateien anbieten können. Wenn Sie sich mit einem Server im Internet verbinden wollen oder wenn Sie den Rechner, nach dem Sie gesucht haben, nicht sehen, können Sie sich manuell mit einem Server verbinden, indem Sie seine Internet-/Netzwerk-Adresse eingeben.</p>
+<p>Um Dateien über ein Netzwerk zu durchsuchen, öffnen Sie die Anwendung <app>Dateien</app> in der <gui>Aktivitäten</gui>-Übersicht. Klicken Sie dann auf <gui>Andere Orte</gui> in der Seitenleiste. Die Dateiverwaltung findet alle Rechner in Ihrem lokalen Netzwerk, die signalisieren, dass sie Dateien anbieten können. Wenn Sie sich mit einem Server im Internet verbinden wollen oder wenn Sie den Rechner, nach dem Sie gesucht haben, nicht sehen, können Sie sich manuell mit einem Server verbinden, indem Sie seine Internet-/Netzwerk-Adresse eingeben.</p>
 
 <steps>
   <title>Mit einem Dateiserver verbinden</title>
-  <item><p>Klicken Sie in der Dateiverwaltung auf <gui>Mit Server verbinden</gui> in der Seitenleiste.</p>
+  <item><p>Klicken Sie in der Dateiverwaltung auf <gui>Andere Orte</gui> in der Seitenleiste.</p>
   </item>
-  <item><p>Geben Sie die Serveradresse in Form einer <link xref="#urls">Adresse</link> ein. Details zu unterstützen Adressen finden Sie <link xref="#types">unten aufgelistet</link>.</p>
+  <item><p>Geben Sie in <gui>Mit Server verbinden</gui> die Serveradresse in Form einer <link xref="#urls">Adresse</link> ein. Details zu unterstützen Adressen finden Sie <link xref="#types">unten aufgelistet</link>.</p>
   <note>
     <p>Falls schon einmal eine Verbindung zu dem Server aufgebaut wurde, können Sie ihn in der Liste <gui>Zuletzt verwendete Server</gui> anklicken.</p>
   </note>
   </item>
-  <item><p>Klicken Sie dann auf <gui>Verbinden</gui>. Ein neues Fenster wird geöffnet und zeigt Ihnen die Dateien auf dem Server. Sie können die Dateien genauso durchsuchen, wie Sie es auch auf dem eigenen Rechner tun. Der Server wird der Seitenleiste hinzugefügt, so dass sie in Zukunft schnell auf ihn zugreifen können.</p>
+  <item>
+    <p>Klicken Sie dann auf <gui>Verbinden</gui>. Ein neues Fenster wird geöffnet und zeigt Ihnen die Dateien auf dem Server. Sie können die Dateien genauso durchsuchen, wie Sie es auch auf dem eigenen Rechner tun. Der Server wird der Seitenleiste hinzugefügt, so dass Sie in Zukunft schnell auf ihn zugreifen können.</p>
   </item>
 </steps>
 
@@ -136,7 +144,15 @@
   <p>WebDAV basiert auf HTTP, dem Protokoll, das im World Wide Web verwendet wird, und wird manchmal dazu benutzt, Dateien im lokalen Netzwerk auszutauschen oder im Internet abzuspeichern. Wenn der Server, zu dem Sie sich verbinden, sichere Verbindungen unterstützt, sollten Sie diese Option wählen. Sicheres WebDAV verwendet eine starke SSL-Verschlüsselung, so dass andere Benutzer Ihr Passwort nicht einsehen können.</p>
   <p>Eine typische WebDAV-Adresse schaut etwa so aus:</p>
   <example>
-    <p><sys>http://beispiel.rechnername.com/pfad</sys></p>
+    <p><sys>dav://Beispiel.Rechnername.com/Pfad</sys></p>
+  </example>
+</item>
+<item>
+  <title>NFS-Freigabe</title>
+  <p>UNIX-Rechner verwenden traditionell das »Network File System«-Protokoll (NFS), um Dateien über ein lokales Netzwerk freizugeben. Mit NFS basiert die Sicherheit auf der Kennung (UID) des Benutzers, der auf die Freigabe zugreift, so dass für die Verbindung keine Eingabe von Anmeldedaten nötig ist.</p>
+  <p>Eine typische Adresse einer NFS-Freigabe schaut etwa so aus:</p>
+  <example>
+    <p><sys>nfs://Servername/Pfad</sys></p>
   </example>
 </item>
 </terms>

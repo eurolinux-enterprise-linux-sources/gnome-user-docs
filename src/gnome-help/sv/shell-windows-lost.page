@@ -18,37 +18,40 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Check the <gui>Activities</gui> overview or other workspaces.</desc>
+    <desc>Kontrollera översiktsvyn <gui>Aktiviteter</gui> eller andra arbetsytor.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
   </info>
 
   <title>Hitta ett förlorat fönster</title>
 
-  <p>A window on a different workspace, or hidden behind another window, is
-  easily found using the <gui xref="shell-terminology">Activities</gui>
-  overview:</p>
+  <p>Ett fönster på en annan arbetsyta, eller gömt bakom ett annat fönster, hittas enkelt via översiktsvyn <gui xref="shell-introduction#activities">Aktiviteter</gui>:</p>
 
   <list>
     <item>
-      <p>Open the <gui>Activities</gui> overview. If the missing window is on
-      the current
-      <link xref="shell-windows#working-with-workspaces">workspace</link>, it
-      will be shown here in thumbnail. Simply click the thumbnail to redisplay
-      the window, or</p>
+      <p>Öppna översiktsvyn <gui>Aktiviteter</gui>. Om det saknade fönstret finns på den aktuella <link xref="shell-windows#working-with-workspaces">arbetsytan</link> kommer det att visas här som en miniatyrbild. Klicka helt enkelt på miniatyrbilden för att åter visa fönstret, eller</p>
     </item>
     <item>
-      <p>Click different workspaces in the
-      <link xref="shell-terminology">workspace selector</link> at the
-      right-hand side of the screen to try to find your window, or</p>
+      <p>Klicka på olika arbetsytor i <link xref="shell-workspaces">arbetsyteväxlaren</link> till höger på skärmen för att försöka hitta ditt fönster, eller</p>
     </item>
     <item>
-      <p>Right-click the application in the dash and its open windows will be
-      listed. Click the window in the list to switch to it.</p>
+      <p>Högerklicka på programmet i snabbstartspanelen så kommer dess öppna fönster att listas. Klicka på fönstret i listan för att växla till det.</p>
     </item>
   </list>
 
@@ -56,17 +59,10 @@
 
   <list>
     <item>
-      <p>Press
-      <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq>
-      to display the <link xref="shell-terminology">window switcher</link>.
-      Continue to hold down the <key>Super</key> key and press <key>Tab</key>
-      to cycle through the open windows, or
-      <keyseq><key>Shift</key><key>Tab</key> </keyseq> to cycle backwards.</p>
+      <p>Tryck <keyseq><key xref="keyboard-key-super">Super</key><key>Tabb</key></keyseq> för att visa <link xref="shell-windows-switching">fönsterväxlaren</link>. Fortsätt att hålla ner <key>Super</key> och tryck på <key>Tabb</key> för att gå igenom de öppna fönstren, eller <keyseq><key>Skift</key><key>Tabb</key> </keyseq> för att gå baklänges.</p>
     </item>
     <item if:test="!platform:gnome-classic">
-      <p>If an application has multiple open windows, hold down
-      <key>Super</key> and press <key>`</key> (or the key above <key>Tab</key>)
-      to step through them.</p>
+      <p>Om ett program att flera öppna fönster, håll ner <key>Super</key> och tryck <key>`</key> (eller tangenten ovanför <key>Tabb</key>) för att bläddra genom dem.</p>
     </item>
   </list>
 

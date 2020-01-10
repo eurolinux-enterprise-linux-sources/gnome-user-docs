@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" version="1.0 if/1.0" id="status-icons" xml:lang="el">
+
   <info>
-    <link type="guide" xref="shell-overview#desktop"/>
+    <link type="guide" xref="shell-overview#apps"/>
 
     <revision version="0.1" date="2013-02-23" status="review"/>
 
@@ -16,32 +17,44 @@
     <desc>Εξηγεί τη σημασία των εικονιδίων που βρίσκονται στα δεξιά της πάνω γραμμής.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name> Δημήτρης Σπίγγος</mal:name>
-      <mal:email>dmtrs32@gmail.com</mal:email>
-      <mal:years>2012, 2013, 2014</mal:years>
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2016</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name> Φώτης Τσάμης</mal:name>
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
       <mal:email>ftsamis@gmail.com</mal:email>
       <mal:years>2009</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name> Μάριος Ζηντίλης</mal:name>
+      <mal:name>Μάριος Ζηντίλης</mal:name>
       <mal:email>m.zindilis@dmajor.org</mal:email>
       <mal:years>2009, 2010</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name> Θάνος Τρυφωνίδης</mal:name>
-      <mal:email>tomtryf@gmail.com</mal:email>
-      <mal:years>2012</mal:years>
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gnome.org</mal:email>
+      <mal:years>2012-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
     </mal:credit>
   </info>
 
   <title>Τι σημαίνουν τα εικονίδια στην πάνω γραμμή;</title>
-<p>Αυτή η ενότητα εξηγεί τη σημασία των εικονιδίων που βρίσκονται στη πάνω δεξιά γωνία της οθόνης. Ειδικά, περιγράφονται οι διαφορετικές παραλλαγές των έτοιμων εικονιδίων από τη διεπαφή του GNOME.</p>
+<p>Αυτή η ενότητα εξηγεί τη σημασία των εικονιδίων που βρίσκονται στη πάνω δεξιά γωνία της οθόνης. Ειδικά, περιγράφονται οι διαφορετικές παραλλαγές των έτοιμων εικονιδίων από τη διεπαφή του GNOME.Οδηγεί σε ένα μενού που ενερ</p>
 
 <if:choose>
 <if:when test="!platform:gnome-classic">
@@ -64,7 +77,7 @@
  <table shade="rows">
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/preferences-desktop-accessibility-symbolic.svg"/></td>
-      <td><p>Οδηγεί σε ένα μενού που ενεργοποιεί ρυθμίσεις πρόσβασης.</p></td>
+      <td><p>Οδηγεί σε ένα μενού που ενεργοποιεί τις ρυθμίσεις προσιτότητας.</p></td>
     </tr>
     
   </table>
@@ -77,15 +90,15 @@
  <table shade="rows">
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/audio-volume-high-symbolic.svg"/></td>
-      <td><p>Η ένταση ορίστηκε υψηλή.</p></td>
+      <td><p>Η ένταση ορίστηκε στο υψηλό.</p></td>
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/audio-volume-medium-symbolic.svg"/></td>
-      <td><p>Η ένταση ορίστηκε μεσαία.</p></td>
+      <td><p>Η ένταση ορίστηκε στο μεσαίο.</p></td>
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/audio-volume-low-symbolic.svg"/></td>
-      <td><p>Η ένταση ορίστηκε χαμηλή.</p></td>
+      <td><p>Η ένταση ορίστηκε στο χαμηλό.</p></td>
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/audio-volume-muted-symbolic.svg"/></td>
@@ -96,16 +109,16 @@
 
 
 <section id="bluetoothicons">
-<title>Εικονίδια του Διαχειριστή bluetooth</title>
+<title>Εικονίδια του διαχειριστή Bluetooth</title>
 
  <table shade="rows">
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/bluetooth-active-symbolic.svg"/></td>
-      <td><p>Το bluetooth έχει ενεργοποιηθεί.</p></td>
+      <td><p>Το Bluetooth έχει ενεργοποιηθεί.</p></td>
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/bluetooth-disabled-symbolic.svg"/></td>
-      <td><p>Το bluetooth έχει απενεργοποιηθεί.</p></td>
+      <td><p>Το Bluetooth έχει απενεργοποιηθεί.</p></td>
     </tr>
   </table>
 </section>
@@ -113,7 +126,7 @@
 <section id="networkicons">
 <title>Εικονίδια διαχειριστή δικτύου</title>
 <p/>
-<p><app>Κυψελώδης σύνδεση</app></p>
+<p><app>Σύνδεση σε δίκτυο κινητής τηλεφωνίας</app></p>
  <table shade="rows">
 
     <tr>
@@ -130,19 +143,19 @@
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-gprs-symbolic.svg"/></td>
-      <td><p>Συνδέθηκε σε GPRS δίκτυο.</p></td>
+      <td><p>Συνδέθηκε σε δίκτυο GPRS.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-umts-symbolic.svg"/></td>
-      <td><p>Συνδέθηκε σε UMTS δίκτυο.</p></td>
+      <td><p>Συνδέθηκε σε δίκτυο UMTS.</p></td>
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-connected-symbolic.svg"/></td>
-      <td><p>Συνδέθηκε σε κυψελώδες δίκτυο.</p></td>
+      <td><p>Συνδέθηκε σε δίκτυο κινητής τηλεφωνίας.</p></td>
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-acquiring-symbolic.svg"/></td>
-      <td><p>Λήψη κυψελώδους σύνδεσης δικτύου.</p></td>
+      <td><p>Λήψη ενός δικτύου κινητής τηλεφωνίας.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-excellent-symbolic.svg"/></td>
@@ -168,7 +181,7 @@
 
 
 
-<p><app>Σύνδεση δικτύου τοπικής περιοχής (LAN)</app></p>
+<p><app>Σύνδεση σε δίκτυο τοπικής περιοχής (LAN)</app></p>
  <table shade="rows">
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-error-symbolic.svg"/></td>
@@ -180,7 +193,7 @@
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-no-route-symbolic.svg"/></td>
-      <td><p>Δεν βρέθηκε δρόμος για το δίκτυο.</p></td>
+      <td><p>Δεν βρέθηκε διαδρομή για το δίκτυο.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-offline-symbolic.svg"/></td>
@@ -202,7 +215,7 @@
 
 
 
-<p><app>Σύνδεση εικονικού ιδιωτικού δικτύου (VPN)</app></p>
+<p><app>Σύνδεση σε εικονικό ιδιωτικό δίκτυο (VPN)</app></p>
  <table shade="rows">
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-vpn-acquiring-symbolic.svg"/></td>
@@ -284,7 +297,7 @@
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-low-symbolic.svg"/></td>
-      <td><p>Η μπαταρία είναι χαμηλή.</p></td>
+      <td><p>Το φορτίο της μπαταρίας είναι χαμηλό</p></td>
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-caution-symbolic.svg"/></td>

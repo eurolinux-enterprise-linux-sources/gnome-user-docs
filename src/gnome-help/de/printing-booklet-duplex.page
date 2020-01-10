@@ -6,15 +6,20 @@
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
       <email>tiffany@antopolski.com</email>
     </credit>
+    <credit type="author editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Drucken einer gefalteten Broschüre mit mehreren Seiten in den Formaten A4 oder US-Letter.</desc>
+    <desc>Drucken einer gefalteten Broschüre aus einem PDF in den Formaten A4 oder US-Letter.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Hendrik Knackstedt</mal:name>
@@ -31,7 +36,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Christian Kirbach</mal:name>
       <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2014.</mal:years>
+      <mal:years>2011-2016.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -47,9 +52,9 @@
     </mal:credit>
   </info>
 
-  <title>Gefaltete Broschüren drucken</title>
+  <title>Eine Broschüre auf einem Duplex-Drucker ausgeben</title>
 
-  <p>Sie können Falthefte (wie kleine Bücher oder Broschüren) erstellen, indem Sie die Seiten eines Dokuments in einer besonderen Reihenfolge drucken und einige Druckeinstellungen anpassen.</p>
+  <p>Sie können Falthefte (wie kleine Bücher oder Broschüren) erstellen, indem Sie die Seiten eines Dokuments in einer bestimmten Reihenfolge drucken und einige Druckeinstellungen anpassen.</p>
 
   <p>Diese Anweisungen beziehen sich auf das Drucken einer Broschüre aus einem PDF-Dokument.</p>
 
@@ -59,16 +64,19 @@
 
   <steps>
     <item>
-      <p>Open the print dialog. This can normally be done through
-      <gui style="menuitem">Print</gui> in the menu or using the
-      <keyseq><key>Ctrl</key><key>P</key></keyseq> keyboard shortcut.</p>
+      <p>Öffnen Sie den Druckdialog. Das geschieht normalerweise über den Menüeintrag <gui style="menuitem">Drucken</gui> oder mit der Tastenkombination <keyseq><key>Strg</key><key>P</key></keyseq>.</p>
     </item>
     <item>
-      <p>Go to the <gui>General</gui> tab. Under <gui>Range</gui>, choose
-      <gui>Pages</gui>.</p>
+      <p>Klicken Sie auf den Knopf <gui>Eigenschaften …</gui>.</p>
+      <p>Wählen Sie in der Auswahlliste <gui>Ausrichtung</gui> den Punkt <gui>Querformat</gui>.</p>
+      <p>Wählen Sie in der Auswahlliste <gui>Beidseitig</gui> die Option <gui>Kurzer Rand (Umdrehen)</gui>.</p>
+      <p>Klicken Sie auf <gui>OK</gui>, um zum Druckdialog zurückzukehren.</p>
     </item>
     <item>
-      <p>Geben Sie die Seitennummern in dieser Reihenfolge ein, wobei n die Gesamtzahl der Seiten ist und a ein Vielfaches von 4:</p>
+      <p>Wählen Sie <gui>Seiten</gui> unter <gui>Bereich und Kopien</gui>.</p>
+    </item>
+    <item>
+      <p>Geben Sie die Seitennummern in dieser Reihenfolge ein, wobei n die Gesamtzahl der Seiten und ein Vielfaches von 4 ist:</p>
       <p>n, 1, 2, n-1, n-2, 3, 4, n-3, n-4, 5, 6, n-5, n-6, 7, 8, n-7, n-8, 9, 10, n-9, n-10, 11, 12, n-11 …</p>
       <p>Beispielsweise:</p>
       <list>
@@ -78,12 +86,9 @@
       </list>
     </item>
     <item>
-      <p>Wechseln Sie nun zum Reiter <gui>Seite einrichten</gui>.</p>
-      <p>Under <gui>Layout</gui>, in the <gui>Two-sided</gui> drop-down list,
-      select <gui>Short Edge (Flip)</gui>.</p>
-      <p>In the <gui>Pages per side</gui> drop-down list, select
-      <gui>2</gui>.</p>
-      <p>Wählen Sie <gui>Links nach rechts</gui> im Menü <gui>Reihenfolge</gui>.</p>
+      <p>Wählen Sie den Reiter <gui>Seite einrichten</gui>.</p>
+      <p>Wählen Sie <gui>Broschüre</gui> unter <gui>Layout</gui>.</p>
+      <p>Unter <gui>Layout</gui> wählen Sie <gui>Alle Seiten</gui> in der Auswahlliste <gui>Beschränken auf:</gui>.</p>
     </item>
     <item>
       <p>Klicken Sie auf <gui>Drucken</gui>.</p>

@@ -6,6 +6,7 @@
 
     <revision pkgversion="3.6.1" date="2012-11-10" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.14.0" date="2015-01-14" status="review"/>
 
     <credit type="author copyright">
       <name>Tiffany Antopolski</name>
@@ -21,11 +22,15 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2015</years>
+    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Take a picture or record a video of what is happening on your
-    screen.</desc>
+    <desc>Prendre une capture ou une vidéo de ce qui se passe sur votre écran.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Luc Pionchon</mal:name>
@@ -42,7 +47,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2014</mal:years>
+      <mal:years>2011-2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -74,15 +79,17 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
 <title>Captures d'écran et vidéo d'écran</title>
 
-  <p>You can take a picture of your screen (a <em>screenshot</em>) or record a
-  video of what is happening on the screen (a <em>screencast</em>). This is
-  useful if you want to show someone how to do something on the computer, for
-  example. Screenshots and screencasts are just normal picture and video files,
-  so you can email them and share them on the web.</p>
+  <p>Vous pouvez prendre une <em>capture d'écran</em> ou enregistrer une vidéo de ce se passe à l'écran. C'est pratique, par exemple, si vous voulez montrer comment faire quelque chose à quelqu'un sur l'ordinateur. Les captures et les vidéos d'écran sont des fichiers images et vidéos normaux, vous pouvez donc les envoyer par courriel ou les partager sur le Web.</p>
 
 <section id="screenshot">
   <title>Prendre une capture d'écran</title>
@@ -90,13 +97,10 @@
   <steps>
     <item>
       <p>Open <app>Screenshot</app> from the
-      <gui xref="shell-terminology">Activities</gui> overview.</p>
+      <gui xref="shell-introduction#activities">Activities</gui> overview.</p>
     </item>
     <item>
-      <p>In the <app>Screenshot</app> window, select whether to grab the whole
-      screen, the current window, or an area of the screen. Set a delay if you
-      need to select a window or otherwise set up your desktop for the
-      screenshot. Then choose any effects you want.</p>
+      <p>Dans la fenêtre <app>Capture d'écran</app>, choisissez si vous voulez copier tout l'écran, la fenêtre active ou une zone de l'écran. Définissez un délai si vous avez besoin de sélectionner une fenêtre ou de définir la taille de votre bureau pour la capture d'écran. Puis choisissez les effets que vous souhaitez.</p>
     </item>
     <item>
        <p>Cliquez sur <gui>Prendre une capture d'écran</gui>.</p>
@@ -108,7 +112,7 @@
     </item>
   </steps>
 
-  <note style="tip">
+  <section id="keyboard-shortcuts">
     <title>Raccourcis clavier</title>
 
     <p>Vous pouvez prendre rapidement une capture d'écran du bureau, d'une fenêtre ou d'une zone de l'écran en utilisant ces raccourcis clavier :</p>
@@ -125,12 +129,12 @@
       </item>
     </list>
 
-    <p>When you use a keyboard shortcut, the image is automatically saved in
-    your <file>Pictures</file> folder in your home folder with a file name that
-    begins with <file>Screenshot</file> and includes the date and time it was
-    taken.</p>
+    <p>Quand vous utilisez un raccourci clavier, l'image est automatiquement sauvegardée dans votre dossier <file>Images</file> avec un nom de fichier commençant par <file>Capture</file> et incluant la date et l'heure à laquelle elle a été prise.</p>
+    <note style="note">
+      <p>Si vous ne possédez pas de dossier <file>Images</file>, elles sont enregistrées dans votre répertoire personnel.</p>
+    </note>
     <p>Vous pouvez aussi maintenir appuyée la touche <key>Ctrl</key> avec n'importe-lequel des raccourcis ci-dessus afin de copier la capture d'écran vers le presse-papiers au lieu de la sauvegarder.</p>
-  </note>
+  </section>
 
 </section>
 
@@ -141,23 +145,20 @@
 
   <steps>
     <item>
-      <p>Press
-      <keyseq><key>Ctrl</key><key>Alt</key><key>Shift</key><key>R</key></keyseq>
-      to start recording what is on your screen.</p>
-      <p>A red circle is displayed in the bottom right corner of the screen
-      when the recording is in progress.</p>
+      <p>Appuyez sur les touches <keyseq><key>Ctrl</key><key>Alt</key><key>Maj</key><key>R</key></keyseq> pour commencer l'enregistrement de ce qui se passe sur votre écran.</p>
+      <p>Un rond rouge est affiché dans le coin supérieur droit de l'écran quand l'enregistrement est en cours.</p>
     </item>
     <item>
-      <p>Once you have finished, press
-      <keyseq><key>Ctrl</key><key>Alt</key><key>Shift</key><key>R</key></keyseq>
-      again to stop the recording.</p>
+      <p>Une fois que vous avez fini, appuyez de nouveau sur les touches <keyseq><key>Ctrl</key><key>Alt</key><key>Maj</key><key>R</key></keyseq> pour arrêter l'enregistrement.</p>
     </item>
     <item>
-      <p>The video is automatically saved in your <file>Videos</file> folder
-      in your home folder, with a file name that starts with
-      <file>Screencast</file> and includes the date and time it was taken.</p>
+      <p>La vidéo est automatiquement sauvegardée dans votre dossier <file>Vidéo</file> avec un nom commençant par <file>Capture d'écran vidéo</file> et incluant la date et l'heure à laquelle elle a été prise.</p>
     </item>
   </steps>
+
+  <note style="note">
+    <p>Si vous ne possédez pas de dossier <file>Vidéo</file>, elles sont enregistrées dans votre répertoire personnel.</p>
+  </note>
 
 </section>
 

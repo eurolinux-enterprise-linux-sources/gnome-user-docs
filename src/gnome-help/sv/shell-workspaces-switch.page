@@ -15,53 +15,52 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Use the workspace selector.</desc>
+    <desc>Använd arbetsyteväxlaren.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
   </info>
 
  <title>Växla mellan arbetsytor</title>
 
  <steps>  
- <title>Använda musen:</title>
+ <title>Via musen:</title>
  <item>
-  <p if:test="!platform:gnome-classic">Open the <link xref="shell-terminology">
-  <gui>Activities</gui> overview</link>.</p>
-  <p if:test="platform:gnome-classic">At the top left of the screen, click the
-  <link xref="shell-terminology"><gui>Applications</gui> menu</link> and choose 
-  <gui>Activities Overview</gui>.</p>
+    <p if:test="!platform:gnome-classic">Öppna översiktsvyn <gui xref="shell-introduction#activities">Aktiviteter</gui>.</p>
+  <p if:test="platform:gnome-classic">Längst upp till vänster på skärmen, klicka på menyn <gui xref="shell-introduction#activities">Program</gui> och välj <gui>Aktivitetsöversikt</gui>.</p>
  </item>
  <item>
-  <p>Click on a workspace in the <link xref="shell-terminology">workspace
-  selector</link> on the right side of the screen to view the open windows on
-  that workspace.</p>
+  <p>Klicka på en arbetsyta i <link xref="shell-workspaces">arbetsyteväxlaren</link> på höger sida av skärmen för att visa de öppna fönstren på den arbetsytan.</p>
  </item>
  <item>
-  <p>Click on any window thumbnail to activate the workspace.</p>
+  <p>Klicka på vilken fönsterminiatyrbild som helst för att aktivera den arbetsytan.</p>
  </item>
  </steps>
  
-  <p if:test="platform:gnome-classic">Alternatively, you can switch between
-  workspaces by clicking the workspace identifier at the right-hand side of
-  the window list on the bottom bar and selecting the workspace you want to
-  use from the menu.</p>
+  <p if:test="platform:gnome-classic">Alternativt kan du växla mellan arbetsytor genom att klicka på arbetsytsnamnet på höger sida av fönsterlisten längst ner på bottenraden och välja den arbetsyta du önskar från menyn.</p>
 
  <list>
- <title>Använda tangentbordet:</title>  
+ <title>Via tangentbordet:</title>  
   <item>
-    <p>Press
-    <keyseq><key xref="keyboard-key-super">Super</key><key>Page Up</key></keyseq>
-    to move to a workspace which is above the current workspace in the
-    workspace selector.</p>
+    <p>Tryck <keyseq><key xref="keyboard-key-super">Super</key><key>Page Up</key></keyseq> för att flytta till en arbetsyta som är ovanför den aktuella arbetsyta i arbetsyteväxlaren.</p>
   </item>
   <item>
-    <p>Press <keyseq><key>Super</key><key>Page Down</key></keyseq> to move to a
-    workspace which is below the current workspace in the workspace selector.
-    </p>
+    <p>Tryck <keyseq><key>Super</key><key>Page Down</key></keyseq> för att flytta till en arbetsyta som är nedanför den aktuella arbetsyta i arbetsyteväxlaren.</p>
   </item>
  </list>
 

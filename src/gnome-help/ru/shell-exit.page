@@ -2,9 +2,8 @@
 <page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="shell-exit" xml:lang="ru">
 
   <info>
-    <link type="guide" xref="shell-overview#desktop"/>
+    <link type="guide" xref="shell-overview"/>
     <link type="guide" xref="power"/>
-    <link type="seealso" xref="power-hibernate"/>
     <link type="guide" xref="index" group="#first"/>
 
     <revision pkgversion="3.6.0" date="2012-09-15" status="review"/>
@@ -13,19 +12,19 @@
 
     <credit type="author">
       <name>Шон МакКенс (Shaun McCance)</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="author">
       <name>Андрэ Клаппер (Andre Klapper)</name>
-      <email its:translate="no">ak-47@gmx.net</email>
+      <email>ak-47@gmx.net</email>
     </credit>
     <credit type="author">
       <name>Александр Франке (Alexandre Franke)</name>
-      <email its:translate="no">afranke@gnome.org</email>
+      <email>afranke@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Екатерина Герасимова (Ekaterina Gerasimova)</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -42,7 +41,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011, 2012</mal:years>
+      <mal:years>2011-2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -56,6 +55,12 @@
       <mal:email>juliette.tux@gmail.com</mal:email>
       <mal:years>2013-2014</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
   <title>Завершение сеанса, выключение компьютера или переключение пользователей</title>
@@ -68,15 +73,15 @@
   <p>Чтобы у других пользователей была возможность использования вашего компьютера, можно завершить сеанс работы или выполнить переключение пользователя без завершения сеанса. При переключении пользователей все запущенные приложения продолжают работать, после обратного переключения всё будет в том же самом состоянии, в котором было, когда вы переключили пользователя.</p>
 
   <p>To <gui>Log Out</gui> or <gui>Switch User</gui>, click the
-  <link xref="shell-terminology">system menu</link> on the right side of the
+  <link xref="shell-introduction#yourname">system menu</link> on the right side of the
   top bar, click your name and then choose the right option.</p>
 
   <note if:test="!platform:gnome-classic">
-    <p>Пункты <gui>Завершить сеанс</gui> и <gui>Переключить пользователя</gui> появляются в меню только если в системе имеется более одной учётной записи пользователя.</p>
+    <p>Пункты <gui>Завершить сеанс</gui> и <gui>Сменить пользователя</gui> появляются в меню только если в системе имеется более одной учётной записи пользователя.</p>
   </note>
 
   <note if:test="platform:gnome-classic">
-    <p>Пункт <gui>Переключить пользователя</gui> появляется в меню только если в системе имеется более одной учётной записи пользователя.</p>
+    <p>Пункт <gui>Сменить пользователя</gui> появляется в меню только если в системе имеется более одной учётной записи пользователя.</p>
   </note>
 
 </section>
@@ -92,7 +97,7 @@
 
   <p>Чтобы заблокировать экран, нажмите на системное меню справа в верхней панели, затем нажмите на кнопку блокировки (значок в виде замка) в нижней части меню.</p>
 
-  <p>При заблокированном экране другие пользователи могут входить в систему под своими учётными записями, нажав на экране ввода пароля пункт <gui>Переключить пользователя</gui>. Когда они завершат работу, вы сможете вернуться к своему рабочему столу.</p>
+  <p>При заблокированном экране другие пользователи могут входить в систему под своими учётными записями, нажав на экране ввода пароля пункт <gui>Сменить пользователя</gui>. Когда они завершат работу, вы сможете вернуться к своему рабочему столу.</p>
 
 </section>
 
@@ -103,9 +108,14 @@
 
   <title>Ждущий режим</title>
 
-  <p>Если компьютер не используется, для экономии энергии включайте ждущий режим. На ноутбуках этот режим включается автоматически при закрытии крышки. Состояние системы сохраняется в оперативной памяти компьютера и большинство функций компьютера выключаются. В ждущем режиме, тем не менее, продолжает потребляться небольшое количество энергии.</p>
+  <p>To save power, suspend your computer when you are not using it. If you use
+  a laptop, GNOME, by default, suspends your computer automatically when you
+  close the lid.
+  This saves your state to your computer's memory and powers off most of the
+  computer's functions. A very small amount of power is still used during
+  suspend.</p>
 
-  <p>Чтобы перевести компьютер в ждущий режим вручную, нажмите на системное меню справа на верхней панели, затем нажмите и удерживайте нажатой клавишу <key>Alt</key>, кнопка выключения должна смениться кнопкой ждущего режима. Нажмите на эту кнопку.</p>
+  <p>Чтобы перевести компьютер в ждущий режим вручную, нажмите на системное меню справа в верхней панели, затем нажмите и удерживайте нажатой клавишу <key>Alt</key>, кнопка выключения должна смениться кнопкой ждущего режима. Нажмите на эту кнопку.</p>
 
 </section>
 
@@ -116,7 +126,7 @@
 
   <title>Выключение или перезапуск</title>
 
-  <p>Чтобы полностью выключить компьютер или выполнить полную перезагрузку, нажмите на системное меню справа на верхней панели, затем нажмите кнопку выключения в нижней части меню. Откроется диалоговое окно в котором можно выбрать пункт <gui>Перезапустить</gui> или <gui>Выключить</gui>.</p>
+  <p>Чтобы полностью выключить компьютер или выполнить полную перезагрузку, нажмите на системное меню справа в верхней панели, затем нажмите кнопку выключения в нижней части меню. Откроется диалоговое окно в котором можно выбрать пункт <gui>Перезапустить</gui> или <gui>Выключить</gui>.</p>
 
   <p>Если в этот момент в системе авторизованы другие пользователи, то выключение или перезапуск компьютера будут невозможны, поскольку данные действия прервут сеансы этих пользователей. При наличии прав администратора компьютер можно выключить, но понадобится вести пароль.</p>
 

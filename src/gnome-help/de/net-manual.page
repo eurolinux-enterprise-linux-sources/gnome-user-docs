@@ -7,14 +7,15 @@
 
     <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
     <revision pkgversion="3.10" date="2013-11-11" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
-      <email its:translate="no">philbull@gmail.com</email>
+      <email>philbull@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
 
     <desc>Sie müssen die Netzwerkeinstellungen angeben, falls diese nicht automatisch zugeordnet werden.</desc>
@@ -35,7 +36,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Christian Kirbach</mal:name>
       <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2014.</mal:years>
+      <mal:years>2011-2016.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -58,16 +59,13 @@
   <steps>
     <title>So richten Sie Ihre Netzwerkeinstellungen manuell ein:</title>
     <item>
-      <p>Öffnen Sie die <gui xref="shell-terminology">Aktivitäten</gui>-Übersicht und tippen Sie <gui>Einstellungen</gui> ein.</p>
-    </item>
-    <item>
-      <p>Klicken Sie auf <gui>Einstellungen</gui>, um das Panel zu öffnen.</p>
+      <p>Öffnen Sie die <gui xref="shell-introduction#activities">Aktivitäten</gui>-Übersicht und tippen Sie <gui>Netzwerk</gui>.</p>
     </item>
     <item>
       <p>Klicken Sie auf <gui>Netzwerk</gui>, um das Panel zu öffnen.</p>
     </item>
     <item>
-      <p>Wählen Sie im linken Teilfenster die Netzwerkverbindung, die Sie manuell einrichten wollen, und klicken Sie auf den Knopf <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">Einstellungen</span></media>. Wenn Sie beispielsweise ein kabelgebundenes Netzwerk anschließen, klicken Sie in <gui>Kabelgebunden</gui>. Im Falle einer <gui>WLAN</gui>-Verbindung befindet sich der Knopf <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">Einstellungen</span></media> neben dem aktiven Netzwerk.</p>
+      <p>Wählen Sie im linken Teilfenster die Netzwerkverbindung, die Sie manuell einrichten wollen. Wenn Sie beispielsweise ein kabelgebundenes Netzwerk anschließen, klicken Sie auf <gui>Kabelgebunden</gui> und dann auf den <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">Einstellungen</span></media>-Knopf in der unteren linken Ecke des Panels. Im Falle einer <gui>WLAN</gui>-Verbindung befindet sich der Knopf <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">Einstellungen</span></media> neben dem aktiven Netzwerk.</p>
       <p>Stellen Sie sicher, dass Ihr Funknetzwerkadapter eingeschaltet oder das Netzwerkkabel eingesteckt ist.</p>
     </item>
     <item>
@@ -78,15 +76,10 @@
       <p>Diese Adressen müssen <em>IP-Adressen</em> sein. Das heißt, sie müssen aus vier Zahlen bestehen, durch Punkte getrennt, beispielsweise »123.45.6.78«.</p>
     </item>
     <item>
-      <p>In the <gui>DNS</gui> section, switch <gui>Automatic</gui> to
-      <gui>OFF</gui>. Enter the IP address of a DNS server you want to use.
-      Enter additional DNS server addresses using the <gui>+</gui> button.</p>
+      <p>Stellen Sie <gui>Automatisch</gui> im Abschnitt <gui>DNS</gui> auf <gui>AUS</gui>. Geben Sie die IP-Adresse des DNS-Servers ein, den Sie verwenden möchten. Geben Sie zusätzliche DNS-Server-Adressen mit Hilfe des Knopfes <key>+</key> ein.</p>
     </item>
     <item>
-      <p>In the <gui>Routes</gui> section, switch <gui>Automatic</gui> to
-      <gui>OFF</gui>. Enter the <gui>Address</gui>, <gui>Netmask</gui>,
-      <gui>Gateway</gui> and <gui>Metric</gui> for a route you want to use.
-      Enter additional routes using the <gui>+</gui> button.</p>
+      <p>Stellen Sie <gui>Automatisch</gui> im Abschnitt <gui>Routen</gui> auf <gui>AUS</gui>. Geben Sie <gui>Adresse</gui>, <gui>Netzmaske</gui>, <gui>Gateway</gui> und <gui>Metrik</gui> für eine Route ein, die Sie verwenden möchten. Geben Sie zusätzliche Routen mit Hilfe des Knopfes <key>+</key> ein.</p>
     </item>
     <item>
       <p>Klicken Sie auf <gui>Anwenden</gui>. Falls Sie nicht mit dem Netzwerk verbunden sind, verwenden Sie das Netzwerksymbol im oberen Panel und stellen Sie eine Verbindung her. Überprüfen Sie die Netzwerkeinstellungen, indem Sie beispielsweise eine Internet-Seite aufrufen oder nach im Netzwerk freigegebenen Dateien suchen.</p>

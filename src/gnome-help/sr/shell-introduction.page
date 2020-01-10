@@ -11,15 +11,15 @@
 
     <credit type="author">
       <name>Шон Мек Кенс</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Мајкл Хил</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Екатерина Герасимова</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -53,7 +53,7 @@
 
 <if:choose>
   <if:when test="!platform:gnome-classic">
-    <media type="image" src="figures/shell-activities.png" width="123" height="82" style="floatend floatright" if:test="!target:mobile">
+    <media type="image" src="figures/shell-activities.png" style="floatend floatright" if:test="!target:mobile">
       <p>Дугме активности</p>
     </media>
   </if:when>
@@ -66,9 +66,10 @@
 
   <p if:test="!platform:gnome-classic">Да приступите вашим прозорима и програмима, кликните на дугме <gui>Активности</gui>, или једноставно померите показивач миша у горњи леви угао. Такође можете да притиснете тастер <key xref="keyboard-key-super">Супер</key> на вашој тастатури. Видећете ваше прозоре и програме у прегледу. Можете такође само да започнете да куцате да бисте претражили ваше програме, датотеке, фасцикле и веб.</p>
 
-  <p if:test="platform:gnome-classic">Да приступите вашим прозорима и програмима, притисните <link xref="shell-terminology">изборник <gui>Програми</gui></link> у горњем левом углу екрана и изаберите ставку <gui>Преглед активности</gui>. Такође можете да притиснете тастер <key xref="keyboard-key-super">Супер</key> да видите ваше прозоре и програме у прегледу <gui>Активности</gui>. Само почните да куцате да бисте потражили ваше програме, датотеке, и фасцикле.</p>
+  <p if:test="platform:gnome-classic">Да приступите вашим прозорима и програмима, притисните изборник <gui xref="shell-introduction#activities">Програми</gui> у горњем левом углу екрана и изаберите ставку <gui>Преглед активности</gui>. Такође можете да притиснете тастер <key xref="keyboard-key-super">Супер</key> да видите ваше прозоре и програме у прегледу <gui>Активности</gui>. Само почните да куцате да бисте потражили ваше програме, датотеке и фасцикле.</p>
 
-  <media type="image" src="figures/shell-dash.png" width="49" height="300" style="floatstart floatleft" if:test="!target:mobile">
+  <!-- TODO: retake without the flashy bit -->
+  <media type="image" src="figures/shell-dash.png" height="300" style="floatstart floatleft" if:test="!target:mobile">
     <p>Полетник</p>
   </media>
 
@@ -116,7 +117,7 @@
 <if:choose>
   <if:when test="!platform:gnome-classic">
     <media type="image" src="figures/shell-appts.png" width="250" style="floatend floatright" if:test="!target:mobile">
-      <p>Сат, календар, и састанци</p>
+      <p>Сат, календар, састанци и обавештења</p>
     </media>
   </if:when>
   <if:when test="platform:gnome-classic">
@@ -126,15 +127,19 @@
   </if:when>
 </if:choose>
 
-  <p>Кликните на сат на горњој траци да видите тренутни датум, календар појединачних месеци, и списак ваших надолазећих састанака. Можете такође да приступите подешавањима датума и времена и да отворите потпуни календар <app>Еволуције</app> управно из изборника.</p>
+  <p>Кликните на сат на горњој траци да видите тренутни датум, календар појединачних месеци, списак ваших надолазећих састанака и нова обавештења. Можете да отворите календар и тако што ћете притиснути <keyseq><key>Супер</key><key>М</key></keyseq>. Можете да приступите подешавањима датума и времена и да отворите потпуни календар <app>Еволуције</app> управно из изборника.</p>
 
   <list style="compact">
     <item>
       <p><link xref="clock-calendar">Сазнајте више о календару и састанцима.</link></p>
     </item>
+    <item>
+      <p><link xref="shell-notifications">Сазнајте више о обавештењима и фиоци порука.</link></p>
+    </item>
   </list>
 
 </section>
+
 
 <section id="yourname">
   <title>Ви и ваш рачунар</title>
@@ -193,23 +198,6 @@ messages will be presented, such as when your battery is critically low.</p>
   <list style="compact">
     <item>
       <p><link xref="shell-lockscreen">Сазнајте више о закључавању екрана.</link></p>
-    </item>
-  </list>
-
-</section>
-
-<section id="message-tray">
-  <title>Фиока порука</title>
-
-  <media its:translate="no" type="image" src="figures/shell-message-tray.png" width="600">
-    <p its:translate="yes">Фиока порука</p>
-  </media>
-
-  <p>Фиока порука може бити приказана гурањем миша у доњи леви угао или притиском на <keyseq><key>Супер</key><key>М</key></keyseq>. То је место где се чувају ваша обавештења све док не будете били спремни да их погледате.</p>
-
-  <list style="compact">
-    <item>
-      <p><link xref="shell-notifications">Сазнајте више о обавештењима и фиоци порука.</link></p>
     </item>
   </list>
 

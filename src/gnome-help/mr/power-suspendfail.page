@@ -4,9 +4,12 @@
   <info>
     <link type="guide" xref="power#problems"/>
     <link type="guide" xref="hardware-problems-graphics"/>
-    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <link type="seealso" xref="hardware-driver"/>
 
-    <desc>काही संगणक हार्डवेअर सस्पेंड किंवा हायबेरनेटसह अडचणी निर्माण करतात.</desc>
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <desc>Some computer hardware causes problems with suspend.</desc>
 
     <credit type="author">
       <name>GNOME डॉक्युमेंटेशन प्रकल्प</name>
@@ -28,7 +31,9 @@
 
 <title>सस्पेंड केल्यानंतर माझे संगणक सुरू का होत नाही?</title>
 
-<p>संगणकाला <link xref="power-suspend">सस्पेंड</link> किंवा <link xref="power-hibernate">हायबरनेट</link> केल्यास, नंतर पुन्हा मूळस्थितीत आणल्यास किंवा सुरू केल्यास, ते अपेक्षेनुसार कार्य करणार नाही. याचे कारण म्हणजे सस्पेंड आणि हायबरनेट तुमच्या हार्डवेअरतर्फे योग्यरित्या समर्थीत नाही.</p>
+<p>If you <link xref="power-suspend">suspend</link> your computer, then try to
+resume it, you may find that it does not work as you expected. This could be
+because suspend is not supported properly by your hardware.</p>
 
 <section id="resume">
   <title>माझे संगणक सस्पेंड केले आहे आणि पुन्हा सुरू होत नाही</title>
@@ -41,17 +46,16 @@
   </note>
 </section>
 
-<section id="hibernate">
-  <title>संगणक पुन्हा सुरू केल्यानंतर माझ्या ॲप्लिकेसन्स किंवा दस्तऐवज खुले नाही</title>
-  <p>संगणक हायबरनेट केले असल्यास आणि पुन्हा सुरू केले असल्यास, परंतु दस्तऐवज किंवा ॲप्लिकेशन्स खुले नसल्यास, ते कदाचित योग्यरित्या हायबरनेट झाले नाही. कधीकधी हे किर्कोळ अडचणीमुळे होते, आणि संगणक पुढच्यावेळी योग्यरित्या हायबरनेट करेल. तुम्ही सॉफ्टवेअर सुधारणा इंस्टॉल केले असल्यामुळे ज्याकरिता संगणकाला पुन्हा सुरू करायची आवश्यकता असते; या घटनामध्ये, संगणक हायबरनेट होण्याऐवजी शटडाउन झाले असावे.</p>
-  <p>संगणक हायबरनेटकरिता सक्षम नसणेही शक्य आहे कारण हार्डवेअर त्याकरिता योग्य समर्थन पुरवत नाही.हे कदाचित तुमच्या हार्डवेअरकरिता Linux ड्राइव्हर्ससह अडचण असू शकते, उदाहरणार्थ. पुन्हा हायबरनेट करून आणि दुसऱ्यावेळी ते कार्य करणार किंवा नाही, याची चाचणी शक्य आहे. न झाल्यास, कदाचित संगणकावरील ड्राइव्हर्ससह अडचण असू शकते.</p>
-</section>
-
 <section id="hardware">
   <title>संगणकाला सक्रीय केल्यानंतर माझी वायरलेस जोडणी (किंवा इतर हार्डवेअर) कार्य करत नाही</title>
-  <p>संगणकाला सस्पेंड किंवा हायबरनेट केल्यास आणि त्यानंतर पुन्हा सुरू केल्यास, तुमची इंटरनेट जोडणी, माउस, किंवा काही इतर साधन योग्यरित्या कार्य करणार नाही. याचे कारण म्हणजे ड्राइव्हर साधनकरिता योग्यरित्या सस्पेंड किंवा हायबरनेटकरिता समर्थन पुरवत नाही. हे <link xref="hardware-driver">ड्राइव्हरसह अडचण आहे</link> आणि प्रत्यक्षरित्या स्वतः साधनाशी नाही.</p>
+  <p>If you suspend your computer and then resume it again, you
+  may find that your internet connection, mouse, or some other device does not
+  work properly. This could be because the driver for the device does not
+  properly support suspend. This is a <link xref="hardware-driver">problem with the driver</link> and not the device
+  itself.</p>
   <p>साधनाकडे पावर स्विच असल्यास, बंद करण्याचा प्रयत्न करा आणि पुन्हा सुरू करा. बहुतांश घटनांमध्ये, साधन पुन्हा सुरू होईल. USB केबल किंवा समानसह जोडणी करत असल्यास, साधनाची जोडणी अशक्य करा आणि पुन्हा जोडणी करा आणि कार्य होते किंवा नाही ते पहा.</p>
-  <p>साधनाला बंद किंवा अनप्लग करणे अशक्य असल्यास, किंवा योग्यरित्या कार्य न करत असल्यास, साधन योग्यरित्या कार्य करण्यासाठी तुम्हाला संगणक पुन्हा सुरू करावे लागेल.</p>
+  <p>If you cannot turn off or unplug the device, or if this does not work, you
+  may need to restart your computer for the device to start working again.</p>
 </section>
 
 </page>

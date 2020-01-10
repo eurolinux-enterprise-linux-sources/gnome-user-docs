@@ -2,15 +2,13 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-connect" xml:lang="id">
 
   <info>
-    <link type="guide" xref="files" group="more"/>
+    <link type="guide" xref="files#more-file-tasks"/>
     <link type="guide" xref="sharing"/>
 
     <revision pkgversion="3.6.0" date="2012-10-06" status="review"/>
     <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
     <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
-
-    <desc>View and edit files on another computer over FTP, SSH, Windows
-    shares, or WebDAV.</desc>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -20,7 +18,16 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>View and edit files on another computer over FTP, SSH, Windows
+    shares, or WebDAV.</desc>
+
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Andika Triwidada</mal:name>
@@ -39,8 +46,8 @@ your local network.</p>
 
 <p>To browse files over the network, open the <app>Files</app>
 application from the <gui>Activities</gui> overview, and click
-<gui>Browse Network</gui> in the sidebar. The file manager
-will find any computers on your local area network that advertise
+<gui>Other Locations</gui> in the sidebar. The file manager
+will find any computers on your local area network that advertize
 their ability to serve files. If you want to connect to a server
 on the internet, or if you do not see the computer you're looking
 for, you can manually connect to a server by typing in its
@@ -48,10 +55,11 @@ internet/network address.</p>
 
 <steps>
   <title>Menyambung ke suatu server berkas</title>
-  <item><p>In the file manager, click <gui>Connect to Server</gui> in the
+  <item><p>In the file manager, click <gui>Other Locations</gui> in the
    sidebar.</p>
   </item>
-  <item><p>Enter the address of the server, in the form of a
+  <item><p>In <gui>Connect to Server</gui>, enter the address of the server, in
+  the form of a
    <link xref="#urls">URL</link>. Details on supported URLs are
    <link xref="#types">listed below</link>.</p>
   <note>
@@ -59,10 +67,11 @@ internet/network address.</p>
     <gui>Recent Servers</gui> list.</p>
   </note>
   </item>
-  <item><p>Click <gui>Connect</gui>. A new window will open showing you the
-  files on the server. You can browse the files just as you would for those on
-  your own computer. The server will also be added to the sidebar so you can
-  access it quickly in the future</p>
+  <item>
+    <p>Click <gui>Connect</gui>. The files on the server will be shown. You
+    can browse the files just as you would for those on your own computer. The
+    server will also be added to the sidebar so you can access it quickly in
+    the future.</p>
   </item>
 </steps>
 
@@ -155,9 +164,20 @@ internet/network address.</p>
 <item>
   <title>WebDAV dan WebDAV Aman</title>
   <p>Berdasarkan protokol HTTP digunakan di web, WebDAV kadang-kadang digunakan untuk berbagi file pada jaringan lokal dan untuk menyimpan file di internet. Jika server yang anda hubungi mendukung koneksi yang aman, Anda harus memilih opsi ini. Aman WebDAV menggunakan enkripsi SSL kuat, sehingga pengguna lain tidak dapat melihat password Anda.</p>
-  <p>Biasanya URL WebDAV nampak seperti ini:</p>
+  <p>A WebDAV URL looks like this:</p>
   <example>
-    <p><sys>http://example.hostname.com/path</sys></p>
+    <p><sys>dav://example.hostname.com/path</sys></p>
+  </example>
+</item>
+<item>
+  <title>NFS share</title>
+  <p>UNIX computers traditionally use the Network File System protocol to
+  share files over a local network. With NFS, security is based on the UID of
+  the user accessing the share, so no authentication credentials are
+  needed when connecting.</p>
+  <p>A typical NFS share URL looks like this:</p>
+  <example>
+    <p><sys>nfs://servername/path</sys></p>
   </example>
 </item>
 </terms>

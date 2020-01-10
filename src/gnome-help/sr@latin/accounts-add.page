@@ -1,28 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="accounts-add" xml:lang="sr-Latn">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="accounts-add" xml:lang="sr-Latn">
 
   <info>
-    <link type="guide" xref="accounts"/>
+    <link type="guide" xref="accounts" group="add"/>
 
     <revision pkgversion="3.5.5" date="2012-08-14" status="draft"/>
     <revision pkgversion="3.9.92" date="2012-09-18" status="candidate"/>
     <revision pkgversion="3.13.92" date="2013-09-20" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Džim Kembel</name>
-      <email its:translate="no">jwcampbell@gmail.com</email>
+      <email>jwcampbell@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Majkl Hil</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
       <years>2014</years>
     </credit>
+    <credit type="editor">
+      <name>Šon Mek Kens</name>
+      <email>shaunm@gnome.org</email>
+      <years>2015</years>
+    </credit>
 
-    <desc>Povežite se na nalog na mreži.</desc>
+    <desc>Dozvolite programima da pristupe vašim nalozima na mreži zbog fotografija, kontakata, kalendara i ostalog.</desc>
 </info>
 
   <title>Dodajte nalog</title>
@@ -41,10 +47,9 @@
     </item>
     <item>
       <p>Izaberite vrstu naloga koji želite da dodate.</p>
-      <p>Ako želite da dodate više od jedne vrste naloga, možete to da uradite kasnije.</p>
     </item>
     <item>
-      <p>Otvoriće se prozorče veb sajta u kome ćete moći da unesete podatke vašeg naloga na mreži. Na primer, ako podešavate Guglov nalog, unesite vaše korisničko ime i lozinku za Gugl.</p>
+      <p>Otvoriće se prozorče veb sajta u kome ćete moći da unesete podatke vašeg naloga na mreži. Na primer, ako podešavate Guglov nalog, unesite vaše korisničko ime i lozinku za Gugl. Neki dostavljači vam omogućavaju da napravite novi nalog iz prozorčeta za prijavljivanje.</p>
     </item>
     <item>
       <p>Ako ste ispravno uneli vaše podatke, biće vam zatraženo da dozvolite Gnomov pristup vašem nalogu na mreži. Ovlastite pristup da nastavite.</p>
@@ -54,10 +59,10 @@
     </item>
   </steps>
 
-  <p>Nakon što ste dodali naloge, svi programi koje ste izabrali samostalno će upotrebiti ove podatke kada ih budete pokrenuli.</p>
+  <p>Nakon što dodate naloge, programi će moći da koriste te naloge za usluge koje ste izabrali. Vidite <link xref="accounts-disable-service"/> o tome kako da odlučite koje usluge ćete omogućiti.</p>
 
   <note style="tip">
-    <p>Iz bezbednosnih razloga, Gnom neće uskladištiti vašu lozinku na vašem računaru. Umesto toga, uskladištiće prsten koji obezbeđuje usluga na mreži. Ako želite da u potpunosti opozovete vezu između vaše radne površi i usluge na mreži, <link xref="accounts-remove">uklonite</link> je.</p>
+    <p>Mnoge usluge na mreži obezbeđuju čin potvrđivanja identiteta koji Gnom čuva umesto vaše lozinke. Ako uklonite nalog, takođe treba da opozovete to uverenje sa usluge na mreži. Vidite <link xref="accounts-remove"/> za više podataka.</p>
   </note>
 
 </page>

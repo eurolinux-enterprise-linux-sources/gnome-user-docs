@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task a11y" id="a11y-braille" xml:lang="fr">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task a11y" id="a11y-braille" xml:lang="fr">
 
   <info>
     <link type="guide" xref="a11y#vision" group="blind"/>
     <link type="seealso" xref="a11y-screen-reader"/>
 
     <revision pkgversion="3.9.92" date="2013-09-18" status="incomplete"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Jana Heves</name>
+      <email>jsvarova@gnome.org</email>
     </credit>
 
     <desc>Utilise le lecteur d'écran <app>Orca</app> avec une plage Braille.</desc>
@@ -31,7 +36,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2014</mal:years>
+      <mal:years>2011-2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -63,10 +68,21 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
   <title>Lecture en Braille d'un écran</title>
 
-  <p>GNOME offre le lecteur d'écran <app>Orca</app> pour afficher l'interface utilisateur sur une plage Braille. Si Orca n'est pas installé sur votre système, <link href="install:orca">Installez Orca</link>, puis référez-vous à l'<link href="help:orca">aide d'Orca</link> pour plus d'informations.</p>
+  <p>GNOME offre le lecteur d'écran <app>Orca</app> pour afficher l'interface utilisateur sur une plage Braille. Si Orca n'est pas installé sur votre système, commencez par l'installer.</p>
+
+  <p if:test="action:install"><link style="button" action="install:orca">Installer Orca</link></p>
+
+  <p>Refer to the <link href="help:orca">Orca Help</link> for
+  more information.</p>
 
 </page>

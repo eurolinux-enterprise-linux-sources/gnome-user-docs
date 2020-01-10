@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-file-properties-permissions" xml:lang="zh-CN">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itst="http://itstool.org/extensions/" type="topic" style="task" id="nautilus-file-properties-permissions" xml:lang="zh-CN">
 
   <info>
+    <its:rules xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
     <link type="guide" xref="files#faq"/>
     <link type="seealso" xref="nautilus-file-properties-basic"/>
 
@@ -22,7 +24,6 @@
       <email>mdhillca@gmail.com</email>
     </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>TeliuTe</mal:name>
@@ -54,7 +55,7 @@
     <p>对于文件夹的权限设定，跟文件权限有所不同。</p>
     <terms>
       <item>
-        <title><gui>空</gui></title>
+        <title><gui itst:context="permission">None</gui></title>
         <p>用户甚至不能查看文件夹里的文件。</p>
       </item>
       <item>

@@ -11,11 +11,11 @@
 
     <credit type="author">
       <name>GNOME દસ્તાવેજીકરણ પ્રોજેક્ટ</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>માઇકલ હીલ</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -30,14 +30,18 @@
     <title>માઉસને વાપરી રહ્યા છે:</title>
     <item>
       <p if:test="!platform:gnome-classic">Open the
-      <gui xref="shell-terminology">Activities</gui> overview.</p>
-      <p if:test="platform:gnome-classic">સ્ક્રીન ટોચે ડાબે <link xref="shell-terminology"><gui style="menu">કાર્યક્રમ</gui> મેનુ</link> માંથી <gui xref="shell-terminology">પ્રવૃત્તિ ઝાંખી</gui> ને ખોલો.</p>
+      <gui xref="shell-introduction#activities">Activities</gui> overview.</p>
+      <p if:test="platform:gnome-classic">Open the
+      <gui xref="shell-introduction#activities">Activities Overview</gui> from the
+      <gui xref="shell-introduction#activities">Applications</gui> menu
+      at the top left of the screen.</p>
     </item>
     <item>
       <p>સ્ક્રીનની જમણે વિન્ડોને ખેંચો અને તેની પર ક્લિક કરો.</p>
     </item>
     <item>
-      <p><em xref="shell-terminology">કામ કરવાની જગ્યા પસંદકર્તા</em> દેખાશે.</p>
+      <p>The <em xref="shell-workspaces">workspace selector</em> will
+      appear.</p>
     </item>
     <item>
       <p if:test="!platform:gnome-classic">ખાલી કામ કરવાની જગ્યામાં વિન્ડોને મૂકો. આ કામ કરવાની જગ્યા હવે વિન્ડોને સમાવે છે જે તમે મૂકેલ છે, અને નવી કામ કરવાની જગ્યા એ <em>કામ કરવાની જગ્યા પસંદકર્તા</em> ની નીચે દેખાય છે.</p>
@@ -48,7 +52,9 @@
   <steps>
     <title>કિબોર્ડને વાપરી રહ્યા છે:</title>
     <item>
-      <p>વિન્ડો પસંદ કરો કે જે તમે ખસેડવા માંગો છો (ઉદાહરણ તરીકે, <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq> <em xref="shell-terminology">વિન્ડો સ્વીચર</em>) ને વાપરી રહ્યા છે).</p>
+      <p>Select the window that you want to move (for example, using the
+      <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq>
+      <em xref="shell-windows-switching">window switcher</em>).</p>
     </item>
     <item>
       <p>કામ કરવાની જગ્યામાં વિન્ડોને ખસેડવા માટે <keyseq><key>Super</key><key>Shift</key><key>Page Up</key></keyseq> ને દબાવો કે જે <em>કામ કરવાની જગ્યા પસંદકર્તા</em> પર હાલની કામ કરવાની જગ્યા ઉપર છે.</p>

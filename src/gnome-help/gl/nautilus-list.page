@@ -8,6 +8,7 @@
 
     <revision pkgversion="3.5.92" date="2012-09-19" status="review"/>
     <revision pkgversion="3.14.0" date="2014-09-23" status="review"/>
+    <revision pkgversion="3.18" date="2014-09-30" status="candidate"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -21,6 +22,11 @@
       <name>Ekaterina Gerasimova</name>
       <email>kittykat3756@gmail.com</email>
       <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2015</years>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -36,19 +42,24 @@
 
   <title>Files list columns preferences</title>
 
-  <p>There are nine columns of information that you can display in the
+  <p>There are eleven columns of information that you can display in the
   <gui>Files</gui> list view. Click <gui>Files</gui> in the top bar, pick
   <gui>Preferences</gui> and choose the <gui>List Columns</gui> tab to select
   which columns will be visible.</p>
 
   <note style="tip">
-    <p>Use os botóns <gui>Mover arriba</gui> e <gui>Mover abaixo</gui> para seleccionar a orde na que as columnas seleccionadas aparecerán.</p>
+    <p>Use the <gui>Move Up</gui> and <gui>Move Down</gui> buttons to choose
+    the order in which the selected columns will appear. Click <gui>Reset to
+    Default</gui> to undo any changes and return to the default columns.</p>
   </note>
 
   <terms>
     <item>
       <title><gui>Nome</gui></title>
       <p>The name of folders and files.</p>
+      <note style="tip">
+        <p>The <gui>Name</gui> column cannot be hidden.</p>
+      </note>
     </item>
     <item>
       <title><gui>Tamaño</gui></title>
@@ -60,7 +71,7 @@
     </item>
     <item>
       <title><gui>Modificado</gui></title>
-      <p>Dálle a data e hora da última vez que o ficheiro foi modificado.</p>
+      <p>Gives the date of the last time the file was modified.</p>
     </item>
     <item>
       <title><gui>Propietario</gui></title>
@@ -118,6 +129,14 @@
     <item>
       <title><gui>Localización</gui></title>
       <p>A ruta á localización do ficheiro.</p>
+    </item>
+    <item>
+      <title><gui>Modified – Time</gui></title>
+      <p>Dálle a data e hora da última vez que o ficheiro foi modificado.</p>
+    </item>
+    <item>
+      <title><gui>Accedido</gui></title>
+      <p>Gives the date or time of the last time the file was modified.</p>
     </item>
   </terms>
 

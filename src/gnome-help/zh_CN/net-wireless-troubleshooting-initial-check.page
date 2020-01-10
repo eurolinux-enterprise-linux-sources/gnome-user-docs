@@ -7,13 +7,14 @@
 
     <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
     <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Ubuntu wiki 文档贡献者</name>
     </credit>
     <credit type="author">
       <name>GNOME 文档项目</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -46,17 +47,24 @@
       <p>Click the system status area on the top bar and select
       <gui>Wi-Fi</gui>, then select <gui>Wi-Fi Settings</gui>. Make sure that
       <gui>Wi-Fi</gui> is set to <gui>ON</gui>. You should also check that
-      <link xref="net-wireless-airplane">Airplane Mode is not switched
-      on</link>.</p>
+      <link xref="net-wireless-airplane">Airplane Mode</link> is <em>not</em>
+      switched on.</p>
     </item>
     <item>
-      <p>打开终端，输入 <cmd>nm-tool</cmd> 然后按<key>回车键</key>。</p>
-      <p>它将显示网络硬件和连接状态信息，仔细查看输出信息，看看是否有一段无线网络适配器相关的内容，各个网络设备几一排破折号分隔。如果在无线连接段落中输出 <code>State: Connected</code>，就说明无线网卡处于工作状态，它已经连接到无线路由器上。</p>
+      <p>Open the Terminal, type <cmd>nmcli device</cmd> and press
+      <key>Enter</key>.</p>
+      <p>This will display information about your network interfaces and
+      connection status. Look down the list of information and see if there is
+      an item related to the wireless network adapter. If the state is
+      <code>connected</code>, it means that the adapter is working and connected
+      to your wireless router.</p>
     </item>
   </steps>
 
   <p>如果您已连接到无线路由器，但仍无法访问网络，则您的路由器设置可能错误或互联网服务提供商 (ISP) 可能遇到了一些技术问题。请复核您的路由器和 ISP 安装指南，或与您的 ISP 联系以获取支持。</p>
 
-  <p>如果 <cmd>nm-tool</cmd> 命令没有显示连接的网络，点击<gui>下一步</gui>进入故障排除的下一部分。</p>
+  <p>If the information from <cmd>nmcli device</cmd> did not indicate that you were
+  connected to the network, click <gui>Next</gui> to proceed to the next
+  portion of the troubleshooting guide.</p>
 
 </page>

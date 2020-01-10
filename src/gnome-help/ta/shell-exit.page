@@ -2,9 +2,8 @@
 <page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="shell-exit" xml:lang="ta">
 
   <info>
-    <link type="guide" xref="shell-overview#desktop"/>
+    <link type="guide" xref="shell-overview"/>
     <link type="guide" xref="power"/>
-    <link type="seealso" xref="power-hibernate"/>
     <link type="guide" xref="index" group="#first"/>
 
     <revision pkgversion="3.6.0" date="2012-09-15" status="review"/>
@@ -13,19 +12,19 @@
 
     <credit type="author">
       <name>ஷான் மெக்கேன்ஸ்</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="author">
       <name>ஆன்ட்ரி க்ளாப்பர்</name>
-      <email its:translate="no">ak-47@gmx.net</email>
+      <email>ak-47@gmx.net</email>
     </credit>
     <credit type="author">
       <name>அலெக்சாண்டர் ஃப்ராங்க்</name>
-      <email its:translate="no">afranke@gnome.org</email>
+      <email>afranke@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>எக்காட்டெரினா ஜெராசிமோவா</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -50,7 +49,7 @@
   <p>பிற பயனர்கள் கணினியைப் பயன்படுத்த விட்டுச் செல்ல, நீங்கள் விடுபதிகை செய்யலாம் அல்லது நீங்கள் புகுபதிவு செய்தபடி பயனர்களை மாற்றலாம். பயனர்களை மாற்றினால், உங்கள் பயன்பாடுகள் அனைத்தும் இயங்கிக்கொண்டே இருக்கும், மீண்டும் நீங்கள் புகுபதிவு செய்கையில் நீங்கள் விட்டுச்சென்றவை அப்படியே இருக்கும்.</p>
 
   <p>To <gui>Log Out</gui> or <gui>Switch User</gui>, click the
-  <link xref="shell-terminology">system menu</link> on the right side of the
+  <link xref="shell-introduction#yourname">system menu</link> on the right side of the
   top bar, click your name and then choose the right option.</p>
 
   <note if:test="!platform:gnome-classic">
@@ -86,7 +85,12 @@
 
   <title>இடைநிறுத்து</title>
 
-  <p>கணினியை பயன்படுத்தாத போது மின்சாரத்தை சேமிக்க கணினியை இடைநிறுத்தவும். நீங்கள் மடிக்கணினியைப் பயன்படுத்தினால், நீங்கள் மூடியை மூடும் போது GNOME தானாகவே கணினியை இடைநிறுத்தும். இது உங்கள் நிலையை கணினி நினைவகத்தில் சேமித்துவிட்டு கணினியின் பெரும்பாலான செயல்களை அணைக்கும். இடைநிறுத்தப்பட்டிருக்கும் போது சிறு அளவு மின்சாரம் பயன்படுத்தப்படும்.</p>
+  <p>To save power, suspend your computer when you are not using it. If you use
+  a laptop, GNOME, by default, suspends your computer automatically when you
+  close the lid.
+  This saves your state to your computer's memory and powers off most of the
+  computer's functions. A very small amount of power is still used during
+  suspend.</p>
 
   <p>To suspend your computer manually, click the system menu on the right side
   of the top bar and hold down the <key>Alt</key> key. The power off button

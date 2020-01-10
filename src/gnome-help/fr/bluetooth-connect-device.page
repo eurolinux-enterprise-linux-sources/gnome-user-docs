@@ -6,30 +6,35 @@
     <link type="seealso" xref="sharing-bluetooth"/>
     <link type="seealso" xref="bluetooth-remove-connection"/>
 
-    <revision pkgversion="3.8.2" date="2013-05-16" status="review"/>
+    <revision pkgversion="3.8" date="2013-05-16" status="review"/>
     <revision pkgversion="3.10" date="2013-11-09" status="review"/>
     <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="final"/>
+    <revision pkgversion="3.13" date="2014-09-22" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Jim Campbell</name>
-      <email its:translate="no">jwcampbell@gmail.com</email>
+      <email>jwcampbell@gmail.com</email>
     </credit>
     <credit type="author">
       <name>Paul W. Frields</name>
-      <email its:translate="no">stickster@gmail.com</email>
+      <email>stickster@gmail.com</email>
     </credit>
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -51,7 +56,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2014</mal:years>
+      <mal:years>2011-2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -83,29 +88,33 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
   <title>Association d'un ordinateur à un périphérique Bluetooth</title>
 
-  <p>Avant de pouvoir utiliser un périphérique Bluetooth tel qu'une souris ou un micro-casque, il faut connecter l'ordinateur au périphérique. On parle aussi d'association (ou d'appairage) des périphériques Bluetooth.</p>
+  <p>Before you can use a Bluetooth device like a mouse or a headset, you first
+  need to connect your computer to the device. This is also called
+  <em>pairing</em> the Bluetooth devices.</p>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-terminology">Activities</gui> overview and
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
       start typing <gui>Bluetooth</gui>.</p>
     </item>
     <item>
-      <p>Click on <gui>Bluetooth</gui> to open the panel.</p>
+      <p>Cliquez sur <gui>Bluetooth</gui> pour ouvrir le panneau.</p>
     </item>
     <item>
-      <p>Make sure Bluetooth is enabled: the switch at the top should be set to
-      <gui>ON</gui>. With the panel open and the switch <gui>ON</gui>, your
-      computer will begin searching for devices.</p>
+      <p>Assurez-vous que le Bluetooth soit activé : l'interrupteur de la barre de titre doit être basculé sur <gui>Activé</gui>. Si cela est le cas et si le panneau est ouvert, votre ordinateur commence aussitôt à chercher les périphériques.</p>
     </item>
     <item>
-      <p>Make the other Bluetooth device
-      <link xref="bluetooth-visibility">discoverable or visible</link> and
-      place it within 5-10 meters (about 16-33 feet) of your computer.</p>
+      <p>Assurez-vous que le périphérique Bluetooth est <link xref="bluetooth-visibility">visible ou détectable</link> et placez-le entre 5 et 10 mètres de l'ordinateur.</p>
     </item>
     <item>
       <p>Choisissez le périphérique dans la liste des <gui>Périphériques</gui> et cliquez dessus. Le panneau le concernant s'ouvre.</p>
@@ -115,16 +124,13 @@
       <p>La saisie doit être effectuée dans les 20 secondes suivantes pour la plupart des périphériques, sinon la connexion n'est pas établie. Si cela arrive, revenez à la liste des périphériques et recommencez.</p>
     </item>
     <item>
-      <p>The entry for the device in the <gui>Devices</gui> list will show a
-      <gui>Connected</gui> status.</p>
+      <p>L'entrée du périphérique dans la liste des <gui>Périphériques</gui> affiche l'état <gui>Connecté</gui>.</p>
     </item>
     <item>
-      <p>To edit the device, click on it in the <gui>Device</gui> list. You
-      will see a panel specific to the device. It may display additional
-      options applicable to the type of device to which you are connecting.</p>
+      <p>Pour modifier un périphérique, cliquez dessus dans la liste des <gui>Périphériques</gui>. Un panneau spécifique à ce périphérique s'affiche et montre les options suuplémentaires applicables au type de périphérique auquel vous vous connectez.</p>
     </item>
     <item>
-      <p>Close the panel once you have changed the settings.</p>
+      <p>Fermez le panneau après avoir modifié les paramètres.</p>
     </item>
   </steps>
 

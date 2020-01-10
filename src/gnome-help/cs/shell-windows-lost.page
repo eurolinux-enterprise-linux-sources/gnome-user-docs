@@ -8,7 +8,7 @@
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
 
     <credit type="author">
-      <name>GNOME Documentation Project</name>
+      <name>Dokumentační projekt GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="editor">
@@ -18,7 +18,7 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Check the <gui>Activities</gui> overview or other workspaces.</desc>
+    <desc>Podívejte se do přehledu <gui>Činností</gui> nebo na jiné pracovní plochy.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
@@ -29,50 +29,34 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Marek Černocký</mal:name>
       <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:years>2014, 2015</mal:years>
     </mal:credit>
   </info>
 
-  <title>Find a lost window</title>
+  <title>Vyhledání ztraceného okna</title>
 
-  <p>A window on a different workspace, or hidden behind another window, is
-  easily found using the <gui xref="shell-terminology">Activities</gui>
-  overview:</p>
+  <p>Okno, které je na jiné pracovní ploše nebo skryté za jiným oknem, nejsnáze najdete pomocí přehledu <gui xref="shell-introduction#activities">Činnosti</gui>:</p>
 
   <list>
     <item>
-      <p>Open the <gui>Activities</gui> overview. If the missing window is on
-      the current
-      <link xref="shell-windows#working-with-workspaces">workspace</link>, it
-      will be shown here in thumbnail. Simply click the thumbnail to redisplay
-      the window, or</p>
+      <p>Otevřete přehled <gui>Činnosti</gui>. Pokud je ztracené okno na aktuální <link xref="shell-windows#working-with-workspaces">pracovní ploše</link>, měli byste vidět jeho náhled. Stačí na náhled kliknout a okno se zobrazí. Nebo</p>
     </item>
     <item>
-      <p>Click different workspaces in the
-      <link xref="shell-terminology">workspace selector</link> at the
-      right-hand side of the screen to try to find your window, or</p>
+      <p>Postupně se proklikejte jednotlivými pracovními plochami ve <link xref="shell-workspaces">výběru pracovních ploch</link> na pravé straně obrazovky a zkuste v nich okno najít. Nebo</p>
     </item>
     <item>
-      <p>Right-click the application in the dash and its open windows will be
-      listed. Click the window in the list to switch to it.</p>
+      <p>Klikněte pravým tlačítkem na aplikaci v oblíbených a vypíší se její otevřená okna. Klikněte v seznamu na okno, do kterého se chcete přepnout.</p>
     </item>
   </list>
 
-  <p>Using the window switcher:</p>
+  <p>Používání přepínače oken:</p>
 
   <list>
     <item>
-      <p>Press
-      <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq>
-      to display the <link xref="shell-terminology">window switcher</link>.
-      Continue to hold down the <key>Super</key> key and press <key>Tab</key>
-      to cycle through the open windows, or
-      <keyseq><key>Shift</key><key>Tab</key> </keyseq> to cycle backwards.</p>
+      <p>Pro zobrazení <link xref="shell-windows-switching">přepínače oken</link> zmáčkněte <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq>. Klávesu <key>Super</key> stále držte a mačkáním klávesy <key>Tab</key> procházejte jednotlivými okny, případně pomocí <keyseq><key>Shift</key><key>Tab</key></keyseq> v opačném pořadí.</p>
     </item>
     <item if:test="!platform:gnome-classic">
-      <p>If an application has multiple open windows, hold down
-      <key>Super</key> and press <key>`</key> (or the key above <key>Tab</key>)
-      to step through them.</p>
+      <p>Pokud má aplikace více otevřených oken, můžete je procházet držením <key>Super</key> a mačkáním <key>`</key> (nad klávesou <key>Tab</key>).</p>
     </item>
   </list>
 

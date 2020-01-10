@@ -3,35 +3,38 @@
 
   <info>
     <link type="guide" xref="user-accounts#manage"/>
+    <link type="seealso" xref="user-add"/>
+    <link type="seealso" xref="user-admin-explain"/>
 
     <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
     <revision pkgversion="3.10" date="2013-11-01" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
-      <email its:translate="no">tiffany@antopolski.com</email>
+      <email>tiffany@antopolski.com</email>
     </credit>
     <credit type="author">
-      <name>GNOME Documentation Project</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <name>Dokumentační projekt GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Remove users that no longer use your computer.</desc>
+    <desc>Jak odebrat uživatele, který počítač nadále nebude používat.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
@@ -42,43 +45,31 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Marek Černocký</mal:name>
       <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:years>2014, 2015</mal:years>
     </mal:credit>
   </info>
 
-  <title>Delete a user account</title>
+  <title>Smazání uživatelského účtu</title>
 
-  <p>You can <link xref="user-add">add multiple user accounts to your
-  computer</link>. If somebody is no longer using your computer, you can delete
-  that user's account.</p>
+  <p>Do počítače můžete <link xref="user-add">přidat více uživatelských účtu</link>. Naopak, když někdo počítač již nadále nebudu používat, můžete jeho uživatelský účet smazat.</p>
 
-  <p>You need <link xref="user-admin-explain">administrator privileges</link>
-  to delete user accounts.</p>
+  <p>Abyste mohli odstranit účet uživatele, potřebujete <link xref="user-admin-explain">oprávnění správce</link>.</p>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-terminology">Activities</gui> overview and
-      start typing <gui>Users</gui>.</p>
+      <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Uživatelé</gui>.</p>
     </item>
     <item>
       <p>Kliknutím na <gui>Uživatelé</gui> otevřete příslušný panel.</p>
     </item>
     <item>
-      <p>Press <gui style="button">Unlock</gui> in the top right corner and
-      type in your password when prompted.</p>
+      <p>Zmáčkněte <gui style="button">Odemknout</gui> v pravém horním rohu a po vyzvání zadejte heslo.</p>
     </item>
     <item>
-      <p>Select the user that you want to delete and press the
-      <gui style="button">-</gui> button, below the list of accounts on the
-      left, to delete that user account.</p>
+      <p>Vyberte uživatele, jehož účet chcete smazat a zmáčknutím tlačítka <gui style="button">-</gui> vlevo dole pod seznamem účtů účet smažte.</p>
     </item>
     <item>
-      <p>Each user has their own home folder for their files and settings. You
-      can choose to keep or delete the user's home folder. Click <gui>Delete
-      Files</gui> if you are sure they will not be used anymore and you need to
-      free up disk space. These files are permanently deleted. They cannot be
-      recovered. You may want to back up the files to an external drive or CD
-      before deleting them.</p>
+      <p>Každý uživatel má svoji vlastní domovskou složku pro své soubory a nastavení. Můžete si vybrat, jestli se má domovská složka uživatele zachovat nebo smazat. Na <gui>Smazat soubory</gui> klikněte, když si jste jisti, že již nebudou zapotřebí a chcete uvolnit místo na disku. Soubory pak bude nevratně smazány a nepůjde je obnovit. Zvažte také jejich zazálohování na externí úložné zařízení, než je smažete.</p>
     </item>
   </steps>
 

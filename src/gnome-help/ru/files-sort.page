@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-sort" xml:lang="ru">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-sort" xml:lang="ru">
 
   <info>
-    <link type="guide" xref="files"/>
+    <link type="guide" xref="files#common-file-tasks"/>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-25" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Фил Булл (Phil Bull)</name>
@@ -33,7 +34,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011, 2012</mal:years>
+      <mal:years>2011-2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -47,6 +48,12 @@
       <mal:email>juliette.tux@gmail.com</mal:email>
       <mal:years>2013-2014</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
 <title>Сортировка файлов и папок</title>
@@ -58,10 +65,10 @@
 <section id="icon-view">
   <title>Просмотр в виде значков</title>
 
-  <p>To sort files in a different order, click the
-  <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">View options</span></media></gui>
-  button in the toolbar and choose <gui>By Name</gui>, <gui>By Size</gui>,
-  <gui>By Type</gui>, <gui>By Modification Date</gui>, or <gui>By Access
+  <p>To sort files in a different order, click the view options button in the
+  <!-- FIXME: Get a tooltip added for "View options" -->
+  toolbar and choose <gui>By Name</gui>, <gui>By Size</gui>, <gui>By
+  Type</gui>, <gui>By Modification Date</gui>, or <gui>By Access
   Date</gui>.</p>
 
   <p>Например, при выборе <gui>По имени</gui> файлы будут отсортированы по их именам в алфавитном порядке. О других вариантах смотрите <link xref="#ways"/>.</p>
@@ -76,11 +83,11 @@
 
   <p>Чтобы изменить способ сортировки файлов, нажмите на заголовок одного из столбцов в файловом менеджере. Например, нажмите <gui>Тип</gui>, чтобы отсортировать файлы по типу. Нажмите на заголовок столбца снова, чтобы отсортировать файлы в обратном порядке.</p>
   <p>In list view, you can show columns with more attributes and sort on those
-  columns. Click the
-  <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">View options</span></media></gui>
-  button in the toolbar, pick <gui>Visible Columns</gui> and select the columns
-  that you want to be visible. You will then be able to sort by those columns.
-  See <link xref="nautilus-list"/> for descriptions of available columns.</p>
+  columns. Click the view options button in the toolbar, pick <gui>Visible
+  <!-- FIXME: Get a tooltip added for "View options" -->
+  Columns…</gui> and select the columns that you want to be visible. You will
+  then be able to sort by those columns. See <link xref="nautilus-list"/> for
+  descriptions of available columns.</p>
 
 </section>
 
@@ -89,25 +96,20 @@
 
   <terms>
     <item>
-      <title>По имени</title>
+      <title>Имя</title>
       <p>Сортировка по именам файлов в алфавитном порядке.</p>
     </item>
     <item>
-      <title>По размеру</title>
+      <title>Размер</title>
       <p>Сортировка по размеру файла (занимаемому месту на диске). По умолчанию файлы упорядочиваются по возрастанию размера.</p>
     </item>
     <item>
-      <title>По типу</title>
+      <title>Тип</title>
       <p>Сортировка по типу файлов в алфавитном порядке. Файлы одного типа группируются вместе, затем сортируются по имени.</p>
     </item>
     <item>
-      <title>По дате изменения</title>
+      <title>Last Modified</title>
       <p>Сортировка по дате и времени последнего изменения файла (от давно изменённых к недавно изменённым).</p>
-    </item>
-    <item>
-      <title>By Access Date</title>
-      <p>Sorts by the date and time that a file was last read. Sorts from
-      oldest to newest by default.</p>
     </item>
   </terms>
 

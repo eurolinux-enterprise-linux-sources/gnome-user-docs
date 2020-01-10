@@ -7,23 +7,25 @@
 
     <revision pkgversion="3.8.0" date="2013-03-09" status="outdated"/>
     <revision pkgversion="3.10" date="2013-11-04" status="review"/>
+    <revision pkgversion="3.16" date="2015-03-02" status="outdated"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
 
     <credit type="author">
       <name>GNOME dokumentációs projekt</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Jelenítse meg találkozóit a képernyő tetején lévő naptárban.</desc>
+    <desc>Jelenítse meg találkozóit a képernyő tetején lévő naptár területen.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Griechisch Erika</mal:name>
@@ -34,7 +36,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Kelemen Gábor</mal:name>
       <mal:email>kelemeng at gnome dot hu</mal:email>
-      <mal:years>2011, 2012, 2013, 2014</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -76,15 +78,18 @@
     </item>
     <item>
       <p>Kattintson arra a dátumra, amelynek találkozóit meg szeretné nyitni a Naptárban.</p>
-    </item>
-    <item>
-      <p>A meglévő találkozók a jobb oldalon jelennek meg. A naptárba felvett találkozók megjelennek az óra találkozólistájában.</p>
+
+    <note>
+       <p>Egy pont jelenik meg minden, találkozóval rendelkező dátum alatt.</p>
+    </note>
+
+      <p>A meglévő találkozók a naptár bal oldalán jelennek meg. Az <app>Evolution</app> naptárba felvett találkozók megjelennek az óra találkozólistájában.</p>
     </item>
   </steps>
 
  <if:choose>
  <if:when test="!platform:gnome-classic">
- <media type="image" src="figures/shell-appts.png" width="500" height="396">
+ <media type="image" src="figures/shell-appts.png" width="500">
   <p>Óra, naptár és találkozók</p>
  </media>
  </if:when>
@@ -94,11 +99,5 @@
  </media>
  </if:when>
  </if:choose>
-
-  <p>A teljes <app>Evolution</app> naptár eléréséhez kattintson az órára, majd válassza a <gui>Naptár megnyitása</gui> menüpontot.</p>
-
-  <note>
-    <p>Ez csak akkor működik, ha már van <app>Evolution</app> fiókja. Ellenkező esetben megjelenik egy ablak, és bekéri az első fiók felvételéhez szükséges adatokat.</p>
-  </note>
 
 </page>

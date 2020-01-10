@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-sort" xml:lang="fr">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-sort" xml:lang="fr">
 
   <info>
-    <link type="guide" xref="files"/>
+    <link type="guide" xref="files#common-file-tasks"/>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-25" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -39,7 +40,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2014</mal:years>
+      <mal:years>2011-2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -71,6 +72,12 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
 <title>Tri des fichiers et des dossiers</title>
@@ -82,16 +89,15 @@
 <section id="icon-view">
   <title>Vue en icônes</title>
 
-  <p>To sort files in a different order, click the
-  <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">View options</span></media></gui>
-  button in the toolbar and choose <gui>By Name</gui>, <gui>By Size</gui>,
-  <gui>By Type</gui>, <gui>By Modification Date</gui>, or <gui>By Access
+  <p>To sort files in a different order, click the view options button in the
+  <!-- FIXME: Get a tooltip added for "View options" -->
+  toolbar and choose <gui>By Name</gui>, <gui>By Size</gui>, <gui>By
+  Type</gui>, <gui>By Modification Date</gui>, or <gui>By Access
   Date</gui>.</p>
 
   <p>À titre d'exemple, si vous choisissez <gui>Par nom</gui>, les fichiers sont triés par leur nom dans l'ordre alphabétique. Consultez <link xref="#ways"/> pour d'autres options.</p>
 
-  <p>You can sort in the reverse order by selecting <gui>Reversed Order</gui>
-  from the menu.</p>
+  <p>Vous pouvez inverser l'ordre de tri en cochant la case <gui>Ordre inversé</gui> dans le menu.</p>
 
 </section>
 
@@ -100,11 +106,11 @@
 
   <p>Pour trier les fichiers dans un ordre différent, cliquez sur une des colonnes de l'en-tête du gestionnaire de fichiers. Par exemple, cliquez sur <gui>Type</gui> pour trier par type de fichier. Cliquez une nouvelle fois sur cette colonne pour inverser l'ordre.</p>
   <p>In list view, you can show columns with more attributes and sort on those
-  columns. Click the
-  <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">View options</span></media></gui>
-  button in the toolbar, pick <gui>Visible Columns</gui> and select the columns
-  that you want to be visible. You will then be able to sort by those columns.
-  See <link xref="nautilus-list"/> for descriptions of available columns.</p>
+  columns. Click the view options button in the toolbar, pick <gui>Visible
+  <!-- FIXME: Get a tooltip added for "View options" -->
+  Columns…</gui> and select the columns that you want to be visible. You will
+  then be able to sort by those columns. See <link xref="nautilus-list"/> for
+  descriptions of available columns.</p>
 
 </section>
 
@@ -113,25 +119,20 @@
 
   <terms>
     <item>
-      <title>Par nom</title>
+      <title>Nom</title>
       <p>Trie les fichiers dans l'ordre alphabétique en fonction de leur nom.</p>
     </item>
     <item>
-      <title>Par taille</title>
+      <title>Taille</title>
       <p>Trie les fichiers en fonction de leur taille (la place qu'ils occupent sur le disque). Par défaut, range du plus petit au plus gros.</p>
     </item>
     <item>
-      <title>Par type</title>
+      <title>Type</title>
       <p>Trie alphabétiquement les fichiers en fonction de leur type. Les fichiers d'un même type sont regroupés et ensuite triés par nom.</p>
     </item>
     <item>
-      <title>Par date de modification</title>
+      <title>Last Modified</title>
       <p>Trie les fichiers en fonction de la date et l'heure de leur dernière modification. Par défaut, range du plus ancien au plus récent.</p>
-    </item>
-    <item>
-      <title>By Access Date</title>
-      <p>Sorts by the date and time that a file was last read. Sorts from
-      oldest to newest by default.</p>
     </item>
   </terms>
 

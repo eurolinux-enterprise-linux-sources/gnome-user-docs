@@ -5,7 +5,7 @@
 
 
     <credit type="author">
-      <name>GNOME Documentation Project</name>
+      <name>Dokumentační projekt GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="author">
@@ -20,7 +20,7 @@
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
     <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
 
-    <desc>Test your hard disk for problems to make sure that it's healthy.</desc>
+    <desc>Jak otestovat, jestli váš pevný disk nemá problémy, abyste měli jistotu, že bude fungovat.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -32,39 +32,32 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Marek Černocký</mal:name>
       <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:years>2014, 2015</mal:years>
     </mal:credit>
   </info>
 
-<title>Check your hard disk for problems</title>
+<title>Kontrola problémů s pevným diskem</title>
 
 <section id="disk-status">
- <title>Checking the hard disk</title>
-  <p>Hard disks have a built-in health-check tool called <app>SMART</app>
- (Self-Monitoring, Analysis, and Reporting Technology), which continually
- checks the disk for potential problems. SMART also warns you if the disk
- is about to fail, helping you avoid loss of important data.</p>
+ <title>Kontrola pevného disku</title>
+  <p>Pevné disky mají vestavěný nástroj pro kontrolu svého technického stavu nazývaný <app>SMART</app> (Self-Monitoring, Analysis, and Reporting Technology), který průběžně kontroluje výskyt případných problémů. SMART také varuje, když se blíží selhání disku a pomáhá tak předejít ztrátě důležitých dat.</p>
 
-  <p>Although SMART runs automatically, you can also check your disk's
- health by running the <app>Disks</app> application:</p>
+  <p>Ačkoliv běží SMART automaticky, můžete zkontrolovat disk také pomocí aplikace <app>Disky</app>:</p>
 
 <steps>
- <title>Check your disk's health using the Disks application</title>
+ <title>Kontrola technického stavu disku pomocí aplikace Disky</title>
 
   <item>
-    <p>Open <app>Disks</app> from the <gui>Activities</gui> overview.</p>
+    <p>Z přehledu <gui>Činnosti</gui> otevřete <app>Disky</app>.</p>
   </item>
   <item>
-    <p>Select the disk you want to check from the list of storage devices on
-    the left. Information and status of the disk will be shown.</p>
+    <p>V seznamu úložných zařízení nalevo vyberte disk, který chcete zkontrolovat. Zobrazí se informace a stav disku.</p>
   </item>
   <item>
-    <p>Click the gear icon and select <gui>SMART Data &amp; Self Tests…</gui>.
-    The <gui>Overall Assessment</gui> should say "Disk is OK".</p>
+    <p>Klikněte na nabídkové tlačítko a vyberte <gui>Data SMART a autokontroly…</gui>. <gui>Souhrnné posouzení</gui> by mělo sdělovat „Disk je v pořádku“.</p>
   </item>
   <item>
-    <p>See more information under <gui>SMART Attributes</gui>, or click the
-    <gui style="button">Start Self-test</gui> button to run a self-test.</p>
+    <p>Podívejte se na informace v <gui>Příznacích SMART</gui> nebo klikněte na tlačítko <gui style="button">Spustit autokontrolu</gui>, aby se provedla autokontrola disku.</p>
   </item>
 
 </steps>
@@ -73,22 +66,13 @@
 
 <section id="disk-not-healthy">
 
- <title>What if the disk isn't healthy?</title>
+ <title>Co dělat, když disk není v pořádku?</title>
 
-  <p>Even if the <gui>Overall Assessment</gui> indicates that the disk
-  <em>isn't</em> healthy, there may be no cause for alarm. However, it's better
-  to be prepared with a <link xref="backup-why">backup</link> to prevent data
-  loss.</p>
+  <p>Když <gui>Souhrnné posouzení</gui> naznačuje, že disk <em>není</em> v pořádku, nemusí tu být nutně důvod k panice. Ale rozhodně je lepší připravit si <link xref="backup-why">zálohu</link>, abyste předešli ztrátě dat.</p>
 
-  <p>If the status says "Pre-fail", the disk is still reasonably healthy but
- signs of wear have been detected which mean it might fail in the near future.
- If your hard disk (or computer) is a few years old, you are likely to see
- this message on at least some of the health checks. You should
- <link xref="backup-how">backup your important files regularly</link> and check
- the disk status periodically to see if it gets worse.</p>
+  <p>Když stav oznamuje „Předzvěst selhání“, je disk stále normálně použitelný, ale byly u něj zjištěny náznaky opotřebení, které naznačují, že v brzké době může selhat. Pokud je váš pevný disk (nebo počítač) starý několik let, dost možná se s touto zprávou setkáte při některé z kontrol stavu. V takové případě byste měli <link xref="backup-how">průběžně zálohovat důležité soubory</link> a pravidelně kontrolovat stav disku, jestli se nezhoršuje.</p>
 
-  <p>If it gets worse, you may wish to take the computer/hard disk to a
- professional for further diagnosis or repair.</p>
+  <p>Jestliže se zhoršuje, asi byste měli vzít počítač/pevný disk k odborníkovi na podrobnější kontrolu nebo opravu.</p>
 
 </section>
 

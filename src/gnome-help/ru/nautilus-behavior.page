@@ -7,6 +7,7 @@
     <desc>Открытие файлов одинарным нажатием, запуск или просмотр исполняемых текстовых файлов и настройка поведения корзины.</desc>
 
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -24,6 +25,10 @@
       <name>Синдху С (Sindhu S)</name>
       <email>sindhus@live.in</email>
     </credit>
+    <credit type="editor">
+      <name>Дэвид Кинг (David King)</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -35,7 +40,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011, 2012</mal:years>
+      <mal:years>2011-2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -48,6 +53,12 @@
       <mal:name>Юлия Дронова</mal:name>
       <mal:email>juliette.tux@gmail.com</mal:email>
       <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
     </mal:credit>
   </info>
 
@@ -85,7 +96,11 @@
 
  <p>При выборе параметра <gui>Каждый раз спрашивать</gui> будет показано диалоговое окно с вопросом, запустить или просмотреть выбранный текстовый файл.</p>
 
- <p>Исполняемые текстовые файлы также называются «скриптами». Все скрипты в папке <file>~/.local/share/nautilus/scripts</file> показываются в контекстном меню файла в подменю <gui style="menuitem">Скрипты</gui>. При запуске скрипта из локальной папки все выбранные файлы передаются скрипту как параметры. Чтобы выполнить скрипт для файла:</p>
+ <p>Executable text files are also called <em>scripts</em>. All scripts in the
+ <file>~/.local/share/nautilus/scripts</file> folder will appear in the context
+ menu for a file under the <gui style="menuitem">Scripts</gui> submenu. When a
+ script is executed from a local folder, all selected files will be pasted to
+ the script as parameters. To execute a script on a file:</p>
 
 <steps>
   <item>
@@ -95,15 +110,16 @@
     <p>Выберите нужный файл.</p>
   </item>
   <item>
-    <p>Нажмите правой клавишей мышки на файле, чтобы открыть контекстное меню и выбрать нужный для выполнения скрипт из меню <gui style="menuitem">Скрипты</gui>.</p>
+    <p>Нажмите правой клавишей мышки на файле, чтобы открыть контекстное меню и выбрать нужный для выполнения сценарий из меню <gui style="menuitem">Сценарии</gui>.</p>
   </item>
 </steps>
 
  <note style="important">
-  <p>Скрипту, выполняемому из удалённой папки, например, из папки, показывающей web- или <sys>ftp</sys>-содержимое, нельзя передать никаких параметров.</p>
+  <p>Сценарию, расположенному в удалённой папке, доступной например по протоколу <sys>HTTP</sys> или <sys>FTP</sys>, нельзя передать никаких параметров.</p>
  </note>
 
 </section>
+
 <section id="trash">
 <info>
 <link type="seealso" xref="files-delete"/>
@@ -113,15 +129,8 @@
 
 <terms>
  <item>
-  <title><gui>Спрашивать перед очисткой корзины и удалением файлов</gui></title>
+  <title><gui>Ask before emptying the Trash</gui></title>
   <p>Эта опция включена по умолчанию. При очистке корзины будет появляться сообщение, позволяющее подтвердить, что вы хотите очистить корзину и удалить содержавшиеся в ней файлы.</p>
- </item>
- <item>
-  <title><gui>Включить команду удаления, не использующую корзину</gui></title>
-  <p>Включение этой опции добавит команду <gui>Удалить</gui> в меню, всплывающее по щелчку правой кнопкой на объекте в <app>Nautilus</app>.</p>
-<note style="warning">
-<p>Удаление элементов с помощью пункта меню <gui>Удалить безвозвратно</gui> производится, минуя Корзину. Элемент полностью удаляется из системы. Не существует способа восстановить удалённый элемент.</p>
-</note>
  </item>
 </terms>
 </section>

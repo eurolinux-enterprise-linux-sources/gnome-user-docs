@@ -7,23 +7,26 @@
 
     <revision pkgversion="3.8.0" date="2013-03-09" status="outdated"/>
     <revision pkgversion="3.10" date="2013-11-04" status="review"/>
+    <revision pkgversion="3.16" date="2015-03-02" status="outdated"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
 
     <credit type="author">
       <name>Проект документирования GNOME</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Майкл Хилл (Michael Hill)</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Екатерина Герасимова (Ekaterina Gerasimova)</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Показ событий в календаре наверху экрана.</desc>
+    <desc>Display your appointments in the calendar area at the top of the
+    screen.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Александр Прокудин</mal:name>
@@ -34,7 +37,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011, 2012</mal:years>
+      <mal:years>2011-2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -48,31 +51,44 @@
       <mal:email>juliette.tux@gmail.com</mal:email>
       <mal:years>2013-2014</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
  <title>События календаря</title>
 
   <note>
     <p>Для этого необходимо использовать календарь <app>Evolution</app> или нужно иметь сетевую учётную запись с поддержкой <gui>Календаря</gui>.</p>
-    <p>В большинстве дистрибутивов приложение <app>Evolution</app> установлено по умолчанию. Если оно не установлено, можно установить его с помощью менеджера пакетов вашего дистрибутива.</p>
+    <p>Most distributions come with <app>Evolution</app> installed by default.
+    If yours does not, you may need to install it using your distribution's
+    package manager.</p>
  </note>
 
   <p>Чтобы просмотреть события:</p>
   <steps>
     <item>
-      <p>Нажмите на часы на верхней панели.</p>
+      <p>Нажмите на часы в верхней панели.</p>
     </item>
     <item>
       <p>Нажмите на дату в календаре, для которой нужно увидеть запланированные события.</p>
-    </item>
-    <item>
-      <p>Существующие события отображаются справа. По мере добавления событий в календарь, оно появляется в списке событий в часах.</p>
+
+    <note>
+       <p>A dot is shown under each date that has an appointment.</p>
+    </note>
+
+      <p>Existing appointments will be displayed to the left of the calendar.
+      As appointments are added to your <app>Evolution</app> calendar, they
+      will appear in the clock's appointment list.</p>
     </item>
   </steps>
 
  <if:choose>
  <if:when test="!platform:gnome-classic">
- <media type="image" src="figures/shell-appts.png" width="500" height="396">
+ <media type="image" src="figures/shell-appts.png" width="500">
   <p>Часы, календарь и события</p>
  </media>
  </if:when>
@@ -82,11 +98,5 @@
  </media>
  </if:when>
  </if:choose>
-
-  <p>Чтобы получить доступ к полнофункциональному приложению календаря <app>Evolution</app>, нажмите на часы и выберите <gui>Открыть календарь</gui>.</p>
-
-  <note>
-    <p>Для этого требуется наличие учётной записи в <app>Evolution</app>. Если у вас нет учётной записи, то появится окно, с помощью которого можно создать вашу первую учётную запись.</p>
-  </note>
 
 </page>

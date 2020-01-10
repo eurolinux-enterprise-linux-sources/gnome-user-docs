@@ -10,15 +10,15 @@
 
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -28,7 +28,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -84,6 +84,18 @@
 
   </section>
 
+  <section id="characters">
+    <title>Characters</title>
+    <p>Another useful application shipped with GNOME is <app>Characters</app>.
+    It lets you find and insert unusual characters by browsing character
+    categories or searching for keywords.</p>
+
+    <p>You can launch Characters from the Activities overview. For more
+    information on Characters, see the <link href="help:gnome-characters">
+    Characters Manual</link>.</p>
+
+  </section>
+
   <section id="compose">
     <title>Compose キー</title>
     <p>Compose キーは特殊なキーで、これを使って複数キーを連続して押すことで特殊な文字を入力できます。たとえば、アクセント付きの <em>é</em> は、<key>Compose</key> キーを押し、次に <key>'</key> キー、その次に <key>e</key> キーを押して入力できます。</p>
@@ -92,7 +104,7 @@
     <steps>
       <title>Compose キーの割り当て</title>
       <item>
-        <p>Open the <gui xref="shell-terminology">Activities</gui> overview and
+        <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
         start typing <gui>Keyboard</gui>.</p>
       </item>
       <item>
@@ -124,12 +136,7 @@
 
   <p>任意の Unicode 文字は、その文字の数値表現のコードポイントをキーボードでタイプすることにより入力できます。文字は、4 桁のコードポイントで識別されます (訳注: 5 桁以上のコードポイントを持つ文字も存在します)。コードポイントを調べるには、文字マップツールで文字を特定し、ステータスバーかあるいは<gui>文字の詳細</gui>タブを参照してください。コードポイントは、<gui>U+</gui> の後ろの 4 桁の文字列です。</p>
 
-  <p>To enter a character by its code point, hold down <key>Ctrl</key> and
-  <key>Shift</key>, type <key>U</key> followed by the four-character code
-  point, then release <key>Ctrl</key> and <key>Shift</key>. If you often use
-  characters that you can't easily access with other methods, you might find
-  it useful to memorize the code point for those characters so you can enter
-  them quickly.</p>
+  <p>コードポイントを使って文字を入力するには、<key>Ctrl</key> および <key>Shift</key> を押しながら、<key>U</key> キーを押し、続いて対象のコードポイントをタイプし、その後 <key>Ctrl</key> と <key>Shift</key> を離します。他の方法では簡単に入力できない文字をよく使用するのであれば、その文字のコードポイントを記憶し、すぐに入力できるようにしておくと良いでしょう。</p>
 
 </section>
 
@@ -141,10 +148,7 @@
 <section id="im">
   <title>インプットメソッド</title>
 
-  <p>An Input Method expands the previous methods by allowing to enter
-  characters not only with keyboard but also any input devices. For instance
-  you could enter characters with a mouse using a gesture method, or enter
-  Japanese characters using a Latin keyboard.</p>
+  <p>インプットメソッドは、前記の方法を拡張し、キーボードだけでなく、他の入力デバイスでも文字入力できるようになります。たとえば、マウスのジェスチャー操作で文字入力が可能だったり、あるいはラテン文字用キーボードで日本語の文字の入力が可能だったりします。</p>
 
   <p>インプットメソッドを選択するには、テキストウィジェットの上で右クリックし、<gui>入力メソッド</gui> メニューから使用するインプットメソッドを選択します。既定のインプットメソッドは決められていません、インプットメソッドのドキュメントを参照し、使用方法を確認してください。</p>
 

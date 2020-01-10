@@ -3,28 +3,32 @@
 
   <info>
     <link type="guide" xref="user-accounts#privileges"/>
+    <link type="seealso" xref="user-admin-explain"/>
+    <link type="seealso" xref="user-admin-change"/>
 
     <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
     <revision pkgversion="3.10" date="2013-11-03" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <!-- TODO: review that this is actually correct -->
+    <revision pkgversion="3.18" date="2015-09-28" status="candidate"/>
 
-    <credit type="author">
+    <credit type="authohar">
       <name>Proyecto de documentación de GNOME</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Puede hacer algunas cosas, como instalar aplicaciones, si tiene privilegios de administrador.</desc>
+    <desc>Puede hacer algunas cosas, como instalar aplicaciones, sólo si tiene privilegios de administrador.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2011 - 2014</mal:years>
+      <mal:years>2011 - 2016</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -48,21 +52,17 @@
 
   <title>Problemas causados por restricciones administrativas</title>
 
-  <p>You may experience a few problems if you do not have
-  <link xref="user-admin-explain">administrative privileges</link>. Some tasks
-  require administrative privileges in order to work, such as:</p>
+  <p>Puede tener algunos problemas si no tiene <link xref="user-admin-explain">privilegios de administrador</link>. Algunas tareas necesitan privilegios de administrador para funcionar, por ejemplo:</p>
 
   <list>
     <item>
-      <p>Conectarse a algunas redes cableadas/inalámbricas</p>
+      <p>conectarse a redes cableadas/inalámbricas,</p>
     </item>
     <item>
-      <p>Viewing the contents of a removable disk connected to the computer, or
-      the contents of a different disk partition (for example, a Windows
-      partition)</p>
+      <p>ver el contenido de una partición de disco diferente (ej. una partición de Windows), o</p>
     </item>
     <item>
-      <p>Instalar aplicaciones nuevas</p>
+      <p>instalar aplicaciones nuevas</p>
     </item>
   </list>
 

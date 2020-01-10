@@ -7,18 +7,19 @@
     <link type="next" xref="net-wireless-troubleshooting-initial-check"/>
 
     <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Contributeurs au wiki de la documentation Ubuntu</name>
     </credit>
     <credit type="author">
       <name>Le projet de documentation GNOME</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Identifier et résoudre les problèmes de connexions sans fil</desc>
+    <desc>Identify and fix problems with wireless connections.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Luc Pionchon</mal:name>
@@ -35,7 +36,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2014</mal:years>
+      <mal:years>2011-2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -67,11 +68,19 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
   <title>Dépannage du réseau sans fil</title>
 
-  <p>Ceci est un guide pas à pas de dépannage pour vous aider à identifier et réparer des problèmes de connexion sans fil. Si vous ne parvenez pas à vous connecter à un réseau sans fil quelle que soit la raison, essayez de suivre ces instructions.</p>
+  <p>This is a step-by-step troubleshooting guide to help you identify and fix
+  wireless problems. If you cannot connect to a wireless network for some
+  reason, try following the instructions here.</p>
 
   <p>Nous allons passer par les étapes suivantes pour connecter votre ordinateur à internet :</p>
 
@@ -97,7 +106,9 @@
 
   <note>
     <title>Utilisation de la ligne de commande</title>
-    <p>Certaines instructions de ce guide vous demande de saisir des commandes dans un <em>terminal</em>. Vous pouvez trouvez l'application « Terminal » dans la <gui>Vue d'ensemble des activités</gui>.</p>
+    <p>Some of the instructions in this guide ask you to type commands into the
+    <em>command line</em> (Terminal). You can find the <app>Terminal</app> application in
+    the <gui>Activities</gui> overview.</p>
     <p>Si vous n'êtes pas un habitué de l'utilisation de la ligne de commande, ne vous inquiétez pas, vous serez guidé à chaque étape. Souvenez-vous seulement que les commandes sont sensibles à la casse (vous devez les saisir exactement comme elles s'affichent ici) et que vous devez confirmer chaque commande en appuyant sur <key>Entrée</key> pour l'exécuter.</p>
   </note>
 

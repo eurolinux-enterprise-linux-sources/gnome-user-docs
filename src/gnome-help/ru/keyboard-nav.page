@@ -7,6 +7,7 @@
 
     <revision pkgversion="3.7.5" version="0.2" date="2013-02-23" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+    <revision pkgversion="3.20" date="2016-08-13" status="candidate"/>
 
     <credit type="author">
       <name>Майкл Хилл (Michael Hill)</name>
@@ -37,7 +38,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011, 2012</mal:years>
+      <mal:years>2011-2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -50,6 +51,12 @@
       <mal:name>Юлия Дронова</mal:name>
       <mal:email>juliette.tux@gmail.com</mal:email>
       <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
     </mal:credit>
   </info>
 
@@ -107,7 +114,7 @@
   </tr>
   <tr>
     <td><p><keyseq><key xref="keyboard-key-super">Super</key> <key>F10</key></keyseq></p></td>
-    <td><p>Открывает меню приложения на верхней панели.</p></td>
+    <td><p>Открывает меню приложения в верхней панели.</p></td>
   </tr>
   <tr>
     <td><p><keyseq><key>Shift</key><key>F10</key></keyseq> или <key xref="keyboard-key-menu">Меню</key></p></td>
@@ -142,8 +149,7 @@
   </tr>
   <tr>
     <td><p><keyseq><key>Super</key><key>M</key></keyseq></p></td>
-    <td><p><link xref="shell-notifications#messagetray">Open the message
-    tray.</link> Press <key>Esc</key> to close.</p></td>
+    <td><p><link xref="shell-notifications#messagetray">Открывает панель сообщений.</link> Нажмите <key>Esc</key>, чтобы закрыть панель.</p></td>
   </tr>
 </table>
 
@@ -155,10 +161,7 @@
   </tr>
   <tr>
     <td><p><keyseq><key>Alt</key><key>F5</key></keyseq> или <keyseq><key>Super</key><key>↓</key></keyseq></p></td>
-    <td><p>Restore a maximized window to its original size. Use
-    <keyseq><key>Alt</key><key>F10</key></keyseq> to maximize.
-    <keyseq><key>Alt</key><key>F10</key></keyseq> both maximizes and
-    restores.</p></td>
+    <td><p>Восстановление исходных размеров окна. Используйте <keyseq><key>Alt</key> <key>F10</key></keyseq> для разворачивания окна. Повторное нажатие <keyseq><key>Alt</key><key>F10</key></keyseq> восстановит предыдущие размеры окна.</p></td>
   </tr>
   <tr>
     <td><p><keyseq><key>Alt</key><key>F7</key></keyseq></p></td>
@@ -169,6 +172,8 @@
     <td><p>Изменение размера текущего окна. Нажмите <keyseq><key>Alt</key><key>F8</key></keyseq>, затем используйте клавиши со стрелками для изменения размера окна. Нажмите <key>Enter</key>, чтобы завершить изменение размера, или <key>Esc</key>, чтобы вернуть окну исходный размер.</p></td>
   </tr>
   <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-updown"/>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-left"/>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-right"/>
   <tr>
     <td><p><keyseq><key>Alt</key><key>F10</key></keyseq> или <keyseq><key>Super</key><key>↑</key></keyseq></p>
     </td>

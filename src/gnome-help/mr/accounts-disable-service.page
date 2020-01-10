@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="accounts-disable-service" xml:lang="mr">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="accounts-disable-service" xml:lang="mr">
 
   <info>
     <link type="guide" xref="accounts"/>
 
     <revision pkgversion="3.5.5" date="2012-08-14" status="review"/>
     <revision pkgversion="3.13.92" date="2013-09-20" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
-      <email its:translate="no">philbull@gmail.com</email>
+      <email>philbull@gmail.com</email>
     </credit>
     
     <desc>काही ऑनलाइन अकाउंट्संचा वापर एकापेक्षा जास्त सर्व्हिसेसकरिता प्रवेशसाठी (जसे कि दिनदर्शिका आणि ईमेल) शक्य आहे. ॲप्लिकेशन्सतर्फे वापरण्याजोगी सर्व्हिसेस नियंत्रीत करणे शक्य आहे.</desc>
@@ -23,13 +24,18 @@
 
   <title>खातेतर्फे प्रवेशजोगी कोणती ऑनलाइन सर्व्हिसेस नियंत्रीत करायची</title>
 
-  <p>काही ऑनलाइन खाते तुम्हाला समान वापरकर्ता खात्यासह अनेक सर्व्हिसेसच्या प्रवेशकरिता परवानगी देते. उदाहरणार्थ, Google खाती दिनदर्शिका, ईमेल, संपर्क आणि गप्पांकरिता प्रवेश पुरवते. तुम्हाला काही सर्व्हिसेसकरिता, परंतु इतर नाही, खात्याचा वापर करायला आवडेल. उदाहरणार्थ, गप्पाकरिता वेगळे ऑनलाइन खाते असल्यामुळे तुम्हाला Google खात्याचा वापर, गप्पा ऐवजी ईमेलकरिता करायला आवडेल.</p>
+  <p>Some types of online account providers allow you to access several services
+  with the same user account. For example, Google accounts provide access to
+  calendar, email, contacts and chat. You may want to use your account for some
+  services, but not others. For example, you may want to use your Google account
+  for email but not chat if you have a different online account that you use
+  for chat.</p>
 
   <p>तुम्ही प्रत्येक ऑनलाइन खात्यातर्फे पुरवलेले काही सर्व्हिसेस बंद करू शकता:</p>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-terminology">Activities</gui> overview and
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
       start typing <gui>Online Accounts</gui>.</p>
     </item>
     <item>
@@ -41,7 +47,8 @@
     </item>
     <item>
       <p>A list of services that are available with this account will be
-      shown under <gui>Use for</gui>.</p>
+      shown under <gui>Use for</gui>. See <link xref="accounts-which-application"/>
+      to see which applications access which services.</p>
     </item>
     <item>
       <p>Switch off any of the services that you do not want to use.</p>

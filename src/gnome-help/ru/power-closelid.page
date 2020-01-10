@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="power-closelid" xml:lang="ru">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="power-closelid" xml:lang="ru">
 
   <info>
     <link type="guide" xref="power"/>
     <link type="seealso" xref="power-suspendfail"/>
+    <link type="seealso" xref="power-suspend"/>
 
     <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
     <revision pkgversion="3.10" date="2013-11-08" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Проект документирования GNOME</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="author editor">
       <name>Екатерина Герасимова (Ekaterina Gerasimova)</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Петр Ковар (Petr Kovar)</name>
+      <email>pknbe@volny.cz</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -30,7 +36,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011, 2012</mal:years>
+      <mal:years>2011-2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -43,6 +49,12 @@
       <mal:name>Юлия Дронова</mal:name>
       <mal:email>juliette.tux@gmail.com</mal:email>
       <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
     </mal:credit>
   </info>
 
@@ -59,7 +71,17 @@
     <p>Эти инструкции сработают только если в системе используется <app>systemd</app>. Свяжитесь с разработчиками вашего дистрибутива для получения дополнительной информации.</p>
   </note>
 
-  <p>Если вы не хотите, чтобы ноутбук переходил в ждущий режим при закрытии крышки, можно изменить соответствующие настройки. Для этого понадобится <link xref="user-admin-change">пароль администратора</link>.</p>
+  <note style="important">
+    <p>You need to have the <app>Tweak Tool</app> installed on your computer to
+    change this setting.</p>
+    <if:if xmlns:if="http://projectmallard.org/if/1.0/" test="action:install">
+      <p><link style="button" action="install:gnome-tweak-tool">Install
+      <app>Tweak Tool</app></link></p>
+    </if:if>
+  </note>
+
+  <p>If you do not want the computer to suspend when you close the lid, you can
+  change the setting for that behavior.</p>
 
   <note style="warning">
     <p>Будьте осторожны при изменении этого параметра. Некоторые ноутбуки могут перегреваться, если оставить их включёнными с закрытой крышкой, особенно если они находятся в замкнутом пространстве, например, в рюкзаке.</p>
@@ -67,27 +89,20 @@
 
   <steps>
     <item>
-      <p>Откройте приложение <app>Терминал</app> из <gui>Обзора</gui>.</p>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Tweak Tool</gui>.</p>
     </item>
     <item>
-      <p>Запустите следующую команду:</p>
-      <screen its:translate="no"><output style="prompt">$</output> <input>sudoedit /etc/systemd/logind.conf</input></screen>
+      <p>Click <gui>Tweak Tool</gui> to open the application.</p>
     </item>
     <item>
-      <p>Теперь вам доступно содержимое файла. Вам нужно найти параметр <code>HandleLidSwitch=</code>, он может быть закомментирован с помощью символа <code>#</code> в начале соответствующей строки, а после него могут также располагаться дополнительные аргументы. Если этот параметр существует в файле, раскомментируйте его, убрав символ <code>#</code>. В противном случае, добавьте эту строчку в файл.</p>
-      <code>
-[Login]
-HandleLidSwitch=<input>lock</input>
-      </code>
-      <p>Для блокировки экрана используйте <input>заблокировать</input>, <input>игнорировать</input> чтобы ничего не происходило, <input>выключить</input> для выключения компьютера или <input>спящий режим</input> для активации спящего режима. Подробности см. в <link href="man:logind.conf">справке по logind.conf</link>.</p>
+      <p>Click the <gui>Power</gui> tab.</p>
     </item>
     <item>
-      <p>Закончив редактирование файла, сохраните изменения и закройте редактор.</p>
+      <p>Switch <gui>Don't suspend on lid close</gui> to <gui>ON</gui>.</p>
     </item>
     <item>
-      <p>Запустите следующую команду чтобы применить изменения:</p>
-      <screen its:translate="no"><output style="prompt">$</output> <input>sudo systemctl restart systemd-logind.service</input></screen>
-      <p>Если вы не запускаете эту команду, изменения войдут в силу только после перезагрузки машины.</p>
+      <p>Close the <gui>Tweak Tool</gui> window.</p>
     </item>
   </steps>
 

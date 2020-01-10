@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-sort" xml:lang="ja">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-sort" xml:lang="ja">
 
   <info>
-    <link type="guide" xref="files"/>
+    <link type="guide" xref="files#common-file-tasks"/>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-25" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -27,7 +28,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -81,10 +82,10 @@ toolbar.</p>
 <section id="icon-view">
   <title>アイコン表示</title>
 
-  <p>To sort files in a different order, click the
-  <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">View options</span></media></gui>
-  button in the toolbar and choose <gui>By Name</gui>, <gui>By Size</gui>,
-  <gui>By Type</gui>, <gui>By Modification Date</gui>, or <gui>By Access
+  <p>To sort files in a different order, click the view options button in the
+  <!-- FIXME: Get a tooltip added for "View options" -->
+  toolbar and choose <gui>By Name</gui>, <gui>By Size</gui>, <gui>By
+  Type</gui>, <gui>By Modification Date</gui>, or <gui>By Access
   Date</gui>.</p>
 
   <p>As an example, if you select <gui>By Name</gui>, the files will be sorted
@@ -101,11 +102,11 @@ toolbar.</p>
 
   <p>異なる順序でファイルを並べ替えるには、ファイルマネージャー中の列見出しのどれかをクリックします。たとえば、<gui>種類</gui>をクリックすると、ファイルを種類順に並べ替えます。列見出しをもう一度クリックすると、並びが反転します。</p>
   <p>In list view, you can show columns with more attributes and sort on those
-  columns. Click the
-  <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">View options</span></media></gui>
-  button in the toolbar, pick <gui>Visible Columns</gui> and select the columns
-  that you want to be visible. You will then be able to sort by those columns.
-  See <link xref="nautilus-list"/> for descriptions of available columns.</p>
+  columns. Click the view options button in the toolbar, pick <gui>Visible
+  <!-- FIXME: Get a tooltip added for "View options" -->
+  Columns…</gui> and select the columns that you want to be visible. You will
+  then be able to sort by those columns. See <link xref="nautilus-list"/> for
+  descriptions of available columns.</p>
 
 </section>
 
@@ -114,25 +115,20 @@ toolbar.</p>
 
   <terms>
     <item>
-      <title>名前順</title>
+      <title>名前</title>
       <p>ファイル名のアルファベット順に並べ替えます。</p>
     </item>
     <item>
-      <title>サイズ順</title>
+      <title>サイズ</title>
       <p>ファイルサイズ (ファイルが占めるディスク領域の大きさ) の順に並べ替えます。デフォルトでは最も小さいものから最も大きいものの順になります。</p>
     </item>
     <item>
-      <title>種類順</title>
+      <title>種類</title>
       <p>ファイル種別の順に並べ替えます。同じ種類のファイルはひとまとまりになり、その中で名前順に並びます。</p>
     </item>
     <item>
-      <title>更新日時順</title>
+      <title>Last Modified</title>
       <p>最後に更新した日時の順に並べ替えます。デフォルトでは、最も古いものから最も新しいものの順になります。</p>
-    </item>
-    <item>
-      <title>By Access Date</title>
-      <p>Sorts by the date and time that a file was last read. Sorts from
-      oldest to newest by default.</p>
     </item>
   </terms>
 

@@ -6,26 +6,25 @@
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
       <email>tiffany@antopolski.com</email>
     </credit>
+    <credit type="author editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Imprima livretos dobrados (como um livro ou panfleto) usando papel A4/Carta de tamanho normal.</desc>
+    <desc>Imprima livretos dobrados (como um livro ou panfleto) de um PDF usando papel A4/Carta de tamanho normal.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Rodolfo Ribeiro Gomes</mal:name>
       <mal:email>rodolforg@gmail.com</mal:email>
       <mal:years>2011, 2012.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Ferreira</mal:name>
-      <mal:email>rafael.f.f1@gmail.com</mal:email>
-      <mal:years>2012, 2013, 2014.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -39,11 +38,19 @@
       <mal:email>joaosantana@outlook.com</mal:email>
       <mal:years>2013.</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
   </info>
 
-  <title>Imprimindo livretos dobrados</title>
+  <title>Print a booklet on a double-sided printer</title>
 
-  <p>Você pode fazer livretos dobrados (como um pequeno livro ou panfleto) imprimindo páginas de um documento em uma ordem especial e alterando algumas pequenas opções de impressão.</p>
+  <p>You can make a folded booklet (like a small book or pamphlet) by printing
+  pages of a document in a special order and changing a couple of printing
+  options.</p>
 
   <p>These instructions are for printing a booklet from a PDF document.</p>
 
@@ -59,8 +66,15 @@
       <p>Abra o diálogo de impressão. Isso normalmente pode ser feito por meio de <gui style="menuitem">Imprimir</gui> no menu ou usando o atalho de teclado <keyseq><key>Ctrl</key><key>P</key></keyseq>.</p>
     </item>
     <item>
-      <p>Go to the <gui>General</gui> tab. Under <gui>Range</gui>, choose
-      <gui>Pages</gui>.</p>
+      <p>Clique no botão <gui>Prioridades...</gui></p>
+      <p>In the <gui>Orientation</gui> drop-down list, make sure that
+      <gui>Landscape</gui> is selected.</p>
+      <p>In the <gui>Duplex</gui> drop-down list, select <gui>Short Edge</gui>.
+      </p>
+      <p>Click <gui>OK</gui> to go back to the print dialog.</p>
+    </item>
+    <item>
+      <p>Under <gui>Range and Copies</gui>, choose <gui>Pages</gui>.</p>
     </item>
     <item>
       <p>Type the numbers of the pages in this order (n is the total number of
@@ -74,13 +88,10 @@
       </list>
     </item>
     <item>
-      <p>Agora, acesse a aba da <gui>Configuração da página</gui>.</p>
-      <p>Under <gui>Layout</gui>, in the <gui>Two-sided</gui> drop-down list,
-      select <gui>Short Edge (Flip)</gui>.</p>
-      <p>In the <gui>Pages per side</gui> drop-down list, select
-      <gui>2</gui>.</p>
-      <p>In the <gui>Page ordering</gui> menu, select <gui>Left to
-      right</gui>.</p>
+      <p>Choose the <gui>Page Layout</gui> tab.</p>
+      <p>Under <gui>Layout</gui>, select <gui>Brochure</gui>.</p>
+      <p>Under <gui>Page Sides</gui>, in the <gui>Include</gui> drop-down list,
+      select <gui>All pages</gui>.</p>
     </item>
     <item>
       <p>Clique em <gui>Imprimir</gui>.</p>

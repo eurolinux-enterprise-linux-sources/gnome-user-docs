@@ -4,9 +4,12 @@
   <info>
     <link type="guide" xref="power#problems"/>
     <link type="guide" xref="hardware-problems-graphics"/>
-    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <link type="seealso" xref="hardware-driver"/>
 
-    <desc>சில கணினி வன்பொருள் இடைநிறுத்தம் அல்லது ஹைபர்நேட்டைப் பயன்படுத்தினால் சிக்கல்களை ஏற்படுத்தலாம்.</desc>
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <desc>Some computer hardware causes problems with suspend.</desc>
 
     <credit type="author">
       <name>GNOME ஆவணமாக்கத் திட்டப்பணி</name>
@@ -28,7 +31,9 @@
 
 <title>என் கணினியை இடைநிறுத்திய பிறகு ஏன் மீண்டும் இயங்க மாட்டேனென்கிறது?</title>
 
-<p>நீங்கள் உங்கள் கணினியை <link xref="power-suspend">இடைநிறுத்தினால்</link> அல்லது <link xref="power-hibernate">ஹைபர்நேட்</link> செய்து, மீண்டும் இயக்க முயற்சித்தால் சில சமயம் அது வேலை செய்யாமல் போகலாம். உங்கள் வன்பொருள் இடைநிறுத்துதல் மற்றும் ஹைபர்நேட் அம்சத்தை சரியாக ஆதரிக்காதது இதற்கு ஒரு காரணமாக இருக்கலாம்.</p>
+<p>If you <link xref="power-suspend">suspend</link> your computer, then try to
+resume it, you may find that it does not work as you expected. This could be
+because suspend is not supported properly by your hardware.</p>
 
 <section id="resume">
   <title>என் கணினி இடைநிறுத்தப்பட்ட பிறகு மீண்டும் தொடங்கவில்லை</title>
@@ -41,17 +46,16 @@
   </note>
 </section>
 
-<section id="hibernate">
-  <title>கணினியை மீண்டும் இயக்கும் போது என் பயன்பாடுகள்/ஆவணங்கள் திறந்திருக்கவில்லை</title>
-  <p>நீங்கள் கணினியை ஹைபர்நேட் செய்து மீண்டும் இயக்கும் போது உங்கள் பயன்பாடுகள் அல்லது ஆவணங்கள் எதுவுமே திறந்திருக்காவிட்டால், அது ஹைபர்நேட் செயலை சரியாக செய்யாதிருக்கலாம். சில சமயம் இதற்கு சிறு சிக்கல் ஏதேனும் காரணமாக இருக்கலாம், அப்படியானால் கணினி அடுத்த முறை சரியாக ஹைபர்நேட் ஆகும். கணினி மறுதுவக்கமாக வேண்டிய ஒரு மென்பொருள் புதுப்பிப்பை நிறுவியதால் கூட இது நடக்கலாம்; இச்சூழ்நிலையில் கணினி ஹைபர்நேட் ஆகாமல் அணைக்கப்பட்டிருக்கலாம்.</p>
-  <p>உங்கள் கணினியின் வன்பொருள் ஹைபர்நேட் அம்சத்தை சரியாக ஆதரிக்காவிட்டாலும், உங்கள் கணினி சரியாக ஹைபர்நேட் செய்யாதிருக்கலாம். உதாரணமாக உங்கள் வன்பொருளுக்கான Linux இயக்கிகளில் ஏதேனும் சிக்கல் இருப்பதாலும் இது நடக்கலாம். மீண்டும் ஹைபர்நேட் செய்து இரண்டாவது முறை அது வேலை செய்கிறதா எனப் பார்த்தால் ஹைபர்நேட் சரியாக வேலை செய்கிறதா என சோதிக்கலாம். அப்படி ஆகாவிட்டால் உங்கள் கணினியின் இயக்கிகளில் சிக்கல் இருக்கலாம்.</p>
-</section>
-
 <section id="hardware">
   <title>என் கணினியை விழித்தெழச் செய்த பிறகு என் வயர்லெஸ் இணைப்பு (அல்லது பிற வன்பொருள்) வேலை செய்யவில்லை</title>
-  <p>உங்கள் கணினியை இடைநிறுத்தி அல்லது ஹைபர்நேட் செய்து மீண்டும் தொடங்கும் போது, உங்கள் இணைய இணைப்பு, சொடுக்கி அல்லது பிற ஏதேனும் சாதனங்கள் சரியாக வேலை செய்யாதிருக்கலாம். சாதனத்திற்கான இயக்கி இடைநிறுத்தல் அல்லது ஹைபர்நேட் அம்சத்தை சரியாக ஆதரிக்காதது இதற்கு காரணமாக இருக்கலாம். இது சாதனத்தின் சிக்கல் அல்ல, அது <link xref="hardware-driver">இயக்கியின் சிக்கலாகவே இருக்கும்</link>.</p>
+  <p>If you suspend your computer and then resume it again, you
+  may find that your internet connection, mouse, or some other device does not
+  work properly. This could be because the driver for the device does not
+  properly support suspend. This is a <link xref="hardware-driver">problem with the driver</link> and not the device
+  itself.</p>
   <p>சாதனத்தில் பவர் ஸ்விட்ச் இருந்தால், அதை அணைத்து மீண்டும் இயக்க முயற்சிக்கவும். பெரும்பாலும் சாதனம் மீண்டும் சரியாக இயங்கும். சாதனம் USB கேபிள் அல்லது அது போன்றவற்றால் இணைக்கப்பட்டிருந்தால், சாதனத்தை எடுத்துவிட்டு மீண்டும் இணைத்து வேலை செய்கிறதா எனப் பார்க்கவும்.</p>
-  <p>சாதனத்தை அணைக்க/அன்பிளக் செய்ய முடியாவிட்டால் அல்லது அது பலனளிக்காவிட்டால், சாதனத்தை மீண்டும் வேலை செய்ய வைக்க, கணினியை மறுதுவக்க வேண்டி இருக்கலாம்.</p>
+  <p>If you cannot turn off or unplug the device, or if this does not work, you
+  may need to restart your computer for the device to start working again.</p>
 </section>
 
 </page>

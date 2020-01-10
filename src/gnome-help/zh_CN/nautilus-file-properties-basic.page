@@ -2,22 +2,28 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-file-properties-basic" xml:lang="zh-CN">
 
   <info>
-    <link type="guide" xref="files" group="more"/>
+    <link type="guide" xref="files#more-file-tasks"/>
 
-   <desc>查看基本的文件信息，设定权限和选择默认的应用程序。</desc>
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
-   <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
 
-   <credit type="author">
-     <name>Tiffany Antopolski</name>
-     <email>tiffany@antopolski.com</email>
-   </credit>
-   <credit type="author">
-     <name>Shaun McCance</name>
-     <email>shaunm@gnome.org</email>
-   </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <desc>查看基本的文件信息，设定权限和选择默认的应用程序。</desc>
+
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>TeliuTe</mal:name>
@@ -25,6 +31,7 @@
       <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
+
   <title>文件属性</title>
 
   <p>要查看有关文件或文件夹的信息，请右键单击文件或文件夹，然后选择<gui>属性</gui>。也可先选择文件再按 <guiseq><gui>Alt</gui><gui>回车键</gui></guiseq>。</p>
@@ -37,13 +44,13 @@
  <title>基本属性</title>
  <terms>
   <item>
-    <title><gui>名称</gui></title>
+    <title><gui>Name</gui></title>
     <p>可通过更改此字段重命名文件。也可在属性窗口外重命名文件。请参阅<link xref="files-rename"/>。</p>
   </item>
   <item>
-    <title><gui>类型</gui></title>
+    <title><gui>Type</gui></title>
     <p>此字段有助于识别文件的类型，如 PDF 文档、OpenDocument 文本文件或 JPEG 图像。文件类型等属性决定着哪种应用程序能打开相应文件。例如，不能用音乐播放器打开图片。对于更多信息，请参见<link xref="files-open"/>。</p>
-  <p>文件的<em>MIME 类型</em>显示在括号里，MIME 类型是计算机用于指示文件类型的标准方法。</p>
+    <p>文件的<em>MIME 类型</em>显示在括号里，MIME 类型是计算机用于指示文件类型的标准方法。</p>
   </item>
 
   <item>
@@ -58,20 +65,19 @@
   </item>
 
   <item>
-    <title>位置</title>
-    <p>每个文件在计算机中的位置均由其<em>绝对路径</em>显示。这是文件在计算机中的唯一 "地址"，由列出的文件夹构成，必须转到这些文件夹中才能找到相应文件。例如，如果 Jim 的主文件夹中有个文件名为 <file>Resume.pdf</file>，则其位置会是 <file>/home/jim/Resume.pdf</file>。</p>
-  </item>
-
-  <item>
-    <title>卷</title>
-    <p>存有文件的文件系统或设备。此字段用于显示文件实体的存储位置，例如，文件是在硬盘还是 CD 中，在<link xref="nautilus-connect">网络共享还是服务器</link>中。可将硬盘分为多个<link xref="disk-partitions">磁盘分区</link>；磁盘分区也会显示在<gui>卷</gui>下。</p>
+    <title>Parent Folder</title>
+    <p>The location of each file on your computer is given by its <em>absolute
+    path</em>. This is a unique "address" of the file on your computer, made up
+    of a list of the folders that you would need to go into to find the file.
+    For example, if Jim had a file called <file>Resume.pdf</file> in his Home
+    folder, its parent folder would be <file>/home/jim</file> and its location
+    would be <file>/home/jim/Resume.pdf</file>.</p>
   </item>
 
   <item>
     <title>剩余空间</title>
     <p>仅会对文件夹显示此字段。此字段用于显示其中有相应文件夹的磁盘上的可用磁盘空间量。可用此字段核实硬盘是否已满。</p>
   </item>
-
 
   <item>
     <title>访问时间</title>

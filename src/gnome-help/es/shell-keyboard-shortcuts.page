@@ -4,11 +4,12 @@
   <info>
     <link type="guide" xref="tips"/>
     <link type="guide" xref="keyboard"/>
-    <link type="guide" xref="shell-overview"/>
+    <link type="guide" xref="shell-overview#apps"/>
     <link type="seealso" xref="keyboard-key-super"/>
 
     <revision pkgversion="3.8.0" version="0.4" date="2013-04-23" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.20" date="2016-08-13" status="candidate"/>
 
     <credit type="author copyright">
       <name>Shaun McCance</name>
@@ -31,7 +32,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2011 - 2014</mal:years>
+      <mal:years>2011 - 2016</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -82,10 +83,7 @@
     <!-- To be updated to <key>Tab</key> in the future. -->
     <td><p><keyseq><key>Ctrl</key><key>Alt</key><key>Tab</key></keyseq></p></td>
     <td>
-      <p>Give keyboard focus to the top bar. In the <gui>Activities</gui>
-      overview, switch keyboard focus between the top bar, dash, windows
-      overview, applications list, search field, and message tray. Use the
-      arrow keys to navigate.</p>
+      <p>Pone el foco del teclado en la barra superior. En la vista de <gui>Actividades</gui>, cambia el foco del teclado entre la barra superior, el tablero, la vista previa de ventanas, la lista de aplicaciones y el campo de búsqueda. Use las teclas de flechas para navegar.</p>
     </td>
   </tr>
   <tr xml:id="super-a">
@@ -100,6 +98,14 @@
     <td><p><keyseq><key>Super</key><key>Mayús</key><key>Re. Pág</key></keyseq> y <keyseq><key>Super</key><key>Mayús</key><key>Av. Pág</key></keyseq></p></td>
     <td><p><link xref="shell-workspaces-movewindow">Mover la ventana actual a un área de trabajo diferente</link>.</p></td>
   </tr>
+  <tr xml:id="super-shift-left">
+    <td><p><keyseq><key>Super</key><key>Mayús</key><key>←</key></keyseq></p></td>
+    <td><p>Mover la ventana una pantalla a la izquierda.</p></td>
+  </tr>
+  <tr xml:id="super-shift-right">
+    <td><p><keyseq><key>Super</key><key>Mayús</key><key>→</key></keyseq></p></td>
+    <td><p>Mover la ventana una pantalla a la derecha.</p></td>
+  </tr>
   <tr xml:id="ctrl-alt-Del">
     <td><p><keyseq><key>Ctrl</key><key>Alt</key><key>Supr</key></keyseq></p></td>
     <td><p><link xref="shell-exit">Apagar</link>.</p></td>
@@ -110,9 +116,7 @@
   </tr>
   <tr xml:id="super-m">
     <td><p><keyseq><key>Super</key><key>M</key></keyseq></p></td>
-    <td><p>Open <link xref="shell-notifications#messagetray">the message
-    tray</link>. Press <keyseq><key>Super</key><key>M</key></keyseq> again or
-    <key>Esc</key> to close.</p></td>
+    <td><p>Abra la <link xref="shell-notifications#messagetray">bandeja de mensajes</link>. Pulse <keyseq><key>Super</key><key>M</key></keyseq> otra vez o <key>Esc</key> para cerrarla.</p></td>
   </tr>
 </table>
 

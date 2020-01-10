@@ -6,20 +6,25 @@
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Tifani Antopoloski</name>
       <email>tiffany@antopolski.com</email>
     </credit>
+    <credit type="author editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Štampajte presavijene knjižice (kao što je knjiga ili letak) koristeći normalan papir A4/Pismo.</desc>
+    <desc>Štampajte presavijene knjižice (kao što je knjiga ili letak) iz PDF-a koristeći normalan papir veličine A4 ili pisma.</desc>
   </info>
 
-  <title>Štampajte presavijene knjižice</title>
+  <title>Štampajte knjižicu na dvostranom štampaču</title>
 
-  <p>Možete da napravite presavijene knjižice (kao što je mala knjiga ili letak) tako što ćete odštampati stranice dokumenta posebnim redom i izmeniti nekoliko opcija štampanja.</p>
+  <p>Možete da napravite presavijenu knjižicu (kao što je mala knjiga ili letak) tako što ćete odštampati stranice dokumenta posebnim redom i izmeniti nekoliko opcija štampanja.</p>
 
   <p>Ova uputstva su za štampanje presavijene knjižice iz PDF dokumenta.</p>
 
@@ -32,7 +37,13 @@
       <p>Otvorite prozorče štampanja. Ovo obično možete da uradite klikom na stavku <gui style="menuitem">Štampaj</gui> u izborniku koristeći prečicu sa tastature <keyseq><key>Ktrl</key><key>P</key></keyseq>.</p>
     </item>
     <item>
-      <p>Idite na jezičak <gui>Opšte</gui>. Pod <gui>Opseg</gui>, izaberite <gui>Stranice</gui>.</p>
+      <p>Pritisnite dugme <gui>Svojstva...</gui> button</p>
+      <p>Na padajućem spisku <gui>Usmerenje</gui>, uverite se da je izabrano <gui>Položeno</gui>.</p>
+      <p>U padajućem spisku <gui>Dvostrano</gui>, izaberite <gui>Po kraćoj strani</gui>.</p>
+      <p>Pritisnite <gui>U redu</gui> da se vratite na prozorče štampanja.</p>
+    </item>
+    <item>
+      <p>Pod <gui>Opseg i primerci</gui>, izaberite <gui>Stranice</gui>.</p>
     </item>
     <item>
       <p>Upišite broj stranica ovim redom (n je ukupan broj stranica, i umnožak broja 4):</p>
@@ -45,10 +56,9 @@
       </list>
     </item>
     <item>
-      <p>Sada, dite na jezičak <gui>Podešavanje strane</gui>.</p>
-      <p>Pod odeljkom <gui>Raspored</gui>, u padajućem spisku <gui>Dvostrano</gui>, izaberite <gui>Kraća ivica (Preokreni)</gui>.</p>
-      <p>U padajućem spisku <gui>Strana na listu</gui>, izaberite <gui>2</gui>.</p>
-      <p>U izborniku <gui>Redosled strana</gui>, izaberite <gui>Sa leva na desno</gui>.</p>
+      <p>Izaberite jezičak <gui>Raspored strane</gui>.</p>
+      <p>Pod <gui>Raspored</gui>, izaberite <gui>Knjižica</gui>.</p>
+      <p>Pod <gui>Strane stranice</gui>, u padajućem spisku <gui>Obuhvati</gui>, izaberite <gui>Sve stranice</gui>.</p>
     </item>
     <item>
       <p>Kliknite <gui>Štampaj</gui>.</p>

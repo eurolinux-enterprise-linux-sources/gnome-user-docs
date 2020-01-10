@@ -6,15 +6,21 @@
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
       <email>tiffany@antopolski.com</email>
     </credit>
+    <credit type="author editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Imprimer des brochures reliées (à la manière d'un livre) à partir de feuilles de taille A4/Letter standard.</desc>
+    <desc>Print folded booklets (like a book or pamphlet) from a PDF using normal
+    A4/Letter-size paper.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Luc Pionchon</mal:name>
@@ -31,7 +37,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2014</mal:years>
+      <mal:years>2011-2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -63,9 +69,15 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
-  <title>Impression de brochure reliées</title>
+  <title>Impression d'une brochure avec une imprimante double face</title>
 
   <p>Vous pouvez faire des brochures reliées (à la manière d'un petit livre) en imprimant les pages d'un document dans un certain ordre et en modifiant quelques options d'impression.</p>
 
@@ -80,8 +92,15 @@
       <p>Ouvrez la fenêtre d'impression. Habituellement, cliquez pour cela sur <gui style="menuitem">Imprimer</gui> dans le menu ou servez-vous du raccourci clavier <keyseq><key>Ctrl</key><key>P</key></keyseq>.</p>
     </item>
     <item>
-      <p>Go to the <gui>General</gui> tab. Under <gui>Range</gui>, choose
-      <gui>Pages</gui>.</p>
+      <p>Click the <gui>Properties...</gui> button </p>
+      <p>In the <gui>Orientation</gui> drop-down list, make sure that
+      <gui>Landscape</gui> is selected.</p>
+      <p>In the <gui>Duplex</gui> drop-down list, select <gui>Short Edge</gui>.
+      </p>
+      <p>Click <gui>OK</gui> to go back to the print dialog.</p>
+    </item>
+    <item>
+      <p>Under <gui>Range and Copies</gui>, choose <gui>Pages</gui>.</p>
     </item>
     <item>
       <p>Saisissez les numéros de pages dans cet ordre (n est le nombre total de pages et un multiple de 4) :</p>
@@ -94,12 +113,10 @@
       </list>
     </item>
     <item>
-      <p>Maintenant, allez à l'onglet <gui>Mise en page</gui>.</p>
-      <p>Under <gui>Layout</gui>, in the <gui>Two-sided</gui> drop-down list,
-      select <gui>Short Edge (Flip)</gui>.</p>
-      <p>In the <gui>Pages per side</gui> drop-down list, select
-      <gui>2</gui>.</p>
-      <p>Dans le menu <gui>Ordre des pages</gui>, sélectionnez <gui>De gauche à droite</gui>.</p>
+      <p>Choose the <gui>Page Layout</gui> tab.</p>
+      <p>Under <gui>Layout</gui>, select <gui>Brochure</gui>.</p>
+      <p>Under <gui>Page Sides</gui>, in the <gui>Include</gui> drop-down list,
+      select <gui>All pages</gui>.</p>
     </item>
     <item>
       <p>Cliquez sur <gui>Imprimer</gui>.</p>

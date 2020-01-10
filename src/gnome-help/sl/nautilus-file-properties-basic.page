@@ -2,23 +2,30 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-file-properties-basic" xml:lang="sl">
 
   <info>
-    <link type="guide" xref="files" group="more"/>
+    <link type="guide" xref="files#more-file-tasks"/>
 
-   <desc>Ogled osnovnih podatkov, nastavitev dovoljenj in izbira privzetih programov.</desc>
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
-   <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
 
-   <credit type="author">
-     <name>Tiffany Antopolski</name>
-     <email>tiffany@antopolski.com</email>
-   </credit>
-   <credit type="author">
-     <name>Shaun McCance</name>
-     <email>shaunm@gnome.org</email>
-   </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <desc>Ogled osnovnih podatkov, nastavitev dovoljenj in izbira privzetih programov.</desc>
+
   </info>
+
   <title>Lastnosti datoteke</title>
 
   <p>Za ogled podatkov o datoteki ali mapi desno kliknite in izberite <gui>Lastnosti</gui>. Namesto tega lahko tudi izberete datoteko in pritisnite <guiseq><gui>Alt</gui><gui>Enter</gui></guiseq>.</p>
@@ -31,13 +38,13 @@
  <title>Osnovne lastnosti</title>
  <terms>
   <item>
-    <title><gui>Ime</gui></title>
+    <title><gui>Name</gui></title>
     <p>Datoteko lahko preimenujete s spremembo tega polja. Datoteko lahko preimenujete tudi izven okna lastnosti. Oglejte <link xref="files-rename"/>.</p>
   </item>
   <item>
-    <title><gui>Vrsta</gui></title>
+    <title><gui>Type</gui></title>
     <p>To vam pomaga določiti vrste datotek kot so dokument PDF, besedilo OpenDocument ali slika JPEG. Vrsta datoteke med drugim določa kateri programi lahko odprejo datoteko. Slike na primer ne morete odpreti s predvajalnikom glasbe. Za več podrobnosti o tem si oglejte <link xref="files-open"/> .</p>
-  <p><em>Vrsta MIME</em> je datoteka prikazana v oklepaju; vrsta MIME je standardni način, ki ga računalniki uporabljajo za sklicevanje na vrsto datoteke.</p>
+    <p><em>Vrsta MIME</em> je datoteka prikazana v oklepaju; vrsta MIME je standardni način, ki ga računalniki uporabljajo za sklicevanje na vrsto datoteke.</p>
   </item>
 
   <item>
@@ -52,20 +59,19 @@
   </item>
 
   <item>
-    <title>Mesto</title>
-    <p>Mesto vsake datoteke na računalniku je podano z <em>absolutno potjo</em>. To je edinstven "naslov" datoteke na računalniku, sestavljen iz seznama map, ki je potreben za najdbo datoteke. Na primer, če ima Jure datoteko z imenom <file>Naloga.pdf</file> v svoji domači mapi, bo njeno mesto <file>/home/jure/Naloga.pdf</file>.</p>
-  </item>
-
-  <item>
-    <title>Glasnost</title>
-    <p>Datotečni sistem ali naprava na katerem je datoteka shranjena. To vam pokaže, kje je datoteka fizično shranjena, na primer, če je na trdem disku ali na CD-ju, ali <link xref="nautilus-connect">omrežni souporabi ali datotečnem strežniku</link>. Trde diske lahko razdelite na več <link xref="disk partitions">razdelkov</link>. Razdelek bo prikazan tudi pod odsekom <gui>Nosilec</gui>.</p>
+    <title>Parent Folder</title>
+    <p>The location of each file on your computer is given by its <em>absolute
+    path</em>. This is a unique "address" of the file on your computer, made up
+    of a list of the folders that you would need to go into to find the file.
+    For example, if Jim had a file called <file>Resume.pdf</file> in his Home
+    folder, its parent folder would be <file>/home/jim</file> and its location
+    would be <file>/home/jim/Resume.pdf</file>.</p>
   </item>
 
   <item>
     <title>Nezaseden prostor</title>
     <p>To je prikazano samo za mape. Podaja količino prostora, ki je na voljo na disku, na katerem je mapa. To je uporabno za preverjanje, če je trdi disk poln.</p>
   </item>
-
 
   <item>
     <title>Dostopano</title>

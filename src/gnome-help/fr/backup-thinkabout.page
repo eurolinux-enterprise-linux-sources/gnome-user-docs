@@ -39,7 +39,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2014</mal:years>
+      <mal:years>2011-2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -71,6 +71,12 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
   <title>Où trouver les fichiers à sauvegarder ?</title>
@@ -81,20 +87,12 @@
  <item>
   <p>Fichiers personnels (documents, musique, photos et vidéos)</p>
   <p its:locNote="translators: xdg dirs are localised by package xdg-user-dirs and need to be translated.  You can find the correct translations for your language here: http://translationproject.org/domain/xdg-user-dirs.html">Ils sont généralement stockés dans votre dossier personnel (<file>/home/votre_nom</file>). Ils peuvent aussi se trouver dans des sous-dossiers comme « Bureau », « Documents », « Images », « Musique » et « Vidéos ».</p>
-  <p>If your backup medium has sufficient space (if it is an external hard
-  disk, for example), consider backing up the entire Home folder. You can find
-  out how much disk space your Home folder takes up by using the
-  <app>Disk Usage Analyzer</app>.</p>
+  <p>Si votre média de sauvegarde possède suffisamment d'espace disponible (par exemple un disque dur externe), vous devez envisager de sauvegarder votre dossier personnel dans son intégralité. Pour savoir combien d'espace requiert votre dossier personnel, utilisez l'application <app>Analyseur d'utilisation des disques</app>.</p>
  </item>
 
  <item>
   <p>Fichiers cachés</p>
-  <p>Any file or folder name that starts with a period (.) is hidden by
-  default. To view hidden files, click the
-  <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">View options</span></media></gui>
-  button in the toolbar, and then choose <gui>Show Hidden Files</gui>, or press
-  <keyseq><key>Ctrl</key><key>H</key></keyseq>. You can copy these to a
-  backup location like any other file.</p>
+  <p>Tout fichier ou dossier dont le nom commence par un point (.) est masqué par défaut. Pour afficher les fichiers cachés, cliquez sur <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">Options d'affichage</span></media></gui> dans la barre d'outils et choisissez <gui>Afficher les fichiers cachés</gui>, ou pressez le raccourci clavier <keyseq><key>Ctrl</key><key>H</key></keyseq>. Vous pouvez sauvegarder ces fichiers comme n'importe quel autre.</p>
  </item>
 
  <item>
@@ -105,11 +103,7 @@
 
  <item>
   <p>Préférences système</p>
-  <p>Settings for important parts of the system are not stored in your Home
-  folder. There are a number of locations that they could be stored, but most
-  are stored in the <file>/etc</file> folder. In general, you will not need to
-  back up these files on a home computer. If you are running a server, however,
-  you should back up the files for the services that it is running.</p>
+  <p>Les paramètres pour les parties importantes du système ne sont pas enregistrés dans votre dossier personnel. Ils peuvent être stockés à plusieurs endroits mais la plupart le sont dans le dossier <file>/etc</file>. En général, vous n'avez pas besoin de sauvegarder ces fichiers pour un ordinateur personnel. Par contre, si vous utilisez un serveur, vous devriez sauvegarder les fichiers correspondant aux services en cours d'utilisation.</p>
  </item>
 </list>
 

@@ -11,63 +11,67 @@
 
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>A visual introduction to your desktop, the top bar, and the
-    <gui>Activities</gui> overview.</desc>
+    <desc>En visuell introduktion till ditt skrivbord, systemraden, och översiktsvyn <gui>Aktiviteter</gui>.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
   </info>
 
   <title>Introduktion till GNOME</title>
 
-  <p>GNOME 3 features a completely reimagined user interface designed to
-  stay out of your way, minimize distractions, and help you get things done.
-  When you first log in, you will see an empty desktop and the top bar.</p>
+  <p>GNOME 3 erbjuder ett fullständigt omarbetat användargränssnitt som designats för att inte vara i vägen, minimera distraktioner och hjälpa dig att få saker gjorda. När du loggar in första gången kommer du att se ett tomt skrivbord och systemraden.</p>
 
 <if:choose>
   <if:when test="!platform:gnome-classic">
     <media type="image" src="figures/shell-top-bar.png" width="600" if:test="!target:mobile">
-      <p>GNOME shell top bar</p>
+      <p>GNOME-skalets systemrad</p>
     </media>
   </if:when>
   <if:when test="platform:gnome-classic">
     <media type="image" src="figures/shell-top-bar-classic.png" width="500" height="40" if:test="!target:mobile">
-      <p>GNOME shell top bar</p>
+      <p>GNOME-skalets systemrad</p>
     </media>
   </if:when>
 </if:choose>
 
-  <p>The top bar provides access to your windows and applications, your
-  calendar and appointments, and
-  <link xref="status-icons">system properties</link> like sound, networking,
-  and power. In the status menu in the top bar, you can change the volume or
-  screen brightness, edit your <gui>Wi-Fi</gui> connection details, check your
-  battery status, log out or switch users, and turn off your computer.</p>
+  <p>Systemraden erbjuder tillgång till dina fönster och program, din kalender och möten och <link xref="status-icons">systemegenskaper</link> som ljud, nätverk och ström. I statusmenyn i systemraden kan du ändra volym eller ljusstyrka för skärmen, redigera dina <gui>Trådlösa</gui> anslutningsdetaljer, kontrollera din batteristatus, logga ut eller växla användare och stänga av din dator.</p>
 
 <links type="section"/>
 
 <section id="activities">
-  <title><gui>Activities</gui> overview</title>
+  <title>Översiktsvyn <gui>Aktiviteter</gui></title>
 
 <if:choose>
   <if:when test="!platform:gnome-classic">
-    <media type="image" src="figures/shell-activities.png" width="123" height="82" style="floatend floatright" if:test="!target:mobile">
+    <media type="image" src="figures/shell-activities.png" style="floatend floatright" if:test="!target:mobile">
       <p>Aktiviteter-knappen</p>
     </media>
   </if:when>
@@ -78,81 +82,48 @@
   </if:when>
 </if:choose>
 
-  <p if:test="!platform:gnome-classic">To access your windows and applications,
-  click the <gui>Activities</gui> button, or just move your mouse pointer to
-  the top-left hot corner. You can also press the
-  <key xref="keyboard-key-super">Super</key> key on your keyboard. You can
-  see your windows and applications in the overview. You can also just start
-  typing to search your applications, files, folders and the web.</p>
+  <p if:test="!platform:gnome-classic">För att nå dina fönster och program, klicka på knappen <gui>Aktiviteter</gui> eller bara flytta din musmarkör till övre vänstra hörnet. Du kan också trycka på tangenten <key xref="keyboard-key-super">Super</key> på ditt tangentbord. Du kan se dina fönster och program i översiktsvyn. Du kan också bara börja att skriva för att söka bland dina program, filer, mappar och på webben.</p>
 
-  <p if:test="platform:gnome-classic">To access your windows and applications,
-  click the <link xref="shell-terminology"><gui>Applications</gui> menu</link>
-  at the top left of the screen and select the <gui>Activities Overview</gui>
-  item. You can also press the <key xref="keyboard-key-super">Super</key> key
-  to see your windows and applications in the <gui>Activities</gui> overview. 
-  Just start typing to search your applications, files, and folders.</p>
+  <p if:test="platform:gnome-classic">För att nå dina fönster och program, klicka på menyn <gui xref="shell-introduction#activities">Program</gui> i övre vänstra hörnet av skärmen och välj objektet <gui>Aktivitetsöversikt</gui>. Du kan också trycka på tangenten <key xref="keyboard-key-super">Super</key> för att se dina fönster och program i översiktsvyn <gui>Aktiviteter</gui>. Bara börja att skriva för att söka bland dina program, filer och mappar.</p>
 
-  <media type="image" src="figures/shell-dash.png" width="49" height="300" style="floatstart floatleft" if:test="!target:mobile">
-    <p>The dash</p>
+  <!-- TODO: retake without the flashy bit -->
+  <media type="image" src="figures/shell-dash.png" height="300" style="floatstart floatleft" if:test="!target:mobile">
+    <p>Snabbstartspanelen</p>
   </media>
 
-  <p>On the left of the overview, you will find the <em>dash</em>. The dash
-  shows you your favorite and running applications. Click any icon in the
-  dash to open that application; if the application is already running, it will
-  be highlighted. Clicking its icon will bring up the most recently used 
-  window. You can also drag the icon to the overview, or onto any workspace on
-  the right.</p>
+  <p>Till vänster i översiktsvyn hittar du <em>snabbstartspanelen</em>. Snabbstartspanelen visar dig dina favorit- och körande program. Klicka på vilken ikon som helst i favoriter för att öppna det programmet; om programmet redan körs kommer det att bli markerat. Att klicka på dess ikon kommer att plocka fram det senast använda fönstret. Du kan också dra ikonen till översiktsvyn eller till en arbetsyta till höger.</p>
 
-  <p>Right-clicking the icon displays a menu that allows you to pick any window
-  in a running application, or to open a new window. You can also click the
-  icon while holding down <key>Ctrl</key> to open a new window.</p>
+  <p>Om du högerklickar på ikonen visas en meny som låter dig välja vilket fönster som helst för ett körande program, eller öppna ett nytt fönster. Du kan också klicka på ikonen medan du håller ner <key>Ctrl</key> för att öppna ett nytt fönster.</p>
 
-  <p>When you enter the overview, you will initially be in the windows
-  overview. This shows you live thumbnails of all the windows on the current
-  workspace.</p>
+  <p>När du går in i översiktsvyn kommer du först att hamna i fönsteröversiktsvyn. Denna visar dig live-uppdaterade miniatyrbilder av alla fönster på den aktuella arbetsytan.</p>
 
-  <p>Click the grid button at the bottom of the dash to display the
-  applications overview. This shows you all the applications installed on your
-  computer. Click any application to run it, or drag an application to the
-  overview or onto a workspace thumbnail. You can also drag an application onto
-  the dash to make it a favorite. Your favorite applications stay in the dash
-  even when they're not running, so you can access them quickly.</p>
+  <p>Klicka på rutnätsknappen i botten av snabbstartspanelen för att visa programöversiktsvyn. Denna visar dig alla program som finns installerade på din dator. Klicka på vilket program som helst för att köra det eller dra ett program till översikten eller till miniatyrbilden för en arbetsyta. Du kan också dra ett program till snabbstartspanelen för att göra det till en favorit. Dina favoritprogram stannar kvar i snabbstartspanelen även om de inte kör, så att du kan nå den snabbt.</p>
 
   <list style="compact">
     <item>
-      <p><link xref="shell-apps-open">Learn more about starting
-      applications.</link></p>
+      <p><link xref="shell-apps-open">Läs mer om att starta program.</link></p>
     </item>
     <item>
-      <p><link xref="shell-windows">Learn more about windows and
-      workspaces.</link></p>
+      <p><link xref="shell-windows">Läs mer om fönster och arbetsytor.</link></p>
     </item>
   </list>
 
 </section>
 
 <section id="appmenu">
-  <title>Application menu</title>
+  <title>Programmeny</title>
   <if:choose>
     <if:when test="!platform:gnome-classic">
       <media type="image" src="figures/shell-appmenu-shell.png" width="250" style="floatend floatright" if:test="!target:mobile">
-        <p>App Menu of <app>Terminal</app></p>
+        <p>Programmenyn för <app>Terminal</app></p>
       </media>
-      <p>Application menu, located beside the <gui>Activities</gui> button,
-      shows the name of the active application alongside with its icon and
-      provides quick access to application preferences or help. The items that
-      are available in the application menu vary depending on the application.
-      </p>
+      <p>Programmenyn, som finns placerad bredvid knappen <gui>Aktiviteter</gui>, visar namnet på det aktiva programmet intill dess ikon och erbjuder snabb tillgång till programinställningar eller hjälp. Vilka objekt som finns tillgängliga i programmenyn beror på programmet.</p>
     </if:when>
     <if:when test="platform:gnome-classic">
       <media type="image" src="figures/shell-appmenu-classic.png" width="154" height="133" style="floatend floatright" if:test="!target:mobile">
-        <p>App Menu of <app>Terminal</app></p>
+        <p>Programmenyn för <app>Terminal</app></p>
       </media>
-      <p>Application menu, located next to the <gui>Applications</gui> and
-      <gui>Places</gui> menus, shows the name of the active application
-      alongside with its icon and provides quick access to application
-      preferences or help. The items that are available in the application menu
-      vary depending on the application.</p>
+      <p>Programmenyn, som finns placerad bredvid menyerna <gui>Program</gui> och <gui>Platser</gui>, visar namnet på det aktiva programmet intill dess ikon och erbjuder snabb tillgång till programinställningar eller hjälp. Vilka objekt som finns tillgängliga i programmenyn beror på programmet.</p>
     </if:when>
   </if:choose>
 
@@ -164,7 +135,7 @@
 <if:choose>
   <if:when test="!platform:gnome-classic">
     <media type="image" src="figures/shell-appts.png" width="250" style="floatend floatright" if:test="!target:mobile">
-      <p>Klocka, kalender och möten</p>
+      <p>Klocka, kalender, möten och aviseringar</p>
     </media>
   </if:when>
   <if:when test="platform:gnome-classic">
@@ -174,19 +145,19 @@
   </if:when>
 </if:choose>
 
-  <p>Click the clock on the top bar to see the current date, a month-by-month
-  calendar, and a list of your upcoming appointments. You can also access the
-  date and time settings and open your full <app>Evolution</app> calendar
-  directly from the menu.</p>
+  <p>Klicka på klockan i systemraden för att se det aktuella datumet, en månadskalender och en lista på dina kommande möten och nya aviseringar. Du kan också öppna kalendern genom att trycka <keyseq><key>Super</key><key>M</key></keyseq>. Du kan nå datum- och tidsinställningar och öppna din fullständiga <app>Evolution</app>-kalender direkt från menyn.</p>
 
   <list style="compact">
     <item>
-      <p><link xref="clock-calendar">Learn more about the calendar and
-      appointments.</link></p>
+      <p><link xref="clock-calendar">Läs mer om kalendern och möten.</link></p>
+    </item>
+    <item>
+      <p><link xref="shell-notifications">Läs mer om aviseringar och meddelandefältet.</link></p>
     </item>
   </list>
 
 </section>
+
 
 <section id="yourname">
   <title>Du och din dator</title>
@@ -204,8 +175,7 @@
   </if:when>
 </if:choose>
 
-  <p>Click the system menu in the top-right corner to manage your system
-  settings and your computer.</p>
+  <p>Klicka på systemmenyn i övre högra hörnet för att hantera dina systeminställningar och din dator.</p>
 
 <!-- Apparently not anymore. TODO: figure out how to update status.
   <p>You can quickly set your availability directly from the menu. This will set
@@ -224,92 +194,52 @@ messages will be presented, such as when your battery is critically low.</p>
 </list>
 -->
 
-  <p>When you leave your computer, you can lock your screen to prevent other
-  people from using it. You can also quickly switch users without logging out
-  completely to give somebody else access to the computer, or you can
-  suspend or power off the computer from the menu.</p>
+  <p>När du lämnar din dator kan du låsa din skärm för att förhindra att andra människor använder den. Du kan också snabbt växla användare utan att logga ut helt för att ge någon annan tillgång till datorn eller så kan du försätta datorn i vänteläge eller stänga av den från menyn.</p>
 
   <list style="compact">
     <item>
-      <p><link xref="shell-exit">Learn more about switching users, logging out, and turning off your computer.</link></p>
+      <p><link xref="shell-exit">Läs mer om att växla användare, logga ut och stänga av din dator.</link></p>
     </item>
   </list>
 
 </section>
 
 <section id="lockscreen">
-  <title>Lock Screen</title>
+  <title>Låsskärmen</title>
 
   <media type="image" src="figures/shell-lock.png" width="250" style="floatend floatright" if:test="!target:mobile">
-    <p>Lock Screen</p>
+    <p>Låsskärmen</p>
   </media>
 
-  <p>When you lock your screen, or it locks automatically, the lock screen is
-  displayed. In addition to protecting your desktop while you're away from your
-  computer, the lock screen displays the date and time. It also shows
-  information about your battery and network status, and allows you to control
-  media playback.</p>
+  <p>När du låser din skärm eller den låses automatiskt så visas låsskärmen. Förutom att skydda ditt skrivbord medan du är borta från datorn så visar låsskärmen datum och tid. Den visar också information om din batteri- och nätverksstatus och låter dig kontrollera media uppspelning.</p>
 
   <list style="compact">
     <item>
-      <p><link xref="shell-lockscreen">Learn more about the lock
-      screen.</link></p>
-    </item>
-  </list>
-
-</section>
-
-<section id="message-tray">
-  <title>Message Tray</title>
-
-  <media its:translate="no" type="image" src="figures/shell-message-tray.png" width="600">
-    <p its:translate="yes">Message tray</p>
-  </media>
-
-  <p>The message tray can be brought into view by pushing your mouse pointer
-  against the bottom of the screen or by pressing
-  <keyseq><key>Super</key><key>M</key></keyseq>. This is where your
-  notifications are stored until you are ready to view them.</p>
-
-  <list style="compact">
-    <item>
-      <p><link xref="shell-notifications">Learn more about notifications and
-      the message tray.</link></p>
+      <p><link xref="shell-lockscreen">Läs mer om låsskärmen.</link></p>
     </item>
   </list>
 
 </section>
 
 <section id="window-list">
-  <title>Window List</title>
+  <title>Fönsterlist</title>
 
 <if:choose>
   <if:when test="!platform:gnome-classic">
-    <p>GNOME features a different approach to switching windows than a
-    permanently visible window list found in other desktop environments. This
-    lets you focus on the task at hand without distractions.</p>
+    <p>GNOME erbjuder ett annat sätt att växla mellan fönster än en permanent synlig fönsterlist som brukar finnas i andra skrivbordsmiljöer. Detta låter dig fokusera på dina uppgifter utan distraktioner.</p>
     <list style="compact">
       <item>
-        <p><link xref="shell-windows-switching">Learn more about switching
-        windows.</link></p>
+        <p><link xref="shell-windows-switching">Läs mer om att växla fönster</link></p>
       </item>
     </list>
   </if:when>
   <if:when test="platform:gnome-classic">
     <media type="image" src="figures/shell-window-list-classic.png" width="500" height="34" style="floatend floatright" if:test="!target:mobile">
-      <p>Window List</p>
+      <p>Fönsterlist</p>
     </media>
-    <p>The window list at the bottom of the screen provides access to all your
-    open windows and applications and lets you quickly minimize and restore
-    them.</p>
-    <p>At the right-hand side of the window list, GNOME displays a short
-    identifier for the current worskpace, such as <gui>1</gui> for the first
-    (top) workspace. In addition, the identifier also displays the total number
-    of available workspaces. To switch to a different workspace, you can click
-    the identifier and select the workspace you want to use from the menu.</p>
-    <p>If an application or a system component wants to get your attention, it
-    will display a blue icon at the right-hand side of the window list.
-    Clicking the blue icon shows the message tray.</p>
+    <p>Fönsterlisten längst ner på skärmen ger tillgång till alla dina öppna fönster och program och låter dig snabbt minimera och återställa dem.</p>
+    <p>Till höger på fönsterlisten visar GNOME en kort namn på den aktuella arbetsytan, exempelvis <gui>1</gui> för den första (översta) arbetsytan. Dessutom visas det totala antalet arbetsytor. För att växla mellan olika arbetsytor kan du klicka på namnet och välja arbetsytan du önskar från menyn.</p>
+    <p>Om ett program eller en systemkomponent vill få din uppmärksamhet kommer den att visa en blå ikon till höger på fönsterlisten. Klicka på den blå ikonen för att visa meddelandefältet.</p>
   </if:when>
 </if:choose>
 

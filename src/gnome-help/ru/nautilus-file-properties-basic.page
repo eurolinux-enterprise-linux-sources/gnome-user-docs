@@ -2,22 +2,28 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-file-properties-basic" xml:lang="ru">
 
   <info>
-    <link type="guide" xref="files" group="more"/>
+    <link type="guide" xref="files#more-file-tasks"/>
 
-   <desc>Просмотр информации о файле, установка прав доступа и выбор приложения по умолчанию.</desc>
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
-   <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Шон МакКенс (Shaun McCance)</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Дэвид Кинг (David King)</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
 
-   <credit type="author">
-     <name>Tiffany Antopolski</name>
-     <email>tiffany@antopolski.com</email>
-   </credit>
-   <credit type="author">
-     <name>Шон МакКенс (Shaun McCance)</name>
-     <email>shaunm@gnome.org</email>
-   </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <desc>Просмотр информации о файле, установка прав доступа и выбор приложения по умолчанию.</desc>
+
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Александр Прокудин</mal:name>
@@ -28,7 +34,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011, 2012</mal:years>
+      <mal:years>2011-2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -42,7 +48,14 @@
       <mal:email>juliette.tux@gmail.com</mal:email>
       <mal:years>2013-2014</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
+
   <title>Свойства файла</title>
 
   <p>Чтобы просмотреть информацию о файле или папке, нажмите на них правой кнопкой и выберите <gui>Свойства</gui>. Можно также выбрать файл и нажать <keyseq><key>Alt</key><key>Enter</key></keyseq>.</p>
@@ -55,13 +68,13 @@
  <title>Основные свойства</title>
  <terms>
   <item>
-    <title><gui>Имя</gui></title>
+    <title><gui>Name</gui></title>
     <p>Изменив это поле, можно переименовать файл. Существует и другой способ переименования файла: смотрите <link xref="files-rename"/>.</p>
   </item>
   <item>
-    <title><gui>Тип</gui></title>
+    <title><gui>Type</gui></title>
     <p>Позволяет определить тип файла, например: документ PDF, текст OpenDocument или изображение в формате JPEG. От типа файла, кроме того, зависит то, в каком приложении его можно открыть. Например, нельзя открыть изображение в музыкальном проигрывателе. Подробнее об этом смотрите <link xref="files-open"/>.</p>
-  <p><em>Тип MIME</em> файла показывается в скобках; тип MIME — это стандартный способ, который используют компьютеры для определения типа файла.</p>
+    <p><em>Тип MIME</em> файла показывается в скобках; тип MIME — это стандартный способ, который используют компьютеры для определения типа файла.</p>
   </item>
 
   <item>
@@ -76,20 +89,19 @@
   </item>
 
   <item>
-    <title>Адрес</title>
-    <p>Местоположение каждого файла на компьютере выражается его <em>абсолютным путём</em>. Это уникальный «адрес» файла на компьютере, составленный из списка папок, через которые нужно пройти, чтобы добраться до файла. Например, если у пользователя Jim в домашней папке есть файл <file>Resume.pdf</file>, то его путь будет <file>/home/jim/Resume.pdf</file>.</p>
-  </item>
-
-  <item>
-    <title>Том</title>
-    <p>Файловая система или устройство, на котором хранится файл. Показывает, где физически хранится файл, например, на жёстком диске, CD, <link xref="nautilus-connect">сетевом ресурсе или файловом сервере</link>. Жёсткие диски могут быть разбиты на несколько <link xref="disk-partitions">разделов</link>; разделы тоже отображаются в поле <gui>Том</gui>.</p>
+    <title>Parent Folder</title>
+    <p>The location of each file on your computer is given by its <em>absolute
+    path</em>. This is a unique "address" of the file on your computer, made up
+    of a list of the folders that you would need to go into to find the file.
+    For example, if Jim had a file called <file>Resume.pdf</file> in his Home
+    folder, its parent folder would be <file>/home/jim</file> and its location
+    would be <file>/home/jim/Resume.pdf</file>.</p>
   </item>
 
   <item>
     <title>Свободное место</title>
     <p>Отображается только для папок. Показывает, сколько свободного места доступно на диске, на котором находится эта папка. Это полезно, если нужно проверить, не заполнен ли диск.</p>
   </item>
-
 
   <item>
     <title>Последнее обращение</title>

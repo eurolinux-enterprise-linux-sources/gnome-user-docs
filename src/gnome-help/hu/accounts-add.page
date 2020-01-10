@@ -1,28 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="accounts-add" xml:lang="hu">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="accounts-add" xml:lang="hu">
 
   <info>
-    <link type="guide" xref="accounts"/>
+    <link type="guide" xref="accounts" group="add"/>
 
     <revision pkgversion="3.5.5" date="2012-08-14" status="draft"/>
     <revision pkgversion="3.9.92" date="2012-09-18" status="candidate"/>
     <revision pkgversion="3.13.92" date="2013-09-20" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Jim Campbell</name>
-      <email its:translate="no">jwcampbell@gmail.com</email>
+      <email>jwcampbell@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
       <years>2014</years>
     </credit>
+    <credit type="editor">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+      <years>2015</years>
+    </credit>
 
-    <desc>Csatlakozás online fiókhoz.</desc>
+    <desc>Engedélyezze alkalmazásoknak az online fiókjai elérését fényképek, névjegyek, naptárak és sok más használatához.</desc>
 
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Griechisch Erika</mal:name>
@@ -33,7 +39,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Kelemen Gábor</mal:name>
       <mal:email>kelemeng at gnome dot hu</mal:email>
-      <mal:years>2011, 2012, 2013, 2014</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -67,7 +73,7 @@
 
   <steps>
     <item>
-      <p>Nyissa meg a <gui xref="shell-terminology">Tevékenységek</gui> áttekintést, és kezdje el begépelni az <gui>Online fiókok</gui> szót.</p>
+      <p>Nyissa meg a <gui xref="shell-introduction#activities">Tevékenységek</gui> áttekintést, és kezdje el begépelni az <gui>Online fiókok</gui> szót.</p>
     </item>
     <item>
       <p>Kattintson az <gui>Online fiókok</gui> ikonra a panel megnyitásához.</p>
@@ -77,10 +83,9 @@
     </item>
     <item>
       <p>Válassza ki a hozzáadni kívánt fiók típusát.</p>
-      <p>Ha több fajta fiókot szeretne hozzáadni, akkor később megteheti azt is.</p>
     </item>
     <item>
-      <p>Megnyílik egy kis weboldal ablak, amelyben megadhatja az online fiókjainak adatait. Ha például egy Google fiókot állít be, akkor adja meg a Google felhasználónevét és jelszavát.</p>
+      <p>Megnyílik egy kis weboldal ablak, amelyben megadhatja az online fiókjainak adatait. Ha például egy Google fiókot állít be, akkor adja meg a Google felhasználónevét és jelszavát. Néhány szolgáltató lehetővé teszi új fiók létrehozását a bejelentkezési ablakban.</p>
     </item>
     <item>
       <p>Ha helyesen adta meg hitelesítési adatait, akkor a program felkéri, hogy engedélyezze a GNOME számára az online fiókjának elérését. A folytatáshoz adja meg a hozzáférést.</p>
@@ -90,10 +95,10 @@
     </item>
   </steps>
 
-  <p>A fiókok hozzáadása után minden kijelölt alkalmazás az elindulása után automatikusan ezeket a hitelesítési adatokat fogja használni.</p>
+  <p>Fiókok hozzáadása után az alkalmazások használhatják ezeket az Ön által engedélyezett szolgáltatásokhoz. Az engedélyezhető szolgáltatásokkal kapcsolatban nézze meg a <link xref="accounts-disable-service"/> oldalt.</p>
 
   <note style="tip">
-    <p>Biztonsági okokból a GNOME nem tárolja a jelszavát a számítógépen. Ehelyett egy, az online szolgáltatás által biztosított jelsort tárol. Ha teljesen meg szeretné szüntetni a kapcsolatot a számítógépet és az online szolgáltatás között, akkor <link xref="accounts-remove">távolítsa azt el</link>.</p>
+    <p>Számos online szolgáltató a jelszó helyett egy engedélyező jelsort biztosít, amit a GNOME tárol. Ha eltávolít egy fiókot, az online szolgáltatásban is vissza kell vonnia azt az engedélyt. További információkért lásd a <link xref="accounts-remove"/> oldalt.</p>
   </note>
 
 </page>

@@ -6,6 +6,7 @@
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Проект документирования GNOME</name>
@@ -25,7 +26,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011, 2012</mal:years>
+      <mal:years>2011-2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -39,6 +40,12 @@
       <mal:email>juliette.tux@gmail.com</mal:email>
       <mal:years>2013-2014</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
 <title>При воспроизведении звука слышится треск или гудение</title>
@@ -48,17 +55,21 @@
 <list>
  <item>
   <p>Проверьте, правильно ли подключены колонки.</p>
-  <p>Если штекер колонок не до конца вставлен в гнездо, или вставлен не в то гнездо, может быть слышно гудение.</p>
+  <p>If the speakers are not fully plugged in, or if they are plugged into the
+  wrong socket, you might hear a buzzing sound.</p>
  </item>
 
  <item>
-  <p>Проверьте, не повреждён ли провод колонок или наушников.</p>
+  <p>Make sure the speaker/headphone cable is not damaged.</p>
   <p>Аудиокабели и разъёмы со временам изнашиваются. Попробуйте подключить колонки или наушники к другому звуковому устройству (например, MP3-плееру или CD-плееру) и проверьте, слышен ли треск. Если слышен, возможно, вам надо заменить провод колонок или наушники.</p>
  </item>
 
  <item>
-  <p>Проверьте, не является ли источником проблем плохой драйвер.</p>
-  <p>Некоторые звуковые карты не очень хорошо работают в Linux, потому что для них нет хороших драйверов. Эту проблему идентифицировать сложнее. Попробуйте выполнить поиск в Интернете по производителю и модели вашей звуковой карты и слову «Linux», чтобы узнать, нет возникала ли похожая проблема у других людей.</p>
+  <p>Check if the sound drivers are not very good.</p>
+  <p>Some sound cards do not work very well on Linux because they do not have very
+  good drivers. This problem is more difficult to identify. Try searching for
+  the make and model of your sound card on the internet, plus the search term
+  "Linux", to see if other people are having the same problem.</p>
   <p>Для получения дополнительной информации о звуковой карте можно использовать команду <cmd>lspci</cmd>.</p>
  </item>
 </list>

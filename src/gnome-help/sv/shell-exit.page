@@ -2,9 +2,8 @@
 <page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="shell-exit" xml:lang="sv">
 
   <info>
-    <link type="guide" xref="shell-overview#desktop"/>
+    <link type="guide" xref="shell-overview"/>
     <link type="guide" xref="power"/>
-    <link type="seealso" xref="power-hibernate"/>
     <link type="guide" xref="index" group="#first"/>
 
     <revision pkgversion="3.6.0" date="2012-09-15" status="review"/>
@@ -13,25 +12,24 @@
 
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="author">
       <name>Andre Klapper</name>
-      <email its:translate="no">ak-47@gmx.net</email>
+      <email>ak-47@gmx.net</email>
     </credit>
     <credit type="author">
       <name>Alexandre Franke</name>
-      <email its:translate="no">afranke@gnome.org</email>
+      <email>afranke@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Learn how to leave your user account, by logging out, switching
-    users, and so on.</desc>
+    <desc>Lär dig hur du lämnar ditt användarkonto genom att logga ut, växla användare, och så vidare.</desc>
     <!-- Should this be a guide which links to other topics? -->
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -39,33 +37,37 @@
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
   </info>
 
-  <title>Log out, power off or switch users</title>
+  <title>Logga ut, stäng av eller växla användare</title>
 
-  <p>When you have finished using your computer, you can turn it off, suspend
-  it (to save power), or leave it powered on and log out.</p>
+  <p>När du har använt din dator färdigt kan du stänga av den, försätta din i vänteläge (för att spara ström) eller lämna den på och logga ut.</p>
 
 <section id="logout">
   <title>Logga ut eller växla användare</title>
 
-  <p>To let other users use your computer, you can either log out, or leave
-  yourself logged in and just switch users. If you switch users, all of
-  your applications will continue running, and everything will be where you
-  left it when you log back in.</p>
+  <p>För att låta andra användare använda din dator kan du antingen logga ut eller låta dig själv vara inloggad och bara växla användare. Om du växlar användare, kommer alla dina program att fortsätta köra och allting kommer att finnas kvar som där du lämnade det när du logga in igen.</p>
 
-  <p>To <gui>Log Out</gui> or <gui>Switch User</gui>, click the
-  <link xref="shell-terminology">system menu</link> on the right side of the
-  top bar, click your name and then choose the right option.</p>
+  <p>För att <gui>Logga ut</gui> eller <gui>Växla användare</gui>, klicka på <link xref="shell-introduction#yourname">systemmenyn</link> på höger sida av systemraden, klicka på ditt namn och välj sedan rätt alternativ.</p>
 
   <note if:test="!platform:gnome-classic">
-    <p>The <gui>Log Out</gui> and <gui>Switch User</gui> entries only appear in
-    the menu if you have more than one user account on your system.</p>
+    <p>Alternativen <gui>Logga ut</gui> och <gui>Växla användare</gui> visas bara i meny om du har mer än ett användarkonto på ditt system.</p>
   </note>
 
   <note if:test="platform:gnome-classic">
-    <p>The <gui>Switch User</gui> entry only appears in the menu if you have
-    more than one user account on your system.</p>
+    <p>Alternativet <gui>Växla användare</gui> visas bara i meny om du har mer än ett användarkonto på ditt system.</p>
   </note>
 
 </section>
@@ -77,19 +79,11 @@
 
   <title>Lås skärmen</title>
 
-  <p>If you're leaving your computer for a short time, you should lock your
-  screen to prevent other people from accessing your files or running
-  applications. When you return, raise the
-  <link xref="shell-lockscreen">lock screen</link> curtain and enter your
-  password to log back in. If you don't lock your screen, it will lock
-  automatically after a certain amount of time.</p>
+  <p>Om du ska lämna din dator för en kort stund bör du låsa skärmen för att förhindra andra människor från att nå dina filer eller körande program. När du kommer tillbaka, höj upp gardinen på <link xref="shell-lockscreen">låsskärmen</link> och mata in ditt lösenord för att logga in igen. Om du inte låser din skärm kommer den automatiskt att låsas efter en viss tid.</p>
 
-  <p>To lock your screen, click the system menu on the right side of the top
-  bar and press the lock screen button at the bottom of the menu.</p>
+  <p>För att låsa din skärm, klicka på systemmenyn på höger sida av systemraden och tryck på knappen för att låsa skärmen längst ner på menyn.</p>
 
-  <p>When your screen is locked, other users can log in to their own accounts
-  by clicking <gui>Log in as another user</gui> on the password screen. You
-  can switch back to your desktop when they are finished.</p>
+  <p>När skärmen är låst, kan andra användare logga in på deras egna konton genom att klicka på <gui>Logga in som en annan användare</gui> på lösenordsskärmen. Du kan växla tillbaka till ditt skrivbord när de är klara.</p>
 
 </section>
 
@@ -100,15 +94,9 @@
 
   <title>Vänteläge</title>
 
-  <p>To save power, suspend your computer when you are not using it. If you use
-  a laptop, GNOME suspends your computer automatically when you close the lid.
-  This saves your state to your computer's memory and powers off most of the
-  computer's functions. A very small amount of power is still used during
-  suspend.</p>
+  <p>För att spara ström, försätt din dator i vänteläge när du inte använder den. Om du använder en bärbar dator, kommer GNOME som standard automatiskt att försätta datorn i vänteläge när du stänger locket. Detta sparar tillståndet till din dators minne och stänger av de flesta av datorns funktioner. En väldigt liten del av strömmen används fortfarande i vänteläge.</p>
 
-  <p>To suspend your computer manually, click the system menu on the right side
-  of the top bar and hold down the <key>Alt</key> key. The power off button
-  will change to suspend. Press the button.</p>
+  <p>För att försätta din dator i vänteläge manuellt, klicka på systemmenyn på höger sida av systemraden och håll ner <key>Alt</key>-tangenten. Avstängningsknappen ändras till vänteläge. Tryck på knappen.</p>
 
 </section>
 
@@ -119,20 +107,12 @@
 
   <title>Stäng av eller starta om</title>
 
-  <p>If you want to power off your computer entirely, or do a full restart,
-  click the system menu on the right side of the top bar and press the power
-  off button at the bottom of the menu. A dialog will open offering you the
-  options to either <gui>Restart</gui> or <gui>Power Off</gui>.</p>
+  <p>Om du vill stänga av din dator helt eller göra en full omstart, klicka på systemmenyn på höger sida av systemraden och tryck på avstängningsknappen längst ner på menyn. En dialogruta kommer att öppnas som erbjuder dig alternativen att antingen <gui>Starta om</gui> eller <gui>Stäng av</gui>.</p>
 
-  <p>If there are other users logged in, you may not be allowed to power off or
-  restart the computer because this will end their sessions.  If you are an
-  administrative user, you may be asked for your password to power off.</p>
+  <p>Om det finns andra användare som är inloggade är du kanske inte tillåten att stänga av eller starta om datorn eftersom detta kommer att avsluta deras sessioner. Om du är en administrativ användare kan du bli tillfrågad om ditt lösenord för att stänga av.</p>
 
   <note style="tip">
-    <p>You may want to power off your computer if you wish to move it and do
-    not have a battery, if your battery is low or does not hold charge well. A
-    powered off computer also uses <link xref="power-batterylife">less
-    energy</link> than one which is suspended.</p>
+    <p>Du kan vilja stänga av din dator om du vill flytta den och inte har något batteri, om ditt batteri är lågt eller inte håller laddning bra. En avstängd dator använder också <link xref="power-batterylife">mindre energi</link> än en som är i vänteläge.</p>
   </note>
 
 </section>

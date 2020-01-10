@@ -24,12 +24,6 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Ferreira</mal:name>
-      <mal:email>rafael.f.f1@gmail.com</mal:email>
-      <mal:years>2012, 2013, 2014.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Enrico Nicoletto</mal:name>
       <mal:email>liverig@gmail.com</mal:email>
       <mal:years>2013.</mal:years>
@@ -39,6 +33,12 @@
       <mal:name>João Santana</mal:name>
       <mal:email>joaosantana@outlook.com</mal:email>
       <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
     </mal:credit>
   </info>
 
@@ -59,16 +59,22 @@
 <list>
   <item>
     <p if:test="!platform:gnome-classic">In the
-    <gui xref="shell-terminology">&gt;Activities</gui> overview, move your cursor
+    <gui xref="shell-introduction#activities">Activities</gui> overview, move your cursor
     to the right-most side of the screen.</p>
     <p if:test="platform:gnome-classic">Pressione a tecla <key xref="keyboard-key-super">Super</key> para abrir o panorama de <gui>Atividades</gui> e, então, mova seu cursor para o lado mais da direita da tela.</p>
   </item>
   <item>
-    <p if:test="!platform:gnome-classic">Um painel vertical aparecerá mostrando os espaços de trabalho em uso, mais um vazio. Este é o <link xref="shell-terminology">seletor de espaço de trabalho</link>.</p>
-    <p if:test="platform:gnome-classic">Um painel vertical aparecerá mostrando os espaços de trabalho disponíveis. Este é o <link xref="shell-terminology">seletor de espaço de trabalho</link>.</p>
+    <p if:test="!platform:gnome-classic">A vertical panel will appear showing
+    workspaces in use, plus an empty workspace. This is the
+    workspace selector.</p>
+    <p if:test="platform:gnome-classic">A vertical panel will appear showing
+    available workspaces. This is the workspace selector.</p>
   </item>
   <item if:test="!platform:gnome-classic">
-    <p>Para adicionar um espaço de trabalho, arraste e solte uma janela de um espaço de trabalho existente para outro, vazio, no <link xref="shell-terminology">seletor de espaços de trabalho</link>. Este agora terá a janela que você soltou nele, e um novo espaço de trabalho vazio aparecerá logo abaixo.</p>
+    <p>To add a workspace, drag and drop a window from an existing workspace
+    onto the empty workspace in the workspace selector. This workspace now
+    contains the window you have dropped,
+    and a new empty workspace will appear below it.</p>
   </item>
   <item if:test="!platform:gnome-classic">
     <p>Para remover um espaço de trabalho, basta fechar todas as suas janelas ou movê-las para outros espaços. de trabalho.</p>

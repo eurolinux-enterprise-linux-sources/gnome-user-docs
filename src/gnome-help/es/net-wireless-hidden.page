@@ -6,18 +6,19 @@
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
     <revision pkgversion="3.10" date="2013-12-05" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Proyecto de documentación de GNOME</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <desc>Conectarse a una red inalámbrica que no aparece en la lista de redes.</desc>
@@ -26,7 +27,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2011 - 2014</mal:years>
+      <mal:years>2011 - 2016</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -53,8 +54,15 @@
 <p>Es posible configurar una red inalámbrica para que esté «oculta». Las redes ocultas no se muestran en la lista de redes que se muestran al pulsar en la configuración de la <gui>Red</gui> (o la lista de redes inalámbricas en cualquier otro equipo). Para conectarse a una red inalámbrica oculta:</p>
 
 <steps>
-  <item><p>Pulse en el área de estado del sistema en la barra superior y seleccione <gui>Inalámbrica</gui>.</p></item>
-  <item><p>Seleccione <gui>Configuración inalámbrica</gui>.</p></item>
+  <item>
+    <p>Abra el <gui xref="shell-introduction#yourname">menú del sistema</gui> en la parte derecha de la barra superior.</p>
+  </item>
+  <item>
+    <p>Seleccione <gui><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-excellent-symbolic.svg" width="16" height="16"/> Inalámbrica no conectada</gui>. La sección Inalámbrica del menú se expandirá.</p>
+  </item>
+  <item>
+    <p>Pulse en <gui>Configuración inalámbrica</gui>.</p>
+  </item>
   <item><p>Pulse el botón <gui>Conectar a una red oculta...</gui>.</p></item>
  <item>
   <p>En la ventana que aparece, seleccione una red oculta a la que se hubiese conectado anteriormente usando la lista desplegable <gui>Conexión</gui>, o <gui>Nueva</gui> para crear una nueva.</p>

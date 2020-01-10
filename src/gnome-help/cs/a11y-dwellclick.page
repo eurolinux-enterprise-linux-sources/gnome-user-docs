@@ -8,28 +8,28 @@
     <revision pkgversion="3.8.0" date="2013-03-13" status="candidate"/>
     <revision pkgversion="3.9.92" date="2013-09-18" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-20" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="author">
       <name>Phil Bull</name>
-      <email its:translate="no">philbull@gmail.com</email>
+      <email>philbull@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
-    <desc>The <gui>Hover Click</gui> (Dwell Click) feature allows you to click
-    by holding the mouse still.</desc>
+    <desc>Funkce <gui>kliknutí posečkáním</gui> umožňuje kliknout pouhým podržením myši na místě.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
@@ -40,56 +40,39 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Marek Černocký</mal:name>
       <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:years>2014, 2015</mal:years>
     </mal:credit>
   </info>
 
-  <title>Simulate clicking by hovering</title>
+  <title>Simulace kliknutí posečkáním</title>
 
-  <p>You can click or drag simply by hovering your mouse pointer over a control
-  or object on the screen. This is useful if you find it difficult to move the
-  mouse and click at the same time. This feature is called <gui>Hover
-  Click</gui> or Dwell Click.</p>
+  <p>Můžete kliknout nebo přetahovat jednoduše tak, že přesunete ukazatel myši na ovládací prvek nebo objekt na obrazovce a chvíli počkáte. To se vám může hodit, když máte problémy pohybovat myší a zároveň držet zmáčknuté tlačítko na ní. Funkce se nazývá <gui>kliknutí posečkáním</gui>.</p>
 
-  <p>When <gui>Hover Click</gui> is enabled, you can move your mouse pointer
-  over a control, let go of the mouse, and then wait for a while before the
-  button will be clicked for you.</p>
+  <p>Když je povolené <gui>Kliknutí posečkáním</gui>, stačí najet ukazatelem myši nad ovládací prvek, nechat myš být a chvíli čekat, než se „samo klikne“ za vás.</p>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-terminology">Activities</gui> overview and
-      start typing <gui>Universal Access</gui>.</p>
+      <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Univerzální přístup</gui>.</p>
     </item>
     <item>
       <p>Kliknutím na <gui>Univerzální přístup</gui> otevřete příslušný panel.</p>
     </item>
     <item>
-      <p>Press <gui>Click Assist</gui> in the <gui>Pointing &amp;
-      Clicking</gui> section.</p>
+      <p>V části <gui>Ukazování a klikání</gui> zmáčkněte <gui>Pomáhat s klikáním</gui>.</p>
     </item>
     <item>
-      <p>Switch <gui>Hover Click</gui> to <gui>ON</gui>.</p>
+      <p>Přepněte vypínač <gui>Kliknutí posečkáním</gui> na <gui>❙</gui> (zapnuto).</p>
     </item>
   </steps>
 
-  <p>The <gui>Hover Click</gui> window will open, and will stay above all of
-  your other windows. You can use this to choose what sort of click should
-  happen when you hover. For example, if you select <gui>Secondary Click</gui>,
-  you will right-click when you hover. After you double-click, right-click, or
-  drag, you will be automatically returned to clicking.</p>
+  <p>Otevře se okno <gui>Kliknutí posečkáním</gui> a zůstane nad všemi ostatními okny. Můžete jej použít k volbě typu kliknutí, které se má při posečkání provést. Například, když vyberete <gui>Druhé kliknutí</gui>, získáte kliknutí pravým tlačítkem. Po provedení dvojkliknutí, pravého kliknutí nebo táhnutí budete automaticky vráceni do režimu jednoduchého kliknutí levým tlačítkem.</p>
 
-  <p>When you hover your mouse pointer over a button and do not move it, it will
-  gradually change color. When it has fully changed color, the button will be
-  clicked.</p>
+  <p>Když přesunete ukazatel myši nad tlačítko a nebudete s ním hýbat, postupně začne měnit barvu. Až ji změní úplně, dojde ke kliknutí na tlačítko.</p>
 
-  <p>Adjust the <gui>Delay</gui> setting to change how long you have to hold
-  the mouse pointer still before clicking.</p>
+  <p>Úpravou hodnoty <gui>Zpoždění</gui> můžete měnit, jako dlouho je potřeba s ukazatelem čekat, než ke kliknutí dojde.</p>
 
-  <p>You do not need to hold the mouse perfectly still when hovering to click.
-  The pointer is allowed to move a little bit and will still click after a
-  while. If it moves too much, however, the click will not happen.</p>
+  <p>Při čekání na kliknutí nemusíte myš držet perfektně na jednom místě. Může docházet k drobnému pohybu a stále to bude považováno za čekání na kliknutí. Pokud ale ukazatelem pohnete moc, ke kliknutí nedojde.</p>
 
-  <p>Adjust the <gui>Motion threshold</gui> setting to change how much the
-  pointer can move and still be considered to be hovering.</p>
+  <p>Úpravou nastavení <gui>Práh pohybu</gui> se mění, jak moc je možné ukazatelem pohnout a přitom je to považováno za čekání na kliknutí.</p>
 
 </page>

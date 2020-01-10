@@ -3,13 +3,15 @@
 
   <info>
 
-    <link type="guide" xref="power#battery"/>
+    <link type="guide" xref="power#faq"/>
     <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.20" date="2016-06-15" status="final"/>
 
-    <desc>The battery life displayed when you click on the <gui>battery icon</gui> is an estimate.</desc>
+    <desc>Výdrž baterie zobrazená po kliknutí na <gui>ikonu baterie</gui> je jen odhad.</desc>
 
     <credit type="author">
-      <name>GNOME Documentation Project</name>
+      <name>Dokumentační projekt GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="author">
@@ -19,6 +21,10 @@
     <credit type="author">
       <name>Ekaterina Gerasimova</name>
       <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -32,39 +38,23 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Marek Černocký</mal:name>
       <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:years>2014, 2015</mal:years>
     </mal:credit>
   </info>
 
-<title>The estimated battery life is wrong</title>
+<title>Odhad výdrže baterie je nesprávný</title>
 
-<p>When you check the remaining battery life, you may find that the time
-remaining that it reports is different to how long the battery actually lasts.
-This is because the amount of remaining battery life can only be estimated.
-Normally, the estimates improve over time.</p>
+<p>Když si kontrolujete zbývající výdrže baterie, můžete narazit na to, že hlášený zbývající čas se bude lišit od toho, jak dlouho vydrží doopravdy. To je tím, že čas lze jen odhadovat. Odhad se s ubíhajícím časem zpřesňuje.</p>
 
-<p>In order to estimate the remaining battery life, a number of factors must be
-taken into account. One is the amount of power currently being used by the
-computer: power consumption varies depending on how many programs you have
-open, which devices are plugged in, and whether you are running any intensive
-tasks (like watching a DVD or converting music files, for example). This
-changes from moment to moment, and is difficult to predict.</p>
+<p>Při odhadování zbývají výdrže baterie je třeba brát v úvahu řadu faktorů. Jedním z nich je množství energie, kterou počítače právě odebírá. To závisí na tom, kolik programů je otevřeno, která zařízení jsou připojena a jestli máte spuštěné náročné úlohy (jako je například sledování videa ve vysokém rozlišení nebo převod hudebních souborů). Situace se ale každou chvíli mění a je složité ji odhadovat předem.</p>
 
-<p>Another factor is how the battery discharges. Some batteries lose charge
-faster the emptier they get. Without precise knowledge of how the battery
-discharges, only a rough estimate of remaining battery life can be made.</p>
+<p>Další faktorem je průběh vybíjení baterie. Některé baterie se vybíjejí tím rychleji, čím jsou prázdnější. Bez detailní znalosti, jak se baterie vybíjí, lze provést jen velmi hrubý odhad její zbývající výdrže.</p>
 
-<p>As the battery discharges, the power manager will figure out its discharge
-properties and will learn how to make better estimates of battery life. They
-will never be completely accurate, though.</p>
+<p>Postupně s tím, jak se baterie vybíjí, zjišťuje správce napájení její vybíjecí vlastnosti a učí se dělat přesnější odhad její výdrže. I tak ale nebude nikdy zcela přesný.</p>
 
 <note>
-  <p>If you get a completely ridiculous battery life estimate (say, hundreds of
-  days), the power manager is probably missing some of the data it needs to
-  make a sensible estimate.</p>
-  <p>If you unplug the power and run the laptop on battery for a while, then
-  plug it in and let it recharge again, the power manager should be able to get
-  the data it needs.</p>
+  <p>Pokud dostanete naprosto zcestný odhad výdrže baterie (třeba stovky dní), nejspíše schází správě napájení nějaké údaje, které potřebuje k rozumnému odhadu.</p>
+  <p>Pokud odpojíte napájení a necháte notebook chvíli běžet na baterii, pak jej znovu připojíte a necháte znovu dobít, měl by být správce napájení schopen potřebné údaje získat.</p>
 </note>
 
 </page>

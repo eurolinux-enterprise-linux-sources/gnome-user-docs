@@ -6,6 +6,7 @@
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -18,30 +19,42 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Συρραφή και αντιστροφή της σειράς εκτύπωσης.</desc>
+    <desc>Συρράψτε και αντιστρέψτε τη σειρά εκτύπωσης.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name> Δημήτρης Σπίγγος</mal:name>
-      <mal:email>dmtrs32@gmail.com</mal:email>
-      <mal:years>2012, 2013, 2014</mal:years>
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2016</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name> Φώτης Τσάμης</mal:name>
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
       <mal:email>ftsamis@gmail.com</mal:email>
       <mal:years>2009</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name> Μάριος Ζηντίλης</mal:name>
+      <mal:name>Μάριος Ζηντίλης</mal:name>
       <mal:email>m.zindilis@dmajor.org</mal:email>
       <mal:years>2009, 2010</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name> Θάνος Τρυφωνίδης</mal:name>
-      <mal:email>tomtryf@gmail.com</mal:email>
-      <mal:years>2012</mal:years>
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gnome.org</mal:email>
+      <mal:years>2012-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
     </mal:credit>
   </info>
 
@@ -52,14 +65,13 @@
 
     <p>Οι εκτυπωτές συνήθως τυπώνουν την πρώτη σελίδα πρώτα και την τελευταία σελίδα στο τέλος, έτσι οι σελίδες καταλήγουν με αντίστροφη σειρά όταν τις παίρνετε. Εάν χρειάζεται, μπορείτε να αντιστρέψετε αυτήν τη σειρά εκτύπωσης.</p>
 
-    <p>Για αντιστροφή της σειράς:</p>
-
     <steps>
+      <title>Για αντιστροφή της σειράς:</title>
       <item>
-        <p>Πατήστε <guiseq><gui>Αρχείο</gui><gui>Εκτύπωση</gui></guiseq>.</p>
+        <p>Για να ανοίξετε τον διάλογο «Εκτύπωση» πατήστε <keyseq><key>Ctrl</key><key>P</key></keyseq>.</p>
       </item>
       <item>
-        <p>Στην καρτέλα <gui>Γενικά</gui> του παραθύρου εκτύπωση κάτω από τα <em>Αντίγραφα</em>, επιλέξτε <gui>Αντίστροφη σειρά</gui>. Η τελευταία σελίδα θα εκτυπωθεί πρώτη και ούτω καθεξής.</p>
+        <p>Στην καρτέλα <gui>Γενικά</gui>, στο <gui>Αντίγραφα</gui>, επιλέξτε <gui>Αντίστροφη σειρά</gui>. Η τελευταία σελίδα θα εκτυπωθεί πρώτη και ούτω καθεξής.</p>
       </item>
     </steps>
 
@@ -68,23 +80,18 @@
   <section id="collate">
     <title>Συρραφή</title>
 
-  <p>If you are printing more than one copy of the document, the print-outs
-  will be grouped by page number by default (that is, all of the copies of page
-  one come out, then the copies of page two, and so on). <em>Collating</em>
-  will make each copy come out with its pages grouped together in the right
-  order instead.</p>
-
-  <p>Για συρραφή:</p>
+  <p>Αν εκτυπώνετε πάνω από ένα αντίγραφο του εγγράφου, τα αντίτυπα από προεπιλογή θα ομαδοποιηθούν κατά αριθμό σελίδας (δηλαδή, όλα τα αντίτυπα της πρώτης σελίδας θα βγαίνουν πρώτα, μετά τα αντίτυπα της δεύτερης σελίδας, κ.ο.κ). Η <em>συρραφή</em> θα κάνει κάθε αντίτυπο να βγαίνει με τις σελίδες του ομαδοποιημένες στη σωστή σειρά.</p>
 
   <steps>
+    <title>Για συρραφή:</title>
     <item>
-      <p>Πατήστε <guiseq><gui>Αρχείο</gui><gui>Εκτύπωση</gui></guiseq>.</p>
+     <p>Για να ανοίξετε τον διάλογο «Εκτύπωση» πατήστε <keyseq><key>Ctrl</key><key>P</key></keyseq>.</p>
     </item>
     <item>
-      <p>Στην καρτέλα <gui>Γενικά</gui> του παραθύρου εκτύπωση κάτω από τα <em>Αντίγραφα</em> επιλέξτε <gui>Συρραφή</gui>.</p>
+      <p>Στην καρτέλα <gui>Γενικά</gui> , στα <em>Αντίγραφα</em>, επιλέξτε <gui>Συρραφή</gui>.</p>
     </item>
   </steps>
- <!-- Need to add this image <media type="image" src="figures/reverse-collate.png"/> -->
+
 </section>
 
 </page>

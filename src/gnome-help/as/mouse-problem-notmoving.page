@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="mouse-problem-notmoving" xml:lang="as">
-<info>
+
+  <info>
     <link type="guide" xref="mouse#problems"/>
 
-    <desc>আপোনাৰ মাউছ কাম কৰিছে নে নাই কেনেকৈ নিৰীক্ষণ কৰিব।</desc>
-
-    <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
+    <revision pkgversion="3.8" date="2013-03-13" status="candidate"/>
+    <!-- TODO: reorganise page and tidy because it's one ugly wall of text -->
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
         <name>ফিল বুল</name>
@@ -15,8 +16,11 @@
       <name>শ্বণ মেকেন্স</name>
       <email>shaunm@gnome.org</email>
     </credit>
+
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-</info>
+
+    <desc>How to check why your mouse is not working.</desc>
+  </info>
 
 <title>মাউছ পোইন্টাৰ গতি কৰা নাই</title>
 
@@ -34,31 +38,6 @@
  </p>
 </section>
 
-<section id="connected">
- <title>মাউছটো আপোনাৰ কমপিউটাৰ দ্বাৰা চিনাক্ত কৰা হৈছে নে পৰিক্ষা কৰি চাওক।</title>
- <steps>
-  <item><p><gui>কাৰ্য্যসমূহ</gui> অভাৰভিউৰ পৰা <app>টাৰ্মিনেল</app> এপ্লিকেচন খোলক।</p></item>
-  <item>
-   <p>টাৰ্মিনেল উইন্ডোত, ইয়াত উপস্থিত হোৱা ধৰণে <cmd>xsetpointer -l | grep Pointer</cmd> টাইপ কৰক, আৰু <key>Enter</key> টিপক।</p>
-  </item>
-  <item>
-   <p>মাউচ ডিভাইচসমূহৰ এটা সৰু তালিকা উপস্থিত হব। চাওক যে অন্তত এটা বস্তু তাৰ কাষত <sys>[XExtensionPointer]</sys> কয়, আৰু এটা <sys>[XExtensionPointer]</sys> বস্তুৰ বাওঁফালে মাউছৰ নাম আছে।</p>
-  </item>
-  <item>
-   <p>If there is no entry that has the name of the mouse followed by
-   <sys>[XExtensionPointer]</sys>, then the mouse was not recognized by your
-   computer. If the entry exists, your mouse was recognized by your computer.
-   In this case you should check that the mouse is
-   <link xref="mouse-problem-notmoving#plugged-in">plugged in</link> and in
-   <link xref="mouse-problem-notmoving#broken">working condition</link>.</p>
-  </item>
- </steps>
-
- <p>যদি আপোনাৰ মাউছৰ এটা ক্ৰমিক (RS-232) সংযুক্তক আছে, ইয়াক কাৰ্য্যকৰী কৰাবলৈ আপুনি কিছুমান অতিৰিক্ত স্তৰ পৰিৱেশন কৰিব লাগিব। স্তৰসমূহ আপোনাৰ মাউছৰ নিৰ্মাণ অথবা আৰ্হিৰ ওপৰত নিৰ্ভৰ কৰিব পাৰে।</p>
-
- <p>মাউছ চিনাক্তকৰণৰ সৈতে সমস্যাবোৰ ঠিক কৰাটো জটিল হব পাৰে। যদি আপুনি উপলব্ধ কৰিছে যে আপোনাৰ মাউছ সঠিকভাৱে চিনাক্ত কৰা হোৱা নাই আপোনাৰ বিতৰণ অথবা বিক্ৰেতাৰ পৰা সমৰ্থন বিচাৰক।</p>
-</section>
-
 <section id="broken">
  <title>মাউছ সঁচাকৈ কাৰ্য্য কৰে নে পৰিক্ষা কৰক</title>
  <p>মাউছক এটা ভিন্ন কমপিউটাৰত প্লাগ কৰক আৰু চাওক সঁচাকৈ ই কাৰ্য্য কৰে নে।</p>
@@ -72,8 +51,12 @@
 <section id="wireless-mice">
  <title>বেতাঁৰ মাউছসমূহ পৰিক্ষা কৰা</title>
 
- <list>
-   <item><p>মাউছ অন থকাটো সুনিশ্চিত কৰক। সাধাৰণৰ মাউছৰ তলত মাউছক সম্পূৰ্ণ বন্ধ কৰিবলৈ এটা চুইচ থাকে, ই সকলো সময় অন নথাকৈ আপুনি ইয়াক এঠাইৰ পৰা আন ঠাইলৈ লৰাব পাৰিব।</p></item>
+  <list>
+    <item>
+      <p>Make sure the mouse is turned on. There is often a switch on the
+      bottom of the mouse to turn the mouse off completely, so you can take it
+      with you without it constantly waking up.</p>
+    </item>
    <item><p>যদি আপুনি এটা ব্লুটুথ মাউছ ব্যৱহাৰ কৰি আছে, আপুনি সেই মাউছক আপোনাৰ কমপিউটাৰৰ সৈতে যোৰ কৰাটো সুনিশ্চিত কৰক। <link xref="bluetooth-connect-device"/> চাওক।</p></item>
   <item>
    <p>এটা বুটাম ক্লিক কৰক আৰু মাউচ এতিয়া লৰিছে নে চাওক। কিছুমান বেতাঁৰ মাউছে শক্তি সংৰক্ষণ কৰিবলৈ, নিদ্ৰাত যায়, সেয়েহে আপুনি এটা বুটাম ক্লিক নকৰালৈকে প্ৰতিক্ৰিয়া নকৰিব। <link xref="mouse-wakeup"/> চাওক।</p>

@@ -11,15 +11,15 @@
 
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -65,7 +65,7 @@
 
 <if:choose>
   <if:when test="!platform:gnome-classic">
-    <media type="image" src="figures/shell-activities.png" width="123" height="82" style="floatend floatright" if:test="!target:mobile">
+    <media type="image" src="figures/shell-activities.png" style="floatend floatright" if:test="!target:mobile">
       <p>Botón de Actividades</p>
     </media>
   </if:when>
@@ -81,11 +81,17 @@
   the top-left hot corner. You can also press the
   <key xref="keyboard-key-super">Super</key> key on your keyboard. You can
   see your windows and applications in the overview. You can also just start
-  typing to search your applications, files, folders and the web.</p>
+  typing to search your applications, files, folders, and the web.</p>
 
-  <p if:test="platform:gnome-classic">Para acceder ás súas xanelas e aplicativos prema o botón <gui>Actividades</gui> ou simplemente mova o punteiro do rato á esquina superior esquerda. Vostede tamén pode premer a tecla <key xref="keyboard-key-super">Super</key> no seu teclado. Pode ver as súas xanelas e aplicativos na vista de <gui>Actividades</gui>. Tamén pode comezar a escribir para buscar os seus aplicativos, ficheiros e cartafoles.</p>
+  <p if:test="platform:gnome-classic">To access your windows and applications,
+  click the <gui xref="shell-introduction#activities">Applications</gui> menu
+  at the top left of the screen and select the <gui>Activities Overview</gui>
+  item. You can also press the <key xref="keyboard-key-super">Super</key> key
+  to see your windows and applications in the <gui>Activities</gui> overview. 
+  Just start typing to search your applications, files, and folders.</p>
 
-  <media type="image" src="figures/shell-dash.png" width="49" height="300" style="floatstart floatleft" if:test="!target:mobile">
+  <!-- TODO: retake without the flashy bit -->
+  <media type="image" src="figures/shell-dash.png" height="300" style="floatstart floatleft" if:test="!target:mobile">
     <p>O dash</p>
   </media>
 
@@ -145,7 +151,7 @@
 <if:choose>
   <if:when test="!platform:gnome-classic">
     <media type="image" src="figures/shell-appts.png" width="250" style="floatend floatright" if:test="!target:mobile">
-      <p>Reloxo, calendario e apuntamentos</p>
+      <p>Clock, calendar, appointments and notifications</p>
     </media>
   </if:when>
   <if:when test="platform:gnome-classic">
@@ -155,15 +161,24 @@
   </if:when>
 </if:choose>
 
-  <p>Prema no reloxo da barra superior para ver a xanela actual, un calendario mensual e unha lista das súas próximas citas. Tamén pode acceder á configuración de data e hora e abrir totalmente o seu calendario de <app>Evolution</app> directamente desde o menú.</p>
+  <p>Click the clock on the top bar to see the current date, a month-by-month
+  calendar, a list of your upcoming appointments and new notifications. You can
+  also open the calendar by pressing
+  <keyseq><key>Super</key><key>M</key></keyseq>. You can access the date and
+  time settings and open your full <app>Evolution</app> calendar directly from
+  the menu.</p>
 
   <list style="compact">
     <item>
       <p><link xref="clock-calendar">Aprender máis sobre o calendario e apuntamentos</link></p>
     </item>
+    <item>
+      <p><link xref="shell-notifications">Aprender máis sobre a bandexa de mensaxes.</link>.</p>
+    </item>
   </list>
 
 </section>
+
 
 <section id="yourname">
   <title>Vostede e o seu computador</title>
@@ -235,23 +250,6 @@ messages will be presented, such as when your battery is critically low.</p>
 
 </section>
 
-<section id="message-tray">
-  <title>Bandexa de mensaxes</title>
-
-  <media its:translate="no" type="image" src="figures/shell-message-tray.png" width="600">
-    <p its:translate="yes">Bandexa de mensaxes</p>
-  </media>
-
-  <p>A bandexa de mensaxes pode mostrarse movendo o rato á parte inferior da pantalla ou premendo <keyseq><key>Super</key><key>M</key></keyseq>. Aquí é onde se almacenan as notificacións até que estea listo para velas.</p>
-
-  <list style="compact">
-    <item>
-      <p><link xref="shell-notifications">Aprender máis sobre a bandexa de mensaxes.</link>.</p>
-    </item>
-  </list>
-
-</section>
-
 <section id="window-list">
   <title>Lista de xanelas</title>
 
@@ -270,7 +268,11 @@ messages will be presented, such as when your battery is critically low.</p>
       <p>Lista de xanelas</p>
     </media>
     <p>A lista de xanelas na parte inferior da pantalla fornece acceso a todas as xanelas e aplicativos abertos e permítelle minimizar e restauralos de forma rápida.</p>
-    <p>Na parte dereita da lista de xanelas, GNOME mostra un identificador curto para o espazo de traballo actual, como un <gui>1</gui> para o primeiro (superior) espazo de traballo. Ademais, o identificador tamén mostra o número total de espazos de traballo. Para cambiar a un espazo de traballo diferente, prema no identificador e seleccione o espazo de traballo que quere usar desde o menú.</p>
+    <p>At the right-hand side of the window list, GNOME displays a short
+    identifier for the current workspace, such as <gui>1</gui> for the first
+    (top) workspace. In addition, the identifier also displays the total number
+    of available workspaces. To switch to a different workspace, you can click
+    the identifier and select the workspace you want to use from the menu.</p>
     <p>Se un aplicativo ou un compoñente do sistema desexa obter a súa atención mostrarase unha notificación azul na parte dereita da lista de xanelas. Ao premer na icona azul móstrase a bandexa de mensaxes.</p>
   </if:when>
 </if:choose>

@@ -24,7 +24,6 @@ HELP_MEDIA = \
 	figures/bluetooth-active-symbolic.svg \
 	figures/bluetooth-disabled-symbolic.svg \
 	figures/bluetooth-menu.png \
-	figures/camera-photo-symbolic.svg \
 	figures/color-average.png \
 	figures/color-camera.png \
 	figures/color-display.png \
@@ -40,7 +39,6 @@ HELP_MEDIA = \
 	figures/input-keyboard-symbolic.png \
 	figures/input-methods-switcher.png \
 	figures/keyboard-key-menu.svg \
-	figures/nautilus-3-10.png \
 	figures/nautilus-icons.png \
 	figures/network-cellular-3g-symbolic.svg \
 	figures/network-cellular-4g-symbolic.svg \
@@ -78,22 +76,16 @@ HELP_MEDIA = \
 	figures/shell-dash.png \
 	figures/shell-exit-classic.png \
 	figures/shell-exit.png \
-	figures/shell-files.png \
-	figures/shell-introduction.png \
 	figures/shell-lock.png \
-	figures/shell-message-tray.png \
-	figures/shell-keyboard-shortcuts.png \
 	figures/shell-notification.png \
 	figures/shell-top-bar-classic.png \
 	figures/shell-top-bar.png \
 	figures/shell-window-list-classic.png \
-	figures/shell-windows.png \
 	figures/shell-workspaces.png \
 	figures/shell.png \
 	figures/top-bar-icons-classic.png \
 	figures/top-bar-icons.png \
 	figures/universal-access-menu.png \
-	figures/view-fullscreen-16.png \
 	figures/network-wireless-acquiring-symbolic.svg \
 	figures/network-wireless-connected-symbolic.svg \
 	figures/network-wireless-encrypted-symbolic.svg \
@@ -124,7 +116,6 @@ HELP_FILES = \
 	a11y-visualalert.page \
 	about-this-guide.page \
 	accounts-add.page \
-	accounts-create.page \
 	accounts-disable-service.page \
 	accounts-provider-not-available.page \
 	accounts-remove.page \
@@ -150,6 +141,7 @@ HELP_FILES = \
 	clock-calendar.page \
 	clock-set.page \
 	clock-timezone.page \
+	clock-world.page \
 	clock.page \
 	color-assignprofiles.page \
 	color-calibrate-camera.page \
@@ -183,6 +175,8 @@ HELP_FILES = \
 	disk-format.page \
 	disk-partitions.page \
 	disk.page \
+	display-blank.page \
+	display-brightness.page \
 	display-dual-monitors.page \
 	files-autorun.page \
 	files-browse.page \
@@ -205,6 +199,7 @@ HELP_FILES = \
 	files.page \
 	get-involved.page \
 	gnome-classic.page \
+	gnome-version.page \
 	hardware-auth.page \
 	hardware-cardreader.page \
 	hardware-driver.page \
@@ -227,7 +222,6 @@ HELP_FILES = \
 	look-resolution.page \
 	media.page \
 	more-help.page \
-	mouse-disabletouchpad.page \
 	mouse-doubleclick.page \
 	mouse-lefthanded.page \
 	mouse-middleclick.page \
@@ -262,7 +256,6 @@ HELP_FILES = \
 	net-fixed-ip-address.page \
 	net-general.page \
 	net-install-flash.page \
-	net-install-moonlight.page \
 	net-macaddress.page \
 	net-manual.page \
 	net-mobile.page \
@@ -292,6 +285,8 @@ HELP_FILES = \
 	net-wireless-wepwpa.page \
 	net-wireless.page \
 	net.page \
+	power-autobrightness.page \
+	power-autosuspend.page \
 	power-batteryestimate.page \
 	power-batterylife.page \
 	power-batteryoptimal.page \
@@ -299,15 +294,16 @@ HELP_FILES = \
 	power-batterywindows.page \
 	power-closelid.page \
 	power-constantfan.page \
-	power-hibernate.page \
 	power-hotcomputer.page \
 	power-lowpower.page \
 	power-nowireless.page \
 	power-othercountry.page \
+	power-status.page \
 	power-suspendfail.page \
 	power-suspend.page \
 	power-whydim.page \
 	power-willnotturnon.page \
+	power-wireless.page \
 	power.page \
 	prefs-display.page \
 	prefs-language.page \
@@ -354,7 +350,6 @@ HELP_FILES = \
 	shell-lockscreen.page \
 	shell-notifications.page \
 	shell-overview.page \
-	shell-terminology.page \
 	shell-windows-lost.page \
 	shell-windows-maximize.page \
 	shell-windows-states.page \
@@ -393,4 +388,4 @@ HELP_FILES = \
 	wacom-stylus.page \
 	wacom.page
 
-HELP_LINGUAS = as ca cs de el fi fr es gl gu hi hu id it ja kn lv mr nl pa pt_BR ru sl sr sr@latin sv te vi ta zh_CN
+HELP_LINGUAS = as ca cs de el fi fr es gl gu he hi hu id it ja kn lv mr nl pa pt_BR ru sl sr sr@latin sv te vi ta zh_CN

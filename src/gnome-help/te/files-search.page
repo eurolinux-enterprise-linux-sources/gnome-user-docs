@@ -2,10 +2,11 @@
 <page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="files-search" xml:lang="te">
 
   <info>
-    <link type="guide" xref="files"/>
+    <link type="guide" xref="files#common-file-tasks"/>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-25" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>గ్నోమ్ పత్రీకరణ పరియోజన</name>
@@ -19,10 +20,14 @@
       <name>మైకేల్ హిల్</name>
       <email>mdhillca@gmail.com</email>
     </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>దస్త్రము పేరు మరియు రకము ప్రకారము దస్త్రాలను కనుగొను. మీ వెతుకులాటలను తరువాత వాడుకొనుటకు భద్రపరుచు.</desc>
+    <desc>Locate files based on file name and type.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Praveen Illa</mal:name>
@@ -39,7 +44,8 @@
 
   <title>దస్త్రాల కోసం వెతకండి</title>
 
-  <p>మీరు ఫైల్ నిర్వాహిక నందు పేరు మరియు ఫైల్ రకం అనుసరించి ఫైళ్ళ కొరకు వెతకవచ్చు. మీరు ఉమ్మడి అన్వేషణలను దాయవచ్చు, అలా అవి మీ నివాస సంచయం నందు ప్రత్యేక సంచయాలుగా కనిపించును.</p>
+  <p>You can search for files based on their name or file type directly
+  within the file manager.</p>
 
   <links type="topic" style="linklist">
     <title>ఇతర వెతుకులాట అనువర్తనాలు</title>
@@ -51,7 +57,7 @@
     <title>వెతుకు</title>
     <item>
       <p>Open the <app>Files</app> application from the
-      <gui xref="shell-terminology">Activities</gui> overview.</p>
+      <gui xref="shell-introduction#activities">Activities</gui> overview.</p>
     </item>
     <item>
       <p>మీకు కావలసిన ఫైళ్ళు ఫలానా సంచయం కిందన వున్నాయని మీకు తెలిస్తే, ఆ సంచయంకు వెళ్ళండి.</p>
@@ -93,24 +99,5 @@
       return to the folder.</p>
     </item>
   </steps>
-
-  <p>If you perform certain searches often, you can save them to access them
-  quickly.</p>
-
-  <steps>
-    <title>Save a search</title>
-    <item><p>Start a search as above.</p></item>
-    <item><p>When you are happy with the search parameters, click the menu
-    button and select <gui>Save Search As</gui>.</p></item>
-    <item><p>Give the search a name and click <gui>Save</gui>. If you like,
-    select a different folder to save the search in. When you view that folder,
-    you will see your saved search as an orange folder icon with a magnifying
-    glass on it.</p></item>
-  </steps>
-
-  <p>To remove the search file when you are done with it, simply
-  <link xref="files-delete">delete</link> the search as you would any other
-  file. When you delete a saved search, it does not delete the files that the
-  search matched.</p>
 
 </page>

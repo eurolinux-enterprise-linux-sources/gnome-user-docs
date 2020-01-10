@@ -20,6 +20,10 @@ HELP_FILES = \
 	keyboard-layout.page \
 	legal.xml \
 	lockdown-command-line.page \
+	lockdown-file-saving.page \
+	lockdown-online-accounts.page \
+	lockdown-printing.page \
+	lockdown-repartitioning.page \
 	login.page \
 	login-automatic.page \
 	login-banner.page \

@@ -11,11 +11,11 @@
 
     <credit type="author">
       <name>Проект документирования GNOME</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Майкл Хилл (Michael Hill)</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -31,7 +31,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011, 2012</mal:years>
+      <mal:years>2011-2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -45,6 +45,12 @@
       <mal:email>juliette.tux@gmail.com</mal:email>
       <mal:years>2013-2014</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
   <title>Перемещение окна на другое рабочее место</title>
@@ -53,14 +59,18 @@
     <title>С помощью мыши:</title>
     <item>
       <p if:test="!platform:gnome-classic">Open the
-      <gui xref="shell-terminology">Activities</gui> overview.</p>
-      <p if:test="platform:gnome-classic">Откройте пункт <gui xref="shell-terminology">Обзор</gui> из <link xref="shell-terminology">меню <gui style="menu">Приложения</gui></link> в левой верхней части экрана.</p>
+      <gui xref="shell-introduction#activities">Activities</gui> overview.</p>
+      <p if:test="platform:gnome-classic">Open the
+      <gui xref="shell-introduction#activities">Activities Overview</gui> from the
+      <gui xref="shell-introduction#activities">Applications</gui> menu
+      at the top left of the screen.</p>
     </item>
     <item>
       <p>Нажмите на окно и тащите его к правой стороне экрана.</p>
     </item>
     <item>
-      <p>Появится <em xref="shell-terminology">переключатель рабочих мест</em>.</p>
+      <p>The <em xref="shell-workspaces">workspace selector</em> will
+      appear.</p>
     </item>
     <item>
       <p if:test="!platform:gnome-classic">Перетащите окно на пустое рабочее место. Теперь на этом рабочем месте будет размещаться окно, которое вы перетащили, а внизу <em>переключателя рабочих мест</em> появится новое пустое рабочее место.</p>
@@ -71,7 +81,9 @@
   <steps>
     <title>С помощью клавиатуры:</title>
     <item>
-      <p>Выберите окно, которое нужно переместить (например, с помощью <em xref="shell-terminology">переключателя окон</em> <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq>).</p>
+      <p>Select the window that you want to move (for example, using the
+      <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq>
+      <em xref="shell-windows-switching">window switcher</em>).</p>
     </item>
     <item>
       <p>Нажмите <keyseq><key>Super</key><key>Shift</key><key>Page Up</key></keyseq> для перехода на рабочее место выше текущего в <em>переключателе рабочих мест</em>.</p>

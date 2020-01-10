@@ -2,10 +2,11 @@
 <page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="files-search" xml:lang="zh-CN">
 
   <info>
-    <link type="guide" xref="files"/>
+    <link type="guide" xref="files#common-file-tasks"/>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-25" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>GNOME 文档项目</name>
@@ -19,10 +20,14 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>定位文件基于文件名和类型。保存搜索结果以便将来使用。</desc>
+    <desc>Locate files based on file name and type.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>TeliuTe</mal:name>
@@ -33,7 +38,8 @@
 
   <title>搜索文件</title>
 
-  <p>您可以在文件管理器中，根据文件名和类型直接查找文件。您甚至可以保存搜索结果，它们会像一个普通文件夹一样出现在您主文件夹中。</p>
+  <p>You can search for files based on their name or file type directly
+  within the file manager.</p>
 
   <links type="topic" style="linklist">
     <title>其他搜索程序</title>
@@ -45,7 +51,7 @@
     <title>搜索</title>
     <item>
       <p>Open the <app>Files</app> application from the
-      <gui xref="shell-terminology">Activities</gui> overview.</p>
+      <gui xref="shell-introduction#activities">Activities</gui> overview.</p>
     </item>
     <item>
       <p>如果您知道要找的文件存放位置，可以直接转到那个文件夹。</p>
@@ -82,17 +88,5 @@
       <p>再次点击工具栏上的放大镜按钮退出搜索返回文件夹。</p>
     </item>
   </steps>
-
-  <p>如果您要经常访问搜索结果，可以保存下来以便将来快速访问。</p>
-
-  <steps>
-    <title>保存搜索结果</title>
-    <item><p>像上述那样进行一次搜索。</p></item>
-    <item><p>When you are happy with the search parameters, click the menu
-    button and select <gui>Save Search As</gui>.</p></item>
-    <item><p>输入一个文件名，然后点<gui>保存</gui>。如果您愿意，还可以保存到其他文件夹中。当您查看那个文件夹时，会发现保存的搜索结果是文件夹的图标，上面有一个放大镜。</p></item>
-  </steps>
-
-  <p>当您用完保存的搜索文件，想删除它，只需简单地像操作其他文件一样<link xref="files-delete">删除</link>即可。保存的搜索文件更像一个文件而不是文件夹，它里面并不包含实际的文件项目，删除搜索文件并不会删除那些文件。</p>
 
 </page>

@@ -8,33 +8,33 @@
     <revision pkgversion="3.8.0" date="2013-03-13" status="candidate"/>
     <revision pkgversion="3.9.92" date="2013-09-18" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-20" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="author">
       <name>Phil Bull</name>
-      <email its:translate="no">philbull@gmail.com</email>
+      <email>philbull@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
-    <desc>The <gui>Hover Click</gui> (Dwell Click) feature allows you to click
-    by holding the mouse still.</desc>
+    <desc><gui>ホバークリック</gui> (自動クリック) の機能を使い、マウスを静止させることによりクリック動作を行う。</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -76,18 +76,13 @@
 
   <title>ホバーリングでクリックを代替する</title>
 
-  <p>You can click or drag simply by hovering your mouse pointer over a control
-  or object on the screen. This is useful if you find it difficult to move the
-  mouse and click at the same time. This feature is called <gui>Hover
-  Click</gui> or Dwell Click.</p>
+  <p>画面上のコントロールや対象物の上にマウスポインターをホバーリングすることで、簡単にクリックやドラッグ操作ができます。マウスを動かしつつ同時にクリックすることが困難であれば、これは役立ちます。この機能は、<gui>ホバークリック</gui>あるいは自動クリックと呼ばれています。</p>
 
-  <p>When <gui>Hover Click</gui> is enabled, you can move your mouse pointer
-  over a control, let go of the mouse, and then wait for a while before the
-  button will be clicked for you.</p>
+  <p><gui>ホバークリック</gui>を有効にすれば、対象物の上にマウスポインターを移動させ、マウスから手を離してしばらく待つことで、ボタンをクリックすることができます。</p>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-terminology">Activities</gui> overview and
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
       start typing <gui>Universal Access</gui>.</p>
     </item>
     <item>
@@ -104,15 +99,11 @@
 
   <p><gui>ホバークリック</gui>のウィンドウが開き、他のウィンドウよりも前面に配置されます。これは、ホバーリングしたときにどの種別のクリックを実行するかを選ぶのに使用します。たとえば<gui>副ボタンのクリック</gui>を選ぶと、ホバーリングで右クリック動作が行われます。ダブルクリック、右クリック、またはドラッグを実行したあとは、自動的にただのクリック動作に戻ります。</p>
 
-  <p>When you hover your mouse pointer over a button and do not move it, it will
-  gradually change color. When it has fully changed color, the button will be
-  clicked.</p>
+  <p>マウスポインターをボタンの上にホバーリングしてそのまま動かさずにいると、ポインターの色が徐々に変わっていきます。ポインター全体の色が変わったタイミングで、ボタンがクリックされます。</p>
 
   <p><gui>認識するまでの間隔</gui>を調節して、クリックするのに必要となるマウスポインターの静止時間を設定してください。</p>
 
-  <p>You do not need to hold the mouse perfectly still when hovering to click.
-  The pointer is allowed to move a little bit and will still click after a
-  while. If it moves too much, however, the click will not happen.</p>
+  <p>ホバークリックをするためにマウスを完璧に静止させる必要はありません。ポインターは少しなら動いてもかまわず、しばらくすればクリックされます。しかし、大きく動きすぎた場合はクリックされません。</p>
 
   <p><gui>ジェスチャーのしきい値</gui>を調節して、ホバーリングと認識されるのに動かしてもよい程度を設定してください。</p>
 

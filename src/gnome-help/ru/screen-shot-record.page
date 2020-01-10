@@ -6,6 +6,7 @@
 
     <revision pkgversion="3.6.1" date="2012-11-10" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.14.0" date="2015-01-14" status="review"/>
 
     <credit type="author copyright">
       <name>Tiffany Antopolski</name>
@@ -21,11 +22,15 @@
       <name>Майкл Хилл (Michael Hill)</name>
       <email>mdhillca@gmail.com</email>
     </credit>
+    <credit type="editor">
+      <name>Дэвид Кинг (David King)</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2015</years>
+    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Take a picture or record a video of what is happening on your
-    screen.</desc>
+    <desc>Создание снимка экрана или съёмка видео с экрана.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Александр Прокудин</mal:name>
@@ -36,7 +41,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011, 2012</mal:years>
+      <mal:years>2011-2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -50,15 +55,17 @@
       <mal:email>juliette.tux@gmail.com</mal:email>
       <mal:years>2013-2014</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
 <title>Снимки экрана и скринкасты</title>
 
-  <p>You can take a picture of your screen (a <em>screenshot</em>) or record a
-  video of what is happening on the screen (a <em>screencast</em>). This is
-  useful if you want to show someone how to do something on the computer, for
-  example. Screenshots and screencasts are just normal picture and video files,
-  so you can email them and share them on the web.</p>
+  <p>Вы можете сделать снимок изображения свого экрана (<em>скриншот</em>) или снять видео с тем, что происходит на экране (<em>скринкаст</em>). Это полезно, когда, например, нужно кому-нибудь показать, как выполнить какое-то действие на компьютере. Скриншоты и скринкасты — это обычные файлы, которые содержат соответственно изображения или видео, их, как и обычные файлы, можно отправлять по электронной почте или выложить в общий доступ в Интернете.</p>
 
 <section id="screenshot">
   <title>Сделать снимок экрана</title>
@@ -66,17 +73,14 @@
   <steps>
     <item>
       <p>Open <app>Screenshot</app> from the
-      <gui xref="shell-terminology">Activities</gui> overview.</p>
+      <gui xref="shell-introduction#activities">Activities</gui> overview.</p>
     </item>
     <item>
-      <p>In the <app>Screenshot</app> window, select whether to grab the whole
-      screen, the current window, or an area of the screen. Set a delay if you
-      need to select a window or otherwise set up your desktop for the
-      screenshot. Then choose any effects you want.</p>
+      <p>В окне приложения <app>Снимок экрана</app> выберите, какой именно снимок нужно сделать: всего рабочего стола, текущего окна или области экрана. Установите задержку, если для снимка необходимо дополнительное время, чтобы выбрать окно или выполнить какие-либо подготовительные действия. Затем выберите любой эффект по своему желанию.</p>
     </item>
     <item>
        <p>Нажмите кнопку <gui>Сделать снимок экрана</gui>.</p>
-       <p>Если выбрано <gui>Выбрать область захвата</gui>, указатель превратится в крестик. Нажмите и тащите, чтобы обозначить рамкой область экрана, снимок которой нужно сделать.</p>
+       <p>Если выбрано <gui>Выбрать область захвата</gui>, указатель превратится в крестик. Нажмите и перетащите крестик, чтобы выделить рамкой область экрана, снимок которой нужно сделать.</p>
     </item>
     <item>
       <p>В окне <gui>Сохранить снимок экрана</gui> введите имя файла и выберите папку, затем нажмите <gui>Сохранить</gui>.</p>
@@ -84,7 +88,7 @@
     </item>
   </steps>
 
-  <note style="tip">
+  <section id="keyboard-shortcuts">
     <title>Комбинации клавиш</title>
 
     <p>Чтобы быстро сделать снимок рабочего стола, окна или области на экране, используйте эти глобальные комбинации клавиш:</p>
@@ -101,12 +105,12 @@
       </item>
     </list>
 
-    <p>When you use a keyboard shortcut, the image is automatically saved in
-    your <file>Pictures</file> folder in your home folder with a file name that
-    begins with <file>Screenshot</file> and includes the date and time it was
-    taken.</p>
+    <p>При использовании комбинаций клавиш изображение автоматически будет сохранено в папку «Изображения», имя файла с изображением начинается со слов «Снимок экрана от» и содержит дату и время снимка.</p>
+    <note style="note">
+      <p>Если папка <file>Изображения</file> не существует, изображения будут сохраняться в домашний каталог.</p>
+    </note>
     <p>Можно также удерживать нажатой <key>Ctrl</key> при использовании одной из описанных выше комбинаций клавиш, чтобы вместо сохранения снимка экрана скопировать его в буфер обмена.</p>
-  </note>
+  </section>
 
 </section>
 
@@ -117,23 +121,21 @@
 
   <steps>
     <item>
-      <p>Press
-      <keyseq><key>Ctrl</key><key>Alt</key><key>Shift</key><key>R</key></keyseq>
-      to start recording what is on your screen.</p>
-      <p>A red circle is displayed in the bottom right corner of the screen
+      <p>Чтобы начать запись видео с экрана, нажмите <keyseq><key>Ctrl</key><key>Alt</key><key>Shift</key><key>R</key></keyseq>.</p>
+      <p>A red circle is displayed in the top right corner of the screen
       when the recording is in progress.</p>
     </item>
     <item>
-      <p>Once you have finished, press
-      <keyseq><key>Ctrl</key><key>Alt</key><key>Shift</key><key>R</key></keyseq>
-      again to stop the recording.</p>
+      <p>Чтобы остановить запись, ещё раз нажмите <keyseq><key>Ctrl</key><key>Alt</key><key>Shift</key><key>R</key></keyseq>.</p>
     </item>
     <item>
-      <p>The video is automatically saved in your <file>Videos</file> folder
-      in your home folder, with a file name that starts with
-      <file>Screencast</file> and includes the date and time it was taken.</p>
+      <p>Записанные видеофайлы автоматически сохраняются в папку <file>Видео</file>, имя файла начинается со слова <file>Скринкаст</file> и содержит дату и время записи.</p>
     </item>
   </steps>
+
+  <note style="note">
+    <p>Если папка <file>Видео</file> не существует, видео будут сохраняться в домашний каталог.</p>
+  </note>
 
 </section>
 

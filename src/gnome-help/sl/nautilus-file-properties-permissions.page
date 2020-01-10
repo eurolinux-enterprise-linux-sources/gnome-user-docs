@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-file-properties-permissions" xml:lang="sl">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itst="http://itstool.org/extensions/" type="topic" style="task" id="nautilus-file-properties-permissions" xml:lang="sl">
 
   <info>
+    <its:rules xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
     <link type="guide" xref="files#faq"/>
     <link type="seealso" xref="nautilus-file-properties-basic"/>
 
@@ -22,7 +24,6 @@
       <email>mdhillca@gmail.com</email>
     </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
   </info>
   <title>Nastavitev dovoljenja datotek</title>
 
@@ -48,7 +49,7 @@
     <p>Dovoljenja, ki jih nastavite za mapo, so drugačna od dovoljenj za datoteko.</p>
     <terms>
       <item>
-        <title><gui>Brez</gui></title>
+        <title><gui itst:context="permission">None</gui></title>
         <p>Uporabnik ne bo mogel niti videti katere datoteke so v mapi.</p>
       </item>
       <item>

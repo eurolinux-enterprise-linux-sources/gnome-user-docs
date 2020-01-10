@@ -8,10 +8,11 @@
     <revision pkgversion="3.10" version="0.1" date="2013-09-23" status="review"/>
     <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
     <revision pkgversion="3.14" date="2014-10-13" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
 
     <credit type="author">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -33,7 +34,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2014</mal:years>
+      <mal:years>2011-2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -65,14 +66,17 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
   <title>Partage de vos fichiers personnels</title>
 
-  <p>You can allow access to the <file>Public</file> folder in your
-  <file>Home</file> folder from another computer on the network. Configure
-  <gui>Personal File Sharing</gui> to allow others to access the contents of
-  the folder.</p>
+  <p>Vous pouvez permettre qu'un autre ordinateur du réseau puisse accéder à votre dossier <file>Public</file> dans le répertoire <file>Dossier personnel</file>. Configurer <gui>Partage de fichiers personnels</gui> pour autoriser d'autres personnes à accéder au contenu de ce dossier.</p>
 
   <note style="info package">
     <p>Le paquet <app>gnome-user-share</app> doit être installé pour que <gui>Partage de fichiers personnels</gui> soit visible.</p>
@@ -86,7 +90,8 @@
 
   <steps>
     <item>
-      <p>Ouvrez la vue d'ensemble des <gui xref="shell-terminology">Activités</gui> et commencez à saisir <gui>Partage</gui>.</p>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Sharing</gui>.</p>
     </item>
     <item>
       <p>Cliquez sur <gui>Partage</gui> pour ouvrir le panneau.</p>
@@ -100,13 +105,9 @@
       <p>Sélectionnez <gui>Partage de fichiers personnels</gui>.</p>
     </item>
     <item>
-      <p>Switch <gui>Personal File Sharing</gui> to <gui>ON</gui>. This means
-      that other people on your current network will be able to attempt to
-      connect to your computer and access files in your <file>Public</file>
-      folder.</p>
+      <p>Basculez <gui>Partage de fichiers personnels</gui> sur <gui>Activé</gui>. Les personnes présentes sur votre réseau actuel peuvent maintenant se connecter à votre ordinateur pour accéder aux fichiers de votre dossier <file>Public</file>.</p>
       <note style="info">
-        <p>A <em>URI</em> is displayed by which your <file>Public</file> folder
-        can be accessed from other computers on the network.</p>
+        <p>Un <em>URI</em> permettant aux autres ordinateurs du réseau de se connecter à votre dossier <file>Public</file> s'affiche.</p>
       </note>
     </item>
   </steps>
@@ -126,11 +127,9 @@
   </section>
 
   <section id="networks">
-  <title>Networks</title>
+  <title>Réseaux</title>
 
-  <p>The <gui>Networks</gui> section lists the networks to which you are
-  currently connected. Use the <gui>ON | OFF</gui> switch next to each to
-  choose where your personal files can be shared.</p>
+  <p>La section <gui>Réseaux</gui> affiche la liste des réseaux auxquels vous êtes actuellement connecté. Utilisez l'interrupteur <gui>Activé | Désactivé</gui> de chaque réseau pour choisir avec qui vous autorisez le partage de vos fichiers personnels.</p>
 
   </section>
 

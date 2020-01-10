@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" version="1.0 ui/1.0" id="keyboard-shortcuts-set" xml:lang="hu">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" version="1.0 ui/1.0" id="keyboard-shortcuts-set" xml:lang="hu">
 
   <info>
     <link type="guide" xref="keyboard"/>
@@ -8,14 +8,15 @@
     <revision pkgversion="3.8.0" version="0.3" date="2013-03-23" status="review"/>
     <revision pkgversion="3.9.92" date="2013-10-11" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+    <revision pkgversion="3.17.90" date="2015-08-30" status="candidate"/>
 
     <credit type="author">
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="author">
-       <name>Julita Inca</name>
-       <email>yrazes@gmail.com</email>
+      <name>Julita Inca</name>
+      <email>yrazes@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Juanjo Marín</name>
@@ -24,6 +25,10 @@
     <credit type="editor">
       <name>Shobha Tyagi</name>
       <email>tyagishobha@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <desc>Adjon meg vagy módosítson gyorsbillentyűket a <gui>Billentyűzet</gui> beállításai alatt.</desc>
@@ -37,7 +42,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Kelemen Gábor</mal:name>
       <mal:email>kelemeng at gnome dot hu</mal:email>
-      <mal:years>2011, 2012, 2013, 2014</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -71,7 +76,7 @@
 
   <steps>
     <item>
-      <p>Nyissa meg a <gui xref="shell-terminology">Tevékenységek</gui> áttekintést, és kezdje el begépelni a <gui>Billentyűzet</gui> szót.</p>
+      <p>Nyissa meg a <gui xref="shell-introduction#activities">Tevékenységek</gui> áttekintést, és kezdje el begépelni a <gui>Billentyűzet</gui> szót.</p>
     </item>
     <item>
       <p>Kattintson a <gui>Billentyűzet</gui> ikonra a panel megnyitásához.</p>
@@ -100,23 +105,23 @@
   </tr>
   <tr>
 	<td><p>Számológép indítása</p></td>
-	<td><p>Számológép</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-calculator.svg"> <key>Calculator</key> key symbol</media> vagy <key>Számológép</key></p></td>
   </tr>
   <tr>
 	<td><p>E-mail kliens indítása</p></td>
-	<td><p>Levél</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-mail.svg"> <key>Mail</key> key symbol</media> vagy <key>Levelező</key></p></td>
   </tr>
   <tr>
 	<td><p>Webböngésző indítása</p></td>
-	<td><p>WWW</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-world.svg"> <key>WWW</key> key symbol</media> vagy <media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-home.svg"> <key>WWW</key> key symbol</media> vagy <key>WWW</key></p></td>
   </tr>
   <tr>
 	<td><p>Saját mappa</p></td>
-	<td><p>Explorer</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-folder.svg"> <key>Explorer</key> key symbol</media> vagy <media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-computer.svg"> <key>Explorer</key> key symbol</media> vagy <key>Explorer</key></p></td>
   </tr>
   <tr>
 	<td><p>Keresés</p></td>
-	<td><p>Keresés</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-search.svg"> <key>Search</key> key symbol</media> vagy <key>Keresés</key></p></td>
   </tr>
 </table>
 
@@ -223,15 +228,15 @@
 <table rules="rows" frame="top bottom" ui:expanded="false">
 <title>Képernyőképek</title>
   <tr>
-	<td><p>Képernyőkép készítése</p></td>
+	<td><p>Képernyőkép mentése fájlba</p></td>
 	<td><p><key>Print</key></p></td>
   </tr>
   <tr>
-	<td><p>Képernyőkép készítése egy ablakról</p></td>
+	<td><p>Képernyőkép mentése egy ablakról fájlba</p></td>
 	<td><p><keyseq><key>Alt</key><key>Print</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Képernyőkép készítése egy területről</p></td>
+	<td><p>Képernyőkép mentése egy területről fájlba</p></td>
 	<td><p><keyseq><key>Shift</key><key>Print</key></keyseq></p></td>
   </tr>
   <tr>
@@ -256,43 +261,43 @@
 <title>Hang és média</title>
   <tr>
 	<td><p>Némítás</p></td>
-	<td><p>Hang némítása</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-mute.svg"> <key>Mute</key> key symbol</media> (Hang némítása)</p></td>
   </tr>
   <tr>
 	<td><p>Halkítás</p></td>
-	<td><p>Hangerő csökkentése</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-voldown.svg"> <key>Volume Down</key> key symbol</media> (Hangerő csökkentése)</p></td>
   </tr>
   <tr>
 	<td><p>Hangosítás</p></td>
-	<td><p>Hangerő növelése</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-volup.svg"> <key>Volume Up</key> key symbol</media> (Hangerő növelése)</p></td>
   </tr>
   <tr>
 	<td><p>Médialejátszó indítása</p></td>
-	<td><p>Hang/média</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-media.svg"> <key>Media</key> key symbol</media> (Hang/média)</p></td>
   </tr>
   <tr>
 	<td><p>Lejátszás (vagy lejátszás/szünet)</p></td>
-	<td><p>Hang lejátszása</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-play.svg"> <key>Play</key> key symbol</media> (Hang lejátszása)</p></td>
   </tr>
   <tr>
 	<td><p>Lejátszás szüneteltetése</p></td>
-	<td><p>Hang szüneteltetése</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-pause.svg"> <key>Pause</key> key symbol</media> (Hang szüneteltetése)</p></td>
   </tr>
   <tr>
 	<td><p>Lejátszás leállítása</p></td>
-	<td><p>Hanglejátszás leállítása</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-stop.svg"> <key>Stop</key> key symbol</media> (Hanglejátszás leállítása)</p></td>
   </tr>
   <tr>
 	<td><p>Előző szám</p></td>
-	<td><p>Előző hangfájl</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-previous.svg"> <key>Previous</key> key symbol</media> (Előző hangfájl)</p></td>
   </tr>
   <tr>
 	<td><p>Következő szám</p></td>
-	<td><p>Következő hangfájl</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-next.svg"> <key>Next</key> key symbol</media> (Következő hangfájl)</p></td>
   </tr>
   <tr>
 	<td><p>Kiadás</p></td>
-	<td><p>Kiadás</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-eject.svg"> <key>Eject</key> key symbol</media> (Kiadás)</p></td>
   </tr>
 </table>
 
@@ -471,51 +476,27 @@
 
 </section>
 
-<section id="changing-shorcuts">
-  <title>Gyorsbillentyűk módosítása</title>
-  <p>Gyorsbillentyűk módosítása egy alkalmazáshoz.</p>
-
-  <steps>
-    <item>
-	<p>Nyissa meg a Terminál alkalmazást.</p>
-     </item>
-    <item><p>Futtassa a következő parancsot: <cmd>gsettings set org.gnome.desktop.interface can-change-accels true</cmd>.</p>
-    </item>
-       <item>
-      <p>Indítsa el azt az alkalmazást, amely egyik gyorsbillentyűjét meg szeretné változtatni.</p>
-    </item>
-  <item>
-      <p>Keresse meg azt a menüpontot, amelynek gyorsbillentyűjét meg szeretné változtatni.</p>
-    </item>
-<item>
-      <p>Nyomja le az új gyorsbillentyűt a billentyűzeten.</p>
-    </item>
-  </steps>
-
-<note style="note style">
-  <p>Ne feledje, hogy ez a beállítás az egész asztali környezetre vonatkozik. A módosítások után újra kikapcsolhatja a <cmd>gsettings set org.gnome.desktop.interface can-change-accels false</cmd> parancs kiadásával. Ehhez a <app>dconf-szerkesztő</app> segédprogramot is használhatja.</p>
-</note>
-</section>
-
 <section id="custom">
 <title>Egyéni gyorsbillentyűk</title>
 
-<p>Egyéni gyorsbillentyű létrehozásához:</p>
+  <p>Adjon meg vagy módosítson gyorsbillentyűket a <app>Billentyűzet</app>beállításai alatt:</p>
 
   <steps>
     <item>
-      <p>Válassza a bal oldali ablaktábla <gui>Egyéni gyorsbillentyűk</gui> kategóriáját, és kattintson a <gui style="button">+</gui> gombra (vagy bármely kategória <gui style="button">+</gui> gombjára). Megjelenik az <gui>Egyéni gyorsbillentyű</gui> ablak.</p>
+      <p>Kattintson a <gui style="button">+</gui> gombra. Megjelenik az <gui>Egyéni gyorsbillentyű</gui> ablak.</p>
     </item>
     <item>
-      <p>Írja be a gyorsbillentyű azonosítására szolgáló <gui>Nevet</gui>, és az alkalmazást indító <gui>Parancsot</gui>, majd nyomja meg az <gui>Alkalmaz</gui> gombot. Ha például azt szeretné, hogy a gyorsbillentyű a Rhythmboxot indítsa el, akkor elnevezheti <input>Zene</input> névvel és használhatja a <input>rhythmbox</input> parancsot.</p>
+      <p>Írja be a gyorsbillentyű azonosítására szolgáló <gui>Nevet</gui>, és az alkalmazást indító <gui>Parancsot</gui>, majd nyomja meg a <gui>Hozzáadás</gui> gombot. Ha például azt szeretné, hogy a gyorsbillentyű a <app>Rhythmboxot</app> indítsa el, akkor elnevezheti <input>Zene</input> névvel és használhatja a <input>rhythmbox</input> parancsot.</p>
     </item>
     <item>
       <p>Kattintson az éppen felvett sorban a <gui>Tiltva</gui> feliratra. Amikor megváltozik <gui>Új gyorsbillentyű…</gui> feliratra, akkor nyomja le a kívánt billentyűkombinációt.</p>
     </item>
   </steps>
- <p>A beírt parancsnak érvényes rendszerparancsnak kell lennie. A parancs működését úgy ellenőrizheti, hogy megnyitja a Terminált és beírja. Az alkalmazást megnyitó parancs neve nem lehet ugyanaz, mint magának az alkalmazásnak a neve.</p>
 
- <p>Ha meg szeretne változtatni egy egyéni gyorsbillentyű parancsát, akkor kattintson duplán a gyorsbillentyű <em>nevére</em>. Megjelenik az <gui>Egyéni gyorsbillentyű</gui> ablak, és szerkesztheti a parancsot.</p>
+  <p>A beírt parancsnak érvényes rendszerparancsnak kell lennie. A parancs működését úgy ellenőrizheti, hogy megnyitja a Terminált és beírja. Az alkalmazást megnyitó parancs neve nem lehet ugyanaz, mint magának az alkalmazásnak a neve.</p>
+
+  <p>Ha meg szeretne változtatni egy egyéni gyorsbillentyű parancsát, akkor kattintson duplán a gyorsbillentyű <em>nevére</em>. Megjelenik az <gui>Egyéni gyorsbillentyű</gui> ablak, és szerkesztheti a parancsot.</p>
+
 </section>
 
 </page>

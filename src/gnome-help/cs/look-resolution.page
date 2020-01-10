@@ -10,30 +10,29 @@
     <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
 
     <credit type="author">
-      <name>GNOME Documentation Project</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <name>Dokumentační projekt GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="author">
       <name>Natalia Ruz Leiva</name>
-      <email its:translate="no">nruz@alumnos.inf.utfsm.cl </email>
+      <email>nruz@alumnos.inf.utfsm.cl </email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Shobha Tyagi</name>
-      <email its:translate="no">tyagishobha@gmail.com</email>
+      <email>tyagishobha@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Change the resolution of the screen and its orientation
-    (rotation).</desc>
+    <desc>Jak změnit rozlišení obrazovky a její otočení (orientaci).</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
@@ -44,64 +43,45 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Marek Černocký</mal:name>
       <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:years>2014, 2015</mal:years>
     </mal:credit>
   </info>
 
-  <title>Change the resolution or rotation of the screen</title>
+  <title>Změna rozlišení nebo otočení obrazovky</title>
 
-  <p>You can change how big (or how detailed) things appear on the screen by
-  changing the <em>screen resolution</em>. You can change which way up things
-  appear (for example, if you have a rotating display) by changing the
-  <em>rotation</em>.</p>
+  <p>Pomocí změny <em>rozlišení obrazovky</em> můžete změnit, jak velké (nebo jak podrobně vykreslené) mají věci na obrazovce vypadat. Pomocí změny <em>otočení</em> můžete změnit, aby věci byly hlavou vzhůru (např. pokud máte otočný displej).</p>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-terminology">Activities</gui> overview and
-      start typing <gui>Displays</gui>.</p>
+      <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Displeje</gui>.</p>
     </item>
     <item>
       <p>Kliknutím na <gui>Displeje</gui> otevřete příslušný panel.</p>
     </item>
     <item>
-      <p>If you have multiple displays and they are not mirrored, you can have
-      different settings on each display. Select a display in the preview
-      area.</p>
+      <p>Pokud máte více displejů a ty nejsou zrcadlené, můžete mít u každého jiné nastavení. Vyberte displej v části s náhledy.</p>
     </item>
     <item>
-      <p>Select the resolution and rotation.</p>
+      <p>Vyberte rozlišení a otočení.</p>
     </item>
     <item>
-      <p>Click <gui>Apply</gui>. The new settings will be applied for 20
-      seconds before reverting back. That way, if you cannot see anything with
-      the new settings, your old settings will be automatically restored. If
-      you are happy with the new settings, click <gui>Keep Changes</gui>.</p>
+      <p>Klikněte na <gui>Použít</gui>. Nové nastavení se použije po dobu 20 vteřin, než je automaticky vráceno zpět. Díky tomu, když s novým nastavením nebude nic vidět, dostanete se zpět k původnímu nastavení. V případě, že je nové nastavení v pořádku a jste s ním spokojení, klikněte na <gui>Zachovat změny</gui>.</p>
     </item>
   </steps>
 
 <section id="resolution">
-  <title>Resolution</title>
+  <title>Rozlišení</title>
 
-  <p>The resolution is the number of pixels (dots on the screen) in each
-  direction that can be displayed. Each resolution has an <em>aspect
-  ratio</em>, the ratio of the width to the height. Wide-screen displays use a
-  16:9 aspect ratio, while traditional displays use 4:3. If you choose a
-  resolution that does not match the aspect ratio of your display, the screen
-  will be letterboxed to avoid distortion, by adding black bars to the top and
-  bottom or both sides of the screen.</p>
+  <p>Rozlišení je počet pixelů (obrazových bodů), které lze v jednotlivém směru zobrazit. Rozlišení má <em>poměr stran</em>, což je poměr šířky a výšky. Širokoúhlé displeje používají poměr 16∶9, zatímco tradiční displeje 4∶3. Pokud zvolíte rozlišení, které neodpovídá poměrům stran vašeho displeje, bude obrazovka ořezána přidáním černých pruhů nahoru a dolů nebo po obou stranách, aby se zabránilo zkreslení.</p>
 
-  <p>You can choose the resolution you prefer from the <gui>Resolution</gui>
-  drop-down list. If you choose one that is not right for your screen it may
-  <link xref="look-display-fuzzy">look fuzzy or pixelated</link>.</p>
+  <p>V rozbalovacím seznamu <gui>Rozlišení</gui> si můžete zvolit rozlišení, které vám vyhovuje. Pokud ale zvolíte takové, které není pro vaši obrazovku správné, bude obraz <link xref="look-display-fuzzy">vypadat rozmazaně nebo kostičkovaně</link>.</p>
 
 </section>
 
 <section id="rotation">
-  <title>Rotation</title>
+  <title>Otočení</title>
 
-  <p>On some laptops, you can physically rotate the screen in many directions.
-  It is useful to be able to change the display rotation. You can rotate what
-  you see on your screen by pressing the buttons with the arrows.</p>
+  <p>U některých notebooků (tzv. konvertibilní notebooky) je možné obrazovku fyzicky otočit do několika směrů. Rovněž některé modely monitorů mají možnost otočit displej o 90 stupňů (tzv. pivot). V takových případech se hodí možnost změnit softwarové otočení displeje. Můžete to udělat pomocí tlačítek se šipkami.</p>
 
 </section>
 

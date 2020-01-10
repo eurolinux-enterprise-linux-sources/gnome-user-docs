@@ -11,26 +11,25 @@
 
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>A visual introduction to your desktop, the top bar, and the
-    <gui>Activities</gui> overview.</desc>
+    <desc>デスクトップ、トップバー、および<gui>アクティビティ</gui>画面について画像をまじえた入門。</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -97,11 +96,11 @@
 <links type="section"/>
 
 <section id="activities">
-  <title><gui>Activities</gui> overview</title>
+  <title><gui>アクティビティ</gui>画面</title>
 
 <if:choose>
   <if:when test="!platform:gnome-classic">
-    <media type="image" src="figures/shell-activities.png" width="123" height="82" style="floatend floatright" if:test="!target:mobile">
+    <media type="image" src="figures/shell-activities.png" style="floatend floatright" if:test="!target:mobile">
       <p>アクティビティボタン</p>
     </media>
   </if:when>
@@ -117,11 +116,17 @@
   the top-left hot corner. You can also press the
   <key xref="keyboard-key-super">Super</key> key on your keyboard. You can
   see your windows and applications in the overview. You can also just start
-  typing to search your applications, files, folders and the web.</p>
+  typing to search your applications, files, folders, and the web.</p>
 
-  <p if:test="platform:gnome-classic">ウィンドウの一覧を表示したり、アプリケーションを起動するには、画面左上の<link xref="shell-terminology"><gui>アプリケーション</gui>メニュー</link>を開き、<gui>アクティビティ画面</gui>を選択します。キーボードの <link xref="keyboard-key-super">Super</link> キーを押しても同じことができます。アクティビティ画面では、ウィンドウとアプリケーションの全体を把握できます。また、キー入力するだけでアプリケーションやファイル、フォルダーを検索することもできます。</p>
+  <p if:test="platform:gnome-classic">To access your windows and applications,
+  click the <gui xref="shell-introduction#activities">Applications</gui> menu
+  at the top left of the screen and select the <gui>Activities Overview</gui>
+  item. You can also press the <key xref="keyboard-key-super">Super</key> key
+  to see your windows and applications in the <gui>Activities</gui> overview. 
+  Just start typing to search your applications, files, and folders.</p>
 
-  <media type="image" src="figures/shell-dash.png" width="49" height="300" style="floatstart floatleft" if:test="!target:mobile">
+  <!-- TODO: retake without the flashy bit -->
+  <media type="image" src="figures/shell-dash.png" height="300" style="floatstart floatleft" if:test="!target:mobile">
     <p>ダッシュボード</p>
   </media>
 
@@ -129,27 +134,23 @@
 
   <p>アイコンを右クリックすると、実行中のアプリケーションなら任意のウィンドウにフォーカスすることができ、また新規にウィンドウを開くこともできます。<key>Ctrl</key> キーを押さえながらアイコンをクリックして、新しいウィンドウを開くこともできます。</p>
 
-  <p>When you enter the overview, you will initially be in the windows
-  overview. This shows you live thumbnails of all the windows on the current
-  workspace.</p>
+  <p>アクティビティ画面を表示すると、まずウィンドウの一覧が表示されます。これは、現在のワークスペースで開いている全ウィンドウのサムネイルです。</p>
 
   <p>ダッシュボードの一番下にあるグリッドボタンを押すと、アプリケーションの一覧が表示されます。ここには、お使いのコンピューターにインストールされているすべてのアプリケーションが表示されます。いずれかのアプリケーションを選択すると、そのアプリケーションが起動します。あるいは、アクティビティ画面かワークスペースのサムネイルにアプリケーションをドラッグしても起動します。また、アプリケーションをダッシュボードにドラッグすることで、お気に入りとして追加することもできます。お気に入りのアプリケーションは、起動していない場合でもダッシュボードに表示されており、すばやく起ち上げることができます。</p>
 
   <list style="compact">
     <item>
-      <p><link xref="shell-apps-open">Learn more about starting
-      applications.</link></p>
+      <p><link xref="shell-apps-open">アプリケーションの起動についてもっと詳しく。</link></p>
     </item>
     <item>
-      <p><link xref="shell-windows">Learn more about windows and
-      workspaces.</link></p>
+      <p><link xref="shell-windows">ウィンドウとワークスペースについてもっと詳しく。</link></p>
     </item>
   </list>
 
 </section>
 
 <section id="appmenu">
-  <title>Application menu</title>
+  <title>アプリケーションメニュー</title>
   <if:choose>
     <if:when test="!platform:gnome-classic">
       <media type="image" src="figures/shell-appmenu-shell.png" width="250" style="floatend floatright" if:test="!target:mobile">
@@ -181,7 +182,7 @@
 <if:choose>
   <if:when test="!platform:gnome-classic">
     <media type="image" src="figures/shell-appts.png" width="250" style="floatend floatright" if:test="!target:mobile">
-      <p>時計、カレンダーおよび予定</p>
+      <p>Clock, calendar, appointments and notifications</p>
     </media>
   </if:when>
   <if:when test="platform:gnome-classic">
@@ -191,15 +192,24 @@
   </if:when>
 </if:choose>
 
-  <p>トップバーの時計を開くと、現在日付や、月ごとのカレンダー、また今後の予定について確認できます。また、直接このメニューから、日付と時刻の設定画面を開いたり、<app>Evolution</app> のカレンダーを開くこともできます。</p>
+  <p>Click the clock on the top bar to see the current date, a month-by-month
+  calendar, a list of your upcoming appointments and new notifications. You can
+  also open the calendar by pressing
+  <keyseq><key>Super</key><key>M</key></keyseq>. You can access the date and
+  time settings and open your full <app>Evolution</app> calendar directly from
+  the menu.</p>
 
   <list style="compact">
     <item>
       <p><link xref="clock-calendar">カレンダーと予定についてもっと詳しく。</link></p>
     </item>
+    <item>
+      <p><link xref="shell-notifications">通知メッセージとメッセージトレイについてもっと詳しく。</link></p>
+    </item>
   </list>
 
 </section>
+
 
 <section id="yourname">
   <title>あなた、およびお使いのコンピューターについて</title>
@@ -257,32 +267,11 @@ messages will be presented, such as when your battery is critically low.</p>
     <p>ロック画面</p>
   </media>
 
-  <p>When you lock your screen, or it locks automatically, the lock screen is
-  displayed. In addition to protecting your desktop while you're away from your
-  computer, the lock screen displays the date and time. It also shows
-  information about your battery and network status, and allows you to control
-  media playback.</p>
+  <p>画面をロックしたり、自動的にロックが掛かったりした場合に、ロック画面が表示されます。コンピューターから離れている間、デスクトップを保護できます。ロック画面には日付や時刻などが表示されます。他にもバッテリーやネットワークの状態を確認したり、メディアの再生をコントロールしたりできます。</p>
 
   <list style="compact">
     <item>
       <p><link xref="shell-lockscreen">ロック画面についてもっと詳しく。</link></p>
-    </item>
-  </list>
-
-</section>
-
-<section id="message-tray">
-  <title>メッセージトレイ</title>
-
-  <media its:translate="no" type="image" src="figures/shell-message-tray.png" width="600">
-    <p its:translate="yes">メッセージトレイ</p>
-  </media>
-
-  <p>メッセージトレイは、マウスポインターを画面下部に対してしばらく押し続けるか、あるいは <keyseq><key>Super</key><key>M</key></keyseq> キーを押すことで表示されます。ここにはユーザーへの通知メッセージが保存され、ユーザーがその内容を確認するまで通知は残ります。</p>
-
-  <list style="compact">
-    <item>
-      <p><link xref="shell-notifications">通知メッセージとメッセージトレイについてもっと詳しく。</link></p>
     </item>
   </list>
 
@@ -296,8 +285,7 @@ messages will be presented, such as when your battery is critically low.</p>
     <p>GNOME におけるウィンドウ切り替えのスタイルは、他のデスクトップ環境で採用されているような、常にウィンドウ一覧を表示するものとは異なったアプローチを取っています。</p>
     <list style="compact">
       <item>
-        <p><link xref="shell-windows-switching">Learn more about switching
-        windows.</link></p>
+        <p><link xref="shell-windows-switching">ウィンドウの切り替えについてもっと詳しく。</link></p>
       </item>
     </list>
   </if:when>

@@ -7,14 +7,19 @@
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
     <revision pkgversion="3.10" date="2013-11-07" status="review"/>
     <revision pkgversion="3.12" date="2014-03-02" status="review"/>
+    <revision pkgversion="3.16" date="2015-01-27" status="review"/>
 
     <credit type="author">
       <name>Шон МакКенс (Shaun McCance)</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Майкл Хилл (Michael Hill)</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Джим Кэмпбелл (Jim Campbell)</name>
+      <email>jcampbell@gnome.org</email>
     </credit>
 
     <title type="link" role="trail">Файлы</title>
@@ -31,7 +36,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011, 2012</mal:years>
+      <mal:years>2011-2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -45,22 +50,25 @@
       <mal:email>juliette.tux@gmail.com</mal:email>
       <mal:years>2013-2014</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
   <title>Файлы, папки и поиск</title>
 
-  <!-- TODO: would be nice to give this image some styling -->
-  <media type="image" src="figures/nautilus-3-10.png" style="floatend floatright" width="350" if:test="!target:mobile">
-    <p>Менеджер файлов <app>Nautilus</app></p>
-  </media>
-
-<links type="topic" style="linklist nodesc bold">
+<section id="common-file-tasks">
   <title>Типичные задачи</title>
-</links>
+  <links type="topic" style="2column"/>
+</section>
 
-<links type="topic" groups="more" style="linklist nodesc bold">
-  <title>Дополнительно</title>
-</links>
+<section id="more-file-tasks">
+  <title>More file-related tasks</title>
+  <links type="topic" style="2column"/>
+</section>
 
 <section id="removable">
   <title>Съёмные носители и внешние диски</title>

@@ -2,22 +2,28 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-file-properties-basic" xml:lang="ta">
 
   <info>
-    <link type="guide" xref="files" group="more"/>
+    <link type="guide" xref="files#more-file-tasks"/>
 
-   <desc>அடிப்படை கோப்பு தகவலை காணவும், அனுமதிகளை அமைக்கவும் மற்றும் முன்னிருப்பு பயன்பாடுகளைத் தேர்வு செய்யவும்.</desc>
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
-   <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <credit type="author">
+      <name>டிஃபானி அன்ட்டொபோல்ஸ்கி</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>ஷான் மெக்கேன்ஸ்</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
 
-   <credit type="author">
-     <name>டிஃபானி அன்ட்டொபோல்ஸ்கி</name>
-     <email>tiffany@antopolski.com</email>
-   </credit>
-   <credit type="author">
-     <name>ஷான் மெக்கேன்ஸ்</name>
-     <email>shaunm@gnome.org</email>
-   </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <desc>அடிப்படை கோப்பு தகவலை காணவும், அனுமதிகளை அமைக்கவும் மற்றும் முன்னிருப்பு பயன்பாடுகளைத் தேர்வு செய்யவும்.</desc>
+
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Shantha kumar,</mal:name>
@@ -25,6 +31,7 @@
       <mal:years>2013</mal:years>
     </mal:credit>
   </info>
+
   <title>கோப்பு பண்புகள்</title>
 
   <p>ஒரு கோப்பு அல்லது கோப்புறை பற்றி தகவலைக் காண, அதை வலது சொடுக்கம் செய்து <gui>பண்புகள்</gui> ஐ தேர்ந்தெடுக்கவும். நீங்கள் கோப்பைத் தேர்ந்தெடுத்துவிட்டு <keyseq><key>Alt</key><key>Enter</key></keyseq> ஐ அழுத்தியும் பண்புகளைக் காணலாம்.</p>
@@ -37,13 +44,13 @@
  <title>அடிப்படை பண்புகள்</title>
  <terms>
   <item>
-    <title><gui>பெயர்</gui></title>
+    <title><gui>Name</gui></title>
     <p>நீங்கள் இந்த புலத்தை மாற்றுவதன் மூலம் கோப்பை மறுபெயரிட முடியும். நீங்கள் பண்புகள் சாளரத்திற்கு வெளியேயும் ஒரு கோப்பை மறுபெயரிட முடியும். <link xref="files-rename"/> ஐப் பார்க்கவும்.</p>
   </item>
   <item>
-    <title><gui>வகை</gui></title>
+    <title><gui>Type</gui></title>
     <p>PDF ஆவணம், OpenDocument உரை அல்லது JPEG படம் போன்று, கோப்பு வகையை அடையாளம் காண இது உதவுகிறது. மற்ற அம்சங்களுடன், ஒரு கோப்பை எந்தப் பயன்பாடுகள் திறக்க முடியும் என்பதையும் கோப்பு வகையே தீர்மானிக்கிறது. உதாரணமாக, நீங்கள் ஒரு மியூசிக் பிளேயர் மூலம் ஒரு படத்தை திறக்க முடியாது. இது குறித்த மேலும் தகவலுக்கு <link xref="files-open"/> ஐப் பார்க்கவும்.</p>
-  <p>கோப்பின் <em>MIME வகை</em> அடைப்புக்குறிக்குள் காட்டப்படும்; MIME வகை என்பது கணினிகள் கோப்பு வகையைக் குறிக்க பயன்படுத்தும் ஒரு தரநிலையான வழியாகும்.</p>
+    <p>கோப்பின் <em>MIME வகை</em> அடைப்புக்குறிக்குள் காட்டப்படும்; MIME வகை என்பது கணினிகள் கோப்பு வகையைக் குறிக்க பயன்படுத்தும் ஒரு தரநிலையான வழியாகும்.</p>
   </item>
 
   <item>
@@ -58,20 +65,19 @@
   </item>
 
   <item>
-    <title>இருப்பிடம்</title>
-    <p>உங்கள் கணினியில் உள்ள ஒவ்வொரு கோப்பின் இருப்பிடமும் அதன் <em>முழுமையான பாதையால்</em> வழங்கப்படுகிறது. இது உங்கள் கணினியில் உள்ள கோப்பின் தனித்துவமான "முகவரி" ஆகும், இது அந்தக் கோப்பைக் கண்டறிய நீங்கள் செல்லும் எல்லாக் கோப்புறைகளின் பட்டியலையும் உள்ளடக்கியதாக இருக்கும். எடுத்துக்காட்டாக, ஜிம்மிடம் தனது இல்லக் கோப்புறையுல் <file>Resume.pdf</file> என்ற கோப்பு இருந்தால், அத  இருப்பிடம் <file>/home/jim/Resume.pdf</file> ஆகும்.</p>
-  </item>
-
-  <item>
-    <title>தொகுதி</title>
-    <p>கோப்பு சேமிக்கப்படும் கோப்பு முறைமை அல்லது சாதனம். இது உண்மையில் கோப்பு எங்கு சேமிக்கப்பட்டுள்ளது என்பதைக் காண்பிக்கிறது. உதாரணமாக அது ஒரு வன் வட்டு அல்லது CD அல்லது <link xref="nautilus-connect">பிணைய பகிர்வு அல்லது கோப்பு சேவையகம்</link> ஆகியவற்றில் எதில் சேமிக்கப்பட்டுள்ளது எனக் காண்பிக்கும். வன் வட்டுகளை சில <link xref="disk-partitions">வட்டு பிரிவகங்களாக</link> பிரிக்க முடியும்; பிரிவகங்கள் <gui>தொகுதி</gui> என்பதன் கீழ் காண்பிக்கப்படும்.</p>
+    <title>Parent Folder</title>
+    <p>The location of each file on your computer is given by its <em>absolute
+    path</em>. This is a unique "address" of the file on your computer, made up
+    of a list of the folders that you would need to go into to find the file.
+    For example, if Jim had a file called <file>Resume.pdf</file> in his Home
+    folder, its parent folder would be <file>/home/jim</file> and its location
+    would be <file>/home/jim/Resume.pdf</file>.</p>
   </item>
 
   <item>
     <title>காலி இடம்</title>
     <p>இந்த கோப்புறைகளுக்கு மட்டுமே காட்டப்படும். இது அந்தக் கோப்புறை உள்ள வட்டில் கிடைக்கக்கூடிய மீதமுள்ள வட்டு இடத்தின் அளவைக் குறிக்கிறது. இது வன் வட்டு நிரம்பிவிட்டதா எனப் பார்க்க பயனுள்ளதாக இருக்கும்.</p>
   </item>
-
 
   <item>
     <title>அணுகப்பட்டது</title>

@@ -1,28 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="accounts-add" xml:lang="cs">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="accounts-add" xml:lang="cs">
 
   <info>
-    <link type="guide" xref="accounts"/>
+    <link type="guide" xref="accounts" group="add"/>
 
     <revision pkgversion="3.5.5" date="2012-08-14" status="draft"/>
     <revision pkgversion="3.9.92" date="2012-09-18" status="candidate"/>
     <revision pkgversion="3.13.92" date="2013-09-20" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Jim Campbell</name>
-      <email its:translate="no">jwcampbell@gmail.com</email>
+      <email>jwcampbell@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
       <years>2014</years>
     </credit>
+    <credit type="editor">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+      <years>2015</years>
+    </credit>
 
-    <desc>Connect to an online account.</desc>
+    <desc>Jak umožnit aplikacím přístup k vašim účtům on-line s fotografiemi, kontakty, kalendáři a dalšími věcmi.</desc>
 
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
@@ -33,58 +39,42 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Marek Černocký</mal:name>
       <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:years>2014, 2015</mal:years>
     </mal:credit>
   </info>
 
-  <title>Add an account</title>
+  <title>Přidání účtu</title>
 
-  <p>Adding an account will help link your online accounts with your GNOME
-  desktop. Thus, your email program, chat program and other related
-  applications will be set up for you.</p>
+  <p>Přidání účtu pomůže propojení účtů on-line s vaším uživatelským prostředím GNOME. Váš poštovní program, diskuzní program a další související aplikace tak budou moci používat toto nastavení.</p>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-terminology">Activities</gui> overview and
-      start typing <gui>Online Accounts</gui>.</p>
+      <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Účty on-line</gui>.</p>
     </item>
     <item>
-      <p>Click on <gui>Online Accounts</gui> to open the panel.</p>
+      <p>Kliknutím na <gui>Účty on-line</gui> otevřete příslušný panel.</p>
     </item>
     <item>
-      <p>Click the <gui>+</gui> button in the lower-left corner of the
-      window.</p>
+      <p>Klikněte na tlačítko <gui>+</gui> v levém dolním rohu okna.</p>
     </item>
     <item>
-      <p>Select the type of account which you want to add.</p>
-      <p>If you want to add more than one account type, you can do so at a
-      later time.</p>
+      <p>Vyberte typ účtu, který chcete přidat.</p>
     </item>
     <item>
-      <p>A small website window or dialog will open where you can enter your
-      online account credentials. For example, if you are setting up a Google
-      account, enter your Google username and password.</p>
+      <p>Otevře se malé okno s webovou stránkou nebo dialogové okno, do kterých můžete zadat své přístupové údaje k účtu on-line. Například, když nastavujete účet Google, zadejte své uživatelské jméno a heslo pro Google. Někteří poskytovatelé umožňují vytvořit nový účet v přihlašovacím dialogovém okně.</p>
     </item>
     <item>
-      <p>If you have entered your credentials correctly, you will be prompted
-      to allow GNOME access to your online account. Authorize access to
-      continue.</p>
+      <p>Pokud zadáte své přístupové údaje správně, budete dotázání, jestli povolíte GNOME přístup k účtu on-line. Abyste mohli pokračovat, přístup potvrďte.</p>
     </item>
     <item>
-      <p>All services that are offered by an account provider will be enabled
-      by default. <link xref="accounts-disable-service">Switch</link>
-      individual services to <gui>OFF</gui> to disable them.</p>
+      <p>Ve výchozím stavu budou povoleny všechny služby, které poskytovatel účtu nabízí. <link xref="accounts-disable-service">Přepnutím vypínače</link> jednotlivých služeb na <gui>○</gui> (vypnuto) je můžete zakázat.</p>
     </item>
   </steps>
 
-  <p>After you have added the accounts, each application that you have selected
-  will automatically use those credentials when you start them.</p>
+  <p>Po té, co účet přidáte, mohou aplikace používat tento účet pro přístup ke službám, které jste jim dovolili. Jak řídit, které služby jsou dovolené, viz <link xref="accounts-disable-service"/>.</p>
 
   <note style="tip">
-    <p>For security reasons, GNOME will not store your password on your
-    computer. Instead, it stores a token that is provided by the online
-    service. If you want to fully revoke the link between your desktop and the
-    online service, <link xref="accounts-remove">remove</link> it.</p>
+    <p>Řada služeb on-line poskytuje ověřovací tiket, který si GNOME uchovává namísto hesla. Když odeberete některý z účtů, měli byste rovněž odvolat tento certifikát. Více informací viz <link xref="accounts-remove"/>.</p>
   </note>
 
 </page>

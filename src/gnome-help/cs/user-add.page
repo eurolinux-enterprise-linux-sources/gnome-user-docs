@@ -3,32 +3,32 @@
 
   <info>
     <link type="guide" xref="user-accounts#manage" group="#first"/>
-    <!--<link type="seealso" xref="user-addguest"/>-->
 
-    <revision pkgversion="3.8.0" version="0.3" date="2013-03-09" status="candidate"/>
+    <revision pkgversion="3.8" date="2013-03-09" status="candidate"/>
     <revision pkgversion="3.10" date="2013-11-01" status="review"/>
     <revision pkgversion="3.13.92" date="2013-11-01" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
-      <name>GNOME Documentation Project</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <name>Dokumentační projekt GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Add new users so that other people can log in to the computer.</desc>
+    <desc>Jak přidat nové uživatele, aby se další lidé mohli přihlásit k počítači.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
@@ -39,68 +39,50 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Marek Černocký</mal:name>
       <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:years>2014, 2015</mal:years>
     </mal:credit>
   </info>
 
-  <title>Add a new user account</title>
+  <title>Přidání nového uživatelského účtu</title>
 
-  <p>You can add multiple user accounts to your computer. Give one account to
-  each person in your household or company. Every user has their own home
-  folder, documents, and settings.</p>
+  <p>Do svého počítače můžete přidat více uživatelských účtů. Každé osobě v domácnosti nebo v práci přidělte jeden účet. Každý uživatel tak bude mít svoji vlastní domovskou složku, dokumenty a nastavení.</p>
 
-  <p>You need <link xref="user-admin-explain">administrator privileges</link>
-  to add user accounts.</p>
+  <p>Abyste mohli přidat účet uživatele, potřebujete <link xref="user-admin-explain">oprávnění správce</link>.</p>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-terminology">Activities</gui> overview and
-      start typing <gui>Users</gui>.</p>
+      <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Uživatelé</gui>.</p>
     </item>
     <item>
       <p>Kliknutím na <gui>Uživatelé</gui> otevřete příslušný panel.</p>
     </item>
     <item>
-      <p>Press <gui style="button">Unlock</gui> in the top right corner and
-      type in your password when prompted.</p>
+      <p>Zmáčkněte <gui style="button">Odemknout</gui> v pravém horním rohu a po vyzvání zadejte heslo.</p>
     </item>
     <item>
-      <p>Press the <gui style="button">+</gui> button, below the list of
-      accounts on the left, to add a new user account.</p>
+      <p>Pro přidání nového účtu zmáčkněte tlačítko <gui style="button">+</gui> vlevo pod seznamem účtů.</p>
     </item>
     <item>
-      <p>If you want the new user to have
-      <link xref="user-admin-explain">administrative access</link> to the
-      computer, select <gui>Administrator</gui> for the account type.
-      Administrators can do things like add and delete users, install software
-      and drivers, and change the date and time.</p>
+      <p>Pokud chcete, aby měl nový uživatel k počítači <link xref="user-admin-explain">přístup správce</link>, vyberte u typu účtu <gui>Správce</gui>.</p>
+      <p>Správce může dělat věci, jako je přidávání a odebírání uživatelů, instalace softwaru a ovladačů a změna data a času.</p>
     </item>
     <item>
-      <p>Enter the new user's full name. The username will be filled in
-      automatically based on the full name. If you do not like the proposed
-      username, you can change it.</p>
+      <p>Zadejte celé jméno uživatele. Uživatelské jméno bude vyplněno automaticky na základě celého jména. Pokud vám navrhované nebude vyhovovat, můžete jej samozřejmě změnit.</p>
     </item>
     <item>
-      <p>You can choose to set a password for the new user, or let them set it
-      themselves on their first login. You can press on the
-      <gui style="button"><media its:translate="no" type="image" src="figures/system-run-symbolic.svg" width="16" height="16"><span its:translate="yes">generate
-      password</span></media></gui> icon to automatically generate a random
-      password.</p>
+      <p>Heslo novému uživateli můžete nastavit, nebo ponechat na něm, ať si jej nastaví při prvním přihlášení.</p>
+      <p>Když zvolíte, že chcete nastavit heslo teď, můžete zmáčknout ikonu <gui style="button"><media its:translate="no" type="image" src="figures/system-run-symbolic.svg" width="16" height="16">
+      <span its:translate="yes">generovat heslo</span></media></gui>, aby se vám automaticky vygenerovalo náhodné heslo.</p>
     </item>
     <item>
       <p>Klikněte na <gui>Přidat</gui>.</p>
     </item>
   </steps>
 
-  <p>If you want to change the password after creating the account, select the
-  account, <gui style="button">Unlock</gui> the panel and press on the current
-  password status.</p>
+  <p>Když chcete změnit heslo po té, co byl účet vytvořen, vyberte účet, <gui style="button">Odekmkněte</gui> panel a zmáčkněte aktuální heslo.</p>
 
   <note>
-    <p>In the <gui>Users</gui> panel, you can click the image next to the
-    user's name to the right to set an image for the account. This image will
-    be shown in the login window. GNOME provides some stock photos you can use,
-    or you can select your own or take a picture with your webcam.</p>
+    <p>V panelu <gui>Uživatelé</gui> můžete kliknout na obrázek vpravo vedle jména uživatele a nastavit účtu jiný obrázek. Ten se pak bude zobrazovat v přihlašovacím okně. GNOME poskytuje základní výběr obrázků, které můžete přímo použít nebo si můžete vybrat nějaký vlastní nebo si pořídit svoji fotografii pomocí webové kamery.</p>
   </note>
 
 </page>

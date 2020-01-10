@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="mouse-problem-notmoving" xml:lang="ta">
-<info>
+
+  <info>
     <link type="guide" xref="mouse#problems"/>
 
-    <desc>உங்கள் சொடுக்கி வேலை செய்யவில்லையா என எப்படிக் கண்டறிவது.</desc>
-
-    <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
+    <revision pkgversion="3.8" date="2013-03-13" status="candidate"/>
+    <!-- TODO: reorganise page and tidy because it's one ugly wall of text -->
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
         <name>ஃபில் புல்</name>
@@ -15,8 +16,11 @@
       <name>ஷான் மெக்கேன்ஸ்</name>
       <email>shaunm@gnome.org</email>
     </credit>
+
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
+    <desc>How to check why your mouse is not working.</desc>
+  
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Shantha kumar,</mal:name>
       <mal:email>shkumar@redhat.com</mal:email>
@@ -34,26 +38,6 @@
  <p>அது (ஒரு செவ்வக கனெக்ட்டரைக் கொண்டது) ஒரு USB சொடுக்கி எனில், அதை வேறு ஒரு USB போர்ட்டில் செருகி முயற்சிக்கவும். அலல்து அது PS/2 (ஆறு பின்களைக் கொண்ட ஒரு சிறிய வட்ட வடிவ கனெக்ட்டர் கொண்டது) சொடுக்கி எனில், அது விசைப்பலகைக்கான இளஞ்சிவப்பு போர்ட்டில் இல்லாமல் சொடுக்கிக்கான பச்சை போர்ட்டில் தான் செருகியுள்ளதா என உறுதிப்படுத்தவும். அது செருகப்படாதிருந்தால் கணினியை மறுதொடக்கம் செய்ய வேண்டியிருக்கலாம்</p>
 </section>
 
-<section id="connected">
- <title>உங்கள் கணினி சொடுக்கியை அடையாளம் காண்கிறதா எனப் பார்க்கவும்</title>
- <steps>
-  <item><p><gui>செயல்பாடுகள்</gui> மேலோட்டத்தில் இருந்து <app>முனைய்ம்</app> ஐ திறக்கவும்.</p></item>
-  <item>
-   <p>முனைய் சாளரத்தில், <cmd>xsetpointer -l | grep Pointer</cmd>, என்பதை இங்குள்ளது போன்றே சரியாக தட்டச்சு செய்து <key>Enter</key> ஐ அழுத்தவும்.</p>
-  </item>
-  <item>
-   <p>சொடுக்கி சாதனங்களின் ஒரு சிறு பட்டியலில் தோன்றும். அவற்றில் ஒன்றுக்கு அடுத்ததேனும் <sys>[XExtensionPointer]</sys> என்று உள்ளதா என்றும், <sys>[XExtensionPointer]</sys> என்று இருப்பவற்றில் ஏதேனும் ஒன்றுக்கேனும் இடப்புறம் சொடுக்கியின் பெயர் உள்ளதா என்று பாருங்கள்.</p>
-  </item>
-  <item>
-   <p>சொடுக்கி பெயருக்கு அடுத்து <sys>[XExtensionPointer]</sys> என்று எதிலும் இல்லாவிட்டால், உங்கள் கணினி சொடுக்கியை அடையாளம் காணவில்லை என்று பொருள். அப்படி ஒரு உருப்படி இருந்தால் உங்கள் கணினி சொடுக்கியை அடையாளம் காண்கிறது என்று பொருள். அப்படியானால் உங்கள் சொடுக்கி <link xref="mouse-problem-notmoving#plugged-in">செருகப்பட்டுள்ளதா</link> என்றும் <link xref="mouse-problem-notmoving#broken">வேலை செய்கிறதா</link> என்றும் சோதிக்க வேண்டும்.</p>
-  </item>
- </steps>
-
- <p>உங்கள் சொடுக்கி ஒரு சீரியல் (RS-232) கனெக்ட்டரைக் கொண்டிருந்தால், அதை செயல்பட வைக்க நீங்கள் கூடுதலாக சில செயல்களைச் செய்ய வேண்டும். அவை உங்கள் சொடுக்கியின் மாடல் அல்லது உற்பத்தி நிறுவனத்தைப் பொறுத்து மாறும்.</p>
-
- <p>சொடுக்கி கண்டறியப்படுவது தொடர்பான சிக்கல்களைத் தீர்ப்பது சிக்கலான காரியமாக இருக்கலாம். உங்கள் சொடுக்கி சரியாக கண்டறியப்படவில்லை என நீங்கள் நினைத்தால் உங்கள் விநியோகத்திலிருந்து அல்லது வென்டாரிடமிருந்து ஆதரவைக் கேட்கவும்.</p>
-</section>
-
 <section id="broken">
  <title>சொடுக்கி உண்மையில் வேலை செய்கிறதா என்று பாருங்கள்</title>
  <p>சொடுக்கியை வேறு ஒரு கணினியில் இணைத்து அது வேலை செய்கிறதா எனப் பார்க்கவும்.</p>
@@ -64,8 +48,12 @@
 <section id="wireless-mice">
  <title>வயர்லெஸ் சொடுக்கிகளை சோதித்தல்</title>
 
- <list>
-   <item><p>சொடுக்கி இயக்கப்பட்டுள்ளதா என உறுதிப்படுத்திக்கொள்ளவும். சிலவற்றில் சொடுக்கியை முற்றிலும் அணைக்க சொடுக்கியின் அடிப்பகுதியில் ஒரு ஸ்விட்ச் இருக்கும், இதன் மூலம் அது தொடர்ந்து வேலை செய்துகொண்டிருக்காதபடி ஓரிடத்தில் இருந்து மற்றொரு இடத்திற்கு அதை எடுத்துச் செல்ல முடியும்.</p></item>
+  <list>
+    <item>
+      <p>Make sure the mouse is turned on. There is often a switch on the
+      bottom of the mouse to turn the mouse off completely, so you can take it
+      with you without it constantly waking up.</p>
+    </item>
    <item><p>நீங்கள் ஒரு Bluetooth சொடுக்கியைப் பயன்படுத்தினால், சொடுக்கியை உங்கள் கணினியுடன் இணையாக்கியுள்ளீர்களா எனப் பார்த்துக்கொள்ளவும். <link xref="bluetooth-connect-device"/> ஐப் பார்க்கவும்.</p></item>
   <item>
    <p>ஒரு பொத்தானை சொடுக்கி, இப்போது சொடுக்கி சுட்டி நகர்கிறதா எனப் பார்க்கவும். சில வயர்லெஸ் சொடுக்கிகள் மின்சக்தியை சேமிக்க தூக்க முறைக்குச் சென்றுவிடக்கூடும், இதனால் நீங்கள் ஒரு பொத்தானை சொடுக்காதவரை அது வேலைசெய்யாது. <link xref="mouse-wakeup"/> ஐப் பார்க்கவும்.</p>

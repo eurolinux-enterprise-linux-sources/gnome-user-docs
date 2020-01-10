@@ -6,10 +6,21 @@
     <link type="seealso" xref="net-findip"/>
 
     <revision pkgversion="3.4.0" date="2012-03-13" status="final"/>
+    <revision pkgversion="3.15" date="2014-12-04" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Jim Campbell</name>
-      <email its:translate="no">jwcampbell@gmail.com</email>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -19,7 +30,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2011 - 2014</mal:years>
+      <mal:years>2011 - 2016</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -47,25 +58,25 @@
 
   <steps>
     <item>
-      <p>Pulse el <gui>icono de red</gui> en la <gui>barra superior</gui> y seleccione <gui>Configuración de la red</gui>.</p>
+      <p>Abra la vista de <gui xref="shell-introduction#activities">Actividades</gui> y empiece a escribir <gui>Red</gui>.</p>
     </item>
     <item>
-      <p>Seleccione la conexión de red de la lista (<gui>Cableada</gui> o <gui>Inalámbrica</gui>) y pulse <gui>Configurar</gui>.</p>
+      <p>Pulse en <gui>Red</gui> para abrir el panel.</p>
     </item>
     <item>
-      <p>Pulse en la pestaña <gui>Ajustes de IPv4</gui> y cambie la opción <gui>Método</gui> a <gui>Manual</gui>.</p>
+      <p>En el panel de la izquierda, seleccione la conexión de red a la que quiere asignar una IP fija. Si se conecta a la red por cable, pulse en <gui>Cableada</gui>, y luego pulse el botón <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">configuración</span></media> en la esquina inferior derecha del panel. Para una conexión <gui>Inalámbrica</gui>, el botón de <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">configuración</span></media> se situará junto a la red activa.</p>
     </item>
     <item>
-      <p>Si no se lista ninguna información en la lista <gui>Direcciones</gui> o si quiere establecer una nueva conexión, pulse <gui>Añadir</gui>.</p>
+      <p>Pulse en la pestaña <gui>IPv4</gui> o <gui>IPv6</gui> y cambie la opción <gui>Direcciones</gui> a <em>Manual</em>.</p>
     </item>
     <item>
-      <p>Introduzca la información de la <em>dirección IP</em>, <em>Máscara de red</em>, y <em>Puerta de enlace</em> en las cajas apropiadas. Los valores dependerán de la configuración de su red; hay reglas específicas sobre qué direcciones IP y qué máscaras de red son válidas para una red dada.</p>
+      <p>Introduzca la información de la <em>dirección IP</em>, la <em>Máscara de red</em>, y la <em>Puerta de enlace</em> en las cajas apropiadas. Los valores dependerán de la configuración de su red; hay reglas específicas sobre qué direcciones IP y qué máscaras de red son válidas para una red dada.</p>
     </item>
     <item>
       <p>Si es necesario, introduzca la dirección del <em>Servidor de nombres de dominio</em> en la caja <gui>Servidores DNS</gui>. Esta es la dirección IP de un servidor que busca nombres de dominio; la mayoría de las redes corporativas y proveedores de internet tienen servidores DNS dedicados.</p>
     </item>
     <item>
-      <p>Pulse <gui>Guardar</gui>. La conexión de red debería tener una dirección IP fija.</p>
+      <p>Pulse <gui>Aplicar</gui>. La conexión de red debería tener ahora una dirección IP fija.</p>
     </item>
   </steps>
 

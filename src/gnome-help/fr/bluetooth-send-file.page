@@ -6,27 +6,33 @@
     <link type="guide" xref="sharing"/>
     <link type="seealso" xref="files-share"/>
 
-    <revision pkgversion="3.8.2" date="2013-05-16" status="review"/>
+    <revision pkgversion="3.8" date="2013-05-16" status="review"/>
     <revision pkgversion="3.10" date="2013-11-09" status="review"/>
     <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+    <revision pkgversion="3.13" date="2014-09-22" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Jim Campbell</name>
-      <email its:translate="no">jwcampbell@gmail.com</email>
+      <email>jwcampbell@gmail.com</email>
     </credit>
     <credit type="author">
       <name>Paul W. Frields</name>
-      <email its:translate="no">stickster@gmail.com</email>
+      <email>stickster@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
       <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2015</years>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -48,7 +54,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2014</mal:years>
+      <mal:years>2011-2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -80,6 +86,12 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
   <title>Envoi de fichiers vers un périphérique Bluetooth</title>
@@ -88,19 +100,16 @@
   <if:when test="platform:unity">
     <p>Il est possible d'envoyer des fichiers vers des périphériques Bluetooth connectés, comme des téléphones portables ou d'autres ordinateurs. Certains types de périphériques ne permettent pas de transférer des fichiers, ou des types particuliers de fichiers. Vous pouvez envoyer des fichiers de trois façons : en utilisant l'icône Bluetooth dans la barre supérieure l'écran, depuis la fenêtre de paramétrage Bluetooth, ou directement depuis le gestionnaire de fichiers.</p>
   </if:when>
-  <p>You can send files to connected Bluetooth devices, such as some mobile
-  phones or other computers. Some types of devices do not allow the transfer
-  of files, or specific types of files. You can send files using the Bluetooth
-  settings window.</p>
+  <p>Il est possible d'envoyer des fichiers vers des périphériques Bluetooth connectés, comme des téléphones portables ou d'autres ordinateurs. Certains types de périphériques ne permettent pas de transférer des fichiers, ou des types particuliers de fichiers. Vous pouvez envoyer des fichiers à partir de la fenêtre paramètres Bluetooth.</p>
 </if:choose>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-terminology">Activities</gui> overview and
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
       start typing <gui>Bluetooth</gui>.</p>
     </item>
     <item>
-      <p>Click on <gui>Bluetooth</gui> to open the panel.</p>
+      <p>Cliquez sur <gui>Bluetooth</gui> pour ouvrir le panneau.</p>
     </item>
     <item>
       <p>Assurez-vous que l'interrupteur Bluetooth dans la barre des titres soit sur <gui>Activé</gui>.</p>
@@ -110,17 +119,14 @@
       <p>Un panneau spécifique au périphérique externe apparaît.</p>
     </item>
     <item>
-      <p>Click <gui>Send Files…</gui> and the file chooser will appear.</p>
+      <p>Cliquez sur <gui>Envoyer des fichiers…</gui> pour ouvrir le navigateur de fichiers.</p>
     </item>
     <item>
       <p>Choisissez le fichier que vous voulez envoyer et cliquez sur <gui>Sélectionner</gui>.</p>
       <p>Pour envoyer plusieurs fichiers d'un dossier, maintenez enfoncée la touche <key>Ctrl</key> pendant que vous les sélectionnez.</p>
     </item>
     <item>
-      <p>The owner of the receiving device usually has to press a button to
-      accept the file. The <gui>Bluetooth File Transfer</gui> dialog will show
-      the progress bar. Click <gui>Close</gui> when the transfer is
-      complete.</p>
+      <p>Le propriétaire du périphérique destinataire doit habituellement appuyer sur un bouton pour accepter le fichier. Dès que le propriétaire a accepté, la barre de progression du transfert de fichiers s'affiche sur votre écran. Cliquez sur <gui>Annuler</gui> lorsque le transfert est terminé.</p>
     </item>
   </steps>
 

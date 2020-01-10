@@ -7,13 +7,14 @@
 
     <revision pkgversion="3.4.0" date="2012-03-05" status="outdated"/>
     <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
-      <name>Συντελεστές στην τεκμηρίωση βίκι του ουμπούντου</name>
+      <name>Συντελεστές στην τεκμηρίωση wiki του Ubuntu</name>
     </credit>
     <credit type="author">
       <name>Έργο Τεκμηρίωσης GNOME</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -21,27 +22,39 @@
     <desc>Βεβαιωθείτε ότι οι απλές ρυθμίσεις δικτύου είναι σωστές και προετοιμάστε για τα επόμενα λίγα βήματα ανίχνευσης προβλημάτων.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name> Δημήτρης Σπίγγος</mal:name>
-      <mal:email>dmtrs32@gmail.com</mal:email>
-      <mal:years>2012, 2013, 2014</mal:years>
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2016</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name> Φώτης Τσάμης</mal:name>
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
       <mal:email>ftsamis@gmail.com</mal:email>
       <mal:years>2009</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name> Μάριος Ζηντίλης</mal:name>
+      <mal:name>Μάριος Ζηντίλης</mal:name>
       <mal:email>m.zindilis@dmajor.org</mal:email>
       <mal:years>2009, 2010</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name> Θάνος Τρυφωνίδης</mal:name>
-      <mal:email>tomtryf@gmail.com</mal:email>
-      <mal:years>2012</mal:years>
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gnome.org</mal:email>
+      <mal:years>2012-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
     </mal:credit>
   </info>
 
@@ -61,16 +74,16 @@
       <p>Εάν η ασύρματη κάρτα σας είναι <em>μέσα</em> στον υπολογιστή σας, βεβαιωθείτε ότι ο ασύρματος διακόπτης είναι ενεργός (εάν έχει έναν διακόπτη). Οι φορητοί υπολογιστές συχνά έχουν διακόπτες ασύρματου που μπορείτε να εναλλάξετε πατώντας έναν συνδυασμό πλήκτρων πληκτρολογίου.</p>
     </item>
     <item>
-      <p>Πατήστε στην περιοχή κατάστασης συστήματος της πάνω γραμμής και επιλέξτε <gui>ασύρματο</gui>, έπειτα επιλέξτε <gui>Ρυθμίσεις ασύρματου</gui>. Βεβαιωθείτε ότι το <gui>ασύρματο</gui> ορίστηκε σε <gui>ΝΑΙ</gui>. Θα πρέπει να ελέγξετε επίσης ότι η <link xref="net-wireless-airplane">λειτουργία αεροπλάνου δεν είναι ενεργή</link>.</p>
+      <p>Κάντε κλικ στην περιοχή κατάστασης του συστήματος στην πάνω γραμμής και επιλέξτε <gui>Wi-Fi</gui>, έπειτα επιλέξτε <gui>Ρυθμίσεις Wi-Fi</gui>. Βεβαιωθείτε ότι το <gui>Wi-Fi</gui> ορίστηκε σε <gui>ΝΑΙ</gui>. Θα πρέπει να ελέγξετε επίσης ότι η <link xref="net-wireless-airplane">Λειτουργία αεροπλάνου</link> <em>δεν</em> είναι ενεργοποιημένη.</p>
     </item>
     <item>
-      <p>Ανοίξτε τον τερματικό, πληκτρολογήστε <cmd>nm-tool</cmd> και πατήστε <key>εισαγωγή</key>.</p>
-      <p>Αυτό θα εμφανίσει πληροφορίες για το υλικό δικτύου και την κατάσταση σύνδεσης. Κοιτάξτε στη λίστα των πληροφοριών για να δείτε εάν υπάρχει ενότητα σχετική με τον προσαρμογέα ασύρματου δικτύου. Οι πληροφορίες για κάθε συσκευή δικτύου ξεχωρίζονται από μια γραμμή με παύλες. Εάν βρείτε τη γραμμή <code>κατάσταση: συνδεμένη</code> στην ενότητα για τον ασύρματο προσαρμογέα σας, αυτό σημαίνει ότι δουλεύει και είναι συνδεμένο με τον ασύρματο δρομολογητή.</p>
+      <p>Ανοίξτε το «Τερματικό», πληκτρολογήστε <cmd>nmcli device</cmd> και πατήστε το πλήκτρο <key>Enter</key>.</p>
+      <p>Αυτό θα εμφανίσει πληροφορίες σχετικά με τις διεπαφές δικτύου και την κατάσταση του. Δείτε τη λίστα για πληροφορίες και δείτε αν υπάρχει κάτι σχετικό με τον ασύρματο προσαρμογέα δικτύου. Αν η κατάσταση είναι <code>συνδεδεμένο</code>, σημαίνει πως ο προσαρμογέας λειτουργεί και είναι συνδεδεμένος στον ασύρματο δρομολογητή.</p>
     </item>
   </steps>
 
   <p>Εάν είσαστε συνδεμένοι με τον ασύρματο δρομολογητή, αλλά δεν μπορείτε να προσπελάσετε το διαδίκτυο, ο δρομολογητής σας ενδέχεται να μην έχει ρυθμιστεί σωστά, ή ο πάροχος υπηρεσιών διαδικτύου (ISP) μπορεί να αντιμετωπίζει κάποια τεχνικά προβλήματα. Εξετάστε τον δρομολογητή σας και τους οδηγούς διαμόρφωσης ISP για να βεβαιωθείτε ότι οι ρυθμίσεις είναι σωστές, ή επικοινωνήστε με τον ISP σας για υποστήριξη.</p>
 
-  <p>Εάν οι πληροφορίες από το <cmd>nm-tool</cmd> δεν έδειξαν ότι είσαστε συνδεμένοι στο δίκτυο, πατήστε <gui>επόμενο</gui> για να συνεχίσετε στο επόμενο τμήμα του οδηγού αντιμετώπισης προβλημάτων.</p>
+  <p>Εάν οι πληροφορίες από το <cmd>nmcli device</cmd> δεν έδειξαν ότι είσαστε συνδεμένοι στο δίκτυο, κάντε κλικ στο <gui>Επόμενο</gui> για να συνεχίσετε στο επόμενο τμήμα του οδηγού αντιμετώπισης προβλημάτων.</p>
 
 </page>

@@ -3,7 +3,7 @@
 
   <info>
     <link type="seealso" xref="shell-apps-open"/>
-    <link type="guide" xref="shell-overview#apps"/>
+    <link type="guide" xref="shell-overview#desktop"/>
 
     <revision pkgversion="3.6.0" date="2012-10-14" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
@@ -35,7 +35,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Kelemen Gábor</mal:name>
       <mal:email>kelemeng at gnome dot hu</mal:email>
-      <mal:years>2011, 2012, 2013, 2014</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -65,12 +65,12 @@
 
   <title>Kedvenc alkalmazások hozzáadása az indítópanelhez</title>
 
-  <p>Alkalmazás hozzáadása az <link xref="shell-terminology">indítópanelhez</link> a könnyebb hozzáférés érdekében:</p>
+  <p>Alkalmazás hozzáadása az <link xref="shell-introduction#activities">indítópanelhez</link> a könnyebb hozzáférés érdekében:</p>
 
   <steps>
     <item>
-      <p if:test="!platform:gnome-classic">Nyissa meg a <link xref="shell-terminology"><gui>Tevékenységek</gui> áttekintést</link> a képernyő bal felső sarkában lévő <gui>Tevékenységek</gui> gombra kattintással.</p>
-      <p if:test="platform:gnome-classic">Kattintson a képernyő bal felső sarkában lévő <link xref="shell-terminology"><gui>Tevékenységek</gui> menüre</link>, és válassza a <gui>Tevékenységek áttekintés</gui> menüpontot.</p></item>
+      <p if:test="!platform:gnome-classic">Nyissa meg a <gui xref="shell-introduction#activities">Tevékenységek</gui> áttekintést a képernyő bal felső sarkában lévő <gui>Tevékenységek</gui> gombra kattintással.</p>
+      <p if:test="platform:gnome-classic">Kattintson a képernyő bal felső sarkában lévő <gui xref="shell-introduction#activities">Alkalmazások</gui> menüre, és válassza a <gui>Tevékenységek áttekintés</gui> menüpontot.</p></item>
     <item>
       <p>Kattintson a rács gombra az indítópanel alján, és keresse meg a felvenni kívánt alkalmazást.</p>
     </item>
@@ -82,7 +82,7 @@
 
   <p>Alkalmazásikon indítópanelről való eltávolításához kattintson a jobb egérgombbal az alkalmazásikonra, és válassza az <gui>Eltávolítás a kedvencekből</gui> menüpontot.</p>
 
-  <note style="tip" if:test="platform:gnome-classic"><p>A kedvenc alkalmazások az <link xref="shell-terminology"><gui>Alkalmazások</gui> menü</link> <gui>Kedvencek</gui> szakaszában is megjelennek.</p>
+  <note style="tip" if:test="platform:gnome-classic"><p>A kedvenc alkalmazások az <gui xref="shell-introduction#activities">Alkalmazások</gui> menü <gui>Kedvencek</gui> szakaszában is megjelennek.</p>
   </note>
 
 </page>

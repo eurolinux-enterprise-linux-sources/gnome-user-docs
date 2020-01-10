@@ -2,9 +2,8 @@
 <page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="shell-exit" xml:lang="de">
 
   <info>
-    <link type="guide" xref="shell-overview#desktop"/>
+    <link type="guide" xref="shell-overview"/>
     <link type="guide" xref="power"/>
-    <link type="seealso" xref="power-hibernate"/>
     <link type="guide" xref="index" group="#first"/>
 
     <revision pkgversion="3.6.0" date="2012-09-15" status="review"/>
@@ -13,19 +12,19 @@
 
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="author">
       <name>Andre Klapper</name>
-      <email its:translate="no">ak-47@gmx.net</email>
+      <email>ak-47@gmx.net</email>
     </credit>
     <credit type="author">
       <name>Alexandre Franke</name>
-      <email its:translate="no">afranke@gnome.org</email>
+      <email>afranke@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -48,7 +47,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Christian Kirbach</mal:name>
       <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2014.</mal:years>
+      <mal:years>2011-2016.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -73,9 +72,7 @@
 
   <p>Um andere Benutzer Ihren Rechner benutzen zu lassen, können Sie sich entweder abmelden oder angemeldet bleiben und einfach nur den Benutzer wechseln. Wenn Sie den Benutzer wechseln, laufen alle Ihre Anwendungen weiter, und wenn Sie sich wieder anmelden, finden Sie alles wieder so vor, wie Sie es verlassen haben.</p>
 
-  <p>To <gui>Log Out</gui> or <gui>Switch User</gui>, click the
-  <link xref="shell-terminology">system menu</link> on the right side of the
-  top bar, click your name and then choose the right option.</p>
+  <p>Um sich <gui>abzumelden</gui> oder den <gui>Benutzer zu wechseln</gui>, klicken Sie auf das <link xref="shell-introduction#yourname">Systemmenü</link> rechts im oberen Panel, dann auf Ihren Namen und wählen Sie die entsprechende Option.</p>
 
   <note if:test="!platform:gnome-classic">
     <p>Die Einträge <gui>Abmelden</gui> und <gui>Benutzer wechseln</gui> sind nur dann im Menü, wenn mehr als ein Benutzerkonto auf Ihrem System vorhanden ist.</p>
@@ -96,10 +93,9 @@
 
   <p>Wenn Sie Ihren Rechner für eine kurze Zeit verlassen, sollten Sie den Bildschirm sperren, damit andere Personen nicht auf Ihre Dateien zugreifen und Anwendungen starten können. Wenn Sie zurückkehren, heben Sie den Vorhang auf dem <link xref="shell-lockscreen">Sperrbildschirm</link> und geben Sie einfach Ihr Passwort ein, um sich wieder anzumelden. Wenn Sie den Bildschirm nicht sperren, wird er nach einer gewissen Zeit automatisch gesperrt.</p>
 
-  <p>To lock your screen, click the system menu on the right side of the top
-  bar and press the lock screen button at the bottom of the menu.</p>
+  <p>Um Ihren Bildschirm zu sperren, klicken Sie auf das Systemmenü an der rechten Seite der oberen Leiste und klicken Sie dann auf den Knopf der Bildschirmsperre unten im Menü.</p>
 
-  <p>Wenn der Bildschirm gesperrt ist, können sich andere Benutzer mit dem jeweils eigenen Benutzerkonto anmelden, indem sie auf <gui>Benutzer wechseln</gui> am Passwortbildschirm klicken. Sie selbst können zu Ihrer Arbeitsumgebung zurückwechseln, wenn der andere Benutzer seine Arbeit beendet hat.</p>
+  <p>Wenn der Bildschirm gesperrt ist, können sich andere Benutzer mit dem jeweils eigenen Benutzerkonto anmelden, indem sie auf <gui>Benutzer wechseln</gui> am Passwortbildschirm klicken. Sie selbst können zu Ihrer Arbeitsumgebung zurück wechseln, wenn der andere Benutzer seine Arbeit beendet hat.</p>
 
 </section>
 
@@ -110,7 +106,7 @@
 
   <title>Bereitschaft</title>
 
-  <p>Setzen Sie Ihren Rechner in Bereitschaft, um Strom zu sparen solange Sie Ihren Rechner nicht benützen. Sollten Sie einen Laptop verwenden, versetzt GNOME Ihren Rechner automatisch in Bereitschaft, wenn Sie den Deckel schließen. Dabei wird der aktuelle Zustand in den Arbeitsspeicher gespeichert und die meisten Funktionen Ihres Rechners werden abgeschaltet. In der Bereitschaft wird dennoch ein sehr geringer Strom verbraucht.</p>
+  <p>Setzen Sie Ihren Rechner in Bereitschaft, um Strom zu sparen solange Sie Ihren Rechner nicht benützen. Sollten Sie einen Laptop verwenden, versetzt GNOME Ihren Rechner automatisch in Bereitschaft, wenn Sie den Deckel schließen. Dabei wird der aktuelle Zustand in den Arbeitsspeicher gespeichert und die meisten Funktionen Ihres Rechners werden abgeschaltet. Während der Bereitschaft wird dennoch ein sehr geringer Strom verbraucht.</p>
 
   <p>Wenn Sie Ihren Rechner manuell in Bereitschaft wollen, klicken Sie auf das Systemmenü rechts im oberen Panel und halten Sie dann die <key>Alt</key>-Taste gedrückt. Der Knopf zum Ausschalten wechselt in einen Knopf zum Versetzen in Bereitschaft. Klicken Sie dann auf den Knopf.</p>
 

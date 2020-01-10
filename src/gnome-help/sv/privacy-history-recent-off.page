@@ -1,88 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="privacy-history-recent-off" xml:lang="sv">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="privacy-history-recent-off" xml:lang="sv">
 
   <info>
     <link type="guide" xref="privacy"/>
+    <link type="guide" xref="files#more-file-tasks"/>
 
     <revision pkgversion="3.8" date="2013-03-11" status="final"/>
     <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-30" status="final"/>
 
     <credit type="author">
       <name>Jim Campbell</name>
-      <email its:translate="no">jwcampbell@gmail.com</email>
+      <email>jwcampbell@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
 
-    <desc>Stop or limit your computer from tracking your recently-used
-    files.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Stoppa eller begränsa din dator från att spåra dina nyligen använda filer.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
   </info>
 
-  <title>Turn off or limit file history tracking</title>
+  <title>Stäng av eller begränsa filhistorik</title>
   
-  <p>Tracking recently-used files and folders can make it easier to
-  find items that you have been working on, but you may wish to keep
-  these items private.</p>
+  <p>Att spåra nyligen använda filer och mappar gör det enklare att hitta objekt som du har arbetat på i filhanteraren och i fildialogerna i program. Du kan komma att vilja behålla din filanvändningshistorik privat, eller bara spåra din absolut senaste historik.</p>
 
   <steps>
-    <title>To turn off the file history tracking features of your
-    desktop:</title>
+    <title>Stäng av filhistorik</title>
     <item>
-      <p>Open the <gui xref="shell-terminology">Activities</gui> overview and
-      start typing <gui>Privacy</gui>.</p>
+      <p>Öppna översiktsvyn <gui xref="shell-introduction#activities">Aktiviteter</gui> och börja skriv <gui>Sekretessinställningar</gui>.</p>
     </item>
     <item>
-      <p>Click on <gui>Privacy</gui> to open the panel.</p>
+      <p>Klicka på <gui>Sekretessinställningar</gui> för att öppna panelen.</p>
     </item>
     <item>
-      <p>Select <gui>Usage &amp; History</gui>.</p>
+      <p>Välj <gui>Användning &amp; historik</gui>.</p>
     </item>
     <item>
-     <p>Set the <gui>Recently Used</gui> switch to <gui>OFF</gui>.</p>
-     <p>To re-enable this feature, set the <gui>Recently Used</gui> switch to
-     <gui>ON</gui>.</p>
+     <p>Slå om inställningen <gui>Nyligen använda</gui> till <gui>AV</gui>.</p>
+     <p>För att återaktivera denna funktion, slå om inställningen <gui>Nyligen använda</gui> till <gui>PÅ</gui>.</p>
     </item>
     <item>
-      <p>Use the <gui>Clear Recent History</gui> button to purge the history
-      immediately.</p>
+      <p>Använd knappen <gui>Töm senaste historik</gui> för att rensa historiken omedelbart.</p>
     </item>
   </steps>
   
-  <note><p>This setting will not affect how your web browser stores information
-  about the web sites you visit.</p></note>
+  <note><p>Denna inställningar kommer inte att påverka hur din webbläsare sparar information om webbplatser du besöker.</p></note>
 
   <steps>
-    <title>To restrict the amount of time your file history is tracked:</title>
+    <title>Begränsa hur länge din filhistorik spåras</title>
     <item>
-      <p>Open the <gui xref="shell-terminology">Activities</gui> overview and
-      start typing <gui>Privacy</gui>.</p>
+      <p>Öppna översiktsvyn <gui xref="shell-introduction#activities">Aktiviteter</gui> och börja skriv <gui>Sekretessinställningar</gui>.</p>
     </item>
     <item>
-      <p>Click on <gui>Privacy</gui> to open the panel.</p>
+      <p>Klicka på <gui>Sekretessinställningar</gui> för att öppna panelen.</p>
     </item>
     <item>
-      <p>Select <gui>Usage &amp; History</gui>.</p>
+      <p>Välj <gui>Användning &amp; historik</gui>.</p>
     </item>
     <item>
-     <p>Ensure the <gui>Recently Used</gui> switch is <gui>ON</gui>.</p>
+     <p>Säkerställ att inställningen <gui>Nyligen använda</gui> är <gui>PÅ</gui>.</p>
     </item>
     <item>
-     <p>Select the length of time to <gui>Retain History</gui>. Choose from
-     options <gui>1 day</gui>, <gui>7 days</gui>, <gui>30 days</gui>, or
-     <gui>Forever</gui>.</p>
+     <p>Välj tidsintervallet under vilket du vill <gui>Behålla historik</gui>. Välj bland alternativen <gui>1 dag</gui>, <gui>7 dagar</gui>, <gui>30 dagar</gui> eller <gui>För alltid</gui>.</p>
     </item>
     <item>
-      <p>Use the <gui>Clear Recent History</gui> button to purge the history
-      immediately.</p>
+      <p>Använd knappen <gui>Töm senaste historik</gui> för att rensa historiken omedelbart.</p>
     </item>
   </steps>
 

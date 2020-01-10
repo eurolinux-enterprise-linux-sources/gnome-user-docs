@@ -6,6 +6,7 @@
 
     <revision pkgversion="3.6.1" date="2012-11-10" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.14.0" date="2015-01-14" status="review"/>
 
     <credit type="author copyright">
       <name>Tiffany Antopolski</name>
@@ -21,6 +22,11 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2015</years>
+    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
@@ -35,7 +41,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Kelemen Gábor</mal:name>
       <mal:email>kelemeng at gnome dot hu</mal:email>
-      <mal:years>2011, 2012, 2013, 2014</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -72,7 +78,7 @@
 
   <steps>
     <item>
-      <p>Nyissa meg a <app>Képernyőkép</app> alkalmazást a <gui xref="shell-terminology">Tevékenységek</gui> áttekintésből.</p>
+      <p>Nyissa meg a <app>Képernyőkép</app> alkalmazást a <gui xref="shell-introduction#activities">Tevékenységek</gui> áttekintésből.</p>
     </item>
     <item>
       <p>A <app>Képernyőkép</app> ablakban válassza ki, hogy a teljes képernyőről, az aktuális ablakról vagy egy képernyőterületről szeretne-e képet készíteni. Beállíthat késleltetést, ha ki szeretne választani egy ablakot vagy más módon elő szeretné készíteni asztalát a képhez. Ezek után kiválaszthat hatásokat is.</p>
@@ -87,7 +93,7 @@
     </item>
   </steps>
 
-  <note style="tip">
+  <section id="keyboard-shortcuts">
     <title>Gyorsbillentyűk</title>
 
     <p>A következő globális gyorsbillentyűkkel bármikor gyorsan készíthet képernyőképet az asztaláról, egy ablakról vagy egy területről:</p>
@@ -105,8 +111,11 @@
     </list>
 
     <p>A gyorsbillentyűk használatakor a kép automatikusan mentésre kerül a saját mappájában lévő <file>Képek</file> mappába, a fájl neve a <file>Képernyőkép</file> szóval kezdődik, és tartalmazza a készítés dátumát és idejét.</p>
+    <note style="note">
+      <p>Ha nincsen <file>Képek</file> könyvtára, a képek a saját mappájába kerülnek mentésre.</p>
+    </note>
     <p>Ha a fenti gyorsbillentyűkkel együtt a <key>Ctrl</key> billentyűt is lenyomja, akkor a képernyőkép a vágólapra lesz másolva a mentés helyett.</p>
-  </note>
+  </section>
 
 </section>
 
@@ -118,7 +127,7 @@
   <steps>
     <item>
       <p>Nyomja meg a <keyseq><key>Ctrl</key><key>Alt</key><key>Shift</key><key>R</key></keyseq> billentyűkombinációt a képernyő tartalmának rögzítéséhez.</p>
-      <p>A felvétel alatt egy vörös kör jelenik meg a képernyő jobb alsó sarkában.</p>
+      <p>A felvétel alatt egy vörös kör jelenik meg a képernyő jobb felső sarkában.</p>
     </item>
     <item>
       <p>Amikor befejezte, nyomja meg újra a <keyseq><key>Ctrl</key><key>Alt</key><key>Shift</key><key>R</key></keyseq> kombinációt a felvétel leállításához.</p>
@@ -127,6 +136,10 @@
       <p>A videó automatikusan a saját mappájában lévő <file>Videók</file> mappába kerül mentésre, a fájl neve a <file>Képernyővideó</file> szóval kezdődik, és tartalmazza a készítés dátumát és idejét.</p>
     </item>
   </steps>
+
+  <note style="note">
+    <p>Ha nincsen <file>Videók</file> könyvtára, a képek a saját mappájába kerülnek mentésre.</p>
+  </note>
 
 </section>
 

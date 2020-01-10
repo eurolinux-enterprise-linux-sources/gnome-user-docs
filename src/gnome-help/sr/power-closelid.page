@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="power-closelid" xml:lang="sr">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="power-closelid" xml:lang="sr">
 
   <info>
     <link type="guide" xref="power"/>
     <link type="seealso" xref="power-suspendfail"/>
+    <link type="seealso" xref="power-suspend"/>
 
     <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
     <revision pkgversion="3.10" date="2013-11-08" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Гномов пројекат документације</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="author editor">
       <name>Екатерина Герасимова</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Петр Ковар</name>
+      <email>pknbe@volny.cz</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -35,7 +41,14 @@
     <p>Ова упутства ће радити само ако користите <app>systemd</app>. Обратите се вашој дистрибуцији за више података.</p>
   </note>
 
-  <p>Ако не желите да рачунар обустави рад када затворите поклопац, можете да измените подешавања тог понашања. Морате имати <link xref="user-admin-change">администраторску лозинку</link> да измените подешавање.</p>
+  <note style="important">
+    <p>Треба да сте инсталирали програм <app>Алат за лицкање</app> на вашем рачунару да бисте могли да измените ово подешавање.</p>
+    <if:if xmlns:if="http://projectmallard.org/if/1.0/" test="action:install">
+      <p><link style="button" action="install:gnome-tweak-tool">Инсталирајте <app>Алат за лицкање</app></link></p>
+    </if:if>
+  </note>
+
+  <p>Ако не желите да рачунар обустави рад када затворите поклопац, можете да измените подешавање тог понашања.</p>
 
   <note style="warning">
     <p>Будите веома пажљиви ако мењате ово подешавање. Неки преносни рачунари мог да се прегреју ако су остављени да раде са спуштеним поклопцем, поготово ако су у затвореном простору као што је ранац.</p>
@@ -43,27 +56,19 @@
 
   <steps>
     <item>
-      <p>Отворите програм <app>Терминал</app> из прегледа <gui>Активности</gui>.</p>
+      <p>Отворите преглед <gui xref="shell-introduction#activities">Активности</gui> и почните да куцате <gui>Детаљи</gui>.</p>
     </item>
     <item>
-      <p>Извршите следећу наредбу:</p>
-      <screen its:translate="no"><output style="prompt">$</output> <input>sudoedit /etc/systemd/logind.conf</input></screen>
+      <p>Притисните на <gui>Алат за лицкање</gui> да га отворите.</p>
     </item>
     <item>
-      <p>Сада ћете видети садржај датотеке. Потражите <code>HandleLidSwitch=</code> у датотеци. Ред може бити под наводником <code>#</code> на почетку и може га пратити аргумент. Ако ред већ постоји, обришите наводник. У супротном, додајте ред.</p>
-      <code>
-[Login]
-HandleLidSwitch=<input>lock</input>
-      </code>
-      <p>Можете да користите <input>lock</input> за закључавање екрана, <input>ignore</input> за ништа, <input>poweroff</input> за гашење рачунара или <input>suspend</input> за обустављање рада. За више података, погледајте <link href="man:logind.conf">logind.conf help</link>.</p>
+      <p>Притисните на језичак <gui>Напајање</gui>.</p>
     </item>
     <item>
-      <p>Када завршите са мењањем датотеке, сачувајте измене и затворите уређивача.</p>
+      <p>Пребаците <gui>Не обустављај при спуштању поклопца</gui> на <gui>УКЉ.</gui>.</p>
     </item>
     <item>
-      <p>Покрените следећу наредбу да би ваше измене радиле:</p>
-      <screen its:translate="no"><output style="prompt">$</output> <input>sudo systemctl restart systemd-logind.service</input></screen>
-      <p>Ако не покренете ову наредбу, измене ће радити само након поновног покретања рачунара.</p>
+      <p>Затворите прозор <gui>Алата за лицкање</gui>.</p>
     </item>
   </steps>
 

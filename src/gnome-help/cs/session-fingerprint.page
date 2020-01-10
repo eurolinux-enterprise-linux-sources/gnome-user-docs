@@ -10,29 +10,28 @@
     <revision pkgversion="3.13.92" date="2014-09-22" status="final"/>
 
     <credit type="author">
-      <name>GNOME Documentation Project</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <name>Dokumentační projekt GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="author">
       <name>Paul W. Frields</name>
-      <email its:translate="no">stickster@gmail.com</email>
+      <email>stickster@gmail.com</email>
       <years>2011</years>
     </credit>
     <credit type="author editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
       <years>2013</years>
     </credit>
     <credit type="editor">
       <name>Jim Campbell</name>
-      <email its:translate="no">jcampbell@gnome.org</email>
+      <email>jcampbell@gnome.org</email>
       <years>2014</years>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>You can log in to your system using a supported fingerprint scanner
-    instead of typing in your password.</desc>
+    <desc>Jak se přihlásit do systému pomocí podpory snímání otisků prstů místo psaní hesla.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
@@ -43,80 +42,62 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Marek Černocký</mal:name>
       <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:years>2014, 2015</mal:years>
     </mal:credit>
   </info>
 
-  <title>Log in with a fingerprint</title>
+  <title>Přihlašování pomocí otisku prstu</title>
 
-  <p>If your system has a supported fingerprint scanner, you can record your
-  fingerprint and use it to log in.</p>
+  <p>V případě, že váš systém podporuje snímač otisků prstů, můžete nahrát svůj otisk prstu a použít jej k přihlašování.</p>
 
 <section id="record">
-  <title>Record a fingerprint</title>
+  <title>Zaznamenání otisku prstu</title>
 
-  <p>Before you can log in with your fingerprint, you need to record it so that
-  the system can use it to identify you.</p>
+  <p>Dříve, než se můžete přihlašovat svým otiskem prstu, potřebujete jej nahrát, aby jej systém mohl používat k vaší identifikaci.</p>
 
   <note style="tip">
-    <p>If your finger is too dry, you may have difficulty registering your
-    fingerprint. If this happens, moisten your finger slightly, dry it with a
-    clean, lint-free cloth, and retry.</p>
+    <p>V případě, že máte příliš suchou pokožku na prstech, můžete mít problém s registrací vašeho otisku prstu. V takové situaci si prsty lehce navlhčete, osušte čistým hadříkem, který nepouští chlupy, a zkuste to znovu.</p>
   </note>
 
-  <p>You need <link xref="user-admin-explain">administrator privileges</link>
-  to edit user accounts other than your own.</p>
+  <p>Abyste mohli měnit jiný, než svůj, uživatelský účet, potřebujete <link xref="user-admin-explain">oprávnění správce</link>.</p>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-terminology">Activities</gui> overview and
-      start typing <gui>Users</gui>.</p>
+      <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Uživatelé</gui>.</p>
     </item>
     <item>
       <p>Kliknutím na <gui>Uživatelé</gui> otevřete příslušný panel.</p>
     </item>
     <item>
-      <p>Press on <gui>Disabled</gui>, next to <gui>Fingerprint Login</gui> to
-      add a fingerprint for the selected account. If you are adding the
-      fingerprint for a different user, you will first need to
-      <gui>Unlock</gui> the panel.</p>
+      <p>Zmáčkněte <gui>Zakázáno</gui> vedle <gui>Přihlášení otiskem prstu</gui>, abyste přidali otisk prstu pro vybraný účet. V případě, že přidáváte otisk pro jiného uživatele, musíte panel nejprve <gui>Odemknout</gui>.</p>
     </item>
     <item>
-      <p>Select the finger that you want to use for the fingerprint, then
-      <gui style="button">Next</gui>.</p>
+      <p>Vyberte prst, který chcete pro otisk použít, a zmáčkněte <gui style="button">Následující</gui>.</p>
     </item>
     <item>
-      <p>Follow the instructions in the dialog and swipe your finger at a
-      <em>moderate speed</em> over your fingerprint reader. Once the computer
-      has a good record of your fingerprint, you will see a <gui>Done!</gui>
-      message.</p>
+      <p>Postupujte podle pokynů v dialogovém okně a přejeďte prstem <em>pomalu a plynule</em> přes čtečku otisků prstů. Jakmile bude mít počítač váš otisk prstu správně zaznamenán, uvidíte zprávu <gui>Hotovo!</gui>.</p>
     </item>
     <item>
-      <p>Select <gui>Next</gui>. You will see a confirmation message that
-      your fingerprint was saved successfully. Select <gui>Close</gui> to
-      finish.</p>
+      <p>Vyberte <gui>Další</gui>. Uvidíte potvrzovací zprávu, že se váš otisk prstu úspěšně uložil. Pro dokončení vyberte <gui>Zavřít</gui>.</p>
     </item>
   </steps>
 
 </section>
 
 <section id="verify">
-  <title>Check that your fingerprint works</title>
+  <title>Kontrola, že otisky prstů fungují</title>
 
-  <p>Now check that your new fingerprint login works. If you register a
-  fingerprint, you still have the option to log in with your password.</p>
+  <p>Nyní zkontrolujte, jestli přihlášením s vaším novým otiskem prstu funguje. I když máte zaregistrovaný otisk prstu, stále máte na výběr přihlášení pomocí svého hesla.</p>
 
   <steps>
     <item>
       <p>Uložte případnou rozdělanou práci a pak se <link xref="shell-exit#logout">odhlaste</link>.</p>
     </item>
     <item>
-      <p>At the login screen, select your name from the list. The password
-      entry form will appear.</p>
+      <p>Na přihlašovací obrazovce vyberte v seznamu své jméno. Objeví se pole pro zadání hesla.</p>
     </item>
     <item>
-      <p>Instead of typing your password, you should be able to swipe your
-      finger on the fingerprint reader.</p>
+      <p>Místo zadávání hesla by vám mělo fungovat přejetí prstem přes čtečku otisků prstů.</p>
     </item>
   </steps>
 

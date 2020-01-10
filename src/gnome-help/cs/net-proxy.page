@@ -1,32 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-proxy" xml:lang="cs">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itst="http://itstool.org/extensions/" type="topic" style="task" id="net-proxy" xml:lang="cs">
 
   <info>
+    <its:rules xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
     <link type="guide" xref="net-general"/>
 
     <revision pkgversion="3.7.1" version="0.2" date="2012-11-16" status="outdated"/>
     <revision pkgversion="3.10" date="2013-11-01" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
-      <email its:translate="no">philbull@gmail.com</email>
+      <email>philbull@gmail.com</email>
     </credit>
     <credit type="author">
       <name>Baptiste Mille-Mathias</name>
-      <email its:translate="no">baptistem@gnome.org</email>
+      <email>baptistem@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>A proxy is an intermediary for web traffic, it can be used for accessing web services anonymously, for control or security purposes.</desc>
+    <desc>Proxy je prostředníkem ve webovém provozu. Používá se pro anonymní přístup k webům, k řízení provozu nebo z bezpečnostních důvodů.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
@@ -37,63 +40,52 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Marek Černocký</mal:name>
       <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:years>2014, 2015</mal:years>
     </mal:credit>
   </info>
 
-  <title>Define proxy settings</title>
+  <title>Nastavení proxy</title>
 
 <section id="what">
-  <title>What is a proxy?</title>
+  <title>Co je to proxy?</title>
 
-  <p>A <em>web proxy</em> filters websites that you look at, it receipts
-  requests from your web browser to fetches the web pages and their elements,
-  and following a policy will decide to pass them you back. They are commonly
-  used in businesses and at public wireless hotspots to control what websites
-  you can look at, prevent you from accessing the internet without logging in,
-  or to do security checks on websites.</p>
+  <p><em>Webová proxy</em> filtruje webové stránky, na které si díváte, přijímá požadavky od vašeho webového prohlížeče, aby stránky a jejich prvky stáhla a následně je s dodržením předepsaných zásad předala zpět prohlížeči. Obvykle se používá ve firemním prostředí a u veřejných přístupových bodů, aby bylo možné řídit, na které webové stránky se můžete dívat, aby vám zabránila v přístupu k Internetu bez přihlášení a nebo kvůli bezpečnostní kontrole webových stránek.</p>
 
 </section>
 
 <section id="change">
-  <title>Change proxy method</title>
+  <title>Změna metody proxy</title>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-terminology">Activities</gui> overview and
-      start typing <gui>Network</gui>.</p>
+      <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Síť</gui>.</p>
     </item>
     <item>
-      <p>Click on <gui>Network</gui> to open the panel.</p>
+      <p>Kliknutím na <gui>Síť</gui> otevřete příslušný panel.</p>
     </item>
     <item>
-      <p>Select <gui>Network proxy</gui> from the list on the left.</p>
+      <p>V seznamu nalevo vyberte <gui>Proxy sítě</gui>.</p>
     </item>
     <item>
-      <p>Choose which proxy method you want to use from:</p>
+      <p>Zvolte, kterou metodu chcete používat:</p>
       <terms>
         <item>
-          <title>None</title>
-          <p>The applications will use a direct connection to fetch the content
-          from the web.</p>
+          <title><gui itst:context="proxy">Žádná</gui></title>
+          <p>Aplikace budu používat k získání obsahu z webu přímé připojení.</p>
         </item>
         <item>
-          <title>Manual</title>
-          <p>For each proxied protocol, define the address of a proxy and port
-          for the protocols. The protocols are <gui>HTTP</gui>,
-          <gui>HTTPS</gui>, <gui>FTP</gui> and <gui>SOCKS</gui>.</p>
+          <title><gui>Ručně</gui></title>
+          <p>Pro každý protokol určete adresu proxy a port protokolu. Protokoly jsou <gui>HTTP</gui>, <gui>HTTPS</gui>, <gui>FTP</gui> a <gui>SOCKS</gui>.</p>
         </item>
         <item>
-          <title>Automatic</title>
-          <p>A URL pointing to a resource, which contains the appropriate
-          configuration for your system.</p>
+          <title><gui>Automaticky</gui></title>
+          <p>Adresa URL ukazující na zdroj, který obsahuje příslušná nastavení pro váš systém.</p>
         </item>
       </terms>
     </item>
   </steps>
 
-  <p>Applications that use the network connection will use your specified proxy
-  settings.</p>
+  <p>Aplikace, které používají síťové připojení, budou používat vámi určená nastavení proxy.</p>
 
 </section>
 

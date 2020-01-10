@@ -2,11 +2,13 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-delete" xml:lang="pt-BR">
 
   <info>
-    <link type="guide" xref="files"/>
+    <link type="guide" xref="files#common-file-tasks"/>
     <link type="seealso" xref="files-recover"/>
 
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-16" status="review"/>
     <revision pkgversion="3.13.92" date="2013-09-20" status="candidate"/>
+    <revision pkgversion="3.16" date="2015-02-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
 
     <credit type="author">
       <name>Cristopher Thomas</name>
@@ -18,11 +20,15 @@
     </credit>
     <credit type="author">
       <name>Jim Campbell</name>
-      <email>jwcampbell@gmail.com</email>
+      <email>jcampbell@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -36,12 +42,6 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Ferreira</mal:name>
-      <mal:email>rafael.f.f1@gmail.com</mal:email>
-      <mal:years>2012, 2013, 2014.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Enrico Nicoletto</mal:name>
       <mal:email>liverig@gmail.com</mal:email>
       <mal:years>2013.</mal:years>
@@ -52,23 +52,27 @@
       <mal:email>joaosantana@outlook.com</mal:email>
       <mal:years>2013.</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
   </info>
 
 <title>Excluindo arquivos e pastas</title>
 
-  <p>If you do not want a file or folder any more, you can delete it. When you
-  delete an item it is moved to the <gui>Trash</gui> folder, where it is stored
-  until you empty the trash. You can <link xref="files-recover">restore items
-  </link> in the <gui>Trash</gui> folder to their original location if you
-  decide you need them, or if they were accidentally deleted.</p>
+  <p>Se você não mais quiser um arquivo ou pasta, você pode excluí-lo(a). Quando você exclui um item, ele é movido para a <gui>Lixeira</gui>, onde ele fica armazenado até que você a esvazie. Você pode <link xref="files-recover">restaurar os itens</link> da <gui>Lixeira</gui> para sua localização original se você resolver que precisa deles, ou eles se foram excluídos acidentalmente.</p>
 
   <steps>
     <title>Para enviar um arquivo para a lixeira:</title>
     <item><p>Selecione o item que queira excluir clicando nele uma vez.</p></item>
-    <item><p>Pressione <keyseq><key>Ctrl</key><key>Delete</key></keyseq> no seu teclado. Como alternativa, arraste o item para a <gui>Lixeira</gui> no barra lateral.</p></item>
+    <item><p>Pressione <key>Delete</key> no seu teclado. Alternativamente, arraste o item para a <gui>Lixeira</gui> no barra lateral.</p></item>
   </steps>
 
-  <p>Para excluir os arquivos permanentemente, e liberar espaço de disco do seu computador, você precisa esvaziar a lixeira. Para esvaziar, clique com botão direito na <gui>Lixeira</gui> na barra lateral e selecione <gui>Esvaziar lixeira</gui>.</p>
+  <p>O arquivo será movido para a lixeira e você terá a opção de <gui>Desfazer</gui> a exclusão. O botão <gui>Desfazer</gui> aparecerá por poucos segundos. Se você selecionar <gui>Desfazer</gui>, o arquivo será restaurado para sua localização original.</p>
+
+  <p>Para excluir os arquivos permanentemente, e liberar espaço em disco do seu computador, você precisa esvaziar a lixeira. Para esvaziar, clique com botão direito na <gui>Lixeira</gui> na barra lateral e selecione <gui>Esvaziar lixeira</gui>.</p>
 
   <section id="permanent">
     <title>Excluir um arquivo permanentemente</title>
@@ -80,8 +84,6 @@
     <item><p>Pressione e mantenha a tecla <key>Shift</key>, e então pressione a tecla <key>Delete</key> no seu teclado.</p></item>
     <item><p>Como você não poderá desfazer essa ação, será pedida uma confirmação sobre seu desejo de excluir o arquivo ou a pasta.</p></item>
   </steps>
-
-  <note style="tip"><p>Se você precisa frequentemente excluir arquivos sem usar a lixeira (por exemplo, se você costuma trabalhar com dados sigilosos), você pode adicionar um item <gui>Excluir</gui> ao menu de contexto para arquivos e pastas. Clique em <gui>Arquivos</gui>, escolha <gui>Preferências</gui> e selecione a aba <gui>Comportamento</gui>. Selecione <gui>Incluir um comando excluir que não usa a lixeira</gui>.</p></note>
 
   <note><p>Os arquivos excluídos em um <link xref="files#removable">dispositivo removível</link> podem não ser visíveis em outros sistemas operacionais, como Windows ou Mac OS. Os arquivos ainda estão lá e estarão disponíveis quando você plugar o dispositivo de volta ao seu computador.</p></note>
 

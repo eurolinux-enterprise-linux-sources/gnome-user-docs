@@ -6,15 +6,20 @@
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
       <email>tiffany@antopolski.com</email>
     </credit>
+    <credit type="author editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc/>
+    <desc>Print a booklet from a PDF using a single-sided printer.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Aniket Deshpande &lt;djaniketster@gmail.com&gt;, 2013; संदिप शेडमाके</mal:name>
@@ -37,10 +42,13 @@
       <p>छपाई संवाद उघडा. यास सहसा मेन्यु अंतर्गत <gui style="menuitem">छपाई</gui> यांच्या सहाय्याने किंवा <keyseq><key>Ctrl</key><key>P</key></keyseq> कळफलक शार्टकटचा वापर करून शक्य आहे.</p>
     </item>
     <item>
-      <p><gui>सामान्य</gui> टॅब निवडा.</p>
-      <p>Under <gui>Range</gui>, choose <gui>Pages</gui>.</p>
+      <p>Click the <gui>Properties...</gui> button </p>
+      <p>In the <gui>Orientation</gui> drop-down list, make sure that
+      <gui>Landscape</gui> is selected.</p>
+      <p>Click <gui>OK</gui> to go back to the print dialog.</p>
     </item>
     <item>
+      <p>Under <gui>Range and Copies</gui>, choose <gui>Pages</gui>.</p>
       <p>पृष्ठांची संख्या या क्रमवारीत टाइप करा (n म्हणजे एकूण पृष्ठांची संख्या, आणि ४ संख्येच्या पटीत):</p>
       <p>n, १, २, n-१, n-२, ३, ४, n-३, n-४, ५, ६, n-५, n-६, ७, ८, n-७, n-८, ९, १०, n-९, n-१०, ११, १२, n-११…</p>
       <p>…जोपर्यंत तुम्ही सर्व पृष्ठे टाइप केले असाल.</p>
@@ -54,14 +62,10 @@
      </note>
     </item>
     <item>
-      <p><gui>पान रचना</gui> टॅब निवडा.</p>
-      <p>Under <gui>Layout</gui>, in the <gui>Two-sided</gui> drop-down list,
-      select <gui>One Sided</gui>.</p>
-      <p>In the <gui>Pages per side</gui> drop-down list, select
-      <gui>2</gui>.</p>
-      <p>In the <gui>Page ordering</gui> drop-down list, select <gui>Left to
-      right</gui>.</p>
-      <p><gui>फक्त छपाई</gui> मेन्युमध्ये, <gui>विषम पृष्ठे</gui> निवडा.</p>
+      <p>Choose the <gui>Page Layout</gui> tab.</p>
+      <p>Under <gui>Layout</gui>, select <gui>Brochure</gui>.</p>
+      <p>Under <gui>Page Sides</gui>, in the <gui>Include</gui> drop-down list,
+      select <gui>Front sides / right pages</gui>.</p>
     </item>
     <item>
       <p><gui>छापा</gui> क्लिक करा.</p>
@@ -73,8 +77,9 @@
       <p>छपाई संवाद उघडा. यास सहसा मेन्यु अंतर्गत <gui style="menuitem">छपाई</gui> यांच्या सहाय्याने किंवा <keyseq><key>Ctrl</key><key>P</key></keyseq> कळफलक शार्टकटचा वापर करून शक्य आहे.</p>
     </item>
     <item>
-      <p><gui>पान रचना</gui> टॅब निवडा.</p>
-      <p><gui>फक्त छपाई</gui> मेन्युमध्ये, <gui>षम पृष्ठे</gui> निवडा .</p>
+      <p>Choose the <gui>Page Layout</gui> tab.</p>
+      <p>Under <gui>Page Sides</gui>, in the <gui>Include</gui> drop-down list,
+      select <gui>Back sides / left pages</gui>.</p>
     </item>
     <item>
       <p><gui>छापा</gui> क्लिक करा.</p>

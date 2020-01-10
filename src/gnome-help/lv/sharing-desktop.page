@@ -5,19 +5,21 @@
     <link type="guide" xref="sharing"/>
     <link type="guide" xref="prefs-sharing"/>
 
-    <revision pkgversion="3.8.2" date="2013-05-09" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.14" date="2014-10-13" status="candidate"/>
+    <revision pkgversion="3.14" date="2015-01-25" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
 
     <credit type="author">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
-
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jcampbell@gnome.org</email>
+    </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <desc>Ļaut citiem cilvēkiem skatīt un mijiedarboties ar jūsu darbvirsmu, izmantojot VNC.</desc>
@@ -39,7 +41,7 @@
 
   <steps>
     <item>
-      <p>Atveriet <link xref="shell-terminology">aktivitāšu</link> pārskatu un sāciet rakstīt <gui>Koplietošana</gui>.</p>
+      <p>Atveriet <gui xref="shell-introduction#activities">Aktivitāšu</gui> pārskatu un sāciet rakstīt <gui>Koplietošana</gui>.</p>
     </item>
     <item>
       <p>Spiediet <gui>Koplietošana</gui>, lai atvērtu paneli.</p>
@@ -102,22 +104,31 @@
   </section>
 
   <section id="networks">
-  <title>Networks</title>
+  <title>Tīkli</title>
 
   <p>The <gui>Networks</gui> section lists the networks to which you are
   currently connected. Use the <gui>ON | OFF</gui> switch next to each to
   choose where your desktop can be shared.</p>
-
   </section>
 
-<!-- TODO: Check that this works.
   <section id="notification-icon">
-  <title>Stop sharing your desktop</title>
+  <title>Apturēt savas darbvirsmas koplietošanu</title>
 
   <p>You can disconnect someone who is viewing your desktop using the
-  notification icon in the message tray.</p>
+  <gui>notification icon</gui> in the message Tray. To do so:</p>
+    <steps>
+      <item><p>Open the message tray by pressing
+      <keyseq><key>Super</key><key>M</key></keyseq>, or by moving your mouse
+      pointer to the very bottom of your screen.</p></item>
+      <item><p>Click on the <gui>Desktop</gui> icon in the
+      <gui>Message Tray</gui>. This will open the <app>Sharing</app> panel.</p>
+      </item>
+      <item><p>Izvēlies <gui>Ekrāna koplietošana</gui>.</p></item>
+      <item><p>Toggle the <gui>Screen Sharing</gui> slider to <gui>Off</gui>.
+      </p></item>
+    </steps>
 
   </section>
--->
+
 
 </page>

@@ -5,19 +5,21 @@
     <link type="guide" xref="sharing"/>
     <link type="guide" xref="prefs-sharing"/>
 
-    <revision pkgversion="3.8.2" date="2013-05-09" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.14" date="2014-10-13" status="candidate"/>
+    <revision pkgversion="3.14" date="2015-01-25" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
 
     <credit type="author">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
-
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jcampbell@gnome.org</email>
+    </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <desc>Permettre à d'autres personnes de voir et d'interagir avec votre bureau en utilisant VNC.</desc>
@@ -37,7 +39,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2014</mal:years>
+      <mal:years>2011-2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -69,6 +71,12 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
   <title>Partage de votre bureau</title>
@@ -87,7 +95,8 @@
 
   <steps>
     <item>
-      <p>Ouvrez la vue d'ensemble des <gui xref="shell-terminology">Activités</gui> et commencez à saisir <gui>Partage</gui>.</p>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Sharing</gui>.</p>
     </item>
     <item>
       <p>Cliquez sur <gui>Partage</gui> pour ouvrir le panneau.</p>
@@ -150,22 +159,25 @@
   </section>
 
   <section id="networks">
-  <title>Networks</title>
+  <title>Réseaux</title>
 
-  <p>The <gui>Networks</gui> section lists the networks to which you are
-  currently connected. Use the <gui>ON | OFF</gui> switch next to each to
-  choose where your desktop can be shared.</p>
-
+  <p>La section <gui>Réseaux</gui> affiche les réseaux auquels vous êtes actuellement connectés. Basculez l'interrupteur correspondant à chacun d'entre eux sur <gui>Activé</gui> ou sur <gui>Désactivé</gui> pour décider avec qui votre ordinateur peut être partagé.</p>
   </section>
 
-<!-- TODO: Check that this works.
   <section id="notification-icon">
-  <title>Stop sharing your desktop</title>
+  <title>Arrêt du partage de votre bureau</title>
 
-  <p>You can disconnect someone who is viewing your desktop using the
-  notification icon in the message tray.</p>
+  <p>Pour déconnecter quelqu'un en train de visualiser votre bureau avec l'<gui>icône de notifications</gui> du tiroir de messagerie :</p>
+    <steps>
+      <item><p>ouvrez le tiroir de messagerie en appuyant sur <keyseq><key>Logo</key><key>M</key></keyseq> ou en plaquant le curseur de votre souris contre le bas de l'écran,</p></item>
+      <item><p>cliquez sur l'icône <gui>Bureau</gui> du <gui>Tiroir de messagerie</gui> pour ouvrir le panneau <gui>Partage</gui>,</p>
+      </item>
+      <item><p>Choisissez <gui>Partage de l'écran</gui>.</p></item>
+      <item><p>Toggle the <gui>Screen Sharing</gui> slider to <gui>Off</gui>.
+      </p></item>
+    </steps>
 
   </section>
--->
+
 
 </page>

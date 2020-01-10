@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" version="1.0 ui/1.0" id="keyboard-shortcuts-set" xml:lang="de">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" version="1.0 ui/1.0" id="keyboard-shortcuts-set" xml:lang="de">
 
   <info>
     <link type="guide" xref="keyboard"/>
@@ -8,14 +8,15 @@
     <revision pkgversion="3.8.0" version="0.3" date="2013-03-23" status="review"/>
     <revision pkgversion="3.9.92" date="2013-10-11" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+    <revision pkgversion="3.17.90" date="2015-08-30" status="candidate"/>
 
     <credit type="author">
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="author">
-       <name>Julita Inca</name>
-       <email>yrazes@gmail.com</email>
+      <name>Julita Inca</name>
+      <email>yrazes@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Juanjo Marín</name>
@@ -24,6 +25,10 @@
     <credit type="editor">
       <name>Shobha Tyagi</name>
       <email>tyagishobha@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <desc>Festlegen und Ändern von Tastenkombination in den <gui>Tastatur</gui>-Einstellungen.</desc>
@@ -43,7 +48,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Christian Kirbach</mal:name>
       <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2014.</mal:years>
+      <mal:years>2011-2016.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -65,7 +70,7 @@
 
   <steps>
     <item>
-      <p>Öffnen Sie die <gui xref="shell-terminology">Aktivitäten</gui>-Übersicht und tippen Sie <gui>Tastatur</gui> ein.</p>
+      <p>Öffnen Sie die <gui xref="shell-introduction#activities">Aktivitäten</gui>-Übersicht und tippen Sie <gui>Tastatur</gui> ein.</p>
     </item>
     <item>
       <p>Klicken Sie auf <gui>Tastatur</gui>, um das Panel zu öffnen.</p>
@@ -94,23 +99,23 @@
   </tr>
   <tr>
 	<td><p>Taschenrechner öffnen</p></td>
-	<td><p>Taschenrechner</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-calculator.svg"> <key>Calculator</key> key symbol</media> oder <key>Taschenrechner</key></p></td>
   </tr>
   <tr>
 	<td><p>E-Mail-Programm öffnen</p></td>
-	<td><p>E-Mail</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-mail.svg"> <key>Mail</key> key symbol</media> oder <key>E-Mail</key></p></td>
   </tr>
   <tr>
 	<td><p>Webbrowser starten</p></td>
-	<td><p>WWW</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-world.svg"> <key>WWW</key> key symbol</media> oder <media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-home.svg"> <key>WWW</key> key symbol</media> oder <key>WWW</key></p></td>
   </tr>
   <tr>
 	<td><p>Persönlicher Ordner</p></td>
-	<td><p>Explorer</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-folder.svg"> <key>Explorer</key> key symbol</media> oder <media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-computer.svg"> <key>Explorer</key> key symbol</media> oder <key>Explorer</key></p></td>
   </tr>
   <tr>
 	<td><p>Suchen</p></td>
-	<td><p>Suchen</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-search.svg"> <key>Search</key> key symbol</media> oder <key>Suchen</key></p></td>
   </tr>
 </table>
 
@@ -217,15 +222,15 @@
 <table rules="rows" frame="top bottom" ui:expanded="false">
 <title>Bildschirmfotos</title>
   <tr>
-	<td><p>Ein Bildschirmfoto aufnehmen</p></td>
+	<td><p>Ein Bildschirmfoto in einer Datei speichern</p></td>
 	<td><p><key>Druck</key></p></td>
   </tr>
   <tr>
-	<td><p>Ein Bildschirmfoto eines Fensters aufnehmen</p></td>
+	<td><p>Ein Bildschirmfoto eines Fensters in einer Datei speichern</p></td>
 	<td><p><keyseq><key>Alt</key><key>Druck</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Ein Bildschirmfoto eines Bereichs aufnehmen</p></td>
+	<td><p>Ein Bildschirmfoto eines Bereichs in einer Datei speichern</p></td>
 	<td><p><keyseq><key>Umschalttaste</key><key>Druck</key></keyseq></p></td>
   </tr>
   <tr>
@@ -250,43 +255,43 @@
 <title>Ton und Medien</title>
   <tr>
 	<td><p>Stumm schalten</p></td>
-	<td><p>Stumm schalten (Audio)</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-mute.svg"> <key>Mute</key> key symbol</media> (Klang stumm schalten)</p></td>
   </tr>
   <tr>
 	<td><p>Leiser</p></td>
-	<td><p>Lautstärke verringern</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-voldown.svg"> <key>Volume Down</key> key symbol</media> (Lautstärke verringern)</p></td>
   </tr>
   <tr>
 	<td><p>Lauter</p></td>
-	<td><p>Lautstärke erhöhen</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-volup.svg"> <key>Volume Up</key> key symbol</media> (Lautstärke erhöhen)</p></td>
   </tr>
   <tr>
 	<td><p>Medienwiedergabeprogramm starten</p></td>
-	<td><p>Tonmedien</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-media.svg"> <key>Media</key> key symbol</media> (Audio-Medien)</p></td>
   </tr>
   <tr>
 	<td><p>Wiedergabe (bzw. Wiedergabe/Unterbrechen)</p></td>
-	<td><p>Wiedergabe (Audio)</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-play.svg"> <key>Play</key> key symbol</media> (Audio-Wiedergabe)</p></td>
   </tr>
   <tr>
 	<td><p>Wiedergabe unterbrechen</p></td>
-	<td><p>Pause (Audio)</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-pause.svg"> <key>Pause</key> key symbol</media> (Audio-Pause)</p></td>
   </tr>
   <tr>
 	<td><p>Wiedergabe anhalten</p></td>
-	<td><p>Stopp (Audio)</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-stop.svg"> <key>Stop</key> key symbol</media> (Audio-Stopp)</p></td>
   </tr>
   <tr>
 	<td><p>Vorheriger Titel</p></td>
-	<td><p>Zurück (Audio)</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-previous.svg"> <key>Previous</key> key symbol</media> (Audio zurück)</p></td>
   </tr>
   <tr>
 	<td><p>Nächster Titel</p></td>
-	<td><p>Vor (Audio)</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-next.svg"> <key>Next</key> key symbol</media> (Audio vor)</p></td>
   </tr>
   <tr>
 	<td><p>Auswerfen</p></td>
-	<td><p>Auswerfen</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-eject.svg"> <key>Eject</key> key symbol</media> (Auswerfen)</p></td>
   </tr>
 </table>
 
@@ -465,54 +470,27 @@
 
 </section>
 
-<section id="changing-shorcuts">
-  <title>Tastenkombinationen ändern</title>
-  <p>In diesem Abschnitt wird beschrieben, wie Sie Tastenkombinationen für eine Anwendung ändern können.</p>
-
-  <steps>
-    <item>
-	<p>Öffnen Sie die Terminal-Anwendung.</p>
-     </item>
-    <item><p>Führen Sie den Befehl <cmd>gsettings set org.gnome.desktop.interface can-change-accels true</cmd> aus.</p>
-    </item>
-       <item>
-      <p>Starten Sie die Anwendung, für die Sie die Tastenkombination ändern wollen.</p>
-    </item>
-  <item>
-      <p>Suchen Sie nach dem Menüeintrag, für welchen Sie die Tastenkombination wollen.</p>
-    </item>
-<item>
-      <p>Geben Sie die gewünschte Tastenkombination auf der Tastatur ein.</p>
-    </item>
-  </steps>
-
-<note style="note style">
-  <p>Beachten Sie, dass sich diese Einstellung auf die gesamte Arbeitsumgebung auswirkt. Sie können Sie deaktivieren, indem Sie nach den Änderungen den Befehl <cmd>gsettings set org.gnome.desktop.interface can-change-accels false</cmd> ausführen. Alternativ können Sie auch das Hilfsprogramm <app>dconf-editor</app> dazu verwenden.</p>
-</note>
-</section>
-
 <section id="custom">
 <title>Eigene Tastenkombinationen</title>
 
-<p>So erstellen Sie Ihre eigene Tastenkombination:</p>
+  <p>So können Sie Tastenkombination in den <gui>Tastatur</gui>-Einstellungen festlegen und ändern:</p>
 
   <steps>
     <item>
-      <p>Select <gui>Custom Shortcuts</gui> in the left pane, and click the
-      <gui style="button">+</gui> button (or click the
-      <gui style="button">+</gui> button in any category). The
-      <gui>Custom Shortcut</gui> window will appear.</p>
+      <p>Klicken Sie auf das <gui style="button">+</gui>Symbol. Daraufhin öffnet sich der Dialog <gui>Benutzerdefiniertes Tastenkürzel</gui>.</p>
     </item>
     <item>
-      <p>Geben Sie einen <gui>Namen</gui> zur Identifizierung der Tastenkombination und einen <gui>Befehl</gui> zum Ausführen einer Anwendung ein und klicken Sie auf <gui>Anwenden</gui>. Wenn Sie beispielsweise eine Tastenkombination zum Öffnen von <app>Rhythmbox</app> erstellen, könnten Sie <input>Musik</input> als Name und <input>rhythmbox</input> als Befehl verwenden.</p>
+      <p>Geben Sie einen <gui>Namen</gui> zur Identifizierung der Tastenkombination und einen <gui>Befehl</gui> zum Ausführen einer Anwendung ein und klicken Sie auf <gui>Hinzufügen</gui>. Wenn Sie beispielsweise eine Tastenkombination zum Öffnen von <app>Rhythmbox</app> erstellen, könnten Sie <input>Musik</input> als Name und <input>rhythmbox</input> als Befehl verwenden.</p>
     </item>
     <item>
       <p>Klicken Sie auf <gui>Deaktiviert</gui> in der soeben hinzugefügten Zeile. Wenn es sich zu <gui>Neue Tastenkombination …</gui> ändert, halten Sie die gewünschte Tastenkombination gedrückt.</p>
     </item>
   </steps>
- <p>Der von Ihnen eingegebene Befehl sollte ein gültiger Befehl des Systems sein. Sie können überprüfen, ob der Befehl funktioniert, indem Sie ihn in einem Terminal eingeben. Der zum Öffnen einer Anwendung verwendete Befehl muss nicht zwangsläufig dem Anwendungsnamen entsprechen.</p>
 
- <p>Wenn Sie den Befehl ändern wollen, der einer bestimmten Tastenkombination zugeordnet ist, klicken Sie doppelt auf den <em>Namen</em> des Kürzels. Das Fenster <gui>Individuelle Tastenkombination</gui> wird geöffnet, in welchem Sie den Befehl ändern können.</p>
+  <p>Der von Ihnen eingegebene Befehl sollte ein gültiger Befehl des Systems sein. Sie können überprüfen, ob der Befehl funktioniert, indem Sie ihn in einem Terminal eingeben. Der zum Öffnen einer Anwendung verwendete Befehl muss nicht zwangsläufig dem Anwendungsnamen entsprechen.</p>
+
+  <p>Wenn Sie den Befehl ändern wollen, der einer bestimmten Tastenkombination zugeordnet ist, klicken Sie doppelt auf den <em>Namen</em> des Kürzels. Das Fenster <gui>Individuelle Tastenkombination</gui> wird geöffnet, in welchem Sie den Befehl ändern können.</p>
+
 </section>
 
 </page>

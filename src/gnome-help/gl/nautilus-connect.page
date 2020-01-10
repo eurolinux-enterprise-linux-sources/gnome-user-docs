@@ -2,14 +2,13 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-connect" xml:lang="gl">
 
   <info>
-    <link type="guide" xref="files" group="more"/>
+    <link type="guide" xref="files#more-file-tasks"/>
     <link type="guide" xref="sharing"/>
 
     <revision pkgversion="3.6.0" date="2012-10-06" status="review"/>
     <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
     <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
-
-    <desc>Ver e editar ficheiros noutro equipo sobre FTP, SSH, compartidos de Windows ou WebDAV.</desc>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -19,7 +18,15 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Ver e editar ficheiros noutro equipo sobre FTP, SSH, compartidos de Windows ou WebDAV.</desc>
+
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
@@ -32,19 +39,33 @@
 
 <p>Pode conectarse a un servidor ou recurso en rede para examinalo e ver os ficheiros en dito servidor, como se estiveran no seu propio computador. Isto é unha forma fácil de descargar e subir ficheiros a internet, ou de compartir ficheiros con outras persoas na súa rede local.</p>
 
-<p>Para examinar os ficheiros dunha rede, abra o aplicativo <app>Ficheiros</app> desde a vista previa de <gui>Actividades</gui>. O xestor de ficheiros buscará calquera computador na súa rede de área local que anuncian a súa capacidade de servir ficheiros. Se quere conectarse a un servidor na rede, ou non ve o computador que está buscando, pode conectarse de forma manual a un servidor escribindo o seu enderezo de internet/rede.</p>
+<p>To browse files over the network, open the <app>Files</app>
+application from the <gui>Activities</gui> overview, and click
+<gui>Other Locations</gui> in the sidebar. The file manager
+will find any computers on your local area network that advertize
+their ability to serve files. If you want to connect to a server
+on the internet, or if you do not see the computer you're looking
+for, you can manually connect to a server by typing in its
+internet/network address.</p>
 
 <steps>
   <title>Conectarse a un servidor de ficheiros</title>
-  <item><p>In the file manager, click <gui>Connect to Server</gui> in the
+  <item><p>In the file manager, click <gui>Other Locations</gui> in the
    sidebar.</p>
   </item>
-  <item><p>Escriba o enderezo do servidor, co formato dunha <link xref="#urls">URL</link>. Pode atopar máis información sobre as URL admitidas <link xref="#types">máis abaixo</link>.</p>
+  <item><p>In <gui>Connect to Server</gui>, enter the address of the server, in
+  the form of a
+   <link xref="#urls">URL</link>. Details on supported URLs are
+   <link xref="#types">listed below</link>.</p>
   <note>
     <p>Se xa se conectou a un servidor anteriormente, pode premer sobre el na lista <gui>Servidores recentes</gui>.</p>
   </note>
   </item>
-  <item><p>Prema <gui>Conectar</gui>. Abrirase unha nova xanela que lle mostrará os ficheiros do servidor. Pode explorar os ficheiros da mesma forma coma se estiveran no seu computador. O servidor engadirase á barra lateral polo que poderá acceder a el de forma rápida no futuro.</p>
+  <item>
+    <p>Click <gui>Connect</gui>. The files on the server will be shown. You
+    can browse the files just as you would for those on your own computer. The
+    server will also be added to the sidebar so you can access it quickly in
+    the future.</p>
   </item>
 </steps>
 
@@ -111,9 +132,20 @@
 <item>
   <title>WebDAV e WebDAV seguro</title>
   <p>Baseado no protocolo HTTP usando no web, WebDAV é usado en ocasións para compartir ficheiros nunha rede local e para almacenar ficheiros en internet. Se o servidor co que está conectando admite as conexións seguras, debería escoller esta opcón. WebDAV seguro usa un cifrado SSL forte, polo que outros usuarios non poderán ver o seu contrasinal.</p>
-  <p>Un URL de WebDAV típico seméllase a isto:</p>
+  <p>A WebDAV URL looks like this:</p>
   <example>
-    <p><sys>http://exemplo.nomededominio.gal/ruta</sys></p>
+    <p><sys>dav://example.hostname.com/path</sys></p>
+  </example>
+</item>
+<item>
+  <title>NFS share</title>
+  <p>UNIX computers traditionally use the Network File System protocol to
+  share files over a local network. With NFS, security is based on the UID of
+  the user accessing the share, so no authentication credentials are
+  needed when connecting.</p>
+  <p>A typical NFS share URL looks like this:</p>
+  <example>
+    <p><sys>nfs://servername/path</sys></p>
   </example>
 </item>
 </terms>

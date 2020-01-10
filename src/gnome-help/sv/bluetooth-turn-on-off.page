@@ -4,110 +4,111 @@
   <info>
     <link type="guide" xref="bluetooth" group="#first"/>
 
-    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.4" date="2012-02-19" status="outdated"/>
     <revision pkgversion="3.10" date="2013-11-09" status="review"/>
     <revision pkgversion="3.12" date="2014-03-04" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-21" status="candidate"/>
+    <revision pkgversion="3.13" date="2014-09-21" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Jim Campbell</name>
-      <email its:translate="no">jwcampbell@gmail.com</email>
+      <email>jwcampbell@gmail.com</email>
     </credit>
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
       <years>2014</years>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
       <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2015</years>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Enable or disable the Bluetooth device on your computer.</desc>
+    <desc>Aktivera eller inaktivera Bluetooth-enheten på din dator.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
   </info>
 
-<title>Turn Bluetooth on or off</title>
+<title>Aktivera eller inaktivera Bluetooth</title>
 
 <if:choose>
   <if:when test="platform:unity">
-    <p>You can turn Bluetooth on to connect to other Bluetooth devices, or turn
-    it off to conserve power. To turn Bluetooth on, click the Bluetooth icon in
-    the menu bar and switch <gui>Bluetooth</gui> to <gui>ON</gui>.</p>
+    <p>Du kan aktivera Bluetooth för att ansluta till andra Bluetooth-enheter eller stäng av det för att spara ström. För att aktivera Bluetooth, klicka på Bluetooth-ikonen i menyraden och slå om <gui>Bluetooth</gui> till <gui>PÅ</gui>.</p>
   </if:when>
 
-  <p>You can turn Bluetooth on to connect to other Bluetooth devices, or turn
-  it off to conserve power. To turn Bluetooth on:</p>
+  <p>Du kan aktivera Bluetooth för att ansluta till andra Bluetooth-enheter eller stäng av det för att spara ström. För att aktivera Bluetooth:</p>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-terminology">Activities</gui> overview and
-      start typing <gui>Bluetooth</gui>.</p>
+      <p>Öppna översiktsvyn <gui xref="shell-introduction#activities">Aktiviteter</gui> och börja skriv <gui>Bluetooth</gui>.</p>
     </item>
     <item>
-      <p>Click on <gui>Bluetooth</gui> to open the panel.</p>
+      <p>Klicka på <gui>Bluetooth</gui> för att öppna panelen.</p>
     </item>
     <item>
-      <p>Set the switch at the top to <gui>ON</gui>.</p>
+      <p>Sätt inställningen längst upp till <gui>PÅ</gui>.</p>
     </item>
   </steps>
 </if:choose>
 
 <if:choose>
   <if:when test="platform:unity">
-    <p>Many laptop computers have a hardware switch or key combination to turn
-    Bluetooth on and off. If the Bluetooth hardware is turned off, you will not
-    see a Bluetooth icon in the menu bar. Look for a switch on your computer or
-    a key on your keyboard. The keyboard key is often accessed with the help of
-    the <key>Fn</key> key.</p>
+    <p>Många bärbara datorer har en hårdvaruknapp eller tangentkombination för att aktivera och inaktivera Bluetooth. Om Bluetooth-hårdvaran är avstängd kommer du inte att se någon Bluetooth-ikon på menyraden. Leta efter en knapp på din dator eller en tangent på tangentbordet. En tangent på tangentbordet kombineras oftast med tangenten <key>Fn</key>.</p>
   </if:when>
-  <p>Many laptop computers have a hardware switch or key combination to turn
-  Bluetooth on and off. Look for a switch on your computer or a key on your
-  keyboard. The keyboard key is often accessed with the help of the
-  <key>Fn</key> key.</p>
+  <p>Många bärbara datorer har en hårdvaruknapp eller tangentkombination för att aktivera och inaktivera Bluetooth. Leta efter en knapp på din dator eller en tangent på tangentbordet. En tangent på tangentbordet kombineras oftast med tangenten <key>Fn</key>.</p>
 </if:choose>
 
 <if:choose>
   <if:when test="platform:unity">
-    <p>To turn Bluetooth off, click the Bluetooth icon and switch
-    <gui>Bluetooth</gui> to <gui>OFF</gui>.</p>
+    <p>För att stänga av Bluetooth, klicka på Bluetooth-ikonen och slå om <gui>Bluetooth</gui> till <gui>AV</gui>.</p>
   </if:when>
-  <p>To turn Bluetooth off:</p>
+  <p>För att inaktivera Bluetooth:</p>
   <steps>
     <item>
-      <p>Open the <gui xref="shell-terminology">system menu</gui> from the
-      right side of the top bar.</p>
+      <p>Öppna <gui xref="shell-introduction#yourname">systemmenyn</gui> på högersidan av systemraden.</p>
     </item>
     <item>
-      <p>Select <gui>Bluetooth</gui>. The Bluetooth section of the menu will
-      expand.</p>
+      <p>Välj <gui><media its:translate="no" type="image" mime="image/svg" src="figures/bluetooth-active-symbolic.svg"/> Används inte</gui>. Bluetooth-delen av menyn kommer att expandera.</p>
     </item>
     <item>
-      <p>Select <gui>Turn Off</gui>.</p>
+      <p>Välj <gui>Stäng av</gui>.</p>
     </item>
   </steps>
 </if:choose>
 
 <if:choose>
   <if:when test="platform:unity">
-    <note><p>Your computer is <link xref="bluetooth-visibility">visible</link>
-    if <gui>Visible</gui> is switched to <gui>ON</gui> in the Bluetooth
-    menu.</p></note>
+    <note><p>Din dator är <link xref="bluetooth-visibility">synlig</link> om <gui>Synlig</gui> är inställd till <gui>PÅ</gui> i Bluetooth-menyn.</p></note>
   </if:when>
-  <note><p>Your computer is <link xref="bluetooth-visibility">visible</link> as
-  long as the <gui>Bluetooth</gui> panel is open.</p></note>
+  <note><p>Din dator är <link xref="bluetooth-visibility">synlig</link> så länge som panelen <gui>Bluetooth</gui> är öppen.</p></note>
 </if:choose>
 
 </page>

@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-recover" xml:lang="pt-BR">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-recover" xml:lang="pt-BR">
 
   <info>
-    <link type="guide" xref="files" group="more"/>
+    <link type="guide" xref="files#more-file-tasks"/>
     <link type="seealso" xref="files-lost"/>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-28" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="review"/>
 
     <credit type="author">
       <name>Projeto de documentação do GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -24,12 +29,6 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Ferreira</mal:name>
-      <mal:email>rafael.f.f1@gmail.com</mal:email>
-      <mal:years>2012, 2013, 2014.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Enrico Nicoletto</mal:name>
       <mal:email>liverig@gmail.com</mal:email>
       <mal:years>2013.</mal:years>
@@ -40,6 +39,12 @@
       <mal:email>joaosantana@outlook.com</mal:email>
       <mal:years>2013.</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
   </info>
 
   <title>Restaurando um arquivo da lixeira</title>
@@ -49,14 +54,13 @@
   <steps>
     <title>Para restaurar um arquivo da lixeira:</title>
     <item>
-      <p>Open the <app>Files</app> application from the
-      <gui xref="shell-terminology">Activities</gui> overview.</p>
+      <p>Abra o panorama de <gui xref="shell-introduction#activities">Atividades</gui> e comece a digitar <app>Arquivos</app>.</p>
     </item>
     <item>
-      <p>Click <gui>Trash</gui> in the sidebar. If you do not see the sidebar,
-      click the
-      <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">View options</span></media></gui>
-      button in the toolbar and pick <gui>Show Sidebar</gui></p>
+      <p>Clique em <app>Arquivos</app> para abrir o gerenciador de arquivos.</p>
+    </item>
+    <item>
+      <p>Clique em <gui>Lixeira</gui> na barra lateral. Se você não vê a barra lateral, clique em <gui>Arquivos</gui> na barra superior e escolha <gui>Barra lateral</gui>.</p>
     </item>
     <item>
       <p>Se o seu arquivo excluído estiver ali, clique nele e selecione <gui>Restaurar</gui>. Ele será restaurado à pasta de onde foi excluído.</p>

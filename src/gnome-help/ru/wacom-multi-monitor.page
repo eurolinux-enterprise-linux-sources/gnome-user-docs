@@ -1,18 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="wacom-multi-monitor" xml:lang="ru">
-  <info>
 
+  <info>
     <revision pkgversion="3.10" date="2013-11-02" status="review"/>
     <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
     <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <link type="guide" xref="wacom"/>
 
     <credit type="author copyright">
       <name>Майкл Хилл (Michael Hill)</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
       <years>2012</years>
     </credit>
+    <credit type="editor">
+      <name>Екатерина Герасимова (Ekaterina Gerasimova)</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2015</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <desc>Отображать планшет Wacom на конкретный монитор</desc>
   
@@ -25,7 +33,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011, 2012</mal:years>
+      <mal:years>2011-2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -39,17 +47,24 @@
       <mal:email>juliette.tux@gmail.com</mal:email>
       <mal:years>2013-2014</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
   <title>Выбор монитора</title>
 
 <steps>
   <item>
-    <p>Откройте режим <gui xref="shell-terminology">Обзора</gui> и начинайте вводить<gui>Планшет Wacom</gui>.</p>
+    <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+    start typing <gui>Wacom Tablet</gui>.</p>
   </item>
   <item>
-    <p>Нажмите <gui>Планшет Wacom</gui> чтобы открыть этот раздел настроек.</p>
-
+    <p>Нажмите <gui>Планшет Wacom</gui>, чтобы открыть этот раздел настроек.</p>
+    <!-- TODO: document how to connet the tablet using Bluetooth/add link -->
     <note style="tip"><p>Если планшет не обнаружен, вы увидите сообщение <gui>Подключите или включите планшет Wacom</gui>. Нажмите <gui>Настройки Bluetooth</gui> чтобы подключить беспроводной планшет.</p></note>
   </item>
   <item><p>Нажмите <gui>Отображение на экран…</gui></p></item>
@@ -58,7 +73,12 @@
      <note style="tip"><p>Можно выбрать только известные системе мониторы.</p></note>
   </item>
   <item>
-    <p>Включите переключатель <gui>Сохранять соотношение сторон (леттербоксинг):</gui> чтобы область рисования планшета совпадала с пропорциями монитора. Эта настройка, также называемая <em>сохранять пропорции</em>, <em>сохраняет исходное соотношение сторон</em> области рисования, чтобы, например, рисунок на планшете 4:3 соответствовал пропорциям широкоэкранного монитора.</p>
+    <p>Switch <gui>Keep aspect ratio (letterbox)</gui> to <gui>ON</gui> to
+    match the drawing area of the tablet to the proportions of the monitor.
+      This setting, also called <em>force proportions</em>,
+      <em>letterboxes</em> the drawing area on a tablet to correspond more
+      directly to a display. For example, a 4∶3 tablet would be mapped so that
+      the drawing area would correspond to a widescreen display.</p>
   </item>
   <item><p>Нажмите кнопку <gui>Закрыть</gui>.</p></item>
 </steps>

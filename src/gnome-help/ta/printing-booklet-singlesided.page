@@ -6,15 +6,20 @@
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>டிஃபானி அன்ட்டொபோல்ஸ்கி</name>
       <email>tiffany@antopolski.com</email>
     </credit>
+    <credit type="author editor">
+      <name>பேட்ர் கோவார்</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc/>
+    <desc>Print a booklet from a PDF using a single-sided printer.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Shantha kumar,</mal:name>
@@ -37,10 +42,13 @@
       <p>அச்சிடு உரையாடலைத் திறக்கவும். மெனுவில் உள்ள <gui style="menuitem">அச்சிடு</gui> என்பதை தேர்ந்தெடுத்து அல்லது <keyseq><key>Ctrl</key><key>P</key></keyseq> விசைப்பலகை குறுக்குவழியைப் பயன்படுத்தி இதைத் திறக்கலாம்.</p>
     </item>
     <item>
-      <p><gui>பொது</gui> தாவலை தேர்வு செய்யவும்.</p>
-      <p>Under <gui>Range</gui>, choose <gui>Pages</gui>.</p>
+      <p>Click the <gui>Properties...</gui> button </p>
+      <p>In the <gui>Orientation</gui> drop-down list, make sure that
+      <gui>Landscape</gui> is selected.</p>
+      <p>Click <gui>OK</gui> to go back to the print dialog.</p>
     </item>
     <item>
+      <p>Under <gui>Range and Copies</gui>, choose <gui>Pages</gui>.</p>
       <p>இந்த வரிசையில் பக்கங்களின் எண்ணிக்கையை தட்டச்சு செய்யவும் (n என்பது மொத்த பக்கங்களின் எண்ணிக்கை, மற்றும் 4 இன் மடங்கு):</p>
       <p>n, 1, 2, n-1, n-2, 3, 4, n-3, n-4, 5, 6, n-5, n-6, 7, 8, n-7, n-8, 9, 10, n-9, n-10, 11, 12, n-11…</p>
       <p>…அனைத்துப் பக்கங்களையும் தட்டச்சு செய்யும் வரை.</p>
@@ -54,14 +62,10 @@
      </note>
     </item>
     <item>
-      <p><gui>பக்க அமைவு</gui> தாவலை தேர்வு செய்யவும்.</p>
-      <p>Under <gui>Layout</gui>, in the <gui>Two-sided</gui> drop-down list,
-      select <gui>One Sided</gui>.</p>
-      <p>In the <gui>Pages per side</gui> drop-down list, select
-      <gui>2</gui>.</p>
-      <p>In the <gui>Page ordering</gui> drop-down list, select <gui>Left to
-      right</gui>.</p>
-      <p><gui>இதை மட்டும் அச்சிடு</gui> மெனுவில், <gui>ஒற்றைத் தாள்கள்</gui> ஐ தேர்ந்தெடுக்கவும்.</p>
+      <p>Choose the <gui>Page Layout</gui> tab.</p>
+      <p>Under <gui>Layout</gui>, select <gui>Brochure</gui>.</p>
+      <p>Under <gui>Page Sides</gui>, in the <gui>Include</gui> drop-down list,
+      select <gui>Front sides / right pages</gui>.</p>
     </item>
     <item>
       <p><gui>அச்சிடு</gui> ஐ சொடுக்கவும்.</p>
@@ -73,8 +77,9 @@
       <p>அச்சிடு உரையாடலைத் திறக்கவும். மெனுவில் உள்ள <gui style="menuitem">அச்சிடு</gui> என்பதை தேர்ந்தெடுத்து அல்லது <keyseq><key>Ctrl</key><key>P</key></keyseq> விசைப்பலகை குறுக்குவழியைப் பயன்படுத்தி இதைத் திறக்கலாம்.</p>
     </item>
     <item>
-      <p><gui>பக்க அமைவு</gui> தாவலை தேர்வு செய்யவும்.</p>
-      <p><gui>இதை மட்டும் அச்சிடு</gui> மெனுவில் <gui>இரட்டை தாள்கள்</gui> ஐ தேர்ந்தெடுக்கவும்.</p>
+      <p>Choose the <gui>Page Layout</gui> tab.</p>
+      <p>Under <gui>Page Sides</gui>, in the <gui>Include</gui> drop-down list,
+      select <gui>Back sides / left pages</gui>.</p>
     </item>
     <item>
       <p><gui>அச்சிடு</gui> ஐ சொடுக்கவும்.</p>

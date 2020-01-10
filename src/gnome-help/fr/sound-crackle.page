@@ -6,6 +6,7 @@
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Le projet de documentation GNOME</name>
@@ -31,7 +32,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2014</mal:years>
+      <mal:years>2011-2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -63,6 +64,12 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
 <title>J'entends des craquements ou des ronflements dans le son</title>
@@ -72,17 +79,21 @@
 <list>
  <item>
   <p>Vérifiez que les haut-parleurs sont correctement branchés.</p>
-  <p>Des haut-parleurs mal branchés, ou branchés dans la mauvaise prise, sont cause de ronflements.</p>
+  <p>If the speakers are not fully plugged in, or if they are plugged into the
+  wrong socket, you might hear a buzzing sound.</p>
  </item>
 
  <item>
-  <p>Assurez-vous que le câble du haut-parleur ou des écouteurs n'est pas endommagé.</p>
+  <p>Make sure the speaker/headphone cable is not damaged.</p>
   <p>Les câbles audio et les connecteurs se dégradent progressivement au cours du temps. Essayez de brancher le câble ou les écouteurs sur un autre appareil de son (un lecteur MP3 ou un lecteur de CD par exemple) pour vérifier si le trouble sonore persiste. Si c'est le cas, il faudra remplacer ce câble ou ces écouteurs.</p>
  </item>
 
  <item>
-  <p>Vérifiez la qualité des pilotes de son.</p>
-  <p>Certaines cartes son ne fonctionnent pas correctement sous Linux parce que le pilote n'est pas adapté. C'est un problème difficile à identifier. Essayez de rechercher la marque et le modèle de votre carte son sur internet, en ajoutant « Linux » au motif de recherche, pour voir si d'autres personnes ont eu le même problème.</p>
+  <p>Check if the sound drivers are not very good.</p>
+  <p>Some sound cards do not work very well on Linux because they do not have very
+  good drivers. This problem is more difficult to identify. Try searching for
+  the make and model of your sound card on the internet, plus the search term
+  "Linux", to see if other people are having the same problem.</p>
   <p>Utilisez la commande <cmd>lspci</cmd> pour obtenir plus d'information sur votre carte son.</p>
  </item>
 </list>

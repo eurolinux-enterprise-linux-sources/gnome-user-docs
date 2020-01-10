@@ -6,18 +6,19 @@
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
     <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
-      <email its:translate="no">philbull@gmail.com</email>
+      <email>philbull@gmail.com</email>
     </credit>
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
 
     <desc>Use una red ad-hoc para permitir que otros dispositivos se conecten a su equipo y a sus conexiones de red.</desc>
@@ -27,7 +28,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2011 - 2014</mal:years>
+      <mal:years>2011 - 2016</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -51,11 +52,17 @@
 
 <title>Crear un «hotspot» inalámbrico</title>
 
-<p>Puede usar su equipo como un «hotspot» inalámbrico. Esto permite a otros dispositivos conectarse a su equipo sin necesidad de una red aparte, y permite a su equipo compartir una conexión a Internet configurada en otra interfaz, como una red cableada o una red de banda ancha móvil.</p>
+  <p>Puede usar su equipo como un «hotspot» inalámbrico. Esto permite a otros dispositivos conectarse a su equipo sin necesidad de una red aparte, y permite a su equipo compartir una conexión a Internet configurada en otra interfaz, como una red cableada o una red de banda ancha móvil.</p>
 
 <steps>
-  <item><p>Pulse en el área de estado del sistema en la barra superior y seleccione <gui>Inalámbrica</gui>.</p></item>
-  <item><p>Seleccione <gui>Configuración inalámbrica</gui>.</p></item>
+  <item>
+    <p>Abra el <gui xref="shell-introduction#yourname">menú del sistema</gui> en la parte derecha de la barra superior.</p>
+  </item>
+  <item>
+    <p>Seleccione <gui><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-excellent-symbolic.svg" width="16" height="16"/> Inalámbrica no conectada</gui> o el nombre de la red inalámbrica a la que ya está conectado. La sección Inalámbrica del menú se expandirá.</p>
+  </item>
+  <item>
+    <p>Pulse en <gui>Configuración inalámbrica</gui>.</p></item>
   <item><p>Pulse el botón <gui>Usar como «hotspot»...</gui>.</p></item>
   <item><p>Si ya está conectado a una red inalámbrica, se le preguntará si quiere desconectarse de esa red. Un adaptador inalámbrico sólo puede conectarse o crear una única red al mismo tiempo. Pulse <gui>Activar</gui> para confirmar.</p></item>
 </steps>

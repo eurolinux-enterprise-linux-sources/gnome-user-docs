@@ -5,19 +5,21 @@
     <link type="guide" xref="sharing"/>
     <link type="guide" xref="prefs-sharing"/>
 
-    <revision pkgversion="3.8.2" date="2013-05-09" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.14" date="2014-10-13" status="candidate"/>
+    <revision pkgversion="3.14" date="2015-01-25" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
 
     <credit type="author">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
-
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jcampbell@gnome.org</email>
+    </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <desc>Permitir que otras personas vean e interactúen con su escritorio usando VNC.</desc>
@@ -25,7 +27,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2011 - 2014</mal:years>
+      <mal:years>2011 - 2016</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -63,7 +65,7 @@
 
   <steps>
     <item>
-      <p>Abra la vista de <gui xref="shell-terminology">Actividades</gui> y empiece a escribir <gui>Compartición</gui>.</p>
+      <p>Abra la vista de <gui xref="shell-introduction#activities">Actividades</gui> y empiece a escribir <gui>Compartición</gui>.</p>
     </item>
     <item>
       <p>Pulse en <gui>Compartición</gui> para abrir el panel.</p>
@@ -128,20 +130,22 @@
   <section id="networks">
   <title>Redes</title>
 
-  <p>The <gui>Networks</gui> section lists the networks to which you are
-  currently connected. Use the <gui>ON | OFF</gui> switch next to each to
-  choose where your desktop can be shared.</p>
-
+  <p>La sección <gui>Redes</gui>lista las redes a las que está actualmente conectado. Use el interruptor <gui>Encendido | Apagado</gui> junto a cada una para elegir dónde se puede compartir su escritorio.</p>
   </section>
 
-<!-- TODO: Check that this works.
   <section id="notification-icon">
-  <title>Stop sharing your desktop</title>
+  <title>Dejar de compartir su escritorio</title>
 
-  <p>You can disconnect someone who is viewing your desktop using the
-  notification icon in the message tray.</p>
+  <p>Puede desconectar a alguien que esté viendo su escritorio usando el <gui>icono de la notificación</gui> en la bandeja de mensajes. Para hacerlo:</p>
+    <steps>
+      <item><p>Abra la bandeja de mensajes pulsando <keyseq><key>Super</key><key>M</key></keyseq> o moviendo el cursor del ratón a la parte inferior de la pantalla.</p></item>
+      <item><p>Pulse en el icono de <gui>Escritorio</gui> en la <gui>Bandeja de mensajes</gui>. Esto abrirá el panel de <app>Compartición</app>.</p>
+      </item>
+      <item><p>Seleccione <gui>Compartición de la pantalla</gui>.</p></item>
+      <item><p>Mueva el deslizador de <gui>Compartición de pantalla</gui> a <gui>Apagado</gui>.</p></item>
+    </steps>
 
   </section>
--->
+
 
 </page>

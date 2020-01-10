@@ -11,11 +11,11 @@
 
     <credit type="author">
       <name>Projeto de documentação do GNOME</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -29,12 +29,6 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Ferreira</mal:name>
-      <mal:email>rafael.f.f1@gmail.com</mal:email>
-      <mal:years>2012, 2013, 2014.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Enrico Nicoletto</mal:name>
       <mal:email>liverig@gmail.com</mal:email>
       <mal:years>2013.</mal:years>
@@ -45,6 +39,12 @@
       <mal:email>joaosantana@outlook.com</mal:email>
       <mal:years>2013.</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
   </info>
 
   <title>Movendo uma janela para um espaço de trabalho diferente</title>
@@ -53,14 +53,18 @@
     <title>Usando o mouse:</title>
     <item>
       <p if:test="!platform:gnome-classic">Open the
-      <gui xref="shell-terminology">Activities</gui> overview.</p>
-      <p if:test="platform:gnome-classic">Abra o <gui xref="shell-terminology">Panorama de atividades</gui> do <link xref="shell-terminology">menu <gui style="menu">Aplicativos</gui></link> no canto esquerdo superior da tela.</p>
+      <gui xref="shell-introduction#activities">Activities</gui> overview.</p>
+      <p if:test="platform:gnome-classic">Open the
+      <gui xref="shell-introduction#activities">Activities Overview</gui> from the
+      <gui xref="shell-introduction#activities">Applications</gui> menu
+      at the top left of the screen.</p>
     </item>
     <item>
       <p>Clique e arraste a janela em direção à direita da tela.</p>
     </item>
     <item>
-      <p>O <em xref="shell-terminology">seletor de espaço de trabalho</em> aparecerá.</p>
+      <p>The <em xref="shell-workspaces">workspace selector</em> will
+      appear.</p>
     </item>
     <item>
       <p if:test="!platform:gnome-classic">Solte a janela em um espaço de trabalho vazio. Este espaço agora terá a janela que você soltou nele e um novo espaço de trabalho vazio aparecerá na parte inferior do <em>seletor de espaço de trabalho</em>.</p>
@@ -71,7 +75,9 @@
   <steps>
     <title>Usando o teclado:</title>
     <item>
-      <p>Selecione a janela que você deseja mover (ex.: usando o <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq> <em xref="shell-terminology">alternador de janelas</em>).</p>
+      <p>Select the window that you want to move (for example, using the
+      <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq>
+      <em xref="shell-windows-switching">window switcher</em>).</p>
     </item>
     <item>
       <p>Pressione <keyseq><key>Super</key><key>Shift</key><key>Page Up</key></keyseq> para mover a janela para um espaço de trabalho que esteja em cima do espaço de trabalho atual no <em>seletor de espaços de trabalho</em>.</p>

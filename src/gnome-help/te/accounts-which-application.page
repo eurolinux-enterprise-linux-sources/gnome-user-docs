@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="accounts-which-application" xml:lang="te">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="accounts-which-application" xml:lang="te">
 
   <info>
     <link type="guide" xref="accounts"/>
@@ -7,19 +7,20 @@
 
     <revision pkgversion="3.8.2" date="2013-05-22" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="incomplete"/>
 
     <credit type="author copyright">
       <name>Baptiste Mille-Mathias</name>
-      <email its:translate="no">baptistem@gnome.org</email>
+      <email>baptistem@gnome.org</email>
       <years>2012, 2013</years>
     </credit>
     <credit type="editor">
       <name>మైకేల్ హిల్</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Andre Klapper</name>
-      <email its:translate="no">ak-47@gmx.net</email>
+      <email>ak-47@gmx.net</email>
     </credit>
 
     <desc><app>ఆన్‌లైన్ ఖాతాలు</app> నందు సృష్టించిన ఖాతాలను మరియు అవి ఇచ్చే సేవలను అనువర్తనాలు వుపయోగించగలవు.</desc>
@@ -38,54 +39,86 @@
     </mal:credit>
   </info>
 
-<title>ఆన్‌లైన్ ఖాతాల ప్రయోజనాన్ని ఏ అనువర్తనాలు తీసుకోగలవు?</title>
+  <title>Online services and applications</title>
 
-  <p>వాటంతటవే స్వయంచాలకంగా ఆకృతీకరించుటకు <app>ఆన్‌లైన్ ఖాతాలు</app> బాహ్య అనువర్తనములచేత వుపయోగించబడగలవు.</p>
+  <p>Once you have added an online account, any application can use that
+  account for any of the available services that you have not
+  <link xref="accounts-disable-service">disabled</link>. Different
+  providers provide different services. This page lists the different
+  services and some of the applications that are known to use them.</p>
 
-<section id="accounts-google-services">
-  <title>గూగుల్ ఖాతా తో</title>
-
-  <list>
+  <terms>
     <item>
-      <p><app>ఎవాల్యూషన్</app>, ఈమెయిల్ అనువర్తనం. మీ ఈమెయిల్ ఖాతా అనునది స్వయంచాలకంగా <app>ఎవాల్యూషన్</app> కు జతచేయబడును, కనుక అది మీ మెయిల్‌ను పొందును, మీ పరిచయాలకు ఏక్సెస్ ఇచ్చును, మరియు మీ గూగుల్ ఎజెండానందు క్యాలెండర్ అంశాలను ప్రదర్శించు.</p>
+      <title>Calendar</title>
+      <p>The Calendar service allows you to view, add, and edit events in
+      an online calendar. It is used by applications like <app>Calendar</app>,
+      <app>Evolution</app>, and <app>California</app>.</p>
     </item>
+
     <item>
-      <p><app>ఎంపతి</app>, సత్వర సందేశ అనువర్తనం. మీ ఆన్‌లైన్ ఖాతా జతచేయబడును మరియు మీరు మీ స్నేహితులతో సంప్రదించబడుదురు.</p>
+      <title>Chat</title>
+      <p>The Chat service allows you to chat with your contacts on popular
+      instant messaging platforms. It is used by the <app>Empathy</app>
+      application.</p>
     </item>
+
     <item>
-      <p><app>పరిచయాలు</app>, ఇది మీ పరిచయాలను చూడుటకు మరియు సరికూర్చుటకు అనుమతించును.</p>
+      <title>పరిచయాలు</title>
+      <p>The Contacts service allows you to see the published details of your
+      contacts on various services. It is used by applications like
+      <app>Contacts</app> and <app>Evolution</app>.</p>
     </item>
+
     <item>
-      <p><app>పత్రములు</app> మీ ఆన్‌లైన్ పత్రములను ఏక్సెస్ చేయగలవు మరియు వాటిని ప్రదర్శించగలవు.</p>
+      <title>Documents</title>
+      <p>The Documents service allows you to view your online documents
+      such as those in Google docs. You can view your documents using the
+      <app>Documents</app> application.</p>
     </item>
-  </list>
-</section>
 
-<section id="accounts-windows-services">
-  <title>విండోస్ లైవ్, ఫేస్‌బుక్ లేదా ట్విట్టర్ ఖాతాలు</title>
+    <item>
+      <title>Files</title>
+      <p>The Files service adds a remote file location, as if you had added
+      one using the <link xref="nautilus-connect">Connect to Server</link>
+      functionality in the file manager. You can access remote files using
+      the file manager, as well as through file open and save dialogs in any
+      application.</p>
+    </item>
 
-  <p><app>ఎంపతి</app> అనునది మిమ్ములను అన్‌లైన్‌కు అనుసంధానించుటకు మరియు మీ పరిచయస్తులతో, స్నేహితులతో, అనుచరగణంతో సంభాషించుటకు ఈ ఖాతాలను వుపయోగించును.</p>
-</section>
+    <item>
+      <title>మెయిలు</title>
+      <p>The Mail service allows you to send and receive email through an
+      email provider like Google. It is used by <app>Evolution</app>.</p>
+    </item>
 
-<section id="account-windows-skydrive">
-  <title>With a OneDrive account</title>
+<!-- TODO: Not sure what this does. Doesn't seem to do anything in Maps app.
+    <item>
+      <title>Maps</title>
+    </item>
+-->
 
-  <p><app>Documents</app> can access your online documents in Microsoft
-  OneDrive and display them.</p>
-</section>
+    <item>
+      <title>Photos</title>
+      <p>The Photos service allows you to view your online photos such as
+      those you post on Facebook. You can view your photos using the
+      <app>Photos</app> application.</p>
+    </item>
 
-<section id="account-exchange">
-  <title>ఏక్సుచేంజ్ ఖాతాతో</title>
+    <item>
+      <title>Printers</title>
+      <p>The Printers service allows you to send a PDF copy to a provider from
+      within the print dialog of any application. The provider might provide
+      print services, or it might just serve as storage for the PDF, which
+      you can download and print later.</p>
+    </item>
 
-  <p>మీరు ఒక ఎక్సుచేంజ్ ఖాతాను సృష్టించిన తరువాత, ఈ ఖాతా నుండి మెయిళ్ళను పొందుటకు <app>ఎవాల్యూషన్</app> ప్రారంభించును.</p>
-</section>
+    <item>
+      <title>Read Later</title>
+      <p>The Read Later service allows you to save a web page to external
+      services so that you can read it later on another device. No applications
+      currently use this service.</p>
+    </item>
 
-<section id="accounts-ownCloud">
-  <title>ఓన్‌క్లౌడ్ ఖాతా తో</title>
-
-  <p>ఒక ఓన్‌క్లౌడ్ ఖాతా అమర్చినతరువాత, <app>ఎవాల్యూషన్</app> అనునది పరిచయాలను మరియు క్యాలెండర్ నియామకాలను ఏక్సెస్ చేయగలదు మరియు సరికూర్చగలదు.</p>
-
-  <p><app>ఫైల్స్</app> మరియు ఇతర అనువర్తనాలు అనునవి ఓన్‌క్లౌడ్ సంస్థాపన నందు నిల్వవున్న మీ ఆన్‌లైన్ ఫైళ్ళను ఏక్సెస్ చేయును మరియు జాబితా చేయును.</p>
-</section>
+  </terms>
 
 </page>

@@ -5,19 +5,21 @@
     <link type="guide" xref="sharing"/>
     <link type="guide" xref="prefs-sharing"/>
 
-    <revision pkgversion="3.8.2" date="2013-05-09" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.14" date="2014-10-13" status="candidate"/>
+    <revision pkgversion="3.14" date="2015-01-25" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
 
     <credit type="author">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Majkl Hil</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
-
+    <credit type="author">
+      <name>Džim Kembel</name>
+      <email>jcampbell@gnome.org</email>
+    </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <desc>Dopustite drugima da pregledaju i posreduju sa vašom radnom površi koristeći VNC.</desc>
@@ -39,7 +41,7 @@
 
   <steps>
     <item>
-      <p>Otvorite pregled <gui xref="shell-terminology">Aktivnosti</gui> i počnite da kucate <gui>Deljenje</gui>.</p>
+      <p>Otvorite pregled <gui xref="shell-introduction#activities">Aktivnosti</gui> i počnite da kucate <gui>Deljenje</gui>.</p>
     </item>
     <item>
       <p>Kliknite na <gui>Deljenje</gui> da otvorite panel.</p>
@@ -105,17 +107,21 @@
   <title>Mreže</title>
 
   <p>Odeljak <gui>Mreže</gui> navodi mreže na koje ste trenutno povezani. Koristite prekidač <gui>UKLJ. | ISKLJ.</gui> pored savke od njih da izaberete na kojima vaša radna površ može biti deljena.</p>
-
   </section>
 
-<!-- TODO: Check that this works.
   <section id="notification-icon">
-  <title>Stop sharing your desktop</title>
+  <title>Zaustavite deljenje radne površi</title>
 
-  <p>You can disconnect someone who is viewing your desktop using the
-  notification icon in the message tray.</p>
+  <p>Možete da prekinete vezu sa nekim ko pregleda vašu radnu površ koristeći <gui>ikonicu obaveštenja</gui> u fioci poruka. Da to uradite:</p>
+    <steps>
+      <item><p>Otvorite fioku poruka tako što ćete pritisnuti <keyseq><key>Super</key><key>M</key></keyseq> ili pomerite pokazivač miša na samo dno vašeg ekrana.</p></item>
+      <item><p>Pritisnite na ikonicu <gui>radne površi</gui> u <gui>fioci poruka</gui>. Ovo će otvoriti panel <app>deljenja</app>.</p>
+      </item>
+      <item><p>Izaberite <gui>Deljenje ekrana</gui>.</p></item>
+      <item><p>Prebacite klizač <gui>deljenja ekrana</gui> na <gui>Isklj.</gui>.</p></item>
+    </steps>
 
   </section>
--->
+
 
 </page>

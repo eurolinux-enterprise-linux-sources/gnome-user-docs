@@ -4,28 +4,34 @@
   <info>
     <link type="guide" xref="bluetooth" group="#first"/>
 
-    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.4" date="2012-02-19" status="outdated"/>
     <revision pkgversion="3.10" date="2013-11-09" status="review"/>
     <revision pkgversion="3.12" date="2014-03-04" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-21" status="candidate"/>
+    <revision pkgversion="3.13" date="2014-09-21" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Jim Campbell</name>
-      <email its:translate="no">jwcampbell@gmail.com</email>
+      <email>jwcampbell@gmail.com</email>
     </credit>
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
       <years>2014</years>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
       <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2015</years>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -47,7 +53,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2014</mal:years>
+      <mal:years>2011-2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -79,30 +85,33 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
 <title>Activation ou désactivation du Bluetooth</title>
 
 <if:choose>
   <if:when test="platform:unity">
-    <p>You can turn Bluetooth on to connect to other Bluetooth devices, or turn
-    it off to conserve power. To turn Bluetooth on, click the Bluetooth icon in
-    the menu bar and switch <gui>Bluetooth</gui> to <gui>ON</gui>.</p>
+    <p>Activez le Bluetooth pour vous connecter aux autres périphériques Bluetooth, ou désactivez-le pour économiser l'énergie. Pour activer le Bluetooth, cliquez sur l'icône Bluetooth dans la barre de menu et basculez l'interrupteur <gui>Bluetooth</gui> sur <gui>Activé</gui>.</p>
   </if:when>
 
-  <p>You can turn Bluetooth on to connect to other Bluetooth devices, or turn
-  it off to conserve power. To turn Bluetooth on:</p>
+  <p>Activez le Bluetooth pour vous connecter aux autres périphériques Bluetooth, ou désactivez-le pour économiser l'énergie. Pour activer le Bluetooth :</p>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-terminology">Activities</gui> overview and
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
       start typing <gui>Bluetooth</gui>.</p>
     </item>
     <item>
-      <p>Click on <gui>Bluetooth</gui> to open the panel.</p>
+      <p>Cliquez sur <gui>Bluetooth</gui> pour ouvrir le panneau.</p>
     </item>
     <item>
-      <p>Set the switch at the top to <gui>ON</gui>.</p>
+      <p>Basculez l'interrupteur dans la partie supérieure sur <gui>Activé</gui>.</p>
     </item>
   </steps>
 </if:choose>
@@ -116,17 +125,18 @@
 
 <if:choose>
   <if:when test="platform:unity">
-    <p>To turn Bluetooth off, click the Bluetooth icon and switch
-    <gui>Bluetooth</gui> to <gui>OFF</gui>.</p>
+    <p>Pour désactiver le Bluetooth, cliquez sur l'icône Bluetooth puis basculez l'interrupteur <gui>Bluetooth</gui> sur <gui>Désactivé</gui>.</p>
   </if:when>
   <p>Pour désactiver le Bluetooth :</p>
   <steps>
     <item>
-      <p>Open the <gui xref="shell-terminology">system menu</gui> from the
+      <p>Open the <gui xref="shell-introduction#yourname">system menu</gui> from the
       right side of the top bar.</p>
     </item>
     <item>
-      <p>Sélectionnez <gui>Bluetooth</gui>. La partie Bluetooth du menu se déroule.</p>
+      <p>Select
+      <gui><media its:translate="no" type="image" mime="image/svg" src="figures/bluetooth-active-symbolic.svg"/>
+      Not In Use</gui>. The Bluetooth section of the menu will expand.</p>
     </item>
     <item>
       <p>Sélectionnez <gui>Éteindre</gui>.</p>
@@ -136,9 +146,7 @@
 
 <if:choose>
   <if:when test="platform:unity">
-    <note><p>Your computer is <link xref="bluetooth-visibility">visible</link>
-    if <gui>Visible</gui> is switched to <gui>ON</gui> in the Bluetooth
-    menu.</p></note>
+    <note><p>Votre ordinateur est <link xref="bluetooth-visibility">visible</link> tant que l'interrupteur <gui>Visible</gui> est sur <gui>Activé</gui> dans le menu Bluetooth.</p></note>
   </if:when>
   <note><p>Votre ordinateur est <link xref="bluetooth-visibility">visible</link> tant que le panneau <gui>Bluetooth</gui> est ouvert.</p></note>
 </if:choose>

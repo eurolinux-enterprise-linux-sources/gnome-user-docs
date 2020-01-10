@@ -8,6 +8,7 @@
 
     <revision pkgversion="3.5.92" date="2012-09-19" status="review"/>
     <revision pkgversion="3.14.0" date="2014-09-23" status="review"/>
+    <revision pkgversion="3.18" date="2014-09-30" status="candidate"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -22,51 +23,68 @@
       <email>kittykat3756@gmail.com</email>
       <years>2014</years>
     </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2015</years>
+    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <desc>Ελέγξτε τι πληροφορίες εμφανίζονται σε στήλες στην προβολή λίστας.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name> Δημήτρης Σπίγγος</mal:name>
-      <mal:email>dmtrs32@gmail.com</mal:email>
-      <mal:years>2012, 2013, 2014</mal:years>
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2016</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name> Φώτης Τσάμης</mal:name>
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
       <mal:email>ftsamis@gmail.com</mal:email>
       <mal:years>2009</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name> Μάριος Ζηντίλης</mal:name>
+      <mal:name>Μάριος Ζηντίλης</mal:name>
       <mal:email>m.zindilis@dmajor.org</mal:email>
       <mal:years>2009, 2010</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name> Θάνος Τρυφωνίδης</mal:name>
-      <mal:email>tomtryf@gmail.com</mal:email>
-      <mal:years>2012</mal:years>
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gnome.org</mal:email>
+      <mal:years>2012-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
     </mal:credit>
   </info>
 
-  <title>Files list columns preferences</title>
+  <title>Προτιμήσεις στηλών λίστας αρχείων</title>
 
-  <p>There are nine columns of information that you can display in the
-  <gui>Files</gui> list view. Click <gui>Files</gui> in the top bar, pick
-  <gui>Preferences</gui> and choose the <gui>List Columns</gui> tab to select
-  which columns will be visible.</p>
+  <p>Υπάρχουν έντεκα στήλες πληροφοριών που μπορείτε να εμφανίσετε στην προβολή λίστα του <gui>Αρχεία</gui>. Κάντε κλικ στα <gui>Αρχεία</gui> στην πάνω γραμμή, επιλέξτε <gui>Προτιμήσεις</gui> και επιλέξτε την καρτέλα <gui>Στήλες λίστας</gui> για να διαλέξετε ποιες στήλες θα είναι ορατές.</p>
 
   <note style="tip">
-    <p>Χρησιμοποιήστε τα κουμπιά <gui>Μετακίνηση πάνω</gui> και <gui>Μετακίνηση κάτω</gui> για να ορίσετε τη σειρά με την οποία οι επιλεγμένες στήλες θα εμφανιστούν.</p>
+    <p>Χρησιμοποιήστε τα κουμπιά <gui>Μετακίνηση πάνω</gui> και <gui>Μετακίνηση κάτω</gui> για να επιλέξετε ποια θα είναι η σειρά των εμφανιζόμενων στηλών. Κάντε κλικ στο <gui>Επαναφορά στην προεπιλογή</gui> για να αναιρέσετε όποιες αλλαγές και να επιστρέψετε στις προεπιλεγμένες στήλες.</p>
   </note>
 
   <terms>
     <item>
       <title><gui>Όνομα</gui></title>
-      <p>The name of folders and files.</p>
+      <p>Το όνομα των φακέλων και των αρχείων.</p>
+      <note style="tip">
+        <p>Η στήλη <gui>Όνομα</gui> δεν μπορεί να είναι κρυφή</p>
+      </note>
     </item>
     <item>
       <title><gui>Μέγεθος</gui></title>
@@ -78,7 +96,7 @@
     </item>
     <item>
       <title><gui>Τροποποιημένο</gui></title>
-      <p>Δίνει την ημερομηνία και η ώρα της τελευταίας φοράς που το αρχείο τροποποιήθηκε.</p>
+      <p>Δίνει την ημερομηνία της τελευταίας φοράς που τροποποιήθηκε το αρχείο.</p>
     </item>
     <item>
       <title><gui>Ιδιοκτήτης</gui></title>
@@ -86,22 +104,17 @@
     </item>
     <item>
       <title><gui>Ομάδα</gui></title>
-      <p>The group the file is owned by. Each user is normally in their own
-      group, but it is possible to have many users in one group. For example, a
-      department may have their own group in a work environment.</p>
+      <p>Η ομάδα που κατέχει το αρχείο. Κάθε χρήστης είναι κανονικά στη δικιά του ομάδα, αλλά είναι δυνατό να υπάρχουν πολλοί χρήστες σε μια ομάδα. Παραδείγματος χάρη, ένα τμήμα μπορεί να έχει τη δικιά του ομάδα σε ένα περιβάλλον εργασίας.</p>
     </item>
     <item>
       <title><gui>Δικαιώματα</gui></title>
-      <p>Displays the file access permissions. For example,
-      <gui>drwxrw-r--</gui></p>
+      <p>Εμφανίζει τα δικαιώματα πρόσβασης του αρχείου. Για παράδειγμα, <gui>drwxrw-r--</gui></p>
       <list>
         <item>
-          <p>The first character is the file type. <gui>-</gui> means regular
-          file and <gui>d</gui> means directory (folder). In rare cases, other
-          characters can also be shown.</p>
+          <p>Ο πρώτος χαρακτήρας είναι ο τύπος του αρχείου. Το <gui>-</gui> σημαίνει κανονικό αρχείο και το <gui>d</gui> σημαίνει κατάλογος (φάκελος). Σε σπάνιες περιπτώσεις, μπορεί να εμφανιστούν και άλλοι χαρακτήρες.</p>
         </item>
         <item>
-          <p>Οι επόμενοι τρεις χαρακτήρες <gui>rwx</gui> καθορίζουν δικαιώματα για τον χρήστη που κατέχει το αρχείο.</p>
+          <p>Οι επόμενοι τρεις χαρακτήρες <gui>rwx</gui> καθορίζουν τα δικαιώματα για τον χρήστη που κατέχει το αρχείο.</p>
         </item>
         <item>
           <p>Τα επόμενα τρία <gui>rw-</gui> ορίζουν δικαιώματα για όλα τα μέλη της ομάδας που κατέχει το αρχείο.</p>
@@ -110,32 +123,37 @@
           <p>Οι τελευταίοι τρεις χαρακτήρες στη στήλη <gui>r--</gui> ορίζουν τα δικαιώματα για όλους τους άλλους χρήστες στο σύστημα.</p>
         </item>
       </list>
-      <p>Each permission has the following meanings:</p>
+      <p>Κάθε χαρακτήρας έχει τις ακόλουθες έννοιες:</p>
       <list>
         <item>
-          <p><gui>r</gui>: readable, meaning that you can open the file or
-          folder</p>
+          <p><gui>r</gui>: αναγνώσιμο, σημαίνει πως μπορείτε να ανοίξετε το αρχείο ή τον φάκελο</p>
         </item>
         <item>
-          <p><gui>w</gui>: writable, meaning that you can save changes to it</p>
+          <p><gui>w</gui>: εγγράψιμο, σημαίνει πως μπορείτε να αποθηκεύσετε αλλαγές σε αυτό</p>
         </item>
         <item>
-          <p><gui>x</gui>: executable, meaning that you can run it if it is a
-          program or script file, or you can access subfolders and files if it
-          is a folder</p>
+          <p><gui>x</gui>: εκτελέσιμο, σημαίνει πως μπορείτε να το εκτελέσετε αν είναι πρόγραμμα ή ένα αρχείο σεναρίου, ή πως μπορείτε να έχετε πρόσβαση στους υποφακέλους και αρχεία αν πρόκειται για φάκελο.</p>
         </item>
         <item>
-          <p><gui>-</gui>: permission not set</p>
+          <p><gui>-</gui>: δεν έχει καθοριστεί κάποιο δικαίωμα</p>
         </item>
       </list>
     </item>
     <item>
       <title><gui>Τύπος MIME</gui></title>
-      <p>Εμφανίζει τον τύπο MIME του στοιχείου.</p>
+      <p>Εμφανίζει τον τύπο MIME του αντικειμένου.</p>
     </item>
     <item>
-      <title><gui>Τοποθεσία</gui></title>
+      <title><gui>Θέση</gui></title>
       <p>Η διαδρομή στη θέση του αρχείου.</p>
+    </item>
+    <item>
+      <title><gui>Τροποποιήθηκε - Ώρα</gui></title>
+      <p>Δίνει την ημερομηνία και ώρα της τελευταίας φοράς που το αρχείο τροποποιήθηκε.</p>
+    </item>
+    <item>
+      <title><gui>Προσπελάστηκε</gui></title>
+      <p>Δίνει την ημερομηνία ή ώρα της τελευταίας φοράς που το αρχείο τροποποιήθηκε.</p>
     </item>
   </terms>
 

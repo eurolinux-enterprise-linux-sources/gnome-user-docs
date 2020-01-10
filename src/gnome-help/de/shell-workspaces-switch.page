@@ -32,7 +32,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Christian Kirbach</mal:name>
       <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2014.</mal:years>
+      <mal:years>2011-2016.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -53,31 +53,23 @@
  <steps>  
  <title>Mit der Maus:</title>
  <item>
-  <p if:test="!platform:gnome-classic">Öffnen Sie die <link xref="shell-terminology"><gui>Aktivitäten</gui>-Übersicht</link>.</p>
-  <p if:test="platform:gnome-classic">At the top left of the screen, click the
-  <link xref="shell-terminology"><gui>Applications</gui> menu</link> and choose 
-  <gui>Activities Overview</gui>.</p>
+    <p if:test="!platform:gnome-classic">Öffnen Sie die <gui xref="shell-introduction#activities">Aktivitäten</gui>-Übersicht.</p>
+  <p if:test="platform:gnome-classic">Klicken Sie links oben auf dem Bildschirm auf das <gui xref="shell-introduction#activities">Anwendungen</gui>-Menü und wählen Sie <gui>Aktivitäten-Übersicht</gui>.</p>
  </item>
  <item>
-  <p>Klicken Sie auf eine der Arbeitsflächen im <link xref="shell-terminology">Arbeitsflächenumschalter</link> auf der rechten Seite des Bildschirms, um die geöffneten Fenster zu finden.</p>
+  <p>Klicken Sie auf eine der Arbeitsflächen im <link xref="shell-workspaces">Arbeitsflächenumschalter</link> auf der rechten Seite des Bildschirms, um die geöffneten Fenster zu finden.</p>
  </item>
  <item>
-  <p>Click on any window thumbnail to activate the workspace.</p>
+  <p>Klicken Sie auf eines der Fenster-Vorschaubilder, um die jeweilige Arbeitsfläche zu aktivieren.</p>
  </item>
  </steps>
  
-  <p if:test="platform:gnome-classic">Alternatively, you can switch between
-  workspaces by clicking the workspace identifier at the right-hand side of
-  the window list on the bottom bar and selecting the workspace you want to
-  use from the menu.</p>
+  <p if:test="platform:gnome-classic">Alternativ können Sie zwischen den Arbeitsflächen wechseln, indem Sie auf den Arbeitsflächen-Bezeichner an der rechten Seite der Fensterliste in der unteren Leiste klicken und die gewünschte Arbeitsfläche aus dem Menü wählen.</p>
 
  <list>
  <title>Mit der Tastatur:</title>  
   <item>
-    <p>Press
-    <keyseq><key xref="keyboard-key-super">Super</key><key>Page Up</key></keyseq>
-    to move to a workspace which is above the current workspace in the
-    workspace selector.</p>
+    <p>Drücken Sie <keyseq><key xref="keyboard-key-super">Super</key><key>↑</key></keyseq>, um auf eine Arbeitsfläche zu verschieben, die sich über der aktuellen Arbeitsfläche befindet.</p>
   </item>
   <item>
     <p>Drücken Sie <keyseq><key>Super</key><key>↓</key></keyseq>, um auf eine Arbeitsfläche zu verschieben, die sich unter der aktuellen Arbeitsfläche befindet.</p>

@@ -5,12 +5,16 @@
     <link type="guide" xref="net-general"/>
 
     <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Jim Campbell</name>
-      <email its:translate="no">jwcampbell@gmail.com</email>
+      <email>jwcampbell@gmail.com</email>
     </credit>
-
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <desc>IP アドレスとはコンピューターの電話番号のようなものです。</desc>
@@ -18,7 +22,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -67,7 +71,12 @@
   <p>現在、IP アドレスのほとんどは 4 つの番号セットから構成され、それぞれのセットはピリオドで区切られています。<code>192.168.1.42</code> などがその例です。</p>
 
   <note style="tip">
-    <p>IP アドレスは<em>動的</em>または<em>静的</em>のいずれかに分類できます。コンピューターがネットワークに接続する度、一時的に割り当てられるのが動的な IP アドレスです。固定で変化しないのが静的な IP アドレスになります。静的アドレスは、サーバー管理など特殊な用途での使用が典型的です。</p>
+    <p>An IP address can either be <em>dynamic</em> or <em>static</em>. Dynamic
+    IP addresses are temporarily assigned each time your computer connects to a
+    network. Static IP addresses are fixed, and do not change. Dynamic IP
+    addresses are more common that static addresses - static addresses are
+    typically only used when there is a special need for them, such as in the
+    administration of a server.</p>
   </note>
 
 </page>

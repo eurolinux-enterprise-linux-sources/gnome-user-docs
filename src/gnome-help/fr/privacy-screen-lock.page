@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="privacy-screen-lock" xml:lang="fr">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="privacy-screen-lock" xml:lang="fr">
 
   <info>
     <link type="guide" xref="privacy"/>
@@ -9,18 +9,19 @@
     <revision pkgversion="3.8" date="2013-05-21" status="candidate"/>
     <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
     <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-30" status="final"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit>
       <name>Jim Campbell</name>
-      <email its:translate="no">jwcampbell@gmail.com</email>
+      <email>jwcampbell@gmail.com</email>
       <years>2013</years>
     </credit>
 
@@ -43,7 +44,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2014</mal:years>
+      <mal:years>2011-2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -75,18 +76,30 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
   <title>Verrouillage automatique de l'écran</title>
   
-  <p>En cas d'absence, vous devriez <link xref="shell-exit#lock-screen">verrouiller l'écran</link> pour empêcher d'autres personnes d'utiliser votre ordinateur et d'avoir accès à vos fichiers. S'il vous arrive d'oublier de verrouiller l'écran, sachez que vous pouvez régler l'ordinateur pour qu'il le fasse automatiquement après un certain délai. Votre ordinateur sera ainsi en sécurité quand vous ne vous en servez pas.</p>
+  <p>When you leave your computer, you should
+  <link xref="shell-exit#lock-screen">lock the screen</link> to prevent
+  other people from using your desktop and accessing your files. If you
+  sometimes forget to lock your screen, you may wish to have your computerʼs
+  screen lock automatically after a set period of time. This will help to
+  secure your computer when you arenʼt using it.</p>
 
   <note><p>Quand l'ordinateur est verrouillé, les applications et les processus système en cours continuent d'être exécutés. Vous devrez saisir votre mot de passe pour en reprendre le contrôle.</p></note>
   
   <steps>
     <title>Pour paramétrer un délai plus long avant que l'écran ne se verrouille automatiquement :</title>
     <item>
-      <p>Ouvrez la vue d'ensemble des <gui xref="shell-terminology">Activités</gui> et commencez à saisir <gui>Confidentialité</gui>.</p>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Privacy</gui>.</p>
     </item>
     <item>
       <p>Cliquez sur <gui>Confidentialité</gui> pour ouvrir le panneau.</p>
@@ -95,21 +108,18 @@
       <p>Sélectionnez <gui>Verrouiller l'écran</gui>.</p>
     </item>
     <item>
-      <p>Make sure <gui>Automatic Screen Lock</gui> is switched <gui>ON</gui>,
-      then select a length of time from the drop-down list.</p>
-    </item>
-    <item>
-      <p>Pour autoriser l'affichage des notifications sur l'écran verrouillé, basculez l'interrupteur <gui>Afficher si l'écran est verrouillé</gui> sur <gui>Activé</gui>.</p>
-    </item>
-    <item>
-      <p>Click the <gui>X</gui> to close.</p>
+      <p>Assurez-vous que l'interrupteur <gui>Verrouillage automatique de l'écran</gui> est sur <gui>Activé</gui>, puis choisissez un délai dans la liste déroulante.</p>
     </item>
   </steps>
 
-  <p>When your screen is locked, and you want to unlock it, press
-  <key>Esc</key>, or swipe up from the bottom of the screen with your mouse.
-  Then enter your password, and press <key>Enter</key> or click
-  <gui>Unlock</gui>. Alternatively, just start typing your password and the
-  lock curtain will be automatically raised as you type.</p>
+  <note style="tip">
+    <p>Applications can present notifications to you that are still displayed
+    on your lock screen. This is convenient, for example, to see if you have
+    any email without unlocking your screen. If youʼre concerned about other
+    people seeing these notifications, switch <gui>Show Notifications</gui>
+    off.</p>
+  </note>
+
+  <p>Si l'écran est verrouillé, appuyez sur <key>Échap</key> pour le déverrouiller, ou balayez l'écran avec la souris de bas en haut. Saisissez alors votre mot de passe et appuyez sur <key>Entrée</key> ou bien cliquez sur <gui>Déverrouiller</gui>. Sinon, commencez juste à saisir votre mot de passe et le rideaux se soulève au fur et à mesure.</p>
 
 </page>

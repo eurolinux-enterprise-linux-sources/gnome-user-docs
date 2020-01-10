@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task a11y" id="a11y-braille" xml:lang="de">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task a11y" id="a11y-braille" xml:lang="de">
 
   <info>
     <link type="guide" xref="a11y#vision" group="blind"/>
     <link type="seealso" xref="a11y-screen-reader"/>
 
     <revision pkgversion="3.9.92" date="2013-09-18" status="incomplete"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Jana Heves</name>
+      <email>jsvarova@gnome.org</email>
     </credit>
 
     <desc>Den <app>Orca</app>-Bildschirmleser mit einer Braillezeile verwenden.</desc>
@@ -31,7 +36,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Christian Kirbach</mal:name>
       <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2014.</mal:years>
+      <mal:years>2011-2016.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -49,6 +54,10 @@
 
   <title>Den Bildschirm in Brailleschrift lesen</title>
 
-  <p>GNOME stellt den Bildschirmleser <app>Orca</app> zur Verfügung, um die Benutzerschnittstelle auf einer Braillezeile wiederzugeben. Abhängig davon, wie Sie GNOME installiert haben, ist Orca bei Ihnen möglicherweise nicht installiert. <link href="install:orca">Installieren Sie Orca</link> und wenden Sie sich dann an die <link href="help:orca">Orca-Hilfe</link> für weitere Informationen.</p>
+  <p>GNOME stellt den Bildschirmleser <app>Orca</app> zur Verfügung, um die Benutzerschnittstelle auf einer Braillezeile wiederzugeben. Abhängig davon, wie Sie GNOME installiert haben, ist Orca bei Ihnen möglicherweise nicht installiert. Installieren Sie Orca in diesem Fall.</p>
+
+  <p if:test="action:install"><link style="button" action="install:orca">Orca installieren</link></p>
+
+  <p>Schauen Sie im Handbuch von <link href="help:orca">Orca</link> für weitere Informationen.</p>
 
 </page>

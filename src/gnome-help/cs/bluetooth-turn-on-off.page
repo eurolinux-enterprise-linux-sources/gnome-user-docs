@@ -4,33 +4,39 @@
   <info>
     <link type="guide" xref="bluetooth" group="#first"/>
 
-    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.4" date="2012-02-19" status="outdated"/>
     <revision pkgversion="3.10" date="2013-11-09" status="review"/>
     <revision pkgversion="3.12" date="2014-03-04" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-21" status="candidate"/>
+    <revision pkgversion="3.13" date="2014-09-21" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Jim Campbell</name>
-      <email its:translate="no">jwcampbell@gmail.com</email>
+      <email>jwcampbell@gmail.com</email>
     </credit>
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
       <years>2014</years>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
       <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2015</years>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Enable or disable the Bluetooth device on your computer.</desc>
+    <desc>Jak zapnout nebo vypnout zařízení Bluetooth na svém počítači.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
@@ -41,79 +47,62 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Marek Černocký</mal:name>
       <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:years>2014, 2015</mal:years>
     </mal:credit>
   </info>
 
-<title>Turn Bluetooth on or off</title>
+<title>Zapnutí nebo vypnutí Bluetooth</title>
 
 <if:choose>
   <if:when test="platform:unity">
-    <p>You can turn Bluetooth on to connect to other Bluetooth devices, or turn
-    it off to conserve power. To turn Bluetooth on, click the Bluetooth icon in
-    the menu bar and switch <gui>Bluetooth</gui> to <gui>ON</gui>.</p>
+    <p>Bluetooth můžete mít zapnuté, abyste se mohli připojit k jinému zařízení Bluetooth, nebo vypnuté, abyste šetřili energii. Zapnete jej tak, že kliknete na ikonu Bluetooth na horní liště a přepnete vypínač <gui>Bluetooth</gui> na <gui>Zapnuto</gui>.</p>
   </if:when>
 
-  <p>You can turn Bluetooth on to connect to other Bluetooth devices, or turn
-  it off to conserve power. To turn Bluetooth on:</p>
+  <p>Bluetooth můžete mít zapnuté, abyste se mohli připojit k jinému zařízení Bluetooth, nebo vypnuté, abyste šetřili energii. Zapnete jej následovně:</p>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-terminology">Activities</gui> overview and
-      start typing <gui>Bluetooth</gui>.</p>
+      <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Bluetooth</gui>.</p>
     </item>
     <item>
       <p>Kliknutím na <gui>Bluetooth</gui> otevřete příslušný panel.</p>
     </item>
     <item>
-      <p>Set the switch at the top to <gui>ON</gui>.</p>
+      <p>Vypínač nahoře přepněte na <gui>❙</gui> (zapnuto).</p>
     </item>
   </steps>
 </if:choose>
 
 <if:choose>
   <if:when test="platform:unity">
-    <p>Many laptop computers have a hardware switch or key combination to turn
-    Bluetooth on and off. If the Bluetooth hardware is turned off, you will not
-    see a Bluetooth icon in the menu bar. Look for a switch on your computer or
-    a key on your keyboard. The keyboard key is often accessed with the help of
-    the <key>Fn</key> key.</p>
+    <p>Řada notebooků má hardwarový vypínač nebo kombinaci kláves, kterými lze Bluetooth zapnout a vypnout. Když je hardware vypnutý, není ikona Bluetooth na horní liště zobrazená. V takovém případě se podívejte po hardwarovém vypínači nebo klávese na klávesnici. Klávesa je často v kombinaci s pomocnou klávesou <key>Fn</key>.</p>
   </if:when>
-  <p>Many laptop computers have a hardware switch or key combination to turn
-  Bluetooth on and off. Look for a switch on your computer or a key on your
-  keyboard. The keyboard key is often accessed with the help of the
-  <key>Fn</key> key.</p>
+  <p>Řada notebooků má hardwarový vypínač nebo kombinaci kláves, kterým lze Bluetooth zapnout a vypnout. Podívejte se po hardwarovém vypínači nebo příslušné klávese na klávesnici. Klávesa je často v kombinaci s pomocnou klávesou <key>Fn</key>.</p>
 </if:choose>
 
 <if:choose>
   <if:when test="platform:unity">
-    <p>To turn Bluetooth off, click the Bluetooth icon and switch
-    <gui>Bluetooth</gui> to <gui>OFF</gui>.</p>
+    <p>Když chcete Bluetooth vypnout, klikněte na ikonu Bluetooth a přepněte <gui>Bluetooth</gui> na <gui>Vypnuto</gui>.</p>
   </if:when>
-  <p>To turn Bluetooth off:</p>
+  <p>Když chcete Bluetooth vypnout:</p>
   <steps>
     <item>
-      <p>Open the <gui xref="shell-terminology">system menu</gui> from the
-      right side of the top bar.</p>
+      <p>Otevřete <gui xref="shell-introduction#yourname">systémovou nabídku</gui> vpravo na horní liště.</p>
     </item>
     <item>
-      <p>Select <gui>Bluetooth</gui>. The Bluetooth section of the menu will
-      expand.</p>
+      <p>Vyberte <gui><media its:translate="no" type="image" mime="image/svg" src="figures/bluetooth-active-symbolic.svg"/>   Nepoužívá se</gui>. Oddíl Bluetooth v nabídce se rozbalí.</p>
     </item>
     <item>
-      <p>Select <gui>Turn Off</gui>.</p>
+      <p>Vyberte <gui>Vypnout</gui>.</p>
     </item>
   </steps>
 </if:choose>
 
 <if:choose>
   <if:when test="platform:unity">
-    <note><p>Your computer is <link xref="bluetooth-visibility">visible</link>
-    if <gui>Visible</gui> is switched to <gui>ON</gui> in the Bluetooth
-    menu.</p></note>
+    <note><p>Váš počítač je <link xref="bluetooth-visibility">viditelný</link>, když je vypínač <gui>Viditelný</gui> v nabídce Bluetooth přepnutý na <gui>Zapnuto</gui>.</p></note>
   </if:when>
-  <note><p>Your computer is <link xref="bluetooth-visibility">visible</link> as
-  long as the <gui>Bluetooth</gui> panel is open.</p></note>
+  <note><p>Váš počítač je <link xref="bluetooth-visibility">viditelný</link> po celo dobu, co je otevřen panel <gui>Bluetooth</gui>.</p></note>
 </if:choose>
 
 </page>

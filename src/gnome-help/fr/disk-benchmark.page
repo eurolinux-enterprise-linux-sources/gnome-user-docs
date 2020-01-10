@@ -10,15 +10,15 @@
 
     <credit type="author">
       <name>Le projet de documentation GNOME</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="author">
       <name>Natalia Ruz Leiva</name>
-      <email its:translate="no">nruz@alumnos.inf.utfsm.cl</email>
+      <email>nruz@alumnos.inf.utfsm.cl</email>
     </credit>
    <credit type="editor">
      <name>Michael Hill</name>
-     <email its:translate="no">mdhillca@gmail.com</email>
+     <email>mdhillca@gmail.com</email>
    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -40,7 +40,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2014</mal:years>
+      <mal:years>2011-2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -72,6 +72,12 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
 <title>Test de la performance de votre disque dur</title>
@@ -81,25 +87,22 @@
   <steps>
     <item>
       <p>Open <app>Disks</app> from the
-      <gui xref="shell-terminology">Activities</gui> overview.</p>
+      <gui xref="shell-introduction#activities">Activities</gui> overview.</p>
     </item>
     <item>
-      <p>Choose the disk from the list in the left pane.</p>
+      <p>Sélectionnez le disque dans la liste du panneau de gauche.</p>
     </item>
     <item>
-      <p>Click the gear button and select <gui>Benchmark…</gui> from the
+      <p>Click the menu button and select <gui>Benchmark disk…</gui> from the
       menu.</p>
     </item>
     <item>
-      <p>Click <gui>Start Benchmark…</gui> and adjust the <gui>Transfer
-      Rate</gui> and <gui>Access Time</gui> parameters as desired.</p>
+      <p>Cliquez sur <gui>Lancer le test de performance…</gui> et réglez le <gui>Taux de transfert</gui> et le <gui>Temps d'accès</gui> selon votre désir.</p>
     </item>
     <item>
       <p>Cliquez sur <gui>Lancer le test de performance</gui> pour savoir à quelle vitesse les données sont lues sur le disque. <link xref="user-admin-explain">Des privilèges administrateurs</link> peuvent être requis. Saisissez votre mot de passe ou le mot de passe du compte administrateur demandé.</p>
       <note>
-        <p>If <gui>Perform write-benchmark</gui> is checked, the benchmark
-        will test how fast data can be read from and written to the disk. This
-        will take longer to complete.</p>
+        <p>Si <gui>Faire un test de performance-écriture</gui> est coché, le test vérifiera les vitesses de lecture et d'écriture sur le disque. Ce sera plus long à réaliser.</p>
       </note>
     </item>
   </steps>

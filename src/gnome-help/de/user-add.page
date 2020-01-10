@@ -3,27 +3,27 @@
 
   <info>
     <link type="guide" xref="user-accounts#manage" group="#first"/>
-    <!--<link type="seealso" xref="user-addguest"/>-->
 
-    <revision pkgversion="3.8.0" version="0.3" date="2013-03-09" status="candidate"/>
+    <revision pkgversion="3.8" date="2013-03-09" status="candidate"/>
     <revision pkgversion="3.10" date="2013-11-01" status="review"/>
     <revision pkgversion="3.13.92" date="2013-11-01" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>GNOME-Dokumentationsprojekt</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -45,7 +45,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Christian Kirbach</mal:name>
       <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2014.</mal:years>
+      <mal:years>2011-2016.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -65,53 +65,42 @@
 
   <p>Sie können mehrere Benutzerkonten an Ihrem Rechner anlegen. Geben Sie jeder Person in Ihrem Haushalt oder Ihrer Firma ein Benutzerkonto. Jeder Benutzer hat seinen eigenen persönlichen Ordner, eigene Dokumente und Einstellungen.</p>
 
-  <p>You need <link xref="user-admin-explain">administrator privileges</link>
-  to add user accounts.</p>
+  <p>Sie müssen über <link xref="user-admin-explain"> Systemverwalterrechte verfügen</link>, um Benutzerkonten hinzufügen zu können.</p>
 
   <steps>
     <item>
-      <p>Öffnen Sie die <gui xref="shell-terminology">Aktivitäten</gui>-Übersicht und tippen Sie <gui>Benutzer</gui> ein.</p>
+      <p>Öffnen Sie die <gui xref="shell-introduction#activities">Aktivitäten</gui>-Übersicht und tippen Sie <gui>Benutzer</gui> ein.</p>
     </item>
     <item>
       <p>Klicken Sie auf <gui>Benutzer</gui>, um das Panel zu öffnen.</p>
     </item>
     <item>
-      <p>Press <gui style="button">Unlock</gui> in the top right corner and
-      type in your password when prompted.</p>
+      <p>Klicken Sie auf den Knopf <gui style="button">Entsperren</gui> in der rechten oberen Ecke und geben Sie Ihr Passwort ein.</p>
     </item>
     <item>
-      <p>Press the <gui style="button">+</gui> button, below the list of
-      accounts on the left, to add a new user account.</p>
+      <p>Klicken Sie unten in der Kontoliste links auf den Knopf <gui style="button">+</gui>, um ein neues Benutzerkonto hinzuzufügen.</p>
     </item>
     <item>
-      <p>Wenn Sie dem neuen Benutzer die <link xref="user-admin-explain">Rechte des Systemverwalters</link> geben wollen, wählen Sie <gui>Systemverwalter</gui> im Auswahlmenü als Kontotyp. Systemverwalter können zum Beispiel Benutzer hinzufügen oder entfernen, Software und Treiber installieren sowie Datum und Uhrzeit ändern.</p>
+      <p>Wenn Sie dem neuen Benutzer die <link xref="user-admin-explain">Rechte des Systemverwalters</link> geben wollen, wählen Sie <gui>Systemverwalter</gui> im Auswahlmenü als Kontotyp.</p>
+      <p>Systemverwalter können zum Beispiel Benutzer hinzufügen oder entfernen, Software und Treiber installieren sowie Datum und Uhrzeit ändern.</p>
     </item>
     <item>
-      <p>Enter the new user's full name. The username will be filled in
-      automatically based on the full name. If you do not like the proposed
-      username, you can change it.</p>
+      <p>Geben Sie den vollständigen Namen des neuen Benutzers ein. Basierend auf dem vollständigen Namen wird automatisch der Benutzername ausgefüllt. Diese Vorgabe dürfte so passen, aber Sie können sie ändern, wenn Sie wollen.</p>
     </item>
     <item>
-      <p>You can choose to set a password for the new user, or let them set it
-      themselves on their first login. You can press on the
-      <gui style="button"><media its:translate="no" type="image" src="figures/system-run-symbolic.svg" width="16" height="16"><span its:translate="yes">generate
-      password</span></media></gui> icon to automatically generate a random
-      password.</p>
+      <p>Sie können auch ein Passwort für den neuen Benutzer festlegen. Dies kann aber auch durch den Benutzer selbst bei dessen erster Anmeldung geschehen.</p>
+      <p>Wenn Sie das Passwort nun erzeugen wollen, klicken Sie auf das Symbol <gui style="button"><media its:translate="no" type="image" src="figures/system-run-symbolic.svg" width="16" height="16">
+      <span its:translate="yes">Ein Passwort erzeugen</span></media></gui>, um automatisch ein zufälliges Passwort zu erzeugen.</p>
     </item>
     <item>
       <p>Klicken Sie auf <gui>Hinzufügen</gui>.</p>
     </item>
   </steps>
 
-  <p>If you want to change the password after creating the account, select the
-  account, <gui style="button">Unlock</gui> the panel and press on the current
-  password status.</p>
+  <p>Wenn Sie das Passwort nach dem Anlegen des Kontos ändern wollen, wählen Sie das entsprechende Konto aus, <gui style="button">entsperren</gui> Sie die Eingabe und klicken Sie auf den Passwortstatus.</p>
 
   <note>
-    <p>In the <gui>Users</gui> panel, you can click the image next to the
-    user's name to the right to set an image for the account. This image will
-    be shown in the login window. GNOME provides some stock photos you can use,
-    or you can select your own or take a picture with your webcam.</p>
+    <p>Sie können im Fenster <gui>Benutzer</gui> auf das Bild neben dem rechts befindlichen Benutzernamen klicken, um ein Bild für dieses Benutzerkonto festzulegen. Dieses Bild wird im Anmeldebildschirm angezeigt. GNOME stellt eine Reihe von Bildern zur Verfügung, die Sie verwenden können, oder Sie können Ihre eigenen wählen oder ein Bild mit Ihrer Webcam aufnehmen.</p>
   </note>
 
 </page>

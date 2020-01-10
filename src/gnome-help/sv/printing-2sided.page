@@ -6,6 +6,7 @@
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -18,42 +19,46 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Print on both sides of the paper, or multiple pages per sheet.</desc>
+    <desc>Skriv ut på båda sidorna av pappret eller flera sidor per ark.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
   </info>
 
-  <title>Print two-sided and multi-page layouts</title>
+  <title>Skriv ut dubbelsidigt och flersidslayouter</title>
 
-  <p>To print on both sides of each sheet of paper:</p>
+  <p>För att skriva ut på båda sidorna av varje ark papper:</p>
 
   <steps>
     <item>
-      <p>Open the print dialog. This can normally be done through
-      <gui style="menuitem">Print</gui> in the menu or using the
-      <keyseq><key>Ctrl</key><key>P</key></keyseq> keyboard shortcut.</p>
+      <p>Öppna utskriftsdialogen genom att trycka på <keyseq><key>Ctrl</key><key>P</key></keyseq>.</p>
     </item>
     <item>
-      <p>Go to the <gui>Page Setup</gui> tab of the Print window and choose an
-      option from the <gui>Two-sided</gui> drop-down list. If the option is
-      disabled, two-sided printing is not available for your printer.</p>
-      <p>Printers handle two-sided printing in different ways. It is a good
-      idea to experiment with your printer to see how it works.</p>
+      <p>Gå till fliken <gui>Sidinställningar</gui> i fönstret Skriv ut och välj ett alternativ från rullgardinsmenyn <gui>Dubbelsidig</gui>. Om alternativet är inaktiverat kan är dubbelsidiga utskrifter inte möjliga med din skrivare.</p>
+      <p>Skrivare hanterar dubbelsidiga utskrifter på olika sätt. Det är en bra idé att experimentera med din skrivare för att se hur den fungerar.</p>
     </item>
     <item>
-      <p>You can print more than one page of the document per <em>side</em> of
-      paper too. Use the <gui>Pages per side</gui> option to do this.</p>
+      <p>Du kan skriva ut mer än en sida av dokumentet per <em>blad</em> papper också. Använd alternativet <gui>Sidor per blad</gui> för att göra detta.</p>
     </item>
   </steps>
 
   <note>
-    <p>The availability of these options may depend on the type of printer you
-    have, as well as the application you are using. This option may not always
-    be available.</p>
+    <p>Denna funktions tillgänglighet beror på vilken typ av skrivare du har, och vilket program du använder. Detta alternativt kan ibland saknas.</p>
   </note>
 
 </page>

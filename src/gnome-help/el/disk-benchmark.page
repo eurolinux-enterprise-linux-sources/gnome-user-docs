@@ -10,15 +10,15 @@
 
     <credit type="author">
       <name>Έργο Τεκμηρίωσης GNOME</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="author">
       <name>Natalia Ruz Leiva</name>
-      <email its:translate="no">nruz@alumnos.inf.utfsm.cl</email>
+      <email>nruz@alumnos.inf.utfsm.cl</email>
     </credit>
    <credit type="editor">
      <name>Michael Hill</name>
-     <email its:translate="no">mdhillca@gmail.com</email>
+     <email>mdhillca@gmail.com</email>
    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -26,27 +26,39 @@
     <desc>Εκτελέστε μετρήσεις επιδόσεων στον σκληρό σας δίσκο για να ελέγξετε πόσο γρήγορος είναι.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name> Δημήτρης Σπίγγος</mal:name>
-      <mal:email>dmtrs32@gmail.com</mal:email>
-      <mal:years>2012, 2013, 2014</mal:years>
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2016</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name> Φώτης Τσάμης</mal:name>
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
       <mal:email>ftsamis@gmail.com</mal:email>
       <mal:years>2009</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name> Μάριος Ζηντίλης</mal:name>
+      <mal:name>Μάριος Ζηντίλης</mal:name>
       <mal:email>m.zindilis@dmajor.org</mal:email>
       <mal:years>2009, 2010</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name> Θάνος Τρυφωνίδης</mal:name>
-      <mal:email>tomtryf@gmail.com</mal:email>
-      <mal:years>2012</mal:years>
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gnome.org</mal:email>
+      <mal:years>2012-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
     </mal:credit>
   </info>
 
@@ -56,32 +68,28 @@
 
   <steps>
     <item>
-      <p>Open <app>Disks</app> from the
-      <gui xref="shell-terminology">Activities</gui> overview.</p>
+      <p>Ανοίξτε το <app>Δίσκοι</app> από την επισκόπηση <gui xref="shell-introduction#activities">Δραστηριότητες</gui>.</p>
     </item>
     <item>
-      <p>Choose the disk from the list in the left pane.</p>
+      <p>Επιλέξτε τον δίσκο από τη λίστα στο αριστερό παράθυρο.</p>
     </item>
     <item>
-      <p>Click the gear button and select <gui>Benchmark…</gui> from the
+      <p>Click the menu button and select <gui>Benchmark disk…</gui> from the
       menu.</p>
     </item>
     <item>
-      <p>Click <gui>Start Benchmark…</gui> and adjust the <gui>Transfer
-      Rate</gui> and <gui>Access Time</gui> parameters as desired.</p>
+      <p>Κάντε κλικ στο <gui>Εκκίνηση έλεγχου επιδόσεων…</gui> και ρυθμίστε τις παραμέτρους <gui>Ρυθμός μεταφοράς</gui> και <gui>Χρόνος προσπέλασης</gui> όπως εσείς επιθυμείτε.</p>
     </item>
     <item>
-      <p>Πατήστε <gui>Έναρξη μέτρησης επιδόσεων</gui> για να δοκιμάσετε πόσο γρήγορα μπορούν να διαβαστούν τα δεδομένα από τον δίσκο. Ίσως απαιτηθούν <link xref="user-admin-explain">Δικαιώματα διαχειριστή</link>. Εισάγετε τον κωδικό σας, ή τον κωδικό για τον αιτούμενο λογαριασμό διαχειριστή.</p>
+      <p>Κάντε κλικ στο <gui>Εκκίνηση του έλεγχου επιδόσεων</gui> για να δοκιμάσετε πόσο γρήγορα μπορούν να διαβαστούν τα δεδομένα από τον δίσκο. Ίσως απαιτηθούν <link xref="user-admin-explain">δικαιώματα διαχειριστή</link>. Εισάγετε τον κωδικό πρόσβασής σας, ή τον κωδικό πρόσβασης για τον ζητούμενο λογαριασμό διαχειριστή.</p>
       <note>
-        <p>If <gui>Perform write-benchmark</gui> is checked, the benchmark
-        will test how fast data can be read from and written to the disk. This
-        will take longer to complete.</p>
+        <p>Εάν η επιλογή <gui>Εκτέλεση ελέγχου επιδόσεων εγγραφής</gui> είναι επιλεγμένη, ο έλεγχος επιδόσεων θα δοκιμάσει πόσο γρήγορα τα δεδομένα μπορούν να διαβαστούν και να γραφτούν στο δίσκο. Αυτό θα πάρει περισσότερο χρόνο για να ολοκληρωθεί.</p>
       </note>
     </item>
   </steps>
 
-  <p>Όταν η δοκιμή ολοκληρωθεί, τα αποτελέσματα θα εμφανιστούν στο γράφημα. Τα πράσινα σημεία και οι γραμμές σύνδεσης δείχνουν τα δείγματα που πάρθηκαν· αυτά αντιστοιχούν στον δεξιό άξονα, εμφανίζοντας χρόνο πρόσβασης, σχεδιασμένο στον κάτω άξονα, που αναπαριστά τον χρόνο που πέρασε κατά τη διάρκεια της μέτρησης επιδόσεων. Η γαλάζια γραμμή αναπαριστά τους ρυθμούς ανάγνωσης, ενώ η κόκκινη γραμμή αναπαριστά τους ρυθμούς εγγραφής· αυτοί εμφανίζονται ως ρυθμοί δεδομένων πρόσβασης στον αριστερό άξονα, σχεδιασμένοι ως ποσοστό του δίσκου που διανύθηκε, από το εξωτερικό προς τον άξονα, κατά μήκος του κάτω άξονα.</p>
+  <p>Όταν η δοκιμή ολοκληρωθεί, τα αποτελέσματα θα εμφανιστούν στο γράφημα. Τα πράσινα σημεία και οι γραμμές σύνδεσης δείχνουν τα δείγματα που πάρθηκαν· αυτά αντιστοιχούν στον δεξιό άξονα, εμφανίζοντας τον χρόνο πρόσβασης, σχεδιασμένο στον κάτω άξονα, που αναπαριστά τον χρόνο που πέρασε κατά τη διάρκεια της μέτρησης επιδόσεων. Η γαλάζια γραμμή αναπαριστά τους ρυθμούς ανάγνωσης, ενώ η κόκκινη γραμμή αναπαριστά τους ρυθμούς εγγραφής· αυτοί εμφανίζονται ως ρυθμοί δεδομένων πρόσβασης στον αριστερό άξονα, σχεδιασμένοι ως ποσοστό του δίσκου που διανύθηκε, από το εξωτερικό προς τον άξονα, κατά μήκος του κάτω άξονα.</p>
 
-  <p>Κάτω από το γράφημα, οι τιμές εμφανίζονται για ελάχιστο, μέγιστο και μέσο όρο ρυθμών ανάγνωσης και εγγραφής, μέσο όρο χρόνου πρόσβασης και χρόνου που πέρασε από την τελευταία δοκιμή μέτρησης επιδόσεων.</p>
+  <p>Κάτω από το γράφημα, οι τιμές εμφανίζονται για ελάχιστο, μέγιστο και μέσο όρο ρυθμών ανάγνωσης και εγγραφής, τον μέσο όρο χρόνου πρόσβασης και χρόνου που πέρασε από την τελευταία δοκιμή μέτρησης επιδόσεων.</p>
 
 </page>

@@ -4,9 +4,12 @@
   <info>
     <link type="guide" xref="power#problems"/>
     <link type="guide" xref="hardware-problems-graphics"/>
-    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <link type="seealso" xref="hardware-driver"/>
 
-    <desc>Problèmes de veille ou d'hibernation de certains périphériques.</desc>
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <desc>Some computer hardware causes problems with suspend.</desc>
 
     <credit type="author">
       <name>Le projet de documentation GNOME</name>
@@ -34,7 +37,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2014</mal:years>
+      <mal:years>2011-2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -66,11 +69,19 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
 <title>Pourquoi mon ordinateur ne sort-il pas de veille après une suspension ?</title>
 
-<p>Si vous mettez votre ordinateur <link xref="power-suspend">en veille</link> ou en <link xref="power-hibernate">hibernation</link>, qu'ensuite vous le réveillez ou le rallumez et qu'il ne fonctionne pas comme il devrait, c'est sans doute que les fonctions suspendre/hiberner ne sont pas très bien prises en charge par votre matériel.</p>
+<p>If you <link xref="power-suspend">suspend</link> your computer, then try to
+resume it, you may find that it does not work as you expected. This could be
+because suspend is not supported properly by your hardware.</p>
 
 <section id="resume">
   <title>Mon ordinateur est mis en veille et ne se réveille pas</title>
@@ -83,17 +94,16 @@
   </note>
 </section>
 
-<section id="hibernate">
-  <title>Pas d'application/document ouvert au redémarrage de l'ordinateur</title>
-  <p>Si l'hibernation se passe mal, aucun document ni application ne s'ouvre quand vous rallumez l'ordinateur. Parfois, ceci est dû à un petit problème passager et à la prochaine hibernation tout peut se passer correctement. Cela peut aussi se produire quand une mise à jour que vous venez d'installer nécessite un redémarrage de l'ordinateur ; dans ce cas, l'ordinateur s'est peut-être éteint au lieu d'hiberner.</p>
-  <p>Il se peut aussi que l'ordinateur ne puisse pas hiberner car son équipement ne supporte pas cette fonction correctement. Vérifiez ce point en recommençant la procédure d'hibernation pour voir si le problème réapparaît. Si c'est le cas, alors il y a sans doute un problème lié aux pilotes de votre ordinateur.</p>
-</section>
-
 <section id="hardware">
   <title>Connexion sans fil (ou autre périphérique) non fonctionnelle à la sortie de veille</title>
-  <p>S'il arrive qu'en sortie de veille ou d'hibernation, votre connexion internet, votre souris ou tout autre périphérique ne fonctionne plus normalement, ceci est sans doute dû à une mauvaise prise en charge de la fonction veille ou hibernation des pilotes du périphérique. Ceci est un <link xref="hardware-driver">problème du pilote</link>, pas du périphérique lui-même.</p>
+  <p>If you suspend your computer and then resume it again, you
+  may find that your internet connection, mouse, or some other device does not
+  work properly. This could be because the driver for the device does not
+  properly support suspend. This is a <link xref="hardware-driver">problem with the driver</link> and not the device
+  itself.</p>
   <p>S'il y a un commutateur sur le périphérique, éteignez et rallumez-le. Dans la majorité des cas, il recommence à fonctionner. S'il est connecté par une liaison USB ou autre, débranchez-le puis rebranchez pour voir s'il fonctionne.</p>
-  <p>S'il n'est pas possible d'éteindre ou de débrancher le périphérique, ou s'il ne fonctionne toujours pas, redémarrez l'ordinateur.</p>
+  <p>If you cannot turn off or unplug the device, or if this does not work, you
+  may need to restart your computer for the device to start working again.</p>
 </section>
 
 </page>

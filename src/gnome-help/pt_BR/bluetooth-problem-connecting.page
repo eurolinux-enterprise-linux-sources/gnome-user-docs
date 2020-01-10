@@ -5,18 +5,23 @@
     <link type="guide" xref="bluetooth#problems"/>
     <link type="seealso" xref="hardware-driver"/>
 
-    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.4" date="2012-02-19" status="outdated"/>
     <revision pkgversion="3.10" date="2013-11-09" status="review"/>
     <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
     <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
-      <email its:translate="no">philbull@gmail.com</email>
+      <email>philbull@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -30,12 +35,6 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Ferreira</mal:name>
-      <mal:email>rafael.f.f1@gmail.com</mal:email>
-      <mal:years>2012, 2013, 2014.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Enrico Nicoletto</mal:name>
       <mal:email>liverig@gmail.com</mal:email>
       <mal:years>2013.</mal:years>
@@ -46,9 +45,15 @@
       <mal:email>joaosantana@outlook.com</mal:email>
       <mal:years>2013.</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
   </info>
 
-  <title>I cannot connect my Bluetooth device</title>
+  <title>Não consigo me conectar ao meu dispositivo Bluetooth</title>
 
   <p>Existem uma variedade de razões para que não seja capaz de se conectar a um dispositivo Bluetooth, como um fone de ouvido.</p>
 
@@ -59,30 +64,20 @@
     </item>
     <item>
       <title>O hardware Bluetooth não é reconhecido</title>
-      <p>Your Bluetooth adapter or dongle may not have been recognized by the
-      computer. This could be because
-      <link xref="hardware-driver">drivers</link> for the adapter are not
-      installed. Some Bluetooth adapters are not supported on Linux, so you may
-      not be able to get the right drivers for them. In this case, you will
-      probably have to get a different Bluetooth adapter.</p>
+      <p>Seu adaptador Bluetooth pode não ter sido reconhecido pelo computador. Uma causa possível são <link xref="hardware-driver">drivers</link> para o adaptador não estarem instalados. Alguns adaptadores Bluetooth não têm suporte no Linux, e então você talvez não seja capaz de conseguir os drivers certos para esses. Nesse caso, você teria que conseguir um adaptador Bluetooth diferente provavelmente.</p>
     </item>
     <item>
-      <title>Adapter is not switched on</title>
+      <title>O adaptador não está ligado</title>
       <if:choose>
         <if:when test="platform:unity">
           <p>Certifique-se de que seu adaptador Bluetooth esteja ligado. Clique no ícone Bluetooth na <gui>barra de menu</gui> e verifique se ele não está <link xref="bluetooth-turn-on-off">desabilitado</link>.</p>
         </if:when>
-        <p>Make sure that your Bluetooth adapter is switched on. Open the
-        Bluetooth panel and check that it is not
-        <link xref="bluetooth-turn-on-off">disabled</link>.</p>
+        <p>Certifique-se de que seu adaptador Bluetooth esteja ligado. Abra o painel de Bluetooth e verifique se ele não está <link xref="bluetooth-turn-on-off">desabilitado</link>.</p>
       </if:choose>
     </item>
     <item>
       <title>A conexão Bluetooth do dispositivo está desativada</title>
-      <p>Check that Bluetooth is turned on on the device you are trying to
-      connect to, and that it is <link xref="bluetooth-visibility">discoverable
-      or visible</link>. For example, if you are trying to connect to a phone,
-      make sure that it is not in airplane mode.</p>
+      <p>Verifique se o Bluetooth está ligado no dispositivo ao qual você está tentando se conectar e que ele é <link xref="bluetooth-visibility">encontrável ou visível</link>. Por exemplo, se você está tentando conectar-se a um celular, certifique-se de que ele não está no modo avião.</p>
     </item>
     <item>
       <title>Não há um adaptador Bluetooth no seu computador</title>

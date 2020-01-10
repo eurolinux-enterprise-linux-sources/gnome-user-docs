@@ -29,7 +29,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011, 2012</mal:years>
+      <mal:years>2011-2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -43,27 +43,31 @@
       <mal:email>juliette.tux@gmail.com</mal:email>
       <mal:years>2013-2014</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
-  <title>Поиск утерянного окна</title>
+  <title>Поиск потерянного окна</title>
 
   <p>A window on a different workspace, or hidden behind another window, is
-  easily found using the <gui xref="shell-terminology">Activities</gui>
+  easily found using the <gui xref="shell-introduction#activities">Activities</gui>
   overview:</p>
 
   <list>
     <item>
-      <p>Open the <gui>Activities</gui> overview. If the missing window is on
-      the current
-      <link xref="shell-windows#working-with-workspaces">workspace</link>, it
-      will be shown here in thumbnail. Simply click the thumbnail to redisplay
-      the window, or</p>
+      <p>Откройте <gui>Обзор</gui>. Если потерявшееся окно находится на текущем <link xref="shell-windows#working-with-workspaces">рабочем месте</link>, то оно будет показано в виде миниатюры. Чтобы открыть это окно, просто нажмите на миниатюру.</p>
     </item>
     <item>
-      <p>Выберите в <link xref="shell-terminology">переключателе рабочих мест</link>, расположенном с правой стороны экрана, другое рабочее место и попытайтесь найти нужное вам окно, или</p>
+      <p>Click different workspaces in the
+      <link xref="shell-workspaces">workspace selector</link> at the
+      right-hand side of the screen to try to find your window, or</p>
     </item>
     <item>
-      <p>Нажмите правой кнопкой мыши на значок приложения в боковой панели чтобы увидеть список открытых окон этого приложения. Нажмите на окно в списке, чтобы переключиться на него.</p>
+      <p>Нажмите правой кнопкой мыши по значку приложения в боковой панели, открыть список открытых окон этого приложения. Выберите нужное окно из списка, чтобы его открыть.</p>
     </item>
   </list>
 
@@ -73,13 +77,13 @@
     <item>
       <p>Press
       <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq>
-      to display the <link xref="shell-terminology">window switcher</link>.
+      to display the <link xref="shell-windows-switching">window switcher</link>.
       Continue to hold down the <key>Super</key> key and press <key>Tab</key>
       to cycle through the open windows, or
       <keyseq><key>Shift</key><key>Tab</key> </keyseq> to cycle backwards.</p>
     </item>
     <item if:test="!platform:gnome-classic">
-      <p>Если у приложения несколько открытых окон, то для переключения между ними удерживайте клавишу <key>Super</key> и нажмите <key>`</key> (то есть клавишу над клавишей <key>Tab</key>).</p>
+      <p>Если у приложения несколько открытых окон, то для переключения между ними удерживая клавишу <key>Super</key> нажимайте <key>`</key> (клавишу над <key>Tab</key>).</p>
     </item>
   </list>
 

@@ -2,8 +2,10 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="power-lowpower" xml:lang="fr">
 
   <info>
-    <link type="guide" xref="power#battery"/>
+    <link type="guide" xref="power#faq"/>
     <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+    <revision pkgversion="3.20" date="2016-06-15" status="final"/>
 
     <desc>Laisser la batterie se décharger complètement est néfaste pour elle.</desc>
     <credit type="author">
@@ -13,6 +15,14 @@
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
       <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -32,7 +42,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2014</mal:years>
+      <mal:years>2011-2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -64,19 +74,24 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
-<title>Extinction/hibernation en dessous de 10% de batterie</title>
+<title>Why did my computer turn off when the battery got to 10%?</title>
 
-<p>Si le niveau de charge de la batterie devient trop faible, votre ordinateur se met automatiquement en <link xref="power-hibernate">hibernation</link>. Il fait cela pour éviter de décharger complètement la batterie (ce qui l'endommagerait). D'autre part, si la batterie flanchait subitement, il n'aurait pas le temps de s'éteindre correctement.</p>
+<p>When the charge level of the battery gets too low, your computer will
+automatically turn off. It does this to make sure that the battery does not
+completely discharge, since this is bad for
+the battery. If the battery just ran out, the computer would not have time to
+shut down properly either.</p>
 
-<p>You can change what happens when the battery level gets too low by opening
-<app>Power</app> from the <gui xref="shell-terminology">Activities</gui>
-overview. Look at the <gui>When battery power is critical</gui> setting. You
-can choose for the computer to hibernate or shut down. If you choose shut down,
-your applications and documents <em>will not</em> be saved before the computer
-turns off.</p>
-
-<p>Certains ordinateurs ont des difficultés à se mettre en hibernation et sont incapables de recouvrer les applications et les documents que vous aviez ouverts quand vous rallumez l'ordinateur. Dans cas, il est possible que la partie de votre travail non enregistrée avant l'hibernation soit perdue. Toutefois, il vous est possible de <link xref="power-suspendfail">résoudre les problèmes d'hibernation</link>.</p>
+<p>Bear in mind that when your computer automatically turns off, your
+applications and documents <em>are not</em> saved. To avoid losing your
+work, save it before the battery gets too low.</p>
 
 </page>

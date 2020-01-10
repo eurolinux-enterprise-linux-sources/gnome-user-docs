@@ -6,6 +6,7 @@
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -18,50 +19,47 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Make sure that you have the envelope/label the right way up, and have
-    chosen the correct paper size.</desc>
+    <desc>Säkerställ att du har kuvertet med rätt sida upp och har valt den korrekta pappersstorleken.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
   </info>
 
-  <title>Print envelopes and labels</title>
+  <title>Skriva ut kuvert</title>
 
-  <p>Most printers will allow you to print directly onto an envelope or sheet
-  of labels. This is especially useful if you have a lot of letters to send,
-  for example.</p>
+  <p>De flesta skrivare låter dig skriva ut direkt på ett kuvert. Detta är särskilt användbart om du till exempel har många brev att skicka.</p>
 
   <section id="envelope">
-    <title>Printing onto envelopes</title>
+    <title>Skriva ut på kuvert</title>
 
-  <p>There are two things you need to check when trying to print onto an
-  envelope. The first is that your printer knows what size the envelope is.
-  After you click <gui>Print</gui> and the Print window appears, go to the
-  <gui>Page Setup</gui> tab and choose the <gui>Paper type</gui> as "Envelope"
-  if you can. If you cannot do this, see if you can change the <gui>Paper
-  size</gui> to an envelope size (for example, <gui>C5</gui>). The pack of
-  envelopes will say what size they are; most envelopes come in standard
-  sizes.</p>
+  <p>Det finns två saker du måste kontrollera när du försöker att skriva ut på ett kuvert.</p>
+  <p>Det första är att din skrivare vet vilken storlek kuvertet har. Tryck på <keyseq><key>Ctrl</key><key>P</key></keyseq> för att öppna utskriftsdialogen, gå till fliken <gui>Sidinställning</gui> och som <gui>Papperstyp</gui> välj ”Kuvert” om du kan. Om du inte kan göra detta, se om du kan ändra <gui>Pappersstorlek</gui> till en kuvertstorlek (till exempel <gui>C5</gui>). På bunten med kuvert bör det stå vilken storlek de har; de flesta kuvert levereras i standardstorlekar.</p>
 
-  <p>Secondly, you need to make sure that the envelopes are loaded with the
-  right side up in the printer's in-tray. Check the printer's manual for this,
-  or try to print a single envelope and check which side is printed on to see
-  which way is the right way up.</p>
+  <p>För det andra måste du säkerställa att kuverten matas in med rätt sida upp i skrivaren. Kontrollera skrivarens manual för hur du gör detta eller försök att skriva ut ett enstaka kuvert och kontrollera vilken sida som skrivs ut på för att se vilket håll som ska vara uppåt</p>
 
   <note style="warning">
-    <p>Some printers are not designed to be able to print envelopes, especially
-    some laser printers. Check your printer's manual to see if it accepts
-    envelopes; otherwise, you could damage the printer by feeding an envelope
-    in.</p>
+    <p>Vissa skrivare är inte designade för att kunna skriva ut kuvert, speciellt vissa laserskrivare. Kontrollera din skrivares manual för att se om den kan skriva ut på kuvert. Annars kan du skada skrivaren genom att mata in ett kuvert.</p>
   </note>
 
   </section>
 
 <!--
-INCOMPLETE: Please write this section!
+TODO: Please write this section!
 
 <section id="labels">
  <title>Printing labels</title>

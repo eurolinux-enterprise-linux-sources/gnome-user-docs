@@ -3,24 +3,27 @@
 
   <info>
     <link type="guide" xref="user-accounts#privileges"/>
+    <link type="seealso" xref="user-admin-explain"/>
+    <link type="seealso" xref="user-admin-change"/>
 
     <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
     <revision pkgversion="3.10" date="2013-11-03" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <!-- TODO: review that this is actually correct -->
+    <revision pkgversion="3.18" date="2015-09-28" status="candidate"/>
 
-    <credit type="author">
-      <name>GNOME Documentation Project</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+    <credit type="authohar">
+      <name>Dokumentační projekt GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>You can only do some things, like installing applications, if you
-    have administrative privileges.</desc>
+    <desc>Některé věci, jako třeba instalovat aplikace, můžete dělat jen s oprávněním správce.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
@@ -31,31 +34,26 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Marek Černocký</mal:name>
       <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:years>2014, 2015</mal:years>
     </mal:credit>
   </info>
 
-  <title>Problems caused by administrative restrictions</title>
+  <title>Problémy způsobené omezeními od správců</title>
 
-  <p>You may experience a few problems if you do not have
-  <link xref="user-admin-explain">administrative privileges</link>. Some tasks
-  require administrative privileges in order to work, such as:</p>
+  <p>Pokud nemáte <link xref="user-admin-explain">oprávnění správce</link>, můžete narazit na pár překážek. Některé činnosti vyžadují oprávnění správce, jinak je není možné provést. Patří k nim:</p>
 
   <list>
     <item>
-      <p>Connecting to networks or wireless networks</p>
+      <p>připojování k sítím, včetně bezdrátových</p>
     </item>
     <item>
-      <p>Viewing the contents of a removable disk connected to the computer, or
-      the contents of a different disk partition (for example, a Windows
-      partition)</p>
+      <p>prohlížení obsahu jiných diskových oddílů (například oddílu s Windows)</p>
     </item>
     <item>
-      <p>Installing new applications</p>
+      <p>instalace nových aplikací</p>
     </item>
   </list>
 
-  <p>You can <link xref="user-admin-change">change who has administrative
-  privileges</link>.</p>
+  <p>Můžete <link xref="user-admin-change">změnit, kdo má správcovská oprávnění</link>.</p>
 
 </page>

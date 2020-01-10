@@ -6,6 +6,7 @@
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -18,7 +19,7 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Collate and reverse the print order.</desc>
+    <desc>Jak třídit stránky a tisknout v opačném pořadí.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
@@ -29,55 +30,44 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Marek Černocký</mal:name>
       <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:years>2014, 2015</mal:years>
     </mal:credit>
   </info>
 
-  <title>Make pages print in a different order</title>
+  <title>Tisk stránek v jiném pořadí</title>
 
   <section id="reverse">
-    <title>Reverse</title>
+    <title>Opačné pořadí</title>
 
-    <p>Printers usually print the first page first, and the last page last, so
-    the pages end up in reverse order when you pick them up. If needed, you can
-    reverse this printing order.</p>
-
-    <p>To reverse the order:</p>
+    <p>Tiskárny obvykle tisknou nejdříve první stránku a nakonec poslední stránku, takže pokud vyjíždí lícem nahoru, jsou seřazené ve špatném pořadí. V takovém případě můžete pořadí tisku obrátit.</p>
 
     <steps>
+      <title>Aby stránky vyjížděly v opačném pořadí:</title>
       <item>
-        <p>Click <guiseq><gui>File</gui><gui>Print</gui></guiseq>.</p>
+        <p>Zmáčknutím <keyseq><key>Ctrl</key><key>P</key></keyseq> otevřete dialogové okno <gui>Tisk</gui>.</p>
       </item>
       <item>
-        <p>In the <gui>General</gui> tab of the Print window under
-        <em>Copies</em>, check <gui>Reverse</gui>. The last page will be
-        printed first, and so on.</p>
+        <p>Na kartě <gui>Obecné</gui> v části <em>Kopie</em> zaškrtněte <gui>Obrátit</gui>. Poslední stránka bude vytisknuta jako první atd.</p>
       </item>
     </steps>
 
   </section>
 
   <section id="collate">
-    <title>Collate</title>
+    <title>Třídění</title>
 
-  <p>If you are printing more than one copy of the document, the print-outs
-  will be grouped by page number by default (that is, all of the copies of page
-  one come out, then the copies of page two, and so on). <em>Collating</em>
-  will make each copy come out with its pages grouped together in the right
-  order instead.</p>
-
-  <p>To Collate:</p>
+  <p>Když tisknete více kopií dokumentu, je výchozím chováním seskupovat výtisky podle čísel stránek (tzn. vyjedou všechny kopie stránky jedna, pak všechny kopie stránky dva atd.). Volba <em>Setřídit</em> zajistí, že vyjedou seskupené jednotlivé sady stránek ve správném pořadí.</p>
 
   <steps>
+    <title>Aby se stránky třídily:</title>
     <item>
-      <p>Click <guiseq><gui>File</gui><gui>Print</gui></guiseq>.</p>
+     <p>Zmáčknutím <keyseq><key>Ctrl</key><key>P</key></keyseq> otevřete dialogové okno <gui>Tisk</gui>.</p>
     </item>
     <item>
-      <p>In the <gui>General</gui> tab of the Print window under
-      <em>Copies</em> check <gui>Collate</gui>.</p>
+      <p>Na kartě <gui>Obecné</gui> v části <em>Kopie</em> zaškrtněte <gui>Setřídit</gui>.</p>
     </item>
   </steps>
- <!-- Need to add this image <media type="image" src="figures/reverse-collate.png"/> -->
+
 </section>
 
 </page>

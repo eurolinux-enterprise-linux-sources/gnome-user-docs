@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="mouse-problem-notmoving" xml:lang="lv">
-<info>
+
+  <info>
     <link type="guide" xref="mouse#problems"/>
 
-    <desc>Kā pārbaudīt to, vai pele strādā.</desc>
-
-    <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
+    <revision pkgversion="3.8" date="2013-03-13" status="candidate"/>
+    <!-- TODO: reorganise page and tidy because it's one ugly wall of text -->
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
         <name>Phil Bull</name>
@@ -15,8 +16,11 @@
       <name>Shaun McCance</name>
       <email>shaunm@gnome.org</email>
     </credit>
+
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-</info>
+
+    <desc>Kā pārbaudīt to, kāpēc jūsu pele nestrādā.</desc>
+  </info>
 
 <title>Peles rādītājs nekustās</title>
 
@@ -26,26 +30,6 @@
  <title>Pārbaudiet vai pele ir pievienota</title>
  <p>Ja ir pele ar vadu, pārbaudiet vai tas ir kārtīgi pievienots.</p>
  <p>Ja tā ir USB pele (ar taisnstūrveida savienojumu), pamēģiniet to iespraust citā USB portā. Ja tā ir PS/2 pele (ar mazu, apaļu savienojumu ar 6 adatiņām), pārliecinieties, ka tas ir iesprausts zaļajā peles portā, nevis violetajā tastatūras portā. Ja vads nebija iesprausts, iespējams, ka būs jāpārstartē dators.</p>
-</section>
-
-<section id="connected">
- <title>Pārbaudi vai dators atpazīst peli.</title>
- <steps>
-  <item><p>Atver <app>Termināļa</app> lietotni no <gui>Aktivitāšu </gui> pārskata.</p></item>
-  <item>
-   <p>Termināļa logā, ieraksti <cmd>xsetpointer -l | grep Pointer</cmd> precīzi, kā tas ir ierakstīts šeit un spied <key>Enter</key>.</p>
-  </item>
-  <item>
-   <p>Parādīsies saraksts ar norādīšanas ierīcēm. Pārbaudi, ka vismaz vienai no tām blakus ir rakstīts <sys>[XExtensionPointer]</sys>, un ka vienam no <sys>[XExtensionPointer]</sys> vienumiem ir vārds pele pa kreisi no tā.</p>
-  </item>
-  <item>
-   <p>Ja nevienai ierīcei blakus nav rakstīts peles nosaukums, kuram seko <sys>[XExtensionPointer]</sys>, tad dators neatpazīst peli. Ja šis ieraksts ir, peli dators atpazīst. Šādā gadījumā vajadzētu pārbaudīt vai pele ir <link xref="#plugged-in">pievienota</link> un ir <link xref="#broken">darbspējīga</link>.</p>
-  </item>
- </steps>
-
- <p>Ja pelei ir seriālais (RS-232) savienotājs, jāveic daži papildu soļi, lai tā sāktu strādāt. Soļi var būt atkarīgi no peles ražotāja vai modeļa.</p>
-
- <p>Salabot problēmas ar peles atpazīšanu var būt grūti. Lūdz palīdzību no izplatītāja, ja jums liekas, ka pele netiek atpazīta pareizi.</p>
 </section>
 
 <section id="broken">
@@ -58,8 +42,12 @@
 <section id="wireless-mice">
  <title>Bezvadu peles pārbaudīšana</title>
 
- <list>
-   <item><p>Pārliecinies, ka pele ir ieslēgta. Peles apakšā parasti ir slēdzis, lai pilnībā izslēgtu peli, lai to varētu kustināt uz vairākām vietām, nepamodinot datoru no snaudiena.</p></item>
+  <list>
+    <item>
+      <p>Make sure the mouse is turned on. There is often a switch on the
+      bottom of the mouse to turn the mouse off completely, so you can take it
+      with you without it constantly waking up.</p>
+    </item>
    <item><p>Ja izmanto Bluetooth, pārliecinieties, ka pele tiešām ir sapārota ar datoru. Lasi <link xref="bluetooth-connect-device"/>.</p></item>
   <item>
    <p>Nospied pogu un skaties vai peles rādītājs kustās tagad. Dažas bezvadu peles iet gulēšanas režīmā, lai taupītu enerģiju, tāpēc tās var nereaģēt kamēr nenospiedīsiet tās pogu. Lasi <link xref="mouse-wakeup"/>.</p>

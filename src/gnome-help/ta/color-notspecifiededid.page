@@ -20,7 +20,15 @@
   </info>
 
   <title>ஏன் முன்னிருப்பு மானிட்டர் தனியமைப்புகளில் அளவை வகுத்த தேதி இல்லை?</title>
-  <p>ஒவ்வொரு திரைக்கும் பயன்படுத்தப்படும் முன்னிருப்பு நிற தனியமைப்பானது திரைக்குள் உள்ள நினைவக சில்லில் சேமிக்கப்பட்டுள்ள காட்சிப்படுத்தல் EDID இன் அடிப்படையில் தானாகவே உருவாக்கப்படுகிறது. திரை உற்பத்தி செய்யப்பட்ட நேரத்தில் அதனால் காட்சிப்படுத்த முடிகின்ற நிறங்களின் ஒரு நொடிக்காட்சியையே இந்த EDID வழங்குகிறது, இதில் நிற திருத்தத்திற்கான அதிக தகவல்கள் இருப்பதில்லை.</p>
+  <p>
+    The default color profile used for each monitor is generated
+    automatically based on the display 
+    <link href="https://en.wikipedia.org/wiki/Extended_Display_Identification_Data">
+    EDID</link> which is stored in a memory chip inside the monitor.
+    The EDID only gives us a snapshot of the available colors the monitor
+    was capable of displaying when it was manufactured, and does not
+    contain much other information for color correction.
+  </p>
 
   <figure>
     <desc>EDID ஐ புதுப்பிக்க முடியாது என்பதால், அதற்கு காலாவதி தேதி கிடையாது.</desc>

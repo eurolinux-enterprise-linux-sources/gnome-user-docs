@@ -7,6 +7,7 @@
     <desc>கோப்புகளைத் திறக்க அல்லது செயல்படுத்தக்கூடிய உரை கோப்புகளை இயக்க அல்லது காண ஒற்றை சொடுக்கம் செய்தல் மற்றும் குப்பை நடத்தையைக் குறிப்பிடுதல்.</desc>
 
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>டிஃபானி அன்ட்டொபோல்ஸ்கி</name>
@@ -23,6 +24,10 @@
     <credit type="editor">
       <name>சிந்து S</name>
       <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
     </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
@@ -67,7 +72,11 @@
 
  <p><gui>ஒவ்வொரு முறையும் கேட்டல்</gui> என்பது தேர்ந்தெடுக்கப்பட்டால், நீங்கள் தேர்ந்தெடுத்த உரை கோப்பை இயக்க வேண்டுமா அல்லது காண வேண்டுமா என கேட்கும் ஒரு பாப்-அப் உரையாடல் காண்பிக்கப்படும்.</p>
 
- <p>செயல்படுத்தக்கூடிய உரை கோப்புகள் ஸ்கிரிப்ட்டுகள் என அழைக்கப்படுகின்றன. <file>~/.local/share/nautilus/scripts</file> கோப்புறையில் உள்ள அனைத்து ஸ்கிரிப்ட்டுகளும் <gui style="menuitem">Scripts</gui> என்ற உப மெனுவின் கீழ் உள்ள கோப்புக்கான சூழல் மெனுவில் இடம்பெறும். ஒரு ஸ்கிரிப்ட் ஒரு அகக் கோப்புறையில் இருந்து இயக்கப்படும் போது, தேர்ந்தெடுக்கப்பட்ட அனைத்து கோப்புகளும் அளவுருக்களாக அந்த ஸ்கிரிப்ட்டில் ஒட்டப்படும். ஒரு கோப்பின் மீது ஒரு ஸ்கிரிப்ட்டை இயக்க:</p>
+ <p>Executable text files are also called <em>scripts</em>. All scripts in the
+ <file>~/.local/share/nautilus/scripts</file> folder will appear in the context
+ menu for a file under the <gui style="menuitem">Scripts</gui> submenu. When a
+ script is executed from a local folder, all selected files will be pasted to
+ the script as parameters. To execute a script on a file:</p>
 
 <steps>
   <item>
@@ -86,6 +95,7 @@
  </note>
 
 </section>
+
 <section id="trash">
 <info>
 <link type="seealso" xref="files-delete"/>
@@ -95,15 +105,8 @@
 
 <terms>
  <item>
-  <title><gui>குப்பைத்தொட்டியை காலியாக்கும் முன்பு அல்லது கோப்புகளை அழிக்கும் முன் கேட்கவும்</gui></title>
+  <title><gui>Ask before emptying the Trash</gui></title>
   <p>இந்த விருப்பம் முன்னிருப்பாக தேர்வு செய்யப்பட்டிருக்கும். குப்பைத் தொட்டியை காலியாக்கும் போது, நீங்கள் குப்பைத் தொட்டியை காலி செய்ய வேண்டுமா அல்லது கோப்புகளை அழிக்க வேண்டுமா என்று உறுதிப்படுத்துமாறு ஒரு செய்தி காண்பிக்கப்படும்.</p>
- </item>
- <item>
-  <title><gui>குப்பைத் தொட்டியைத் தவிர்க்கும் ஒரு அழி கட்டளையைச் சேர்க்கவும்</gui></title>
-  <p>இந்த விருப்பத்தை தேர்ந்தெடுத்தால், நீங்கள் <app>கோப்புகள்</app> பயன்பாட்டில் ஒரு உருப்படியை வலது சொடுக்கம் செய்யும் போது பாப்-அப் ஆகும் மெனுவில் <gui>அழி</gui> என்று ஓர் உருப்படி சேர்க்கப்படும்.</p>
-<note style="warning">
-<p><gui>அழி</gui> மெனு விருப்பத்தைப் பயன்படுத்தி ஒரு உருப்படியை அழிக்கும் போது, அது குப்பைத் தொட்டிக்குச் செல்லாமல் நேரடியாக அழிக்கப்படும். அந்த உருப்படி கணினி இருந்து முற்றிலும் அழிக்கப்படும். அழித்த உருப்படியை மீட்க வழி இல்லை.</p>
-</note>
  </item>
 </terms>
 </section>

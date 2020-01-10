@@ -4,28 +4,34 @@
   <info>
     <link type="guide" xref="bluetooth"/>
 
-    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.4" date="2012-02-19" status="outdated"/>
     <revision pkgversion="3.10" date="2013-11-07" status="review"/>
     <revision pkgversion="3.12" date="2014-03-04" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+    <revision pkgversion="3.13" date="2014-09-22" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Jim Campbell</name>
-      <email its:translate="no">jwcampbell@gmail.com</email>
+      <email>jwcampbell@gmail.com</email>
     </credit>
     <credit type="author">
       <name>Paul W. Frields</name>
-      <email its:translate="no">stickster@gmail.com</email>
+      <email>stickster@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
       <years>2014</years>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
       <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2015</years>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -39,12 +45,6 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Ferreira</mal:name>
-      <mal:email>rafael.f.f1@gmail.com</mal:email>
-      <mal:years>2012, 2013, 2014.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Enrico Nicoletto</mal:name>
       <mal:email>liverig@gmail.com</mal:email>
       <mal:years>2013.</mal:years>
@@ -55,14 +55,17 @@
       <mal:email>joaosantana@outlook.com</mal:email>
       <mal:years>2013.</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
   </info>
 
-  <title>Disconnect a Bluetooth device</title>
+  <title>Desconectando um dispositivo Bluetooth</title>
 
-  <p>If you do not want to be connected to a Bluetooth device anymore, you can
-  remove the connection. This is useful if you no longer want to use a device
-  like a mouse or headset, or if you no longer wish to transfer files to or
-  from a device.</p>
+  <p>Se você não deseja mais estar conectado a um dispositivo Bluetooth, você pode remover a conexão. Isso é útil se você não quiser mais usar um dispositivo como um mouse ou um fone de ouvido, ou se não quiser mais transferir arquivos de ou para um dispositivo.</p>
 
   <steps>
     <item>
@@ -70,8 +73,7 @@
       <if:when test="platform:unity">
         <p>Clique no ícone Bluetooth na <gui>barra superior</gui> e selecione <gui>Configurações de Bluetooth</gui>.</p>
       </if:when>
-      <p>Open the <gui xref="shell-terminology">Activities</gui> overview and
-      start typing <gui>Bluetooth</gui>.</p>
+      <p>Abra o panorama de <gui xref="shell-introduction#activities">Atividades</gui> e comece a digitar <gui>Bluetooth</gui>.</p>
     </if:choose>
     </item>
     <item>
@@ -79,16 +81,14 @@
       <if:when test="platform:unity">
         <p>Selecione <gui>Configurações de Bluetooth</gui> para abrir o painel.</p>
       </if:when>
-      <p>Click on <gui>Bluetooth</gui> to open the panel.</p>
+      <p>Clique em <gui>Bluetooth</gui> para abrir o painel.</p>
     </if:choose>
     </item>
     <item>
-      <p>Select the device which you want to disconnect from the list.</p>
+      <p>Selecione o dispositivo, da lista, ao qual você deseja se conectar.</p>
     </item>
     <item>
-      <p>In the device dialog box, switch <gui>Connection</gui> to
-      <gui>OFF</gui>, or to remove the device from the <gui>Devices</gui> list,
-      click <gui>Remove Device</gui>.</p>
+      <p>Na caixa de diálogo do dispositivo, alterne <gui>Conexão</gui> para <gui>OFF</gui>, ou remova o dispositivo da lista <gui>Dispositivos</gui>, clique <gui>Remover dispositivo</gui>.</p>
     </item>
   </steps>
 

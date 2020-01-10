@@ -10,16 +10,17 @@
     <revision pkgversion="3.10" date="2013-11-09" status="review"/>
     <revision pkgversion="3.12" date="2014-03-08" status="candidate"/>
     <revision pkgversion="3.14" date="2014-10-13" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
       <years>2014</years>
     </credit>
     <credit type="author">
       <name>David King</name>
-      <email its:translate="no">davidk@gnome.org</email>
-      <years>2014</years>
+      <email>davidk@gnome.org</email>
+      <years>2014-2015</years>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -41,7 +42,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Christian Kirbach</mal:name>
       <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2014.</mal:years>
+      <mal:years>2011-2016.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -59,63 +60,26 @@
 
   <title>Freigabe über Bluetooth steuern</title>
 
-  <p>You can configure <gui>Bluetooth Sharing</gui> to control access to your
-  <file>Downloads</file> folder for Bluetooth file sharing, and also restrict
-  that access to only <em>trusted devices</em>.  Trusted devices are ones which
-  you have <link xref="bluetooth-connect-device">paired</link> to your computer
-  before.</p>
-
-  <note style="info package">
-    <p>You must have the <app>GNOME User Share</app> package installed for
-    <gui>Bluetooth Sharing</gui> to be visible.</p>
-
-    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
-      <if:when test="action:install">
-        <p><link action="install:gnome-user-share" style="button">Install GNOME
-        User Share</link></p>
-      </if:when>
-    </if:choose>
-  </note>
+  <p>Sie können den Empfang von Dateien über <gui>Bluetooth</gui> im <file>Downloads</file>-Ordner aktivieren</p>
 
   <steps>
-    <title>Allow files to be shared into your <file>Downloads</file> folder</title>
+    <title>Freigabe von Dateien im <file>Downloads</file>-Ordner erlauben</title>
     <item>
-      <p>Öffnen Sie die <gui xref="shell-terminology">Aktivitäten</gui>-Übersicht und tippen Sie <gui>Freigabe</gui> ein.</p>
+      <p>Öffnen Sie die <gui xref="shell-introduction#activities">Aktivitäten</gui>-Übersicht und tippen Sie <gui>Bluetooth</gui> ein.</p>
     </item>
     <item>
-      <p>Klicken Sie auf <gui>Freigabe</gui>, um das Panel zu öffnen.</p>
+      <p>Klicken Sie auf <gui>Bluetooth</gui>, um das Panel zu öffnen.</p>
     </item>
     <item>
-      <p>Wenn <gui>Freigabe</gui> auf <gui>AUS</gui> gestellt ist, so schalten Sie diese <gui>An</gui>.</p>
+      <p>Stellen Sie sicher, dass <link xref="bluetooth-turn-on-off"><gui>Bluetooth</gui> eingeschaltet ist</link>.</p>
     </item>
     <item>
-      <p>Wählen Sie <gui>Bluetooth-Freigabe</gui>.</p>
-    </item>
-    <item>
-      <p>Stellen Sie <gui>Erhaltene Dateien in den Download-Ordner speichern</gui> auf <gui>An</gui>.</p>
-    </item>
-    <item>
-      <p>If you only want to allow trusted devices to access your
-      <file>Downloads</file> folder, switch
-      <gui>Only Receive From Trusted Devices</gui> to <gui>ON</gui>.</p>
-
-      <note style="tip">
-        <p>Diese Einstellung ist per Vorgabe ausgeschaltet. Sie sollten sie aktivieren, wenn Sie Zugriff auf Ihre freigegebenen Dateien durch Dritte mit einem Bluetooth-fähigen Mobiltelefon oder ähnlichem Gerät verhindern möchten</p>
-      </note>
-
-    </item>
-    <item>
-      <p>Click <gui style="button">Close</gui>. Bluetooth-enabled devices will
-      now be able to send files to your <file>Downloads</file> folder.</p>
+      <p>Geräte mit Bluetooth-Verbindung können Dateien in Ihren <file>Downloads</file>-Ordner senden, wenn das <gui>Bluetooth</gui>-Panel geöffnet ist.</p>
     </item>
   </steps>
 
   <note style="tip">
     <p>Sie können den Namen <link xref="sharing-displayname">ändern</link>, unter dem Ihr Rechner für andere erscheint.</p>
   </note>
-
-  <p><app>Files</app> allows you to launch the <gui>Sharing</gui> panel
-  directly by clicking the <gui>Preferences</gui> button when you visit the
-  <file>Downloads</file> folder.</p>
 
 </page>

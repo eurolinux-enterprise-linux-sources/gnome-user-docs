@@ -4,9 +4,12 @@
   <info>
     <link type="guide" xref="power#problems"/>
     <link type="guide" xref="hardware-problems-graphics"/>
-    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <link type="seealso" xref="hardware-driver"/>
 
-    <desc>コンピューターの一部のハードウェアが原因でサスペンドやハイバネートに問題が発生します。</desc>
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <desc>Some computer hardware causes problems with suspend.</desc>
 
     <credit type="author">
       <name>GNOME ドキュメンテーションプロジェクト</name>
@@ -22,7 +25,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -64,7 +67,9 @@
 
 <title>コンピューターをサスペンドしたあと復帰しないのはなぜですか?</title>
 
-<p>コンピューターを<link xref="power-suspend">サスペンド</link>や<link xref="power-hibernate">ハイバネート</link>したあと再開しようとすると、期待通りに動作しないことがあります。これはハードウェアがサスペンドやハイバネートに正しく対応していないことが原因である可能性があります。</p>
+<p>If you <link xref="power-suspend">suspend</link> your computer, then try to
+resume it, you may find that it does not work as you expected. This could be
+because suspend is not supported properly by your hardware.</p>
 
 <section id="resume">
   <title>コンピューターをサスペンドしたあと復帰できない</title>
@@ -77,17 +82,16 @@
   </note>
 </section>
 
-<section id="hibernate">
-  <title>コンピューターをオンにし直すと、アプリケーションやドキュメントが開かれていません</title>
-  <p>コンピューターをハイバネートしてからオンにし直してもドキュメントやアプリケーションが開いた状態にならない場合、おそらく正常にハイバネートができていません。ちょっとした問題が原因で起こることが時々あり、次回は正しくハイバネートできることもあります。また、コンピューターの再起動を必要とするソフトウェアの更新をインストールしたことが原因で発生することもあります。この場合、コンピューターはハイバネートせずシャットダウンしている可能性があります。</p>
-  <p>また、ハードウェア側で対応していないことが原因でハイバネートができない可能性もあります。たとえば、お使いのハードウェア用の Linux ドライバーに関する問題が原因となる可能性があります。確認するには、もう一度ハイバネートしてみて二度目で正常に動作するか確認してみることができます。二度目も失敗するようなら、おそらくお使いのコンピューターのドライバーに問題があります。</p>
-</section>
-
 <section id="hardware">
   <title>コンピューターを再開しても、無線接続 (または他のハードウェア) が動作しません</title>
-  <p>コンピューターをサスペンドやハイバネートしてから再開すると、ネットワーク接続やマウス、その他のデバイスが正常に動作しないことがあります。デバイスのドライバーがサスペンドやハイバネートに対応してないことが原因である可能性があります。これは<link xref="hardware-driver">ドライバーの問題であり</link>、デバイス自体の問題ではありません。</p>
+  <p>If you suspend your computer and then resume it again, you
+  may find that your internet connection, mouse, or some other device does not
+  work properly. This could be because the driver for the device does not
+  properly support suspend. This is a <link xref="hardware-driver">problem with the driver</link> and not the device
+  itself.</p>
   <p>デバイスに電源スイッチがある場合は、一度オフにしてからオンにし直してみます。ほとんどの場合、デバイスが正常に作動し始めるようになります。デバイスを USB ケーブルなどで接続している場合は、一度デバイスを取り外してから挿し直してみてください。</p>
-  <p>デバイスをオフにしたり外したりできない、あるいはそれでも作動しないときは、コンピューターを再起動してデバイスを作動させ直す必要がある場合があります。</p>
+  <p>If you cannot turn off or unplug the device, or if this does not work, you
+  may need to restart your computer for the device to start working again.</p>
 </section>
 
 </page>

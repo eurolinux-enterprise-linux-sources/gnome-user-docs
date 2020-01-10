@@ -6,20 +6,25 @@
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
       <email>tiffany@antopolski.com</email>
     </credit>
+    <credit type="author editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc/>
+    <desc>Imprimir un folleto desde un PDF en una impresora de una sola cara.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2011 - 2014</mal:years>
+      <mal:years>2011 - 2016</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -55,10 +60,12 @@
       <p>Abra el diálogo de impresión. Esto se puede hacer normalmente mediante el elemento de menú <gui style="menuitem">Imprimir</gui> o usando el atajo del teclado <keyseq><key>Ctrl</key><key>P</key></keyseq>.</p>
     </item>
     <item>
-      <p>Elija la pestaña <gui>General</gui>.</p>
-      <p>Under <gui>Range</gui>, choose <gui>Pages</gui>.</p>
+      <p>Pulse el botón <gui>Propiedades...</gui>.</p>
+      <p>En la lista desplegable <gui>Orientación</gui>, asegúrese de que la opción <gui>Apaisado</gui> está seleccionada</p>
+      <p>Pulse <gui>Aceptar</gui> para volver al diálogo de impresión.</p>
     </item>
     <item>
+      <p>En <gui>Rango y copias</gui>, elija <gui>Páginas</gui>.</p>
       <p>Escriba los números de las páginas en este orden (n es el número total de páginas, múltiplo de 4):</p>
       <p>n, 1, 2, n-1, n-2, 3, 4, n-3, n-4, 5, 6, n-5, n-6, 7, 8, n-7, n-8, 9, 10, n-9, n-10, 11, 12, n-11…</p>
       <p>...hasta que haya escrito todas las páginas.</p>
@@ -73,13 +80,8 @@
     </item>
     <item>
       <p>Seleccione la pestaña <gui>Configuración de página</gui>.</p>
-      <p>Under <gui>Layout</gui>, in the <gui>Two-sided</gui> drop-down list,
-      select <gui>One Sided</gui>.</p>
-      <p>In the <gui>Pages per side</gui> drop-down list, select
-      <gui>2</gui>.</p>
-      <p>In the <gui>Page ordering</gui> drop-down list, select <gui>Left to
-      right</gui>.</p>
-      <p>En el menú <gui>Solo imprimir</gui>, elija <gui>Páginas impares</gui>.</p>
+      <p>En <gui>Distribución</gui>, elija <gui>Folleto</gui>.</p>
+      <p>En <gui>Caras</gui>, en la lista desplegable <gui>Incluir</gui>, elija <gui>Caras frontales / páginas de la derecha</gui>.</p>
     </item>
     <item>
       <p>Pulse <gui>Imprimir</gui>.</p>
@@ -92,7 +94,7 @@
     </item>
     <item>
       <p>Seleccione la pestaña <gui>Configuración de página</gui>.</p>
-      <p>En el menú <gui>Solo imprimir</gui>, elija <gui>Páginas pares</gui>.</p>
+      <p>En <gui>Caras</gui>, en la lista desplegable <gui>Incluir</gui>, elija <gui>Caras traseras / páginas de la izquierda</gui>.</p>
     </item>
     <item>
       <p>Pulse <gui>Imprimir</gui>.</p>

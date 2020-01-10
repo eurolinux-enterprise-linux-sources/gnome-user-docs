@@ -2,10 +2,11 @@
 <page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="files-search" xml:lang="gl">
 
   <info>
-    <link type="guide" xref="files"/>
+    <link type="guide" xref="files#common-file-tasks"/>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-25" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Proxecto de documentación de GNOME</name>
@@ -19,10 +20,14 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Busque os ficheiros baseándose no nome do ficheiro e o tipo. Garde as súas buscas para o seu uso posterior.</desc>
+    <desc>Locate files based on file name and type.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
@@ -33,7 +38,8 @@
 
   <title>Buscar ficheiros</title>
 
-  <p>Pode buscar ficheiros segundo o seu nome ou tipo de ficheiro directamente desde o xestor de ficheiros. pode incluso gardar buscas comúns para que logo aparezan como cartafoles especiais no seu cartafol persoal.</p>
+  <p>You can search for files based on their name or file type directly
+  within the file manager.</p>
 
   <links type="topic" style="linklist">
     <title>Outros aplicativos de busca</title>
@@ -45,7 +51,7 @@
     <title>Buscar</title>
     <item>
       <p>Open the <app>Files</app> application from the
-      <gui xref="shell-terminology">Activities</gui> overview.</p>
+      <gui xref="shell-introduction#activities">Activities</gui> overview.</p>
     </item>
     <item>
       <p>Se sabe que os ficheiros que quere buscar están nun cartafol determinado, vaia a dito cartafol.</p>
@@ -82,17 +88,5 @@
       <p>Prema na lupa de magnificación na barra de ferramentas de novo para saír da busca e volver ao cartafol.</p>
     </item>
   </steps>
-
-  <p>Se fai certas buscas moi a miúdo, pode gardalas para acceder a elas de forma rápida.</p>
-
-  <steps>
-    <title>Gardar unha busca</title>
-    <item><p>Iniciar unha busca como a de arriba.</p></item>
-    <item><p>When you are happy with the search parameters, click the menu
-    button and select <gui>Save Search As</gui>.</p></item>
-    <item><p>Forneza un nome para a busca e prema <gui>Gardar</gui>. Se o desexa, seleccione un cartafol diferente onde gardar a busca. Cando vexa dito cartafol, verá a súa busca gardada con unha icona de cartafol laranxa con unha lupa sobre el.</p></item>
-  </steps>
-
-  <p>Para eliminar o ficheiro buscado cando teña terminado con el, simplemente <link xref="files-delete">elimíneo</link> da busca igual que faría con calquera outro ficheiro. Cando elimina unha busca gardada, non elimina os ficheiros que coincidiron coa busca.</p>
 
 </page>

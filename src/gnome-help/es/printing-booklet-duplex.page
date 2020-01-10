@@ -6,20 +6,25 @@
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
       <email>tiffany@antopolski.com</email>
     </credit>
+    <credit type="author editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Imprimir folletos plegados (tipo libro o panfleto) usando un tamaño de papel normal A4/Carta.</desc>
+    <desc>Imprimir folletos plegados (tipo libro o panfleto) desde un PDF usando un tamaño de papel normal A4/Carta.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2011 - 2014</mal:years>
+      <mal:years>2011 - 2016</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -41,9 +46,9 @@
     </mal:credit>
   </info>
 
-  <title>Imprimir folletos plegados</title>
+  <title>Imprimir un folleto en una impresora de doble cara</title>
 
-  <p>Puede hacer folletos plegados (como un pequeño libro o panfleto) mediante la impresión de páginas de un documento en un orden especial y cambiando un par de opciones de impresión.</p>
+  <p>Puede hacer folletos plegados (como un pequeño libro o panfleto) imprimiendo las páginas de un documento en un orden especial y cambiando un par de opciones de impresión.</p>
 
   <p>Estas instrucciones son para imprimir un folleto a partir de un documento PDF.</p>
 
@@ -56,8 +61,13 @@
       <p>Abra el diálogo de impresión. Esto se puede hacer normalmente mediante el elemento de menú <gui style="menuitem">Imprimir</gui> o usando el atajo del teclado <keyseq><key>Ctrl</key><key>P</key></keyseq>.</p>
     </item>
     <item>
-      <p>Go to the <gui>General</gui> tab. Under <gui>Range</gui>, choose
-      <gui>Pages</gui>.</p>
+      <p>Pulse el botón <gui>Propiedades...</gui>.</p>
+      <p>En la lista desplegable <gui>Orientación</gui>, asegúrese de que la opción <gui>Apaisado</gui> está seleccionada</p>
+      <p>En la lista desplegable <gui>Dos caras</gui> elija <gui>Margen corto</gui>.</p>
+      <p>Pulse <gui>Aceptar</gui> para volver al diálogo de impresión.</p>
+    </item>
+    <item>
+      <p>En <gui>Rango y copias</gui>, elija <gui>Páginas</gui>.</p>
     </item>
     <item>
       <p>Escriba los números de las páginas en este orden (n es el número total de páginas, múltiplo de 4):</p>
@@ -70,12 +80,9 @@
       </list>
     </item>
     <item>
-      <p>Ahora, vaya a la pestaña <gui>Configuración de página</gui>.</p>
-      <p>Under <gui>Layout</gui>, in the <gui>Two-sided</gui> drop-down list,
-      select <gui>Short Edge (Flip)</gui>.</p>
-      <p>In the <gui>Pages per side</gui> drop-down list, select
-      <gui>2</gui>.</p>
-      <p>En el menú<gui>Ordenación de páginas</gui>, elija<gui>De izquierda a derecha</gui>.</p>
+      <p>Seleccione la pestaña <gui>Configuración de página</gui>.</p>
+      <p>En <gui>Distribución</gui>, elija <gui>Folleto</gui>.</p>
+      <p>En <gui>Márgenes</gui>, en la lista desplegable <gui>Includir</gui> elija <gui>Todas las páginas</gui>.</p>
     </item>
     <item>
       <p>Pulse <gui>Imprimir</gui>.</p>

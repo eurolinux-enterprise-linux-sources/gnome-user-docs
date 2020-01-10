@@ -2,22 +2,28 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-file-properties-basic" xml:lang="fi">
 
   <info>
-    <link type="guide" xref="files" group="more"/>
+    <link type="guide" xref="files#more-file-tasks"/>
 
-   <desc>Tarkista tiedoston perusominaisuudet, aseta oikeudet ja valitse oletussovellukset.</desc>
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
-   <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
 
-   <credit type="author">
-     <name>Tiffany Antopolski</name>
-     <email>tiffany@antopolski.com</email>
-   </credit>
-   <credit type="author">
-     <name>Shaun McCance</name>
-     <email>shaunm@gnome.org</email>
-   </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <desc>Tarkista tiedoston perusominaisuudet, aseta oikeudet ja valitse oletussovellukset.</desc>
+
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Timo Jyrinki</mal:name>
@@ -28,9 +34,10 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Jiri Grönroos</mal:name>
       <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
-      <mal:years>2012, 2013.</mal:years>
+      <mal:years>2012-2016.</mal:years>
     </mal:credit>
   </info>
+
   <title>Tiedostojen ominaisuudet</title>
 
   <p>Saat tiedoston tai kansion ominaisuudet näkyviin napsauttamalla tiedostoa hiiren oikealla painikkeella ja valitsemalla <gui>Ominaisuudet</gui>. Sama onnistuu valitsemalla tiedosto napsauttamalla sitä kerran ja sitten painamalla näppäinyhdistelmää <keyseq><key>Alt</key><key>Enter</key></keyseq>.</p>
@@ -43,13 +50,13 @@
  <title>Perusominaisuudet</title>
  <terms>
   <item>
-    <title><gui>Nimi</gui></title>
+    <title><gui>Name</gui></title>
     <p>Voit nimetä tiedoston uudelleen käyttäen tätä kenttää. Voit nimetä tiedoston uudelleen myös Ominaisuudet-ikkunan ulkopuolella. Lue lisää kappaleesta <link xref="files-rename"/>.</p>
   </item>
   <item>
-    <title><gui>Tyyppi</gui></title>
+    <title><gui>Type</gui></title>
     <p>Tiedostotyyppi, kuten PDF-asiakirja, OpenDocument-tekstitiedosto tai JPEG-kuva, auttaa tiedoston muodon tunnistamisessa. Tiedostotyyppi määrittää muun muassa tiedoston avaamiseen käytettävän sovelluksen. Et voi esimerkiksi avata kuvatiedostoja musiikkisoittimella. Lue <link xref="files-open"/> saadaksesi lisätietoja tästä aiheesta.</p>
-  <p>Suluissa näkyvä <em>MIME-tyyppi</em> on tietokoneiden käyttämä standardi tiedoston tyypin tunnistamiseen.</p>
+    <p>Suluissa näkyvä <em>MIME-tyyppi</em> on tietokoneiden käyttämä standardi tiedoston tyypin tunnistamiseen.</p>
   </item>
 
   <item>
@@ -64,20 +71,19 @@
   </item>
 
   <item>
-    <title>Sijainti</title>
-    <p>Jokaisella tiedostolla on <em>absoluuttisen polun</em> määrittelemä sijainti tiedostojärjestelmässä. Tähän ainutlaatuiseen "osoitteeseen" sisältyy kansiot, joiden läpi täytyy kulkea tiedoston saavuttamiseksi. Jos Jussilla on esimerkiksi kotikansiossaan tiedosto nimeltään <file>hakemus.pdf</file>, sen sijainti olisi <file>/home/jussi/hakemus.pdf</file></p>
-  </item>
-
-  <item>
-    <title>Asema</title>
-    <p>Tiedostojärjestelmä tai asema, jossa tiedosto sijaitsee. Tämä kertoo tiedoston fyysisen sijainnin eli onko se esimerkiksi kiintolevyllä, CD-levyllä vai <link xref="nautilus-connect">verkkokansiossa tai tiedostopalvelimella</link>. Kiintolevyt voidaan jakaa useisiin <link xref="disk-partitions">osioihin</link>; osion nimi näytetään myös <gui>Asema</gui>-kentässä.</p>
+    <title>Parent Folder</title>
+    <p>The location of each file on your computer is given by its <em>absolute
+    path</em>. This is a unique "address" of the file on your computer, made up
+    of a list of the folders that you would need to go into to find the file.
+    For example, if Jim had a file called <file>Resume.pdf</file> in his Home
+    folder, its parent folder would be <file>/home/jim</file> and its location
+    would be <file>/home/jim/Resume.pdf</file>.</p>
   </item>
 
   <item>
     <title>Vapaa tila</title>
     <p>Näytetään vain kansioille. Tästä näkyy vapaa tila levyllä jolla kansio sijaitsee. Tämä on hyödyllistä tarkistaessa onko kovalevy täynnä.</p>
   </item>
-
 
   <item>
     <title>Avattu</title>

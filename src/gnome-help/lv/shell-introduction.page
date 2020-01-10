@@ -11,15 +11,15 @@
 
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -53,7 +53,7 @@
 
 <if:choose>
   <if:when test="!platform:gnome-classic">
-    <media type="image" src="figures/shell-activities.png" width="123" height="82" style="floatend floatright" if:test="!target:mobile">
+    <media type="image" src="figures/shell-activities.png" style="floatend floatright" if:test="!target:mobile">
       <p>Aktivitāšu poga</p>
     </media>
   </if:when>
@@ -64,11 +64,22 @@
   </if:when>
 </if:choose>
 
-  <p if:test="!platform:gnome-classic">Lai piekļūtu saviem logiem un lietotnēm, spiediet <gui>Aktivitāšu</gui> pogu vai pārvietojiet peles kursoru uz augšējo kreiso ekrāna stūri. Jūs varat arī spiest <key xref="keyboard-key-super">Super taustiņu</key> uz tastatūras. Pārskatā var redzēt savas atvērtās lietotnes un logus. Jūs varat arī sākt rakstīt, lai meklētu savas lietotnes, datnes, mapes un tīmekli.</p>
+  <p if:test="!platform:gnome-classic">To access your windows and applications,
+  click the <gui>Activities</gui> button, or just move your mouse pointer to
+  the top-left hot corner. You can also press the
+  <key xref="keyboard-key-super">Super</key> key on your keyboard. You can
+  see your windows and applications in the overview. You can also just start
+  typing to search your applications, files, folders, and the web.</p>
 
-  <p if:test="platform:gnome-classic">Lai piekļūtu saviem logiem un lietotnēm, spiediet <link xref="shell-terminology"> izvēlni <gui>Lietotnes</gui></link> ekrāna augšējā kreisā stūrī un izvēlēties <gui>aktivitāšu pārskata</gui> vienumu. Jūs varat arī spiest <key xref="keyboard-key-super">Super</key> taustiņu, lai redzētu savus logus un lietotnes <gui>Aktivitāšu</gui> pārskatā. Vienkārši sāciet rakstīt, lai meklētu savas lietotnes, datnes un mapes.</p>
+  <p if:test="platform:gnome-classic">To access your windows and applications,
+  click the <gui xref="shell-introduction#activities">Applications</gui> menu
+  at the top left of the screen and select the <gui>Activities Overview</gui>
+  item. You can also press the <key xref="keyboard-key-super">Super</key> key
+  to see your windows and applications in the <gui>Activities</gui> overview. 
+  Just start typing to search your applications, files, and folders.</p>
 
-  <media type="image" src="figures/shell-dash.png" width="49" height="300" style="floatstart floatleft" if:test="!target:mobile">
+  <!-- TODO: retake without the flashy bit -->
+  <media type="image" src="figures/shell-dash.png" height="300" style="floatstart floatleft" if:test="!target:mobile">
     <p>Panelis</p>
   </media>
 
@@ -116,7 +127,7 @@
 <if:choose>
   <if:when test="!platform:gnome-classic">
     <media type="image" src="figures/shell-appts.png" width="250" style="floatend floatright" if:test="!target:mobile">
-      <p>Pulkstenis, kalendārs un tikšanās</p>
+      <p>Clock, calendar, appointments and notifications</p>
     </media>
   </if:when>
   <if:when test="platform:gnome-classic">
@@ -126,15 +137,24 @@
   </if:when>
 </if:choose>
 
-  <p>Spiediet uz pulksteņa augšējā joslā, lai redzētu pašreizējo datumu, ikmēneša kalendāru un tuvāko ieplānoto pasākumu sarakstu. Piekļūt datuma un laika iestatījumiem un atvērt pilno <app>Evolution</app> kalendāru var arī no izvēlnes.</p>
+  <p>Click the clock on the top bar to see the current date, a month-by-month
+  calendar, a list of your upcoming appointments and new notifications. You can
+  also open the calendar by pressing
+  <keyseq><key>Super</key><key>M</key></keyseq>. You can access the date and
+  time settings and open your full <app>Evolution</app> calendar directly from
+  the menu.</p>
 
   <list style="compact">
     <item>
       <p><link xref="clock-calendar">Uzziniet vairāk par kalendāru un plānotajiem pasākumiem.</link></p>
     </item>
+    <item>
+      <p><link xref="shell-notifications">Uzziniet vairāk par paziņojumiem un ziņojumu paplāti.</link></p>
+    </item>
   </list>
 
 </section>
+
 
 <section id="yourname">
   <title>Jūs un jūsu dators</title>
@@ -193,23 +213,6 @@ messages will be presented, such as when your battery is critically low.</p>
   <list style="compact">
     <item>
       <p><link xref="shell-lockscreen">Uzziniet vairāk par bloķēšanas ekrānu.</link></p>
-    </item>
-  </list>
-
-</section>
-
-<section id="message-tray">
-  <title>Ziņojumu paplāte</title>
-
-  <media its:translate="no" type="image" src="figures/shell-message-tray.png" width="600">
-    <p its:translate="yes">Ziņojumu paplāte</p>
-  </media>
-
-  <p>Ziņojumu paplāti var apskatīt, spiežot peles rādītāju uz apakšējo ekrāna malu, vai spiežot <keyseq><key>Super</key><key>M</key></keyseq>. Šeit jūsu paziņojumi tiek glabāti, līdz esat gatavs tos apskatīt.</p>
-
-  <list style="compact">
-    <item>
-      <p><link xref="shell-notifications">Uzziniet vairāk par paziņojumiem un ziņojumu paplāti.</link></p>
     </item>
   </list>
 

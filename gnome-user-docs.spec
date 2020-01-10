@@ -1,14 +1,11 @@
 Summary:        GNOME User Documentation
 Name:           gnome-user-docs
-Version:        3.14.2
+Version:        3.22.0
 Release:        1%{?dist}
 License:        CC-BY-SA
 URL:            http://help.gnome.org/
 #VCS: git:git://git.gnome.org/gnome-user-docs
-Source:         http://download.gnome.org/sources/gnome-user-docs/3.14/gnome-user-docs-%{version}.tar.xz
-
-Patch0: gnome-user-docs-translations-3.14.patch
-
+Source:         https://download.gnome.org/sources/%{name}/3.22/%{name}-%{version}.tar.xz
 Group:          Documentation
 BuildArch:      noarch
 
@@ -22,22 +19,26 @@ This package contains end-user documentation for the GNOME desktop
 environment.
 
 %prep
-%setup -q -n gnome-user-docs-%{version}
-%patch0 -p1 -b .translations
+%setup -q
 
 %build
 %configure
 make %{?_smp_mflags}
 
 %install
-make install DESTDIR=$RPM_BUILD_ROOT INSTALL="install -p"
+%make_install
 
 %find_lang %{name} --all-name --with-gnome
 
 %files -f %{name}.lang
-%doc COPYING AUTHORS NEWS README
+%doc AUTHORS NEWS README
+%license COPYING
 
 %changelog
+* Wed Mar  8 2017 Matthias Clasen <mclasen@redhat.com> - 3.22.0-1
+- Rebase to 3.22.0
+  Resolves: #1386967
+
 * Tue May 26 2015 Matthias Clasen <mclasen@redhat.com> - 3.14.2-2
 - Update translations
 Related: #1174428

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" id="nautilus-display" xml:lang="sr">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-display" xml:lang="sr">
 
   <info>
     <link type="guide" xref="nautilus-prefs" group="nautilus-display"/>
 
-    <desc>Управљајте натписима иконица коришћеним у управнику датотека.</desc>
-
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-30" status="candidate"/>
 
     <credit type="author">
       <name>Шон Мек Кенс</name>
@@ -16,8 +15,15 @@
       <name>Мајкл Хил</name>
       <email>mdhillca@gmail.com</email>
     </credit>
+    <credit type="editor">
+      <name>Дејвид Кинг</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-    <its:rules xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <desc>Управљајте натписима иконица коришћеним у управнику датотека.</desc>
+
   </info>
 
 <title>Поставке приказа управника датотека</title>
@@ -26,13 +32,21 @@
 
 <section id="icon-captions">
   <title>Натписи иконице</title>
+  <!-- TODO: update screenshot for 3.18 and above. -->
   <media type="image" src="figures/nautilus-icons.png" width="250" height="110" style="floatend floatright">
     <p>Иконице управника датотека са натписима</p>
   </media>
   <p>Када користите преглед иконицама, можете да изаберете приказ додатних података о датотекама и фасциклама у натпису испод сваке иконице. Ово је корисно, на пример, ако често имате потребу да видите ко је власник датотеке или када је последњи пут измењена.</p>
-  <p>Можете да увећате приказ фасцикле тако што ћете кликнути на дугме <media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">доле</span></media> на траци алата и изабрати једну од могућности опције <gui>Увећај</gui>. Како будете увећавали, управник датотека ће приказивати више и више података у натпису. Можете да изаберете до три ствари за приказивање у натпису. Прва ће бити приказана на већини нивоа увећавања. Последња ће бити приказана при врло великим величинама.</p>
+  <p>Можете да увећате приказ фасцикле тако што ћете кликнути на дугме опција прегледа на траци алата и клизачем изабрати ниво увеличања. Како будете увећавали, управник датотека ће приказивати више и више података у натпису. Можете да изаберете до три ствари за приказивање у натпису. Прва ће бити приказана на већини нивоа увећавања. Последња ће бити приказана при врло великим величинама.</p>
   <p>Подаци које можете да прикажете у натпису иконице су исти као и колоне које можете да користите у прегледу списком. Погледајте <link xref="nautilus-list"/> за више података.</p>
-  <note><p>Ако вам је отворен прозор управника датотека, мораћете поново да учитате да би измене натписа иконице ступиле на снагу. Кликните <guiseq><gui>Преглед</gui><gui>Освежи</gui></guiseq> или притисните <keyseq><key>Ктрл</key><key>Р</key></keyseq>.</p></note>
+</section>
+
+<section id="list-view">
+
+  <title>Преглед списком</title>
+
+  <p>Када прегледате датотеке у виду списка, можете да се <gui>крећете по стаблу фасцикли</gui>. Ово приказује стрелицу за отварање у сваком директоријуму на списку датотека. Ово је корисно ако фасцикла има структуру, као што је ваша фасцикла са музиком у којој су датотеке сврстане у фасциклама према извођачима и подфасциклама према албумима.</p>
+
 </section>
 
 </page>

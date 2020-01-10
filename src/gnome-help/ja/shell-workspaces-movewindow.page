@@ -11,22 +11,21 @@
 
     <credit type="author">
       <name>GNOME ドキュメンテーションプロジェクト</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Go to the <gui>Activities</gui> overview and drag the window to a
-    different workspace.</desc>
+    <desc><gui>アクティビティ</gui>画面を表示し、ウィンドウを別のワークスペースへドラッグする。</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -72,17 +71,17 @@
     <title>マウスを使う方法:</title>
     <item>
       <p if:test="!platform:gnome-classic">Open the
-      <gui xref="shell-terminology">Activities</gui> overview.</p>
+      <gui xref="shell-introduction#activities">Activities</gui> overview.</p>
       <p if:test="platform:gnome-classic">Open the
-      <gui xref="shell-terminology">Activities Overview</gui> from the
-      <link xref="shell-terminology"><gui style="menu">Applications</gui>
-      menu</link> at the top left of the screen.</p>
+      <gui xref="shell-introduction#activities">Activities Overview</gui> from the
+      <gui xref="shell-introduction#activities">Applications</gui> menu
+      at the top left of the screen.</p>
     </item>
     <item>
       <p>ウィンドウをマウスで選択し、画面右側へドラッグします。</p>
     </item>
     <item>
-      <p>The <em xref="shell-terminology">workspace selector</em> will
+      <p>The <em xref="shell-workspaces">workspace selector</em> will
       appear.</p>
     </item>
     <item>
@@ -90,8 +89,7 @@
       workspace. This workspace now contains the window you have dropped, and a
       new empty workspace appears at the bottom of the <em>workspace
       selector</em>.</p>
-      <p if:test="platform:gnome-classic">Drop the window onto an empty
-      workspace. This workspace now contains the window you have dropped.</p>
+      <p if:test="platform:gnome-classic">ウィンドウを空のワークスペースへドロップします。ドロップ先のワークスペースにウィンドウが移動します。</p>
     </item>
   </steps>
 
@@ -100,15 +98,11 @@
     <item>
       <p>Select the window that you want to move (for example, using the
       <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq>
-      <em xref="shell-terminology">window switcher</em>).</p>
+      <em xref="shell-windows-switching">window switcher</em>).</p>
     </item>
     <item>
-      <p>Press <keyseq><key>Super</key><key>Shift</key><key>Page
-      Up</key></keyseq> to move the window to a workspace which is above the
-      current workspace on the <em>workspace selector</em>.</p>
-      <p>Press <keyseq><key>Super</key><key>Shift</key><key>Page
-      Down</key></keyseq> to move the window to a workspace which is below the
-      current workspace on the <em>workspace selector</em>.</p>
+      <p><keyseq><key>Super</key><key>Shift</key><key>Page Up</key></keyseq> を押すと、<em>ワークスペースセレクター</em>中の現在のワークスペースの 1 つ上のワークスペースへウィンドウが移動します。</p>
+      <p><keyseq><key>Super</key><key>Shift</key><key>Page Down</key></keyseq> を押すと、<em>ワークスペースセレクター</em>中の現在のワークスペースの 1 つ下のワークスペースへウィンドウが移動します。</p>
     </item>
   </steps>
 

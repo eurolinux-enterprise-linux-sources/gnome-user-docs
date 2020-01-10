@@ -8,6 +8,7 @@
 
     <revision pkgversion="3.5.92" date="2012-09-19" status="review"/>
     <revision pkgversion="3.14.0" date="2014-09-23" status="review"/>
+    <revision pkgversion="3.18" date="2014-09-30" status="candidate"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -21,6 +22,11 @@
       <name>Ekaterina Gerasimova</name>
       <email>kittykat3756@gmail.com</email>
       <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2015</years>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -42,7 +48,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Christian Kirbach</mal:name>
       <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2014.</mal:years>
+      <mal:years>2011-2016.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -58,21 +64,21 @@
     </mal:credit>
   </info>
 
-  <title>Files list columns preferences</title>
+  <title>Einstellungen für die Spalten in der Dateiverwaltung</title>
 
-  <p>There are nine columns of information that you can display in the
-  <gui>Files</gui> list view. Click <gui>Files</gui> in the top bar, pick
-  <gui>Preferences</gui> and choose the <gui>List Columns</gui> tab to select
-  which columns will be visible.</p>
+  <p>Es können elf Informationsspalten in der Listenansicht in <gui>Dateien</gui> angezeigt werden. Klicken Sie auf <gui>Dateien</gui> im oberen Panel, wählen Sie <gui>Einstellungen</gui> und dann den Reiter <gui>Listenspalten</gui>, um festzulegen, welche Spalten sichtbar sein sollen.</p>
 
   <note style="tip">
-    <p>Verwenden Sie die Knöpfe <gui>Raufschieben</gui> und <gui>Runterschieben</gui>, um die Reihenfolge festzulegen, in der die gewählten Spalten erscheinen.</p>
+    <p>Verwenden Sie die Knöpfe <gui>Raufschieben</gui> und <gui>Runterschieben</gui>, um die Reihenfolge festzulegen, in der die gewählten Spalten erscheinen. Klicken Sie auf <gui>Auf Vorgaben zurücksetzen</gui>, um die Änderungen zurückzunehmen und zu den vorgegebenen Spalten zurückzukehren.</p>
   </note>
 
   <terms>
     <item>
       <title><gui>Name</gui></title>
-      <p>The name of folders and files.</p>
+      <p>Der Name der Ordner und Dateien.</p>
+      <note style="tip">
+        <p>Die Spalte <gui>Name</gui> kann nicht ausgeblendet werden.</p>
+      </note>
     </item>
     <item>
       <title><gui>Größe</gui></title>
@@ -84,7 +90,7 @@
     </item>
     <item>
       <title><gui>Änderungsdatum</gui></title>
-      <p>Gibt das Datum und die Zeit an, wann die Datei zum letzten Mal geändert wurde.</p>
+      <p>Gibt das Datum an, wann die Datei zum letzten Mal geändert wurde.</p>
     </item>
     <item>
       <title><gui>Besitzer</gui></title>
@@ -92,19 +98,14 @@
     </item>
     <item>
       <title><gui>Gruppe</gui></title>
-      <p>The group the file is owned by. Each user is normally in their own
-      group, but it is possible to have many users in one group. For example, a
-      department may have their own group in a work environment.</p>
+      <p>Die Gruppe, der die Datei gehört. Jeder Benutzer ist normalerweise in seiner eigenen Gruppe, aber es ist möglich, dass einer Gruppe viele Benutzer angehören. Beispielsweise kann eine Abteilung Ihre eigene Gruppe in einer Arbeitsumgebung haben.</p>
     </item>
     <item>
       <title><gui>Zugriffsrechte</gui></title>
-      <p>Displays the file access permissions. For example,
-      <gui>drwxrw-r--</gui></p>
+      <p>Zeigt die Zugriffsrechte für Dateien an, z.B. <gui>drwxrw-r--</gui></p>
       <list>
         <item>
-          <p>The first character is the file type. <gui>-</gui> means regular
-          file and <gui>d</gui> means directory (folder). In rare cases, other
-          characters can also be shown.</p>
+          <p>Das erste Zeichen ist der Dateityp. <gui>-</gui> bedeutet normale Datei und <gui>d</gui> bedeutet Ordner. In wenigen Fällen können auch andere Zeichen angezeigt werden.</p>
         </item>
         <item>
           <p>Die nächsten drei Zeichen <gui>rwx</gui> legen die Zugriffsrechte des Benutzers fest, der die Datei besitzt.</p>
@@ -116,22 +117,19 @@
           <p>Die letzten drei Zeichen der Spalte <gui>r--</gui> legen die Zugriffsrechte für alle anderen Benutzer des Systems fest.</p>
         </item>
       </list>
-      <p>Each permission has the following meanings:</p>
+      <p>Jede Berechtigung hat folgende Bedeutungen:</p>
       <list>
         <item>
-          <p><gui>r</gui>: readable, meaning that you can open the file or
-          folder</p>
+          <p><gui>r</gui>: lesbar, Sie können die Datei oder den Ordner öffnen</p>
         </item>
         <item>
-          <p><gui>w</gui>: writable, meaning that you can save changes to it</p>
+          <p><gui>w</gui>: schreibbar, Sie können vorgenommene Änderungen speichern</p>
         </item>
         <item>
-          <p><gui>x</gui>: executable, meaning that you can run it if it is a
-          program or script file, or you can access subfolders and files if it
-          is a folder</p>
+          <p><gui>x</gui>: ausführbar, Sie können es ausführen, wenn es ein Programm oder eine Skriptdatei ist, oder auf Unterordner und Dateien zugreifen, wenn es ein Ordner ist</p>
         </item>
         <item>
-          <p><gui>-</gui>: permission not set</p>
+          <p><gui>-</gui>: Erlaubnis nicht gewährt</p>
         </item>
       </list>
     </item>
@@ -142,6 +140,14 @@
     <item>
       <title><gui>Ort</gui></title>
       <p>Der Pfad zum Ort der Datei.</p>
+    </item>
+    <item>
+      <title><gui>Geändert – Zeit</gui></title>
+      <p>Gibt das Datum und die Zeit an, wann die Datei zum letzten Mal geändert wurde.</p>
+    </item>
+    <item>
+      <title><gui>Zugriffsdatum</gui></title>
+      <p>Gibt das Datum und die Zeit an, wann die Datei zum letzten Mal geändert wurde.</p>
     </item>
   </terms>
 

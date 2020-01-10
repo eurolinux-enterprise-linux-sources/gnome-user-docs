@@ -11,8 +11,7 @@
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
 
-    <desc>Understand what volumes and partitions are and use the disk utility
-    to manage them.</desc>
+    <desc>Förstå vad volymer och partitioner är och använda diskverktyget för att hantera dem.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -20,63 +19,47 @@
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
   </info>
 
  <title>Hantera volymer och partitioner</title>
 
-  <p>The word <em>volume</em> is used to describe a storage device, like a hard
- disk. It can also refer to a <em>part</em> of the storage on that device,
- because you can split the storage up into chunks. The computer makes this
- storage accessible via your file system in a process referred to as
- <em>mounting</em>. Mounted volumes may be hard drives, USB drives, DVD-RWs, SD
- cards, and other media. If a volume is currently mounted, you can read (and
- possibly write) files on it.</p>
+  <p>Ordet <em>volym</em> används för att beskriva en lagringsenhet, exempelvis en hårddisk. Det kan också referera till en <em>del</em> av lagringen på den enheten, eftersom du kan dela upp lagringen i bitar. Datorn gör denna lagring tillgänglig via ditt filsystem via en process som kallas <em>montering</em>. Monterade volymer kan vara hårddiskar, USB-enheter, dvd-rw, SD-kort och övriga media. Om en volym för närvarande är monterad kan du läsa (och möjligtvis skriva till) filer på den.</p>
 
-  <p>Often, a mounted volume is called a <em>partition</em>, though they are not
- necessarily the same thing. A “partition” refers to a <em>physical</em> area of
- storage on a single disk drive. Once a partition has been mounted, it can be
- referred to as a volume because you can access the files on it. You can think
- of volumes as the labeled, accessible “storefronts” to the functional “back
- rooms” of partitions and drives.</p>
+  <p>Ofta kallas en monterad volym för <em>partition</em> även om det inte nödvändigtvis är samma sak. En ”partition” refererar till en <em>fysisk</em> lagringsyta på en enda diskenhet. När en partition har monterats kan den refereras till som en volym eftersom du kan nå filerna på den. Du kan tänka på volymer som märkta, tillgängliga ”affärsfönster” till de funktionella bakre rummen som utgörs av partitioner och enheter.</p>
 
 <section id="manage">
- <title>View and manage volumes and partitions using the disk utility</title>
+ <title>Visa och hantera volymer och partitioner via diskverktyget</title>
 
-  <p>You can check and modify your computer's storage volumes with the disk
- utility.</p>
+  <p>Du kan kontrollera och modifiera din dators lagringsvolymer med diskverktyget.</p>
 
 <steps>
   <item>
-    <p>Open the <gui>Activities</gui> overview and start <app>Disks</app>.</p>
+    <p>Använd översiktsvyn <gui>Aktiviteter</gui> och starta <app>Diskar</app>.</p>
   </item>
   <item>
-    <p>In the list of storage devices on the left, you will find hard disks,
-    CD/DVD drives, and other physical devices. Click the device you want to
-    inspect.</p>
+    <p>I listan över lagringsenheter till vänster hittar du hårddiskar, cd/dvd-enheter och andra fysiska enheter. Klicka på enheten som du vill inspektera.</p>
   </item>
   <item>
-    <p>The right pane provides a visual breakdown of the volumes and
-    partitions present on the selected device. It also contains a variety of
-    tools used to manage these volumes.</p>
-    <p>Be careful: it is possible to completely erase the data on your disk with
-    these utilities.</p>
+    <p>Den högra panelen visar en visuell fördelning över volymerna och partitionerna som finns på den markerade enheten. Den innehåller också en uppsjö verktyg för att hantera dessa volymer.</p>
+    <p>Var försiktig: det är möjligt att helt radera all data på din disk med dessa verktyg.</p>
   </item>
 </steps>
 
-  <p>Your computer most likely has at least one <em>primary</em> partition and a
- single <em>swap</em> partition. The swap partition is used by the operating
- system for memory management, and is rarely mounted.  The primary partition
- contains your operating system, applications, settings, and personal files.
- These files can also be distributed among multiple partitions for security or
- convenience.</p>
+  <p>Din dator har troligtvis en <em>primärpartition</em> och en enda <em>växlingspartition</em>. Växlingspartitionen används av operativsystemet för minneshantering och monteras sällan. Den primära partitionen innehåller ditt operativsystem, dina program, inställningar och personliga filer. Dessa filer kan också vara utspridda över flera partitioner av säkerhetsskäl eller av bekvämlighet.</p>
 
-  <p>One primary partition must contain information that your computer uses to
-  start up, or <em>boot</em>. For this reason it is sometimes called a boot
-  partition, or boot volume. To determine if a volume is bootable, select the
-  partition and click the gear button in the toolbar underneath the partition
-  list. Then, click <gui>Edit Partition…</gui> and look at its
-  <gui>Flags</gui>. External media such as USB drives and CDs may also contain
-  a bootable volume.</p>
+  <p>En primärpartition måste innehålla information som din dator använder för att starta (kallas ibland <em>boota</em>). Av denna anledning kallas den vanligtvis startpartition eller startvolym. För att avgöra om en volym är startbar så välj partitionen och klicka på menyknappen i verktygsfältet under partitionslistan. Klicka sedan på <gui>Redigera partition…</gui> och titta på dess <gui>Flaggor</gui>. Externa media så som USB-enheter och cd kan också innehålla startbara volymer.</p>
 
 </section>
 

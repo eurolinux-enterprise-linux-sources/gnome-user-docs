@@ -6,15 +6,20 @@
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
       <email>tiffany@antopolski.com</email>
     </credit>
+    <credit type="author editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc/>
+    <desc>Ein PDF als eine Broschüre auf einem einseitigen Drucker ausgeben.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Hendrik Knackstedt</mal:name>
@@ -31,7 +36,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Christian Kirbach</mal:name>
       <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2014.</mal:years>
+      <mal:years>2011-2016.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -58,16 +63,16 @@
 
   <steps>
     <item>
-      <p>Open the print dialog. This can normally be done through
-      <gui style="menuitem">Print</gui> in the menu or using the
-      <keyseq><key>Ctrl</key><key>P</key></keyseq> keyboard shortcut.</p>
+      <p>Öffnen Sie den Druckdialog. Das geschieht normalerweise über den Menüeintrag <gui style="menuitem">Drucken</gui> oder mit der Tastenkombination <keyseq><key>Strg</key><key>P</key></keyseq>.</p>
     </item>
     <item>
-      <p>Wählen Sie den Reiter <gui>Allgemein</gui>.</p>
-      <p>Under <gui>Range</gui>, choose <gui>Pages</gui>.</p>
+      <p>Klicken Sie auf den Knopf <gui>Eigenschaften …</gui>.</p>
+      <p>Wählen Sie in der Auswahlliste <gui>Ausrichtung</gui> den Punkt <gui>Querformat</gui>.</p>
+      <p>Klicken Sie auf <gui>OK</gui>, um zum Druckdialog zurückzukehren.</p>
     </item>
     <item>
-      <p>Geben Sie die Seitennummern in dieser Reihenfolge ein, wobei n die Gesamtzahl der Seiten ist und a ein Vielfaches von 4:</p>
+      <p>Wählen Sie <gui>Seiten</gui> unter <gui>Bereich und Kopien</gui>.</p>
+      <p>Geben Sie die Seitennummern in dieser Reihenfolge ein, wobei n die Gesamtzahl der Seiten und ein Vielfaches von 4 ist:</p>
       <p>n, 1, 2, n-1, n-2, 3, 4, n-3, n-4, 5, 6, n-5, n-6, 7, 8, n-7, n-8, 9, 10, n-9, n-10, 11, 12, n-11 …</p>
       <p>… bis Sie alle Seiten eingegeben haben.</p>
     <note>
@@ -81,13 +86,9 @@
     </item>
     <item>
       <p>Wählen Sie den Reiter <gui>Seite einrichten</gui>.</p>
-      <p>Under <gui>Layout</gui>, in the <gui>Two-sided</gui> drop-down list,
-      select <gui>One Sided</gui>.</p>
-      <p>In the <gui>Pages per side</gui> drop-down list, select
-      <gui>2</gui>.</p>
-      <p>In the <gui>Page ordering</gui> drop-down list, select <gui>Left to
-      right</gui>.</p>
-      <p>Wählen Sie <gui>Ungerade Seiten</gui> im Menü <gui>Beschränken auf</gui>.</p>
+      <p>Wählen Sie <gui>Broschüre</gui> unter <gui>Layout</gui>.</p>
+      <p>Under <gui>Page Sides</gui>, in the <gui>Include</gui> drop-down list,
+      select <gui>Front sides / right pages</gui>.</p>
     </item>
     <item>
       <p>Klicken Sie auf <gui>Drucken</gui>.</p>
@@ -96,13 +97,12 @@
       <p>Sobald alle Seiten gedruckt wurden, drehen Sie den Papierstapel um und legen ihn wieder in den Drucker ein.</p>
     </item>
     <item>
-      <p>Open the print dialog. This can normally be done through
-      <gui style="menuitem">Print</gui> in the menu or using the
-      <keyseq><key>Ctrl</key><key>P</key></keyseq> keyboard shortcut.</p>
+      <p>Öffnen Sie den Druckdialog. Das geschieht normalerweise über den Menüeintrag <gui style="menuitem">Drucken</gui> oder mit der Tastenkombination <keyseq><key>Strg</key><key>P</key></keyseq>.</p>
     </item>
     <item>
       <p>Wählen Sie den Reiter <gui>Seite einrichten</gui>.</p>
-      <p>Wählen Sie <gui>Gerade Seiten</gui> im Menü <gui>Beschränken auf</gui>.</p>
+      <p>Under <gui>Page Sides</gui>, in the <gui>Include</gui> drop-down list,
+      select <gui>Back sides / left pages</gui>.</p>
     </item>
     <item>
       <p>Klicken Sie auf <gui>Drucken</gui>.</p>

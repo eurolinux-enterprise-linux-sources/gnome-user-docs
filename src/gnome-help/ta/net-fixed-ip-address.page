@@ -6,10 +6,21 @@
     <link type="seealso" xref="net-findip"/>
 
     <revision pkgversion="3.4.0" date="2012-03-13" status="final"/>
+    <revision pkgversion="3.15" date="2014-12-04" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>ஜிம் காம்ப்பெல்</name>
-      <email its:translate="no">jwcampbell@gmail.com</email>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>எக்காட்டெரினா ஜெராசிமோவா</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>மைக்கேல் ஹில்</name>
+      <email>mdhillca@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -29,25 +40,37 @@
 
   <steps>
     <item>
-      <p><gui>மேல் பட்டியில்</gui> <gui>பிணைய சின்னத்தை</gui> சொடுக்கி <gui>பிணைய அமைவுகள்</gui> ஐ தேர்ந்தெடுக்கவும்.</p>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Network</gui>.</p>
     </item>
     <item>
-      <p>பட்டியலில் இருந்து பிணைய இணைப்பைத் தேர்ந்தெடுத்து (<gui>வயர்டு</gui> அல்லது<gui>வயர்லெஸ்</gui>) <gui>அமைவாக்கம் செய்</gui> ஐ சொடுக்கவும்.</p>
+      <p>Click on <gui>Network</gui> to open the panel.</p>
     </item>
     <item>
-      <p><gui>IPv4 அமைவுகள்</gui> தாவலில் சொடுக்கி <gui>முறை</gui> ஐ<em>கைமுறை</em> க்கு மாற்றவும்.</p>
+      <p>In the left pane, select the network connection that you want to give
+      a fixed address. If you plug in to the network with a cable, click
+      <gui>Wired</gui>, then click the
+      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media> button in the lower right corner of
+      the panel. For a <gui>Wi-Fi</gui> connection, the 
+      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
+      button will be located next to the active network.</p>
     </item>
     <item>
-      <p><gui>முகவரிகள்</gui> பட்டியலில் இணைப்பு தகவல் எதுவும் பட்டியலிடப்படாவிட்டால் அல்லது நீங்கள் ஒரு புதிய இணைப்பை உருவாக்க விரும்பினால் <gui>சேர்</gui> ஐ சொடுக்கவும்.</p>
+      <p>Click on the <gui>IPv4</gui> or <gui>IPv6</gui> tab
+      and change the <gui>Addresses</gui> to <em>Manual</em>.</p>
     </item>
     <item>
-      <p><em>IP முகவரி</em>, <em>நெட்மாஸ்க்</em> மற்றும் <em>கேட்வே</em> தகவல்களை அவற்றுக்குரிய பெட்டிகளில் உள்ளிடவும். இவை உங்கள் பிணைய அமைவைப் பொறுத்து அமையும்; ஒரு குறிப்பிட்ட பிணையத்திற்கு எந்த IP முகவரிகள் மற்றும் நெட்மாஸ்க்குகள் செல்லுபடியாகும் என்பதைக் கட்டுப்படுத்தும் சில விதிமுறைகள் உள்ளன.</p>
+      <p>Enter the <em>Address</em>, <em>Netmask</em>, and <em>Gateway</em>
+      information into the appropriate boxes. How you choose these will depend
+      on your network setup; there are specific rules governing which IP
+      addresses and netmasks are valid for a given network.</p>
     </item>
     <item>
       <p>தேவைப்பட்டால், <gui>DNS சேவையகங்கள்</gui> பெட்டியில் ஒரு <em>டொமைன் பெயர் சேவையக</em> முகவரியை உள்ளிடவும். இது டொமைன் பெயர்களைத் தேடி அறியும் சேவையகத்தின் IP முகவரியாகும்; பெரும்பாலான நிறுவன பிணையங்களுக்கும் இணைய வழங்குநர்களுக்கும் அவர்களுக்கென்று தனி DNS சேவையகங்கள் இருக்கும்.</p>
     </item>
     <item>
-      <p><gui>சேமி</gui> ஐ சொடுக்கவும். இப்போது பிணைய இணைப்புக்கு ஒரு நிலையான IP முகவரி அமைக்கப்பட்டிருக்கும்.</p>
+      <p>Click <gui>Apply</gui>. The network connection should now have a fixed
+      IP address.</p>
     </item>
   </steps>
 

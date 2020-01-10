@@ -8,24 +8,25 @@
     <revision pkgversion="3.8.0" date="2013-03-13" status="candidate"/>
     <revision pkgversion="3.9.92" date="2013-09-18" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-20" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <credit type="author">
       <name>Шон МакКенс (Shaun McCance)</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="author">
       <name>Фил Булл (Phil Bull)</name>
-      <email its:translate="no">philbull@gmail.com</email>
+      <email>philbull@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Майкл Хилл (Michael Hill)</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Екатерина Герасимова (Ekaterina Gerasimova)</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <desc>Набор комбинаций клавиш нажатием их поодиночке, а не всех одновременно.</desc>
@@ -39,7 +40,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011, 2012</mal:years>
+      <mal:years>2011-2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -53,6 +54,12 @@
       <mal:email>juliette.tux@gmail.com</mal:email>
       <mal:years>2013-2014</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
   <title>Включение «залипающих клавиш»</title>
@@ -63,10 +70,11 @@
 
   <steps>
     <item>
-      <p>Откройте <gui xref="shell-terminology">Обзор</gui> и начинайте вводить <gui>Универсальный доступ</gui>.</p>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Universal Access</gui>.</p>
     </item>
     <item>
-      <p>Нажмите <gui>Универсальный доступ</gui> чтобы открыть этот раздел настроек.</p>
+      <p>Нажмите <gui>Универсальный доступ</gui>, чтобы открыть этот раздел настроек.</p>
     </item>
     <item>
       <p>Нажмите <gui>Помощник ввода (AccessX)</gui> в разделе <gui>Ввод</gui>.</p>
@@ -79,12 +87,12 @@
   <note style="tip">
     <title>Быстрое включение и отключение «залипающих клавиш»</title>
     <p>Чтобы управлять включением и отключением залипающих клавиш с помощью клавиатуры, в пункте <gui>Управляется с клавиатуры</gui> установите флажок <gui>Включать и выключать специальные возможности с помощью клавиатуры</gui>. После этого можно будет включать или отключать залипающие клавиши нажатием клавиши <key>Shift</key> пять раз подряд.</p>
-    <p>Чтобы включить или отключить залипающие клавиши, можно также нажать на <link xref="a11y-icon">значок специальных возможностей</link> на верхней панели и выбрать <gui>Залипающие клавиши</gui>. Значок специальных возможностей становится виден в том случае, если один или более параметров были включены в разделе <gui>Универсальный доступ</gui>.</p>
+    <p>Чтобы включить или отключить залипающие клавиши, можно также нажать на <link xref="a11y-icon">значок специальных возможностей</link> в верхней панели и выбрать <gui>Залипающие клавиши</gui>. Значок специальных возможностей становится виден в том случае, если один или более параметров были включены в разделе <gui>Универсальный доступ</gui>.</p>
   </note>
 
   <p>Если нажать две клавиши одновременно, «залипающие клавиши» временно отключатся, чтобы вы могли ввести комбинацию клавиш «обычным» способом.</p>
 
-  <p>Например, если залипающие клавиши включены, но вы нажали <key>Alt</key> и <key>Tab</key> одновременно, залипающие клавиши не будут ждать нажатия ещё одной клавиши, если эта опция включена. Однако, они <em>будут</em> ждать, если вы нажали только одну клавишу. Это полезно, если вы можете нажимать некоторые сочетания клавиш одновременно (например, клавиши, которые находятся рядом друг с другом), но не другие.</p>
+  <p>Например, если залипающие клавиши включены, но вы нажали <key>Super</key> и <key>Tab</key> одновременно, залипающие клавиши не будут ждать нажатия ещё одной клавиши, если эта опция включена. Однако, они <em>будут</em> ждать, если вы нажали только одну клавишу. Это полезно, если вы можете нажимать некоторые сочетания клавиш одновременно (например, клавиши, которые находятся рядом друг с другом), но не другие.</p>
 
   <p>Для включения этой возможности выберите <gui>Отключать, если две клавиши нажаты вместе</gui>.</p>
 

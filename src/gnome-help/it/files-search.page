@@ -2,10 +2,11 @@
 <page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="files-search" xml:lang="it">
 
   <info>
-    <link type="guide" xref="files"/>
+    <link type="guide" xref="files#common-file-tasks"/>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-25" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Progetto documentazione di GNOME</name>
@@ -19,10 +20,14 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Individuare file in base a nome e tipo. Salvare le ricerche per un uso successivo.</desc>
+    <desc>Locate files based on file name and type.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Luca Ferretti</mal:name>
@@ -39,7 +44,8 @@
 
   <title>Cercare file</title>
 
-  <p>È possibile effettuare ricerche di file in base al nome o al tipo direttamente all'interno del gestore di file. È anche possibile salvare ricerche frequenti, e queste verranno visualizzate come cartelle speciali nella cartella Home.</p>
+  <p>You can search for files based on their name or file type directly
+  within the file manager.</p>
 
   <links type="topic" style="linklist">
     <title>Altre applicazioni di ricerca</title>
@@ -51,7 +57,7 @@
     <title>Ricerca</title>
     <item>
       <p>Open the <app>Files</app> application from the
-      <gui xref="shell-terminology">Activities</gui> overview.</p>
+      <gui xref="shell-introduction#activities">Activities</gui> overview.</p>
     </item>
     <item>
       <p>Se si conosce la cartella che contiene i file desiderati, aprire quella cartella.</p>
@@ -91,17 +97,5 @@
       return to the folder.</p>
     </item>
   </steps>
-
-  <p>Se si effettuano spesso determinate ricerche, è possibile salvarle per accedervi rapidamente.</p>
-
-  <steps>
-    <title>Salvare una ricerca</title>
-    <item><p>Avviare una ricerca come descritto sopra.</p></item>
-    <item><p>When you are happy with the search parameters, click the menu
-    button and select <gui>Save Search As</gui>.</p></item>
-    <item><p>Dare un nome alla ricerca e fare clic su <gui>Salva</gui>. È possibile selezionare una cartella diversa in cui salvare la ricerca. Quando verrà visualizzata quella cartella, la ricerca salvata apparirà come un'icona di cartella di colore arancione con una lente d'ingrandimento.</p></item>
-  </steps>
-
-  <p>Per rimuovere il file della ricerca quando non serve più, è possibile <link xref="files-delete">eliminare</link> la ricerca come si farebbe con qualsiasi altro file. Quando si elimina una ricerca salvata, non vengono eliminati i file trovati con quella ricerca.</p>
 
 </page>

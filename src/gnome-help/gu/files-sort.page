@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-sort" xml:lang="gu">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-sort" xml:lang="gu">
 
   <info>
-    <link type="guide" xref="files"/>
+    <link type="guide" xref="files#common-file-tasks"/>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-25" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>ફીલ બુલ</name>
@@ -34,10 +35,10 @@
 <section id="icon-view">
   <title>ચિહ્ન દૃશ્ય</title>
 
-  <p>To sort files in a different order, click the
-  <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">View options</span></media></gui>
-  button in the toolbar and choose <gui>By Name</gui>, <gui>By Size</gui>,
-  <gui>By Type</gui>, <gui>By Modification Date</gui>, or <gui>By Access
+  <p>To sort files in a different order, click the view options button in the
+  <!-- FIXME: Get a tooltip added for "View options" -->
+  toolbar and choose <gui>By Name</gui>, <gui>By Size</gui>, <gui>By
+  Type</gui>, <gui>By Modification Date</gui>, or <gui>By Access
   Date</gui>.</p>
 
   <p>ઉદાહરણ તરીકે, જો તમે <gui>નામ દ્દારા</gui> પસંદ કરો તો, ફાઇલો તેનાં નામ દ્દારા ક્રમાંકિત થશે, મૂળાક્ષરો પ્રમાણે. બીજા વિકલ્પો માટે <link xref="#ways"/> જુઓ.</p>
@@ -52,11 +53,11 @@
 
   <p>વિવિધ ક્રમમાં ફાઇલોને ક્રમાંકિત કરવા માટે, ફાઇલ સંચાલકમાં સ્તંભ શીર્ષકનાં એક પર ક્લિક કરો. ઉદાહરણ તરીકે, ફાઇલ પ્રકાર દ્દારા ક્રમાંકિત કરવા માટે <gui>પ્રકાર</gui> પર ક્લિક કરો. વિપરીત ક્રમમાં ક્રમાંકિત કરવા માટે ફરી સ્તંભ શીર્ષક પર ક્લિક કરો.</p>
   <p>In list view, you can show columns with more attributes and sort on those
-  columns. Click the
-  <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">View options</span></media></gui>
-  button in the toolbar, pick <gui>Visible Columns</gui> and select the columns
-  that you want to be visible. You will then be able to sort by those columns.
-  See <link xref="nautilus-list"/> for descriptions of available columns.</p>
+  columns. Click the view options button in the toolbar, pick <gui>Visible
+  <!-- FIXME: Get a tooltip added for "View options" -->
+  Columns…</gui> and select the columns that you want to be visible. You will
+  then be able to sort by those columns. See <link xref="nautilus-list"/> for
+  descriptions of available columns.</p>
 
 </section>
 
@@ -65,25 +66,20 @@
 
   <terms>
     <item>
-      <title>નામ દ્દારા</title>
+      <title>નામ</title>
       <p>ફાઇલનાં નામ દ્દારા મૂળાક્ષરો પ્રમાણે ક્રમમાં ગોઠવે છે.</p>
     </item>
     <item>
-      <title>માપ પ્રમાણે</title>
+      <title>માપ</title>
       <p>ફાઇલનાં માપ દ્દારા ક્રમાંકિત થાય છે (કેટલી ડિસ્ક જગ્યા તે લે છે). મૂળભૂત રીતે ઓછી થી વધારે એ રીતે ક્રમાંકિત થાય છે.</p>
     </item>
     <item>
-      <title>પ્રકાર પ્રમાણે</title>
+      <title>પ્રકાર</title>
       <p>ફાઇલ પ્રકાર દ્દારા ચઢતા ક્રમમાં ગોઠવે છે. એજ પ્રકારની ફાઇલો ભેગી જૂથ થયેલ છે, પછી નામ દ્દારા ક્રમાંકિત થાય છે.</p>
     </item>
     <item>
-      <title>સુધારેલ તારીખ પ્રમાણે</title>
+      <title>Last Modified</title>
       <p>તારીખ અને સમય દ્દારા ક્રમાંકિત થાય છે કે જે ફાઇલ છેલ્લે બદલાયેલ હતી. મૂળભૂત રીતે જૂની થી નવી ક્રમાંકિત થાય છે.</p>
-    </item>
-    <item>
-      <title>By Access Date</title>
-      <p>Sorts by the date and time that a file was last read. Sorts from
-      oldest to newest by default.</p>
     </item>
   </terms>
 

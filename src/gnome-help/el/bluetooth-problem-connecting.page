@@ -5,18 +5,23 @@
     <link type="guide" xref="bluetooth#problems"/>
     <link type="seealso" xref="hardware-driver"/>
 
-    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.4" date="2012-02-19" status="outdated"/>
     <revision pkgversion="3.10" date="2013-11-09" status="review"/>
     <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
     <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
-      <email its:translate="no">philbull@gmail.com</email>
+      <email>philbull@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -24,65 +29,67 @@
     <desc>Ο προσαρμογέας μπορεί να είναι ανενεργός ή μπορεί να μην έχει οδηγούς, ή το Bluetooth μπορεί να είναι ανενεργό ή φραγμένο.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name> Δημήτρης Σπίγγος</mal:name>
-      <mal:email>dmtrs32@gmail.com</mal:email>
-      <mal:years>2012, 2013, 2014</mal:years>
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2016</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name> Φώτης Τσάμης</mal:name>
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
       <mal:email>ftsamis@gmail.com</mal:email>
       <mal:years>2009</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name> Μάριος Ζηντίλης</mal:name>
+      <mal:name>Μάριος Ζηντίλης</mal:name>
       <mal:email>m.zindilis@dmajor.org</mal:email>
       <mal:years>2009, 2010</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name> Θάνος Τρυφωνίδης</mal:name>
-      <mal:email>tomtryf@gmail.com</mal:email>
-      <mal:years>2012</mal:years>
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gnome.org</mal:email>
+      <mal:years>2012-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
     </mal:credit>
   </info>
 
-  <title>I cannot connect my Bluetooth device</title>
+  <title>Δεν μπορώ να συνδέσω τη συσκευή Bluetooth</title>
 
   <p>Υπάρχουν πολλοί λόγοι γιατί δεν μπορείτε να συνδεθείτε με μια συσκευή Bluetooth, όπως ένα τηλέφωνο ή ακουστικά.</p>
 
   <terms>
     <item>
       <title>Φραγμένη ή αναξιόπιστη σύνδεση</title>
-      <p>Μερικές συσκευές bluetooth φράσσουν τις συνδέσεις από προεπιλογή, ή απαιτούν την αλλαγή μιας ρύθμισης για να μπορέσουν να γίνουν συνδέσεις. Βεβαιωθείτε ότι η συσκευή σας ρυθμίστηκε να επιτρέπει συνδέσεις.</p>
+      <p>Μερικές συσκευές Bluetooth φράσσουν τις συνδέσεις από προεπιλογή, ή απαιτούν την αλλαγή μιας ρύθμισης για να μπορέσουν να γίνουν συνδέσεις. Βεβαιωθείτε ότι η συσκευή σας ρυθμίστηκε να επιτρέπει συνδέσεις.</p>
     </item>
     <item>
-      <title>Δεν αναγνωρίστηκε το υλικό Bluetooth</title>
-      <p>Your Bluetooth adapter or dongle may not have been recognized by the
-      computer. This could be because
-      <link xref="hardware-driver">drivers</link> for the adapter are not
-      installed. Some Bluetooth adapters are not supported on Linux, so you may
-      not be able to get the right drivers for them. In this case, you will
-      probably have to get a different Bluetooth adapter.</p>
+      <title>Δεν αναγνωρίστηκε το Bluetooth</title>
+      <p>Ο προσαρμογέας Bluetooth μπορεί να μην έχει αναγνωριστεί από τον υπολογιστή. Αυτό μπορεί να συνέβη επειδή οι <link xref="hardware-driver">οδηγοί</link> για τον προσαρμογέα δεν είναι εγκατεστημένοι. Μερικοί προσαρμογείς Bluetooth δεν υποστηρίζονται στο Linux, έτσι ίσως να μην μπορείτε να βρείτε τους σωστούς οδηγούς για αυτούς. Σε αυτήν την περίπτωση, θα πρέπει να πάρετε προφανώς έναν διαφορετικό προσαρμογέα Bluetooth.</p>
     </item>
     <item>
-      <title>Adapter is not switched on</title>
+      <title>Ο προσαρμογέας δεν ενεργοποιήθηκε</title>
       <if:choose>
         <if:when test="platform:unity">
-          <p>Βεβαιωθείτε ότι ο προσαρμογέας σας Bluetooth είναι ενεργός. Πατήστε το εικονίδιο Bluetooth στη <gui>γραμμή μενού</gui> και ελέγξετε ότι δεν είναι <link xref="bluetooth-turn-on-off">ανενεργός</link>.</p>
+          <p>Βεβαιωθείτε ότι ο προσαρμογέας σας Bluetooth είναι ενεργός. Κάντε κλικ στο εικονίδιο Bluetooth στη <gui>γραμμή μενού</gui> και ελέγξετε ότι δεν είναι <link xref="bluetooth-turn-on-off">ανενεργός</link>.</p>
         </if:when>
-        <p>Make sure that your Bluetooth adapter is switched on. Open the
-        Bluetooth panel and check that it is not
-        <link xref="bluetooth-turn-on-off">disabled</link>.</p>
+        <p>Βεβαιωθείτε ότι ο προσαρμογέας σας Bluetooth είναι ενεργός. Ανοίξτε τον πίνακα Bluetooth και ελέγξτε ότι δεν είναι <link xref="bluetooth-turn-on-off">ανενεργός</link>.</p>
       </if:choose>
     </item>
     <item>
       <title>Ανενεργή σύνδεση συσκευής Bluetooth</title>
-      <p>Check that Bluetooth is turned on on the device you are trying to
-      connect to, and that it is <link xref="bluetooth-visibility">discoverable
-      or visible</link>. For example, if you are trying to connect to a phone,
-      make sure that it is not in airplane mode.</p>
+      <p>Ελέγξετε ότι το Bluetooth είναι ενεργό στη συσκευή στην οποία προσπαθείτε να συνδεθείτε και ότι αυτή είναι <link xref="bluetooth-visibility">αντιληπτή ή ορατή</link>. Για παράδειγμα, εάν προσπαθείτε να συνδεθείτε με ένα τηλέφωνο, βεβαιωθείτε ότι δεν είναι σε λειτουργία αεροπλάνου.</p>
     </item>
     <item>
       <title>Δεν υπάρχει προσαρμογέας Bluetooth στον υπολογιστή σας</title>

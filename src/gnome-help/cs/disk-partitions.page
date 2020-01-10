@@ -5,14 +5,13 @@
 
 
     <credit type="author">
-      <name>GNOME Documentation Project</name>
+      <name>Dokumentační projekt GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
 
-    <desc>Understand what volumes and partitions are and use the disk utility
-    to manage them.</desc>
+    <desc>Vysvětlení, co jsou to svazky a oddíly a použití diskového nástroje k jejich správě.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -24,65 +23,37 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Marek Černocký</mal:name>
       <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:years>2014, 2015</mal:years>
     </mal:credit>
   </info>
 
- <title>Manage volumes and partitions</title>
+ <title>Správa svazků a oddílů</title>
 
-  <p>The word <em>volume</em> is used to describe a storage device, like a hard
- disk. It can also refer to a <em>part</em> of the storage on that device,
- because you can split the storage up into chunks. The computer makes this
- storage accessible via your file system in a process referred to as
- <em>mounting</em>. Mounted volumes may be hard drives, USB drives, DVD-RWs, SD
- cards, and other media. If a volume is currently mounted, you can read (and
- possibly write) files on it.</p>
+  <p>Slovo <em>svazek</em> se používá k označení úložného zařízení, jako je pevný disk. Může také označovat jen <em>část</em> úložného zařízení, protože to se dá rozdělit na více bloků. Počítač vám úložiště zpřístupňuje pomocí souborových systémů po jejich tzv. <em>připojení</em>. Připojenými svazky mohou být pevné disky, flashdisky do USB, DVD-RW mechaniky, karty SD a další média. Když je svazek připojen, můžete z něj číst soubory (a případně je i zapisovat).</p>
 
-  <p>Often, a mounted volume is called a <em>partition</em>, though they are not
- necessarily the same thing. A “partition” refers to a <em>physical</em> area of
- storage on a single disk drive. Once a partition has been mounted, it can be
- referred to as a volume because you can access the files on it. You can think
- of volumes as the labeled, accessible “storefronts” to the functional “back
- rooms” of partitions and drives.</p>
+  <p>Občas se připojenému svazku říká <em>oddíl</em>, ale to není úplně přesné. „Oddíl“ představuje <em>fyzickou</em> oblast úložiště na jednom diskovém zařízení. Když je oddíl připojen, je označován jako svazek, protože můžete přistupovat k souborům na něm. O svazcích můžete uvažovat jako o označených zpřístupněných „místnostech“ v celém „domě“ z oddílů a disků.</p>
 
 <section id="manage">
- <title>View and manage volumes and partitions using the disk utility</title>
+ <title>Zobrazení a správa svazků a oddílů pomocí diskového nástroje</title>
 
-  <p>You can check and modify your computer's storage volumes with the disk
- utility.</p>
+  <p>Úložné svazky v počítači můžete kontrolovat a měnit pomocí diskového nástroje.</p>
 
 <steps>
   <item>
-    <p>Open the <gui>Activities</gui> overview and start <app>Disks</app>.</p>
+    <p>Otevřete přehled <gui>Činnosti</gui> a spusťte <app>Disky</app>.</p>
   </item>
   <item>
-    <p>In the list of storage devices on the left, you will find hard disks,
-    CD/DVD drives, and other physical devices. Click the device you want to
-    inspect.</p>
+    <p>V seznamu úložných zařízení na levé straně najdete pevné disky, mechaniky CD/DVD a další fyzická zařízení. Klikněte na zařízení, které chcete prozkoumat.</p>
   </item>
   <item>
-    <p>The right pane provides a visual breakdown of the volumes and
-    partitions present on the selected device. It also contains a variety of
-    tools used to manage these volumes.</p>
-    <p>Be careful: it is possible to completely erase the data on your disk with
-    these utilities.</p>
+    <p>Pravý panel přináší grafické znázornění rozdělení svazků a přítomnosti oddílů na vybraném zařízení. Obsahuje také různé nástroje používané ke správě těchto svazků.</p>
+    <p>Buďte opatrní: pomocí tohoto nástroje je možné vymazat veškerá data na vašem disku.</p>
   </item>
 </steps>
 
-  <p>Your computer most likely has at least one <em>primary</em> partition and a
- single <em>swap</em> partition. The swap partition is used by the operating
- system for memory management, and is rarely mounted.  The primary partition
- contains your operating system, applications, settings, and personal files.
- These files can also be distributed among multiple partitions for security or
- convenience.</p>
+  <p>Počítač má obvykle aspoň jeden <em>hlavní</em> oddíl a jeden <em>odkládací</em> oddíl. Odkládací oddíl používá operační systém ke správě paměti a bývá zřídka připojen. Hlavní oddíl obsahuje operační systém, aplikace, nastavení a osobní soubory. Někdy z důvodů určitých potřeb a bezpečnosti mohou být osobní soubory rozmístěny na více oddílech.</p>
 
-  <p>One primary partition must contain information that your computer uses to
-  start up, or <em>boot</em>. For this reason it is sometimes called a boot
-  partition, or boot volume. To determine if a volume is bootable, select the
-  partition and click the gear button in the toolbar underneath the partition
-  list. Then, click <gui>Edit Partition…</gui> and look at its
-  <gui>Flags</gui>. External media such as USB drives and CDs may also contain
-  a bootable volume.</p>
+  <p>Jeden hlavní oddíl musí obsahovat informace používané ke spuštění, neboli <em>zavedení</em> operačního systému. Podle toho se nazývá zaváděcí oddíl. Když chcete zjistit, který to je, vyberte oddíl a klikněte na nabídkové tlačítko na nástrojové liště pod seznamem oddílů. Pak klikněte na <gui>Upravit oddíl…</gui> a podívejte se na jeho <gui>Příznaky</gui>. Zaváděcí oddíl mohou obsahovat i externí média, jako jsou flasdisky nebo CD.</p>
 
 </section>
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="accounts-which-application" xml:lang="gl">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="accounts-which-application" xml:lang="gl">
 
   <info>
     <link type="guide" xref="accounts"/>
@@ -7,19 +7,20 @@
 
     <revision pkgversion="3.8.2" date="2013-05-22" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="incomplete"/>
 
     <credit type="author copyright">
       <name>Baptiste Mille-Mathias</name>
-      <email its:translate="no">baptistem@gnome.org</email>
+      <email>baptistem@gnome.org</email>
       <years>2012, 2013</years>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Andre Klapper</name>
-      <email its:translate="no">ak-47@gmx.net</email>
+      <email>ak-47@gmx.net</email>
     </credit>
 
     <desc>Os aplicativos que poden usar as contas creadas en <app>Contas en liña</app> e os servizos que poden usar.</desc>
@@ -32,54 +33,78 @@
     </mal:credit>
   </info>
 
-<title>Que aplicativos poden usar as contas en liña?</title>
+  <title>Servizos en liña e aplicativos</title>
 
-  <p><app>Contas en liña</app> pode usarse desde aplicativos externos para configurarse automaticamente.</p>
+  <p>Once you have added an online account, any application can use that
+  account for any of the available services that you have not
+  <link xref="accounts-disable-service">disabled</link>. Different
+  providers provide different services. This page lists the different
+  services and some of the applications that are known to use them.</p>
 
-<section id="accounts-google-services">
-  <title>Con unha conta de Google</title>
-
-  <list>
+  <terms>
     <item>
-      <p><app>Evolution</app>, o aplicativo de correo electrónico. A súa conta de correo electrónico engadiráse a <app>Evolution</app>, polo que poderá ver o seu correo, terá acceso aos seus contactos e os calendarios mostraránselle na axenda Google.</p>
+      <title>Calendario</title>
+      <p>O servizo de Calendario permítelle ver, engadir e editar eventos nun calendario en liña. É usado por aplicativos como <app>Calendario</app>, <app>Evolution</app> e <app>California</app>.</p>
     </item>
+
     <item>
-      <p><app>Empathy</app>, o aplicativo de mensaxaría instantánea. A súa conta en liña engadirase e poderá comunicarse cos seus amigos.</p>
+      <title>Conversas</title>
+      <p>The Chat service allows you to chat with your contacts on popular
+      instant messaging platforms. It is used by the <app>Empathy</app>
+      application.</p>
     </item>
+
     <item>
-      <p><app>Contactos</app>, permitiralle ver e editar os seus contactos.</p>
+      <title>Contactos</title>
+      <p>The Contacts service allows you to see the published details of your
+      contacts on various services. It is used by applications like
+      <app>Contacts</app> and <app>Evolution</app>.</p>
     </item>
+
     <item>
-      <p><app>Documentos</app> pode acceder aos seus documentos en liña e mostralos.</p>
+      <title>Documentos</title>
+      <p>O servizo de Documentos permítelle ver os seus documentos en liña como aqueles en Google Docs. Pode ver os seus documentos usando o aplicativo <app>Documentos</app>.</p>
     </item>
-  </list>
-</section>
 
-<section id="accounts-windows-services">
-  <title>Coas contas de Windows Live, Facebook ou Twitter</title>
+    <item>
+      <title>Ficheiros</title>
+      <p>O servizo de Ficheiros engade unha localización de ficheiro remota, como se ten que engadir unha usando a funcionalidade <link xref="nautilus-connect">Conectarse ao servidor</link> nun xestor de ficheiros. Pode acceder a ficheiros remotos usndo o xestor de ficheiros, así como mediante os diálogos de abrir e gardar ficheiros nun aplicativo.</p>
+    </item>
 
-  <p><app>Empathy</app> pode usar estas contas para conectarse e conversar cos seus contactos, amigos e seguidores.</p>
-</section>
+    <item>
+      <title>Correo electrónico</title>
+      <p>The Mail service allows you to send and receive email through an
+      email provider like Google. It is used by <app>Evolution</app>.</p>
+    </item>
 
-<section id="account-windows-skydrive">
-  <title>With a OneDrive account</title>
+<!-- TODO: Not sure what this does. Doesn't seem to do anything in Maps app.
+    <item>
+      <title>Maps</title>
+    </item>
+-->
 
-  <p><app>Documents</app> can access your online documents in Microsoft
-  OneDrive and display them.</p>
-</section>
+    <item>
+      <title>Fotos</title>
+      <p>The Photos service allows you to view your online photos such as
+      those you post on Facebook. You can view your photos using the
+      <app>Photos</app> application.</p>
+    </item>
 
-<section id="account-exchange">
-  <title>Con unha conta de Exchange</title>
+    <item>
+      <title>Impresoras</title>
+      <p>The Printers service allows you to send a PDF copy to a provider from
+      within the print dialog of any application. The provider might provide
+      print services, or it might just serve as storage for the PDF, which
+      you can download and print later.</p>
+    </item>
 
-  <p>En canto cree unha conta de Exchange, <app>Evolution</app> comezarán a obterse os correos desde esta conta.</p>
-</section>
+    <item>
+      <title>Ler máis tarde</title>
+      <p>The Read Later service allows you to save a web page to external
+      services so that you can read it later on another device. No applications
+      currently use this service.</p>
+    </item>
 
-<section id="accounts-ownCloud">
-  <title>Con unha conta de ownCloud</title>
-
-  <p>Cando estea configurada unha conta de ownCloud, <app>Evolution</app> poderá acceder e editar contactos e apuntamentos de calendario.</p>
-
-  <p><app>Ficheiros</app> e outros aplicativos poderán listar e acceder aos seus ficheiros en liña almacenados na instalación de ownCloud.</p>
-</section>
+  </terms>
 
 </page>

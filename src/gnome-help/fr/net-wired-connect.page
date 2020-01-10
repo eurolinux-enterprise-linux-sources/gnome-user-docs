@@ -2,13 +2,19 @@
 <page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wired-connect" xml:lang="fr">
 
   <info>
-    <link type="guide" xref="net-wired"/>
+    <link type="guide" xref="net-wired" group="#first"/>
 
-    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.4" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Le projet de documentation GNOME</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2015</years>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -30,7 +36,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2014</mal:years>
+      <mal:years>2011-2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -62,11 +68,23 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
   <title>Connexion à un réseau filaire (Ethernet)</title>
 
-  <p>Pour configurer la plupart des connexions filaires, tout ce que vous avez à faire est de brancher un câble réseau. L'icône réseau de la barre supérieure doit alors tourner ou clignoter pendant quelques secondes pour finalement se transformer en une icône en forme de « prise » dès que la connexion est établie.</p>
+  <!-- TODO: create icon manually because it is one overlayed on top of another
+       in real life. -->
+  <p>To set up most wired network connections, all you need to do is plug in a
+  network cable. The wired network icon
+  (<media its:translate="no" type="image" src="figures/network-wired-symbolic.svg"><span its:translate="yes">settings</span></media>) is displayed
+  on the top bar with three dots while the connection is being established. The
+  dots disappear when you are connected.</p>
 
   <p>Si cela ne se passe pas de cette façon, commencez par vérifier que votre câble réseau est correctement branché. L'une de ses extrémités doit être branchée dans le port Ethernet rectangulaire de votre ordinateur, l'autre extrémité va dans un commutateur, la prise d'un routeur ou d'un connecteur réseau mural, ou quelque chose d'équivalent (en fonction de votre configuration réseau). Parfois, une lumière à côté du port Ethernet indique qu'il est connecté et actif.</p>
 

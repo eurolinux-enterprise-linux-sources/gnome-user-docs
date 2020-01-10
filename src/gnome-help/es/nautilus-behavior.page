@@ -7,6 +7,7 @@
     <desc>Una sola pulsación para abrir archivos, ejecutar o ver archivos de texto ejecutables, y especificar el comportamiento de la papelera.</desc>
 
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -24,12 +25,16 @@
       <name>Sindhu S</name>
       <email>sindhus@live.in</email>
     </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2011 - 2014</mal:years>
+      <mal:years>2011 - 2016</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -85,7 +90,7 @@
 
  <p>Si <gui>Preguntar cada vez</gui> está seleccionada, aparecerá un diálogo preguntando si quiere ejecutar o ver el archivo de texto seleccionado.</p>
 
- <p>Los archivos de texto ejecutables también se llaman scripts. Todos los scripts de la carpeta <file>~/.local/share/nautilus/scripts</file> aparecerán en el menú contextual para un archivo en el submenú <gui style="menuitem">Scripts</gui>. Cuando se eejcuta un script desde una carpeta local, todos los archivos seleccionados se pasarán el script como parámetros. Para ejecutar un script sobre un archivo:</p>
+ <p>Los archivos de texto ejecutables también se llaman <em>scripts</em>. Todos los scripts de la carpeta <file>~/.local/share/nautilus/scripts</file> aparecerán en el menú contextual para un archivo en el submenú <gui style="menuitem">Scripts</gui>. Cuando se ejecuta un script desde una carpeta local, todos los archivos seleccionados se pasarán el script como parámetros. Para ejecutar un script sobre un archivo:</p>
 
 <steps>
   <item>
@@ -104,6 +109,7 @@
  </note>
 
 </section>
+
 <section id="trash">
 <info>
 <link type="seealso" xref="files-delete"/>
@@ -113,15 +119,8 @@
 
 <terms>
  <item>
-  <title><gui>Preguntar antes de vaciar la papelera o eliminar los archivos</gui></title>
+  <title><gui>Preguntar antes de vaciar la papelera</gui></title>
   <p>Esta opción está seleccionada de forma predeterminada. Cuando se va a vaciar la papelera, aparece un mensaje confirmando si quiere vaciar la papelera o eliminar los archivos.</p>
- </item>
- <item>
-  <title><gui>Incluir un comando para eliminar que no use la papelera</gui></title>
-  <p>Al seleccionar esta opción se añade un elemento <gui>Eliminar</gui> en el menú que aparece cuando pulsa con el botón derecho sobre un elemento en la aplicación <app>Archivos</app>.</p>
-<note style="warning">
-<p>Cuando se elimina un elemento usando la opción <gui>Eliminar</gui> del menú, se pasa por alto la Papelera. El elemento se elimina del sistema completamente. No hay forma de recuperar el elemento eliminado.</p>
-</note>
  </item>
 </terms>
 </section>

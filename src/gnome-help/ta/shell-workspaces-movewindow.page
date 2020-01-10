@@ -11,11 +11,11 @@
 
     <credit type="author">
       <name>GNOME ஆவணமாக்கத் திட்டப்பணி</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>மைக்கேல் ஹில்</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -35,14 +35,18 @@
     <title>சொடுக்கியைப் பயன்படுத்துதல்:</title>
     <item>
       <p if:test="!platform:gnome-classic">Open the
-      <gui xref="shell-terminology">Activities</gui> overview.</p>
-      <p if:test="platform:gnome-classic">திரையின் மேல் இடப்புறம் உள்ள <link xref="shell-terminology"><gui style="menu">பயன்பாடுகள்</gui> மெனுவில்</link> இருந்து <gui xref="shell-terminology">செயல்பாடுகள் மேலோட்டம்</gui>  ஐ திறக்கவும்.</p>
+      <gui xref="shell-introduction#activities">Activities</gui> overview.</p>
+      <p if:test="platform:gnome-classic">Open the
+      <gui xref="shell-introduction#activities">Activities Overview</gui> from the
+      <gui xref="shell-introduction#activities">Applications</gui> menu
+      at the top left of the screen.</p>
     </item>
     <item>
       <p>சாளரத்தை சொடுக்கி திரையின் வலப்புறமாக இழுத்துச் செல்லவும்.</p>
     </item>
     <item>
-      <p><em xref="shell-terminology">பணியிடத் தேர்வி</em> தோன்றும்.</p>
+      <p>The <em xref="shell-workspaces">workspace selector</em> will
+      appear.</p>
     </item>
     <item>
       <p if:test="!platform:gnome-classic">சாளரத்தை ஒரு காலியான பணியிடத்தில் இடவும். இப்போது இந்தப் பணியிடத்தில் இப்போது நீங்கள் இட்ட சாளரம் இருக்கும், <em>பணியிடத் தேர்வியின்</em> கீழ் மற்றொரு காலி பணியிடம் தோன்றும்.</p>
@@ -53,7 +57,9 @@
   <steps>
     <title>விசைப்பலகையைப் பயன்படுத்தி:</title>
     <item>
-      <p>நீங்கள் நகர்த்த விரும்பும் சாளரத்தைத் (உதாரணமாக <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq> <em xref="shell-terminology">சாளர மாற்றியைப்</em> பயன்படுத்தி) தேர்ந்தெடுக்கவும்.</p>
+      <p>Select the window that you want to move (for example, using the
+      <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq>
+      <em xref="shell-windows-switching">window switcher</em>).</p>
     </item>
     <item>
       <p>சாளரத்தை <em>பணியிடத் தேர்வியில்</em> தற்போதுள்ள பணியிடத்திற்கு மேலுள்ள பணியிடத்திற்கு நகர்த்த <keyseq><key>Super</key><key>Shift</key><key>Page Up</key></keyseq> ஐ அழுத்தவும்.</p>

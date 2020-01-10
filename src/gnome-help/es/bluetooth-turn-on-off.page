@@ -4,28 +4,34 @@
   <info>
     <link type="guide" xref="bluetooth" group="#first"/>
 
-    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.4" date="2012-02-19" status="outdated"/>
     <revision pkgversion="3.10" date="2013-11-09" status="review"/>
     <revision pkgversion="3.12" date="2014-03-04" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-21" status="candidate"/>
+    <revision pkgversion="3.13" date="2014-09-21" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Jim Campbell</name>
-      <email its:translate="no">jwcampbell@gmail.com</email>
+      <email>jwcampbell@gmail.com</email>
     </credit>
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
       <years>2014</years>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
       <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2015</years>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -35,7 +41,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2011 - 2014</mal:years>
+      <mal:years>2011 - 2016</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -61,23 +67,20 @@
 
 <if:choose>
   <if:when test="platform:unity">
-    <p>You can turn Bluetooth on to connect to other Bluetooth devices, or turn
-    it off to conserve power. To turn Bluetooth on, click the Bluetooth icon in
-    the menu bar and switch <gui>Bluetooth</gui> to <gui>ON</gui>.</p>
+    <p>Puede activar su Bluetooth para usar dispositivos Bluetooth y enviar y recibir archivos, o apagarlo para ahorrar energía. Para activar el Bluetooth, pulse en el icono de Bluetooth en la barra de menú y encienda el <gui>Bluetooth</gui> (<gui>Activado</gui>).</p>
   </if:when>
 
-  <p>You can turn Bluetooth on to connect to other Bluetooth devices, or turn
-  it off to conserve power. To turn Bluetooth on:</p>
+  <p>Puede activar su Bluetooth para usar dispositivos Bluetooth y enviar y recibir archivos, o apagarlo para ahorrar energía. Para activar el Bluetooth:</p>
 
   <steps>
     <item>
-      <p>Abra la vista de <gui xref="shell-terminology">Actividades</gui> y empiece a escribir <gui>Bluetooth</gui>.</p>
+      <p>Abra la vista de <gui xref="shell-introduction#activities">Actividades</gui> y empiece a escribir <gui>Bluetooth</gui>.</p>
     </item>
     <item>
       <p>Pulse en <gui>Bluetooth</gui> para abrir el panel.</p>
     </item>
     <item>
-      <p>Set the switch at the top to <gui>ON</gui>.</p>
+      <p>Mueva el deslizador de la parte superior a <gui>Encendido</gui>.</p>
     </item>
   </steps>
 </if:choose>
@@ -91,17 +94,15 @@
 
 <if:choose>
   <if:when test="platform:unity">
-    <p>To turn Bluetooth off, click the Bluetooth icon and switch
-    <gui>Bluetooth</gui> to <gui>OFF</gui>.</p>
+    <p>Para apagar el Bluetooth, pulse el icono de Bluetooth y <gui>Apague</gui> el <gui>Bluetooth</gui>.</p>
   </if:when>
   <p>Para apagar el Bluetooth:</p>
   <steps>
     <item>
-      <p>Open the <gui xref="shell-terminology">system menu</gui> from the
-      right side of the top bar.</p>
+      <p>Abra el <gui xref="shell-introduction#yourname">menú del sistema</gui> en la parte derecha de la barra superior.</p>
     </item>
     <item>
-      <p>Seleccione <gui>Bluetooth</gui>. La sección Bluetooth del menú se expandirá.</p>
+      <p>Seleccione <gui><media its:translate="no" type="image" mime="image/svg" src="figures/bluetooth-active-symbolic.svg"/> No está en uso</gui>. La sección Bluetooth del menú se expandirá.</p>
     </item>
     <item>
       <p>Seleccione <gui>Apagar</gui>.</p>
@@ -111,9 +112,7 @@
 
 <if:choose>
   <if:when test="platform:unity">
-    <note><p>Your computer is <link xref="bluetooth-visibility">visible</link>
-    if <gui>Visible</gui> is switched to <gui>ON</gui> in the Bluetooth
-    menu.</p></note>
+    <note><p>El equipo es <link xref="bluetooth-visibility">visible</link> si la opción <gui>Visible</gui> esté abierta <gui>Activadaz</gui> en el menú de Bluetooth.</p></note>
   </if:when>
   <note><p>El equipo es <link xref="bluetooth-visibility">visible</link> mientras el panel de <gui>Bluetooth</gui> esté abierto.</p></note>
 </if:choose>

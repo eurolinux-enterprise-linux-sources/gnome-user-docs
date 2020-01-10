@@ -2,10 +2,11 @@
 <page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" version="1.0 ui/1.0" id="files-copy" xml:lang="fr">
 
   <info>
-    <link type="guide" xref="files"/>
+    <link type="guide" xref="files#common-file-tasks"/>
 
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-15" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
 
     <credit type="author">
       <name>Cristopher Thomas</name>
@@ -39,7 +40,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2014</mal:years>
+      <mal:years>2011-2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -71,6 +72,12 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
 <title>Copie et déplacement de fichiers et dossiers</title>
@@ -86,10 +93,7 @@
 <item><p>Sélectionnez le fichier que vous voulez copier en cliquant dessus une fois.</p></item>
 <item><p>Faites un clic-droit et choisissez <gui>Copier</gui> ou pressez le raccourci <keyseq><key>Ctrl</key><key>C</key></keyseq>.</p></item>
 <item><p>Déplacez-vous dans le dossier dans lequel vous voulez copier ce fichier.</p></item>
-<item><p>Click the menu button and pick <gui>Paste</gui> to finish copying the
- file, or press <keyseq><key>Ctrl</key><key>V</key></keyseq>. There
- will now be a copy of the file in the original folder and the other
- folder.</p></item>
+<item><p>Cliquez sur le bouton menu et choisissez <gui>Coller</gui> pour terminer la copie du fichier, ou pressez le raccourci <keyseq><key>Ctrl</key><key>V</key></keyseq>. Il y a maintenant une copie du fichier d'origine dans cet autre dossier.</p></item>
 </steps>
 
 <steps ui:expanded="false">
@@ -97,10 +101,7 @@
 <item><p>Sélectionnez le fichier que vous voulez déplacer en cliquant dessus une fois.</p></item>
 <item><p>Faites un clic droit et choisissez <gui>Couper</gui>, ou pressez le raccourci <keyseq><key>Ctrl</key><key>X</key></keyseq>.</p></item>
 <item><p>Allez dans le dossier dans lequel vous voulez déplacer ce fichier.</p></item>
-<item><p>Click the menu button in the toolbar and pick <gui>Paste</gui> to
- finish moving the file, or press <keyseq><key>Ctrl</key><key>V</key></keyseq>.
- The file will be taken out of its original folder and moved to the other
- folder.</p></item>
+<item><p>Cliquez sur le bouton menu dans la barre d'outils et choisissez <gui>Coller</gui> pour terminer le déplacement du fichier, ou pressez le raccourci <keyseq><key>Ctrl</key><key>V</key></keyseq>. Ce fichier a maintenant été déplacé de son ancien dossier vers le nouveau.</p></item>
 </steps>
 
 <steps ui:expanded="false">
@@ -115,11 +116,7 @@
 </steps>
 
 <note>
-  <p>You cannot copy or move a file into a folder that is <em>read-only</em>.
-  Some folders are read-only to prevent you from making changes to their
-  contents. You can change things from being read-only by
-  <link xref="nautilus-file-properties-permissions">changing file permissions
-  </link>.</p>
+  <p>Vous ne pouvez pas copier ou déplacer un fichier dans un dossier qui est en <em>lecture seule</em>. Certains dossiers ont ce statut pour vous empêcher de modifier leur contenu. Vous pouvez néanmoins modifier ce statut en <link xref="nautilus-file-properties-permissions">modifiant leurs permissions</link>.</p>
 </note>
 
 </page>

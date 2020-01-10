@@ -4,9 +4,12 @@
   <info>
     <link type="guide" xref="power#problems"/>
     <link type="guide" xref="hardware-problems-graphics"/>
-    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <link type="seealso" xref="hardware-driver"/>
 
-    <desc>Jotkin tietokoneet eivät tue valmius- ja lepotiloja.</desc>
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <desc>Some computer hardware causes problems with suspend.</desc>
 
     <credit type="author">
       <name>Gnomen dokumentointiprojekti</name>
@@ -28,16 +31,15 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Jiri Grönroos</mal:name>
       <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
-      <mal:years>2012, 2013.</mal:years>
+      <mal:years>2012-2016.</mal:years>
     </mal:credit>
   </info>
 
 <title>Miksi tietokoneeni ei suostu palaamaan valmiustilasta?</title>
 
-<p>If you <link xref="power-suspend">suspend</link> or <link xref="power-hibernate">hibernate</link> your computer, then try to resume it or
-turn it back on, you may find that it does not work as you expected. This could
-be because suspend and hibernate are not supported properly by your
-hardware.</p>
+<p>If you <link xref="power-suspend">suspend</link> your computer, then try to
+resume it, you may find that it does not work as you expected. This could be
+because suspend is not supported properly by your hardware.</p>
 
 <section id="resume">
   <title>Tietokoneeni ei herää valmiustilasta</title>
@@ -55,26 +57,17 @@ hardware.</p>
   </note>
 </section>
 
-<section id="hibernate">
-  <title>Avoinna olleet sovellukset tai asiakirjat eivät ole avoinna, kun käynnistän tietokoneen uudelleen</title>
-  <p>Jos tietokone asetettiin lepotilaan ja käynnistyksen jälkeen yksikään ohjelma tai tiedosto ei ole avoinna, lepotilaan siirtyminen meni luultavasti pieleen. Tämä saattaa joskus johtua pienestä ongelmasta ja lepotila toimii seuraavalla kerralla. Tämä voi johtua myös siitä, että ohjelmistopäivitys vaati uudelleenkäynnistystä. Tässä tapauksessa tietokone saattoi sammua lepotilan sijasta.</p>
-  <p>It is also possible that the computer is not capable of hibernating
-  because the hardware does not support it properly. This might be because of a
-  problem with Linux drivers for your hardware, for example. You can test this
-  by hibernating again and seeing if it works the second time. If it does not,
-  it is probably a problem with drivers on your computer.</p>
-</section>
-
 <section id="hardware">
   <title>My wireless connection (or other hardware) does not work when I wake
   up my computer</title>
-  <p>If you suspend or hibernate your computer and then resume it again, you
+  <p>If you suspend your computer and then resume it again, you
   may find that your internet connection, mouse, or some other device does not
   work properly. This could be because the driver for the device does not
-  properly support suspend or hibernate. This is a <link xref="hardware-driver">problem with the driver</link> and not the device
+  properly support suspend. This is a <link xref="hardware-driver">problem with the driver</link> and not the device
   itself.</p>
   <p>Jos laitteessa on virtakytkin, käynnistä laite uudelleen. Yleensä tämä saa laitteen toimimaan. Jos se on liitetty tietokoneeseen USB-kaapelilla tai muulla samanlaisella tavalla, irrota laite ja liitä se takaisin.</p>
-  <p>Jos laitteen sammuttaminen/irrottaminen ei onnistu tai se ei auta ongelman kanssa, tietokoneen uudelleenkäynnistys saattaa korjata ongelman.</p>
+  <p>If you cannot turn off or unplug the device, or if this does not work, you
+  may need to restart your computer for the device to start working again.</p>
 </section>
 
 </page>

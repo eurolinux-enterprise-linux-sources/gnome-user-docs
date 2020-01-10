@@ -2,13 +2,19 @@
 <page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wired-connect" xml:lang="es">
 
   <info>
-    <link type="guide" xref="net-wired"/>
+    <link type="guide" xref="net-wired" group="#first"/>
 
-    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.4" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Proyecto de documentación de GNOME</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2015</years>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -18,7 +24,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2011 - 2014</mal:years>
+      <mal:years>2011 - 2016</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -42,7 +48,9 @@
 
   <title>Conectar a una red cableada (Ethernet)</title>
 
-  <p>Para configurar la mayoría de las conexiones a redes cableadas, todo lo que necesita es conectar un cable de red. El icono de red en la barra superior dará vueltas o parpadeará durante varios segundos y después cambiará al icono de un «zócalo» cuando esté conectado.</p>
+  <!-- TODO: create icon manually because it is one overlayed on top of another
+       in real life. -->
+  <p>Para configurar la mayoría de las conexiones a redes cableadas, todo lo que necesita es conectar un cable de red. El icono de red (<media its:translate="no" type="image" src="figures/network-wired-symbolic.svg"><span its:translate="yes">configuración</span></media>) se muestra en la barra superior con tres puntos mientras se establece la conexión. Los puntos desaparecerán cunado esté conectado.</p>
 
   <p>Si esto no ocurriera, deberá asegurarse primero de que su cable de red está conectado. Un extremo del cable debería ir enchufado al puerto de red Ethernet rectangular de su equipo, y el otro debería conectarse a un conmutador, enrutador, roseta o similar (dependiendo de la instalación de red que tenga). Algunas veces, una luz junto al puerto Ethernet indica que está conectado y activo.</p>
 

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-sort" xml:lang="ta">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-sort" xml:lang="ta">
 
   <info>
-    <link type="guide" xref="files"/>
+    <link type="guide" xref="files#common-file-tasks"/>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-25" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>ஃபில் புல்</name>
@@ -40,10 +41,10 @@
 <section id="icon-view">
   <title>சின்னக் காட்சி</title>
 
-  <p>To sort files in a different order, click the
-  <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">View options</span></media></gui>
-  button in the toolbar and choose <gui>By Name</gui>, <gui>By Size</gui>,
-  <gui>By Type</gui>, <gui>By Modification Date</gui>, or <gui>By Access
+  <p>To sort files in a different order, click the view options button in the
+  <!-- FIXME: Get a tooltip added for "View options" -->
+  toolbar and choose <gui>By Name</gui>, <gui>By Size</gui>, <gui>By
+  Type</gui>, <gui>By Modification Date</gui>, or <gui>By Access
   Date</gui>.</p>
 
   <p>ஒரு உதாரணமாக, நீங்கள் <gui>பெயரின் படி</gui> என்பதைத் தேர்ந்தெடுத்தால், கோப்புகள் அவற்றின் பெயர்கலின் படி அகரவரிசையில் வரிசைப்படுத்தப்படும். மற்ற விருப்பங்களுக்கு <link xref="#ways"/> ஐப் பார்க்கவும்.</p>
@@ -58,11 +59,11 @@
 
   <p>கோப்புகளை வேறு வகையில் வரிசைப்படுத்த, கோப்பு மேலாளரின் நிரல் தலைப்பில் ஒன்றை சொடுக்கவும். உதாரணமாக, கோப்புகளை கோப்பு வகையின் படி வரிசைப்படுத்த <gui>வகை</gui> என்பதை சொடுக்கவும். எதிர்த்திசை வரிசையில் வரிசைப்படுத்த மீண்டும் நெடுவரிசை தலைப்பை சொடுக்கவும்.</p>
   <p>In list view, you can show columns with more attributes and sort on those
-  columns. Click the
-  <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">View options</span></media></gui>
-  button in the toolbar, pick <gui>Visible Columns</gui> and select the columns
-  that you want to be visible. You will then be able to sort by those columns.
-  See <link xref="nautilus-list"/> for descriptions of available columns.</p>
+  columns. Click the view options button in the toolbar, pick <gui>Visible
+  <!-- FIXME: Get a tooltip added for "View options" -->
+  Columns…</gui> and select the columns that you want to be visible. You will
+  then be able to sort by those columns. See <link xref="nautilus-list"/> for
+  descriptions of available columns.</p>
 
 </section>
 
@@ -71,25 +72,20 @@
 
   <terms>
     <item>
-      <title>பெயரின் படி</title>
+      <title>பெயர்</title>
       <p>கோப்பின் பெயரின் அகரவரிசைப்படி வரிசைப்படுத்தும்.</p>
     </item>
     <item>
-      <title>அளவின் படி</title>
+      <title>அளவு</title>
       <p>கோப்பின் அளவின் படி (அது எவ்வளவு வட்டு இடத்தை எடுத்துக்கொள்கிறது என்பதைப் பொறுத்து) வரிசைப்படுத்தும். முன்னிருப்பக அசிறிய அளவிலிருந்து பெரிய அளவு வரை என வரிசைப்படுத்தும்.</p>
     </item>
     <item>
-      <title>வகையின் படி</title>
+      <title>வகை</title>
       <p>கோப்பின் வகையின் படி அகரவரிசையில் வரிசைப்படுத்தும். ஒரே வகை கோப்புகள் குழுப்படுத்தப்பட்டு, அதன் பின்னர் பெயரின் படி வரிசைப்படுத்தப்படும்.</p>
     </item>
     <item>
-      <title>மாற்றிய தேதியின் படி</title>
+      <title>Last Modified</title>
       <p>ஒரு கோப்பு கடைசியாக மாற்றப்பட்ட தேதி மற்றும் நேரத்தின் படி வரிசைப்படுத்தப்படும். முன்னிருப்பாக பழையதில் இருந்து புதியது வரை என வரிசைப்படுத்தும்.</p>
-    </item>
-    <item>
-      <title>By Access Date</title>
-      <p>Sorts by the date and time that a file was last read. Sorts from
-      oldest to newest by default.</p>
     </item>
   </terms>
 

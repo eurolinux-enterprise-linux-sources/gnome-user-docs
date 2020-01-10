@@ -2,10 +2,11 @@
 <page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" version="1.0 ui/1.0" id="files-copy" xml:lang="pt-BR">
 
   <info>
-    <link type="guide" xref="files"/>
+    <link type="guide" xref="files#common-file-tasks"/>
 
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-15" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
 
     <credit type="author">
       <name>Cristopher Thomas</name>
@@ -31,12 +32,6 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Ferreira</mal:name>
-      <mal:email>rafael.f.f1@gmail.com</mal:email>
-      <mal:years>2012, 2013, 2014.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Enrico Nicoletto</mal:name>
       <mal:email>liverig@gmail.com</mal:email>
       <mal:years>2013.</mal:years>
@@ -47,11 +42,17 @@
       <mal:email>joaosantana@outlook.com</mal:email>
       <mal:years>2013.</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
   </info>
 
 <title>Copiando ou movendo arquivos e pastas</title>
 
- <p>Um arquivo ou uma pasta podem ser copiados ou movidos para um novo local arrastando e soltando com o mouse, usando os comandos copiar e colar, ou usando atalhos de teclado.</p>
+ <p>Arquivos e pastas podem ser copiados ou movidos para um novo local arrastando e soltando com o mouse, usando os comandos copiar e colar, ou usando atalhos de teclado.</p>
 
  <p>Por exemplo, você pode querer copiar uma apresentação para um pendrive, para poder levá-la ao trabalho com você. Ou você poderia fazer uma cópia de segurança de um documento antes de fazer alterações nele (e, assim, usar a cópia antiga se não gostar das suas mudanças).</p>
 
@@ -62,10 +63,7 @@
 <item><p>Selecione o arquivo que queira copiar clicando nele uma vez.</p></item>
 <item><p>Clique com botão direito e escolha <gui>Copiar</gui> ou pressione <keyseq><key>Ctrl</key><key>C</key></keyseq>.</p></item>
 <item><p>Navegue para outra pasta, onde que você queira colocar a cópia do arquivo.</p></item>
-<item><p>Click the menu button and pick <gui>Paste</gui> to finish copying the
- file, or press <keyseq><key>Ctrl</key><key>V</key></keyseq>. There
- will now be a copy of the file in the original folder and the other
- folder.</p></item>
+<item><p>Clique no botão de menu e escolha <gui>Colar</gui> para finalizar a cópia do arquivo, ou pressione <keyseq><key>Ctrl</key><key>V</key></keyseq>. Agora haverá uma cópia do arquivo na pasta original e na outra pasta.</p></item>
 </steps>
 
 <steps ui:expanded="false">
@@ -73,10 +71,7 @@
 <item><p>Selecione o arquivo que queira mover, clicando nele uma vez.</p></item>
 <item><p>Clique com botão direito e escolha <gui>Recortar</gui>, ou pressione <keyseq><key>Ctrl</key><key>X</key></keyseq>.</p></item>
 <item><p>Navegue para outra pasta, para onde você queira mover o arquivo.</p></item>
-<item><p>Click the menu button in the toolbar and pick <gui>Paste</gui> to
- finish moving the file, or press <keyseq><key>Ctrl</key><key>V</key></keyseq>.
- The file will be taken out of its original folder and moved to the other
- folder.</p></item>
+<item><p>Clique no botão de menu na barra de ferramentas e escolha <gui>Colar</gui> para finalizar a movimentação do arquivo, ou pressione <keyseq><key>Ctrl</key><key>V</key></keyseq>. O arquivo será retirado de sua pasta original e movido para outra pasta.</p></item>
 </steps>
 
 <steps ui:expanded="false">
@@ -91,11 +86,7 @@
 </steps>
 
 <note>
-  <p>You cannot copy or move a file into a folder that is <em>read-only</em>.
-  Some folders are read-only to prevent you from making changes to their
-  contents. You can change things from being read-only by
-  <link xref="nautilus-file-properties-permissions">changing file permissions
-  </link>.</p>
+  <p>Você não pode copiar ou mover um arquivo para uma pasta que seja de <em>somente-leitura</em>. Algumas pastas são assim para impedir que você faça alterações em seu conteúdo. Você pode alterar as coisas para deixarem de ser de somente-leitura <link xref="nautilus-file-properties-permissions">alterando as permissões de arquivo</link>.</p>
 </note>
 
 </page>

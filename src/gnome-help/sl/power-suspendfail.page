@@ -4,9 +4,12 @@
   <info>
     <link type="guide" xref="power#problems"/>
     <link type="guide" xref="hardware-problems-graphics"/>
-    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <link type="seealso" xref="hardware-driver"/>
 
-    <desc>Nekatera strojna oprema računalnikov povzroči težave s stanjem pripravljenosti ali mirovanjem.</desc>
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <desc>Some computer hardware causes problems with suspend.</desc>
 
     <credit type="author">
       <name>Dokumentacijski projekt GNOME</name>
@@ -22,7 +25,9 @@
 
 <title>Zakaj se moj računalnik ne vklopi nazaj potem ko ga pošljem v stanje pripravljenosti?</title>
 
-<p>V primeru da svoj računalnik pošljete v <link xref="power-suspend">stanje pripravljenosti</link> ali v <link xref="power-hibernate">mirovanje</link> in ga nato vklopite nazaj se lahko zgodi, da ne deluje kot pričakujete. To se lahko zgodi, ker vaša strojna oprema stanja pripravljenosti/mirovanja ne podpira.</p>
+<p>If you <link xref="power-suspend">suspend</link> your computer, then try to
+resume it, you may find that it does not work as you expected. This could be
+because suspend is not supported properly by your hardware.</p>
 
 <section id="resume">
   <title>Moj računalnik je v stanju pripravljenosti in se ne prižge</title>
@@ -35,17 +40,16 @@
   </note>
 </section>
 
-<section id="hibernate">
-  <title>Moji programi/dokumenti ob ponovnem vklopu računalnika niso odprti</title>
-  <p>V primeru da ste računalnik dali v stanje pripravljenosti in ga ponovno vklopili, vendar noben od vaših dokumentov ali programov ni odprt, je verjetno prehod v mirovanje spodletel. Včasih se to zgodi zaradi manjše težave in bo vaš računalnik lahko naslednjič pravilno prešel v mirovanje. Morda se je to zgodilo, ker ste namestili programsko posodobitev, ki je zahtevala ponoven zagon računalnika. V tem primeru se bo računalnik namesto prehoda v mirovanje ponovno zagnal.</p>
-  <p>Možno je tudi, da računalnik ne more preiti v mirovanje, ker ga strojna oprema ne podpira pravilno. To se lahko na primer zgodi zaradi težav z gonilniki Linux za vašo strojno opremo. To lahko preizkusite s ponovnim prehodom v mirovanje in ogledom, če to deluje drugič. V primeru da ne, je to verjetno težava z gonilniki vašega računalnika.</p>
-</section>
-
 <section id="hardware">
   <title>Moja brezžična povezava (ali druga strojna oprema) ne deluje, ko računalnik povrnem iz stanja pripravljenosti ali mirovanja</title>
-  <p>V primeru da računalnik pošljete v stanje pripravljenosti ali mirovanje in ga nato povrnete, se lahko zgodi, da vaša internetna povezava, miška ali kakšna druga naprava ne deluje pravilno. To se lahko zgodi, ker gonilnik naprave prehoda v stanje pripravljenosti/mirovanje ne podpira pravilno. To je <link xref="hardware-driver">težava z gonilnikom</link>, ne s strojno opremo.</p>
+  <p>If you suspend your computer and then resume it again, you
+  may find that your internet connection, mouse, or some other device does not
+  work properly. This could be because the driver for the device does not
+  properly support suspend. This is a <link xref="hardware-driver">problem with the driver</link> and not the device
+  itself.</p>
   <p>V primeru da ima naprava stikalo za vklop, ga poskusite izklopiti in nato ponovno vklopiti. V večini primerov bo naprava začela ponovno delovati. V primeru da se naprava poveže preko kabla USB ali podobno, napravo odklopite in jo ponovno priklopite.</p>
-  <p>V primeru da naprave ne morete izklopiti ali to ne deluje, boste morda morali za delovanje naprave znova zagnati računalnik.</p>
+  <p>If you cannot turn off or unplug the device, or if this does not work, you
+  may need to restart your computer for the device to start working again.</p>
 </section>
 
 </page>

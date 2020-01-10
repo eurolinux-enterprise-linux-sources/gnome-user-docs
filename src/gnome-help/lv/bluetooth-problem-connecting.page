@@ -5,18 +5,23 @@
     <link type="guide" xref="bluetooth#problems"/>
     <link type="seealso" xref="hardware-driver"/>
 
-    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.4" date="2012-02-19" status="outdated"/>
     <revision pkgversion="3.10" date="2013-11-09" status="review"/>
     <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
     <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
-      <email its:translate="no">philbull@gmail.com</email>
+      <email>philbull@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -24,7 +29,7 @@
     <desc>Adapters varētu būt izslēgts vai bez draiveru atbalsta, vai arī Bluetooth varētu būt izslēgts vai bloķēts.</desc>
   </info>
 
-  <title>I cannot connect my Bluetooth device</title>
+  <title>Es nevaru pievienot savu Bluetooth ierīci</title>
 
   <p>Var būt vairāki iemesli, kāpēc neizdodas savienoties ar Bluetooth ierīci, tādu kā telefons vai austiņas.</p>
 
@@ -43,7 +48,7 @@
       probably have to get a different Bluetooth adapter.</p>
     </item>
     <item>
-      <title>Adapter is not switched on</title>
+      <title>Adapters nav ieslēgts</title>
       <if:choose>
         <if:when test="platform:unity">
           <p>Pārliecinieties, ka jūsu Bluetooth adapters ir ieslēgts. Spiediet Bluetooth ikonu <gui>izvēļņu joslā</gui> un pārliecinieties, ka tas nav<link xref="bluetooth-turn-on-off">deaktivēts</link>.</p>

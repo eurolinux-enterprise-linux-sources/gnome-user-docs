@@ -11,15 +11,15 @@
 
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -35,7 +35,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Kelemen Gábor</mal:name>
       <mal:email>kelemeng at gnome dot hu</mal:email>
-      <mal:years>2011, 2012, 2013, 2014</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -89,7 +89,7 @@
 
 <if:choose>
   <if:when test="!platform:gnome-classic">
-    <media type="image" src="figures/shell-activities.png" width="123" height="82" style="floatend floatright" if:test="!target:mobile">
+    <media type="image" src="figures/shell-activities.png" style="floatend floatright" if:test="!target:mobile">
       <p>Tevékenységek gomb</p>
     </media>
   </if:when>
@@ -102,9 +102,10 @@
 
   <p if:test="!platform:gnome-classic">Ablakai és alkalmazásai eléréséhez kattintson a <gui>Tevékenységek</gui> gombra, vagy vigye az egérmutatót a bal felső forró sarokba, valamint megnyomhatja a <key xref="keyboard-key-super">Super billentyűt</key> is. Ablakai és alkalmazásai megjelennek az áttekintésben. Ezen kívül a gépelés megkezdésével is kereshet alkalmazásokat, fájlokat, mappákat és a weben.</p>
 
-  <p if:test="platform:gnome-classic">Ablakai és alkalmazásai eléréséhez kattintson az <link xref="shell-terminology"><gui>Alkalmazások</gui> menüre</link> a bal felső sarokban, és válassza a <gui>Tevékenységek áttekintés</gui> elemet. Megnyomhatja a <key xref="keyboard-key-super">Super</key> billentyűt is az ablakai és alkalmazásai megjelenítéséhez a <gui>Tevékenységek</gui> áttekintésben. Kezdjen el gépelni az alkalmazások, fájlok és mappák kereséséhez.</p>
+  <p if:test="platform:gnome-classic">Ablakai és alkalmazásai eléréséhez kattintson az <gui xref="shell-introduction#activities">Alkalmazások</gui> menüre a bal felső sarokban, és válassza a <gui>Tevékenységek áttekintés</gui> elemet. Megnyomhatja a <key xref="keyboard-key-super">Super</key> billentyűt is az ablakai és alkalmazásai megjelenítéséhez a <gui>Tevékenységek</gui> áttekintésben. Kezdjen el gépelni az alkalmazások, fájlok és mappák kereséséhez.</p>
 
-  <media type="image" src="figures/shell-dash.png" width="49" height="300" style="floatstart floatleft" if:test="!target:mobile">
+  <!-- TODO: retake without the flashy bit -->
+  <media type="image" src="figures/shell-dash.png" height="300" style="floatstart floatleft" if:test="!target:mobile">
     <p>Az indítópanel</p>
   </media>
 
@@ -152,7 +153,7 @@
 <if:choose>
   <if:when test="!platform:gnome-classic">
     <media type="image" src="figures/shell-appts.png" width="250" style="floatend floatright" if:test="!target:mobile">
-      <p>Óra, naptár és találkozók</p>
+      <p>Óra, naptár, találkozók és értesítések</p>
     </media>
   </if:when>
   <if:when test="platform:gnome-classic">
@@ -162,15 +163,19 @@
   </if:when>
 </if:choose>
 
-  <p>Kattintson az órára a felső sávon az aktuális dátum, egy havi beosztású naptár és a soron következő találkozók megjelenítéséhez. Elérheti a dátum és idő beállításait is, és közvetlenül a menüből megnyithatja a teljes <app>Evolution</app> naptárát is.</p>
+  <p>Kattintson az órára a felső sávon az aktuális dátum, egy havi beosztású naptár, a soron következő találkozók és az új értesítések megjelenítéséhez. A naptár megnyitható a <keyseq><key>Super</key><key>M</key></keyseq> kombináció megnyomásával is. Közvetlenül a menüből elérheti a dátum és idő beállításait, és megnyithatja a teljes <app>Evolution</app> naptárát is.</p>
 
   <list style="compact">
     <item>
       <p><link xref="clock-calendar">Tudjon meg többet a naptárról és a találkozókról.</link></p>
     </item>
+    <item>
+      <p><link xref="shell-notifications">Tudjon meg többet az értesítésekről és az üzenettálcáról.</link></p>
+    </item>
   </list>
 
 </section>
+
 
 <section id="yourname">
   <title>Ön és a számítógépe</title>
@@ -229,23 +234,6 @@ messages will be presented, such as when your battery is critically low.</p>
   <list style="compact">
     <item>
       <p><link xref="shell-lockscreen">Tudjon meg többet a zároló képernyőről.</link></p>
-    </item>
-  </list>
-
-</section>
-
-<section id="message-tray">
-  <title>Üzenettálca</title>
-
-  <media its:translate="no" type="image" src="figures/shell-message-tray.png" width="600">
-    <p its:translate="yes">Üzenettálca</p>
-  </media>
-
-  <p>Az üzenettálcát a mutató a képernyő aljára mozgatásával vagy a <keyseq><key>Super</key><key>M</key></keyseq> kombináció megnyomásával jeleníttetheti meg. Az értesítések itt tárolódnak, amíg nem ér rá megnézni azokat.</p>
-
-  <list style="compact">
-    <item>
-      <p><link xref="shell-notifications">Tudjon meg többet az értesítésekről és az üzenettálcáról.</link></p>
     </item>
   </list>
 

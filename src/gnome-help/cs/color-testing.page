@@ -10,17 +10,16 @@
 
     <credit type="author">
       <name>Richard Hughes</name>
-      <email its:translate="no">richard@hughsie.com</email>
+      <email>richard@hughsie.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Use the supplied test profiles to check that your profiles are being
-    applied correctly to your screen.</desc>
+    <desc>Použijte dodávané testovací profily ke kontrole, že se vaše profily správně používají pro obrazovku.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
@@ -31,23 +30,20 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Marek Černocký</mal:name>
       <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:years>2014, 2015</mal:years>
     </mal:credit>
   </info>
 
-  <title>How do I test if color management is working correctly?</title>
+  <title>Jak mohu vyzkoušet, že správa barev funguje správně?</title>
 
-  <p>The effects of a color profile are sometimes subtle and it may be hard to
-  see if anything much has changed.</p>
+  <p>Vliv barevného profilu může být někdy sotva patrný a tak může být těžké poznat, jestli se vůbec něco změnilo</p>
 
-  <p>GNOME comes with several profiles for testing that make it very clear when
-  the profiles are being applied:</p>
+  <p>GNOME přináší několik profilů pro testování, díky kterým zcela jasně uvidíte, jestli se profily vůbec použijí:</p>
 
   <terms>
     <item>
       <title>Blue</title>
-      <p>This will turn the screen blue and tests if the calibration curves are
-      being sent to the display.</p>
+      <p>Tímto se přepne obrazovku na modrou a otestuje se, jestli jsou kalibrační křivky odesílány do displeje.</p>
     </item>
 <!--    <item>
       <title>ADOBEGAMMA-test</title>
@@ -66,33 +62,26 @@
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-terminology">Activities</gui> overview and
-      start typing <gui>Color</gui>.</p>
+      <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Barvy</gui>.</p>
     </item>
     <item>
       <p>Kliknutím na <gui>Barvy</gui> otevřete příslušný panel.</p>
     </item>
     <item>
-      <p>Select the device for which you want to add a profile. You may wish to
-      make a note of which profile is currently being used.</p>
+      <p>Vyberte zařízení, pro které chcete profil přidat. Možná byste si měli poznamenat, který profil je právě používán.</p>
     </item>
     <item>
-      <p>Click <gui>Add profile</gui> to select a test profile, which should be
-      at the bottom of the list.</p>
+      <p>Klikněte na <gui>Přidat profil</gui>, abyste mohli vybrat testovací profil, který by měl být v seznamu až dole.</p>
     </item>
     <item>
       <p>Zmáčknutím <gui>Přidat</gui> svoji volbu potvrdíte.</p>
     </item>
     <item>
-      <p>To revert to your previous profile, select the device in the
-      <gui>Color</gui> panel, then select the profile that you were using
-      before you tried one of the test profiles and press <gui>Enable</gui> to
-      use it again.</p>
+      <p>Abyste vrátili předchozí profil, vyberte zařízení v panelu <gui>Barvy</gui>, pak vyberte profil, který se používal před tím, než jste zkoušeli testovací profil, a zmáčkněte <gui>Povolit</gui>, aby se použil.</p>
     </item>
   </steps>
 
 
-  <p>Using these profiles, you can clearly see when an application supports
-  color management.</p>
+  <p>Při použití těchto profilů zcela jednoznačně uvidíte, jestli aplikace podporuje správu barev.</p>
 
 </page>

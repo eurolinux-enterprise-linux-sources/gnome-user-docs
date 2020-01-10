@@ -2,7 +2,7 @@
 <page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" version="1.0 if/1.0" id="shell-apps-open" xml:lang="pt-BR">
 
   <info>
-    <link type="guide" xref="shell-overview#apps"/>
+    <link type="guide" xref="shell-overview"/>
     <link type="guide" xref="index" group="#first"/>
 
     <revision pkgversion="3.6.0" date="2012-10-14" status="review"/>
@@ -32,12 +32,6 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Ferreira</mal:name>
-      <mal:email>rafael.f.f1@gmail.com</mal:email>
-      <mal:years>2012, 2013, 2014.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Enrico Nicoletto</mal:name>
       <mal:email>liverig@gmail.com</mal:email>
       <mal:years>2013.</mal:years>
@@ -48,23 +42,35 @@
       <mal:email>joaosantana@outlook.com</mal:email>
       <mal:years>2013.</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
   </info>
 
   <title>Iniciando aplicativos</title>
 
   <p if:test="!platform:gnome-classic">Move your mouse pointer to the
   <gui>Activities</gui> corner at the top left of the screen to show the
-  <gui xref="shell-terminology">Activities</gui> overview. This is where you
+  <gui xref="shell-introduction#activities">Activities</gui> overview. This is where you
   can find all of your applications. You can also open the overview by pressing
   the <key xref="keyboard-key-super">Super</key> key.</p>
   
-  <p if:test="platform:gnome-classic">Você pode iniciar os aplicativos do <link xref="shell-terminology">menu <gui>Aplicativos</gui></link> no canto esquerdo superior na tela ou você pode usar o panorama de <gui>Atividades</gui> pressionando a tecla <key xref="keyboard-key-super">Super</key>.</p>
+  <p if:test="platform:gnome-classic">You can start applications from the
+  <gui xref="shell-introduction#activities">Applications</gui> menu at the top
+  left of the screen, or you can use the <gui>Activities</gui> overview by
+  pressing the <key xref="keyboard-key-super">Super</key> key.</p>
 
   <p>Existem várias maneiras de se abrir um aplicativo uma vez que esteja no panorama de <gui>Atividades</gui>:</p>
 
   <list>
     <item>
-      <p>Comece digitando o nome de um aplicativo: a busca começa instantaneamente (se isso não acontecer, clique na barra de busca na região superior da tela e comece a digitar). Clique no ícone do aplicativo para iniciá-lo.</p>
+      <p>Start typing the name of an application - searching begins instantly.
+      (If this doesn't happen, click the search bar at the top of the screen
+      and start typing.) If you don't know the exact name of an application, try
+      to type an related term. Click the application's icon to start it.</p>
     </item>
     <item>
       <p>Alguns aplicativos possuem ícones no <em>dash</em>, a listra vertical de ícones no lado esquerdo do panorama de <gui>Atividades</gui>. Clique em um desses para iniciar o aplicativo correspondente.</p>

@@ -5,18 +5,23 @@
     <link type="guide" xref="bluetooth#problems"/>
     <link type="seealso" xref="hardware-driver"/>
 
-    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.4" date="2012-02-19" status="outdated"/>
     <revision pkgversion="3.10" date="2013-11-09" status="review"/>
     <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
     <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
-      <email its:translate="no">philbull@gmail.com</email>
+      <email>philbull@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -32,11 +37,11 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Jiri Grönroos</mal:name>
       <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
-      <mal:years>2012, 2013.</mal:years>
+      <mal:years>2012-2016.</mal:years>
     </mal:credit>
   </info>
 
-  <title>I cannot connect my Bluetooth device</title>
+  <title>Bluetooth-laitteen yhdistäminen ei onnistu</title>
 
   <p>Bluetooth-laitteeseen (kuten puhelimeen tai kuulokemikrofoniin) yhdistämisen epäonnistuminen voi johtua useista eri syistä.</p>
 
@@ -55,7 +60,7 @@
       probably have to get a different Bluetooth adapter.</p>
     </item>
     <item>
-      <title>Adapter is not switched on</title>
+      <title>Sovitinta ei ole kytketty päälle</title>
       <if:choose>
         <if:when test="platform:unity">
           <p>Varmista, että Bluetooth-sovitin on kytketty päälle. Avaa valikkopalkin <gui>Bluetooth-valikko</gui> ja tarkista, että Bluetooth on <link xref="bluetooth-turn-on-off">käytössä</link>.</p>

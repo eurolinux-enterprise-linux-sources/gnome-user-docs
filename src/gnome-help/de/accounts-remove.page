@@ -1,24 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="accounts-remove" xml:lang="de">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="accounts-remove" xml:lang="de">
 
   <info>
-    <link type="guide" xref="accounts"/>
+    <link type="guide" xref="accounts" group="remove"/>
     <link type="seealso" xref="accounts-disable-service"/>
 
     <revision pkgversion="3.5.5" date="2012-08-15" status="draft"/>
     <revision pkgversion="3.9.92" date="2013-09-18" status="draft"/>
     <revision pkgversion="3.13.92" date="2014-09-20" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+      <years>2015</years>
     </credit>
 
-    <desc>Ein Online-Konto löschen.</desc>
+    <desc>So entfernen Sie den Zugriff auf Online-Dienste.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Hendrik Knackstedt</mal:name>
@@ -35,7 +41,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Christian Kirbach</mal:name>
       <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2014.</mal:years>
+      <mal:years>2011-2016.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -51,36 +57,35 @@
     </mal:credit>
   </info>
 
-<title>Ein Konto entfernen</title>
+  <title>Ein Konto entfernen</title>
 
-  <p>You can remove an online account which you no longer wish to use.</p>
+  <p>Entfernen Sie ein Online-Konto, das Sie nicht länger benötigen.</p>
+
+  <note style="tip">
+    <p>Viele Anbieter für Internet-Dienste liefern eine Legitimierung, die GNOME anstelle eines Passworts speichert. Wenn Sie ein Konto entfernen, sollten Sie auch das Zertifikat im Internet-Dienst zurückziehen. Somit wird sichergestellt, dass keine andere Anwendung oder Internetseite sich mit diesem Dienst verbinden kann mit Hilfe der Legitimierung von GNOME.</p>
+
+    <p>So widerrufen Sie die Legitimierung, abhängig vom Service-Anbieter: Prüfen Sie Ihre Einstellungen auf der Webseite des Anbieters bezüglich legitimierten oder verbundenen Anwendungen und Webseiten. Schauen Sie nach einer Anwendung namens »GNOME« und entfernen Sie sie.</p>
+  </note>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-terminology">Activities</gui> overview and
-      start typing <gui>Online Accounts</gui>.</p>
+      <p>Öffnen Sie die <gui xref="shell-introduction#activities">Aktivitäten</gui>-Übersicht und tippen Sie <gui>Online-Konten</gui> ein.</p>
     </item>
     <item>
-      <p>Click on <gui>Online Accounts</gui> to open the panel.</p>
+      <p>Klicken Sie auf <gui>Online-Konten</gui>, um das Panel zu öffnen.</p>
     </item>
     <item>
       <p>Wählen Sie das zu löschende Konto aus.</p>
     </item>
     <item>
-      <p>Click the <gui>-</gui> button in the lower-left corner of the
-      window.</p>
+      <p>Klicken Sie auf den Knopf <gui>-</gui> in der linken unteren Ecke des Fensters.</p>
     </item>
     <item>
-      <p>Klicken Sie auf <gui>Entfernen</gui>.</p>
+      <p>Klicken Sie auf <gui>Entfernen</gui> im Bestätigungsfenster.</p>
     </item>
   </steps>
 
   <note style="tip">
-    <p>Instead of deleting the account completely, it is possible to
-    <link xref="accounts-disable-service">restrict the services</link> accessed
-    by your desktop.</p>
+    <p>Anstatt das Konto vollständig zu entfernen, ist es möglich, die <link xref="accounts-disable-service">Dienste einzuschränken</link>, auf die Ihre Arbeitsumgebung zugreift.</p>
   </note>
-
-  <p>To prevent GNOME from accessing the online account, you should revoke the
-  access through the account's website or similar service.</p>
 </page>

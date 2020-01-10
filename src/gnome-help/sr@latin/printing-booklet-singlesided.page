@@ -6,15 +6,20 @@
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Tifani Antopoloski</name>
       <email>tiffany@antopolski.com</email>
     </credit>
+    <credit type="author editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc/>
+    <desc>Štampajte knjižicu iz PDF-a na jednostranom štampaču.</desc>
   </info>
 
   <title>Štampajte knjižicu na jednostranom štampaču</title>
@@ -31,10 +36,12 @@
       <p>Otvorite prozorče štampanja. Ovo obično možete da uradite klikom na stavku <gui style="menuitem">Štampaj</gui> u izborniku koristeći prečicu sa tastature <keyseq><key>Ktrl</key><key>P</key></keyseq>.</p>
     </item>
     <item>
-      <p>Izaberite jezičak <gui>Opšte</gui>.</p>
-      <p>Pod <gui>Opseg</gui>, izaberite <gui>Stranice</gui>.</p>
+      <p>Pritisnite dugme <gui>Svojstva...</gui> button</p>
+      <p>Na padajućem spisku <gui>Usmerenje</gui>, uverite se da je izabrano <gui>Položeno</gui>.</p>
+      <p>Pritisnite <gui>U redu</gui> da se vratite na prozorče štampanja.</p>
     </item>
     <item>
+      <p>Pod <gui>Opseg i primerci</gui>, izaberite <gui>Stranice</gui>.</p>
       <p>Upišite broj stranica ovim redom (n je ukupan broj stranica, i umnožak broja 4):</p>
       <p>n, 1, 2, n-1, n-2, 3, 4, n-3, n-4, 5, 6, n-5, n-6, 7, 8, n-7, n-8, 9, 10, n-9, n-10, 11, 12, n-11…</p>
       <p>…sve dok ne upišete sve stranice.</p>
@@ -48,11 +55,9 @@
      </note>
     </item>
     <item>
-      <p>Izaberite jezičak <gui>Podešavanje strane</gui>.</p>
-      <p>Pod odeljkom <gui>Raspored</gui>, u padajućem spisku <gui>Dvostrano</gui>, izaberite <gui>Jednostrano</gui>.</p>
-      <p>U padajućem spisku <gui>Strana na listu</gui>, izaberite <gui>2</gui>.</p>
-      <p>U padajućem spisku <gui>Redosled strana</gui>, izaberite <gui>Sa leva na desno</gui>.</p>
-      <p>U izborniku <gui>Štampaj samo</gui>, izaberite <gui>Neparne listove</gui>.</p>
+      <p>Izaberite jezičak <gui>Raspored strane</gui>.</p>
+      <p>Pod <gui>Raspored</gui>, izaberite <gui>Knjižica</gui>.</p>
+      <p>Pod <gui>Strane stranice</gui>, u padajućem spisku <gui>Obuhvati</gui>, izaberite <gui>Lice strane / desne stranice</gui>.</p>
     </item>
     <item>
       <p>Kliknite <gui>Štampaj</gui>.</p>
@@ -64,8 +69,8 @@
       <p>Otvorite prozorče štampanja. Ovo obično možete da uradite klikom na stavku <gui style="menuitem">Štampaj</gui> u izborniku koristeći prečicu sa tastature <keyseq><key>Ktrl</key><key>P</key></keyseq>.</p>
     </item>
     <item>
-      <p>Izaberite jezičak <gui>Podešavanje strane</gui>.</p>
-      <p>U izborniku <gui>Štampaj samo</gui>, izaberite <gui>Parne listove</gui>.</p>
+      <p>Izaberite jezičak <gui>Raspored strane</gui>.</p>
+      <p>Pod <gui>Strane stranice</gui>, u padajućem spisku <gui>Obuhvati</gui>, izaberite <gui>Naličje strane / leve stranice</gui>.</p>
     </item>
     <item>
       <p>Kliknite <gui>Štampaj</gui>.</p>

@@ -6,26 +6,22 @@
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
     <revision pkgversion="3.10" date="2013-11-03" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-30" status="final"/>
 
     <credit type="author">
       <name>GNOME ドキュメンテーションプロジェクト</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <title type="link" role="trail">ユーザー</title>
-    <desc>
-      <link xref="user-add">Add user</link><!-- or
-      <link xref="user-addguest">guest user</link>-->,
-      <link xref="user-changepassword">change password</link>,
-      <link xref="user-admin-change">administrators</link>…
-    </desc>
+    <desc><link xref="user-add">ユーザーの追加</link>, <link xref="user-changepassword">パスワードの変更</link>, <link xref="user-admin-change">管理者</link>…</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -67,10 +63,8 @@
 
   <title>ユーザーアカウント</title>
 
-  <p>Each person that uses the computer should have a different user account.
-  This allows them to keep their files separate from yours and to choose their
-  own settings. It is also more secure. You can only access a different user
-  account if you know their password.</p>
+  <!-- TODO: add enterprise user account/login -->
+  <p>コンピューターを使う各ユーザーは、個別のユーザーアカウントを使用すると良いでしょう。各ユーザーは、自身のファイルをあなたのファイルとは区別することができますし、個別の設定ができるようになります。また、より安全でもあります。他のユーザーアカウントのパスワードを知っている場合にしか、そのユーザーアカウントを操作できません。</p>
 
 <section id="manage" style="2column">
   <info>

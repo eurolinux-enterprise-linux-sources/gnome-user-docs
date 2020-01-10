@@ -6,6 +6,7 @@
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -23,7 +24,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -70,14 +71,15 @@
 
     <p>通常、プリンターは 先頭ページを最初に印刷し、末尾ページを最後に印刷します。したがって印刷完了後にドキュメントをプリンターから回収する時はページの並びが逆になっています。必要に応じて、この印刷順序を逆にするとよいでしょう。</p>
 
-    <p>逆順に印刷する方法は次のとおりです。</p>
-
     <steps>
+      <title>逆順に印刷する方法は次のとおりです。</title>
       <item>
-        <p><guiseq><gui>ファイル</gui><gui>印刷</gui></guiseq>を選択します。</p>
+        <p>Press <keyseq><key>Ctrl</key><key>P</key></keyseq> to open the Print
+        dialog.</p>
       </item>
       <item>
-        <p>印刷ダイアログの<gui>全般</gui>タブを開き、<em>コピー</em>オプションの<gui>ページを逆順にする</gui>にチェックを付けます。末尾ページから逆順に印刷されるようになります。</p>
+        <p>In the <gui>General</gui> tab, under <gui>Copies</gui>, check
+        <gui>Reverse</gui>. The last page will be printed first, and so on.</p>
       </item>
     </steps>
 
@@ -92,17 +94,18 @@
   will make each copy come out with its pages grouped together in the right
   order instead.</p>
 
-  <p>ページを揃える方法は次のとおりです。</p>
-
   <steps>
+    <title>To collate:</title>
     <item>
-      <p><guiseq><gui>ファイル</gui><gui>印刷</gui></guiseq>を選択します。</p>
+     <p>Press <keyseq><key>Ctrl</key><key>P</key></keyseq> to open the Print
+     dialog.</p>
     </item>
     <item>
-      <p>印刷ダイアログの<gui>全般</gui>タブ内の<em>コピー</em>の下にある<gui>ページを揃える</gui>にチェックを付けます。</p>
+      <p>In the <gui>General</gui> tab, under <gui>Copies</gui>, check
+      <gui>Collate</gui>.</p>
     </item>
   </steps>
- <!-- Need to add this image <media type="image" src="figures/reverse-collate.png"/> -->
+
 </section>
 
 </page>

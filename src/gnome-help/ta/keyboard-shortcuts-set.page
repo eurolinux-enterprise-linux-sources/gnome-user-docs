@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" version="1.0 ui/1.0" id="keyboard-shortcuts-set" xml:lang="ta">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" version="1.0 ui/1.0" id="keyboard-shortcuts-set" xml:lang="ta">
 
   <info>
     <link type="guide" xref="keyboard"/>
@@ -8,14 +8,15 @@
     <revision pkgversion="3.8.0" version="0.3" date="2013-03-23" status="review"/>
     <revision pkgversion="3.9.92" date="2013-10-11" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+    <revision pkgversion="3.17.90" date="2015-08-30" status="candidate"/>
 
     <credit type="author">
       <name>மைக்கேல் ஹில்</name>
       <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="author">
-       <name>ஜுலிட்டா இங்கா</name>
-       <email>yrazes@gmail.com</email>
+      <name>ஜுலிட்டா இங்கா</name>
+      <email>yrazes@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>ஜுவாஞ்சோ மாரின்</name>
@@ -24,6 +25,10 @@
     <credit type="editor">
       <name>ஷோபா தியாகி</name>
       <email>tyagishobha@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>எக்காட்டெரினா ஜெராசிமோவா</name>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <desc><gui>விசைப்பலகை</gui> அமைவுகளில் நீங்கள் விசைப்பலகை குறுக்குவழிகளை வரையறுக்கலாம் அல்லது மாற்றலாம்.</desc>
@@ -41,7 +46,7 @@
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-terminology">Activities</gui> overview and
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
       start typing <gui>Keyboard</gui>.</p>
     </item>
     <item>
@@ -71,23 +76,23 @@
   </tr>
   <tr>
 	<td><p>கால்குலேட்டரைத் துவக்கு</p></td>
-	<td><p>கால்குலேட்டர்</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-calculator.svg"> <key>Calculator</key> key symbol</media> or <key>Calculator</key></p></td>
   </tr>
   <tr>
 	<td><p>மின்னஞ்சல் கிளையன்ட்டைத் துவக்கு</p></td>
-	<td><p>மின்னஞ்சல்</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-mail.svg"> <key>Mail</key> key symbol</media> or <key>Mail</key></p></td>
   </tr>
   <tr>
 	<td><p>வலை உலாவியைத் துவக்கு</p></td>
-	<td><p>WWW</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-world.svg"> <key>WWW</key> key symbol</media> or <media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-home.svg"> <key>WWW</key> key symbol</media> or <key>WWW</key></p></td>
   </tr>
   <tr>
 	<td><p>முகப்புக் கோப்புறை</p></td>
-	<td><p>உலவி</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-folder.svg"> <key>Explorer</key> key symbol</media> or <media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-computer.svg"> <key>Explorer</key> key symbol</media> or <key>Explorer</key></p></td>
   </tr>
   <tr>
 	<td><p>தேடு</p></td>
-	<td><p>தேடு</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-search.svg"> <key>Search</key> key symbol</media> or <key>Search</key></p></td>
   </tr>
 </table>
 
@@ -194,15 +199,15 @@
 <table rules="rows" frame="top bottom" ui:expanded="false">
 <title>திரைப்பிடிப்புகள்</title>
   <tr>
-	<td><p>திரைப்பிடிப்பினை எடுத்தல்</p></td>
+	<td><p>Save a screenshot to file</p></td>
 	<td><p><key>Print</key></p></td>
   </tr>
   <tr>
-	<td><p>ஒரு சாளரத்தின் திரைப்பிடிப்பினை எடுத்தல்</p></td>
+	<td><p>Save a screenshot of a window to file</p></td>
 	<td><p><keyseq><key>Alt</key><key>Print</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>ஒரு இடத்தின் திரைப்பிடிப்பை எடுத்தல்</p></td>
+	<td><p>Save a screenshot of an area to file</p></td>
 	<td><p><keyseq><key>Shift</key><key>Print</key></keyseq></p></td>
   </tr>
   <tr>
@@ -227,43 +232,43 @@
 <title>ஒலி மற்றும் மீடியா</title>
   <tr>
 	<td><p>ஒலியை நிறுத்து</p></td>
-	<td><p>ஆடியோ நிறுத்தம்</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-mute.svg"> <key>Mute</key> key symbol</media> (Audio mute)</p></td>
   </tr>
   <tr>
 	<td><p>ஒலி அளவை குறைத்தல்</p></td>
-	<td><p>ஆடியோ ஒலியளவை குறைத்தல்</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-voldown.svg"> <key>Volume Down</key> key symbol</media> (Audio lower volume)</p></td>
   </tr>
   <tr>
 	<td><p>ஒலி அளவை உயர்த்துதல்</p></td>
-	<td><p>ஆடியோ ஒலியளவை உயர்த்தல்</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-volup.svg"> <key>Volume Up</key> key symbol</media> (Audio raise volume)</p></td>
   </tr>
   <tr>
 	<td><p>மீடியா இயக்கியை துவக்குதல்</p></td>
-	<td><p>ஆடியோ ஊடகம்</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-media.svg"> <key>Media</key> key symbol</media> (Audio media)</p></td>
   </tr>
   <tr>
 	<td><p>இயக்கு (அல்லது இயக்கு/இடைநிறுத்து)</p></td>
-	<td><p>ஆடியோ இயக்கு</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-play.svg"> <key>Play</key> key symbol</media> (Audio play)</p></td>
   </tr>
   <tr>
 	<td><p>இயக்கத்தை இடைநிறுத்து</p></td>
-	<td><p>ஆடியோ இடைநிறுத்தம்</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-pause.svg"> <key>Pause</key> key symbol</media> (Audio pause)</p></td>
   </tr>
   <tr>
 	<td><p>இயக்கத்தை நிறுத்து</p></td>
-	<td><p>ஆடியோ நிறுத்தம்</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-stop.svg"> <key>Stop</key> key symbol</media> (Audio stop)</p></td>
   </tr>
   <tr>
 	<td><p>முந்தைய டிராக்</p></td>
-	<td><p>முந்தைய ஆடியோ</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-previous.svg"> <key>Previous</key> key symbol</media> (Audio previous)</p></td>
   </tr>
   <tr>
 	<td><p>அடுத்த டிராக்</p></td>
-	<td><p>அடுத்த ஆடியோ</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-next.svg"> <key>Next</key> key symbol</media> (Audio next)</p></td>
   </tr>
   <tr>
 	<td><p>வெளியேற்று</p></td>
-	<td><p>வெளியேற்று</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-eject.svg"> <key>Eject</key> key symbol</media> (Eject)</p></td>
   </tr>
 </table>
 
@@ -442,51 +447,33 @@
 
 </section>
 
-<section id="changing-shorcuts">
-  <title>விசைப்பலகை குறுக்குவழிகளை மாற்றுதல்</title>
-  <p>இந்த பிரிவு ஒரு பயன்பாட்டின் விசைப்பலகை குறுக்குவழிகளை எப்படி மாற்றுவது எனக் காட்டுகிறது.</p>
-
-  <steps>
-    <item>
-	<p>முனைய பயன்பாட்டைத் திறக்கவும்.</p>
-     </item>
-    <item><p><cmd>gsettings set org.gnome.desktop.interface can-change-accels true</cmd> கட்டளையை இயக்கவும்.</p>
-    </item>
-       <item>
-      <p>நீங்கள் விசைப்பலகை குறுக்குவழியை மாற்ற விரும்பும் பயன்பாட்டைத் துவக்கவும்.</p>
-    </item>
-  <item>
-      <p>நீங்கள் விசைப்பலகை குறுக்குவழியை மாற்ற விரும்பும் மெனு உருப்படியைக் கண்டுபிடிக்கவும்.</p>
-    </item>
-<item>
-      <p>நீங்கள் விசைப்பலகையில் அமைக்க விரும்பும் குறுக்குவழியைத் தட்டச்சு செய்யவும்.</p>
-    </item>
-  </steps>
-
-<note style="note style">
-  <p>இந்த அமைவு டெஸ்க்டாப் முழுவதுக்குமானது என்பது குறிப்பிடத்தக்கது. நீங்கள் <cmd>gsettings set org.gnome.desktop.interface can-change-accels false</cmd> கட்டளையின் மூலம் மாற்றங்களை செய்த பிறகு இதை முடக்க முடியும். நீங்கள் இதை செய்ய <app>dconf-editor</app> பயன்பாட்டையும் பயன்படுத்தலாம்.</p>
-</note>
-</section>
-
 <section id="custom">
 <title>தனிப்பயன் குறுக்குவழிகள்</title>
 
-<p>நீங்கள் விரும்பும்படியான விசைப்பலகை குறுக்குவழியை உருவாக்க:</p>
+  <p>To create your own application keyboard shortcut in the
+  <app>Keyboard</app> settings:</p>
 
   <steps>
     <item>
-      <p>இடது பலகத்தில் உள்ள <gui>தனிப்பயன் குறுக்குவழிகள்</gui> ஐத் தேர்ந்தெடுத்து, <gui style="button">+</gui> பொத்தானை சொடுக்கவும் (அல்லது ஏதேனும் ஒரு வகையில் <gui style="button">+</gui> பொத்தானை சொடுக்கவும்). <gui> தனிப்பயன் குறுக்குவழி</gui> சாளரம் தோன்றும்.</p>
+      <p>Click the <gui style="button">+</gui> button. The <gui>Custom
+      Shortcut</gui> window will appear.</p>
     </item>
     <item>
-      <p>குறுக்குவழியை அடையாளம் காண ஒரு <gui>பெயர்</gui> மற்றும் பயன்பாட்டை இயக்க ஒரு <gui>கட்டளை</gui> ஆகியவற்றை தட்டச்சு செய்து பிறகு <gui>பயன்படுத்து</gui> என்பதை சொடுக்கவும். உதாரணமாக, Rhythmbox ஐத் திறக்க உங்களுக்கு குறுக்குவழி வேண்டும் என்றால் நீங்கள் அதற்கு <input>Music</input> என்று பெயரும் <input>rhythmbox</input> என்ற கட்டளையையும் பயன்படுத்தலாம்.</p>
+      <p>Type a <gui>Name</gui> to identify the shortcut, and a
+      <gui>Command</gui> to run an application, then click <gui>Add</gui>.
+      For example, if you wanted the shortcut to open <app>Rhythmbox</app>, you
+      could name it <input>Music</input> and use the <input>rhythmbox</input>
+      command.</p>
     </item>
     <item>
       <p>இப்போது சேர்க்கப்பட்ட வரிசையில் <gui>முடக்கப்பட்டது</gui> ஐ சொடுக்கவும். அது <gui>புதிய குறுக்குவிசை…</gui> என மாறும் போது, நீங்கள் விரும்பும் குறுக்குவழி விசை சேர்க்கையை அழுத்திப் பிடிக்கவும்.</p>
     </item>
   </steps>
- <p>நீங்கள் தட்டச்சு செய்யும் கட்டளை பெயர் ஒரு செல்லுபடியான கணினி கட்டளையாக இருக்க வேண்டும். நீங்கள் ஒரு முனையத்தைத் திறந்து அங்கு அந்த கட்டளையை தட்டச்சு செய்து அது செயல்படுகிறதா எனப் பார்க்க முடியும். ஒரு பயன்பாட்டை திறக்கும் கட்டளை பயன்பாட்டின் பெயரையே கொண்டிருக்க முடியாது.</p>
 
- <p>நீங்கள் ஒரு தனிப்பயன் விசைப்பலகை குறுக்குவழியுடன் இணைந்த ஒரு கட்டளையை மாற்ற விரும்பினால், குறுக்குவழியின் <em>பெயரை</em> இரு சொடுக்கவும். <gui>தனிப்பயன் குறுக்குவழி</gui> சாளரம் திறக்கும், அதில் நீங்கள் கட்டளையைத் திருத்த முடியும்.</p>
+  <p>நீங்கள் தட்டச்சு செய்யும் கட்டளை பெயர் ஒரு செல்லுபடியான கணினி கட்டளையாக இருக்க வேண்டும். நீங்கள் ஒரு முனையத்தைத் திறந்து அங்கு அந்த கட்டளையை தட்டச்சு செய்து அது செயல்படுகிறதா எனப் பார்க்க முடியும். ஒரு பயன்பாட்டை திறக்கும் கட்டளை பயன்பாட்டின் பெயரையே கொண்டிருக்க முடியாது.</p>
+
+  <p>நீங்கள் ஒரு தனிப்பயன் விசைப்பலகை குறுக்குவழியுடன் இணைந்த ஒரு கட்டளையை மாற்ற விரும்பினால், குறுக்குவழியின் <em>பெயரை</em> இரு சொடுக்கவும். <gui>தனிப்பயன் குறுக்குவழி</gui> சாளரம் திறக்கும், அதில் நீங்கள் கட்டளையைத் திருத்த முடியும்.</p>
+
 </section>
 
 </page>

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" version="1.0 if/1.0" id="status-icons" xml:lang="sv">
+
   <info>
-    <link type="guide" xref="shell-overview#desktop"/>
+    <link type="guide" xref="shell-overview#apps"/>
 
     <revision version="0.1" date="2013-02-23" status="review"/>
 
@@ -13,27 +14,39 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Explains the meanings of the icons located on the right of the top bar.</desc>
+    <desc>Förklarar innebörden av ikonerna som finns i den högra delen av systemraden.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
   </info>
 
-  <title>What do the icons in the top bar mean?</title>
-<p>This section explains the meaning of icons located on the top right corner of the screen. More specifically, the different variations of the icons provided by the GNOME interface are described.</p>
+  <title>Vad betyder ikonerna i systemraden?</title>
+<p>Detta avsnitt förklarar innebörden av ikonerna som finns i det övre högra hörnet av skärmen. Mer specifikt, de olika varianterna av ikoner som erbjuds av GNOME:s gränssnitt förklaras.</p>
 
 <if:choose>
 <if:when test="!platform:gnome-classic">
 <media type="image" src="figures/top-bar-icons.png" style="floatend">
-  <p>GNOME Shell top bar</p>
+  <p>GNOME-skalets systemrad</p>
 </media>
 </if:when>
 <if:when test="platform:gnome-classic">
 <media type="image" src="figures/top-bar-icons-classic.png" width="395" height="70" style="floatend">
-  <p>GNOME Shell top bar</p>
+  <p>GNOME-skalets systemrad</p>
 </media>
 </if:when>
 </if:choose>
@@ -41,12 +54,12 @@
 <links type="section"/>
 
 <section id="universalicons">
-<title>Universal Access Menu Icons</title>
+<title>Ikoner för hjälpmedelsmenyn</title>
 
  <table shade="rows">
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/preferences-desktop-accessibility-symbolic.svg"/></td>
-      <td><p>Leads to a menu that turns on accessibility settings.</p></td>
+      <td><p>Leder till en meny som slår på hjälpmedelsinställningar.</p></td>
     </tr>
     
   </table>
@@ -54,255 +67,255 @@
 
 
 <section id="audioicons">
-<title>Volume Control Icons</title>
+<title>Volymkontrollikoner</title>
 
  <table shade="rows">
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/audio-volume-high-symbolic.svg"/></td>
-      <td><p>The volume is set to high.</p></td>
+      <td><p>Volymen är högt inställd.</p></td>
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/audio-volume-medium-symbolic.svg"/></td>
-      <td><p>The volume is set to medium.</p></td>
+      <td><p>Volymen är normalt inställd.</p></td>
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/audio-volume-low-symbolic.svg"/></td>
-      <td><p>The volume is set to low.</p></td>
+      <td><p>Volymen är lågt inställd.</p></td>
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/audio-volume-muted-symbolic.svg"/></td>
-      <td><p>The volume is muted.</p></td>
+      <td><p>Volymen är tyst.</p></td>
     </tr>
   </table>
 </section>
 
 
 <section id="bluetoothicons">
-<title>Bluetooth Manager Icons</title>
+<title>Bluetooth-hanterarikoner</title>
 
  <table shade="rows">
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/bluetooth-active-symbolic.svg"/></td>
-      <td><p>Bluetooth has been activated.</p></td>
+      <td><p>Bluetooth har aktiverats.</p></td>
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/bluetooth-disabled-symbolic.svg"/></td>
-      <td><p>Bluetooth has been disabled.</p></td>
+      <td><p>Bluetooth har inaktiverats.</p></td>
     </tr>
   </table>
 </section>
 
 <section id="networkicons">
-<title>Network Manager Icons</title>
+<title>Ikoner för nätverkshanteraren</title>
 <p/>
-<p><app>Cellular Connection</app></p>
+<p><app>Mobilanslutning</app></p>
  <table shade="rows">
 
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-3g-symbolic.svg"/></td>
-      <td><p>Connected to a 3G network.</p></td>
+      <td><p>Ansluten till ett 3G-nätverk.</p></td>
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-4g-symbolic.svg"/></td>
-      <td><p>Connected to a 4G network.</p></td>
+      <td><p>Ansluten till ett 4G-nätverk.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-edge-symbolic.svg"/></td>
-      <td><p>Connected to an EDGE network.</p></td>
+      <td><p>Ansluten till ett EDGE-nätverk.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-gprs-symbolic.svg"/></td>
-      <td><p>Connected to a GPRS network.</p></td>
+      <td><p>Ansluten till ett GPRS-nätverk.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-umts-symbolic.svg"/></td>
-      <td><p>Connected to a UMTS network.</p></td>
+      <td><p>Ansluten till ett UMTS-nätverk.</p></td>
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-connected-symbolic.svg"/></td>
-      <td><p>Connected to a cellular network.</p></td>
+      <td><p>Ansluten till ett cellulärt nätverk.</p></td>
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-acquiring-symbolic.svg"/></td>
-      <td><p>Acquiring a cellular network connection.</p></td>
+      <td><p>Erhåller en cellulär nätverksanslutning.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-excellent-symbolic.svg"/></td>
-      <td><p>Very high signal strength.</p></td>
+      <td><p>Väldigt hög signalstyrka.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-good-symbolic.svg"/></td>
-      <td><p>High signal strength.</p></td>
+      <td><p>Hög signalstyrka.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-ok-symbolic.svg"/></td>
-      <td><p>Medium signal strength.</p></td>
+      <td><p>Normal signalstyrka.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-weak-symbolic.svg"/></td>
-      <td><p>Low signal strength.</p></td>
+      <td><p>Låg signalstyrka.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-none-symbolic.svg"/></td>
-      <td><p>Extremely low signal strength.</p></td>
+      <td><p>Extremt låg signalstyrka.</p></td>
     </tr></table>
 
 
 
 
-<p><app>Local Area Network (LAN) Connection</app></p>
+<p><app>LAN-anslutning (Local Area Network)</app></p>
  <table shade="rows">
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-error-symbolic.svg"/></td>
-      <td><p>There has been an error in finding the network.</p></td>
+      <td><p>Det har blivit fel vid sökning efter nätverket.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-idle-symbolic.svg"/></td>
-      <td><p>The network is inactive.</p></td>
+      <td><p>Nätverket är inaktivt.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-no-route-symbolic.svg"/></td>
-      <td><p>There is no route found for the network.</p></td>
+      <td><p>Det finns ingen dirigering för detta nätverket.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-offline-symbolic.svg"/></td>
-      <td><p>The network is offline.</p></td>
+      <td><p>Nätverket är frånkopplat.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-receive-symbolic.svg"/></td>
-      <td><p>The network is receiving data.</p></td>
+      <td><p>Nätverket tar emot data.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-transmit-receive-symbolic.svg"/></td>
-      <td><p>The network is transmitting and receiving data.</p></td>
+      <td><p>Nätverket sänder och tar emot data.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-transmit-symbolic.svg"/></td>
-      <td><p>The network is transmitting data.</p></td>
+      <td><p>Nätverket sänder data.</p></td>
     </tr>
 </table>
 
 
 
-<p><app>Virtual Private Network (VPN) Connection</app></p>
+<p><app>VPN-anslutning (Virtual Private Network)</app></p>
  <table shade="rows">
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-vpn-acquiring-symbolic.svg"/></td>
-      <td><p>Acquiring a network connection.</p></td>
+      <td><p>Erhåller en nätverksanslutning.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-vpn-symbolic.svg"/></td>
-      <td><p>Connected to a VPN network.</p></td>
+      <td><p>Ansluten till ett trådlöst nätverk.</p></td>
     </tr>
 </table>
 
 
-<p><app>Wired Connection</app></p>
+<p><app>Trådbunden anslutning</app></p>
  <table shade="rows">
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wired-acquiring-symbolic.svg"/></td>
-      <td><p>Acquiring a network connection.</p></td>
+      <td><p>Erhåller en nätverksanslutning.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wired-disconnected-symbolic.svg"/></td>
-      <td><p>Disconnected from the network.</p></td>
+      <td><p>Ej ansluten till nätverket.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wired-symbolic.svg"/></td>
-      <td><p>Connected to a wired network.</p></td>
+      <td><p>Ansluten till ett trådbundet nätverk.</p></td>
     </tr>
 </table>
 
 
-<p><app>Wireless Connection</app></p>
+<p><app>Trådlös anslutning</app></p>
  <table shade="rows">
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-acquiring-symbolic.svg"/></td>
-      <td><p>Acquiring a wireless connection.</p></td>
+      <td><p>Erhåller en trådlös anslutning.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-encrypted-symbolic.svg"/></td>
-      <td><p>The wireless network is encrypted.</p></td>
+      <td><p>Det trådlösa nätverket är krypterat.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-connected-symbolic.svg"/></td>
-      <td><p>Connected to a wireless network.</p></td>
+      <td><p>Ansluten till ett trådlöst nätverk.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-excellent-symbolic.svg"/></td>
-      <td><p>Very high signal strength.</p></td>
+      <td><p>Väldigt hög signalstyrka.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-good-symbolic.svg"/></td>
-      <td><p>High signal strength.</p></td>
+      <td><p>Hög signalstyrka.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-ok-symbolic.svg"/></td>
-      <td><p>Medium signal strength.</p></td>
+      <td><p>Normal signalstyrka.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-weak-symbolic.svg"/></td>
-      <td><p>Low signal strength.</p></td>
+      <td><p>Låg signalstyrka.</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-none-symbolic.svg"/></td>
-      <td><p>Very low signal strength.</p></td>
+      <td><p>Väldigt låg signalstyrka.</p></td>
     </tr>
 
   </table>
 </section>
 
 <section id="batteryicons">
-<title>Power Manager Icons</title>
+<title>Strömhanteringsikoner</title>
 
  <table shade="rows">
    <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-full-symbolic.svg"/></td>
-      <td><p>The battery is full.</p></td>
+      <td><p>Batteriet är fullt.</p></td>
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-good-symbolic.svg"/></td>
-      <td><p>The battery is partially drained.</p></td>
+      <td><p>Batteriet är delvis urladdat.</p></td>
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-low-symbolic.svg"/></td>
-      <td><p>The battery is low.</p></td>
+      <td><p>Batteriet är lågt.</p></td>
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-caution-symbolic.svg"/></td>
-      <td><p>Caution: The battery is very low.</p></td>
+      <td><p>Varning: batteriet är väldigt lågt.</p></td>
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-empty-symbolic.svg"/></td>
-      <td><p>The battery is extremely low.</p></td>
+      <td><p>Batteriet är extremt lågt.</p></td>
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-missing-symbolic.svg"/></td>
-      <td><p>The battery has been unplugged.</p></td>
+      <td><p>Batteriet har blivit frånkopplat.</p></td>
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-full-charged-symbolic.svg"/></td>
-      <td><p>The battery is fully charged.</p></td>
+      <td><p>Batteriet är fulladdat.</p></td>
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-full-charging-symbolic.svg"/></td>
-      <td><p>The battery is full and charging.</p></td>
+      <td><p>Batteriet är fullt och laddat.</p></td>
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-good-charging-symbolic.svg"/></td>
-      <td><p>The battery is partially full and charging.</p></td>
+      <td><p>Batteriet är delvis fullt och laddar.</p></td>
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-low-charging-symbolic.svg"/></td>
-      <td><p>The battery is low and charging.</p></td>
+      <td><p>Batteriet är lågt och laddar.</p></td>
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-caution-charging-symbolic.svg"/></td>
-      <td><p>The battery is very low and charging.</p></td>
+      <td><p>Batteriet är väldigt lågt och laddar.</p></td>
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-empty-charging-symbolic.svg"/></td>
-      <td><p>The battery is empty and charging.</p></td>
+      <td><p>Batteriet är tomt och laddar.</p></td>
     </tr>
   </table>
 </section>

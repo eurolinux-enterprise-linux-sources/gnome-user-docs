@@ -5,30 +5,31 @@
     <link type="guide" xref="mouse"/>
     <link type="guide" xref="a11y#mobility" group="pointing"/>
 
-    <revision pkgversion="3.8.0" date="2013-03-16" status="outdated"/>
+    <revision pkgversion="3.8" date="2013-03-16" status="outdated"/>
     <revision pkgversion="3.10" date="2013-11-07" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
-      <email its:translate="no">philbull@gmail.com</email>
+      <email>philbull@gmail.com</email>
     </credit>
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
+      <years>2013, 2015</years>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
     
-    <desc>Enable mouse keys to control the mouse with the numeric
-    keypad.</desc>
+    <desc>Jak zapnout „myš z klávesnice“, abyste mohli ovládat ukazatel myši numerickou klávesnicí.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
@@ -39,64 +40,40 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Marek Černocký</mal:name>
       <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:years>2014, 2015</mal:years>
     </mal:credit>
   </info>
 
-  <title>Click and move mouse pointer using the keypad</title>
+  <title>Klikání a pohyb ukazatelem myši pomocí numerické klávesnice</title>
 
-  <p>If you have difficulties using a mouse or other pointing device, you can
-  control the mouse pointer using the numeric keypad on your keyboard. This
-  feature is called <em>mouse keys</em>.</p>
+  <p>Pokud je pro vás obtížné používat myš nebo jiné ukazovací zařízení, můžete ovládat ukazatel myši pomocí numerické části na klávesnici. Tato funkce se nazývá <em>myš z klávesnice</em>.</p>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-terminology">Activities</gui> overview and
-      start typing <gui>Universal Access</gui>.</p>
-      <p>You can access the <gui>Activities</gui> overview by pressing on it,
-      by moving your mouse pointer against the top-left corner of the screen,
-      using <keyseq><key>Ctrl</key><key>Alt</key><key>Tab</key></keyseq>
-      followed by <key>Enter</key> or using
-      <key xref="keyboard-key-super">Super</key>.</p>
+      <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Univerzální přístup</gui>.</p>
+      <p>Do přehledu <gui>Činností</gui> se můžete dostat kliknutím na <gui>Činnosti</gui>, najetí ukazatelem myši do levého horního rohu obrazovky, použitím kombinace <keyseq><key>Ctrl</key><key>Alt</key><key>Tab</key></keyseq> následované zmáčknutím <key>Enter</key> nebo použitím klávesy <key xref="keyboard-key-super">Super</key>.</p>
     </item>
     <item>
       <p>Kliknutím na <gui>Univerzální přístup</gui> otevřete příslušný panel.</p>
     </item>
     <item>
-      <p>Use the up and down arrow keys to select <gui>Mouse Keys</gui> in the
-      <gui>Pointing &amp; Clicking</gui> section then press <key>Enter</key>.</p>
+      <p>Použijte klávesy <key>↑</key> a <key>↓</key> k výběru <gui>Myš z klávesnice</gui> v části <gui>Ukazování a klikání</gui> a zmáčkněte <key>Enter</key>, aby se <gui>Myš z klávesnice</gui> přepnula na <gui>❙</gui> (zapnuto).</p>
     </item>
     <item>
-      <p>Make sure that <key>Num Lock</key> is turned off. You will now be able
-      to move the mouse pointer using the keypad.</p>
+      <p>Ujistěte se, že je vypnutý <key>Num Lock</key>. Od této chvíle máte možnost ovládat ukazatel myši pomocí klávesnice.</p>
     </item>
   </steps>
 
-  <p>The keypad is a set of numerical buttons on your keyboard, usually
-  arranged into a square grid. If you have a keyboard without a keypad (such as
-  a laptop keyboard), you may need to hold down the function (<key>Fn</key>)
-  key and use certain other keys on your keyboard as a keypad. If you use this
-  feature often on a laptop, you can purchase external USB or Bluetooth numeric
-  keypads.</p>
+  <p>Numerická (číselná) klávesnice je blok kláves s čísly vpravo na klávesnici. Pokud máte klávesnici bez numerické části (například u notebooku), je potřeba obvykle držet zmáčknutou funkční klávesu (<key>Fn</key>) a k tomu použít příslušné klávesy v jiné části klávesnice. V případě, že tuto funkci bude používat na takovéto klávesnici často, zvažte koupi externí numerické klávesnice připojené přes USB nebo Bluetooth.</p>
 
-  <p>Each number on the keypad corresponds to a direction. For example,
-  pressing <key>8</key> will move the pointer upwards and pressing
-  <key>2</key> will move it downwards. Press the <key>5</key> key to click once
-  with the mouse, or quickly press it twice to double-click.</p>
+  <p>Každé číslo na numerické klávesnici odpovídá jednomu směru. Například zmáčknutí <key>8</key> posune ukazatel nahoru a zmáčknutí <key>2</key> dolů. Zmáčknutí <key>5</key> způsobí kliknutí a dvě zmáčknutí krátce po sobě způsobí dvojité kliknutí.</p>
 
-  <p>Most keyboards have a special key which allows you to right-click,
-  sometimes called the <key xref="keyboard-key-menu">Menu</key> key. Note,
-  however, that this key responds to where your keyboard focus is, not where
-  your mouse pointer is. See <link xref="a11y-right-click"/> for information on
-  how to right-click by holding down <key>5</key> or the left mouse button.</p>
+  <p>Většina klávesnic má speciální klávesu, která umožňuje „kliknutí pravým tlačítkem“. Tato klávesa se někdy nazývá <key xref="keyboard-key-menu">Menu</key> nebo <key>Context menu</key>. Ale pozor, vztahuje se k zaměření z klávesnice a ne k ukazateli myši. Podívejte se také na <link xref="a11y-right-click"/>, jak se dá kliknutí pravým tlačítkem provést podržením klávesy <key>5</key> nebo levého tlačítka myši.</p>
 
-  <p>If you want to use the keypad to type numbers while mouse keys is enabled,
-  turn <key>Num Lock</key> on. The mouse cannot be controlled with the keypad
-  when <key>Num Lock</key> is turned on, though.</p>
+  <p>Když chcete použít numerickou klávesnici k zadávání čísel při současně zapnuté myši z klávesnice, zapněte <key>Num Lock</key>. Po dobu, co je <key>Num Lock</key> zapnutý, píše numerická klávesnice čísla a nelze ji použít k ovládání ukazatele.</p>
 
   <note>
-    <p>The normal number keys, in a line at the top of the keyboard, will not
-    control the mouse pointer. Only the keypad number keys can be used.</p>
+    <p>Klávesy s čísly v horní části alfanumerické klávesnice k ovládání ukazatele myši neslouží a nadále píší čísla. K ovládání lze použít jen čísla na numerické klávesnici.</p>
   </note>
 
 </page>

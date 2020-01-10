@@ -8,13 +8,13 @@
     <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
 
     <credit type="author">
-      <name>GNOME Documentation Project</name>
+      <name>Dokumentační projekt GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Troubleshoot media card readers</desc>
+    <desc>Jak řešit problémy s čtečkami paměťových karet.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
@@ -25,55 +25,32 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Marek Černocký</mal:name>
       <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:years>2014, 2015</mal:years>
     </mal:credit>
   </info>
 
-<title>Media card reader problems</title>
+<title>Problémy s čtečkami paměťových karet</title>
 
-<p>Many computers contain readers for SD, MMC, SM, MS, CF, and other storage media
-cards. These should be automatically detected and <link xref="disk-partitions">mounted</link>. Here are some
-troubleshooting steps if they are not:</p>
+<p>Řada počítačů obsahuje čtečku karet SD, MMC, SM, MS, CF a jiných. Měla by být nalezena automaticky a karta po vložení <link xref="disk-partitions">připojena</link>. Zde jsou některé kroky, které lze zkusit, když se tak nestane:</p>
 
 <steps>
 <item>
-<p> Make sure that the card is put in correctly. Many cards look as though they are
-upside down when correctly inserted. Also make sure that the card is firmly seated
-in the slot; some cards, especially CF, require a small amount of force to insert
-correctly. (Be careful not to push too hard! If you come up against something solid,
-do not force it.)</p>
+<p>Ujistěte se, že je karta zasunutá správně. Některé karty vypadají, že jsou vzhůru nohama, když jsou vložené správně. Také se ujistěte, že je karta do otvoru zasunutá pořádně. Některé karty, zejména CF, vyžadují vyvinout jistou sílu, aby se zasunuly nadoraz. (Na druhou stranu to se sílou nepřehánějte! Když narazíte na překážku, nepoužívejte násilí.)</p>
 </item>
 
 <item>
-  <p>Open <app>Files</app> from the
-  <gui xref="shell-terminology">Activities</gui> overview. Does the inserted
-  card appear in the <gui>Devices</gui> list in the left sidebar? Sometimes the
-  card appears in this list but is not mounted; click it once to mount. (If the
-  sidebar is not visible, press <key>F9</key> or click the
-  <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">View options</span></media></gui>
-  button in the toolbar and choose <gui>Show Sidebar</gui>.)</p>
+  <p>Z přehledu <gui xref="shell-introduction#activities">Činnosti</gui> otevřete <app>Soubory</app>. Objevila se vložená karta v seznamu <gui>Zařízení</gui> v levé postranní liště? Někdy se karta objeví v seznamu, ale nepřípojí se – připojte ji kliknutím. (V případě, že postranní lišta není vidět, zmáčkněte <key>F9</key> nebo klikněte na <gui style="menu">Soubory</gui> na horní liště a zvolte <gui>Postranní panel</gui>.)</p>
 </item>
 
 <item>
-  <p>If your card does not show up in the sidebar, press
-  <keyseq><key>Ctrl</key><key>L</key></keyseq>, then type
-  <input>computer:///</input> and press <key>Enter</key>. If your card reader
-  is correctly configured, the reader should come up as a drive when no card is
-  present, and the card itself when the card has been mounted.</p>
+  <p>Pokud se karta nezobrazí v postranním panelu, zmáčkněte <keyseq><key>Ctrl</key> <key>L</key></keyseq> a pak napište <input>computer:///</input> a zmáčkněte <key>Enter</key>. Jestli je vaše čtečka karet správně nastavená, měla by se objevit jako mechanika bez vložené karty a karta samotná, až bude připojená.</p>
 </item>
 
 <item>
-<p>If you see the card reader but not the card, the problem may be with the card itself.
-Try a different card or check the card on a different reader if possible.</p>
+<p>Pokud vidíte čtečku karet, ale kartu ne, může být problém v kartě samotné. Jestli je to možné, zkuste použít jinou kartu nebo zkontrolujte kartu v jiné čtečce.</p>
 </item>
 </steps>
 
-<p>If no cards or drives are shown when browsing the <gui>Computer</gui>
-location, it is possible that your card reader does not work with Linux due to
-driver issues. If your card reader is internal (inside the computer instead of
-sitting outside) this is more likely. The best solution is to directly connect
-your device (camera, cell phone, etc.) to a USB port on the computer. USB
-external card readers are also available, and are far better supported by
-Linux.</p>
+<p>Pokud se při procházení umístění <gui>Počítač</gui> neobjeví žádná karta ani čtečka, je možné, že vaše čtečka karet nefunguje v Linuxu kvůli problému s ovladačem. Jestliže je čtečka karet interní (zabudovaná v počítači, neleží zvlášť), je to víc pravděpodobné. Nejlepším řešením je přípojit přímo zařízení s paměťovou kartou (fotoaparát, mobilní telefon) do portu USB na počítači. Nebo jsou k dispozici externí čtečky karet do USB, které jsou v Linuxu podporovány lépe.</p>
 
 </page>

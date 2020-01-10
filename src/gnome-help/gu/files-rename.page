@@ -2,10 +2,11 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-rename" xml:lang="gu">
 
   <info>
-    <link type="guide" xref="files"/>
+    <link type="guide" xref="files#common-file-tasks"/>
 
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>GNOME દસ્તાવેજીકરણ પ્રોજેક્ટ</name>
@@ -23,6 +24,10 @@
       <name>માઇકલ હીલ</name>
       <email>mdhillca@gmail.com</email>
     </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
@@ -37,14 +42,15 @@
   <steps>
     <title>ફાઇલ અથવા ફોલ્ડરનું નામ બદલવા માટે:</title>
     <item><p>વસ્તુ પર જમણી ક્લિક કરો અને <gui>નામ બદલો</gui> ને પસંદ કરો, અથવા ફાઇલને પસંદ કરો અને <key>F2</key> ને દબાવો.</p></item>
-    <item><p>નવાં નામને લખો અને <key>Enter</key> દબાવો.</p></item>
+    <item><p>Type the new name and press <key>Enter</key> or click
+    <gui>Rename</gui>.</p></item>
   </steps>
 
   <p><link xref="nautilus-file-properties-basic">ગુણધર્મ</link> વિન્ડોમાંથી તમે ફાઇલનું નામ બદલી શકો છો.</p>
 
   <p>When you rename a file, only the first part of the name of the file is
-  selected, not the file extension (the part after the <file>.</file>). The
-  extension normally denotes what type of file it is (for example,
+  selected, not the file extension (the part after the last <file>.</file>).
+  The extension normally denotes what type of file it is (for example,
   <file>file.pdf</file> is a PDF document), and you usually do not want to
   change that. If you need to change the extension as well, select the entire
   file name and change it.</p>
@@ -52,7 +58,7 @@
   <note style="tip">
     <p>If you renamed the wrong file, or named your file improperly, you can
     undo the rename. To revert the action, immediately click the menu button in
-    the toolbar and select <gui>Undo</gui>, or press
+    the toolbar and select <gui>Undo Rename</gui>, or press
     <keyseq><key>Ctrl</key><key>Z</key></keyseq>, to restore the former
     name.</p>
   </note>

@@ -7,6 +7,7 @@
     <desc>ফাইলসমূহ খোলিবলৈ, লিখনী ফাইলসমূহ চলাবলৈ অথবা দৰ্শন কৰিবলৈ, আৰু আবৰ্জনাৰ ব্যৱহাৰ ধাৰ্য্য কৰিবলৈ এবাৰ-ক্লিক কৰক।</desc>
 
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>টিফানি এন্টপলস্কি</name>
@@ -23,6 +24,10 @@
     <credit type="editor">
       <name>চিন্ধু এচ</name>
       <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
     </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
@@ -66,7 +71,7 @@
 
  <p>যদি <gui>প্ৰতিবাৰ সোধক</gui>  নিৰ্বাচন কৰা থাকে, এটা ডাইলগ পপ আপ হব যি আপুনি নিৰ্বাচিত লিখনী ফাইল চলাব খোজে নে দৰ্শন কৰিব খোজে সোধিব।</p>
 
- <p>Executable text files are also called scripts. All scripts in
+ <p>Executable text files are also called <em>scripts</em>. All scripts in the
  <file>~/.local/share/nautilus/scripts</file> folder will appear in the context
  menu for a file under the <gui style="menuitem">Scripts</gui> submenu. When a
  script is executed from a local folder, all selected files will be pasted to
@@ -89,6 +94,7 @@
  </note>
 
 </section>
+
 <section id="trash">
 <info>
 <link type="seealso" xref="files-delete"/>
@@ -98,15 +104,8 @@
 
 <terms>
  <item>
-  <title><gui>আবৰ্জনা খালি কৰাৰ আগত অথবা ফাইলসমূহ মচাৰ আগত সোধক</gui></title>
+  <title><gui>Ask before emptying the Trash</gui></title>
   <p>এই বিকল্প অবিকল্পিতভাৱে নিৰ্বাচিত থাকে। আবৰ্জনা ৰিক্ত কৰোতে, এটা বাৰ্তা প্ৰদৰ্শন কৰা হব যি আপোনাক আবৰ্জনা ৰিক্ত কৰিব খোজে নে ফাইলসমূহ মচিব খোজে সোধিব।</p>
- </item>
- <item>
-  <title><gui>আবৰ্জনা বাইপাচ কৰা এটা মচাৰ কমান্ড অন্তৰ্ভুক্ত কৰক</gui></title>
-  <p>এই বিকল্প নিৰ্বাচন কৰিলে মেনুলৈ এটা <gui>মচক</gui> বস্তু যোগ হব যি পপ আপ হয় যেতিয়া আপুনি <app>ফাইলসমূহ</app> এপ্লিকেচনত এটা বস্তুত ৰাইট-ক্লিক কৰে।</p>
-<note style="warning">
-<p>এটা বস্তুক <gui>মচক</gui> মেনু বিকল্প ব্যৱহাৰ কৰি মচিলে ই সম্পূৰ্ণভাৱে আবৰ্জনাক বাইপাছ কৰে। বস্তুটো চিস্টেমৰ পৰা সম্পূৰ্ণভাৱে আতৰোৱা হয়। মচি পেলোৱা বস্তু পুনৰউদ্ধাৰ কৰাৰ কোনো উপায় নাই।</p>
-</note>
  </item>
 </terms>
 </section>

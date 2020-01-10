@@ -5,84 +5,74 @@
     <link type="guide" xref="net-browser"/>
 
     <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
-      <email its:translate="no">philbull@gmail.com</email>
+      <email>philbull@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>You may need to install Flash to be able to view websites like
-    YouTube, which display videos and interactive web pages.</desc>
+    <desc>Du kan behöva installera Flash för att kunna titta på webbplatser som YouTube, som visar videor och interaktiva webbsidor.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
   </info>
 
-  <title>Installera Flash-tillägget</title>
+  <title>Installera insticksmodulen Flash</title>
 
-  <p><app>Flash</app> is a <em>plug-in</em> for your web browser that allows
-  you to watch videos and use interactive web pages on some websites. Some
-  websites won't work without Flash.</p>
+  <p><app>Flash</app> är en <em>insticksmodul</em> för din webbläsare som låter dig titta på videor och använda interaktiva webbsidor på vissa webbplatser. En del webbplatser fungerar inte utan Flash.</p>
 
-  <p>If you do not have Flash installed, you will probably see a message
-  telling you so when you visit a website that needs it. Flash is available as
-  a free (but not open-source) download for most web browsers. Most Linux
-  distributions have a version of Flash that you can install through their
-  software installer (package manager) too.</p>
+  <p>Om du inte har Flash installerat kommer du troligtvis att se ett meddelande som berättar det för dig när du besöker en webbplats som behöver det. Flash finns tillgängligt som gratis (men inte som öppen källkod) hämtning för de flesta webbläsare. De flesta Linux-distributioner har också en version av Flash som du kan installera via deras programvaruinstallerare (pakethanterare).</p>
 
   <steps>
     <title>Om Flash finns tillgängligt från programinstallationen:</title>
     <item>
-      <p>Öppna programinstallationsprogrammet och sök efter <input>flash</input>.</p>
+      <p>Öppna programinstalleraren och sök efter <input>flash</input>.</p>
     </item>
     <item>
       <p>Leta efter <gui>Adobe Flash plug-in</gui>, <gui>Adobe Flash Player</gui> eller liknande och klicka för att installera det.</p>
     </item>
     <item>
-      <p>If you have any web browser windows open, close them and then re-open
-      them. The web browser should realize that Flash is installed when you
-      open it again and you should now be able to view websites using
-      Flash.</p>
+      <p>Om du har några webbläsarfönster öppna, stäng dem och öppna dem på nytt. Webbläsaren bör inse att Flash är installerat när du öppnar den igen och du bör nu kunna se webbplatser som använder Flash.</p>
     </item>
   </steps>
 
   <steps>
     <title>Om Flash <em>inte finns</em> tillgängligt från programinstallationen:</title>
     <item>
-      <p>Go to the <link href="http://get.adobe.com/flashplayer">Flash Player
-      download website</link>. Your browser and operating system should be
-      automatically detected.</p>
+      <p>Gå till <link href="http://get.adobe.com/flashplayer">webbplatsen för hämtning av Flash Player</link>. Din webbläsare och operativsystem bör detekteras automatiskt.</p>
     </item>
     <item>
-      <p>Click where it says <gui>Select version to download</gui> and choose
-      the type of software installer that works for your Linux distribution. If
-      you don't know which to use, choose the <file>.tar.gz</file> option.</p>
+      <p>Klicka där det står <gui>Välj version att hämta</gui> och välj typen av programvaruinstallerare som fungerar för din Linux-distribution. Om du inte vet vilken du ska använda, välj alternativet <file>.tar.gz</file>.</p>
     </item>
     <item>
-      <p>Look at the
-      <link href="http://kb2.adobe.com/cps/153/tn_15380.html">installation
-      instructions for Flash</link> to learn how to install it for your web
-      browser.</p>
+      <p>Titta på <link href="http://kb2.adobe.com/cps/153/tn_15380.html">installationsinstruktionerna för Flash</link> för att lära dig hur du installerar det för din webbläsare.</p>
     </item>
   </steps>
 
 <section id="alternatives">
   <title>Alternativ till Flash med öppen källkod</title>
 
-  <p>A handful of free, open-source alternatives to Flash are available. These
-  tend to work better than the Flash plug-in in some ways (for example, by
-  handling sound playback better), but worse in others (for example, by not
-  being able to display some of the more complicated Flash pages on the
-  web).</p>
+  <p>En handfull fria alternativ med öppen källkod till Flash finns tillgängliga. Dessa tenderar till att fungera bättre än Flash-insticksmodulen på vissa sätt (till exempel genom att hantera ljuduppspelning bättre), men sämre på andra (till exempel genom att inte kunna visa vissa av de mer komplicerade Flash-sidorna på nätet).</p>
 
-  <p>You might like to try one of these if you are dissatisfied with the Flash
-  player, or if you would like to use as much open-source software as possible
-  on your computer. Here are a few of the options:</p>
+  <p>Du kanske vill prova någon av dessa om du inte är nöjd med Flash-spelaren, eller om du vill använda så mycket öppna program som möjligt på din dator. Här är ett par alternativ:</p>
 
   <list style="compact">
     <item>

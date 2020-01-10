@@ -3,27 +3,27 @@
 
   <info>
     <link type="guide" xref="user-accounts#manage" group="#first"/>
-    <!--<link type="seealso" xref="user-addguest"/>-->
 
-    <revision pkgversion="3.8.0" version="0.3" date="2013-03-09" status="candidate"/>
+    <revision pkgversion="3.8" date="2013-03-09" status="candidate"/>
     <revision pkgversion="3.10" date="2013-11-01" status="review"/>
     <revision pkgversion="3.13.92" date="2013-11-01" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Projeto de documentação do GNOME</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -37,12 +37,6 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Ferreira</mal:name>
-      <mal:email>rafael.f.f1@gmail.com</mal:email>
-      <mal:years>2012, 2013, 2014.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Enrico Nicoletto</mal:name>
       <mal:email>liverig@gmail.com</mal:email>
       <mal:years>2013.</mal:years>
@@ -52,6 +46,12 @@
       <mal:name>João Santana</mal:name>
       <mal:email>joaosantana@outlook.com</mal:email>
       <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
     </mal:credit>
   </info>
 
@@ -63,7 +63,8 @@
 
   <steps>
     <item>
-      <p>Abra o panorama de <gui xref="shell-terminology">Atividades</gui> e comece a digitar <gui>Usuários</gui>.</p>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Users</gui>.</p>
     </item>
     <item>
       <p>Clique em <gui>Usuários</gui> para abrir o painel.</p>
@@ -75,24 +76,31 @@
       <p>Na lista de contas à esquerda, clique no botão <gui style="button">+</gui> para adicionar uma nova conta de usuário.</p>
     </item>
     <item>
-      <p>Se você quiser que o novo usuário tenha <link xref="user-admin-explain">acesso administrativo</link> ao computador, selecione <gui>Administrador</gui> para o tipo de conta. Administradores podem fazer coisas como adicionar e excluir usuários, instalar softwares e drivers, alterar data e hora, etc.</p>
+      <p>If you want the new user to have
+      <link xref="user-admin-explain">administrative access</link> to the
+      computer, select <gui>Administrator</gui> for the account type.</p>
+      <p>Administrators can do things like add and delete users, install software
+      and drivers, and change the date and time.</p>
     </item>
     <item>
       <p>Informe o nome completo do novo usuário. O nome de usuário será preenchido automaticamente com base no nome completo. Se você não gostar do proposto como nome de usuário, você pode alterá-lo.</p>
     </item>
     <item>
       <p>You can choose to set a password for the new user, or let them set it
-      themselves on their first login. You can press on the
-      <gui style="button"><media its:translate="no" type="image" src="figures/system-run-symbolic.svg" width="16" height="16"><span its:translate="yes">generate
-      password</span></media></gui> icon to automatically generate a random
-      password.</p>
+      themselves on their first login.</p>
+      <p>If you choose to set the password now,
+      you can press the <gui style="button"><media its:translate="no" type="image" src="figures/system-run-symbolic.svg" width="16" height="16">
+      <span its:translate="yes">generate password</span></media></gui> icon to
+      automatically generate a random password.</p>
     </item>
     <item>
       <p>Clique em <gui>Adicionar</gui>.</p>
     </item>
   </steps>
 
-  <p>Se você deseja alterar a senha após criar a conta, selecioen a conta, deslize para <gui style="button">Desbloquear</gui> o painel e pressione o atual status da senha atual.</p>
+  <p>If you want to change the password after creating the account, select the
+  account, <gui style="button">Unlock</gui> the panel and press the current
+  password status.</p>
 
   <note>
     <p>No pinel de <gui>Usuários</gui>, você pode clicar na imagem à direita do nome do usuário para definir uma imagem para a conta. Ela será mostrada na janela de início de sessão. O GNOME fornece algumas imagens predefinidas que você pode usar ou você pode selecionar uma foto sua ou tirar uma com sua webcam.</p>

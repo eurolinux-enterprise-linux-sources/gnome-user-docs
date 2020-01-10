@@ -26,7 +26,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011, 2012</mal:years>
+      <mal:years>2011-2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -39,6 +39,12 @@
       <mal:name>Юлия Дронова</mal:name>
       <mal:email>juliette.tux@gmail.com</mal:email>
       <mal:years>2013-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
     </mal:credit>
   </info>
 
@@ -59,22 +65,28 @@
 <list>
   <item>
     <p if:test="!platform:gnome-classic">In the
-    <gui xref="shell-terminology">&gt;Activities</gui> overview, move your cursor
+    <gui xref="shell-introduction#activities">Activities</gui> overview, move your cursor
     to the right-most side of the screen.</p>
-    <p if:test="platform:gnome-classic">Нажмите клавишу <key xref="keyboard-key-super">Super</key> чтобы открыть окно <gui>Обзора</gui> и затем переместите курсор на крайнюю правую часть экрана.</p>
+    <p if:test="platform:gnome-classic">Нажмите клавишу <key xref="keyboard-key-super">Super</key>, чтобы открыть <gui>Обзор</gui> и затем переместите курсор на крайнюю правую часть экрана.</p>
   </item>
   <item>
-    <p if:test="!platform:gnome-classic">Появится вертикальная панель, содержащая используемые рабочие места и одно пустое рабочее место. Это <link xref="shell-terminology">переключатель рабочих мест</link>.</p>
-    <p if:test="platform:gnome-classic">Появится вертикальная панель, показывающая доступные рабочие места. Это <link xref="shell-terminology">переключатель рабочих мест</link>.</p>
+    <p if:test="!platform:gnome-classic">A vertical panel will appear showing
+    workspaces in use, plus an empty workspace. This is the
+    workspace selector.</p>
+    <p if:test="platform:gnome-classic">A vertical panel will appear showing
+    available workspaces. This is the workspace selector.</p>
   </item>
   <item if:test="!platform:gnome-classic">
-    <p>Чтобы добавить рабочее место, перетащите окно из существующего рабочего места на пустое рабочее место в <link xref="shell-terminology">переключателе рабочих мест</link>. На этом рабочем месте теперь появится окно, а под этим рабочим местом будет создан новое пустое рабочее место.</p>
+    <p>To add a workspace, drag and drop a window from an existing workspace
+    onto the empty workspace in the workspace selector. This workspace now
+    contains the window you have dropped,
+    and a new empty workspace will appear below it.</p>
   </item>
   <item if:test="!platform:gnome-classic">
-    <p>Чтобы удалить рабочее место, просто закройте все открытые здесь окна, или переместите их на другие рабочие места.</p>
+    <p>Чтобы удалить рабочее место, просто закройте все открытые на нём окна или переместите их на другие рабочие места.</p>
   </item>
 </list>
 
-<p if:test="!platform:gnome-classic">Всегда существует хотя бы одно рабочее место.</p>
+<p if:test="!platform:gnome-classic">Всегда существует по крайней мере одно рабочее место.</p>
 
 </page>

@@ -7,6 +7,7 @@
     <desc>Atvērt datnes ar vienu klikšķi, norādīt, ko darīt ar izpildāmām teksta datnēm un iestatīt miskastes uzvedību.</desc>
 
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -23,6 +24,10 @@
     <credit type="editor">
       <name>Sindhu S</name>
       <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
     </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
@@ -61,7 +66,11 @@
 
  <p>Ja izvēlēsities <gui>Vaicāt katru reizi</gui>, parādīsies dialoglodziņš, kas vaicās, vai vēlaties izpildīt vai skatīt izvēlēto teksta datni.</p>
 
- <p>Izpildāmas teksta datnes mēdz saukt arī par skriptiem. Visi skripti mapē <file>~/.local/share/nautilus/scripts</file> parādīsies konteksta izvēlnē, zem apakšizvēlnes <gui style="menuitem">Skripti</gui>. Kas skripts tiek izpildīts, no lokālās mapes, visas datnes tiks ielīmētas skriptos kā parametri. Lai izpildītu skriptu uz datnes:</p>
+ <p>Executable text files are also called <em>scripts</em>. All scripts in the
+ <file>~/.local/share/nautilus/scripts</file> folder will appear in the context
+ menu for a file under the <gui style="menuitem">Scripts</gui> submenu. When a
+ script is executed from a local folder, all selected files will be pasted to
+ the script as parameters. To execute a script on a file:</p>
 
 <steps>
   <item>
@@ -80,6 +89,7 @@
  </note>
 
 </section>
+
 <section id="trash">
 <info>
 <link type="seealso" xref="files-delete"/>
@@ -89,15 +99,8 @@
 
 <terms>
  <item>
-  <title><gui>Jautāt, pirms iztukšot miskasti vai dzēst datnes</gui></title>
+  <title><gui>Ask before emptying the Trash</gui></title>
   <p>Šī iespēja pēc noklusējuma ir ieslēgta. Iztukšojot miskasti, sistēmas ziņojums prasīs apstiprinājumu, ka tiešām vēlaties iztukšot miskasti vai dzēst datnes.</p>
- </item>
- <item>
-  <title><gui>Iekļaut dzēšanas komandu, kas apiet miskasti</gui></title>
-  <p>Šīs iespējas atzīmēšana pievienos ierakstu <gui>Dzēst</gui> vienumam, kas parādās, veicot labo klikšķi uz datnes vai mapes lietotnē <app>Datnes</app>.</p>
-<note style="warning">
-<p>Vienuma dzēšana ar izvēlnes komandu <gui>Dzēst</gui> apiet miskasti, nekavējoties likvidējot dzēšamo vienumu. Šādi izdzēstu vienumu vairs nevar atgūt.</p>
-</note>
  </item>
 </terms>
 </section>

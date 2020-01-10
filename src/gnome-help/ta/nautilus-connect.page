@@ -2,14 +2,13 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-connect" xml:lang="ta">
 
   <info>
-    <link type="guide" xref="files" group="more"/>
+    <link type="guide" xref="files#more-file-tasks"/>
     <link type="guide" xref="sharing"/>
 
     <revision pkgversion="3.6.0" date="2012-10-06" status="review"/>
     <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
     <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
-
-    <desc>FTP, SSH, Windows பகிர்வுகள் அல்லது WebDAV மூலம் கோப்புகளை வேறொரு கணினியில் காணுதல், திருத்துதல்.</desc>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>ஷான் மெக்கேன்ஸ்</name>
@@ -19,7 +18,15 @@
       <name>மைக்கேல் ஹில்</name>
       <email>mdhillca@gmail.com</email>
     </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>FTP, SSH, Windows பகிர்வுகள் அல்லது WebDAV மூலம் கோப்புகளை வேறொரு கணினியில் காணுதல், திருத்துதல்.</desc>
+
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Shantha kumar,</mal:name>
@@ -32,19 +39,33 @@
 
 <p>நீங்கள் ஒரு சேவையகத்தில் உள்ள கோப்புகளை, அச்சேவையகத்துடன் இணைப்பை ஏற்படுத்தி உங்கள் கணினியில் உள்ளவற்றைப் போலவே உலவ மற்றும் பார்வையிட முடியும். இது இணையத்தில் கோப்புகளை பதிவிறக்க அல்லது பதிவேற்ற அல்லது உங்கள் அக பிணையத்தில் உள்ள மற்றவர்களிடம் கோப்புகளைப் பகிர ஏதுவான வழியாகும்.</p>
 
-<p>ஒரு பிணையத்தில் உள்ள கோப்புகளை உலவ <gui>செயல்பாடுகள்</gui> மேலோட்டத்தில் இருந்து <app>கோப்புகள்</app> பயன்பாட்டைத் திறந்து, பக்கப்பட்டியில் உள்ள <gui>பிணையத்தை உலவு</gui> ஐ சொடுக்கவும். உங்கள் அக பிணையத்தில் கோப்புகளை சேவை செய்யமுடியும் என விளம்பரப்படுத்திக்கொள்ளும் கணினி ஏதேனும் இருந்தால் அவற்றை கோப்பு மேலாளர் கண்டுபிடிக்கும். நீங்கள் இணையத்தில் உள்ள ஒரு சேவையகத்துடன் இணைக்க விரும்பினால், அல்லது நீங்கள் தேடும் கணினியைப் பார்க்க முடியாவிட்டால், ஒரு சேவையகத்தின் இணைய/பிணைய முகவரியை கைமுறையாக உள்ளிடுவதன் மூலம் அதனுடன் இணைக்க முடியும்.</p>
+<p>To browse files over the network, open the <app>Files</app>
+application from the <gui>Activities</gui> overview, and click
+<gui>Other Locations</gui> in the sidebar. The file manager
+will find any computers on your local area network that advertize
+their ability to serve files. If you want to connect to a server
+on the internet, or if you do not see the computer you're looking
+for, you can manually connect to a server by typing in its
+internet/network address.</p>
 
 <steps>
   <title>ஒரு கோப்பு சேவையகத்துடன் இணைத்தல்</title>
-  <item><p>In the file manager, click <gui>Connect to Server</gui> in the
+  <item><p>In the file manager, click <gui>Other Locations</gui> in the
    sidebar.</p>
   </item>
-  <item><p><link xref="#urls">URL</link> என்ற வடிவத்தில் சேவையக முகவரியை உள்ளிடவும். ஆதரிக்கப்படும் URLகள் பற்றிய விவரங்கள் <link xref="#types">கீழே உள்ளன</link>.</p>
+  <item><p>In <gui>Connect to Server</gui>, enter the address of the server, in
+  the form of a
+   <link xref="#urls">URL</link>. Details on supported URLs are
+   <link xref="#types">listed below</link>.</p>
   <note>
     <p>நீங்கள் முன்பே சேவையகத்தை இணைத்திருந்தால், <gui>சமீபத்திய சேவையகங்கள்</gui> பட்டியலில் அதை சொடுக்கலாம்.</p>
   </note>
   </item>
-  <item><p><gui>இணைக்கவும்</gui> ஐ சொடுக்கவும். ஒரு புதிய சாளரம் திறக்கும், அதில் சேவையகத்தில் உள்ள கோப்புகள் காட்டப்படும். நீங்கள் உங்கள் கணினியில் உள்ள கோப்புகளை உலவுவது போலவே அக்கோப்புகளை உலவ முடியும். நீங்கள் எதிர்காலத்தில் விரைவில் அணுக முடியும் வகையில் அந்த சேவையகம் பக்கப்பட்டியில் சேர்க்கப்படும்</p>
+  <item>
+    <p>Click <gui>Connect</gui>. The files on the server will be shown. You
+    can browse the files just as you would for those on your own computer. The
+    server will also be added to the sidebar so you can access it quickly in
+    the future.</p>
   </item>
 </steps>
 
@@ -111,9 +132,20 @@
 <item>
   <title>WebDAV மற்றும் Secure WebDAV</title>
   <p>இணையத்தில் பயன்படுத்தப்படும் HTTP நெறிமுறையின் அடிப்படையில் அமைந்ததான, WebDAV முறை சில நேரங்களில் ஒரு அக பிணையத்தில் கோப்புகளைப் பகிர்ந்து கொள்ளவும் இணையத்தில் கோப்புகளைச் சேமிக்கவும் பயன்படுத்தப்படுகிறது. நீங்கள் இணைக்கும் சேவையகம் பாதுகாப்பான இணைப்புகளை ஆதரிக்கும் என்றால், நீங்கள் இந்த விருப்பத்தை தேர்வு செய்ய வேண்டும். மற்ற பயனர்கள் உங்கள் கடவுச்சொல்லைப் பார்க்க முடியாதபடி Secure WebDAV வலுவான SSL குறியாக்கத்தைப் பயன்படுத்துகிறது.</p>
-  <p>ஒரு வழக்கமான WebDAV URL இப்படி இருக்கும்:</p>
+  <p>A WebDAV URL looks like this:</p>
   <example>
-    <p><sys>http://example.hostname.com/path</sys></p>
+    <p><sys>dav://example.hostname.com/path</sys></p>
+  </example>
+</item>
+<item>
+  <title>NFS share</title>
+  <p>UNIX computers traditionally use the Network File System protocol to
+  share files over a local network. With NFS, security is based on the UID of
+  the user accessing the share, so no authentication credentials are
+  needed when connecting.</p>
+  <p>A typical NFS share URL looks like this:</p>
+  <example>
+    <p><sys>nfs://servername/path</sys></p>
   </example>
 </item>
 </terms>

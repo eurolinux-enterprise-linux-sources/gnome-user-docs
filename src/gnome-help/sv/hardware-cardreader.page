@@ -14,60 +14,49 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Troubleshoot media card readers</desc>
+    <desc>Felsök mediakortsläsare</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
   </info>
 
 <title>Problem med mediakortsläsare</title>
 
-<p>Many computers contain readers for SD, MMC, SM, MS, CF, and other storage media
-cards. These should be automatically detected and <link xref="disk-partitions">mounted</link>. Here are some
-troubleshooting steps if they are not:</p>
+<p>Många datorer innehåller läsare för SD, MMC, SM, MS, CF och andra kort med lagringsmedia. Dessa bör automatiskt detekteras och <link xref="disk-partitions">monteras</link>. Här finns några felsökningssteg om detta inte lyckas:</p>
 
 <steps>
 <item>
-<p> Make sure that the card is put in correctly. Many cards look as though they are
-upside down when correctly inserted. Also make sure that the card is firmly seated
-in the slot; some cards, especially CF, require a small amount of force to insert
-correctly. (Be careful not to push too hard! If you come up against something solid,
-do not force it.)</p>
+<p>Säkerställ att kortet matats in korrekt. Många kort ser ut som om de sitter i upp och ner när de är korrekt isatta. Försäkra också att kortet är ordentligt isatt i kortplatsen; vissa kort, speciellt CF, kräver en liten knuff för att sättas i korrekt. (Var aktsam så du inte trycker för hårt! Om du stöter i något hårt, pressa inte.)</p>
 </item>
 
 <item>
-  <p>Open <app>Files</app> from the
-  <gui xref="shell-terminology">Activities</gui> overview. Does the inserted
-  card appear in the <gui>Devices</gui> list in the left sidebar? Sometimes the
-  card appears in this list but is not mounted; click it once to mount. (If the
-  sidebar is not visible, press <key>F9</key> or click the
-  <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">View options</span></media></gui>
-  button in the toolbar and choose <gui>Show Sidebar</gui>.)</p>
+  <p>Öppna <app>Filer</app> genom att använda menyn <gui xref="shell-introduction#activities">Aktiviteter</gui>. Visas det inmatade kortet i listan <gui>Enheter</gui> i den vänstra sidopanelen? Ibland visas kortet i listan men det är inte monterat; klicka på det en gång för att montera det. (Om sidopanelen inte visas tryck på <key>F9</key> eller klicka på <gui style="menu">Filer</gui> i systemraden och välj <gui style="menuitem">Sidopanel</gui>.)</p>
 </item>
 
 <item>
-  <p>If your card does not show up in the sidebar, press
-  <keyseq><key>Ctrl</key><key>L</key></keyseq>, then type
-  <input>computer:///</input> and press <key>Enter</key>. If your card reader
-  is correctly configured, the reader should come up as a drive when no card is
-  present, and the card itself when the card has been mounted.</p>
+  <p>Om ditt kort inte visas i sidopanelen, klicka på <keyseq><key>Ctrl</key><key>L</key></keyseq>, skriv sedan <input>computer:///</input> och tryck <key>Retur</key>. Om din kortläsare är korrekt konfigurerad borde läsaren dyka upp som en enhet när inget kort är isatt och som kortet själv när kortet har monterats.</p>
 </item>
 
 <item>
-<p>If you see the card reader but not the card, the problem may be with the card itself.
-Try a different card or check the card on a different reader if possible.</p>
+<p>Om du ser kortläsaren men inte kortet kan problem vara kortet i sig. Prova med ett annat kort eller kontrollera om möjligt att kortet fungerar i en annan kortläsare.</p>
 </item>
 </steps>
 
-<p>If no cards or drives are shown when browsing the <gui>Computer</gui>
-location, it is possible that your card reader does not work with Linux due to
-driver issues. If your card reader is internal (inside the computer instead of
-sitting outside) this is more likely. The best solution is to directly connect
-your device (camera, cell phone, etc.) to a USB port on the computer. USB
-external card readers are also available, and are far better supported by
-Linux.</p>
+<p>Om inga kort eller enheter visas när du bläddrar genom platsen <gui>Dator</gui> är det möjligt att din kortläsare inte fungerar med Linux på grund av drivrutinsproblem. Om din kortläsare är intern (inuti datorn istället för utanför) är detta mer troligt. Den bästa lösningen är att ansluta din enhet (kamera, mobiltelefon, etc.) direkt till en USB-port på datorn. Externa USB-kortläsare finns också och har väsentligt bättre stöd i Linux.</p>
 
 </page>

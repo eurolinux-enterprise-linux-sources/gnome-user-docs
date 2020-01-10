@@ -20,33 +20,46 @@
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-10-08" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <desc>Εξάγετε ή αποπροσαρτήστε έναν οδηγό USB, CD, DVD, ή άλλη συσκευή.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name> Δημήτρης Σπίγγος</mal:name>
-      <mal:email>dmtrs32@gmail.com</mal:email>
-      <mal:years>2012, 2013, 2014</mal:years>
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2016</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name> Φώτης Τσάμης</mal:name>
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
       <mal:email>ftsamis@gmail.com</mal:email>
       <mal:years>2009</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name> Μάριος Ζηντίλης</mal:name>
+      <mal:name>Μάριος Ζηντίλης</mal:name>
       <mal:email>m.zindilis@dmajor.org</mal:email>
       <mal:years>2009, 2010</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name> Θάνος Τρυφωνίδης</mal:name>
-      <mal:email>tomtryf@gmail.com</mal:email>
-      <mal:years>2012</mal:years>
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gnome.org</mal:email>
+      <mal:years>2012-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
     </mal:credit>
   </info>
 
@@ -57,28 +70,27 @@
   <steps>
     <title>Για την εξαγωγή μιας αφαιρούμενης συσκευής:</title>
     <item>
-      <p>From the <gui xref="shell-terminology">Activities</gui> overview,
-      open <app>Files</app>.</p>
+      <p>Από την επισκόπηση <gui xref="shell-introduction#activities">Δραστηριότητες</gui>, ανοίξτε τα <app>Αρχεία</app>.</p>
     </item>
     <item>
-      <p>Εντοπίστε τη συσκευή στην πλευρική στήλη. Πρέπει να έχει ένα μικρό εικονίδιο εξαγωγής δίπλα στο όνομα. Πατήστε το εικονίδιο εξαγωγής για ασφαλή αφαίρεση ή εξαγωγή της συσκευής.</p>
-      <p>Εναλλακτικά, μπορείτε να δεξιοπατήστε το όνομα της συσκευής στην πλευρική στήλη και να επιλέξετε <gui>εξαγωγή</gui>.</p>
+      <p>Εντοπίστε τη συσκευή στην πλευρική στήλη. Πρέπει να έχει ένα μικρό εικονίδιο εξαγωγής δίπλα στο όνομα. Κάντε κλικ στο εικονίδιο εξαγωγής για ασφαλή αφαίρεση ή εξαγωγή της συσκευής.</p>
+      <p>Εναλλακτικά, μπορείτε να κάνετε δεξί κλικ στο όνομα της συσκευής στην πλευρική στήλη και να επιλέξετε <gui>Εξαγωγή</gui>.</p>
     </item>
   </steps>
 
   <section id="remove-busy-device">
     <title>Ασφαλής αφαίρεση μιας συσκευής που χρησιμοποιείται</title>
 
-  <p>Εάν οποιοδήποτε αρχείο στη συσκευή είναι ανοικτό και χρησιμοποιείται από μια εφαρμογή, δεν θα μπορέσετε να αφαιρέσετε με ασφάλεια τη συσκευή. Θα εμφανιστεί ένα παράθυρο που θα λέει <gui>ο τόμος είναι απασχολημένος</gui>. Για να με αφαιρέσετε με ασφάλεια τη συσκευή:</p>
+  <p>Εάν οποιοδήποτε αρχείο στη συσκευή είναι ανοικτό και χρησιμοποιείται από μια εφαρμογή, δεν θα μπορέσετε να αφαιρέσετε με ασφάλεια τη συσκευή. Θα εμφανιστεί ένα παράθυρο που θα λέει <gui>Ο τόμος είναι απασχολημένος</gui>. Για να με αφαιρέσετε με ασφάλεια τη συσκευή:</p>
 
   <steps>
-    <item><p>Πατήστε <gui>ακύρωση</gui>.</p></item>
+    <item><p>Κάντε κλικ στο <gui>Ακύρωση</gui>.</p></item>
     <item><p>Κλείστε όλα τα αρχεία στη συσκευή.</p></item>
-    <item><p>Πατήστε το εικονίδιο εξαγωγής για να αφαιρέσετε με ασφάλεια ή να εξάγετε τη συσκευή.</p></item>
-    <item><p>Εναλλακτικά, μπορείτε να δεξιοπατήστε το όνομα της συσκευής στην πλευρική στήλη και να επιλέξετε <gui>εξαγωγή</gui>.</p></item>
+    <item><p>Κάντε κλικ στο εικονίδιο εξαγωγής για να αφαιρέσετε με ασφάλεια ή να εξάγετε τη συσκευή.</p></item>
+    <item><p>Εναλλακτικά, μπορείτε να κάνετε δεξί κλικ στο όνομα της συσκευής στην πλευρική στήλη και να επιλέξετε <gui>Εξαγωγή</gui>.</p></item>
   </steps>
 
-  <note style="warning"><p>Μπορείτε επίσης να επιλέξετε <gui>εξαγωγή οπωσδήποτε</gui> για να αφαιρέσετε τη συσκευή χωρίς να κλείσετε τα αρχεία. Αυτό μπορεί να προκαλέσει σφάλματα σε εφαρμογές που έχουν αυτά τα αρχεία ανοικτά.</p></note>
+  <note style="warning"><p>Μπορείτε επίσης να επιλέξετε <gui>εξαγωγή ούτως ή άλλως</gui> για να αφαιρέσετε τη συσκευή χωρίς να κλείσετε τα αρχεία. Αυτό μπορεί να προκαλέσει σφάλματα σε εφαρμογές που έχουν αυτά τα αρχεία ανοικτά.</p></note>
 
   </section>
 

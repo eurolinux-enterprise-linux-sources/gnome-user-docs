@@ -3,22 +3,24 @@
 
   <info>
     <link type="guide" xref="user-accounts#manage"/>
+    <link type="seealso" xref="user-admin-explain"/>
 
     <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
     <revision pkgversion="3.10" date="2013-11-01" status="review"/>
     <revision pkgversion="3.14.0" date="2014-10-08" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Le projet de documentation GNOME</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -40,7 +42,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2014</mal:years>
+      <mal:years>2011-2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -72,6 +74,12 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
   <title>Modification de l'image de votre compte</title>
@@ -82,10 +90,11 @@
 
   <steps>
     <item>
-      <p>Ouvrez la vue d'ensemble des <gui xref="shell-terminology">Activités</gui> et commencez à saisir <gui>Utilisateurs</gui>.</p>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Users</gui>.</p>
     </item>
     <item>
-      <p>Cliquez sur <gui>Utilisateurs</gui> pour ouvrir le panneau.</p>
+      <p>Click <gui>Users</gui> to open the panel.</p>
     </item>
     <item>
       <p>Si vous voulez modifier l'image d'un utilisateur autre que vous, appuyez sur <gui style="button">Déverrouiller</gui> en haut à droite et saisissez votre mot de passe.</p>
@@ -94,15 +103,14 @@
       <p>Cliquez sur l'image à côté de votre nom. Une galerie vous proposera une sélection d'images de connexion. Si vous aimez l'une d'elles, cliquez dessus pour l'utiliser.</p>
       <list>
         <item>
-          <p>If you would rather use a picture you already have on your
-          computer, click <gui>Browse for more pictures…</gui>.</p>
+          <p>Si vous préférez utiliser une image personnelle qui se trouve dans l'ordinateur, cliquez sur <gui>Rechercher d'autres images…</gui>.</p>
         </item>
         <item>
           <p>If you have a webcam, you can take a new login photo right now by
-          clicking <gui style="button" its:translate="no"><media type="image" src="figures/camera-photo-symbolic.svg"><span its:translate="yes">camera icon</span></media></gui>. Take your
+          clicking <gui>Take a photo…</gui>. Take your
           picture, then move and resize the square outline to crop out the
           parts you do not want. If you do not like the picture you took, click
-          <gui style="button">Take another picture</gui> to try again, or
+          <gui style="button">Take Another Picture</gui> to try again, or
           <gui>Cancel</gui> to give up.</p>
         </item>
       </list>

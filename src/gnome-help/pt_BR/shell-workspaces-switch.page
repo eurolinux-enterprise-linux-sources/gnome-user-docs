@@ -24,12 +24,6 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Ferreira</mal:name>
-      <mal:email>rafael.f.f1@gmail.com</mal:email>
-      <mal:years>2012, 2013, 2014.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Enrico Nicoletto</mal:name>
       <mal:email>liverig@gmail.com</mal:email>
       <mal:years>2013.</mal:years>
@@ -40,6 +34,12 @@
       <mal:email>joaosantana@outlook.com</mal:email>
       <mal:years>2013.</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
   </info>
 
  <title>Alternando entre espaços de trabalho</title>
@@ -47,11 +47,16 @@
  <steps>  
  <title>Usando o mouse:</title>
  <item>
-  <p if:test="!platform:gnome-classic">Abra o <link xref="shell-terminology">Panorama de <gui>Atividades</gui></link>.</p>
-  <p if:test="platform:gnome-classic">No canto esquerdo superior da tela, clique no <link xref="shell-terminology">menu <gui>Aplicativos</gui></link> e escolha o <gui>Panorama de atividades</gui>.</p>
+    <p if:test="!platform:gnome-classic">Open the
+    <gui xref="shell-introduction#activities">Activities</gui> overview.</p>
+  <p if:test="platform:gnome-classic">At the top left of the screen, click the
+  <gui xref="shell-introduction#activities">Applications</gui> menu and choose 
+  <gui>Activities Overview</gui>.</p>
  </item>
  <item>
-  <p>Clique em um espaço de trabalho no <link xref="shell-terminology">seletor de espaço de trabalho</link> no canto direito da tela para ver as janelas abertas naquele espaço selecionado.</p>
+  <p>Click on a workspace in the <link xref="shell-workspaces">workspace
+  selector</link> on the right side of the screen to view the open windows on
+  that workspace.</p>
  </item>
  <item>
   <p>Clique em qualquer miniatura de janela para ativar o espaço de trabalho.</p>

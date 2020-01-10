@@ -11,39 +11,51 @@
 
     <credit type="author">
       <name>Έργο Τεκμηρίωσης GNOME</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Μετάβαση στην επισκόπηση <gui>Ενέργειες</gui> και μεταφέρτε το παράθυρο σε έναν διαφορετικό χώρο εργασίας.</desc>
+    <desc>Μεταβείτε στην επισκόπηση <gui>Δραστηριότητες</gui> και σύρετε το παράθυρο σε έναν διαφορετικό χώρο εργασίας.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name> Δημήτρης Σπίγγος</mal:name>
-      <mal:email>dmtrs32@gmail.com</mal:email>
-      <mal:years>2012, 2013, 2014</mal:years>
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2016</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name> Φώτης Τσάμης</mal:name>
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
       <mal:email>ftsamis@gmail.com</mal:email>
       <mal:years>2009</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name> Μάριος Ζηντίλης</mal:name>
+      <mal:name>Μάριος Ζηντίλης</mal:name>
       <mal:email>m.zindilis@dmajor.org</mal:email>
       <mal:years>2009, 2010</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name> Θάνος Τρυφωνίδης</mal:name>
-      <mal:email>tomtryf@gmail.com</mal:email>
-      <mal:years>2012</mal:years>
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gnome.org</mal:email>
+      <mal:years>2012-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
     </mal:credit>
   </info>
 
@@ -52,30 +64,29 @@
   <steps>
     <title>Χρησιμοποιώντας το ποντίκι:</title>
     <item>
-      <p if:test="!platform:gnome-classic">Open the
-      <gui xref="shell-terminology">Activities</gui> overview.</p>
-      <p if:test="platform:gnome-classic">Ανοίξτε την <gui xref="shell-terminology">Επισκόπηση ενεργειών</gui> από το μενού <link xref="shell-terminology"><gui style="menu">Εφαρμογές</gui></link> στα πάνω αριστερά της οθόνης.</p>
+      <p if:test="!platform:gnome-classic">Ανοίξτε την επισκόπηση <gui xref="shell-introduction#activities">Δραστηριότητες</gui>.</p>
+      <p if:test="platform:gnome-classic">Ανοίξτε την επισκόπηση <gui xref="shell-introduction#activities">Δραστηριότητες</gui> από το μενού <gui xref="shell-introduction#activities">Εφαρμογές</gui> στα πάνω αριστερά της οθόνης.</p>
     </item>
     <item>
-      <p>Πατήστε και μεταφέρτε το παράθυρο προς τα δεξιά της οθόνης.</p>
+      <p>Κάντε κλικ και σύρετε το παράθυρο προς τα δεξιά της οθόνης.</p>
     </item>
     <item>
-      <p>Ο <em xref="shell-terminology">επιλογέας χώρου εργασίας</em> θα εμφανιστεί.</p>
+      <p>Θα εμφανιστεί ο <em xref="shell-terminology">επιλογέας χώρου εργασίας</em>.</p>
     </item>
     <item>
-      <p if:test="!platform:gnome-classic">Αφήστε το παράθυρο σε έναν κενό χώρο εργασίας. Αυτός ο χώρος εργασίας τώρα περιέχει το παράθυρο που αποθέσατε και ένας νέος κενός χώρος εργασίας εμφανίζεται στο τέλος του <em>επιλογέα χώρου εργασίας</em>.</p>
-      <p if:test="platform:gnome-classic">Αφήστε το παράθυρο σε έναν κενό χώρο εργασίας. Αυτός ο χώρος εργασίας τώρα περιέχει το παράθυρο που αποθέσατε.</p>
+      <p if:test="!platform:gnome-classic">Αποθέστε το παράθυρο σε έναν κενό χώρο εργασίας. Αυτός ο χώρος εργασίας περιέχει το παράθυρο που αποθέσατε και ένας νέος κενός χώρος εργασίας εμφανίζεται στο κάτω μέρος του <em>επιλογέα χώρου εργασίας</em>.</p>
+      <p if:test="platform:gnome-classic">Αποθέστε το παράθυρο σε έναν κενό χώρο εργασίας. Αυτός ο χώρος εργασίας τώρα περιέχει το παράθυρο που αποθέσατε.</p>
     </item>
   </steps>
 
   <steps>
     <title>Χρησιμοποιώντας το πληκτρολόγιο:</title>
     <item>
-      <p>Επιλέξτε το παράθυρο που θέλετε να μετακινήσετε (π.χ. χρησιμοποιώντας το <keyseq><key xref="keyboard-key-super">πλήκτρο λογότυπου</key><key>στηλοθέτης</key></keyseq> <em xref="shell-terminology">εναλλάκτης παραθύρου</em>).</p>
+      <p>Επιλέξτε το παράθυρο που θέλετε να μετακινήσετε (για παράδειγμα, χρησιμοποιώντας το πλήκτρο <keyseq><key xref="keyboard-key-super">Λογότυπο</key><key>Tab</key></keyseq> <em xref="shell-windows-switching">εναλλάκτη παραθύρων</em>).</p>
     </item>
     <item>
-      <p>Πατήστε <keyseq><key>πλήκτρο λογότυπου</key><key>Shift</key><key>πλήκτρο σελίδας επάνω</key></keyseq> για να μετακινήσετε το παράθυρο σε έναν χώρο εργασίας που είναι πάνω από τον τρέχοντα χώρο εργασίας στον <em>επιλογέα χώρου εργασίας</em>.</p>
-      <p>Πατήστε <keyseq><key>πλήκτρο λογότυπου</key><key>Shift</key><key>πλήκτρο κάτω σελίδας </key></keyseq> για να μετακινήσετε το παράθυρο σε έναν χώρο εργασίας που είναι κάτω από τον τρέχοντα χώρο εργασίας στον <em>επιλογέα χώρου εργασίας</em>.</p>
+      <p>Πατήστε <keyseq><key>Λογότυπο</key><key>Shift</key><key>Page Up</key></keyseq> για να μετακινήσετε το παράθυρο σε έναν χώρο εργασίας που είναι πάνω από τον τρέχοντα χώρο εργασίας στον <em>επιλογέα χώρου εργασίας</em>.</p>
+      <p>Πατήστε <keyseq><key>Λογότυπο</key><key>Shift</key><key>Page Down</key></keyseq> για να μετακινήσετε το παράθυρο σε έναν χώρο εργασίας που είναι κάτω από τον τρέχοντα χώρο εργασίας στον <em>επιλογέα χώρου εργασίας</em>.</p>
     </item>
   </steps>
 

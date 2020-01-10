@@ -11,15 +11,15 @@
 
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>માઇકલ હીલ</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>ઍકાટેરીના ગેરાસીમોવા</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -61,7 +61,7 @@
 
 <if:choose>
   <if:when test="!platform:gnome-classic">
-    <media type="image" src="figures/shell-activities.png" width="123" height="82" style="floatend floatright" if:test="!target:mobile">
+    <media type="image" src="figures/shell-activities.png" style="floatend floatright" if:test="!target:mobile">
       <p>પ્રવૃત્તિ બટન</p>
     </media>
   </if:when>
@@ -77,11 +77,17 @@
   the top-left hot corner. You can also press the
   <key xref="keyboard-key-super">Super</key> key on your keyboard. You can
   see your windows and applications in the overview. You can also just start
-  typing to search your applications, files, folders and the web.</p>
+  typing to search your applications, files, folders, and the web.</p>
 
-  <p if:test="platform:gnome-classic">તમારી વિન્ડો અને કાર્યક્રમોને વાપરવા માટે, સ્ક્રીનની ટોચે ડાબે <link xref="shell-terminology"><gui>કાર્યક્રમો</gui> મેનુ</link> પર ક્લિક કરો અને <gui>પ્રવૃત્તિ ઝાંખી</gui> ને પસંદ કરો. તમે <gui>પ્રવૃત્તિ</gui> ઝાંખીમાં તમારી વિન્ડો અને કાર્યક્રમોને જોવા માટે <key xref="keyboard-key-super">Super</key> કીને દબાવી શકો છો. તમારાં કાર્યક્રમો, ફાઇલો, અને ફોલ્ડરોને શોધવા ટાઇપીંગ શરૂ કરો.</p>
+  <p if:test="platform:gnome-classic">To access your windows and applications,
+  click the <gui xref="shell-introduction#activities">Applications</gui> menu
+  at the top left of the screen and select the <gui>Activities Overview</gui>
+  item. You can also press the <key xref="keyboard-key-super">Super</key> key
+  to see your windows and applications in the <gui>Activities</gui> overview. 
+  Just start typing to search your applications, files, and folders.</p>
 
-  <media type="image" src="figures/shell-dash.png" width="49" height="300" style="floatstart floatleft" if:test="!target:mobile">
+  <!-- TODO: retake without the flashy bit -->
+  <media type="image" src="figures/shell-dash.png" height="300" style="floatstart floatleft" if:test="!target:mobile">
     <p>ડૅશ</p>
   </media>
 
@@ -139,7 +145,7 @@
 <if:choose>
   <if:when test="!platform:gnome-classic">
     <media type="image" src="figures/shell-appts.png" width="250" style="floatend floatright" if:test="!target:mobile">
-      <p>ઘડિયાળ, કૅલેન્ડર, અને મુલાકાતો</p>
+      <p>Clock, calendar, appointments and notifications</p>
     </media>
   </if:when>
   <if:when test="platform:gnome-classic">
@@ -149,15 +155,24 @@
   </if:when>
 </if:choose>
 
-  <p>હાલની તારીખ, મહિનાનું કૅલેન્ડર, અને તમારી આવતી મંત્રણાઓની યાદીને જોવા માટે ટોચની પટ્ટી પર ઘડિયાળ પર ક્લિક કરો. તમે તારીખ અને સમય સુયોજનોને પણ વાપરી શકો છો અને મેનુમાંથી સીધુ તમારાં સંપૂર્ણ <app>ઇવોલ્યુશન</app> કૅલેન્ડરને ખોલો.</p>
+  <p>Click the clock on the top bar to see the current date, a month-by-month
+  calendar, a list of your upcoming appointments and new notifications. You can
+  also open the calendar by pressing
+  <keyseq><key>Super</key><key>M</key></keyseq>. You can access the date and
+  time settings and open your full <app>Evolution</app> calendar directly from
+  the menu.</p>
 
   <list style="compact">
     <item>
       <p><link xref="clock-calendar">કેલેન્ડર અને મંત્રણા વિશે વધારે શીખો.</link></p>
     </item>
+    <item>
+      <p><link xref="shell-notifications">સૂચનાઓ અને સંદેશા ટ્રે વિશે વધારે શીખો.</link></p>
+    </item>
   </list>
 
 </section>
+
 
 <section id="yourname">
   <title>તમે અને તમારું કમ્પ્યૂટર</title>
@@ -229,23 +244,6 @@ messages will be presented, such as when your battery is critically low.</p>
 
 </section>
 
-<section id="message-tray">
-  <title>સંદેશા ટ્રે</title>
-
-  <media its:translate="no" type="image" src="figures/shell-message-tray.png" width="600">
-    <p its:translate="yes">સંદેશો ટ્રે</p>
-  </media>
-
-  <p>સંદેશા ટ્રેને <keyseq><key>Super</key><key>M</key></keyseq> દબાવીને અથવા સ્ક્રીનની નીચે વિરુદ્દ તમારાં માઉસ પોઇંટરન દબાવીને જોવામાં લાવી શકાય છે. આ એ છે જ્યાં તમારી સૂચનાઓ સંગ્રહેલ છે જ્યાં સુધી તમે તેઓને જોવા તૈયાર છો.</p>
-
-  <list style="compact">
-    <item>
-      <p><link xref="shell-notifications">સૂચનાઓ અને સંદેશા ટ્રે વિશે વધારે શીખો.</link></p>
-    </item>
-  </list>
-
-</section>
-
 <section id="window-list">
   <title>વિન્ડો યાદી</title>
 
@@ -263,7 +261,11 @@ messages will be presented, such as when your battery is critically low.</p>
       <p>વિન્ડો યાદી</p>
     </media>
     <p>સ્ક્રીનની તળિયે વિન્ડો યાદી બધી તમારી ખુલ્લી વિન્ડો અને કાર્યક્રમોને પ્રવેશ પૂરો પાડે છે અને તમે તેઓને ઝડપથી ન્યૂનત્તમ અને ફરી સંગ્રહવા દો.</p>
-    <p>વિન્ડો યાદીની જમણી બાજુ પર, GNOME એ વર્તમાન કામ કરવાની જગ્યા માટે ટૂંકુ ઓળખકર્તાને દર્શાવે છે, જેમ કે પહેલી (ટોચની) કામ કરવાની જગ્યા માટે <gui>1</gui>. વધુમાં, ઓળખકર્તા પણ ઉપલબ્ધ કામ કરવાની જગ્યાની કુલ સંખ્યાને દર્શાવે છે. વિવિધ કામ કરવાની જગ્યાને બદલવા માટે, તમે ઓળખકર્તા પર ક્લિક કરી શકો છો અને કામ કરવાની જગ્યાને પસંદ કરો જો તમે મેનુમાંથી વાપરવા માંગો.</p>
+    <p>At the right-hand side of the window list, GNOME displays a short
+    identifier for the current workspace, such as <gui>1</gui> for the first
+    (top) workspace. In addition, the identifier also displays the total number
+    of available workspaces. To switch to a different workspace, you can click
+    the identifier and select the workspace you want to use from the menu.</p>
     <p>જો કાર્યક્રમ અથવા સિસ્ટમ ઘટક એ તમારાં ધ્યાનને ખેંચવા માંગતા હોય તો, તે વિન્ડોની જમણી બાજુ પર વાદળી ચિહ્નને દર્શાવશો. વાદળી ચિહ્ન પર ક્લિક કરીને સંદેશા ટ્રેને બતાવે છે.</p>
   </if:when>
 </if:choose>

@@ -6,73 +6,60 @@
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
     <revision pkgversion="3.12.1" date="2014-03-30" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+    <revision pkgversion="3.17.90" date="2015-08-30" status="final"/>
 
     <credit type="author">
       <name>Dokumentationsprojekt för GNOME</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Check that they have the right video codecs installed.</desc>
+    <desc>Kontrollera att de har de korrekta videokodekarna installerade.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
   </info>
 
-  <title>Other people can't play the videos I made</title>
+  <title>Andra personer kan inte spela upp videorna jag gjort</title>
 
-  <p>If you made a video on your Linux computer and sent it to someone using
-  Windows or Mac OS, you may find that they have problems playing the
-  video.</p>
+  <p>Om du har gjort en video på din Linux-dator och skickat den till någon som använder Windows eller Mac OS kan du komma att upptäcka att de har svårt att spela videon.</p>
 
-  <p>To be able to play your video, the person you sent it to must have the
-  right <em>codecs</em> installed. A codec is a little piece of software that
-  knows how to take the video and display it on the screen. There are lots of
-  different video formats and each requires a different codec to play it back.
-  You can check which format your video is by doing:</p>
+  <p>För att kunna spela din video, måste personen du skickat den till ha de korrekta <em>kodekarna</em> installerade. En kodek är en liten bit programvara som vet hur man tar en video och visar den på skärmen. Det finns många olika video format och vart och ett kräver en egen kodek för att spela upp det. Du kan kontrollera vilket format dina videor har genom att:</p>
 
   <list>
     <item>
-      <p>Open <app>Files</app> from the
-      <gui xref="shell-terminology">Activities</gui> overview.</p>
+      <p>Öppna <app>Filer</app> från översiktsvyn <gui xref="shell-introduction#activities">Aktiviteter</gui>.</p>
     </item>
     <item>
-      <p>Right-click on the video file and select <gui>Properties</gui>.</p>
+      <p>Högerklicka på videofilen och välj <gui>Egenskaper</gui>.</p>
     </item>
     <item>
-      <p>Go to the <gui>Audio/Video</gui> or <gui>Video</gui> tab and look at
-      which <gui>Codec</gui> are listed under <gui>Video</gui> and
-      <gui>Audio</gui> (if the video also has audio).</p>
+      <p>Gå till fliken <gui>Ljud/Video</gui>- eller <gui>Video</gui>-fliken och se vilken <gui>Kodek</gui> som listas under <gui>Video</gui> och <gui>Ljud</gui> (om videon också har Ljud).</p>
     </item>
   </list>
 
-  <p>Ask the person having problems with playback if they have the right codec
-  installed. They may find it helpful to search the web for the name of the
-  codec plus the name of their video playback application. For example, if your
-  video uses the <em>Theora</em> format and you have a friend using Windows
-  Media Player to try and watch it, search for "theora windows media player".
-  You will often be able to download the right codec for free if it's not
-  installed.</p>
+  <p>Fråga personen som har problem med uppspelning om de har en rätta kodeken installerad. Det kan vara bra att leta på nätet efter namnet på kodeken samt namnet på deras videouppspelningsprogram. Om din video till exempel använder <em>Theora</em> och du har en kompis som använder Windows Media Player för att söka titta på den, sök då efter ”theora windows media player”. Du kommer ofta att kunna hämta ner den rätta kodeken gratis om den inte finns installerad.</p>
 
-  <p>If you can't find the right codec, try the
-  <link href="http://www.videolan.org/vlc/">VLC media player</link>. It works
-  on Windows and Mac OS as well as Linux, and supports a lot of different video
-  formats. Failing that, try converting your video into a different format.
-  Most video editors are able to do this, and specific video converter
-  applications are available. Check the software installer application to see
-  what's available.</p>
+  <p>Om du inte kan hitta rätt kodek, prova <link href="http://www.videolan.org/vlc/">mediaspelaren VLC</link>. Den fungerar på Windows och Mac OS förutom Linux och har stöd för en mängd olika videoformat. Om det också misslyckas, prova att konvertera din video till ett annat format. De flesta videoredigerare kan göra detta och det finns också specifika program för videokonvertering. Kontrollera programmet för programvaruinstallation för att se vad som finns tillgängligt.</p>
 
   <note>
-    <p>There are a few other problems which might prevent someone from playing
-    your video. The video could have been damaged when you sent it to them
-    (sometimes big files aren't copied across perfectly), they could have
-    problems with their video playback application, or the video may not have
-    been created properly (there could have been some errors when you saved the
-    video).</p>
+    <p>Det finns ett par andra problem som kan förhindra någon från att spela upp din video. Videon kan ha blivit skadad när du skickade den till dem (ibland kopieras stora filer inte helt korrekt), de kan ha problem med sitt videouppspelningsprogram eller så kan videon inte ha skapats korrekt (de kan ha blivit fel när du sparade videon).</p>
   </note>
 
 </page>

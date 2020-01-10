@@ -32,7 +32,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2014</mal:years>
+      <mal:years>2011-2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -64,6 +64,12 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
  <title>Changement d'espace de travail</title>
@@ -71,11 +77,16 @@
  <steps>  
  <title>Avec la souris :</title>
  <item>
-  <p if:test="!platform:gnome-classic">Ouvrez la <link xref="shell-terminology">vue d'ensemble des<gui>Activités</gui></link>.</p>
-  <p if:test="platform:gnome-classic">Dans le coin actif gauche de l'écran, ouvrez le menu <link xref="shell-terminology"><gui>Applications</gui></link> et choisissez <gui>Vue d'ensemble des activités</gui>.</p>
+    <p if:test="!platform:gnome-classic">Open the
+    <gui xref="shell-introduction#activities">Activities</gui> overview.</p>
+  <p if:test="platform:gnome-classic">At the top left of the screen, click the
+  <gui xref="shell-introduction#activities">Applications</gui> menu and choose 
+  <gui>Activities Overview</gui>.</p>
  </item>
  <item>
-  <p>Cliquez sur un espace de travail dans le <link xref="shell-terminology">sélecteur d'espace de travail</link> sur le côté droit de l'écran pour afficher les fenêtres ouvertes sur cet espace de travail.</p>
+  <p>Click on a workspace in the <link xref="shell-workspaces">workspace
+  selector</link> on the right side of the screen to view the open windows on
+  that workspace.</p>
  </item>
  <item>
   <p>Cliquez sur n'importe quelle miniature de fenêtre pour activer l'espace de travail.</p>

@@ -1,28 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="accounts-add" xml:lang="de">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="accounts-add" xml:lang="de">
 
   <info>
-    <link type="guide" xref="accounts"/>
+    <link type="guide" xref="accounts" group="add"/>
 
     <revision pkgversion="3.5.5" date="2012-08-14" status="draft"/>
     <revision pkgversion="3.9.92" date="2012-09-18" status="candidate"/>
     <revision pkgversion="3.13.92" date="2013-09-20" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Jim Campbell</name>
-      <email its:translate="no">jwcampbell@gmail.com</email>
+      <email>jwcampbell@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
       <years>2014</years>
     </credit>
+    <credit type="editor">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+      <years>2015</years>
+    </credit>
 
-    <desc>Connect to an online account.</desc>
+    <desc>Anwendungen den Zugriff auf Ihre Online-Konten für Fotos, Kontakte, Kalender und mehr erlauben.</desc>
 
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Hendrik Knackstedt</mal:name>
@@ -39,7 +45,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Christian Kirbach</mal:name>
       <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2014.</mal:years>
+      <mal:years>2011-2016.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -61,39 +67,32 @@
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-terminology">Activities</gui> overview and
-      start typing <gui>Online Accounts</gui>.</p>
+      <p>Öffnen Sie die <gui xref="shell-introduction#activities">Aktivitäten</gui>-Übersicht und tippen Sie <gui>Online-Konten</gui> ein.</p>
     </item>
     <item>
-      <p>Click on <gui>Online Accounts</gui> to open the panel.</p>
+      <p>Klicken Sie auf <gui>Online-Konten</gui>, um das Panel zu öffnen.</p>
     </item>
     <item>
-      <p>Click the <gui>+</gui> button in the lower-left corner of the
-      window.</p>
+      <p>Klicken Sie auf das <gui>+</gui>-Symbol in der linken unteren Ecke des Fensters.</p>
     </item>
     <item>
       <p>Wählen Sie den hinzuzufügenden Konto-Typ aus.</p>
-      <p>Falls Sie mehr als einen Kontentyp hinzufügen möchten, können Sie dies auch später erledigen.</p>
     </item>
     <item>
-      <p>A small website window or dialog will open where you can enter your
-      online account credentials. For example, if you are setting up a Google
-      account, enter your Google username and password.</p>
+      <p>Ein kleines Internetseiten-Fenster wird geöffnet, in welchem Sie die Anmeldedaten Ihres Online-Kontos eingeben. Wenn Sie beispielsweise ein Google-Konto einrichten, geben Sie Benutzername und Passwort Ihres Google-Kontos ein. Einige Internetanbieter bieten das Anlegen eines Benutzerkontos im Anmeldefenster an.</p>
     </item>
     <item>
       <p>Wenn Sie Ihre Anmeldedaten korrekt eingegeben haben, werden Sie um Bestätigung gebeten, dass GNOME Zugriff auf Ihr Online-Konto erhält. Gewähren Sie Zugriff, um fortzusetzen.</p>
     </item>
     <item>
-      <p>All services that are offered by an account provider will be enabled
-      by default. <link xref="accounts-disable-service">Switch</link>
-      individual services to <gui>OFF</gui> to disable them.</p>
+      <p>Alle von einem Kontenanbieter bereitgestellten Dienste sind standardmäßig aktiviert. Schalten Sie einzelne Dienste <gui>AUS</gui>, um sie zu <link xref="accounts-disable-service">deaktivieren</link>.</p>
     </item>
   </steps>
 
-  <p>Nach dem Hinzufügen der Konten verwendet jede Anwendung, die Sie dafür eingerichtet haben, diese Anmeldedaten beim Start.</p>
+  <p>Sobald Sie Konten hinzugefügt haben, können Anwendungen diese für die Dienste nutzen, die Sie zugelassen haben. In <link xref="accounts-disable-service"/> finden Sie Erläuterungen, wie Sie Dienste zulassen können.</p>
 
   <note style="tip">
-    <p>Aus Sicherheitsgründen speichert GNOME Ihr Passwort nicht auf Ihrem Rechner. Stattdessen wird ein Token gespeichert, der vom Online-Dienst bereitgestellt wird. Wenn Sie die Verknüpfung zwischen Ihrer Arbeitsumgebung und dem Online-Dienst vollständig lösen wollen, <link xref="accounts-remove">entfernen</link> Sie sie.</p>
+    <p>Viele Online-Dienste stellen einen Legitimierungs-Token bereit, den GNOME anstelle Ihres Passworts speichert. Falls Sie ein Konto entfernen, sollten Sie auch das Zertifikat des Online-Dienstes widerrufen. Weitere Informationen finden Sie in <link xref="accounts-remove"/>.</p>
   </note>
 
 </page>

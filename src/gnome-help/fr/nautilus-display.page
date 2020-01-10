@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" id="nautilus-display" xml:lang="fr">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-display" xml:lang="fr">
 
   <info>
     <link type="guide" xref="nautilus-prefs" group="nautilus-display"/>
 
-    <desc>Définir les libellés des icônes utilisés par le gestionnaire de fichiers.</desc>
-
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-30" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -16,8 +15,15 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-    <its:rules xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <desc>Définir les libellés des icônes utilisés par le gestionnaire de fichiers.</desc>
+
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Luc Pionchon</mal:name>
@@ -34,7 +40,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2014</mal:years>
+      <mal:years>2011-2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -66,6 +72,12 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
 <title>Préférences d'affichage du gestionnaire de fichiers</title>
@@ -74,13 +86,30 @@
 
 <section id="icon-captions">
   <title>Libellés des icônes</title>
+  <!-- TODO: update screenshot for 3.18 and above. -->
   <media type="image" src="figures/nautilus-icons.png" width="250" height="110" style="floatend floatright">
     <p>Icônes du gestionnaire de fichiers avec des libellés</p>
   </media>
   <p>Dans la vue en icônes, vous pouvez décider d'avoir plus d'informations affichées dans les libellés sous les icônes des dossiers et fichiers. C'est utile par exemple, si vous vérifiez souvent à qui appartient un fichier ou quelle est sa dernière date de modification.</p>
-  <p>Vous pouvez zoomer, en avant ou en arrière dans un dossier en cliquant sur le bouton <media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">bas</span></media> dans la barre d'outils et en choisissant l'une des options de <gui>Zoom</gui>. Lors d'un zoom avant, le gestionnaire de fichiers va afficher de plus en plus d'informations dans le libellé. Vous pouvez y insérer jusqu'à trois chaînes de caractères. La première est affichée à presque tous les niveaux de zoom et la dernière seulement à des niveaux de zoom très élevés.</p>
+  <p>You can zoom in a folder by clicking the view options button in the
+  <!-- FIXME: Get a tooltip added for "View options" -->
+  toolbar and choosing a zoom level with the slider. As you zoom in, the
+  file manager will display more and more information in captions. You can
+  choose up to three things to show in captions. The first will be displayed at
+  most zoom levels. The last will only be shown at very large sizes.</p>
   <p>Les informations affichées dans les libellés des icônes sont les mêmes que dans les colonnes en mode affichage par liste. Consultez <link xref="nautilus-list"/> pour de plus amples informations.</p>
-  <note><p>Si une fenêtre de votre gestionnaire de fichiers était ouverte, vous devez l'actualiser pour prendre en compte les modifications des libellés. Cliquez sur <guiseq><gui>Affichage</gui><gui>Actualiser</gui></guiseq> ou utilisez le raccourci <keyseq><key>Ctrl</key><key>R</key></keyseq>.</p></note>
+</section>
+
+<section id="list-view">
+
+  <title>List View</title>
+
+  <p>When viewing files as a list, you can <gui>Navigate folders in a
+  tree</gui>. This shows expanders on each directory in the file list, so
+  that the contents of several folders can be shown at once. This is useful if
+  the folder structure is relevant, such as if your music files are organized
+  with a folder per artist, and a subfolder per album.</p>
+
 </section>
 
 </page>

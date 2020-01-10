@@ -11,25 +11,25 @@
 
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Una introducción visual a su escritorio, la barra superior y la vista de <gui>actividades</gui>.</desc>
+    <desc>Una introducción visual a su escritorio, la barra superior y la vista de <gui>Actividades</gui>.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2011 - 2014</mal:years>
+      <mal:years>2011 - 2016</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -77,7 +77,7 @@
 
 <if:choose>
   <if:when test="!platform:gnome-classic">
-    <media type="image" src="figures/shell-activities.png" width="123" height="82" style="floatend floatright" if:test="!target:mobile">
+    <media type="image" src="figures/shell-activities.png" style="floatend floatright" if:test="!target:mobile">
       <p>Botón «Actividades»</p>
     </media>
   </if:when>
@@ -88,11 +88,12 @@
   </if:when>
 </if:choose>
 
-  <p if:test="!platform:gnome-classic">Para acceder a sus ventanas y aplicaciones, pulse el botón <gui>Actividades</gui>, o simplemente lleve el puntero del ratón a la esquina activa. También puede pulsar la tecla <link xref="keyboard-key-super">Super</link> en su teclado. Puede ver sus ventanas y aplicaciones en la vista de actividades. También puede empezar a escribir para buscar aplicaciones, archivos o carpetas.</p>
+  <p if:test="!platform:gnome-classic">Para acceder a sus ventanas y aplicaciones, pulse el botón <gui>Actividades</gui>, o simplemente lleve el puntero del ratón a la esquina superior izquierda activa. También puede pulsar la tecla <link xref="keyboard-key-super">Super</link> en su teclado. Puede ver sus ventanas y aplicaciones en la vista de actividades. También puede empezar a escribir para buscar aplicaciones, archivos o carpetas y en la web.</p>
 
-  <p if:test="platform:gnome-classic">Para acceder a sus ventanas y aplicaciones, pulse en el <link xref="shell-terminology">menú <gui>Aplicaciones</gui></link> en la parte superior izquierda de la pantalla y seleccione el elemento <gui>Vista de actividades</gui>. También puede pulsar la tecla <key xref="keyboard-key-super">Super</key> para ver sus ventanas y aplicaciones en la vista de <gui>actividades</gui>. Simplemente empiece a escribir para ver sus aplicaciones, archivos y carpetas.</p>
+  <p if:test="platform:gnome-classic">Para acceder a sus ventanas y aplicaciones, pulse en el menú <gui xref="shell-introduction#activities">Aplicaciones</gui> en la parte superior izquierda de la pantalla y seleccione el elemento <gui>Vista de actividades</gui>. También puede pulsar la tecla <key xref="keyboard-key-super">Super</key> para ver sus ventanas y aplicaciones en la vista de <gui>Actividades</gui>. Simplemente empiece a escribir para ver sus aplicaciones, archivos y carpetas.</p>
 
-  <media type="image" src="figures/shell-dash.png" width="49" height="300" style="floatstart floatleft" if:test="!target:mobile">
+  <!-- TODO: retake without the flashy bit -->
+  <media type="image" src="figures/shell-dash.png" height="300" style="floatstart floatleft" if:test="!target:mobile">
     <p>El tablero</p>
   </media>
 
@@ -140,7 +141,7 @@
 <if:choose>
   <if:when test="!platform:gnome-classic">
     <media type="image" src="figures/shell-appts.png" width="250" style="floatend floatright" if:test="!target:mobile">
-      <p>Reloj, calendario y citas</p>
+      <p>Reloj, calendario, citas y notificaciones</p>
     </media>
   </if:when>
   <if:when test="platform:gnome-classic">
@@ -150,15 +151,19 @@
   </if:when>
 </if:choose>
 
-  <p>Pulse en el reloj en el centro de la barra superior para ver la fecha actual, un calendario mensual y una lista de sus próximas citas. También puede acceder a la configuración de fecha y hora y abrir totalmente su calendario de <app>Evolution</app> directamente desde el menú.</p>
+  <p>Pulse en el reloj en el centro de la barra superior para ver la fecha actual, un calendario mensual y una lista de sus próximas citas. También puede abrir el calendario pulsando <keyseq><key>Súper</key><key>M</key></keyseq>. Puede acceder a la configuración de fecha y hora y abrir totalmente su calendario de <app>Evolution</app> directamente desde el menú.</p>
 
   <list style="compact">
     <item>
       <p><link xref="clock-calendar">Aprender más sobre el calendario y las citas.</link></p>
     </item>
+    <item>
+      <p><link xref="shell-notifications">Aprender más acerca de la bandeja de mensajes</link>.</p>
+    </item>
   </list>
 
 </section>
+
 
 <section id="yourname">
   <title>Usted y su equipo</title>
@@ -222,23 +227,6 @@ messages will be presented, such as when your battery is critically low.</p>
 
 </section>
 
-<section id="message-tray">
-  <title>Bandeja de mensajes</title>
-
-  <media its:translate="no" type="image" src="figures/shell-message-tray.png" width="600">
-    <p its:translate="yes">Bandeja de mensajes</p>
-  </media>
-
-  <p>Se puede mostrar la bandeja de mensajes moviendo el ratón a la parte inferior de la pantalla o pulsando <keyseq><key>Super</key><key>M</key></keyseq>. Aquí es donde se almacenan las notificaciones hasta que esté listo para verlas.</p>
-
-  <list style="compact">
-    <item>
-      <p><link xref="shell-notifications">Aprender más acerca de la bandeja de mensajes</link>.</p>
-    </item>
-  </list>
-
-</section>
-
 <section id="window-list">
   <title>Lista de ventanas</title>
 
@@ -256,7 +244,7 @@ messages will be presented, such as when your battery is critically low.</p>
       <p>Lista de ventanas</p>
     </media>
     <p>La lista de ventanas en la parte inferior de la pantalla proporciona acceso a todas sus ventanas y aplicaciones abiertas y le permite minimizarlas y restaurarlas rápidamente.</p>
-    <p>A la derecha de la lista de ventanas, GNOME muestra un identificador corto para el área de trabajo actual, como <gui>1</gui> para la primera área de trabajo. Además, el identificador también muestra el número total de áreas de trabajo disponibles. Para cambiar a un área de trabajo diferente, puede pulsar el en identificador y seleccionar el área de trabado que quiere usar en el menú.</p>
+    <p>A la derecha de la lista de ventanas, GNOME muestra un identificador corto para el área de trabajo actual, como <gui>1</gui> para la primera área de trabajo. Además, el identificador también muestra el número total de áreas de trabajo disponibles. Para cambiar a un área de trabajo diferente, puede pulsar el en identificador y seleccionar el área de trabado que quiere usar en el menú.</p>
     <p>Si una aplicación o un componente del sistema quieren llamar su atención, mostrará un icono azul en la parte derecha de la lista de ventanas. Al pulsar en el icono azul se mostrará la bandeja de mensajes.</p>
   </if:when>
 </if:choose>

@@ -5,18 +5,22 @@
     <link type="guide" xref="net-wireless"/>
 
     <revision pkgversion="3.14" date="2014-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>GNOME dokumentációs projekt</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
     </credit>
 
-    <desc>Use your phone or Internet stick to connect to the mobile broadband
-    network.</desc>
+    <desc>Telefon vagy internet stick használata a mobil széles sávú hálózathoz csatlakozásra.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -28,7 +32,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Kelemen Gábor</mal:name>
       <mal:email>kelemeng at gnome dot hu</mal:email>
-      <mal:years>2011, 2012, 2013, 2014</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -56,38 +60,27 @@
     </mal:credit>
   </info>
 
-  <title>Connect to mobile broadband</title>
+  <title>Csatlakozás mobil széles sáv használatával</title>
 
-  <p>Set up a connection to a cellular (3G) network using your mobile phone
-  or Internet stick.</p>
+  <p>Beállíthat kapcsolatot egy mobil (3G) hálózathoz a számítógép beépített 3G modemje, mobiltelefonja vagy internet stick használatával.</p>
 
   <steps>
-    <item><p>Connect your phone or Internet stick to a USB port on your
-    computer.</p></item>
-
-    <item><p>Click the system status area on the top bar, select
-    <gui>Mobile Broadband</gui>, then click <gui>Connect</gui>.</p>
+    <item><p>Ha nincs beépített 3G modemje, akkor csatlakoztassa telefonját vagy az internet sticket a számítógép egyik USB portjához.</p>
+    </item>
+    <item>
+    <p>Kattintson a <gui xref="shell-introduction#yourname">rendszer menüre</gui> a felső sáv jobb oldalán.</p>
+  </item>
+  <item>
+    <p>Válassza ki a <gui><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-excellent-symbolic.svg" width="16" height="16"/> Mobil széles sáv ki</gui> menüpontot. A menü <gui>Mobil széles sáv</gui> kategóriája ki lesz bontva.</p>
       <note>
-        <p>If <gui>Mobile Broadband</gui> does not appear in the system
-        status menu, ensure that your device is not set to connect as Mass
-        Storage.</p>
+        <p>Ha a <gui>Mobil széles sáv</gui> nem jelenik meg a rendszerállapot menüben, akkor győződjön meg róla, hogy az eszköz nincs tömeges tároló módba állítva.</p>
       </note>
     </item>
-    <item><p>If you are connecting for the first time, the Mobile Broadband
-    wizard is launched. The opening screen displays a list of required
-    information. Click <gui style="button">Next</gui>.</p></item>
-    <item><p>Choose your provider's country or region from the list. Click
-    <gui style="button">Next</gui>.</p></item>
-    <item><p>Choose your provider from the list. Click
-    <gui style="button">Next</gui>.</p></item>
-    <item><p>Select a plan according to the type of device you are
-    connecting. This will determine the Access Point Name. Click
-    <gui style="button">Next</gui>.</p></item>
-    <item><p>Confirm the settings you have selected by clicking
-    <gui style="button">Apply</gui>. The wizard will close and the
-    <gui>Network</gui> panel will display the properties of your
-    connection.</p></item>
-
+    <item><p>Válassza a <gui>Kapcsolódás</gui> pontot. Ha először kapcsolódik, elindul a <gui>Mobil széles sávú kapcsolat beállítása</gui> varázsló. A nyitó képernyő megjeleníti a szükséges információk listáját. Kattintson a <gui style="button">Tovább</gui> gombra.</p></item>
+    <item><p>Válassza ki a listából a szolgáltató országát. Nyomja meg a <gui>Tovább</gui> gombot.</p></item>
+    <item><p>Válassza ki a listából a szolgáltatót. Nyomja meg a <gui>Tovább</gui> gombot.</p></item>
+    <item><p>Válassza ki az előfizetést a csatlakozáshoz használt készüléknek megfelelően. Ez meghatározza a hozzáférési pont nevét. Nyomja meg a <gui>Tovább</gui> gombot.</p></item>
+    <item><p>Erősítse meg a kiválasztott beállításokat az <gui style="button">Alkalmaz</gui> gomb megnyomásával. A varázsló bezáródik, és a <gui>Hálózat</gui> panel megjeleníti a kapcsolat tulajdonságait.</p></item>
   </steps>
 
 </page>

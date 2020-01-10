@@ -20,7 +20,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -65,14 +65,14 @@
  <steps>  
  <title>マウスを使う方法:</title>
  <item>
-  <p if:test="!platform:gnome-classic">Open the <link xref="shell-terminology">
-  <gui>Activities</gui> overview</link>.</p>
+    <p if:test="!platform:gnome-classic">Open the
+    <gui xref="shell-introduction#activities">Activities</gui> overview.</p>
   <p if:test="platform:gnome-classic">At the top left of the screen, click the
-  <link xref="shell-terminology"><gui>Applications</gui> menu</link> and choose 
+  <gui xref="shell-introduction#activities">Applications</gui> menu and choose 
   <gui>Activities Overview</gui>.</p>
  </item>
  <item>
-  <p>Click on a workspace in the <link xref="shell-terminology">workspace
+  <p>Click on a workspace in the <link xref="shell-workspaces">workspace
   selector</link> on the right side of the screen to view the open windows on
   that workspace.</p>
  </item>
@@ -89,15 +89,10 @@
  <list>
  <title>キーボードを使う方法:</title>  
   <item>
-    <p>Press
-    <keyseq><key xref="keyboard-key-super">Super</key><key>Page Up</key></keyseq>
-    to move to a workspace which is above the current workspace in the
-    workspace selector.</p>
+    <p><keyseq><key xref="keyboard-key-super">Super</key><key>Page Up</key></keyseq> を押すと、ワークスペースセレクターの中で、現在作業しているワークスペースの 1 つ上のワークスペースに移動します。</p>
   </item>
   <item>
-    <p>Press <keyseq><key>Super</key><key>Page Down</key></keyseq> to move to a
-    workspace which is below the current workspace in the workspace selector.
-    </p>
+    <p><keyseq><key>Super</key><key>Page Down</key></keyseq> を押すと、ワークスペースセレクターの中で、現在作業しているワークスペースの 1 つ下のワークスペースに移動します。</p>
   </item>
  </list>
 

@@ -6,10 +6,21 @@
     <link type="seealso" xref="net-findip"/>
 
     <revision pkgversion="3.4.0" date="2012-03-13" status="final"/>
+    <revision pkgversion="3.15" date="2014-12-04" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Jim Campbell</name>
-      <email its:translate="no">jwcampbell@gmail.com</email>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -25,7 +36,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Jiri Grönroos</mal:name>
       <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
-      <mal:years>2012, 2013.</mal:years>
+      <mal:years>2012-2016.</mal:years>
     </mal:credit>
   </info>
 
@@ -35,27 +46,37 @@
 
   <steps>
     <item>
-      <p>Click the <gui>network icon</gui> on the <gui>top bar</gui> and select
-      <gui>Network Settings</gui>.</p>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Network</gui>.</p>
     </item>
     <item>
-      <p>Select the network connection from the list (<gui>Wired</gui> or
-      <gui>Wireless</gui>) and click <gui>Configure</gui>.</p>
+      <p>Napsauta <gui>Verkko</gui>.</p>
     </item>
     <item>
-      <p>Vaihda <gui>IPv4-asetukset</gui>-välilehdelle ja vaihda <gui>Menetelmä</gui>-kohtaan <em>Manuaalinen</em>.</p>
+      <p>In the left pane, select the network connection that you want to give
+      a fixed address. If you plug in to the network with a cable, click
+      <gui>Wired</gui>, then click the
+      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media> button in the lower right corner of
+      the panel. For a <gui>Wi-Fi</gui> connection, the 
+      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
+      button will be located next to the active network.</p>
     </item>
     <item>
-      <p>Jos yhteyden tietoja ei <gui>Osoitteet</gui>-listalla tai haluat määrittää uuden yhteyden, napsauta <gui>Lisää</gui>.</p>
+      <p>Click on the <gui>IPv4</gui> or <gui>IPv6</gui> tab
+      and change the <gui>Addresses</gui> to <em>Manual</em>.</p>
     </item>
     <item>
-      <p>Anna <em>IP-osoite</em>, <em>Verkkopeite</em> ja <em>Yhdyskäytävä</em> niille tarkoitettuihin kenttiin. Näihin kenttiin tarkoitetut tiedot riippuvat verkkosi asetuksista. Tietyt säännöt määrittävät, minkälaiset asetukset ovat kelvollisia arvoja IP-osoitteeksi ja verkkopeitteeksi.</p>
+      <p>Enter the <em>Address</em>, <em>Netmask</em>, and <em>Gateway</em>
+      information into the appropriate boxes. How you choose these will depend
+      on your network setup; there are specific rules governing which IP
+      addresses and netmasks are valid for a given network.</p>
     </item>
     <item>
       <p>Anna tarvittaessa <em>nimipalvelimen</em> osoite <gui>DNS-palvelimet</gui> -kenttään. Kyseessä on verkkonimiä selvittävän palvelimen IP-osoite. Useimmat yritysverkot ja palveluntarjoajat käyttävät omia nimipalvelimia.</p>
     </item>
     <item>
-      <p>Napsauta <gui>Tallenna</gui>. Verkkoyhteydellä pitäisi nyt olla kiinteä IP-osoite.</p>
+      <p>Click <gui>Apply</gui>. The network connection should now have a fixed
+      IP address.</p>
     </item>
   </steps>
 

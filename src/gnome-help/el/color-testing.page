@@ -10,52 +10,64 @@
 
     <credit type="author">
       <name>Richard Hughes</name>
-      <email its:translate="no">richard@hughsie.com</email>
+      <email>richard@hughsie.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Χρησιμοποιήστε τις παρεχόμενες κατατομές δοκιμής για να ελέγξετε ότι οι κατατομές σας εφαρμόζονται σωστά στην οθόνη σας.</desc>
+    <desc>Χρησιμοποιήστε τα παρεχόμενα προφίλ δοκιμής για να ελέγξετε ότι τα προφίλ σας εφαρμόζονται σωστά στην οθόνη σας.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name> Δημήτρης Σπίγγος</mal:name>
-      <mal:email>dmtrs32@gmail.com</mal:email>
-      <mal:years>2012, 2013, 2014</mal:years>
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2016</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name> Φώτης Τσάμης</mal:name>
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
       <mal:email>ftsamis@gmail.com</mal:email>
       <mal:years>2009</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name> Μάριος Ζηντίλης</mal:name>
+      <mal:name>Μάριος Ζηντίλης</mal:name>
       <mal:email>m.zindilis@dmajor.org</mal:email>
       <mal:years>2009, 2010</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name> Θάνος Τρυφωνίδης</mal:name>
-      <mal:email>tomtryf@gmail.com</mal:email>
-      <mal:years>2012</mal:years>
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gnome.org</mal:email>
+      <mal:years>2012-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
     </mal:credit>
   </info>
 
   <title>Πως ελέγχω αν η διαχείριση χρώματος λειτουργεί σωστά;</title>
 
-  <p>Τα αποτελέσματα μιας χρωματικής κατατομής είναι μερικές φορές ανεπαίσθητα και μπορεί να είναι δύσκολο να δείτε εάν κάτι έχει αλλάξει.</p>
+  <p>Τα αποτελέσματα ενός χρωματικού προφίλ είναι μερικές φορές ανεπαίσθητα και μπορεί να είναι δύσκολο να δείτε εάν κάτι έχει αλλάξει.</p>
 
-  <p>Το GNOME έρχεται με αρκετές κατατομές για δοκιμές που το κάνουν πολύ σαφές, όταν εφαρμόζονται οι κατατομές:</p>
+  <p>Το GNOME έρχεται με αρκετά προφίλ για δοκιμές που το κάνουν πολύ σαφές, όταν εφαρμόζονται τα προφίλ:</p>
 
   <terms>
     <item>
-      <title>Γαλάζιο</title>
-      <p>Αυτό θα κάνει την οθόνη γαλάζια και ελέγχει εάν οι καμπύλες βαθμονόμησης στάλθηκαν στην οθόνη.</p>
+      <title>Μπλε</title>
+      <p>Αυτό θα κάνει την οθόνη μπλε και θα ελέγξει εάν οι καμπύλες βαθμονόμησης στάλθηκαν στην οθόνη.</p>
     </item>
 <!--    <item>
       <title>ADOBEGAMMA-test</title>
@@ -74,26 +86,26 @@
 
   <steps>
     <item>
-      <p>Ανοίξτε την επισκόπηση <gui xref="shell-terminology">Ενέργειες</gui> και αρχίστε να πληκτρολογείτε <gui>Χρώμα</gui>.</p>
+      <p>Ανοίξτε την επισκόπηση <gui xref="shell-introduction#activities">Δραστηριότητες</gui> και αρχίστε να πληκτρολογείτε <gui>Χρώμα</gui>.</p>
     </item>
     <item>
-      <p>Πατήστε στο <gui>Χρώμα</gui> για να ανοίξετε το φάτνωμα.</p>
+      <p>Κάντε κλικ στο <gui>Χρώμα</gui> για να ανοίξετε τον πίνακα.</p>
     </item>
     <item>
-      <p>Επιλέξτε τη συσκευή για την οποία θέλετε να προσθέσετε μια κατατομή. Μπορεί να θέλετε να σημειώστε ποια κατατομή χρησιμοποιείται προς το παρόν.</p>
+      <p>Επιλέξτε τη συσκευή για την οποία θέλετε να προσθέσετε ένα προφίλ. Μπορεί να θέλετε να σημειώστε ποιό προφίλ χρησιμοποιείται προς το παρόν.</p>
     </item>
     <item>
-      <p>Πατήστε <gui>Προσθήκη κατατομής</gui> για να επιλέξετε μια υπάρχουσα κατατομή που πρέπει να είναι στο τέλος του καταλόγου.</p>
+      <p>Κάντε κλικ στο <gui>Προσθήκη προφίλ</gui> για να επιλέξετε ένα υπάρχον προφίλ που πρέπει να είναι στο τέλος της λίστας</p>
     </item>
     <item>
       <p>Πατήστε <gui>Προσθήκη</gui> για να επιβεβαιώσετε την επιλογή σας.</p>
     </item>
     <item>
-      <p>Για να επαναφέρετε την προηγούμενη κατατομή σας, επιλέξτε τη συσκευή στο φάτνωμα <gui>Χρώμα</gui>, έπειτα επιλέξτε την κατατομή που χρησιμοποιούσατε πριν να δοκιμάσετε μία από τις κατατομές δοκιμής και πατήστε <gui>ενεργοποίηση</gui> για να την ξαναχρησιμοποιήσετε.</p>
+      <p>Για να επαναφέρετε το προηγούμενο προφίλ σας, επιλέξτε τη συσκευή στον πίνακα <gui>Χρώμα</gui>, έπειτα επιλέξτε το προφίλ που χρησιμοποιούσατε πριν να δοκιμάσετε ένα από τα προφίλ δοκιμής και πατήστε <gui>Ενεργοποίηση</gui> για να το ξαναχρησιμοποιήσετε.</p>
     </item>
   </steps>
 
 
-  <p>Χρησιμοποιώντας αυτές τις κατατομές, μπορείτε να δείτε καθαρά πότε μια εφαρμογή υποστηρίζει διαχείριση χρώματος.</p>
+  <p>Χρησιμοποιώντας αυτά τα προφίλ, μπορείτε να δείτε καθαρά πότε μια εφαρμογή υποστηρίζει διαχείριση χρώματος.</p>
 
 </page>

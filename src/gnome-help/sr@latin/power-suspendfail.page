@@ -4,9 +4,12 @@
   <info>
     <link type="guide" xref="power#problems"/>
     <link type="guide" xref="hardware-problems-graphics"/>
-    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <link type="seealso" xref="hardware-driver"/>
 
-    <desc>Neke komponente računara stvaraju probleme prilikom obustave ili zamrzavanja.</desc>
+    <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+
+    <desc>Neke komponente računara stvaraju probleme prilikom obustave.</desc>
 
     <credit type="author">
       <name>Gnomov projekat dokumentacije</name>
@@ -22,7 +25,7 @@
 
 <title>Zašto moj računar neće da se povrati nakon što sam ga uspavao?</title>
 
-<p>Ako <link xref="power-suspend">obustavite</link> ili <link xref="power-hibernate">zamrznete</link> vaš računar, i zatim pokušate da ga povratite ili da ga upalite, možete uvideti da ne radi onako kako ste očekivali. Ovo može biti zato što vaše komponente ne podržavaju ispravno uspavljivanje i zamrzavanje.</p>
+<p>Ako <link xref="power-suspend">obustavite</link> rad računara, i zatim pokušate da ga povratite, možete uvideti da ne radi onako kako ste očekivali. Ovo može biti zato što vaše komponente ne podržavaju ispravno uspavljivanje.</p>
 
 <section id="resume">
   <title>Moj računar je obustavljen i neće da se povrati</title>
@@ -35,17 +38,11 @@
   </note>
 </section>
 
-<section id="hibernate">
-  <title>Nijedan moj program/dokument se ne otvara kada ponovo uključim računar</title>
-  <p>Ako ste zamrznuli vaš računar i ponovo ste ga uključili, ali se nije otvorio nijedan vaš dokument ili program, verovatno nije uspeo da zamrzne ispravno. Ponekad se ovo dogodi zbog manjeg problema, a računar će biti u mogućnosti da zamrzne ispravno sledeći put kada to uradite. Ovo takođe može da se desi zato što ste instalirali ažuriranje softvera koje je zahtevalo ponovno pokretanje računara; u tom slučaju, računar se ugasio umesto da se zamrzne.</p>
-  <p>Moguće je takođe da računar nije u mogućnosti da zamrzne zato što ga komponente ne podržavaju ispravno. Ovo može biti zbog problema sa upravljačkim programima Linuksa za vaše komponente, na primer. Ovo možete da isprobate tako što ćete ponovo zamrznuti i videti da li po drugi put radi. Ako ne radi, verovatno je problem sa upravljačkim programima na vašem računaru.</p>
-</section>
-
 <section id="hardware">
   <title>Moja bežična veza (ili druga komponenta) ne radi kada probudim računar</title>
-  <p>Ako obustavite vaš računar ili ga zamrznete i nakon toga ga povratite opet, možda ćete uvideti da vaša internet veza, miš, ili neki drugi uređaj ne radi ispravno. Ovo može biti zato što upravljački program za uređaj ne podržava pravilno obustavljanje ili zamrzavanje. To je <link xref="hardware-driver">problem sa upravljačkim programom</link> a ne sa samim uređajem.</p>
+  <p>Ako obustavite rad računara i nakon toga ga povratite, možda ćete uvideti da vaša internet veza, miš, ili neki drugi uređaj ne radi ispravno. Ovo može biti zato što upravljački program za uređaj ne podržava pravilno obustavljanje. To je <link xref="hardware-driver">problem sa upravljačkim programom</link> a ne sa samim uređajem.</p>
   <p>Ako uređaj ima prekidač, pokušajte da ga ugasite, i da ga zatim ponovo upalite. U većini slučajeva, uređaj će početi da radi ponovo. Ako se povezuje preko USB kabla ili slično, isključite uređaj i ponovo ga priključite i vidite da li radi.</p>
-  <p>Ako ne možete da ugasite/isključite uređaj, ili ako ovo ne radi, možda ćete morati ponovo da pokrenete računar da bi uređaj ponovo počeo da radi.</p>
+  <p>Ako ne možete da ugasite ili da isključite uređaj, ili ako ovo ne radi, možda ćete morati ponovo da pokrenete računar da bi uređaj ponovo počeo da radi.</p>
 </section>
 
 </page>

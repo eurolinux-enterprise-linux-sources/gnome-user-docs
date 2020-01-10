@@ -11,20 +11,20 @@
 
     <credit type="author">
       <name>Шон МакКенс (Shaun McCance)</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Майкл Хилл (Michael Hill)</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Екатерина Герасимова (Ekaterina Gerasimova)</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Наглядное введение в функциональные возможности рабочего стола, верхней панели и режима <gui>Обзора</gui>.</desc>
+    <desc>Наглядное введение в функциональные возможности рабочего стола. Верхняя панель. Режим <gui>Обзора</gui>.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Александр Прокудин</mal:name>
@@ -35,7 +35,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011, 2012</mal:years>
+      <mal:years>2011-2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -49,11 +49,17 @@
       <mal:email>juliette.tux@gmail.com</mal:email>
       <mal:years>2013-2014</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
   <title>Введение в GNOME</title>
 
-  <p>GNOME 3 представляет полностью переработанный интерфейс пользователя, созданный для обеспечения удобной рабочей среды и минимизации отвлекающих факторов, что позволяет вам выполнять работу более эффективно. При первом входе в систему вы увидите пустой рабочий стол и панель в верхней части экрана.</p>
+  <p>GNOME 3 предоставляет полностью переработанный интерфейс пользователя, созданный для обеспечения удобной рабочей среды, позволяющей пользователям сосредоточиться на выполнении своей работы. При первом входе в систему вы увидите пустой рабочий стол и панель в верхней части экрана.</p>
 
 <if:choose>
   <if:when test="!platform:gnome-classic">
@@ -68,16 +74,16 @@
   </if:when>
 </if:choose>
 
-  <p>Верхняя панель предоставляет доступ к окнам и приложениям, календарю и его событиям, а также <link xref="status-icons">параметрам системы</link>, таким, как параметры звука, сетевых соединений и электропитания. В меню с именем пользователя на верхней панели можно изменить громкость звука, яркость монитора, изменить параметры <gui>Wi-Fi</gui> соединения, проверить уровень заряда аккумулятора, завершить сеанс или переключить пользователей, а также выключить компьютер.</p>
+  <p>Верхняя панель предоставляет доступ к окнам, приложениям, календарю с событиями, а также <link xref="status-icons">параметрам системы</link> (звук, сеть, электропитание и т. д.). В меню верхней панели с именем пользователя вы можете управлять громкостью звука, яркостью монитора, изменять параметры сетевого соединения, проверять уровень заряда батареи аккумулятора, а также завершить сеанс, переключить пользователя или выключить компьютер.</p>
 
 <links type="section"/>
 
 <section id="activities">
-  <title>Режим <gui>Обзора</gui></title>
+  <title>Режим <gui>обзора</gui></title>
 
 <if:choose>
   <if:when test="!platform:gnome-classic">
-    <media type="image" src="figures/shell-activities.png" width="123" height="82" style="floatend floatright" if:test="!target:mobile">
+    <media type="image" src="figures/shell-activities.png" style="floatend floatright" if:test="!target:mobile">
       <p>Кнопка «Обзор»</p>
     </media>
   </if:when>
@@ -88,28 +94,39 @@
   </if:when>
 </if:choose>
 
-  <p if:test="!platform:gnome-classic">Чтобы получить доступ к окнам и приложениям, нажмите кнопку <gui>Обзор</gui> или просто переместите указатель мыши в левый верхний угол экрана. Можно также нажать клавишу <key xref="keyboard-key-super">Super</key> на клавиатуре. В обзоре вы увидите свои окна и приложения. Кроме того, чтобы найти приложения, файлы или папки, просто начните набирать их название.</p>
+  <p if:test="!platform:gnome-classic">To access your windows and applications,
+  click the <gui>Activities</gui> button, or just move your mouse pointer to
+  the top-left hot corner. You can also press the
+  <key xref="keyboard-key-super">Super</key> key on your keyboard. You can
+  see your windows and applications in the overview. You can also just start
+  typing to search your applications, files, folders, and the web.</p>
 
-  <p if:test="platform:gnome-classic">Чтобы получить доступ к окнам и приложениям, нажмите на <link xref="shell-terminology">меню <gui>Приложения</gui></link> в верхнем левом углу экрана, и выберите пункт <gui>Обзор</gui>. Можно также нажать клавишу <key xref="keyboard-key-super">Super</key> на клавиатуре. В режиме обзора вы увидите свои окна и приложения. Чтобы найти приложения, файлы или папки, просто начните вводить их название.</p>
+  <p if:test="platform:gnome-classic">To access your windows and applications,
+  click the <gui xref="shell-introduction#activities">Applications</gui> menu
+  at the top left of the screen and select the <gui>Activities Overview</gui>
+  item. You can also press the <key xref="keyboard-key-super">Super</key> key
+  to see your windows and applications in the <gui>Activities</gui> overview. 
+  Just start typing to search your applications, files, and folders.</p>
 
-  <media type="image" src="figures/shell-dash.png" width="49" height="300" style="floatstart floatleft" if:test="!target:mobile">
+  <!-- TODO: retake without the flashy bit -->
+  <media type="image" src="figures/shell-dash.png" height="300" style="floatstart floatleft" if:test="!target:mobile">
     <p>Боковая панель</p>
   </media>
 
-  <p>С левой стороны обзора находится <em>боковая панель</em>, которая показывает избранные и запущенные приложения. Чтобы открыть приложение, нажмите на его значок в этой панели. Если приложение уже запущено, его значок выделяется подсветкой и нажатие по нему сделает активным окно этого приложения. Можно также перетащить значок в обзор или на любое рабочее место справа.</p>
+  <p>В левой части экрана в режиме обзора находится <em>боковая панель</em>. Боковая панель содержит избранные и запущенные приложения. Чтобы открыть приложение, нажмите на значок этого приложения в этой панели. Значки уже запущенных приложений подсвечиваются. Нажатие на значок запущенного приложения приведёт к открытию окна этого приложения. Вы также можете перетаскивать значки в область обзора или на любое рабочее место в правой части экрана.</p>
 
-  <p>Нажатие правой кнопкой на значок открывает меню, позволяющее выбрать любое из уже открытых окон запущенного приложения или открыть новое окно. Чтобы открыть новое окно, можно также нажать на значок, удерживая клавишу <key>Ctrl</key>.</p>
+  <p>Нажатие правой кнопки мыши на значке открывает меню, в котором можно выбрать любое из уже открытых окон запущенного приложения или открыть новое окно. Новое окно также можно открыть просто нажав на значок, удерживая при этом клавишу <key>Ctrl</key>.</p>
 
-  <p>При входе в режим обзора вы попадаете в режим обзора окон. В этом режиме показываются «живые» миниатюры всех окон, открытых на текущем рабочем месте.</p>
+  <p>Когда вы открываете обзор, то вы попадаете в режим обзора окон. В этом режиме показываются «живые» миниатюры всех окон, открытых на текущем рабочем месте.</p>
 
-  <p>Чтобы открыть обзор приложений, нажмите на значок с изображением сетки внизу боковой панели. Это позволит увидеть все приложения, установленные на вашем компьютере. Нажмите на любое приложение, чтобы запустить его, или перетащите приложение в обзор или на миниатюру рабочего места. Можно также перетащить приложение в боковую панель, чтобы сделать его избранным. Значки избранных приложений остаются в боковой панели даже когда эти приложения не запущены, чтобы обеспечить быстрый доступ к ним.</p>
+  <p>Чтобы попасть в режим обзора приложений, нажмите на значок с изображением сетки в нижней части боковой панели. В этом режиме вы увидите все приложения, установленные на вашем компьютере. Чтобы запустить приложение, нажмите на его значок или перетащите его в обзор или на миниатюру с изображеним рабочего места. Чтобы добавить приложение в избранное, перетащите его значок в боковую панель. Значки избранных приложений остаются в боковой панели, даже когда эти приложения не запущены, чтобы обеспечить быстрый доступ к ним.</p>
 
   <list style="compact">
     <item>
-      <p><link xref="shell-apps-open">Подробнее о запуске приложений. </link></p>
+      <p><link xref="shell-apps-open">Подробнее о запуске приложений.</link></p>
     </item>
     <item>
-      <p><link xref="shell-windows">Подробнее об окнах и рабочих местах. </link></p>
+      <p><link xref="shell-windows">Подробнее об окнах и рабочих местах.</link></p>
     </item>
   </list>
 
@@ -122,7 +139,7 @@
       <media type="image" src="figures/shell-appmenu-shell.png" width="250" style="floatend floatright" if:test="!target:mobile">
         <p>Меню приложения <app>Терминал</app></p>
       </media>
-      <p>Меню приложения, расположенное рядом с кнопкой <gui>Обзор</gui>, показывает название активного приложения вместе со значком этого приложения, и предоставляет быстрый доступ к параметрам приложения или к его справке. Пункты, доступные в меню приложения, зависят от конкретного приложения.</p>
+      <p>Меню приложения, расположенное рядом с кнопкой <gui>Обзор</gui>, показывает значок текущего приложения и его название, меню приложения предоставляет быстрый доступ к параметрам приложения и к его справке. Содержимое меню приложения зависит от конкретного приложения.</p>
     </if:when>
     <if:when test="platform:gnome-classic">
       <media type="image" src="figures/shell-appmenu-classic.png" width="154" height="133" style="floatend floatright" if:test="!target:mobile">
@@ -140,7 +157,7 @@
 <if:choose>
   <if:when test="!platform:gnome-classic">
     <media type="image" src="figures/shell-appts.png" width="250" style="floatend floatright" if:test="!target:mobile">
-      <p>Часы, календарь и события</p>
+      <p>Часы, календарь, события и уведомления</p>
     </media>
   </if:when>
   <if:when test="platform:gnome-classic">
@@ -150,15 +167,19 @@
   </if:when>
 </if:choose>
 
-  <p>Нажмите на часы в центре верхней панели, чтобы узнать текущую дату, посмотреть календарь на месяц и список предстоящих событий. Там же можно получить доступ к параметрам даты и времени и открыть полный календарь <app>Evolution</app>.</p>
+  <p>Чтобы открыть месячный календарь со списком предстоящих событий и уведомлений, нажмите на часы в центре верхней панели. Календарь также можно открыть сочетанием клавиш <keyseq><key>Super</key><key>M</key></keyseq>. Через появившееся меню можно получить доступ к параметрам даты и времени, а также открыть полнофункциональный календарь <app>Evolution</app>.</p>
 
   <list style="compact">
     <item>
       <p><link xref="clock-calendar">Подробнее о календаре и событиях.</link></p>
     </item>
+    <item>
+      <p><link xref="shell-notifications">Подробнее о панели уведомлений и сообщений.</link></p>
+    </item>
   </list>
 
 </section>
+
 
 <section id="yourname">
   <title>Вы и ваш компьютер</title>
@@ -222,23 +243,6 @@ messages will be presented, such as when your battery is critically low.</p>
 
 </section>
 
-<section id="message-tray">
-  <title>Лоток сообщений</title>
-
-  <media its:translate="no" type="image" src="figures/shell-message-tray.png" width="600">
-    <p its:translate="yes">Лоток сообщений</p>
-  </media>
-
-  <p>Чтобы получить доступ к лотку сообщений, переместите указатель мыши в самую нижнюю часть экрана или нажмите <keyseq><key xref="windows-key">Super</key><key>M</key></keyseq>. Лоток — это место, где хранятся все уведомления до тех пор, пока их не прочитают.</p>
-
-  <list style="compact">
-    <item>
-      <p><link xref="shell-notifications">Подробнее о лотке уведомлений и сообщений.</link></p>
-    </item>
-  </list>
-
-</section>
-
 <section id="window-list">
   <title>Список окон</title>
 
@@ -255,9 +259,9 @@ messages will be presented, such as when your battery is critically low.</p>
     <media type="image" src="figures/shell-window-list-classic.png" width="500" height="34" style="floatend floatright" if:test="!target:mobile">
       <p>Список окон</p>
     </media>
-    <p>Список окон в нижней части экрана предоставляет доступ ко всем открытым окнам и приложениям, и даёт возможность быстро сворачивать и восстанавливать их.</p>
-    <p>На правой стороне списка окон GNOME показывает короткий идентификатор текущей рабочей области, например, <gui>1</gui> — для первой (верхней) рабочей области. Кроме того, идентификатор также показывает общее количество доступных рабочих областей. Чтобы переключиться на другую рабочую область, можно нажать на идентификатор и выбрать нужную рабочую область из меню.</p>
-    <p>Если приложению или компоненту системы требуется привлечь внимание пользователя, то на правой стороне списка окон будет показан голубой значок. Нажатие на этот значок откроет лоток сообщений.</p>
+    <p>Список окон в нижней части экрана предоставляет доступ ко всем открытым окнам и приложениям и даёт возможность быстро сворачивать и восстанавливать их.</p>
+    <p>Справа от списка окон расположен идентификатор текущего рабочего места, например, <gui>1</gui> — для первого (самого верхнего) рабочего места. Идентификатор также показывает общее количество доступных рабочих мест. Чтобы переключиться на другое рабочее место, нажмите на идентификатор и выберите в меню нужное рабочее место.</p>
+    <p>Если приложению или компоненту системы требуется привлечь внимание пользователя, то на правой стороне списка окон будет показан голубой значок. Нажатие на этот значок откроет панель сообщений.</p>
   </if:when>
 </if:choose>
 

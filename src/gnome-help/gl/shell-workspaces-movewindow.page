@@ -11,11 +11,11 @@
 
     <credit type="author">
       <name>Proxecto de documentación de GNOME</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -36,14 +36,18 @@
     <title>Usando o rato:</title>
     <item>
       <p if:test="!platform:gnome-classic">Open the
-      <gui xref="shell-terminology">Activities</gui> overview.</p>
-      <p if:test="platform:gnome-classic">Abra a <gui xref="shell-terminology">Vista de Actividades</gui> desde o <link xref="shell-terminology">menú de <gui style="menu">Aplicativos</gui></link> na parte superior esquerda da pantalla.</p>
+      <gui xref="shell-introduction#activities">Activities</gui> overview.</p>
+      <p if:test="platform:gnome-classic">Open the
+      <gui xref="shell-introduction#activities">Activities Overview</gui> from the
+      <gui xref="shell-introduction#activities">Applications</gui> menu
+      at the top left of the screen.</p>
     </item>
     <item>
       <p>Prema e arrastre a xanela cara a parte dereita da pantalla.</p>
     </item>
     <item>
-      <p>O <em xref="shell-terminology">selector de espazos de traballo</em> aparecerá.</p>
+      <p>The <em xref="shell-workspaces">workspace selector</em> will
+      appear.</p>
     </item>
     <item>
       <p if:test="!platform:gnome-classic">Solte a xanela noutro espazo de traballo baleiro. Este espazo agora conterá a xanela que soltou e aparecerá un novo espazo de traballo baleiro na parte inferior do <em>selector de espazos de traballo</em>.</p>
@@ -54,7 +58,9 @@
   <steps>
     <title>Usando o teclado:</title>
     <item>
-      <p>Seleccione a xanela que quere mover (p.ex. usando o <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq> ou o <link xref="shell-terminology">trocador de xanelas</link>).</p>
+      <p>Select the window that you want to move (for example, using the
+      <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq>
+      <em xref="shell-windows-switching">window switcher</em>).</p>
     </item>
     <item>
       <p>Prema <keyseq><key>Super</key><key>Maiús</key><key>↑</key></keyseq> para mover a xanela a un espazo de traballo que está sobre o <gui>espazo de traballo</gui> actual.</p>

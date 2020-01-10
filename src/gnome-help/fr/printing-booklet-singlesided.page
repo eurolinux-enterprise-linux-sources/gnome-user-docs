@@ -6,15 +6,20 @@
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
       <email>tiffany@antopolski.com</email>
     </credit>
+    <credit type="author editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc/>
+    <desc>Print a booklet from a PDF using a single-sided printer.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Luc Pionchon</mal:name>
@@ -31,7 +36,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2014</mal:years>
+      <mal:years>2011-2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -63,6 +68,12 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
   <title>Impression d'une brochure avec une imprimante simple face</title>
@@ -79,10 +90,13 @@
       <p>Ouvrez la fenêtre d'impression. Habituellement, cliquez pour cela sur <gui style="menuitem">Imprimer</gui> dans le menu ou servez-vous du raccourci clavier <keyseq><key>Ctrl</key><key>P</key></keyseq>.</p>
     </item>
     <item>
-      <p>Ouvrez l'onglet <gui>Général</gui>.</p>
-      <p>Under <gui>Range</gui>, choose <gui>Pages</gui>.</p>
+      <p>Click the <gui>Properties...</gui> button </p>
+      <p>In the <gui>Orientation</gui> drop-down list, make sure that
+      <gui>Landscape</gui> is selected.</p>
+      <p>Click <gui>OK</gui> to go back to the print dialog.</p>
     </item>
     <item>
+      <p>Under <gui>Range and Copies</gui>, choose <gui>Pages</gui>.</p>
       <p>Saisissez les numéros de pages dans cet ordre (n est le nombre total de pages et un multiple de 4) :</p>
       <p>n, 1, 2, n-1, n-2, 3, 4, n-3, n-4, 5, 6, n-5, n-6, 7, 8, n-7, n-8, 9, 10, n-9, n-10, 11, 12, n-11…</p>
       <p>… jusqu'à ce que vous ayez saisi toutes les pages.</p>
@@ -96,14 +110,10 @@
      </note>
     </item>
     <item>
-      <p>Allez à l'onglet <gui>Mise en page</gui>.</p>
-      <p>Under <gui>Layout</gui>, in the <gui>Two-sided</gui> drop-down list,
-      select <gui>One Sided</gui>.</p>
-      <p>In the <gui>Pages per side</gui> drop-down list, select
-      <gui>2</gui>.</p>
-      <p>In the <gui>Page ordering</gui> drop-down list, select <gui>Left to
-      right</gui>.</p>
-      <p>Dans le menu <gui>Imprimer seulement</gui>, choisissez <gui>Pages impaires</gui>.</p>
+      <p>Choose the <gui>Page Layout</gui> tab.</p>
+      <p>Under <gui>Layout</gui>, select <gui>Brochure</gui>.</p>
+      <p>Under <gui>Page Sides</gui>, in the <gui>Include</gui> drop-down list,
+      select <gui>Front sides / right pages</gui>.</p>
     </item>
     <item>
       <p>Cliquez sur <gui>Imprimer</gui>.</p>
@@ -115,8 +125,9 @@
       <p>Ouvrez la fenêtre d'impression. Habituellement, cliquez pour cela sur <gui style="menuitem">Imprimer</gui> dans le menu ou servez-vous du raccourci clavier <keyseq><key>Ctrl</key><key>P</key></keyseq>.</p>
     </item>
     <item>
-      <p>Allez à l'onglet <gui>Mise en page</gui>.</p>
-      <p>Dans le menu <gui>Imprimer seulement</gui>, choisissez <gui>Pages paires</gui>.</p>
+      <p>Choose the <gui>Page Layout</gui> tab.</p>
+      <p>Under <gui>Page Sides</gui>, in the <gui>Include</gui> drop-down list,
+      select <gui>Back sides / left pages</gui>.</p>
     </item>
     <item>
       <p>Cliquez sur <gui>Imprimer</gui>.</p>

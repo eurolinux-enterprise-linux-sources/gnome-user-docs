@@ -26,7 +26,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011, 2012</mal:years>
+      <mal:years>2011-2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -40,6 +40,12 @@
       <mal:email>juliette.tux@gmail.com</mal:email>
       <mal:years>2013-2014</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
  <title>Переключение между рабочими местами</title>
@@ -47,11 +53,16 @@
  <steps>  
  <title>С помощью мыши:</title>
  <item>
-  <p if:test="!platform:gnome-classic">Откройте <link xref="shell-terminology">режим <gui>Обзора</gui></link>.</p>
-  <p if:test="platform:gnome-classic">Нажмите на <link xref="shell-terminology">меню <gui>Приложения</gui></link> в верхней левой части экрана и выберите пункт <gui>Обзор</gui>.</p>
+    <p if:test="!platform:gnome-classic">Open the
+    <gui xref="shell-introduction#activities">Activities</gui> overview.</p>
+  <p if:test="platform:gnome-classic">At the top left of the screen, click the
+  <gui xref="shell-introduction#activities">Applications</gui> menu and choose 
+  <gui>Activities Overview</gui>.</p>
  </item>
  <item>
-  <p>Нажмите на <link xref="shell-terminology">переключатель рабочих мест</link>, расположенный с правой стороны экрана, чтобы увидеть окна, открытые на этом рабочем столе.</p>
+  <p>Click on a workspace in the <link xref="shell-workspaces">workspace
+  selector</link> on the right side of the screen to view the open windows on
+  that workspace.</p>
  </item>
  <item>
   <p>Нажмите на миниатюру любого окна чтобы активировать рабочее место.</p>

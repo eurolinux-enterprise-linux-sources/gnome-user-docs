@@ -2,10 +2,11 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-rename" xml:lang="ja">
 
   <info>
-    <link type="guide" xref="files"/>
+    <link type="guide" xref="files#common-file-tasks"/>
 
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>GNOME ドキュメンテーションプロジェクト</name>
@@ -23,6 +24,10 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
@@ -31,7 +36,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -79,14 +84,15 @@
   <steps>
     <title>ファイル、フォルダーの名前を変更する</title>
     <item><p>アイテムを右クリックし、<gui>名前の変更</gui>を選択するか、あるいはファイルを選択して <key>F2</key> キーを押します。</p></item>
-    <item><p>新しい名前を入力し、<key>Enter</key> キーを押します。</p></item>
+    <item><p>Type the new name and press <key>Enter</key> or click
+    <gui>Rename</gui>.</p></item>
   </steps>
 
   <p><link xref="nautilus-file-properties-basic">プロパティ</link>ウィンドウからファイルの名前を変更することもできます。</p>
 
   <p>When you rename a file, only the first part of the name of the file is
-  selected, not the file extension (the part after the <file>.</file>). The
-  extension normally denotes what type of file it is (for example,
+  selected, not the file extension (the part after the last <file>.</file>).
+  The extension normally denotes what type of file it is (for example,
   <file>file.pdf</file> is a PDF document), and you usually do not want to
   change that. If you need to change the extension as well, select the entire
   file name and change it.</p>
@@ -94,7 +100,7 @@
   <note style="tip">
     <p>If you renamed the wrong file, or named your file improperly, you can
     undo the rename. To revert the action, immediately click the menu button in
-    the toolbar and select <gui>Undo</gui>, or press
+    the toolbar and select <gui>Undo Rename</gui>, or press
     <keyseq><key>Ctrl</key><key>Z</key></keyseq>, to restore the former
     name.</p>
   </note>
@@ -102,17 +108,10 @@
   <section id="valid-chars">
     <title>ファイル名として有効な文字</title>
 
-    <p>You can use any character except the <file>/</file> (slash) character in
-    file names. Some devices, however, use a <em>file system</em> that has more
-    restrictions on file names. Therefore, it is a best practice to avoid the
-    following characters in your file names: <file>|</file>, <file>\</file>,
-    <file>?</file>, <file>*</file>, <file>&lt;</file>, <file>"</file>,
-    <file>:</file>, <file>&gt;</file>, <file>/</file>.</p>
+    <p>ファイル名には、<file>/</file> (スラッシュ) を除いて、任意の文字を使用できます。しかしながら、ファイル名の条件としてより厳しい制限のある<em>ファイルシステム</em>を使用するデバイスもあります。そのため、ファイル名として次の文字を避けることが最善とされています。<file>|</file>, <file>\</file>, <file>?</file>, <file>*</file>, <file>&lt;</file>, <file>"</file>, <file>:</file>, <file>&gt;</file>, <file>/</file>.</p>
 
     <note style="warning">
-    <p>If you name a file with a <file>.</file> as the first character, the
-    file will be <link xref="files-hidden">hidden</link> when you attempt to
-    view it in the file manager.</p>
+    <p><file>.</file> で始まる名前を付けると、そのファイルをファイルマネージャーで表示しようとしても、<link xref="files-hidden">表示されません</link>。</p>
     </note>
 
   </section>

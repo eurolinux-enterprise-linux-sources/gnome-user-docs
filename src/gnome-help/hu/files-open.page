@@ -2,10 +2,11 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-open" xml:lang="hu">
 
   <info>
-    <link type="guide" xref="files" group="more"/>
+    <link type="guide" xref="files#more-file-tasks"/>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-30" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="candidate"/>
 
     <credit type="author">
       <name>Cristopher Thomas</name>
@@ -29,7 +30,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Kelemen Gábor</mal:name>
       <mal:email>kelemeng at gnome dot hu</mal:email>
-      <mal:years>2011, 2012, 2013, 2014</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -59,9 +60,9 @@
 
 <title>Fájlok megnyitása más alkalmazásokkal</title>
 
-<p>Amikor duplán kattint egy fájlra a fájlkezelőben, akkor az az adott fájltípus alap alkalmazásával kerül megnyitásra. A fájlt megnyithatja másik alkalmazással, kereshet hozzá alkalmazásokat online, vagy beállíthat a fájltípushoz egy új alap alkalmazást.</p>
+  <p>Amikor duplán (vagy a középső gombbal) kattint egy fájlra a fájlkezelőben, akkor az az adott fájltípus alap alkalmazásával kerül megnyitásra. A fájlt megnyithatja másik alkalmazással, kereshet hozzá alkalmazásokat online, vagy beállíthat a fájltípushoz egy új alap alkalmazást.</p>
 
-<p>Egy fájl az alaptól eltérő alkalmazással való megnyitásához kattintson a fájlra a jobb egérgombbal, és válassza ki az alkalmazást a menü tetejéről. Ha nem látja a kívánt alkalmazást, akkor válassza a <gui>Megnyitás ezzel</gui> menüpontot. Alapesetben a fájlkezelő csak az általa a fájl kezelésére képesnek tartott alkalmazásokat jeleníti meg. A számítógépén található összes alkalmazás áttekintéséhez válassza a <gui>Más alkalmazások</gui> menüpontot.</p>
+  <p>Egy fájl az alaptól eltérő alkalmazással való megnyitásához kattintson a fájlra a jobb egérgombbal, és válassza ki az alkalmazást a menü tetejéről. Ha nem látja a kívánt alkalmazást, akkor válassza a <gui>Megnyitás más alkalmazással</gui> menüpontot. Alapesetben a fájlkezelő csak az általa a fájl kezelésére képesnek tartott alkalmazásokat jeleníti meg. A számítógépén található összes alkalmazás áttekintéséhez válassza a <gui>Minden alkalmazás megjelenítése</gui> menüpontot.</p>
 
 <p>Ha így sem találja a kívánt alkalmazást, akkor az <gui>Új alkalmazások keresése</gui> lehetőség kiválasztásával további alkalmazásokat kereshet. A fájlkezelő online fog keresni az adott fájltípus kezelésére képes alkalmazásokat tartalmazó csomagokat.</p>
 
@@ -73,11 +74,13 @@
     <item><p>Válasszon egy olyan típusú fájlt, amelynek alap alkalmazását módosítani kívánja. Az MP3-fájlok megnyitására használt alkalmazás módosításához például válasszon egy <file>.mp3</file> fájlt.</p></item>
     <item><p>Kattintson a jobb egérgombbal a fájlra, és válassza a <gui>Tulajdonságok</gui> menüpontot.</p></item>
     <item><p>Válassza a <gui>Megnyitás ezzel</gui> lapot.</p></item>
-    <item><p>Válassza ki a kívánt alkalmazást, és kattintson a <gui>Beállítás alapként</gui> gombra. Alapesetben a fájlkezelő csak a fájl kezelésére képes alkalmazásokat jeleníti meg. A számítógépen található összes alkalmazás végignézéséhez kattintson a <gui>Más alkalmazások megjelenítése</gui> gombra.</p>
+    <item><p>Válassza ki a használni kívánt alkalmazást, és nyomja meg a <gui>Beállítás alapértelmezettként</gui> gombot.</p>
     <p>Ha a <gui>Más alkalmazások</gui> közt olyan alkalmazást talál, amelyet néha szeretne használni, de nem akar alapként beállítani, akkor válassza ki azt az alkalmazást, és kattintson a <gui>Hozzáadás</gui> gombra. Ez hozzáadja a <gui>Javasolt alkalmazások</gui> listájához. Ezt az alkalmazást a továbbiakban a fájlokon való jobb kattintással megjelenő listából választhatja ki.</p></item>
   </steps>
 
   <p>Ez az alap alkalmazást nem csak az adott fájlhoz, hanem minden ugyanolyan típusú fájlhoz is megváltoztatja.</p>
+
+<!-- TODO: mention resetting the open with list with the "Reset" button -->
 
 </section>
 

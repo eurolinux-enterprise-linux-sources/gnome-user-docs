@@ -2,14 +2,13 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-connect" xml:lang="mr">
 
   <info>
-    <link type="guide" xref="files" group="more"/>
+    <link type="guide" xref="files#more-file-tasks"/>
     <link type="guide" xref="sharing"/>
 
     <revision pkgversion="3.6.0" date="2012-10-06" status="review"/>
     <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
     <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
-
-    <desc>FTP, SSH, Windows शेअर्स, किंवा WebDAV वरील दुसऱ्या संगणकावरील फाइल्सचे अवलोकन आणि संपादन.</desc>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -19,7 +18,15 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>FTP, SSH, Windows शेअर्स, किंवा WebDAV वरील दुसऱ्या संगणकावरील फाइल्सचे अवलोकन आणि संपादन.</desc>
+
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Aniket Deshpande &lt;djaniketster@gmail.com&gt;, 2013; संदिप शेडमाके</mal:name>
@@ -32,19 +39,33 @@
 
 <p>ठराविक सर्व्हरवरील फाइल्सच्या चाळणी आणि अवलोकनकरिता सर्व्हर किंवा नेटवर्क शेअरशी जोडणी शक्य आहे, संगणकावर आढळल्याप्रमाणेच. इंटरनेटवरील फाइल्स डाउनलोड किंवा अपलोड करण्याचे, किंवा स्थानीय नेटवर्कवरील इतर व्यक्तिंसह फाइल्स शेअर करण्यासाठी, हे योग्य पर्याय आहे.</p>
 
-<p>नेटवर्कवरील फाइल्स चाळणे, <gui>कृती</gui> अवलोकनपासून <app>फाइल्स</app> ॲप्लिकेशन उघडा, आणि बाजूच्यापट्टीमधील <gui>नेटवर्क चाळा</gui> क्लिक करा. फाइल व्यवस्थाक, फाइल्स सर्व्ह करण्याची क्षमता असणाऱ्या स्थानीय क्षेत्र नेटवर्कवरील संगणकांना शोधते. इंटरनेटवरील सर्व्हरशी जोडणी करायची असल्यास, किंवा पसंतीचे संगणक न आढळल्यास, तुम्ही इंटरनेट किंवा नेटवर्क पत्ता टाइप करून स्वतः सर्व्हरसह जोडणी करू शकता.</p>
+<p>To browse files over the network, open the <app>Files</app>
+application from the <gui>Activities</gui> overview, and click
+<gui>Other Locations</gui> in the sidebar. The file manager
+will find any computers on your local area network that advertize
+their ability to serve files. If you want to connect to a server
+on the internet, or if you do not see the computer you're looking
+for, you can manually connect to a server by typing in its
+internet/network address.</p>
 
 <steps>
   <title>फाइल सर्वरशी जोडा</title>
-  <item><p>In the file manager, click <gui>Connect to Server</gui> in the
+  <item><p>In the file manager, click <gui>Other Locations</gui> in the
    sidebar.</p>
   </item>
-  <item><p>सर्व्हरचा पत्ता द्या, <link xref="#urls">URL</link> स्वरूपात. समर्थीत URLs च्या तपशील <link xref="#types">खालील सूचीमध्ये</link> आहे.</p>
+  <item><p>In <gui>Connect to Server</gui>, enter the address of the server, in
+  the form of a
+   <link xref="#urls">URL</link>. Details on supported URLs are
+   <link xref="#types">listed below</link>.</p>
   <note>
     <p>यापूर्वी सर्व्हरशी जोडणी केली असल्यास, <gui>नविन सर्व्हर्स</gui> सूचीमध्ये तुम्ही त्यावर क्लिक करू शकाल.</p>
   </note>
   </item>
-  <item><p><gui>जोडणी</gui> क्लिक करा. सर्व्हरवरील फाइल्स दाखवणारे नविन पटल उघडेल. संगणकावरील प्रमाणेच फाइल्स चाळणे शक्य होईल. बाजूच्यापट्टीत सर्व्हर देखील समाविष्ट केले जाईल जेणेकरून तुम्ही भविष्यात पटकन प्रवेश प्राप्त करू शकाल</p>
+  <item>
+    <p>Click <gui>Connect</gui>. The files on the server will be shown. You
+    can browse the files just as you would for those on your own computer. The
+    server will also be added to the sidebar so you can access it quickly in
+    the future.</p>
   </item>
 </steps>
 
@@ -111,9 +132,20 @@
 <item>
   <title>WebDAV आणि सुरक्षित WebDAV</title>
   <p>वेबवरील वापरण्याजोगी HTTP प्रोटोकॉलवर आधारित, WebDAV चा वापर कधीकधी स्थानीय नेटवर्कवर फाइल्स शेअर करणे आणि इंटरनेटवरील फाइल्स साठवण्याकरिता केला जातो. सुरक्षित जोडणींकरिता समर्थन पुरवणाऱ्या सर्व्हरसह जोडणी करताना, ह्या पर्यायची निवड करा. सेक्युर WebDAV मजबूत SSL एंक्रिप्शनचा वापर करतात, ज्यामुळे इतर वापरकर्ते तुमचा पासवर्ड पाहू शकणार नाही.</p>
-  <p>वैशिष्टपूर्ण WebDAV URL खालील प्रमाणे दिसते:</p>
+  <p>A WebDAV URL looks like this:</p>
   <example>
-    <p><sys>http://example.hostname.com/path</sys></p>
+    <p><sys>dav://example.hostname.com/path</sys></p>
+  </example>
+</item>
+<item>
+  <title>NFS share</title>
+  <p>UNIX computers traditionally use the Network File System protocol to
+  share files over a local network. With NFS, security is based on the UID of
+  the user accessing the share, so no authentication credentials are
+  needed when connecting.</p>
+  <p>A typical NFS share URL looks like this:</p>
+  <example>
+    <p><sys>nfs://servername/path</sys></p>
   </example>
 </item>
 </terms>

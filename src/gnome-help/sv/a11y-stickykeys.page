@@ -8,96 +8,81 @@
     <revision pkgversion="3.8.0" date="2013-03-13" status="candidate"/>
     <revision pkgversion="3.9.92" date="2013-09-18" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-20" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="author">
       <name>Phil Bull</name>
-      <email its:translate="no">philbull@gmail.com</email>
+      <email>philbull@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
-    <desc>Type keyboard shortcuts one key at a time rather than having to hold
-     down all of the keys at once.</desc>
+    <desc>Mata in snabbtangenter en tangent i taget istället för att hålla ner alla tangenterna på en gång.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
   </info>
 
-  <title>Turn on sticky keys</title>
+  <title>Aktivera klistriga tangenter</title>
 
-  <p><em>Sticky keys</em> allows you to type keyboard shortcuts one key at a
-  time rather than having to hold down all of the keys at once. For example,
-  the <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq>
-  shortcut switches between windows. Without sticky keys turned on, you would
-  have to hold down both keys at the same time; with sticky keys turned on, you
-  would press <key>Super</key> and then <key>Tab</key> to do the same.</p>
+  <p><em>Klistriga tangenter</em> låter dig skriva in snabbtangenter en tangent i taget istället för att hålla ner alla tangenterna på en gång. Till exempel växlar snabbtangenten <keyseq><key xref="keyboard-key-super">Super</key><key>Tabb</key></keyseq> mellan fönster. Utan att ha klistriga tangenter aktiverat så skulle du behöva hålla ner båda tangenterna samtidigt, med klistriga tangenter aktiverat skulle du behöva trycka på <key>Super</key> och sedan <key>Tabb</key> för att göra samma sak.</p>
 
-  <p>You might want to turn on sticky keys if you find it difficult to hold
-  down several keys at once.</p>
+  <p>Du kanske vill aktivera klistriga tangenter om du har svårt att hålla ner flera tangenter samtidigt.</p>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-terminology">Activities</gui> overview and
-      start typing <gui>Universal Access</gui>.</p>
+      <p>Öppna <gui xref="shell-introduction#activities">Aktiviteter</gui> och börja skriv <gui>Hjälpmedel</gui>.</p>
     </item>
     <item>
-      <p>Click on <gui>Universal Access</gui> to open the panel.</p>
+      <p>Klicka på <gui>Hjälpmedel</gui> för att öppna panelen.</p>
     </item>
     <item>
-      <p>Press <gui>Typing Assist (AccessX)</gui> in the <gui>Typing</gui>
-      section.</p>
+      <p>Tryck på <gui>Skrivassistent (AccessX)</gui> i avsnittet <gui>Skriva</gui>.</p>
     </item>
     <item>
-      <p>Switch <gui>Sticky Keys</gui> to <gui>ON</gui>.</p>
+      <p>Slå om <gui>Klistriga tangenter</gui> till <gui>PÅ</gui>.</p>
     </item>
   </steps>
 
   <note style="tip">
-    <title>Quickly turn sticky keys on and off</title>
-    <p>Under <gui>Enable by Keyboard</gui>, select
-    <gui>Turn on accessibility features from the keyboard</gui>
-    to turn sticky keys on and off from the keyboard. When this option is
-    selected, you can press <key>Shift</key> five times in a row to enable or
-    disable sticky keys.</p>
-    <p>You can also turn sticky keys on and off by clicking the
-    <link xref="a11y-icon">accessibility icon</link> on the top bar and
-    selecting <gui>Sticky Keys</gui>. The accessibility icon is visible when
-    one or more settings have been enabled from the <gui>Universal Access</gui>
-    panel.</p>
+    <title>Aktivera och inaktivera klistriga tangenter snabbt</title>
+    <p>Under <gui>Aktivera med tangentbord</gui>, välj <gui>Slå på och av hjälpmedelsfunktioner från tangentbordet</gui> för att kunna aktivera eller inaktivera klistriga tangenter från tangentbordet. När denna inställning är vald kan du trycka på <key>Skift</key> fem gånger i rad för att aktivera eller inaktivera klistriga tangenter.</p>
+    <p>Du kan också aktivera eller inaktivera klistriga tangenter genom att klicka på <link xref="a11y-icon">hjälpmedelsikonen</link> i systemraden och välja <gui>Klistriga tangenter</gui>. Hjälpmedelsikonen är synlig när en eller flera inställningar har aktiverats från panelen <gui>Hjälpmedel</gui>.</p>
   </note>
 
-  <p>If you press two keys at once, you can have sticky keys turn itself off
-  temporarily to let you enter a keyboard shortcut in the normal way.</p>
+  <p>Om du trycker på två tangenter samtidigt stänger klistriga tangenter tillfälligt av sig själv för att låta dig mata in snabbtangenter på det vanliga sättet.</p>
 
-  <p>For example, if you have sticky keys turned on but press <key>Super</key>
-  and <key>Tab</key> simultaneously, sticky keys would not wait for you to
-  press another key if you had this option turned on. It <em>would</em> wait if
-  you only pressed one key, however. This is useful if you are able to press
-  some keyboard shortcuts simultaneously (for example, keys that are close
-  together), but not others.</p>
+  <p>Till exempel om du har klistriga tangenter aktiverat men trycker ner <key>Super</key> och <key>Tabb</key> samtidigt så kommer klistriga tangenter inte att vänta på att du ska trycka ner ytterligare en tangent om du har denna inställning aktiverad. Den <em>hade</em> väntat om du bara hade tryckt ner en tangent dock. Detta är användbart om du kan trycka ner vissa snabbtangenter samtidigt (till exempel tangenter som sitter nära varandra), men inte andra.</p>
 
-  <p>Select <gui>Disable if two keys are pressed together</gui> to enable
-  this.</p>
+  <p>Välj <gui>Inaktivera om två tangenter trycks samtidigt</gui> för att aktivera detta.</p>
 
-  <p>You can have the computer make a "beep" sound when you start typing a
-  keyboard shortcut with sticky keys turned on. This is useful if you want to
-  know that sticky keys is expecting a keyboard shortcut to be typed, so the
-  next key press will be interpreted as part of a shortcut. Select <gui>Beep
-  when a modifier key is pressed</gui> to enable this.</p>
+  <p>Du kan få datorn att spela upp ett ”pip”-ljud när du börjar mata in en snabbtangent när klistriga tangenter är aktiverat. Detta är användbart om du vill veta att klistriga tangenter förväntar sig att en snabbtangent håller på att matas in, så att nästa tangent som trycks ner kommer att tolkas som en del av snabbtangenten. Välj <gui>Pip när en modifierartangent trycks ned</gui> för att aktivera detta.</p>
 
 </page>

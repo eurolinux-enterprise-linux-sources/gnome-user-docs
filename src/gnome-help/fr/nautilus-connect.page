@@ -2,14 +2,13 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-connect" xml:lang="fr">
 
   <info>
-    <link type="guide" xref="files" group="more"/>
+    <link type="guide" xref="files#more-file-tasks"/>
     <link type="guide" xref="sharing"/>
 
     <revision pkgversion="3.6.0" date="2012-10-06" status="review"/>
     <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
     <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
-
-    <desc>Afficher et modifier des fichiers sur un autre ordinateur par FTP, SSH, partage Windows ou WebDAV.</desc>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -19,7 +18,15 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Afficher et modifier des fichiers sur un autre ordinateur par FTP, SSH, partage Windows ou WebDAV.</desc>
+
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Luc Pionchon</mal:name>
@@ -36,7 +43,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2014</mal:years>
+      <mal:years>2011-2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -68,24 +75,45 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
 <title>Consultation de fichiers sur un serveur ou un réseau partagé</title>
 
 <p>Vous pouvez vous connecter à un serveur ou à un réseau pour y chercher et afficher des fichiers comme s'ils étaient sur votre propre ordinateur. C'est une bonne façon de télécharger ou téléverser des fichiers sur Internet, ou de les partager avec les autres membres de votre réseau local.</p>
 
-<p>Pour parcourir les fichiers sur le réseau, ouvrez l'application <app>Fichiers</app> à partir de la vue d'ensemble des <gui>Activités</gui> puis, cliquez sur <gui>Explorer le réseau</gui> dans la barre latérale ou sélectionner <gui>Réseau</gui> dans le menu <gui>Aller à</gui>. Le gestionnaire de fichier trouve alors tous les ordinateurs de votre réseau local qui annoncent leur possibilité de servir des fichiers. Si vous voulez vous connecter à un serveur sur Internet ou si vous ne voyez pas l'ordinateur que vous cherchez, vous pouvez vous connecter manuellement à un serveur en saisissant son adresse réseau ou Internet.</p>
+<p>To browse files over the network, open the <app>Files</app>
+application from the <gui>Activities</gui> overview, and click
+<gui>Other Locations</gui> in the sidebar. The file manager
+will find any computers on your local area network that advertize
+their ability to serve files. If you want to connect to a server
+on the internet, or if you do not see the computer you're looking
+for, you can manually connect to a server by typing in its
+internet/network address.</p>
 
 <steps>
   <title>Connexion à un serveur de fichiers</title>
-  <item><p>Dans le gestionnaire de fichiers, cliquez sur <gui>Se connecter à un serveur</gui> dans le panneau latéral.</p>
+  <item><p>In the file manager, click <gui>Other Locations</gui> in the
+   sidebar.</p>
   </item>
-  <item><p>Saisissez l'adresse du serveur, sous la forme d'un <link xref="#urls">URL</link>. Les détails sur les différents types de serveurs sont donnés <link xref="#types">ci-dessous</link>.</p>
+  <item><p>In <gui>Connect to Server</gui>, enter the address of the server, in
+  the form of a
+   <link xref="#urls">URL</link>. Details on supported URLs are
+   <link xref="#types">listed below</link>.</p>
   <note>
     <p>Si vous vous êtes déjà connecté au serveur récemment, vous pouvez cliquer dessus dans la liste des <gui>Connexions récentes</gui>.</p>
   </note>
   </item>
-  <item><p>Cliquez sur <gui>Se connecter</gui>. Une nouvelle fenêtre s'ouvre affichant les fichiers disponibles sur le serveur. Vous pouvez les consulter comme vous le feriez sur votre propre ordinateur. Le serveur est également ajouté dans la barre latérale pour que vous puissiez y accéder facilement plus tard.</p>
+  <item>
+    <p>Click <gui>Connect</gui>. The files on the server will be shown. You
+    can browse the files just as you would for those on your own computer. The
+    server will also be added to the sidebar so you can access it quickly in
+    the future.</p>
   </item>
 </steps>
 
@@ -152,9 +180,17 @@
 <item>
   <title>WebDAV et WebDAV sécurisé</title>
   <p>Basé sur le protocole HTTP en vigueur sur le Web, WebDAV sert parfois à partager des données sur un réseau local et à enregistrer des fichiers sur internet. Si le serveur distant l'accepte, il est préférable d'établir une connexion sécurisée. Le WebDAV sécurisé utilise un chiffrement SSL très puissant, de sorte que personne ne peut voir votre mot de passe.</p>
-  <p>Une adresse URL WebDAV ressemble typiquement à ceci :</p>
+  <p>Une adresse URL WebDAV ressemble à ceci :</p>
   <example>
-    <p><sys>http://exemple.nomdhote.com/chemin</sys></p>
+    <p><sys>dav://exemple.nomdhote.com/chemin</sys></p>
+  </example>
+</item>
+<item>
+  <title>Partage NFS</title>
+  <p>Les ordinateurs sous UNIX utilisent traditionnellement le protocole NFS (Network File System protocol) pour partager les fichiers sur un réseau local. Avec NFS, la sécurité est basée sur l'identifiant UID de l'utilisateur accédant au partage et donc il n'a pas besoin de s'authentifier pour s'y connecter.</p>
+  <p>Un URL de partage NFS ressemble à ceci :</p>
+  <example>
+    <p><sys>nfs://nomduserveur/chemin</sys></p>
   </example>
 </item>
 </terms>

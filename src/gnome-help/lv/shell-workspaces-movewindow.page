@@ -11,11 +11,11 @@
 
     <credit type="author">
       <name>GNOME dokumentācijas projekts</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -28,15 +28,17 @@
   <steps>
     <title>Lietojot peli:</title>
     <item>
-      <p if:test="!platform:gnome-classic">Open the
-      <gui xref="shell-terminology">Activities</gui> overview.</p>
-      <p if:test="platform:gnome-classic">Atveriet <gui xref="shell-terminology">Aktivitāšu pārskatu</gui> no<link xref="shell-terminology"> izvēlnes <gui>Lietotnes</gui></link> ekrāna augšējā kreisajā stūrī.</p>
+      <p if:test="!platform:gnome-classic">Atveriet <gui xref="shell-introduction#activities">Aktivitāšu</gui> pārskatu.</p>
+      <p if:test="platform:gnome-classic">Open the
+      <gui xref="shell-introduction#activities">Activities Overview</gui> from the
+      <gui xref="shell-introduction#activities">Applications</gui> menu
+      at the top left of the screen.</p>
     </item>
     <item>
       <p>Spiediet un velciet logu pret labo ekrāna pusi.</p>
     </item>
     <item>
-      <p>Parādīsies <em xref="shell-terminology">darbvietu atlasītājs</em>.</p>
+      <p>Parādīsies <em xref="shell-workspaces">darbvietu atlasītājs</em>.</p>
     </item>
     <item>
       <p if:test="!platform:gnome-classic">Nometiet logu uz tukšas darbvietas. Šī darbvieta tagad satur nomesto logu un <em>darbvietu atlasītājā</em> parādās jauna, tukša darbvieta.</p>
@@ -47,7 +49,9 @@
   <steps>
     <title>Lietojot tastatūru:</title>
     <item>
-      <p>Izvēlieties logu, ko vēlaties pārvietot (piemēram, lietojot <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq> <em xref="shell-terminology">logu pārslēdzēju</em>).</p>
+      <p>Select the window that you want to move (for example, using the
+      <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq>
+      <em xref="shell-windows-switching">window switcher</em>).</p>
     </item>
     <item>
       <p>Spiediet <keyseq><key>Super</key><key>Shift</key><key>Page Up</key></keyseq>, lai pārvietotu logu uz darbvietu, kas ir virs pašreizējās darbvietas <em>darbvietu atlasītājā</em>.</p>

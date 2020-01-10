@@ -32,7 +32,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Christian Kirbach</mal:name>
       <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2014.</mal:years>
+      <mal:years>2011-2016.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -54,15 +54,9 @@
         <p>Arbeitsflächenumschalter</p>
     </media>
 
-  <p if:test="!platform:gnome-classic">Workspaces refer to the grouping of
-  windows on your desktop. You can create multiple workspaces, which act like
-  virtual desktops. Workspaces are meant to reduce clutter and make the desktop
-  easier to navigate.</p>
+  <p if:test="!platform:gnome-classic">Mit Arbeitsflächen gruppieren Sie Fenster auf Ihrem Schreibtisch. Sie können mehrere Arbeitsflächen erstellen, die wie virtuelle Arbeitsumgebungen fungieren. Arbeitsflächen sind eine Möglichkeit, um Ordnung zu schaffen und das Bewegen in der Arbeitsumgebung zu vereinfachen.</p>
 
-  <p if:test="platform:gnome-classic">Workspaces refer to the grouping of
-  windows on your desktop. You can use multiple workspaces, which act like
-  virtual desktops. Workspaces are meant to reduce clutter and make the desktop
-  easier to navigate.</p>
+  <p if:test="platform:gnome-classic">Mit Arbeitsflächen gruppieren Sie Fenster auf Ihrem Schreibtisch. Sie können mehrere Arbeitsflächen verwenden, die wie virtuelle Arbeitsumgebungen fungieren. Arbeitsflächen sind eine Möglichkeit, um Ordnung zu schaffen und das Bewegen in der Arbeitsumgebung zu vereinfachen.</p>
 
   <p>Sie können Arbeitsflächen dazu verwenden, um Ihre Arbeit besser zu organisieren. Beispielsweise könnten alle Fenster von Kommunikationsanwendungen, wie E-Mail- und Sofortnachrichten, auf einer Arbeitsfläche liegen und alle sonstigen Anwendungen auf einer anderen Arbeitsfläche. Ihre Musikverwaltung könnte dann eine weitere Arbeitsfläche belegen.</p>
 
@@ -70,27 +64,15 @@
 
 <list>
   <item>
-    <p if:test="!platform:gnome-classic">In the
-    <gui xref="shell-terminology">&gt;Activities</gui> overview, move your cursor
-    to the right-most side of the screen.</p>
-    <p if:test="platform:gnome-classic">Press the
-    <key xref="keyboard-key-super">Super</key> key to open the
-    <gui>Activities</gui> overview and then move your cursor to the right-most
-    side of the screen.</p>
+    <p if:test="!platform:gnome-classic">Bewegen Sie in der <gui>Aktivitäten</gui>-Übersicht den Zeiger zur äußersten rechten Seite des Bildschirms.</p>
+    <p if:test="platform:gnome-classic">Drücken Sie die <key xref="keyboard-key-super">Super</key>-Taste, um die <gui>Aktivitäten</gui>-Übersicht zu öffnen, und bewegen Sie den Zeiger zur äußersten rechten Seite des Bildschirms.</p>
   </item>
   <item>
-    <p if:test="!platform:gnome-classic">A vertical panel will appear showing
-    workspaces in use, plus an empty workspace. This is the
-    <link xref="shell-terminology">workspace selector</link>.</p>
-    <p if:test="platform:gnome-classic">A vertical panel will appear showing
-    available workspaces. This is the <link xref="shell-terminology">workspace
-    selector</link>.</p>
+    <p if:test="!platform:gnome-classic">Eine senkrechte Seitenleiste erscheint, in der alle aktuellen Arbeitsflächen sowie eine zusätzliche leere Arbeitsfläche angezeigt werden. Dies ist der Arbeitsflächenumschalter.</p>
+    <p if:test="platform:gnome-classic">Eine senkrechte Seitenleiste erscheint, in der die verfügbaren Arbeitsflächen angezeigt werden. Dies ist der Arbeitsflächenumschalter.</p>
   </item>
   <item if:test="!platform:gnome-classic">
-    <p>To add a workspace, drag and drop a window from an existing workspace
-    onto the empty workspace in the <link xref="shell-terminology">workspace
-    selector</link>. This workspace now contains the window you have dropped,
-    and a new empty workspace will appear below it.</p>
+    <p>Um eine Arbeitsfläche hinzuzufügen, verschieben Sie ein Fenster aus einer vorhandenen Arbeitsfläche in die leere Arbeitsfläche im Arbeitsflächenumschalter. Diese Arbeitsfläche enthält nun das abgelegte Fenster und eine weitere leere Arbeitsfläche erscheint darunter.</p>
   </item>
   <item if:test="!platform:gnome-classic">
     <p>Um eine Arbeitsfläche zu entfernen, schließen Sie einfach alle darin befindlichen Fenster, oder verschieben Sie die Fenster in eine andere Arbeitsfläche.</p>

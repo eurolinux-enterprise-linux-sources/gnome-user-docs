@@ -11,15 +11,15 @@
 
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -65,7 +65,7 @@
 
 <if:choose>
   <if:when test="!platform:gnome-classic">
-    <media type="image" src="figures/shell-activities.png" width="123" height="82" style="floatend floatright" if:test="!target:mobile">
+    <media type="image" src="figures/shell-activities.png" style="floatend floatright" if:test="!target:mobile">
       <p>活动按钮</p>
     </media>
   </if:when>
@@ -81,16 +81,17 @@
   the top-left hot corner. You can also press the
   <key xref="keyboard-key-super">Super</key> key on your keyboard. You can
   see your windows and applications in the overview. You can also just start
-  typing to search your applications, files, folders and the web.</p>
+  typing to search your applications, files, folders, and the web.</p>
 
   <p if:test="platform:gnome-classic">To access your windows and applications,
-  click the <link xref="shell-terminology"><gui>Applications</gui> menu</link>
+  click the <gui xref="shell-introduction#activities">Applications</gui> menu
   at the top left of the screen and select the <gui>Activities Overview</gui>
   item. You can also press the <key xref="keyboard-key-super">Super</key> key
   to see your windows and applications in the <gui>Activities</gui> overview. 
   Just start typing to search your applications, files, and folders.</p>
 
-  <media type="image" src="figures/shell-dash.png" width="49" height="300" style="floatstart floatleft" if:test="!target:mobile">
+  <!-- TODO: retake without the flashy bit -->
+  <media type="image" src="figures/shell-dash.png" height="300" style="floatstart floatleft" if:test="!target:mobile">
     <p>dash</p>
   </media>
 
@@ -150,7 +151,7 @@
 <if:choose>
   <if:when test="!platform:gnome-classic">
     <media type="image" src="figures/shell-appts.png" width="250" style="floatend floatright" if:test="!target:mobile">
-      <p>时钟、日历和日程安排</p>
+      <p>Clock, calendar, appointments and notifications</p>
     </media>
   </if:when>
   <if:when test="platform:gnome-classic">
@@ -161,17 +162,23 @@
 </if:choose>
 
   <p>Click the clock on the top bar to see the current date, a month-by-month
-  calendar, and a list of your upcoming appointments. You can also access the
-  date and time settings and open your full <app>Evolution</app> calendar
-  directly from the menu.</p>
+  calendar, a list of your upcoming appointments and new notifications. You can
+  also open the calendar by pressing
+  <keyseq><key>Super</key><key>M</key></keyseq>. You can access the date and
+  time settings and open your full <app>Evolution</app> calendar directly from
+  the menu.</p>
 
   <list style="compact">
     <item>
       <p><link xref="clock-calendar">了解更多关于日历和日程安排。</link></p>
     </item>
+    <item>
+      <p><link xref="shell-notifications">了解更多提醒和消息托盘的相关内容。</link></p>
+    </item>
   </list>
 
 </section>
+
 
 <section id="yourname">
   <title>您和您的计算机</title>
@@ -243,26 +250,6 @@ messages will be presented, such as when your battery is critically low.</p>
 
 </section>
 
-<section id="message-tray">
-  <title>消息托盘</title>
-
-  <media its:translate="no" type="image" src="figures/shell-message-tray.png" width="600">
-    <p its:translate="yes">Message tray</p>
-  </media>
-
-  <p>The message tray can be brought into view by pushing your mouse pointer
-  against the bottom of the screen or by pressing
-  <keyseq><key>Super</key><key>M</key></keyseq>. This is where your
-  notifications are stored until you are ready to view them.</p>
-
-  <list style="compact">
-    <item>
-      <p><link xref="shell-notifications">了解更多提醒和消息托盘的相关内容。</link></p>
-    </item>
-  </list>
-
-</section>
-
 <section id="window-list">
   <title>Window List</title>
 
@@ -286,7 +273,7 @@ messages will be presented, such as when your battery is critically low.</p>
     open windows and applications and lets you quickly minimize and restore
     them.</p>
     <p>At the right-hand side of the window list, GNOME displays a short
-    identifier for the current worskpace, such as <gui>1</gui> for the first
+    identifier for the current workspace, such as <gui>1</gui> for the first
     (top) workspace. In addition, the identifier also displays the total number
     of available workspaces. To switch to a different workspace, you can click
     the identifier and select the workspace you want to use from the menu.</p>

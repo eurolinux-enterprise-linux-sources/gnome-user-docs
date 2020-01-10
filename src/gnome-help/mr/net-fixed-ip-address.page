@@ -6,10 +6,21 @@
     <link type="seealso" xref="net-findip"/>
 
     <revision pkgversion="3.4.0" date="2012-03-13" status="final"/>
+    <revision pkgversion="3.15" date="2014-12-04" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Jim Campbell</name>
-      <email its:translate="no">jwcampbell@gmail.com</email>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -29,25 +40,37 @@
 
   <steps>
     <item>
-      <p><gui>शीर्षपट्टी</gui> वरील <gui>नेटवर्क चिन्ह</gui> क्लिक करा आणि <gui>नेटवर्क सेटिंग्ज</gui> निवडा.</p>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Network</gui>.</p>
     </item>
     <item>
-      <p>सूचीपासून (<gui>वायर्ड</gui> किंवा <gui>वायरलेस</gui>)  नेटवर्क जोडणी निवडा आणि <gui>संरचीत करा</gui> क्लिक करा.</p>
+      <p>Click on <gui>Network</gui> to open the panel.</p>
     </item>
     <item>
-      <p><gui>IPv4 सेटिंग्ज</gui> टॅब क्लिक करा आणि <gui>पद्धतीला</gui> <em>स्वहस्ते</em> करिता बदला.</p>
+      <p>In the left pane, select the network connection that you want to give
+      a fixed address. If you plug in to the network with a cable, click
+      <gui>Wired</gui>, then click the
+      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media> button in the lower right corner of
+      the panel. For a <gui>Wi-Fi</gui> connection, the 
+      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
+      button will be located next to the active network.</p>
     </item>
     <item>
-      <p><gui>पत्ते</gui> सूचीमध्ये जोडणी माहिती सूचीत दिसत नसल्यास, किंवा नविन जोडणीचे सेटअप करायचे असल्यास, <gui>समाविष्ट करा</gui> क्लिक करा.</p>
+      <p>Click on the <gui>IPv4</gui> or <gui>IPv6</gui> tab
+      and change the <gui>Addresses</gui> to <em>Manual</em>.</p>
     </item>
     <item>
-      <p>योग्य पेटीत <em>IP पत्ता</em>, <em>नेटमास्क</em>, आणि <em>गेटवे</em> माहिती द्या. नेटवर्क मांडणीवर आधारित तुमची पंसती ठरते; ठराविक नेटवर्ककरिता कोणते IP पत्ते आणि नेटमास्क्स वैध आहे याकरिता ठराविक नियामक रूल्स आहेत.</p>
+      <p>Enter the <em>Address</em>, <em>Netmask</em>, and <em>Gateway</em>
+      information into the appropriate boxes. How you choose these will depend
+      on your network setup; there are specific rules governing which IP
+      addresses and netmasks are valid for a given network.</p>
     </item>
     <item>
       <p>आवश्यक असल्यास, <gui>DNS सर्व्हर्स</gui> पेटीमध्ये <em>डोमेन नेम सर्व्हर</em> पत्ता द्या. हे सर्व्हरचा IP पत्ता आहे जे डोमेन नेम्स शोधते; बहुतांश कॉरपोरेट नेटवर्क्स आणि इंटरनेट प्रोव्हडर्सकडे समर्पित DNS सर्व्हर्स असते.</p>
     </item>
     <item>
-      <p><gui>साठवा</gui> क्लिक करा. नेटवर्क जोडणीकडे आत्ता ठराविक IP पत्ता पाहिजे.</p>
+      <p>Click <gui>Apply</gui>. The network connection should now have a fixed
+      IP address.</p>
     </item>
   </steps>
 

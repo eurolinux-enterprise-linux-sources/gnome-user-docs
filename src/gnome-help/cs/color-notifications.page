@@ -10,16 +10,16 @@
 
     <credit type="author">
       <name>Richard Hughes</name>
-      <email its:translate="no">richard@hughsie.com</email>
+      <email>richard@hughsie.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>You can be notified if your color profile is old and inaccurate.</desc>
+    <desc>Jak můžete být upozorněni, když je váš profil barev zastaralý nebo nesprávný.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
@@ -30,28 +30,19 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Marek Černocký</mal:name>
       <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:years>2014, 2015</mal:years>
     </mal:credit>
   </info>
 
-  <title>Can I get notified when my color profile is inaccurate?</title>
+  <title>Mohu získat upozornění, když je můj profil barev nesprávný?</title>
 
-  <p>You can be reminded to recalibrate your devices after a specific period of
-  time. Unfortunately, it is not possible to tell without recalibrating whether
-  a device profile is accurate, so it is best to recalibrate devices
-  regularly.</p>
+  <p>Může vám být připomenuto, že máte provést rekalibraci zařízení po uplynutí nějaké doby. Bohužel ale není možné bez rekalibrace říci, jestli je profil zařízení ještě správný. Proto je lepší provádět rekalibraci v pravidelných intervalech.</p>
 
-  <p>Some companies have very specific calibration expiry policies for
-  profiles, as an inaccurate color profile can make a huge difference to an end
-  product.</p>
+  <p>Některé firmy mají velmi specifické zásady vypršení platnosti kalibrace pro profily, protože nesprávný profil může mít velký vliv na koncový výrobek.</p>
 
-  <p>If you set the timeout policy and a profile is older than the policy then
-  a red warning triangle will be shown in the <gui>Color</gui> panel next to
-  the profile. A warning notification will also be shown every time you log
-  into your computer.</p>
+  <p>Když si nastavíte zásadu s časovým omezením a profil bude starší, než bude určovat ona zásada, zobrazí se vedle postiženého profilu v panelu <gui>Barvy</gui> červený trojúhelník. Varovné upozornění se vám zobrazí pokaždé, když se k počítači přihlásíte.</p>
 
-  <p>To set the policy for display and printer devices, you specify the
-  maximum age of the profile in days:</p>
+  <p>Když chcete nadefinovat zásadu pro displeje a tiskárny, zadejte nejvyšší možné stáří profilu ve dnech:</p>
 
 <screen>
 <output style="prompt">$ </output><input>gsettings set org.gnome.settings-daemon.plugins.color recalibrate-printer-threshold 180</input>

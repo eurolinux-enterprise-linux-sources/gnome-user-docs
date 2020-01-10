@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" version="1.0 if/1.0" id="status-icons" xml:lang="ja">
+
   <info>
-    <link type="guide" xref="shell-overview#desktop"/>
+    <link type="guide" xref="shell-overview#apps"/>
 
     <revision version="0.1" date="2013-02-23" status="review"/>
 
@@ -18,7 +19,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -64,12 +65,12 @@
 <if:choose>
 <if:when test="!platform:gnome-classic">
 <media type="image" src="figures/top-bar-icons.png" style="floatend">
-  <p>GNOME Shell top bar</p>
+  <p>GNOME Shell トップバー</p>
 </media>
 </if:when>
 <if:when test="platform:gnome-classic">
 <media type="image" src="figures/top-bar-icons-classic.png" width="395" height="70" style="floatend">
-  <p>GNOME Shell top bar</p>
+  <p>GNOME Shell トップバー</p>
 </media>
 </if:when>
 </if:choose>
@@ -131,28 +132,28 @@
 <section id="networkicons">
 <title>Network Manager アイコン</title>
 <p/>
-<p><app>Cellular Connection</app></p>
+<p><app>セルラーによる接続</app></p>
  <table shade="rows">
 
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-3g-symbolic.svg"/></td>
-      <td><p>Connected to a 3G network.</p></td>
+      <td><p>3Gネットワークに接続しています。</p></td>
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-4g-symbolic.svg"/></td>
-      <td><p>Connected to a 4G network.</p></td>
+      <td><p>4Gネットワークに接続しています。</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-edge-symbolic.svg"/></td>
-      <td><p>Connected to an EDGE network.</p></td>
+      <td><p>EDGEネットワークに接続しています。</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-gprs-symbolic.svg"/></td>
-      <td><p>Connected to a GPRS network.</p></td>
+      <td><p>GPRSネットワークに接続しています。</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-umts-symbolic.svg"/></td>
-      <td><p>Connected to a UMTS network.</p></td>
+      <td><p>UMTSネットワークに接続しています。</p></td>
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-connected-symbolic.svg"/></td>
@@ -160,7 +161,7 @@
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-acquiring-symbolic.svg"/></td>
-      <td><p>Acquiring a cellular network connection.</p></td>
+      <td><p>セルラーネットワーク接続を捕捉しています。</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-excellent-symbolic.svg"/></td>
@@ -186,11 +187,11 @@
 
 
 
-<p><app>Local Area Network (LAN) Connection</app></p>
+<p><app>ローカルエリアネットワーク (LAN) 接続</app></p>
  <table shade="rows">
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-error-symbolic.svg"/></td>
-      <td><p>There has been an error in finding the network.</p></td>
+      <td><p>ネットワークの検出でエラーが発生しました。</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-idle-symbolic.svg"/></td>
@@ -224,11 +225,11 @@
  <table shade="rows">
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-vpn-acquiring-symbolic.svg"/></td>
-      <td><p>Acquiring a network connection.</p></td>
+      <td><p>ネットワーク接続を取得しています。</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-vpn-symbolic.svg"/></td>
-      <td><p>Connected to a VPN network.</p></td>
+      <td><p>VPN ネットワークに接続しています。</p></td>
     </tr>
 </table>
 
@@ -237,15 +238,15 @@
  <table shade="rows">
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wired-acquiring-symbolic.svg"/></td>
-      <td><p>Acquiring a network connection.</p></td>
+      <td><p>ネットワーク接続を取得しています。</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wired-disconnected-symbolic.svg"/></td>
-      <td><p>Disconnected from the network.</p></td>
+      <td><p>ネットワークから切断されました。</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wired-symbolic.svg"/></td>
-      <td><p>Connected to a wired network.</p></td>
+      <td><p>有線ネットワークに接続しています。</p></td>
     </tr>
 </table>
 
@@ -254,7 +255,7 @@
  <table shade="rows">
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-acquiring-symbolic.svg"/></td>
-      <td><p>Acquiring a wireless connection.</p></td>
+      <td><p>無線接続を取得しています。</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-encrypted-symbolic.svg"/></td>
@@ -262,7 +263,7 @@
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-connected-symbolic.svg"/></td>
-      <td><p>Connected to a wireless network.</p></td>
+      <td><p>無線ネットワークに接続しています。</p></td>
     </tr>
 <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-excellent-symbolic.svg"/></td>
@@ -306,7 +307,7 @@
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-caution-symbolic.svg"/></td>
-      <td><p>Caution: The battery is very low.</p></td>
+      <td><p>警告:バッテリー残量がとても少なくなっています。</p></td>
     </tr>
     <tr>
       <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-empty-symbolic.svg"/></td>

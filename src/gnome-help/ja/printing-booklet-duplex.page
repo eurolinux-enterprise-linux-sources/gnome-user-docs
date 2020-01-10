@@ -6,20 +6,26 @@
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
       <email>tiffany@antopolski.com</email>
     </credit>
+    <credit type="author editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>通常の A4 あるいはレターサイズの用紙を使って、本やパンフレット用の製本印刷をします。</desc>
+    <desc>Print folded booklets (like a book or pamphlet) from a PDF using normal
+    A4/Letter-size paper.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -59,9 +65,11 @@
     </mal:credit>
   </info>
 
-  <title>製本印刷する</title>
+  <title>Print a booklet on a double-sided printer</title>
 
-  <p>小冊子やパンフレットなどを作成するには、製本印刷用の特殊なページ順序およびオプションを指定して印刷します。</p>
+  <p>You can make a folded booklet (like a small book or pamphlet) by printing
+  pages of a document in a special order and changing a couple of printing
+  options.</p>
 
   <p>ここでは PDF ドキュメントを製本印刷するための手順を説明します。</p>
 
@@ -74,8 +82,15 @@
       <p>印刷ダイアログを開きます。ダイアログを開くには、メニューの<gui style="menuitem">印刷</gui>をクリックするか、キーボードショートカットの <keyseq><key>Ctrl</key><key>P</key></keyseq> を押します。</p>
     </item>
     <item>
-      <p>Go to the <gui>General</gui> tab. Under <gui>Range</gui>, choose
-      <gui>Pages</gui>.</p>
+      <p>Click the <gui>Properties...</gui> button </p>
+      <p>In the <gui>Orientation</gui> drop-down list, make sure that
+      <gui>Landscape</gui> is selected.</p>
+      <p>In the <gui>Duplex</gui> drop-down list, select <gui>Short Edge</gui>.
+      </p>
+      <p>Click <gui>OK</gui> to go back to the print dialog.</p>
+    </item>
+    <item>
+      <p>Under <gui>Range and Copies</gui>, choose <gui>Pages</gui>.</p>
     </item>
     <item>
       <p>ページ番号を次の順番で入力します (n は 4 の倍数となる合計ページ数に置き換えてください)。</p>
@@ -88,12 +103,10 @@
       </list>
     </item>
     <item>
-      <p>次に、<gui>ページの設定</gui> タブを開きます。</p>
-      <p>Under <gui>Layout</gui>, in the <gui>Two-sided</gui> drop-down list,
-      select <gui>Short Edge (Flip)</gui>.</p>
-      <p>In the <gui>Pages per side</gui> drop-down list, select
-      <gui>2</gui>.</p>
-      <p><gui>ページの順番</gui>というオプションで<gui>左から右へ</gui>を選択します。</p>
+      <p>Choose the <gui>Page Layout</gui> tab.</p>
+      <p>Under <gui>Layout</gui>, select <gui>Brochure</gui>.</p>
+      <p>Under <gui>Page Sides</gui>, in the <gui>Include</gui> drop-down list,
+      select <gui>All pages</gui>.</p>
     </item>
     <item>
       <p><gui>印刷</gui>を押します。</p>

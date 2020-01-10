@@ -3,7 +3,7 @@
 
   <info>
     <link type="seealso" xref="shell-apps-open"/>
-    <link type="guide" xref="shell-overview#apps"/>
+    <link type="guide" xref="shell-overview#desktop"/>
 
     <revision pkgversion="3.6.0" date="2012-10-14" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
@@ -24,46 +24,47 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Add (or remove) frequently-used program icons on the dash.</desc>
+    <desc>Lägg till (eller ta bort) ofta använda programikoner från snabbstartspanelen.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
   </info>
 
-  <title>Pin your favorite apps to the dash</title>
+  <title>Nåla fast dina favoritprogram i snabbstartspanelen</title>
 
-  <p>To add an application to the <link xref="shell-terminology">dash</link>
-  for easy access:</p>
+  <p>För att lägga till ett program i <link xref="shell-introduction#activities">snabbstartspanelen</link> för enkel åtkomst:</p>
 
   <steps>
     <item>
-      <p if:test="!platform:gnome-classic">Open the
-      <link xref="shell-terminology"><gui>Activities</gui> overview</link> by
-      clicking <gui>Activities</gui> at the top left of the screen</p>
-      <p if:test="platform:gnome-classic">Click the
-      <link xref="shell-terminology"><gui>Applications</gui> menu</link> at the
-      top left of the screen and choose the <gui>Activities Overview</gui> item
-      from the menu.</p></item>
+      <p if:test="!platform:gnome-classic">Öppna översiktsvyn <gui xref="shell-introduction#activities">Aktiviteter</gui> genom att klicka på <gui>Aktiviteter</gui> i övre vänstra hörnet av skärmen</p>
+      <p if:test="platform:gnome-classic">Klicka på menyn <gui xref="shell-introduction#activities">Program</gui> i övre vänstra hörnet av skärmen och välj objektet <gui>Aktivitetsöversikt</gui> från menyn.</p></item>
     <item>
-      <p>Click the grid button in the dash and find the application you want to
-      add.</p>
+      <p>Klicka på rutnätsknappen i snabbstartspanelen och hitta programmet du vill lägga till.</p>
     </item>
     <item>
-      <p>Right-click the application icon and select <gui>Add to
-      Favorites</gui>.</p>
-      <p>Alternatively, you can click-and-drag the icon into the dash.</p>
+      <p>Högerklicka på programikonen och välj <gui>Lägg till som favorit</gui>.</p>
+      <p>Alternativt kan du klicka-och-dra ikonen till snabbstartspanelen.</p>
     </item>
   </steps>
 
-  <p>To remove an application icon from the dash, right-click the application
-  icon and select <gui>Remove from Favorites</gui>.</p>
+  <p>För att ta bort en programikon från snabbstartspanelen, högerklicka på programikonen och välj <gui>Ta bort från favoriter</gui>.</p>
 
-  <note style="tip" if:test="platform:gnome-classic"><p>Favorite applications
-    also appear in the <gui>Favorites</gui> section of the
-    <link xref="shell-terminology"><gui>Applications</gui> menu</link>.</p>
+  <note style="tip" if:test="platform:gnome-classic"><p>Favoritprogram visas också i avsnittet <gui>Snabbstartspanelen</gui> i menyn <gui xref="shell-introduction#activities">Program</gui>.</p>
   </note>
 
 </page>

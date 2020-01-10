@@ -3,27 +3,27 @@
 
   <info>
     <link type="guide" xref="user-accounts#manage" group="#first"/>
-    <!--<link type="seealso" xref="user-addguest"/>-->
 
-    <revision pkgversion="3.8.0" version="0.3" date="2013-03-09" status="candidate"/>
+    <revision pkgversion="3.8" date="2013-03-09" status="candidate"/>
     <revision pkgversion="3.10" date="2013-11-01" status="review"/>
     <revision pkgversion="3.13.92" date="2013-11-01" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Proyecto de documentación de GNOME</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -33,7 +33,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2011 - 2014</mal:years>
+      <mal:years>2011 - 2016</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -63,7 +63,7 @@
 
   <steps>
     <item>
-      <p>Abra la vista de <gui xref="shell-terminology">Actividades</gui> y empiece a escribir <gui>Usuarios</gui>.</p>
+      <p>Abra la vista de <gui xref="shell-introduction#activities">Actividades</gui> y empiece a escribir <gui>Usuarios</gui>.</p>
     </item>
     <item>
       <p>Pulse en <gui>Usuarios</gui> para abrir el panel.</p>
@@ -75,24 +75,23 @@
       <p>Debajo de la lista de cuentas en la izquierda, pulse el botón <gui style="button">+</gui> para añadir una cuenta de usuario nueva.</p>
     </item>
     <item>
-      <p>Si quiere que el nuevo usuario tenga <link xref="user-admin-explain">acceso de administrador</link> al equipo, seleccione <gui>Administrador</gui> para el tipo de cuenta en el menú desplegable. Los administradores pueden hacer cosas como añadir y eliminar usuarios, instalar software y controladores, y cambiar la fecha y la hora.</p>
+      <p>Si quiere que el nuevo usuario tenga <link xref="user-admin-explain">acceso de administrador</link> al equipo, seleccione <gui>Administrador</gui> para el tipo de cuenta.</p>
+      <p>Los administradores pueden hacer cosas como añadir y eliminar usuarios, instalar software y controladores y cambiar la fecha y la hora.</p>
     </item>
     <item>
       <p>Escriba el nombre completo del nuevo usuario. El nombre de usuario se rellenará automáticamente en función del nombre completo. Si no le gusta el nombre de usuario propuesto, puede cambiarlo.</p>
     </item>
     <item>
-      <p>You can choose to set a password for the new user, or let them set it
-      themselves on their first login. You can press on the
-      <gui style="button"><media its:translate="no" type="image" src="figures/system-run-symbolic.svg" width="16" height="16"><span its:translate="yes">generate
-      password</span></media></gui> icon to automatically generate a random
-      password.</p>
+      <p>Puede elegir entre establecer una contraseña para el nuevo usuario o dejar que la establezca la primera vez que inicie sesión.</p>
+      <p>Si elige establecer ahora la contraseña, puede pulsar el icono <gui style="button"><media its:translate="no" type="image" src="figures/system-run-symbolic.svg" width="16" height="16">
+      <span its:translate="yes">generar contraseña</span></media></gui> para generar automáticamente una contraseña aleatoria.</p>
     </item>
     <item>
       <p>Pulse <gui>Añadir</gui>.</p>
     </item>
   </steps>
 
-  <p>Si quiere cambiar la contraseña después de crear la cuenta, seleccione la cuenta, <gui style="button">desbloquee</gui> the el panel y pulse sobre el estado actual de la contraseña.</p>
+  <p>Si quiere cambiar la contraseña después de crear la cuenta, seleccione la cuenta, <gui style="button">desbloquee</gui> el panel y pulse sobre el estado actual de la contraseña.</p>
 
   <note>
     <p>En en panel <gui>Usuarios</gui> puede pulsar la imagen junto al nombre del usuario, a la derecha, para establecer una imagen para la cuenta. Esta imagen se mostrará en la ventana de inicio de sesión. GNOME proporciona algunos conjuntos de imágenes que puede usar, o puede seleccionar su propia imagen o hacer una foto con su cámara web.</p>

@@ -41,16 +41,22 @@
 <list>
   <item>
     <p if:test="!platform:gnome-classic">In the
-    <gui xref="shell-terminology">&gt;Activities</gui> overview, move your cursor
+    <gui xref="shell-introduction#activities">Activities</gui> overview, move your cursor
     to the right-most side of the screen.</p>
     <p if:test="platform:gnome-classic"><gui>செயல்பாடுகள்</gui> மேலோட்டத்தைத் திறக்க <key xref="keyboard-key-super">Super</key> விசையை அழுத்தி திரையின் வலது விளிம்புக்கு உங்கள் சுட்டியைக் கொண்டு செல்லவும்.</p>
   </item>
   <item>
-    <p if:test="!platform:gnome-classic">ஒரு செங்குத்தான பலகத்தில் தற்போது பயன்படுத்தப்படும் பணியிடமும் ஒரு காலி பணியிடமும் காட்டப்படும். இது <link xref="shell-terminology">பணியிடத் தேர்வி</link> ஆகும்.</p>
-    <p if:test="platform:gnome-classic">ஒரு செங்குத்துப் பலகத்தில் கிடைக்கும் பணியிடங்கள் காண்பிக்கப்படும். இது <link xref="shell-terminology">பணியிடத் தேர்வி</link> ஆகும்.</p>
+    <p if:test="!platform:gnome-classic">A vertical panel will appear showing
+    workspaces in use, plus an empty workspace. This is the
+    workspace selector.</p>
+    <p if:test="platform:gnome-classic">A vertical panel will appear showing
+    available workspaces. This is the workspace selector.</p>
   </item>
   <item if:test="!platform:gnome-classic">
-    <p>ஒரு பணியிடத்தைச் சேர்க்க, <link xref="shell-terminology">பணியிடத் தேர்வியில்</link> தற்போதுள்ள பணியிடத்திலிருந்து ஒரு சாளரத்தை இழுத்துச் சென்று காலி பணியிடத்தில் இடவும். இப்போது நீங்கள் தற்போது இழுத்து இட்ட சாளரம் இந்த பணியிடத்தில் இருக்கும், அதற்குக் கீழ் ஒரு புதிய பணியிடம் சேர்க்கப்படும்.</p>
+    <p>To add a workspace, drag and drop a window from an existing workspace
+    onto the empty workspace in the workspace selector. This workspace now
+    contains the window you have dropped,
+    and a new empty workspace will appear below it.</p>
   </item>
   <item if:test="!platform:gnome-classic">
     <p>ஒரு பணியிடத்தை நீக்க, அனைத்து சாளரங்களையும் மூடலாம் அல்லது அவற்றை வேறு பணியிடங்களுக்கு நகர்த்தலாம்.</p>

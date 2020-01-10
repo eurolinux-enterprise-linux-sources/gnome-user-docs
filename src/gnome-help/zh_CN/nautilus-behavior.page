@@ -7,6 +7,7 @@
     <desc>单击打开文件，运行或查看可执行文本文件，指定回收站行为。</desc>
 
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -23,6 +24,10 @@
     <credit type="editor">
       <name>Sindhu S</name>
       <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
     </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
@@ -73,7 +78,7 @@
  <p>If <gui>Ask each time</gui> is selected, a dialog will pop up asking if you
  wish to run or view the selected text file.</p>
 
- <p>Executable text files are also called scripts. All scripts in
+ <p>Executable text files are also called <em>scripts</em>. All scripts in the
  <file>~/.local/share/nautilus/scripts</file> folder will appear in the context
  menu for a file under the <gui style="menuitem">Scripts</gui> submenu. When a
  script is executed from a local folder, all selected files will be pasted to
@@ -98,6 +103,7 @@
  </note>
 
 </section>
+
 <section id="trash">
 <info>
 <link type="seealso" xref="files-delete"/>
@@ -107,15 +113,8 @@
 
 <terms>
  <item>
-  <title><gui>清空回收站或删除文件前询问</gui></title>
+  <title><gui>Ask before emptying the Trash</gui></title>
   <p>默认选中此项，当清空回收站时，会显示确认信息，提示您将要清空回收站或删除文件。</p>
- </item>
- <item>
-  <title><gui>包含绕过回收站的删除命令</gui></title>
-  <p>选中此项，将会在<app>文件</app>管理器右击某个项目的弹出菜单中添加<gui>删除</gui>项。</p>
-<note style="warning">
-<p>使用<gui>删除</gui>命令将会绕过回收站删除项目，它会完全从系统中删除，也就没有办法还原这个项目。</p>
-</note>
  </item>
 </terms>
 </section>

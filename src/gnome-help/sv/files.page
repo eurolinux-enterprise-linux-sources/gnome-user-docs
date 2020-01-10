@@ -7,24 +7,24 @@
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
     <revision pkgversion="3.10" date="2013-11-07" status="review"/>
     <revision pkgversion="3.12" date="2014-03-02" status="review"/>
+    <revision pkgversion="3.16" date="2015-01-27" status="review"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Jim Campbell</name>
+      <email>jcampbell@gnome.org</email>
     </credit>
 
     <title type="link" role="trail">Filer</title>
 
-    <desc>
-      <link xref="files-search">Searching</link>,
-      <link xref="files-delete">delete files</link>,
-      <link xref="files#backup">backups</link>,
-      <link xref="files#removable">removable drives</link>…
-    </desc>
+    <desc><link xref="files-search">Sökning</link>, <link xref="files-delete">ta bort filer</link>, <link xref="files#backup">säkerhetskopiering</link>, <link xref="files#removable">flyttbara enheter</link>…</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -32,22 +32,31 @@
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
   </info>
 
   <title>Filer, mappar och sökning</title>
 
-  <!-- TODO: would be nice to give this image some styling -->
-  <media type="image" src="figures/nautilus-3-10.png" style="floatend floatright" width="350" if:test="!target:mobile">
-    <p><app>Files</app> file manager</p>
-  </media>
-
-<links type="topic" style="linklist nodesc bold">
+<section id="common-file-tasks">
   <title>Vanliga åtgärder</title>
-</links>
+  <links type="topic" style="2column"/>
+</section>
 
-<links type="topic" groups="more" style="linklist nodesc bold">
-  <title>Fler ämnen</title>
-</links>
+<section id="more-file-tasks">
+  <title>Fler filrelaterade uppgifter</title>
+  <links type="topic" style="2column"/>
+</section>
 
 <section id="removable">
   <title>Flyttbara enheter och externa diskar</title>

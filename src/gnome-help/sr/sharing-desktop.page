@@ -5,19 +5,21 @@
     <link type="guide" xref="sharing"/>
     <link type="guide" xref="prefs-sharing"/>
 
-    <revision pkgversion="3.8.2" date="2013-05-09" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.14" date="2014-10-13" status="candidate"/>
+    <revision pkgversion="3.14" date="2015-01-25" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
 
     <credit type="author">
       <name>Екатерина Герасимова</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Мајкл Хил</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
-
+    <credit type="author">
+      <name>Џим Кембел</name>
+      <email>jcampbell@gnome.org</email>
+    </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <desc>Допустите другима да прегледају и посредују са вашом радном површи користећи ВНЦ.</desc>
@@ -39,7 +41,7 @@
 
   <steps>
     <item>
-      <p>Отворите преглед <gui xref="shell-terminology">Активности</gui> и почните да куцате <gui>Дељење</gui>.</p>
+      <p>Отворите преглед <gui xref="shell-introduction#activities">Активности</gui> и почните да куцате <gui>Дељење</gui>.</p>
     </item>
     <item>
       <p>Кликните на <gui>Дељење</gui> да отворите панел.</p>
@@ -105,17 +107,21 @@
   <title>Мреже</title>
 
   <p>Одељак <gui>Мреже</gui> наводи мреже на које сте тренутно повезани. Користите прекидач <gui>УКЉ. | ИСКЉ.</gui> поред савке од њих да изаберете на којима ваша радна површ може бити дељена.</p>
-
   </section>
 
-<!-- TODO: Check that this works.
   <section id="notification-icon">
-  <title>Stop sharing your desktop</title>
+  <title>Зауставите дељење радне површи</title>
 
-  <p>You can disconnect someone who is viewing your desktop using the
-  notification icon in the message tray.</p>
+  <p>Можете да прекинете везу са неким ко прегледа вашу радну површ користећи <gui>иконицу обавештења</gui> у фиоци порука. Да то урадите:</p>
+    <steps>
+      <item><p>Отворите фиоку порука тако што ћете притиснути <keyseq><key>Супер</key><key>М</key></keyseq> или померите показивач миша на само дно вашег екрана.</p></item>
+      <item><p>Притисните на иконицу <gui>радне површи</gui> у <gui>фиоци порука</gui>. Ово ће отворити панел <app>дељења</app>.</p>
+      </item>
+      <item><p>Изаберите <gui>Дељење екрана</gui>.</p></item>
+      <item><p>Пребаците клизач <gui>дељења екрана</gui> на <gui>Искљ.</gui>.</p></item>
+    </steps>
 
   </section>
--->
+
 
 </page>

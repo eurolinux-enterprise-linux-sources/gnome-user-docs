@@ -2,11 +2,13 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-delete" xml:lang="te">
 
   <info>
-    <link type="guide" xref="files"/>
+    <link type="guide" xref="files#common-file-tasks"/>
     <link type="seealso" xref="files-recover"/>
 
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-16" status="review"/>
     <revision pkgversion="3.13.92" date="2013-09-20" status="candidate"/>
+    <revision pkgversion="3.16" date="2015-02-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
 
     <credit type="author">
       <name>క్రిస్టోఫర్ థామస్</name>
@@ -18,11 +20,15 @@
     </credit>
     <credit type="author">
       <name>జిమ్ క్యాంబెల్</name>
-      <email>jwcampbell@gmail.com</email>
+      <email>jcampbell@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>మైకేల్ హిల్</name>
       <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -46,15 +52,21 @@
 
   <p>If you do not want a file or folder any more, you can delete it. When you
   delete an item it is moved to the <gui>Trash</gui> folder, where it is stored
-  until you empty the trash. You can <link xref="files-recover">restore items
-  </link> in the <gui>Trash</gui> folder to their original location if you
+  until you empty the trash. You can <link xref="files-recover">restore
+  items</link> in the <gui>Trash</gui> folder to their original location if you
   decide you need them, or if they were accidentally deleted.</p>
 
   <steps>
     <title>ఫైలును చెత్తబుట్టకు పంపుటకు:</title>
     <item><p>మీరు చెత్తబుట్ట నందు వుంచాలనుకొన్న అంశాన్ని ఎంపికచేయండి.</p></item>
-    <item><p>కీబోర్డు పైన <keyseq><key>Ctrl</key><key>Delete</key></keyseq> వత్తుము. ప్రత్యామ్నాయంగా, పక్కపట్టీ నందలి <gui>చెత్తబుట్ట</gui>కు అంశాన్ని లాగండి.</p></item>
+    <item><p>Press <key>Delete</key> on your keyboard. Alternatively, drag the
+    item to the <gui>Trash</gui> in the sidebar.</p></item>
   </steps>
+
+  <p>The file will be moved to the trash, and you'll be presented with an
+  option to <gui>Undo</gui> the deletion. The <gui>Undo</gui> button will appear
+  for a few seconds. If you select <gui>Undo</gui>, the file will be restored
+  to its original location.</p>
 
   <p>ఫైళ్ళను శాశ్వతంగా తొలగించి, మీ కంప్యూటర్ పైని డిస్కు జాగాను ఖాళీ చేయుటకు, మీరు చెత్తబుట్టను ఖాళీ చేయవలసి వుంటుంది. చెత్తబుట్టను ఖాళీ చేయుటకు, పక్కపట్టీ నందలి <gui>చెత్తబుట్ట</gui> పై కుడి-నొక్కు నొక్కి <gui>చెత్తబుట్ట ఖాళీచేయి</gui> ఎంపికచేయి.</p>
 
@@ -68,8 +80,6 @@
     <item><p><key>Shift</key> కీను నొక్కివుంచి, కీబోర్డుపైని <key>Delete</key> కీను వత్తుము.</p></item>
     <item><p>మీరు ఈ చర్యను రద్దుచేయలేరు కావున, ఫైలును లేదా సంచయంను తొలగించాలా లేదా అనేది మీరు ఖరారు చేయవలసివుంటుంది.</p></item>
   </steps>
-
-  <note style="tip"><p>ఒకవేళ మీరు తరచుగా చెత్తబుట్ట ఉపయోగించకుండా ఫైళ్ళను తొలగించాలంటే (ఉదాహరణకు, మీరు తరచుగా సున్నితమైన దత్తాంశం పై పనిచేస్తూంటే), మీరు ఫైళ్ళు మరియు సంచయాల కుడి-నొక్కు మెనూకు <gui>తొలగించు</gui> జతచేయవచ్చు. పై పట్టీ నందలి <gui>ఫైళ్ళు</gui> పై నొక్కుము, <gui>అభీష్టాలు</gui> ఎంచుకొని <gui>ప్రవర్తన</gui> టాబ్ ఎంపికచేయుము. <gui>చెత్తబుట్టను దాటవేసే తొలగించు ఆదేశం చేర్చు</gui> ఎంపికచేయుము.</p></note>
 
   <note><p><link xref="files#removable">తీసివేయగల పరికరం </link> పైని ఫైళ్ళను తొలగించు అనేది బహుశా ఇతర ఆపరేటింగ్ సిస్టమ్స్ పైన కనబడకపోవచ్చు, విండోస్ మాక్ ఓస్ వంటివి. ఫైళ్ళు అక్కడే వుంటాయి, మీరు తిరిగి మీ కంప్యూటర్‌కు అనుసంధానించగానే అందుబాటులో వుంటాయి.</p></note>
 

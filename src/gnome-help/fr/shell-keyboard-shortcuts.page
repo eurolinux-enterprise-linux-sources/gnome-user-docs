@@ -4,11 +4,12 @@
   <info>
     <link type="guide" xref="tips"/>
     <link type="guide" xref="keyboard"/>
-    <link type="guide" xref="shell-overview"/>
+    <link type="guide" xref="shell-overview#apps"/>
     <link type="seealso" xref="keyboard-key-super"/>
 
     <revision pkgversion="3.8.0" version="0.4" date="2013-04-23" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.20" date="2016-08-13" status="candidate"/>
 
     <credit type="author copyright">
       <name>Shaun McCance</name>
@@ -43,7 +44,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2014</mal:years>
+      <mal:years>2011-2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -74,6 +75,12 @@
       <mal:name>Mickael Albertus</mal:name>
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
     </mal:credit>
   </info>
 
@@ -106,10 +113,7 @@
     <!-- To be updated to <key>Tab</key> in the future. -->
     <td><p><keyseq><key>Ctrl</key><key>Alt</key><key>Tab</key></keyseq></p></td>
     <td>
-      <p>Give keyboard focus to the top bar. In the <gui>Activities</gui>
-      overview, switch keyboard focus between the top bar, dash, windows
-      overview, applications list, search field, and message tray. Use the
-      arrow keys to navigate.</p>
+      <p>Donne le focus clavier à la barre supérieure. Dans la vue d'ensemble des <gui>Activités</gui>, bascule le focus clavier entre la barre supérieure, le dash, la vue d'ensemble des fenêtres, la liste des applications, le champ pour la recherche et le tiroir de messagerie. Utilisez les touches fléchées pour vous déplacer.</p>
     </td>
   </tr>
   <tr xml:id="super-a">
@@ -124,9 +128,17 @@
     <td><p><keyseq><key>Logo</key><key>Maj</key><key>Flèche haut</key></keyseq> et <keyseq><key>Logo</key><key>Maj</key><key>Flèche bas</key></keyseq></p></td>
     <td><p><link xref="shell-workspaces-movewindow">Déplacer la fenêtre actuelle vers un espace de travail différent</link>.</p></td>
   </tr>
+  <tr xml:id="super-shift-left">
+    <td><p><keyseq><key>Super</key><key>Shift</key><key>←</key></keyseq></p></td>
+    <td><p>Move the current window one monitor to the left.</p></td>
+  </tr>
+  <tr xml:id="super-shift-right">
+    <td><p><keyseq><key>Super</key><key>Shift</key><key>→</key></keyseq></p></td>
+    <td><p>Move the current window one monitor to the right.</p></td>
+  </tr>
   <tr xml:id="ctrl-alt-Del">
     <td><p><keyseq><key>Ctrl</key><key>Alt</key><key>Suppr</key></keyseq></p></td>
-    <td><p><link xref="shell-exit">Power Off</link>.</p></td>
+    <td><p><link xref="shell-exit">Éteindre</link>.</p></td>
   </tr>
   <tr xml:id="ctrl-alt-l">
     <td><p><keyseq><key>Logo</key><key>L</key></keyseq></p></td>
@@ -134,9 +146,7 @@
   </tr>
   <tr xml:id="super-m">
     <td><p><keyseq><key>Logo</key><key>M</key></keyseq></p></td>
-    <td><p>Open <link xref="shell-notifications#messagetray">the message
-    tray</link>. Press <keyseq><key>Super</key><key>M</key></keyseq> again or
-    <key>Esc</key> to close.</p></td>
+    <td><p>Ouvrir <link xref="shell-notifications#messagetray">le tiroir de messagerie</link>. Appuyer à nouveau sur <keyseq><key>Logo</key><key>M</key></keyseq> ou sur <key>Échap</key> pour fermer.</p></td>
   </tr>
 </table>
 

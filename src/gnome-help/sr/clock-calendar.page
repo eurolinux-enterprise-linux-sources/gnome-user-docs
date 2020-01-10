@@ -7,23 +7,25 @@
 
     <revision pkgversion="3.8.0" date="2013-03-09" status="outdated"/>
     <revision pkgversion="3.10" date="2013-11-04" status="review"/>
+    <revision pkgversion="3.16" date="2015-03-02" status="outdated"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
 
     <credit type="author">
       <name>Гномов пројекат документације</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Мајкл Хил</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Екатерина Герасимова</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Прикажите ваше састанке у календару на врху екрана.</desc>
+    <desc>Прикажите ваше састанке у области календара на врху екрана.</desc>
   </info>
 
  <title>Састанци календара</title>
@@ -40,15 +42,18 @@
     </item>
     <item>
       <p>У календару кликните на датум за који желите да видите ваше састанке.</p>
-    </item>
-    <item>
-      <p>Постојећи састанци ће бити приказани на десној страни. Када додате састанке у календар, исти се појављују на списку састанака у сату.</p>
+
+    <note>
+       <p>Тачка се приказује испод сваког датума који има састанак.</p>
+    </note>
+
+      <p>Постојећи састанци биће приказани са леве стране календара. Када додате састанке у календар <app>Еволуције</app>, исти се појављују на списку састанака у сату.</p>
     </item>
   </steps>
 
  <if:choose>
  <if:when test="!platform:gnome-classic">
- <media type="image" src="figures/shell-appts.png" width="500" height="396">
+ <media type="image" src="figures/shell-appts.png" width="500">
   <p>Сат, календар, и састанци</p>
  </media>
  </if:when>
@@ -58,11 +63,5 @@
  </media>
  </if:when>
  </if:choose>
-
-  <p>Да на брзину дођете до потпуног календара <app>Еволуције</app>, кликните на сат и кликните <gui>Отвори календар</gui>.</p>
-
-  <note>
-    <p>Ово ће радити само ако имате постојећи налог <app>Еволуције</app>. У супротном, појавиће се прозор са неопходним корацима за додавање вашег првог налога.</p>
-  </note>
 
 </page>

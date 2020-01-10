@@ -3,9 +3,11 @@
 
   <info>
     <link type="guide" xref="power"/>
+    <link type="seealso" xref="power-suspendfail"/>
 
     <desc>В ждущем режиме компьютер «засыпает» и потребляет меньшую мощность.</desc>
     <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Проект документирования GNOME</name>
@@ -27,7 +29,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011, 2012</mal:years>
+      <mal:years>2011-2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -41,13 +43,22 @@
       <mal:email>juliette.tux@gmail.com</mal:email>
       <mal:years>2013-2014</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
 <title>Что происходит при переходе компьютера в ждущий режим?</title>
 
 <p>Когда компьютер переходит в <em>ждущий режим</em>, он «засыпает». Все открытые приложения и документы остаются открытыми, но экран и другие части компьютера отключаются, для уменьшения энергопотребления. Тем не менее, компьютер всё равно остаётся включенным и потребляет небольшое количество электроэнергии. Его можно вернуть в рабочий режим нажатием клавиши или щелчком мыши. Если это не действует, попробуйте нажать кнопку питания.</p>
 
-<p>У некоторых компьютеров возникают проблемы с поддержкой аппаратного обеспечения, поэтому они <link xref="power-suspendfail">могут некорректно выполнять переход в ждущий или спящий режим</link>. Прежде, чем пользоваться ждущим режимом, желательно проверить, как он будет работать на вашем компьютере.</p>
+<p>Some computers have problems with hardware support which mean that they
+<link xref="power-suspendfail">may not be able to suspend properly</link>. It is
+a good idea to test suspend on your computer to see if it does work before
+relying on it.</p>
 
 <note style="important">
   <title>Всегда сохраняйте свою работу перед переводом компьютера в ждущий режим</title>

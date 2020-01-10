@@ -8,6 +8,7 @@
 
     <revision pkgversion="3.5.92" date="2012-09-19" status="review"/>
     <revision pkgversion="3.14.0" date="2014-09-23" status="review"/>
+    <revision pkgversion="3.18" date="2014-09-30" status="candidate"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -21,6 +22,11 @@
       <name>Ekaterina Gerasimova</name>
       <email>kittykat3756@gmail.com</email>
       <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2015</years>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -36,7 +42,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Kelemen Gábor</mal:name>
       <mal:email>kelemeng at gnome dot hu</mal:email>
-      <mal:years>2011, 2012, 2013, 2014</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -66,16 +72,19 @@
 
   <title>A Fájlok listaoszlopainak beállításai</title>
 
-  <p>A <gui>Fájlok</gui> alkalmazás listanézetében 9 információs oszlopot jeleníthet meg. Válassza a <gui>Fájlok</gui> ikont a felső sávon, majd a <gui>Beállítások</gui> menüpontot, majd a <gui>Listaoszlopok</gui> lapot a látható oszlopok kiválasztásához.</p>
+  <p>A <gui>Fájlok</gui> alkalmazás listanézetében 11 információs oszlopot jeleníthet meg. Válassza a <gui>Fájlok</gui> ikont a felső sávon, majd a <gui>Beállítások</gui> menüpontot, majd a <gui>Listaoszlopok</gui> lapot a látható oszlopok kiválasztásához.</p>
 
   <note style="tip">
-    <p>Használja a <gui>Fel</gui> és <gui>Le</gui> gombokat a kijelölt oszlop megjelenési sorrendjének kiválasztásához.</p>
+    <p>Használja a <gui>Fel</gui> és <gui>Le</gui> gombokat a kijelölt oszlop megjelenési sorrendjének kiválasztásához. Kattintson az <gui>Alapbeállítás</gui> gombra a módosítások visszavonásához és az alapértelmezett oszlopokhoz való visszatéréshez.</p>
   </note>
 
   <terms>
     <item>
       <title><gui>Név</gui></title>
       <p>A mappák és fájlok nevei.</p>
+      <note style="tip">
+        <p>A <gui>Név</gui> oszlop nem rejthető el.</p>
+      </note>
     </item>
     <item>
       <title><gui>Méret</gui></title>
@@ -87,7 +96,7 @@
     </item>
     <item>
       <title><gui>Módosítva</gui></title>
-      <p>A fájl utolsó módosításának dátumát és idejét adja meg.</p>
+      <p>A fájl utolsó módosításának dátumát adja meg.</p>
     </item>
     <item>
       <title><gui>Tulajdonos</gui></title>
@@ -137,6 +146,14 @@
     <item>
       <title><gui>Hely</gui></title>
       <p>A fájl helyének elérési útvonala.</p>
+    </item>
+    <item>
+      <title><gui>Módosítva – Idő</gui></title>
+      <p>A fájl utolsó módosításának dátumát és idejét adja meg.</p>
+    </item>
+    <item>
+      <title><gui>Elérés</gui></title>
+      <p>A fájl utolsó módosításának dátumát vagy idejét adja meg.</p>
     </item>
   </terms>
 

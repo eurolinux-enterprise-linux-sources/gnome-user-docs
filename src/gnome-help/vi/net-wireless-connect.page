@@ -8,14 +8,15 @@
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
     <revision pkgversion="3.10" date="2013-12-05" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Dự án tài liệu GNOME</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
 
     <desc>Vào Internet - không dây.</desc>
@@ -35,22 +36,41 @@
  on the network, and so on.</p>
 
 <steps>
-  <item><p>Click the system status area on the top bar, select <gui>Wi-Fi</gui>,
- then click <gui>Select Network</gui>.</p></item>
-  <item><p>Click the name of the network you want to connect to, then click
- <gui>Connect</gui>.</p>
-   <p>If the name of the network isn't in the list, try clicking <gui>More</gui>
- to see if the network is further down the list. If you still don't see the
- network, you may be out of range or the network
- <link xref="net-wireless-hidden">might be hidden</link>.</p>
-  </item>
-  <item><p>Nếu mạng được bảo vệ bằng mật mã, bạn sẽ được hỏi <link xref="net-wireless-wepwpa">&gt;khoá</link>. Nhập vào mật khẩu hoặc khoá mã hoá, và nhấn <gui>Kết nối</gui>.</p>
-  <p>If you do not know the key, it may be written on the underside of the
- wireless router or base station, in its instruction manual, or you may have to
- ask the person who administers the wireless network.</p></item>
-  <item><p>Biểu tượng mạng sẽ hiện hình máy tính đang cố kết nối.</p></item>
   <item>
-   <p>Khi kết nối thành công, biểu tượng sẽ biến thành một dấu chấm với nhiều thanh ở trên. Càng nhiều thanh thì tín hiệu càng mạnh. Càng ít thanh thì tín hiệu càng yếu và không ổn định.</p>
+    <p>Open the <gui xref="shell-introduction#yourname">system menu</gui> from the right
+    side of the top bar.</p>
+  </item>
+  <item>
+    <p>Select
+    <gui><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-excellent-symbolic.svg" width="16" height="16"/>
+      Wi-Fi Not Connected</gui>. The Wi-Fi section of the menu will expand.</p>
+  </item>
+  <item>
+    <p>Click <gui>Select Network</gui>.</p>
+  </item>
+  <item>
+    <p>Click the name of the network you want, then click
+    <gui>Connect</gui>.</p>
+    <p>If the name of the network is not in the list, try clicking
+    <gui>More</gui> to see if the network is further down the list. If you 
+    still do not see the network, you may be out of range, or the network
+    <link xref="net-wireless-hidden">might be hidden</link>.</p>
+  </item>
+  <item>
+    <p>Nếu mạng được bảo vệ bằng mật mã, bạn sẽ được hỏi <link xref="net-wireless-wepwpa">&gt;khoá</link>. Nhập vào mật khẩu hoặc khoá mã hoá, và nhấn <gui>Kết nối</gui>.</p>
+    <p>If you do not know the key, it may be written on the underside of the
+    wireless router or base station, or in its instruction manual, or you may
+    have to ask the person who administers the wireless network.</p>
+  </item>
+  <item>
+    <p>Biểu tượng mạng sẽ hiện hình máy tính đang cố kết nối.</p>
+  </item>
+  <item>
+    <p>If the connection is successful, the icon will change to a dot with
+    several curved bars above it
+    (<media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-excellent-symbolic.svg" width="16" height="16"/>). More bars
+    indicate a stronger connection to the network. Fewer bars mean the
+    connection is weaker and might not be very reliable.</p>
   </item>
 </steps>
 
@@ -61,10 +81,11 @@
   your computer's wireless card might have a problem, for example. See
   <link xref="net-wireless-troubleshooting"/> for more help.</p>
 
-<p>A stronger connection to a wireless network does not necessarily mean that
- you have a faster internet connection, or that you will have faster download
- speeds. The wireless connection connects your computer to the <em>device which
- provides the internet connection</em> (like a router or modem), but the two
- connections are actually different, and so will run at different speeds.</p>
+  <p>A stronger connection to a wireless network does not necessarily mean that
+  you have a faster internet connection, or that you will have faster download
+  speeds. The wireless connection connects your computer to the <em>device
+  which provides the internet connection</em> (like a router or modem), but the
+  two connections are actually different, and so will run at different
+  speeds.</p>
 
 </page>

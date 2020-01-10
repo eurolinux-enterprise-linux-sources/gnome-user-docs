@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" type="topic" style="a11y task" id="a11y-screen-reader" xml:lang="zh-CN">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="a11y task" id="a11y-screen-reader" xml:lang="zh-CN">
 
   <info>
     <link type="guide" xref="a11y#vision" group="blind"/>
 
     <revision pkgversion="3.13.92" date="2014-09-20" status="incomplete"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
       <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Jana Heves</name>
+      <email>jsvarova@gnome.org</email>
     </credit>
 
     <desc>使用 <app>Orca</app> 屏幕阅读器朗读用户界面。</desc>
@@ -24,5 +29,33 @@
 
   <title>朗读屏幕</title>
 
-  <p>GNOME 提供 <app>Orca</app> 屏幕阅读器来朗读用户界面，这取决于你安装 GNOME 的方式，您可能没有安装 Orca。更多详细信息，请访问<link href="install:orca">安装 Orca</link> 页面，然后打开<link href="help:orca">Orca 帮助</link>。</p>
+  <p>GNOME provides the <app>Orca</app> screen reader to speak the user
+  interface. Depending on how you installed GNOME, you might not have
+  Orca installed. If not, install Orca first.</p>
+
+  <p if:test="action:install"><link style="button" action="install:orca">Install Orca</link></p>
+
+  <steps>
+    <item>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Universal Access</gui>.</p>
+    </item>
+    <item>
+      <p>Click <gui>Universal Access</gui> to open the panel.</p>
+    </item>
+    <item>
+      <p>Click <gui>Screen Reader</gui> in the <gui>Seeing</gui> section, then
+      switch <gui>Screen Reader</gui> on in the dialog.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <title>Quickly turn Screen Reader on and off</title>
+    <p>You can turn Screen Reader on and off by clicking the
+    <link xref="a11y-icon">accessibility icon</link> in the top bar and
+    selecting <gui>Screen Reader</gui>.</p>
+  </note>
+
+  <p>Refer to the <link href="help:orca">Orca Help</link> for
+  more information.</p>
 </page>

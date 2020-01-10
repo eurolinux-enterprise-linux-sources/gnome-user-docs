@@ -11,21 +11,20 @@
 
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>A visual introduction to your desktop, the top bar, and the
-    <gui>Activities</gui> overview.</desc>
+    <desc>Eine visuelle Einführung in Ihre Arbeitsumgebung, das obere Panel und die <gui>Aktivitäten</gui>-Übersicht.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Hendrik Knackstedt</mal:name>
@@ -42,7 +41,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Christian Kirbach</mal:name>
       <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2014.</mal:years>
+      <mal:years>2011-2016.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -75,12 +74,7 @@
   </if:when>
 </if:choose>
 
-  <p>The top bar provides access to your windows and applications, your
-  calendar and appointments, and
-  <link xref="status-icons">system properties</link> like sound, networking,
-  and power. In the status menu in the top bar, you can change the volume or
-  screen brightness, edit your <gui>Wi-Fi</gui> connection details, check your
-  battery status, log out or switch users, and turn off your computer.</p>
+  <p>Das obere Panel ermöglicht Ihnen den Zugriff auf Fenster und Anwendungen, Ihren Kalender und Termine, sowie auf <link xref="status-icons">Systemeinstellungen</link> (z.B. Audio, Netzwerk und Stromversorgung). Im Status-Menü im oberen Panel können Sie die Lautstärke oder die Bildschirmhelligkeit ändern, die Verbindungsdetails für <gui>Funknetzwerke</gui> bearbeiten, den Akkuzustand prüfen, sich abmelden oder den Benutzer wechseln sowie den Rechner ausschalten.</p>
 
 <links type="section"/>
 
@@ -89,7 +83,7 @@
 
 <if:choose>
   <if:when test="!platform:gnome-classic">
-    <media type="image" src="figures/shell-activities.png" width="123" height="82" style="floatend floatright" if:test="!target:mobile">
+    <media type="image" src="figures/shell-activities.png" style="floatend floatright" if:test="!target:mobile">
       <p>Aktivitäten-Knopf</p>
     </media>
   </if:when>
@@ -100,11 +94,12 @@
   </if:when>
 </if:choose>
 
-  <p if:test="!platform:gnome-classic">Um Fenster und Anwendungen aufzurufen, klicken Sie auf den Knopf <gui>Aktivitäten</gui> oder bewegen Sie Ihren Mauszeiger einfach in die funktionale Ecke ganz links oben. Sie können auch die  <key xref="keyboard-key-super">Super</key>-Taste auf Ihrer Tastatur drücken. In der Übersicht sehen Sie Ihre Fenster und Anwendungen. Außerdem können Sie einfach tippen, um nach Ihren Anwendungen, Dateien, Ordnern und im Internet zu suchen.</p>
+  <p if:test="!platform:gnome-classic">Um Fenster und Anwendungen aufzurufen, klicken Sie auf den Knopf <gui>Aktivitäten</gui> oder bewegen Sie Ihren Mauszeiger einfach in die funktionale Ecke ganz links oben. Sie können auch die <key xref="keyboard-key-super">Super</key>-Taste auf Ihrer Tastatur drücken. In der Übersicht sehen Sie Ihre Fenster und Anwendungen. Außerdem können Sie einfach tippen, um nach Ihren Anwendungen, Dateien, Ordnern und im Internet zu suchen.</p>
 
-  <p if:test="platform:gnome-classic">Um Fenster und Anwendungen aufzurufen, klicken Sie auf das <link xref="shell-terminology"><gui>Anwendungen</gui>-Menü</link> links oben auf dem Bildschirm und wählen Sie den Eintrag <gui>Aktivitäten-Übersicht</gui>. Sie können auch die <key xref="keyboard-key-super">Super</key>-Taste auf Ihrer Tastatur drücken, um in der <gui>Aktivitäten</gui>-Übersicht Ihre Fenster und Anwendungen zu sehen. Außerdem können Sie einfach tippen, um nach Ihren Anwendungen, Dateien und Ordnern zu suchen.</p>
+  <p if:test="platform:gnome-classic">Um Fenster und Anwendungen aufzurufen, klicken Sie auf das <gui xref="shell-introduction#activities">Anwendungen</gui>-Menü links oben auf dem Bildschirm und wählen Sie den Eintrag <gui>Aktivitäten-Übersicht</gui>. Sie können auch die <key xref="keyboard-key-super">Super</key>-Taste auf Ihrer Tastatur drücken, um in der <gui>Aktivitäten</gui>-Übersicht Ihre Fenster und Anwendungen zu sehen. Außerdem können Sie einfach tippen, um nach Ihren Anwendungen, Dateien und Ordnern zu suchen.</p>
 
-  <media type="image" src="figures/shell-dash.png" width="49" height="300" style="floatstart floatleft" if:test="!target:mobile">
+  <!-- TODO: retake without the flashy bit -->
+  <media type="image" src="figures/shell-dash.png" height="300" style="floatstart floatleft" if:test="!target:mobile">
     <p>Das Dash</p>
   </media>
 
@@ -134,21 +129,13 @@
       <media type="image" src="figures/shell-appmenu-shell.png" width="250" style="floatend floatright" if:test="!target:mobile">
         <p>Anwendungsmenü von <app>Terminal</app></p>
       </media>
-      <p>Application menu, located beside the <gui>Activities</gui> button,
-      shows the name of the active application alongside with its icon and
-      provides quick access to application preferences or help. The items that
-      are available in the application menu vary depending on the application.
-      </p>
+      <p>Das Anwendungsmenü, welches sich neben dem <gui>Aktivitäten</gui>-Knopf befindet, zeigt den Namen und das zugehörige Symbol der aktiven Anwendung an. Außerdem bietet es schnellen Zugriff auf die Anwendungseinstellungen und die Hilfe. Die in diesem Menü enthaltenen Einträge sind von der jeweiligen Anwendung abhängig.</p>
     </if:when>
     <if:when test="platform:gnome-classic">
       <media type="image" src="figures/shell-appmenu-classic.png" width="154" height="133" style="floatend floatright" if:test="!target:mobile">
         <p>Anwendungsmenü von <app>Terminal</app></p>
       </media>
-      <p>Application menu, located next to the <gui>Applications</gui> and
-      <gui>Places</gui> menus, shows the name of the active application
-      alongside with its icon and provides quick access to application
-      preferences or help. The items that are available in the application menu
-      vary depending on the application.</p>
+      <p>Das Anwendungsmenü, welches sich neben den Menüs <gui>Anwendungen</gui> und <gui>Orte</gui> befindet, zeigt den Namen und das zugehörige Symbol der aktiven Anwendung an. Außerdem bietet es schnellen Zugriff auf die Anwendungseinstellungen und die Hilfe. Die in diesem Menü enthaltenen Einträge sind von der jeweiligen Anwendung abhängig.</p>
     </if:when>
   </if:choose>
 
@@ -160,7 +147,7 @@
 <if:choose>
   <if:when test="!platform:gnome-classic">
     <media type="image" src="figures/shell-appts.png" width="250" style="floatend floatright" if:test="!target:mobile">
-      <p>Uhr, Kalender und Termine</p>
+      <p>Uhr, Kalender, Termine und Benachrichtigungen</p>
     </media>
   </if:when>
   <if:when test="platform:gnome-classic">
@@ -170,15 +157,19 @@
   </if:when>
 </if:choose>
 
-  <p>Klicken Sie auf die Uhr in der Mitte des oberen Panels, um das aktuelle Datum, einen Kalender mit Monatsansicht und eine Liste Ihrer bevorstehenden Termine anzuzeigen. Sie können außerdem auf die Zeit- und Datumseinstellungen zugreifen und Ihren kompletten <app>Evolution</app>-Kalender direkt aus dem Menü öffnen.</p>
+  <p>Klicken Sie auf die Uhr in der Mitte des oberen Panels, um das aktuelle Datum, einen Kalender mit Monatsansicht, eine Liste Ihrer bevorstehenden Termine und neue Benachrichtigungen anzuzeigen. Den Kalender können Sie auch durch Drücken von <keyseq><key>Super</key><key>M</key></keyseq> öffnen. Sie können außerdem auf die Zeit- und Datumseinstellungen zugreifen und Ihren kompletten <app>Evolution</app>-Kalender direkt aus dem Menü öffnen.</p>
 
   <list style="compact">
     <item>
       <p><link xref="clock-calendar">Erfahren Sie mehr über Kalender und Termine.</link></p>
     </item>
+    <item>
+      <p><link xref="shell-notifications">Erfahren Sie mehr über Benachrichtigungen und das Benachrichtigungsfeld.</link></p>
+    </item>
   </list>
 
 </section>
+
 
 <section id="yourname">
   <title>Sie und Ihr Rechner</title>
@@ -242,23 +233,6 @@ messages will be presented, such as when your battery is critically low.</p>
 
 </section>
 
-<section id="message-tray">
-  <title>Das Benachrichtigungsfeld</title>
-
-  <media its:translate="no" type="image" src="figures/shell-message-tray.png" width="600">
-    <p its:translate="yes">Das Benachrichtigungsfeld</p>
-  </media>
-
-  <p>Das Benachrichtigungsfeld wird sichtbar, wenn Sie den Mauszeiger ganz an den unteren Rand des Bildschirms bewegen oder die Tastenkombination <keyseq><key>Super</key><key>M</key></keyseq> drücken. Hier werden Benachrichtigungen für Sie solange aufbewahrt, bis Sie bereit sind, diese zu lesen.</p>
-
-  <list style="compact">
-    <item>
-      <p><link xref="shell-notifications">Erfahren Sie mehr über Benachrichtigungen und das Benachrichtigungsfeld.</link></p>
-    </item>
-  </list>
-
-</section>
-
 <section id="window-list">
   <title>Fensterliste</title>
 
@@ -276,11 +250,7 @@ messages will be presented, such as when your battery is critically low.</p>
       <p>Fensterliste</p>
     </media>
     <p>Die Fensterliste am unteren Rand des Bildschirms bietet Zugriff auf all Ihre geöffneten Fenster und Anwendungen und lässt Sie diese schnell minimieren und wiederherstellen.</p>
-    <p>At the right-hand side of the window list, GNOME displays a short
-    identifier for the current worskpace, such as <gui>1</gui> for the first
-    (top) workspace. In addition, the identifier also displays the total number
-    of available workspaces. To switch to a different workspace, you can click
-    the identifier and select the workspace you want to use from the menu.</p>
+    <p>An der rechten Seite der Fensterliste zeigt GNOME die Nummer der aktuellen Arbeitsfläche, zum Beispiel <gui>1</gui> für die erste (obere) Arbeitsfläche. Zusätzlich wird die Gesamtanzahl der verfügbaren Arbeitsflächen angezeigt. Um zu einer anderen Arbeitsfläche zu wechseln, klicken Sie auf diesen Knopf und wählen Sie die gewünschte Arbeitsfläche aus dem Menü aus.</p>
     <p>Falls eine Anwendung oder Systemkomponente Ihre Aufmerksamkeit erfordert, wird ein blaues Symbol auf der rechten Seite der Fensterliste angezeigt. Ein Klick auf das blaue Symbol öffnet das Benachrichtigungsfeld.</p>
   </if:when>
 </if:choose>

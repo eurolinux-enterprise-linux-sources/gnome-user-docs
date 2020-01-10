@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-sort" xml:lang="zh-CN">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-sort" xml:lang="zh-CN">
 
   <info>
-    <link type="guide" xref="files"/>
+    <link type="guide" xref="files#common-file-tasks"/>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-25" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -40,10 +41,10 @@
 <section id="icon-view">
   <title>图标视图</title>
 
-  <p>To sort files in a different order, click the
-  <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">View options</span></media></gui>
-  button in the toolbar and choose <gui>By Name</gui>, <gui>By Size</gui>,
-  <gui>By Type</gui>, <gui>By Modification Date</gui>, or <gui>By Access
+  <p>To sort files in a different order, click the view options button in the
+  <!-- FIXME: Get a tooltip added for "View options" -->
+  toolbar and choose <gui>By Name</gui>, <gui>By Size</gui>, <gui>By
+  Type</gui>, <gui>By Modification Date</gui>, or <gui>By Access
   Date</gui>.</p>
 
   <p>例如，如果您选择了<gui>按名称</gui>，文件将会按名称的字母顺序来排列，更多详细信息，请参阅<link xref="#ways"/>。</p>
@@ -58,11 +59,11 @@
 
   <p>要用另外一种顺序排列文件，在文件管理器中点击对应的列标题。例如，点击<gui>类型</gui>将按照文件类型排序，再次点击这个列标题将反序排列。</p>
   <p>In list view, you can show columns with more attributes and sort on those
-  columns. Click the
-  <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">View options</span></media></gui>
-  button in the toolbar, pick <gui>Visible Columns</gui> and select the columns
-  that you want to be visible. You will then be able to sort by those columns.
-  See <link xref="nautilus-list"/> for descriptions of available columns.</p>
+  columns. Click the view options button in the toolbar, pick <gui>Visible
+  <!-- FIXME: Get a tooltip added for "View options" -->
+  Columns…</gui> and select the columns that you want to be visible. You will
+  then be able to sort by those columns. See <link xref="nautilus-list"/> for
+  descriptions of available columns.</p>
 
 </section>
 
@@ -71,25 +72,20 @@
 
   <terms>
     <item>
-      <title>按名称</title>
+      <title>名称</title>
       <p>按照文件名的字母顺序排列</p>
     </item>
     <item>
-      <title>按大小</title>
+      <title>大小</title>
       <p>按照文件的大小顺序排列(占用的磁盘空间)，默认是从小到大。</p>
     </item>
     <item>
-      <title>按类型</title>
+      <title>类型</title>
       <p>按照文件类型的字母顺序排列。相同类型的文件放在一组，然后按文件名排列。</p>
     </item>
     <item>
-      <title>按修改时间</title>
+      <title>Last Modified</title>
       <p>按照文件最后修改的日期时间排列，默认较早的文件排在前面。</p>
-    </item>
-    <item>
-      <title>By Access Date</title>
-      <p>Sorts by the date and time that a file was last read. Sorts from
-      oldest to newest by default.</p>
     </item>
   </terms>
 

@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="privacy-history-recent-off" xml:lang="hu">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="privacy-history-recent-off" xml:lang="hu">
 
   <info>
     <link type="guide" xref="privacy"/>
+    <link type="guide" xref="files#more-file-tasks"/>
 
     <revision pkgversion="3.8" date="2013-03-11" status="final"/>
     <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-30" status="final"/>
 
     <credit type="author">
       <name>Jim Campbell</name>
-      <email its:translate="no">jwcampbell@gmail.com</email>
+      <email>jwcampbell@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <desc>A legutóbb használt fájlok követésének kikapcsolása vagy korlátozása.</desc>
   
@@ -28,7 +32,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Kelemen Gábor</mal:name>
       <mal:email>kelemeng at gnome dot hu</mal:email>
-      <mal:years>2011, 2012, 2013, 2014</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -58,15 +62,15 @@
 
   <title>Fájlelőzmények követésének kikapcsolása vagy korlátozása</title>
   
-  <p>A nemrég használt fájlok és mappák követése egyszerűbbé teheti azon elemek megtalálását, amelyeken nemrég dolgozott, de előfordulhat, hogy ezeket az elemeket privátan szeretné tartani.</p>
+  <p>A nemrég használt fájlok és mappák követése egyszerűbbé teheti azon elemek megtalálását, amelyeken nemrég dolgozott a fájlkezelőben és az alkalmazások fájlablakaiban. Előfordulhat, hogy a fájlhasználati előzményeit privátan szeretné tartani, vagy csak a nem túl távoli előzményeket követné.</p>
 
   <steps>
-    <title>A fájlelőzmények követésével kapcsolatos funkciók kikapcsolásához:</title>
+    <title>Fájlelőzmények követésének kikapcsolása</title>
     <item>
-      <p>Nyissa meg a <gui xref="shell-terminology">Tevékenységek</gui> áttekintést, és kezdje el begépelni a <gui>Magánszféra</gui> szót.</p>
+      <p>Nyissa meg a <gui xref="shell-introduction#activities">Tevékenységek</gui> áttekintést, és kezdje el begépelni az <gui>Adatvédelem</gui> szót.</p>
     </item>
     <item>
-      <p>Kattintson a <gui>Magánszféra</gui> ikonra a panel megnyitásához.</p>
+      <p>Kattintson az <gui>Adatvédelem</gui> ikonra a panel megnyitásához.</p>
     </item>
     <item>
       <p>Jelölje be a <gui>Használat és előzmények</gui> négyzetet.</p>
@@ -83,12 +87,12 @@
   <note><p>Ez a beállítás nem befolyásolja az Ön által meglátogatott weboldalakról a böngésző általi információtárolást.</p></note>
 
   <steps>
-    <title>A fájlelőzmények követési idejének korlátozásához:</title>
+    <title>A fájlelőzmények követési idejének korlátozása</title>
     <item>
-      <p>Nyissa meg a <gui xref="shell-terminology">Tevékenységek</gui> áttekintést, és kezdje el begépelni a <gui>Magánszféra</gui> szót.</p>
+      <p>Nyissa meg a <gui xref="shell-introduction#activities">Tevékenységek</gui> áttekintést, és kezdje el begépelni az <gui>Adatvédelem</gui> szót.</p>
     </item>
     <item>
-      <p>Kattintson a <gui>Magánszféra</gui> ikonra a panel megnyitásához.</p>
+      <p>Kattintson az <gui>Adatvédelem</gui> ikonra a panel megnyitásához.</p>
     </item>
     <item>
       <p>Jelölje be a <gui>Használat és előzmények</gui> négyzetet.</p>

@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="power-closelid" xml:lang="de">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="power-closelid" xml:lang="de">
 
   <info>
     <link type="guide" xref="power"/>
     <link type="seealso" xref="power-suspendfail"/>
+    <link type="seealso" xref="power-suspend"/>
 
     <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
     <revision pkgversion="3.10" date="2013-11-08" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>GNOME-Dokumentationsprojekt</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="author editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -36,7 +42,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Christian Kirbach</mal:name>
       <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2014.</mal:years>
+      <mal:years>2011-2016.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -65,7 +71,14 @@
     <p>Diese Anweisungen funktionieren nur, wenn sie <app>systemd</app> verwenden. Kontaktieren Sie Ihre Distribution für weitere Informationen.</p>
   </note>
 
-  <p>Wenn Sie nicht wollen, dass Ihr Rechner in Bereitschaft versetzt wird, wenn Sie ihn zuklappen, können Sie die Einstellungen für dieses Verhalten ändern. Sie müssen das <link xref="user-admin-change">Passwort des Systemverwalters</link> besitzen, um diese Einstellung zu ändern.</p>
+  <note style="important">
+    <p>Das <app>Optimierungswerkzeug</app> muss auf Ihrem Rechner installiert sein, um diese Einstellung ändern zu können.</p>
+    <if:if xmlns:if="http://projectmallard.org/if/1.0/" test="action:install">
+      <p><link style="button" action="install:gnome-tweak-tool">Installieren Sie das <app>Optimierungswerkzeug</app></link></p>
+    </if:if>
+  </note>
+
+  <p>Wenn Sie nicht wollen, dass Ihr Rechner in Bereitschaft versetzt wird, wenn Sie ihn zuklappen, können Sie die Einstellungen für dieses Verhalten ändern.</p>
 
   <note style="warning">
     <p>Seien Sie sehr vorsichtig mit dieser Einstellung. Einige Laptops können überhitzen, wenn Sie bei geschlossenem Deckel eingeschaltet sind, insbesondere, wenn sie sich in einer geschlossenen Umgebung befinden, z.B. in einer Tasche.</p>
@@ -73,33 +86,19 @@
 
   <steps>
     <item>
-      <p>Öffnen Sie ein <app>Terminal</app> in der <gui>Aktivitäten</gui>-Übersicht.</p>
+      <p>Öffnen Sie die <gui xref="shell-introduction#activities">Aktivitäten</gui>-Übersicht und tippen Sie <gui>Optimierungswerkzeug</gui> ein.</p>
     </item>
     <item>
-      <p>Führen Sie den folgenden Befehl aus:</p>
-      <screen its:translate="no"><output style="prompt">$</output> <input>sudoedit /etc/systemd/logind.conf</input></screen>
+      <p>Klicken Sie auf <gui>Optimierungswerkzeug</gui>, um die Anwendung zu öffnen.</p>
     </item>
     <item>
-      <p>You will now see the contents of the file. Look for
-      <code>HandleLidSwitch=</code> in the file. The line may be quoted out
-      with a <code>#</code> at the start and may be followed by an argument. If
-      the line already exists, unquote it. Otherwise, add the line.</p>
-      <code>
-[Login]
-HandleLidSwitch=<input>lock</input>
-      </code>
-      <p>You can use <input>lock</input> for the screen to lock,
-      <input>ignore</input> for nothing to happen, <input>poweroff</input> for
-      the computer to switch off or <input>suspend</input> to suspend. For more
-      information, see <link href="man:logind.conf">logind.conf help</link>.</p>
+      <p>Klicken Sie auf den Reiter <gui>Energie</gui>.</p>
     </item>
     <item>
-      <p>Sobald Sie mit dem Bearbeiten der Datei fertig sind, speichern Sie Ihre Änderungen und beenden Sie das Bearbeitungsprogramm.</p>
+      <p>Stellen Sie <gui>Bei Schließen des Deckels nicht in Bereitschaft gehen</gui> auf <gui>AN</gui>.</p>
     </item>
     <item>
-      <p>Führen Sie den folgenden Befehl aus, um Ihre Änderungen anzuwenden:</p>
-      <screen its:translate="no"><output style="prompt">$</output> <input>sudo systemctl restart systemd-logind.service</input></screen>
-      <p>Wenn Sie diesen Befehl nicht ausführen, werden die Änderungen erst nach einem Neustart des Rechners aktiv.</p>
+      <p>Schließen Sie das Fenster <gui>Optimierungswerkzeug</gui>.</p>
     </item>
   </steps>
 

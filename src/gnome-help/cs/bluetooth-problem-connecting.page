@@ -5,24 +5,28 @@
     <link type="guide" xref="bluetooth#problems"/>
     <link type="seealso" xref="hardware-driver"/>
 
-    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.4" date="2012-02-19" status="outdated"/>
     <revision pkgversion="3.10" date="2013-11-09" status="review"/>
     <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
     <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
-      <email its:translate="no">philbull@gmail.com</email>
+      <email>philbull@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>The adapter could be turned off or may not have drivers, or Bluetooth
-    might be disabled or blocked.</desc>
+    <desc>Adaptér může být vypnutý nebo možná nemáte ovladače nebo je Bluetooth zakázané nebo blokované.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
@@ -33,55 +37,39 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Marek Černocký</mal:name>
       <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:years>2014, 2015</mal:years>
     </mal:credit>
   </info>
 
-  <title>I cannot connect my Bluetooth device</title>
+  <title>Nemohu připojit své zařízení Bluetooth</title>
 
-  <p>There are a number of reasons why you may not be able to connect to a
-  Bluetooth device, such as a phone or headset.</p>
+  <p>Existuje řada důvodů, proč se vám nemusí dařit spojit se se zařízením Bluetooth, jako jsou telefon nebo sluchátka.</p>
 
   <terms>
     <item>
-      <title>Connection blocked or untrusted</title>
-      <p>Some Bluetooth devices block connections by default, or require you to
-      change a setting to allow connections to be made. Make sure that your
-      device is set up to allow connections.</p>
+      <title>Spojení je blokováno nebo nedůvěryhodné</title>
+      <p>Některá zařízení Bluetooth ve výchozím stavu spojení blokují nebo vyžadují změnu nastavení, aby umožnilo vytvoření spojení. Ujistěte se, že zařízení je nastavené tak, aby spojení umožňovalo.</p>
     </item>
     <item>
-      <title>Bluetooth hardware not recognized</title>
-      <p>Your Bluetooth adapter or dongle may not have been recognized by the
-      computer. This could be because
-      <link xref="hardware-driver">drivers</link> for the adapter are not
-      installed. Some Bluetooth adapters are not supported on Linux, so you may
-      not be able to get the right drivers for them. In this case, you will
-      probably have to get a different Bluetooth adapter.</p>
+      <title>Hardware Bluetooth nebyl rozpoznán</title>
+      <p>Váš adaptér nebo klíč Bluetooth nemusí být počítačem rozpoznán. Může to být tím, že není nainstalován <link xref="hardware-driver">ovladač</link> pro daný adaptér. Některé adaptéry Bluetooth nejsou v Linuxu podporovány, takže pro ně správný ovladač neseženete. V takovém případě si nejspíše budete muset pořídit jiný adaptér Bluetooth.</p>
     </item>
     <item>
-      <title>Adapter is not switched on</title>
+      <title>Adaptér není zapnutý</title>
       <if:choose>
         <if:when test="platform:unity">
-          <p>Make sure that your Bluetooth adapter is switched on. Click the
-          Bluetooth icon in the <gui>menu bar</gui> and check that it's not
-          <link xref="bluetooth-turn-on-off">disabled</link>.</p>
+          <p>Ujistěte se, že je adaptér Bluetooth zapnutý. Klikněte na ikonu Bluetooth na <gui>horní liště</gui> a zkontrolujte, že není <link xref="bluetooth-turn-on-off">vypnutý</link>.</p>
         </if:when>
-        <p>Make sure that your Bluetooth adapter is switched on. Open the
-        Bluetooth panel and check that it is not
-        <link xref="bluetooth-turn-on-off">disabled</link>.</p>
+        <p>Ujistěte se, že je adaptér Bluetooth zapnutý. Otevřete panel Bluetooth a zkontrolujte, že není <link xref="bluetooth-turn-on-off">vypnutý</link>.</p>
       </if:choose>
     </item>
     <item>
-      <title>Device Bluetooth connection switched off</title>
-      <p>Check that Bluetooth is turned on on the device you are trying to
-      connect to, and that it is <link xref="bluetooth-visibility">discoverable
-      or visible</link>. For example, if you are trying to connect to a phone,
-      make sure that it is not in airplane mode.</p>
+      <title>Zařízení Bluetooth je nepřipojeno</title>
+      <p>Zkontrolujte, jestli je Bluetooth na zařízení, se kterým se zkoušíte spojit, zapnuté a že je zařízení <link xref="bluetooth-visibility">vyhledatelné a viditelné</link>. Například, když se zkoušíte spojit s telefonem, ujistěte se, že není v režimu „letadlo“.</p>
     </item>
     <item>
-      <title>No Bluetooth adapter in your computer</title>
-      <p>Many computers do not have Bluetooth adapters. You can buy an adapter
-      if you want to use Bluetooth.</p>
+      <title>Ve vašem počítači není adaptér Bluetooth</title>
+      <p>Spousta počítačů, hlavně stolních, adaptér Bluetooth nemá. Jestli chcete Bluetooth používat, můžete si nějaký dokoupit.</p>
     </item>
   </terms>
 

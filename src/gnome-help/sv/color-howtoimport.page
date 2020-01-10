@@ -11,58 +11,61 @@
 
     <credit type="author">
       <name>Richard Hughes</name>
-      <email its:translate="no">richard@hughsie.com</email>
+      <email>richard@hughsie.com</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Color profiles can be imported by opening them.</desc>
+    <desc>Färgprofiler kan importeras genom att öppna dem.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
   </info>
 
-  <title>How do I import color profiles?</title>
+  <title>Hur importerar jag färgprofiler?</title>
 
-  <p>You can import a color profile by double clicking on a <file>.ICC</file>
-  or <file>.ICM</file> file in the file browser.</p>
+  <p>Du kan importera en färgprofil genom att dubbelklicka på en <file>.ICC</file>- eller <file>.ICM</file>-fil i filhanteraren.</p>
 
-  <p>Alternatively you can manage your color profiles through the
-  <gui>Color</gui> panel.</p>
+  <p>Alternativt kan du hantera dina färgprofiler via panelen <gui>Färg</gui>.</p>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-terminology">Activities</gui> overview and
-      start typing <gui>Color</gui>.</p>
+      <p>Öppna översiktsvyn <gui xref="shell-introduction#activities">Aktiviteter</gui> och börja skriv <gui>Färg</gui>.</p>
     </item>
     <item>
-      <p>Click on <gui>Color</gui> to open the panel and select your
-      device.</p>
+      <p>Klicka på <gui>Färg</gui> för att öppna panelen och välja din enhet.</p>
     </item>
     <item>
-      <p>Click <gui>Add profile</gui> to select an existing profile or import
-      a new profile.</p>
+      <p>Klicka på <gui>Lägg till profil</gui> för att välja en existerande profil eller importera en ny profil.</p>
     </item>
     <item>
-      <p>Press <gui>Add</gui> to confirm your selection.</p>
+      <p>Tryck på <gui>Lägg till</gui> för att bekräfta ditt val.</p>
     </item>
   </steps>
 
-  <p>The manufacturer of your display may supply a profile that you can use.
-  These profiles are usually made for the average display, so may not be perfect
-  for your specific one. For the best calibration, you should
-  <link xref="color-calibrate-screen">create your own profile</link> using a
-  colorimeter or a spectrophotometer.</p>
+  <p>Din skärms tillverkare kan tillhandahålla en profil som du kan använda. Dessa profiler är vanligtvis gjorda för den genomsnittliga skärmen, så den är kanske inte perfekt för din specifika skärm. För den bästa kalibreringen bör du <link xref="color-calibrate-screen">skapa din egen profil</link> genom att använda en färgkalibrator eller spektrofotometer.</p>
 
 </page>

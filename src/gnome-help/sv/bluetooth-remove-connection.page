@@ -4,78 +4,88 @@
   <info>
     <link type="guide" xref="bluetooth"/>
 
-    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <revision pkgversion="3.4" date="2012-02-19" status="outdated"/>
     <revision pkgversion="3.10" date="2013-11-07" status="review"/>
     <revision pkgversion="3.12" date="2014-03-04" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+    <revision pkgversion="3.13" date="2014-09-22" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Jim Campbell</name>
-      <email its:translate="no">jwcampbell@gmail.com</email>
+      <email>jwcampbell@gmail.com</email>
     </credit>
     <credit type="author">
       <name>Paul W. Frields</name>
-      <email its:translate="no">stickster@gmail.com</email>
+      <email>stickster@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
       <years>2014</years>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
       <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2015</years>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Remove a device from the list of Bluetooth devices.</desc>
+    <desc>Ta bort en enhet från listan över Bluetooth-enheter.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
   </info>
 
-  <title>Disconnect a Bluetooth device</title>
+  <title>Koppla ifrån en Bluetooth-enhet</title>
 
-  <p>If you do not want to be connected to a Bluetooth device anymore, you can
-  remove the connection. This is useful if you no longer want to use a device
-  like a mouse or headset, or if you no longer wish to transfer files to or
-  from a device.</p>
+  <p>Om du inte längre vill vara ansluten till en Bluetooth-enhet kan du ta bort anslutningen. Detta är användbart om du inte längre vill använda en enhet, till exempel en mus eller hörlurar, eller om du inte längre vill överföra filer till eller från en enhet.</p>
 
   <steps>
     <item>
     <if:choose>
       <if:when test="platform:unity">
-        <p>Click the Bluetooth icon in the <gui>menu bar</gui> and select
-        <gui>Bluetooth Settings</gui>.</p>
+        <p>Klicka på Bluetooth-ikonen i <gui>menyraden</gui> och välj <gui>Bluetooth-inställningar</gui>.</p>
       </if:when>
-      <p>Open the <gui xref="shell-terminology">Activities</gui> overview and
-      start typing <gui>Bluetooth</gui>.</p>
+      <p>Öppna översiktsvyn <gui xref="shell-introduction#activities">Aktiviteter</gui> och börja skriv <gui>Bluetooth</gui>.</p>
     </if:choose>
     </item>
     <item>
     <if:choose>
       <if:when test="platform:unity">
-        <p>Select <gui>Bluetooth Settings</gui> to open the panel.</p>
+        <p>Klicka på <gui>Bluetooth-inställningar</gui> för att öppna panelen.</p>
       </if:when>
-      <p>Click on <gui>Bluetooth</gui> to open the panel.</p>
+      <p>Klicka på <gui>Bluetooth</gui> för att öppna panelen.</p>
     </if:choose>
     </item>
     <item>
-      <p>Select the device which you want to disconnect from the list.</p>
+      <p>Välj enheten i listan som du vill koppla från.</p>
     </item>
     <item>
-      <p>In the device dialog box, switch <gui>Connection</gui> to
-      <gui>OFF</gui>, or to remove the device from the <gui>Devices</gui> list,
-      click <gui>Remove Device</gui>.</p>
+      <p>I enhetens dialogruta, ställ om <gui>Anslutning</gui> till <gui>AV</gui>, eller för att ta bort enheten från listan <gui>Enheter</gui>, klicka på <gui>Ta bort enhet</gui>.</p>
     </item>
   </steps>
 
-  <p>You can <link xref="bluetooth-connect-device">reconnect a Bluetooth
-  device</link> later if desired.</p>
+  <p>Du kan <link xref="bluetooth-connect-device">återkoppla en Bluetooth-enhet</link> senare om så önskas.</p>
 
 </page>

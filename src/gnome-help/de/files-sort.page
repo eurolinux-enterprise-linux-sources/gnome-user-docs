@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-sort" xml:lang="de">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-sort" xml:lang="de">
 
   <info>
-    <link type="guide" xref="files"/>
+    <link type="guide" xref="files#common-file-tasks"/>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-25" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -39,7 +40,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Christian Kirbach</mal:name>
       <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2014.</mal:years>
+      <mal:years>2011-2016.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -64,16 +65,11 @@
 <section id="icon-view">
   <title>Symbolansicht</title>
 
-  <p>To sort files in a different order, click the
-  <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">View options</span></media></gui>
-  button in the toolbar and choose <gui>By Name</gui>, <gui>By Size</gui>,
-  <gui>By Type</gui>, <gui>By Modification Date</gui>, or <gui>By Access
-  Date</gui>.</p>
+  <p>Um die Dateien in einer anderen Reihenfolge zu sortieren, klicken Sie auf den Ansichtsoptionen-Knopf in der Werkzeugleiste und wählen Sie <gui>Nach Name</gui>, <gui>Nach Größe</gui>, <gui>Nach Typ</gui> oder <gui>Nach Zugriffsdatum</gui>.</p>
 
   <p>Ein Beispiel: Wenn Sie <gui>Nach Name</gui> wählen, so werden die Dateien in alphabetischer Reihenfolge nach ihren Namen sortiert. Lesen Sie <link xref="#ways"/> für weitere Optionen.</p>
 
-  <p>You can sort in the reverse order by selecting <gui>Reversed Order</gui>
-  from the menu.</p>
+  <p>Sie können in umgekehrter Reihenfolge sortieren, indem Sie <gui>Umgekehrte Reihenfolge</gui> aus dem Menü wählen.</p>
 
 </section>
 
@@ -81,12 +77,7 @@
   <title>Listenansicht</title>
 
   <p>Um die Dateien in einer anderen Reihenfolge anzuordnen, klicken Sie auf einen Spaltenkopf in der Dateiverwaltung. Klicken Sie zum Beispiel auf <gui>Typ</gui>, um sie nach Dateityp zu sortieren. Klicken Sie noch einmal auf den Spaltenkopf, um die Reihenfolge umzudrehen.</p>
-  <p>In list view, you can show columns with more attributes and sort on those
-  columns. Click the
-  <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">View options</span></media></gui>
-  button in the toolbar, pick <gui>Visible Columns</gui> and select the columns
-  that you want to be visible. You will then be able to sort by those columns.
-  See <link xref="nautilus-list"/> for descriptions of available columns.</p>
+  <p>In der Listenansicht können Sie Spalten mit weiteren Attributen anzeigen und nach diesen Spalten sortieren. Klicken Sie auf den Ansichtsoptionen-Knopf in der Werkzeugleiste, wählen Sie <gui>Sichtbare Spalten …</gui> und wählen Sie die Spalten, die Sie sehen wollen. Sie können dann nach diesen Spalten sortieren. Lesen Sie <link xref="nautilus-list"/> für eine Beschreibung der verfügbaren Spalten.</p>
 
 </section>
 
@@ -95,25 +86,20 @@
 
   <terms>
     <item>
-      <title>Nach Name</title>
+      <title>Name</title>
       <p>Sortiert alphabetisch nach dem Namen der Datei.</p>
     </item>
     <item>
-      <title>Nach Größe</title>
+      <title>Größe</title>
       <p>Sortiert nach der Größe der Datei (dem belegten Speicherplatz). Die Sortierung erfolgt standardmäßig von der kleinsten zur größten Datei.</p>
     </item>
     <item>
-      <title>Nach Typ</title>
-      <p>Sortiert alphabetisch nach dem Dateityp. Datei des gleichen Typs werden zunächst zu Gruppen zusammengefasst und dann nach Namen sortiert.</p>
+      <title>Typ</title>
+      <p>Sortiert alphabetisch nach dem Dateityp. Dateien des gleichen Typs werden zunächst zu Gruppen zusammengefasst und dann nach Namen sortiert.</p>
     </item>
     <item>
-      <title>Nach Änderungsdatum</title>
+      <title>Zuletzt geändert</title>
       <p>Sortiert nach Datum und Zeit der letzten Änderung der Datei. Die Sortierung erfolgt standardmäßig von der ältesten zur neuesten Datei. </p>
-    </item>
-    <item>
-      <title>By Access Date</title>
-      <p>Sorts by the date and time that a file was last read. Sorts from
-      oldest to newest by default.</p>
     </item>
   </terms>
 

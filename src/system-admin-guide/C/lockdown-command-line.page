@@ -9,12 +9,12 @@
 
     <credit type="author copyright">
       <name>Petr Kovar</name>
-      <email its:translate="no">pknbe@volny.cz</email>
+      <email>pknbe@volny.cz</email>
       <years>2014</years>
     </credit>
     <credit type="author copyright">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
       <years>2014</years>
     </credit>
 
@@ -54,7 +54,7 @@
 
   <steps>
     <include href="dconf-snippets.xml"
-      xpointer="xpointer(/*/*[@xml:id='dconf-profile-gdm'])"
+      xpointer="xpointer(/*/*[@xml:id='dconf-profile-user'])"
       xmlns="http://www.w3.org/2001/XInclude"/>
     <item>
       <p>Create a <sys>local</sys> database for machine-wide settings in
@@ -73,6 +73,9 @@ disable-command-line=true</code>
     </item>
     <include href="dconf-snippets.xml"
       xpointer="xpointer(/*/*[@xml:id='dconf-update'])"
+      xmlns="http://www.w3.org/2001/XInclude"/>
+    <include href="dconf-snippets.xml"
+      xpointer="xpointer(/*/*[@xml:id='dconf-logoutin'])"
       xmlns="http://www.w3.org/2001/XInclude"/>
   </steps>
 </section>

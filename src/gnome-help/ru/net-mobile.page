@@ -5,18 +5,22 @@
     <link type="guide" xref="net-wireless"/>
 
     <revision pkgversion="3.14" date="2014-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Проект документирования GNOME</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Майкл Хилл (Michael Hill)</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Дэвид Кинг (David King)</name>
+      <email>amigadave@amigadave.com</email>
     </credit>
 
-    <desc>Use your phone or Internet stick to connect to the mobile broadband
-    network.</desc>
+    <desc>Подключение к Интернету с помощью мобильного телефона или USB-модема.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -28,7 +32,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011, 2012</mal:years>
+      <mal:years>2011-2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -42,40 +46,44 @@
       <mal:email>juliette.tux@gmail.com</mal:email>
       <mal:years>2013-2014</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>ymyasoedov@yandex.ru</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
-  <title>Connect to mobile broadband</title>
+  <title>Подключение к мобильному Интернету</title>
 
-  <p>Set up a connection to a cellular (3G) network using your mobile phone
-  or Internet stick.</p>
+  <p>You can set up a connection to a cellular (3G) network with your
+  computer's built-in 3G modem, your mobile phone, or an Internet stick.</p>
 
   <steps>
-    <item><p>Connect your phone or Internet stick to a USB port on your
-    computer.</p></item>
-
-    <item><p>Click the system status area on the top bar, select
-    <gui>Mobile Broadband</gui>, then click <gui>Connect</gui>.</p>
+    <item><p>If you do not have a built-in 3G modem, connect your phone or
+    Internet stick to a USB port on your computer.</p>
+    </item>
+    <item>
+    <p>Open the <gui xref="shell-introduction#yourname">system menu</gui> from the right
+    side of the top bar.</p>
+  </item>
+  <item>
+    <p>Select
+    <gui><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-excellent-symbolic.svg" width="16" height="16"/>
+      Mobile Broadband Off</gui>. The <gui>Mobile Broadband</gui> section of
+      the menu will expand.</p>
       <note>
-        <p>If <gui>Mobile Broadband</gui> does not appear in the system
-        status menu, ensure that your device is not set to connect as Mass
-        Storage.</p>
+        <p>Если пункт <gui>Мобильное подключение</gui> отсутствует в меню, проверьте, не подключено ли ваше устройство как устройство хранения данных.</p>
       </note>
     </item>
-    <item><p>If you are connecting for the first time, the Mobile Broadband
-    wizard is launched. The opening screen displays a list of required
-    information. Click <gui style="button">Next</gui>.</p></item>
-    <item><p>Choose your provider's country or region from the list. Click
+    <item><p>Select <gui>Connect</gui>. If you are connecting for the first
+    time, the <gui>Set up a Mobile Broadband Connection</gui> wizard is
+    launched. The opening screen displays a list of required information. Click
     <gui style="button">Next</gui>.</p></item>
-    <item><p>Choose your provider from the list. Click
-    <gui style="button">Next</gui>.</p></item>
-    <item><p>Select a plan according to the type of device you are
-    connecting. This will determine the Access Point Name. Click
-    <gui style="button">Next</gui>.</p></item>
-    <item><p>Confirm the settings you have selected by clicking
-    <gui style="button">Apply</gui>. The wizard will close and the
-    <gui>Network</gui> panel will display the properties of your
-    connection.</p></item>
-
+    <item><p>Выберите из списка страну или область вашего провайдера. Нажмите <gui style="button">Далее</gui>.</p></item>
+    <item><p>Выберите вашего провайдера из списка. Нажмите <gui style="button">Далее</gui>.</p></item>
+    <item><p>Выберите тариф в зависимости от типа подключённого устройства. Это позволит определить точку доступа. Нажмите <gui style="button">Далее</gui>.</p></item>
+    <item><p>Подтвердите выбранные параметры, нажав кнопку <gui style="button">Применить</gui>. Помощник закроется и панель <gui>Сеть</gui> отобразит свойства вашего подключения.</p></item>
   </steps>
 
 </page>

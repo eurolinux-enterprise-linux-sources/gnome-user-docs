@@ -6,10 +6,21 @@
     <link type="seealso" xref="net-findip"/>
 
     <revision pkgversion="3.4.0" date="2012-03-13" status="final"/>
+    <revision pkgversion="3.15" date="2014-12-04" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Jim Campbell</name>
-      <email its:translate="no">jwcampbell@gmail.com</email>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -31,7 +42,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Christian Kirbach</mal:name>
       <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2014.</mal:years>
+      <mal:years>2011-2016.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -53,25 +64,25 @@
 
   <steps>
     <item>
-      <p>Klicken Sie auf das <gui>Netzwerksymbol</gui> im <gui>oberen Panel</gui> und wählen Sie <gui>Netzwerkeinstellungen</gui>.</p>
+      <p>Öffnen Sie die <gui xref="shell-introduction#activities">Aktivitäten</gui>-Übersicht und tippen Sie <gui>Netzwerk</gui>.</p>
     </item>
     <item>
-      <p>Wählen Sie die Netzwerkverbindung in der Liste aus (<gui>Kabelgebunden</gui> oder <gui>Funknetzwerk</gui>) und klicken Sie auf <gui>Konfigurieren</gui>.</p>
+      <p>Klicken Sie auf <gui>Netzwerk</gui>, um das Panel zu öffnen.</p>
     </item>
     <item>
-      <p>Klicken Sie auf <gui>IPv4-Einstellungen</gui> und ändern Sie die <gui>Methode</gui> in <em>Manuell</em>.</p>
+      <p>Wählen Sie im linken Teilfenster die Netzwerkverbindung, für die Sie eine feste Adresse vergeben wollen. Wenn Sie ein kabelgebundenes Netzwerk anschließen, klicken Sie auf <gui>Kabelgebunden</gui> und anschließend auf den <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">Einstellungen</span></media>-Knopf. Im Falle einer <gui>WLAN</gui>-Verbindung befindet sich der Knopf <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">Einstellungen</span></media> neben dem aktiven Netzwerk.</p>
     </item>
     <item>
-      <p>Falls in der <gui>Adressen</gui>-Liste keine Verbindungsinformationen aufgelistet sind oder Sie eine neue Verbindung erstellen wollen, klicken Sie auf <gui>Hinzufügen</gui>.</p>
+      <p>Klicken Sie auf den Reiter <gui>IPv4</gui> oder auf <gui>IPv6</gui> und ändern Sie <gui>Adressen</gui> auf <em>Manuell</em>.</p>
     </item>
     <item>
-      <p>Geben Sie die Daten zu <em>IP-Adresse</em>, <em>Netzmaske</em> und <em>Gateway</em> in die entsprechenden Felder ein. Welche Einstellungen Sie konkret wählen, hängt von Ihrem Netzwerkaufbau ab. Es gibt bestimmte Regeln, welche IP-Adressen und Netzmasken in einem bestimmten Netzwerk gültig sind.</p>
+      <p>Geben Sie die Daten zu <em>Adresse</em>, <em>Netzmaske</em> und <em>Gateway</em> in die entsprechenden Felder ein. Welche Einstellungen Sie konkret wählen, hängt von Ihrem Netzwerkaufbau ab. Es gibt bestimmte Regeln, welche IP-Adressen und Netzmasken in einem bestimmten Netzwerk gültig sind.</p>
     </item>
     <item>
       <p>Wenn nötig, tragen Sie die Adresse des <em>Domain Name Servers</em> im <gui>DNS-Server</gui>-Feld ein. Das ist die IP-Adresse eines Servers, der Domain-Namen auflöst; die meisten Unternehmensnetzwerke und Internet-Dienstanbieter haben dedizierte DNS-Server.</p>
     </item>
     <item>
-      <p>Klicken Sie auf <gui>Speichern</gui>. Die Netzwerkverbindung sollte nun eine feste IP-Adresse haben.</p>
+      <p>Klicken Sie auf <gui>Anwenden</gui>. Die Netzwerkverbindung sollte nun eine feste IP-Adresse haben.</p>
     </item>
   </steps>
 

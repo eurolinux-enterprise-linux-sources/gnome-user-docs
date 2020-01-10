@@ -6,6 +6,7 @@
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Dokumentationsprojekt för GNOME</name>
@@ -14,44 +15,46 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Check your audio cables and sound card drivers.</desc>
+    <desc>Kontrollera dina ljudkablar och ljudkortsdrivrutiner.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
   </info>
 
-<title>I hear crackling or buzzing when sounds are playing</title>
+<title>Jag hör sprakande eller surrande när ljud spelas upp</title>
 
-  <p>If you hear crackling or buzzing when sounds are playing on your computer,
- you may have a problem with the audio cables or connectors, or a problem with
- the drivers for the sound card.</p>
+  <p>Om du hör sprakande eller surrande när ljud spelas på din dator så kan du ha ett problem med ljudkablarna eller anslutningarna eller ett problem med drivrutinerna för ditt ljudkort.</p>
 
 <list>
  <item>
-  <p>Check that the speakers are plugged in correctly.</p>
-  <p>If the speakers aren't fully plugged in, or if they are plugged into the
-  wrong socket, you might hear a buzzing sound.</p>
+  <p>Kontrollera att högtalarna anslutits ordentligt.</p>
+  <p>Om högtalarna inte är ordentligt anslutna eller om de anslutits till fel kontakt så kan du höra ett surrande ljud.</p>
  </item>
 
  <item>
-  <p>Make sure the speaker/headphone cable isn't damaged.</p>
-  <p>Audio cables and connectors can gradually wear with use. Try plugging the
-  cable or headphones into another audio device (like an MP3 player or a CD
-  player) to check if there is still a crackling sound. If there is, you may need
-  to replace the cable or headphones.</p>
+  <p>Säkerställ att högtalar-/hörlurskabeln inte är skadad.</p>
+  <p>Ljudkablar och kontaktdon kan slitas efter användning. Prova att ansluta kabeln eller hörlurarna till en annan ljudenhet (som en MP3-spelare eller en cd-spelare) för att kontrollera om det fortfarande finns ett sprakande ljud. Om det finns så kan du behöva ersätta kabeln eller hörlurarna.</p>
  </item>
 
  <item>
-  <p>Check if the sound drivers aren't very good.</p>
-  <p>Some sound cards don't work very well on Linux because they don't have very
-  good drivers. This problem is more difficult to identify. Try searching for
-  the make and model of your sound card on the internet, plus the search term
-  "Linux", to see if other people are having the same problem.</p>
-  <p>You can use the <cmd>lspci</cmd> command to get more information about your
-  sound card.</p>
+  <p>Kontrollera om ljuddrivrutinerna är dåliga.</p>
+  <p>Vissa ljudkort fungerar inte så bra i Linux eftersom de inte har så bra drivrutiner. Detta problem är mycket svårare att identifiera. Prova att söka efter tillverkare och modell för ditt ljudkort på internet, samt söktermen ”Linux”, för att se om andra personer har samma problem.</p>
+  <p>Du kan använda kommandot <cmd>lspci</cmd> för att få mer information om ditt ljudkort.</p>
  </item>
 </list>
 

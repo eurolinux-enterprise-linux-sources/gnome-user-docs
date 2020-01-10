@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="privacy-screen-lock" xml:lang="de">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="privacy-screen-lock" xml:lang="de">
 
   <info>
     <link type="guide" xref="privacy"/>
@@ -9,18 +9,19 @@
     <revision pkgversion="3.8" date="2013-05-21" status="candidate"/>
     <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
     <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-30" status="final"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit>
       <name>Jim Campbell</name>
-      <email its:translate="no">jwcampbell@gmail.com</email>
+      <email>jwcampbell@gmail.com</email>
       <years>2013</years>
     </credit>
 
@@ -43,7 +44,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Christian Kirbach</mal:name>
       <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2014.</mal:years>
+      <mal:years>2011-2016.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -61,16 +62,14 @@
 
   <title>Ihren Bildschirm automatisch sperren</title>
   
-  <p>Wenn Sie Ihren Rechner verlassen, sollten Sie <link xref="shell-exit#lock-screen">den Bildschirm sperren</link>, um andere Personen daran zu hindern, Ihre Arbeitsumgebung zu benutzen und auf Ihre Dateien zuzugreifen. Sie können den Bildschirm automatisch nach einer festgelegten Zeit sperren lassen, falsl Sie häufiger das Sperren vergessen. Somit wird Ihr Rechner besser gesichert, wenn Sie ihn nicht verwenden.</p>
+  <p>Wenn Sie Ihren Rechner verlassen, sollten Sie <link xref="shell-exit#lock-screen">den Bildschirm sperren</link>, um andere Personen daran zu hindern, Ihre Arbeitsumgebung zu benutzen und auf Ihre Dateien zuzugreifen. Sie können den Bildschirm automatisch nach einer festgelegten Zeit sperren lassen, falls Sie häufiger das Sperren vergessen. Somit wird Ihr Rechner besser gesichert, wenn Sie ihn nicht verwenden.</p>
 
-  <note><p>When your screen is locked, your applications and system processes
-  will continue to run, but you will need to enter your password to begin using
-  them again.</p></note>
+  <note><p>Wenn Ihr Bildschirm gesperrt ist, werden Anwendungen und Systemprozesse weiter ausgeführt, aber Sie werden Ihr Passwort eingeben müssen, um Ihre Arbeit fortzusetzen.</p></note>
   
   <steps>
     <title>So legen Sie die Zeit bis zum automatischen Sperren des Bildschirms fest:</title>
     <item>
-      <p>Öffnen Sie die <gui xref="shell-terminology">Aktivitäten</gui>-Übersicht und tippen Sie <gui>Privatsphäre</gui> ein.</p>
+      <p>Öffnen Sie die <gui xref="shell-introduction#activities">Aktivitäten</gui>-Übersicht und tippen Sie <gui>Privatsphäre</gui> ein.</p>
     </item>
     <item>
       <p>Klicken Sie auf <gui>Privatsphäre</gui>, um das Panel zu öffnen.</p>
@@ -79,22 +78,14 @@
       <p>Klicken Sie auf <gui>Sperrbildschirm</gui>.</p>
     </item>
     <item>
-      <p>Make sure <gui>Automatic Screen Lock</gui> is switched <gui>ON</gui>,
-      then select a length of time from the drop-down list.</p>
-    </item>
-    <item>
-      <p>To allow notifications to be displayed on the lock screen, switch
-      <gui>Show Notifications</gui> to <gui>ON</gui>.</p>
-    </item>
-    <item>
-      <p>Click the <gui>X</gui> to close.</p>
+      <p>Stellen Sie sicher, dass <gui>Automatische Sperrbildschirm</gui> <gui>AN</gui> ist und wählen Sie dann eine Zeit in der Auswahlliste.</p>
     </item>
   </steps>
 
-  <p>When your screen is locked, and you want to unlock it, press
-  <key>Esc</key>, or swipe up from the bottom of the screen with your mouse.
-  Then enter your password, and press <key>Enter</key> or click
-  <gui>Unlock</gui>. Alternatively, just start typing your password and the
-  lock curtain will be automatically raised as you type.</p>
+  <note style="tip">
+    <p>Anwendungen können Benachrichtigungen ausgeben, die noch auf dem Sperrbildschirm angezeigt werden. Dies ist beispielsweise sinnvoll, um den Eingang einer E-Mail anzuzeigen, ohne dass der Bildschirm entsperrt werden muss. Wenn Sie nicht wollen, dass andere Benutzer diese Benachrichtigungen sehen, schalten Sie <gui>Benachrichtigungen anzeigen</gui> aus.</p>
+  </note>
+
+  <p>Wenn Ihr Bildschirm gesperrt ist und Sie ihn entsperren wollen, drücken Sie die <key>Esc</key>-Taste oder wischen Sie mit der Maus auf dem Bildschirm von unten nach oben. Geben Sie dann Ihr Passwort ein und drücken die <key>Eingabetaste</key> oder klicken auf <gui>Entsperren</gui>. Alternativ können Sie einfach mit der Eingabe Ihres Passworts beginnen, woraufhin der Sperrvorhang automatisch geöffnet wird.</p>
 
 </page>

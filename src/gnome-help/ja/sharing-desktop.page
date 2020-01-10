@@ -5,19 +5,21 @@
     <link type="guide" xref="sharing"/>
     <link type="guide" xref="prefs-sharing"/>
 
-    <revision pkgversion="3.8.2" date="2013-05-09" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.14" date="2014-10-13" status="candidate"/>
+    <revision pkgversion="3.14" date="2015-01-25" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
 
     <credit type="author">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
-
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jcampbell@gnome.org</email>
+    </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <desc>VNC によるあなたのデスクトップの閲覧や操作を他のユーザーに許可します。</desc>
@@ -25,7 +27,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -81,7 +83,7 @@
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-terminology">Activities</gui> overview and
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
       start typing <gui>Sharing</gui>.</p>
     </item>
     <item>
@@ -98,9 +100,7 @@
       <p><gui>画面共有</gui>を選択します。</p>
     </item>
     <item>
-      <p>To let others view your desktop, switch <gui>Screen Sharing</gui> to
-      <gui>ON</gui>. This means that other people will be able to attempt to
-      connect to your computer and view what's on your screen.</p>
+      <p>あなたのデスクトップを表示するのを他のユーザーに許可するには、<gui>画面共有</gui>のスイッチを<gui>オン</gui>に切り替えます。これにより、他のユーザーがあなたのデスクトップに接続して画面の閲覧を試みることができるようになります。</p>
     </item>
     <item>
       <p>To let others interact with your desktop, switch
@@ -110,8 +110,7 @@
       using.</p>
 
       <note style="tip">
-        <p>This option is enabled by default when <gui>Screen Sharing</gui> is
-        <gui>ON</gui>.</p>
+        <p>このオプションは、<gui>画面共有</gui>を<gui>オン</gui>にすると、デフォルトで有効になります。</p>
       </note>
 
     </item>
@@ -134,7 +133,7 @@
       </note>
     </item>
     <item>
-      <title>Require a Password</title>
+      <title>パスワードを要求する</title>
       <p>To require other people to use a password when connecting to your
       desktop, enable <gui>Require a Password</gui>. If you do not use this
       option, anyone can attempt to view your desktop.</p>
@@ -164,17 +163,26 @@
   <p>The <gui>Networks</gui> section lists the networks to which you are
   currently connected. Use the <gui>ON | OFF</gui> switch next to each to
   choose where your desktop can be shared.</p>
-
   </section>
 
-<!-- TODO: Check that this works.
   <section id="notification-icon">
   <title>Stop sharing your desktop</title>
 
   <p>You can disconnect someone who is viewing your desktop using the
-  notification icon in the message tray.</p>
+  <gui>notification icon</gui> in the message Tray. To do so:</p>
+    <steps>
+      <item><p>Open the message tray by pressing
+      <keyseq><key>Super</key><key>M</key></keyseq>, or by moving your mouse
+      pointer to the very bottom of your screen.</p></item>
+      <item><p>Click on the <gui>Desktop</gui> icon in the
+      <gui>Message Tray</gui>. This will open the <app>Sharing</app> panel.</p>
+      </item>
+      <item><p><gui>画面共有</gui>を選択します。</p></item>
+      <item><p>Toggle the <gui>Screen Sharing</gui> slider to <gui>Off</gui>.
+      </p></item>
+    </steps>
 
   </section>
--->
+
 
 </page>

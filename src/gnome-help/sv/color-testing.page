@@ -10,38 +10,46 @@
 
     <credit type="author">
       <name>Richard Hughes</name>
-      <email its:translate="no">richard@hughsie.com</email>
+      <email>richard@hughsie.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Use the supplied test profiles to check that your profiles are being
-    applied correctly to your screen.</desc>
+    <desc>Använd de tillhandahållna profilerna för att kontrollera att dina profiler appliceras korrekt för din skärm.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
   </info>
 
-  <title>How do I test if color management is working correctly?</title>
+  <title>Hur testar jag om färghanteringen fungerar korrekt?</title>
 
-  <p>The effects of a color profile are sometimes subtle and it may be hard to
-  see if anything much has changed.</p>
+  <p>Effekterna av en färgprofil är ibland subtila och det kan vara svårt att se om något ändrats väsentligt.</p>
 
-  <p>GNOME comes with several profiles for testing that make it very clear when
-  the profiles are being applied:</p>
+  <p>GNOME kommer med flera profiler för testning som gör det väldigt tydligt när profiler används:</p>
 
   <terms>
     <item>
-      <title>Blue</title>
-      <p>This will turn the screen blue and tests if the calibration curves are
-      being sent to the display.</p>
+      <title>Blått</title>
+      <p>Detta kommer att göra skärmen blå och testar om kalibreringskurvorna skickas till skärmen.</p>
     </item>
 <!--    <item>
       <title>ADOBEGAMMA-test</title>
@@ -60,33 +68,26 @@
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-terminology">Activities</gui> overview and
-      start typing <gui>Color</gui>.</p>
+      <p>Öppna översiktsvyn <gui xref="shell-introduction#activities">Aktiviteter</gui> och börja skriv <gui>Färg</gui>.</p>
     </item>
     <item>
-      <p>Click on <gui>Color</gui> to open the panel.</p>
+      <p>Klicka på <gui>Färg</gui> för att öppna panelen.</p>
     </item>
     <item>
-      <p>Select the device for which you want to add a profile. You may wish to
-      make a note of which profile is currently being used.</p>
+      <p>Välj enheten för vilken du vill lägga till en profil. Möjligen vill du notera vilken profil som används för närvarande.</p>
     </item>
     <item>
-      <p>Click <gui>Add profile</gui> to select a test profile, which should be
-      at the bottom of the list.</p>
+      <p>Klicka på <gui>Lägg till profil</gui> för att välja en testprofil som finns i botten av listan.</p>
     </item>
     <item>
-      <p>Press <gui>Add</gui> to confirm your selection.</p>
+      <p>Tryck på <gui>Lägg till</gui> för att bekräfta ditt val.</p>
     </item>
     <item>
-      <p>To revert to your previous profile, select the device in the
-      <gui>Color</gui> panel, then select the profile that you were using
-      before you tried one of the test profiles and press <gui>Enable</gui> to
-      use it again.</p>
+      <p>För att återgå till den föregående profil, välj enheten i panelen <gui>Färg</gui> och välj sedan profilen som du använde tidigare innan du provade en av testprofilerna och tryck på <gui>Aktivera</gui> för att använda den igen.</p>
     </item>
   </steps>
 
 
-  <p>Using these profiles, you can clearly see when an application supports
-  color management.</p>
+  <p>Genom att använda dessa profiler kan du klart och tydligt se när ett program stöder färghantering.</p>
 
 </page>

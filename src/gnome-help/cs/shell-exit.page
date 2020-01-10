@@ -2,9 +2,8 @@
 <page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="shell-exit" xml:lang="cs">
 
   <info>
-    <link type="guide" xref="shell-overview#desktop"/>
+    <link type="guide" xref="shell-overview"/>
     <link type="guide" xref="power"/>
-    <link type="seealso" xref="power-hibernate"/>
     <link type="guide" xref="index" group="#first"/>
 
     <revision pkgversion="3.6.0" date="2012-09-15" status="review"/>
@@ -13,25 +12,24 @@
 
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="author">
       <name>Andre Klapper</name>
-      <email its:translate="no">ak-47@gmx.net</email>
+      <email>ak-47@gmx.net</email>
     </credit>
     <credit type="author">
       <name>Alexandre Franke</name>
-      <email its:translate="no">afranke@gnome.org</email>
+      <email>afranke@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Learn how to leave your user account, by logging out, switching
-    users, and so on.</desc>
+    <desc>Naučte se, jak správně odejít od svého účtu, ať už odhlášením nebo přepnutím uživatele apod.</desc>
     <!-- Should this be a guide which links to other topics? -->
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -43,35 +41,27 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Marek Černocký</mal:name>
       <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:years>2014, 2015</mal:years>
     </mal:credit>
   </info>
 
-  <title>Log out, power off or switch users</title>
+  <title>Odhlášení nebo přepnutí uživatele, vypnutí</title>
 
-  <p>When you have finished using your computer, you can turn it off, suspend
-  it (to save power), or leave it powered on and log out.</p>
+  <p>Když skončíte u počítače, můžete jej vypnout, uspat (kvůli úspoře energie) nebo jej ponechat zapnutý a odhlásit se.</p>
 
 <section id="logout">
-  <title>Log out or switch users</title>
+  <title>Odhlášení nebo přepnutí uživatelů</title>
 
-  <p>To let other users use your computer, you can either log out, or leave
-  yourself logged in and just switch users. If you switch users, all of
-  your applications will continue running, and everything will be where you
-  left it when you log back in.</p>
+  <p>Abyste umožnili ostatním uživatelům použít počítač, můžete se buď odhlásit nebo nebo zůstat přihlášeni a jen přepnout uživatele. Po přepnutí uživatelů zůstanou vaše aplikace běžet a když se přihlásíte zpátky, bude vše tam, kde jste to opustili.</p>
 
-  <p>To <gui>Log Out</gui> or <gui>Switch User</gui>, click the
-  <link xref="shell-terminology">system menu</link> on the right side of the
-  top bar, click your name and then choose the right option.</p>
+  <p>Když se chcete <gui>Odhlásit</gui> nebo <gui>Přepnout uživatele</gui>, klikněte na <link xref="shell-introduction#yourname">systémovou nabídku</link> na pravé straně horní lišty, klikněte na své jméno a pak zvolte příslušnou položku.</p>
 
   <note if:test="!platform:gnome-classic">
-    <p>The <gui>Log Out</gui> and <gui>Switch User</gui> entries only appear in
-    the menu if you have more than one user account on your system.</p>
+    <p>Položky <gui>Odhlásit se</gui> a <gui>Přepnout uživatele</gui> se v nabídce objeví jen v případě, že máte v systému více než jeden uživatelský účet.</p>
   </note>
 
   <note if:test="platform:gnome-classic">
-    <p>The <gui>Switch User</gui> entry only appears in the menu if you have
-    more than one user account on your system.</p>
+    <p>Položka <gui>Přepnout uživatele</gui> se v nabídce objeví jen v případě, že máte v systému více než jeden uživatelský účet.</p>
   </note>
 
 </section>
@@ -81,21 +71,13 @@
     <link type="seealso" xref="session-screenlocks"/>
   </info>
 
-  <title>Lock the screen</title>
+  <title>Zamknutí obrazovky</title>
 
-  <p>If you're leaving your computer for a short time, you should lock your
-  screen to prevent other people from accessing your files or running
-  applications. When you return, raise the
-  <link xref="shell-lockscreen">lock screen</link> curtain and enter your
-  password to log back in. If you don't lock your screen, it will lock
-  automatically after a certain amount of time.</p>
+  <p>Když odcházíte od svého počítače jen na krátkou chvíli, měli byste zamknout obrazovku, abyste zabránili ostatním lidem v přístupu ke svým souborům a běžícím aplikacím. Až se vrátíte, vytáhněte oponu na <link xref="shell-lockscreen">zamykací obrazovce</link> a zadejte své heslo, abyste se přihlásili zpět. Pokud obrazovku nezamknete, stane se tak automaticky po uplynutí určené doby.</p>
 
-  <p>To lock your screen, click the system menu on the right side of the top
-  bar and press the lock screen button at the bottom of the menu.</p>
+  <p>Abyste zamkli obrazovku, klikněte na systémovou nabídku na pravé straně horní lišty a pak zmáčkněte zamykací tlačítko v dolní části nabídky.</p>
 
-  <p>When your screen is locked, other users can log in to their own accounts
-  by clicking <gui>Log in as another user</gui> on the password screen. You
-  can switch back to your desktop when they are finished.</p>
+  <p>Když je obrazovka zamknutá, mohou se ostatní uživatelé přihlásit ke svým vlastním účtům kliknutím na <gui>Přihlásit se jako jiný uživatel</gui> na obrazovce s heslem. Až skončí, můžete se přepnout zpět na svoji pracovní plochu.</p>
 
 </section>
 
@@ -104,17 +86,11 @@
     <link type="seealso" xref="power-suspend"/>
   </info>
 
-  <title>Suspend</title>
+  <title>Uspání</title>
 
-  <p>To save power, suspend your computer when you are not using it. If you use
-  a laptop, GNOME suspends your computer automatically when you close the lid.
-  This saves your state to your computer's memory and powers off most of the
-  computer's functions. A very small amount of power is still used during
-  suspend.</p>
+  <p>Abyste ušetřili energii, uspěte svůj počítač, když jej zrovna nepoužíváte. Pokud používáte notebook, standardně jej GNOME uspí automaticky při zavření víka. Při uspání se pouze uchová stav v paměti počítač a většina součástí počítače se vypne. Během uspání je zapotřebí napájení, ale odběr je velmi malý.</p>
 
-  <p>To suspend your computer manually, click the system menu on the right side
-  of the top bar and hold down the <key>Alt</key> key. The power off button
-  will change to suspend. Press the button.</p>
+  <p>Když chcete počítač uspat ručně, klikněte na systémovou nabídku na pravé straně horní lišty a podržte zmáčknutou klávesu <key>Alt</key>. Tlačítko vypnutí se změní na tlačítko uspání. Zmáčkněte jej.</p>
 
 </section>
 
@@ -123,22 +99,14 @@
   <link type="seealso" xref="power-off"/>
 </info>-->
 
-  <title>Power off or restart</title>
+  <title>Vypnutí nebo restart</title>
 
-  <p>If you want to power off your computer entirely, or do a full restart,
-  click the system menu on the right side of the top bar and press the power
-  off button at the bottom of the menu. A dialog will open offering you the
-  options to either <gui>Restart</gui> or <gui>Power Off</gui>.</p>
+  <p>Když chcete svůj počítač úplně vypnout nebo provést úplný restart, klikněte na systémovou nabídku na pravé straně horní lišty a zmáčkněte vypínací tlačítko v dolní části nabídky. Otevře se dialogové okno, které vám nabídne, jestli chcete <gui>Restartovat</gui> nebo <gui>Vypnout</gui>.</p>
 
-  <p>If there are other users logged in, you may not be allowed to power off or
-  restart the computer because this will end their sessions.  If you are an
-  administrative user, you may be asked for your password to power off.</p>
+  <p>V případě, že jsou zrovna přihlášeni nějací další uživatelé, nebude vám umožněno počítač vypnout nebo restartovat, protože byste tím ukončili jejich sezení. Pokud jste ale správci, budete dotázáni, jestli se má i přesto počítač vypnout/restartovat.</p>
 
   <note style="tip">
-    <p>You may want to power off your computer if you wish to move it and do
-    not have a battery, if your battery is low or does not hold charge well. A
-    powered off computer also uses <link xref="power-batterylife">less
-    energy</link> than one which is suspended.</p>
+    <p>Vypnout počítač můžete chtít, když jej potřebujete přenést a není na baterie, nebo když jsou bateri málo nabité a nemáte nabíječku. Vypnutý počítač má také <link xref="power-batterylife">nižší spotřebu</link>, než když je uspaný.</p>
   </note>
 
 </section>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="accounts-which-application" xml:lang="hu">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="accounts-which-application" xml:lang="hu">
 
   <info>
     <link type="guide" xref="accounts"/>
@@ -7,19 +7,20 @@
 
     <revision pkgversion="3.8.2" date="2013-05-22" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="incomplete"/>
 
     <credit type="author copyright">
       <name>Baptiste Mille-Mathias</name>
-      <email its:translate="no">baptistem@gnome.org</email>
+      <email>baptistem@gnome.org</email>
       <years>2012, 2013</years>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Andre Klapper</name>
-      <email its:translate="no">ak-47@gmx.net</email>
+      <email>ak-47@gmx.net</email>
     </credit>
 
     <desc>Az <app>Online fiókok</app> alkalmazásban felvett fiókokat használni képes alkalmazások és az általuk használható szolgáltatások.</desc>
@@ -34,7 +35,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Kelemen Gábor</mal:name>
       <mal:email>kelemeng at gnome dot hu</mal:email>
-      <mal:years>2011, 2012, 2013, 2014</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -62,53 +63,62 @@
     </mal:credit>
   </info>
 
-<title>Mely alkalmazások használják az Online fiókokat?</title>
+  <title>Online szolgáltatások és alkalmazások</title>
 
-  <p>Az <app>Online fiókok</app> segítségével a külső alkalmazások automatikusan beállíthatják magukat.</p>
+  <p>Miután felvett egy online fiókot, bármely alkalmazás használhatja azt a fiókot minden olyan szolgáltatáshoz, amit <link xref="accounts-disable-service">nem tiltott le</link>. A különböző szolgáltatók különböző szolgáltatásokat nyújtanak. Ez az oldal felsorolja a különböző szolgáltatásokat, és néhány alkalmazást, ami használja ezeket.</p>
 
-<section id="accounts-google-services">
-  <title>Google fiókkal</title>
-
-  <list>
+  <terms>
     <item>
-      <p>Az <app>Evolution</app> levelező. A postafiókja automatikusan felvételre kerül az <app>Evolutionbe</app>, így az letöltheti leveleit, elérheti címjegyzékét és megjelenítheti Google naptárának elemeit.</p>
+      <title>Naptár</title>
+      <p>A naptár szolgáltatás lehetővé teszi események megjelenítését, felvételét és szerkesztését egy online naptárban. A <app>Naptár</app>, <app>Evolution</app> és <app>California</app> alkalmazások használják.</p>
     </item>
+
     <item>
-      <p>Az <app>Empathy</app> azonnaliüzenő, amelybe felvételre kerül online fiókja, és elkezdhet üzeneteket váltani barátaival.</p>
+      <title>Csevegés</title>
+      <p>A csevegés szolgáltatás lehetővé teszi a csevegést ismerőseivel a népszerű üzenetküldő rendszereken. Az <app>Empathy</app> alkalmazás használja.</p>
     </item>
+
     <item>
-      <p>A <app>Névjegyek</app> alkalmazás, amelyben megjelenítheti és szerkesztheti névjegyeit.</p>
+      <title>Névjegyek</title>
+      <p>A névjegyek szolgáltatás lehetővé teszi ismerősei közzétett adatait különböző szolgáltatásokon. A <app>Névjegyek</app> és az <app>Evolution</app> alkalmazások használja.</p>
     </item>
+
     <item>
-      <p>A <app>Dokumentumok</app> alkalmazás, amellyel elérheti és megjelenítheti online dokumentumait.</p>
+      <title>Dokumentumok</title>
+      <p>A dokumentumok szolgáltatás lehetővé teszi online dokumentumok megjelenítését, mint például a Google Drive-on tároltakat. Dokumentumait a <app>Dokumentumok</app> alkalmazással jelenítheti meg.</p>
     </item>
-  </list>
-</section>
 
-<section id="accounts-windows-services">
-  <title>Windows Live, Facebook vagy Twitter fiókokkal</title>
+    <item>
+      <title>Fájlok</title>
+      <p>A fájlok szolgáltatással távoli fájlelérési helyeket vehet fel, ugyanúgy mint a fájlkezelő <link xref="nautilus-connect">Kapcsolódás kiszolgálóhoz</link> funkciójával. A távoli fájlokat elérheti a fájlkezelővel, valamint bármely alkalmazás megnyitási és mentési ablakában.</p>
+    </item>
 
-  <p>Az <app>Empathy</app> képes használni ezeket a fiókokat, és elkezdhet üzeneteket váltani partnereivel, barátaival és követőivel.</p>
-</section>
+    <item>
+      <title>Levelezés</title>
+      <p>A levelezés szolgáltatás lehetővé teszi e-mailek küldését olyan e-mail szolgáltatásokon keresztül, mint a Google. Az <app>Evolution</app> használja.</p>
+    </item>
 
-<section id="account-windows-skydrive">
-  <title>OneDrive fiókkal</title>
+<!-- TODO: Not sure what this does. Doesn't seem to do anything in Maps app.
+    <item>
+      <title>Maps</title>
+    </item>
+-->
 
-  <p>A <app>Dokumentumok</app> alkalmazás, amellyel elérheti és megjelenítheti a Microsoft OneDrive online dokumentumait.</p>
-</section>
+    <item>
+      <title>Fényképek</title>
+      <p>A fényképek szolgáltatás lehetővé teszi online fényképek megjelenítését, mint például a Facebookra beküldötteket. A fényképeket a <app>Fényképek</app> alkalmazással jelenítheti meg.</p>
+    </item>
 
-<section id="account-exchange">
-  <title>Exchange fiókkal</title>
+    <item>
+      <title>Nyomtatás</title>
+      <p>A nyomtatók szolgáltatás lehetővé teszi egy PDF másolat elküldését egy szolgáltatónak bármely alkalmazás nyomtatási ablakából. A szolgáltató biztosíthat tényleges nyomtatási szolgáltatást, vagy csak tárolóként szolgálhat a PDF számára, amit később letölthet és kinyomtathat.</p>
+    </item>
 
-  <p>Miután létrehozott egy Exchange fiókot, az <app>Evolution</app> elkezdi lekérni a fiókba érkezett leveleket.</p>
-</section>
+    <item>
+      <title>Elolvasás később</title>
+      <p>Az elolvasás később szolgáltatás lehetővé teszi egy weboldal elmentését egy külső szolgáltatásra, hogy később egy másik készüléken olvashassa el. Jelenleg egy alkalmazás sem használja ezt a szolgáltatást.</p>
+    </item>
 
-<section id="accounts-ownCloud">
-  <title>ownCloud fiókkal</title>
-
-  <p>Egy saját ownCloud fiók beállítása után az <app>Evolution</app> el tudja érni és szerkeszteni tudja a névjegyeket és a naptári találkozókat.</p>
-
-  <p>A <app>Fájlok</app> és más alkalmazások meg tudják jeleníteni és el tudják érni az ownCloud telepítésben online tárolt fájlokat.</p>
-</section>
+  </terms>
 
 </page>

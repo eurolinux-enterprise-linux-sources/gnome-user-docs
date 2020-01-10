@@ -11,68 +11,64 @@
 
     <credit type="author">
       <name>Dokumentationsprojekt för GNOME</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Go to the <gui>Activities</gui> overview and drag the window to a
-    different workspace.</desc>
+    <desc>Gå till översiktsvyn <gui>Aktiviteter</gui> och dra fönstret till en annan arbetsyta.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
   </info>
 
   <title>Flytta ett fönster till en annan arbetsyta</title>
 
   <steps>
-    <title>Använda musen:</title>
+    <title>Via musen:</title>
     <item>
-      <p if:test="!platform:gnome-classic">Open the
-      <gui xref="shell-terminology">Activities</gui> overview.</p>
-      <p if:test="platform:gnome-classic">Open the
-      <gui xref="shell-terminology">Activities Overview</gui> from the
-      <link xref="shell-terminology"><gui style="menu">Applications</gui>
-      menu</link> at the top left of the screen.</p>
+      <p if:test="!platform:gnome-classic">Öppna översiktsvyn <gui xref="shell-introduction#activities">Aktiviteter</gui>.</p>
+      <p if:test="platform:gnome-classic">Öppna <gui xref="shell-introduction#activities">Aktivitetsöversikten</gui> från menyn <gui xref="shell-introduction#activities">Program</gui> längst upp till vänster på skärmen.</p>
     </item>
     <item>
-      <p>Click and drag the window toward the right of the screen.</p>
+      <p>Klicka och dra fönstret mot höger del av skärmen.</p>
     </item>
     <item>
-      <p>The <em xref="shell-terminology">workspace selector</em> will
-      appear.</p>
+      <p><em xref="shell-workspaces">Arbetsyteväxlaren</em> kommer att visas.</p>
     </item>
     <item>
-      <p if:test="!platform:gnome-classic">Drop the window onto an empty
-      workspace. This workspace now contains the window you have dropped, and a
-      new empty workspace appears at the bottom of the <em>workspace
-      selector</em>.</p>
-      <p if:test="platform:gnome-classic">Drop the window onto an empty
-      workspace. This workspace now contains the window you have dropped.</p>
+      <p if:test="!platform:gnome-classic">Släpp fönstret på en tom arbetsyta. Denna arbetsyta innehåller nu fönstret du släppte, och en ny tom arbetsyta kommer att visas längst ner i <em>arbetsyteväxlaren</em>.</p>
+      <p if:test="platform:gnome-classic">Släpp fönstret på en tom arbetsyta. Denna arbetsyta innehåller nu fönstret du släppte.</p>
     </item>
   </steps>
 
   <steps>
-    <title>Använda tangentbordet:</title>
+    <title>Via tangentbordet:</title>
     <item>
-      <p>Select the window that you want to move (for example, using the
-      <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq>
-      <em xref="shell-terminology">window switcher</em>).</p>
+      <p>Välj fönstret som du vill flytta (till exempel via <keyseq><key xref="keyboard-key-super">Super</key><key>Tabb</key></keyseq> <em xref="shell-windows-switching">fönsterväxlaren</em>).</p>
     </item>
     <item>
-      <p>Press <keyseq><key>Super</key><key>Shift</key><key>Page
-      Up</key></keyseq> to move the window to a workspace which is above the
-      current workspace on the <em>workspace selector</em>.</p>
-      <p>Press <keyseq><key>Super</key><key>Shift</key><key>Page
-      Down</key></keyseq> to move the window to a workspace which is below the
-      current workspace on the <em>workspace selector</em>.</p>
+      <p>Tryck <keyseq><key>Super</key><key>Skift</key><key>Page Up</key></keyseq> för flytta fönstret till en arbetsyta som är ovanför den aktuella arbetsytan i <em>arbetsyteväxlaren</em>.</p>
+      <p>Tryck <keyseq><key>Super</key><key>Skift</key><key>Page Down</key></keyseq> för flytta fönstret till en arbetsyta som är nedanför den aktuella arbetsytan i <em>arbetsyteväxlaren</em>.</p>
     </item>
   </steps>
 

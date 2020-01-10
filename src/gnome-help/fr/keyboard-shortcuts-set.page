@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" version="1.0 ui/1.0" id="keyboard-shortcuts-set" xml:lang="fr">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" version="1.0 ui/1.0" id="keyboard-shortcuts-set" xml:lang="fr">
 
   <info>
     <link type="guide" xref="keyboard"/>
@@ -8,14 +8,15 @@
     <revision pkgversion="3.8.0" version="0.3" date="2013-03-23" status="review"/>
     <revision pkgversion="3.9.92" date="2013-10-11" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+    <revision pkgversion="3.17.90" date="2015-08-30" status="candidate"/>
 
     <credit type="author">
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="author">
-       <name>Julita Inca</name>
-       <email>yrazes@gmail.com</email>
+      <name>Julita Inca</name>
+      <email>yrazes@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Juanjo Marín</name>
@@ -24,6 +25,10 @@
     <credit type="editor">
       <name>Shobha Tyagi</name>
       <email>tyagishobha@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <desc>Définir ou modifier les raccourcis clavier dans les paramètres <gui>Clavier</gui>.</desc>
@@ -43,7 +48,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2014</mal:years>
+      <mal:years>2011-2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -75,6 +80,12 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
   <title>Définition de raccourcis clavier</title>
@@ -83,7 +94,8 @@
 
   <steps>
     <item>
-      <p>Ouvrez la vue d'ensemble des <gui xref="shell-terminology">Activités</gui> et commencez à saisir <gui>Clavier</gui>.</p>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Keyboard</gui>.</p>
     </item>
     <item>
       <p>Cliquez sur <gui>Clavier</gui> pour ouvrir le panneau.</p>
@@ -112,23 +124,23 @@
   </tr>
   <tr>
 	<td><p>Lancer la calculatrice</p></td>
-	<td><p>Calculatrice</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-calculator.svg"> <key>Calculator</key> key symbol</media> or <key>Calculator</key></p></td>
   </tr>
   <tr>
 	<td><p>Démarrer le client de messagerie</p></td>
-	<td><p>Courriel</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-mail.svg"> <key>Mail</key> key symbol</media> or <key>Mail</key></p></td>
   </tr>
   <tr>
 	<td><p>Démarrer le navigateur Web</p></td>
-	<td><p>WWW</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-world.svg"> <key>WWW</key> key symbol</media> or <media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-home.svg"> <key>WWW</key> key symbol</media> or <key>WWW</key></p></td>
   </tr>
   <tr>
 	<td><p>Dossier personnel</p></td>
-	<td><p>Explorer</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-folder.svg"> <key>Explorer</key> key symbol</media> or <media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-computer.svg"> <key>Explorer</key> key symbol</media> or <key>Explorer</key></p></td>
   </tr>
   <tr>
 	<td><p>Recherche</p></td>
-	<td><p>Recherche</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-search.svg"> <key>Search</key> key symbol</media> or <key>Search</key></p></td>
   </tr>
 </table>
 
@@ -235,15 +247,15 @@
 <table rules="rows" frame="top bottom" ui:expanded="false">
 <title>Captures d'écran</title>
   <tr>
-	<td><p>Prendre une capture d'écran</p></td>
+	<td><p>Save a screenshot to file</p></td>
 	<td><p><key>Impr. écran</key></p></td>
   </tr>
   <tr>
-	<td><p>Prendre une capture d'écran d'une fenêtre</p></td>
+	<td><p>Save a screenshot of a window to file</p></td>
 	<td><p><keyseq><key>Alt</key><key>Impr. écran</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Prendre une capture d'une partie de l'écran </p></td>
+	<td><p>Save a screenshot of an area to file</p></td>
 	<td><p><keyseq><key>Maj</key><key>Impr. écran</key></keyseq></p></td>
   </tr>
   <tr>
@@ -268,43 +280,43 @@
 <title>Son et média</title>
   <tr>
 	<td><p>Couper le volume</p></td>
-	<td><p>Extinction du son</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-mute.svg"> <key>Mute</key> key symbol</media> (Audio mute)</p></td>
   </tr>
   <tr>
 	<td><p>Baisser le volume</p></td>
-	<td><p>Diminution du volume sonore</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-voldown.svg"> <key>Volume Down</key> key symbol</media> (Audio lower volume)</p></td>
   </tr>
   <tr>
 	<td><p>Augmenter le volume</p></td>
-	<td><p>Augmentation du volume sonore</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-volup.svg"> <key>Volume Up</key> key symbol</media> (Audio raise volume)</p></td>
   </tr>
   <tr>
 	<td><p>Lancer le lecteur multimédia</p></td>
-	<td><p>Média audio</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-media.svg"> <key>Media</key> key symbol</media> (Audio media)</p></td>
   </tr>
   <tr>
 	<td><p>Lire (ou lecture/pause)</p></td>
-	<td><p>Lecture audio</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-play.svg"> <key>Play</key> key symbol</media> (Audio play)</p></td>
   </tr>
   <tr>
 	<td><p>Mettre en pause la lecture</p></td>
-	<td><p>Mise en pause de l'audio</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-pause.svg"> <key>Pause</key> key symbol</media> (Audio pause)</p></td>
   </tr>
   <tr>
 	<td><p>Stopper la lecture</p></td>
-	<td><p>Arrêt de l'audio</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-stop.svg"> <key>Stop</key> key symbol</media> (Audio stop)</p></td>
   </tr>
   <tr>
 	<td><p>Morceau précédent</p></td>
-	<td><p>Audio précédent</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-previous.svg"> <key>Previous</key> key symbol</media> (Audio previous)</p></td>
   </tr>
   <tr>
 	<td><p>Morceau suivant</p></td>
-	<td><p>Audio suivant</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-next.svg"> <key>Next</key> key symbol</media> (Audio next)</p></td>
   </tr>
   <tr>
 	<td><p>Éjecter</p></td>
-	<td><p>Éjecter</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-eject.svg"> <key>Eject</key> key symbol</media> (Eject)</p></td>
   </tr>
 </table>
 
@@ -473,7 +485,7 @@
   </tr>
   <tr>
   <td><p>Séparer l'affichage sur la gauche</p></td>
-  <td><p><keyseq><key>Logo</key><key/>←</keyseq></p></td>
+  <td><p><keyseq><key>Logo</key><key>←</key></keyseq></p></td>
   </tr>
   <tr>
   <td><p>Séparer l'affichage sur la droite</p></td>
@@ -483,51 +495,27 @@
 
 </section>
 
-<section id="changing-shorcuts">
-  <title>Modifier les raccourcis clavier</title>
-  <p>Cette section indique comment modifier les raccourcis clavier d'une application.</p>
-
-  <steps>
-    <item>
-	<p>Ouvrez l'application Terminal.</p>
-     </item>
-    <item><p>Exécutez la commande <cmd>gsettings set org.gnome.desktop.interface can-change-accels true</cmd></p>
-    </item>
-       <item>
-      <p>Démarrez l'application dont vous voulez modifier les raccourcis clavier.</p>
-    </item>
-  <item>
-      <p>Trouvez l'entrée de menu dont vous voulez modifier le raccourci clavier.</p>
-    </item>
-<item>
-      <p>Saisissez le raccourci voulu sur le clavier.</p>
-    </item>
-  </steps>
-
-<note style="note style">
-  <p>Notez que ce paramétrage s'applique à l'ensemble des bureaux. Vous pouvez le désactiver après avoir effectué les modifications en exécutant la commande <cmd>gsettings set org.gnome.desktop.interface can-change-accels false</cmd>. Vous pouvez également vous servir de l'utilitaire <app>dconf-editor</app> dans ce but.</p>
-</note>
-</section>
-
 <section id="custom">
 <title>Raccourcis personnalisés</title>
 
-<p>Pour créer vos propres raccourcis clavier :</p>
+  <p>Pour créer vos propres raccourcis clavier dans les paramètres <gui>Clavier</gui> :</p>
 
   <steps>
     <item>
-      <p>Sélectionnez <gui>Raccourcis personnalisés</gui> dans le panneau de gauche, et cliquez sur le bouton <gui style="button">+</gui> (ou cliquez le bouton <gui style="button">+</gui> dans une quelconque catégorie). La fenêtre <gui>Raccourcis personnalisés</gui> s'ouvre alors.</p>
+      <p>Cliquez sur le bouton <gui style="button">+</gui>. La fenêtre <gui>Raccourcis personnalisés</gui> s'ouvre alors.</p>
     </item>
     <item>
-      <p>Écrivez un <gui>Nom</gui> pour identifier le raccourci, et une <gui>Commande</gui> pour démarrer une application, puis cliquez sur <gui>Appliquer</gui>. Par exemple, si vous voulez un raccourci pour ouvrir Rhythmbox, vous pouvez le nommer <input>Musique</input> et utiliser la commande <input>rhythmbox</input>.</p>
+      <p>Saisissez un <gui>Nom</gui> pour identifier le raccourci, et une <gui>Commande</gui> pour lancer une application, puis cliquez sur <gui>Ajouter</gui>. Par exemple, si vous voulez un raccourci pour ouvrir Rhythmbox, vous pouvez le nommer <input>Musique</input> et utiliser la commande <input>rhythmbox</input>.</p>
     </item>
     <item>
       <p>Cliquez sur <gui>Désactivé</gui> dans le rang qui vient d'être ajouté. Quand il de vient <gui>Nouvel accélérateur...</gui>, puis effectuez la combinaison de touches désirée.</p>
     </item>
   </steps>
- <p>Le nom de la commande que vous saisissez doit être une commande système valide. Vous pouvez vérifier que la commande fonctionne en ouvrant un Terminal et en la saisissant dedans. Il est possible que la commande ouvrant une application n'aie pas exactement le même nom que l'application elle-même.</p>
 
- <p>Si vous voulez modifier la commande qui est associée à un raccourci clavier personnalisé, double-cliquez sur le <em>nom</em> du raccourci. La fenêtre <gui>Raccourci personnalisé</gui> apparaît et vous pouvez modifier la commande.</p>
+  <p>Le nom de la commande que vous saisissez doit être une commande système valide. Vous pouvez vérifier que la commande fonctionne en ouvrant un Terminal et en la saisissant dedans. Il est possible que la commande ouvrant une application n'aie pas exactement le même nom que l'application elle-même.</p>
+
+  <p>Si vous voulez modifier la commande qui est associée à un raccourci clavier personnalisé, double-cliquez sur le <em>nom</em> du raccourci. La fenêtre <gui>Raccourci personnalisé</gui> apparaît et vous pouvez modifier la commande.</p>
+
 </section>
 
 </page>

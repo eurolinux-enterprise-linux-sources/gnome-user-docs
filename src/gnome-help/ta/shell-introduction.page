@@ -11,15 +11,15 @@
 
     <credit type="author">
       <name>ஷான் மெக்கேன்ஸ்</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>மைக்கேல் ஹில்</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>எக்காட்டெரினா ஜெராசிமோவா</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -64,7 +64,7 @@
 
 <if:choose>
   <if:when test="!platform:gnome-classic">
-    <media type="image" src="figures/shell-activities.png" width="123" height="82" style="floatend floatright" if:test="!target:mobile">
+    <media type="image" src="figures/shell-activities.png" style="floatend floatright" if:test="!target:mobile">
       <p>செயல்பாடுகள் பொத்தான்</p>
     </media>
   </if:when>
@@ -80,11 +80,17 @@
   the top-left hot corner. You can also press the
   <key xref="keyboard-key-super">Super</key> key on your keyboard. You can
   see your windows and applications in the overview. You can also just start
-  typing to search your applications, files, folders and the web.</p>
+  typing to search your applications, files, folders, and the web.</p>
 
-  <p if:test="platform:gnome-classic">உங்கள் சாளரங்களையும் பயன்பாடுகளையும் அணுக திரையின் மேல் இடது மூலையில் உள்ள <link xref="shell-terminology"><gui>பயன்பாடுகள்</gui> மெனுவை</link> சொடுக்கி <gui>செயல்பாடுகள் மேலோட்டம்</gui> ஐ தேர்ந்தெடுக்கவும். <gui>செயல்பாடுகள்</gui> மேலோட்டத்தில் உங்கள் சாளரங்களையும் பயன்பாடுகளையும் காண <key xref="keyboard-key-super">Super</key> விசையையும் அழுத்தலாம். உங்கள் பயன்பாடுகள், கோப்புகள் மற்றும் கோப்புறைகளைத் தேட அப்படியே தட்டச்சு செய்யத் தொடங்கவும்.</p>
+  <p if:test="platform:gnome-classic">To access your windows and applications,
+  click the <gui xref="shell-introduction#activities">Applications</gui> menu
+  at the top left of the screen and select the <gui>Activities Overview</gui>
+  item. You can also press the <key xref="keyboard-key-super">Super</key> key
+  to see your windows and applications in the <gui>Activities</gui> overview. 
+  Just start typing to search your applications, files, and folders.</p>
 
-  <media type="image" src="figures/shell-dash.png" width="49" height="300" style="floatstart floatleft" if:test="!target:mobile">
+  <!-- TODO: retake without the flashy bit -->
+  <media type="image" src="figures/shell-dash.png" height="300" style="floatstart floatleft" if:test="!target:mobile">
     <p>டேஷ்</p>
   </media>
 
@@ -140,7 +146,7 @@
 <if:choose>
   <if:when test="!platform:gnome-classic">
     <media type="image" src="figures/shell-appts.png" width="250" style="floatend floatright" if:test="!target:mobile">
-      <p>கடிகாரம், நாள்காட்டி மற்றும் சந்திப்புத்திட்டங்கள்</p>
+      <p>Clock, calendar, appointments and notifications</p>
     </media>
   </if:when>
   <if:when test="platform:gnome-classic">
@@ -150,15 +156,24 @@
   </if:when>
 </if:choose>
 
-  <p>தற்போதைய தேதி, மாதங்களைக் காட்டும் நாள்காட்டி மற்றும் வரவுள்ள சந்திப்புத் திட்டங்கள் ஆகியவற்றைக் காட்ட மேல் பட்டியில் உள்ள கடிகாரத்தை சொடுக்கவும். நீங்கள் தேதி மற்றும் நேர அமைவுகளை அணுகவும் மெனுவில் இருந்து நேரடியாக உங்கள் முழு <app>Evolution</app> நாளாட்டியைத் திறக்கவும் முடியும்.</p>
+  <p>Click the clock on the top bar to see the current date, a month-by-month
+  calendar, a list of your upcoming appointments and new notifications. You can
+  also open the calendar by pressing
+  <keyseq><key>Super</key><key>M</key></keyseq>. You can access the date and
+  time settings and open your full <app>Evolution</app> calendar directly from
+  the menu.</p>
 
   <list style="compact">
     <item>
       <p><link xref="clock-calendar">நாள்காட்டி மற்றும் சந்திப்புத் திட்டங்கள் பற்றி மேலும் அறிக.</link></p>
     </item>
+    <item>
+      <p><link xref="shell-notifications">அறிவிப்புகள் மற்றும் செய்தி தட்டு பற்றி மேலும் அறிக.</link></p>
+    </item>
   </list>
 
 </section>
+
 
 <section id="yourname">
   <title>நீங்களும் உங்கள் கணினியும்</title>
@@ -225,23 +240,6 @@ messages will be presented, such as when your battery is critically low.</p>
   <list style="compact">
     <item>
       <p><link xref="shell-lockscreen">பூட்டுத் திரை பற்றி மேலும் அறிக.</link></p>
-    </item>
-  </list>
-
-</section>
-
-<section id="message-tray">
-  <title>செய்தித் தட்டு</title>
-
-  <media its:translate="no" type="image" src="figures/shell-message-tray.png" width="600">
-    <p its:translate="yes">செய்தித் தட்டு</p>
-  </media>
-
-  <p>உங்கள் சொடுக்கி சுட்டியை திரையின் அடிப்பகுதிக்குக் கொண்டு சென்று அல்லது <keyseq><key>Super</key><key>M</key></keyseq> ஐ அழுத்தி செய்தித் தட்டைக் காண்பிக்கச் செய்யலாம். இங்கு உங்கள் அறிவிப்புகளை நீங்கள் படிக்கத் தயாராகும் வரை அவை சேமிக்கப்படும்.</p>
-
-  <list style="compact">
-    <item>
-      <p><link xref="shell-notifications">அறிவிப்புகள் மற்றும் செய்தி தட்டு பற்றி மேலும் அறிக.</link></p>
     </item>
   </list>
 

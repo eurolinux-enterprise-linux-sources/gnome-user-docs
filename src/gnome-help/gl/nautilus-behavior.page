@@ -7,6 +7,7 @@
     <desc>Unha sola pulsación para abrir ficheiros, executar ou ver ficheiros de texto executábeis, e especificar o comportamento do lixo.</desc>
 
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -23,6 +24,10 @@
     <credit type="editor">
       <name>Sindhu S</name>
       <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
     </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
@@ -67,7 +72,11 @@
 
  <p>Se selecciona <gui>Preguntar cada vez</gui>, aparecerá un diálogo preguntándolle se desexa executar ou ver o ficheiro de texto seleccionado.</p>
 
- <p>Os ficheiros de texto executábeis tamén se chaman scripts. Todos os scripts no cartafol <file>~/.local/share/nautilus/scripts</file> aparecerán no menú contextual para os ficheiros baixo o submenú <gui style="menuitem">Scripts</gui>. Cando se executa un script desde un cartafol local, todos os ficheiros seleccionados pegaranse ao script como parámetros. Para executar un script nun ficheiro:</p>
+ <p>Executable text files are also called <em>scripts</em>. All scripts in the
+ <file>~/.local/share/nautilus/scripts</file> folder will appear in the context
+ menu for a file under the <gui style="menuitem">Scripts</gui> submenu. When a
+ script is executed from a local folder, all selected files will be pasted to
+ the script as parameters. To execute a script on a file:</p>
 
 <steps>
   <item>
@@ -86,6 +95,7 @@
  </note>
 
 </section>
+
 <section id="trash">
 <info>
 <link type="seealso" xref="files-delete"/>
@@ -95,15 +105,8 @@
 
 <terms>
  <item>
-  <title><gui>Preguntar antes de baleirar o lixo ou eliminar ficheiros</gui></title>
+  <title><gui>Ask before emptying the Trash</gui></title>
   <p>Esta opción está seleccionada por omisión. Cando se vai a baleirar o lixo, aparece un mensaxe confirmando se quere baleirar o lixo ou eliminar os ficheiros.</p>
- </item>
- <item>
-  <title><gui>Incluír unha orde para Eliminar que non use o lixo</gui></title>
-  <p>Ao seleccionar esta opción engádese un elemento <gui>Eliminar</gui> no menú que se mostra cando preme co botón dereito sobre un elemento no aplicativo <app>Ficheiros</app>.</p>
-<note style="warning">
-<p>Cando se elimina un elemento usando a opción <gui>Eliminar</gui> do menú, pásase por alto a Papeleira. O elemento elimínase do sistema completamente. Non hai forma de recuperar o elemento eliminado.</p>
-</note>
  </item>
 </terms>
 </section>

@@ -6,10 +6,11 @@
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
     <revision pkgversion="3.10" version="0.2" date="2013-11-11" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
-      <email its:translate="no">philbull@gmail.com</email>
+      <email>philbull@gmail.com</email>
     </credit>
 
     <desc>Verifique novamente a senha e outras coisas que você pode tentar.</desc>
@@ -19,12 +20,6 @@
       <mal:name>Rodolfo Ribeiro Gomes</mal:name>
       <mal:email>rodolforg@gmail.com</mal:email>
       <mal:years>2011, 2012.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Ferreira</mal:name>
-      <mal:email>rafael.f.f1@gmail.com</mal:email>
-      <mal:years>2012, 2013, 2014.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -38,6 +33,12 @@
       <mal:email>joaosantana@outlook.com</mal:email>
       <mal:years>2013.</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
   </info>
 
 <title>Eu inseri a senha correta, mas ainda não consigo conectar</title>
@@ -46,28 +47,28 @@
 
 <list>
  <item>
-  <p>Verifique novamente se você tem a senha correta</p>
+  <p>Verificar novamente se você tem a senha correta</p>
   <p>Senhas diferenciam maiúsculo de minúsculo, então certifique-se de que você não tem qualquer das letras maiúsculas/minúsculas erroneamente.</p>
  </item>
 
  <item>
   <p>Tentar a chave secreta hex ou ASCII</p>
-  <p>The password you enter can also be represented in a different way - as a string of characters in hexadecimal (numbers 0-9 and letters a-f) called a pass key. Each password has an equivalent pass key. If you have access to the pass key as well as the password/passphrase, try typing the pass key instead. Make sure you select the correct <gui>wireless security</gui> option when asked for your password (for example, select <gui>WEP 40/128-bit Key</gui> if you're typing the 40-character pass key for a WEP-encrypted connection).</p>
+  <p>A senha que você digitou também pode ser representada em uma forma diferente - como um conjunto de caracteres em hexadecimal (números 0-9 e letras a-f), chamada de chave secreta. Cada senha possui uma chave secreta. Se você tem acesso à chave secreta assim como a senha/palavra-chave, tente digitar a chave secreta. Certifique-se de selecionar a opção de <gui>segurança sem fio</gui> correta quando solicitada a sua senha (por exemplo, selecione <gui>chave WEP da 40/128 bits</gui> se você está digitando a chave secreta de 40 caracteres para uma conexão criptografada com WEP).</p>
  </item>
 
  <item>
   <p>Tentar desligar sua placa de rede sem fio e, então, ligar novamente</p>
-  <p>Sometimes wireless cards get stuck or experience a minor problem that means they won't connect. Try turning the card off and then on again to reset it - see <link xref="net-wireless-troubleshooting"/> for more information.</p>
+  <p>Em alguns casos, placas de rede sem fio travam ou apresentam um problema pequeno, o que significa que não vão se conectar. Tente desligar a placa e ligar novamente para redefini-la - Veja <link xref="net-wireless-troubleshooting"/> para mais informação.</p>
  </item>
 
  <item>
-  <p>Check that you're using the right type of wireless security</p>
-  <p>When prompted for your wireless security password, you can choose which type of wireless security to use. Make sure you choose the one that is used by the router or wireless base station. This should be selected by default, but sometimes it will not be for some reason. If you don't know which one it is, use trial and error to go through the different options.</p>
+  <p>Verificar se você está usando o tipo correto de segurança sem fio</p>
+  <p>Quando solicitada sua senha de segurança sem fio, você pode escolher qual tipo de segurança sem fio pretende usar. Certifique-se de escolher aquela que é usada pelo rotador ou ponto de acesso. Ela deveria estar selecionado por padrão, mas em alguns casos ela não estará por algum motivo. Se você não sabe qual é, use a técnica de tentativa-e-erro com as diferentes opções.</p>
  </item>
 
  <item>
-  <p>Check that your wireless card is properly supported</p>
-  <p>Some wireless cards aren't supported very well. They show up as a wireless connection, but they can't connect to a network because their drivers lack the ability to do this. See if you can get an alternative wireless driver, or if you need to perform some extra set-up (like installing a different <em>firmware</em>). See <link xref="net-wireless-troubleshooting"/> for more information.</p>
+  <p>Certificar que há suporte adequado à sua placa de rede sem fio</p>
+  <p>Algumas placas de rede não possuem um suporte muito bom no Linux. Elas aparecem como uma conexão sem fio, mas não conseguem se conectar a uma rede porque seus drivers não possuem a capacidade de fazê-lo. Veja se você pode obter um driver de rede sem fio alternativo, ou se você precisa realizar alguma configuração extra (como instalar um <em>firmware</em> diferente). Veja <link xref="net-wireless-troubleshooting"/> para mais informação.</p>
  </item>
 
 </list>

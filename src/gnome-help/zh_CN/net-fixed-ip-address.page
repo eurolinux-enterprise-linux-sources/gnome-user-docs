@@ -6,10 +6,21 @@
     <link type="seealso" xref="net-findip"/>
 
     <revision pkgversion="3.4.0" date="2012-03-13" status="final"/>
+    <revision pkgversion="3.15" date="2014-12-04" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Jim Campbell</name>
-      <email its:translate="no">jwcampbell@gmail.com</email>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -29,25 +40,37 @@
 
   <steps>
     <item>
-      <p>点击<gui>顶部面板</gui>上的<gui>网络图标</gui>，然后选择<gui>网络设置</gui>。</p>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Network</gui>.</p>
     </item>
     <item>
-      <p>在列表中选择网络连接(<gui>有线连接</gui> 或 <gui>无线连接</gui>)，然后点击<gui>配置</gui>。</p>
+      <p>Click on <gui>Network</gui> to open the panel.</p>
     </item>
     <item>
-      <p>点击 <gui>IPv4 设置</gui>标签，更改<gui>方法</gui>为<em>手动</em>。</p>
+      <p>In the left pane, select the network connection that you want to give
+      a fixed address. If you plug in to the network with a cable, click
+      <gui>Wired</gui>, then click the
+      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media> button in the lower right corner of
+      the panel. For a <gui>Wi-Fi</gui> connection, the 
+      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
+      button will be located next to the active network.</p>
     </item>
     <item>
-      <p>如果<gui>地址</gui>列表中未列出任何连接信息，或者您想设置新的连接，请单击<gui>添加</gui>。</p>
+      <p>Click on the <gui>IPv4</gui> or <gui>IPv6</gui> tab
+      and change the <gui>Addresses</gui> to <em>Manual</em>.</p>
     </item>
     <item>
-      <p>在相应的框中输入 <em>IP 地址</em>、<em>子网掩码</em> 和 <em>网关</em> 信息。您对这些选项的选择取决于您的网络设置，有一些特定的规则负责管理哪些 IP 地址和子网掩码对给定的网络是否有效。</p>
+      <p>Enter the <em>Address</em>, <em>Netmask</em>, and <em>Gateway</em>
+      information into the appropriate boxes. How you choose these will depend
+      on your network setup; there are specific rules governing which IP
+      addresses and netmasks are valid for a given network.</p>
     </item>
     <item>
       <p>如有必要，请在 <gui>DNS 服务器</gui> 框中输入 <em>DNS 服务器</em> 地址。这是查找 DNS 服务器的 IP 地址；多数公司网络和 Internet 提供商会提供专用的 DNS 服务器。</p>
     </item>
     <item>
-      <p>点<gui>保存</gui>，现在连接就有了一个固定 IP 地址。</p>
+      <p>Click <gui>Apply</gui>. The network connection should now have a fixed
+      IP address.</p>
     </item>
   </steps>
 

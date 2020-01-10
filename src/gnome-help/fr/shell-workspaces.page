@@ -32,7 +32,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2014</mal:years>
+      <mal:years>2011-2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -64,6 +64,12 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
 <title>Qu'est ce qu'un espace de travail et à quoi sert-il ?</title>
@@ -83,16 +89,22 @@
 <list>
   <item>
     <p if:test="!platform:gnome-classic">In the
-    <gui xref="shell-terminology">&gt;Activities</gui> overview, move your cursor
+    <gui xref="shell-introduction#activities">Activities</gui> overview, move your cursor
     to the right-most side of the screen.</p>
     <p if:test="platform:gnome-classic">Appuyez sur <key xref="keyboard-key-super">Logo</key> pour ouvrir la vue d'ensembles des <gui>Activités</gui> et ensuite déplacez le curseur sur l'extrême bord droit de l'écran.</p>
   </item>
   <item>
-    <p if:test="!platform:gnome-classic">Un panneau vertical s'affiche avec les espaces de travail ouverts, plus un espace vide. Il s'agit du <link xref="shell-terminology">sélecteur d'espace de travail</link>.</p>
-    <p if:test="platform:gnome-classic">Un panneau vertical s'affiche avec les espaces de travail disponibles. Il s'agit du <link xref="shell-terminology">sélecteur d'espace de travail</link>.</p>
+    <p if:test="!platform:gnome-classic">A vertical panel will appear showing
+    workspaces in use, plus an empty workspace. This is the
+    workspace selector.</p>
+    <p if:test="platform:gnome-classic">A vertical panel will appear showing
+    available workspaces. This is the workspace selector.</p>
   </item>
   <item if:test="!platform:gnome-classic">
-    <p>Pour ajouter un espace de travail, faites glisser et déposez une fenêtre d'un espace de travail existant vers l'espace de travail vide dans le <link xref="shell-terminology">sélecteur d'espace de travail</link>. Cet espace de travail contient maintenant la fenêtre que vous venez de déposer dessus et un nouvel espace de travail vide apparaît en dessous de lui.</p>
+    <p>To add a workspace, drag and drop a window from an existing workspace
+    onto the empty workspace in the workspace selector. This workspace now
+    contains the window you have dropped,
+    and a new empty workspace will appear below it.</p>
   </item>
   <item if:test="!platform:gnome-classic">
     <p>Pour supprimer un espace de travail, fermez tout simplement toutes ses fenêtres ou déplacez-les vers d'autres espaces de travail.</p>

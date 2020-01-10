@@ -15,18 +15,18 @@
     </credit>
     <credit type="editor">
       <name>Shobha Tyagi</name>
-      <email its:translate="no">tyagishobha@gmail.com</email>
+      <email>tyagishobha@gmail.com</email>
     </credit>
 
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Press <keyseq><key>Super</key><key>Tab</key></keyseq>.</desc>
+    <desc><keyseq><key>Super</key><key>Tab</key></keyseq> を押します。</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -69,8 +69,7 @@
 <title>ウィンドウを切り替える</title>
 
   <p>You can see all the running applications that have a graphical user
-  interface in the
-  <link xref="shell-terminology"><em>window switcher</em></link>. This makes
+  interface in the <em>window switcher</em>. This makes
   switching between tasks a single-step process and provides a full picture of
   which applications are running.</p>
 
@@ -78,19 +77,13 @@
 
   <steps>
     <item>
-      <p>Press
-      <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq>
-      to bring up the <gui>window switcher</gui>.</p>
+      <p><keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq> を押して、<gui>ウィンドウスイッチャー</gui>を表示します。</p>
     </item>
     <item>
-      <p>Release <key xref="keyboard-key-super">Super</key> to select the next
-      (highlighted) window in the switcher.</p>
+      <p><key xref="keyboard-key-super">Super</key> を離すと、ウィンドウスイッチャー上の次の (ハイライトされた) ウィンドウに切り替わります。</p>
     </item>
     <item>
-      <p>Otherwise, still holding down the <key xref="keyboard-key-super">
-      Super</key> key, press <key>Tab</key> to cycle through the list of open
-      windows, or <keyseq><key>Shift</key><key>Tab</key></keyseq> to cycle
-      backwards.</p>
+      <p>もしくは、<key xref="keyboard-key-super">Super</key> キーを押したままで、<key>Tab</key> を押すと、開いている各ウィンドウを順に切り替えていき、<keyseq><key>Shift</key><key>Tab</key></keyseq> を押すと、逆の順序で切り替えます。</p>
     </item>
   </steps>
 
@@ -98,10 +91,7 @@
   bottom bar to access all your open windows and switch between them.</p>
 
   <note style="tip" if:test="!platform:gnome-classic">
-    <p>Windows in the window switcher are grouped by application. Previews of
-    applications with multiple windows pop down as you click through. Hold down
-    <key xref="keyboard-key-super">Super</key> and press <key>`</key> (or the
-    key above <key>Tab</key>) to step through the list.</p>
+    <p>ウィンドウスイッチャー上のウィンドウはアプリケーションごとにまとめられています。複数のウィンドウを持つアプリケーションをクリックすると、プレビューがポップダウンします。<key xref="keyboard-key-super">Super</key>を押しながら<key>`</key> キー (<key>Tab</key> の上にあるキー) を押すと、そのアプリケーションのウィンドウ間で切り替えます (訳注: 日本語キーボードの場合は、一般に <keyseq><key>Alt</key><key>半角/全角</key></keyseq>です)。</p>
   </note>
 
   <note if:test="!platform:gnome-classic">

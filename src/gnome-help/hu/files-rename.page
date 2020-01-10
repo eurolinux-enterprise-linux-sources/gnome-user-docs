@@ -2,10 +2,11 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-rename" xml:lang="hu">
 
   <info>
-    <link type="guide" xref="files"/>
+    <link type="guide" xref="files#common-file-tasks"/>
 
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>GNOME dokumentációs projekt</name>
@@ -23,6 +24,10 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
@@ -37,7 +42,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Kelemen Gábor</mal:name>
       <mal:email>kelemeng at gnome dot hu</mal:email>
-      <mal:years>2011, 2012, 2013, 2014</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -72,15 +77,15 @@
   <steps>
     <title>Fájl vagy mappa átnevezéséhez:</title>
     <item><p>Kattintson a jobb egérgombbal az elemre, és válassza az <gui>Átnevezés</gui> menüpontot, vagy válassza ki a fájlt, és nyomja meg az <key>F2</key> billentyűt.</p></item>
-    <item><p>Írja be az új nevet, és nyomja meg az <key>Enter</key> billentyűt.</p></item>
+    <item><p>Írja be az új nevet, és nyomja meg az <key>Enter</key> billentyűt, vagy válassza az <gui>Átnevezés</gui> menüpontot.</p></item>
   </steps>
 
   <p>A fájlokat a <link xref="nautilus-file-properties-basic">Tulajdonságok</link> ablakban is átnevezheti.</p>
 
-  <p>Fájlok átnevezésekor csak a fájl első része kerül kijelölésre, a kiterjesztés (a <file>.</file> utáni rész) nem. A kiterjesztés általában a fájl típusát jelzi (például a <file>fájl.pdf</file> egy PDF-dokumentum), és általában nem szükséges megváltoztatni. Ha a kiterjesztést is meg akarja változtatni, akkor jelölje ki a teljes fájlnevet, és módosítsa.</p>
+  <p>Fájlok átnevezésekor csak a fájl első része kerül kijelölésre, a kiterjesztés (az utolsó <file>.</file> utáni rész) nem. A kiterjesztés általában a fájl típusát jelzi (például a <file>fájl.pdf</file> egy PDF-dokumentum), és általában nem szükséges megváltoztatni. Ha a kiterjesztést is meg akarja változtatni, akkor jelölje ki a teljes fájlnevet, és módosítsa.</p>
 
   <note style="tip">
-    <p>Ha rossz fájlt nevezett át, vagy elrontotta az új nevet, akkor visszavonhatja az átnevezést. A művelet visszavonásához azonnal válassza a menü gombot az eszköztáron, majd a <gui>Visszavonás</gui> menüpontot vagy nyomja meg a <keyseq><key>Ctrl</key><key>Z</key></keyseq> kombinációt a korábbi név visszaállításához.</p>
+    <p>Ha rossz fájlt nevezett át, vagy elrontotta az új nevet, akkor visszavonhatja az átnevezést. A művelet visszavonásához azonnal válassza a menü gombot az eszköztáron, majd az <gui>Átnevezés visszavonása</gui> menüpontot, vagy nyomja meg a <keyseq><key>Ctrl</key><key>Z</key></keyseq> kombinációt a korábbi név visszaállításához.</p>
   </note>
 
   <section id="valid-chars">

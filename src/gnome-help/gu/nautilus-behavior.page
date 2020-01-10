@@ -7,6 +7,7 @@
     <desc>ફાઇલોને ખોલવા માટે એકજ ક્લિક કરો, એક્ઝક્યૂટેબલ લખાણ ફાઇલને જુઓ અથવા ચલાવો, અને કચરાપેટીની વર્ણતૂકને સ્પષ્ટ કરો.</desc>
 
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>ટિફની એન્ટોપોલસ્કી</name>
@@ -23,6 +24,10 @@
     <credit type="editor">
       <name>સીંધુ એસ</name>
       <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
     </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
@@ -66,7 +71,11 @@
 
  <p>જો <gui>દરેક સમયે પૂછો</gui> પસંદ થયેલ હોય તો, સંવાદ એ પૂછવા પોપ અપ કરશે જો તમે પસંદ થયેલ લખાણ ફાઇલને જોવા અથવા ચલાવવા માટે ઇચ્છો તો.</p>
 
- <p>ચલાવી શકાય તેવી લખાણ ફાઇલો પણ સ્ક્રીપ્ટ તરીકે ઓળખાયેલ છે. <file>~/.local/share/nautilus/scripts</file>  ફોલ્ડરમાં બધી સ્ક્રીપ્ટ એ <gui style="menuitem">સ્ક્રીપ્ટs</gui> ઉપમેનુ હેઠળ ફાઇલ માટે સંદર્ભ મેનુમાં દેખાશે. જ્યારે સ્ક્રીપ્ટ એ સ્થાનિક ફોલ્ડરમાંથી ચલાવેલ હોય, બધી પસંદ થયેલ ફાઇલો પરિમાણો તરીકે સ્ક્રીપ્ટમાં ચોંટાડેલ હશે. ફાઇલ પર સ્ક્રીપ્ટને ચલાવવા માટે:</p>
+ <p>Executable text files are also called <em>scripts</em>. All scripts in the
+ <file>~/.local/share/nautilus/scripts</file> folder will appear in the context
+ menu for a file under the <gui style="menuitem">Scripts</gui> submenu. When a
+ script is executed from a local folder, all selected files will be pasted to
+ the script as parameters. To execute a script on a file:</p>
 
 <steps>
   <item>
@@ -85,6 +94,7 @@
  </note>
 
 </section>
+
 <section id="trash">
 <info>
 <link type="seealso" xref="files-delete"/>
@@ -94,15 +104,8 @@
 
 <terms>
  <item>
-  <title><gui>ફાઇલોને કાઢો અથવા કચરાપેટીમાંથી ખાલી કરતા પહેલાં પૂછો</gui></title>
+  <title><gui>Ask before emptying the Trash</gui></title>
   <p>આ વિકલ્પ મૂળભૂત રીતે પસંદ થયેલ છે. જ્યારે કચરાપેટીને ખાલી કરી રહ્યા હોય, સંદેશો દર્શાવેલ હશે ખાતરી કરી રહ્યા છે કે તમે ફાઇલોને કાઢવા અથવા કચરાપેટીમાંથી ખાલી કરવાનું ગમે છે.</p>
- </item>
- <item>
-  <title><gui>કાઢી નાંખો આદેશને સમાવો કે જે કચરાપેટીમાં જવા દે છે</gui></title>
-  <p>આ વિકલ્પને પસંદ કરીને મેનુમાં <gui>કાઢી નાંખો</gui> વસ્તુને ઉમેરશે કે જે પોપ અપ કરે છે જ્યારે તમે <app>ફાઇલ</app> કાર્યક્રમમાં વસ્તુ પર જમણી ક્લિક કરો.</p>
-<note style="warning">
-<p><gui>કાઢી નાંખો</gui> મેનુની મદદથી વસ્તુને કાઢી રહ્યા છે કે જે ભેગું કચરાપેટીમાં મૂકે છે. વસ્તુ એ સંપૂર્ણપણે સિસ્ટમમાંથી દૂર થયેલ છે. ત્યાં કાઢેલ વસ્તુને પ્રાપ્ત કરવાનો રસ્તો નથી.</p>
-</note>
  </item>
 </terms>
 </section>

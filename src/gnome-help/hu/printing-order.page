@@ -6,6 +6,7 @@
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -29,7 +30,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Kelemen Gábor</mal:name>
       <mal:email>kelemeng at gnome dot hu</mal:email>
-      <mal:years>2011, 2012, 2013, 2014</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -64,14 +65,13 @@
 
     <p>A nyomtatók általában először az első, utoljára pedig az utolsó oldalt nyomtatják ki, így az oldalakat fordított sorrendben kapja meg. Szükség esetén megfordíthatja ezt a nyomtatási sorrendet.</p>
 
-    <p>A sorrend megfordításához:</p>
-
     <steps>
+      <title>A sorrend megfordításához:</title>
       <item>
-        <p>Válassza a <guiseq><gui>Fájl</gui><gui>Nyomtatás</gui></guiseq> menüpontot.</p>
+        <p>Nyomja meg a <keyseq><key>Ctrl</key><key>P</key></keyseq> kombinációt a Nyomtatás ablak megnyitásához.</p>
       </item>
       <item>
-        <p>A Nyomtatás ablak <gui>Általános</gui> lapján a <em>Másolatok</em> szakaszban jelölje be a <gui>Fordított</gui> négyzetet. Ekkor az utolsó oldal kerül elsőként kinyomtatásra.</p>
+        <p>Az <gui>Általános</gui> lapon a <gui>Másolatok</gui> szakaszban jelölje be a <gui>Fordított</gui> négyzetet. Ekkor az utolsó oldal kerül elsőként kinyomtatásra.</p>
       </item>
     </steps>
 
@@ -82,17 +82,16 @@
 
   <p>Ha a dokumentumból több példányt nyomtat, a nyomatok alapbeállítás szerint oldalszám szerint lesznek csoportosítva (azaz az első oldal másolatai készülnek el, majd a második oldal másolatai stb.) A <em>szétválogatás</em> hatására az egyes másolatok oldalai csoportosítva készülnek el, a megfelelő sorrendben.</p>
 
-  <p>A szétválogatáshoz:</p>
-
   <steps>
+    <title>A szétválogatáshoz:</title>
     <item>
-      <p>Válassza a <guiseq><gui>Fájl</gui><gui>Nyomtatás</gui></guiseq> menüpontot.</p>
+     <p>Nyomja meg a <keyseq><key>Ctrl</key><key>P</key></keyseq> kombinációt a Nyomtatás ablak megnyitásához.</p>
     </item>
     <item>
-      <p>A Nyomtatás ablak <gui>Általános</gui> lapján a <em>Másolatok</em> szakaszban jelölje be a <gui>Szétválogatás</gui> négyzetet.</p>
+      <p>Az <gui>Általános</gui> lapon a <gui>Másolatok</gui>szakaszban jelölje be a <gui>Szétválogatás</gui> négyzetet.</p>
     </item>
   </steps>
- <!-- Need to add this image <media type="image" src="figures/reverse-collate.png"/> -->
+
 </section>
 
 </page>

@@ -1,24 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="privacy-history-recent-off" xml:lang="cs">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="privacy-history-recent-off" xml:lang="cs">
 
   <info>
     <link type="guide" xref="privacy"/>
+    <link type="guide" xref="files#more-file-tasks"/>
 
     <revision pkgversion="3.8" date="2013-03-11" status="final"/>
     <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-30" status="final"/>
 
     <credit type="author">
       <name>Jim Campbell</name>
-      <email its:translate="no">jwcampbell@gmail.com</email>
+      <email>jwcampbell@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
 
-    <desc>Stop or limit your computer from tracking your recently-used
-    files.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Jak zastavit nebo omezit svůj počítač ve sledování nedávno použitých souborů.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
@@ -29,66 +32,55 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Marek Černocký</mal:name>
       <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:years>2014, 2015</mal:years>
     </mal:credit>
   </info>
 
-  <title>Turn off or limit file history tracking</title>
+  <title>Vypněte nebo omezte sledování historie souborů</title>
   
-  <p>Tracking recently-used files and folders can make it easier to
-  find items that you have been working on, but you may wish to keep
-  these items private.</p>
+  <p>Sledování nedávno použitých souborů a složek může usnadnit vyhledání položek, se kterými jste pracovali ve správci souborů a dialogových oknech souborů v aplikacích. Na druhou stranu si můžete přát, aby se tyto položky uchovaly v soukromí, nebo aby se sledovala jen úplně nejnovější historie.</p>
 
   <steps>
-    <title>To turn off the file history tracking features of your
-    desktop:</title>
+    <title>Vypnutí sledování historie souborů</title>
     <item>
-      <p>Open the <gui xref="shell-terminology">Activities</gui> overview and
-      start typing <gui>Privacy</gui>.</p>
+      <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Soukromí</gui>.</p>
     </item>
     <item>
-      <p>Click on <gui>Privacy</gui> to open the panel.</p>
+      <p>Kliknutím na <gui>Soukromí</gui> otevřete příslušný panel.</p>
     </item>
     <item>
-      <p>Select <gui>Usage &amp; History</gui>.</p>
+      <p>Vyberte <gui>Použití a historie</gui>.</p>
     </item>
     <item>
-     <p>Set the <gui>Recently Used</gui> switch to <gui>OFF</gui>.</p>
-     <p>To re-enable this feature, set the <gui>Recently Used</gui> switch to
-     <gui>ON</gui>.</p>
+     <p>Vypínač <gui>Nedávno použité</gui> přepněte na <gui>○</gui> (vypnuto).</p>
+     <p>Pro opětovné povolení této funkce přepněte vypínač <gui>Nedávno použité</gui> na <gui>❙</gui> (zapnuto).</p>
     </item>
     <item>
-      <p>Use the <gui>Clear Recent History</gui> button to purge the history
-      immediately.</p>
+      <p>Použijte tlačítko <gui>Vyčistit nedávnou historii</gui> k okamžitému zahození historie.</p>
     </item>
   </steps>
   
-  <note><p>This setting will not affect how your web browser stores information
-  about the web sites you visit.</p></note>
+  <note><p>Toto nastavení neovlivní, jak uchovává webový prohlížeč informace o webových stránkách, které jste navštívili.</p></note>
 
   <steps>
-    <title>To restrict the amount of time your file history is tracked:</title>
+    <title>Omezení doby, po kterou je soubor s historií schraňován</title>
     <item>
-      <p>Open the <gui xref="shell-terminology">Activities</gui> overview and
-      start typing <gui>Privacy</gui>.</p>
+      <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Soukromí</gui>.</p>
     </item>
     <item>
-      <p>Click on <gui>Privacy</gui> to open the panel.</p>
+      <p>Kliknutím na <gui>Soukromí</gui> otevřete příslušný panel.</p>
     </item>
     <item>
-      <p>Select <gui>Usage &amp; History</gui>.</p>
+      <p>Vyberte <gui>Použití a historie</gui>.</p>
     </item>
     <item>
-     <p>Ensure the <gui>Recently Used</gui> switch is <gui>ON</gui>.</p>
+     <p>Ujistěte se, že je vypínač <gui>Nedávno použité</gui> přepnutý na <gui>❙</gui> (zapnuto).</p>
     </item>
     <item>
-     <p>Select the length of time to <gui>Retain History</gui>. Choose from
-     options <gui>1 day</gui>, <gui>7 days</gui>, <gui>30 days</gui>, or
-     <gui>Forever</gui>.</p>
+     <p>U položky <gui>Zachovat historii</gui> vyberte dobu uchování. Na výběr je <gui>1 den</gui>, <gui>7 dní</gui>, <gui>30 dní</gui> nebo <gui>Napořád</gui>.</p>
     </item>
     <item>
-      <p>Use the <gui>Clear Recent History</gui> button to purge the history
-      immediately.</p>
+      <p>Použijte tlačítko <gui>Vyčistit nedávnou historii</gui> k okamžitému zahození historie.</p>
     </item>
   </steps>
 

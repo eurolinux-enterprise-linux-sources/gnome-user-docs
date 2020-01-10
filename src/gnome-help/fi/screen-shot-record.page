@@ -6,6 +6,7 @@
 
     <revision pkgversion="3.6.1" date="2012-11-10" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.14.0" date="2015-01-14" status="review"/>
 
     <credit type="author copyright">
       <name>Tiffany Antopolski</name>
@@ -21,11 +22,15 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2015</years>
+    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Take a picture or record a video of what is happening on your
-    screen.</desc>
+    <desc>Ota kuva tai nauhoita video näyttösi sisällöstä.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Timo Jyrinki</mal:name>
@@ -36,7 +41,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Jiri Grönroos</mal:name>
       <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
-      <mal:years>2012, 2013.</mal:years>
+      <mal:years>2012-2016.</mal:years>
     </mal:credit>
   </info>
 
@@ -54,7 +59,7 @@
   <steps>
     <item>
       <p>Open <app>Screenshot</app> from the
-      <gui xref="shell-terminology">Activities</gui> overview.</p>
+      <gui xref="shell-introduction#activities">Activities</gui> overview.</p>
     </item>
     <item>
       <p>In the <app>Screenshot</app> window, select whether to grab the whole
@@ -75,7 +80,7 @@
     </item>
   </steps>
 
-  <note style="tip">
+  <section id="keyboard-shortcuts">
     <title>Pikanäppäimet</title>
 
     <p>Quickly take a screenshot of the desktop, a window, or an area at any
@@ -99,9 +104,13 @@
     your <file>Pictures</file> folder in your home folder with a file name that
     begins with <file>Screenshot</file> and includes the date and time it was
     taken.</p>
+    <note style="note">
+      <p>If you do not have a <file>Pictures</file> folder, the images will be
+      saved in your home folder instead.</p>
+    </note>
     <p>You can also hold down <key>Ctrl</key> with any of the above shortcuts
     to copy the screenshot image to the clipboard instead of saving it.</p>
-  </note>
+  </section>
 
 </section>
 
@@ -115,7 +124,7 @@
       <p>Press
       <keyseq><key>Ctrl</key><key>Alt</key><key>Shift</key><key>R</key></keyseq>
       to start recording what is on your screen.</p>
-      <p>A red circle is displayed in the bottom right corner of the screen
+      <p>A red circle is displayed in the top right corner of the screen
       when the recording is in progress.</p>
     </item>
     <item>
@@ -129,6 +138,11 @@
       <file>Screencast</file> and includes the date and time it was taken.</p>
     </item>
   </steps>
+
+  <note style="note">
+    <p>If you do not have a <file>Videos</file> folder, the videos will be
+    saved in your home folder instead.</p>
+  </note>
 
 </section>
 

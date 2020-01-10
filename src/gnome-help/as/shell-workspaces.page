@@ -35,16 +35,22 @@
 <list>
   <item>
     <p if:test="!platform:gnome-classic">In the
-    <gui xref="shell-terminology">&gt;Activities</gui> overview, move your cursor
+    <gui xref="shell-introduction#activities">Activities</gui> overview, move your cursor
     to the right-most side of the screen.</p>
     <p if:test="platform:gnome-classic"><gui>কাৰ্য্যসমূহ</gui> অভাৰভিউ খোলিবলে <key xref="keyboard-key-super">Super</key> কি' টিপক আৰু তাৰ পিছত কাৰ্চাৰক পৰ্দাৰ সোঁ-ফালে লৈ যাওক।</p>
   </item>
   <item>
-    <p if:test="!platform:gnome-classic">ব্যৱহৃত কাৰ্য্যস্থানসমূহ দেখুৱা এটা উলম্ব পেনেল খোল খাব, লগতে এটা ৰিক্ত কাৰ্য্যস্থান। ই হল<link xref="shell-terminology">কাৰ্য্যস্থান নিৰ্বাচক</link>।</p>
-    <p if:test="platform:gnome-classic">উপলব্ধ কাৰ্য্যস্থানসমূহ দেখুৱা এটা উলম্ব পেনেল খোল খাব। ই হল <link xref="shell-terminology">কাৰ্য্যস্থান নিৰ্বাচক</link>।</p>
+    <p if:test="!platform:gnome-classic">A vertical panel will appear showing
+    workspaces in use, plus an empty workspace. This is the
+    workspace selector.</p>
+    <p if:test="platform:gnome-classic">A vertical panel will appear showing
+    available workspaces. This is the workspace selector.</p>
   </item>
   <item if:test="!platform:gnome-classic">
-    <p>এটা কাৰ্য্যস্থান যোগ কৰিবলে, <link xref="shell-terminology">কাৰ্য্যস্থান নিৰ্বাচক</link> ত এটা স্থায়ী কাৰ্য্যস্থানৰ পৰা এটা উইন্ডোক এটা ৰিক্ত কাৰ্য্যস্থানত ড্ৰেগ আৰু ড্ৰপ কৰক। এই কাৰ্য্যস্থানে এতিয়া আপুনি ড্ৰপ কৰা উইন্ডো অন্তৰ্ভুক্ত কৰে, আৰু এটা নতুন ৰিক্ত কাৰ্য্যস্থান ইয়াৰ তলত উপস্থিত হব।</p>
+    <p>To add a workspace, drag and drop a window from an existing workspace
+    onto the empty workspace in the workspace selector. This workspace now
+    contains the window you have dropped,
+    and a new empty workspace will appear below it.</p>
   </item>
   <item if:test="!platform:gnome-classic">
     <p>এটা কাৰ্য্যস্থান আতৰাবলৈ, সকলো উইন্ডো বন্ধ কৰক অথবা অন্য কাৰ্য্যস্থানসমূহলৈ স্থানান্তৰ কৰক।</p>

@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="wacom-left-handed" xml:lang="de">
-  <info>
 
+  <info>
     <revision pkgversion="3.10" date="2013-11-02" status="review"/>
     <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
     <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <link type="guide" xref="wacom"/>
 
     <credit type="author copyright">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
       <years>2012</years>
     </credit>
 
-    <desc>Das Wacom-Tablett für <gui>Linkshändige Ausrichtung</gui> einstellen.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Das Wacom-Tablett auf <gui>Linkshändige Ausrichtung</gui> umstellen.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Hendrik Knackstedt</mal:name>
@@ -31,7 +34,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Christian Kirbach</mal:name>
       <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2014.</mal:years>
+      <mal:years>2011-2016.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -53,11 +56,11 @@
 
 <steps>
   <item>
-    <p>Öffnen Sie die <gui xref="shell-terminology">Aktivitäten</gui>-Übersicht und tippen Sie <gui>Wacom-Tablett</gui> ein.</p>
+    <p>Öffnen Sie die <gui xref="shell-introduction#activities">Aktivitäten</gui>-Übersicht und tippen Sie <gui>Wacom-Tablett</gui> ein.</p>
   </item>
   <item>
     <p>Klicken Sie auf <gui>Wacom-Grafiktablett</gui>, um das Panel zu öffnen.</p>
-
+    <!-- TODO: document how to connet the tablet using Bluetooth/add link -->
     <note style="tip"><p>Falls kein Tablett erkannt wurde, dann werden Sie gebeten <gui>Bitte schließen Sie Ihr Wacom-Tablett an oder schalten Sie es ein</gui>. Klicken Sie auf <gui>Bluetooth-Einstellungen</gui>, um ein Funk-Tablett zu verbinden.</p></note>
   </item>
   <item><p>Stellen Sie <gui>Linkshändige Ausrichtung</gui> auf <gui>An</gui>.</p></item>

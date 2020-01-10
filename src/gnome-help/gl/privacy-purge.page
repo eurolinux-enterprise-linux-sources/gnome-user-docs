@@ -1,21 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="privacy-purge" xml:lang="gl">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="privacy-purge" xml:lang="gl">
 
   <info>
     <link type="guide" xref="privacy"/>
+    <link type="guide" xref="files#more-file-tasks"/>
 
     <revision pkgversion="3.10" date="2013-09-29" status="review"/>
     <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
     <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-30" status="candidate"/>
 
     <credit type="author">
       <name>Jim Campbell</name>
-      <email its:translate="no">jwcampbell@gmail.com</email>
+      <email>jwcampbell@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
+    <credit type="editor">
+      <name>Shaun McCance</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2015</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <desc>Estabeleza cada canto tempo se limpará o lixo e os ficheiros temporais do seu computador.</desc>
   
@@ -30,10 +39,14 @@
 
   <p>Ao limpar o lixo e os ficheiros temporais eliminará os ficheiros non necesarios e non queridos do seu computador, e polo tanto liberará espazo no seu disco duro. Pode baleirar o lixo e limpar os ficheiros temporais de forma manual, porén tamén pode facer que o computador o faga automaticamente por vostede.</p>
 
+  <p>Temporary files are files created automatically by applications in the
+  background. They can increase performance by providing a copy of data that
+  was downloaded or computed.</p>
+
   <steps>
-    <title>Limpar automaticamente o lixo e os ficheiros temporais despois dun período de tempo estabelecido:</title>
+    <title>Automatically empty your trash and clear temporary files</title>
     <item>
-      <p>Open the <gui xref="shell-terminology">Activities</gui> overview and
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
       start typing <gui>Privacy</gui>.</p>
     </item>
     <item>
@@ -54,15 +67,11 @@
       <p>Use the <gui>Empty Trash</gui> or <gui>Purge Temporary Files</gui>
       buttons to perform these actions immediately.</p>
     </item>
-    <item>
-      <p>Click the <gui>X</gui> to close.</p>
-    </item>
   </steps>
 
-  <note style="warning">
-    <p>Use a configuración <em>Limpar despois de: Inmediatamente</em> con coidado. Ao estabelecer que se limpe o lixo inmediatamente fará que calquera ficheiro que borre omita o lixo e se elimine permanentemente. Os ficheiros que se eliminan son moito máis difíciles de recuperar que os ficheiros que están no seu lixo.</p>
-
-    <p>A non se que precise especificamente que se eliminen os ficheiros inmediatamente do seu lixo, é probabelmente máis seguro estabelecer un valor máis grande en <gui>Limpar despois de</gui>.</p>
+  <note style="tip">
+    <p>You can delete files immediately and permanently without using the Trash.
+    See <link xref="files-delete#permanent"/> for information.</p>
   </note>
 
 </page>

@@ -7,6 +7,7 @@
     <desc>फाइल्स उघडे करण्यासाठी एकदा-क्लिक करा, एक्जिक्युटेबल मजकूर फाइल्स चालवा किंवा अवलोकन करा, आणि कचरापेटी वर्तन निर्देशीत करा.</desc>
 
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -23,6 +24,10 @@
     <credit type="editor">
       <name>Sindhu S</name>
       <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
     </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
@@ -67,7 +72,11 @@
 
  <p><gui>प्रत्येकवेळी विचारा</gui> नीवडल्यास, संवाद पॉपअप होईल जे तुम्हाला निवडलेली मजकूर फाइल चालवण्यास किंवा अवलोकनकरिता विचारते.</p>
 
- <p>एक्जिक्युटेबल मजकूर फाइल्सला स्क्रिप्ट्स म्हणून म्हटले जाते. <file>~/.local/share/nautilus/scripts</file> फोल्डरमधील सर्व स्क्रिप्ट्स संदर्भ मेन्युमध्ये फाइलकरिता <gui style="menuitem">स्क्रिप्ट्स</gui> उपमेन्यु अंतर्गत आढळतील. स्थानीय फोल्डरपासून स्क्रिप्ट चालवताना, सर्व नीवडलेल्या फाइल्सला स्क्रिप्टकरिता बाबी म्हणून चिकटवले जातील. फाइलवर स्क्रिप्ट चालवण्याकरिता:</p>
+ <p>Executable text files are also called <em>scripts</em>. All scripts in the
+ <file>~/.local/share/nautilus/scripts</file> folder will appear in the context
+ menu for a file under the <gui style="menuitem">Scripts</gui> submenu. When a
+ script is executed from a local folder, all selected files will be pasted to
+ the script as parameters. To execute a script on a file:</p>
 
 <steps>
   <item>
@@ -86,6 +95,7 @@
  </note>
 
 </section>
+
 <section id="trash">
 <info>
 <link type="seealso" xref="files-delete"/>
@@ -95,15 +105,8 @@
 
 <terms>
  <item>
-  <title><gui>कचरापेटी रिकामे करण्यापूर्वी किंवा फाइलस नष्ट करण्यापूर्वी विचारा</gui></title>
+  <title><gui>Ask before emptying the Trash</gui></title>
   <p>हा पर्याय पूर्वनिर्धारितपणे निवडले जाते. कचरापेटी रिकामे करतेवेळी, कचरापेटी रिकामे करा किंवा फाइल्स नष्ट करा, याची खात्री करणारे एक संदेश दाखवले जाईल.</p>
- </item>
- <item>
-  <title><gui>कचरापेटी बायपास करणारे Delete आदेश समाविष्ट करा</gui></title>
-  <p>हा पर्यायचा निवड करून मेन्युकरिता <gui>नष्ट करा</gui> घटक समाविष्ट केले जाईल जे <app>फाइल्स</app> ॲप्लिकेशनमध्ये घटकावर उजवी क्लिक दिल्यानंतर पॉपअप होते.</p>
-<note style="warning">
-<p><gui>नष्ट करा</gui> मेन्यु पर्यायचा वापर करून घटक नष्ट करून कचरापेटी एकंदर बायपास केले जाते. घटकाला प्रणालीतून पूर्णपणे काढून टाकले जाते. नष्ट केलेल्या घटकाच्या पुन्हाप्राप्तिकरिता पर्याय अनुपलब्ध आहे.</p>
-</note>
  </item>
 </terms>
 </section>

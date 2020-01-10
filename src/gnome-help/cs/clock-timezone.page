@@ -6,23 +6,30 @@
 
     <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
     <revision pkgversion="3.10" date="2013-11-01" status="review"/>
+    <revision pkgversion="3.16" date="2015-01-26" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
-      <name>GNOME Documentation Project</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <name>Dokumentační projekt GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
+    <credit type="editor">
+       <name>Jim Campbell</name>
+       <email>jcampbell@gnome.org</email>
+    </credit>
+
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Update your time zone to your current location so that your time is correct.</desc>
+    <desc>Nastavte svoje časové pásmo podle své aktuální polohy, aby byl čas správný.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
@@ -33,35 +40,27 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Marek Černocký</mal:name>
       <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:years>2014, 2015</mal:years>
     </mal:credit>
   </info>
 
-  <title>Change your timezone</title>
+  <title>Změna vašeho časového pásma</title>
 
   <steps>
     <item>
-      <p>Klikněte na hodiny uprostřed horní lišty a vyberte <gui>Nastavení data a času</gui>.</p>
+      <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Datum a čas</gui>.</p>
     </item>
     <item>
-      <p>If you have a standard account, you will need to click
-      <gui>Unlock</gui> and type the
-      <link xref="user-admin-explain">administrator password</link>.</p>
+      <p>Kliknutím na <gui>Datum a čas</gui> otevřete příslušný panel.</p>
     </item>
     <item>
-      <p>If you have <gui>Automatic Time Zone</gui> set to <gui>ON</gui>, your
-      time zone should update automatically if you have an internet
-      connection. To update your time zone manually, set this to
-      <gui>OFF</gui>.</p>
+      <p>Pokud máte <gui>Časové pásmo automaticky</gui> nastavené na <gui>❙</gui> (zapnuto), mělo by se vaše časové pásmo aktualizovat automaticky, když jste připojeni k Internetu. Abyste jej mohli měnit ručně, musí být tato volba v poloze <gui>○</gui> (vypnuto).</p>
     </item>
     <item>
-      <p>Click <gui>Time Zone</gui>, then select your location on the map or
-      search for your current city.</p>
+      <p>Klikněte na <gui>Časové pásmo</gui> vyberte na mapě svoji současnou polohu nebo vyhledejte své současné město.</p>
     </item>
   </steps>
 
-  <p>The time will be updated automatically when you select a different
-  location. You may also wish to <link xref="clock-set">set the clock
-  manually</link>.</p>
+  <p>Když změníte časové pásmo, automaticky se aktualizuje čas pro nové místo. Máte ale i možnost <link xref="clock-set">nastavit si čas ručně</link>.</p>
 
 </page>

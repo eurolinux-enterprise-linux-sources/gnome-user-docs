@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="privacy-screen-lock" xml:lang="lv">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="privacy-screen-lock" xml:lang="lv">
 
   <info>
     <link type="guide" xref="privacy"/>
@@ -9,18 +9,19 @@
     <revision pkgversion="3.8" date="2013-05-21" status="candidate"/>
     <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
     <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-30" status="final"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit>
       <name>Jim Campbell</name>
-      <email its:translate="no">jwcampbell@gmail.com</email>
+      <email>jwcampbell@gmail.com</email>
       <years>2013</years>
     </credit>
 
@@ -31,14 +32,19 @@
 
   <title>Automātiski bloķēt ekrānu</title>
   
-  <p>Kad atstājiet savu datoru, jums vajadzētu <link xref="shell-exit#lock-screen">bloķēt ekrānu</link>, lai neļautu citiem cilvēkiem strādāt ar jūsu datoru un piekļūt jūsu datnēm. Ja dažkārt aizmirstat bloķēt savu ekrānu, jūs varētu vēlēties automātiski bloķēt sava datora ekrānu pēc noteikta laika. Tas palīdz turēt datoru drošībā arī tad, kad to neizmantojat.</p>
+  <p>When you leave your computer, you should
+  <link xref="shell-exit#lock-screen">lock the screen</link> to prevent
+  other people from using your desktop and accessing your files. If you
+  sometimes forget to lock your screen, you may wish to have your computerʼs
+  screen lock automatically after a set period of time. This will help to
+  secure your computer when you arenʼt using it.</p>
 
   <note><p>Kad ekrāns ir bloķēts, jūsu lietotnes un sistēmas procesi turpinās darboties, bet jums vajadzēs ievadīt paroli, lai to turpinātu izmantot.</p></note>
   
   <steps>
     <title>Lai iestatītu laiku, pirms ekrāns tiek bloķēts:</title>
     <item>
-      <p>Atveriet <link xref="shell-terminology">aktivitāšu</link> pārskatu un sāciet rakstīt <gui>Privātums</gui>.</p>
+      <p>Atveriet <gui xref="shell-introduction#activities">Aktivitāšu</gui> pārskatu un sāciet rakstīt <gui>Privātums</gui>.</p>
     </item>
     <item>
       <p>Spiediet <gui>Privātums</gui>, lai atvērtu paneli.</p>
@@ -50,13 +56,15 @@
       <p>Make sure <gui>Automatic Screen Lock</gui> is switched <gui>ON</gui>,
       then select a length of time from the drop-down list.</p>
     </item>
-    <item>
-      <p>Lai bloķēšanas ekrāns drīkstētu rādīt paziņojumus, pārslēdziet <gui>Rādīt paziņojumus</gui> uz <gui>|</gui>.</p>
-    </item>
-    <item>
-      <p>Click the <gui>X</gui> to close.</p>
-    </item>
   </steps>
+
+  <note style="tip">
+    <p>Applications can present notifications to you that are still displayed
+    on your lock screen. This is convenient, for example, to see if you have
+    any email without unlocking your screen. If youʼre concerned about other
+    people seeing these notifications, switch <gui>Show Notifications</gui>
+    off.</p>
+  </note>
 
   <p>When your screen is locked, and you want to unlock it, press
   <key>Esc</key>, or swipe up from the bottom of the screen with your mouse.

@@ -7,6 +7,7 @@
     <desc>Einfacher Klick, um Dateien zu öffnen, ausführbare Textdateien ausführen oder anzeigen, Einstellungen für den Papierkorb.</desc>
 
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -23,6 +24,10 @@
     <credit type="editor">
       <name>Sindhu S</name>
       <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
     </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
@@ -41,7 +46,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Christian Kirbach</mal:name>
       <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2014.</mal:years>
+      <mal:years>2011-2016.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -91,7 +96,7 @@
 
  <p>Wenn <gui>Jedes Mal nachfragen</gui> ausgewählt ist, erscheint ein Dialog, in dem gefragt wird, ob Sie die ausgewählte Textdatei ausführen oder anzeigen wollen.</p>
 
- <p>Ausführbare Textdateien werden auch Skripte genannt. Alle Skripte im Ordner <file>~/.local/share/nautilus/scripts</file> erscheinen im Kontextmenü einer Datei im Untermenü <gui style="menuitem">Skripte</gui>. Wenn ein Skript aus einem lokalen Ordner ausgeführt wird, werden alle ausgewählten Dateien dem Skript als Parameter übergeben. So wenden Sie ein skript auf eine Datei an:</p>
+ <p>Ausführbare Textdateien werden auch <em>Skripte</em> genannt. Alle Skripte im Ordner <file>~/.local/share/nautilus/scripts</file> erscheinen im Kontextmenü einer Datei im Untermenü <gui style="menuitem">Skripte</gui>. Wenn ein Skript aus einem lokalen Ordner ausgeführt wird, werden alle ausgewählten Dateien dem Skript als Parameter übergeben. So wenden Sie ein Skript auf eine Datei an:</p>
 
 <steps>
   <item>
@@ -110,6 +115,7 @@
  </note>
 
 </section>
+
 <section id="trash">
 <info>
 <link type="seealso" xref="files-delete"/>
@@ -119,15 +125,8 @@
 
 <terms>
  <item>
-  <title><gui>Vor dem Leeren des Papierkorbs oder dem Löschen von Dateien nachfragen</gui></title>
+  <title><gui>Vor dem Leeren des Papierkorbs nachfragen</gui></title>
   <p>Dies ist die Standardeinstellung. Wenn der Papierkorb geleert werden soll, wird eine Nachricht darüber angezeigt und Sie müssen bestätigen, dass Sie den Papierkorb leeren oder Dateien löschen wollen.</p>
- </item>
- <item>
-  <title><gui>Einen Löschbefehl bereitstellen, der den Papierkorb umgeht</gui></title>
-  <p>Wenn diese Einstellung gewählt ist, wird der Menüeintrag <gui>Löschen</gui> zum Menü hinzugefügt, das auftaucht, wenn Sie mit der rechten Maustaste auf ein Objekt in der Anwendung <app>Dateien</app> klicken.</p>
-<note style="warning">
-<p>Das Löschen eines Objekts mit dem <gui>Löschen</gui>-Menüeintrag umgeht den Papierkorb. Das Objekt wird aus dem System vollständig entfernt. Es gibt keine Möglichkeit, das gelöschte Objekt wiederherzustellen.</p>
-</note>
  </item>
 </terms>
 </section>

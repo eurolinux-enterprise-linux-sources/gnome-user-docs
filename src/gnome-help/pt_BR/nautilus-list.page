@@ -8,6 +8,7 @@
 
     <revision pkgversion="3.5.92" date="2012-09-19" status="review"/>
     <revision pkgversion="3.14.0" date="2014-09-23" status="review"/>
+    <revision pkgversion="3.18" date="2014-09-30" status="candidate"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -22,6 +23,11 @@
       <email>kittykat3756@gmail.com</email>
       <years>2014</years>
     </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2015</years>
+    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
@@ -31,12 +37,6 @@
       <mal:name>Rodolfo Ribeiro Gomes</mal:name>
       <mal:email>rodolforg@gmail.com</mal:email>
       <mal:years>2011, 2012.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Ferreira</mal:name>
-      <mal:email>rafael.f.f1@gmail.com</mal:email>
-      <mal:years>2012, 2013, 2014.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -50,23 +50,29 @@
       <mal:email>joaosantana@outlook.com</mal:email>
       <mal:years>2013.</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
   </info>
 
-  <title>Files list columns preferences</title>
+  <title>Preferências de colunas da lista do arquivos</title>
 
-  <p>There are nine columns of information that you can display in the
-  <gui>Files</gui> list view. Click <gui>Files</gui> in the top bar, pick
-  <gui>Preferences</gui> and choose the <gui>List Columns</gui> tab to select
-  which columns will be visible.</p>
+  <p>Há onze colunas de informação que você pode exibir na visão de lista do <gui>Arquivos</gui>. Clique em <gui>Arquivos</gui> na barra superior, selecione <gui>Preferências</gui> e escolha a aba <gui>Colunas da lista</gui> para selecionar quais colunas estarão visíveis.</p>
 
   <note style="tip">
-    <p>Use os botões <gui>Subir</gui> e <gui>Descer</gui> para escolher a ordem em que as colunas selecionadas vão aparecer.</p>
+    <p>Use os botões <gui>Subir</gui> e <gui>Descer</gui> para escolher a ordem em que as colunas selecionadas vão aparecer. Clique em <gui>Restaurar para padrão</gui> para desfazer qualquer alteração e retornar às colunas padrões.</p>
   </note>
 
   <terms>
     <item>
       <title><gui>Nome</gui></title>
-      <p>The name of folders and files.</p>
+      <p>O nome das pastas e arquivos.</p>
+      <note style="tip">
+        <p>A coluna <gui>Nome</gui> não pode ser ocultada.</p>
+      </note>
     </item>
     <item>
       <title><gui>Tamanho</gui></title>
@@ -78,7 +84,7 @@
     </item>
     <item>
       <title><gui>Modificado</gui></title>
-      <p>Informa a data e hora da última vez em que o arquivo foi modificado.</p>
+      <p>Informa a data da última vez em que o arquivo foi modificado.</p>
     </item>
     <item>
       <title><gui>Dono</gui></title>
@@ -86,19 +92,14 @@
     </item>
     <item>
       <title><gui>Grupo</gui></title>
-      <p>The group the file is owned by. Each user is normally in their own
-      group, but it is possible to have many users in one group. For example, a
-      department may have their own group in a work environment.</p>
+      <p>O grupo dono do arquivo. Cada usuário está normalmente dentro de seu próprio grupo, mas é possível ter muitos usuários dentro de um grupo. Por exemplo, um departamento pode ter seu próprio grupo em um ambiente de trabalho.</p>
     </item>
     <item>
       <title><gui>Permissões</gui></title>
-      <p>Displays the file access permissions. For example,
-      <gui>drwxrw-r--</gui></p>
+      <p>Exibe as permissões de acesso de arquivos. Por exemplo, <gui>drwxrw-r--</gui></p>
       <list>
         <item>
-          <p>The first character is the file type. <gui>-</gui> means regular
-          file and <gui>d</gui> means directory (folder). In rare cases, other
-          characters can also be shown.</p>
+          <p>O primeiro caractere é o tipo de arquivo. <gui>-</gui> significa arquivo comum e <gui>d</gui> significa diretório (pasta). Em casos raros, outros caracteres podem ser mostrados.</p>
         </item>
         <item>
           <p>Os próximos três caracteres <gui>rwx</gui> especificam permissões para o usuário que é dono do arquivo.</p>
@@ -110,22 +111,19 @@
           <p>Os últimos três caracteres da coluna <gui>r--</gui> especificam permissões para todos os usuários no sistema.</p>
         </item>
       </list>
-      <p>Each permission has the following meanings:</p>
+      <p>Cada permissão tem seu significado, listado abaixo:</p>
       <list>
         <item>
-          <p><gui>r</gui>: readable, meaning that you can open the file or
-          folder</p>
+          <p><gui>r</gui>: legível, significa que você pode abrir o arquivo ou pasta</p>
         </item>
         <item>
-          <p><gui>w</gui>: writable, meaning that you can save changes to it</p>
+          <p><gui>w</gui>: gravável/escrevível, significa que você pode salvar alterações nele</p>
         </item>
         <item>
-          <p><gui>x</gui>: executable, meaning that you can run it if it is a
-          program or script file, or you can access subfolders and files if it
-          is a folder</p>
+          <p><gui>x</gui>: executável, significa que você pode executá-lo se for um programa ou arquivo de script, ou que você pode acessar subpastas ou arquivos se for uma pasta</p>
         </item>
         <item>
-          <p><gui>-</gui>: permission not set</p>
+          <p><gui>-</gui>: permissão não definida</p>
         </item>
       </list>
     </item>
@@ -136,6 +134,14 @@
     <item>
       <title><gui>Local</gui></title>
       <p>O caminho do local do arquivo.</p>
+    </item>
+    <item>
+      <title><gui>Modificado – Hora</gui></title>
+      <p>Informa a data e hora da última vez em que o arquivo foi modificado.</p>
+    </item>
+    <item>
+      <title><gui>Acessado</gui></title>
+      <p>Informa a data ou hora da última vez em que o arquivo foi modificado.</p>
     </item>
   </terms>
 

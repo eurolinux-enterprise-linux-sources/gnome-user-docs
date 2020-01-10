@@ -7,18 +7,19 @@
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
     <revision pkgversion="3.10" date="2013-12-05" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>GNOME dokumentācijas projekts</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <desc>Iestatiet VPN savienojumu uz privātu tīklu cauri internetam.</desc>
@@ -35,14 +36,14 @@
  <p>Ja nav NetworkManager pakotnes, kas paredzēta jūsu VPN tipam, jums, iespējams, vajadzēs lejupielādēt un iestatīt kādu klienta programmu no kompānijas, kas nodrošina VPN programmatūru. Jums, iespējams, vajadzēs sekot vairākām dažādām instrukcijām, lai tas strādātu.</p>
 </note>
 
-<p>Kad tas ir paveikts, jūs varat veidot VPN savienojumu:</p>
+<p>Lai iestatītu VPN savienojumu:</p>
 
   <steps>
     <item>
-      <p>Atveriet <link xref="shell-terminology">aktivitāšu</link> pārskatu un sāciet rakstīt <gui>Tīkls</gui>.</p>
+      <p>Atveriet <gui xref="shell-introduction#activities">Aktivitāšu</gui> pārskatu un sāciet rakstīt <gui>Tīkls</gui>.</p>
     </item>
     <item>
-      <p>Spiediet <gui>Tīkls</gui>, lai atvērtu vadības centru.</p>
+      <p>Spiediet <gui>Tīkls</gui>, lai atvērtu paneli.</p>
     </item>
     <item>
       <p>At the bottom of the list on the left, click the <gui>+</gui> button
@@ -58,13 +59,23 @@
       <p>Aizpildiet informāciju par VPN, beigās spiediet <gui>Pievienot</gui>.</p>
     </item>
     <item>
-      <p>Kad esat beidzis VPN izveidi, spiediet uz sistēmas statusa laukuma augšējajā joslā, spiediet uz <gui>VPN</gui> un izvēlieties uz savienojumu, kuru jūs tikko izveidojāt. Jums visdrīzāk būs jāievada paroli, pirms varēs izveidot savienojumu. Kad savienojums ir izveidots, augšējā joslā redzēsiet ikonu, kas izskatās pēc slēdzenes.</p>
+      <p>When you have finished setting-up the VPN, open the
+      <gui xref="shell-introduction#yourname">system menu</gui> from the right side of
+      the top bar, click <gui>VPN off</gui> and select <gui>Connect</gui>. You
+      may need to enter a password for the connection before it is established.
+      Once the connection is made, you will see a lock shaped icon in the top
+      bar.</p>
     </item>
     <item>
-      <p>Cerams, jūs veiksmīgi savienosities ar VPN. Ja nē, varbūt vēlreiz ir nepieciešams pārbaudīt ievadītos VPN iestatījumus. Jūs to varat izdarīt no <gui>Tīkla</gui> paneļa, ko izmantojāt, lai izveidotu savienojumu, no saraksta izvēlieties VPN savienojumu, tad spiediet pogu paneļa apakšējā labējā stūrī.</p>
+      <p>Hopefully you will successfully connect to the VPN. If not, you may
+      need to double-check the VPN settings you entered. You can do this from
+      the <gui>Network</gui> panel that you used to create the connection.
+      Select the VPN connection from the list, then press the
+<media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media> button to review the settings.</p>
     </item>
     <item>
-      <p>Lai atvienotos no VPN, spiediet uz sistēmas statusa laukuma augšējajā joslā un spiediet <gui>Izslēgt</gui> zem sava VPN savienojuma nosaukuma.</p>
+      <p>To disconnect from the VPN, click the system menu on the top bar and
+      click <gui>Turn Off</gui> under the name of your VPN connection.</p>
     </item>
   </steps>
 

@@ -6,18 +6,19 @@
 
     <revision pkgversion="3.10.2" date="2013-11-03" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
-      <email its:translate="no">philbull@gmail.com</email>
+      <email>philbull@gmail.com</email>
     </credit>
     <credit type="author">
       <name>Jim Campbell</name>
-      <email its:translate="no">jcampbell@gnome.org</email>
+      <email>jcampbell@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Jana Svarova</name>
-      <email its:translate="no">jana.svarova@gmail.com</email>
+      <email>jana.svarova@gmail.com</email>
       <years>2013</years>
     </credit>
 
@@ -26,27 +27,39 @@
     <desc>Ακυρώστε μια εκκρεμή εργασία εκτύπωσης και αφαιρέστε την από την ουρά.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name> Δημήτρης Σπίγγος</mal:name>
-      <mal:email>dmtrs32@gmail.com</mal:email>
-      <mal:years>2012, 2013, 2014</mal:years>
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2016</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name> Φώτης Τσάμης</mal:name>
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Φώτης Τσάμης</mal:name>
       <mal:email>ftsamis@gmail.com</mal:email>
       <mal:years>2009</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name> Μάριος Ζηντίλης</mal:name>
+      <mal:name>Μάριος Ζηντίλης</mal:name>
       <mal:email>m.zindilis@dmajor.org</mal:email>
       <mal:years>2009, 2010</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name> Θάνος Τρυφωνίδης</mal:name>
-      <mal:email>tomtryf@gmail.com</mal:email>
-      <mal:years>2012</mal:years>
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gnome.org</mal:email>
+      <mal:years>2012-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
     </mal:credit>
   </info>
 
@@ -62,30 +75,25 @@
   <steps>
     <title>Για την ακύρωση μιας εργασίας εκτύπωσης:</title>
     <item>
-      <p>Ανοίξτε την επισκόπηση <gui xref="shell-terminology">Ενέργειες</gui> και αρχίστε να πληκτρολογείτε <gui>Εκτυπωτές</gui>.</p>
+      <p>Ανοίξτε την επισκόπηση <gui xref="shell-introduction#activities">Δραστηριότητες</gui> και αρχίστε να πληκτρολογείτε <gui>Εκτυπωτές</gui>.</p>
     </item>
     <item>
-      <p>Click on <gui>Printers</gui> to open the panel.</p>
+      <p>Κάντε κλικ στο <gui>Εκτυπωτές</gui> για να ανοίξετε τον πίνακα.</p>
     </item>
     <item>
-      <p>Πατήστε το κουμπί <gui>Εμφάνιση εργασιών</gui> στα δεξιά του διαλόγου <gui>Εκτυπωτές</gui>.</p>
+      <p>Κάντε κλικ στο κουμπί <gui>Εμφάνιση εργασιών</gui> στα δεξιά του διαλόγου <gui>Εκτυπωτές</gui>.</p>
     </item>
     <item>
-      <p>Cancel the print job by clicking the stop button.</p>
+      <p>Ακυρώστε την εργασία εκτύπωσης κάνοντας κλικ στο πλήκτρο διακοπής.</p>
     </item>
   </steps>
 
-  <p>If this does not cancel the print job like you expected, try holding down
-  the <em>cancel</em> button on your printer.</p>
+  <p>Αν αυτό δεν ακυρώνει την εργασία εκτύπωσης όπως περιμένετε, δοκιμάστε να κρατήσετε πατημένο το κουμπί <em>ακύρωση</em> στον εκτυπωτή σας.</p>
 
-  <p>As a last resort, especially if you have a big print job with a lot of
-  pages that will not cancel, remove the paper from the printer's paper input
-  tray. The printer should realize that there is no paper and will stop
-  printing. You can then try canceling the print job again, or try turning the
-  printer off and then on again.</p>
+  <p>Ως τελευταία λύση, ειδικά αν έχετε μια μεγάλη εργασία εκτύπωσης με πολλές σελίδες που δεν μπορεί να ακυρωθεί, αφαιρέστε το χαρτί από τον δίσκο εισόδου του εκτυπωτή. Ο εκτυπωτής πρέπει να καταλάβει ότι δεν υπάρχει χαρτί και θα σταματήσει την εκτύπωση. Μπορείτε έπειτα να δοκιμάσετε να ακυρώσετε την εργασία εκτύπωσης, ή να δοκιμάσετε να σβήσετε τον εκτυπωτή και να τον ξανανοίξετε.</p>
 
   <note style="warning">
-    <p>Προσέξτε να μην χαλάσετε τον εκτυπωτή όταν αφαιρείτε το χαρτί, όμως - εάν θα πρέπει να τραβήξετε έντονα το χαρτί για να το αφαιρέσετε, θα πρέπει προφανώς απλά να το αφήσετε όπου είναι.</p>
+    <p>Προσέξτε να μην χαλάσετε τον εκτυπωτή όταν αφαιρείτε το χαρτί. Εάν θα πρέπει να τραβήξετε έντονα το χαρτί για να το αφαιρέσετε, τότε θα πρέπει προφανώς απλά να το αφήσετε όπως είναι.</p>
   </note>
 
   </section>
@@ -93,17 +101,17 @@
   <section id="pause-release-print-job">
     <title>Ακύρωση και απελευθέρωση μιας εργασίας εκτύπωσης</title>
 
-  <p>Αν θέλετε να διακόψετε ή να ελευθερώσετε μια εργασία εκτύπωσης, μπορείτε να το κάνετε πηγαίνοντας στον διάλογο εργασιών και πατώντας το κατάλληλο κουμπί.</p>
+  <p>Αν θέλετε να διακόψετε ή να ελευθερώσετε μια εργασία εκτύπωσης, μπορείτε να το κάνετε πηγαίνοντας στον διάλογο εργασιών και κάνοντας κλικ στο κατάλληλο κουμπί.</p>
 
   <steps>
     <item>
-      <p>Ανοίξτε την επισκόπηση <gui xref="shell-terminology">Ενέργειες</gui> και αρχίστε να πληκτρολογείτε <gui>Εκτυπωτές</gui>.</p>
+      <p>Ανοίξτε την επισκόπηση <gui xref="shell-introduction#activities">Δραστηριότητες</gui> και αρχίστε να πληκτρολογείτε <gui>Εκτυπωτές</gui>.</p>
     </item>
     <item>
-      <p>Click on <gui>Printers</gui> to open the panel.</p>
+      <p>Κάντε κλικ στο <gui>Εκτυπωτές</gui> για να ανοίξετε τον πίνακα.</p>
     </item>
     <item>
-      <p>Πατήστε το κουμπί <gui>Εμφάνιση εργασιών</gui> στα δεξιά του διαλόγου <gui>Εκτυπωτές</gui> και είτε διακόψτε είτε ελευθερώστε την εργασία εκτύπωσης με βάση τις ανάγκες σας.</p>
+      <p>Κάντε κλικ στο κουμπί <gui>Εμφάνιση εργασιών</gui> στα δεξιά του διαλόγου <gui>Εκτυπωτές</gui> και είτε διακόψτε είτε ελευθερώστε την εργασία εκτύπωσης με βάση τις ανάγκες σας.</p>
     </item>
   </steps>
 

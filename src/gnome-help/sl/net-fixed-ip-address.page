@@ -6,10 +6,21 @@
     <link type="seealso" xref="net-findip"/>
 
     <revision pkgversion="3.4.0" date="2012-03-13" status="final"/>
+    <revision pkgversion="3.15" date="2014-12-04" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Jim Campbell</name>
-      <email its:translate="no">jwcampbell@gmail.com</email>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -23,25 +34,37 @@
 
   <steps>
     <item>
-      <p>Kliknite na <gui>ikono omrežje</gui> v <gui>vrhnji vrstici</gui> in izberite <gui>Nastavitve omrežja</gui>.</p>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Network</gui>.</p>
     </item>
     <item>
-      <p>Izberite omrežno povezavo s seznama (<gui>Žično</gui> ali <gui>Brezžično</gui>) in kliknite <gui>Nastavi</gui>.</p>
+      <p>Click on <gui>Network</gui> to open the panel.</p>
     </item>
     <item>
-      <p>Kliknite na zavihek <gui>Nastavitve IPv4</gui> in spremenite <gui>Način</gui> v <em>Ročno</em>.</p>
+      <p>In the left pane, select the network connection that you want to give
+      a fixed address. If you plug in to the network with a cable, click
+      <gui>Wired</gui>, then click the
+      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media> button in the lower right corner of
+      the panel. For a <gui>Wi-Fi</gui> connection, the 
+      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
+      button will be located next to the active network.</p>
     </item>
     <item>
-      <p>V primeru da na seznamu <gui>Naslovi</gui> ni podatkov o povezavi ali če želite vzpostaviti novo povezavo, kliknite <gui>Dodaj</gui>.</p>
+      <p>Click on the <gui>IPv4</gui> or <gui>IPv6</gui> tab
+      and change the <gui>Addresses</gui> to <em>Manual</em>.</p>
     </item>
     <item>
-      <p>Vnesite <em>Naslove IP</em>, <em>Omrežno masko</em> in podatke <em>Prehoda</em> v ustrezna polja. Izbira teh nastavitev je odvisna od nastavitev vašega omrežja. Obstajajo določena pravila, ki določajo kateri naslovi IP in omrežne maske so veljavne za dano omrežje.</p>
+      <p>Enter the <em>Address</em>, <em>Netmask</em>, and <em>Gateway</em>
+      information into the appropriate boxes. How you choose these will depend
+      on your network setup; there are specific rules governing which IP
+      addresses and netmasks are valid for a given network.</p>
     </item>
     <item>
       <p>Če je to potrebno, vnesite naslov <em>Strežnik imen domen</em> v polje <gui>Strežniki DNS</gui>. To je naslov IP strežnika, ki poišče imena domen. Večina podjetij in ponudnikov interneta ima namenske strežnike DNS.</p>
     </item>
     <item>
-      <p>Kliknite <gui>Shrani</gui>. Omrežna povezava bi sedaj morala imeti stalni naslov IP.</p>
+      <p>Click <gui>Apply</gui>. The network connection should now have a fixed
+      IP address.</p>
     </item>
   </steps>
 

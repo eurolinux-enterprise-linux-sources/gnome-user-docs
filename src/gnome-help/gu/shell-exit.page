@@ -2,9 +2,8 @@
 <page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="shell-exit" xml:lang="gu">
 
   <info>
-    <link type="guide" xref="shell-overview#desktop"/>
+    <link type="guide" xref="shell-overview"/>
     <link type="guide" xref="power"/>
-    <link type="seealso" xref="power-hibernate"/>
     <link type="guide" xref="index" group="#first"/>
 
     <revision pkgversion="3.6.0" date="2012-09-15" status="review"/>
@@ -13,19 +12,19 @@
 
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="author">
       <name>એન્ડ્રે ક્લેપર</name>
-      <email its:translate="no">ak-47@gmx.net</email>
+      <email>ak-47@gmx.net</email>
     </credit>
     <credit type="author">
       <name>એલેક્ઝાન્ડ્રે ફ્રેન્ક</name>
-      <email its:translate="no">afranke@gnome.org</email>
+      <email>afranke@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>ઍકાટેરીના ગેરાસીમોવા</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -45,7 +44,7 @@
   <p>તમારાં કમ્પ્યૂટરને બીજા વપરાશકર્તાઓને ઉપયોગ કરવા દેવા માટે, તમે ક્યાંતો બહાર નીકળી શકો છો, અથવા તમારી જાતને પ્રવેશીને છોડી દો અને ફક્ત વપરાશકર્તાઓને બદલો. જો તમે વપરાશકર્તાઓને બદલો તો, બધા તમારાં કાર્યક્રમોને ચાલવાનું ચાલુ રાખશે, અને બધુ ત્યાં હશે જ્યાં તમે તેને છોડ્યુ હતુ જ્યારે તમે પાછા પ્રવેશો.</p>
 
   <p>To <gui>Log Out</gui> or <gui>Switch User</gui>, click the
-  <link xref="shell-terminology">system menu</link> on the right side of the
+  <link xref="shell-introduction#yourname">system menu</link> on the right side of the
   top bar, click your name and then choose the right option.</p>
 
   <note if:test="!platform:gnome-classic">
@@ -81,7 +80,12 @@
 
   <title>સ્થગિત</title>
 
-  <p>પાવર સંગ્રહવા માટે, તમારાં કમ્પ્યૂટરને સ્થગિત કરો જ્યારે તમે તેને વાપરવાનું ન હોય તો. જો તમે લેપટોપને વાપરો તો, GNOME આપમેળે તમારાં કમ્પ્યૂટરને સ્થગિત કરે છે જ્યારે તમે ઢાંકણને બંધ કરો તો, આ તમારાં કમ્પ્યૂટરની મેમરીમાં તમારી સ્થિતિનો સંગ્રહ કરે છે અને મોટા ભાગનાં કાર્યોને બંધ કરે છે. થોડા પ્રમાણમાં પાવર એ હજુ સ્થગિત દરમ્યાન વાપરેલ છે.</p>
+  <p>To save power, suspend your computer when you are not using it. If you use
+  a laptop, GNOME, by default, suspends your computer automatically when you
+  close the lid.
+  This saves your state to your computer's memory and powers off most of the
+  computer's functions. A very small amount of power is still used during
+  suspend.</p>
 
   <p>To suspend your computer manually, click the system menu on the right side
   of the top bar and hold down the <key>Alt</key> key. The power off button

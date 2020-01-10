@@ -1,32 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="mouse-middleclick" xml:lang="ja">
 
-<info>
- <desc>マウスの中ボタンを使って、アプリケーションを開く、テキストを貼り付ける、タブを開く、などなどを行います。</desc>
+  <info>
+    <link type="guide" xref="tips"/>
+    <link type="guide" xref="mouse#tips"/>
 
- <link type="guide" xref="tips"/>
- <link type="guide" xref="mouse#tips"/>
+    <revision pkgversion="3.8" date="2013-03-13" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
- <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany.antopolski@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+      <years>2015</years>
+    </credit>
 
- <credit type="author">
-  <name>Tiffany Antopolski</name>
-  <email>tiffany.antopolski@gmail.com</email>
- </credit>
- <credit type="author">
-   <name>Shaun McCance</name>
-   <email>shaunm@gnome.org</email>
- </credit>
- <credit type="editor">
-   <name>Michael Hill</name>
-   <email>mdhillca@gmail.com</email>
- </credit>
- <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
+    <desc>Use the middle mouse button to open applications, open tabs and
+    more.</desc>
+  
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -75,12 +83,11 @@
 <p>多くのアプリケーションが、拡張的なショートカット機能を中クリックに当てています。</p>
 
 <list>
-  <item><p>よくあるショートカット機能のひとつが、選択テキストの貼り付けです (これは時に一時選択貼り付けと呼ばれることもあります)。対象のテキストを選択し、貼り付ける箇所に移動して中クリックします。選択したテキストが、マウスのある位置に貼り付けられます。</p>
-  <p>中ボタンで貼り付けるテキストは、通常のクリップボードとは完全に独立しています。選択したテキストがクリップボードにコピーされるわけではありません。この簡単な貼り付け方法は、中ボタンを使った場合だけ機能します。</p></item>
-
-  <item><p>スクロールバーやスライダーでは、その空き領域で通常のクリックを行うと、ある一定の量だけ (ページ単位など) クリックした方向へ移動します。また、空き領域を中クリックすると、ちょうどクリックした位置に移動することもできます。</p></item>
-
-  <item><p><gui>アクティビティ</gui>画面では、中クリックを使って、アプリケーションの新規ウィンドウを新しいワークスペースに開くことが簡単にできます。画面左のダッシュボードかアプリケーション一覧にある、アプリケーションのアイコンを中クリックするだけです。アプリケーション一覧は、ダッシュボートのグリッドボタンから開くことができます。</p></item>
+  <item><p>In the <gui>Activities</gui> overview, you can quickly open a new
+  window for an application in its own new workspace with middle-click. Simply
+  middle-click on the application's icon, either in the dash on the left, or in
+  the applications overview. The applications overview is displayed using the
+  grid button in the dash.</p></item>
 
   <item><p>たいていのウェブブラウザーでは、中クリックを使ってリンクをタブで開くことができます。ただリンクを中クリックするだけで、新しいタブでそのリンクを開きます。ただし、ウェブブラウザーの <app>Firefox</app> でリンクをクリックするときは注意してください。<app>Firefox</app> では、リンク以外の任意の箇所を中クリックすると、選択したテキストを URL として扱い、それをロードしようとします。選択テキストをロケーションバーに中クリックで貼り付け、<key>Enter</key> を押した場合と同じような挙動をします。</p></item>
 
@@ -88,4 +95,5 @@
 </list>
 
 <p>特殊なアプリケーションには、中ボタンに他の機能を割り当てているものもあります。アプリケーションのヘルプで、<em>中クリック (middle-click)</em> や、<em>中ボタン (middle mouse button)</em> などをキーに検索してください。</p>
+
 </page>

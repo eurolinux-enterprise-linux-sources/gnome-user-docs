@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="power-closelid" xml:lang="sr-Latn">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="power-closelid" xml:lang="sr-Latn">
 
   <info>
     <link type="guide" xref="power"/>
     <link type="seealso" xref="power-suspendfail"/>
+    <link type="seealso" xref="power-suspend"/>
 
     <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
     <revision pkgversion="3.10" date="2013-11-08" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Gnomov projekat dokumentacije</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="author editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -35,7 +41,14 @@
     <p>Ova uputstva će raditi samo ako koristite <app>systemd</app>. Obratite se vašoj distribuciji za više podataka.</p>
   </note>
 
-  <p>Ako ne želite da računar obustavi rad kada zatvorite poklopac, možete da izmenite podešavanja tog ponašanja. Morate imati <link xref="user-admin-change">administratorsku lozinku</link> da izmenite podešavanje.</p>
+  <note style="important">
+    <p>Treba da ste instalirali program <app>Alat za lickanje</app> na vašem računaru da biste mogli da izmenite ovo podešavanje.</p>
+    <if:if xmlns:if="http://projectmallard.org/if/1.0/" test="action:install">
+      <p><link style="button" action="install:gnome-tweak-tool">Instalirajte <app>Alat za lickanje</app></link></p>
+    </if:if>
+  </note>
+
+  <p>Ako ne želite da računar obustavi rad kada zatvorite poklopac, možete da izmenite podešavanje tog ponašanja.</p>
 
   <note style="warning">
     <p>Budite veoma pažljivi ako menjate ovo podešavanje. Neki prenosni računari mog da se pregreju ako su ostavljeni da rade sa spuštenim poklopcem, pogotovo ako su u zatvorenom prostoru kao što je ranac.</p>
@@ -43,27 +56,19 @@
 
   <steps>
     <item>
-      <p>Otvorite program <app>Terminal</app> iz pregleda <gui>Aktivnosti</gui>.</p>
+      <p>Otvorite pregled <gui xref="shell-introduction#activities">Aktivnosti</gui> i počnite da kucate <gui>Detalji</gui>.</p>
     </item>
     <item>
-      <p>Izvršite sledeću naredbu:</p>
-      <screen its:translate="no"><output style="prompt">$</output> <input>sudoedit /etc/systemd/logind.conf</input></screen>
+      <p>Pritisnite na <gui>Alat za lickanje</gui> da ga otvorite.</p>
     </item>
     <item>
-      <p>Sada ćete videti sadržaj datoteke. Potražite <code>HandleLidSwitch=</code> u datoteci. Red može biti pod navodnikom <code>#</code> na početku i može ga pratiti argument. Ako red već postoji, obrišite navodnik. U suprotnom, dodajte red.</p>
-      <code>
-[Login]
-HandleLidSwitch=<input>lock</input>
-      </code>
-      <p>Možete da koristite <input>lock</input> za zaključavanje ekrana, <input>ignore</input> za ništa, <input>poweroff</input> za gašenje računara ili <input>suspend</input> za obustavljanje rada. Za više podataka, pogledajte <link href="man:logind.conf">logind.conf help</link>.</p>
+      <p>Pritisnite na jezičak <gui>Napajanje</gui>.</p>
     </item>
     <item>
-      <p>Kada završite sa menjanjem datoteke, sačuvajte izmene i zatvorite uređivača.</p>
+      <p>Prebacite <gui>Ne obustavljaj pri spuštanju poklopca</gui> na <gui>UKLJ.</gui>.</p>
     </item>
     <item>
-      <p>Pokrenite sledeću naredbu da bi vaše izmene radile:</p>
-      <screen its:translate="no"><output style="prompt">$</output> <input>sudo systemctl restart systemd-logind.service</input></screen>
-      <p>Ako ne pokrenete ovu naredbu, izmene će raditi samo nakon ponovnog pokretanja računara.</p>
+      <p>Zatvorite prozor <gui>Alata za lickanje</gui>.</p>
     </item>
   </steps>
 

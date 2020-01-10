@@ -6,27 +6,33 @@
     <link type="guide" xref="sharing"/>
     <link type="seealso" xref="files-share"/>
 
-    <revision pkgversion="3.8.2" date="2013-05-16" status="review"/>
+    <revision pkgversion="3.8" date="2013-05-16" status="review"/>
     <revision pkgversion="3.10" date="2013-11-09" status="review"/>
     <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+    <revision pkgversion="3.13" date="2014-09-22" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Jim Campbell</name>
-      <email its:translate="no">jwcampbell@gmail.com</email>
+      <email>jwcampbell@gmail.com</email>
     </credit>
     <credit type="author">
       <name>Paul W. Frields</name>
-      <email its:translate="no">stickster@gmail.com</email>
+      <email>stickster@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
       <years>2014</years>
+    </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+      <years>2015</years>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -48,7 +54,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Christian Kirbach</mal:name>
       <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2014.</mal:years>
+      <mal:years>2011-2016.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -70,42 +76,32 @@
   <if:when test="platform:unity">
     <p>Sie können Dateien an andere verbundene Bluetooth-Geräte senden, zum Beispiel Mobiltelefone oder andere Rechner. Einige Gerätetypen ermöglichen keine Übertragungen von Dateien allgemein oder von bestimmten Dateitypen. Sie können Dateien auf drei verschiedene Arten übertragen: mit dem Bluetooth-Symbol in der Menüleiste, aus dem Bluetooth-Einstellungsfenster oder direkt über die Dateiverwaltung.</p>
   </if:when>
-  <p>You can send files to connected Bluetooth devices, such as some mobile
-  phones or other computers. Some types of devices do not allow the transfer
-  of files, or specific types of files. You can send files using the Bluetooth
-  settings window.</p>
+  <p>Sie können Dateien an verbundene Bluetooth-Geräte senden, zum Beispiel Mobiltelefone oder andere Rechner. Einige Gerätetypen ermöglichen keine Übertragungen von Dateien oder von bestimmten Dateitypen. Sie können Dateien mit dem Bluetooth-Einstellungsfenster verschicken.</p>
 </if:choose>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-terminology">Activities</gui> overview and
-      start typing <gui>Bluetooth</gui>.</p>
+      <p>Öffnen Sie die <gui xref="shell-introduction#activities">Aktivitäten</gui>-Übersicht und tippen Sie <gui>Bluetooth</gui> ein.</p>
     </item>
     <item>
-      <p>Click on <gui>Bluetooth</gui> to open the panel.</p>
+      <p>Klicken Sie auf <gui>Bluetooth</gui>, um das Panel zu öffnen.</p>
     </item>
     <item>
-      <p>Stellen Sie sicher, dass Bluetooth aktiviert ist: der Schalter in der Titelleiste muss auf auf <gui>An</gui> gestellt sein.</p>
+      <p>Stellen Sie sicher, dass Bluetooth aktiviert ist: der Schalter in der Titelleiste muss auf <gui>An</gui> gestellt sein.</p>
     </item>
     <item>
-      <p>In the <gui>Devices</gui> list, select the device to which to send the
-      files. If the desired device is not shown as <gui>Connected</gui> in the
-      list, you need to <link xref="bluetooth-connect-device">connect</link>
-      to it.</p>
+      <p>Wählen Sie das Zielgerät zum Senden der Dateien in der Liste <gui>Geräte</gui>. Wenn das gewünschte Gerät noch nicht in der Liste als <gui>verbunden</gui> angezeigt wird, müssen Sie eine <link xref="bluetooth-connect-device">Verbindung herstellen</link>.</p>
       <p>Ein an das externe Gerät angepasstes Panel erscheint.</p>
     </item>
     <item>
-      <p>Click <gui>Send Files…</gui> and the file chooser will appear.</p>
+      <p>Klicken Sie auf <gui>Dateien Senden …</gui>. Daraufhin erscheint das Dateiauswahlfenster.</p>
     </item>
     <item>
       <p>Wählen Sie die gewünschte Datei aus und klicken Sie auf <gui>Auswählen</gui>.</p>
       <p>Um mehr als eine Datei aus einem Ordner zu versenden, halten Sie beim Markieren der Dateien die <key>Strg</key>-Taste gedrückt.</p>
     </item>
     <item>
-      <p>The owner of the receiving device usually has to press a button to
-      accept the file. The <gui>Bluetooth File Transfer</gui> dialog will show
-      the progress bar. Click <gui>Close</gui> when the transfer is
-      complete.</p>
+      <p>Der Besitzer des empfangenden Gerätes muss üblicherweise eine Taste drücken, um eine Datei anzunehmen. Die Fortschrittsanzeige <gui>Bluetooth-Dateiübertragung</gui> wird daraufhin auf Ihrem Bildschirm angezeigt. Klicken Sie auf <gui>Schließen</gui>, sobald die Übertragung abgeschlossen ist.</p>
     </item>
   </steps>
 

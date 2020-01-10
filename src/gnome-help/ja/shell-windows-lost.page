@@ -23,7 +23,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -66,7 +66,7 @@
   <title>見失ったウィンドウを探しだす</title>
 
   <p>A window on a different workspace, or hidden behind another window, is
-  easily found using the <gui xref="shell-terminology">Activities</gui>
+  easily found using the <gui xref="shell-introduction#activities">Activities</gui>
   overview:</p>
 
   <list>
@@ -79,12 +79,11 @@
     </item>
     <item>
       <p>Click different workspaces in the
-      <link xref="shell-terminology">workspace selector</link> at the
+      <link xref="shell-workspaces">workspace selector</link> at the
       right-hand side of the screen to try to find your window, or</p>
     </item>
     <item>
-      <p>Right-click the application in the dash and its open windows will be
-      listed. Click the window in the list to switch to it.</p>
+      <p>ダッシュボードのアプリケーションを右クリックすると、そのアプリケーションが開いているウィンドウの一覧が表示されます。その一覧からお探しのウィンドウをクリックすると、そのウィンドウに切り替わります。</p>
     </item>
   </list>
 
@@ -94,15 +93,13 @@
     <item>
       <p>Press
       <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq>
-      to display the <link xref="shell-terminology">window switcher</link>.
+      to display the <link xref="shell-windows-switching">window switcher</link>.
       Continue to hold down the <key>Super</key> key and press <key>Tab</key>
       to cycle through the open windows, or
       <keyseq><key>Shift</key><key>Tab</key> </keyseq> to cycle backwards.</p>
     </item>
     <item if:test="!platform:gnome-classic">
-      <p>If an application has multiple open windows, hold down
-      <key>Super</key> and press <key>`</key> (or the key above <key>Tab</key>)
-      to step through them.</p>
+      <p>アプリケーションが複数のウィンドウを開いている場合、<key>Super</key> を押さえながら <key>`</key> キー (<key>Tab</key> の上のキー) を押すと、そのアプリケーション内でウィンドウが切り替わります。</p>
     </item>
   </list>
 

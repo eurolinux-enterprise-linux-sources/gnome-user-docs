@@ -10,135 +10,111 @@
 
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Type characters not found on your keyboard, including foreign alphabets, mathematical symbols, and dingbats.</desc>
+    <desc>Skriv tecken som inte finns på ditt tangentbord, inklusive främmande alfabeten, matematiska symboler och dingbats.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
   </info>
 
-  <title>Enter special characters</title>
+  <title>Mata in speciella tecken</title>
 
-  <p>You can enter and view thousands of characters from most of the world's
-  writing systems, even those not found on your keyboard. This page lists
-  some different ways you can enter special characters.</p>
+  <p>Du kan mata in och titta på tusentals tecken från de flesta av världens skriftsystem, till och med de som inte finns på ditt tangentbord. Denna sida listar några olika sätt på vilka du kan mata in specialtecken.</p>
 
   <links type="section">
-    <title>Methods to enter characters</title>
+    <title>Metoder att mata in tecken</title>
   </links>
 
   <section id="charmap">
-    <title>Character map</title>
-    <p>GNOME comes with a character map application that allows you to browse
-    all the characters in Unicode. Use the character map to find the character
-    you want, and then copy and paste it to wherever you need it.</p>
+    <title>Teckentabell</title>
+    <p>GNOME erbjuder ett teckentabellsprogram som låter dig bläddra genom alla tecken i Unicode. Använd teckentabellen för att hitta tecknet du önskar och kopiera och klistra sedan in det där du behöver det.</p>
 
-    <p>You can find <app>Character Map</app> in the <gui>Activities</gui>
-    overview. For more information on the character map, see the
-    <link href="help:gucharmap">Character Map Manual</link>.</p>
+    <p>Du kan hitta <app>Teckentabell</app> i översiktsvyn <gui>Aktiviteter</gui>. För mer information om teckentabellen, se <link href="help:gucharmap">manualen för Teckentabell</link>.</p>
+
+  </section>
+
+  <section id="characters">
+    <title>Tecken</title>
+    <p>Ett annat användbart program som följer med GNOME är <app>Tecken</app>. Det låter dig söka efter och infoga ovanliga tecken genom att bläddra genom teckenkategorier eller leta efter nyckelord.</p>
+
+    <p>Du kan starta <app>Tecken</app> i översiktsvyn <gui>Aktiviteter</gui>. För mer information om Tecken, se <link href="help:gnome-characters">handboken för Tecken</link>.</p>
 
   </section>
 
   <section id="compose">
     <title>Compose-tangent</title>
-    <p>A compose key is a special key that allows you to press multiple keys
-    in a row to get a special character. For example, to type the accented
-    letter <em>é</em>, you can press <key>compose</key> then <key>'</key>
-    then <key>e</key>.</p>
-    <p>Keyboards don't have specific compose keys. Instead, you can define
-    one of the existing keys on your keyboard as a compose key.</p>
+    <p>En Compose-tangent är en speciell tangent som låter dig trycka ner flera tangenter i rad för att få ett specialtecken. För att till exempel skriva det apostroferade tecknet <em>é</em> kan du trycka på <key>compose</key> och sedan <key>'</key> och sedan <key>e</key>.</p>
+    <p>Tangentbord har inte specifika compose-tangenter. Istället kan du definiera en av de existerande tangenterna på ditt tangentbord som en compose-tangent.</p>
 
     <steps>
-      <title>Define a compose key</title>
+      <title>Definiera en compose-tangent</title>
       <item>
-        <p>Open the <gui xref="shell-terminology">Activities</gui> overview and
-        start typing <gui>Keyboard</gui>.</p>
+        <p>Öppna översiktsvyn <gui xref="shell-introduction#activities">Aktiviteter</gui> och börja skriv <gui>Tangentbord</gui>.</p>
       </item>
       <item>
-        <p>Click on <gui>Keyboard</gui> to open the panel.</p>
+        <p>Klicka på <gui>Tangentbord</gui> för att öppna panelen.</p>
       </item>
-      <item><p>Select the <gui>Shortcuts</gui> tab and click
-      <gui>Typing</gui>.</p></item>
-      <item><p>Click on <gui>Compose Key</gui> in the right pane.</p></item>
-      <item><p>Click on <gui>Disabled</gui> and select the key you would like to
-      behave as a compose key from the drop-down menu. You can choose either of
-      the <key>Ctrl</key> keys, the right <key>Alt</key> key, the right
-      <key>Win</key> or <key xref="keyboard-key-super">Super</key> key if
-      you have one, the <key xref="keyboard-key-menu">Menu</key> key or
-      <key>Caps Lock</key>. Any key you select will then only work as a compose
-      key, and will no longer work for its original purpose.</p></item>
+      <item><p>Välj fliken <gui>Genvägar</gui> och klicka på <gui>Skriva</gui>.</p></item>
+      <item><p>Klicka på <gui>Compose-tangenten</gui> i den högra panelen.</p></item>
+      <item><p>Klicka på <gui>Inaktiverad</gui> och välj tangenten som du vill ska bete sig som en compose-tangent från rullgardinsmenyn. Du kan välja endera av <key>Ctrl</key>-tangenterna, den högra <key>Alt</key>-tangenten, den högra <key>Win</key>-tangenten eller <key xref="keyboard-key-super">Super</key>-tangenten om du har en, <key xref="keyboard-key-menu">Meny</key>-tangenten eller <key>Caps Lock</key>. Tangenten du väljer kommer därefter att fungera som en compose-tangent och inte längre för sitt tidigare ändamål.</p></item>
     </steps>
-    <p>You can type many common characters using the compose key, for
-    example:</p>
+    <p>Du kan mata in många vanliga tecken genom att använda compose-tangenten, till exempel:</p>
     <list>
-      <item><p>Press <key>compose</key> then <key>'</key> then a letter to
-      place an acute accent over that letter, such as <em>é</em>.</p></item>
-      <item><p>Press <key>compose</key> then <key>`</key> (back tick) then a
-      letter to place a grave accent over that letter, such as
-      <em>è</em>.</p></item>
-      <item><p>Press <key>compose</key> then <key>"</key> then a letter to
-      place an umlaut over that letter, such as <em>ë</em>.</p></item>
-      <item><p>Press <key>compose</key> then <key>-</key> then a letter to
-      place a macron over that letter, such as <em>ē</em>.</p></item>
+      <item><p>Tryck <key>compose</key> sedan <key>'</key> och sedan ett tecken för att placera en akut accent ovanför det tecknet, som till exempel <em>é</em>.</p></item>
+      <item><p>Tryck <key>compose</key> sedan <key>`</key> och sedan ett tecken för att placera en grav accent ovanför det tecknet, som till exempel <em>è</em>.</p></item>
+      <item><p>Tryck <key>compose</key> sedan <key>"</key> och sedan ett tecken för att placera ett trema ovanför det tecknet, som till exempel <em>ë</em>.</p></item>
+      <item><p>Tryck <key>compose</key> sedan <key>-</key> och sedan ett tecken för att placera ett makron ovanför det tecknet, som till exempel <em>ē</em>.</p></item>
     </list>
-    <p>For more compose key sequences, see <link href="http://en.wikipedia.org/wiki/Compose_key#Common_compose_combinations">the
-    compose key page on Wikipedia</link>.</p>
+    <p>För ytterligare compose-tangentsekvenser se <link href="http://en.wikipedia.org/wiki/Compose_key#Common_compose_combinations">compose-tangentsidan på Wikipedia</link>.</p>
   </section>
 
 <section id="ctrlshiftu">
   <title>Kodpunkter</title>
 
-  <p>You can enter any Unicode character using only your keyboard with the
-  numeric code point of the character. Every character is identified by a
-  four-character code point. To find the code point for a character, find the
-  character in the character map application and look in the status bar or the
-  <gui>Character Details</gui> tab. The code point is the four characters after
-  <gui>U+</gui>.</p>
+  <p>Du kan mata in vilket Unicode-tecken som helst genom att använd bara ditt tangentbord med tecknets numeriska kodpunkt. Varje tecken identifieras med en fyra-teckens kodpunkt. För att hitta kodpunkten för ett tecken, hitta tecknet i teckentabellprogrammet och titta i statusraden eller fliken <gui>Teckendetaljer</gui>. Kodpunkten är de fyra tecknen efter <gui>U+</gui>.</p>
 
-  <p>To enter a character by its code point, hold down <key>Ctrl</key> and
-  <key>Shift</key>, type <key>U</key> followed by the four-character code
-  point, then release <key>Ctrl</key> and <key>Shift</key>. If you often use
-  characters that you can't easily access with other methods, you might find
-  it useful to memorize the code point for those characters so you can enter
-  them quickly.</p>
+  <p>För att mata in ett tecken via dess kodpunkt, håll ner <key>Ctrl</key> och <key>Skift</key> och skriv <key>U</key> följt av den fyra tecken långa kodpunkten, och släpp sedan <key>Ctrl</key> och <key>Skift</key>. Om du ofta använder tecken som du inte kan nå enkelt med andra metoder kan det vara värdefullt att memorera kodpunkterna för de tecknen så att du kan mata in dem snabbt.</p>
 
 </section>
 
   <section id="layout">
     <title>Tangentbordslayouter</title>
-    <p>You can make your keyboard behave like the keyboard for another language,
-    regardless of the letters printed on the keys. You can even easily switch
-    between different keyboard layouts using an icon in the top bar. To learn
-    how, see <link xref="keyboard-layouts"/>.</p>
+    <p>Du kan få ditt tangentbord att bete sig som ett tangentbord för ett annat språk, oavsett vilka tecken som finns tryckta på tangenterna. Du kan till och med enkelt byta mellan olika tangentbordslayouter via en ikon på systemraden. För att lära dig hur, se <link xref="keyboard-layouts"/>.</p>
   </section>
 
 <section id="im">
-  <title>Input methods</title>
+  <title>Inmatningsmetoder</title>
 
-  <p>An Input Method expands the previous methods by allowing to enter
-  characters not only with keyboard but also any input devices. For instance
-  you could enter characters with a mouse using a gesture method, or enter
-  Japanese characters using a Latin keyboard.</p>
+  <p>En inmatningsmetod expanderar de föregående metoderna genom att tillåta inmatning av tecken inte enbart med tangentbordet utan också andra inmatningsenheter. Du kan till exempel mata in tecken med en mus via en gestmetod eller mata in japanska tecken via ett latinskt tangentbord.</p>
 
-  <p>To choose an input method, right-click over a text widget, and in the menu
-  <gui>Input Method</gui>, choose an input method you want to use. There is no
-  default input method provided, so refer to the input methods documentation to
-  see how to use them.</p>
+  <p>För att välja en inmatningsmetod, högerklicka på textkomponenten och i menyn <gui>Inmatningsmetod</gui> välj inmatningsmetoden du vill använda. Det finns ingen standardinmatningsmetod så läs i dokumentationen för inmatningsmetoder om hur de används.</p>
 
 </section>
 

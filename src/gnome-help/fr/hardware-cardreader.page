@@ -31,7 +31,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2014</mal:years>
+      <mal:years>2011-2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -63,6 +63,12 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
 <title>Problèmes de lecteurs de cartes de données</title>
@@ -76,20 +82,15 @@
 
 <item>
   <p>Open <app>Files</app> from the
-  <gui xref="shell-terminology">Activities</gui> overview. Does the inserted
+  <gui xref="shell-introduction#activities">Activities</gui> overview. Does the inserted
   card appear in the <gui>Devices</gui> list in the left sidebar? Sometimes the
   card appears in this list but is not mounted; click it once to mount. (If the
-  sidebar is not visible, press <key>F9</key> or click the
-  <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">View options</span></media></gui>
-  button in the toolbar and choose <gui>Show Sidebar</gui>.)</p>
+  sidebar is not visible, press <key>F9</key> or click <gui style="menu">Files</gui> in
+  the top bar and select the <gui style="menuitem">Sidebar</gui>.)</p>
 </item>
 
 <item>
-  <p>If your card does not show up in the sidebar, press
-  <keyseq><key>Ctrl</key><key>L</key></keyseq>, then type
-  <input>computer:///</input> and press <key>Enter</key>. If your card reader
-  is correctly configured, the reader should come up as a drive when no card is
-  present, and the card itself when the card has been mounted.</p>
+  <p>Si votre carte ne s'affiche pas dans le panneau latéral, appuyez sur <keyseq><key>Ctrl</key><key>L</key></keyseq>, saisissez <input>computer:///</input> et faites <key>Entrée</key>. Si votre lecteur de carte est correctement configuré, il doit y apparaître soit sous forme d'un lecteur vide, soit sous forme de la carte elle-même si elle est montée.</p>
 </item>
 
 <item>
@@ -97,12 +98,6 @@
 </item>
 </steps>
 
-<p>If no cards or drives are shown when browsing the <gui>Computer</gui>
-location, it is possible that your card reader does not work with Linux due to
-driver issues. If your card reader is internal (inside the computer instead of
-sitting outside) this is more likely. The best solution is to directly connect
-your device (camera, cell phone, etc.) to a USB port on the computer. USB
-external card readers are also available, and are far better supported by
-Linux.</p>
+<p>S'il n'y a ni lecteur ni carte affiché dans le dossier <gui>Poste de travail</gui>, il se peut que votre lecteur de carte ne fonctionne pas avec Linux à cause d'un problème de pilote. S'il s'agit d'un lecteur de carte interne (à l'intérieur de votre ordinateur et non externe), c'est sans doute l'origine du problème. La meilleure solution est de connecter directement votre périphérique (appareil photo, téléphone cellulaire, etc.) à un port USB de votre ordinateur. Il y a aussi des lecteurs de cartes USB externes qui sont beaucoup mieux pris en charge par Linux.</p>
 
 </page>

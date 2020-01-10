@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="privacy-history-recent-off" xml:lang="fr">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="privacy-history-recent-off" xml:lang="fr">
 
   <info>
     <link type="guide" xref="privacy"/>
+    <link type="guide" xref="files#more-file-tasks"/>
 
     <revision pkgversion="3.8" date="2013-03-11" status="final"/>
     <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-30" status="final"/>
 
     <credit type="author">
       <name>Jim Campbell</name>
-      <email its:translate="no">jwcampbell@gmail.com</email>
+      <email>jwcampbell@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <desc>Empêcher ou limiter l'ordinateur dans le traçage des fichiers récemment utilisés.</desc>
   
@@ -34,7 +38,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2014</mal:years>
+      <mal:years>2011-2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -66,16 +70,26 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
   <title>Arrêt ou limitation du suivi de l'historique des fichiers</title>
   
-  <p>Garder la trace des fichiers récemment utilisés peut vous faciliter la tâche de recherche des documents sur lesquels vous avez travaillé, mais vous préférez peut-être que cela ne soit pas public.</p>
+  <p>Tracking recently used files and folders makes it easier to find
+  items that you have been working on in the file manager and in file
+  dialogs in applications. You may wish to keep your file usage history
+  private instead, or only track your very recent history.</p>
 
   <steps>
-    <title>Pour arrêter le suivi de l'historique des fichiers sur votre ordinateur :</title>
+    <title>Turn off file history tracking</title>
     <item>
-      <p>Ouvrez la vue d'ensemble des <gui xref="shell-terminology">Activités</gui> et commencez à saisir <gui>Confidentialité</gui>.</p>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Privacy</gui>.</p>
     </item>
     <item>
       <p>Cliquez sur <gui>Confidentialité</gui> pour ouvrir le panneau.</p>
@@ -95,9 +109,10 @@
   <note><p>Ce réglage n'affecte pas votre navigateur Internet en ce qui concerne le stockage des informations sur les sites que vous visitez.</p></note>
 
   <steps>
-    <title>Pour limiter le temps de stockage de l'historique de vos fichiers :</title>
+    <title>Restrict the amount of time your file history is tracked</title>
     <item>
-      <p>Ouvrez la vue d'ensemble des <gui xref="shell-terminology">Activités</gui> et commencez à saisir <gui>Confidentialité</gui>.</p>
+      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
+      start typing <gui>Privacy</gui>.</p>
     </item>
     <item>
       <p>Cliquez sur <gui>Confidentialité</gui> pour ouvrir le panneau.</p>

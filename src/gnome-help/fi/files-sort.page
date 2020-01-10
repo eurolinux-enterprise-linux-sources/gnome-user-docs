@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-sort" xml:lang="fi">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-sort" xml:lang="fi">
 
   <info>
-    <link type="guide" xref="files"/>
+    <link type="guide" xref="files#common-file-tasks"/>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-25" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -33,7 +34,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Jiri Grönroos</mal:name>
       <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
-      <mal:years>2012, 2013.</mal:years>
+      <mal:years>2012-2016.</mal:years>
     </mal:credit>
   </info>
 
@@ -51,10 +52,10 @@ toolbar.</p>
 <section id="icon-view">
   <title>Kuvakenäkymä</title>
 
-  <p>To sort files in a different order, click the
-  <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">View options</span></media></gui>
-  button in the toolbar and choose <gui>By Name</gui>, <gui>By Size</gui>,
-  <gui>By Type</gui>, <gui>By Modification Date</gui>, or <gui>By Access
+  <p>To sort files in a different order, click the view options button in the
+  <!-- FIXME: Get a tooltip added for "View options" -->
+  toolbar and choose <gui>By Name</gui>, <gui>By Size</gui>, <gui>By
+  Type</gui>, <gui>By Modification Date</gui>, or <gui>By Access
   Date</gui>.</p>
 
   <p>As an example, if you select <gui>By Name</gui>, the files will be sorted
@@ -71,11 +72,11 @@ toolbar.</p>
 
   <p>Järjestä tiedostot eri järjestykseen napsauttamalla sarakkeen otsikkoa tiedostohallinnan luettelonäkymässä. Esimerkiksi napsauttamalla <gui>Tyyppi</gui>-otsikkoa tiedostot järjestetään tiedostotyypin mukaan. Napsauttamalla uudelleen sarakkeen otsikkoa muuttuu järjestys vastakkaiseksi.</p>
   <p>In list view, you can show columns with more attributes and sort on those
-  columns. Click the
-  <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">View options</span></media></gui>
-  button in the toolbar, pick <gui>Visible Columns</gui> and select the columns
-  that you want to be visible. You will then be able to sort by those columns.
-  See <link xref="nautilus-list"/> for descriptions of available columns.</p>
+  columns. Click the view options button in the toolbar, pick <gui>Visible
+  <!-- FIXME: Get a tooltip added for "View options" -->
+  Columns…</gui> and select the columns that you want to be visible. You will
+  then be able to sort by those columns. See <link xref="nautilus-list"/> for
+  descriptions of available columns.</p>
 
 </section>
 
@@ -84,25 +85,20 @@ toolbar.</p>
 
   <terms>
     <item>
-      <title>Nimen mukaan</title>
+      <title>Nimi</title>
       <p>Aakkosellinen järjestys tiedoston nimen mukaan.</p>
     </item>
     <item>
-      <title>Koon mukaan</title>
+      <title>Koko</title>
       <p>Tiedoston koon mukainen järjestys (kuinka paljon tilaa tiedosto vie kiintolevyltä). Oletuksena nouseva järjestys.</p>
     </item>
     <item>
-      <title>Tyypin mukaan</title>
+      <title>Tyyppi</title>
       <p>Aakkostaa tiedostotyypin mukaan. Samaa tyyppiä olevat tiedostot ryhmitellään nimen mukaan aakkosjärjestykseen.</p>
     </item>
     <item>
-      <title>Muokkauspäivämäärän mukaan</title>
+      <title>Viimeksi muokattu</title>
       <p>Järjestää tiedostot viimeisen muokkausajankohdan mukaan, oletuksena laskeva järjestys.</p>
-    </item>
-    <item>
-      <title>By Access Date</title>
-      <p>Sorts by the date and time that a file was last read. Sorts from
-      oldest to newest by default.</p>
     </item>
   </terms>
 

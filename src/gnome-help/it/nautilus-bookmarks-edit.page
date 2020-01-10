@@ -5,8 +5,7 @@
     <link type="guide" xref="files#faq"/>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-30" status="review"/>
-
-    <desc>Aggiungere, rimuovere e modificare segnalibri nel gestore di file.</desc>
+    <revision pkgversion="3.18" date="2015-09-29" status="review"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -16,7 +15,15 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Aggiungere, rimuovere e modificare segnalibri nel gestore di file.</desc>
+
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Luca Ferretti</mal:name>
@@ -31,35 +38,41 @@
     </mal:credit>
   </info>
 
-<title>Modificare i segnalibri delle cartelle</title>
-<p>Your bookmarks are listed in the sidebar of the file manager.</p>
+  <title>Modificare i segnalibri delle cartelle</title>
 
-    <steps>
-    <title>Aggiungere un segnalibro</title>
-    <item><p>Aprire la cartella (o il percorso) da aggiungere ai segnalibri.</p></item>
-    <item><p>Click the gear button in the toolbar and pick
-    <gui>Bookmark this Location</gui>.</p></item>
-    </steps>
+  <p>Your bookmarks are listed in the sidebar of the file manager.</p>
 
   <steps>
-  <title>Eliminare un segnalibro</title>
-   <item><p>Click on <gui>Files</gui> in the top bar and pick <gui>Bookmarks</gui>
-   from the app menu. </p></item>
-   <item><p>In the <gui>Bookmarks</gui> window, select the bookmark you wish to
-   delete and click the <gui>-</gui> button.</p></item>
+    <title>Aggiungere un segnalibro</title>
+    <item>
+      <p>Aprire la cartella (o il percorso) da aggiungere ai segnalibri.</p>
+    </item>
+    <item>
+      <p>Click the window menu in the toolbar and pick <gui>Bookmark this
+      Location</gui>.</p>
+    </item>
   </steps>
 
-    <steps>
+  <steps>
+    <title>Eliminare un segnalibro</title>
+    <item>
+      <p>Right-click on the bookmark in the sidebar and select
+      <gui>Remove</gui> from the menu.</p>
+    </item>
+  </steps>
+
+  <steps>
     <title>Rinominare un segnalibro</title>
-    <item><p>Click on <gui>Files</gui> in the top bar and pick <gui>Bookmarks</gui>
-     from the app menu.</p></item>
-    <item><p>In the <gui>Bookmarks</gui> window, select the bookmark you wish to
-    rename.</p></item>
-    <item><p>Nel campo di testo <gui>Nome</gui>, digitare il nuovo nome per il segnalibro. recuperare l'elemento cancellato</p>
-    <note>
-     <p>Rinominare un segnalibro non comporta la rinomina della cartella. Se sono presenti segnalibri relativi a due cartelle differenti, in due percorsi diversi, ma che presentano lo stesso nome, non sarà possibile distinguerli. In questi casi è utile dare ai segnalibri nomi diversi rispetto al nome delle cartelle a cui fanno riferimento.</p>
-    </note>
-</item>
-    </steps>
+    <item>
+      <p>Right-click on the bookmark in the sidebar and select
+      <gui>Rename…</gui>.</p>
+    </item>
+    <item>
+      <p>Nel campo di testo <gui>Nome</gui>, digitare il nuovo nome per il segnalibro. recuperare l'elemento cancellato</p>
+      <note>
+        <p>Rinominare un segnalibro non comporta la rinomina della cartella. Se sono presenti segnalibri relativi a due cartelle differenti, in due percorsi diversi, ma che presentano lo stesso nome, non sarà possibile distinguerli. In questi casi è utile dare ai segnalibri nomi diversi rispetto al nome delle cartelle a cui fanno riferimento.</p>
+      </note>
+    </item>
+  </steps>
 
 </page>

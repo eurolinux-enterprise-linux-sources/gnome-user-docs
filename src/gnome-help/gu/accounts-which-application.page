@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="accounts-which-application" xml:lang="gu">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="accounts-which-application" xml:lang="gu">
 
   <info>
     <link type="guide" xref="accounts"/>
@@ -7,73 +7,106 @@
 
     <revision pkgversion="3.8.2" date="2013-05-22" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="incomplete"/>
 
     <credit type="author copyright">
       <name>બાપટીસ્ટે મીલ્લે-મૅથીયાસ</name>
-      <email its:translate="no">baptistem@gnome.org</email>
+      <email>baptistem@gnome.org</email>
       <years>2012, 2013</years>
     </credit>
     <credit type="editor">
       <name>માઇકલ હીલ</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>એન્ડ્રે ક્લેપર</name>
-      <email its:translate="no">ak-47@gmx.net</email>
+      <email>ak-47@gmx.net</email>
     </credit>
 
     <desc>કાર્યક્રમો <app>ઓનલાઇન ખાતા</app> માં બનાવેલ ખાતાને વાપરી શકે છે અને સેવાઓ કે તેઓ બગાડે છે.</desc>
 
   </info>
 
-<title>ક્યાં કાર્યક્રમોને ઓનલાઇન ખાતાનો ફાયદો લે છે?</title>
+  <title>Online services and applications</title>
 
-  <p>તેઓને આપમેળે રૂપરેખાંકિત કરવા માટે બહારનાં કાર્યક્રમો દ્દારા <app>ઓનલાઇન ખાતા</app> ને વાપરી શકાય છે.</p>
+  <p>Once you have added an online account, any application can use that
+  account for any of the available services that you have not
+  <link xref="accounts-disable-service">disabled</link>. Different
+  providers provide different services. This page lists the different
+  services and some of the applications that are known to use them.</p>
 
-<section id="accounts-google-services">
-  <title>Google ખાતા સાથે</title>
-
-  <list>
+  <terms>
     <item>
-      <p><app>ઇવોલ્યુશન</app>, ઇમેઇલ કાર્યક્રમ. તમારું ઇમેઇલ ખાતુ એ આપમેળે <app>ઇવોલ્યુશન</app> માં ઉમેરાશે, તેથી તે તમારા મેઇલને પ્રાપ્ત કરશે, તમારા ખાતાને તમારો પ્રવેશ આપો, તમારાં Google એજન્ડમાં તમારી કેલેન્ડર વસ્તુઓને દર્શાવો.</p>
+      <title>Calendar</title>
+      <p>The Calendar service allows you to view, add, and edit events in
+      an online calendar. It is used by applications like <app>Calendar</app>,
+      <app>Evolution</app>, and <app>California</app>.</p>
     </item>
+
     <item>
-      <p><app>Empathy</app>, ઇન્સ્ટન્ટ મેસેજીંગ કાર્યક્રમ. તમારું ઓનલાઇન ખાતુ એ ઉમેરાશે અને તમે તમારા મિત્રો સાથે વાર્તાલાપ કરવા માટે સક્ષમ હશો.</p>
+      <title>Chat</title>
+      <p>The Chat service allows you to chat with your contacts on popular
+      instant messaging platforms. It is used by the <app>Empathy</app>
+      application.</p>
     </item>
+
     <item>
-      <p><app>સંપર્કો</app>, કે જે તમારા ખાતામાં ફેરફાર અને જોવા માટે પરવાનગી આપશે.</p>
+      <title>સંપર્કો</title>
+      <p>The Contacts service allows you to see the published details of your
+      contacts on various services. It is used by applications like
+      <app>Contacts</app> and <app>Evolution</app>.</p>
     </item>
+
     <item>
-      <p><app>દસ્તાવેજો</app> તમારી ઓનલાઇન દસ્તાવેજોને વાપરી શકે છે અને તેઓને દર્શાવો.</p>
+      <title>Documents</title>
+      <p>The Documents service allows you to view your online documents
+      such as those in Google docs. You can view your documents using the
+      <app>Documents</app> application.</p>
     </item>
-  </list>
-</section>
 
-<section id="accounts-windows-services">
-  <title>Windows Live, Facebook અથવા Twitter ખાતાઓ સાથે</title>
+    <item>
+      <title>ફાઇલો</title>
+      <p>The Files service adds a remote file location, as if you had added
+      one using the <link xref="nautilus-connect">Connect to Server</link>
+      functionality in the file manager. You can access remote files using
+      the file manager, as well as through file open and save dialogs in any
+      application.</p>
+    </item>
 
-  <p><app>Empathy</app> એ તમારા સંપર્કો, મિત્રો, અને અનુયાયીઓ સાથે તમને ઓનલાઇન અને વાર્તાલાપ કરવા માટે આ ખાતાને વાપરી શકે છે.</p>
-</section>
+    <item>
+      <title>મેઈલ</title>
+      <p>The Mail service allows you to send and receive email through an
+      email provider like Google. It is used by <app>Evolution</app>.</p>
+    </item>
 
-<section id="account-windows-skydrive">
-  <title>With a OneDrive account</title>
+<!-- TODO: Not sure what this does. Doesn't seem to do anything in Maps app.
+    <item>
+      <title>Maps</title>
+    </item>
+-->
 
-  <p><app>Documents</app> can access your online documents in Microsoft
-  OneDrive and display them.</p>
-</section>
+    <item>
+      <title>Photos</title>
+      <p>The Photos service allows you to view your online photos such as
+      those you post on Facebook. You can view your photos using the
+      <app>Photos</app> application.</p>
+    </item>
 
-<section id="account-exchange">
-  <title>Exchange ખાતા સાથે</title>
+    <item>
+      <title>Printers</title>
+      <p>The Printers service allows you to send a PDF copy to a provider from
+      within the print dialog of any application. The provider might provide
+      print services, or it might just serve as storage for the PDF, which
+      you can download and print later.</p>
+    </item>
 
-  <p>એકવાર તમે ઍક્સચેન્જ ખાતાને બનાવેલ હોય, <app>Evolution</app> આ ખાતામાંથી મેઇલને પ્રાપ્ત કરવાનું શરૂ કરશે.</p>
-</section>
+    <item>
+      <title>Read Later</title>
+      <p>The Read Later service allows you to save a web page to external
+      services so that you can read it later on another device. No applications
+      currently use this service.</p>
+    </item>
 
-<section id="accounts-ownCloud">
-  <title>ownCloud ખાતા સાથે</title>
-
-  <p>જ્યારે ownCloud ખાતુ સુયોજિત હોય તો, <app>ઇવોલ્યુશન</app> એ સંપર્કો અને કેલેન્ડર મંત્રણાને વાપરવા માટે સક્ષમ છે.</p>
-
-  <p><app>ફાઇલો</app> અને બીજા કાર્યક્રમો યાદી માટે સક્ષમ હશે અને ownCloud સ્થાપનમાં સંગ્રહેલ બીજા ઓનલાઇન ખાતાને વાપરો.</p>
-</section>
+  </terms>
 
 </page>

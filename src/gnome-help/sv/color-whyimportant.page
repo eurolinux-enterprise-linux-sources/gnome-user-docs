@@ -3,7 +3,7 @@
 
   <info>
     <link type="guide" xref="color"/>
-    <desc>Color management is important for designers, photographers and artists.</desc>
+    <desc>Färghantering är viktigt för designers, fotografer och konstnärer.</desc>
 
     <credit type="author">
       <name>Richard Hughes</name>
@@ -16,89 +16,53 @@
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
   </info>
 
-  <title>Why is color management important?</title>
-  <p>
-    Color management is the process of capturing a color using an input
-    device, displaying it on a screen, and printing it all whilst managing
-    the exact colors and the range of colors on each medium.
-  </p>
+  <title>Varför är färghantering viktigt?</title>
+  <p>Färghantering är processen där en färg uppfattas av en indataenhet, visas på skärmen, och skrivs ut medan varje mediums exakta färger och färgintervall kontrolleras.</p>
 
-  <p>
-    The need for color management is probably explained best with a
-    photograph of a bird on a frosty day in winter.
-  </p>
+  <p>Behovet av färghantering förklaras troligtvis bäst med ett fotografi av en fågel under en frostig vinterdag.</p>
 
   <figure>
-    <desc>A bird on a frosty wall as seen on the camera view-finder</desc>
+    <desc>En fågel på en frostbiten mur, sett genom kamerans objektiv</desc>
     <media its:translate="no" type="image" mime="image/png" src="figures/color-camera.png"/>
   </figure>
 
-  <p>
-    Displays typically over-saturate the blue channel, making the images
-    look cold.
-  </p>
+  <p>Skärmar övermättar vanligtvis den blå kanalen, vilket får bilderna att se kalla ut.</p>
 
   <figure>
-    <desc>This is what the user sees on a typical business laptop screen</desc>
+    <desc>Detta är vad användaren ser på skärmen på en vanlig bärbar dator</desc>
     <media its:translate="no" type="image" mime="image/png" src="figures/color-display.png"/>
   </figure>
 
-  <p>
-    Notice how the white is not 'paper white' and the black of the eye
-    is now a muddy brown.
-  </p>
+  <p>Observera hur det vita inte är ”pappersvitt” och att det svarta i fågelns öga nu har en mörkbrun ton.</p>
 
   <figure>
-    <desc>This is what the user sees when printing on a typical inkjet printer</desc>
+    <desc>Detta är vad användaren ser vid utskrift på en vanlig bläckstråleskrivare</desc>
     <media its:translate="no" type="image" mime="image/png" src="figures/color-printer.png"/>
   </figure>
 
-  <p>
-    The basic problem we have here is that each device is capable of
-    handling a different range of colors.
-    So while you might be able to take a photo of electric blue, most
-    printers are not going to be able to reproduce it.
-  </p>
-  <p>
-    Most image devices capture in RGB (Red, Green, Blue) and have
-    to convert to CMYK (Cyan, Magenta, Yellow, and Black) to print.
-    Another problem is that you can't have <em>white</em> ink, and so
-    the whiteness can only be as good as the paper color.
-  </p>
+  <p>Grundproblemet här är att varje enhet kan hantera olika färgintervall. Så även om du kan ta ett foto av elektriskt blått kommer de flesta skrivare inte kunna återge den färgen.</p>
+  <p>De flesta bildenheter använder RGB (röd, grön, blå) och måste konvertera till CMYK (cyan/ljusblå, magenta, yellow/gul, black/svart) vid utskrift. Ett annat problem är att du inte kan använda <em>vitt</em> bläck, så vitheten blir bara så bra som pappret är färgat från början.</p>
 
-  <p>
-    Another problem is units. Without specifying the scale on which a
-    color is measured, we don't know if 100% red is near infrared or
-    just the deepest red ink in the printer. What is 50% red on one
-    display is probably something like 62% on another display.
-    It's like telling a person that you've just driven 7 units of
-    distance, without the unit you don't know if that's 7 kilometers or
-    7 meters.
-  </p>
+  <p>Ett annat problem är enheter. Utan att ange skalan en färg mäts i kan vi inte veta om 100% röd är nära infrarött eller bara den rödaste färgen i skrivaren. Vad som är 50% rött på en skärm kan vara något i stil med 62% rött på en annan skärm. Det är lite som att berätta för någon att du just körde 7 distansenheter; utan enhet vet man inte om det rör sig om 7 kilometer eller 7 meter.</p>
 
-  <p>
-    In color, we refer to the units as gamut. Gamut is essentially the
-    range of colors that can be reproduced.
-    A device like a DSLR camera might have a very large gamut, being able
-    to capture all the colors in a sunset, but a projector has a very
-    small gamut and all the colors are going to look "washed out".
-  </p>
+  <p>För färg så refererar vi till enheter som färgomfång. Färgomfång är helt enkelt intervallet av färger som kan återges. En enhet som en DSLR-kamera kan ha ett väldigt stort färgomfång, kapabel att återge alla färgerna i en solnedgång, men en projektor har ett väldigt litet färgomfång så alla färgerna kommer att se ”urtvättade” ut.</p>
 
-  <p>
-    In some cases we can <em>correct</em> the device output by altering
-    the data we send to it, but in other cases where that's not
-    possible (you can't print electric blue) we need to show the user
-    what the result is going to look like.
-  </p>
+  <p>I vissa fall kan vi <em>korrigera</em> enhetens utdata genom att ändra data vi skickar till den, men i andra fall där detta inte är möjligt (du kan inte skriva ut elektriskt blått) måste vi visa användaren hur resultatet kommer att se ut.</p>
 
-  <p>
-    For photographs it makes sense to use the full tonal range of a color
-    device, to be able to make smooth changes in color.
-    For other graphics, you might want to match the color exactly, which
-    is important if you're trying to print a custom mug with the Red Hat
-    logo that <em>has</em> to be the exact Red Hat Red.
-  </p>
+  <p>För fotografier är det vettigt att använda hela nyansintervallet hos en färgenhet för att kunna göra mjuka övergångar mellan färger. För annan grafik kanske du vill matcha färgen exakt, vilket är viktigt om du försöker skriva ut en anpassad mugg med en Red Hat-logotyp som <em>måste</em> vara exakt Red Hat-röd.</p>
 
 </page>

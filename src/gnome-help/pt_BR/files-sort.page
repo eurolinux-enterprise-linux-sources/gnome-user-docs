@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-sort" xml:lang="pt-BR">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-sort" xml:lang="pt-BR">
 
   <info>
-    <link type="guide" xref="files"/>
+    <link type="guide" xref="files#common-file-tasks"/>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-25" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -31,12 +32,6 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Ferreira</mal:name>
-      <mal:email>rafael.f.f1@gmail.com</mal:email>
-      <mal:years>2012, 2013, 2014.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Enrico Nicoletto</mal:name>
       <mal:email>liverig@gmail.com</mal:email>
       <mal:years>2013.</mal:years>
@@ -46,6 +41,12 @@
       <mal:name>João Santana</mal:name>
       <mal:email>joaosantana@outlook.com</mal:email>
       <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
     </mal:credit>
   </info>
 
@@ -58,16 +59,11 @@
 <section id="icon-view">
   <title>Visão de ícone</title>
 
-  <p>To sort files in a different order, click the
-  <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">View options</span></media></gui>
-  button in the toolbar and choose <gui>By Name</gui>, <gui>By Size</gui>,
-  <gui>By Type</gui>, <gui>By Modification Date</gui>, or <gui>By Access
-  Date</gui>.</p>
+  <p>Para organizar arquivos em uma ordem diferente, clique no botão de opções de visualização na barra de ferramentas e escolha <gui>Por nome</gui>, <gui>Por tamanho</gui>, <gui>Por tipo</gui>, <gui>Por data de modificação</gui> ou <gui>Por data de acesso</gui>.</p>
 
   <p>Como um exemplo, se você seleciona <gui>Por nome</gui>, os arquivos vão ser organizados por seus nomes, em ordem alfabética. Veja <link xref="#ways"/> para outras opções.</p>
 
-  <p>You can sort in the reverse order by selecting <gui>Reversed Order</gui>
-  from the menu.</p>
+  <p>Você pode organizar em ordem reversa selecionando <gui>Ordem inversa</gui> no menu.</p>
 
 </section>
 
@@ -75,12 +71,7 @@
   <title>Visão de lista</title>
 
   <p>Para organizar arquivos em uma ordem diferente, clique em um dos cabeçalhos de colunas no gerenciador de arquivos. Por exemplo, clique em <gui>Tipo</gui> para organizar por tipo de arquivo. Clique no cabeçalho da coluna novamente para organizar na ordem inversa.</p>
-  <p>In list view, you can show columns with more attributes and sort on those
-  columns. Click the
-  <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">View options</span></media></gui>
-  button in the toolbar, pick <gui>Visible Columns</gui> and select the columns
-  that you want to be visible. You will then be able to sort by those columns.
-  See <link xref="nautilus-list"/> for descriptions of available columns.</p>
+  <p>Na visão de lista, você pode mostrar colunas com mais atributos e organizar essas colunas. Clique no botão de opções de visualização na barra de ferramentas, escolha <gui>Colunas visíveis…</gui> e selecione as colunas que você deseja que estejam visíveis. Então, você poderá organizar por essas colunas. Veja <link xref="nautilus-list"/> para descrições das colunas disponíveis.</p>
 
 </section>
 
@@ -89,25 +80,20 @@
 
   <terms>
     <item>
-      <title>Por nome</title>
+      <title>Nome</title>
       <p>Organiza alfabeticamente por nome do arquivo.</p>
     </item>
     <item>
-      <title>Por tamanho</title>
+      <title>Tamanho</title>
       <p>Organiza por tamanho do arquivo (quanto espaço em disco ele ocupa). Organizar do menor para o maior, por padrão.</p>
     </item>
     <item>
-      <title>Por tipo</title>
-      <p>Organizar alfabeticamente por tipo de arquivo. Arquivos do mesmo tipo são agrupados e, então, organizados por nome.</p>
+      <title>Tipo</title>
+      <p>Organiza alfabeticamente por tipo de arquivo. Arquivos do mesmo tipo são agrupados e, então, organizados por nome.</p>
     </item>
     <item>
-      <title>Por data de modificação</title>
-      <p>Organizar por data e horário que um arquivo foi modificado pela última vez. Organiza do mais antigo para o mais novo, por padrão.</p>
-    </item>
-    <item>
-      <title>By Access Date</title>
-      <p>Sorts by the date and time that a file was last read. Sorts from
-      oldest to newest by default.</p>
+      <title>Última Modificação</title>
+      <p>Organiza por data e horário que um arquivo foi modificado pela última vez. Organiza do mais antigo para o mais novo, por padrão.</p>
     </item>
   </terms>
 

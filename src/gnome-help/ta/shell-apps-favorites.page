@@ -3,7 +3,7 @@
 
   <info>
     <link type="seealso" xref="shell-apps-open"/>
-    <link type="guide" xref="shell-overview#apps"/>
+    <link type="guide" xref="shell-overview#desktop"/>
 
     <revision pkgversion="3.6.0" date="2012-10-14" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
@@ -35,12 +35,18 @@
 
   <title>உங்களுக்கு பிடித்த பயன்பாடுகளை டேஷில் இணைத்தல்</title>
 
-  <p>ஒரு பயன்பாட்டை எளிதாக அணுகுவதற்காக, <link xref="shell-terminology">டேஷில்</link> பொருத்த:</p>
+  <p>To add an application to the <link xref="shell-introduction#activities">dash</link>
+  for easy access:</p>
 
   <steps>
     <item>
-      <p if:test="!platform:gnome-classic">திரையின் மேல் இடது மூலையில் உள்ள <gui>செயல்பாடுகள்</gui> ஐ சொடுக்கி <link xref="shell-terminology"><gui>செயல்பாடுகள் மேலோட்டம்</gui></link> ஐ திறக்கவும்</p>
-      <p if:test="platform:gnome-classic">திரையின் மேல் இடது புறம் உள்ள <link xref="shell-terminology"><gui>பயன்பாடுகள்</gui> மெனு</link> ஐ சொடுக்கி, மெனுவிலிருந்து <gui>செயல்பாடுகள் மேலோட்டம்</gui> ஐ தேர்வு செய்யவும்.</p></item>
+      <p if:test="!platform:gnome-classic">Open the
+      <gui xref="shell-introduction#activities">Activities</gui> overview by
+      clicking <gui>Activities</gui> at the top left of the screen</p>
+      <p if:test="platform:gnome-classic">Click the
+      <gui xref="shell-introduction#activities">Applications</gui> menu at the
+      top left of the screen and choose the <gui>Activities Overview</gui> item
+      from the menu.</p></item>
     <item>
       <p>டேஷில் உள்ள கிரிட் பொத்தானை சொடுக்கி நீங்கள் சேர்க்க விரும்பும் பயன்பாட்டைக் கண்டறியவும்.</p>
     </item>
@@ -52,7 +58,9 @@
 
   <p>ஒரு பயன்பாடு சின்னத்தை டேஷில் இருந்து நீக்க, பயன்பாட்டு சின்னத்தை வலது சொடுக்கி <gui>பிடித்தவையில் இருந்து நீக்கு</gui> ஐ தேர்ந்தெடுக்கவும்.</p>
 
-  <note style="tip" if:test="platform:gnome-classic"><p>பிடித்தமான பயன்பாடுகள் <gui>பிடித்தவை</gui> <link xref="shell-terminology"><gui>பயன்பாடுகள்</gui> மெனுவின்</link> <gui>பிடித்தவை</gui> பிரிவிலும் இடம்பெறும்.</p>
+  <note style="tip" if:test="platform:gnome-classic"><p>Favorite applications
+    also appear in the <gui>Favorites</gui> section of the
+    <gui xref="shell-introduction#activities">Applications</gui> menu.</p>
   </note>
 
 </page>

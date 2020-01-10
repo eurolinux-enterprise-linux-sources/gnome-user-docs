@@ -5,53 +5,46 @@
     <link type="guide" xref="net-wireless"/>
 
     <revision pkgversion="3.14" date="2014-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Gnomov projekat dokumentacije</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Majkl Hil</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Dejvid King</name>
+      <email>amigadave@amigadave.com</email>
     </credit>
 
-    <desc>Use your phone or Internet stick to connect to the mobile broadband
-    network.</desc>
+    <desc>Koristite telefon ili modemski štapić da se povežete na mobilnu širokopojasnu mrežu.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
-  <title>Connect to mobile broadband</title>
+  <title>Povežite se na mobilnu širokopojasnu</title>
 
-  <p>Set up a connection to a cellular (3G) network using your mobile phone
-  or Internet stick.</p>
+  <p>Možete da podesite vezu na mrežu mobilnih telefona (3G) pomoću 3G modema ugrađenog u računaru, pomoću mobilnog telefona ili modemskog štapića.</p>
 
   <steps>
-    <item><p>Connect your phone or Internet stick to a USB port on your
-    computer.</p></item>
-
-    <item><p>Click the system status area on the top bar, select
-    <gui>Mobile Broadband</gui>, then click <gui>Connect</gui>.</p>
+    <item><p>Ako nemate ugrađeni 3G modem, povežite telefon ili modemski štapić na USB priključnik na računaru.</p>
+    </item>
+    <item>
+    <p>Otvorite <gui xref="shell-introduction#yourname">izbornik sistema</gui> na desnoj strani gornje trake.</p>
+  </item>
+  <item>
+    <p>Izaberite <gui><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-excellent-symbolic.svg" width="16" height="16"/> Isključi mobilnu širokopojasnu</gui>. Raširiće se odeljak izbornika <gui>Mobilna širokopojasna</gui>.</p>
       <note>
-        <p>If <gui>Mobile Broadband</gui> does not appear in the system
-        status menu, ensure that your device is not set to connect as Mass
-        Storage.</p>
+        <p>Ako se ne pojavi <gui>Mobilna širokopojasna</gui> u izborniku stanja sistema, proverite da uređaj nije podešen da se poveže kao uređaj za skladištenje podataka.</p>
       </note>
     </item>
-    <item><p>If you are connecting for the first time, the Mobile Broadband
-    wizard is launched. The opening screen displays a list of required
-    information. Click <gui style="button">Next</gui>.</p></item>
-    <item><p>Choose your provider's country or region from the list. Click
-    <gui style="button">Next</gui>.</p></item>
-    <item><p>Choose your provider from the list. Click
-    <gui style="button">Next</gui>.</p></item>
-    <item><p>Select a plan according to the type of device you are
-    connecting. This will determine the Access Point Name. Click
-    <gui style="button">Next</gui>.</p></item>
-    <item><p>Confirm the settings you have selected by clicking
-    <gui style="button">Apply</gui>. The wizard will close and the
-    <gui>Network</gui> panel will display the properties of your
-    connection.</p></item>
-
+    <item><p>Izaberite <gui>Poveži se</gui>. Ako se povezujete prvi put, pokrenuće se čarobnjak za <gui>podešavanje mobilne širokopojasne veze</gui>. Početni ekran prikazuje spisak potrebnih podataka. Pritisnite na <gui style="button">Sledeće</gui>.</p></item>
+    <item><p>Izaberite državu ili oblast vašeg dostavljača sa spiska. Pritisnite <gui style="button">Sledeće</gui>.</p></item>
+    <item><p>Izaberite vašeg dostavljača sa spiska. Pritisnite <gui style="button">Sledeće</gui>.</p></item>
+    <item><p>Izaberite plan u skladu sa vrstom uređaja za povezivanje. Ovo će odrediti naziv pristupne tačke. Pritisnite <gui style="button">Sledeće</gui>.</p></item>
+    <item><p>Potvrdite podešavanja koja ste izabrali pritiskom na dugme <gui style="button">Primeni</gui>. Čarobnjak će se zatvoriti a panel <gui>Mreže</gui> će prikazati svojstva vaše veze.</p></item>
   </steps>
 
 </page>

@@ -5,10 +5,11 @@
     <link type="guide" xref="net-general"/>
 
     <revision pkgversion="3.4.0" date="2012-02-21" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Steven Richards</name>
-      <email its:translate="no">steven.richardspc@gmail.com</email>
+      <email>steven.richardspc@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -30,7 +31,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2014</mal:years>
+      <mal:years>2011-2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -62,6 +63,12 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
   <title>Être en sécurité sur Internet</title>
@@ -81,7 +88,8 @@
       <p><link xref="net-antivirus">applications ayant de mauvaises intentions (virus)</link>,</p>
     </item>
     <item>
-      <p><link xref="net-wireless-wepwpa">accès à un réseau local/distant non autorisé</link>.</p>
+      <p><link xref="net-wireless-wepwpa">Unauthorized remote/local network
+      access</link></p>
     </item>
   </list>
 
@@ -95,7 +103,11 @@
       <p>Si l'offre d'un site Web vous paraît trop belle pour être vraie, ou si un site vous demande des informations personnelles qui ne vous paraissent pas justifiées, alors réfléchissez à deux fois sur ce que vous transmettez et sur les conséquences que cela pourrait avoir en matière d'usurpation d'identité ou d'autres crimes.</p>
     </item>
     <item>
-      <p>Faites attention de ne pas accorder de <link xref="user-admin-explain">permissions super utilisateur (root)</link> à n'importe quelle application, notamment celles que vous n'avez encore jamais utilisées ou celles qui ne sont pas très connues. Accorder à n'importe qui ou n'importe quoi ces privilèges root expose votre ordinateur à de gros risques.</p>
+      <p>Be careful in providing
+      <link xref="user-admin-explain">root level permissions</link> to any
+      application, especially ones that you have not used before or which are
+      not well-known. Providing anyone or anything with root level permissions
+      puts your computer at high risk to exploitation.</p>
     </item>
     <item>
       <p>Assurez-vous de n'avoir activé que les services à distance nécessaires. Laisser tourner SSH ou VNC en permanence peut être utile, mais cela laisse les ports de votre ordinateur ouverts à toutes tentatives d'intrusion s'ils ne sont pas sécurisés correctement. Pensez à utiliser un <link xref="net-firewall-on-off">pare-feu</link> pour vous protéger de tentatives d'intrusions.</p>

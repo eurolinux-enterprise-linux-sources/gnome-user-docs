@@ -3,9 +3,11 @@
 
   <info>
     <link type="guide" xref="power"/>
+    <link type="seealso" xref="power-suspendfail"/>
 
     <desc>サスペンドするとコンピューターはスリープ状態となるため、消費電力が少なくなります。</desc>
     <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>GNOME ドキュメンテーションプロジェクト</name>
@@ -21,7 +23,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -65,7 +67,10 @@
 
 <p>コンピューターを<em>サスペンド</em>すると、スリープ状態に入ります。アプリケーションやドキュメントはすべて開いたままの状態ですが、コンピューターの画面および他の部分は電源オフになり節電できます。コンピューター自体の電源はオンのままのため、若干の電力は消費し続けています。何らかのキーを押すかマウスをクリックするとコンピューターをスリープ状態から復帰させることができます。キーボードやマウスを操作してもコンピューターが立ち上がらない場合は電源ボタンを押してみてください。</p>
 
-<p>ハードウェアのサポートに関して問題があるコンピューターがあります。その場合、<link xref="power-suspendfail">サスペンドやハイバネートが正常に動作しない</link>可能性があります。実際にサスペンドする前に、お使いのコンピューターでサスペンドが正しく動作するかテストしてみるとよいでしょう。</p>
+<p>Some computers have problems with hardware support which mean that they
+<link xref="power-suspendfail">may not be able to suspend properly</link>. It is
+a good idea to test suspend on your computer to see if it does work before
+relying on it.</p>
 
 <note style="important">
   <title>サスペンドする前に必ず作業を保存してください</title>

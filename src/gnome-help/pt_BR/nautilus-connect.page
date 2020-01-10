@@ -2,14 +2,13 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-connect" xml:lang="pt-BR">
 
   <info>
-    <link type="guide" xref="files" group="more"/>
+    <link type="guide" xref="files#more-file-tasks"/>
     <link type="guide" xref="sharing"/>
 
     <revision pkgversion="3.6.0" date="2012-10-06" status="review"/>
     <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
     <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
-
-    <desc>Veja e edite arquivos em outro computador via FTP, SSH, compartilhamentos Windows ou WebDAV.</desc>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -19,18 +18,20 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Veja e edite arquivos em outro computador via FTP, SSH, compartilhamentos Windows ou WebDAV.</desc>
+
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Rodolfo Ribeiro Gomes</mal:name>
       <mal:email>rodolforg@gmail.com</mal:email>
       <mal:years>2011, 2012.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Ferreira</mal:name>
-      <mal:email>rafael.f.f1@gmail.com</mal:email>
-      <mal:years>2012, 2013, 2014.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -44,24 +45,31 @@
       <mal:email>joaosantana@outlook.com</mal:email>
       <mal:years>2013.</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2012-2016.</mal:years>
+    </mal:credit>
   </info>
 
 <title>Navegando nos arquivos em um servidor ou compartilhamento de rede</title>
 
 <p>Você pode conectar a um servidor ou compartilhamento de rede para navegar e ver arquivos naquele servidor, exatamente como se eles estivessem no seu próprio computador. Esta é uma forma conveniente de fazer baixar e enviar de arquivos na internet ou para compartilhar arquivos com outras pessoas em sua rede local.</p>
 
-<p>Para acessar arquivos pela rede, abra o aplicativo <app>Arquivos</app> a partir do panorama de <gui>Atividades</gui> e clique em <gui>Navegar na rede</gui> na barra lateral. O gerenciador de arquivos vai encontrar quaisquer computadores na sua rede local que divulgam sua habilidade de servir arquivos. Se você deseja conectar a um servidor na internet ou se você não consegue encontrar o computador pelo que você está procurando, você pode conectar manualmente a um servidor digitando seu endereço de rede/internet.</p>
+<p>Para acessar arquivos pela rede, abra o aplicativo <app>Arquivos</app> a partir do panorama de <gui>Atividades</gui> e clique em <gui>Outros locais</gui> na barra lateral. O gerenciador de arquivos vai encontrar quaisquer computadores na sua rede local que divulgam sua habilidade de servir arquivos. Se você deseja conectar a um servidor na internet ou se você não consegue encontrar o computador pelo que você está procurando, você pode conectar manualmente a um servidor digitando seu endereço de rede/internet.</p>
 
 <steps>
   <title>Conectar a um servidor de arquivos</title>
-  <item><p>No gerenciador de arquivos, clique em <gui>Conectar ao Servidor</gui> na barra superior.</p>
+  <item><p>No gerenciador de arquivos, clique em <gui>Outros locais</gui> na barra superior.</p>
   </item>
-  <item><p>Digite o endereço do servidor, na forma de uma <link xref="#urls">URL</link>. Detalhes quanto a URLs que têm suporte estão <link xref="#types">listadas abaixo</link>.</p>
+  <item><p>Em <gui>Conectar ao servidor</gui>, digite o endereço do servidor, na forma de uma <link xref="#urls">URL</link>. Detalhes sobre o suporte a URLs estão <link xref="#types">listadas abaixo</link>.</p>
   <note>
     <p>Se você conectou ao servidor antes, você vai clicar nele na lista de <gui>Servidores recentes</gui>.</p>
   </note>
   </item>
-  <item><p>Clique em <gui>Conectar</gui>. Uma nova janela vai abrir mostrando os arquivos do servidor. Você pode acessar os arquivos de mesma forma que você faria aqueles do seu próprio computador. O servidor também será adicionado à barra lateral de forma que você possa acessá-lo com rapidez no futuro.</p>
+  <item>
+    <p>Clique em <gui>Conectar</gui>. Os arquivos no servidor serão mostrados. Você pode acessar os arquivos de mesma forma que você faria aqueles do seu próprio computador. O servidor também será adicionado à barra lateral de forma que você possa acessá-lo com mais facilidade no futuro.</p>
   </item>
 </steps>
 
@@ -128,9 +136,17 @@
 <item>
   <title>WebDAV e WebDAV seguro</title>
   <p>Baseado no protocolo HTTP usado na web, WebDAV algumas vezes é usado para compartilhar arquivos em uma rede local e também para armazenar arquivos na internet. Se o servidor ao qual você está se conectando tem suporte a conexões seguras, você deveria escolher esta opção. WebDAV seguro usa criptografia SSL forte, de forma que outros usuários não conseguem ver sua senha.</p>
-  <p>Uma URL WebDAV típica se parece com isto:</p>
+  <p>Uma URL WebDAV se parece com isto:</p>
   <example>
-    <p><sys>http://exemplo.nomeservidor.com/caminho</sys></p>
+    <p><sys>dav://exemplo.servidor.com/caminho</sys></p>
+  </example>
+</item>
+<item>
+  <title>Compartilhamento NFS</title>
+  <p>Computadores UNIX tradicionalmente usam o protocolo Network File System (em português, sistema de arquivos de rede) para compartilhar arquivos sobre uma rede local. Com NFS, segurança é baseada no UID do usuário que está acessando o compartilhamento, de forma que nenhuma credencial de autenticação é necessária ao conectar.</p>
+  <p>Uma URL de compartilhamento NFS comum se parece com isso:</p>
+  <example>
+    <p><sys>nfs://servidor/caminho</sys></p>
   </example>
 </item>
 </terms>

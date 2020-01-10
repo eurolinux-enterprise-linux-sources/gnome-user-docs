@@ -8,15 +8,16 @@
     <revision pkgversion="3.10" version="0.2" date="2013-11-02" status="review"/>
     <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
     <revision pkgversion="3.14" date="2014-10-13" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
 
     <credit type="author">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Share media on your local network using UPnP.</desc>
+    <desc>Freigeben von Medien im lokalen Netzwerk mittels UPnP.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Hendrik Knackstedt</mal:name>
@@ -33,7 +34,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Christian Kirbach</mal:name>
       <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2014.</mal:years>
+      <mal:years>2011-2016.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -51,14 +52,10 @@
 
   <title>Ihre Musik, Fotos und Videos freigeben</title>
 
-  <p>You can browse, search and play the media on your computer using a
-  <sys>UPnP</sys> or <sys>DLNA</sys> enabled device such as a phone, TV or game
-  console. Configure <gui>Media Sharing</gui> to allow these devices to access
-  the folders containing your music, photos and videos.</p>
+  <p>Sie können mittels <sys>UPnP</sys> oder <sys>DLNA</sys> über Geräte mit entsprechenden Fähigkeiten wie Smartphones, Fernsehgeräte oder Spielkonsolen Medien auf Ihrem Rechner durchsuchen und wiedergeben. Richten Sie die <gui>Medienfreigabe</gui> ein, um diesen Geräten den Zugriff auf Ihre Musik, Fotos und Videos zu gestatten.</p>
 
   <note style="info package">
-    <p>You must have the <app>Rygel</app> package installed for <gui>Media
-    Sharing</gui> to be visible.</p>
+    <p>Das Paket <app>Rygel</app> muss installiert sein, damit die <gui>Medienfreigabe</gui> angezeigt wird.</p>
 
     <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
       <if:when test="action:install">
@@ -69,7 +66,7 @@
 
   <steps>
     <item>
-      <p>Öffnen Sie die <gui xref="shell-terminology">Aktivitäten</gui>-Übersicht und tippen Sie <gui>Freigabe</gui> ein.</p>
+      <p>Öffnen Sie die <gui xref="shell-introduction#activities">Aktivitäten</gui>-Übersicht und tippen Sie <gui>Freigabe</gui> ein.</p>
     </item>
     <item>
       <p>Klicken Sie auf <gui>Freigabe</gui>, um das Panel zu öffnen.</p>
@@ -77,38 +74,29 @@
     <item>
       <p>Wenn <gui>Freigabe</gui> auf <gui>AUS</gui> gestellt ist, so schalten Sie diese <gui>An</gui>.</p>
 
-      <note style="info"><p>If the text below <gui>Computer Name</gui> allows
-      you to edit it, you can <link xref="sharing-displayname">change</link>
-      the name your computer displays on the network.</p></note>
+      <note style="info"><p>Wenn sich der Text unterhalb von <gui>Rechnername</gui> bearbeiten lässt, können Sie den Namen <link xref="sharing-displayname">ändern</link>, unter dem Ihr Rechner im Netzwerk angezeigt wird.</p></note>
     </item>
     <item>
       <p>Wählen Sie <gui>Medienfreigabe</gui>.</p>
     </item>
     <item>
-      <p>Switch <gui>Media Sharing</gui> to <gui>ON</gui>.</p>
+      <p>Stellen Sie <gui>Medienfreigabe</gui> auf <gui>AN</gui>.</p>
     </item>
     <item>
-      <p>By default, <file>Music</file>, <file>Pictures</file> and 
-      <file>Videos</file> are shared. To remove one of these, click the
-      <gui>X</gui> next to the folder name.</p>
+      <p>In der Voreinstellung werden die Ordner <file>Musik</file>, <file>Bilder</file> und <file>Videos</file> freigegeben. Um eines davon zu entfernen, klicken Sie auf das <gui>X</gui>-Symbol neben dem Ordnernamen.</p>
     </item>
     <item>
-      <p>To add another folder, click <gui style="button">+</gui> to open the
-      <gui>Choose a folder</gui> window. Navigate <em>into</em> the desired
-      folder and click <gui style="button">Open</gui>.</p>
+      <p>Um einen weiteren Ordner hinzuzufügen, klicken Sie auf das <gui style="button">+</gui>-Symbol, um das Fenster <gui>Ordner wählen</gui> zu öffnen. Navigieren Sie <em>in</em> den gewünschten Ordner und klicken Sie auf <gui style="button">Öffnen</gui>.</p>
     </item>
     <item>
-      <p>Click <gui style="button">X</gui>. You will now be able to browse
-      or play media in the folders you selected using the external device.</p>
+      <p>Klicken Sie auf das <gui style="button">X</gui>-Symbol. Sie können nun Medien in den Ordnern durchsuchen oder wiedergeben, die Sie in dem externen Gerät gewählt haben.</p>
     </item>
   </steps>
 
   <section id="networks">
-  <title>Networks</title>
+  <title>Netzwerke</title>
 
-  <p>The <gui>Networks</gui> section lists the networks to which you are
-  currently connected. Use the <gui>ON | OFF</gui> switch next to each to
-  choose where your media can be shared.</p>
+  <p>Der <gui>Netzwerke</gui>-Abschnitt listet die Netzwerke auf, mit denen Sie gegenwärtig verbunden sind. Verwenden Sie den Schalter <gui>AN | AUS</gui> neben jedem der Einträge, um zu wählen, wo Ihre Medien freigegeben werden können.</p>
 
   </section>
 

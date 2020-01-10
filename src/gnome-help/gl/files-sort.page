@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-sort" xml:lang="gl">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-sort" xml:lang="gl">
 
   <info>
-    <link type="guide" xref="files"/>
+    <link type="guide" xref="files#common-file-tasks"/>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-25" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -40,10 +41,10 @@
 <section id="icon-view">
   <title>Vista de iconas</title>
 
-  <p>To sort files in a different order, click the
-  <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">View options</span></media></gui>
-  button in the toolbar and choose <gui>By Name</gui>, <gui>By Size</gui>,
-  <gui>By Type</gui>, <gui>By Modification Date</gui>, or <gui>By Access
+  <p>To sort files in a different order, click the view options button in the
+  <!-- FIXME: Get a tooltip added for "View options" -->
+  toolbar and choose <gui>By Name</gui>, <gui>By Size</gui>, <gui>By
+  Type</gui>, <gui>By Modification Date</gui>, or <gui>By Access
   Date</gui>.</p>
 
   <p>Por exemplo, se selecciona <gui>Ordenar por nome</gui>, os ficheiros ordenaranse segundo os seus nomes. Consulte outras opcións na <link xref="#ways"/>.</p>
@@ -58,11 +59,11 @@
 
   <p>Para ordenar os ficheiros de forma diferente, prema nunha das cabeceiras das columnas no xestor de ficheiros. Por exemplo, prema en <gui>Tipo</gui> para ordenar por tipo de ficheiro. Prema de novo na cabeceira da columna para ordenar en orde inverso.</p>
   <p>In list view, you can show columns with more attributes and sort on those
-  columns. Click the
-  <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">View options</span></media></gui>
-  button in the toolbar, pick <gui>Visible Columns</gui> and select the columns
-  that you want to be visible. You will then be able to sort by those columns.
-  See <link xref="nautilus-list"/> for descriptions of available columns.</p>
+  columns. Click the view options button in the toolbar, pick <gui>Visible
+  <!-- FIXME: Get a tooltip added for "View options" -->
+  Columns…</gui> and select the columns that you want to be visible. You will
+  then be able to sort by those columns. See <link xref="nautilus-list"/> for
+  descriptions of available columns.</p>
 
 </section>
 
@@ -71,25 +72,20 @@
 
   <terms>
     <item>
-      <title>Por nome</title>
+      <title>Nome</title>
       <p>Ordena alfabeticamente polo nome do ficheiro.</p>
     </item>
     <item>
-      <title>Por tamaño</title>
+      <title>Tamaño</title>
       <p>Ordena polo tamaño do ficheiro (canto espazo ocupa). Ordena de menor a maior de maneira predeterminada.</p>
     </item>
     <item>
-      <title>Por tipo</title>
+      <title>Tipo</title>
       <p>Ordena alfabeticamente polo tipo de ficheiro. Os ficheiros do mesmo tipo agrúpanse, a continuación, ordenados polo nome.</p>
     </item>
     <item>
-      <title>Por data de modificación</title>
+      <title>Last Modified</title>
       <p>Ordenar por data e hora nas que se modificou un ficheiro por última vez. Ordena da máis antiga á máis recente de maneira predeterminada.</p>
-    </item>
-    <item>
-      <title>By Access Date</title>
-      <p>Sorts by the date and time that a file was last read. Sorts from
-      oldest to newest by default.</p>
     </item>
   </terms>
 

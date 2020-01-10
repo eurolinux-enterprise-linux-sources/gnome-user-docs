@@ -2,14 +2,13 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-connect" xml:lang="as">
 
   <info>
-    <link type="guide" xref="files" group="more"/>
+    <link type="guide" xref="files#more-file-tasks"/>
     <link type="guide" xref="sharing"/>
 
     <revision pkgversion="3.6.0" date="2012-10-06" status="review"/>
     <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
     <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
-
-    <desc>FTP, SSH, Windows ছেয়াৰ, অথবা WebDAV ৰে অন্য কমপিউটাৰত ফাইলসমূহ দৰ্শন কৰক আৰু সম্পাদন কৰক।</desc>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>শ্বণ মেকেন্স</name>
@@ -19,7 +18,15 @@
       <name>মাইকেল হিল</name>
       <email>mdhillca@gmail.com</email>
     </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>FTP, SSH, Windows ছেয়াৰ, অথবা WebDAV ৰে অন্য কমপিউটাৰত ফাইলসমূহ দৰ্শন কৰক আৰু সম্পাদন কৰক।</desc>
+
   </info>
 
 <title>এটা চাৰ্ভাৰ অথবা নেটৱাৰ্ক অংশীদাৰীত ফাইলসমূহ ব্ৰাউছ কৰক</title>
@@ -28,8 +35,8 @@
 
 <p>To browse files over the network, open the <app>Files</app>
 application from the <gui>Activities</gui> overview, and click
-<gui>Browse Network</gui> in the sidebar. The file manager
-will find any computers on your local area network that advertise
+<gui>Other Locations</gui> in the sidebar. The file manager
+will find any computers on your local area network that advertize
 their ability to serve files. If you want to connect to a server
 on the internet, or if you do not see the computer you're looking
 for, you can manually connect to a server by typing in its
@@ -37,15 +44,22 @@ internet/network address.</p>
 
 <steps>
   <title>এটা ফাইল চাৰ্ভাৰৰ সৈতে সংযোগ কৰক</title>
-  <item><p>In the file manager, click <gui>Connect to Server</gui> in the
+  <item><p>In the file manager, click <gui>Other Locations</gui> in the
    sidebar.</p>
   </item>
-  <item><p><link xref="#urls">URL</link> বিন্যাসত, চাৰ্ভাৰৰ ঠিকনা সুমুৱাওক। সমৰ্থিত URLs ৰ বিৱৰণ <link xref="#types">তলত দিয়া হৈছে</link>।</p>
+  <item><p>In <gui>Connect to Server</gui>, enter the address of the server, in
+  the form of a
+   <link xref="#urls">URL</link>. Details on supported URLs are
+   <link xref="#types">listed below</link>.</p>
   <note>
     <p>যদি আপুনি চাৰ্ভাৰৰ সৈতে আগত সংযোগ কৰিছে, আপুনি ইয়াক <gui>শেহতীয়া চাৰ্ভাৰসমূহ</gui> তালিকাত ক্লিক কৰিব পাৰিব।</p>
   </note>
   </item>
-  <item><p><gui>সংযোগ কৰক</gui> ক্লিক কৰক। এটা নতুন উইন্ডো খোল খাব য'ত আপুনি চাৰ্ভাৰৰ ফাইলসমূহ দেখি পাব। আপুনি ফাইলসমূহক নিজৰ কমপিউটাৰৰ নিচিনা ব্ৰাউছ কৰিব পাৰিব। চাৰ্ভাৰক লগতে কাষবাৰত যোগ কৰা হব যাতে আপুনি ভৱিষ্যতত ইয়াক দ্ৰুত অভিগম কৰিব পাৰে।</p>
+  <item>
+    <p>Click <gui>Connect</gui>. The files on the server will be shown. You
+    can browse the files just as you would for those on your own computer. The
+    server will also be added to the sidebar so you can access it quickly in
+    the future.</p>
   </item>
 </steps>
 
@@ -120,9 +134,20 @@ internet/network address.</p>
   server you're connecting to supports secure connections, you should choose
   this option. Secure WebDAV uses strong SSL encryption, so that other users
   can't see your password.</p>
-  <p>এটা সাধাৰণ WebDAV URL দেখাত এনেকুৱা হয়:</p>
+  <p>A WebDAV URL looks like this:</p>
   <example>
-    <p><sys>http://example.hostname.com/path</sys></p>
+    <p><sys>dav://example.hostname.com/path</sys></p>
+  </example>
+</item>
+<item>
+  <title>NFS share</title>
+  <p>UNIX computers traditionally use the Network File System protocol to
+  share files over a local network. With NFS, security is based on the UID of
+  the user accessing the share, so no authentication credentials are
+  needed when connecting.</p>
+  <p>A typical NFS share URL looks like this:</p>
+  <example>
+    <p><sys>nfs://servername/path</sys></p>
   </example>
 </item>
 </terms>

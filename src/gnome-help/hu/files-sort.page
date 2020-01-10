@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-sort" xml:lang="hu">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-sort" xml:lang="hu">
 
   <info>
-    <link type="guide" xref="files"/>
+    <link type="guide" xref="files#common-file-tasks"/>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-25" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -33,7 +34,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Kelemen Gábor</mal:name>
       <mal:email>kelemeng at gnome dot hu</mal:email>
-      <mal:years>2011, 2012, 2013, 2014</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -70,7 +71,7 @@
 <section id="icon-view">
   <title>Ikonnézet</title>
 
-  <p>Módosíthatja a fájlok rendezési sorrendjét az eszköztár <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">Nézetbeállítások</span></media></gui> gombjának megnyomásával, és a <gui>Név szerint</gui>, <gui>Méret szerint</gui>, <gui>Típus szerint</gui>, <gui>Módosítás dátuma szerint</gui> vagy <gui>Elérés dátuma szerint</gui> egyikének kiválasztásával.</p>
+  <p>Módosíthatja a fájlok rendezési sorrendjét az eszköztár nézetbeállítások gombjának megnyomásával, és a <gui>Név szerint</gui>, <gui>Méret szerint</gui>, <gui>Típus szerint</gui>, <gui>Módosítás dátuma szerint</gui> vagy <gui>Elérés dátuma szerint</gui> egyikének kiválasztásával.</p>
 
   <p>Ha például a <gui>Név szerint</gui> menüpontot választja, a fájlok nevük szerint ábécérendbe lesznek rendezve. További lehetőségekért lásd: <link xref="#ways"/>.</p>
 
@@ -82,7 +83,7 @@
   <title>Listanézet</title>
 
   <p>A fájlok más sorrendbe rendezéséhez kattintson a fájlkezelő egyik oszlopfejlécére. A fájlok típus szerinti rendezéséhez például kattintson a <gui>Típus</gui> fejlécre. A sorrend megfordításához kattintson újra az oszlopfejlécre.</p>
-  <p>A listanézetben más attribútumokat tartalmazó oszlopokat is megjeleníthet, és rendezhet azok szerint. Nyomja meg a <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">Nézetbeállítások</span></media></gui> gombot az eszköztáron, válassza a <gui>Látható oszlopok</gui> menüpontot, majd válassza ki a megjelenítendő oszlopokat. Ezután rendezhet ezen oszlopok alapján is. Az összes elérhető oszlop leírását lásd: <link xref="nautilus-list"/>.</p>
+  <p>A listanézetben más attribútumokat tartalmazó oszlopokat is megjeleníthet, és rendezhet azok szerint. Nyomja meg a nézetbeállítások gombot az eszköztáron, válassza a <gui>Látható oszlopok</gui> menüpontot, majd válassza ki a megjelenítendő oszlopokat. Ezután rendezhet ezen oszlopok alapján is. Az összes elérhető oszlop leírását lásd: <link xref="nautilus-list"/>.</p>
 
 </section>
 
@@ -91,24 +92,20 @@
 
   <terms>
     <item>
-      <title>Név szerint</title>
+      <title>Név</title>
       <p>Ábécérend a fájlok neve alapján.</p>
     </item>
     <item>
-      <title>Méret szerint</title>
+      <title>Méret</title>
       <p>Rendezés a fájl mérete (mennyi lemezhelyet foglal) alapján. Alapesetben a legkisebbtől a legnagyobbig rendez.</p>
     </item>
     <item>
-      <title>Típus szerint</title>
+      <title>Típus</title>
       <p>Ábécérend a fájlok típusa alapján. Az azonos típusú fájlok csoportosítva, majd név szerint rendezve lesznek.</p>
     </item>
     <item>
-      <title>Módosítás dátuma szerint</title>
+      <title>Utoljára módosítva</title>
       <p>A fájl utolsó módosításának dátuma és ideje szerint rendez. Alapesetben a legrégebbitől a legújabbig rendez.</p>
-    </item>
-    <item>
-      <title>Elérés dátuma szerint</title>
-      <p>A fájl utolsó olvasásának dátuma és ideje szerint rendez. Alapesetben a legrégebbitől a legújabbig rendez.</p>
     </item>
   </terms>
 

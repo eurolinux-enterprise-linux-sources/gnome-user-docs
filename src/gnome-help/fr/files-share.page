@@ -2,13 +2,14 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-share" xml:lang="fr">
 
   <info>
-    <link type="guide" xref="files" group="more"/>
+    <link type="guide" xref="files#more-file-tasks"/>
     <link type="guide" xref="sharing"/>
     <link type="seealso" xref="nautilus-connect"/>
 
     <revision pkgversion="3.8.2" version="0.3" date="2013-05-11" status="review"/>
     <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -38,7 +39,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2014</mal:years>
+      <mal:years>2011-2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -70,6 +71,12 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
 <title>Partage de fichiers par courriel</title>
@@ -84,18 +91,20 @@
   <title>Pour partager un fichier par courriel :</title>
     <item>
       <p>Open the <app>Files</app> application from the
-      <gui xref="shell-terminology">Activities</gui> overview.</p>
+      <gui xref="shell-introduction#activities">Activities</gui> overview.</p>
     </item>
   <item><p>Localisez le fichier à transférer.</p></item>
     <item>
-      <p>Right-click the file and select <gui>Email…</gui>. An email compose
+      <p>Right-click the file and select <gui>Send to…</gui>. An email compose
       window will appear with the file attached.</p>
     </item>
   <item><p>Cliquez sur <gui>À :</gui> pour choisir un contact, ou saisissez l'adresse courriel où envoyer le fichier. Remplissez le champ <gui>Objet :</gui>, rédigez le corps du message et cliquez sur <gui>Envoyer</gui>.</p></item>
 </steps>
 
 <note style="tip">
-  <p>Vous pouvez envoyer plusieurs fichiers à la fois. Sélectionnez ces fichiers en maintenant enfoncée la touche <key>Ctrl</key>, faites ensuite un clic-droit sur l'un d'eux.</p>
+  <p>You can send multiple files at once. Select multiple files by holding
+  down <key>Ctrl</key> while clicking the files, then right-click any selected
+  file.</p>
 </note>
 
 </page>

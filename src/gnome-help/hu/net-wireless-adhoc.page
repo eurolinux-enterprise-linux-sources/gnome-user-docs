@@ -6,18 +6,19 @@
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
     <revision pkgversion="3.10" date="2013-11-10" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
-      <email its:translate="no">philbull@gmail.com</email>
+      <email>philbull@gmail.com</email>
     </credit>
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
 
     <desc>Eseti hálózat használata más eszközök csatlakoztatásához a számítógépéhez és hálózati kapcsolataihoz.</desc>
@@ -33,7 +34,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Kelemen Gábor</mal:name>
       <mal:email>kelemeng at gnome dot hu</mal:email>
-      <mal:years>2011, 2012, 2013, 2014</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -63,11 +64,17 @@
 
 <title>Vezeték nélküli hotspot létrehozása</title>
 
-<p>Számítógépét használhatja vezeték nélküli hotspotként. Ez lehetővé teszi más eszközöknek a csatlakozást külön hálózat használata nélkül, és egy másik csatolón, például vezetékes hálózaton vagy mobilon létrehozott internetkapcsolat megosztását.</p>
+  <p>Számítógépét használhatja vezeték nélküli hotspotként. Ez lehetővé teszi más eszközöknek a csatlakozást külön hálózat használata nélkül, és egy másik csatolón, például vezetékes hálózaton vagy mobilon létrehozott internetkapcsolat megosztását.</p>
 
 <steps>
-  <item><p>Kattintson a rendszerállapot-területre a felső sávban, és válassza a <gui>Wi-Fi</gui> menüpontot.</p></item>
-  <item><p>Válassza a <gui>Wi-Fi beállítások</gui> lehetőséget.</p></item>
+  <item>
+    <p>Kattintson a <gui xref="shell-introduction#yourname">rendszer menüre</gui> a felső sáv jobb oldalán.</p>
+  </item>
+  <item>
+    <p>Válasza a <gui><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-excellent-symbolic.svg" width="16" height="16"/> Wi-Fi nincs csatlakoztatva</gui> lehetőséget, vagy a vezeték nélküli hálózat nevét, amelyhez már csatlakozik. Ekkor kinyílik a menü Wi-Fi szakasza.</p>
+  </item>
+  <item>
+    <p>Válassza a <gui>Wi-Fi beállítások</gui> lehetőséget.</p></item>
   <item><p>Nyomja meg a <gui>Használat hotspotként</gui> gombot.</p></item>
   <item><p>Ha már csatlakozik egy vezeték nélküli hálózathoz, akkor a rendszer megkérdezi, hogy kívánja-e bontani azt a kapcsolatot. Egy vezeték nélküli csatoló egyszerre csak egy hálózathoz képes csatlakozni, illetve létrehozni. A megerősítéshez nyomja meg a <gui>Bekapcsolás</gui> gombot.</p></item>
 </steps>

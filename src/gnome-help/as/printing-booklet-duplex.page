@@ -6,20 +6,28 @@
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>টিফানি এন্টপলস্কি</name>
       <email>tiffany@antopolski.com</email>
     </credit>
+    <credit type="author editor">
+      <name>পিটাৰ ক'ভাৰ</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>সাধাৰণ A4/Letter-size পৃষ্ঠা ব্যৱহাৰ কৰি মেৰিওৱা পুস্তিকা (যেনে এটা কিতাপ অথবা ইস্থাহাৰ) প্ৰিন্ট কৰক।</desc>
+    <desc>Print folded booklets (like a book or pamphlet) from a PDF using normal
+    A4/Letter-size paper.</desc>
   </info>
 
-  <title>জাপ খোৱা পুস্তিকা প্ৰিন্ট কৰক</title>
+  <title>Print a booklet on a double-sided printer</title>
 
-  <p>এটা দস্তাবেজৰ পৃষ্ঠাসমূহ এটা বিশেষ ক্ৰমত প্ৰিন্ট কৰি আৰু কিছুমান প্ৰিন্টিং বিকল্প পৰিবৰ্তন কৰি আপুনি মেৰিওৱা পুস্তিকা (যেনে এটা কিতাপ অথবা ইস্তাহাৰ) বনাব পাৰিব।</p>
+  <p>You can make a folded booklet (like a small book or pamphlet) by printing
+  pages of a document in a special order and changing a couple of printing
+  options.</p>
 
   <p>এটা PDF দস্তাবেজৰ পৰা এটা বুকলেট প্ৰিন্ট কৰিবলৈ এই নিৰ্দেশবোৰ দিয়া হৈছে।</p>
 
@@ -35,8 +43,15 @@
       <p>প্ৰিন্ট ডাইলগ খোলক। ইয়াক সাধাৰণত মেনুত <gui style="menuitem">প্ৰিন্ট</gui> ব্যৱহাৰ কৰি অথবা <keyseq><key>Ctrl</key><key>P</key></keyseq> কিবৰ্ড চৰ্টকাট ব্যৱহাৰ কৰি কৰিব পৰা যাব।</p>
     </item>
     <item>
-      <p>Go to the <gui>General</gui> tab. Under <gui>Range</gui>, choose
-      <gui>Pages</gui>.</p>
+      <p>Click the <gui>Properties...</gui> button </p>
+      <p>In the <gui>Orientation</gui> drop-down list, make sure that
+      <gui>Landscape</gui> is selected.</p>
+      <p>In the <gui>Duplex</gui> drop-down list, select <gui>Short Edge</gui>.
+      </p>
+      <p>Click <gui>OK</gui> to go back to the print dialog.</p>
+    </item>
+    <item>
+      <p>Under <gui>Range and Copies</gui>, choose <gui>Pages</gui>.</p>
     </item>
     <item>
       <p>এই ক্ৰমত পৃষ্ঠাসমূহৰ সংখ্যা টাইপ কৰক (n হল পৃষ্ঠাৰ সৰ্বমুঠ সংখ্যা, আৰু ৪ ৰ এটা বহুগুণ):</p>
@@ -49,12 +64,10 @@
       </list>
     </item>
     <item>
-      <p>এতিয়া, <gui>পৃষ্টাৰ সংস্থাপন</gui> টেবলৈ যাওক।</p>
-      <p>Under <gui>Layout</gui>, in the <gui>Two-sided</gui> drop-down list,
-      select <gui>Short Edge (Flip)</gui>.</p>
-      <p>In the <gui>Pages per side</gui> drop-down list, select
-      <gui>2</gui>.</p>
-      <p><gui>পৃষ্ঠাৰ ক্ৰম</gui> মেনুত, <gui>বাঁওৰ পৰা সোঁ</gui> বাছক।</p>
+      <p>Choose the <gui>Page Layout</gui> tab.</p>
+      <p>Under <gui>Layout</gui>, select <gui>Brochure</gui>.</p>
+      <p>Under <gui>Page Sides</gui>, in the <gui>Include</gui> drop-down list,
+      select <gui>All pages</gui>.</p>
     </item>
     <item>
       <p><gui>প্ৰিন্ট</gui> ক্লিক কৰক।</p>

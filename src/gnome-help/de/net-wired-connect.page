@@ -2,13 +2,19 @@
 <page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wired-connect" xml:lang="de">
 
   <info>
-    <link type="guide" xref="net-wired"/>
+    <link type="guide" xref="net-wired" group="#first"/>
 
-    <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.4" date="2012-02-20" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>GNOME-Dokumentationsprojekt</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+      <years>2015</years>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -30,7 +36,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Christian Kirbach</mal:name>
       <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2014.</mal:years>
+      <mal:years>2011-2016.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -48,7 +54,9 @@
 
   <title>Mit einem Kabelnetzwerk (Ethernet) verbinden</title>
 
-  <p>Bei den meisten kabelgebundenen Netzwerkverbindungen genügt es, ein Netzwerkkabel einzustecken. Das Netzwerksymbol im oberen Panel sollte sich für einige Sekunden drehen oder pulsieren und sich dann in ein Symbol einer Kabelverbindung verwandeln, sobald die Verbindung hergestellt ist.</p>
+  <!-- TODO: create icon manually because it is one overlayed on top of another
+       in real life. -->
+  <p>Bei den meisten kabelgebundenen Netzwerkverbindungen genügt es, ein Netzwerkkabel einzustecken. Das Netzwerksymbol (<media its:translate="no" type="image" src="figures/network-wired-symbolic.svg"><span its:translate="yes">Einstellungen</span></media>) im oberen Panel wird mit drei Punkten angezeigt, solange die Verbindung aufgebaut wird. Die Punkte verschwinden, sobald die Verbindung hergestellt ist.</p>
 
   <p>Falls dies nicht geschieht, sollten Sie zunächst sicherstellen, dass Ihr Netzwerkkabel eingesteckt ist. Ein Ende des Kabels gehört in die rechteckige Ethernet-(Netzwerk-)Buchse Ihres Rechners und das andere Ende in einen Switch, Router, eine Netzwerk-Wanddose oder Ähnliches (abhängig von der Ausstattung Ihres Netzwerks). Bei manchen Geräten zeigt ein Lämpchen neben der Ethernet-Buchse an, dass das Kabel eingesteckt und die Schnittstelle aktiv ist.</p>
 

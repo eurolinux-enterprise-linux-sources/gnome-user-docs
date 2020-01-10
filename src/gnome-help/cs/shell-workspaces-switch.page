@@ -9,13 +9,13 @@
     <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
 
     <credit type="author">
-      <name>GNOME Documentation Project</name>
+      <name>Dokumentační projekt GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Use the workspace selector.</desc>
+    <desc>Jak používat volič pracovních ploch.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
@@ -26,48 +26,35 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Marek Černocký</mal:name>
       <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:years>2014, 2015</mal:years>
     </mal:credit>
   </info>
 
- <title>Switch between workspaces</title>
+ <title>Přepínání mezi pracovními plochami</title>
 
  <steps>  
- <title>Using the mouse:</title>
+ <title>Pomocí myši:</title>
  <item>
-  <p if:test="!platform:gnome-classic">Open the <link xref="shell-terminology">
-  <gui>Activities</gui> overview</link>.</p>
-  <p if:test="platform:gnome-classic">At the top left of the screen, click the
-  <link xref="shell-terminology"><gui>Applications</gui> menu</link> and choose 
-  <gui>Activities Overview</gui>.</p>
+    <p if:test="!platform:gnome-classic">Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui>.</p>
+  <p if:test="platform:gnome-classic">V levé horní části obrazovky klikněte na nabídku <gui xref="shell-introduction#activities">Aplikace</gui> a zvolte <gui>Přehled činností</gui>.</p>
  </item>
  <item>
-  <p>Click on a workspace in the <link xref="shell-terminology">workspace
-  selector</link> on the right side of the screen to view the open windows on
-  that workspace.</p>
+  <p>Klikněte na pracovní plochu ve <link xref="shell-workspaces">voliči pracovních ploch</link> na pravé straně obrazovky, abyste viděli otevřená okna na této pracovní ploše.</p>
  </item>
  <item>
-  <p>Click on any window thumbnail to activate the workspace.</p>
+  <p>Kliknutím na některý z náhledů oken aktivujete pracovní plochu.</p>
  </item>
  </steps>
  
-  <p if:test="platform:gnome-classic">Alternatively, you can switch between
-  workspaces by clicking the workspace identifier at the right-hand side of
-  the window list on the bottom bar and selecting the workspace you want to
-  use from the menu.</p>
+  <p if:test="platform:gnome-classic">Případně se můžete mezi pracovními plochami přepínat tak, že kliknete na ikonu pracovní plochy po pravé straně seznamu oken na spodní liště a v nabídce si vyberete pracovní plochu, kterou chcete používat.</p>
 
  <list>
- <title>Using the keyboard:</title>  
+ <title>Pomocí klávesnice:</title>  
   <item>
-    <p>Press
-    <keyseq><key xref="keyboard-key-super">Super</key><key>Page Up</key></keyseq>
-    to move to a workspace which is above the current workspace in the
-    workspace selector.</p>
+    <p>Zmáčkněte <keyseq><key xref="keyboard-key-super">Super</key> <key>Page Up</key></keyseq> pro přesun na pracovní plochu nad aktuální pracovní plochou ve výběru pracovních ploch.</p>
   </item>
   <item>
-    <p>Press <keyseq><key>Super</key><key>Page Down</key></keyseq> to move to a
-    workspace which is below the current workspace in the workspace selector.
-    </p>
+    <p>Zmáčkněte <keyseq><key>Super</key> <key>Page Down</key></keyseq> pro přesun na pracovní plochu pod aktuální pracovní plochou ve výběru pracovních ploch.</p>
   </item>
  </list>
 

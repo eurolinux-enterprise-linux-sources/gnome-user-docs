@@ -6,15 +6,20 @@
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>টিফানি এন্টপলস্কি</name>
       <email>tiffany@antopolski.com</email>
     </credit>
+    <credit type="author editor">
+      <name>পিটাৰ ক'ভাৰ</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc/>
+    <desc>Print a booklet from a PDF using a single-sided printer.</desc>
   </info>
 
   <title>এটা এটা-কাষৰ প্ৰিন্টাৰত এটা পুস্তিকা প্ৰিন্ট কৰক</title>
@@ -35,10 +40,13 @@
       <p>প্ৰিন্ট ডাইলগ খোলক। ইয়াক সাধাৰণত মেনুত <gui style="menuitem">প্ৰিন্ট</gui> ব্যৱহাৰ কৰি অথবা <keyseq><key>Ctrl</key><key>P</key></keyseq> কিবৰ্ড চৰ্টকাট ব্যৱহাৰ কৰি কৰিব পৰা যাব।</p>
     </item>
     <item>
-      <p><gui>সাধাৰণ</gui> টেব বাছক।</p>
-      <p>Under <gui>Range</gui>, choose <gui>Pages</gui>.</p>
+      <p>Click the <gui>Properties...</gui> button </p>
+      <p>In the <gui>Orientation</gui> drop-down list, make sure that
+      <gui>Landscape</gui> is selected.</p>
+      <p>Click <gui>OK</gui> to go back to the print dialog.</p>
     </item>
     <item>
+      <p>Under <gui>Range and Copies</gui>, choose <gui>Pages</gui>.</p>
       <p>এই ক্ৰমত পৃষ্ঠাসমূহৰ সংখ্যা টাইপ কৰক (n হল পৃষ্ঠাৰ সৰ্বমুঠ সংখ্যা, আৰু ৪ ৰ এটা বহুগুণ):</p>
       <p>n, 1, 2, n-1, n-2, 3, 4, n-3, n-4, 5, 6, n-5, n-6, 7, 8, n-7, n-8, 9, 10, n-9, n-10, 11, 12, n-11…</p>
       <p>…যেতিয়ালৈকে আপুনি সকলো পৃষ্ঠা টাইপ কৰি লোৱা নাই।</p>
@@ -52,14 +60,10 @@
      </note>
     </item>
     <item>
-      <p><gui>পৃষ্ঠাৰ সংস্থাপন</gui> টেব বাছক।</p>
-      <p>Under <gui>Layout</gui>, in the <gui>Two-sided</gui> drop-down list,
-      select <gui>One Sided</gui>.</p>
-      <p>In the <gui>Pages per side</gui> drop-down list, select
-      <gui>2</gui>.</p>
-      <p>In the <gui>Page ordering</gui> drop-down list, select <gui>Left to
-      right</gui>.</p>
-      <p><gui>কেৱল প্ৰিন্ট কৰক</gui> মেনুত, <gui>ঋণাত্মক পাতবোৰ</gui> বাছক।</p>
+      <p>Choose the <gui>Page Layout</gui> tab.</p>
+      <p>Under <gui>Layout</gui>, select <gui>Brochure</gui>.</p>
+      <p>Under <gui>Page Sides</gui>, in the <gui>Include</gui> drop-down list,
+      select <gui>Front sides / right pages</gui>.</p>
     </item>
     <item>
       <p><gui>প্ৰিন্ট</gui> ক্লিক কৰক।</p>
@@ -71,8 +75,9 @@
       <p>প্ৰিন্ট ডাইলগ খোলক। ইয়াক সাধাৰণত মেনুত <gui style="menuitem">প্ৰিন্ট</gui> ব্যৱহাৰ কৰি অথবা <keyseq><key>Ctrl</key><key>P</key></keyseq> কিবৰ্ড চৰ্টকাট ব্যৱহাৰ কৰি কৰিব পৰা যাব।</p>
     </item>
     <item>
-      <p><gui>পৃষ্ঠাৰ সংস্থাপন</gui> টেব বাছক।</p>
-      <p><gui>কেৱল প্ৰিন্ট কৰক</gui> মেনুত, <gui>ধনাত্মক পাতবোৰ</gui> বাছক।</p>
+      <p>Choose the <gui>Page Layout</gui> tab.</p>
+      <p>Under <gui>Page Sides</gui>, in the <gui>Include</gui> drop-down list,
+      select <gui>Back sides / left pages</gui>.</p>
     </item>
     <item>
       <p><gui>প্ৰিন্ট</gui> ক্লিক কৰক।</p>

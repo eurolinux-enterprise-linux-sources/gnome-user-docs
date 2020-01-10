@@ -6,15 +6,20 @@
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
       <email>tiffany@antopolski.com</email>
     </credit>
+    <credit type="author editor">
+      <name>Petr Kovar</name>
+      <email>pknbe@volny.cz</email>
+    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc/>
+    <desc>Füzet nyomtatása PDF-ből egyoldalas nyomtatóval.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Griechisch Erika</mal:name>
@@ -25,7 +30,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Kelemen Gábor</mal:name>
       <mal:email>kelemeng at gnome dot hu</mal:email>
-      <mal:years>2011, 2012, 2013, 2014</mal:years>
+      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -67,10 +72,12 @@
       <p>Nyissa meg a nyomtatási ablakot. Ez általában a menü <gui style="menuitem">Nyomtatás</gui> pontjával, vagy a <keyseq><key>Ctrl</key><key>P</key></keyseq> gyorsbillentyűvel érhető el.</p>
     </item>
     <item>
-      <p>Válassza az <gui>Általános</gui> lapot.</p>
-      <p>A <gui>Tartomány</gui> alatt válassza az <gui>Oldalak</gui> lehetőséget.</p>
+      <p>Kattintson a <gui>Tulajdonságok</gui> gombra</p>
+      <p>A <gui>Tájolás</gui> legördülő listából mindenképp válassza a <gui>Fekvő</gui> értéket.</p>
+      <p>Kattintson az <gui>OK</gui> gombra a visszatéréshez a nyomtatás ablakba.</p>
     </item>
     <item>
+      <p>A <gui>Tartományok és példányszám</gui> alatt válassza az <gui>Oldalak</gui> lehetőséget.</p>
       <p>Írja be a lapok sorszámait a következő sorrendben (az n a lapok teljes száma, és 4 többszöröse):</p>
       <p>n, 1, 2, n-1, n-2, 3, 4, n-3, n-4, 5, 6, n-5, n-6, 7, 8, n-7, n-8, 9, 10, n-9, n-10, 11, 12, n-11…</p>
       <p>…amíg be nem írta az összes oldalt.</p>
@@ -84,11 +91,9 @@
      </note>
     </item>
     <item>
-      <p>Válassza az <gui>Oldalbeállítás</gui> lapot.</p>
-      <p>Az <gui>Elrendezés</gui> alatt a <gui>Kétoldalas</gui> legördülő listából válassza az <gui>Egyoldalas</gui> lehetőséget.</p>
-      <p>A <gui>Lapok oldalanként</gui> legördülő listából válassza a <gui>2</gui> értéket.</p>
-      <p>Az <gui>Oldalsorrend</gui> legördülő listából válassza a <gui>Balról jobbra</gui> lehetőséget.</p>
-      <p>A <gui>Nyomtatandó</gui> menüben válassza a <gui>Páros oldalak</gui> lehetőséget.</p>
+      <p>Válassza az <gui>Oldalelrendezés</gui> lapot.</p>
+      <p>Az <gui>Elrendezés</gui> alatt válassza a <gui>Brosúra</gui> lehetőséget.</p>
+      <p>Az <gui>Oldalak</gui> alatt a <gui>Felvétel</gui> legördülő listából válassza az <gui>Előoldalak / páratlan oldalak</gui> lehetőséget.</p>
     </item>
     <item>
       <p>Nyomja meg a <gui>Nyomtatás</gui> gombot.</p>
@@ -100,8 +105,8 @@
       <p>Nyissa meg a nyomtatási ablakot. Ez általában a menü <gui style="menuitem">Nyomtatás</gui> pontjával, vagy a <keyseq><key>Ctrl</key><key>P</key></keyseq> gyorsbillentyűvel érhető el.</p>
     </item>
     <item>
-      <p>Válassza az <gui>Oldalbeállítás</gui> lapot.</p>
-      <p>A <gui>Nyomtatandó</gui> menüben válassza a <gui>Páratlan oldalak</gui> lehetőséget.</p>
+      <p>Válassza az <gui>Oldalelrendezés</gui> lapot.</p>
+      <p>Az <gui>Oldalak</gui> alatt a <gui>Felvétel</gui> legördülő listából válassza a <gui>Hátoldalak / páros oldalak</gui> lehetőséget.</p>
     </item>
     <item>
       <p>Nyomja meg a <gui>Nyomtatás</gui> gombot.</p>

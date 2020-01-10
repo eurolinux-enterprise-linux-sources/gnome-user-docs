@@ -7,14 +7,15 @@
     <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
     <revision pkgversion="3.10" date="2013-11-03" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Le projet de documentation GNOME</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -36,7 +37,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2014</mal:years>
+      <mal:years>2011-2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -68,17 +69,24 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
   <title>Comment les privilèges administrateur fonctionnent-ils ?</title>
 
-  <p>Tout comme les fichiers que <em>vous</em> créez, un certain nombre de fichiers présents dans l'ordinateur sont nécessaires au bon fonctionnement du système. Si ces <em>fichiers système</em> importants sont modifiés de manière incorrecte, ils peuvent endommager le système de différentes manières. C'est la raison pour laquelle il n'est pas possible de les modifier par défaut. Certaines applications modifient également des parties importantes du système, et sont par conséquent aussi protégées.</p>
+  <p>As well as the files that <em>you</em> create, your computer has a number
+  of files which are needed by the system for it to work properly. If these
+  important <em>system files</em> are changed incorrectly they can cause
+  various things to break, so they are protected from changes by default.
+  Certain applications also modify important parts of the system, and so are
+  also protected.</p>
 
-  <p>The way that they are protected is by only allowing users with
-  <em>administrative privileges</em> to change the files or use the
-  applications. In day-to-day use, you will not need to change any system files
-  or use these applications, so by default you do not have administrative
-  privileges.</p>
+  <p>Cette protection consiste à permettre seulement aux utilisateurs disposant de <em>privilèges administrateur</em> de modifier ce type de fichiers ou d'utiliser ces applications. Dans le cadre d'une utilisation classique, il n'est pas nécessaire de modifier les fichiers système ni d'utiliser ces applications, c'est pourquoi les comptes utilisateur ne disposent pas de privilèges administrateur par défaut.</p>
 
   <p>Il peut arriver que vous ayez besoin d'utiliser ces applications, vous pouvez donc obtenir des privilèges administrateur provisoires pour vous permettre de faire des changements. Si des privilèges administrateurs sont requis pour accéder à une application, un mot de passe vous sera demandé. Si par exemple vous souhaitez installer un nouveau logiciel, le programme d'installation du logiciel (gestionnaire de paquets) vous demande votre mot de passe administrateur pour pouvoir ajouter le nouveau logiciel au système. Une fois terminé, les privilèges administrateur sont à nouveau désactivés.</p>
 

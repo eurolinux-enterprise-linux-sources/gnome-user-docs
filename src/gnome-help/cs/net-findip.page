@@ -7,27 +7,28 @@
 
     <revision pkgversion="3.7.1" version="0.2" date="2012-11-16" status="outdated"/>
     <revision pkgversion="3.10" date="2013-10-30" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="author">
       <name>Jim Campbell</name>
-      <email its:translate="no">jwcampbell@gmail.com</email>
+      <email>jwcampbell@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Knowing your IP address can help you troubleshoot network problems.</desc>
+    <desc>Znalost své adresy IP může pomoci při řešení problémů se sítí.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
@@ -38,51 +39,40 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Marek Černocký</mal:name>
       <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:years>2014, 2015</mal:years>
     </mal:credit>
   </info>
 
-  <title>Find your IP address</title>
+  <title>Zjištění vaší IP adresy</title>
 
-  <p>Knowing your IP address can help you troubleshoot problems with your
-  internet connection. You may be surprised to learn that you have <em>two</em>
-  IP addresses: an IP address for your computer on the internal network and an
-  IP address for your computer on the internet.</p>
+  <p>Znalost svojí adresy IP může pomoci při řešení problémů s internetovým připojením. Můžete být překvapení zjištěním, že máte <em>dvě</em> adresy IP: jednu pro svůj počítač ve vnitřní síti a jedno pro komunikaci vně na Internetu.</p>
 
   <steps>
-    <title>Find your internal (network) IP address</title>
+    <title>Zjištění vaší interní (síťové) adresy IP</title>
     <item>
-      <p>Open the <gui xref="shell-terminology">Activities</gui> overview and
-      start typing <gui>Network</gui>.</p>
+      <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Síť</gui>.</p>
     </item>
     <item>
-      <p>Click on <gui>Network</gui> to open the panel.</p>
+      <p>Kliknutím na <gui>Síť</gui> otevřete příslušný panel.</p>
     </item>
     <item>
-      <p>Select <gui>Wi-Fi</gui> or <gui>Wired</gui> from the list on the left,
-      depending on which network connection you want to find the IP address
-      for.</p>
-    </item>
-    <item>
-      <p>You will see the IP address for a wired connection on the right, or
-      open the connection details by pressing on the
-      <gui style="button"><media its:translate="no" type="image" src="figures/emblem-system-symbolic.svg" width="16" height="16"><span its:translate="yes">details</span></media></gui>
-      button to see the <gui>Details</gui> for wireless network.</p>
+      <p>V seznamu nalevo vyberte připojení – <gui>Wi-Fi</gui> nebo <gui>Drátové</gui>.</p>
+      <p>Adresa IP pro drátové připojení bude zobrazena napravo.</p>
+      
+      <p>V panelu <gui>Podrobnosti</gui> si kliknutím na tlačítko <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">nastavení</span></media> si zobrazte adresu IP pro bezdrátovou síť.</p>
     </item>
   </steps>
 
   <steps>
-  	<title>Find your external (internet) IP address</title>
+  	<title>Zjištění vaší externí (internetové) adresy IP</title>
     <item>
-      <p>Visit
-      <link href="http://whatismyipaddress.com/">whatismyipaddress.com</link>.</p>
+      <p>Navštivte <link href="http://whatismyipaddress.com/">www.mojeip.cz</link>.</p>
     </item>
     <item>
-      <p>The site will display your external IP address for you.</p>
+      <p>Na webové stránce najdete svoji externí adresu IP.</p>
     </item>
   </steps>
 
-  <p>Depending on how your computer connects to the internet, both of these
-  addresses may be the same.</p>
+  <p>V závislosti na tom, jak jste připojeni k Internetu, mohou být obě tyto adresy stejné.</p>
 
 </page>

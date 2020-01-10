@@ -14,47 +14,47 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Press <keyseq><key>Ctrl</key><key>S</key></keyseq> to select multiple
-    files which have similar names.</desc>
+    <desc>Tryck på <keyseq><key>Ctrl</key><key>S</key></keyseq> för att markera flera filer som har liknande namn.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2014, 2015, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
   </info>
 
   <title>Markera filer efter mönster</title>
 
-  <p>You can select files in a folder using a pattern on the file name.
-  Press <keyseq><key>Ctrl</key><key>S</key></keyseq> to bring up the
-  <gui>Select Items Matching</gui> window. Type in a pattern using
-  common parts of the file names plus wild card characters. There are
-  two wild card characters available:</p>
+  <p>Du kan markera filer i en mapp genom att använda ett mönster för filnamnen. Tryck på <keyseq><key>Ctrl</key><key>S</key></keyseq> för att visa fönstret <gui>Markera matchande objekt</gui>. Skriv in ett mönster som innehåller gemensamma delar av filnamnen samt jokertecken. Det finns två jokertecken:</p>
 
   <list style="compact">
-    <item><p><file>*</file> matches any number of any characters, even
-    no characters at all.</p></item>
-    <item><p><file>?</file> matches exactly one of any character.</p></item>
+    <item><p><file>*</file> matchar vilket antal tecken som helst, även inga tecken.</p></item>
+    <item><p><file>?</file> matchar exakt ett tecken, vilket som helst.</p></item>
   </list>
 
   <p>Till exempel:</p>
 
   <list>
-    <item><p>If you have an OpenDocument Text file, a PDF file, and an
-    image that all have the same base name <file>Invoice</file>, select
-    all three with the pattern</p>
-    <example><p><file>Invoice.*</file></p></example></item>
+    <item><p>Om du har en OpenDocument-textfil, en PDF-fil och en bild som alla har samma basnamn <file>Faktura</file>, välj alla tre med mönstret</p>
+    <example><p><file>Faktura.*</file></p></example></item>
 
-    <item><p>If you have some photos that are named like
-    <file>Vacation-001.jpg</file>, <file>Vacation-002.jpg</file>,
-    <file>Vacation-003.jpg</file>; select them all with the pattern</p>
-    <example><p><file>Vacation-???.jpg</file></p></example></item>
+    <item><p>Om du har några foton som är namngivna i stil med <file>Semester-001.jpg</file>, <file>Semester-002.jpg</file>, <file>Semester-003.jpg</file>; välj dem alla med mönstret</p>
+    <example><p><file>Semester-???.jpg</file></p></example></item>
 
-    <item><p>If you have photos as before, but you have edited some of them and
-    added <file>-edited</file> to the end of the file name of the photos you
-    have edited, select the edited photos with</p>
-    <example><p><file>Vacation-???-edited.jpg</file></p></example></item>
+    <item><p>Om du har foton som ovan, men du har redigerat några av dem och lagt till <file>-redigerad</file>på slutet av filnamnet på fotona du redigerat, välj de redigerade fotona med</p>
+    <example><p><file>Semester-???-redigerad.jpg</file></p></example></item>
   </list>
 
 </page>

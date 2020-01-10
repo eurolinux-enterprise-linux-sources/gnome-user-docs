@@ -9,7 +9,7 @@
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
 
     <credit type="author">
-      <name>GNOME Documentation Project</name>
+      <name>Dokumentační projekt GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="author">
@@ -31,7 +31,7 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>The screen resolution may be set incorrectly.</desc>
+    <desc>Možná je nastavené nesprávné rozlišení obrazovky.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
@@ -42,56 +42,40 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Marek Černocký</mal:name>
       <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:years>2014, 2015</mal:years>
     </mal:credit>
   </info>
 
-<title>Why do things look fuzzy/pixelated on my screen?</title>
+<title>Proč vše na mojí obrazovce vypadá rozmazané/kostičkované?</title>
 
-<p>This can happen because the display resolution that you have set it is not
-the right one for your screen.</p>
+<p>To se může stát, protože rozlišení displeje, které máte nastavené, neodpovídá skutečnému rozlišení vaší obrazovky.</p>
 
-<p>To solve this, open the <gui xref="shell-terminology">Activities</gui>
-overview and start typing <gui>Displays</gui>. Click on <gui>Displays</gui>
-to open the panel. Try some of the <gui>Resolution</gui> options and set the
-one that makes the screen look better.</p>
+<p>Když to chcete vyřešit, otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Displeje</gui>. Kliknutím na <gui>Displeje</gui> otevřete příslušný panel. Vyzkoušejte volby <gui>Rozlišení</gui> a nechte nastavenou tu, se kterou vypadá obrazovka nejlépe.</p>
 
 <section id="multihead">
-  <title>When multiple displays are connected</title>
+  <title>Když je připojeno více displejů</title>
 
-  <p>If you have two displays connected to the computer (for example, a normal
-  monitor and a projector), the displays might have different resolutions.
-  However, the computer's graphics card can only display the screen in one
-  resolution at a time, so at least one of the displays might look fuzzy.</p>
+  <p>Pokud máte k počítači připojeny dva displeje (například normální monitor a projektor), mohou mít různé rozlišení. Protože ale grafická karta umí zobrazovat obrazovku jen v jednom rozlišení současně, může jeden z displejů vypadat rozmazaně.</p>
 
-  <p>You can set it so that the two displays have different resolutions, but
-  you will not be able to display the same thing on both screens
-  simultaneously. In effect, you will have two independent screens connected at
-  the same time. You can move windows from one screen to another, but you
-  cannot show the same window on both screens at once.</p>
+  <p>Můžete nastavit, aby oba displeje měly různá rozlišení, ale nebudete pak moci na obou zobrazovat naráz tu stejnou obrazovku. Ve výsledku budete mít naráz dvě nezávislé obrazovky. Můžete mezi nimi přesouvat okna, ale nemůžete to stejné okno zobrazit na obou naráz.</p>
 
-  <p>To set up the displays so that they each have their own resolution:</p>
+  <p>Jak nastavit displeje, aby každý z nich měl své vlastní rozlišení:</p>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-terminology">Activities</gui> overview and
-      start typing <gui>Displays</gui>.</p>
+      <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Displeje</gui>.</p>
     </item>
     <item>
       <p>Kliknutím na <gui>Displeje</gui> otevřete příslušný panel.</p>
     </item>
     <item>
-      <p>The displays should be listed as <gui>Mirrored</gui>. Select your main
-      display.</p>
+      <p>Displeje by měly být uvedené jako <gui>Zrcadlené</gui>. Vyberte svůj hlavní displej.</p>
     </item>
     <item>
-      <p>Select <gui>Primary</gui> in the list of display configurations, and
-      then click <gui style="button">Apply</gui> to save.</p>
+      <p>V seznamu nastavení displejů vyberte <gui>Hlavní</gui> a pak klikněte na <gui style="button">Použít</gui>, aby se nastavení uložilo.</p>
     </item>
     <item>
-      <p>Select each display in turn from the gray box at the top of the
-      <gui>Displays</gui> window. Change the <gui>Resolution</gui> until that
-      display looks right.</p>
+      <p>Vybírejte jednotlivé displeje v šedém poli v horní části okna <gui>Displeje</gui>. Měňte u nich <gui>Rozlišení</gui>, dokud každý displej nevypadá správně.</p>
     </item>
   </steps>
 

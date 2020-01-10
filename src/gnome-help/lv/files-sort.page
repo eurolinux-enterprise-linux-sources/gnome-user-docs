@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-sort" xml:lang="lv">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-sort" xml:lang="lv">
 
   <info>
-    <link type="guide" xref="files"/>
+    <link type="guide" xref="files#common-file-tasks"/>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-25" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -34,10 +35,10 @@
 <section id="icon-view">
   <title>Ikonu skats</title>
 
-  <p>To sort files in a different order, click the
-  <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">View options</span></media></gui>
-  button in the toolbar and choose <gui>By Name</gui>, <gui>By Size</gui>,
-  <gui>By Type</gui>, <gui>By Modification Date</gui>, or <gui>By Access
+  <p>To sort files in a different order, click the view options button in the
+  <!-- FIXME: Get a tooltip added for "View options" -->
+  toolbar and choose <gui>By Name</gui>, <gui>By Size</gui>, <gui>By
+  Type</gui>, <gui>By Modification Date</gui>, or <gui>By Access
   Date</gui>.</p>
 
   <p>Piemēram, ja jūs izvēlaties <gui>Pēc nosaukuma </gui>, datnes tiks sakārtoti pēc to nosaukumiem alfabētiskā secībā. Skatiet <link xref="#ways"/>, lai uzzinātu par citām iespējām.</p>
@@ -52,11 +53,11 @@
 
   <p>Lai sakārtotu datnes citā secībā, klikšķiniet uz kolonnu virsrakstiem. Piemēram, spiediet <gui>Tips</gui>, lai sakārtotu datnes pēc to tipa. Nospiediet kolonnas virsrakstu vēlreiz, lai apgrieztu secību.</p>
   <p>In list view, you can show columns with more attributes and sort on those
-  columns. Click the
-  <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">View options</span></media></gui>
-  button in the toolbar, pick <gui>Visible Columns</gui> and select the columns
-  that you want to be visible. You will then be able to sort by those columns.
-  See <link xref="nautilus-list"/> for descriptions of available columns.</p>
+  columns. Click the view options button in the toolbar, pick <gui>Visible
+  <!-- FIXME: Get a tooltip added for "View options" -->
+  Columns…</gui> and select the columns that you want to be visible. You will
+  then be able to sort by those columns. See <link xref="nautilus-list"/> for
+  descriptions of available columns.</p>
 
 </section>
 
@@ -65,25 +66,20 @@
 
   <terms>
     <item>
-      <title>Pēc nosaukuma</title>
+      <title>Nosaukums</title>
       <p>Sakārto alfabētiski pēc datņu nosaukumiem.</p>
     </item>
     <item>
-      <title>Pēc izmēra</title>
+      <title>Izmērs</title>
       <p>Sakārto pēc datņu izmēra (cik vietas tie aizņem diskā). Pēc noklusējuma sakārtojums sākas ar mazāko un beidzas ar lielāko datni.</p>
     </item>
     <item>
-      <title>Pēc tipa</title>
+      <title>Tips</title>
       <p>Sakārto alfabētiskā secībā pēc datņu tipa. Viena tipa datnes ir sagrupētas kopā un sakārtotas pēc nosaukuma.</p>
     </item>
     <item>
-      <title>Pēc izmaiņu datuma</title>
+      <title>Pēdējo reizi mainīts</title>
       <p>Sakārto pēc datuma un laika, kad datnē ieviestas pēdējās izmaiņas. Pēc noklusējuma sakārto no vecākā uz jaunāko datni.</p>
-    </item>
-    <item>
-      <title>By Access Date</title>
-      <p>Sorts by the date and time that a file was last read. Sorts from
-      oldest to newest by default.</p>
     </item>
   </terms>
 

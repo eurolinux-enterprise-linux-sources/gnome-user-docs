@@ -8,24 +8,25 @@
     <revision pkgversion="3.8.0" date="2013-03-13" status="candidate"/>
     <revision pkgversion="3.9.92" date="2013-09-18" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-20" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="author">
       <name>Phil Bull</name>
-      <email its:translate="no">philbull@gmail.com</email>
+      <email>philbull@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <desc>Ignorer les appuis de touches rapides et identiques.</desc>
@@ -45,7 +46,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2014</mal:years>
+      <mal:years>2011-2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -77,6 +78,12 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
   <title>Activation des touches rebond</title>
@@ -85,7 +92,7 @@
 
   <steps>
     <item>
-      <p>Ouvrez la vue d'ensemble des <link xref="shell-terminology">Activités</link> et commencez à saisir <gui>Accès universel</gui>.</p>
+      <p>Ouvrez la vue d'ensemble des <link xref="shell-introduction#activities">Activités</link> et commencez à saisir <gui>Accès universel</gui>.</p>
     </item>
     <item>
       <p>Cliquez sur l'icône <gui>Accès universel</gui> pour afficher le panneau.</p>
@@ -94,13 +101,13 @@
       <p>À la rubrique <gui>Saisie</gui>, cliquez sur <gui>Assistant de saisie (AccessX)</gui>.</p>
     </item>
     <item>
-      <p>Switch <gui>Bounce Keys</gui> to <gui>ON</gui>.</p>
+      <p>Activez les <gui>Touches rebond</gui> en basculant l'interrupteur sur <gui>Activé</gui>.</p>
     </item>
   </steps>
 
   <note style="tip">
     <title>Activation/désactivation rapide des touches rebond</title>
-    <p>Vous pouvez aussi activer/désactiver les touches rebond en cliquant sur l'<link xref="a11y-icon">icône d'accessibilité</link> de la barre supérieure du bureau et en sélectionnant <gui>Rebonds de touches</gui>. Mais cette icône ne devient visible qu'après avoir déjà activé un ou plusieurs paramètres dans le panneau <gui>Accès universel</gui>.</p>
+    <p>Vous pouvez aussi activer/désactiver les touches rebond en cliquant sur l'<link xref="a11y-icon">icône d'accessibilité</link> de la barre supérieure du bureau et en sélectionnant <gui>Touches rebond</gui>. Mais cette icône ne devient visible qu'après avoir déjà activé un ou plusieurs paramètres dans le panneau <gui>Accès universel</gui>.</p>
   </note>
 
   <p>Faites glisser le curseur <gui>Délai :</gui> pour ajuster le temps d'attente pendant lequel il ne se passe rien s'il y a plusieurs appuis sur une même touche. Cochez <gui>Émettre un bip si une touche est rejetée</gui> pour que votre ordinateur émette un son chaque fois qu'il ignore une pression parce que le temps d'attente programmé n'est pas encore écoulé.</p>

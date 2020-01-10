@@ -2,14 +2,13 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-connect" xml:lang="lv">
 
   <info>
-    <link type="guide" xref="files" group="more"/>
+    <link type="guide" xref="files#more-file-tasks"/>
     <link type="guide" xref="sharing"/>
 
     <revision pkgversion="3.6.0" date="2012-10-06" status="review"/>
     <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
     <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
-
-    <desc>Skatiet un rediģējiet datnes citā datorā caur FTP, SSH, Windows koplietojumiem vai WebDAV.</desc>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -19,25 +18,47 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Skatiet un rediģējiet datnes citā datorā caur FTP, SSH, Windows koplietojumiem vai WebDAV.</desc>
+
   </info>
 
 <title>Pārlūkojiet datnes uz servera vai tīkla koplietojumā</title>
 
 <p>Jūs varat savienoties ar serveri vai tīkla koplietojumu, lai pārlūkotu un skatītu datnes šajā serverī tieši tāpat, kā tas būtu jūsu datorā. Tas ir ērts veids, lai internetā lejupielādētu vai augšupielādētu datnes, vai dalītos ar tām starp cilvēkiem jūsu lokālajā tīkla.</p>
 
-<p>Lai pārlūkotu datnes caur tīklu, atveriet <app>Datnes</app> lietotni no <gui>Aktivitātes</gui> pārskata. Tad spiediet <gui>Pārlūkot tīklu</gui> sānjoslā. Datņu pārvaldnieks atradīs datorus jūsu lokālajā tīklā, kas izrāda spēju apkalpot datnes. Ja vēlaties savienoties ar internetā esošam serverim vai neredzat datoru, kuru meklējāt, jūs varat pašrocīgi savienoties ar serveri, ievadot tā interneta/tīkla adresi.</p>
+<p>To browse files over the network, open the <app>Files</app>
+application from the <gui>Activities</gui> overview, and click
+<gui>Other Locations</gui> in the sidebar. The file manager
+will find any computers on your local area network that advertize
+their ability to serve files. If you want to connect to a server
+on the internet, or if you do not see the computer you're looking
+for, you can manually connect to a server by typing in its
+internet/network address.</p>
 
 <steps>
   <title>Savienoties ar datņu serveri</title>
-  <item><p>Datņu pārvaldniekā spiediet <gui>Savienoties ar serveri</gui> sānu joslā.</p>
+  <item><p>Datņu pārvaldniekā spiediet <gui>Citas vietas</gui> sānu joslā.</p>
   </item>
-  <item><p>Ievadiet servera adresi, <link xref="#urls">URL</link> formātā. Sīkāka informācija par atbalstītajiem URL ir pieejama <link xref="#types">sarakstā zemāk</link>.</p>
+  <item><p>In <gui>Connect to Server</gui>, enter the address of the server, in
+  the form of a
+   <link xref="#urls">URL</link>. Details on supported URLs are
+   <link xref="#types">listed below</link>.</p>
   <note>
     <p>Ja jau esat savienojies ar šo serveri iepriekš, jūs varat spiest uz tā <gui>Neseno serveru</gui> sarakstā.</p>
   </note>
   </item>
-  <item><p>Spiediet <gui>Savienoties</gui>. Atvērsies jauns logs, rādot serverī esošās datnes. Jūs varat pārlūkot datnes tāpat kā savā datorā. Serveris automātiski tiks pievienots sānjoslā un turpmāk jūs tam varēsiet ātri piekļūt.</p>
+  <item>
+    <p>Click <gui>Connect</gui>. The files on the server will be shown. You
+    can browse the files just as you would for those on your own computer. The
+    server will also be added to the sidebar so you can access it quickly in
+    the future.</p>
   </item>
 </steps>
 
@@ -104,9 +125,20 @@
 <item>
   <title>WebDAV un drošais WebDAV</title>
   <p>Balstīts uz HTTP protokolu, ko izmanto tīmeklī, WebDAV dažreiz tiek lietots, lai lokālajos tīklos dalītos ar datnēm un glabātu datnes internetā.  Ja serveris, ar ko savienojaties, ļauj veikt drošu savienojumu, jums vajadzētu izvēlēties šo iespēju. Drošais WebDAV lieto SSL šifrēšanu, lai citi lietotāji nevarētu uzzināt jūsu paroli.</p>
-  <p>Tipisks WebDAV URL izskatās šādi:</p>
+  <p>WebDAV URL izskatās šādi:</p>
   <example>
-    <p><sys>http://piemērs.datora_nosaukums.lv/ceļš</sys></p>
+    <p><sys>dav://piemērs.datora_nosaukums.lv/ceļš</sys></p>
+  </example>
+</item>
+<item>
+  <title>NFS koplietojums</title>
+  <p>UNIX computers traditionally use the Network File System protocol to
+  share files over a local network. With NFS, security is based on the UID of
+  the user accessing the share, so no authentication credentials are
+  needed when connecting.</p>
+  <p>Tipisks NFS koplietojuma URL izskatās šādi:</p>
+  <example>
+    <p><sys>nfs://servera_nosaukums/ceļš</sys></p>
   </example>
 </item>
 </terms>

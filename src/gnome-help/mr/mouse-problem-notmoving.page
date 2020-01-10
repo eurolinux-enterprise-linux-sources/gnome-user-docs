@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="mouse-problem-notmoving" xml:lang="mr">
-<info>
+
+  <info>
     <link type="guide" xref="mouse#problems"/>
 
-    <desc>माउस कार्य करत नाही, त्याची तपासणी कशी करायची.</desc>
-
-    <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
+    <revision pkgversion="3.8" date="2013-03-13" status="candidate"/>
+    <!-- TODO: reorganise page and tidy because it's one ugly wall of text -->
+    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
         <name>Phil Bull</name>
@@ -15,8 +16,11 @@
       <name>Shaun McCance</name>
       <email>shaunm@gnome.org</email>
     </credit>
+
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
+    <desc>How to check why your mouse is not working.</desc>
+  
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Aniket Deshpande &lt;djaniketster@gmail.com&gt;, 2013; संदिप शेडमाके</mal:name>
       <mal:email>sshedmak@redhat.com</mal:email>
@@ -34,26 +38,6 @@
  <p>USB माउस असल्यास (आयताकरा कनेक्टरसह), वेगळ्या USB पोर्टमध्ये जोडणी करायचे प्रयत्न करा. PS/2 माउस असल्यास (छोटे, सहा पिन्स असलेले गोलाकार कनेक्टरसह), ते जांबळ्या कळफलक पोर्ट ऐवजी हिरव्या माउस पोर्टमध्ये जुळले आहे याची खात्री करा. जुळले नसल्यास तुम्हाला संगणक सुरू करावे लागेल.</p>
 </section>
 
-<section id="connected">
- <title>संगणकातर्फे माउस ओळखले गेले याची तपासणी करा</title>
- <steps>
-  <item><p><gui>कृती </gui> अवलोकनपासून <app>टर्मिनल</app> ॲप्लिकेशन उघडा.</p></item>
-  <item>
-   <p>टर्मिनल पटलात, <cmd>xsetpointer -l | grep Pointer</cmd> टाइप करा, येथे हुबेहुब दिसल्याप्रमाणे, आणि <key>Enter</key> दाबा.</p>
-  </item>
-  <item>
-   <p>माउस साधनांचे छोटी सूची आढळेल. किमान एक घटकात <sys>[XExtensionPointer]</sys> समाविष्टीत आहे, आणि <sys>[XExtensionPointer]</sys> घटकांपैकी एकाकडे माउसचे नाव डाव्याबाजूस आहे, याची खात्री करा.</p>
-  </item>
-  <item>
-   <p><sys>[XExtensionPointer]</sys> पाठोपाठ माउसचे नाव असणारी नोंदणी न आढळल्यास, माउस संगणकाशी परिचीत होणार नाही. नोंदणी अस्तित्वात असल्यास, माउस संगणकातर्फे ओळखले गेले नाही. या घटनामध्ये माउस <link xref="mouse-problem-notmoving#plugged-in">प्लग्ड इन</link> आहे आणि <link xref="mouse-problem-notmoving#broken">कार्यरत स्थितीत</link> आहे याची खात्री करा.</p>
-  </item>
- </steps>
-
- <p>माउसकडे सिरिअल (RS-232) कनेकटर असल्यास, कार्यरत करण्यासाठी तुम्हाला काही अगाऊ पद्धती करावे लागतील. माउसच्या मेक किंवा मॉडलवर आधारित पद्धती अवलंबीत असू शकतात.</p>
-
- <p>माउस डिटेक्शनसह अडचणींच्या निवारण करणे क्लिष्ठ होऊ शकते. माउस योग्यरित्या ओळखले गेले नसल्यास वितरण किंवा विक्रेतापासून सपोर्टकरिता विचारा.</p>
-</section>
-
 <section id="broken">
  <title>माउस प्रत्यक्षात कार्य करते किंवा नाही याची तपासणी करा</title>
  <p>माउसला वेगळ्या संगणकाशी जोडणी करा आणि ते कार्य करते किंवा नाही, ते पहा.</p>
@@ -64,8 +48,12 @@
 <section id="wireless-mice">
  <title>वायरलेस माइस तपासत आहे</title>
 
- <list>
-   <item><p>माउस सुरू आहे याची खात्री करा. माउस पूर्णपणे बंद करण्यासाठी बहुतांशवेळी माउसच्या तळाशी एक स्विच असते, जेणेकरून सतत वेकअप ऐवजी त्यास एका ठिकाणपासून दुसऱ्या ठिकाणापर्यंत हलवणे शक्य होईल.</p></item>
+  <list>
+    <item>
+      <p>Make sure the mouse is turned on. There is often a switch on the
+      bottom of the mouse to turn the mouse off completely, so you can take it
+      with you without it constantly waking up.</p>
+    </item>
    <item><p>ब्ल्युटूथ माउसचा वापर करत असल्यास, माउसला संगणकाशी जुळले आहे याची खात्री करा. <link xref="bluetooth-connect-device"/> पहा.</p></item>
   <item>
    <p>माउस पॉइंटर आत्ता हलत असल्यास बटन क्लिक करा. काही वायरलेस माइस पावर साठवण्याकरिता स्लीपमध्ये जातात, ज्यामुळे बटन क्लिक करेपर्यंत प्रतिसाद देत नाही. <link xref="mouse-wakeup"/> पहा.</p>

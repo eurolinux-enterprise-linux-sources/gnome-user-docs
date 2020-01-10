@@ -8,28 +8,28 @@
     <revision pkgversion="3.8.0" date="2013-03-13" status="candidate"/>
     <revision pkgversion="3.9.92" date="2013-09-18" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-20" status="final"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
-      <email its:translate="no">shaunm@gnome.org</email>
+      <email>shaunm@gnome.org</email>
     </credit>
     <credit type="author">
       <name>Phil Bull</name>
-      <email its:translate="no">philbull@gmail.com</email>
+      <email>philbull@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Have a delay between a key being pressed and that letter appearing on
-    the screen.</desc>
+    <desc>Jak ponechat prodlevu mezi zmáčknutím klávesy a napsáním písmena na obrazovku.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
@@ -40,55 +40,37 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Marek Černocký</mal:name>
       <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:years>2014, 2015</mal:years>
     </mal:credit>
   </info>
 
-  <title>Turn on slow keys</title>
+  <title>Zapnutí pomalých kláves</title>
 
-  <p>Turn on <em>slow keys</em> if you would like there to be a delay between
-  pressing a key and that letter being displayed on the screen. This means that
-  you have to hold down each key you want to type for a little while before it
-  appears. Use slow keys if you accidentally press several keys at a time when
-  you type, or if you find it difficult to press the right key on the keyboard
-  first time.</p>
+  <p><em>Pomalé klávesy</em> zapněte, když chcete aby byla prodleva mezi tím, co zmáčknete klávesu a tím, co se písmeno objeví na obrazovce. Znamená to, že musíte každou klávesu chvíli podržet zmáčknutou, než se objeví to, co chcete napsat. Tuto možnost používejte, když při psaní nechtěně mačkáte několik kláves naráz, nebo když je pro vás obtížné zmáčknout na klávesnici správnou klávesu napoprvé.</p>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-terminology">Activities</gui> overview and
-      start typing <gui>Universal Access</gui>.</p>
+      <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Univerzální přístup</gui>.</p>
     </item>
     <item>
       <p>Kliknutím na <gui>Univerzální přístup</gui> otevřete příslušný panel.</p>
     </item>
     <item>
-      <p>Press <gui>Typing Assist (AccessX)</gui> in the <gui>Typing</gui>
-      section.</p>
+      <p>V části <gui>Psaní</gui> zmáčkněte <gui>Pomáhat s psaním</gui>.</p>
     </item>
     <item>
-      <p>Switch <gui>Slow Keys</gui> to <gui>ON</gui>.</p>
+      <p>Přepněte vypínač <gui>Pomalé klávesy</gui> na <gui>❙</gui> (zapnuto).</p>
     </item>
   </steps>
 
   <note style="tip">
-    <title>Quickly turn slow keys on and off</title>
-    <p>Under <gui>Enable by Keyboard</gui>, select
-    <gui>Turn on accessibility features from the keyboard</gui> to
-    turn slow keys on and off from the keyboard. When this option is selected,
-    you can press and hold <key>Shift</key> for eight seconds to enable or
-    disable slow keys.</p>
-    <p>You can also turn slow keys on and off by clicking the
-    <link xref="a11y-icon">accessibility icon</link> on the top bar and
-    selecting <gui>Slow Keys</gui>. The accessibility icon is visible when
-    one or more settings have been enabled from the <gui>Universal Access</gui>
-    panel.</p>
+    <title>Rychlé zapnutí nebo vypnutí pomalých kláves</title>
+    <p>Abyste mohli funkci pomalých kláves zapínat a vypínat pomocí klávesnice, v části <gui>Zapnout z klávesnice</gui> vyberte <gui>Zapínat funkce zpřístupnění pomocí klávesnice</gui>. Když je tato volba zapnutá, můžete zmáčknout na osm vteřin klávesu <gui>Shift</gui> a tím pomalé klávesy zapnout nebo vypnout.</p>
+    <p>Pomalé klávesy můžete zapnout a vypnout také kliknutím na <link xref="a11y-icon">ikonu zpřístupnění</link> na horní liště a následujícím výběrem položky <gui>Pomalé klávesy</gui>. Ikona zpřístupnění je viditelná, když je zapnuté aspoň jedno nastavení v panelu <gui>Univerzální přístup</gui>.</p>
   </note>
 
-  <p>Use the <gui>Acceptance delay</gui> slider to control how long you have to
-  hold a key down for it to register.</p>
+  <p>Pomocí táhla <gui>Zpoždění přijetí</gui> můžete řídit, jak dlouho je třeba držet klávesu zmáčknutou, aby byla zaregistrována.</p>
 
-  <p>You can have your computer make a sound when you press a key, when a key
-  press is accepted, or when a key press is rejected because you didn't hold
-  the key down long enough.</p>
+  <p>Můžete nechat počítač vydat zvuk pokaždé, když zmáčknete klávesu, když je klávesa přijata, nebo když je klávesa odmítnuta, protože jste ji nedrželi dostatečně dlouho.</p>
 
 </page>

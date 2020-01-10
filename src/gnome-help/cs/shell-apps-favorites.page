@@ -3,13 +3,13 @@
 
   <info>
     <link type="seealso" xref="shell-apps-open"/>
-    <link type="guide" xref="shell-overview#apps"/>
+    <link type="guide" xref="shell-overview#desktop"/>
 
     <revision pkgversion="3.6.0" date="2012-10-14" status="review"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
 
     <credit type="author">
-      <name>GNOME Documentation Project</name>
+      <name>Dokumentační projekt GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="editor">
@@ -17,14 +17,14 @@
       <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
-      <name>Jana Svarova</name>
+      <name>Jana Švárová</name>
       <email>jana.svarova@gmail.com</email>
       <years>2013</years>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Add (or remove) frequently-used program icons on the dash.</desc>
+    <desc>Jak přidat/odebrat ikony často používaných programů do/z oblíbených.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
@@ -35,41 +35,30 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Marek Černocký</mal:name>
       <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:years>2014, 2015</mal:years>
     </mal:credit>
   </info>
 
-  <title>Pin your favorite apps to the dash</title>
+  <title>Připíchnutí často používaných aplikací do oblíbených</title>
 
-  <p>To add an application to the <link xref="shell-terminology">dash</link>
-  for easy access:</p>
+  <p>Když si chcete přidat aplikaci do <link xref="shell-introduction#activities">oblíbených</link>, abyste k ní měli rychlý přístup:</p>
 
   <steps>
     <item>
-      <p if:test="!platform:gnome-classic">Open the
-      <link xref="shell-terminology"><gui>Activities</gui> overview</link> by
-      clicking <gui>Activities</gui> at the top left of the screen</p>
-      <p if:test="platform:gnome-classic">Click the
-      <link xref="shell-terminology"><gui>Applications</gui> menu</link> at the
-      top left of the screen and choose the <gui>Activities Overview</gui> item
-      from the menu.</p></item>
+      <p if:test="!platform:gnome-classic">Otevřete přehled <link xref="shell-introduction#activities">činností</link> kliknutím na <gui>Činnosti</gui> v levém horním rohu obrazovky.</p>
+      <p if:test="platform:gnome-classic">Klikněte na nabídku <gui xref="shell-introduction#activities">Aplikace</gui> v levém horním rohu obrazovky a zvolte v ní položku <gui>Přehled činností</gui>.</p></item>
     <item>
-      <p>Click the grid button in the dash and find the application you want to
-      add.</p>
+      <p>Klikněte na tlačítko s mřížkou v dolní části oblíbených a najděte aplikaci, kterou chcete přidat.</p>
     </item>
     <item>
-      <p>Right-click the application icon and select <gui>Add to
-      Favorites</gui>.</p>
-      <p>Alternatively, you can click-and-drag the icon into the dash.</p>
+      <p>Klikněte pravým tlačítkem na ikonu aplikace a vyberte <gui>Přidat mezi oblíbené</gui>.</p>
+      <p>Případně můžete ikonu do oblíbených přetáhnout.</p>
     </item>
   </steps>
 
-  <p>To remove an application icon from the dash, right-click the application
-  icon and select <gui>Remove from Favorites</gui>.</p>
+  <p>Když chcete ikonu aplikace z oblíbených odebrat, klikněte na ni pravým tlačítkem a vyberte <gui>Odstranit z oblíbených</gui>.</p>
 
-  <note style="tip" if:test="platform:gnome-classic"><p>Favorite applications
-    also appear in the <gui>Favorites</gui> section of the
-    <link xref="shell-terminology"><gui>Applications</gui> menu</link>.</p>
+  <note style="tip" if:test="platform:gnome-classic"><p>Oblíbené aplikace se objeví také v oddíle <gui>Oblíbené</gui> v nabídce <gui xref="shell-introduction#activities">Aplikace</gui>.</p>
   </note>
 
 </page>

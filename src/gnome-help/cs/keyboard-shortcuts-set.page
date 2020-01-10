@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" version="1.0 ui/1.0" id="keyboard-shortcuts-set" xml:lang="cs">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" version="1.0 ui/1.0" id="keyboard-shortcuts-set" xml:lang="cs">
 
   <info>
     <link type="guide" xref="keyboard"/>
@@ -8,14 +8,15 @@
     <revision pkgversion="3.8.0" version="0.3" date="2013-03-23" status="review"/>
     <revision pkgversion="3.9.92" date="2013-10-11" status="candidate"/>
     <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+    <revision pkgversion="3.17.90" date="2015-08-30" status="candidate"/>
 
     <credit type="author">
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="author">
-       <name>Julita Inca</name>
-       <email>yrazes@gmail.com</email>
+      <name>Julita Inca</name>
+      <email>yrazes@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Juanjo Marín</name>
@@ -25,9 +26,12 @@
       <name>Shobha Tyagi</name>
       <email>tyagishobha@gmail.com</email>
     </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
 
-    <desc>Define or change keyboard shortcuts in <gui>Keyboard</gui>
-    settings.</desc>
+    <desc>Jak definovat nebo změnit klávesové zkratky v nastavení <gui>Klávesnice</gui>.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
@@ -38,311 +42,306 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Marek Černocký</mal:name>
       <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:years>2014, 2015</mal:years>
     </mal:credit>
   </info>
 
-  <title>Set keyboard shortcuts</title>
+  <title>Nastavení klávesových zkratek</title>
 
-<p>To change the key or keys to be pressed for a keyboard shortcut:</p>
+<p>Abyste změnili klávesu či klávesy, které se mají u klávesové zkratky mačkat:</p>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-terminology">Activities</gui> overview and
-      start typing <gui>Keyboard</gui>.</p>
+      <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Klávesnice</gui>.</p>
     </item>
     <item>
-      <p>Click on <gui>Keyboard</gui> to open the panel.</p>
+      <p>Kliknutím na <gui>Klávesnice</gui> otevřete příslušný panel.</p>
     </item>
     <item>
-      <p>Select the <gui>Shortcuts</gui> tab.</p>
+      <p>Vyberte kartu <gui>Zkratky</gui>.</p>
     </item>
     <item>
-      <p>Select a category in the left pane, and the row for the desired action
-      on the right. The current shortcut definition will change to
-      <gui>New accelerator…</gui></p>
+      <p>V levém panelu vyberte kategorii a vpravo pak řádek s požadovanou činností. Definice aktuální klávesové zkratky se změní na <gui>Nová klávesová zkratka…</gui></p>
     </item>
     <item>
-      <p>Hold down the desired key combination, or press <key>Backspace</key> to
-      clear.</p>
+      <p>Zmáčkněte požadovanou kombinaci kláves nebo použijte <key>Backspace</key> ke smazání.</p>
     </item>
   </steps>
 
 
 <section id="defined">
-<title>Pre-defined shortcuts</title>
-  <p>There are a number of pre-configured shortcuts that can be changed,
-  grouped into these categories:</p>
+<title>Předdefinované klávesové zkratky</title>
+  <p>K dispozici je řada přednastavených klávesových zkratek, které si může změnit. Jsou seskupeny do těchto kategorií:</p>
 
 <table rules="rows" frame="top bottom" ui:expanded="false">
-<title>Launchers</title>
+<title>Spouštění</title>
   <tr>
-	<td><p>Launch help browser</p></td>
-	<td><p>Disabled</p></td>
+	<td><p>Spustit prohlížeč nápovědy</p></td>
+	<td><p>nepřiřazeno</p></td>
   </tr>
   <tr>
-	<td><p>Launch calculator</p></td>
-	<td><p>Calculator</p></td>
+	<td><p>Spustit kalkulačku</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-calculator.svg"> <key>Calculator</key> key symbol</media> nebo <key>Calculator</key></p></td>
   </tr>
   <tr>
-	<td><p>Launch email client</p></td>
-	<td><p>Mail</p></td>
+	<td><p>Spustit poštovního klienta</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-mail.svg"> <key>Mail</key> key symbol</media> nebo <key>Mail</key></p></td>
   </tr>
   <tr>
-	<td><p>Launch web browser</p></td>
-	<td><p>WWW</p></td>
+	<td><p>Spustit prohlížeč WWW</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-world.svg"> <key>WWW</key> key symbol</media> nebo <media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-home.svg"> <key>WWW</key> key symbol</media> nebo <key>WWW</key></p></td>
   </tr>
   <tr>
-	<td><p>Home folder</p></td>
-	<td><p>Explorer</p></td>
+	<td><p>Domovská složka</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-folder.svg"> <key>Explorer</key> key symbol</media> nebo <media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-computer.svg"> <key>Explorer</key> key symbol</media> nebo <key>Explorer</key></p></td>
   </tr>
   <tr>
-	<td><p>Search</p></td>
-	<td><p>Search</p></td>
+	<td><p>Hledání</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-search.svg"> <key>Search</key> key symbol</media> nebo <key>Search</key></p></td>
   </tr>
 </table>
 
 <table rules="rows" frame="top bottom" ui:expanded="false">
-<title>Navigation</title>
+<title>Pohyb v uživatelském prostředí</title>
   <tr>
-	<td><p>Move window to workspace 1</p></td>
-	<td><p>Disabled</p></td>
+	<td><p>Přesunout okno na pracovní plochu 1</p></td>
+	<td><p>nepřiřazeno</p></td>
   </tr>
   <tr>
-	<td><p>Move window to workspace 2</p></td>
-	<td><p>Disabled</p></td>
+	<td><p>Přesunout okno na pracovní plochu 2</p></td>
+	<td><p>nepřiřazeno</p></td>
   </tr>
   <tr>
-	<td><p>Move window to workspace 3</p></td>
-	<td><p>Disabled</p></td>
+	<td><p>Přesunout okno na pracovní plochu 3</p></td>
+	<td><p>nepřiřazeno</p></td>
   </tr>
   <tr>
-	<td><p>Move window to workspace 4</p></td>
-	<td><p>Disabled</p></td>
+	<td><p>Přesunout okno na pracovní plochu 4</p></td>
+	<td><p>nepřiřazeno</p></td>
   </tr>
   <tr>
-	<td><p>Move window one workspace to the left</p></td>
+	<td><p>Přesunout okno o jednu pracovní plochu doleva</p></td>
 	<td><p><keyseq><key>Shift</key><key>Ctrl</key><key>Alt</key><key>←</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Move window one workspace to the right</p></td>
+	<td><p>Přesunout okno o jednu pracovní plochu doprava</p></td>
 	<td><p><keyseq><key>Shift</key><key>Ctrl</key><key>Alt</key><key>→</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Move window one workspace up</p></td>
+	<td><p>Přesunout okno o jednu pracovní plochu nahoru</p></td>
 	<td><p><keyseq><key>Shift</key><key xref="keyboard-key-super">Super</key> <key>Page Up</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Move window one workspace down</p></td>
+	<td><p>Přesunout okno o jednu pracovní plochu dolů</p></td>
 	<td><p><keyseq><key>Shift</key><key>Super</key><key>Page Down</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Switch applications</p></td>
+	<td><p>Přepnout do jiné aplikace</p></td>
 	<td><p><keyseq><key>Super</key><key>Tab</key></keyseq></p></td>
   </tr>
   <tr>
-  <td><p>Switch windows</p></td>
-  <td><p>Disabled</p></td>
+  <td><p>Přepnout do jiného okna</p></td>
+  <td><p>nepřiřazeno</p></td>
   </tr>
   <tr>
-	<td><p>Switch windows of an application</p></td>
-	<td><p>Disabled</p></td>
+	<td><p>Přepnout na jiné okno aplikace</p></td>
+	<td><p>nepřiřazeno</p></td>
   </tr>
   <tr>
-	<td><p>Switch system controls</p></td>
+	<td><p>Přepnout na systémový ovládací prvek</p></td>
 	<td><p><keyseq><key>Ctrl</key><key>Alt</key><key>Tab</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Switch windows directly</p></td>
+	<td><p>Přepnout do minulého okna</p></td>
 	<td><p><keyseq><key>Alt</key><key>Esc</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Switch windows of an app directly</p></td>
+	<td><p>Přepnout do minulého okna aplikace</p></td>
 	<td><p><keyseq><key>Alt</key><key>F6</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Switch system controls directly</p></td>
+	<td><p>Přepnout na minulý systémový ovládací prvek</p></td>
 	<td><p><keyseq><key>Ctrl</key><key>Alt</key><key>Esc</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Hide all normal windows</p></td>
-	<td><p>Disabled</p></td>
+	<td><p>Skrýt všechna normální okna</p></td>
+	<td><p>nepřiřazeno</p></td>
   </tr>
   <tr>
-	<td><p>Switch to workspace 1</p></td>
-	<td><p>Disabled</p></td>
+	<td><p>Přepnout na pracovní plochu 1</p></td>
+	<td><p>nepřiřazeno</p></td>
   </tr>
   <tr>
-	<td><p>Switch to workspace 2</p></td>
-	<td><p>Disabled</p></td>
+	<td><p>Přepnout na pracovní plochu 2</p></td>
+	<td><p>nepřiřazeno</p></td>
   </tr>
   <tr>
-	<td><p>Switch to workspace 3</p></td>
-	<td><p>Disabled</p></td>
+	<td><p>Přepnout na pracovní plochu 3</p></td>
+	<td><p>nepřiřazeno</p></td>
   </tr>
   <tr>
-	<td><p>Switch to workspace 4</p></td>
-	<td><p>Disabled</p></td>
+	<td><p>Přepnout na pracovní plochu 4</p></td>
+	<td><p>nepřiřazeno</p></td>
   </tr>
   <tr>
-	<td><p>Move to workspace left</p></td>
+	<td><p>Přepnout na pracovní plochu vlevo</p></td>
 	<td><p><keyseq><key>Ctrl</key><key>Alt</key><key>←</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Move to workspace right</p></td>
+	<td><p>Přepnout na pracovní plochu vpravo</p></td>
 	<td><p><keyseq><key>Ctrl</key><key>Alt</key><key>→</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Move to workspace above</p></td>
+	<td><p>Přepnout na pracovní plochu nad</p></td>
 	<td><p><keyseq><key>Super</key><key>Page Up</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Move to workspace below</p></td>
+	<td><p>Přepnout na pracovní plochu pod</p></td>
 	<td><p><keyseq><key>Super</key><key>Page Down</key></keyseq></p></td>
   </tr>
 </table>
 
 <table rules="rows" frame="top bottom" ui:expanded="false">
-<title>Screenshots</title>
+<title>Snímky obrazovky</title>
   <tr>
-	<td><p>Take a screenshot</p></td>
+	<td><p>Uložit snímek obrazovky do souboru</p></td>
 	<td><p><key>Print Screen</key></p></td>
   </tr>
   <tr>
-	<td><p>Take a screenshot of a window</p></td>
+	<td><p>Uložit snímek okna do souboru</p></td>
 	<td><p><keyseq><key>Alt</key><key>Print Screen</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Take a screenshot of an area</p></td>
+	<td><p>Uložit snímek oblasti do souboru</p></td>
 	<td><p><keyseq><key>Shift</key><key>Print Screen</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Copy a screenshot to clipboard</p></td>
+	<td><p>Zkopírovat snímek obrazovky do schránky</p></td>
 	<td><p><keyseq><key>Ctrl</key><key>Print Screen</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Copy a screenshot of a window to clipboard</p></td>
+	<td><p>Zkopírovat snímek okna do schránky</p></td>
 	<td><p><keyseq><key>Ctrl</key><key>Alt</key><key>Print Screen</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Copy a screenshot of an area to clipboard</p></td>
+	<td><p>Zkopírovat snímek oblasti do schránky</p></td>
 	<td><p><keyseq><key>Shift</key><key>Ctrl</key><key>Print Screen</key></keyseq></p></td>
   </tr>
   <tr>
-  <td><p>Record a screencast</p></td>
+  <td><p>Pořídit nahrávku obrazovky</p></td>
   <td><p><keyseq><key>Shift</key><key>Ctrl</key><key>Alt</key><key>R</key> </keyseq></p></td>
   </tr>
 </table>
 
 <table rules="rows" frame="top bottom" ui:expanded="false">
-<title>Sound and Media</title>
+<title>Zvuk a média</title>
   <tr>
-	<td><p>Volume mute</p></td>
-	<td><p>Audio mute</p></td>
+	<td><p>Ztlumit</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-mute.svg"> <key>Mute</key> key symbol</media> (audiotlačítko ztišit)</p></td>
   </tr>
   <tr>
-	<td><p>Volume down</p></td>
-	<td><p>Audio lower volume</p></td>
+	<td><p>Snížit hlasitost</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-voldown.svg"> <key>Volume Down</key> key symbol</media> (audiotlačítko snížit hlasitost)</p></td>
   </tr>
   <tr>
-	<td><p>Volume up</p></td>
-	<td><p>Audio raise volume</p></td>
+	<td><p>Zvýšit hlasitost</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-volup.svg"> <key>Volume Up</key> key symbol</media> (audiotlačítko zvýšit hlasitost)</p></td>
   </tr>
   <tr>
-	<td><p>Launch media player</p></td>
-	<td><p>Audio media</p></td>
+	<td><p>Spustit hudební přehrávač</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-media.svg"> <key>Media</key> key symbol</media> (audiotlačítko multimédia)</p></td>
   </tr>
   <tr>
-	<td><p>Play (or play/pause)</p></td>
-	<td><p>Audio play</p></td>
+	<td><p>Přehrát (nebo přehrát/pozastavit)</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-play.svg"> <key>Play</key> key symbol</media> (audiotlačítko přehrát)</p></td>
   </tr>
   <tr>
-	<td><p>Pause playback</p></td>
-	<td><p>Audio pause</p></td>
+	<td><p>Pozastavit přehrávání</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-pause.svg"> <key>Pause</key> key symbol</media>  (audiotlačítko pozastavit)</p></td>
   </tr>
   <tr>
-	<td><p>Stop playback</p></td>
-	<td><p>Audio stop</p></td>
+	<td><p>Zastavit přehrávání</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-stop.svg"> <key>Stop</key> key symbol</media>  (audiotlačítko zastavit)</p></td>
   </tr>
   <tr>
-	<td><p>Previous track</p></td>
-	<td><p>Audio previous</p></td>
+	<td><p>Předchozí skladba</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-previous.svg"> <key>Previous</key> key symbol</media> (audiotlačítko předchozí)</p></td>
   </tr>
   <tr>
-	<td><p>Next track</p></td>
-	<td><p>Audio next</p></td>
+	<td><p>Následující skladba</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-next.svg"> <key>Next</key> key symbol</media>  (audiotlačítko následující)</p></td>
   </tr>
   <tr>
-	<td><p>Eject</p></td>
-	<td><p>Eject</p></td>
+	<td><p>Vysunout</p></td>
+	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-eject.svg"> <key>Eject</key> key symbol</media>  (audiotlačítko vysunout)</p></td>
   </tr>
 </table>
 
 <table rules="rows" frame="top bottom" ui:expanded="false">
-<title>System</title>
+<title>Systém</title>
   <tr>
-	<td><p>Show the run command prompt</p></td>
+	<td><p>Zobrazit výzvu k zadání příkazu</p></td>
 	<td><p><keyseq><key>Alt</key><key>F2</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Show the activities overview</p></td>
+	<td><p>Zobrazit přehled činností</p></td>
 	<td><p><keyseq><key>Alt</key><key>F1</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Log out</p></td>
+	<td><p>Odhlásit se</p></td>
 	<td><p><keyseq><key>Ctrl</key><key>Alt</key><key>Delete</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Lock screen</p></td>
+	<td><p>Zamknout obrazovku</p></td>
 	<td><p><keyseq><key>Super</key><key>L</key></keyseq></p></td>
   </tr>
   <tr>
-  <td><p>Show the message tray</p></td>
+  <td><p>Zobrazit pořadač zpráv</p></td>
   <td><p><keyseq><key>Super</key><key>M</key></keyseq></p></td>
   </tr>
   <tr>
-  <td><p>Focus the active notification</p></td>
+  <td><p>Zaměřit aktivní upozornění</p></td>
   <td><p><keyseq><key>Super</key><key>N</key></keyseq></p></td>
   </tr>
   <tr>
-  <td><p>Show all applications</p></td>
+  <td><p>Zobrazit všechny aplikace</p></td>
   <td><p><keyseq><key>Super</key><key>A</key></keyseq></p></td>
   </tr>
   <tr>
-  <td><p>Open the application menu</p></td>
+  <td><p>Otevřít nabídku aplikace</p></td>
   <td><p><keyseq><key>Super</key><key>F10</key></keyseq></p></td>
   </tr>
 </table>
 
 <table rules="rows" frame="top bottom" ui:expanded="false">
-<title>Typing</title>
+<title>Psaní</title>
   <tr>
-  <td><p>Switch to next input source</p></td>
+  <td><p>Přepnout na následující vstupní zdroj</p></td>
   <td><p><keyseq><key>Super</key><key>Space</key></keyseq></p></td>
   </tr>
 
   <tr>
-  <td><p>Switch to previous input source</p></td>
-  <td><p>Disabled</p></td>
+  <td><p>Přepnout na předchozí vstupní zdroj</p></td>
+  <td><p>nepřiřazeno</p></td>
   </tr>
   <tr>
-  <td><p>Modifiers-only switch to next source</p></td>
-  <td><p>Disabled</p></td>
+  <td><p>Přepnout na následující vstupní zdroj jen pomocí modifikačních kláves</p></td>
+  <td><p>nepřiřazeno</p></td>
   </tr>
   <tr>
-  <td><p>Compose Key</p></td>
-  <td><p>Disabled</p></td>
+  <td><p>Klávesa Compose</p></td>
+  <td><p>nepřiřazeno</p></td>
   </tr>
   <tr>
-  <td><p>Alternative Characters Key</p></td>
-  <td><p>Disabled</p></td>
+  <td><p>Klávesa pro alternativní znaky</p></td>
+  <td><p>nepřiřazeno</p></td>
   </tr>
 </table>
 
 <table rules="rows" frame="top bottom" ui:expanded="false">
-<title>Universal Access</title>
+<title>Univerzální přístup</title>
   <tr>
-	<td><p>Turn zoom on or off</p></td>
+	<td><p>Zapnout nebo vypnout lupu</p></td>
 	<td><p><keyseq><key>Alt</key><key>Super</key><key>8</key></keyseq></p></td>
   </tr>
   <tr>
@@ -354,166 +353,126 @@
   <td><p><keyseq><key>Alt</key><key>Super</key><key>-</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Turn screen reader on or off</p></td>
-	<td><p>Disabled</p></td>
+	<td><p>Zapnout nebo vypnout čtečku obrazovky</p></td>
+	<td><p>nepřiřazeno</p></td>
   </tr>
   <tr>
-	<td><p>Turn on-screen keyboard on or off</p></td>
-	<td><p>Disabled</p></td>
+	<td><p>Zapnout nebo vypnout klávesnici na obrazovce</p></td>
+	<td><p>nepřiřazeno</p></td>
   </tr>
   <tr>
-	<td><p>Increase text size</p></td>
-	<td><p>Disabled</p></td>
+	<td><p>Zvětšit velikost textu</p></td>
+	<td><p>nepřiřazeno</p></td>
   </tr>
   <tr>
-	<td><p>Decrease text size</p></td>
-	<td><p>Disabled</p></td>
+	<td><p>Zmenšit velikost textu</p></td>
+	<td><p>nepřiřazeno</p></td>
   </tr>
   <tr>
-	<td><p>High contrast on or off</p></td>
-	<td><p>Disabled</p></td>
+	<td><p>Zapnout nebo vypnout vysoký kontrast</p></td>
+	<td><p>nepřiřazeno</p></td>
   </tr>
 </table>
 
 <table rules="rows" frame="top bottom" ui:expanded="false">
-<title>Windows</title>
+<title>Okna</title>
   <tr>
-	<td><p>Activate the window menu</p></td>
+	<td><p>Aktivovat nabídku okna</p></td>
 	<td><p><keyseq><key>Alt</key><key>mezerník</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Toggle fullscreen mode</p></td>
-	<td><p>Disabled</p></td>
+	<td><p>Přepnout režim celé obrazovky</p></td>
+	<td><p>nepřiřazeno</p></td>
   </tr>
   <tr>
-	<td><p>Toggle maximization state</p></td>
+	<td><p>Přepnout stav maximalizace</p></td>
 	<td><p><keyseq><key>Alt</key><key>F10</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Maximize window</p></td>
+	<td><p>Maximalizovat okno</p></td>
 	<td><p><keyseq><key>Super</key><key>↑</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Restore window</p></td>
+	<td><p>Obnovit velikost okna</p></td>
   <td><p><keyseq><key>Super</key><key>↓</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Toggle shaded state</p></td>
-	<td><p>Disabled</p></td>
+	<td><p>Přepnout stav svinutí</p></td>
+	<td><p>nepřiřazeno</p></td>
   </tr>
   <tr>
-	<td><p>Close window</p></td>
+	<td><p>Zavřít okno</p></td>
 	<td><p><keyseq><key>Alt</key><key>F4</key></keyseq></p></td>
   </tr>
   <tr>
-  <td><p>Hide window</p></td>
+  <td><p>Skrýt okno</p></td>
   <td><p><keyseq><key>Super</key><key>H</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Move window</p></td>
+	<td><p>Přesunout okno</p></td>
 	<td><p><keyseq><key>Alt</key><key>F7</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Resize window</p></td>
+	<td><p>Změnit velikost okna</p></td>
 	<td><p><keyseq><key>Alt</key><key>F8</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Toggle window on all workspaces or one</p></td>
-	<td><p>Disabled</p></td>
+	<td><p>Přepnout okno na všechny/jednu pracovní plochu</p></td>
+	<td><p>nepřiřazeno</p></td>
   </tr>
   <tr>
-	<td><p>Raise window if covered, otherwise lower it</p></td>
-	<td><p>Disabled</p></td>
+	<td><p>Když je okno zakryté vynést jej do popředí, jinak odsunout do pozadí</p></td>
+	<td><p>nepřiřazeno</p></td>
   </tr>
   <tr>
-	<td><p>Raise window above other windows</p></td>
-	<td><p>Disabled</p></td>
+	<td><p>Vynést okno do popředí nad ostatní okna</p></td>
+	<td><p>nepřiřazeno</p></td>
   </tr>
   <tr>
-	<td><p>Lower window below other windows</p></td>
-	<td><p>Disabled</p></td>
+	<td><p>Odsunout okno do pozadí za ostatní okna</p></td>
+	<td><p>nepřiřazeno</p></td>
   </tr>
   <tr>
-	<td><p>Maximize window vertically</p></td>
-	<td><p>Disabled</p></td>
+	<td><p>Maximalizovat okno svisle</p></td>
+	<td><p>nepřiřazeno</p></td>
   </tr>
   <tr>
-	<td><p>Maximize window horizontally</p></td>
-	<td><p>Disabled</p></td>
+	<td><p>Maximalizovat okno vodorovně</p></td>
+	<td><p>nepřiřazeno</p></td>
   </tr>
   <tr>
-  <td><p>View split on left</p></td>
+  <td><p>Roztáhnout okno přes levou půlku obrazovky</p></td>
   <td><p><keyseq><key>Super</key><key>←</key></keyseq></p></td>
   </tr>
   <tr>
-  <td><p>View split on right</p></td>
+  <td><p>Roztáhnout okno přes pravou půlku obrazovky</p></td>
   <td><p><keyseq><key>Super</key><key>→</key></keyseq></p></td>
   </tr>
 </table>
 
 </section>
 
-<section id="changing-shorcuts">
-  <title>Change keyboard shortcuts</title>
-  <p>This section shows how to change keyboard shortcuts for an application.</p>
-
-  <steps>
-    <item>
-	<p>Open the Terminal application.</p>
-     </item>
-    <item><p>Run the <cmd>gsettings set org.gnome.desktop.interface can-change-accels true</cmd> command.</p>
-    </item>
-       <item>
-      <p>Start the application for which you want to change the keyboard shortcut.</p>
-    </item>
-  <item>
-      <p>Find the menu item for which you want to change the keyboard shortcut.</p>
-    </item>
-<item>
-      <p>Type the shortcut that you want on the keyboard.</p>
-    </item>
-  </steps>
-
-<note style="note style">
-  <p>Note that this setting is desktop-wide. You can disable it after
- you make changes by running the
- <cmd>gsettings set org.gnome.desktop.interface can-change-accels false</cmd>
- command. You can also use the <app>dconf-editor</app> utility to do this.</p>
-</note>
-</section>
-
 <section id="custom">
-<title>Custom shortcuts</title>
+<title>Vlastní klávesové zkratky</title>
 
-<p>To create your own keyboard shortcut:</p>
+  <p>Když si chcete nadefinovat své vlastní klávesové zkratky v nastavení <gui>Klávesnice</gui>:</p>
 
   <steps>
     <item>
-      <p>Select <gui>Custom Shortcuts</gui> in the left pane, and click the
-      <gui style="button">+</gui> button (or click the
-      <gui style="button">+</gui> button in any category). The
-      <gui>Custom Shortcut</gui> window will appear.</p>
+      <p>Klikněte na tlačítko <gui style="button">+</gui>. Objeví se okno <gui>Vlastní zkratka</gui>.</p>
     </item>
     <item>
-      <p>Type a <gui>Name</gui> to identify the shortcut, and a
-      <gui>Command</gui> to run an application, then click <gui>Apply</gui>.
-      For example, if you wanted the shortcut to open Rhythmbox, you could name
-      it <input>Music</input> and use the <input>rhythmbox</input> command.</p>
+      <p>Napište <gui>Název</gui>, podle kterého se klávesová zkratka pozná, a <gui>Příkaz</gui>, který spustí aplikaci, a nakonec klikněte na <gui>Přidat</gui>. Například, když chcete klávesovou zkratku, která spustí <app>Rhythmbox</app>, můžete ji pojmenovat <input>Hudba</input> a použít příkaz <input>rhythmbox</input>.</p>
     </item>
     <item>
-      <p>Click <gui>Disabled</gui> in the row that was just added. When it
-      changes to <gui>New accelerator…</gui>, hold down the desired shortcut
-      key combination.</p>
+      <p>V řádku, který jste právě přidali, klikněte na <gui>Vypnuto</gui>. V tu chvíli se změní na <gui>Nová klávesová zkratka…</gui> a vy můžete zmáčknout požadovanou kombinaci kláves.</p>
     </item>
   </steps>
- <p>The command name that you type should be a valid system command. You
- can check that the command works by opening a Terminal and typing it in
- there. The command that opens an application cannot have the same name as
- the application itself.</p>
 
- <p>If you want to change the command that is associated with a custom keyboard
- shortcut, double-click the <em>name</em> of the shortcut. The
- <gui>Custom Shortcut</gui> window will appear, and you can edit the command.</p>
+  <p>Název příkazu, který jste zadali, by měl být platný systémový příkaz. Jestli funguje, si můžete ověřit po otevření Terminálu a jeho zadání v něm. Příkaz, který otevírá aplikace, nemusí mít nutně stejný název, jako ona aplikace.</p>
+
+  <p>Když chcete změnit příkaz, který je přiřazený vlastní klávesové zkratce, klikněte dvojitě na <em>název</em> klávesové zkratky. Objeví se okno <gui>Vlastní klávesová zkratka</gui>, ve kterém můžete příkaz upravit.</p>
+
 </section>
 
 </page>

@@ -2,14 +2,13 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-connect" xml:lang="zh-CN">
 
   <info>
-    <link type="guide" xref="files" group="more"/>
+    <link type="guide" xref="files#more-file-tasks"/>
     <link type="guide" xref="sharing"/>
 
     <revision pkgversion="3.6.0" date="2012-10-06" status="review"/>
     <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
     <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
-
-    <desc>通过 FTP、SSH、Windows 共享或 WebDAV，查看和编辑另一台计算机上的文件。</desc>
+    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -19,7 +18,15 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>通过 FTP、SSH、Windows 共享或 WebDAV，查看和编辑另一台计算机上的文件。</desc>
+
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>TeliuTe</mal:name>
@@ -32,19 +39,33 @@
 
 <p>您可以连接到一个服务器或网络共享文件夹上，浏览和查看里面的文件，就像是查看本地计算机一样。这在互联网中下载和上传文件很方便，或者在局域网中跟其他人共享文件。</p>
 
-<p>要浏览网络上的文件，在<gui>活动</gui>概览中打开<app>文件</app>，然后在左侧栏中点击<gui>浏览网络</gui>。文件管理器会列出所有局域网中提供文件共享的计算机，如果您没有找到想访问的机子，可以通过手动输入它的 IP 地址或网址来连接。</p>
+<p>To browse files over the network, open the <app>Files</app>
+application from the <gui>Activities</gui> overview, and click
+<gui>Other Locations</gui> in the sidebar. The file manager
+will find any computers on your local area network that advertize
+their ability to serve files. If you want to connect to a server
+on the internet, or if you do not see the computer you're looking
+for, you can manually connect to a server by typing in its
+internet/network address.</p>
 
 <steps>
   <title>连接到一台文件服务器</title>
-  <item><p>In the file manager, click <gui>Connect to Server</gui> in the
+  <item><p>In the file manager, click <gui>Other Locations</gui> in the
    sidebar.</p>
   </item>
-  <item><p>在<link xref="#urls">服务器</link>地址栏中，输入服务器的网址，可用的网址<link xref="#types">列表如下</link>。</p>
+  <item><p>In <gui>Connect to Server</gui>, enter the address of the server, in
+  the form of a
+   <link xref="#urls">URL</link>. Details on supported URLs are
+   <link xref="#types">listed below</link>.</p>
   <note>
     <p>如果您之前连接过那个服务器，还可以点击<gui>最近的服务器</gui>列表。</p>
   </note>
   </item>
-  <item><p><gui>连接</gui>按钮，将会打开一个新窗口，里面显示服务器文件夹内容。您可以像浏览自己电脑一样访问它们，服务器也会添加到侧栏中，以便于您下次快速访问。</p>
+  <item>
+    <p>Click <gui>Connect</gui>. The files on the server will be shown. You
+    can browse the files just as you would for those on your own computer. The
+    server will also be added to the sidebar so you can access it quickly in
+    the future.</p>
   </item>
 </steps>
 
@@ -122,9 +143,20 @@
 <item>
   <title>WebDAV 和安全 WebDAV</title>
   <p>WebDAV 基于 HTTP 协议，它有时用于局域网中共享文件，或者在互联网中存储文件。如果您连接的服务器支持加密连接，您可以选中此项。安全 WebDAV 使用更强的 SSL 加密，因此他人无法查看您的密码。</p>
-  <p>典型的  WebDAV 网址如下所示：</p>
+  <p>A WebDAV URL looks like this:</p>
   <example>
-    <p><sys>http://example.hostname.com/path</sys></p>
+    <p><sys>dav://example.hostname.com/path</sys></p>
+  </example>
+</item>
+<item>
+  <title>NFS share</title>
+  <p>UNIX computers traditionally use the Network File System protocol to
+  share files over a local network. With NFS, security is based on the UID of
+  the user accessing the share, so no authentication credentials are
+  needed when connecting.</p>
+  <p>A typical NFS share URL looks like this:</p>
+  <example>
+    <p><sys>nfs://servername/path</sys></p>
   </example>
 </item>
 </terms>

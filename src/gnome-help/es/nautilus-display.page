@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" id="nautilus-display" xml:lang="es">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-display" xml:lang="es">
 
   <info>
     <link type="guide" xref="nautilus-prefs" group="nautilus-display"/>
 
-    <desc>Controlar las leyendas de los iconos usadas en el gestor de archivos.</desc>
-
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-30" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -16,13 +15,20 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
+    <credit type="editor">
+      <name>David King</name>
+      <email>amigadave@amigadave.com</email>
+    </credit>
+
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-    <its:rules xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+
+    <desc>Controlar las leyendas de los iconos usadas en el gestor de archivos.</desc>
+
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2011 - 2014</mal:years>
+      <mal:years>2011 - 2016</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -50,13 +56,21 @@
 
 <section id="icon-captions">
   <title>Títulos de iconos</title>
+  <!-- TODO: update screenshot for 3.18 and above. -->
   <media type="image" src="figures/nautilus-icons.png" width="250" height="110" style="floatend floatright">
     <p>Iconos del gestor de archivos con títulos</p>
   </media>
   <p>Cuando se utiliza la vista de iconos, puede optar por tener información adicional acerca de los archivos y carpetas mostrando una leyenda debajo de cada icono. Esto es útil, por ejemplo, si a menudo necesita ver que es propietario de un archivo o cuándo se modificó por última vez.</p>
-  <p>Puede ampliar una carpeta pulsando el botón <media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">abajo</span></media> en la barra de herramientas y escogiendo una de las opciones de <gui>Ampliación</gui>. A medida que amplíe, el gestor de archivos mostrará cada vez más información en las leyendas. Puede elegir hasta tres cosas que mostrar en las leyendas. La primera solo se mostrará en la mayoría de los niveles de ampliación. La última solo se mostrará en tamaños muy grandes.</p>
+  <p>Puede ampliar una carpeta pulsando el botón de opciones de la vista en la barra de herramientas y escogiendo un nivel de ampliación con el deslizador. A medida que amplíe, el gestor de archivos mostrará cada vez más información en las leyendas. Puede elegir hasta tres cosas que mostrar en las leyendas. La primera solo se mostrará en la mayoría de los niveles de ampliación. La última solo se mostrará en tamaños muy grandes.</p>
   <p>La información que se puede mostrar en las leyendas de los iconos es la misma que las columnas que pueden aparecer en la vista de lista. Consulte la <link xref="nautilus-list"/> para obtener más información.</p>
-  <note><p>Si tiene una ventana del gestor de archivos abierta, puede tener que recargarla para que el cambio en los títulos de los iconos tenga efecto. Pulse <guiseq><gui>Ver</gui><gui>Recargar</gui></guiseq> o pulse <keyseq><key>Ctrl</key><key>R</key></keyseq>.</p></note>
+</section>
+
+<section id="list-view">
+
+  <title>Vista de lista</title>
+
+  <p>Al ver archivos como una lista, puede <gui>Navegar por las carpetas en un árbol</gui>. Esto muestra expansores en cada carpeta en la lista de archivos, por lo que se puede mostrar el contenido de varias carpetas a la vez. Esto es útil si la estructura de carpetas es relevante, como si su música estuviera organizada en una carpeta por artista, y una subcarpeta por álbum.</p>
+
 </section>
 
 </page>

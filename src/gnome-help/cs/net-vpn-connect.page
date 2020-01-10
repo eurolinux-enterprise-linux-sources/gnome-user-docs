@@ -7,21 +7,22 @@
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
     <revision pkgversion="3.10" date="2013-12-05" status="review"/>
+    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
-      <name>GNOME Documentation Project</name>
-      <email its:translate="no">gnome-doc-list@gnome.org</email>
+      <name>Dokumentační projekt GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email its:translate="no">mdhillca@gmail.com</email>
+      <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
-      <email its:translate="no">kittykat3756@gmail.com</email>
+      <email>kittykat3756@gmail.com</email>
     </credit>
 
-    <desc>Set up a VPN connection to a local network over the internet.</desc>
+    <desc>Nastavení připojení VPN k místní síti přes Internet.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -33,78 +34,49 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Marek Černocký</mal:name>
       <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:years>2014, 2015</mal:years>
     </mal:credit>
   </info>
 
-<title>Connect to a VPN</title>
+<title>Připojení VPN</title>
 
-<p>A VPN (or <em>Virtual Private Network</em>) is a way of connecting to a
- local network over the internet. For example, say you want to connect to the
- local network at your workplace while you're on a business trip. You would
- find an internet connection somewhere (like at a hotel) and then connect to
- your workplace's VPN. It would be as if you were directly connected to the
- network at work, but the actual network connection would be through the
- hotel's internet connection. VPN connections are usually <em>encrypted</em>
- to prevent people from accessing the local network you're connecting to
- without logging in.</p>
+<p>VPN (<em>Virtual Private Network</em> – virtuální soukromá síť) je způsob připojení k místní síti přes Internet. Například řekněme, že se chcete připojit do místní sítě u vás v práci, ale jste zrovna na služební cestě. Našli byste si kdekoliv (třeba v hotelu) připojení k Internetu a připojili se do VPN v práci. Při používání se vám to bude jevit, jako byste byli připojení přímo do sítě v práci, ale připojení ve skutečnosti půjde přes hotelové připojení k Internetu. Připojení VPN je téměř vždy <em>šifrované</em>, aby se zamezilo cizím lidem v přístupu do místní sítě, do které se připojujete, bez přihlášení.</p>
 
-<p>There are a number of different types of VPN. You may have to install some
- extra software depending on what type of VPN you're connecting to. Find out
- the connection details from whoever is in charge of the VPN and see which
- <em>VPN client</em> you need to use. Then, go to the software installer
- application and search for the <app>NetworkManager</app> package which works
- with your VPN (if there is one) and install it.</p>
+<p>Existuje řada různých typů VPN. Možná budete muset nainstalovat nějaký dodatečný software v závislosti na tom, k jakému typu VPN se připojujete. Zjistěte si podrobnosti o připojování od toho, kdo má VPN na starosti a podívejte se, jakého <em>klienta VPN</em> potřebujete. Pak přejděte do aplikace na instalování softwaru a vyhledejte balíček <app>NetworkManager</app>, který funguje s vaší VPN (pokud takový existuje) a nainstalujte jej.</p>
 
 <note>
- <p>If there isn't a NetworkManager package for your type of VPN, you will
- probably have to download and install some client software from the company
- that provides the VPN software. You'll probably have to follow some different
- instructions to get that working.</p>
+ <p>Pokud neexistuje pro NetworkManager balíček pro váš typ VPN, budete si muset nejspíše stáhnout a nainstalovat nějaký klientský software od firmy, která poskytuje software pro vaši VPN. V takovém případě se asi budete muset řídit jinými pokyny pro zprovoznění.</p>
 </note>
 
-<p>Once that's done, you can set up the VPN connection:</p>
+<p>Když chcete nastavit připojení VPN:</p>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-terminology">Activities</gui> overview and
-      start typing <gui>Network</gui>.</p>
+      <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Síť</gui>.</p>
     </item>
     <item>
-      <p>Click on <gui>Network</gui> to open the control center.</p>
+      <p>Kliknutím na <gui>Síť</gui> otevřete příslušný panel.</p>
     </item>
     <item>
-      <p>At the bottom of the list on the left, click the <gui>+</gui> button
-      to add a new connection.</p>
+      <p>Ve spodní části seznamu nalevo klikněte na tlačítko <gui>+</gui>, aby se přidalo nové připojení.</p>
     </item>
     <item>
-      <p>Choose <gui>VPN</gui> in the interface list.</p>
+      <p>V seznamu rozhraní zvolte <gui>VPN</gui>.</p>
     </item>
     <item>
-      <p>Choose which kind of VPN connection you have.</p>
+      <p>Zvolte, který druh připojení VPN máte.</p>
     </item>
     <item>
-      <p>Fill in the VPN connection details, then press <gui>Add</gui> once you
-      are finished.</p>
+      <p>Vyplňte všechny podrobné údaje připojení VPN a až budete hotovi, zmáčkněte <gui>Přidat</gui>.</p>
     </item>
     <item>
-      <p>When you have finished setting-up the VPN, click the system status
-      area on the top bar, click <gui>VPN</gui> and select the connection you
-      just created. You may need to enter a password for the connection before
-      it is established. Once the connection is made, you will see a lock
-      shaped icon in the top bar.</p>
+      <p>Až je nastavení VPN dokončené, otevřete <gui xref="shell-introduction#yourname">systémovou nabídku</gui> vpravo na horní liště, klikněte na <gui>VPN   Vypnuto</gui> a vyberte <gui>Připojit</gui>. Možná budete muset, než se spojení sestaví, pro něj zadat heslo. Jakmile je spojení sestavené, uvidíte na horní liště ikonu ve tvaru zámku.</p>
     </item>
     <item>
-      <p>Hopefully you will successfully connect to the VPN. If not, you may
-      need to double-check the VPN settings you entered. You can do this from
-      the <gui>Network</gui> panel that you used to create the connection,
-      select the VPN connection from the list, then press the button in the
-      bottom right corner of the panel.</p>
+      <p>Doufáme, že jste se úspěšně připojili k VPN. Pokud ne, raději dvakrát zkontrolujte nastavení VPN, která jste zadali. To můžete provést v panelu <gui>Síť</gui>, který jste použili při vytváření připojení. V něm vyberete v seznamu připojení VPN a zmáčknutím tlačítka <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">nastavení</span></media> si nastavení zobrazte.</p>
     </item>
     <item>
-      <p>To disconnect from the VPN, click the system status area on the top
-      bar and click <gui>Turn Off</gui> under the name of your VPN
-      connection.</p>
+      <p>Když se chcete od VPN odpojit, klikněte na systémovou nabídku na horní liště a klikněte na <gui>Vypnout</gui> pod názvem svého připojení VPN.</p>
     </item>
   </steps>
 
