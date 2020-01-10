@@ -1,42 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="reference" id="net-firewall-ports" xml:lang="id">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="reference" id="net-firewall-ports" xml:lang="id">
 
   <info>
     <link type="guide" xref="net-security"/>
     <link type="seealso" xref="net-firewall-on-off"/>
     <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
+    <desc>You need to specify the right network port to enable/disable network access for a program with your firewall.</desc>
     <credit type="author">
       <name>Paul W. Frields</name>
       <email>stickster@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>You need to specify the right network port to enable/disable network
-    access for a program with your firewall.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Andika Triwidada</mal:name>
       <mal:email>andika@gmail.com</mal:email>
-      <mal:years>2011-2014, 2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Ahmad Haris</mal:name>
-      <mal:email>ahmadharis1982@gmail.com</mal:email>
-      <mal:years>2017.</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
 
   <title>Port jaringan yang biasa dipakai</title>
-
-  <p>This is a list of network ports commonly used by applications that provide
-  network services, like file sharing or remote desktop viewing. You can change
-  your system’s firewall to <link xref="net-firewall-on-off">block or allow
-  access</link> to these applications. There are thousands of ports in use, so
-  this table isn’t complete.</p>
+  <p>This is a list of network ports commonly used by applications that provide network services, like file sharing or remote desktop viewing. You can change your system's firewall to <link xref="net-firewall-on-off">block or allow access</link> to these applications. There are thousands of ports in use, so this table isn't complete.</p>
 
   <table shade="rows" frame="top">
     <thead>
@@ -91,11 +77,10 @@
 	  <p>5298/tcp</p>
 	</td>
 	<td>
-	  <p>Kehadiran</p>
+	  <p>Presence</p>
 	</td>
 	<td>
-	  <p>Allows you to advertise your instant messaging status to other
-          people on the network, such as “online” or “busy”.</p>
+	  <p>Memungkinkan Anda menyebarluaskan status perpesanan instan Anda ke orang lain di jaringan, seperti misalnya "darin" atau "sibuk".</p>
 	</td>
       </tr>
       <tr>
@@ -103,7 +88,7 @@
 	  <p>5900/tcp</p>
 	</td>
 	<td>
-	  <p>Desktop jauh</p>
+	  <p>Remote desktop</p>
 	</td>
 	<td>
 	  <p>Memungkinkan Anda berbagi desktop sehingga orang lain dapat melihatnya atau menyediakan bantuan jarak jauh.</p>
@@ -114,7 +99,7 @@
 	  <p>3689/tcp</p>
 	</td>
 	<td>
-	  <p>Berbagi pakai musik (DAAP)</p>
+	  <p>Music sharing (DAAP)</p>
 	</td>
 	<td>
 	  <p>Memungkinkan Anda berbagi pustaka musik Anda dengan orang lain di jaringan Anda.</p>
@@ -122,5 +107,4 @@
       </tr>
     </tbody>
   </table>
-
 </page>

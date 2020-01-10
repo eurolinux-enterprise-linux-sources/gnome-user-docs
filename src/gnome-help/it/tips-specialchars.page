@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="tips-specialchars" xml:lang="it">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="tips-specialchars" xml:lang="it">
   <info>
     <link type="guide" xref="tips"/>
     <link type="seealso" xref="keyboard-layouts"/>
 
     <revision pkgversion="3.8.2" version="0.3" date="2013-05-18" status="review"/>
-    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.26" date="2017-11-27" status="review"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -17,18 +14,9 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Andre Klapper</name>
-      <email>ak-47@gmx.net</email>
-    </credit>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <desc>Digitare caratteri non presenti sulla propria tastiera, inclusi alfabeti stranieri, simboli matematici e dingbat.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Luca Ferretti</mal:name>
@@ -45,73 +33,40 @@
 
   <title>Inserire caratteri speciali</title>
 
-  <p>You can enter and view thousands of characters from most of the world’s
-  writing systems, even those not found on your keyboard. This page lists
-  some different ways you can enter special characters.</p>
+  <p>È possibile digitare e visualizzare migliaia di caratteri dalla maggior parte dei sistemi di scrittura del mondo, anche quelli non direttamente presenti sulla tastiera. In questa pagina vengono presentati alcuni diversi modi per inserire questi caratteri.</p>
 
   <links type="section">
     <title>Metodi per inserire caratteri</title>
   </links>
 
-  <section id="characters">
-    <title>Characters</title>
-    <p>GNOME comes with a character map application that allows you to
-    find and insert unusual characters, including emoji, by browsing
-    character categories or searching for keywords.</p>
-
-    <p>You can launch <app>Characters</app> from the Activities overview.</p>
-
+  <section id="charmap">
+    <title>Tabella caratteri</title>
+    <p>Per esplorare tutti i caratteri presenti nello standard Unicode è disponibile un'applicazione apposita, chiamata Tabella caratteri. Questa applicazione può essere utilizzata per trovare il carattere richiesto, quindi copiarlo e incollarlo dove necessario.</p>
+    <p>You can find <app>Character Map</app> in the <gui>Activities</gui> overview.
+    For more information on the character map, see the
+    <link href="help:gucharmap">Character Map Manual</link>.</p>
   </section>
 
   <section id="compose">
     <title>Tasto Compose</title>
     <p>Un tasto compose (o di composizione) è un tasto speciale che consente di premere diversi tasti uno dopo l'altro per ottenere un carattere speciale. Per esempio, per digitare la lettera accentata <em>é</em>, è possibile premere <key>compose</key> quindi <key>'</key> e poi <key>e</key>.</p>
-    <p>Keyboards don’t have specific compose keys. Instead, you can define
-    one of the existing keys on your keyboard as a compose key.</p>
-
-    <note style="important">
-      <p>You need to have <app>Tweaks</app> installed on your computer to
-      change this setting.</p>
-      <if:if xmlns:if="http://projectmallard.org/if/1.0/" test="action:install">
-        <p><link style="button" action="install:gnome-tweaks">Install
-        <app>Tweaks</app></link></p>
-      </if:if>
-    </note>
-
+    <p>Le tastiere non presentano tasti compose specifici. È invece possibile definire uno dei tasti presenti sulla tastiera come un tasto compose.</p>
     <steps>
       <title>Definire un tasto compose</title>
-      <item>
-        <p>Open the <gui xref="shell-introduction#activities">Activities</gui>
-        overview and start typing <gui>Tweaks</gui>.</p>
-      </item>
-      <item>
-        <p>Click <gui>Tweaks</gui> to open the application.</p>
-      </item>
-      <item>
-        <p>Click the <gui>Keyboard &amp; Mouse</gui> tab.</p>
-      </item>
-      <item>
-        <p>Click <gui>Disabled</gui> next to the <gui>Compose Key</gui>
-        setting.</p>
-      </item>
-      <item>
-        <p>Turn the switch on in the dialog and pick the keyboard shortcut you
-        want to use.</p>
-      </item>
-      <item>
-        <p>Tick the checkbox of the key that you want to set as the Compose
-        key.</p>
-      </item>
-      <item>
-        <p>Close the dialog.</p>
-      </item>
-      <item>
-        <p>Close the <gui>Tweaks</gui> window.</p>
-      </item>
+      <item><p>Click your name on the top bar and select <gui>Settings</gui>.</p></item>
+      <item><p>Fare clic su <gui>Tastiera</gui>.</p></item>
+      <item><p>Select the <gui>Shortcuts</gui> tab and click
+      <gui>Typing</gui>.</p></item>
+      <item><p>Click on <gui>Compose Key</gui> in the right pane.</p></item>
+      <item><p>Click on <gui>Disabled</gui> and select the key you would like to
+      behave as a compose key from the drop-down menu. You can choose either of
+      the <key>Ctrl</key> keys, the right <key>Alt</key> key, the right
+      <key>Win</key> or <key xref="keyboard-key-super">Super</key> key if
+      you have one, the <key xref="keyboard-key-menu">Menu</key> key or
+      <key>Caps Lock</key>. Any key you select will then only work as a compose
+      key, and will no longer work for its original purpose.</p></item>
     </steps>
-
     <p>È possibile digitare molti caratteri comuni usando il tasto compose, per esempio:</p>
-
     <list>
       <item><p>Premere <key>compose</key> quindi <key>'</key> e poi una lettera per porre un accento acuto sulla lettera, come <em>é</em>.</p></item>
       <item><p>Premere <key>compose</key> quindi <key>`</key> e poi una lettera per porre un accento grave sulla lettera, come <em>è</em>.</p></item>
@@ -121,39 +76,23 @@
     <p>Per altre sequenze di compose consultare la <link href="http://en.wikipedia.org/wiki/Compose_key#Common_compose_combinations">pagina del tasto compose su Wikipedia</link>.</p>
   </section>
 
-<section id="ctrlshiftu">
-  <title>Code point</title>
+  <section id="ctrlshiftu">
+    <title>Code point</title>
+    <p>È possibile inserire ogni carattere Unicose usando solo la tastiera attraverso il code point numerico del carattere. Ogni carattere è identificato da un code point costituito da quattro caratteri. Per trovare il code point di un carattere, trovare il carattere nell'applicazione tabella caratteri e guardare nella barra di stato o nella scheda <gui>Dettagli carattere</gui>. Il code point è costituito dai quattro caratteri dopo <gui>U+</gui>.</p>
 
-  <p>You can enter any Unicode character using only your keyboard with the
-  numeric code point of the character. Every character is identified by a
-  four-character code point. To find the code point for a character, look it up
-  in the <app>Characters</app> application. The code point is the four characters
-  after <gui>U+</gui>.</p>
-
-  <p>To enter a character by its code point, press
-  <keyseq><key>Ctrl</key><key>Shift</key><key>U</key></keyseq>, then type the
-  four-character code and press <key>Space</key> or <key>Enter</key>. If you often
-  use characters that you can’t easily access with other methods, you might find
-  it useful to memorize the code point for those characters so you can enter
-  them quickly.</p>
-
-</section>
+    <p>Per inserire un carattere attraverso il suo code point, tenere premuti <key>Ctrl</key> e <key>Maiusc</key>, premere e rilasciare il tasto <key>u</key>, quindi inserire i quattro caratteri del code point. Se si devono usare spesso caratteri a cui non è possibile accedere in altro modo, potrebbe risultare utile memorizzare il code point di tali caratteri in modo da poterli immettere rapidamente.</p>
+  </section>
 
   <section id="layout">
     <title>Disposizioni di tastiera</title>
     <p>È possibile fare in modo che la propria tastiera si comporti come quella impostata per un'altra lingua, indifferentemente dalle lettere indicate sui tasti. È anche possibile passare in modo semplice da una disposizione a un'altra usando una icona bella barra superiore. Per maggiori informazioni, consultare <link xref="keyboard-layouts"/>.</p>
   </section>
 
-<section id="im">
-  <title>Metodi di input</title>
+  <section id="im">
+    <title>Metodi di input</title>
+    <p>Un metodo di input consente di immettere caratteri non solo con la tastiera, ma anche con dei dispositivi di input. Per esempio, potrebbe essere possibile inserire caratteri attraverso il mouse con un gesto o dei caratteri giapponesi utilizzando una tastiera con caratteri latini.</p>
 
-  <p>An Input Method expands the previous methods by allowing to enter
-  characters not only with keyboard but also any input devices. For instance
-  you could enter characters with a mouse using a gesture method, or enter
-  Japanese characters using a Latin keyboard.</p>
-
-  <p>Per scegliere un metodo di input, fare clic col pulsante destro del mouse in un'area di testo, scegliere <gui>Metodi di input</gui> e quindi il metodo da utilizzare. Non esiste un metodo di input predefinito nel sistema, per maggiori informazioni sull'utilizzo di uno di questi metodi consultare l'apposita documentazione.</p>
-
-</section>
+    <p>Per scegliere un metodo di input, fare clic col pulsante destro del mouse in un'area di testo, scegliere <gui>Metodi di input</gui> e quindi il metodo da utilizzare. Non esiste un metodo di input predefinito nel sistema, per maggiori informazioni sull'utilizzo di uno di questi metodi consultare l'apposita documentazione.</p>
+  </section>
 
 </page>

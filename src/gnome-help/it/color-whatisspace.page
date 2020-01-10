@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="color-whatisspace" xml:lang="it">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="color-whatisspace" xml:lang="it">
 
   <info>
     <link type="guide" xref="color#profiles"/>
@@ -44,7 +44,7 @@
 
   <figure>
     <desc>sRGB, AdobeRGB e ProPhotoRGB rappresentati da triangoli bianchi</desc>
-    <media its:translate="no" type="image" mime="image/png" src="figures/color-space.png"/>
+    <media type="image" mime="image/png" src="figures/color-space.png"/>
   </figure>
 
   <p>In primo luogo, guardare a sRGB, che è lo spazio più piccolo e che è in grado di codificare il minor numero di colori. È un'approssimazione di un monitor CRT di dieci anni fa e così la maggior parte dei monitor moderni sono facilmente in grado di visualizzare un numero maggiore di colori. sRGB è un <em>minimo comune denominatore</em> standard ed è usato in un gran numero di applicazioni (compresa Internet).</p>
@@ -57,7 +57,7 @@
   </p>
 
   <p>
-    Now, if ProPhoto is clearly better, why don’t we use it for everything?
+    Now, if ProPhoto is clearly better, why don't we use it for everything?
     The answer is to do with <em>quantization</em>.
     If you only have 8 bits (256 levels) to encode each channel, then a
     larger range is going to have bigger steps between each value.

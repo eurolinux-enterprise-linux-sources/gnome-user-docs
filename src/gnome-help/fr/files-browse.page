@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-browse" xml:lang="fr">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-browse" xml:lang="fr">
+
 
   <info>
-    <link type="guide" xref="files#common-file-tasks"/>
+    <link type="guide" xref="files" group="#first"/>
     <link type="seealso" xref="files-copy"/>
+    <desc>Gérer et organiser les fichiers avec le gestionnaire de fichiers.</desc>
 
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-16" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -25,14 +25,7 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Gérer et organiser les fichiers avec le gestionnaire de fichiers.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Luc Pionchon</mal:name>
@@ -49,13 +42,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Julien Hardelin</mal:name>
       <mal:email>jhardlin@orange.fr</mal:email>
-      <mal:years>2011, 2013</mal:years>
+      <mal:years>2011</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -81,50 +74,39 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Alexandre Franke</mal:name>
-      <mal:email>alexandre.franke@gmail.com</mal:email>
-      <mal:years>2015</mal:years>
-    </mal:credit>
   </info>
 
 <title>Consultation de vos fichiers et dossiers</title>
 
+<comment>
+	<p>This page is a feature overview. There should be a greater visual
+	separation between features. Small illustrative figures should be used
+	to display these features where appropriate, and video demonstrations of
+	some of the features might be useful too. Explain how you can add things to
+	the sidebar (link to a topic or explain it here).</p>
+</comment>
+
 <p>Servez-vous du gestionnaire de fichiers <app>Fichiers</app> pour naviguer et organiser les fichiers de votre ordinateur. Vous pouvez également l'utiliser pour gérer les fichiers sur des supports de stockage (comme des disques durs externes), sur des <link xref="nautilus-connect">serveurs de fichiers</link> et sur des partages réseau.</p>
 
-<p>To start the file manager, open <app>Files</app> in the
-<gui xref="shell-introduction#activities">Activities</gui> overview. You can also search
-for files and folders through the overview in the same way you would
-<link xref="shell-apps-open">search for applications</link>.
-</p>
+<p>Pour lancer le gestionnaire de fichiers, ouvrez l'application <app>Fichier</app> dans la vue d'ensemble <gui>Activités</gui>. Vous pouvez aussi rechercher des fichiers et des dossiers de la même façon que vous le faites pour des <link xref="shell-apps-open">applications</link>.</p>
 
 <section id="files-view-folder-contents">
-  <title>Parcours du contenu des dossiers</title>
+  <title>Parcourt du contenu des dossiers</title>
 
-<p>In the file manager, double-click any folder to view its contents, and
-double-click or <link xref="mouse-middleclick">middle-click</link> any file to
-open it with the default application for that file. Middle-click a folder to
-open it in a new tab. You can also right-click a folder to open it in a new tab
-or new window.</p>
+<p>Dans la fenêtre du gestionnaire de fichiers, faites un double-clic sur n'importe quel dossier pour afficher son contenu et sur n'importe quel fichier pour l'ouvrir avec l'application par défaut pour ce type de fichier. Un clic droit sur un dossier permet d'ouvrir son contenu dans un nouvel onglet ou une nouvelle fenêtre.</p>
 
-<p>Quand vous consultez les fichiers d'un dossier, vous pouvez rapidement <link xref="files-preview">prévisualiser chaque fichier</link> en pressant sur la barre d'espace pour vous assurer que c'est le bon fichier avant de l'ouvrir, le copier ou le supprimer.</p>
+<p>Quand vous consultez les fichiers d'un dossier, vous pouvez rapidement <link xref="files-preview">prévisualiser chaque fichier</link> en pressant sur la barre d'espace pour vous assurez que c'est le bon fichier avant de l'ouvrir, le copier ou le supprimer.</p>
 
-<p>The <em>path bar</em> above the list of files and folders shows you which
-folder you’re viewing, including the parent folders of the current folder.
-Click a parent folder in the path bar to go to that folder. Right-click any
-folder in the path bar to open it in a new tab or window, or access its
-properties.</p>
+<p>La <em>barre chemin</em> au-dessus de la liste des dossiers et fichiers indique le dossier que vous consultez, cela comprend le dossier actuel et les dossiers parents. Cliquez sur un dossier parent de ce chemin pour vous rendre à ce dossier. Faites un clic droit sur n'importe quel dossier de ce chemin pour l'ouvrir dans un nouvel onglet, une nouvelle fenêtre, ou pour le copier, le déplacer ou afficher ses propriétés.</p>
 
-<p>Si vous voulez rapidement <link xref="files-search">rechercher un fichier</link> dans ou sous le dossier ouvert, commencez à saisir son nom. Un <em>champ de recherche</em> apparaît en haut de la fenêtre et seuls les fichiers correspondant à votre recherche s'affichent. Appuyez sur <key>Échap</key> pour annuler la recherche.</p>
+<p>Si vous voulez accéder rapidement à un fichier du dossier ouvert, commencez à saisir son nom. Un champ de recherche apparaît en haut de la fenêtre et le premier fichier correspondant à votre recherche est sélectionné. Utilisez la touche flèche bas ou faites défiler la molette de la souris pour vous déplacer au fichier correspondant suivant.</p>
 
 <p>You can quickly access common places from the <em>sidebar</em>. If you do
-not see the sidebar, click <gui>Files</gui> in the top bar and then select
-<gui>Sidebar</gui>. You can add bookmarks to folders that you use often and
-they will appear in the sidebar. Drag a folder to the sidebar, and drop it over
-<gui>New bookmark</gui>, which appears dynamically, or click the window menu 
-and then select <gui style="menuitem">Bookmark this Location</gui>.</p>
+not see the sidebar, click the
+<media type="image" src="figures/go-down.png">down</media> button in the toolbar
+and pick <gui>Show Sidebar</gui>. You can add bookmarks to folders that you use
+often and they will appear in the sidebar. Use the <gui>Bookmarks</gui> menu to
+do this, or simply drag a folder into the sidebar.</p>
 
 </section>
-
 </page>

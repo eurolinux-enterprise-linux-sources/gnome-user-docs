@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="hardware-cardreader" xml:lang="fi">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="hardware-cardreader" xml:lang="fi">
 
   <info>
     <link type="guide" xref="media#photos"/>
     <link type="guide" xref="hardware#problems"/>
 
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+    <desc>Muistikortinlukijoiden ongelmien ratkaisuja.</desc>
 
     <credit type="author">
       <name>Gnomen dokumentointiprojekti</name>
@@ -13,19 +13,11 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Muistikortinlukijoiden ongelmien ratkaisuja</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Timo Jyrinki</mal:name>
       <mal:email>timo.jyrinki@iki.fi</mal:email>
       <mal:years>2012.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Jiri Grönroos</mal:name>
-      <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
-      <mal:years>2012-2018.</mal:years>
     </mal:credit>
   </info>
 
@@ -45,20 +37,11 @@ do not force it.)</p>
 </item>
 
 <item>
-  <p>Open <app>Files</app> from the
-  <gui xref="shell-introduction#activities">Activities</gui> overview. Does the inserted
-  card appear in the <gui>Devices</gui> list in the left sidebar? Sometimes the
-  card appears in this list but is not mounted; click it once to mount. (If the
-  sidebar is not visible, press <key>F9</key> or click <gui style="menu">Files</gui> in
-  the top bar and select the <gui style="menuitem">Sidebar</gui>.)</p>
+<p>Avaa <app>Tiedostot</app> työpöydän <gui>Unity-valikosta</gui>. Näkyykö asetettu kortti <gui>Laitteet</gui>-luettelossa vasemmassa sivupalkissa? Joskus kortti ilmestyy listaan mutta sitä ei liitetä automaattisesi; tässä tapauksessa liitä se napsauttamalla sitä. (Jos sivupalkkia ei näy, paina <key>F9</key> tai valitse <guiseq><gui>Näytä</gui><gui>Sivupaneeli</gui><gui>Näytä sivupaneeli</gui></guiseq>.)</p>
 </item>
 
 <item>
-  <p>If your card does not show up in the sidebar, press
-  <keyseq><key>Ctrl</key><key>L</key></keyseq>, then type
-  <input>computer:///</input> and press <key>Enter</key>. If your card reader
-  is correctly configured, the reader should come up as a drive when no card is
-  present, and the card itself when the card has been mounted.</p>
+<p>Jos korttisi ei näy sivupalkissa, mene <guiseq><gui>Siirry</gui><gui>Tietokone</gui></guiseq>. Jos kortinlukijan asetukset ovat kunnossa, sen tulisi näkyä asemana silloin, kun korttia ei ole asetettu ja kun kortti on paikallaan, sen tulisi näkyä korttina (kuva alla).</p>
 </item>
 
 <item>
@@ -66,12 +49,6 @@ do not force it.)</p>
 </item>
 </steps>
 
-<p>If no cards or drives are shown when browsing the <gui>Computer</gui>
-location, it is possible that your card reader does not work with Linux due to
-driver issues. If your card reader is internal (inside the computer instead of
-sitting outside) this is more likely. The best solution is to directly connect
-your device (camera, cell phone, etc.) to a USB port on the computer. USB
-external card readers are also available, and are far better supported by
-Linux.</p>
+<p>Jos <gui>Tietokone</gui>-kansiossa ei ole kortinlukijoita, on mahdollista, että korttisi ei toimi Linuxissa ajuriongelmien vuoksi. Tämä on todennäköisempää, jos kortinlukija on sisäinen (tietokoneen sisällä eikä ulkopuolella). Paras ratkaisu on yhdistää laite (kamera, matkapuhelin, jne.) suoraan tietokoneen USB-porttiin. USB:hen kytkettäviä ulkoisia kortinlukijoita on myös saatavilla ja niitä tuetaan huomattavasti paremmin Linuxissa.</p>
 
 </page>

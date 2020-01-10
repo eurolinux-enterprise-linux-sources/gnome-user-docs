@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="accounts-which-application" xml:lang="el">
-
   <info>
-    <link type="guide" xref="accounts"/>
-    <link type="seealso" xref="accounts-disable-service"/>
-
-    <revision pkgversion="3.8.2" date="2013-05-22" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="incomplete"/>
+    <revision pkgversion="3.8.2" version="0.2" date="2013-05-22" status="review"/>
 
     <credit type="author copyright">
       <name>Baptiste Mille-Mathias</name>
       <email>baptistem@gnome.org</email>
-      <years>2012, 2013</years>
+      <years>2012-2013</years>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
@@ -23,111 +17,79 @@
       <email>ak-47@gmx.net</email>
     </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <link type="guide" xref="accounts"/>
+    <link type="seealso" xref="accounts-disable-service"/>
 
-    <desc>Οι εφαρμογές μπορούν να χρησιμοποιήσουν τους δημιουργημένους λογαριασμούς στο <app>Διαδικτυακοί λογαριασμοί</app> και τις υπηρεσίες που εκμεταλλεύονται.</desc>
-
+    <desc>Οι εφαρμογές μπορούν να χρησιμοποιήσουν τους δημιουργημένους λογαριασμούς στο <app>δικτυακοί λογαριασμοί</app> και τις υπηρεσίες που εκμεταλλεύονται.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
-      <mal:email>team@gnome.gr</mal:email>
-      <mal:years>2009-2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
       <mal:email>dmtrs32@gmail.com</mal:email>
-      <mal:years>2012-2015</mal:years>
+      <mal:years>2012, 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:name> Φώτης Τσάμης</mal:name>
       <mal:email>ftsamis@gmail.com</mal:email>
       <mal:years>2009</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:name> Μάριος Ζηντίλης</mal:name>
       <mal:email>m.zindilis@dmajor.org</mal:email>
       <mal:years>2009, 2010</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Θάνος Τρυφωνίδης</mal:name>
-      <mal:email>tomtryf@gnome.org</mal:email>
-      <mal:years>2012-2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Μαρία Μαυρίδου</mal:name>
-      <mal:email>mavridou@gmail.com</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:name> Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
     </mal:credit>
   </info>
 
-  <title>Διαδικτυακές υπηρεσίες και εφαρμογές</title>
+  <title>Ποιες εφαρμογές επωφελούνται από δικτυακούς λογαριασμούς;</title>
 
-  <p>Αφού προσθέσετε έναν διαδικτυακό λογαριασμό, οποιαδήποτε εφαρμογή μπορεί πλέον να χρησιμοποιήσει τις διαθέσιμες υπηρεσίες που δεν έχουν <link xref="accounts-disable-service">απενεργοποιηθεί</link>. Διάφοροι πάροχοι δίνουν διαφορετικές υπηρεσίες. Αυτή η σελίδα περιέχει τις διάφορες υπηρεσίες και μερικές γνωστές εφαρμογές που τις χρησιμοποιούν.</p>
+  <p><app>Δικτυακοί λογαριασμοί</app> μπορούν να χρησιμοποιηθούν από εξωτερικές εφαρμογές για αυτόματη ρύθμιση τους.</p>
 
-  <terms>
-    <item>
-      <title>Ημερολόγιο</title>
-      <p>Η υπηρεσία «Ημερολόγιο» σας επιτρέπει να δείτε, να προσθέσετε και να επεξεργαστείτε συμβάντα σε ένα διαδικτυακό ημερολόγιο. Χρησιμοποιείται από εφαρμογές όπως το <app>Ημερολόγιο</app>, το <app>Evolution</app>, και το <app>California</app>.</p>
-    </item>
+  <section id="accounts-google-services">
+   <title>Με έναν λογαριασμό Google</title>
 
-    <item>
-      <title>Συνομιλία</title>
-      <p>The Chat service allows you to chat with your contacts on popular
-      instant messaging platforms. It is used by the <app>Empathy</app>
-      application.</p>
-    </item>
+   <list>
+    <item><p>Το <app>Evolution</app>, η εφαρμογή αλληλογραφίας. Ο λογαριασμός αλληλογραφίας σας θα προστεθεί στο <app>Evolution</app> αυτόματα, έτσι θα ανακτήσει την αλληλογραφία σας, θα σας δώσει πρόσβαση στις επαφές σας και θα εμφανίσει τα στοιχεία ημερολογίου σας στο σημειωματάριο.</p></item>
+    <item><p><app>Empathy</app>, the instant messaging application. Your online
+    account will be added and you will be able to communicate with your friends.
+    </p></item>
+    <item><p>Οι <app>Contacts</app>, που θα επιτρέψει να δείτε και να επεξεργαστείτε τις επαφές σας.</p></item>
+    <item><p><app>Έγγραφα</app> μπορούν να προσπελάσουν τα δικτυακά έγγραφα σας και να τα εμφανίσουν.</p></item>
+   </list>
+  </section>
 
-    <item>
-      <title>Επαφές</title>
-      <p>Η υπηρεσία «Επαφές» σας επιτρέπει να δείτε δημόσιες πληροφορίες των επαφών σας σε διάφορες υπηρεσίες. Χρησιμοποιείται από εφαρμογές όπως <app>Επαφές</app> και <app>Evolution</app>.</p>
-    </item>
+  <section id="accounts-windows-services">
+   <title>Με λογαριασμούς Windows Live, Facebook ή Twitter</title>
 
-    <item>
-      <title>Έγγραφα</title>
-      <p>Η υπηρεσία «Έγγραφα» σας επιτρέπει να δείτε τα διαδικτυακά σας έγγραφα όπως αυτά στο Google docs. Μπορείτε να δείτε τα έγγραφα σας χρησιμοποιώντας την εφαρμογή <app>Έγγραφα</app>.</p>
-    </item>
+   <p>Το <app>Empathy</app> μπορεί να χρησιμοποιήσει αυτούς τους λογαριασμούς για να σας συνδέσουν δικτυακά και να συνομιλήσουν με τις επαφές σας, φίλους και οπαδούς.</p>
+  </section>
 
-    <item>
-      <title>Αρχεία</title>
-      <p>Η υπηρεσία «Αρχεία» προσθέτει μια απομακρυσμένη τοποθεσία αρχείων, όπως η λειτουργία <link xref="nautilus-connect">Σύνδεση σε διακομιστή</link> του διαχειριστή αρχείων. Μπορείτε να προσπελάσετε απομακρυσμένα αρχεία χρησιμοποιώντας τον διαχειριστή αρχείων, καθώς επίσης και από τους διαλόγους «Άνοιγμα» και «Αποθήκευση» της κάθε εφαρμογής.</p>
-    </item>
+  <section id="account-windows-skydrive">
+   <title>With a SkyDrive account</title>
 
-    <item>
-      <title>Αλληλογραφία</title>
-      <p>Η υπηρεσία «Αλληλογραφία» σας επιτρέπει να στέλνετε και να λαμβάνετε αλληλογραφίας μέσω ενός παρόχου όπως το Google. Χρησιμοποιείται από το <app>Evolution</app>.</p>
-    </item>
+   <p>Τα <app>Έγγραφα</app> μπορούν να προσπελάσουν τα δικτυακά έγγραφά σας στο Microsoft SkyDrive και να τα εμφανίσουν.</p>
+  </section>
 
-<!-- TODO: Not sure what this does. Doesn't seem to do anything in Maps app.
-    <item>
-      <title>Maps</title>
-    </item>
--->
+  <section id="account-exchange">
+   <title>With a Exchange account</title>
 
-    <item>
-      <title>Φωτογραφίες</title>
-      <p>Η υπηρεσία «Φωτογραφίες» σας επιτρέπει να δείτε τις διαδικτυακές σας φωτογραφίας όπως αυτές που δημοσιεύετε στο Facebook. Μπορείτε να δείτε τις φωτογραφίες σας χρησιμοποιώντας την εφαρμογή <app>Φωτογραφίες</app>.</p>
-    </item>
+   <p>Once you have created an Exchange account, <app>Evolution</app> will start
+   retrieving mails from this account.</p>
+  </section>
 
-    <item>
-      <title>Εκτυπωτές</title>
-      <p>The Printers service allows you to send a PDF copy to a provider from
-      within the print dialog of any application. The provider might provide
-      print services, or it might just serve as storage for the PDF, which
-      you can download and print later.</p>
-    </item>
+  <section id="accounts-ownCloud">
+   <title>With a ownCloud account</title>
 
-    <item>
-      <title>Να διαβαστεί αργότερα</title>
-      <p>The Read Later service allows you to save a web page to external
-      services so that you can read it later on another device. No applications
-      currently use this service.</p>
-    </item>
+   <p>When an ownCloud account is set up, <app>Evolution</app> is able to
+   access and edit contacts and calendar appointments.</p>
 
-  </terms>
-
+   <p><app>Files</app> and other applications will be able to list and access
+   your online files stored in the ownCloud installation.</p>
+  </section>
 </page>

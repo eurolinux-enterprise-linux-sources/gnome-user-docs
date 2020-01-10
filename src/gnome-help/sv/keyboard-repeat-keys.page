@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="keyboard-repeat-keys" xml:lang="sv">
-
   <info>
     <link type="guide" xref="a11y#mobility" group="keyboard"/>
     <link type="guide" xref="keyboard"/>
 
     <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
-    <revision pkgversion="3.9.92" date="2013-10-11" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2013-10-11" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -25,52 +22,38 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Shobha Tyagi</name>
-      <email>tyagishobha@gmail.com</email>
-    </credit>
-
+    <desc>Make the keyboard not repeat letters when you hold down a key,
+    or change the delay and speed of repeat keys.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Få tangentbordet att inte repetera bokstäver när du håller ner en tangent, eller ändra fördröjningen och hastigheten på repeterande tangenter.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Sebastian Rasmussen</mal:name>
-      <mal:email>sebras@gmail.com</mal:email>
-      <mal:years>2014, 2015, 2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Anders Jonsson</mal:name>
-      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
-      <mal:years>2016, 2017</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Hantera repeterade tangenttryckningar</title>
+  <title>Turn off repeated key presses</title>
 
-  <p>Som standard när du håller ner en tangent på ditt tangentbord kommer bokstaven eller symbolen att repeteras tills du släpper tangenten. Om du har svårt att lyfta upp fingret snabbt nog kan du inaktivera denna funktion eller ändra hur länge det tar innan tangenttryckningar börjar repetera, eller hur snabbt tangenttryckningar repeteras.</p>
+  <p>By default, when you hold down a key on your keyboard, the letter
+  or symbol will be repeated until you release the key. If you have
+  difficulty picking your finger back up quickly enough, you can
+  disable this feature, or change how long it takes before key presses
+  start repeating.</p>
 
   <steps>
     <item>
-      <p>Öppna <gui xref="shell-introduction#activities">Aktiviteter</gui> och börja skriv <gui>Hjälpmedel</gui>.</p>
+     <p>Click your name on the top bar and select <gui>Settings</gui>.</p>
     </item>
     <item>
-      <p>Klicka på <gui>Hjälpmedel</gui> för att öppna panelen.</p>
+     <p>Open <gui>Keyboard</gui> and select the <gui>Typing</gui> tab.</p>
     </item>
     <item>
-     <p>Tryck på <gui>Upprepningstangenter</gui> i avsnittet <gui>Skriva</gui>.</p>
-    </item>
-    <item>
-      <p>Slå om <gui>Upprepningstangenter</gui> till <gui>AV</gui>.</p>
-      <p>Alternativt, justera skjutreglaget <gui>Fördröjning</gui> för att kontrollera hur länge du måste hålla ner en tangent innan den börjar repetera, och justera skjutreglaget <gui>Hastighet</gui> för att kontrollera hur snabbt tangenttryckningar repeteras.</p>
+     <p>Turn off <gui>Key presses repeat when key is held down</gui> to disable
+     repeated keys entirely.</p>
+     <p>Alternatively, adjust the <gui>Delay</gui> slider to control how long
+     you have to hold a key down to begin repeating it, and adjust the
+     <gui>Speed</gui> slider to control how quickly key presses repeat.</p>
     </item>
   </steps>
-
 </page>

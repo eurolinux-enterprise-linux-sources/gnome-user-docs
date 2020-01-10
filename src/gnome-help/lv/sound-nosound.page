@@ -4,9 +4,9 @@
   <info>
     <link type="guide" xref="sound-broken"/>
 
+    <desc>Pārbaudiet, vai tā nav apklusināta, vai kabeļi ir iesprausti kārtīgi un vai skaņu karte ir atpazīta.</desc>
+
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>GNOME dokumentācijas projekts</name>
@@ -14,91 +14,72 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Pārbaudiet, vai skaņa nav apklusināta, vai kabeļi ir iesprausti kārtīgi un vai skaņu karte ir atpazīta.</desc>
   </info>
 
 <title>Es nedzirdu nekādas skaņas no datora</title>
 
-  <p>Ja nedzirdat nekādas skaņas savā datorā, piemēram, atskaņojot mūziku, ejiet cauri sekojošajiem atkļūdošanas padomiem.</p>
+  <p>Ja nedzirdat nekādas skaņas savā datorā, piemēram, atskaņojot mūziku, pamēģiniet šos risinājumu soļus, lai redzētu, vai varat salabot savu problēmu.</p>
 
 <section id="mute">
-  <title>Pārliecinieties, ka skaņa nav apklusināta</title>
-
-  <p>Atveriet <gui xref="shell-introduction#yourname">sistēmas izvēlni</gui> un pārliecinieties, ka skaņa nav atslēgta vai izslēgta pavisam.</p>
-
-  <p>Dažiem klēpjdatoriem ir skaņas atslēgšanas slēdži vai pogas uz tastatūrām — pamēģiniet nospiest šo taustiņu, lai pārbaudītu, vai tas ieslēdz skaņu.</p>
-
-  <p>Vajadzētu arī pārliecināties, ka lietotne, kuru izmantojat, lai atskaņotu, piemēram, mūziku, nav apklusināta. Lietotnei vajadzētu būt skaņas regulācijas pogai galvenajā logā — pārbaudiet to.</p>
-
-  <p>Arī pārbaudiet <gui>Lietotņu</gui> cilni <gui>Skaņas</gui> GUI:</p>
-  <steps>
-    <item>
-    <p>Atveriet lietotni <app>Iestatījumi</app> no <gui>Aktivitāšu</gui> pārskata.</p>
-    </item>
-    <item>
-      <p>Spiediet <gui>Skaņa</gui>.</p>
-    </item>
-    <item>
-      <p>Ejiet uz cilni <gui>Lietotnes</gui> un pārliecinieties, ka jūsu lietotne nav apklusināta.</p>
-    </item>
-  </steps>
-
+ <title>Pārliecinieties, ka skaņa nav apklusināta</title>
+ <p>Nospiediet uz skaņas ikonas uzdevumu joslā (tā izskatās pēc skaļruņa) un pārliecinieties, ka skaņa nav atslēgta vai izslēgta pavisam.</p>
+ <p>Dažiem klēpjdatoriem ir skaņas atslēgšanas slēdži vai pogas uz tastatūrām—pamēģiniet nospiest šo taustiņu, lai pārbaudītu, vai tas ieslēdz skaņu.</p>
+ <p>Vajadzētu arī pārliecināties, ka lietotne, kuru izmantojat, lai atskaņotu, piemēram, mūziku, nav apklusināta. Lietotnei vajadzētu būt skaņas regulācijas pogai galvenajā logā — pārbaudiet to. Kā arī, nospiediet uz skaņas ikonas augšējā joslā un izvēlieties <gui>Skaņas iestatījumi</gui>. Kad <gui>Skaņa</gui> logs parādās, dodieties uz <gui>Lietotnes</gui> cilni un pārbaudiet, vai lietotne nav apklusināta.</p>
 </section>
 
 <section id="speakers">
-  <title>Pārliecinieties, ka skaļruņi ir ieslēgti un pareizi savienoti</title>
-  <p>Ja datoram ir ārējie skaļruņi, pārliecinieties, ka tie ir ieslēgti un ir uzgriezts skaļums. Pārliecinieties, ka skaļruņa kabelis ir droši iesprausts “izejas” audio kontaktā jūsu datorā. Parasti kontakts ir gaiši zaļā krāsā.</p>
+ <title>Pārliecinieties, ka skaļruņi ir ieslēgti un pareizi savienoti</title>
+ <p>Ja datoram ir ārējie skaļruņi, pārliecinieties, ka tie ir ieslēgti un ir uzgriezts skaļums. Pārliecinieties, ka skaļruņa kabelis ir droši iesprausts "izejas" audio kontaktā datora aizmugurē. Parasti kontakts ir gaiši zaļā krāsā.</p>
 
-  <p>Dažas skaņu kartes spēj pārslēgties starp kontaktiem, kuru izmanto izejai (skaļruņiem) un kontaktiem ieejai (piemēram, mikrofonam). Izejas kontakts Linux var atšķirties no tā, kurš ir, piemēram, Windows vai Mac OS. Pamēģiniet pieslēgt atskaņotāju citā kontaktā.</p>
+ <p>Dažas skaņu kartes spēj pārslēgt kontaktu, kuru izmanto izejai (skaļruņiem) un ieejai (piemēram, mikrofonam). Izejas kontakts Linux var atšķirties no tā, kurš ir, piemēram, Windows vai Mac OS. Pamēģiniet pieslēgt atskaņotāju citā kontaktā, lai pārbaudītu, vai tas strādā. </p>
 
  <p>Pēdējā lieta, ko pārbaudīt ir tas, vai audio kabelis ir droši iesprausts skaļruņu aizmugurē. Dažiem skaļruņiem var būt vairāk nekā viena ieeja.</p>
 </section>
 
 <section id="device">
-  <title>Pārbaudiet, vai pareizā skaņas ierīce ir izvēlēta</title>
-
-  <p>Dažiem datoriem ir instalētas vairākas “skaņu ierīces”.  Dažas no tām var atskaņot skaņu, bet dažas nē, tāpēc vajadzētu pārbaudīt, vai ir izvēlēta pareizā skaņas ierīce. Šeit varētu būt nepieciešami vairāki izmēģinājumi, lai atrastu pareizo.</p>
-
-  <steps>
-    <item>
-      <p>Atveriet <gui xref="shell-introduction#activities">Aktivitāšu</gui> pārskatu un sāciet rakstīt <gui>Skaņa</gui>.</p>
-    </item>
-    <item>
-      <p>Spiediet <gui>Skaņa</gui>, lai atvērtu paneli.</p>
-    </item>
-    <item>
-      <p>Cilnē <gui>Izvade</gui> mainiet <gui>Profila</gui> iestatījumus izvēlētajai ierīcei un nospēlējiet skaņu, lai redzētu, vai tas strādās. Varbūt vajadzēs iet cauri visam sarakstam un izmēģināt visus profilus.</p>
-
-      <p>Ja tas nestrādā, vajadzētu to pašu izmēģināt visām pārējām uzskaitītajām ierīcēm.</p>
-    </item>
-  </steps>
-
+ <title>Pārbaudiet, vai pareizā skaņas ierīce ir izvēlēta</title>
+ <p>Dažiem datoriem ir instalētas vairākas "skaņu ierīces".  Dažas no tām var atskaņot skaņu, bet dažas nē, tāpēc vajadzētu pārbaudīt, vai ir izvēlēta pareizā ierīce. Šeit varētu būt nepieciešami vairāki izmēģinājumi, lai atrastu pareizo.</p>
+ <steps>
+  <item>
+   <p>Nospiediet uz skaņas ikonas augšējā joslā un izvēlies <gui>Skaņas iestatījumi</gui>.</p>
+  </item>
+  <item>
+   <p><gui>Skaņa</gui> logā, kurš parādīsies, dodieties uz <gui>Izvade</gui> cilni. Atzīmējiet sev, kura ierīce un kurš profils ir izvēlēts (lai varētu atgriezties pie šiem iestatījumiem, ja to pamainīšana nedarbojas).</p>
+  </item>
+  <item>
+   <p>Izvēlētajai ierīcei pamēģiniet nomainīt profilu—nospēlējiet skaņu pēc profila maiņas, lai redzētu, vai tas strādās. Varbūt vajadzēs iet cauri visam sarakstam un izmēģināt visus profilus.</p>
+  </item>
+  <item>
+   <p>Ja tas nestrādā, vajadzētu to pašu izmēģināt visām pārējām uzskaitītajām ierīcēm.</p>
+  </item>
+  <item>
+   <p>Pamēģiniet nomainīt <gui>Savienotājs</gui> opciju, <gui>Izeja</gui> cilnē.</p>
+  </item>
+ </steps>
 </section>
 
 <section id="hardware-detected">
-
  <title>Pārbaudiet, vai skaņu karte tika pareizi atpazīta</title>
+ <p>Skaņu karte varētu nebūt atpazīta pareizi. Ja tas ir noticis, dators domās, ka nespēj atskaņot skaņas. Iespējamais iemesls skaņu kartes neatpazīšanai varētu būt tas, ka nav ieinstalēti kartes draiveri.</p>
+ <steps>
+  <item>
+   <p>Dodieties uz <gui>Aktivitāte</gui> pārskatu un atveriet Termināli.</p>
+  </item>
+  <item>
+   <p>Ierakstiet <cmd>aplay -l</cmd> un nospiediet <key>Enter</key>.</p>
+  </item>
+  <item>
+   <p>Tiks parādīts saraksts ar ierīcēm. Ja tur nav <gui>atskaņošanas aparatūras ierīces</gui>, skaņu karte nav atpazīta.</p>
+  </item>
+ </steps>
 
-  <p>Ja skaņu karte nav atpazīta, iespējams, iespējams, ka nav uzinstalēti draiveri. Iespējams, jums vajadzēs ieinstalēt šīs kartes draiverus. Kā tas ir izdarāms, ir atkarīgs no skaņas kartes.</p>
+ <p>Ja skaņu karte nav atpazīta, iespējams, vajadzēs ieinstalēt šīs kartes draiverus pašrocīgi. Kā tas ir izdarāms, ir atkarīgs no skaņas kartes.</p>
 
-  <p>Palaidiet <cmd>lspci</cmd> komandu no termināļa, lai uzzinātu, kāda jums ir skaņas karte:</p>
-  <steps>
-    <item>
-      <p>Dodieties uz <gui>Aktivitāte</gui> pārskatu un atveriet Termināli.</p>
-    </item>
-    <item>
-      <p>Palaidiet <cmd>lspci</cmd> kā <link xref="user-admin-explain">superlietotājam</link>; cita iespēja ir ierakstīt <cmd>sudo lspci</cmd> un ierakstīt paroli, vai ierakstīt <cmd>su</cmd>, un ievadīt <em>galveno</em> (administratora) paroli, un ierakstīt <cmd>lspci</cmd>.</p>
-    </item>
-    <item>
-      <p>Pārliecinieties, ka <em>audio kontrolieris</em> vai <em>audio ierīce</em> ir sarakstā: ja ir, jābūt redzamam tās markai un modeļa numuram. Kā arī, <cmd>lspci -v</cmd> parāda sarakstu ar detalizētāku informāciju.</p>
-    </item>
-  </steps>
+ <p>Lai redzētu, kāda ir skaņu karte, var izmantot <cmd>lspci</cmd> komandu terminālī. Nepieciešams palaist <cmd>lspci</cmd> kā <link xref="user-admin-explain">superlietotājam</link>; cita iespēja ir ierakstīt <cmd>sudo lspci</cmd> un ierakstīt paroli, vai ierakstīt <cmd>su</cmd>, un ievadīt <em>galveno</em> (administratora) paroli, un ierakstīt <cmd>lspci</cmd>. Pārbaudiet, vai ir saraksts ar <em>audio ierīcēm</em> vai <em>audio kontrolieriem</em> — tiem blakus vajadzētu būt skaņu kartes tipam un modelim. <cmd>lspci -v</cmd> komanda parādīs sarakstu ar detalizētāku informāciju.</p>
 
-  <p>Jūs varētu varēt atrast un instalēt savas skaņu kartes draiverus. Vislabāk attiecīgās Linux distribūcijas instalēšanas norādījumus taujāt ir palīdzības forumos (vai citādi).</p>
+ <p>Jūs varētu varēt atrast un instalēt savas skaņu kartes draiverus. Vislabāk attiecīgās Linux distribūcijas instalēšanas norādījumus taujāt ir palīdzības forumos (vai citādi).</p>
 
-  <p>Ja nevarat dabūt savas skaņu kartes draiverus, jūs varētu dot priekšroku jaunas skaņu kartes iegādei. Ir pieejamas gan datora iekšējās skaņas kartes, gan ārējās USB skaņas kartes.</p>
-
+ <p>Ja nevarat dabūt savas skaņu kartes draiverus, jūs varētu dot priekšroku jaunas skaņu kartes iegādei. Ir pieejamas gan datora iekšējās skaņas kartes, gan ārējās USB skaņas kartes.</p>
 </section>
 
 </page>

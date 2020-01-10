@@ -1,87 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="accounts-add" xml:lang="fi">
 
-  <info>
-    <link type="guide" xref="accounts" group="add"/>
-
-    <revision pkgversion="3.5.5" date="2012-08-14" status="draft"/>
-    <revision pkgversion="3.9.92" date="2012-09-18" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2013-09-20" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-
-    <credit type="author">
-      <name>Jim Campbell</name>
-      <email>jwcampbell@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-      <years>2014</years>
-    </credit>
-    <credit type="editor">
-      <name>Shaun McCance</name>
-      <email>shaunm@gnome.org</email>
-      <years>2015</years>
-    </credit>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Salli sovellusten käyttää verkkotilejäsi kuvia, yhteystietoja, kalentereita ja paljon muuta varten.</desc>
+<info>
+  <desc>Verkkotilin yhdistäminen.</desc>
+  <link type="guide" xref="accounts"/>
+  <revision pkgversion="3.5.5" version="0.1" date="2012-08-14" status="draft"/>
+  <credit type="author">
+    <name>Jim Campbell</name>
+    <email>jwcampbell@gmail.com</email>
+  </credit>
+  <credit type="editor">
+    <name>Michael Hill</name>
+    <email>mdhillca@gmail.com</email>
+  </credit>
 
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Timo Jyrinki</mal:name>
       <mal:email>timo.jyrinki@iki.fi</mal:email>
       <mal:years>2012.</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Jiri Grönroos</mal:name>
-      <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
-      <mal:years>2012-2018.</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Lisää tili</title>
+<title>Lisää tili</title>
 
-  <p>Tilin lisääminen auttaa linkittämään verkkotilisi Gnome-työpöytään. Näin ollen sähköposti, pikaviestintä ja muut verkkotiliisi liittyvät sovellukset määritetään puolestasi käyttövalmiiksi.</p>
+<p>Adding an account will help link your online accounts with your GNOME
+desktop. Thus, your email program, chat program, and other related applications
+will be set up for you.</p>
 
-  <steps>
-    <item>
-      <p>Avaa <gui xref="shell-introduction#activities">Toiminnot</gui>-yleisnäkymä ja kirjoita <gui>Verkkotilit</gui>.</p>
-    </item>
-    <item>
-      <p>Napsauta <gui>Verkkotilit</gui>.</p>
-    </item>
-    <item>
-      <p>Valitse tili oikealla olevasta listauksesta.</p>
-    </item>
-    <item>
-      <p>Valitse tilin tyyppi, jonka haluat lisätä.</p>
-    </item>
-    <item>
-      <p>Pieni verkkonäkymä aukeaa, josta voit kirjautua verkkopalveluun. Esimerkiksi, jos olet lisäämässä Google-tiliä, anna Google-tilisi käyttäjätunnus ja salasana. Jotkin palvelut mahdollistavat tilin luomisen kirjautumisikkunan kautta.</p>
-    </item>
-    <item>
-      <p>Jos kirjoitit kirjautumistietosi oikein, sinua pyydetään sallimaan Gnomen käyttää verkkotiliäsi. Valtuuta Gnomea käyttämään tiliäsi jatkaaksesi.</p>
-    </item>
-    <item>
-      <p>Kaikki palvelut, joita tilin palveluntarjoaja tarjoaa, otetaan käyttöön oletuksena. <link xref="accounts-disable-service">Aseta</link> yksittäiset palvelut <gui>Pois</gui>-tilaan kytkeäksesi ne pois käytöstä.</p>
-    </item>
-  </steps>
+<steps>
+  <item><p>Click the <key>+</key> button in the lower-left
+portion of the window.</p></item>
+  <item><p>Click the <gui>Account Type</gui> menu and select one.</p>
+        <p>If you have more than one account type, you can add the other
+        accounts at a later time.</p></item>
+  <item><p>Click <gui>Add…</gui></p></item>
+  <item><p>Pieni verkkonäkymä aukeaa, josta voit kirjautua verkkopalveluun. Esimerkiksi, jos olet lisäämässä Google-tiliä, anna Google-tilisi käyttäjätunnus ja salasana.</p>
+  </item>
+  <item><p>If you've entered your credentials correctly, you will be prompted
+  to allow GNOME access to your online account. Select <gui>Grant Access</gui>
+  to continue.</p></item>
+  <item><p>Select the applications that you want linked to your online account.
+  For example, if you want to use an online account for chat, but do not want
+  to use an online account for your calendar, turn the <gui>calendar</gui>
+  option off.</p></item>
+</steps>
 
-  <p>After you have added accounts, applications can use those accounts for
-  the services you have chosen to allow. See <link xref="accounts-disable-service"/>
-  for information on controlling which services to allow.</p>
+<p>Lisättyäsi tilit jokainen valitsemasi ohjelma käyttää automaattisesti tunnuksiasi ohjelman käynnistyessä.</p>
 
-  <note style="tip">
-    <p>Many online services provide an authorization token which GNOME stores
-    instead of your password. If you remove an account, you should also revoke
-    that certificate in the online service. See <link xref="accounts-remove"/>
-    for more information.</p>
-  </note>
+<note style="tip">
+  <p>
+    For security reasons, GNOME will not store your password on your computer.
+    Instead, it stores a token that is provided by the online service. If you
+    want to fully revoke the link between your desktop and the online service,
+    <link xref="accounts-remove">remove</link> it.
+  </p>
+</note>
 
 </page>

@@ -7,7 +7,6 @@
     <desc>Izvršite jedan klik da otvorite datoteke, pokrenete ili pogledate izvršne tekstualne datoteke, i da odredite ponašanje smeća.</desc>
 
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Tifani Antopoloski</name>
@@ -24,10 +23,6 @@
     <credit type="editor">
       <name>Sindhu S</name>
       <email>sindhus@live.in</email>
-    </credit>
-    <credit type="editor">
-      <name>Dejvid King</name>
-      <email>amigadave@amigadave.com</email>
     </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
@@ -66,7 +61,7 @@
 
  <p>Ako je izabrano <gui>Pitaj svaki put</gui>, pojaviće se prozorče koje će vas pitati da li želite da pokrenete ili da pregledate izabranu tekstualnu datoteku.</p>
 
- <p>Izvršne tekstualne datoteke se takođe nazivaju <em>skriptama</em>. Sve skripte u fascikli <file>~/.local/share/nautilus/scripts</file> će se pojaviti u priručnom izborniku za datoteku pod podizbornikom <gui style="menuitem">Skripte</gui> submenu. Kada se skripta izvrši iz mesne fascikle, sve izabrane datoteke će joj biti prosleđene kao parametri. Da izvršite skriptu nad datotekom:</p>
+ <p>Izvršne tekstualne datoteke se takođe nazivaju skriptama. Sve skripte u fascikli <file>~/.local/share/nautilus/scripts</file> će se pojaviti u priručnom izborniku za datoteku pod podizbornikom <gui style="menuitem">Skripte</gui> submenu. Kada se skripta izvrši iz mesne fascikle, sve izabrane datoteke će joj biti prosleđene kao parametri. Da izvršite skriptu nad datotekom:</p>
 
 <steps>
   <item>
@@ -85,7 +80,6 @@
  </note>
 
 </section>
-
 <section id="trash">
 <info>
 <link type="seealso" xref="files-delete"/>
@@ -95,8 +89,15 @@
 
 <terms>
  <item>
-  <title><gui>Pitaj pre izbacivanja smeća</gui></title>
+  <title><gui>Pitaj pre izbacivanja smeća ili brisanja datoteka</gui></title>
   <p>Ova opcija je izabrana po osnovi. Kada praznite smeće, biće prikazana poruka koja će potvrditi da želite da ispraznite smeće ili da izbrišete datoteke.</p>
+ </item>
+ <item>
+  <title><gui>Uključi i naredbu za brisanje koja zaobilazi smeće</gui></title>
+  <p>Kada izaberete ovu opciju tada će stavka <gui>Obriši</gui> biti dodata u izbornik koji će iskakati kada budete izvršili desni klik na neku stavku u programu <app>Datoteke</app>.</p>
+<note style="warning">
+<p>Brisanje stavke opcijom izbornika <gui>Obriši</gui> zaobilazi smeće. Stavka biva u potpunosti uklonjena sa sistema. Ne postoji način da povratite obrisanu stavku.</p>
+</note>
  </item>
 </terms>
 </section>

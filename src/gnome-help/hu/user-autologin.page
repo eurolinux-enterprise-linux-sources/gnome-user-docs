@@ -5,13 +5,11 @@
     <link type="guide" xref="user-accounts#manage"/>
     <link type="seealso" xref="shell-exit"/>
 
-    <revision pkgversion="3.8" date="2013-04-04" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.8" version="0.1" date="2013-04-04" status="review"/>
 
     <credit type="author copyright">
       <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
+      <email its:translate="no">kittykat3756@gmail.com</email>
       <years>2013</years>
     </credit>
 
@@ -28,7 +26,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Kelemen Gábor</mal:name>
       <mal:email>kelemeng at gnome dot hu</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015, 2016, 2017</mal:years>
+      <mal:years>2011, 2012, 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -48,12 +46,6 @@
       <mal:email>lukacs.bence1 at gmail dot com</mal:email>
       <mal:years>2011</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Nagy Zoltán</mal:name>
-      <mal:email>dzodzie at gmail dot com</mal:email>
-      <mal:years>2011</mal:years>
-    </mal:credit>
   </info>
 
   <title>Automatikus bejelentkezés</title>
@@ -62,10 +54,10 @@
 
   <steps>
     <item>
-      <p>Nyissa meg a <gui xref="shell-introduction#activities">Tevékenységek</gui> áttekintést, és kezdje el begépelni a <gui>Felhasználók</gui> szót.</p>
+      <p>Nyissa meg a <app>Beállítások</app> alkalmazást a <gui>Tevékenységek</gui> áttekintésből.</p>
     </item>
     <item>
-      <p>Kattintson a <gui>Felhasználók</gui> elemre a panel megnyitásához.</p>
+      <p>Nyissa meg a <gui>Felhasználók</gui> panelt a <app>Beállítások</app> alkalmazásban.</p>
     </item>
     <item>
       <p>Válassza ki a felhasználói fiókot, amelyet az automatikus bejelentkezéshez használni szeretne.</p>
@@ -74,14 +66,20 @@
       <p>Nyomja meg a <gui style="button">Feloldás</gui> gombot, és adja meg jelszavát.</p>
     </item>
     <item>
-      <p>Kapcsolja <gui>BE</gui> az <gui>Automatikus bejelentkezés</gui> kapcsolót.</p>
+      <p>Kapcsolja <gui>BE</gui> állásba az <gui>Automatikus bejelentkezés</gui> kapcsolót.</p>
     </item>
   </steps>
 
-  <p>A számítógép következő bekapcsolásakor automatikusan be fog jelentkezni. Ha ez a lehetőség engedélyezve van, akkor a jelszó megadása nem lesz szükséges, ezért ha valaki más kapcsolja be a számítógépet, az hozzáférhet a fiókjához és a személyes adataihoz, a fájljait és böngészési előzményeit is beleértve.</p>
+  <p>When you next start up your computer, you will be logged in automatically.
+  If you have this option enabled, you will not need to type in your password
+  to log in to your account which means that if someone else starts up your
+  computer, they will be able to access your account and your personal data
+  including your files and browser history.</p>
 
   <note>
-    <p>Ha a fiókja <em>Általános</em> típusú, akkor ezt a beállítást nem tudja módosítani. Keresse meg a rendszergazdát, aki meg tudja változtatni ezt a beállítást.</p>
+    <p>If your account type is <em>Standard</em>, you cannot change this
+    setting. Contact your system administrator who can change this setting
+    for you.</p>
   </note>
 
 </page>

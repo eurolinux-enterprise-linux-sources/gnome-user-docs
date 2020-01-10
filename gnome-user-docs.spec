@@ -1,63 +1,39 @@
-Name:           gnome-user-docs
-Version:        3.28.2
-Release:        1%{?dist}
 Summary:        GNOME User Documentation
-
+Name:           gnome-user-docs
+Version:        3.8.2
+Release:        2%{?dist}
 License:        CC-BY-SA
 URL:            http://help.gnome.org/
-Source0:        https://download.gnome.org/sources/%{name}/3.28/%{name}-%{version}.tar.xz
-
+#VCS: git:git://git.gnome.org/gnome-user-docs
+Source:         http://download.gnome.org/sources/gnome-user-docs/3.8/gnome-user-docs-%{version}.tar.xz
+Group:          Documentation
 BuildArch:      noarch
 
-BuildRequires:  gettext
-BuildRequires:  itstool
-BuildRequires:  pkgconfig
-BuildRequires:  yelp-tools
+BuildRequires: pkgconfig
+BuildRequires: gettext
+BuildRequires: itstool
+BuildRequires: yelp-tools
 
 %description
 This package contains end-user documentation for the GNOME desktop
 environment.
 
 %prep
-%setup -q
+%setup -q -n gnome-user-docs-%{version}
 
 %build
 %configure
 make %{?_smp_mflags}
 
 %install
-%make_install
+make install DESTDIR=$RPM_BUILD_ROOT INSTALL="install -p"
 
 %find_lang %{name} --all-name --with-gnome
 
 %files -f %{name}.lang
-%license COPYING
-%doc NEWS README
+%doc COPYING AUTHORS NEWS README
 
 %changelog
-* Tue May 08 2018 Kalev Lember <klember@redhat.com> - 3.28.2-1
-- Update to 3.28.2
-- Resolves: #1569268
-
-* Wed Mar  8 2017 Matthias Clasen <mclasen@redhat.com> - 3.22.0-1
-- Rebase to 3.22.0
-  Resolves: #1386967
-
-* Tue May 26 2015 Matthias Clasen <mclasen@redhat.com> - 3.14.2-2
-- Update translations
-Related: #1174428
-
-* Tue Nov 11 2014 Kalev Lember <kalevlember@gmail.com> - 3.14.2-1
-- Update to 3.14.2
-- Resolves: #1174428
-
-* Wed Jan 29 2014 Ray Strode <rstrode@redhat.com> 3.8.2-4
-- update tranlsations
-  Resolves: #1030353
-
-* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 3.8.2-3
-- Mass rebuild 2013-12-27
-
 * Fri Jul 12 2013 Matthias Clasen <mclasen@redhat.com> -3.8.2-2
 - Rebuild
 

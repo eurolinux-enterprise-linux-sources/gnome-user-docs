@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task a11y" id="a11y-stickykeys" xml:lang="pt-BR">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task a11y" id="a11y-stickykeys" xml:lang="pt-BR">
   <info>
     <link type="guide" xref="a11y#mobility" group="keyboard"/>
     <link type="guide" xref="keyboard" group="a11y"/>
 
-    <revision pkgversion="3.8.0" date="2013-03-13" status="candidate"/>
-    <revision pkgversion="3.9.92" date="2013-09-18" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="final"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -24,12 +18,9 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
     <desc>Digite os atalhos de teclado uma tecla de cada vez em vez de ter que mantê-las pressionadas todas ao mesmo tempo.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Rodolfo Ribeiro Gomes</mal:name>
@@ -38,42 +29,33 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Enrico Nicoletto</mal:name>
       <mal:email>liverig@gmail.com</mal:email>
       <mal:years>2013.</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>João Santana</mal:name>
-      <mal:email>joaosantana@outlook.com</mal:email>
-      <mal:years>2013.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Fontenelle</mal:name>
-      <mal:email>rafaelff@gnome.org</mal:email>
-      <mal:years>2012-2018.</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Ativando teclas de aderência</title>
+  <title>Ativar teclas de aderência</title>
 
-  <p>As <em>Teclas de aderência</em> permitem digitar atalhos de teclado uma tecla de cada vez em vez de ter que pressioná-las todas ao mesmo tempo. Por exemplo, o atalho <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq> alterna entre janelas. Sem as teclas de aderência ativadas, você teria mantê-las ambas as teclas pressionadas ao mesmo tempo; com as teclas de aderência ativas, você pressionaria <key>Super</key> e então a <key>Tab</key> para fazer o mesmo.</p>
+  <p><em>Teclas de aderência</em> permitem digitar atalhos de teclado uma tecla de cada vez em vez de ter que pressioná-las todas ao mesmo tempo. Por exemplo, o atalho <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq> alterna entre janelas. Sem as teclas de aderência ativadas, você teria mantê-las ambas as teclas pressionadas ao mesmo tempo; com as teclas de aderência ativas, você pressionaria <key>Super</key> e então a <key>Tab</key> para fazer o mesmo.</p>
 
   <p>Você pode querer ativar as teclas de aderência se você achar difícil manter pressionadas várias teclas ao mesmo tempo.</p>
 
   <steps>
     <item>
-      <p>Abra o panorama de <gui xref="shell-introduction#activities">Atividades</gui> e comece a digitar <gui>Acessibilidade</gui>.</p>
+      <p>Clique em seu nome na barra superior e selecione <gui>Configurações</gui>.</p>
     </item>
     <item>
-      <p>Clique em <gui>Acessibilidade</gui> para abrir o painel.</p>
+      <p>Abra <gui>Acessibilidade</gui> e selecione a aba <gui>Digitação</gui>.</p>
     </item>
     <item>
-      <p>Pressione <gui>Assistência de digitação (AccessX)</gui> na seção <gui>Digitação</gui>.</p>
-    </item>
-    <item>
-      <p>Alterne <gui>Teclas de aderência</gui> para <key>❙</key>.</p>
+      <p>Ative <gui>Teclas de aderência</gui>.</p>
     </item>
   </steps>
 
@@ -89,6 +71,6 @@
 
   <p>Selecione <gui>Desabilitar se duas teclas forem pressionadas juntas</gui> para habilitar isso.</p>
 
-  <p>Seu computador pode emitir um “bip” quando você começa a digitar um atalho de teclado com as teclas de aderência estiverem ativadas. Isso é útil se quiser saber se as teclas de aderência estão esperando que um atalho de teclado seja digitado, e que então as próximas teclas pressionadas seriam interpretadas como parte de um atalho. Selecione <gui>Soar um bip quando uma tecla modificadora for pressionada</gui> para habilitar isso.</p>
+  <p>Seu computador pode emitir um bipe quando você começa a digitar um atalho de teclado com as teclas de aderência estiverem ativadas. Isso é útil se quiser saber se as teclas de aderência estão esperando que um atalho de teclado seja digitado, e que então as próximas teclas pressionadas seriam interpretadas como parte de um atalho. Selecione <gui>Soar um bip quando uma tecla modificadora for pressionada</gui> para habilitar isso.</p>
 
 </page>

@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="bluetooth" xml:lang="fr">
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="bluetooth" xml:lang="fr">
+<info>
+  <link type="guide" xref="hardware"/>
 
-  <info>
-    <link type="guide" xref="hardware"/>
+  <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
 
-    <revision pkgversion="3.4" date="2012-02-19" status="outdated"/>
-    <revision pkgversion="3.10" date="2013-11-09" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+  <credit type="author">
+    <name>Shaun McCance</name>
+    <email>shaunm@gnome.org</email>
+  </credit>
 
-    <credit type="author">
-      <name>Shaun McCance</name>
-      <email>shaunm@gnome.org</email>
-    </credit>
+  <desc><link xref="bluetooth-connect-device">Connexion</link>, <link xref="bluetooth-send-file">envoi de fichiers</link>, <link xref="bluetooth-turn-on-off">activation et désactivation</link>…</desc>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc><link xref="bluetooth-connect-device">Connexion</link>, <link xref="bluetooth-send-file">envoi de fichiers</link>, <link xref="bluetooth-turn-on-off">activation et désactivation</link>…</desc>
-  
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Luc Pionchon</mal:name>
       <mal:email>pionchon.luc@gmail.com</mal:email>
@@ -34,13 +29,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Julien Hardelin</mal:name>
       <mal:email>jhardlin@orange.fr</mal:email>
-      <mal:years>2011, 2013</mal:years>
+      <mal:years>2011</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -66,17 +61,25 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Alexandre Franke</mal:name>
-      <mal:email>alexandre.franke@gmail.com</mal:email>
-      <mal:years>2015</mal:years>
-    </mal:credit>
   </info>
 
 <title>Bluetooth</title>
 
 <p>Bluetooth est un protocole de communication sans fil qui permet de connecter différents types de périphériques à un ordinateur. Bluetooth est habituellement utilisé pour les micro-casques et les périphériques d'entrée comme les souris et les claviers. Il est aussi utilisé pour <link xref="bluetooth-send-file">envoyer des fichiers entre périphériques</link>, par exemple entre un ordinateur et un téléphone portable.</p>
+
+<comment>
+<cite date="2012-02-19">shaunm</cite>
+<p>Things to improve: The BT settings has a "Browse Files" button for devices.
+We only cover push file transfers. Might also be worth mentioning something
+on receiving files when doing push from another device.</p>
+<p>We don't have explicit pages for input devices. Might be worth a topic like
+"Connect a BT mouse or keyboard", linked under Mouse, Keyboard, and BT.</p>
+<p>We have nothing for BT printers. Topic under both Printing and BT.
+Consider other device classes, topics linked under both BT and the
+appropriate device-specific guide (e.g. headset under Audio).</p>
+<p>A topic on Bluetooth security would be good. Might want to also create
+a new top-level guide for security, and link the topic there too.</p>
+</comment>
 
 <section id="problems">
   <info>

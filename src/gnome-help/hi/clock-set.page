@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="clock-set" xml:lang="hi">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="clock-set" xml:lang="hi">
 
   <info>
-    <link type="guide" xref="clock" group="#first"/>
-
+    <link type="guide" xref="clock"/>
+    <desc>Click the clock on the top bar and go into the <gui>Date and Time Settings</gui>
+    to alter the date/time.</desc>
     <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>ग्नोम प्रलेखन परियोजना</name>
@@ -18,40 +17,38 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Use the <gui>Date &amp; Time Settings</gui> to alter the date or
-    time.</desc>
   </info>
 
 <title>Change the date and time</title>
 
-  <p>If the date and time displayed on the top bar are incorrect or in the
-  wrong format, you can change them:</p>
+  <p>If the date and time displayed on the top bar are incorrect or in the wrong
+ format, you can change them:</p>
 
-  <steps>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui>      
-      overview and start typing <gui>Date &amp; Time</gui>.</p>
-    </item>
-    <item>
-      <p>Click on <gui>Date &amp; Time</gui> to open the panel.</p>
-    </item>
-    <item>
-      <p>If you have <gui>Automatic Date &amp; Time</gui> set to <gui>ON</gui>,
-      your date and time should update automatically if you have an internet
-      connection. To update your date and time manually, set this to
-      <gui>OFF</gui>.</p>
-    </item> 
-    <item>
-      <p>Click <gui>Date &amp; Time</gui>, then adjust the time and date.</p>
-    </item>
-    <item>
-      <p>You can change how the hour is displayed by selecting
-      <gui>24-hour</gui> or <gui>AM/PM</gui> for <gui>Time Format</gui>.</p>
-    </item>
-  </steps>
-
-  <p>You may also wish to <link xref="clock-timezone">set the timezone
-  manually</link>.</p>
+<steps>
+ <item>
+  <p>Click on the clock in the middle of the top bar and select
+  <gui>Date and Time Settings</gui>.</p>
+ </item>
+ <item>
+  <p>You may need to click <gui>Unlock</gui> and type the
+  <link xref="user-admin-explain">admin password</link>.</p>
+ </item>
+ <item>
+  <p>Adjust the date and time by clicking on the arrows to choose the  hour and
+  minute. You can choose the year, month and day from the drop-down lists.</p>
+ </item>
+ <item>
+  <p>If you like, you can have the clock update itself automatically by
+  switching <gui>Network Time</gui> on.</p>
+  <p>When <em>Network Time</em> is switched on, the computer will periodically
+  synchronize its clock with a very accurate clock on the internet, so you don't
+  have to do it manually. This will only work if you are connected to the
+  internet.</p>
+ </item>
+ <item>
+  <p>You can also change how the hour is displayed by selecting <gui>24-hour</gui>
+  or <gui>AM/PM</gui> format.</p>
+ </item>
+</steps>
 
 </page>

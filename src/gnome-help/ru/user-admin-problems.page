@@ -1,30 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="user-admin-problems" xml:lang="ru">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="user-admin-problems" xml:lang="ru">
 
   <info>
     <link type="guide" xref="user-accounts#privileges"/>
-    <link type="seealso" xref="user-admin-explain"/>
-    <link type="seealso" xref="user-admin-change"/>
+
+    <desc>Выполнять некоторые задачи, типа установки приложений можно, лишь если у вас есть административные полномочия.</desc>
 
     <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-03" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <!-- TODO: review that this is actually correct -->
-    <revision pkgversion="3.18" date="2015-09-28" status="candidate"/>
 
-    <credit type="authohar">
+    <credit type="author">
       <name>Проект документирования GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
-    <credit type="editor">
-      <name>Екатерина Герасимова (Ekaterina Gerasimova)</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>You can do some things, like installing applications, only if you
-    have administrative privileges.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Александр Прокудин</mal:name>
@@ -35,45 +24,26 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011-2012</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Станислав Соловей</mal:name>
-      <mal:email>whats_up@tut.by</mal:email>
-      <mal:years>2013-2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Юлия Дронова</mal:name>
-      <mal:email>juliette.tux@gmail.com</mal:email>
-      <mal:years>2013-2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Юрий Мясоедов</mal:name>
-      <mal:email>ymyasoedov@yandex.ru</mal:email>
-      <mal:years>2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
 
-  <title>Проблемы, вызванные ограничением прав доступа</title>
+<title>Пробемы, вызываемые административными ограничениями</title>
 
-  <p>Если у вас нет <link xref="user-admin-explain">прав администратора</link>, вы можете столкнуться с некоторыми проблемами. Некоторые задачи требуют наличия прав администратора. Например:</p>
+  <p>Если у вас нет <link xref="user-admin-explain">административных полномочий</link>, вы можете столкнуться с некоторыми проблемами. Некоторые задачи требуют обладания административными полномочиями, например:</p>
 
-  <list>
-    <item>
-      <p>connecting to networks or wireless networks,</p>
-    </item>
-    <item>
-      <p>viewing the contents of a different disk partition (for example, a
-      Windows partition), or</p>
-    </item>
-    <item>
-      <p>installing new applications.</p>
-    </item>
-  </list>
+<list>
+ <item>
+  <p>Подключение к проводным или беспроводным сетям</p>
+ </item>
+ <item>
+  <p>Просмотр содержимого съёмных носителей, подключённых к компьютеру, или содержимого другого раздела диска (например, раздела Windows)</p>
+ </item>
+ <item>
+  <p>Установка новых приложений</p>
+ </item>
+</list>
 
-  <p>Можно <link xref="user-admin-change">выбрать пользователей, обладающих правами администратора</link>.</p>
+  <p>Можно <link xref="user-admin-change">изменить пользователей, которым назначены полномочия администратора</link>.</p>
 
 </page>

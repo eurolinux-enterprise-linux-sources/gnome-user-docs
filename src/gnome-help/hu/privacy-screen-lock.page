@@ -5,12 +5,10 @@
     <link type="guide" xref="privacy"/>
     <link type="seealso" xref="session-screenlocks"/>
     <link type="seealso" xref="shell-exit#lock-screen"/>
-
     <revision pkgversion="3.8" date="2013-05-21" status="candidate"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-30" status="final"/>
 
+    <desc>Prevent other people from using your desktop when you
+    go away from your computer.</desc>
     <credit type="author">
       <name>Shaun McCance</name>
       <email>shaunm@gnome.org</email>
@@ -24,10 +22,7 @@
       <email>jwcampbell@gmail.com</email>
       <years>2013</years>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Mások megakadályozása a számítógép használatában, mialatt nincs a számítógépénél.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Griechisch Erika</mal:name>
@@ -38,7 +33,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Kelemen Gábor</mal:name>
       <mal:email>kelemeng at gnome dot hu</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015, 2016, 2017</mal:years>
+      <mal:years>2011, 2012, 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -58,40 +53,34 @@
       <mal:email>lukacs.bence1 at gmail dot com</mal:email>
       <mal:years>2011</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Nagy Zoltán</mal:name>
-      <mal:email>dzodzie at gmail dot com</mal:email>
-      <mal:years>2011</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Képernyő automatikus zárolása</title>
+  <title>Automatically lock your screen</title>
   
-  <p>Ha magára hagyja számítógépét, akkor <link xref="shell-exit#lock-screen">zárolja a képernyőt</link> a számítógép mások általi használatának és fájljai elérésének megakadályozásához. Ha hajlamos megfeledkezni a képernyő zárolásáról, akkor beállíthatja, hogy a képernyő automatikusan zárolásra kerüljön egy megadott idő után. Ez segít biztonságban tartani a számítógépét, amikor nem használja azt.</p>
+  <p>When you leave your computer, you should
+  <link xref="shell-exit#lock-screen">lock the screen</link> to prevent
+  other people from using your desktop and accessing your files. If you
+  sometimes forget to lock your screen, you may wish to have your computer's
+  screen lock automatically after a set period of time. This will help to
+  secure your computer when you aren't using it.</p>
 
-  <note><p>Amikor a képernyő zárolva van, minden alkalmazása és rendszerfolyamata továbbra is futni fog, de meg kell adnia jelszavát a használatuk folytatásához. </p></note>
+  <note><p>When your screen is locked, your applications and system processes
+  will continue to run, but you will need to enter your password to begin using
+  them again.</p></note>
   
   <steps>
-    <title>A képernyő automatikus zárolása előtti idő hosszának beállításához:</title>
-    <item>
-      <p>Nyissa meg a <gui xref="shell-introduction#activities">Tevékenységek</gui> áttekintést, és kezdje el begépelni az <gui>Adatvédelem</gui> szót.</p>
-    </item>
-    <item>
-      <p>Kattintson az <gui>Adatvédelem</gui> elemre a panel megnyitásához.</p>
-    </item>
-    <item>
-      <p>Válassza a <gui>Képernyőzár</gui> lehetőséget.</p>
-    </item>
-    <item>
-      <p>Ha az <gui>Automatikus képernyőzárolás</gui> <gui>BE</gui> van kapcsolva, akkor a legördülő listában kiválaszthatja az idő hosszát.</p>
-    </item>
+    <title>To set the length of time before your screen locks
+    automatically:</title>
+    <item><p>Kattintson a nevére a felső sávban, és válassza a <gui>Beállítások</gui> menüpontot.</p></item>
+    <item><p>Select <guiseq><gui>Privacy</gui><gui>Screen Lock</gui></guiseq>.
+    </p></item>
+    <item><p>Make sure <gui>Automatic Screen Lock</gui> is switched on, then
+    select a length of time from the drop-down list.</p></item>
   </steps>
 
-  <note style="tip">
-    <p>Az alkalmazások megjeleníthetnek olyan értesítéseket, amelyek akkor is láthatók, ha zárolja a képernyőt. Ez kényelmes, ha például a képernyő feloldása nélkül szeretné látni, van-e új e-mailje. Ha aggódik, hogy esetleg mások is megláthatják ezeket az értesítéseket, akkor kapcsolja ki az <gui>Értesítések megjelenítése</gui> beállítást.</p>
-  </note>
-
-  <p>Amikor a képernyő zárolva van és fel szeretné oldani, nyomja meg az <key>Esc</key> billentyűt, vagy csúsztasson fel a képernyő aljáról az egérrel. Ezután írja be jelszavát, és nyomja meg az <key>Enter</key> billentyűt, vagy a <gui>Feloldás</gui> gombot. Ennek alternatívájaként kezdje el jelszavát gépelni, és a zárolási függöny automatikusan felhúzódik.</p>
+  <p>When your screen is locked, and you want to unlock it, press
+  <key>Esc</key>, or swipe up from the bottom of your screen with your mouse.
+  Then enter your password, and press <key>Enter</key> or click
+  <gui>Unlock</gui>.</p>
 
 </page>

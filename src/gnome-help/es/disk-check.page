@@ -18,7 +18,6 @@
     </credit>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
-    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
 
     <desc>Pruebe su disco duro para buscar problemas y asegurarse de que está sano.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -26,7 +25,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2011 - 2018</mal:years>
+      <mal:years>2011 - 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -59,18 +58,18 @@
 <steps>
  <title>Compruebe la salud de su disco usando la aplicación Discos</title>
 
-  <item>
-    <p>Abra <app>Discos</app> desde la vista de <gui>Actividades</gui>.</p>
-  </item>
-  <item>
-    <p>Seleccione el disco duro que quiere comprobar en la lista de dispositivos de almacenamiento de la izquierda. Se mostrará la información sobre el disco y su estado.</p>
-  </item>
-  <item>
-    <p>Pulse el icono de la rueda dentada y elija <gui>Datos SMART y autocomprobación…</gui>. La <gui>Estimación general</gui> debería decir «El disco está correcto».</p>
-  </item>
-  <item>
-    <p>Consulte más información en <gui>Atributos SMART</gui>, o pulse el botón <gui style="button">Iniciar autocomprobación</gui> para ejecutar este tipo de prueba.</p>
-  </item>
+ <item>
+  <p>Abra la aplicación <app>Discos</app> desde la vista de <gui>Actividades</gui>.</p>
+ </item>
+ <item>
+  <p>Seleccione el disco duro que quiere comprobar en la lista <gui>Dispositivos de almacenamiento</gui>. La información sobre el disco y su estado aparecerá debajo de <gui>Unidad</gui>.</p>
+ </item>
+ <item>
+  <p><gui>Estado SMART</gui> debería decir «El disco está sano».</p>
+ </item>
+ <item>
+  <p>Pulse el botón <gui>Datos SMART</gui> para ver más información, o ejecute una autocomprobación.</p>
+ </item>
 
 </steps>
 
@@ -80,7 +79,7 @@
 
  <title>¿Qué pasa si el disco no está sano?</title>
 
-  <p>Incluso aunque el <gui>Estado general</gui> indique que el disco <em>no está</em> sano, no tiene por qué ser motivo de alarma. No obstante, es mejor estar preparado con una <link xref="backup-why">copia de seguridad</link> para prevenir la pérdida de datos.</p>
+  <p>Incluso aunque el <gui>Estado SMART</gui> indique que el disco <em>no está</em> sano, no tiene por qué ser motivo de alarma. No obstante, es mejor estar preparado con una <link xref="backup-why">copia de seguridad</link> para prevenir la pérdida de datos.</p>
 
   <p>Si el estado dice «Pre-fail», el disco está razonablemente sano pero se han detectado signos de desgaste, lo que significa que podría fallar en un futuro cercano. Si su disco duro (o equipo) tiene unos cuantos años de antigüedad, es probable que vea este mensaje en algunas de las comprobaciones de salud. Debería <link xref="backup-how">hacer una copia de seguridad de sus archivos importantes con regularidad</link> y comprobar periódicamente el estado del disco para ver si empeora.</p>
 

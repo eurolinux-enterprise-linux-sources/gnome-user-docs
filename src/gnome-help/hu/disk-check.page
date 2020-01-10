@@ -18,7 +18,6 @@
     </credit>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
-    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
 
     <desc>A merevlemez hibáinak keresésével meggyőződhet a lemez megfelelő állapotáról.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -32,7 +31,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Kelemen Gábor</mal:name>
       <mal:email>kelemeng at gnome dot hu</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015, 2016, 2017</mal:years>
+      <mal:years>2011, 2012, 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -52,12 +51,6 @@
       <mal:email>lukacs.bence1 at gmail dot com</mal:email>
       <mal:years>2011</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Nagy Zoltán</mal:name>
-      <mal:email>dzodzie at gmail dot com</mal:email>
-      <mal:years>2011</mal:years>
-    </mal:credit>
   </info>
 
 <title>Hibák keresése a merevlemezen</title>
@@ -71,18 +64,18 @@
 <steps>
  <title>A lemez állapotának ellenőrzése a Lemezek alkalmazással</title>
 
-  <item>
-    <p>Nyissa meg a <app>Lemezeket</app> a <gui>Tevékenységek</gui> áttekintésből.</p>
-  </item>
-  <item>
-    <p>Válassza ki a lemezt a tárolóeszközök bal oldali listájából. Megjelennek a lemezzel és állapotával kapcsolatos információk.</p>
-  </item>
-  <item>
-    <p>Kattintson a menü gombra, és válassza a <gui>SMART adatok és öntesztek</gui> menüpontot. Az <gui>Átfogó felmérés</gui> alatt az „A lemez jó” állapotnak kell megjelennie.</p>
-  </item>
-  <item>
-    <p>További információkat a <gui>SMART attribútumok</gui> alatt láthat, vagy kattintson az <gui style="button">Önellenőrzés indítása</gui> gombra egy önteszt indításához.</p>
-  </item>
+ <item>
+  <p>Nyissa meg a <app>Lemezek</app> alkalmazást a <gui>Tevékenységek</gui> áttekintésben.</p>
+ </item>
+ <item>
+  <p>Válassza ki a lemezt a <gui>Tárolóeszközök</gui> listájából. A lemezzel és állapotával kapcsolatos információk a <gui>Meghajtó</gui> alatt jelennek meg.</p>
+ </item>
+ <item>
+  <p>A <gui>SMART állapot</gui> mellett „A lemez egészséges” szövegnek kell állnia.</p>
+ </item>
+ <item>
+  <p>Kattintson a <gui>SMART adatok</gui> gombra további meghajtóinformációk megjelenítéséhez vagy önteszt futtatásához.</p>
+ </item>
 
 </steps>
 
@@ -92,7 +85,7 @@
 
  <title>Mi a teendő, ha a lemez nem egészséges?</title>
 
-  <p>Még ha az <gui>Átfogó felmérés</gui> azt is jelzi, hogy a lemez <em>nem</em> egészséges, sem kell megijedni. Azonban az adatvesztés megelőzése érdekében jobb <link xref="backup-why">mentéssel</link> készülni.</p>
+  <p>Még ha a <gui>SMART állapot</gui> azt is jelzi, hogy a lemez <em>nem</em> egészséges, sem kell megijedni. Azonban az adatvesztés megelőzése érdekében jobb <link xref="backup-why">mentéssel</link> készülni.</p>
 
   <p>Ha az állapot „Pre-fail”, akkor a lemez még elfogadható állapotban van, de a fáradás jelei észlelhetők, azaz a közeljövőben meghibásodhat. Ha a merevlemez (vagy számítógép) már néhány éves, akkor valószínűbb, hogy találkozhat ezzel az üzenettel legalább néhány ellenőrzés esetén. Ebben az esetben <link xref="backup-how">mentse rendszeresen a fontos fájljait</link>, és ellenőrizze rendszeresen a lemez állapotát, hogy kiderüljön, romlik-e a helyzet.</p>
 

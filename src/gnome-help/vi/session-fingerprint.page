@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="session-fingerprint" xml:lang="vi">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="session-fingerprint" xml:lang="vi">
 
   <info>
     <link type="guide" xref="hardware-auth"/>
 
+    <desc>Bạn có thể đăng nhập hệ thống bằng máy quét vân tay.</desc>
+
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
-    <revision pkgversion="3.10" date="2013-11-03" status="review"/>
-    <revision pkgversion="3.12" date="2014-06-16" status="final"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="final"/>
 
     <credit type="author">
       <name>Dự án tài liệu GNOME</name>
@@ -16,23 +15,9 @@
     <credit type="author">
       <name>Paul W. Frields</name>
       <email>stickster@gmail.com</email>
-      <years>2011</years>
-    </credit>
-    <credit type="author editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-      <years>2013</years>
-    </credit>
-    <credit type="editor">
-      <name>Jim Campbell</name>
-      <email>jcampbell@gnome.org</email>
-      <years>2014</years>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>You can log in to your system using a supported fingerprint scanner
-    instead of typing in your password.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Nguyễn Thái Ngọc Duy</mal:name>
@@ -42,76 +27,57 @@
   </info>
 
   <title>Đăng nhập bằng vân tay</title>
-
-  <p>If your system has a supported fingerprint scanner, you can record your
-  fingerprint and use it to log in.</p>
-
-<section id="record">
-  <title>Record a fingerprint</title>
-
-  <p>Before you can log in with your fingerprint, you need to record it so that
-  the system can use it to identify you.</p>
-
+  <p>Nếu máy bạn hỗ trợ quét vân tay, bạn có thể lưu vân tay của mình và dùng để đăng nhập. Bạn phải có quyền quản trị để thực hiện những bước này.</p>
+  <p>Trước hết, lưu vân tay để hệ thống nhận ra bạn.</p>
   <note style="tip">
     <p>Nếu vân tay bạn quá khô, bạn có thể gặp khó khăn đăng ký vân tay. Nếu vậy, làm ẩm nhẹ vân tay, lau khô bằng vải khô không xơ, và thử lại.</p>
   </note>
-
-  <p>You need <link xref="user-admin-explain">administrator privileges</link>
-  to edit user accounts other than your own.</p>
-
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Users</gui>.</p>
+      <p>Nhấn vào tên bạn trên thanh đỉnh, nhấn hình kế bên tên bạn để mở <gui>Tài khoản người dùng</gui>.</p>
     </item>
     <item>
-      <p>Click on <gui>Users</gui> to open the panel.</p>
+      <p>Bỏ khoá tài khoản bằng nút <gui>Bỏ khoá</gui> ở góc trên bên phải cửa sổ <gui>Tài khoản người dùng</gui>.</p>
     </item>
     <item>
-      <p>Press on <gui>Disabled</gui>, next to <gui>Fingerprint Login</gui> to
-      add a fingerprint for the selected account. If you are adding the
-      fingerprint for a different user, you will first need to
-      <gui>Unlock</gui> the panel.</p>
+      <p>Nhập mật khẩu khi được hỏi.</p>
     </item>
     <item>
-      <p>Select the finger that you want to use for the fingerprint, then
-      <gui style="button">Next</gui>.</p>
+      <p>Chọn tuỳ chọn <gui>Tắt</gui> kế bên <gui>Đăng nhập vân tay</gui>.</p>
     </item>
     <item>
-      <p>Follow the instructions in the dialog and swipe your finger at a
-      <em>moderate speed</em> over your fingerprint reader. Once the computer
-      has a good record of your fingerprint, you will see a <gui>Done!</gui>
-      message.</p>
+      <p>Chọn tuỳ chọn cho vân tay bạn muốn đăng ký. Bạn có thể chọn ngón trỏ phải, ngón trỏ trái, hoặc một ngón khác. Sau đó chọn <gui>Tiếp tục</gui>.</p>
     </item>
     <item>
-      <p>Select <gui>Next</gui>. You will see a confirmation message that
-      your fingerprint was saved successfully. Select <gui>Close</gui> to
-      finish.</p>
+      <p>Quét ngón bạn chọn ba lần ở tốc độ vừa phải trên đầu đọc vân tay. Mỗi lần đầu đọc vân tay nhận ra vân tay bạn, ảnh vân tay sẽ được hiện với đánh dấu tốt. Sau ba lần quét, bạn sẽ thấy thông báo <gui>Xong!</gui>.</p>
+    </item>
+    <item>
+      <p>Chọn <gui>Tiếp tục</gui>. Bạn sẽ thấy thông báo xác nhận vân tay đã lưu thành công. Chọn <gui>Đóng</gui> để hoàn tất.</p>
     </item>
   </steps>
-
-</section>
-
-<section id="verify">
-  <title>Check that your fingerprint works</title>
-
   <p>Kiểm tra xem đăng nhập vân tay có hoạt động không. Nếu bạn đăng ký vân tay, bạn vẫn có lựa chọn đăng nhập với mật khẩu.</p>
-
   <steps>
     <item>
-      <p>Save any open work, and then <link xref="shell-exit#logout">log
-      out</link>.</p>
+      <p>Save any open work, and then log out. Select your name in the upper
+      right-hand corner and then select <gui>Log Out</gui>.</p>
+    </item>
+    <item>
+      <p>Thông báo xác nhận sẽ xuất hiện. Chọn <gui>Đăng xuất</gui> để xác nhận. Màn hình đăng nhập sẽ xuất hiện.</p>
     </item>
     <item>
       <p>At the login screen, select your name from the list. The password
       entry form will appear.</p>
     </item>
     <item>
-      <p>Instead of typing your password, you should be able to swipe your
-      finger on the fingerprint reader.</p>
+      <p>Trong vòng 30 giây, chọn nút vân tay ở trên bên phải tên người dùng.</p>
+      <note>
+	<p>Nút vân tay được có hình bàn tay ở trên. Nếu hết giờ, nút này sẽ biến mất và bạn sẽ chỉ được phép đăng nhập dùng mật khẩu. Nếu bạn muốn thử lại, chọn nút <gui>Thôi</gui> và làm lại bước trên.</p>
+      </note>
+    </item>
+    <item>
+      <p>Quét ngón tay đã đăng ký qua đầu đọc vân tay ở tốc độ <em>vừa phải</em>. Bạn sẽ đăng nhập.</p>
     </item>
   </steps>
-
-</section>
-
+  <p>Nếu bạn tạo xâu khoá đăng nhập trước đâu, nó vẫn được bảo vệ với mật khẩu của bạn. Để mở khoá, nhập mật khẩu.</p>
+	
 </page>

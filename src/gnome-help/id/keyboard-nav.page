@@ -6,8 +6,6 @@
     <link type="seealso" xref="shell-keyboard-shortcuts"/>
 
     <revision pkgversion="3.7.5" version="0.2" date="2013-02-23" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.20" date="2016-08-13" status="candidate"/>
 
     <credit type="author">
       <name>Michael Hill</name>
@@ -27,24 +25,24 @@
        <email>kittykat3756@gmail.com</email>
     </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
     <desc>Gunakan aplikasi dan desktop tanpa memakai tetikus.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Andika Triwidada</mal:name>
       <mal:email>andika@gmail.com</mal:email>
-      <mal:years>2011-2014, 2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Ahmad Haris</mal:name>
-      <mal:email>ahmadharis1982@gmail.com</mal:email>
-      <mal:years>2017.</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
 
   <title>Navigasi papan tik</title>
+
+  <comment>
+    <cite date="2012-03-14" href="mailto:shaunm@gnome.org">Shaun McCance</cite>
+    <p>Do <em>NOT</em> use <code>ui:expanded</code> on this page. I know it's
+    tempting, but the target audience for this page is people who cannot use
+    a mouse, and having to expand sections when you're just figuring out how
+    to drive things with the keyboard is a burden.</p>
+  </comment>
 
   <p>This page details keyboard navigation for people who cannot use a mouse or
   other pointing device, or who want to use a keyboard as much as possible. For
@@ -58,15 +56,14 @@
   </note>
 
 <table frame="top bottom" rules="rows">
-  <title>Menavigasi antarmuka pengguna</title>
+  <title>Navigate user interfaces</title>
   <tr>
     <td><p><key>Tab</key> dan <keyseq><key>Ctrl</key><key>Tab</key></keyseq></p></td>
     <td>
       <p>Move keyboard focus between different controls. <keyseq><key>Ctrl</key>
-      <key>Tab</key></keyseq> moves between groups of controls, such as from a
-      sidebar to the main content.
-      <keyseq><key>Ctrl</key><key>Tab</key></keyseq> can also break out of a
-      control that uses <key>Tab</key> itself, such as a text area.</p>
+      <key>Tab</key></keyseq> moves between groups of controls, such as from a sidebar
+      to the main content. <keyseq><key>Ctrl</key><key>Tab</key></keyseq> can also
+      break out of a control that uses <key>Tab</key> itself, such as a text area.</p>
       <p>Hold down <key>Shift</key> to move focus in reverse order.</p>
     </td>
   </tr>
@@ -76,6 +73,8 @@
       <p>Move selection between items in a single control, or among a set of
       related controls. Use the arrow keys to focus buttons in a toolbar, select
       items in a list or icon view, or select a radio button from a group.</p>
+      <p>In a tree view, use the left and right arrow keys to collapse and
+      expand items with children.</p>
     </td>
   </tr>
   <tr>
@@ -87,10 +86,6 @@
     <td><p><keyseq><key>Shift</key>Tombol-tombol panah</keyseq></p></td>
     <td><p>In a list or icon view, select all items from the currently selected
     item to the newly focused item.</p></td>
-    <td><p>In a tree view, items that have children can be expanded or collapsed,
-    to show or hide their children: expand by pressing
-    <keyseq><key>Shift</key><key>→</key></keyseq>, and collapse by
-    pressing <keyseq><key>Shift</key><key>←</key></keyseq>.</p></td>
   </tr>
   <tr>
     <td><p><key>Spasi</key></p></td>
@@ -117,11 +112,13 @@
     <td><p>Buka menu pertama pada bilah menu dari suatu jendela. Gunakan tombol panah untuk menavigasi menu.</p></td>
   </tr>
   <tr>
-    <td><p><keyseq><key xref="keyboard-key-super">Super</key> <key>F10</key></keyseq></p></td>
+    <td><p><keyseq><key xref="keyboard-key-super">Super</key>
+    <key>F10</key></keyseq></p></td>
     <td><p>Buka menu aplikasi di bilah puncak.</p></td>
   </tr>
   <tr>
-    <td><p><keyseq><key>Shift</key><key>F10</key></keyseq> or <key xref="keyboard-key-menu">Menu</key></p></td>
+    <td><p><keyseq><key>Shift</key><key>F10</key></keyseq> or
+    <key xref="keyboard-key-menu">Menu</key></p></td>
     <td>
       <p>Pop up the context menu for the current selection, as if you had
       right-clicked.</p>
@@ -129,7 +126,7 @@
   </tr>
   <tr>
     <td><p><keyseq><key>Ctrl</key><key>F10</key></keyseq></p></td>
-    <td><p>Dalam pengelola berkas, munculkan menu konteks bagi folder kini, seolah Anda telah mengklik kanan pada latar belakang dan bukan pada butir manapun.</p></td>
+    <td><p>Dalam manajer berkas, munculkan menu konteks bagi folder kini, seolah Anda telah mengklik kanan pada latar belakang dan bukan pada butir manapun.</p></td>
   </tr>
   <tr>
     <td><p><keyseq><key>Ctrl</key><key>PageUp</key></keyseq> dan <keyseq><key>Ctrl</key><key>PageDown</key></keyseq></p></td>
@@ -138,7 +135,7 @@
 </table>
 
 <table frame="top bottom" rules="rows">
-  <title>Menavigasi desktop</title>
+  <title>Navigate the desktop</title>
   <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="alt-f1"/>
   <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-tab"/>
   <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-tick"/>
@@ -146,10 +143,10 @@
   <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-updown"/>
   <tr>
     <td><p><keyseq><key>Alt</key><key>F6</key></keyseq></p></td>
-    <td><p>Cycle through windows in the same application. Hold down the
-    <key>Alt</key> key and press <key>F6</key> until the window you want is
-    highlighted, then release <key>Alt</key>. This is similar to the
-    <keyseq><key>Alt</key><key>`</key></keyseq> feature.</p></td>
+    <td><p>Cycle through windows in the same application. Hold down the <key>Alt</key>
+    key and press <key>F6</key> until the window you want is highlighted, then release
+    <key>Alt</key>. This is similar to the <keyseq><key>Alt</key><key>`</key></keyseq>
+    feature.</p></td>
   </tr>
   <tr>
     <td><p><keyseq><key>Alt</key><key>Esc</key></keyseq></p></td>
@@ -157,49 +154,49 @@
   </tr>
   <tr>
     <td><p><keyseq><key>Super</key><key>M</key></keyseq></p></td>
-    <td><p><link xref="shell-notifications#messagetray">Open the message
-    tray.</link> Press <key>Esc</key> to close.</p></td>
+    <td><p><link xref="shell-notifications#messagingtray">Open the message tray.</link>
+     Press <key>Esc</key> to close.</p></td>
   </tr>
 </table>
 
 <table frame="top bottom" rules="rows">
-  <title>Menavigasi jendela</title>
+  <title>Navigate windows</title>
   <tr>
     <td><p><keyseq><key>Alt</key><key>F4</key></keyseq></p></td>
     <td><p>Menutup jendela ini.</p></td>
   </tr>
   <tr>
-    <td><p><keyseq><key>Alt</key><key>F5</key></keyseq> atau <keyseq><key>Super</key><key>↓</key></keyseq></p></td>
-    <td><p>Restore a maximized window to its original size. Use
-    <keyseq><key>Alt</key><key>F10</key></keyseq> to maximize.
-    <keyseq><key>Alt</key><key>F10</key></keyseq> both maximizes and
-    restores.</p></td>
+    <td><p><keyseq><key>Alt</key><key>F5</key></keyseq> or
+    <keyseq><key>Super</key><key>↓</key></keyseq></p></td>
+    <td><p>Restore a maximized window to its original size. Use <keyseq><key>Alt</key>
+    <key>F10</key></keyseq> to maximize. <keyseq><key>Alt</key><key>F10</key></keyseq>
+    both maximizes and restores.</p></td>
   </tr>
   <tr>
     <td><p><keyseq><key>Alt</key><key>F7</key></keyseq></p></td>
-    <td><p>Move the current window. Press
-    <keyseq><key>Alt</key><key>F7</key></keyseq>, then use the arrow keys to
-    move the window. Press <key>Enter</key> to finish moving the window, or
-    <key>Esc</key> to return it to its original place.</p></td>
+    <td><p>Move the current window. Press <keyseq><key>Alt</key><key>F7</key></keyseq>,
+    then use the arrow keys to move the window. Press <key>Enter</key> to finish
+    moving the window, or <key>Esc</key> to return it to its original place.</p></td>
   </tr>
   <tr>
     <td><p><keyseq><key>Alt</key><key>F8</key></keyseq></p></td>
-    <td><p>Resize the current window. Press
-    <keyseq><key>Alt</key><key>F8</key></keyseq>, then use the arrow keys to
-    resize the window. Press <key>Enter</key> to finish resizing the window, or
-    <key>Esc</key> to return it to its original size.</p></td>
+    <td><p>Resize the current window. Press <keyseq><key>Alt</key><key>F8</key></keyseq>,
+    then use the arrow keys to resize the window. Press <key>Enter</key> to finish
+    resizing the window, or <key>Esc</key> to return it to its original size.</p></td>
   </tr>
   <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-updown"/>
-  <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-left"/>
-  <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-right"/>
   <tr>
-    <td><p><keyseq><key>Alt</key><key>F10</key></keyseq> atau <keyseq><key>Super</key><key>↑</key></keyseq></p>
+    <td><p><keyseq><key>Alt</key><key>F10</key></keyseq> or
+    <keyseq><key>Super</key><key>↑</key></keyseq></p>
     </td>
-    <td><p><link xref="shell-windows-maximize">Memaksimalkan</link> jendela. Tekan <keyseq><key>Alt</key><key>F10</key></keyseq> atau <keyseq><key>Super</key><key>↓</key></keyseq> untuk mengembalikan jendela yang dimaksimalkan ke ukuran aslinya.</p></td>
+    <td><p><link xref="shell-windows-maximize">Maximize</link> a window. Press
+    <keyseq><key>Alt</key><key>F10</key></keyseq> or
+    <keyseq><key>Super</key><key>↓</key></keyseq> to
+    restore a maximized window to its original size.</p></td>
   </tr>
   <tr>
     <td><p><keyseq><key>Super</key><key>H</key></keyseq></p></td>
-    <td><p>Meminimalkan jendela.</p></td>
+    <td><p>Minimize a window.</p></td>
   </tr>
   <tr>
     <td><p><keyseq><key>Super</key><key>←</key></keyseq></p></td>
@@ -217,8 +214,7 @@
   </tr>
   <tr>
     <td><p><keyseq><key>Alt</key><key>Spasi</key></keyseq></p></td>
-    <td><p>Pop up the window menu, as if you had right-clicked on the
-    titlebar.</p></td>
+    <td><p>Pop up the window menu, as if you had right-clicked on the titlebar.</p></td>
   </tr>
 </table>
 

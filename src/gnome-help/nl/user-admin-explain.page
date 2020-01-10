@@ -1,66 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="user-admin-explain" xml:lang="nl">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="tip" id="user-admin-explain" xml:lang="nl">
 
   <info>
     <link type="guide" xref="user-accounts#privileges"/>
 
+    <desc>U heeft beheerdersrechten nodig om belangrijke delen van uw systeem te wijzigen.</desc>
+
     <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-03" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Gnome-documentatieproject</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>U heeft beheerdersrechten nodig om belangrijke delen van uw systeem te wijzigen.</desc>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Hoe werken beheerdersrechten?</title>
+<title>Hoe werken beheerdersrechten?</title>
 
-  <p>Naast de bestanden die <em>u</em> aanmaakt, heeft uw computer ook een aantal bestanden die het systeem nodig heeft om goed te kunnen werken. Als deze belangrijke <em>systeembestanden</em> op een verkeerde manier worden gewijzigd, dan kunnen er verschillende dingen stuk gaan, vandaar dat ze standaard tegen wijzigingen beschermd worden. Bepaalde toepassingen wijzigen ook belangrijke delen van het systeem en zijn daarom dus ook beschermd.</p>
+  <p>As well as the files that <em>you</em> create, your computer has a number
+ of files which are needed by the system for it to work properly. If these
+ important <em>system files</em> are changed improperly they can cause various
+ things to break, so they are protected from changes by default. Certain
+ applications also modify important parts of the system, and so are also
+ protected.</p>
 
   <p>De manier waarop ze beschermd worden, is door alleen gebruikers met <em>beheerdersrechten</em> toe te staan de bestanden te wijzigen of de toepassingen te gebruiken. In het dagelijkse gebruik hoeft u geen systeembestanden te wijzigen of deze toepassingen te gebruiken, dus hoeft u standaard geen beheerdersrechten te hebben.</p>
 
-  <p>Soms wilt u deze toepassingen toch gebruiken; daarom kunt u tijdelijke beheerdersrechten krijgen om wijzigingen aan te kunnen brengen. Als een toepassing beheerdersrechten nodig heeft, dan wordt u naar uw wachtwoord gevraagd. Als u bijvoorbeeld nieuwe software wilt installeren, dan zal het software-installatieprogramma (pakketbeheer) u naar uw beheerderswachtwoord vragen zodat de nieuwe toepassing op uw systeem kan worden geïnstalleerd . Eenmaal voltooid zullen uw beheerdersrechten weer ingetrokken worden.</p>
+  <p>Sometimes you need to use these applications, so you may be able to
+ temporarily get admin privileges to allow you to make the changes. If an
+ application needs admin privileges, it will ask for your password. For example,
+ if you want to install some new software, the software installer (package
+ manager) will ask for your admin password so it can add the new application to
+ the system. Once it has finished, your admin privileges will be taken away
+ again.</p>
 
-  <p>Beheerdersrechten zijn geassocieerd met uw gebruikersaccount. <gui>Beheerder</gui>-gebruikers hebben deze rechten, <gui>Standaard</gui>-gebruikers niet. Als u geen beheerdersrechten heeft, dan kunt u geen software installeren. Sommige gebruikersaccounts (waaronder de “root”-account) hebben permanente beheerdersrechten. U moet niet aldoor beheerdersrechten gebruiken, want u zou per ongeluk onbedoeld iets kunnen wijzigen (zoals het wissen van een benodigd systeembestand).</p>
+  <p>Admin privileges are associated with your user account. Some users are
+ allowed to have admin privileges and some are not. Without admin privileges you
+ will not be able to install software. Some user accounts (for example, the
+ "root" account) have permanent admin privileges. You shouldn't use admin
+ privileges all of the time, because you might accidentally change something
+ you did not intend to (like delete a needed system file, for example).</p>
 
-  <p>Samengevat stellen beheerdersrechten u in staat belangrijke delen van uw systeem te wijzigen indien nodig, maar ze voorkomen dat u het per ongeluk doet.</p>
+  <p>In summary, admin privileges allow you to change important parts of your
+ system when needed, but prevent you from doing it accidentally.</p>
 
-  <note>
-    <title>Wat betekent ‘supergebruiker’?</title>
-    <p>Een gebruiker met beheerdersrechten wordt soms een <em>supergebruiker</em> genoemd. Deze heet zo omdat hij meer rechten heeft dan een normale gebruiker. Het kan zijn dat u mensen hoort praten over dingen zoals <cmd>su</cmd> en <cmd>sudo</cmd>; dit zijn programma's om u tijdelijk ‘supergebruiker’-(beheerders)rechten te verlenen.</p>
-  </note>
+<note>
+ <title>Wat betekent "super user"?</title>
+  <p>Een gebruiker met beheerdersrechten wordt soms een <em>super user</em> genoemd. Deze heet zo omdat hij meer rechten heeft dan een normale gebruiker. Het kan zijn dat u mensen hoort praten over dingen zoals <cmd>su</cmd> en <cmd>sudo</cmd>; dit zijn programma's om u tijdelijk "super user"-(beheerders)rechten verlenen.</p>
+</note>
 
 <section id="advantages">
-  <title>Waarom zijn beheerdersrechten nuttig?</title>
-
-  <p>Eisen dat gebruikers beheerdersrechten hebben voordat er belangrijke wijzigingen in het systeem worden aangebracht is nuttig omdat het helpt te voorkomen dat uw systeem, al dan niet opzettelijk, stuk gaat.</p>
-
+ <title>Waarom zijn beheerdersrechten nuttig?</title>
+  <p>Eisen dat gebruikers beheerdersrechten hebben voordat er belangrijke wijzigingen in het systeem worden aangebracht is nuttig omdat het helpt te voorkomen dat u systeem, al dan niet opzettelijk, stuk gaat.</p>
   <p>Als u altijd beheerdersrechten zou hebben, dan zou u per ongeluk een belangrijk bestand kunnen wijzigen of een toepassing draaien die per abuis iets belangrijks wijzigt. Het tijdelijk verkrijgen van beheerdersrechten, wanneer u ze nodig heeft, vermindert het risico dat dergelijke vergissingen gebeuren.</p>
-
-  <p>Alleen bepaalde vertrouwde gebruikers dienen beheerdersrechten te krijgen. Dit voorkomt dat andere gebruikers knoeien met de computer en dingen doen zoals het verwijderen van toepassingen die u nodig heeft, toepassingen installeren die u niet wilt, of belangrijke bestanden wijzigen. Dit is nuttig vanuit het oogpunt van veiligheid.</p>
-
+  <p>Only certain trusted users should be allowed to have admin privileges.
+ This prevents other users from messing with the computer and doing things like
+ uninstalling applications that you need, installing applications that you don't
+ want, or changing important files. This is useful from a security standpoint.</p>
 </section>
 
 </page>

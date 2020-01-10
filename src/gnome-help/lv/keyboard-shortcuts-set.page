@@ -1,60 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" version="1.0 ui/1.0" id="keyboard-shortcuts-set" xml:lang="lv">
-
+<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" id="keyboard-shortcuts-set" xml:lang="lv">
   <info>
     <link type="guide" xref="keyboard"/>
     <link type="seealso" xref="shell-keyboard-shortcuts"/>
 
     <revision pkgversion="3.8.0" version="0.3" date="2013-03-23" status="review"/>
-    <revision pkgversion="3.9.92" date="2013-10-11" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.17.90" date="2015-08-30" status="candidate"/>
 
     <credit type="author">
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="author">
-      <name>Julita Inca</name>
-      <email>yrazes@gmail.com</email>
+       <name>Julita Inca</name>
+       <email>yrazes@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Juanjo Marín</name>
       <email>juanj.marin@juntadeandalucia.es</email>
     </credit>
-    <credit type="editor">
-      <name>Shobha Tyagi</name>
-      <email>tyagishobha@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
     <desc>Definējiet vai mainiet tastatūras saīsnes <gui>Tastatūra</gui> iestatījumos.</desc>
   </info>
 
   <title>Iestatīt tastatūras saīsnes</title>
 
+  <comment>
+    <cite date="2012-02-19" href="mailto:shaunm@gnome.org">Shaun McCance</cite>
+    <p>Define shortcuts, using Shortcuts tab in Keyboard settings. Provide
+    reference for what everything is (can group for conciseness). Explain
+    custom shortcuts.</p>
+    <p>Important: the window says "To edit a shortcut, click the row and hold
+    down the new keys or press Backspace to clear." This is actually wrong.
+    You have to click the row, then click again on the shortcut within the
+    row. File bug against control-center about the faulty message (or better,
+    about the confusing interaction), but make sure to explain correctly in
+    the help regardless.</p>
+  </comment>
+
 <p>Lai izmainītu taustiņu vai taustiņus, kas veido tastatūras saīsni:</p>
 
   <steps>
     <item>
-      <p>Atveriet <gui xref="shell-introduction#activities">Aktivitāšu</gui> pārskatu un sāciet rakstīt <gui>Tastatūra</gui>.</p>
+	<p>Click your name on the top bar and select <gui>Settings</gui>.</p></item>
+    <item><p>Atveriet <gui>Tastatūra</gui> un izvēlieties cilni <gui>Saīsnes</gui>.</p>
     </item>
     <item>
-      <p>Spiediet <gui>Tastatūra</gui>, lai atvērtu paneli.</p>
+      <p>Select a category in the left pane, and the row for the desired action
+      on the right. The current shortcut definition will change to
+      <gui>New accelerator...</gui></p>
     </item>
     <item>
-      <p>Izvēlieties <gui>Saīsnes</gui> cilni.</p>
-    </item>
-    <item>
-      <p>Kreisajā rūtī izvēlieties kategoriju, un labajā pusē vēlamās darbības rindu. Pašreizējā saīsnes definīcija tiks mainīta uz <gui>jauno paātrinātāju…</gui></p>
-    </item>
-    <item>
-      <p>Turiet nospiestu vēlamo taustiņu kombināciju vai spiediet <key>Backspace</key>, lai dzēstu.</p>
+      <p>Hold down the desired key combination, or press <key>Backspace</key> to
+      clear.</p>
     </item>
   </steps>
 
@@ -71,23 +67,23 @@
   </tr>
   <tr>
 	<td><p>Palaist kalkulatoru</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-calculator.svg"> <key>Calculator</key> key symbol</media> vai <key>Kalkulators</key></p></td>
+	<td><p>Kalkulators</p></td>
   </tr>
   <tr>
 	<td><p>Palaist e-pasta klientu</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-mail.svg"> <key>Mail</key> key symbol</media> vai <key>Pasts</key></p></td>
+	<td><p>E-pasts</p></td>
   </tr>
   <tr>
 	<td><p>Palaist tīmekļa pārlūkprogrammu</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-world.svg"> <key>WWW</key> key symbol</media> vai <media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-home.svg"> <key>WWW</key> key symbol</media> vai <key>WWW</key></p></td>
+	<td><p>Tīmeklis</p></td>
   </tr>
   <tr>
 	<td><p>Mājas mape</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-folder.svg"> <key>Explorer</key> key symbol</media> vai <media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-computer.svg"> <key>Explorer</key> key symbol</media> vai <key>Pārlūks</key></p></td>
+	<td><p>Pārlūks</p></td>
   </tr>
   <tr>
 	<td><p>Meklēšana</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-search.svg"> <key>Search</key> key symbol</media> vai <key>Meklēšana</key></p></td>
+	<td><p>Meklēšana</p></td>
   </tr>
 </table>
 
@@ -119,18 +115,20 @@
   </tr>
   <tr>
 	<td><p>Pārvietot logu uz darbvietu augšup</p></td>
-	<td><p><keyseq><key>Shift</key><key xref="keyboard-key-super">Super</key> <key>Page Up</key></keyseq></p></td>
+	<td><p><keyseq><key>Shift</key><key xref="keyboard-key-super">Super</key>
+  <key>Page Up</key></keyseq></p></td>
   </tr>
   <tr>
 	<td><p>Pārvietot logu uz darbvietu lejup</p></td>
-	<td><p><keyseq><key>Shift</key><key>Super</key><key>Page Down</key></keyseq></p></td>
+	<td><p><keyseq><key>Shift</key><key>Super</key><key>Page Down</key></keyseq>
+  </p></td>
   </tr>
   <tr>
 	<td><p>Pārslēgt lietotnes</p></td>
 	<td><p><keyseq><key>Super</key><key>Tab</key></keyseq></p></td>
   </tr>
   <tr>
-  <td><p>Pārslēgties starp logiem</p></td>
+  <td><p>Switch windows</p></td>
   <td><p>Atslēgts</p></td>
   </tr>
   <tr>
@@ -194,15 +192,15 @@
 <table rules="rows" frame="top bottom" ui:expanded="false">
 <title>Ekrānattēli</title>
   <tr>
-	<td><p>Saglabāt ekrānattēlu datnē</p></td>
+	<td><p>Uzņemt ekrānattēlu</p></td>
 	<td><p><key>Print</key></p></td>
   </tr>
   <tr>
-	<td><p>Saglabāt loga ekrānattēlu datnē</p></td>
+	<td><p>Uzņemt loga ekrānattēlu</p></td>
 	<td><p><keyseq><key>Alt</key><key>Print</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Saglabāt ekrāna daļas attēlu datnē</p></td>
+	<td><p>Uzņemt ekrāna daļas attēlu</p></td>
 	<td><p><keyseq><key>Shift</key><key>Print</key></keyseq></p></td>
   </tr>
   <tr>
@@ -218,8 +216,9 @@
 	<td><p><keyseq><key>Shift</key><key>Ctrl</key><key>Print</key></keyseq></p></td>
   </tr>
   <tr>
-  <td><p>Ierakstīt ekrānierakstu</p></td>
-  <td><p><keyseq><key>Shift</key><key>Ctrl</key><key>Alt</key><key>R</key> </keyseq></p></td>
+  <td><p>Record a screencast</p></td>
+  <td><p><keyseq><key>Shift</key><key>Ctrl</key><key>Alt</key><key>R</key>
+  </keyseq></p></td>
   </tr>
 </table>
 
@@ -227,43 +226,43 @@
 <title>Skaņa un multimediji</title>
   <tr>
 	<td><p>Izslēgt skaņu</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-mute.svg"> <key>Mute</key> key symbol</media> (Audio klusināšana)</p></td>
+	<td><p>Klusināt audio</p></td>
   </tr>
   <tr>
 	<td><p>Samazināt skaļumu</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-voldown.svg"> <key>Volume Down</key> key symbol</media> (Samazināt audio līmeni)</p></td>
+	<td><p>Samazināt audio līmeni</p></td>
   </tr>
   <tr>
 	<td><p>Palielināt skaņu</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-volup.svg"> <key>Volume Up</key> key symbol</media> (Palielināt audio līmeni)</p></td>
+	<td><p>Palielināt audio līmeni</p></td>
   </tr>
   <tr>
 	<td><p>Palaist mediju atskaņotāju</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-media.svg"> <key>Media</key> key symbol</media> (Audio medijs)</p></td>
+	<td><p>Audio mediji</p></td>
   </tr>
   <tr>
 	<td><p>Atskaņot (vai atskaņot/pauzēt)</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-play.svg"> <key>Play</key> key symbol</media> (Audio atskaņošana)</p></td>
+	<td><p>Atskaņot audio</p></td>
   </tr>
   <tr>
 	<td><p>Pauzēt atskaņošanu</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-pause.svg"> <key>Pause</key> key symbol</media> (Audio pauzēšana)</p></td>
+	<td><p>Pauzēt audio</p></td>
   </tr>
   <tr>
 	<td><p>Apturēt atskaņošanu</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-stop.svg"> <key>Stop</key> key symbol</media> (Audio apturēšana)</p></td>
+	<td><p>Apturēt audio</p></td>
   </tr>
   <tr>
 	<td><p>Iepriekšējais celiņš</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-previous.svg"> <key>Previous</key> key symbol</media> (Audio iepriekšējais)</p></td>
+	<td><p>Iepriekšējais audio celiņš</p></td>
   </tr>
   <tr>
 	<td><p>Nākamais celiņš</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-next.svg"> <key>Next</key> key symbol</media> (Audio nākamais)</p></td>
+	<td><p>Nākamais audio celiņš</p></td>
   </tr>
   <tr>
 	<td><p>Izgrūst</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-eject.svg"> <key>Eject</key> key symbol</media> (Izgrūst)</p></td>
+	<td><p>Izgrūst</p></td>
   </tr>
 </table>
 
@@ -283,47 +282,47 @@
   </tr>
   <tr>
 	<td><p>Noslēgt ekrānu</p></td>
-	<td><p><keyseq><key>Super</key><key>L</key></keyseq></p></td>
+	<td><p><keyseq><key>Ctrl</key><key>Alt</key><key>L</key></keyseq></p></td>
   </tr>
   <tr>
-  <td><p>Rādīt ziņojumu paplāti</p></td>
+  <td><p>Show the message tray</p></td>
   <td><p><keyseq><key>Super</key><key>M</key></keyseq></p></td>
   </tr>
   <tr>
-  <td><p>Fokusēt aktīvo paziņojumu</p></td>
+  <td><p>Focus the active notification</p></td>
   <td><p><keyseq><key>Super</key><key>N</key></keyseq></p></td>
   </tr>
   <tr>
-  <td><p>Rādīt visas lietotnes</p></td>
+  <td><p>Show all applications</p></td>
   <td><p><keyseq><key>Super</key><key>A</key></keyseq></p></td>
   </tr>
   <tr>
-  <td><p>Atvērt lietotnes izvēlni</p></td>
+  <td><p>Open the application menu</p></td>
   <td><p><keyseq><key>Super</key><key>F10</key></keyseq></p></td>
   </tr>
 </table>
 
 <table rules="rows" frame="top bottom" ui:expanded="false">
-<title>Rakstīšana</title>
+<title>Typing</title>
   <tr>
-  <td><p>Pārslēgties uz nākamo ievades avotu</p></td>
-  <td><p><keyseq><key>Super</key><key>Atstarpe</key></keyseq></p></td>
+  <td><p>Switch to next input source</p></td>
+  <td><p><keyseq><key>Super</key><key>Space</key></keyseq></p></td>
   </tr>
 
   <tr>
-  <td><p>Pārslēgties uz iepriekšējo ievades avotu</p></td>
+  <td><p>Switch to previous input source</p></td>
   <td><p>Atslēgts</p></td>
   </tr>
   <tr>
-  <td><p>Tikai-modifikatori pārslēdz uz nākamo avotu</p></td>
+  <td><p>Modifiers-only switch to next source</p></td>
   <td><p>Atslēgts</p></td>
   </tr>
   <tr>
-  <td><p>Kompozīcijas taustiņš</p></td>
+  <td><p>Compose Key</p></td>
   <td><p>Atslēgts</p></td>
   </tr>
   <tr>
-  <td><p>Alternatīvo rakstzīmju taustiņš</p></td>
+  <td><p>Alternative Characters Key</p></td>
   <td><p>Atslēgts</p></td>
   </tr>
 </table>
@@ -395,7 +394,7 @@
 	<td><p><keyseq><key>Alt</key><key>F4</key></keyseq></p></td>
   </tr>
   <tr>
-  <td><p>Paslēpt logu</p></td>
+  <td><p>Hide window</p></td>
   <td><p><keyseq><key>Super</key><key>H</key></keyseq></p></td>
   </tr>
   <tr>
@@ -442,27 +441,65 @@
 
 </section>
 
-<section id="custom">
-<title>Pielāgotās saīsnes</title>
-
-  <p>Izveidojiet savas lietotņu tastatūras saīsnes <gui>Tastatūra</gui> iestatījumos:</p>
+<section id="changing-shorcuts">
+  <title>Change keyboard shortcuts</title>
+  <p>This section shows how to change keyboard shortcuts for an application.</p>
 
   <steps>
     <item>
-      <p>Spiediet pogu <gui style="button">+</gui>. Parādīsies <gui>Pielāgota saīsne</gui> dialoglodziņš.</p>
+	<p>Open the Terminal application.</p>
+     </item>
+    <item><p>Run the <cmd>gsettings set org.gnome.desktop.interface can-change-accels true</cmd> command.</p>
     </item>
-    <item>
-      <p>Rakstiet <gui>Nosaukums</gui> laukā, lai identificētu saīsni, un <gui>Komanda</gui> laukā, lai palaistu lietotni, un tad klikšķiniet <gui>Pievienot</gui>. Piemēram, ja jūs vēlaties izveidot saīsni, lai palaistu <app>Rhythmbox</app>, jūs varētu to nosaukt <input>Mūzika</input> un izmantot <input>rhythmbox</input> komandu.</p>
+       <item>
+      <p>Start the application for which you want to change the keyboard shortcut.</p>
     </item>
-    <item>
-      <p>Spiediet <gui>Deaktivēts</gui> rindā, kura tikko tika pievienota. Kad tā mainās uz <gui>jauns paātrinātājs…</gui>, turiet nospiestu vēlamo saīsnes taustiņu kombināciju.</p>
+  <item>
+      <p>Find the menu item for which you want to change the keyboard shortcut.</p>
+    </item>
+<item>
+      <p>Type the shortcut that you want on the keyboard.</p>
     </item>
   </steps>
 
-  <p>Komandas nosaukumam ko jūs ievadīsiet vajadzētu būt derīgai sistēmas komandai. Jūs varat to pārbaudīt atverot Termināli un ievadot šo komandu tur. Komanda, kas atver lietotni nevar būt ar tādu pašu nosaukumu kā pati lietotne.</p>
+<note style="note style">
+  <p>Note that this setting is desktop-wide. You can disable it after
+ you make changes by running the
+ <cmd>gsettings set org.gnome.desktop.interface can-change-accels false</cmd>
+ command. You can also use the <app>dconf-editor</app> utility to do this.</p>
+</note>
+</section>
 
-  <p>Ja jūs vēlaties izmainīt komandu, kas saistīta ar pielāgoto tastatūras saīsni, veiciet dubultklikšķi uz saīsnes <em>nosaukuma</em>. Parādīsies <gui>Pielāgota saīsne</gui> dialoglodziņš, un jūs varēsiet mainīt komandu.</p>
+<section id="custom">
+<title>Pielāgotās saīsnes</title>
 
+<p>Lai izveidotu savu tastatūras saīsni:</p>
+
+  <steps>
+    <item>
+      <p>Select <gui>Custom Shortcuts</gui> in the left pane, and click the
+      <gui style="button">+</gui> button (or click the
+      <gui style="button">+</gui> button in any category). The
+      <gui>Custom Shortcut</gui> window will appear.</p>
+    </item>
+    <item>
+      <p>Type a <gui>Name</gui> to identify the shortcut, and a
+      <gui>Command</gui> to run an application, then click <gui>Apply</gui>.
+      For example, if you wanted the shortcut to open Rhythmbox, you could name
+      it <input>Music</input> and use the <input>rhythmbox</input> command.</p>
+    </item>
+    <item>
+      <p>Click <gui>Disabled</gui> in the row that was just added. When it
+      changes to <gui>New accelerator...</gui>, hold down the desired shortcut
+      key combination.</p>
+    </item>
+  </steps>
+ <p>The command name that you type should be a valid system command. You
+ can check that the command works by opening a Terminal and typing it in
+ there. The command that opens an application cannot have the same name as
+ the application itself.</p>
+
+ <p>Ja jūs vēlaties izmainīt komandu, kas saistīta ar pielāgoto tastatūras saīsni, veiciet dubultklikšķi uz saīsnes <em>nosaukuma</em>. Parādīsies <gui>Pielāgota saīsne</gui> dialoglodziņš, un jūs varēsiet mainīt komandu.</p>
 </section>
 
 </page>

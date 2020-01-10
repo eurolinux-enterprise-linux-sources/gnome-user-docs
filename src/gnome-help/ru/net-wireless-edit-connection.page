@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="net-editcon" xml:lang="ru">
+  <info>
+    <link type="guide" xref="net-wireless" group="first"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+
+    <credit type="author">
+      <name>Фил Булл (Phil Bull)</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <desc>Learn what the options on the wireless connection editing screen mean.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александр Прокудин</mal:name>
+      <mal:email>alexandre.prokoudine@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Изменение беспроводного соединения</title>
+
+<comment>
+ <p>This topic needs significant revision to be comprehensive. A number of settings remain undocumented.</p>
+</comment>
+
+<p>This topic describes all of the options that are available when you edit
+a wireless network connection. To edit a connection, select it in the
+<gui>Network</gui> settings, then click <gui>Options</gui>.</p>
+
+<note>
+ <p>Most networks will work fine if you leave these settings at their defaults, so you probably don't need to change any of them. Many of the options here are provided to give you greater control over more advanced networks.</p>
+</note>
+
+<section id="available">
+ <title>Доступно всем пользователям / Подключаться автоматически</title>
+ <terms>
+  <item>
+   <title><gui>Подключаться автоматически</gui></title>
+   <p>Включите эту опцию, если хотите, чтобы компьютер автоматически пытался подключиться к этой беспроводной сети, как только окажется в зоне её действия.</p>
+   <p>If several networks which are set to connect automatically are in range, the computer will connect to the first one shown in the <gui>Wireless</gui> tab in the <gui>Network Connections</gui> window. It won't disconnect from one available network to connect to a different one that has just come in range.</p>
+  </item>
+
+  <item>
+   <title><gui>Доступно всем пользователям</gui></title>
+   <p>Check this if you would like all of the users on the computer to have access to this wireless network. If the network has a <link xref="net-wireless-wepwpa">WEP/WPA password</link> and you have checked this option, you will only need to enter the password once. All of the other users on your computer will be able to connect to the network without having to know the password themselves.</p>
+   <p>If this is checked, you need to be an <link xref="user-admin-explain">administrator</link> to change any of the settings for this network. You may be asked to enter your admin password.</p>
+  </item>
+ </terms>
+</section>
+
+<section id="wireless">
+ <title>Беспроводные</title>
+ <terms>
+  <item>
+   <title><gui>SSID</gui></title>
+   <p>Это название беспроводной сети, к которой выполняется подключение, известное как <em>Service Set Identifier</em>. Не меняйте этот параметр, если только вы не изменили название беспроводной сети (например, при внесении изменений в настройки беспроводного маршрутизатора или базовой станции).</p>
+  </item>
+
+  <item>
+   <title><gui>Режим</gui></title>
+   <p>Используйте его, чтобы указать, к какой сети вы подключаетесь: <gui>Инфраструктура</gui> (где компьютеры устанавливают беспроводное соединение с центральной базовой станцией или маршрутизатором) или <gui>Ad-hoc</gui> (где нет базовой станции, и компьютеры подключаются друг к другу). Большинство сетей являются инфраструктурными, но вы можете <link xref="net-adhoc">создать собственную сеть ad-hoc</link>.</p>
+   <p>При выборе <gui>Ad-hoc</gui> вы увидите два дополнительных параметра: <gui>Диапазон</gui> и <gui>Канал</gui>. Они задают диапазон частот беспроводного сигнала для работы сети ad-hoc. Некоторые компьютеры могут работать только в определённых диапазонах (например, только <gui>A</gui> или только <gui>B/G</gui>), поэтому вам может понадобиться выбрать диапазон, который смогут использовать все компьютеры в ad-hoc сети. В некоторых местах несколько беспроводных сетей используют один и тот же канал, что может снизить скорость соединения, поэтому вы также можете выбрать нужный канал.</p>
+  </item>
+
+  <item>
+   <title><gui>BSSID</gui></title>
+   <p>Это <em>Basic Service Set Identifier</em>. SSID (смотрите выше) — это имя сети, предназначенное для чтения людьми; BSSID — это имя, которое понимает компьютер (строка букв и цифр, уникальная для беспроводной сети). Если сеть является <link xref="net-wireless-hidden">скрытой</link>, она не имеет SSID, но имеет BSSID.</p>
+  </item>
+
+  <item>
+   <title><gui>MAC-адрес устройства</gui></title>
+   <p><link xref="net-macaddress">MAC-адрес</link> — это код, идентифицирующий сетевое устройство (например, беспроводную сетевую карту, Ethernet-карту или маршрутизатор). Каждое устройство, которое можно подключить к сети, имеет уникальный MAC-адрес, присвоенный ему производителем.</p>
+   <p>Этот параметр можно использовать для изменения MAC-адреса сетевой карты.</p>
+  </item>
+
+  <item>
+   <title><gui>Клонированный MAC-адрес</gui></title>
+   <p>Можно имитировать, что ваше сетевое устройство (беспроводная карта) имеет другой MAC-адрес. Это полезно, если у вас имеется устройство или служба, которые работают только с определённым MAC-адресом (например, кабельный широкополосный модем). Если вы укажете этот MAC-адрес в поле <gui>Клонированный MAC-адрес</gui>, устройство или служба будут считать, что ваш компьютер имеет клонированный MAC-адрес, а не реальный.</p>
+  </item>
+
+  <item>
+   <title><gui>MTU</gui></title>
+   <p>Этот параметр изменяет <em>Maximum Transmission Unit</em> — максимальный размер порции данных, которая может быть передана по сети. При передаче файлов по сети данные разбиваются на мелкие порции (пакеты). Оптимальное значение MTU для вашей сети зависит от вероятности потери пакетов (из-за помех) и от скорости соединения. Как правило, изменять этот параметр не следует.</p>
+  </item>
+
+ </terms>
+</section>
+
+<section id="security">
+ <title>Защита беспроводной сети</title>
+ <terms>
+  <item>
+   <title><gui>Защита</gui></title>
+   <p>Определяет, какой тип <em>шифрования</em> используется в беспроводной сети. Шифрование помогает защитить беспроводное соединение от перехвата данных, чтобы другие люди не могли узнать, например,  какие веб-сайты вы посещаете.</p>
+   <p>Некоторые типы шифрования надёжнее других, но могут не поддерживаться более старым сетевым оборудованием. Обычно для подключения необходимо вводить пароль, более сложные типы защиты могут требовать также ввода имени пользователя и цифрового «сертификата». Подробнее о распространённых типах шифрования в беспроводных сетях читайте в разделе <link xref="net-wireless-wepwpa"/>.</p>
+  </item>
+ </terms>
+</section>
+
+<section id="ipv4">
+ <title>Параметры IPv4</title>
+
+<comment>
+<cite>shaunm</cite>
+<p>There's also Shared to other computers</p>
+<p>Then there's addresses and dns servers and ipv4 addressing routes.</p>
+<p>All current info correct, but incomplete</p>
+</comment>
+
+ <p>Используйте эту вкладку, чтобы настроить такие параметры, как IP-адрес компьютера или используемые серверы DNS. Измените <gui>Метод</gui>, чтобы увидеть другие способы получить или задать эту информацию.</p>
+ <p>Доступны следующие способы:</p>
+ <terms>
+  <item>
+   <title><gui>Автоматически (DHCP)</gui></title>
+   <p>Получение информации типа IP-адреса и DNS-сервера от <em>сервера DHCP</em>. Сервер DHCP — это подключённый к сети компьютер (или другое устройство, например, маршрутизатор), который решает, какие сетевые настройки должен иметь ваш компьютер — при первом подключении к сети вашему компьютеру автоматически будут назначены правильныеон параметры сетевого соединения. DHCP используется во многих сетях.</p>
+  </item>
+
+  <item>
+   <title><gui>Автоматически (DHCP, только адрес)</gui></title>
+   <p>При выборе этого способа компьютер будет автоматически получать IP-адрес от сервера DHCP, но остальные параметры (например, какой использовать DNS-сервер) нужно будет указать вручную.</p>
+  </item>
+
+  <item>
+   <title><gui>Вручную</gui></title>
+   <p>Выберите этот вариант, если хотите самостоятельно указать все параметры сетевого соединения, в том числе IP-адрес компьютера.</p>
+  </item>
+
+  <item>
+   <title><gui>Link-Local Only</gui></title>
+   <p><em>Link-Local</em> is a way of connecting computers together on a network without requiring a DHCP server or manually defining IP addresses and other information. If you connect to a Link-Local network, the computers on the network will decide amongst themselves which IP addresses to use and so on. This is useful if you want to temporarily connect a few computers together so they communicate with each other.</p>
+  </item>
+
+  <item>
+   <title><gui>Выключен</gui></title>
+   <p>This option will disable the network connection and prevent you from connecting to it. Note that <gui>IPv4</gui> and <gui>IPv6</gui> are treated as separate connections even though they are for the same network card. If you have one enabled, you may wish to set the other to disabled.</p>
+  </item>
+
+ </terms>
+</section>
+
+<section id="ipv6">
+ <title>Параметры IPv6</title>
+<comment>
+<cite>shaunm</cite>
+<p>The list of methods is a bit different</p>
+</comment>
+ <p>This is similar to the <gui>IPv4</gui> tab except it deals with the newer IPv6 standard. Very modern networks use IPv6, but IPv4 is still more popular at the moment.</p>
+</section>
+
+</page>

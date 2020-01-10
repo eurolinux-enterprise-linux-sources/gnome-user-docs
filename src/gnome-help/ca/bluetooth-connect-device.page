@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:if="http://projectmallard.org/if/1.0/" type="guide" style="task" version="1.0 if/1.0" id="bluetooth-connect-device" xml:lang="ca">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="guide" style="task" id="bluetooth-connect-device" xml:lang="ca">
 
   <info>
     <link type="guide" xref="bluetooth"/>
     <link type="seealso" xref="sharing-bluetooth"/>
-    <link type="seealso" xref="bluetooth-remove-connection"/>
+    
+    <revision pkgversion="3.8.2" version="0.2" date="2013-05-16" status="review"/>
 
-    <revision pkgversion="3.8" date="2013-05-16" status="review"/>
-    <revision pkgversion="3.10" date="2013-11-09" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.13" date="2014-09-22" status="final"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <desc>Aparellar dispositius Bluetooth.</desc>
 
     <credit type="author">
       <name>Jim Campbell</name>
@@ -28,18 +25,7 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Aparellar dispositius Bluetooth.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>David Aguilera</mal:name>
@@ -50,42 +36,55 @@
 
   <title>Connectar l'ordinador a un dispositiu Bluetooth</title>
 
-  <p>Abans de poder utilitzar un dispositiu Bluetooth com un ratolí o un auricular, primer s'ha de connectar l'ordinador al dispositiu. A això també s'anomena <em>aparellar</em> els dispositius Bluetooth.</p>
+  <p>Abans de poder utilitzar un dispositiu Bluetooth com un ratolí o uns auriculars, heu de connectar el vostre ordinador al dispositiu. Això s'anomena «aparellar» dispositius Bluetooth.</p>
+
+  <note style="important">
+    <p>Before you begin, make sure Bluetooth is enabled on your computer.
+    See <link xref="bluetooth-turn-on-off"/>.</p>
+  </note>
 
   <steps>
     <item>
-      <p>Obre la vista d' <gui xref="shell-introduction#activities">Activitats</gui> i comenci a escriure <gui>Bluetooth</gui>.</p>
+      <if:choose>
+        <if:when test="platform:unity">
+          <p>Click the Bluetooth icon in the menu bar and select <gui>Set Up New Device</gui>.</p>
+        </if:when>
+        <p>Seleccioneu la icona de Bluetooth del quadre superior i escolliu <gui>Configuració d'un dispositiu nou...</gui>.</p>
+      </if:choose>
     </item>
     <item>
-      <p>fer clic a <gui>Bluetooth</gui> per obrir el panell.</p>
+      <p>Feu que l'altre dispositiu Bluetooth sigui <link xref="bluetooth-visibility">descobrible o visible</link> i situeu-lo a menys de 10 metres de l'ordinador. A continuació seleccioneu <gui>Endavant</gui> perquè l'ordinador comenci a cercar dispositius.</p>
     </item>
     <item>
-      <p>Assegureu-vos que Bluetooth està actiu: l'interruptor de la part superior ha d'estar a <gui>ON</gui>. Amb el panell obert i l'interruptor a <gui>ON</gui>, l'ordinador cercarà dispositius.</p>
+      <p>Si apareixen massa dispositius a la llista, seleccioneu un <gui>Tipus de dispositiu</gui> en el menú desplegable perquè només es mostrin els dispositius d'aquell tipus a la llista.</p>
     </item>
     <item>
-      <p>Feu que l'altre dispositiu Bluetooth estigui <link xref="bluetooth-visibility">detectable o visible</link> i situï'l a 5-10 metres (uns 16-33 peus del vostre ordinador.</p>
+      <p>Seleccioneu les <gui>Opcions del PIN</gui> per definir com s'entregarà el PIN a l'altre dispositiu.</p>
+      <note>
+	<p>La configuració de PIN automàtic utilitza un codi numèric de sis dígits. Un dispositiu que no disposi de teclat o pantalla, com ara un ratolí o un auricular, pot necessitar un PIN concret com per exemple 0000, o no necessitar-ne cap. Comproveu el manual del dispositiu per escollir la configuració adequada.</p>
+      </note>
+      <p>Escolliu la configuració adequada del PIN per al dispositiu i després feu clic a <gui>Tanca</gui>.</p>
     </item>
     <item>
-      <p>Feu clic al dispositiu a la llista de <gui>Dispositius</gui>. S'obrirà el panell pel dispositiu.</p>
+      <p>Feu clic a <gui>Endavant</gui> per continuar. Si no heu escollit un PIN predefinit, el PIN es mostrarà a la pantalla.</p>
     </item>
     <item>
-      <p>Si és necessari, confirmeu el PIN a l'altre dispositiu. El dispositiu us mostrarà el PIN que veieu a la pantalla de l'ordinador. Confirmeu el PIN al dispositiu potser hagueu de fer clic a <gui>Aparellar</gui> o <gui>Confirmar</gui>), aleshores feu clic a <gui>Confirmar</gui> a l'ordinador.</p>
+      <p>If required, confirm the PIN on your other device. The device should show you
+      the PIN you see on your computer screen, or may prompt you to enter the PIN.
+      Confirm the PIN on the device, then click <gui>Matches</gui>.</p>
       <p>La majoria de dispositius exigeixen que introduïu el PIN en uns 20 segons, o la connexió no es completarà. Si succeeix això, torneu a la llista de dispositius i comenceu de nou.</p>
     </item>
     <item>
-      <p>L'entrada pel dispositiu a la llista de <gui>Dispositius</gui> mostrarà l'estatus <gui>Connectat</gui>.</p>
-    </item>
-    <item>
-      <p>Per editar el dispositiu, feu clic a la llista de <gui>Dispositius</gui>. Veureu un panell específic pel dispositiu. Pot mostrar opcions addicionals aplicables al tipus de dispositiu amb el qual esteu connectant.</p>
-    </item>
-    <item>
-      <p>Tanqueu el panell un cop hagueu canviat la configuració.</p>
+      <p>A message appears when the connection successfully completes. Click <gui>Close</gui>.</p>
     </item>
   </steps>
 
-  <media its:translate="no" type="image" src="figures/bluetooth-menu.png" style="floatend">
-    <p its:translate="yes">Feu clic a la icona de Bluetooth del quadre superior</p>
-  </media>
-  <p>Quan un o més dispositius Bluetooth es connecten, la icona de Bluetooth apareix a l'àrea d'estat del sistema.</p>
+  <p>Podeu <link xref="bluetooth-remove-connection">eliminar una connexió Bluetooth</link> més endavant si voleu.</p>
+
+      <note style="tip">
+        <p>To control access to your shared files, refer to the
+        <gui>Bluetooth Sharing</gui> settings. See
+        <link xref="sharing-bluetooth"/>.</p>
+      </note>
 
 </page>

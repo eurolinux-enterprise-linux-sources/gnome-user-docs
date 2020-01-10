@@ -1,44 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" version="1.0 ui/1.0" id="keyboard-shortcuts-set" xml:lang="ja">
-
+<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" id="keyboard-shortcuts-set" xml:lang="ja">
   <info>
     <link type="guide" xref="keyboard"/>
     <link type="seealso" xref="shell-keyboard-shortcuts"/>
 
     <revision pkgversion="3.8.0" version="0.3" date="2013-03-23" status="review"/>
-    <revision pkgversion="3.9.92" date="2013-10-11" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.17.90" date="2015-08-30" status="candidate"/>
 
     <credit type="author">
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="author">
-      <name>Julita Inca</name>
-      <email>yrazes@gmail.com</email>
+       <name>Julita Inca</name>
+       <email>yrazes@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Juanjo Marín</name>
       <email>juanj.marin@juntadeandalucia.es</email>
     </credit>
-    <credit type="editor">
-      <name>Shobha Tyagi</name>
-      <email>tyagishobha@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
     <desc><gui>キーボード</gui>の設定でキーボードショートカットの割り当て、変更を行います。</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -60,18 +45,6 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Noriko Mizumoto</mal:name>
-      <mal:email>noriko@fedoraproject.org</mal:email>
-      <mal:years>2013, 2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>坂本 貴史</mal:name>
-      <mal:email>o-takashi@sakamocchi.jp</mal:email>
-      <mal:years>2013, 2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>日本GNOMEユーザー会</mal:name>
       <mal:email>http://www.gnome.gr.jp/</mal:email>
       <mal:years>2011, 2012</mal:years>
@@ -80,24 +53,34 @@
 
   <title>キーボードショートカットを設定する</title>
 
+  <comment>
+    <cite date="2012-02-19" href="mailto:shaunm@gnome.org">Shaun McCance</cite>
+    <p>Define shortcuts, using Shortcuts tab in Keyboard settings. Provide
+    reference for what everything is (can group for conciseness). Explain
+    custom shortcuts.</p>
+    <p>Important: the window says "To edit a shortcut, click the row and hold
+    down the new keys or press Backspace to clear." This is actually wrong.
+    You have to click the row, then click again on the shortcut within the
+    row. File bug against control-center about the faulty message (or better,
+    about the confusing interaction), but make sure to explain correctly in
+    the help regardless.</p>
+  </comment>
+
 <p>キーボードショートカットに割り当てるキーを変更する方法は次のとおりです。</p>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Keyboard</gui>.</p>
+	<p>Click your name on the top bar and select <gui>Settings</gui>.</p></item>
+    <item><p><gui>キーボード</gui>を開き、<gui>ショートカット</gui>タブを選択します。</p>
     </item>
     <item>
-      <p>Click on <gui>Keyboard</gui> to open the panel.</p>
+      <p>Select a category in the left pane, and the row for the desired action
+      on the right. The current shortcut definition will change to
+      <gui>New accelerator...</gui></p>
     </item>
     <item>
-      <p>Select the <gui>Shortcuts</gui> tab.</p>
-    </item>
-    <item>
-      <p>左側のペインでカテゴリーを選択し、次に右側のペインで対象のアクションを選択します。現在のショートカット定義が、<gui>新しいアクセラレータ…</gui>という表示に変わります。</p>
-    </item>
-    <item>
-      <p>割り当てるキーコンビネーションを入力するか、<key>Backspace</key> を押して設定をクリアします。</p>
+      <p>Hold down the desired key combination, or press <key>Backspace</key> to
+      clear.</p>
     </item>
   </steps>
 
@@ -114,23 +97,23 @@
   </tr>
   <tr>
 	<td><p>電卓を起動</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-calculator.svg"> <key>Calculator</key> key symbol</media> or <key>Calculator</key></p></td>
+	<td><p>Calculator</p></td>
   </tr>
   <tr>
 	<td><p>メールクライアントを起動</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-mail.svg"> <key>Mail</key> key symbol</media> or <key>Mail</key></p></td>
+	<td><p>Mail</p></td>
   </tr>
   <tr>
 	<td><p>ウェブブラウザーを起動</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-world.svg"> <key>WWW</key> key symbol</media> or <media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-home.svg"> <key>WWW</key> key symbol</media> or <key>WWW</key></p></td>
+	<td><p>WWW</p></td>
   </tr>
   <tr>
 	<td><p>ホームフォルダー</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-folder.svg"> <key>Explorer</key> key symbol</media> or <media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-computer.svg"> <key>Explorer</key> key symbol</media> or <key>Explorer</key></p></td>
+	<td><p>Explorer</p></td>
   </tr>
   <tr>
 	<td><p>検索</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-search.svg"> <key>Search</key> key symbol</media> or <key>Search</key></p></td>
+	<td><p>検索</p></td>
   </tr>
 </table>
 
@@ -162,18 +145,20 @@
   </tr>
   <tr>
 	<td><p>ウィンドウを上側のワークスペースへ移動する</p></td>
-	<td><p><keyseq><key>Shift</key><key xref="keyboard-key-super">Super</key> <key>Page Up</key></keyseq></p></td>
+	<td><p><keyseq><key>Shift</key><key xref="keyboard-key-super">Super</key>
+  <key>Page Up</key></keyseq></p></td>
   </tr>
   <tr>
 	<td><p>ウィンドウを下側のワークスペースへ移動する</p></td>
-	<td><p><keyseq><key>Shift</key><key>Super</key><key>Page Down</key></keyseq></p></td>
+	<td><p><keyseq><key>Shift</key><key>Super</key><key>Page Down</key></keyseq>
+  </p></td>
   </tr>
   <tr>
 	<td><p>アプリケーションを切り替える</p></td>
 	<td><p><keyseq><key>Super</key><key>Tab</key></keyseq></p></td>
   </tr>
   <tr>
-  <td><p>ウィンドウを切り替える</p></td>
+  <td><p>Switch windows</p></td>
   <td><p>無効</p></td>
   </tr>
   <tr>
@@ -237,15 +222,15 @@
 <table rules="rows" frame="top bottom" ui:expanded="false">
 <title>スクリーンショット</title>
   <tr>
-	<td><p>Save a screenshot to file</p></td>
+	<td><p>スクリーンショットを撮る</p></td>
 	<td><p><key>Print</key></p></td>
   </tr>
   <tr>
-	<td><p>Save a screenshot of a window to file</p></td>
+	<td><p>ウィンドウのスクリーンショットを撮る</p></td>
 	<td><p><keyseq><key>Alt</key><key>Print</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Save a screenshot of an area to file</p></td>
+	<td><p>選択領域のスクリーンショットを撮る</p></td>
 	<td><p><keyseq><key>Shift</key><key>Print</key></keyseq></p></td>
   </tr>
   <tr>
@@ -261,8 +246,9 @@
 	<td><p><keyseq><key>Shift</key><key>Ctrl</key><key>Print</key></keyseq></p></td>
   </tr>
   <tr>
-  <td><p>スクリーンキャストを撮る</p></td>
-  <td><p><keyseq><key>Shift</key><key>Ctrl</key><key>Alt</key><key>R</key></keyseq></p></td>
+  <td><p>Record a screencast</p></td>
+  <td><p><keyseq><key>Shift</key><key>Ctrl</key><key>Alt</key><key>R</key>
+  </keyseq></p></td>
   </tr>
 </table>
 
@@ -270,43 +256,43 @@
 <title>音とメディア</title>
   <tr>
 	<td><p>ミュートにする</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-mute.svg"> <key>Mute</key> key symbol</media> (Audio mute)</p></td>
+	<td><p>Audio mute</p></td>
   </tr>
   <tr>
 	<td><p>音量を下げる</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-voldown.svg"> <key>Volume Down</key> key symbol</media> (Audio lower volume)</p></td>
+	<td><p>Audio lower volume</p></td>
   </tr>
   <tr>
 	<td><p>音量を上げる</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-volup.svg"> <key>Volume Up</key> key symbol</media> (Audio raise volume)</p></td>
+	<td><p>Audio raise volume</p></td>
   </tr>
   <tr>
 	<td><p>メディアプレイヤーを起動</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-media.svg"> <key>Media</key> key symbol</media> (Audio media)</p></td>
+	<td><p>Audio media</p></td>
   </tr>
   <tr>
 	<td><p>再生 (あるいは再生/一時停止)</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-play.svg"> <key>Play</key> key symbol</media> (Audio play)</p></td>
+	<td><p>Audio play</p></td>
   </tr>
   <tr>
 	<td><p>再生を一時停止</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-pause.svg"> <key>Pause</key> key symbol</media> (Audio pause)</p></td>
+	<td><p>Audio pause</p></td>
   </tr>
   <tr>
 	<td><p>再生を停止</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-stop.svg"> <key>Stop</key> key symbol</media> (Audio stop)</p></td>
+	<td><p>Audio stop</p></td>
   </tr>
   <tr>
 	<td><p>前のトラック</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-previous.svg"> <key>Previous</key> key symbol</media> (Audio previous)</p></td>
+	<td><p>Audio previous</p></td>
   </tr>
   <tr>
 	<td><p>次のトラック</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-next.svg"> <key>Next</key> key symbol</media> (Audio next)</p></td>
+	<td><p>Audio next</p></td>
   </tr>
   <tr>
 	<td><p>取り出し</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-eject.svg"> <key>Eject</key> key symbol</media> (Eject)</p></td>
+	<td><p>取り出し</p></td>
   </tr>
 </table>
 
@@ -326,47 +312,47 @@
   </tr>
   <tr>
 	<td><p>画面をロック</p></td>
-	<td><p><keyseq><key>Super</key><key>L</key></keyseq></p></td>
+	<td><p><keyseq><key>Ctrl</key><key>Alt</key><key>L</key></keyseq></p></td>
   </tr>
   <tr>
-  <td><p>メッセージトレイを表示する</p></td>
+  <td><p>Show the message tray</p></td>
   <td><p><keyseq><key>Super</key><key>M</key></keyseq></p></td>
   </tr>
   <tr>
-  <td><p>アクティブな通知にフォーカスを当てる</p></td>
+  <td><p>Focus the active notification</p></td>
   <td><p><keyseq><key>Super</key><key>N</key></keyseq></p></td>
   </tr>
   <tr>
-  <td><p>すべてのアプリケーションを表示する</p></td>
+  <td><p>Show all applications</p></td>
   <td><p><keyseq><key>Super</key><key>A</key></keyseq></p></td>
   </tr>
   <tr>
-  <td><p>トップバーのアプリケーションメニューを開く</p></td>
+  <td><p>Open the application menu</p></td>
   <td><p><keyseq><key>Super</key><key>F10</key></keyseq></p></td>
   </tr>
 </table>
 
 <table rules="rows" frame="top bottom" ui:expanded="false">
-<title>タイピング</title>
+<title>Typing</title>
   <tr>
-  <td><p>次の入力ソースへ切り替える</p></td>
+  <td><p>Switch to next input source</p></td>
   <td><p><keyseq><key>Super</key><key>Space</key></keyseq></p></td>
   </tr>
 
   <tr>
-  <td><p>前の入力ソースへ切り替える</p></td>
+  <td><p>Switch to previous input source</p></td>
   <td><p>無効</p></td>
   </tr>
   <tr>
-  <td><p>次の入力ソースへ切り替える (修飾キーのみ)</p></td>
+  <td><p>Modifiers-only switch to next source</p></td>
   <td><p>無効</p></td>
   </tr>
   <tr>
-  <td><p>Compose キー</p></td>
+  <td><p>Compose Key</p></td>
   <td><p>無効</p></td>
   </tr>
   <tr>
-  <td><p>代替文字キー</p></td>
+  <td><p>Alternative Characters Key</p></td>
   <td><p>無効</p></td>
   </tr>
 </table>
@@ -411,7 +397,7 @@
 <title>ウィンドウ</title>
   <tr>
 	<td><p>ウィンドウメニューをアクティブにする。</p></td>
-	<td><p><keyseq><key>Alt</key><key>Space</key></keyseq></p></td>
+	<td><p><keyseq><key>Alt</key><key>スペース</key></keyseq></p></td>
   </tr>
   <tr>
 	<td><p>フルスクリーンモードを切り替える</p></td>
@@ -426,7 +412,7 @@
 	<td><p><keyseq><key>Super</key><key>↑</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>ウィンドウを元のサイズに戻す</p></td>
+	<td><p>ウィンドウを戻す</p></td>
   <td><p><keyseq><key>Super</key><key>↓</key></keyseq></p></td>
   </tr>
   <tr>
@@ -438,7 +424,7 @@
 	<td><p><keyseq><key>Alt</key><key>F4</key></keyseq></p></td>
   </tr>
   <tr>
-  <td><p>ウィンドウを非表示にする</p></td>
+  <td><p>Hide window</p></td>
   <td><p><keyseq><key>Super</key><key>H</key></keyseq></p></td>
   </tr>
   <tr>
@@ -485,33 +471,65 @@
 
 </section>
 
-<section id="custom">
-<title>独自のショートカット</title>
-
-  <p>To create your own application keyboard shortcut in the
-  <app>Keyboard</app> settings:</p>
+<section id="changing-shorcuts">
+  <title>Change keyboard shortcuts</title>
+  <p>This section shows how to change keyboard shortcuts for an application.</p>
 
   <steps>
     <item>
-      <p>Click the <gui style="button">+</gui> button. The <gui>Custom
-      Shortcut</gui> window will appear.</p>
+	<p>Open the Terminal application.</p>
+     </item>
+    <item><p>Run the <cmd>gsettings set org.gnome.desktop.interface can-change-accels true</cmd> command.</p>
     </item>
-    <item>
-      <p>Type a <gui>Name</gui> to identify the shortcut, and a
-      <gui>Command</gui> to run an application, then click <gui>Add</gui>.
-      For example, if you wanted the shortcut to open <app>Rhythmbox</app>, you
-      could name it <input>Music</input> and use the <input>rhythmbox</input>
-      command.</p>
+       <item>
+      <p>Start the application for which you want to change the keyboard shortcut.</p>
     </item>
-    <item>
-      <p>いま登録したショートカット項目が追加されるので、その右端の<gui>無効</gui>と書かれた箇所をクリックします。<gui>新しいアクセラレータ…</gui>というラベルが表示されたら、割り当てるキーコンビネーションを入力します。</p>
+  <item>
+      <p>Find the menu item for which you want to change the keyboard shortcut.</p>
+    </item>
+<item>
+      <p>Type the shortcut that you want on the keyboard.</p>
     </item>
   </steps>
 
-  <p>コマンド欄には、システムコマンドとして有効なものを指定してください。端末を起動してそのコマンドを入力することで、コマンドが機能するか確認できます。アプリケーションを起動するコマンド名は、アプリケーションの名前とは異なることがあります。</p>
+<note style="note style">
+  <p>Note that this setting is desktop-wide. You can disable it after
+ you make changes by running the
+ <cmd>gsettings set org.gnome.desktop.interface can-change-accels false</cmd>
+ command. You can also use the <app>dconf-editor</app> utility to do this.</p>
+</note>
+</section>
 
-  <p>独自のキーボードショートカットに関連付けたコマンドを変更する場合は、ショートカットの<em>名前</em>をダブルクリックします。<gui>独自のショートカット</gui>ウィンドウが表示されるので、コマンドを編集してください。</p>
+<section id="custom">
+<title>独自のショートカット</title>
 
+<p>独自のキーボードショートカットを定義する方法は次のとおりです。</p>
+
+  <steps>
+    <item>
+      <p>Select <gui>Custom Shortcuts</gui> in the left pane, and click the
+      <gui style="button">+</gui> button (or click the
+      <gui style="button">+</gui> button in any category). The
+      <gui>Custom Shortcut</gui> window will appear.</p>
+    </item>
+    <item>
+      <p>Type a <gui>Name</gui> to identify the shortcut, and a
+      <gui>Command</gui> to run an application, then click <gui>Apply</gui>.
+      For example, if you wanted the shortcut to open Rhythmbox, you could name
+      it <input>Music</input> and use the <input>rhythmbox</input> command.</p>
+    </item>
+    <item>
+      <p>Click <gui>Disabled</gui> in the row that was just added. When it
+      changes to <gui>New accelerator...</gui>, hold down the desired shortcut
+      key combination.</p>
+    </item>
+  </steps>
+ <p>The command name that you type should be a valid system command. You
+ can check that the command works by opening a Terminal and typing it in
+ there. The command that opens an application cannot have the same name as
+ the application itself.</p>
+
+ <p>独自のキーボードショートカットに関連付けたコマンドを変更する場合は、ショートカットの<em>名前</em>をダブルクリックします。<gui>独自のショートカット</gui>ウィンドウが表示されるので、コマンドを編集してください。</p>
 </section>
 
 </page>

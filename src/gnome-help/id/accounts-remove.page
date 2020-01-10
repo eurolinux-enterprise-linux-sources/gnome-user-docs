@@ -1,75 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="accounts-remove" xml:lang="id">
 
-  <info>
-    <link type="guide" xref="accounts" group="remove"/>
-    <link type="seealso" xref="accounts-disable-service"/>
+<info>
+  <desc>Menghapus suatu akun daring secara komplit.</desc>
+  <link type="guide" xref="accounts"/>
+  <link type="seealso" xref="accounts-disable-service"/>
+  <revision pkgversion="3.5.5" version="0.1" date="2012-08-15" status="draft"/>
+  <credit type="author">
+    <name>Michael Hill</name>
+    <email>mdhillca@gmail.com</email>
+  </credit>
 
-    <revision pkgversion="3.5.5" date="2012-08-15" status="draft"/>
-    <revision pkgversion="3.9.92" date="2013-09-18" status="draft"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-
-    <credit type="author">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Shaun McCance</name>
-      <email>shaunm@gnome.org</email>
-      <years>2015</years>
-    </credit>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Menghapus akses ke suatu penyedia layanan daring dari aplikasi Anda.</desc>
-  
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Andika Triwidada</mal:name>
       <mal:email>andika@gmail.com</mal:email>
-      <mal:years>2011-2014, 2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Ahmad Haris</mal:name>
-      <mal:email>ahmadharis1982@gmail.com</mal:email>
-      <mal:years>2017.</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
 
-  <title>Menghapus sebuah akun</title>
+<title>Menghapus sebuah akun</title>
 
-  <p>Anda dapat menghapus akun daring yang tidak ingin Anda pakai lagi.</p>
+<steps>
+  <item><p>Buka pengaturan <app>Akun Daring</app> dari ringkasan Aktivitas.</p></item>
+  <item><p>Pilih akun yang ingin Anda hapus.</p></item>
+  <item><p>Klik tombol <key>-</key> di bagian kiri bawah jendela.</p></item>
+ <item><p>Klik <gui>Hapus</gui>.</p></item>
+</steps>
 
-  <note style="tip">
-    <p>Banyak layanan daring menyediakan suatu token otorisasi yang disimpan oleh GNOME sebagai pengganti kata sandi. Bila Anda menghapus suatu akun, Anda juga mesti mencabut sertifikat itu dalam layanan daring. Ini akan memastikan bahwa tidak ada aplikasi atau situs web lain yang dapat menyambung ke layanan tersebut memakai otorisasi untuk GNOME.</p>
+<note style="tip">
+  <p>Alih-alih menghapus akun secara komplit, dimungkinkan untuk <link xref="accounts-disable-service">membatasi layanan</link> yang diakses oleh desktop Anda.</p>
+</note>
 
-    <p>Bagaimana cara mencabut otorisasi yang bergantung kepada penyedia layanan. Periksa pengaturan Anda pada situs web penyedia mengotorisasi atau menyambungkan apps atau situs. Carilah app bernama "GNOME" dan hapuslah.</p>
-  </note>
-
-  <steps>
-    <item>
-      <p>Buka ringkasan <gui xref="shell-introduction#activities">Aktivitas</gui> dan mulai mengetik <gui>Akun Daring</gui>.</p>
-    </item>
-    <item>
-      <p>Klik pada <gui>Akun Daring</gui> untuk membuka panel.</p>
-    </item>
-    <item>
-      <p>Pilih akun yang ingin Anda hapus.</p>
-    </item>
-    <item>
-      <p>Klik tombol <gui>-</gui> di pojok kiri bawah jendela.</p>
-    </item>
-    <item>
-      <p>Klik <gui>Hapus</gui> dalam dialog konfirmasi.</p>
-    </item>
-  </steps>
-
-  <note style="tip">
-    <p>Alih-alih menghapus akun secara komplit, dimungkinkan untuk <link xref="accounts-disable-service">membatasi layanan</link> yang diakses oleh desktop Anda.</p>
-  </note>
 </page>

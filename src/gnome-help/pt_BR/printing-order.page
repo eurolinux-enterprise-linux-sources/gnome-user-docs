@@ -4,9 +4,9 @@
   <info>
     <link type="guide" xref="printing#paper"/>
 
+    <desc>Collate and reverse the print order.</desc>
+
     <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -16,10 +16,7 @@
       <name>Jim Campbell</name>
       <email>jwcampbell@gmail.com</email>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Intercale e inverta a ordem de impressão.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Rodolfo Ribeiro Gomes</mal:name>
@@ -28,58 +25,45 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Enrico Nicoletto</mal:name>
       <mal:email>liverig@gmail.com</mal:email>
       <mal:years>2013.</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>João Santana</mal:name>
-      <mal:email>joaosantana@outlook.com</mal:email>
-      <mal:years>2013.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Fontenelle</mal:name>
-      <mal:email>rafaelff@gnome.org</mal:email>
-      <mal:years>2012-2018.</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Fazendo páginas imprimirem em uma ordem diferente</title>
+<title>Make pages print in a different order</title>
 
-  <section id="reverse">
-    <title>Inverter</title>
+<section id="reverse">
+ <title>Inverter</title>
+ <p>Printers usually print the first page first, and the last page last, so the
+ pages end up in reverse order when you pick them up. If needed, you can reverse
+ this printing order.</p>
+ <p>Para interter a ordem:</p>
+ <steps>
+  <item><p>Clique em <guiseq><gui>Arquivo</gui><gui>Imprimir</gui></guiseq>.</p></item>
+  <item><p>Na aba <gui>Geral</gui> da janela de impressão embaixo de <em>Cópias</em>, marque <gui>Inverter</gui>. A última página será imprimida primeiro, e assim por diante.</p></item>
+ </steps>
+</section>
 
-    <p>Impressoras geralmente imprimem a primeira página primeiro e a última página por último, de forma que as páginas terminam na ordem inversa quando você as pega. Se necessário, você pode inverter essa ordem de impressão.</p>
+<section id="collate">
+ <title>Intercalar</title>
+ <p>If you are printing more than one copy of the document, the print-outs will
+ be grouped by page number by default (i.e. all of the copies of page one come
+ out, then the copies of page two, and so on). <em>Collating</em> will make each
+ copy come out with its pages grouped together in the right order instead. </p>
 
-    <steps>
-      <title>Para inverter a ordem:</title>
-      <item>
-        <p>Pressione <keyseq><key>Ctrl</key><key>F</key></keyseq> para abrir o diálogo <gui>Imprimir</gui>.</p>
-      </item>
-      <item>
-        <p>Na aba <gui>Geral</gui>, embaixo de <gui>Cópias</gui>, marque <gui>Inverter</gui>. A última página será imprimida primeiro, e assim por diante.</p>
-      </item>
-    </steps>
-
-  </section>
-
-  <section id="collate">
-    <title>Intercalar</title>
-
-  <p>Se você está imprimindo mais de uma cópia do documento, as impressões serão agrupadas por número de página por padrão (isto é, todas as cópias da página 1 virão, então as cópias da página 2, etc.). <em>Intercalar</em> fará com que cada cópia venha com suas páginas agrupadas na ordem correta.</p>
-
-  <steps>
-    <title>Para intercalar:</title>
-    <item>
-     <p>Pressione <keyseq><key>Ctrl</key><key>F</key></keyseq> para abrir o diálogo <gui>Imprimir</gui>.</p>
-    </item>
-    <item>
-      <p>Na aba <gui>Geral</gui>, sob de <gui>Cópias</gui>, marque <gui>Intercalar</gui>.</p>
-    </item>
-  </steps>
-
+ <p>Para intercalar:</p>
+ <steps>
+  <item><p>Clique em <guiseq><gui>Arquivo</gui><gui>Imprimir</gui></guiseq>.</p></item>
+  <item><p>Na aba <gui>Geral</gui> da janela de impressão embaixo de <em>Cópias</em>, marque <gui>Intercalar</gui>.</p></item>
+ </steps>
+ <!-- Need to add this image <media type="image" src="figures/reverse-collate.png"/> -->
 </section>
 
 </page>

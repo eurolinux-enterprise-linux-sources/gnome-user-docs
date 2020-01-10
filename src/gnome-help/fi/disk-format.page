@@ -10,7 +10,6 @@
     </credit>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
-    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
 
     <desc>Poista kaikki tiedostot ja kansiot ulkoiselta kiintolevyltä tai USB-muistitikulta alustamalla se.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -20,51 +19,37 @@
       <mal:email>timo.jyrinki@iki.fi</mal:email>
       <mal:years>2012.</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Jiri Grönroos</mal:name>
-      <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
-      <mal:years>2012-2018.</mal:years>
-    </mal:credit>
   </info>
 
 <title>Tyhjennä siirrettävä levy</title>
 
-  <p>If you have a removable disk, like a USB memory stick or an external hard
- disk, you may sometimes wish to completely remove all of its files and
- folders. You can do this by <em>formatting</em> the disk — this deletes all
- of the files on the disk and leaves it empty.</p>
+  <p>Jos sinulla on siirrettävä levy, kuten USB-muistitikku tai ulkoinen kiintolevy, haluat ehkä joskus poistaa kaikki sen tiedostot ja kansiot. Voit tehdä tämän <em>alustamalla</em> levyn - alustus poistaa kaikki levyn tiedostot ja jättää sen tyhjäksi.</p>
 
 <steps>
-  <title>Tyhjennä siirrettävä levy</title>
+ <title>Tyhjennä siirrettävä levy</title>
   <item>
-    <p>Open <app>Disks</app> from the <gui>Activities</gui> overview.</p>
+   <p>Open the <app>Disks</app> application from the <gui>Activities</gui>
+   overview.</p>
   </item>
   <item>
-    <p>Select the disk you want to wipe from the list of storage devices on the
-    left.</p>
+   <p>Valitse levy, jonka haluat tyhjentää <gui>Tallennuslaitteet</gui>-listasta.</p>
 
-    <note style="warning">
-      <p>Varmista, että olet valinnut oikean levyn! Jos valitset väärän levyn, kaikki kyseisen levyn tiedostot poistetaan!</p>
-    </note>
+  <note style="warning">
+   <p>Varmista, että olet valinnut oikean levyn! Jos valitset väärän levyn, kaikki kyseisen levyn tiedostot poistetaan!</p>
+  </note>
   </item>
   <item>
-    <p>In the toolbar underneath the <gui>Volumes</gui> section, click the
-    menu button. Then click <gui>Format…</gui>.</p>
+   <p>Taltiot-osiossa, paina <gui>Irrota taltio</gui>. Sen jälkeen paina <gui>Alusta taltio</gui>.</p>
   </item>
   <item>
-    <p>In the window that pops up, choose a file system <gui>Type</gui> for the
-    disk.</p>
+   <p>Valitse avautuvasta ikkunasta tiedostojärjestelmän <gui>tyyppi</gui> levylle.</p>
    <p>Jos käytät levyä Windows- ja Mac OS -koneilla Linuxin lisäksi, valitse <gui>FAT</gui>. Jos käytät sitä vain Windowsissa, <gui>NTFS</gui> voi olla parempi vaihtoehto. Lyhyt kuvaus <gui>tiedostojärjestelmästä</gui> näytetään vihjeenä.</p>
   </item>
   <item>
-    <p>Give the disk a name and click <gui>Format…</gui> to continue and show a
-    confirmation window. Check the details carefully, and click
-    <gui>Format</gui> to wipe the disk.</p>
+   <p>Anna levylle nimi ja paina <gui>Alusta</gui> aloittaaksesi levyn tyhjentämisen.</p>
   </item>
   <item>
-    <p>Once the formatting has finished, click the eject icon to safely remove
-    the disk. It should now be blank and ready to use again.</p>
+   <p>Kun alustaminen on valmis, <gui>poista levy turvallisesti</gui>. Sen tulisi nyt olla tyhjä ja valmiina käyttöön.</p>
   </item>
 </steps>
 

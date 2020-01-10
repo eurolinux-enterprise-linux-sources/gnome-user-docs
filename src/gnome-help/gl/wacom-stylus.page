@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="wacom-stylus" xml:lang="gl">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="wacom-stylus" xml:lang="gl">
   <info>
-    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+    <revision pkgversion="3.8.0" version="0.2" date="2013-03-09" status="candidate"/>
 
     <link type="guide" xref="wacom"/>
 
@@ -15,33 +11,32 @@
       <years>2012</years>
     </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
     <desc>Define as funcións de botón e sensación de presión para os «stylus» Wacom.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2018</mal:years>
+      <mal:years>2011, 2012.</mal:years>
     </mal:credit>
   </info>
 
-  <title>Configure o «stylus»</title>
+  <title>Configure o seu «stylus»</title>
+
+  <comment>
+    <cite date="2012-04-21" href="mailto:mdhillca@gmail.com">Michael Hill</cite>
+    <p>Describe the config options for the stylus and how to configure more than
+     one stylus.</p>
+  </comment>
 
 <steps>
-  <item>
-    <p>Abra a vista de <gui xref="shell-introduction#activities">Actividades</gui> e comece a escribir <gui>Tableta Wacom</gui>.</p>
-  </item>
-  <item>
-    <p>Prema na <gui>Tableta Wacom</gui>para abrir o panel.</p>
-    <!-- TODO: document how to connet the tablet using Bluetooth/add link -->
-    <note style="tip"><p>Se non se detecta ningunha tableta, pediráselle que <gui>Conecte ou acenda a súa tableta Wacom</gui>.
-Prema a ligazón <gui>Preferencias de Bluetooth</gui> para conectar unha tableta inarámica.</p></note>
+  <item><p>Prema sobre o nome da barra de enderezos e seleccione <gui>Preferencias</gui>.</p></item>
+  <item><p>Abra <gui>Tableta Wacom</gui>.</p>
+     <note style="tip"><p>Se non se detecta ningunha tableta, pediráselle que <gui>Conecte ou acenda a súa tableta Wacom</gui>.</p></note>
   </item>
   <item><p>A parte inferior do panel contén detalles e preferencias específicas do seu «stylus», co nome do dispositivo (o tipo de «stylus») e un diagrama á esquerda. Estas preferencias poden axustarse:</p>
     <list>
       <item><p><gui>Sensación de presión do borrador:</gui> use este desprazador para axudar a «sensación» (como se traduze a presión física en valores dixitais) entre <gui>Suave</gui> e <gui>Firme</gui>.</p></item>
-      <item><p>Configuració <gui>Botón/Roda do rato</gui> (isto cambia para reflexar o «stylus»). Prema o menú ao lado de cada nivel para seleccionar unha destas funcións: Ningunha acción, Premer o botón esquerdo do rato, Premer o botón do medio do rato, Premer o botón dereito do rato, desprazarse carra abaixo, desprazase cara arriba, desprazase cara a dereita, desprazase cara esquerda, Atrás ou Adiante.</p></item>
+      <item><p>Configuració <gui>Botón/Roda do rato</gui> (isto cambia para reflexar o «stylus»). Prema o menú ao lado de cada nivel para seleccionar unha destas funcións: Ningunha acción, Premer o botón esquerdo do rato, Premer o botón do medio do rato, Premer o botón dereito do rato, desprazarse carra abaixo, desprazase cara arriba, desprazase cara a dereita, desprazase cara esquerda, Atrás, Adiante.</p></item>
       <item><p><gui>Sensación de presión:</gui> use este desprazador para axustar a «sensación» a <gui>Débil</gui> e <gui>Firme</gui>.</p></item>
     </list>
   </item>

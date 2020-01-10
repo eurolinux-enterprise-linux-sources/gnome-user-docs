@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="clock-timezone" xml:lang="pt-BR">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="clock-timezone" xml:lang="pt-BR">
 
   <info>
     <link type="guide" xref="clock"/>
-
+    <desc>Adicione outros fusos horários para que possa ver que horas são em outras cidades.</desc>
     <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.16" date="2015-01-26" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Projeto de documentação do GNOME</name>
@@ -17,19 +14,8 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
-    <credit type="editor">
-       <name>Jim Campbell</name>
-       <email>jcampbell@gnome.org</email>
-    </credit>
-
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Atualize seu fuso horário da sua localização atual de forma que seu horário esteja correto.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Rodolfo Ribeiro Gomes</mal:name>
@@ -38,41 +24,27 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Enrico Nicoletto</mal:name>
       <mal:email>liverig@gmail.com</mal:email>
       <mal:years>2013.</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>João Santana</mal:name>
-      <mal:email>joaosantana@outlook.com</mal:email>
-      <mal:years>2013.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Fontenelle</mal:name>
-      <mal:email>rafaelff@gnome.org</mal:email>
-      <mal:years>2012-2018.</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Alterando seu fuso horário</title>
+<title>Alterar seu fuso horário</title>
 
-  <steps>
-    <item>
-      <p>Abra o panorama de <gui xref="shell-introduction#activities">Atividades</gui> e comece a digitar <gui>Data &amp; hora</gui>.</p>
-    </item>
-    <item>
-      <p>Clique em <gui>Data &amp; hora</gui> para abrir o painel.</p>
-    </item>
-    <item>
-      <p>Se você tiver o <gui>Fuso horário automático</gui> definido para <key>❙</key>, seu fuso horário deveria atualizar automaticamente, se você tiver uma conexão internet. Para atualizar seu fuso horário manualmente, defina isso para <key>○</key>.</p>
-    </item>
-    <item>
-      <p>Clique em <gui>Fuso horário</gui> e, então, selecione sua localização no mapa ou pesquise pela sua cidade atual.</p>
-    </item>
-  </steps>
+<steps>
+  <item><p>Clique no relógio no meio da barra superior.</p></item>
+  <item><p>Selecione <gui>Configurações de data e hora</gui>.</p></item>
+  <item><p>Talvez você precise clicar em <gui>Desbloquear</gui> e digitar a <link xref="user-admin-explain">senha de administrador</link>.</p></item>
+  <item><p>Clique na sua localização no mapa e então selecione sua cidade atual na lista suspensa.</p></item>
+</steps>
 
-  <p>A hora será atualizada automaticamente quando você selecionar uma localidade diferente. Também é possível <link xref="clock-set">ajustar o relógio manualmente</link>.</p>
+  <p>A hora mostrada na barra superior será atualizada automaticamente quando selecionar uma localidade diferente. A hora na janela será atualizada da próxima vez que acessar a janela de <gui>Configurações de data e hora</gui>. Também é possível <link xref="clock-set">ajustar o relógio manualmente</link>.</p>
 
 </page>

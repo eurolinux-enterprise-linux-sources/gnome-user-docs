@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="wacom-multi-monitor" xml:lang="el">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="wacom-multi-monitor" xml:lang="el">
   <info>
-    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <revision pkgversion="3.8.0" version="0.2" date="2013-03-09" status="candidate"/>
 
     <link type="guide" xref="wacom"/>
 
@@ -14,75 +11,53 @@
       <email>mdhillca@gmail.com</email>
       <years>2012</years>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-      <years>2015</years>
-    </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Απεικονίστε το tablet Wacom σε μια συγκεκριμένη οθόνη.</desc>
+    <desc>Απεικονίστε την πινακίδα Wacom σε μια συγκεκριμένη οθόνη.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
-      <mal:email>team@gnome.gr</mal:email>
-      <mal:years>2009-2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
       <mal:email>dmtrs32@gmail.com</mal:email>
-      <mal:years>2012-2015</mal:years>
+      <mal:years>2012, 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:name> Φώτης Τσάμης</mal:name>
       <mal:email>ftsamis@gmail.com</mal:email>
       <mal:years>2009</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:name> Μάριος Ζηντίλης</mal:name>
       <mal:email>m.zindilis@dmajor.org</mal:email>
       <mal:years>2009, 2010</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Θάνος Τρυφωνίδης</mal:name>
-      <mal:email>tomtryf@gnome.org</mal:email>
-      <mal:years>2012-2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Μαρία Μαυρίδου</mal:name>
-      <mal:email>mavridou@gmail.com</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:name> Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
     </mal:credit>
   </info>
 
   <title>Επιλέξτε μια οθόνη</title>
 
+  <comment>
+    <cite date="2012-04-21" href="mailto:mdhillca@gmail.com">Michael Hill</cite>
+    <p>In a multi-monitor setup, the user is able to select which monitor is
+     mapped by the graphics tablet.</p>
+  </comment>
+
 <steps>
-  <item>
-    <p>Ανοίξτε την επισκόπηση <gui xref="shell-introduction#activities">Δραστηριότητες</gui> και αρχίστε να πληκτρολογείτε <gui>Wacom Tablet</gui>.</p>
+  <item><p>Πατήστε το όνομά σας στην πάνω γραμμή και επιλέξτε <gui>Ρυθμίσεις</gui>.</p></item>
+  <item><p>Ανοίξτε την <gui>πινακίδα Wacom</gui>.</p>
+     <note style="tip"><p>Εάν δεν ανιχνευτεί καμιά πινακίδα, θα ερωτηθείτε <gui>παρακαλώ συνδέστε ή ανοίξτε την πινακίδα σας Wacom</gui>.</p></note>
   </item>
-  <item>
-    <p>Κάντε κλικ στο <gui>Tablet Wacom</gui> για να ανοίξετε τον πίνακα.</p>
-    <!-- TODO: document how to connet the tablet using Bluetooth/add link -->
-    <note style="tip"><p>If no tablet is detected, you’ll be asked to
-    <gui>Please plug in or turn on your Wacom tablet</gui>. Click the
-    <gui>Bluetooth Settings</gui> link to connect a wireless tablet.</p></note>
-  </item>
-  <item><p>Κάντε κλικ στο <gui>Χαρτογράφηση στην οθόνη…</gui></p></item>
-  <item><p>Πατήστε <gui>Χαρτογράφηση σε μια οθόνη</gui>.</p></item>
-  <item><p>Δίπλα στην <gui>Έξοδο</gui>, επιλέξτε την οθόνη που επιθυμείτε να δεχτεί είσοδο από το tablet γραφικών σας.</p>
+  <item><p>Πατήστε <gui>απεικόνιση σε οθόνη…</gui></p></item>
+  <item><p>Πατήστε <gui>απεικόνιση σε μονή οθόνη</gui>.</p></item>
+  <item><p>Δίπλα στην <gui>έξοδο</gui>, επιλέξτε την οθόνη που επιθυμείτε να δεχτεί καταχώριση από την πινακίδα γραφικών σας.</p>
      <note style="tip"><p>Μόνο οι οθόνες που ρυθμίστηκαν θα είναι επιλέξιμες.</p></note>
   </item>
-  <item>
-    <p>Αλλάξτε το <gui>Διατήρηση λόγου θέασης (letterbox)</gui> σε <gui>ΝΑΙ</gui> για να ταιριάξει η περιοχή σχεδίασης του tablet με τις αναλογίες της οθόνης. Αυτή η ρύθμιση, ονομάζεται επίσης <em>force proportions</em>, ή <em>letterboxes</em> και μετατρέπει την περιοχή σχεδίασης του tablet ως μια τυπική οθόνη. Για παράδειγμα, ένα tablet με λόγο θέασης 4∶3 θα χαρτογραφηθεί έτσι ώστε η περιοχή σχεδίασης να αντιστοιχεί σε μια ευρεία οθόνη.</p>
-  </item>
-  <item><p>Κάντε κλικ στο <gui>Κλείσιμο</gui>.</p></item>
+  <item><p>Πατήστε <gui>Κλείσιμο</gui>.</p></item>
 </steps>
 
 </page>

@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="user-delete" xml:lang="fi">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="user-delete" xml:lang="fi">
 
   <info>
     <link type="guide" xref="user-accounts#manage"/>
-    <link type="seealso" xref="user-add"/>
-    <link type="seealso" xref="user-admin-explain"/>
-
+    <desc>Poista tarpeettomat käyttäjät.</desc>
     <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -27,56 +22,25 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Poista tarpeettomat käyttäjät.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Timo Jyrinki</mal:name>
       <mal:email>timo.jyrinki@iki.fi</mal:email>
       <mal:years>2012.</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Jiri Grönroos</mal:name>
-      <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
-      <mal:years>2012-2018.</mal:years>
-    </mal:credit>
   </info>
-
   <title>Poista käyttäjätili</title>
 
-  <p>Voit <link xref="user-add">lisätä tietokoneelle useita eri käyttäjätilejä</link>. Jos jollekin käyttäjätilille ei ole enää tarvetta, voit poistaa sen.</p>
+  <p>Voit lisätä tietokoneelle useita eri käyttäjätilejä. Lisätietoja löytyy ohjeesta <link xref="user-add"/>. Jos jollekin käyttäjätilille ei ole enää tarvetta, voit poistaa sen.</p>
 
-  <p>Tarvitset <link xref="user-admin-explain">ylläpitäjän oikeuset</link> poistaaksesi käyttäjätilejä.</p>
-
-  <steps>
-    <item>
-      <p>Avaa <gui xref="shell-introduction#activities">Toiminnot</gui>-yleisnäkymä ja ala kirjoittamaan <gui>Käyttäjät</gui>.</p>
-    </item>
-    <item>
-      <p>Napsauta <gui>Käyttäjät</gui> avataksesi paneelin.</p>
-    </item>
-    <item>
-      <p>Press <gui style="button">Unlock</gui> in the top right corner and
-      type in your password when prompted.</p>
-    </item>
-    <item>
-      <p>Valitse käyttäjä, jonka haluat poistaa ja napsauta <gui>-</gui>.</p>
-    </item>
-    <item>
-      <p>Each user has their own home folder for their files and settings. You
-      can choose to keep or delete the user’s home folder. Click <gui>Delete
-      Files</gui> if you are sure they will not be used anymore and you need to
-      free up disk space. These files are permanently deleted. They cannot be
-      recovered. You may want to back up the files to an external storage device
-      before deleting them.</p>
-    </item>
-  </steps>
-
+<steps>
+  <item><p>Click your name on the top bar, then click the picture next to your
+  name to open the <gui>Users</gui> window.</p></item>
+  <item><p>Napsauta <gui>Avaa lukitus</gui> ikkunan oikeasta yläreunasta ja anna salasanasi. Käyttäjätililläsi tulee olla ylläpito-oikeudet, jotta voit poistaa käyttäjiä.</p></item>
+  <item><p>Select the user you want to delete and click the
+  <gui style="button">-</gui> button.</p></item>
+  <item><p>Jokaisella käyttäjällä on oma kotikansio tiedostoja ja asetuksia varten. Voit päättää säilyttää tai poistaa käyttäjän kotikansion. Napsauta <gui>Poista tiedostot</gui>, jos haluat varmasti poistaa kaikki tiedostot ja vapauttaa samalla levytilaa. Kyseiset tiedostot poistetaan pysyvästi, eikä niitä voi palauttaa helposti jos lainkaan. Sen vuoksi voi olla suositeltavaa tallentaa tiedostot ulkoiselle kiintolevylle tai CD:lle, ennen kuin käyttäjän kotikansion sisältö poistetaan.</p></item>
+</steps>
 </page>

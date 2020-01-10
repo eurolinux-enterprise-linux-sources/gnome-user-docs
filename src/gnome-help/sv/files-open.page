@@ -2,11 +2,12 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-open" xml:lang="sv">
 
   <info>
-    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="files" group="more"/>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-30" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="candidate"/>
+
+    <desc>Open files using an application that isn't the default one for that
+    type of file. You can change the default too.</desc>
 
     <credit type="author">
       <name>Cristopher Thomas</name>
@@ -16,53 +17,60 @@
       <name>Shaun McCance</name>
       <email>shaunm@gnome.org</email>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Öppna filer med ett program som inte är standardprogrammet för den typen av fil. Du kan även ändra standardprogrammet.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Sebastian Rasmussen</mal:name>
-      <mal:email>sebras@gmail.com</mal:email>
-      <mal:years>2014, 2015, 2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Anders Jonsson</mal:name>
-      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
-      <mal:years>2016, 2017</mal:years>
-    </mal:credit>
   </info>
 
-<title>Öppna filer med andra program</title>
+<title>Open files with other applications</title>
 
-  <p>När du dubbelklickar (eller mittenklickar) på en fil i filhanteraren kommer den att öppnas med standardprogrammet för den filtypen. Du kan öppna den i ett annat program, söka på nätet efter program eller sätta standardprogrammet för alla filer av samma typ.</p>
+<p>When you double-click a file in the file manager, it will be opened with
+the default application for that file type. You can open it in a different
+application, search online for applications, or set the default application
+for all files of the same type.</p>
 
-  <p>För att öppna en fil med ett annat program än standardprogrammet, högerklicka på filen och välj programmet du önskar från toppen av menyn. Om du inte ser programmet du önskar klicka på <gui>Öppna med annat program</gui>. Som standard visar filhanteraren bara program som är kända för att kunna hantera filen. För att bläddra genom alla programmen på din dator, klicka <gui>Visa alla program</gui>.</p>
+<p>To open a file with an application other than the default, right-click
+the file and select the application you want from the top of the menu. If
+you don't see the application you want, click <gui>Open With Other
+Application</gui>. By default, the file manager only shows applications
+it knows can handle the file. To look through all the applications on
+your computer, click <gui>Show other applications</gui>.</p>
 
-<p>Om du fortfarande inte kan hitta programmet du önskar kan du söka efter fler program genom att klicka på <gui>Hitta nya program</gui>. Filhanteraren kommer att söka på nätet efter paket som innehåller program som är kända för att hantera filer av den typen.</p>
+<p>If you still can't find the application you want, you can search for
+more applications by clicking <gui>Find applications online</gui>. The
+file manager will search online for packages containing applications
+that are known to handle files of that type.</p>
 
 <section id="default">
-  <title>Ändra standardprogrammet</title>
-  <p>Du kan ändra standardprogrammet som används för att öppna filer av en given typ. Detta låter dig öppna ditt föredragna program när du dubbelklickar för att öppna en fil. Du kanske till exempel vill att din önskade musikspelare ska öppnas när du dubbelklickar på en MP3-fil.</p>
+  <title>Change the default application</title>
+  <p>You can change the default application that is used to open files of a
+  given type. This will allow you to open your preferred application when you
+  double-click to open a file. For example, you might want your favorite music
+  player to open when you double-click an MP3 file.</p>
 
   <steps>
-    <item><p>Välj en fil av typen vars standardprogram du vill ändra. För att till exempel ändra vilket program som används för att öppna MP3-filer, välj en <file>.mp3</file>-fil.</p></item>
-    <item><p>Högerklicka på filen och välj <gui>Egenskaper</gui>.</p></item>
+    <item><p>Select a file of the type whose default application you want to change.
+    For example, to change which application is used to open MP3 files,
+    select a <file>.mp3</file> file.</p></item>
+    <item><p>Right-click the file and select <gui>Properties</gui>.</p></item>
     <item><p>Välj fliken <gui>Öppna med</gui>.</p></item>
-    <item><p>Välj programmet du vill ha och klicka på <gui>Ställ in som standard</gui>.</p>
-    <p>Om <gui>Övriga program</gui> innehåller ett program du vill använda ibland, men inte vill göra till standardprogram, välj det programmet och klicka <gui>Lägg till</gui>. Detta kommer lägga till det till i <gui>Rekommenderade program</gui>. Du kommer då att kunna använda detta program genom att högerklicka och välja det från listan.</p></item>
+    <item><p>Select the application you want and click <gui>Set as default</gui>.
+    By default, the file manager only shows applications it knows can handle the
+    file. To look through all the applications on your computer, click <gui>Show
+    other applications</gui>.</p>
+    <p>If <gui>Other Applications</gui> contains an application you sometimes
+    want to use, but don't want to make the default, select that application and
+    click <gui>Add</gui>. This will add it to <gui>Recommended Applications</gui>.
+    You will then be able to use this application by right-clicking the file and
+    selecting it from the list.</p></item>
   </steps>
 
-  <p>Detta ändrar standardprogrammet inte enbart för den valda filen, utan för alla filer av samma typ.</p>
-
-<!-- TODO: mention resetting the open with list with the "Reset" button -->
+  <p>This changes the default application not just for the selected file,
+  but for all files with the same type.</p>
 
 </section>
 

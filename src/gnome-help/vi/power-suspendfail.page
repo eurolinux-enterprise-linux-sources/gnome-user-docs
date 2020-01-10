@@ -4,12 +4,9 @@
   <info>
     <link type="guide" xref="power#problems"/>
     <link type="guide" xref="hardware-problems-graphics"/>
-    <link type="seealso" xref="hardware-driver"/>
-
     <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
-    <desc>Some computer hardware causes problems with suspend.</desc>
+    <desc>Một số phần cứng máy tính có vấn đề với ngưng hoặc ngủ đông.</desc>
 
     <credit type="author">
       <name>Dự án tài liệu GNOME</name>
@@ -31,15 +28,12 @@
 
 <title>Tại sao máy tính không bật trở lại sau khi ngưng?</title>
 
-<p>If you <link xref="power-suspend">suspend</link> your computer, then try to
-resume it, you may find that it does not work as you expected. This could be
-because suspend is not supported properly by your hardware.</p>
+<p>Nếu máy bạn <link xref="power-suspend">ngưng</link> hoặc <link xref="power-hibernate">ngủ đông</link>, sau đó bật lại mà không chạy theo mong muốn, có thể do tính năng này không được phần cứng hỗ trợ tốt.</p>
 
 <section id="resume">
   <title>Máy tính ngưng rồi không trở lại nữa</title>
   <p>Nếu máy tính ngưng và bạn nhấn phím hoặc chuột, máy nên thức dậy và hỏi mật khẩu. Nếu không được, thử nhấn nút bật/tắt máy (đừng giữ, chỉ nhấn một lần và buông ra).</p>
-  <p>If this still does not help, make sure that your computer’s monitor is
-  switched on and try pressing a key on the keyboard again.</p>
+  <p>Nếu vẫn không được, bảo đảm màn hình đã bật và thử nhấn phím trên bàn phím lại.</p>
   <p>Cách cuối cùng là tắt máy bằng cách nhấn giữ phím tắt/mở máy trong 5-10 giây. Bạn sẽ mất tất cả những tài liệu chưa lưu. Bạn sẽ có thể bật máy trở lại sau đó.</p>
   <p>Nếu cứ bị vậy mỗi lần ngưng máy tính, tính năng ngưng có lẽ không hoạt động với phần cứng của bạn.</p>
   <note style="warning">
@@ -48,16 +42,17 @@ because suspend is not supported properly by your hardware.</p>
   </note>
 </section>
 
+<section id="hibernate">
+  <title>Không có ứng dụng/tài liệu nào chạy sau khi bật máy trở lại</title>
+  <p>Nếu máy tính ngủ đông rồi bạn mở lại, nhưng không còn tài liệu hay ứng dụng nào, có lẽ ngủ đông không thực hiện đúng. Chuyện này đôi khi xảy ra vì một lỗi nhỏ nào đó, và máy tính không thể ngủ đông đúng cách. Nó cũng có thể xảy ra vì bạn nâng cấp phần mềm và cần khởi động lại hệ thống; trong trường hợp này máy bị tắt chứ không ngủ đông.</p>
+  <p>Cũng có thể máy không có khả năng ngủ đông vì phần cứng không hỗ trợ. Có thể do trình điều khiển Linux. Bạn có thể thử bằng cách cho ngủ đông lại và xem có hoạt động lần thứ hai không. Nếu vẫn không hoạt động, có thể có vấn đề với trình điều khiển.</p>
+</section>
+
 <section id="hardware">
   <title>Kết nối không dây (hoặc phần cứng khác) không hoạt động khi mở máy lại</title>
-  <p>If you suspend your computer and then resume it again, you
-  may find that your internet connection, mouse, or some other device does not
-  work properly. This could be because the driver for the device does not
-  properly support suspend. This is a <link xref="hardware-driver">problem with the driver</link> and not the device
-  itself.</p>
+  <p>Nếu bạn ngưng hoặc cho ngủ đông máy tính và mở lại, kết nối Internet có thể mất, chuộc hoặc thiết bị khác có thể không hoạt động đúng. Có thể do trình điều khiển thiết bị không hỗ trợ tính năng này. Đây là <link xref="hardware-driver">vấn đề với trình điều khiển</link> chứ không phải với thiết bị.</p>
   <p>Nếu thiết bị có công tắt bật/tắt, thử tắt và bật lại. Hầu hết trường hợp thiết bị sẽ hoạt động lại. Nếu kết nối thông qua cáp USB hoặc tương tự, tháo cáp và gắn lại, xem nó hoạt động không.</p>
-  <p>If you cannot turn off or unplug the device, or if this does not work, you
-  may need to restart your computer for the device to start working again.</p>
+  <p>Nếu bạn không thể tháo/tắt thiết bị, hoặc có làm nhưng cũng không hoạt động, bạn có thể cần khởi động lại máy tính.</p>
 </section>
 
 </page>

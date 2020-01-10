@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="tip" version="1.0 ui/1.0" id="shell-keyboard-shortcuts" xml:lang="sr">
-
+<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="tip" id="shell-keyboard-shortcuts" xml:lang="sr">
   <info>
     <link type="guide" xref="tips"/>
     <link type="guide" xref="keyboard"/>
-    <link type="guide" xref="shell-overview#apps"/>
+    <link type="guide" xref="shell-overview"/>
     <link type="seealso" xref="keyboard-key-super"/>
+    <desc>Крећите се по радној површи користећи тастатуру.</desc>
 
     <revision pkgversion="3.8.0" version="0.4" date="2013-04-23" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.20" date="2016-08-13" status="candidate"/>
 
     <credit type="author copyright">
       <name>Шон Мек Кенс</name>
@@ -24,10 +22,7 @@
       <name>Екатерина Герасимова</name>
       <email>kittykat3756@gmail.com</email>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Крећите се по радној површи користећи тастатуру.</desc>
   </info>
 
 <title>Корисне пречице тастатуре</title>
@@ -55,18 +50,12 @@
       <p>Ова пречица користи <key>`</key> на САД тастатурама, на којима се тастер <key>`</key> налази изнад тастера <key>Таб</key>. На свим осталим тастатурама, пречица је <key>Супер</key> плус тастер изнад тастера <key>Таб</key>.</p>
     </td>
   </tr>
-  <tr xml:id="alt-escape">
-    <td><p><keyseq><key>Алт</key><key>Изађи</key></keyseq></p></td>
-    <td>
-      <p>Switch between windows in the current workspace. Hold down
-      <key>Shift</key> for reverse order.</p>
-    </td>
-  </tr>
   <tr xml:id="ctrl-alt-tab">
     <!-- To be updated to <key>Tab</key> in the future. -->
     <td><p><keyseq><key>Ктрл</key><key>Алт</key><key>Таб</key></keyseq></p></td>
     <td>
-      <p>Поставља први план тастатуре на горњу траку. У прегледу <gui>Активности</gui>, пребацује први план тастатуре између горње траке, полетника, прегледа прозора, списка програма, поља за претрагу, и фиоке порука. Користите тастере стрелица за кретање.</p>
+      <p>Поставља први план тастатуре на горњу траку. У прегледу <gui>Активности</gui>, пребацује први план тастатуре између горње траке, полетника, прегледа прозора, списка програма, и поља за претрагу. Користите тастере стрелица за кретање.</p>
+      <p>Тренутно није могуће да користите тастере стрелица за кретање по прегледу прозора. Да промените прозоре, изађите из прегледа и користите <keyseq><key>Супер</key><key>Таб</key></keyseq> и <keyseq><key>Супер</key><key>`</key></keyseq>.</p>
     </td>
   </tr>
   <tr xml:id="super-a">
@@ -74,32 +63,26 @@
     <td><p>Прикажите списак програма.</p></td>
   </tr>
   <tr xml:id="super-updown">
-    <td><p><keyseq><key>Супер</key><key>Страница горе</key></keyseq> или <keyseq><key>Ктрл</key><key>Алт</key><key>Стрелица на горе</key></keyseq>, и <keyseq><key>Супер</key><key>Страница доле</key></keyseq> или <keyseq><key>Ктрл</key><key>Алт</key><key>Стрелица на доле</key></keyseq></p></td>
+    <td><p><keyseq><key>Супер</key><key>Страница горе</key></keyseq> и <keyseq><key>Супер</key><key>Страница доле</key></keyseq></p></td>
     <td><p><link xref="shell-workspaces-switch">Пребацујте се између радних простора</link>.</p></td>
   </tr>
   <tr xml:id="super-shift-updown">
     <td><p><keyseq><key>Супер</key><key>Шифт</key><key>Страница горе</key></keyseq> и <keyseq><key>Супер</key><key>Шифт</key><key>Страница доле</key></keyseq></p></td>
     <td><p><link xref="shell-workspaces-movewindow">Преместите тренутни прозор на други радни простор</link>.</p></td>
   </tr>
-  <tr xml:id="super-shift-left">
-    <td><p><keyseq><key>Супер</key><key>Помак</key><key>←</key></keyseq></p></td>
-    <td><p>Премешта текући прозор један монитор на лево.</p></td>
-  </tr>
-  <tr xml:id="super-shift-right">
-    <td><p><keyseq><key>Супер</key><key>Помак</key><key>→</key></keyseq></p></td>
-    <td><p>Премешта текући прозор један монитор на десно.</p></td>
-  </tr>
   <tr xml:id="ctrl-alt-Del">
     <td><p><keyseq><key>Ктрл</key><key>Алт</key><key>Обриши</key></keyseq></p></td>
-    <td><p><link xref="shell-exit">Искључите</link>.</p></td>
+    <!-- TODO: test, as design team assigns this to 'power off'. -->
+    <td><p><link xref="shell-exit">Одјавите се</link>.</p></td>
   </tr>
   <tr xml:id="ctrl-alt-l">
-    <td><p><keyseq><key>Супер</key><key>Л</key></keyseq></p></td>
+    <!-- May be renamed to Super+L in the future. -->
+    <td><p><keyseq><key>Ктрл</key><key>Алт</key><key>Л</key></keyseq></p></td>
     <td><p><link xref="shell-exit#lock-screen">Закључајте екран.</link></p></td>
   </tr>
   <tr xml:id="super-m">
     <td><p><keyseq><key>Супер</key><key>М</key></keyseq></p></td>
-    <td><p>Отворите <link xref="shell-notifications#messagetray">фиоку порука</link>. Притисните опет <keyseq><key>Супер</key><key>М</key></keyseq> или <key>Есц</key> да затворите.</p></td>
+    <td><p>Отворите <link xref="shell-notifications#messagingtray">фиоку порука</link>. Притисните опет <keyseq><key>Супер</key><key>М</key></keyseq> или <key>Есц</key> да затворите.</p></td>
   </tr>
 </table>
 

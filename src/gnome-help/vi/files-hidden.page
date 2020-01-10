@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-hidden" xml:lang="vi">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-hidden" xml:lang="vi">
 
   <info>
     <link type="guide" xref="files#faq"/>
+    <desc>Ẩn tập tin để không thấy trong trình quản lý tập tin.</desc>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-29" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="candidate"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -16,15 +15,7 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Make a file invisible, so you cannot see it in the file
-    manager.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Nguyễn Thái Ngọc Duy</mal:name>
@@ -35,62 +26,48 @@
 
 <title>Ẩn tập tin</title>
 
-  <p>The <app>Files</app> file manager gives you the ability to hide and unhide
-  files at your discretion. When a file is hidden, it is not displayed by the
-  file manager, but it is still there in its folder.</p>
+  <p>The GNOME file manager gives you the ability to hide and unhide files at
+  your discretion. When a file is hidden, it isn't displayed by the file
+  manager, but it's still there in its folder.</p>
 
-  <p>To hide a file, <link xref="files-rename">rename it</link> with a
-  <file>.</file> at the beginning of its name. For example, to hide a file
-  named <file>example.txt</file>, you should rename it to
-  <file>.example.txt</file>.</p>
+  <p>Để ẩn tập tin, <link xref="files-rename">đổi tên</link> tập tin với <key>.</key> ở đầu tên. Ví dụ, để ẩn tập tin <file>vidu.txt</file>, bạn đổi tên nó thành <file>.vidu.txt</file>.</p>
 
 <note>
-  <p>You can hide folders in the same way that you can hide files. Hide a
-  folder by placing a <file>.</file> at the beginning of the folder’s name.</p>
+  <p>Bạn có thể ẩn cả thư mục theo cùng cách: đổi tên thư mục và thêm <key>.</key> ở đầu.</p>
 </note>
 
 <section id="show-hidden">
  <title>Hiện mọi tập tin ẩn</title>
-
   <p>If you want to see all hidden files in a folder, go to that folder and
-  either click the
-  <!-- FIXME: Get a tooltip added for "View options" -->
-  view options button in the toolbar and pick <gui>Show Hidden Files</gui>, or press
+  either click the <media type="image" src="figures/go-down.png">down</media>
+  button in the toolbar and pick <gui>Show Hidden Files</gui>, or press
   <keyseq><key>Ctrl</key><key>H</key></keyseq>. You will see all hidden files,
   along with regular files that are not hidden.</p>
 
   <p>To hide these files again, either click the
-  <!-- FIXME: Get a tooltip added for "View options" -->
-  view options button in the toolbar and pick <gui>Show Hidden Files</gui>, or press
+  <media type="image" src="figures/go-down.png">down</media> button in the
+  toolbar and pick <gui>Show Hidden Files</gui>, or press
   <keyseq><key>Ctrl</key><key>H</key></keyseq> again.</p>
 
 </section>
 
 <section id="unhide">
  <title>Thôi ẩn tập tin</title>
-
   <p>To unhide a file, go to the folder containing the hidden file and click
-  the
-  <!-- FIXME: Get a tooltip added for "View options" -->
-  view options button in the toolbar and pick <gui>Show Hidden Files</gui>.
-  Then, find the hidden file and rename it so that it does not have a
-  <file>.</file> in front of its name. For example, to unhide a file called
-  <file>.example.txt</file>, you should rename it to
-  <file>example.txt</file>.</p>
+  the <media type="image" src="figures/go-down.png">down</media> button in the
+  toolbar and pick <gui>Show Hidden Files</gui>. Then, find the hidden file and
+  rename it so that it doesn't have a <key>.</key> in front of its name. For
+  example, to unhide a file called <file>.example.txt</file>, you should rename
+  it to <file>example.txt</file>.</p>
 
   <p>Once you have renamed the file, you can either click the
-  <!-- FIXME: Get a tooltip added for "View options" -->
-  view options button in the toolbar and pick <gui>Show Hidden Files</gui>, or
-  press <keyseq><key>Ctrl</key><key>H</key></keyseq> to hide any other hidden
-  files again.</p>
+  <media type="image" src="figures/go-down.png">down</media> button
+  in the toolbar and pick <gui>Show Hidden Files</gui>, or press
+  <keyseq><key>Ctrl</key><key>H</key></keyseq> to hide any other hidden files
+  again.</p>
 
   <note><p>Mặc định tập tin ẩn sẽ chỉ hiện trong cửa sổ hiện tại cho đến khi đóng cửa sổ. Để luôn hiện tập tin ẩn, xem <link xref="nautilus-views"/>.</p></note>
 
-  <note><p>Most hidden files will have a <file>.</file> at the
-  beginning of their name, but others might have a <file>~</file> at the end of
-  their name instead. These files are backup files. See
-  <link xref="files-tilde"/> for more information.</p></note>
-
+  <note><p>Hầu hết tập tin ẩn bắt đầu bằng <key>.</key> trong tên tập tin, số khác có thể có <key>~</key> ở cuối. Đây là những tập tin sao lưu. Xem <link xref="files-tilde"/> để biết thêm.</p></note>
 </section>
-
 </page>

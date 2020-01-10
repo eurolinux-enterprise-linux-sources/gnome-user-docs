@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-adhoc" xml:lang="sv">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="net-adhoc" xml:lang="sv">
   <info>
     <link type="guide" xref="net-wireless"/>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
-    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -16,12 +13,9 @@
       <name>Shaun McCance</name>
       <email>shaunm@gnome.org</email>
     </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
 
-    <desc>Använd ett ad-hoc-nätverk för att låta andra enheter ansluta till din dator och dess nätverksanslutningar.</desc>
+    <desc>Use an ad-hoc network to allow other devices to connect to your
+    computer and its network connections.</desc>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
@@ -30,37 +24,37 @@
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Sebastian Rasmussen</mal:name>
-      <mal:email>sebras@gmail.com</mal:email>
-      <mal:years>2014, 2015, 2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Anders Jonsson</mal:name>
-      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
-      <mal:years>2016, 2017</mal:years>
-    </mal:credit>
   </info>
 
-<title>Skapa en trådlös surfzon</title>
+<title>Create a wireless hotspot</title>
 
-  <p>Du kan använda din dator som en trådlös surfzon. Detta låter andra enheter ansluta till dig utan ett separat nätverk, och låter dig dela en internetanslutning du har skapat med ett annat gränssnitt, exempelvis ett trådbundet nätverk eller över ett mobilnätverk.</p>
+<p>You can use your computer as a wireless hotspot. This allows other devices to
+connect to you without a separate network, and allows you to share an internet
+connection you've made with another interface, such as to a wired network or
+over the cellular network.</p>
+
+<comment>
+<cite date="2012-02-19">shaunm</cite>
+<p>Things I'm not sure about: Is this actually ad-hoc? It seems to use the
+same icon. What happens if you have multiple wireless adapters? Ought to be
+able to share wireless to wireless, I think, but I don't know what the UI
+looks like. Also, does any of this work? I couldn't successfully test.</p>
+<p>Also, looks like there's no page to set the device name. Make one, then
+link below where it says the name of the network is your device name.</p>
+</comment>
 
 <steps>
-  <item>
-    <p>Öppna <gui xref="shell-introduction#yourname">systemmenyn</gui> på högersidan av systemraden.</p>
-  </item>
-  <item>
-    <p>Välj <gui><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-excellent-symbolic.svg" width="16" height="16"/> Trådlöst nätverk inte anslutet</gui> eller namnet på det trådlösa nätverket till vilket du redan är ansluten. Den trådlösa nätverks-delen av menyn kommer att expandera.</p>
-  </item>
-  <item>
-    <p>Klicka på <gui>Inställningar för trådlösa nätverk</gui>.</p></item>
-  <item><p>Klicka på knappen <gui>Använd som surfzon…</gui>.</p></item>
-  <item><p>Om du redan är ansluten till ett trådlöst nätverk, kommer du att bli tillfrågad om du vill koppla från det nätverket. En enda trådlös adapter kan ansluta till eller endast skapa ett nätverk åt gången. Klicka på <gui>Slå på</gui> för att bekräfta.</p></item>
+  <item><p>Click the network icon on the top bar and select <gui>Network Settings</gui>.</p></item>
+  <item><p>Select <gui>Wireless</gui> on the left.</p></item>
+  <item><p>Click the <gui>Use as Hotspot</gui> button.</p></item>
+  <item><p>If you are already connected to a wireless network, you will be asked
+  if you want to disconnect from that network. A single wireless adapter can only
+  connect to or create one network at a time. Click <gui>Create Hotspot</gui> to
+  confirm.</p></item>
 </steps>
 
-<p>Ett nätverksnamn (SSID) och en säkerhetsnyckel genereras automatiskt. Nätverksnamnet kommer att baseras på namnet på din dator. Andra enheter kommer att behöva denna information för att ansluta till surfzonen du nyss skapat.</p>
+<p>A network name (SSID) and security key are automatically generated.
+The network name will be based on the name of your computer. Other devices
+will need this information to connect to the hotspot you've just created.</p>
 
 </page>

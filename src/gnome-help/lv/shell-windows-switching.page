@@ -1,57 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="shell-windows-switching" xml:lang="lv">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" id="shell-windows-switching" xml:lang="lv">
 
   <info>
     <link type="guide" xref="shell-windows#working-with-windows"/>
     <link type="guide" xref="shell-overview#apps"/>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-07" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
 
     <credit type="author">
       <name>GNOME dokumentācijas projekts</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
-    <credit type="editor">
-      <name>Shobha Tyagi</name>
-      <email>tyagishobha@gmail.com</email>
-    </credit>
-
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Spiediet <keyseq><key>Super</key><key>Tab</key></keyseq>.</desc>
+    <desc>Press <keyseq><key>Super</key><key>Tab</key></keyseq>.</desc>
   </info>
 
 <title>Pārslēgties starp logiem</title>
 
-  <p><em>Logu pārslēdzējā</em> jūs varat redzēt visas palaistās lietotnes, kurām ir grafiska saskarne. Tas padara pārslēgšanos starp uzdevumiem par viena soļa procesu un dod pilnu ainu ar visām palaistajām lietotnēm.</p>
+<comment>
+  <cite date="2012-02-19">shaunm</cite>
+  <p>More prose, talk about Alt+`. Maybe a screenshot. 3.0.1</p>
+</comment>
+  <p>Iekļaujot visas lietotnes, <gui>logu pārslēdzējs</gui> padara pārslēgšanos starp uzdevumiem par viena soļa procesu un dod pilnu ainu ar visām palaistajām lietotnēm.</p>
 
   <p>No darbvietas:</p>
 
-  <steps>
-    <item>
-      <p>Spiediet <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq>, lai iznestu <gui>logu pārslēdzēju</gui>.</p>
-    </item>
-    <item>
-      <p>Atlaidiet <key xref="keyboard-key-super">Super</key>, lai izvēlētos nākamo (izcelto) logu pārslēdzējā.</p>
-    </item>
-    <item>
-      <p>Vēl viens paņēmiens, turot <key xref="keyboard-key-super"> Super</key>, spiediet <key>Tab</key>, lai ietu cauri atvērto logu sarakstam, vai <keyseq><key>Shift</key><key>Tab</key></keyseq>, lai ietu cauri pretējā virzienā.</p>
-    </item>
-  </steps>
+<list>
+  <item><p>Press <keyseq><key xref="keyboard-key-super">Super</key><key>Tab
+  </key></keyseq> to bring up the <gui>window switcher</gui>.</p></item>
+  <item><p>Release <key xref="keyboard-key-super">Super</key> to select the next
+  (highlighted) window in the switcher.</p></item>
+  <item><p>Otherwise, still holding down the <key xref="keyboard-key-super">
+  Super</key> key, press <key>Tab</key> to cycle through the list of open
+  windows, or <keyseq><key>Shift</key><key>Tab</key></keyseq> to cycle
+  backwards.</p></item>
+</list>
 
-  <p if:test="platform:gnome-classic">Jūs varat arī izmantot logu sarakstu apakšējā joslā, lai piekļūtu atvērtajiem logiem un starp tiem pārslēgties.</p>
+<p if:test="platform:gnome-classic">You can also use the window list on the
+  bottom bar to access all your open windows and switch between them.</p>
 
-  <note style="tip" if:test="!platform:gnome-classic">
-    <p>Logi pārslēdzējā logi tiek grupēti pēc lietotnēm. Lietotņu priekšskatījumi ar vairākiem logiem parādās apakšā, kad klikšķināt cauri. Turiet <key xref="keyboard-key-super">Super</key> un spiediet <key>`</key> (vai taustiņu virs <key>Tab</key>), lai ietu caur sarakstam.</p>
-  </note>
+<note style="tip" if:test="!platform:gnome-classic">
+  <p>Windows in the window switcher are grouped by application. Previews of
+  applications with multiple windows pop down as you click through. Hold down
+  <key xref="keyboard-key-super">Super</key> and press <key>`</key> (or the key
+  above <key>Tab</key>) to step through the list.</p>
+</note>
 
-  <p>Jūs varat arī pārvietoties starp lietotņu ikonām logu pārslēdzējā ar <key>→ </key> vai <key>←</key> taustiņiem vai izvēlēties vienu, spiežot uz tā ar peli.</p>
+<note if:test="!platform:gnome-classic">
+  <p>Logu pārslēdzējā lietotnes no citām darbvietām tiek atdalītas ar vertikāliem atdalītājiem.</p>
+</note>
 
-  <p>Lietotņu priekšskatījumi ar vienu logu var tikt parādīti, spiežot <key>↓</key> taustiņu.</p>
+<list>
+  <item><p>Jūs varat arī pārvietoties starp lietotņu ikonām logu pārslēdzējā ar <key>→ </key> vai <key>←</key> taustiņiem vai izvēlēties vienu, spiežot uz tā ar peli.</p></item>
+  <item><p>Lietotņu priekšskatījumi ar vienu logu var tikt parādīti, spiežot <key>↓</key> taustiņu.</p></item>
+</list>
 
-  <p><gui>Aktivitāšu</gui> pārskatā spiediet uz <link xref="shell-windows">loga</link>, lai pārslēgtos uz to un pamestu pārskatu. Ja jums ir vairākas, atvērtas <link xref="shell-windows#working-with-workspaces">darbvietas</link>, jūs varat klikšķināt uz jebkuras no tām, lai apskatītu atvērtos logus katrā darbvietā.</p>
+<p>No <gui>Aktivitāšu</gui> pārskata:</p>
+<list>
+  <item><p>Spiediet uz <link xref="shell-windows">loga</link>, lai pārslēgtos uz to un pamestu pārskatu. Ja jums ir vairākas, atvērtas <link xref="shell-windows#working-with-workspaces">darbvietas</link>, jūs varat klikšķināt uz jebkuras no tām, lai apskatītu atvērtos logus katrā darbvietā.</p>
+  </item>
+</list>
 
 </page>

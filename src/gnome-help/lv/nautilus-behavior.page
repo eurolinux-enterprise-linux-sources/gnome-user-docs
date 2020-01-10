@@ -7,7 +7,6 @@
     <desc>Atvērt datnes ar vienu klikšķi, norādīt, ko darīt ar izpildāmām teksta datnēm un iestatīt miskastes uzvedību.</desc>
 
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -25,15 +24,11 @@
       <name>Sindhu S</name>
       <email>sindhus@live.in</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
 <title>Datņu pārvaldnieka uzvedības iestatījumi</title>
-<p>Jūs varat noteikt, vai atvērsiet datni ar vienkāršu vai dubultklikšķi, to, kā rīkoties ar izpildāmiem teksta datnēm, un ar miskasti saistīto uzvedību. Spiediet <gui>Datnes</gui> augšējā joslā, izvēlieties <gui>Iestatījumi</gui> un izvēlieties cilni <gui>Uzvedība</gui>.</p>
+<p>Jūs varat noteikt, vai atvērsiet datni ar vienkāršu vai dubultklikšķi, to, kā rīkoties ar izpildāmiem teksta datnēm, un ar miskasti saistīto uzvedību. Spiediet <gui>Datnes</gui> augšējā logā, izvēlieties <gui>Iestatījumi</gui> un izvēlieties cilni <gui>Uzvedība</gui>.</p>
 
 <section id="behavior">
 <title>Uzvedība</title>
@@ -48,44 +43,55 @@
 </section>
 <section id="executable">
 <title>Izpildāmās teksta datnes</title>
- <p>Izpildāma teksta datne ir datne, kas satur palaižamu (izpildāmu) programmu. Arī <link xref="nautilus-file-properties-permissions">datnes atļaujām</link> jābūt iestatītām, lai atļautu palaist datni kā programmu. Izplatītākās izpildāmās teksta datnes ir <sys>čaulas</sys>, <sys>Python</sys> un <sys>Perl</sys> skripti. To paplašinājumi ir attiecīgi <file>.sh</file>, <file>.py</file> un <file>.pl</file>.</p>
+ <p>An executable text file is a file that contains a program that you can run
+ (execute). The <link xref="nautilus-file-properties-permissions">file
+ permissions</link> must also allow for the file to run as a program. The most
+ common are <sys>Shell</sys>, <sys>Python</sys> and <sys>Perl</sys> scripts.
+ These have extensions <file>.sh</file>, <file>.py</file> and <file>.pl</file>,
+ respectively.</p>
  
- <p>Atverot izpildāmu datni, jūs varat izvēlēties no:</p>
+ <p>When you open an executable text file, you can select from:</p>
  
  <list>
   <item>
-    <p><gui>Palaist izpildāmās teksta datnes, kad tās tiek atvērtas</gui></p>
+    <p><gui>Run executable text files when they are opened</gui></p>
   </item>
   <item>
-    <p><gui>Skatīt izpildāmās teksta datnes, kad tās tiek atvērtas</gui></p>
+    <p><gui>View executable text files when they are opened</gui></p>
   </item>
   <item>
-    <p><gui>Vaicāt katru reizi</gui></p>
+    <p><gui>Ask each time</gui></p>
   </item>
  </list>
 
- <p>Ja izvēlēsities <gui>Vaicāt katru reizi</gui>, parādīsies dialoglodziņš, kas vaicās, vai vēlaties izpildīt vai skatīt izvēlēto teksta datni.</p>
+ <p>If <gui>Ask each time</gui> is selected, a dialog will pop up asking if you
+ wish to run or view the selected text file.</p>
 
- <p>Izpildāmas teksta datnes mēdz saukt arī par <em>skriptiem</em>. Visi skripti mapē <file>~/.local/share/nautilus/scripts</file> parādīsies konteksta izvēlnē, zem apakšizvēlnes <gui style="menuitem">Skripti</gui>. Kas skripts tiek izpildīts, no lokālās mapes, visas datnes tiks ielīmētas skriptos kā parametri. Lai izpildītu skriptu uz datnes:</p>
+ <p>Executable text files are also called scripts. All scripts in
+ <file>~/.local/share/nautilus/scripts</file> folder will appear in the context
+ menu for a file under the <gui style="menuitem">Scripts</gui> submenu. When a
+ script is executed from a local folder, all selected files will be pasted to
+ the script as parameters. To execute a script on a file:</p>
 
 <steps>
   <item>
-    <p>Dodaties uz vēlamo mapi.</p>
+    <p>Navigate to the desired folder.</p>
   </item>
   <item>
-    <p>Izvēlieties vēlamo datni.</p>
+    <p>Select the desired file.</p>
   </item>
   <item>
-    <p>Spiediet labo klikšķi uz datnes, lai atvērtu konteksta izvēlni un izvēlnē <gui style="menuitem">Skripti</gui> izvēlieties skriptu, ko izpildīt.</p>
+    <p>Right click on the file to open the context menu and select the desired
+    script to execute from the <gui style="menuitem">Scripts</gui> menu.</p>
   </item>
 </steps>
 
  <note style="important">
-  <p>Skriptam netiks padoti nekādi parametri, ja tas tiks izpildīts no attālinātas mapes, piemēram, mapes, kas rāda tīmekļa vai <sys>ftp</sys> saturu.</p>
+  <p>A script will not be passed any parameters when executed from a remote
+  folder such as a folder showing web or <sys>ftp</sys> content.</p>
  </note>
 
 </section>
-
 <section id="trash">
 <info>
 <link type="seealso" xref="files-delete"/>
@@ -95,8 +101,15 @@
 
 <terms>
  <item>
-  <title><gui>Jautāt, pirms iztukšot miskasti</gui></title>
+  <title><gui>Jautāt, pirms iztukšot miskasti vai dzēst datnes</gui></title>
   <p>Šī iespēja pēc noklusējuma ir ieslēgta. Iztukšojot miskasti, sistēmas ziņojums prasīs apstiprinājumu, ka tiešām vēlaties iztukšot miskasti vai dzēst datnes.</p>
+ </item>
+ <item>
+  <title><gui>Iekļaut dzēšanas komandu, kas apiet miskasti</gui></title>
+  <p>Šīs iespējas atzīmēšana pievienos ierakstu <gui>Dzēst</gui> vienumam, kas parādās, veicot labo klikšķi uz datnes vai mapes lietotnē <app>Datnes</app>.</p>
+<note style="warning">
+<p>Vienuma dzēšana ar izvēlnes komandu <gui>Dzēst</gui> apiet miskasti, nekavējoties likvidējot dzēšamo vienumu. Šādi izdzēstu vienumu vairs nevar atgūt.</p>
+</note>
  </item>
 </terms>
 </section>

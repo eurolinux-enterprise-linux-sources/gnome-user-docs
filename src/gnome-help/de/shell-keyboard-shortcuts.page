@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="tip" version="1.0 ui/1.0" id="shell-keyboard-shortcuts" xml:lang="de">
-
+<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="tip" id="shell-keyboard-shortcuts" xml:lang="de">
   <info>
     <link type="guide" xref="tips"/>
     <link type="guide" xref="keyboard"/>
-    <link type="guide" xref="shell-overview#apps"/>
+    <link type="guide" xref="shell-overview"/>
     <link type="seealso" xref="keyboard-key-super"/>
+    <desc>Bewegen in der Arbeitsumgebung mit der Tastatur.</desc>
 
     <revision pkgversion="3.8.0" version="0.4" date="2013-04-23" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.20" date="2016-08-13" status="candidate"/>
 
     <credit type="author copyright">
       <name>Shaun McCance</name>
@@ -24,15 +22,18 @@
       <name>Ekaterina Gerasimova</name>
       <email>kittykat3756@gmail.com</email>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Bewegen in der Arbeitsumgebung mit der Tastatur.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hendrik Knackstedt</mal:name>
-      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
-      <mal:years>2011.</mal:years>
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -42,21 +43,9 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Christian Kirbach</mal:name>
-      <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Mario Blättermann</mal:name>
-      <mal:email>mario.blaettermann@gmail.com</mal:email>
-      <mal:years>2011-2013, 2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Benjamin Steinwender</mal:name>
-      <mal:email>b@stbe.at</mal:email>
-      <mal:years>2014.</mal:years>
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.to</mal:years>
     </mal:credit>
   </info>
 
@@ -85,18 +74,12 @@
       <p>Dieses Tastenkürzel bezieht sich auf das <key>`</key>-Zeichen auf US-Tastaturen, wo die <key>`</key>-Taste sich oberhalb der <key>Tabulatortaste</key> befindet. Auf allen anderen Tastaturen besteht dieses Tastenkürzel aus <key>Alt</key> und der Taste oberhalb von <key>Tabulator</key>, was auch immer es ist.</p>
     </td>
   </tr>
-  <tr xml:id="alt-escape">
-    <td><p><keyseq><key>Alt</key><key>Esc</key></keyseq></p></td>
-    <td>
-      <p>Switch between windows in the current workspace. Hold down
-      <key>Shift</key> for reverse order.</p>
-    </td>
-  </tr>
   <tr xml:id="ctrl-alt-tab">
     <!-- To be updated to <key>Tab</key> in the future. -->
     <td><p><keyseq><key>Strg</key><key>Alt</key><key>Tab</key></keyseq></p></td>
     <td>
-      <p>Setzen Sie den Tastaturfokus auf das obere Panel. Wechseln Sie in der <gui>Aktivitäten</gui>-Übersicht den Fokus zwischen oberem Panel, Dash, Fensterübersicht, Anwendungsliste und Suchfeld und Benachrichtigungsfeld. Verwenden Sie die Pfeiltasten zum Navigieren.</p>
+      <p>Setzen Sie den Tastaturfokus auf das obere Panel. Wechseln Sie in der <gui>Aktivitäten</gui>-Übersicht den Fokus zwischen oberem Panel, Dash, Fensterübersicht, Anwendungsliste und Suchfeld. Verwenden Sie die Pfeiltasten zum Navigieren.</p>
+      <p>Es ist gegenwärtig nicht möglich, die Pfeiltasten zur Navigation in der Fensterübersicht zu verwenden. Um zwischen den Fenstern zu wechseln, beenden Sie die Übersicht und verwenden Sie die Tastenkombinationen <keyseq><key>Super</key><key>Tab</key></keyseq> und <keyseq><key>Super</key><key>`</key></keyseq>.</p>
     </td>
   </tr>
   <tr xml:id="super-a">
@@ -104,32 +87,26 @@
     <td><p>Die Liste der Anwendungen anzeigen.</p></td>
   </tr>
   <tr xml:id="super-updown">
-    <td><p><keyseq><key>Super</key><key>Bild ↑</key></keyseq> oder <keyseq><key>Strg</key><key>Alt</key><key>Bild ↑</key></keyseq>, und <keyseq><key>Super</key><key>Bild ↓</key></keyseq> oder <keyseq><key>Strg</key><key>Alt</key><key>Bild ↓</key></keyseq></p></td>
+    <td><p>Durch Drücken von <keyseq><key>Super</key><key>Bild auf</key></keyseq> und <keyseq><key>Super</key><key>Bild ab</key></keyseq>.</p></td>
     <td><p><link xref="shell-workspaces-switch">Zwischen Arbeitsflächen wechseln</link>.</p></td>
   </tr>
   <tr xml:id="super-shift-updown">
     <td><p><keyseq><key>Super</key><key>Umschalttaste</key><key>Bild auf</key></keyseq> und <keyseq><key>Super</key><key>Umschalttaste</key><key>Bild ab</key></keyseq></p></td>
-    <td><p><link xref="shell-workspaces-movewindow">Das aktuelle Fenster auf eine andere Arbeitsfläche verschieben</link>.</p></td>
-  </tr>
-  <tr xml:id="super-shift-left">
-    <td><p><keyseq><key>Super</key><key>Umschalttaste</key><key>←</key></keyseq></p></td>
-    <td><p>Das aktuelle Fenster einen Bildschirm nach links verschieben.</p></td>
-  </tr>
-  <tr xml:id="super-shift-right">
-    <td><p><keyseq><key>Super</key><key>Umschalttaste</key><key>→</key></keyseq></p></td>
-    <td><p>Das aktuelle Fenster einen Bildschirm nach rechts verschieben.</p></td>
+    <td><p><link xref="shell-workspaces-movewindow">Das aktuelle Fenster auf eine andere Arbeitsfläche verschieben.</link></p></td>
   </tr>
   <tr xml:id="ctrl-alt-Del">
     <td><p><keyseq><key>Strg</key><key>Alt</key><key>Löschtaste</key></keyseq></p></td>
-    <td><p><link xref="shell-exit">Ausschalten</link>.</p></td>
+    <!-- TODO: test, as design team assigns this to 'power off'. -->
+    <td><p><link xref="shell-exit">Melden Sie sich ab</link>.</p></td>
   </tr>
   <tr xml:id="ctrl-alt-l">
-    <td><p><keyseq><key>Super</key><key>L</key></keyseq></p></td>
+    <!-- May be renamed to Super+L in the future. -->
+    <td><p><keyseq><key>Strg</key><key>Alt</key><key>L</key></keyseq></p></td>
     <td><p><link xref="shell-exit#lock-screen">Den Bildschirm sperren.</link></p></td>
   </tr>
   <tr xml:id="super-m">
     <td><p><keyseq><key>Super</key><key>M</key></keyseq></p></td>
-    <td><p>Öffnen Sie das <link xref="shell-notifications#messagetray">Benachrichtigungsfeld</link>. Drücken Sie <keyseq><key>Super</key><key>M</key> </keyseq> erneut oder <key>Esc</key> zum Schließen.</p></td>
+    <td><p>Öffnen Sie das <link xref="shell-notifications#messagingtray">Benachrichtigungsfeld</link>. Drücken Sie <keyseq><key>Super</key><key>M</key> </keyseq> erneut oder <key>Esc</key> zum Schließen.</p></td>
   </tr>
 </table>
 

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="color-whatisspace" xml:lang="ca">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="color-whatisspace" xml:lang="ca">
 
   <info>
     <link type="guide" xref="color#profiles"/>
     <link type="seealso" xref="color-whatisprofile"/>
-    <desc>Un espai de color és un rang definit de colors.</desc>
+    <desc>A color space is a defined range of colors.</desc>
 
     <credit type="author">
       <name>Richard Hughes</name>
@@ -19,28 +19,84 @@
     </mal:credit>
   </info>
 
-  <title>Què és un espai de color?</title>
+  <title>What is a color space?</title>
 
-  <p>Un espai de color és un rang definit de colors. Els espais de colors coneguts inclouen sRGB, AdobeRGB i ProPhotoRGB.</p>
+  <p>
+    A color space is a defined range of colors.
+    Well known color spaces include sRGB, AdobeRGB and ProPhotoRGB.
+  </p>
 
-  <p>El sistema visual humà no és un sensor RGB simple, però podem aproximar-nos a com respon l'ull amb un diagrama de cromaticitat CIE 1931 que mostra la resposta visual humana com a forma de ferradura. Podeu veure que a la visió humana hi ha moltes més tons de verds detectats que blaus o vermells. Amb un espai de color tricromàtic com el RGB representem els colors de l'ordinador amb tres valors, que es restringeixen fins a la codificació d'un <em>triangle</em> de colors.</p>
+  <p>
+    The human visual system is not a simple RGB sensor, but we can
+    approximate how the eye responds with a CIE 1931 chromaticity diagram
+    that shows the human visual response as a horse-shoe shape.
+    You can see that in human vision there are many more shades of green
+    detected than blue or red.
+    With a trichromatic color space like RGB we represent the colors
+    on the computer using three values, which restricts up to encoding
+    a <em>triangle</em> of colors.
+  </p>
 
   <note>
-    <p>L'ús de models com el diagrama de cromaticitat CIE 1931 és una gran simplificació del sistema visual humà, i les expressions reals s'expressen com a forma 3D, en comptes de projeccions 2D. Una projecció 2D d'una forma 3D de vegades pot ser enganyosa, per tant, si voleu veure la forma 3D, utilitzeu l'aplicació <code>gcm-viewer</code>.</p>
+    <p>
+      Using models such as a CIE 1931 chromaticity diagram is a huge
+      simplification of the human visual system, and real gamuts are
+      expressed as 3D hulls, rather than 2D projections.
+      A 2D projection of a 3D shape can sometimes be misleading, so if
+      you want to see the 3D hull, use the <code>gcm-viewer</code>
+      application.
+    </p>
   </note>
 
   <figure>
-    <desc>sRGB, AdobeRGB i ProPhotoRGB representats per triangles blancs</desc>
-    <media its:translate="no" type="image" mime="image/png" src="figures/color-space.png"/>
+    <desc>sRGB, AdobeRGB and ProPhotoRGB represented by white triangles</desc>
+    <media type="image" mime="image/png" src="figures/color-space.png"/>
   </figure>
 
-  <p>Primer, mirant el sRGB, que és l'espai més petit i pot codificar-se amb el mínim de colors. Es tracta una aproximació d'una pantalla CRT de 10 anys d'antiguitat, de manera que la majoria de monitors moderns poden mostrar fàcilment més colors. El sRGB és un estàndard de <em>mínim comú denominador</em> i s'utilitza en una gran quantitat d'aplicacions (inclosa la d'Internet).</p>
-  <p>L' adobeRGB sovint s'utilitza com a <em>espai 'edició</em>. Es poden codificar més colors que amb el sRGB, el que significa que podeu canviar els colors en una fotografia sense preocupar-vos massa si es retallen els colors més vius o els negres s'aixafin.</p>
-  <p>El ProPhoto és el major espai disponible i s'utilitza amb freqüència per a l'arxiu de documents. Pot codificar gairebé tota la gamma de colors detectats per l'ull humà, i fins i tot codificar colors que l'ull no pot detectar!</p>
+  <p>
+    First, looking at sRGB, which is the smallest space and can encode
+    the least number of colors.
+    It is an approximation of a 10 year old CRT display, and so most
+    modern monitors can easily display more colors than this.
+    sRGB is a <em>least-common-denominator</em> standard and is used
+    in a large number of applications (including the Internet).
+  </p>
+  <p>
+    AdobeRGB is frequently used as an <em>editing space</em>.
+    It can encode more colors than sRGB, which means you can change
+    colors in a photograph without worrying too much that the most vivid
+    colors are being clipped or the blacks crushed.
+  </p>
+  <p>
+    ProPhoto is the largest space available and is frequently used for
+    document archival.
+    It can encode nearly the whole range of colors detected by the human
+    eye, and even encode colors that the eye cannot detect!
+  </p>
 
-  <p>Ara bé, si ProPhoto és clarament millor, per què no el fem servir per a tot? La resposta és relacionar amb la <em>quantificació</em>. Si només teniu 8 bits (256 nivells) per codificar cada canal, llavors un rang més gran tindrà diferències més grans entre cada valor.</p>
-  <p>Diferències més grans suposen un error més gran entre el color capturat i el color emmagatzemat, i per a alguns colors això és un gran problema. Resulta que els colors clau, com els colors de la pell són molt importants, i fins i tot petits errors poden fer que els espectadors no entrenats notin que alguna cosa de la fotografia sembli incorrecte.</p>
-  <p>Per descomptat, utilitzar una imatge de 16 bits deixarà molts més salts i un error de quantificació molt més petit, però això duplica la mida de cada fitxer d'imatge. La majoria dels continguts actuals són 8 bpp, és a dir, 8 bits per píxel.</p>
-  <p>La gestió del color és un procés per convertir un espai de color en un altre, on un espai de color pot ser un espai ben definit com el sRGB, o un espai personalitzat com el monitor o el perfil de la impressora.</p>
+  <p>
+    Now, if ProPhoto is clearly better, why don't we use it for everything?
+    The answer is to do with <em>quantization</em>.
+    If you only have 8 bits (256 levels) to encode each channel, then a
+    larger range is going to have bigger steps between each value.
+  </p>
+  <p>
+    Bigger steps mean a larger error between the captured color and the
+    stored color, and for some colors this is a big problem.
+    It turns out that key colors, like skin colors are very important,
+    and even small errors will make untrained viewers notice that something
+    in a photograph looks wrong.
+  </p>
+  <p>
+    Of course, using a 16 bit image is going to leave many more steps and
+    a much smaller quantization error, but this doubles the size of each
+    image file.
+    Most content in existence today is 8bpp, i.e. 8 bits-per-pixel.
+  </p>
+  <p>
+    Color management is a process for converting from one color space to
+    another, where a color space can be a well known defined space like
+    sRGB, or a custom space such as your monitor or printer profile.
+  </p>
 
 </page>

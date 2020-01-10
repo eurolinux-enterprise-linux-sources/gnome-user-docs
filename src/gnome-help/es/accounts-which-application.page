@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="accounts-which-application" xml:lang="es">
-
   <info>
-    <link type="guide" xref="accounts"/>
-    <link type="seealso" xref="accounts-disable-service"/>
-
-    <revision pkgversion="3.8.2" date="2013-05-22" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="incomplete"/>
+    <revision pkgversion="3.8.2" version="0.2" date="2013-05-22" status="review"/>
 
     <credit type="author copyright">
       <name>Baptiste Mille-Mathias</name>
       <email>baptistem@gnome.org</email>
-      <years>2012, 2013</years>
+      <years>2012-2013</years>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
@@ -23,15 +17,15 @@
       <email>ak-47@gmx.net</email>
     </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <link type="guide" xref="accounts"/>
+    <link type="seealso" xref="accounts-disable-service"/>
 
     <desc>Aplicaciones que pueden usar las cuentas creadas en <app>Cuentas en línea</app> y los servicios que pueden usar.</desc>
-
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2011 - 2018</mal:years>
+      <mal:years>2011 - 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -53,62 +47,44 @@
     </mal:credit>
   </info>
 
-  <title>Servicios y aplicaciones en línea</title>
+  <title>¿Qué aplicaciones hacen uso de las cuentas en línea?</title>
 
-  <p>Una vez que haya añadido una cuenta en línea, cualquier aplicación puede usar esa cuenta para cualquiera de los servicios disponibles que no se hayan <link xref="accounts-disable-service">desactivado</link>. Diferentes proveedores ofrecen distintos servicios. Esta págia lista los diferentes servicios y algunas de aplicaciones conocidas que los usan.</p>
+  <p><app>Cuentas en línea</app> lo pueden usar aplicaciones externas para configurarse automáticamente.</p>
 
-  <terms>
-    <item>
-      <title>Calendario</title>
-      <p>El servicio de calendario le permite ver, añadir y editar eventos en un calendario en línea. Esto lo usan aplicaciones tales como <app>Calendar</app>, <app>Evolution</app>, y <app>California</app>.</p>
-    </item>
+  <section id="accounts-google-services">
+   <title>Con una cuenta de Google</title>
 
-    <item>
-      <title>Chat</title>
-      <p>El servicio de chat le permite chatear con sus contactos en populares plataformas de mensajería instantánea. Esto lo usa la aplicación <app>Empathy</app>.</p>
-    </item>
+   <list>
+    <item><p><app>Evolution</app>, la aplicación de correo-e. Su cuenta de correo se añadirá automáticamente a <app>Evolution</app>, por lo que recibirá su correo, accederá a sus contactos y se mostrará su calendario de Google como un elemento de la agenda.</p></item>
+    <item><p><app>Empathy</app>, la aplicación de mensajería instantánea. Su cuenta en línea se añadirá y podrá comunicarse con sus amigos.</p></item>
+    <item><p><app>Contactos</app>, que le permitirá ver y editar sus contactos.</p></item>
+    <item><p><app>Documentos</app> puede acceder a sus documentos en línea y mostrarlos.</p></item>
+   </list>
+  </section>
 
-    <item>
-      <title>Contactos</title>
-      <p>El servicio de contactos le permite ver los detalles publicados de sus contactos en varios dispositivos. Esto lo usan aplicaciones tales como <app>Contacts</app> y <app>Evolution</app>.</p>
-    </item>
+  <section id="accounts-windows-services">
+   <title>Con cuentas de Windows Live, Facebook o Twitter</title>
 
-    <item>
-      <title>Documentos</title>
-      <p>El servicio de documentos le permite ver sus documentos en línea, como los que están en Google docs. Puede ver los documentos usando la aplicación <app>Documentos</app>.</p>
-    </item>
+   <p><app>Empathy</app> puede usar la cuenta para conectarle en línea y chatear con sus contactos, amigos y seguidores.</p>
+  </section>
 
-    <item>
-      <title>Archivos</title>
-      <p>El servicio Archivos añade una ubicación de archivo remota, como si hubiese añadido una usando la funcionalidad de <link xref="nautilus-connect">Conectar al servidor</link> en el gestor de archivos. Puede acceder a los archivos remotos usando el gestor de archivos así como los diálogos de abrir y guardar archivos de cualquier aplicación.</p>
-    </item>
+  <section id="account-windows-skydrive">
+   <title>Con una cuenta de SkyDrive</title>
 
-    <item>
-      <title>Correo-e</title>
-      <p>El servicio de correo-e le permite enviar y recibir correos electrónicos mediante un proveedor de correo-e como Google. Esto lo usa <app>Evolution</app>.</p>
-    </item>
+   <p><app>Documentos</app> puede acceder a sus documentos en línea en Microsoft SkyDrive y mostrarlos.</p>
+  </section>
 
-<!-- TODO: Not sure what this does. Doesn't seem to do anything in Maps app.
-    <item>
-      <title>Maps</title>
-    </item>
--->
+  <section id="account-exchange">
+   <title>Con una cuenta de Exchange</title>
 
-    <item>
-      <title>Fotos</title>
-      <p>El servicio de fotos le permite ver sus fotos en línea, como las que tiene publicadas en Facebook. Puede ver sus fotos usando la aplicación <app>Fotos</app>.</p>
-    </item>
+   <p>Cuando haya creado una cuenta de Exchange, <app>Evolution</app> empezará a recibir correos desde esta cuenta.</p>
+  </section>
 
-    <item>
-      <title>Impresoras</title>
-      <p>El servicio Impresoras le permite enviar un archivo PDF a un proveedor desde el diálogo de impresión de cualquier aplicación. Este proveedor puede ofrecer servicios de impresión o simplemente servir como almacenamiento del PDF, que puede descargar e imprimir más tarde.</p>
-    </item>
+  <section id="accounts-ownCloud">
+   <title>Con una cuenta de ownCloud</title>
 
-    <item>
-      <title>Leer más tarde</title>
-      <p>El servicio de leer más tarde le permite guardar una página web en dispositivos externos para poder leerla más tarde en otro dispositivo. Actualmente, ninguna aplicación usa este servicio.</p>
-    </item>
+   <p>Cuando haya creado una cuenta de ownCloud, <app>Evolution</app> podrá acceder y editar sus contactos y sus citas del calendario.</p>
 
-  </terms>
-
+   <p><app>Archivos</app> y otras aplicaciones podrán listar y acceder a sus archivos guardados en la instalación de ownCloud.</p>
+  </section>
 </page>

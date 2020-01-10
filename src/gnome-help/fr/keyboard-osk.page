@@ -1,33 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="keyboard-osk" xml:lang="fr">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="keyboard-osk" xml:lang="fr">
   <info>
     <link type="guide" xref="keyboard" group="a11y"/>
     <link type="guide" xref="a11y#mobility" group="keyboard"/>
 
     <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="outdated"/>
-    <revision pkgversion="3.10" date="2013-10-28" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
 
     <credit type="author">
       <name>Jeremy Bicha</name>
       <email>jbicha@ubuntu.com</email>
     </credit>
     <credit type="author">
-      <name>Julita Inca</name>
-      <email>yrazes@gmail.com</email>
+       <name>Julita Inca</name>
+       <email>yrazes@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
-
-    <desc>Utiliser un clavier visuel pour saisir du texte en cliquant sur des boutons avec la souris ou en touchant l'écran.</desc>
-
+    <desc>Utiliser un clavier visuel pour saisir du texte en cliquant sur des boutons avec la souris.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -45,13 +36,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Julien Hardelin</mal:name>
       <mal:email>jhardlin@orange.fr</mal:email>
-      <mal:years>2011, 2013</mal:years>
+      <mal:years>2011</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -77,41 +68,26 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Alexandre Franke</mal:name>
-      <mal:email>alexandre.franke@gmail.com</mal:email>
-      <mal:years>2015</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Utilisation d'un clavier sur écran</title>
+  <title>Utilisation d'un clavier visuel</title>
 
   <p>Si vous n'avez pas de clavier connecté à votre ordinateur, ou si vous ne souhaitez pas l'utiliser, vous pouvez activer la fonction <em>clavier visuel</em> pour saisir du texte.</p>
 
-  <note>
-    <p>Le clavier visuel s'active automatiquement dès que vous touchez l'écran.</p>
-  </note>
-
   <steps>
-    <item>
-      <p>Ouvrez la vue d'ensemble des <link xref="shell-introduction#activities">Activités</link> et commencez à saisir <gui>Accès universel</gui>.</p>
-    </item>
-    <item>
-      <p>Cliquez sur l'icône <gui>Accès universel</gui> pour afficher le panneau.</p>
-    </item>
-    <item>
-      <p>Ouvrez <gui>Clavier visuel</gui> dans la section <gui>Saisie</gui>.</p>
-    </item>
+   <item><p>Click your name on the top bar and select <gui>Settings</gui>.
+   </p></item>
+   <item><p>Ouvrez <gui>Accès universel</gui> et choisissez l'onglet <gui>Saisie</gui>.</p></item>
+   <item><p>Switch on <gui>On Screen Keyboard</gui> to show the screen keyboard.
+   </p></item>
   </steps>
 
-  <p>À la prochaine occasion de saisie, le clavier visuel s'ouvrira en bas de l'écran.</p>
+  <p>Cliquez sur le bouton <gui>123</gui> pour saisir des nombres et des symboles. Des symboles supplémentaires sont disponibles en cliquant alors sur le bouton <gui>{#*</gui>. Pour revenir à la saisie alphabétique, cliquez sur le bouton <gui>Abc</gui>.</p>
 
-  <p>Press the <gui style="button">123</gui> button to enter numbers and
-  symbols. More symbols are available if you then press the
-  <gui style="button">{#*</gui> button. To return to the alphabet keyboard,
-  press the <gui style="button">Abc</gui> button.</p>
-
-  <p>Si le clavier visuel vous gène, cliquez sur le bouton <gui style="button"><media its:translate="no" type="image" src="figures/input-keyboard-symbolic.png" width="16" height="16"><span its:translate="yes">clavier</span></media></gui> pour le masquer temporairement. Il s'affichera à nouveau automatiquement chaque fois que vous appuierez sur quelque chose où il peut être utilisé. Pour l'afficher à nouveau, ouvrez le <link xref="shell-notifications">tiroir de messagerie</link> en passant votre souris en bas à droite de l'écran et cliquez sur l'icône du clavier.</p>
+  <p>If the screen keyboard gets in your way, click the button that looks like a
+  keyboard (next to the <gui>tray</gui> button) to hide the keyboard. To make
+  the keyboard show again, open the
+  <link xref="shell-notifications">messaging tray</link> (by moving your mouse
+  to the bottom right of the screen), and click the keyboard tray item.</p>
 
 </page>

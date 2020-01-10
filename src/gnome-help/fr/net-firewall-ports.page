@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="reference" id="net-firewall-ports" xml:lang="fr">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="reference" id="net-firewall-ports" xml:lang="fr">
 
   <info>
     <link type="guide" xref="net-security"/>
     <link type="seealso" xref="net-firewall-on-off"/>
     <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
+    <desc>Vous devez spécifier le port réseau correct du pare-feu pour autoriser/interdire l'accès au réseau d'un programme.</desc>
     <credit type="author">
       <name>Paul W. Frields</name>
       <email>stickster@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Vous devez spécifier le port réseau correct du pare-feu pour autoriser/interdire l'accès au réseau d'un programme.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Luc Pionchon</mal:name>
@@ -31,13 +29,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Julien Hardelin</mal:name>
       <mal:email>jhardlin@orange.fr</mal:email>
-      <mal:years>2011, 2013</mal:years>
+      <mal:years>2011</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -63,21 +61,10 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Alexandre Franke</mal:name>
-      <mal:email>alexandre.franke@gmail.com</mal:email>
-      <mal:years>2015</mal:years>
-    </mal:credit>
   </info>
 
   <title>Les ports réseau les plus courants</title>
-
-  <p>This is a list of network ports commonly used by applications that provide
-  network services, like file sharing or remote desktop viewing. You can change
-  your system’s firewall to <link xref="net-firewall-on-off">block or allow
-  access</link> to these applications. There are thousands of ports in use, so
-  this table isn’t complete.</p>
+  <p>Voici une liste des ports les plus utilisés par des applications fournissant des services réseau, comme le partage de fichiers ou l'accès à distance au bureau. Vous pouvez modifier les paramètres de votre pare-feu pour <link xref="net-firewall-on-off">bloquer ou autoriser l'accès</link> à ces applications. Il y a des milliers de ports en service, cette liste n'est donc pas exhaustive.</p>
 
   <table shade="rows" frame="top">
     <thead>
@@ -135,8 +122,7 @@
 	  <p>Présence</p>
 	</td>
 	<td>
-	  <p>Allows you to advertise your instant messaging status to other
-          people on the network, such as “online” or “busy”.</p>
+	  <p>Vous permet de signaler votre statut de messagerie instantanée aux autres personnes du réseau, comme « en ligne » ou « occupé ».</p>
 	</td>
       </tr>
       <tr>
@@ -163,5 +149,4 @@
       </tr>
     </tbody>
   </table>
-
 </page>

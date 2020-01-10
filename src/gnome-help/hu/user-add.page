@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="user-add" xml:lang="hu">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="user-add" xml:lang="hu">
 
   <info>
     <link type="guide" xref="user-accounts#manage" group="#first"/>
-
-    <revision pkgversion="3.8" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.13.92" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-
+    <link type="seealso" xref="user-addguest"/>
+    <desc>Új felhasználó hozzáadása, hogy mások is használhassák a számítógépet.</desc>
+    <!-- Setting 3.4.0 version to final for release, but we need to do something
+         about the various comments in here, so incomplete for 3.4.1.
+    -->
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-09" status="candidate"/>
     <credit type="author">
       <name>GNOME dokumentációs projekt</name>
       <email>gnome-doc-list@gnome.org</email>
@@ -21,14 +21,8 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Új felhasználó hozzáadása, hogy mások is használhassák a számítógépet.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Griechisch Erika</mal:name>
@@ -39,7 +33,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Kelemen Gábor</mal:name>
       <mal:email>kelemeng at gnome dot hu</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015, 2016, 2017</mal:years>
+      <mal:years>2011, 2012, 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -59,54 +53,59 @@
       <mal:email>lukacs.bence1 at gmail dot com</mal:email>
       <mal:years>2011</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Nagy Zoltán</mal:name>
-      <mal:email>dzodzie at gmail dot com</mal:email>
-      <mal:years>2011</mal:years>
-    </mal:credit>
   </info>
 
   <title>Új felhasználói fiók hozzáadása</title>
 
+<comment>
+  <cite date="2012-02-19">shaunm</cite>
+  <p>We need a note in here about password hints. Share content
+  with user-changepassword</p>
+</comment>
+
+<comment>
+  <cite date="2012-03-24">shaunm</cite>
+  <p>Let's add a "Disable account" page. Click the account, click the dots
+  next to "Password", select "Disable this account" from "Type".</p>
+</comment>
+
+<comment>
+<cite date="2012-03-24">shaunm</cite>
+<p>Much of the password dialog simply does not work:</p>
+<list>
+<item><p><gui>Choose a password at next login</gui> does nothing</p></item>
+<item><p><gui>Log in without a password</gui> does nothing</p></item>
+<item><p><gui>Enable this account</gui> does nothing (and it's not even
+clear to me what it should do):
+<link href="https://bugzilla.gnome.org/show_bug.cgi?id=655914">665914</link></p></item>
+<item><p><gui>Hint</gui> does nothing:
+<link href="https://bugzilla.gnome.org/show_bug.cgi?id=647912">647912</link>,
+<link href="https://bugzilla.gnome.org/show_bug.cgi?id=643445">643445</link></p></item>
+</list>
+</comment>
+
   <p>Több felhasználói fiókot is létrehozhat a számítógépén. Készítsen mindenkinek saját felhasználói fiókot családjában vagy munkahelyén. Minden felhasználónak lesz saját mappája, dokumentumai és beállításai.</p>
 
-  <p>A felhasználói fiókok hozzáadásához <link xref="user-admin-explain">rendszergazdai jogosultság</link> szükséges.</p>
+<steps>
+  <item><p>Kattintson a nevére a felső sávban, és válassza a <gui>Beállítások</gui> menüpontot.</p></item>
+  <item><p>Nyissa meg a <gui>Felhasználók</gui> panelt.</p></item>
 
-  <steps>
-    <item>
-      <p>Nyissa meg a <gui xref="shell-introduction#activities">Tevékenységek</gui> áttekintést, és kezdje el begépelni a <gui>Felhasználók</gui> szót.</p>
-    </item>
-    <item>
-      <p>Kattintson a <gui>Felhasználók</gui> elemre a panel megnyitásához.</p>
-    </item>
-    <item>
-      <p>Nyomja meg a jobb felső sarokban lévő <gui style="button">Feloldás</gui> gombot, és adja meg jelszavát.</p>
-    </item>
-    <item>
-      <p>Új felhasználó létrehozásához a felhasználók bal oldali listája alatt kattintson a <gui style="button">+</gui> gombra.</p>
-    </item>
-    <item>
-      <p>Ha azt szeretné, hogy az új felhasználónak legyen <link xref="user-admin-explain">rendszergazda hozzáférése</link>, akkor válassza a <gui>Rendszergazda</gui> fióktípust a legördülő menüből.</p>
-      <p>A rendszergazdák mindent megtehetnek, például hozzáadhatnak vagy törölhetnek felhasználókat, telepíthetnek szoftvereket és illesztőprogramokat, és megváltoztathatják a dátumot és az időt.</p>
-    </item>
-    <item>
-      <p>Írja be az új felhasználó teljes nevét. A felhasználónév automatikusan kitöltésre kerül a teljes név alapján. Ha a javasolt felhasználónév nem tetszik, megváltoztathatja.</p>
-    </item>
-    <item>
-      <p>Beállíthatja az új felhasználó jelszavát, vagy lehetővé teheti neki az első bejelentkezésekor történő beállítást.</p>
-      <p>Ha a jelszó azonnali beállítását választja, akkor a <gui style="button"><media its:translate="no" type="image" src="figures/system-run-symbolic.svg" width="16" height="16">
-      <span its:translate="yes">jelszó előállítása</span></media></gui> ikonra kattintva automatikusan előállíthat egy véletlen jelszót.</p>
-    </item>
-    <item>
-      <p>Kattintson a <gui>Hozzáadás</gui> gombra.</p>
-    </item>
-  </steps>
+  <item><p>Ehhez <link xref="user-admin-explain">rendszergazdai jogosultságok</link> szükségesek. Nyomja meg a <gui>Feloldás</gui> gombot a jobb felső sarokban, és írja be jelszavát, vagy a rendszergazda jelszavát, amelyiket az ablak kéri.</p></item>
 
-  <p>Ha a jelszót a fiók létrehozása után szeretné megváltoztatni, akkor válassza ki a fiókot, kattintson a <gui style="button">Feloldás</gui> gombra a jobb felső sarokban, és kattintson a jelenlegi jelszó állapotára.</p>
+  <item><p>Új felhasználó létrehozásához a felhasználók bal oldali listájában kattintson a <gui style="button">+</gui> gombra.</p></item>
 
-  <note>
-    <p>A <gui>Felhasználók</gui> ablakban a fiók képének megváltoztatásához rákattinthat a képre a felhasználó neve mellett. Ez a kép fog megjelenni a bejelentkezési ablakban. A GNOME biztosít néhány alapértelmezett képet, illetve választhat a saját képei közül, vagy készíthet egyet a webkamerájával.</p>
-  </note>
+  <item><p>Ha azt szeretné, hogy az új felhasználónak legyen <link xref="user-admin-explain">rendszergazda hozzáférése</link>, akkor válassza a <gui>Rendszergazda</gui> fióktípust a legördülő menüből. A rendszergazdák mindent megtehetnek, például hozzáadhatnak vagy törölhetnek felhasználókat, telepíthetnek szoftvereket és illesztőprogramokat, és megváltoztathatják a dátumot és az időt.</p></item>
+
+  <item><p>Írja be az új felhasználó teljes nevét. A felhasználónév automatikusan kitöltésre kerül a teljes név alapján. Az alapértelmezett általában megfelelő, de meg is változtathatja.</p></item>
+
+  <item><p>Kattintson a <gui>Hozzáadás</gui> gombra.</p></item>
+
+  <item><p>A fiók először le lesz tiltva, amíg el nem dönti a felhasználó jelszavának sorsát. Válassza ki az új fiókot a listából. A <gui>Bejelentkezési beállítások</gui> alatt kattintson a <gui>Fiók letiltva</gui> gombra a <gui>Jelszó</gui> mellett. Használja a <gui>Művelet</gui> legördülő listából a <gui>Jelszó beállítása most</gui> menüpontot, és írassa be a felhasználóval a jelszavát az <gui>Új jelszó</gui> és a <gui>Jelszó megerősítése</gui> mezőkbe. Lásd még a <link xref="user-goodpassword"/> részt.</p>
+  <p>Ezen kívül az <gui>Új jelszó</gui> mező melletti gombra kattintva egy véletlenszerűen generált, biztonságos jelszót választhat. Ezek a jelszavak nehezen kitalálhatók, de nehéz őket megjegyezni, ezért legyen óvatos.</p></item>
+  <item><p>Kattintson a <gui>Módosítás</gui> gombra.</p></item>
+</steps>
+
+<note><p>A <gui>Felhasználói fiókok</gui> ablakban a fiók képének megváltoztatásához rákattinthat a képre a felhasználó neve mellett. Ez a kép fog megjelenni a bejelentkezési ablakban. A GNOME biztosít néhány alapértelmezett képet, illetve választhat a saját képei közül, vagy készíthet egyet a webkamerájával.</p>
+</note>
 
 </page>

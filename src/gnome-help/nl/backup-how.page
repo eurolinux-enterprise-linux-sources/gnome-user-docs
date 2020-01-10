@@ -3,9 +3,9 @@
 
   <info>
     <link type="guide" xref="backup-why"/>
-
+    <desc>Use Déjà Dup (or some other backup application) to make copies of your
+    valuable files and settings to protect against loss.</desc>
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -19,38 +19,36 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Gebruik Déjà Dup (of een andere reservekopietoepassing) om kopieën te maken van uw waardevolle bestanden en instellingen om ze tegen verlies te beschermen.</desc>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
   </info>
 
-<title>Hoe een reservekopie te maken</title>
+<title>How to back up</title>
 
-  <p>De aanbevolen manier om reservekopieën te maken van uw bestanden en instellingen is om dit over te laten aan een reservekopietoepassing. Er zijn meerdere reservekopietoepassingen beschikbaar, waaronder <app>Déjà Dup</app>.</p>
+  <p>The easiest way of backing up your files and settings is to let a backup
+ application manage the backup process for you. A number of different backup
+ applications are available, for example <app>Déjà Dup</app>.</p>
 
-  <p>In de hulpdocumentatie van de door u gekozen reservekopietoepassing vindt u hoe u de voorkeuren voor het maken van reservekopieën moet instellen, evenals de manier waarop u uw gegevens kunt terugzetten als er iets is misgegaan.</p>
+  <p>The help for your chosen backup application will walk you through setting
+ your preferences for the backup, as well as how to restore your data.</p>
 
-  <p>U kunt er ook voor kiezen alleen maar <link xref="files-copy">uw bestanden te kopiëren</link> naar een veilige locatie, zoals een externe harde schijf, een andere computer in het netwerk, of een USB-stick. Uw <link xref="backup-thinkabout">persoonlijke bestanden</link> en instellingen bevinden zich doorgaans in uw Persoonlijke map; u kunt ze dus daarvandaan kopiëren.</p>
+  <p>An alternative option is to <link xref="files-copy">copy your files</link>
+ to a safe location, such as an external hard drive, another computer on the
+ network, or a USB drive. Your <link xref="backup-thinkabout">personal files</link>
+ and settings are usually in your Home folder, so you can copy them from there.</p>
 
-  <p>De hoeveelheid gegevens waarvan u een reservekopie kunt maken is beperkt tot de opslagcapaciteit van het opslagapparaat. Als u de ruimte heeft op uw opslagapparaat, dan kunt u het beste een reservekopie maken van uw hele persoonlijke map met uitzondering van:</p>
+  <p>The amount of data you can back up is limited by the size of the storage
+ device. If you have the room on your backup device, it is best to back up the
+ entire Home folder with the following exceptions:</p>
 
 <list>
- <item><p>Bestanden waarvan elders al een reservekopie van bestaat, zoals op een cd, dvd of ander verwijderbaar medium.</p></item>
- <item><p>Bestanden die u eenvoudig opnieuw kunt aanmaken. Als u bijvoorbeeld programmeur bent, dan hoeft u geen reservekopie te maken van bestanden die gemaakt worden bij het compileren van uw programma's. Zorg er alleen voor dat u een reservekopie maakt van de originele bronbestanden.</p></item>
- <item><p>Uw weggegooide bestanden. Deze bevinden zich in <file>~/.local/share/Trash</file>.</p></item>
+ <item><p>Files that are already backed up somewhere else, such as to a CD, DVD,
+ or other removable media.</p></item>
+ <item><p>Files that you can recreate easily. For example, if you are a
+ programmer, you don't have to back up the files that get produced when you
+ compile your programs. Instead, just make sure that you back up the original
+ source files.</p></item>
+ <item><p>Any files in the Trash folder. Your Trash folder can be found in
+ <file>~/.local/share/Trash</file>.</p></item>
 </list>
 
 </page>

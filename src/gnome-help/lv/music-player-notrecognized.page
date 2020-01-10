@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="music-player-notrecognized" xml:lang="lv">
+  <info>
+    <link type="guide" xref="media#music"/>
+    <link type="seealso" xref="music-player-newipod"/>
+
+
+    <credit type="author">
+      <name>GNOME dokumentācijas projekts</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <desc>Pievienojiet <input>.is_audio_player</input> datni, lai pateiktu savam datoram, ka tas ir audio atskaņotājs.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+<title>Kādēļ mans audio atskaņotājs netiek atpazīts, kad es to pieslēdzu?</title>
+
+<p>Ja audio atskaņotājs (MP3 atskaņotājs u.c.) ir pieslēgts datoram, bet jūs nevarat to ieraudzīt savā mūzikas pārvaldniekā, iespējams, ka tas nav pareizi atpazīts, kā audio atskaņotājs.</p>
+
+<p>Pamēģiniet atvienot atskaņotāju un tad pievienot to no jauna. Ja tas nepalīdz, atveriet datņu pārvaldnieku. Jums vajadzētu ieraudzīt atskaņotāju zem <gui>Ierīces</gui> sānu joslā — spiediet uz tā, lai atvērtu mūzikas atskaņotāja mapi. Tagad spiediet <guiseq><gui>Datnes</gui><gui>Jauns dokuments</gui><gui>Tukšs dokuments</gui></guiseq>, ierakstiet <input>.is_audio_player</input> un spiediet <key>Enter</key> (punkts un pasvītrojums ir svarīgs, un vajadzētu būt ievadītam ar tikai mazajiem burtiem). Šī datne ir vajadzīga, lai dators varētu atpazīt ierīci kā mūzikas atskaņotāju.</p>
+
+<p>Tagad, atrodiet audio atskaņotāju datņu pārvaldnieka sānu joslā un izgrūdiet to (peles labā poga un spiediet uz <gui>Izgrūst</gui>). Atvienojiet to, tad pievienojiet to atpakaļ. Šoreiz jūsu mūzikas atskaņotājam vajadzētu to atpazīt kā mūzikas atskaņotāju. Ja tā nav, mēģiniet aizvērt mūzikas pārvaldnieku un tad atkal to atveriet.</p>
+
+<note>
+ <p>Šīs instrukcijas nestādās ar iPod un dažiem citiem audio atskaņotājiem. Tiem vajadzētu strādāt, ja atskaņotājs ir <em>USB datu nesēja</em> ierīce. Rokasgrāmatā vajadzētu būt norādei, vai tas tā ir.</p>
+</note>
+
+<note>
+ <p>Kad jūs atkal apskatīsiet mūzikas atskaņotāja mapi, jūs neredzēsiet <input>.is_audio_player</input> datni. Tas ir tādēļ, ka punkts datnes nosaukuma sākumā paziņo datņu pārvaldniekam, ka tam jāslēpj datni. Jūs varat pārbaudīt, ka tas joprojām tur ir, spiežot <guiseq><gui>Skats</gui><gui>Parādīt slēptās datnes</gui></guiseq>.</p>
+</note>
+
+</page>

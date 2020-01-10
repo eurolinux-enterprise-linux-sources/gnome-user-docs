@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task a11y" id="mouse-doubleclick" xml:lang="ca">
-
-  <info>
+<info>
     <link type="guide" xref="mouse"/>
     <link type="guide" xref="a11y#mobility" group="clicking"/>
 
-    <revision pkgversion="3.8" date="2013-03-13" status="candidate"/>
-    <revision pkgversion="3.9" date="2013-10-16" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-    <revision pkgversion="3.20" date="20156-06-15" status="final"/>
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
+
+    <desc>Control how quickly you need to press the mouse button
+    a second time to double-click.</desc>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -22,15 +21,8 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Shobha Tyagi</name>
-      <email>tyagishobha@gmail.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Controleu la rapidesa amb què s'ha de prémer el botó del ratolí una segona vegada per fer doble clic.</desc>
-  
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>David Aguilera</mal:name>
       <mal:email>david.aguilera.moncusi@gmail.com</mal:email>
@@ -38,18 +30,31 @@
     </mal:credit>
   </info>
 
-<title>Ajusteu la velocitat del doble de clic</title>
+<title>Adjust the double-click speed</title>
 
-<p>El doble clic tan sols succeeix quan premeu el botó del ratolí dues vegades ràpidament. Si la segona vegada es fa massa tard després de la primera, només obtindreu dos clics diferents, no un doble clic. Si teniu dificultats per prémer el botó del ratolí ràpidament, heu d'augmentar el temps d'espera.</p>
+<p>Double-clicking only happens when you press the mouse button twice
+quickly enough. If the second press is too long after the first, you'll
+just get two separate clicks, not a double click. If you have difficulty
+pressing the mouse button quickly, you should increase the timeout.</p>
 
 <steps>
-  <item><p>Obriu la descripció general de les <gui xref="shell-introduction#activities">Activities</gui>  i comenceu a escriure  <gui>Accés Universal</gui>.</p></item>
-  <item><p>Feu clic a <gui>Accés universal</gui> per obrir el quadre.</p></item>
-  <item><p>Sota<gui>Punter &amp; fent clic</gui>, ajustar el <gui>Doble clic</gui> ajusteu el control lliscant a un valor amb el que us trobeu còmode.</p></item>
+  <item><p>Click your name on the top bar and select <gui>Settings</gui>.</p></item>
+  <item><p>Open <gui>Mouse &amp; Touchpad</gui>.</p></item>
+  <item><p>Under <gui>General</gui>, adjust the <gui>Double-click</gui>
+  slider to a value you find comfortable.</p></item>
+  <item><p>Click the <gui>Test Your Settings</gui> button to test. A single
+  click in the window will highlight the outer circle. A double-click will
+  highlight the inside circle.</p></item>
 </steps>
 
-<p>Si el vostre ratolí fa doble clic quan voleu fer clic fins i tot si heu augmentat el temps d'espera del doble clic, el vostre ratolí podria estar defectuós. Intenteu connectar un ratolí diferent a l'ordinador i valideu si funciona correctament. Alternativament, connecteu el ratolí a una altra ordinador i mireu si encara es manté el mateix problema.</p>
+<p>If your mouse double-clicks when you want it to single-click
+even though you have increased the double-click timeout,
+your mouse may be faulty. Try plugging a different mouse into your computer
+and see if that works properly. Alternatively, plug your mouse into a
+different computer and see if it still has the same problem.
+</p>
 
-<note><p>Aquesta configuració afectarà tant el ratolí com el tauler tàctil, així com qualsevol altre dispositiu apuntador.</p></note>
+<note><p>This setting will affect both your mouse and touchpad,
+as well as any other pointing device.</p></note>
 
 </page>

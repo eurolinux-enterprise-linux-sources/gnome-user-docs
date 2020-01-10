@@ -2,11 +2,10 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="look-display-fuzzy" xml:lang="gl">
 
   <info>
-    <link type="guide" xref="hardware-problems-graphics"/>
+   <link type="guide" xref="hardware-problems-graphics"/>
+   <desc>A resolución da pantalla pode estar incorrectamente axusta.</desc>
 
     <revision pkgversion="3.8.0" version="0.3" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.9.92" date="2013-10-11" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
 
     <credit type="author">
       <name>Proxecto de documentación de GNOME</name>
@@ -24,19 +23,12 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Shobha Tyagi</name>
-      <email>tyagishobha@gmail.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>A resolución da pantalla pode estar incorrectamente axusta.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2018</mal:years>
+      <mal:years>2011, 2012.</mal:years>
     </mal:credit>
   </info>
 
@@ -44,47 +36,37 @@
 
 <p>Isto pode producirse porque a resolución da pantalla que definiu non é a máis axeitada para a súa pantalla.</p>
 
-<p>To solve this, open the <gui xref="shell-introduction#activities">Activities</gui>
-overview and start typing <gui>Displays</gui>. Click on <gui>Displays</gui>
-to open the panel. Try some of the <gui>Resolution</gui> options and set the
-one that makes the screen look better.</p>
+<p>Para solucionar es problema, prema no seu nome da barra superior e vaia a <gui>Preferencias</gui>. Na sección de hardware, seleccione <gui>Pantalla</gui>. Probe algunhas das opcións de <gui>Resolución</gui> e estabeleza a que faga que se vexa mellor a pantalla.</p>
+
+<comment>
+  <cite date="2012-02-19">shaunm</cite>
+  <p>Would like a little more explanation on native resolution, which
+  is generally only applicable on LCDs. There's a stub for using two
+  monitors. Link from section below when it's added.</p>
+</comment>
 
 <section id="multihead">
-  <title>Cando hai varios monitores conectados</title>
+ <title>Cando hai varios monitores conectados</title>
 
-  <p>If you have two displays connected to the computer (for example, a normal
-  monitor and a projector), the displays might have different resolutions.
-  However, the computer’s graphics card can only display the screen in one
-  resolution at a time, so at least one of the displays might look fuzzy.</p>
+ <p>Se ten dúas pantallas conectadas ao computador (por exemplo, un monitor normal e un proxector), estas poderían ter unha resolución diferente. Porén, a tarxeta gráfica do computador só pode visualizar a pantalla nunha única resolución á vez, polo que cando menos unha das pantallas podería verse borrosa.</p>
 
-  <p>You can set it so that the two displays have different resolutions, but
-  you will not be able to display the same thing on both screens
-  simultaneously. In effect, you will have two independent screens connected at
-  the same time. You can move windows from one screen to another, but you
-  cannot show the same window on both screens at once.</p>
+ <p>É posíbel facer que as dúas pantallas teñan distinta resolución, pero entón non poderá visualizar o mesmo en ambas pantallas simultaneamente. En efecto, tería dúas pantallas independentes conectadas ao mesmo tempo. Pode mover xanelas dunha pantalla a outra, pero non poderá mostrar a mesma xanela en ambas pantallas á vez.</p>
 
-  <p>Para configurar cada pantalla e que cada unha teña a súa propia resolución:</p>
+ <p>Para configurar cada pantalla e que cada unha teña a súa propia resolución:</p>
 
-  <steps>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Displays</gui>.</p>
-    </item>
-    <item>
-      <p>Prema <gui>Pantallas</gui> para abrir o panel.</p>
-    </item>
-    <item>
-      <p>The displays should be listed as <gui>Mirrored</gui>. Select your main
-      display.</p>
-    </item>
-    <item>
-      <p>Select <gui>Primary</gui> in the list of display configurations, and
-      then click <gui style="button">Apply</gui> to save.</p>
-    </item>
-    <item>
-      <p>Seleccione cada pantalla por turnos da caixa gris na parte superior da xanela de <gui>Monitores</gui>. Cambie a <gui>Resolución</gui> até que a pantalla se vexa ben.</p>
-    </item>
-  </steps>
+ <steps>
+  <item>
+   <p>Prema no seu nome desde a barra superior e prema <gui>Preferencias</gui>. Abra <gui>Pantallas</gui>.</p>
+  </item>
+
+  <item>
+   <p>Desmarque <gui>Espellar pantallas</gui>.</p>
+  </item>
+
+  <item>
+   <p>Seleccione cada pantalla por turnos da caixa gris na parte superior da xanela de <gui>Monitores</gui>. Cambie a <gui>Resolución</gui> até que a pantalla se vexa ben.</p>
+  </item>
+ </steps>
 
 </section>
 

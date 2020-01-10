@@ -2,11 +2,11 @@
 <page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="screen-shot-record" xml:lang="lv">
 
   <info>
+
     <link type="guide" xref="tips"/>
 
-    <revision pkgversion="3.6.1" date="2012-11-10" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.14.0" date="2015-01-14" status="review"/>
+    <desc>Uzņemiet attēlu vai ierakstiet video, lai ierakstītu notikumus uz ekrāna.</desc>
+    <revision pkgversion="3.6.1" version="0.2" date="2012-11-10" status="review"/>
 
     <credit type="author copyright">
       <name>Tiffany Antopolski</name>
@@ -22,15 +22,8 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-      <years>2015</years>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Uzņemiet attēlu vai ierakstiet video, lai ierakstītu notikumus uz ekrāna.</desc>
   </info>
 
 <title>Ekrānattēli un ekrānieraksti</title>
@@ -38,73 +31,60 @@
   <p>Jūs varat izveidot sava ekrāna attēlu (<em>ekrānattēlu</em>) vai ierakstīt video ar to, kas notiek uz ekrāna (<em>ekrānierakstu</em>). Tas noder, ja vēlaties kādam parādīt, kā kaut kas ir jāizdara uz datora. Ekrānattēli un ekrānieraksti ir parasti attēlu vai video datni, ko varat sūtīt e-pastā, rediģēt un dalīties ar tiem tīmeklī.</p>
 
 <section id="screenshot">
-  <title>Uzņemt ekrānattēlu</title>
+ <title>Uzņemt ekrānattēlu</title>
+<steps>
+<item><p>Atveriet lietotni <app>Ekrānattēls</app> no <gui>Aktivitāšu</gui> pārskata.</p></item>
 
-  <steps>
-    <item>
-      <p>Atveriet lietotni <app>Ekrānattēls</app> no <gui xref="shell-introduction#activities">Aktivitāšu</gui> pārskata.</p>
-    </item>
-    <item>
-      <p><app>Ekrānattēls</app> logā izvēlieties, vai vēlaties iegūt visa ekrāna, pašreizējā loga vai kādas ekrāna daļas attēlu. Iestatiet aizturi, ja jums būs vajadzīgs laiks, lai izvēlētos logu vai citādi sagatavotu darbvirsmu. Tad atzīmējiet vajadzīgos efektus.</p>
-    </item>
-    <item>
-       <p>Spiediet pogu <gui>Uzņemt ekrānattēlu</gui>.</p>
-       <p>Ja atzīmējāt <gui>Izvēlēties apgabalu, ko uzņemt</gui>, rādītājs iegūs krusta formu. Turot peles pogu, velciet pāri vajadzīgajam apgabalam.</p>
-    </item>
-    <item>
-      <p>Logā <gui>Saglabāt ekrānattēlu</gui> ievadiet datnes nosaukumu un izvēlieties mapi, tad spiediet <gui>Saglabāt</gui>.</p>
-      <p>Varat arī nodot ekrānattēlu attēlu apstrādes lietotnei, to iepriekš nesaglabājot. Spiediet <gui>Kopēt uz starpliktuvi</gui>, tad izvēlieties komandu <gui>Ielīmēt</gui> attiecīgajā lietotnē, vai arī ievelciet ekrānattēla sīktēlu lietotnes logā.</p>
-    </item>
-  </steps>
+<item>
+ <p>In the <app>Take Screenshot</app> window, select whether to grab the
+ whole screen, the current window, or an area of the screen. Set a delay
+ if you need to select a window or otherwise set up your desktop for
+ the screenshot. Then choose any effects you want.</p>
+</item>
 
-  <section id="keyboard-shortcuts">
-    <title>Tastatūras saīsnes</title>
+<item>
+  <p>Spiediet pogu <gui>Uzņemt ekrānattēlu</gui>.</p>
+  <p>Ja atzīmējāt <gui>Izvēlēties apgabalu, ko uzņemt</gui>, rādītājs iegūs krusta formu. Turot peles pogu, velciet pāri vajadzīgajam apgabalam.</p>
+</item>
 
-    <p>Lai ātri uzņemtu darbvirsmas, loga vai ekrāna apgabala attēlu jebkurā brīdī, izmantojiet šīs globālās tastatūras saīsnes:</p>
+<item>
+  <p>Logā <gui>Saglabāt ekrānattēlu</gui> ievadiet datnes nosaukumu un izvēlieties mapi, tad spiediet <gui>Saglabāt</gui>.</p>
+  <p>Varat arī nodot ekrānattēlu attēlu apstrādes lietotnei, to iepriekš nesaglabājot. Spiediet <gui>Kopēt uz starpliktuvi</gui>, tad izvēlieties komandu <gui>Ielīmēt</gui> attiecīgajā lietotnē, vai arī ievelciet ekrānattēla sīktēlu lietotnes logā.</p>
+</item>
+</steps>
 
-    <list style="compact">
-      <item>
-        <p><key>Prt Scrn</key>, lai uzņemtu darbvirsmas attēlu.</p>
-      </item>
-      <item>
-        <p><keyseq><key>Alt</key><key>Prt Scrn</key></keyseq>, lai uzņemtu loga attēlu.</p>
-      </item>
-      <item>
-        <p><keyseq><key>Shift</key><key>Prt Scrn</key></keyseq>, lai uzņemtu jūsu izvēlētas ekrāna daļas attēlu.</p>
-      </item>
-    </list>
-
-    <p>Kad izmantota tastatūras saīsne, iegūtais attēls automātiski tiek saglabāts jūsu mapē <file>Attēli</file>, kas atrodas mājas mapē, ar nosaukumu, kas sākas ar vārdu <file>Ekrānattēls</file> un satur attēla uzņemšanas datumu un laiku.</p>
-    <note style="note">
-      <p>Ja jums nav mapes <file>Attēli</file>, tā vietā attēli tiks saglabāti jūsu mājas mapē.</p>
-    </note>
-    <p>Jūs varat arī pieturēt <key>Ctrl</key> taustiņu ar jebkuru no minētajām saīsnēm, lai saglabāšanas vietā iekopētu attēlu starpliktuvē.</p>
-  </section>
-
+<note style="tip">
+  <title>Tastatūras saīsnes</title>
+  <p>Lai ātri uzņemtu darbvirsmas, loga vai ekrāna apgabala attēlu jebkurā brīdī, izmantojiet šīs globālās tastatūras saīsnes:</p>
+  <list style="compact">
+    <item><p><key>Prt Scrn</key>, lai uzņemtu darbvirsmas attēlu.</p></item>
+    <item><p><keyseq><key>Alt</key><key>Prt Scrn</key></keyseq>, lai uzņemtu loga attēlu.</p></item>
+    <item><p><keyseq><key>Shift</key><key>Prt Scrn</key></keyseq>, lai uzņemtu jūsu izvēlētas ekrāna daļas attēlu.</p></item>
+  </list>
+  <p>Kad izmantota tastatūras saīsne, iegūtais attēls automātiski tiek saglabāts jūsu mapē Attēli ar nosaukumu, kas sākas ar vārdu “Ekrānattēls” un satur attēla uzņemšanas datumu un laiku.</p>
+  <p>Jūs varat arī pieturēt <key>Ctrl</key> taustiņu ar jebkuru no minētajām saīsnēm, lai saglabāšanas vietā iekopētu attēlu starpliktuvē.</p>
+</note>
 </section>
 
-<section id="screencast">
-  <title>Izveidot ekrānierakstu</title>
 
+<section id="screencast">
+<title>Izveidot ekrānierakstu</title>
   <p>Jūs varat ierakstīt uz savā ekrāna notiekošo, iegūstot video datni:</p>
 
-  <steps>
-    <item>
-      <p>Nospiediet <keyseq><key>Ctrl</key><key>Alt</key><key>Shift</key><key>R</key></keyseq>, lai uzsāktu ekrānierakstu.</p>
-      <p>Ierakstīšanas laikā ekrāna augšējā labajā stūrī parādās sarkans riņķis.</p>
-    </item>
-    <item>
-      <p>Beigās nospiediet <keyseq><key>Ctrl</key><key>Alt</key><key>Shift</key><key>R</key></keyseq> vēlreiz, lai apturētu ierakstīšanu.</p>
-    </item>
-    <item>
-      <p>Video automātiski tiek saglabāts jūsu mapē <file>Video</file>, kas atrodas mājas mapē, ar nosaukumu, kas sākas ar vārdu <file>Ekrānieraksts</file> un satur ieraksta veikšanas datumu un laiku.</p>
-    </item>
-  </steps>
+<steps>
+<item>
+  <p>Nospiediet <keyseq><key>Ctrl</key><key>Alt</key><key>Shift</key><key>R</key></keyseq>, lai uzsāktu ekrānierakstu.</p>
+  <p>Ierakstīšanas laikā ekrāna apakšējā labajā stūrī parādās sarkans riņķis. Šis indikators nebūs redzams iegūtajā video ierakstā.</p>
+</item>
 
-  <note style="note">
-    <p>Ja jums nav mapes <file>Video</file>, tā vietā video tiks saglabāti jūsu mājas mapē.</p>
-  </note>
+<item>
+  <p>Beigās nospiediet <keyseq><key>Ctrl</key><key>Alt</key><key>Shift</key><key>R</key></keyseq> vēlreiz, lai apturētu ierakstīšanu.</p>
+</item>
 
+<item>
+  <p>Video automātiski tiek saglabāts jūsu mapē Video ar nosaukumu, kas sākas ar vārdu "Ekrānieraksts" un satur ieraksta veikšanas datumu un laiku.</p>
+</item>
+</steps>
 </section>
 
 </page>

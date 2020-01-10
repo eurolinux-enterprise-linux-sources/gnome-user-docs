@@ -4,8 +4,9 @@
   <info>
     <link type="guide" xref="nautilus-prefs" group="nautilus-views"/>
 
+    <desc>Norādiet noklusējuma skatu, kārtošanas secību un mēroga līmeni datņu pārvaldniekā.</desc>
+
     <revision pkgversion="3.8" version="0.2" date="2013-04-03" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-30" status="candidate"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -23,33 +24,91 @@
       <name>Ekaterina Gerasimova</name>
       <email>kittykat3756@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
     <its:rules xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
-
-    <desc>Norādiet noklusējuma kārtošanas secību un grupēšanu datņu pārvaldniekā.</desc>
-
   </info>
 
-<title>Skatu iestatījumi lietotnē <app>Datnes</app></title>
+<title>Views preferences in <app>Files</app></title>
 
-<p>Jūs varat mainīt, kā datnes un mapes pēc noklusējuma ir grupētas un sakārtotas. Kad ir atvērta lietotne <app>Datnes</app>, augšējā joslā izvēlieties <guiseq><gui style="menu">Datnes</gui> <gui style="menuitem">Iestatījumi</gui></guiseq> un izvēlieties cilni <gui style="tab">Skati</gui></p>
+<p>You can change the default view for new folders, how files and folders are
+sorted by default, the zoom level for the icon and compact views, and whether
+files are displayed in the tree sidebar. Select
+<guiseq><gui style="menu">Files</gui>
+<gui style="menuitem">Preferences</gui></guiseq> in the top bar while
+<app>Files</app> is open and select the <gui style="tab">Views</gui> tab.</p>
 
 <section id="default-view">
 <title>Noklusējuma skats</title>
 <terms>
   <item>
+    <title><gui>Skatīt jaunas mapes izmantojot</gui></title>
+    <p>By default, new folders are shown in icon view. If you prefer the list
+    view, you can set it here as the default. Alternatively, you can select a
+    different view for each folder as you browse by clicking the
+    <gui style="button">View items as a list</gui> or <gui style="button">View
+    items as a grid of icons</gui> button in the toolbar.</p>
+  </item>
+  <item>
     <title><gui>Sakārtot vienumus</gui></title>
-    <p>Jūs varat mainīt noklusējuma kārtošanas secību, ko izmanto mapes, izmantojot <gui>Sakārtot vienumus</gui> izkrītošo sarakstu, lai kārtotu pēc nosaukuma, datņu izmēra, datņu tipa, vai kad tās pēdējo reizi ir mainītas, kad pēdējo reizi tām ir piekļūts, vai kad tās tika izmestas.</p>
-    <p its:locNote="TRANSLATORS: use the translation of the tooltip for the     view selector button that opens the view popover in the main window for     'View options'">Jūs varat mainīt veidu, kā <link xref="files-sort">datnes tiek kārtotas</link> katrā atsevišķā mapē, klikšķinot skata opciju pogu rīkjoslā un izvēloties <gui>Nosaukums</gui>, <gui>Izmērs</gui>, <gui>Tips</gui> vai <gui>Modificēts</gui>, vai spiežot uz kolonnu virsrakstiem saraksta skatā.</p>
+    <p>You can change the default sort order that is used in folders using the
+    <gui>Arrange items</gui> drop-down list in the preferences to sort by name,
+    file size, file type, when they were last modified, when they were last
+    accessed or when they were trashed.</p>
+    <p its:locNote="TRANSLATORS: use the translation of the tooltip for the     downwards pointing arrow button that opens the preferences menu in the main     window for 'View options'">You can change how <link xref="files-sort">files
+    are sorted</link> in an individual folder by clicking the
+    <media type="image" src="figures/go-down.png">View options</media> button
+    in the toolbar and choosing <gui>By Name</gui>, <gui>By Size</gui>, <gui>By
+    Type</gui> or <gui>By Modification Date</gui>, or by clicking the list
+    column headers in list view. This menu only affects the current folder.</p>
   </item>
   <item>
     <title><gui>Sakārtot mapes pirms datnēm</gui></title>
-    <p>Pēc noklusējuma datņu pārvaldnieks vairs nerādīs visas mapes pirms datnēm. Lai mapes tiktu rādītas pirms datnēm, aktivējiet šo opciju.</p>
+    <p>By default, the file manager no longer shows all folders before files.
+    To see all folders listed before files, enable this option.</p>
+  </item>
+  <item>
+    <title><gui>Rādīt slēptās un rezerves kopiju datnes</gui></title>
+    <p>The file manager does not display <link xref="files-hidden">hidden
+    files</link> and folders by default. You can always show hidden files by
+    selecting this option.</p>
+    <p its:locNote="TRANSLATORS: use the translation of the tooltip for the     downwards pointing arrow button that opens the preferences menu in the main     window for 'View options'">You can also show hidden files in an individual
+    window by selecting <gui>Show Hidden Files</gui>, from the
+    <media type="image" src="figures/go-down.png">View options</media> menu in
+    the toolbar.</p>
+  </item>
+</terms>
+</section>
+
+<section id="icon-view-defaults">
+<title>Ikonu skata noklusējumi</title>
+<terms>
+  <item>
+    <title><gui>Noklusējuma līmenis mērogam</gui></title>
+    <p its:locNote="TRANSLATORS: use the translation of the tooltip for the     downwards pointing arrow button that opens the preferences menu in the main     window for 'View options'">You can make the icons and text larger or
+    smaller by default in icon view using this option. You can also change this
+    setting in an individual folder by clicking the
+    <media type="image" src="figures/go-down.png">View options</media> button
+    in the toolbar and selecting <gui>Zoom In</gui>, <gui>Zoom Out</gui> or
+    <gui>Normal Size</gui>. If you frequently use a larger or smaller zoom
+    level, you can set the default with this option.</p>
+    <p>In icon view, more or fewer
+    <link xref="nautilus-display#icon-captions">captions</link> are shown based
+    on your zoom level.</p>
+   </item>
+  </terms>
+</section>
+
+<section id="list-view-defaults">
+<title>Saraksta skata noklusējumi</title>
+<terms>
+  <item>
+    <title><gui>Noklusējuma līmenis mērogam</gui></title>
+    <p its:locNote="TRANSLATORS: use the translation of the tooltip for the     downwards pointing arrow button that opens the preferences menu in the main     window for 'View options'">You can make the icons and text larger or
+    smaller in list view using this option. You can also do this in an
+    individual folder by clicking the
+    <media type="image" src="figures/go-down.png">View options</media> button
+    in the toolbar and selecting <gui>Zoom In</gui>, <gui>Zoom Out</gui> or
+    <gui>Normal Size</gui>.</p>
   </item>
 </terms>
 </section>

@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task a11y" id="a11y-slowkeys" xml:lang="ja">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task a11y" id="a11y-slowkeys" xml:lang="ja">
   <info>
     <link type="guide" xref="a11y#mobility" group="keyboard"/>
     <link type="guide" xref="keyboard" group="a11y"/>
 
-    <revision pkgversion="3.8.0" date="2013-03-13" status="candidate"/>
-    <revision pkgversion="3.9.92" date="2013-09-18" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="final"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -22,19 +18,14 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <desc>キーを押してから画面に文字が表示されるまでの間に時間差をもうけます。</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -56,18 +47,6 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Noriko Mizumoto</mal:name>
-      <mal:email>noriko@fedoraproject.org</mal:email>
-      <mal:years>2013, 2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>坂本 貴史</mal:name>
-      <mal:email>o-takashi@sakamocchi.jp</mal:email>
-      <mal:years>2013, 2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>日本GNOMEユーザー会</mal:name>
       <mal:email>http://www.gnome.gr.jp/</mal:email>
       <mal:years>2011, 2012</mal:years>
@@ -80,18 +59,13 @@
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Universal Access</gui>.</p>
+      <p>Click your name on the top bar and select <gui>Settings</gui>.</p>
     </item>
     <item>
-      <p>Click on <gui>Universal Access</gui> to open the panel.</p>
+      <p><gui>ユニバーサルアクセス</gui>を開き、<gui>タイピング</gui>タブを選択します。</p>
     </item>
     <item>
-      <p>Press <gui>Typing Assist (AccessX)</gui> in the <gui>Typing</gui>
-      section.</p>
-    </item>
-    <item>
-      <p>Switch <gui>Slow Keys</gui> to <gui>ON</gui>.</p>
+      <p><gui>スローキー</gui>をオンにします。</p>
     </item>
   </steps>
 
@@ -111,8 +85,6 @@
 
   <p><gui>認識するまでの間隔</gui>のスライダーを使って、キー入力が認識されるまでに押しつづける必要のある時間を設定してください。</p>
 
-  <p>You can have your computer make a sound when you press a key, when a key
-  press is accepted, or when a key press is rejected because you didn’t hold
-  the key down long enough.</p>
+  <p>キーが押されたとき、キー入力が認識されたとき、押し下げ時間が足りずにキー入力が拒否されたときに、それぞれ音を鳴らすことができます。</p>
 
 </page>

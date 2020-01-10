@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="session-fingerprint" xml:lang="ja">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="session-fingerprint" xml:lang="ja">
 
   <info>
     <link type="guide" xref="hardware-auth"/>
 
+    <desc>You can log in to your system using a supported fingerprint scanner.</desc>
+
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
-    <revision pkgversion="3.10" date="2013-11-03" status="review"/>
-    <revision pkgversion="3.12" date="2014-06-16" status="final"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="final"/>
 
     <credit type="author">
       <name>GNOME ドキュメンテーションプロジェクト</name>
@@ -16,28 +15,14 @@
     <credit type="author">
       <name>Paul W. Frields</name>
       <email>stickster@gmail.com</email>
-      <years>2011</years>
-    </credit>
-    <credit type="author editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-      <years>2013</years>
-    </credit>
-    <credit type="editor">
-      <name>Jim Campbell</name>
-      <email>jcampbell@gnome.org</email>
-      <years>2014</years>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>You can log in to your system using a supported fingerprint scanner
-    instead of typing in your password.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -59,18 +44,6 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Noriko Mizumoto</mal:name>
-      <mal:email>noriko@fedoraproject.org</mal:email>
-      <mal:years>2013, 2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>坂本 貴史</mal:name>
-      <mal:email>o-takashi@sakamocchi.jp</mal:email>
-      <mal:years>2013, 2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>日本GNOMEユーザー会</mal:name>
       <mal:email>http://www.gnome.gr.jp/</mal:email>
       <mal:years>2011, 2012</mal:years>
@@ -78,79 +51,77 @@
   </info>
 
   <title>Log in with a fingerprint</title>
-
   <p>If your system has a supported fingerprint scanner, you can record your
-  fingerprint and use it to log in.</p>
-
-<section id="record">
-  <title>Record a fingerprint</title>
-
-  <p>Before you can log in with your fingerprint, you need to record it so that
-  the system can use it to identify you.</p>
-
+ fingerprint and use it to log in. You must have administrative privileges to
+ perform these steps.</p>
+  <p>First, record a fingerprint the system can use to identify you.</p>
   <note style="tip">
     <p>If your finger is too dry, you may have difficulty registering your
-    fingerprint. If this happens, moisten your finger slightly, dry it with a
-    clean, lint-free cloth, and retry.</p>
+ fingerprint. If this happens, moisten your finger slightly, dry it with a clean,
+ lint-free cloth, and retry.</p>
   </note>
-
-  <p>You need <link xref="user-admin-explain">administrator privileges</link>
-  to edit user accounts other than your own.</p>
-
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Users</gui>.</p>
+      <p>トップバーのユーザー名の箇所をクリックし、名前の横の画像をクリックして<gui>ユーザーアカウント</gui>のウィンドウを開きます。</p>
     </item>
     <item>
-      <p>Click on <gui>Users</gui> to open the panel.</p>
+      <p>Unlock your account using the <gui>Unlock</gui> button in the top-right
+      corner of the <gui>User Accounts</gui> tool.</p>
     </item>
     <item>
-      <p>Press on <gui>Disabled</gui>, next to <gui>Fingerprint Login</gui> to
-      add a fingerprint for the selected account. If you are adding the
-      fingerprint for a different user, you will first need to
-      <gui>Unlock</gui> the panel.</p>
+      <p>Enter your password at the prompt.</p>
     </item>
     <item>
-      <p>Select the finger that you want to use for the fingerprint, then
-      <gui style="button">Next</gui>.</p>
+      <p>Select the <gui>Disabled</gui> option next to <gui>Fingerprint Login</gui>.</p>
     </item>
     <item>
-      <p>Follow the instructions in the dialog and swipe your finger at a
-      <em>moderate speed</em> over your fingerprint reader. Once the computer
-      has a good record of your fingerprint, you will see a <gui>Done!</gui>
-      message.</p>
+      <p>Select an option for the fingerprint you want to register. You may
+      choose your right index finger, your left index finger, or a different
+      finger. Then select <gui>Forward</gui>.</p>
     </item>
     <item>
-      <p>Select <gui>Next</gui>. You will see a confirmation message that
-      your fingerprint was saved successfully. Select <gui>Close</gui> to
-      finish.</p>
+      <p>Swipe the finger you selected three times at a <em>moderate speed</em>
+      over your fingerprint reader. Each time the fingerprint reader recognizes
+      your fingerprint properly, the corresponding picture of a hand will
+      transform into a picture of a fingerprint with a check mark. After the
+      third swipe, you will see the message <gui>Done!</gui></p>
+    </item>
+    <item>
+      <p>Select <gui>Forward</gui>. You will see a confirmation message that
+      your fingerprint was saved successfully. Select <gui>Close</gui> to finish.</p>
     </item>
   </steps>
-
-</section>
-
-<section id="verify">
-  <title>Check that your fingerprint works</title>
-
   <p>Now check that your new fingerprint login works. If you register a
   fingerprint, you still have the option to log in with your password.</p>
-
   <steps>
     <item>
-      <p>Save any open work, and then <link xref="shell-exit#logout">log
-      out</link>.</p>
+      <p>Save any open work, and then log out. Select your name in the upper
+      right-hand corner and then select <gui>Log Out</gui>.</p>
+    </item>
+    <item>
+      <p>A confirmation message will appear. Select <gui>Log Out</gui> to confirm.
+      The login screen appears.</p>
     </item>
     <item>
       <p>At the login screen, select your name from the list. The password
       entry form will appear.</p>
     </item>
     <item>
-      <p>Instead of typing your password, you should be able to swipe your
-      finger on the fingerprint reader.</p>
+      <p>Within 30 seconds, select the fingerprint button above and to the right
+      of your name.</p>
+      <note>
+	<p>The fingerprint button is labeled with a picture of a hand. If the
+        timer runs out, the button will disappear and you will only be permitted
+        to log in with a password. If you want to try again, select the
+        <gui>Cancel</gui> button and return to the previous step.</p>
+      </note>
+    </item>
+    <item>
+      <p>Swipe the finger you registered at a <em>moderate</em> speed over your
+      fingerprint scanner. You will be logged in.</p>
     </item>
   </steps>
-
-</section>
-
+  <p>If you previously created a login keyring, it is secured by your password.
+  To unlock it, enter your password.</p>
+	
 </page>

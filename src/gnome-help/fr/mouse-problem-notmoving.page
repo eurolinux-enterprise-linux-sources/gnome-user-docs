@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="mouse-problem-notmoving" xml:lang="fr">
-
-  <info>
+<info>
     <link type="guide" xref="mouse#problems"/>
 
-    <revision pkgversion="3.8" date="2013-03-13" status="candidate"/>
-    <!-- TODO: reorganise page and tidy because it's one ugly wall of text -->
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+    <desc>Contrôles à effectuer lorsque la souris ne fonctionne pas.</desc>
+
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
 
     <credit type="author">
         <name>Phil Bull</name>
@@ -16,11 +15,8 @@
       <name>Shaun McCance</name>
       <email>shaunm@gnome.org</email>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>How to check why your mouse is not working.</desc>
-  
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Luc Pionchon</mal:name>
       <mal:email>pionchon.luc@gmail.com</mal:email>
@@ -36,13 +32,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Julien Hardelin</mal:name>
       <mal:email>jhardlin@orange.fr</mal:email>
-      <mal:years>2011, 2013</mal:years>
+      <mal:years>2011</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -68,12 +64,6 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Alexandre Franke</mal:name>
-      <mal:email>alexandre.franke@gmail.com</mal:email>
-      <mal:years>2015</mal:years>
-    </mal:credit>
   </info>
 
 <title>Le pointeur de la souris ne bouge pas</title>
@@ -86,6 +76,38 @@
  <p>S'il s'agit d'une souris USB (avec un connecteur rectangulaire), essayez de la brancher à un autre port USB. S'il s'agit d'une souris PS/2 (dotée d'un petit connecteur rond à six broches), vérifiez qu'elle est branchée au port souris de couleur verte, et non pas au port clavier de couleur violette. Il se peut que vous deviez redémarrer l'ordinateur si elle n'était pas branchée.</p>
 </section>
 
+<section id="connected">
+ <title>Contrôle de reconnaissance de la souris par l'ordinateur</title>
+ <steps>
+  <item><p>Ouvrez l'application <app>Terminal</app> à partir de la vue d'ensemble des <gui>Activités</gui>.</p></item>
+  <item>
+   <p>Dans la fenêtre du terminal, saisissez précisément <cmd>xsetpointer -l | grep Pointer</cmd>, puis appuyez sur <key>Entrée</key>.</p>
+  </item>
+  <item>
+   <p>Une brève liste de périphériques souris apparaît. Contrôlez qu'au moins une des lignes contienne <sys>[XExtensionPointer]</sys>, et qu'une de ces lignes affiche le nom de la souris sur sa gauche.</p>
+  </item>
+  <item>
+   <p>Si aucune des lignes ne contient le nom de la souris suivi de <sys>[XExtensionPointer]</sys>, la souris n'a pas été reconnue par l'ordinateur. Si une telle ligne existe, votre souris est reconnue. Dans ce cas, vous devriez contrôler que la souris est <link xref="mouse-problem-notmoving#plugged-in">branchée</link> et qu'elle <link xref="mouse-problem-notmoving#broken">fonctionne</link>.</p>
+  </item>
+ </steps>
+
+ <comment>
+   <cite date="2012-02-19">shaunm</cite>
+   <p>If we decide to bless a device manager, investigate using that instead
+   of <cmd>xsetpointer</cmd> in these steps.</p>
+ </comment>
+
+ <p>Si la souris comporte un connecteur série (RS-232), vous devrez probablement effectuer quelques opérations supplémentaires pour la faire fonctionner. Ces opérations dépendent du fabricant et du modèle de la souris.</p>
+
+ <p>Il peut être compliqué de résoudre des problèmes de détection de souris. Demandez de l'aide à votre distribution ou à votre fournisseur si vous pensez que la souris n'a pas été correctement détectée.</p>
+
+ <comment>
+ <cite date="2012-02-19">Phil Bull</cite>
+  <p>Should provide some useful advice rather than just saying "you might need
+  to perform extra steps".</p>
+ </comment>
+</section>
+
 <section id="broken">
  <title>Contrôle du bon fonctionnement de la souris</title>
  <p>Branchez la souris à un autre ordinateur pour voir si elle fonctionne.</p>
@@ -96,12 +118,8 @@
 <section id="wireless-mice">
  <title>Contrôle de souris sans fil</title>
 
-  <list>
-    <item>
-      <p>Make sure the mouse is turned on. There is often a switch on the
-      bottom of the mouse to turn the mouse off completely, so you can take it
-      with you without it constantly waking up.</p>
-    </item>
+ <list>
+   <item><p>Vérifiez que la souris est allumée. Il y a souvent un bouton sous la souris qui permet de l'éteindre complètement pour la déplacer d'un endroit à un autre sans qu'elle se réveille constamment.</p></item>
    <item><p>Si vous utilisez une souris Bluetooth, vérifiez que la souris est bien appariée avec l'ordinateur. Consultez <link xref="bluetooth-connect-device"/>.</p></item>
   <item>
    <p>Cliquez sur un bouton et regardez si le pointeur de la souris se met à bouger. Certaines souris sans fil se mettent en veille pour économiser leur batterie et ne réagissent donc pas avant que vous cliquiez sur un de ses boutons. Consultez <link xref="mouse-wakeup"/>.</p>
@@ -121,6 +139,12 @@
  </list>
 
  <p>La plupart des souris sans fil opérant par ondes radio devraient fonctionner automatiquement lorsqu'elles sont branchées à un ordinateur. Avec des souris Bluetooth ou à infrarouge, il est parfois nécessaire de procéder à des opérations supplémentaires pour les faire fonctionner. Ces opérations dépendent du fabricant ou du modèle de la souris.</p>
+
+<comment>
+ <cite date="2012-02-19">Phil Bull</cite>
+ <p>Should provide some useful advice rather than just saying "you might need to
+ perform extra steps".</p>
+</comment>
 </section>
 
 </page>

@@ -2,14 +2,13 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-share" xml:lang="de">
 
   <info>
-    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="files" group="more"/>
     <link type="guide" xref="sharing"/>
     <link type="seealso" xref="nautilus-connect"/>
+    <desc>Easily transfer files to your email contacts from the file
+    manager.</desc>
 
     <revision pkgversion="3.8.2" version="0.3" date="2013-05-11" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -19,15 +18,18 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Übertragen Sie einfach Dateien zu Ihren E-Mail-Kontakten aus der Dateiverwaltung heraus.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hendrik Knackstedt</mal:name>
-      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
-      <mal:years>2011.</mal:years>
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -37,46 +39,46 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Christian Kirbach</mal:name>
-      <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Mario Blättermann</mal:name>
-      <mal:email>mario.blaettermann@gmail.com</mal:email>
-      <mal:years>2011-2013, 2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Benjamin Steinwender</mal:name>
-      <mal:email>b@stbe.at</mal:email>
-      <mal:years>2014.</mal:years>
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.to</mal:years>
     </mal:credit>
   </info>
 
-<title>Dateien via E-Mail teilen</title>
+<title>Share files by email</title>
 
-<p>Übertragen Sie einfach Dateien zu Ihren Kontakten per E-Mail aus der Dateiverwaltung heraus.</p>
+<comment>
+  <cite date="2012-02-20">jim</cite>
+  <p>If we get gnome-user-share integrated eventually, we should discuss
+  or link that here.</p>
+</comment>
+<comment>
+  <cite date="2013-05-11" href="mailto:mdhillca@gmail.com">mdhill</cite>
+  <p>All functionality except email removed for 3.8 per Bug 680983.</p>
+</comment>
+
+<p>You can easily share files with your contacts by email directly from the
+file manager.</p>
 
   <note style="important">
-    <p>Bevor Sie loslegen, stellen Sie sicher, dass <app>Evolution</app> oder <app>Geary</app> auf Ihrem Rechner installiert ist und Ihr E-Mail-Konto eingerichtet ist.</p>
+    <p>Before you begin, make sure <app>Evolution</app> is installed on your
+    computer, and your email account is configured.</p>
   </note>
 
 <steps>
-  <title>So teilen Sie eine Datei via E-Mail:</title>
-    <item>
-      <p>Öffnen Sie in der <gui xref="shell-introduction#activities">Aktivitäten</gui>-Übersicht die Anwendung <app>Dateien</app>.</p>
-    </item>
+  <title>To share a file by email:</title>
+  <item><p>Öffnen Sie in der <gui>Aktivitäten</gui>-Übersicht die Anwendung <app>Dateien</app>.</p></item>
   <item><p>Suchen Sie nach der Datei, die Sie übertragen wollen.</p></item>
-    <item>
-      <p>Klicken Sie mit der rechten Maustaste auf die Datei und wählen Sie <gui>Senden an …</gui>. Daraufhin erscheint das Fenster zum Verfassen von Nachrichten mit der angehängten Datei.</p>
-    </item>
-  <item><p>Klicken Sie auf <gui>An</gui>, um einen Kontakt zu wählen, oder geben Sie eine E-Mail-Adresse als Ziel der Datei ein. Geben Sie einen <gui>Betreff</gui> und die Nachricht selbst ein und klicken Sie auf <gui>Senden</gui>.</p></item>
+  <item><p>Right-click the file and select <gui>Send To</gui>. The
+  <gui>Compose Message</gui> window will appear with the file attached.</p></item>
+  <item><p>Click <gui>To</gui> to choose a contact, or enter an email address
+  where you want to send the file. Fill in the <gui>Subject</gui> and the body
+  of the message as required and click <gui>Send</gui>.</p></item>
 </steps>
 
 <note style="tip">
-  <p>Sie können mehrere Dateien auf einmal senden. Wählen Sie mehrere Dateien, indem Sie die <key>Strg</key>-Taste gedrückt halten und klicken Sie dann mit der rechten Maustaste auf eine der gewählten Dateien.</p>
+  <p>You can send multiple files at once. Select multiple files by holding
+  down <key>Ctrl</key>, then right-click any selected file.</p>
 </note>
 
 </page>

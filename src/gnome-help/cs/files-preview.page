@@ -1,51 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" version="1.0 if/1.0" id="files-preview" xml:lang="cs">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-preview" xml:lang="cs">
 
   <info>
-    <link type="guide" xref="files#common-file-tasks"/>
+    <link type="guide" xref="files"/>
     <link type="seealso" xref="nautilus-preview"/>
 
-    <revision pkgversion="3.6.0" version="0.2" date="2012-10-06" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+    <desc>Quickly show and hide previews for documents, images, videos, and more.</desc>
 
+    <revision pkgversion="3.6.0" version="0.2" date="2012-10-06" status="review"/>
     <credit type="author">
       <name>Shaun McCance</name>
       <email>shaunm@gnome.org</email>
     </credit>
-    <credit type="author">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Rychlé zobrazení a skrytí náhledů pro dokumenty, obrázky, videa a další.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
       <mal:email>adamatousek@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Marek Černocký</mal:name>
-      <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014, 2015</mal:years>
-    </mal:credit>
   </info>
 
-<title>Náhled souborů a složek</title>
+<title>Preview files and folders</title>
 
-<note if:test="platform:ubuntu" style="important">
-  <p>Abyste mohli změnit tato nastavení, musíte mít v počítači nainstalovánu aplikaci <app>Sushi</app>.</p>
-  <p its:locNote="Translators: This button is only shown on Ubuntu, where this   link format is preferred over 'install:gnome-sushi'."><link style="button" href="apt:gnome-sushi">Nainstalovat aplikaci <app>Sushi</app></link></p>
-</note>
+<p>You can quickly preview files without opening them in a full-blown application.
+Select any file and press the space bar. The file will open in a simple preview
+window. Press the space bar again to dismiss the preview.</p>
 
-<p>Na obsah souboru se můžete rychle mrknout, aniž byste jej museli otevírat v plnohodnotné aplikaci. Vyberte libovolný soubor a zmáčkněte <key>mezerník</key>. Soubor se otevře v okně s jednoduchým náhledem. Po opětovném zmáčknutí mezerníku náhled zmizí.</p>
+<p>The built-in preview supports most file formats for documents, images, video,
+and audio. In the preview, you can scroll through your documents or seek through
+your video and audio.</p>
 
-<p>Vestavěné náhledy podporují většinu formátů dokumentů, obrázků, videa a zvuku. V náhledu můžete procházet dokumenty a přeskakovat ve videu a zvuku.</p>
-
-<p>Abyste viděli náhled na celé obrazovce, zmáčkněte <key>F</key> nebo <key>F11</key>. Celou obrazovku můžete opustit opětovným zmáčknutím <key>F</key> nebo <key>F11</key>, nebo zmáčkněte <key>mezerník</key> a náhled se opustí úplně.</p>
+<p>To view a preview full-screen, click the
+<media type="image" src="figures/view-fullscreen-16.png">fullscreen</media>
+button near the bottom, or press <key>f</key>. Click
+<media type="image" src="figures/view-fullscreen-16.png">fullscreen</media>
+or press <key>f</key> again to leave full-screen, or press the space bar to
+exit the preview completely.</p>
 
 </page>

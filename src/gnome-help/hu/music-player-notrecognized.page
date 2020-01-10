@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="music-player-notrecognized" xml:lang="hu">
+  <info>
+    <link type="guide" xref="media#music"/>
+    <link type="seealso" xref="music-player-newipod"/>
+
+
+    <credit type="author">
+      <name>GNOME dokumentációs projekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <desc>Készítsen egy <input>.is_audio_player</input> fájlt, jelezve hogy ez egy zenelejátszó.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Miért nem ismeri fel a számítógép a zenelejátszómat?</title>
+
+<p>Ha a számítógéphez csatlakoztatott zenelejátszója (MP3-lejátszó stb.) nem jelenik meg a zenelejátszó alkalmazásban, akkor lehet, hogy nem lett megfelelően felismerve zenelejátszóként.</p>
+
+<p>Próbálja meg kihúzni a számítógépből, majd visszadugni. Ha ez nem segít, akkor nyissa meg a Fájlkezelőt. Az oldalsávban látnia kell a lejátszót az <gui>Eszközök</gui> alatti listában. Kattintson rá a zenelejátszó mappájának megnyitásához. Ezután válassza a <guiseq><gui>Fájl</gui><gui>Új dokumentum</gui><gui>Üres dokumentum</gui></guiseq> menüpontot, írja be az <input>.is_audio_player</input> kifejezést, és nyomja meg az <key>Enter</key> billentyűt (a pont és az aláhúzások fontosak, és csak kisbetűket használjon). Ez a fájl megadja a számítógépnek, hogy az eszközt zenelejátszóként ismerje fel.</p>
+
+<p>Keresse meg a zenelejátszót a Fájlkezelő oldalsávjában, és válassza le (kattintson rá a jobb egérgombbal, és válassza a <gui>Kiadás</gui> menüpontot). Húzza ki, majd dugja be újra. Most már a zenegyűjteményt kezelő programnak fel kell ismernie a zenelejátszót. Ellenkező esetben zárja be a zenegyűjteményt kezelő programot, és próbálja újra elindítani.</p>
+
+<note>
+ <p>Ezek az utasítások nem használhatók iPodok és néhány más zenelejátszó esetén. Ha a zenelejátszó <em>USB-háttértároló</em> eszköz, akkor igen. Ez a készülék használati utasításából tudható meg.</p>
+</note>
+
+<note>
+ <p>Ha újra megnyitja a zenelejátszó mappáját, akkor az <input>.is_audio_player</input> fájlt nem fogja látni. Ennek oka, hogy a fájl nevét kezdő pont a Fájlkezelőt a fájl elrejtésére utasítja. A <guiseq><gui>Nézet</gui><gui>Rejtett fájlok megjelenítése</gui></guiseq> menüpontot kiválasztva ellenőrizheti a fájl meglétét.</p>
+</note>
+
+</page>

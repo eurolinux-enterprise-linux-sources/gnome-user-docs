@@ -19,12 +19,6 @@
       <mal:email>timo.jyrinki@iki.fi</mal:email>
       <mal:years>2012.</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Jiri Grönroos</mal:name>
-      <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
-      <mal:years>2012-2018.</mal:years>
-    </mal:credit>
   </info>
 
  <title>Hallitse levyjä ja osioita</title>
@@ -36,35 +30,24 @@
 <section id="manage">
  <title>Tutki ja hallitse taltioita ja levyosioita käyttäen levytyökalua</title>
 
-  <p>You can check and modify your computer’s storage volumes with the disk
- utility.</p>
+  <p>Voit tarkistaa ja muokata tietokoneesi tallennustaltioita leyvtyökalukka.</p>
 
 <steps>
-  <item>
-    <p>Open the <gui>Activities</gui> overview and start <app>Disks</app>.</p>
-  </item>
-  <item>
-    <p>In the list of storage devices on the left, you will find hard disks,
-    CD/DVD drives, and other physical devices. Click the device you want to
-    inspect.</p>
-  </item>
-  <item>
-    <p>The right pane provides a visual breakdown of the volumes and
-    partitions present on the selected device. It also contains a variety of
-    tools used to manage these volumes.</p>
-    <p>Ole varovainen: näillä työkaluilla on mahdollista hävittää kaikki levyllä olevat tiedot.</p>
-  </item>
+ <item>
+  <p>Open the <gui>Activities</gui> overview and start the <app>Disks</app> application.</p>
+ </item>
+ <item>
+  <p>Ruudusta, joka on nimetty <gui>Tallennuslaitteet</gui> löydät kiintolevyt, CD/DVD-asemat ja muut asemat. Valitse laite tutkiaksesi sitä.</p>
+ </item>
+ <item>
+  <p>Oikeassa ruudussa alue, jonka otsikko on <gui>Volumes</gui> tarjoaa valitun aseman taltioiden ja osioiden visuaalisen paloittelun. Se myös sisältää monia taltioiden hallintaan käytettäviä työkaluja.</p>
+  <p>Ole varovainen: näillä työkaluilla on mahdollista hävittää kaikki levyllä olevat tiedot.</p>
+ </item>
 </steps>
 
   <p>Koneessasi on ainakin yksi <em>ensisijainen</em> osio ja yksi <em>swap</em>-osio. Käyttöjärjestelmä käyttää swap-osiota muistinhallintaan ja on harvoin liitetty. Ensisijainen osio sisältää käyttöjärjestelmäsi, ohjelmasi, asetukset ja henkilökohtaiset tiedostot. Nämä tiedostot voidaan myös jakaa usealle eri levyosiolle turvallisuus- tai käytettävyyssyistä.</p>
 
-  <p>One primary partition must contain information that your computer uses to
-  start up, or <em>boot</em>. For this reason it is sometimes called a boot
-  partition, or boot volume. To determine if a volume is bootable, select the
-  partition and click the menu button in the toolbar underneath the partition
-  list. Then, click <gui>Edit Partition…</gui> and look at its
-  <gui>Flags</gui>. External media such as USB drives and CDs may also contain
-  a bootable volume.</p>
+  <p>Yhden ensisijaisen osion täytyy sisältää tieto, jota käytetään tietokoneen käynnistämiseen eli <em>boottaamiseen</em>. Tästä syystä sitä kutsutaan välillä käynnistysosioksi tai -taltioksi. Selvittääksesi, että onko taltio käynnistyslevy, tarkastele sen <gui>Osiolippuja</gui>. Ulkoinen asema, kuten USB-asema tai CD-levy voi myös sisältää käynnistystaltion.</p>
 
 </section>
 

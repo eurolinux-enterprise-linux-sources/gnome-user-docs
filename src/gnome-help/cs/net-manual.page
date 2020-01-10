@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-manual" xml:lang="cs">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="net-manual" xml:lang="cs">
   <info>
     <link type="guide" xref="net-wired"/>
     <link type="guide" xref="net-wireless"/>
 
     <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
-    <revision pkgversion="3.10" date="2013-11-11" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-    <revision pkgversion="3.28" date="2018-03-28" status="review"/>
 
     <credit type="author">
       <name>Phil Bull</name>
       <email>philbull@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
 
-    <desc>Když síť nedostane nastavení přiřazené automaticky, budete jej asi muset nastavit ručně.</desc>
+    <desc>If network settings don't get assigned automatically, you may have to enter them yourself.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -27,51 +19,40 @@
       <mal:email>adamatousek@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Marek Černocký</mal:name>
-      <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014, 2015</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Ruční nastavení sítě</title>
+<title>Manually set network settings</title>
 
-  <p>Pokud síť vašemu počítači automaticky nepřiřadí nastavení sítě, budete jej muset zadat ručně. Následující popis předpokládá, že již znáte správné údaje, které je třeba nastavit. Jestli ne, zeptejte se svého správce sítě nebo se podívejte do nastavení svého směrovače nebo síťového přepínače.</p>
+<p>If your network doesn't automatically assign network settings to your computer, you may have to manually enter the settings yourself. This topic assumes that you already know the correct settings to use. If not, you may need to ask your network administrator or look at the settings of your router or network switch.</p>
 
-  <steps>
-    <title>Když chcete svoji síť nastavit ručně:</title>
-    <item>
-      <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Nastavení</gui>.</p>
-    </item>
-    <item>
-      <p>Klikněte na <gui>Nastavení</gui>.</p>
-    </item>
-    <item>
-      <p>V levém panelu vyberte síťové připojení, které chcete ručně nastavit. Když jste k síti připojeni kabelem, klikněte na <gui>Síť</gui>, a když bezdrátově, tak na <gui>Wi-Fi</gui></p>
-      <p>Ujistěte se, že vaše bezdrátová karta je zapnutá, nebo že síťový kabel je zastrčený.</p>
-    </item>
-    <item>      
-      <p>Klikněte na tlačítko <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">nastavení</span></media>.</p>
-      <note>
-        <p>Pro připojení přes <gui>Wi-Fi</gui> se tlačítko <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">nastavení</span></media> nachází vedle aktivní sítě.</p>
-      </note>
-    </item>
-    <item>
-      <p>Klikněte na <gui>IPv4</gui> nebo <gui>IPv6</gui> v levém panelu a změňte <gui>Adresy</gui> na <em>Ruční</em>.</p>
-    </item>
-    <item>
-      <p>Zadejte <gui xref="net-what-is-ip-address">Adresu IP</gui> a <gui>Bránu</gui>, včetně příslušné <gui>Masky sítě</gui>.</p>
-    </item>
-    <item>
-      <p>V části <gui>DNS</gui> přepněte <gui>Automatické</gui> na <gui>○</gui> (vypnuto). Zadejte adresu IP serveru DNS, který chcete používat. Pomocí tlačítka <gui>+</gui> můžete přidat další servery DNS.</p>
-    </item>
-    <item>
-      <p>V části <gui>Směrování</gui> přepněte <gui>Automatické</gui> na <gui>○</gui> (vypnuto). Zadejte <gui>Adresu</gui>, <gui>Masku sítě</gui>, <gui>Bránu</gui> a <gui>Metriku</gui> pro cestu, kterou chcete používat. Další cesty můžete přidat tlačítkem <gui>+</gui>.</p>
-    </item>
-    <item>
-      <p>Klikněte na <gui>Použít</gui>. Pokud nejste připojeni k síti, klikněte do stavové oblasti na horní liště a připojte se. Síť otestujte například tak, že zkusíte navštívit webovou stránku nebo se podívat na sdílené soubory na síti.</p>
-    </item>
-  </steps>
+<steps>
+  <title>To manually set your network settings:</title>
+ <item>
+  <p>Click the network icon on the top bar and select <gui>Network Settings</gui>.</p>
+ </item>
+
+ <item>
+  <p>Select the network connection that you want to set up manually and click <gui>Configure</gui>. For example, if you plug in to the network with a cable, look at <gui>Wired</gui>.</p>
+  <p>Make sure that your wireless card is turned on or a network cable is plugged in. Otherwise, you won't be able to click <gui>Configure</gui>.</p>
+ </item>
+
+ <item>
+  <p>Go to the <gui>IPv4 Settings</gui> tab and change the <gui>Method</gui> to <gui>Manual</gui>.</p>
+ </item>
+
+ <item>
+  <p>Click <gui>Add</gui> and type the <em>IP address</em>, <em>network mask</em> and <em>default gateway IP address</em> into the corresponding columns of the <gui>Addresses</gui> list. Press <key>Enter</key> or <key>Tab</key> after typing each address.</p>
+  <p>These three addresses must be IP addresses; that is, they must be four numbers separated by periods (e.g. 123.45.6.78).</p>
+ </item>
+
+ <item>
+  <p>Type the IP addresses of the DNS servers you want to use in the corresponding field, separated by commas.</p>
+ </item>
+
+ <item>
+  <p>Click <gui>Save</gui>. If you are not connected to the network, click the network icon on the top bar and connect. Test the network settings by trying to visit a website or look at shared files on the network, for example.</p>
+ </item>
+
+</steps>
 
 </page>

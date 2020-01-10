@@ -1,69 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="shell-windows-switching" xml:lang="nl">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" id="shell-windows-switching" xml:lang="nl">
 
   <info>
     <link type="guide" xref="shell-windows#working-with-windows"/>
     <link type="guide" xref="shell-overview#apps"/>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-07" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
 
     <credit type="author">
       <name>Gnome-documentatieproject</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
-    <credit type="editor">
-      <name>Shobha Tyagi</name>
-      <email>tyagishobha@gmail.com</email>
-    </credit>
-
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Druk op <keyseq><key>Super</key><key>Tab</key></keyseq>.</desc>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
+    <desc>Press <keyseq><key>Super</key><key>Tab</key></keyseq>.</desc>
   </info>
 
 <title>Schakelen tussen vensters</title>
 
-  <p>Alle draaiende toepassingen die een grafische gebruikersinterface hebben zijn te zien in de <em>vensterwisselaar</em>. Zo kunt u in een enkele stap tussen taken wisselen en u krijgt een volledig overzicht van de toepassingen die draaien.</p>
+<comment>
+  <cite date="2012-02-19">shaunm</cite>
+  <p>More prose, talk about Alt+`. Maybe a screenshot. 3.0.1</p>
+</comment>
+  <p>Including all applications in the <gui>window switcher</gui> makes switching
+ between tasks a single-step process and provides a full picture of which
+ applications are running.</p>
 
-  <p>Vanuit een werkblad:</p>
+  <p>From a workspace:</p>
 
-  <steps>
-    <item>
-      <p>Druk op <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq> om de <gui>vensterwisselaar</gui> te krijgen.</p>
-    </item>
-    <item>
-      <p>Laat <key xref="keyboard-key-super">Super</key> los om het volgende (gemarkeerde) venster in de wisselaar te selecteren.</p>
-    </item>
-    <item>
-      <p>U kunt ook, terwijl u de <key xref="keyboard-key-super"> Super</key>-toets ingedrukt houdt, op <key>Tab</key> drukken om door de lijst van geopende vensters te lopen, of <keyseq><key>Shift</key><key>Tab</key></keyseq> om terug te bladeren.</p>
-    </item>
-  </steps>
+<list>
+  <item><p>Press <keyseq><key xref="keyboard-key-super">Super</key><key>Tab
+  </key></keyseq> to bring up the <gui>window switcher</gui>.</p></item>
+  <item><p>Release <key xref="keyboard-key-super">Super</key> to select the next
+  (highlighted) window in the switcher.</p></item>
+  <item><p>Otherwise, still holding down the <key xref="keyboard-key-super">
+  Super</key> key, press <key>Tab</key> to cycle through the list of open
+  windows, or <keyseq><key>Shift</key><key>Tab</key></keyseq> to cycle
+  backwards.</p></item>
+</list>
 
-  <p if:test="platform:gnome-classic">U kunt ook de vensterlijst op de benedenbalk gebruiken om toegang te krijgen tot al uw geopende vensters en om van venster te wisselen.</p>
+<p if:test="platform:gnome-classic">You can also use the window list on the
+  bottom bar to access all your open windows and switch between them.</p>
 
-  <note style="tip" if:test="!platform:gnome-classic">
-    <p>Vensters in de vensterwisselaar zijn gegroepeerd per toepassing. Voorbeelden van toepassingen met meerdere vensters verschijnen terwijl u doorklikt. Houd  <key xref="keyboard-key-super">Super</key> ingedrukt en druk op <key>`</key> (of de toets boven de <key>Tab</key>-toets) om door de lijst te lopen.</p>
-  </note>
+<note style="tip" if:test="!platform:gnome-classic">
+  <p>Windows in the window switcher are grouped by application. Previews of
+  applications with multiple windows pop down as you click through. Hold down
+  <key xref="keyboard-key-super">Super</key> and press <key>`</key> (or the key
+  above <key>Tab</key>) to step through the list.</p>
+</note>
 
-  <p>U kunt ook van het ene toepassingspictogram naar het andere gaan in de vensterwisselaar met de toetsen <key>→</key> of <key>←</key>, of er een kiezen door erop te klikken met de muis.</p>
+<note if:test="!platform:gnome-classic">
+  <p>In the window switcher, applications from different workspaces are divided
+  by vertical separators.</p>
+</note>
 
-  <p>Voorbeelden van toepassingen met een enkel venster kunnen worden getoond met de toets <key>↓</key>.</p>
+<list>
+  <item><p>You can also move between the application icons in the window switcher
+  with the <key>→</key> or <key>←</key> keys, or select one by
+ clicking it with the mouse.</p></item>
+  <item><p>Previews of applications with a single window can be displayed with
+  the <key>↓</key> key.</p></item>
+</list>
 
-  <p>Klik vanuit het <gui>Activiteiten</gui>-overzicht op een <link xref="shell-windows">venster</link> om er naartoe te gaan en uit het overzicht te stappen. Indien u meerdere <link xref="shell-windows#working-with-workspaces">werkruimtes</link> geopend heeft, dan kunt u op elke werkruimte klikken om de geopende vensters in die werkruimte te bekijken.</p>
+<p>From the <gui>Activities</gui> overview:</p>
+<list>
+  <item><p>Click on a <link xref="shell-windows">window</link> to switch to it
+  and leave the overview. If you have multiple
+  <link xref="shell-windows#working-with-workspaces">workspaces</link> open, you
+  can click on each workspace to view the open windows on each workspace.</p>
+  </item>
+</list>
 
 </page>

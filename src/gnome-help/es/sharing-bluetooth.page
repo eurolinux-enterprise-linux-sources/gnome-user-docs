@@ -1,36 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="sharing-bluetooth" xml:lang="es">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="sharing-bluetooth" xml:lang="es">
   <info>
     <link type="guide" xref="bluetooth"/>
-    <link type="guide" xref="sharing"/>
-    <link type="guide" xref="prefs-sharing"/>
+    <link type="guide" xref="settings-sharing"/>
 
-    <revision pkgversion="3.8.2" date="2013-05-13" status="draft"/>
-    <revision pkgversion="3.10" date="2013-11-09" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-08" status="candidate"/>
-    <revision pkgversion="3.14" date="2014-10-13" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+    <revision pkgversion="3.8.2" version="0.1" date="2013-05-13" status="draft"/>
 
     <credit type="author">
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
-      <years>2014</years>
-    </credit>
-    <credit type="author">
-      <name>David King</name>
-      <email>davidk@gnome.org</email>
-      <years>2014-2015</years>
     </credit>
 
+    <desc>Configurar qué carpetas y dispositivos se pueden compartir por Bluetooth.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Permitir subir archivos al equipo mediante Bluetooth</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2011 - 2018</mal:years>
+      <mal:years>2011 - 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -54,26 +41,70 @@
 
   <title>Controlar la compartición por Bluetooth</title>
 
-  <p>Puede activar la compartición <gui>Bluetooth</gui> para recibir archivos mediante Bluetooth en la carpeta <file>Descargas</file></p>
+  <p>Puede permitir el acceso a sus carpetas <file>Público</file> y <file>Descargas</file> para la compartición de archivos por Bluetooth y también restringir el acceso a sólo los <em>dispositivos de confianza</em>. Configure la <gui>Compartición por Bluetooth</gui> para controlar el acceso a las carpetas compartidas en su equipo.</p>
+
+  <note style="info">
+    <p>Un dispositivo Bluetooth es <em>de confianza</em> si lo ha<em>emparejado</em> o lo ha conectado a su equipo. Consulte la <link xref="bluetooth-connect-device"/>.</p>
+  </note>
+
+  <steps>
+    <title>Compartir su carpeta <file>Público</file> por Bluetooth</title>
+    <item>
+      <p>Pulse en su nombre en la barra superior y seleccione <gui>Configuración</gui>.</p>
+    </item>
+    <item>
+      <p>Abra <gui>Compartición</gui>.</p>
+    </item>
+    <item>
+      <p>Si la<gui>Compartición</gui> está <gui>Apagada</gui>, <gui>Actívela</gui>.</p>
+    </item>
+    <item>
+      <p>Seleccione <gui>Compartición por Bluetooth</gui>.</p>
+    </item>
+    <item>
+      <p>Active la opción <gui>Compartir carpeta Público</gui> (<gui>Encendido</gui>).</p>
+    </item>
+    <item>
+      <p>Si quiere que sólo los dispositivos de confianza accedan a su carpeta <file>Público</file> <gui>Active</gui> la opción <gui>Compartir sólo con dispositivos de confianza</gui>.</p>
+
+      <note style="tip">
+        <p>Esta opción está desactivada de manera predeterminada. Debe activarla si quiere evitar el acceso a sus archivos compartidos por parte de cualquiera que tenga un teléfono o un dispositivo Bluetooth cerca activado.</p>
+      </note>
+ 
+    </item>
+    <item>
+      <p>Pulse <gui style="button">Cerrar</gui>. Los dispositivos Bluetooth activados no podrán acceder a los archivos de su carpeta <file>Público</file>.</p>
+    </item>
+  </steps>
 
   <steps>
     <title>Permitir que se compartan los archivos de su carpeta <file>Descargas</file></title>
     <item>
-      <p>Abra la vista de <gui xref="shell-introduction#activities">Actividades</gui> y empiece a escribir <gui>Bluetooth</gui>.</p>
+      <p>Pulse en su nombre en la barra superior y seleccione <gui>Configuración</gui>.</p>
     </item>
     <item>
-      <p>Pulse en <gui>Bluetooth</gui> para abrir el panel.</p>
+      <p>Abra <gui>Compartición</gui>.</p>
     </item>
     <item>
-      <p>Asegúrese de que el <link xref="bluetooth-turn-on-off"><gui>Bluetooth</gui> está activado</link>.</p>
+      <p>Si la<gui>Compartición</gui> está <gui>Apagada</gui>, <gui>Actívela</gui>.</p>
     </item>
     <item>
-      <p>Los dispositivos con Bluetooth pueden enviar archivos a su carpeta de <file>Descargas</file> sólo cuando el panel de <gui>Bluetooth</gui> está abierto.</p>
+      <p>Seleccione <gui>Compartición por Bluetooth</gui>.</p>
+    </item>
+    <item>
+      <p>Active la opción <gui>Guardar los archivos recibidos en la carpeta Descargas</gui> (<gui>Encendido</gui>).</p>
+    </item>
+    <item>
+      <p>Si quiere que sólo los dispositivos de confianza accedan a su carpeta <file>Descargas</file> <gui>Active</gui> la opción <gui>Recibir archivos sólo de dispositivos de confianza</gui>.</p>
+
+      <note style="tip">
+        <p>Esta opción está desactivada de manera predeterminada. Debe activarla si quiere evitar el acceso a sus archivos compartidos por parte de cualquiera que tenga un teléfono o un dispositivo Bluetooth cerca activado.</p>
+      </note>
+
+    </item>
+    <item>
+      <p>Pulse <gui style="button">Cerrar</gui>. Los dispositivos Bluetooth activados no podrán enviar archivos a su carpeta <file>Descargas</file>.</p>
     </item>
   </steps>
-
-  <note style="tip">
-    <p>Puede <link xref="sharing-displayname">cambiar</link> el nombre que el equipo muestra a otros dispositivos.</p>
-  </note>
 
 </page>

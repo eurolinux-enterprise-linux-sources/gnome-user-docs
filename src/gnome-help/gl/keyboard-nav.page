@@ -6,8 +6,6 @@
     <link type="seealso" xref="shell-keyboard-shortcuts"/>
 
     <revision pkgversion="3.7.5" version="0.2" date="2013-02-23" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.20" date="2016-08-13" status="candidate"/>
 
     <credit type="author">
       <name>Michael Hill</name>
@@ -27,18 +25,24 @@
        <email>kittykat3756@gmail.com</email>
     </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
     <desc>Usar os aplicativos e escritorio sen un rato.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2018</mal:years>
+      <mal:years>2011, 2012.</mal:years>
     </mal:credit>
   </info>
 
   <title>Disposicións de teclado</title>
+
+  <comment>
+    <cite date="2012-03-14" href="mailto:shaunm@gnome.org">Shaun McCance</cite>
+    <p>Do <em>NOT</em> use <code>ui:expanded</code> on this page. I know it's
+    tempting, but the target audience for this page is people who cannot use
+    a mouse, and having to expand sections when you're just figuring out how
+    to drive things with the keyboard is a burden.</p>
+  </comment>
 
   <p>Nesta páxina detállase a navegación co teclado para persoas que non poden usar un rato ou outro dispositivo apuntador, ou que quere usar o teclado o máis posíbel. Para ver os atallos de teclado, útiles para todos os usuarios, consulte a <link xref="shell-keyboard-shortcuts"/> no seu lugar.</p>
 
@@ -59,6 +63,7 @@
     <td><p>Cursores</p></td>
     <td>
       <p>Mover a selección entre elementos dun único control, ou entre un conxunto de controis relacionados. Use as teclas de frechas para dar o foco aos botóns, seleccionar elementos nunha vista de lista ou de iconas ou para seleccionar un botón de radio nun grupo.</p>
+      <p>Na vista de árbore, use as teclas de frechas dereita e esquerda para contraer e expandir os elementos con fillos.</p>
     </td>
   </tr>
   <tr>
@@ -68,13 +73,9 @@
   <tr>
     <td><p><keyseq><key>Alt</key><key>F2</key></keyseq></p></td>
     <td><p>Na vista de lista ou de iconas, seleccionar todos os elementos desde o elemento seleccionado actualmente até o novo elemento co foco.</p></td>
-    <td><p>In a tree view, items that have children can be expanded or collapsed,
-    to show or hide their children: expand by pressing
-    <keyseq><key>Shift</key><key>→</key></keyseq>, and collapse by
-    pressing <keyseq><key>Shift</key><key>←</key></keyseq>.</p></td>
   </tr>
   <tr>
-    <td><p><key>Espacio</key>.</p></td>
+    <td><p><key>Intro</key>.</p></td>
     <td><p>Activar un elemento enfocado como un botón, caixa de verificación ou elemento de lista.</p></td>
   </tr>
   <tr>
@@ -95,7 +96,7 @@
   </tr>
   <tr>
     <td><p><keyseq><key xref="keyboard-key-super">Super</key> <key>F10</key></keyseq></p></td>
-    <td><p>Abra o menú de aplicativos desde a barra superior.</p></td>
+    <td><p>A icona de Bluetooth na barra superior</p></td>
   </tr>
   <tr>
     <td><p><keyseq><key>Shift</key><key>F10</key></keyseq> ou <key xref="keyboard-key-menu">Menú</key></p></td>
@@ -130,7 +131,7 @@
   </tr>
   <tr>
     <td><p><keyseq><key>Super</key><key>M</key></keyseq></p></td>
-    <td><p><link xref="shell-notifications#messagetray">Abrir a bandexa do sistema</link> Prema <key>Esc</key> to close.</p></td>
+    <td><p><link xref="shell-notifications#messagingtray">Abrir a bandexa de mensaxaría.</link> Prema <key>Esc</key> to close.</p></td>
   </tr>
 </table>
 
@@ -153,8 +154,6 @@
     <td><p>Redimensionar a xanela actual. Prema <keyseq><key>Alt</key><key>F8</key></keyseq> e use as teclas de frechas para redimensionar a xanela. Prema <key>Intro</key> para deixar de redimensionar a xanela, ou <key>Esc</key> para devolvela ao seu tamaño orixinal.</p></td>
   </tr>
   <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-updown"/>
-  <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-left"/>
-  <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-right"/>
   <tr>
     <td><p><keyseq><key>Alt</key><key>F10</key></keyseq> ou <keyseq><key>Super</key><key>↑</key></keyseq></p>
     </td>

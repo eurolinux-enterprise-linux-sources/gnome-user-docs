@@ -1,64 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="bluetooth" xml:lang="el">
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="bluetooth" xml:lang="el">
+<info>
+  <link type="guide" xref="hardware"/>
 
-  <info>
-    <link type="guide" xref="hardware"/>
+  <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
 
-    <revision pkgversion="3.4" date="2012-02-19" status="outdated"/>
-    <revision pkgversion="3.10" date="2013-11-09" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+  <credit type="author">
+    <name>Shaun McCance</name>
+    <email>shaunm@gnome.org</email>
+  </credit>
 
-    <credit type="author">
-      <name>Shaun McCance</name>
-      <email>shaunm@gnome.org</email>
-    </credit>
+  <desc><link xref="bluetooth-connect-device">Σύνδεση</link>, <link xref="bluetooth-send-file">αποστολή αρχείων</link>, <link xref="bluetooth-turn-on-off">ενεργοποίηση και απενεργοποίηση</link>…</desc>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc><link xref="bluetooth-connect-device">Σύνδεση</link>, <link xref="bluetooth-send-file">Αποστολή αρχείων</link>, <link xref="bluetooth-turn-on-off">Ενεργοποίηση και απενεργοποίηση</link>…</desc>
-  
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
-      <mal:email>team@gnome.gr</mal:email>
-      <mal:years>2009-2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
       <mal:email>dmtrs32@gmail.com</mal:email>
-      <mal:years>2012-2015</mal:years>
+      <mal:years>2012, 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:name> Φώτης Τσάμης</mal:name>
       <mal:email>ftsamis@gmail.com</mal:email>
       <mal:years>2009</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:name> Μάριος Ζηντίλης</mal:name>
       <mal:email>m.zindilis@dmajor.org</mal:email>
       <mal:years>2009, 2010</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Θάνος Τρυφωνίδης</mal:name>
-      <mal:email>tomtryf@gnome.org</mal:email>
-      <mal:years>2012-2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Μαρία Μαυρίδου</mal:name>
-      <mal:email>mavridou@gmail.com</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:name> Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
     </mal:credit>
   </info>
 
 <title>Bluetooth</title>
 
-<p>Το Bluetooth είναι ένα ασύρματο πρωτόκολλο που επιτρέπει τη σύνδεση πολλών διαφορετικών τύπων συσκευών στον υπολογιστή σας. Το Bluetooth χρησιμοποιείται γενικά για ακουστικά και συσκευές εισόδου όπως ποντίκια και πληκτρολόγια. Μπορείτε επίσης να χρησιμοποιήσετε το Bluetooth στην <link xref="bluetooth-send-file">αποστολή αρχείων μεταξύ συσκευών</link>, όπως από τον υπολογιστή σας στο κινητό τηλέφωνο.</p>
+<p>Το Bluetooth είναι ένα ασύρματο πρωτόκολλο που επιτρέπει τη σύνδεση πολλών διαφορετικών τύπων συσκευών στον υπολογιστή σας. Το Bluetooth χρησιμοποιείται γενικά για ακουστικά και συσκευές εισαγωγής όπως ποντίκια και πληκτρολόγια. Μπορείτε επίσης να χρησιμοποιήσετε Bluetooth στην <link xref="bluetooth-send-file">αποστολή αρχείων μεταξύ συσκευών</link>, όπως από τον υπολογιστή σας στο κινητό τηλέφωνο.</p>
+
+<comment>
+<cite date="2012-02-19">shaunm</cite>
+<p>Things to improve: The BT settings has a "Browse Files" button for devices.
+We only cover push file transfers. Might also be worth mentioning something
+on receiving files when doing push from another device.</p>
+<p>We don't have explicit pages for input devices. Might be worth a topic like
+"Connect a BT mouse or keyboard", linked under Mouse, Keyboard, and BT.</p>
+<p>We have nothing for BT printers. Topic under both Printing and BT.
+Consider other device classes, topics linked under both BT and the
+appropriate device-specific guide (e.g. headset under Audio).</p>
+<p>A topic on Bluetooth security would be good. Might want to also create
+a new top-level guide for security, and link the topic there too.</p>
+</comment>
 
 <section id="problems">
   <info>

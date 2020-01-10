@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="net-editcon" xml:lang="fr">
+  <info>
+    <link type="guide" xref="net-wireless" group="first"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <desc>Apprendre ce que les options de modification de la fenêtre connexion sans fil signifient.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Modification d'une connexion sans fil</title>
+
+<comment>
+ <p>This topic needs significant revision to be comprehensive. A number of settings remain undocumented.</p>
+</comment>
+
+<p>Ce tutoriel décrit toutes les options disponibles pour modifier une connexion sans fil. Pour modifier une connexion, sélectionnez-la dans les paramètres du <gui>Réseau</gui> puis cliquez sur <gui>Options</gui>.</p>
+
+<note>
+ <p>La plupart des réseaux vont fonctionner normalement si vous laissez ces paramètres à leurs valeurs par défaut et vous n'avez sans doute pas besoin d'y toucher. Beaucoup de ces options sont là uniquement pour vous donner un meilleur contrôle sur des réseaux plus sophistiqués.</p>
+</note>
+
+<section id="available">
+ <title>Disponible à tous les utilisateurs / Connexion automatique</title>
+ <terms>
+  <item>
+   <title><gui>Connexion automatique</gui></title>
+   <p>Cochez cette option si vous voulez que votre ordinateur essaie de ce connecter à ce réseau sans fil dès qu'il est dans son rayon de capture.</p>
+   <p>S'il y a plusieurs réseaux à connexion automatique dans le rayon de capture, l'ordinateur se connecte au premier de la liste de l'onglet <gui>Sans fil</gui> de la fenêtre <gui>Connexions réseau</gui>. Il ne se déconnectera pas de celui-ci, même si un autre vient juste d'apparaître dans son rayon de capture.</p>
+  </item>
+
+  <item>
+   <title><gui>Disponible à tous les utilisateurs</gui></title>
+   <p>Cochez cette case si vous souhaitez que tous les utilisateurs de cet ordinateur puissent avoir accès à ce réseau. Si le réseau est protégé par <link xref="net-wireless-wepwpa">mot de passe WEP/WPA</link> et que vous avez coché cette option, vous n'aurez à saisir ce mot de passe qu'une seule fois. Les autres utilisateurs pourront s'y connecter sans connaître ce mot de passe.</p>
+   <p>Si cette option est cochée, seul <link xref="user-admin-explain">l'administrateur</link> est autorisé à modifier les paramètres de ce réseau. Il doit s'identifier avec son mot de passe d'administrateur.</p>
+  </item>
+ </terms>
+</section>
+
+<section id="wireless">
+ <title>Réseau sans fil</title>
+ <terms>
+  <item>
+   <title><gui>SSID</gui></title>
+   <p>C'est le nom du réseau sans fil auquel vous êtes connecté, aussi connu sous la dénomination de <em>Service Set Identifier</em>. Ne le modifiez pas, à moins d'avoir aussi changé le nom du réseau sans fil (comme par exemple en modifiant les paramètres du routeur ou de votre box).</p>
+  </item>
+
+  <item>
+   <title><gui>Mode</gui></title>
+   <p>Utilisez cette option pour spécifier si vous voulez vous connecter à un réseau d'<gui>Infrastructure</gui> (comme celui où les ordinateurs se connectent sans fil à une base ou un routeur), ou à un réseau <gui>Ad-hoc</gui> (où il n'y a pas de base et où les ordinateurs du réseau se connectent les uns aux autres). La plupart des réseaux sont organisés en mode infrastructure ; malgré tout, vous pouvez cependant souhaiter <link xref="net-adhoc">créer votre propre réseau ad-hoc</link>.</p>
+   <p>Si vous choisissez <gui>Ad-hoc</gui>, vous allez voir deux autres options, <gui>Bande</gui> et <gui>Canal</gui>. Elles déterminent sur quelle fréquence le réseau sans fil ad-hoc va fonctionner. Certains ordinateurs ne peuvent travailler que sur certaines bandes passantes (par exemple seulement sur <gui>A</gui> ou sur <gui>B/G</gui>, de sorte qu'il vous faut choisir une fréquence que tous les ordinateurs du réseau ad-hoc peuvent utiliser. Dans des endroits très fréquentés, il peut y avoir plusieurs réseaux sans fil partageant le même canal ; ceci peut ralentir votre connexion et vous amener à changer de canal.</p>
+  </item>
+
+  <item>
+   <title><gui>BSSID</gui></title>
+   <p>C'est le <em>Basic Service Set Identifier</em>. Le SSID (voir ci-dessus) est le nom du réseau compréhensible par l'humain ; le BSSID est un nom compréhensible par l'ordinateur (c'est une chaîne de lettres et de chiffres supposée unique et spécifique au réseau sans fil). Si un <link xref="net-wireless-hidden">réseau est masqué</link>, il n'a pas de SSID, mais il a un BSSID.</p>
+  </item>
+
+  <item>
+   <title><gui>Adresse MAC du périphérique</gui></title>
+   <p>Une <link xref="net-macaddress">adresse MAC</link> est le code d'identification d'un périphérique (comme une carte sans fil, une carte Ethernet ou un routeur). Chaque périphérique susceptible d'être connecté à un réseau possède une adresse MAC unique qui lui est attribuée en usine.</p>
+   <p>Cette option vous permet de changer l'adresse MAC de votre carte réseau.</p>
+  </item>
+
+  <item>
+   <title><gui>Adresse MAC clonée</gui></title>
+   <p>Votre périphérique réseau (carte sans fil) peut simuler avoir une adresse MAC différente. Cet artifice est utile si votre périphérique ou votre service ne communique qu'avec une certaine adresse MAC (par exemple un modem large bande câblé). Si vous mettez cette adresse MAC dans la case <gui>adresse MAC clonée</gui>, le périphérique ou le service va penser que votre ordinateur possède l'adresse MAC clonée plutôt que la vraie.</p>
+  </item>
+
+  <item>
+   <title><gui>MTU</gui></title>
+   <p>Ce paramètre modifie la <em>Maximum Transmission Unit</em> (unité maximum de transmission), qui n'est autre que la taille maximum qu'un paquet de données peut avoir pour être envoyé sur le réseau. Quand des fichiers sont transmis par le réseau, les données sont fragmentées en petits morceaux (ou paquets). La taille optimum de la MTU pour votre réseau dépend de la possibilité de pertes pendant le transfert (due aux parasites de la connexion) et à la vitesse de transmission. Généralement, il est inutile de modifier ce paramètre.</p>
+  </item>
+
+ </terms>
+</section>
+
+<section id="security">
+ <title>Sécurité sans fil</title>
+ <terms>
+  <item>
+   <title><gui>Sécurité</gui></title>
+   <p>Ceci définit le type de <em>chiffrement</em> utilisé par votre réseau. Les connexions chiffrées empêchent l'interception de votre connexion sans fil, de sorte que personne ne peut ni « écouter » ni voir quels sites Web vous visitez, entre autre.</p>
+   <p>Certains types de chiffrements sont plus puissants que d'autres, mais peuvent ne pas être supportés par des équipements sans fil anciens. Normalement, il vous faut saisir un mot de passe pour vous connecter ; des types de sécurités plus sophistiqués peuvent aussi demander un nom d'utilisateur et un « certificat » numérique. Consultez <link xref="net-wireless-wepwpa"/> pour plus d'explications sur les types les plus courants de chiffrement.</p>
+  </item>
+ </terms>
+</section>
+
+<section id="ipv4">
+ <title>Paramètres IPv4</title>
+
+<comment>
+<cite>shaunm</cite>
+<p>There's also Shared to other computers</p>
+<p>Then there's addresses and dns servers and ipv4 addressing routes.</p>
+<p>All current info correct, but incomplete</p>
+</comment>
+
+ <p>Ouvrez cet onglet pour définir des informations comme l'adresse IP de votre ordinateur et quels serveurs DNS il doit utiliser. Changez la <gui>Méthode</gui> pour voir les différentes possibilités d'obtenir/définir cette information.</p>
+ <p>Les méthodes suivantes sont disponibles :</p>
+ <terms>
+  <item>
+   <title><gui>Automatique (DHCP)</gui></title>
+   <p>Obtient automatiquement les informations à partir d'un <em>serveur DHCP</em>, comme l'adresse IP et le serveur DNS à utiliser. Un serveur DHCP est un ordinateur (ou un autre périphérique, par exemple un routeur) connecté au réseau et qui décide quels paramètres réseau votre ordinateur doit avoir - lors de votre première connexion au réseau, votre machine se voit attribuer automatiquement les paramètres corrects. La plupart des réseaux fonctionnent sur DHCP.</p>
+  </item>
+
+  <item>
+   <title><gui>Adresses automatiques uniquement (DHCP)</gui></title>
+   <p>Si vous choisissez ce paramètre, votre ordinateur obtient son adresse IP automatiquement d'un serveur DHCP, mais vous devez configurer manuellement les autres détails (comme le choix du serveur DNS à utiliser).</p>
+  </item>
+
+  <item>
+   <title><gui>Manuel</gui></title>
+   <p>Choisissez cette option si vous souhaitez configurer tous vos paramètres réseau vous-même, y compris l'adresse IP que votre ordinateur doit utiliser.</p>
+  </item>
+
+  <item>
+   <title><gui>Lien-local uniquement</gui></title>
+   <p>Un <em>lien-local</em> est un moyen de connecter ensemble sur un réseau plusieurs ordinateurs sans recourir à un serveur DHCP ou à définir manuellement les adresses IP ou d'autres informations. Avec ce type de connexion réseau, les ordinateurs décident entre eux quelles adresses IP ils doivent utiliser, etc. Ce type de réseau est utile si vous souhaitez connecter et faire communiquer temporairement quelques ordinateurs entre eux.</p>
+  </item>
+
+  <item>
+   <title><gui>Désactivé</gui></title>
+   <p>Cette option désactive le réseau et vous évite de vous y connecter. Notez que <gui>IPv4</gui> et <gui>IPv6</gui> sont considérées comme des connections séparées, même si elles sont prises en charge par la même carte réseau. Si l'une est active, vous pourriez désactiver l'autre.</p>
+  </item>
+
+ </terms>
+</section>
+
+<section id="ipv6">
+ <title>Paramètres IPv6</title>
+<comment>
+<cite>shaunm</cite>
+<p>The list of methods is a bit different</p>
+</comment>
+ <p>Il est identique à l'onglet <gui>IPv4</gui>, sauf qu'il traite du nouveau standard qu'est l'IPv6. Les réseaux les plus modernes utilisent l'IPv6, mais pour le moment l'IPv4 est encore le plus répandu.</p>
+</section>
+
+</page>

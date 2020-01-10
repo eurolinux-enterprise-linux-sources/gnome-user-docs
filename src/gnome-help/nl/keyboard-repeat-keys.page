@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="keyboard-repeat-keys" xml:lang="nl">
-
   <info>
     <link type="guide" xref="a11y#mobility" group="keyboard"/>
     <link type="guide" xref="keyboard"/>
 
     <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
-    <revision pkgversion="3.9.92" date="2013-10-11" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2013-10-11" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -25,46 +22,32 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Shobha Tyagi</name>
-      <email>tyagishobha@gmail.com</email>
-    </credit>
-
+    <desc>Make the keyboard not repeat letters when you hold down a key,
+    or change the delay and speed of repeat keys.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Voorkom dat het toetsenbord letters herhaalt wanneer u een toets vasthoudt, of wijzig de vertraging en snelheid van herhaaltoetsen.</desc>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Herhaald indrukken van een toets beheren</title>
+  <title>Turn off repeated key presses</title>
 
-  <p>Standaard is het zo dat, wanneer u een toets op het toetsenbord ingedrukt houdt, de letter of het symbool herhaald zal worden totdat u de toets loslaat. Als u moeite heeft om uw vinger snel van een toets te halen, kunt u deze functie uitschakelen, of wijzigen hoe lang het duurt voordat de ingedrukte toetsaanslag herhaald wordt.</p>
+  <p>By default, when you hold down a key on your keyboard, the letter
+  or symbol will be repeated until you release the key. If you have
+  difficulty picking your finger back up quickly enough, you can
+  disable this feature, or change how long it takes before key presses
+  start repeating.</p>
 
   <steps>
     <item>
-      <p>Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht en typ <gui>Universele toegang</gui>.</p>
+     <p>Click your name on the top bar and select <gui>Settings</gui>.</p>
     </item>
     <item>
-      <p>Klik op <gui>Universele toegang</gui> om het paneel te openen.</p>
+     <p>Open <gui>Keyboard</gui> and select the <gui>Typing</gui> tab.</p>
     </item>
     <item>
-     <p>Druk op <gui>Herhaaltoetsen</gui> onder het kopje <gui>Typen</gui>.</p>
-    </item>
-    <item>
-      <p>Zet <gui>herhaaltoetsen</gui> <gui>Uit</gui>.</p>
-      <p>U kunt ook de schuifregelaar <gui>Vertraging</gui> aanpassen om te regelen hoe lang u de toets ingedrukt moet houden om hem te herhalen, en de <gui>Snelheid</gui> aanpassen om te regelen hoe snel het indrukken van een toets herhaald wordt.</p>
+     <p>Turn off <gui>Key presses repeat when key is held down</gui> to disable
+     repeated keys entirely.</p>
+     <p>Alternatively, adjust the <gui>Delay</gui> slider to control how long
+     you have to hold a key down to begin repeating it, and adjust the
+     <gui>Speed</gui> slider to control how quickly key presses repeat.</p>
     </item>
   </steps>
-
 </page>

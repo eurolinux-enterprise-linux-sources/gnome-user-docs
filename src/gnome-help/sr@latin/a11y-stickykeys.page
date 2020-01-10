@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task a11y" id="a11y-stickykeys" xml:lang="sr-Latn">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task a11y" id="a11y-stickykeys" xml:lang="sr-Latn">
   <info>
     <link type="guide" xref="a11y#mobility" group="keyboard"/>
     <link type="guide" xref="keyboard" group="a11y"/>
 
-    <revision pkgversion="3.8.0" date="2013-03-13" status="candidate"/>
-    <revision pkgversion="3.9.92" date="2013-09-18" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="final"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
 
     <credit type="author">
       <name>Šon Mek Kens</name>
@@ -24,32 +18,31 @@
       <name>Majkl Hil</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
     <desc>Kucajte prečice tastature taster po taster umesto da držite pritisnutim sve tastere odjednom.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
   <title>Uključite lepljive tastere</title>
 
-  <p><em>Lepljivi tasteri</em> vam omogućavaju da kucate prečice tastature jedan taster za drugim umesto da ih držite pritisnutim sve zajedno. Na primer, prečica <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq> služi za prebacivanje između prozora. Bez uključenih lepljivih tastera, morali biste da držite pritisnutim oba tastera u isto vreme; sa uključenim lepljivim tasterima, pritisnućete prvo <key>Super</key> a zatim <key>Tab</key> da uradite isto.</p>
+  <p><em>Sticky keys</em> allows you to type keyboard shortcuts one key at a
+  time rather than having to hold down all of the keys at once. For example,
+  the <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq>
+  shortcut switches between windows. Without sticky keys turned on, you would
+  have to hold down both keys at the same time; with sticky keys turned on, you
+  would press <key>Super</key> and then <key>Tab</key> to do the same.</p>
 
   <p>Možda ćete želeti da uključite lepljive tastere ako nalazite da je teško da pritisnete nekoliko tastera u isto vreme.</p>
 
   <steps>
     <item>
-      <p>Otvorite pregled <gui xref="shell-introduction#activities">Aktivnosti</gui> i počnite da kucate <gui>Univerzalni pristup</gui>.</p>
+      <p>Kliknite na vaše ime na gornjoj traci i izaberite <gui>Podešavanja</gui>.</p>
     </item>
     <item>
-      <p>Kliknite na <gui>Univerzalni pristup</gui> da otvorite panel.</p>
+      <p>Otvorite <gui>Univerzalni pristup</gui> i izaberite jezičak <gui>Kucanje</gui>.</p>
     </item>
     <item>
-      <p>Pritisnite <gui>Pomoć kucanja (Iks pristup)</gui> u odeljku <gui>Kucanje</gui>.</p>
-    </item>
-    <item>
-      <p>Prebacite <gui>Lepljive tastere</gui> na <gui>UKLJ.</gui>.</p>
+      <p>Uključite <gui>Lepljive tastere</gui>.</p>
     </item>
   </steps>
 
@@ -61,7 +54,12 @@
 
   <p>Ako pritisnete dva tastera odjednom, lepljivi tasteri će se sami privremeno isključiti da bi vam omogućili da unesete prečicu tastature na uobičajeni način.</p>
 
-  <p>Na primer, ako ste uključili lepljive tastere ali ste istovremeno pritisnuli <key>Super</key> i <key>Tab</key>, lepljivi tasteri neće čekati da pritisnete drugi taster ako ste uključili tu opciju. Međutim, <em>sačekaće</em> ako ste pritisnuli samo jedan taster. Ovo je korisno ako vam ne predstavlja problem pritiskanja nekih prečica tastature istovremeno (na primer, tastera koji su blizu jedan drugom), ali ne i ostale.</p>
+  <p>For example, if you have sticky keys turned on but press <key>Super</key>
+  and <key>Tab</key> simultaneously, sticky keys would not wait for you to
+  press another key if you had this option turned on. It <em>would</em> wait if
+  you only pressed one key, however. This is useful if you are able to press
+  some keyboard shortcuts simultaneously (for example, keys that are close
+  together), but not others.</p>
 
   <p>Izaberite <gui>Isključi ako su dva tastera pritisnuta istovremeno</gui> da uključite ovo.</p>
 

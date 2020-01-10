@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="video-sending" xml:lang="sl">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="video-sending" xml:lang="sl">
 
   <info>
     <link type="guide" xref="media#videos"/>
+    <desc>Preverijo, da imajo nameščene prave kodeke.</desc>
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
-    <revision pkgversion="3.12.1" date="2014-03-30" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
-    <revision pkgversion="3.17.90" date="2015-08-30" status="final"/>
 
     <credit type="author">
       <name>Dokumentacijski projekt GNOME</name>
@@ -14,54 +12,25 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Preverijo, da imajo nameščene prave kodeke.</desc>
   </info>
 
-  <title>Other people can’t play the videos I made</title>
+<title>Drugi ljudje ne morejo predvajati mojih videoposnetkov</title>
 
   <p>V primeru, da ste naredili video na svojem računalniku z Linuxom in ga poslali nekomu, ki uporablja Windows ali Mac OS, bo morda imel težave z njegovim predvajanjem.</p>
 
   <p>Da bi lahko predvajala vaš videoposnetek, mora imeti oseba, ki ste ji poslali videoposnetek, nameščene prave <em>kodeke</em>. Kodek je majhen program, ki ve, kako video prikazati na zaslonu. Obstaja veliko različnih vrst videa in vsaka za predvajanje zahteva svoj kodek.</p>
+<list>
+    <item><p>Odprite program <app>Datoteke</app> iz pregleda <gui>Dejavnosti</gui>.</p></item>
+    <item><p>Desno kliknite na video datoteko in izberite <gui>Lastnosti</gui>.</p></item>
+    <item><p>Pojdite v zavihek <gui>Zvok/Video</gui> in preverite kateri <gui>kodek</gui> je naveden pod <gui>Video</gui>.</p></item>
+</list>
 
-  <list>
-    <item>
-      <p>Open <app>Files</app> from the
-      <gui xref="shell-introduction#activities">Activities</gui> overview.</p>
-    </item>
-    <item>
-      <p>Right-click on the video file and select <gui>Properties</gui>.</p>
-    </item>
-    <item>
-      <p>Go to the <gui>Audio/Video</gui> or <gui>Video</gui> tab and look at
-      which <gui>Codec</gui> are listed under <gui>Video</gui> and
-      <gui>Audio</gui> (if the video also has audio).</p>
-    </item>
-  </list>
+  <p>Osebo s težavami s predvajanjem vprašajte, če ima nameščen pravi kodek. Morda jim bo pomagalo iskanje po spletu z imenom kodeka in njihovega video programa. Na primer, če vaš video uporablja vrsto <em>Theora</em> in imate prijatelja, ki uporablja Windows Media Player in si ga želite ogledati, iščite "theora windows media player". Pogosto boste lahko pravi kodek prejeli brezplačno, če še ni nameščen.</p>
 
-  <p>Ask the person having problems with playback if they have the right codec
-  installed. They may find it helpful to search the web for the name of the
-  codec plus the name of their video playback application. For example, if your
-  video uses the <em>Theora</em> format and you have a friend using Windows
-  Media Player to try and watch it, search for “theora windows media player”.
-  You will often be able to download the right codec for free if it’s not
-  installed.</p>
+  <p>Če ne morete najti pravega kodeka, poskusite <link href="http://www.videolan.org/vlc/">predvajalnik VLC</link>. Deluje na Windows, Mac OS in Linuxu in podpira veliko različnih vrst videa. Če tudi to ne deluje, poskusite svoj videoposnetek pretvoriti v drugo vrsto. To lahko stori večina urejevalnikov videa, na voljo pa so tudi namenski programi za pretvarjanje videa. Preverite namestilnik programov za ogled kaj je na voljo.  </p>
 
-  <p>If you can’t find the right codec, try the
-  <link href="http://www.videolan.org/vlc/">VLC media player</link>. It works
-  on Windows and Mac OS as well as Linux, and supports a lot of different video
-  formats. Failing that, try converting your video into a different format.
-  Most video editors are able to do this, and specific video converter
-  applications are available. Check the software installer application to see
-  what’s available.</p>
-
-  <note>
-    <p>There are a few other problems which might prevent someone from playing
-    your video. The video could have been damaged when you sent it to them
-    (sometimes big files aren’t copied across perfectly), they could have
-    problems with their video playback application, or the video may not have
-    been created properly (there could have been some errors when you saved the
-    video).</p>
-  </note>
-
+<note>
+  <p>Obstaja še nekaj drugih težav, ki lahko nekomu preprečijo predvajanje vašega videoposnetka. Video je lahko bil ob pošiljanju poškodovan (včasih velike datoteke niso pravilno kopirane), lahko imajo težave s svojim programom za predvajanje videa ali pa video ni bil pravilno ustvarjen (ob shranjevanju videoposnetka je morda prišlo do nekaj napak).</p>
+</note>
+	
 </page>

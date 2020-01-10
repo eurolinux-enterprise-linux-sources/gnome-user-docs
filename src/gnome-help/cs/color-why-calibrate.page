@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="color-why-calibrate" xml:lang="cs">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="color-why-calibrate" xml:lang="cs">
 
   <info>
     <link type="guide" xref="color#calibration"/>
-    <desc>Kalibrace je důležitá, když se staráte o věrnost barev, které zobrazujete nebo tisknete.</desc>
+    <desc>Calibrating is important if you care about the colors you display or print.</desc>
 
     <credit type="author">
       <name>Richard Hughes</name>
@@ -16,24 +16,32 @@
       <mal:email>adamatousek@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Marek Černocký</mal:name>
-      <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014, 2015</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Proč si musím kalibraci dělat sám?</title>
+  <title>Why do I need to do calibration myself?</title>
 
-  <p>Obecné profily jsou obvykle nekvalitní. Když výrobce vytvoří nový model, tak prostě jen vezme pár položek z produktové řady a navzájem je zprůměruje:</p>
+  <p>
+    Generic profiles are usually bad.
+    When a manufacturer creates a new model, they just take a few items
+    from the production line and average them together:
+  </p>
 
-  <media its:translate="no" type="image" src="figures/color-average.png">
-    <p its:translate="yes">Zprůměrované profily</p>
+  <media type="image" src="figures/color-average.png">
+    <p>Averaged profiles</p>
   </media>
 
-  <p>Panely displeje se kus od kusu trochu liší a významně se mění v průběhu stárnutí. U tiskáren působí obtíže také změna typu nebo gramáže papíru, která může úplně znehodnotit stav charakterizace a způsobit, že profil nebude správný.</p>
+  <p>
+    Display panels differ quite a lot from unit to unit and change
+    substantially as the display ages.
+    It is also more difficult for printers, as just changing the type
+    or weight of paper can invalidate the characterization state and
+    make the profile inaccurate.
+  </p>
 
-  <p>Nejlepší cestou, jak zajistit, že budete mít správný profil, je provést si kalibraci vlastními silami nebo si zajistit podporu od externí firmy, která vytvoří profil na základě vašeho přesného stavu charakterizace.</p>
+  <p>
+    The best way of ensuring the profile you have is accurate is by doing
+    the calibration yourself, or by letting an external company supply
+    you with a profile based on your exact characterization state.
+  </p>
 
 </page>

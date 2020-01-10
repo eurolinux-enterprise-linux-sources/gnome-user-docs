@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="user-delete" xml:lang="vi">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="user-delete" xml:lang="vi">
 
   <info>
     <link type="guide" xref="user-accounts#manage"/>
-    <link type="seealso" xref="user-add"/>
-    <link type="seealso" xref="user-admin-explain"/>
-
+    <desc>Xoá người dùng không còn dùng máy tính của bạn.</desc>
     <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -27,14 +22,8 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Xoá người dùng không còn dùng máy tính của bạn.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Nguyễn Thái Ngọc Duy</mal:name>
@@ -42,41 +31,16 @@
       <mal:years>2011-2012.</mal:years>
     </mal:credit>
   </info>
-
   <title>Xoá tài khoản người dùng</title>
 
-  <p>You can <link xref="user-add">add multiple user accounts to your
-  computer</link>. If somebody is no longer using your computer, you can delete
-  that user’s account.</p>
+  <p>Bạn có thể thêm nhiều tài khoản người dùng trên máy tính. Xem <link xref="user-add"/> để biết cách làm. Nếu ai đó không còn dùng máy tính của bạn, bạn có thể xoá tài khoản của người đó.</p>
 
-  <p>You need <link xref="user-admin-explain">administrator privileges</link>
-  to delete user accounts.</p>
-
-  <steps>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Users</gui>.</p>
-    </item>
-    <item>
-      <p>Click <gui>Users</gui> to open the panel.</p>
-    </item>
-    <item>
-      <p>Press <gui style="button">Unlock</gui> in the top right corner and
-      type in your password when prompted.</p>
-    </item>
-    <item>
-      <p>Select the user that you want to delete and press the
-      <gui style="button">-</gui> button, below the list of accounts on the
-      left, to delete that user account.</p>
-    </item>
-    <item>
-      <p>Each user has their own home folder for their files and settings. You
-      can choose to keep or delete the user’s home folder. Click <gui>Delete
-      Files</gui> if you are sure they will not be used anymore and you need to
-      free up disk space. These files are permanently deleted. They cannot be
-      recovered. You may want to back up the files to an external storage device
-      before deleting them.</p>
-    </item>
-  </steps>
-
+<steps>
+  <item><p>Click your name on the top bar, then click the picture next to your
+  name to open the <gui>Users</gui> window.</p></item>
+  <item><p>Nhấn <gui>Bỏ khoá</gui> ở góc trái bên dưới và nhập mật khẩu để cho phép thay đổi. Bạn phải là người dùng quản trị mới có thể xoá tài khoản người dùng.</p></item>
+  <item><p>Select the user you want to delete and click the
+  <gui style="button">-</gui> button.</p></item>
+  <item><p>Mỗi người dùng có thư mục riêng để lưu tập tin của họ và các thiết lập ứng dụng. Bạn có thể chọn giữ hoặc xoá thư mục của người dùng đó. Xoá tập tin nếu bạn chắc chúng sẽ không bao giờ cần đến nữa và bạn cần thêm vùng đĩa trống. Những tập tin này sẽ bị xoá vĩnh viễn, không thể được phục hồi. Bạn có thể muốn sao lưu sang ổ đĩa ngoài hoặc CD trước khi xoá.</p></item>
+</steps>
 </page>

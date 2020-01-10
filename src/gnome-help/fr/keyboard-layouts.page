@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="keyboard-layouts" xml:lang="fr">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="keyboard-layouts" xml:lang="fr">
   <info>
     <link type="guide" xref="prefs-language"/>
     <link type="guide" xref="keyboard" group="i18n"/>
     <link type="guide" xref="keyboard-shortcuts-set"/>
 
     <revision pkgversion="3.8" version="0.3" date="2013-04-30" status="review"/>
-    <revision pkgversion="3.10" date="2013-10-28" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
 
     <credit type="author copyright">
       <name>Shaun McCance</name>
@@ -27,15 +24,10 @@
       <name>Juanjo Marín</name>
       <email>juanj.marin@juntadeandalucia.es</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-      <years>2013</years>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Ajouter des agencements au clavier et basculer entre eux.</desc>
+    <desc>Add keyboard layouts and switch between them.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Luc Pionchon</mal:name>
@@ -52,13 +44,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Julien Hardelin</mal:name>
       <mal:email>jhardlin@orange.fr</mal:email>
-      <mal:years>2011, 2013</mal:years>
+      <mal:years>2011</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -84,62 +76,78 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Alexandre Franke</mal:name>
-      <mal:email>alexandre.franke@gmail.com</mal:email>
-      <mal:years>2015</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Utilisation d'agencements de clavier alternatifs</title>
+  <title>Use alternative keyboard layouts</title>
 
   <p>Il existe des centaines d'agencements de claviers différents pour les différentes langues. Même pour une seule langue, il existe souvent de nombreux agencements de clavier, comme l'agencement Dvorak pour l'anglais. Vous pouvez modifier votre clavier afin qu'il se comporte comme un autre clavier, sans tenir compte des lettres et des symboles imprimés sur les touches. C'est utile si vous jonglez souvent entre plusieurs langues.</p>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Region &amp; Language</gui>.</p>
+     <p>Click your name on the top bar and select <gui>Settings</gui>.</p>
     </item>
     <item>
-      <p>Cliquez sur <gui>Pays &amp; langue</gui> pour ouvrir le panneau.</p>
+     <p>Open <gui>Region &amp; Language</gui>.</p>
     </item>
     <item>
-      <p>Cliquez sur le bouton<gui>+</gui> dans la partie <gui>Sources d'entrées</gui>, sélectionnez la langue associée à l'agencement, puis sélectionnez un agencement et cliquez sur <gui>Ajouter</gui>.</p>
+     <p>Click the <key>+</key> button, select a layout, and click
+     <gui>Add</gui>.</p>
     </item>
+    <!--
+    https://bugzilla.gnome.org/show_bug.cgi?id=640774
+    &
+    https://bugzilla.gnome.org/show_bug.cgi?id=689853
+    -->
   </steps>
 
-  <note style="tip">
-    <p>If there are multiple user accounts on your system, there is a separate
-    instance of the <gui>Region &amp; Language</gui> panel for the login screen.
-    Click the <gui>Login Screen</gui> button at the top right to toggle between
-    the two instances.</p>
-
-    <p>Some rarely used keyboard layout variants are not available by default when you click
-    the <gui>+</gui> button. To make also those input sources available you can open a terminal
-    window by pressing <keyseq><key>Ctrl</key><key>Alt</key><key>T</key></keyseq>
-    and run this command:</p>
-    <p><cmd its:translate="no">gsettings set org.gnome.desktop.input-sources show-all-sources true</cmd></p>
-  </note>
-
   <note style="sidebar">
-    <p>Vous pouvez afficher l'aperçu d'un agencement en sélectionnant celui-ci dans la liste des <gui>Sources d'entrées</gui> et en cliquant sur <gui><media its:translate="no" type="image" src="figures/input-keyboard-symbolic.png" width="16" height="16"><span its:translate="yes">aperçu</span></media></gui></p>
+    <p>You can preview an image of any layout by selecting it in the list and
+    clicking <gui><media type="image" src="figures/input-keyboard-symbolic.png" width="16" height="16">preview</media></gui></p>
   </note>
 
-  <p>Certaines langues offrent des options de configurations supplémentaires. Vous pouvez les identifier grâce à l'icône <gui><media its:translate="no" type="image" src="figures/system-run-symbolic.svg" width="16" height="16"><span its:translate="yes">aperçu</span></media></gui> qui les accompagne. Pour accéder à ces paramètres supplémentaires, sélectionnez la langue dans la liste des <gui>Source d'entrées</gui> et appuyez sur le nouveau bouton <gui style="button"><media its:translate="no" type="image" src="figures/emblem-system-symbolic.svg" width="16" height="16"><span its:translate="yes">préférences</span></media></gui>.</p>
+  <p>Certain languages offer some extra configuration options. You can
+  identify those languages because they have an icon
+  <gui><media type="image" src="figures/system-run-symbolic.svg" width="16" height="16">preview</media></gui> depicted. If you want to access these
+  extra parameters, select the language from the <gui>Input Source</gui> list 
+  and a new
+  <gui style="button"><media type="image" src="figures/emblem-system-symbolic.svg" width="16" height="16">preview</media></gui> button will give you access to
+  the extra settings.</p>
 
   <p>When you use multiple layouts, you can choose to have all windows use the
   same layout or to set a different layout for each window. Using a different
-  layout for each window is useful, for example, if you’re writing an article
+  layout for each window is useful, for example, if you're writing an article
   in another language in a word processor window. Your keyboard selection will
   be remembered for each window as you switch between windows. Press the
   <gui style="button">Options</gui> button to select how you want to manage
   multiple layouts.</p>
 
-  <p>La barre du haut affiche un court indicateur de l'agencement actuel, par exemple <gui>fr</gui> pour un clavier français standard. Cliquez sur cet indicateur et choisissez l'agencement que vous voulez utiliser dans le menu déroulant. Si la langue choisie possède des paramètres supplémentaires, ils s'affichent sous la liste des agencements disponibles. Cela vous donne une vue générale rapide de vos paramètres. Vous pouvez aussi ouvrir l'image de l'agencement clavier actuel et vous y référer en cas de besoin.</p>
+  <p>The top bar will display a short identifier for the current layout, such as
+  <gui>en</gui> for the standard English layout. Click the layout indicator and
+  select the layout you want to use from the menu. If the selected language has
+  any extra settings, they will be shown below the list of available layouts.
+  This gives you a quick overview of your settings. You can also open an image
+  with the current keyboard layout for reference.</p>
 
-  <p>La façon la plus rapide de passer à un autre agencement du clavier est d'utiliser les <gui>raccourcis clavier</gui> de la <gui>Source d'entrées</gui>. Ces raccourcis ouvrent le sélecteur <gui>Source d'entrées</gui> où vous pouvez vous déplacer en avant et en arrière. Par défaut, il est possible de passer à la source d'entrées suivante avec <keyseq><key xref="keyboard-key-super">Logo</key><key>Espace</key></keyseq> et à la précédente par <keyseq><key>Maj</key><key>Logo</key><key>Espace</key></keyseq>. Vous pouvez modifier ces raccourcis dans les paramètres du <gui>Clavier</gui>.</p>
+  <p>The fastest way to change to another layout is by using the 
+  <gui>Input Source</gui> <gui>Keyboard Shortcuts</gui>. These shortcuts open 
+  the <gui>Input Source</gui> chooser where you can move forward and backward. 
+  By default, you can switch to the next input source with 
+  <keyseq><key xref="keyboard-key-super">Super</key><key>Space</key>
+  </keyseq> and to the previous one with <keyseq><key>Shift</key><key>Super</key>
+  <key>Space</key></keyseq>. You can change these shortcuts in the 
+  <gui>Keyboard</gui> settings.</p>
 
   <p><media type="image" src="figures/input-methods-switcher.png"/></p>
+
+  <comment>
+    <cite date="2012-02-19">shaunm</cite>
+    <p>We're totally copping out on the custom options. That dialog is a
+    monster, and needs a reference. Note that the options in there are
+    dynamic from the X server. We might not get a definitive reference
+    of everything ever, but let's do our best. Make a separate page.
+    Don't clutter this page with that crap.</p>
+    <p>Also, we should identify common uses of those options and create
+    task pages for them.</p>
+  </comment>
 
 </page>

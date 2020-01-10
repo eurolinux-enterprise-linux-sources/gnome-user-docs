@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="backup-thinkabout" xml:lang="sr">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="tip" id="backup-thinkabout" xml:lang="sr">
 
   <info>
     <link type="guide" xref="files#backup"/>
+    <desc>Списак фасцикли у којима можете да пронађете документа, датотеке и подешавања која ћете желети да причувате у резерви.</desc>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
 
     <credit type="author">
       <name>Тифани Антополоски</name>
@@ -21,8 +21,6 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Списак фасцикли у којима можете да пронађете документа, датотеке и подешавања која ћете желети да причувате у резерви.</desc>
   </info>
 
   <title>Где могу да пронађем датотеке за које желим да направим резерву?</title>
@@ -32,19 +30,19 @@
 <list>
  <item>
   <p>Личне датотеке (документа, музика, фотографије и видео записи)</p>
-  <p its:locNote="translators: xdg dirs are localised by package xdg-user-dirs and need to be translated.  You can find the correct translations for your language here: http://translationproject.org/domain/xdg-user-dirs.html">Ове датотеке се уобичајено налазе у вашој личној фасцикли (<file>/home/ваше_име</file>). Могу бити у подфасциклама као што је Радна површ, Документа, Слике, Музика и Видео).</p>
+  <p xmlns:its="http://www.w3.org/2005/11/its" its:locNote="translators: xdg dirs are localised by package xdg-user-dirs and need to be translated.  You can find the correct translations for your language here: http://translationproject.org/domain/xdg-user-dirs.html">Ове датотеке се уобичајено налазе у вашој личној фасцикли (<file>/home/ваше_име</file>). Могу бити у подфасциклама као што је Радна површ, Документа, Слике, Музика и Видео).</p>
   <p>Ако ваш медијум за резерву има довољно простора (ако је то спољни чврсти диск, на пример), узмите у обзир прављење резерве читаве личне фасцикле. Можете да сазнате колико простора на диску заузима ваша лична фасцикла користећи <app>Анализер искоришћености диска</app>.</p>
  </item>
 
  <item>
   <p>Скривене датотеке</p>
-  <p>Свака датотека или фасцикла чији назив почиње тачком (.) је скривена по основи. Да прикажете скривене датотеке, кликните на дугме <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">Могућности прегледа</span></media></gui> на траци алата, и затим изаберите <gui>Прикажи скривене датотеке</gui>, или притисните <keyseq><key>Ктрл</key><key>Н</key></keyseq>. И њих можете да умножите у место резерве као сваку другу датотеку.</p>
+  <p>Свака датотека или фасцикла чији назив почиње тачком (.) је скривена по основи. Да прикажете скривене датотеке, кликните<guiseq><gui>Преглед</gui><gui>Прикажи скривене датотеке</gui></guiseq> или притисните <keyseq><key>Ктрл</key><key>H</key></keyseq>. И њих можете да умножите у место резерве као сваку другу датотеку.</p>
  </item>
 
  <item>
   <p>Лична подешавања (поставке радне површи, теме, и подешавања програма)</p>
   <p>Већина програма чува своја подешавања у скривеним фасциклама у вашој личној фасцикли (погледајте горе о томе шта су то скривене датотеке).</p>
-  <p>Већина ваших подешавања програма биће сачувана у скривеним фасциклама <file>.config</file>, и <file>.local</file> у вашој личној фасцикли.</p>
+  <p>Већина подешавања ваших програма ће бити сачувана у фасциклама <file>.config</file>, <file>.gconf</file>, <file>.gnome2</file>, и <file>.local</file> у вашој личној фасцикли.</p>
  </item>
 
  <item>

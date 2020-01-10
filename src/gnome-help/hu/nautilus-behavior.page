@@ -7,7 +7,6 @@
     <desc>Fájlok megnyitása egy kattintással, végrehajtható szövegfájlok futtatása vagy megjelenítése, és a Kuka működése.</desc>
 
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -25,10 +24,6 @@
       <name>Sindhu S</name>
       <email>sindhus@live.in</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -40,7 +35,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Kelemen Gábor</mal:name>
       <mal:email>kelemeng at gnome dot hu</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015, 2016, 2017</mal:years>
+      <mal:years>2011, 2012, 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -58,12 +53,6 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Lukács Bence</mal:name>
       <mal:email>lukacs.bence1 at gmail dot com</mal:email>
-      <mal:years>2011</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Nagy Zoltán</mal:name>
-      <mal:email>dzodzie at gmail dot com</mal:email>
       <mal:years>2011</mal:years>
     </mal:credit>
   </info>
@@ -102,7 +91,7 @@
 
  <p>Ha a <gui>Kérdés minden alkalommal</gui> lehetőséget választja, akkor egy ablak meg fogja kérdezni, hogy futtatni vagy megjeleníteni szeretné-e a kijelölt szövegfájlt.</p>
 
- <p>A végrehajtható fájlokat <em>parancsfájloknak</em> is nevezik. A <file>~/.local/share/nautilus/scripts</file> mappában lévő összes parancsfájl megjelenik a fájlok helyi menüjének <gui style="menuitem">Parancsfájlok</gui> almenüjében. Amikor egy parancsfájlt végrehajt a helyi menüből, akkor az összes kijelölt fájl paraméterként átadásra kerül a parancsfájlnak. Egy parancsfájl végrehajtásához egy fájlon:</p>
+ <p>A végrehajtható fájlokat parancsfájloknak is nevezik. A <file>~/.local/share/nautilus/scripts</file> mappában lévő összes parancsfájl megjelenik a fájlok helyi menüjének <gui style="menuitem">Parancsfájlok</gui> almenüjében. Amikor egy parancsfájlt végrehajt a helyi menüből, akkor az összes kijelölt fájl paraméterként átadásra kerül a parancsfájlnak. Egy parancsfájl végrehajtásához egy fájlon:</p>
 
 <steps>
   <item>
@@ -121,7 +110,6 @@
  </note>
 
 </section>
-
 <section id="trash">
 <info>
 <link type="seealso" xref="files-delete"/>
@@ -131,8 +119,15 @@
 
 <terms>
  <item>
-  <title><gui>Kérdés a Kuka ürítése előtt</gui></title>
+  <title><gui>Kérdés a Kuka ürítése vagy fájlok törlése előtt</gui></title>
   <p>Ez a beállítás alapesetben be van jelölve. A Kuka ürítésekor egy üzenet jelenik meg, amely a Kuka ürítésének vagy a fájlok törlésének megerősítését kéri.</p>
+ </item>
+ <item>
+  <title><gui>Törlés a Kuka megkerülésével</gui></title>
+  <p>Ezen beállítás egy <gui>Törlés</gui> menüpontot ad a <app>Fájlok</app> alkalmazásban elemekre kattintáskor megjelenő helyi menühöz.</p>
+<note style="warning">
+<p>A <gui>Törlés</gui> menüpont használatával való törlés megkerüli a Kukát. Az így törölt elem véglegesen eltávolításra kerül a rendszerről. A törölt elem nem állítható vissza.</p>
+</note>
  </item>
 </terms>
 </section>

@@ -1,94 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="power-closelid" xml:lang="gl">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="power-closelid" xml:lang="gl">
 
   <info>
     <link type="guide" xref="power"/>
     <link type="seealso" xref="power-suspendfail"/>
-    <link type="seealso" xref="power-suspend"/>
-
     <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
-    <revision pkgversion="3.10" date="2013-11-08" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-    <revision pkgversion="3.26" date="2017-09-30" status="candidate"/>
 
+    <desc>Os portátiles suspéndense cando se pecha a tapa para aforrar enerxía.</desc>
     <credit type="author">
       <name>Proxecto de documentación de GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
-    <credit type="author editor">
+    <credit type="editor">
       <name>Ekaterina Gerasimova</name>
       <email>kittykat3756@gmail.com</email>
     </credit>
-    <credit type="author editor">
-      <name>Petr Kovar</name>
-      <email>pknbe@volny.cz</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Os portátiles suspéndense cando se pecha a tapa para aforrar enerxía.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2018</mal:years>
+      <mal:years>2011, 2012.</mal:years>
     </mal:credit>
   </info>
 
-  <title>Porque se apaga o meu computador cando pecha a tapa?</title>
+<title>Porque se apaga o meu computador cando pecha a tapa?</title>
 
-  <p>When you close the lid of your laptop, your computer will
-  <link xref="power-suspend"><em>suspend</em></link> in order to save power.
-  This means that the computer is not actually turned off — it has just gone to
-  sleep. You can resume it by opening the lid. If it does not resume, try
-  clicking the mouse or pressing a key. If that still does not work, press the
-  power button.</p>
+<p>Cando pecha a tapa do seu portátil, o seu computador <link xref="power-suspend"><em>suspenderase</em></link> para aforrar enerxía. Isto significa que o computador non está realmente apagado - simplemente está durmindo. Pode espertalo de novo simplemente abrindo a tapa. Se non se esperta, tente premendo algunha tecla do rato ou do teclado. Se aínda así non funciona, prema o botón de arrinque.</p>
 
-  <p>Algúns portátiles non so capaces de suspender correctamente, normalmente porque o seu hardware non é completamente compatíbel co sistema operativo (por exemplo, os controladores de Linux están incompletos). Neste caso, pode atopar que non é capaz de espertar o seu portátil despois de pechar a tapa. Pode probar a <link xref="power-suspendfail">arranxar o problema coa suspension</link>, ou previr que o computador tente suspenderse cando peche a tapa.</p>
+<p>Algúns portátiles non so capaces de suspender correctamente, normalmente porque o seu hardware non é completamente compatíbel co sistema operativo (por exemplo, os controladores de Linux están incompletos). Neste caso, pode atopar que non é capaz de espertar o seu portátil despois de pechar a tapa. Pode probar a <link xref="power-suspendfail">arranxar o problema coa suspension</link>, ou previr que o computador tente suspenderse cando peche a tapa.</p>
 
 <section id="nosuspend">
-  <title>Parar a suspensión do equipo cando se pecha a tapa</title>
-
-  <note style="important">
-    <p>These instructions will only work if you are using <app>systemd</app>.
-    Contact your distribution for more information.</p>
-  </note>
-
-  <note style="important">
-    <p>You need to have <app>Tweaks</app> installed on your computer to
-    change this setting.</p>
-    <if:if xmlns:if="http://projectmallard.org/if/1.0/" test="action:install">
-      <p><link style="button" action="install:gnome-tweaks">Install
-      <app>Tweaks</app></link></p>
-    </if:if>
-  </note>
-
-  <p>Se non quere que o seu computador se suspenda cando pecha a tapa, pode cambiar a preferencia para ese comportamento.</p>
-
-  <note style="warning">
-    <p>Teña moito coidado se cambia esta configuración. Algúns portátiles poden sobrequentarse se están coa tapa pechada, especialmente se están nun lugar pechado como nunha mochila.</p>
-  </note>
-
-  <steps>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui>
-      overview and start typing <gui>Tweaks</gui>.</p>
-    </item>
-    <item>
-      <p>Click <gui>Tweaks</gui> to open the application.</p>
-    </item>
-    <item>
-      <p>Prema na lapela <gui>enerxía</gui>.</p>
-    </item>
-    <item>
-      <p>Switch <gui>Suspend when laptop lid is closed</gui> to
-      <gui>OFF</gui>.</p>
-    </item>
-    <item>
-      <p>Seleccione na xanela <gui>Retoques</gui>.</p>
-    </item>
-  </steps>
-
+ <title>Parar a suspensión do equipo cando se pecha a tapa</title>
+ <p>Se non quere que o seu computador se suspenda cando pecha a tapa, pode cambiar a preferencia para ese comportamento. Para facer que a pantalla se poña en negro, no lugar de suspenderse, cando se peche a tapa:</p>
+ <note style="warning">
+   <p>Teña moito coidado se cambia esta configuración. Algúns portátiles poden sobrequentarse se están coa tapa pechada, especialmente se están nun lugar pechado como nunha mochila.</p>
+ </note>
+ <steps>
+   <item>
+     <p>Abra o aplicativo <app>Terminal</app> desde a vista xeral de <gui>Actividades</gui>.</p>
+   </item>
+   <item>
+     <p>Para cambiar a configuración que usa cando traballa con batería, teclee esta orde e prema <key>Intro</key>:</p>
+     <screen its:translate="no">
+       gsettings set org.gnome.settings-daemon.plugins.power lid-close-battery-action blank
+     </screen>
+   </item>
+   <item>
+     <p>Para cambiar a configuración que usa cando traballa con corrente alterna (CA), teclee esta orde e prema <key>Intro</key>:</p>
+     <screen its:translate="no">
+       gsettings set org.gnome.settings-daemon.plugins.power lid-close-ac-action blank
+     </screen>
+   </item>
+ </steps>
 </section>
 
 </page>

@@ -4,27 +4,24 @@
   <info>
     <link type="guide" xref="printing#problems"/>
 
-    <revision pkgversion="3.10.2" date="2013-11-03" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+    <desc>Отмена незаконченного задания на печать и удаление его из очереди.</desc>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
 
     <credit type="author">
       <name>Фил Булл (Phil Bull)</name>
-      <email>philbull@gmail.com</email>
+      <email its:translate="no">philbull@gmail.com</email>
     </credit>
     <credit type="author">
-      <name>Джим Кэмпбелл (Jim Campbell)</name>
-      <email>jcampbell@gnome.org</email>
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
     </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
     <credit type="editor">
-      <name>Яна Сварова (Jana Svarova)</name>
-      <email>jana.svarova@gmail.com</email>
+      <name>Jana Svarova</name>
+      <email its:translate="no">jana.svarova@gmail.com</email>
       <years>2013</years>
     </credit>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Отмена незаконченного задания на печать и удаление его из очереди.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Александр Прокудин</mal:name>
@@ -35,89 +32,56 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011-2012</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Станислав Соловей</mal:name>
-      <mal:email>whats_up@tut.by</mal:email>
-      <mal:years>2013-2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Юлия Дронова</mal:name>
-      <mal:email>juliette.tux@gmail.com</mal:email>
-      <mal:years>2013-2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Юрий Мясоедов</mal:name>
-      <mal:email>ymyasoedov@yandex.ru</mal:email>
-      <mal:years>2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
 
-  <title>Отменить, приостановить или возобновить задачу печати</title>
+<title>Cancel, pause or release a print job</title>
 
-  <p>Можно отменить ждущие обработки задания печати и удалить их из очереди печати в настройках принтера.</p>
+<p>You can cancel a pending print job and remove it from the queue in the
+ printer settings.</p>
 
-  <section id="cancel-print-job">
-    <title>Отмена задания на печать</title>
+<section id="cancel-print-job">
 
-  <p>Можно отменить печать документа, случайно отправленного на печать, чтобы не расходовать чернила и бумагу.</p>
+<title>Отмена задания на печать</title>
 
-  <steps>
-    <title>Как отменить задание печати:</title>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Printers</gui>.</p>
-    </item>
-    <item>
-      <p>Click <gui>Printers</gui> to open the panel.</p>
-    </item>
-    <item>
-      <p>Нажмите кнопку <gui>Показать задания</gui> на правой стороне диалогового окна <gui>Принтеры</gui>.</p>
-    </item>
-    <item>
-      <p>Cancel the print job by clicking the stop button.</p>
-    </item>
-  </steps>
+  <p>If you accidentally started printing a document, you can cancel the
+ print so that you do not need to waste any ink or paper.</p>
+
+<steps>
+  <title>How to cancel a print job:</title>
+  <item><p>Click your name on the top bar and select
+  <gui>Settings</gui>.</p></item>
+  <item><p>Щёлкните <gui>Принтеры</gui>.</p></item>
+  <item><p>Click the <gui>Show Jobs</gui> button on the right-hand side of the
+  <gui>Printers</gui> dialog.</p></item>
+  <item><p>Cancel the print job by clicking the stop button on the
+  pay-pause-stop symbols.</p></item>
+ </steps>
 
   <p>If this does not cancel the print job like you expected, try holding down
-  the <em>cancel</em> button on your printer.</p>
+ the <gui>Cancel</gui> button on your printer.</p>
 
-  <p>As a last resort, especially if you have a big print job with a lot of
-  pages that will not cancel, remove the paper from the printer’s paper input
-  tray. The printer should realize that there is no paper and will stop
-  printing. You can then try canceling the print job again, or try turning the
-  printer off and then on again.</p>
+  <p>Как последнее средство, особенно если не удаётся отменить крупное задание печати с большим количеством страниц, удалите бумагу из входного лотка принтера. Принтер должен обнаружить отсутствие бумаги и остановить печать. После этого можно снова попытаться отменить задание печати, или попробовать выключить принтер и снова его включить.</p>
 
-  <note style="warning">
-    <p>Be careful that you don’t damage the printer when removing the paper,
-    though. If you would have to pull hard on the paper to remove it, you
-    should probably just leave it where it is.</p>
-  </note>
+ <note style="warning">
+  <p>Будьте осторожны, чтобы не повредить принтер при извлечении бумаги — если для этого приходится слишком сильно тянуть бумагу, возможно, лучше оставить её там, где она есть.</p>
+ </note>
+</section>
 
-  </section>
+<section id="pause-release-print-job">
+<title>Pause and release a print job</title>
+  <p>If you want to pause or release a print job, you can do so by going to the
+  jobs dialog in the printer settings and click the appropriate button.</p>
 
-  <section id="pause-release-print-job">
-    <title>Приостановка и возобновление заданий печати</title>
+ <steps>
+  <item><p>Click your name on the top bar and select
+  <gui>Settings</gui>.</p></item>
+  <item><p>Щёлкните <gui>Принтеры</gui>.</p></item>
+  <item><p>Click the <gui>Show Jobs</gui> button on the right-hand side of the
+  <gui>Printers</gui> dialog and either pause or release the print job based on
+  your needs.</p></item>
+ </steps>
 
-  <p>Если необходимо приостановить и возобновить задание печати, это можно сделать из диалогового окна заданий печати в настройках принтера, нажав соответствующую кнопку.</p>
-
-  <steps>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Printers</gui>.</p>
-    </item>
-    <item>
-      <p>Click <gui>Printers</gui> to open the panel.</p>
-    </item>
-    <item>
-      <p>Нажмите кнопку <gui>Показать задания</gui> на правой стороне диалогового окна <gui>Принтеры</gui> и приостановите/возобновите задание печати при необходимости.</p>
-    </item>
-  </steps>
-
-  </section>
-
+</section>
 </page>

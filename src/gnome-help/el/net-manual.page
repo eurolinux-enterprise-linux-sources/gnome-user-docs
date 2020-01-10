@@ -1,115 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-manual" xml:lang="el">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="net-manual" xml:lang="el">
   <info>
     <link type="guide" xref="net-wired"/>
     <link type="guide" xref="net-wireless"/>
 
     <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
-    <revision pkgversion="3.10" date="2013-11-11" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-    <revision pkgversion="3.28" date="2018-03-28" status="review"/>
 
     <credit type="author">
       <name>Phil Bull</name>
       <email>philbull@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
 
-    <desc>You may have to enter network settings if they don’t get assigned
-    automatically.</desc>
+    <desc>Εάν οι ρυθμίσεις δικτύου δεν ανατίθενται αυτόματα, μπορεί να πρέπει να τις εισάγετε ο ίδιος.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
-      <mal:email>team@gnome.gr</mal:email>
-      <mal:years>2009-2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
       <mal:email>dmtrs32@gmail.com</mal:email>
-      <mal:years>2012-2015</mal:years>
+      <mal:years>2012, 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:name> Φώτης Τσάμης</mal:name>
       <mal:email>ftsamis@gmail.com</mal:email>
       <mal:years>2009</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:name> Μάριος Ζηντίλης</mal:name>
       <mal:email>m.zindilis@dmajor.org</mal:email>
       <mal:years>2009, 2010</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Θάνος Τρυφωνίδης</mal:name>
-      <mal:email>tomtryf@gnome.org</mal:email>
-      <mal:years>2012-2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Μαρία Μαυρίδου</mal:name>
-      <mal:email>mavridou@gmail.com</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:name> Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
     </mal:credit>
   </info>
 
-  <title>Χειροκίνητος ορισμός ρυθμίσεων δικτύου</title>
+<title>Χειροκίνητος ορισμός ρυθμίσεων δικτύου</title>
 
-  <p>If your network doesn’t automatically assign network settings to your
-  computer, you may have to manually enter the settings yourself. This topic
-  assumes that you already know the correct settings to use. If not, you may
-  need to ask your network administrator or look at the settings of your router
-  or network switch.</p>
+<p>Εάν το δίκτυο σας δεν εκχωρεί αυτόματα ρυθμίσεις δικτύου στον υπολογιστή σας, μπορεί να πρέπει να εισάγετε χειροκίνητα τις ρυθμίσεις ο ίδιος. Αυτό το θέμα υποθέτει ότι ήδη ξέρετε τις σωστές ρυθμίσεις για χρήση. Εάν όχι, ίσως χρειαστείτε να τις ζητήσετε από τον διαχειριστή του δικτύου ή να κοιτάξετε τις ρυθμίσεις του δρομολογητή ή του διακόπτη δικτύου.</p>
 
-  <steps>
-    <title>Για να ορίσετε χειροκίνητα τις ρυθμίσεις δικτύου:</title>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui>
-      overview and start typing <gui>Settings</gui>.</p>
-    </item>
-    <item>
-      <p>Click on <gui>Settings</gui>.</p>
-    </item>
-    <item>
-      <p>In the left pane, select the network connection that you want to set
-      up manually. If you plug in to the network with a cable, click
-      <gui>Network</gui>. Otherwise click <gui>Wi-Fi</gui>.</p>
-      <p>Βεβαιωθείτε ότι η ασύρματη κάρτα σας είναι ενεργή ή το καλώδιο δικτύου είναι συνδεμένο.</p>
-    </item>
-    <item>      
-      <p>Click the
-      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
-      button.</p>
-      <note>
-        <p>For a <gui>Wi-Fi</gui> connection, the 
-        <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
-        button will be located next to the active network.</p>
-      </note>
-    </item>
-    <item>
-      <p>Click on <gui>IPv4</gui> or <gui>IPv6</gui> in the left pane
-      and change the <gui>Addresses</gui> to <em>Manual</em>.</p>
-    </item>
-    <item>
-      <p>Type in the <gui xref="net-what-is-ip-address">IP Address</gui> and
-      <gui>Gateway</gui>, as well as the appropriate <gui>Netmask</gui>.</p>
-    </item>
-    <item>
-      <p>Στην ενότητα <gui>DNS</gui>, αλλάξτε το <gui>Αυτόματο</gui> σε <gui>ΟΧΙ</gui>. Εισάγετε τη διεύθυνση IP ενός διακομιστή DNS που θέλετε να χρησιμοποιήσετε. Εισάγετε πρόσθετες διευθύνσεις διακομιστή DNS χρησιμοποιώντας το πλήκτρο <gui>+</gui>.</p>
-    </item>
-    <item>
-      <p>Στην ενότητα <gui>Διαδρομές</gui>, αλλάξτε το <gui>Αυτόματο</gui> σε <gui>ΟΧΙ</gui>. Εισάγετε τη <gui>Διεύθυνση</gui>, τη <gui>Μάσκα δικτύου</gui>, τη <gui>Πύλη δικτύου</gui> και <gui>Μετρικό</gui> για τη διαδρομή που θέλετε να χρησιμοποιήσετε. Εισάγετε επιπρόσθετες διαδρομές χρησιμοποιώντας το πλήκτρο <gui>+</gui>.</p>
-    </item>
-    <item>
-      <p>Κάντε κλικ στο <gui>Εφαρμογή</gui>. Αν δεν είσαστε συνδεμένοι στο δίκτυο, κάντε κλικ στην περιοχή κατάστασης συστήματος στην πάνω γραμμή και συνδεθείτε. Δοκιμάστε τις ρυθμίσεις δικτύου προσπαθώντας να επισκεφτείτε έναν ιστότοπο ή κοιτώντας κοινόχρηστα αρχεία στο δίκτυο για παράδειγμα.</p>
-    </item>
-  </steps>
+<steps>
+  <title>Για να ορίσετε χειροκίνητα τις ρυθμίσεις δικτύου:</title>
+ <item>
+  <p>Πατήστε στο εικονίδιο δικτύου στη πάνω γραμμή και επιλέξτε <gui>Ρυθμίσεις δικτύου</gui>.</p>
+ </item>
+
+ <item>
+  <p>Επιλέξτε τη σύνδεση δικτύου που θέλετε να ορίσετε χειροκίνητα και πατήστε <gui>ρύθμιση</gui>. Για παράδειγμα, εάν συνδέεστε στο δίκτυο με ένα καλώδιο, κοιτάξτε <gui>ενσύρματο</gui>.</p>
+  <p>Βεβαιωθείτε ότι η ασύρματη κάρτα σας είναι ενεργή ή το καλώδιο δικτύου είναι συνδεμένο. Αλλιώς, δεν θα μπορείτε να πατήσετε <gui>ρύθμιση</gui>.</p>
+ </item>
+
+ <item>
+  <p>Πηγαίνετε στην καρτέλα <gui>ρυθμίσεις IPv4</gui> και αλλάξτε τη <gui>μέθοδο</gui> σε <gui>χειροκίνητη</gui>.</p>
+ </item>
+
+ <item>
+  <p>Πατήστε <gui>προσθήκη</gui> και πληκτρολογήστε <em>διεύθυνση IP</em>, <em>μάσκα δικτύου</em> και <em>προεπιλεγμένη διεύθυνση πύλης δικτύου IP</em> στις αντίστοιχες στήλες στη λίστα <gui>διευθύνσεις</gui>. Πατήστε <key>εισαγωγή</key> ή <key>στηλοθέτης</key> μετά την πληκτρολόγηση κάθε διεύθυνσης.</p>
+  <p>Αυτές οι τρεις διευθύνσεις πρέπει να είναι διευθύνσεις IP· δηλαδή, πρέπει να είναι τέσσερις αριθμοί που χωρίζονται με τελείες(π.χ. 123.45.6.78).</p>
+ </item>
+
+ <item>
+  <p>Πληκτρολογήστε τις διευθύνσεις IP των εξυπηρετητών DNS που θέλετε να χρησιμοποιήσετε στο αντίστοιχο πεδίο, διαχωριζόμενων με κόμματα.</p>
+ </item>
+
+ <item>
+  <p>Πατήστε <gui>αποθήκευση</gui>. Εάν δεν είσαστε συνδεμένοι στο δίκτυο, πατήστε το εικονίδιο του δικτύου στην πάνω γραμμή και συνδεθείτε. Δοκιμάστε τις ρυθμίσεις δικτύου προσπαθώντας να επισκεφτείτε μια ιστοσελίδα ή κοιτώντας κοινόχρηστα αρχεία στο δίκτυο για παράδειγμα.</p>
+ </item>
+
+</steps>
 
 </page>

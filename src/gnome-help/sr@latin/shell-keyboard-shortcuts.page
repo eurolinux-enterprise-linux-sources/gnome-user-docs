@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="tip" version="1.0 ui/1.0" id="shell-keyboard-shortcuts" xml:lang="sr-Latn">
-
+<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="tip" id="shell-keyboard-shortcuts" xml:lang="sr-Latn">
   <info>
     <link type="guide" xref="tips"/>
     <link type="guide" xref="keyboard"/>
-    <link type="guide" xref="shell-overview#apps"/>
+    <link type="guide" xref="shell-overview"/>
     <link type="seealso" xref="keyboard-key-super"/>
+    <desc>Krećite se po radnoj površi koristeći tastaturu.</desc>
 
     <revision pkgversion="3.8.0" version="0.4" date="2013-04-23" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.20" date="2016-08-13" status="candidate"/>
 
     <credit type="author copyright">
       <name>Šon Mek Kens</name>
@@ -24,10 +22,7 @@
       <name>Ekaterina Gerasimova</name>
       <email>kittykat3756@gmail.com</email>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Krećite se po radnoj površi koristeći tastaturu.</desc>
   </info>
 
 <title>Korisne prečice tastature</title>
@@ -55,18 +50,12 @@
       <p>Ova prečica koristi <key>`</key> na SAD tastaturama, na kojima se taster <key>`</key> nalazi iznad tastera <key>Tab</key>. Na svim ostalim tastaturama, prečica je <key>Super</key> plus taster iznad tastera <key>Tab</key>.</p>
     </td>
   </tr>
-  <tr xml:id="alt-escape">
-    <td><p><keyseq><key>Alt</key><key>Izađi</key></keyseq></p></td>
-    <td>
-      <p>Switch between windows in the current workspace. Hold down
-      <key>Shift</key> for reverse order.</p>
-    </td>
-  </tr>
   <tr xml:id="ctrl-alt-tab">
     <!-- To be updated to <key>Tab</key> in the future. -->
     <td><p><keyseq><key>Ktrl</key><key>Alt</key><key>Tab</key></keyseq></p></td>
     <td>
-      <p>Postavlja prvi plan tastature na gornju traku. U pregledu <gui>Aktivnosti</gui>, prebacuje prvi plan tastature između gornje trake, poletnika, pregleda prozora, spiska programa, polja za pretragu, i fioke poruka. Koristite tastere strelica za kretanje.</p>
+      <p>Postavlja prvi plan tastature na gornju traku. U pregledu <gui>Aktivnosti</gui>, prebacuje prvi plan tastature između gornje trake, poletnika, pregleda prozora, spiska programa, i polja za pretragu. Koristite tastere strelica za kretanje.</p>
+      <p>Trenutno nije moguće da koristite tastere strelica za kretanje po pregledu prozora. Da promenite prozore, izađite iz pregleda i koristite <keyseq><key>Super</key><key>Tab</key></keyseq> i <keyseq><key>Super</key><key>`</key></keyseq>.</p>
     </td>
   </tr>
   <tr xml:id="super-a">
@@ -74,32 +63,26 @@
     <td><p>Prikažite spisak programa.</p></td>
   </tr>
   <tr xml:id="super-updown">
-    <td><p><keyseq><key>Super</key><key>Stranica gore</key></keyseq> ili <keyseq><key>Ktrl</key><key>Alt</key><key>Strelica na gore</key></keyseq>, i <keyseq><key>Super</key><key>Stranica dole</key></keyseq> ili <keyseq><key>Ktrl</key><key>Alt</key><key>Strelica na dole</key></keyseq></p></td>
+    <td><p><keyseq><key>Super</key><key>Stranica gore</key></keyseq> i <keyseq><key>Super</key><key>Stranica dole</key></keyseq></p></td>
     <td><p><link xref="shell-workspaces-switch">Prebacujte se između radnih prostora</link>.</p></td>
   </tr>
   <tr xml:id="super-shift-updown">
     <td><p><keyseq><key>Super</key><key>Šift</key><key>Stranica gore</key></keyseq> i <keyseq><key>Super</key><key>Šift</key><key>Stranica dole</key></keyseq></p></td>
     <td><p><link xref="shell-workspaces-movewindow">Premestite trenutni prozor na drugi radni prostor</link>.</p></td>
   </tr>
-  <tr xml:id="super-shift-left">
-    <td><p><keyseq><key>Super</key><key>Pomak</key><key>←</key></keyseq></p></td>
-    <td><p>Premešta tekući prozor jedan monitor na levo.</p></td>
-  </tr>
-  <tr xml:id="super-shift-right">
-    <td><p><keyseq><key>Super</key><key>Pomak</key><key>→</key></keyseq></p></td>
-    <td><p>Premešta tekući prozor jedan monitor na desno.</p></td>
-  </tr>
   <tr xml:id="ctrl-alt-Del">
     <td><p><keyseq><key>Ktrl</key><key>Alt</key><key>Obriši</key></keyseq></p></td>
-    <td><p><link xref="shell-exit">Isključite</link>.</p></td>
+    <!-- TODO: test, as design team assigns this to 'power off'. -->
+    <td><p><link xref="shell-exit">Odjavite se</link>.</p></td>
   </tr>
   <tr xml:id="ctrl-alt-l">
-    <td><p><keyseq><key>Super</key><key>L</key></keyseq></p></td>
+    <!-- May be renamed to Super+L in the future. -->
+    <td><p><keyseq><key>Ktrl</key><key>Alt</key><key>L</key></keyseq></p></td>
     <td><p><link xref="shell-exit#lock-screen">Zaključajte ekran.</link></p></td>
   </tr>
   <tr xml:id="super-m">
     <td><p><keyseq><key>Super</key><key>M</key></keyseq></p></td>
-    <td><p>Otvorite <link xref="shell-notifications#messagetray">fioku poruka</link>. Pritisnite opet <keyseq><key>Super</key><key>M</key></keyseq> ili <key>Esc</key> da zatvorite.</p></td>
+    <td><p>Otvorite <link xref="shell-notifications#messagingtray">fioku poruka</link>. Pritisnite opet <keyseq><key>Super</key><key>M</key></keyseq> ili <key>Esc</key> da zatvorite.</p></td>
   </tr>
 </table>
 

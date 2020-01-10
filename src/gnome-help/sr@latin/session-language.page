@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="session-language" xml:lang="sr-Latn">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="session-language" xml:lang="sr-Latn">
 
   <info>
     <link type="guide" xref="prefs-language"/>
+    <desc>Prebacite na drugi jezik za korisničko sučelje i tekst pomoći.</desc>
 
     <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
 
     <credit type="author">
       <name>Gnomov projekat dokumentacije</name>
@@ -25,44 +25,39 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Prebacite na drugi jezik za korisničko sučelje i tekst pomoći.</desc>
   </info>
 
   <title>Promenite jezik koji koristite</title>
 
+  <comment>
+    <cite date="2012-02-19">shaunm</cite>
+    <p>Explain how to install support for other languages. Requires us
+    to document software installation.</p>
+  </comment>
+
   <p>Možete da koristite vašu radnu površ i programe na nekom od desetak jezika, koji su obezbeđeni svojim paketima jezika instaliranim na vašem računaru.</p>
 
   <steps>
-    <item>
-      <p>Otvorite pregled <gui xref="shell-introduction#activities">Aktivnosti</gui> i počnite da kucate <gui>Region i jezik</gui>.</p>
-    </item>
-    <item>
-      <p>Kliknite na <gui>Region i jezik</gui> da otvorite panel.</p>
-    </item>
-    <item>
-      <p>Kliknite <gui>Jezik</gui>.</p>
-    </item>
-    <item>
-      <p>Izaberite željeni region i jezik. Ako vaš region i jezik nisu na spisku, pritisnite <gui><media its:translate="no" type="image" mime="image/svg" src="figures/view-more-symbolic.svg"><span its:translate="yes">…</span></media></gui> na dnu spiska da izaberete iz svih dostupnih regiona i jezika.</p>
-    </item>
-    <item>
-      <p>Pritisnite na <gui style="button">Gotovo</gui> da sačuvate.</p>
-    </item>
-    <item>
-      <p>Odgovorite na upit, <gui>Vaša sesija treba da bude ponovo pokrenuta da bi izmene stupile na snagu</gui> tako što ćete kliknuti <gui style="button">Ponovo pokreni sada</gui>, ili kliknite na <gui style="button">×</gui> da kasnije pokrenete ponovo.</p>
-    </item>
+    <item><p>Kliknite na vaše ime na gornjoj traci i izaberite <gui>Podešavanja</gui>.</p></item>
+    <item><p>Otvorite <gui>Region i jezik</gui> i izaberite jezičak <gui>Jezik</gui>.</p></item>
+    <item><p>Izaberite željeni jezik. Početni spisak prikazuje mali skup podržanih jezika. Ako srpski jezik nije na spisku, kliknite na <media type="image" mime="image/svg" src="figures/view-more-symbolic.svg"/>. Neki prevodi mogu biti nepotpuni, a određeni programi možda uopšte ne podržavaju srpski jezik. Svaki neprevedeni tekst će biti prikazan na jeziku na kome je softver originalno razvijen, obično na američkom engleskom.</p></item>
+    <item><p>Odgovorite na upit, <gui>Vaša sesija treba da bude ponovo pokrenuta da bi izmene stupile na snagu</gui> tako što ćete kliknuti <gui style="button">Ponovo pokreni sada</gui>, ili kliknite na <gui style="button">X</gui> da kasnije pokrenete ponovo.</p></item>
   </steps>
-
-  <p>Neki prevodi mogu biti nepotpuni, a određeni programi možda uopšte ne podržavaju srpski jezik. Svaki neprevedeni tekst će biti prikazan na jeziku na kome je softver originalno razvijen, obično na američkom engleskom.</p>
 
   <p>Postoje neke posebne fascikle u vašoj ličnoj fascikli u kojima programi mogu da uskladište stvari kao što su muzika, slike i dokumenti. Ove fascikle koriste standardne nazive u skladu sa vašim jezikom. Kada se ponovo prijavite, bićete upitani da li želite da preimenujete te fascikle na standardne nazive za izabrani jezik. Ako planirate da koristite novi jezik svo vreme, trebali biste da ažurirate nazive fascikli.</p>
 
-  <note style="tip">
-    <p>If there are multiple user accounts on your system, there is a separate
-    instance of the <gui>Region &amp; Language</gui> panel for the login screen.
-    Click the <gui>Login Screen</gui> button at the top right to toggle between
-    the two instances.</p>
-  </note>
+  <section id="system">
+    <title>Promenite jezik sistema</title>
+
+    <p>Kada menjate vaš jezik, menjate ga samo za vaš nalog nakon prijavljivanja. Možete takođe da izmenite <em>jezik sistema</em>, jezik koji se koristi na mestima kao što je ekran za prijavljivanje.</p>
+
+    <steps>
+      <item><p>Kliknite na vaše ime na gornjoj traci i izaberite <gui>Podešavanja</gui>.</p></item>
+      <item><p>Otvorite <gui>Region i jezik</gui> i izaberite jezičak <gui>Jezik</gui>.</p></item>
+      <item><p>Izaberite dugme <gui style="button">Ekran prijavljivanja</gui>.</p></item>
+      <item><p>Potrebna su <link xref="user-admin-explain">Administratorska prava</link>. Unesite vašu lozinku, ili lozinku za traženi administratorski nalog.</p></item>
+      <item><p>Izaberite željeni jezik. Početni spisak prikazuje mali skup podržanih jezika. Ako srpski jezik nije na spisku, kliknite na <media type="image" mime="image/svg" src="figures/view-more-symbolic.svg"/>. Neki prevodi mogu biti nepotpuni, a određeni programi možda uopšte ne podržavaju srpski jezik. Svaki neprevedeni tekst će biti prikazan na jeziku na kome je softver originalno razvijen, obično na američkom engleskom.</p></item>
+    </steps>
+  </section>
 
 </page>

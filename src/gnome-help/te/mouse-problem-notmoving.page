@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="mouse-problem-notmoving" xml:lang="te">
-
-  <info>
+<info>
     <link type="guide" xref="mouse#problems"/>
 
-    <revision pkgversion="3.8" date="2013-03-13" status="candidate"/>
-    <!-- TODO: reorganise page and tidy because it's one ugly wall of text -->
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+    <desc>How to check your mouse if it is not working.</desc>
+
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
 
     <credit type="author">
         <name>ఫిల్ బుల్</name>
@@ -16,21 +15,12 @@
       <name>షాన్ మెక్‌కేన్స్</name>
       <email>shaunm@gnome.org</email>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>How to check why your mouse is not working.</desc>
-  
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Praveen Illa</mal:name>
       <mal:email>mail2ipn@gmail.com</mal:email>
-      <mal:years>2011, 2014. </mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>కృష్ణబాబు క్రొత్తపల్లి</mal:name>
-      <mal:email>kkrothap@redhat.com</mal:email>
-      <mal:years>2013.</mal:years>
+      <mal:years>2011.</mal:years>
     </mal:credit>
   </info>
 
@@ -53,6 +43,59 @@
  </p>
 </section>
 
+<section id="connected">
+ <title>Check that the mouse was recognized by your computer</title>
+ <steps>
+  <item><p>Open the <app>Terminal</app> application from the
+   <gui>Activities</gui> overview.</p></item>
+  <item>
+   <p>
+   In the terminal window, type <cmd>xsetpointer -l | grep Pointer</cmd>,
+    exactly as it appears here,
+   and press <key>Enter</key>.
+   </p>
+  </item>
+  <item>
+   <p>A short list of mouse devices will appear. Check that at least one of the
+   items says <sys>[XExtensionPointer]</sys> next to it, and that one of the
+   <sys>[XExtensionPointer]</sys> items has the name of the mouse to the left of
+   it.</p>
+  </item>
+  <item>
+   <p>If there is no entry that has the name of the mouse followed by
+   <sys>[XExtensionPointer]</sys>, then the mouse was not recognized by your
+   computer. If the entry exists, your mouse was recognized by your computer.
+   In this case you should check that the mouse is
+   <link xref="mouse-problem-notmoving#plugged-in">plugged in</link> and in
+   <link xref="mouse-problem-notmoving#broken">working condition</link>.</p>
+  </item>
+ </steps>
+
+ <comment>
+   <cite date="2012-02-19">shaunm</cite>
+   <p>If we decide to bless a device manager, investigate using that instead
+   of <cmd>xsetpointer</cmd> in these steps.</p>
+ </comment>
+
+ <p>
+ If your mouse has a serial (RS-232) connector, you may need to perform some
+ extra steps to get it working. The steps might depend on the make or model of
+ your mouse.
+ </p>
+
+ <p>
+ It can be complicated to fix problems with mouse detection. Ask for support
+ from your distribution or vendor if you think that your mouse has not been
+ detected properly.
+ </p>
+
+ <comment>
+ <cite date="2012-02-19">Phil Bull</cite>
+  <p>Should provide some useful advice rather than just saying "you might need
+  to perform extra steps".</p>
+ </comment>
+</section>
+
 <section id="broken">
  <title>Check that the mouse actually works</title>
  <p>Plug the mouse in to a different computer and see if it works.</p>
@@ -66,12 +109,10 @@
 <section id="wireless-mice">
  <title>Checking wireless mice</title>
 
-  <list>
-    <item>
-      <p>Make sure the mouse is turned on. There is often a switch on the
-      bottom of the mouse to turn the mouse off completely, so you can take it
-      with you without it constantly waking up.</p>
-    </item>
+ <list>
+   <item><p>Make sure the mouse is turned on. There is often a switch on the
+   bottom of the mouse to turn the mouse off completely, so you can move it
+   from place to place without it constantly waking up.</p></item>
    <item><p>If you are using a Bluetooth mouse, make sure you have actually paired the
    mouse with your computer. See <link xref="bluetooth-connect-device"/>.</p></item>
   <item>
@@ -112,6 +153,12 @@
  you may need to perform some extra steps to get it working. The steps might
  depend on the make or model of your mouse.
  </p>
+
+<comment>
+ <cite date="2012-02-19">Phil Bull</cite>
+ <p>Should provide some useful advice rather than just saying "you might need to
+ perform extra steps".</p>
+</comment>
 </section>
 
 </page>

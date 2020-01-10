@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task a11y" id="a11y-dwellclick" xml:lang="ca">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task a11y" id="a11y-dwellclick" xml:lang="ca">
   <info>
     <link type="guide" xref="mouse"/>
     <link type="guide" xref="a11y#mobility" group="clicking"/>
 
-    <revision pkgversion="3.8.0" date="2013-03-13" status="candidate"/>
-    <revision pkgversion="3.9.92" date="2013-09-18" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="final"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -24,12 +18,9 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
-    <desc>La funció<gui>Clic en passar per sobre</gui> permet fer clic mantenint el ratolí immòbil.</desc>
+    <desc>La característica del clic en pausa (o clic en mantenir) us permet fer clic mantenint immòbil el ratolí.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>David Aguilera</mal:name>
@@ -38,35 +29,38 @@
     </mal:credit>
   </info>
 
-  <title>Simular un clic passant el ratolí per sobre</title>
+  <title>Simular un clic mantenint el ratolí immòbil</title>
 
-  <p>Podeu fer clic o arrossegar simplement movent el punter del ratolí sobre un control o un objecte a la pantalla. Això és útil si us costa moure el ratolí i fer clic al mateix temps. Aquesta funcionalitat s'anomena <gui>Clic en passar per sobre</gui>.</p>
+  <p>You can click or drag simply by hovering your mouse pointer over a control
+  or object on the screen. This is useful if you find it difficult to move the
+  mouse and click at the same time. This feature is called Hover Click or Dwell
+  Click.</p>
 
-  <p>Quan el <gui>Clic en passar per sobre</gui> està actiu, podeu moure el punter del ratolí sobre un control, deixar-hi el ratolí, i aleshores esperar una estona a que el ratolí faci clic per vostè..</p>
+  <p>When Hover Click is enabled, you can move your mouse pointer over a
+  control, let go of the mouse, and then wait for a while before the button
+  will be clicked for you.</p>
 
   <steps>
     <item>
-      <p>Obriu la descripció general de les <gui xref="shell-introduction#activities">Activities</gui>  i comenceu a escriure  <gui>Accés Universal</gui>.</p>
+      <p>Click your name on the top bar and select <gui>Settings</gui>.</p>
     </item>
     <item>
-      <p>Feu clic a <gui>Accés universal</gui> per obrir el quadre.</p>
+      <p>Obriu l'<gui>Accés universal</gui> i seleccioneu <gui>Apuntar i fer clic</gui></p>
     </item>
     <item>
-      <p>Premeu <gui>Assistent pel Clic</gui> a la secció <gui>Apuntant &amp; Clicant</gui>.</p>
-    </item>
-    <item>
-      <p>Canvia <gui>Clic en passar per sobre</gui> a <gui>ON</gui>.</p>
+      <p>Activeu el <gui>Clic en mantenir</gui>.</p>
     </item>
   </steps>
 
-  <p>La finestra <gui>Clic  en passar per sobre</gui> s'obrirà i es quedarà sobre la resta de finestres que tingueu obertes. Podeu utilitzar-la per seleccionar el tipus de clic que voleu que es faci quan passeu per sobre un botó. Per exemple, si seleccioneu <gui>Clic secundari</gui>, el ratolí efectuarà un clic amb el botó secundari quan us mantingueu sobre un botó durant uns pocs segons. Després de fer un doble clic, un clic secundari o un arrossegament, tornareu automàticament al mode «fer clic».</p>
+  <p>La finestra <gui>Clic en mantenir</gui> s'obrirà i es quedarà sobre la resta de finestres que tingueu obertes. Podeu utilitzar-la per seleccionar el tipus de clic que voleu que es faci quan us manteniu sobre un botó. Per exemple, si seleccioneu <gui>Clic secundari</gui>, el ratolí efectuarà un clic amb el botó secundari quan us mantingueu sobre un botó durant uns pocs segons. Després de fer un doble clic, un clic secundari o un arrossegament, tornareu automàticament al mode «fer clic».</p>
 
-  <p>Quan desplaci el punter del ratolí sobre un botó i no el mogui, canviarà gradualment de color. Quan hagi canviat totalment de color, es farà clic sobre el botó.</p>
+  <p>Si manteniu el punter del ratolí sobre un botó i no el moveu, veureu com el primer canvia de color gradualment. Quan hagi canviat el seu color completament, es farà clic al botó.</p>
 
   <p>Utilitzeu la barra lliscant del <gui>Retard</gui> per controlar l'estona que heu de mantenir quiet el ratolí perquè s'efectuï en un clic.</p>
 
-  <p>No és necessari mantenir el ratolí perfectament quiet quan es fa el clic per desplaçament. Està permès que el ratolí es mogui una mica i faci igualment el clic desprès d'una estona. Malgrat tot, si es mou massa el clic no es produirà. </p>
+  <p>No cal que mantingueu el ratolí totalment immòbil per a fer clic. El punter es pot moure una mica i acabar fent el clic. Si es mou massa, però, no es farà clic.</p>
 
-  <p>Ajusteu la configuració del<gui>llindar de moviment</gui> per canviar  quant es pot moure el punter i encara considerar que s'està sobre.</p>
+  <p>Adjust the <gui>Motion threshold</gui> setting to change how much the
+  pointer can move and still be considered to be hovering.</p>
 
 </page>

@@ -1,28 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-vpn-connect" xml:lang="sr-Latn">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="net-vpn-connect" xml:lang="sr-Latn">
   <info>
     <link type="guide" xref="net-wireless"/>
     <link type="guide" xref="net-wired"/>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
-    <revision pkgversion="3.10" date="2013-12-05" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Gnomov projekat dokumentacije</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
-    <credit type="editor">
-      <name>Majkl Hil</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
-    <desc>Podesite VPN vezu na lokalnu mrežu preko interneta.</desc>
+    <desc>VPN vam omogućava da se povežete na lokalnu mrežu preko interneta. Saznajte kako da podesite VPN vezu.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
@@ -36,36 +25,40 @@
  <p>Ako ne postoji Upravnik mreže za vašu vrstu VPN-a, verovatno ćete morati da preuzmete i da instalirate neki softver klijent od kompanije koja obezbeđuje VPN softver. Verovatno ćete morati da pratite malo drugačija uputstva kako biste ga osposobili za rad.</p>
 </note>
 
-<p>Da podesite VPN vezu:</p>
+<p>Kada uradite ovo, možete da podesite VPN mrežu:</p>
 
-  <steps>
-    <item>
-      <p>Otvorite pregled <gui xref="shell-introduction#activities">Aktivnosti</gui> i počnite da kucate <gui>Mreža</gui>.</p>
-    </item>
-    <item>
-      <p>Kliknite na <gui>Mreža</gui> da otvorite panel.</p>
-    </item>
-    <item>
-      <p>Pri dnu spiska sa leve strane, kliknite na dugme <gui>+</gui> da dodate novu vezu.</p>
-    </item>
-    <item>
-      <p>Izaberite <gui>VPN</gui> na spisku sučelja.</p>
-    </item>
-    <item>
-      <p>Izaberite koju vrstu VPN veze imate.</p>
-    </item>
-    <item>
-      <p>Popunite detalje VPN veze, a zatim pritisnite <gui>Dodaj</gui> kada završite.</p>
-    </item>
-    <item>
-      <p>Kada završite podešavanje VPN-a, otvorite <gui xref="shell-introduction#yourname">sistemski izbornik</gui> na desnoj strani gornje trake, kliknite <gui>Isključi VPN</gui> i izaberite <gui>Poveži se</gui>. Možda ćete morati da unesete lozinku za vezu pre nego što se uspostavi. Kada je veza napravljena, videćete ikonicu u obliku katanca na gornjoj traci.</p>
-    </item>
-    <item>
-      <p>Na sreću, uspešno ćete se povezati na VPN. Ako do toga ne dođe, moraćete dva puta da proverite VPN podešavanja. Ovo možete da uradite na tabli <gui>Mreža</gui> koju ste koristili da napravite vezu. Izaberite VPN vezu sa spiska, zatim pritisnite dugme <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">podešavanja</span></media> da pregledate podešavanja.</p>
-    </item>
-    <item>
-      <p>Da isključite VPN, kliknite na izbornik sistema na gornjoj traci i kliknite <gui>Prekini vezu</gui> ispod naziva vaše VPN veze.</p>
-    </item>
-  </steps>
+<steps>
+ <item>
+  <p>Kliknite na ikonicu mreže na gornjoj traci i izaberite <gui>Podešavanja mreže</gui>.</p>
+ </item>
+
+ <item>
+  <p>Na spisku sa leve strane, kliknite na dugme <gui>+</gui> da dodate novu vezu.</p>
+ </item>
+
+ <item>
+  <p>Izaberite <gui>VPN</gui> na spisku sučelja, i kliknite <gui>Napravi…</gui>.</p>
+ </item>
+
+ <item>
+  <p>Kliknite <gui>Dodaj</gui> i izaberite koju vrstu VPN veze imate.</p>
+ </item>
+
+ <item>
+  <p>Kliknite <gui>Napravi</gui> i pratite uputstva na ekranu, unoseći podatke kao što je vaše korisničko ime i lozinka, i tako redom.</p>
+ </item>
+
+ <item>
+  <p>Kada ste završili sa podešavanjem VPN-a, kliknite na ikonicu mreže na gornjoj traci, idite na <gui>VPN veze</gui> i kliknite na vezu koju ste upravo napravili. To će pokušati da uspostavi VPN vezu — ikonica mreže će se promeniti kako bude pokušavao da se poveže.</p>
+ </item>
+
+ <item>
+  <p>Na sreću, uspešno ćete se povezati na VPN. Ako do toga ne dođe, moraćete dva puta da proverite VPN podešavanja koja ste uneli. Ovo možete da uradite klikom na ikonicu mreže, klikom na <gui>Podešavanja mreže</gui> i otvaranjem jezička <gui>VPN</gui>.</p>
+ </item>
+
+ <item>
+  <p>Da se isključite sa VPN-a, kliknite na ikonicu mreže na gornjoj traci i kliknite <gui>Prekini vezu</gui> ispod naziva vaše VPN veze.</p>
+ </item>
+</steps>
 
 </page>

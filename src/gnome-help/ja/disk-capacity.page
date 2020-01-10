@@ -17,7 +17,6 @@
     </credit>
 
     <revision pkgversion="3.4.3" date="2012-06-15" status="review"/>
-    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
 
     <desc>Use <gui>Disk Usage Analyzer</gui> or <gui>System Monitor</gui> to
     check space and capacity.</desc>
@@ -26,7 +25,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -48,18 +47,6 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Noriko Mizumoto</mal:name>
-      <mal:email>noriko@fedoraproject.org</mal:email>
-      <mal:years>2013, 2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>坂本 貴史</mal:name>
-      <mal:email>o-takashi@sakamocchi.jp</mal:email>
-      <mal:years>2013, 2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>日本GNOMEユーザー会</mal:name>
       <mal:email>http://www.gnome.gr.jp/</mal:email>
       <mal:years>2011, 2012</mal:years>
@@ -74,26 +61,24 @@
 <section id="disk-usage-analyzer">
 <title>Check with Disk Usage Analyzer</title>
 
-  <p>To check the free disk space and disk capacity using <app>Disk Usage
-  Analyzer</app>:</p>
+  <p>To check the free disk space and disk capacity using
+ <app>Disk Usage Analyzer</app>:</p>
 
-  <list>
-    <item>
-      <p>Open <app>Disk Usage Analyzer</app> from the <gui>Activities</gui>
-      overview. The window will display a list of file locations together with
-      the usage and capacity of each.</p>
-    </item>
-    <item>
-      <p>Click one of the items in the list to view a detailed summary of the
-      usage for that item. Click the menu button, and then <gui>Scan
-      Folder…</gui> or <gui>Scan Remote Folder…</gui> to scan a different
-      location.</p>
-    </item>
-  </list>
-  <p>The information is displayed according to <gui>Folder</gui>,
-  <gui>Size</gui>, <gui>Contents</gui> and when the data was last
-  <gui>Modified</gui>. See more details in <link href="help:baobab"><app>Disk
-  Usage Analyzer</app></link>.</p>
+<list>
+ <item>
+  <p>Open the <app>Disks</app> application from the <gui>Activities</gui>
+  overview. The window will display the <gui>Total file system capacity</gui>
+  and <gui>Total file system usage</gui>.</p>
+ </item>
+ <item>
+  <p>Click one of the toolbar buttons to choose to <gui>Scan Home</gui>,
+   <gui>Scan filesystem</gui>, <gui>Scan a folder</gui>, or <gui>Scan a remote
+   folder</gui>.</p>
+ </item>
+</list>
+  <p>The information is displayed according to <gui>Folder</gui>, <gui>Usage</gui>,
+  <gui>Size</gui> and <gui>Contents</gui>. See more details in
+  <link href="help:baobab"><app>Disk Usage Analyzer</app></link>.</p>
 
 </section>
 
@@ -109,7 +94,7 @@
   overview.</p>
  </item>
  <item>
-  <p>Select the <gui>File Systems</gui> tab to view the system’s partitions and
+  <p>Select the <gui>File Systems</gui> tab to view the system's partitions and
   disk space usage.  The information is displayed according to <gui>Total</gui>,
   <gui>Free</gui>, <gui>Available</gui> and <gui>Used</gui>.</p>
  </item>
@@ -124,11 +109,11 @@
 
  <list>
   <item>
-   <p>Delete files that aren’t important or that you won’t use anymore.</p>
+   <p>Delete files that aren't important or that you won't use anymore.</p>
   </item>
   <item>
    <p>Make <link xref="backup-why">backups</link> of the important files that
-   you won’t need for a while and delete them from the hard drive.</p>
+   you won't need for a while and delete them from the hard drive.</p>
   </item>
  </list>
 </section>

@@ -1,53 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-firewall-on-off" xml:lang="cs">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="net-firewall-on-off" xml:lang="cs">
 
   <info>
-    <link type="guide" xref="net-security" group="#first"/>
-
+    <link type="guide" xref="net-security"/>
+    <desc>You can control which programs can access the network. This helps to keep your computer secure.</desc>
     <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
-    <revision pkgversion="3.10" date="2013-11-03" status="incomplete"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-
     <credit type="author">
       <name>Paul W. Frields</name>
       <email>stickster@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Jak řídit, které programy mají přístup k síti. To pomáhá udržet počítač bezpečný.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
       <mal:email>adamatousek@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Marek Černocký</mal:name>
-      <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014, 2015</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Povolení nebo blokování přístupu na firewallu</title>
+  <title>Enable or block firewall access</title>
 
-  <p>Váš systém by měl být vybaven <em>firewallem</em>, který umí blokovat programy vůči přístupu ostatními lidmi z Internetu nebo místní sítě. To pomáhá udržet váš počítač v bezpečí.</p>
+<comment>
+<cite date="2012-02-19">shaunm</cite>
+<p>Continue to revisit this page until we can provide real instructions.
+As it is, we're stuck in "whatever distros do" territory.</p>
+</comment>
 
-  <p>Síťové připojení může využívat řada aplikací. Například, když jste připojeni k síti, můžete sdílet soubory nebo někomu umožnit prohlížet si vzdáleně vaši pracovní plochu. V závislosti na tom, jak je počítač nastaven, může být potřeba přizpůsobit firewall, aby tyto služby fungovaly tak, jak je zamýšleno.</p>
-
-  <p>Každý program, který poskytuje síťové služby k tomu používá konkrétní <em>síťový port</em>. Abyste dovolili ostatním počítačům v síti přístup k službě, musíte na firewallu „otevřít“ port, který ji patří:</p>
-
+  <p>Your system should be equipped with a <em>firewall</em> that allows it to block programs from being accessed by other people on the internet or your network. This helps to keep your computer secure.</p>
+  <p>Many applications can use your network connection. For instance, you can share files or let someone view your desktop remotely when connected to a network. Depending on how your computer is set up, you may need to adjust the firewall to allow these services to work as intended.</p>
+  <p>Each program that provides network services uses a specific <em>network port</em>. To enable other computers on the network to access a service, you may need to "open" its assigned port on the firewall:</p>
 
   <steps>
     <item>
-      <p>Jděte do <gui>Činností</gui> v levém horním rohu obrazovky a spusťte firewallovou aplikaci. Možná si budete muset nějakou aplikaci pro správu firewallu doinstalovat, když žádnou nenajdete (například Firestarter nebo GUFW).</p>
+      <p>Go to <gui>Activities</gui> in the top left corner of the screen and start your firewall application. You may need to install a firewall manager yourself if you can't find one (for example, Firestarter or GUFW).</p>
     </item>
     <item>
-      <p>Otevřete nebo zakažte port pro síťovou službu podle toho, k čemu chcete, aby lidé měli přístup nebo ho naopak neměli. Který port potřebujete změnit <link xref="net-firewall-ports">závisí na službě</link>.</p>
+      <p>Open or disable the port for your network service, depending on whether you want people to be able to access it or not. Which port you need to change will <link xref="net-firewall-ports">depend on the service</link>.</p>
     </item>
     <item>
-      <p>Uložte nebo použijte změny, řiďte se přitom instrukcemi poskytovanými daným nástrojem firewallu.</p>
+      <p>Save or apply the changes, following any additional instructions given by the firewall tool.</p>
     </item>
   </steps>
 

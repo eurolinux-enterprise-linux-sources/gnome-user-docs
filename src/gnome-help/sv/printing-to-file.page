@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" type="task" id="printing-to-file" xml:lang="sv">
+<page xmlns="http://projectmallard.org/1.0/" type="task" id="print-to-file" xml:lang="sv">
 
   <info>
+    <revision pkgversion="3.8" version="0.1" date="2013-03-29" status="review"/>
     <link type="guide" xref="printing" group="#last"/>
-
-    <revision pkgversion="3.8" date="2013-03-29" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author copyright">
       <name>Ekaterina Gerasimova</name>
@@ -16,50 +13,49 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Spara ett dokument som en PDF-, Postscript- eller SVG-fil istället för att skicka den till en skrivare.</desc>
+    <desc>Save a document as a PDF, Postscript or SVG file instead of sending it a printer.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Sebastian Rasmussen</mal:name>
-      <mal:email>sebras@gmail.com</mal:email>
-      <mal:years>2014, 2015, 2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Anders Jonsson</mal:name>
-      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
-      <mal:years>2016, 2017</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Skriv ut till fil</title>
+  <title>Print to file</title>
 
-  <p>Du kan välja att skriva ut ett dokument till en fil istället för att skicka det för utskrift till en skrivare. Att skriva ut till en fil kommer att skapa en <sys>PDF-</sys>, <sys>Postscript-</sys> eller <sys>SVG</sys>-fil som innehåller dokumentet. Detta kan vara användbart om du vill överföra dokumentet till en annan maskin eller dela det med någon.</p>
+  <p>You can chose to print a document to a file instead of sending it to
+  print from a printer. Printing to file will create a <sys>PDF</sys>, a
+  <sys>Postscript</sys> or a <sys>SVG</sys> file that contains the document.
+  This can be useful if you want to transfer the document to another machine
+  or to share it with someone.</p>
 
   <steps>
-    <title>För att skriva ut till fil:</title>
+    <title>Print to file</title>
     <item>
-      <p>Öppna utskriftsdialogen genom att trycka på <keyseq><key>Ctrl</key><key>P</key></keyseq>.</p>
+      <p>Open the print dialog. This can normally be done through
+      <gui style="menuitem">Print</gui> in the menu or using the
+      <keyseq><key>Ctrl</key><key>P</key></keyseq> keyboard shortcut.</p>
     </item>
     <item>
-      <p>Välj <gui>Skriv ut till fil</gui> under <gui>Skrivare</gui> i fliken <gui style="tab">Allmänt</gui>.</p>
+      <p>Select <gui>Print to File</gui> under <gui>Printer</gui> in the
+      <gui style="tab">General</gui> tab.</p>
     </item>
     <item>
-      <p>För att ändra standardfilnamn och var filen sparas, klicka på filnamnet under skrivarvalet. Klicka på <gui style="button">Välj</gui> när du har valt klart.</p>
+      <p>To change the default filename and where the file is saved to, click
+      the filename below the printer selection. Click
+      <gui style="button">Select</gui> once you have finished choosing.</p>
     </item>
     <item>
-      <p><sys>PDF</sys> är standardfiltypen för dokumentet. Om du vill använda ett annat <gui>Utskriftsformat</gui>, välj antingen <sys>Postscript</sys> eller <sys>SVG</sys>.</p>
+      <p><sys>PDF</sys> is the default file type for the document. If you want
+      to use a different <gui>Output format</gui>, select either
+      <sys>Postscript</sys> or <sys>SVG</sys>.</p>
     </item>
     <item>
-      <p>Välj dina övriga sidinställningar.</p>
+      <p>Chose your other page preferences.</p>
     </item>
     <item>
-      <p>Tryck på <gui style="button">Skriv ut</gui> för att spara filen.</p>
+      <p>Press <gui style="button">Print</gui> to save the file.</p>
     </item>
   </steps>
 

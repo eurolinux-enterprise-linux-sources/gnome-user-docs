@@ -4,7 +4,7 @@
   <info>
     <link type="guide" xref="color#problems"/>
     <link type="seealso" xref="color-gettingprofiles"/>
-    <desc>La correcció de color de tota la pantalla modifica tots els colors de la pantalla a totes les finestres.</desc>
+    <desc>Whole-screen color correction modifies all the screen colors on all windows.</desc>
 
     <credit type="author">
       <name>Richard Hughes</name>
@@ -19,8 +19,17 @@
     </mal:credit>
   </info>
 
-  <title>Falta informació per a la correcció del color de la pantalla sencera?</title>
-  <p>Malauradament, molts perfils ICC subministrats per proveïdors no inclouen la informació necessària per a la correcció de color de la pantalla sencera. Aquests perfils encara poden ser útils per a aplicacions que poden fer compensacions de color, però no veureu tots els colors del canvi de pantalla.</p>
-  <p>Per crear un perfil de visualització, que inclou tant dades de calibratge com de caracterització, haureu d'utilitzar un instrument especial  de mesura de color anomenat colorímetre o un espectròmetre.</p>
+  <title>Missing information for whole-screen color correction?</title>
+  <p>
+    Unfortunately, many vendor-supplied ICC profiles do not include the
+    information required for whole-screen color correction.
+    These profiles can still be useful for applications that can do color
+    compensation, but you will not see all the colors of your screen change.
+  </p>
+  <p>
+    In order to create a display profile, which includes both calibration and
+    characterization data, you will need to use a special color measuring
+    instruments called a colorimeter or a spectrometer.
+  </p>
 
 </page>

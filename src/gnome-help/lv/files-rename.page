@@ -2,11 +2,10 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-rename" xml:lang="lv">
 
   <info>
-    <link type="guide" xref="files#common-file-tasks"/>
+    <link type="guide" xref="files"/>
+    <desc>Mainīt datnes vai mapes nosaukumu.</desc>
 
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>GNOME dokumentācijas projekts</name>
@@ -24,52 +23,41 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Mainīt datnes vai mapes nosaukumu.</desc>
   </info>
 
-  <title>Pārdēvēt datni vai mapi</title>
+  <title>Pārsaukt datni vai mapi</title>
 
-  <p>Tāpat kā citus datņu pārvaldniekus, varat izmantot <app>Datnes</app>, lai mainītu datnes vai mapes nosaukumu.</p>
-
+  <p>Tāpat kā citus datņu pārvaldniekus, arī GNOME datņu pārvaldnieku var lietot, lai mainītu datnes vai mapes nosaukumu.</p>
   <steps>
-    <title>Lai pārdēvētu datni vai mapi:</title>
-    <item><p>Veiciet labo peles klikšķi uz datnes vai mapes un izvēlieties <gui>Pārdēvēt</gui>, vai arī izvēlieties datni un piespiediet<key>F2</key>.</p></item>
-    <item><p>Ierakstiet jauno nosaukumu un nospiediet <key>Enter</key> vai klikšķiniet <gui>Pārdēvēt</gui>.</p></item>
+    <title>Lai pārsauktu datni vai mapi:</title>
+    <item><p>Veiciet labo peles klikšķi uz datnes vai mapes un izvēlieties <gui>Pārsaukt</gui>, vai arī izvēlieties datni un piespiediet<key>F2</key>.</p></item>
+    <item><p>Ierakstiet jauno datnes nosaukumu un nospiediet <key>Enter</key>.</p></item>
   </steps>
 
-  <p>Jūs varat arī pārdēvēt datni, izmantojot <link xref="nautilus-file-properties-basic">īpašību</link> logu.</p>
+  <p>Jūs varat arī pārsaukt datni, izmantojot <link xref="nautilus-file-properties-basic">īpašību</link> logu.</p>
 
-  <p>Pārdēvējot datni, tiek automātiski iezīmēta tikai nosaukuma pirmā daļa (līdz pēdējam <file>.</file>). Otrā daļa, ko sauc par paplašinājumu, apzīmē datnes veidu — piemēram, <file>datne.pdf</file> ir PDF dokuments — un parasti to nevajadzētu mainīt. Ja vēlaties nomainīt arī paplašinājumu, sākumā izvēlieties visu datnes nosaukumu.</p>
+  <p>Pārsaucot datni, tiek automātiski iezīmēta tikai nosaukuma pirmā daļa (līdz pēdējam punktam). Otrā daļa, ko sauc par paplašinājumu, apzīmē datnes veidu — piemēram, <file>datne.pdf</file> ir PDF dokuments — un parasti to nevajadzētu mainīt. Ja vēlaties nomainīt arī paplašinājumu, sākumā izvēlieties visu datnes nosaukumu.</p>
 
   <note style="tip">
-    <p>Ja gadījās pārdēvēt nepareizo datni vai ierakstīt nepareizu nosaukumu, varat pārdēvēšanu atsaukt. Tūlīt pēc darbības, spiediet uz izvēlnes pogas rīkjoslā un izvēlieties <gui>Atsaukt pārdēvēšanu</gui>, vai spiediet <keyseq><key>Ctrl</key><key>Z</key></keyseq>, lai atjaunotu iepriekšējo nosaukumu.</p>
+    <p>Ja gadījās pārsaukt nepareizo datni vai ierakstīt nepareizu nosaukumu, varat pārsaukšanu atsaukt. Tūlīt pēc darbības, spiediet uz zobrata pogas rīkjoslā un izvēlieties <gui>Atsaukt</gui>, lai atjaunotu iepriekšējo nosaukumu.</p>
   </note>
 
   <section id="valid-chars">
     <title>Derīgas rakstzīmes datņu nosaukumiem</title>
-
-    <p>Datņu nosaukumos var izmantot jebkuras rakstzīmes, izņemot <file>/</file> (slīpsvītru). Tomēr dažas ierīces izmanto <em>datņu sistēmas</em>, kurām ir vairāk ierobežojumu. Tāpēc visdrošāk ir datņu nosaukumos izvairīties no šādām rakstzīmēm — <file>|</file>, <file>\</file>, <file>?</file>, <file>*</file>, <file>&lt;</file>, <file>"</file>, <file>:</file>, <file>&gt;</file>, <file>/</file>.</p>
+    <p>Datņu nosaukumos var izmantot jebkuras rakstzīmes, izņemot <key>/</key> (slīpsvītru). Tomēr dažas ierīces izmanto <em>datņu sistēmas</em>, kurām ir vairāk ierobežojumu. Tāpēc visdrošāk ir datņu nosaukumos izvairīties no šādām rakstzīmēm — <key>|</key>, <key>\</key>, <key>?</key>, <key>*</key>, <key>&lt;</key>, <key>"</key>, <key>:</key>, <key>&gt;</key>, <key>/</key>.</p>
 
     <note style="warning">
-    <p>Ja datnes nosaukums sākas ar <file>.</file> , datne būs <link xref="files-hidden">slēpta</link>, skatot mapi ar datņu pārvaldnieku.</p>
+    <p>Ja datnes nosaukums sākas ar <key>.</key> , datne būs <link xref="files-hidden">slēpta</link>, skatot mapi ar datņu pārvaldnieku.</p>
     </note>
-
   </section>
 
   <section id="common-probs">
     <title>Biežākās problēmas</title>
-
     <terms>
       <item>
         <title>Nosaukums jau tiek izmantots</title>
-        <p>Vienā mapē nevar būt divu datņu vai mapju ar vienādiem nosaukumiem. Ja mēģināsiet pārdēvēt datni uz nosaukumu, kas jau eksistē mapē, kurā tas atrodas, datņu pārvaldnieks to neatļaus.</p>
+        <p>Vienā mapē nevar būt divu datņu vai mapju ar vienādiem nosaukumiem. Ja mēģināsiet pārsaukt datni uz nosaukumu, kas jau eksistē mapē, kurā tas atrodas, datņu pārvaldnieks to neatļaus.</p>
         <p>Datņu un mapju nosaukumi ir reģistrjutīgi, tāpēc <file>Datne.txt</file> un <file>DATNE.txt</file> ir dažādi nosaukumi. Šādi nosaukt datnes vienā mapē ir iespējams, bet nav ieteicams.</p>
       </item>
       <item>
@@ -77,11 +65,9 @@
         <p>Dažās datņu sistēmās datņu nosaukumi kopā ar ceļu (piemēram, <file>/home/anna/Dokumenti/darbs/jaunie-projekti/… </file>) nedrīkst garumā pārsniegt 255 rakstzīmes. Tāpēc ieteicams pēc iespējas izvairīties no gariem datņu un mapju nosaukumiem.</p>
       </item>
       <item>
-        <title>Iespēja pārdēvēt nav pieejama</title>
-        <p>Ja iespēja <gui>Pārdēvēt</gui> ir neaktīva, jums nav atļaujas pārdēvēt datni. Pārdēvējot šādas datnes, ieteicama piesardzība, jo dažu aizsargāto datņu pārdēvēšana varētu padarīt sistēmu nelietojamu. Skatiet <link xref="nautilus-file-properties-permissions"/>, lai uzzinātu vairāk.</p>
+        <title>Iespēja pārsaukt nav pieejama</title>
+        <p>Ja iespēja <gui>Pārsaukt</gui> ir neaktīva, jums nav atļaujas pārsaukt datni. Pārsaucot šādas datnes, ieteicama piesardzība, jo dažu aizsargāto datņu pārsaukšana varētu padarīt sistēmu nelietojamu. Skatiet <link xref="nautilus-file-properties-permissions"/>, lai uzzinātu vairāk.</p>
       </item>
     </terms>
-
   </section>
-
 </page>

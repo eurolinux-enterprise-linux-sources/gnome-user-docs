@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="net-editcon" xml:lang="es">
+  <info>
+    <link type="guide" xref="net-wireless" group="first"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <desc>Aprender cuáles son las opciones en la pantalla de conexión inalámbrica de edición.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Editar una conexión inalámbrica</title>
+
+<comment>
+ <p>This topic needs significant revision to be comprehensive. A number of settings remain undocumented.</p>
+</comment>
+
+<p>En este tema se describen todas las opciones que están disponibles cuando se edita una conexión de red inalámbrica. Para editar una conexión, seleccione en la configuración de <gui>Red</gui>, a continuación, pulse en <gui>Opciones</gui>.</p>
+
+<note>
+ <p>La mayoría de las redes no tendrán ningún problema si deja esta configuración predeterminada, por lo que probablemente no será necesario cambiar ninguna de ellas. Muchas de las opciones que aquí se proporcionan lo son para darle un mayor control sobre redes más avanzadas.</p>
+</note>
+
+<section id="available">
+ <title>Disponible para todos los usuarios / Conectar automáticamente</title>
+ <terms>
+  <item>
+   <title><gui>Conectar automáticamente</gui></title>
+   <p>Seleccione esta opción si quiere que el equipo intente conectarse a esta red inalámbrica cuando esté en el rango.</p>
+   <p>Si hay varias redes establecidas en el rango, para conectarse automáticamente, el equipo se conectará a la primera que se muestra en la pestaña <gui>Inalámbrica</gui> en la ventana <gui>Conexiones de red</gui>. No se desconectará de una red disponible para conectarse a una diferente que acabe de aparecer.</p>
+  </item>
+
+  <item>
+   <title><gui>Disponible para todos los usuarios</gui></title>
+   <p>Marque esta opción si quiere que todos los usuarios en el equipo tengan acceso a esta red inalámbrica. Si la red tiene una <link xref="net-wireless-wepwpa">contraseña WEP/WPA</link> y ha seleccionado esta opción, solo tendrá que introducir la contraseña una vez. Todos los demás usuarios en el equipo serán capaces de conectarse a la red sin tener que conocer la contraseña.</p>
+   <p>Si se marca esta opción, tiene que ser <link xref="user-admin-explain">administrador</link> para cambiar la configuración de esta red. Se le puede pedir que introduzca su contraseña de administrador.</p>
+  </item>
+ </terms>
+</section>
+
+<section id="wireless">
+ <title>Inalámbrica</title>
+ <terms>
+  <item>
+   <title><gui>SSID</gui></title>
+   <p>Este es el nombre de la red inalámbrica a la que se conecta, también conocido como el <em>Service Set Identifier</em> (identificador de conjunto de servicio). No lo cambie a menos que haya cambiado el nombre de la red inalámbrica (por ejemplo, al cambiar la configuración de su enrutador inalámbrico o estación base).</p>
+  </item>
+
+  <item>
+   <title><gui>Modo</gui></title>
+   <p>Úselo para especificar si quiere conectarse a una red de tipo <gui>Infraestructura</gui> (donde los equipos se conectan de forma inalámbrica a una estación base central o un enrutador) o <gui>Ad-hoc</gui> (donde no hay ninguna estación base, y los equipos de la red se conectan directamente con otro). La mayoría de las redes son de tipo infraestructura; sin embargo, es posible que quiera <link xref="net-adhoc">crear su propia red ad-hoc</link>.</p>
+   <p>Si selecciona <gui>Ad-hoc</gui>, verá otras dos opciones: <gui>Banda</gui> y <gui>Canal</gui>, que determinan en qué banda de frecuencias inalámbricas operará la red ad-hoc. Algunos equipos solo pueden funcionar en ciertas bandas (por ejemplo, solo en la <gui>A</gui> o en la <gui>B/G</gui>), por lo que deberá escoger la banda apropiada para que todos los equipos de la red ad-hoc puedan usarla. En lugares concurridos, es posible que existan varias redes inalámbricas compartiendo el mismo canal; esto podría ralentizar su conexión, por lo que también puede cambiar el canal que vaya a usar.</p>
+  </item>
+
+  <item>
+   <title><gui>BSSID</gui></title>
+   <p>Este es el <em>Identificador de conjunto de servicio básico</em> «Basic Service Set Identifier». El SSID (ver más arriba) es el nombre de la red pensado para que lo entiendan las personas; el BSSID es un nombre pensado para que lo entienda el equipo (es una cadena de letras y números que se supone que es único en la red inalámbrica). Si <link xref="net-wireless-hidden">la red está oculta</link>, no tendrá SSID pero sí tendrá BSSID.</p>
+  </item>
+
+  <item>
+   <title><gui>Dirección MAC del dispositivo:</gui></title>
+   <p>Una <link xref="net-macaddress">dirección MAC</link> es un código que identifica una pieza del hardware de red (por ejemplo, una tarjeta inalámbrica, una tarjeta de red Ethernet o un enrutador. Cada dispositivo que puede conectar a una red tiene una dirección MAC única, asignada de fábrica.</p>
+   <p>Esta opción se puede usar para cambiar la dirección MAC de su tarjeta de red.</p>
+  </item>
+
+  <item>
+   <title><gui>Dirección MAC clonada</gui></title>
+   <p>Su hardware de red (tarjeta inalámbrica) puede intentar tener una dirección MAC distinta. Esto es útil si tiene un dispositivo o servicio que solo se comunica con una determinada dirección MAC (por ejemplo, un cablemódem de banda ancha). Si pone esa dirección MAC en el apartado <gui>dirección MAC clonada</gui>, el dispositivo o servicio pensará que su equipo tiene la dirección MAC clonada en vez de la real.</p>
+  </item>
+
+  <item>
+   <title><gui>MTU</gui></title>
+   <p>Esta configuración cambia la <em>Maximum Transmission Unit</em> (unidad de transmisión máxima), que es el tamaño máximo de un fragmento de datos que se puede enviar a través de la red. Cuando los archivos se envían a través de una red, los datos se dividen en trozos pequeños (o paquetes). La MTU óptima para la red dependerá de la probabilidad de que se pierdan los paquetes (debido a una conexión con ruido) y la rapidez con la conexión. Generalmente nunca debería cambiar este ajuste.</p>
+  </item>
+
+ </terms>
+</section>
+
+<section id="security">
+ <title>Seguridad inalámbrica</title>
+ <terms>
+  <item>
+   <title><gui>Seguridad</gui></title>
+   <p>Esto define qué tipo de <em>cifrado</em> usa su red inalámbrica. Las conexiones cifradas ayudan a proteger su conexión inalámbrica de ser interceptada, por lo que otras personas no podrán «escuchar» y ver qué sitios web está visitando, etc.</p>
+   <p>Algunos tipos de cifrado son más fuertes que otros, pero puede que algunos dispositivos de red inalámbrica más antiguos no lo admitan. Normalmente tendrá que teclear una contraseña para conectarse; otros tipos de seguridad más sofisticados también necesitan un nombre de usuario y un «certificado» digital. Consulte la <link xref="net-wireless-wepwpa"/> para obtener más información sobre los tipos de cifrado inalámbrico más usuales.</p>
+  </item>
+ </terms>
+</section>
+
+<section id="ipv4">
+ <title>Ajustes de IPv4</title>
+
+<comment>
+<cite>shaunm</cite>
+<p>There's also Shared to other computers</p>
+<p>Then there's addresses and dns servers and ipv4 addressing routes.</p>
+<p>All current info correct, but incomplete</p>
+</comment>
+
+ <p>Use esta pestaña para definir información como la dirección IP de su equipo y los servidores DNS que debe usar. Cambie el <gui>Método</gui> para ver las diferentes maneras de obtener/establecer esa información.</p>
+ <p>Los siguientes métodos están disponibles:</p>
+ <terms>
+  <item>
+   <title><gui>Automático (DHCP)</gui></title>
+   <p>Obtener información, como la dirección IP y el servidor DNS que usar, de un <em>servidor DHCP</em>. Un servidor DHCP es un equipo (u otro dispositivo, como por ejemplo un enrutador) conectado a la red, que decide qué configuración tendrá su equipo; cuando se conecte por primera vez a la red, se le asignará automáticamente la configuración correcta. La mayoría de las redes usan DHCP.</p>
+  </item>
+
+  <item>
+   <title><gui>Solo direcciones automáticas (DHCP)</gui></title>
+   <p>Si elige esta opción, el equipo obtendrá su dirección IP de un servidor DHCP, pero tendrá que definir manualmente otros detalles (como el servidor DNS que usará).</p>
+  </item>
+
+  <item>
+   <title><gui>Manual</gui></title>
+   <p>Elija esta opción si quiere definir toda la configuración de red, incluyendo la dirección IP que el equipo debe usar.</p>
+  </item>
+
+  <item>
+   <title><gui>Solo enlace local</gui></title>
+   <p><em>Enlace local</em> es una forma de conectar equipos entre sí sin tener que usar un servidor DHCP ni definir manualmente las direcciones IP ni otra información. Al conectarse a una red de enlace local, los equipos de la red decidirán entre ellos qué direcciones IP usar y demás. Esto es útil si quiere conectar temporalmente unos cuantos equipos juntos para que puedan comunicarse entre ellos.</p>
+  </item>
+
+  <item>
+   <title><gui>Desactivado</gui></title>
+   <p>Esta opción desactivará la conexión a la red y le impedirá conectarse a ella. Observe que <gui>IPv4</gui> e <gui>IPv6</gui> se tratan como conexiones separadas, incluso aunque vayan por la misma tarjeta de red. Si ha activado una de ellas, puede que quiera desactivar la otra.</p>
+  </item>
+
+ </terms>
+</section>
+
+<section id="ipv6">
+ <title>Ajustes de IPv6</title>
+<comment>
+<cite>shaunm</cite>
+<p>The list of methods is a bit different</p>
+</comment>
+ <p>Es similar a la pestaña <gui>IPv4</gui> excepto en que concierne al nuevo estándar IPv6. Las redes más modernas usan IPv6, pero IPv4 sigue siendo más popular por el momento.</p>
+</section>
+
+</page>

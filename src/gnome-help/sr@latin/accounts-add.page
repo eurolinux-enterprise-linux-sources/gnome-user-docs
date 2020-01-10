@@ -1,70 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="accounts-add" xml:lang="sr-Latn">
 
-  <info>
-    <link type="guide" xref="accounts" group="add"/>
-
-    <revision pkgversion="3.5.5" date="2012-08-14" status="draft"/>
-    <revision pkgversion="3.9.92" date="2012-09-18" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2013-09-20" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-
-    <credit type="author">
-      <name>Džim Kembel</name>
-      <email>jwcampbell@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Majkl Hil</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-      <years>2014</years>
-    </credit>
-    <credit type="editor">
-      <name>Šon Mek Kens</name>
-      <email>shaunm@gnome.org</email>
-      <years>2015</years>
-    </credit>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Dozvolite programima da pristupe vašim nalozima na mreži zbog fotografija, kontakata, kalendara i ostalog.</desc>
+<info>
+  <desc>Povežite nalog na mreži.</desc>
+  <link type="guide" xref="accounts"/>
+  <revision pkgversion="3.5.5" version="0.1" date="2012-08-14" status="draft"/>
+  <credit type="author">
+    <name>Džim Kembel</name>
+    <email>jwcampbell@gmail.com</email>
+  </credit>
+  <credit type="editor">
+    <name>Majkl Hil</name>
+    <email>mdhillca@gmail.com</email>
+  </credit>
 </info>
 
-  <title>Dodajte nalog</title>
+<title>Dodajte nalog</title>
 
-  <p>Dodavanje naloga će pomoći u povezivanju vaših naloga na mreži sa vašom Gnomovom radnom površi. Zato će vam, vaš program za poštu, program za ćaskanje i ostali odnosni programi biti podešeni.</p>
+<p>Dodavanje naloga će pomoći u povezivanju vaših naloga na mreži sa vašom Gnomovom radnom površi. Zato će vam, vaš program za poštu, program za ćaskanje, i ostali odnosni programi biti podešeni.</p>
 
-  <steps>
-    <item>
-      <p>Otvorite pregled <gui xref="shell-terminology">Aktivnosti</gui> i počnite da kucate <gui>Nalozi na mreži</gui>.</p>
-    </item>
-    <item>
-      <p>Kliknite na <gui>naloge na mreži</gui> da otvorite panel.</p>
-    </item>
-    <item>
-      <p>Select an account from the list on the right.</p>
-    </item>
-    <item>
-      <p>Izaberite vrstu naloga koji želite da dodate.</p>
-    </item>
-    <item>
-      <p>Otvoriće se prozorče veb sajta u kome ćete moći da unesete podatke vašeg naloga na mreži. Na primer, ako podešavate Guglov nalog, unesite vaše korisničko ime i lozinku za Gugl. Neki dostavljači vam omogućavaju da napravite novi nalog iz prozorčeta za prijavljivanje.</p>
-    </item>
-    <item>
-      <p>Ako ste ispravno uneli vaše podatke, biće vam zatraženo da dozvolite Gnomov pristup vašem nalogu na mreži. Ovlastite pristup da nastavite.</p>
-    </item>
-    <item>
-      <p>Sve usluge koje nudi dostavljač naloga biće unapred uključene. <link xref="accounts-disable-service">Prebacite</link> pojedinačne usluge na <gui>ISKLJ.</gui> da ih isključite.</p>
-    </item>
-  </steps>
+<steps>
+  <item><p>Kliknite na dugme <key>+</key> u donjem levom delu prozora.</p></item>
+  <item><p>Kliknite na izbornik <gui>Vrsta naloga</gui> i izaberite jedan.</p>
+        <p>Ako imate više od jedne vrste naloga, ostale naloge možete da dodate kasnije.</p></item>
+  <item><p>Kliknite <gui>Dodaj…</gui></p></item>
+  <item><p>Otvoriće se mali prozor veb sajta u kome ćete moći da unesete podatke vašeg naloga na mreži. Na primer, ako podešavate Guglov nalog, unesite vaše korisničko ime i lozinku za Gugl.</p>
+  </item>
+  <item><p>Ako ste ispravno uneli vaše podatke, biće vam zatraženo da dozvolite Gnomov pristup vašem nalogu na mreži. Izaberite <gui>Odobri pristup</gui> da nastavite.</p></item>
+  <item><p>Izaberite programe koje želite da budu povezani sa vašim nalogom na mreži. Na primer, ako želite da koristite nalog na mreži za ćaskanje, ali ne želite da koristite nalog na mreži za vaš kalendar, isključite opciju <gui>kalendar</gui>.</p></item>
+</steps>
 
-  <p>Nakon što dodate naloge, programi će moći da koriste te naloge za usluge koje ste izabrali. Vidite <link xref="accounts-disable-service"/> o tome kako da odlučite koje usluge ćete omogućiti.</p>
+<p>Nakon što ste dodali naloge, svi programi koje ste izabrali samostalno će upotrebiti ove podatke kada ih budete pokrenuli.</p>
 
-  <note style="tip">
-    <p>Mnoge usluge na mreži obezbeđuju čin potvrđivanja identiteta koji Gnom čuva umesto vaše lozinke. Ako uklonite nalog, takođe treba da opozovete to uverenje sa usluge na mreži. Vidite <link xref="accounts-remove"/> za više podataka.</p>
-  </note>
+<note style="tip">
+  <p>Iz bezbednosnih razloga, Gnom neće uskladištiti vašu lozinku na vašem računaru. Umesto toga, uskladištiće prsten koji obezbeđuje usluga na mreži. Ako želite da u potpunosti opozovete vezu između vaše radne površi i usluge na mreži, <link xref="accounts-remove">uklonite</link> je.</p>
+</note>
 
 </page>

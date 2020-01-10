@@ -5,63 +5,70 @@
 
 
     <credit type="author">
-      <name>Proyek Dokumentasi GNOME</name>
+      <name>Projek Dokumentasi GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
-    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
 
-    <desc>Hapus semua berkas dan folder dari suatu hard disk eksternal atau flash drive USB dengan memformatnya.</desc>
+    <desc>Remove all of the files and folders from an external hard disk or USB
+    flash drive by formatting it.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Andika Triwidada</mal:name>
       <mal:email>andika@gmail.com</mal:email>
-      <mal:years>2011-2014, 2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Ahmad Haris</mal:name>
-      <mal:email>ahmadharis1982@gmail.com</mal:email>
-      <mal:years>2017.</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
 
 <title>Hapus segalanya dari disk lepas pasang</title>
 
-  <p>Bila Anda punya disk lepas pasang, misalnya stik memori USB atau hard disk eksternal, kadang Anda mungkin ingin menghapus seluruh berkas dan foldernya. Anda dapat melakukan ini dengan <em>memformat</em> disk - ini menghapus semua berkas pada disk dan membiarkannya kosong.</p>
+  <p>If you have a removable disk, like a USB memory stick or an external hard
+ disk, you may sometimes wish to completely remove all of its files and
+ folders. You can do this by <em>formatting</em> the disk - this deletes all
+ of the files on the disk and leaves it empty.</p>
 
 <steps>
-  <title>Format disk yang dapat dilepas pasang</title>
+ <title>Format disk yang dapat dilepas pasang</title>
   <item>
-    <p>Buka <app>Pengaturan</app> dari ringkasan <gui>Aktivitas</gui>.</p>
+   <p>Buka aplikasi <app>Disk</app> dari ringkasan <gui>Aktivitas</gui>.</p>
   </item>
   <item>
-    <p>Pilih disk yang Anda ingin hapus tuntas dari daftar perangkat penyimpanan di sebelah kiri.</p>
+   <p>Select the disk you want to wipe from the <gui>Storage Devices</gui> list.</p>
 
-    <note style="warning">
-      <p>Pastikan bahwa Anda telah memilih diska yang benar! Bila Anda memilih diska yang salah, semua berkas pada diska tersebut akan dihapus!</p>
-    </note>
+  <note style="warning">
+   <p>Make sure that you have selected the correct disk! If you choose the wrong
+ disk, all of the files on the other disk will be deleted!</p>
+  </note>
   </item>
   <item>
-    <p>Pada bilah alat di bawah bagian <gui>Volume</gui>, klik tombol menu. Lalu klik <gui>Format…</gui>.</p>
+   <p>Dalam seksi Volume, klik <gui>Lepas Kait Volume</gui>. Lalu klik <gui>Format Volume</gui>.</p>
   </item>
   <item>
-    <p>Dalam jendela yang muncul, pilih suatu <gui>Tipe</gui> sistem berkas bagi disk.</p>
-   <p>Bila Anda memakai diska pada komputer Windows dan Mac OS selain pada komputer Linux, pilihlah <gui>FAT</gui>. Bila Anda hanya memakainya pada Windows, <gui>NTFS</gui> mungkin merupakan opsi yang lebih baik. Deskripsi singkat tentang <gui>tipe sistem berkas</gui> akan disajikan sebagai suatu label.</p>
+   <p>In the window that pops up, choose a filesystem <gui>Type</gui> for the
+   disk.</p>
+   <p>If you use the disk on Windows and Mac OS computers in addition to Linux
+   computers, choose <gui>FAT</gui>. If you only use it on Windows, <gui>NTFS</gui>
+   may be a better option. A brief description of the <gui>file system type</gui>
+   will be presented as a label.</p>
   </item>
   <item>
-    <p>Berikan disk sebuah nama dan klik <gui>Format…</gui> untuk melanjutkan dan menampilkan jendela konfirmasi. Periksa rincian secara hati-hati, dan klik <gui>Format</gui> untuk menghapus tuntas disk.</p>
+   <p>Give the disk a name and click <gui>Format</gui> to begin wiping the disk.</p>
   </item>
   <item>
-    <p>Saat proses fromat selesai, klik ikon keluarkan untuk melepas disk secara aman. Harusnya saat ini sudah kosong dan siap untuk digunakan.</p>
+   <p>Once the formatting has finished, <gui>safely remove</gui> the disk. It
+   should now be blank and ready to use again.</p>
   </item>
 </steps>
 
 <note style="warning">
  <title>Memformat suatu disk tidak menghapus berkas Anda secara aman</title>
-  <p>Memformat suatu disk bukan merupakan cara yang sepenuhnya aman untuk menghapus semua datanya. Suatu disk yang diformat tak nampak memiliki berkas padanya, tapi mungkin bahwa suatu perangkat lunak pemulihan khusus dapat mengambil berkas-berkas tersebut. Bila Anda perlu untuk menghapus berkas secara aman, Anda akan perlu memakai suatu utilitas baris perintah, seperti misalnya <app>shred</app>.</p>
+  <p>Formatting a disk is not a completely secure way of wiping all of its
+ data. A formatted disk will not appear to have files on it, but it is
+ possible that special recovery software could retrieve the files. If you
+ need to securely delete the files, you will need to use a command-line
+ utility, such as <app>shred</app>.</p>
 </note>
 
 </page>

@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="sound-usespeakers" xml:lang="pt-BR">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="sound-usespeakers" xml:lang="pt-BR">
   <info>
     <link type="guide" xref="media#sound"/>
     <link type="seealso" xref="sound-usemic"/>
-
-    <revision pkgversion="3.7.1" version="0.2" date="2012-11-16" status="outdated"/>
-    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-30" status="final"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -18,14 +12,11 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <revision pkgversion="3.7.1" version="0.2" date="2012-11-16" status="outdated"/>
 
     <desc>Conecte alto-falantes ou fones de ouvido e selecione um dispositivo de saída de áudio padrão.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Rodolfo Ribeiro Gomes</mal:name>
@@ -34,47 +25,33 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Enrico Nicoletto</mal:name>
       <mal:email>liverig@gmail.com</mal:email>
       <mal:years>2013.</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>João Santana</mal:name>
-      <mal:email>joaosantana@outlook.com</mal:email>
-      <mal:years>2013.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Fontenelle</mal:name>
-      <mal:email>rafaelff@gnome.org</mal:email>
-      <mal:years>2012-2018.</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Usando alto-falantes ou fones de ouvido diferentes</title>
+  <title>Usar diferentes alto-falantes ou fones de ouvido</title>
 
-  <p>Você pode usar alto-falantes externos ou fones de ouvido com o seu computador. Alto-falantes geralmente se conectam por um conector circular TRS (<em>tip, ring, sleeve</em>: ponta, anel, manga) ou com USB.</p>
+  <p>Você pode usar alto-falantes externos ou fones de ouvido com o seu computador. Alto-falantes normalmente se conectam por um plugue circular TRS (<em>tip, ring, sleeve</em>: ponta, anel, manga) ou com USB.</p>
 
-  <p>Se seus alto-falantes ou fones de ouvido têm um conector TRS (também chamado de P2), conecte-o no soquete apropriado em seu computador. A maioria dos computadores possui dois soquetes: um para microfones e outro para alto-falantes. Esse soquete geralmente tem uma cor verde claro ou é acompanhado por uma imagem de fones de ouvido. Alto-falantes e fones conectados em um soquete TRS costumam ser usados por padrão. Se não, veja as instruções a seguir para selecionar o dispositivo padrão.</p>
+  <p>Se seus alto-falantes ou fones de ouvido têm um plugue TRS (também chamado de P2), plugue-o no soquete apropriado no seu computador. A maioria dos computadores tem dois soquetes: um para microfones e outro para alto-falantes. Procure por uma imagem de fones de ouvido próxima ao soquete. Alto-falantes e fones plugados em soquete TRS costumam serem usados por padrão. Se não, veja as instruções a seguir para selecionar o dispositivo padrão.</p>
 
-  <p>Alguns computadores possuem suporte a saída multi-canal para som surround. Isso novamente usa conectores TRS múltiplos, o qual é novamente codificado por cor. Se você não tem certeza quais conectores devem ser conectados em quais soquetes, você pode testar a saída de som nas configurações de som.</p>
+  <p>Alguns computadores oferecem suporte a saídas multicanais para som surround (envolvente). Eles costumam usar múltiplos conectores TRS, frequentemente codificados por cor. Se você não tem certeza de que conectores são encaixados em que soquetes, você pode testar a saída de som nas configurações de som. Clique em seu nome na barra superior e selecione <gui>Configurações</gui>, então clique em <gui>Som</gui>. Na aba <gui>Saída</gui>, selecione seus alto-falantes na lista de dispositivos e clique em <gui style="button">Testar alto-falantes</gui>. Na janela que emergiu, clique no botão para cada alto-falante. Cada botão falará sua posição somente ao canal de áudio correspondente aquele alto-falante.</p>
 
   <p>Se você tem alto-falantes ou fones de ouvido USB, ou fones analógicos plugados à placa de som USB, plugue-os a qualquer porta USB. Alto-falantes USB agem como dispositivos de áudio separados, e você pode especificar quais alto-falantes você quer usar por padrão.</p>
 
   <steps>
     <title>Selecionar um dispositivo de entrada de áudio padrão</title>
-    <item>
-      <p>Abra o panorama de <gui xref="shell-introduction#activities">Atividades</gui> e comece a digitar <gui>Som</gui>.</p>
-    </item>
-    <item>
-      <p>Clique em <gui>Som</gui> para abrir o painel.</p>
-    </item>
-    <item>
-      <p>Na aba <gui>Saída</gui>, selecione o dispositivo que você deseja usar.</p>
-    </item>
+    <item><p>Clique em seu nome na barra superior e selecione <gui>Configurações</gui>.</p></item>
+    <item><p>Abra <gui>Som</gui> e selecione a aba <gui>Saída</gui>.</p></item>
+    <item><p>Selecione o dispositivo na lista de dispositivos.</p></item>
   </steps>
-
-  <p>Use o botão <gui style="button">Testar alto-falantes</gui> para verificar se todos os alto-falantes estão funcionando e estão conectados ao soquete correto.</p>
 
 </page>

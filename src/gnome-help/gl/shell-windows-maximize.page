@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" version="1.0 if/1.0" id="shell-windows-maximize" xml:lang="gl">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" id="shell-windows-maximize" xml:lang="gl">
 
   <info>
     <link type="guide" xref="shell-windows#working-with-windows"/>
     <link type="seealso" xref="shell-windows-tiled"/>
 
+    <desc>Prema dúas veces sobre a barra de título da xanela.</desc>
+
     <revision pkgversion="3.4.0" date="2012-03-14" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -14,13 +15,11 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Prema dúas veces sobre a barra de título da xanela.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2018</mal:years>
+      <mal:years>2011, 2012.</mal:years>
     </mal:credit>
   </info>
 
@@ -28,15 +27,18 @@
 
   <p>Pode maximizar unha xanela para que use todo o espazo libre no seu escritorio e desmaximizar unha xanela para restaurala ao seu tamaño normal. Tamén pode maximizar xanelas verticalmente ao longo dos lados dereito e esquerdo da pantalla, de tal forma que pode ver dúas xanelas á vez facilmente. Para obter máis detalles consulte a <link xref="shell-windows-tiled"/>.</p>
 
-  <p>Para maximizar unha xanela, arrastre a barra de título e lévea á parte superior da pantalla ou simplemente prema dúas veces sobre a barra de título. Para maximizar unha xanela usando o teclado, manteña premida a tecla <link xref="keyboard-key-super">Super</link> e prema <key>↑</key> ou <keyseq><key>Alt</key><key>F10</key></keyseq>.</p>
+  <p>To maximize a window, grab the titlebar and drag it to the top of the
+  screen, or just double-click the titlebar. To maximize a window using the
+  keyboard, hold down the <key xref="keyboard-key-super">Super</key> key and
+  press <key>↑</key>, or press <keyseq><key>Alt</key><key>F10</key></keyseq>.
+  </p>
 
-  <p if:test="platform:gnome-classic">Tamén pode maximizar unha xanela premendo o botón maximizar na barra de título.</p>
+  <p if:test="platform:gnome-classic">You can also maximize a window by
+  clicking the maximize button in the titlebar.</p>
 
   <p>Para restaurar unha xanela ao seu tamaño desmaximizado, arrástrea fóra dos bordos da pantalla. Se a xanela está completamente maximizada, pode premer dúas veces sobre a barra de título para restaurala. Tamén pode usar os mesmos atallos de teclado que usou para maximizar a xanela.</p>
 
   <note style="tip">
-    <p>Hold down the <key>Super</key> key and drag anywhere in a window to move
-    it.</p>
+    <p>Manteña premida a tecla <key>Alt</key> e arrastre a xanela a calquera parte para movela.</p>
   </note>
-
 </page>

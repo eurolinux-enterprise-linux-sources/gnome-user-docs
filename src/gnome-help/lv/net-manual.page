@@ -1,72 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-manual" xml:lang="lv">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="net-manual" xml:lang="lv">
   <info>
     <link type="guide" xref="net-wired"/>
     <link type="guide" xref="net-wireless"/>
 
     <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
-    <revision pkgversion="3.10" date="2013-11-11" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-    <revision pkgversion="3.28" date="2018-03-28" status="review"/>
 
     <credit type="author">
       <name>Phil Bull</name>
       <email>philbull@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
 
-    <desc>Ja tīkla iestatījumi netiek piešķirti automātiski, tos vajadzēs ievadīt pašrocīgi.</desc>
+    <desc>Ja tīkla iestatījumi netiek piešķirti automātiski, tos var ievadīt pašrocīgi.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
-  <title>Pašrocīgi iestatīt tīkla iestatījumus</title>
+<title>Pašrocīgi iestatīt tīkla iestatījumus</title>
 
-  <p>Ja tīkla iestatījumi netiek piešķirti automātiski, tad tos jāiestata pašrocīgi. Šeit tiek pieņemts, ka jūs jau zināt, kādi ir iestatāmie iestatījumi. Ja nē, tad tie jājautā tīkla administratoram vai jālūko maršrutētāja vai tīkla komutatora iestatījumi.</p>
+<p>Ja tīkla iestatījumi netiek piešķirti automātiski, tad tos jāiestata pašrocīgi. Šeit tiek pieņemts, ka jūs jau zināt, kādi ir iestatāmie iestatījumi. Ja nē, tad tie jājautā tīkla administratoram vai jālūko maršrutētāja vai tīkla komutatora iestatījumi.</p>
 
-  <steps>
-    <title>Lai pašrocīgi iestatītu tīkla iestatījumus:</title>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui>
-      overview and start typing <gui>Settings</gui>.</p>
-    </item>
-    <item>
-      <p>Click on <gui>Settings</gui>.</p>
-    </item>
-    <item>
-      <p>In the left pane, select the network connection that you want to set
-      up manually. If you plug in to the network with a cable, click
-      <gui>Network</gui>. Otherwise click <gui>Wi-Fi</gui>.</p>
-      <p>Pārliecinieties, ka bezvadu tīkla karte ir ieslēgta vai tīkla kabelis ir iesprausts.</p>
-    </item>
-    <item>      
-      <p>Click the
-      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
-      button.</p>
-      <note>
-        <p>For a <gui>Wi-Fi</gui> connection, the 
-        <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
-        button will be located next to the active network.</p>
-      </note>
-    </item>
-    <item>
-      <p>Spiediet uz <gui>IPv4</gui> vai <gui>IPv6</gui> kreisajā rūtī un mainiet <gui>Adreses</gui> uz <em>Pašrocīgs</em>.</p>
-    </item>
-    <item>
-      <p>Ievadiet <gui xref="net-what-is-ip-address">IP adresi</gui> un <gui>Vārteju</gui>, kā arī atbilstošo <gui>Tīkla masku</gui>.</p>
-    </item>
-    <item>
-      <p><gui>DNS</gui> sadaļā pārslēdziet <gui>Automātiski</gui> uz <gui>|</gui>. Ievadiet vēlamā DNS servera IP adresi. Ievadiet papildu DNS serveru adreses, izmantojot pogu <gui>+</gui>.</p>
-    </item>
-    <item>
-      <p><gui>Maršruti</gui> sadaļā pārslēdziet <gui>Automātiski</gui> uz <gui>|</gui>. Ievadiet <gui>Adresi</gui>, <gui>Tīkla masku</gui>, <gui>Vārteju</gui> un <gui>Metriku</gui> maršrutam, kuru vēlaties izmantot. Ievadiet papildu maršrutus, izmantojot pogu <gui>+</gui>.</p>
-    </item>
-    <item>
-      <p>Spiediet <gui>Pielietot</gui>. Ja neesat savienojies ar tīklu, spiediet uz sistēmas statusa laukuma augšējā joslā un savienojieties. Pārbaudiet tīkla iestatījumus, piemēram, mēģinot apmeklēt kādu vietni vai aplūkojot tīklā koplietotas datnes.</p>
-    </item>
-  </steps>
+<steps>
+  <title>Lai pašrocīgi iestatītu tīkla iestatījumus:</title>
+ <item>
+  <p>Spiediet uz tīkla ikonas augšējā joslā un izvēlieties <gui>Tīkla iestatījumi</gui>.</p>
+ </item>
+
+ <item>
+  <p>Izvēlieties tīkla savienojumu, ko vēlaties pašrocīgi iestatīt, un spiediet <gui>Konfigurēt</gui>. Piemēram, ja savienojaties ar tīklu ar pievienotu kabeli, tad izvēlieties <gui>Vadu</gui>.</p>
+  <p>Pārliecinieties, ka bezvadu tīkla karte ir ieslēgta vai tīkla kabelis ir iesprausts. Citādāk nebūs iespējams nospiest pogu <gui>Konfigurēt</gui>.</p>
+ </item>
+
+ <item>
+  <p>Dodieties uz <gui>IPv4 iestatījumi</gui> cilni un izmainiet <gui>Metode</gui> uz <gui>Pašrocīgi</gui>.</p>
+ </item>
+
+ <item>
+  <p>Spiediet uz <gui>Pievienot</gui> un ierakstiet <em>IP adresi</em>, <em>tīkla masku</em> un <em>noklusēto vārtejas IP adresi</em> attiecīgajā kolonā <gui>Adreses</gui> sarakstā. Spiediet <key>Enter</key> vai <key>Tab</key> pēc tam, kad esat ierakstījis adresi.</p>
+  <p>Šīm trim adresēm ir jābūt IP adresēm; tas ir, tām ir jābūt ar četriem skaitļiem, kas atdalīti ar punktu (piemēram, 123.45.6.78).</p>
+ </item>
+
+ <item>
+  <p>Atbilstošā laukā ievadiet DNS serveru, kurus vēlaties izmantot, IP adreses, atdalītas ar komatiem.</p>
+ </item>
+
+ <item>
+  <p>Spiediet <gui>Saglabāt</gui>. Ja neesat savienojies ar tīklu, spiediet uz tīkla ikonas augšējā joslā un savienojieties. Pārbaudiet tīkla iestatījumus, piemēram, mēģinot apmeklēt kādu vietni vai aplūkojot tīklā koplietotas datnes.</p>
+ </item>
+
+</steps>
 
 </page>

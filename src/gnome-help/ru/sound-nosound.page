@@ -4,9 +4,9 @@
   <info>
     <link type="guide" xref="sound-broken"/>
 
+    <desc>Убедитесь, что звук не отключен, кабели подключены правильно, и что звуковая карта обнаружена.</desc>
+
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Проект документирования GNOME</name>
@@ -14,9 +14,6 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Check that the sound is not muted, that cables are plugged in properly,
-    and that the sound card is detected.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Александр Прокудин</mal:name>
@@ -27,144 +24,75 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011-2012</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Станислав Соловей</mal:name>
-      <mal:email>whats_up@tut.by</mal:email>
-      <mal:years>2013-2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Юлия Дронова</mal:name>
-      <mal:email>juliette.tux@gmail.com</mal:email>
-      <mal:years>2013-2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Юрий Мясоедов</mal:name>
-      <mal:email>ymyasoedov@yandex.ru</mal:email>
-      <mal:years>2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
 
-<title>I cannot hear any sounds on the computer</title>
+<title>Компьютер не издаёт никаких звуков</title>
 
-  <p>If you cannot hear any sounds on your computer, for example when you try
-  to play music, go through the following troubleshooting tips.</p>
+  <p>Если компьютер не издаёт никаких звуков, например, при попытке воспроизведения музыки, попробуйте выполнить следующие шаги, чтобы проверить, помогут ли они решить проблему.</p>
 
 <section id="mute">
-  <title>Проверьте, включён ли звук</title>
-
-  <p>Open the <gui xref="shell-introduction#yourname">system menu</gui> and make sure that
-  the sound is not muted or turned down.</p>
-
-  <p>Some laptops have mute switches or keys on their keyboards — try pressing
-  that key to see if it unmutes the sound.</p>
-
-  <p>You should also check that you have not muted the application that you are
-  using to play sound (for example, your music player or movie player). The
-  application may have a mute or volume button in its main window, so check
-  that.</p>
-
-  <p>Also, you can check the <gui>Applications</gui> tab in the <gui>Sound</gui>
-  GUI:</p>
-  <steps>
-    <item>
-    <p>Open <app>Settings</app> from the <gui>Activities</gui> overview.</p>
-    </item>
-    <item>
-      <p>Click <gui>Sound</gui>.</p>
-    </item>
-    <item>
-      <p>Go to the <gui>Applications</gui> tab and check that your application
-      is not muted.</p>
-    </item>
-  </steps>
-
+ <title>Проверьте, не выключен ли звук</title>
+ <p>Щёлкните на значке звука на верхней панели (в форме динамика) и проверьте, не отключен ли звук и не убавлена ли громкость.</p>
+ <p>На клавиатуре некоторых ноутбуков есть специальные переключатели или клавиши для отключения звука — попробуйте нажать их, чтобы проверить, не включится ли звук.</p>
+ <p>Следует также проверить, не отключен ли звук в приложениях, которые используются для его воспроизведения (например, в музыкальном проигрывателе или видеопроигрывателе). Проверьте, нет ли в главном окне приложения кнопки отключения звука или регулятора громкости. Также щёлкните на значке звука на верхней панели и выберите <gui>Настроить звук</gui>. Когда откроется окно <gui>Звук</gui>, перейдите на вкладку <gui>Приложения</gui> и проверьте, не отключен ли звук в вашем приложении.</p>
 </section>
 
 <section id="speakers">
-  <title>Проверьте, включены ли колонки и правильно ли они подключены</title>
-  <p>If your computer has external speakers, make sure that they are turned on
-  and that the volume is turned up. Make sure that the speaker cable is securely
-  plugged into the “output” audio socket on your computer. This socket
-  is usually light green in color.</p>
+ <title>Проверьте, включены ли колонки и правильно ли они подключены</title>
+ <p>Если у компьютера есть внешние аудиоколонки, убедитесь, что они включены и громкость не убавлена до минимума. Проверьте, надёжно ли штекер на шнуре колонок вставлен в выходное гнездо на задней стороне компьютера. Обычно это гнездо светло-зелёного цвета.</p>
 
-  <p>Some sound cards can switch between the socket they use for output
-  (to the speakers) and the socket for input (from a microphone, for instance).
-  The output socket may be different when running Linux, Windows or Mac OS.
-  Try connecting the speaker cable to a different audio socket on your
-  computer.</p>
+ <p>Некоторые звуковые карты позволяют переключать гнёзда, используемые для вывода звука (на колонки) и для ввода (например, с микрофона). В Linux выходное гнездо может быть другим, чем в Windows или Mac OS. Попробуйте подключить шнур колонок в другой аудиоразъём и проверьте, не появится ли звук.</p>
 
- <p>A final thing to check is that the audio cable is securely plugged into the
- back of the speakers. Some speakers have more than one input, too.</p>
+ <p>И, наконец, проверьте, надёжно ли аудиокабель подключён к задней стороне колонок. Некоторые колонки тоже имеют более одного входного гнезда.</p>
 </section>
 
 <section id="device">
-  <title>Check that the correct sound device is selected</title>
-
-  <p>Some computers have multiple “sound devices” installed. Some of these are
-  capable of outputting sound and some are not, so you should check that you
-  have the correct sound device selected. This might involve some
-  trial-and-error to choose the right one.</p>
-
-  <steps>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Sound</gui>.</p>
-    </item>
-    <item>
-      <p>Нажмите <gui>Звук</gui> чтобы открыть этот раздел настроек.</p>
-    </item>
-    <item>
-      <p>In the <gui>Output</gui> tab, change the <gui>Profile</gui>
-      settings for the selected device and play a sound to see if it works.
-      You might need to go through the list and try each profile.</p>
-
-      <p>If that does not work, you might want to try doing the same for any
-      other devices that are listed.</p>
-    </item>
-  </steps>
-
+ <title>Проверьте, правильное ли звуковое устройство выбрано</title>
+ <p>На некоторых компьютерах имеется несколько звуковых устройств. Некоторые из них могут выводить звук, а некоторые нет, так что необходимо проверить, правильное ли устройство выбрано. Для этого вам, возможно, придётся применить метод проб и ошибок.</p>
+ <steps>
+  <item>
+   <p>Щёлкните на значке звука на верхней панели и выберите <gui>Настроить звук</gui>.</p>
+  </item>
+  <item>
+   <p>В появившемся окне <gui>Звук</gui> перейдите на вкладку <gui>Выход</gui>. Запомните, какое устройство и какой профиль выбраны (чтобы можно было вернуться к выбору по умолчанию, если изменённые настройки не будут работать).</p>
+  </item>
+  <item>
+   <p>Попробуйте изменить профиль для выбранного устройства и попробуйте воспроизвести звук, чтобы проверить, работает ли выбранный профиль. Возможно, придётся проверить каждый профиль из списка.</p>
+  </item>
+  <item>
+   <p>Если это не поможет, попробуйте сделать то же самое для каждого устройства в списке.</p>
+  </item>
+  <item>
+   <p>Try changing the <gui>Connector</gui> option in the <gui>Output</gui> tab.</p>
+  </item>
+ </steps>
 </section>
 
 <section id="hardware-detected">
-
  <title>Проверьте, правильно ли определена звуковая карта</title>
+ <p>Возможно, ваша звуковая карта определена неправильно. В этом случае компьютер будет считать, что он не может воспроизводить звук. Возможная причина неправильного определения звуковой карты — не установленные драйверы для этой карты.</p>
+ <steps>
+  <item>
+   <p>Зайдите в <gui>Обзор</gui> и откройте Терминал.</p>
+  </item>
+  <item>
+   <p>Наберите <cmd>aplay -l</cmd> и нажмите <key>Enter</key>.</p>
+  </item>
+  <item>
+   <p>A list of devices will be shown. If there are no <gui>playback hardware
+ devices</gui>, your sound card has not been detected.</p>
+  </item>
+ </steps>
 
-  <p>Your sound card may not have been detected properly probably because 
-  the drivers for the card are not installed. You may need to install the drivers
-  for the card manually. How you do this depends on the type of the card. </p>
+ <p>Если ваша звуковая карта не определена, может понадобиться установить драйверы для неё вручную. Как это сделать, будет зависеть от того, какая у вас звуковая карта.</p>
 
-  <p>Run the <cmd>lspci</cmd> command in the Terminal to find out what sound
-  card you have:</p>
-  <steps>
-    <item>
-      <p>Go to the <gui>Activities</gui> overview and open a Terminal.</p>
-    </item>
-    <item>
-      <p>Run <cmd>lspci</cmd> as <link xref="user-admin-explain">superuser</link>;
-      either type <cmd>sudo lspci</cmd> and type your password, or type
-      <cmd>su</cmd>, enter the <em>root</em> (administrative) password,
-      then type <cmd>lspci</cmd>.</p>
-    </item>
-    <item>
-      <p>Check if an <em>audio controller</em> or <em>audio device</em> is listed:
-      in such case you should see the make and model number of the sound card. 
-      Also, <cmd>lspci -v</cmd> shows a list with more detailed information.</p>
-    </item>
-  </steps>
+ <p>Посмотреть, какая у вас звуковая карта можно с помощью команды <cmd>lspci</cmd> в Терминале. Выполнять команду <cmd>lspci</cmd> нужно от имени <link xref="user-admin-explain">суперпользователя</link>: либо наберите <cmd>sudo lspci</cmd> и введите свой пароль, либо наберите <cmd>su</cmd>, введите пароль администратора (<em>root</em>), а затем наберите <cmd>lspci</cmd>. Посмотрите, есть ли в выводе команды строка со словосочетанием <em>audio controller</em> или <em>audio device</em> — она должна содержать название производителя и номер модели звуковой карты. <cmd>lspci -v</cmd> покажет список с более подробной информацией.</p>
 
-  <p>You may be able to find and install drivers for your card. It is best to
-  ask on support forums (or otherwise) for your Linux distribution for
-  instructions.</p>
+ <p>Теперь вы можете найти и установить драйверы для своей звуковой карты. Лучше всего поискать инструкции о том, как это сделать, на форуме поддержки вашего дистрибутива Linux.</p>
 
-  <p>If you cannot get drivers for your sound card, you might prefer to buy a
-  new sound card. You can get sound cards that can be installed inside the
-  computer and external USB sound cards.</p>
-
+ <p>Если найти драйверы для звуковой карты не удалось, возможно, вам стоит купить новую звуковую карту. Можно приобрести либо звуковую карту, которая устанавливается внутрь компьютера, либо внешнюю звуковую карту, подключаемую через USB.</p>
 </section>
 
 </page>

@@ -18,9 +18,8 @@
     </credit>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
-    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
 
-    <desc>Testegeu si el vostre disc dur te problemes per assegurar-vos que estigui correcte.</desc>
+    <desc>Test your hard disk for problems to make sure that it's healthy.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -30,29 +29,36 @@
     </mal:credit>
   </info>
 
-<title>Comproveu el vostre disc dur per problemes</title>
+<title>Check your hard disk for problems</title>
 
 <section id="disk-status">
- <title>S'està comprovant el disc dur</title>
-  <p>Els discs durs porten una eina  integrada per a la verificació del seu estat que s'anomena <app>SMART</app> (Auto-Monitoring, Analysis i Reporting Technology), que controla contínuament el disc per detectar possibles problemes. SMART també us avisa si el disc està a punt de fallar, ajudant-vos a evitar la pèrdua de dades importants.</p>
+ <title>Checking the hard disk</title>
+  <p>Hard disks have a built-in health-check tool called <app>SMART</app>
+ (Self-Monitoring, Analysis, and Reporting Technology), which continually
+ checks the disk for potential problems. SMART also warns you if the disk
+ is about to fail, helping you avoid loss of important data.</p>
 
-  <p>Encara que SMART s'executi automàticament, també podeu comprovar l'estat del vostres discs executant l'aplicació <app>Discs</app>:</p>
+  <p>Although SMART runs automatically, you can also check your disk's
+ health by running the <app>Disks</app> application:</p>
 
 <steps>
- <title>Validar l'estat del vostre disc dur mitjançant l'aplicació Discs</title>
+ <title>Check your disk's health using the Disks application</title>
 
-  <item>
-    <p>Obrir<app>Discs</app> des de la vista d'<gui>Activitats</gui>.</p>
-  </item>
-  <item>
-    <p>Seleccioneu el disc que voleu consultar des de la llista de dispositius d'emmagatzematge de l'esquerra. Es mostrarà la informació i l'estat del disc.</p>
-  </item>
-  <item>
-    <p>Feu clic al botó de menú i seleccioneu <gui>SMART Data &amp; Auto-proves ...</gui>. L'<gui>Avaluació global</gui> hauria de dir "el disc està correcte".</p>
-  </item>
-  <item>
-    <p>Veure més informació a <gui>Atributs SMART</gui>, o  feu clic al botó <gui style="button">Iniciar les auto-proves</gui> per executar una auto-prova.</p>
-  </item>
+ <item>
+  <p>Open the <app>Disks</app> application from the <gui>Activities</gui>
+  overview.</p>
+ </item>
+ <item>
+  <p>Select the disk you want to check from the <gui>Storage Devices</gui> list.
+  Information and status of the disk will appear under <gui>Drive</gui>.</p>
+ </item>
+ <item>
+  <p><gui>SMART Status</gui> should say "Disk is healthy".</p>
+ </item>
+ <item>
+  <p>Click the <gui>SMART Data</gui> button to view more drive information, or
+  to run a self-test.</p>
+ </item>
 
 </steps>
 
@@ -60,13 +66,21 @@
 
 <section id="disk-not-healthy">
 
- <title>Què passa si el disc no està bé?</title>
+ <title>What if the disk isn't healthy?</title>
 
-  <p>Fins i tot si l'<gui>Avaluació global</gui> assenyala que el disc <em>no està</em> bé, tpot ser que no hi hagi cap alarma. No obstant això, és millor preparar-se amb una <link xref="backup-why">còpia de seguretat</link> per evitar la pèrdua de dades.</p>
+  <p>Even if the <gui>SMART Status</gui> indicates that the disk <em>isn't</em>
+ healthy, there may be no cause for alarm. However, it's better to be prepared
+ with a <link xref="backup-why">backup</link> to prevent data loss.</p>
 
-  <p>Si l'estat diu "Pre-errada", el disc segueix estant raonablement bé però s'han detectat signes de desgast que signifiquen que pot fallar en un futur proper. Si el vostre disc dur (o ordinador) té alguns anys, és probable que vegeu aquest missatge almenys en alguns dels controls. Heu de fer <link xref="backup-how">còpies de seguretat dels fitxers importants amb regularitat</link> i verificar l'estat del disc periòdicament per veure si empitjora.</p>
+  <p>If the status says "Pre-fail", the disk is still reasonably healthy but
+ signs of wear have been detected which mean it might fail in the near future.
+ If your hard disk (or computer) is a few years old, you are likely to see
+ this message on at least some of the health checks. You should
+ <link xref="backup-how">backup your important files regularly</link> and check
+ the disk status periodically to see if it gets worse.</p>
 
-  <p>Si s'agreuja, és possible que vulgueu portar l'ordinador / disc dur a un professional per a fer un diagnòstic més profund o a repar.</p>
+  <p>If it gets worse, you may wish to take the computer/hard disk to a
+ professional for further diagnosis or repair.</p>
 
 </section>
 

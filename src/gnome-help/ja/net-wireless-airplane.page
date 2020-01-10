@@ -1,36 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-airplane" xml:lang="ja">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="net-wireless-airplane" xml:lang="ja">
   <info>
     <link type="guide" xref="net-wireless"/>
 
     <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
-    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-    <revision pkgversion="3.24" date="2017-03-26" status="final"/>
 
     <credit type="author">
       <name>GNOME ドキュメンテーションプロジェクト</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-      <years>2015</years>
-    </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-      <years>2015</years>
-    </credit>
 
-    <desc>ネットワークの設定を開き、機内モードをオンにします。</desc>
+    <desc>Open Network Settings and switch Airplane Mode to ON.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -52,56 +38,25 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Noriko Mizumoto</mal:name>
-      <mal:email>noriko@fedoraproject.org</mal:email>
-      <mal:years>2013, 2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>坂本 貴史</mal:name>
-      <mal:email>o-takashi@sakamocchi.jp</mal:email>
-      <mal:years>2013, 2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>日本GNOMEユーザー会</mal:name>
       <mal:email>http://www.gnome.gr.jp/</mal:email>
       <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
 
-<title>無線機能をオフにする (機内モード)</title>
+<title>Turn off wireless (airplane mode)</title>
 
-<p>If you have your computer on an airplane (or some other area where wireless
- connections are not allowed), you should switch off your wireless. You may
- also want to switch off your wireless for other reasons (to save battery power,
- for example).</p>
+<p>If you have your computer on an airplane (or some other area where wireless connections are not allowed), you should switch off your wireless. You may also want to switch off your wireless for other reasons (to save battery power, for example). To do this:</p>
 
-  <note>
-    <p>Using <em>Airplane Mode</em> will completely turn off all wireless
-    connections, including WiFi, 3G and Bluetooth connections.</p>
-  </note>
+<steps>
+ <item>
+  <p>Click the network icon on the top bar and select <gui>Network Settings</gui>.</p>
+ </item>
+ <item>
+  <p>Switch <gui>Airplane Mode</gui> on. This will turn off your wireless connection until you switch off airplane mode again.</p>
+ </item>
+</steps>
 
-  <p>To turn on airplane mode:</p>
-
-  <steps>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Network</gui>.</p>
-    </item>
-    <item>
-      <p><gui>ネットワーク</gui>を選択して設定パネルを開きます。</p>
-    </item>
-    <item>
-      <p>Switch <gui>Airplane Mode</gui> to <gui>ON</gui>. This will turn off
-      your wireless connection until you disable airplane mode again.</p>
-    </item>
-  </steps>
-
-  <note style="tip">
-    <p>You can turn off your WiFi connection from the 
-    <gui xref="shell-introduction#yourname">system menu</gui> by clicking on 
-    the connection name and choosing <gui>Turn Off</gui>.</p>
-  </note>
+<note><p>Using <em>Airplane Mode</em> will completely turn off both wireless and Bluetooth connections.</p></note>
 
 </page>

@@ -4,8 +4,9 @@
   <info>
     <link type="guide" xref="nautilus-prefs" group="nautilus-display"/>
 
+    <desc>Kontrolē ikonu parakstus, ko izmanto datņu pārvaldniekā.</desc>
+
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-30" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -15,15 +16,8 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Kontrolē ikonu parakstus, ko izmanto datņu pārvaldniekā.</desc>
-
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
   </info>
 
 <title>Datņu pārvaldnieka attēlošanas iestatījumi</title>
@@ -32,21 +26,13 @@
 
 <section id="icon-captions">
   <title>Ikonu paraksti</title>
-  <!-- TODO: update screenshot for 3.18 and above. -->
   <media type="image" src="figures/nautilus-icons.png" width="250" height="110" style="floatend floatright">
     <p>Datņu pārvaldnieka ikonas ar parakstiem</p>
   </media>
   <p>Kad izmantojat ikonu skatu, jūs varat izvēlēties rādīt zem katras ikonas tās parakstā arī papildu informāciju par datnēm un mapēm. Tas noder, piemēram, ja bieži vajag redzēt, kam pieder datne vai, kad tā pēdējo reizi rediģēta.</p>
-  <p>Jūs varat pietuvināt mapi, spiežot skata opciju pogu rīkjoslā un izvēloties tālummaiņas līmeni ar slīdni. Tuvinot datņu pārvaldnieks parādīs ar vien vairāk informācijas parakstā. Jūs varat izvēlēties trīs lietas, ko rādīt parakstā. Pirmā tiks parādīta vairumā tuvinājuma līmeņu. Pēdējā būs redzama tikai ļoti lielā pietuvinājumā.</p>
+  <p>Jūs varat pietuvināt mapi, spiežot  <media type="image" src="figures/go-down.png">uz leju vērsto</media> pogu rīkjoslā un izvēloties vienu no <gui>Mēroga</gui> opcijām. Tuvinot datņu pārvaldnieks parādīs ar vien vairāk informācijas parakstā. Jūs varat izvēlēties trīs lietas, ko rādīt parakstā. Pirmā tiks parādīta vairumā tuvinājuma līmeņu. Pēdējā būs redzama tikai ļoti lielā pietuvinājumā.</p>
   <p>Informācija, kuru varat parādīt ikonu parakstos, ir tā pati, kas redzama saraksta skatā. Skatiet <link xref="nautilus-list"/>, lai uzzinātu vairāk.</p>
-</section>
-
-<section id="list-view">
-
-  <title>Saraksta skats</title>
-
-  <p>Kad datnes skatās kā sarakstu, varat <gui>Pārvietoties pa mapēm koka skatā</gui>. Tas datņu skatā pie katras direktorijas rāda izvērsēju, lai varētu vienlaicīgi parādīt vairāku direktoriju saturu. Tas noder, ja mapju struktūra ir būtiska, piemēram, ja mūzikas datnes ir organizētas mapēs pēc izpildītājiem un apakšmapes pēc albumiem.</p>
-
+  <note><p>Ja datņu pārvaldnieka logs ir atvērts, varat to pārlādēt, lai izmaiņas ikonu uzrakstos stātos spēkā. Spiediet <guiseq><gui>Skats</gui><gui>Pārlādēt</gui></guiseq> vai piespiediet <keyseq><key>Ctrl</key><key>R</key></keyseq>.</p></note>
 </section>
 
 </page>

@@ -1,49 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="accounts-disable-service" xml:lang="lv">
 
-  <info>
-    <link type="guide" xref="accounts"/>
+<info>
+  <desc>Daži tiešsaistes konti var tikt izmantoti, lai piekļūtu vairākiem servisiem (piemēram, kalendārs un e-pasts). Jūs varat noteikt, kurus no šiem servisiem var izmantot lietotnes.</desc>
 
-    <revision pkgversion="3.5.5" date="2012-08-14" status="review"/>
-    <revision pkgversion="3.13.92" date="2013-09-20" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+  <link type="guide" xref="accounts"/>
 
-    <credit type="author">
-      <name>Phil Bull</name>
-      <email>philbull@gmail.com</email>
-    </credit>
+  <revision pkgversion="3.5.5" version="0.1" date="2012-08-14" status="review"/>
+  <credit type="author">
+    <name>Phil Bull</name>
+    <email>philbull@gmail.com</email>
+  </credit>
+    
+</info>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+<title>Noteikt, kurus tiešsaistes servisus var lietot ar šo kontu</title>
 
-    <desc>Daži tiešsaistes konti var tikt izmantoti, lai piekļūtu vairākiem servisiem (piemēram, kalendārs un e-pasts). Jūs varat noteikt, kurus no šiem servisiem var izmantot lietotnes.</desc>
-  </info>
+<p>Daži tiešsaistes kontu tipi ļauj piekļūt vairākiem servisiem ar vienu lietotāja kontu. Piemēram, Google konti nodrošina pieeju kalendāram, e-pastam, kontaktiem un tērzēšanai. Jūs varat izmantot savu kontu dažiem no šiem servisiem, bet citiem nē. Piemēram, var lietot Google kontu e-pastam, bet ne tērzēšanai, jo tai jūs lietojat citu tiešsaistes kontu.</p>
 
-  <title>Noteikt, kurus tiešsaistes servisus var lietot ar šo kontu</title>
+<p>Jūs varat deaktivizēt kādus no servisiem, kurus nodrošina tiešsaistes konts:</p>
 
-  <p>Daži tiešsaistes kontu sniedzēji ļauj piekļūt vairākiem servisiem ar vienu lietotāja kontu. Piemēram, Google konti nodrošina pieeju kalendāram, e-pastam, kontaktiem un tērzēšanai. Jūs varat izmantot savu kontu dažiem no šiem servisiem, bet citiem nē. Piemēram, var lietot Google kontu e-pastam, bet ne tērzēšanai, ja tai jūs lietojat citu tiešsaistes kontu.</p>
+<steps>
+  <item><p>Atveriet <app>Tiešsaistes kontu</app> iestatījumus no <gui>Aktivitāšu</gui> pārskata.</p></item>
+  <item><p>Izvēlieties kontu, kuru vēlaties mainīt, no saraksta pa kreisi.</p>
+  </item>
+  <item><p>Saraksts ar šim kontam pieejamajiem servisiem tiks parādīts zem virsraksta <gui>Lietot šo kontu</gui>.</p></item>
+  <item><p>Ja nevēlaties, lai kāds serviss tiktu izmantots, atslēdziet to.</p>
+  </item>
+</steps>
 
-  <p>Jūs varat deaktivizēt kādus no servisiem, kurus nodrošina tiešsaistes konts:</p>
+<p>Kad serviss kādam kontam ir deaktivizēts, lietotnes jūsu datorā vairs nevarēs izmantot šo kontu, lai pieslēgtos attiecīgajam servisam.</p>
 
-  <steps>
-    <item>
-      <p>Atveriet <gui xref="shell-introduction#activities">Aktivitāšu</gui> pārskatu un sāciet rakstīt <gui>Tiešsaistes konti</gui>.</p>
-    </item>
-    <item>
-      <p>Spiediet <gui>Tiešsaistes konti</gui>, lai atvērtu paneli.</p>
-    </item>
-    <item>
-      <p>Izvēlieties kontu, kuru vēlaties mainīt, no saraksta pa labi.</p>
-    </item>
-    <item>
-      <p>Saraksts ar šim kontam pieejamajiem servisiem tiks parādīts zem virsraksta <gui>Lietot</gui>. Skatiet <link xref="accounts-which-application"/>, lai redzētu, kuras lietotnes piekļūst kuriem pakalpojumiem.</p>
-    </item>
-    <item>
-      <p>Ja nevēlaties, lai kāds serviss tiktu izmantots, izslēdziet to.</p>
-    </item>
-  </steps>
-
-  <p>Kad serviss kādam kontam ir deaktivēts, lietotnes jūsu datorā vairs nevarēs izmantot šo kontu, lai savienotos ar attiecīgo servisu.</p>
-
-  <p>Lai ieslēgtu iepriekš deaktivizētu servisu, atgriezieties panelī <gui>Tiešsaistes konti</gui> un ieslēdziet to.</p>
+<p>Lai ieslēgtu iepriekš deaktivizētu servisu, atgriezieties logā <gui>Tiešsaistes konti</gui> un ieslēdziet to.</p>
 
 </page>

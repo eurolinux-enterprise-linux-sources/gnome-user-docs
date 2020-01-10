@@ -1,112 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="sharing-media" xml:lang="el">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="sharing-media" xml:lang="el">
   <info>
     <link type="guide" xref="sharing"/>
-    <link type="guide" xref="prefs-sharing"/>
+    <link type="guide" xref="settings-sharing"/>
 
-    <revision pkgversion="3.10" version="0.2" date="2013-11-02" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.14" date="2014-10-13" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+    <revision pkgversion="3.8.2" version="0.1" date="2013-05-11" status="draft"/>
 
     <credit type="author">
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
 
+    <desc>Share media on your local network using Rygel.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Διαμοιραστείτε πολυμέσα στο τοπικό δίκτυο σας χρησιμοποιώντας UPnP.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
-      <mal:email>team@gnome.gr</mal:email>
-      <mal:years>2009-2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
       <mal:email>dmtrs32@gmail.com</mal:email>
-      <mal:years>2012-2015</mal:years>
+      <mal:years>2012, 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:name> Φώτης Τσάμης</mal:name>
       <mal:email>ftsamis@gmail.com</mal:email>
       <mal:years>2009</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:name> Μάριος Ζηντίλης</mal:name>
       <mal:email>m.zindilis@dmajor.org</mal:email>
       <mal:years>2009, 2010</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Θάνος Τρυφωνίδης</mal:name>
-      <mal:email>tomtryf@gnome.org</mal:email>
-      <mal:years>2012-2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Μαρία Μαυρίδου</mal:name>
-      <mal:email>mavridou@gmail.com</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:name> Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
     </mal:credit>
   </info>
 
-  <title>Κοινή χρήση της μουσικής, των φωτογραφιών και των βίντεό σας</title>
+  <title>Share your music, photos and videos</title>
 
-  <p>Μπορείτε να περιηγηθείτε, να αναζητήσετε και να παίξετε τα μέσα στον υπολογιστή σας χρησιμοποιώντας μια ενεργή συσκευή <sys>UPnP</sys> ή <sys>DLNA</sys> όπως ένα τηλέφωνο, τηλεόραση ή κονσόλα παιχνιδιού. Ρυθμίστε την <gui>Κοινή χρήση μέσων</gui> για να επιτρέψετε σε αυτές τις συσκευές να προσπελάσουν τους φακέλους που περιέχουν τη μουσική, τις φωτογραφίες και τα βίντεό σας.</p>
+  <p>You can browse, search and play the media on your computer using a
+ <sys>UPnP</sys> or <sys>DLNA</sys> enabled device such as a phone, TV or game
+ console. Configure <gui>Media Sharing</gui> to allow these devices to access
+ the folders containing your music, photos and videos.</p>
 
   <note style="info package">
-    <p>Πρέπει να έχετε εγκατεστημένο το πακέτο <app>Rygel</app> για να είναι ορατή η <gui>Κοινή χρήση πολυμέσων</gui>.</p>
+    <p>You must have the <app>Rygel</app> package installed for
+     <gui>Media Sharing</gui> to be visible.</p>
 
     <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
       <if:when test="action:install">
-        <p><link action="install:rygel" style="button">Εγκατάσταση Rygel</link></p>
+        <p><link action="install:rygel" style="button">Install Rygel</link></p>
       </if:when>
     </if:choose>
   </note>
 
   <steps>
     <item>
-      <p>Ανοίξτε την επισκόπηση <gui xref="shell-introduction#activities">Δραστηριότητες</gui> και αρχίστε να πληκτρολογείτε <gui>Κοινή χρήση</gui>.</p>
+      <p>Πατήστε το όνομά σας στην πάνω γραμμή και επιλέξτε <gui>Ρυθμίσεις</gui>.</p>
     </item>
     <item>
-      <p>Κάντε κλικ στο <gui>Κοινή χρήση</gui> για να ανοίξετε τον πίνακα.</p>
+      <p>Open <gui>Sharing</gui>.</p>
     </item>
     <item>
-      <p>Αν η <gui>Κοινή χρήση</gui> είναι <gui>ΑΝΕΝΕΡΓΗ</gui>, αλλάξτε την σε <gui>ΕΝΕΡΓΗ</gui>.</p>
-
-      <note style="info"><p>Αν το κείμενο κάτω από το <gui>όνομα υπολογιστή</gui> σας επιτρέπει να το επεξεργαστείτε, μπορείτε να <link xref="sharing-displayname">αλλάξετε</link> το όνομα που ο υπολογιστής σας εμφανίζετε στο δίκτυο.</p></note>
+      <p>If <gui>Sharing</gui> is <gui>OFF</gui>, switch it to
+      <gui>ON</gui>.</p>
     </item>
     <item>
-      <p>Επιλέξτε <gui>Κοινή χρήση πολυμέσων</gui>.</p>
+      <p>Select <gui>Media Sharing</gui>.</p>
     </item>
     <item>
-      <p>Αλλάξτε το <gui>Κοινή χρήση πολυμέσων</gui> σε <gui>ΝΑΙ</gui>.</p>
+      <p>Switch <gui>Share Media On This Network</gui> to <gui>ON</gui>.</p>
     </item>
     <item>
-      <p>By default, <file>Music</file>, <file>Pictures</file> and 
-      <file>Videos</file> are shared. To remove one of these, click the
-      <gui>×</gui> next to the folder name.</p>
+      <p>Click <gui style="button">+</gui> to open the
+      <gui>Choose a folder</gui> window. Navigate <em>into</em> the desired
+      folder, <file>Music</file> in your <file>Home</file> directory for
+      example, and click <gui style="button">Open</gui>. Repeat for the other
+      folders you wish to share, for example <file>Pictures</file> and 
+      <file>Videos</file>.</p>
     </item>
     <item>
-      <p>Για να προσθέσετε ένα φάκελο, κάντε κλικ στο <gui style="button">+</gui> για να ανοίξετε το παράθυρο <gui>Επιλογή φακέλου</gui>. Περιηγηθείτε <em>στον</em> επιθυμητό φάκελο και πατήστε <gui style="button">Άνοιγμα</gui>.</p>
-    </item>
-    <item>
-      <p>Click <gui style="button">×</gui>. You will now be able to browse
+      <p>Click <gui style="button">Close</gui>. You will now be able to browse
       or play media in the folders you selected using the external device.</p>
     </item>
   </steps>
-
-  <section id="networks">
-  <title>Δίκτυα</title>
-
-  <p>Η ενότητα <gui>Δίκτυα</gui> εμφανίζει τα δίκτυα στα οποία είσαστε προς το παρόν συνδεμένοι. Χρησιμοποιήστε τον διακόπτη <gui>ΝΑΙ | ΟΧΙ</gui> δίπλα στο κάθε δίκτυο για να επιλέξετε που μπορούν να διαμοιραστούν τα πολυμέσα σας.</p>
-
-  </section>
 
 </page>

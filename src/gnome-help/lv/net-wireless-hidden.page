@@ -1,62 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-hidden" xml:lang="lv">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="net-wireless-hidden" xml:lang="lv">
   <info>
     <link type="guide" xref="net-wireless"/>
+    <link type="seealso" xref="net-editcon#wireless"/>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
-    <revision pkgversion="3.10" date="2013-12-05" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>GNOME dokumentācijas projekts</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
-    <desc>Savienoties ar bezvadu tīklu, kas nav attēlots tīklu sarakstā.</desc>
+    <desc>Atveriet <gui>Tīkla iestatījumus</gui> un savienojieties ar <gui>Citu</gui> bezvadu tīklu.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
 <title>Savienojaties ar slēptu bezvadu tīklu.</title>
 
-<p>Ir iespējams izveidot bezvadu tīklu tā, lai tas būtu “paslēpts”. Paslēpts tīkls neuzrādīsies bezvadu tīklu sarakstā, kas ir redzami <gui>Tīklu</gui> iestatījumos. Lai savienotos ar slēptu bezvadu tīklu:</p>
+<p>Ir iespējams izveidot bezvadu tīklu tā, lai tas būtu "paslēpts." Paslēpts tīkls neuzrādīsies tīklu sarakstā, kurš parādās, spiežot uz tīkla ikonas augšējajā joslā (vai bezvadu tīklu sarakstā citos datoros). Lai savienotos ar slēptu bezvadu tīklu:</p>
 
 <steps>
-  <item>
-    <p>Atveriet <gui xref="shell-introduction#yourname">sistēmas izvēlni</gui> augšējās joslas labajā pusē.</p>
-  </item>
-  <item>
-    <p>Izvēlieties <gui><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-excellent-symbolic.svg" width="16" height="16"/>Wi-Fi nav savienots</gui>. Tiks izvēsta Wi-Fi izvēlnes sadaļa.</p>
-  </item>
-  <item>
-    <p>Spiediet <gui>Wi-Fi iestatījumi</gui>.</p>
-  </item>
-  <item><p>Spiediet pogu <gui>Savienoties ar slēptu tīklu…</gui>.</p></item>
  <item>
-  <p>Tajā logā, kas atveras, izvēlieties iepriekš savienoto slēpto tīklu, izmantojot izkrītošo sarakstu <gui>Savienojums</gui>, vai <gui>Jauns</gui>, lai izveidotu jaunu.</p>
+  <p>Spiediet uz tīkla ikonas augšējā joslā un izvēlieties <gui>Tīkla iestatījumi</gui>.</p>
  </item>
  <item>
-  <p>Lai izveidotu jaunu savienojumu, ievadiet tīkla nosaukumu un izvēlieties bezvadu drošības tipu no <gui>Wi-Fi drošības</gui> izkrītošā saraksta.</p>
+  <p>Spiediet <gui>Bezvadu</gui> sarakstā kreisajā pusē.</p>
  </item>
  <item>
-  <p>Ievadiet paroli vai citu drošības informāciju.</p>
+  <p>Spiediet <gui>Cita</gui> pie <gui>Tīkla nosaukuma</gui> izkrītošā saraksta.</p>
  </item>
  <item>
-  <p>Spiediet <gui>Savienot</gui>.</p>
+  <p>Logā, kas parādīsies, ierakstiet tīkla nosaukumu, izvēlieties bezvadu tīkla drošības veidu un spiediet <gui>Savienoties</gui>.</p>
  </item>
 </steps>
 
-  <p>Iespējams, jums varēs noskaidrot bezvadu bāzes stacijas vai maršrutētāja iestatījumus, lai uzzinātu tīkla nosaukumu. Ja nav zināms tīkla nosaukums (SSID), varat izmantot <em>BSSID</em> (Basic Service Set Identifier, piekļuves punkta MAC adrese), un izskatās aptuveni šādi: <gui>02:00:01:02:03:04</gui>, to parasti var atrast piekļuves punkta apakšpusē.</p>
+<p>Iespējams, jums varēs noskaidrot bezvadu bāzes stacijas vai maršrutētāja iestatījumus, lai uzzinātu tīkla nosaukumu. Reizēm tas ir saukts par <em>BSSID</em> (Basic Service Set Identifier), un izskatās kā šis: <gui>02:00:01:02:03:04</gui>.</p>
 
-  <p>Jums vajadzētu arī pārbaudīt drošības iestatījums bezvadu piekļuves punktam. Meklējiet tādas frāzes kā WEP un WPA.</p>
+<p>Jums vajadzētu arī pārbaudīt bezvadu tīkla bāzes drošības iestatījums. Meklējiet terminus, kā WEP un WPA.</p>
 
 <note>
  <p>Jūs varētu domāt, ka slēpjot jūsu bezvadu tīklu jūs uzlabosiet drošību, liedzot tīklam pieslēgties tiem, kas par to neko nezina. Praksē tas tā nav, tīklu ir nedaudz grūtāk atrast, bet to joprojām var atklāt.</p>

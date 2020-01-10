@@ -7,7 +7,6 @@
     <desc>Kliknite za odprtje datotek, poganjanje ali ogled izvedljivih besedilnih datotek in navedite obnašanje smeti.</desc>
 
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -24,10 +23,6 @@
     <credit type="editor">
       <name>Sindhu S</name>
       <email>sindhus@live.in</email>
-    </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
     </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
@@ -72,7 +67,7 @@
  <p>If <gui>Ask each time</gui> is selected, a dialog will pop up asking if you
  wish to run or view the selected text file.</p>
 
- <p>Executable text files are also called <em>scripts</em>. All scripts in the
+ <p>Executable text files are also called scripts. All scripts in
  <file>~/.local/share/nautilus/scripts</file> folder will appear in the context
  menu for a file under the <gui style="menuitem">Scripts</gui> submenu. When a
  script is executed from a local folder, all selected files will be pasted to
@@ -97,7 +92,6 @@
  </note>
 
 </section>
-
 <section id="trash">
 <info>
 <link type="seealso" xref="files-delete"/>
@@ -107,8 +101,15 @@
 
 <terms>
  <item>
-  <title><gui>Ask before emptying the Trash</gui></title>
+  <title><gui>Vprašaj pred praznjenjem Smeti ali brisanjem datotek</gui></title>
   <p>Ta možnost je privzeto izbrana. Ko smeti izpraznite, bo prikazano sporočilo, ki bo potrdilo, da želite datoteke poslati v smeti ali izbrisati.</p>
+ </item>
+ <item>
+  <title><gui>Vključi ukaz izbriši, ki obide Smeti</gui></title>
+  <p>Izbira te možnosti bo v meni, ki se pojavi, ko desno kliknete na predmet v programu <app>Datoteke</app>, dodala možnost <gui>Izbriši</gui>.</p>
+<note style="warning">
+<p>Izbris predmeta z uporabo možnosti <gui>Izbriši</gui> obide smeti. Predmet je popolnoma odstranjen s sistema in ga ni več mogoče obnoviti.</p>
+</note>
  </item>
 </terms>
 </section>

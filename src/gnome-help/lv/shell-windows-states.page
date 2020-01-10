@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" version="1.0 if/1.0" id="shell-windows-states" xml:lang="lv">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" id="shell-windows-states" xml:lang="lv">
 
   <info>
+
     <link type="guide" xref="shell-windows#working-with-windows"/>
 
+    <desc>Izkārtojiet logus darbvietā, lai palīdzētu jums strādāt efektīvāk.</desc>
+
     <revision pkgversion="3.4.0" date="2012-03-24" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
 
     <credit type="author copyright">
       <name>Shaun McCance</name>
@@ -14,28 +16,25 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Izkārtojiet logus darbvietā, lai palīdzētu jums strādāt efektīvāk.</desc>
   </info>
 
-  <title>Pārvietot logus un mainīt to izmēru</title>
+<title>Pārvietot logus un mainīt to izmēru</title>
 
-  <p>Jūs varat pārvietot un mainīt izmērus logiem, lai jūs varētu strādāt efektīvāk. Vēl pie vilkšanas iespējām ir arī saīsnes un modifikatori, kas palīdz ātri izkārtot logus.</p>
+<p>You can move and resize windows to help you work more efficiently.
+In addition to the dragging behavior you might expect, GNOME features
+shortcuts and modifiers to help you arrange windows quickly.</p>
 
-  <list>
-    <item>
-      <p>Pārvietojiet logu, velkot virsraksta joslu, vai turiet piespiestu <key xref="keyboard-key-super">Super</key> un velciet jebkur logā. Pārvietojot turiet piespiestu <key>Shift</key>, lai pievilktu logu pie ekrāna malām un citiem logiem.</p>
-    </item>
-    <item>
-      <p>Mainiet loga izmēru, velkot loga malas vai stūrus. Mainot izmēru, turiet piespiestu <key>Shift</key>, lai pievilktu logu pie ekrāna malām un citiem logiem.</p>
-      <p if:test="platform:gnome-classic">Jūs varat arī pacelt maksimizētu logu, spiežot maksimizēšanas pogu virsraksta joslā.</p>
-    </item>
-    <item>
-      <p>Pārvietojiet vai mainiet izmērus logiem, izmantojot tikai tastatūru. Spiediet  <keyseq><key>Alt</key><key>F7</key></keyseq>, lai pārvietotu logu vai  <keyseq><key>Alt</key><key>F8</key></keyseq>, lai mainītu izmēru. Lietojiet bultu taustiņus,  lai pārvietotu vai mainītu izmēru un tad spiediet <key>Enter</key>, lai pabeigtu, vai spiediet <key>Esc</key>, lai atgrieztos pie sākotnējā novietojuma vai izmēra.</p>
-    </item>
-    <item>
-      <p><link xref="shell-windows-maximize">Maksimizējiet logu</link>, velkot to līdz ekrāna augšpusei. Velciet logu uz vienu ekrāna pusi, lai to maksimizētu gar malu, ļaujot jums <link xref="shell-windows-tiled">“flīzēt” logus vienu gar otru.</link>.</p>
-    </item>
-  </list>
+<list>
+<item><p>Pārvietojiet logu, velkot virsraksta joslu, vai turiet piespiestu <key>Alt</key> un velciet jebkur logā. Pārvietojot turiet piespiestu <key>Shift</key>, lai pievilktu logu pie ekrāna malām un citiem logiem.</p></item>
+
+<item><p>Mainiet loga izmēru, velkot loga malas vai stūrus. Mainot izmēru, turiet piespiestu <key>Shift</key>, lai pievilktu logu pie ekrāna malām un citiem logiem.</p>
+
+<p if:test="platform:gnome-classic">You can also resize a maximized window by
+clicking the maximize button in the titlebar.</p></item>
+
+<item><p>Pārvietojiet vai mainiet izmērus logiem, izmantojot tikai tastatūru. Spiediet  <keyseq><key>Alt</key><key>F7</key></keyseq>, lai pārvietotu logu vai  <keyseq><key>Alt</key><key>F8</key></keyseq>, lai mainītu izmēru. Lietojiet bultu taustiņus,  lai pārvietotu vai mainītu izmēru un tad spiediet <key>Enter</key>, lai pabeigtu, vai spiediet <key>Esc</key>, lai atgrieztos pie sākotnējā novietojuma vai izmēra.</p></item>
+
+<item><p><link xref="shell-windows-maximize">Maksimizējiet logu</link>, velkot to līdz ekrāna augšpusei. Velciet logu uz vienu ekrāna pusi, lai to maksimizētu gar malu, ļaujot jums <link xref="shell-windows-tiled">“flīzēt” logus vienu gar otru.</link>.</p></item>
+</list>
 
 </page>

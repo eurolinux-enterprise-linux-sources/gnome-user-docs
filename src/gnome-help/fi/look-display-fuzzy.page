@@ -2,11 +2,10 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="look-display-fuzzy" xml:lang="fi">
 
   <info>
-    <link type="guide" xref="hardware-problems-graphics"/>
+   <link type="guide" xref="hardware-problems-graphics"/>
+   <desc>Näytön resoluutio on saatettu asettaa virheellisesti.</desc>
 
     <revision pkgversion="3.8.0" version="0.3" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.9.92" date="2013-10-11" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
 
     <credit type="author">
       <name>Gnomen dokumentointiprojekti</name>
@@ -24,25 +23,12 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Shobha Tyagi</name>
-      <email>tyagishobha@gmail.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Näytön resoluutio on saatettu asettaa virheellisesti.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Timo Jyrinki</mal:name>
       <mal:email>timo.jyrinki@iki.fi</mal:email>
       <mal:years>2012.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Jiri Grönroos</mal:name>
-      <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
-      <mal:years>2012-2018.</mal:years>
     </mal:credit>
   </info>
 
@@ -50,46 +36,37 @@
 
 <p>Tämä voi johtua siitä, ettei asetettu näytön tarkkuus, eli resoluutio, ole näytöllesi sopivin.</p>
 
-<p>To solve this, open the <gui xref="shell-introduction#activities">Activities</gui>
-overview and start typing <gui>Displays</gui>. Click on <gui>Displays</gui>
-to open the panel. Try some of the <gui>Resolution</gui> options and set the
-one that makes the screen look better.</p>
+<p>To solve this, click your name on the top bar and go to <gui>Settings</gui>. In the Hardware section, choose <gui>Displays</gui>. Try some of the <gui>Resolution</gui> options and set the one that makes the screen look better.</p>
+
+<comment>
+  <cite date="2012-02-19">shaunm</cite>
+  <p>Would like a little more explanation on native resolution, which
+  is generally only applicable on LCDs. There's a stub for using two
+  monitors. Link from section below when it's added.</p>
+</comment>
 
 <section id="multihead">
-  <title>Useiden näyttöjen ollessa yhdistettynä</title>
+ <title>Useiden näyttöjen ollessa yhdistettynä</title>
 
-  <p>If you have two displays connected to the computer (for example, a normal
-  monitor and a projector), the displays might have different resolutions.
-  However, the computer’s graphics card can only display the screen in one
-  resolution at a time, so at least one of the displays might look fuzzy.</p>
+ <p>Jos tietokoneeseen on liitetty kaksi näyttöä (esimerkiksi tavallinen näyttö ja videotykki), niillä saattaa olla eri resoluutiot. Näytönohjain kuitenkin pystyy kerrallaan näyttämään yhden resoluution joten toisen näytön kuva saattaa olla epätarkka.</p>
 
-  <p>You can set it so that the two displays have different resolutions, but
-  you will not be able to display the same thing on both screens
-  simultaneously. In effect, you will have two independent screens connected at
-  the same time. You can move windows from one screen to another, but you
-  cannot show the same window on both screens at once.</p>
+ <p>Kahdella näytöllä voi olla eri tarkkuudet, mutta tässä tapauksessa saman kuvan näyttäminen molemmissa näytöissä ei ole mahdollista. Ikkunoiden siirtäminen näytöstä toiseen on mahdollista, mutta samaa ikkunaa ei voi näyttää molemmissa näytöissä samaan aikaan.</p>
 
-  <p>Asettaaksesi näytöille eri tarkkuuden:</p>
+ <p>Asettaaksesi näytöille eri tarkkuuden:</p>
 
-  <steps>
-    <item>
-      <p>Avaa <gui xref="shell-introduction#activities">Toiminnot</gui>-yleisnäkymä ja ala kirjoittamaan <gui>Näytöt</gui>.</p>
-    </item>
-    <item>
-      <p>Napsauta <gui>Näytöt</gui> avataksesi paneelin.</p>
-    </item>
-    <item>
-      <p>The displays should be listed as <gui>Mirrored</gui>. Select your main
-      display.</p>
-    </item>
-    <item>
-      <p>Select <gui>Primary</gui> in the list of display configurations, and
-      then click <gui style="button">Apply</gui> to save.</p>
-    </item>
-    <item>
-      <p><gui>Näytöt</gui> ikkunan harmaasta laatikosta valitse vuorotellen jokainen näyttö. Muuta sen <gui>Resoluutio</gui> oikeille asetuksille.</p>
-    </item>
-  </steps>
+ <steps>
+  <item>
+   <p>Click your name on the top bar and click <gui>Settings</gui>. Open <gui>Displays</gui>.</p>
+  </item>
+
+  <item>
+   <p>Poista valinta <gui>Peilaa näytöt</gui>.</p>
+  </item>
+
+  <item>
+   <p><gui>Näytöt</gui> ikkunan harmaasta laatikosta valitse vuorotellen jokainen näyttö. Muuta sen <gui>Resoluutio</gui> oikeille asetuksille.</p>
+  </item>
+ </steps>
 
 </section>
 

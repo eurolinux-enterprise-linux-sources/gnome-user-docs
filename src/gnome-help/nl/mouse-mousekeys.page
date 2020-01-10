@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="mouse-mousekeys" xml:lang="nl">
-
-  <info>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="mouse-mousekeys" xml:lang="nl">
+<info>
     <link type="guide" xref="mouse"/>
     <link type="guide" xref="a11y#mobility" group="pointing"/>
 
-    <revision pkgversion="3.8" date="2013-03-16" status="outdated"/>
-    <revision pkgversion="3.10" date="2013-11-07" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.8.0" date="2013-03-16" status="outdated"/>
+
+    <desc>Enable mouse keys to control the mouse with the keypad.</desc>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -21,59 +20,59 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-      <years>2013, 2015</years>
-    </credit>
-
+    
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
     
-    <desc>Muistoetsen inschakelen om de muis via het numerieke toetsenbord te besturen.</desc>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
-  </info>
+</info>
 
-  <title>De muisaanwijzer met behulp van het numerieke toetsenbord klikken en bewegen.</title>
+<title>Click and move mouse pointer using the keypad</title>
 
-  <p>Als u problemen heeft bij het gebruik van een muis of ander aanwijsapparaat, kunt u de muisaanwijzer via het numerieke toetsenbord besturen. Deze functie heet <em>muistoetsen</em>.</p>
+<p>If you have difficulties using a mouse or other pointing device, you can
+control the mouse pointer using the numeric keypad on your keyboard. This
+feature is called <em>mouse keys</em>.</p>
 
-  <steps>
-    <item>
-      <p>Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht en typ <gui>Universele toegang</gui>.</p>
-      <p>U kunt het <gui>Activiteiten</gui>-overzicht openen door erop te klikken, door met uw muisaanwijzer naar de linkerbovenhoek te gaan, via <keyseq><key>Ctrl</key><key>Alt</key><key>Tab</key></keyseq> gevolgd door <key>Enter</key> of met de <key xref="keyboard-key-super">Super</key>-toets.</p>
-    </item>
-    <item>
-      <p>Klik op <gui>Universele toegang</gui> om het paneel te openen.</p>
-    </item>
-    <item>
-      <p>Gebruik de pijltoetsen omhoog en omlaag om <gui>Muistoetsen</gui> te kiezen in de sectie <gui>Aanwijzen &amp; Klikken</gui> en druk daarna op <key>Enter</key> om <gui>Muistoetsen</gui> <gui>Aan</gui> te zetten.</p>
-    </item>
-    <item>
-      <p>Zorg ervoor dat <key>Num Lock</key> uit staat. U kunt nu de muisaanwijzer besturen via het numerieke toetsenbord.</p>
-    </item>
-  </steps>
+<steps>
+  <item><p>Press <keyseq><key>Ctrl</key><key>Alt</key><key>Tab</key></keyseq>
+  to give keyboard focus to the top bar.</p></item>
+  <item><p>Use the right and left arrow keys to select the
+  <link xref="a11y-icon">universal access menu</link>, then press
+  <key>Enter</key>.</p></item>
+  <item><p>Use the up and down arrow keys to select <gui>Mouse Keys</gui>
+  and press <key>Enter</key>.</p></item>
+  <item><p>Make sure that <key>Num Lock</key> is turned off. You will now be
+  able to move the mouse pointer using the keypad.</p></item>
+</steps>
 
-  <p>Het numerieke toetsenbord is een set numerieke toetsen op uw toetsenbord, meestal gerangschikt in een vierkant blok. Als u een toetsenbord heeft zonder numeriek toetsenbord (zoals een laptoptoetsenbord), dan dient u mogelijk de functietoets (<key>Fn</key>) ingedrukt te houden en bepaalde andere toetsen op uw toetsenbord gebruiken als numeriek toetsenbord. Als u deze functie vaak gebruikt op een laptop, dan kunt u een extern USB-numeriek toetsenbord aanschaffen.</p>
+ <note style="tip">
+ <p>These instructions provide the shortest way to enable mouse keys using
+ only the keyboard. Select <gui>Universal Access Settings</gui> to see more
+ accessibility options.</p>
+ </note>
 
-  <p>Elk cijfer op het numerieke toetsenbord komt overeen met een richting. Zo zal het indrukken van de <key>8</key> de muis naar boven bewegen en de <key>2</key> naar beneden. Druk op de <key>5</key> voor een éénmalige muisklik, of druk hem snel twee keer in voor een dubbelklik.</p>
+<p>The keypad is a set of numerical buttons on your keyboard, usually arranged
+into a square grid. If you have a keyboard without a keypad (such as a laptop
+keyboard), you may need to hold down the function (<key>Fn</key>)
+key and use certain other keys on your keyboard as a keypad. If you use this
+feature often on a laptop, you can purchase external USB keypads.</p>
 
-  <p>De meeste toetsenborden hebben een speciale toets waarmee u kunt rechtsklikken; deze toets wordt ook wel de <key xref="keyboard-key-menu">Menu</key>-toets genoemd. Bedenk echter dat deze toets reageert op waar de toetsenbordfocus ligt, niet waar uw muisaanwijzer zich bevindt. Zie <link xref="a11y-right-click"/> voor informatie over rechtsklikken door de <key>5</key> of de linker muisknop in te drukken.</p>
+<p>Each number on the keypad corresponds to a direction. For example, pressing
+<key>8</key> will move the pointer upwards and pressing <key>2</key> will move
+it downwards. Press the <key>5</key> key to click once with the mouse, or
+quickly press it twice to double-click.</p>
 
-  <p>Als u het numerieke toetsenbord wilt gebruiken om cijfers te typen terwijl Muistoetsen ingeschakeld is, zet dan <key>Num Lock</key> aan. Let er op dat u de muis niet met het numerieke toetsenbord kunt besturen wanneer <key>Num Lock</key> aan staat.</p>
+<p>Most keyboards have a special key which allows you to right-click, sometimes
+called the <key xref="keyboard-key-menu">Menu</key> key. Note, however, that
+this key responds to where your keyboard focus is, not where your mouse pointer
+is. See <link xref="a11y-right-click"/> for information on how to right-click by
+holding down <key>5</key> or the left mouse button.</p>
 
-  <note>
-    <p>De gewone cijfertoetsen, in een rij bovenaan het toetsenbord, besturen de muisaanwijzer niet. Alleen de toetsen van het numerieke toetsenbord kunnen gebruikt worden.</p>
-  </note>
+<p>If you want to use the keypad to type numbers while mouse keys is enabled,
+turn <key>Num Lock</key> on. The mouse cannot be controlled with the keypad when
+<key>Num Lock</key> is turned on, though.</p>
+
+<note>
+    <p>The normal number keys, in a line at the top of the keyboard, will not
+    control the mouse pointer. Only the keypad number keys can be used.</p>
+</note>
 
 </page>

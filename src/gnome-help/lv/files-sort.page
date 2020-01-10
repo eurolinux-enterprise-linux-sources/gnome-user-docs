@@ -2,11 +2,10 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-sort" xml:lang="lv">
 
   <info>
-    <link type="guide" xref="files#common-file-tasks"/>
+    <link type="guide" xref="files"/>
+    <desc>Sakārtot datnes pēc nosaukuma, izmēra, tipa vai laika, kad veiktas pēdējās izmaiņas.</desc>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-25" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -20,59 +19,61 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Sakārtot datnes pēc nosaukuma, izmēra, tipa vai laika, kad veiktas pēdējās izmaiņas.</desc>
   </info>
 
 <title>Kārtot datnes un mapes</title>
+
+<comment>
+ <p>May benefit from figures illustrating the different views.</p>
+</comment>
 
 <p>Datnes mapē var sakārtot vairākos veidos, piemēram, pēc datuma vai izmēra. Sadaļā <link xref="#ways"/> atrodams bieži lietotu kārtošanas veidu saraksts. Skatiet <link xref="nautilus-views"/>, lai uzzinātu, kā mainīt noklusējuma kārtošanas secību.</p>
 
 <p>Pieejamie kārtošanas veidi ir atkarīgi no <em>mapes skata</em>, kurš tiek izmantots. Jūs varat mainīt skatu, izmantojot saraksta vai ikonu pogas rīkjoslā.</p>
 
 <section id="icon-view">
-  <title>Ikonu skats</title>
-
-  <p>Lai sakārtotu datnes citā secībā, spiediet skata opciju pogu rīkjoslā un izvēlieties <gui>Pēc nosaukuma</gui>, <gui>Pēc izmēra</gui>, <gui>Pēc pēdējām izmaiņām</gui>, <gui>Pēc tipa</gui> vai <gui>Pēc piekļuves datuma</gui>.</p>
-
-  <p>Piemēram, ja jūs izvēlaties <gui>Pēc nosaukuma </gui>, datnes tiks sakārtoti pēc to nosaukumiem alfabētiskā secībā. Skatiet <link xref="#ways"/>, lai uzzinātu par citām iespējām.</p>
-
-  <p>Jūs varat mainīt secību uz pretējo, izvēloties <gui>Apgriezta secība</gui> no izvēlnes.</p>
-
+ <title>Ikonu skats</title>
+ <p>Lai sakārtotu datnes citā secībā, spiediet <media type="image" src="figures/go-down.png">uz leju vērsto</media> pogu rīkjoslā un izvēlieties <gui>Pēc nosaukuma</gui>, <gui>Pēc izmēra</gui>, <gui>Pēc tipa</gui> vai <gui>Pēc izmaiņu datuma</gui>.</p>
+ <p>Piemēram, ja jūs izvēlaties <gui>Pēc nosaukuma </gui>, datnes tiks sakārtoti pēc to nosaukumiem alfabētiskā secībā. Skatiet <link xref="#ways"/>, lai uzzinātu par citām iespējām.</p>
+ <p>Jūs varat mainīt secību uz pretējo, izvēloties <gui>Apgriezta secība</gui> no izkrītošās izvēlnes.</p>
 </section>
 
 <section id="list-view">
-  <title>Saraksta skats</title>
-
-  <p>Lai sakārtotu datnes citā secībā, klikšķiniet uz kolonnu virsrakstiem. Piemēram, spiediet <gui>Tips</gui>, lai sakārtotu datnes pēc to tipa. Nospiediet kolonnas virsrakstu vēlreiz, lai apgrieztu secību.</p>
-  <p>Saraksta skatā var arī attēlot vairākas kolonnas ar citiem atribūtiem un kārtot pēc tiem. Spiediet skata opciju pogu rīkjoslā, izvēlieties <gui>Redzamās kolonnas…</gui> un izvēlieties kolonnas, kuras vēlaties redzēt. Tad varēsiet tās izmantot kārtošanai. Skatiet <link xref="nautilus-list"/>, lai uzzinātu vairāk par pieejamajām kolonnām.</p>
-
+ <title>Saraksta skats</title>
+ <p>Lai sakārtotu datnes citā secībā, klikšķiniet uz kolonnu virsrakstiem. Piemēram, spiediet <gui>Tips</gui>, lai sakārtotu datnes pēc to tipa. Nospiediet kolonnas virsrakstu vēlreiz, lai apgrieztu secību.</p>
+ <p>Saraksta skatā var arī attēlot vairākas kolonnas ar citiem atribūtiem un kārtot pēc tiem. Spiediet <media type="image" src="figures/go-down.png">uz leju vērsto</media> pogu rīkjoslā, izvēlieties <gui>Redzamās kolonnas</gui> un izvēlieties kolonnas, kuras vēlaties redzēt. Tad varēsiet tās izmantot kārtošanai. Skatiet <link xref="nautilus-list"/>, lai uzzinātu vairāk par pieejamajām kolonnām.</p>
 </section>
 
+<!--
+<section id="compact-view">
+ <title>Compact view</title>
+ <p>You can sort files in Compact view in the same way that you can sort them in
+ the Icon view. The only difference is that you can't manually position the files
+ anywhere you want; they are always organized as a list in this view.</p>
+</section>
+-->
+
 <section id="ways">
-  <title>Datņu kārtošanas veidi</title>
-
-  <terms>
-    <item>
-      <title>Nosaukums</title>
-      <p>Sakārto alfabētiski pēc datņu nosaukumiem.</p>
-    </item>
-    <item>
-      <title>Izmērs</title>
-      <p>Sakārto pēc datņu izmēra (cik vietas tie aizņem diskā). Pēc noklusējuma sakārtojums sākas ar mazāko un beidzas ar lielāko datni.</p>
-    </item>
-    <item>
-      <title>Tips</title>
-      <p>Sakārto alfabētiskā secībā pēc datņu tipa. Viena tipa datnes ir sagrupētas kopā un sakārtotas pēc nosaukuma.</p>
-    </item>
-    <item>
-      <title>Pēdējo reizi mainīts</title>
-      <p>Sakārto pēc datuma un laika, kad datnē ieviestas pēdējās izmaiņas. Pēc noklusējuma sakārto no vecākā uz jaunāko datni.</p>
-    </item>
-  </terms>
-
+ <title>Datņu kārtošanas veidi</title>
+ <terms>
+  <item>
+   <title>Pēc nosaukuma</title>
+   <p>Sakārto alfabētiski pēc datņu nosaukumiem.</p>
+  </item>
+  <item>
+   <title>Pēc izmēra</title>
+   <p>Sakārto pēc datņu izmēra (cik vietas tie aizņem diskā). Pēc noklusējuma sakārtojums sākas ar mazāko un beidzas ar lielāko datni.</p>
+  </item>
+  <item>
+   <title>Pēc tipa</title>
+   <p>Sakārto alfabētiskā secībā pēc datņu tipa. Viena tipa datnes ir sagrupētas kopā un sakārtotas pēc nosaukuma.</p>
+  </item>
+  <item>
+   <title>Pēc izmaiņu datuma</title>
+   <p>Sakārto pēc datuma un laika, kad datnē ieviestas pēdējās izmaiņas. Pēc noklusējuma sakārto no vecākā uz jaunāko datni.</p>
+  </item>
+ </terms>
 </section>
 
 </page>

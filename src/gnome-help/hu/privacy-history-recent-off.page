@@ -1,28 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="privacy-history-recent-off" xml:lang="hu">
 
-  <info>
-    <link type="guide" xref="privacy"/>
-    <link type="guide" xref="files#more-file-tasks"/>
-
-    <revision pkgversion="3.8" date="2013-03-11" status="final"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-30" status="final"/>
-
-    <credit type="author">
-      <name>Jim Campbell</name>
-      <email>jwcampbell@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>A legutóbb használt fájlok követésének kikapcsolása vagy korlátozása.</desc>
+<info>
   
+  <link type="guide" xref="privacy"/>
+  <desc>A legutóbb használt fájlok követésének kikapcsolása.</desc>
+  <revision pkgversion="3.8" date="2013-03-11" status="final"/>
+  <credit type="author">
+    <name>Jim Campbell</name>
+    <email>jwcampbell@gmail.com</email>
+  </credit>
+  <credit type="editor">
+    <name>Michael Hill</name>
+    <email>mdhillca@gmail.com</email>
+  </credit>
+
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Griechisch Erika</mal:name>
       <mal:email>griechisch.erika at gmail dot com</mal:email>
@@ -32,7 +24,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Kelemen Gábor</mal:name>
       <mal:email>kelemeng at gnome dot hu</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015, 2016, 2017</mal:years>
+      <mal:years>2011, 2012, 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -52,60 +44,20 @@
       <mal:email>lukacs.bence1 at gmail dot com</mal:email>
       <mal:years>2011</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Nagy Zoltán</mal:name>
-      <mal:email>dzodzie at gmail dot com</mal:email>
-      <mal:years>2011</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Fájlelőzmények követésének kikapcsolása vagy korlátozása</title>
+  <title>Fájlelőzmények követésének kikapcsolása</title>
   
-  <p>A nemrég használt fájlok és mappák követése egyszerűbbé teheti azon elemek megtalálását, amelyeken nemrég dolgozott a fájlkezelőben és az alkalmazások fájlablakaiban. Előfordulhat, hogy a fájlhasználati előzményeit privátan szeretné tartani, vagy csak a nem túl távoli előzményeket követné.</p>
+    <p>A nemrég használt fájlok és mappák követése egyszerűbbé teheti azon elemek megtalálását, amelyeken nemrég dolgozott, de előfordulhat, hogy ezeket az elemeket privátan szeretné tartani. A fájlelőzmények követésével kapcsolatos funkciók kikapcsolásához:</p>
 
   <steps>
-    <title>Fájlelőzmények követésének kikapcsolása</title>
-    <item>
-      <p>Nyissa meg a <gui xref="shell-introduction#activities">Tevékenységek</gui> áttekintést, és kezdje el begépelni az <gui>Adatvédelem</gui> szót.</p>
-    </item>
-    <item>
-      <p>Kattintson az <gui>Adatvédelem</gui> elemre a panel megnyitásához.</p>
-    </item>
-    <item>
-      <p>Jelölje be a <gui>Használat és előzmények</gui> négyzetet.</p>
-    </item>
-    <item>
-     <p>Állítsa a <gui>Nemrég használt</gui> kapcsolót <gui>KI</gui> állásba.</p>
-     <p>A funkció újraengedélyezéséhez állítsa a <gui>Nemrég használt</gui> kapcsolót <gui>BE</gui> állásba.</p>
-    </item>
-    <item>
-      <p>Az <gui>Előzmények törlése</gui> gombbal azonnal törölheti az előzményeket.</p>
-    </item>
+    <item><p>Kattintson a nevére a felső sávban.</p></item>
+    <item><p>Válassza a <guiseq><gui style="menu">Beállítások</gui><gui style="menu">Magánszféra</gui><gui style="menu">Használat és előzmények</gui></guiseq> elemet.</p></item>
+    <item><p>Állítsa a <gui>Nemrég használt</gui> csúszkát <gui>KI</gui> állásba.</p></item>
   </steps>
   
-  <note><p>Ez a beállítás nem befolyásolja az Ön által meglátogatott weboldalakról a böngésző általi információtárolást.</p></note>
+    <p>A funkció újraengedélyezéséhez állítsa a <gui>Nemrég használt</gui> csúszkát <gui>BE</gui> állásba.</p>
 
-  <steps>
-    <title>A fájlelőzmények követési idejének korlátozása</title>
-    <item>
-      <p>Nyissa meg a <gui xref="shell-introduction#activities">Tevékenységek</gui> áttekintést, és kezdje el begépelni az <gui>Adatvédelem</gui> szót.</p>
-    </item>
-    <item>
-      <p>Kattintson az <gui>Adatvédelem</gui> elemre a panel megnyitásához.</p>
-    </item>
-    <item>
-      <p>Jelölje be a <gui>Használat és előzmények</gui> négyzetet.</p>
-    </item>
-    <item>
-     <p>Győződjön meg róla, hogy a <gui>Nemrég használt</gui> kapcsoló <gui>BE</gui> állásban van.</p>
-    </item>
-    <item>
-     <p>Állítsa be az időt az <gui>Előzmények megtartása</gui> alatt. Válasszon a következő lehetőségek közül: <gui>1 nap</gui>, <gui>7 nap</gui>, <gui>30 nap</gui> vagy <gui>Örökké</gui>.</p>
-    </item>
-    <item>
-      <p>Az <gui>Előzmények törlése</gui> gombbal azonnal törölheti az előzményeket.</p>
-    </item>
-  </steps>
+    <note><p>Ez a beállítás nem befolyásolja az Ön által meglátogatott weboldalakról a böngésző általi információtárolást.</p></note>
 
 </page>

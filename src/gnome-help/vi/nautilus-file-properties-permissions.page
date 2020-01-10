@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itst="http://itstool.org/extensions/" type="topic" style="task" id="nautilus-file-properties-permissions" xml:lang="vi">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-file-properties-permissions" xml:lang="vi">
 
   <info>
-    <its:rules xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
-
     <link type="guide" xref="files#faq"/>
     <link type="seealso" xref="nautilus-file-properties-basic"/>
 
@@ -24,6 +22,7 @@
       <email>mdhillca@gmail.com</email>
     </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Nguyễn Thái Ngọc Duy</mal:name>
@@ -40,21 +39,11 @@
   <section id="files">
     <title>Tập tin</title>
 
-    <p>You can set the permissions for the file owner, the group owner,
-    and all other users of the system. For your files, you are the owner,
-    and you can give yourself read-only or read-and-write permission.
-    Set a file to read-only if you don’t want to accidentally change it.</p>
+    <p>Bạn có thể đặt quyền cho chủ tập tin, nhóm sỡ hữu tập tin và những người còn lại trên hệ thống. Do bạn là chủ, bạn có thể tự đặt quyền chỉ đọc hoặc đọc ghi cho tập tin của bạn. Đặt quyền chỉ đọc nếu bạn không muốn vô tình thay đổi tập tin.</p>
 
-    <p>Every user on your computer belongs to a group. On home computers,
-    it is common for each user to have their own group, and group permissions
-    are not often used. In corporate environments, groups are sometimes used
-    for departments or projects. As well as having an owner, each file belongs
-    to a group. You can set the file’s group and control the permissions for
-    all users in that group. You can only set the file’s group to a group you
-    belong to.</p>
+    <p>Mỗi người dùng trên hệ thống thuộc vào một nhóm. Trên máy tính cá nhân, mỗi người dùng thường có một nhóm riêng, quyền nhóm ít khi dùng. Nhóm đôi khi được dùng trong môi trường công sở, những nới người dùng có thể được nhóm theo dự án hoặc phòng ban. Mỗi tập tin thuộc về một nhóm. Bạn có thể đặt quyền nhóm và điều khiển mọi người dùng trong nhóm đó. Bạn chỉ có thể đặt quyền nhóm nếu bạn thuộc nhóm đó.</p>
 
-    <p>You can also set the permissions for users other than the owner and
-    those in the file’s group.</p>
+    <p>Bạn có thể đặt quyền cho những người dùng khác không phải chủ và cũng không nằm trong nhóm của tập tin.</p>
 
     <p>Nếu tập tin là một chương trình, ví dụ một script, bạn phải chọn <gui>Cho peh1p thực thi tập tin như chương trình</gui> để có thể chạy nó. Thậm chí khi đã chọn tuỳ chọn này, trình quản lý tập tin sẽ vẫn có thể mở tập tin trong ứng dụng hoặc hỏi cần phải làm gì với nó. Xem <link xref="nautilus-behavior#executable"/> để biết chi tiết.</p>
   </section>
@@ -65,7 +54,7 @@
     <p>Quyền bạn đặt cho thư mục khác với quyền cho tập tin.</p>
     <terms>
       <item>
-        <title><gui itst:context="permission">None</gui></title>
+        <title><gui>Không</gui></title>
         <p>Bạn sẽ không thể thấy tập tin trong thư mục.</p>
       </item>
       <item>

@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="video-sending" xml:lang="ru">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="video-sending" xml:lang="ru">
 
   <info>
     <link type="guide" xref="media#videos"/>
+    <desc>Проверьте, установлены ли нужные видеокодеки.</desc>
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
-    <revision pkgversion="3.12.1" date="2014-03-30" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
-    <revision pkgversion="3.17.90" date="2015-08-30" status="final"/>
 
     <credit type="author">
       <name>Проект документирования GNOME</name>
@@ -14,8 +12,6 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Проверьте, установлены ли нужные видеокодеки.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Александр Прокудин</mal:name>
@@ -26,72 +22,28 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011-2012</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Станислав Соловей</mal:name>
-      <mal:email>whats_up@tut.by</mal:email>
-      <mal:years>2013-2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Юлия Дронова</mal:name>
-      <mal:email>juliette.tux@gmail.com</mal:email>
-      <mal:years>2013-2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Юрий Мясоедов</mal:name>
-      <mal:email>ymyasoedov@yandex.ru</mal:email>
-      <mal:years>2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
 
-  <title>Other people can’t play the videos I made</title>
+<title>Другие люди не могут воспроизвести созданные мной видеофайлы</title>
 
   <p>Если вы создали видеофайл на компьютере с Linux и отправили его кому-то, использующему Windows или Mac OS, у него могут возникнуть проблемы с воспроизведением этого файла.</p>
 
   <p>Для воспроизведения вашего видео у человека, которому вы его отправили, должны быть установлены нужные <em>кодеки</em>. Кодек — это небольшая программа, знающая, как воспроизвести видео на экране. Существует множество различных видеоформатов и для воспроизведения каждого из них нужен отдельный кодек. Проверить, какой формат используется в вашем видеофайле, можно следующим образом:</p>
+<list>
+    <item><p>Open the <app>Files</app> application from the <gui>Activities</gui>
+ overview.</p></item>
+    <item><p>Щёлкните правой кнопкой на видеофайле и выберите <gui>Свойства</gui>.</p></item>
+    <item><p>Перейдите на вкладку <gui>Аудио/Видео</gui> и посмотрите, какой <gui>кодек</gui> указан в разделе <gui>Видео</gui>.</p></item>
+</list>
 
-  <list>
-    <item>
-      <p>Open <app>Files</app> from the
-      <gui xref="shell-introduction#activities">Activities</gui> overview.</p>
-    </item>
-    <item>
-      <p>Right-click on the video file and select <gui>Properties</gui>.</p>
-    </item>
-    <item>
-      <p>Go to the <gui>Audio/Video</gui> or <gui>Video</gui> tab and look at
-      which <gui>Codec</gui> are listed under <gui>Video</gui> and
-      <gui>Audio</gui> (if the video also has audio).</p>
-    </item>
-  </list>
+  <p>Спросите того, у кого возникли проблемы с воспроизведением, установлены ли у него необходимые кодеки. Ему может помочь поиск в Интернете по названию кодека и названию его приложения для воспроизведения видео. Например, если ваш файл в формате <em>Theora</em>, а ваш друг использует для его просмотра Windows Media Player, поисковый запрос должен иметь вид «theora windows media player». Часто необходимый кодек можно скачать бесплатно.</p>
 
-  <p>Ask the person having problems with playback if they have the right codec
-  installed. They may find it helpful to search the web for the name of the
-  codec plus the name of their video playback application. For example, if your
-  video uses the <em>Theora</em> format and you have a friend using Windows
-  Media Player to try and watch it, search for “theora windows media player”.
-  You will often be able to download the right codec for free if it’s not
-  installed.</p>
+  <p>Если не удалось найти нужный кодек, попробуйте <link href="http://www.videolan.org/vlc/">медиапроигрыватель VLC</link>. Он работает как в Windows и Mac OS, так и в Linux, и поддерживает множество различных видеоформатов. Если это также не помогло, попробуйте преобразовать свой видеофайл в другой формат. Многие видеоредакторы умеют это делать, существуют также специальные программы — видеоконвертеры. Посмотрите, какие из них доступны в приложении для установки программного обеспечения.</p>
 
-  <p>If you can’t find the right codec, try the
-  <link href="http://www.videolan.org/vlc/">VLC media player</link>. It works
-  on Windows and Mac OS as well as Linux, and supports a lot of different video
-  formats. Failing that, try converting your video into a different format.
-  Most video editors are able to do this, and specific video converter
-  applications are available. Check the software installer application to see
-  what’s available.</p>
-
-  <note>
-    <p>There are a few other problems which might prevent someone from playing
-    your video. The video could have been damaged when you sent it to them
-    (sometimes big files aren’t copied across perfectly), they could have
-    problems with their video playback application, or the video may not have
-    been created properly (there could have been some errors when you saved the
-    video).</p>
-  </note>
-
+<note>
+  <p>Возможны также несколько других проблем, способных помешать кому-либо воспроизвести ваше видео. Видеофайл мог быть повреждён при пересылке (иногда при копировании больших файлов случаются ошибки), могли возникнуть неполадки в приложении для воспроизведения видео, или видеофайл был создан неправильно (произошли какие-то ошибки при его сохранении).</p>
+</note>
+	
 </page>

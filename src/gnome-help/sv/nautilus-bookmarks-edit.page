@@ -5,7 +5,8 @@
     <link type="guide" xref="files#faq"/>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-30" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="review"/>
+
+    <desc>Lägg till, ta bort och byt namn på bokmärken i filhanteraren.</desc>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -15,67 +16,48 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Lägg till, ta bort och byt namn på bokmärken i filhanteraren.</desc>
-
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Sebastian Rasmussen</mal:name>
-      <mal:email>sebras@gmail.com</mal:email>
-      <mal:years>2014, 2015, 2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Anders Jonsson</mal:name>
-      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
-      <mal:years>2016, 2017</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Redigera bokmärken för mappar</title>
+<title>Redigera mappbokmärken</title>
+<p>Your bookmarks are listed in the sidebar of the file manager.</p>
 
-  <p>Dina bokmärken är listade i sidopanelen i filhanteraren.</p>
-
-  <steps>
+    <steps>
     <title>Lägg till ett bokmärke:</title>
-    <item>
-      <p>Öppna mappen (eller platsen) som du vill bokmärka.</p>
-    </item>
-    <item>
-      <p>Klicka på fönstermenyn i verktygsfältet och välj <gui>Lägg till bokmärke för nuvarande plats</gui>.</p>
-    </item>
-  </steps>
+    <item><p>Open the folder (or location) that you want to bookmark.</p></item>
+    <item><p>Click the gear button in the toolbar and pick
+    <gui>Bookmark this Location</gui>.</p></item>
+    </steps>
 
   <steps>
-    <title>Ta bort ett bokmärke:</title>
-    <item>
-      <p>Högerklicka på bokmärket i sidopanelen och välj <gui>Ta bort</gui> från menyn.</p>
-    </item>
+  <title>Ta bort ett bokmärke:</title>
+   <item><p>Click on <gui>Files</gui> in the top bar and pick <gui>Bookmarks</gui>
+   from the app menu. </p></item>
+   <item><p>In the <gui>Bookmarks</gui> window, select the bookmark you wish to
+   delete and click the <key>-</key> button.</p></item>
   </steps>
 
-  <steps>
-    <title>Byt namn på ett bokmärke:</title>
-    <item>
-      <p>Högerklicka på bokmärket i sidopanelen och välj <gui>Byt namn…</gui>.</p>
-    </item>
-    <item>
-      <p>I textrutan <gui>Namn</gui>, ange det nya namnet på bokmärket.</p>
-      <note>
-        <p>Att byta namn på ett bokmärke byter inte namn på mappen. Om du har bokmärken till två olika mappar på två olika platser, men som vart och ett har samma namn kommer bokmärkena att ha samma namn och du kommer inte att kunna skilja på dem. I dessa fall är det användbart att ge ett bokmärke ett namn annat än namnet på mappen som det pekar på.</p>
-      </note>
-    </item>
-  </steps>
+    <steps>
+    <title>Rename a bookmark:</title>
+    <item><p>Click on <gui>Files</gui> in the top bar and pick <gui>Bookmarks</gui>
+     from the app menu.</p></item>
+    <item><p>In the <gui>Bookmarks</gui> window, select the bookmark you wish to
+    rename.</p></item>
+    <item><p>In the <gui>Name</gui> text box, type the new name for the bookmark.</p>
+    <note>
+     <p>Renaming a bookmark does not rename the folder. If you have bookmarks
+     to two different folders in two different locations, but which each have
+     the same name, the bookmarks will have the same name, and you won't be
+     able to tell them apart. In these cases, it is useful to give a bookmark
+     a name other than the name of the folder it points to.</p>
+    </note>
+</item>
+    </steps>
 
 </page>

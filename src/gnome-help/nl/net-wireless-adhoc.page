@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-adhoc" xml:lang="nl">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="net-adhoc" xml:lang="nl">
   <info>
     <link type="guide" xref="net-wireless"/>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
-    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -16,45 +13,42 @@
       <name>Shaun McCance</name>
       <email>shaunm@gnome.org</email>
     </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
 
-    <desc>Een ad hoc-netwerk gebruiken zodat andere apparaten verbinding kunnen maken met uw computer en zijn netwerkverbindingen.</desc>
+    <desc>Use an ad-hoc network to allow other devices to connect to your
+    computer and its network connections.</desc>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
   </info>
 
-<title>Een draadloos-hotspot creëren</title>
+<title>Create a wireless hotspot</title>
 
-  <p>U kunt uw computer gebruiken als een draadloos-hotspot. Hierdoor kunnen andere apparaten verbinding met u maken zonder apart netwerk, zodat u een internetverbinding kunt delen die u met een andere interface heeft gemaakt, zoals een bekabeld netwerk of een cellulair netwerk.</p>
+<p>You can use your computer as a wireless hotspot. This allows other devices to
+connect to you without a separate network, and allows you to share an internet
+connection you've made with another interface, such as to a wired network or
+over the cellular network.</p>
+
+<comment>
+<cite date="2012-02-19">shaunm</cite>
+<p>Things I'm not sure about: Is this actually ad-hoc? It seems to use the
+same icon. What happens if you have multiple wireless adapters? Ought to be
+able to share wireless to wireless, I think, but I don't know what the UI
+looks like. Also, does any of this work? I couldn't successfully test.</p>
+<p>Also, looks like there's no page to set the device name. Make one, then
+link below where it says the name of the network is your device name.</p>
+</comment>
 
 <steps>
-  <item>
-    <p>Open het <gui xref="shell-introduction#yourname">Systeemmenu</gui> aan de rechterzijde van de bovenbalk.</p>
-  </item>
-  <item>
-    <p>Selecteer <gui><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-excellent-symbolic.svg" width="16" height="16"/> Wifi niet verbonden</gui> of de naam van het draadloze netwerk waarmee u al verbonden bent. Het wifi-gedeelte van het menu zal nu uitklappen.</p>
-  </item>
-  <item>
-    <p>Klik op <gui>Wifi-instellingen</gui>.</p></item>
-  <item><p>Klik op de knop <gui>Als hotspot gebruiken…</gui>.</p></item>
-  <item><p>Als u al verbonden bent met een draadloos netwerk, dan wordt u gevraagd of u de verbinding met dat netwerk wilt verbreken. Een enkele draadloos-adapter kan met slechts één netwerk tegelijk verbinding maken of creëren. Klik op <gui>Aanzetten</gui> om te bevestigen.</p></item>
+  <item><p>Click the network icon on the top bar and select <gui>Network Settings</gui>.</p></item>
+  <item><p>Select <gui>Wireless</gui> on the left.</p></item>
+  <item><p>Click the <gui>Use as Hotspot</gui> button.</p></item>
+  <item><p>If you are already connected to a wireless network, you will be asked
+  if you want to disconnect from that network. A single wireless adapter can only
+  connect to or create one network at a time. Click <gui>Create Hotspot</gui> to
+  confirm.</p></item>
 </steps>
 
-<p>Een netwerknaam (SSID) en beveiligingssleutel worden automatisch gegenereerd. De netwerknaam zal gebaseerd zijn op de naam van uw computer. Andere apparaten hebben deze informatie nodig om verbinding te maken met de hotspot die u zojuist heeft aangemaakt.</p>
+<p>A network name (SSID) and security key are automatically generated.
+The network name will be based on the name of your computer. Other devices
+will need this information to connect to the hotspot you've just created.</p>
 
 </page>

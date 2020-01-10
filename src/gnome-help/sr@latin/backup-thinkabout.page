@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="backup-thinkabout" xml:lang="sr-Latn">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="tip" id="backup-thinkabout" xml:lang="sr-Latn">
 
   <info>
     <link type="guide" xref="files#backup"/>
+    <desc>Spisak fascikli u kojima možete da pronađete dokumenta, datoteke i podešavanja koja ćete želeti da pričuvate u rezervi.</desc>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
 
     <credit type="author">
       <name>Tifani Antopoloski</name>
@@ -21,8 +21,6 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Spisak fascikli u kojima možete da pronađete dokumenta, datoteke i podešavanja koja ćete želeti da pričuvate u rezervi.</desc>
   </info>
 
   <title>Gde mogu da pronađem datoteke za koje želim da napravim rezervu?</title>
@@ -32,19 +30,19 @@
 <list>
  <item>
   <p>Lične datoteke (dokumenta, muzika, fotografije i video zapisi)</p>
-  <p its:locNote="translators: xdg dirs are localised by package xdg-user-dirs and need to be translated.  You can find the correct translations for your language here: http://translationproject.org/domain/xdg-user-dirs.html">Ove datoteke se uobičajeno nalaze u vašoj ličnoj fascikli (<file>/home/vaše_ime</file>). Mogu biti u podfasciklama kao što je Radna površ, Dokumenta, Slike, Muzika i Video).</p>
+  <p xmlns:its="http://www.w3.org/2005/11/its" its:locNote="translators: xdg dirs are localised by package xdg-user-dirs and need to be translated.  You can find the correct translations for your language here: http://translationproject.org/domain/xdg-user-dirs.html">Ove datoteke se uobičajeno nalaze u vašoj ličnoj fascikli (<file>/home/vaše_ime</file>). Mogu biti u podfasciklama kao što je Radna površ, Dokumenta, Slike, Muzika i Video).</p>
   <p>Ako vaš medijum za rezervu ima dovoljno prostora (ako je to spoljni čvrsti disk, na primer), uzmite u obzir pravljenje rezerve čitave lične fascikle. Možete da saznate koliko prostora na disku zauzima vaša lična fascikla koristeći <app>Analizer iskorišćenosti diska</app>.</p>
  </item>
 
  <item>
   <p>Skrivene datoteke</p>
-  <p>Svaka datoteka ili fascikla čiji naziv počinje tačkom (.) je skrivena po osnovi. Da prikažete skrivene datoteke, kliknite na dugme <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">Mogućnosti pregleda</span></media></gui> na traci alata, i zatim izaberite <gui>Prikaži skrivene datoteke</gui>, ili pritisnite <keyseq><key>Ktrl</key><key>N</key></keyseq>. I njih možete da umnožite u mesto rezerve kao svaku drugu datoteku.</p>
+  <p>Svaka datoteka ili fascikla čiji naziv počinje tačkom (.) je skrivena po osnovi. Da prikažete skrivene datoteke, kliknite<guiseq><gui>Pregled</gui><gui>Prikaži skrivene datoteke</gui></guiseq> ili pritisnite <keyseq><key>Ktrl</key><key>H</key></keyseq>. I njih možete da umnožite u mesto rezerve kao svaku drugu datoteku.</p>
  </item>
 
  <item>
   <p>Lična podešavanja (postavke radne površi, teme, i podešavanja programa)</p>
   <p>Većina programa čuva svoja podešavanja u skrivenim fasciklama u vašoj ličnoj fascikli (pogledajte gore o tome šta su to skrivene datoteke).</p>
-  <p>Većina vaših podešavanja programa biće sačuvana u skrivenim fasciklama <file>.config</file>, i <file>.local</file> u vašoj ličnoj fascikli.</p>
+  <p>Većina podešavanja vaših programa će biti sačuvana u fasciklama <file>.config</file>, <file>.gconf</file>, <file>.gnome2</file>, i <file>.local</file> u vašoj ličnoj fascikli.</p>
  </item>
 
  <item>

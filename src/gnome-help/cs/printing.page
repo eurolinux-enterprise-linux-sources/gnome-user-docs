@@ -4,53 +4,58 @@
   <info>
     <link type="guide" xref="hardware"/>
 
-    <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-
     <credit type="author">
       <name>Phil Bull</name>
       <email>philbull@gmail.com</email>
     </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
 
-    <desc><link xref="printing-setup">Nastavení místní tiskárny</link>, <link xref="printing-order">pořadí a řazení</link>, <link xref="printing-2sided">oboustranný a vícestránkový tisk</link>…</desc>
+    <desc>
+      <link xref="printing-setup">Local setup</link>,
+      <!--
+      <link xref="printing-setup-networked">networked setup</link>,
+      -->
+      <link xref="printing-order">order and collate</link>,
+      <link xref="printing-2sided">two-sided and multi-page</link>…
+    </desc>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
       <mal:email>adamatousek@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Marek Černocký</mal:name>
-      <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014, 2015</mal:years>
-    </mal:credit>
   </info>
 
-<title>Tisk</title>
+<title>Printing</title>
+
+<comment>
+<cite>Jim C</cite>
+<p>Needs info about network printing - 2011-06-08</p>
+</comment>
 
 <section id="setup" style="2column">
   <info>
-    <title type="link" role="trail">Nastavení</title>
+    <title type="link" role="trail">Setup</title>
   </info>
-  <title>Nastavení tiskárny</title>
+ <title>Set up a printer</title>
 </section>
 
 <section id="paper" style="2column">
   <info>
-    <title type="link" role="trail">Velikosti a rozvržení</title>
+    <title type="link" role="trail">Sizes and layouts</title>
   </info>
-  <title>Různé rozměry a rozvržení papíru</title>
+ <title>Different paper sizes and layouts</title>
 </section>
 
 <section id="problems" style="2column">
-  <info>
-    <link type="guide" xref="hardware#problems"/>
-    <desc>Nenalezené tiskárny, zaseknutý papír, špatně vypadající výtisky…</desc>
-  </info>
-  <title>Problémy s tiskárnami</title>
+ <info>
+  <link type="guide" xref="hardware#problems"/>
+  <desc>Undetected printers, paper jams, print-outs that look wrong…</desc>
+ </info>
+ <title>Printer problems</title>
 </section>
 
 </page>

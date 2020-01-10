@@ -1,29 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="reference" id="net-firewall-ports" xml:lang="sl">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="reference" id="net-firewall-ports" xml:lang="sl">
 
   <info>
     <link type="guide" xref="net-security"/>
     <link type="seealso" xref="net-firewall-on-off"/>
     <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
+    <desc>Za omogočitev/onemogočitev dostopa do omrežja za program s požarnim zidom morate navesti prava omrežna vrata.</desc>
     <credit type="author">
       <name>Paul W. Frields</name>
       <email>stickster@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Za omogočitev/onemogočitev dostopa do omrežja za program s požarnim zidom morate navesti prava omrežna vrata.</desc>
   </info>
 
   <title>Pogosto uporabljena vrata omrežja</title>
-
-  <p>This is a list of network ports commonly used by applications that provide
-  network services, like file sharing or remote desktop viewing. You can change
-  your system’s firewall to <link xref="net-firewall-on-off">block or allow
-  access</link> to these applications. There are thousands of ports in use, so
-  this table isn’t complete.</p>
+  <p>To je seznam omrežnih vrat, ki jih običajno uporabljajo programi, ki zagotavljajo omrežne storitve kot sta izmenjava datotek ali ogled oddaljenega namizja. Svoj sistemski požarni zid lahko spremenite, da <link xref="net-firewall-on-off">blokira ali omogoči dostop</link> do teh programov. V uporabi je na tisoče vrat, zato ta preglednica ni popolna.</p>
 
   <table shade="rows" frame="top">
     <thead>
@@ -81,8 +74,7 @@
 	  <p>Prisotnost</p>
 	</td>
 	<td>
-	  <p>Allows you to advertise your instant messaging status to other
-          people on the network, such as “online” or “busy”.</p>
+	  <p>Omogoča vam oglaševanje vašega stanja hipnega sporočanja z drugimi ljudmi v omrežju kot so "na voljo" ali "zaposleno".</p>
 	</td>
       </tr>
       <tr>
@@ -109,5 +101,4 @@
       </tr>
     </tbody>
   </table>
-
 </page>

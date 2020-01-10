@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="mouse-sensitivity" xml:lang="nl">
-
-  <info>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="mouse-sensitivity" xml:lang="nl">
+<info>
     <link type="guide" xref="mouse"/>
     <link type="guide" xref="a11y#mobility" group="pointing"/>
 
-    <revision pkgversion="3.8" date="2013-03-13" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-10-29" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
+
+    <desc>Change how quickly the pointer moves when you use
+    your mouse or touchpad.</desc>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -25,44 +25,38 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+</info>
 
-    <desc>Wijzigen hoe snel de aanwijzer beweegt wanneer u de muis of touchpad gebruikt.</desc>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
-  </info>
+<title>Adjust speed of the mouse and touchpad</title>
 
-  <title>De snelheid van de muis en het touchpad aanpassen</title>
+<p>If your pointer moves too fast or slow when you move your mouse
+or use your touchpad, you can adjust the pointer speed for these devices.</p>
 
-  <p>Als uw aanwijzer te snel of te langzaam beweegt wanneer u uw muis of touchpad gebruikt, kunt u de aanwijzersnelheid voor deze apparaten aanpassen.</p>
+<steps>
+  <item><p>Click your name on the top bar and select <gui>Settings</gui>.</p></item>
+  <item><p>Open <gui>Mouse &amp; Touchpad</gui>.</p></item>
+  <item><p>Adjust the <gui>Pointer Speed</gui> slider until the pointer motion
+   is comfortable for you.</p></item>
+</steps>
 
-  <steps>
-    <item>
-      <p>Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht en typ <gui>Muis &amp; Touchpad</gui>.</p>
-    </item>
-    <item>
-      <p>Klik op <gui>Muis en touchpad</gui> om het paneel te openen.</p>
-    </item>
-    <item>
-      <p>Pas de schuifregelaar voor de <gui>Aanwijzersnelheid</gui> aan totdat de beweging van de aanwijzer naar wens is. U ziet één regelaar per aanwijsapparaat, zoals een muis of een touchpad.</p>
-    </item>
-  </steps>
+<!--
+<p>Sensitivity is how much your pointer initially moves when you move your mouse.</p>
 
-  <p>U kunt verschillende aanwijssnelheden instellen voor elk type apparaat. Zo kunt u een bepaalde bladersnelheid hebben voor een laptop-touchpad en een andere voor een muis. Soms is de prettigste instelling voor het ene type apparaat niet de beste voor een ander apparaat.</p>
+<p>The farther you move your mouse, the faster and faster the pointer moves
+relative to your movement. This helps you get the pointer across the screen
+without lifting your hand, while still letting you point and click accurately.
+Acceleration controls this behavior.</p>
+-->
 
-  <note>
-    <p>De <gui>Touchpad</gui>-sectie verschijnt alleen als uw systeem een touchpad heeft, terwijl de <gui>Muis</gui>-sectie alleen zichtbaar is wanneer er een muis is aangesloten.</p>
-  </note>
-
+<note style="tip">
+  <p>You can set the pointer speed differently for your mouse
+  and touchpad. Sometimes the most comfortable settings for one type of
+  device aren't the most comfortable for another. Just set the sliders on
+  both the <gui>Mouse</gui> and <gui>Touchpad</gui> sections.</p>
+</note>
+<note>
+  <p>The <gui>Touchpad</gui> section only appears if your system has a
+  touchpad.</p>
+</note>
 </page>

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="session-formats" xml:lang="pt-BR">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="session-formats" xml:lang="pt-BR">
 
   <info>
     <link type="guide" xref="prefs-language"/>
     <link type="seealso" xref="session-language"/>
 
-    <revision pkgversion="3.10" version="0.4" date="2013-11-03" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-10" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -17,9 +16,9 @@
       <email>mdhillca@gmail.com</email>
     </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
     <desc>Escolha uma região usada para data e hora, numeração, unidade monetária e de medidas.</desc>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Rodolfo Ribeiro Gomes</mal:name>
@@ -28,53 +27,55 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Enrico Nicoletto</mal:name>
       <mal:email>liverig@gmail.com</mal:email>
       <mal:years>2013.</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>João Santana</mal:name>
-      <mal:email>joaosantana@outlook.com</mal:email>
-      <mal:years>2013.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Fontenelle</mal:name>
-      <mal:email>rafaelff@gnome.org</mal:email>
-      <mal:years>2012-2018.</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Alterando os formatos de data e medidas</title>
+  <title>Alterar os formatos de data e medidas</title>
 
   <p>Você pode controlar os formatos que são usados para datas, horas, numerais, unidade monetária e unidades de medida para corresponder aos costumes locais de sua região.</p>
 
   <steps>
-    <item>
-      <p>Abra o panorama de <gui xref="shell-introduction#activities">Atividades</gui> e comece a digitar <gui>Região &amp; idioma</gui>.</p>
-    </item>
-    <item>
-      <p>Clique em <gui>Região &amp; idioma</gui> para abrir o painel.</p>
-    </item>
-    <item>
-      <p>Clique em <gui>Formatos</gui>.</p>
-    </item>
-    <item>
-      <p>Selecione a região que melhor corresponda com os formatos que você gostaria de usar. Se sua região e idioma não estiverem listadas, clique em <gui><media its:translate="no" type="image" mime="image/svg" src="figures/view-more-symbolic.svg"><span its:translate="yes">…</span></media></gui> logo abaixo da lista para selecionar entre todas as regiões e idiomas disponíveis.</p>
-    </item>
-    <item>
-      <p>Clique em <gui style="button">Concluído</gui> para salvar.</p>
-    </item>
-    <item>
-      <p>Responda a confirmação, <gui>Sua sessão precisa ser reiniciada para que as alterações tenham efeito</gui> clicando em <gui style="button">Reiniciar agora</gui> ou em <gui style="button">×</gui> para reiniciar posteriormente.</p>
-    </item>
+    <item><p>Clique em seu nome na barra superior e selecione <gui>Configurações</gui>.</p></item>
+    <item><p>Abra <gui>Região &amp; idioma</gui> e clique em <gui>Formatos</gui>.</p></item>
+    <item><p>Selecione a região que melhor corresponda com os formatos que você gostaria de usar. Por padrão, a lista somente mostra as regiões que usam o idioma configurado na aba <gui>Idioma</gui>. Clique no botão <gui>...</gui> para selecionar entre todas as regiões disponíveis.</p></item>
+    <item><p>Respond to the prompt, <gui>Your session needs to be restarted for
+    these changes to take effect</gui> by clicking
+    <gui style="button">Restart Now</gui>, or click <gui style="button">X</gui>
+    to restart later.</p></item>
   </steps>
 
   <p>Depois de ter selecionado a região, a área à direita da lista mostra vários exemplos de como as datas e outros valores são mostrados. Apesar de não mostrado nos exemplos, sua região também controla o dia que inicia a semana nos calendários.</p>
 
-  <note style="tip">
-    <p>Se houver várias contas de usuário em seu sistema, há uma instância separada da região e do painel <gui>Região &amp; idioma</gui> para a tela de início de sessão. Clique no botão <gui>Tela de início de sessão</gui> no canto superior direito para alternar entre as duas instâncias.</p>
-  </note>
+<!--
+  <section id="system">
+    <info>
+      <link type="seealso" xref="session-language#system"/>
+      <link type="seealso" xref="keyboard-layouts#system"/>
+    </info>
+    <title>Change the system formats</title>
+
+    <p>When you change your region for formats, you only change it for your
+    account after you log in. You can also change the <em>system formats</em>,
+    the formats used in places like the login screen.</p>
+
+    <steps>
+      <item><p>Change your formats, as described above.</p></item>
+      <item><p>Select the <gui>System</gui> tab.</p></item>
+      <item><p>Click <gui>Copy Settings</gui>.</p></item>
+      <item><p><link xref="user-admin-explain">Administrative privileges</link> are
+      required. Enter your password, or the password for the requested administrator
+      account.</p></item>
+    </steps>
+  </section>
+-->
 
 </page>

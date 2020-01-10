@@ -1,30 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="accounts-provider-not-available" xml:lang="ja">
 
-  <info>
-    <link type="guide" xref="accounts"/>
+<info>
+  <link type="guide" xref="accounts"/>
 
-    <revision pkgversion="3.5.5" date="2012-08-14" status="review"/>
-    <revision pkgversion="3.9.92" date="2013-09-18" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+  <revision pkgversion="3.5.5" version="0.1" date="2012-08-14" status="review"/>
+  <credit type="author">
+    <name>Baptiste Mille-Mathias</name>
+    <email>baptistem@gnome.org</email>
+  </credit>
+  <credit type="editor">
+    <name>Michael Hill</name>
+    <email>mdhillca@gmail.com</email>
+  </credit>
 
-    <credit type="author">
-      <name>Baptiste Mille-Mathias</name>
-      <email>baptistem@gnome.org</email>
-    </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
+  <desc>オンラインサービスプロバイダーが一覧になかったら?</desc>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>オンラインサービスプロバイダーが一覧になかったら?</desc>
-  
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -46,18 +42,6 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Noriko Mizumoto</mal:name>
-      <mal:email>noriko@fedoraproject.org</mal:email>
-      <mal:years>2013, 2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>坂本 貴史</mal:name>
-      <mal:email>o-takashi@sakamocchi.jp</mal:email>
-      <mal:years>2013, 2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>日本GNOMEユーザー会</mal:name>
       <mal:email>http://www.gnome.gr.jp/</mal:email>
       <mal:years>2011, 2012</mal:years>
@@ -66,14 +50,18 @@
 
   <title>利用しているアカウントの種類が一覧にないのはなぜ?</title>
 
-  <p>Support for your favorite online service provider needs someone to develop
-  it. Only the account types that are listed are currently supported.</p>
+  <p>お使いのオンラインサービスプロバイダーをサポートするには、誰かしらによる開発作業が必要になります。現在は、数種類のオンラインアカウントだけをサポートしています。</p>
+  <list>
+    <item><p>Google</p></item>
+    <item><p>Windows Live</p></item>
+    <item><p>Facebook</p></item>
+    <item><p>Twitter</p></item>
+  </list>
 
-  <note style="advanced">
-    <p>If you are interested in adding support for other services, contact the
-    developers on the
-    <link href="https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-online-accounts">
-    bug tracker</link>.</p>
-  </note>
+<p>Yahoo は近いうちにサポートと対象となる見込みです。</p>
+
+<note style="advanced">
+ <p>他のサービスのサポートに関心があれば、<link href="https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-online-accounts">バグ管理システム</link>を通じて開発者と連絡を取ってください。</p>
+</note>
 
 </page>

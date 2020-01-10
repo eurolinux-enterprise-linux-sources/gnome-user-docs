@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="user-add" xml:lang="gl">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="user-add" xml:lang="gl">
 
   <info>
     <link type="guide" xref="user-accounts#manage" group="#first"/>
-
-    <revision pkgversion="3.8" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.13.92" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-
+    <link type="seealso" xref="user-addguest"/>
+    <desc>Engadir novos usuarios para que outras persoas poidan iniciar sesión no seu computador.</desc>
+    <!-- Setting 3.4.0 version to final for release, but we need to do something
+         about the various comments in here, so incomplete for 3.4.1.
+    -->
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-09" status="candidate"/>
     <credit type="author">
       <name>Proxecto de documentación de GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
@@ -21,74 +21,67 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Engadir novos usuarios para que outras persoas poidan iniciar sesión no seu computador.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2018</mal:years>
+      <mal:years>2011, 2012.</mal:years>
     </mal:credit>
   </info>
 
   <title>Engadir unha nova conta de usuario</title>
 
+<comment>
+  <cite date="2012-02-19">shaunm</cite>
+  <p>We need a note in here about password hints. Share content
+  with user-changepassword</p>
+</comment>
+
+<comment>
+  <cite date="2012-03-24">shaunm</cite>
+  <p>Let's add a "Disable account" page. Click the account, click the dots
+  next to "Password", select "Disable this account" from "Type".</p>
+</comment>
+
+<comment>
+<cite date="2012-03-24">shaunm</cite>
+<p>Much of the password dialog simply does not work:</p>
+<list>
+<item><p><gui>Choose a password at next login</gui> does nothing</p></item>
+<item><p><gui>Log in without a password</gui> does nothing</p></item>
+<item><p><gui>Enable this account</gui> does nothing (and it's not even
+clear to me what it should do):
+<link href="https://bugzilla.gnome.org/show_bug.cgi?id=655914">665914</link></p></item>
+<item><p><gui>Hint</gui> does nothing:
+<link href="https://bugzilla.gnome.org/show_bug.cgi?id=647912">647912</link>,
+<link href="https://bugzilla.gnome.org/show_bug.cgi?id=643445">643445</link></p></item>
+</list>
+</comment>
+
   <p>Pode engadir varias contas de usuario ao seu equipo. Dar unha conta a cada persoa no seu fogar ou empresa. Cada usuario ten o seu propio cartafol de inicio, documentos e configuración.</p>
 
-  <p>You need <link xref="user-admin-explain">administrator privileges</link>
-  to add user accounts.</p>
+<steps>
+  <item><p>Prema sobre o nome da barra de enderezos e seleccione <gui>Preferencias</gui>.</p></item>
+  <item><p>Abra <gui>Usuarios</gui>.</p></item>
 
-  <steps>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Users</gui>.</p>
-    </item>
-    <item>
-      <p>Prema en <gui>Usuarios</gui> para abrir o panel.</p>
-    </item>
-    <item>
-      <p>Press <gui style="button">Unlock</gui> in the top right corner and
-      type in your password when prompted.</p>
-    </item>
-    <item>
-      <p>Press the <gui style="button">+</gui> button, below the list of
-      accounts on the left, to add a new user account.</p>
-    </item>
-    <item>
-      <p>If you want the new user to have
-      <link xref="user-admin-explain">administrative access</link> to the
-      computer, select <gui>Administrator</gui> for the account type.</p>
-      <p>Os administradores poden facer cousas como engadir e eliminar usuarios, instar software e controladores, e cambiar a data e a hora.</p>
-    </item>
-    <item>
-      <p>Enter the new user’s full name. The username will be filled in
-      automatically based on the full name. If you do not like the proposed
-      username, you can change it.</p>
-    </item>
-    <item>
-      <p>You can choose to set a password for the new user, or let them set it
-      themselves on their first login.</p>
-      <p>Se quere estabelecer un contrasinal agora, pode premer a icona <gui style="button"><media its:translate="no" type="image" src="figures/system-run-symbolic.svg" width="16" height="16">
-      <span its:translate="yes">xerar un contrasinal</span></media></gui> para xerar un contrasinal aleatorio automaticamente.</p>
-    </item>
-    <item>
-      <p>Prema <gui>Engadir</gui>.</p>
-    </item>
-  </steps>
+  <item><p>Debe ter <link xref="user-admin-explain">privilexios de administración</link> para engadir contas de usuario. Prema <gui>Desbloquear</gui> na esquina superior dereita e escriba o seu contrasinal ou o contrasinal de administrador cando se lle pregunte por el.</p></item>
 
-  <p>Se quere cambiar o contrasinal despoisd e crear unha conta, seleccione a conta , <gui style="button">Desbloquee</gui> o panel e prema o estado do contrasinal actual.</p>
+  <item><p>Desde a lista de contas da esquerda, prema o botón <gui style="button">+</gui> para engadir unha nova conta.</p></item>
 
-  <note>
-    <p>In the <gui>Users</gui> panel, you can click the image next to the
-    user’s name to the right to set an image for the account. This image will
-    be shown in the login window. GNOME provides some stock photos you can use,
-    or you can select your own or take a picture with your webcam.</p>
-  </note>
+  <item><p>Se quere engadir un novo usuario con <link xref="user-admin-explain">acceso administrativo</link> ao computador, seleccione <gui>Administrador</gui> no tipo de conta. Os administradores poden facer cousas como engadir e eliminar usuarios, instalar software e controladores e cambiar a data e hora.</p></item>
+
+  <item><p>Escriba o nome completo do novo usuario. O nome de usuario rechearase automaticamente en función do nome completo. O valor predeterminado probabelmente sexa correcto, pero pode cambialo se o desexa.</p></item>
+
+  <item><p>Prema <gui>Engadir</gui></p></item>
+
+  <item><p>A conta está inicialmente desactivada até que seleccione que facer co contrasinal do usuario. Seleccione a nova conta desde a lista. Baixo as <gui>Opcións de inicio de sesión</gui> prema <gui>Conta desactivada</gui> xunto a <gui>Contrasinal</gui>. Seleccione <gui>Estabelecer un contrasinal</gui> desde a lista despregábel de <gui>Accións</gui>, e deixe que o usuario escriba o seu contrasinal nos campos <gui>Novo contrasinal</gui> e <gui>Confirmar contrasinal</gui>. Vexa <link xref="user-goodpassword"/>.</p>
+  <p>Tamén pode premer o botón seguinte no campo <gui>Novo contrasinal</gui> para seleccionar un contrasinal seguro xerado aleatoriamente. Estes contrasinais son difíciles de adiviñar, porén tamén son difíciles de lembrar, polo que teña coidado.</p></item>
+  <item><p>Prema <gui>Cambiar</gui>.</p></item>
+</steps>
+
+<note><p>Na xanela <gui>Contas de usuario</gui> pode premer na imaxe ao carón do nome de usuario para estabelecer unha imaxe para a conta. Esta imaxe mostrarase na xanela de inicio de sesión. GNOME fornece algunhas imaxes que pode usar, pode seleccionar a súa propia ou sacar unha foto empregando a súa cámara web.</p>
+</note>
 
 </page>

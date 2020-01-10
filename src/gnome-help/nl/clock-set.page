@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="clock-set" xml:lang="nl">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="clock-set" xml:lang="nl">
 
   <info>
-    <link type="guide" xref="clock" group="#first"/>
-
+    <link type="guide" xref="clock"/>
+    <desc>Click the clock on the top bar and go into the <gui>Date and Time Settings</gui>
+    to alter the date/time.</desc>
     <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Gnome-documentatieproject</name>
@@ -18,44 +17,38 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Gebruik de <gui>Instellingen voor datum en tijd</gui> om de datum of tijd te wijzigen.</desc>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
   </info>
 
-<title>Datum en tijd wijzigen</title>
+<title>Change the date and time</title>
 
-  <p>Als de in de bovenbalk weergegeven datum en tijd onjuist zijn of in de verkeerde indeling worden weergegeven, dan kunt u dit wijzigen:</p>
+  <p>If the date and time displayed on the top bar are incorrect or in the wrong
+ format, you can change them:</p>
 
-  <steps>
-    <item>
-      <p>Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht en begin met het intypen van <gui>Datum &amp; tijd</gui>.</p>
-    </item>
-    <item>
-      <p>Klik op <gui>Instellingen voor datum en tijd…</gui> om het paneel te openen.</p>
-    </item>
-    <item>
-      <p>Als <gui>Automatische Datum &amp; tijd</gui> <gui>AAN</gui> staat, dan moeten datum en tijd automatisch bijgewerkt zijn als u een internetverbinding heeft. Om datum en tijd handmatig bij te werken dient u dit op <gui>UIT</gui> te zetten.</p>
-    </item> 
-    <item>
-      <p>Klik op <gui>Datum &amp; tijd</gui> en pas datum en tijd aan.</p>
-    </item>
-    <item>
-      <p>U kunt wijzigen hoe uren worden weergegeven door <gui>24-uurs</gui> of <gui>AM/PM</gui> te selecteren bij <gui>Tijdsaanduiding</gui>.</p>
-    </item>
-  </steps>
-
-  <p>Misschien wilt u ook <link xref="clock-timezone">de tijdzone handmatig instellen</link>.</p>
+<steps>
+ <item>
+  <p>Click on the clock in the middle of the top bar and select
+  <gui>Date and Time Settings</gui>.</p>
+ </item>
+ <item>
+  <p>You may need to click <gui>Unlock</gui> and type the
+  <link xref="user-admin-explain">admin password</link>.</p>
+ </item>
+ <item>
+  <p>Adjust the date and time by clicking on the arrows to choose the  hour and
+  minute. You can choose the year, month and day from the drop-down lists.</p>
+ </item>
+ <item>
+  <p>If you like, you can have the clock update itself automatically by
+  switching <gui>Network Time</gui> on.</p>
+  <p>When <em>Network Time</em> is switched on, the computer will periodically
+  synchronize its clock with a very accurate clock on the internet, so you don't
+  have to do it manually. This will only work if you are connected to the
+  internet.</p>
+ </item>
+ <item>
+  <p>You can also change how the hour is displayed by selecting <gui>24-hour</gui>
+  or <gui>AM/PM</gui> format.</p>
+ </item>
+</steps>
 
 </page>

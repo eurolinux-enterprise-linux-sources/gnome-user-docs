@@ -1,26 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-firewall-on-off" xml:lang="ja">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="net-firewall-on-off" xml:lang="ja">
 
   <info>
-    <link type="guide" xref="net-security" group="#first"/>
-
+    <link type="guide" xref="net-security"/>
+    <desc>You can control which programs can access the network. This helps to keep your computer secure.</desc>
     <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
-    <revision pkgversion="3.10" date="2013-11-03" status="incomplete"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-
     <credit type="author">
       <name>Paul W. Frields</name>
       <email>stickster@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>ネットワークにアクセスできるプログラムを制御することが可能です。制御を行うことでコンピューターを安全に保つのに役立ちます。</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -42,47 +37,33 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Noriko Mizumoto</mal:name>
-      <mal:email>noriko@fedoraproject.org</mal:email>
-      <mal:years>2013, 2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>坂本 貴史</mal:name>
-      <mal:email>o-takashi@sakamocchi.jp</mal:email>
-      <mal:years>2013, 2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>日本GNOMEユーザー会</mal:name>
       <mal:email>http://www.gnome.gr.jp/</mal:email>
       <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
 
-  <title>ファイアウォールへのアクセスの許可とブロック</title>
+  <title>Enable or block firewall access</title>
 
-  <p>システムには、インターネット上またはネットワーク上の他のユーザーによるプログラムへのアクセスをブロックできる<em>ファイアウォール</em>を設定してください。これによりコンピューターの安全性を確保することができます。</p>
+<comment>
+<cite date="2012-02-19">shaunm</cite>
+<p>Continue to revisit this page until we can provide real instructions.
+As it is, we're stuck in "whatever distros do" territory.</p>
+</comment>
 
-  <p>ネットワーク接続を使用する可能性があるアプリケーションが多々あります。たとえば、ネットワークに接続している場合、ファイルを共有したり他のユーザーに遠隔からのデスクトップの表示を許可したりすることができます。コンピューターのセットアップ方法によっては、こうしたサービスが意図した通りに動作するようファイアウォールを調整する必要があります。</p>
-
-  <p>Each program that provides network services uses a specific <em>network
-  port</em>. To enable other computers on the network to access a service, you
-  may need to “open” its assigned port on the firewall:</p>
-
+  <p>Your system should be equipped with a <em>firewall</em> that allows it to block programs from being accessed by other people on the internet or your network. This helps to keep your computer secure.</p>
+  <p>Many applications can use your network connection. For instance, you can share files or let someone view your desktop remotely when connected to a network. Depending on how your computer is set up, you may need to adjust the firewall to allow these services to work as intended.</p>
+  <p>Each program that provides network services uses a specific <em>network port</em>. To enable other computers on the network to access a service, you may need to "open" its assigned port on the firewall:</p>
 
   <steps>
     <item>
-      <p>Go to <gui>Activities</gui> in the top left corner of the screen and
-      start your firewall application. You may need to install a firewall
-      manager yourself if you can’t find one (for example, Firestarter or
-      GUFW).</p>
+      <p>Go to <gui>Activities</gui> in the top left corner of the screen and start your firewall application. You may need to install a firewall manager yourself if you can't find one (for example, Firestarter or GUFW).</p>
     </item>
     <item>
-      <p>他のユーザーにアクセスを許可するかしないかに応じて、ネットワークサービスのポートを開いたり無効にしたりします。変更が必要なポートは<link xref="net-firewall-ports">サービスによって異なります</link>。</p>
+      <p>Open or disable the port for your network service, depending on whether you want people to be able to access it or not. Which port you need to change will <link xref="net-firewall-ports">depend on the service</link>.</p>
     </item>
     <item>
-      <p>ファイアウォールツールで指定されている指示にしたがい変更を保存または適用します。</p>
+      <p>Save or apply the changes, following any additional instructions given by the firewall tool.</p>
     </item>
   </steps>
 

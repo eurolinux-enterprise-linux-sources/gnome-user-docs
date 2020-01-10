@@ -1,70 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="a11y task" id="a11y-screen-reader" xml:lang="nl">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="a11y task" id="a11y-screen-reader" xml:lang="nl">
   <info>
     <link type="guide" xref="a11y#vision" group="blind"/>
 
-    <revision pkgversion="3.13.92" date="2014-09-20" status="incomplete"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
       <email>shaunm@gnome.org</email>
     </credit>
-    <credit type="editor">
-      <name>Jana Heves</name>
-      <email>jsvarova@gnome.org</email>
-    </credit>
 
-    <desc>Gebruik de <app>Orca</app> schermlezer om de gebruikersinterface uit te spreken.</desc>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
+    <desc>Use the <app>Orca</app> screen reader to speak the user
+    interface.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
-  <title>Scherm hardop lezen</title>
+  <title>Read screen aloud</title>
 
-  <p>Gnome levert de <app>Orca</app>-schermlezer waarmee de gebruikersinterface kan worden uitgesproken. Afhankelijk van hoe u Gnome geïnstalleerd heeft kan het zijn dat Orca bij u niet geïnstalleerd is. Als dat het geval is dient u Orca eerst te installeren.</p>
+  <p>GNOME provides the <app>Orca</app> screen reader to speak the user
+  interface. Depending on how you installed GNOME, you might not have
+  Orca installed. <link href="install:orca">Install Orca</link>, then
+  refer to the <link href="help:orca">Orca Help</link> for more
+  information.</p>
 
-  <p if:test="action:install"><link style="button" action="install:orca">Orca installeren</link></p>
-  
-  <p>Om <app>Orca</app> te starten via het toetsenbord:</p>
-  
-  <steps>
-    <item>
-    <p>Druk op <key>Super</key>+<key>Alt</key>+<key>S</key>.</p>
-    </item>
-  </steps>
-  
-  <p>Of om <app>Orca</app> te starten via muis en toetsenbord:</p>
-
-  <steps>
-    <item>
-      <p>Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht en typ <gui>Universele toegang</gui>.</p>
-    </item>
-    <item>
-      <p>Klik op <gui>Universele toegang</gui> om het paneel te openen.</p>
-    </item>
-    <item>
-      <p>Klik op <gui>Schermlezer</gui> onder het kopje <gui>Zicht</gui>, en zet vervolgens <gui>Schermlezer</gui> aan in het venster.</p>
-    </item>
-  </steps>
-
-  <note style="tip">
-    <title>Schermlezer snel in- of uitschakelen</title>
-    <p>U kunt Schermlezer aan- en uitzetten door te klikken op het <link xref="a11y-icon">toegankelijkheidspictogram</link> in de bovenbalk en <gui>Schermlezer</gui> te selecteren.</p>
-  </note>
-
-  <p>Kijk in de <link href="help:orca">Hulp voor Orca</link> voor meer informatie.</p>
+  <comment>
+    <cite date="2012-02-19">shaunm</cite>
+    <p>I'd like this page to have more on how to start Orca, then pass
+    off to the Orca help for more information.</p>
+  </comment>
 </page>

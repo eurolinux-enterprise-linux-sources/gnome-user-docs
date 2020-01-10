@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="backup-thinkabout" xml:lang="nl">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="tip" id="backup-thinkabout" xml:lang="nl">
 
   <info>
     <link type="guide" xref="files#backup"/>
+    <desc>A list of folders where you can find documents, files and settings
+    that you may want to back up.</desc>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -21,47 +22,50 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Een lijst met mappen waar u documenten, bestanden en instellingen waarvan u mogelijk een reservekopie wilt maken kunt vinden.</desc>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Waar kan ik de bestanden vinden waarvan ik een reservekopie wil maken?</title>
+  <title>Where can I find the files I want to back up?</title>
 
-  <p>Bepalen van welke bestanden een reservekopie te maken, en deze lokaliseren, is het lastigste wanneer u een reservekopie probeert te maken. Hieronder treft u een lijst met de meest gebruikte locaties van belangrijke bestanden en instellingen waarvan u mogelijk een reservekopie wilt maken.</p>
+  <p>Deciding which files to back up, and locating them, is the most difficult
+ step when attempting to perform a backup. Listed below are the most common
+ locations of important files and settings that you may want to back up.</p>
 
 <list>
  <item>
-  <p>Persoonlijke bestanden (documenten, muziek, foto's en video's)</p>
-  <p its:locNote="translators: xdg dirs are localised by package xdg-user-dirs and need to be translated.  You can find the correct translations for your language here: http://translationproject.org/domain/xdg-user-dirs.html">Deze zijn meestal opgeslagen in uw persoonlijke map (<file>/home/uw_naam</file>). Ze kunnen zich bevinden in submappen zoals Bureaublad, Documenten, Afbeeldingen, Muziek en Video's.</p>
-  <p>Als u voldoende ruimte heeft op uw reservekopiemedium (bijvoorbeeld een externe harde schijf), overweeg dan een reservekopie te maken van de hele persoonlijke map. Om er achter te komen hoeveel schijfruimte uw persoonlijke map gebruikt kunt u <app>Schijfgebruik</app> gebruiken.</p>
+  <p>Personal files (documents, music, photos and videos)</p>
+  <p xmlns:its="http://www.w3.org/2005/11/its" its:locNote="translators: xdg dirs are localised by package xdg-user-dirs and need to be translated.  You can find the correct translations for your language here: http://translationproject.org/domain/xdg-user-dirs.html">These are usually stored in your home folder (<file>/home/your_name</file>).
+ They could be in subfolders such as Desktop, Documents, Pictures, Music and
+ Videos.</p>
+  <p>If your backup medium has sufficient space (if it's an external hard disk,
+ for example), consider backing up the entire Home folder. You can find out how
+ much disk space your Home folder takes up by using the
+ <app>Disk Usage Analyzer</app>.</p>
  </item>
 
  <item>
-  <p>Verborgen bestanden</p>
-  <p>Elke bestands- en mapnaam beginnend met een punt (.) is standaard verborgen. Om verborgen bestanden zichtbaar te maken, klikt u op de <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">Bekijk opties</span></media></gui>-knop in de werkbalk en dan op <gui>Verborgen bestanden tonen</gui>, of druk op <keyseq><key>Ctrl</key><key>H</key></keyseq>. U kunt deze bestanden net zoals gewone bestanden naar de reservekopielocatie kopiëren.</p>
+  <p>Hidden files</p>
+  <p>Any file or folder name that starts with a period (.) is hidden by default.
+ To view hidden files, click <guiseq><gui>View</gui><gui>Show Hidden Files</gui></guiseq>
+ or press <keyseq><key>Ctrl</key><key>H</key></keyseq>. You can copy these to a
+ backup location like any other file.</p>
  </item>
 
  <item>
-  <p>Persoonlijke instellingen (bureaubladvoorkeuren, thema's en software-instellingen)</p>
-  <p>De meeste toepassingen slaan hun instellingen op in verborgen mappen binnen uw persoonlijke map (zie hierboven voor informatie over verborgen bestanden).</p>
-  <p>De meeste van uw toepassingsinstellingen zullen opgeslagen worden in de verborgen mappen <file>.config</file> en <file>.local</file> in uw persoonlijke map.</p>
+  <p>Personal settings (desktop preferences, themes, and software settings)</p>
+  <p>Most applications store their settings in hidden folders inside your Home
+ folder (see above for information on hidden files).</p>
+  <p>Most of your application settings will be stored in the hidden folders
+ <file>.config</file>, <file>.gconf</file>, <file>.gnome2</file>, and <file>.local</file>
+ in your Home folder.</p>
  </item>
 
  <item>
-  <p>Systeeminstellingen</p>
-  <p>Instellingen voor belangrijke delen van het systeem worden niet opgeslagen in uw persoonlijke map. Er zijn een paar locaties waar ze opgeslagen kunnen zijn, maar de meeste zijn opgeslagen in de map <file>/etc</file>. Over het algemeen hoeft u op een thuiscomputer geen reservekopie te maken van deze bestanden. Maar als u een server draait, dan moet u wel een reservekopie maken van de bestanden voor de diensten die erop draaien.</p>
+  <p>System-wide settings</p>
+  <p>Settings for important parts of the system aren't stored in your Home
+ folder. There are a number of locations that they could be stored, but most are
+ stored in the <file>/etc</file> folder. In general, you won't need to back up
+ these files on a home computer. If you are running a server, however, you
+ should back up the files for the services that it is running.</p>
  </item>
 </list>
 

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="reference" id="shell-terminology" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="shell-overview#desktop"/>
+
+    <desc>Az asztali környezet különböző részeit leíró kifejezések ismertetése.</desc>
+
+    <revision pkgversion="3.8.0" version="0.4" date="2013-04-23" status="outdated"/>
+
+    <credit type="author">
+      <name>GNOME dokumentációs projekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Tevékenységek, indítópult, felső sáv… mik ezek?</title>
+
+<!-- THIS SHOULD BE ALPHABETICALLY SORTED… it is. -->
+
+<terms>
+ <item>
+  <title>Tevékenységek áttekintés</title>
+  <p if:test="!platform:gnome-classic">A <em>Tevékenységek áttekintés</em> a képernyő bal felső sarkában lévő <gui>Tevékenységek</gui> feliratra kattintva megjelenő képernyő.</p>
+  <p if:test="platform:gnome-classic">A <em>Tevékenységek áttekintés</em> a képernyő bal felső sarkában lévő <gui>Alkalmazások</gui> menü <gui>Tevékenységek áttekintés</gui> pontjának kiválasztásakor megjelenő képernyő.</p>
+ </item>
+
+ <item if:test="platform:gnome-classic">
+  <title>Applications menu</title>
+  <p>You can find the <gui>Applications</gui> menu at the at the top left of
+  the screen. It gives you access to applications organized into categories.
+  The <em>activities overview</em> is available by selecting the <gui>Activities
+  Overview</gui> item from the menu.</p> 
+ </item>
+
+ <item>
+  <title>Super-Tab ablakváltó</title>
+  <p>Amikor a <key xref="keyboard-key-super">Super</key> billentyű lenyomva tartása közben megnyomja a <key>Tab</key> billentyűt, egy <em>ablakváltó</em> jelenik meg. Ez megjeleníti a nyitott alkalmazások ikonjait.</p>
+ </item>
+
+ <item>
+  <title>Indítópanel</title>
+  <p>Az <em>indítópanel</em> a kedvenc alkalmazásainak listája, amely a tevékenységek áttekintés bal oldalán jelenik meg. Az éppen futó alkalmazások is megjelennek itt. Az indítópanelt néha <em>dokknak</em> is nevezik.</p>
+ </item>
+
+ <item>
+  <title>Forró sarok</title>
+  <p>A <em>forró sarok</em> a képernyő bal felső sarka. Amikor ebbe a sarokba mozgatja a mutatót, megjelenik a Tevékenységek áttekintés.</p>
+ </item>
+
+ <item>
+  <title>Képernyő zárolása</title>
+  <p>A <em>zároló képernyő</em> egy képet jelenít meg a képernyőn, mialatt a számítógépe zárolva van. Hasznos információkat jelenít meg arról is, hogy mi történt mialatt távol volt, és lehetővé teszi a médialejátszás vezérlését a zárolás feloldása nélkül.</p>
+ </item>
+
+ <item>
+  <title>Értesítések</title>
+  <p>Az <em>értesítések</em> olyan üzenetek, amelyek a képernyő alján jelennek meg, és egy esemény bekövetkeztéről számolnak be. Ha például valaki csevegés közben üzenetet küld Önnek, akkor erről egy üzenet tájékoztatja. Ha nem tud azonnal foglalkozni az üzenettel, akkor az elrejtésre kerül az üzenettálcára. Vigye az egeret a jobb alsó sarokba (vagy nyomja meg a <keyseq><key xref="keyboard-key-super">Super</key><key>M</key></keyseq> kombinációt) az üzenettálca megjelenítéséhez.</p>
+ </item>
+
+ <item if:test="platform:gnome-classic">
+  <title>Helyek menü</title>
+  <p>A <em>helyek menü</em> a <gui>felső sáv</gui> <gui>Helyek</gui> feliratára kattintva nyílik meg. Segítségével gyorsan elérheti a fontos mappákat, mint például a <gui>Letöltések</gui> vagy a <gui>Képek</gui>.</p>
+ </item>
+
+ <item>
+  <title>Beállítások</title>
+  <p>A <em>Beállítások</em> a beállítások módosítására szolgáló ablak, hasonló a Windows Vezérlőpultjához vagy a Mac OS Rendszertulajdonságok ablakához. Kattintson a nevére a felső sáv jobb oldalán, és válassza a <gui>Beállítások</gui> menüpontot az eléréséhez.</p>
+ </item>
+
+ <item>
+  <title>Felső sáv</title>
+  <p if:test="!platform:gnome-classic">The <em>top bar</em> is the bar that
+  runs along the very top of the screen. The <gui>Activities</gui> link is on
+  one end of the top bar and your username is on the other.</p>
+  <p if:test="platform:gnome-classic">A <em>felső sáv</em> a képernyő tetején lévő sáv. A sáv bal szélén az <gui>Alkalmazások</gui> hivatkozás, a jobb szélén az Ön felhasználóneve található.</p> 
+ </item>
+
+ <item>
+  <title>Munkaterület</title>
+  <p>Az ablakokat különböző <em>munkaterületekre</em> helyezheti. A munkaterületek segítségével kényelmesen csoportosíthatja és szétválogathatja ablakait.</p>
+ </item>
+
+ <item>
+  <title>Munkaterület-választó</title>
+  <p>A <em>munkaterület-választó</em> a tevékenységek áttekintés <gui>Ablakok</gui> nézetének jobb oldalán megjelenő munkaterület-lista.</p>
+ </item>
+
+ <item if:test="platform:gnome-classic">
+  <title>Ablaklista</title>
+  <p>Az <em>ablaklista</em> a képernyő legalján lévő sáv, amely gombokat jelenít meg az összes nyitott ablakhoz.</p>
+ </item>
+
+</terms>
+
+</page>

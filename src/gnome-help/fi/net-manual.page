@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-manual" xml:lang="fi">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="net-manual" xml:lang="fi">
   <info>
     <link type="guide" xref="net-wired"/>
     <link type="guide" xref="net-wireless"/>
 
     <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
-    <revision pkgversion="3.10" date="2013-11-11" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-    <revision pkgversion="3.28" date="2018-03-28" status="review"/>
 
     <credit type="author">
       <name>Phil Bull</name>
       <email>philbull@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
 
-    <desc>Jos verkkoasetukset eivät muodostu automaattisesti, sinun tarvinnee määrittää verkon asetukset itse.</desc>
+    <desc>Jos verkkoasetukset eivät muodostu automaattisesti, sinun tarvinnee asettaa verkon tiedot itse.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -27,72 +19,40 @@
       <mal:email>timo.jyrinki@iki.fi</mal:email>
       <mal:years>2012.</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Jiri Grönroos</mal:name>
-      <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
-      <mal:years>2012-2018.</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Määritä verkon asetukset manuaalisesti</title>
+<title>Määritä verkon asetukset manuaalisesti</title>
 
-  <p>If your network doesn’t automatically assign network settings to your
-  computer, you may have to manually enter the settings yourself. This topic
-  assumes that you already know the correct settings to use. If not, you may
-  need to ask your network administrator or look at the settings of your router
-  or network switch.</p>
+<p>Jos tietokone ei osaa määrittää verkon asetuksia itse automaattisesti, ne pitää tehdä itse. Tässä ohjeessa oletetaan, että verkon tiedot ovat jo valmiiksi tiedossa. Jos niitä ei tiedetä, kannattaa tiedustella niitä verkkosi ylläpitäjältä (esimerkiksi operaattorilta) tai tutkailla reitittimen tai langattoman tukiaseman tietoja (niiden kyljessä on usein lappu, jossa tiedot mainitaan).</p>
 
-  <steps>
-    <title>Verkon asetusten määrittäminen itse:</title>
-    <item>
-      <p>Avaa <gui xref="shell-introduction#activities">Toiminnot</gui>-yleisnäkymä ja ala kirjoittamaan <gui>Asetukset</gui>.</p>
-    </item>
-    <item>
-      <p>Napsauta <gui>Asetukset</gui>.</p>
-    </item>
-    <item>
-      <p>In the left pane, select the network connection that you want to set
-      up manually. If you plug in to the network with a cable, click
-      <gui>Network</gui>. Otherwise click <gui>Wi-Fi</gui>.</p>
-      <p>Make sure that your wireless card is turned on or a network cable is
-      plugged in.</p>
-    </item>
-    <item>      
-      <p>Click the
-      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
-      button.</p>
-      <note>
-        <p>For a <gui>Wi-Fi</gui> connection, the 
-        <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
-        button will be located next to the active network.</p>
-      </note>
-    </item>
-    <item>
-      <p>Click on <gui>IPv4</gui> or <gui>IPv6</gui> in the left pane
-      and change the <gui>Addresses</gui> to <em>Manual</em>.</p>
-    </item>
-    <item>
-      <p>Type in the <gui xref="net-what-is-ip-address">IP Address</gui> and
-      <gui>Gateway</gui>, as well as the appropriate <gui>Netmask</gui>.</p>
-    </item>
-    <item>
-      <p>In the <gui>DNS</gui> section, switch <gui>Automatic</gui> to
-      <gui>OFF</gui>. Enter the IP address of a DNS server you want to use.
-      Enter additional DNS server addresses using the <gui>+</gui> button.</p>
-    </item>
-    <item>
-      <p>In the <gui>Routes</gui> section, switch <gui>Automatic</gui> to
-      <gui>OFF</gui>. Enter the <gui>Address</gui>, <gui>Netmask</gui>,
-      <gui>Gateway</gui> and <gui>Metric</gui> for a route you want to use.
-      Enter additional routes using the <gui>+</gui> button.</p>
-    </item>
-    <item>
-      <p>Click <gui>Apply</gui>. If you are not connected to the network, click
-      the system status area on the top bar and connect. Test the network
-      settings by trying to visit a website or look at shared files on the
-      network, for example.</p>
-    </item>
-  </steps>
+<steps>
+  <title>Verkon asetusten määrittäminen itse:</title>
+ <item>
+  <p>Click the network icon on the top bar and select <gui>Network Settings</gui>.</p>
+ </item>
+
+ <item>
+  <p>Select the network connection that you want to set up manually and click <gui>Configure</gui>. For example, if you plug in to the network with a cable, look at <gui>Wired</gui>.</p>
+  <p>Make sure that your wireless card is turned on or a network cable is plugged in. Otherwise, you won't be able to click <gui>Configure</gui>.</p>
+ </item>
+
+ <item>
+  <p>Siirry <gui>IPv4-asetukset</gui>-välilehdelle ja vaihda <gui>Menetelmä</gui>-kohtaan <em>Manuaalinen</em>.</p>
+ </item>
+
+ <item>
+  <p>Napsauta <gui>Lisää</gui> ja kirjoita <em>IP-osoite</em>, <em>verkkopeite</em> ja <em>yhdyskäytävä</em> niille osoitetuille paikoille <gui>Osoitteet</gui>-osiossa. Paina lopuksi <key>Enter</key>.</p>
+  <p>Kaikkien näiden kolmen tiedon tulee olla niin sanottuja "IP-osoitteita", eli niissä pitää olla neljä pisteellä eroteltua numerosarjaa (esimerkiksi 123.45.6.78).</p>
+ </item>
+
+ <item>
+  <p>Type the IP addresses of the DNS servers you want to use in the corresponding field, separated by commas.</p>
+ </item>
+
+ <item>
+  <p>Click <gui>Save</gui>. If you are not connected to the network, click the network icon on the top bar and connect. Test the network settings by trying to visit a website or look at shared files on the network, for example.</p>
+ </item>
+
+</steps>
 
 </page>

@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="a11y task" id="a11y-visualalert" xml:lang="nl">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="a11y task" id="a11y-visualalert" xml:lang="nl">
   <info>
     <link type="guide" xref="a11y#sound"/>
     <link type="seealso" xref="sound-alert"/>
 
-    <revision pkgversion="3.7.1" date="2012-11-10" status="outdated"/>
-    <revision pkgversion="3.9.92" date="2013-09-18" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="final"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <revision pkgversion="3.7.1" version="0.3" date="2012-11-10" status="outdated"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -20,52 +14,41 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
-    <desc>Visuele alertering inschakelen om het scherm of de titelbalk te laten knipperen wanneer er een alerteringsgeluid klinkt.</desc>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
+    <desc>Enable visual alerts to flash the screen or window when an
+    alert sound is played.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
-  <title>Scherm laten knipperen bij alerteringsgeluiden</title>
+  <title>Flash the screen for alert sounds</title>
 
-  <p>Bij bepaalde berichten en gebeurtenissen speelt uw computer een eenvoudig alerteringsgeluid af. Als u deze geluiden moeilijk kunt horen, dan kunt u of het hele scherm, of de titelbalk laten knipperen wanneer er een alerteringsgeluid klinkt.</p>
+  <p>Your computer will play a simple alert sound for certain types of
+  messages and events. If you have a hard time hearing these sounds, you
+  can have either the entire screen or your current window visually flash
+  whenever the alert sound is played.</p>
 
-  <p>Dit kan ook van pas komen in een omgeving waar het belangrijk is dat uw computer stil is, zoals in een bibliotheek. Zie <link xref="sound-alert"/> om te leren hoe u het meldingsgeluid kunt dempen, om daarna visuele alertering in te schakelen.</p>
+  <p>This can also be useful if you're in an environment where you need your
+  computer to be silent, such as in a library. See <link xref="sound-alert"/>
+  to learn how to mute the alert sound, then enable visual alerts.</p>
 
   <steps>
     <item>
-      <p>Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht en typ <gui>Universele toegang</gui>.</p>
+      <p>Click your name on the top bar and select <gui>Settings</gui>.</p>
     </item>
     <item>
-      <p>Klik op <gui>Universele toegang</gui> om het paneel te openen.</p>
+      <p>Open <gui>Universal Access</gui> and select the <gui>Hearing</gui>
+      tab.</p>
     </item>
     <item>
-      <p>Druk op <gui>Visuele alertering</gui> onder het kopje <gui>Gehoor</gui>.</p>
-    </item>
-    <item>
-      <p>Zet <gui>Visuele alertering</gui> <gui>AAN</gui>.</p>
-    </item>
-    <item>
-      <p>Kies of u het hele scherm, of alleen uw huidige titelbalk wil laten knipperen.</p>
+      <p>Switch <gui>Visual Alerts</gui> on. Select whether you want the
+      entire screen or just your current window title to flash.</p>
     </item>
   </steps>
 
   <note style="tip">
-    <p>U kunt Visuele alertering ook snel in- en uitschakelen door te klikken op het <link xref="a11y-icon">toegankelijkheidspictogram</link> in de bovenbalk en <gui>Visuele alterteringen</gui> te selecteren. </p>
+    <p>You can quickly turn visual alerts on and off by clicking the
+    <link xref="a11y-icon">accessibility icon</link> on the top bar and
+    selecting <gui>Visual Alerts</gui>.</p>
   </note>
 
 </page>

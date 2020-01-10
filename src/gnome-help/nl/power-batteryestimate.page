@@ -3,12 +3,10 @@
 
   <info>
 
-    <link type="guide" xref="power#faq"/>
+    <link type="guide" xref="power#battery"/>
     <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-    <revision pkgversion="3.20" date="2016-06-15" status="final"/>
 
-    <desc>De levensduur van de accu welke wordt getoond wanneer u op het <gui>accupictogram</gui> klikt is een schatting.</desc>
+    <desc>The battery life displayed when you click on the <gui>battery icon</gui> is an estimate.</desc>
 
     <credit type="author">
       <name>Gnome-documentatieproject</name>
@@ -22,39 +20,39 @@
       <name>Ekaterina Gerasimova</name>
       <email>kittykat3756@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
   </info>
 
-<title>De geschatte levensduur van de accu is fout</title>
+<title>The estimated battery life is wrong</title>
 
-<p>Wanneer u de levensduur van de accu controleert, kan het zijn dat de gemelde resterende tijd verschilt van de tijd die er werkelijk nog resteert. Dit komt doordat de resterende tijd van de accu alleen maar geschat kan worden. De schattingen zullen echter wel steeds nauwkeuriger worden.</p>
+<p>When you check the remaining battery life, you may find that the time
+remaining that it reports is different to how long the battery actually lasts.
+This is because the amount of remaining battery life can only be estimated.
+Normally, the estimates improve over time.</p>
 
-<p>Om de resterende tijd van de accu te schatten, moet rekening gehouden worden met een aantal factoren. Eén daarvan is de hoeveelheid energie die de computer momenteel gebruikt: het energieverbruik varieert, afhankelijk van hoeveel programma's u geopend heeft, welke apparaten er zijn aangesloten en of er intensieve taken worden uitgevoerd (zoals het bekijken van een video of het converteren van muziekbestanden). Dit verandert van moment op moment en is moeilijk te voorspellen.</p>
+<p>In order to estimate the remaining battery life, a number of factors must be
+taken into account. One is the amount of power currently being used by the
+computer: power consumption varies depending on how many programs you have
+open, which devices are plugged in, and whether you are running any intensive
+tasks (like watching a DVD or converting music files, for example). This
+changes from moment to moment, and is difficult to predict.</p>
 
-<p>Een andere factor is hoe de accu ontlaadt. Sommige accu's ontladen sneller naarmate ze leger raken. Zonder precies te weten hoe de accu ontlaadt, kan er slechts een ruwe schatting worden gemaakt van de resterende accuduur.</p>
+<p>Another factor is how the battery discharges. Some batteries lose charge
+faster the emptier they get. Without precise knowledge of how the battery
+discharges, only a rough estimate of remaining battery life can be made.</p>
 
-<p>Terwijl de accu ontlaadt zal Energiebeheer achter de ontlaadeigenschappen komen en leren hoe het de levensduur van de accu beter kan inschatten. De schattingen zullen echter nooit helemaal nauwkeurig zijn.</p>
+<p>As the battery discharges, the power manager will figure out its discharge
+properties and will learn how to make better estimates of battery life. They
+will never be completely accurate, though.</p>
 
 <note>
-  <p>Als u een totaal onwaarschijnlijke schatting van de acculevensduur krijgt (laten we zeggen honderden dagen!), dan mist Energiebeheer waarschijnlijk enkele gegevens die nodig zijn om een goede schatting te maken.</p>
-  <p>Als u een poosje op accustroom draait, en daarna weer op netstroom overgaat en weer gaat opladen, dan zou energiebeheer de benodigde gegevens moeten verkrijgen.</p>
+  <p>If you get a completely ridiculous battery life estimate (say, hundreds of
+  days), the power manager is probably missing some of the data it needs to
+  make a sensible estimate.</p>
+  <p>If you unplug the power and run the laptop on battery for a while, then
+  plug it in and let it recharge again, the power manager should be able to get
+  the data it needs.</p>
 </note>
 
 </page>

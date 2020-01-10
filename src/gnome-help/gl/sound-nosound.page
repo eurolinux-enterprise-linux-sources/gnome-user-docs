@@ -4,9 +4,9 @@
   <info>
     <link type="guide" xref="sound-broken"/>
 
+    <desc>Comprobe que non está silenciado, que os cables están enchufados correctamente e que a tarxeta de son foi detectado.</desc>
+
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Proxecto de documentación de GNOME</name>
@@ -14,127 +14,78 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Check that the sound is not muted, that cables are plugged in properly,
-    and that the sound card is detected.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2018</mal:years>
+      <mal:years>2011, 2012.</mal:years>
     </mal:credit>
   </info>
 
 <title>Non podo escoitar ningún son do computador</title>
 
-  <p>If you cannot hear any sounds on your computer, for example when you try
-  to play music, go through the following troubleshooting tips.</p>
+  <p>Se non pode escoitar ningún son no seu computador, por exemplo cando reproduce música, tente estes pasos de resolución de erros para ver se pode arranxar o problema.</p>
 
 <section id="mute">
-  <title>Asegúrese que o son non está desactivado</title>
-
-  <p>Open the <gui xref="shell-introduction#yourname">system menu</gui> and make sure that
-  the sound is not muted or turned down.</p>
-
-  <p>Some laptops have mute switches or keys on their keyboards — try pressing
-  that key to see if it unmutes the sound.</p>
-
-  <p>You should also check that you have not muted the application that you are
-  using to play sound (for example, your music player or movie player). The
-  application may have a mute or volume button in its main window, so check
-  that.</p>
-
-  <p>Tamén, pode comprobar a lapela de <gui>Aplicativos</gui> na interface de <gui>Son</gui>:</p>
-  <steps>
-    <item>
-    <p>Abra as <app>Preferencias</app> desde a vista de <gui>Actividades</gui>.</p>
-    </item>
-    <item>
-      <p>Prema <gui>Son</gui>.</p>
-    </item>
-    <item>
-      <p>Go to the <gui>Applications</gui> tab and check that your application
-      is not muted.</p>
-    </item>
-  </steps>
-
+ <title>Asegúrese que o son non está desactivado</title>
+ <p>Prema a icona de son no panel superior (semella un altofalante) e asegúrese de que o son non estea silenciado ou na posición cara abaixo.</p>
+ <p>Algúns equipos portátiles teñen interruptores de silencio ou teclas nos seus teclados, probe a premer dita tecla para ver se se activa o son.</p>
+ <p>Tamén pode comprobar que non silenciou o aplicativo que está usando para reproducir o son (por exemplo, o seu reprodutor de música ou reprodutor de filmes). O aplicativo pode ter un botón de silencio ou de volume na súa xanela principal, polo que debe comprobalo. Tamén pode premer na icona no panel superior e seleccionar <gui>Preferencias de son</gui>. Cando apareza a xanela de <gui>Son</gui>, vaia á lapela <gui>Aplicativos</gui> e comprobe que o seu aplicativo non está silenciado.</p>
 </section>
 
 <section id="speakers">
-  <title>Comprobe que os altoparlantes están acendidos e están conectados correctamente</title>
-  <p>If your computer has external speakers, make sure that they are turned on
-  and that the volume is turned up. Make sure that the speaker cable is securely
-  plugged into the “output” audio socket on your computer. This socket
-  is usually light green in color.</p>
+ <title>Comprobe que os altoparlantes están acendidos e están conectados correctamente</title>
+ <p>Se o seu equipo ten altoparlantes externos, asegúrese de que están acendidos e que o volume está activado. Asegúrese de que o cable do altavoz esté conectado ao zócalo de «saída» na parte posterior do equipo. Esta toma é polo xeral de cor verde claro.</p>
 
-  <p>Some sound cards can switch between the socket they use for output
-  (to the speakers) and the socket for input (from a microphone, for instance).
-  The output socket may be different when running Linux, Windows or Mac OS.
-  Try connecting the speaker cable to a different audio socket on your
-  computer.</p>
+ <p>Algunhas tarxetas de son son capaces de cambiar o zócalo que usan para a saída (dos altoparlantes) e a entrada (desde o micrófono, por exemplo) e a entrada (desde o micrófono, por exemplo). O zócalo de saída pode ser diferente cando se executa Linux no lugar de Windows ou Mac OS. Tente conectar o cable do altavoz aos diferentes zócalos de audio no equipo sucesivamente, para ver se funciona.</p>
 
- <p>A final thing to check is that the audio cable is securely plugged into the
- back of the speakers. Some speakers have more than one input, too.</p>
+ <p>Unha última cousa que comprobar é que o cable de son estea conectado correctamente na parte traseira dos altoparlantes. Algúns altoparlantes teñen máis dunha entrada.</p>
 </section>
 
 <section id="device">
-  <title>Check that the correct sound device is selected</title>
-
-  <p>Some computers have multiple “sound devices” installed. Some of these are
-  capable of outputting sound and some are not, so you should check that you
-  have the correct sound device selected. This might involve some
-  trial-and-error to choose the right one.</p>
-
-  <steps>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Sound</gui>.</p>
-    </item>
-    <item>
-      <p>Prema en <gui>Son</gui> para abrir o panel.</p>
-    </item>
-    <item>
-      <p>In the <gui>Output</gui> tab, change the <gui>Profile</gui>
-      settings for the selected device and play a sound to see if it works.
-      You might need to go through the list and try each profile.</p>
-
-      <p>If that does not work, you might want to try doing the same for any
-      other devices that are listed.</p>
-    </item>
-  </steps>
-
+ <title>Comprobe que o dispositivo de son correcto está seleccionado</title>
+ <p>Algúns equipos teñen varios «dispositivos de son» instalados. Algúns destes son capaces de facer saír o son e outros non, así que vostede debe comprobar que ten seleccionado o correcto. Isto podería implicar algún ensaio e erro para elixir o correcto.</p>
+ <steps>
+  <item>
+   <p>Prema a icona de son no panel superior e seleccione <gui>Preferencias de son</gui>.</p>
+  </item>
+  <item>
+   <p>Na xanela de <gui>Son</gui> que aparece, vaia á lapela <gui>Saída</gui>. Tome nota de que dispositivo e perfil están seleccionados (para que poida volver ás seleccións predeterminadas se o cambio non funciona).</p>
+  </item>
+  <item>
+   <p>Para o dispositivo seleccionado, tentar cambiar o perfil; reproducir un son despois de cambiar o perfil, para comprobar que funciona. Pode necesitar ir a través da lista e probar cada perfil.</p>
+  </item>
+  <item>
+   <p>Se iso non funciona, pode tentar facer o mesmo con calquera dos dispositivos que se mostran.</p>
+  </item>
+  <item>
+   <p>Tente cambiar a opción <gui>Conector</gui> na lapela <gui>Saída</gui> tamén.</p>
+  </item>
+ </steps>
 </section>
 
 <section id="hardware-detected">
-
  <title>Comprobe que a tarxeta de son foi detectada correctamente</title>
+ <p>Pode que a súa tarxeta de son non se teña detectado correctamente. Se aconteceu isto, o equipo vai pensar que non é capaz de reproducir o son. Unha posíbel razón para que non se detecte a tarxeta correctamente é que os controladores da tarxeta non están instalados.</p>
+ <steps>
+  <item>
+   <p>Vaia á vista previa de <gui>Actividades</gui> e abra un terminal.</p>
+  </item>
+  <item>
+   <p>Escriba <cmd>aplay -l</cmd> e prema <key>Intro</key>.</p>
+  </item>
+  <item>
+   <p>Mostrarase unha lista de dispositivos. Se non hai ningún <gui>dispositivo hardware de reprodución</gui>, a súa tarxeta non se detectou.</p>
+  </item>
+ </steps>
 
-  <p>Your sound card may not have been detected properly probably because 
-  the drivers for the card are not installed. You may need to install the drivers
-  for the card manually. How you do this depends on the type of the card. </p>
+ <p>Se non se detecta a súa tarxeta de son, pode que teña que instalar manualmente os controladores. A forma de facelo dependerá da tarxeta que teña.</p>
 
-  <p>Execute a orde <cmd>lspci</cmd> no Terminal para obter máis información sobre a súa tarxeta de son:</p>
-  <steps>
-    <item>
-      <p>Vaia á vista previa de <gui>Actividades</gui> e abra un terminal.</p>
-    </item>
-    <item>
-      <p>Run <cmd>lspci</cmd> as <link xref="user-admin-explain">superuser</link>;
-      either type <cmd>sudo lspci</cmd> and type your password, or type
-      <cmd>su</cmd>, enter the <em>root</em> (administrative) password,
-      then type <cmd>lspci</cmd>.</p>
-    </item>
-    <item>
-      <p>Check if an <em>audio controller</em> or <em>audio device</em> is listed:
-      in such case you should see the make and model number of the sound card. 
-      Also, <cmd>lspci -v</cmd> shows a list with more detailed information.</p>
-    </item>
-  </steps>
+ <p>Pode ver que tarxeta de son está usando a orde <cmd>lspci</cmd> no Terminal. Debe executar <cmd>lspci</cmd> como <link xref="user-admin-explain">superusuario</link>. Escriba <cmd>sudo lspci</cmd> e escriba o seu contrasinal, ou escriba <cmd>su</cmd>, escriba o contrasinal de <em>root</em> (administración), logo escriba <cmd>lspci</cmd>. Vexa se se mostra un <em>controlador de son</em> ou un <em>dispositivo de son</em> para o seu modelo e fabricante de modelo de tarxeta de son. <cmd>lspci -v</cmd> mostraralle unha lista con información máis detallada.</p>
 
-  <p>Pode que encontre e saiba instalar os controladores para a súa tarxeta. O mellor é pedir instrucións nos foros de soporte (ou similares) para a súa distribución de Linux.</p>
+ <p>Pode que encontre e saiba instalar os controladores para a súa tarxeta. O mellor é pedir instrucións nos foros de soporte (ou similares) para a súa distribución de Linux.</p>
 
-  <p>Se non pode conseguir os controladores para a tarxeta de son, é posíbel que prefira comprar unha tarxeta de son nova. Pode obter tarxetas de son que se poden instalar no equipo e tarxetas de son externas USB.</p>
-
+ <p>Se non pode conseguir os controladores para a tarxeta de son, é posíbel que prefira comprar unha tarxeta de son nova. Pode obter tarxetas de son que se poden instalar no equipo e tarxetas de son externas USB.</p>
 </section>
 
 </page>

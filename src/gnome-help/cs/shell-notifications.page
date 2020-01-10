@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" version="1.0 if/1.0" id="shell-notifications" xml:lang="cs">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="ui" id="shell-notifications" xml:lang="cs">
 
   <info>
+
     <link type="guide" xref="shell-overview#desktop"/>
 
+    <desc>Messages pop-up at the bottom of the screen telling you when certain
+    events happen.</desc>
+
     <revision pkgversion="3.8.0" version="0.3" date="2013-04-23" status="review"/>
-    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.16" date="2015-03-02" status="outdated"/>
 
     <credit type="author">
       <name>Marina Zhurakhinskaya</name>
@@ -17,84 +18,88 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-      <years>2013, 2015</years>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Zprávy, které vyskakují z horní části obrazovky, vás informují, když nastanou určité události.</desc> 
+  
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
       <mal:email>adamatousek@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Marek Černocký</mal:name>
-      <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014, 2015</mal:years>
-    </mal:credit>
   </info>
 
-<title>Upozornění a pořadač zpráv</title>
+
+<title>Notifications and the message tray</title>
 
 <section id="what">
-  <title>Co je to upozornění?</title>
+<title>What is a notification?</title>
+  <p>If an application or a system component wants to get your attention, a
+  notification will be shown at the bottom of the screen.</p>
+  <p>For example, if you get a new chat message, plug in an external device
+  (like a USB stick), new updates are available for your computer, or your
+  computer’s battery is low, you will get a notification informing you.</p>
+  <p>To minimize distraction, some notifications first appear as a single
+  line. You can move your mouse over them to see their full content.</p>
 
-  <p>Když chce některá aplikace nebo systémová komponenta získat vaši pozornost, zobrazí se upozornění u horní části obrazovky.</p>
+<media type="image" width="700" src="figures/shell-notification.png"/>
 
-  <p>Například, když obdržíte novou zprávu v diskuzi nebo nový e-mail, objeví se upozornění, které vás o tom informuje.</p>
+  <p>Other notifications have selectable option buttons. To close one of these
+  notifications without selecting one of its options, click the close button.</p>
 
-<!--  <p>To minimize distraction, some notifications first appear as a single line.
-  You can move your mouse over them to see their full content.</p>-->
+<media type="image" width="500" src="figures/notification-buttons.png"/>
 
-  <p>Jiná upozornění mohou mít tlačítka s volbami. Abyste takovéto upozornění zavřeli bez použití některé z nabízených voleb, stačí kliknout na zavírací tlačítko.</p>
-
-  <p>Kliknutí na zavírací tlačítko u některých upozornění způsobí jejích zmizení z pořadače. Jiné, jako jsou od přehrávače Rhythmbox nebo od diskuzních aplikací, zůstanou skryté v pořadači zpráv.</p>
+  <p>Clicking the close button on some notifications dismisses them. Others,
+  like Rhythmbox or your chat application, will stay hidden in the message 
+  tray.</p>
 
 </section>
 
-<section id="messagetray">
+<section id="messagingtray">
 
-  <title>Pořadač zpráv</title>
+<title>The message tray</title>
 
-  <p if:test="!platform:gnome-classic">Pořadač zpráv vám poskytuje způsob, jak se vrátit ke svým upozorněním, až se vám to hodí. Objeví se po kliknutí na hodiny nebo po zmáčknutí <keyseq><key xref="keyboard-key-super">Super</key> <key>M</key></keyseq>. Obsahuje všechna upozornění, na která jste zatím nereagovali nebo jsou v něm umístěna trvale.</p>
+  <p if:test="!platform:gnome-classic">The message tray gives you a way to get
+  back to your notifications when it is convenient for you. It appears when you
+  move your mouse to the bottom-right corner of the screen, or press <keyseq>
+  <key xref="keyboard-key-super">Super</key><key>M</key></keyseq>. The message
+  tray contains all the notifications that you have not acted upon or that
+  permanently reside in it.</p>
 
-  <p if:test="platform:gnome-classic">Pořadač zpráv vám poskytuje způsob, jak se vrátit ke svým upozorněním, až se vám to hodí. Objeví se po najetí myší do pravého dolního rohu obrazovky nebo nebo po zmáčknutí <keyseq><key xref="keyboard-key-super">Super</key> <key>M</key></keyseq>. Také jej můžete zobrazit kliknutím na ikonu s modrým číslem na pravé straně seznamu oken. Obsahuje všechna upozornění, na která jste zatím nereagovali nebo jsou v něm umístěna trvale.</p>
+  <p if:test="platform:gnome-classic">The message tray gives you a way to get
+  back to your notifications when it is convenient for you. It appears when you
+  move your mouse to the bottom-right corner of the screen, or press <keyseq>
+  <key xref="keyboard-key-super">Super</key><key>M</key></keyseq>. You can also
+  show the message tray by clicking the blue number icon at the right-hand
+  side of the window list. The message tray contains all the notifications that
+  you have not acted upon or that permanently reside in it.</p>
 
-  <p>Upozornění si můžete zobrazit kliknutím na položku v pořadači zpráv. Jedná se obvykle o zprávy poslané aplikacemi. Avšak upozornění z diskuzí jsou pojata trochu jinak a jsou podána podle jednotlivých kontaktů, které vám zprávy poslaly.</p>
+  <p>You can view the notifications by clicking on the message tray items. These
+  are usually messages sent by applications. However, chat notifications are
+  given special treatment, and are represented by the individual contacts who sent
+  you the chat messages.</p>
 
-  <p>Pořadač zpráv můžete zavřít opětovným zmáčknutím <keyseq><key>Super</key> <key>M</key></keyseq> nebo klávesou <key>Esc</key>.</p>
+  <p>You can close the message tray by pressing
+  <keyseq><key>Super</key><key>M</key></keyseq> again or <key>Esc</key>.</p>
+
+  <note style="tip"><p>If the <link xref="keyboard-osk">screen keyboard</link>
+   is open, you'll need to click the <gui>tray button</gui> to show the message
+   tray.</p>
+  </note>
 
 </section>
 
 <section id="hidenotifications">
+<title>Hiding notifications</title>
 
-  <title>Skrývání upozornění</title>
+  <p>If you're working on something and do not want to be bothered, you can
+  switch off notifications. Just click your name on the top bar and change the
+  <gui>Notifications</gui> toggle to <gui>OFF</gui>.</p>
 
-  <p>Když na něčem pracujete a nechcete být obtěžováni, můžete upozornění vypnout.</p>
-
-  <steps>
-    <item>
-      <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Upozornění</gui>.</p>
-    </item>
-    <item>
-      <p>Kliknutím na <gui>Upozornění</gui> otevřete příslušný panel.</p>
-    </item>
-    <item>
-      <p>Přepněte vypínač <gui>Upozornění v cedulích</gui> na <gui>○</gui> (vypnuto).</p>
-    </item>
-  </steps>
-
-  <p if:test="!platform:gnome-classic">Když jsou upozornění vypnutá, většina se jich nebude v horní části obrazovky objevovat. Všechna upozornění budou ale pořád k dispozici v pořadači zpráv, když si jej zobrazíte (kliknutím na hodiny nebo zmáčknutím <keyseq><key>Super</key><key>M</key></keyseq>) a začnou se znovu objevovat, jakmile přepnete přepínač zpátky na <gui>❙</gui> (zapnuto).</p>
-
-  <p>Můžete také zakázat nebo znovu povolit upozornění pro jednotlivé aplikace v panelu <gui>Upozornění</gui>.</p>
-
-  <p if:test="platform:gnome-classic">Když jsou upozornění vypnutá, většina se jich nebude v dolní části obrazovky objevovat. Velmi důležitá upozornění, jako je kriticky nízký stav baterie, se budou objevovat i nadále. Všechna upozornění budou pořád k dispozici v pořadači zpráv, když si jej zobrazíte (přesunutím myši do pravého dolního rohu obrazovky nebo zmáčknutím <keyseq><key>Super</key><key>M</key></keyseq>) a začnou se znovu objevovat, jakmile přepnete přepínač zpátky na <gui>❙</gui> (zapnuto).</p>
+  <p>When switched off, most notifications will not pop up at the bottom of the
+  screen. Very important notifications, such as when your battery is critically
+  low, will still pop up. Notifications will still be available in the messaging
+  tray when you display it (by moving your mouse to the bottom right corner, or
+  pressing <keyseq><key>Super</key><key>M</key></keyseq>), and they will
+  redisplay when you switch the toggle to <gui>ON</gui> again.</p>
 
 </section>
-
 </page>

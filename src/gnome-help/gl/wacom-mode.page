@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="wacom-mode" xml:lang="gl">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="wacom-mode" xml:lang="gl">
   <info>
-    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+    <revision pkgversion="3.8.0" version="0.2" date="2013-03-09" status="candidate"/>
 
     <link type="guide" xref="wacom"/>
 
@@ -15,14 +11,12 @@
       <years>2012</years>
     </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
     <desc>Cambia a tableta entre modo tableta e modo ratón.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2018</mal:years>
+      <mal:years>2011, 2012.</mal:years>
     </mal:credit>
   </info>
 
@@ -31,20 +25,14 @@
 <p><gui>Modo de seguemento</gui> determina como se corresponde o punteiro coa pantalla.</p>
 
 <steps>
-  <item>
-    <p>Abra a vista de <gui xref="shell-introduction#activities">Actividades</gui> e comece a escribir <gui>Tableta Wacom</gui>.</p>
-  </item>
-  <item>
-    <p>Prema na <gui>Tableta Wacom</gui>para abrir o panel.</p>
-    <!-- TODO: document how to connet the tablet using Bluetooth/add link -->
-    <note style="tip"><p>Se non se detecta ningunha tableta, pediráselle que <gui>Conecte ou acenda a súa tableta Wacom</gui>.
-Prema a ligazón <gui>Preferencias de Bluetooth</gui> para conectar unha tableta inarámica.</p></note>
+  <item><p>Prema sobre o nome da barra de enderezos e seleccione <gui>Preferencias</gui>.</p></item>
+  <item><p>Abra <gui>Tableta Wacom</gui>.</p>
+     <note style="tip"><p>Se non se detecta ningunha tableta, pediráselle que <gui>Conecte ou acenda a súa tableta Wacom</gui>.</p></note>
   </item>
   <item><p>Xunto a <gui>Modo de seguemento</gui>, seleccione <gui>Tableta (absoluto)</gui> ou <gui>Área táctil (relativo)</gui>.</p></item>
 </steps>
 
 <note style="info"><p>No modo <em>absoluto</em> cada punto da tableta corresponde cun punto da pantalla. A esquina superior esquerda da pantalla, por exemplo, sempre corresponde co mesmo punto da tableta.</p>
- <p>No modo <em>relativo</em> se deixa o punteiro fóra da tableta, e o pon nun lugar diferente, o cursor da pantalla non se move. Así é como funciona o rato.</p>
-  </note>
+ <p>No modo <em>relativo</em> se deixa o punteiro fóra da tableta, e o pon nun lugar diferente, o cursor da pantalla non se move. Así é como funciona o rato, permitíndolle cubrir distancias na pantalla con menos movementos da man.</p></note>
 
 </page>

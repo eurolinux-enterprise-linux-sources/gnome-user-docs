@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="user-delete" xml:lang="pt-BR">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="user-delete" xml:lang="pt-BR">
 
   <info>
     <link type="guide" xref="user-accounts#manage"/>
-    <link type="seealso" xref="user-add"/>
-    <link type="seealso" xref="user-admin-explain"/>
-
+    <desc>Remova os usuários que não usam mais seu computador.</desc>
     <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -27,14 +22,8 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Remova os usuários que não usam mais seu computador.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Rodolfo Ribeiro Gomes</mal:name>
@@ -43,46 +32,25 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Enrico Nicoletto</mal:name>
       <mal:email>liverig@gmail.com</mal:email>
       <mal:years>2013.</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>João Santana</mal:name>
-      <mal:email>joaosantana@outlook.com</mal:email>
-      <mal:years>2013.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Fontenelle</mal:name>
-      <mal:email>rafaelff@gnome.org</mal:email>
-      <mal:years>2012-2018.</mal:years>
-    </mal:credit>
   </info>
+  <title>Excluir uma conta de usuário</title>
 
-  <title>Excluindo uma conta de usuário</title>
+  <p>Você pode adicionar múltiplas contas de usuários ao seu computador. Veja <link xref="user-add"/> para aprender como. Se alguém não está mais usando o seu computador, você pode excluir sua conta de usuário.</p>
 
-  <p>Você pode adicionar <link xref="user-add">múltiplas contas de usuários ao seu computador</link>. Se alguém não está mais usando o seu computador, você pode excluir a conta deste usuário.</p>
-
-  <p>Você precisa de <link xref="user-admin-explain">privilégios administrativos</link> para excluir contas de usuários.</p>
-
-  <steps>
-    <item>
-      <p>Abra o panorama de <gui xref="shell-introduction#activities">Atividades</gui> e comece a digitar <gui>Usuários</gui>.</p>
-    </item>
-    <item>
-      <p>Clique em <gui>Usuários</gui> para abrir o painel.</p>
-    </item>
-    <item>
-      <p>Pressione <gui style="button">Desbloquear</gui> no canto superior direito e insira sua senha quando solicitada.</p>
-    </item>
-    <item>
-      <p>Selecione o usuário que você deseja excluir e pressione o botão <gui style="button">-</gui>, abaixo da lista de contas à esquerda, para excluir uma conta de usuário.</p>
-    </item>
-    <item>
-      <p>Cada usuário tem sua própria pasta pessoal para seus arquivos e configurações. Você pode escolher entre manter ou excluir essa pasta pessoal do usuário. Clique em <gui>Excluir arquivos</gui> se tem certeza de que ela não será mais usada e precisa liberar espaço em disco. Esses arquivos serão excluídos permanentemente. Eles não poderão ser recuperados. Talvez você queira fazer uma cópia de segurança dos arquivos em um disco externo ou CD antes de excluí-los.</p>
-    </item>
-  </steps>
-
+<steps>
+  <item><p>Clique no seu nome na barra superior e, então, clique na imagem ao lado do seu nome para abrir a janela <gui>Usuários</gui>.</p></item>
+  <item><p>Clique em <gui>Desbloquear</gui> no canto superior direito e digite sua senha para fazer alterações. Você tem que ser um usuário administrativo para excluir contas de usuário.</p></item>
+  <item><p>Selecione o usuário que você deseja excluir e clique no botão <gui style="button">-</gui>.</p></item>
+  <item><p>Cada usuário tem sua própria pasta pessoal para seus arquivos e configurações. Você pode escolher entre manter ou excluir essa pasta pessoal. Clique em <gui>Deletar arquivos</gui> se tem certeza de que ela não será mais usada e precisa liberar espaço em disco. Esses arquivos serão permanentemente excluídos. Não poderão ser recuperados. Talvez você queira fazer uma cópia de segurança dos arquivos em um disco externo ou CD antes de excluí-los.</p></item>
+</steps>
 </page>

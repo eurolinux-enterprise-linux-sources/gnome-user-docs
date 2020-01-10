@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="clock-timezone" xml:lang="nl">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="clock-timezone" xml:lang="nl">
 
   <info>
     <link type="guide" xref="clock"/>
-
+    <desc>Add other timezones so you can see what time it is in other cities.</desc>
     <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.16" date="2015-01-26" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Gnome-documentatieproject</name>
@@ -17,50 +14,24 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
-    <credit type="editor">
-       <name>Jim Campbell</name>
-       <email>jcampbell@gnome.org</email>
-    </credit>
-
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Kies als tijdzone uw huidige lokatie zodat u de juiste tijd heeft.</desc>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Uw tijdzone wijzigen</title>
+<title>Change your timezone</title>
 
-  <steps>
-    <item>
-      <p>Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht en begin met het intypen van <gui>Datum &amp; tijd</gui>.</p>
-    </item>
-    <item>
-      <p>Klik op <gui>Instellingen voor datum en tijd…</gui> om het paneel te openen.</p>
-    </item>
-    <item>
-      <p>Als <gui>Automatische tijdzone</gui> <gui>Aan</gui> staat, dan moet uw tijdzone automatisch bijgewerkt zijn als u een internetverbinding heeft. Om de tijdzone handmatig bij te werken dient u dit op <gui>Uit</gui> te zetten.</p>
-    </item>
-    <item>
-      <p>Klik op <gui>Tijdzone</gui> en kies op de kaart uw lokatie of zoek naar uw huidige plaats.</p>
-    </item>
-  </steps>
+<steps>
+  <item><p>Click on the clock in the middle of the top bar.</p></item>
+  <item><p>Select <gui>Date and Time Settings</gui>.</p></item>
+  <item><p>You may need to click <gui>Unlock</gui> and type the
+  <link xref="user-admin-explain">admin password</link>.</p></item>
+  <item><p>Click on your the location on the map, then select your current city
+  from the drop-down list.</p></item>
+</steps>
 
-  <p>De tijd zal automatisch worden bijgewerkt wanneer u een andere lokatie kiest. Misschien wilt u ook <link xref="clock-timezone">de tijdzone handmatig instellen</link>.</p>
+  <p>The time shown on the top bar will update automatically when you select a
+ different location.  The time in the window will be updated next time you
+ access the <gui>Date and Time Settings</gui> window.  You may also wish to
+ <link xref="clock-set">set the clock manually</link>.</p>
 
 </page>

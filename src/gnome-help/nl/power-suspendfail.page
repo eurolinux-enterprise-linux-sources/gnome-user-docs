@@ -4,12 +4,9 @@
   <info>
     <link type="guide" xref="power#problems"/>
     <link type="guide" xref="hardware-problems-graphics"/>
-    <link type="seealso" xref="hardware-driver"/>
-
     <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
-    <desc>Sommige computerhardware veroorzaakt problemen bij pauzestand.</desc>
+    <desc>Some computer hardware causes problems with suspend or hibernate.</desc>
 
     <credit type="author">
       <name>Gnome-documentatieproject</name>
@@ -21,40 +18,55 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
   </info>
 
-<title>Waarom wordt mijn computer niet meer actief nadat ik hem in de pauzestand heb gezet?</title>
+<title>Why does my computer not turn back on after I suspended it?</title>
 
-<p>Wanneer u uw computer in de <link xref="power-suspend">pauzestand</link> zet, en daarna weer activeert, kan de computer mogelijk niet werken zoals verwacht. Dit kan mogelijk veroorzaakt worden doordat uw hardware de pauzestand niet goed ondersteunt.</p>
+<p>If you <link xref="power-suspend">suspend</link> or <link xref="power-hibernate">hibernate</link> your computer, then try to resume it or
+turn it back on, you may find that it does not work as you expected. This could
+be because suspend and hibernate are not supported properly by your
+hardware.</p>
 
 <section id="resume">
-  <title>Mijn computer is in de pauzestand gezet en wordt niet meer actief</title>
-  <p>Wanneer u uw computer in de pauzestand heeft gezet en daarna op een toets of met uw muis klikt, zou de computer weer actief moeten worden en een scherm tonen waarin om uw wachtwoord gevraagd wordt. Als dit niet het geval is, probeer dan op de aan/uit-knop te drukken (u hoeft er alleen maar op te drukken en niet ingedrukt te houden).</p>
-  <p>Als dit niet helpt, controleer dan of de monitor aan staat en probeer het nogmaals door op een toets op het toetsenbord te drukken.</p>
-  <p>Als laatste redmiddel kunt u de computer uitzetten door de aan/uit-knop 5-10 seconden ingedrukt te houden. Hierdoor zal wel al het niet opgeslagen werk verloren gaan. Maar daarna zou u de computer weer gewoon moeten kunnen aanzetten.</p>
-  <p>Als dit telkens wanneer u de computer in de pauzestand zet gebeurt, dan kan het zijn dat de pauzestandfunctie niet werkt met uw hardware.</p>
+  <title>My computer is suspended and is not resuming</title>
+  <p>If you suspend your computer and then press a key or click the mouse, it
+  should wake up and display a screen asking for your password. If this does
+  not happen, try pressing the power button (do not hold it in, just press it
+  once).</p>
+  <p>If this still does not help, make sure that your computer's monitor is
+  switched on and try pressing a key on the keyboard again.</p>
+  <p>As a last resort, turn off the computer by holding in the power button for
+  5-10 seconds, although you will lose any unsaved work by doing this. You
+  should then be able to turn on the computer again.</p>
+  <p>If this happens every time you suspend your computer, the suspend
+  feature may not work with your hardware.</p>
   <note style="warning">
-    <p>Als uw computer stroom verliest en geen alternatieve stroombron heeft (zoals een werkende accu), dan zal deze uitgeschakeld worden.</p>
+    <p>If your computer loses power and does not have an alternative power
+    supply (such as a working battery), it will switch off.</p>
   </note>
 </section>
 
+<section id="hibernate">
+  <title>Geen van mijn toepassingen/documenten is geopend wanneer ik de computer weer aanzet</title>
+  <p>Als u uw computer in de slaapstand heeft gezet en hem daarna weer aanzet, maar geen van uw documenten of toepassingen is geopend, dan is waarschijnlijk het in de slaapstand zetten niet goed gegaan. Soms gebeurt dit vanwege een klein probleem en de volgende keer dat u de slaapstand gebruikt zal het wel lukken. Het kan ook gebeuren doordat u een software-update geïnstalleerd had waarvoor het nodig is de computer opnieuw te starten; in dit geval kan het zijn dat de computer werd afgesloten in plaats van in de slaapstand te belanden.</p>
+  <p>It is also possible that the computer is not capable of hibernating
+  because the hardware does not support it properly. This might be because of a
+  problem with Linux drivers for your hardware, for example. You can test this
+  by hibernating again and seeing if it works the second time. If it does not,
+  it is probably a problem with drivers on your computer.</p>
+</section>
+
 <section id="hardware">
-  <title>Mijn draadloze verbinding (of andere hardware) werkt niet wanneer ik de computer weer activeer</title>
-  <p>Als u uw computer in pauzestand zet en het weer hervat, dan kan het zijn dat uw internetverbinding, muis, of een ander apparaat niet meer correct werkt. Dit kan komen doordat het stuurprogramma van het apparaat de pauze- of slaapstand niet goed ondersteunt. Dit is een <link xref="hardware-driver">probleem met het stuurprogramma</link> en niet met het apparaat zelf.</p>
+  <title>My wireless connection (or other hardware) does not work when I wake
+  up my computer</title>
+  <p>If you suspend or hibernate your computer and then resume it again, you
+  may find that your internet connection, mouse, or some other device does not
+  work properly. This could be because the driver for the device does not
+  properly support suspend or hibernate. This is a <link xref="hardware-driver">problem with the driver</link> and not the device
+  itself.</p>
   <p>Als het apparaat een aan/uit-knop heeft, probeer het dan uit en weer aan te zetten. In de meeste gevallen zal het apparaat weer werken. Als het aangesloten is via een USB-kabel kunt u het apparaat afkoppelen en weer aansluiten en kijken of het dan werkt.</p>
-  <p>Als u het apparaat niet uit kunt zetten of af kunt koppelen, of als dit niet werkt, dan kan het nodig zijn om de computer opnieuw op te starten om te zorgen dat het apparaat weer werkt.</p>
+  <p>If you cannot turn off/unplug the device, or if this does not work, you
+  may need to restart your computer for the device to start working again.</p>
 </section>
 
 </page>

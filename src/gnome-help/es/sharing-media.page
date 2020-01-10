@@ -1,28 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="sharing-media" xml:lang="es">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="sharing-media" xml:lang="es">
   <info>
     <link type="guide" xref="sharing"/>
-    <link type="guide" xref="prefs-sharing"/>
+    <link type="guide" xref="settings-sharing"/>
 
-    <revision pkgversion="3.10" version="0.2" date="2013-11-02" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.14" date="2014-10-13" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+    <revision pkgversion="3.8.2" version="0.1" date="2013-05-11" status="draft"/>
 
     <credit type="author">
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
 
+    <desc>Compartir medios en su red local usando Rygel.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Compartir medios en su red local usando UPnP.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2011 - 2018</mal:years>
+      <mal:years>2011 - 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -60,38 +55,26 @@
 
   <steps>
     <item>
-      <p>Abra la vista de <gui xref="shell-introduction#activities">Actividades</gui> y empiece a escribir <gui>Compartición</gui>.</p>
+      <p>Pulse en su nombre en la barra superior y seleccione <gui>Configuración</gui>.</p>
     </item>
     <item>
-      <p>Pulse en <gui>Compartición</gui> para abrir el panel.</p>
+      <p>Abra <gui>Compartición</gui>.</p>
     </item>
     <item>
       <p>Si la<gui>Compartición</gui> está <gui>Apagada</gui>, <gui>Actívela</gui>.</p>
-
-      <note style="info"><p>Si puede editar el texto de debajo de <gui>Nombre del equipo</gui> puede <link xref="sharing-displayname">cambiar</link> el nombre de su equipo en la red.</p></note>
     </item>
     <item>
       <p>Seleccione <gui>Compartición de medios</gui>.</p>
     </item>
     <item>
-      <p>Active la <gui>Compartición multimedia</gui> (<gui>Encendido</gui>).</p>
+      <p>Active la opción <gui>Compartir medios en esta red</gui> (<gui>Encendido</gui>).</p>
     </item>
     <item>
-      <p>Las carpetas, <file>Música</file>, <file>Imágenes</file> y <file>Vídeos</file> se comparten de manera predeterminada. Para eliminar una de ellas, pulse la <gui>×</gui> junto al nombre de la carpeta.</p>
+      <p>Pulse <gui style="button">+</gui> para abrir la ventana <gui>Elegir una carpeta</gui>. Navegue <em>dentro</em> de la carpeta, por ejemplo <file>Música</file> en su carpeta <file>Personal</file> y pulse <gui style="button">Abrir</gui>. Repita esto para otras carpetas, por ejemplo <file>Imágenes</file> y <file>Vídeos</file>.</p>
     </item>
     <item>
-      <p>Para añadir otra carpeta, pulse <gui style="button">+</gui> para abrir la ventana <gui>Elegir una carpeta</gui>. Navegue <em>dentro</em> de la carpeta que quiera y pulse <gui style="button">Abrir</gui>.</p>
-    </item>
-    <item>
-      <p>Pulse <gui style="button">×</gui>. Ahora podrá explorar o reproducir los archivos de las carpetas que haya seleccionado usando el dispositivo externo.</p>
+      <p>Pulse <gui style="button">Cerrar</gui>. Ahora podrá explorar o reproducir los archivos de las carpetas que haya seleccionado usando el dispositivo externo.</p>
     </item>
   </steps>
-
-  <section id="networks">
-  <title>Redes</title>
-
-  <p>La sección <gui>Redes</gui> lista las redes a las que está actualmente conectado. Use el interruptor <gui>Encendido | Apagado</gui> junto a cada una para elegir qué medios se pueden compartir.</p>
-
-  </section>
 
 </page>

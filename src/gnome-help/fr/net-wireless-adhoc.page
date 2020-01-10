@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-adhoc" xml:lang="fr">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="net-adhoc" xml:lang="fr">
   <info>
     <link type="guide" xref="net-wireless"/>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
-    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -15,10 +12,6 @@
     <credit type="author">
       <name>Shaun McCance</name>
       <email>shaunm@gnome.org</email>
-    </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
     </credit>
 
     <desc>Utiliser une connexion ad-hoc pour permettre aux autres périphériques de se connecter à votre ordinateur et à ses connexions réseau.</desc>
@@ -40,13 +33,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Julien Hardelin</mal:name>
       <mal:email>jhardlin@orange.fr</mal:email>
-      <mal:years>2011, 2013</mal:years>
+      <mal:years>2011</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -72,40 +65,29 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Alexandre Franke</mal:name>
-      <mal:email>alexandre.franke@gmail.com</mal:email>
-      <mal:years>2015</mal:years>
-    </mal:credit>
   </info>
 
 <title>Création d'un point d'accès sans fil</title>
 
-  <p>You can use your computer as a wireless hotspot. This allows other devices
-  to connect to you without a separate network, and allows you to share an
-  internet connection you’ve made with another interface, such as to a wired
-  network or over the cellular network.</p>
+<p>Vous pouvez faire de votre ordinateur un point d'accès sans fil. Cela permet à d'autres périphériques de se connecter à vous sans créer un réseau séparé, et vous autorise à partager une connexion internet fonctionnelle avec une autre interface, comme un réseau filaire ou un réseau cellulaire.</p>
+
+<comment>
+<cite date="2012-02-19">shaunm</cite>
+<p>Things I'm not sure about: Is this actually ad-hoc? It seems to use the
+same icon. What happens if you have multiple wireless adapters? Ought to be
+able to share wireless to wireless, I think, but I don't know what the UI
+looks like. Also, does any of this work? I couldn't successfully test.</p>
+<p>Also, looks like there's no page to set the device name. Make one, then
+link below where it says the name of the network is your device name.</p>
+</comment>
 
 <steps>
-  <item>
-    <p>Open the <gui xref="shell-introduction#yourname">system menu</gui> from the right
-    side of the top bar.</p>
-  </item>
-  <item>
-    <p>Select
-    <gui><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-excellent-symbolic.svg" width="16" height="16"/>
-      Wi-Fi Not Connected</gui> or the name of the wireless network to which
-    you are already connected. The Wi-Fi section of the menu will expand.</p>
-  </item>
-  <item>
-    <p>Click <gui>Wi-Fi Settings</gui>.</p></item>
-  <item><p>Click the <gui>Use as Hotspot…</gui> button.</p></item>
+  <item><p>Cliquez sur l'icône réseau de la barre supérieure et sélectionnez <gui>Paramètres du réseau</gui>.</p></item>
+  <item><p>Sélectionnez <gui>Sans fil</gui> sur la gauche.</p></item>
+  <item><p>Cliquez sur le bouton <gui>Utiliser comme point d'accès</gui>.</p></item>
   <item><p>Si vous êtes déjà connecté à un réseau sans fil, il vous est demandé si vous souhaitez vous en déconnecter. Un adaptateur réseau sans fil unique ne peut se connecter à ou créer un seul réseau à la fois. Confirmez en cliquant sur <gui>Créer un nouveau réseau sans fil</gui>.</p></item>
 </steps>
 
-<p>A network name (SSID) and security key are automatically generated.
-The network name will be based on the name of your computer. Other devices
-will need this information to connect to the hotspot you’ve just created.</p>
+<p>Un nom de réseau (SSID) et une clé de chiffrement sont générés automatiquement. Le nom du réseau est basé sur le nom de votre ordinateur. Les autres périphériques ont besoin de ces informations pour se connecter au réseau que vous venez de créer.</p>
 
 </page>

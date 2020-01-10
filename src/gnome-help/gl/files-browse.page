@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-browse" xml:lang="gl">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-browse" xml:lang="gl">
+
 
   <info>
-    <link type="guide" xref="files#common-file-tasks"/>
+    <link type="guide" xref="files" group="#first"/>
     <link type="seealso" xref="files-copy"/>
+    <desc>Xestione e organice ficheiros co xestor de ficheiros.</desc>
 
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-16" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -25,49 +25,41 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Xestione e organice ficheiros co xestor de ficheiros.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2018</mal:years>
+      <mal:years>2011, 2012.</mal:years>
     </mal:credit>
   </info>
 
 <title>Explorar ficheiros e cartafoles</title>
 
+<comment>
+	<p>This page is a feature overview. There should be a greater visual
+	separation between features. Small illustrative figures should be used
+	to display these features where appropriate, and video demonstrations of
+	some of the features might be useful too. Explain how you can add things to
+	the sidebar (link to a topic or explain it here).</p>
+</comment>
+
 <p>Use o aplicativo <app>Ficheiros</app> para navegar polos ficheiros do seu cartafol persoal, en dispositivos externos, en <link xref="nautilus-connect">servidores de ficheiros</link> e no sistema de ficheiros do seu computador.</p>
 
-<p>Navegue polos ficheiros seleccionando o aplicativo <app>Ficheiros</app> desde a vista de <gui xref="shell-introduction#activities">Actividades</gui>. Ou, busque cartafoles e dispositivos na vista do mesmo xeito que vostede <link xref="shell-apps-open">busca por aplicativos</link>.</p>
+<p>Navegue polos ficheiros seleccionando o aplicativo <app>Ficheiros</app> desde a vista de <gui>Actividades</gui>. Ou, busque cartafoles e dispositivos na vista do mesmo xeito que vostede <link xref="shell-apps-open">busca por aplicativos</link>. Aparecerán baixo a cabeceira <gui>Lugares e dispositivos</gui>.</p>
 
 <section id="files-view-folder-contents">
   <title>Explorar o contido dos carafoles</title>
 
-<p>No xestor de ficheiros, prema dúas veces sobre calquera cartafol para ver os seus contidos e prema dúas veces ou <link xref="mouse-middleclick">clic co botón medio</link> sobre calquera ficheiro para abrilo co aplicativo predeterminado para dito ficheiro. Se usa o botón medio o cartafol abrirase nunha lapela nova. Tamén pode premer co botón dereito sobre el para abrilo nunha nova lapela ou nunha nova xanela.</p>
+<p>No xestor de ficheiros, prema dúas veces sobre calquera cartafol para ver os seus contidos e prema dúas veces sobre calquera ficheiro para abrilo co aplicativo predeterminado para dito ficheiro. Tamén pode premer co botón dereito sobre el para abrilo nunha nova lapela ou nunha nova xanela.</p>
 
 <p>Ao examinar os ficheiros nun cartafol pode <link xref="files-preview">previsualizar rapidamente cada ficheiro</link> rapidamente premendo a barra espaciadora para asegurarse de que ten o ficheiro correcto antes de abrilo, copialo ou eliminalo.</p>
 
-<p>A <em>barra de ruta</em> sobre a lista de ficheiros e cartafoles móstralle o cartafol que está vendo, incluíndo os cartafoles superiores ate o seu cartafol persoal, a raíz do dispositivo extraíbel ou a raíz do seu sistema de ficheiros. Prema no cartafol superior na barra de ruta para ir a dito cartafol. Prema co botón dereito sobre a barra de ruta para abrilo nunha lapela ou xanela nova, ou para acceder ás súas propiedades.</p>
+<p>A barra de ruta sobre a lista de ficheiros e cartafoles móstralle o cartafol que está vendo, incluíndo os cartafoles superiores até o seu cartafol persoal, a raíz do dispositivo extraíbel ou a raíz do seu sistema de ficheiros. Prema no cartafol superior na barra de ruta para ir a dito cartafol. Prema co botón dereito sobre a barra de ruta para abrilo nunha lapela ou xanela nova, copialo ou movelo ou acceder ás súas propiedades.</p>
 
-<p>If you want to quickly <link xref="files-search">search for a file</link>,
-in or below the folder you are viewing, start typing its name. A <em>search
-bar</em> will appear at the top of the window and only files which match your
-search will be shown. Press <key>Esc</key> to cancel the search.</p>
+<p>Se quere saltar rapidamente a un ficheiro no cartafol que está vendo, empece a escribir o seu nome. Aparecerá unha caixa de busca na parte superior da xanela e realzarase o primeiro ficheiro que coincida coa súa busca. Prema a frecha «abaixo», ou desprácese co rato para saltar ao seguinte ficheiro que coincida coa súa busca.</p>
 
-<p>You can quickly access common places from the <em>sidebar</em>. If you do
-not see the sidebar, click <gui>Files</gui> in the top bar and then select
-<gui>Sidebar</gui>. You can add bookmarks to folders that you use often and
-they will appear in the sidebar. Drag a folder to the sidebar, and drop it over
-<gui>New bookmark</gui>, which appears dynamically, or click the window menu 
-and then select <gui style="menuitem">Bookmark this Location</gui>.</p>
+<p>Pode acceder a lugares comúns de forma rápida desde o panel lateral. Se non pode ver o panel lateral, prema a frecha cara <media type="image" src="figures/go-down.png">abaixo</media> na esquina superior esquerda da xanela e seleccione <gui>Mostrar barra lateral</gui>. Tamén pode engadir marcadores aos cartafoles que usa a miúdo, desta forma aparecerán no panel lateral. Use o menú <gui>Marcadores</gui> para facer isto, ou simplemente arrastre un cartafol á barra lateral.</p>
 
 </section>
-
 </page>

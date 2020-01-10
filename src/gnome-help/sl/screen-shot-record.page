@@ -2,11 +2,11 @@
 <page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="screen-shot-record" xml:lang="sl">
 
   <info>
+
     <link type="guide" xref="tips"/>
 
-    <revision pkgversion="3.6.1" date="2012-11-10" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.14.0" date="2015-01-14" status="review"/>
+    <desc>Zajemite sliko ali posnemite videoposnetek dogajanja na svojem namizju.</desc>
+    <revision pkgversion="3.6.1" version="0.2" date="2012-11-10" status="review"/>
 
     <credit type="author copyright">
       <name>Tiffany Antopolski</name>
@@ -22,110 +22,69 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-      <years>2015</years>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Take a picture or record a video of what is happening on your
-    screen.</desc>
   </info>
 
 <title>Zaslonske slike in posnetki</title>
 
-  <p>You can take a picture of your screen (a <em>screenshot</em>) or record a
-  video of what is happening on the screen (a <em>screencast</em>). This is
-  useful if you want to show someone how to do something on the computer, for
-  example. Screenshots and screencasts are just normal picture and video files,
-  so you can email them and share them on the web.</p>
+  <p>Zajamete lahko sliko svojega zaslona (<em>zaslonsko sliko</em>) ali posnamete videoposnetek dogajanja na zaslonu (<em>zaslonski posnetek</em>). To je uporabno, če želite nekomu drugemu pokazati, kako nekaj narediti z računalnikom. Zaslonske slike in posnetki so običajne slikovne/video datoteke, zato jih lahko pošljete preko e-pošte in delite preko spleta.</p>
 
 <section id="screenshot">
-  <title>Zajeme zaslonske slike</title>
+ <title>Zajeme zaslonske slike</title>
+<steps>
+<item><p>V pregledu <gui>Dejavnosti</gui> odprite <app>Zaslonska slika</app>.</p></item>
 
-  <steps>
-    <item>
-      <p>Open <app>Screenshot</app> from the
-      <gui xref="shell-introduction#activities">Activities</gui> overview.</p>
-    </item>
-    <item>
-      <p>In the <app>Screenshot</app> window, select whether to grab the whole
-      screen, the current window, or an area of the screen. Set a delay if you
-      need to select a window or otherwise set up your desktop for the
-      screenshot. Then choose any effects you want.</p>
-    </item>
-    <item>
-       <p>Kliknite <gui>Zajemi zaslonsko sliko</gui>.</p>
-       <p>V primeru da ste izbrali <gui>Izbor področja za zajem</gui>, se bo kazalec spremenil v križec. Kliknite in vlecite področje, ki ga želite na zaslonski sliki.</p>
-    </item>
-    <item>
-      <p>V oknu <gui>Shrani zaslonsko sliko</gui> izberite ime datoteke in mapo ter kliknite <gui>Shrani</gui>.</p>
-      <p>Namesto tega lahko zaslonski posnetek uvozite neposredno v program za urejanje slik brez predhodnega shranjevanja. Kliknite <gui>Kopiraj na odložišče</gui> in nato prilepite sliko v drug program ali povlecite sličico zaslonske slike v ta program.</p>
-    </item>
-  </steps>
+<item>
+ <p>In the <app>Take Screenshot</app> window, select whether to grab the
+ whole screen, the current window, or an area of the screen. Set a delay
+ if you need to select a window or otherwise set up your desktop for
+ the screenshot. Then choose any effects you want.</p>
+</item>
 
-  <section id="keyboard-shortcuts">
-    <title>Tipkovne bližnjice</title>
+<item>
+  <p>Kliknite <gui>Zajemi zaslonsko sliko</gui>.</p>
+  <p>V primeru da ste izbrali <gui>Izbor področja za zajem</gui>, se bo kazalec spremenil v križec. Kliknite in vlecite področje, ki ga želite na zaslonski sliki.</p>
+</item>
 
-    <p>Hitro zajemite sliko namizja, okna ali področja z uporabo naslednjih tipkovnih bližnjic:</p>
+<item>
+  <p>V oknu <gui>Shrani zaslonsko sliko</gui> izberite ime datoteke in mapo ter kliknite <gui>Shrani</gui>.</p>
+  <p>Namesto tega lahko zaslonski posnetek uvozite neposredno v program za urejanje slik brez predhodnega shranjevanja. Kliknite <gui>Kopiraj na odložišče</gui> in nato prilepite sliko v drug program ali povlecite sličico zaslonske slike v ta program.</p>
+</item>
+</steps>
 
-    <list style="compact">
-      <item>
-        <p><key>Prt Scrn</key> za zajem slike namizja.</p>
-      </item>
-      <item>
-        <p><keyseq><key>Alt</key><key>Prt Scrn</key></keyseq> za zajem slike okna.</p>
-      </item>
-      <item>
-        <p><keyseq><key>Shift</key><key>Prt Scrn</key></keyseq> za zajem slike izbranega področja.</p>
-      </item>
-    </list>
-
-    <p>When you use a keyboard shortcut, the image is automatically saved in
-    your <file>Pictures</file> folder in your home folder with a file name that
-    begins with <file>Screenshot</file> and includes the date and time it was
-    taken.</p>
-    <note style="note">
-      <p>If you do not have a <file>Pictures</file> folder, the images will be
-      saved in your home folder instead.</p>
-    </note>
-    <p>Lahko tudi držite <key>Ctrl</key> s katerokoli od zgornjih bližnjic za kopiranje slike zaslona na odložišče namesto shranjevanja.</p>
-  </section>
-
+<note style="tip">
+  <title>Tipkovne bližnjice</title>
+  <p>Hitro zajemite sliko namizja, okna ali področja z uporabo naslednjih tipkovnih bližnjic:</p>
+  <list style="compact">
+    <item><p><key>Prt Scrn</key> za zajem slike namizja.</p></item>
+    <item><p><keyseq><key>Alt</key><key>Prt Scrn</key></keyseq> za zajem slike okna.</p></item>
+    <item><p><keyseq><key>Shift</key><key>Prt Scrn</key></keyseq> za zajem slike izbranega področja.</p></item>
+  </list>
+  <p>Ko uporabite tipkovno bližnjico, je slika samodejno shranjena v vašo mapo Slike z imenom, ki se začne s "Zaslonska slika" in vključuje datum in čas zajema slike.</p>
+  <p>Lahko tudi držite <key>Ctrl</key> s katerokoli od zgornjih bližnjic za kopiranje slike zaslona na odložišče namesto shranjevanja.</p>
+</note>
 </section>
 
-<section id="screencast">
-  <title>Ustvarjanje zaslonskega posnetka</title>
 
+<section id="screencast">
+<title>Ustvarjanje zaslonskega posnetka</title>
   <p>Posnamete lahko tudi videoposnetek dogajanja na zaslonu:</p>
 
-  <steps>
-    <item>
-      <p>Press
-      <keyseq><key>Ctrl</key><key>Alt</key><key>Shift</key><key>R</key></keyseq>
-      to start recording what is on your screen.</p>
-      <p>A red circle is displayed in the top right corner of the screen
-      when the recording is in progress.</p>
-    </item>
-    <item>
-      <p>Once you have finished, press
-      <keyseq><key>Ctrl</key><key>Alt</key><key>Shift</key><key>R</key></keyseq>
-      again to stop the recording.</p>
-    </item>
-    <item>
-      <p>The video is automatically saved in your <file>Videos</file> folder
-      in your home folder, with a file name that starts with
-      <file>Screencast</file> and includes the date and time it was taken.</p>
-    </item>
-  </steps>
+<steps>
+<item>
+  <p>Pritisnite <keyseq><key>Ctrl</key><key>Alt</key><key>Shift</key><key>R</key></keyseq> za začetek snemanja vsebine na zaslonu.</p>
+  <p>Medtem ko snemanje poteka, je v spodnjem desnem kotu zaslona prikazan rdeč krog. Rdeči kot ni prikazan na videoposnetku.</p>
+</item>
 
-  <note style="note">
-    <p>If you do not have a <file>Videos</file> folder, the videos will be
-    saved in your home folder instead.</p>
-  </note>
+<item>
+  <p>Ko ste končali, pritisnite <keyseq><key>Ctrl</key><key>Alt</key><key>Shift</key><key>R</key></keyseq> za zaustavitev snemanja.</p>
+</item>
 
+<item>
+  <p>Ta video je samodejno shranjen v vaši mapi Video z imenom datoteke, ki se začne s "Screencast" in vsebuje datum in čas zajema.</p>
+</item>
+</steps>
 </section>
 
 </page>

@@ -1,123 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="power-closelid" xml:lang="el">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="power-closelid" xml:lang="el">
 
   <info>
     <link type="guide" xref="power"/>
     <link type="seealso" xref="power-suspendfail"/>
-    <link type="seealso" xref="power-suspend"/>
-
     <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
-    <revision pkgversion="3.10" date="2013-11-08" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-    <revision pkgversion="3.26" date="2017-09-30" status="candidate"/>
 
+    <desc>Οι φορητοί υπολογιστές αδρανοποιούνται όταν κλείνετε το καπάκι, για να αποθηκεύσουν ισχύ.</desc>
     <credit type="author">
       <name>Έργο Τεκμηρίωσης GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
-    <credit type="author editor">
+    <credit type="editor">
       <name>Ekaterina Gerasimova</name>
       <email>kittykat3756@gmail.com</email>
     </credit>
-    <credit type="author editor">
-      <name>Petr Kovar</name>
-      <email>pknbe@volny.cz</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Οι φορητοί υπολογιστές αδρανοποιούνται όταν κλείνετε το καπάκι, για να αποθηκεύσουν ισχύ.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
-      <mal:email>team@gnome.gr</mal:email>
-      <mal:years>2009-2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
       <mal:email>dmtrs32@gmail.com</mal:email>
-      <mal:years>2012-2015</mal:years>
+      <mal:years>2012, 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:name> Φώτης Τσάμης</mal:name>
       <mal:email>ftsamis@gmail.com</mal:email>
       <mal:years>2009</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:name> Μάριος Ζηντίλης</mal:name>
       <mal:email>m.zindilis@dmajor.org</mal:email>
       <mal:years>2009, 2010</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Θάνος Τρυφωνίδης</mal:name>
-      <mal:email>tomtryf@gnome.org</mal:email>
-      <mal:years>2012-2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Μαρία Μαυρίδου</mal:name>
-      <mal:email>mavridou@gmail.com</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:name> Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
     </mal:credit>
   </info>
 
-  <title>Γιατί ο υπολογιστής μου απενεργοποιείται όταν κλείνω το καπάκι;</title>
+<title>Γιατί ο υπολογιστής μου απενεργοποιείται όταν κλείνω το καπάκι;</title>
 
-  <p>When you close the lid of your laptop, your computer will
-  <link xref="power-suspend"><em>suspend</em></link> in order to save power.
-  This means that the computer is not actually turned off — it has just gone to
-  sleep. You can resume it by opening the lid. If it does not resume, try
-  clicking the mouse or pressing a key. If that still does not work, press the
-  power button.</p>
+<p>Όταν κλείνετε το καπάκι του φορητού σας, ο υπολογιστής σας θα <link xref="power-suspend"><em>ανασταλεί</em></link> για να εξοικονομήσει ισχύ. Αυτό σημαίνει ότι ο υπολογιστής δεν είναι στην πραγματικότητα ανενεργός - έχει απλά μεταβεί σε αδρανοποίηση. Μπορείτε να συνεχίσετε ανοίγοντας το καπάκι. Εάν δεν συνεχίσει, δοκιμάστε πατώντας το ποντίκι ή πατώντας ένα πλήκτρο. Εάν δεν δουλεύει ακόμα, πατήστε το κουμπί ισχύος.</p>
 
-  <p>Μερικοί υπολογιστές δεν μπορούν να ανασταλούν σωστά, κανονικά επειδή το υλικό τους δεν υποστηρίζεται πλήρως από το λειτουργικό σύστημα (για παράδειγμα, οι οδηγοί Linux είναι ατελείς). Σε αυτήν την περίπτωση, μπορεί να βρείτε ότι δεν μπορείτε να συνεχίσετε τον υπολογιστή σας αφού έχετε κλείσει το καπάκι. Μπορείτε να δοκιμάσετε <link xref="power-suspendfail">να ρυθμίσετε το πρόβλημα με την αναστολή</link>, ή μπορείτε να αποτρέψετε τον υπολογιστή από την προσπάθεια αναστολής όταν κλείνετε το καπάκι.</p>
+<p>Μερικοί υπολογιστές δεν μπορούν να ανασταλούν σωστά, κανονικά επειδή το υλικό τους δεν υποστηρίζεται πλήρως από το λειτουργικό σύστημα (για παράδειγμα, οι οδηγοί Λίνουξ είναι ατελείς). Σε αυτήν την περίπτωση, μπορεί να βρείτε ότι δεν μπορείτε να συνεχίσετε τον υπολογιστή σας αφού έχετε κλείσει το καπάκι. Μπορείτε να δοκιμάσετε <link xref="power-suspendfail">να ρυθμίσετε το πρόβλημα με την αναστολή</link>, ή μπορείτε να αποτρέψετε τον υπολογιστή από την προσπάθεια αναστολής όταν κλείνετε το καπάκι.</p>
 
 <section id="nosuspend">
-  <title>Σταματήστε τον υπολογιστή από αναστολή όταν το καπάκι είναι κλειστό</title>
-
-  <note style="important">
-    <p>Αυτές οι οδηγίες θα δουλέψουν μόνο αν χρησιμοποιείτε το <app>systemd</app>. Επικοινωνήστε με τη διανομή σας για περισσότερες πληροφορίες.</p>
-  </note>
-
-  <note style="important">
-    <p>You need to have <app>Tweaks</app> installed on your computer to
-    change this setting.</p>
-    <if:if xmlns:if="http://projectmallard.org/if/1.0/" test="action:install">
-      <p><link style="button" action="install:gnome-tweaks">Install
-      <app>Tweaks</app></link></p>
-    </if:if>
-  </note>
-
-  <p>Αν δεν θέλετε ο υπολογιστής σας να αναστέλλεται όταν κλείνετε το καπάκι, μπορείτε να απενεργοποιήσετε αυτή την συμπεριφορά.</p>
-
-  <note style="warning">
-    <p>Να είσαστε πολύ προσεκτικοί εάν αλλάζετε αυτήν τη ρύθμιση. Μερικοί φορητοί μπορεί να υπερθερμανθούν, εάν αφήνονται να εκτελούνται με το καπάκι κλειστό, ειδικά εάν είναι σε μια περιορισμένη θέση όπως σε ένα σακίδιο.</p>
-  </note>
-
-  <steps>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui>
-      overview and start typing <gui>Tweaks</gui>.</p>
-    </item>
-    <item>
-      <p>Click <gui>Tweaks</gui> to open the application.</p>
-    </item>
-    <item>
-      <p>Κάντε κλικ στην καρτέλα <gui>Ενέργεια</gui>.</p>
-    </item>
-    <item>
-      <p>Switch <gui>Suspend when laptop lid is closed</gui> to
-      <gui>OFF</gui>.</p>
-    </item>
-    <item>
-      <p>Close the <gui>Tweaks</gui> window.</p>
-    </item>
-  </steps>
-
+ <title>Σταματήστε τον υπολογιστή από αναστολή όταν το καπάκι είναι κλειστό</title>
+ <p>Εάν δεν θέλετε ο υπολογιστής να ανασταλεί όταν κλείνετε το καπάκι, μπορείτε να αλλάξετε τις ρυθμίσεις για αυτήν τη συμπεριφορά. Για να ορίσετε τον υπολογιστή να αδειάζει την οθόνη, αντί να την αναστέλλει, όταν τον καπάκι είναι κλειστό:</p>
+ <note style="warning">
+   <p>Να είσαστε πολύ προσεκτικοί εάν αλλάζετε αυτήν τη ρύθμιση. Μερικοί φορητοί μπορεί να υπερθερμανθούν, εάν αφήνονται να τρέχουν με το καπάκι κλειστό, ειδικά εάν είναι σε μια περιορισμένη θέση όπως σε ένα σακίδιο.</p>
+ </note>
+ <steps>
+   <item>
+     <p>Ανοίξτε την εφαρμογή <app>τερματικός</app> από την επισκόπηση <gui>ενέργειες</gui>.</p>
+   </item>
+   <item>
+     <p>Για να αλλάξετε τη χρησιμοποιούμενη ρύθμιση όταν τρέχετε με μπαταρία, πληκτρολογήστε αυτήν την εντολή και πατήστε <key>εισαγωγή</key>:</p>
+     <screen its:translate="no">
+       gsettings set org.gnome.settings-daemon.plugins.power lid-close-battery-action blank
+     </screen>
+   </item>
+   <item>
+     <p>Για να αλλάξετε τη χρησιμοποιούμενη ρύθμιση όταν τρέχετε με εναλλασσόμενο ρεύμα, πληκτρολογήστε αυτήν την εντολή και πατήστε <key>εισαγωγή</key>:</p>
+     <screen its:translate="no">
+       gsettings set org.gnome.settings-daemon.plugins.power lid-close-ac-action blank
+     </screen>
+   </item>
+ </steps>
 </section>
 
 </page>

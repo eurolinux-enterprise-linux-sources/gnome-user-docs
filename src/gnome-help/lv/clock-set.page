@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="clock-set" xml:lang="lv">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="clock-set" xml:lang="lv">
 
   <info>
-    <link type="guide" xref="clock" group="#first"/>
-
+    <link type="guide" xref="clock"/>
+    <desc>Klikšķiniet uz pulksteņa augšējā joslā un izvēlieties <gui>Datuma un laika iestatījumi</gui>, lai mainītu datumu/laiku.</desc>
     <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>GNOME dokumentācijas projekts</name>
@@ -18,32 +16,31 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Lietojiet <gui>Datuma un laika iestatījumi</gui>, lai izmainītu datumu vai laiku.</desc>
   </info>
 
 <title>Mainīt datumu un laiku</title>
 
   <p>Ja datums un laiks, kas attēloti augšējā joslā, ir nepareizi, vai arī ir nepareizā formātā, jūs tos varat mainīt:</p>
 
-  <steps>
-    <item>
-      <p>Atveriet <gui xref="shell-introduction#activities">Aktivitāšu</gui> pārskatu un sāciet rakstīt <gui>Datums un laiks</gui>.</p>
-    </item>
-    <item>
-      <p>Spiediet <gui>Datums un laiks</gui>, lai atvērtu paneli.</p>
-    </item>
-    <item>
-      <p>Ja <gui>Automātiskais datums un laiks</gui> ir iestatīts uz <gui>|</gui>, datums un laiks tiks atjaunināta automātiski, kamēr ir savienojums ar internetu. Lai datumu un laiku atjauninātu manuāli, pārslēdziet to uz <gui>◯</gui>.</p>
-    </item> 
-    <item>
-      <p>Spiediet <gui>Datums un laiks</gui>, lai pielāgotu laiku un datumu.</p>
-    </item>
-    <item>
-      <p>Jūs varat iestatīt, kā stunda ir attēlota, izvēloties <gui>24 stundu</gui> vai <gui>AM/PM</gui> <gui>Laika formātu</gui>.</p>
-    </item>
-  </steps>
-
-  <p>Jūs varētu vēlēties <link xref="clock-timezone">manuāli iestatīt laika joslu</link>.</p>
+<steps>
+ <item>
+  <p>Spiediet uz pulksteņa augšējās joslas vidū un izvēlieties <gui>Datuma un laika iestatījumi</gui>.</p>
+ </item>
+ <item>
+  <p>Iespējams, ka vajadzēs spiest <gui>Atslēgt</gui> un ievadīt <link xref="user-admin-explain">administratora paroli</link>.</p>
+ </item>
+ <item>
+  <p>Adjust the date and time by clicking on the arrows to choose the  hour and
+  minute. You can choose the year, month and day from the drop-down lists.</p>
+ </item>
+ <item>
+  <p>Ja vēlaties, jūs varat likt pulkstenim pašam uzzināt precīzu laiku, ieslēdzot <gui>Tīkla laiks</gui>.</p>
+  <p>Kad <em>Tīkla laiks</em> ir ieslēgts, dators periodiski sinhronizēs tā pulksteni ar ļoti precīzu pulksteni internetā, tādējādi jums tas nebūs jādara pašrocīgi. Tas strādās tikai tad, ja būs savienojums ar internetu.</p>
+ </item>
+ <item>
+  <p>You can also change how the hour is displayed by selecting <gui>24-hour</gui>
+  or <gui>AM/PM</gui> format.</p>
+ </item>
+</steps>
 
 </page>

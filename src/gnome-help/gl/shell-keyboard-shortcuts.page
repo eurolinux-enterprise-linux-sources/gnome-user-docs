@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="tip" version="1.0 ui/1.0" id="shell-keyboard-shortcuts" xml:lang="gl">
-
+<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="tip" id="shell-keyboard-shortcuts" xml:lang="gl">
   <info>
     <link type="guide" xref="tips"/>
     <link type="guide" xref="keyboard"/>
-    <link type="guide" xref="shell-overview#apps"/>
+    <link type="guide" xref="shell-overview"/>
     <link type="seealso" xref="keyboard-key-super"/>
+    <desc>Moverse polo escritorio usando o teclado.</desc>
 
     <revision pkgversion="3.8.0" version="0.4" date="2013-04-23" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.20" date="2016-08-13" status="candidate"/>
 
     <credit type="author copyright">
       <name>Shaun McCance</name>
@@ -24,15 +22,12 @@
       <name>Ekaterina Gerasimova</name>
       <email>kittykat3756@gmail.com</email>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Moverse polo escritorio usando o teclado.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2018</mal:years>
+      <mal:years>2011, 2012.</mal:years>
     </mal:credit>
   </info>
 
@@ -61,21 +56,12 @@
       <p>Este atallo de teclado usa <key>`</key> nos teclados estadounidenses, onde a tecla <key>`</key> está enriba da tecla <key>Tab</key>. En calquera outro teclado, o atallo úsase coa técla <key>Super</key> e a tecla enriba de <key>Tab</key>.</p>
     </td>
   </tr>
-  <tr xml:id="alt-escape">
-    <td><p><keyseq><key>Alt</key><key>Esc</key></keyseq></p></td>
-    <td>
-      <p>Switch between windows in the current workspace. Hold down
-      <key>Shift</key> for reverse order.</p>
-    </td>
-  </tr>
   <tr xml:id="ctrl-alt-tab">
     <!-- To be updated to <key>Tab</key> in the future. -->
     <td><p><keyseq><key>Ctrl</key><key>Alt</key><key>Tab</key></keyseq></p></td>
     <td>
-      <p>Give keyboard focus to the top bar. In the <gui>Activities</gui>
-      overview, switch keyboard focus between the top bar, dash, windows
-      overview, applications list, search field, and message tray. Use the
-      arrow keys to navigate.</p>
+      <p>Enfocar o teclado na barra superior. Na vista de <gui>Actividades</gui>, troque o foco do teclado entre a barra superior, dash, vista de xanelas, lista de aplicativos e campo de busca.</p>
+      <p>Actualmente non é posíbel usar as teclas de frechas para navegar pola vista previa das xanelas. Para cambiar entre xanelas, saia da vista previa e use <keyseq><key>Super</key><key>Tab</key></keyseq> e <keyseq><key>Super</key><key>`</key></keyseq>.</p>
     </td>
   </tr>
   <tr xml:id="super-a">
@@ -83,34 +69,26 @@
     <td><p>Mostrar a lista de aplicativos.</p></td>
   </tr>
   <tr xml:id="super-updown">
-    <td><p><keyseq><key>Super</key><key>PevPax</key></keyseq> ou<keyseq><key>Ctrl</key><key>Alt</key><key>Arriba</key></keyseq>, e <keyseq><key>Super</key><key>AvPax</key></keyseq> ou <keyseq><key>Ctrl</key><key>Alt</key><key>Abaixo</key></keyseq></p></td>
+    <td><p><keyseq><key>Super</key><key>RePáx</key></keyseq> e <keyseq><key>Super</key><key>AvPáx</key></keyseq></p></td>
     <td><p><link xref="shell-workspaces-switch">Cambiar entre os espazos de traballo</link></p></td>
   </tr>
   <tr xml:id="super-shift-updown">
     <td><p><keyseq><key>Super</key><key>Maiús</key><key>RePáx</key></keyseq> e <keyseq><key>Super</key><key>Maiús</key><key>AvPáx</key></keyseq></p></td>
     <td><p><link xref="shell-workspaces-movewindow">Mover as xanelas a un espazo de traballo diferente</link>.</p></td>
   </tr>
-  <tr xml:id="super-shift-left">
-    <td><p><keyseq><key>Super</key><key>Maiús</key><key>←</key></keyseq></p></td>
-    <td><p>Mover a xanela actual ao monitor da esquerda.</p></td>
-  </tr>
-  <tr xml:id="super-shift-right">
-    <td><p><keyseq><key>Super</key><key>Maiús</key><key>→</key></keyseq></p></td>
-    <td><p>Mover a xanela actual ao monitor da dereita.</p></td>
-  </tr>
   <tr xml:id="ctrl-alt-Del">
     <td><p><keyseq><key>Ctrl</key><key>Alt</key><key>Supr</key></keyseq></p></td>
-    <td><p><link xref="shell-exit">Power Off</link>.</p></td>
+    <!-- TODO: test, as design team assigns this to 'power off'. -->
+    <td><p><link xref="shell-exit">Saír da sesión</link>.</p></td>
   </tr>
   <tr xml:id="ctrl-alt-l">
-    <td><p><keyseq><key>Super</key><key>L</key></keyseq></p></td>
+    <!-- May be renamed to Super+L in the future. -->
+    <td><p><keyseq><key>Alt</key><key>F2</key></keyseq></p></td>
     <td><p><link xref="shell-exit#lock-screen">Bloquear a pantalla.</link></p></td>
   </tr>
   <tr xml:id="super-m">
     <td><p><keyseq><key>Super</key><key>M</key></keyseq></p></td>
-    <td><p>Open <link xref="shell-notifications#messagetray">the message
-    tray</link>. Press <keyseq><key>Super</key><key>M</key></keyseq> again or
-    <key>Esc</key> to close.</p></td>
+    <td><p>Abra <link xref="shell-notifications#messagingtray">a bandexa de mensaxaría</link>. prema <keyseq><key>Super</key><key>M</key></keyseq> de novo ou <key>Esc</key> para pechala.</p></td>
   </tr>
 </table>
 

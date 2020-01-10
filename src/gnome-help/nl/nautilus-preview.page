@@ -4,8 +4,9 @@
   <info>
     <link type="guide" xref="nautilus-prefs" group="nautilus-preview"/>
 
+    <desc>Control when thumbnails are used for files.</desc>
+
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-30" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -15,41 +16,38 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Bepaal wanneer er miniaturen voor bestanden zullen worden gebruikt.</desc>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
   </info>
 
-<title>Voorkeuren voor voorbeelden in bestandsbeheer</title>
+<title>File manager preview preferences</title>
 
-<p>Bestandsbeheer maakt miniaturen aan om voorbeelden van afbeeldingen, video's, en tekstbestanden  weer te geven. Voor grote bestanden of bestanden op een netwerk kunnen miniaturen traag zijn, dus kunt u bepalen of er voorbeelden worden getoond of niet. Klik in de bovenbalk op <gui>Bestanden</gui>, kies <gui>Voorkeuren</gui> en daarna het tabblad <gui>Voorbeelden</gui>.</p>
+<p>The file manager creates thumbnails to preview image, video, and text
+files. Thumbnail previews can be slow for large files or over networks, so
+you can control when previews are made. Click <gui>Files</gui> in the top bar,
+pick <gui>Preferences</gui> and select the <gui>Preview</gui> tab.</p>
 
 <terms>
   <item>
-    <title><gui>Bestanden</gui></title>
-    <p>Standaard worden voorbeelden <gui>alleen voor lokale bestanden</gui> gebruikt, de bestanden op uw computer of op aangekoppelde externe apparaten. U kan deze functie op <gui>Altijd</gui> of <gui>Nooit</gui> instellen. De bestandsbeheerder kan via een lokaal netwerk of het internet <link xref="nautilus-connect">door bestanden op andere computers bladeren</link> . Als u regelmatig door bestanden op een lokaal netwerk bladert, en als het netwerk een hoge bandbreedte heeft, dan zou u de optie voor voorbeelden op <gui>Altijd</gui> kunnen instellen.</p>
-    <p>Daarnaast kunt u de instelling <gui>Alleen voor bestanden kleiner dan</gui> gebruiken om de grootte van de bestanden te beperken waarvan miniaturen worden weergeven.</p>
+    <title><gui>Files</gui></title>
+    <p>By default, all previews are done for <gui>Local Files Only</gui>, those
+    on your computer or connected external drives. You can set this feature to
+    <gui>Always</gui> or <gui>Never</gui>. The file manager can
+    <link xref="nautilus-connect">browse files on other computers</link> over
+    a local area network or the internet. If you often browse files over a local
+    area network, and the network has high bandwidth, you may want to set the
+    preview option to <gui>Always</gui>.</p>
+    <p>In addition, you can use the <gui>Only for files smaller than</gui>
+    setting to limit the size of files previewed.</p>
   </item>
   <item>
-    <title><gui>Mappen</gui></title>
-    <p>Als u de bestandsgrootte toont in een <link xref="nautilus-list">kolom in de lijstweergave</link> of <link xref="nautilus-display#icon-captions">pictogrambijschrift</link>, dan zal bij mappen getoond worden hoeveel bestanden en mappen ze hebben. Het tellen van items in een map kan traag zijn, vooral voor hele grote mappen, of in een netwerk. U kunt deze functie in- of uitschakelen, of dit inschakelen alleen voor bestanden op uw computer en lokale externe schijven.</p>
+    <title><gui>Folders</gui></title>
+    <p>If you show file sizes in <link xref="nautilus-list">list view columns</link>
+    or <link xref="nautilus-display#icon-captions">icon captions</link>, folders will
+    be shown with a count of how many files and folders they contain. Counting items
+    in a folder can be slow, especially for very large folders, or over a network.
+    You can turn this feature on or off, or turn it on only for files on your
+    computer and local external drives.</p>
   </item>
 </terms>
 </page>

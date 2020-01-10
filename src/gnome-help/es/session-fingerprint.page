@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="session-fingerprint" xml:lang="es">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="session-fingerprint" xml:lang="es">
 
   <info>
     <link type="guide" xref="hardware-auth"/>
 
+    <desc>Puede iniciar sesión en su sistema usando un lector de huellas digitales soportado.</desc>
+
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
-    <revision pkgversion="3.10" date="2013-11-03" status="review"/>
-    <revision pkgversion="3.12" date="2014-06-16" status="final"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="final"/>
 
     <credit type="author">
       <name>Proyecto de documentación de GNOME</name>
@@ -16,27 +15,14 @@
     <credit type="author">
       <name>Paul W. Frields</name>
       <email>stickster@gmail.com</email>
-      <years>2011</years>
-    </credit>
-    <credit type="author editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-      <years>2013</years>
-    </credit>
-    <credit type="editor">
-      <name>Jim Campbell</name>
-      <email>jcampbell@gnome.org</email>
-      <years>2014</years>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Puede iniciar sesión en su sistema usando un lector de huellas digitales soportado en lugar de escribiendo su contraseña.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2011 - 2018</mal:years>
+      <mal:years>2011 - 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -59,60 +45,55 @@
   </info>
 
   <title>Iniciar sesión con una huella dactilar</title>
-
-  <p>Si su sistema tiene un lector de huellas digitales soportado, puede grabar su huella y usarla para iniciar sesión.</p>
-
-<section id="record">
-  <title>Grabar una huella dactilar</title>
-
-  <p>Antes de poder iniciar sesión con su huella dactilar, debe grabarla para que el sistema le pueda identificar.</p>
-
+  <p>Si su sistema tiene un lector de huellas digitales, puede grabar su huella y usarla para iniciar sesión. Debe tener permisos de administración para realizar estos pasos.</p>
+  <p>Primero, grabe una huella con la que el sistema le pueda identificar.</p>
   <note style="tip">
     <p>Si su dedo está demasiado seco, puede que tenga dificultad para registrar su huella dactilar. Si esto sucede, humedezca ligeramente el dedo, séquelo con un paño limpio y sin pelusa, y vuelva a intentarlo.</p>
   </note>
-
-  <p>Necesita <link xref="user-admin-explain">privilegios de administrador</link> para editar cuentas de usuarios que no sean la suya propia.</p>
-
   <steps>
     <item>
-      <p>Abra la vista de <gui xref="shell-introduction#activities">Actividades</gui> y empiece a escribir <gui>Usuarios</gui>.</p>
+      <p>Pulse en su nombre en la barra superior y pulse en la imagen junto a su nombre para abrir la ventana <gui>Cuentas de usuario</gui>.</p>
     </item>
     <item>
-      <p>Pulse en <gui>Usuarios</gui> para abrir el panel.</p>
+      <p>Desbloquee su cuenta usando el botón <gui>Desbloquear</gui> en la esquina superior derecha de la herramienta de <gui>Cuentas de usuario</gui>.</p>
     </item>
     <item>
-      <p>Pulse en <gui>Desactivado</gui> junto a <gui>Iniciar sesión con la huella dactilar</gui> para añadir una huella dactilar a la cuenta seleccionada. Si está añadiendo la huella para otro usuario, primero deberá <gui>Desbloquear</gui> el panel.</p>
+      <p>Introduzca su contraseña en el cursor.</p>
     </item>
     <item>
-      <p>Seleccione el dedo que quiere usar para la huella dactilar y pulse <gui style="button">Siguiente</gui>.</p>
+      <p>Seleccione la opción <gui>Desactivado</gui> junto a <gui>Inicio de sesión con huella dactilar</gui>.</p>
     </item>
     <item>
-      <p>Siga las instrucciones del diálogo y deslice su dedo a una <em>velocidad moderada</em> sobre el lector de huellas digitales. Una vez que el equipo tenga un registro correcto de su huella dactilar, verá un mensaje de <gui>Hecho</gui>.</p>
+      <p>Seleccione una opción para la huella digital que quiere registrar. Puede elegir su dedo índice derecho, el dedo índice izquierdo, o un dedo diferente. A continuación, seleccione <gui>Continuar</gui>.</p>
     </item>
     <item>
-      <p>Seleccione <gui>Siguiente</gui>. Verá un mensaje de confirmación de que su huella digital se ha guardado correctamente. Seleccione <gui>Cerrar</gui> para finalizar.</p>
+      <p>Pase el dedo seleccionado tres veces a una <em>velocidad moderada</em> por encima de su lector de huellas digitales. Cada vez que el lector de huellas digitales reconoce la huella dactilar correcta, la imagen correspondiente a una mano se transformará en una imagen de una huella digital con una marca de verificación. Después de la tercera pasada, verá el mensaje <gui>Hecho</gui></p>
+    </item>
+    <item>
+      <p>Seleccione <gui>Continuar</gui>. Verá un mensaje de confirmación de que su huella digital se ha guardado correctamente. Seleccione <gui>Cerrar</gui> para finalizar.</p>
     </item>
   </steps>
-
-</section>
-
-<section id="verify">
-  <title>Compruebe que la huella dactilar funciona</title>
-
   <p>Ahora compruebe que funciona su nuevo inicio de sesión con huella dactilar. Si registra una huella dactilar, todavía tiene la opción de iniciar sesión con su contraseña.</p>
-
   <steps>
     <item>
-      <p>Guarde cualquier trabajo que tenga abierto y <link xref="shell-exit">cierre la sesión</link>.</p>
+      <p>Guarde cualquier trabajo abierto y después cierre la sesión. Seleccione su nombre de usuario en la esquina superior derecha de la pantalla y elija <gui>Cerrar la sesión</gui>.</p>
+    </item>
+    <item>
+      <p>Aparecerá un mensaje de confirmación. Seleccione <gui>Cerrar la sesión</gui> para confirmar. Aparecerá la pantalla de inicio.</p>
     </item>
     <item>
       <p>En la pantalla de inicio de sesión, seleccione su nombre de usuario de la lista. Aparecerá el formulario de entrada de contraseña.</p>
     </item>
     <item>
-      <p>En lugar de escribir su contraseña, debería poder deslizar el dedo por el lector de huella digital.</p>
+      <p>En los siguientes 30 segundos, seleccione el botón de huella dactilar de arriba a la derecha de su nombre.</p>
+      <note>
+	<p>El botón de huella dactilar está etiquetado con una imagen de una mano. Si el contador llega a cero, el botón desaparecerá y solo se le permitirá iniciar sesión con una contraseña. Si quiere intentarlo de nuevo, seleccione el botón <gui>Cancelar</gui> y vuelva al paso anterior.</p>
+      </note>
+    </item>
+    <item>
+      <p>Pase el dedo que ha registrado a una <em>velocidad moderada</em> sobre el escáner de huella dactilar. Iniciará la sesión.</p>
     </item>
   </steps>
-
-</section>
-
+  <p>Si creó anteriormente un depósito de claves, está asegurado con su contraseña. Para desbloquearlo introduzca su contraseña.</p>
+	
 </page>

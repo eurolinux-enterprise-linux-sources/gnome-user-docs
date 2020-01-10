@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-hidden" xml:lang="ca">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-hidden" xml:lang="ca">
 
   <info>
     <link type="guide" xref="files#faq"/>
+    <desc>Make a file invisible, so you can't see it in the file manager.</desc>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-29" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="candidate"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -16,14 +15,7 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Fer un fitxer invisible, de manera que no el podreu veure al gestor de fitxers.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>David Aguilera</mal:name>
@@ -32,36 +24,60 @@
     </mal:credit>
   </info>
 
-<title>Ocultar el fitxer</title>
+<title>Hide a file</title>
 
-  <p>El gestor de fitxers<app>Fitxers</app> us permet amagar i mostrar els fitxers segons el vostre criteri. Quan un fitxer està amagat, el gestor de fitxers no el mostra, però encara està a la carpeta.</p>
+  <p>The GNOME file manager gives you the ability to hide and unhide files at
+  your discretion. When a file is hidden, it isn't displayed by the file
+  manager, but it's still there in its folder.</p>
 
-  <p>Per ocultar un fitxer,, <link xref="files-rename">renombrar-lo</link> amb un <file>.</file> al començament del nom. Per exemple, per ocultar un fitxer anomenat <file>exemple.txt</file>, heu de canviar-li el nom a <file>.exemple.txt</file>.</p>
+  <p>To hide a file, <link xref="files-rename">rename it</link> with a <key>.</key>
+  at the beginning of its name. For example, to hide a file named <file>
+  example.txt</file>, you should rename it to <file>.example.txt</file>.
+  </p>
 
 <note>
-  <p>Podeu ocultar carpetes de la mateixa manera que podeu ocultar fitxers. Amaga una carpeta posant un. <file>.</file> al començament del nom de la carpeta.</p>
+  <p>You can hide folders in the same way that you can hide files. Hide a
+  folder by placing a <key>.</key> at the beginning of the folder's name.</p>
 </note>
 
 <section id="show-hidden">
- <title>Mostrar tots els arxius ocults</title>
+ <title>Show all hidden files</title>
+  <p>If you want to see all hidden files in a folder, go to that folder and
+  either click the <media type="image" src="figures/go-down.png">down</media>
+  button in the toolbar and pick <gui>Show Hidden Files</gui>, or press
+  <keyseq><key>Ctrl</key><key>H</key></keyseq>. You will see all hidden files,
+  along with regular files that are not hidden.</p>
 
-  <p>Si voleu veure tots els fitxers amagats en una carpeta, aneu a aquesta carpeta i feu clic al botó Opcions de visualització a la barra d'eines i seleccioneu<gui>Mostrar els Fitxers Ocults</gui>, o premeu <keyseq><key>Ctrl</key><key>H</key></keyseq>. Veureu tots els fitxers ocults, juntament amb fitxers normals que no estan amagats.</p>
-
-  <p>Per ocultar aquests fitxers de nou, feu clic al botó Opcions de visualització a la barra d'eines i seleccioneu <gui>Mostrar els Fitxers Ocults</gui>, o premeu <keyseq><key>Ctrl</key><key>H</key></keyseq> de nou.</p>
+  <p>To hide these files again, either click the
+  <media type="image" src="figures/go-down.png">down</media> button in the
+  toolbar and pick <gui>Show Hidden Files</gui>, or press
+  <keyseq><key>Ctrl</key><key>H</key></keyseq> again.</p>
 
 </section>
 
 <section id="unhide">
- <title>Mostrar el fitxer ocult</title>
+ <title>Unhide a file</title>
+  <p>To unhide a file, go to the folder containing the hidden file and click
+  the <media type="image" src="figures/go-down.png">down</media> button in the
+  toolbar and pick <gui>Show Hidden Files</gui>. Then, find the hidden file and
+  rename it so that it doesn't have a <key>.</key> in front of its name. For
+  example, to unhide a file called <file>.example.txt</file>, you should rename
+  it to <file>example.txt</file>.</p>
 
-  <p>Per mostrar un fitxer, aneu a la carpeta que conté el fitxer amagat i feu clic al botó Opcions de visualització a la barra d'eines i seleccioneu<gui>Mostrar els Fitxers Ocults</gui>. A continuació, cerqueu el fitxer amagat i canvieu el nom perquè no tingui cap<file>.</file> al inici del nom. Per exemple, per mostrar un fitxer anomenat <file>.exemple.txt</file>, heu de canviar-li el nom a<file>exemple.txt</file>.</p>
+  <p>Once you have renamed the file, you can either click the
+  <media type="image" src="figures/go-down.png">down</media> button
+  in the toolbar and pick <gui>Show Hidden Files</gui>, or press
+  <keyseq><key>Ctrl</key><key>H</key></keyseq> to hide any other hidden files
+  again.</p>
 
-  <p>Un cop hagueu canviat el nom del fitxer, podeu fer clic al botó Opcions de la barra d'eines i triar <gui>Mostrar els Fitxers Ocults</gui>, o prémer <keyseq><key>Ctrl</key><key>H</key></keyseq> per tornar a ocultar altres fitxers ocults.</p>
+  <note><p>By default, you will only see hidden files in the file
+  manager until you close the file manager. To change this setting so that the
+  file manager will always show hidden files, see <link xref="nautilus-views"/>.
+  </p></note>
 
-  <note><p>Per defecte, només veureu els fitxers ocults al gestor de fitxers fins que tanqueu el gestor de fitxers. Per canviar aquesta configuració per a què el gestor de fitxers sempre mostri fitxers ocults, consulteu <link xref="nautilus-views"/>.</p></note>
-
-  <note><p>La major part de fitxers ocults tenen <file>.</file> al començament del nom, però altres poden tenir <file>~</file> al final del nom en canvi. Aquests, són fitxers de còpia de seguretat. Veure <link xref="files-tilde"/>  per a més informació.</p></note>
-
+  <note><p>Most hidden files will have a <key>.</key> at the
+  beginning of their name, but others might have a <key>~</key> at the end of
+  their name instead. These files are backup files. See
+  <link xref="files-tilde"/> for more information.</p></note>
 </section>
-
 </page>

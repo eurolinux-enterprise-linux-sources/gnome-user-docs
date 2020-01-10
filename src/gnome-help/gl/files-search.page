@@ -2,12 +2,11 @@
 <page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="files-search" xml:lang="gl">
 
   <info>
-    <link type="guide" xref="files#common-file-tasks"/>
+    <link type="guide" xref="files"/>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-25" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
+    <desc>Busque os ficheiros baseándose no nome do ficheiro e o tipo. Garde as súas buscas para o seu uso posterior.</desc>
     <credit type="author">
       <name>Proxecto de documentación de GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
@@ -20,25 +19,18 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Buscar os ficheiros baseándose no nome do ficheiro e o tipo.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2018</mal:years>
+      <mal:years>2011, 2012.</mal:years>
     </mal:credit>
   </info>
 
   <title>Buscar ficheiros</title>
 
-  <p>Pode buscar ficheiros segundo o seu nome ou tipo de ficheiro directamente desde o xestor de ficheiros.</p>
+  <p>Pode buscar ficheiros segundo o seu nome ou tipo de ficheiro directamente desde o xestor de ficheiros. pode incluso gardar buscas comúns para que logo aparezan como cartafoles especiais no seu cartafol persoal.</p>
 
   <links type="topic" style="linklist">
     <title>Outros aplicativos de busca</title>
@@ -48,35 +40,28 @@
 
   <steps>
     <title>Buscar</title>
-    <item>
-      <p>Abra o aplicativo <app>Ficheiros</app> desde a vista de <gui xref="shell-introduction#activities">Actividades</gui>.</p>
+    <item><p>Abra o aplicativo <app>Ficheiros</app> desde a vista de <gui>Actividades</gui>.</p></item>
+    <item><p>Se sabe que os ficheiros que quere buscar están nun cartafol determinado, vaia a dito cartafol.</p></item>
+    <item><p>Prema na lupa de magnificación da barra de ferramentas ou prema <keyseq><key>Ctrl</key><key>F</key></keyseq>.</p></item>
+    <item><p>Escriba unha ou varias palabras que saiba que aparecen no nome do ficheiro. Por exemplo, se todas as súas facturas conteñen no seu nome a palabra «Factura», teclee <input>factura</input>. Prema <key>Intro</key>. Non fai falla ter en conta as maiúsculas e minúsculas.</p></item>
+    <item><p>Pode acotar os resultados por localización e tipo de ficheiro.</p>
+    <list>
+      <item><p>Prema <gui>Cartafol persoal</gui> para restrinxir os resultados das buscas ao seu cartafol <file>Persoal</file>, ou <gui>Todos os ficheiro</gui>s para buscar en calquera lugar.</p></item>
+      <item><p>Prema <key>+</key> e seleccione <gui>Tipo de ficheiro</gui> desde a lista despregábel para acotar os resultados da busca en función do tipo de ficheiro. Prema o botón <key>x</key> para quitar esta opción e facer os resultados da busca menos restrinxidos.</p></item>
+    </list>
     </item>
-    <item>
-      <p>Se sabe que os ficheiros que quere buscar están nun cartafol determinado, vaia a dito cartafol.</p>
-    </item>
-    <item>
-      <p>Escriba unha ou varias palabras que saiba que aparecen no nome do ficheiro. Por exemplo, se todas as súas facturas conteñen no seu nome a palabra «Factura», teclee <input>factura</input>. Prema <key>Intro</key>. Non fai falla ter en conta as maiúsculas e minúsculas.</p>
-      <note>
-        <p>No lugar de escribir palabras directamente para mostrar a barra de busca, pode premer na lupa da barra de ferramentas ou prema <keyseq><key>Ctrl</key><key>F</key></keyseq>.</p>
-      </note>
-    </item>
-    <item>
-      <p>Pode acotar os resultados por localización e tipo de ficheiro.</p>
-      <list>
-        <item>
-          <p>Prema <gui>Cartafol persoal</gui> para restrinxir os resultados das buscas ao seu cartafol <file>Persoal</file>, ou <gui>Todos os ficheiro</gui>s para buscar en calquera lugar.</p>
-        </item>
-        <item>
-          <p>Prema <key>+</key> e seleccione <gui>Tipo de ficheiro</gui> desde a lista despregábel para acotar os resultados da busca en función do tipo de ficheiro. Prema o botón <key>×</key> para quitar esta opción e facer os resultados da busca menos restrinxidos.</p>
-        </item>
-      </list>
-    </item>
-    <item>
-      <p>Pode abrir, copiar, eliminar ou traballar cos seus ficheiros desde os resultados de busca, igual como se estivera en calquera cartafol no xestor de ficheiros.</p>
-    </item>
-    <item>
-      <p>Prema na lupa de magnificación na barra de ferramentas de novo para saír da busca e volver ao cartafol.</p>
-    </item>
+    <item><p>Pode abrir, copiar, eliminar ou traballar cos seus ficheiros desde os resultados de busca, igual como se estivera en calquera cartafol no xestor de ficheiros.</p></item>
+    <item><p>Prema na lupa de magnificación na barra de ferramentas de novo para saír da busca e volver ao cartafol.</p></item>
   </steps>
 
+  <p>Se fai certas buscas moi a miúdo, pode gardalas para acceder a elas de forma rápida.</p>
+
+  <steps>
+    <title>Gardar unha busca</title>
+    <item><p>Iniciar unha busca como a de arriba.</p></item>
+    <item><p>Se está contento cos parámetros de busca prema o botón do engranaxe e seleccione <gui>Gardar busca como</gui>.</p></item>
+    <item><p>Forneza un nome para a busca e prema <gui>Gardar</gui>. Se o desexa, seleccione un cartafol diferente onde gardar a busca. Cando vexa dito cartafol, verá a súa busca gardada con unha icona de cartafol laranxa con unha lupa sobre el.</p></item>
+  </steps>
+
+  <p>Para eliminar o ficheiro buscado cando teña terminado con el, simplemente <link xref="files-delete">elimíneo</link> da busca igual que faría con calquera outro ficheiro. Cando elimina unha busca gardada, non elimina os ficheiros que coincidiron coa busca.</p>
 </page>

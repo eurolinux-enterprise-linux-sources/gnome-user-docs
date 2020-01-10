@@ -2,12 +2,12 @@
 <page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="files-search" xml:lang="sv">
 
   <info>
-    <link type="guide" xref="files#common-file-tasks"/>
+    <link type="guide" xref="files"/>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-25" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
+    <desc>Locate files based on file name and type. Save your searches for
+    later use.</desc>
     <credit type="author">
       <name>Dokumentationsprojekt för GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
@@ -20,75 +20,73 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Hitta filer baserat på filnamn och typ.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Sebastian Rasmussen</mal:name>
-      <mal:email>sebras@gmail.com</mal:email>
-      <mal:years>2014, 2015, 2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Anders Jonsson</mal:name>
-      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
-      <mal:years>2016, 2017</mal:years>
-    </mal:credit>
   </info>
 
   <title>Sök efter filer</title>
 
-  <p>Du kan söka efter filer baserat på deras namn eller filtyp direkt i filhanteraren.</p>
+  <p>You can search for files based on their name or file type directly
+  within the file manager. You can even save common searches, and they
+  will appear as special folders in your home folder.</p>
 
   <links type="topic" style="linklist">
-    <title>Andra sökprogram</title>
+    <title>Other search applications</title>
     <!-- This is an extension point where search apps can add
     their own topics. It's empty by default. -->
   </links>
 
   <steps>
     <title>Sök</title>
-    <item>
-      <p>Öppna programmet <app>Filer</app> från översiktsvyn <gui xref="shell-introduction#activities">Aktiviteter</gui>.</p>
+    <item><p>Open the <app>Files</app> application from the <gui>Activities
+    </gui> overview.</p></item>
+    <item><p>If you know the files you want are under a particular folder, go
+    to that folder.</p></item>
+    <item><p>Click the magnifying glass in the toolbar, or press
+    <keyseq><key>Ctrl</key><key>F</key></keyseq>.</p></item>
+    <item><p>Type a word or words that you know appear in the file name. For
+    example, if you name all your invoices with the word "Invoice", type
+    <input>invoice</input>. Press <key>Enter</key>. Words are matched regardless
+    of case.</p></item>
+    <item><p>You can narrow your results by location and file type.</p>
+    <list>
+      <item><p>Click <gui>Home</gui> to restrict the search results to your
+      <file>Home</file> folder, or <gui>All Files</gui> to search
+      everywhere.</p></item>
+      <item><p>Click <key>+</key> and pick a <gui>File Type</gui> from the
+      drop-down list to narrow the search results based on file type. Click the
+      <key>x</key> button to remove this option and widen the search
+      results.</p></item>
+    </list>
     </item>
-    <item>
-      <p>Om du vet att filerna du letar efter finns i en viss mapp, gå till den mappen.</p>
-    </item>
-    <item>
-      <p>Skriv ett eller flera ord som du vet förekommer i filnamnet så kommer de att visas i sökraden. Om du till exempel ger namn på alla dina fakturor med ordet ”Faktura”, skriv <input>faktura</input>. Ord matchar oberoende av skiftläge.</p>
-      <note>
-        <p>Istället för att skriva ord direkt för att visa sökraden, kan du klicka på förstoringsglaset i verktygsfältet eller trycka <keyseq><key>Ctrl</key><key>F</key></keyseq>.</p>
-      </note>
-    </item>
-    <item>
-      <p>Du kan förfina dina sökresultat med hjälp av plats och filtyp.</p>
-      <list>
-        <item>
-          <p>Klicka på <gui>Hem</gui> för att begränsa sökresultaten till din <file>Hem</file>-mapp, eller <gui>Alla filer</gui> för att söka överallt.</p>
-        </item>
-        <item>
-          <p>Klicka på <gui>+</gui>-knappen och välj en <gui>Filtyp</gui> från rullgardinsmenyn för att begränsa sökresultaten baserat på filtyp. Klicka på <gui>×</gui>-knappen för att ta bort detta alternativ och utöka sökresultaten.</p>
-        </item>
-      </list>
-    </item>
-    <item>
-      <p>Du kan öppna, kopiera, ta bort eller på annat sätt arbeta med dina filer från sökresultatet, precis som du skulle ha gjort från vilken mapp som helst i filhanteraren.</p>
-    </item>
-    <item>
-      <p>Klicka på förstoringsglaset i verktygsfältet igen för att avsluta sökningen och återgå till mappen.</p>
-    </item>
+    <item><p>You can open, copy, delete, or otherwise work with your files from
+    the search results, just as you would from any folder in the file manager.
+    </p></item>
+    <item><p>Click the magnifying glass in the toolbar again to exit the search
+    and return to the folder.</p></item>
   </steps>
 
+  <p>If you perform certain searches often, you can save them to access them
+  quickly.</p>
+
+  <steps>
+    <title>Spara en sökning</title>
+    <item><p>Start a search as above.</p></item>
+    <item><p>When you're happy with the search parameters, click the gear
+    button and select <gui>Save Search As</gui>.</p></item>
+    <item><p>Give the search a name and click <gui>Save</gui>. If you like,
+    select a different folder to save the search in. When you view that folder,
+    you will see your saved search as an orange folder icon with a magnifying
+    glass on it.</p></item>
+  </steps>
+
+  <p>To remove the search file when you are done with it, simply
+  <link xref="files-delete">delete</link> the search as you would any other
+  file. When you delete a saved search, it does not delete the files that the
+  search matched.</p>
 </page>

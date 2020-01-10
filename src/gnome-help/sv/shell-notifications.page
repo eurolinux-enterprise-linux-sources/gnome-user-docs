@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" version="1.0 if/1.0" id="shell-notifications" xml:lang="sv">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="ui" id="shell-notifications" xml:lang="sv">
 
   <info>
+
     <link type="guide" xref="shell-overview#desktop"/>
 
+    <desc>Messages pop-up at the bottom of the screen telling you when certain
+    events happen.</desc>
+
     <revision pkgversion="3.8.0" version="0.3" date="2013-04-23" status="review"/>
-    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.16" date="2015-03-02" status="outdated"/>
 
     <credit type="author">
       <name>Marina Zhurakhinskaya</name>
@@ -17,90 +18,88 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-      <years>2013, 2015</years>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Meddelanden visas längst upp på skärmen för att berätta för dig när vissa händelser inträffar.</desc> 
+  
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Sebastian Rasmussen</mal:name>
-      <mal:email>sebras@gmail.com</mal:email>
-      <mal:years>2014, 2015, 2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Anders Jonsson</mal:name>
-      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
-      <mal:years>2016, 2017</mal:years>
-    </mal:credit>
   </info>
 
-<title>Aviseringar och meddelandefältet</title>
+
+<title>Notifications and the message tray</title>
 
 <section id="what">
-  <title>Vad är en avisering?</title>
+<title>Vad är en notifiering?</title>
+  <p>If an application or a system component wants to get your attention, a
+  notification will be shown at the bottom of the screen.</p>
+  <p>For example, if you get a new chat message, plug in an external device
+  (like a USB stick), new updates are available for your computer, or your
+  computer’s battery is low, you will get a notification informing you.</p>
+  <p>To minimize distraction, some notifications first appear as a single
+  line. You can move your mouse over them to see their full content.</p>
 
-  <p>Om ett program eller en systemkomponent vill få tag i din uppmärksamhet, kommer en avisering att visas längst upp på skärmen.</p>
+<media type="image" width="700" src="figures/shell-notification.png"/>
 
-  <p>Om du till exempel får ett nytt chattmeddelande eller ett nytt e-postmeddelande kommer du att få en avisering som informerar dig om detta.</p>
+  <p>Other notifications have selectable option buttons. To close one of these
+  notifications without selecting one of its options, click the close button.</p>
 
-<!--  <p>To minimize distraction, some notifications first appear as a single line.
-  You can move your mouse over them to see their full content.</p>-->
+<media type="image" width="500" src="figures/notification-buttons.png"/>
 
-  <p>Andra aviseringar har valbara knappar. För att stänga en avisering av denna typ utan att välja en av dess alternativ, klicka på stängknappen.</p>
-
-  <p>Att klicka på stängknappen på vissa avisering förkastar dem. Andra, som Rhythmbox eller ditt chattprogram kommer att förbli gömt i meddelandefältet.</p>
+  <p>Clicking the close button on some notifications dismisses them. Others,
+  like Rhythmbox or your chat application, will stay hidden in the message 
+  tray.</p>
 
 </section>
 
-<section id="messagetray">
+<section id="messagingtray">
 
-  <title>Meddelandefältet</title>
+<title>The message tray</title>
 
-  <p if:test="!platform:gnome-classic">Meddelandefältet ger dig ett sätt att få tillbaka dina aviseringar när det är bekvämt för dig. Den visas när du klickar på klockan eller trycker <keyseq><key xref="keyboard-key-super">Super</key><key>M</key></keyseq>. Meddelandefältet innehåller alla aviseringar som du inte har agerat på eller som finns där permanent.</p>
+  <p if:test="!platform:gnome-classic">The message tray gives you a way to get
+  back to your notifications when it is convenient for you. It appears when you
+  move your mouse to the bottom-right corner of the screen, or press <keyseq>
+  <key xref="keyboard-key-super">Super</key><key>M</key></keyseq>. The message
+  tray contains all the notifications that you have not acted upon or that
+  permanently reside in it.</p>
 
-  <p if:test="platform:gnome-classic">Meddelandefältet ger dig ett sätt att få tillbaka dina aviseringar när det är bekvämt för dig. Den visas när du flyttar din mus till nedre högra hörnet av skärmen eller trycker <keyseq><key xref="keyboard-key-super">Super</key><key>M</key></keyseq>. Du kan också visa meddelandefältet genom att klicka på den blå sifferikonen till höger i fönsterlisten. Meddelandefältet innehåller alla aviseringar som du inte har agerat på eller som finns där permanent.</p>
+  <p if:test="platform:gnome-classic">The message tray gives you a way to get
+  back to your notifications when it is convenient for you. It appears when you
+  move your mouse to the bottom-right corner of the screen, or press <keyseq>
+  <key xref="keyboard-key-super">Super</key><key>M</key></keyseq>. You can also
+  show the message tray by clicking the blue number icon at the right-hand
+  side of the window list. The message tray contains all the notifications that
+  you have not acted upon or that permanently reside in it.</p>
 
-  <p>Du kan titta på aviseringarna genom att klicka på meddelandefältets objekt. Dessa är vanligtvis meddelanden som sänts av program. Chattaviseringar ges dock specialbehandling och representeras som de individuella kontakterna som skickade chattmeddelande till dig.</p>
+  <p>You can view the notifications by clicking on the message tray items. These
+  are usually messages sent by applications. However, chat notifications are
+  given special treatment, and are represented by the individual contacts who sent
+  you the chat messages.</p>
 
-  <p>Du kan stänga meddelandefältet genom att trycka <keyseq><key>Super</key><key>M</key></keyseq> igen eller <key>Esc</key>.</p>
+  <p>You can close the message tray by pressing
+  <keyseq><key>Super</key><key>M</key></keyseq> again or <key>Esc</key>.</p>
+
+  <note style="tip"><p>If the <link xref="keyboard-osk">screen keyboard</link>
+   is open, you'll need to click the <gui>tray button</gui> to show the message
+   tray.</p>
+  </note>
 
 </section>
 
 <section id="hidenotifications">
+<title>Dölja notifieringar</title>
 
-  <title>Dölja aviseringar</title>
+  <p>If you're working on something and do not want to be bothered, you can
+  switch off notifications. Just click your name on the top bar and change the
+  <gui>Notifications</gui> toggle to <gui>OFF</gui>.</p>
 
-  <p>Om du arbetar med något och inte vill bli störd kan du stänga av aviseringar.</p>
-
-  <steps>
-    <item>
-      <p>Öppna översiktsvyn <gui xref="shell-introduction#activities">Aktiviteter</gui> och börja skriv <gui>Aviseringar</gui>.</p>
-    </item>
-    <item>
-      <p>Klicka på <gui>Aviseringar</gui> för att öppna panelen.</p>
-    </item>
-    <item>
-      <p>Växla <gui>Aviseringsbanderoller</gui> till <gui>AV</gui>.</p>
-    </item>
-  </steps>
-
-  <p if:test="!platform:gnome-classic">När de är avstängda kommer de flesta aviseringar inte att poppa upp längst upp på skärmen. Aviseringar kommer fortfarande att finnas tillgängliga i meddelandefältet när du visar det (genom att klicka på klockan, eller trycka på <keyseq><key>Super</key><key>M</key></keyseq>) och de kommer att börja poppa upp igen när du växlar inställningen till <gui>PÅ</gui> igen.</p>
-
-  <p>Du kan också inaktivera eller återaktivera aviseringar för individuella program från panelen <gui>Aviseringar</gui>.</p>
-
-  <p if:test="platform:gnome-classic">När de är avstängda kommer de flesta aviseringar inte att poppa upp längst ner på skärmen. Väldigt viktiga aviseringar som att batteriet är kritiskt lågt kommer fortfarande att poppa upp. Aviseringar kommer fortfarande att finnas tillgängliga i meddelandefältet när du visar det (genom att flytta musen till längst ner till höger på skärmen, eller trycka på <keyseq><key>Super</key><key>M</key></keyseq>) och de kommer att börja poppa upp igen när du växlar inställningen till <gui>PÅ</gui> igen.</p>
+  <p>When switched off, most notifications will not pop up at the bottom of the
+  screen. Very important notifications, such as when your battery is critically
+  low, will still pop up. Notifications will still be available in the messaging
+  tray when you display it (by moving your mouse to the bottom right corner, or
+  pressing <keyseq><key>Super</key><key>M</key></keyseq>), and they will
+  redisplay when you switch the toggle to <gui>ON</gui> again.</p>
 
 </section>
-
 </page>

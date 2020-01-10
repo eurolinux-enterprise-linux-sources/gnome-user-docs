@@ -2,28 +2,22 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-file-properties-basic" xml:lang="it">
 
   <info>
-    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="files" group="more"/>
 
-    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+   <desc>Visualizzare informazioni di base sui file, impostare i permessi e scegliere le applicazioni predefinite.</desc>
 
-    <credit type="author">
-      <name>Tiffany Antopolski</name>
-      <email>tiffany@antopolski.com</email>
-    </credit>
-    <credit type="author">
-      <name>Shaun McCance</name>
-      <email>shaunm@gnome.org</email>
-    </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
+   <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
 
+   <credit type="author">
+     <name>Tiffany Antopolski</name>
+     <email>tiffany@antopolski.com</email>
+   </credit>
+   <credit type="author">
+     <name>Shaun McCance</name>
+     <email>shaunm@gnome.org</email>
+   </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Visualizzare informazioni di base sui file, impostare i permessi e scegliere le applicazioni predefinite.</desc>
-
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Luca Ferretti</mal:name>
@@ -37,7 +31,6 @@
       <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
-
   <title>Proprietà del file</title>
 
   <p>Per visualizzare informazioni circa un file o una cartella, fare clic col pulsante destro del mouse e selezionare <gui>Proprietà</gui>. È anche possibile selezionare il file e premere <keyseq><key>Alt</key><key>Invio</key></keyseq>.</p>
@@ -50,17 +43,13 @@
  <title>Proprietà generali</title>
  <terms>
   <item>
-    <title><gui>Name</gui></title>
+    <title><gui>Nome</gui></title>
     <p>È possibile rinominare il file modificando questo campo o rinominandolo al di fuori della finestra delle proprietà. Consultare <link xref="files-rename"/>.</p>
   </item>
   <item>
-    <title><gui>Type</gui></title>
-    <p>This helps you identify the type of the file, such as PDF document,
-    OpenDocument Text, or JPEG image. The file type determines which
-    applications can open the file, among other things. For example, you
-    can’t open a picture with a music player. See <link xref="files-open"/>
-    for more information on this.</p>
-    <p>Il <em>tipo MIME</em> del file è mostrato tra parentesi. Il tipo MIME è un standard che i computer utilizzando per classificare e fare riferimento a un file.</p>
+    <title><gui>Tipo</gui></title>
+    <p>Consente di identificare il tipo di file (come documento PDF, OpenDocument, immagine JPEG, ecc.). Il tipo di file determina, tra le altre cose, quali applicazioni possono aprirlo. Per esempio, non è possibile aprire un'immagine con un riproduttore audio. Per maggiori informazioni, consultare <link xref="files-open"/>.</p>
+  <p>Il <em>tipo MIME</em> del file è mostrato tra parentesi. Il tipo MIME è un standard che i computer utilizzando per classificare e fare riferimento a un file.</p>
   </item>
 
   <item>
@@ -75,19 +64,20 @@
   </item>
 
   <item>
-    <title>Parent Folder</title>
-    <p>The location of each file on your computer is given by its <em>absolute
-    path</em>. This is a unique “address” of the file on your computer, made up
-    of a list of the folders that you would need to go into to find the file.
-    For example, if Jim had a file called <file>Resume.pdf</file> in his Home
-    folder, its parent folder would be <file>/home/jim</file> and its location
-    would be <file>/home/jim/Resume.pdf</file>.</p>
+    <title>Posizione</title>
+    <p>La posizione di ciascun file sul computer è determinata dal suo <em>percorso assoluto</em>. Questo è un "indirizzo" univoco del file all'interno del computer, costituito dalla lista delle cartelle in cui occorre entrare di volta in volta per raggiungerlo. Per esempio, se Mario avesse un file chiamato <file>Curriculum.pdf</file> nella sua cartella Home, il percorso di quel file sarebbe <file>/home/mario/Curriculum.pdf</file>.</p>
+  </item>
+
+  <item>
+    <title>Volume</title>
+    <p>Il file system o la periferica su cui il file è memorizzato. Questo mostra dove si trova fisicamente il file, per esempio se è su un disco fisso, un CD o una <link xref="nautilus-connect">cartella condivisa in rete</link>. I dischi fissi possono essere suddivisi in <link xref="disk-partitions">partizioni</link> e anche queste vengono mostrate in <gui>Volume</gui>.</p>
   </item>
 
   <item>
     <title>Spazio libero</title>
     <p>Questo attributo è mostrato solo per le cartelle. Indica la quantità di spazio che è ancora disponibile sul disco che ospita la cartella. È utile per controllare se il disco è pieno.</p>
   </item>
+
 
   <item>
     <title>Ultimo accesso</title>

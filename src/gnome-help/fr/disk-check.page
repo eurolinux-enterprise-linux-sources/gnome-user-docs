@@ -18,9 +18,8 @@
     </credit>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
-    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
 
-    <desc>Test your hard disk for problems to make sure that it’s healthy.</desc>
+    <desc>Tester votre disque dur pour être certain qu'il n'est pas défectueux.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -38,13 +37,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Julien Hardelin</mal:name>
       <mal:email>jhardlin@orange.fr</mal:email>
-      <mal:years>2011, 2013</mal:years>
+      <mal:years>2011</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -70,12 +69,6 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Alexandre Franke</mal:name>
-      <mal:email>alexandre.franke@gmail.com</mal:email>
-      <mal:years>2015</mal:years>
-    </mal:credit>
   </info>
 
 <title>Vérification d'éventuels problèmes de disque dur</title>
@@ -84,25 +77,23 @@
  <title>Vérification du disque dur</title>
   <p>Les disques durs disposent d'un outil incorporé de surveillance des défauts appelé <app>SMART</app> (Self-Monitoring, Analysis, and Reporting Technology), qui explore en permanence le disque dur à la recherche de problèmes potentiels. SMART vous avertira si le disque est sur le point de tomber en panne, vous permettant ainsi d'éviter des pertes de données importantes.</p>
 
-  <p>Although SMART runs automatically, you can also check your disk’s
- health by running the <app>Disks</app> application:</p>
+  <p>Bien que SMART fonctionne automatiquement, vous pouvez aussi vérifier l'intégrité du disque avec l'application <app>Disques</app> :</p>
 
 <steps>
- <title>Check your disk’s health using the Disks application</title>
+ <title>Vérification de l'intégrité du disque en utilisant l'application <app>Disques</app>.</title>
 
-  <item>
-    <p>Ouvrez <app>Disques</app> à partir de la vue d'ensemble des <gui>Activités</gui>.</p>
-  </item>
-  <item>
-    <p>Choisissez le disque dans la liste des périphériques de stockage. Les informations sur le disque et son état s'affichent.</p>
-  </item>
-  <item>
-    <p>Click the menu button and select <gui>SMART Data &amp; Self-Tests…</gui>.
-    The <gui>Overall Assessment</gui> should say “Disk is OK”.</p>
-  </item>
-  <item>
-    <p>Consultez les informations supplémentaires dans <gui>Attributs SMART</gui>, ou cliquez sur <gui style="button">Démarrer l'auto-test</gui>.</p>
-  </item>
+ <item>
+  <p>Ouvrez l'application <app>Disques</app> à partir de la vue d'ensemble des <gui>Activités</gui>.</p>
+ </item>
+ <item>
+  <p>Choisissez le disque dans la liste des <gui>Périphériques de stockage</gui>. Des informations sur le disque et son statut s'affichent dans la rubrique <gui>Disque</gui>.</p>
+ </item>
+ <item>
+  <p><gui>État SMART</gui> doit indiquer « Le disque est sain ».</p>
+ </item>
+ <item>
+  <p>Cliquez sur le bouton <gui>Données SMART</gui> pour afficher plus d'informations sur le disque, ou pour effectuer un auto-test.</p>
+ </item>
 
 </steps>
 
@@ -110,21 +101,13 @@
 
 <section id="disk-not-healthy">
 
- <title>What if the disk isn’t healthy?</title>
+ <title>Que faire si le disque n'est pas sain ?</title>
 
-  <p>Even if the <gui>Overall Assessment</gui> indicates that the disk
-  <em>isn’t</em> healthy, there may be no cause for alarm. However, it’s better
-  to be prepared with a <link xref="backup-why">backup</link> to prevent data
-  loss.</p>
+  <p>Même si l'<gui>état SMART</gui> indique que le disque <em>n'est pas</em> sain, il n'y a pas lieu de s'inquiéter outre mesure. Néanmoins, mieux vaut effectuer une <link xref="backup-why">sauvegarde</link> pour éviter une perte de données.</p>
 
-  <p>If the status says “Pre-fail”, the disk is still reasonably healthy but
- signs of wear have been detected which mean it might fail in the near future.
- If your hard disk (or computer) is a few years old, you are likely to see
- this message on at least some of the health checks. You should
- <link xref="backup-how">backup your important files regularly</link> and check
- the disk status periodically to see if it gets worse.</p>
+  <p>Si l'état signale « Pre-fail » (panne possible), c'est que le disque est encore raisonnablement sain, mais qu'il présente des signes d'usure annonciateurs de panne. Si votre disque (ou ordinateur) est un peu âgé, il est vraisemblable que vous aurez ce message lors d'un examen d'intégrité. Vous devriez <link xref="backup-how">sauvegarder vos fichiers importants régulièrement</link> et vérifier l'état du disque périodiquement pour voir s'il y a aggravation.</p>
 
-  <p>S'il y a aggravation, il vaut mieux emporter l'ordinateur ou le disque dur chez un professionnel pour un diagnostic complet ou une réparation.</p>
+  <p>S'il y a aggravation, il vaut mieux emporter l'ordinateur ou le disque dur chez un professionnel pour une diagnostique complet ou une réparation.</p>
 
 </section>
 

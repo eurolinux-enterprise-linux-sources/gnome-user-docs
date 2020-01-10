@@ -2,30 +2,23 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-file-properties-basic" xml:lang="lv">
 
   <info>
-    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="files" group="more"/>
 
-    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+   <desc>Skatiet datņu pamatinformāciju, iestatiet atļaujas un izvēlēties noklusējuma lietotni.</desc>
 
-    <credit type="author">
-      <name>Tiffany Antopolski</name>
-      <email>tiffany@antopolski.com</email>
-    </credit>
-    <credit type="author">
-      <name>Shaun McCance</name>
-      <email>shaunm@gnome.org</email>
-    </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
+   <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
 
+   <credit type="author">
+     <name>Tiffany Antopolski</name>
+     <email>tiffany@antopolski.com</email>
+   </credit>
+   <credit type="author">
+     <name>Shaun McCance</name>
+     <email>shaunm@gnome.org</email>
+   </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Skatiet datņu pamatinformāciju, iestatiet atļaujas un izvēlēties noklusējuma lietotni.</desc>
-
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
   </info>
-
   <title>Datņu īpašības</title>
 
   <p>Lai apskatītu informāciju par datni vai mapi, labais peles klikšķis un izvēlieties <gui>Īpašības</gui>. Jūs varat arī izvēlēties datni un piespiest <keyseq><key>Alt</key><key>Enter</key></keyseq>.</p>
@@ -39,12 +32,12 @@
  <terms>
   <item>
     <title><gui>Nosaukums</gui></title>
-    <p>Jūs varat pārdēvēt datni, mainot šo lauku. Jūs varat pārdēvēt šo datni arī ārpus īpašību loga. Skatiet <link xref="files-rename"/>.</p>
+    <p>Jūs varat pārsaukt datni, mainot šo lauku. Jūs varat pārsaukt šo datni arī ārpus īpašību loga. Skatiet <link xref="files-rename"/>.</p>
   </item>
   <item>
     <title><gui>Tips</gui></title>
     <p>Tas palīdzēs jums noteikt datnes tipu, piemēram, vai tas ir PDF dokuments vai JPEG attēls. Datnes tips nosaka, kādas lietotnes var atvērt šo datni. Piemēram, jūs nevarat atvērt bildi ar mūzikas atskaņotāju. Skatiet <link xref="files-open"/>, lai uzzinātu vairāk.</p>
-    <p>Datņu <em>MIME tips</em> ir parādīts iekavās. <em>MIME tips </em> ir standarta veids, kā datoros norāda datņu tipu.</p>
+  <p>Datņu <em>MIME tips</em> ir parādīts iekavās. <em>MIME tips </em> ir standarta veids, kā datoros norāda datņu tipu.</p>
   </item>
 
   <item>
@@ -59,14 +52,20 @@
   </item>
 
   <item>
-    <title>Pamatmape</title>
-    <p>Katras datnes atrašanās vieta jūsu datorā tiek uzdota ar tā <em>absolūto ceļu</em>.  Tā ir datnes unikālā “adrese” jūsu datorā, kas ir veidota no mapju saraksta, kuras jums būtu jāatver, lai piekļūtu datnei. Piemēram, ja Juris datni ir nosaucis par <file>Kopsavilkums.pdf</file> savā Mājas mapē, tās vecāka mape būtu <file>/home/juris</file> un tā atrašanās vieta varētu būt <file>/home/juris/Kopsavilkums.pdf</file>.</p>
+    <title>Atrašanās vieta</title>
+    <p>Katras datnes atrašanās vieta jūsu datorā tiek uzdota ar tā <em>absolūto ceļu</em>.  Tā ir datnes unikālā “adrese” jūsu datorā, kas ir veidota no mapju saraksta, kuras jums būtu jāatver, lai piekļūtu datnei. Piemēram, ja Juris datni ir nosaucis par <file>Kopsavilkums.pdf</file> savā Mājas mapē, tā atrašanās vieta varētu būt <file>/mājas/juris/Kopsavilkums.pdf</file>.</p>
+  </item>
+
+  <item>
+    <title>Sējums</title>
+    <p>Datņu sistēma vai ierīce, kurā glabājas datne. Tas parāda, kur fiziski glabājas datne, piemēram, vai tā ir cietajā diskā, CD vai <link xref="nautilus-connect">tīkla koplietojumā, vai datņu serverī</link>. Cietais disks var būt sadalīts vairākos <link xref="disk-partitions"> diska nodalījumos</link>; nodalījums būs parādīts zem <gui>sējuma</gui>.</p>
   </item>
 
   <item>
     <title>Brīvā vieta</title>
     <p>Tas tiek parādīts tikai mapēm. Tas parāda brīvās vietas lielumu diskā, kurā atrodas mape. Tas noder, lai pārbaudītu, vai disks nav pilns.</p>
   </item>
+
 
   <item>
     <title>Izmantots</title>

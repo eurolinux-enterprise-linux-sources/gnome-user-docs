@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="reference" id="net-firewall-ports" xml:lang="ca">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="reference" id="net-firewall-ports" xml:lang="ca">
 
   <info>
     <link type="guide" xref="net-security"/>
     <link type="seealso" xref="net-firewall-on-off"/>
     <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
+    <desc>You need to specify the right network port to enable/disable network access for a program with your firewall.</desc>
     <credit type="author">
       <name>Paul W. Frields</name>
       <email>stickster@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>You need to specify the right network port to enable/disable network
-    access for a program with your firewall.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>David Aguilera</mal:name>
@@ -25,12 +22,7 @@
   </info>
 
   <title>Commonly-used network ports</title>
-
-  <p>This is a list of network ports commonly used by applications that provide
-  network services, like file sharing or remote desktop viewing. You can change
-  your system’s firewall to <link xref="net-firewall-on-off">block or allow
-  access</link> to these applications. There are thousands of ports in use, so
-  this table isn’t complete.</p>
+  <p>This is a list of network ports commonly used by applications that provide network services, like file sharing or remote desktop viewing. You can change your system's firewall to <link xref="net-firewall-on-off">block or allow access</link> to these applications. There are thousands of ports in use, so this table isn't complete.</p>
 
   <table shade="rows" frame="top">
     <thead>
@@ -39,10 +31,10 @@
 	  <p>Port</p>
 	</td>
 	<td>
-	  <p>Nom</p>
+	  <p>Name</p>
 	</td>
 	<td>
-	  <p>Descripció</p>
+	  <p>Description</p>
 	</td>
       </tr>
     </thead>
@@ -55,7 +47,7 @@
 	  <p>mDNS, Avahi</p>
 	</td>
 	<td>
-	  <p>Permet que els sistemes es trobin entre ells i descriguin els serveis que ofereixen, sense que s'hagin d'especificar els detalls manualment.</p>
+	  <p>Allows systems to find each other, and describe which services they offer, without you having to specify the details manually.</p>
 	</td>
       </tr>
       <tr>
@@ -63,10 +55,10 @@
 	  <p>631/udp</p>
 	</td>
 	<td>
-	  <p>Imprimint</p>
+	  <p>Printing</p>
 	</td>
 	<td>
-	  <p>Permet enviar treballs d'impressió a una impressora a través de la xarxa.</p>
+	  <p>Allows you to send print jobs to a printer over the network.</p>
 	</td>
       </tr>
       <tr>
@@ -74,10 +66,10 @@
 	  <p>631/tcp</p>
 	</td>
 	<td>
-	  <p>Imprimint</p>
+	  <p>Printing</p>
 	</td>
 	<td>
-	  <p>Permet compartir la vostra impressora amb altres persones a través de la xarxa.</p>
+	  <p>Allows you to share your printer with other people over the network.</p>
 	</td>
       </tr>
       <tr>
@@ -85,11 +77,10 @@
 	  <p>5298/tcp</p>
 	</td>
 	<td>
-	  <p>Presencia</p>
+	  <p>Presence</p>
 	</td>
 	<td>
-	  <p>Allows you to advertise your instant messaging status to other
-          people on the network, such as “online” or “busy”.</p>
+	  <p>Allows you to advertise your instant messaging status to other people on the network, such as "online" or "busy".</p>
 	</td>
       </tr>
       <tr>
@@ -100,8 +91,7 @@
 	  <p>Remote desktop</p>
 	</td>
 	<td>
-	  <p>Allows you to share your desktop so other people can view it or
-          provide remote assistance.</p>
+	  <p>Allows you to share your desktop so other people can view it or provide remote assistance.</p>
 	</td>
       </tr>
       <tr>
@@ -112,11 +102,9 @@
 	  <p>Music sharing (DAAP)</p>
 	</td>
 	<td>
-	  <p>Allows you to share your music library with others on your
-          network.</p>
+	  <p>Allows you to share your music library with others on your network.</p>
 	</td>
       </tr>
     </tbody>
   </table>
-
 </page>

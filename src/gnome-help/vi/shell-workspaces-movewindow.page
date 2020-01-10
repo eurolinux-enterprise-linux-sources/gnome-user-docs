@@ -1,27 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" version="1.0 if/1.0" id="shell-workspaces-movewindow" xml:lang="vi">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" id="shell-workspaces-movewindow" xml:lang="vi">
 
   <info>
     <link type="guide" xref="shell-windows#working-with-workspaces"/>
     <link type="seealso" xref="shell-workspaces"/>
 
+    <revision pkgversion="3.8.0" version="0.3" date="2013-04-23" status="review"/>
     <revision pkgversion="3.8" version="0.3" date="2013-05-10" status="review"/>
-    <revision pkgversion="3.10" date="2013-11-04" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
 
     <credit type="author">
       <name>Dự án tài liệu GNOME</name>
-      <email>gnome-doc-list@gnome.org</email>
+      <email its:translate="no">gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
+      <email its:translate="no">mdhillca@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Go to the <gui>Activities</gui> overview and drag the window to a
-    different workspace.</desc>
+    <desc>Đến Tổng quan hoạt động và kéo cửa sổ vào vùng làm việc khác.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Nguyễn Thái Ngọc Duy</mal:name>
@@ -30,23 +28,23 @@
     </mal:credit>
   </info>
 
-  <title>Chuyển cửa sổ sang vùng làm việc khác</title>
+<title>Chuyển cửa sổ sang vùng làm việc khác</title>
 
   <steps>
     <title>Dùng chuột:</title>
     <item>
       <p if:test="!platform:gnome-classic">Open the
-      <gui xref="shell-introduction#activities">Activities</gui> overview.</p>
+      <link xref="shell-terminology"><gui>Activities</gui> overview</link>.</p>
       <p if:test="platform:gnome-classic">Open the
-      <gui xref="shell-introduction#activities">Activities Overview</gui> from the
-      <gui xref="shell-introduction#activities">Applications</gui> menu
-      at the top left of the screen.</p>
+      <gui xref="shell-terminology">Activities Overview</gui> from the
+      <link xref="shell-terminology"><gui style="menu">Applications</gui>
+      menu</link> at the top left of the screen.</p>
     </item>
+ <item>
+  <p>Nhấn và kéo cửa sổ sang cạnh phải màn hình.</p>
+ </item>
     <item>
-      <p>Nhấn và kéo cửa sổ sang cạnh phải màn hình.</p>
-    </item>
-    <item>
-      <p>The <em xref="shell-workspaces">workspace selector</em> will
+      <p>The <em xref="shell-terminology">workspace selector</em> will
       appear.</p>
     </item>
     <item>
@@ -64,7 +62,7 @@
     <item>
       <p>Select the window that you want to move (for example, using the
       <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq>
-      <em xref="shell-windows-switching">window switcher</em>).</p>
+      <em xref="shell-terminology">window switcher</em>).</p>
     </item>
     <item>
       <p>Press <keyseq><key>Super</key><key>Shift</key><key>Page

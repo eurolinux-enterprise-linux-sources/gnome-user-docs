@@ -1,92 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="user-admin-explain" xml:lang="sl">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="tip" id="user-admin-explain" xml:lang="sl">
 
   <info>
     <link type="guide" xref="user-accounts#privileges"/>
 
+    <desc>Za spremembo pomembnih delov svojega sistema potrebujete skrbniška dovoljenja.</desc>
+
     <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-03" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Dokumentacijski projekt GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>You need administrative privileges to change important parts of your
-    system.</desc>
   </info>
 
-  <title>Kako delujejo skrbniška dovoljenja?</title>
+<title>Kako delujejo skrbniška dovoljenja?</title>
 
-  <p>As well as the files that <em>you</em> create, your computer has a number
-  of files which are needed by the system for it to work properly. If these
-  important <em>system files</em> are changed incorrectly they can cause
-  various things to break, so they are protected from changes by default.
-  Certain applications also modify important parts of the system, and so are
-  also protected.</p>
+  <p>Vaš računalnik poleg datotek, ki jih ustvarite <em>vi</em>, vsebuje tudi številne datoteke, ki jih sistem potrebuje za pravilno delovanje. V primeru napačnih sprememb teh pomembnih <em>sistemskih datotek</em>, se lahko različne stvari pokvarijo, zato so privzeto zaščitene pred spremembami. Tudi določeni programi spremenijo pomembne dele sistema in so zato zaščiteni.</p>
 
-  <p>The way that they are protected is by only allowing users with
-  <em>administrative privileges</em> to change the files or use the
-  applications. In day-to-day use, you will not need to change any system files
-  or use these applications, so by default you do not have administrative
-  privileges.</p>
+  <p>Zaščita spremembo datotek ali uporabo programov omogoča le uporabnikom s <em>skrbniškimi dovoljenji</em>. Pri vsakodnevni uporabi vam sistemskih datotek ne bo treba spreminjati ali uporabljati teh programov. Zato privzeto skrbniških dovoljenj nimate.</p>
 
-  <p>Sometimes you need to use these applications, so you may be able to
-  temporarily get administrative privileges to allow you to make the changes.
-  If an application needs administrative privileges, it will ask for your
-  password. For example, if you want to install some new software, the software
-  installer (package manager) will ask for your administrator password so it
-  can add the new application to the system. Once it has finished, your
-  administrative privileges will be taken away again.</p>
+  <p>Včasih morate te programe uporabiti, zato lahko začasno dobite skrbniške pravice, ki vam omogočajo opravljanje sprememb. V primeru da program potrebuje skrbniške pravice, vas bo vprašal za vaše geslo. Na primer, če želite namestiti novo programsko opremo, vas bo namestilnik paketov (upravljalnik paketov) vprašal za skrbniško geslo, ki mu dovoljuje nameščanje novega programa na sistem. Ko program konča, vam bodo skrbniška dovoljenja ponovno odvzeta.</p>
 
-  <p>Administrative privileges are associated with your user account.
-  <gui>Administrator</gui> users are allowed to have these privileges while
-  <gui>Standard</gui> users are not. Without administrative privileges you will
-  not be able to install software. Some user accounts (for example, the “root”
-  account) have permanent administrative privileges. You should not use
-  administrative privileges all of the time, because you might accidentally
-  change something you did not intend to (like delete a needed system file, for
-  example).</p>
+  <p>Skrbniška dovoljenja so povezana z uporabniškim računom. Nekateri uporabniki lahko imajo skrbniška dovoljenja, drugi pa ne. V primeru da nimate skrbniških dovoljenj, na primer ne boste morali namestiti programov. Nekateri uporabniški računi (na primer račun "root") imajo trajna skrbniška dovoljenja. Skrbniških dovoljenj ne uporabljajte ves čas, saj lahko po nesreči spremenite pomembnega (na primer zahtevano sistemsko datoteko) in kaj pokvarite .</p>
 
-  <p>In summary, administrative privileges allow you to change important parts
-  of your system when needed, but prevent you from doing it accidentally.</p>
+  <p>Na kratko povedano vam skrbniška dovoljenja omogočajo spreminjanje pomembnih delov sistema, ko to potrebujete, ter vam preprečijo, da bi to storili po nesreči.</p>
 
-  <note>
-    <title>What does “super user” mean?</title>
-    <p>A user with administrative privileges is sometimes called a <em>super
-    user</em>. This is simply because that user has more privileges than normal
-    users. You might see people discussing things like <cmd>su</cmd> and
-    <cmd>sudo</cmd>; these are programs for temporarily giving you “super user”
-    (administrative) privileges.</p>
-  </note>
+<note>
+ <title>Kaj pomeni "super uporabnik"?</title>
+  <p>Drugo ime za uporabnika s skrbniškimi dovoljenji je <em>super uporabnik</em>. To ime obstaja, ker ima super uporabnik več dovoljenj kot običajni uporabniki. Morda boste videli ljudi, ki razpravljajo o stvareh kot so <cmd>su</cmd> in <cmd>sudo</cmd>. Ti programi vam začasno dajo pravice "super uporabnika" (skrbnika).</p>
+</note>
 
 <section id="advantages">
-  <title>Why are administrative privileges useful?</title>
-
-  <p>Requiring users to have administrative privileges before important system
-  changes are made is useful because it helps to prevent your system from being
-  broken, intentionally or unintentionally.</p>
-
-  <p>If you had administrative privileges all of the time, you might
-  accidentally change an important file, or run an application which changes
-  something important by mistake. Only getting administrative privileges
-  temporarily, when you need them, reduces the risk of these mistakes
-  happening.</p>
-
-  <p>Only certain trusted users should be allowed to have administrative
-  privileges. This prevents other users from messing with the computer and
-  doing things like uninstalling applications that you need, installing
-  applications that you don’t want, or changing important files. This is useful
-  from a security standpoint.</p>
-
+ <title>Zakaj so skrbniška dovoljenja uporabna?</title>
+  <p>Zahtevanje skrbniških dovoljenj od uporabnikov pred pomembnimi sistemskimi spremembami je uporabno, ker pomaga pri preprečevanju namerne ali nenamerne okvare vašega sistema.</p>
+  <p>V primeru da bi imeli skrbniška dovoljenja ves čas, bi morda po nesreči spremenili pomembno datoteko ali pognali program, ki po nesreči spremeni nekaj pomembnega. Začasno pridobivanje skrbniških dovoljenj, ko jih potrebujete, zmanjša tveganje teh napak.</p>
+  <p>Samo določeni, zaupanja vredni uporabniki bi morali imeti skrbniška dovoljenja.To uporabnikom prepreči odstranjevanje programov, ki jih potrebujete, nameščanje programov, ki jih ne potrebujete ali spreminjanje pomembnih datotek. To je uporabno z vidika varnosti.</p>
 </section>
 
 </page>

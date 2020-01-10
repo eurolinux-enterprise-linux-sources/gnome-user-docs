@@ -1,31 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="sharing-bluetooth" xml:lang="pt-BR">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="sharing-bluetooth" xml:lang="pt-BR">
   <info>
     <link type="guide" xref="bluetooth"/>
-    <link type="guide" xref="sharing"/>
-    <link type="guide" xref="prefs-sharing"/>
+    <link type="guide" xref="settings-sharing"/>
 
-    <revision pkgversion="3.8.2" date="2013-05-13" status="draft"/>
-    <revision pkgversion="3.10" date="2013-11-09" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-08" status="candidate"/>
-    <revision pkgversion="3.14" date="2014-10-13" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+    <revision pkgversion="3.8.2" version="0.1" date="2013-05-13" status="draft"/>
 
     <credit type="author">
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
-      <years>2014</years>
-    </credit>
-    <credit type="author">
-      <name>David King</name>
-      <email>davidk@gnome.org</email>
-      <years>2014-2015</years>
     </credit>
 
+    <desc>Set which folders and devices are able to share over Bluetooth.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Permita que arquivos sejam enviados para seu computador por Bluetooth.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Rodolfo Ribeiro Gomes</mal:name>
@@ -34,46 +21,101 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Enrico Nicoletto</mal:name>
       <mal:email>liverig@gmail.com</mal:email>
       <mal:years>2013.</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>João Santana</mal:name>
-      <mal:email>joaosantana@outlook.com</mal:email>
-      <mal:years>2013.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Fontenelle</mal:name>
-      <mal:email>rafaelff@gnome.org</mal:email>
-      <mal:years>2012-2018.</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Controlando compartilhamento de arquivos por Bluetooth</title>
+  <title>Control sharing over Bluetooth</title>
 
-  <p>Você pode habilitar compartilhamento <gui>Bluetooth</gui> para receber arquivos por Bluetooth na pasta <file>Downloads</file></p>
+  <p>You can allow access to your <file>Public</file> and
+  <file>Downloads</file> folders for Bluetooth file sharing, and also restrict
+  that access to only <em>trusted devices</em>. Configure
+  <gui>Bluetooth Sharing</gui> to control access to the shared folders on your
+  computer.</p>
+
+  <note style="info">
+    <p>A Bluetooth device is <em>trusted</em> if you have <em>paired</em>, or
+    connected your computer to it. See
+    <link xref="bluetooth-connect-device"/>.</p>
+  </note>
 
   <steps>
-    <title>Permitir que arquivos sejam compartilhados com sua pasta <file>Downloads</file></title>
+    <title>Share your <file>Public</file> folder over Bluetooth</title>
     <item>
-      <p>Abra o panorama de <gui xref="shell-introduction#activities">Atividades</gui> e comece a digitar <gui>Bluetooth</gui>.</p>
+      <p>Clique em seu nome na barra superior e selecione <gui>Configurações</gui>.</p>
     </item>
     <item>
-      <p>Clique em <gui>Bluetooth</gui> para abrir o painel.</p>
+      <p>Abra <gui>Compartilhar</gui>.</p>
     </item>
     <item>
-      <p>Certifique-se de que o <link xref="bluetooth-turn-on-off"><gui>Bluetooth</gui> está ativado</link>.</p>
+      <p>Se <gui>Compartilhar</gui> estiver em <gui>OFF</gui>, alterne-o para <gui>ON</gui>.</p>
     </item>
     <item>
-      <p>Dispositivos com capacidade para Bluetooth podem enviar arquivos para sua pasta <file>Downloads</file> apenas quando o painel <gui>Bluetooth</gui> está aberto.</p>
+      <p>Select <gui>Bluetooth Sharing</gui>.</p>
+    </item>
+    <item>
+      <p>Switch <gui>Share Public Folder</gui> to <gui>ON</gui>.</p>
+    </item>
+    <item>
+      <p>If you only want to allow trusted devices to access your
+      <file>Public</file> folder, switch
+      <gui>Only share with Trusted Devices</gui> to <gui>ON</gui>.</p>
+
+      <note style="tip">
+        <p>This option is disabled by default. You should enable it if you want
+        to prevent access to your shared files by anyone with a
+        Bluetooth-enabled cell phone or similar device nearby.</p>
+      </note>
+ 
+    </item>
+    <item>
+      <p>Click <gui style="button">Close</gui>. Bluetooth-enabled devices will
+      now be able to access files in your <file>Public</file> folder.</p>
     </item>
   </steps>
 
-  <note style="tip">
-    <p>Você pode <link xref="sharing-displayname">alterar</link> o nome que seu computador exibe para outros dispositivos.</p>
-  </note>
+  <steps>
+    <title>Allow files to be shared into your <file>Downloads</file> folder</title>
+    <item>
+      <p>Clique em seu nome na barra superior e selecione <gui>Configurações</gui>.</p>
+    </item>
+    <item>
+      <p>Abra <gui>Compartilhar</gui>.</p>
+    </item>
+    <item>
+      <p>Se <gui>Compartilhar</gui> estiver em <gui>OFF</gui>, alterne-o para <gui>ON</gui>.</p>
+    </item>
+    <item>
+      <p>Select <gui>Bluetooth Sharing</gui>.</p>
+    </item>
+    <item>
+      <p>Switch <gui>Save Received Files to Downloads Folder</gui> to
+      <gui>ON</gui>.</p>
+    </item>
+    <item>
+      <p>If you only want to allow trusted devices to access your
+      <file>Downloads</file> folder, switch
+      <gui>Only Receive From Trusted Devices</gui> to <gui>ON</gui>.</p>
+
+      <note style="tip">
+        <p>This option is disabled by default. You should enable it if you want
+        to prevent access to your shared files by anyone with a
+        Bluetooth-enabled cell phone or similar device nearby.</p>
+      </note>
+
+    </item>
+    <item>
+      <p>Click <gui style="button">Close</gui>. Bluetooth-enabled devices will
+      now be able to send files to your <file>Downloads</file> folder.</p>
+    </item>
+  </steps>
 
 </page>

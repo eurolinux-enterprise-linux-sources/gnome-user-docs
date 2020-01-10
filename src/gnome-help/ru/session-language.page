@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="session-language" xml:lang="ru">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="session-language" xml:lang="ru">
 
   <info>
     <link type="guide" xref="prefs-language"/>
+    <desc>Переключение пользовательского интерфейса и текста справочной системы на другой язык.</desc>
 
     <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
 
     <credit type="author">
       <name>Проект документирования GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="author">
-      <name>Шон МакКенс (Shaun McCance)</name>
+      <name>Shaun McCance</name>
       <email>shaunm@gnome.org</email>
     </credit>
     <credit type="author">
@@ -20,13 +20,11 @@
       <email>ak-47@gmx.net</email>
     </credit>
     <credit type="editor">
-      <name>Майкл Хилл (Michael Hill)</name>
+      <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Переключение пользовательского интерфейса и текста справочной системы на другой язык.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Александр Прокудин</mal:name>
@@ -37,66 +35,58 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011-2012</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Станислав Соловей</mal:name>
-      <mal:email>whats_up@tut.by</mal:email>
-      <mal:years>2013-2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Юлия Дронова</mal:name>
-      <mal:email>juliette.tux@gmail.com</mal:email>
-      <mal:years>2013-2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Юрий Мясоедов</mal:name>
-      <mal:email>ymyasoedov@yandex.ru</mal:email>
-      <mal:years>2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
 
   <title>Изменение языка</title>
 
+  <comment>
+    <cite date="2012-02-19">shaunm</cite>
+    <p>Explain how to install support for other languages. Requires us
+    to document software installation.</p>
+  </comment>
+
   <p>Среда рабочего стола и приложения поддерживают множество различных языков. Нужно лишь установить на компьютер подходящий языковой пакет.</p>
 
   <steps>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Region &amp; Language</gui>.</p>
-    </item>
-    <item>
-      <p>Нажмите <gui>Язык и регион</gui>, чтобы открыть этот раздел настроек.</p>
-    </item>
-    <item>
-      <p>Нажмите <gui>Язык</gui>.</p>
-    </item>
-    <item>
-      <p>Выберите нужный вам регион и язык. Если вашего региона и языка нет в списке, нажмите <gui><media its:translate="no" type="image" mime="image/svg" src="figures/view-more-symbolic.svg"><span its:translate="yes">…</span></media></gui> в нижней части списка, чтобы выбрать регион и язык из всех доступных регионов и языков.</p>
-    </item>
-    <item>
-      <p>Нажмите кнопку <gui style="button">Готово</gui>.</p>
-    </item>
-    <item>
-      <p>Respond to the prompt, <gui>Your session needs to be restarted for
-      changes to take effect</gui> by clicking
-      <gui style="button">Restart Now</gui>, or click
-      <gui style="button">×</gui> to restart later.</p>
-    </item>
+    <item><p>Click your name on the top bar and select <gui>Settings</gui>.</p></item>
+    <item><p>Откройте <gui>Языки системы</gui> и выберите вкладку <gui>Языки</gui>.</p></item>
+    <item><p>Select your desired language.
+    The initial list only shows a small subset of the supported languages.
+    If your language is not listed, click
+    <media type="image" mime="image/svg" src="figures/view-more-symbolic.svg"/>.
+    Some translations may be incomplete, and certain applications may not
+    support your language at all. Any untranslated text will appear in the
+    language in which the software was originally developed, usually American
+    English.</p></item>
+    <item><p>Respond to the prompt, <gui>Your session needs to be restarted for
+    these changes to take effect</gui> by clicking
+    <gui style="button">Restart Now</gui>, or click <gui style="button">X</gui>
+    to restart later.</p></item>
   </steps>
-
-  <p>Некоторые переводы могут быть неполными, некоторые приложения могут вообще не иметь поддержки для вашего языка. Все непереведённые текстовые сообщения будут показаны на языке, который использовали разработчики приложения, обычно это американский вариант английского языка.</p>
 
   <p>В вашей домашней папке есть несколько специальных папок, в которых приложения могут сохранять музыку, изображения, документы и прочее. Эти папки используют стандартные имена, зависящие от выбранного языка. При следующем входе в систему вам будет предложено изменить названия этих папок на стандартные названия выбранного вами языка. Если вы планируете использовать новый язык постоянно, следует обновить названия папок.</p>
 
-  <note style="tip">
-    <p>If there are multiple user accounts on your system, there is a separate
-    instance of the <gui>Region &amp; Language</gui> panel for the login screen.
-    Click the <gui>Login Screen</gui> button at the top right to toggle between
-    the two instances.</p>
-  </note>
+  <section id="system">
+    <title>Изменение языка системы</title>
+
+    <p>Когда вы меняете язык, он меняется только для учётной записи, под которой вы вошли в систему. Можно также изменить <em>общесистемный язык</em>, используемый в таких местах, как экран входа в систему.</p>
+
+    <steps>
+      <item><p>Click your name on the top bar and select <gui>Settings</gui>.</p></item>
+      <item><p>Откройте <gui>Языки системы</gui> и выберите вкладку <gui>Языки</gui>.</p></item>
+      <item><p>Select the <gui style="button">Login Screen</gui> button.</p></item>
+      <item><p>Потребуются <link xref="user-admin-explain">административные привилегии</link>. Введите свой пароль или пароль запрашиваемой учётной записи администратора.</p></item>
+      <item><p>Select your desired language.
+      The initial list only shows a small subset of the supported languages.
+      If your language is not listed, click
+      <media type="image" mime="image/svg" src="figures/view-more-symbolic.svg"/>.
+      Some translations may be incomplete, and certain applications may not
+      support your language at all. Any untranslated text will appear in the
+      language in which the software was originally developed, usually American
+      English.</p></item>
+    </steps>
+  </section>
 
 </page>

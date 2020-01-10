@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-adhoc" xml:lang="sr">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="net-adhoc" xml:lang="sr">
   <info>
     <link type="guide" xref="net-wireless"/>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
-    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Фил Бул</name>
@@ -16,10 +13,6 @@
       <name>Шон Мек Кенс</name>
       <email>shaunm@gnome.org</email>
     </credit>
-    <credit type="editor">
-      <name>Мајкл Хил</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
 
     <desc>Користите ад-хок мрежу да дозволите другим уређајима да се повежу на ваш рачунар и на његове мрежне везе.</desc>
 
@@ -28,19 +21,23 @@
 
 <title>Направите бежичну врућу тачку</title>
 
-  <p>Можете да користите ваш рачунар као бежичну врућу тачку. Ово ће допустити другим уређајима да се повежу с вама без одвојене мреже, и дозволиће вам да делите интернет везу коју сте направили са неким другим уређајем, као што је жичана мрежа или мрежа мобилног телефона.</p>
+<p>Можете да користите ваш рачунар као бежичну врућу тачку. Ово ће допустити другим уређајима да се повежу с вама без одвојене мреже, и дозволиће вам да делите интернет везу коју сте направили са неким другим уређајем, као што је жичана мрежа или мрежа мобилног телефона.</p>
+
+<comment>
+<cite date="2012-02-19">shaunm</cite>
+<p>Things I'm not sure about: Is this actually ad-hoc? It seems to use the
+same icon. What happens if you have multiple wireless adapters? Ought to be
+able to share wireless to wireless, I think, but I don't know what the UI
+looks like. Also, does any of this work? I couldn't successfully test.</p>
+<p>Also, looks like there's no page to set the device name. Make one, then
+link below where it says the name of the network is your device name.</p>
+</comment>
 
 <steps>
-  <item>
-    <p>Отворите <gui xref="shell-introduction#yourname">изборник система</gui> на десној страни горње траке.</p>
-  </item>
-  <item>
-    <p>Изаберите <gui><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-excellent-symbolic.svg" width="16" height="16"/> Бежична везе није успостављена</gui> или назив бежичне мреже на коју сте већ повезани. Одељак изборника бежичне везе ће се раширити.</p>
-  </item>
-  <item>
-    <p>Притисните на <gui>Подешавања бежичне</gui>.</p></item>
-  <item><p>Кликните на дугме <gui>Користи као врућу тачку…</gui>.</p></item>
-  <item><p>Ако сте већ повезани на бежичну мрежу, бићете упитани дали желите да прекинете везу са том мрежом. Један бежични прилагођивач може да се повеже или да направи само једну мрежу у исто време. Кликните <gui>Укључи</gui> да потврдите.</p></item>
+  <item><p>Кликните на иконицу мреже на горњој траци и изаберите <gui>Подешавања мреже</gui>.</p></item>
+  <item><p>Изаберите <gui>Бежична</gui> на левој страни.</p></item>
+  <item><p>Кликните на дугме <gui>Користи као врућу тачку</gui>.</p></item>
+  <item><p>Ако сте већ повезани на бежичну мрежу, бићете упитани дали желите да прекинете везу са том мрежом. Један бежични прилагођивач може само да се повеже или да направи једну мрежу у исто време. Кликните <gui>Направи врућу тачку</gui> да потврдите.</p></item>
 </steps>
 
 <p>Назив мреже (ССИД) и кључ безбедности бивају створени самостално. Назив мреже ће бити заснован на називу вашег рачунара. Осталим уређајима ће бити потребни ови подаци да би се повезали на врућу тачку коју сте управо направили.</p>

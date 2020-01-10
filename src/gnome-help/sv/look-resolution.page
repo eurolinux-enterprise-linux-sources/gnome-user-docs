@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="look-resolution" xml:lang="sv">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="look-resolution" xml:lang="sv">
 
   <info>
     <link type="guide" xref="prefs-display"/>
     <link type="seealso" xref="look-display-fuzzy"/>
-
     <revision pkgversion="3.8.0" version="0.3" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-07" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
 
+    <desc>Change the resolution of the screen and its orientation (rotation).</desc>
     <credit type="author">
       <name>Dokumentationsprojekt för GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
@@ -21,74 +19,57 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Shobha Tyagi</name>
-      <email>tyagishobha@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Ändra upplösningen på skärmen och dess orientering (rotation).</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Sebastian Rasmussen</mal:name>
-      <mal:email>sebras@gmail.com</mal:email>
-      <mal:years>2014, 2015, 2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Anders Jonsson</mal:name>
-      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
-      <mal:years>2016, 2017</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Ändra upplösning eller rotation på skärmen</title>
+<title>Change the size or rotation of the screen</title>
 
-  <p>Du kan ändra hur stora (eller hur detaljerade) saker visas på skärmen genom att ändra <em>skärmupplösningen</em>. Du kan ändra vilket håll som är upp (om du till exempel har en roterande skärm) genom att ändra <em>rotationen</em>.</p>
+<p>You can change how big (or how detailed) things appear on the screen by changing the <em>screen resolution</em>. You can change which way up things appear (for example, if you have a rotating display) by changing the <em>rotation</em>.</p>
 
-  <steps>
-    <item>
-      <p>Öppna översiktsvyn <gui xref="shell-introduction#activities">Aktiviteter</gui> och börja skriv <gui>Skärmar</gui>.</p>
-    </item>
-    <item>
-      <p>Klicka på <gui>Skärmar</gui> för att öppna panelen.</p>
-    </item>
-    <item>
-      <p>Om du har flera skärmar och de inte är speglade kan du ha olika inställningar på varje skärm. Välj en skärm i förhandsvisningsområdet.</p>
-    </item>
-    <item>
-      <p>Välj upplösning och rotation.</p>
-    </item>
-    <item>
-      <p>Klicka på <gui>Verkställ</gui>. De nya inställningarna kommer att användas i 20 sekunder innan de återgår. På detta sätt kommer dina gamla inställningar att återställas om du inte ser något med de nya inställningarna. Om du är nöjd med de nya inställningarna klicka på <gui>Behåll ändringar</gui>.</p>
-    </item>
-  </steps>
+<comment>
+<cite date="2012-02-19">shaunm</cite>
+<p>Link display-2monitors in step 3 when non-stub.</p>
+</comment>
+
+<steps>
+  <item><p>Click your name on the top bar and select <gui>Settings</gui>.</p></item>
+  <item><p>Open <gui>Displays</gui>.</p></item>
+  <item><p>If you have multiple displays and they are not mirrored, you can have
+  different settings on each display. Select a display in the preview area.</p></item>
+  <item><p>Select your desired resolution and rotation.</p></item>
+  <item><p>Click <gui>Apply</gui>. The new settings will be applied for 30 seconds
+  before reverting back. That way, if you cannot see anything with the new settings,
+  your old settings will be automatically restored. If you are happy with the new
+  settings, click <gui>Keep This Configuration</gui>.</p></item>
+</steps>
+
+<note style="tip">
+ <p>When you use another display, like a projector, it should be detected automatically so you can change its settings in the same way as your usual display. If this does not happen, just click <gui>Detect Displays</gui>.</p>
+</note>
 
 <section id="resolution">
-  <title>Upplösning</title>
-
-  <p>Upplösningen är antalet pixlar (punkter på skärmen) som kan visas i varje riktning. Varje upplösning har ett <em>bildförhållande</em>, förhållandet mellan bredden och höjden. Bredbildsskärmar använder bildförhållandet 16∶9, medan traditionella skärmar använder 4∶3. Om du väljer en upplösning som inte matchar bildförhållandet för din skärm kommer skärmen att bli en avgränsad bild för att undvika förvrängning, genom att lägga till svarta kanter i toppen och botten på skärmen eller på båda sidor om skärmen.</p>
-
-  <p>Du kan välja upplösningen du föredrar från rullgardinsmenyn <gui>Upplösning</gui>. Om du väljer en som inte är rätt för din skärm kan den <link xref="look-display-fuzzy">se otydlig eller pixellerad</link> ut.</p>
-
+<title>Upplösning</title>
+<p>The resolution is the number of pixels (dots on the screen) in each direction that can be displayed.
+Each resolution has an <em>aspect ratio</em>, the ratio of the width to the
+height. Wide-screen displays use a 16:9 aspect ratio, while traditional
+displays use 4:3. If you choose a resolution that does not match the aspect
+ratio of your display, the screen will be letterboxed to avoid distortion.</p>
+<p>You can choose the resolution you prefer from the <gui>Resolution</gui> drop-down
+list. If you choose one that is not right for your screen it may
+<link xref="look-display-fuzzy">look fuzzy or pixelated</link>.</p>
 </section>
 
 <section id="rotation">
-  <title>Rotation</title>
-
-  <p>På vissa bärbara datorer kan du fysiskt rotera skärmen på många håll. Det är användbart att kunna ändra skärmrotation. Du kan rotera vad du ser på skärmen genom att trycka på knappen med pilarna.</p>
-
+<title>Rotation</title>
+<p>On some laptops, you can physically rotate the screen in many directions.
+It is useful to be able to change the display rotation. You can choose the rotation
+you want for your display from the <gui>Rotation</gui> drop-down list.</p>
 </section>
 
 </page>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" version="1.0 if/1.0" id="shell-workspaces-switch" xml:lang="gl">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" id="shell-workspaces-switch" xml:lang="gl">
 
   <info>
+
     <link type="guide" xref="shell-windows#working-with-workspaces"/>
     <link type="seealso" xref="shell-workspaces"/>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
 
     <credit type="author">
       <name>Proxecto de documentación de GNOME</name>
@@ -15,12 +15,12 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Usar o selector de espazos de traballo.</desc>
+    <desc>Use the workspace selector.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2018</mal:years>
+      <mal:years>2011, 2012.</mal:years>
     </mal:credit>
   </info>
 
@@ -29,37 +29,39 @@
  <steps>  
  <title>Usando o rato:</title>
  <item>
-    <p if:test="!platform:gnome-classic">Abra a vista xeral de <link xref="shell-introduction#activities">Actividades</link>.</p>
+  <p if:test="!platform:gnome-classic">Open the <link xref="shell-terminology">
+  Activities overview</link>.</p>
   <p if:test="platform:gnome-classic">At the top left of the screen, click the
-  <gui xref="shell-introduction#activities">Applications</gui> menu and choose 
+  <link xref="shell-terminology"><gui>Applications</gui> menu</link> and choose 
   <gui>Activities Overview</gui>.</p>
  </item>
  <item>
-  <p>Click on a workspace in the <link xref="shell-workspaces">workspace
+  <p>Click on a workspace in the <link xref="shell-terminology">workspace
   selector</link> on the right side of the screen to view the open windows on
   that workspace.</p>
  </item>
  <item>
-  <p>Prema sobre calquera miniatura de xanela para activar o espazo de traballo.</p>
+  <p>Click on any window thumbnail to activate the workspace.</p>
  </item>
  </steps>
  
-  <p if:test="platform:gnome-classic">De forma alternativa, pode cambiar entre espazos de traballo premendo sobre o identificador de espazo de traballo na parte dereita da lista de xanelas da barra inferior e seleccionando o espazo de traballo que quere usar para o menú.</p>
+ <p if:test="platform:gnome-classic">Alternatively, you can switch between
+  workspaces by clicking the workspace identifier at the right-hand side of
+  the window list on the bottom bar and selecting the workspace you want to
+  use from the menu.</p>
 
  <list>
  <title>Usando o teclado:</title>  
   <item>
     <p>Press
     <keyseq><key xref="keyboard-key-super">Super</key><key>Page Up</key></keyseq>
-    or <keyseq><key>Ctrl</key><key>Alt</key><key>Up</key></keyseq> to move to
-    the workspace shown above the current workspace in the workspace selector.
-    </p>
+    to move to a workspace which is above the current workspace in the workspace
+    selector.</p>
   </item>
   <item>
-    <p>Press <keyseq><key>Super</key><key>Page Down</key></keyseq> or
-    <keyseq><key>Ctrl</key><key>Alt</key><key>Down</key></keyseq> to move to the
-    workspace shown below the current workspace in the workspace selector.</p>
+   <p>Prema <keyseq><key>Super</key><key>RePáx</key></keyseq> para moverse ao espazo de traballo que está embaixo do actual.</p>
   </item>
  </list>
+
 
 </page>

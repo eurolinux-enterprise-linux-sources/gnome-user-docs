@@ -4,9 +4,9 @@
   <info>
     <link type="guide" xref="printing#paper"/>
 
+    <desc>Zbiranje strani in obratni vrstni red tiskanja.</desc>
+
     <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -16,54 +16,31 @@
       <name>Jim Campbell</name>
       <email>jwcampbell@gmail.com</email>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Zbiranje strani in obratni vrstni red tiskanja.</desc>
   </info>
 
-  <title>Tiskanje strani v drugem vrstnem redu</title>
+<title>Tiskanje strani v drugem vrstnem redu</title>
 
-  <section id="reverse">
-    <title>Obrnjeno</title>
+<section id="reverse">
+ <title>Obrnjeno</title>
+ <p>Tiskalniki običajno najprej natisnejo prvo stran in nazadnje zadnjo stran, zato so strani v obratnem vrstnem redu, ko jih obrnete. Če želite, lahko vrstni red tiskanja obrnete.</p>
+ <p>Za obratni vrstni red:</p>
+ <steps>
+  <item><p>Kliknite <guiseq><gui>Datoteka</gui><gui>Natisni</gui></guiseq>.</p></item>
+  <item><p>V zavihku <gui>Splošno</gui> okna tiskanja pod <em>Kopije</em> izberite <gui>Obratno</gui>. Najprej bo natisnjena zadnja stran in tako naprej.</p></item>
+ </steps>
+</section>
 
-    <p>Tiskalniki običajno najprej natisnejo prvo stran in nazadnje zadnjo stran, zato so strani v obratnem vrstnem redu, ko jih obrnete. Če želite, lahko vrstni red tiskanja obrnete.</p>
+<section id="collate">
+ <title>Zbiranje</title>
+ <p>V primeru da tiskate več kot eno kopijo dokumenta, bodo izpisi privzeto združeni po številki strani (naprej bodo natisnjene vse kopije prve strani, nato vse kopije druge strani in tako naprej). <em>Zbiranje</em> bo izpise združilo po kopijah z vsemi stranmi.</p>
 
-    <steps>
-      <title>Za obratni vrstni red:</title>
-      <item>
-        <p>Press <keyseq><key>Ctrl</key><key>P</key></keyseq> to open the Print
-        dialog.</p>
-      </item>
-      <item>
-        <p>In the <gui>General</gui> tab, under <gui>Copies</gui>, check
-        <gui>Reverse</gui>. The last page will be printed first, and so on.</p>
-      </item>
-    </steps>
-
-  </section>
-
-  <section id="collate">
-    <title>Zbiranje</title>
-
-  <p>If you are printing more than one copy of the document, the print-outs
-  will be grouped by page number by default (that is, all of the copies of page
-  one come out, then the copies of page two, and so on). <em>Collating</em>
-  will make each copy come out with its pages grouped together in the right
-  order instead.</p>
-
-  <steps>
-    <title>To collate:</title>
-    <item>
-     <p>Press <keyseq><key>Ctrl</key><key>P</key></keyseq> to open the Print
-     dialog.</p>
-    </item>
-    <item>
-      <p>In the <gui>General</gui> tab, under <gui>Copies</gui>, check
-      <gui>Collate</gui>.</p>
-    </item>
-  </steps>
-
+ <p>Za zbiranje:</p>
+ <steps>
+  <item><p>Kliknite <guiseq><gui>Datoteka</gui><gui>Natisni</gui></guiseq>.</p></item>
+  <item><p>V zavihku <gui>Splošno</gui> okna tiskanja pod <em>Kopije</em> izberite <gui>Zberi</gui>.</p></item>
+ </steps>
+ <!-- Need to add this image <media type="image" src="figures/reverse-collate.png"/> -->
 </section>
 
 </page>

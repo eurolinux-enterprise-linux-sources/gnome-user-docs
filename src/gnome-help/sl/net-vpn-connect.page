@@ -1,100 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-vpn-connect" xml:lang="sl">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="net-vpn-connect" xml:lang="sl">
   <info>
     <link type="guide" xref="net-wireless"/>
     <link type="guide" xref="net-wired"/>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
-    <revision pkgversion="3.10" date="2013-12-05" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Dokumentacijski projekt GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
-    <desc>Set up a VPN connection to a local network over the internet.</desc>
+    <desc>VPN-ji vam omogočajo povezavo s krajevnim omrežjem preko interneta. Naučite se kako nastaviti povezavo VPN.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
 <title>Povezava z VPN</title>
 
-<p>A VPN (or <em>Virtual Private Network</em>) is a way of connecting to a
- local network over the internet. For example, say you want to connect to the
- local network at your workplace while you’re on a business trip. You would
- find an internet connection somewhere (like at a hotel) and then connect to
- your workplace’s VPN. It would be as if you were directly connected to the
- network at work, but the actual network connection would be through the
- hotel’s internet connection. VPN connections are usually <em>encrypted</em>
- to prevent people from accessing the local network you’re connecting to
- without logging in.</p>
+<p>VPN (ali <em>Navidezno zasebno omrežje</em>) je način povezovanja s krajevnim omrežjem preko interneta. Vzemimo primer, ko se želite povezati s krajevnim omrežjem v svoji službi medtem ko ste na poslovnem izletu. Nekje najdite internetno povezavo (na primer v hotelu) in se nato povežite z VPN-jem svojega delovnega mesta. Vse bo delovalo tako kot da ste se povezali na omrežje v službi, vendar bo dejanska omrežna povezava potekala skozi internetno povezavo hotela. Povezave VPN so običajno <em>šifrirane</em>, da ljudem preprečijo dostop do krajevnega omrežja, s katerim se povezujete, brez prijave.</p>
 
-<p>There are a number of different types of VPN. You may have to install some
- extra software depending on what type of VPN you’re connecting to. Find out
- the connection details from whoever is in charge of the VPN and see which
- <em>VPN client</em> you need to use. Then, go to the software installer
- application and search for the <app>NetworkManager</app> package which works
- with your VPN (if there is one) and install it.</p>
+<p>Obstajajo številne različne vrste VPN. Morda morate namestiti dodatne programe glede na vrsto VPN-ja, ki jo imate. Ugotovite podrobnosti povezave od osebe, ki je odgovorna za VPN, in si oglejte katero vrsto <em>odjemalca VPN</em> morate uporabiti. Nato pojdite v namestilnik programov in iščite paket <app>Upravljalnika omrežij</app>, ki deluje z vašim VPN-jem (če obstaja), in ga namestite.</p>
 
 <note>
- <p>If there isn’t a NetworkManager package for your type of VPN, you will
- probably have to download and install some client software from the company
- that provides the VPN software. You’ll probably have to follow some different
- instructions to get that working.</p>
+ <p>V primeru da za vašo vrsto VPN ne obstaja paket Upravljalnika omrežij, boste verjetno morali prejeti in namestiti program odjemalca podjetja, ki zagotavlja programe VPN. Verjetno boste morali za vzpostavitev delovanja slediti drugačnim navodilom.</p>
 </note>
 
-<p>To set up the VPN connection:</p>
+<p>Ko je to narejeno, lahko nastavite povezavo VPN:</p>
 
-  <steps>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Network</gui>.</p>
-    </item>
-    <item>
-      <p>Click on <gui>Network</gui> to open the panel.</p>
-    </item>
-    <item>
-      <p>At the bottom of the list on the left, click the <gui>+</gui> button
-      to add a new connection.</p>
-    </item>
-    <item>
-      <p>Choose <gui>VPN</gui> in the interface list.</p>
-    </item>
-    <item>
-      <p>Choose which kind of VPN connection you have.</p>
-    </item>
-    <item>
-      <p>Fill in the VPN connection details, then press <gui>Add</gui> once you
-      are finished.</p>
-    </item>
-    <item>
-      <p>When you have finished setting-up the VPN, open the
-      <gui xref="shell-introduction#yourname">system menu</gui> from the right side of
-      the top bar, click <gui>VPN off</gui> and select <gui>Connect</gui>. You
-      may need to enter a password for the connection before it is established.
-      Once the connection is made, you will see a lock shaped icon in the top
-      bar.</p>
-    </item>
-    <item>
-      <p>Hopefully you will successfully connect to the VPN. If not, you may
-      need to double-check the VPN settings you entered. You can do this from
-      the <gui>Network</gui> panel that you used to create the connection.
-      Select the VPN connection from the list, then press the
-<media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media> button to review the settings.</p>
-    </item>
-    <item>
-      <p>To disconnect from the VPN, click the system menu on the top bar and
-      click <gui>Turn Off</gui> under the name of your VPN connection.</p>
-    </item>
-  </steps>
+<steps>
+ <item>
+  <p>Kliknite na ikono omrežja v vrhnji vrstici in izberite <gui>Nastavitve omrežja</gui>.</p>
+ </item>
+
+ <item>
+  <p>Na seznamu na levi kliknite na gumb <gui>+</gui> za dodajanje nove povezave.</p>
+ </item>
+
+ <item>
+  <p>Na sezanmu vmesnikov izberite <gui>VPN</gui> in kliknite <gui>Ustvari ...</gui>.</p>
+ </item>
+
+ <item>
+  <p>Kliknite <gui>Dodaj</gui> in izberite vrsto povezave VPN, ki jo imate.</p>
+ </item>
+
+ <item>
+  <p>Kliknite <gui>Ustvari</gui>, sledite navodilom na zaslonu in vnesite podrobnosti kot sta uporabniško ime ali geslo.</p>
+ </item>
+
+ <item>
+  <p>Ko ste končali z nastavljanjem VPN, kliknite na ikono omrežja v zgornji vrstici, pojdite v <gui>Povezave VPN</gui> in kliknite na povezavo, ki ste jo pravkar ustvarili. Računalnik bo poskusil vzpostaviti povezavo VPN - ikona omrežja se bo spremenila, medtem ko se računalnik poskuša povezati.</p>
+ </item>
+
+ <item>
+  <p>Verjetno se boste uspešno povezali z VPN-jem. Morda boste morali dvakrat preveriti nastavitve VPN, ki ste jih vnesli. To lahko storite s klikom na ikono omrežja, klikom na <gui>Uredi povezave</gui> in klikom zavihka <gui>VPN</gui>.</p>
+ </item>
+
+ <item>
+  <p>Za prekinitev povezave VPN kliknite na ikono omrežja v vrhnji vrstici in kliknite <gui>Prekini povezavo</gui> pod imenom svoje povezave VPN.</p>
+ </item>
+</steps>
 
 </page>

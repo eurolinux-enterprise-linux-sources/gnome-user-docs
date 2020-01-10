@@ -2,12 +2,11 @@
 <page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="files-search" xml:lang="vi">
 
   <info>
-    <link type="guide" xref="files#common-file-tasks"/>
+    <link type="guide" xref="files"/>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-25" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
+    <desc>Chọn tập tin dựa theo tên và loại tập tin. Lưu tìm kiếm để dùng lại sau này.</desc>
     <credit type="author">
       <name>Dự án tài liệu GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
@@ -20,14 +19,7 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Locate files based on file name and type.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Nguyễn Thái Ngọc Duy</mal:name>
@@ -38,8 +30,7 @@
 
   <title>Tìm tập tin</title>
 
-  <p>You can search for files based on their name or file type directly
-  within the file manager.</p>
+  <p>Bạn có thể tìm tập tin theo tên hoặc loại tập tin trong trình quản lý tập tin. Bạn thậm chí có thể lưu truy vấn và nó sẽ xuất hiện như một thư mục đặc biệt.</p>
 
   <links type="topic" style="linklist">
     <title>Ứng dụng tìm khác</title>
@@ -49,47 +40,42 @@
 
   <steps>
     <title>Tìm</title>
-    <item>
-      <p>Open the <app>Files</app> application from the
-      <gui xref="shell-introduction#activities">Activities</gui> overview.</p>
+    <item><p>Mở ứng dụng <app>Tập tin</app> từ Tổng quan <gui>hoạt động</gui>.</p></item>
+    <item><p>Nếu bạn biết những tập tin bạn tìm nằm trong một thư mục cụ thể thì đến thư mục đó.</p></item>
+    <item><p>Click the magnifying glass in the toolbar, or press
+    <keyseq><key>Ctrl</key><key>F</key></keyseq>.</p></item>
+    <item><p>Type a word or words that you know appear in the file name. For
+    example, if you name all your invoices with the word "Invoice", type
+    <input>invoice</input>. Press <key>Enter</key>. Words are matched regardless
+    of case.</p></item>
+    <item><p>You can narrow your results by location and file type.</p>
+    <list>
+      <item><p>Click <gui>Home</gui> to restrict the search results to your
+      <file>Home</file> folder, or <gui>All Files</gui> to search
+      everywhere.</p></item>
+      <item><p>Click <key>+</key> and pick a <gui>File Type</gui> from the
+      drop-down list to narrow the search results based on file type. Click the
+      <key>x</key> button to remove this option and widen the search
+      results.</p></item>
+    </list>
     </item>
-    <item>
-      <p>Nếu bạn biết những tập tin bạn tìm nằm trong một thư mục cụ thể thì đến thư mục đó.</p>
-    </item>
-    <item>
-      <p>Type a word or words that you know appear in the file name, and they
-      will be shown in the search bar. For example, if you name all your
-      invoices with the word “Invoice”, type <input>invoice</input>. Words are
-      matched regardless of case.</p>
-      <note>
-        <p>Instead of typing words directly to bring up the search bar, you can
-	click the magnifying glass in the toolbar, or press
-        <keyseq><key>Ctrl</key><key>F</key></keyseq>.</p>
-      </note>
-    </item>
-    <item>
-      <p>You can narrow your results by location and file type.</p>
-      <list>
-        <item>
-          <p>Click <gui>Home</gui> to restrict the search results to your
-          <file>Home</file> folder, or <gui>All Files</gui> to search
-          everywhere.</p>
-        </item>
-        <item>
-          <p>Click the <gui>+</gui> button and pick a <gui>File Type</gui> from
-	  the drop-down list to narrow the search results based on file type.
-	  Click the <gui>×</gui> button to remove this option and widen the
-	  search results.</p>
-        </item>
-      </list>
-    </item>
-    <item>
-      <p>Bạn có thể mở, chép, xoá hoặc dùng tập tin từ kết quả tìm kiếm như với bất kỳ thư mục nào khác.</p>
-    </item>
-    <item>
-      <p>Click the magnifying glass in the toolbar again to exit the search and
-      return to the folder.</p>
-    </item>
+    <item><p>Bạn có thể mở, chép, xoá hoặc dùng tập tin từ kết quả tìm kiếm như với bất kỳ thư mục nào khác.</p></item>
+    <item><p>Click the magnifying glass in the toolbar again to exit the search
+    and return to the folder.</p></item>
   </steps>
 
+  <p>Nếu bạn tìm thường xuyên, bạn có thể lưu tìm kiếm lại để truy cập nhanh.</p>
+
+  <steps>
+    <title>Lưu tìm kiếm</title>
+    <item><p>Bắt đầu tìm như trên.</p></item>
+    <item><p>When you're happy with the search parameters, click the gear
+    button and select <gui>Save Search As</gui>.</p></item>
+    <item><p>Đặt tên cho tìm kiếm và nhấn <gui>Lưu</gui>. Nếu bạn thích, chọn thư mục khác để lưu. Khi bạn xem thư mục đó, bạn sẽ thấy tìm kiếm đã lưu có biểu tượng thư mục màu cam với kính lúp bên trên.</p></item>
+  </steps>
+
+  <p>To remove the search file when you are done with it, simply
+  <link xref="files-delete">delete</link> the search as you would any other
+  file. When you delete a saved search, it does not delete the files that the
+  search matched.</p>
 </page>

@@ -1,83 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-vpn-connect" xml:lang="nl">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="net-vpn-connect" xml:lang="nl">
   <info>
     <link type="guide" xref="net-wireless"/>
     <link type="guide" xref="net-wired"/>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
-    <revision pkgversion="3.10" date="2013-12-05" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Gnome-documentatieproject</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
-    <desc>Met VPN kunt u verbinden met een lokaal netwerk via internet.</desc>
+    <desc>VPNs allow you to connect to a local network over the internet. Learn how to set up a VPN connection.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
   </info>
 
-<title>Verbinden met een VPN</title>
+<title>Connect to a VPN</title>
 
-<p>Een VPN (of <em>Virtual Private Network</em>) is een manier om te verbinden met een lokaal netwerk via internet. Stel, bijvoorbeeld, dat u verbinding wilt maken met het lokale netwerk op uw werkplek terwijl u op zakenreis bent. U zou ergens (zoals in een hotel) een internetverbinding kunnen maken en dan verbinding maken met het VPN van uw werkplek. Het zou zijn alsof u direct verbonden was met het netwerk op het werk, maar de eigenlijke netwerkverbinding zou zijn via de internetverbinding van het hotel. VPN-verbindingen zijn meestal <em>versleuteld</em> om te voorkomen dat mensen zonder in te loggen toegang krijgen tot het lokale netwerk waarmee u verbinding heeft.</p>
+<p>A VPN (or <em>Virtual Private Network</em>) is a way of connecting to a local network over the internet. For example, say you want to connect to the local network at your workplace while you're on a business trip. You would find an internet connection somewhere (like at a hotel) and then connect to your workplace's VPN. It would be as if you were directly connected to the network at work, but the actual network connection would be through the hotel's internet connection. VPN connections are usually <em>encrypted</em> to prevent people from accessing the local network you're connecting to without logging in.</p>
 
-<p>Er zijn verschillende soorten VPN. U dient mogelijk enige extra software te installeren, afhankelijk van het type VPN waarmee u verbindt. Ga na wat de verbindingsdetails zijn bij degene die verantwoordelijk is voor het VPN en kijk welke <em>VPN-client</em> u moet gebruiken. Ga daarna naar de software-installatie-toepassing en zoek naar het <app>netwerkbeheer</app>-pakket dat werkt met uw VPN (als er een is) en installeer dat.</p>
+<p>There are a number of different types of VPN. You may have to install some extra software depending on what type of VPN you're connecting to. Find out the connection details from whoever is in charge of the VPN and see which <em>VPN client</em> you need to use. Then, go to the software installer application and search for the <app>NetworkManager</app> package which works with your VPN (if there is one) and install it.</p>
 
 <note>
- <p>Als er geen netwerkbeheerpakket is voor uw type VPN, dan zult u waarschijnlijk client-software moeten downloaden en installeren van het bedrijf dat de VPN-software levert. U zult mogelijk wat andere instructies moeten volgen om dat werkend te krijgen.</p>
+ <p>If there isn't a NetworkManager package for your type of VPN, you will probably have to download and install some client software from the company that provides the VPN software. You'll probably have to follow some different instructions to get that working.</p>
 </note>
 
-<p>Om de VPN-verbinding in te stellen:</p>
+<p>Once that's done, you can set up the VPN connection:</p>
 
-  <steps>
-    <item>
-      <p>Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht en typ <gui>Netwerk</gui>.</p>
-    </item>
-    <item>
-      <p>Klik op <gui>Netwerk</gui> om het paneel te openen.</p>
-    </item>
-    <item>
-      <p>Aan de onderkant van de lijst aan de linkerkant, klik op de <key>+</key>-knop om een nieuwe verbinding toe te voegen.</p>
-    </item>
-    <item>
-      <p>Kies <gui>VPN</gui> in de interface-lijst.</p>
-    </item>
-    <item>
-      <p>Kies welk soort VPN-verbinding u heeft.</p>
-    </item>
-    <item>
-      <p>Vul de VPN-verbindingsdetails in en druk daarna op <gui>Toevoegen</gui> als u klaar bent.</p>
-    </item>
-    <item>
-      <p>Als u klaar bent met het instellen van de VPN, open dan het <gui xref="shell-introduction#yourname">systeemmenu</gui> rechts in de bovenbalk, klik op <gui>VPN uit</gui> en kies <gui>Verbinden</gui>. Mogelijk dient u, voordat de verbinding tot stand kan worden gebracht, een wachtwoord in te voeren. Zodra er verbinding is ziet u een slotvormig pictogram in de bovenbalk.</p>
-    </item>
-    <item>
-      <p>Hopelijk zult u met succes verbinding maken met het VPN. Zo niet, dan moet u misschien de VPN-instellingen die u ingevoerd heeft controleren. U doet dit vanuit het paneel <gui>Netwerk</gui> dat u gebruikt heeft om de verbinding aan te maken. Kies uit de lijst VPN-verbinding en druk op de knop <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">instellingen</span></media> om de instellingen te bekijken.</p>
-    </item>
-    <item>
-      <p>Om de verbinding met het VPN te verbreken, klik in de bovenbalk op het systeemmenu en kies <gui>Verbinding verbreken</gui> onder de naam van uw VPN-verbinding.</p>
-    </item>
-  </steps>
+<steps>
+ <item>
+  <p>Click the network icon on the top bar and select <gui>Network Settings</gui>.</p>
+ </item>
+
+ <item>
+  <p>In the list on the left, click the <gui>+</gui> button
+  to add a new connection.</p>
+ </item>
+
+ <item>
+  <p>Choose <gui>VPN</gui> in the interface list, and click <gui>Create…</gui>.</p>
+ </item>
+
+ <item>
+  <p>Click <gui>Add</gui> and choose which kind of VPN connection you have.</p>
+ </item>
+
+ <item>
+  <p>Click <gui>Create</gui> and follow the instructions on the screen, entering details like your username and password as you go.</p>
+ </item>
+
+ <item>
+  <p>When you've finished setting-up the VPN, click the network icon on the top bar, go to <gui>VPN Connections</gui> and click on the connection you just created. It will try to establish a VPN connection - the network icon will change as it tries to connect.</p>
+ </item>
+
+ <item>
+  <p>Hopefully, you will successfully connect to the VPN. If not, you may need to double-check the VPN settings you entered. You can do this by clicking the network icon, clicking <gui>Network Settings</gui> and going to the <gui>VPN</gui> tab.</p>
+ </item>
+
+ <item>
+  <p>To disconnect from the VPN, click the network icon on the top bar and click <gui>Disconnect</gui> under the name of your VPN connection.</p>
+ </item>
+</steps>
 
 </page>

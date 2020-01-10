@@ -6,8 +6,6 @@
     <link type="seealso" xref="shell-keyboard-shortcuts"/>
 
     <revision pkgversion="3.7.5" version="0.2" date="2013-02-23" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.20" date="2016-08-13" status="candidate"/>
 
     <credit type="author">
       <name>Michael Hill</name>
@@ -27,8 +25,6 @@
        <email>kittykat3756@gmail.com</email>
     </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
     <desc>Alkalmazások és az asztal használata egér nélkül.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -40,7 +36,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Kelemen Gábor</mal:name>
       <mal:email>kelemeng at gnome dot hu</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015, 2016, 2017</mal:years>
+      <mal:years>2011, 2012, 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -60,15 +56,17 @@
       <mal:email>lukacs.bence1 at gmail dot com</mal:email>
       <mal:years>2011</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Nagy Zoltán</mal:name>
-      <mal:email>dzodzie at gmail dot com</mal:email>
-      <mal:years>2011</mal:years>
-    </mal:credit>
   </info>
 
   <title>Billentyűzetnavigáció</title>
+
+  <comment>
+    <cite date="2012-03-14" href="mailto:shaunm@gnome.org">Shaun McCance</cite>
+    <p>Do <em>NOT</em> use <code>ui:expanded</code> on this page. I know it's
+    tempting, but the target audience for this page is people who cannot use
+    a mouse, and having to expand sections when you're just figuring out how
+    to drive things with the keyboard is a burden.</p>
+  </comment>
 
   <p>Ez az oldal részletezi a billentyűnavigációt azok számára, akik nem tudnak egeret vagy más mutatóeszközt használni, vagy csak a lehető legtöbbet szeretnék használni a billentyűzetet. A minden felhasználó számára hasznos gyorsbillentyűkkel kapcsolatban nézze meg a <link xref="shell-keyboard-shortcuts"/> oldalt.</p>
 
@@ -89,6 +87,7 @@
     <td><p>Nyílbillentyűk</p></td>
     <td>
       <p>Kijelölés mozgatása egyetlen vezérlőelem részei között, vagy kapcsolódó vezérlőelemek halmazában. A nyílbillentyűk segítségével mozgathatja a fókuszt az eszköztáron belül, kiválaszthat elemeket egy listából vagy ikonnézetből, vagy egy választógombot egy csoportból.</p>
+      <p>Fanézetben a balra és jobbra nyílbillentyűkkel összecsukhatja és kibonthatja a gyermekekkel rendelkező elemeket.</p>
     </td>
   </tr>
   <tr>
@@ -98,7 +97,6 @@
   <tr>
     <td><p><keyseq><key>Ctrl</key><key>Nyílbillentyűk</key></keyseq></p></td>
     <td><p>Listában vagy ikonnézetben az összes elem kiválasztása a jelenleg kijelölt elemtől az újonnan fókuszba került elemig.</p></td>
-    <td><p>Fanézetben a gyermekekkel rendelkező elemek kibonthatók vagy összecsukhatók a gyermekek megjelenítéséhez vagy elrejtéséhez: a kibontáshoz nyomja meg a <keyseq><key>Shift</key><key>→</key></keyseq>, az összecsukáshoz a <keyseq><key>Shift</key><key>←</key></keyseq> billentyűkombinációt.</p></td>
   </tr>
   <tr>
     <td><p><key>Szóköz</key></p></td>
@@ -157,7 +155,7 @@
   </tr>
   <tr>
     <td><p><keyseq><key>Super</key><key>M</key></keyseq></p></td>
-    <td><p><link xref="shell-notifications#messagetray">Az üzenettálca megnyitása.</link> A bezárásához nyomja meg az <key>Esc</key> billentyűt.</p></td>
+    <td><p><link xref="shell-notifications#messagingtray">Az üzenettálca megnyitása.</link> A bezárásához nyomja meg az <key>Esc</key> billentyűt.</p></td>
   </tr>
 </table>
 
@@ -180,8 +178,6 @@
     <td><p>Az aktuális ablak átméretezése. Az <keyseq><key>Alt</key><key>F8</key></keyseq> lenyomása után használja a nyílbillentyűket az ablak átméretezésére. Az <key>Enter</key> lenyomása befejezi az ablak átméretezését, vagy az <key>Esc</key> visszaállítja az eredeti méretére.</p></td>
   </tr>
   <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-updown"/>
-  <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-left"/>
-  <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-right"/>
   <tr>
     <td><p><keyseq><key>Alt</key><key>F5</key></keyseq> vagy <keyseq><key>Super</key><key>↓</key></keyseq></p>
     </td>

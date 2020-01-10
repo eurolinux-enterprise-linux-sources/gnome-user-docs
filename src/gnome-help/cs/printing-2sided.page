@@ -4,9 +4,9 @@
   <info>
     <link type="guide" xref="printing#paper"/>
 
+    <desc>Print on both sides of the paper, or multiple pages per sheet.</desc>
+
     <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -16,43 +16,38 @@
       <name>Jim Campbell</name>
       <email>jwcampbell@gmail.com</email>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Jak tisknout na obě strany papíru nebo více stránek na jeden list.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
       <mal:email>adamatousek@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Marek Černocký</mal:name>
-      <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014, 2015</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Tisk oboustranných a vícestránkových rozvržení</title>
+<title>Print two-sided and multi-page layouts</title>
 
-  <p>Jestli chcete tisknout na obě strany listu papíru:</p>
+<p>To print on both sides of each sheet of paper:</p>
 
-  <steps>
-    <item>
-      <p>Otevřete dialogové okno tisku zmáčknátím <keyseq><key>Ctrl</key><key>P</key></keyseq>.</p>
-    </item>
-    <item>
-      <p>V okně <gui>Tisk</gui> jděte na kartu <gui>Vzhled stránky</gui> a vyberte si v rozbalovacím seznamu <gui>Oboustranné</gui>. Pokud je volba nepřístupná, není oboustranný tisk vaší tiskárnou podporován.</p>
-      <p>Tiskárny podporují oboustranný tisk různými způsoby. Je dobré si to nejprve vyzkoušet, abyste měli přehled, jak to v daném konkrétním případě funguje.</p>
-    </item>
-    <item>
-      <p>Na jednu <em>stranu</em> papíru můžete také vytisknout více stránek dokumentu. K tomu použijte volbu <gui>Stránek na stranu papíru</gui>.</p>
-    </item>
-  </steps>
-
-  <note>
-    <p>Dostupnost těchto voleb může záviset na typu tiskárny, kterou máte, stejně jako na aplikaci, kterou používáte. Tyto volby nemusí být vždy k dispozici.</p>
-  </note>
-
+<steps>
+ <item>
+  <p>Click <guiseq><gui>File</gui><gui>Print</gui></guiseq>.</p>
+ </item>
+ <item>
+  <p>Go to the <gui>Page Setup</gui> tab of the Print window and choose an option
+   from the <gui>Two-sided</gui> drop-down list. If the option is disabled,
+   two-sided printing is not available for your printer.</p>
+  <p>Printers handle two-sided printing in different ways. It's a good idea to
+  experiment with your printer to see how it works.</p>
+ </item>
+ <item>
+  <p>You can print more than one page of the document per <em>side</em> of paper
+ too. Use the <gui>Pages per side</gui> option to do this.</p>
+ </item>
+</steps>
+<note>
+  <p>The availability of these options may depend on the type of printer you have,
+ as well as the application you are using.  This option may not always be
+ available.</p>
+</note>
 </page>

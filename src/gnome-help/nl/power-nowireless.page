@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="power-nowireless" xml:lang="nl">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="power-nowireless" xml:lang="nl">
 
   <info>
     <link type="guide" xref="power#problems"/>
     <link type="seealso" xref="power-suspendfail"/>
-    <link type="seealso" xref="hardware-driver"/>
 
     <revision pkgversion="3.7.1" version="0.2" date="2012-11-16" status="outdated"/>
-    <revision pkgversion="3.10" date="2013-10-28" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-
+    <desc>Some wireless devices have problems handling when your computer is suspended and does not resume properly.</desc>
     <credit type="author">
       <name>Gnome-documentatieproject</name>
       <email>gnome-doc-list@gnome.org</email>
@@ -24,46 +21,33 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Met sommige draadloze apparaten krijgt u problemen wanneer uw computer in de pauzestand is gezet en werken daarna niet meer.</desc>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Ik heb geen draadloos netwerk na het weer actief worden van mijn computer</title>
+<title>Ik heb geen draadloos netwerk na ontwaken van mijn computer</title>
 
-  <p>Als u uw computer in pauzestand heeft gezet, dan kan het zijn dat uw draadloze verbinding niet werkt als u deze hervat. Dit gebeurt als het <link xref="hardware-driver">stuurprogramma</link> voor het draadloze apparaat bepaalde energiebesparende functies niet ondersteunt. Over het algemeen wordt de draadloze verbinding niet op de juiste wijze ingeschakeld als de computer wordt hervat.</p>
+<p>If you have suspended your computer, or it has hibernated, you may find that
+your wireless internet connection does not work when you resume it again. This
+happens when the <link xref="hardware-driver">driver</link> for the wireless
+device does not fully support certain power saving features. Typically, the
+wireless connection fails to turn on properly when the computer is resumed.</p>
 
-  <p>Als dit gebeurt probeer dan om draadloos uit en daarna weer in te schakelen:</p>
+<p>If this happens, try switching your wireless off and then back on again:</p>
+<steps>
+  <item>
+    <p>Click your name on the top bar and select <gui>Settings</gui></p>
+  </item>
+  <item>
+    <p>Open <gui>Network</gui> and select the <gui>Wireless</gui> tab</p>
+  </item>
+  <item>
+    <p>Switch the wireless off and then on again</p>
+  </item>
+  <item>
+    <p>If the wireless still does not work, switch on <gui>Airplane Mode</gui> and then switch it off again</p>
+  </item>
+</steps>
 
-  <steps>
-    <item>
-      <p>Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht en typ <gui>Netwerk</gui>.</p>
-    </item>
-    <item>
-      <p>Klik op <gui>Netwerk</gui> om het paneel te openen.</p>
-    </item>
-    <item>
-      <p>Selecteer <gui>Wifi</gui>.</p>
-    </item>
-    <item>
-      <p>Zet draadloos <gui>UIT</gui> en daarna weer <gui>AAN</gui>.</p>
-    </item>
-    <item>
-      <p>Wanneer het draadloos nog steeds niet werkt, zet <gui>Vliegtuigstand</gui> dan <gui>AAN</gui> en daarna weer <gui>UIT</gui>.</p>
-    </item>
-  </steps>
-
-  <p>Als dit niet werkt, dan zou het opnieuw starten van uw computer het draadloze netwerk weer moeten laten werken. Als u daarna nog steeds problemen heeft, maak dan verbinding met het internet via de ethernetkabel en werk uw computer bij.</p>
+<p>If this does not work, restarting your computer should make the wireless work
+again.</p>
 
 </page>

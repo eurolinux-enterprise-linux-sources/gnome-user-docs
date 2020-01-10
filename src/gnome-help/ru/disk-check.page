@@ -13,14 +13,13 @@
       <email>nruz@alumnos.inf.utfsm.cl</email>
     </credit>
     <credit type="editor">
-      <name>Майкл Хилл (Michael Hill)</name>
+      <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
-    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
 
-    <desc>Test your hard disk for problems to make sure that it’s healthy.</desc>
+    <desc>Проверьте свой жёсткий диск на наличие неисправностей, чтобы убедиться, что он в порядке.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -32,25 +31,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011-2012</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Станислав Соловей</mal:name>
-      <mal:email>whats_up@tut.by</mal:email>
-      <mal:years>2013-2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Юлия Дронова</mal:name>
-      <mal:email>juliette.tux@gmail.com</mal:email>
-      <mal:years>2013-2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Юрий Мясоедов</mal:name>
-      <mal:email>ymyasoedov@yandex.ru</mal:email>
-      <mal:years>2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
 
@@ -60,27 +41,25 @@
  <title>Проверка жёсткого диска</title>
   <p>Жёсткие диски имеют встроенный диагностический инструмент <app>SMART</app> (Self-Monitoring, Analysis, and Reporting Technology), постоянно проверяющий диск на наличие потенциальных проблем. SMART предупредит вас в случае возможности выхода диска из строя, чтобы помочь избежать потери важных данных.</p>
 
-  <p>Although SMART runs automatically, you can also check your disk’s
- health by running the <app>Disks</app> application:</p>
+  <p>Хотя SMART запускается автоматически, можно также поверить исправность диска с помощью приложения <app>Диски</app>:</p>
 
 <steps>
- <title>Check your disk’s health using the Disks application</title>
+ <title>Проверка исправности диска с помощью приложения <app>Диски</app></title>
 
-  <item>
-    <p>Откройте <gui>Обзор</gui> и откройте приложение <app>Диски</app>.</p>
-  </item>
-  <item>
-    <p>Select the disk you want to check from the list of storage devices on
-    the left. Information and status of the disk will be shown.</p>
-  </item>
-  <item>
-    <p>Click the menu button and select <gui>SMART Data &amp; Self-Tests…</gui>.
-    The <gui>Overall Assessment</gui> should say “Disk is OK”.</p>
-  </item>
-  <item>
-    <p>See more information under <gui>SMART Attributes</gui>, or click the
-    <gui style="button">Start Self-test</gui> button to run a self-test.</p>
-  </item>
+ <item>
+  <p>Откройте приложение <app>Диски</app> из <gui>Обзора</gui>.</p>
+ </item>
+ <item>
+  <p>Select the disk you want to check from the <gui>Storage Devices</gui> list.
+  Information and status of the disk will appear under <gui>Drive</gui>.</p>
+ </item>
+ <item>
+  <p><gui>SMART Status</gui> should say "Disk is healthy".</p>
+ </item>
+ <item>
+  <p>Click the <gui>SMART Data</gui> button to view more drive information, or
+  to run a self-test.</p>
+ </item>
 
 </steps>
 
@@ -88,14 +67,13 @@
 
 <section id="disk-not-healthy">
 
- <title>What if the disk isn’t healthy?</title>
+ <title>Что делать, если диск неисправен?</title>
 
-  <p>Even if the <gui>Overall Assessment</gui> indicates that the disk
-  <em>isn’t</em> healthy, there may be no cause for alarm. However, it’s better
-  to be prepared with a <link xref="backup-why">backup</link> to prevent data
-  loss.</p>
+  <p>Even if the <gui>SMART Status</gui> indicates that the disk <em>isn't</em>
+ healthy, there may be no cause for alarm. However, it's better to be prepared
+ with a <link xref="backup-why">backup</link> to prevent data loss.</p>
 
-  <p>If the status says “Pre-fail”, the disk is still reasonably healthy but
+  <p>If the status says "Pre-fail", the disk is still reasonably healthy but
  signs of wear have been detected which mean it might fail in the near future.
  If your hard disk (or computer) is a few years old, you are likely to see
  this message on at least some of the health checks. You should

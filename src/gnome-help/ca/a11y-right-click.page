@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task a11y" id="a11y-right-click" xml:lang="ca">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task a11y" id="a11y-right-click" xml:lang="ca">
   <info>
     <link type="guide" xref="mouse"/>
     <link type="guide" xref="a11y#mobility" group="clicking"/>
 
-    <revision pkgversion="3.8.0" date="2013-03-13" status="candidate"/>
-    <revision pkgversion="3.9.92" date="2013-09-18" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="final"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
 
     <credit type="author copyright">
       <name>Shaun McCance</name>
@@ -25,12 +19,9 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
     <desc>Com fer que en prémer i mantenir el botó primari del ratolí es faci clic amb el botó secundari.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>David Aguilera</mal:name>
@@ -45,29 +36,39 @@
 
   <steps>
     <item>
-      <p>Obriu la descripció general de les <gui xref="shell-introduction#activities">Activities</gui>  i comenceu a escriure  <gui>Accés Universal</gui>.</p>
+      <p>Click your name on the top bar and select <gui>Settings</gui>.</p>
     </item>
     <item>
-      <p>Feu clic a <gui>Accés universal</gui> per obrir el quadre.</p>
+      <p>Obriu l'<gui>Accés universal</gui> i seleccioneu <gui>Apuntar i fer clic</gui></p>
     </item>
     <item>
-      <p>Premeu <gui>Assistent pel Clic</gui> a la secció <gui>Apuntant &amp; Clicant</gui>.</p>
-    </item>
-    <item>
-      <p>Canvieu el<gui>Segon clic simulat</gui> a <gui>ON</gui>.</p>
+      <p>Activeu el <gui>Clic secundari simulat</gui>.</p>
     </item>
   </steps>
 
-  <p>Podeu canviar el temps que ha de mantenir-se premut el botó esquerre del ratolí abans de registrar-se com a clic dret canviant el <gui>retard en l'acceptació</gui>.</p>
+  <p>You can change how long you must hold down the left mouse button before it
+  is registered as a right click. On the <gui>Pointing and Clicking</gui> tab,
+  change the <gui>Acceptance delay</gui> under <gui>Simulated Secondary
+  Click</gui>.</p>
 
-  <p>Per fer clic amb el botó dret del ratolí amb un clic secundari simulat, manteniu premut el botó esquerre del ratolí on normalment feu clic amb el botó dret i, a continuació, deixeu-lo anar. El punter es pinta amb un color diferent mentre es manté premut el botó esquerre del ratolí. Una vegada que aquest color canviï completament, deixeu-lo per fer clic amb el botó dret.</p>
+  <p>To right-click with simulated secondary click, hold down the left mouse
+  button where you would normally right-click, then release. The pointer fills
+  with blue as you hold down the left mouse button. Once it is entirely blue,
+  release the mouse button to right-click.</p>
 
-  <p>Alguns punters especials, com els punters de mida, no canvien de color. Podeu fer servir el clic secundari simulat de manera normal, encara que no obtingueu informació visuals del punter.</p>
+  <p>Some special pointers, such as the resize pointers, do not change colors.
+  You can still use simulated secondary click as normal, even if you don't get
+  visual feedback from the pointer.</p>
 
-  <p>Si utilitzeu les <link xref="mouse-mousekeys">tecles de ratoló</link>, podeu fer clic al botó dret mantenint premuda la tecla <key>5</key> del vostre teclat numèric.</p>
+  <p>If you use <link xref="mouse-mousekeys">Mouse Keys</link>, this also
+  allows you to right-click by holding down the <key>5</key> key on your
+  keypad.</p>
 
   <note>
-    <p>A la descripció general de les <gui>Activitats</gui>  , sempre podeu fer clic amb el botó dret del ratolí una estona prolongada, fins i tot amb aquesta característica desactivada. La premuda prolongada funciona de manera lleugerament diferent a la descripció general: no haureu d'alliberar el botó per fer clic amb el botó dret.</p>
+    <p>In the <gui>Activities</gui> overview, you are always able to long-press
+    to right-click, even with this feature disabled. Long-press works slightly
+    differently in the overview: You do not have to release the button to
+    right-click.</p>
   </note>
 
 </page>

@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="mouse-mousekeys" xml:lang="ca">
-
-  <info>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="mouse-mousekeys" xml:lang="ca">
+<info>
     <link type="guide" xref="mouse"/>
     <link type="guide" xref="a11y#mobility" group="pointing"/>
 
-    <revision pkgversion="3.8" date="2013-03-16" status="outdated"/>
-    <revision pkgversion="3.10" date="2013-11-07" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.8.0" date="2013-03-16" status="outdated"/>
+
+    <desc>Enable mouse keys to control the mouse with the keypad.</desc>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -21,16 +20,10 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-      <years>2013, 2015</years>
-    </credit>
-
+    
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
     
-    <desc>Activa les tecles del ratolí per controlar el ratolí amb el teclat numèric.</desc>
-  
+
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>David Aguilera</mal:name>
       <mal:email>david.aguilera.moncusi@gmail.com</mal:email>
@@ -38,36 +31,54 @@
     </mal:credit>
   </info>
 
-  <title>Feu clic i moveu el punter del ratolí usant el teclat numèric</title>
+<title>Click and move mouse pointer using the keypad</title>
 
-  <p>Si teniu problemes amb un ratolí o un altre dispositiu de senyalització, podeu controlar el punter del ratolí mitjançant el teclat numèric del teclat. Aquesta funcionalitat s'anomena <em>tecles de ratolí</em>.</p>
+<p>If you have difficulties using a mouse or other pointing device, you can
+control the mouse pointer using the numeric keypad on your keyboard. This
+feature is called <em>mouse keys</em>.</p>
 
-  <steps>
-    <item>
-      <p>Obriu la descripció general de les <gui xref="shell-introduction#activities">Activities</gui>  i comenceu a escriure  <gui>Accés Universal</gui>.</p>
-      <p>Podeu accedir a la visió general d'<gui>Activitats</gui> prement-hi a sobre, movent el punter del ratolí a la part superior esquerra de la pantalla, utilitzant <keyseq><key>Ctrl</key><key>Alt</key><key>Tab</key></keyseq> seguit d'<key>Enter</key> o utilitzant <key xref="keyboard-key-super">Super</key>.</p>
-    </item>
-    <item>
-      <p>Feu clic a <gui>Accés universal</gui> per obrir el quadre.</p>
-    </item>
-    <item>
-      <p>Utilitzar les fletxes amunt i avall per seleccionar les <gui>Tecles del ratolí</gui> a la secció <gui>Punter &amp; Clic</gui> aleshores premer <key>Enter</key> per canviar <gui>Tecles del ratolí</gui> a <gui>ON</gui>.</p>
-    </item>
-    <item>
-      <p>Assegureu-vos que <key>Bloq Num</key> està inactiu. Aleshores sereu capaç de moure el punter del ratolí utilitzant el teclat.</p>
-    </item>
-  </steps>
+<steps>
+  <item><p>Press <keyseq><key>Ctrl</key><key>Alt</key><key>Tab</key></keyseq>
+  to give keyboard focus to the top bar.</p></item>
+  <item><p>Use the right and left arrow keys to select the
+  <link xref="a11y-icon">universal access menu</link>, then press
+  <key>Enter</key>.</p></item>
+  <item><p>Use the up and down arrow keys to select <gui>Mouse Keys</gui>
+  and press <key>Enter</key>.</p></item>
+  <item><p>Make sure that <key>Num Lock</key> is turned off. You will now be
+  able to move the mouse pointer using the keypad.</p></item>
+</steps>
 
-  <p>El teclat numèric és un conjunt de botons numèrics del vostre teclat generalment disposats en una quadrícula rectangular. Si teniu un teclat sense un teclat numèric (com ara un teclat d'ordinador portàtil), és possible que necessiteu mantenir premuda la tecla de funció (<key>Fn</key>) i utilitzar certes altres tecles del teclat com a teclat numèric. Si utilitzeu aquesta funció sovint en un ordinador portàtil, podeu adquirir teclats numèrics USB o Bluetooth externs.</p>
+ <note style="tip">
+ <p>These instructions provide the shortest way to enable mouse keys using
+ only the keyboard. Select <gui>Universal Access Settings</gui> to see more
+ accessibility options.</p>
+ </note>
 
-  <p>Cada número del teclat correspon a una adreça. Per exemple, prémer <key>8</key> mou el punter cap amunt i prémer <key>2</key>el mourà avall. Premeu la tecla <key>5</key> per fer un clic amb el ratolí, o premeu ràpidament dues vegades per fer doble clic.</p>
+<p>The keypad is a set of numerical buttons on your keyboard, usually arranged
+into a square grid. If you have a keyboard without a keypad (such as a laptop
+keyboard), you may need to hold down the function (<key>Fn</key>)
+key and use certain other keys on your keyboard as a keypad. If you use this
+feature often on a laptop, you can purchase external USB keypads.</p>
 
-  <p>La majoria de teclats tenen una clau especial que us permet fer clic amb el botó dret, de vegades anomenat la tecla <key xref="keyboard-key-menu">Menu</key>. Tingueu en compte, però, que aquesta tecla respon a on està el focus del teclat, no on està el punter del ratolí. Veure <link xref="a11y-right-click"/> per obtenir informació sobre com fer clic amb el botó dret mantenint premuda la tecla<key>5</key> o el botó esquerra del ratolí.</p>
+<p>Each number on the keypad corresponds to a direction. For example, pressing
+<key>8</key> will move the pointer upwards and pressing <key>2</key> will move
+it downwards. Press the <key>5</key> key to click once with the mouse, or
+quickly press it twice to double-click.</p>
 
-  <p>Si voleu utilitzar el teclat numèric per escriure números mentre les tecles del ratolí estan habilitades, Poseu <key>Bloq. Num</key> a ON. El ratolí no es pot controlar amb el teclat quan <key>Bloq. Num</key> està activat.</p>
+<p>Most keyboards have a special key which allows you to right-click, sometimes
+called the <key xref="keyboard-key-menu">Menu</key> key. Note, however, that
+this key responds to where your keyboard focus is, not where your mouse pointer
+is. See <link xref="a11y-right-click"/> for information on how to right-click by
+holding down <key>5</key> or the left mouse button.</p>
 
-  <note>
-    <p>Les tecles numèriques normals, en una línia a la part superior del teclat, no controlaran el punter del ratolí. Només es poden utilitzar les tecles numèriques del teclat numèric.</p>
-  </note>
+<p>If you want to use the keypad to type numbers while mouse keys is enabled,
+turn <key>Num Lock</key> on. The mouse cannot be controlled with the keypad when
+<key>Num Lock</key> is turned on, though.</p>
+
+<note>
+    <p>The normal number keys, in a line at the top of the keyboard, will not
+    control the mouse pointer. Only the keypad number keys can be used.</p>
+</note>
 
 </page>

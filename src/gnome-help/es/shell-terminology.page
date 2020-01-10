@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="reference" id="shell-terminology" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="shell-overview#desktop"/>
+
+    <desc>Un resumen de términos usados para describir partes del escritorio.</desc>
+
+    <revision pkgversion="3.8.0" version="0.4" date="2013-04-23" status="outdated"/>
+
+    <credit type="author">
+      <name>Proyecto de documentación de GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Actividades, tablero, barra superior… ¿Qué son?</title>
+
+<!-- THIS SHOULD BE ALPHABETICALLY SORTED… it is. -->
+
+<terms>
+ <item>
+  <title>Vista de actividades</title>
+  <p if:test="!platform:gnome-classic">La <em>vista de actividades</em> es la pantalla que se muestra cuando pulsa en <gui>Actividades</gui> en la parte superior izquierda de la pantalla.</p>
+  <p if:test="platform:gnome-classic">La <em>vista de actividades</em> es la pantalla que se muestra cuando selecciona la <gui>Vista de actividades</gui> en el menú <gui>Aplicaciones</gui> en la parte superior izquierda de la pantalla.</p>
+ </item>
+
+ <item if:test="platform:gnome-classic">
+  <title>Menú de aplicaciones</title>
+  <p>Puede encontrar el menú <gui>Aplicaciones</gui> en la parte superior izquierda de la pantalla. Éste le da acceso a aplicaciones organizadas en categorías. La <em>vista de actividades</em> está disponible seleccionando el elemento <gui>Vista de actividades</gui> en el menú.</p> 
+ </item>
+
+ <item>
+  <title>Cambiador de ventana Super-Tab</title>
+  <p>Cuando mantiene pulsada la tecla <key xref="keyboard-key-super">Super</key> y pulsa <key>Tab</key>, aparece un <em>selector de ventanas</em>. Esto muestra los iconos de las aplicaciones que tiene abiertas actualmente.</p>
+ </item>
+
+ <item>
+  <title>Tablero</title>
+  <p>El <em>tablero</em> es la lista de sus aplicaciones favoritas que se muestra en la parte izquierda de la vista de actividades. Aquí también se muestran las aplicaciones que están actualmente en ejecución. Al tablero también se lo llama de vez en cuando «<em>dock</em>».</p>
+ </item>
+
+ <item>
+  <title>Esquina activa</title>
+  <p>La <em>esquina activa</em> es la esquina en la parte superior izquierda de la pantalla. Cuando mueve el puntero aquí, se abre la vista de actividades.</p>
+ </item>
+
+ <item>
+  <title>Bloquear la pantalla</title>
+  <p>La <em>pantalla de bloqueo</em> muestra una imagen en la pantalla mientras su equipo está bloqueado. Proporciona información útil sobre qué ha ocurrido mientras estaba ausente y le permite controlar la reproducción de medios sin tener que desbloquearla.</p>
+ </item>
+
+ <item>
+  <title>Notificaciones</title>
+  <p>Las <em>notificaciones</em> son mensajes que aparecen en la parte inferior de la pantalla, que le dicen que algo acaba de suceder. Por ejemplo, cuando alguien en el chat le envía un mensaje, aparecerá un mensaje para decírselo. Si no quiere tratar con un mensaje en este momento, se esconderá en su bandeja de mensajes. Mueva el ratón a la esquina inferior derecha (o pulse <keyseq><key xref="keyboard-key-super">Super</key><key>M</key></keyseq>) para ver su bandeja de mensajes.</p>
+ </item>
+
+ <item if:test="platform:gnome-classic">
+  <title>Menú Lugares</title>
+  <p>El <em>menú lugares</em> se abre cuando pulsa en <gui>Lugares</gui> en la <gui>barra superior</gui>. Esto le proporciona un rápido acceso a carpetas importantes, como por ejemplo <gui>Descargas</gui> o <gui>Imágenes</gui>.</p>
+ </item>
+
+ <item>
+  <title>Configuración</title>
+  <p>La <em>Configuración del sistema</em> es donde puede cambiar las preferencias, de forma similar al panel de control en Windows o las preferencias del sistema en Mac OS. Pulse en su nombre en la parte superior derecha de la barra superior y seleccione <gui>Configuración</gui> para acceder.</p>
+ </item>
+
+ <item>
+  <title>Barra superior</title>
+  <p if:test="!platform:gnome-classic">La <em>barra superior</em> es la barra dispuesta a lo largo de la parte superior de la pantalla. El enlace <gui>Actividades</gui> está en uno de los finales de la barra superior y su nombre de usuario está en el lado contrario.</p>
+  <p if:test="platform:gnome-classic">La <em>barra superior</em> es la barra dispuesta a lo largo de la parte superior de la pantalla. El menú de <gui>Aplicaciones</gui> está en uno de los finales de la barra superior y su nombre de usuario está en el lado contrario.</p> 
+ </item>
+
+ <item>
+  <title>Área de trabajo</title>
+  <p>Puede poner ventanas en diferentes <em>áreas de trabajo</em>. Es una manera adecuada de agrupar y separar ventanas.</p>
+ </item>
+
+ <item>
+  <title>Selector de áreas de trabajo</title>
+  <p>El <em>selector de áreas de trabajo</em> es la lista de áreas de trabajo que se muestra en el lado derecho de la vista de <gui>Ventanas</gui> en la vista actividades.</p>
+ </item>
+
+ <item if:test="platform:gnome-classic">
+  <title>Lista de ventanas</title>
+  <p>La <em>lista de ventanas</em> es la barra de la parte inferior de la pantalla, que muestra botones para todas sus ventanas abiertas.</p>
+ </item>
+
+</terms>
+
+</page>

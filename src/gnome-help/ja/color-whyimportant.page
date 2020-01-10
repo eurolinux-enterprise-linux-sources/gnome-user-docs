@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="color-whyimportant" xml:lang="ja">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="color-whyimportant" xml:lang="ja">
 
   <info>
     <link type="guide" xref="color"/>
@@ -14,7 +14,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -33,18 +33,6 @@
       <mal:name>Shushi Kurose</mal:name>
       <mal:email>md81bird@hitaki.net</mal:email>
       <mal:years>2012</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Noriko Mizumoto</mal:name>
-      <mal:email>noriko@fedoraproject.org</mal:email>
-      <mal:years>2013, 2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>坂本 貴史</mal:name>
-      <mal:email>o-takashi@sakamocchi.jp</mal:email>
-      <mal:years>2013, 2014</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -68,7 +56,7 @@
 
   <figure>
     <desc>A bird on a frosty wall as seen on the camera view-finder</desc>
-    <media its:translate="no" type="image" mime="image/png" src="figures/color-camera.png"/>
+    <media type="image" mime="image/png" src="figures/color-camera.png"/>
   </figure>
 
   <p>
@@ -78,17 +66,17 @@
 
   <figure>
     <desc>This is what the user sees on a typical business laptop screen</desc>
-    <media its:translate="no" type="image" mime="image/png" src="figures/color-display.png"/>
+    <media type="image" mime="image/png" src="figures/color-display.png"/>
   </figure>
 
   <p>
-    Notice how the white is not “paper white” and the black of the eye
+    Notice how the white is not 'paper white' and the black of the eye
     is now a muddy brown.
   </p>
 
   <figure>
     <desc>This is what the user sees when printing on a typical inkjet printer</desc>
-    <media its:translate="no" type="image" mime="image/png" src="figures/color-printer.png"/>
+    <media type="image" mime="image/png" src="figures/color-printer.png"/>
   </figure>
 
   <p>
@@ -100,17 +88,17 @@
   <p>
     Most image devices capture in RGB (Red, Green, Blue) and have
     to convert to CMYK (Cyan, Magenta, Yellow, and Black) to print.
-    Another problem is that you can’t have <em>white</em> ink, and so
+    Another problem is that you can't have <em>white</em> ink, and so
     the whiteness can only be as good as the paper color.
   </p>
 
   <p>
     Another problem is units. Without specifying the scale on which a
-    color is measured, we don’t know if 100% red is near infrared or
+    color is measured, we don't know if 100% red is near infrared or
     just the deepest red ink in the printer. What is 50% red on one
     display is probably something like 62% on another display.
-    It’s like telling a person that you’ve just driven 7 units of
-    distance, without the unit you don’t know if that’s 7 kilometers or
+    It's like telling a person that you've just driven 7 units of
+    distance, without the unit you don't know if that's 7 kilometers or
     7 meters.
   </p>
 
@@ -119,13 +107,13 @@
     range of colors that can be reproduced.
     A device like a DSLR camera might have a very large gamut, being able
     to capture all the colors in a sunset, but a projector has a very
-    small gamut and all the colors are going to look “washed out”.
+    small gamut and all the colors are going to look "washed out".
   </p>
 
   <p>
     In some cases we can <em>correct</em> the device output by altering
-    the data we send to it, but in other cases where that’s not
-    possible (you can’t print electric blue) we need to show the user
+    the data we send to it, but in other cases where that's not
+    possible (you can't print electric blue) we need to show the user
     what the result is going to look like.
   </p>
 
@@ -133,7 +121,7 @@
     For photographs it makes sense to use the full tonal range of a color
     device, to be able to make smooth changes in color.
     For other graphics, you might want to match the color exactly, which
-    is important if you’re trying to print a custom mug with the Red Hat
+    is important if you're trying to print a custom mug with the Red Hat
     logo that <em>has</em> to be the exact Red Hat Red.
   </p>
 

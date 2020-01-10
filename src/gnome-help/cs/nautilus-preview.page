@@ -4,8 +4,9 @@
   <info>
     <link type="guide" xref="nautilus-prefs" group="nautilus-preview"/>
 
+    <desc>Control when thumbnails are used for files.</desc>
+
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-30" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -15,41 +16,44 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Jak nastavit, kdy se mají pro soubory použít miniatury.</desc>
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
       <mal:email>adamatousek@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Marek Černocký</mal:name>
-      <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014, 2015</mal:years>
-    </mal:credit>
   </info>
 
-<title>Předvolby náhledů ve správci souborů</title>
+<title>File manager preview preferences</title>
 
-<p>Správce souborů vytváří miniatury s náhledy obrázků, videí a textových souborů. Miniatury s náhledy mohou být pomalé u velkých souborů nebo přes síť, takže máte možnost určit, kdy se mohou vytvářet. Klikněte na <gui>Soubory</gui> v horní liště, zvolte <gui>Předvolby</gui> a vyberte kartu <gui>Náhled</gui>.</p>
+<p>The file manager creates thumbnails to preview image, video, and text
+files. Thumbnail previews can be slow for large files or over networks, so
+you can control when previews are made. Click <gui>Files</gui> in the top bar,
+pick <gui>Preferences</gui> and select the <gui>Preview</gui> tab.</p>
 
 <terms>
   <item>
-    <title><gui>Soubory</gui></title>
-    <p>Ve výchozím nastavení budu mít miniatury vytvořené <gui>Jen místní soubory</gui>, které jsou na vašem počítači a připojených externích discích. Můžete tuto funkci nastavit také na <gui>Vždy</gui> nebo <gui>Nikdy</gui>. Správce souborů může <link xref="nautilus-connect">procházet soubory na jiných počítačích</link> přes místní síť nebo Internet. Pokud často procházíte soubory přes místní síť a ta má dostatečnou šířku pásma, můžete nastavit tvorbu miniatur na <gui>Vždy</gui>.</p>
-    <p>Navíc můžete upravit nastavení <gui>Jen pro soubory menší než</gui>, abyste omezili velikost souborů, pro které se miniatury generují.</p>
+    <title><gui>Files</gui></title>
+    <p>By default, all previews are done for <gui>Local Files Only</gui>, those
+    on your computer or connected external drives. You can set this feature to
+    <gui>Always</gui> or <gui>Never</gui>. The file manager can
+    <link xref="nautilus-connect">browse files on other computers</link> over
+    a local area network or the internet. If you often browse files over a local
+    area network, and the network has high bandwidth, you may want to set the
+    preview option to <gui>Always</gui>.</p>
+    <p>In addition, you can use the <gui>Only for files smaller than</gui>
+    setting to limit the size of files previewed.</p>
   </item>
   <item>
-    <title><gui>Složky</gui></title>
-    <p>Když máte mezi <link xref="nautilus-list">sloupci seznamového zobrazení</link> nebo v <link xref="nautilus-display#icon-captions">popisech ikon</link> zobrazeny velikosti souborů, bude se u složek zobrazovat počet souborů a složek, které obsahuje. Spočítání položek ve složce může být pomalé, hlavně u rozsáhlých složek nebo přes síť. Proto můžete tuto funkci zapnout a vypnout, případně zapnout jen pro složky přímo na počítači nebo na místních externích discích.</p>
+    <title><gui>Folders</gui></title>
+    <p>If you show file sizes in <link xref="nautilus-list">list view columns</link>
+    or <link xref="nautilus-display#icon-captions">icon captions</link>, folders will
+    be shown with a count of how many files and folders they contain. Counting items
+    in a folder can be slow, especially for very large folders, or over a network.
+    You can turn this feature on or off, or turn it on only for files on your
+    computer and local external drives.</p>
   </item>
 </terms>
 </page>

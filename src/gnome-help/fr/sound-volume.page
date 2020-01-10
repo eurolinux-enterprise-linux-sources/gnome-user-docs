@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="sound-volume" xml:lang="fr">
-
   <info>
     <link type="guide" xref="media#sound"/>
-
-    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-30" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -18,9 +13,10 @@
       <email>shaunm@gnome.org</email>
     </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
 
     <desc>Régler le volume du son pour l'ordinateur et contrôler l'intensité sonore de chaque application.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Luc Pionchon</mal:name>
@@ -37,13 +33,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Julien Hardelin</mal:name>
       <mal:email>jhardlin@orange.fr</mal:email>
-      <mal:years>2011, 2013</mal:years>
+      <mal:years>2011</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -69,63 +65,21 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Alexandre Franke</mal:name>
-      <mal:email>alexandre.franke@gmail.com</mal:email>
-      <mal:years>2015</mal:years>
-    </mal:credit>
   </info>
 
 <title>Modification du volume sonore</title>
 
-  <p>To change the sound volume, open the <gui xref="shell-introduction#yourname">system
-  menu</gui> from the right side of the top bar and move the volume slider left
-  or right. You can completely turn off sound by dragging the slider to the
-  left.</p>
+  <p>Pour modifier le volume sonore, cliquez sur l'icône son dans la barre supérieure (elle représente un petit haut-parleur) et déplacez le curseur de volume vers la gauche ou la droite. Vous pouvez couper le son en déplaçant le curseur complètement à gauche.</p>
 
-  <p>Some keyboards have keys that let you control the volume. They normally
-  look like stylized speakers with waves coming out of them. They are often
-  near the “F” keys at the top. On laptop keyboards, they are usually on the
-  “F” keys.  Hold down the <key>Fn</key> key on your keyboard to use them.</p>
+  <p>Certains claviers disposent de touches qui permettent un réglage du volume sonore. Elles représentent habituellement des haut-parleurs stylisés avec des ondes émanant d'eux. On les trouve souvent près des touches « F » en haut du clavier. Sur les claviers de portables, elles se situent sur ces touches de fonction ; maintenez conjointement l'appui sur la touche <key>Fn</key> pour les utiliser.</p>
 
-  <p>If you have external speakers, you can also change the volume
-  using the speakers’ volume control. Some headphones have a
-  volume control too.</p>
+  <p>Bien entendu, si vous possédez des haut-parleurs externes, vous pouvez aussi modifier le volume sonore en utilisant le bouton de réglage du volume sur les haut-parleurs eux-mêmes. Certains écouteurs possèdent aussi un tel réglage.</p>
 
 <section id="apps">
  <title>Modification du volume sonore d'applications individuelles</title>
-
-  <p>You can change the volume for one application and leave the volume for
-  others unchanged. This is useful if you are listening to music and browsing
-  the web, for example. You might want to turn off the audio in the web browser
-  so sounds from websites do not interrupt the music.</p>
-
-  <p>Some applications have volume controls in their main windows. If your
-  application has its volume control, use that to change the volume. If not:</p>
-
-    <steps>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui>
-      overview and start typing <gui>Sound</gui>.</p>
-    </item>
-    <item>
-      <p>Cliquez sur <gui>Son</gui> pour ouvrir le panneau.</p>
-    </item>
-    <item>
-      <p>Go to the <gui>Applications</gui> tab and change the volume of the
-      application listed there.</p>
-
-  <note style="tip">
-    <p>Only applications that are playing sounds are listed. If an
-    application is playing sounds but is not listed, it might not support the
-    feature that lets you control its volume in this way. In such case, you
-    cannot change its volume.</p>
-  </note>
-    </item>
-
-  </steps>
-
+ <p>Il est possible de modifier le volume d'une application particulière tout en conservant le volume des autres identique. C'est une chose utile pour, par exemple, écouter de la musique tout en naviguant sur le Web. Vous pouvez alors couper le son du navigateur Web pour ne pas gêner l'audition de la musique.</p>
+ <p>Certaines applications disposent d'un réglage de volume dans leur fenêtre principale. Si votre application possède un tel réglage, utilisez-le. Sinon, cliquez sur l'icône son dans la barre supérieure et sélectionnez <gui>Paramètres du son</gui>. Cliquez sur l'onglet <gui>Applications</gui> et modifiez le volume à cet endroit.</p>
+ <p>Seules les applications en train d'émettre des sons figurent dans cette liste. Si une application en train d'émettre ne figure pas dans la liste, c'est qu'elle ne prend pas en compte un réglage de cette façon. Dans ce cas, vous ne pouvez pas modifier son volume sonore.</p>
 </section>
 
 </page>

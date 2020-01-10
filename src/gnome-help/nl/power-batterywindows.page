@@ -2,16 +2,12 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="power-batterywindows" xml:lang="nl">
 
   <info>
-    <link type="guide" xref="power#faq"/>
+    <link type="guide" xref="power#battery"/>
     <link type="seealso" xref="power-batteryestimate"/>
-    <link type="seealso" xref="power-batterylife"/>
-    <link type="seealso" xref="power-batteryslow"/>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-    <revision pkgversion="3.20" date="2016-06-15" status="final"/>
 
-    <desc>Tweaks van de fabrikant en verschillende schattingen van de accuduur kunnen de oorzaak zijn van dit probleem.</desc>
+    <desc>Tweaks van de fabrikant en verschillende schattingen van de levensduur van de accu kunnen de oorzaak zijn van dit probleem.</desc>
     <credit type="author">
       <name>Gnome-documentatieproject</name>
       <email>gnome-doc-list@gnome.org</email>
@@ -20,32 +16,22 @@
       <name>Phil Bull</name>
       <email>philbull@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
   </info>
 
-<title>Hoe komt het dat de accuduur lager is dan onder Windows/Mac OS?</title>
+<title>Hoe komt het dat de levensduur van de accu lager is dan onder Windows/Mac OS?</title>
 
-<p>Bij sommige computers lijkt het alsof de accuduur onder Linux korter is dan onder Windows of Mac OS. Eén van de redenen hiervoor is dat computerleveranciers speciale software installeren voor Windows/Mac OS waarmee diverse hardware/software-instellingen voor een bepaald model computer worden geoptimaliseerd. Deze tweaks zijn vaak heel specifiek en zijn mogelijk niet gedocumenteerd waardoor het moeilijk is ze in Linux op te nemen.</p>
+<p>Bij sommige computers lijkt het alsof de levensduur van de accu onder Linux korter is dan onder Windows of Mac OS. Eén van de redenen hiervoor is dat computerleveranciers speciale software installeren voor Windows/Mac OS waarmee diverse hardware/software-instellingen voor een bepaald model computer worden geoptimaliseerd. Deze tweaks zijn vaak heel specifiek en zijn mogelijk niet gedocumenteerd waardoor het moeilijk is ze in Linux op te nemen.</p>
 
-<p>Helaas bestaat er geen eenvoudige manier om zelf deze tweaks toe te passen zonder precies te weten om welke het gaat. U kunt baat hebben bij het gebruik van enkele <link xref="power-batterylife">manieren om energie te besparen</link>. Als uw computer beschikt over een <link xref="power-batteryslow">processor met variabele snelheid</link>, dan kan het wijzigen van de instellingen daarvan ook nuttig zijn.</p>
+<p>Unfortunately, there is not an easy way of applying these tweaks yourself
+without knowing exactly what they are. You may find that using some <link xref="power-batterylife">power-saving methods</link> helps, though. If your
+computer has a <link xref="power-batteryslow">variable-speed processor</link>,
+you might find that changing its settings is also useful.</p>
 
-<p>Een andere mogelijke reden voor het verschil is dat de manier waarop de accuduur geschat wordt bij Windows/Mac OS anders is dan bij Linux. De werkelijke accuduur kan precies hetzelfde zijn, maar de verschillende methodes geven verschillende schattingen.</p>
+<p>Another possible reason for the discrepancy is that the method of estimating
+battery life is different on Windows/Mac OS than on Linux. The actual battery
+life could be exactly the same, but the different methods give different
+estimates.</p>
 	
 </page>

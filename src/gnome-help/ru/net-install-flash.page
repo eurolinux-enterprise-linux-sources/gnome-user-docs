@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-install-flash" xml:lang="ru">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="net-install-flash" xml:lang="ru">
   <info>
     <link type="guide" xref="net-browser"/>
 
     <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Фил Булл (Phil Bull)</name>
       <email>philbull@gmail.com</email>
     </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
     <desc>Flash может понадобиться для просмотра веб-сайтов типа YouTube, содержащих видео и интерактивные веб-страницы.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Александр Прокудин</mal:name>
@@ -25,80 +22,55 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011-2012</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Станислав Соловей</mal:name>
-      <mal:email>whats_up@tut.by</mal:email>
-      <mal:years>2013-2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Юлия Дронова</mal:name>
-      <mal:email>juliette.tux@gmail.com</mal:email>
-      <mal:years>2013-2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Юрий Мясоедов</mal:name>
-      <mal:email>ymyasoedov@yandex.ru</mal:email>
-      <mal:years>2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
 
-  <title>Установка модуля Flash</title>
+<title>Установка модуля Flash</title>
 
-  <p><app>Flash</app> is a <em>plug-in</em> for your web browser that allows
-  you to watch videos and use interactive web pages on some websites. Some
-  websites won’t work without Flash.</p>
+<p><app>Flash</app> — это <em>дополнительный модуль</em> (плагин) для веб-браузера, позволяющий просматривать видео и использовать интерактивные веб-страницы на некоторых веб-сайтах. Некоторые веб-сайты не работают без Flash.</p>
 
-  <p>Если у вас не установлен Flash, то вы, вероятно, увидите сообщение об этом при посещении использующего эту технологию веб-сайта. Flash доступен для бесплатной загрузки для большинства веб-браузеров (но его исходный код не является открытым). В большинстве дистрибутивов Linux также имеется версия Flash, которую можно установить через средство установки программного обеспечения (менеджер пакетов).</p>
+<comment>
+<cite>shaunm</cite>
+<p>Would be nice to (soft?) link to a page on the software installer</p>
+</comment>
 
-  <steps>
-    <title>Если Flash доступен из установщика программ:</title>
-    <item>
-      <p>Откройте приложение для установки программ и найдите <input>flash</input>.</p>
-    </item>
-    <item>
-      <p>Поищите <gui>Adobe Flash plug-in</gui>, <gui>Adobe Flash Player</gui> или что-то подобное, и установите его.</p>
-    </item>
-    <item>
-      <p>Если у вас открыто окно какого-нибудь веб-браузера, закройте его и снова откройте. При повторном запуске Веб-браузер должен обнаружить, что Flash установлен, и теперь вы сможете просматривать веб-сайты, использующие Flash.</p>
-    </item>
-  </steps>
+<p>Если у вас не установлен Flash, то вы, вероятно, увидите сообщение об этом при посещении использующего эту технологию веб-сайта. Flash доступен для бесплатной загрузки для большинства веб-браузеров (но его исходный код не является открытым). В большинстве дистрибутивов Linux также имеется версия Flash, которую можно установить через средство установки программного обеспечения (менеджер пакетов).</p>
 
-  <steps>
-    <title>Если Flash <em>недоступен</em> в установщике программ:</title>
-    <item>
-      <p>Зайдите на <link href="http://get.adobe.com/flashplayer">страницу загрузки Flash Player</link>. Ваш браузер и операционная система должны определиться автоматически.</p>
-    </item>
-    <item>
-      <p>Click where it says <gui>Select version to download</gui> and choose
-      the type of software installer that works for your Linux distribution. If
-      you don’t know which to use, choose the <file>.tar.gz</file> option.</p>
-    </item>
-    <item>
-      <p>Прочтите <link href="http://kb2.adobe.com/cps/153/tn_15380.html">инструкции по установке Flash</link>, чтобы узнать, как установить его для вашего веб-браузера.</p>
-    </item>
-  </steps>
+<steps>
+ <title>Если Flash доступен из установщика программ:</title>
+ <item>
+  <p>Откройте приложение для установки программ и найдите <input>flash</input>.</p>
+ </item>
+ <item>
+  <p>Поищите <gui>Adobe Flash plug-in</gui>, <gui>Adobe Flash Player</gui> или что-то подобное, и установите его.</p>
+ </item>
+ <item>
+  <p>Если у вас открыто окно какого-нибудь веб-браузера, закройте его и снова откройте. При повторном запуске Веб-браузер должен обнаружить, что Flash установлен, и теперь вы сможете просматривать веб-сайты, использующие Flash.</p>
+ </item>
+</steps>
+
+<steps>
+ <title>Если Flash <em>недоступен</em> в установщике программ:</title>
+ <item>
+  <p>Зайдите на <link href="http://get.adobe.com/flashplayer">страницу загрузки Flash Player</link>. Ваш браузер и операционная система должны определиться автоматически.</p>
+ </item>
+ <item>
+  <p>Щёлкните на надписи <gui>Select version to download</gui> и выберите тип установки, подходящий для вашего дистрибутива Linux. Если вы не знаете, какой использовать, выберите <file>.tar.gz</file>.</p>
+ </item>
+ <item>
+  <p>Прочтите <link href="http://kb2.adobe.com/cps/153/tn_15380.html">инструкции по установке Flash</link>, чтобы узнать, как установить его для вашего веб-браузера.</p>
+ </item>
+</steps>
 
 <section id="alternatives">
-  <title>Альтернативы Flash с открытым исходным кодом</title>
-
-  <p>Доступно несколько свободных, с открытым исходным кодом, альтернатив Flash. В некоторых случаях они могут работать лучше чем оригинальный модуль Flash (например, лучше поддерживают воспроизведение звука), а в некоторых хуже (например, не могут отображать сложные веб-страницы, использующие Flash).</p>
-
-  <p>Можете попробовать одну из них, если вам не нравится Flash player или если вы предпочитаете использовать на своём компьютере как можно больше программ с открытым кодом. Вот некоторые варианты:</p>
-
-  <list style="compact">
-    <item>
-      <p>LightSpark</p>
-    </item>
-    <item>
-      <p>Gnash</p>
-    </item>
-  </list>
-
+ <title>Альтернативы Flash с открытым исходным кодом</title>
+ <p>Доступно несколько свободных, с открытым исходным кодом, альтернатив Flash. В некоторых случаях они могут работать лучше чем оригинальный модуль Flash (например, лучше поддерживают воспроизведение звука), а в некоторых хуже (например, не могут отображать сложные веб-страницы, использующие Flash).</p>
+ <p>Можете попробовать одну из них, если вам не нравится Flash player или если вы предпочитаете использовать на своём компьютере как можно больше программ с открытым кодом. Вот некоторые варианты:</p>
+ <list style="compact">
+  <item><p>LightSpark</p></item>
+  <item><p>Gnash</p></item>
+ </list>
 </section>
 
 </page>

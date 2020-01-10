@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="session-language" xml:lang="it">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="session-language" xml:lang="it">
 
   <info>
     <link type="guide" xref="prefs-language"/>
+    <desc>Usare un'altra lingua per l'interfaccia utente.</desc>
 
     <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
 
     <credit type="author">
       <name>Progetto documentazione di GNOME</name>
@@ -25,8 +25,6 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Usare un'altra lingua per l'interfaccia utente.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Luca Ferretti</mal:name>
@@ -43,49 +41,54 @@
 
   <title>Cambiare la lingua utilizzata</title>
 
+  <comment>
+    <cite date="2012-02-19">shaunm</cite>
+    <p>Explain how to install support for other languages. Requires us
+    to document software installation.</p>
+  </comment>
+
   <p>È possibile utilizzare il proprio sistema operativo in molte lingue diverse, assicurandosi di avere le corrette traduzioni installate nel sistema.</p>
 
   <steps>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Region &amp; Language</gui>.</p>
-    </item>
-    <item>
-      <p>Click on <gui>Region &amp; Language</gui> to open the panel.</p>
-    </item>
-    <item>
-      <p>Click <gui>Language</gui>.</p>
-    </item>
-    <item>
-      <p>Select your desired region and language. If your region and language
-      are not listed, click
-      <gui><media its:translate="no" type="image" mime="image/svg" src="figures/view-more-symbolic.svg"><span its:translate="yes">…</span></media></gui>
-      at the bottom of the list to select from all available regions and
-      languages.</p>
-    </item>
-    <item>
-      <p>Click <gui style="button">Done</gui> to save.</p>
-    </item>
-    <item>
-      <p>Respond to the prompt, <gui>Your session needs to be restarted for
-      changes to take effect</gui> by clicking
-      <gui style="button">Restart Now</gui>, or click
-      <gui style="button">×</gui> to restart later.</p>
-    </item>
+    <item><p>Click your name on the top bar and select <gui>Settings</gui>.</p></item>
+    <item><p>Open <gui>Region &amp; Language</gui> and select the
+    <gui>Language</gui> tab.</p></item>
+    <item><p>Select your desired language.
+    The initial list only shows a small subset of the supported languages.
+    If your language is not listed, click
+    <media type="image" mime="image/svg" src="figures/view-more-symbolic.svg"/>.
+    Some translations may be incomplete, and certain applications may not
+    support your language at all. Any untranslated text will appear in the
+    language in which the software was originally developed, usually American
+    English.</p></item>
+    <item><p>Respond to the prompt, <gui>Your session needs to be restarted for
+    these changes to take effect</gui> by clicking
+    <gui style="button">Restart Now</gui>, or click <gui style="button">X</gui>
+    to restart later.</p></item>
   </steps>
-
-  <p>Some translations may be incomplete, and certain applications may not
-  support your language at all. Any untranslated text will appear in the
-  language in which the software was originally developed, usually American
-  English.</p>
 
   <p>Nella propria cartella utente sono presenti alcune cartelle speciali in cui le applicazioni salvano la musica, le immagini e i documenti. Queste cartelle utilizzano dei nomi standard basati sulla propria lingua: quando si esegue nuovamente l'accesso, viene chiesto se rinominare le cartelle in base alla lingua corrente. Nel caso la nuova lingua venga usata come quella predefinita per il sistema, è utile fare ciò.</p>
 
-  <note style="tip">
-    <p>If there are multiple user accounts on your system, there is a separate
-    instance of the <gui>Region &amp; Language</gui> panel for the login screen.
-    Click the <gui>Login Screen</gui> button at the top right to toggle between
-    the two instances.</p>
-  </note>
+  <section id="system">
+    <title>Modificare la lingua di sistema</title>
+
+    <p>Quando si modifica la lingua, questa viene cambiata solo per la propria sessione, la schermata di accesso non viene alterata. È comunque possibile modificare la <em>lingua di sistema</em>, cioè la lingua usata globalmente in tutto il sistema operativo.</p>
+
+    <steps>
+      <item><p>Click your name on the top bar and select <gui>Settings</gui>.</p></item>
+      <item><p>Open <gui>Region &amp; Language</gui> and select the
+      <gui>Language</gui> tab.</p></item>
+      <item><p>Select the <gui style="button">Login Screen</gui> button.</p></item>
+      <item><p>Sono richiesti i <link xref="user-admin-explain">privilegi di amministrazione</link>. Inserire la propria password o la password di amministrazione.</p></item>
+      <item><p>Select your desired language.
+      The initial list only shows a small subset of the supported languages.
+      If your language is not listed, click
+      <media type="image" mime="image/svg" src="figures/view-more-symbolic.svg"/>.
+      Some translations may be incomplete, and certain applications may not
+      support your language at all. Any untranslated text will appear in the
+      language in which the software was originally developed, usually American
+      English.</p></item>
+    </steps>
+  </section>
 
 </page>

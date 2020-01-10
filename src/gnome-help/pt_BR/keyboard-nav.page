@@ -6,8 +6,6 @@
     <link type="seealso" xref="shell-keyboard-shortcuts"/>
 
     <revision pkgversion="3.7.5" version="0.2" date="2013-02-23" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.20" date="2016-08-13" status="candidate"/>
 
     <credit type="author">
       <name>Michael Hill</name>
@@ -27,8 +25,6 @@
        <email>kittykat3756@gmail.com</email>
     </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
     <desc>Use aplicativos e a área de trabalho sem um mouse.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -38,25 +34,27 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Enrico Nicoletto</mal:name>
       <mal:email>liverig@gmail.com</mal:email>
       <mal:years>2013.</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>João Santana</mal:name>
-      <mal:email>joaosantana@outlook.com</mal:email>
-      <mal:years>2013.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Fontenelle</mal:name>
-      <mal:email>rafaelff@gnome.org</mal:email>
-      <mal:years>2012-2018.</mal:years>
-    </mal:credit>
   </info>
 
   <title>Navegação do teclado</title>
+
+  <comment>
+    <cite date="2012-03-14" href="mailto:shaunm@gnome.org">Shaun McCance</cite>
+    <p>Do <em>NOT</em> use <code>ui:expanded</code> on this page. I know it's
+    tempting, but the target audience for this page is people who cannot use
+    a mouse, and having to expand sections when you're just figuring out how
+    to drive things with the keyboard is a burden.</p>
+  </comment>
 
   <p>Essa página detalha a navegação por teclado para pessoas que não podem usar um mouse, ou outro dispositivo de apontamento, ou para aqueles que querem usar um teclado o máximo possível. Para atalhos de teclado que são úteis para todos usuários, veja <link xref="shell-keyboard-shortcuts"/>.</p>
 
@@ -77,6 +75,7 @@
     <td><p>Teclas de setas</p></td>
     <td>
       <p>Move a seleção entre itens em um único controle ou entre um conjunto de controles relacionados. Use as teclas de setas para mover foco para botões em uma barra de ferramentas, selecione itens em uma visão de ícones ou lista ou selecione um botão de opção de um grupo.</p>
+      <p>Em uma visão de árvore, usa as teclas de seta para recolher e expandir itens com crianças.</p>
     </td>
   </tr>
   <tr>
@@ -86,7 +85,6 @@
   <tr>
     <td><p><keyseq><key>Shift</key>Teclas de seta</keyseq></p></td>
     <td><p>Em uma visão de ícones ou lista, seleciona todos os itens de item atualmente selecionado para o item em foco recentemente.</p></td>
-    <td><p>Na visão de árvore, itens que possuem filhos podem ser expandidos ou recolhidos para, respectivamente, mostrá-los ou ocultá-los: expanda-os pressionando <keyseq><key>Shift</key><key>→</key></keyseq> e recolha-os pressionando <keyseq><key>Shift</key><key>←</key></keyseq>.</p></td>
   </tr>
   <tr>
     <td><p><key>Espaço</key></p></td>
@@ -145,7 +143,7 @@
   </tr>
   <tr>
     <td><p><keyseq><key>Super</key><key>M</key></keyseq></p></td>
-    <td><p><link xref="shell-notifications#messagetray">Abre a área de notificação</link>. Pressione <key>Esc</key> para fechar.</p></td>
+    <td><p><link xref="shell-notifications#messagingtray">Abre a área de notificação.</link> Pressione <key>Esc</key> para fechar.</p></td>
   </tr>
 </table>
 
@@ -157,7 +155,7 @@
   </tr>
   <tr>
     <td><p><keyseq><key>Alt</key><key>F5</key></keyseq> ou <keyseq><key>Super</key><key>↓</key></keyseq></p></td>
-    <td><p>Restaura uma janela maximizada para o seu tamanho original. Use <keyseq><key>Alt</key><key>F10</key></keyseq> para maximizar. <keyseq><key>Alt</key><key>F10</key></keyseq> maximiza e restaura.</p></td>
+    <td><p>Restaura uma janela maximizada para o seus tamanho original. Use <keyseq><key>Alt</key> <key>F10</key></keyseq> para maximizar. <keyseq><key>Alt</key><key>F10</key></keyseq> maximiza e restaura.</p></td>
   </tr>
   <tr>
     <td><p><keyseq><key>Alt</key><key>F7</key></keyseq></p></td>
@@ -165,11 +163,9 @@
   </tr>
   <tr>
     <td><p><keyseq><key>Alt</key><key>F8</key></keyseq></p></td>
-    <td><p>Redimensiona a janela atual. Pressione <keyseq><key>Alt</key><key>F8</key></keyseq> e, então, use as teclas de setas para redimensionar a janela. Pressione <key>Enter</key> para terminar o redimensionamento da janela ou <key>Esc</key> para retorná-la a seu tamanho original.</p></td>
+    <td><p>Redimensiona a janela atual. Pressione <keyseq><key>Alt</key><key>F8</key></keyseq> e, então, use as teclas de setas para redimensionar a janela. Pressione <key>Enter</key> para terminar o redimensionamento da janela ou <key>Esc</key> para retorná-la ao seu tamanho original.</p></td>
   </tr>
   <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-updown"/>
-  <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-left"/>
-  <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-right"/>
   <tr>
     <td><p><keyseq><key>Alt</key><key>F10</key></keyseq> ou <keyseq><key>Super</key><key>↑</key></keyseq></p>
     </td>

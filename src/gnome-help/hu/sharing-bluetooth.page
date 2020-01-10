@@ -1,31 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="sharing-bluetooth" xml:lang="hu">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="sharing-bluetooth" xml:lang="hu">
   <info>
     <link type="guide" xref="bluetooth"/>
-    <link type="guide" xref="sharing"/>
-    <link type="guide" xref="prefs-sharing"/>
+    <link type="guide" xref="settings-sharing"/>
 
-    <revision pkgversion="3.8.2" date="2013-05-13" status="draft"/>
-    <revision pkgversion="3.10" date="2013-11-09" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-08" status="candidate"/>
-    <revision pkgversion="3.14" date="2014-10-13" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+    <revision pkgversion="3.8.2" version="0.1" date="2013-05-13" status="draft"/>
 
     <credit type="author">
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
-      <years>2014</years>
-    </credit>
-    <credit type="author">
-      <name>David King</name>
-      <email>davidk@gnome.org</email>
-      <years>2014-2015</years>
     </credit>
 
+    <desc>Set which folders and devices are able to share over Bluetooth.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Fájlok feltöltésének engedélyezése a számítógépre Bluetooth használatával.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Griechisch Erika</mal:name>
@@ -36,7 +23,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Kelemen Gábor</mal:name>
       <mal:email>kelemeng at gnome dot hu</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015, 2016, 2017</mal:years>
+      <mal:years>2011, 2012, 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -56,36 +43,93 @@
       <mal:email>lukacs.bence1 at gmail dot com</mal:email>
       <mal:years>2011</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Nagy Zoltán</mal:name>
-      <mal:email>dzodzie at gmail dot com</mal:email>
-      <mal:years>2011</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Bluetooth megosztás szabályozása</title>
+  <title>Control sharing over Bluetooth</title>
 
-  <p>Bekapcsolhatja a <gui>Bluetooth</gui> megosztást, fájlok fogadásához Bluetoothon keresztül a <file>Letöltések</file> mappába</p>
+  <p>You can allow access to your <file>Public</file> and
+  <file>Downloads</file> folders for Bluetooth file sharing, and also restrict
+  that access to only <em>trusted devices</em>. Configure
+  <gui>Bluetooth Sharing</gui> to control access to the shared folders on your
+  computer.</p>
+
+  <note style="info">
+    <p>A Bluetooth device is <em>trusted</em> if you have <em>paired</em>, or
+    connected your computer to it. See
+    <link xref="bluetooth-connect-device"/>.</p>
+  </note>
 
   <steps>
-    <title>Fájlok megosztásának engedélyezése a <file>Letöltések</file> mappába</title>
+    <title>Share your <file>Public</file> folder over Bluetooth</title>
     <item>
-      <p>Nyissa meg a <gui xref="shell-introduction#activities">Tevékenységek</gui> áttekintést, és kezdje el begépelni a <gui>Bluetooth</gui> szót.</p>
+      <p>Kattintson a nevére a felső sávban, és válassza a <gui>Beállítások</gui> menüpontot.</p>
     </item>
     <item>
-      <p>Kattintson a <gui>Bluetooth</gui> elemre a panel megnyitásához.</p>
+      <p>Open <gui>Sharing</gui>.</p>
     </item>
     <item>
-      <p>Győződjön meg róla, hogy a <link xref="bluetooth-turn-on-off"><gui>Bluetooth</gui> be van kapcsolva</link>.</p>
+      <p>If <gui>Sharing</gui> is <gui>OFF</gui>, switch it to
+      <gui>ON</gui>.</p>
     </item>
     <item>
-      <p>A Bluetooth-képes eszközök csak akkor tudnak fájlokat küldeni a <file>Letöltések</file> mappájába, ha a <gui>Bluetooth</gui> panel nyitva van.</p>
+      <p>Select <gui>Bluetooth Sharing</gui>.</p>
+    </item>
+    <item>
+      <p>Switch <gui>Share Public Folder</gui> to <gui>ON</gui>.</p>
+    </item>
+    <item>
+      <p>If you only want to allow trusted devices to access your
+      <file>Public</file> folder, switch
+      <gui>Only share with Trusted Devices</gui> to <gui>ON</gui>.</p>
+
+      <note style="tip">
+        <p>This option is disabled by default. You should enable it if you want
+        to prevent access to your shared files by anyone with a
+        Bluetooth-enabled cell phone or similar device nearby.</p>
+      </note>
+ 
+    </item>
+    <item>
+      <p>Click <gui style="button">Close</gui>. Bluetooth-enabled devices will
+      now be able to access files in your <file>Public</file> folder.</p>
     </item>
   </steps>
 
-  <note style="tip">
-    <p><link xref="sharing-displayname">Megváltoztathatja</link> a számítógép által más eszközök felé megjelenített nevet.</p>
-  </note>
+  <steps>
+    <title>Allow files to be shared into your <file>Downloads</file> folder</title>
+    <item>
+      <p>Kattintson a nevére a felső sávban, és válassza a <gui>Beállítások</gui> menüpontot.</p>
+    </item>
+    <item>
+      <p>Open <gui>Sharing</gui>.</p>
+    </item>
+    <item>
+      <p>If <gui>Sharing</gui> is <gui>OFF</gui>, switch it to
+      <gui>ON</gui>.</p>
+    </item>
+    <item>
+      <p>Select <gui>Bluetooth Sharing</gui>.</p>
+    </item>
+    <item>
+      <p>Switch <gui>Save Received Files to Downloads Folder</gui> to
+      <gui>ON</gui>.</p>
+    </item>
+    <item>
+      <p>If you only want to allow trusted devices to access your
+      <file>Downloads</file> folder, switch
+      <gui>Only Receive From Trusted Devices</gui> to <gui>ON</gui>.</p>
+
+      <note style="tip">
+        <p>This option is disabled by default. You should enable it if you want
+        to prevent access to your shared files by anyone with a
+        Bluetooth-enabled cell phone or similar device nearby.</p>
+      </note>
+
+    </item>
+    <item>
+      <p>Click <gui style="button">Close</gui>. Bluetooth-enabled devices will
+      now be able to send files to your <file>Downloads</file> folder.</p>
+    </item>
+  </steps>
 
 </page>

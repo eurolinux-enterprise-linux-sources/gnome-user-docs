@@ -4,23 +4,20 @@
   <info>
     <link type="guide" xref="printing#paper"/>
 
+    <desc>How to print a folded, multi-page booklet using A4 or Letter-sized paper.</desc>
+
     <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
       <email>tiffany@antopolski.com</email>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>A4 またはレターサイズの用紙で複数ページの製本印刷を行う方法を説明します。</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -42,44 +39,39 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Noriko Mizumoto</mal:name>
-      <mal:email>noriko@fedoraproject.org</mal:email>
-      <mal:years>2013, 2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>坂本 貴史</mal:name>
-      <mal:email>o-takashi@sakamocchi.jp</mal:email>
-      <mal:years>2013, 2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>日本GNOMEユーザー会</mal:name>
       <mal:email>http://www.gnome.gr.jp/</mal:email>
       <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
 
-  <title>小冊子を印刷する</title>
+<title>Print a booklet</title>
 
-  <p>PDF から小冊子の印刷ができます。</p>
+<p>You can print a booklet from a PDF.</p>
+<p>If you want to print a booklet from a <app>LibreOffice</app> document,
+ first export it to a PDF by choosing <guiseq><gui>File</gui><gui>Export
+ as PDF…</gui></guiseq>. Your document needs to have a multiple of 4
+ number of pages (4, 8, 12, 16,…). You may need to add up to 3 blank
+pages.</p>
+ <p>If the number of pages in your PDF document is not a multiple of 4, you
+ should add the appropriate number of blank pages (1,2 or 3) to make it a
+ multiple of 4. To do so, you can:</p>
 
-  <p><app>LibreOffice</app> ドキュメントを製本印刷したい場合は、まず<guiseq><gui>ファイル</gui><gui>PDF としてエクスポート…</gui></guiseq>を選択してドキュメントを PDF に変換します。ドキュメントの合計ページ数は 4 の倍数にする必要があります (4、8、12、16 など)。必要に応じて、空白ページを最大 3 ページ追加してください。</p>
+ <steps>
+  <item>
+   <p>Create a <app>LibreOffice</app> document with the number (1-3) of blank
+   pages needed.</p>
+  </item>
+  <item>
+   <p>Export the blank pages to a PDF by choosing <guiseq><gui>File</gui>
+    <gui>Export as PDF…</gui></guiseq>.</p>
+  </item>
+  <item>
+   <p>Merge the blank pages with your PDF document using <app>PDF-Shuffler</app>
+   or <app>PDF Mod</app>, placing the blank pages at the end.</p>
+  </item>
+ </steps>
 
-  <p>PDF ドキュメントのページ数が 4 の倍数でない場合は、空白ページ (1、2、ないし 3 ページ) を追加して合計ページ数を 4 の倍数にする必要があります。次の手順でページを追加します。</p>
-
-  <steps>
-    <item>
-      <p>必要な空白ページ数 (1、2、ないし 3 ページ) の <app>LibreOffice</app> ドキュメントを作成します。</p>
-    </item>
-    <item>
-      <p><guiseq><gui>ファイル</gui><gui>PDF としてエクスポート…</gui></guiseq>を選択して、空白ページを PDF に変換します。</p>
-    </item>
-    <item>
-      <p><app>PDF-Shuffler</app> や <app>PDF Mod</app> などを使って、作成した空白ページと印刷対象のPDF ドキュメントを結合します。空白ページはドキュメントの最後に配置します。</p>
-    </item>
-  </steps>
-
-  <p>お使いのプリンタータイプを以下の一覧から選択してください。</p>
-
+<p>Select the type of printer you will be using for printing from the list
+ below:</p>
 </page>

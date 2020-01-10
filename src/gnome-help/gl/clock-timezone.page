@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="clock-timezone" xml:lang="gl">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="clock-timezone" xml:lang="gl">
 
   <info>
     <link type="guide" xref="clock"/>
-
+    <desc>Engadir outros fusos horarios de maneira que poida ver a hora noutras cidades.</desc>
     <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.16" date="2015-01-26" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Proxecto de documentación de GNOME</name>
@@ -17,44 +14,25 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
-    <credit type="editor">
-       <name>Jim Campbell</name>
-       <email>jcampbell@gnome.org</email>
-    </credit>
-
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Actualizar o seu fuso horario á súa localización actual para que a hora sexa a correcta.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2018</mal:years>
+      <mal:years>2011, 2012.</mal:years>
     </mal:credit>
   </info>
 
-  <title>Cambiar a súa hora do sistema</title>
+<title>Cambiar a súa hora do sistema</title>
 
-  <steps>
-    <item>
-      <p>Abra a vista de <gui xref="shell-introduction#activities">Actividades</gui> e comece a escribir <gui>Data e hora </gui>.</p>
-    </item>
-    <item>
-      <p>Prema en <gui>Data e hora</gui> para abrir o panel.</p>
-    </item>
-    <item>
-      <p>Se configurou <gui>Fuso horario automático</gui> a <gui>Activado</gui>, o seu fuso horario debería actualizarse automaticamente se conta con conexión a internet. Para actualizar o seu fuso horario e hora manualmente, <gui>Desactivea</gui>.</p>
-    </item>
-    <item>
-      <p>Prema <gui>Fuso horario</gui>, e logo seleccione a súa localización no mapa ou busque pola súa cidade actual.</p>
-    </item>
-  </steps>
+<steps>
+  <item><p>Prema sobre o reloxo no centro do centro da barra superior.</p></item>
+  <item><p>Seleccione <gui>Configuracións de data e hora</gui>.</p></item>
+  <item><p>Pode que precise <gui>Desbloquear</gui> e escribir o <link xref="user-admin-explain">contrasinal de administrador</link>.</p></item>
+  <item><p>Prema na localización actual no mapa, a continuación, seleccione a súa cidade actual na lista despregábel.</p></item>
+</steps>
 
-  <p>A hora actualizarase de forma automática cando seleccione unha localización diferente. Pode querer <link xref="clock-set">estabelecer a hora manualmente</link>.</p>
+  <p>A hora que mostra o reloxo non se actualizará de forma automática cando seleccione unha localización diferente. A hora da xanela actualizarase a seguinte vez que acceda á xanela <gui>Configuración de data e hora</gui>. Pode querer <link xref="clock-set">estabelecer a hora manualmanete</link>.</p>
 
 </page>

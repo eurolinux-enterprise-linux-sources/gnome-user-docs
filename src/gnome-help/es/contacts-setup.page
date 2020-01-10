@@ -1,35 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="contacts-setup" xml:lang="es">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="contacts-setup" xml:lang="es">
   <info>
     <link type="guide" xref="contacts" group="#first"/>
 
     <revision pkgversion="3.5.5" date="2012-08-13" status="draft"/>
-    <revision pkgversion="3.12" date="2014-02-26" status="final"/>
-    <revision pkgversion="3.13.91" date="2014-09-05" status="final"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
-    <revision pkgversion="3.22" date="2017-03-19" status="draft"/>
 
     <credit type="author copyright">
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
       <years>2012</years>
     </credit>
-    
-    <credit type="author copyright">
-      <name>Paul Cutler</name>
-      <email>pcutler@gnome.org</email>
-      <years>2017</years>
-    </credit>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <desc>Guardar sus contactos en una libreta de direcciones local o en una cuenta en línea.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2011 - 2018</mal:years>
+      <mal:years>2011 - 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -53,10 +40,21 @@
 
   <title>Iniciar Contactos pro primera vez</title>
 
-  <p>Cuando ejecute <app>Contactos</app> pro primera vez, se abrirá la ventana <gui>Selecciona libreta de contactos</gui>.</p>
+  <comment>
+    <cite date="2012-08-13" href="mailto:mdhillca@gmail.com">Michael Hill</cite>
+    <p>This assumes the reader knows how to…. By the end of this page,
+    the reader will be able to….</p>
+  </comment>
+
+  <p>Cuando ejecute <app>Contactos</app> pro primera vez, se abrirá la ventana <gui>Configurar Contactos</gui>.</p>
    
-  <p>Si tiene configuradas las <link xref="accounts">cuentas en línea</link>, se listarán en la <gui>Libreta local de direcciones</gui>. Elija un elemento de la lista y pulse <gui style="button">Hecho</gui>. Todos los contactos nuevos que cree se guardará en la libreta de contactos que elija. También puede ver y editar los contactos de otras libretas de direcciones.</p>
+   <p>Si tiene configuradas las <link xref="accounts">cuentas en línea</link>, se listarán en la <gui>Libreta local de direcciones</gui>. Elija un elemento de la lista y pulse <gui style="button">Seleccionar</gui>.</p>
   
-  <p>Si no tiene ninguna cuenta en línea configurada, pulse en <gui style="button">Cuentas en línea</gui> para iniciar la configuración. Si no quiere configurar una cuenta en línea en este momento, pulse <gui style="button">Libreta de direcciones local</gui>.</p>
+  <note>
+    <p>Pulse en la <gui style="button">configuración de la cuenta en línea</gui> para editar la configuración de las cuentas existentes.</p>
+  </note>
+  
+   <p>Si no tiene ninguna cuenta en línea configurada, pulse en <gui style="button">Cuentas en línea</gui> para iniciar la configuración. Si no quiere configurar una cuenta en línea en este momento, pulse <gui style="button">Libreta de direcciones local</gui>.</p>
+
 
 </page>

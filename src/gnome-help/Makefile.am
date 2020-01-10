@@ -4,6 +4,8 @@ EXTRA_DIST = C/gnome-help.its
 
 HELP_ID = gnome-help
 
+HELP_LINGUAS = ca cs de el fi fr es gl hi hu id it ja lv nl pa pt_BR ru sl sr sr@latin sv te vi
+
 HELP_MEDIA = \
 	figures/audio-volume-high-symbolic.svg \
 	figures/audio-volume-low-symbolic.svg \
@@ -31,30 +33,14 @@ HELP_MEDIA = \
 	figures/color-profile-default.png \
 	figures/color-space.png \
 	figures/display-dual-monitors.webm \
+	figures/documents-icon.png \
 	figures/emblem-system-symbolic.svg \
-	figures/emblem-system.png \
 	figures/gnome.png \
 	figures/go-down.png \
 	figures/input-keyboard-symbolic.png \
 	figures/input-methods-switcher.png \
-	figures/keyboard-key-calculator.svg \
-	figures/keyboard-key-computer.svg \
-	figures/keyboard-key-eject.svg \
-	figures/keyboard-key-folder.svg \
-	figures/keyboard-key-home.svg \
-	figures/keyboard-key-mail.svg \
-	figures/keyboard-key-media.svg \
 	figures/keyboard-key-menu.svg \
-	figures/keyboard-key-mute.svg \
-	figures/keyboard-key-next.svg \
-	figures/keyboard-key-pause.svg \
-	figures/keyboard-key-play.svg \
-	figures/keyboard-key-previous.svg \
-	figures/keyboard-key-search.svg \
-	figures/keyboard-key-stop.svg \
-	figures/keyboard-key-voldown.svg \
-	figures/keyboard-key-volup.svg \
-	figures/keyboard-key-world.svg \
+	figures/nautilus.png \
 	figures/nautilus-icons.png \
 	figures/network-cellular-3g-symbolic.svg \
 	figures/network-cellular-4g-symbolic.svg \
@@ -84,21 +70,28 @@ HELP_MEDIA = \
 	figures/printing-select.png \
 	figures/shell-activities-classic.png \
 	figures/shell-activities.png \
-	figures/shell-appmenu-classic.png \
-	figures/shell-appmenu-shell.png \
+	figures/shell-apps-open.png \
 	figures/shell-appts-classic.png \
 	figures/shell-appts.png \
 	figures/shell-dash.png \
 	figures/shell-exit-classic.png \
 	figures/shell-exit.png \
+	figures/shell-files.png \
+	figures/shell-introduction.png \
 	figures/shell-lock.png \
+	figures/shell-message-tray.png \
+	figures/shell-keyboard-shortcuts.png \
+	figures/shell-notification.png \
 	figures/shell-top-bar-classic.png \
 	figures/shell-top-bar.png \
 	figures/shell-window-list-classic.png \
+	figures/shell-windows.png \
 	figures/shell-workspaces.png \
+	figures/shell.png \
 	figures/top-bar-icons-classic.png \
 	figures/top-bar-icons.png \
 	figures/universal-access-menu.png \
+	figures/view-fullscreen-16.png \
 	figures/network-wireless-acquiring-symbolic.svg \
 	figures/network-wireless-connected-symbolic.svg \
 	figures/network-wireless-encrypted-symbolic.svg \
@@ -107,6 +100,7 @@ HELP_MEDIA = \
 	figures/network-wireless-signal-none-symbolic.svg \
 	figures/network-wireless-signal-ok-symbolic.svg \
 	figures/network-wireless-signal-weak-symbolic.svg \
+	figures/notification-buttons.png \
 	figures/system-run-symbolic.svg \
 	figures/view-more-symbolic.svg \
 	figures/yelp-icon-big.png
@@ -128,6 +122,7 @@ HELP_FILES = \
 	a11y-visualalert.page \
 	about-this-guide.page \
 	accounts-add.page \
+	accounts-create.page \
 	accounts-disable-service.page \
 	accounts-provider-not-available.page \
 	accounts-remove.page \
@@ -149,12 +144,11 @@ HELP_FILES = \
 	bluetooth-send-file.page \
 	bluetooth-turn-on-off.page \
 	bluetooth-visibility.page \
+	color.page \
 	clock-calendar.page \
 	clock-set.page \
 	clock-timezone.page \
-	clock-world.page \
 	clock.page \
-	color.page \
 	color-assignprofiles.page \
 	color-calibrate-camera.page \
 	color-calibrate-printer.page \
@@ -170,6 +164,7 @@ HELP_FILES = \
 	color-notifications.page \
 	color-notspecifiededid.page \
 	color-testing.page \
+	color-virtualdevice.page \
 	color-whatisprofile.page \
 	color-whatisspace.page \
 	color-why-calibrate.page \
@@ -186,12 +181,21 @@ HELP_FILES = \
 	disk-check.page \
 	disk-format.page \
 	disk-partitions.page \
-	disk-repair.page \
-	disk-resize.page \
 	disk.page \
-	display-blank.page \
-	display-brightness.page \
 	display-dual-monitors.page \
+	display-dual-monitors-desktop.page \
+	documents-collections.page \
+	documents-filter.page \
+	documents-formats.page \
+	documents-info.page \
+	documents.page \
+	documents-previews.page \
+	documents-print.page \
+	documents-search.page \
+	documents-select.page \
+	documents-tracker.page \
+	documents-viewgrid.page \
+	documents-view.page \
 	files-autorun.page \
 	files-browse.page \
 	files-copy.page \
@@ -213,7 +217,6 @@ HELP_FILES = \
 	files.page \
 	get-involved.page \
 	gnome-classic.page \
-	gnome-version.page \
 	hardware-auth.page \
 	hardware-cardreader.page \
 	hardware-driver.page \
@@ -236,6 +239,7 @@ HELP_FILES = \
 	look-resolution.page \
 	media.page \
 	more-help.page \
+	mouse-disabletouchpad.page \
 	mouse-doubleclick.page \
 	mouse-lefthanded.page \
 	mouse-middleclick.page \
@@ -248,6 +252,7 @@ HELP_FILES = \
 	music-cantplay-drm.page \
 	music-player-ipodtransfer.page \
 	music-player-newipod.page \
+	music-player-notrecognized.page \
 	nautilus-behavior.page \
 	nautilus-bookmarks-edit.page \
 	nautilus-connect.page \
@@ -270,9 +275,9 @@ HELP_FILES = \
 	net-fixed-ip-address.page \
 	net-general.page \
 	net-install-flash.page \
+	net-install-moonlight.page \
 	net-macaddress.page \
 	net-manual.page \
-	net-mobile.page \
 	net-othersconnect.page \
 	net-othersedit.page \
 	net-problem.page \
@@ -288,6 +293,7 @@ HELP_FILES = \
 	net-wireless-airplane.page \
 	net-wireless-connect.page \
 	net-wireless-disconnecting.page \
+	net-wireless-edit-connection.page \
 	net-wireless-find.page \
 	net-wireless-hidden.page \
 	net-wireless-noconnection.page \
@@ -299,8 +305,6 @@ HELP_FILES = \
 	net-wireless-wepwpa.page \
 	net-wireless.page \
 	net.page \
-	power-autobrightness.page \
-	power-autosuspend.page \
 	power-batteryestimate.page \
 	power-batterylife.page \
 	power-batteryoptimal.page \
@@ -308,20 +312,18 @@ HELP_FILES = \
 	power-batterywindows.page \
 	power-closelid.page \
 	power-constantfan.page \
+	power-hibernate.page \
 	power-hotcomputer.page \
 	power-lowpower.page \
 	power-nowireless.page \
 	power-othercountry.page \
-	power-status.page \
 	power-suspendfail.page \
 	power-suspend.page \
 	power-whydim.page \
 	power-willnotturnon.page \
-	power-wireless.page \
 	power.page \
 	prefs-display.page \
 	prefs-language.page \
-	prefs-sharing.page \
 	prefs.page \
 	printing-2sided.page \
 	printing-booklet-duplex.page \
@@ -341,8 +343,9 @@ HELP_FILES = \
 	printing-to-file.page \
 	printing.page \
 	privacy.page \
+	privacy-hide-notifications.page \
 	privacy-history-recent-off.page \
-	privacy-location.page \
+	privacy-name-visibility.page \
 	privacy-purge.page \
 	privacy-screen-lock.page \
 	screen-shot-record.page \
@@ -350,12 +353,11 @@ HELP_FILES = \
 	session-formats.page \
 	session-language.page \
 	session-screenlocks.page \
+	settings-sharing.page \
 	sharing.page \
 	sharing-bluetooth.page \
 	sharing-desktop.page \
-	sharing-displayname.page \
 	sharing-media.page \
-	sharing-personal.page \
 	shell-apps-favorites.page \
 	shell-apps-open.page \
 	shell-exit.page \
@@ -364,6 +366,7 @@ HELP_FILES = \
 	shell-lockscreen.page \
 	shell-notifications.page \
 	shell-overview.page \
+	shell-terminology.page \
 	shell-windows-lost.page \
 	shell-windows-maximize.page \
 	shell-windows-states.page \
@@ -386,6 +389,7 @@ HELP_FILES = \
 	translate.page \
 	user-accounts.page \
 	user-add.page \
+	user-addguest.page \
 	user-admin-change.page \
 	user-admin-explain.page \
 	user-admin-problems.page \
@@ -401,5 +405,3 @@ HELP_FILES = \
 	wacom-multi-monitor.page \
 	wacom-stylus.page \
 	wacom.page
-
-HELP_LINGUAS = as ca cs da de el fi fr es gl gu he hi hr hu id it ja kn lv mr nl pa pl pt pt_BR ro ru sl sr sr@latin sv te vi ta zh_CN

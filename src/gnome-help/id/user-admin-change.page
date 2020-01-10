@@ -1,80 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="user-admin-change" xml:lang="id">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="user-admin-change" xml:lang="id">
 
   <info>
+
     <link type="guide" xref="user-accounts#privileges"/>
     <link type="seealso" xref="user-admin-explain"/>
 
+    <desc>Anda dapat mengubah pengguna mana yang diijinkan untuk membuat perubahan ke sistem dengan memberi mereka privilese administratif.</desc>
+
     <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
-      <name>Proyek Dokumentasi GNOME</name>
+      <name>Projek Dokumentasi GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
-    </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>You can allow users to make changes to the system by giving them
-    administrative privileges.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Andika Triwidada</mal:name>
       <mal:email>andika@gmail.com</mal:email>
-      <mal:years>2011-2014, 2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Ahmad Haris</mal:name>
-      <mal:email>ahmadharis1982@gmail.com</mal:email>
-      <mal:years>2017.</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
 
-  <title>Ubah siapa yang memiliki privilese administratif</title>
+<title>Ubah siapa yang memiliki privilese administratif</title>
 
-  <p>Administrative privileges are a way of deciding who can make changes to
-  important parts of the system. You can change which users have administrative
-  privileges and which ones do not. They are a good way of keeping your system
-  secure and preventing potentially damaging unauthorized changes.</p>
+  <p>Privilese administratif adalah suatu cara untuk menentukan siapa dapat membuat perubahan pada bagian penting sistem. Anda dapat mengubah pengguna mana yang memiliki privilese admin dan pengguna mana yang tidak. Ini adalah cara yang baik untuk menjaga agar sistem Anda aman dan mencegah perubahan tanpa otorisasi yang berpotensi merusak.</p>
 
-  <p>You need <link xref="user-admin-explain">administrator privileges</link>
-  to change account types.</p>
+<steps>
+ <item>
+    <p>Click your name on the top bar, then click the picture next to your name
+ to open the <gui>Users</gui> window.</p>
+ </item>
 
-  <steps>
-    <item>
-      <p>Buka ringkasan <gui xref="shell-introduction#activities">Aktivitas</gui> dan mulai mengetik <gui>Pengguna</gui>.</p>
-    </item>
-    <item>
-      <p>Click <gui>Users</gui> to open the panel.</p>
-    </item>
-    <item>
-      <p>Press <gui style="button">Unlock</gui> in the top right corner and
-      type in your password when prompted.</p>
-    </item>
-    <item>
-      <p>Pilih pengguna yang privilesenya ingin Anda ubah.</p>
-    </item>
-    <item>
-      <p>Click the label <gui>Standard</gui> next to <gui>Account Type</gui>
-      and select <gui>Administrator</gui>.</p>
-    </item>
-    <item>
-      <p>The user’s privileges will be changed when they next log in.</p>
-    </item>
-  </steps>
+ <item>
+  <p>Klik <gui>Buka Kunci</gui> dan masukkan sandi Anda untuk membuka kunci pengaturan akun. (Untuk memberi seorang pengguna privilese admin, Anda sendiri mesti memiliki privilese admin).</p>
+ </item>
 
-  <note>
-    <p>The first user account on the system is usually the one that has
-    administrator privileges. This is the user account that was created when
-    you first installed the system.</p>
-    <p>Tak bijaksana untuk memiliki terlalu banyak pengguna dengan privilese <gui>Administrator</gui> pada satu sistem.</p>
-  </note>
+ <item>
+  <p>Pilih pengguna yang privilesenya ingin Anda ubah.</p>
+  </item>
 
+ <item><p>Klik label <gui>Standar</gui> di sebelah <gui>Tipe akun</gui> dan pilih <gui>Administrator</gui>.</p>
+ </item>
+
+
+ <item>
+  <p>Tutup jendela Akun Pengguna. Privilese pengguna akan diubah ketika mereka log masuk saat berikutnya.</p>
+  </item>
+</steps>
+
+<note>
+ <p>Akun pengguna pertama pada sistem biasanya yang memiliki privilese admin. Ini adalah akun pengguna yang dibuat saat Anda pertama memasang sistem.</p>
+ <p>Tak bijaksana untuk memiliki terlalu banyak pengguna dengan privilese <gui>Administrator</gui> pada satu sistem.</p>
+</note>
+
+  <comment>
+   <cite date="2012-02-19" href="mailto:gnome-doc-list@gnome.org">GNOME
+ Documentation Project</cite>
+   <p>Explain how admin privileges can be given to other people, or removed.
+ Warn the reader about how it's unwise to have too many admins on a system.</p>
+  </comment>
+	
 </page>

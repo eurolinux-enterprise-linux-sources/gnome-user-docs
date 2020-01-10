@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="session-fingerprint" xml:lang="lv">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="session-fingerprint" xml:lang="lv">
 
   <info>
     <link type="guide" xref="hardware-auth"/>
 
+    <desc>Jūs varat ierakstīties savā sistēmā, izmantojot atbalstītu pirkstu nospiedumu skeneri.</desc>
+
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
-    <revision pkgversion="3.10" date="2013-11-03" status="review"/>
-    <revision pkgversion="3.12" date="2014-06-16" status="final"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="final"/>
 
     <credit type="author">
       <name>GNOME dokumentācijas projekts</name>
@@ -16,79 +15,63 @@
     <credit type="author">
       <name>Paul W. Frields</name>
       <email>stickster@gmail.com</email>
-      <years>2011</years>
-    </credit>
-    <credit type="author editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-      <years>2013</years>
-    </credit>
-    <credit type="editor">
-      <name>Jim Campbell</name>
-      <email>jcampbell@gnome.org</email>
-      <years>2014</years>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Jūs varat ierakstīties savā sistēmā, izmantojot atbalstītu pirkstu nospiedumu skeneri, nevis rakstot paroli.</desc>
   </info>
 
   <title>Ierakstīties ar pirkstu nospiedumu</title>
-
-  <p>Ja jūsu sistēmai ir atbalstīts pirkstu nospiedumu skeneris, jūs varat ierakstīt savus pirkstu nospiedumus un izmantot tos, lai ierakstītos sistēmā.</p>
-
-<section id="record">
-  <title>Ierakstīt ar pirkstu nospiedumu</title>
-
-  <p>Pirms varat ierakstīties ar saviem pirkstu nospiedumiem, tos vajag ierakstīt, lai sistēma var jūs atpazīt.</p>
-
+  <p>Ja jūsu sistēmai ir atbalstīts pirkstu nospiedumu skeneris, jūs varat ierakstīt savus pirkstu nospiedumus un izmantot tos, lai ierakstītos sistēmā. Lai veiktu zemāk aprakstītās darbības, vajadzīgas administratora tiesības.</p>
+  <p>Pirmkārt, ierakstiet pirksta nospiedumu, pēc kura sistēma var jūs atpazīt.</p>
   <note style="tip">
     <p>Ja jūsu āda ir par sausu, var rasties grūtības ar pirkstu nospiedumu ierakstīšanu. Tādā gadījumā mazliet samitriniet pirkstus, noslaukiet tos ar tīru drānu, kas neatstāj pūkas, un mēģiniet vēlreiz.</p>
   </note>
-
-  <p>Jums ir jābūt <link xref="user-admin-explain">administratora tiesībām</link>, lai rediģētu ne savējos kontus.</p>
-
   <steps>
     <item>
-      <p>Atveriet <gui xref="shell-introduction#activities">Aktivitāšu</gui> pārskatu un sāciet rakstīt <gui>Lietotāji</gui>.</p>
+      <p>Spiediet uz sava vārda augšējā joslā, tad uz līdzās esošā attēla, lai atvērtu logu <gui>Lietotāju konti</gui>.</p>
     </item>
     <item>
-      <p>Spiediet <gui>Lietotāji</gui>, lai atvērtu paneli.</p>
+      <p>Atbloķējiet pieeju konta iestatījumiem, nospiežot pogu <gui>Atslēgt</gui> rīka <gui>Lietotāju konti</gui> augšējā labajā stūrī.</p>
     </item>
     <item>
-      <p>Spiediet <gui>Deaktivēts</gui>, pie <gui>Ierakstīšanās ar pirkstu nospiedumu</gui>, lai pievienotu pirkstu nospiedumu pie izvēlētā konta. Ja pievienojat pirkstu nospiedumu citam lietotājam, jums vajadzēs <gui>Atslēgt</gui> paneli.</p>
+      <p>Ievadiet savu paroli pēc pieprasījuma.</p>
     </item>
     <item>
-      <p>Izvēlieties pirkstu, kuru vēlaties izmantot autentifikācijai un spiediet <gui style="button">Nākamais</gui>.</p>
+      <p>Spiediet <gui>Atslēgts</gui> pie <gui>Ierakstīšanās ar pirksta nospiedumu</gui>.</p>
     </item>
     <item>
-      <p>Seko instrukcijām dialoglodziņā un velc pirkstu <em>vidēji ātri</em> pāri pirkstu nospiedumu lasītājam. Kad datoram būs labs pirkstu nospiedumu ieraksts, redzēsiet paziņojumu <gui>Darīts!</gui></p>
+      <p>Izvēlieties, kuru pirkstu ierakstīt, piemēram, labo rādītājpirkstu, kreiso rādītājpirkstu vai kādu citu. Tad spiediet <gui>Uz priekšu</gui>.</p>
     </item>
     <item>
-      <p>Spiediet <gui>Nākamais</gui>. Redzēsiet apstiprinājumu, ka pirksta nospiedums sekmīgi saglabāts. Spiediet <gui>Aizvērt</gui>, lai pabeigtu.</p>
+      <p>Pārvelciet izvēlēto pirkstu pāri lasītājam <em>mērenā ātrumā</em> trīs reizes. Katru reizi, kad lasītājam izdodas atpazīt pirksta nospiedumu, plaukstas attēls pārvērtīsies par pirksta nospieduma attēlu ar ķeksi. Pēc trešā sekmīgā vilkuma redzēsiet ziņojumu <gui>Darīts!</gui>.</p>
+    </item>
+    <item>
+      <p>Spiediet <gui>Uz priekšu</gui>. Redzēsiet apstiprinājumu, ka pirksta nospiedums sekmīgi saglabāts. Spiediet <gui>Aizvērt</gui>, lai pabeigtu.</p>
     </item>
   </steps>
-
-</section>
-
-<section id="verify">
-  <title>Pārbaudiet vai pirkstu nospiedumi tiešām strādā</title>
-
   <p>Tagad pārbaudiet, vai jauniestatītā ierakstīšanās ar pirksta nospiedumu strādā. Arī tad, ja saglabājāt pirksta nospiedumu, vēl joprojām varat ierakstīties ar paroli.</p>
-
   <steps>
     <item>
-      <p>Saglabājiet atvērto darbu un <link xref="shell-exit#logout">izrakstieties</link>.</p>
+      <p>Save any open work, and then log out. Select your name in the upper
+      right-hand corner and then select <gui>Log Out</gui>.</p>
     </item>
     <item>
-      <p>Ierakstīšanās ekrānā izvēlieties no saraksta savu vārdu. Parādīsies paroles ievades forma.</p>
+      <p>Sistēma prasīs jums apstiprinājumu. Spiediet <gui>Izrakstīties</gui>, lai apstiprinātu savu izvēli. Parādās ierakstīšanās ekrāns.</p>
     </item>
     <item>
-      <p>Tā vietā, lai rakstītu paroli, jūs varat vilkt savu pirkstu pāri pirkstu nospiedumu lasītājam.</p>
+      <p>At the login screen, select your name from the list. The password
+      entry form will appear.</p>
+    </item>
+    <item>
+      <p>Spiediet pirkstu nospieduma pogu pa labi un augšup no jūsu vārda, pirms pagājušas 30 sekundes.</p>
+      <note>
+	<p>Pirkstu nospieduma poga ir apzīmēta ar plaukstas attēlu. Pēc 30 sekundēm tā pazudīs, un tad jūs varēsiet ierakstīties tikai ar paroli. Ja vēlaties mēģināt vēlreiz, spiediet pogu <gui>Atcelt</gui> un atgriezieties pie iepriekšējā soļa.</p>
+      </note>
+    </item>
+    <item>
+      <p>Pārvelciet kādu no reģistrētajiem pirkstiem <em>mērenā</em> ātrumā pirkstu nospiedumu lasītājam. Ja lasītājs to atpazīs, notiks jūsu ierakstīšanās sistēmā.</p>
     </item>
   </steps>
-
-</section>
-
+  <p>Ja iepriekš tika izveidots ierakstīšanās atslēgu saišķis, tas ir noslēgts ar jūsu paroli. Lai to atslēgtu, ievadiet savu paroli.</p>
+	
 </page>

@@ -1,30 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-airplane" xml:lang="ru">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="net-wireless-airplane" xml:lang="ru">
   <info>
     <link type="guide" xref="net-wireless"/>
 
     <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
-    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-    <revision pkgversion="3.24" date="2017-03-26" status="final"/>
 
     <credit type="author">
       <name>Проект документирования GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
-    <credit type="editor">
-      <name>Майкл Хилл (Michael Hill)</name>
-      <email>mdhillca@gmail.com</email>
-      <years>2015</years>
-    </credit>
-    <credit type="editor">
-      <name>Екатерина Герасимова (Ekaterina Gerasimova)</name>
-      <email>kittykat3756@gmail.com</email>
-      <years>2015</years>
-    </credit>
 
-    <desc>Откройте настройки сети и включите режим для авиаперелётов.</desc>
+    <desc>Откройте <gui>Сетевые параметры</gui> и включите <gui>Режим для авиаперелётов</gui>.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -36,60 +22,23 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011-2012</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Станислав Соловей</mal:name>
-      <mal:email>whats_up@tut.by</mal:email>
-      <mal:years>2013-2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Юлия Дронова</mal:name>
-      <mal:email>juliette.tux@gmail.com</mal:email>
-      <mal:years>2013-2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Юрий Мясоедов</mal:name>
-      <mal:email>ymyasoedov@yandex.ru</mal:email>
-      <mal:years>2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
 
-<title>Отключение беспроводной связи (режим для авиаперелётов)</title>
+<title>Отключение беспроводной связи (режим для авиаперелётов)</title>
 
-<p>If you have your computer on an airplane (or some other area where wireless
- connections are not allowed), you should switch off your wireless. You may
- also want to switch off your wireless for other reasons (to save battery power,
- for example).</p>
+<p>Если вы находитесь с компьютером в самолёте (или в другом месте, где использование беспроводных соединений запрещено), следует отключить беспроводное соединение. Это может понадобиться и по другим причинам (например, для экономии заряда аккумулятора). Для этого:</p>
 
-  <note>
-    <p>Using <em>Airplane Mode</em> will completely turn off all wireless
-    connections, including WiFi, 3G and Bluetooth connections.</p>
-  </note>
+<steps>
+ <item>
+  <p>Щёлкните на значке сети на верхней панели и выберите <gui>Настроить сеть</gui>.</p>
+ </item>
+ <item>
+  <p>Включите <gui>Режим для авиаперелётов</gui>. При этом ваше беспроводное соединение будет отключено, пока вы снова не выключите режим для авиаперелётов.</p>
+ </item>
+</steps>
 
-  <p>To turn on airplane mode:</p>
-
-  <steps>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Network</gui>.</p>
-    </item>
-    <item>
-      <p>Нажмите <gui>Сеть</gui> чтобы открыть этот раздел настроек.</p>
-    </item>
-    <item>
-      <p>Switch <gui>Airplane Mode</gui> to <gui>ON</gui>. This will turn off
-      your wireless connection until you disable airplane mode again.</p>
-    </item>
-  </steps>
-
-  <note style="tip">
-    <p>You can turn off your WiFi connection from the 
-    <gui xref="shell-introduction#yourname">system menu</gui> by clicking on 
-    the connection name and choosing <gui>Turn Off</gui>.</p>
-  </note>
+<note><p>При использовании <em>Режима для авиаперелётов</em> полностью отключаются как беспроводные, так и Bluetooth соединения.</p></note>
 
 </page>

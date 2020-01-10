@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="user-add" xml:lang="nl">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="user-add" xml:lang="nl">
 
   <info>
     <link type="guide" xref="user-accounts#manage" group="#first"/>
-
-    <revision pkgversion="3.8" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.13.92" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-
+    <link type="seealso" xref="user-addguest"/>
+    <desc>Nieuwe gebruikers toevoegen zodat anderen zich op de computer kunnen aanmelden.</desc>
+    <!-- Setting 3.4.0 version to final for release, but we need to do something
+         about the various comments in here, so incomplete for 3.4.1.
+    -->
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-09" status="candidate"/>
     <credit type="author">
       <name>Gnome-documentatieproject</name>
       <email>gnome-doc-list@gnome.org</email>
@@ -21,68 +21,82 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Nieuwe gebruikers toevoegen zodat anderen zich op de computer kunnen aanmelden.</desc>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
   </info>
 
   <title>Een nieuwe gebruiker toevoegen</title>
 
+<comment>
+  <cite date="2012-02-19">shaunm</cite>
+  <p>We need a note in here about password hints. Share content
+  with user-changepassword</p>
+</comment>
+
+<comment>
+  <cite date="2012-03-24">shaunm</cite>
+  <p>Let's add a "Disable account" page. Click the account, click the dots
+  next to "Password", select "Disable this account" from "Type".</p>
+</comment>
+
+<comment>
+<cite date="2012-03-24">shaunm</cite>
+<p>Much of the password dialog simply does not work:</p>
+<list>
+<item><p><gui>Choose a password at next login</gui> does nothing</p></item>
+<item><p><gui>Log in without a password</gui> does nothing</p></item>
+<item><p><gui>Enable this account</gui> does nothing (and it's not even
+clear to me what it should do):
+<link href="https://bugzilla.gnome.org/show_bug.cgi?id=655914">665914</link></p></item>
+<item><p><gui>Hint</gui> does nothing:
+<link href="https://bugzilla.gnome.org/show_bug.cgi?id=647912">647912</link>,
+<link href="https://bugzilla.gnome.org/show_bug.cgi?id=643445">643445</link></p></item>
+</list>
+</comment>
+
   <p>U kunt meerdere gebruikersaccounts aan uw computer toevoegen. Geef iedereen thuis of op het bedrijf een eigen account. Elke gebruiker heeft zijn eigen persoonlijke map, documenten en instellingen.</p>
 
-  <p>Om gebruikersaccounts te kunnen toevoegen dient u <link xref="user-admin-explain">beheerder</link> te zijn.</p>
+<steps>
+  <item><p>Click your name on the top bar and select <gui>Settings</gui>.</p></item>
+  <item><p>Open <gui>Users</gui>.</p></item>
 
-  <steps>
-    <item>
-      <p>Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht en typ <gui>Gebruikers</gui>.</p>
-    </item>
-    <item>
-      <p>Klik op <gui>Gebruikers</gui> om het paneel te openen.</p>
-    </item>
-    <item>
-      <p>Klik op <gui style="button">Ontgrendelen</gui> rechtsboven in de hoek en voer uw wachtwoord in wanneer daar om gevraagd wordt.</p>
-    </item>
-    <item>
-      <p>Druk op <gui style="button">+</gui>, onder de lijst met accounts links, om een nieuwe gebruikersaccount toe te voegen.</p>
-    </item>
-    <item>
-      <p>Als u wilt dat de nieuwe gebruiker toegang tot de computer heeft als <link xref="user-admin-explain">beheerder</link>, kies dan als accounttype <gui>Beheerder</gui>.</p>
-      <p> Beheerders kunnen handelingen verrichten zoals het toevoegen en verwijderen van gebruikers, software en stuurprogramma's installeren en de datum en tijd wijzigen.</p>
-    </item>
-    <item>
-      <p>Voer de volledige naam van de nieuwe gebruiker in. De gebruikersnaam wordt automatisch ingevuld op basis van de volledige naam. Als u de voorgestelde gebruikersnaam niet wenst, kunt u het wijzigen.</p>
-    </item>
-    <item>
-      <p>U kunt ervoor kiezen een wachtwoord in te stellen voor de nieuwe gebruiker, of dit door hen zelf te laten doen bij de eerste aanmelding.</p>
-      <p>Als u het wachtwoord nu wilt instellen, dan kunt u op het <gui style="button"><media its:translate="no" type="image" src="figures/system-run-symbolic.svg" width="16" height="16">
-      <span its:translate="yes">wachtwoord genereren</span></media></gui>-pictogram klikken om automatisch een willekeurig wachtwoord te genereren.</p>
-    </item>
-    <item>
-      <p>Klik op <gui>Toevoegen</gui>.</p>
-    </item>
-  </steps>
+  <item><p>You need <link xref="user-admin-explain">administrator privileges</link>
+  to add user accounts. Click <gui>Unlock</gui> in the top right corner and type
+  your password or the administrator password, as prompted.</p></item>
 
-  <p>Als u het wachtwoord wilt wijzigen nadat u het account heeft aangemaakt, selecteer dan het account, <gui style="button">ontgrendel</gui> het paneel en klik op het invoerveld Wachtwoord.</p>
+  <item><p>In the list of accounts on the left, click the
+  <gui style="button">+</gui> button to add a new user account.</p></item>
 
-  <note>
-    <p>In het paneel <gui>Gebruikers</gui> kunt u klikken op de afbeelding naast de gebruikersnaam om een afbeelding in te stellen voor dit account. Deze afbeelding zal getoond worden in het aanmeldvenster. Gnome heeft standaard een aantal afbeeldingen die u kunt gebruiken, maar u kunt ook zelf een afbeelding selecteren of er één van uzelf maken met uw webcam.</p>
-  </note>
+  <item><p>If you want the new user to have
+  <link xref="user-admin-explain">administrative access</link> to the computer,
+  select <gui>Administrator</gui> for the account type. Administrators can do things
+  like add and delete users, install software and drivers, and change the date and
+  time.</p></item>
+
+  <item><p>Enter the new user's full name. The username will be filled in
+  automatically based on the full name. The default is probably OK, but you can
+  change it if you  like.</p></item>
+
+  <item><p>Click <gui>Add</gui>.</p></item>
+
+  <item><p>The account is initially disabled until you choose what to do about
+  the user's password. Select the new account from the list. Under
+  <gui>Login Options</gui> click <gui>Account disabled</gui> next to
+  <gui>Password</gui>. Select <gui>Set a password now</gui> from the
+  <gui>Action</gui> drop-down list, and have the user type their password in the
+  <gui>New password</gui> and <gui>Confirm password</gui> fields.
+  See <link xref="user-goodpassword"/>.</p>
+  <p>You can also click the button next to the
+  <gui>New password</gui> field to select a randomly generated secure password.
+  These passwords are hard for others to guess, but they can be hard to remember,
+  so be careful.</p></item>
+  <item><p>Click <gui>Change</gui>.</p></item>
+</steps>
+
+<note><p>In the <gui>User Accounts</gui> window you can click the image next
+ to the user's name on the right to set an image for the account. This image will
+ be shown in the login window. GNOME provides some stock photos you can use, or
+ you can select your own or take a picture with your webcam.</p>
+</note>
 
 </page>

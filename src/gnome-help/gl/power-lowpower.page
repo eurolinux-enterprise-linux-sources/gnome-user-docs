@@ -2,10 +2,8 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="power-lowpower" xml:lang="gl">
 
   <info>
-    <link type="guide" xref="power#faq"/>
+    <link type="guide" xref="power#battery"/>
     <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
-    <revision pkgversion="3.20" date="2016-06-15" status="final"/>
 
     <desc>Deixar que a batería se descargue completamente non é bo para ela.</desc>
     <credit type="author">
@@ -16,34 +14,22 @@
       <name>Ekaterina Gerasimova</name>
       <email>kittykat3756@gmail.com</email>
     </credit>
-    <credit type="author editor">
-      <name>Petr Kovar</name>
-      <email>pknbe@volny.cz</email>
-    </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2018</mal:years>
+      <mal:years>2011, 2012.</mal:years>
     </mal:credit>
   </info>
 
-<title>Why did my computer turn off when the battery got to 10%?</title>
+<title>Por que se apaga/hiberna o computador cando a batería chega ao 10%?</title>
 
-<p>When the charge level of the battery gets too low, your computer will
-automatically turn off. It does this to make sure that the battery does not
-completely discharge, since this is bad for
-the battery. If the battery just ran out, the computer would not have time to
-shut down properly either.</p>
+<p>Cando o nivel de carga da batería está moi baixo, o seu computador <link xref="power-hibernate">hibernarase</link> automaticamente. Isto non asegura que a batería non se descargue por completo, xa que é moi malo para a batería. Se a batería esgotouse, o computador non terá tempo de apagarse de forma segura.</p>
 
-<p>Bear in mind that when your computer automatically turns off, your
-applications and documents <em>are not</em> saved. To avoid losing your
-work, save it before the battery gets too low.</p>
+<p>Pode cambiar o que sucede cando o nivel da batería está moi baixo abrindo <app>Enerxía</app> desde a vista xeral de <gui>Actividades</gui>. Busque a configuración <gui>Cando a enerxía está criticamente baixa</gui>. Seleccione se quere que o seu computador hiberne ou se apague. Se seleccionou que se apague, os seus aplicativos e documentos <em>non se gardarán</em> antes de que o computador se apague.</p>
+
+<p>Algúns computadores teñen problemas de hibernación, e poden non ser capaces de recuperar os aplicativos e documentos que tiña abertos cando acenda o computador de novo. Neste caso, é posíbel que poida perder algo do seu traballo, se non o garda antes de que o ordenador se hiberne. Podería ser capaz de <link xref="power-suspendfail">arranxar os problemas coa hibernación</link>.</p>
 
 </page>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="user-add" xml:lang="lv">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="user-add" xml:lang="lv">
 
   <info>
     <link type="guide" xref="user-accounts#manage" group="#first"/>
-
-    <revision pkgversion="3.8" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.13.92" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-
+    <link type="seealso" xref="user-addguest"/>
+    <desc>Pievienot jaunus lietotājus, lai cilvēki varētu ierakstīties sistēmā un lietot datoru.</desc>
+    <!-- Setting 3.4.0 version to final for release, but we need to do something
+         about the various comments in here, so incomplete for 3.4.1.
+    -->
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-09" status="candidate"/>
     <credit type="author">
       <name>GNOME dokumentācijas projekts</name>
       <email>gnome-doc-list@gnome.org</email>
@@ -21,56 +21,68 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Pievienot jaunus lietotājus, lai cilvēki varētu ierakstīties sistēmā un lietot datoru.</desc>
   </info>
 
   <title>Pievienot jaunu lietotāja kontu</title>
 
+<comment>
+  <cite date="2012-02-19">shaunm</cite>
+  <p>We need a note in here about password hints. Share content
+  with user-changepassword</p>
+</comment>
+
+<comment>
+  <cite date="2012-03-24">shaunm</cite>
+  <p>Let's add a "Disable account" page. Click the account, click the dots
+  next to "Password", select "Disable this account" from "Type".</p>
+</comment>
+
+<comment>
+<cite date="2012-03-24">shaunm</cite>
+<p>Much of the password dialog simply does not work:</p>
+<list>
+<item><p><gui>Choose a password at next login</gui> does nothing</p></item>
+<item><p><gui>Log in without a password</gui> does nothing</p></item>
+<item><p><gui>Enable this account</gui> does nothing (and it's not even
+clear to me what it should do):
+<link href="https://bugzilla.gnome.org/show_bug.cgi?id=655914">665914</link></p></item>
+<item><p><gui>Hint</gui> does nothing:
+<link href="https://bugzilla.gnome.org/show_bug.cgi?id=647912">647912</link>,
+<link href="https://bugzilla.gnome.org/show_bug.cgi?id=643445">643445</link></p></item>
+</list>
+</comment>
+
   <p>Jūs varat pievienot datoram vairākus lietotāja kontus. Izveidojiet vienu kontu katram cilvēkam jūsu mājās vai uzņēmumā. Katram lietotājam ir sava mājas mape, dokumenti un iestatījumi.</p>
 
-  <p>Jums ir jābūt <link xref="user-admin-explain">administratora tiesībām</link>, lai pievienotu lietotāju kontus.</p>
+<steps>
+  <item><p>Click your name on the top bar and select <gui>Settings</gui>.</p></item>
+  <item><p>Open <gui>Users</gui>.</p></item>
 
-  <steps>
-    <item>
-      <p>Atveriet <gui xref="shell-introduction#activities">Aktivitāšu</gui> pārskatu un sāciet rakstīt <gui>Lietotāji</gui>.</p>
-    </item>
-    <item>
-      <p>Spiediet <gui>Lietotāji</gui>, lai atvērtu paneli.</p>
-    </item>
-    <item>
-      <p>Spiediet pogu <gui style="button">Atslēgt</gui> un ievadiet savu  paroli.</p>
-    </item>
-    <item>
-      <p>Spiediet <gui style="button">+</gui> pogu zem kontu saraksta pa kreisi, lai pievienotu jaunu lietotāja kontu.</p>
-    </item>
-    <item>
-      <p>Ja gribat, lai jaunajam lietotājam būtu <link xref="user-admin-explain">administratīva pieeja</link> datoram, izvēlēties <gui>Administratora</gui> konta tipu.</p>
-      <p>Administratori var pievienot un dzēst lietotājus, instalēt programmatūru un draiverus, nomainīt datumu un laiku u.tml.</p>
-    </item>
-    <item>
-      <p>Ievadiet jaunā lietotāja pilno vārdu. Automātiski tiks ieteikts atbilstošs lietotājvārds. Ja nepatīk piedāvātais lietotājvārds, varat to nomainīt.</p>
-    </item>
-    <item>
-      <p>Jūs varat izvēlēties jaunā lietotāja paroli, vai ļaut viņiem pašiem to iestatīt pirmajā ierakstīšanās reizē.</p>
-      <p>Ja izvēlaties iestatīt paroli tagad, varat spiest uz <gui style="button"><media its:translate="no" type="image" src="figures/system-run-symbolic.svg" width="16" height="16">
-      <span its:translate="yes">ģenerēt paroli</span></media></gui> ikonas, lai automātiski ģenerētu nejaušu paroli.</p>
-    </item>
-    <item>
-      <p>Spiediet <gui>Pievienot</gui>.</p>
-    </item>
-  </steps>
+  <item><p>Lai pievienotu kontus, ir nepieciešamas <link xref="user-admin-explain">administratora tiesības</link>. Spiediet <gui>Atslēgt</gui> augšējā labajā stūrī un ievadiet savu paroli vai administratora paroli, kā prasīts.</p></item>
 
-  <p>Ja vēlaties mainīt paroli pēc konta izveidošanas, izvēlieties kontu, <gui style="button">Atslēdziet</gui> paneli un spiediet uz pašreizējās paroles statusa.</p>
+  <item><p>In the list of accounts on the left, click the
+  <gui style="button">+</gui> button to add a new user account.</p></item>
 
-  <note>
-    <p>Panelī <gui>Lietotāji</gui> var veikt klikšķi uz attēla līdzās lietotāja vārdam labajā pusē, lai iestatītu konta attēlu. Šis attēls parādīsies ierakstīšanās logā. GNOME piedāvā standarta attēlus, bet jūs varat arī izvēlēties kādu no savējiem vai uzņemt jaunu attēlu ar tīmekļa kameru.</p>
-  </note>
+  <item><p>Ja gribat, lai jaunajam lietotājam būtu <link xref="user-admin-explain">administratīva pieeja</link> datoram, izvēlēties <gui>Administratora</gui> konta tipu. Administratori var pievienot un dzēst lietotājus, instalēt programmatūru un draiverus, nomainīt datumu un laiku u.tml.</p></item>
+
+  <item><p>Ievadiet jaunā lietotāja pilno vārdu. Automātiski tiks ieteikts atbilstošs lietotājvārds. Ja vēlaties, varat to arī mainīt.</p></item>
+
+  <item><p>Click <gui>Add</gui>.</p></item>
+
+  <item><p>The account is initially disabled until you choose what to do about
+  the user's password. Select the new account from the list. Under
+  <gui>Login Options</gui> click <gui>Account disabled</gui> next to
+  <gui>Password</gui>. Select <gui>Set a password now</gui> from the
+  <gui>Action</gui> drop-down list, and have the user type their password in the
+  <gui>New password</gui> and <gui>Confirm password</gui> fields.
+  See <link xref="user-goodpassword"/>.</p>
+  <p>Jūs varat arī nospiest logu līdzās laukam <gui>Jaunā parole</gui>, lai izvēlētos vienu no datora ģenerētajām drošajām parolēm. Šādas paroles ir grūti uzminēt, bet nav viegli arī atcerēties, tāpēc izvēlieties apdomīgi.</p></item>
+  <item><p>Spiediet pogu <gui>Mainīt</gui>.</p></item>
+</steps>
+
+<note><p>Logā <gui>Lietotāju konti</gui> var veikt klikšķi uz attēla līdzās lietotāja vārdam labajā pusē, lai iestatītu konta attēlu. Šis attēls parādīsies ierakstīšanās logā. GNOME piedāvā standarta attēlus, bet jūs varat arī izvēlēties kādu no savējiem vai uzņemt jaunu attēlu ar tīmekļa kameru.</p>
+</note>
 
 </page>

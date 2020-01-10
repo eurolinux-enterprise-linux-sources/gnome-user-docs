@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="reference" id="shell-terminology" xml:lang="it">
+
+  <info>
+    <link type="guide" xref="shell-overview#desktop"/>
+
+    <desc>Una panoramica dei termini usati per descrivere le differenti parti dell'ambiente grafico.</desc>
+
+    <revision pkgversion="3.8.0" version="0.4" date="2013-04-23" status="outdated"/>
+
+    <credit type="author">
+      <name>Progetto documentazione di GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luca Ferretti</mal:name>
+      <mal:email>lferrett@gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Flavia Weisghizzi</mal:name>
+      <mal:email>flavia.weisghizzi@ubuntu.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Activities, dash, top bar… What are they?</title>
+
+<!-- THIS SHOULD BE ALPHABETICALLY SORTED… it is. -->
+
+<terms>
+ <item>
+  <title>Panoramica attività</title>
+  <p if:test="!platform:gnome-classic">The <em>activities overview</em> is the
+  screen that is displayed when you click <gui>Activities</gui> at the top
+  left of the screen.</p>
+  <p if:test="platform:gnome-classic">The <em>activities overview</em> is the
+  screen that is displayed when you select <gui>Activities Overview</gui> in
+  the <gui>Applications</gui> menu at the top left of the screen.</p>
+ </item>
+
+ <item if:test="platform:gnome-classic">
+  <title>Applications menu</title>
+  <p>You can find the <gui>Applications</gui> menu at the at the top left of
+  the screen. It gives you access to applications organized into categories.
+  The <em>activities overview</em> is available by selecting the <gui>Activities
+  Overview</gui> item from the menu.</p> 
+ </item>
+
+ <item>
+  <title>Super-Tab window switcher</title>
+  <p>When you hold down the <key xref="keyboard-key-super">Super</key> key and
+  then press <key>Tab</key>, a <em>window switcher</em> appears. This shows the
+  icons of the applications you have currently open.</p>
+ </item>
+
+ <item>
+  <title>Dash</title>
+  <p>La <em>dash</em> è l'elenco delle applicazioni preferite che è mostrato sul lato sinistro della panoramica attività. Anche le applicazioni che sono al momento in esecuzione vengono mostrate nella dash. La dash è talvolta anche indicata come <em>dock</em>.</p>
+ </item>
+
+ <item>
+  <title>Angolo attivo</title>
+  <p>L'<em>angolo attivo</em> è l'angolo superiore sinistro dello schermo. Quando si sposta il puntatore in questo angolo, vine aperta la panoramica attività.</p>
+ </item>
+
+ <item>
+  <title>Blocca lo schermo</title>
+  <p>The <em>lock screen</em> displays an image on the screen while your
+ computer is locked. It provides useful information about what has been
+ happening while you have been away, and allows you to control media playback
+ without having to unlock.</p>
+ </item>
+
+ <item>
+  <title>Notifiche</title>
+  <p><em>Notifications</em> are messages that pop up at the bottom of the
+  screen, telling you that something just happened. For example, when someone
+  chatting with you sends a message, a notification will pop up to tell you. If
+  you don't want to deal with a message right now, it is hidden in your
+  message tray. Move your mouse to the bottom-right corner (or press
+  <keyseq><key xref="keyboard-key-super">Super</key><key>M</key></keyseq>) to
+  see your message tray.</p>
+ </item>
+
+ <item if:test="platform:gnome-classic">
+  <title>Places menu</title>
+  <p>The <em>places menu</em> is opened when you click <gui>Places</gui>
+  on the <gui>top bar</gui>. It gives you quick access to important folders,
+  for example <gui>Downloads</gui> or <gui>Pictures</gui>.</p>
+ </item>
+
+ <item>
+  <title>Settings</title>
+  <p>The <em>settings</em> are where you can change preferences and so on,
+  similar to the Control Panel in Windows or the System Preferences in Mac OS.
+  Click your name on the top-right of the top bar and select <gui>Settings</gui>
+  to access them.</p>
+ </item>
+
+ <item>
+  <title>Barra superiore</title>
+  <p if:test="!platform:gnome-classic">La <em>barra superiore</em> è la barra collocata lungo tutto il bordo superiore dello schermo. Alle due estremità della barra si trovano rispettivamente il pulsante <gui>Attività</gui> e il nome dell'utente.</p>
+  <p if:test="platform:gnome-classic">The <em>top bar</em> is the bar that runs
+  along the very top of the screen. The <gui>Applications</gui> menu is on one
+  end of the top bar and your username is on the other.</p> 
+ </item>
+
+ <item>
+  <title>Spazio di lavoro</title>
+  <p>È possibile porre le finestre su diversi <em>spazi di lavoro</em>. È un modo conveniente di raggruppare e separare le fineste.</p>
+ </item>
+
+ <item>
+  <title>Selettore spazio di lavoro</title>
+  <p>Il <em>selettore spazio di lavoro</em> è l'elenco degli spazi di lavoro che è mostrato sul lato destro della vista <gui>Finestre</gui> della panoramica attività.</p>
+ </item>
+
+ <item if:test="platform:gnome-classic">
+  <title>Window list</title>
+  <p>The <em>window list</em> is the bar at the very bottom of the screen, which
+  shows buttons for all your open windows.</p>
+ </item>
+
+</terms>
+
+</page>

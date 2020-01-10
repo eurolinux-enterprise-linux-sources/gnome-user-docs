@@ -4,7 +4,7 @@
   <info>
     <link type="guide" xref="color#problems"/>
     <link type="seealso" xref="color-gettingprofiles"/>
-    <desc>Celoobrazovková korekce barev mění barvy na celé obrazovce ve všech oknech.</desc>
+    <desc>Whole-screen color correction modifies all the screen colors on all windows.</desc>
 
     <credit type="author">
       <name>Richard Hughes</name>
@@ -17,16 +17,19 @@
       <mal:email>adamatousek@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Marek Černocký</mal:name>
-      <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014, 2015</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Schází informace pro celoobrazovkovou korekci barev?</title>
-  <p>Bohužel, řada profilů ICC poskytovaných výrobci neobsahuje informace potřebné pro celoobrazovkovou korekci barev. Takovéto profily ale i tak mohou být použitelné pro aplikace, které umí kompenzaci barev, ale neuvidíte upravené barvy na celé obrazovce.</p>
-  <p>Abyste mohli vytvořit profil displeje, které bude obsahovat data pro kalibraci a charekterizaci, potřebujete použít speciální nástroje pro měření barev, nazývané kolorimetr nebo spektrometr.</p>
+  <title>Missing information for whole-screen color correction?</title>
+  <p>
+    Unfortunately, many vendor-supplied ICC profiles do not include the
+    information required for whole-screen color correction.
+    These profiles can still be useful for applications that can do color
+    compensation, but you will not see all the colors of your screen change.
+  </p>
+  <p>
+    In order to create a display profile, which includes both calibration and
+    characterization data, you will need to use a special color measuring
+    instruments called a colorimeter or a spectrometer.
+  </p>
 
 </page>

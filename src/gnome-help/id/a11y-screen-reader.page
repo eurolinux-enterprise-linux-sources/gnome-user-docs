@@ -1,70 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="a11y task" id="a11y-screen-reader" xml:lang="id">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="a11y task" id="a11y-screen-reader" xml:lang="id">
   <info>
     <link type="guide" xref="a11y#vision" group="blind"/>
 
-    <revision pkgversion="3.13.92" date="2014-09-20" status="incomplete"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
       <email>shaunm@gnome.org</email>
     </credit>
-    <credit type="editor">
-      <name>Jana Heves</name>
-      <email>jsvarova@gnome.org</email>
-    </credit>
 
     <desc>Pakai <app>Orca</app> pembaca layar untuk mengucapkan antar muka pengguna.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Andika Triwidada</mal:name>
       <mal:email>andika@gmail.com</mal:email>
-      <mal:years>2011-2014, 2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Ahmad Haris</mal:name>
-      <mal:email>ahmadharis1982@gmail.com</mal:email>
-      <mal:years>2017.</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
 
   <title>Baca layar keras-keras</title>
 
-  <p>GNOME menyediakan pembaca layar <app>Orca</app> untuk mengucapkan antar muka pengguna. Tergantung pada bagaimana Anda memasang GNOME, Orca mungkin tidak terpasang. Bila tidak, pasanglah Orca terlebih dahulu.</p>
+  <p>GNOME menyediakan <app>Orca</app> pembaca layar untuk mengucapkan antar muka pengguna. Tergantung pada bagaimana Anda memasang GNOME, Orca mungkin tidak terpasang. <link href="install:orca">Pasang Orca</link>, kemudian lihat <link href="help:orca">Bantuan Orca</link> untuk informasi lebih lanjut.</p>
 
-  <p if:test="action:install"><link style="button" action="install:orca">Pasang Orca</link></p>
-  
-  <p>Untuk memulai <app>Orca</app> menggunakan papan ketik:</p>
-  
-  <steps>
-    <item>
-    <p>Tekan <key>Super</key>+<key>Alt</key>+<key>S</key>.</p>
-    </item>
-  </steps>
-  
-  <p>Untuk memulai <app>Orca</app> memakai sebuah tetikus dan papan ketik:</p>
-
-  <steps>
-    <item>
-      <p>Buka ringkasan <gui xref="shell-introduction#activities">Aktivitas</gui> dan mulai mengetik <gui>Akses Universal</gui>.</p>
-    </item>
-    <item>
-      <p>Klik <gui>Akses Universal</gui> untuk membuka panel.</p>
-    </item>
-    <item>
-      <p>Klik <gui>Pembaca Layar</gui> dalam seksi <gui>Penglihatan</gui>, lalu nyalakan <gui>Pembaca Layar</gui> dalam dialog.</p>
-    </item>
-  </steps>
-
-  <note style="tip">
-    <title>Menyalakan dan mematikan Pembaca Layar secara cepat</title>
-    <p>Anda dapat secara cepat menyalakan dan mematikan Pembaca Layar dengan mengklik <link xref="a11y-icon">ikon aksesibilitas</link> pada bilah puncak dan memilih <gui>Pembaca Layar</gui>.</p>
-  </note>
-
-  <p>Lihat <link href="help:orca">Bantuan Orca</link> untuk informasi lebih lanjut.</p>
+  <comment>
+    <cite date="2012-02-19">shaunm</cite>
+    <p>I'd like this page to have more on how to start Orca, then pass
+    off to the Orca help for more information.</p>
+  </comment>
 </page>

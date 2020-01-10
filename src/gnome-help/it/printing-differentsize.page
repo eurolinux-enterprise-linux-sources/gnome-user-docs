@@ -3,10 +3,9 @@
 
   <info>
     <link type="guide" xref="printing#paper"/>
+    <desc>Stampare un documento su carta di formato diverso o con diverso orientamento.</desc>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -16,12 +15,8 @@
       <name>Jim Campbell</name>
       <email>jwcampbell@gmail.com</email>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
     <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
-
-    <desc>Stampare un documento su carta di formato diverso o con diverso orientamento.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Luca Ferretti</mal:name>
@@ -36,35 +31,23 @@
     </mal:credit>
   </info>
 
-  <title>Modificare il formato della carta durante la stampa</title>
+<title>Modificare il formato della carta durante la stampa</title>
 
   <p>Per modificare la dimensione della carta per la stampa del documento è possibile selezionare la tipologia di formato su cui stampare (per esempio, stampare un PDF in formato US Letter formato su un foglio A4).</p>
 
-  <steps>
-    <item>
-      <p>Open the print dialog by pressing
-      <keyseq><key>Ctrl</key><key>P</key></keyseq>.</p>
-    </item>
-    <item>
-      <p>Selezionare la scheda <gui>Impostazioni pagina</gui>.</p>
-    </item>
-    <item>
-      <p>Under the <gui>Paper</gui> column, choose your <gui>Paper size</gui>
-      from the drop-down list.</p>
-    </item>
-    <item>
-      <p>Click <gui>Print</gui> to print your document.</p>
-    </item>
-  </steps>
+<steps>
+ <item><p>Fare clic su <guiseq><gui>File</gui><gui>Stampa</gui></guiseq>.</p></item>
+ <item><p>Selezionare la scheda <gui>Impostazioni pagina</gui>.</p></item>
+ <item><p>Nella colonna <em>Pagina</em>, scegliere <em>Dimenzione pagina</em> dal menù a discesa.</p></item>
+ <item><p>Fare clic su <gui>Stampa</gui> e il documento dovrebbe essere stampato.</p></item>
+</steps>
 
-  <p>You can also use the <gui>Orientation</gui> drop-down list to choose a
-  different orientation:</p>
+  <p>È possibile usare il menù <gui>Orientamento</gui> per scegliere un orientamento differente della pagina:</p>
 
-  <list>
-    <item><p><gui>Verticale</gui></p></item>
-    <item><p><gui>Orizzontale</gui></p></item>
-    <item><p><gui>Verticale invertito</gui></p></item>
-    <item><p><gui>Orizzontale invertito</gui></p></item>
-  </list>
-
+<list>
+<item><p><gui>Verticale</gui></p></item>
+<item><p><gui>Orizzontale</gui></p></item>
+<item><p><gui>Verticale invertito</gui></p></item>
+<item><p><gui>Orizzontale invertito</gui></p></item>
+</list>
 </page>

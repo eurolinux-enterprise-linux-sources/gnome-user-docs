@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-firewall-on-off" xml:lang="ru">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="net-firewall-on-off" xml:lang="ru">
 
   <info>
-    <link type="guide" xref="net-security" group="#first"/>
-
+    <link type="guide" xref="net-security"/>
+    <desc>Управление тем, какие программы могут получать доступ к сети. Это помогает обеспечить безопасность компьютера.</desc>
     <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
-    <revision pkgversion="3.10" date="2013-11-03" status="incomplete"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-
     <credit type="author">
       <name>Paul W. Frields</name>
       <email>stickster@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Управление тем, какие программы могут получать доступ к сети. Это помогает обеспечить безопасность компьютера.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Александр Прокудин</mal:name>
@@ -26,45 +21,25 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011-2012</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Станислав Соловей</mal:name>
-      <mal:email>whats_up@tut.by</mal:email>
-      <mal:years>2013-2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Юлия Дронова</mal:name>
-      <mal:email>juliette.tux@gmail.com</mal:email>
-      <mal:years>2013-2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Юрий Мясоедов</mal:name>
-      <mal:email>ymyasoedov@yandex.ru</mal:email>
-      <mal:years>2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
 
   <title>Управление доступом к сети с помощью межсетевого экрана</title>
 
+<comment>
+<cite date="2012-02-19">shaunm</cite>
+<p>Continue to revisit this page until we can provide real instructions.
+As it is, we're stuck in "whatever distros do" territory.</p>
+</comment>
+
   <p>Ваша система должна быть оснащена <em>межсетевым экраном</em>, который позволяет защищать программы от доступа посторонних людей через Интернет или локальную сеть. Это помогает сделать компьютер более защищённым.</p>
-
   <p>Многие приложения используют подключение к сети. Например, вы можете предоставить общий доступ к своим файлам в сети или позволить кому-либо удалённо просматривать ваш рабочий стол. В зависимости от настроек компьютера, возможно, вам понадобится настроить межсетевой экран, чтобы обеспечить нормальную работу этих сетевых сервисов.</p>
-
-  <p>Each program that provides network services uses a specific <em>network
-  port</em>. To enable other computers on the network to access a service, you
-  may need to “open” its assigned port on the firewall:</p>
-
+  <p>Каждая предоставляющая сетевые услуги программа использует определённый <em>сетевой порт</em>. Чтобы разрешить другим компьютерам в сети доступ к услуге, может понадобиться «открыть» этот порт в межсетевом экране:</p>
 
   <steps>
     <item>
-      <p>Go to <gui>Activities</gui> in the top left corner of the screen and
-      start your firewall application. You may need to install a firewall
-      manager yourself if you can’t find one (for example, Firestarter or
-      GUFW).</p>
+      <p>Зайдите в <gui>Обзор</gui> в верхнем левом углу экрана и запустите приложение для работы с межсетевым экраном. Если его там нет, нужно будет установить одно из таких приложений (например, Firestarter или GUFW).</p>
     </item>
     <item>
       <p>Откройте или закройте порт сетевой службы, в зависимости от того, хотите ли вы, чтобы другие люди имели к ней доступ. Доступность какого порта нужно изменить, будет <link xref="net-firewall-ports">зависеть от службы</link>.</p>

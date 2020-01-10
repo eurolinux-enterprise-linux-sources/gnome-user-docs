@@ -2,14 +2,13 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-share" xml:lang="sv">
 
   <info>
-    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="files" group="more"/>
     <link type="guide" xref="sharing"/>
     <link type="seealso" xref="nautilus-connect"/>
+    <desc>Easily transfer files to your email contacts from the file
+    manager.</desc>
 
     <revision pkgversion="3.8.2" version="0.3" date="2013-05-11" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -19,52 +18,50 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Överför enkelt filer till dina e-postkontakter från filhanteraren.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Sebastian Rasmussen</mal:name>
-      <mal:email>sebras@gmail.com</mal:email>
-      <mal:years>2014, 2015, 2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Anders Jonsson</mal:name>
-      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
-      <mal:years>2016, 2017</mal:years>
-    </mal:credit>
   </info>
 
-<title>Dela filer visa e-post</title>
+<title>Share files by email</title>
 
-<p>Du kan enkelt dela filer med dina kontakter via e-post direkt från filhanteraren.</p>
+<comment>
+  <cite date="2012-02-20">jim</cite>
+  <p>If we get gnome-user-share integrated eventually, we should discuss
+  or link that here.</p>
+</comment>
+<comment>
+  <cite date="2013-05-11" href="mailto:mdhillca@gmail.com">mdhill</cite>
+  <p>All functionality except email removed for 3.8 per Bug 680983.</p>
+</comment>
+
+<p>You can easily share files with your contacts by email directly from the
+file manager.</p>
 
   <note style="important">
-    <p>Innan du börjar, säkerställ att antingen <app>Evolution</app> eller <app>Geary</app> finns installerade på din dator, och att ditt e-postkonto är konfigurerat.</p>
+    <p>Before you begin, make sure <app>Evolution</app> is installed on your
+    computer, and your email account is configured.</p>
   </note>
 
 <steps>
-  <title>För att dela en fil via e-post:</title>
-    <item>
-      <p>Öppna programmet <app>Filer</app> från översiktsvyn <gui xref="shell-introduction#activities">Aktiviteter</gui>.</p>
-    </item>
-  <item><p>Hitta filen du vill överföra.</p></item>
-    <item>
-      <p>Högerklicka på filen och välj <gui>Skicka till…</gui>. Ett fönster för att skriva e-post i kommer att visas med filen bifogad.</p>
-    </item>
-  <item><p>Klicka på <gui>Till</gui> för att välja en kontakt, eller skriv in en e-postadress till vilken du vill skicka filen. Fyll i <gui>Ämne</gui> och meddelandetexten och klicka på <gui>Skicka</gui>.</p></item>
+  <title>To share a file by email:</title>
+  <item><p>Open the <app>Files</app> application from the <gui>Activities</gui>
+  overview.</p></item>
+  <item><p>Locate the file you want to transfer.</p></item>
+  <item><p>Right-click the file and select <gui>Send To</gui>. The
+  <gui>Compose Message</gui> window will appear with the file attached.</p></item>
+  <item><p>Click <gui>To</gui> to choose a contact, or enter an email address
+  where you want to send the file. Fill in the <gui>Subject</gui> and the body
+  of the message as required and click <gui>Send</gui>.</p></item>
 </steps>
 
 <note style="tip">
-  <p>Du kan skicka flera filer samtidigt. Markera flera filer genom att hålla ner <key>Ctrl</key> medan du klickar på filerna, högerklicka sedan på vilken markerad fil som helst.</p>
+  <p>You can send multiple files at once. Select multiple files by holding
+  down <key>Ctrl</key>, then right-click any selected file.</p>
 </note>
 
 </page>

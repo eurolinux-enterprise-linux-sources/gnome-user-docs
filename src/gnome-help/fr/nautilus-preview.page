@@ -4,8 +4,9 @@
   <info>
     <link type="guide" xref="nautilus-prefs" group="nautilus-preview"/>
 
+    <desc>Contrôler l'utilisation des miniatures des fichiers.</desc>
+
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-30" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -15,14 +16,8 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Contrôler l'utilisation des miniatures des fichiers.</desc>
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Luc Pionchon</mal:name>
@@ -39,13 +34,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Julien Hardelin</mal:name>
       <mal:email>jhardlin@orange.fr</mal:email>
-      <mal:years>2011, 2013</mal:years>
+      <mal:years>2011</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -71,12 +66,6 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Alexandre Franke</mal:name>
-      <mal:email>alexandre.franke@gmail.com</mal:email>
-      <mal:years>2015</mal:years>
-    </mal:credit>
   </info>
 
 <title>Préférences d'aperçu du gestionnaire de fichiers</title>
@@ -85,12 +74,19 @@
 
 <terms>
   <item>
-    <title><gui>Files</gui></title>
-    <p>Par défaut, les aperçus ne sont disponibles que pour <gui>Uniquement les fichiers locaux</gui> de votre ordinateur ou les fichiers sur un support externe qui y est connecté. Vous pouvez régler cette caractéristique sur <gui>Toujours</gui> ou <gui>Jamais</gui>. Le gestionnaire de fichiers peut aussi <link xref="nautilus-connect">consulter des fichiers sur un autre ordinateur</link> ou sur un réseau local ou sur internet. Si vous avez souvent besoin de ces fonctions et si le serveur possède suffisamment de bande passante, vous pouvez mettre quelques unes (ou toutes) les options d'aperçu sur <gui>Toujours</gui>.</p>
-    <p>En outre, vous pouvez recourir à <gui>Uniquement pour les fichiers de taille inférieure à</gui> pour limiter la taille des fichiers d'aperçu.</p>
+    <title><gui>Fichiers</gui></title>
+    <p>By default, all previews are done for <gui>Local Files Only</gui>, those
+    on your computer or connected external drives. You can set this feature to
+    <gui>Always</gui> or <gui>Never</gui>. The file manager can
+    <link xref="nautilus-connect">browse files on other computers</link> over
+    a local area network or the internet. If you often browse files over a local
+    area network, and the network has high bandwidth, you may want to set the
+    preview option to <gui>Always</gui>.</p>
+    <p>In addition, you can use the <gui>Only for files smaller than</gui>
+    setting to limit the size of files previewed.</p>
   </item>
   <item>
-    <title><gui>Folders</gui></title>
+    <title><gui>Dossiers</gui></title>
     <p>Si vous affichez les tailles de fichiers dans <link xref="nautilus-list">les colonnes de la vue en liste</link> ou dans les <link xref="nautilus-display#icon-captions">libellés des icônes</link>, les dossiers affichent le nombre de fichiers et de sous-dossiers qu'ils contiennent. Le comptage peut être très long si le contenu est très important, ou s'effectue à travers un réseau. Vous pouvez activer ou désactiver cette fonctionnalité ou l'activer seulement pour les fichiers de votre ordinateur ou d'un lecteur qui y est connecté.</p>
   </item>
 </terms>

@@ -2,13 +2,12 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-connect" xml:lang="gl">
 
   <info>
-    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="files" group="more"/>
     <link type="guide" xref="sharing"/>
 
-    <revision pkgversion="3.6.0" date="2012-10-06" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+    <revision pkgversion="3.6.0" version="0.2" date="2012-10-06" status="review"/>
+
+    <desc>Ver e editar ficheiros noutro equipo sobre FTP, SSH, compartidos de Windows ou WebDAV.</desc>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -18,20 +17,12 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Ver e editar ficheiros noutro equipo sobre FTP, SSH, compartidos de Windows ou WebDAV.</desc>
-
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2018</mal:years>
+      <mal:years>2011, 2012.</mal:years>
     </mal:credit>
   </info>
 
@@ -39,33 +30,17 @@
 
 <p>Pode conectarse a un servidor ou recurso en rede para examinalo e ver os ficheiros en dito servidor, como se estiveran no seu propio computador. Isto é unha forma fácil de descargar e subir ficheiros a internet, ou de compartir ficheiros con outras persoas na súa rede local.</p>
 
-<p>To browse files over the network, open the <app>Files</app>
-application from the <gui>Activities</gui> overview, and click
-<gui>Other Locations</gui> in the sidebar. The file manager
-will find any computers on your local area network that advertize
-their ability to serve files. If you want to connect to a server
-on the internet, or if you do not see the computer you’re looking
-for, you can manually connect to a server by typing in its
-internet/network address.</p>
+<p>Para examinar os ficheiros dunha rede, abra o aplicativo <app>Ficheiros</app> desde a vista previa de <gui>Actividades</gui>. O xestor de ficheiros buscará calquera computador na súa rede de área local que anuncian a súa capacidade de servir ficheiros. Se quere conectarse a un servidor na rede, ou non ve o computador que está buscando, pode conectarse de forma manual a un servidor escribindo o seu enderezo de internet/rede.</p>
 
 <steps>
   <title>Conectarse a un servidor de ficheiros</title>
-  <item><p>In the file manager, click <gui>Other Locations</gui> in the
-   sidebar.</p>
-  </item>
-  <item><p>In <gui>Connect to Server</gui>, enter the address of the server, in
-  the form of a
-   <link xref="#urls">URL</link>. Details on supported URLs are
-   <link xref="#types">listed below</link>.</p>
+  <item><p>No xestor de ficheiros, prema <gui>Ficheiro</gui> desde a barra superior e seleccione <gui>Conectar ao servidor</gui>.</p></item>
+  <item><p>Escriba o enderezo do servidor, co formato dunha <link xref="#urls">URL</link>. Pode atopar máis información sobre as URL admitidas <link xref="#types">máis abaixo</link>.</p>
   <note>
     <p>Se xa se conectou a un servidor anteriormente, pode premer sobre el na lista <gui>Servidores recentes</gui>.</p>
   </note>
   </item>
-  <item>
-    <p>Click <gui>Connect</gui>. The files on the server will be shown. You
-    can browse the files just as you would for those on your own computer. The
-    server will also be added to the sidebar so you can access it quickly in
-    the future.</p>
+  <item><p>Prema <gui>Conectar</gui>. Abrirase unha nova xanela que lle mostrará os ficheiros do servidor. Pode explorar os ficheiros da mesma forma coma se estiveran no seu computador. O servidor engadirase á barra lateral polo que poderá acceder a el de forma rápida no futuro.</p>
   </item>
 </steps>
 
@@ -76,7 +51,9 @@ internet/network address.</p>
   <example>
     <p><sys>esquema://nomedoservidor.exemplo.com/cartafol</sys></p>
   </example>
-<p>O <em>esquema</em> especifica o protocolo ou tipo de servidor. A parte <em>exemplo.com</em> do enderezo é o denominado <em>nome do dominio</em>. Se se require un nome de usuario, escríbese antes do nome do servidor:</p>
+<p>The <em>scheme</em> specifies the protocol or type of server. The
+  <em>example.com</em> portion of the address is called the <em>domain name</em>.
+  If a username is required, it is inserted before the server name:</p>
   <example>
     <p><sys>esquema://nomeusuario@nomedoservidor.exemplo.com/cartafol</sys></p>
   </example>
@@ -90,7 +67,9 @@ internet/network address.</p>
 <section id="types">
  <title>Tipos de servidor</title>
 
-<p>Pode conectarse a diferentes tipos de servidores. Algúns servidores son públicos, e permiten a calquera conectarse. Outros servidores requiren que inicie sesión cun nome de usuario e contrasinal.</p>
+<p>You can connect to different types of servers. Some servers are public,
+   and allow anybody to connect. Other servers require you to log in with a
+   username and password.</p>
 <p>Podería non ter permisos para levar a cabo certas accións en ficheiros do servidor. Por exemplo, en sitios FTP públicos, probabelmente non poida eliminar ficheiros.</p>
 <p>O URL que escriba depende do protocolo que usa o servidor para exportar os seus ficheiros compartidos.</p>
 <terms>
@@ -102,8 +81,11 @@ internet/network address.</p>
     <p><sys>ssh://nomeusuario@nomedoservidor.exemplo.com/cartafol</sys></p>
   </example>
 
-  <p>When using SSH, all the data you send (including your password)
-  is encrypted so that other users on your network can’t see it.</p>
+  <comment><cite>shaunm</cite><p>We should have a topics on encryption
+  keys, possibly rolling the seahorse help into gnome-help. Then link
+  from here.</p></comment>
+
+  <p>Ao usar SSH, todos os datos que envía (incluíndo o contrasinal) van cifrados, polo que outros usuarios da súa rede non poderán velos.</p>
 </item>
 <item>
   <title>FTP (con rexistro)</title>
@@ -115,12 +97,19 @@ internet/network address.</p>
 </item>
 <item>
   <title>FTP público</title>
-  <p>Os sitios que lle permiten descargar ficheiros en ocasións fornecerán un acceso FTP público ou anónimo. Estes servidores non requiren un nome de usuario e contrasinal, e normalmente non lle permitirán eliminar ou subir ficheiros.</p>
+  <p>Sites that allow you to download files will sometimes provide
+  public or anonymous FTP access. These servers do not require a
+  username and password, and will usually not allow you to delete
+  or upload files.</p>
   <p>Un URL de FTP anónimo típico seméllase a isto:</p>
   <example>
     <p><sys>ftp://ftp.exemplo.gal/ruta/</sys></p>
   </example>
-  <p>Algúns sitios FTP anónimos requiren que inicie sesión con un nome de usuario público e un contrasinal, ou con un nome de usuario público empregando o seu enderezo de correo electrónico como o seu contrasinal. Para estes servidores, use o método <gui>FTP (con inicio de sesión)</gui>, e use as credenciais especificadas no sitio FTP.</p>
+  <p>Some anonymous FTP sites require you to log in with a
+  public username and password, or with a public username using
+  your email address as the password. For these servers, use the
+  <gui>FTP (with login)</gui> method, and use the credentials
+  specified by the FTP site.</p>
 </item>
 <item>
   <title>Compartido por Windows</title>
@@ -132,23 +121,18 @@ internet/network address.</p>
 </item>
 <item>
   <title>WebDAV e WebDAV seguro</title>
-  <p>Based on the HTTP protocol used on the web, WebDAV is sometimes used to
-  share files on a local network and to store files on the internet. If the
-  server you’re connecting to supports secure connections, you should choose
-  this option. Secure WebDAV uses strong SSL encryption, so that other users
-  can’t see your password.</p>
-  <p>A WebDAV URL looks like this:</p>
+  <p>Baseado no protocolo HTTP usando no web, WebDAV é usado en ocasións para compartir ficheiros nunha rede local e para almacenar ficheiros en internet. Se o servidor co que está conectando admite as conexións seguras, debería escoller esta opcón. WebDAV seguro usa un cifrado SSL forte, polo que outros usuarios non poderán ver o seu contrasinal.</p>
+  <p>Un URL de WebDAV típico seméllase a isto:</p>
   <example>
-    <p><sys>dav://example.hostname.com/path</sys></p>
+    <p><sys>http://exemplo.nomededominio.gal/ruta</sys></p>
   </example>
-</item>
-<item>
-  <title>Compartición NFS</title>
-  <p>Os computadores UNIX tradicionalmente usan o protocolo Network File System para compartir ficheiros sobre a rede local. Con NFS, a seguridade basease nos UID do usuario que accede ao compartido, polo que non se precisan credenciais de autenticación ao conectarse.</p>
-  <p>A typical NFS share URL looks like this:</p>
-  <example>
-    <p><sys>nfs://nomedoservidor/ruta</sys></p>
-  </example>
+  <comment>
+    <cite date="2012-02-19">shaunm</cite>
+    <p>Also used by gnome-user-share, but we're not talking about that
+    in gnome-help for 3.0. Hopefully it will be better integrated in 3.2,
+    and we can discuss it better in the help. If that happens, link from
+    here.</p>
+  </comment>
 </item>
 </terms>
 </section>

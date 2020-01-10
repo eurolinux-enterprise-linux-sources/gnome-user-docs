@@ -4,9 +4,9 @@
   <info>
     <link type="guide" xref="sound-broken"/>
 
+    <desc>Zorg ervoor dat Dempen niet is aangevinkt, de kabels op de juiste manier zijn aangesloten en dat de geluidskaart gedetecteerd is.</desc>
+
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Gnome-documentatieproject</name>
@@ -14,103 +14,98 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc> Zorg ervoor dat Dempen niet is aangevinkt, de kabels op de juiste manier zijn aangesloten en dat de geluidskaart gedetecteerd is.</desc>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
   </info>
 
 <title>Ik hoor helemaal geen geluid op de computer</title>
 
-  <p>Als u geen geluid hoort op uw computer, bijvoorbeeld bij het afspelen van muziek, probeer dan de volgende stappen uit om te zien of u het probleem kunt oplossen.</p>
+  <p>If you can't hear any sounds on your computer, for example when you try to
+ play music, try these troubleshooting steps to see if you can fix the problem.</p>
 
 <section id="mute">
-  <title>Zorg ervoor dat het geluid niet gedempt is.</title>
-
-  <p>Open het <gui xref="shell-introduction#yourname">Systeemmenu</gui> en controleer of het geluid niet is gedempt of uitgezet.</p>
-
-  <p>Sommige laptops hebben schakelaars of toetsen op hun toetsenbord om het geluid te dempen—probeer op die toets te drukken om te kijken of het geluid daardoor niet meer gedempt wordt.</p>
-
-  <p>U dient ook te controleren of u het geluid van de toepassing die u gebruikt voor het afspelen van geluid (b.v. uw muziekspeler of mediaspeler) niet heeft gedempt. Mogelijk heeft de toepassing een knop voor het dempen of een volumeknop in haar hoofdvenster, dus controleer dit a.u.b.</p>
-
-  <p>Ook kunt u het tabblad <gui>Toepassingen</gui> in de <gui>Geluid</gui>-gui controleren:</p>
-  <steps>
-    <item>
-    <p>Open <app>Instellingen</app> vanuit het <gui>Activiteiten</gui>-overzicht.</p>
-    </item>
-    <item>
-      <p>Klik op het<gui>Geluid</gui>.</p>
-    </item>
-    <item>
-      <p>Ga naar het tabblad <gui>Toepassingen</gui> en controleer of uw toepassing niet gedempt is.</p>
-    </item>
-  </steps>
-
+ <title>Zorg ervoor dat het geluid niet gedempt is.</title>
+ <p>Click the sound icon on the top bar (it looks like a speaker) and make sure
+ that the sound is not muted or turned right down.</p>
+ <p>Some laptops have mute switches or keys on their keyboards—try pressing
+ that key to see if it unmutes the sound.</p>
+ <p>You should also check that you haven't muted the application that you're
+ using to play sound (e.g. your music player or movie player). The application
+ may have a mute or volume button in its main window, so check that. Also, click
+ the sound icon on the top bar and choose <gui>Sound Settings</gui>. When the
+ <gui>Sound</gui> window appears, go to the <gui>Applications</gui> tab and
+ check that your application is not muted.</p>
 </section>
 
 <section id="speakers">
-  <title>Controleer of de luidsprekers op de juiste manier verbonden en ingeschakeld zijn.</title>
-  <p>Als uw computer externe luidsprekers heeft, controleer dan of ze ingeschakeld zijn en het volume hoog genoeg staat. Controleer of de luidsprekerkabel goed is aangesloten op de ‘uitvoer’-audioaansluiting op uw computer. Deze aansluiting is gewoonlijk lichtgroen van kleur.</p>
+ <title>Check that the speakers are turned on and connected properly</title>
+ <p>If your computer has external speakers, make sure that they are turned on
+ and that the volume is turned up. Make sure that the speaker cable is securely
+ plugged into the "output" audio socket on the back of the computer. This socket
+ is usually light green in color.</p>
 
-  <p>Sommige geluidskaarten kunnen de aansluitingen die ze voor uitvoer (naar de luidsprekers) en invoer (van bijvoorbeeld een microfoon) gebruiken omwisselen. De uitvoeraansluiting kan anders zijn op Linux dan op Windows of Mac OS. Probeer de luidsprekerkabel op een andere audio-aansluiting op uw computer aan te sluiten.</p>
+ <p>Some sound cards are able to switch which socket they use for output (to the
+ speakers) and input (from a microphone, for instance). The output socket may be
+ different when running Linux than on Windows or Mac OS. Try connecting the
+ speaker cable to the different audio sockets on the computer in turn to see if
+ that works.</p>
 
- <p>Een laatste stap is het controleren of de audiokabel goed aangesloten is op de achterkant van de luidsprekers. Sommige luidsprekers hebben ook meer dan één invoer.</p>
+ <p>A final thing to check is that the audio cable is securely plugged into the
+ back of the speakers. Some speakers have more than one input too.</p>
 </section>
 
 <section id="device">
-  <title>Controleer of het juiste geluidsapparaat is geselecteerd</title>
-
-  <p>Op sommige computers zijn meerdere “geluidsapparaten” geïnstalleerd. Sommige hiervan kunnen geluid uitvoeren en sommige niet, dus moet u ervoor zorgen dat u het juiste apparaat geselecteerd heeft. Dit kan inhouden dat u wat moet uitproberen voordat u het juiste apparaat heeft.</p>
-
-  <steps>
-    <item>
-      <p>Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht en typ <gui>Geluid</gui>.</p>
-    </item>
-    <item>
-      <p>Klik op <gui>Geluid</gui> om het paneel te openen.</p>
-    </item>
-    <item>
-      <p>Wijzig in het tabblad <gui>Uitvoer</gui> de <gui>Profiel</gui>-instellingen voor het geselecteerde apparaat en speel een geluid af om te zien of het werkt. Mogelijk moet u de lijst doorlopen en elk profiel proberen.</p>
-
-      <p>Als dat niet werkt, dan kunt u proberen hetzelfde te doen voor elk ander apparaat dat in de lijst staat.</p>
-    </item>
-  </steps>
-
+ <title>Controleer of het juiste geluidsapparaat is geselecteerd</title>
+ <p>Op sommige computers zijn meerdere "geluidsapparaten" geïnstalleerd. Sommige hiervan kunnen geluid uitvoeren en sommige niet, dus moet u ervoor zorgen dat u het juiste apparaat geselecteerd heeft. Dit kan inhouden dat u wat moet uitproberen voordat u de juiste heeft.</p>
+ <steps>
+  <item>
+   <p>Click the sound icon on the top bar and select <gui>Sound Settings</gui>.</p>
+  </item>
+  <item>
+   <p>In the <gui>Sound</gui> window that appears, go to the <gui>Output</gui>
+ tab. Make a note of which device and which profile are selected (so you can
+ return to the default selections if changing them doesn't work).</p>
+  </item>
+  <item>
+   <p>Probeer voor het geselecteerde apparaat het profiel te wijzigen—speel een geluid af nadat u het profiel heeft gewijzigd om te zien of het werkt. Het kan zijn dat u de hele lijst moet doorlopen om elk profiel uit te proberen.</p>
+  </item>
+  <item>
+   <p>Als dat niet werkt, dan kunt u proberen hetzelfde te doen voor elk ander apparaat dat in de lijst staat.</p>
+  </item>
+  <item>
+   <p>Try changing the <gui>Connector</gui> option in the <gui>Output</gui> tab.</p>
+  </item>
+ </steps>
 </section>
 
 <section id="hardware-detected">
-
  <title>Controleren of de geluidskaart op de juiste manier werd gedetecteerd</title>
+ <p>Het kan zijn dat uw geluidskaart niet op de juiste manier werd gedetecteerd. Als dat het geval is, dan zal uw computer denken dat hij geen geluid kan afspelen. Een mogelijke reden waarom de kaart niet juist gedetecteerd werd, is dat de stuurprogramma's voor de kaart niet geïnstalleerd zijn.</p>
+ <steps>
+  <item>
+   <p>Go to the <gui>Activities</gui> overview and open a Terminal.</p>
+  </item>
+  <item>
+   <p>Typ <cmd>aplay -l</cmd> en druk op <key>Enter</key>.</p>
+  </item>
+  <item>
+   <p>Er wordt een lijst met apparaten getoond. Als er geen <gui>playback hardware-apparaten</gui> zijn, dan werd uw geluidskaart niet gedetecteerd.</p>
+  </item>
+ </steps>
 
-  <p>Het kan zijn dat uw geluidskaart niet gedetecteerd werd omdat er geen stuurprogramma voor de kaart geïnstalleerd is. U dient mogelijk het stuurprogramma voor de kaart handmatig te installeren. Hoe u dat doet hangt af van de kaart die u heeft.</p>
+ <p>Als uw geluidskaart niet gedetecteerd werd, dan kan het zijn dat u handmatig stuurprogramma's daarvoor moet installeren. Hoe u dat doet hangt af van de kaart die u heeft.</p>
 
-  <p>Voer de opdracht <cmd>lspci</cmd> uit in de <app>Terminal</app> om er achter te komen welke geluidskaart u heeft:</p>
-  <steps>
-    <item>
-      <p>Ga naar het <gui>Activiteiten</gui>-overzicht en open een terminalvenster.</p>
-    </item>
-    <item>
-      <p>Voer <cmd>lspci</cmd> uit als <link xref="user-admin-explain">superuser</link>; typ <cmd>sudo lspci</cmd> en voer uw wachtwoord in, of typ <cmd>su</cmd>, geef het <em>root</em>(beheerders)-wachtwoord op, en typ dan <cmd>lspci</cmd>.</p>
-    </item>
-    <item>
-      <p>Ga na of er een <em>audiocontroller</em> of <em>audio-apparaat</em> in de lijst staat: in zo een geval zou u het merk- en modelnummer van de geluidskaart moeten zien. Ook toont <cmd>lspci -v</cmd> een lijst met meer gedetailleerde informatie.</p>
-    </item>
-  </steps>
+ <p>You can see what sound card you have by using the <cmd>lspci</cmd> command
+ in the Terminal. You may have to run <cmd>lspci</cmd> as
+ <link xref="user-admin-explain">superuser</link>; either type <cmd>sudo lspci</cmd>
+ and type your password, or type <cmd>su</cmd>, enter the <em>root</em>
+ (administrative) password, then type <cmd>lspci</cmd>. See if an
+ <em>audio controller</em> or <em>audio device</em> is listed—it should have the
+ sound card's make and model number. <cmd>lspci -v</cmd> will show a list with
+ more detailed information.</p>
 
-  <p>U kunt mogelijk stuurprogramma's voor uw kaart vinden en installeren door te zoeken op het internet. Het beste kunt u ondersteuningsforums (of iets dergelijks) voor uw Linux-distributie benaderen voor instructies.</p>
+ <p>You may be able to find and install drivers for your card. It's best to ask
+ on support forums (or otherwise) for your Linux distribution for instructions.</p>
 
-  <p>Als u geen stuurprogramma's voor uw geluidskaart kunt krijgen, dan kunt u overwegen een nieuwe geluidskaart aan te schaffen. U kunt externe USB-geluidskaarten kopen, of geluidskaarten die in de computer kunnen worden geplaatst.</p>
-
+ <p>Als u geen stuurprogramma's voor uw geluidskaart kunt krijgen, dan kunt u overwegen een nieuwe geluidskaart aan te schaffen. U kunt geluidskaarten kopen die in de computer kunnen worden geïnstalleerd of externe USB-geluidskaarten.</p>
 </section>
 
 </page>

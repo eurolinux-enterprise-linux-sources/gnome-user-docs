@@ -1,82 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="accounts-add" xml:lang="id">
 
-  <info>
-    <link type="guide" xref="accounts" group="add"/>
-
-    <revision pkgversion="3.5.5" date="2012-08-14" status="draft"/>
-    <revision pkgversion="3.9.92" date="2012-09-18" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2013-09-20" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-
-    <credit type="author">
-      <name>Jim Campbell</name>
-      <email>jwcampbell@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-      <years>2014</years>
-    </credit>
-    <credit type="editor">
-      <name>Shaun McCance</name>
-      <email>shaunm@gnome.org</email>
-      <years>2015</years>
-    </credit>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Mengizinkan aplikasi mengakses akun daring Anda untuk foto, kontak, kalender, dan lebih banyak lagi.</desc>
+<info>
+  <desc>Sambungkan akun daring.</desc>
+  <link type="guide" xref="accounts"/>
+  <revision pkgversion="3.5.5" version="0.1" date="2012-08-14" status="draft"/>
+  <credit type="author">
+    <name>Jim Campbell</name>
+    <email>jwcampbell@gmail.com</email>
+  </credit>
+  <credit type="editor">
+    <name>Michael Hill</name>
+    <email>mdhillca@gmail.com</email>
+  </credit>
 
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Andika Triwidada</mal:name>
       <mal:email>andika@gmail.com</mal:email>
-      <mal:years>2011-2014, 2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Ahmad Haris</mal:name>
-      <mal:email>ahmadharis1982@gmail.com</mal:email>
-      <mal:years>2017.</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
 
-  <title>Tambahkan akun</title>
+<title>Tambahkan akun</title>
 
-  <p>Menambahkan akun akan membantu menghubungkan akun daring Anda dengan desktop GNOME Anda. Jadi, program surel, program obrolan, dan aplikasi terkait lain akan disiapkan untuk Anda.</p>
+<p>Menambahkan akun akan membantu menghubungkan akun daring Anda dengan desktop GNOME Anda. Jadi, program surel, program obrolan, dan aplikasi terkait lain akan disiapkan untuk Anda.</p>
 
-  <steps>
-    <item>
-      <p>Buka ringkasan <gui xref="shell-introduction#activities">Aktivitas</gui> dan mulai mengetik <gui>Akun Daring</gui>.</p>
-    </item>
-    <item>
-      <p>Klik pada <gui>Akun Daring</gui> untuk membuka panel.</p>
-    </item>
-    <item>
-      <p>Select an account from the list on the right.</p>
-    </item>
-    <item>
-      <p>Pilih tipe akun yang ingin Anda tambah.</p>
-    </item>
-    <item>
-      <p>Suatu dialog atau jendela situs web kecil akan terbuka dimana Anda dapat memasukkan kredensial akun daring Anda. Sebagai contoh, bila Anda menyiapkan akun Google, masukkan nama pengguna dan sandi Google Anda. Beberapa penyedia mengizinkan Anda membuat sebuah akun baru dari dialog log masuk.</p>
-    </item>
-    <item>
-      <p>Bila Anda telah memasukkan kredensial dengan benar, Anda akan ditanya untuk mengijinkan GNOME mengakses akun daring Anda. Berikan otorisasi akses untuk melanjutkan.</p>
-    </item>
-    <item>
-      <p>Semua layanan yang ditawarkan oleh penyedia akun akan difungsikan secara baku. <link xref="accounts-disable-service">Matikan</link> layanan individu untuk menonaktifkan mereka.</p>
-    </item>
-  </steps>
+<steps>
+  <item><p>Klik tombol <key>+</key> di bagian kiri bawah jendela.</p></item>
+  <item><p>Klik menu <gui>Tipe Akun</gui> dan pilih satu.</p>
+        <p>Bila Anda punya lebih dari satu tipe akun, Anda dapat menambah akun lain nanti.</p></item>
+  <item><p>Klik <gui>Tambah...</gui>.</p></item>
+  <item><p>Suatu jendela situs web kecil akan terbuka dimana Anda dapat memasukkan kredensial akun daring Anda. Sebagai contoh, bila Anda menyiapkan akun Google, masukkan nama pengguna dan sandi Google Anda.</p>
+  </item>
+  <item><p>Setelah Anda memasukkan kredensial dengan benar, Anda akan ditanya untuk mengijinkan GNOME mengakses akun daring Anda. Pilih <gui>Berikan Akses</gui> untuk melanjutkan.</p></item>
+  <item><p>Pilih aplikasi yang ingin Anda tautkan ke akun daring Anda. Misalnya, bila Anda ingin memakai suatu akun daring untuk mengobrol, tapi tak ingin memakai akun daring untuk kalender Anda, matikan opsi <gui>kalender</gui>.</p></item>
+</steps>
 
-  <p>Setelah Anda menambahkan akun, aplikasi dapat menggunakan akun-akun tersebut untuk layanan yang telah Anda pilih untuk diizinkan. Lihat <link xref="accounts-disable-service"/> untuk informasi tentang mengendalikan layanan mana yang diizinkan.</p>
+<p>Setelah Anda menambahkan akun, setiap aplikasi yang telah Anda pilih akan secara otomatis memakai kredensial tersebut ketika Anda menjalankan mereka.</p>
 
-  <note style="tip">
-    <p>Banyak layanan daring menyediakan suatu token otorisasi yang disimpan oleh GNOME sebagai pengganti kata sandi. Bila Anda menghapus suatu akun, Anda juga mesti mencabut sertifikat itu dalam layanan daring. Lihat <link xref="accounts-remove"/> untuk informasi lebih lanjut.</p>
-  </note>
+<note style="tip">
+  <p>Untuk alasan keamanan, GNOME tidak akan menyimpan sandi Anda di komputer Anda. Sebagai gantinya, ia menyimpan suatu token yang disediakan oleh layanan daring. Bila Anda ingin mencabut sepenuhnya kaitan antara desktop Anda dan layanan daring,, <link xref="accounts-remove">hapus</link> saja.</p>
+</note>
 
 </page>

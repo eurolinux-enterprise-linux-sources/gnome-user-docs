@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" type="task" id="printing-to-file" xml:lang="gl">
+<page xmlns="http://projectmallard.org/1.0/" type="task" id="print-to-file" xml:lang="gl">
 
   <info>
+    <revision pkgversion="3.8" version="0.1" date="2013-03-29" status="review"/>
     <link type="guide" xref="printing" group="#last"/>
-
-    <revision pkgversion="3.8" date="2013-03-29" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author copyright">
       <name>Ekaterina Gerasimova</name>
@@ -16,45 +13,49 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Save a document as a PDF, PostScript or SVG file instead of sending
-    it to a printer.</desc>
+    <desc>Save a document as a PDF, Postscript or SVG file instead of sending it a printer.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2018</mal:years>
+      <mal:years>2011, 2012.</mal:years>
     </mal:credit>
   </info>
 
-  <title>Imprimir a ficheiro</title>
+  <title>Print to file</title>
 
-  <p>You can choose to print a document to a file instead of sending it to
+  <p>You can chose to print a document to a file instead of sending it to
   print from a printer. Printing to file will create a <sys>PDF</sys>, a
-  <sys>PostScript</sys> or a <sys>SVG</sys> file that contains the document.
+  <sys>Postscript</sys> or a <sys>SVG</sys> file that contains the document.
   This can be useful if you want to transfer the document to another machine
   or to share it with someone.</p>
 
   <steps>
-    <title>Para imprimir nun ficheiro:</title>
+    <title>Print to file</title>
     <item>
-      <p>Abra o diálogo de impresión premendo <keyseq><key>Ctrl</key><key>P</key></keyseq>.</p>
+      <p>Open the print dialog. This can normally be done through
+      <gui style="menuitem">Print</gui> in the menu or using the
+      <keyseq><key>Ctrl</key><key>P</key></keyseq> keyboard shortcut.</p>
     </item>
     <item>
-      <p>Seleccione <gui>Imprimir a ficheiro</gui> baixo <gui>Impresora</gui> na lapela <gui style="tab">Xeral</gui>.</p>
+      <p>Select <gui>Print to File</gui> under <gui>Printer</gui> in the
+      <gui style="tab">General</gui> tab.</p>
     </item>
     <item>
-      <p>Para cambiar o nome do ficheiro predeterminada e onde se gardará o ficheiro, prema o nome de ficheiro embaixo da selección de impresora. Prema <gui style="button">Seleccionar</gui> en canto remate a selección.</p>
+      <p>To change the default filename and where the file is saved to, click
+      the filename below the printer selection. Click
+      <gui style="button">Select</gui> once you have finished choosing.</p>
     </item>
     <item>
       <p><sys>PDF</sys> is the default file type for the document. If you want
       to use a different <gui>Output format</gui>, select either
-      <sys>PostScript</sys> or <sys>SVG</sys>.</p>
+      <sys>Postscript</sys> or <sys>SVG</sys>.</p>
     </item>
     <item>
-      <p>Seleccione as outras preferencias de páxina.</p>
+      <p>Chose your other page preferences.</p>
     </item>
     <item>
-      <p>Prema <gui style="button">Imprimir</gui> para gardar o ficheiro.</p>
+      <p>Press <gui style="button">Print</gui> to save the file.</p>
     </item>
   </steps>
 

@@ -1,62 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="color-whyimportant" xml:lang="nl">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="color-whyimportant" xml:lang="nl">
 
   <info>
     <link type="guide" xref="color"/>
-    <desc>Kleurbeheer is belangrijk voor ontwerpers, fotografen en kunstenaars.</desc>
+    <desc>Color management is important for designers, photographers and artists.</desc>
 
     <credit type="author">
       <name>Richard Hughes</name>
       <email>richard@hughsie.com</email>
     </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Waarom is kleurbeheer belangrijk?</title>
-  <p>Kleurbeheer is het proces van het opnemen van een kleur met gebruik van een invoerapparaat, het weergeven daarvan op een scherm, en deze afdrukken waarbij u de exacte kleuren en het bereik van kleuren op elk medium beheert.</p>
+  <title>Why is color management important?</title>
+  <p>
+    Color management is the process of capturing a color using an input
+    device, displaying it on a screen, and printing it all whilst managing
+    the exact colors and the range of colors on each medium.
+  </p>
 
-  <p>De behoefte aan kleurbeheer kan waarschijnlijk het beste uitgelegd worden met een foto van een vogel op een winterse dag.</p>
-
-  <figure>
-    <desc>Een vogel op een ijzige muur, zoals gezien door de camera</desc>
-    <media its:translate="no" type="image" mime="image/png" src="figures/color-camera.png"/>
-  </figure>
-
-  <p>Op computerschermen is het blauwe kanaal doorgaans oververzadigd, waardoor de foto er koud uitziet.</p>
-
-  <figure>
-    <desc>Dit is wat de gebruiker ziet op een scherm van een doorsnee zakelijke laptop</desc>
-    <media its:translate="no" type="image" mime="image/png" src="figures/color-display.png"/>
-  </figure>
-
-  <p>U ziet dat het wit niet ‘echt wit’ is en het zwart van de ogen is nu modderig bruin.</p>
+  <p>
+    The need for color management is probably explained best with a
+    photograph of a bird on a frosty day in winter.
+  </p>
 
   <figure>
-    <desc>Dit is wat de gebruiker te zien krijgt bij het afdrukken op een inkjet printer</desc>
-    <media its:translate="no" type="image" mime="image/png" src="figures/color-printer.png"/>
+    <desc>A bird on a frosty wall as seen on the camera view-finder</desc>
+    <media type="image" mime="image/png" src="figures/color-camera.png"/>
   </figure>
 
-  <p>Het probleem dat hieraan ten grondslag ligt is dat elk apparaat een andere reeks kleuren aan kan. Zo kunt u misschien wel een foto nemen met daarop helblauw, maar de meeste printers zullen niet in staat zijn die kleur af te drukken.</p>
-  <p>De meeste afbeeldingsapparaten nemen op in RGB (Red, Green, Blue) en moeten voor het afdrukken geconverteerd worden naar CMYK (Cyan, Magenta, Yellow, Black). Een ander probleem is dat er geen <em>witte</em> inkt bestaat, waardoor de witheid slechts zo goed kan zijn als de kleur van het papier.</p>
+  <p>
+    Displays typically over-saturate the blue channel, making the images
+    look cold.
+  </p>
 
-  <p>Een ander probleem zijn eenheden. Zonder dat de schaal waarop een kleur wordt gemeten is gespecificeerd, weten we niet of 100% rood dicht bij infrarood ligt of gewoon de meest dieprode inkt in de printer. Wat op uw scherm 50% rood is, kan op een ander scherm zoiets als 62% zijn. Het is net zoiets als wanneer u tegen iemand zegt dat u net 7 afstandseenheden heeft afgelegd; zonder de eenheid weet u niet of dat 7 kilometer of 7 meter is.</p>
+  <figure>
+    <desc>This is what the user sees on a typical business laptop screen</desc>
+    <media type="image" mime="image/png" src="figures/color-display.png"/>
+  </figure>
 
-  <p>Bij kleur worden de eenheden gamma genoemd. Gamma is in wezen het bereik van kleuren dat kan worden weergegeven. Een apparaat zoals een DSLR-camera kan een heel groot gamma hebben, waardoor het alle kleuren van een zonsondergang kan opnemen, maar een projector heeft een heel klein gamma, waardoor de kleuren er flets uit zullen zien.</p>
+  <p>
+    Notice how the white is not 'paper white' and the black of the eye
+    is now a muddy brown.
+  </p>
 
-  <p>In sommige gevallen kunnen we de uitvoer van het apparaat <em>corrigeren</em> door de data die we naar het apparaat sturen te wijzigen, maar in andere gevallen waar dat niet mogelijk is (u kunt geen helblauw afdrukken) moeten we de gebruiker laten zien hoe het resultaat eruit komt te zien.</p>
+  <figure>
+    <desc>This is what the user sees when printing on a typical inkjet printer</desc>
+    <media type="image" mime="image/png" src="figures/color-printer.png"/>
+  </figure>
 
-  <p>Voor foto's is het zinvol om het volledige kleurenspectrum van een apparaat te gebruiken, om in staat te zijn vloeiende veranderingen aan te brengen in de kleuren. Voor andere afbeeldingen wilt u de kleuren misschien exact overeen laten komen, wat belangrijk is als u op een mok het Red Hat-logo wilt printen,  dat precies het goede Red Hat-rood<em>moet</em> zijn.</p>
+  <p>
+    The basic problem we have here is that each device is capable of
+    handling a different range of colors.
+    So while you might be able to take a photo of electric blue, most
+    printers are not going to be able to reproduce it.
+  </p>
+  <p>
+    Most image devices capture in RGB (Red, Green, Blue) and have
+    to convert to CMYK (Cyan, Magenta, Yellow, and Black) to print.
+    Another problem is that you can't have <em>white</em> ink, and so
+    the whiteness can only be as good as the paper color.
+  </p>
+
+  <p>
+    Another problem is units. Without specifying the scale on which a
+    color is measured, we don't know if 100% red is near infrared or
+    just the deepest red ink in the printer. What is 50% red on one
+    display is probably something like 62% on another display.
+    It's like telling a person that you've just driven 7 units of
+    distance, without the unit you don't know if that's 7 kilometers or
+    7 meters.
+  </p>
+
+  <p>
+    In color, we refer to the units as gamut. Gamut is essentially the
+    range of colors that can be reproduced.
+    A device like a DSLR camera might have a very large gamut, being able
+    to capture all the colors in a sunset, but a projector has a very
+    small gamut and all the colors are going to look "washed out".
+  </p>
+
+  <p>
+    In some cases we can <em>correct</em> the device output by altering
+    the data we send to it, but in other cases where that's not
+    possible (you can't print electric blue) we need to show the user
+    what the result is going to look like.
+  </p>
+
+  <p>
+    For photographs it makes sense to use the full tonal range of a color
+    device, to be able to make smooth changes in color.
+    For other graphics, you might want to match the color exactly, which
+    is important if you're trying to print a custom mug with the Red Hat
+    logo that <em>has</em> to be the exact Red Hat Red.
+  </p>
 
 </page>

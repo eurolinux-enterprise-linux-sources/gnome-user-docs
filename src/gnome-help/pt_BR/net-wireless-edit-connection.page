@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="net-editcon" xml:lang="pt-BR">
+  <info>
+    <link type="guide" xref="net-wireless" group="first"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <desc>Aprenda o que significam as opções da tela de edição de conexão sem fio.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodolfo Ribeiro Gomes</mal:name>
+      <mal:email>rodolforg@gmail.com</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Editar uma conexão sem fio</title>
+
+<comment>
+ <p>This topic needs significant revision to be comprehensive. A number of settings remain undocumented.</p>
+</comment>
+
+<p>Este tópico descreve todas as opções que estão disponíveis quando você edita uma conexão de rede sem fio. Para editar, selecione a conexão nas configurações de <gui>Rede</gui>, e clique em <gui>Opções</gui>.</p>
+
+<note>
+ <p>A maioria das redes funcionará bem se você deixar essas configurações em seus valores padrões, então você provavelmente não precisa alterar nenhuma delas. Muitas das opções aqui são fornecidas para um maior controle em redes mais avançadas.</p>
+</note>
+
+<section id="available">
+ <title>Disponível para todos os usuários / Conectar automaticamente</title>
+ <terms>
+  <item>
+   <title><gui>Conectar automaticamente</gui></title>
+   <p>Marque esta opção se você gostaria que o computador tentasse se conectar a esta rede sem fio sempre que ela estiver ao alcance.</p>
+   <p>Se várias redes configuradas para conexão automática estiverem ao alcance, o computador se conectará à primeira mostrada na aba <gui>Sem fio</gui> da janela de <gui>Conexões de rede</gui>. Ele não desconectará de uma rede disponível já conectada para uma diferente que acabou de entrar na área de alcance.</p>
+  </item>
+
+  <item>
+   <title><gui>Disponível para todos os usuários</gui></title>
+   <p>Marque esta opção se quiser que todos os usuários do computador tenham acesso a esta rede sem fio. Se a rede tem uma <link xref="net-wireless-wepwpa">senha WEP/WAP</link> e você marcou esta opção, você só precisará informar a senha uma vez. Todos os outros usuários no seu computador serão capazes de se conectar à rede sem ter que saber eles mesmos a senha.</p>
+   <p>Se estiver marcada, você precisa ser um <link xref="user-admin-explain">administrador</link> para modificar qualquer configuração desta rede. Talvez lhe seja pedido para informar sua senha de administrador.</p>
+  </item>
+ </terms>
+</section>
+
+<section id="wireless">
+ <title>Sem fio</title>
+ <terms>
+  <item>
+   <title><gui>SSID</gui></title>
+   <p>Este é o nome da rede sem fio à qual você está se conectando, também conhecido como <em>Identificador de grupo de serviço</em>. Não o altere a menos que tenha alterado o nome da rede sem fio (por exemplo, alterando as configurações do seu roteador sem fio ou da sua estação base ou ponto de acesso).</p>
+  </item>
+
+  <item>
+   <title><gui>Modo</gui></title>
+   <p>Use isto para especificar se você está se conectando a um rede de <gui>Infraestrutura</gui> (em que computadores se conectam sem fio a uma estação base central - ponto de acesso - ou a um roteador) ou a uma rede <gui>Ad-hoc</gui> (em que não há uma estação central, e os computadores na rede se conectam diretamente um como o outro). A maioria das redes são de infraestrutura, mas você pode querer <link xref="net-adhoc">configurar uma rede ad-hoc</link>.</p>
+   <p>Se você escolher <gui>Ad-hoc</gui>, verá duas outras opções: <gui>Faixa</gui> e <gui>Canal</gui>. Elas determinam em qual a faixa de frequências sem fio a rede sem fio ad-hoc irá operar. Alguns computadores são capazes de funcionar em apenas certas faixas (por exemplo, só <gui>A</gui> ou só <gui>B/G</gui>), então você pode querer escolher uma faixa que todos os computadores na rede ad-hoc conseguem usar. Em lugares congestionados, podem haver várias redes sem fio compartilhando o mesmo canal; isso pode lerdar sua conexão, então você pode alterar qual canal você está usando também.</p>
+  </item>
+
+  <item>
+   <title><gui>BSSID</gui></title>
+   <p>É o <em>Identificador básico de conjunto de serviços</em>. O SSID (ver acima) é o nome da rede que seres humanos pretendem ler; o BSSID é o nome que o computador entende (é uma sequência de letras e números que teoricamente é única entre as redes sem fio). Se uma <link xref="net-wireless-hidden">rede está oculta</link>, ela não terá um SSID, mas terá um BSSID.</p>
+  </item>
+
+  <item>
+   <title><gui>Endereço MAC do dispositivo</gui></title>
+   <p>Um <link xref="net-macaddress">endereço MAC</link> é um código que identifica uma peça de hardware de rede (por exemplo, uma placa de rede sem fio, uma placa de rede Ethernet ou um roteador). Cada dispositivo a que você pode se conectar em uma rede tem um endereço MAC único, que lhe gfoi dado na fábrica.</p>
+   <p>Esta opção pode ser usada para alterar o endereço MAC da sua placa de rede.</p>
+  </item>
+
+  <item>
+   <title><gui>Endereço MAC clonado</gui></title>
+   <p>Seu hardware de rede (placa de rede sem fio) pode fingir ter um endereço MAC diferente. Isso é útil se você tiver um dispositivo ou serviço que só se comunicará com um certo endereço MAC (por exemplo, um modem banda larga a cabo). Se você colocar o endereço MAC na caixa de <gui>endereço MAC clonado</gui>, o dispositivo/serviço pensará que seu computador tem o endereço MAC clonado em vez do seu valor real.</p>
+  </item>
+
+  <item>
+   <title><gui>MTU</gui></title>
+   <p>Esta configuração altera a <em>Unidade máxima de transmissão</em>, que é o tamanho máximo de um pedaço de dados que pode ser enviado pela rede. Quando os arquivos são enviados por uma rede, os dados são divididos em pequenos pedaços (ou pacotes). A MTU ótima para sua rede dependerá de qual a probabilidade dos pacotes serem perdidos (devido a uma conexão ruidosa) e de quão rápida a conexão é. Em geral, você não deveria precisar alterar esta configuração.</p>
+  </item>
+
+ </terms>
+</section>
+
+<section id="security">
+ <title>Segurança sem fio</title>
+ <terms>
+  <item>
+   <title><gui>Segurança</gui></title>
+   <p>This defines what sort of <em>encryption</em> your wireless network uses. Encrypted connections help protect your wireless connection from being intercepted, so other people can't "listen in" and see what websites you're visiting and so on.</p>
+   <p>Some types of encryption are stronger than others, but may not be supported by older wireless networking equipment. You'll normally need to type a password for the connection; more sophisticated types of security may also require a username and a digital "certificate". See <link xref="net-wireless-wepwpa"/> for more information on popular types of wireless encryption.</p>
+  </item>
+ </terms>
+</section>
+
+<section id="ipv4">
+ <title>Configurações IPv4</title>
+
+<comment>
+<cite>shaunm</cite>
+<p>There's also Shared to other computers</p>
+<p>Then there's addresses and dns servers and ipv4 addressing routes.</p>
+<p>All current info correct, but incomplete</p>
+</comment>
+
+ <p>Use this tab to define information like the IP address of your computer and which DNS servers it should use. Change the <gui>Method</gui> to see different ways of getting/setting that information.</p>
+ <p>Os seguintes métodos estão disponíveis:</p>
+ <terms>
+  <item>
+   <title><gui>Automático (DHCP)</gui></title>
+   <p>Get information like the IP address and DNS server to use from a <em>DHCP server</em>. A DHCP server is a computer (or other device, like a router) connected to the network which decides which network settings your computer should have - when you first connect to the network, you will automatically be assigned the correct settings. Most networks use DHCP.</p>
+  </item>
+
+  <item>
+   <title><gui>Somente endereços automáticos (DHCP)</gui></title>
+   <p>If you choose this setting, your computer will get its IP address from a DHCP server, but you will have to manually define other details (like which DNS server to use).</p>
+  </item>
+
+  <item>
+   <title><gui>Manual</gui></title>
+   <p>Choose this option if you would like to define all of the network settings yourself, including which IP address the computer should use.</p>
+  </item>
+
+  <item>
+   <title><gui>Apenas link-local</gui></title>
+   <p><em>Link-Local</em> is a way of connecting computers together on a network without requiring a DHCP server or manually defining IP addresses and other information. If you connect to a Link-Local network, the computers on the network will decide amongst themselves which IP addresses to use and so on. This is useful if you want to temporarily connect a few computers together so they communicate with each other.</p>
+  </item>
+
+  <item>
+   <title><gui>Desabilitado</gui></title>
+   <p>This option will disable the network connection and prevent you from connecting to it. Note that <gui>IPv4</gui> and <gui>IPv6</gui> are treated as separate connections even though they are for the same network card. If you have one enabled, you may wish to set the other to disabled.</p>
+  </item>
+
+ </terms>
+</section>
+
+<section id="ipv6">
+ <title>Configurações IPv6</title>
+<comment>
+<cite>shaunm</cite>
+<p>The list of methods is a bit different</p>
+</comment>
+ <p>This is similar to the <gui>IPv4</gui> tab except it deals with the newer IPv6 standard. Very modern networks use IPv6, but IPv4 is still more popular at the moment.</p>
+</section>
+
+</page>

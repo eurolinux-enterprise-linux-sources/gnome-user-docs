@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="hardware-cardreader" xml:lang="sl">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="hardware-cardreader" xml:lang="sl">
 
   <info>
     <link type="guide" xref="media#photos"/>
     <link type="guide" xref="hardware#problems"/>
 
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+    <desc>Odpravljanje težav čitalcev kartic</desc>
 
     <credit type="author">
       <name>Dokumentacijski projekt GNOME</name>
@@ -13,8 +13,6 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Odpravljanje težav čitalcev kartic</desc>
   </info>
 
 <title>Težave z bralnikom večpredstavnosnih kartic</title>
@@ -27,20 +25,11 @@
 </item>
 
 <item>
-  <p>Open <app>Files</app> from the
-  <gui xref="shell-introduction#activities">Activities</gui> overview. Does the inserted
-  card appear in the <gui>Devices</gui> list in the left sidebar? Sometimes the
-  card appears in this list but is not mounted; click it once to mount. (If the
-  sidebar is not visible, press <key>F9</key> or click <gui style="menu">Files</gui> in
-  the top bar and select the <gui style="menuitem">Sidebar</gui>.)</p>
+<p>Odprite <app>Datoteke</app> z uporabo menija <gui>Dejavnosti</gui>. Ali se vstavljena kartica pojavi na seznamu  <gui>Naprave</gui> v levi stranski vrstici? Včasih se kartica pojavi na tem seznamu, vendar ni priklopljena. Kliknite nanjo za priklop (v primeru da stranska vrstica ni vidna, pritisnite <key>F9</key> ali kliknite na <guiseq><gui>Pogled</gui><gui> Stranska vrstice</gui><gui> Pokaži stransko vrstico</gui></guiseq>.).</p>
 </item>
 
 <item>
-  <p>If your card does not show up in the sidebar, press
-  <keyseq><key>Ctrl</key><key>L</key></keyseq>, then type
-  <input>computer:///</input> and press <key>Enter</key>. If your card reader
-  is correctly configured, the reader should come up as a drive when no card is
-  present, and the card itself when the card has been mounted.</p>
+<p>V primeru da se vaša kartica ne pojavi v stranski vrstici, kliknite <guiseq><gui>Pojdi</gui><gui>Računalnik</gui></guiseq>. V primeru da je vaš bralnik kartic pravilno nastavljen, bi se bralnik moral pojaviti kot pogon, ko kartica in na voljo in kot kartica, ko je kartica priklopljena (oglejte si sliko spodaj).</p>
 </item>
 
 <item>
@@ -48,12 +37,6 @@
 </item>
 </steps>
 
-<p>If no cards or drives are shown when browsing the <gui>Computer</gui>
-location, it is possible that your card reader does not work with Linux due to
-driver issues. If your card reader is internal (inside the computer instead of
-sitting outside) this is more likely. The best solution is to directly connect
-your device (camera, cell phone, etc.) to a USB port on the computer. USB
-external card readers are also available, and are far better supported by
-Linux.</p>
+<p>V primeru da v mapi <gui>Računalnik</gui> ni kartic ali pogonov, morda vaš bralnik kartic na deluje na Linuxu zaradi težav z gonilniki. V primeru da je bralnik kartic notranji (znotraj računalnika), je to verjetnejše. Najboljša rešitev je neposreden priklop vaše naprave (fotoaparat, telefon) na vrata USB na računalniku. Na voljo so tudi zunanji bralniki kartic USB, ki so na Linuxu precej bolje podprti.</p>
 
 </page>

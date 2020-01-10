@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="mouse-mousekeys" xml:lang="it">
-
-  <info>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="mouse-mousekeys" xml:lang="it">
+<info>
     <link type="guide" xref="mouse"/>
     <link type="guide" xref="a11y#mobility" group="pointing"/>
 
-    <revision pkgversion="3.8" date="2013-03-16" status="outdated"/>
-    <revision pkgversion="3.10" date="2013-11-07" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.8.0" date="2013-03-16" status="outdated"/>
+
+    <desc>Enable mouse keys to control the mouse with the keypad.</desc>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -21,17 +20,10 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-      <years>2013, 2015</years>
-    </credit>
-
+    
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
     
-    <desc>Enable mouse keys to control the mouse with the numeric
-    keypad.</desc>
-  
+
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Luca Ferretti</mal:name>
       <mal:email>lferrett@gnome.org</mal:email>
@@ -45,52 +37,39 @@
     </mal:credit>
   </info>
 
-  <title>Click and move mouse pointer using the keypad</title>
+<title>Click and move mouse pointer using the keypad</title>
 
-  <p>In caso di difficoltà nell'utilizzo di un mouse o di un altro dispositivo di puntamento, è possibile controllare il puntatore usando il tastierino numerico sulla tastiera. Tale caratteristica è chiamata <em>Mouse da tastiera</em>.</p>
+<p>In caso di difficoltà nell'utilizzo di un mouse o di un altro dispositivo di puntamento, è possibile controllare il puntatore usando il tastierino numerico sulla tastiera. Tale caratteristica è chiamata <em>Mouse da tastiera</em>.</p>
 
-  <steps>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Universal Access</gui>.</p>
-      <p>You can access the <gui>Activities</gui> overview by pressing on it,
-      by moving your mouse pointer against the top-left corner of the screen,
-      using <keyseq><key>Ctrl</key><key>Alt</key><key>Tab</key></keyseq>
-      followed by <key>Enter</key> or using
-      <key xref="keyboard-key-super">Super</key>.</p>
-    </item>
-    <item>
-      <p>Click on <gui>Universal Access</gui> to open the panel.</p>
-    </item>
-    <item>
-      <p>Use the up and down arrow keys to select <gui>Mouse Keys</gui> in the
-      <gui>Pointing &amp; Clicking</gui> section then press <key>Enter</key> to
-      switch <gui>Mouse Keys</gui> to <gui>On</gui>.</p>
-    </item>
-    <item>
-      <p>Assicurarsi che <key>Bloc Num</key> sia disattivato. Completati questi passi, sarà possibile muovere il puntatore del mouse con il tastierino numerico.</p>
-    </item>
-  </steps>
+<steps>
+  <item><p>Press <keyseq><key>Ctrl</key><key>Alt</key><key>Tab</key></keyseq>
+  to give keyboard focus to the top bar.</p></item>
+  <item><p>Use the right and left arrow keys to select the
+  <link xref="a11y-icon">universal access menu</link>, then press
+  <key>Enter</key>.</p></item>
+  <item><p>Use the up and down arrow keys to select <gui>Mouse Keys</gui>
+  and press <key>Enter</key>.</p></item>
+  <item><p>Assicurarsi che <key>Bloc Num</key> sia disattivato. Completati questi passi, sarà possibile muovere il puntatore del mouse con il tastierino numerico.</p></item>
+</steps>
 
-  <p>The keypad is a set of numerical buttons on your keyboard, usually
-  arranged into a square grid. If you have a keyboard without a keypad (such as
-  a laptop keyboard), you may need to hold down the function (<key>Fn</key>)
-  key and use certain other keys on your keyboard as a keypad. If you use this
-  feature often on a laptop, you can purchase external USB or Bluetooth numeric
-  keypads.</p>
+ <note style="tip">
+ <p>Queste istruzioni consentono di abilitare nella maniera più veloce il mouse da tastiera. Selezionare <gui>Accesso universale</gui> per esaminare ulteriori opzioni di accesso facilitato.</p>
+ </note>
 
-  <p>Ogni numero sul tastierino numerico corrisponde a una direzione. Per esempio, la pressione del tasto <key>8</key> farà spostare il puntatore del mouse verso l'alto e la pressione del tasto <key>2</key> lo farà spostare verso il basso. Premere il tasto <key>5</key> per fare clic una volta col mouse o premerlo velocemente due volte per fare un doppio-clic.</p>
+<p>Il tastierino numerico è un insieme di tasti numerici sulla tastiera, di solito disposti in una griglia rettangolare. Se la tastiera non è dotata di tastierino numerico (come per esempio la tastiera di un computer portatile), può essere necessario mantenere premuto il tasto funzione (<key>Fn</key>) e usare determinati altri tasti come tastierino numerico. In caso di frequente utilizzo di tale caratteristica, è possibile acquistare un tastirino numerico esterno USB.</p>
 
-  <p>Most keyboards have a special key which allows you to right-click,
-  sometimes called the <key xref="keyboard-key-menu">Menu</key> key. Note,
-  however, that this key responds to where your keyboard focus is, not where
-  your mouse pointer is. See <link xref="a11y-right-click"/> for information on
-  how to right-click by holding down <key>5</key> or the left mouse button.</p>
+<p>Ogni numero sul tastierino numerico corrisponde a una direzione. Per esempio, la pressione del tasto <key>8</key> farà spostare il puntatore del mouse verso l'alto e la pressione del tasto <key>2</key> lo farà spostare verso il basso. Premere il tasto <key>5</key> per fare clic una volta col mouse o premerlo velocemente due volte per fare un doppio-clic.</p>
 
-  <p>Per usare il tastierino numerico per digitare numeri mentre è attivo il mouse da tastiera, attivare il tasto <key>Bloc Num</key>. Il mouse non può essere controllato da tastiera quando <key>Bloc Num</key> è attivo.</p>
+<p>Most keyboards have a special key which allows you to right-click, sometimes
+called the <key xref="keyboard-key-menu">Menu</key> key. Note, however, that
+this key responds to where your keyboard focus is, not where your mouse pointer
+is. See <link xref="a11y-right-click"/> for information on how to right-click by
+holding down <key>5</key> or the left mouse button.</p>
 
-  <note>
+<p>Per usare il tastierino numerico per digitare numeri mentre è attivo il mouse da tastiera, attivare il tasto <key>Bloc Num</key>. Il mouse non può essere controllato da tastiera quando <key>Bloc Num</key> è attivo.</p>
+
+<note>
     <p>I tasti numerici normali, posizionati in una riga nella parte superiore della tastiera, non possono controllare il puntatore del mouse. Solo i tasti del tastierino numerico possono essere utilizzati per questa funzione.</p>
-  </note>
+</note>
 
 </page>

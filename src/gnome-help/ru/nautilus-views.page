@@ -4,36 +4,28 @@
   <info>
     <link type="guide" xref="nautilus-prefs" group="nautilus-views"/>
 
+    <desc>Управление видом по умолчанию, порядком сортировки и масштабом в менеджере файлов.</desc>
+
     <revision pkgversion="3.8" version="0.2" date="2013-04-03" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-30" status="candidate"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
       <email>tiffany.antopolski@gmail.com</email>
     </credit>
     <credit type="author">
-      <name>Шон МакКенс (Shaun McCance)</name>
+      <name>Shaun McCance</name>
       <email>shaunm@gnome.org</email>
     </credit>
     <credit type="editor">
-      <name>Майкл Хилл (Michael Hill)</name>
+      <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="author editor">
       <name>Екатерина Герасимова (Ekaterina Gerasimova)</name>
       <email>kittykat3756@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Дэвид Кинг (David King)</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
     <its:rules xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
-
-    <desc>Specify the default sort order and grouping for the file
-    manager.</desc>
-
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Александр Прокудин</mal:name>
@@ -44,32 +36,16 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011-2012</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Станислав Соловей</mal:name>
-      <mal:email>whats_up@tut.by</mal:email>
-      <mal:years>2013-2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Юлия Дронова</mal:name>
-      <mal:email>juliette.tux@gmail.com</mal:email>
-      <mal:years>2013-2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Юрий Мясоедов</mal:name>
-      <mal:email>ymyasoedov@yandex.ru</mal:email>
-      <mal:years>2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
 
-<title>Параметры просмотра файлов и папок в <app>Nautilus</app></title>
+<title>Views preferences in <app>Files</app></title>
 
-<p>You can change how files and folders are grouped and sorted by default.
-Select <guiseq><gui style="menu">Files</gui>
+<p>You can change the default view for new folders, how files and folders are
+sorted by default, the zoom level for the icon and compact views, and whether
+files are displayed in the tree sidebar. Select
+<guiseq><gui style="menu">Files</gui>
 <gui style="menuitem">Preferences</gui></guiseq> in the top bar while
 <app>Files</app> is open and select the <gui style="tab">Views</gui> tab.</p>
 
@@ -77,18 +53,74 @@ Select <guiseq><gui style="menu">Files</gui>
 <title>Вид по умолчанию</title>
 <terms>
   <item>
+    <title><gui>Просматривать новые папки, используя</gui></title>
+    <p>By default, new folders are shown in icon view. If you prefer the list
+    view, you can set it here as the default. Alternatively, you can select a
+    different view for each folder as you browse by clicking the
+    <gui style="button">View items as a list</gui> or <gui style="button">View
+    items as a grid of icons</gui> button in the toolbar.</p>
+  </item>
+  <item>
     <title><gui>Выстраивать элементы</gui></title>
-    <p>Порядок сортировки по умолчанию можно изменить с помощью выпадающего списка <gui>Выстраивать элементы</gui> в «параметрах». Возможна сортировка по имени, размеру файла, типу файла, времени последнего изменения, времени последнего доступа или времени помещения в корзину.</p>
-    <p its:locNote="TRANSLATORS: use the translation of the tooltip for the     view selector button that opens the view popover in the main window for     'View options'">You can change how <link xref="files-sort">files are
-    sorted</link> in an individual folder by clicking the view options
-    <!-- FIXME: Get a tooltip added for "View options" -->
-    button in the toolbar and choosing <gui>Name</gui>,
-    <gui>Size</gui>, <gui>Type</gui> or <gui>Last Modified</gui>, or by
-    clicking the list column headers in list view.</p>
+    <p>You can change the default sort order that is used in folders using the
+    <gui>Arrange items</gui> drop-down list in the preferences to sort by name,
+    file size, file type, when they were last modified, when they were last
+    accessed or when they were trashed.</p>
+    <p its:locNote="TRANSLATORS: use the translation of the tooltip for the     downwards pointing arrow button that opens the preferences menu in the main     window for 'View options'">You can change how <link xref="files-sort">files
+    are sorted</link> in an individual folder by clicking the
+    <media type="image" src="figures/go-down.png">View options</media> button
+    in the toolbar and choosing <gui>By Name</gui>, <gui>By Size</gui>, <gui>By
+    Type</gui> or <gui>By Modification Date</gui>, or by clicking the list
+    column headers in list view. This menu only affects the current folder.</p>
   </item>
   <item>
     <title><gui>Помещать папки перед файлами</gui></title>
-    <p>По умолчанию, менеджер файлов теперь не придерживается порядка сортировки «сначала папки, потом файлы». Включите этот параметр, чтобы папки шли перед файлами.</p>
+    <p>By default, the file manager no longer shows all folders before files.
+    To see all folders listed before files, enable this option.</p>
+  </item>
+  <item>
+    <title><gui>Показывать скрытые файлы и резервные копии</gui></title>
+    <p>The file manager does not display <link xref="files-hidden">hidden
+    files</link> and folders by default. You can always show hidden files by
+    selecting this option.</p>
+    <p its:locNote="TRANSLATORS: use the translation of the tooltip for the     downwards pointing arrow button that opens the preferences menu in the main     window for 'View options'">You can also show hidden files in an individual
+    window by selecting <gui>Show Hidden Files</gui>, from the
+    <media type="image" src="figures/go-down.png">View options</media> menu in
+    the toolbar.</p>
+  </item>
+</terms>
+</section>
+
+<section id="icon-view-defaults">
+<title>Просмотр в виде значков</title>
+<terms>
+  <item>
+    <title><gui>Исходный масштаб</gui></title>
+    <p its:locNote="TRANSLATORS: use the translation of the tooltip for the     downwards pointing arrow button that opens the preferences menu in the main     window for 'View options'">You can make the icons and text larger or
+    smaller by default in icon view using this option. You can also change this
+    setting in an individual folder by clicking the
+    <media type="image" src="figures/go-down.png">View options</media> button
+    in the toolbar and selecting <gui>Zoom In</gui>, <gui>Zoom Out</gui> or
+    <gui>Normal Size</gui>. If you frequently use a larger or smaller zoom
+    level, you can set the default with this option.</p>
+    <p>In icon view, more or fewer
+    <link xref="nautilus-display#icon-captions">captions</link> are shown based
+    on your zoom level.</p>
+   </item>
+  </terms>
+</section>
+
+<section id="list-view-defaults">
+<title>Просмотр в виде списка</title>
+<terms>
+  <item>
+    <title><gui>Исходный масштаб</gui></title>
+    <p its:locNote="TRANSLATORS: use the translation of the tooltip for the     downwards pointing arrow button that opens the preferences menu in the main     window for 'View options'">You can make the icons and text larger or
+    smaller in list view using this option. You can also do this in an
+    individual folder by clicking the
+    <media type="image" src="figures/go-down.png">View options</media> button
+    in the toolbar and selecting <gui>Zoom In</gui>, <gui>Zoom Out</gui> or
+    <gui>Normal Size</gui>.</p>
   </item>
 </terms>
 </section>

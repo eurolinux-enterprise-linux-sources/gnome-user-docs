@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-select" xml:lang="cs">
-
   <info>
     <link type="guide" xref="files#faq"/>
 
@@ -10,45 +9,48 @@
     </credit>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-28" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
 
+    <desc>Press <keyseq><key>Ctrl</key><key>S</key></keyseq> to select multiple
+    files which have similar names.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Zmáčkněte <keyseq><key>Ctrl</key><key>S</key></keyseq>, abyste mohli vybrat více souborů, které mají podobné názvy.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
       <mal:email>adamatousek@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Marek Černocký</mal:name>
-      <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014, 2015</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Výběr souborů podle vzoru</title>
+  <title>Select files by pattern</title>
 
-  <p>Soubory ve složce můžete vybírat pomocí vzoru názvu souboru. Zmáčknutím <keyseq><key>Ctrl</key> <key>S</key></keyseq> si zobrazte okno <gui>Vybrat všechny odpovídající položky</gui>. Zadejte vzor pomocí běžných částí názvu souboru a divokých znaků. K dispozici jsou dva divoké znaky:</p>
+  <p>You can select files in a folder using a pattern on the file name.
+  Press <keyseq><key>Ctrl</key><key>S</key></keyseq> to bring up the
+  <gui>Select Items Matching</gui> window. Type in a pattern using
+  common parts of the file names plus wild card characters. There are
+  two wild card characters available:</p>
 
   <list style="compact">
-    <item><p><file>*</file> odpovídá libovolnému počtu znaků, nebo i žádnému znaku.</p></item>
-    <item><p><file>?</file> odpovídá právě jednomu znaku.</p></item>
+    <item><p><file>*</file> matches any number of any characters, even
+    no characters at all.</p></item>
+    <item><p><file>?</file> matches exactly one of any character.</p></item>
   </list>
 
-  <p>Příklad:</p>
+  <p>For example:</p>
 
   <list>
-    <item><p>Mějme textový soubory OpenDocument, soubor PDF a obrázek, všechny se stejným základním názvem <file>Faktura</file>, pak všechny tři vybereme vzorem</p>
-    <example><p><file>Faktura.*</file></p></example></item>
+    <item><p>If you have an OpenDocument Text file, a PDF file, and an
+    image that all have the same base name <file>Invoice</file>, select
+    all three with the pattern</p>
+    <example><p><file>Invoice.*</file></p></example></item>
 
-    <item><p>Mějme nějaké fotografie s názvy <file>Dovolená-001.jpg</file>, <file>Dovolená-002.jpg</file>, <file>Dovolená-003.jpg</file>, … Všechny je vybereme vzorem</p>
-    <example><p><file>Dovolená-???.jpg</file></p></example></item>
+    <item><p>If you have some photos that are named like <file>Vacation-001.jpg</file>,
+    <file>Vacation-002.jpg</file>, <file>Vacation-003.jpg</file>; select them all
+    with the pattern</p>
+    <example><p><file>Vacation-???.jpg</file></p></example></item>
 
-    <item><p>Mějme fotografie, jako v předchozím příkladu, akorát některé z nich upravené s přidaným <file>-upraveno</file> na konec názvu souboru. Ty upravené vybereme vzorem</p>
-    <example><p><file>Dovolená-???-upraveno.jpg</file></p></example></item>
+    <item><p>If you have photos as before, but you've edited some of them and
+    added <file>-edited</file> to the end of the file name of the photos you've
+    edited, select the edited photos with</p>
+    <example><p><file>Vacation-???-edited.jpg</file></p></example></item>
   </list>
-
 </page>

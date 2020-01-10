@@ -4,9 +4,9 @@
   <info>
     <link type="guide" xref="sound-broken"/>
 
+    <desc>Kiểm tra xem có bị câm không, cáp có cắm đúng chưa, và cạc âm thanh có được nhận diện không.</desc>
+
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Dự án tài liệu GNOME</name>
@@ -14,9 +14,6 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Check that the sound is not muted, that cables are plugged in properly,
-    and that the sound card is detected.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Nguyễn Thái Ngọc Duy</mal:name>
@@ -25,122 +22,72 @@
     </mal:credit>
   </info>
 
-<title>I cannot hear any sounds on the computer</title>
+<title>Không nghe được gì từ máy tính</title>
 
-  <p>If you cannot hear any sounds on your computer, for example when you try
-  to play music, go through the following troubleshooting tips.</p>
+  <p>Nếu bạn không nghe được gì từ máy tính, ví dụ khi bạn phát nhạc, thử những bước chẩn đoán sau xem bạn có thể khắc phục vấn đề không.</p>
 
 <section id="mute">
-  <title>Bảo đảm tiếng không bị tắt</title>
-
-  <p>Open the <gui xref="shell-introduction#yourname">system menu</gui> and make sure that
-  the sound is not muted or turned down.</p>
-
-  <p>Some laptops have mute switches or keys on their keyboards — try pressing
-  that key to see if it unmutes the sound.</p>
-
-  <p>You should also check that you have not muted the application that you are
-  using to play sound (for example, your music player or movie player). The
-  application may have a mute or volume button in its main window, so check
-  that.</p>
-
-  <p>Also, you can check the <gui>Applications</gui> tab in the <gui>Sound</gui>
-  GUI:</p>
-  <steps>
-    <item>
-    <p>Open <app>Settings</app> from the <gui>Activities</gui> overview.</p>
-    </item>
-    <item>
-      <p>Nhấn <gui>Âm thanh</gui>.</p>
-    </item>
-    <item>
-      <p>Go to the <gui>Applications</gui> tab and check that your application
-      is not muted.</p>
-    </item>
-  </steps>
-
+ <title>Bảo đảm tiếng không bị tắt</title>
+ <p>Nhấn biểu tượng âm thanh trên thanh đỉnh (hình cái loa) và bảo đảm không tắt tiếng hoặc vặn quá nhỏ.</p>
+ <p>Một số laptop có công tắt hoặc phím để tắt tiếng. Thử nhấn phím đó xem có khác biệt gì không.</p>
+ <p>Bạn cũng cần kiểm tra bạn không tắt tiếng trong ứng dụng bạn đang dùng để phát âm thanh (vd, trình phát nhạc hoặc xem phim). Một số ứng dụng có nút tắt tiếng trên cửa sổ chính, kiểm tra thử. Ngoài ra nhấn biểu tượng âm thanh trên thanh đỉnh và chọn <gui>Thiết lập âm thanh</gui>. Khi cửa sổ <gui>Âm thanh</gui> hiện lên, đến thẻ <gui>Ứng dụng</gui> và bảo đảm không tắt tiếng.</p>
 </section>
 
 <section id="speakers">
-  <title>Kiểm tra đã bật loa và nối đúng chưa</title>
-  <p>If your computer has external speakers, make sure that they are turned on
-  and that the volume is turned up. Make sure that the speaker cable is securely
-  plugged into the “output” audio socket on your computer. This socket
-  is usually light green in color.</p>
+ <title>Kiểm tra đã bật loa và nối đúng chưa</title>
+ <p>Nếu máy bạn có loa ngoài, nhớ bật loa và vặn âm lượng lên. Nhớ cắm cáp loa chắc chắn vào lỗ cắm "output" ở phía sau máy. Lỗ này thường có màu xanh lá nhạt.</p>
 
-  <p>Some sound cards can switch between the socket they use for output
-  (to the speakers) and the socket for input (from a microphone, for instance).
-  The output socket may be different when running Linux, Windows or Mac OS.
-  Try connecting the speaker cable to a different audio socket on your
-  computer.</p>
+ <p>Một số cạc âm thanh có thể chuyển lỗ ra (sang loa) và vào (từ microphone). Lỗ ra có thể khác khi chạy Linux so với Windows hoặc Mac OS. Thử nối cáp loa sang lỗ khác trên máy tính xem có chạy không.</p>
 
- <p>A final thing to check is that the audio cable is securely plugged into the
- back of the speakers. Some speakers have more than one input, too.</p>
+ <p>Kiểm tra cuối cùng là bảo đảm cắm chắc chắn cáp âm thanh và mặt sau loa. Một số loa có nhiều đầu vào.</p>
 </section>
 
 <section id="device">
-  <title>Check that the correct sound device is selected</title>
-
-  <p>Some computers have multiple “sound devices” installed. Some of these are
-  capable of outputting sound and some are not, so you should check that you
-  have the correct sound device selected. This might involve some
-  trial-and-error to choose the right one.</p>
-
-  <steps>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Sound</gui>.</p>
-    </item>
-    <item>
-      <p>Click on <gui>Sound</gui> to open the panel.</p>
-    </item>
-    <item>
-      <p>In the <gui>Output</gui> tab, change the <gui>Profile</gui>
-      settings for the selected device and play a sound to see if it works.
-      You might need to go through the list and try each profile.</p>
-
-      <p>If that does not work, you might want to try doing the same for any
-      other devices that are listed.</p>
-    </item>
-  </steps>
-
+ <title>Kiểm tra chọn đúng thiết bị loa</title>
+ <p>Một số máy tính có cài đặt nhiều "thiết bị âm thanh". Một trong số này có khả năng phát thanh, số còn lại không. Bạn cần kiểm tra bạn chọn đúng thiết bị. Có thể mất một lúc thử-và-sai để chọn đúng.</p>
+ <steps>
+  <item>
+   <p>Nhấn biểu tượng âm thanh trên đỉnh và chọn <gui>Thiết lập âm thanh</gui>.</p>
+  </item>
+  <item>
+   <p>In the <gui>Sound</gui> window that appears, go to the <gui>Output</gui>
+ tab. Make a note of which device and which profile are selected (so you can
+ return to the default selections if changing them doesn't work).</p>
+  </item>
+  <item>
+   <p>Với thiết bị đang chọn, thử đổi hồ sơ, phát thử âm thanh sau khi đổi xem có chạy không. Bạn có thể sẽ cẫn thử từng hồ sơ trong danh sách.</p>
+  </item>
+  <item>
+   <p>Nếu vẫn không hoạt động, bạn có thể thử lại với thiết bị khác trong danh sách.</p>
+  </item>
+  <item>
+   <p>Thử đổi tuỳ chọn <gui>Đầu nối</gui> trong thẻ <gui>Đầu ra</gui>.</p>
+  </item>
+ </steps>
 </section>
 
 <section id="hardware-detected">
-
  <title>Kiểm tra xem cạc âm thanh có được nhận diện đúng không</title>
+ <p>Cạc âm thanh của bạn có thể không được nhận diện đúng. Nếu điều này xảy ra, máy tính bạn sẽ nghĩ rằng không thể phát âm thanh. Một trong những lý do có thể là do chưa cài đặt đúng trình điều khiển.</p>
+ <steps>
+  <item>
+   <p>Đến Tổng quan <gui>hoạt động</gui> và mở Cửa sổ dòng lệnh.</p>
+  </item>
+  <item>
+   <p>Gõ <cmd>aplay -l</cmd> và nhấn <key>Enter</key>.</p>
+  </item>
+  <item>
+   <p>Danh sách thiết bị sẽ được hiển thị. Nếu không có <gui>playback hardware devices</gui>, cạc âm thanh của bạn chưa được nhận diện.</p>
+  </item>
+ </steps>
 
-  <p>Your sound card may not have been detected properly probably because 
-  the drivers for the card are not installed. You may need to install the drivers
-  for the card manually. How you do this depends on the type of the card. </p>
+ <p>Nếu cạc âm thanh của bạn không được nhận diện, bạn cần tự cài đặt trình điều khiển của nó. Làm cách nào phụ thuộc vào cạc bạn đang dùng.</p>
 
-  <p>Run the <cmd>lspci</cmd> command in the Terminal to find out what sound
-  card you have:</p>
-  <steps>
-    <item>
-      <p>Đến Tổng quan <gui>hoạt động</gui> và mở Cửa sổ dòng lệnh.</p>
-    </item>
-    <item>
-      <p>Run <cmd>lspci</cmd> as <link xref="user-admin-explain">superuser</link>;
-      either type <cmd>sudo lspci</cmd> and type your password, or type
-      <cmd>su</cmd>, enter the <em>root</em> (administrative) password,
-      then type <cmd>lspci</cmd>.</p>
-    </item>
-    <item>
-      <p>Check if an <em>audio controller</em> or <em>audio device</em> is listed:
-      in such case you should see the make and model number of the sound card. 
-      Also, <cmd>lspci -v</cmd> shows a list with more detailed information.</p>
-    </item>
-  </steps>
+ <p>Bạn có thể xem cạc âm thanh bạn có bằng lệnh <cmd>lspci</cmd> command trong cửa sổ dòng lệnh. Bạn có thể chạy <cmd>lspci</cmd> bằng <link xref="user-admin-explain">siêu người dùng</link>; hoặc gõ <cmd>sudo lspci</cmd> và nhập mật khẩu của bạn, hoặc nhập <cmd>su</cmd>, và nhập mật khẩu của <em>root</em> (quản trị), rồi nhập <cmd>lspci</cmd>. Xem thử có <em>audio controller</em> hoặc <em>audio device</em> không, có đúng số model và nhà sản xuất cạc âm thanh của bạn không. <cmd>lspci -v</cmd> sẽ hiện chi tiết hơn.</p>
 
-  <p>You may be able to find and install drivers for your card. It is best to
-  ask on support forums (or otherwise) for your Linux distribution for
-  instructions.</p>
+ <p>Bạn có thể tìm và cài đặt trình điều khiển của cạc của bạn. Tốt nhất là nhờ hỗ trợ trên các diễn đàn hoặc tương tự của bản phân phối Linux của bạn để biết chỉ dẫn.</p>
 
-  <p>If you cannot get drivers for your sound card, you might prefer to buy a
-  new sound card. You can get sound cards that can be installed inside the
-  computer and external USB sound cards.</p>
-
+ <p>Nếu bạn không thể lấy trình điều khiển cạc âm thanh, bạn có thể muốn mua một cạc mới. Bạn có thể chọn cạc âm thanh được cài trong máy hoặc cạc USB gắn ngoài.</p>
 </section>
 
 </page>

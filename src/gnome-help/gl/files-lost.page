@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-lost" xml:lang="gl">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-lost" xml:lang="gl">
 
   <info>
-    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="files" group="more"/>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-28" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="candidate"/>
+
+    <desc>Siga estas indicacións se non atopa o ficheiro que creou ou descargou.</desc>
 
     <credit type="author">
       <name>Proxecto de documentación de GNOME</name>
@@ -20,46 +20,28 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Siga estas indicacións se non atopa o ficheiro que creou ou descargou.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2018</mal:years>
+      <mal:years>2011, 2012.</mal:years>
     </mal:credit>
   </info>
 
 <title>Buscar un ficheiro perdido</title>
 
-<p>If you created or downloaded a file, but now you cannot find it, follow
-these tips.</p>
+<p>Se creou ou descargou un ficheiro, pero agora non o pode atopar, siga estes consellos.</p>
 
 <list>
-  <item><p>If you do not remember where you saved the file, but you have some
-  idea of how you named it, you can <link xref="files-search">search for the
-  file by name</link>.</p></item>
+  <item><p>Se non lembra onde gardou o ficheiro, pero ten unha baga idea de como o chamou, pode buscar o nome polo seu nome. Vexa <link xref="files-search"/> para saber máis.</p></item>
 
-  <item><p>If you just downloaded the file, your web browser might
-  have automatically saved it to a common folder. Check the
-  <file>Desktop</file> and <file>Downloads</file> folders in your home
-  folder.</p></item>
+  <item><p>Se descargou un ficheiro o seu navegador web debería gardalo de forma automática nun cartafol común. Comprobe os cartafoles <file>Escritorio</file> e <file>Descargas</file> no seu cartafol persoal.</p></item>
 
   <item><p>É posíbel que eliminara o ficheiro accidentalmente. Cando elimina un ficheiro, móvese ao lixo, onde permanecerá até que baleire o lixo manualmente. Consulte a <link xref="files-recover"/> para saber como recuperar un ficheiro eliminado.</p></item>
 
-  <item><p>You might have renamed the file in a way that made the file hidden.
-  Files that start with a <file>.</file> or end with a <file>~</file> are
-  hidden in the file manager. Click the
-  <!-- FIXME: Get a tooltip added for "View options" -->
-  view options button in the <app>Files</app> toolbar and enable <gui>Show
-  Hidden Files</gui> to display them. See <link xref="files-hidden"/> to learn
-  more.</p></item>
+  <item><p>Pode que cambiara o nome do ficheiro de forma que agora quede oculto. Os ficheiros que comezan por <file>.</file> ou que acaban en <file>~</file> están ocultos no xestor de ficheiros. Prema o botón <media type="image" src="figures/go-down.png">abaixo</media> na barra do xestor de ficheiros e seleccione <gui>Mostrar os ficheiros ocultos</gui>. Consulte a <link xref="files-hidden"/> para obter máis información.</p></item>
 </list>
 
 </page>

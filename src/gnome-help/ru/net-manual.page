@@ -1,26 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-manual" xml:lang="ru">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="net-manual" xml:lang="ru">
   <info>
     <link type="guide" xref="net-wired"/>
     <link type="guide" xref="net-wireless"/>
 
     <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
-    <revision pkgversion="3.10" date="2013-11-11" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-    <revision pkgversion="3.28" date="2018-03-28" status="review"/>
 
     <credit type="author">
       <name>Фил Булл (Phil Bull)</name>
       <email>philbull@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Майкл Хилл (Michael Hill)</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
 
-    <desc>You may have to enter network settings if they don’t get assigned
-    automatically.</desc>
+    <desc>Если настройки сети не назначаются автоматически, придётся задать их вручную.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -32,83 +23,42 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011-2012</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Станислав Соловей</mal:name>
-      <mal:email>whats_up@tut.by</mal:email>
-      <mal:years>2013-2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Юлия Дронова</mal:name>
-      <mal:email>juliette.tux@gmail.com</mal:email>
-      <mal:years>2013-2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Юрий Мясоедов</mal:name>
-      <mal:email>ymyasoedov@yandex.ru</mal:email>
-      <mal:years>2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
 
-  <title>Настройка параметров соединения вручную</title>
+<title>Настройка параметров соединения вручную</title>
 
-  <p>If your network doesn’t automatically assign network settings to your
-  computer, you may have to manually enter the settings yourself. This topic
-  assumes that you already know the correct settings to use. If not, you may
-  need to ask your network administrator or look at the settings of your router
-  or network switch.</p>
+<p>Если ваша сеть не назначает автоматически параметры сетевого соединения для вашего компьютера, вам придётся ввести их самому. В этой теме предполагается, что вам известны правильные настройки. Если нет, нужно узнать их у администратора сети или взглянуть на настройки сетевого маршрутизатора или коммутатора.</p>
 
-  <steps>
-    <title>Чтобы настроить параметры сетевого соединения вручную:</title>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui>
-      overview and start typing <gui>Settings</gui>.</p>
-    </item>
-    <item>
-      <p>Click on <gui>Settings</gui>.</p>
-    </item>
-    <item>
-      <p>In the left pane, select the network connection that you want to set
-      up manually. If you plug in to the network with a cable, click
-      <gui>Network</gui>. Otherwise click <gui>Wi-Fi</gui>.</p>
-      <p>Убедитесь, что беспроводная карта включена или сетевой кабель подключён к компьютеру.</p>
-    </item>
-    <item>      
-      <p>Click the
-      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
-      button.</p>
-      <note>
-        <p>For a <gui>Wi-Fi</gui> connection, the 
-        <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
-        button will be located next to the active network.</p>
-      </note>
-    </item>
-    <item>
-      <p>Click on <gui>IPv4</gui> or <gui>IPv6</gui> in the left pane
-      and change the <gui>Addresses</gui> to <em>Manual</em>.</p>
-    </item>
-    <item>
-      <p>Type in the <gui xref="net-what-is-ip-address">IP Address</gui> and
-      <gui>Gateway</gui>, as well as the appropriate <gui>Netmask</gui>.</p>
-    </item>
-    <item>
-      <p>In the <gui>DNS</gui> section, switch <gui>Automatic</gui> to
-      <gui>OFF</gui>. Enter the IP address of a DNS server you want to use.
-      Enter additional DNS server addresses using the <gui>+</gui> button.</p>
-    </item>
-    <item>
-      <p>In the <gui>Routes</gui> section, switch <gui>Automatic</gui> to
-      <gui>OFF</gui>. Enter the <gui>Address</gui>, <gui>Netmask</gui>,
-      <gui>Gateway</gui> and <gui>Metric</gui> for a route you want to use.
-      Enter additional routes using the <gui>+</gui> button.</p>
-    </item>
-    <item>
-      <p>Нажмите <gui>Применить</gui>. Если вы не подключены к сети, нажмите на статус системы в верхней панели и подключитесь. Чтобы проверить правильность настроек, попробуйте посетить веб-сайт или открыть общий ресурс сети.</p>
-    </item>
-  </steps>
+<steps>
+  <title>Чтобы настроить параметры сетевого соединения вручную:</title>
+ <item>
+  <p>Щёлкните на значке сети на верхней панели и выберите <gui>Настроить сеть</gui>.</p>
+ </item>
+
+ <item>
+  <p>Выберите сетевое соединение, которое нужно настроить вручную, и нажмите <gui>Настроить</gui>. Например, если компьютер подключён к сети с помощью кабеля, взгляните на <gui>Проводные</gui>.</p>
+  <p>Убедитесь, что беспроводная карта включена или сетевой кабель подключён к компьютеру. Иначе вы не сможете нажать <gui>Настроить</gui>.</p>
+ </item>
+
+ <item>
+  <p>Перейдите на вкладку <gui>Параметры IPv4</gui> и измените <gui>Метод</gui> на <gui>Вручную</gui>.</p>
+ </item>
+
+ <item>
+  <p>Нажмите <gui>Добавить</gui> и наберите <em>IP-адрес</em>, <em>маску сети</em> и <em>IP-адрес шлюза по умолчанию</em> в соответствующие столбцы списка <gui>Адреса</gui>. Нажимайте <key>Enter</key> или <key>Tab</key> после набора каждого адреса.</p>
+  <p>Эти три адреса должны быть IP-адресами, то есть, они должны состоять из четырёх чисел, разделённых точками (например, 123.45.6.78).</p>
+ </item>
+
+ <item>
+  <p>Наберите с соответствующем поле IP-адреса серверов DNS, которые вы хотите использовать, разделив их запятыми.</p>
+ </item>
+
+ <item>
+  <p>Нажмите <gui>Сохранить</gui>. Если вы ещё не подключены к сети, щёлкните на значке сети в верхней панели и подключитесь. Чтобы проверить правильность настроек, попробуйте посетить веб-сайт или открыть совместно используемый ресурс сети.</p>
+ </item>
+
+</steps>
 
 </page>

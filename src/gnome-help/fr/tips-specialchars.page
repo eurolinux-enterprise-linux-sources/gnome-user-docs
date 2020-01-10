@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="tips-specialchars" xml:lang="fr">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="tips-specialchars" xml:lang="fr">
   <info>
     <link type="guide" xref="tips"/>
     <link type="seealso" xref="keyboard-layouts"/>
 
     <revision pkgversion="3.8.2" version="0.3" date="2013-05-18" status="review"/>
-    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.26" date="2017-11-27" status="review"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -17,18 +14,9 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Andre Klapper</name>
-      <email>ak-47@gmx.net</email>
-    </credit>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <desc>Saisir des caractères absents de votre clavier, y compris des alphabets étrangers, des symboles mathématiques et des caractères Unicode.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Luc Pionchon</mal:name>
@@ -45,13 +33,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Julien Hardelin</mal:name>
       <mal:email>jhardlin@orange.fr</mal:email>
-      <mal:years>2011, 2013</mal:years>
+      <mal:years>2011</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -77,122 +65,68 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Alexandre Franke</mal:name>
-      <mal:email>alexandre.franke@gmail.com</mal:email>
-      <mal:years>2015</mal:years>
-    </mal:credit>
   </info>
 
   <title>Saisie de caractères spéciaux</title>
 
-  <p>You can enter and view thousands of characters from most of the world’s
-  writing systems, even those not found on your keyboard. This page lists
-  some different ways you can enter special characters.</p>
+  <p>Vous pouvez saisir et afficher des milliers de caractères en provenance de systèmes d'écriture du monde entier, même ceux qui sont absents de votre clavier. Vous trouverez sur cette page une liste des différentes méthodes pour saisir des caractères spéciaux.</p>
 
   <links type="section">
     <title>Méthodes de saisie des caractères</title>
   </links>
 
-  <section id="characters">
-    <title>Characters</title>
-    <p>GNOME comes with a character map application that allows you to
-    find and insert unusual characters, including emoji, by browsing
-    character categories or searching for keywords.</p>
-
-    <p>You can launch <app>Characters</app> from the Activities overview.</p>
-
+  <section id="charmap">
+    <title>Table de caractères</title>
+    <p>GNOME inclut une application « Table de caractères » qui vous permet de consulter tous les caractères au format Unicode. Utilisez cette table pour trouver le caractère que vous recherchez ensuite, copiez-le et collez-le où vous en avez besoin.</p>
+    <p>Vous trouverez la <app>Table de caractères</app> dans la vue d'ensemble des <gui>Activités</gui>. Pour avoir plus d'informations sur la table de caractères, consultez le <link href="help:gucharmap">Guide de la table de caractères</link>.</p>
   </section>
 
   <section id="compose">
     <title>La touche « compose »</title>
     <p>Une touche « compose » est une touche spéciale qui vous permet d'appuyer successivement sur une combinaison de touches afin d'obtenir un caractère spécial. Par exemple, pour obtenir la lettre accentuée <em>é</em>, pressez sur <key>compose</key>, puis sur <key>'</key> et enfin sur <key>e</key>.</p>
-    <p>Keyboards don’t have specific compose keys. Instead, you can define
-    one of the existing keys on your keyboard as a compose key.</p>
-
-    <note style="important">
-      <p>You need to have <app>Tweaks</app> installed on your computer to
-      change this setting.</p>
-      <if:if xmlns:if="http://projectmallard.org/if/1.0/" test="action:install">
-        <p><link style="button" action="install:gnome-tweaks">Install
-        <app>Tweaks</app></link></p>
-      </if:if>
-    </note>
-
+    <p>Sur un clavier, il n'y a pas de touche « compose » spécifique. Il vous appartient d'en configurer une pour votre clavier.</p>
     <steps>
       <title>Configuration d'une touche « compose »</title>
-      <item>
-        <p>Open the <gui xref="shell-introduction#activities">Activities</gui>
-        overview and start typing <gui>Tweaks</gui>.</p>
-      </item>
-      <item>
-        <p>Click <gui>Tweaks</gui> to open the application.</p>
-      </item>
-      <item>
-        <p>Click the <gui>Keyboard &amp; Mouse</gui> tab.</p>
-      </item>
-      <item>
-        <p>Click <gui>Disabled</gui> next to the <gui>Compose Key</gui>
-        setting.</p>
-      </item>
-      <item>
-        <p>Turn the switch on in the dialog and pick the keyboard shortcut you
-        want to use.</p>
-      </item>
-      <item>
-        <p>Tick the checkbox of the key that you want to set as the Compose
-        key.</p>
-      </item>
-      <item>
-        <p>Close the dialog.</p>
-      </item>
-      <item>
-        <p>Close the <gui>Tweaks</gui> window.</p>
-      </item>
+      <item><p>Click your name on the top bar and select <gui>Settings</gui>.</p></item>
+      <item><p>Cliquez sur <gui>Clavier</gui>.</p></item>
+      <item><p>Select the <gui>Shortcuts</gui> tab and click
+      <gui>Typing</gui>.</p></item>
+      <item><p>Click on <gui>Compose Key</gui> in the right pane.</p></item>
+      <item><p>Click on <gui>Disabled</gui> and select the key you would like to
+      behave as a compose key from the drop-down menu. You can choose either of
+      the <key>Ctrl</key> keys, the right <key>Alt</key> key, the right
+      <key>Win</key> or <key xref="keyboard-key-super">Super</key> key if
+      you have one, the <key xref="keyboard-key-menu">Menu</key> key or
+      <key>Caps Lock</key>. Any key you select will then only work as a compose
+      key, and will no longer work for its original purpose.</p></item>
     </steps>
-
     <p>Vous pouvez saisir beaucoup de caractères usuels à l'aide de la touche compose, comme par exemple :</p>
-
     <list>
-      <item><p>appuyer sur <key>compose</key>, puis sur <key>'</key> et enfin sur une lettre pour y placer un accent aigu, comme <em>é</em>,</p></item>
-      <item><p>appuyer sur <key>compose</key>, puis sur <key>`</key> (accent grave) et enfin sur une lettre pour y placer un accent grave comme <em>è</em>,</p></item>
-      <item><p>appuyer sur <key>compose</key>, puis sur <key>"</key> et enfin sur une lettre pour y placer un tréma, comme <em>ë</em>,</p></item>
-      <item><p>appuyer sur <key>compose</key>, puis sur <key>-</key> et enfin sur une lettre pour y placer un macron, comme <em>ē</em>.</p></item>
+      <item><p>appuyez sur <key>compose</key>, puis sur <key>'</key> et enfin sur une lettre pour y placer un accent aigu, comme <em>é</em> ;</p></item>
+      <item><p>appuyez sur <key>compose</key>, puis sur <key>`</key> (accent grave) et enfin sur une lettre pour y placer un accent grave comme <em>è</em> ;</p></item>
+      <item><p>appuyez sur <key>compose</key>, puis sur <key>"</key> et enfin sur une lettre pour y placer un tréma, comme <em>ë</em> ;</p></item>
+      <item><p>appuyez sur <key>compose</key>, puis sur <key>-</key> et enfin sur une lettre pour y placer un macron, comme <em>ē</em>.</p></item>
     </list>
     <p>Pour d'autres séquences de compositions, consultez <link href="http://doc.ubuntu-fr.org/caracteres_etendus">cette page de la documentation Ubuntu francophone sur les caractères étendus</link>.</p>
   </section>
 
-<section id="ctrlshiftu">
-  <title>Points de code</title>
+  <section id="ctrlshiftu">
+    <title>Points de code</title>
+    <p>Vous pouvez saisir n'importe quel caractère Unicode à partir de votre clavier en utilisant son point de code. Chaque caractère est identifié par un point de code numérique à quatre caractères. Pour connaître le point de code d'un caractère, recherchez-le dans la table de caractères et regardez dans la barre d'état ou dans l'onglet <gui>Détails du caractère</gui>. Le point de code est représenté par les quatre caractères qui suivent <gui>U+</gui>.</p>
 
-  <p>You can enter any Unicode character using only your keyboard with the
-  numeric code point of the character. Every character is identified by a
-  four-character code point. To find the code point for a character, look it up
-  in the <app>Characters</app> application. The code point is the four characters
-  after <gui>U+</gui>.</p>
-
-  <p>To enter a character by its code point, press
-  <keyseq><key>Ctrl</key><key>Shift</key><key>U</key></keyseq>, then type the
-  four-character code and press <key>Space</key> or <key>Enter</key>. If you often
-  use characters that you can’t easily access with other methods, you might find
-  it useful to memorize the code point for those characters so you can enter
-  them quickly.</p>
-
-</section>
+    <p>Pour saisir un caractère en utilisant son point de code, maintenez les touches <key>Ctrl</key> et <key>Maj</key> enfoncées, saisissez <key>u</key> suivi des quatre caractères du point de code et relâchez <key>Ctrl</key> et <key>Maj</key>. Mémoriser les points de code de certains caractères est utile si vous avez souvent besoin d'utiliser des caractères difficilement accessibles par d'autres méthodes pour les saisir rapidement.</p>
+  </section>
 
   <section id="layout">
-    <title>Agencements du clavier</title>
+    <title>Agencements de clavier</title>
     <p>Vous pouvez modifier le comportement de votre clavier pour qu'il ressemble à celui d'une autre langue, sans tenir compte des signes tracés sur les touches. Vous pouvez aussi facilement passer d'un clavier à un autre en le matérialisant par une icône dans la barre supérieure. Pour savoir comment procéder, consultez <link xref="keyboard-layouts"/>.</p>
   </section>
 
-<section id="im">
-  <title>Méthodes de saisie</title>
+  <section id="im">
+    <title>Méthodes de saisie</title>
+    <p>Une méthode de saisie étend les méthodes précédentes en permettant de saisir des caractères non seulement via le clavier mais aussi via n'importe quel périphérique de saisie. Par exemple, vous pouvez saisir des caractères avec une souris en utilisant une méthode gestuelle, ou saisir des caractères japonais via le clavier latin.</p>
 
-  <p>Une méthode de saisie étend les méthodes précédentes en permettant de saisir des caractères non seulement via le clavier mais aussi via n'importe quel périphérique de saisie. Par exemple, vous pouvez saisir des caractères avec une souris en utilisant une méthode gestuelle, ou saisir des caractères japonais via le clavier latin.</p>
-
-  <p>Pour choisir une méthode de saisie, effectuez un clic-droit sur une sélection de texte, puis dans le menu <gui>Méthode de saisie</gui> choisissez la méthode que vous souhaitez. Aucune méthode par défaut n'est fournie, donc consultez la documentation des méthodes de saisie pour savoir comment les utiliser.</p>
-
-</section>
+    <p>Pour choisir une méthode de saisie, effectuez un clic-droit sur une sélection de texte, puis dans le menu <gui>Méthode de saisie</gui> choisissez la méthode que vous souhaitez. Aucune méthode par défaut n'est fournie, donc consultez la documentation des méthodes de saisie pour savoir comment les utiliser.</p>
+  </section>
 
 </page>

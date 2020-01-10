@@ -6,8 +6,6 @@
     <link type="seealso" xref="shell-keyboard-shortcuts"/>
 
     <revision pkgversion="3.7.5" version="0.2" date="2013-02-23" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.20" date="2016-08-13" status="candidate"/>
 
     <credit type="author">
       <name>Majkl Hil</name>
@@ -27,12 +25,18 @@
        <email>kittykat3756@gmail.com</email>
     </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
     <desc>Koristite programe i radnu površ bez miša.</desc>
   </info>
 
   <title>Navigacija tastaturom</title>
+
+  <comment>
+    <cite date="2012-03-14" href="mailto:shaunm@gnome.org">Shaun McCance</cite>
+    <p>Do <em>NOT</em> use <code>ui:expanded</code> on this page. I know it's
+    tempting, but the target audience for this page is people who cannot use
+    a mouse, and having to expand sections when you're just figuring out how
+    to drive things with the keyboard is a burden.</p>
+  </comment>
 
   <p>Ova stranica opisuje navigaciju tastaturom za ljude koji ne mogu da koriste miša ili drugi pokazivački uređaj, ili koji žele što više da koriste tastaturu. Za prečice tastature koje su korisne svim korisnicima, pogledajte <link xref="shell-keyboard-shortcuts"/>.</p>
 
@@ -53,6 +57,7 @@
     <td><p>Tasteri strelica</p></td>
     <td>
       <p>Premeštajte izbor između stavki u jednom upravljanju, ili uz skup odnosnih upravljanja. Koristite tastere strelica da postavite u prvi plan dugmad na traci alata, izaberete stavke na spisku ili u pregledu ikonicama, ili da izaberete radio dugme iz grupe.</p>
+      <p>U pregledu stablom, koristite levu i desnu strelicu da skupite i raširite stavke sa sadržajem.</p>
     </td>
   </tr>
   <tr>
@@ -62,7 +67,6 @@
   <tr>
     <td><p><keyseq><key>Šift</key>Tasteri strelica</keyseq></p></td>
     <td><p>U pregledu spiskom ili ikonicama, izaberite sve stavke od trenutno izabrane sve do novofokusirane stavke.</p></td>
-    <td><p>U pregledu stablom, stavke koje sadrže druge stavke se mogu raširiti ili skupiti, da prikažete ili da sakrijete njihov sadržaj: pritisnite <keyseq><key>Pomak</key><key>→</key></keyseq> da raširite, ili <keyseq><key>Pomak</key><key>←</key></keyseq> da skupite.</p></td>
   </tr>
   <tr>
     <td><p><key>Razmak</key></p></td>
@@ -121,7 +125,7 @@
   </tr>
   <tr>
     <td><p><keyseq><key>Super</key><key>M</key></keyseq></p></td>
-    <td><p><link xref="shell-notifications#messagetray">Otvorite fioku poruka.</link> Pritisnite <key>Esc</key> da zatvorite.</p></td>
+    <td><p><link xref="shell-notifications#messagingtray">Otvorite fioku poruka.</link> Pritisnite <key>Esc</key> da zatvorite.</p></td>
   </tr>
 </table>
 
@@ -133,7 +137,7 @@
   </tr>
   <tr>
     <td><p><keyseq><key>Alt</key><key>F5</key></keyseq> ili <keyseq><key>Super</key><key>↓</key></keyseq></p></td>
-    <td><p>Povratite uvećani prozor na njegovu prvobitnu veličinu. Koristite <keyseq><key>Alt</key><key>F10</key></keyseq> da uvećate. <keyseq><key>Alt</key><key>F10</key></keyseq> i uvećava i vraća veličinu.</p></td>
+    <td><p>Povratite uvećani prozor na njegovu prvobitnu veličinu. Koristite <keyseq><key>Alt</key> <key>F10</key></keyseq> da uvećate. <keyseq><key>Alt</key><key>F10</key></keyseq> i uvećava i vraća veličinu.</p></td>
   </tr>
   <tr>
     <td><p><keyseq><key>Alt</key><key>F7</key></keyseq></p></td>
@@ -144,8 +148,6 @@
     <td><p>Promenite veličinu tekućeg prozora. Pritisnite <keyseq><key>Alt</key><key>F8</key></keyseq>, zatim koristite strelice da promenite veličinu prozora. Pritisnite <key>Unesi</key> da završite sa promenom veličine prozora, ili <key>Izađi</key> da ga vratite na njegovu prvobitnu veličinu.</p></td>
   </tr>
   <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-updown"/>
-  <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-left"/>
-  <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-right"/>
   <tr>
     <td><p><keyseq><key>Alt</key><key>F10</key></keyseq> ili <keyseq><key>Super</key><key>↑</key></keyseq></p>
     </td>

@@ -17,9 +17,8 @@
     </credit>
 
     <revision pkgversion="3.4.3" date="2012-06-15" status="review"/>
-    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
 
-    <desc>Se servir de l'<gui>Analyseur d'utilisation des disques</gui> ou du <gui>Moniteur système</gui> pour vérifier l'espace et la capacité.</desc>
+    <desc>Se servir de l'<gui>analyseur d'utilisation des disques</gui> ou du <gui>moniteur système</gui> pour vérifier l'espace et la capacité.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -37,13 +36,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Julien Hardelin</mal:name>
       <mal:email>jhardlin@orange.fr</mal:email>
-      <mal:years>2011, 2013</mal:years>
+      <mal:years>2011</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -69,12 +68,6 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Alexandre Franke</mal:name>
-      <mal:email>alexandre.franke@gmail.com</mal:email>
-      <mal:years>2015</mal:years>
-    </mal:credit>
   </info>
 
 <title>Vérification de l'espace disque libre</title>
@@ -86,15 +79,15 @@
 
   <p>Pour vérifier l'espace libre et la capacité du disque en utilisant l'<app>analyseur d'utilisation des disques</app> :</p>
 
-  <list>
-    <item>
-      <p>Ouvrez <app>Analyseur d'utilisation des disques</app> dans la vue d'ensemble des <gui>Activités</gui>. La fenêtre affiche une liste des emplacements des fichiers avec l'utilisation et la capacité de chacun d'eux.</p>
-    </item>
-    <item>
-      <p>Cliquez sur un des éléments de la liste pour afficher les informations détaillées sur son utilisation. Cliquez sur le bouton menu puis sur <gui>Analyser le dossier…</gui> ou sur <gui>Analyser le dossier distant…</gui> pour analyser des emplacements différents.</p>
-    </item>
-  </list>
-  <p>Les informations affichées sont <gui>Dossier</gui>, <gui>Taille</gui>, <gui>Contenu</gui> et <gui>Modifié le</gui> pour la dernière fois. Pour plus de détails, consultez <link href="help:baobab"><app>Analyseur d'utilisation des disques</app></link>.</p>
+<list>
+ <item>
+  <p>Ouvrez l'application <app>Disques</app> en utilisant la vue d'ensemble des <gui>Activités</gui>. La fenêtre affiche la <gui>capacité totale du système de fichiers</gui> et l'<gui>utilisation totale du système de fichiers</gui>.</p>
+ </item>
+ <item>
+  <p>Dans l'onglet « Analyse » de la barre de menus, choisissez <gui>Analyser le dossier personnel</gui>, <gui>Analyser le système de fichiers</gui>, <gui>Analyser un dossier</gui> ou <gui>Analyser un dossier distant</gui>.</p>
+ </item>
+</list>
+  <p>Les informations affichées sont <gui>Dossier</gui>, <gui>Utilisation</gui>, <gui>Taille</gui> et <gui>Sommaire</gui>. Pour plus de détails, consultez <link href="help:baobab"><app>Analyseur d'utilisation des disques</app></link>.</p>
 
 </section>
 
@@ -109,9 +102,7 @@
   <p>ouvrez l'application <app>Moniteur système</app> en utilisant la vue d'ensemble des <gui>Activités</gui>,</p>
  </item>
  <item>
-  <p>Select the <gui>File Systems</gui> tab to view the system’s partitions and
-  disk space usage.  The information is displayed according to <gui>Total</gui>,
-  <gui>Free</gui>, <gui>Available</gui> and <gui>Used</gui>.</p>
+  <p>cliquez sur l'onglet <gui>Systèmes de fichiers</gui> pour afficher les partitions du système et l'utilisation de l'espace disque. Les informations affichées concernent l'espace <gui>Total</gui>, <gui>Libre</gui>, <gui>Disponible</gui> et <gui>Utilisé</gui>.</p>
  </item>
 </steps>
 </section>
@@ -124,11 +115,10 @@
 
  <list>
   <item>
-   <p>Delete files that aren’t important or that you won’t use anymore.</p>
+   <p>effacer les fichiers qui ne sont pas importants ou que vous n'utiliserez plus,</p>
   </item>
   <item>
-   <p>Make <link xref="backup-why">backups</link> of the important files that
-   you won’t need for a while and delete them from the hard drive.</p>
+   <p>faire une <link xref="backup-why">sauvegarde</link> des fichiers importants que vous ne prévoyez pas d'utiliser avant un bon moment et les effacer du disque dur.</p>
   </item>
  </list>
 </section>

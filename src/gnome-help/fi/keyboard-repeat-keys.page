@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="keyboard-repeat-keys" xml:lang="fi">
-
   <info>
     <link type="guide" xref="a11y#mobility" group="keyboard"/>
     <link type="guide" xref="keyboard"/>
 
     <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
-    <revision pkgversion="3.9.92" date="2013-10-11" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2013-10-11" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -25,50 +22,30 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Shobha Tyagi</name>
-      <email>tyagishobha@gmail.com</email>
-    </credit>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
     <desc>Kytke kirjaimien toistaminen pidettäessä näppäin pohjassa pois päältä tai säädä toistonäppäimien viivettä ja nopeutta.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Timo Jyrinki</mal:name>
       <mal:email>timo.jyrinki@iki.fi</mal:email>
       <mal:years>2012.</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Jiri Grönroos</mal:name>
-      <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
-      <mal:years>2012-2018.</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Manage repeated key presses</title>
+  <title>Kytke toistuva näppäinpainallus pois päältä</title>
 
-  <p>By default, when you hold down a key on your keyboard, the letter
-  or symbol will be repeated until you release the key. If you have
-  difficulty picking your finger back up quickly enough, you can
-  disable this feature, or change how long it takes before key presses
-  start repeating, or how quickly key presses repeat.</p>
+  <p>Kun pidät näppäimistön näppäintä pohjassa, normaalisti kirjainta tai symbolia tulee lisää niin kauan kunnes vapautat näppäimen. Jos sinulle on vaikeaa nostaa näppäin nopeasti pois näppäimeltä sen painamisen jälkeen, voit poistaa tämän ominaisuuden käytöstä tai muuttaa toistumisen aloittavaa viivettä.</p>
 
   <steps>
     <item>
-      <p>Avaa <gui xref="shell-introduction#activities">Toiminnot</gui>-yleisnäkymä ja aloita kirjoittamaan <gui>Esteettömyys</gui>.</p>
+     <p>Napsauta nimeäsi yläpalkista ja valitse <gui>Järjestelmän asetukset</gui></p>
     </item>
     <item>
-      <p>Napsauta <gui>Esteettömyys</gui> avataksesi paneelin.</p>
+     <p>Open <gui>Keyboard</gui> and select the <gui>Typing</gui> tab.</p>
     </item>
     <item>
-     <p>Press <gui>Repeat Keys</gui> in the <gui>Typing</gui> section.</p>
-    </item>
-    <item>
-      <p>Switch <gui>Repeat Keys</gui> to <gui>OFF</gui>.</p>
-      <p>Vaihtoehtoisesti voit säätää aikaa, joka kuluu näppäimen painamisesta painalluksen toiston aloittamiseen, <gui>Viive</gui>-liukusäätimellä. <gui>Nopeus</gui>-liukusäädin puolestaan säätelee painalluksen toistonopeutta.</p>
+     <p>Poista rasti kohdasta <gui>Painallus toistuu, kun näppäintä pidetään painettuna</gui> niin toistuva näppäinpainallus poistetaan kokonaan käytöstä.</p>
+     <p>Vaihtoehtoisesti voit säätää aikaa, joka kuluu näppäimen painamisesta painalluksen toiston aloittamiseen, <gui>Viive</gui>-liukusäätimellä. <gui>Nopeus</gui>-liukusäädin puolestaan säätelee painalluksen toistonopeutta.</p>
     </item>
   </steps>
-
 </page>

@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="question" version="1.0 if/1.0" id="gnome-classic" xml:lang="nl">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="question" id="gnome-classic" xml:lang="nl">
 
   <info>
-<!--    <link type="guide" xref="shell-overview#desktop" />-->
+    <link type="guide" xref="shell-overview#desktop"/>
 
-    <revision pkgversion="3.10.1" date="2013-10-28" status="review"/>
+    <revision pkgversion="3.8.1" version="0.1" date="2013-04-30" status="review"/>
+
+    <desc>Consider switching to GNOME Classic if you prefer a more traditional desktop experience.</desc>
 
     <credit type="author">
       <name>Gnome-documentatieproject</name>
@@ -16,96 +18,100 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Overweeg over te stappen naar Gnome Klassiek als u liever een traditioneler bureaublad heeft.</desc>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
   </info>
 
-<title>Wat is Gnome Klassiek?</title>
+<title>What is GNOME Classic?</title>
 
-<if:choose>
-  <if:when test="!platform:gnome-classic">
-  <p><em>Gnome Klassiek</em> is een functie voor gebruikers die liever een traditioneel bureaublad hebben. Hoewel <em>Gnome Klassiek</em> gebaseerd is op <em>Gnome 3</em>-technieken, bevat het een aantal wijzigingen aan de gebruikersinterface, zoals de <gui>Toepassingen</gui>- en <gui>Locaties</gui>-menu's in de bovenste balk, en een vensterlijst aan de onderkant van het scherm.</p>
-  </if:when>
-  <if:when test="platform:gnome-classic">
-<p><em>Gnome Klassiek</em> is een functie voor gebruikers die liever een traditioneel bureaublad hebben. Hoewel <em>Gnome Klassiek</em> gebaseerd is op <em>Gnome 3</em>-technieken, bevat het een aantal wijzigingen aan de gebruikersinterface, zoals de <gui xref="shell-introduction#activities">Toepassingen</gui>- en <gui>Locaties</gui>-menu's in de bovenbalk, en een vensterlijst aan de onderkant van het scherm.</p>
-  </if:when>
-</if:choose>
+<p><em>GNOME Classic</em> is a feature for users who prefer a more traditional
+ desktop experience. While <em>GNOME Classic</em> is based on <em>GNOME 3</em>
+ technologies, it provides a number of changes to the user interface, such as
+ the <gui xref="shell-terminology">Applications</gui> and
+ <gui xref="shell-terminology">Places</gui> menus on the top bar, and a window
+ list at the bottom of the screen.</p>
 
-<p>U kunt het menu <gui>Toepassingen</gui> in de bovenbalk gebruiken om toepassingen te starten. Het <gui xref="shell-introduction#activities">Activiteiten</gui> -overzicht is beschikbaar via het onderdeel <gui>Activiteitenoverzicht</gui> uit het menu.</p>
+<p>You can use the <gui xref="shell-terminology">Applications</gui> menu on the
+ top bar to launch applications. The <em xref="shell-terminology">activities
+ overview</em> is available by selecting the <gui>Activities Overview</gui>
+ item from the menu.</p>
 
-<p>Om toegang te krijgen tot het <em><gui>Activiteiten</gui> overzicht</em> kunt u ook drukken op de <key xref="keyboard-key-super">Super</key>-toets.</p>
+<p>To access the <em xref="shell-terminology">activities overview</em>, you
+ can also press the <key xref="keyboard-key-super">Super</key> key.</p>
 
 <section id="gnome-classic-window-list">
-<title>Vensterlijst</title>
+<title>Window list</title>
 
-<p>De vensterlijst onderaan het scherm geeft toegang tot alle geopende vensters en toepassingen en u kunt ze snel minimaliseren en herstellen.</p>
+<p>The window list at the bottom of the screen provides access to all your open
+ windows and applications and lets you quickly minimize and restore them.</p>
 
-<p>Rechts van de vensterlijst toont Gnome een korte identifier voor de huidige werkruimte, zoals <gui>1</gui> voor de eerste (bovenste) werkruimte. Daarnaast toont de identifier ook het totale aantal beschikbare werkruimtes. Om over te schakelen naar een andere werkruimte kunt u klikken op de identifier en uit het menu de werkruimte te kiezen die u wilt gebruiken.</p>
+<p>At the right-hand side of the window list, GNOME displays a short
+ identifier for the current worskpace, such as <gui>1</gui> for the first
+ (top) workspace. In addition, the identifier also displays the total number
+ of available workspaces. To switch to a different workspace, you can click
+ the identifier and select the workspace you want to use from the menu.</p>
 
-<p>Als een toepassing of een systeemcomponent uw aandacht wil, zal er rechts van de vensterlijst een blauw pictogram getoond worden. Door te klikken op het blauwe pictogram krijgt u het <link xref="shell-notifications">berichtenvak</link> waar u toegang krijgt tot al uw notificaties.</p>
+<p>If an application or a system component wants to get your attention, it
+ will display a blue icon at the right-hand side of the window list. Clicking
+ the blue icon shows the <link xref="shell-notifications">message tray</link>,
+ which lets you access all your notifications.</p>
 
 </section>
 
 <section id="gnome-classic-switch">
-<title>Van en naar Gnome Klassiek overschakelen</title>
+<title>Switch to and from GNOME Classic</title>
 
 <note if:test="!platform:gnome-classic" style="important">
-<p>Gnome Klassiek is alleen beschikbaar op systemen waar bepaalde Gnome Shell-uitbreidingen zijn geïnstalleerd. Sommige GNU/Linux-distributies hebben deze uitbreidingen wellicht niet beschikbaar of niet standaard geïnstalleerd.</p>
+<p>GNOME Classic is only available on systems with certain GNOME Shell extensions
+ installed. Some Linux distributions may not have these extensions available or
+ installed by default.</p>
 </note>
 
   <steps>
-    <title>Om van <em>Gnome</em> naar <em>Gnome Klassiek</em> over te schakelen:</title>
+    <title>To switch from <em>GNOME</em> to <em>GNOME Classic</em>:</title>
     <item>
-      <p>Sla al uw geopende werk op, en meld dan af. Klik op het systeemmenu aan de rechterkant van de bovenbalk, klik op uw naam en kies dan de juiste optie.</p>
+      <p>Save any open work, and then log out. Select your name in the upper
+      right-hand corner and then select <gui>Log Out</gui>.</p>
     </item>
     <item>
-      <p>Een bevestigingsbericht zal verschijnen. Selecteer <gui>Afmelden</gui> om te bevestigen.</p>
+      <p>A confirmation message will appear. Select <gui>Log Out</gui> to
+      confirm. The login screen appears.</p>
     </item>
     <item>
-      <p>Kies in het aanmeldscherm uw naam uit de lijst.</p>
+      <p>At the login screen, select your name from the list.</p>
     </item>
     <item>
-      <p>Vul uw wachtwoord in, in het wachtwoord-invoerveld. </p>
+      <p>Enter your password in the password entry box.</p>
     </item>
     <item>
-      <p>Klik op het opties-pictogram, dat aan de linkerkant van de <gui>Aanmelden</gui>-knop staat, en selecteer <gui>Gnome Klassiek</gui>.</p>
+      <p>Click <gui>Session</gui> below the password entry box and choose
+      <gui>GNOME Classic</gui>.</p>
     </item>
     <item>
-      <p>Klik op de <gui>Aanmelden</gui>-knop.</p>
+      <p>Click <gui>Sign In</gui>.</p>
     </item>
   </steps>
 
   <steps>
-    <title>Om van <em>Gnome Klassiek</em> naar <em>Gnome</em> over te schakelen:</title>
+    <title>To switch from <em>GNOME Classic</em> to <em>GNOME</em>:</title>
     <item>
-      <p>Sla al uw geopende werk op, en meld dan af. Klik op het systeemmenu aan de rechterkant van de bovenbalk, klik op uw naam en kies dan de juiste optie.</p>
+      <p>Save any open work, and then log out. Select your name in the upper
+      right-hand corner and then select <gui>Log Out</gui>.</p>
     </item>
     <item>
-      <p>Een bevestigingsbericht zal verschijnen. Selecteer <gui>Afmelden</gui> om te bevestigen.</p>
+      <p>A confirmation message will appear. Select <gui>Log Out</gui> to
+      confirm. The login screen appears.</p>
     </item>
     <item>
-      <p>Kies in het aanmeldscherm uw naam uit de lijst.</p>
+      <p>At the login screen, select your name from the list.</p>
     </item>
     <item>
-      <p>Vul uw wachtwoord in, in het wachtwoord-invoerveld. </p>
+      <p>Enter your password in the password entry box.</p>
     </item>
     <item>
-      <p>Klik op het opties-pictogram, dat aan de linkerkant van de <gui>Aanmelden</gui>-knop staat, en selecteer <gui>Gnome</gui>.</p>
+      <p>Click <gui>Session</gui> below the password entry box and choose
+      <gui>GNOME</gui>.</p>
     </item>
     <item>
-      <p>Klik op de <gui>Aanmelden</gui>-knop.</p>
+      <p>Click <gui>Sign In</gui>.</p>
     </item>
   </steps>
   

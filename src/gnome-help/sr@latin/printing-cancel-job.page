@@ -4,81 +4,70 @@
   <info>
     <link type="guide" xref="printing#problems"/>
 
-    <revision pkgversion="3.10.2" date="2013-11-03" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+    <desc>Otkažite zakazani posao štampanja i uklonite ga iz reda.</desc>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
 
     <credit type="author">
       <name>Fil Bul</name>
-      <email>philbull@gmail.com</email>
+      <email its:translate="no">philbull@gmail.com</email>
     </credit>
     <credit type="author">
       <name>Džim Kembel</name>
-      <email>jcampbell@gnome.org</email>
+      <email its:translate="no">jwcampbell@gmail.com</email>
     </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
     <credit type="editor">
       <name>Jana Svarova</name>
-      <email>jana.svarova@gmail.com</email>
+      <email its:translate="no">jana.svarova@gmail.com</email>
       <years>2013</years>
     </credit>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Otkažite zakazani posao štampanja i uklonite ga iz reda.</desc>
   </info>
 
-  <title>Otkažite, pauzirajte ili otpustite posao štampanja</title>
+<title>Cancel, pause or release a print job</title>
 
-  <p>Možete da otkažete zakazani posao štampanja i da ga uklonite iz reda u podešavanjima štampača.</p>
+<p>You can cancel a pending print job and remove it from the queue in the
+ printer settings.</p>
 
-  <section id="cancel-print-job">
-    <title>Otkažite posao štampanja</title>
+<section id="cancel-print-job">
 
-  <p>Ako ste slučajno započeli štampanje dokumenta, možete da otkažete štampanje tako da ne morate da trošite mastilo ili papir.</p>
+<title>Otkažite posao štampanja</title>
 
-  <steps>
-    <title>Kako da otkažete posao štampanja:</title>
-    <item>
-      <p>Otvorite pregled <gui xref="shell-introduction#activities">Aktivnosti</gui> i počnite da kucate <gui>Štampači</gui>.</p>
-    </item>
-    <item>
-      <p>Pritisnite na <gui>Štampači</gui> da otvorite panel.</p>
-    </item>
-    <item>
-      <p>Kliknite na dugme <gui>Prikaži poslove</gui> na desnom kraju prozorčeta <gui>Štampači</gui>.</p>
-    </item>
-    <item>
-      <p>Otkažite posao štampanja pritiskom na dugme za zaustavljanje.</p>
-    </item>
-  </steps>
+  <p>If you accidentally started printing a document, you can cancel the
+ print so that you do not need to waste any ink or paper.</p>
 
-  <p>Ako ovo ne otkaže posao štampanja kao što ste očekivali, pokušajte da držite pritisnutim dugme <em>Cancel</em> (Otkaži) na vašem štampaču.</p>
+<steps>
+  <title>How to cancel a print job:</title>
+  <item><p>Kliknite na vaše ime na gornjoj traci i izaberite <gui>Podešavanja</gui>.</p></item>
+  <item><p>Kliknite <gui>Štampači</gui>.</p></item>
+  <item><p>Click the <gui>Show Jobs</gui> button on the right-hand side of the
+  <gui>Printers</gui> dialog.</p></item>
+  <item><p>Cancel the print job by clicking the stop button on the
+  pay-pause-stop symbols.</p></item>
+ </steps>
+
+  <p>If this does not cancel the print job like you expected, try holding down
+ the <gui>Cancel</gui> button on your printer.</p>
 
   <p>Kao poslednji pokušaj, naročito ako imate poveći posao štampanja sa mnogo stranica koje ne želite da otkažete, uklonite papir iz ulazne fioke štampača. Štampač će zaključiti da nema više papira i zaustaviće štampanje. Možete zatim ponovo da pokušate da otkažete posao štampanja, ili da ugasite štampač i da ga upalite ponovo.</p>
 
-  <note style="warning">
-    <p>Budite pažljivi da ne oštetite štampač kada uklanjate papir. Ako budete morali snažno da povučete papir da biste ga uklonili, najbolje će biti da ga ostavite tamo gde jeste.</p>
-  </note>
+ <note style="warning">
+  <p>Budite pažljivi da ne oštetite štampač kada uklanjate papir — ako budete morali snažno da povučete papir da biste ga uklonili, najbolje će biti da ga ostavite tamo gde je.</p>
+ </note>
+</section>
 
-  </section>
+<section id="pause-release-print-job">
+<title>Pause and release a print job</title>
+  <p>If you want to pause or release a print job, you can do so by going to the
+  jobs dialog in the printer settings and click the appropriate button.</p>
 
-  <section id="pause-release-print-job">
-    <title>Otkažite i otpustite posao štampanja</title>
+ <steps>
+  <item><p>Kliknite na vaše ime na gornjoj traci i izaberite <gui>Podešavanja</gui>.</p></item>
+  <item><p>Kliknite <gui>Štampači</gui>.</p></item>
+  <item><p>Click the <gui>Show Jobs</gui> button on the right-hand side of the
+  <gui>Printers</gui> dialog and either pause or release the print job based on
+  your needs.</p></item>
+ </steps>
 
-  <p>Ako želite da pauzirate ili da otpustite posao štampanja, možete da uradite ovo tako što ćete otići na prozorče poslova u podešavanjima štampača i pritisnuti odgovarajuće dugme.</p>
-
-  <steps>
-    <item>
-      <p>Otvorite pregled <gui xref="shell-introduction#activities">Aktivnosti</gui> i počnite da kucate <gui>Štampači</gui>.</p>
-    </item>
-    <item>
-      <p>Pritisnite na <gui>Štampači</gui> da otvorite panel.</p>
-    </item>
-    <item>
-      <p>Pritisnite dugme <gui>Prikaži poslove</gui> na desnoj strani prozorčeta <gui>Štampači</gui> i pauzirajte ili otpustite posao štampanja u zavisnosti od vaših potreba.</p>
-    </item>
-  </steps>
-
-  </section>
-
+</section>
 </page>

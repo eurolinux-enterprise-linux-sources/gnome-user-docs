@@ -2,33 +2,27 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-file-properties-basic" xml:lang="ja">
 
   <info>
-    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="files" group="more"/>
 
-    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+   <desc>基本的なファイル情報の表示、アクセス権の設定、およびデフォルトのアプリケーションの選択を行います。</desc>
 
-    <credit type="author">
-      <name>Tiffany Antopolski</name>
-      <email>tiffany@antopolski.com</email>
-    </credit>
-    <credit type="author">
-      <name>Shaun McCance</name>
-      <email>shaunm@gnome.org</email>
-    </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
+   <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
 
+   <credit type="author">
+     <name>Tiffany Antopolski</name>
+     <email>tiffany@antopolski.com</email>
+   </credit>
+   <credit type="author">
+     <name>Shaun McCance</name>
+     <email>shaunm@gnome.org</email>
+   </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>基本的なファイル情報の表示、アクセス権の設定、およびデフォルトのアプリケーションの選択を行います。</desc>
-
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -50,24 +44,11 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Noriko Mizumoto</mal:name>
-      <mal:email>noriko@fedoraproject.org</mal:email>
-      <mal:years>2013, 2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>坂本 貴史</mal:name>
-      <mal:email>o-takashi@sakamocchi.jp</mal:email>
-      <mal:years>2013, 2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>日本GNOMEユーザー会</mal:name>
       <mal:email>http://www.gnome.gr.jp/</mal:email>
       <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
-
   <title>ファイルプロパティ</title>
 
   <p>ファイルやフォルダーに関する情報を表示するには、アイテムを右クリックして<gui>プロパティ</gui>を選択します。アイテムを選択して <keyseq><key>Alt</key><key>Enter</key></keyseq> を押すことでも、情報を表示できます。</p>
@@ -80,17 +61,13 @@
  <title>基本プロパティ</title>
  <terms>
   <item>
-    <title><gui>Name</gui></title>
+    <title><gui>名前</gui></title>
     <p>この欄を変更することで、ファイル名の変更ができます。プロパティウィンドウ以外でも名前の変更は可能です。<link xref="files-rename"/> を参照してください。</p>
   </item>
   <item>
-    <title><gui>Type</gui></title>
-    <p>This helps you identify the type of the file, such as PDF document,
-    OpenDocument Text, or JPEG image. The file type determines which
-    applications can open the file, among other things. For example, you
-    can’t open a picture with a music player. See <link xref="files-open"/>
-    for more information on this.</p>
-    <p>ファイルの <em>MIME 型</em>が括弧内に表示されます。MIME 型はファイルの種類を示すのにコンピューターで使用される標準的な方法です。</p>
+    <title><gui>種類</gui></title>
+    <p>この情報は、PDF ドキュメント、OpenDocument テキスト、あるいは JPEG 画像など、ファイルの種類を識別するのに役立ちます。ファイルの種類によって、どのアプリケーションがそのファイルを開くのに適しているかが決まります。たとえば、音楽プレイヤーで画像は開けないなど。<link xref="files-open"/> を参照してください。</p>
+  <p>ファイルの <em>MIME 型</em>が括弧内に表示されます。MIME 型はファイルの種類を示すのにコンピューターで使用される標準的な方法です。</p>
   </item>
 
   <item>
@@ -105,19 +82,20 @@
   </item>
 
   <item>
-    <title>Parent Folder</title>
-    <p>The location of each file on your computer is given by its <em>absolute
-    path</em>. This is a unique “address” of the file on your computer, made up
-    of a list of the folders that you would need to go into to find the file.
-    For example, if Jim had a file called <file>Resume.pdf</file> in his Home
-    folder, its parent folder would be <file>/home/jim</file> and its location
-    would be <file>/home/jim/Resume.pdf</file>.</p>
+    <title>場所</title>
+    <p>各ファイルがコンピューターのどこに配置されているかを、<em>絶対パス</em>で示します。これは、お使いのコンピューターにおける、ファイルの一意な「アドレス」となるものであり、そのファイルを見つけるのに通過する必要のある一連のフォルダーで構成されています。たとえば、Jim が <file>Resume.pdf</file> という名前のファイルを、彼のホームフォルダーに置いているとすれば、そのファイルの場所は、<file>/home/jim/Resume.pdf</file> となります。</p>
+  </item>
+
+  <item>
+    <title>ボリューム</title>
+    <p>該当のファイルが保存されているファイルシステムやデバイスを示します。この情報は、そのファイルの物理的な保存場所を示しており、たとえば、ファイルが、お使いのコンピューターのハードディスクにあるのか、CD にあるのか、あるいは、ネットワーク上の共有ディスクやファイルサーバーにあるのかがわかります。</p>
   </item>
 
   <item>
     <title>空き容量</title>
     <p>これはフォルダーだけに表示されます。そのフォルダーのあるディスクにおいて利用可能なディスク容量を示しています。この情報は、ハードディスクがいっぱいになっていないか確認する場合に便利です。</p>
   </item>
+
 
   <item>
     <title>アクセス日時</title>

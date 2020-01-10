@@ -1,81 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="contacts-setup" xml:lang="el">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="contacts-setup" xml:lang="el">
   <info>
     <link type="guide" xref="contacts" group="#first"/>
 
     <revision pkgversion="3.5.5" date="2012-08-13" status="draft"/>
-    <revision pkgversion="3.12" date="2014-02-26" status="final"/>
-    <revision pkgversion="3.13.91" date="2014-09-05" status="final"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
-    <revision pkgversion="3.22" date="2017-03-19" status="draft"/>
 
     <credit type="author copyright">
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
       <years>2012</years>
     </credit>
-    
-    <credit type="author copyright">
-      <name>Paul Cutler</name>
-      <email>pcutler@gnome.org</email>
-      <years>2017</years>
-    </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Αποθηκεύστε τις επαφές σας σε ένα τοπικό βιβλίο διευθύνσεων ή σε έναν διαδικτυακό λογαριασμό.</desc>
+    <desc>Αποθηκεύστε τις επαφές σας σε ένα τοπικό βιβλίο διευθύνσεων ή σε έναν δικτυακό λογαριασμό.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
-      <mal:email>team@gnome.gr</mal:email>
-      <mal:years>2009-2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
       <mal:email>dmtrs32@gmail.com</mal:email>
-      <mal:years>2012-2015</mal:years>
+      <mal:years>2012, 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:name> Φώτης Τσάμης</mal:name>
       <mal:email>ftsamis@gmail.com</mal:email>
       <mal:years>2009</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:name> Μάριος Ζηντίλης</mal:name>
       <mal:email>m.zindilis@dmajor.org</mal:email>
       <mal:years>2009, 2010</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Θάνος Τρυφωνίδης</mal:name>
-      <mal:email>tomtryf@gnome.org</mal:email>
-      <mal:years>2012-2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Μαρία Μαυρίδου</mal:name>
-      <mal:email>mavridou@gmail.com</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:name> Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
     </mal:credit>
   </info>
 
-  <title>Εκκίνηση της εφαρμογής Επαφές για πρώτη φορά</title>
+  <title>Εκκίνηση των επαφών για πρώτη φορά</title>
 
-  <p>Όταν εκτελείτε τις <app>Επαφές</app> για πρώτη φορά, ανοίγει το παράθυρο <gui>Επιλογή βιβλίου διευθύνσεων</gui>.</p>
+  <comment>
+    <cite date="2012-08-13" href="mailto:mdhillca@gmail.com">Michael Hill</cite>
+    <p>This assumes the reader knows how to…. By the end of this page,
+    the reader will be able to….</p>
+  </comment>
+
+  <p>Όταν εκτελείτε <app>επαφές</app> για πρώτη φορά, το παράθυρο <gui>εγκατάσταση επαφών</gui> ανοίγει.</p>
    
-  <p>If you have <link xref="accounts">online accounts</link> configured, they
-  are listed with <gui>Local Address Book</gui>. Select an item from the
-  list and click <gui style="button">Done</gui>. All new contacts you create
-  will be saved to the address book you choose. You are also able to view and
-  edit contacts in other address books.</p>
+   <p>Εάν έχετε ρυθμίσει <link xref="accounts">δικτυακούς λογαριασμούς</link>, είναι καταχωρημένοι με <gui>τοπικό βιβλίο διευθύνσεων</gui>. Επιλέξτε ένα στοιχείο από τη λίστα και πατήστε <gui style="button">Επιλογή</gui>.</p>
   
-  <p>If you have no online accounts configured, click
-  <gui style="button">Online Accounts</gui> to begin the setup. If you do not
-  wish to set up online accounts at this time, click <gui style="button">Local
-  Address Book</gui>.</p>
+  <note>
+    <p>Πατήστε <gui style="button">ρυθμίσεις δικτυακών λογαριασμών</gui> για να επεξεργαστείτε υπάρχουσες ρυθμίσεις λογαριασμού.</p>
+  </note>
+  
+   <p>Εάν δεν έχετε ρυθμισμένους δικτυακούς λογαριασμούς, πατήστε <gui style="button">δικτυακοί λογαριασμοί</gui> για να ξεκινήσετε την εγκατάσταση. Εάν δεν θέλετε να εγκαταστήσετε δικτυακούς λογαριασμούς αυτή τη φορά, πατήστε <gui style="button">τοπικό βιβλίο διευθύνσεων</gui>.</p>
+
 
 </page>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-lost" xml:lang="ja">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-lost" xml:lang="ja">
 
   <info>
-    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="files" group="more"/>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-28" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="candidate"/>
+
+    <desc>作成した、あるいはダウンロードしたファイルが見つけられない場合は、このヒントを参考にしてください。</desc>
 
     <credit type="author">
       <name>GNOME ドキュメンテーションプロジェクト</name>
@@ -20,20 +20,13 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Follow these tips if you can’t find a file you created or
-    downloaded.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -55,18 +48,6 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Noriko Mizumoto</mal:name>
-      <mal:email>noriko@fedoraproject.org</mal:email>
-      <mal:years>2013, 2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>坂本 貴史</mal:name>
-      <mal:email>o-takashi@sakamocchi.jp</mal:email>
-      <mal:years>2013, 2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>日本GNOMEユーザー会</mal:name>
       <mal:email>http://www.gnome.gr.jp/</mal:email>
       <mal:years>2011, 2012</mal:years>
@@ -75,28 +56,21 @@
 
 <title>見失ったファイルを探し出す</title>
 
-<p>If you created or downloaded a file, but now you cannot find it, follow
-these tips.</p>
+<p>ファイルの作成やダウンロードを行ったが、それが見つからない場合は、次のヒントを参考にしてください。</p>
 
 <list>
-  <item><p>If you do not remember where you saved the file, but you have some
-  idea of how you named it, you can <link xref="files-search">search for the
-  file by name</link>.</p></item>
+  <item><p>どこにファイルを保存したか思い出せないが、どういう名前をつけたかがある程度思い出せれば、名前でファイルを検索できます。検索方法については、<link xref="files-search"/> を参照してください。</p></item>
 
-  <item><p>If you just downloaded the file, your web browser might
-  have automatically saved it to a common folder. Check the
-  <file>Desktop</file> and <file>Downloads</file> folders in your home
-  folder.</p></item>
+  <item><p>ファイルをダウンロードしただけであれば、ウェブブラウザーが自動的に共通フォルダーに保存した可能性もあります。ホームフォルダー配下の "デスクトップ" フォルダーや "ダウンロード" フォルダーの中を確認してください。</p></item>
 
   <item><p>誤ってファイルを削除してしまった可能性があります。ファイルを削除すると、そのファイルはゴミ箱へ移動します。手動でゴミ箱を空にするまでは、ファイルはゴミ箱に残っています。削除したファイルを元に戻す方法については、<link xref="files-recover"/> を参照してください。</p></item>
 
   <item><p>You might have renamed the file in a way that made the file hidden.
-  Files that start with a <file>.</file> or end with a <file>~</file> are
-  hidden in the file manager. Click the
-  <!-- FIXME: Get a tooltip added for "View options" -->
-  view options button in the <app>Files</app> toolbar and enable <gui>Show
-  Hidden Files</gui> to display them. See <link xref="files-hidden"/> to learn
-  more.</p></item>
+  Files that start with a <file>.</file> or end with a <file>~</file> are hidden
+  in the file manager. Click the
+  <media type="image" src="figures/go-down.png">down</media> button in the file
+  manager toolbar and pick <gui>Show Hidden Files</gui> to display them. See
+  <link xref="files-hidden"/> to learn more.</p></item>
 </list>
 
 </page>

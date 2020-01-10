@@ -1,85 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="sharing-media" xml:lang="cs">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="sharing-media" xml:lang="cs">
   <info>
     <link type="guide" xref="sharing"/>
-    <link type="guide" xref="prefs-sharing"/>
+    <link type="guide" xref="settings-sharing"/>
 
-    <revision pkgversion="3.10" version="0.2" date="2013-11-02" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.14" date="2014-10-13" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+    <revision pkgversion="3.8.2" version="0.1" date="2013-05-11" status="draft"/>
 
     <credit type="author">
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
 
+    <desc>Share media on your local network using Rygel.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Jak sdílet multimédia v místní síti pomocí UPnP.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
       <mal:email>adamatousek@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Marek Černocký</mal:name>
-      <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014, 2015</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Sdílení vaší hudby, fotografií a videí</title>
+  <title>Share your music, photos and videos</title>
 
-  <p>Můžete procházet, vyhledávat a přehrávat multimédia na svém počítači pomocí zařízení podporující <sys>UPnP</sys> nebo <sys>DLNA</sys>, jako jsou chytré telefony, televize nebo herní konzole. Nastavte <gui>Sdílení multimédií</gui>, abyste umožnili těmto zařízením přístup k složkám obsahujícím hudbu, fotografie a videa.</p>
+  <p>You can browse, search and play the media on your computer using a
+ <sys>UPnP</sys> or <sys>DLNA</sys> enabled device such as a phone, TV or game
+ console. Configure <gui>Media Sharing</gui> to allow these devices to access
+ the folders containing your music, photos and videos.</p>
 
   <note style="info package">
-    <p>Aby bylo <app>Sdílení multimédií</app> vidět, musíte mít nainstalovaný balíček <gui>Rygel</gui>.</p>
+    <p>You must have the <app>Rygel</app> package installed for
+     <gui>Media Sharing</gui> to be visible.</p>
 
     <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
       <if:when test="action:install">
-        <p><link action="install:rygel" style="button">Nainstalovat Rygel</link></p>
+        <p><link action="install:rygel" style="button">Install Rygel</link></p>
       </if:when>
     </if:choose>
   </note>
 
   <steps>
     <item>
-      <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Sdílení</gui>.</p>
+      <p>Click your name on the top bar and select <gui>Settings</gui>.</p>
     </item>
     <item>
-      <p>Kliknutím na <gui>Sdílení</gui> otevřete příslušný panel.</p>
+      <p>Open <gui>Sharing</gui>.</p>
     </item>
     <item>
-      <p>Pokud je vypínač <gui>Sdílení</gui> v poloze <gui>○</gui> (vypnuto), přepněte jej na <gui>❙</gui> (zapnuto).</p>
-
-      <note style="info"><p>Text pod popiskem <gui>Název počítače</gui> je možné upravit a <link xref="sharing-displayname">změnit</link> tak název svého počítače, kterým se prezentuje v síti.</p></note>
+      <p>If <gui>Sharing</gui> is <gui>OFF</gui>, switch it to
+      <gui>ON</gui>.</p>
     </item>
     <item>
-      <p>Vyberte <gui>Sdílení médií</gui>.</p>
+      <p>Select <gui>Media Sharing</gui>.</p>
     </item>
     <item>
-      <p>Vypínač <gui>Sdílení médií</gui> přepněte do polohy <gui>❙</gui> (zapnuto).</p>
+      <p>Switch <gui>Share Media On This Network</gui> to <gui>ON</gui>.</p>
     </item>
     <item>
-      <p>Ve výchozím stavu jsou sdíleny složky <file>Hudba</file>, <file>Obrázky</file> a <file>Videa</file>. Pokud některou z nich chcete odebrat, klikněte na <gui>×</gui> vedle názvu složky.</p>
+      <p>Click <gui style="button">+</gui> to open the
+      <gui>Choose a folder</gui> window. Navigate <em>into</em> the desired
+      folder, <file>Music</file> in your <file>Home</file> directory for
+      example, and click <gui style="button">Open</gui>. Repeat for the other
+      folders you wish to share, for example <file>Pictures</file> and 
+      <file>Videos</file>.</p>
     </item>
     <item>
-      <p>Pokud chcete přidat jinou složku, klikněte na <gui style="button">+</gui>, aby se otevřelo okno <gui>Výběr složky</gui>. Přejděte <em>do</em> požadované složky a klikněte na <gui style="button">Otevřít</gui>.</p>
-    </item>
-    <item>
-      <p>Klikněte na <gui style="button">×</gui>. Nyní budete moci pomocí externích zařízení procházet nebo přehrávat multimédia v složkách, které jste vybrali.</p>
+      <p>Click <gui style="button">Close</gui>. You will now be able to browse
+      or play media in the folders you selected using the external device.</p>
     </item>
   </steps>
-
-  <section id="networks">
-  <title>Sítě</title>
-
-  <p>V části <gui>Sítě</gui> jsou uvedeny sítě, ke kterým jste právě připojeni. Použijte vypínač vedle jednotlivých sítí k volbě, kde mohou být vaše multimédia sdílena.</p>
-
-  </section>
 
 </page>

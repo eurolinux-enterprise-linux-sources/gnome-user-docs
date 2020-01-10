@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="mouse-problem-notmoving" xml:lang="cs">
-
-  <info>
+<info>
     <link type="guide" xref="mouse#problems"/>
 
-    <revision pkgversion="3.8" date="2013-03-13" status="candidate"/>
-    <!-- TODO: reorganise page and tidy because it's one ugly wall of text -->
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+    <desc>How to check your mouse if it is not working.</desc>
+
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
 
     <credit type="author">
         <name>Phil Bull</name>
@@ -16,67 +15,150 @@
       <name>Shaun McCance</name>
       <email>shaunm@gnome.org</email>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Jak zjistit, proč vaše myš nefunguje.</desc>
-  
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
       <mal:email>adamatousek@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Marek Černocký</mal:name>
-      <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014, 2015</mal:years>
-    </mal:credit>
   </info>
 
-<title>Ukazatel myši se nepohybuje</title>
+<title>Mouse pointer is not moving</title>
 
 <links type="section"/>
 
 <section id="plugged-in">
- <title>Zkontrolujte, že je myš připojená</title>
- <p>Pokud máte myš s kabelem, zkontrolujte zda je ve zdířce počítače pořádně zastrčený.</p>
- <p>Pokud se jedná o myš do USB (obdélníkový konektor), zkuste ji připojit do jiné zdířky USB. Pokud je to myš do PS/2 (malý kulatý konektor se šesti kolíky), zkontrolujte, jestli je připojen do zelené zdířky a ne do fialové. Pokud jej přepojíte, může být potřeba restartovat počítač.</p>
+ <title>Check that the mouse is plugged in</title>
+ <p>
+ If you have a mouse with a cable, check that it is firmly plugged in to
+ your computer.
+ </p>
+ <p>
+ If it is a USB mouse (with a rectangular connector), try plugging it in to a
+ different USB port. If it is a PS/2 mouse (with a small, round connector with
+ six pins), make sure that it is plugged in to the green mouse port rather
+ than the purple keyboard port. You may need to restart the computer if it was
+ not plugged in.
+ </p>
+</section>
+
+<section id="connected">
+ <title>Check that the mouse was recognized by your computer</title>
+ <steps>
+  <item><p>Open the <app>Terminal</app> application from the
+   <gui>Activities</gui> overview.</p></item>
+  <item>
+   <p>
+   In the terminal window, type <cmd>xsetpointer -l | grep Pointer</cmd>,
+    exactly as it appears here,
+   and press <key>Enter</key>.
+   </p>
+  </item>
+  <item>
+   <p>A short list of mouse devices will appear. Check that at least one of the
+   items says <sys>[XExtensionPointer]</sys> next to it, and that one of the
+   <sys>[XExtensionPointer]</sys> items has the name of the mouse to the left of
+   it.</p>
+  </item>
+  <item>
+   <p>If there is no entry that has the name of the mouse followed by
+   <sys>[XExtensionPointer]</sys>, then the mouse was not recognized by your
+   computer. If the entry exists, your mouse was recognized by your computer.
+   In this case you should check that the mouse is
+   <link xref="mouse-problem-notmoving#plugged-in">plugged in</link> and in
+   <link xref="mouse-problem-notmoving#broken">working condition</link>.</p>
+  </item>
+ </steps>
+
+ <comment>
+   <cite date="2012-02-19">shaunm</cite>
+   <p>If we decide to bless a device manager, investigate using that instead
+   of <cmd>xsetpointer</cmd> in these steps.</p>
+ </comment>
+
+ <p>
+ If your mouse has a serial (RS-232) connector, you may need to perform some
+ extra steps to get it working. The steps might depend on the make or model of
+ your mouse.
+ </p>
+
+ <p>
+ It can be complicated to fix problems with mouse detection. Ask for support
+ from your distribution or vendor if you think that your mouse has not been
+ detected properly.
+ </p>
+
+ <comment>
+ <cite date="2012-02-19">Phil Bull</cite>
+  <p>Should provide some useful advice rather than just saying "you might need
+  to perform extra steps".</p>
+ </comment>
 </section>
 
 <section id="broken">
- <title>Zkontrolujte, jestli je myš funkční</title>
- <p>Připojte myš k jinému počítače a ověřte, že funguje.</p>
+ <title>Check that the mouse actually works</title>
+ <p>Plug the mouse in to a different computer and see if it works.</p>
 
- <p>Jestliže je myš optická nebo laserová, mělo by ze spodní části myši po zapnutí vycházet světlo. Pokud vaše myš nesvítí, zkontrolujte, jestli je zapnutá. Pokud je a přesto nesvítí, je nejspíše rozbitá.</p>
+ <p>If the mouse is an optical or laser mouse, a light should be shining out
+ of the bottom of the mouse if it is turned on.  If there is no light, check
+ that it is turned on.  If it is and there is still no light, the mouse may be
+ broken.</p>
 </section>
 
 <section id="wireless-mice">
- <title>Kontrola bezdrátové myši</title>
+ <title>Checking wireless mice</title>
 
-  <list>
-    <item>
-      <p>Ujistěte se, že je myš zapnutá. Často bývá na spodní straně vypínač, kterým se dá úplně vypnout, abyste ji mohli přenášet, aniž by se neustále probouzela.</p>
-    </item>
-   <item><p>Pokud používáte myš Bluetooth, ujistěte se, že ji máte správně spárovanou se svým počítačem. Viz <link xref="bluetooth-connect-device"/>.</p></item>
+ <list>
+   <item><p>Make sure the mouse is turned on. There is often a switch on the
+   bottom of the mouse to turn the mouse off completely, so you can move it
+   from place to place without it constantly waking up.</p></item>
+   <item><p>If you are using a Bluetooth mouse, make sure you have actually paired the
+   mouse with your computer. See <link xref="bluetooth-connect-device"/>.</p></item>
   <item>
-   <p>Klikněte tlačítkem a podívejte se, jestli se ukazatel myši dokáže pohybovat. Některé bezdrátové myši se při uspání kvůli úspoře energie neprobudí, dokud nekliknete tlačítkem. Viz <link xref="mouse-wakeup"/>.</p>
+   <p>
+   Click a button and see if the mouse pointer moves now. Some wireless mice go
+   to sleep to save power, so might not respond until you click a button.
+   See <link xref="mouse-wakeup"/>.
+   </p>
   </item>
   <item>
-   <p>Zkontrolujte, jestli jsou baterie v myši nabité.</p>
+   <p>
+   Check that the battery of the mouse is charged.
+   </p>
   </item>
   <item>
-   <p>Ujistěte se, že přijímač je pořádně zastrčený do počítače.</p>
+   <p>
+   Make sure that the receiver (dongle) is firmly plugged in to the computer.
+   </p>
   </item>
   <item>
-   <p>Pokud vaše myš a přijímač umí pracovat na různých rádiových kanálech, ujistěte se, že oba používají ten samý kanál.</p>
+   <p>
+   If your mouse and receiver can operate on different radio channels, make
+   sure that they are both set to the same channel.
+   </p>
   </item>
   <item>
-   <p>Možná budete muset na myši nebo přijímači nebo obojím zmáčknout tlačítko, aby se ustavilo spojení. Podrobněji by to mělo být popsáno v příručce k vaší myši.</p>
+   <p>
+   You may need to press a button on the mouse, receiver or both to establish
+   a connection. The instruction manual of your mouse should have more details
+   if this is the case.
+   </p>
   </item>
  </list>
 
- <p>Většina bezdrátových (RF) myší by měla po připojení k počítači začít fungovat automaticky. Pokud máte myš Bluetooth nebo infračervenou (IR), bude možná potřeba provést některé další kroky, abyste ji zprovoznili. Postup se může lišit podle výrobce a modelu myši.</p>
+ <p>
+ Most RF (radio) wireless mice should work automatically when you plug them
+ into your computer. If you have a Bluetooth or IR (infrared) wireless mouse,
+ you may need to perform some extra steps to get it working. The steps might
+ depend on the make or model of your mouse.
+ </p>
+
+<comment>
+ <cite date="2012-02-19">Phil Bull</cite>
+ <p>Should provide some useful advice rather than just saying "you might need to
+ perform extra steps".</p>
+</comment>
 </section>
 
 </page>

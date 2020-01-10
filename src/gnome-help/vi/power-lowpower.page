@@ -2,10 +2,8 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="power-lowpower" xml:lang="vi">
 
   <info>
-    <link type="guide" xref="power#faq"/>
+    <link type="guide" xref="power#battery"/>
     <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
-    <revision pkgversion="3.20" date="2016-06-15" status="final"/>
 
     <desc>Không nên cho phép xả pin hoàn toàn.</desc>
     <credit type="author">
@@ -15,14 +13,6 @@
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
       <email>kittykat3756@gmail.com</email>
-    </credit>
-    <credit type="author editor">
-      <name>Petr Kovar</name>
-      <email>pknbe@volny.cz</email>
-    </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -34,16 +24,12 @@
     </mal:credit>
   </info>
 
-<title>Why did my computer turn off when the battery got to 10%?</title>
+<title>Tại sao máy tính tắt/ngủ đông khi pin còn 10%?</title>
 
-<p>When the charge level of the battery gets too low, your computer will
-automatically turn off. It does this to make sure that the battery does not
-completely discharge, since this is bad for
-the battery. If the battery just ran out, the computer would not have time to
-shut down properly either.</p>
+<p>Khi pin còn ít, máy tính sẽ tự động <link xref="power-hibernate">ngủ đông</link>. Làm vậy để bảo đảm pin không xả hết hoàn toàn, vì không tốt cho pin. Nếu pin cạn, máy tính cũng sẽ không có đủ thời gian để tắt đúng cách.</p>
 
-<p>Bear in mind that when your computer automatically turns off, your
-applications and documents <em>are not</em> saved. To avoid losing your
-work, save it before the battery gets too low.</p>
+<p>Bạn có thể thay đổi những gì xảy ra khi pin gần hết bằng cách mở <app>Năng lượng</app> từ tổng quan <gui>hoạt động</gui>. Tìm thiết lập <gui>Khi năng lượng còn thấp</gui>. Bạn có thể chọn máy tính ngủ đông hoạt tắt. Nếu bạn chọn tắt, tài liệu và ứng dụng của bạn <em>sẽ không</em> được lưu khi máy tắt.</p>
+
+<p>Một số máy tính gặp vấn đề khi ngủ đông, không thể phục hồi ứng dụng và tài liệu khi bật trở lại. Trong trường hợp này, bạn có thể sẽ mất dữ liệu nếu chưa lưu trước khi ngủ đông. Tuy nhiên bạn có thể <link xref="power-suspendfail">sửa vấn đề ngủ đông</link>.</p>
 
 </page>

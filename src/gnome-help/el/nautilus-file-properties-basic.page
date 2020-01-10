@@ -2,73 +2,54 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-file-properties-basic" xml:lang="el">
 
   <info>
-    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="files" group="more"/>
 
-    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+   <desc>Προβολή βασικών πληροφοριών αρχείου, ορισμός αδειών και επιλογή προεπιλεγμένων εφαρμογών.</desc>
 
-    <credit type="author">
-      <name>Tiffany Antopolski</name>
-      <email>tiffany@antopolski.com</email>
-    </credit>
-    <credit type="author">
-      <name>Shaun McCance</name>
-      <email>shaunm@gnome.org</email>
-    </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
+   <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
 
+   <credit type="author">
+     <name>Tiffany Antopolski</name>
+     <email>tiffany@antopolski.com</email>
+   </credit>
+   <credit type="author">
+     <name>Shaun McCance</name>
+     <email>shaunm@gnome.org</email>
+   </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Δείτε βασικές πληροφορίες ενός αρχείου, ορίστε δικαιώματα και επιλέξτε τις προεπιλεγμένες εφαρμογές.</desc>
-
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
-      <mal:email>team@gnome.gr</mal:email>
-      <mal:years>2009-2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
       <mal:email>dmtrs32@gmail.com</mal:email>
-      <mal:years>2012-2015</mal:years>
+      <mal:years>2012, 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:name> Φώτης Τσάμης</mal:name>
       <mal:email>ftsamis@gmail.com</mal:email>
       <mal:years>2009</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:name> Μάριος Ζηντίλης</mal:name>
       <mal:email>m.zindilis@dmajor.org</mal:email>
       <mal:years>2009, 2010</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Θάνος Τρυφωνίδης</mal:name>
-      <mal:email>tomtryf@gnome.org</mal:email>
-      <mal:years>2012-2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Μαρία Μαυρίδου</mal:name>
-      <mal:email>mavridou@gmail.com</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:name> Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
     </mal:credit>
   </info>
+  <title>Ιδιότητες αφχείου</title>
 
-  <title>Ιδιότητες αρχείου</title>
-
-  <p>Για να προβάλετε πληροφορίες για ένα αρχείο ή φάκελο, κάντε δεξί κλικ σε αυτό και επιλέξτε <gui>Ιδιότητες</gui>. Μπορείτε επίσης να επιλέξετε το αρχείο και να πατήσετε <keyseq><key>Alt</key><key>Enter</key></keyseq>.</p>
+  <p>Για να προβάλετε πληροφορίες για ένα αρχείο ή φάκελο, δεξιοπατήστε τον και επιλέξτε <gui>ιδιότητες</gui>. Μπορείτε επίσης να επιλέξετε το αρχείο και να πατήσετε <keyseq><key>Alt</key><key>εισαγωγή</key></keyseq>.</p>
 
   <p>Το παράθυρο ιδιοτήτων αρχείου σας εμφανίζει πληροφορίες όπως τον τύπο του αρχείου, το μέγεθος του αρχείου και πότε τροποποιήθηκε τελευταία. Εάν χρειάζεστε αυτήν την πληροφορία συχνά, μπορείτε να την εμφανίσετε στο <link xref="nautilus-list">στήλες προβολής λίστας</link> ή <link xref="nautilus-display#icon-captions">τίτλοι εικονιδίου</link>.</p>
 
-  <p>Οι πληροφορίες στην καρτέλα <gui>Βασικά</gui> εξηγούνται παρακάτω. Υπάρχουν επίσης οι καρτέλες <gui><link xref="nautilus-file-properties-permissions">Δικαιώματα</link></gui> και <gui><link xref="files-open#default">Άνοιγμα με</link></gui>. Για συγκεκριμένους τύπους αρχείων, όπως εικόνες και βίντεο, θα υπάρχει μια πρόσθετη καρτέλα που παρέχει πληροφορίες όπως τις διαστάσεις, διάρκεια και κωδικοποιητή-αποκωδικοποιητή.</p>
+  <p>Οι δεδομένες πληροφορίες στην καρτέλα <gui>βασικά</gui> εξηγείται παρακάτω. Υπάρχουν επίσης οι καρτέλες <gui><link xref="nautilus-file-properties-permissions">άδειες</link></gui> και <gui><link xref="files-open#default">άνοιγμα με</link></gui>. Για συγκεκριμένους τύπους αρχείων, όπως εικόνες και βίντεο, θα υπάρχει μια πρόσθετη καρτέλα που παρέχει πληροφορίες όπως τις διαστάσεις, διάρκεια και κωδικοποιητή-αποκωδικοποιητή.</p>
 
 <section id="basic">
  <title>Βασικές ιδιότητες</title>
@@ -79,12 +60,8 @@
   </item>
   <item>
     <title><gui>Τύπος</gui></title>
-    <p>This helps you identify the type of the file, such as PDF document,
-    OpenDocument Text, or JPEG image. The file type determines which
-    applications can open the file, among other things. For example, you
-    can’t open a picture with a music player. See <link xref="files-open"/>
-    for more information on this.</p>
-    <p>Ο <em>τύπος MIME</em> του αρχείου προβάλλεται σε παρενθέσεις· ο τύπος MIME είναι ένας τυπικός τρόπος που οι υπολογιστές χρησιμοποιούν για να αναφερθούν σε αυτόν τον τύπο αρχείου.</p>
+    <p>Αυτό σας βοηθά στην ταυτοποίηση του τύπου του αρχείου, όπως έγγραφο PDF, κείμενο OpenDocument ή εικόνα JPEG. Ο τύπος αρχείου καθορίζει ποιες εφαρμογές μπορούν να ανοίξουν το αρχείο, μεταξύ άλλων πραγμάτων. Για παράδειγμα, δεν μπορείτε να ανοίξετε μια εικόνα με έναν αναπαραγωγό ήχου. Δείτε <link xref="files-open"/> για περισσότερες πληροφορίες σε αυτό.</p>
+  <p>Ο <em>τύπος MIME</em> του αρχείου προβάλλεται σε παρενθέσεις· ο τύπος MIME είναι ένας τυπικός τρόπος που οι υπολογιστές χρησιμοποιούν για να αναφερθούν σε αυτόν τον τύπο αρχείου.</p>
   </item>
 
   <item>
@@ -94,24 +71,25 @@
 
   <item>
     <title>Μέγεθος</title>
-    <p>Αυτό το πεδίο εμφανίζεται εάν κοιτάξετε σε ένα αρχείο (όχι φάκελο). Το μέγεθος του αρχείου σας λέει πόσο χώρο δίσκου καταλαμβάνει. Αυτό είναι επίσης ένας δείκτης πόσο χρόνο θα πάρει να κάνετε λήψη ενός αρχείου ή να το στείλετε με ηλεκτρονική αλληλογγραφία (μεγάλα αρχεία παίρνουν περισσότερο χρόνο για αποστολή/λήψη).</p>
+    <p>Αυτό το πεδίο εμφανίζεται εάν κοιτάξετε σε ένα αρχείο (όχι φάκελο). Το μέγεθος του αρχείου σας λέει πόσο χώρο δίσκου καταλαμβάνει. Αυτό είναι επίσης ένας δείκτης πόσο χρόνο θα πάρει να κατεβάσετε ένα αρχείο ή να το στείλετε με μήνυμα (μεγάλα αρχεία παίρνουν περισσότερο χρόνο για αποστολή/λήψη).</p>
     <p>Τα μεγέθη μπορεί να δοθούν σε ψηφιολέξεις, KB, MB, ή GB· στην περίπτωση των τελευταίων τριών, το μέγεθος σε ψηφιολέξεις θα δοθεί επίσης σε παρενθέσεις. Τεχνικά, 1 KB είναι 1024 ψηφιολέξεις, 1 MB είναι 1024 KB κ.ο.κ.</p>
   </item>
 
   <item>
-    <title>Γονικός φάκελος</title>
-    <p>The location of each file on your computer is given by its <em>absolute
-    path</em>. This is a unique “address” of the file on your computer, made up
-    of a list of the folders that you would need to go into to find the file.
-    For example, if Jim had a file called <file>Resume.pdf</file> in his Home
-    folder, its parent folder would be <file>/home/jim</file> and its location
-    would be <file>/home/jim/Resume.pdf</file>.</p>
+    <title>Τοποθεσία</title>
+    <p>Η θέση κάθε αρχείου στον υπολογιστή σας δίνεται ως <em>απόλυτη διαδρομή</em>. Αυτό είναι μια μοναδική "διεύθυνση" του αρχείου στον υπολογιστή σας, αποτελούμενη από μια λίστα φακέλων που θα μπορούσατε να χρειαστείτε για να μεταβείτε στην εύρεση του αρχείου. Για παράδειγμα, εάν ο Jim είχε ένα αρχείο που λέγεται <file>Resume.pdf</file> στον προσωπικό του φάκελο, η θέση του θα ήταν <file>/home/jim/Resume.pdf</file>.</p>
+  </item>
+
+  <item>
+    <title>Xωρητικότητα</title>
+    <p>Το σύστημα αρχείων ή η συσκευή στην οποία αποθηκεύεται το αρχείο. Αυτό σας εμφανίζει πού αποθηκεύεται το αρχείο, για παράδειγμα εάν είναι στον σκληρό δίσκο ή σε ένα CD, ή σε ένα <link xref="nautilus-connect"> κοινόχρηστο δίκτυο ή εξυπηρετητή αρχείων</link>. Οι σκληροί δίσκοι μπορούν να διαιρεθούν σε πολλές <link xref="disk-partitions">κατατμήσεις δίσκου</link>· η κατάτμηση θα εμφανιστεί κάτω από τον <gui>χωρητικότητα</gui> επίσης.</p>
   </item>
 
   <item>
     <title>Ελεύθερος χώρος</title>
-    <p>Αυτό το πεδίο εμφανίζεται μόνο για φακέλους. Δίνει το ποσό του χώρου του δίσκου που είναι διαθέσιμο στον δίσκο που βρίσκεται ο φάκελος. Αυτό είναι χρήσιμο για να ελεγχθεί εάν ο σκληρός δίσκος είναι πλήρης.</p>
+    <p>Αυτή είναι η μόνη εμφάνιση για φακέλους. Δίνει το ποσό του χώρου του δίσκου που είναι διαθέσιμο στον δίσκο που βρίσκεται ο φάκελος. Αυτό είναι χρήσιμο για να ελεγχθεί εάν ο σκληρός δίσκος είναι πλήρης.</p>
   </item>
+
 
   <item>
     <title>Προσπελάστηκε</title>

@@ -7,7 +7,6 @@
     <desc>Einfacher Klick, um Dateien zu öffnen, ausführbare Textdateien ausführen oder anzeigen, Einstellungen für den Papierkorb.</desc>
 
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -25,16 +24,18 @@
       <name>Sindhu S</name>
       <email>sindhus@live.in</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hendrik Knackstedt</mal:name>
-      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
-      <mal:years>2011.</mal:years>
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -44,21 +45,9 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Christian Kirbach</mal:name>
-      <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Mario Blättermann</mal:name>
-      <mal:email>mario.blaettermann@gmail.com</mal:email>
-      <mal:years>2011-2013, 2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Benjamin Steinwender</mal:name>
-      <mal:email>b@stbe.at</mal:email>
-      <mal:years>2014.</mal:years>
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.to</mal:years>
     </mal:credit>
   </info>
 
@@ -78,7 +67,12 @@
 </section>
 <section id="executable">
 <title>Ausführbare Textdateien</title>
- <p>Eine ausführbare Textdatei ist eine Datei, die ein Programm enthält, das ausgeführt werden kann. Die <link xref="nautilus-file-properties-permissions">Zugriffsrechte</link> der Datei müssen auch erlauben, dass die Datei als Programm ausgeführt wird. Die häufigsten Arten sind <src>Shell-</src>, <src>Python-</src> und <src>Perl-Skripte</src>; sie haben die Endungen <file>.sh</file>, <file>.py</file> beziehungsweise <file>.pl</file>.</p>
+ <p>An executable text file is a file that contains a program that you can run
+ (execute). The <link xref="nautilus-file-properties-permissions">file
+ permissions</link> must also allow for the file to run as a program. The most
+ common are <sys>Shell</sys>, <sys>Python</sys> and <sys>Perl</sys> scripts.
+ These have extensions <file>.sh</file>, <file>.py</file> and <file>.pl</file>,
+ respectively.</p>
  
  <p>Wenn Sie eine ausführbare Textdatei öffnen, können Sie aus Folgendem wählen:</p>
  
@@ -96,7 +90,7 @@
 
  <p>Wenn <gui>Jedes Mal nachfragen</gui> ausgewählt ist, erscheint ein Dialog, in dem gefragt wird, ob Sie die ausgewählte Textdatei ausführen oder anzeigen wollen.</p>
 
- <p>Ausführbare Textdateien werden auch <em>Skripte</em> genannt. Alle Skripte im Ordner <file>~/.local/share/nautilus/scripts</file> erscheinen im Kontextmenü einer Datei im Untermenü <gui style="menuitem">Skripte</gui>. Wenn ein Skript aus einem lokalen Ordner ausgeführt wird, werden alle ausgewählten Dateien dem Skript als Parameter übergeben. So wenden Sie ein Skript auf eine Datei an:</p>
+ <p>Ausführbare Textdateien werden auch Skripte genannt. Alle Skripte im Ordner <file>~/.local/share/nautilus/scripts</file> erscheinen im Kontextmenü einer Datei im Untermenü <gui style="menuitem">Skripte</gui>. Wenn ein Skript aus einem lokalen Ordner ausgeführt wird, werden alle ausgewählten Dateien dem Skript als Parameter übergeben. So wenden Sie ein skript auf eine Datei an:</p>
 
 <steps>
   <item>
@@ -111,11 +105,11 @@
 </steps>
 
  <note style="important">
-  <p>Einem Skript werden keine Parameter übergeben, wenn es in einem entfernten Ordner ausgeführt wird, zum Beispiel mit Web- oder <sys>ftp</sys>-Inhalten.</p>
+  <p>A script will not be passed any parameters when executed from a remote
+  folder such as a folder showing web or <sys>ftp</sys> content.</p>
  </note>
 
 </section>
-
 <section id="trash">
 <info>
 <link type="seealso" xref="files-delete"/>
@@ -125,8 +119,15 @@
 
 <terms>
  <item>
-  <title><gui>Vor dem Leeren des Papierkorbs nachfragen</gui></title>
+  <title><gui>Vor dem Leeren des Papierkorbs oder dem Löschen von Dateien nachfragen</gui></title>
   <p>Dies ist die Standardeinstellung. Wenn der Papierkorb geleert werden soll, wird eine Nachricht darüber angezeigt und Sie müssen bestätigen, dass Sie den Papierkorb leeren oder Dateien löschen wollen.</p>
+ </item>
+ <item>
+  <title><gui>Einen Löschbefehl bereitstellen, der den Papierkorb umgeht</gui></title>
+  <p>Wenn diese Einstellung gewählt ist, wird der Menüeintrag <gui>Löschen</gui> zum Menü hinzugefügt, das auftaucht, wenn Sie mit der rechten Maustaste auf ein Objekt in der Anwendung <app>Dateien</app> klicken.</p>
+<note style="warning">
+<p>Das Löschen eines Objekts mit dem <gui>Löschen</gui>-Menüeintrag umgeht den Papierkorb. Das Objekt wird aus dem System vollständig entfernt. Es gibt keine Möglichkeit, das gelöschte Objekt wiederherzustellen.</p>
+</note>
  </item>
 </terms>
 </section>

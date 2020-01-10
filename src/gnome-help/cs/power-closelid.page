@@ -1,90 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="power-closelid" xml:lang="cs">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="power-closelid" xml:lang="cs">
 
   <info>
     <link type="guide" xref="power"/>
     <link type="seealso" xref="power-suspendfail"/>
-    <link type="seealso" xref="power-suspend"/>
-
     <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
-    <revision pkgversion="3.10" date="2013-11-08" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-    <revision pkgversion="3.26" date="2017-09-30" status="candidate"/>
 
+    <desc>Laptops go to sleep when you close the lid, in order to save power.</desc>
     <credit type="author">
-      <name>Dokumentační projekt GNOME</name>
+      <name>GNOME Documentation Project</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
-    <credit type="author editor">
+    <credit type="editor">
       <name>Ekaterina Gerasimova</name>
       <email>kittykat3756@gmail.com</email>
     </credit>
-    <credit type="author editor">
-      <name>Petr Kovář</name>
-      <email>pknbe@volny.cz</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Noteboky se po zavření víka uspávají, aby ušetřily energii.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
       <mal:email>adamatousek@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Marek Černocký</mal:name>
-      <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014, 2015</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Proč se můj počítač vypne, když zavřu víko?</title>
+<title>Why does my computer turn off when I close the lid?</title>
 
-  <p>Když zavřete víko svého notebooku, počítač se <link xref="power-suspend"><em>uspí do paměti</em></link>, aby šetřil energií. To znamená, že počítač není přímo vypnutý – prostě jen spí. Probudit jej můžete otevřením víka. Pokud se neprobudí, zkuste kliknout myší nebo zmáčknout klávesu. Pokud se stále neprobouzí, zmáčkněte tlačítko napájení.</p>
+<p>When you close the lid of your laptop, your computer will <link xref="power-suspend"><em>suspend</em></link> in order to save power. This means
+that the computer is not actually turned off - it has just gone to sleep. You
+can resume it by opening the lid. If it does not resume, try clicking the mouse
+or pressing a key. If that still does not work, press the power button.</p>
 
-  <p>Některé počítač se nedokáží správně uspat, protože jejich hardware není zcela podporován operačním systémem (například jsou linuxové ovladače neúplné). V takovémto případě můžete zjistit, že po uspání počítače zavřením víka jej již nedokážete probudit. Můžete zkusit <link xref="power-suspendfail">problém s uspáváním opravit</link> nebo počítači zakázat pokoušet se uspat při zavření víka.</p>
+<p>Some computers are unable to suspend properly, normally because their
+hardware is not completely supported by the operating system (for example, the
+Linux drivers are incomplete). In this case, you may find that you are unable
+to resume your computer after you have closed the lid. You can try to <link xref="power-suspendfail">fix the problem with suspend</link>, or you can
+prevent the computer from trying to suspend when you close the lid.</p>
 
 <section id="nosuspend">
-  <title>Zabránění počítači v uspání při zavření víka</title>
-
-  <note style="important">
-    <p>Tyto rady jsou platné, jen když používáte <app>systemd</app>. Více informací získáte u autorů své distribuce.</p>
-  </note>
-
-  <note style="important">
-    <p>Abyste mohli změnit tato nastavení, musíte mít v počítači nainstalovánu aplikaci <app>Vyladění</app>.</p>
-    <if:if xmlns:if="http://projectmallard.org/if/1.0/" test="action:install">
-      <p><link style="button" action="install:gnome-tweaks">Nainstalovat aplikaci <app>Vyladění</app></link></p>
-    </if:if>
-  </note>
-
-  <p>Jestliže nechcete, aby se váš počítač uspával při zavření víka, můžete změnit nastavení pro toto chování.</p>
-
-  <note style="warning">
-    <p>Při změně tohoto nastavení buďte obezřetní. Některé notebooky se mohou přehřívat, když zůstanou běžet se zavřeným víkem, hlavně když jsou v uzavřeném prostoru, třeba v batohu.</p>
-  </note>
-
-  <steps>
-    <item>
-      <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Vyladění</gui>.</p>
-    </item>
-    <item>
-      <p>Kliknutím na <gui>Vyladění</gui> otevřete aplikaci.</p>
-    </item>
-    <item>
-      <p>Klikněte na kartu <gui>Napájení</gui>.</p>
-    </item>
-    <item>
-      <p>Přepněte vypínač <gui>Při zavření víka uspat do paměti</gui> na <gui>❙</gui> (zapnuto).</p>
-    </item>
-    <item>
-      <p>Zavřete okno <gui>Vyladění</gui>.</p>
-    </item>
-  </steps>
-
+ <title>Stop the computer from suspending when the lid is closed</title>
+ <p>If you do not want the computer to suspend when you close the lid, you can
+ change the settings for that behavior. To set the computer to blank the
+ screen, rather than suspend, when the lid is closed:</p>
+ <note style="warning">
+   <p>Be very careful if you change this setting. Some laptops can overheat
+   if they are left running with the lid closed, especially if they are in
+   a confined place like a backpack.</p>
+ </note>
+ <steps>
+   <item>
+     <p>Open the <app>Terminal</app> application from the <gui>Activities</gui> overview.</p>
+   </item>
+   <item>
+     <p>To change the setting used when running on battery power, type this command and press <key>Enter</key>:</p>
+     <screen its:translate="no">
+       gsettings set org.gnome.settings-daemon.plugins.power lid-close-battery-action blank
+     </screen>
+   </item>
+   <item>
+     <p>To change the setting used when running on AC power, type this command and press <key>Enter</key>:</p>
+     <screen its:translate="no">
+       gsettings set org.gnome.settings-daemon.plugins.power lid-close-ac-action blank
+     </screen>
+   </item>
+ </steps>
 </section>
 
 </page>

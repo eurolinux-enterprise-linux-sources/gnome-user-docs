@@ -1,31 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-manual" xml:lang="de">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="net-manual" xml:lang="de">
   <info>
     <link type="guide" xref="net-wired"/>
     <link type="guide" xref="net-wireless"/>
 
     <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
-    <revision pkgversion="3.10" date="2013-11-11" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-    <revision pkgversion="3.28" date="2018-03-28" status="review"/>
 
     <credit type="author">
       <name>Phil Bull</name>
       <email>philbull@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
 
-    <desc>Sie müssen die Netzwerkeinstellungen angeben, falls diese nicht automatisch zugeordnet werden.</desc>
+    <desc>Falls die Netzwerkeinstellungen nicht automatisch zugeordnet werden, müssen Sie diese selbst eingeben.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hendrik Knackstedt</mal:name>
-      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
-      <mal:years>2011.</mal:years>
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -35,68 +33,44 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Christian Kirbach</mal:name>
-      <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Mario Blättermann</mal:name>
-      <mal:email>mario.blaettermann@gmail.com</mal:email>
-      <mal:years>2011-2013, 2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Benjamin Steinwender</mal:name>
-      <mal:email>b@stbe.at</mal:email>
-      <mal:years>2014.</mal:years>
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.to</mal:years>
     </mal:credit>
   </info>
 
-  <title>Netzwerkeinstellungen manuell festlegen</title>
+<title>Netzwerkeinstellungen manuell festlegen</title>
 
-  <p>Falls Ihr Netzwerk Ihrem Rechner keine Einstellungen automatisch zuweist, müssen Sie die Einstellungen manuell eingeben. Dieses Thema setzt voraus, dass Sie die korrekten Einstellungen bereits kennen. Falls nicht, fragen Sie Ihren Systemverwalter oder schauen Sie nach den Einstellungen Ihres Routers oder Switches.</p>
+<p>Falls Ihr Netzwerk Ihrem Rechner keine Einstellungen automatisch zuweist, müssen Sie die Einstellungen manuell eingeben. Dieses Thema setzt voraus, dass Sie die korrekten Einstellungen bereits kennen. Falls nicht, fragen Sie Ihren Systemverwalter oder schauen Sie nach den Einstellungen Ihres Routers oder Switches.</p>
 
-  <steps>
-    <title>So richten Sie Ihre Netzwerkeinstellungen manuell ein:</title>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui>
-      overview and start typing <gui>Settings</gui>.</p>
-    </item>
-    <item>
-      <p>Click on <gui>Settings</gui>.</p>
-    </item>
-    <item>
-      <p>In the left pane, select the network connection that you want to set
-      up manually. If you plug in to the network with a cable, click
-      <gui>Network</gui>. Otherwise click <gui>Wi-Fi</gui>.</p>
-      <p>Stellen Sie sicher, dass Ihr Funknetzwerkadapter eingeschaltet oder das Netzwerkkabel eingesteckt ist.</p>
-    </item>
-    <item>      
-      <p>Click the
-      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
-      button.</p>
-      <note>
-        <p>For a <gui>Wi-Fi</gui> connection, the 
-        <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
-        button will be located next to the active network.</p>
-      </note>
-    </item>
-    <item>
-      <p>Klicken Sie auf <gui>IPv4</gui> oder <gui>IPv6</gui> in der linken Seitenleiste und ändern Sie <gui>Adressen</gui> auf <em>Manuell</em>.</p>
-    </item>
-    <item>
-      <p>Geben Sie <gui xref="net-what-is-ip-address">IP-Adresse</gui> und <gui>Gateway</gui> sowie die entsprechende <gui>Netzmaske</gui> ein.</p>
-    </item>
-    <item>
-      <p>Stellen Sie <gui>Automatisch</gui> im Abschnitt <gui>DNS</gui> auf <gui>AUS</gui>. Geben Sie die IP-Adresse des DNS-Servers ein, den Sie verwenden möchten. Geben Sie zusätzliche DNS-Server-Adressen mit Hilfe des Knopfes <key>+</key> ein.</p>
-    </item>
-    <item>
-      <p>Stellen Sie <gui>Automatisch</gui> im Abschnitt <gui>Routen</gui> auf <gui>AUS</gui>. Geben Sie <gui>Adresse</gui>, <gui>Netzmaske</gui>, <gui>Gateway</gui> und <gui>Metrik</gui> für eine Route ein, die Sie verwenden möchten. Geben Sie zusätzliche Routen mit Hilfe des Knopfes <key>+</key> ein.</p>
-    </item>
-    <item>
-      <p>Klicken Sie auf <gui>Anwenden</gui>. Falls Sie nicht mit dem Netzwerk verbunden sind, verwenden Sie das Netzwerksymbol im oberen Panel und stellen Sie eine Verbindung her. Überprüfen Sie die Netzwerkeinstellungen, indem Sie beispielsweise eine Internet-Seite aufrufen oder nach im Netzwerk freigegebenen Dateien suchen.</p>
-    </item>
-  </steps>
+<steps>
+  <title>So richten Sie Ihre Netzwerkeinstellungen manuell ein:</title>
+ <item>
+  <p>Klicken Sie auf das Netzwerksymbol im oberen Panel und wählen Sie <gui>Netzwerkeinstellungen</gui>.</p>
+ </item>
+
+ <item>
+  <p>Wählen Sie die Netzwerkverbindung, die Sie manuell einrichten wollen, und klicken Sie auf <gui>Konfigurieren</gui>. Wenn Sie beispielsweise ein kabelgebundenes Netzwerk verwenden wollen, schauen Sie in <gui>Kabelgebunden</gui>.</p>
+  <p>Stellen Sie sicher, dass Ihr Funknetzwerkadapter eingeschaltet oder das Netzwerkkabel eingesteckt ist. Anderenfalls können Sie <gui>Konfigurieren</gui> nicht anklicken.</p>
+ </item>
+
+ <item>
+  <p>Gehen Sie zum Reiter <gui>IPv4-Einstellungen</gui> und ändern Sie die <gui>Methode</gui> in <gui>Manuell</gui>.</p>
+ </item>
+
+ <item>
+  <p>Klicken Sie auf <gui>Hinzufügen</gui> und geben Sie die <em>IP-Adresse</em>, die <em>Netzmaske</em> und die <em>IP-Adresse des vorgegebenen Gateways</em> in die entsprechenden Spalten der <gui>Adressen</gui>-Liste ein. Drücken Sie die <key>Eingabetaste</key> oder die <key>Tabulatortaste</key> nach der Eingabe jeder der Adressen.</p>
+  <p>Diese drei Adressen müssen IP-Adressen sein. Das heißt, sie müssen aus vier Zahlen bestehen, durch Punkte getrennt, beispielsweise »123.45.6.78«.</p>
+ </item>
+
+ <item>
+  <p>Geben Sie die IP-Adressen des zu verwendenden DNS-Servers in das entsprechende Feld ein, durch Kommata getrennt.</p>
+ </item>
+
+ <item>
+  <p>Klicken Sie auf <gui>Speichern</gui>. Falls Sie nicht mit dem Netzwerk verbunden sind, verwenden Sie das Netzwerksymbol im oberen Panel und stellen Sie eine Verbindung her. Überprüfen Sie die Netzwerkeinstellungen, indem Sie beispielsweise eine Webseite aufrufen oder nach im Netzwerk freigegebenen Dateien suchen.</p>
+ </item>
+
+</steps>
 
 </page>

@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task a11y" id="a11y-right-click" xml:lang="fr">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task a11y" id="a11y-right-click" xml:lang="fr">
   <info>
     <link type="guide" xref="mouse"/>
     <link type="guide" xref="a11y#mobility" group="clicking"/>
 
-    <revision pkgversion="3.8.0" date="2013-03-13" status="candidate"/>
-    <revision pkgversion="3.9.92" date="2013-09-18" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="final"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
 
     <credit type="author copyright">
       <name>Shaun McCance</name>
@@ -25,12 +19,9 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
     <desc>Maintenir appuyé le bouton gauche de la souris pour effectuer un clic droit.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Luc Pionchon</mal:name>
@@ -47,13 +38,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Julien Hardelin</mal:name>
       <mal:email>jhardlin@orange.fr</mal:email>
-      <mal:years>2011, 2013</mal:years>
+      <mal:years>2011</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -79,12 +70,6 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Alexandre Franke</mal:name>
-      <mal:email>alexandre.franke@gmail.com</mal:email>
-      <mal:years>2015</mal:years>
-    </mal:credit>
   </info>
 
   <title>Simulation d'un clic droit de la souris</title>
@@ -93,25 +78,19 @@
 
   <steps>
     <item>
-      <p>Ouvrez la vue d'ensemble des <link xref="shell-introduction#activities">Activités</link> et commencez à saisir <gui>Accès universel</gui>.</p>
+      <p>Click your name on the top bar and select <gui>Settings</gui>.</p>
     </item>
     <item>
-      <p>Cliquez sur l'icône <gui>Accès universel</gui> pour afficher le panneau.</p>
+      <p>Ouvrez <gui>Accès universel</gui> et choisissez l'onglet <gui>Pointage et clic de souris</gui>.</p>
     </item>
     <item>
-      <p>Cliquez sur <gui>Assistant de clic</gui> dans la rubrique <gui>Pointage et clic de souris</gui>.</p>
-    </item>
-    <item>
-      <p>Basculez l'interrupteur <gui>Simulation du clic secondaire</gui> sur <gui>Activé</gui>.</p>
+      <p>Activez la <gui>Simulation du clic secondaire</gui>.</p>
     </item>
   </steps>
 
-  <p>Vous pouvez modifier la durée de la pression sur le bouton gauche de la souris, avant le déclenchement d'un clic droit, en faisant varier le <gui>Délai d'acceptation</gui>.</p>
+  <p>Vous pouvez modifier la durée de la pression sur le bouton gauche de la souris, avant le déclenchement d'un clic droit. Dans l'onglet <gui>Pointage et clic de souris</gui>, modifiez le <gui>Délai d'acceptation</gui> dans <gui>Simulation du clic secondaire</gui>.</p>
 
-  <p>To right-click with simulated secondary click, hold down the left mouse
-  button where you would normally right-click, then release. The pointer fills
-  with a different color as you hold down the left mouse button. Once it will
-  change this color entirely, release the mouse button to right-click.</p>
+  <p>Pour effectuer un clic droit par l'intermédiaire d'un clic secondaire simulé, maintenez l'appui sur le bouton gauche de la souris à l'endroit où vous voulez faire un clic droit, puis relâchez le bouton. Le pointeur se remplit de bleu pendant que maintenez l'appui sur le bouton gauche. Une fois qu'il est entièrement bleu, relâchez le bouton de la souris pour faire le clic droit.</p>
 
   <p>Certains pointeurs spéciaux, tels que les pointeurs de redimensionnement, ne changent pas de couleur. Vous pouvez toujours utiliser la simulation du clic secondaire même si vous n'avez pas de retour visuel.</p>
 

@@ -2,13 +2,12 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-connect" xml:lang="sr">
 
   <info>
-    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="files" group="more"/>
     <link type="guide" xref="sharing"/>
 
-    <revision pkgversion="3.6.0" date="2012-10-06" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+    <revision pkgversion="3.6.0" version="0.2" date="2012-10-06" status="review"/>
+
+    <desc>Прегледајте и уређујте датотеке на другом рачунару преко ФТП-а, безбедне шкољке, Виндоуз дељења, или ВебДАВ-а.</desc>
 
     <credit type="author">
       <name>Шон Мек Кенс</name>
@@ -18,34 +17,24 @@
       <name>Мајкл Хил</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Дејвид Кинг</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Прегледајте и уређујте датотеке на другом рачунару преко ФТП-а, безбедне шкољке, Виндоуз дељења, или ВебДАВ-а.</desc>
-
   </info>
 
 <title>Претражујте датотеке на серверу или мрежном дељењу</title>
 
 <p>Можете да се повежете на сервер или на мрежно дељење да претражујете и прегледате датотеке на том серверу, баш као да су на вашем рачунару. Ово је прикладан начин да преузмете или поставите датотеке на интернет, или да делите датотеке са другима на вашој локалној мрежи.</p>
 
-<p>Да претражујете датотеке на мрежи, отворите програм <app>Датотеке</app> из прегледа <gui>Активности</gui>, затим у бочној површи кликните <gui>Друга места</gui>. Управник датотека ће пронаћи све рачунаре на вашој локалној мрежи који поседују могућност послуживања датотека. Ако желите да се повежете на сервер на интернету, или ако не видите рачунар који тражите, можете ручно да се повежете на сервер тако што ћете уписати његову интернет/мрежну адресу.</p>
+<p>Да претражујете датотеке на мрежи, отворите програм <app>Датотеке</app> из прегледа <gui>Активности</gui>, затим у бочној површи кликните <gui>Разгледај мрежу</gui>. Управник датотека ће пронаћи све рачунаре на вашој локалној мрежи који поседују могућност послуживања датотека. Ако желите да се повежете на сервер на интернету, или ако не видите рачунар који тражите, можете ручно да се повежете на сервер тако што ћете уписати његову интернет/мрежну адресу.</p>
 
 <steps>
   <title>Повежите се на сервер датотека</title>
-  <item><p>У управнику датотека, у бочној површи кликните <gui>Друга места</gui>.</p>
-  </item>
-  <item><p>У <gui>Повежи се са сервером</gui>, унесите адресу сервера, у облику <link xref="#urls">адресе</link>. Појединости о подржаним адресама су <link xref="#types">наведене испод</link>.</p>
+  <item><p>У управнику датотека, на горњој траци кликните <gui>Датотеке</gui> и из изборника програма изаберите <gui>Повежи се на сервер</gui>.</p></item>
+  <item><p>Унесите адресу сервера, у облику <link xref="#urls">адресе</link>. Појединости о подржаним адресама су <link xref="#types">наведене испод</link>.</p>
   <note>
     <p>Ако сте се раније повезивали на сервер, можете да кликнете на њега у списку <gui>Скорашњи сервери</gui>.</p>
   </note>
   </item>
-  <item>
-    <p>Кликните <gui>Повежи се</gui>. Биће приказане датотеке на серверу. Можете да разгледате датотеке баш као што разгледате оне на вашем личном рачунару. Сервер ће такође бити додат у бочну површ тако да ћете касније моћи да му приступите врло брзо.</p>
+  <item><p>Кликните <gui>Повежи се</gui>. Отвориће се нови прозор у коме ће бити приказане датотеке на серверу. Можете да разгледате датотеке баш као што разгледате оне на вашем личном рачунару. Сервер ће такође бити додат у бочну површ тако да ћете касније моћи да му приступите врло брзо</p>
   </item>
 </steps>
 
@@ -56,7 +45,9 @@
   <example>
     <p><sys>shema://nazivservera.primer.com/fascikla</sys></p>
   </example>
-<p><em>shema</em> одређује протокол или врсту сервера. Део адресе <em>primer.com</em> се назива <em>назив домена</em>. Ако је потребно корисничко име, оно се умеће пре назива сервера:</p>
+<p>The <em>scheme</em> specifies the protocol or type of server. The
+  <em>example.com</em> portion of the address is called the <em>domain name</em>.
+  If a username is required, it is inserted before the server name:</p>
   <example>
     <p><sys>shema://korisničkoime@nazivservera.primer.com/fascikla</sys></p>
   </example>
@@ -70,7 +61,9 @@
 <section id="types">
  <title>Врсте сервера</title>
 
-<p>Можете да се повежете на различите врсте сервера. Неки сервери су јавни, и дозвољавају свакоме да се повеже. Други сервери захтевају од вас да се пријавите корисничким именом и лозинком.</p>
+<p>You can connect to different types of servers. Some servers are public,
+   and allow anybody to connect. Other servers require you to log in with a
+   username and password.</p>
 <p>Нећете имати овлашћења да обавите одређене радње над датотекама на серверу. На пример, на јавним ФТП сајтовима, вероватно нећете бити у могућности да обришете датотеке.</p>
 <p>Адреса коју уносите зависи од протокола који сервер користи за извоз својих дељених датотека.</p>
 <terms>
@@ -81,6 +74,10 @@
   <example>
     <p><sys>ssh://korisničkoime@nazivservera.primer.com/fascikla</sys></p>
   </example>
+
+  <comment><cite>shaunm</cite><p>We should have a topics on encryption
+  keys, possibly rolling the seahorse help into gnome-help. Then link
+  from here.</p></comment>
 
   <p>Када користите безбедну шкољку, сви подаци које пошаљете (укључујући и вашу лозинку) су шифровани тако да остали корисници на вашој мрежи не могу да их виде.</p>
 </item>
@@ -94,12 +91,19 @@
 </item>
 <item>
   <title>Јавни ФТП</title>
-  <p>Сајтови који вам омогућавају да преузимате датотеке ће понекад да обезбеде јавни или анонимни ФТП приступ. Ови сервери не захтевају корисничко име и лозинку, и обично вам неће допустити да бришете или постављате датотеке.</p>
+  <p>Sites that allow you to download files will sometimes provide
+  public or anonymous FTP access. These servers do not require a
+  username and password, and will usually not allow you to delete
+  or upload files.</p>
   <p>Типична анонимна адреса протокола за пренос датотека изгледа овако:</p>
   <example>
     <p><sys>ftp://ftp.primer.com/putaǌa/</sys></p>
   </example>
-  <p>Неки анонимни ФТП сајтови захтевају од вас да се пријавите под јавним корисничким именом и лозинком, или под јавним именом користећи адресу ваше е-поште као лозинку. За ове сервере, користите <gui>ФТП (са пријавом)</gui>, и користите пуномоћства која је одредио ФТП сајт.</p>
+  <p>Some anonymous FTP sites require you to log in with a
+  public username and password, or with a public username using
+  your email address as the password. For these servers, use the
+  <gui>FTP (with login)</gui> method, and use the credentials
+  specified by the FTP site.</p>
 </item>
 <item>
   <title>Виндоуз дељење</title>
@@ -112,18 +116,17 @@
 <item>
   <title>ВебДАВ и Безбедни ВебДАВ</title>
   <p>Заснован на ХТТП протоколу који се користи на вебу, ВебДАВ се понекад користи за дељење датотека на локалној мрежи и за чување датотека на интернету. Ако сервер на који се повезујете подржава безбедне везе, треба да изаберете ову опцију. Безбедни ВебДАВ користе јако ССЛ шифровање, тако да остали корисници не могу видети вашу лозинку.</p>
-  <p>ВебДАВ адреса изгледа овако:</p>
+  <p>Типична адреса ВебДАВ-а изгледа овако:</p>
   <example>
-    <p><sys>dav://primer.nazivdomaćina.com/putanja</sys></p>
+    <p><sys>http://primer.nazivdomaćina.com/putaǌa</sys></p>
   </example>
-</item>
-<item>
-  <title>НФС дељење</title>
-  <p>УНИКС рачунари традиционално користе протокол мрежног система датотека за дељење датотека путем локалне мреже. Са овим протоколом, безбедност се заснива на ЈИБ-у корисника који приступа дељењу, тако да нису потребна никаква уверења за потврђивање идентитета приликом повезивања.</p>
-  <p>Типична адреса НФС дељења изгледа овако:</p>
-  <example>
-    <p><sys>nfs://nazivservera/putanja</sys></p>
-  </example>
+  <comment>
+    <cite date="2012-02-19">shaunm</cite>
+    <p>Also used by gnome-user-share, but we're not talking about that
+    in gnome-help for 3.0. Hopefully it will be better integrated in 3.2,
+    and we can discuss it better in the help. If that happens, link from
+    here.</p>
+  </comment>
 </item>
 </terms>
 </section>

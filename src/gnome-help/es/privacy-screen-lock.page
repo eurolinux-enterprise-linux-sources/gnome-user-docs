@@ -5,12 +5,9 @@
     <link type="guide" xref="privacy"/>
     <link type="seealso" xref="session-screenlocks"/>
     <link type="seealso" xref="shell-exit#lock-screen"/>
-
     <revision pkgversion="3.8" date="2013-05-21" status="candidate"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-30" status="final"/>
 
+    <desc>Impedir que otras personas puedan usar su escritorio cuando se aleje de su equipo.</desc>
     <credit type="author">
       <name>Shaun McCance</name>
       <email>shaunm@gnome.org</email>
@@ -24,15 +21,12 @@
       <email>jwcampbell@gmail.com</email>
       <years>2013</years>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Impedir que otras personas puedan usar su escritorio cuando se aleje de su equipo.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2011 - 2018</mal:years>
+      <mal:years>2011 - 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -56,30 +50,17 @@
 
   <title>Bloquear automáticamente su pantalla</title>
   
-  <p>Cuando se aleje de su equipo, debería <link xref="shell-exit#lock-screen">bloquear la pantalla</link> para impedir que otras personas puedan usar su escritorio y acceder a sus archivos. Si alguna vez olvida bloquear su pantalla, puede querer que el equipo la bloquee automáticamente tras cierto periodo de tiempo establecido. Esto le ayudará a asegurar su equipo cuando no lo esté usando.</p>
+  <p>Cuando se aleje de su equipo, debería <link xref="shell-exit#lock-screen">bloquear la pantalla</link> para impedir que otras personas puedan usar su escritorio y acceder a sus archivos. Si alguna vez olvida bloquear su pantalla, puede querer que el equipo la bloquee automáticamente tras cierto periodo de tiempo establecido. Esto le ayudará a securizar su equipo cuando no lo esté usando.</p>
 
   <note><p>Cuando su pantalla está bloqueada, sus aplicaciones y los procesos del sistema seguirán en ejecución, pero necesitará introducir su contraseña para volver a usarlo.</p></note>
   
   <steps>
     <title>Para configurar el tiempo que tarda su pantalla en bloquearse automáticamente:</title>
-    <item>
-      <p>Abra la vista de <gui xref="shell-introduction#activities">Actividades</gui> empiece a escribir <gui>Privacidad</gui>.</p>
-    </item>
-    <item>
-      <p>Pulse en <gui>Privacidad</gui> para abrir el panel.</p>
-    </item>
-    <item>
-      <p>Seleccione <gui>Pantalla de bloqueo</gui>.</p>
-    </item>
-    <item>
-      <p>Asegúrese de que el <gui>Bloqueo automático de la pantalla</gui> está <gui>activado</gui> y seleccione el tiempo en la lista desplegable.</p>
-    </item>
+    <item><p>Pulse en su nombre en la barra superior y seleccione <gui>Configuración</gui>.</p></item>
+    <item><p>Seleccione <guiseq><gui>Privacidad</gui><gui>Bloqueo de pantalla</gui></guiseq>.</p></item>
+    <item><p>Asegúrese de que el <gui>Bloqueo automático de la pantalla</gui> está activado y seleccione el tiempo en la lista desplegable.</p></item>
   </steps>
 
-  <note style="tip">
-    <p>Las aplicaciones pueden mostrar notificaciones que todavía se muestran en la pantalla de bloqueo. Esto es adecuado, por ejemplo, para ver si tiene algún correo sin desbloquear la pantalla. Si le preocupa que otras personas puedan ver esas notificaciones, desactive la opción <gui>Mostrar notificaciones</gui></p>
-  </note>
-
-  <p>Cuando su pantalla esté bloqueada y quiera desbloquearla, pulse <key>Esc</key>, o mueva el ratón de abajo a arriba de la pantalla. Entonces, introduzca su contraseña y pulse <key>Intro</key> o pulse <gui>Desbloquear</gui>. Alternativamente, simplemente empiece a escribir su contraseña y el panel de bloqueo se subirá automáticamente mientras escribe.</p>
+  <p>Cuando su pantalla esté bloqueada y quiera desbloquearla, pulse <key>Esc</key>, o mueva el ratón de abajo a arriba de la pantalla. Entonces, introduzca su contraseña y pulse <key>Intro</key> o pulse <gui>Desbloquear</gui>.</p>
 
 </page>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-browse" xml:lang="id">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-browse" xml:lang="id">
+
 
   <info>
-    <link type="guide" xref="files#common-file-tasks"/>
+    <link type="guide" xref="files" group="#first"/>
     <link type="seealso" xref="files-copy"/>
+    <desc>Kelola dan organisasikan berkas dengan manajer berkas.</desc>
 
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-16" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -25,47 +25,65 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Kelola dan organisasikan berkas dengan pengelola berkas.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Andika Triwidada</mal:name>
       <mal:email>andika@gmail.com</mal:email>
-      <mal:years>2011-2014, 2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Ahmad Haris</mal:name>
-      <mal:email>ahmadharis1982@gmail.com</mal:email>
-      <mal:years>2017.</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
 
 <title>Meramban berkas dan folder</title>
 
-<p>Gunakan <app>File</app> Manajer file untuk mencari dan mengatur file di komputer Anda. Anda juga dapat menggunakannya untuk mengelola file pada perangkat penyimpanan (seperti hard disk eksternal), pada <link xref="nautilus-connect"> file server </link>, dan pada jaringan berbagi.</p>
+<comment>
+	<p>This page is a feature overview. There should be a greater visual
+	separation between features. Small illustrative figures should be used
+	to display these features where appropriate, and video demonstrations of
+	some of the features might be useful too. Explain how you can add things to
+	the sidebar (link to a topic or explain it here).</p>
+</comment>
 
-<p>Untuk memulai pengelola berkas, buka <app>Berkas</app> pada ringkasan <gui xref="shell-introduction#activities">Aktivitas</gui>. Anda juga dapat mencari berkas dan folder-folder melalui ringkasan dengan cara yang serupa dengan <link xref="shell-apps-open">cari aplikasi</link>.</p>
+<p>Use the <app>Files</app> file manager to browse and organize the files on
+your computer. You can also use it to manage files on storage devices (like
+external hard disks), on <link xref="nautilus-connect">file servers</link>, and
+on network shares.</p>
+
+<p>To start the file manager, open <app>Files</app> in the <gui>Activities</gui>
+overview. You can also search for files and folders through the overview in the
+same way you would <link xref="shell-apps-open">search for applications</link>.
+</p>
 
 <section id="files-view-folder-contents">
   <title>Mengeksplorasi isi folder</title>
 
-<p>Dalam file manager, klik ganda folder untuk melihat isinya, dan klik ganda atau <link xref="mouse-middleclick">klik tombol tengah</link> pada berkas apapun untuk membukanya dengan aplikasi yang baku untuk berkas tersebut. Anda juga dapat klik kanan folder untuk membukanya di tab baru atau jendela baru.</p>
+<p>In the file manager, double-click any folder to view its contents,
+and double-click any file to open it with the default application for
+that file. You can also right-click a folder to open it in a new tab
+or new window.</p>
 
-<p>Apabila melihat ke berkas-berkas di dalam folder, Anda dapat dengan cepat <link xref="files-preview">meninjau tiap berkas</link> dengan cara menekan tombol spasi untk memastikan berkas yang tepat sebelum membukanya, menyalinnya atau menghapusnya.</p>
+<p>When looking through the files in a folder, you can quickly <link xref="files-preview">preview each file</link> by pressing the space bar
+to be sure you have the right file before opening it, copying it, or
+deleting it.</p>
 
-<p><em>baris alamat</em> di atas daftar berkas dan folder menampilkan kepada Anda di mana folder yang sedang Anda lihat, termasuk induk folder dari folder yang dimaksud. Klik induk folder di baris alamat untuk pergi ke folder tersebut. Klik kanan pada folder di baris alamat untuk membukanya pada tab baru atau jendela, atau mengakses propertinya.</p>
+<p>The <em>path bar</em> above the list of files and folders shows you which
+folder you're viewing, including the parent folders of the current folder.
+Click a parent folder in the path bar to go to that folder. Right-click any
+folder in the path bar to open it in a new tab or window, copy or move it, or
+access its properties.</p>
 
-<p>Jika Anda ingin secara cepat <link xref="files-search">mencari berkas</link>, di dalam atau di bawah folder yang sedang Anda lihat, mulai ketik namanya. <em>baris pencarian</em> akan tampil di atas jende dan hanya berkas yang cocok dengan pencarian Anda yang akan di tampilkan. Tekan <key>Esc</key> untuk membatalkan pencarian.</p>
+<p>If you want to quickly skip to a file in the folder you're viewing,
+start typing its name. A search box will appear at the top of the window and
+the first file which matches your search will be highlighted. Press the
+down arrow key, or scroll with the mouse, to skip to the next file that matches
+your search.</p>
 
-<p>Anda dapat secara cepat mengakses tempat-tempat yang umum dari <em>menu samping</em>. Jika Anda tidak melihat menu samping, klik <gui>Berkas</gui> pada baris atas dan pilih <gui>Menu samping</gui>/ Anda dapat menambahkan penambat ke folder yang sering Anda gunakan dan mereka akan muncul pada menu samping. Seret folder ke menu samping, dan jatuhkan pada <gui>Tambatan baru</gui>, di mana secara dinamis, atau dengan klik jendela menu lalu pilih <gui style="menuitem">Tambatkan lokasi ini</gui>.</p>
+<p>You can quickly access common places from the <em>sidebar</em>. If you do
+not see the sidebar, click the
+<media type="image" src="figures/go-down.png">down</media> button in the toolbar
+and pick <gui>Show Sidebar</gui>. You can add bookmarks to folders that you use
+often and they will appear in the sidebar. Use the <gui>Bookmarks</gui> menu to
+do this, or simply drag a folder into the sidebar.</p>
 
 </section>
-
 </page>

@@ -2,14 +2,13 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-share" xml:lang="nl">
 
   <info>
-    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="files" group="more"/>
     <link type="guide" xref="sharing"/>
     <link type="seealso" xref="nautilus-connect"/>
+    <desc>Easily transfer files to your email contacts from the file
+    manager.</desc>
 
     <revision pkgversion="3.8.2" version="0.3" date="2013-05-11" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -19,46 +18,44 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Bestanden eenvoudig overbrengen naar uw e-mailcontacten vanuit bestandsbeheer.</desc>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
   </info>
 
-<title>Bestanden delen per e-mail</title>
+<title>Share files by email</title>
 
-<p>U kunt eenvoudig vanuit bestandsbeheer via e-mail bestanden delen met uw contacten.</p>
+<comment>
+  <cite date="2012-02-20">jim</cite>
+  <p>If we get gnome-user-share integrated eventually, we should discuss
+  or link that here.</p>
+</comment>
+<comment>
+  <cite date="2013-05-11" href="mailto:mdhillca@gmail.com">mdhill</cite>
+  <p>All functionality except email removed for 3.8 per Bug 680983.</p>
+</comment>
+
+<p>You can easily share files with your contacts by email directly from the
+file manager.</p>
 
   <note style="important">
-    <p>Zorg ervoor dat, voordat u begint, <app>Evolution</app> of <app>Geary</app> geïnstalleerd is op uw computer en dat uw e-mailaccount is geconfigureerd.</p>
+    <p>Before you begin, make sure <app>Evolution</app> is installed on your
+    computer, and your email account is configured.</p>
   </note>
 
 <steps>
-  <title>Bestanden delen per e-mail:</title>
-    <item>
-      <p>Open <app>Bestanden</app> vanuit het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht.</p>
-    </item>
-  <item><p>Zoek het bestand dat u wilt oversturen.</p></item>
-    <item>
-      <p>Klik met de rechtermuisknop op het bestand en selecteer <gui>Sturen naar…</gui>. Er verschijnt een venster om e-mail op te stellen met het bestand als bijlage.</p>
-    </item>
-  <item><p>Klik op <gui>Aan</gui> om een contact te kiezen, of voer een e-mailadres in waar u het bestand naartoe wilt sturen. Vul het <gui>Onderwerp</gui> in en de tekst van uw bericht en klik op <gui>Versturen</gui>.</p></item>
+  <title>To share a file by email:</title>
+  <item><p>Open the <app>Files</app> application from the <gui>Activities</gui>
+  overview.</p></item>
+  <item><p>Locate the file you want to transfer.</p></item>
+  <item><p>Right-click the file and select <gui>Send To</gui>. The
+  <gui>Compose Message</gui> window will appear with the file attached.</p></item>
+  <item><p>Click <gui>To</gui> to choose a contact, or enter an email address
+  where you want to send the file. Fill in the <gui>Subject</gui> and the body
+  of the message as required and click <gui>Send</gui>.</p></item>
 </steps>
 
 <note style="tip">
-  <p>U kunt meerdere bestanden tegelijk versturen. Selecteer meerdere bestanden door erop te klikken terwijl u de <key>Ctrl</key>-toets vasthoudt en klik dan met rechts op een geselecteerd bestand.</p>
+  <p>You can send multiple files at once. Select multiple files by holding
+  down <key>Ctrl</key>, then right-click any selected file.</p>
 </note>
 
 </page>

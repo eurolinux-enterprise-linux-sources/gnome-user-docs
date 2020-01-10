@@ -1,46 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-firewall-on-off" xml:lang="gl">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="net-firewall-on-off" xml:lang="gl">
 
   <info>
-    <link type="guide" xref="net-security" group="#first"/>
-
+    <link type="guide" xref="net-security"/>
+    <desc>Pode controlar que programas poden acceder á rede. Isto axúdalle a manter o seu computador seguro.</desc>
     <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
-    <revision pkgversion="3.10" date="2013-11-03" status="incomplete"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-
     <credit type="author">
       <name>Paul W. Frields</name>
       <email>stickster@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Pode controlar que programas poden acceder á rede. Isto axúdalle a manter o seu computador seguro.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2018</mal:years>
+      <mal:years>2011, 2012.</mal:years>
     </mal:credit>
   </info>
 
   <title>Activar ou bloquear o acceso á devasa</title>
 
+<comment>
+<cite date="2012-02-19">shaunm</cite>
+<p>Continue to revisit this page until we can provide real instructions.
+As it is, we're stuck in "whatever distros do" territory.</p>
+</comment>
+
   <p>O seu sistema debería estar equipado con un <em>firewall</em> que lle permita bloquear os programas aos que están sendo accedidos por outras persoas en internet ou na rede local. Isto axúdalle a manter o seu computador seguro.</p>
-
   <p>Algúns aplicativos poden usar a súa conexión de rede. Por exemplo, pode compartir ficheiros ou deixarlle a outras persoas ver o seu escritorio de forma remota ao conectarse a unha rede. Dependendo de como estea configurado o seu computador, podería necesitar axustar o firewall para permitir a ditos servizos funcionar como deben.</p>
-
-  <p>Each program that provides network services uses a specific <em>network
-  port</em>. To enable other computers on the network to access a service, you
-  may need to “open” its assigned port on the firewall:</p>
-
+  <p>Cada programa que fornece servizos de rede usa un <em>porto de rede</em> específico. Para permitirlle a outro computador na rede acceder a un servizo, debe «abrir» o seu porto asignado na devasa:</p>
 
   <steps>
     <item>
-      <p>Go to <gui>Activities</gui> in the top left corner of the screen and
-      start your firewall application. You may need to install a firewall
-      manager yourself if you can’t find one (for example, Firestarter or
-      GUFW).</p>
+      <p>Vaia a <gui>Actividades</gui> na esquina superior esquerda da pantalal e inicie o aplicativo da devasa. Debe instalar un xestor de devasa por si mesmo se non atopa un (por exemplo, Firestarter ou GUFW).</p>
     </item>
     <item>
       <p>Abra ou desactive un porto para un servizo de rede, dependendo de se quere que as persoas poidan acceder a el ou non. O porto que debe cambiar <link xref="net-firewall-ports">dependerá do servizo</link>.</p>

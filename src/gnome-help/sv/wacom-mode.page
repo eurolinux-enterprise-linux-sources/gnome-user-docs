@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="wacom-mode" xml:lang="sv">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="wacom-mode" xml:lang="sv">
   <info>
-    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+    <revision pkgversion="3.8.0" version="0.2" date="2013-03-09" status="candidate"/>
 
     <link type="guide" xref="wacom"/>
 
@@ -15,47 +11,36 @@
       <years>2012</years>
     </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Växla plattan mellan plattläge och musläge.</desc>
+    <desc>Switch the tablet between tablet mode and mouse mode.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Sebastian Rasmussen</mal:name>
-      <mal:email>sebras@gmail.com</mal:email>
-      <mal:years>2014, 2015, 2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Anders Jonsson</mal:name>
-      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
-      <mal:years>2016, 2017</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Ställ in Wacom-plattans spårningsläge</title>
+  <title>Set the Wacom tablet's tracking mode</title>
 
-<p><gui>Spårningsläge</gui> avgör hur markören mappas till skärmen.</p>
+<p><gui>Tracking Mode</gui> determines how the pointer is mapped to the screen.</p>
 
 <steps>
-  <item>
-    <p>Öppna översiktsvyn <gui xref="shell-introduction#activities">Aktiviteter</gui> och börja skriv <gui>Wacom-platta</gui>.</p>
+  <item><p>Click your name on the top bar and select
+   <gui>Settings</gui>.</p></item>
+  <item><p>Open <gui>Wacom Tablet</gui>.</p>
+     <note style="tip"><p>If no tablet is detected, you'll be asked to
+      <gui>Please plug in or turn on your Wacom tablet</gui>.</p></note>
   </item>
-  <item>
-    <p>Klicka på <gui>Wacom-ritplatta</gui> för att öppna panelen.</p>
-    <!-- TODO: document how to connet the tablet using Bluetooth/add link -->
-    <note style="tip"><p>Om ingen platta detekteras kommer du att bli ombedd att <gui>Anslut eller aktivera din Wacom-ritplatta</gui>. Klicka på länken <gui>Bluetooth-inställningar</gui> för att ansluta en trådlös platta.</p></note>
-  </item>
-  <item><p>In till <gui>Spårningsläge</gui>, välj <gui>Ritplatta (absolut)</gui> eller <gui>Ritplatta (relativ)</gui>.</p></item>
+  <item><p>Next to <gui>Tracking Mode</gui>, select <gui>Tablet (absolute)</gui>
+   or <gui>Touchpad (relative)</gui>.</p></item>
 </steps>
 
-<note style="info"><p>I <em>absolut</em> läge, kommer varje punkt på plattan att mappas till en punkt på skärmen. Övre vänstra hörnet av skärmen kommer till exempel alltid att motsvara samma punkt på plattan.</p>
- <p>I <em>relativt</em> läge, om du lyfter upp pennan från plattan och sätter ner den på en annan position så kommer markören på skärmen inte att flytta sig. Det är så en mus fungerar.</p>
-  </note>
+<note style="info"><p>In <em>absolute</em> mode, each point on the tablet maps
+ to a point on the screen. The top left corner of the screen, for instance,
+ always corresponds to the same point on the tablet.</p>
+ <p>In <em>relative</em> mode, if you lift the pointer off the tablet and put it
+ down in a different position, the cursor on the screen doesn't move. This is
+ the way a mouse operates, allowing you to cover distances on the screen with
+ less hand movement.</p></note>
 
 </page>

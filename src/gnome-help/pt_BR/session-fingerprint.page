@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="session-fingerprint" xml:lang="pt-BR">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="session-fingerprint" xml:lang="pt-BR">
 
   <info>
     <link type="guide" xref="hardware-auth"/>
 
+    <desc>Você pode iniciar uma sessão no seu sistema usando um escâner de impressão digital que tenha suporte.</desc>
+
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
-    <revision pkgversion="3.10" date="2013-11-03" status="review"/>
-    <revision pkgversion="3.12" date="2014-06-16" status="final"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="final"/>
 
     <credit type="author">
       <name>Projeto de documentação do GNOME</name>
@@ -16,22 +15,9 @@
     <credit type="author">
       <name>Paul W. Frields</name>
       <email>stickster@gmail.com</email>
-      <years>2011</years>
-    </credit>
-    <credit type="author editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-      <years>2013</years>
-    </credit>
-    <credit type="editor">
-      <name>Jim Campbell</name>
-      <email>jcampbell@gnome.org</email>
-      <years>2014</years>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Você pode iniciar uma sessão no seu sistema usando um escâner de impressão digital, que tenha suporte, ao invés de digitar sua senha.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Rodolfo Ribeiro Gomes</mal:name>
@@ -40,79 +26,68 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Enrico Nicoletto</mal:name>
       <mal:email>liverig@gmail.com</mal:email>
       <mal:years>2013.</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>João Santana</mal:name>
-      <mal:email>joaosantana@outlook.com</mal:email>
-      <mal:years>2013.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Fontenelle</mal:name>
-      <mal:email>rafaelff@gnome.org</mal:email>
-      <mal:years>2012-2018.</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Iniciando sessão com uma impressão digital</title>
-
-  <p>Se seu sistema tem suporte a escâner de impressão digital, você pode gravar sua impressão digital e usá-la para se autenticar.</p>
-
-<section id="record">
-  <title>Gravando uma impressão digital</title>
-
-  <p>Antes que você possa iniciar sessão com sua impressão digital, você precisa registrá-la de forma que o sistema possa usá-la para lhe identificar.</p>
-
+  <title>Iniciar sessão com uma impressão digital</title>
+  <p>Se seu sistema tem um escâner de impressão digital, e ele tem suporte pelo sistema, você pode gravar sua impressão digital e usá-la para se autenticar. Você tem que ter privilégios administrativos para realizar estes passos.</p>
+  <p>Primeiro, registre uma impressão digital para que o sistema possa usar para lhe identificar.</p>
   <note style="tip">
     <p>Se seu dedo estiver muito seco, você pode enfrentar dificuldades em registrar sua digital. Se isso acontecer, umedeça levemente seu dedo, seque-o com um pano limpo e sem fiapos, e tente de novo.</p>
   </note>
-
-  <p>Você precisa de <link xref="user-admin-explain">privilégios administrativos</link> para editar contas de usuários além da sua própria.</p>
-
   <steps>
     <item>
-      <p>Abra o panorama de <gui xref="shell-introduction#activities">Atividades</gui> e comece a digitar <gui>Usuários</gui>.</p>
+      <p>Clique no seu nome na barra superior e, então, clique na imagem ao lado do seu nome para abrir a janela <gui>Contas de usuários</gui>.</p>
     </item>
     <item>
-      <p>Clique em <gui>Usuários</gui> para abrir o painel.</p>
+      <p>Desbloqueie sua conta usando o botão <gui>Desbloquear</gui> no canto superior direito da ferramenta <gui>Contas de usuários</gui>.</p>
     </item>
     <item>
-      <p>Pressione <gui>Desabilitado</gui>, próximo a <gui>Início de sessão por impressão digital</gui> para adicionar uma impressão digital à conta selecionada. Se você está adicionando a impressão digital para um usuário diferente, você primeiro precisará <gui>Desbloquear</gui> o painel.</p>
+      <p>Informe sua senha no campo de texto.</p>
     </item>
     <item>
-      <p>Selecione o dedo que você deseja usar para a impressão digital e, então, pressione <gui style="button">Próximo</gui>.</p>
+      <p>Selecione a opção <gui>Desabilitado</gui> ao lado de <gui>Início de sessão por impressão digital</gui>.</p>
     </item>
     <item>
-      <p>Siga as instruções no diálogo e deslize seu dedo em uma <em>velocidade moderada</em> sobre o leitor de impressão digital. Uma vez que o computador tenha um bom registro de sua impressão digital, você verá uma mensagem <gui>Feito!</gui>.</p>
+      <p>Selecione uma opção para a impressão digital que queira registrar. Você pode escolher seu dedo indicador direito, seu indicador esquerdo ou um dedo diferente. Em seguida, selecione <gui>Avançar</gui>.</p>
     </item>
     <item>
-      <p>Selecione <gui>Próximo</gui>. Você verá uma mensagem de confirmação de que sua impressão digital foi salva com sucesso. Selecione <gui>Fechar</gui> para finalizar.</p>
+      <p>Deslize o dedo que você escolheu três vezes em uma <em>velocidade moderada</em> sobre seu leitor de impressão digital. Toda vez que o leitor reconhecer sua digital adequadamente, a imagem correspondente a uma mão se transformará em uma imagem de uma impressão digital com um sinal de visto. Depois da terceira deslizada, você verá a mensagem <gui>Feito!</gui></p>
+    </item>
+    <item>
+      <p>Selecione <gui>Avançar</gui>. Você verá uma mensagem de confirmação de que sua impressão digital foi salva com sucesso. Selecione <gui>Fechar</gui> para finalizar.</p>
     </item>
   </steps>
-
-</section>
-
-<section id="verify">
-  <title>Verificando se sua impressão digital funciona</title>
-
   <p>Agora confira se seu início de sessão por impressão digital funciona. Se você registra uma impressão digital, você ainda tem a opção de se identificar com sua senha.</p>
-
   <steps>
     <item>
-      <p>Salve qualquer trabalho aberto e, então, <link xref="shell-exit#logout">encerre a sessão</link>.</p>
+      <p>Salve qualquer trabalho aberto e encerre sua sessão. Selecione seu nome no canto superior direito e, então, selecione <gui>Encerrar sessão</gui>.</p>
+    </item>
+    <item>
+      <p>Aparecerá uma mensagem de confirmação. Selecione <gui>Encerrar sessão</gui> para confirmar. A tela de início de sessão aparecerá.</p>
     </item>
     <item>
       <p>Na tela de início de sessão, selecione seu nome de usuário na lista. O campo para digitação da senha aparecerá.</p>
     </item>
     <item>
-      <p>Em vez de digitar sua senha, você deve ser capaz de desligar o dedo sobre o leitor de impressão digital.</p>
+      <p>Dentro de 30 segundos, selecione o botão de impressão digital acima e à direito do seu nome.</p>
+      <note>
+	<p>O botão de impressão digital está rotulado com uma imagem de uma mão. Se o tempo expirar, o botão desaparece e você só poderá iniciar uma sessão com uma senha. Se quiser tentar de novo, selecione o botão <gui>Cancelar</gui> e volte ao passo anterior.</p>
+      </note>
+    </item>
+    <item>
+      <p>Deslize o dedo registrado em uma velocidade <em>moderada</em> sobre seu escâner de impressão digital. Você iniciará a sessão.</p>
     </item>
   </steps>
-
-</section>
-
+  <p>Se você criou anteriormente um chaveiro de sessão, ele está protegido por sua senha. Para desbloqueá-lo, informe sua senha.</p>
+	
 </page>

@@ -2,25 +2,19 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-recover" xml:lang="ca">
 
   <info>
-    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="files" group="more"/>
     <link type="seealso" xref="files-lost"/>
+    <desc>Deleted files are normally sent to the Trash, but can be recovered.
+    </desc>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-28" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="review"/>
 
     <credit type="author">
       <name>Projecte de documentació del GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Els fitxers esborrats normalment s'envien a la Paperera, però es poden recuperar.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>David Aguilera</mal:name>
@@ -29,28 +23,28 @@
     </mal:credit>
   </info>
 
-  <title>Recupera un fitxer de la Paperera</title>
+  <title>Recover a file from the Trash</title>
+    <p>If you delete a file with the file manager, the file is normally placed
+    into the <gui>Trash</gui>, and should be able to be restored.</p>
+    <steps>
+      <title>To restore a file from the Trash:</title>
+        <item><p>Open the <app>Files</app> application from the <gui>Activities
+        </gui> overview.</p></item>
+        <item><p>Click <gui>Trash</gui> in the sidebar.</p></item>
+        <item><p>If your deleted file is there, click on it and select <gui>
+        Restore</gui>. It will be restored to the folder from where it was
+        deleted.</p></item>
+    </steps>
 
-  <p>Si suprimiu un fitxer amb el gestor de fitxers, el fitxer normalment es col·loca a la <gui>Paperera</gui>, i s'hauria de poder restaurar.</p>
+  <p>If you deleted the file by pressing <keyseq><key>Shift</key><key>Delete
+  </key></keyseq>, or by using the command line, the file has been permanently
+  deleted. Files that have been permanently deleted can't be recovered from the
+  <gui>Trash</gui>.</p>
 
-  <steps>
-    <title>Per restaurar un fitxer de la paperera:</title>
-    <item>
-      <p>Obriu la vista general <gui xref="shell-introduction#activities">Activitats</gui>i comenceu a escriure <app>Fitxers</app>.</p>
-    </item>
-    <item>
-      <p>feu clic a <app>Ftxers</app> per obrir el gestor de fitxers.</p>
-    </item>
-    <item>
-      <p>Feu clic a <gui>Paperera</gui> a la barra lateral. Si no veieu la barra lateral feu clic a <gui>Ftxers</gui> a la barra superior i trieu <gui>Barra lateral</gui>.</p>
-    </item>
-    <item>
-      <p>Si el fitxer esborrat hi és, feu clic i seleccioneu<gui>Restaurar</gui>. Es restaurarà a la carpeta des d'on s'hagi esborrat.</p>
-    </item>
-  </steps>
-
-  <p>Si heu suprimit el fitxer prement <keyseq><key>Shift</key><key>Delete </key></keyseq>, o usant la línia d'ordres, el fitxer s'haurà eliminat definitivament. Els fitxers que s'han eliminat definitivament no es poden recuperar de la  <gui>Paperera</gui>.</p>
-
-  <p>Hi ha diverses eines de recuperació disponibles que de vegades són capaces de recuperar fitxers que s'han eliminat de manera permanent. Normalment, aquestes eines no són massa fàcils d'utilitzar. Si heu suprimit un fitxer per error de forma definitiva, és probable que el millor sigui demanar consell en un fòrum de suport per veure si podeu recuperar-lo</p>
+  <p>There are a number of recovery tools available that are sometimes able to
+  recover files that were permanently deleted. These tools are generally not
+  very easy to use, however. If you accidentally permanently deleted a file,
+  it's probably best to ask for advice on a support forum to see if you can
+  recover it.</p>
 
 </page>

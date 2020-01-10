@@ -1,25 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="reference" id="net-firewall-ports" xml:lang="es">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="reference" id="net-firewall-ports" xml:lang="es">
 
   <info>
     <link type="guide" xref="net-security"/>
     <link type="seealso" xref="net-firewall-on-off"/>
     <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
+    <desc>Para que un programa pueda usar un puerto de red, a través de su cortafuegos, debe especificar el puerto de red correcto para activar y desactivar el acceso a la red.</desc>
     <credit type="author">
       <name>Paul W. Frields</name>
       <email>stickster@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Para que un programa pueda usar un puerto de red, a través de su cortafuegos, debe especificar el puerto de red correcto para activar y desactivar el acceso a la red.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2011 - 2018</mal:years>
+      <mal:years>2011 - 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -42,7 +40,6 @@
   </info>
 
   <title>Puertos de red usados frecuentemente</title>
-
   <p>Esta es una lista de los puertos usados habitualmente por aplicaciones que proporcionan servicios de red, como compartición de archivos o visualización de escritorios remotos. Puede cambiar el cortafuegos de su sistema para que <link xref="net-firewall-on-off">permita o deniegue el acceso</link> a estas aplicaciones. Hay cientos de puertos en uso, por lo que la tabla no está completa.</p>
 
   <table shade="rows" frame="top">
@@ -128,5 +125,4 @@
       </tr>
     </tbody>
   </table>
-
 </page>

@@ -3,10 +3,10 @@
 
   <info>
     <link type="guide" xref="backup-why"/>
+    <desc>Advice on where to store your backups and what type of storage device
+    to use.</desc>
     <title type="sort">c</title>
-
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
 
     <credit type="author">
       <name>గ్నోమ్ పత్రీకరణ పరియోజన</name>
@@ -16,60 +16,54 @@
       <name>Tiffany Antopolski</name>
       <email>tiffany.antopolski@gmail.com</email>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>మీ బ్యాకప్‌లను ఎక్కడ నిల్వవుంచాలి మరియు ఏ రకమైన నిల్వ పరికరం వుపయోగించాలి అనేదానిపై సలహా.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Praveen Illa</mal:name>
       <mal:email>mail2ipn@gmail.com</mal:email>
-      <mal:years>2011, 2014. </mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>కృష్ణబాబు క్రొత్తపల్లి</mal:name>
-      <mal:email>kkrothap@redhat.com</mal:email>
-      <mal:years>2013.</mal:years>
+      <mal:years>2011.</mal:years>
     </mal:credit>
   </info>
 
-<title>మీ బ్యాకప్ ఎక్కడ నిల్వవుంచాలి</title>
+<title>Where to store your backup</title>
 
   <p>You should store backup copies of your files somewhere separate from your
- computer — on an external hard disk, for example. That way, if the computer
- breaks, the backup will still be intact. For maximum security, you shouldn’t
+ computer - on an external hard disk, for example. That way, if the computer
+ breaks, the backup will still be intact. For maximum security, you shouldn't
  keep the backup in the same building as your computer. If there is a fire or
  theft, both copies of the data could be lost if they are kept together.</p>
 
-  <p>సరైన <em>బ్యాకప్ మాధ్యమం</em> ఎంచుకొనుట కూడా ముఖ్యమే. మొత్తం బ్యాకప్ ఫైళ్ళకు సరిపోయే సామర్ధ్యం వున్న పరికరంపై మీరు మీ బ్యాకప్స్ నిల్వ వుంచాలి.</p>
+  <p>It is important to choose an appropriate <em>backup medium</em> too. You
+ need to store your backups on a device that has sufficient disk capacity for
+ all of the backed-up files.</p>
 
    <list style="compact">
-    <title>స్థానిక మరియు రిమోట్ నిల్వ ఐచ్చికాలు</title>
+    <title>Local and remote storage options</title>
     <item>
-      <p>USB మెమొరీ కీ (తక్కువ సామర్ధ్యం)</p>
+      <p>USB memory key (low capacity)</p>
     </item>
     <item>
-      <p>అంతర్గత డిస్కు డ్రైవ్ (అధిక సామర్ద్యం)</p>
+      <p>Internal disk drive (high capacity)</p>
     </item>
     <item>
-      <p>బాహ్య హార్డ్ డిస్క్ (అధిక సామర్ద్యం)</p>
+      <p>External hard disk (typically high capacity)</p>
     </item>
     <item>
-      <p>నెట్వర్కు-అనుసంధానిత డ్రైవ్ (అధిక సామర్ధ్యం)</p>
+      <p>Network-connected drive (high capacity)</p>
     </item>
     <item>
-      <p>ఫైల్/బ్యాకప్ సేవిక (అధిక సామర్ధ్యం)</p>
+      <p>File/backup server (high capacity)</p>
     </item>
     <item>
-     <p>వ్రాయదగిన CD లు లేదా DVD లు (తక్కువ/మద్యస్థ సామర్ధ్యం)</p>
+     <p>Writable CDs or DVDs (low/medium capacity)</p>
     </item>
     <item>
-     <p>Online backup service
-     (<link href="http://aws.amazon.com/s3/">Amazon S3</link>, for example;
-     capacity depends on price)</p>
+     <p>Online backup service (<link href="http://aws.amazon.com/s3/">Amazon S3</link>
+ or <link href="https://one.ubuntu.com/">Ubuntu One</link>, for example; capacity
+ depends on price)</p>
     </item>
    </list>
 
-  <p>ఈ ఐచ్చికాలలో కొన్ని మీ వ్యవస్థ పైని ప్రతి ఫైలును బ్యాకప్ కలిగివుండగల సామర్ధ్యం కలిగివుంటాయి, దీనిని <em>మొత్తం వ్యవస్థ బ్యాకప్</em> అనికూడా అంటారు.</p>
+  <p>Some of these options have sufficient capacity to allow for a backup of
+ every file on your system, also known as a <em>complete system backup</em>.</p>
 </page>

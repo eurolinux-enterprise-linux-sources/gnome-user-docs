@@ -1,87 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-hidden" xml:lang="gl">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="net-wireless-hidden" xml:lang="gl">
   <info>
     <link type="guide" xref="net-wireless"/>
+    <link type="seealso" xref="net-editcon#wireless"/>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
-    <revision pkgversion="3.10" date="2013-12-05" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Proxecto de documentación de GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
-    <desc>Connect to a wireless network that is not displayed in the network
-    list.</desc>
+    <desc>Abra <gui>Preferencias de rede</gui> e conéctese a <gui>Outra</gui> rede sen fíos.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2018</mal:years>
+      <mal:years>2011, 2012.</mal:years>
     </mal:credit>
   </info>
 
 <title>Conectar a unha rede sen fíos oculta</title>
 
-<p>It is possible to set up a wireless network so that it is “hidden.” Hidden
- networks won’t show up in the list of wireless networks displayed in the
- <gui>Network</gui> settings. To connect to a hidden wireless network:</p>
+<p>É posíbel configurar unha rede sen fíos que está «oculta». As redes ocultas non se mostran na lista de redes que se mostran cando preme na icona de rede na barra superior (ou a lista de redes sen fíos en calquera outro computador). Para conectarse a unha rede sen fíos oculta:</p>
 
 <steps>
-  <item>
-    <p>Abrir o <gui xref="shell-introduction#yourname">menú do sistema</gui> na parte dereita da barra superior.</p>
-  </item>
-  <item>
-    <p>Select
-    <gui><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-excellent-symbolic.svg" width="16" height="16"/>
-      Wi-Fi Not Connected</gui>. The Wi-Fi section of the menu will expand.</p>
-  </item>
-  <item>
-    <p>Prema nas <gui>Preferencias da Wifi</gui>.</p>
-  </item>
-  <item><p>Prema sobre o botón <gui>Conectarse a unha rede oculta…</gui>.</p></item>
  <item>
-  <p>In the window that appears, select a previously-connected hidden network
-  using the <gui>Connection</gui> drop-down list, or <gui>New</gui> for a new
-  one.</p>
+  <p>Prema sobre a icona de rede na barra superior e seleccione <gui>Opcións de rede</gui>.</p>
  </item>
  <item>
-  <p>For a new connection, type the network name and choose the type of
-  wireless security from the <gui>Wi-Fi security</gui> drop-down list.</p>
+  <p>Seleccione <gui>Sen fíos</gui> desde a lista da esquerda.</p>
  </item>
  <item>
-  <p>Enter the password or other security details.</p>
+  <p>Seleccione <gui>Outro</gui> desde a lista despregábel <gui>Nome da rede</gui>.</p>
  </item>
  <item>
-  <p>Prema <gui>Conectar</gui>.</p>
+  <p>Na xanela que aparece, escriba o nome da rede, seleccione o tipo de seguranza da rede e prema <gui>Conectar</gui>.</p>
  </item>
 </steps>
 
-  <p>You may have to check the settings of the wireless access point or router
-  to see what the network name is. If you don’t have the network name (SSID),
-  you can use the <em>BSSID</em> (Basic Service Set Identifier, the access
-  point’s MAC address), which looks something like <gui>02:00:01:02:03:04</gui>
-  and can usually be found on the underside of the access point.</p>
+<p>Debe comprobar as configuracións da estación base sen fíos ou enrutador para ver cal é o nome da rede. A veces tamén chamado como <em>BSSID</em> (Basic Service Set Identifier), que se asemella a algo como isto: <gui>02:00:01:02:03:04</gui>.</p>
 
-  <p>You should also check the security settings for the wireless access point.
-  Look for terms like WEP and WPA.</p>
+<p>Debe comprobar a configuración de seguranza da estación base sen fíos. Busque termos como WEP e WPA.</p>
 
 <note>
- <p>You may think that hiding your wireless network will improve security by
- preventing people who don’t know about it from connecting. In practice, this
- is not the case; the network is slightly harder to find but it is still
- detectable.</p>
+ <p>Pode pensar que ao ocultar a súa rede sen fíos mellorará a seguranza previndo que outras persoas non saiban como conectarse a ela. Na práctica este non é o caso. A rede é un pouco máis difícil de atopar pero aínda se pode detectar.</p>
 </note>
 
 </page>

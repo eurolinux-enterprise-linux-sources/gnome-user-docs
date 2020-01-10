@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="session-formats" xml:lang="es">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="session-formats" xml:lang="es">
 
   <info>
     <link type="guide" xref="prefs-language"/>
     <link type="seealso" xref="session-language"/>
 
-    <revision pkgversion="3.10" version="0.4" date="2013-11-03" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-10" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -17,14 +16,14 @@
       <email>mdhillca@gmail.com</email>
     </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
     <desc>Elija una región usada para fecha, hora, números, moneda y medidas.</desc>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2011 - 2018</mal:years>
+      <mal:years>2011 - 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -51,33 +50,35 @@
   <p>Puede controlar los formatos que se usan para fechas, horas, números, moneda y medidas para que coincidan con los usados en su región.</p>
 
   <steps>
-    <item>
-      <p>Abra la vista de <gui xref="shell-introduction#activities">Actividades</gui> y empiece a escribir <gui>Región e idioma</gui>.</p>
-    </item>
-    <item>
-      <p>Pulse en <gui>Región e idioma</gui> para abrir el panel.</p>
-    </item>
-    <item>
-      <p>Pulse <gui>Formatos</gui>.</p>
-    </item>
-    <item>
-      <p>Seleccione la región y el idioma que mejor coincide con los formatos que quiere usar. Si su región e idioma no aparecen, pulse <gui><media its:translate="no" type="image" mime="image/svg" src="figures/view-more-symbolic.svg"><span its:translate="yes">…</span></media></gui> en la parte inferior de la lsita para seleccionarlo de entre todas las regiones e idiomas disponibles.</p>
-    </item>
-    <item>
-      <p>Pulse <gui style="button">Hecho</gui> para guardar.</p>
-    </item>
-    <item>
-      <p>Responda a la solicitud, <gui>Debe reiniciar su sesión para que los cambios surtan efecto</gui> pulsando en <gui style="button">Reiniciar ahora</gui>, o pulse <gui style="button">×</gui> para reiniciar más tarde.</p>
-    </item>
+    <item><p>Pulse en su nombre en la barra superior y seleccione <gui>Configuración</gui>.</p></item>
+    <item><p>Abra <gui>Región e idioma</gui> y pulse en <gui>Formatos</gui>.</p></item>
+    <item><p>Seleccione la región que mejor coincide con los formatos que quiere usar. De manera predeterminada, la lista sólo muestra regiones que usan el idioma establecido en la pestaña <gui>Idioma</gui>. Pulse el botón <key>...</key> para seleccionar de entre todas las regiones disponibles.</p></item>
+    <item><p>Responda a la solicitud, <gui>Debe reiniciar su sesión para que los cambios surtan efecto</gui> pulsando en <gui style="button">Reiniciar ahora</gui>, o pulse <gui style="button">X</gui> para reiniciar más tarde.</p></item>
   </steps>
 
   <p>Después de que ha seleccionado la región, el área de la derecha de la lista muestra varios ejemplos de cómo se muestran las fechas y otros valores. Aunque no se muestra en los ejemplos, su región también controla el día de inicio de la semana en los calendarios.</p>
 
-  <note style="tip">
-    <p>If there are multiple user accounts on your system, there is a separate
-    instance of the <gui>Region &amp; Language</gui> panel for the login screen.
-    Click the <gui>Login Screen</gui> button at the top right to toggle between
-    the two instances.</p>
-  </note>
+<!--
+  <section id="system">
+    <info>
+      <link type="seealso" xref="session-language#system"/>
+      <link type="seealso" xref="keyboard-layouts#system"/>
+    </info>
+    <title>Change the system formats</title>
+
+    <p>When you change your region for formats, you only change it for your
+    account after you log in. You can also change the <em>system formats</em>,
+    the formats used in places like the login screen.</p>
+
+    <steps>
+      <item><p>Change your formats, as described above.</p></item>
+      <item><p>Select the <gui>System</gui> tab.</p></item>
+      <item><p>Click <gui>Copy Settings</gui>.</p></item>
+      <item><p><link xref="user-admin-explain">Administrative privileges</link> are
+      required. Enter your password, or the password for the requested administrator
+      account.</p></item>
+    </steps>
+  </section>
+-->
 
 </page>

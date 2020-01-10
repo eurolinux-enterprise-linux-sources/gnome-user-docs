@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-removedrive" xml:lang="lv">
-
   <info>
     <link type="guide" xref="files#removable"/>
 
@@ -19,12 +18,9 @@
     </credit>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-10-08" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <desc>Izgrūst vai atvienot USB zibatmiņu, CD, DVD vai citu ierīci.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
   <title>Droši atvienot ārējo disku</title>
@@ -33,13 +29,10 @@
 
   <steps>
     <title>Lai izgrūstu noņemamo ierīci:</title>
-    <item>
-      <p><gui xref="shell-introduction#activities">Aktivitāšu</gui> pārskatā atveriet <app>Datnes</app>.</p>
+    <item><p><gui>Aktivitāšu</gui> pārskatā atveriet <app>Datnes</app>.</p>
     </item>
-    <item>
-      <p>Atrodiet ierīci sānu joslā. Blakus tās nosaukumam vajadzētu būt mazai izgrūšanas ikonai. Uzspiediet uz ikonas, lai droši izņemtu dzini.</p>
-      <p>Vai arī varat veikt labās pogas klikšķi uz ierīces nosaukuma sānu joslā un izvēlēties <gui>Izgrūst</gui>.</p>
-    </item>
+    <item><p>Atrodiet ierīci sānu joslā. Blakus tās nosaukumam vajadzētu būt mazai izgrūšanas ikonai. Uzspiediet uz ikonas, lai droši izņemtu dzini.</p>
+    <p>Vai arī varat veikt labās pogas klikšķi uz ierīces nosaukuma sānu joslā un izvēlēties <gui>Izgrūst</gui>.</p></item>
   </steps>
 
   <section id="remove-busy-device">
@@ -54,8 +47,14 @@
     <item><p>Vai arī varat veikt labās pogas klikšķi uz ierīces nosaukuma sānu joslā un izvēlēties <gui>Izgrūst</gui>.</p></item>
   </steps>
 
+<!--
+  <p>If you can't close one of the files, for example if the application
+  using the file is locked up, you can right-click the file in the
+  <gui>Volume is busy</gui> window and select <gui>End Process</gui>.
+  This will force the entire locked up application to close, which could close
+  other files you have open with that application.</p>
+-->
+
   <note style="warning"><p>Jūs varat arī izvēlēties <gui>Tomēr izgrūst</gui>, lai izņemtu ierīci bez datņu aizvēršanas. Tas var izraisīt kļūdas programmās, kas šīs datnes izmanto.</p></note>
-
   </section>
-
 </page>

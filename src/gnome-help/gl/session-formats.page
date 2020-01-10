@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="session-formats" xml:lang="gl">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="session-formats" xml:lang="gl">
 
   <info>
     <link type="guide" xref="prefs-language"/>
     <link type="seealso" xref="session-language"/>
 
-    <revision pkgversion="3.10" version="0.4" date="2013-11-03" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-10" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -17,14 +16,14 @@
       <email>mdhillca@gmail.com</email>
     </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
     <desc>Seleccione unha rexión usada para data, hora, números, moeda e medidas.</desc>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2018</mal:years>
+      <mal:years>2011, 2012.</mal:years>
     </mal:credit>
   </info>
 
@@ -33,43 +32,35 @@
   <p>Pode controlar os formatos que se usan para datas, horas, números, moeda e medidas para que coincidan cos usados na súa rexión.</p>
 
   <steps>
-    <item>
-      <p>Abra a vista de <gui xref="shell-introduction#activities">Actividades</gui> e comece a escribir <gui>Rexión e idioma</gui>.</p>
-    </item>
-    <item>
-      <p>Prema <gui>Rexión e idioma</gui> para abrir o panel.</p>
-    </item>
-    <item>
-      <p>Prema <gui>Formatos</gui>.</p>
-    </item>
-    <item>
-      <p>Select the region and language that most closely matches the formats
-      you would like to use. If your region and language are not listed, click
-      <gui><media its:translate="no" type="image" mime="image/svg" src="figures/view-more-symbolic.svg"><span its:translate="yes">…</span></media></gui>
-      at the bottom of the list to select from all available regions and
-      languages.</p>
-    </item>
-    <item>
-      <p>Prema <gui style="button">Feito</gui> para gardar.</p>
-    </item>
-    <item>
-      <p>Respond to the prompt, <gui>Your session needs to be restarted for
-      changes to take effect</gui> by clicking
-      <gui style="button">Restart Now</gui>, or click
-      <gui style="button">×</gui> to restart later.</p>
-    </item>
+    <item><p>Prema sobre o nome da barra de enderezos e seleccione <gui>Preferencias</gui>.</p></item>
+    <item><p>Abra <gui>Rexión e idioma</gui> e prema en <gui>Formatos</gui>.</p></item>
+    <item><p>Seleccione a rexión que mellor coincide cos formatos que quere usar. De maneira predeterminada, a lista só mostra rexións que usan o idioma estabelecido na lapela <gui>Idioma</gui>. Prema o botón <gui>...</gui> para seleccionar de entre todas as rexións dispoñíbeis.</p></item>
+    <item><p>Responda á pregunta, <gui>A súa sesión precisa reiniciarse para que os cambios se apliquen</gui> premendo <gui style="button">Reiniciar agora</gui>, ou prema <gui style="button">X</gui> para reiniciar máis tarde.</p></item>
   </steps>
 
-  <p>After you have selected a region, the area to the right of the list shows
-  various examples of how dates and other values are shown. Although not shown
-  in the examples, your region also controls the starting day of the week in
-  calendars.</p>
+  <p>Despois de que seleccione a rexión, a área da dereita da lista mostra varios exemplos de como se mostran as datas e outros valores. Aínda que non se mostra nos exemplos, a súa rexión tamén controla o día de inicio da semana nos calendarios.</p>
 
-  <note style="tip">
-    <p>If there are multiple user accounts on your system, there is a separate
-    instance of the <gui>Region &amp; Language</gui> panel for the login screen.
-    Click the <gui>Login Screen</gui> button at the top right to toggle between
-    the two instances.</p>
-  </note>
+<!--
+  <section id="system">
+    <info>
+      <link type="seealso" xref="session-language#system"/>
+      <link type="seealso" xref="keyboard-layouts#system"/>
+    </info>
+    <title>Change the system formats</title>
+
+    <p>When you change your region for formats, you only change it for your
+    account after you log in. You can also change the <em>system formats</em>,
+    the formats used in places like the login screen.</p>
+
+    <steps>
+      <item><p>Change your formats, as described above.</p></item>
+      <item><p>Select the <gui>System</gui> tab.</p></item>
+      <item><p>Click <gui>Copy Settings</gui>.</p></item>
+      <item><p><link xref="user-admin-explain">Administrative privileges</link> are
+      required. Enter your password, or the password for the requested administrator
+      account.</p></item>
+    </steps>
+  </section>
+-->
 
 </page>

@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="a11y task" id="a11y-screen-reader" xml:lang="ca">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="a11y task" id="a11y-screen-reader" xml:lang="ca">
   <info>
     <link type="guide" xref="a11y#vision" group="blind"/>
 
-    <revision pkgversion="3.13.92" date="2014-09-20" status="incomplete"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
       <email>shaunm@gnome.org</email>
     </credit>
-    <credit type="editor">
-      <name>Jana Heves</name>
-      <email>jsvarova@gnome.org</email>
-    </credit>
 
     <desc>Com utilitzar el lector de pantalla <app>Orca</app> perquè pronunciï la interfície d'usuari en veu alta.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>David Aguilera</mal:name>
@@ -29,36 +21,15 @@
 
   <title>Llegir la pantalla en veu alta</title>
 
-  <p>GNOME proveeix del lector de pantalla <app>Orca</app> per llegir l'interfició d'usuari. Depenent de com hagueu instal·lat GNOME, podeu no tenir-lo instal·lat. Si no ho està, instal·leu Orca primer.</p>
+  <p>GNOME provides the <app>Orca</app> screen reader to speak the user
+  interface. Depending on how you installed GNOME, you might not have
+  Orca installed. <link href="install:orca">Install Orca</link>, then
+  refer to the <link href="help:orca">Orca Help</link> for more
+  information.</p>
 
-  <p if:test="action:install"><link style="button" action="install:orca">Instal·lar Orca</link></p>
-  
-  <p>Per iniciar <app>Orca</app> utilitzant el teclat:</p>
-  
-  <steps>
-    <item>
-    <p>Premeu <key>Super</key>+<key>Alt</key>+<key>S</key>.</p>
-    </item>
-  </steps>
-  
-  <p>O per iniciar <app>Orca</app> utilitzant el ratolí i el teclat.</p>
-
-  <steps>
-    <item>
-      <p>Obriu la descripció general de les <gui xref="shell-introduction#activities">Activities</gui>  i comenceu a escriure  <gui>Accés Universal</gui>.</p>
-    </item>
-    <item>
-      <p>Feu clic a <gui>Accés Universal</gui> per obrir el panell.</p>
-    </item>
-    <item>
-      <p>Cliqueu a <gui>Lector de pantalla</gui>a la secció <gui>Veure</gui>,  aleshores activeu <gui>Lector de pantalla</gui> al diàleg.</p>
-    </item>
-  </steps>
-
-  <note style="tip">
-    <title>Permuta ràpidament el Lector de Pantalla entre actiu i inactiu</title>
-    <p>Podeu activar i desactivar el Lector de pantalla fent clic a la icona<link xref="a11y-icon">accessibilitat</link> a la barra superior i seleccionant <gui>Lector de pantalla</gui>.</p>
-  </note>
-
-  <p>Consulteu l'<link href="help:orca">ajuda d'Orca</link> per a més informació.</p>
+  <comment>
+    <cite date="2012-02-19">shaunm</cite>
+    <p>I'd like this page to have more on how to start Orca, then pass
+    off to the Orca help for more information.</p>
+  </comment>
 </page>

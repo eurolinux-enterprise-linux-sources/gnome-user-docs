@@ -2,11 +2,11 @@
 <page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="screen-shot-record" xml:lang="pt-BR">
 
   <info>
+
     <link type="guide" xref="tips"/>
 
-    <revision pkgversion="3.6.1" date="2012-11-10" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.14.0" date="2015-01-14" status="review"/>
+    <desc>Capture uma imagem ou grave um vídeo do que está acontecendo na sua tela.</desc>
+    <revision pkgversion="3.6.1" version="0.2" date="2012-11-10" status="review"/>
 
     <credit type="author copyright">
       <name>Tiffany Antopolski</name>
@@ -22,15 +22,8 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-      <years>2015</years>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Capture uma imagem ou grave um vídeo do que está acontecendo na sua tela.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Rodolfo Ribeiro Gomes</mal:name>
@@ -39,96 +32,88 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Enrico Nicoletto</mal:name>
       <mal:email>liverig@gmail.com</mal:email>
       <mal:years>2013.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>João Santana</mal:name>
-      <mal:email>joaosantana@outlook.com</mal:email>
-      <mal:years>2013.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Fontenelle</mal:name>
-      <mal:email>rafaelff@gnome.org</mal:email>
-      <mal:years>2012-2018.</mal:years>
     </mal:credit>
   </info>
 
 <title>Capturas e gravações de tela</title>
 
-  <p>Você pode captura uma imagem da sua tela (uma <em>captura de tela</em>) ou grava um vídeo do que está acontecendo na tela (uma <em>gravação de tela</em>). Isso é útil se você deseja mostrar a alguém como fazer algo o computador, por exemplo. Capturas e gravações de tela são arquivos de imagem e vídeo normais, então você pode enviá-los por e-mail e compartilhá-los na web.</p>
+  <p>You can take a picture of your screen (a <em>screenshot</em>) or record a
+ video of what's happening on the screen (a <em>screencast</em>). This is useful
+ if you want to show someone how to do something on the computer, for example.
+ Screenshots and screencasts are just normal picture and video files, so you can
+ email them and share them on the web.</p>
 
 <section id="screenshot">
-  <title>Capturar uma imagem da tela</title>
+ <title>Capturar uma imagem da tela</title>
+<steps>
+<item><p>Abra <app>Captura de tela</app> no panorama de <gui>Atividades</gui>.</p></item>
 
-  <steps>
-    <item>
-      <p>Abra <app>Captura de tela</app> no panorama de <gui xref="shell-introduction#activities">Atividades</gui>.</p>
-    </item>
-    <item>
-      <p>Na janela <app>Captura de tela</app>, selecione ser obtida toda a tela, a janela atual ou uma área da tela. Defina um atraso caso você precise selecionar uma janela ou, do contrário, configurar seu ambiente para a captura de tela. Então, escolha quais efeitos você deseja.</p>
-    </item>
-    <item>
-       <p>Clique em <gui>Capturar</gui>.</p>
-       <p>Se você selecionou <gui>Selecionar área para capturar</gui>, o cursor mudará para uma cruz. Clique e arraste a área que quer para a captura de tela.</p>
-    </item>
-    <item>
-      <p>Na janela <gui>Salvar captura de tela</gui>, digite um nome de arquivo e escolha uma pasta. Então, clique em <gui>Salvar</gui>.</p>
-      <p>Alternativamente, importe a captura de tela diretamente para um aplicativo de edição de imagem sem salvá-a primeiro. Clique <gui>Copiar para a área de transferência</gui> e, então, cole a imagem no outro aplicativo, ou arraste a miniatura da captura de tela para o aplicativo.</p>
-    </item>
-  </steps>
+<item>
+ <p>In the <app>Take Screenshot</app> window, select whether to grab the
+ whole screen, the current window, or an area of the screen. Set a delay
+ if you need to select a window or otherwise set up your desktop for
+ the screenshot. Then choose any effects you want.</p>
+</item>
 
-  <section id="keyboard-shortcuts">
-    <title>Atalhos de teclado</title>
+<item>
+  <p>Clique em <gui>Capturar</gui>.</p>
+  <p>Se você selecionou <gui>Selecionar área para capturar</gui>, o cursor mudará para uma cruz. Clique e arraste a área que quer para a captura de tela.</p>
+</item>
 
-    <p>Obtenha rapidamente uma captura de tela do ambiente, da janela ou de uma área a qualquer momento usando esses atalhos globais:</p>
+<item>
+  <p>Na janela <gui>Salvar captura de tela</gui>, digite um nome de arquivo e escolha uma pasta. Então, clique em <gui>Salvar</gui>.</p>
+  <p>Alternatively, import the screenshot directly into an image-editing application
+  without saving it first. Click <gui>Copy to Clipboard</gui> then paste the image in
+  the other application, or drag the screenshot thumbnail to the application.</p>
+</item>
+</steps>
 
-    <list style="compact">
-      <item>
-        <p><key>Prt Scrn</key> para efetuar a captura de tela da área de trabalho.</p>
-      </item>
-      <item>
-        <p><keyseq><key>Alt</key><key>Prt Scrn</key></keyseq> para efetuar a captura de tela de uma janela.</p>
-      </item>
-      <item>
-        <p><keyseq><key>Shift</key><key>Prt Scrn</key></keyseq> para efetuar a captura de tela de uma área que você selecionou.</p>
-      </item>
-    </list>
-
-    <p>Quando você usa um atalho de teclado, a imagem é salvada automaticamente em sua pasta de <file>Imagens</file> em sua pasta pessoal com um nome de arquivo que inicia com <file>Captura de tela</file> e inclui a data e hora em que ela você obtida.</p>
-    <note style="note">
-      <p>Se você não tem uma pasta <file>Imagens</file>, as imagens serão salvas em sua pasta pessoal.</p>
-    </note>
-    <p>Você também pode manter o <key>Ctrl</key> pressionado com qualquer um dos atalhos acima para copiar a imagem da captura de tela para a área de transferência em vez de salvá-la.</p>
-  </section>
-
+<note style="tip">
+  <title>Atalhos de teclado</title>
+  <p>Quickly take a screenshot of the desktop, a window, or an area at any time
+  using these global keyboard shortcuts:</p>
+  <list style="compact">
+    <item><p><key>Prt Scrn</key> para efetuar a captura de tela da área de trabalho.</p></item>
+    <item><p><keyseq><key>Alt</key><key>Prt Scrn</key></keyseq> para efetuar a captura de tela de uma janela.</p></item>
+    <item><p><keyseq><key>Shift</key><key>Prt Scrn</key></keyseq> para efetuar a captura de tela de uma área que você selecionou.</p></item>
+  </list>
+  <p>When you use a keyboard shortcut, the image is automatically saved in
+  your Pictures folder with a file name that begins with "Screenshot" and
+  includes the date and time it was taken.</p>
+  <p>You can also hold down <key>Ctrl</key> with any of the above shortcuts to
+  copy the screenshot image to the clipboard instead of saving it.</p>
+</note>
 </section>
 
-<section id="screencast">
-  <title>Realizar uma gravação de tela</title>
 
+<section id="screencast">
+<title>Realizar uma gravação de tela</title>
   <p>Você pode fazer uma gravação em vídeo do que está acontecendo em sua tela:</p>
 
-  <steps>
-    <item>
-      <p>Pressione <keyseq><key>Ctrl</key><key>Alt</key><key>Shift</key><key>R</key></keyseq> para começar a gravar o que está na sua tela.</p>
-      <p>Um círculo vermelho é exibido no canto inferior direito da tela enquanto a gravação estiver em andamento.</p>
-    </item>
-    <item>
-      <p>Uma vez que você tenha finalizado, pressione <keyseq><key>Ctrl</key><key>Alt</key><key>Shift</key><key>R</key></keyseq> novamente para parar a gravação.</p>
-    </item>
-    <item>
-      <p>O vídeo é salvado automaticamente em sua pasta de <file>Vídeos</file> em sua pasta pessoal com um nome de arquivo que inicia com <file>Gravação de tela</file> e inclui a data e hora em que ele foi obtido.</p>
-    </item>
-  </steps>
+<steps>
+<item>
+  <p>Pressione <keyseq><key>Control</key><key>Shift</key><key>Alt</key><key>R</key></keyseq> para começar a gravar o que está na sua tela.</p>
+  <p>Um círculo vermelho é mostrado no canto inferior direito da tela enquanto a gravação estiver em andamento. Esse indicador não será mostrar no vídeo.</p>
+</item>
 
-  <note style="note">
-    <p>Se você não tem uma pasta <file>Vídeos</file>, os vídeos serão salvos em sua pasta pessoal.</p>
-  </note>
+<item>
+  <p>Uma vez que você tenha finalizado, pressione <keyseq><key>Ctrl</key><key>Alt</key><key>Shift</key><key>R</key></keyseq> novamente para parar a gravação.</p>
+</item>
 
+<item>
+  <p>The video is automatically saved in your Videos folder with a file name
+  that starts with "Screencast" and includes the date and time it was taken.</p>
+</item>
+</steps>
 </section>
 
 </page>

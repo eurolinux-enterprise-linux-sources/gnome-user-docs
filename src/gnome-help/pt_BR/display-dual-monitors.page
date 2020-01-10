@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="display-dual-monitors" xml:lang="pt-BR">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="display-dual-monitors" xml:lang="pt-BR">
 
   <info>
-    <link type="guide" xref="prefs-display"/>
-
+    <desc>Configure dois monitores no seu laptop.</desc>
     <revision pkgversion="3.8.0" version="0.3" date="2013-03-09" status="outdated"/>
-    <revision pkgversion="3.9.92" date="2013-09-23" status="review"/>
-
     <credit type="author">
       <name>Tiffany Antopolski</name>
       <email>tiffany.antopolski@gmail.com</email>
@@ -15,14 +12,9 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <link type="guide" xref="prefs-display"/>
 
-    <desc>Configure um externo adicional.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Rodolfo Ribeiro Gomes</mal:name>
@@ -31,93 +23,85 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Enrico Nicoletto</mal:name>
       <mal:email>liverig@gmail.com</mal:email>
       <mal:years>2013.</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>João Santana</mal:name>
-      <mal:email>joaosantana@outlook.com</mal:email>
-      <mal:years>2013.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Fontenelle</mal:name>
-      <mal:email>rafaelff@gnome.org</mal:email>
-      <mal:years>2012-2018.</mal:years>
-    </mal:credit>
   </info>
 
-<title>Conectando outro monitor a seu computador</title>
+<title>Conectar um monitor externo ao seu laptop</title>
 
-<!-- TODO: update video
-<section id="video-demo">
-  <title>Video Demo</title>
-  <media its:translate="no" type="video" width="500" mime="video/webm" src="figures/display-dual-monitors.webm">
-    <p its:translate="yes">Demo</p>
-    <tt:tt its:translate="yes" xmlns:tt="http://www.w3.org/ns/ttml">
-      <tt:body>
-        <tt:div begin="1s" end="3s">
-          <tt:p>Type <input>displays</input> in the <gui>Activities</gui>
-          overview to open the <gui>Displays</gui> settings.</tt:p>
-        </tt:div>
-        <tt:div begin="3s" end="9s">
-          <tt:p>Click on the image of the monitor you would like to activate or
-          deactivate, then switch it <gui>ON/OFF</gui>.</tt:p>
-        </tt:div>
-        <tt:div begin="9s" end="16s">
-          <tt:p>The monitor with the top bar is the main monitor. To change
-          which monitor is “main”, click on the top bar and drag it over to
-          the monitor you want to set as the “main” monitor.</tt:p>
-        </tt:div>
-        <tt:div begin="16s" end="25s">
-          <tt:p>To change the “position” of a monitor, click on it and drag it
-          to the desired position.</tt:p>
-        </tt:div>
-        <tt:div begin="25s" end="29s">
-          <tt:p>If you would like both monitors to display the same content,
-          check the <gui>Mirror displays</gui> box.</tt:p>
-        </tt:div>
-        <tt:div begin="29s" end="33s">
-          <tt:p>When you are happy with your settings, click <gui>Apply</gui>
-          and then click <gui>Keep This Configuration</gui>.</tt:p>
-        </tt:div>
-        <tt:div begin="33s" end="37s">
-          <tt:p>To close the <gui>Displays Settings</gui> click on the
-          <gui>×</gui> in the top corner.</tt:p>
-        </tt:div>
-      </tt:body>
-    </tt:tt>
-  </media>
-</section>
--->
+ <section id="video-demo">
+   <title>Demonstração de vídeo</title>
+    <media type="video" width="500" mime="video/webm" src="figures/display-dual-monitors.webm">
+    <p>Demonstração</p>
+    <tt:tt xmlns:tt="http://www.w3.org/ns/ttml">
+        <tt:body>
+          <tt:div begin="1s" end="3s">
+            <tt:p>Digite <input>telas</input> no panorama de Atividades para abrir as configurações das <gui>Telas</gui>.</tt:p>
+          </tt:div>
 
-<section id="steps">
-  <title>Configure um monitor adicional</title>
-  <p>Para configurar um monitor adicional, conecte seu monitor a seu computador. Se o seu sistema não reconhecê-lo imediatamente, ou se você quiser ajustar as configurações:</p>
+          <tt:div begin="3s" end="9s">
+            <tt:p>Clique na imagem do monitor que você gostaria de ativar ou desativar; então, alterne entre <gui>ON/OFF</gui>.</tt:p>
+          </tt:div>
+
+          <tt:div begin="9s" end="16s">
+            <tt:p>O monitor com a barra superior é o monitor principal. Para alterar qual monitor é "principal", clique na barra superior e arraste-a até o monitor que você quer definir como monitor "principal".</tt:p>
+          </tt:div>
+
+          <tt:div begin="16s" end="25s">
+            <tt:p>Para alterar a "posição" de um monitor, clique nele e arraste-o para a posição desejada.</tt:p>
+          </tt:div>
+
+          <tt:div begin="25s" end="29s">
+            <tt:p>Se você quiser que ambos monitores exibam o mesmo conteúdo, marque a caixa <gui>Espelhar telas</gui>.</tt:p>
+          </tt:div>
+
+          <tt:div begin="29s" end="33s">
+            <tt:p>Quando você estiver satisfeito com suas configurações, clique em <gui>Aplicar</gui> e, então, clique em <gui>Manter esta configuração</gui>.</tt:p>
+          </tt:div>
+
+          <tt:div begin="33s" end="37s">
+            <tt:p>Para fechar as <gui>Configurações de telas</gui>, clique no <gui>x</gui> no canto superior-direito.</tt:p>
+          </tt:div>
+
+        </tt:body>
+
+      </tt:tt>
+
+    </media>
+  </section>
+
+
+
+  <section id="steps">
+  <title>Configure um monitor externo</title>
+  <p>Para configurar um monitor externo para seu laptop, conecte seu monitor ao seu laptop. Se o seu sistema não reconhecê-lo imediatamente, ou se você quiser ajustar as configurações:</p>
 
   <steps>
-    <item>
-      <p>Abra o panorama de <gui xref="shell-introduction#activities">Atividades</gui> e comece a digitar <gui>Telas</gui>.</p>
-    </item>
-    <item>
-      <p>Clique em <gui>Telas</gui> para abrir o painel.</p>
-    </item>
-    <item>
-      <p>Clique no monitor que você gostaria de ativar ou desativar e, então, na lista de configuração de monitores selecione <gui>Desligar</gui> para desativar o monitor ou um entre <gui>Primário</gui>, <gui>Secundário</gui> ou <gui>Espelhadas</gui> para ativá-lo.</p>
-      <note>
-        <p>O monitor primário é aquele com a <link xref="shell-introduction">barra superior</link> e onde o panorama de <gui>Atividades</gui> é mostrada.</p>
-      </note>
-    </item>
-    <item>
-      <p>Para girar a orientação do monitor, use os botões com as setas até que a visualização esteja correta.</p>
-    </item>
-    <item>
-      <p>Quando você estiver satisfeito com suas configurações, clique em <gui>Aplicar</gui> e, então, clique em <gui>Manter alterações</gui>.</p>
-    </item>
-  </steps>
+  <item><p>Clique em seu nome na barra superior e selecione <gui>Configurações</gui>.</p></item>
 
+  <item><p>Abra <gui>Monitores</gui>.</p></item>
+
+  <item><p>Clique na imagem do monitor que você gostaria de ativar ou desativar; então, alterne entre <gui>ON/OFF</gui>.</p></item>
+
+  <item><p>O monitor com a <link xref="shell-introduction">barra superior</link> é o monitor principal. Para alterar qual monitor é o "principal", clique na barra superior e arraste-a para o monitor que você quer que seja o monitor "principal".</p></item>
+
+  <item><p>Para alterar a "posição" de um monitor, clique nele e arraste-o para a posição desejada.</p>
+           <note><p>Se você quiser que ambos monitores exibam o mesmo conteúdo, marque a caixa <gui>Espelhar telas</gui>.</p></note>
+  </item>
+
+  <item><p>Quando você estiver satisfeito com suas configurações, clique em <gui>Aplicar</gui> e, então, clique em <gui>Manter esta configuração</gui>.</p></item>
+
+  <item><p>Para fechar as <gui>Configurações de telas</gui>, clique no <gui>x</gui> no canto superior-direito.</p></item>
+  </steps>
 </section>
+
 
 </page>

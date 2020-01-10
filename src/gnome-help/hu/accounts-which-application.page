@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="accounts-which-application" xml:lang="hu">
-
   <info>
-    <link type="guide" xref="accounts"/>
-    <link type="seealso" xref="accounts-disable-service"/>
-
-    <revision pkgversion="3.8.2" date="2013-05-22" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="incomplete"/>
+    <revision pkgversion="3.8.2" version="0.2" date="2013-05-22" status="review"/>
 
     <credit type="author copyright">
       <name>Baptiste Mille-Mathias</name>
       <email>baptistem@gnome.org</email>
-      <years>2012, 2013</years>
+      <years>2012-2013</years>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
@@ -23,10 +17,10 @@
       <email>ak-47@gmx.net</email>
     </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <link type="guide" xref="accounts"/>
+    <link type="seealso" xref="accounts-disable-service"/>
 
     <desc>Az <app>Online fiókok</app> alkalmazásban felvett fiókokat használni képes alkalmazások és az általuk használható szolgáltatások.</desc>
-
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Griechisch Erika</mal:name>
@@ -37,7 +31,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Kelemen Gábor</mal:name>
       <mal:email>kelemeng at gnome dot hu</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015, 2016, 2017</mal:years>
+      <mal:years>2011, 2012, 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -57,70 +51,51 @@
       <mal:email>lukacs.bence1 at gmail dot com</mal:email>
       <mal:years>2011</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Nagy Zoltán</mal:name>
-      <mal:email>dzodzie at gmail dot com</mal:email>
-      <mal:years>2011</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Online szolgáltatások és alkalmazások</title>
+  <title>Mely alkalmazások használják az Online fiókokat?</title>
 
-  <p>Miután felvett egy online fiókot, bármely alkalmazás használhatja azt a fiókot minden olyan szolgáltatáshoz, amit <link xref="accounts-disable-service">nem tiltott le</link>. A különböző szolgáltatók különböző szolgáltatásokat nyújtanak. Ez az oldal felsorolja a különböző szolgáltatásokat, és néhány alkalmazást, ami használja ezeket.</p>
+  <p>Az <app>Online fiókok</app> segítségével a külső alkalmazások automatikusan beállíthatják magukat.</p>
 
-  <terms>
-    <item>
-      <title>Naptár</title>
-      <p>A naptár szolgáltatás lehetővé teszi események megjelenítését, felvételét és szerkesztését egy online naptárban. A <app>Naptár</app>, <app>Evolution</app> és <app>California</app> alkalmazások használják.</p>
-    </item>
+  <section id="accounts-google-services">
+   <title>Google fiókkal</title>
 
-    <item>
-      <title>Csevegés</title>
-      <p>A csevegés szolgáltatás lehetővé teszi a csevegést ismerőseivel a népszerű üzenetküldő rendszereken. Az <app>Empathy</app> alkalmazás használja.</p>
-    </item>
+   <list>
+    <item><p>Az <app>Evolution</app> levelező. A postafiókja automatikusan felvételre kerül az <app>Evolutionbe</app>, így az letöltheti leveleit, elérheti címjegyzékét és megjelenítheti Google naptárának elemeit.</p></item>
+    <item><p><app>Empathy</app>, the instant messaging application. Your online
+    account will be added and you will be able to communicate with your friends.
+    </p></item>
+    <item><p>A <app>Névjegyek</app> alkalmazás, amelyben megjelenítheti és szerkesztheti névjegyeit.</p></item>
+    <item><p>A <app>Dokumentumok</app> alkalmazás, amellyel elérheti és megjelenítheti online dokumentumait.</p></item>
+   </list>
+  </section>
 
-    <item>
-      <title>Névjegyek</title>
-      <p>A névjegyek szolgáltatás lehetővé teszi ismerősei közzétett adatait különböző szolgáltatásokon. A <app>Névjegyek</app> és az <app>Evolution</app> alkalmazások használja.</p>
-    </item>
+  <section id="accounts-windows-services">
+   <title>Windows Live, Facebook vagy Twitter fiókokkal</title>
 
-    <item>
-      <title>Dokumentumok</title>
-      <p>A dokumentumok szolgáltatás lehetővé teszi online dokumentumok megjelenítését, mint például a Google Drive-on tároltakat. Dokumentumait a <app>Dokumentumok</app> alkalmazással jelenítheti meg.</p>
-    </item>
+   <p>Az <app>Empathy</app> képes használni ezeket a fiókokat, és elkezdhet üzeneteket váltani partnereivel, barátaival és követőivel.</p>
+  </section>
 
-    <item>
-      <title>Fájlok</title>
-      <p>A fájlok szolgáltatással távoli fájlelérési helyeket vehet fel, ugyanúgy mint a fájlkezelő <link xref="nautilus-connect">Kapcsolódás kiszolgálóhoz</link> funkciójával. A távoli fájlokat elérheti a fájlkezelővel, valamint bármely alkalmazás megnyitási és mentési ablakában.</p>
-    </item>
+  <section id="account-windows-skydrive">
+   <title>With a SkyDrive account</title>
 
-    <item>
-      <title>Levelezés</title>
-      <p>A levelezés szolgáltatás lehetővé teszi e-mailek küldését olyan e-mail szolgáltatásokon keresztül, mint a Google. Az <app>Evolution</app> használja.</p>
-    </item>
+   <p>A <app>Dokumentumok</app> alkalmazás, amellyel elérheti és megjelenítheti a Microsoft SkyDrive online dokumentumait.</p>
+  </section>
 
-<!-- TODO: Not sure what this does. Doesn't seem to do anything in Maps app.
-    <item>
-      <title>Maps</title>
-    </item>
--->
+  <section id="account-exchange">
+   <title>With a Exchange account</title>
 
-    <item>
-      <title>Fényképek</title>
-      <p>A fényképek szolgáltatás lehetővé teszi online fényképek megjelenítését, mint például a Facebookra beküldötteket. A fényképeket a <app>Fényképek</app> alkalmazással jelenítheti meg.</p>
-    </item>
+   <p>Once you have created an Exchange account, <app>Evolution</app> will start
+   retrieving mails from this account.</p>
+  </section>
 
-    <item>
-      <title>Nyomtatás</title>
-      <p>A nyomtatók szolgáltatás lehetővé teszi egy PDF másolat elküldését egy szolgáltatónak bármely alkalmazás nyomtatási ablakából. A szolgáltató biztosíthat tényleges nyomtatási szolgáltatást, vagy csak tárolóként szolgálhat a PDF számára, amit később letölthet és kinyomtathat.</p>
-    </item>
+  <section id="accounts-ownCloud">
+   <title>With a ownCloud account</title>
 
-    <item>
-      <title>Elolvasás később</title>
-      <p>Az elolvasás később szolgáltatás lehetővé teszi egy weboldal elmentését egy külső szolgáltatásra, hogy később egy másik készüléken olvashassa el. Jelenleg egy alkalmazás sem használja ezt a szolgáltatást.</p>
-    </item>
+   <p>When an ownCloud account is set up, <app>Evolution</app> is able to
+   access and edit contacts and calendar appointments.</p>
 
-  </terms>
-
+   <p><app>Files</app> and other applications will be able to list and access
+   your online files stored in the ownCloud installation.</p>
+  </section>
 </page>

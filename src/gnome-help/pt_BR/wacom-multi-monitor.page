@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="wacom-multi-monitor" xml:lang="pt-BR">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="wacom-multi-monitor" xml:lang="pt-BR">
   <info>
-    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <revision pkgversion="3.8.0" version="0.2" date="2013-03-09" status="candidate"/>
 
     <link type="guide" xref="wacom"/>
 
@@ -14,15 +11,8 @@
       <email>mdhillca@gmail.com</email>
       <years>2012</years>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-      <years>2015</years>
-    </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Associe o tablet Wacom para um monitor específico.</desc>
+    <desc>Map the Wacom tablet to a specific monitor.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Rodolfo Ribeiro Gomes</mal:name>
@@ -31,42 +21,38 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Enrico Nicoletto</mal:name>
       <mal:email>liverig@gmail.com</mal:email>
       <mal:years>2013.</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>João Santana</mal:name>
-      <mal:email>joaosantana@outlook.com</mal:email>
-      <mal:years>2013.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Fontenelle</mal:name>
-      <mal:email>rafaelff@gnome.org</mal:email>
-      <mal:years>2012-2018.</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Escolhendo um monitor</title>
+  <title>Escolher um monitor</title>
+
+  <comment>
+    <cite date="2012-04-21" href="mailto:mdhillca@gmail.com">Michael Hill</cite>
+    <p>In a multi-monitor setup, the user is able to select which monitor is
+     mapped by the graphics tablet.</p>
+  </comment>
 
 <steps>
-  <item>
-    <p>Abra o panorama de <gui xref="shell-introduction#activities">Atividades</gui> e comece a digitar <gui>Tablet Wacom</gui>.</p>
-  </item>
-  <item>
-    <p>Clique em <gui>Tablet Wacom</gui> para abrir o painel.</p>
-    <!-- TODO: document how to connet the tablet using Bluetooth/add link -->
-    <note style="tip"><p>Se nenhum tablet for detectado, você será solicitado a <gui>Por favor conectar ou ligar seu tablet Wacom</gui>. Clique no link <gui>Configurações de Bluetooth</gui> para conectar um tablet sem fio.</p></note>
+  <item><p>Clique em seu nome na barra superior e selecione <gui>Configurações</gui>.</p></item>
+  <item><p>Abra <gui>Tablet Wacom</gui>.</p>
+     <note style="tip"><p>If no tablet is detected, you'll be asked to
+      <gui>Please plug in or turn on your Wacom tablet</gui>.</p></note>
   </item>
   <item><p>Clique em <gui>Associar a um monitor…</gui></p></item>
   <item><p>Marque <gui>Associar a monitor singular</gui>.</p></item>
-  <item><p>Próximo a <gui>Saída</gui>, selecione o monitor que você deseja receber a entrada para seu tablet gráfico.</p>
-     <note style="tip"><p>Apenas os monitores que estão configurados serão selecionáveis.</p></note>
-  </item>
-  <item>
-    <p>Alterne <gui>Manter taxa de proporção (caixa de letras)</gui> para <key>❙</key> para corresponder a área de desenho do tablet às proporções do monitor. Também chamado de <em>forçar proporções</em>, esta configuração deixa em formato <em>caixa de letras</em> a área de desenho em um tablet para corresponder mais diretamente à tela. Por exemplo, um tablet 4:3 seria mapeado de forma que sua área de desenho corresponderia a uma tela widescreen.</p>
+  <item><p>Next to <gui>Output</gui>, select the monitor you wish to receive
+   input from your graphics tablet.</p>
+     <note style="tip"><p>Only the monitors that are configured will be
+      selectable.</p></note>
   </item>
   <item><p>Clique em <gui>Fechar</gui>.</p></item>
 </steps>

@@ -5,12 +5,10 @@
     <link type="guide" xref="privacy"/>
     <link type="seealso" xref="session-screenlocks"/>
     <link type="seealso" xref="shell-exit#lock-screen"/>
-
     <revision pkgversion="3.8" date="2013-05-21" status="candidate"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-30" status="final"/>
 
+    <desc>Prevent other people from using your desktop when you
+    go away from your computer.</desc>
     <credit type="author">
       <name>Shaun McCance</name>
       <email>shaunm@gnome.org</email>
@@ -24,10 +22,7 @@
       <email>jwcampbell@gmail.com</email>
       <years>2013</years>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Evite que outras pessoas usem seu computador quanto você estiver distante dele.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Rodolfo Ribeiro Gomes</mal:name>
@@ -36,50 +31,44 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Enrico Nicoletto</mal:name>
       <mal:email>liverig@gmail.com</mal:email>
       <mal:years>2013.</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>João Santana</mal:name>
-      <mal:email>joaosantana@outlook.com</mal:email>
-      <mal:years>2013.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Fontenelle</mal:name>
-      <mal:email>rafaelff@gnome.org</mal:email>
-      <mal:years>2012-2018.</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Bloqueando automaticamente sua tela</title>
+  <title>Automatically lock your screen</title>
   
-  <p>Ao se afastar do seu computador, você deveria <link xref="shell-exit#lock-screen">bloquear sua tela</link> para evitar que outras pessoas usem o seu computador e acessem seus arquivos. Se você algumas vezes se esquece de bloquear sua tela, você querer o bloqueio automática do seu computador após um período de tempo. Isso vai ajudar a manter segurança do seu computador, se você não está usando-o.</p>
+  <p>When you leave your computer, you should
+  <link xref="shell-exit#lock-screen">lock the screen</link> to prevent
+  other people from using your desktop and accessing your files. If you
+  sometimes forget to lock your screen, you may wish to have your computer's
+  screen lock automatically after a set period of time. This will help to
+  secure your computer when you aren't using it.</p>
 
-  <note><p>Quando sua janela estiver bloqueada, os processos dos seus aplicativos e sistema vão continuar a executar, mas você precisará digitar sua senha para começar a usá-los novamente.</p></note>
+  <note><p>When your screen is locked, your applications and system processes
+  will continue to run, but you will need to enter your password to begin using
+  them again.</p></note>
   
   <steps>
-    <title>Para definir um período de tempo até sua tela ser bloqueada automaticamente:</title>
-    <item>
-      <p>Abra o panorama de <gui xref="shell-introduction#activities">Atividades</gui> e comece a digitar <gui>Privacidade</gui>.</p>
-    </item>
-    <item>
-      <p>Clique em <gui>Privacidade</gui> para abrir o painel.</p>
-    </item>
-    <item>
-      <p>Selecione <gui>Tela de bloqueio</gui>.</p>
-    </item>
-    <item>
-      <p>Certifique-se de que <gui>Bloqueio de tela automático</gui> está ativado e, então, selecione um período de tempo na lista suspensa.</p>
-    </item>
+    <title>To set the length of time before your screen locks
+    automatically:</title>
+    <item><p>Clique em seu nome na barra superior e selecione <gui>Configurações</gui>.</p></item>
+    <item><p>Select <guiseq><gui>Privacy</gui><gui>Screen Lock</gui></guiseq>.
+    </p></item>
+    <item><p>Make sure <gui>Automatic Screen Lock</gui> is switched on, then
+    select a length of time from the drop-down list.</p></item>
   </steps>
 
-  <note style="tip">
-    <p>Aplicativos podem apresentar notificações a você que também são exibidas em sua tela de bloqueio. Isso é conveniente, por exemplo, para ver se você tem algum e-mail sem desbloquear sua tela. Se você está preocupado com outras pessoas verem essas notificações, desative <gui>Mostrar notificações</gui>.</p>
-  </note>
-
-  <p>Quando sua tela estiver bloqueada, e você quiser desbloqueá-la, pressione <key>Esc</key> ou arraste a tela de baixo para cima com o seu mouse. Então, digite sua senha e pressione <key>Enter</key> ou clique em <gui>Desbloquear</gui>. Alternativamente, comece a digitar sua senha e a cortina de bloqueio será realizado automaticamente na medida em que você digita.</p>
+  <p>When your screen is locked, and you want to unlock it, press
+  <key>Esc</key>, or swipe up from the bottom of your screen with your mouse.
+  Then enter your password, and press <key>Enter</key> or click
+  <gui>Unlock</gui>.</p>
 
 </page>

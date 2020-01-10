@@ -18,21 +18,14 @@
     </credit>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
-    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
 
-    <desc>Test your hard disk for problems to make sure that it’s healthy.</desc>
+    <desc>Testaa kiintolevysi varmistaaksesi, että se on kunnossa.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Timo Jyrinki</mal:name>
       <mal:email>timo.jyrinki@iki.fi</mal:email>
       <mal:years>2012.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Jiri Grönroos</mal:name>
-      <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
-      <mal:years>2012-2018.</mal:years>
     </mal:credit>
   </info>
 
@@ -42,27 +35,24 @@
  <title>Kiintolevyn tarkistaminen</title>
   <p>Kiintolevyissä on sisäänrakennettu toiminta-analysaattori nimeltään <app>SMART</app> (Self-Monitoring, Analysis, and Reporting Technology), joka jatkuvasti tarkistaa levyä ongelmien varalta. SMART myös varoittaa sinua, jos levysi on rikkoutumassa välttääksesi tärkeän tiedon menettämistä.</p>
 
-  <p>Although SMART runs automatically, you can also check your disk’s
- health by running the <app>Disks</app> application:</p>
+  <p>Vaikka SMART-testit suoritetaan automaattisesti, levyn kunnon voi tarkastaa <app>Levyt</app>-ohjelmalla:</p>
 
 <steps>
  <title>Levyn kunnon tarkastaminen Levyt-ohjelmalla</title>
 
-  <item>
-    <p>Open <app>Disks</app> from the <gui>Activities</gui> overview.</p>
-  </item>
-  <item>
-    <p>Select the disk you want to check from the list of storage devices on
-    the left. Information and status of the disk will be shown.</p>
-  </item>
-  <item>
-    <p>Click the menu button and select <gui>SMART Data &amp; Self-Tests…</gui>.
-    The <gui>Overall Assessment</gui> should say “Disk is OK”.</p>
-  </item>
-  <item>
-    <p>See more information under <gui>SMART Attributes</gui>, or click the
-    <gui style="button">Start Self-test</gui> button to run a self-test.</p>
-  </item>
+ <item>
+  <p>Open the <app>Disks</app> application from the <gui>Activities</gui>
+  overview.</p>
+ </item>
+ <item>
+  <p>Valitse levy, jolle haluat tarkistuksen suorittaa <gui>Tallennuslaitteet</gui>-listasta. Levyn tiedot ja tila ilmestyy <gui>Asema</gui>-otsakkeen alle.</p>
+ </item>
+ <item>
+  <p><gui>SMART-tila</gui> -kentässä tulisi lukea "Levy on kunnossa".</p>
+ </item>
+ <item>
+  <p>Paina <gui>SMART-tiedot</gui> -painiketta katsellaksesi aseman tietoja tai ajaaksesi testejä.</p>
+ </item>
 
 </steps>
 
@@ -72,17 +62,9 @@
 
  <title>Mitä jos kiintolevy ei ole kunnossa?</title>
 
-  <p>Even if the <gui>Overall Assessment</gui> indicates that the disk
-  <em>isn’t</em> healthy, there may be no cause for alarm. However, it’s better
-  to be prepared with a <link xref="backup-why">backup</link> to prevent data
-  loss.</p>
+  <p>Vaikka <gui>SMART-tila</gui> ilmoittaa, että levy <em>ei</em> ole kunnossa, ei välttämättä ole syytä huoleen. On kuitenkin hyvä luoda <link xref="backup-why">varmuuskopiot</link>, jotta estät tiedostojen menetyksen.</p>
 
-  <p>If the status says “Pre-fail”, the disk is still reasonably healthy but
- signs of wear have been detected which mean it might fail in the near future.
- If your hard disk (or computer) is a few years old, you are likely to see
- this message on at least some of the health checks. You should
- <link xref="backup-how">backup your important files regularly</link> and check
- the disk status periodically to see if it gets worse.</p>
+  <p>Jos tila sanoo "Pre-fail", levy on vielä kohtalaisen hyväkuntoinen mutta kulumisen merkkejä alkaa näkymään, joka saattaa tarkoittaa sen rikkoutumista tulevaisuudessa. Jos kiintolevysi (tai tietokoneesi) on muutaman vuoden ikäinen, tämän viestin näkyminen on todennäköisempää ainakin joissain testeissä. Sinun tulisi <link xref="backup-how">varmuuskopioida tärkeät tiedot säännöllisesti</link> ja tarkistaa levyn tila nähdäksesi, huononeeko se.</p>
 
   <p>Jos se huononee, sinun kannattaa viedä tietokone/kiintolevy ammattilaiselle tarkempiin testeihin tai korjaukseen.</p>
 

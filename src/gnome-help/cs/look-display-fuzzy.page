@@ -2,14 +2,13 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="look-display-fuzzy" xml:lang="cs">
 
   <info>
-    <link type="guide" xref="hardware-problems-graphics"/>
+   <link type="guide" xref="hardware-problems-graphics"/>
+   <desc>The screen resolution may be set incorrectly.</desc>
 
     <revision pkgversion="3.8.0" version="0.3" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.9.92" date="2013-10-11" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
 
     <credit type="author">
-      <name>Dokumentační projekt GNOME</name>
+      <name>GNOME Documentation Project</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="author">
@@ -24,60 +23,50 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Shobha Tyagi</name>
-      <email>tyagishobha@gmail.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Možná je nastavené nesprávné rozlišení obrazovky.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
       <mal:email>adamatousek@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Marek Černocký</mal:name>
-      <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014, 2015</mal:years>
-    </mal:credit>
   </info>
 
-<title>Proč vše na mojí obrazovce vypadá rozmazané/kostičkované?</title>
+<title>Why do things look fuzzy/pixelated on my screen?</title>
 
-<p>To se může stát, protože rozlišení displeje, které máte nastavené, neodpovídá skutečnému rozlišení vaší obrazovky.</p>
+<p>This can happen because the display resolution that you have set it is not the right one for your screen.</p>
 
-<p>Když to chcete vyřešit, otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Displeje</gui>. Kliknutím na <gui>Displeje</gui> otevřete příslušný panel. Vyzkoušejte volby <gui>Rozlišení</gui> a nechte nastavenou tu, se kterou vypadá obrazovka nejlépe.</p>
+<p>To solve this, click your name on the top bar and go to <gui>Settings</gui>. In the Hardware section, choose <gui>Displays</gui>. Try some of the <gui>Resolution</gui> options and set the one that makes the screen look better.</p>
+
+<comment>
+  <cite date="2012-02-19">shaunm</cite>
+  <p>Would like a little more explanation on native resolution, which
+  is generally only applicable on LCDs. There's a stub for using two
+  monitors. Link from section below when it's added.</p>
+</comment>
 
 <section id="multihead">
-  <title>Když je připojeno více displejů</title>
+ <title>When multiple displays are connected</title>
 
-  <p>Pokud máte k počítači připojeny dva displeje (například normální monitor a projektor), mohou mít různé rozlišení. Protože ale grafická karta umí zobrazovat obrazovku jen v jednom rozlišení současně, může jeden z displejů vypadat rozmazaně.</p>
+ <p>If you have two displays connected to the computer (for example, a normal monitor and a projector), the displays might have different resolutions. However, the computer's graphics card can only display the screen in one resolution at a time, so at least one of the displays might look fuzzy.</p>
 
-  <p>Můžete nastavit, aby oba displeje měly různá rozlišení, ale nebudete pak moci na obou zobrazovat naráz tu stejnou obrazovku. Ve výsledku budete mít naráz dvě nezávislé obrazovky. Můžete mezi nimi přesouvat okna, ale nemůžete to stejné okno zobrazit na obou naráz.</p>
+ <p>You can set it so that the two displays have different resolutions, but you won't be able to display the same thing on both screens simultaneously. In effect, you will have two independent screens connected at the same time. You can move windows from one screen to another, but you can't show the same window on both screens at once.</p>
 
-  <p>Jak nastavit displeje, aby každý z nich měl své vlastní rozlišení:</p>
+ <p>To set up the displays so that they each have their own resolution:</p>
 
-  <steps>
-    <item>
-      <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Displeje</gui>.</p>
-    </item>
-    <item>
-      <p>Kliknutím na <gui>Displeje</gui> otevřete příslušný panel.</p>
-    </item>
-    <item>
-      <p>Displeje by měly být uvedené jako <gui>Zrcadlené</gui>. Vyberte svůj hlavní displej.</p>
-    </item>
-    <item>
-      <p>V seznamu nastavení displejů vyberte <gui>Hlavní</gui> a pak klikněte na <gui style="button">Použít</gui>, aby se nastavení uložilo.</p>
-    </item>
-    <item>
-      <p>Vybírejte jednotlivé displeje v šedém poli v horní části okna <gui>Displeje</gui>. Měňte u nich <gui>Rozlišení</gui>, dokud každý displej nevypadá správně.</p>
-    </item>
-  </steps>
+ <steps>
+  <item>
+   <p>Click your name on the top bar and click <gui>Settings</gui>. Open <gui>Displays</gui>.</p>
+  </item>
+
+  <item>
+   <p>Uncheck <gui>Mirror Displays</gui>.</p>
+  </item>
+
+  <item>
+   <p>Select each display in turn from the gray box at the top of the <gui>Displays</gui> window. Change the <gui>Resolution</gui> until that display looks right.</p>
+  </item>
+ </steps>
 
 </section>
 

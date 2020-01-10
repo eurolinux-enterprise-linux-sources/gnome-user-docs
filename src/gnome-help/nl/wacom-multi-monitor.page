@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="wacom-multi-monitor" xml:lang="nl">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="wacom-multi-monitor" xml:lang="nl">
   <info>
-    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <revision pkgversion="3.8.0" version="0.2" date="2013-03-09" status="candidate"/>
 
     <link type="guide" xref="wacom"/>
 
@@ -14,49 +11,33 @@
       <email>mdhillca@gmail.com</email>
       <years>2012</years>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-      <years>2015</years>
-    </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Het Wacom-tablet aan een bepaald beeldscherm koppelen.</desc>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
+    <desc>Map the Wacom tablet to a specific monitor.</desc>
   </info>
 
-  <title>Een monitor kiezen</title>
+  <title>Choose a monitor</title>
+
+  <comment>
+    <cite date="2012-04-21" href="mailto:mdhillca@gmail.com">Michael Hill</cite>
+    <p>In a multi-monitor setup, the user is able to select which monitor is
+     mapped by the graphics tablet.</p>
+  </comment>
 
 <steps>
-  <item>
-    <p>Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht en typ <gui>Wacom-tablet</gui>.</p>
+  <item><p>Click your name on the top bar and select
+   <gui>Settings</gui>.</p></item>
+  <item><p>Open <gui>Wacom Tablet</gui>.</p>
+     <note style="tip"><p>If no tablet is detected, you'll be asked to
+      <gui>Please plug in or turn on your Wacom tablet</gui>.</p></note>
   </item>
-  <item>
-    <p>Klik op <gui>Wacom-tablet</gui> om het paneel te openen.</p>
-    <!-- TODO: document how to connet the tablet using Bluetooth/add link -->
-    <note style="tip"><p>Als er geen tablet gedetecteerd is ziet u de opmerking <gui> Sluit het Wacom-tablet aan en zet het aan</gui>. Klik op de <gui>Bluetooth-instellingen</gui>-link om met een draadloze tablet te verbinden.</p></note>
+  <item><p>Click <gui>Map to Monitor…</gui></p></item>
+  <item><p>Check <gui>Map to single monitor</gui>.</p></item>
+  <item><p>Next to <gui>Output</gui>, select the monitor you wish to receive
+   input from your graphics tablet.</p>
+     <note style="tip"><p>Only the monitors that are configured will be
+      selectable.</p></note>
   </item>
-  <item><p>Klik op <gui>Map to Monitor…</gui>.</p></item>
-  <item><p>Plaats een vinkje bij <gui>Koppelen aan één monitor</gui></p></item>
-  <item><p>Selecteer bij <gui>Uitvoer</gui> de monitor waar de invoer van uw tekentablet naartoe moet.</p>
-     <note style="tip"><p>U kunt alleen monitoren die geconficureerd zijn kiezen.</p></note>
-  </item>
-  <item>
-    <p>Zet <gui>Beeldverhouding behouden (zwarte balken)</gui> AAN om het tekengebied van het tablet overeen te laten komen met de verhoudingen van de monitor. Deze instelling, ook wel <em>verhoudingen forceren</em> genoemd, <em>plaatst zwarte balken</em> in het tekengebied van een tablet zodat het beter overeenkomt met het scherm. Zo zou een 4:3 tablet aangepast worden zodat het tekengebied overeenkomt met een breedbeeldscherm.</p>
-  </item>
-  <item><p>Klik op <gui>Sluiten</gui>.</p></item>
+  <item><p>Click <gui>Close</gui>.</p></item>
 </steps>
 
 </page>

@@ -1,34 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="user-add" xml:lang="ru">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="user-add" xml:lang="ru">
 
   <info>
     <link type="guide" xref="user-accounts#manage" group="#first"/>
-
-    <revision pkgversion="3.8" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.13.92" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-
+    <link type="seealso" xref="user-addguest"/>
+    <desc>Добавьте новых пользователей, чтобы другие люди могли воспользоваться компьютером.</desc>
+    <!-- Setting 3.4.0 version to final for release, but we need to do something
+         about the various comments in here, so incomplete for 3.4.1.
+    -->
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-09" status="candidate"/>
     <credit type="author">
       <name>Проект документирования GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="author">
-      <name>Шон МакКенс (Shaun McCance)</name>
+      <name>Shaun McCance</name>
       <email>shaunm@gnome.org</email>
     </credit>
     <credit type="editor">
-      <name>Майкл Хилл (Michael Hill)</name>
+      <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Екатерина Герасимова (Ekaterina Gerasimova)</name>
-      <email>kittykat3756@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Добавьте новых пользователей, чтобы другие люди могли воспользоваться компьютером.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Александр Прокудин</mal:name>
@@ -39,82 +33,68 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011-2012</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Станислав Соловей</mal:name>
-      <mal:email>whats_up@tut.by</mal:email>
-      <mal:years>2013-2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Юлия Дронова</mal:name>
-      <mal:email>juliette.tux@gmail.com</mal:email>
-      <mal:years>2013-2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Юрий Мясоедов</mal:name>
-      <mal:email>ymyasoedov@yandex.ru</mal:email>
-      <mal:years>2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
 
   <title>Добавление новой учётной записи пользователя</title>
 
+<comment>
+  <cite date="2012-02-19">shaunm</cite>
+  <p>We need a note in here about password hints. Share content
+  with user-changepassword</p>
+</comment>
+
+<comment>
+  <cite date="2012-03-24">shaunm</cite>
+  <p>Let's add a "Disable account" page. Click the account, click the dots
+  next to "Password", select "Disable this account" from "Type".</p>
+</comment>
+
+<comment>
+<cite date="2012-03-24">shaunm</cite>
+<p>Much of the password dialog simply does not work:</p>
+<list>
+<item><p><gui>Choose a password at next login</gui> does nothing</p></item>
+<item><p><gui>Log in without a password</gui> does nothing</p></item>
+<item><p><gui>Enable this account</gui> does nothing (and it's not even
+clear to me what it should do):
+<link href="https://bugzilla.gnome.org/show_bug.cgi?id=655914">665914</link></p></item>
+<item><p><gui>Hint</gui> does nothing:
+<link href="https://bugzilla.gnome.org/show_bug.cgi?id=647912">647912</link>,
+<link href="https://bugzilla.gnome.org/show_bug.cgi?id=643445">643445</link></p></item>
+</list>
+</comment>
+
   <p>На компьютере может быть несколько учётных записей пользователей. Создайте учётную запись для каждого человека в вашей семье или компании. У каждого пользователя будет собственная домашняя папка, документы и настройки.</p>
 
-  <p>Для добавления учётных записей пользователя необходимы <link xref="user-admin-explain">права администратора</link>.</p>
+<steps>
+  <item><p>Click your name on the top bar and select <gui>Settings</gui>.</p></item>
+  <item><p>Open <gui>Users</gui>.</p></item>
 
-  <steps>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Users</gui>.</p>
-    </item>
-    <item>
-      <p>Нажмите <gui>Пользователи</gui> чтобы открыть этот раздел настроек.</p>
-    </item>
-    <item>
-      <p>Нажмите <gui style="button">Разблокировать</gui> в верхнем правом углу и затем по запросу системы введите свой пароль.</p>
-    </item>
-    <item>
-      <p>Нажмите кнопку <gui>+</gui> под списком учётных записей слева, чтобы добавить новую учётную запись пользователя.</p>
-    </item>
-    <item>
-      <p>If you want the new user to have
-      <link xref="user-admin-explain">administrative access</link> to the
-      computer, select <gui>Administrator</gui> for the account type.</p>
-      <p>Administrators can do things like add and delete users, install software
-      and drivers, and change the date and time.</p>
-    </item>
-    <item>
-      <p>Enter the new user’s full name. The username will be filled in
-      automatically based on the full name. If you do not like the proposed
-      username, you can change it.</p>
-    </item>
-    <item>
-      <p>You can choose to set a password for the new user, or let them set it
-      themselves on their first login.</p>
-      <p>If you choose to set the password now,
-      you can press the <gui style="button"><media its:translate="no" type="image" src="figures/system-run-symbolic.svg" width="16" height="16">
-      <span its:translate="yes">generate password</span></media></gui> icon to
-      automatically generate a random password.</p>
-    </item>
-    <item>
-      <p>Нажмите <gui>Добавить</gui>.</p>
-    </item>
-  </steps>
+  <item><p>Для добавления учётных записей пользователей необходимы <link xref="user-admin-explain">административные полномочия</link>. Нажмите <gui>Разблокировать</gui> в правом верхнем углу и наберите свой пароль или пароль администратора, когда система попросит это сделать.</p></item>
 
-  <p>If you want to change the password after creating the account, select the
-  account, <gui style="button">Unlock</gui> the panel and press the current
-  password status.</p>
+  <item><p>In the list of accounts on the left, click the
+  <gui style="button">+</gui> button to add a new user account.</p></item>
 
-  <note>
-    <p>In the <gui>Users</gui> panel, you can click the image next to the
-    user’s name to the right to set an image for the account. This image will
-    be shown in the login window. GNOME provides some stock photos you can use,
-    or you can select your own or take a picture with your webcam.</p>
-  </note>
+  <item><p>Если новый пользователь должен обладать <link xref="user-admin-explain">административным доступом</link> к компьютеру, выберите тип учётной записи <gui>Администратор</gui>. Администраторы могут выполнять такие действия, как добавление и удаление учётных записей пользователей, установка программ и драйверов, изменение даты и времени.</p></item>
+
+  <item><p>Введите полное имя нового пользователя. Имя пользователя будет заполнено автоматически на основе полного имени. При желании его можно изменить.</p></item>
+
+  <item><p>Click <gui>Add</gui>.</p></item>
+
+  <item><p>The account is initially disabled until you choose what to do about
+  the user's password. Select the new account from the list. Under
+  <gui>Login Options</gui> click <gui>Account disabled</gui> next to
+  <gui>Password</gui>. Select <gui>Set a password now</gui> from the
+  <gui>Action</gui> drop-down list, and have the user type their password in the
+  <gui>New password</gui> and <gui>Confirm password</gui> fields.
+  See <link xref="user-goodpassword"/>.</p>
+  <p>Можно также нажать кнопку рядом с полем <gui>Новый пароль</gui>, чтобы выбрать надёжный, сгенерированый случайным образом пароль. Эти пароли трудно подобрать, но и запомнить может быть труднее, так что будьте осторожны.</p></item>
+  <item><p>Нажмите <gui>Изменить</gui>.</p></item>
+</steps>
+
+<note><p>В окне <gui>Учётные записи</gui> можно щёлкнуть на изображении справа от имени пользователя, чтобы выбрать изображение для учётной записи. Оно будет показано в окне входа в систему. GNOME предоставляет несколько стандартных изображений, но можно также выбрать своё или сделать снимок веб-камерой.</p>
+</note>
 
 </page>

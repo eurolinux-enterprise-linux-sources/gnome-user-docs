@@ -1,33 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="privacy-purge" xml:lang="pt-BR">
 
-  <info>
-    <link type="guide" xref="privacy"/>
-    <link type="guide" xref="files#more-file-tasks"/>
+<info>
+  <link type="guide" xref="privacy"/>
+  <desc>Set how often your trash and temporary files will be cleared
+  from your computer.</desc>
+  <revision pkgversion="3.8" date="2013-03-06" status="candidate"/>
+  <credit type="author">
+    <name>Jim Campbell</name>
+    <email>jwcampbell@gmail.com</email>
+  </credit>
+  <credit type="editor">
+    <name>Michael Hill</name>
+    <email>mdhillca@gmail.com</email>
+  </credit>
 
-    <revision pkgversion="3.10" date="2013-09-29" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-30" status="candidate"/>
-
-    <credit type="author">
-      <name>Jim Campbell</name>
-      <email>jwcampbell@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Shaun McCance</name>
-      <email>mdhillca@gmail.com</email>
-      <years>2015</years>
-    </credit>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Defina o quão frequente seus arquivos da lixeira e temporários serão excluídos de seu computador.</desc>
-  
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Rodolfo Ribeiro Gomes</mal:name>
       <mal:email>rodolforg@gmail.com</mal:email>
@@ -35,54 +22,48 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Enrico Nicoletto</mal:name>
       <mal:email>liverig@gmail.com</mal:email>
       <mal:years>2013.</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>João Santana</mal:name>
-      <mal:email>joaosantana@outlook.com</mal:email>
-      <mal:years>2013.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Fontenelle</mal:name>
-      <mal:email>rafaelff@gnome.org</mal:email>
-      <mal:years>2012-2018.</mal:years>
-    </mal:credit>
   </info>
+  <title>Excluir permanentemente arquivos da lixeira e temporários</title>
 
-  <title>Excluindo permanentemente arquivos da lixeira e temporários</title>
-
-  <p>Esvaziar sua lixeira e arquivos temporários remove arquivos indesejados e desnecessários de seu computador, e também libera mais espaço em seu disco rígido. Você pode manualmente esvaziar sua lixeira e excluir seus arquivos temporários, mas você também pode definir seu computador para fazer isso automaticamente para você.</p>
-
-  <p>Arquivos temporários são arquivos criados automaticamente por aplicativos em plano de fundo. Eles podem melhorar o desempenho fornecendo uma cópia dos dados que foram baixados ou computados.</p>
+  <p>Clearing out your trash and temporary files removes
+  unwanted and unneeded files from your computer, and also frees up more
+  space on your hard drive. You can manually empty your trash and clear
+  your temporary files, but you can also set your computer to automatically
+  do this for you.</p>
 
   <steps>
-    <title>Automaticamente esvaziar sua impressora e excluir os arquivos temporários</title>
-    <item>
-      <p>Abra o panorama de <gui xref="shell-introduction#activities">Atividades</gui> e comece a digitar <gui>Privacidade</gui>.</p>
-    </item>
-    <item>
-      <p>Clique em <gui>Privacidade</gui> para abrir o painel.</p>
-    </item>
-    <item>
-      <p>Selecione <gui>Excluir permanentemente arquivos da lixeira e temporários</gui>.</p>
-    </item>
-    <item>
-      <p>Defina um ou ambos alternadores <gui>Esvaziar a lixeira automaticamente</gui> ou <gui>Excluir permanentemente arquivos temporários de forma automática</gui> para <key>❙</key>.</p>
-    </item>
-    <item>
-      <p>Defina o quão frequente você gostaria que sua <em>Lixeira</em> e <em>Arquivos temporários</em> sejam excluídos permanentemente alterando o valor de <gui>Excluir permanentemente após</gui>.</p>
-    </item>
-    <item>
-      <p>Use os botões <gui>Esvaziar lixeira</gui> ou <gui>Excluir permanentemente arquivos temporários</gui> para realizar estas ações imediatamente.</p>
-    </item>
+    <title>Automatically empty your trash and clear your temporary files after
+    a set period of time:</title>
+    <item><p>Clique no seu nome na <gui>barra superior</gui>.</p></item>
+    <item><p>Selecione <gui>Configurações</gui> e clique no ícone de <gui>Privacidade</gui>.</p></item>
+    <item><p>Selecione <gui>Excluir permanentemente arquivos da lixeira e temporários</gui>.</p></item>
+    <item><p>Set the <gui>Automatically Purge Trash</gui> or
+    <gui>Automatically Purge Temporary Files</gui> sliders to <gui>On</gui>.
+    </p></item>
+    <item><p>Set how often you would like your <em>Trash</em> and
+    <em>Temporary Files</em> to be purged by changing the
+    <gui>Purge After</gui> value.</p></item>
+    <item><p>Clique em <gui>Fechar</gui>.</p></item>
   </steps>
 
-  <note style="tip">
-    <p>Você pode excluir arquivos imediatamente e permanentemente usando a lixeira. Veja <link xref="files-delete#permanent"/> para informações.</p>
-  </note>
-
+  <note style="warning"><p>Use the <em>Purge After: Immediately</em> setting
+  with caution. Setting your trash to be purged immediately will
+  cause any files you delete to skip your trash and be permanently
+  deleted. Files that are deleted are much more difficult to recover than files
+  that are in your trash.</p>
+  
+  <p>Unless you have a specific need to immediately delete files from
+  your trash, it is probably safer to set a longer <gui>Purge After</gui>
+  value.</p></note>
+  
 </page>

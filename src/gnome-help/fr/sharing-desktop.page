@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="sharing-desktop" xml:lang="fr">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="sharing-desktop" xml:lang="fr">
   <info>
     <link type="guide" xref="sharing"/>
-    <link type="guide" xref="prefs-sharing"/>
+    <link type="guide" xref="settings-sharing"/>
 
-    <revision pkgversion="3.14" date="2015-01-25" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+    <revision pkgversion="3.8.2" version="0.3" date="2013-05-09" status="review"/>
 
     <credit type="author">
       <name>Ekaterina Gerasimova</name>
@@ -16,13 +14,9 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="author">
-      <name>Jim Campbell</name>
-      <email>jcampbell@gnome.org</email>
-    </credit>
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <desc>Permettre à d'autres personnes de voir et d'interagir avec votre bureau en utilisant VNC.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Luc Pionchon</mal:name>
@@ -39,13 +33,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Julien Hardelin</mal:name>
       <mal:email>jhardlin@orange.fr</mal:email>
-      <mal:years>2011, 2013</mal:years>
+      <mal:years>2011</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -71,54 +65,54 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Alexandre Franke</mal:name>
-      <mal:email>alexandre.franke@gmail.com</mal:email>
-      <mal:years>2015</mal:years>
-    </mal:credit>
   </info>
 
   <title>Partage de votre bureau</title>
 
-  <p>Vous pouvez permettre à d'autres personnes d'afficher et contrôler votre bureau à partir d'un autre ordinateur avec une application de visualisation de bureau. Configurez <app>Partage de l'écran</app> pour autoriser d'autres personnes à accéder à votre bureau et paramétrer les préférences de sécurité.</p>
+  <p>You can let other people view and control your desktop from another computer
+ with a desktop viewing application. Configure <gui>Screen Sharing</gui> to
+ allow others to access your desktop and set the security preferences.</p>
 
   <note style="info package">
-    <p>Le paquet <app>Vino</app> doit être installé pour que <gui>Partage de l'écran</gui> soit visible.</p>
+    <p>You must have the <app>Vino</app> package installed for
+     <gui>Screen Sharing</gui> to be visible.</p>
 
     <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
       <if:when test="action:install">
-        <p><link action="install:vino" style="button">Installer Vino</link></p>
+        <p><link action="install:vino" style="button">Install Vino</link></p>
       </if:when>
     </if:choose>
   </note>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Sharing</gui>.</p>
+      <p>Click your name on the top bar and select <gui>Settings</gui>.</p>
     </item>
     <item>
-      <p>Cliquez sur <gui>Partage</gui> pour ouvrir le panneau.</p>
+      <p>Open <gui>Sharing</gui>.</p>
     </item>
     <item>
-      <p>Si l'interrupteur <gui>Partage</gui> est sur <gui>Désactivé</gui>, basculez-le sur <gui>Activé</gui>.</p>
-
-      <note style="info"><p>Si le texte sous <gui>Nom de l'ordinateur</gui> le permet, vous pouvez <link xref="sharing-displayname">changer</link> le nom que votre ordinateur affiche sur le réseau.</p></note>
+      <p>If <gui>Sharing</gui> is <gui>OFF</gui>, switch it to
+      <gui>ON</gui>.</p>
     </item>
     <item>
-      <p>Choisissez <gui>Partage de l'écran</gui>.</p>
+      <p>Select <gui>Screen Sharing</gui>.</p>
     </item>
     <item>
-      <p>To let others view your desktop, switch <gui>Screen Sharing</gui> to
+      <p>To let others view your desktop, switch <gui>Remote View</gui> to
       <gui>ON</gui>. This means that other people will be able to attempt to
-      connect to your computer and view what’s on your screen.</p>
+      connect to your computer and view what's on your screen.</p>
     </item>
     <item>
-      <p>Pour laisser d'autres personnes interagir avec votre bureau, basculez <gui>Autoriser le contrôle à distance</gui> sur <gui>Activé</gui>. Cette action permet à un utilisateur distant de déplacer le pointeur de votre souris, de lancer des applications et de consulter des fichiers sur votre ordinateur en fonction des paramètres de sécurité que vous avez définis.</p>
+      <p>To let others interact with your desktop, switch
+      <gui>Remote Control</gui> to <gui>ON</gui>. This may allow the other
+      person to move your mouse, run applications, and browse files on your
+      computer, depending on the security settings which you are currently
+      using.</p>
 
       <note style="tip">
-        <p>Cette option est activée par défaut quand <gui>Partage d'écran</gui> est <gui>Activé</gui>.</p>
+        <p>This option is enabled by default when <gui>Remote View</gui> is
+        <gui>ON</gui>.</p>
       </note>
 
     </item>
@@ -128,30 +122,33 @@
   <title>Sécurité</title>
 
   <p>Il est important que vous mesuriez et compreniez la portée de chaque option de sécurité avant de la modifier.</p>
-
   <terms>
     <item>
-      <title>Les nouvelles connexions doivent demander une autorisation d'accès</title>
-      <p>Si vous souhaitez contrôler et décider de laisser ou non l'accès à quelqu'un à votre bureau, basculez <gui>Les nouvelles connexions doivent demander une autorisation d'accès</gui> sur <gui>Activé</gui>. Si vous désactivez cette fonction, il ne vous sera pas demandé d'autorisation pour laisser quelqu'un se connecter à votre ordinateur.</p>
+      <title>Approve All Connections</title>
+      <p>If you want to be able to choose whether to allow someone to access
+ your desktop, switch <gui>Approve All Connections</gui> to <gui>ON</gui>.
+ If you disable this option, you will not be asked whether you want to allow
+ someone to connect to your computer.</p>
       <note style="tip">
         <p>Cette option est activée par défaut.</p>
       </note>
     </item>
     <item>
-      <title>Demande d'un mot de passe</title>
-      <p>Pour obliger un autre utilisateur à s'identifier par mot de passe pour se connecter à votre ordinateur, basculez <gui>Demander un mot de passe</gui> sur <gui>Activé</gui>. Si vous ne le faites pas, n'importe qui peut essayer de voir votre bureau.</p>
+      <title>Require Password</title>
+      <p>To require other people to use a password when connecting to your
+ desktop, switch <gui>Require Password</gui> to <gui>ON</gui>. If you do
+ not use this option, anyone can attempt to view your desktop.</p>
       <note style="tip">
-        <p>Cette option est désactivée par défaut, mais vous devriez l'activer et définir un mot de passe sûr.</p>
+        <p>Cette option est désactivée par défaut, mais vous devriez l'activer et définir un mot de passe sécurisé.</p>
       </note>
     </item>
-<!-- TODO: check whether this option exists.
-    <item>
+<!--    <item>
       <title>Allow access to your desktop over the Internet</title>
-      <p>If your router supports UPnP Internet Gateway Device Protocol and it
-      is enabled, you can allow other people who are not on your local network
-      to view your desktop. To allow this, select <gui>Automatically configure
-      UPnP router to open and forward ports</gui>. Alternatively, you can
-      configure your router manually.</p>
+      <p>If your router supports UPnP Internet Gateway Device Protocol and it is
+ enabled, you can allow other people who are not on your local network to view
+ your desktop. To allow this, select <gui>Automatically configure UPnP router to
+ open and forward ports</gui>. Alternatively, you can configure your router
+ manually.</p>
       <note style="tip">
         <p>This option is disabled by default.</p>
       </note>
@@ -160,26 +157,17 @@
   </terms>
   </section>
 
-  <section id="networks">
-  <title>Réseaux</title>
-
-  <p>La section <gui>Réseaux</gui> affiche les réseaux auquels vous êtes actuellement connectés. Basculez l'interrupteur correspondant à chacun d'entre eux sur <gui>Activé</gui> ou sur <gui>Désactivé</gui> pour décider avec qui votre ordinateur peut être partagé.</p>
-  </section>
-
+<!--
   <section id="notification-icon">
-  <title>Arrêt du partage de votre bureau</title>
-
-  <p>Pour déconnecter quelqu'un en train de visualiser votre bureau avec l'<gui>icône de notifications</gui> du tiroir de messagerie :</p>
-    <steps>
-      <item><p>ouvrez le tiroir de messagerie en appuyant sur <keyseq><key>Logo</key><key>M</key></keyseq> ou en plaquant le curseur de votre souris contre le bas de l'écran,</p></item>
-      <item><p>cliquez sur l'icône <gui>Bureau</gui> du <gui>Tiroir de messagerie</gui> pour ouvrir le panneau <gui>Partage</gui>,</p>
-      </item>
-      <item><p>Choisissez <gui>Partage de l'écran</gui>.</p></item>
-      <item><p>Toggle the <gui>Screen Sharing</gui> slider to <gui>Off</gui>.
-      </p></item>
-    </steps>
-
+  <title>Show notification area icon</title>
+  <p>To be able to disconnect someone who is viewing your desktop, you need to
+ enable this option. If you select <gui>Always</gui>, this icon will be visible
+ regardless of whether someone is viewing your desktop or not.</p>
+    <note style="warning">
+      <p>If this option is disabled, it is possible for someone to connect to
+ your desktop without your knowledge, depending on the security settings.</p>
+    </note>
   </section>
-
+-->
 
 </page>

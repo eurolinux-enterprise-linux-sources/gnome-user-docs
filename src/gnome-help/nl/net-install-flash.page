@@ -1,82 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-install-flash" xml:lang="nl">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="net-install-flash" xml:lang="nl">
   <info>
     <link type="guide" xref="net-browser"/>
 
     <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
       <email>philbull@gmail.com</email>
     </credit>
 
+    <desc>You may need to install Flash to be able to view websites like YouTube, which display videos and interactive web pages.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Mogelijk moet u  Flash installeren om op websites zoals YouTube te gebruiken, om video's en interactieve webpagina's weer te geven.</desc>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
   </info>
 
-  <title>De Flash plug-in installeren</title>
+<title>Install the Flash plug-in</title>
 
-  <p><app>Flash</app> is een <em>plug-in</em> voor uw webbrowser, waarmee u video's kunt bekijken en interactieve webpagina's kunt gebruiken op sommige websites. Sommige websites werken niet zonder Flash.</p>
+<p><app>Flash</app> is a <em>plug-in</em> for your web browser that allows you to watch videos and use interactive web pages on some websites. Some websites won't work without Flash.</p>
 
-  <p>Als u Flash niet geïnstalleerd heeft, dan ziet u waarschijnlijk een bericht dat u dit vertelt wanneer u een website bezoekt die het nodig heeft. Flash is te krijgen als een gratis (maar niet vrij/open-bron) download voor de meeste webbrowsers. De meeste Linux-distributies hebben ook een versie van Flash die geïnstalleerd kan worden via het software-installeerprogramma (package manager).</p>
+<comment>
+<cite>shaunm</cite>
+<p>Would be nice to (soft?) link to a page on the software installer</p>
+</comment>
 
-  <steps>
-    <title>Als Flash beschikbaar is in het software-installatieprogramma:</title>
-    <item>
-      <p>Open de toepassing voor het installeren van software en zoek naar <input>flash</input>.</p>
-    </item>
-    <item>
-      <p>Zoek de <gui>Adobe Flash plug-in</gui>, <gui>Adobe Flash Player</gui> of iets dergelijks en klik erop om het te installeren.</p>
-    </item>
-    <item>
-      <p>Als er webbrowservensters geopend zijn, sluit deze dan en open ze opnieuw. De webbrowser ziet dat Flash geïnstalleerd is en u zou nu de websites die Flash gebruiken moeten kunnen bekijken.</p>
-    </item>
-  </steps>
+<p>If you do not have Flash installed, you will probably see a message telling you so when you visit a website that needs it. Flash is available as a free (but not open-source) download for most web browsers. Most Linux distributions have a version of Flash that you can install through their software installer (package manager) too.</p>
 
-  <steps>
-    <title>Als Flash <em>niet</em> beschikbaar is in het software-installatieprogramma:</title>
-    <item>
-      <p>Ga naar de <link href="http://get.adobe.com/flashplayer">Flash Player download website</link>. Uw webbrowser en besturingssysteem moeten herkend gevonden worden.</p>
-    </item>
-    <item>
-      <p>Klik op <gui>Selecteer de versie die u wilt downloaden</gui> en kies het type software-installatieprogramma dat werkt voor uw Linux-distributie. als u niet weet welke u moet gebruiken, kies dan de optie <file>.tar.gz</file></p>
-    </item>
-    <item>
-      <p>Bekijk de <link href="http://kb2.adobe.com/cps/153/tn_15380.html">instructies voor het installeren van Flash</link> om te zien hoe u het installeert voor uw webbrowser.</p>
-    </item>
-  </steps>
+<steps>
+ <title>If Flash is available from the software installer:</title>
+ <item>
+  <p>Open the software installer application and search for <input>flash</input>.</p>
+ </item>
+ <item>
+  <p>Look for the <gui>Adobe Flash plug-in</gui>, <gui>Adobe Flash Player</gui> or similar and click to install it.</p>
+ </item>
+ <item>
+  <p>If you have any web browser windows open, close them and then re-open them. The web browser should realize that Flash is installed when you open it again and you should now be able to view websites using Flash.</p>
+ </item>
+</steps>
+
+<steps>
+ <title>If Flash <em>is not</em> available from the software installer:</title>
+ <item>
+  <p>Go to the <link href="http://get.adobe.com/flashplayer">Flash Player download website</link>. Your browser and operating system should be automatically detected.</p>
+ </item>
+ <item>
+  <p>Click where it says <gui>Select version to download</gui> and choose the type of software installer that works for your Linux distribution. If you don't know which to use, choose the <file>.tar.gz</file> option.</p>
+ </item>
+ <item>
+  <p>Look at the <link href="http://kb2.adobe.com/cps/153/tn_15380.html">installation instructions for Flash</link> to learn how to install it for your web browser.</p>
+ </item>
+</steps>
 
 <section id="alternatives">
-  <title>Open-source alternatieven voor flash</title>
-
-  <p>Er zijn een paar vrije, opensource-alternatieven voor Flash. Deze kunnen in sommige opzichten beter werken dan de Flash plug-in (bijvoorbeeld door het beter omgaan met het afspelen van geluid), maar slechter op andere gebieden (bijvoorbeeld door het niet kunnen weergeven van sommige van de meer gecompliceerde Flash-pagina's op het web).</p>
-
-  <p>U zou er een van kunnen proberen als u niet tevreden bent met de Flashspeler, of als u zoveel mogelijk opensourcesoftware op uw computer wilt gebruiken. Hier zijn een paar mogelijkheden:</p>
-
-  <list style="compact">
-    <item>
-      <p>LightSpark</p>
-    </item>
-    <item>
-      <p>Gnash</p>
-    </item>
-  </list>
-
+ <title>Open-source alternatives to Flash</title>
+ <p>A handful of free, open-source alternatives to Flash are available. These tend to work better than the Flash plug-in in some ways (for example, by handling sound playback better), but worse in others (for example, by not being able to display some of the more complicated Flash pages on the web).</p>
+ <p>You might like to try one of these if you are dissatisfied with the Flash player, or if you would like to use as much open-source software as possible on your computer. Here are a few of the options:</p>
+ <list style="compact">
+  <item><p>LightSpark</p></item>
+  <item><p>Gnash</p></item>
+ </list>
 </section>
 
 </page>

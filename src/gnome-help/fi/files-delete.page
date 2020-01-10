@@ -2,13 +2,11 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-delete" xml:lang="fi">
 
   <info>
-    <link type="guide" xref="files#common-file-tasks"/>
+    <link type="guide" xref="files"/>
     <link type="seealso" xref="files-recover"/>
+    <desc>Poista turhaksi käyneet tiedostot ja kansiot.</desc>
 
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-16" status="review"/>
-    <revision pkgversion="3.13.92" date="2013-09-20" status="candidate"/>
-    <revision pkgversion="3.16" date="2015-02-22" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
 
     <credit type="author">
       <name>Cristopher Thomas</name>
@@ -18,48 +16,34 @@
       <name>Shaun McCance</name>
       <email>shaunm@gnome.org</email>
     </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
     <credit type="author">
       <name>Jim Campbell</name>
-      <email>jcampbell@gnome.org</email>
+      <email>jwcampbell@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Poista turhaksi käyneet tiedostot ja kansiot.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Timo Jyrinki</mal:name>
       <mal:email>timo.jyrinki@iki.fi</mal:email>
       <mal:years>2012.</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Jiri Grönroos</mal:name>
-      <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
-      <mal:years>2012-2018.</mal:years>
-    </mal:credit>
   </info>
 
 <title>Poista tiedostoja ja kansioita</title>
 
-  <p>Voit poistaa haluamasi tiedoston tai kansion. Kun poistat kohteen, se siirretään <gui>Roskakori</gui>-kansioon, jossa se säilyy niin kauan kunnes tyhjennät roskakorin. <gui>Roskakorin</gui> kohteet voidaan tarvittaessa <link xref="files-recover">palauttaa alkuperäisiin sijainteihinsa</link> jos satutkin vielä tarvitsemaan niitä, tai poistit ne vahingossa.</p>
+  <p>Kun poistat kohteen, se siirretään roskakoriin, jossa se säilyy niin kauan kunnes tyhjennät roskakorin. <gui>Roskakorin</gui> kohteet voidaan tarvittaessa <link xref="files-recover">palauttaa alkuperäisiin sijainteihinsa</link> jos satutkin vielä tarvitsemaan niitä tai poistit ne vahingossa.</p>
 
   <steps>
     <title>Siirrä tiedosto roskakoriin:</title>
     <item><p>Valitse roskakoriin siirrettävä kohde napsauttamalla sitä kerran.</p></item>
-    <item><p>Press <key>Delete</key> on your keyboard. Alternatively, drag the
-    item to the <gui>Trash</gui> in the sidebar.</p></item>
+    <item><p>Press <keyseq><key>Ctrl</key><key>Delete</key></keyseq> on your
+    keyboard. Alternatively, drag the item to the <gui>Trash</gui> in the
+    sidebar.</p></item>
   </steps>
-
-  <p>Tiedosto siirretään roskakoriin, ja sinulle esitetään mahdollisuus perua poistaminen valinnalla <gui>Kumoa</gui>. <gui>Kumoa</gui>-painike on näkyvissä muutaman sekunnin ajan. Jos valitset <gui>Kumoa</gui>, tiedosto palautetaan sen alkuperäiseen sijaintiin.</p>
 
   <p>Tiedostojen lopullinen poistaminen ja levytilan vapauttaminen vaatii roskakorin tyhjentämistä. Roskakorin voi tyhjentää napsauttamalla <gui>Roskakoria</gui> sivupalkissa hiiren oikealla painikkeella ja valitsemalla <gui>Tyhjennä roskakori</gui>.</p>
 
@@ -74,8 +58,9 @@
     <item><p>Koska tätä toimenpidettä ei voi perua, kysytään varmistusta tiedoston tai kansion poistamiseksi.</p></item>
   </steps>
 
+  <note style="tip"><p>Jos sinun täytyy usein poistaa tiedostoja ilman roskakoria (esimerkiksi, jos työskentelet usein arkaluonteisen tiedon parissa), voit lisätä <gui>Poista</gui>-rivin kansioiden ja tiedostojen kakkosklikkausvalikkoon. Valitse <gui>Tiedostot</gui> yläpalkista, sitten <gui>Asetukset</gui> ja valitse <gui>Toiminta</gui>-välilehti. Valitse <gui>Näytä poistokomento, joka ei käytä roskakoria</gui>.</p></note>
+
   <note><p><link xref="files#removable">Siirrettävältä laitteelta</link> poistetut tiedostot eivät välttämättä näy muilla käyttöjärjestelmillä, kuten Windowsilla ja Mac OS X:llä. Tiedostot ovat silti yhä laitteella, kun yhdistät sen tietokoneeseesi.</p></note>
 
   </section>
-
 </page>

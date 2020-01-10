@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="video-sending" xml:lang="nl">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="video-sending" xml:lang="nl">
 
   <info>
     <link type="guide" xref="media#videos"/>
+    <desc>Zorg ervoor dat de juiste video-codecs geïnstalleerd zijn.</desc>
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
-    <revision pkgversion="3.12.1" date="2014-03-30" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
-    <revision pkgversion="3.17.90" date="2015-08-30" status="final"/>
 
     <credit type="author">
       <name>Gnome-documentatieproject</name>
@@ -14,46 +12,45 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Zorg ervoor dat de juiste video-codecs geïnstalleerd zijn.</desc>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Anderen kunnen mijn video's niet afspelen</title>
+<title>Anderen kunnen mijn video's niet afspelen</title>
 
   <p>Als u een op uw Linux-computer gemaakte video stuurt naar iemand die Windows of Mac OS gebruikt, dan kan het zijn dat zij problemen ondervinden bij het afspelen van de video.</p>
 
-  <p>Degene aan wie u een video heeft gestuurd, moet de juiste <em>codecs</em> geïnstalleerd hebben om deze af te kunnen spelen. Een codec is een stukje software dat weet hoe het de video op het scherm kan weergeven. Er zijn veel verschillende videoformaten en elk daarvan vereist een andere codec om deze af te kunnen spelen. Het formaat van uw video kunt u achterhalen door dit te doen:</p>
+  <p>To be able to play your video, the person you sent it to must have the
+ right <em>codecs</em> installed. A codec is a little piece of software that
+ knows how to take the video and display it on the screen. There are lots of
+ different video formats and each requires a different codec to play it back.
+ You can check which format your video is by doing:</p>
+<list>
+    <item><p>Open the <app>Files</app> application from the <gui>Activities</gui>
+ overview.</p></item>
+    <item><p>Right-click on video file and select <gui>Properties</gui>.</p></item>
+    <item><p>Go to the <gui>Audio/Video</gui> tab and look at which
+ <gui>codec</gui> is listed under <gui>Video</gui>.</p></item>
+</list>
 
-  <list>
-    <item>
-      <p>Open <app>Bestanden</app> vanuit het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht.</p>
-    </item>
-    <item>
-      <p>Klik met uw rechtermuisknop op het videobestand en selecteer daarna <gui>Eigenschappen</gui>.</p>
-    </item>
-    <item>
-      <p>Ga naar het tabblad <gui>Audio/video</gui> of <gui>Video</gui> en kijk welke <gui>codec</gui> er bij <gui>Video</gui> en <gui>Audio</gui> staat (als de video ook audio heeft).</p>
-    </item>
-  </list>
+  <p>Ask the person having problems with playback if they have the right codec
+ installed. They may find it helpful to search the web for the name of the codec
+ plus the name of their video playback application. For example, if your video
+ uses the <em>Theora</em> format and you have a friend using Windows Media
+ Player to try and watch it, search for "theora windows media player". You will
+ often be able to download the right codec for free if it's not installed.</p>
 
-  <p>Vraag degene die problemen heeft met het afspelen of die de juiste codec heeft geïnstalleerd. De ontvanger kan gebaat zijn bij het zoeken op internet naar de naam van de codec plus de naam van de door hem gebruikte video-afspeeltoepassing. Een voorbeeld: als uw video het <em>Theora</em>-formaat gebruikt en u heeft een vriend die hem probeert te bekijken in Windows Media Player, zoek dan naar ‘theora windows media player’. In veel gevallen zult u kosteloos de juiste codec kunnen downloaden als die niet geïnstalleerd is.</p>
+  <p>If you can't find the right codec, try the
+ <link href="http://www.videolan.org/vlc/">VLC media player</link>. It works on
+ Windows and Mac OS as well as Linux, and supports a lot of different video
+ formats. Failing that, try converting your video into a different format. Most
+ video editors are able to do this, and specific video converter applications are
+ available. Check the software installer application to see what's available.</p>
 
-  <p>Als u niet de juiste codec kunt vinden, probeer dan de <link href="http://www.videolan.org/vlc/">VLC-mediaspeler</link>. Deze werkt zowel op Windows als Mac OS en Linux en ondersteunt een groot aantal videoformaten. U kunt ook proberen uw video te converteren naar een ander formaat. De meeste video-editors kunnen dit en er zijn ook speciale toepassingen om video's te converteren. Ga in de software-installatietoepassing na wat er beschikbaar is.</p>
-
-  <note>
-    <p>Er kunnen zich nog een paar andere problemen voordoen waardoor anderen uw video niet kunnen afspelen. De video kan tijdens het toesturen beschadigd geraakt zijn (soms worden grote bestanden niet helemaal goed overgezet), de ontvanger kan problemen hebben met de video-afspeeltoepassing, of het kan zijn dat de video niet op de juiste manier aangemaakt is (er kunnen fouten zijn opgetreden bij het opslaan van de video).</p>
-  </note>
-
+<note>
+  <p>There are a few other problems which might prevent someone from playing
+ your video. The video could have been damaged when you sent it to them
+ (sometimes big files aren't copied across perfectly), they could have problems
+ with their video playback application, or the video may not have been created
+ properly (there could have been some errors when you saved the video).</p>
+</note>
+	
 </page>

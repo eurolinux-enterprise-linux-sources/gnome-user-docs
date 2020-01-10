@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task a11y" id="a11y-right-click" xml:lang="cs">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task a11y" id="a11y-right-click" xml:lang="cs">
   <info>
     <link type="guide" xref="mouse"/>
     <link type="guide" xref="a11y#mobility" group="clicking"/>
 
-    <revision pkgversion="3.8.0" date="2013-03-13" status="candidate"/>
-    <revision pkgversion="3.9.92" date="2013-09-18" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="final"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
 
     <credit type="author copyright">
       <name>Shaun McCance</name>
@@ -25,55 +19,59 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
-    <desc>Jak provádět kliknutí pravým tlačítkem pomocí držení levého tlačítka.</desc>
+    <desc>Press and hold the left mouse button to right-click.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
       <mal:email>adamatousek@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Marek Černocký</mal:name>
-      <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014, 2015</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Simulace kliknutí pravým tlačítkem</title>
+  <title>Simulate a right mouse click</title>
 
-  <p>Kliknutí pravým tlačítkem myši může provést delším podržením levého tlačítka. To je užitečné, když je pro vás obtížné pohybovat prsty na ruce nezávisle nebo když má vaše ukazovací zařízení jen jedno tlačítko.</p>
+  <p>You can right-click by holding down the left mouse button. This is useful
+  if you find it difficult to move your fingers individually on one hand, or if
+  your pointing device only has a single button.</p>
 
   <steps>
     <item>
-      <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Univerzální přístup</gui>.</p>
+      <p>Click your name on the top bar and select <gui>Settings</gui>.</p>
     </item>
     <item>
-      <p>Kliknutím na <gui>Univerzální přístup</gui> otevřete příslušný panel.</p>
+      <p>Open <gui>Universal Access</gui> and select the <gui>Pointing and
+      Clicking</gui> tab.</p>
     </item>
     <item>
-      <p>V části <gui>Ukazování a klikání</gui> zmáčkněte <gui>Pomáhat s klikáním</gui>.</p>
-    </item>
-    <item>
-      <p>Přepněte vypínač <gui>Simulovat druhé kliknutí</gui> na <gui>❙</gui> (zapnuto).</p>
+      <p>Switch <gui>Simulated Secondary Click</gui> on.</p>
     </item>
   </steps>
 
-  <p>Úpravou <gui>Zpoždění přijetí</gui> můžete měnit, jak dlouho je potřeba držet levé tlačítko zmáčknuté, než je to považováno za kliknutí pravým tlačítkem.</p>
+  <p>You can change how long you must hold down the left mouse button before it
+  is registered as a right click. On the <gui>Pointing and Clicking</gui> tab,
+  change the <gui>Acceptance delay</gui> under <gui>Simulated Secondary
+  Click</gui>.</p>
 
-  <p>Abyste klikli pravým tlačítkem se simulovaným druhým kliknutím, držte levé tlačítko myši zmáčknuté tam, kde byste pravým tlačítkem klikli normálně. Ukazatel myši se během držení levého tlačítka začne vyplňovat jinou barvou. Jakmile změní barvu celý, uvolněte tlačítko a provede se dvojité kliknutí pravým tlačítkem.</p>
+  <p>To right-click with simulated secondary click, hold down the left mouse
+  button where you would normally right-click, then release. The pointer fills
+  with blue as you hold down the left mouse button. Once it is entirely blue,
+  release the mouse button to right-click.</p>
 
-  <p>Některé speciální ukazatele, jako je ukazatel při změně velikosti, barvu nemění. I tak můžete normálně používat simulaci druhého kliknutí, akorát nebudete mít vizuální zpětnou odezvu od ukazatele.</p>
+  <p>Some special pointers, such as the resize pointers, do not change colors.
+  You can still use simulated secondary click as normal, even if you don't get
+  visual feedback from the pointer.</p>
 
-  <p>Pokud používáte <link xref="mouse-mousekeys">myš z klávesnice</link>, můžete také kliknout pravým tlačítkem držením zmáčknuté klávesy <key>5</key> na numerické klávesnici.</p>
+  <p>If you use <link xref="mouse-mousekeys">Mouse Keys</link>, this also
+  allows you to right-click by holding down the <key>5</key> key on your
+  keypad.</p>
 
   <note>
-    <p>V přehledu <gui>Činností</gui> funguje dlouhé zmáčknutí stejně jako kliknutí pravým tlačítkem vždy, i když je tato funkce v systému vypnutá. V přehledu funguje dlouhé kliknutí mírně odlišně: nemusíte tlačítko ani uvolnit, aby se provedlo kliknutí pravým tlačítkem.</p>
+    <p>In the <gui>Activities</gui> overview, you are always able to long-press
+    to right-click, even with this feature disabled. Long-press works slightly
+    differently in the overview: You do not have to release the button to
+    right-click.</p>
   </note>
 
 </page>

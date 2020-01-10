@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="clock-calendar" xml:lang="de">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" id="clock-calendar" xml:lang="de">
 
   <info>
     <link type="guide" xref="clock"/>
     <link type="guide" xref="shell-overview#desktop"/>
 
+    <desc>Ihre Termine im Kalender oben am Bildschirm anzeigen.</desc>
+
     <revision pkgversion="3.8.0" date="2013-03-09" status="outdated"/>
-    <revision pkgversion="3.10" date="2013-11-04" status="review"/>
-    <revision pkgversion="3.16" date="2015-03-02" status="outdated"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
 
     <credit type="author">
       <name>GNOME-Dokumentationsprojekt</name>
@@ -18,19 +17,19 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Ihre Termine im Kalender oben am Bildschirm anzeigen.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hendrik Knackstedt</mal:name>
-      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
-      <mal:years>2011.</mal:years>
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -40,50 +39,35 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Christian Kirbach</mal:name>
-      <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Mario Blättermann</mal:name>
-      <mal:email>mario.blaettermann@gmail.com</mal:email>
-      <mal:years>2011-2013, 2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Benjamin Steinwender</mal:name>
-      <mal:email>b@stbe.at</mal:email>
-      <mal:years>2014.</mal:years>
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.to</mal:years>
     </mal:credit>
   </info>
 
  <title>Kalendereinträge</title>
 
-  <note>
-    <p>Dafür müssen Sie den <app>Evolution</app>-Kalender nutzen oder ein Online-Konto eingerichtet haben, das von <gui>Kalender</gui> unterstützt wird.</p>
-    <p>In den meisten Distributionen wird <app>Evolution</app> standardmäßig installiert. Falls dies bei Ihnen nicht der Fall ist, müssen Sie es über die Paketverwaltung Ihrer Distribution installieren.</p>
+ <note>
+  <p>Dafür muss <app>Evolution</app> auf Ihrem Rechner installiert sein.</p>
+  <p>In den meisten Distributionen wird <app>Evolution</app> standardmäßig installiert. Falls dies nicht der Fall ist, müssen Sie es über die Paketverwaltung Ihrer Distribution nachinstallieren.</p>
  </note>
 
   <p>So zeigen Sie Ihre Termine an:</p>
   <steps>
-    <item>
-      <p>Klicken Sie auf die Uhr im oberen Panel.</p>
-    </item>
-    <item>
-      <p>Klicken Sie im Kalender auf das Datum, für welches Sie Ihre Termine sehen wollen.</p>
-
-    <note>
-       <p>Ein Punkt wird unter jedem Datum angezeigt, an dem es einen Termin gibt.</p>
-    </note>
-
-      <p>Vorhandene Termine wenden links des Kalenders angezeigt. Sobald Einträge dem <app>Evolution</app>-Kalender hinzugefügt werden, erscheinen diese in der Terminliste der Uhr.</p>
-    </item>
+   <item>
+    <p>Click on the clock on the top bar.</p>
+   </item>
+   <item>
+    <p>Klicken Sie im <gui>Kalender</gui> auf das Datum, für welches Sie Ihre Termine sehen wollen.</p>
+   </item>
+   <item>
+    <p>Der Kalender zeigt vorhandene Termine rechts an. Sobald Einträge in <app>Evolution</app> hinzugefügt werden, werden diese in der Terminliste der Uhr angezeigt.</p>
+   </item>
   </steps>
 
  <if:choose>
  <if:when test="!platform:gnome-classic">
- <media type="image" src="figures/shell-appts.png" width="500">
+ <media type="image" src="figures/shell-appts.png" width="500" height="396">
   <p>Uhr, Kalender und Termine</p>
  </media>
  </if:when>
@@ -93,5 +77,21 @@
  </media>
  </if:when>
  </if:choose>
+
+  <p>Um schnell zum eigentlichen <app>Evolution</app>-Kalender zu gelangen, klicken Sie auf die Uhr und dann auf <gui>Kalender öffnen</gui>.</p>
+
+ <note>
+  <p>Dies funktioniert nur, wenn Sie ein <app>Evolution</app>-Konto haben. Andernfalls wird ein Fenster mit den nötigen Schritten erscheinen, um Ihr erstes Konto hinzuzufügen.</p>
+ </note>
+
+ <comment>
+    <cite date="2012-02-19" href="mailto:nruz@alumnos.inf.utfsm.cl">Natalia Ruz</cite>
+    <p>Should have some information or link to "how to add a mail account to
+    Evolution", and possibly an image (but maybe a screenshot is too big).</p>
+</comment>
+<comment>
+    <cite date="2012-02-19" href="mailto:mdhillca@gmail.com">mdhill</cite>
+    <p>Link to app-evolution-setup.page.stub.</p>
+</comment>
 
 </page>

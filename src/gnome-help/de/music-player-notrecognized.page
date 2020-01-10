@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="music-player-notrecognized" xml:lang="de">
+  <info>
+    <link type="guide" xref="media#music"/>
+    <link type="seealso" xref="music-player-newipod"/>
+
+
+    <credit type="author">
+      <name>GNOME-Dokumentationsprojekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <desc>Fügen Sie eine Datei namens <input>.is_audio_player</input> hinzu, um Ihren Rechner darüber zu informieren, dass es sich dabei um ein Audio-Wiedergabegerät handelt.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.to</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Warum wird mein Audio-Wiedergabegerät beim Einstecken nicht erkannt?</title>
+
+<p>Wenn Ihr Audioplayer (MP3-Player etc.) an den Rechner angeschlossen ist, Sie ihn aber in Ihrer Musikverwaltungsanwendung nicht sehen können, wurde er vielleicht nicht richtig als Audioplayer erkannt.</p>
+
+<p>Versuchen Sie den Audioplayer auszustecken und dann wieder einzustecken. Wenn das nicht hilft, öffnen Sie die Dateiverwaltung. Sie sollten den Audioplayer in der Seitenleiste unter <gui>Geräte</gui> aufgelistet finden – klicken Sie darauf, um den Ordner des Audioplayers zu öffnen. Klicken Sie nun <guiseq><gui>Datei</gui><gui>Neues Dokument anlegen</gui><gui>Leeres Dokument</gui></guiseq>, tippen Sie <input>.is_audio_player</input> und drücken Sie die <key>Eingabetaste</key> (der Punkt und die Unterstriche sind dabei wichtig, und verwenden Sie nur Kleinbuchstaben). Diese Datei weist Ihren Rechner an, das Gerät als einen Audioplayer zu behandeln.</p>
+
+<p>Suchen Sie nun den Audioplayer in der Seitenleiste der Dateiverwaltung und werfen Sie ihn aus (klicken Sie mit der rechten Maustaste darauf und klicken Sie <gui>Auswerfen</gui>). Ziehen Sie ihn ab und schließen Sie ihn wieder an. Diesmal sollte er von Ihrer Musikverwaltung als Audioplayer erkannt worden sein. Wenn nicht, versuchen Sie die Musikverwaltung zu schließen und dann wieder zu öffnen.</p>
+
+<note>
+ <p>Diese Anleitung funktioniert nicht bei iPods und einigen anderen Audioplayern. Sie sollte jedoch funktionieren, wenn Ihr Audioplayer ein <em>USB-Massenspeicher</em> ist; sein Benutzerhandbuch sollte darüber Auskunft geben, ob er einer ist.</p>
+</note>
+
+<note>
+ <p>Wenn Sie wieder im Ordner des Audioplayers nachschauen, sehen Sie die Datei <input>.is_audio_player</input> nicht. Das liegt daran, dass der Punkt im Dateinamen die Dateiverwaltung anweist, die Datei zu verbergen. Sie können überprüfen, dass sie noch immer da ist, indem Sie <guiseq><gui>Ansicht</gui><gui>Verborgene Dateien anzeigen</gui></guiseq> klicken.</p>
+</note>
+
+</page>

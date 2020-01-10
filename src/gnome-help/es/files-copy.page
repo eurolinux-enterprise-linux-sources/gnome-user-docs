@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" version="1.0 ui/1.0" id="files-copy" xml:lang="es">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" id="files-copy" xml:lang="es">
 
   <info>
-    <link type="guide" xref="files#common-file-tasks"/>
+    <link type="guide" xref="files"/>
+    <desc>Copiar o mover elementos a una carpeta nueva.</desc>
 
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-15" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
 
     <credit type="author">
       <name>Cristopher Thomas</name>
@@ -20,15 +19,12 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Copiar o mover elementos a una carpeta nueva.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2011 - 2018</mal:years>
+      <mal:years>2011 - 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -63,7 +59,7 @@
 <item><p>Seleccione el archivo que quiera copiar,pulsándolo una sola vez.</p></item>
 <item><p>Pulse con el botón derecho y elija <gui>Copiar</gui>, o pulse <keyseq><key>Ctrl</key><key>C</key></keyseq>.</p></item>
 <item><p>Vaya a otra carpeta donde quiera poner la copia del archivo.</p></item>
-<item><p>Pulse el botón del menú y elija <gui>Pegar</gui> para finalizar la copia del archivo, o pulse <keyseq><key>Ctrl</key><key>V</key></keyseq>. Ahora habrá una copia del archivo en la carpeta original y en la otra carpeta.</p></item>
+<item><p>Pulse el icono de la rueda dentada y elija <gui>Pegar</gui> para finalizar la copia del archivo, o pulse <keyseq><key>Ctrl</key><key>V</key></keyseq>. Ahora habrá una copia del archivo en la carpeta original y en la otra carpeta.</p></item>
 </steps>
 
 <steps ui:expanded="false">
@@ -71,7 +67,7 @@
 <item><p>Seleccione el archivo que quiere mover pulsándolo una sola vez.</p></item>
 <item><p>Pulse con el botón derecho y elija <gui>Cortar</gui>, o pulse <keyseq><key>Ctrl</key><key>X</key></keyseq>.</p></item>
 <item><p>Vaya a otra carpeta donde quiera mover el archivo.</p></item>
-<item><p>Pulse el botón del menú y elija <gui>Pegar</gui> para finalizar la copia del archivo, o pulse <keyseq><key>Ctrl</key><key>V</key></keyseq>. El archivo se moverá desde su ubicación original hasta la otra carpeta.</p></item>
+<item><p>Pulse el icono de la rueda dentada y elija <gui>Pegar</gui> para finalizar la copia del archivo, o pulse <keyseq><key>Ctrl</key><key>V</key></keyseq>. El archivo se moverá desde su ubicación original hasta la otra carpeta.</p></item>
 </steps>
 
 <steps ui:expanded="false">
@@ -86,7 +82,7 @@
 </steps>
 
 <note>
-  <p>No puede copiar o mover un archivo a una carpeta de <em>solo lectura</em>. Algunas carpetas son de solo lectura para impedir que pueda hacer cambios en su contenido. Puede hacer que deje de ser de solo lectura <link xref="nautilus-file-properties-permissions">cambiando los permisos del archivo</link>.</p>
+ <p>No puede copiar o mover un archivo a una carpeta de <em>solo lectura</em>. Algunas carpetas son de solo lectura para impedir que pueda hacer cambios en su contenido. Puede hacer que deje de ser de solo lectura <link xref="nautilus-file-properties-permissions">cambiando los permisos del archivo</link>.</p>
 </note>
 
 </page>

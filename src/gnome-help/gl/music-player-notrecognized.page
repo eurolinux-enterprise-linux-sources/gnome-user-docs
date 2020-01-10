@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="music-player-notrecognized" xml:lang="gl">
+  <info>
+    <link type="guide" xref="media#music"/>
+    <link type="seealso" xref="music-player-newipod"/>
+
+
+    <credit type="author">
+      <name>Proxecto de documentación de GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <desc>Engadir un ficheiro <input>.is_audio_player</input> para decirlle ao seu computador que é un reprodutor de son.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Por que non se recoñece o meu reprodutor de audio cando o conecto?</title>
+
+<p>Se o seu reprodutor de son (reprodutor MP3, etc.) está conectado ao computador pero non pode velo no seu aplicativo de organización musical, pode que non fora recoñecido correctamente como un reprodutor de son.</p>
+
+<p>Tente desconectar o reprodutor e logo conécteo de novo. Se isto non axuda, abra o Xestor de ficheiros. Debería ver o reprodutor listado baixo a barra lateral <gui>Dispositivos</gui> - prema sobre el para abrir o cartafol do reprodutor de música. Agora, prema <guiseq><gui>Ficheiro</gui><gui>Novo documento</gui><gui>Documento baleiro</gui></guiseq>, escriba <input>.is_audio_player</input> e prema <key>Intro</key> (o punto e as barras baixas son importantes, e debe estar todo en minúsculas). Este ficheiro dílle ao seu computador que recoñeza o dispositivo como un reprodutor de música.</p>
+
+<p>Agora, busque o reprodutor de música na barra lateral do Xestor de ficheiros e extráiao (co botón dereito e prema <gui>Extraer</gui>). Desconécteo, e logo conécteo de novo. Agora debería recoñecerse un reprodutor de música no seu organizador de música. Se non é así, tente pechar o organizador de música e volvéndoo a abrir.</p>
+
+<note>
+ <p>Estas instrucións non funcionan para os iPods e algúns reprodutores de música. Deberían funcionar se o seu reprodutor é un dispositivo de <em>almacenamento masivo USB</em>. Este dato debería dicilo no manual do reprodutor-</p>
+</note>
+
+<note>
+ <p>Cando vexa de novo o cartafol do reprodutor de música, non verá o ficheiro <input>.is_audio_player</input>. Isto é porque o punto ao principio do ficheiro dille ao Xestor de ficheiros que agoche o ficheiro. Pode comprobar que aínda existe premendo <guiseq><gui>Ver</gui><gui>Mostrar ficheiros ocultos</gui></guiseq>.</p>
+</note>
+
+</page>

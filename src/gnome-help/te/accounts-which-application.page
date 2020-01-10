@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="accounts-which-application" xml:lang="te">
-
   <info>
-    <link type="guide" xref="accounts"/>
-    <link type="seealso" xref="accounts-disable-service"/>
-
-    <revision pkgversion="3.8.2" date="2013-05-22" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="incomplete"/>
+    <revision pkgversion="3.8.2" version="0.2" date="2013-05-22" status="review"/>
 
     <credit type="author copyright">
       <name>Baptiste Mille-Mathias</name>
       <email>baptistem@gnome.org</email>
-      <years>2012, 2013</years>
+      <years>2012-2013</years>
     </credit>
     <credit type="editor">
       <name>మైకేల్ హిల్</name>
@@ -23,104 +17,71 @@
       <email>ak-47@gmx.net</email>
     </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <link type="guide" xref="accounts"/>
+    <link type="seealso" xref="accounts-disable-service"/>
 
-    <desc><app>ఆన్‌లైన్ ఖాతాలు</app> నందు సృష్టించిన ఖాతాలను మరియు అవి ఇచ్చే సేవలను అనువర్తనాలు వుపయోగించగలవు.</desc>
-
+    <desc>Applications can use the accounts created in <app>Online Accounts</app>
+     and the services they exploit.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Praveen Illa</mal:name>
       <mal:email>mail2ipn@gmail.com</mal:email>
-      <mal:years>2011, 2014. </mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>కృష్ణబాబు క్రొత్తపల్లి</mal:name>
-      <mal:email>kkrothap@redhat.com</mal:email>
-      <mal:years>2013.</mal:years>
+      <mal:years>2011.</mal:years>
     </mal:credit>
   </info>
 
-  <title>Online services and applications</title>
+  <title>Which applications take advantage of online accounts?</title>
 
-  <p>Once you have added an online account, any application can use that
-  account for any of the available services that you have not
-  <link xref="accounts-disable-service">disabled</link>. Different
-  providers provide different services. This page lists the different
-  services and some of the applications that are known to use them.</p>
+  <p><app>Online Accounts</app> can be used by external applications to
+  automatically configure themselves.</p>
 
-  <terms>
-    <item>
-      <title>Calendar</title>
-      <p>The Calendar service allows you to view, add, and edit events in
-      an online calendar. It is used by applications like <app>Calendar</app>,
-      <app>Evolution</app>, and <app>California</app>.</p>
-    </item>
+  <section id="accounts-google-services">
+   <title>With a Google account</title>
 
-    <item>
-      <title>Chat</title>
-      <p>The Chat service allows you to chat with your contacts on popular
-      instant messaging platforms. It is used by the <app>Empathy</app>
-      application.</p>
-    </item>
+   <list>
+    <item><p><app>Evolution</app>, the email application. Your email account will
+    be added to <app>Evolution</app> automatically, so it will retrieve your
+    mail, give you access to your contacts, and display your calendar items in
+    your Google agenda.
+    </p></item>
+    <item><p><app>Empathy</app>, the instant messaging application. Your online
+    account will be added and you will be able to communicate with your friends.
+    </p></item>
+    <item><p><app>Contacts</app>, which will allow to see and edit your contacts.
+    </p></item>
+    <item><p><app>Documents</app> can access your online documents and display
+    them.</p></item>
+   </list>
+  </section>
 
-    <item>
-      <title>పరిచయాలు</title>
-      <p>The Contacts service allows you to see the published details of your
-      contacts on various services. It is used by applications like
-      <app>Contacts</app> and <app>Evolution</app>.</p>
-    </item>
+  <section id="accounts-windows-services">
+   <title>With Windows Live, Facebook or Twitter accounts</title>
 
-    <item>
-      <title>Documents</title>
-      <p>The Documents service allows you to view your online documents
-      such as those in Google docs. You can view your documents using the
-      <app>Documents</app> application.</p>
-    </item>
+   <p><app>Empathy</app> can use these accounts to connect you online and chat
+   with your contacts, friends, and followers.</p>
+  </section>
 
-    <item>
-      <title>Files</title>
-      <p>The Files service adds a remote file location, as if you had added
-      one using the <link xref="nautilus-connect">Connect to Server</link>
-      functionality in the file manager. You can access remote files using
-      the file manager, as well as through file open and save dialogs in any
-      application.</p>
-    </item>
+  <section id="account-windows-skydrive">
+   <title>With a SkyDrive account</title>
 
-    <item>
-      <title>మెయిలు</title>
-      <p>The Mail service allows you to send and receive email through an
-      email provider like Google. It is used by <app>Evolution</app>.</p>
-    </item>
+   <p><app>Documents</app> can access your online documents in Microsoft
+   SkyDrive and display them.</p>
+  </section>
 
-<!-- TODO: Not sure what this does. Doesn't seem to do anything in Maps app.
-    <item>
-      <title>Maps</title>
-    </item>
--->
+  <section id="account-exchange">
+   <title>With a Exchange account</title>
 
-    <item>
-      <title>Photos</title>
-      <p>The Photos service allows you to view your online photos such as
-      those you post on Facebook. You can view your photos using the
-      <app>Photos</app> application.</p>
-    </item>
+   <p>Once you have created an Exchange account, <app>Evolution</app> will start
+   retrieving mails from this account.</p>
+  </section>
 
-    <item>
-      <title>Printers</title>
-      <p>The Printers service allows you to send a PDF copy to a provider from
-      within the print dialog of any application. The provider might provide
-      print services, or it might just serve as storage for the PDF, which
-      you can download and print later.</p>
-    </item>
+  <section id="accounts-ownCloud">
+   <title>With a ownCloud account</title>
 
-    <item>
-      <title>Read Later</title>
-      <p>The Read Later service allows you to save a web page to external
-      services so that you can read it later on another device. No applications
-      currently use this service.</p>
-    </item>
+   <p>When an ownCloud account is set up, <app>Evolution</app> is able to
+   access and edit contacts and calendar appointments.</p>
 
-  </terms>
-
+   <p><app>Files</app> and other applications will be able to list and access
+   your online files stored in the ownCloud installation.</p>
+  </section>
 </page>

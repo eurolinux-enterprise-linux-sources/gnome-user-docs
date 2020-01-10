@@ -1,57 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" version="1.0 ui/1.0" id="keyboard-shortcuts-set" xml:lang="sr">
-
+<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" id="keyboard-shortcuts-set" xml:lang="sr">
   <info>
     <link type="guide" xref="keyboard"/>
     <link type="seealso" xref="shell-keyboard-shortcuts"/>
 
     <revision pkgversion="3.8.0" version="0.3" date="2013-03-23" status="review"/>
-    <revision pkgversion="3.9.92" date="2013-10-11" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.17.90" date="2015-08-30" status="candidate"/>
 
     <credit type="author">
       <name>Мајкл Хил</name>
       <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="author">
-      <name>Јулита Инка</name>
-      <email>yrazes@gmail.com</email>
+       <name>Јулита Инка</name>
+       <email>yrazes@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Хуанхо Марин</name>
       <email>juanj.marin@juntadeandalucia.es</email>
     </credit>
-    <credit type="editor">
-      <name>Шоба Тјаги</name>
-      <email>tyagishobha@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Екатерина Герасимова</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
     <desc>Одредите или измените пречице тастатуре у подешавањима <gui>Тастатуре</gui>.</desc>
   </info>
 
   <title>Подесите пречице тастатуре</title>
 
+  <comment>
+    <cite date="2012-02-19" href="mailto:shaunm@gnome.org">Shaun McCance</cite>
+    <p>Define shortcuts, using Shortcuts tab in Keyboard settings. Provide
+    reference for what everything is (can group for conciseness). Explain
+    custom shortcuts.</p>
+    <p>Important: the window says "To edit a shortcut, click the row and hold
+    down the new keys or press Backspace to clear." This is actually wrong.
+    You have to click the row, then click again on the shortcut within the
+    row. File bug against control-center about the faulty message (or better,
+    about the confusing interaction), but make sure to explain correctly in
+    the help regardless.</p>
+  </comment>
+
 <p>Да измените тастер или тастере који ће бити притиснути за пречицу тастатуре:</p>
 
   <steps>
     <item>
-      <p>Отворите преглед <gui xref="shell-introduction#activities">Активности</gui> и почните да куцате <gui>Тастатура</gui>.</p>
+	<p>Кликните на ваше име на горњој траци и изаберите <gui>Подешавања</gui>.</p></item>
+    <item><p>Отворите <gui>Тастатура</gui> и изаберите језичак <gui>Пречице</gui>.</p>
     </item>
     <item>
-      <p>Кликните на <gui>Тастатура</gui> да отворите панел.</p>
-    </item>
-    <item>
-      <p>Изаберите језичак <gui>Пречице</gui>.</p>
-    </item>
-    <item>
-      <p>Изаберите категорију у левом окну, и ред за жељену радњу са десне стране. Одредница тренутне пречице ће се изменити у <gui>Нова пречица…</gui></p>
+      <p>Изаберите категорију у левом окну, и ред за жељену радњу са десне стране. Одредница тренутне пречице ће се изменити у <gui>Нова пречица...</gui></p>
     </item>
     <item>
       <p>Притисните жељену комбинацију тастера, или притисните <key>Повратницу</key> да обришете.</p>
@@ -71,23 +64,23 @@
   </tr>
   <tr>
 	<td><p>Покреће калкулатор</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-calculator.svg"> <key>Calculator</key> key symbol</media> или <key>калкулатор</key></p></td>
+	<td><p>Калкулатор</p></td>
   </tr>
   <tr>
 	<td><p>Покреће програм за е-пошту</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-mail.svg"> <key>Mail</key> key symbol</media> или <key>пошта</key></p></td>
+	<td><p>Ел. пошта</p></td>
   </tr>
   <tr>
 	<td><p>Покреће веб прегледник</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-world.svg"> <key>WWW</key> key symbol</media> или <media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-home.svg"> <key>WWW</key> key symbol</media> или <key>„WWW“</key></p></td>
+	<td><p>Веб</p></td>
   </tr>
   <tr>
 	<td><p>Лична фасцикла</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-folder.svg"> <key>Explorer</key> key symbol</media> или <media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-computer.svg"> <key>Explorer</key> key symbol</media> или <key>„Експлорер“</key></p></td>
+	<td><p>Претраживач</p></td>
   </tr>
   <tr>
 	<td><p>Тражите</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-search.svg"> <key>Search</key> key symbol</media> или <key>Претрага</key></p></td>
+	<td><p>Тражите</p></td>
   </tr>
 </table>
 
@@ -194,15 +187,15 @@
 <table rules="rows" frame="top bottom" ui:expanded="false">
 <title>Снимци екрана</title>
   <tr>
-	<td><p>Сачувајте снимак екрана у датотеку</p></td>
+	<td><p>Прави снимак екрана</p></td>
 	<td><p><key>Штампај</key></p></td>
   </tr>
   <tr>
-	<td><p>Сачувајте снимак прозора у датотеку</p></td>
+	<td><p>Прави снимак прозора</p></td>
 	<td><p><keyseq><key>Алт</key><key>Штампај</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Сачувајте снимак области у датотеку</p></td>
+	<td><p>Прави снимак области</p></td>
 	<td><p><keyseq><key>Шифт</key><key>Штампај</key></keyseq></p></td>
   </tr>
   <tr>
@@ -227,43 +220,43 @@
 <title>Звук и медији</title>
   <tr>
 	<td><p>Искључује јачину звука</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-mute.svg"> <key>Mute</key> key symbol</media> (утишај звук)</p></td>
+	<td><p>Искључује звук</p></td>
   </tr>
   <tr>
 	<td><p>Смањује јачину звука</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-voldown.svg"> <key>Volume Down</key> key symbol</media> (смањи јачину звука)</p></td>
+	<td><p>Умањује јачину звука</p></td>
   </tr>
   <tr>
 	<td><p>Појачава јачину звука</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-volup.svg"> <key>Volume Up</key> key symbol</media> (повећај јачину звука)</p></td>
+	<td><p>Повећава јачину звука</p></td>
   </tr>
   <tr>
 	<td><p>Покреће медијски програм</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-media.svg"> <key>Media</key> key symbol</media> (медиј звука)</p></td>
+	<td><p>Звучни дискови</p></td>
   </tr>
   <tr>
 	<td><p>Пушта (или пушта/паузира)</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-play.svg"> <key>Play</key> key symbol</media> (пусти звук)</p></td>
+	<td><p>Пушта звук</p></td>
   </tr>
   <tr>
 	<td><p>Паузира пуштање</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-pause.svg"> <key>Pause</key> key symbol</media> (паузирај звук)</p></td>
+	<td><p>Паузира звук</p></td>
   </tr>
   <tr>
 	<td><p>Зауставља пуштање</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-stop.svg"> <key>Stop</key> key symbol</media> (заустави звук)</p></td>
+	<td><p>Зауставља звук</p></td>
   </tr>
   <tr>
 	<td><p>Претходна нумера</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-previous.svg"> <key>Previous</key> key symbol</media> (претходна нумера)</p></td>
+	<td><p>Претходни звучна нумера</p></td>
   </tr>
   <tr>
 	<td><p>Следећа нумера</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-next.svg"> <key>Next</key> key symbol</media> (следећа нумера)</p></td>
+	<td><p>Следећа звучна нумера</p></td>
   </tr>
   <tr>
 	<td><p>Избацује</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-eject.svg"> <key>Eject</key> key symbol</media> (избаци)</p></td>
+	<td><p>Избацује</p></td>
   </tr>
 </table>
 
@@ -283,7 +276,7 @@
   </tr>
   <tr>
 	<td><p>Закључавање екрана</p></td>
-	<td><p><keyseq><key>Супер</key><key>Л</key></keyseq></p></td>
+	<td><p><keyseq><key>Ктрл</key><key>Алт</key><key>Л</key></keyseq></p></td>
   </tr>
   <tr>
   <td><p>Прикажите фиоку порука</p></td>
@@ -442,27 +435,51 @@
 
 </section>
 
-<section id="custom">
-<title>Произвољне пречице</title>
-
-  <p>Да направите сопствене пречице програма у подешавањима <gui>Тастатуре</gui>:</p>
+<section id="changing-shorcuts">
+  <title>Измените пречице тастатуре</title>
+  <p>Овај одељак показује како да измените пречице тастатуре за неки програм.</p>
 
   <steps>
     <item>
-      <p>Кликните на дугме <gui style="button">+</gui>. Отвориће се прозор <gui>произвољних пречица</gui>.</p>
+	<p>Отворите Терминал.</p>
+     </item>
+    <item><p>Покрените наредбу <cmd>gsettings set org.gnome.desktop.interface can-change-accels true</cmd>.</p>
     </item>
-    <item>
-      <p>Упишите <gui>Назив</gui> за препознавање пречице, и <gui>Наредбу</gui> за покретање програма, затим кликните <gui>Додај</gui>. На пример, ако желите пречицу за отварање <app>Ритам машине</app>, можете је назвати <input>Музика</input> а као наредбу морате ставити <input>rhythmbox</input>.</p>
+       <item>
+      <p>Покрените програм за који желите да измените пречицу тастатуре.</p>
     </item>
-    <item>
-      <p>Кликните на <gui>Искључено</gui> у реду који је управо додат. Када се промени у <gui>Нова пречица…</gui>, држите притиснутом комбинацију тастера жељене пречице.</p>
+  <item>
+      <p>Пронађите ставку изборника за који желите да измените пречицу тастатуре.</p>
+    </item>
+<item>
+      <p>Укуцајте пречицу коју желите на тастатури.</p>
     </item>
   </steps>
 
-  <p>Назив наредбе који сте уписали мора бити важећа наредба система. Можете да проверите да ли наредба ради тако што ћете отворити терминал и уписати је. Наредба која отвара програм не може да има исти назив као и сам програм.</p>
+<note style="note style">
+  <p>Знајте да је ово подешавање свеопште радне површи. Можете да га искључите након што сте начинили измене покретањем наредбе <cmd>gsettings set org.gnome.desktop.interface can-change-accels false</cmd>. Такође можете да користите алатку <app>дконф-уређивача</app>.</p>
+</note>
+</section>
 
-  <p>Ако желите да измените наредбу која је придружена произвољној пречици тастатуре, кликните двапут на <em>назив</em> пречице. Појавиће се прозор <gui>Произвољна пречица</gui>, у коме ћете моћи да измените пречицу.</p>
+<section id="custom">
+<title>Произвољне пречице</title>
 
+<p>Да направите ваше сопствене пречице тастатуре:</p>
+
+  <steps>
+    <item>
+      <p>Изаберите <gui>Произвољна пречица</gui> у левом окну, и кликните на дугме <gui style="button">+</gui> (или кликните на дугме <gui style="button">+</gui> у било којој категорији). Појавиће се прозор <gui>Произвољна пречица</gui>.</p>
+    </item>
+    <item>
+      <p>Упишите <gui>Назив</gui> за препознавање пречице, и <gui>Наредбу</gui> за покретање програма, затим кликните <gui>Примени</gui>. На пример, ако желите пречицу за отварање Ритам машине, можете је назвати <input>Музика</input> а као наредбу морате ставити <input>rhythmbox</input>.</p>
+    </item>
+    <item>
+      <p>Кликните на <gui>Искључено</gui> у реду који је управо додат. Када се промени у <gui>Нова пречица...</gui>, држите притиснутом комбинацију тастера жељене пречице.</p>
+    </item>
+  </steps>
+ <p>Назив наредбе који сте уписали мора бити важећа наредба система. Можете да проверите да ли наредба ради тако што ћете отворити терминал и уписати је. Наредба која отвара програм не може да има исти назив као и сам програм.</p>
+
+ <p>Ако желите да измените наредбу која је придружена произвољној пречици тастатуре, кликните двапут на <em>назив</em> пречице. Појавиће се прозор <gui>Произвољна пречица</gui>, у коме ћете моћи да измените пречицу.</p>
 </section>
 
 </page>

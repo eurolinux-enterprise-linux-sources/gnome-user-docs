@@ -2,25 +2,18 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-recover" xml:lang="vi">
 
   <info>
-    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="files" group="more"/>
     <link type="seealso" xref="files-lost"/>
+    <desc>Khi xoá tập tin, chúng được cho vào Sọt rác, nhưng có thể phục hồi.</desc>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-28" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="review"/>
 
     <credit type="author">
       <name>Dự án tài liệu GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Khi xoá tập tin, chúng được cho vào Sọt rác, nhưng có thể phục hồi.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Nguyễn Thái Ngọc Duy</mal:name>
@@ -30,39 +23,17 @@
   </info>
 
   <title>Phục hồi tập tin từ sọt rác</title>
+    <p>If you delete a file with the file manager, the file is normally placed
+    into the <gui>Trash</gui>, and should be able to be restored.</p>
+    <steps>
+      <title>Để phục hồi tập tin từ sọt rác:</title>
+        <item><p>Mở ứng dụng <app>Tập tin</app> từ Tổng quan <gui>hoạt động</gui>.</p></item>
+        <item><p>Nhấn <gui>Sọt rác</gui> ở thanh bên.</p></item>
+        <item><p>Nếu tập tin bạn đã xoá ở đó, nhấn chuột và chọn <gui>Phục hồi</gui>. Nó sẽ được phục hồi về thư mục trước khi bị xoá.</p></item>
+    </steps>
 
-  <p>If you delete a file with the file manager, the file is normally placed
-  into the <gui>Trash</gui>, and should be able to be restored.</p>
+  <p>Nếu bạn xoá tập tin bằng <keyseq><key>Shift</key><key>Delete</key></keyseq>, hoặc từ dòng lệnh, tập tin sẽ bị xoá vĩnh viễn. Tập tin bị xoá vĩnh viễn không thể được phục hồi từ <gui>Sọt rác</gui>.</p>
 
-  <steps>
-    <title>Để phục hồi tập tin từ sọt rác:</title>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <app>Files</app>.</p>
-    </item>
-    <item>
-      <p>Click on <app>Files</app> to open the file manager.</p>
-    </item>
-    <item>
-      <p>Click <gui>Trash</gui> in the sidebar. If you do not see the sidebar,
-      click <gui>Files</gui> in the top bar and pick <gui>Sidebar</gui>.</p>
-    </item>
-    <item>
-      <p>If your deleted file is there, click on it and select
-      <gui>Restore</gui>. It will be restored to the folder from where it was
-      deleted.</p>
-    </item>
-  </steps>
-
-  <p>If you deleted the file by pressing <keyseq><key>Shift</key><key>Delete
-  </key></keyseq>, or by using the command line, the file has been permanently
-  deleted. Files that have been permanently deleted can’t be recovered from the
-  <gui>Trash</gui>.</p>
-
-  <p>There are a number of recovery tools available that are sometimes able to
-  recover files that were permanently deleted. These tools are generally not
-  very easy to use, however. If you accidentally permanently deleted a file,
-  it’s probably best to ask for advice on a support forum to see if you can
-  recover it.</p>
+  <p>Có một số công cụ phục hồi dùng được, đôi khi có thể phục hồi tập tin bị xoá vĩnh viễn. Tuy nhiên những công cụ này thường không dễ dùng. Nếu bạn lỡ xoá vĩnh viễn một tập tin, tốt nhất xin lời khuyên từ diễn đàn hỗ trợ xem bạn có thể khôi phục lại được không.</p>
 
 </page>

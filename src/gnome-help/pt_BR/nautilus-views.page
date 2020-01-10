@@ -4,8 +4,9 @@
   <info>
     <link type="guide" xref="nautilus-prefs" group="nautilus-views"/>
 
+    <desc>Especifica a visão, ordem de organização e níveis de ampliação padrão do gerenciador de arquivos.</desc>
+
     <revision pkgversion="3.8" version="0.2" date="2013-04-03" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-30" status="candidate"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -23,16 +24,8 @@
       <name>Ekaterina Gerasimova</name>
       <email>kittykat3756@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
     <its:rules xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
-
-    <desc>Especifique a ordem de organização e agrupamento padrão do gerenciador de arquivos.</desc>
-
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Rodolfo Ribeiro Gomes</mal:name>
@@ -41,39 +34,89 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Enrico Nicoletto</mal:name>
       <mal:email>liverig@gmail.com</mal:email>
       <mal:years>2013.</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>João Santana</mal:name>
-      <mal:email>joaosantana@outlook.com</mal:email>
-      <mal:years>2013.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Fontenelle</mal:name>
-      <mal:email>rafaelff@gnome.org</mal:email>
-      <mal:years>2012-2018.</mal:years>
-    </mal:credit>
   </info>
 
-<title>Preferências de visões no <app>Arquivos</app></title>
+<title>Views preferences in <app>Files</app></title>
 
-<p>Você pode alterar com arquivos e pastas são agrupados ou ordenados por padrão. Selecione <guiseq><gui style="menu">Arquivos</gui> <gui style="menuitem">Preferências</gui></guiseq> na barra superior enquanto <app>Arquivos</app> está aberto e selecione a aba <gui style="tab">Visões</gui>.</p>
+<p>You can change the default view for new folders, how files and folders are
+sorted by default, the zoom level for the icon and compact views, and whether
+files are displayed in the tree sidebar. Select
+<guiseq><gui style="menu">Files</gui>
+<gui style="menuitem">Preferences</gui></guiseq> in the top bar while
+<app>Files</app> is open and select the <gui style="tab">Views</gui> tab.</p>
 
 <section id="default-view">
 <title>Visão padrão</title>
 <terms>
   <item>
+    <title><gui>Ver novas pastas usando</gui></title>
+    <p>By default, new folders are shown in icon view. If you prefer the list
+    view, you can set it here as the default. Alternatively, you can select a
+    different view for each folder as you browse by clicking the
+    <gui style="button">View items as a list</gui> or <gui style="button">View
+    items as a grid of icons</gui> button in the toolbar.</p>
+  </item>
+  <item>
     <title><gui>Organizar itens</gui></title>
-    <p>Você pode alterar a ordem que é usada nas pastas usando a lista suspensa <gui>Organizar itens</gui> nas preferências para ordenar por nome, tamanho de arquivo, tipo de arquivo, quando foi alterado pela última modificação, quando foram acessado pela última vez ou quando foram movidas para lixeira.</p>
-    <p its:locNote="TRANSLATORS: use the translation of the tooltip for the     view selector button that opens the view popover in the main window for     'View options'">Você pode alterar como os <link xref="files-sort">arquivos são organizados</link> em uma pasta individual clicando no botão de opções de visão na barra de ferramentas e escolhendo <gui>Nome</gui>, <gui>Tamanho</gui>, <gui>Tipo</gui>, <gui>Data de modificação</gui> ou clicando nos cabeçalhos das coluna de lista na visualização de lista.</p>
+    <p>You can change the default sort order that is used in folders using the
+    <gui>Arrange items</gui> drop-down list in the preferences to sort by name,
+    file size, file type, when they were last modified, when they were last
+    accessed or when they were trashed.</p>
+    <p its:locNote="TRANSLATORS: use the translation of the tooltip for the     downwards pointing arrow button that opens the preferences menu in the main     window for 'View options'">Você pode alterar como os <link xref="files-sort">arquivos são organizados</link> em uma pasta individual clicando no botão <media type="image" src="figures/go-down.png">Opções de visualização</media> na barra de ferramentas e escolhendo <gui>Por nome</gui>, <gui>Por tamanho</gui>, <gui>Por tipo</gui>, <gui>Por data de modificação</gui> ou clicando nos cabeçalhos das coluna de lista na visualização de lista.</p>
   </item>
   <item>
     <title><gui>Organizar pastas antes de arquivos</gui></title>
-    <p>Por padrão, o gerenciador de arquivos não mais mostra todas as pastas antes dos arquivos. Para ver todas as pastas listadas antes dos arquivos, habilite esta opção.</p>
+    <p>By default, the file manager no longer shows all folders before files.
+    To see all folders listed before files, enable this option.</p>
+  </item>
+  <item>
+    <title><gui>Mostrar arquivos ocultos e de backup</gui></title>
+    <p>The file manager does not display <link xref="files-hidden">hidden
+    files</link> and folders by default. You can always show hidden files by
+    selecting this option.</p>
+    <p its:locNote="TRANSLATORS: use the translation of the tooltip for the     downwards pointing arrow button that opens the preferences menu in the main     window for 'View options'">You can also show hidden files in an individual
+    window by selecting <gui>Show Hidden Files</gui>, from the
+    <media type="image" src="figures/go-down.png">View options</media> menu in
+    the toolbar.</p>
+  </item>
+</terms>
+</section>
+
+<section id="icon-view-defaults">
+<title>Padrões da visão em ícones</title>
+<terms>
+  <item>
+    <title><gui>Nível padrão de zoom</gui></title>
+    <p its:locNote="TRANSLATORS: use the translation of the tooltip for the     downwards pointing arrow button that opens the preferences menu in the main     window for 'View options'">You can make the icons and text larger or
+    smaller by default in icon view using this option. You can also change this
+    setting in an individual folder by clicking the
+    <media type="image" src="figures/go-down.png">View options</media> button
+    in the toolbar and selecting <gui>Zoom In</gui>, <gui>Zoom Out</gui> or
+    <gui>Normal Size</gui>. If you frequently use a larger or smaller zoom
+    level, you can set the default with this option.</p>
+    <p>In icon view, more or fewer
+    <link xref="nautilus-display#icon-captions">captions</link> are shown based
+    on your zoom level.</p>
+   </item>
+  </terms>
+</section>
+
+<section id="list-view-defaults">
+<title>Padrões da visão em lista</title>
+<terms>
+  <item>
+    <title><gui>Nível padrão de zoom</gui></title>
+    <p its:locNote="TRANSLATORS: use the translation of the tooltip for the     downwards pointing arrow button that opens the preferences menu in the main     window for 'View options'">Você pode tornar os ícones e textos maiores ou menores na visualização de lista usando esta opção. Você também pode fazer isso em uma pasta individual clicando no botão <media type="image" src="figures/go-down.png">Opções de visualização</media> na barra de ferramentas e selecionando <gui>Ampliar</gui>, <gui>Reduzir</gui> ou <gui>Tamanho normal</gui>.</p>
   </item>
 </terms>
 </section>

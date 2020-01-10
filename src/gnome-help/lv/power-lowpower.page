@@ -2,10 +2,8 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="power-lowpower" xml:lang="lv">
 
   <info>
-    <link type="guide" xref="power#faq"/>
+    <link type="guide" xref="power#battery"/>
     <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
-    <revision pkgversion="3.20" date="2016-06-15" status="final"/>
 
     <desc>Baterijām ir kaitīga izlādēšana līdz galam.</desc>
     <credit type="author">
@@ -16,22 +14,16 @@
       <name>Ekaterina Gerasimova</name>
       <email>kittykat3756@gmail.com</email>
     </credit>
-    <credit type="author editor">
-      <name>Petr Kovar</name>
-      <email>pknbe@volny.cz</email>
-    </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
-<title>Kāpēc dators izslēdzās, kad baterijā atlika 10%?</title>
+<title>Kāpēc dators izslēdzās vai iemiga, kad baterijā atlika 10%?</title>
 
-<p>Kad baterijas lādiņš sasniedz pārāk zemu līmeni, dators automātiski iemieg. Tas novērš pārmērīgu baterijas izlādēšanos, kas būtu tai kaitīga. Turklāt, ja baterija iztukšotos, datoram arī neatliktu laika pareizi izslēgties.</p>
+<p>Kad baterijas lādiņš sasniedz pārāk zemu līmeni, dators automātiski <link xref="power-hibernate">iemieg</link>. Tas novērš pārmērīgu baterijas izlādēšanos, kas būtu tai kaitīga. Turklāt, ja baterija iztukšotos, datoram arī neatliktu laika pareizi izslēgties.</p>
 
-<p>Paturiet prātā, ka datoram automātiski izslēdzoties, jūsu lietotnes un dokumenti <em>netiek</em> saglabāti. Lai nepazaudētu savu darbu, saglabājiet to pirms baterija paliek pārāk tukša.</p>
+<p>Jūs varat izmainīt, kas notiek, kad baterija ir gandrīz tukša, atverot <app>Barošana</app> no <gui>Aktivitāšu</gui> pārskata. Iestatījumam <gui>Kad enerģijas ir kritiski maz</gui> ir izvēles varianti — iemigt vai izslēgties. Ja izvēlēsities otro variantu, jūsu atvērtās lietotnes un dokumenti <em>netiks</em> saglabāti pirms izslēgšanas.</p>
+
+<p>Dažiem datoriem ir iemigšanas grūtības, kas neļauj tiem sekmīgi atgūt jūsu atvērtās lietotnes un dokumentus pēc ieslēgšanas. Šajā gadījumā var gadīties, ka pirms iemigšanas nesaglabātie dokumenti būs zaudēti. Tomēr ir iespējams arī <link xref="power-suspendfail">atrisināt iemigšanas problēmas</link>.</p>
 
 </page>

@@ -4,52 +4,44 @@
   <info>
     <link type="guide" xref="printing#paper"/>
 
+    <desc>How to print a folded, multi-page booklet using A4 or Letter-sized paper.</desc>
+
     <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
       <email>tiffany@antopolski.com</email>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Hoe u een gevouwen, meerdere pagina's tellend boekje afdrukt op papier van A4- of Letterformaat.</desc>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Een boekje afdrukken</title>
+<title>Print a booklet</title>
 
-  <p>U kunt een boekje afdrukken van een PDF-document.</p>
+<p>You can print a booklet from a PDF.</p>
+<p>If you want to print a booklet from a <app>LibreOffice</app> document,
+ first export it to a PDF by choosing <guiseq><gui>File</gui><gui>Export
+ as PDF…</gui></guiseq>. Your document needs to have a multiple of 4
+ number of pages (4, 8, 12, 16,…). You may need to add up to 3 blank
+pages.</p>
+ <p>If the number of pages in your PDF document is not a multiple of 4, you
+ should add the appropriate number of blank pages (1,2 or 3) to make it a
+ multiple of 4. To do so, you can:</p>
 
-  <p>Als u een boekje wilt afdrukken van een <app>LibreOffice</app>-document, dan moet u het eerst exporteren naar een PDF via <guiseq><gui>Bestand</gui><gui>Exporteren als PDF…</gui></guiseq>. Uw document moet een veelvoud van 4 pagina's bevatten (4, 8, 12, 16,…). Het kan zijn dat u tot 3 lege pagina's moet toevoegen.</p>
+ <steps>
+  <item>
+   <p>Create a <app>LibreOffice</app> document with the number (1-3) of blank
+   pages needed.</p>
+  </item>
+  <item>
+   <p>Export the blank pages to a PDF by choosing <guiseq><gui>File</gui>
+    <gui>Export as PDF…</gui></guiseq>.</p>
+  </item>
+  <item>
+   <p>Merge the blank pages with your PDF document using <app>PDF-Shuffler</app>
+   or <app>PDF Mod</app>, placing the blank pages at the end.</p>
+  </item>
+ </steps>
 
-  <p>Als het aantal pagina's in uw PDF-document geen veelvoud van 4 is, dan dient u het juiste aantal lege pagina's (1, 2 of 3) toe te voegen om er een veelvoud van 4 van te maken. Om dit te doen kunt u:</p>
-
-  <steps>
-    <item>
-      <p>Maak een <app>LibreOffice</app>-document aan met het benodigde aantal (1-3) lege pagina's.</p>
-    </item>
-    <item>
-      <p>Exporteer de lege pagina's naar een PDF door <guiseq><gui>Bestand</gui><gui>Exporteren als PDF…</gui></guiseq> te kiezen.</p>
-    </item>
-    <item>
-      <p>Voeg de lege pagina's samen met uw PDF-document met <app>PDF-Shuffler</app> of <app>PDF Mod</app>, waarbij u de lege pagina's aan het einde plaatst.</p>
-    </item>
-  </steps>
-
-  <p>Selecteer het type printer dat u wilt gebruiken om af te drukken uit onderstaande lijst:</p>
-
+<p>Select the type of printer you will be using for printing from the list
+ below:</p>
 </page>

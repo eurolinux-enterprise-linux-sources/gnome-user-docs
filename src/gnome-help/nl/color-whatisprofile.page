@@ -3,32 +3,37 @@
 
   <info>
     <link type="guide" xref="color#profiles"/>
-    <desc>Een kleurprofiel is een eenvoudig bestand dat een kleurruimte of de respons van een apparaat uitdrukt.</desc>
+    <desc>A color profile is a simple file that expresses a color space or device response.</desc>
 
     <credit type="author">
       <name>Richard Hughes</name>
       <email>richard@hughsie.com</email>
     </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Wat is een kleurprofiel?</title>
+  <title>What is a color profile?</title>
 
-  <p>Een kleurprofiel is een set gegevens die óf een apparaat zoals een projector óf een kleurruimte zoals sRGB kenmerkt.</p>
-  <p>De meeste kleurprofielen zijn in de vorm van een ICC-profiel, dat een klein bestand is met een <input>.ICC</input> of <input>.ICM</input>-bestandsextensie.</p>
-  <p>Kleurprofielen kunnen ingebed zijn in afbeeldingen om het kleurengamma van de gegevens te specificeren. Dit zorgt ervoor dat gebruikers dezelfde kleuren zien op verschillende apparaten.</p>
-  <p>Elk apparaat dat met kleuren werkt zou zijn eigen ICC-profiel moeten hebben en wanneer dit  bereikt is wordt gezegd dat het systeem een <em>end-to-end color-managed workflow</em> heeft.</p>
+  <p>
+    A color profile is a set of data that characterizes either a device
+    such as a projector or a color space such as sRGB.
+  </p>
+  <p>
+    Most color profiles are in the form of an ICC profile, which is a
+    small file with a <input>.ICC</input> or <input>.ICM</input> file
+    extension.
+  </p>
+  <p>
+    Color profiles can be embedded into images to specify the gamut range
+    of the data.
+    This ensures that users see the same colors on different devices.
+  </p>
+  <p>
+    Every device that is processing color should have it's own ICC
+    profile and when this is achieved the system is said to have an
+    <em>end-to-end color-managed workflow</em>.
+    With this kind of workflow you can be sure that colors are not being
+    lost or modified.
+  </p>
 
 </page>

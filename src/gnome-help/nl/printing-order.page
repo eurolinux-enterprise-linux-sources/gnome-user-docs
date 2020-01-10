@@ -4,9 +4,9 @@
   <info>
     <link type="guide" xref="printing#paper"/>
 
+    <desc>De afdrukvolgorde sorteren en omkeren.</desc>
+
     <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -16,58 +16,31 @@
       <name>Jim Campbell</name>
       <email>jwcampbell@gmail.com</email>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>De afdrukvolgorde sorteren en omkeren.</desc>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Pagina's in een andere volgorde laten afdrukken</title>
+<title>Pagina's in een andere volgorde laten afdrukken</title>
 
-  <section id="reverse">
-    <title>Omgekeerde volgorde</title>
+<section id="reverse">
+ <title>Omgekeerde volgorde</title>
+ <p>Meestal drukken printers de eerste pagina als eerste af en de laatste pagina als laatste, waardoor de pagina's in omgekeerde volgorde liggen wanneer u ze oppakt. U kunt, indien u dat wenst, deze afdrukvolgorde omkeren.</p>
+ <p>Om de volgorde om te keren:</p>
+ <steps>
+  <item><p>Klik op <guiseq><gui>Bestand</gui><gui>Afdrukken</gui></guiseq>.</p></item>
+  <item><p>Plaats in het tabblad <gui>Algemeen</gui> van het venster Afdrukken onder <em>Kopieën</em> een vinkje bij <gui>Omgekeerde volgorde</gui>.  De laatste pagina zal als eerste worden afgedrukt, enzovoort.</p></item>
+ </steps>
+</section>
 
-    <p>Meestal drukken printers de eerste pagina als eerste af en de laatste pagina als laatste, waardoor de pagina's in omgekeerde volgorde liggen wanneer u ze oppakt. U kunt, indien u dat wenst, deze afdrukvolgorde omkeren.</p>
+<section id="collate">
+ <title>Sorteren</title>
+ <p>Als u meer dan één exemplaar van het document afdrukt, dan zullen de afdrukken standaard gegroepeerd worden per paginanummer (d.w.z. eerst verschijnen alle afdrukken van pagina een, dan die van pagina twee, enz.). <em>Sorteren</em> zorgt ervoor dat elke kopie wordt afgedrukt met de pagina's ervan gegroepeerd in de juiste volgorde.</p>
 
-    <steps>
-      <title>Om de volgorde om te keren:</title>
-      <item>
-        <p>Druk op <keyseq><key>Ctrl</key><key>P</key></keyseq> om het Afdrukdialoogvenster te openen.</p>
-      </item>
-      <item>
-        <p>Plaats in het tabblad <gui>Algemeen</gui> van het venster Afdrukken onder <em>Kopieën</em> een vinkje bij <gui>Omgekeerde volgorde</gui>.  De laatste pagina zal als eerste worden afgedrukt, enzovoort.</p>
-      </item>
-    </steps>
-
-  </section>
-
-  <section id="collate">
-    <title>Sorteren</title>
-
-  <p>Als u meer dan één exemplaar van het document afdrukt, dan zullen de afdrukken standaard gegroepeerd worden per paginanummer (d.w.z. eerst verschijnen alle afdrukken van pagina een, dan die van pagina twee, enz.). <em>Sorteren</em> zorgt ervoor dat elke kopie wordt afgedrukt met de pagina's ervan gegroepeerd in de juiste volgorde.</p>
-
-  <steps>
-    <title>Om te sorteren:</title>
-    <item>
-     <p>Druk op <keyseq><key>Ctrl</key><key>P</key></keyseq> om het Afdrukdialoogvenster te openen.</p>
-    </item>
-    <item>
-      <p>Plaats in het tabblad <gui>Algemeen</gui> onder <em>Kopieën</em> een vinkje bij <gui>Sorteren</gui>.</p>
-    </item>
-  </steps>
-
+ <p>Om te sorteren:</p>
+ <steps>
+  <item><p>Klik op <guiseq><gui>Bestand</gui><gui>Afdrukken</gui></guiseq>.</p></item>
+  <item><p>Plaats in het tabblad <gui>Algemeen</gui> in het venster Afdrukken onder <em>Kopieën</em> een vinkje bij <gui>Sorteren</gui>.</p></item>
+ </steps>
+ <!-- Need to add this image <media type="image" src="figures/reverse-collate.png"/> -->
 </section>
 
 </page>

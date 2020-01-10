@@ -2,10 +2,8 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="power-lowpower" xml:lang="es">
 
   <info>
-    <link type="guide" xref="power#faq"/>
+    <link type="guide" xref="power#battery"/>
     <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
-    <revision pkgversion="3.20" date="2016-06-15" status="final"/>
 
     <desc>Dejar que la batería se descargue completamente no es bueno para ella.</desc>
     <credit type="author">
@@ -16,21 +14,13 @@
       <name>Ekaterina Gerasimova</name>
       <email>kittykat3756@gmail.com</email>
     </credit>
-    <credit type="author editor">
-      <name>Petr Kovar</name>
-      <email>pknbe@volny.cz</email>
-    </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2011 - 2018</mal:years>
+      <mal:years>2011 - 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -52,10 +42,12 @@
     </mal:credit>
   </info>
 
-<title>¿Por qué se apaga el equipo cuando la batería llega al 10%?</title>
+<title>¿Por qué se apaga/hiberna el equipo cuando la batería llega al 10%?</title>
 
-<p>Cuando el nivel de carga de la batería es muy bajo, el equipo se apagará automáticamente. Esto lo hace para asegurarse de que la batería no se descargue por completo, ya que esto es malo para la batería. Si la batería se acaba sin más, el equipo no tendría tiempo para cerrar correctamente.</p>
+<p>Cuando el nivel de carga de la batería es muy bajo, el equipo <link xref="power-hibernate">hibernará</link> automáticamente. Lo hace para asegurarse de que la batería no se descargue por completo, ya que esto es malo para la batería. Si la batería se acaba sin más, el equipo no tendría tiempo para cerrar correctamente.</p>
 
-<p>Tenga en cuenta que cuando su equipo se apaga automáticamente, sus aplicaciones y documentos <em>no</em> se guardan. Para evitar perder su trabajo, guárdelo antes de que la batería se descargue demasiado.</p>
+<p>Puede cambiar lo que sucede cuando el nivel de batería está muy bajo abriendo <gui>Energía</gui> en la vista de <gui>Actividades</gui>. Consulte el ajuste <gui>Cuando la carga está críticamente baja</gui>. Puede escoger que el equipo hiberne o se apague. Si elige que se apague, <em>no</em> se guardarán sus aplicaciones y documentos antes de que el equipo se apague.</p>
+
+<p>Algunos equipos tienen problemas al hibernar, y al reanudarse no son capaces de recuperar las aplicaciones y documentos que tenía abiertos. En este caso, puede que se haya perdido algo de su trabajo si no lo guardó antes de que el equipo hibernara. Sin embargo, quizá pueda <link xref="power-suspendfail">arreglar problemas de hibernación</link>.</p>
 
 </page>

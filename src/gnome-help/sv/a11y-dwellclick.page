@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task a11y" id="a11y-dwellclick" xml:lang="sv">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task a11y" id="a11y-dwellclick" xml:lang="sv">
   <info>
     <link type="guide" xref="mouse"/>
     <link type="guide" xref="a11y#mobility" group="clicking"/>
 
-    <revision pkgversion="3.8.0" date="2013-03-13" status="candidate"/>
-    <revision pkgversion="3.9.92" date="2013-09-18" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="final"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -24,61 +18,59 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
-    <desc>Funktionen <gui>Uppehållsklick</gui> (svävningsklick) låter dig klicka genom att hålla muspekaren stilla.</desc>
+    <desc>Funktionen svävningsklick (uppehållsklick) låter dig klicka genom att hålla muspekaren stilla.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Sebastian Rasmussen</mal:name>
-      <mal:email>sebras@gmail.com</mal:email>
-      <mal:years>2014, 2015, 2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Anders Jonsson</mal:name>
-      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
-      <mal:years>2016, 2017</mal:years>
-    </mal:credit>
   </info>
 
   <title>Simulera klick genom att sväva ovanför</title>
 
-  <p>Du kan klicka eller dra genom att hålla musmarkören stilla över en kontroll eller ett objekt på skärmen. Detta är användbart om du tycker att det är svårt att flytta musen och klicka på samma gång. Denna funktion heter <gui>Uppehållsklick</gui> eller svävningsklick.</p>
+  <p>You can click or drag simply by hovering your mouse pointer over a control
+  or object on the screen. This is useful if you find it difficult to move the
+  mouse and click at the same time. This feature is called Hover Click or Dwell
+  Click.</p>
 
-  <p>När <gui>Uppehållsklick</gui> är aktiverat så kan du flytta din musmarkör över en kontroll, släppa musen, och sedan vänta en stund innan knappen klickas på åt dig.</p>
+  <p>When Hover Click is enabled, you can move your mouse pointer over a
+  control, let go of the mouse, and then wait for a while before the button
+  will be clicked for you.</p>
 
   <steps>
     <item>
-      <p>Öppna <gui xref="shell-introduction#activities">Aktiviteter</gui> och börja skriv <gui>Hjälpmedel</gui>.</p>
+      <p>Click your name on the top bar and select <gui>Settings</gui>.</p>
     </item>
     <item>
-      <p>Klicka på <gui>Hjälpmedel</gui> för att öppna panelen.</p>
+      <p>Open <gui>Universal Access</gui> and select the <gui>Pointing and
+      Clicking</gui> tab.</p>
     </item>
     <item>
-      <p>Tryck på <gui>Klickhjälp</gui> i avsnittet <gui>Peka &amp; klicka</gui>.</p>
-    </item>
-    <item>
-      <p>Slå om <gui>Uppehållsklick</gui> till <gui>PÅ</gui>.</p>
+      <p>Switch <gui>Hover Click</gui> on.</p>
     </item>
   </steps>
 
-  <p><gui>Uppehållsklick</gui>-fönstret kommer att öppnas, och lägga sig överst ovanpå dina andra fönster. Du kan använda detta för att välja vilken sorts klick som ska hända när du håller musmarkören stilla. Om du till exempel markerar <gui>Sekundärklick</gui> så kommer du att högerklicka när du håller markören stilla. Efter att du dubbelklickat, högerklickat eller dragit så kommer du automatiskt att återgå till enkelklick.</p>
+  <p>The <gui>Hover Click</gui> window will open, and will stay above all of
+  your other windows. You can use this to choose what sort of click should
+  happen when you hover. For example, if you select <gui>Secondary Click</gui>,
+  you will right-click when you hover. After you double-click, right-click, or
+  drag, you will be automatically returned to clicking.</p>
 
-  <p>När du håller din muspekare över en knapp utan att röra på musen, så kommer den gradvis att ändra färg. När den sedan ändrat färg helt och hållet, så kommer knappen bli klickad.</p>
+  <p>When you hover your mouse pointer over a button and don't move it, it will
+  gradually change color. When it has fully changed color, the button will be
+  clicked.</p>
 
-  <p>Justera inställningen <gui>Fördröjning</gui> för att ändra hur länge du måste hålla musmarkören stilla innan den klickar.</p>
+  <p>Adjust the <gui>Delay</gui> setting to change how long you have to hold
+  the mouse pointer still before clicking.</p>
 
-  <p>Du behöver inte hålla musen helt stilla när du pekar för att klicka. Musmarkören tillåts flytta sig en liten bit och kommer fortfarande att klicka efter ett tag. Om den rör sig för mycket så kommer däremot inget klicka att inträffa.</p>
+  <p>You don't need to hold the mouse perfectly still when hovering to click.
+  The pointer is allowed to move a little bit and will still click after a
+  while. If it moves too much, however, the click will not happen.</p>
 
-  <p>Justera inställningen <gui>Tröskelvärde för rörelse</gui> för att ändra hur mycket musmarkören kan flyttas och ändå anses sväva.</p>
+  <p>Adjust the <gui>Motion threshold</gui> setting to change how much the
+  pointer can move and still be considered to be hovering.</p>
 
 </page>

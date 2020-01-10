@@ -2,11 +2,11 @@
 <page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="screen-shot-record" xml:lang="nl">
 
   <info>
+
     <link type="guide" xref="tips"/>
 
-    <revision pkgversion="3.6.1" date="2012-11-10" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.14.0" date="2015-01-14" status="review"/>
+    <desc>Take a picture or record a video of what's happening on your screen.</desc>
+    <revision pkgversion="3.6.1" version="0.2" date="2012-11-10" status="review"/>
 
     <credit type="author copyright">
       <name>Tiffany Antopolski</name>
@@ -22,101 +22,88 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-      <years>2015</years>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Een foto of video maken van wat er op uw scherm gebeurt.</desc>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
   </info>
 
-<title>Schermafdrukken en schermfilms</title>
+<title>Screenshots and screencasts</title>
 
-  <p>U kunt een afdruk maken van uw scherm (een <em>schermafdruk</em>), of een filmpje opnemen van wat er op het scherm gebeurt (een <em>screencast</em>). Dit is handig als u bijvoorbeeld iemand wilt laten zien hoe je iets doet op de computer. Schermafdrukken en screencasts zijn gewoon afbeeldings- en videobestanden, dus u kunt ze in een e-mail versturen en ze op het internet delen.</p>
+  <p>You can take a picture of your screen (a <em>screenshot</em>) or record a
+ video of what's happening on the screen (a <em>screencast</em>). This is useful
+ if you want to show someone how to do something on the computer, for example.
+ Screenshots and screencasts are just normal picture and video files, so you can
+ email them and share them on the web.</p>
 
 <section id="screenshot">
-  <title>Een schermafdruk maken</title>
+ <title>Een schermafdruk maken</title>
+<steps>
+<item><p>Open <app>Screenshot</app> from the <gui>Activities</gui> overview.</p></item>
 
-  <steps>
-    <item>
-      <p>Open <app>Schermafdruk</app> vanuit het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht.</p>
-    </item>
-    <item>
-      <p>Kies in het venster <app>Schermafdruk</app> of u een schermafdruk van het gehele bureaublad, het huidige venster of een gebied wilt maken. Stel een wachttijd in als u een venster wilt kiezen of uw bureaublad anders wilt instellen voor de schermafdruk. Kies daarna de gewenste effecten.</p>
-    </item>
-    <item>
-       <p>Klik op <gui>Schermafdruk maken</gui>.</p>
-       <p>Als u <gui>Gebied selecteren</gui> heeft gekozen, zal de cursor in een kruis veranderen. Sleep een rand om het gebied waarvan u een schermafdruk wilt maken.</p>
-    </item>
-    <item>
-      <p>Voer in het venster <gui>Schermafdruk opslaan</gui> een bestandsnaam in, kies een map en klik daarna op <gui>Opslaan</gui>.</p>
-      <p>U kunt de schermafdruk ook direct in een beeldbewerkingstoepassing importeren zonder deze eerst op te slaan. Klik op <gui>Naar klembord kopiëren</gui> en plak daarna de afbeelding in de andere toepassing, of sleep de schermafdrukminiatuur naar de toepassing.</p>
-    </item>
-  </steps>
+<item>
+ <p>In the <app>Take Screenshot</app> window, select whether to grab the
+ whole screen, the current window, or an area of the screen. Set a delay
+ if you need to select a window or otherwise set up your desktop for
+ the screenshot. Then choose any effects you want.</p>
+</item>
 
-  <section id="keyboard-shortcuts">
-    <title>Sneltoetsen</title>
+<item>
+  <p>Klik op <gui>Schermafdruk maken</gui>.</p>
+  <p>If you selected <gui>Select area to grab</gui>, the pointer changes into
+  a crosshair. Click and drag the area you want for the screenshot.</p>
+</item>
 
-    <p>Op elk gewenst moment snel een schermafdruk maken van het bureaublad, een venster of een gebied via deze globale sneltoetsen:</p>
+<item>
+  <p>In the <gui>Save Screenshot</gui> window, enter a file name and choose a
+  folder, then click <gui>Save</gui>.</p>
+  <p>Alternatively, import the screenshot directly into an image-editing application
+  without saving it first. Click <gui>Copy to Clipboard</gui> then paste the image in
+  the other application, or drag the screenshot thumbnail to the application.</p>
+</item>
+</steps>
 
-    <list style="compact">
-      <item>
-        <p><key>Prt Scrn</key> voor het nemen van een schermafdruk van het bureaublad.</p>
-      </item>
-      <item>
-        <p><keyseq><key>Alt</key><key>Print Screen</key></keyseq> om een schermafdruk van een venster te nemen.</p>
-      </item>
-      <item>
-        <p><keyseq><key>Shift</key><key>Prt Scrn</key></keyseq> om een schermafdruk te maken van een door u geselecteerd gebied.</p>
-      </item>
-    </list>
-
-    <p>Wanneer u een sneltoets gebruikt, dan wordt de afbeelding automatisch opgeslagen in de map <file>Afbeeldingen</file> in uw persoonlijke map met een bestandsnaam die begint met <file>Schermafdruk</file> en met de datum en tijd waarop deze genomen is.</p>
-    <note style="note">
-      <p>Als u geen map <file>Afbeeldingen</file> heeft, dan worden de afbeeldingen opgeslagen in uw persoonlijke map.</p>
-    </note>
-    <p>U kunt ook tegelijk met één van bovenstaande sneltoetsen de <key>Ctrl</key>-toets ingedrukt houden om de schermafdruk te kopiëren naar het klembord in plaats van deze op te slaan.</p>
-  </section>
-
+<note style="tip">
+  <title>Keyboard shortcuts</title>
+  <p>Quickly take a screenshot of the desktop, a window, or an area at any time
+  using these global keyboard shortcuts:</p>
+  <list style="compact">
+    <item><p><key>Prt Scrn</key> to take a screenshot of the desktop.</p></item>
+    <item><p><keyseq><key>Alt</key><key>Prt Scrn</key></keyseq> to take a screenshot
+    of a window.</p></item>
+    <item><p><keyseq><key>Shift</key><key>Prt Scrn</key></keyseq> to take a screenshot
+    of an area you select.</p></item>
+  </list>
+  <p>When you use a keyboard shortcut, the image is automatically saved in
+  your Pictures folder with a file name that begins with "Screenshot" and
+  includes the date and time it was taken.</p>
+  <p>You can also hold down <key>Ctrl</key> with any of the above shortcuts to
+  copy the screenshot image to the clipboard instead of saving it.</p>
+</note>
 </section>
 
+
 <section id="screencast">
-  <title>Een scherm opnemen</title>
+<title>Make a screencast</title>
+  <p>You can make a video recording of what is happening on your screen:</p>
 
-  <p>U kunt een video-opname maken van wat er op uw scherm gebeurt:</p>
+<steps>
+<item>
+  <p>Press <keyseq><key>Ctrl</key><key>Alt</key><key>Shift</key><key>R</key></keyseq>
+ to start recording what's on your screen.</p>
+  <p>A red circle is displayed in the bottom right corner of the screen when the
+ recording is in progress. This indicator does not show up in the video.</p>
+</item>
 
-  <steps>
-    <item>
-      <p>Druk op <keyseq><key> Ctrl</key><key>Alt</key><key>Shift</key><key>R</key></keyseq> om de opname van wat er op uw scherm gebeurt te starten.</p>
-      <p>Er wordt tijdens het opnemen een rode cirkel getoond in de rechterbovenhoek van het scherm.</p>
-    </item>
-    <item>
-      <p>Zodra u klaar bent klikt u opnieuw op <keyseq><key>Ctrl</key><key>Alt</key><key>Shift</key><key>R</key></keyseq> om de opname te stoppen.</p>
-    </item>
-    <item>
-      <p>De video wordt automatisch opgeslagen in de map <file>Video's</file> in uw persoonlijke map met een bestandsnaam die begint met <file>Schermvideo</file> en met de datum en tijd waarop deze genomen is.</p>
-    </item>
-  </steps>
+<item>
+  <p>Once you've finished, press
+ <keyseq><key>Ctrl</key><key>Alt</key><key>Shift</key><key>R</key></keyseq>
+ again to stop the recording.</p>
+</item>
 
-  <note style="note">
-    <p>Als u geen map <file>Video's</file> heeft, dan worden de video's opgeslagen in uw persoonlijke map.</p>
-  </note>
-
+<item>
+  <p>The video is automatically saved in your Videos folder with a file name
+  that starts with "Screencast" and includes the date and time it was taken.</p>
+</item>
+</steps>
 </section>
 
 </page>

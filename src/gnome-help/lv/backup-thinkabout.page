@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="backup-thinkabout" xml:lang="lv">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="tip" id="backup-thinkabout" xml:lang="lv">
 
   <info>
     <link type="guide" xref="files#backup"/>
+    <desc>Mapju saraksts, kur var atrast dokumentus, datnes un iestatījumus, kuriem jūs varētu vēlēties izveidot rezerves kopiju.</desc>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -21,8 +21,6 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Mapju saraksts, kur var atrast dokumentus, datnes un iestatījumus, kuriem jūs varētu vēlēties izveidot rezerves kopiju.</desc>
   </info>
 
   <title>Kur es varu atrast datnes, kurām vēlos veidot rezerves kopiju?</title>
@@ -32,19 +30,19 @@
 <list>
  <item>
   <p>Personīgās datnes (dokumenti, mūzika, fotogrāfijas un video)</p>
-  <p its:locNote="translators: xdg dirs are localised by package xdg-user-dirs and need to be translated.  You can find the correct translations for your language here: http://translationproject.org/domain/xdg-user-dirs.html">Tie parasti tiek glabāti mājas mapē (<file>/home/jusu_vards</file>). Tie varētu būt apakšmapēs, tādās kā Darbvirsma, Dokumenti, Attēli, Mūzika un Video.</p>
+  <p xmlns:its="http://www.w3.org/2005/11/its" its:locNote="translators: xdg dirs are localised by package xdg-user-dirs and need to be translated.  You can find the correct translations for your language here: http://translationproject.org/domain/xdg-user-dirs.html">Tie parasti tiek glabāti mājas mapē (<file>/home/jusu_vards</file>). Tie varētu būt apakšmapēs, tādās kā Darbvirsma, Dokumenti, Attēli, Mūzika un Video.</p>
   <p>Ja iekārtā, kurā veidojat rezerves kopijas, ir pietiekami daudz vietas (piemēram, ja tas ir ārējais cietais disks) apsveriet domu veidot rezerves kopiju visai Mājas mapei. Jūs varat uzzināt, cik daudz vietas aizņem jūsu mājas mape, izmantojot <app>Diska izmantošanas analizatoru</app>.</p>
  </item>
 
  <item>
   <p>Slēptās datnes</p>
-  <p>Jebkura datne vai mape, kuras nosaukums sākas ar punktu (.) tiek slēpta pēc noklusējuma. Lai apskatītu slēptās datnes spiediet <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">Skata opcijas</span></media></gui> pogu rīkjoslā un izvēlieties <gui>Rādīt slēptās datnes</gui>, vai spiediet <keyseq><key>Ctrl</key><key>H</key></keyseq>. Jūs varat tām veidot rezerves kopijas tā pat, kā jebkurām citām datnēm.</p>
+  <p>Jebkura datne vai mape, kuras nosaukums sākas ar punktu (.) tiek slēpta pēc noklusējuma. Lai apskatītu slēptās datnes spiediet <guiseq><gui>Skats</gui><gui>Parādīt slēptās datnes</gui></guiseq> vai spiediet <keyseq><key>Ctrl</key><key>H</key></keyseq>. Jūs varat tām veidot rezerves kopijas tā pat, kā jebkurām citām datnēm.</p>
  </item>
 
  <item>
   <p>Personīgie iestatījumi (darbvirsmas iestatījumi, motīvi un programmatūras iestatījumi)</p>
   <p>Lielākā daļa lietotņu glabā to iestatījumu datnes slēptajās mapēs jūsu Mājas mapē (skatīt augstāk informāciju par slēptajām datnēm).</p>
-  <p>Lielākā daļa no jūsu programmu iestatījumiem tiks uzglabāti slēptās mapēs <file> .config</file> un <file>.local</file>jūsu Mājas mapē.</p>
+  <p>Lielākā daļa no jūsu programmu iestatījumiem tiks uzglabāti slēptās mapēs <file> .config</file>, <file>.gconf</file>, <file>.gnome2</file>, un <file>.local</file>jūsu Mājas mapē.</p>
  </item>
 
  <item>

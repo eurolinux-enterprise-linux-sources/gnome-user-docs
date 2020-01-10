@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="look-background" xml:lang="sv">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="look-background" xml:lang="sv">
 
   <info>
     <link type="guide" xref="prefs-display"/>
 
     <revision pkgversion="3.8.0" version="0.3" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-07" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <desc>Set an image, color, or gradient as your desktop background.</desc>
 
     <credit type="author">
       <name>Dokumentationsprojekt för GNOME</name>
@@ -32,72 +32,46 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Shobha Tyagi</name>
-      <email>tyagishobha@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Ställ in en bild, färg eller toning som din skrivbordsbakgrund eller låsskärmsbakgrund.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Sebastian Rasmussen</mal:name>
-      <mal:email>sebras@gmail.com</mal:email>
-      <mal:years>2014, 2015, 2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Anders Jonsson</mal:name>
-      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
-      <mal:years>2016, 2017</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Ändra skrivbords- och låsskärmsbakgrunderna</title>
+<title>Ändra skrivbordsbakgrunden</title>
 
-  <p>Du kan ändra bilden som används för dina bakgrunder eller ställa in den till att vara en ensam färg.</p>
+<p>You can change the image used for your desktop background, or set
+it to a simple color or gradient.</p>
 
-  <steps>
-    <item>
-      <p>Öppna översiktsvyn <gui xref="shell-introduction#activities">Aktiviteter</gui> och börja skriv <gui>Bakgrund</gui>.</p>
-    </item>
-    <item>
-      <p>Klicka på <gui>Bakgrund</gui> för att öppna panelen.</p>
-    </item>
-    <item>
-      <p>Välj <gui>Bakgrund</gui> eller <gui>Låsskärm</gui>.</p>
-    </item>
-    <item>
-      <p>Tre val visas längst upp:</p>
-      <list>
-        <item>
-          <p>Välj <gui>Skrivbordsbakgrunder</gui> för att använda en av de många professionella bakgrundsbilderna som levereras med GNOME. Vissa bakgrunder ändrar sig efter dagen. Dessa bakgrunder har en liten klockikon i nedre högra hörnet.</p>
-        </item>
-        <item>
-          <p>Välj <gui>Bilder</gui> för att använda ett av dina egna foton från din <file>Bilder</file>-mapp. De flesta fotohanteringsprogram sparar foton där. Om du vill använda en bild som inte finns i din Bilder-mapp, använd antingen <app>Filer</app> genom att högerklicka på bildfilen och välj <gui>Använd som skrivbordsbakgrund</gui> eller <app>Bildvisare</app> genom att öppna bildfilen, klicka på menyknappen i namnlisten och välj <gui>Använd som skrivbordsunderlägg</gui>.</p>
-        </item>
-        <item>
-          <p>Välj <gui>Färger</gui> för att använda en enda färg.</p>
-        </item>
-      </list>
-    </item>
-    <item>
-      <p>Ändringarna får effekt omedelbart.</p>
-    </item>
-    <item>
-      <p><link xref="shell-workspaces-switch">Växla till en tom arbetsyta</link> för att visa hela ditt skrivbord.</p>
-    </item>
-  </steps>
+<steps>
+  <item><p>Click your name on the top bar and select <gui>Settings</gui>.</p></item>
+  <item><p>Open <gui>Background</gui>.</p></item>
+  <item><p>Click the image of your current wallpaper in the center.</p></item>
+<item><p>There are three choices displayed on top:</p>
+<list>
+  <item><p>Select <gui>Wallpapers</gui> to use one of the many professional
+  background images that ship with GNOME. Some wallpapers are partially
+  transparent and allow a background color to show through. For these
+  wallpapers, there will be a color selector button in the bottom-right
+  corner.</p></item>
+  <item><p>Select <gui>Pictures</gui> to use one of your own photos
+  from your Pictures folder. Most photo management applications
+  store photos there.
+  If you would like to use an image that is not in your Pictures folder,
+  either use <app>Files</app> by right-clicking on the image file and
+  selecting <gui>Set as Wallpaper</gui>, or <app>Image Viewer</app> by
+  opening the image file and selecting
+  <guiseq><gui>Image</gui><gui>Set as Desktop Background</gui></guiseq>.</p></item>
+  <item><p>Select <gui>Colors</gui> to just
+  use a flat color or a linear gradient.</p></item>
+</list>
+</item>
+  <item><p>The settings are applied immediately.</p></item>
+  <item><p><link xref="shell-workspaces-switch">Switch to an empty workspace</link>
+  to view your entire desktop.</p></item>
+</steps>
 
 </page>

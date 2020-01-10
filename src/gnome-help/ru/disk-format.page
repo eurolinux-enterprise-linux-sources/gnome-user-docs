@@ -10,7 +10,6 @@
     </credit>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
-    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
 
     <desc>Удалите все файлы и папки с внешнего жёсткого диска или флэш-диска USB, отформатировав его.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -24,64 +23,39 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011-2012</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Станислав Соловей</mal:name>
-      <mal:email>whats_up@tut.by</mal:email>
-      <mal:years>2013-2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Юлия Дронова</mal:name>
-      <mal:email>juliette.tux@gmail.com</mal:email>
-      <mal:years>2013-2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Юрий Мясоедов</mal:name>
-      <mal:email>ymyasoedov@yandex.ru</mal:email>
-      <mal:years>2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
 
 <title>Удаление всего содержимого съёмного носителя</title>
 
-  <p>If you have a removable disk, like a USB memory stick or an external hard
- disk, you may sometimes wish to completely remove all of its files and
- folders. You can do this by <em>formatting</em> the disk — this deletes all
- of the files on the disk and leaves it empty.</p>
+  <p>Иногда возникает необходимость удалить все файлы и папки со съёмного носителя, такого как флэш-диск USB или внешний жёсткий диск. Сделать это можно, <em>отформатировав</em> носитель — при этом все файлы с него будут удалены и он станет пустым.</p>
 
 <steps>
-  <title>Форматирование съёмного носителя</title>
+ <title>Форматирование съёмного носителя</title>
   <item>
-    <p>Откройте <gui>Обзор</gui> и откройте приложение <app>Диски</app>.</p>
+   <p>Откройте приложение <app>Диски</app> из <gui>Обзора</gui>.</p>
   </item>
   <item>
-    <p>Выберите слева из списка накопителей диск, который вы хотите очистить.</p>
+   <p>Выберите диск, который нужно очистить из списка <gui>Устройства хранения</gui>.</p>
 
-    <note style="warning">
-      <p>Убедитесь, что диск выбран правильно, иначе все файлы будут удалены с другого диска.</p>
-    </note>
+  <note style="warning">
+   <p>Убедитесь, что диск выбран правильно, иначе вы можете удалить все файлы не с того диска!</p>
+  </note>
   </item>
   <item>
-    <p>In the toolbar underneath the <gui>Volumes</gui> section, click the
-    menu button. Then click <gui>Format…</gui>.</p>
+   <p>In the Volumes section, click <gui>Unmount Volume</gui>. Then click
+   <gui>Format Volume</gui>.</p>
   </item>
   <item>
-    <p>In the window that pops up, choose a file system <gui>Type</gui> for the
-    disk.</p>
+   <p>В появившемся окне выберите <gui>Тип</gui> файловой системы для диска.</p>
    <p>Если вы используете диск кроме компьютеров под управлением Linux также на компьютерах с Windows или Mac OS, выберите <gui>FAT</gui>. Если вы пользуетесь им только в Windows, оптимальным выбором может быть <gui>NTFS</gui>. Краткое описание <gui>типа файловой системы</gui> будет представлено в качестве метки диска.</p>
   </item>
   <item>
-    <p>Give the disk a name and click <gui>Format…</gui> to continue and show a
-    confirmation window. Check the details carefully, and click
-    <gui>Format</gui> to wipe the disk.</p>
+   <p>Задайте имя диска и щёлкните <gui>Форматировать</gui>, чтобы начать стирание диска.</p>
   </item>
   <item>
-    <p>Once the formatting has finished, click the eject icon to safely remove
-    the disk. It should now be blank and ready to use again.</p>
+   <p>После завершения форматирования выполните <gui>безопасное извлечение</gui> диска. Теперь он должен быть чистым и готовым к дальнейшему использованию.</p>
   </item>
 </steps>
 

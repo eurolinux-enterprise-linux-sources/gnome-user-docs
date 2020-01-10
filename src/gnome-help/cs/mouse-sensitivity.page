@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="mouse-sensitivity" xml:lang="cs">
-
-  <info>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="mouse-sensitivity" xml:lang="cs">
+<info>
     <link type="guide" xref="mouse"/>
     <link type="guide" xref="a11y#mobility" group="pointing"/>
 
-    <revision pkgversion="3.8" date="2013-03-13" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-10-29" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
+
+    <desc>Change how quickly the pointer moves when you use
+    your mouse or touchpad.</desc>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -25,44 +25,44 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Jak změnit rychlost, kterou se pohybuje ukazatel při používání myši nebo touchpadu.</desc>
-  
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
       <mal:email>adamatousek@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Marek Černocký</mal:name>
-      <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014, 2015</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Uzpůsobení rychlosti myši a touchpadu</title>
+<title>Adjust speed of the mouse and touchpad</title>
 
-  <p>Pokud se ukazatel myši posouvá příliš rychle nebo příliš pomalu, když pohybujete myší nebo používáte touchpad, můžete si rychlost ukazatele pro dané zařízení uzpůsobit.</p>
+<p>If your pointer moves too fast or slow when you move your mouse
+or use your touchpad, you can adjust the pointer speed for these devices.</p>
 
-  <steps>
-    <item>
-      <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Myš a touchpad</gui>.</p>
-    </item>
-    <item>
-      <p>Kliknutím na <gui>Myš a touchpad</gui> otevřete příslušný panel.</p>
-    </item>
-    <item>
-      <p>Posouvejte táhlem <gui>Rychlost ukazatel</gui>, dokud si pohyb ukazatele nepřizpůsobíte tak, aby vám vyhovoval. Pro každé ukazovací zařízení, například myš a touchpad, uvidíte samostatné táhlo.</p>
-    </item>
-  </steps>
+<steps>
+  <item><p>Click your name on the top bar and select <gui>Settings</gui>.</p></item>
+  <item><p>Open <gui>Mouse &amp; Touchpad</gui>.</p></item>
+  <item><p>Adjust the <gui>Pointer Speed</gui> slider until the pointer motion
+   is comfortable for you.</p></item>
+</steps>
 
-  <p>Můžete nastavit různou rychlost ukazatele pro jednotlivá zařízení. Například můžete mít jednu rychlost posuvu pro touchpad notebooku a jinou pro myš. To proto, že někdy nejvhodnější nastavení pro jeden typ zařízení není nejlepší pro jiné.</p>
+<!--
+<p>Sensitivity is how much your pointer initially moves when you move your mouse.</p>
 
-  <note>
-    <p>Část <gui>Touchpad</gui> se objeví, jen když má počítač touchpad, a obdobně část <gui>Myš</gui> je viditelná, jen když je připojená myš.</p>
-  </note>
+<p>The farther you move your mouse, the faster and faster the pointer moves
+relative to your movement. This helps you get the pointer across the screen
+without lifting your hand, while still letting you point and click accurately.
+Acceleration controls this behavior.</p>
+-->
 
+<note style="tip">
+  <p>You can set the pointer speed differently for your mouse
+  and touchpad. Sometimes the most comfortable settings for one type of
+  device aren't the most comfortable for another. Just set the sliders on
+  both the <gui>Mouse</gui> and <gui>Touchpad</gui> sections.</p>
+</note>
+<note>
+  <p>The <gui>Touchpad</gui> section only appears if your system has a
+  touchpad.</p>
+</note>
 </page>

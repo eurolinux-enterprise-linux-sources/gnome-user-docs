@@ -2,11 +2,10 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="look-display-fuzzy" xml:lang="nl">
 
   <info>
-    <link type="guide" xref="hardware-problems-graphics"/>
+   <link type="guide" xref="hardware-problems-graphics"/>
+   <desc>The screen resolution may be set incorrectly.</desc>
 
     <revision pkgversion="3.8.0" version="0.3" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.9.92" date="2013-10-11" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
 
     <credit type="author">
       <name>Gnome-documentatieproject</name>
@@ -24,60 +23,44 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Shobha Tyagi</name>
-      <email>tyagishobha@gmail.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>De schermresolutie is mogelijk verkeerd ingesteld.</desc>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
   </info>
 
-<title>Waarom ziet alles op mijn scherm er wazig/korrelig uit?</title>
+<title>Why do things look fuzzy/pixelated on my screen?</title>
 
-<p>Dit kan gebeuren omdat de schermresolutie die u heeft ingesteld niet geschikt is voor uw scherm.</p>
+<p>This can happen because the display resolution that you have set it is not the right one for your screen.</p>
 
-<p>Om dit op te lossen, open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht en typ <gui>Schermen</gui>. Klik op <gui>Schermen</gui> om het paneel te openen. Probeer enkele <gui>Resolutie</gui>-mogelijkheden uit en kies voor de resolutie die het scherm er beter uit laat ziet.</p>
+<p>To solve this, click your name on the top bar and go to <gui>Settings</gui>. In the Hardware section, choose <gui>Displays</gui>. Try some of the <gui>Resolution</gui> options and set the one that makes the screen look better.</p>
+
+<comment>
+  <cite date="2012-02-19">shaunm</cite>
+  <p>Would like a little more explanation on native resolution, which
+  is generally only applicable on LCDs. There's a stub for using two
+  monitors. Link from section below when it's added.</p>
+</comment>
 
 <section id="multihead">
-  <title>Wanneer er meerdere schermen aangesloten zijn</title>
+ <title>When multiple displays are connected</title>
 
-  <p>Als u twee schermen heeft aangesloten op de computer (bijvoorbeeld een normale monitor en een projector), dan kan het zijn dat de schermen verschillende resoluties hebben. De grafische kaart in de computer kan echter het scherm slechts in één resolutie tegelijk weergeven waardoor minstens één van de schermen er vaag uitziet.</p>
+ <p>If you have two displays connected to the computer (for example, a normal monitor and a projector), the displays might have different resolutions. However, the computer's graphics card can only display the screen in one resolution at a time, so at least one of the displays might look fuzzy.</p>
 
-  <p>U kunt het zo instellen dat de twee schermen verschillende resoluties hebben, maar u kunt dan niet hetzelfde op beide schermen tegelijk weergeven. In feite heeft u twee onafhankelijke schermen die tegelijk zijn aangesloten. U kunt vensters verplaatsen van het ene scherm naar het andere, maar u kunt niet hetzelfde venster op beide schermen tegelijk tonen.</p>
+ <p>You can set it so that the two displays have different resolutions, but you won't be able to display the same thing on both screens simultaneously. In effect, you will have two independent screens connected at the same time. You can move windows from one screen to another, but you can't show the same window on both screens at once.</p>
 
-  <p>Om de schermen zo in te stellen dat ze zij elk een eigen resolutie hebben:</p>
+ <p>To set up the displays so that they each have their own resolution:</p>
 
-  <steps>
-    <item>
-      <p>Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht en typ <gui>Schermen</gui>.</p>
-    </item>
-    <item>
-      <p>Klik op het <gui>Schermen</gui> om het paneel te openen.</p>
-    </item>
-    <item>
-      <p>De schermen zouden in de lijst als <gui>Gespiegeld</gui> moeten staan. Kies uw hoofdscherm.</p>
-    </item>
-    <item>
-      <p>Kies <gui>Primair</gui> in de lijst met schermconfiguraties en klik daarna op <gui style="button">Toepassen</gui> om het op te slaan.</p>
-    </item>
-    <item>
-      <p>Selecteer elk scherm apart in het grijze vak bovenaan het venster <gui>Schermen</gui>. Wijzig de <gui>resolutie</gui> tot dat scherm er goed uitziet.</p>
-    </item>
-  </steps>
+ <steps>
+  <item>
+   <p>Click your name on the top bar and click <gui>Settings</gui>. Open <gui>Displays</gui>.</p>
+  </item>
+
+  <item>
+   <p>Uncheck <gui>Mirror Displays</gui>.</p>
+  </item>
+
+  <item>
+   <p>Select each display in turn from the gray box at the top of the <gui>Displays</gui> window. Change the <gui>Resolution</gui> until that display looks right.</p>
+  </item>
+ </steps>
 
 </section>
 

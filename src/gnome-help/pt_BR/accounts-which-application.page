@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="accounts-which-application" xml:lang="pt-BR">
-
   <info>
-    <link type="guide" xref="accounts"/>
-    <link type="seealso" xref="accounts-disable-service"/>
-
-    <revision pkgversion="3.8.2" date="2013-05-22" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="incomplete"/>
+    <revision pkgversion="3.8.2" version="0.2" date="2013-05-22" status="review"/>
 
     <credit type="author copyright">
       <name>Baptiste Mille-Mathias</name>
       <email>baptistem@gnome.org</email>
-      <years>2012, 2013</years>
+      <years>2012-2013</years>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
@@ -23,10 +17,10 @@
       <email>ak-47@gmx.net</email>
     </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <link type="guide" xref="accounts"/>
+    <link type="seealso" xref="accounts-disable-service"/>
 
     <desc>Aplicativos podem usar as contas criadas no <app>Contas on-line</app> e os serviços que eles exploram.</desc>
-
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Rodolfo Ribeiro Gomes</mal:name>
@@ -35,80 +29,61 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Enrico Nicoletto</mal:name>
       <mal:email>liverig@gmail.com</mal:email>
       <mal:years>2013.</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>João Santana</mal:name>
-      <mal:email>joaosantana@outlook.com</mal:email>
-      <mal:years>2013.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Fontenelle</mal:name>
-      <mal:email>rafaelff@gnome.org</mal:email>
-      <mal:years>2012-2018.</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Aplicativos e serviços on-line</title>
+  <title>Quais aplicativos tiram vantagem das contas on-line?</title>
 
-  <p>Assim que você tiver adicionado uma conta on-line, qualquer aplicativo pode usar aquela conta para qualquer dos serviços disponíveis que você não <link xref="accounts-disable-service">desabilitou</link>. Provedores diferentes fornecem serviços diferentes. Essa página lista os serviços diferentes e alguns aplicativos que os usam.</p>
+  <p><app>Contas on-line</app> podem ser usadas para que aplicativos externos se configurem automaticamente.</p>
 
-  <terms>
-    <item>
-      <title>Agenda</title>
-      <p>O serviço Agenda permite que você veja, adicione e edite eventos na agenda on-line. Ele é usado por aplicativos como <app>Agenda</app>, <app>Evolution</app> e <app>California</app>.</p>
-    </item>
+  <section id="accounts-google-services">
+   <title>Excluir uma conta Google</title>
 
-    <item>
-      <title>Bate-papo</title>
-      <p>O serviço Bate-papo permite que você bata-papo com seus contatos em plataformas populares de mensagem instantânea. Ele é usado pelo <app>Empathy</app>.</p>
-    </item>
+   <list>
+    <item><p><app>Evolution</app>, o aplicativo de e-mail. Sua conta de e-mail será adicionada ao <app>Evolution</app> automaticamente; então, ele vai receber seus e-mails, dar acesso aos seus contatos, e exibir na agenda os itens do seu Google agenda.</p></item>
+    <item><p><app>Empathy</app>, the instant messaging application. Your online
+    account will be added and you will be able to communicate with your friends.
+    </p></item>
+    <item><p><app>Contatos</app>, o qual permite que você veja e edite seus contatos.</p></item>
+    <item><p><app>Documentos</app> pode acessar seus documentos online e exibi-los.</p></item>
+   </list>
+  </section>
 
-    <item>
-      <title>Contatos</title>
-      <p>O serviço Contatos permite que você veja os detalhes publicados de seus contatos em vários serviços. Ele é usado por aplicativos como <app>Contatos</app> e <app>Evolution</app>.</p>
-    </item>
+  <section id="accounts-windows-services">
+   <title>Com contas do Windows Live, Facebook ou Twitter</title>
 
-    <item>
-      <title>Documentos</title>
-      <p>O serviço Documentos permite que você veja seus documentos on-line como, por exemplo, os dos Google Docs. Você pode ver seus documentos usando o aplicativo <app>Documentos</app>.</p>
-    </item>
+   <p><app>Empathy</app> pode usar essas contas para conectá-lo para bate-papo com seus contatos, amigos e seguidores.</p>
+  </section>
 
-    <item>
-      <title>Arquivos</title>
-      <p>O serviço Arquivos adiciona uma localização de arquivos remota, como se você tivesse adicionado uma usando a funcionalidade <link xref="nautilus-connect">Conectar ao servidor</link> no gerenciador de arquivos. Você pode acessar os arquivos remotos usando o gerenciador de arquivos, assim como por diálogos de abrir e salvar arquivos em qualquer aplicativo.</p>
-    </item>
+  <section id="account-windows-skydrive">
+   <title>With a SkyDrive account</title>
 
-    <item>
-      <title>Correio</title>
-      <p>O serviço Correio permite que você envie e receba e-mail por um provedor de e-mail como o Google. Ele é usado pelo <app>Evolution</app>.</p>
-    </item>
+   <p><app>Documentos</app> pode acessar seus documentos on-line no Microsoft SkyDrive e pode exibi-los.</p>
+  </section>
 
-<!-- TODO: Not sure what this does. Doesn't seem to do anything in Maps app.
-    <item>
-      <title>Maps</title>
-    </item>
--->
+  <section id="account-exchange">
+   <title>With a Exchange account</title>
 
-    <item>
-      <title>Fotos</title>
-      <p>O serviço Fotos permite que você veja suas fotos on-line como, por exemplo, as publicadas no Facebook. Você pode ver suas fotos usando o aplicativo <app>Fotos</app>.</p>
-    </item>
+   <p>Once you have created an Exchange account, <app>Evolution</app> will start
+   retrieving mails from this account.</p>
+  </section>
 
-    <item>
-      <title>Impressoras</title>
-      <p>O serviço Impressoras permite que você envie a cópia de um PDF para um provedor por meio de um diálogo de impressão de qualquer aplicativos. O provedor pode fornecer serviços de impressão, ou ele pode apenas servir como armazenamento para o PDF, o qual pode ser baixado e impresso posteriormente.</p>
-    </item>
+  <section id="accounts-ownCloud">
+   <title>With a ownCloud account</title>
 
-    <item>
-      <title>Ler mais tarde</title>
-      <p>O serviço Ler mais tarde permite que você salve a página web em serviços externos de forma que você possa lê-la mais tarde em um outro dispositivo. Nenhum aplicativo atualmente usa esses serviço.</p>
-    </item>
+   <p>When an ownCloud account is set up, <app>Evolution</app> is able to
+   access and edit contacts and calendar appointments.</p>
 
-  </terms>
-
+   <p><app>Files</app> and other applications will be able to list and access
+   your online files stored in the ownCloud installation.</p>
+  </section>
 </page>

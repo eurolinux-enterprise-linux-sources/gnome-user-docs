@@ -2,14 +2,13 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-share" xml:lang="el">
 
   <info>
-    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="files" group="more"/>
     <link type="guide" xref="sharing"/>
     <link type="seealso" xref="nautilus-connect"/>
+    <desc>Easily transfer files to your email contacts from the file
+    manager.</desc>
 
     <revision pkgversion="3.8.2" version="0.3" date="2013-05-11" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -19,70 +18,67 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Μεταφέρετε εύκολα αρχεία στις επαφές ηλεκτρονικής αλληλογραφίας σας από τον διαχειριστή αρχείων.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
-      <mal:email>team@gnome.gr</mal:email>
-      <mal:years>2009-2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
       <mal:email>dmtrs32@gmail.com</mal:email>
-      <mal:years>2012-2015</mal:years>
+      <mal:years>2012, 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:name> Φώτης Τσάμης</mal:name>
       <mal:email>ftsamis@gmail.com</mal:email>
       <mal:years>2009</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:name> Μάριος Ζηντίλης</mal:name>
       <mal:email>m.zindilis@dmajor.org</mal:email>
       <mal:years>2009, 2010</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Θάνος Τρυφωνίδης</mal:name>
-      <mal:email>tomtryf@gnome.org</mal:email>
-      <mal:years>2012-2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Μαρία Μαυρίδου</mal:name>
-      <mal:email>mavridou@gmail.com</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:name> Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
     </mal:credit>
   </info>
 
-<title>Κοινή χρήση αρχείων με ηλεκτρονική αλληλογραφία</title>
+<title>Share files by email</title>
 
-<p>Μπορείτε εύκολα να μοιραστείτε αρχεία με τις επαφές σας με ηλεκτρονική αλληλογραφία άμεσα από τον διαχειριστή αρχείων.</p>
+<comment>
+  <cite date="2012-02-20">jim</cite>
+  <p>If we get gnome-user-share integrated eventually, we should discuss
+  or link that here.</p>
+</comment>
+<comment>
+  <cite date="2013-05-11" href="mailto:mdhillca@gmail.com">mdhill</cite>
+  <p>All functionality except email removed for 3.8 per Bug 680983.</p>
+</comment>
+
+<p>You can easily share files with your contacts by email directly from the
+file manager.</p>
 
   <note style="important">
-    <p>Πριν ξεκινήσετε, βεβαιωθείτε ότι το <app>Evolution</app> ή το <app>Geary</app> είναι εγκατεστημένο στον υπολογιστή σας και  έχει ρυθμιστεί ο λογαριασμός ηλεκτρονικής αλληλογραφίας.</p>
+    <p>Before you begin, make sure <app>Evolution</app> is installed on your
+    computer, and your email account is configured.</p>
   </note>
 
 <steps>
-  <title>Για να μοιραστείτε ένα αρχείο με ηλεκτρονική αλληλογραφία:</title>
-    <item>
-      <p>Ανοίξτε τα <app>Αρχεία</app> από την επισκόπηση <gui xref="shell-introduction#activities">Δραστηριότητες</gui>.</p>
-    </item>
+  <title>To share a file by email:</title>
+  <item><p>Ανοίξτε την εφαρμογή <app>αρχεία</app> από την επισκόπηση <gui>Ενέργειες</gui>.</p></item>
   <item><p>Εντοπίστε το αρχείο που θέλετε να μεταφέρετε.</p></item>
-    <item>
-      <p>Κάντε δεξί κλικ στο αρχείο και επιλέξτε <gui>Αποστολή σε…</gui>. Το παράθυρο σύνταξης μηνύματος θα εμφανιστεί με το συνημμένο αρχείο.</p>
-    </item>
-  <item><p>Κάντε κλικ στο <gui>Προς</gui> για επιλογή μιας επαφής, ή εισάγετε μια διεύθυνση ηλεκτρονικής αλληλογραφίας, όπου θέλετε να στείλετε το αρχείο. Συμπληρώστε το <gui>Θέμα</gui> και το σώμα του μηνύματος όπως απαιτείται και πατήστε <gui>Αποστολή</gui>.</p></item>
+  <item><p>Right-click the file and select <gui>Send To</gui>. The
+  <gui>Compose Message</gui> window will appear with the file attached.</p></item>
+  <item><p>Click <gui>To</gui> to choose a contact, or enter an email address
+  where you want to send the file. Fill in the <gui>Subject</gui> and the body
+  of the message as required and click <gui>Send</gui>.</p></item>
 </steps>
 
 <note style="tip">
-  <p>Μπορείτε να στείλετε πολλά αρχεία με μια φορά. Επιλέξτε πολλαπλά αρχεία κρατώντας πατημένο το <key>Ctrl</key> ενώ κάνετε κλικ στα αρχεία, έπειτα κάντε δεξί κλικ σε κάποιο από τα επιλεγμένα αρχεία.</p>
+  <p>You can send multiple files at once. Select multiple files by holding
+  down <key>Ctrl</key>, then right-click any selected file.</p>
 </note>
 
 </page>

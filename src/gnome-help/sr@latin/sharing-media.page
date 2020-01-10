@@ -1,73 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="sharing-media" xml:lang="sr-Latn">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="sharing-media" xml:lang="sr-Latn">
   <info>
     <link type="guide" xref="sharing"/>
-    <link type="guide" xref="prefs-sharing"/>
+    <link type="guide" xref="settings-sharing"/>
 
-    <revision pkgversion="3.10" version="0.2" date="2013-11-02" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.14" date="2014-10-13" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+    <revision pkgversion="3.8.2" version="0.1" date="2013-05-11" status="draft"/>
 
     <credit type="author">
       <name>Majkl Hil</name>
       <email>mdhillca@gmail.com</email>
     </credit>
 
+    <desc>Share media on your local network using Rygel.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Delite medije na vašoj mesnoj mreži koristeći UPnP.</desc>
   </info>
 
-  <title>Delite vašu muziku, fotografije i video zapise</title>
+  <title>Share your music, photos and videos</title>
 
-  <p>Možete da razgledate, tražite i da puštate medije na vašem računaru koristeći <sys>UPnP</sys> ili <sys>DLNA</sys> uključene uređaje kao što je telefon, TV ili igračka postava. Podesite <gui>Deljenje medija</gui> da dozvoli tim uređajima da pristupe fasciklama koje sadrže vašu muziku, fotografije i video snimke.</p>
+  <p>You can browse, search and play the media on your computer using a
+ <sys>UPnP</sys> or <sys>DLNA</sys> enabled device such as a phone, TV or game
+ console. Configure <gui>Media Sharing</gui> to allow these devices to access
+ the folders containing your music, photos and videos.</p>
 
   <note style="info package">
-    <p>Morate imati instalran paket <app>Rigel</app> da bi <gui>Deljenje medija</gui> bilo vidljivo.</p>
+    <p>You must have the <app>Rygel</app> package installed for
+     <gui>Media Sharing</gui> to be visible.</p>
 
     <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
       <if:when test="action:install">
-        <p><link action="install:rygel" style="button">Instalirajte Rigel</link></p>
+        <p><link action="install:rygel" style="button">Install Rygel</link></p>
       </if:when>
     </if:choose>
   </note>
 
   <steps>
     <item>
-      <p>Otvorite pregled <gui xref="shell-introduction#activities">Aktivnosti</gui> i počnite da kucate <gui>Deljenje</gui>.</p>
+      <p>Kliknite na vaše ime na gornjoj traci i izaberite <gui>Podešavanja</gui>.</p>
     </item>
     <item>
-      <p>Kliknite na <gui>Deljenje</gui> da otvorite panel.</p>
+      <p>Open <gui>Sharing</gui>.</p>
     </item>
     <item>
-      <p>Ako je <gui>Deljenje</gui> <gui>ISKLJ.</gui>, prebacite ga na <gui>UKLJ.</gui>.</p>
-
-      <note style="info"><p>Ako vam tekst ispod <gui>naziva računara</gui> dopušta da ga uređujete, možete da <link xref="sharing-displayname">izmenite</link> naziv pod kojim se vaš računar prikazuje na mreži.</p></note>
+      <p>If <gui>Sharing</gui> is <gui>OFF</gui>, switch it to
+      <gui>ON</gui>.</p>
     </item>
     <item>
-      <p>Izaberite <gui>Deljenje medija</gui>.</p>
+      <p>Select <gui>Media Sharing</gui>.</p>
     </item>
     <item>
-      <p>Prebacite <gui>Deljenje medija</gui> na <gui>UKLJ.</gui>.</p>
+      <p>Switch <gui>Share Media On This Network</gui> to <gui>ON</gui>.</p>
     </item>
     <item>
-      <p>Po osnovi, dele se fascikle <file>muzike</file>, <file>slika</file> i <file>videa</file>. Da uklonite jednu od njih, pritisnite <gui>×</gui> pored naziva fascikle.</p>
+      <p>Click <gui style="button">+</gui> to open the
+      <gui>Choose a folder</gui> window. Navigate <em>into</em> the desired
+      folder, <file>Music</file> in your <file>Home</file> directory for
+      example, and click <gui style="button">Open</gui>. Repeat for the other
+      folders you wish to share, for example <file>Pictures</file> and 
+      <file>Videos</file>.</p>
     </item>
     <item>
-      <p>Da dodate neku drugu fasciklu, pritisnite <gui style="button">+</gui> da otvorite prozor za <gui>biranje fascikle</gui>. Idite <em>do</em> željene fascikle i pritisnite dugme <gui style="button">Otvori</gui>.</p>
-    </item>
-    <item>
-      <p>Pritisnite <gui style="button">×</gui>. Sada ćete biti u mogućnosti da razgledate ili puštate medije iz fascikli koje ste izabrali koristeći spoljni uređaj.</p>
+      <p>Click <gui style="button">Close</gui>. You will now be able to browse
+      or play media in the folders you selected using the external device.</p>
     </item>
   </steps>
-
-  <section id="networks">
-  <title>Mreže</title>
-
-  <p>Odeljak <gui>Mreže</gui> navodi mreže na koje ste trenutno povezani. Koristite prekidač <gui>UKLJ. | ISKLJ.</gui> pored savke od njih da izaberete na kojima vaši mediji mogu biti deljeni.</p>
-
-  </section>
 
 </page>

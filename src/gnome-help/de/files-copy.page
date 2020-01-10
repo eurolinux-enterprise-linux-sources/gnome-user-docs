@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" version="1.0 ui/1.0" id="files-copy" xml:lang="de">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" id="files-copy" xml:lang="de">
 
   <info>
-    <link type="guide" xref="files#common-file-tasks"/>
+    <link type="guide" xref="files"/>
+    <desc>Objekte in einen neuen Ordner kopieren oder verschieben.</desc>
 
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-15" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
 
     <credit type="author">
       <name>Cristopher Thomas</name>
@@ -20,15 +19,18 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Objekte in einen neuen Ordner kopieren oder verschieben.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hendrik Knackstedt</mal:name>
-      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
-      <mal:years>2011.</mal:years>
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -38,21 +40,9 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Christian Kirbach</mal:name>
-      <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Mario Blättermann</mal:name>
-      <mal:email>mario.blaettermann@gmail.com</mal:email>
-      <mal:years>2011-2013, 2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Benjamin Steinwender</mal:name>
-      <mal:email>b@stbe.at</mal:email>
-      <mal:years>2014.</mal:years>
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.to</mal:years>
     </mal:credit>
   </info>
 
@@ -69,7 +59,7 @@
 <item><p>Wählen Sie die zu kopierende Datei aus, indem Sie einmalig darauf klicken.</p></item>
 <item><p>Klicken Sie mit rechts und wählen Sie <gui>Kopieren</gui> oder drücken Sie <keyseq><key>Strg</key><key>C</key></keyseq>.</p></item>
 <item><p>Gehen Sie zu einem anderen Ordner, wo Sie die Kopie dieser Datei ablegen wollen.</p></item>
-<item><p>Klicken Sie auf den Menüknopf und wählen Sie <gui>Einfügen</gui>, um den Kopiervorgang abzuschließen, oder drücken Sie <keyseq><key>Strg</key><key>V</key></keyseq>. Nun befindet sich eine Kopie der Datei im Originalordner und eine in dem anderen Ordner.</p></item>
+<item><p>Klicken Sie auf das Zahnrad-Symbol und wählen Sie <gui>Einfügen</gui>, um den Kopiervorgang abzuschließen, oder drücken Sie <keyseq><key>Strg</key><key>V</key></keyseq>. Nun befindet sich eine Kopie der Datei im Originalordner und in dem anderen Ordner.</p></item>
 </steps>
 
 <steps ui:expanded="false">
@@ -77,7 +67,7 @@
 <item><p>Wählen Sie die zu verschiebende Datei aus, indem Sie einmal darauf klicken.</p></item>
 <item><p>Klicken Sie mit der rechten Maustaste und wählen Sie <gui>Ausschneiden</gui>, oder drücken Sie <keyseq><key>Strg</key><key>X</key></keyseq>.</p></item>
 <item><p>Gehen Sie zu einem anderen Ordner, wohin Sie die Datei verschieben wollen.</p></item>
-<item><p>Klicken Sie auf den Menüknopf in der Werkzeugleiste und wählen Sie <gui>Einfügen</gui>, um den Verschiebevorgang abzuschließen, oder drücken Sie <keyseq><key>Strg</key><key>V</key></keyseq>. Die Datei wird aus dem Originalordner entnommen und in den anderen Ordner verschoben.</p></item>
+<item><p>Klicken Sie auf den Zahnrad-Knopf in der Werkzeugleiste und wählen Sie <gui>Einfügen</gui>, um den Verschiebevorgang abzuschließen, oder drücken Sie <keyseq><key>Strg</key><key>V</key></keyseq>. Die Datei wird aus dem Originalordner entnommen und in den anderen Ordner verschoben.</p></item>
 </steps>
 
 <steps ui:expanded="false">
@@ -92,7 +82,7 @@
 </steps>
 
 <note>
-  <p>Sie können eine Datei nicht in einen Ordner kopieren oder verschieben, der <em>nur lesbar</em> ist. Einige Ordner sind nur lesbar, um ein Manipulieren der Inhalte zu verhindern. Sie können ändern, dass dieser Ordner nur lesbar ist, indem Sie die <link xref="nautilus-file-properties-permissions">Zugriffsrechte ändern</link>.</p>
+ <p>Sie können eine Datei nicht in einen Ordner kopieren oder verschieben, der <em>nur lesbar</em> ist. Manche Ordner sind nur lesbar, um Sie an einem Manipulieren seiner Inhalte zu hindern. Sie können ändern, dass dieser Ordner nur lesbar ist, indem Sie die <link xref="nautilus-file-properties-permissions">Zugriffsrechte ändern</link>.</p>
 </note>
 
 </page>

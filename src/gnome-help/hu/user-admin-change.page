@@ -1,27 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="user-admin-change" xml:lang="hu">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="user-admin-change" xml:lang="hu">
 
   <info>
+
     <link type="guide" xref="user-accounts#privileges"/>
     <link type="seealso" xref="user-admin-explain"/>
 
+    <desc>Rendszergazdai jogosultság adásával kiválaszthatja, hogy mely felhasználók hajthatnak végre rendszerszintű változtatásokat.</desc>
+
     <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>GNOME dokumentációs projekt</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Rendszergazdai jogosultság adásával engedélyezheti felhasználóknak rendszerszintű változtatások végrehajtását.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Griechisch Erika</mal:name>
@@ -32,7 +26,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Kelemen Gábor</mal:name>
       <mal:email>kelemeng at gnome dot hu</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015, 2016, 2017</mal:years>
+      <mal:years>2011, 2012, 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -52,44 +46,44 @@
       <mal:email>lukacs.bence1 at gmail dot com</mal:email>
       <mal:years>2011</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Nagy Zoltán</mal:name>
-      <mal:email>dzodzie at gmail dot com</mal:email>
-      <mal:years>2011</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Rendszergazdai jogosultság adása</title>
+<title>Rendszergazdai jogosultság adása</title>
 
   <p>A rendszergazdai jogosultság adásával eldöntheti ki hajthat végre változtatásokat a rendszer fontos részein is. Eldöntheti, melyik felhasználónak legyen rendszergazdai jogosultsága, és melyiknek ne. Ezzel hatékonyan teheti biztonságossá rendszerét, és megakadályozhatja az esetleg káros, felhatalmazás nélküli változtatásokat.</p>
 
-  <p>A fióktípusok megváltoztatásához <link xref="user-admin-explain">rendszergazdai jogosultság</link> szükséges.</p>
+<steps>
+ <item>
+    <p>Kattintson a nevére a felső sávon, majd kattintson a neve melletti képre a <gui>Felhasználók</gui> ablak megnyitásához.</p>
+ </item>
 
-  <steps>
-    <item>
-      <p>Nyissa meg a <gui xref="shell-introduction#activities">Tevékenységek</gui> áttekintést, és kezdje el begépelni a <gui>Felhasználók</gui> szót.</p>
-    </item>
-    <item>
-      <p>Kattintson a <gui>Felhasználók</gui> elemre a panel megnyitásához.</p>
-    </item>
-    <item>
-      <p>Nyomja meg a jobb felső sarokban lévő <gui style="button">Feloldás</gui> gombot, és adja meg jelszavát.</p>
-    </item>
-    <item>
-      <p>Válassza ki a felhasználót, akinek meg szeretné változtatni a jogosultságait.</p>
-    </item>
-    <item>
-      <p>A <gui>Fióktípus</gui> mellett kattintson a <gui>Szabványos</gui> feliratra, és válassza a <gui>Rendszergazda</gui> menüpontot.</p>
-    </item>
-    <item>
-      <p>A felhasználó jogosultságai a következő bejelentkezésekor fognak megváltozni.</p>
-    </item>
-  </steps>
+ <item>
+  <p>Kattintson a <gui>Feloldás</gui> gombra, és írja be a jelszavát. (Ahhoz hogy egy felhasználónak rendszergazdai jogosultságot adjon, Önnek is rendelkeznie kell vele.)</p>
+ </item>
 
-  <note>
-    <p>A rendszer első felhasználói fiókja általában a rendszergazdai jogosultsággal rendelkező. Ez a felhasználói fiók a rendszer telepítésekor készült.</p>
-    <p>Nem bölcs dolog túl sok <gui>rendszergazdai</gui> jogosultsággal rendelkező felhasználót létrehozni egy rendszeren.</p>
-  </note>
+ <item>
+  <p>Válassza ki a felhasználót, akinek meg szeretné változtatni a jogosultságait.</p>
+  </item>
 
+ <item><p>A <gui>Fióktípus</gui> mellett kattintson a <gui>Szabványos</gui> feliratra, és válassza a <gui>Rendszergazda</gui> menüpontot.</p>
+ </item>
+
+
+ <item>
+  <p>Zárja be a Felhasználói fiókok ablakot. A felhasználó jogosultságai a következő bejelentkezésekor fognak megváltozni.</p>
+  </item>
+</steps>
+
+<note>
+ <p>A rendszer első felhasználói fiókja általában a rendszergazdai jogosultsággal rendelkező. Ez a felhasználói fiók a rendszer telepítésekor készült.</p>
+ <p>Nem bölcs dolog túl sok <gui>rendszergazdai</gui> jogosultsággal rendelkező felhasználót létrehozni egy rendszeren.</p>
+</note>
+
+  <comment>
+   <cite date="2012-02-19" href="mailto:gnome-doc-list@gnome.org">GNOME
+ Documentation Project</cite>
+   <p>Explain how admin privileges can be given to other people, or removed.
+ Warn the reader about how it's unwise to have too many admins on a system.</p>
+  </comment>
+	
 </page>

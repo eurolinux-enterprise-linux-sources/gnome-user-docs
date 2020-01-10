@@ -6,8 +6,6 @@
     <link type="seealso" xref="shell-keyboard-shortcuts"/>
 
     <revision pkgversion="3.7.5" version="0.2" date="2013-02-23" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.20" date="2016-08-13" status="candidate"/>
 
     <credit type="author">
       <name>Michael Hill</name>
@@ -27,8 +25,6 @@
        <email>kittykat3756@gmail.com</email>
     </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
     <desc>Usare le applicazioni e il desktop senza un mouse.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -45,6 +41,14 @@
   </info>
 
   <title>Navigazione da tastiera</title>
+
+  <comment>
+    <cite date="2012-03-14" href="mailto:shaunm@gnome.org">Shaun McCance</cite>
+    <p>Do <em>NOT</em> use <code>ui:expanded</code> on this page. I know it's
+    tempting, but the target audience for this page is people who cannot use
+    a mouse, and having to expand sections when you're just figuring out how
+    to drive things with the keyboard is a burden.</p>
+  </comment>
 
   <p>Questa pagina descrive la navigazione da tastiera per persone che non possono usare un mouse o altri dispositivi di puntamento, o che vogliono usare la tastiera il più possibile. Per scorciatoie da tastiera utili per tutti gli utenti, consultare <link xref="shell-keyboard-shortcuts"/>.</p>
 
@@ -65,6 +69,7 @@
     <td><p>Tasti freccia</p></td>
     <td>
       <p>Sposta la selezione tra elementi in un singolo controllo o tra un insieme di controlli correlati. Usare i tasti freccia per dare il focus ai pulsanti pulsanti in una barra degli strumenti, per selezionare elementi nella vista a elenco o a icone o per selezionare un pulsante radio da un gruppo.</p>
+      <p>In una vista ad albero, usare i tasti freccia sinistra e destra per ridurre ed espandere elementi con sottocartelle.</p>
     </td>
   </tr>
   <tr>
@@ -74,10 +79,6 @@
   <tr>
     <td><p><keyseq><key>Maiusc</key>Tasti freccia</keyseq></p></td>
     <td><p>Nella vista a elenco o a icone, seleziona tutti gli elementi a partire da quello selezionato fino quello attuale col focus.</p></td>
-    <td><p>In a tree view, items that have children can be expanded or collapsed,
-    to show or hide their children: expand by pressing
-    <keyseq><key>Shift</key><key>→</key></keyseq>, and collapse by
-    pressing <keyseq><key>Shift</key><key>←</key></keyseq>.</p></td>
   </tr>
   <tr>
     <td><p><key>Spazio</key></p></td>
@@ -130,10 +131,10 @@
   <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-updown"/>
   <tr>
     <td><p><keyseq><key>Alt</key><key>F6</key></keyseq></p></td>
-    <td><p>Cycle through windows in the same application. Hold down the
-    <key>Alt</key> key and press <key>F6</key> until the window you want is
-    highlighted, then release <key>Alt</key>. This is similar to the
-    <keyseq><key>Alt</key><key>`</key></keyseq> feature.</p></td>
+    <td><p>Cycle through windows in the same application. Hold down the <key>Alt</key>
+    key and press <key>F6</key> until the window you want is highlighted, then release
+    <key>Alt</key>. This is similar to the <keyseq><key>Alt</key><key>`</key></keyseq>
+    feature.</p></td>
   </tr>
   <tr>
     <td><p><keyseq><key>Alt</key><key>Esc</key></keyseq></p></td>
@@ -141,8 +142,8 @@
   </tr>
   <tr>
     <td><p><keyseq><key>Super</key><key>M</key></keyseq></p></td>
-    <td><p><link xref="shell-notifications#messagetray">Open the message
-    tray.</link> Press <key>Esc</key> to close.</p></td>
+    <td><p><link xref="shell-notifications#messagingtray">Open the message tray.</link>
+     Press <key>Esc</key> to close.</p></td>
   </tr>
 </table>
 
@@ -155,10 +156,9 @@
   <tr>
     <td><p><keyseq><key>Alt</key><key>F5</key></keyseq> or
     <keyseq><key>Super</key><key>↓</key></keyseq></p></td>
-    <td><p>Restore a maximized window to its original size. Use
-    <keyseq><key>Alt</key><key>F10</key></keyseq> to maximize.
-    <keyseq><key>Alt</key><key>F10</key></keyseq> both maximizes and
-    restores.</p></td>
+    <td><p>Restore a maximized window to its original size. Use <keyseq><key>Alt</key>
+    <key>F10</key></keyseq> to maximize. <keyseq><key>Alt</key><key>F10</key></keyseq>
+    both maximizes and restores.</p></td>
   </tr>
   <tr>
     <td><p><keyseq><key>Alt</key><key>F7</key></keyseq></p></td>
@@ -169,8 +169,6 @@
     <td><p>Ridimensiona la finestra attiva. Premere <keyseq><key>Alt</key><key>F8</key></keyseq> e i tasti freccia per ridimensionare la finestra. Premere <key>Invio</key> per terminare il ridimensionamento o <key>Esc</key> per riportarla alla dimensione originale.</p></td>
   </tr>
   <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-updown"/>
-  <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-left"/>
-  <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-right"/>
   <tr>
     <td><p><keyseq><key>Alt</key><key>F10</key></keyseq> or
     <keyseq><key>Super</key><key>↑</key></keyseq></p>

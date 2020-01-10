@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="clock-timezone" xml:lang="lv">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="clock-timezone" xml:lang="lv">
 
   <info>
     <link type="guide" xref="clock"/>
-
+    <desc>Pievienojiet citas laika joslas, lai redzētu, cik ir pulkstenis citās pilsētās.</desc>
     <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.16" date="2015-01-26" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>GNOME dokumentācijas projekts</name>
@@ -17,38 +14,19 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
-    <credit type="editor">
-       <name>Jim Campbell</name>
-       <email>jcampbell@gnome.org</email>
-    </credit>
-
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Pārslēdziet laika joslu uz pašreizējo vietu, lai varētu pareizi attēlot laiku.</desc>
   </info>
 
-  <title>Mainīt savu laika joslu</title>
+<title>Mainīt savu laika joslu</title>
 
-  <steps>
-    <item>
-      <p>Atveriet <gui xref="shell-introduction#activities">Aktivitāšu</gui> pārskatu un sāciet rakstīt <gui>Datums un laiks</gui>.</p>
-    </item>
-    <item>
-      <p>Spiediet <gui>Datums un laiks</gui>, lai atvērtu paneli.</p>
-    </item>
-    <item>
-      <p>Ja <gui>Automātiska laika josla</gui> ir iestatīta uz <gui>|</gui>, laika josla tiks atjaunināta automātiski, kamēr ir savienojums ar internetu. Lai laika joslas atjauninātu manuāli, pārslēdziet to uz <gui>◯</gui>.</p>
-    </item>
-    <item>
-      <p>Spiediet uz <gui>Laika josla</gui>, tad izvēlieties savu pašreizējo atrašanās vietu kartē vai meklējiet savu pilsētu.</p>
-    </item>
-  </steps>
+<steps>
+  <item><p>Click on the clock in the middle of the top bar.</p></item>
+  <item><p>Izvēlieties <gui>Datuma un laika iestatījumi</gui>.</p></item>
+  <item><p>Iespējams, ka vajadzēs spiest <gui>Atslēgt</gui> un ievadīt <link xref="user-admin-explain">administratora paroli</link>.</p></item>
+  <item><p>Spiediet uz savu atrašanās vietu kartē, tad izvēlieties savu pašreizējo pilsētu no izkrītošā saraksta.</p></item>
+</steps>
 
-  <p>Laiks tiks atjaunināts automātiski, izvēloties citu atrašanās vietu. Jūs varētu vēlēties arī <link xref="clock-set">regulēt pulksteni pašrocīgi</link>.</p>
+  <p>Laiks, kas norādīts augšējā joslā, tiks atjaunināts automātiski, izvēloties citu atrašanās vietu. Laiks logā tiks atjaunināts nākošo reizi kad piekļūsiet <gui>Datuma un laika iestatījumi</gui> logam. Jūs varētu vēlēties arī <link xref="clock-set">regulēt pulksteni pašrocīgi</link>.</p>
 
 </page>

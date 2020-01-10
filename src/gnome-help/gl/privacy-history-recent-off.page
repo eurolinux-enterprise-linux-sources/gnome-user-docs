@@ -1,89 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="privacy-history-recent-off" xml:lang="gl">
 
-  <info>
-    <link type="guide" xref="privacy"/>
-    <link type="guide" xref="files#more-file-tasks"/>
-
-    <revision pkgversion="3.8" date="2013-03-11" status="final"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-30" status="final"/>
-
-    <credit type="author">
-      <name>Jim Campbell</name>
-      <email>jwcampbell@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Stop or limit your computer from tracking your recently-used
-    files.</desc>
+<info>
   
+  <link type="guide" xref="privacy"/>
+  <desc>Evitar que o computador faga o seguimento dos ficheiros usados recentemente.</desc>
+  <revision pkgversion="3.8" date="2013-03-11" status="final"/>
+  <credit type="author">
+    <name>Jim Campbell</name>
+    <email>jwcampbell@gmail.com</email>
+  </credit>
+  <credit type="editor">
+    <name>Michael Hill</name>
+    <email>mdhillca@gmail.com</email>
+  </credit>
+
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2018</mal:years>
+      <mal:years>2011, 2012.</mal:years>
     </mal:credit>
   </info>
 
-  <title>Desactivar ou limitar o seguimento do historial de ficheiros</title>
+  <title>Desactivar o seguimento do historial</title>
   
-  <p>Se fai un seguemento dos ficheiros usados recentemente fai máis doado atopar ficheiros nos que estivo traballando no xestor de ficheiros e nos diálogos de ficheiros en aplicativos, porén pode querer manter estes elementos en privado, ou só facer un seguemento do seu historial máis recente.</p>
+    <p>Se fai un seguemento dos ficheiros usados recentemente fai máis doado atopar ficheiros nos que estivo traballando, porén pode querer manter estes elementos en privado. Para desactivar as características de seguemento do historial do seu escritorio:</p>
 
   <steps>
-    <title>Desactivar o seguimento do historial</title>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Privacy</gui>.</p>
-    </item>
-    <item>
-      <p>Prema <gui>Privacidade</gui> para abrir o panel.</p>
-    </item>
-    <item>
-      <p>Seleccione <gui>Uso e historial</gui>.</p>
-    </item>
-    <item>
-     <p>Estabeleza <gui>Usados recentemente</gui> a <gui>Desactivado</gui>.</p>
-     <p>To re-enable this feature, set the <gui>Recently Used</gui> switch to
-     <gui>ON</gui>.</p>
-    </item>
-    <item>
-      <p>Use the <gui>Clear Recent History</gui> button to purge the history
-      immediately.</p>
-    </item>
+    <item><p>Prema sobre o seu nome na barra superior.</p></item>
+    <item><p>Seleccione <guiseq><gui style="menu">Preferencias</gui><gui style="menu">Privacidade</gui> <gui style="menu">Uso e historial</gui></guiseq>.</p></item>
+    <item><p>Estabeleza <gui>Usados recentemente</gui> a <gui>Desactivado</gui>.</p></item>
   </steps>
   
-  <note><p>Esta configuración non afectará aos navegadores web que almacenan información sobre os sitios web que visita.</p></note>
+    <p>Para reactivar esta característica, estabeleza <gui>Usados recentemente</gui> para <gui>Activado</gui>.</p>
 
-  <steps>
-    <title>Restrinxir a cantidade de tempo que se fai seguemento do historial de ficheiros</title>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Privacy</gui>.</p>
-    </item>
-    <item>
-      <p>Prema <gui>Privacidade</gui> para abrir o panel.</p>
-    </item>
-    <item>
-      <p>Seleccione <gui>Uso e historial</gui>.</p>
-    </item>
-    <item>
-     <p>Ensure the <gui>Recently Used</gui> switch is <gui>ON</gui>.</p>
-    </item>
-    <item>
-     <p>Select the length of time to <gui>Retain History</gui>. Choose from
-     options <gui>1 day</gui>, <gui>7 days</gui>, <gui>30 days</gui>, or
-     <gui>Forever</gui>.</p>
-    </item>
-    <item>
-      <p>Use the <gui>Clear Recent History</gui> button to purge the history
-      immediately.</p>
-    </item>
-  </steps>
+    <note><p>Esta configuración non afectará aos navegadores web que almacenan información sobre os sitios web que visita.</p></note>
 
 </page>

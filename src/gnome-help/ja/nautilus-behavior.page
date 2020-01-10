@@ -7,7 +7,6 @@
     <desc>シングルクリックによるファイルオープン、実行可能なテキストファイルの起動、およびゴミ箱関連の動作の設定を行います。</desc>
 
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -25,16 +24,12 @@
       <name>Sindhu S</name>
       <email>sindhus@live.in</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -53,18 +48,6 @@
       <mal:name>Shushi Kurose</mal:name>
       <mal:email>md81bird@hitaki.net</mal:email>
       <mal:years>2012</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Noriko Mizumoto</mal:name>
-      <mal:email>noriko@fedoraproject.org</mal:email>
-      <mal:years>2013, 2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>坂本 貴史</mal:name>
-      <mal:email>o-takashi@sakamocchi.jp</mal:email>
-      <mal:years>2013, 2014</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -114,7 +97,7 @@
  <p>If <gui>Ask each time</gui> is selected, a dialog will pop up asking if you
  wish to run or view the selected text file.</p>
 
- <p>Executable text files are also called <em>scripts</em>. All scripts in the
+ <p>Executable text files are also called scripts. All scripts in
  <file>~/.local/share/nautilus/scripts</file> folder will appear in the context
  menu for a file under the <gui style="menuitem">Scripts</gui> submenu. When a
  script is executed from a local folder, all selected files will be pasted to
@@ -139,7 +122,6 @@
  </note>
 
 </section>
-
 <section id="trash">
 <info>
 <link type="seealso" xref="files-delete"/>
@@ -149,8 +131,15 @@
 
 <terms>
  <item>
-  <title><gui>Ask before emptying the Trash</gui></title>
+  <title><gui>ゴミ箱を空にする/ファイルを削除する前に確認する</gui></title>
   <p>このオプションはデフォルトで選択されています。ゴミ箱を空にする操作が行われると、確認メッセージが表示され、本当にゴミ箱を空にする/ファイルを削除するか尋ねられます。</p>
+ </item>
+ <item>
+  <title><gui>"削除" (ゴミ箱を経由しない) をメニューに追加する</gui></title>
+  <p>このオプションを選択すると、<app>ファイル</app>アプリケーションでの右クリックのポップアップメニューに<gui>削除</gui>メニュー項目を追加します。</p>
+<note style="warning">
+<p><gui>削除</gui>メニューオプションを使ってアイテムを削除すると、ゴミ箱を経由せずに完全に削除します。該当のアイテムはお使いのシステムから完全に削除されます。削除したアイテムを復旧する方法はありません。</p>
+</note>
  </item>
 </terms>
 </section>

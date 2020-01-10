@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-hidden" xml:lang="gl">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-hidden" xml:lang="gl">
 
   <info>
     <link type="guide" xref="files#faq"/>
+    <desc>Facer un ficheiro invisíbel, para que non se poida ver no xestor de ficheiros.</desc>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-29" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="candidate"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -16,78 +15,41 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Facer un ficheiro invisíbel, para que non se poida ver no xestor de ficheiros.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2018</mal:years>
+      <mal:years>2011, 2012.</mal:years>
     </mal:credit>
   </info>
 
 <title>Agochar un ficheiro</title>
 
-  <p>O xestor de ficheiros <app>Ficheiros</app> ofrécelle a posibilidade de ocultar e mostrar ficheiros á súa elección. Cando un ficheiro está oculto, non se mostra no xestor de ficheiros, pero segue estando no cartafol.</p>
+  <p>O xestor de ficheiros de GNOME ofrécelle a posibilidade de ocultar e mostrar ficheiros á súa elección. Cando un ficheiro está baleiro, non se mostra no xestor de ficheiros, pero segue estando no cartafol.</p>
 
-  <p>To hide a file, <link xref="files-rename">rename it</link> with a
-  <file>.</file> at the beginning of its name. For example, to hide a file
-  named <file>example.txt</file>, you should rename it to
-  <file>.example.txt</file>.</p>
+  <p>Por exemplo, para desagochar un ficheiro chamado <file>.exemplo.txt</file>, debe renomealo a <file>exemplo.txt</file>.</p>
 
 <note>
-  <p>You can hide folders in the same way that you can hide files. Hide a
-  folder by placing a <file>.</file> at the beginning of the folder’s name.</p>
+  <p>Pode ocultar cartafoles da mesma forma que pode ocultar ficheiros. Oculte un cartafol poñéndolle un <key>.</key> ao principio do seu nome.</p>
 </note>
 
 <section id="show-hidden">
  <title>Mostrar tódolos ficheiros ocultos</title>
+  <p>Se quere ver todos os ficheiros nun caratafol, vaia a dito cartafol e prema o botón da frecha cara <media type="image" src="figures/go-down.png">abaixo</media> na barra de ferramentas e seleccion <gui>Mostrar ficheiros ocultos</gui>, ou prema <keyseq><key>Ctrl</key><key>H</key></keyseq>. Verá todos os ficheiros ocultos ao carón dos ficheiros que normalmente non están ocultos.</p>
 
-  <p>If you want to see all hidden files in a folder, go to that folder and
-  either click the
-  <!-- FIXME: Get a tooltip added for "View options" -->
-  view options button in the toolbar and pick <gui>Show Hidden Files</gui>, or press
-  <keyseq><key>Ctrl</key><key>H</key></keyseq>. You will see all hidden files,
-  along with regular files that are not hidden.</p>
-
-  <p>To hide these files again, either click the
-  <!-- FIXME: Get a tooltip added for "View options" -->
-  view options button in the toolbar and pick <gui>Show Hidden Files</gui>, or press
-  <keyseq><key>Ctrl</key><key>H</key></keyseq> again.</p>
+  <p>Para agochar eses ficheiros de novo, prema o botón de frecha cara <media type="image" src="figures/go-down.png">abaixo</media> na barra de ferramentas e seleccione <gui>Mostrar ficheiros ocultos</gui>, ou prema <keyseq><key>Ctrl</key><key>H</key></keyseq> de novo.</p>
 
 </section>
 
 <section id="unhide">
  <title>Desocultar un ficheiro</title>
+  <p>Para desocultar un ficheiro, vaia ao cartafol que contén o ficheiro e prema o botón da frecha cara <media type="image" src="figures/go-down.png">abaixo</media> na barra de ferramentas e seleccione <gui>Mostrar ficheiros agochados</gui>. Logo, busque o ficheiro agochado e renoméeo para que o seu nome non comece por <file>.</file>. Por exemplo para ocultar o ficheiro chamado <file>.exemplo.txt</file>, debe renomealo a <file>exemplo.txt</file>.</p>
 
-  <p>To unhide a file, go to the folder containing the hidden file and click
-  the
-  <!-- FIXME: Get a tooltip added for "View options" -->
-  view options button in the toolbar and pick <gui>Show Hidden Files</gui>.
-  Then, find the hidden file and rename it so that it does not have a
-  <file>.</file> in front of its name. For example, to unhide a file called
-  <file>.example.txt</file>, you should rename it to
-  <file>example.txt</file>.</p>
-
-  <p>Once you have renamed the file, you can either click the
-  <!-- FIXME: Get a tooltip added for "View options" -->
-  view options button in the toolbar and pick <gui>Show Hidden Files</gui>, or
-  press <keyseq><key>Ctrl</key><key>H</key></keyseq> to hide any other hidden
-  files again.</p>
+  <p>En canto remate de renomear o ficheiro, prema o botón de frecha cara <media type="image" src="figures/go-down.png">abaixo</media> na barra de ferramentas e seleccione <gui>Mostrar ficheiros ocultos</gui>, ou prema <keyseq><key>Ctrl</key><key>H</key></keyseq> para agochalos de novo.</p>
 
   <note><p>De maneira predeterminada, só verá os ficheiros no xestor de ficheiros até que o peche. Para cambiar esta configuración e que o xestor de ficheiros mostre sempre os ficheiros ocultos, prema a <link xref="nautilus-views"/>.</p></note>
 
-  <note><p>Most hidden files will have a <file>.</file> at the
-  beginning of their name, but others might have a <file>~</file> at the end of
-  their name instead. These files are backup files. See
-  <link xref="files-tilde"/> for more information.</p></note>
-
+  <note><p>A maioría dos ficheiros ocultos teñen un <key>.</key> ao principio do seu nome. Outros, pola contra, poden ter unha <key>~</key> ao final do seu nome. Estes son ficheiros de respaldo. Consulte a <link xref="files-tilde"/> para obter máis información.</p></note>
 </section>
-
 </page>

@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="wacom-stylus" xml:lang="de">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="wacom-stylus" xml:lang="de">
   <info>
-    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+    <revision pkgversion="3.8.0" version="0.2" date="2013-03-09" status="candidate"/>
 
     <link type="guide" xref="wacom"/>
 
@@ -15,14 +11,18 @@
       <years>2012</years>
     </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
     <desc>Die Knopffunktionen und das Druckverhalten für den Wacom Stylus festlegen.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hendrik Knackstedt</mal:name>
-      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
-      <mal:years>2011.</mal:years>
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -32,39 +32,33 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Christian Kirbach</mal:name>
-      <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Mario Blättermann</mal:name>
-      <mal:email>mario.blaettermann@gmail.com</mal:email>
-      <mal:years>2011-2013, 2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Benjamin Steinwender</mal:name>
-      <mal:email>b@stbe.at</mal:email>
-      <mal:years>2014.</mal:years>
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.to</mal:years>
     </mal:credit>
   </info>
 
   <title>Den Stylus einrichten</title>
 
+  <comment>
+    <cite date="2012-04-21" href="mailto:mdhillca@gmail.com">Michael Hill</cite>
+    <p>Describe the config options for the stylus and how to configure more than
+     one stylus.</p>
+  </comment>
+
 <steps>
-  <item>
-    <p>Öffnen Sie die <gui xref="shell-introduction#activities">Aktivitäten</gui>-Übersicht und tippen Sie <gui>Wacom-Tablett</gui> ein.</p>
+  <item><p>Klicken Sie auf Ihren Namen im oberen Panel und wählen Sie <gui>Einstellungen</gui>.</p></item>
+  <item><p>Öffnen Sie <gui>Wacom Grafiktablett</gui>.</p>
+     <note style="tip"><p>Falls kein Tablett erkannt wurde, dann <gui>Bitte schließen Sie Ihr Wacom-Tablett an oder schalten Sie es ein</gui>.</p></note>
   </item>
-  <item>
-    <p>Klicken Sie auf <gui>Wacom-Grafiktablett</gui>, um das Panel zu öffnen.</p>
-    <!-- TODO: document how to connet the tablet using Bluetooth/add link -->
-    <note style="tip"><p>Falls kein Tablett erkannt wurde, dann werden Sie gebeten <gui>Bitte schließen Sie Ihr Wacom-Tablett an oder schalten Sie es ein</gui>. Klicken Sie auf <gui>Bluetooth-Einstellungen</gui>, um ein Funk-Tablett zu verbinden.</p></note>
-  </item>
-  <item><p>Im unteren Teil können Sie Details und Einstellungen Ihres Stylus ändern, mit dem Gerätenamen (der Stylus-Klasse) und Diagramm links. Folgende Einstellungen können angepasst werden:</p>
+  <item><p>Im unteren Teil können sie Details und Einstellungen Ihres Stylus ändern, mit dem Gerätenamen (der Stylus-Klasse) und Diagramm links. Folgende Einstellungen können angepasst werden:</p>
     <list>
       <item><p><gui>Druckschwelle des Radiergummis:</gui> Verwenden Sie den Schieberegler, um das »Gefühl« (die Umsetzung des physischen Drucks in digitale Werte) zwischen <gui>Weich</gui> und <gui>Hart</gui> zu regeln.</p></item>
-      <item><p>Konfiguration für <gui>Knöpfe/Scrollrad</gui> (ändert sich zwecks Anpassung an den Stylus). Klicken Sie auf das Menü neben jedem Eintrag, um eine der folgenden Funktionen auszuwählen: Keine Aktion, Klick mit der linken Maustaste, Klick mit der mittleren Maustaste, Klick mit der rechten Maustaste, Bildlauf nach oben, Bildlauf nach unten, Bildlauf nach rechts, Bildlauf nach links, Zurück oder Vorwärts.</p></item>
+      <item><p><gui>Button/Scroll Wheel</gui> configuration (these change to
+       reflect the stylus). Click the menu next to each label to select one of
+       these functions: No Action, Left Mouse Button Click, Middle Mouse Button
+       Click, Right Mouse Button Click, Scroll Up, Scroll Down, Scroll Left,
+       Scroll Right, Back, Forward.</p></item>
       <item><p><gui>Druckschwelle der Spitze:</gui> Verwenden Sie den Schieberegler, um zwischen <gui>Weich</gui> und <gui>Hart</gui> zu regeln.</p></item>
     </list>
   </item>

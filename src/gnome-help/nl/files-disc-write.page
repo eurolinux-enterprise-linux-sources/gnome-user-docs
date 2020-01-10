@@ -1,76 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-disc-write" xml:lang="nl">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-disc-write" xml:lang="nl">
   <info>
-    <link type="guide" xref="files#more-file-tasks"/>
-
-    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <link type="guide" xref="files" group="more"/>
 
     <credit type="author">
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
 
-    <desc>Zet bestanden en documenten op een lege cd of dvd met behulp van een cd/dvd-brander.</desc>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
+    <desc>Put files and documents onto a blank CD or DVD using a CD/DVD burner.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
-  <title>Bestanden naar cd of dvd schrijven</title>
+  <title>Write files to a CD or DVD</title>
 
-  <p>Met de toepassing <gui>cd/dvd branden</gui> kunt u bestanden op een lege schijf branden. Zodra u een cd in het cd/dvd-station plaatst, verschijnt in het bestandsbeheer de optie om een cd of dvd aan te maken. Het bestandsbeheer maakt het makkelijk om bestanden over te brengen naar andere computers of om <link xref="backup-why">reservekopieën</link> te maken door bestanden op een lege cd/dvd te zetten. Om bestanden naar een lege cd of dvd te schrijven:</p>
+  <p>You can put files onto a blank disc by using <gui>CD/DVD Creator</gui>. The
+ option to create a CD or DVD will appear in the file manager as soon as you
+ place the CD into your CD/DVD writer. The file manager lets you transfer files
+ to other computers or perform <link xref="backup-why">backups</link> by putting
+ files onto a blank disc. To write files to a CD or DVD:</p>
 
   <steps>
     <item>
-      <p>xPlaats een lege schijf in uw cd/dvd-station.</p></item>
+     <p>Place an empty disc into your CD/DVD writable drive.</p></item>
     <item>
-      <p>Kies in het venster <gui>Lege cd/dvd-r-schijf</gui>, dat onderaan het scherm verschijnt, <gui>Openen met CD/DVD Creator</gui>. Het venster <gui>CD/DVD Creator</gui> wordt geopend. </p>
-      <p>(U kunt ook klikken op <gui>Lege cd/dvd-schijf</gui> onder <gui>Apparaten</gui> in de zijbalk van bestandsbeheer.)</p>
+     <p>In the <gui>Blank CD/DVD-R Disc</gui> notification that pops up
+     at the bottom of the screen, select <gui>Open with CD/DVD Creator</gui>.
+     The <gui>CD/DVD Creator</gui> folder window will open.</p>
+     <p>(You can also click on <gui>Blank CD/DVD-R Disc</gui> under
+     <gui>Devices</gui> in the file manager sidebar.)</p>
     </item>
     <item>
-      <p>Typ in het veld <gui>Schijfnaam</gui> een naam in voor de schijf.</p>
+     <p>In the <gui>Disc Name</gui> field, type a name for the disc.</p>
     </item>
     <item>
-      <p>Sleep of de gewenste bestanden naar het venster.</p>
+     <p>Drag or copy the desired files into the window.</p>
     </item>
     <item>
-      <p>Klik op <gui>Naar schijf schrijven</gui>.</p>
+     <p>Click <gui>Write to Disc</gui>.</p>
     </item>
     <item>
-      <p>Kies onder <gui>Selecteer een schijf om naar toe te schrijven</gui> de lege schijf.</p>
-      <p>(U kunt ook <gui>Schijfkopiebestand</gui> kiezen. Dit zal de bestanden plaatsen in een <em>schijfkopie</em> die op uw computer zal worden opgeslagen. Daarna kunt u op een later tijdstip die schijfkopie op een lege schijf branden.</p>
+     <p>Under <gui>Select a disc to write to</gui>, choose the blank disc.</p>
+     <p>(You could choose <gui>Image file</gui> instead. This will put the files
+     in a <em>disc image</em>, which will be saved on your computer. You can
+     then burn that disc image onto a blank disc at a later date.)</p>
     </item>
     <item>
-      <p>Klik op <gui>Eigenschappen</gui> om de brandsnelheid, de locatie van de tijdelijke bestanden, en andere opties aan te passen. De standaard opties zouden goed genoeg moeten zijn.</p>
+     <p>Click <gui>Properties</gui> if you want to adjust burning speed, the
+     location of temporary files, and other options. The default options should
+     be fine.</p>
     </item>
     <item>
-      <p>Klik op de knop <gui>Branden</gui> om het opnemen te starten.</p>
-      <p>Als <gui>Verschillende kopieën branden</gui> geselecteerd is, wordt er om extra schijven gevraagd.</p>
+     <p>Click the <gui>Burn</gui> button to begin recording.</p>
+     <p>If <gui>Burn Several Copies</gui> is selected, you will be prompted for
+     additional discs.</p>
     </item>
     <item>
-      <p>Wanneer het branden van schijven is voltooid, zal deze automatisch worden uitgeworpen. Kies <gui>Meer kopieën maken</gui> of <gui>Sluiten</gui> om af te sluiten.</p>
+     <p>When the disc burning is complete, it will eject automatically. Choose
+     <gui>Make More Copies</gui> or <gui>Close</gui> to exit.</p>
     </item>
   </steps>
 
 <section id="problem">
-  <title>Als de schijf niet goed gebrand is</title>
+ <title>If the disc wasn't burned properly</title>
+  <p>Sometimes the computer doesn't record the data correctly, and you won't be
+ able to see the files you put onto the disc when you insert it into a computer.</p>
 
-  <p>Soms worden de data niet juist gelezen, en krijgt u niet de bestanden te zien die u op de schijf heeft gezet wanneer u de schijf in een computer plaatst.</p>
-
-  <p>Probeer in dit geval de schijf opnieuw te branden, maar gebruik daarbij een lagere brandsnelheid, bijvoorbeeld 12x in plaats van 48x. Met een lagere snelheid branden is betrouwbaarder. U kunt de snelheid kiezen door te klikken op de knop <gui>Eigenschappen</gui> in het venster <gui>cd/dvd branden</gui>.</p>
-
+  <p>In this case, try burning the disc again but use a lower burning speed, e.g.
+ 12x rather than 48x. Burning at slower speeds is more reliable. You can choose
+ the speed by clicking the <gui>Properties</gui> button in the
+ <gui>CD/DVD Creator</gui> window.</p>
 </section>
 
 </page>

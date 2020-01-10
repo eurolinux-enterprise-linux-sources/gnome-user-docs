@@ -18,9 +18,8 @@
     </credit>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
-    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
 
-    <desc>Testa din hårddisk för att kontrollera att den är frisk och utan problem.</desc>
+    <desc>Test your hard disk for problems to make sure that it's healthy.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -28,43 +27,38 @@
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Sebastian Rasmussen</mal:name>
-      <mal:email>sebras@gmail.com</mal:email>
-      <mal:years>2014, 2015, 2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Anders Jonsson</mal:name>
-      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
-      <mal:years>2016, 2017</mal:years>
-    </mal:credit>
   </info>
 
-<title>Kontrollera din hårddisk efter problem</title>
+<title>Check your hard disk for problems</title>
 
 <section id="disk-status">
- <title>Att kontrollera hårddisken</title>
-  <p>Hårddiskar har inbyggda hälsokontroller som kallas <app>SMART</app> (Själv-övervakande, analys och rapport-teknologi, Engelska: Self-Monitoring, Analysis and Reporting Technology) som kontinuerligt kontrollerar disken efter möjliga problem. SMART varnar också dig om disken snart kommer att gå sönder för att hjälpa dig att undvika att viktig data går förlorad.</p>
+ <title>Checking the hard disk</title>
+  <p>Hard disks have a built-in health-check tool called <app>SMART</app>
+ (Self-Monitoring, Analysis, and Reporting Technology), which continually
+ checks the disk for potential problems. SMART also warns you if the disk
+ is about to fail, helping you avoid loss of important data.</p>
 
-  <p>Även om SMART körs automatiskt kan du också kontrollera din disks hälsa genom att köra programmet <app>Diskar</app>:</p>
+  <p>Although SMART runs automatically, you can also check your disk's
+ health by running the <app>Disks</app> application:</p>
 
 <steps>
- <title>Kontrollera din hårddisks hälsa med programmet Diskar</title>
+ <title>Check your disk's health using the Disks application</title>
 
-  <item>
-    <p>Öppna <app>Diskar</app> från översiktsvyn <gui>Aktiviteter</gui>.</p>
-  </item>
-  <item>
-    <p>Välj disken som du vill kontrollera från listan över lagringsenheter till vänster. Information och status om disken kommer att visas.</p>
-  </item>
-  <item>
-    <p>Klicka på menyknappen och välj <gui>SMART-data och självtester…</gui>. <gui>Övergripande bedömning</gui> bör visa ”Disken är OK”.</p>
-  </item>
-  <item>
-    <p>Se vidare under <gui>SMART-attribut</gui> eller klicka på knappen <gui style="button">Påbörja självtest</gui> för att köra ett självtest.</p>
-  </item>
+ <item>
+  <p>Open the <app>Disks</app> application from the <gui>Activities</gui>
+  overview.</p>
+ </item>
+ <item>
+  <p>Select the disk you want to check from the <gui>Storage Devices</gui> list.
+  Information and status of the disk will appear under <gui>Drive</gui>.</p>
+ </item>
+ <item>
+  <p><gui>SMART Status</gui> should say "Disk is healthy".</p>
+ </item>
+ <item>
+  <p>Click the <gui>SMART Data</gui> button to view more drive information, or
+  to run a self-test.</p>
+ </item>
 
 </steps>
 
@@ -72,13 +66,21 @@
 
 <section id="disk-not-healthy">
 
- <title>Vad gör jag om disken inte mår bra?</title>
+ <title>What if the disk isn't healthy?</title>
 
-  <p>Även om <gui>Övergripande bedömning</gui> indikerar att disken <em>inte</em> mår bra så behöver det inte innebära panik. Det är dock bra att vara förberedd med en <link xref="backup-why">säkerhetskopia</link> för att undvika dataförlust.</p>
+  <p>Even if the <gui>SMART Status</gui> indicates that the disk <em>isn't</em>
+ healthy, there may be no cause for alarm. However, it's better to be prepared
+ with a <link xref="backup-why">backup</link> to prevent data loss.</p>
 
-  <p>Om tillståndet visar ”Pre-fail” mår disken fortfarande ganska bra men visar tecken på slitage, vilket innebär att den kan krascha inom en nära framtid. Om din hårddisk (eller dator) har några år på nacken kommer du antagligen se det här meddelandet för åtminstone ett par hälsokontroller. Du bör <link xref="backup-how">säkerhetskopiera dina viktiga filer regelbundet</link> och kontrollera disktillståndet med jämna mellanrum för att se om det förvärras.</p>
+  <p>If the status says "Pre-fail", the disk is still reasonably healthy but
+ signs of wear have been detected which mean it might fail in the near future.
+ If your hard disk (or computer) is a few years old, you are likely to see
+ this message on at least some of the health checks. You should
+ <link xref="backup-how">backup your important files regularly</link> and check
+ the disk status periodically to see if it gets worse.</p>
 
-  <p>Om det blir värre så kan det vara bra att ta med datorn/hårddisken till en reparatör för ytterligare diagnos eller reparation.</p>
+  <p>If it gets worse, you may wish to take the computer/hard disk to a
+ professional for further diagnosis or repair.</p>
 
 </section>
 

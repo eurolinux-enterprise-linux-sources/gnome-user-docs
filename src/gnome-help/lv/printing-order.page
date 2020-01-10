@@ -4,9 +4,9 @@
   <info>
     <link type="guide" xref="printing#paper"/>
 
+    <desc>Salieciet pa lappusēm un mainiet drukāšanas secību.</desc>
+
     <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -16,46 +16,31 @@
       <name>Jim Campbell</name>
       <email>jwcampbell@gmail.com</email>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Salieciet pa lappusēm un mainiet drukāšanas secību.</desc>
   </info>
 
-  <title>Likt lapas drukāt citā secībā</title>
+<title>Likt lapas drukāt citā secībā</title>
 
-  <section id="reverse">
-    <title>Pretēji</title>
+<section id="reverse">
+ <title>Pretēji</title>
+ <p>Printeri parasti drukā pirmo lapu vispirms, un pēdējo lapu beigās, tāpēc lappuses, kad jūs tās paceļat, iznāk apgrieztā secībā. Ja ir nepieciešams, jūs varat apgriezt šo drukas secību.</p>
+ <p>Lai apgrieztu secību:</p>
+ <steps>
+  <item><p>Spiediet <guiseq><gui>Datne</gui><gui>Drukāt</gui></guiseq>.</p></item>
+  <item><p><gui>Vispārīgi</gui> cilnē, Drukāšanas logā zem <em>Kopijas</em>, atzīmē <gui>Otrādi</gui>. Pēdējā lapa tiks drukāta kā pirmā un tā tālāk.</p></item>
+ </steps>
+</section>
 
-    <p>Printeri parasti drukā pirmo lapu vispirms, un pēdējo lapu beigās, tāpēc lappuses, kad jūs tās paceļat, iznāk apgrieztā secībā. Ja ir nepieciešams, jūs varat apgriezt šo drukas secību.</p>
+<section id="collate">
+ <title>Salikt pa lappusēm</title>
+ <p>Ja jūs drukājat vairāk nekā vienu dokumenta kopiju, izdrukas pēc noklusējuma tiks grupētas pēc lapu numuriem (t.i. kad iznāks visas pirmās lapas kopijas, tad nāks visas otrās lapas kopijas un tā tālāk). <em>Salikšana pa lappusēm</em> tā vietā liks iznākt katram eksemplāram ar tā lapām pareizā secībā.</p>
 
-    <steps>
-      <title>Lai apgrieztu secību:</title>
-      <item>
-        <p>Spiediet <keyseq><key>Ctrl</key><key>P</key></keyseq>, lai atvērtu drukāšanas dialoglodziņu.</p>
-      </item>
-      <item>
-        <p><gui>Vispārīgi</gui> cilnē, zem <gui>Kopijas</gui>, atzīmē <gui>Otrādi</gui>. Pēdējā lapa tiks drukāta kā pirmā un tā tālāk.</p>
-      </item>
-    </steps>
-
-  </section>
-
-  <section id="collate">
-    <title>Salikt pa lappusēm</title>
-
-  <p>Ja jūs drukājat vairāk nekā vienu dokumenta kopiju, izdrukas pēc noklusējuma tiks grupētas pēc lapu numuriem (t.i. kad iznāks visas pirmās lapas kopijas, tad nāks visas otrās lapas kopijas un tā tālāk). <em>Salikšana pa lappusēm</em> tā vietā liks iznākt katram eksemplāram ar tā lapām pareizā secībā.</p>
-
-  <steps>
-    <title>Lai sakopotu:</title>
-    <item>
-     <p>Spiediet <keyseq><key>Ctrl</key><key>P</key></keyseq>, lai atvērtu drukāšanas dialoglodziņu.</p>
-    </item>
-    <item>
-      <p>Cilnē <gui>Vispārīgi</gui> zem <em>Kopijas</em> ieķeksējiet  <gui>Salikt pa lappusēm</gui>.</p>
-    </item>
-  </steps>
-
+ <p>Lai saliktu pa lappusēm:</p>
+ <steps>
+  <item><p>Spiediet <guiseq><gui>Datne</gui><gui>Drukāt</gui></guiseq>.</p></item>
+  <item><p>Drukas logā, <gui>Vispārīgi</gui> cilnē zem <em>Kopijas</em> ieķeksējiet  <gui>Salikt pa lappusēm</gui>.</p></item>
+ </steps>
+ <!-- Need to add this image <media type="image" src="figures/reverse-collate.png"/> -->
 </section>
 
 </page>

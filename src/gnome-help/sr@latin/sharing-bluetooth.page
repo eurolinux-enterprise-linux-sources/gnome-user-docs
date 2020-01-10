@@ -1,55 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="sharing-bluetooth" xml:lang="sr-Latn">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="sharing-bluetooth" xml:lang="sr-Latn">
   <info>
     <link type="guide" xref="bluetooth"/>
-    <link type="guide" xref="sharing"/>
-    <link type="guide" xref="prefs-sharing"/>
+    <link type="guide" xref="settings-sharing"/>
 
-    <revision pkgversion="3.8.2" date="2013-05-13" status="draft"/>
-    <revision pkgversion="3.10" date="2013-11-09" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-08" status="candidate"/>
-    <revision pkgversion="3.14" date="2014-10-13" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+    <revision pkgversion="3.8.2" version="0.1" date="2013-05-13" status="draft"/>
 
     <credit type="author">
       <name>Majkl Hil</name>
       <email>mdhillca@gmail.com</email>
-      <years>2014</years>
-    </credit>
-    <credit type="author">
-      <name>Dejvid King</name>
-      <email>davidk@gnome.org</email>
-      <years>2014-2015</years>
     </credit>
 
+    <desc>Set which folders and devices are able to share over Bluetooth.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Omogućite utovar datoteka na vaš računar putem blututa.</desc>
   </info>
 
-  <title>Upravljajte deljenjem preko blututa</title>
+  <title>Control sharing over Bluetooth</title>
 
-  <p>Možete da uključite deljenje <gui>blututom</gui> da biste primili datoteke putem blututa u fascikli <file>preuzimanja</file></p>
+  <p>You can allow access to your <file>Public</file> and
+  <file>Downloads</file> folders for Bluetooth file sharing, and also restrict
+  that access to only <em>trusted devices</em>. Configure
+  <gui>Bluetooth Sharing</gui> to control access to the shared folders on your
+  computer.</p>
+
+  <note style="info">
+    <p>A Bluetooth device is <em>trusted</em> if you have <em>paired</em>, or
+    connected your computer to it. See
+    <link xref="bluetooth-connect-device"/>.</p>
+  </note>
 
   <steps>
-    <title>Dozvolite deljenje datoteka u vašoj fascikli <file>Preuzimanja</file></title>
+    <title>Share your <file>Public</file> folder over Bluetooth</title>
     <item>
-      <p>Otvorite pregled <gui xref="shell-introduction#activities">Aktivnosti</gui> i počnite da kucate <gui>Blutut</gui>.</p>
+      <p>Kliknite na vaše ime na gornjoj traci i izaberite <gui>Podešavanja</gui>.</p>
     </item>
     <item>
-      <p>Kliknite na <gui>Blutut</gui> da otvorite panel.</p>
+      <p>Open <gui>Sharing</gui>.</p>
     </item>
     <item>
-      <p>Uverite s eda je <link xref="bluetooth-turn-on-off"><gui>blutut</gui> uključen</link>.</p>
+      <p>If <gui>Sharing</gui> is <gui>OFF</gui>, switch it to
+      <gui>ON</gui>.</p>
     </item>
     <item>
-      <p>Uređaji sa uključenim blututom mogu da šalju datoteke u vašu fasciklu za <file>preuzimanja</file> samo kada je otvoren panel <gui>blututa</gui>.</p>
+      <p>Select <gui>Bluetooth Sharing</gui>.</p>
+    </item>
+    <item>
+      <p>Switch <gui>Share Public Folder</gui> to <gui>ON</gui>.</p>
+    </item>
+    <item>
+      <p>If you only want to allow trusted devices to access your
+      <file>Public</file> folder, switch
+      <gui>Only share with Trusted Devices</gui> to <gui>ON</gui>.</p>
+
+      <note style="tip">
+        <p>This option is disabled by default. You should enable it if you want
+        to prevent access to your shared files by anyone with a
+        Bluetooth-enabled cell phone or similar device nearby.</p>
+      </note>
+ 
+    </item>
+    <item>
+      <p>Click <gui style="button">Close</gui>. Bluetooth-enabled devices will
+      now be able to access files in your <file>Public</file> folder.</p>
     </item>
   </steps>
 
-  <note style="tip">
-    <p>Možete da <link xref="sharing-displayname">izmenite</link> naziv pod kojim se vaš računar prikazuje drugim uređajima.</p>
-  </note>
+  <steps>
+    <title>Allow files to be shared into your <file>Downloads</file> folder</title>
+    <item>
+      <p>Kliknite na vaše ime na gornjoj traci i izaberite <gui>Podešavanja</gui>.</p>
+    </item>
+    <item>
+      <p>Open <gui>Sharing</gui>.</p>
+    </item>
+    <item>
+      <p>If <gui>Sharing</gui> is <gui>OFF</gui>, switch it to
+      <gui>ON</gui>.</p>
+    </item>
+    <item>
+      <p>Select <gui>Bluetooth Sharing</gui>.</p>
+    </item>
+    <item>
+      <p>Switch <gui>Save Received Files to Downloads Folder</gui> to
+      <gui>ON</gui>.</p>
+    </item>
+    <item>
+      <p>If you only want to allow trusted devices to access your
+      <file>Downloads</file> folder, switch
+      <gui>Only Receive From Trusted Devices</gui> to <gui>ON</gui>.</p>
+
+      <note style="tip">
+        <p>This option is disabled by default. You should enable it if you want
+        to prevent access to your shared files by anyone with a
+        Bluetooth-enabled cell phone or similar device nearby.</p>
+      </note>
+
+    </item>
+    <item>
+      <p>Click <gui style="button">Close</gui>. Bluetooth-enabled devices will
+      now be able to send files to your <file>Downloads</file> folder.</p>
+    </item>
+  </steps>
 
 </page>

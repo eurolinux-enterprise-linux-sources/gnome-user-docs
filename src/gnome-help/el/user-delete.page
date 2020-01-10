@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="user-delete" xml:lang="el">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="user-delete" xml:lang="el">
 
   <info>
     <link type="guide" xref="user-accounts#manage"/>
-    <link type="seealso" xref="user-add"/>
-    <link type="seealso" xref="user-admin-explain"/>
-
+    <desc>Αφαίρεση των χρηστών που δεν χρησιμοποιούν πια τον υπολογιστή σας.</desc>
     <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -27,81 +22,41 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Αφαιρέστε χρήστες που δεν χρησιμοποιούν πια τον υπολογιστή σας.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
-      <mal:email>team@gnome.gr</mal:email>
-      <mal:years>2009-2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
       <mal:email>dmtrs32@gmail.com</mal:email>
-      <mal:years>2012-2015</mal:years>
+      <mal:years>2012, 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:name> Φώτης Τσάμης</mal:name>
       <mal:email>ftsamis@gmail.com</mal:email>
       <mal:years>2009</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:name> Μάριος Ζηντίλης</mal:name>
       <mal:email>m.zindilis@dmajor.org</mal:email>
       <mal:years>2009, 2010</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Θάνος Τρυφωνίδης</mal:name>
-      <mal:email>tomtryf@gnome.org</mal:email>
-      <mal:years>2012-2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Μαρία Μαυρίδου</mal:name>
-      <mal:email>mavridou@gmail.com</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:name> Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
     </mal:credit>
   </info>
+  <title>Διαγράψτε έναν λογαριασμό χρήστη</title>
 
-  <title>Διαγραφή λογαριασμού χρήστη</title>
+  <p>Μπορείτε να προσθέσετε πολλαπλούς λογαριασμούς χρηστών στον υπολογιστή σας. Δείτε <link xref="user-add"/> για να μάθετε πώς. Εάν κάποιος δεν χρησιμοποιεί πια τον υπολογιστή σας, μπορείτε να διαγράψετε αυτόν τον λογαριασμό του χρήστη.</p>
 
-  <p>You can <link xref="user-add">add multiple user accounts to your
-  computer</link>. If somebody is no longer using your computer, you can delete
-  that user’s account.</p>
-
-  <p>Χρειάζεστε <link xref="user-admin-explain">δικαιώματα διαχειριστή</link> για να διαγράψετε τους λογαριασμούς χρήστη.</p>
-
-  <steps>
-    <item>
-      <p>Ανοίξτε την επισκόπηση <gui xref="shell-introduction#activities">Δραστηριότητες</gui> και αρχίστε να πληκτρολογείτε <gui>Χρήστες</gui>.</p>
-    </item>
-    <item>
-      <p>Κάντε κλικ στο <gui>Χρήστες</gui> για να ανοίξετε τον πίνακα.</p>
-    </item>
-    <item>
-      <p>Πατήστε στο <gui style="button">Ξεκλείδωμα</gui> στην πάνω δεξιά γωνία και πληκτρολογήστε τον κωδικό πρόσβασής σας όταν σας ζητηθεί.</p>
-    </item>
-    <item>
-      <p>Επιλέξτε τον χρήστη που θέλετε να διαγράψετε και πατήστε το κουμπί <gui style="button">-</gui>, κάτω από τον κατάλογο λογαριασμών στα αριστερά, για να διαγράψετε αυτόν τον λογαριασμό χρήστη.</p>
-    </item>
-    <item>
-      <p>Each user has their own home folder for their files and settings. You
-      can choose to keep or delete the user’s home folder. Click <gui>Delete
-      Files</gui> if you are sure they will not be used anymore and you need to
-      free up disk space. These files are permanently deleted. They cannot be
-      recovered. You may want to back up the files to an external storage device
-      before deleting them.</p>
-    </item>
-  </steps>
-
+<steps>
+  <item><p>Πατήστε στο όνομά σας στην πάνω γραμμή, έπειτα πατήστε στην εικόνα δίπλα στο όνομά σας για να ανοίξετε το παράθυρο <gui>Χρήστες</gui>.</p></item>
+  <item><p>Πατήστε <gui>ξεκλείδωμα</gui> στην πάνω δεξιά γωνία και πληκτρολογήστε τον κωδικό σας για να κάνετε αλλαγές. Πρέπει να είστε διαχειριστής για να διαγράψετε λογαριασμούς χρήστη.</p></item>
+  <item><p>Επιλέξτε τον χρήστη που θέλετε να διαγράψετε και πατήστε το κουμπί <gui style="button">-</gui>.</p></item>
+  <item><p>Κάθε χρήστης έχει τον δικό του προσωπικό φάκελο για τα αρχεία του και τις ρυθμίσεις του. Μπορείτε να επιλέξετε να κρατήσετε ή να διαγράψετε τον προσωπικό φάκελο του χρήστη. Πατήστε <gui>διαγραφή αρχείων</gui>, εάν είσαστε σίγουρος ότι δεν θα χρησιμοποιηθούν πια και χρειάζεται να ελευθερώσετε χώρο δίσκου. Αυτά τα αρχεία διαγράφονται μόνιμα. Δεν μπορούν να ανακτηθούν. Μπορεί να θελήσετε να αντιγράψετε τα αρχεία σε έναν εξωτερικό δίσκο ή CD πριν τα διαγράψετε.</p></item>
+</steps>
 </page>

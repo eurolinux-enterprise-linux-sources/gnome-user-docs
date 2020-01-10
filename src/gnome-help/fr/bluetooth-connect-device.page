@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:if="http://projectmallard.org/if/1.0/" type="guide" style="task" version="1.0 if/1.0" id="bluetooth-connect-device" xml:lang="fr">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="guide" style="task" id="bluetooth-connect-device" xml:lang="fr">
 
   <info>
     <link type="guide" xref="bluetooth"/>
     <link type="seealso" xref="sharing-bluetooth"/>
-    <link type="seealso" xref="bluetooth-remove-connection"/>
+    
+    <revision pkgversion="3.8.2" version="0.2" date="2013-05-16" status="review"/>
 
-    <revision pkgversion="3.8" date="2013-05-16" status="review"/>
-    <revision pkgversion="3.10" date="2013-11-09" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.13" date="2014-09-22" status="final"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <desc>Associer des périphériques Bluetooth.</desc>
 
     <credit type="author">
       <name>Jim Campbell</name>
@@ -28,18 +25,7 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Associer des périphériques Bluetooth.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Luc Pionchon</mal:name>
@@ -56,13 +42,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Julien Hardelin</mal:name>
       <mal:email>jhardlin@orange.fr</mal:email>
-      <mal:years>2011, 2013</mal:years>
+      <mal:years>2011</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -88,55 +74,56 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Alexandre Franke</mal:name>
-      <mal:email>alexandre.franke@gmail.com</mal:email>
-      <mal:years>2015</mal:years>
-    </mal:credit>
   </info>
 
   <title>Association d'un ordinateur à un périphérique Bluetooth</title>
 
-  <p>Before you can use a Bluetooth device like a mouse or a headset, you first
-  need to connect your computer to the device. This is also called
-  <em>pairing</em> the Bluetooth devices.</p>
+  <p>Avant de pouvoir utiliser un périphérique Bluetooth tel qu'une souris ou un micro-casque, il faut connecter l'ordinateur au périphérique. On parle aussi d'association (ou d'appairage) des périphériques Bluetooth.</p>
+
+  <note style="important">
+    <p>Avant de commencer, vous devez vous assurer que le Bluetooth est activé sur votre ordinateur. Reportez-vous à <link xref="bluetooth-turn-on-off"/>.</p>
+  </note>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Bluetooth</gui>.</p>
+      <if:choose>
+        <if:when test="platform:unity">
+          <p>Cliquez sur l'icône Bluetooth dans la barre supérieure de l'écran et sélectionnez <gui>Installer un nouveau périphérique</gui>.</p>
+        </if:when>
+        <p>Cliquez sur l'icône Bluetooth dans la barre supérieure de l'écran et sélectionnez <gui>Installer un nouveau périphérique</gui>.</p>
+      </if:choose>
     </item>
     <item>
-      <p>Cliquez sur <gui>Bluetooth</gui> pour ouvrir le panneau.</p>
+      <p>Assurez-vous que le périphérique Bluetooth est <link xref="bluetooth-visibility">visible ou détectable</link> et placez-le à moins d'une dizaine de mètres de l'ordinateur. Cliquez sur <gui>Continuer</gui>. L'ordinateur commence à rechercher les périphériques.</p>
     </item>
     <item>
-      <p>Assurez-vous que le Bluetooth soit activé : l'interrupteur de la barre de titre doit être basculé sur <gui>Activé</gui>. Si cela est le cas et si le panneau est ouvert, votre ordinateur commence aussitôt à chercher les périphériques.</p>
+      <p>Si la liste contient trop de périphériques, servez-vous de la liste déroulante <gui>Type de périphérique</gui> pour n'afficher qu'un seul type de périphérique.</p>
     </item>
     <item>
-      <p>Assurez-vous que le périphérique Bluetooth est <link xref="bluetooth-visibility">visible ou détectable</link> et placez-le entre 5 et 10 mètres de l'ordinateur.</p>
+      <p>Cliquez sur <gui>Options du numéro d'identification personnel</gui> pour définir la façon d'envoyer un code PIN au périphérique.</p>
+      <note>
+	<p>Le paramétrage automatique du PIN utilise un code numérique à six chiffres. Un périphérique sans touches ou sans écran, comme une souris ou un micro-casque, peut nécessiter un code PIN particulier, comme 0000, ou pas de code PIN du tout. Consultez le manuel du périphérique pour connaître le paramètre qui convient.</p>
+      </note>
+      <p>Choisissez le paramétrage PIN qui convient à votre périphérique, puis cliquez sur <gui>Fermer</gui>.</p>
     </item>
     <item>
-      <p>Choisissez le périphérique dans la liste des <gui>Périphériques</gui> et cliquez dessus. Le panneau le concernant s'ouvre.</p>
+      <p>Cliquez sur <gui>Continuer</gui>. Si vous n'avez pas choisi un code PIN prédéfini, le code PIN s'affiche à l'écran.</p>
     </item>
     <item>
-      <p>Si nécessaire, confirmez le code PIN sur l'autre périphérique. Le périphérique devrait vous afficher le code PIN que vous voyez sur l'écran de l'ordinateur. Confirmez le code PIN du périphérique en appuyant sur <gui>Apparier</gui> ou sur <gui>Confirmer</gui>, puis cliquez sur <gui>Confirmer</gui> à l'écran.</p>
-      <p>La saisie doit être effectuée dans les 20 secondes suivantes pour la plupart des périphériques, sinon la connexion n'est pas établie. Si cela arrive, revenez à la liste des périphériques et recommencez.</p>
+      <p>Si nécessaire, confirmez le code PIN sur l'autre périphérique. Le périphérique devrait vous afficher le code PIN que vous voyez sur l'écran de l'ordinateur, ou alors il vous demande de le saisir. Confirmez le code PIN sur le périphérique et cliquez sur <gui>Correspond</gui>.</p>
+      <p>La saisie doit être effectuée dans les 20 secondes suivantes, sur la plupart des périphériques, sinon la connexion ne sera pas réalisée. Si cela arrive, revenez à la liste des périphériques et recommencez.</p>
     </item>
     <item>
-      <p>L'entrée du périphérique dans la liste des <gui>Périphériques</gui> affiche l'état <gui>Connecté</gui>.</p>
-    </item>
-    <item>
-      <p>Pour modifier un périphérique, cliquez dessus dans la liste des <gui>Périphériques</gui>. Un panneau spécifique à ce périphérique s'affiche et montre les options suuplémentaires applicables au type de périphérique auquel vous vous connectez.</p>
-    </item>
-    <item>
-      <p>Fermez le panneau après avoir modifié les paramètres.</p>
+      <p>Un message s'affiche lorsque la connexion est réussie. Cliquez sur <gui>Fermer</gui>.</p>
     </item>
   </steps>
 
-  <media its:translate="no" type="image" src="figures/bluetooth-menu.png" style="floatend">
-    <p its:translate="yes">L'icône Bluetooth dans la barre du haut de l'écran</p>
-  </media>
-  <p>Lorsqu'un ou plusieurs périphériques Bluetooth sont connectés, l'icône Bluetooth apparaît dans la zone d'état du système.</p>
+  <p>Vous pouvez <link xref="bluetooth-remove-connection">supprimer une connexion Bluetooth</link> plus tard si vous le voulez.</p>
+
+      <note style="tip">
+        <p>To control access to your shared files, refer to the
+        <gui>Bluetooth Sharing</gui> settings. See
+        <link xref="sharing-bluetooth"/>.</p>
+      </note>
 
 </page>

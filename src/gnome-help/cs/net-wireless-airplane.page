@@ -1,30 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-airplane" xml:lang="cs">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="net-wireless-airplane" xml:lang="cs">
   <info>
     <link type="guide" xref="net-wireless"/>
 
     <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
-    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-    <revision pkgversion="3.24" date="2017-03-26" status="final"/>
 
     <credit type="author">
-      <name>Dokumentační projekt GNOME</name>
+      <name>GNOME Documentation Project</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-      <years>2015</years>
-    </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-      <years>2015</years>
-    </credit>
 
-    <desc>Otevřete nastavení sítě a přepněte Režim „letadlo“ na Zapnuto.</desc>
+    <desc>Open Network Settings and switch Airplane Mode to ON.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -32,38 +18,21 @@
       <mal:email>adamatousek@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Marek Černocký</mal:name>
-      <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014, 2015</mal:years>
-    </mal:credit>
   </info>
 
-<title>Vypnutí bezdrátových zařízení (režim letadlo)</title>
+<title>Turn off wireless (airplane mode)</title>
 
-<p>Když jste se svým počítačem v letadle (nebo někde jinde, kde není dovoleno používat bezdrátová zařízení), měli byste bezdrátové funkce vypnout. Můžete je chtít vypnout také z jiných důvodů (například kvůli úspoře energie z baterie).</p>
+<p>If you have your computer on an airplane (or some other area where wireless connections are not allowed), you should switch off your wireless. You may also want to switch off your wireless for other reasons (to save battery power, for example). To do this:</p>
 
-  <note>
-    <p>Použití <em>režimu letadlo</em> úplně vypne bezdrátová připojení, včetně Wi-Fi, 3G a Bluetooth.</p>
-  </note>
+<steps>
+ <item>
+  <p>Click the network icon on the top bar and select <gui>Network Settings</gui>.</p>
+ </item>
+ <item>
+  <p>Switch <gui>Airplane Mode</gui> on. This will turn off your wireless connection until you switch off airplane mode again.</p>
+ </item>
+</steps>
 
-  <p>Když chcete zapnout režim letadlo:</p>
-
-  <steps>
-    <item>
-      <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Síť</gui>.</p>
-    </item>
-    <item>
-      <p>Kliknutím na <gui>Síť</gui> otevřete příslušný panel.</p>
-    </item>
-    <item>
-      <p>Přepněte vypínač <gui>Režim letadlo</gui> na <gui>Zapnuto</gui>. Tím se vypnou všechna bezdrátová připojení, dokud režim letadlo zase nevypnete.</p>
-    </item>
-  </steps>
-
-  <note style="tip">
-    <p>Své WiFi připojení můžete vypnout přes <gui xref="shell-introduction#yourname">systémovou nabídku</gui> kliknutím na název připojení a zvolením <gui>Vypnout</gui>.</p>
-  </note>
+<note><p>Using <em>Airplane Mode</em> will completely turn off both wireless and Bluetooth connections.</p></note>
 
 </page>

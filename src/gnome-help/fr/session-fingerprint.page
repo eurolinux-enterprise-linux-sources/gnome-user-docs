@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="session-fingerprint" xml:lang="fr">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="session-fingerprint" xml:lang="fr">
 
   <info>
     <link type="guide" xref="hardware-auth"/>
 
+    <desc>Ouvrir une session en utilisant un scanner d'empreinte digitale pris en charge.</desc>
+
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
-    <revision pkgversion="3.10" date="2013-11-03" status="review"/>
-    <revision pkgversion="3.12" date="2014-06-16" status="final"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="final"/>
 
     <credit type="author">
       <name>Le projet de documentation GNOME</name>
@@ -16,22 +15,9 @@
     <credit type="author">
       <name>Paul W. Frields</name>
       <email>stickster@gmail.com</email>
-      <years>2011</years>
-    </credit>
-    <credit type="author editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-      <years>2013</years>
-    </credit>
-    <credit type="editor">
-      <name>Jim Campbell</name>
-      <email>jcampbell@gnome.org</email>
-      <years>2014</years>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Ouvrir une session en utilisant un scanner d'empreintes digitales pris en charge à la place de la saisie de votre mot de passe.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Luc Pionchon</mal:name>
@@ -48,13 +34,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Julien Hardelin</mal:name>
       <mal:email>jhardlin@orange.fr</mal:email>
-      <mal:years>2011, 2013</mal:years>
+      <mal:years>2011</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -80,70 +66,60 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Alexandre Franke</mal:name>
-      <mal:email>alexandre.franke@gmail.com</mal:email>
-      <mal:years>2015</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Connexion avec une empreinte digitale</title>
-
-  <p>Si votre système possède un scanner d'empreintes reconnu, vous pouvez enregistrer une empreinte digitale et l'utiliser pour vous connecter.</p>
-
-<section id="record">
-  <title>Enregistrement d'une empreinte digitale</title>
-
-  <p>Avant de pouvoir vous connecter avec une empreinte digitale, vous devez l'enregistrer pour que le système puisse ensuite l'utiliser pour vous identifier.</p>
-
+  <title>Se connecter avec une empreinte digitale</title>
+  <p>Si votre système possède un scanner d'empreintes reconnu, vous pouvez enregistrer une empreinte digitale et l'utiliser pour vous connecter. Vous devez avoir les droits administrateur pour réaliser ces étapes.</p>
+  <p>Premièrement, enregistrez une empreinte digitale que le système pourra utiliser pour vous identifier.</p>
   <note style="tip">
     <p>Si votre doigt est trop sec, vous pouvez avoir des difficultés pour enregistrer votre empreinte digitale. Si cela arrive, humidifiez légèrement votre doigt, séchez-le avec un chiffon propre et non pelucheux et réessayez.</p>
   </note>
-
-  <p><link xref="user-admin-explain">Les privilèges administrateurs</link> sont requis pour modifier des comptes utilisateurs autres que le votre.</p>
-
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Users</gui>.</p>
+      <p>Cliquez sur votre nom dans la barre supérieure, puis sur l'image à coté de votre nom pour ouvrir la fenêtre <gui>Comptes utilisateur</gui>.</p>
     </item>
     <item>
-      <p>Cliquez sur <gui>Utilisateurs</gui> pour ouvrir le panneau.</p>
+      <p>Déverrouillez votre compte en utilisant le bouton <gui>Déverrouiller</gui> dans le coin supérieur droit de l'outil <gui>Comptes utilisateur</gui>.</p>
     </item>
     <item>
-      <p>Appuyez sur <gui>Désactivé</gui>, à côté de <gui>Connexion par empreinte digitale</gui> pour pouvoir ajouter une empreinte au compte sélectionné. Si vous agissez pour le compte d'autres utilisateurs, vous devez d'abord <gui>Déverrouiller</gui> le panneau.</p>
+      <p>Saisissez votre mot de passe.</p>
     </item>
     <item>
-      <p>Sélectionnez le doigt qui servira à enregistrer l'empreinte, puis cliquez sur <gui style="button">Suivant</gui>.</p>
+      <p>Sélectionnez l'option <gui>Désactivé</gui> à côté de <gui>Connexion par reconnaissance d'empreintes</gui>.</p>
     </item>
     <item>
-      <p>Suivez les instructions de la boîte de dialogue et frottez votre doigt à <em>vitesse raisonable</em> sur le lecteur d'empreintes. Dès que l'ordinateur a obtenu un bon enregistrement de votre empreinte, le message <gui>Terminé !</gui> s'affiche.</p>
+      <p>Sélectionnez l'option correspondant à l'empreinte digitale que vous souhaitez enregistrer. Vous pouvez choisir votre index droit, votre index gauche ou un autre doigt. Ensuite sélectionnez <gui>Suivant</gui>.</p>
     </item>
     <item>
-      <p>Cliquez sur <gui>Suivant</gui>. Vous avez un message de confirmation indiquant que votre empreinte digitale a été enregistrée avec succès. Cliquez sur <gui>Fermer</gui> pour terminer.</p>
+      <p>Passez trois fois le doigt que vous avez sélectionné sur le lecteur d'empreintes digitales à <em>vitesse modérée</em>. À chaque fois que le lecteur d'empreintes digitales reconnaît votre empreinte digitale correctement, l'image représentant une main devient une empreinte digitale cochée. Après le troisième passage, le message <gui>Terminé !</gui> s'affiche.</p>
+    </item>
+    <item>
+      <p>Sélectionnez <gui>Suivant</gui>. Vous aurez un message de confirmation indiquant que votre empreinte digitale a été enregistrée avec succès. Sélectionnez <gui>Fermer</gui> pour finir.</p>
     </item>
   </steps>
-
-</section>
-
-<section id="verify">
-  <title>Contrôle du bon fonctionnement de votre empreinte</title>
-
   <p>Maintenant vérifiez que votre nouvelle connexion par empreinte digitale fonctionne. Bien que vous ayez enregistré une empreinte digitale, vous avez toutefois la possibilité de vous connecter avec votre mot de passe.</p>
-
   <steps>
     <item>
-      <p>Enregistrez tout vos travaux en cours et <link xref="shell-exit#logout">déconnectez-vous</link>.</p>
+      <p>Save any open work, and then log out. Select your name in the upper
+      right-hand corner and then select <gui>Log Out</gui>.</p>
     </item>
     <item>
-      <p>À l'écran de connexion, sélectionnez votre nom dans la liste. La fenêtre de saisie du mot de passe apparaît.</p>
+      <p>Un message de confirmation apparaît. Sélectionnez <gui>Fermer la session</gui> pour confirmer. L'écran de connexion apparaît.</p>
     </item>
     <item>
-      <p>Au lieu de saisir votre mot de passe, frottez votre doigt sur le lecteur d'empreintes.</p>
+      <p>At the login screen, select your name from the list. The password
+      entry form will appear.</p>
+    </item>
+    <item>
+      <p>Dans les 30 secondes, sélectionnez le bouton empreintes digitales en haut à droite de votre nom.</p>
+      <note>
+	<p>Le bouton empreintes digitales est illustré par une main. Si le temps est écoulé, le bouton disparaît et vous ne pourrez vous connecter qu'avec votre mot de passe. Si vous voulez réessayer, sélectionnez le bouton <gui>Annuler</gui> et reprenez à l'étape précédente.</p>
+      </note>
+    </item>
+    <item>
+      <p>Passez le doigt que vous avez enregistré sur le scanner d'empreintes digitales à vitesse <em>modérée</em>. Vous êtes connecté.</p>
     </item>
   </steps>
-
-</section>
-
+  <p>Si vous avez auparavant crée un trousseau de mots de passe de connexion, celui-ci est sécurisé par mot de passe. Pour le déverrouiller, saisissez votre mot de passe.</p>
+	
 </page>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="music-player-notrecognized" xml:lang="sl">
+  <info>
+    <link type="guide" xref="media#music"/>
+    <link type="seealso" xref="music-player-newipod"/>
+
+
+    <credit type="author">
+      <name>Dokumentacijski projekt GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <desc>Dodajte datoteko <input>.is_audio_player</input>, ki bo vašemu računalniku povedala, da je to predvajalnik zvoka.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+<title>Zakaj moj predvajalnik zvoka ob vklopu ni prepoznan?</title>
+
+<p>V primeru da vaš predvajalnik zvoka (predvajalnik MP3 in podobno) vklopite v računalnik, vendar ga v programu za organizacijo ne morete videti, potem morda ni bil pravilno prepoznan kot predvajalnik zvoka.</p>
+
+<p>Predvajalnik odklopite in ga ponovno priklopite. V primeru da to ne pomaga, odprite Upravljalnik datotek. Predvajalnik bi moral biti izpisan v stranski vrstici pod <gui>Naprave</gui>. Kliknite nanj za odprtje mape predvajalnika zvoka. Sedaj kliknite <guiseq><gui>Datoteka</gui><gui>Nov dokument</gui><gui>Prazen dokument</gui></guiseq>, vpišite <input>.is_audio_player</input> in pritisnite <key>Enter</key> (pika in podčrtaja sta pomembna. Vse črke naj bodo male). Ta datoteka vašemu računalniku pove, da naj napravo prepozna kot predvajalnik zvoka.</p>
+
+<p>Sedaj v stranski vrstici upravljalnika datotek najdite predvajalnik zvoka in ga izvrzite (desno kliknite nanj in kliknite <gui>Izvrzi</gui>). Odklopite ga in ga nato priklopite nazaj. Tokrat bi ga moral organizator glasbe prepoznati kot predvajalnik zvoka. V primeru da se to ne zgodi, organizator glasbe zaprite in ga ponovno odprite.</p>
+
+<note>
+ <p>Ta navodila ne bodo delovala za iPode in nekatere druge predvajalnike zvoka. To bi moralo delovati, če je vaš predvajalnik naprava <em>obsežne shrambe USB</em>. To bi moralo pisati v priročniku naprave.</p>
+</note>
+
+<note>
+ <p>Ko znova gledate vsebino mape predvajalnika zvoka, datoteke <input>.is_audio_player</input> ne boste videli. To se zgodi, ker pika v imenu datoteke upravljalniku datotek pove, naj datoteko skrije. Da je datoteka še vedno tam lahko preverite s klikom na <guiseq><gui>Pogled</gui><gui>Pokaži skrite datoteke</gui></guiseq>.</p>
+</note>
+
+</page>

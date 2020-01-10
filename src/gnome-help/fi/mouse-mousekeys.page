@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="mouse-mousekeys" xml:lang="fi">
-
-  <info>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="mouse-mousekeys" xml:lang="fi">
+<info>
     <link type="guide" xref="mouse"/>
     <link type="guide" xref="a11y#mobility" group="pointing"/>
 
-    <revision pkgversion="3.8" date="2013-03-16" status="outdated"/>
-    <revision pkgversion="3.10" date="2013-11-07" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.8.0" date="2013-03-16" status="outdated"/>
+
+    <desc>Hallitse hiirtä numeronäppäimistöllä.</desc>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -21,74 +20,50 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-      <years>2013, 2015</years>
-    </credit>
-
+    
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
     
-    <desc>Hallitse hiirtä numeronäppäimistöllä.</desc>
-  
+
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Timo Jyrinki</mal:name>
       <mal:email>timo.jyrinki@iki.fi</mal:email>
       <mal:years>2012.</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Jiri Grönroos</mal:name>
-      <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
-      <mal:years>2012-2018.</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Napsauta ja siirrä hiiren osoitinta sormiota käyttäen</title>
+<title>Click and move mouse pointer using the keypad</title>
 
-  <p>Jos hiiren tai jonkin muun osoitinlaitteen käyttäminen tuntuu hankalalta, voit hallita hiiren osoitinta käyttämällä näppäimistösi numeronäppäimistöä. Tätä ominaisuutta kutsutaan <em>hiirinäppäimiksi</em>.</p>
+<p>Jos hiiren tai jonkin muun osoitinlaitteen käyttäminen tuntuu hankalalta, voit hallita hiiren osoitinta käyttämällä näppäimistösi numeronäppäimistöä. Tätä ominaisuutta kutsutaan <em>hiirinäppäimiksi</em>.</p>
 
-  <steps>
-    <item>
-      <p>Avaa <gui xref="shell-introduction#activities">Toiminnot</gui>-yleisnäkymä ja aloita kirjoittamaan <gui>Esteettömyys</gui>.</p>
-      <p>You can access the <gui>Activities</gui> overview by pressing on it,
-      by moving your mouse pointer against the top-left corner of the screen,
-      using <keyseq><key>Ctrl</key><key>Alt</key><key>Tab</key></keyseq>
-      followed by <key>Enter</key> or using
-      <key xref="keyboard-key-super">Super</key>.</p>
-    </item>
-    <item>
-      <p>Napsauta <gui>Esteettömyys</gui> avataksesi paneelin.</p>
-    </item>
-    <item>
-      <p>Use the up and down arrow keys to select <gui>Mouse Keys</gui> in the
-      <gui>Pointing &amp; Clicking</gui> section then press <key>Enter</key> to
-      switch <gui>Mouse Keys</gui> to <gui>On</gui>.</p>
-    </item>
-    <item>
-      <p>Varmista, että <key>Num Lock</key> on pois päältä. Voit nyt ohjata hiiren osoitinta näppäimistöä käyttäen.</p>
-    </item>
-  </steps>
+<steps>
+  <item><p>Press <keyseq><key>Ctrl</key><key>Alt</key><key>Tab</key></keyseq>
+  to give keyboard focus to the top bar.</p></item>
+  <item><p>Use the right and left arrow keys to select the
+  <link xref="a11y-icon">universal access menu</link>, then press
+  <key>Enter</key>.</p></item>
+  <item><p>Use the up and down arrow keys to select <gui>Mouse Keys</gui>
+  and press <key>Enter</key>.</p></item>
+  <item><p>Varmista, että <key>Num Lock</key> on pois päältä. Voit nyt ohjata hiiren osoitinta näppäimistöä käyttäen.</p></item>
+</steps>
 
-  <p>The keypad is a set of numerical buttons on your keyboard, usually
-  arranged into a square grid. If you have a keyboard without a keypad (such as
-  a laptop keyboard), you may need to hold down the function (<key>Fn</key>)
-  key and use certain other keys on your keyboard as a keypad. If you use this
-  feature often on a laptop, you can purchase external USB or Bluetooth numeric
-  keypads.</p>
+ <note style="tip">
+ <p>Nämä ohjeet tarjoavat lyhyimmän mahdollisen tavan ottaa hiirinäppäimet käyttöön pelkkää näppäimistöä käyttämällä. Valitse <gui>Esteettömyysasetukset</gui> käyttääksesi muita esteettömyysominaisuuksia.</p>
+ </note>
 
-  <p>Jokainen numeronäppäimistön näppäin vastaa tiettyä liikesuuntaa. Esimerkiksi <key>8</key> siirtää hiirtä ylöspäin ja <key>2</key> alaspäin. Numeron <key>5</key> painallus vastaa hiiren napsautusta ja nopeasti kahteen kertaan painettuna kaksoisnapsautusta.</p>
+<p>Numeronäppäimistö on ryhmä numeerisia neliön muotoon aseteltuja näppäimiä. Jos erillistä numeronäppäimistöä ei löydy (kuten joissain kannettavissa tietokoneissa), numeronäppäimistö on asetettu toisten näppäinten alle ja niitä voidaan käyttää pitämällä toimintonäppäintä (<key>Fn</key>) pohjassa. Jos käytät tätä ominaisuutta useasti eikä näppäimistöstä löydy numeronäppäimistöä, voit ostaa erillisen USB-liitännällä toimivan numeronäppäimistön.</p>
 
-  <p>Most keyboards have a special key which allows you to right-click,
-  sometimes called the <key xref="keyboard-key-menu">Menu</key> key. Note,
-  however, that this key responds to where your keyboard focus is, not where
-  your mouse pointer is. See <link xref="a11y-right-click"/> for information on
-  how to right-click by holding down <key>5</key> or the left mouse button.</p>
+<p>Jokainen numeronäppäimistön näppäin vastaa tiettyä liikesuuntaa. Esimerkiksi <key>8</key> siirtää hiirtä ylöspäin ja <key>2</key> alaspäin. Numeron <key>5</key> painallus vastaa hiiren napsautusta ja nopeasti kahteen kertaan painettuna kaksoisnapsautusta.</p>
 
-  <p>Jos haluat käyttää numeronäppäimistöä numeroiden kirjoittamiseen hiirinäppäinten ollessa käytössä, aseta <key>NumLock</key> päälle. Hiiren ohjaaminen näppäimistöllä ei kuitenkaan onnistu samanaikaisesti <key>NumLockin</key> ollessa päällä.</p>
+<p>Most keyboards have a special key which allows you to right-click, sometimes
+called the <key xref="keyboard-key-menu">Menu</key> key. Note, however, that
+this key responds to where your keyboard focus is, not where your mouse pointer
+is. See <link xref="a11y-right-click"/> for information on how to right-click by
+holding down <key>5</key> or the left mouse button.</p>
 
-  <note>
+<p>Jos haluat käyttää numeronäppäimistöä numeroiden kirjoittamiseen hiirinäppäinten ollessa käytössä, aseta <key>NumLock</key> päälle. Hiiren ohjaaminen näppäimistöllä ei kuitenkaan onnistu samanaikaisesti <key>NumLockin</key> ollessa päällä.</p>
+
+<note>
     <p>Numeronäppäimet kirjaimien yläpuolella eivät hallitse osoitinta. Ainoastaan numeronäppäimiä voidaan tähän käyttää.</p>
-  </note>
+</note>
 
 </page>

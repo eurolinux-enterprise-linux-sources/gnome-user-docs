@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="display-dual-monitors" xml:lang="es">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="display-dual-monitors" xml:lang="es">
 
   <info>
-    <link type="guide" xref="prefs-display"/>
-
+    <desc>Configurar dos pantallas en su portátil.</desc>
     <revision pkgversion="3.8.0" version="0.3" date="2013-03-09" status="outdated"/>
-    <revision pkgversion="3.9.92" date="2013-09-23" status="review"/>
-
     <credit type="author">
       <name>Tiffany Antopolski</name>
       <email>tiffany.antopolski@gmail.com</email>
@@ -15,19 +12,14 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <link type="guide" xref="prefs-display"/>
 
-    <desc>Configurar un monitor adicional.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2011 - 2018</mal:years>
+      <mal:years>2011 - 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -49,75 +41,73 @@
     </mal:credit>
   </info>
 
-<title>Conectar otra pantalla al equipo</title>
+<title>Conectar una pantalla externa a su portátil</title>
 
-<!-- TODO: update video
-<section id="video-demo">
-  <title>Video Demo</title>
-  <media its:translate="no" type="video" width="500" mime="video/webm" src="figures/display-dual-monitors.webm">
-    <p its:translate="yes">Demo</p>
-    <tt:tt its:translate="yes" xmlns:tt="http://www.w3.org/ns/ttml">
-      <tt:body>
-        <tt:div begin="1s" end="3s">
-          <tt:p>Type <input>displays</input> in the <gui>Activities</gui>
-          overview to open the <gui>Displays</gui> settings.</tt:p>
-        </tt:div>
-        <tt:div begin="3s" end="9s">
-          <tt:p>Click on the image of the monitor you would like to activate or
-          deactivate, then switch it <gui>ON/OFF</gui>.</tt:p>
-        </tt:div>
-        <tt:div begin="9s" end="16s">
-          <tt:p>The monitor with the top bar is the main monitor. To change
-          which monitor is “main”, click on the top bar and drag it over to
-          the monitor you want to set as the “main” monitor.</tt:p>
-        </tt:div>
-        <tt:div begin="16s" end="25s">
-          <tt:p>To change the “position” of a monitor, click on it and drag it
-          to the desired position.</tt:p>
-        </tt:div>
-        <tt:div begin="25s" end="29s">
-          <tt:p>If you would like both monitors to display the same content,
-          check the <gui>Mirror displays</gui> box.</tt:p>
-        </tt:div>
-        <tt:div begin="29s" end="33s">
-          <tt:p>When you are happy with your settings, click <gui>Apply</gui>
-          and then click <gui>Keep This Configuration</gui>.</tt:p>
-        </tt:div>
-        <tt:div begin="33s" end="37s">
-          <tt:p>To close the <gui>Displays Settings</gui> click on the
-          <gui>×</gui> in the top corner.</tt:p>
-        </tt:div>
-      </tt:body>
-    </tt:tt>
-  </media>
-</section>
--->
+ <section id="video-demo">
+   <title>Vídeo de demostración</title>
+    <media type="video" width="500" mime="video/webm" src="figures/display-dual-monitors.webm">
+    <p>Demostración</p>
+    <tt:tt xmlns:tt="http://www.w3.org/ns/ttml">
+        <tt:body>
+          <tt:div begin="1s" end="3s">
+            <tt:p>Eacriba <input>pantallas</input> en la vista de actividades para abrir la configuración de las <gui>Pantallas</gui>.</tt:p>
+          </tt:div>
 
-<section id="steps">
-  <title>Configurar un monitor adicional</title>
-  <p>Para configurar una pantalla adicional, conecte la pantalla al equipo. Si su sistema no la reconoce inmediatamente, o si quiere ajustar su configuración:</p>
+          <tt:div begin="3s" end="9s">
+            <tt:p>Pulse en la imagen de la pantalla que quiere activar o desactivar y pulse <gui>Activar/Desactivar</gui>.</tt:p>
+          </tt:div>
+
+          <tt:div begin="9s" end="16s">
+            <tt:p>La pantalla con la barra superior es la pantalla principal. Para cambiar qué pantalla es la «principal», pulse en la barra superior y arrástrela hasta la pantalla que quiere que sea la pantalla «principal».</tt:p>
+          </tt:div>
+
+          <tt:div begin="16s" end="25s">
+            <tt:p>Para cambiar la «posición» de una pantalla, pulse sobre ella y arrástrela hasta la posición que quiera.</tt:p>
+          </tt:div>
+
+          <tt:div begin="25s" end="29s">
+            <tt:p>Si quiere que las dos pantallas muestren lo mismo, maque la casilla <gui>Espejar pantallas</gui>.</tt:p>
+          </tt:div>
+
+          <tt:div begin="29s" end="33s">
+            <tt:p>Cuando esté satisfecho con la configuración, pulse <gui>Aplicar</gui> y luego pulse <gui>Mantener esta configuración</gui>.</tt:p>
+          </tt:div>
+
+          <tt:div begin="33s" end="37s">
+            <tt:p>Para cerrar la <gui>Configuración de las pantallas</gui> pulse en la <gui>x</gui> en la esquina superior.</tt:p>
+          </tt:div>
+
+        </tt:body>
+
+      </tt:tt>
+
+    </media>
+  </section>
+
+
+
+  <section id="steps">
+  <title>Configurar un monitor externo</title>
+  <p>Para configurar una pantalla externa a su portátil, conecte la pantalla al portátil. Si su sistema no la reconoce inmediatamente, o si quiere ajustar su configuración:</p>
 
   <steps>
-    <item>
-      <p>Abra la vista de <gui xref="shell-introduction#activities">Actividades</gui> y empiece a escribir <gui>Pantallas</gui>.</p>
-    </item>
-    <item>
-      <p>Pulse en <gui>Pantallas</gui> para abrir el panel.</p>
-    </item>
-    <item>
-      <p>Pulse sobre la pantalla que quiere activar o desactivar y, en la lista de configuración de pantallas elija <gui>Apagar</gui> para desactivar la pantalla, o una de las opciones <gui>Primario</gui>, <gui>Secundario</gui>, o <gui>Espejo</gui> para activarlo.</p>
-      <note>
-        <p>La pantalla primaria es la que tiene la <link xref="shell-introduction">barra superior</link>, y en la que se muestra la vista de <gui>Actividades</gui>.</p>
-      </note>
-    </item>
-    <item>
-      <p>Para rotar la orientación de la pantalla, use los botones con las flechas hasta que la vista previa sea correcta.</p>
-    </item>
-    <item>
-      <p>Cuando esté satisfecho con la configuración, pulse <gui>Aplicar</gui> y luego pulse <gui>Mantener cambios</gui>.</p>
-    </item>
-  </steps>
+  <item><p>Pulse en su nombre en la barra superior y seleccione <gui>Configuración</gui>.</p></item>
 
+  <item><p>Abra <gui>Pantallas</gui>.</p></item>
+
+  <item><p>Pulse en la imagen de la pantalla que quiere activar o desactivar y pulse <gui>Activar/Desactivar</gui>.</p></item>
+
+  <item><p>La pantalla con la <link xref="shell-introduction">barra superior</link> es la pantalla principal. Para cambiar qué pantalla es la «principal», pulse en la barra superior y arrástrela hasta la pantalla que quiere que sea la pantalla «principal».</p></item>
+
+  <item><p>Para cambiar la «posición» de una pantalla, pulse sobre ella y arrástrela hasta la posición que quiera.</p>
+           <note><p>Si quiere que las dos pantallas muestren lo mismo, maque la casilla <gui>Espejar pantallas</gui>.</p></note>
+  </item>
+
+  <item><p>Cuando esté satisfecho con la configuración, pulse <gui>Aplicar</gui> y luego pulse <gui>Mantener esta configuración</gui>.</p></item>
+
+  <item><p>Para cerrar la <gui>Configuración de las pantallas</gui> pulse en la <gui>x</gui> en la esquina superior.</p></item>
+  </steps>
 </section>
+
 
 </page>

@@ -3,9 +3,8 @@
 
   <info>
     <link type="guide" xref="backup-why"/>
-
+    <desc>Com utilitzar el Déjà Dup (o algun altre programa de còpies de seguretat) per fer les còpies dels vostres fitxers i paràmetres de configuració valuosos i protegir-vos de possibles pèrdues.</desc>
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -19,10 +18,7 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Com utilitzar el Déjà Dup (o algun altre programa de còpies de seguretat) per fer les còpies dels vostres fitxers i paràmetres de configuració valuosos i protegir-vos de possibles pèrdues.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>David Aguilera</mal:name>
@@ -39,12 +35,17 @@
 
   <p>Una altra opció és simplement <link xref="files-copy">copiar els fitxers</link> a una ubicació segura, com per exemple un disc dur extern, un altre ordinador de la xarxa, o un llapis USB. Els vostres <link xref="backup-thinkabout">fitxers personals</link> i paràmetres de configuració solen estar al directori personal i, per tant, els podeu copiar d'allà.</p>
 
-  <p>La quantitat d'informació de la que podeu fer una còpia de seguretat depèn de la mida del dispositiu d'emmagatzemament que utilitzeu. Si disposeu de prou espai al dispositiu on realitzareu la còpia, el millor que podeu fer és copiar tot el directori personal, amb les següents excepcions:</p>
+  <p>La quantitat d'informació de la que podeu fer una còpia de seguretat depen de la mida del dispositiu d'emmagatzemament que utilitzeu. Si disposeu de prou espai al dispositiu on realitzareu la còpia, el millor que podeu fer és copiar tot el directori personal, amb les següent excepcions:</p>
 
 <list>
- <item><p>Arxius que ja s'han copiat en un altre lloc, com ara un CD, DVD o altres suports extraïbles.</p></item>
- <item><p>Arxius que podeu recrear fàcilment. Per exemple, si sou programador, no heu de fer una còpia de seguretat dels fitxers que es produeixen quan compileu els vostres programes. En lloc d'això, assegureu-vos que feu una còpia de seguretat dels fitxers font originals.</p></item>
- <item><p>Qualsevol fitxer de la paperera. Trobareu el directori de la Paperera a <file>~/.local/share/Trash</file>.</p></item>
+ <item><p>Files that are already backed up somewhere else, such as to a CD, DVD,
+ or other removable media.</p></item>
+ <item><p>Files that you can recreate easily. For example, if you are a
+ programmer, you don't have to back up the files that get produced when you
+ compile your programs. Instead, just make sure that you back up the original
+ source files.</p></item>
+ <item><p>Any files in the Trash folder. Your Trash folder can be found in
+ <file>~/.local/share/Trash</file>.</p></item>
 </list>
 
 </page>

@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="net-othersconnect" xml:lang="sr">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="net-othersconnect" xml:lang="sr">
   <info>
     <link type="guide" xref="net-problem"/>
     <link type="seealso" xref="net-othersedit"/>
 
     <revision pkgversion="3.7.1" version="0.2" date="2012-11-16" status="outdated"/>
-    <revision pkgversion="3.10" date="2013-10-30" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Фил Бул</name>
@@ -17,48 +14,43 @@
       <name>Мајкл Хил</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Екатерина Герасимова</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <desc>Можете да сачувате подешавања (као што је лозинка) за мрежну везу тако да ће сви који буду користили рачунар бити у могућности да се повежу на њу.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
-  <title>Други корисници не могу да се повежу на интернет</title>
+<title>Други корисници не могу да се повежу на интернет</title>
 
-  <p>Када подесите мрежну везу, сви други корисници на вашем рачунару ће бити у могућности да је користе. Ако подаци о вези нису дељени, треба да проверите подешавања везе.</p>
+<comment>
+<cite date="2012-02-19">shaunm</cite>
+<p>Language cleanup, admin -&gt; administrative/administrator. We need
+some standard language. grep for similar.</p>
+</comment>
 
-  <steps>
-    <item>
-      <p>Отворите преглед <gui xref="shell-introduction#activities">Активности</gui> и почните да куцате <gui>Мрежа</gui>.</p>
-    </item>
-    <item>
-      <p>Кликните на <gui>Мрежа</gui> да отворите панел.</p>
-    </item>
-    <item>
-      <p>Изаберите <gui>Бежична</gui> са списка на левој страни.</p>
-    </item>
-    <item>
-      <p>Притисните на дугме <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">подешавања</span></media> да отворите појединости везе.</p>
-    </item>
-    <item>
-      <p>Изаберите <gui>Идентитет</gui> у окну на левој страни.</p>
-    </item>
-    <item>
-      <p>На дну панела <gui>Идентитет</gui>, изаберите опцију <gui>Учини доступно осталим корисницима</gui> да омогућите осталим корисницима да користе мрежну везу.</p>
-    </item>
-    <item>
-      <p>Притисните <gui style="button">Примени</gui> да сачувате измене.</p>
-    </item>
-  </steps>
+<p>Ако сте подесили мрежну везу али други корисници на вашем рачунару не могу да се повежу на њу, највероватније да не уносе одговарајућа подешавања када покушавају да се повежу. На пример, ако имате бежичну везу, они не уписују одговарајућу лозинку бежичне безбедности.</p>
 
+<p>Можете да урадите тако да свако може да дели подешавања за мрежну везу након што је подесите. Ово значи да треба да је подесите само једном, и било ко други на рачунару ће бити у могућности да се повеже на њу а да не мора да одговори ни на какво питање. Да урадите ово:</p>
+
+<steps>
+ <item>
+  <p>Кликните на ваше име на горњој траци и изаберите <gui>Подешавања</gui>.</p>
+ </item>
+
+ <item>
+  <p>Отворите <gui>Мрежа</gui> и изаберите <gui>Жичана</gui> или <gui>Бежична</gui> са списка на левој страни (у зависности коју мрежну везу желите да измените).</p>
+ </item>
+
+ <item>
+  <p>Из падајућег списка <gui>Назив мреже</gui>, изаберите везу коју желите да сви могу да користе и кликните <gui>Подеси</gui>.</p>
+ </item>
+
+ <item>
+  <p>Изаберите <gui>Доступно свим корисницима</gui> и кликните <gui>Саачувај</gui>. Мораћете да унесете вашу администраторску лозинку да бисте сачували измене. Само <link xref="user-admin-explain">корисници администратори</link> могу ово да ураде.</p>
+ </item>
+
+ <item>
   <p>Остали корисници рачунара ће сада бити у могућности да користе ову везу без уношења никаквих додатних појединости.</p>
-
-  <note>
-    <p>Било који корисник може да измени ово подешавање.</p>
-  </note>
+ </item>
+</steps>
 
 </page>

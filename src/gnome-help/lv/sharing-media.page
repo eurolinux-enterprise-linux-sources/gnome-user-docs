@@ -1,73 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="sharing-media" xml:lang="lv">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="sharing-media" xml:lang="lv">
   <info>
     <link type="guide" xref="sharing"/>
-    <link type="guide" xref="prefs-sharing"/>
+    <link type="guide" xref="settings-sharing"/>
 
-    <revision pkgversion="3.10" version="0.2" date="2013-11-02" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.14" date="2014-10-13" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+    <revision pkgversion="3.8.2" version="0.1" date="2013-05-11" status="draft"/>
 
     <credit type="author">
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
 
+    <desc>Share media on your local network using Rygel.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Dalieties ar medijiem savā lokālajā tīklā, izmantojot UPnP.</desc>
   </info>
 
-  <title>Dalieties ar mūziku, fotogrāfijām un video</title>
+  <title>Share your music, photos and videos</title>
 
-  <p>Jūs varat pārlūkot, meklēt un atskaņot multimedijus savā datorā, izmantojot ierīces ar <sys>UPnP</sys> vai <sys>DLNA</sys>, piemēram, tālrunis, TV vai spēļu konsole. Konfigurējiet <gui>multimediju koplietošanu</gui>, lai ļautu šīm lietotnēm piekļūt jūsu mūzikai, fotogrāfijām un video.</p>
+  <p>You can browse, search and play the media on your computer using a
+ <sys>UPnP</sys> or <sys>DLNA</sys> enabled device such as a phone, TV or game
+ console. Configure <gui>Media Sharing</gui> to allow these devices to access
+ the folders containing your music, photos and videos.</p>
 
   <note style="info package">
-    <p>Lai <gui>Multimediju koplietošana</gui> būtu redzama, jābūt uzinstalētai pakotnei <app>Rygel</app>.</p>
+    <p>You must have the <app>Rygel</app> package installed for
+     <gui>Media Sharing</gui> to be visible.</p>
 
     <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
       <if:when test="action:install">
-        <p><link action="install:rygel" style="button">Instalēt Rygel</link></p>
+        <p><link action="install:rygel" style="button">Install Rygel</link></p>
       </if:when>
     </if:choose>
   </note>
 
   <steps>
     <item>
-      <p>Atveriet <gui xref="shell-introduction#activities">Aktivitāšu</gui> pārskatu un sāciet rakstīt <gui>Koplietošana</gui>.</p>
+      <p>Click your name on the top bar and select <gui>Settings</gui>.</p>
     </item>
     <item>
-      <p>Spiediet <gui>Koplietošana</gui>, lai atvērtu paneli.</p>
+      <p>Open <gui>Sharing</gui>.</p>
     </item>
     <item>
-      <p>Ja <gui>Koplietošana</gui> ir <gui>◯</gui>, pārslēdziet to uz <gui>|</gui>.</p>
-
-      <note style="info"><p>Ja teksts zem <gui>Datora nosaukuma</gui> jums to ļauj rediģēt, jūs varat <link xref="sharing-displayname">mainīt</link> nosaukumu, ar kādu dators būs redzams tīklā.</p></note>
+      <p>If <gui>Sharing</gui> is <gui>OFF</gui>, switch it to
+      <gui>ON</gui>.</p>
     </item>
     <item>
-      <p>Izvēlies <gui>Multimediju koplietošana</gui>.</p>
+      <p>Select <gui>Media Sharing</gui>.</p>
     </item>
     <item>
-      <p>Pārslēdziet <gui>Multimediju koplietošanu</gui> uz <gui>|</gui>.</p>
+      <p>Switch <gui>Share Media On This Network</gui> to <gui>ON</gui>.</p>
     </item>
     <item>
-      <p>Pēc noklusējuma, mapes <file>Mūzika</file>, <file>Attēli</file> un <file>Video</file> ir koplietoti. Lai kādu no tiem izņemtu, spiediet<gui>×</gui> pie mapes nosaukuma.</p>
+      <p>Click <gui style="button">+</gui> to open the
+      <gui>Choose a folder</gui> window. Navigate <em>into</em> the desired
+      folder, <file>Music</file> in your <file>Home</file> directory for
+      example, and click <gui style="button">Open</gui>. Repeat for the other
+      folders you wish to share, for example <file>Pictures</file> and 
+      <file>Videos</file>.</p>
     </item>
     <item>
-      <p>Lai pievienotu jaunu mapi, spiediet <gui style="button">+</gui>, lai atvērtu logu <gui>Izvēlieties mapi</gui>. Dodieties <em>uz</em> vēlamo mapi, un spiediet <gui style="button">Atvērt</gui>.</p>
-    </item>
-    <item>
-      <p>Spiediet <gui style="button">×</gui>. Jūs nevarēsiet pārlūkot vai atskaņot multimedijus izvēlētajās mapēs, izmantojot ārēju ierīci.</p>
+      <p>Click <gui style="button">Close</gui>. You will now be able to browse
+      or play media in the folders you selected using the external device.</p>
     </item>
   </steps>
-
-  <section id="networks">
-  <title>Tīkli</title>
-
-  <p>Sadaļā <gui>Tīkli</gui> ir uzskaitīti tīkli, ar kuriem ir izveidots savienojums. Izmantojiet <gui>| / ◯</gui> slēdzi pie katra tīkla, lai izvēlētos, kur koplietot jūsu multimedijus.</p>
-
-  </section>
 
 </page>

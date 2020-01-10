@@ -1,87 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="privacy-history-recent-off" xml:lang="nl">
 
-  <info>
-    <link type="guide" xref="privacy"/>
-    <link type="guide" xref="files#more-file-tasks"/>
-
-    <revision pkgversion="3.8" date="2013-03-11" status="final"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-30" status="final"/>
-
-    <credit type="author">
-      <name>Jim Campbell</name>
-      <email>jwcampbell@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Het traceren van recent gebruikte bestanden door uw computer stoppen of beperken.</desc>
+<info>
   
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
-  </info>
+  <link type="guide" xref="privacy"/>
+  <desc>Stop your computer from tracking your recently-used files.</desc>
+  <revision pkgversion="3.8" date="2013-03-11" status="final"/>
+  <credit type="author">
+    <name>Jim Campbell</name>
+    <email>jwcampbell@gmail.com</email>
+  </credit>
+  <credit type="editor">
+    <name>Michael Hill</name>
+    <email>mdhillca@gmail.com</email>
+  </credit>
+</info>
 
-  <title>Traceren van bestandsgeschiedenis uitzetten of beperken</title>
+  <title>Turn off file history tracking</title>
   
-  <p>Het traceren van onlangs gebruikte bestanden en mappen vergemakkelijkt het zoeken van items waaraan u gewerkt heeft in bestandsbeheer en in bestandsdialogen in toepassingen. Mogelijk wilt u de bestandsgebruikgeschiedenis liever privé houden of alleen uw zeer recente geschiedenis traceren.</p>
+    <p>Tracking recently-used files and folders can make it easier to
+    find items that you have been working on, but you may wish to keep
+    these items private. To turn off the file history tracking features of your
+    desktop:</p>
 
   <steps>
-    <title>Traceren van bestandsgeschiedenis uitzetten</title>
-    <item>
-      <p>Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht en typ <gui>Privacy</gui>.</p>
-    </item>
-    <item>
-      <p>Klik op <gui>Privacy</gui> om het paneel te openen.</p>
-    </item>
-    <item>
-      <p>Kies <gui>Gebruik &amp; geschiedenis</gui>.</p>
-    </item>
-    <item>
-     <p>Zet <gui>Onlangs gebruikt</gui> <gui>UIT</gui>.</p>
-     <p>Om deze functie weer in te schakelen zet u <gui>Onlangs gebruikt</gui> op <gui>AAN</gui>.</p>
-    </item>
-    <item>
-      <p>Gebruik de knop <gui>Recente geschiedenis wissen</gui> om meteen de geschiedenis te wissen.</p>
-    </item>
+    <item><p>Click your name on the top bar.</p></item>
+    <item><p>Select
+    <guiseq><gui style="menu">Settings</gui><gui style="menu">Privacy</gui>
+    <gui style="menu">Usage &amp; History</gui></guiseq>.</p></item>
+    <item><p>Set the <gui>Recently Used</gui> slider to <gui>Off</gui>.</p></item>
   </steps>
   
-  <note><p>Deze instelling heeft geen invloed op hoe uw webbrowser informatie opslaat over de websites die u bezoekt.</p></note>
+    <p>To re-enable this feature, set the <gui>Recently Used</gui> slider to
+    <gui>On</gui>.</p>
 
-  <steps>
-    <title>De tijdsduur hoe lang uw bestandsgeschiedenis wordt bijgehouden beperken</title>
-    <item>
-      <p>Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht en typ <gui>Privacy</gui>.</p>
-    </item>
-    <item>
-      <p>Klik op <gui>Privacy</gui> om het paneel te openen.</p>
-    </item>
-    <item>
-      <p>Kies <gui>Gebruik &amp; geschiedenis</gui>.</p>
-    </item>
-    <item>
-     <p>Zorg ervoor dat <gui>Onlangs gebruikt</gui> <gui>AAN</gui> staat.</p>
-    </item>
-    <item>
-     <p>Kies de tijdsduur voor <gui>Geschiedenis behouden</gui>. U kunt kiezen uit <gui>1 dag</gui>, <gui>7 dagen</gui>, <gui>30 dagen</gui>, of <gui>Altijd</gui>.</p>
-    </item>
-    <item>
-      <p>Gebruik de knop <gui>Recente geschiedenis wissen</gui> om meteen de geschiedenis te wissen.</p>
-    </item>
-  </steps>
+    <note><p>This setting will not affect how your web browser stores
+    information about the web sites you visit.</p></note>
 
 </page>

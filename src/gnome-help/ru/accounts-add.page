@@ -1,37 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="accounts-add" xml:lang="ru">
 
-  <info>
-    <link type="guide" xref="accounts" group="add"/>
-
-    <revision pkgversion="3.5.5" date="2012-08-14" status="draft"/>
-    <revision pkgversion="3.9.92" date="2012-09-18" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2013-09-20" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-
-    <credit type="author">
-      <name>Джим Кэмпбелл (Jim Campbell)</name>
-      <email>jwcampbell@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Майкл Хилл (Michael Hill)</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Екатерина Герасимова (Ekaterina Gerasimova)</name>
-      <email>kittykat3756@gmail.com</email>
-      <years>2014</years>
-    </credit>
-    <credit type="editor">
-      <name>Шон МакКенс (Shaun McCance)</name>
-      <email>shaunm@gnome.org</email>
-      <years>2015</years>
-    </credit>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Allow applications to access your accounts online for photos,
-    contacts, calendars, and more.</desc>
+<info>
+  <desc>Подключение сетевой учётной записи.</desc>
+  <link type="guide" xref="accounts"/>
+  <revision pkgversion="3.5.5" version="0.1" date="2012-08-14" status="draft"/>
+  <credit type="author">
+    <name>Jim Campbell</name>
+    <email>jwcampbell@gmail.com</email>
+  </credit>
+  <credit type="editor">
+    <name>Michael Hill</name>
+    <email>mdhillca@gmail.com</email>
+  </credit>
 
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Александр Прокудин</mal:name>
@@ -42,69 +23,36 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011-2012</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Станислав Соловей</mal:name>
-      <mal:email>whats_up@tut.by</mal:email>
-      <mal:years>2013-2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Юлия Дронова</mal:name>
-      <mal:email>juliette.tux@gmail.com</mal:email>
-      <mal:years>2013-2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Юрий Мясоедов</mal:name>
-      <mal:email>ymyasoedov@yandex.ru</mal:email>
-      <mal:years>2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
 
-  <title>Добавление учётной записи</title>
+<title>Добавление учётной записи</title>
 
-  <p>Добавление учётной записи поможет связать ваши сетевые учётные записи с рабочей средой GNOME. Как результат, вы получите автоматически настроенный почтовый клиент, чат и другие соответствующие приложения.</p>
+<p>Добавление учётной записи поможет связать ваши сетевые учётные записи со средой GNOME. В соответствии с ними будут автоматически настроены ваша почтовая программа, программа для чатов и некоторые другие приложения.</p>
 
-  <steps>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Online Accounts</gui>.</p>
-    </item>
-    <item>
-      <p>Нажмите на <gui>Сетевые учётные записи</gui>, чтобы открыть этот раздел настроек.</p>
-    </item>
-    <item>
-      <p>Select an account from the list on the right.</p>
-    </item>
-    <item>
-      <p>Выберите тип учётной записи, который нужно добавить.</p>
-    </item>
-    <item>
-      <p>A small website window or dialog will open where you can enter your
-      online account credentials. For example, if you are setting up a Google
-      account, enter your Google username and password. Some providers allow
-      you to create a new account from the login dialog.</p>
-    </item>
-    <item>
-      <p>Если идентификационная информация введена правильно, вам будет предложено разрешить GNOME доступ к сетевой учётной записи. Разрешите доступ, чтобы продолжить.</p>
-    </item>
-    <item>
-      <p>Все сервисы, предоставляемые поставщиком учётной записи будут включены по умолчанию. <link xref="accounts-disable-service">Переключите</link> отдельные услуги в положение <gui>Выключено</gui>, чтобы сделать их недоступными.</p>
-    </item>
-  </steps>
+<steps>
+  <item><p>Нажмите кнопку <key>+</key> в левой нижней части окна.</p></item>
+  <item><p>Щёлкните на меню <gui>Тип учётной записи</gui> и выберите нужный тип.</p>
+        <p>Если у вас более одного типа учётных записей, можно добавить другие учётные записи позже.</p></item>
+  <item><p>Нажмите <gui>Добавить…</gui></p></item>
+  <item><p>Откроется небольшое окно веб-сайта, где вы сможете ввести идентификационную информацию своих сетевых учётных записей. Например, для настройки учётной записи Google введите своё имя пользователя в Google и пароль.</p>
+  </item>
+  <item><p>If you've entered your credentials correctly, you will be prompted
+  to allow GNOME access to your online account. Select <gui>Grant Access</gui>
+  to continue.</p></item>
+  <item><p>Выберите приложения, которые вы хотите связать со своей сетевой учётной записью. Например, если вы собираетесь использовать сетевую учётную запись для чата, но не для работы с календарём, отключите опцию <gui>календарь</gui>.</p></item>
+</steps>
 
-  <p>After you have added accounts, applications can use those accounts for
-  the services you have chosen to allow. See <link xref="accounts-disable-service"/>
-  for information on controlling which services to allow.</p>
+<p>После добавления учётной записи каждое из приложений, которые вы выбрали, будет при запуске автоматически использовать эти индентификационные данные.</p>
 
-  <note style="tip">
-    <p>Many online services provide an authorization token which GNOME stores
-    instead of your password. If you remove an account, you should also revoke
-    that certificate in the online service. See <link xref="accounts-remove"/>
-    for more information.</p>
-  </note>
+<note style="tip">
+  <p>
+    For security reasons, GNOME will not store your password on your computer.
+    Instead, it stores a token that is provided by the online service. If you
+    want to fully revoke the link between your desktop and the online service,
+    <link xref="accounts-remove">remove</link> it.
+  </p>
+</note>
 
 </page>

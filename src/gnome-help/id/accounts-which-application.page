@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="accounts-which-application" xml:lang="id">
-
   <info>
-    <link type="guide" xref="accounts"/>
-    <link type="seealso" xref="accounts-disable-service"/>
-
-    <revision pkgversion="3.8.2" date="2013-05-22" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="incomplete"/>
+    <revision pkgversion="3.8.2" version="0.2" date="2013-05-22" status="review"/>
 
     <credit type="author copyright">
       <name>Baptiste Mille-Mathias</name>
       <email>baptistem@gnome.org</email>
-      <years>2012, 2013</years>
+      <years>2012-2013</years>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
@@ -23,80 +17,61 @@
       <email>ak-47@gmx.net</email>
     </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <link type="guide" xref="accounts"/>
+    <link type="seealso" xref="accounts-disable-service"/>
 
     <desc>Aplikasi dapat memakai akun yang dibuat dalam <app>Akun Daring</app> dan layanan yang mereka ekploitasi.</desc>
-
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Andika Triwidada</mal:name>
       <mal:email>andika@gmail.com</mal:email>
-      <mal:years>2011-2014, 2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Ahmad Haris</mal:name>
-      <mal:email>ahmadharis1982@gmail.com</mal:email>
-      <mal:years>2017.</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
 
-  <title>Aplikasi dan layanan daring</title>
+  <title>Aplikasi mana yang memanfaatkan akun daring?</title>
 
-  <p>Sekali Anda menambahkan suatu akun daring, sebarang aplikasi dapat memakai akun tersebut untuk sebarang layanan yang tersedia yang tidak Anda <link xref="accounts-disable-service">nonaktifkan</link>. Para penyedia memberikan layanan yang berbeda-beda. Halaman ini menampilkan daftar berbagai layanan dan beberapa aplikasi yang telah diketahui menggunakan mereka.</p>
+  <p><app>Akun Daring</app> dapat digunakan oleh aplikasi eksternal untuk secara otomatis mengkonfigurasi dirinya sendiri.</p>
 
-  <terms>
-    <item>
-      <title>Kalender</title>
-      <p>Layanan Kalender memungkinkan Anda melihat, menambah, dan menyunting acara dalam suatu kalender daring. Itu dipakai oleh aplikasi-aplikasi seperti <app>Calendar</app>, <app>Evolution</app>, dan <app>California</app>.</p>
-    </item>
+  <section id="accounts-google-services">
+   <title>Dengan akun Google</title>
 
-    <item>
-      <title>Mengobrol</title>
-      <p>Layanan Mengobrol memungkinkan Anda mengobrol dengan kontak Anda pada platform pesan instan yang populer. Itu dipakai oleh aplikasi <app>Empathy</app>.</p>
-    </item>
+   <list>
+    <item><p><app>Evolution</app>, aplikasi surel. Akun surel Anda akan otomatis ditambahkan ke <app>Evolution</app>, sehingga itu akan mengambil surel Anda, Anda akan punya akses ke kontak Anda, dan kalender akan menyajikan butir-butir dalam agenda Google Anda.</p></item>
+    <item><p><app>Empathy</app>, the instant messaging application. Your online
+    account will be added and you will be able to communicate with your friends.
+    </p></item>
+    <item><p><app>Kontak</app>, yang akan mengijinkan melihat dan menyunting kontak-kontak Anda.</p></item>
+    <item><p><app>Dokumen</app> dapat mengakses dokumen daring Anda dan menampilkannya.</p></item>
+   </list>
+  </section>
 
-    <item>
-      <title>Kontak</title>
-      <p>Layanan Kontak memungkinkan Anda melihat rincian terpublikasi dari kontak-kopntak Anda pada berbagai layanan. Itu dipakai oleh aplikasi seperti <app>Kontak</app> dan <app>Evolution</app>.</p>
-    </item>
+  <section id="accounts-windows-services">
+   <title>Dengan akun Windows Live, Facebook, atau Twitter</title>
 
-    <item>
-      <title>Dokumen</title>
-      <p>Layanan Dokumen memungkinkan Anda menilik dokumen daring Anda seperti yang ada pada Google docs. Anda dapat menilik dokumen Anda memakai aplikasi <app>Dokumen</app>.</p>
-    </item>
+   <p><app>Empathy</app> dapat menggunakan akun-akun ini untuk menghubungkan Anda daring dan mengobrol dengan para kontak, teman, dan pengikut Anda.</p>
+  </section>
 
-    <item>
-      <title>Berkas</title>
-      <p>Layanan Berkas menambahkan suatu lokasi berkas jauh, seolah seperti Anda telah menambahkannya memakai fungsionalitas <link xref="nautilus-connect">Sambungkan ke Server</link> dalam pengelola berkas. Anda dapat mengakses berkas jauh memakai pengelola berkas, maupun melalui dialog buka dan simpan berkas dalam sebarang aplikasi.</p>
-    </item>
+  <section id="account-windows-skydrive">
+   <title>With a SkyDrive account</title>
 
-    <item>
-      <title>Surel</title>
-      <p>Layanan Surat memungkinkan Anda mengirim dan menerima surel melalui penyedia surel seperti Google. Itu dipakai oleh <app>Evolution</app>.</p>
-    </item>
+   <p><app>Dokumen</app> dapat mengakses dokumen daring Anda dalam Microsoft SkyDrive dan menampilkannya.</p>
+  </section>
 
-<!-- TODO: Not sure what this does. Doesn't seem to do anything in Maps app.
-    <item>
-      <title>Maps</title>
-    </item>
--->
+  <section id="account-exchange">
+   <title>With a Exchange account</title>
 
-    <item>
-      <title>Foto</title>
-      <p>Layanan Foto memungkinkan Anda melihat foto daring Anda seperti yang Anda kirim ke Facebook. Anda dapat melihat foto Anda memakai aplikasi <app>Foto</app>.</p>
-    </item>
+   <p>Once you have created an Exchange account, <app>Evolution</app> will start
+   retrieving mails from this account.</p>
+  </section>
 
-    <item>
-      <title>Pencetak</title>
-      <p>Layanan Pencetak memungkinkan Anda mengirim suatu salinan PDF ke penyedia dari dalam dialog cetak pada sebarang aplikasi. Penyedia mungkin memberikan layanan cetak, atau itu mungkin hanya melayani sebagai penyimpanan bagi PDF, yang nanti dapat Anda unduh dan cetak.</p>
-    </item>
+  <section id="accounts-ownCloud">
+   <title>With a ownCloud account</title>
 
-    <item>
-      <title>Baca Nanti</title>
-      <p>Layanan Baca Nanti memungkinkan Anda menyimpan suatu halaman web ke layanan eksternal sehingga Anda dapat membacanya nanti pada perangkat lain. Saat ini tidak ada aplikasi yang memakai layanan ini.</p>
-    </item>
+   <p>When an ownCloud account is set up, <app>Evolution</app> is able to
+   access and edit contacts and calendar appointments.</p>
 
-  </terms>
-
+   <p><app>Files</app> and other applications will be able to list and access
+   your online files stored in the ownCloud installation.</p>
+  </section>
 </page>

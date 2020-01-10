@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" type="task" id="printing-to-file" xml:lang="pt-BR">
+<page xmlns="http://projectmallard.org/1.0/" type="task" id="print-to-file" xml:lang="pt-BR">
 
   <info>
+    <revision pkgversion="3.8" version="0.1" date="2013-03-29" status="review"/>
     <link type="guide" xref="printing" group="#last"/>
-
-    <revision pkgversion="3.8" date="2013-03-29" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author copyright">
       <name>Ekaterina Gerasimova</name>
@@ -16,7 +13,7 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Salve um documento como um arquivo PDF, PostScript ou SVG em vez de enviá-lo para a impressora.</desc>
+    <desc>Save a document as a PDF, Postscript or SVG file instead of sending it a printer.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Rodolfo Ribeiro Gomes</mal:name>
@@ -25,44 +22,49 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Enrico Nicoletto</mal:name>
       <mal:email>liverig@gmail.com</mal:email>
       <mal:years>2013.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>João Santana</mal:name>
-      <mal:email>joaosantana@outlook.com</mal:email>
-      <mal:years>2013.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Fontenelle</mal:name>
-      <mal:email>rafaelff@gnome.org</mal:email>
-      <mal:years>2012-2018.</mal:years>
     </mal:credit>
   </info>
 
   <title>Imprimindo para arquivo</title>
 
-  <p>Você pode escolher imprimir um documento ao invés de enviá-lo para impressão em uma impressora. Imprimir para arquivo vai criar um arquivo <sys>PDF</sys>, <sys>PostScript</sys> ou <sys>SVG</sys> que contém o documento. Isso pode ser útil se você deseja transferir o documento para outra máquina ou compartilhá-lo com alguém.</p>
+  <p>You can chose to print a document to a file instead of sending it to
+  print from a printer. Printing to file will create a <sys>PDF</sys>, a
+  <sys>Postscript</sys> or a <sys>SVG</sys> file that contains the document.
+  This can be useful if you want to transfer the document to another machine
+  or to share it with someone.</p>
 
   <steps>
-    <title>Para imprimir para arquivo:</title>
+    <title>Imprimindo para arquivo</title>
     <item>
-      <p>Abra o diálogo de impressão pressionando <keyseq><key>Ctrl</key><key>P</key></keyseq>.</p>
+      <p>Open the print dialog. This can normally be done through
+      <gui style="menuitem">Print</gui> in the menu or using the
+      <keyseq><key>Ctrl</key><key>P</key></keyseq> keyboard shortcut.</p>
     </item>
     <item>
-      <p>Selecione <gui>Imprimir para arquivo</gui> sob <gui>Impressora</gui> na aba <gui style="tab">Geral</gui>.</p>
+      <p>Select <gui>Print to File</gui> under <gui>Printer</gui> in the
+      <gui style="tab">General</gui> tab.</p>
     </item>
     <item>
-      <p>Para alterar o nome padrão de arquivo e onde o arquivo será salvo, clique no nome do arquivo em baixo da seleção de impressora. Clique <gui style="button">Selecionar</gui> assim que você tiver concluído a seleção.</p>
+      <p>To change the default filename and where the file is saved to, click
+      the filename below the printer selection. Click
+      <gui style="button">Select</gui> once you have finished choosing.</p>
     </item>
     <item>
-      <p><sys>PDF</sys> é o tipo padrão de arquivo apara o documento. Se você deseja usar um <gui>Formato de saída</gui> diferente, selecione <sys>PostScript</sys> ou <sys>SVG</sys>.</p>
+      <p><sys>PDF</sys> is the default file type for the document. If you want
+      to use a different <gui>Output format</gui>, select either
+      <sys>Postscript</sys> or <sys>SVG</sys>.</p>
     </item>
     <item>
-      <p>Escolha suas outras preferências de página.</p>
+      <p>Chose your other page preferences.</p>
     </item>
     <item>
       <p>Pressione <gui style="button">Imprimir</gui> para salvar o arquivo.</p>

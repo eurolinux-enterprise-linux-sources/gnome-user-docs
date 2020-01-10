@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="keyboard-layouts" xml:lang="hu">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="keyboard-layouts" xml:lang="hu">
   <info>
     <link type="guide" xref="prefs-language"/>
     <link type="guide" xref="keyboard" group="i18n"/>
     <link type="guide" xref="keyboard-shortcuts-set"/>
 
     <revision pkgversion="3.8" version="0.3" date="2013-04-30" status="review"/>
-    <revision pkgversion="3.10" date="2013-10-28" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
 
     <credit type="author copyright">
       <name>Shaun McCance</name>
@@ -27,11 +24,6 @@
       <name>Juanjo Marín</name>
       <email>juanj.marin@juntadeandalucia.es</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-      <years>2013</years>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
@@ -46,7 +38,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Kelemen Gábor</mal:name>
       <mal:email>kelemeng at gnome dot hu</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015, 2016, 2017</mal:years>
+      <mal:years>2011, 2012, 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -66,12 +58,6 @@
       <mal:email>lukacs.bence1 at gmail dot com</mal:email>
       <mal:years>2011</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Nagy Zoltán</mal:name>
-      <mal:email>dzodzie at gmail dot com</mal:email>
-      <mal:years>2011</mal:years>
-    </mal:credit>
   </info>
 
   <title>Alternatív billentyűzetkiosztások használata</title>
@@ -80,28 +66,26 @@
 
   <steps>
     <item>
-      <p>Nyissa meg a <gui xref="shell-introduction#activities">Tevékenységek</gui> áttekintést, és kezdje el begépelni a <gui>Terület és nyelv</gui> kifejezést.</p>
+     <p>Kattintson a nevére a felső sávban, és válassza a <gui>Beállítások</gui> menüpontot.</p>
     </item>
     <item>
-      <p>Kattintson a <gui>Terület és nyelv</gui> elemre a panel megnyitásához.</p>
+     <p>Nyissa meg a <gui>Terület és nyelv</gui> panelt.</p>
     </item>
     <item>
-      <p>Nyomja meg a <gui>+</gui> gombot a <gui>Bemeneti források</gui> szakaszban, válassza ki a kiosztáshoz tartozó nyelvet, és nyomja meg a <gui>Hozzáadás</gui> gombot.</p>
+     <p>Nyomja meg a <gui>+</gui> gombot, válasszon egy kiosztást, és nyomja meg a <gui>Hozzáadás</gui> gombot.</p>
     </item>
+    <!--
+    https://bugzilla.gnome.org/show_bug.cgi?id=640774
+    &
+    https://bugzilla.gnome.org/show_bug.cgi?id=689853
+    -->
   </steps>
 
-  <note style="tip">
-    <p>Ha a rendszeren több felhasználói fiók is van, akkor a <gui>Terület és nyelv</gui> panelből egy külön példány is elérhető a bejelentkezési képernyőhöz. Kattintson a jobb felső <gui>Bejelentkezési képernyő</gui> gombra a két példány közti váltáshoz.</p>
-
-    <p>Egyes ritkábban használt billentyűzet-kiosztás változatok nem érhetők el alapesetben a <gui>+</gui> gombra kattintáskor. Ezen beviteli források elérhetővé tételéhez </p>
-    <p><cmd its:translate="no">gsettings set org.gnome.desktop.input-sources show-all-sources true</cmd></p>
-  </note>
-
   <note style="sidebar">
-    <p>Bármely kiosztás képét megjelenítheti. Válassza ki a <gui>Bemeneti források</gui> listából a kiosztást, majd nyomja meg az <gui><media its:translate="no" type="image" src="figures/input-keyboard-symbolic.png" width="16" height="16"><span its:translate="yes">előnézet</span></media></gui> gombot.</p>
+    <p>Bármely kiosztás képét megjelenítheti. Válassza ki a listából a kiosztást, majd nyomja meg az <gui><media type="image" src="figures/input-keyboard-symbolic.png" width="16" height="16">előnézet</media></gui> gombot.</p>
   </note>
 
-  <p>Bizonyos nyelvek további beállítási lehetőségeket is kínálnak. Ezeket a nyelveket a mellettük lévő <gui><media its:translate="no" type="image" src="figures/system-run-symbolic.svg" width="16" height="16"><span its:translate="yes">előnézet</span></media></gui> ikonról ismerheti fel. Ezen extra paraméterek eléréséhez válassza ki a nyelvet a <gui>Bemeneti források</gui> listájából, és nyomja meg a megjelenő <gui style="button"><media its:translate="no" type="image" src="figures/emblem-system-symbolic.svg" width="16" height="16"><span its:translate="yes">beállítások</span></media></gui> gombot.</p>
+  <p>Bizonyos nyelvek további beállítási lehetőségeket is kínálnak. Ezeket a nyelveket a mellettük lévő <gui><media type="image" src="figures/system-run-symbolic.svg" width="16" height="16">előnézet</media></gui> ikonról ismerheti fel. Ezen extra paraméterek eléréséhez válassza ki a nyelvet a <gui>Bemeneti források</gui> listájából, és nyomja meg a megjelenő <gui style="button"><media type="image" src="figures/emblem-system-symbolic.svg" width="16" height="16">előnézet</media></gui> gombot.</p>
 
   <p>Több kiosztás használatakor eldöntheti, hogy minden ablak ugyanazt a kiosztást használja-e, vagy minden ablak más-más kiosztást. Az eltérő kiosztás használata akkor lehet hasznos, ha például egy szövegszerkesztő ablakban másik nyelven ír egy cikket. Az egyes ablakokhoz kiválasztott kiosztás ilyenkor megmarad az ablakok közti váltáskor. Nyomja meg a <gui style="button">Beállítások</gui> gombot a további kiosztások kezelésének kiválasztásához.</p>
 
@@ -110,5 +94,16 @@
   <p>Másik kiosztásra váltani a <gui>Bemeneti forrás</gui> <gui>gyorsbillentyűkkel</gui> lehet. Ezek a gyorsbillentyűk megnyitják a <gui>Bemenetiforrás-választót</gui>, amelyben előre és hátra lépkedhet. Alapesetben a következő bemeneti forrásra a <keyseq><key xref="keyboard-key-super">Super</key><key>Szóköz</key></keyseq>, az előzőre a <keyseq><key>Shift</key><key>Super</key><key>Szóköz</key></keyseq> kombinációval válthat. Ezeket a gyorsbillentyűket a <gui>Billentyűzet</gui> beállításai között módosíthatja.</p>
 
   <p><media type="image" src="figures/input-methods-switcher.png"/></p>
+
+  <comment>
+    <cite date="2012-02-19">shaunm</cite>
+    <p>We're totally copping out on the custom options. That dialog is a
+    monster, and needs a reference. Note that the options in there are
+    dynamic from the X server. We might not get a definitive reference
+    of everything ever, but let's do our best. Make a separate page.
+    Don't clutter this page with that crap.</p>
+    <p>Also, we should identify common uses of those options and create
+    task pages for them.</p>
+  </comment>
 
 </page>

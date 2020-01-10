@@ -1,25 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="reference" id="net-firewall-ports" xml:lang="ja">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="reference" id="net-firewall-ports" xml:lang="ja">
 
   <info>
     <link type="guide" xref="net-security"/>
     <link type="seealso" xref="net-firewall-on-off"/>
     <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
+    <desc>You need to specify the right network port to enable/disable network access for a program with your firewall.</desc>
     <credit type="author">
       <name>Paul W. Frields</name>
       <email>stickster@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>ファイアウォールでプログラムのネットワークアクセスを有効または無効にするには、正しいネットワークポートを指定する必要があります。</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -41,31 +39,14 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Noriko Mizumoto</mal:name>
-      <mal:email>noriko@fedoraproject.org</mal:email>
-      <mal:years>2013, 2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>坂本 貴史</mal:name>
-      <mal:email>o-takashi@sakamocchi.jp</mal:email>
-      <mal:years>2013, 2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>日本GNOMEユーザー会</mal:name>
       <mal:email>http://www.gnome.gr.jp/</mal:email>
       <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
 
-  <title>よく使用されるネットワークポート</title>
-
-  <p>This is a list of network ports commonly used by applications that provide
-  network services, like file sharing or remote desktop viewing. You can change
-  your system’s firewall to <link xref="net-firewall-on-off">block or allow
-  access</link> to these applications. There are thousands of ports in use, so
-  this table isn’t complete.</p>
+  <title>Commonly-used network ports</title>
+  <p>This is a list of network ports commonly used by applications that provide network services, like file sharing or remote desktop viewing. You can change your system's firewall to <link xref="net-firewall-on-off">block or allow access</link> to these applications. There are thousands of ports in use, so this table isn't complete.</p>
 
   <table shade="rows" frame="top">
     <thead>
@@ -77,7 +58,7 @@
 	  <p>名前</p>
 	</td>
 	<td>
-	  <p>詳細</p>
+	  <p>Description</p>
 	</td>
       </tr>
     </thead>
@@ -90,7 +71,7 @@
 	  <p>mDNS, Avahi</p>
 	</td>
 	<td>
-	  <p>システム同士に互いに検索させあうことで、相手のシステムが提供するサービスを認識させることができます。手作業で詳細を指定する必要がありません。</p>
+	  <p>Allows systems to find each other, and describe which services they offer, without you having to specify the details manually.</p>
 	</td>
       </tr>
       <tr>
@@ -101,7 +82,7 @@
 	  <p>印刷</p>
 	</td>
 	<td>
-	  <p>プリンターにネットワーク経由で印刷ジョブを送信することができます。</p>
+	  <p>Allows you to send print jobs to a printer over the network.</p>
 	</td>
       </tr>
       <tr>
@@ -112,7 +93,7 @@
 	  <p>印刷</p>
 	</td>
 	<td>
-	  <p>ネットワーク経由でプリンターを他のユーザーと共有することができます。</p>
+	  <p>Allows you to share your printer with other people over the network.</p>
 	</td>
       </tr>
       <tr>
@@ -120,11 +101,10 @@
 	  <p>5298/tcp</p>
 	</td>
 	<td>
-	  <p>プレゼンス</p>
+	  <p>Presence</p>
 	</td>
 	<td>
-	  <p>Allows you to advertise your instant messaging status to other
-          people on the network, such as “online” or “busy”.</p>
+	  <p>Allows you to advertise your instant messaging status to other people on the network, such as "online" or "busy".</p>
 	</td>
       </tr>
       <tr>
@@ -135,7 +115,7 @@
 	  <p>リモートデスクトップ</p>
 	</td>
 	<td>
-	  <p>デスクトップを共有することができるため、他のユーザーによるデスクトップへのアクセスやリモートアシスタンスの提供が可能になります。</p>
+	  <p>Allows you to share your desktop so other people can view it or provide remote assistance.</p>
 	</td>
       </tr>
       <tr>
@@ -146,10 +126,9 @@
 	  <p>音楽の共有 (DAAP)</p>
 	</td>
 	<td>
-	  <p>ネットワーク上で他のユーザーとミュージックライブラリを共有することができます。</p>
+	  <p>Allows you to share your music library with others on your network.</p>
 	</td>
       </tr>
     </tbody>
   </table>
-
 </page>

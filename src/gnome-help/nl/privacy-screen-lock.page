@@ -5,12 +5,10 @@
     <link type="guide" xref="privacy"/>
     <link type="seealso" xref="session-screenlocks"/>
     <link type="seealso" xref="shell-exit#lock-screen"/>
-
     <revision pkgversion="3.8" date="2013-05-21" status="candidate"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-30" status="final"/>
 
+    <desc>Prevent other people from using your desktop when you
+    go away from your computer.</desc>
     <credit type="author">
       <name>Shaun McCance</name>
       <email>shaunm@gnome.org</email>
@@ -24,50 +22,36 @@
       <email>jwcampbell@gmail.com</email>
       <years>2013</years>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Voorkom dat andere mensen uw computer gebruiken wanneer u even bij uw computer weg gaat.</desc>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Het scherm automatisch vergrendelen</title>
+  <title>Automatically lock your screen</title>
   
-  <p>Wanneer u uw computer verlaat, dient u <link xref="shell-exit#lock-screen">het scherm vergrendelen</link> te kiezen om te voorkomen dat anderen uw computer gebruiken en toegang hebben tot uw bestanden. Als u soms vergeet uw scherm te vergrendelen, dan kunt u ervoor kiezen uw scherm automatisch te vergrendelen na een bepaalde periode. Dit zal de veiligheid vergroten wanneer u de computer niet gebruikt.</p>
+  <p>When you leave your computer, you should
+  <link xref="shell-exit#lock-screen">lock the screen</link> to prevent
+  other people from using your desktop and accessing your files. If you
+  sometimes forget to lock your screen, you may wish to have your computer's
+  screen lock automatically after a set period of time. This will help to
+  secure your computer when you aren't using it.</p>
 
-  <note><p>Wanneer uw scherm vergrendeld is, zullen uw toepassingen en systeemprocessen blijven draaien, maar u zult uw wachtwoord moeten invoeren om ze weer te gebruiken.</p></note>
+  <note><p>When your screen is locked, your applications and system processes
+  will continue to run, but you will need to enter your password to begin using
+  them again.</p></note>
   
   <steps>
-    <title>De tijdsduur instellen voordat uw scherm automatisch wordt vergrendeld:</title>
-    <item>
-      <p>Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht en typ <gui>Privacy</gui>.</p>
-    </item>
-    <item>
-      <p>Klik op <gui>Privacy</gui> om het paneel te openen.</p>
-    </item>
-    <item>
-      <p>Selecteer <gui>Schermvergrendeling</gui>.</p>
-    </item>
-    <item>
-      <p>Zorg ervoor dat <gui>Automatische schermvergrendeling</gui> <gui>AAN</gui> staat, en kies daarna uit de keuzelijst de tijdsduur.</p>
-    </item>
+    <title>To set the length of time before your screen locks
+    automatically:</title>
+    <item><p>Click your name on the top bar and select <gui>Settings</gui>.
+    </p></item>
+    <item><p>Select <guiseq><gui>Privacy</gui><gui>Screen Lock</gui></guiseq>.
+    </p></item>
+    <item><p>Make sure <gui>Automatic Screen Lock</gui> is switched on, then
+    select a length of time from the drop-down list.</p></item>
   </steps>
 
-  <note style="tip">
-    <p>Toepassingen kunnen meldingen aan u doorgeven door ze op uw vergrendelde scherm te tonen. Dit is bijvoorbeeld handig om te zien of er e-mail is zonder uw scherm te ontgrendelen. Als u niet wilt dat anderen deze meldingen te zien krijgen, dan kunt u <gui>Meldingen tonen</gui> uitzetten.</p>
-  </note>
-
-  <p>Wanneer uw scherm vergrendeld is, en u wilt het ontgrendelen, druk dan op <key>Esc</key> of veeg omhoog vanaf de onderkant van het scherm met de muis. Voer daarna uw wachtwoord in en druk op <key>Enter</key> of klik op <gui>Ontgrendelen</gui>. U kunt ook gewoon beginnen met intypen van uw wachtwoord waardoor het vergrendelde scherm automatisch opgerold wordt.</p>
+  <p>When your screen is locked, and you want to unlock it, press
+  <key>Esc</key>, or swipe up from the bottom of your screen with your mouse.
+  Then enter your password, and press <key>Enter</key> or click
+  <gui>Unlock</gui>.</p>
 
 </page>

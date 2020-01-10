@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="mouse-mousekeys" xml:lang="ja">
-
-  <info>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="mouse-mousekeys" xml:lang="ja">
+<info>
     <link type="guide" xref="mouse"/>
     <link type="guide" xref="a11y#mobility" group="pointing"/>
 
-    <revision pkgversion="3.8" date="2013-03-16" status="outdated"/>
-    <revision pkgversion="3.10" date="2013-11-07" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.8.0" date="2013-03-16" status="outdated"/>
+
+    <desc>マウスキーを有効にして、キーパッドでマウス操作を行います。</desc>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -21,21 +20,14 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-      <years>2013, 2015</years>
-    </credit>
-
+    
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
     
-    <desc>Enable mouse keys to control the mouse with the numeric
-    keypad.</desc>
-  
+
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -57,70 +49,41 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Noriko Mizumoto</mal:name>
-      <mal:email>noriko@fedoraproject.org</mal:email>
-      <mal:years>2013, 2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>坂本 貴史</mal:name>
-      <mal:email>o-takashi@sakamocchi.jp</mal:email>
-      <mal:years>2013, 2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>日本GNOMEユーザー会</mal:name>
       <mal:email>http://www.gnome.gr.jp/</mal:email>
       <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
 
-  <title>キーパッドを使ってクリックやマウスポインターの操作を行う</title>
+<title>キーパッドを使ってクリックやマウスポインターの操作を行う</title>
 
-  <p>マウスやその他のポインティングデバイスを使うのが困難な場合は、キーボードのテンキーパッドを使ってマウスポインターを操作できます。この機能は<em>マウスキー</em>と呼ばれています。</p>
+<p>マウスやその他のポインティングデバイスを使うのが困難な場合は、キーボードのテンキーパッドを使ってマウスポインターを操作できます。この機能は<em>マウスキー</em>と呼ばれています。</p>
 
-  <steps>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Universal Access</gui>.</p>
-      <p>You can access the <gui>Activities</gui> overview by pressing on it,
-      by moving your mouse pointer against the top-left corner of the screen,
-      using <keyseq><key>Ctrl</key><key>Alt</key><key>Tab</key></keyseq>
-      followed by <key>Enter</key> or using
-      <key xref="keyboard-key-super">Super</key>.</p>
-    </item>
-    <item>
-      <p>Click on <gui>Universal Access</gui> to open the panel.</p>
-    </item>
-    <item>
-      <p>Use the up and down arrow keys to select <gui>Mouse Keys</gui> in the
-      <gui>Pointing &amp; Clicking</gui> section then press <key>Enter</key> to
-      switch <gui>Mouse Keys</gui> to <gui>On</gui>.</p>
-    </item>
-    <item>
-      <p><key>Num Lock</key>が OFF になっていることを確認してください。キーパッドを使ってマウスポインターを動かすことができるようになります。</p>
-    </item>
-  </steps>
+<steps>
+  <item><p><keyseq><key>Ctrl</key><key>Alt</key><key>Tab</key></keyseq> を押して、キーボードフォーカスをトップバーにあてます。</p></item>
+  <item><p>左右の矢印キーを使い、<link xref="a11y-icon">ユニバーサルアクセスのメニュー</link>を選択し、<key>Enter</key> キーを押します。</p></item>
+  <item><p>上下の矢印キーを使い、<gui>マウスキー</gui> を選択し、<key>Enter</key> キーを押します。</p></item>
+  <item><p><key>Num Lock</key>が OFF になっていることを確認してください。キーパッドを使ってマウスポインターを動かすことができるようになります。</p></item>
+</steps>
 
-  <p>The keypad is a set of numerical buttons on your keyboard, usually
-  arranged into a square grid. If you have a keyboard without a keypad (such as
-  a laptop keyboard), you may need to hold down the function (<key>Fn</key>)
-  key and use certain other keys on your keyboard as a keypad. If you use this
-  feature often on a laptop, you can purchase external USB or Bluetooth numeric
-  keypads.</p>
+ <note style="tip">
+ <p>この説明は、キーボードだけを使いマウスキーを有効にする最短方法を述べています。アクセシビリティオプションの詳細については、<gui>ユニバーサルアクセスの設定</gui>を開いてください。</p>
+ </note>
 
-  <p>キーパッドの各数字は移動方向へ対応しています。たとえば、<key>8</key> キーを押すとポインターは上に移動し、<key>2</key> キーを押すと下に移動します。<key>5</key> キーでクリックができ、すばやく 2 回押すとダブルクリックとなります。</p>
+<p>キーパッドとは、キーボードの数字キーをひとまとめにしたものです。通常は四角の格子状に並んでいます。お使いのキーボードにキーパッドが無い場合 (ラップトップ用キーボードなど)、ファンクション (<key>Fn</key>) キーを押しながら、キーボードの何か別のキーをキーパッドの代わりとして使う場合があります。この機能をラップトップ上でよく使うのであれば、外付けの USB キーパッドを購入するとよいでしょう。</p>
 
-  <p>Most keyboards have a special key which allows you to right-click,
-  sometimes called the <key xref="keyboard-key-menu">Menu</key> key. Note,
-  however, that this key responds to where your keyboard focus is, not where
-  your mouse pointer is. See <link xref="a11y-right-click"/> for information on
-  how to right-click by holding down <key>5</key> or the left mouse button.</p>
+<p>キーパッドの各数字は移動方向へ対応しています。たとえば、<key>8</key> キーを押すとポインターは上に移動し、<key>2</key> キーを押すと下に移動します。<key>5</key> キーでクリックができ、すばやく 2 回押すとダブルクリックとなります。</p>
 
-  <p>マウスキーを使っているときにキーパッドで数字入力をしたい場合は、<key>Num Lock</key> をオンにしてください。ただし、<key>Num Lock</key> がオンになっているときはキーパッドでマウスポインターを操作することはできません。</p>
+<p>Most keyboards have a special key which allows you to right-click, sometimes
+called the <key xref="keyboard-key-menu">Menu</key> key. Note, however, that
+this key responds to where your keyboard focus is, not where your mouse pointer
+is. See <link xref="a11y-right-click"/> for information on how to right-click by
+holding down <key>5</key> or the left mouse button.</p>
 
-  <note>
+<p>マウスキーを使っているときにキーパッドで数字入力をしたい場合は、<key>Num Lock</key> をオンにしてください。ただし、<key>Num Lock</key> がオンになっているときはキーパッドでマウスポインターを操作することはできません。</p>
+
+<note>
     <p>キーボードの上部に並んでいる通常の数字キーでは、マウスポインターを操作することはできません。キーパッドの数字キーだけが使えます。</p>
-  </note>
+</note>
 
 </page>

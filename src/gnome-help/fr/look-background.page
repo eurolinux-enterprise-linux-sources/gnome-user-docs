@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="look-background" xml:lang="fr">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="look-background" xml:lang="fr">
 
   <info>
     <link type="guide" xref="prefs-display"/>
 
     <revision pkgversion="3.8.0" version="0.3" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-07" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <desc>Définir une image, une couleur ou un dégradé comme arrière-plan de votre bureau.</desc>
 
     <credit type="author">
       <name>Le projet de documentation GNOME</name>
@@ -32,18 +32,7 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Shobha Tyagi</name>
-      <email>tyagishobha@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Définir une image, une couleur ou un dégradé comme arrière-plan de votre bureau ou de votre écran de veille.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Luc Pionchon</mal:name>
@@ -60,13 +49,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Julien Hardelin</mal:name>
       <mal:email>jhardlin@orange.fr</mal:email>
-      <mal:years>2011, 2013</mal:years>
+      <mal:years>2011</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -92,50 +81,32 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Alexandre Franke</mal:name>
-      <mal:email>alexandre.franke@gmail.com</mal:email>
-      <mal:years>2015</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Modification de l'arrière-plan du bureau et de l'écran de veille</title>
+<title>Modification de l'arrière-plan du bureau</title>
 
-  <p>You can change the image used for your backgrounds or set it to be a
-  solid color.</p>
+<p>Vous pouvez modifier l'image d'arrière-plan de votre bureau, ou bien choisir une simple couleur ou un dégradé.</p>
 
-  <steps>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Background</gui>.</p>
-    </item>
-    <item>
-      <p>Cliquez sur <gui>Arrière-plan</gui> pour ouvrir le panneau.</p>
-    </item>
-    <item>
-      <p>Sélectionnez <gui>Arrière-plan</gui> ou <gui>Écran de veille</gui>.</p>
-    </item>
-    <item>
-      <p>Trois choix vous sont proposés en haut :</p>
-      <list>
-        <item>
-          <p>Sélectionnez <gui>Papiers peints</gui> pour choisir l'une des nombreuses images professionnelles d'arrière-plan qui vous sont proposées avec GNOME. Certains papiers peints changent au cours de la journée. Ceux-ci on une petite icône en forme d'horloge dans le coin en bas à droite.</p>
-        </item>
-        <item>
-          <p>Cliquez sur <gui>Images</gui> pour utiliser une de vos propres photos prise dans le dossier <file>Images</file>. La plupart des applications de gestion des photos les stockent à cet endroit. Si vous souhaitez utiliser une photo située dans un autre dossier, ouvrez <app>Fichiers</app>, faites un clic droit sur l'image voulue et choisissez <gui>Définir comme papier peint</gui> dans le menu contextuel. Vous pouvez aussi lancer l'application <app>Visionneur d'image</app> en ouvrant l'image et sélectionner <gui>Définir comme papier-peint</gui> dans le menu de la barre de titres.</p>
-        </item>
-        <item>
-          <p>Sélectionnez <gui>Couleurs</gui> pour n'utiliser qu'une couleur unie.</p>
-        </item>
-      </list>
-    </item>
-    <item>
-      <p>Les paramètres sont immédiatement appliqués.</p>
-    </item>
-    <item>
-      <p><link xref="shell-workspaces-switch">Affichez un espace de travail vide</link> pour visualiser le bureau dans son intégralité.</p>
-    </item>
-  </steps>
+<steps>
+  <item><p>Click your name on the top bar and select <gui>Settings</gui>.</p></item>
+  <item><p>Ouvrez <gui>Arrière-plan</gui>.</p></item>
+  <item><p>Click the image of your current wallpaper in the center.</p></item>
+<item><p>Trois choix vous sont proposés en haut :</p>
+<list>
+  <item><p>Sélectionnez <gui>Papiers peints</gui> pour choisir l'une des nombreuses images professionnelles d'arrière-plan qui vous sont livrées avec GNOME. Certains papiers peints sont partiellement transparents et permettent d'apercevoir un fond coloré à travers. Pour ceux-ci, un bouton de sélection de couleur est disponible dans le coin inférieur droite.</p></item>
+  <item><p>Select <gui>Pictures</gui> to use one of your own photos
+  from your Pictures folder. Most photo management applications
+  store photos there.
+  If you would like to use an image that is not in your Pictures folder,
+  either use <app>Files</app> by right-clicking on the image file and
+  selecting <gui>Set as Wallpaper</gui>, or <app>Image Viewer</app> by
+  opening the image file and selecting
+  <guiseq><gui>Image</gui><gui>Set as Desktop Background</gui></guiseq>.</p></item>
+  <item><p>Sélectionnez <gui>Couleurs</gui> pour n'utiliser qu'une couleur unie ou un dégradé linéaire.</p></item>
+</list>
+</item>
+  <item><p>Les paramètres sont immédiatement appliqués.</p></item>
+  <item><p><link xref="shell-workspaces-switch">Affichez un espace de travail vide</link> pour visualiser le bureau dans son intégralité.</p></item>
+</steps>
 
 </page>

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-hidden" xml:lang="sl">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-hidden" xml:lang="sl">
 
   <info>
     <link type="guide" xref="files#faq"/>
+    <desc>Naredite datoteko nevidno, tako da je v upravljalniku datotek ni mogoče videti.</desc>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-29" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="candidate"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -16,75 +15,47 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Make a file invisible, so you cannot see it in the file
-    manager.</desc>
   </info>
 
 <title>Skritje datoteke</title>
 
-  <p>The <app>Files</app> file manager gives you the ability to hide and unhide
-  files at your discretion. When a file is hidden, it is not displayed by the
-  file manager, but it is still there in its folder.</p>
+  <p>Upravljalnik datotek GNOME vam daje zmožnost skritja ali odkritja datotek po svojih željah. Skrite datoteke so privzeto nevidne, saj v upravljalniku datotek niso prikazane. Vendar pa se še vedno nahajajo v mapi.</p>
 
-  <p>To hide a file, <link xref="files-rename">rename it</link> with a
-  <file>.</file> at the beginning of its name. For example, to hide a file
-  named <file>example.txt</file>, you should rename it to
-  <file>.example.txt</file>.</p>
+  <p>Za skritje datoteke jo <link xref="files-rename">preimenujte</link> s <key>.</key> na začetku imena. Za skritje datoteke <file>primer.txt</file> jo preimenujte v <file>.primer.txt</file>.</p>
 
 <note>
-  <p>You can hide folders in the same way that you can hide files. Hide a
-  folder by placing a <file>.</file> at the beginning of the folder’s name.</p>
+  <p>Mape lahko skrijete na enak način kot datoteke. Mapo preimenujte in na začetek njenega imena dodajte <key>.</key>.</p>
 </note>
 
 <section id="show-hidden">
  <title>Prikaz vseh skritih datotek</title>
-
-  <p>If you want to see all hidden files in a folder, go to that folder and
-  either click the
-  <!-- FIXME: Get a tooltip added for "View options" -->
-  view options button in the toolbar and pick <gui>Show Hidden Files</gui>, or press
-  <keyseq><key>Ctrl</key><key>H</key></keyseq>. You will see all hidden files,
-  along with regular files that are not hidden.</p>
+  <p>Če želite videti vse skrite datoteke v mapi, pojdite v mapo in kliknite gumb <media type="image" src="figures/go-down.png">navzdol</media> v orodni vrstici in izberite <gui>Pokaži skrite datoteke</gui> ali pa pritisnite <keyseq><key>krmilka</key><key>H</key></keyseq>. Vse skrite datoteke bodo prikazane skupaj z datotekami, ki niso skrite.</p>
 
   <p>To hide these files again, either click the
-  <!-- FIXME: Get a tooltip added for "View options" -->
-  view options button in the toolbar and pick <gui>Show Hidden Files</gui>, or press
+  <media type="image" src="figures/go-down.png">down</media> button in the
+  toolbar and pick <gui>Show Hidden Files</gui>, or press
   <keyseq><key>Ctrl</key><key>H</key></keyseq> again.</p>
 
 </section>
 
 <section id="unhide">
  <title>Prikaz datoteke</title>
-
   <p>To unhide a file, go to the folder containing the hidden file and click
-  the
-  <!-- FIXME: Get a tooltip added for "View options" -->
-  view options button in the toolbar and pick <gui>Show Hidden Files</gui>.
-  Then, find the hidden file and rename it so that it does not have a
-  <file>.</file> in front of its name. For example, to unhide a file called
-  <file>.example.txt</file>, you should rename it to
-  <file>example.txt</file>.</p>
+  the <media type="image" src="figures/go-down.png">down</media> button in the
+  toolbar and pick <gui>Show Hidden Files</gui>. Then, find the hidden file and
+  rename it so that it doesn't have a <key>.</key> in front of its name. For
+  example, to unhide a file called <file>.example.txt</file>, you should rename
+  it to <file>example.txt</file>.</p>
 
   <p>Once you have renamed the file, you can either click the
-  <!-- FIXME: Get a tooltip added for "View options" -->
-  view options button in the toolbar and pick <gui>Show Hidden Files</gui>, or
-  press <keyseq><key>Ctrl</key><key>H</key></keyseq> to hide any other hidden
-  files again.</p>
+  <media type="image" src="figures/go-down.png">down</media> button
+  in the toolbar and pick <gui>Show Hidden Files</gui>, or press
+  <keyseq><key>Ctrl</key><key>H</key></keyseq> to hide any other hidden files
+  again.</p>
 
   <note><p>Privzeto bodo skrite datoteke prikazane le v trenutnem oknu dokler upravljalnika datotek ne zaprete. Za spremembo te nastavitve, da bodo skrite datoteke vedno prikazane v upravljalniku datotek, si oglejte <link xref="nautilus-views"/>.</p></note>
 
-  <note><p>Most hidden files will have a <file>.</file> at the
-  beginning of their name, but others might have a <file>~</file> at the end of
-  their name instead. These files are backup files. See
-  <link xref="files-tilde"/> for more information.</p></note>
-
+  <note><p>Večina skritih datotek ima na začetku svojega imena <key>.</key>. Druge skrite datoteke imajo na koncu svojega imena <key>~</key>. Te datoetke so datoteke varnostnih kopij. Za več podrobnosti si oglejte <link xref="files-tilde"/>.</p></note>
 </section>
-
 </page>

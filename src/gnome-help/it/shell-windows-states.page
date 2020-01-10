@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" version="1.0 if/1.0" id="shell-windows-states" xml:lang="it">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" id="shell-windows-states" xml:lang="it">
 
   <info>
+
     <link type="guide" xref="shell-windows#working-with-windows"/>
 
+    <desc>Disporre le finestre su uno spazio di lavoro aiuta a lavorare in modo più efficiente.</desc>
+
     <revision pkgversion="3.4.0" date="2012-03-24" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
 
     <credit type="author copyright">
       <name>Shaun McCance</name>
@@ -14,8 +16,6 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Disporre le finestre su uno spazio di lavoro aiuta a lavorare in modo più efficiente.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Luca Ferretti</mal:name>
@@ -30,30 +30,23 @@
     </mal:credit>
   </info>
 
-  <title>Spostare e ridimensionare le finestre</title>
+<title>Spostare e ridimensionare le finestre</title>
 
-  <p>You can move and resize windows to help you work more efficiently. In
-  addition to the dragging behavior you might expect, GNOME features shortcuts
-  and modifiers to help you arrange windows quickly.</p>
+<p>You can move and resize windows to help you work more efficiently.
+In addition to the dragging behavior you might expect, GNOME features
+shortcuts and modifiers to help you arrange windows quickly.</p>
 
-  <list>
-    <item>
-      <p>Move a window by dragging the titlebar, or hold down
-      <key xref="keyboard-key-super">Super</key> and drag anywhere in the
-      window. Hold down <key>Shift</key> while moving to snap the window to the
-      edges of the screen and other windows.</p>
-    </item>
-    <item>
-      <p>Ridimensionare una finestra trascinando i suoi bordi o l'angolo. Tenere premuto <key>Maiusc</key> durante il ridimensionamento per agganciare la finestra ai bordi dello schermo o di altre finestre.</p>
-      <p if:test="platform:gnome-classic">You can also resize a maximized
-      window by clicking the maximize button in the titlebar.</p>
-    </item>
-    <item>
-      <p>Muovere o ridimensionare una finestra usando solo la tastiera. Premere <keyseq><key>Alt</key><key>F7</key></keyseq> per spostare una finestra oppure <keyseq><key>Alt</key><key>F8</key></keyseq> per ridimensionarla. Usare i tasti freccia per muoverla o ridimensionarla, quindi premere <key>Invio</key> per completare l'azione, oppure premere <key>Esc</key> per tornare alla posizione e dimensione originale.</p>
-    </item>
-    <item>
-      <p><link xref="shell-windows-maximize">Massimizzare una finestra</link> trascinandola sul bordo superiore dello schermo. Trascinare una finestra su un lato dello schermo per massimizzarla lungo quel lato, consentendo così <link xref="shell-windows-tiled">di affiancare due finestre</link>.</p>
-    </item>
-  </list>
+<list>
+<item><p>Spostare una finestra trascinando la barra del titolo, oppure tenere premuto <key>Alt</key> e trascinare da un punto qualsiasi della finestra. Tenere premuto <key>Maiusc</key> durante lo spostamento per agganciare la finestra ai bordi dello schermo o di altre finestre.</p></item>
+
+<item><p>Ridimensionare una finestra trascinando i suoi bordi o l'angolo. Tenere premuto <key>Maiusc</key> durante il ridimensionamento per agganciare la finestra ai bordi dello schermo o di altre finestre.</p>
+
+<p if:test="platform:gnome-classic">You can also resize a maximized window by
+clicking the maximize button in the titlebar.</p></item>
+
+<item><p>Muovere o ridimensionare una finestra usando solo la tastiera. Premere <keyseq><key>Alt</key><key>F7</key></keyseq> per spostare una finestra oppure <keyseq><key>Alt</key><key>F8</key></keyseq> per ridimensionarla. Usare i tasti freccia per muoverla o ridimensionarla, quindi premere <key>Invio</key> per completare l'azione, oppure premere <key>Esc</key> per tornare alla posizione e dimensione originale.</p></item>
+
+<item><p><link xref="shell-windows-maximize">Massimizzare una finestra</link> trascinandola sul bordo superiore dello schermo. Trascinare una finestra su un lato dello schermo per massimizzarla lungo quel lato, consentendo così <link xref="shell-windows-tiled">di affiancare due finestre</link>.</p></item>
+</list>
 
 </page>

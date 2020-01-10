@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="net-editcon" xml:lang="fi">
+  <info>
+    <link type="guide" xref="net-wireless" group="first"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <desc>Opi langattomien yhteysasetusten muuttaminen.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Timo Jyrinki</mal:name>
+      <mal:email>timo.jyrinki@iki.fi</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Muokkaa langattoman yhteyden asetuksia</title>
+
+<comment>
+ <p>This topic needs significant revision to be comprehensive. A number of settings remain undocumented.</p>
+</comment>
+
+<p>This topic describes all of the options that are available when you edit
+a wireless network connection. To edit a connection, select it in the
+<gui>Network</gui> settings, then click <gui>Options</gui>.</p>
+
+<note>
+ <p>Useimmat verkot toimivat moitteetta oletusasetuksilla, joten asetuksia ei tarvitse välttämättä muuttaa lainkaan. Monet näistä valinnoista mahdollistavat kuitenkin verkkoyhteyden tarkempien määritysten asettamisen.</p>
+</note>
+
+<section id="available">
+ <title>Saatavilla kaikille käyttäjille / Yhdistä automaattisesti</title>
+ <terms>
+  <item>
+   <title><gui>Yhdistä automaattisesti</gui></title>
+   <p>Valitse tämä asetus, jos haluat tietokoneen yrittävän ottaa yhteyden aina kyseisen verkon ollessa saatavilla.</p>
+   <p>Jos saatavilla on useita eri verkkoja, joihin tietokone on asetettu yhdistymään, tietokone yhdistää <gui>Verkko</gui>-ikkunan <gui>Langaton</gui>-välilehdellä ensimmäisenä olevaan verkkoon. Tietokone ei katkaise yhteyttä verkkoon, jos saataville ilmaantuu muita verkkoja.</p>
+  </item>
+
+  <item>
+   <title><gui>Saatavilla kaikille käyttäjille</gui></title>
+   <p>Valitse tämä asetus, jos haluat kaikilla tietokoneen käyttäjillä olevan mahdollisuus käyttää tätä yhteyttä. Jos kyseinen verkko on suojattu <link xref="net-wireless-wepwpa">WEP-/WPA-salasanalla</link> ja tämä asetus on valittu, verkon salasana on annettava vain kerran. Muiden käyttäjien ei siis tarvitse tietää verkon salasanaa, jotta he voivat käyttää verkkoyhteyttä.</p>
+   <p>Jos tämä asetus on valittu, sinulla tulee olla <link xref="user-admin-explain">ylläpitäjän oikeudet</link> yhteyden asetuksien muuttamiseksi.</p>
+  </item>
+ </terms>
+</section>
+
+<section id="wireless">
+ <title>Langaton</title>
+ <terms>
+  <item>
+   <title><gui>SSID</gui></title>
+   <p>SSID tarkoittaa langattoman verkon nimeä. Lyhenne tulee englanninkielisistä sanoista <em>Service Set Identifier</em>. Älä muuta tätä asetusta, ellet ole vaihtanut langattoman verkon nimeä esimerkiksi reitittimestä.</p>
+  </item>
+
+  <item>
+   <title><gui>Tila</gui></title>
+   <p>Määritä, yhdistetäänkö tietokone <gui>Infrastruktuuri</gui>-tyyppiseen verkkoon (jossa tietokoneet yhdistävät langattomasti tukiasemaan tai reitittimeen) vai <gui>Ad-hoc</gui>-verkkoon (jossa ei ole tukiasemaa, ja tietokoneet yhdistävät toinen toisiinsa). Useimmat verkoista ovat infrastruktuuriverkkoja, mutta saatat olla kiinnostunut <link xref="net-adhoc">oman ad-hoc-verkon pystyttämisestä</link>.</p>
+   <p>Jos <gui>Ad-hoc</gui> valitaan, tulee näkyville kaksi muuta valintaa, jotka ovat <gui>Taajuusalue</gui> ja <gui>Kanava</gui>. Nämä määrittävät, mitä langatonta taajuusaluetta ad-hoc-verkko käyttää. Jotkin tietokoneet voivat toimia vain tietyillä taajuusalueilla (esimerkiksi vain <gui>A</gui> tai vain <gui>B/G</gui>), joten on hyödyllistä valita taajuusalue jota kaikki ad-hoc-verkon tietokoneet voivat käyttää. Ruuhkaisissa paikoissa saattaa olla käytössä useita saman kanavan jakavia langattomia verkkoja, mikä saattaa hidastaa yhteyksiä. Tällöin voidaan vaihtaa myös käytettävää kanavaa.</p>
+  </item>
+
+  <item>
+   <title><gui>BSSID</gui></title>
+   <p>BSSID on lyhenne englanninkielisistä sanoista <em>Basic Service Set Identifier</em>. Siinä missä SSID (selvitetty ylempänä) on verkon ihmiselle näkyvä nimi, BSSID on tietokoneelle näkyvä verkon nimi. Jos <link xref="net-wireless-hidden">langaton verkko on piilotettu</link>, sillä ei ole SSID:tä, mutta sillä on silti BSSID.</p>
+  </item>
+
+  <item>
+   <title><gui>Laitteen MAC-osoite</gui></title>
+   <p><link xref="net-macaddress">MAC-osoite</link> on verkkolaitteen (esim. langaton verkkosovitin, Ethernet-verkkokortti tai reititin) yksilöivä koodisarja. Jokainen verkkoon kytkettävä laite omaa valmistustehtaalla annetun yksilöivän MAC-osoitteen.</p>
+   <p>Tätä valintaa voi käyttää verkkokortin MAC-osoitteen vaihtamiseksi.</p>
+  </item>
+
+  <item>
+   <title><gui>Kopioitu MAC-osoite</gui></title>
+   <p>Verkkosovittimesi voi esittää omaavansa jonkin toisen MAC-osoitteen, kuin mitä sillä todellisuudessa on. Tämä on hyödyllinen ominaisuus, jos jokin verkko tai palvelu suostuu toimimaan vain tietyn MAC-osoitteen kanssa. Jos asetat <gui>Kopioitu MAC-osoite</gui> -kenttään haluamasi MAC-osoitteen, muut palvelut, verkot ja laitteet uskovat koneesi verkkosovittimella olevan kyseinen MAC-osoite.</p>
+  </item>
+
+  <item>
+   <title><gui>MTU</gui></title>
+   <p>Tämä asetus muuttaa <em>pakettien enimmäiskokoa</em> (MTU, lyhenne englanninkielisistä sanoista Maximum Transmission Unit). Paketin enimmäiskoolla tarkoitetaan verkon yli lähetettävän paketin suurinta mahdollista kokoa. Kun verkossa lähetetään tietoa, tieto pilkotaan pieniksi paloiksi (eli paketeiksi). Pakettien enimmäiskoko riippuu käyttämästäsi verkosta ja yhteyden nopeudesta. Tätä asetusta ei tule muuttaa, ellei tiedä mitä on tekemässä.</p>
+  </item>
+
+ </terms>
+</section>
+
+<section id="security">
+ <title>Langaton tietoturva</title>
+ <terms>
+  <item>
+   <title><gui>Turvallisuus</gui></title>
+   <p>Tämä asetus määrittää, minkälaista <em>salausta</em> langaton verkko käyttää. Langattoman verkon salauksen on tarkoitus estää muita käyttämästä verkkoasi sekä näkemästä, mitä tietoa verkkoyhteytesi välittää.</p>
+   <p>Salaustapojen vahvuudessa on suuria eroja, mutta kaikki uudemmat ja tehokkaammat salaustavat eivät välttämättä ole tuettuja vanhoilla verkkolaitteilla. Salatun yhteyden käyttö vaatii normaalisti salasanan, kehittyneemmät salaustekniikat käyttäjätunnuksen ja varmenteen. Lue ohje <link xref="net-wireless-wepwpa"/> saadaksesi lisätietoja erilaisista salaustavoista.</p>
+  </item>
+ </terms>
+</section>
+
+<section id="ipv4">
+ <title>IPv4-asetukset</title>
+
+<comment>
+<cite>shaunm</cite>
+<p>There's also Shared to other computers</p>
+<p>Then there's addresses and dns servers and ipv4 addressing routes.</p>
+<p>All current info correct, but incomplete</p>
+</comment>
+
+ <p>Käytä tätä välilehteä määrittääksesi verkkoyhteyteen liittyvät tiedot, kuten tietokoneen IP-osoitteen ja käytettävän DNS-nimipalvelimen. Katso <gui>Menetelmä</gui>-pudotusvalikosta erilaisia tapoja määrittää verkkoasetukset.</p>
+ <p>Seuraavat menetelmät ovat käytettävissä:</p>
+ <terms>
+  <item>
+   <title><gui>Automaattinen (DHCP)</gui></title>
+   <p>Nouda automaattisesti <em>DHCP-palvelimelta</em> kaikki vaadittavat asetukset, kuten IP-osoite ja DNS-nimipalvelin. DHCP-palvelin on tietokone (tai mitä luultavimmin laite, kuten reititin), joka on yhteydessä verkkoon. Se päättää, mitä asetuksia samaan verkkoon yhdistävät tietokoneet saavat. Kun yhdistät ensimmäisen kerran DHCP-palvelimella varustettuun verkkoon, tietokoneellesi määritetään automaattisesti tarvittavat asetukset. Useimmat verkot käyttävät DHCP-palvelimia.</p>
+  </item>
+
+  <item>
+   <title><gui>Vain automaattiset osoitteet (DHCP)</gui></title>
+   <p>Jos valitset tämän asetuksen, tietokoneesi noutaa IP-osoitteen DHCP-palvelimelta, mutta kaikki muut verkkoyhteyden tiedot (kuten käytettävä DNS-nimipalvelin) tulee määrittää itse.</p>
+  </item>
+
+  <item>
+   <title><gui>Manuaalinen</gui></title>
+   <p>Valitse tämä asetus, jos haluat määrittää verkkoyhteyden kaikki asetukset itse, mukaan lukien tietokoneen käyttämän IP-osoitteen.</p>
+  </item>
+
+  <item>
+   <title><gui>Vain linkkiyhteys</gui></title>
+   <p><em>Vain linkkiyhteys</em> on tapa yhdistää tietokoneita toisiinsa ilman tarvetta DHCP-palvelimelle tai itse määritellyille verkkoasetuksille. Jos yhdistät Vain linkkiyhteys -verkkoon, kyseisessä verkossa olevat tietokoneet päättävät itse tarvittavat verkkoasetukset. Tämä on hyödyllistä silloin, kun tietokoneita halutaan verkottaa toisiinsa väliaikaisesti ilman vaikeiden asetusten tekoa.</p>
+  </item>
+
+  <item>
+   <title><gui>Poissa käytöstä</gui></title>
+   <p>Tämä asetus poistaa verkkoyhteyden käytöstä ja estää siihen yhdistämisen. Otathan huomioon, että <gui>IPv4</gui>- ja <gui>IPv6</gui>-yhteyksiä käsitellään erillisinä yhteyksinä, vaikka ne muodostettaisiin samalla verkkolaitteella. Jos käytössäsi on IPv4, saatat haluta poistaa IPv6:n käytöstä. Sama pätee myös toisinpäin.</p>
+  </item>
+
+ </terms>
+</section>
+
+<section id="ipv6">
+ <title>IPv6-asetukset</title>
+<comment>
+<cite>shaunm</cite>
+<p>The list of methods is a bit different</p>
+</comment>
+ <p>Tämä on vastaavanlainen kuin <gui>IPv4</gui>-välilehti sillä erotuksella, että kyseessä on uudempi IPv6-standardi. Todella nykyaikaiset verkot käyttävät IPv6-teknologiaa, IPv4 on vielä nykypäivänä huomattavasti yleisempi.</p>
+</section>
+
+</page>

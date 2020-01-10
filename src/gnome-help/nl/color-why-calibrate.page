@@ -1,39 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="color-why-calibrate" xml:lang="nl">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="color-why-calibrate" xml:lang="nl">
 
   <info>
     <link type="guide" xref="color#calibration"/>
-    <desc>Kalibreren is belangrijk als u geeft om de weergave of het afdrukken van kleuren.</desc>
+    <desc>Calibrating is important if you care about the colors you display or print.</desc>
 
     <credit type="author">
       <name>Richard Hughes</name>
       <email>richard@hughsie.com</email>
     </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Waarom moet ik zelf kalibreren?</title>
+  <title>Why do I need to do calibration myself?</title>
 
-  <p>Algemene profielen zijn doorgaans slecht. Wanneer een fabrikant een nieuw model maakt, worden er gewoon een paar items van de productielijn genomen die dan worden gemiddeld:</p>
+  <p>
+    Generic profiles are usually bad.
+    When a manufacturer creates a new model, they just take a few items
+    from the production line and average them together:
+  </p>
 
-  <media its:translate="no" type="image" src="figures/color-average.png">
-    <p its:translate="yes">Gemiddelde profielen</p>
+  <media type="image" src="figures/color-average.png">
+    <p>Averaged profiles</p>
   </media>
 
-  <p>Beeldschermen verschillen onderling sterk, en veranderen aanzienlijk naarmate het beeldscherm ouder wordt. Het is nog lastiger met printers, aangezien alleen al het wijzigen van het soort of gewicht van papier de karakterisering ongeldig kan maken waardoor het profiel niet meer nauwkeurig is.</p>
+  <p>
+    Display panels differ quite a lot from unit to unit and change
+    substantially as the display ages.
+    It is also more difficult for printers, as just changing the type
+    or weight of paper can invalidate the characterization state and
+    make the profile inaccurate.
+  </p>
 
-  <p>De beste manier om te verzekeren dat het profiel dat u heeft nauwkeurig is, is door zelf de kalibratie te doen, of door een extern bedrijf een profiel te laten leveren dat gebaseerd is op uw exacte karakteriseringsstaat.</p>
+  <p>
+    The best way of ensuring the profile you have is accurate is by doing
+    the calibration yourself, or by letting an external company supply
+    you with a profile based on your exact characterization state.
+  </p>
 
 </page>

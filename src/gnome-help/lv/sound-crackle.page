@@ -4,9 +4,9 @@
   <info>
     <link type="guide" xref="sound-broken"/>
 
+    <desc>Pārbaudiet savus audio kabeļus un skaņas kartes draiverus.</desc>
+
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>GNOME dokumentācijas projekts</name>
@@ -14,8 +14,6 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Pārbaudiet savus audio kabeļus un skaņas kartes draiverus.</desc>
   </info>
 
 <title>Es dzirdu šķindēšanu vai dūkšanu, kad spēlē skaņas</title>
@@ -34,10 +32,18 @@
  </item>
 
  <item>
-  <p>Pārbaudiet, vai skaņas draiveri nav ļoti labi.</p>
-  <p>Dažas skaņu kartes var nestrādāt pārāk labi Linux, jo tām var nebūt labi skaņu draiveri. Šo problēmu ir grūtāk identificēt. Pamēģiniet meklēt savas skaņu kartes ražotāju un modeli internetā, pievienojot terminu “Linux”, lai redzētu, vai citi cilvēki arī sastopas ar šādu problēmu.</p>
+  <p>Pārbaudiet, vai skaņu draiveri ir pietiekami labi.</p>
+  <p>Dažas skaņu kartes var nestrādāt pārāk labi Linux, jo tām var nebūt labi skaņu draiveri. Šo problēmu ir grūtāk identificēt. Pamēģiniet meklēt savas skaņu kartes ražotāju un modeli internetā, pievienojot terminu "Linux", lai redzētu, vai citi cilvēki arī sastopas ar šādu problēmu.</p>
   <p>Varat izmantot <cmd>lspci</cmd> komandu, lai iegūtu vairāk informācijas par savu skaņu karti.</p>
  </item>
 </list>
+
+<comment>
+  <cite date="2012-02-19">shaunm</cite>
+  <p>Are we shipping any sort of device manager? If we do (or even if we
+  recommend one, but people need to install it), and if you can get all
+  the information you need about the sound card from that, we should
+  link to that for getting info on your sound card.</p>
+</comment>
 
 </page>

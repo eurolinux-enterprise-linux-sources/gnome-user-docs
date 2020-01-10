@@ -1,79 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-fixed-ip-address" xml:lang="sl">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="net-fixed-ip-address" xml:lang="sl">
   <info>
     <link type="guide" xref="net-wired"/>
     <link type="seealso" xref="net-findip"/>
 
     <revision pkgversion="3.4.0" date="2012-03-13" status="final"/>
-    <revision pkgversion="3.15" date="2014-12-04" status="final"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-    <revision pkgversion="3.24" date="2017-03-26" status="final"/>
 
     <credit type="author">
       <name>Jim Campbell</name>
       <email>jwcampbell@gmail.com</email>
     </credit>
-    <credit type="author">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-      <years>2014</years>
-    </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <desc>Uporaba statičnih naslovov IP vam lahko olajša zagotavljanje nekaterih omrežnih storitev z vašega računalnika.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
   <title>Ustvarite povezavo s stalnim naslovom IP</title>
 
-  <p>Večina omrežij bo samodejno dodelila <link xref="net-what-is-ip-address">naslov IP</link>  in druge podatke računalniku, ko se povežete v omrežje. Ti podatki se lahko občasno spremenijo, vendar boste morda želeli imeti določen naslov IP računalnika, tako da boste vedno vedeli, kakšen je njegov naslov (na primer, če je datotečni strežnik).</p>
+ <p>Večina omrežij bo samodejno dodelila <link xref="net-what-is-ip-address">naslov IP</link>  in druge podatke računalniku, ko se povežete v omrežje. Ti podatki se lahko občasno spremenijo, vendar boste morda želeli imeti določen naslov IP računalnika, tako da boste vedno vedeli, kakšen je njegov naslov (na primer, če je datotečni strežnik).</p>
+  <p>Da vašemu računalniku stalni (statični) naslov IP:</p>
 
-  <steps>
-    <title>Da vašemu računalniku stalni (statični) naslov IP:</title>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Network</gui>.</p>
-    </item>
-    <item>
-      <p>Click on <gui>Network</gui> to open the panel.</p>
-    </item>
-    <item>
-      <p>In the left pane, select the network connection that you want to have
-      a fixed address. If you plug in to the network with a cable, click
-      <gui>Wired</gui>, then click the
-      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media> button in the lower right corner of
-      the panel. For a <gui>Wi-Fi</gui> connection, the 
-      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
-      button will be located next to the active network.</p>
-    </item>
-    <item>
-      <p>Click on <gui>IPv4</gui> or <gui>IPv6</gui> in the left pane
-      and change the <gui>Addresses</gui> to <em>Manual</em>.</p>
-    </item>
-    <item>
-      <p>Type in the <gui xref="net-what-is-ip-address">IP Address</gui> and
-      <gui>Gateway</gui>, as well as the appropriate <gui>Netmask</gui>.</p>
-    </item>
-    <item>
-      <p>In the <gui>DNS</gui> section, switch <gui>Automatic</gui> to
-      <gui>OFF</gui>. Enter the IP address of a DNS server you want to use.
-      Enter additional DNS server addresses using the <gui>+</gui> button.</p>
-    </item>
-    <item>
-      <p>In the <gui>Routes</gui> section, switch <gui>Automatic</gui> to
-      <gui>OFF</gui>. Enter the <gui>Address</gui>, <gui>Netmask</gui>,
-      <gui>Gateway</gui> and <gui>Metric</gui> for a route you want to use.
-      Enter additional routes using the <gui>+</gui> button.</p>
-    </item>
-    <item>
-      <p>Click <gui>Apply</gui>. The network connection should now have a fixed
-      IP address.</p>
-    </item>
-  </steps>
+<steps>
+<item><p>Kliknite na <gui>ikono omrežje</gui> v <gui>vrhnji vrstici</gui> in izberite <gui>Nastavitve omrežja</gui>.</p></item>
+<item><p>Izberite omrežno povezavo s seznama (<gui>Žično</gui> ali <gui>Brezžično</gui>) in kliknite <gui>Nastavi</gui>.</p></item>
+<item><p>Kliknite na zavihek <gui>Nastavitve IPv4</gui> in spremenite <gui>Način</gui> v <em>Ročno</em>.</p></item>
+<item><p>V primeru da na seznamu <gui>Naslovi</gui> ni podatkov o povezavi ali če želite vzpostaviti novo povezavo, kliknite <gui>Dodaj</gui>.</p></item>
+<item><p>Vnesite <em>Naslove IP</em>, <em>Omrežno masko</em> in podatke <em>Prehoda</em> v ustrezna polja. Izbira teh nastavitev je odvisna od nastavitev vašega omrežja. Obstajajo določena pravila, ki določajo kateri naslovi IP in omrežne maske so veljavne za dano omrežje.</p></item>
+<item><p>Če je to potrebno, vnesite naslov <em>Strežnik imen domen</em> v polje <gui>Strežniki DNS</gui>. To je naslov IP strežnika, ki poišče imena domen. Večina podjetij in ponudnikov interneta ima namenske strežnike DNS.</p></item>
+<item><p>Kliknite <gui>Shrani</gui>. Omrežna povezava bi sedaj morala imeti stalni naslov IP.</p></item>
+</steps>
 
 </page>

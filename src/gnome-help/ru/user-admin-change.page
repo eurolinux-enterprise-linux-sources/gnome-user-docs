@@ -1,28 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="user-admin-change" xml:lang="ru">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="user-admin-change" xml:lang="ru">
 
   <info>
+
     <link type="guide" xref="user-accounts#privileges"/>
     <link type="seealso" xref="user-admin-explain"/>
 
+    <desc>Можно изменить то, кому из пользователей разрешено вносить изменения в систему, предоставив им административные полномочия.</desc>
+
     <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Проект документирования GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
-    <credit type="editor">
-      <name>Екатерина Герасимова (Ekaterina Gerasimova)</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>You can allow users to make changes to the system by giving them
-    administrative privileges.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Александр Прокудин</mal:name>
@@ -33,62 +26,47 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011-2012</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Станислав Соловей</mal:name>
-      <mal:email>whats_up@tut.by</mal:email>
-      <mal:years>2013-2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Юлия Дронова</mal:name>
-      <mal:email>juliette.tux@gmail.com</mal:email>
-      <mal:years>2013-2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Юрий Мясоедов</mal:name>
-      <mal:email>ymyasoedov@yandex.ru</mal:email>
-      <mal:years>2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
 
-  <title>Назначение административных полномочий</title>
+<title>Назначение административных полномочий</title>
 
-  <p>Administrative privileges are a way of deciding who can make changes to
-  important parts of the system. You can change which users have administrative
-  privileges and which ones do not. They are a good way of keeping your system
-  secure and preventing potentially damaging unauthorized changes.</p>
+  <p>Административные полномочия — это способ решить, кто может вносить изменения в важные части системы. Вы можете назначить, кто из пользователей должен иметь административные полномочия, а кто — не должен. Это хороший способ обеспечения безопасности системы и предотвращения потенциально вредоносных неавторизованных изменений.</p>
 
-  <p>Для изменения типа учётной записи нужны <link xref="user-admin-explain">права администратора</link>.</p>
+<steps>
+ <item>
+    <p>Click your name on the top bar, then click the picture next to your name
+ to open the <gui>Users</gui> window.</p>
+ </item>
 
-  <steps>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Users</gui>.</p>
-    </item>
-    <item>
-      <p>Click <gui>Users</gui> to open the panel.</p>
-    </item>
-    <item>
-      <p>Нажмите <gui style="button">Разблокировать</gui> в верхнем правом углу и затем по запросу системы введите свой пароль.</p>
-    </item>
-    <item>
-      <p>Выберите пользователя, полномочия которого вы хотите изменить.</p>
-    </item>
-    <item>
-      <p>Нажмите на надпись <gui>Обычный</gui> рядом с <gui>Типом учётной записи</gui> и выберите <gui>Администратор</gui>.</p>
-    </item>
-    <item>
-      <p>The user’s privileges will be changed when they next log in.</p>
-    </item>
-  </steps>
+ <item>
+  <p>Нажмите <gui>Разблокировать</gui> и введите свой пароль, чтобы разблокировать параметры учётных записей. (Чтобы дать пользователю административные полномочия, надо самому обладать ими).</p>
+ </item>
 
-  <note>
-    <p>Первый пользователь, созданный в системе, обычно обладает правами администратора. Это учётная запись пользователя, которая была создана в процессе установки системы.</p>
-    <p>Неразумно иметь в одной системе слишком много пользователей с полномочиями <gui>администратора</gui>.</p>
-  </note>
+ <item>
+  <p>Выберите пользователя, полномочия которого вы хотите изменить.</p>
+  </item>
 
+ <item><p>Щёлкните по надписи <gui>Обычный</gui> рядом с <gui>Тип учётной записи</gui> и выберите <gui>Администратор</gui>.</p>
+ </item>
+
+
+ <item>
+  <p>Закройте окно учётных записей. Полномочия пользователя изменятся при его следующем входе в систему.</p>
+  </item>
+</steps>
+
+<note>
+ <p>Первый пользователь в системе обычно обладает административными полномочиями. Это учётная запись пользователя, которая была создана в процессе установки системы.</p>
+ <p>Неразумно иметь в одной системе слишком много пользователей с полномочиями <gui>администратора</gui>.</p>
+</note>
+
+  <comment>
+   <cite date="2012-02-19" href="mailto:gnome-doc-list@gnome.org">GNOME
+ Documentation Project</cite>
+   <p>Explain how admin privileges can be given to other people, or removed.
+ Warn the reader about how it's unwise to have too many admins on a system.</p>
+  </comment>
+	
 </page>

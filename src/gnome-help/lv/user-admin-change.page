@@ -1,59 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="user-admin-change" xml:lang="lv">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="user-admin-change" xml:lang="lv">
 
   <info>
+
     <link type="guide" xref="user-accounts#privileges"/>
     <link type="seealso" xref="user-admin-explain"/>
 
+    <desc>Jūs varat noteikt, kuri lietotāji drīkst veikt izmaiņas sistēmā, piešķirot viņiem administratīvās tiesības.</desc>
+
     <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>GNOME dokumentācijas projekts</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Jūs varat ļaut lietotājiem veikt izmaiņas sistēmā, piešķirot viņiem administratīvās tiesības.</desc>
   </info>
 
-  <title>Piešķirt vai noņemt administratīvās tiesības</title>
+<title>Piešķirt vai noņemt administratīvās tiesības</title>
 
   <p>Administratīvās tiesības nosaka, kas var veikt izmaiņas sistēmas svarīgajās sastāvdaļās. Ir iespējams piešķirt un atņemt lietotājiem šādas tiesības. Šāda drošības sistēma aizsargā jūsu datoru un novērš neatļautas izmaiņas, kas varētu tam kaitēt.</p>
 
-  <p>Jums ir jābūt <link xref="user-admin-explain">administratora tiesībām</link>, lai mainītu kontu tipus.</p>
+<steps>
+ <item>
+    <p>Click your name on the top bar, then click the picture next to your name
+ to open the <gui>Users</gui> window.</p>
+ </item>
 
-  <steps>
-    <item>
-      <p>Atveriet <gui xref="shell-introduction#activities">Aktivitāšu</gui> pārskatu un sāciet rakstīt <gui>Lietotāji</gui>.</p>
-    </item>
-    <item>
-      <p>Spiediet <gui>Lietotāji</gui>, lai atvērtu paneli.</p>
-    </item>
-    <item>
-      <p>Spiediet pogu <gui style="button">Atslēgt</gui> un ievadiet savu  paroli.</p>
-    </item>
-    <item>
-      <p>Izvēlieties lietotāju, kura tiesības vēlaties mainīt.</p>
-    </item>
-    <item>
-      <p>Nospiediet <gui>Standarta</gui> laukā <gui>Konta tips</gui> un izvēlieties <gui>Administratora</gui>.</p>
-    </item>
-    <item>
-      <p>Lietotāja tiesības tiks mainītas nākamajā ierakstīšanās reizē.</p>
-    </item>
-  </steps>
+ <item>
+  <p>Spiediet <gui>Atslēgt</gui> un ievadiet savu paroli, lai atbloķētu konta iestatījumus. (Tikai lietotājs ar administratora tiesībām var piešķirt tās citam lietotājam.)</p>
+ </item>
 
-  <note>
-    <p>Parasti sistēmas pirmais lietotāja konts ir tas, kam ir administratora tiesības. Tas ir lietotāja konts, kas tika izveidots sistēmas instalēšanas laikā.</p>
-    <p>Nav ieteicams piešķirt <gui>Administratora</gui> tiesības pārāk daudziem lietotājiem vienā sistēmā.</p>
-  </note>
+ <item>
+  <p>Izvēlieties lietotāju, kura tiesības vēlaties mainīt.</p>
+  </item>
 
+ <item><p>Nospiediet <gui>Standarta</gui> laukā <gui>Konta tips</gui> un izvēlieties <gui>Administratora</gui>.</p>
+ </item>
+
+
+ <item>
+  <p>Aizveriet Lietotāju kontu logu. Lietotāja tiesības tiks izmainītas nākamajā ierakstīšanās reizē.</p>
+  </item>
+</steps>
+
+<note>
+ <p>Parasti sistēmas pirmais lietotāja konts ir tas, kam ir administratora tiesības. Tas ir lietotāja konts, kas tika izveidots sistēmas instalēšanas laikā.</p>
+ <p>Nav ieteicams piešķirt <gui>Administratora</gui> tiesības pārāk daudziem lietotājiem vienā sistēmā.</p>
+</note>
+
+  <comment>
+   <cite date="2012-02-19" href="mailto:gnome-doc-list@gnome.org">GNOME
+ Documentation Project</cite>
+   <p>Explain how admin privileges can be given to other people, or removed.
+ Warn the reader about how it's unwise to have too many admins on a system.</p>
+  </comment>
+	
 </page>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="reference" id="shell-terminology" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="shell-overview#desktop"/>
+
+    <desc>Ein Überblick über die zur Beschreibung von Bereichen des Arbeitsumgebung verwendeten Begriffe.</desc>
+
+    <revision pkgversion="3.8.0" version="0.4" date="2013-04-23" status="outdated"/>
+
+    <credit type="author">
+      <name>GNOME-Dokumentationsprojekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.to</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Aktivitäten, Dash, oberes Panel … was ist das?</title>
+
+<!-- THIS SHOULD BE ALPHABETICALLY SORTED… it is. -->
+
+<terms>
+ <item>
+  <title>Aktivitäten-Übersicht</title>
+  <p if:test="!platform:gnome-classic">The <em>activities overview</em> is the
+  screen that is displayed when you click <gui>Activities</gui> at the top
+  left of the screen.</p>
+  <p if:test="platform:gnome-classic">The <em>activities overview</em> is the
+  screen that is displayed when you select <gui>Activities Overview</gui> in
+  the <gui>Applications</gui> menu at the top left of the screen.</p>
+ </item>
+
+ <item if:test="platform:gnome-classic">
+  <title>Applications menu</title>
+  <p>You can find the <gui>Applications</gui> menu at the at the top left of
+  the screen. It gives you access to applications organized into categories.
+  The <em>activities overview</em> is available by selecting the <gui>Activities
+  Overview</gui> item from the menu.</p> 
+ </item>
+
+ <item>
+  <title>Super-Tab window switcher</title>
+  <p>When you hold down the <key xref="keyboard-key-super">Super</key> key and
+  then press <key>Tab</key>, a <em>window switcher</em> appears. This shows the
+  icons of the applications you have currently open.</p>
+ </item>
+
+ <item>
+  <title>Dash</title>
+  <p>Das <em>Dash</em> zeigt eine Liste Ihrer Lieblingsanwendungen an. Es wird an der linken Seite der Aktivitäten-Übersicht angezeigt. Aktuell ausgeführte Anwendungen werden hier ebenfalls dargestellt. Das Dash wird manchmal als <em>Dock</em> bezeichnet.</p>
+ </item>
+
+ <item>
+  <title>Hot Corner</title>
+  <p>Die <em>Hot Corner</em> ist die linke obere Ecke des Bildschirms. Wenn Sie den Mauszeiger dorthin bewegen, wird die Aktivitäten-Übersicht geöffnet.</p>
+ </item>
+
+ <item>
+  <title>Bildschirm sperren</title>
+  <p>Der <em>Sperrbildschirm</em> zeigt ein Bild auf dem Bildschirm an, während der Rechner gesperrt ist. Er stellt nützliche Informationen darüber bereit, was während Ihrer Abwesenheit geschehen ist und ermöglicht die Steuerung der Medienwiedergabe, ohne dass der Bildschirm entsperrt werden muss.</p>
+ </item>
+
+ <item>
+  <title>Benachrichtigungen</title>
+  <p><em>Notifications</em> are messages that pop up at the bottom of the
+  screen, telling you that something just happened. For example, when someone
+  chatting with you sends a message, a notification will pop up to tell you. If
+  you don't want to deal with a message right now, it is hidden in your
+  message tray. Move your mouse to the bottom-right corner (or press
+  <keyseq><key xref="keyboard-key-super">Super</key><key>M</key></keyseq>) to
+  see your message tray.</p>
+ </item>
+
+ <item if:test="platform:gnome-classic">
+  <title>Places menu</title>
+  <p>The <em>places menu</em> is opened when you click <gui>Places</gui>
+  on the <gui>top bar</gui>. It gives you quick access to important folders,
+  for example <gui>Downloads</gui> or <gui>Pictures</gui>.</p>
+ </item>
+
+ <item>
+  <title>Einstellungen</title>
+  <p>In den <em>Einstellungen</em> können Sie Einstellungen ändern, ähnlich wie in der Systemsteuerung in Windows oder den Systemeinstellungen in Mac OS. Klicken Sie auf Ihren Namen an der rechten Seite des oberen Panels und wählen Sie <gui>Einstellungen</gui>.</p>
+ </item>
+
+ <item>
+  <title>Oberes Panel</title>
+  <p if:test="!platform:gnome-classic">Das <em>obere Panel</em> ist eine Leiste, die sich am oberen Rand des Bildschirms erstreckt. Die <gui>Aktivitäten</gui>-Übersicht befindet sich am linken Ende des Panels und Ihr Benutzername am anderen Ende.</p>
+  <p if:test="platform:gnome-classic">The <em>top bar</em> is the bar that runs
+  along the very top of the screen. The <gui>Applications</gui> menu is on one
+  end of the top bar and your username is on the other.</p> 
+ </item>
+
+ <item>
+  <title>Arbeitsfläche </title>
+  <p>Sie können Fenster auf verschiedene <em>Arbeitsflächen</em> verteilen. Es gibt bequeme Möglichkeiten zum Gruppieren und Trennen von Fenstern.</p>
+ </item>
+
+ <item>
+  <title>Arbeitsflächenumschalter</title>
+  <p>Der <em>Arbeitsflächenumschalter</em> stellt eine Liste der Arbeitsflächen dar und wird an der rechten Seite der <gui>Fenster</gui>-Ansicht in der Aktivitäten-Übersicht angezeigt.</p>
+ </item>
+
+ <item if:test="platform:gnome-classic">
+  <title>Window list</title>
+  <p>The <em>window list</em> is the bar at the very bottom of the screen, which
+  shows buttons for all your open windows.</p>
+ </item>
+
+</terms>
+
+</page>

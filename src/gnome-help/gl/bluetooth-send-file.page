@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="bluetooth-send-file" xml:lang="gl">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="guide" style="task" id="bluetooth-send-file" xml:lang="gl">
 
   <info>
     <link type="guide" xref="bluetooth"/>
     <link type="guide" xref="sharing"/>
     <link type="seealso" xref="files-share"/>
 
-    <revision pkgversion="3.8" date="2013-05-16" status="review"/>
-    <revision pkgversion="3.10" date="2013-11-09" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.13" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.8.2" version="0.2" date="2013-05-16" status="review"/>
+
+    <desc>Compartir ficheiros entre dispositivos Bluetooth, como o seu teléfono.</desc>
 
     <credit type="author">
       <name>Jim Campbell</name>
@@ -24,56 +22,80 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-      <years>2014</years>
-    </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-      <years>2015</years>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Compartir ficheiros entre dispositivos Bluetooth, como o seu teléfono.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2018</mal:years>
+      <mal:years>2011, 2012.</mal:years>
     </mal:credit>
   </info>
 
-  <title>Enviar ficheiros a un dispositivo Bluetooth</title>
+  <title>Enviar un ficheiro a outro dispositivo Bluetooth</title>
 
-  <p>Pode enviar ficheiros aos dispositivos Bluetooth conectados, tales como algúns teléfonos móbiles ou outros equipos. Algúns tipos de dispositivos non permiten a transferencia de ficheiros, ou tipos de ficheiros específicos. Pode enviar ficheiros usando a xanela de preferencias de Bluetooth.</p>
+<if:choose>
+  <if:when test="platform:unity">
+    <p>Pode enviar ficheiros aos dispositivos Bluetooth conectados, tales como algúns teléfonos móviles ou outros equipos. Algúns tipos de dispositivos non permiten a transferencia de ficheiros, ou tipos de ficheiros específicos. Pode enviar ficheiros de tres formas distintas: usando a icona de Bluetooth na barra de menú, desde a xanela de configuración de Bluetooth ou directamente desde o xestor de ficheiros.</p>
+  </if:when>
+  <p>You can send files to connected Bluetooth devices, such as some mobile
+  phones or other computers. Some types of devices don't allow the transfer
+  of files, or specific types of files. You can send files using the Bluetooth
+  icon on the top bar, or from the Bluetooth settings window.</p>
+</if:choose>
+
+<comment>
+<cite date="2013-05-11" href="mailto:mdhillca@gmail.com">mdhill</cite>
+  <p>The functionality in the following line was temporarily removed in 3.8</p>
+  <p>To send files directly from the file manager, see <link xref="files-share"/>.</p>
+</comment>
+
+  <note style="important">
+    <p>Antes de comezar, asegúrese de que o Bluetooth está activado no seu equipo. Consulte a <link xref="bluetooth-turn-on-off"/>.</p>
+  </note>
 
   <steps>
+    <title>Enviar ficheiros usando a icona de Bluetooth</title>
     <item>
-      <p>Abra a vista de <gui xref="shell-introduction#activities">Actividades</gui> e comece a escribir <gui>Bluetooth</gui>.</p>
-    </item>
-    <item>
-      <p>Prema <gui>Bluetooth</gui> no lateral dereito.</p>
-    </item>
-    <item>
-      <p>Asegúrese que o Bluetooth está activado: o trocador da barra de título debería estar <gui>Desactivado</gui>.</p>
-    </item>
-    <item>
-      <p>Na lista de <gui>Dispositivos</gui>, seleccione o dispositivo ao que quere enviar ficheiros. Se o dispositivo desexado non se mostra como <gui>Conectado</gui> na lista, debe <link xref="bluetooth-connect-device">conectarse</link> a él.</p>
-      <p>Aparecerá un panel específico para o dispositivo externo.</p>
-    </item>
-    <item>
-      <p>Prema <gui>Enviar ficheiros…</gui> e aparecerá un selector de ficheiros.</p>
+      <if:choose>
+        <if:when test="platform:unity">
+      <p>Prema na icona de Bluetooth na barra de menú e prema <gui>Enviar ficheiros ao dispositivo</gui>.</p>
+        </if:when>
+      <p>Prema na icona de Bluetooth na barra superior e prema <gui>Enviar ficheiros ao dispositivo</gui>.</p>
+      </if:choose>
     </item>
     <item>
       <p>Prema co botón dereito sobre o nome do ficheiro e seleccione <gui>Mover ao lixo</gui>.</p>
       <p>Para enviar máis dun ficheiro nun cartafol, manteña pulsado <key>Ctrl</key> ao seleccionar cada ficheiro.</p>
     </item>
     <item>
-      <p>O propietario do dispositivo receptor normalmente ten que premer un botón para aceptar o ficheiro. Aparecerá un diálogo de <gui>Transferencia de ficheiros por Bluetooth</gui> que mostra unha barra de progreso. Prema <gui>Pechar</gui> cando se complete a transferencia.</p>
+      <p>Seleccione desde a lista o dispositivo ao que quere enviar os ficheiros e preme <gui>Enviar</gui>.</p>
+      <p>A lista de dispositivos mostrarase nos <link xref="bluetooth-connect-device">dispositivos aos que xa está conectado</link> e no rango dos <link xref="bluetooth-visibility">dispositivos visíbeis</link>. Se aínda non se conectou ao dispositivo seleccionado, pediráselle que se emparelle co dispositivo despois de premer <gui>Enviar</gui>. Probabelmente, isto requira unha confirmación no outro dispositivo.</p>
+      <p>Se hai varios dispositivos, pode limitar a lista para que só aparezan os dispositivos dun tipo específico usando o despregábel <gui>Tipo de dispositivo</gui></p>
+    </item>
+    <item>
+      <p>O propietario do dispositivo receptor normalmente ten que premer un botón para aceptar o ficheiro. Cando este acepte ou rexeite, o resultado da transferencia de ficheiros mostrarase na súa pantalla.</p>
     </item>
   </steps>
 
+  <steps>
+    <title>Enviar ficheiros desde a configuración de Bluetooth</title>
+    <item>
+      <if:choose>
+        <if:when test="platform:unity">
+          <p>Prema a icona de Bluetooth na barra de menú, e seleccione <gui>Configuracións de Bluetooth</gui>.</p>
+        </if:when>
+        <p>Prema a icona de Bluetooth no panel superior, e seleccione <gui>Configuracións de Bluetooth</gui>.</p>
+      </if:choose>
+    </item>
+    <item><p>Seleccione o dispositivo ao que enviar ficheiros na lista da esquerda. A lista só mostra os dispositivos aos que xa está conectado. Consulte a <link xref="bluetooth-connect-device"/>.</p></item>
+    <item><p>Na información do dispositivo, á dereita, prema <gui>Enviar ficheiros</gui>.</p></item>
+    <item>
+      <p>Prema co botón dereito sobre o nome do ficheiro e seleccione <gui>Mover ao lixo</gui>.</p>
+      <p>Para enviar máis dun ficheiro nun cartafol, manteña pulsado <key>Ctrl</key> ao seleccionar cada ficheiro.</p>
+    </item>
+    <item>
+      <p>O propietario do dispositivo receptor normalmente ten que premer un botón para aceptar o ficheiro. Cando este acepte ou rexeite, o resultado da transferencia de ficheiros mostrarase na súa pantalla.</p>
+    </item>
+  </steps>
 </page>

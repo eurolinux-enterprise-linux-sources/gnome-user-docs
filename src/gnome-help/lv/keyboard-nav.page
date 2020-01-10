@@ -6,8 +6,6 @@
     <link type="seealso" xref="shell-keyboard-shortcuts"/>
 
     <revision pkgversion="3.7.5" version="0.2" date="2013-02-23" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.20" date="2016-08-13" status="candidate"/>
 
     <credit type="author">
       <name>Michael Hill</name>
@@ -27,12 +25,18 @@
        <email>kittykat3756@gmail.com</email>
     </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
     <desc>Izmantojiet lietotnes un darbvirsmu bez peles</desc>
   </info>
 
   <title>Navigācija ar tastatūru</title>
+
+  <comment>
+    <cite date="2012-03-14" href="mailto:shaunm@gnome.org">Shaun McCance</cite>
+    <p>Do <em>NOT</em> use <code>ui:expanded</code> on this page. I know it's
+    tempting, but the target audience for this page is people who cannot use
+    a mouse, and having to expand sections when you're just figuring out how
+    to drive things with the keyboard is a burden.</p>
+  </comment>
 
   <p>Šī lapa apraksta navigāciju ar tastatūru cilvēkiem, kas nevar izmantot peli vai citu norādīšanas ierīci, vai arī kuri vēlas izmantot tastatūru cik daudz vien iespējams. Lai uzzinātu tastatūras saīsnes, kas ir noderīgas visiem lietotājiem skatiet <link xref="shell-keyboard-shortcuts"/>.</p>
 
@@ -53,6 +57,7 @@
     <td><p>Bultiņu taustiņi</p></td>
     <td>
       <p>Pārvietojiet izvēli starp vienumiem atsevišķā kontrolē, vai arī starp saistītu kontroļu kopām. Izmantojiet bultiņu taustiņus lai fokusētu pogas rīkjoslā, izvēlētos vienumus saraksta vai ikonu skatā, vai arī lai izvēlētos radio pogu no grupas.</p>
+      <p>Koka skatā izmantojiet bultiņu taustiņus par kreisi un labi lai sakļautu un izplestu vienumus ar bērniem.</p>
     </td>
   </tr>
   <tr>
@@ -62,7 +67,6 @@
   <tr>
     <td><p><keyseq><key>Shift</key>Bultiņu taustiņi</keyseq></p></td>
     <td><p>Saraksta vai ikonu skatā izvēlieties visus vienumus no pašreiz izvēlētā vienuma līdz fokusētajam.</p></td>
-    <td><p>Koka skatā var sakļaut un izvērst vienumus, kuriem ir bērni, lai parādītu vai slēptu to bērnus — izvērsiet, spiežot <keyseq><key>Shift</key><key>→</key></keyseq>, un sakļaujiet, spiežot <keyseq><key>Shift</key><key>←</key></keyseq>.</p></td>
   </tr>
   <tr>
     <td><p><key>Atstarpe</key></p></td>
@@ -85,11 +89,13 @@
     <td><p>Atvērt pirmo izvēlni loga izvēlņu joslā. Izmantojiet bultiņu taustiņus, lai pārvietotos par tām.</p></td>
   </tr>
   <tr>
-    <td><p><keyseq><key xref="keyboard-key-super">Super</key> <key>F10</key></keyseq></p></td>
+    <td><p><keyseq><key xref="keyboard-key-super">Super</key>
+    <key>F10</key></keyseq></p></td>
     <td><p>Atveriet lietotnes izvēlni augšējā joslā.</p></td>
   </tr>
   <tr>
-    <td><p><keyseq><key>Shift</key><key>F10</key></keyseq> vai <key xref="keyboard-key-menu">Izvēlne</key></p></td>
+    <td><p><keyseq><key>Shift</key><key>F10</key></keyseq> or
+    <key xref="keyboard-key-menu">Menu</key></p></td>
     <td>
       <p>Parādīt uznirstošo izvēlni šī brīža izvēlei, tā kā jūs būtu veicis klikšķi ar labo peles taustiņu.</p>
     </td>
@@ -121,7 +127,8 @@
   </tr>
   <tr>
     <td><p><keyseq><key>Super</key><key>M</key></keyseq></p></td>
-    <td><p><link xref="shell-notifications#messagetray">Atvērt ziņojumu paplāti.</link> Spiediet taustiņu <key>Esc</key>, lai aizvērtu.</p></td>
+    <td><p><link xref="shell-notifications#messagingtray">Open the message tray.</link>
+     Press <key>Esc</key> to close.</p></td>
   </tr>
 </table>
 
@@ -132,8 +139,9 @@
     <td><p>Aizvērt aktīvo logu.</p></td>
   </tr>
   <tr>
-    <td><p><keyseq><key>Alt</key><key>F5</key></keyseq> vai <keyseq><key>Super</key><key>↓</key></keyseq></p></td>
-    <td><p>Atjaunot maksimizēta loga iepriekšējo izmēru. Izmantojiet <keyseq><key>Alt</key><key>F10</key></keyseq>, lai maksimizētu vai atjaunotu loga izmēru.</p></td>
+    <td><p><keyseq><key>Alt</key><key>F5</key></keyseq> or
+    <keyseq><key>Super</key><key>↓</key></keyseq></p></td>
+    <td><p>Atjaunot maksimizēta loga iepriekšējo izmēru. Izmantojiet <keyseq><key>Alt</key> <key>F10</key></keyseq>, lai maksimizētu vai atjaunotu loga izmēru.</p></td>
   </tr>
   <tr>
     <td><p><keyseq><key>Alt</key><key>F7</key></keyseq></p></td>
@@ -144,24 +152,32 @@
     <td><p>Mainīt pašreizējā loga izmērus. Spiediet <keyseq><key>Alt</key><key>F8</key></keyseq>, lai izmantotu bultiņu taustiņus loga izmēru mainīšanai. Spiediet <key>Enter</key>, lai pabeigtu loga izmēru mainīšanu, vai arī <key>Esc</key>, lai atgrieztu to sākotnējos izmēros.</p></td>
   </tr>
   <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-updown"/>
-  <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-left"/>
-  <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-right"/>
   <tr>
-    <td><p><keyseq><key>Alt</key><key>F10</key></keyseq> vai <keyseq><key>Super</key><key>↑</key></keyseq></p>
+    <td><p><keyseq><key>Alt</key><key>F10</key></keyseq> or
+    <keyseq><key>Super</key><key>↑</key></keyseq></p>
     </td>
-    <td><p><link xref="shell-windows-maximize">Maksimizēt</link> logu. Spiediet <keyseq><key>Alt</key><key>F10</key></keyseq> vai <keyseq><key>Super</key><key>↓</key></keyseq>, lai atjaunotu maksimizēto logu tā sākotnējos izmēros.</p></td>
+    <td><p><link xref="shell-windows-maximize">Maximize</link> a window. Press
+    <keyseq><key>Alt</key><key>F10</key></keyseq> or
+    <keyseq><key>Super</key><key>↓</key></keyseq> to
+    restore a maximized window to its original size.</p></td>
   </tr>
   <tr>
     <td><p><keyseq><key>Super</key><key>H</key></keyseq></p></td>
-    <td><p>Minimizēt logu.</p></td>
+    <td><p>Minimize a window.</p></td>
   </tr>
   <tr>
     <td><p><keyseq><key>Super</key><key>←</key></keyseq></p></td>
-    <td><p>Maksimizēt logu pa vertikāli kreisajā pusē ekrānam. Spiediet atkal lai atgrieztu logu tā sākotnējos izmēros. Spiediet <keyseq><key>Super</key><key>→</key></keyseq>, lai mainītu puses.</p></td>
+    <td><p>Maximize a window vertically along the left side of the screen.
+    Press again to restore the window to its previous size. Press
+    <keyseq><key>Super</key><key>→</key></keyseq> to switch
+    sides.</p></td>
   </tr>
   <tr>
     <td><p><keyseq><key>Super</key><key>→</key></keyseq></p></td>
-    <td><p>Maksimizēt logu pa vertikāli labajā pusē ekrānam. Spiediet atkal lai atgrieztu logu tā sākotnējos izmēros. Spiediet <keyseq><key>Super</key><key>←</key></keyseq>, lai mainītu puses.</p></td>
+    <td><p>Maximize a window vertically along the right side of the screen.
+    Press again to restore the window to its previous size. Press
+    <keyseq><key>Super</key><key>←</key></keyseq> to
+    switch sides.</p></td>
   </tr>
   <tr>
     <td><p><keyseq><key>Alt</key><key>Atstarpe</key></keyseq></p></td>

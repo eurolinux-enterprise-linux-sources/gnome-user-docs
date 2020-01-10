@@ -4,22 +4,19 @@
   <info>
     <link type="guide" xref="printing#paper"/>
 
+    <desc>Упорядочивание копий и обратный порядок печати страниц.</desc>
+
     <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Фил Булл (Phil Bull)</name>
       <email>philbull@gmail.com</email>
     </credit>
     <credit type="author">
-      <name>Джим Кэмпбелл (Jim Campbell)</name>
+      <name>Jim Campbell</name>
       <email>jwcampbell@gmail.com</email>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Упорядочивание копий и обратный порядок печати страниц.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Александр Прокудин</mal:name>
@@ -30,70 +27,32 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011-2012</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Станислав Соловей</mal:name>
-      <mal:email>whats_up@tut.by</mal:email>
-      <mal:years>2013-2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Юлия Дронова</mal:name>
-      <mal:email>juliette.tux@gmail.com</mal:email>
-      <mal:years>2013-2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Юрий Мясоедов</mal:name>
-      <mal:email>ymyasoedov@yandex.ru</mal:email>
-      <mal:years>2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
 
-  <title>Печать страниц в другом порядке</title>
+<title>Печать страниц в другом порядке</title>
 
-  <section id="reverse">
-    <title>Наоборот</title>
+<section id="reverse">
+ <title>Наоборот</title>
+ <p>Принтеры обычно печатают страницы, начиная с первой и заканчивая последней, так что распечатанные страницы оказываются сложенными в стопку в обратном порядке. При необходимости можно изменить порядок печати.</p>
+ <p>Чтобы изменить порядок печати:</p>
+ <steps>
+  <item><p>Щёлкните <guiseq><gui>Файл</gui><gui>Печать</gui></guiseq>.</p></item>
+  <item><p>На вкладке <gui>Общие</gui> окна печати в группе параметров <em>Копии</em> активируйте параметр <gui>Наоборот</gui>. Теперь сначала будет распечатываться последняя страница и так далее.</p></item>
+ </steps>
+</section>
 
-    <p>Принтеры обычно печатают страницы, начиная с первой и заканчивая последней, так что распечатанные страницы оказываются сложенными в стопку в обратном порядке. При необходимости можно изменить порядок печати.</p>
+<section id="collate">
+ <title>Упорядочить</title>
+ <p>При печати нескольких копий документа распечатанные листы по умолчанию группируются по номеру страницы (то есть, все копии первой страницы, затем все копии второй страницы, и так далее). Параметр <em>Упорядочить</em> позволяет вместо этого сгруппировать все страницы каждой копии документа.</p>
 
-    <steps>
-      <title>Чтобы изменить порядок печати:</title>
-      <item>
-        <p>Press <keyseq><key>Ctrl</key><key>P</key></keyseq> to open the Print
-        dialog.</p>
-      </item>
-      <item>
-        <p>In the <gui>General</gui> tab, under <gui>Copies</gui>, check
-        <gui>Reverse</gui>. The last page will be printed first, and so on.</p>
-      </item>
-    </steps>
-
-  </section>
-
-  <section id="collate">
-    <title>Упорядочить</title>
-
-  <p>If you are printing more than one copy of the document, the print-outs
-  will be grouped by page number by default (that is, all of the copies of page
-  one come out, then the copies of page two, and so on). <em>Collating</em>
-  will make each copy come out with its pages grouped together in the right
-  order instead.</p>
-
-  <steps>
-    <title>To collate:</title>
-    <item>
-     <p>Press <keyseq><key>Ctrl</key><key>P</key></keyseq> to open the Print
-     dialog.</p>
-    </item>
-    <item>
-      <p>In the <gui>General</gui> tab, under <gui>Copies</gui>, check
-      <gui>Collate</gui>.</p>
-    </item>
-  </steps>
-
+ <p>Чтобы упорядочить копии:</p>
+ <steps>
+  <item><p>Щёлкните <guiseq><gui>Файл</gui><gui>Печать</gui></guiseq>.</p></item>
+  <item><p>На вкладке <gui>Общие</gui> окна печати в группе параметров <em>Копии</em> активируйте <gui>Упорядочить</gui>.</p></item>
+ </steps>
+ <!-- Need to add this image <media type="image" src="figures/reverse-collate.png"/> -->
 </section>
 
 </page>

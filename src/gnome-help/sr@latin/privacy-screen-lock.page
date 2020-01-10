@@ -5,12 +5,10 @@
     <link type="guide" xref="privacy"/>
     <link type="seealso" xref="session-screenlocks"/>
     <link type="seealso" xref="shell-exit#lock-screen"/>
-
     <revision pkgversion="3.8" date="2013-05-21" status="candidate"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-30" status="final"/>
 
+    <desc>Prevent other people from using your desktop when you
+    go away from your computer.</desc>
     <credit type="author">
       <name>Šon Mek Kens</name>
       <email>shaunm@gnome.org</email>
@@ -24,38 +22,35 @@
       <email>jwcampbell@gmail.com</email>
       <years>2013</years>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Ne dozvolite drugima da koriste vašu radnu površ kada se udaljite od vašeg računara.</desc>
   </info>
 
-  <title>Samostalno zaključajte vaš ekran</title>
+  <title>Automatically lock your screen</title>
   
-  <p>Kada se udaljite od vašeg računara, trebali biste da <link xref="shell-exit#lock-screen">zaključate ekran</link> kako drugi nebi mogli da koriste vašu radnu površ i da pristupe vašim datotekama. Ako vam se desi da nekad zaboravite da zaključate ekran, možda ćete poželeti da se ekran vašeg računara sam zaključa nakon određenog vremena. To će vam pomoći da osigurate vaš računar kada ga ne koristite.</p>
+  <p>When you leave your computer, you should
+  <link xref="shell-exit#lock-screen">lock the screen</link> to prevent
+  other people from using your desktop and accessing your files. If you
+  sometimes forget to lock your screen, you may wish to have your computer's
+  screen lock automatically after a set period of time. This will help to
+  secure your computer when you aren't using it.</p>
 
-  <note><p>Kada je vaš ekran zaključan, vaši programi i sistemski procesi će nastaviti da rade, ali vi ćete morati da unesete vašu lozinku da biste ponovo počeli da ih koristite.</p></note>
+  <note><p>When your screen is locked, your applications and system processes
+  will continue to run, but you will need to enter your password to begin using
+  them again.</p></note>
   
   <steps>
-    <title>Da postavite vreme nakon koga će se vaš ekran sam zaključati:</title>
-    <item>
-      <p>Otvorite pregled <gui xref="shell-introduction#activities">Aktivnosti</gui> i počnite da kucate <gui>Privatnost</gui>.</p>
-    </item>
-    <item>
-      <p>Kliknite na <gui>Privatnost</gui> da otvorite panel.</p>
-    </item>
-    <item>
-      <p>Izaberite <gui>Zaključaj ekran</gui>.</p>
-    </item>
-    <item>
-      <p>Uverite se da je <gui>Sam zaključaj ekran</gui> prebačeno na <gui>UKLJ.</gui>, zatim izaberite vremenski period iz padajućeg spiska.</p>
-    </item>
+    <title>To set the length of time before your screen locks
+    automatically:</title>
+    <item><p>Kliknite na vaše ime na gornjoj traci i izaberite <gui>Podešavanja</gui>.</p></item>
+    <item><p>Select <guiseq><gui>Privacy</gui><gui>Screen Lock</gui></guiseq>.
+    </p></item>
+    <item><p>Make sure <gui>Automatic Screen Lock</gui> is switched on, then
+    select a length of time from the drop-down list.</p></item>
   </steps>
 
-  <note style="tip">
-    <p>Programi mogu da vam prikažu obaveštenja čak i na zaključanom ekranu. Na ovaj način možete, na primer, da vidite da li vam je pristigla pošta a da ne otključate ekran. Ako se brinete da neko drugi može da vidi ova obaveštenja, isključite <gui>prikazivanje obaveštenja</gui>.</p>
-  </note>
-
-  <p>Kada je vaš ekran zaključan, a želite da ga otključate, pritisnite <key>Esc</key>, ili prevucite mišem po ekranu od dna na gore. Zatim unesite vašu lozinku, i pritisnite <key>Unesi</key> ili kliknite na <gui>Otključaj</gui>. Drugačije, jednostavno počnite da kucate vašu lozinku a zastor katanca će biti samostalno podignut kako budete kucali.</p>
+  <p>When your screen is locked, and you want to unlock it, press
+  <key>Esc</key>, or swipe up from the bottom of your screen with your mouse.
+  Then enter your password, and press <key>Enter</key> or click
+  <gui>Unlock</gui>.</p>
 
 </page>

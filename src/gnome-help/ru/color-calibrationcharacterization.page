@@ -22,40 +22,28 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011-2012</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Станислав Соловей</mal:name>
-      <mal:email>whats_up@tut.by</mal:email>
-      <mal:years>2013-2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Юлия Дронова</mal:name>
-      <mal:email>juliette.tux@gmail.com</mal:email>
-      <mal:years>2013-2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Юрий Мясоедов</mal:name>
-      <mal:email>ymyasoedov@yandex.ru</mal:email>
-      <mal:years>2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
 
-  <title>What’s the difference between calibration and characterization?</title>
+  <title>В чём разница между калибровкой и профилированием?</title>
   <p>Многие поначалу путают два этих принципиально разных, хотя и взаимосвязанных процесса. Калибровкой является изменение цветового поведения устройства. Это как правило достигается двумя способами:</p>
   <list>
-    <item><p>Изменением внутренних настроек устройства</p></item>
-    <item><p>Применением кривых к цветовым каналам устройства</p></item>
+    <item><p>изменением внутренних настроек устройства;</p></item>
+    <item><p>применением кривых к цветовым каналам устройства.</p></item>
   </list>
-  <p>Идея калибровки состоит в приведении устройства к некоторому точно известному состоянию применительно к цветопередаче. Часто она используется как повседневное средство поддержки воспроизводимого поведения. Как правило, калибровка хранится в специфичном для устройства или системы формате файлов, куда записаны либо его настройки, либо поканальные корректирующие кривые.</p>
+  <p>
+    The idea of calibration is to put a device in a defined state with regard
+    to its color response.
+    Often this is used as a day to day means of maintaining reproducible behavior.
+    Typically calibration will be stored in device or systems specific file
+    formats that record the device settings or per-channel calibration curves.
+  </p>
   <p>Профилированием (иначе, характеризацией) называется <em>запись</em> того, как устройство воспроизводит цвет или откликается на него. Результат профилирования как правило сохраняется в файле профиля ICC для этого устройства. Такой профиль сам ничего не меняет, а лишь позволяет системному модулю управления цветом или отдельному приложению изменить цвета при условии использования профиля другого устройства. Достоверно перенести цвет с одного устройства на другое можно лишь обладая актуальным цветовым профилем для каждого из них.</p>
   <note>
     <p>
       Note that a characterization (profile) will only be valid for a device
-      if it’s in the same state of calibration as it was when it was
+      if it's in the same state of calibration as it was when it was
       characterized.
     </p>
   </note>

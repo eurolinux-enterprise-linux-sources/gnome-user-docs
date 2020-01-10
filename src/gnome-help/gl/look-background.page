@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="look-background" xml:lang="gl">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="look-background" xml:lang="gl">
 
   <info>
     <link type="guide" xref="prefs-display"/>
 
     <revision pkgversion="3.8.0" version="0.3" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-07" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <desc>Como estabelecer unha imaxe como fondo de escritorio</desc>
 
     <credit type="author">
       <name>Proxecto de documentación de GNOME</name>
@@ -32,67 +32,32 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Shobha Tyagi</name>
-      <email>tyagishobha@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Estabelecer unha imaxe, cor ou gradiente como o seu fondo de escritorio ou fondo de pantalla de bloqueo.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2018</mal:years>
+      <mal:years>2011, 2012.</mal:years>
     </mal:credit>
   </info>
 
-  <title>Cambiar o fondo de escritorio e da pantalla de bloqueo</title>
+<title>Cambiar o fondo do escritorio</title>
 
-  <p>Pode cambiar a imaxe usada como fondo de escritorio ou estabelecer un cor sólido.</p>
+<p>Pode cambiar a imaxe usada como fondo de escritorio ou estabelecer un cor simple ou degradado.</p>
 
-  <steps>
-    <item>
-      <p>Abra a vista de <gui xref="shell-introduction#activities">Actividades</gui> e comece a escribir <gui>Fondo de escritorio</gui>.</p>
-    </item>
-    <item>
-      <p>Prema <gui>Fondos</gui> para abrir o panel.</p>
-    </item>
-    <item>
-      <p>Seleccione <gui>Fondo de escritorio</gui> ou <gui>Pantalla de bloqueo</gui>.</p>
-    </item>
-    <item>
-      <p>Existen tres opcións mostrados arriba:</p>
-      <list>
-        <item>
-          <p>Seleccione <gui>Fondos de escritorio</gui> para usar unha das moitas imaxes de fondo profesionais coas que se distribúe GNOME. Algúns fondos de escritorio cambian ao largo do dia. Estos fondos terán unha pequena icona de reloxo na esquina inferior dereita.</p>
-        </item>
-        <item>
-          <p>Select <gui>Pictures</gui> to use one of your own photos from your
-          <file>Pictures</file> folder. Most photo management applications
-          store photos there. If you would like to use an image that is not in
-          your Pictures folder, either use <app>Files</app> by right-clicking
-          on the image file and selecting <gui>Set as Wallpaper</gui>, or
-          <app>Image Viewer</app> by opening the image file, clicking the
-          menu button in the titlebar and selecting <gui>Set as
-          Wallpaper</gui>.</p>
-        </item>
-        <item>
-          <p>Select <gui>Colors</gui> to just use a flat color.</p>
-        </item>
-      </list>
-    </item>
-    <item>
-      <p>As preferencias aplícanse inmediatamente</p>
-    </item>
-    <item>
-      <p><link xref="shell-workspaces-switch">Cambie a un espazo de traballo baleiro</link> para ver o escritorio completo.</p>
-    </item>
-  </steps>
+<steps>
+  <item><p>Prema sobre o nome da barra de enderezos e seleccione <gui>Preferencias</gui>.</p></item>
+  <item><p>Prema <gui>Fondo de pantalla</gui>.</p></item>
+  <item><p>Prema na imaxe do seu fondo de escritorio actual no centro.</p></item>
+<item><p>Existen tres opcións mostrados arriba:</p>
+<list>
+  <item><p>Seleccione <gui>Fondos de escritorio</gui> para usar unha das moitas imaxes de fondo profesionais coas que se distribúe GNOME. Algúns fondos de escritorio son parcialmente transparentes e permiten mostrar unha cor de fondo a través de eles. Para eses fondos de escritorio, existirá un botón de selección de cor na esquina inferior dereita.</p></item>
+  <item><p>Seleccione <gui>Imaxes</gui> para usar unha das súas fotos desde o cartafol Imaxes. A maoiría dos aplicativos de xestión de fotos almacenan as fotos alí. Se quere usar unha imaxe que non está no seu cartafol de imaxes, pode usar <app>Ficheiros</app> premendo co botón dereito sobre o ficheiro da imaxe e seleccionando <gui>Estabelecer como fondo de pantalla</gui>, ou <app>Visor de imaxes</app> abrindo o ficheiro de imaxe e seleccionando <guiseq><gui>Imaxe</gui><gui>Estabelecer como Fondo de escritorio</gui></guiseq>.</p></item>
+  <item><p>Seleccione <gui>Cores</gui> para axustar un cor plano ou un degradado lineal.</p></item>
+</list>
+</item>
+  <item><p>As preferencias aplícanse inmediatamente</p></item>
+  <item><p><link xref="shell-workspaces-switch">Cambie a un espazo de traballo baleiro</link> para ver o escritorio completo.</p></item>
+</steps>
 
 </page>

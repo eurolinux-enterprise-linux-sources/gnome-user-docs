@@ -1,26 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-manual" xml:lang="fr">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="net-manual" xml:lang="fr">
   <info>
     <link type="guide" xref="net-wired"/>
     <link type="guide" xref="net-wireless"/>
 
     <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
-    <revision pkgversion="3.10" date="2013-11-11" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-    <revision pkgversion="3.28" date="2018-03-28" status="review"/>
 
     <credit type="author">
       <name>Phil Bull</name>
       <email>philbull@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
 
-    <desc>You may have to enter network settings if they don’t get assigned
-    automatically.</desc>
+    <desc>Si les paramètres réseau ne sont pas définis automatiquement, vous pourriez avoir à les saisir vous-même.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -38,13 +29,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Julien Hardelin</mal:name>
       <mal:email>jhardlin@orange.fr</mal:email>
-      <mal:years>2011, 2013</mal:years>
+      <mal:years>2011</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -70,64 +61,40 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Alexandre Franke</mal:name>
-      <mal:email>alexandre.franke@gmail.com</mal:email>
-      <mal:years>2015</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Configuration manuelle des paramètres réseau</title>
+<title>Configuration manuelle des paramètres réseau</title>
 
-  <p>If your network doesn’t automatically assign network settings to your
-  computer, you may have to manually enter the settings yourself. This topic
-  assumes that you already know the correct settings to use. If not, you may
-  need to ask your network administrator or look at the settings of your router
-  or network switch.</p>
+<p>Si votre réseau n'attribue pas automatiquement ses paramètres à votre ordinateur, vous devez les entrer manuellement vous-même. Ce tutoriel suppose que vous savez déjà quels sont les paramètres exacts à utiliser. Sinon, vous devez les demander à votre administrateur réseau ou rechercher les paramètres de votre routeur ou commutateur réseau.</p>
 
-  <steps>
-    <title>Pour configurer manuellement vos paramètres réseau :</title>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui>
-      overview and start typing <gui>Settings</gui>.</p>
-    </item>
-    <item>
-      <p>Click on <gui>Settings</gui>.</p>
-    </item>
-    <item>
-      <p>In the left pane, select the network connection that you want to set
-      up manually. If you plug in to the network with a cable, click
-      <gui>Network</gui>. Otherwise click <gui>Wi-Fi</gui>.</p>
-      <p>Vérifiez que votre carte sans fil est allumée, ou qu'un câble réseau est connecté.</p>
-    </item>
-    <item>      
-      <p>Click the
-      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
-      button.</p>
-      <note>
-        <p>For a <gui>Wi-Fi</gui> connection, the 
-        <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
-        button will be located next to the active network.</p>
-      </note>
-    </item>
-    <item>
-      <p>Click on <gui>IPv4</gui> or <gui>IPv6</gui> in the left pane
-      and change the <gui>Addresses</gui> to <em>Manual</em>.</p>
-    </item>
-    <item>
-      <p>Type in the <gui xref="net-what-is-ip-address">IP Address</gui> and
-      <gui>Gateway</gui>, as well as the appropriate <gui>Netmask</gui>.</p>
-    </item>
-    <item>
-      <p>Dans la partie <gui>DNS</gui>, basculer l'interrupteur <gui>Automatique</gui> sur <gui>Désactivé</gui>. Saisissez l'adresse du serveur DNS que vous souhaitez utiliser. Ajoutez d'autres adresses de serveurs DNS à l'aide du bouton <gui>+</gui>.</p>
-    </item>
-    <item>
-      <p>Dans la partie <gui>Routes par défaut</gui>, basculer l'interrupteur <gui>Automatique</gui> sur <gui>Désactivé</gui>. Saisissez l'<gui>Addresse</gui>, le <gui>Masque réseau</gui>, la <gui>Passerelle</gui> pour la route que vous souhaitez utiliser. Ajouter des routes supplémentaires à l'aide du bouton <gui>+</gui>.</p>
-    </item>
-    <item>
-      <p>Cliquez sur <gui>Appliquer</gui>. Si vous n'êtes pas connecté au réseau, cliquez sur l'icône réseau de la barre supérieure et connectez-vous. Testez les paramètres réseau en essayant d'aller sur un site Web ou en vous connectant au partage de fichiers du réseau, par exemple.</p>
-    </item>
-  </steps>
+<steps>
+  <title>Pour configurer manuellement vos paramètres réseau :</title>
+ <item>
+  <p>Cliquez sur l'icône réseau de la barre supérieure et sélectionnez <gui>Paramètres du réseau</gui>.</p>
+ </item>
+
+ <item>
+  <p>Sélectionnez la connexion réseau que vous souhaitez configurer manuellement et cliquez sur <gui>Configurer</gui>. Par exemple, si vous êtes connecté au réseau par un câble, regardez dans <gui>Filaire</gui>.</p>
+  <p>Vérifiez que votre carte sans fil est allumée, ou qu'un câble réseau est connecté. Sinon, vous ne pourrez pas cliquer sur <gui>Configurer</gui>.</p>
+ </item>
+
+ <item>
+  <p>Ouvrez l'onglet <gui>Paramètres IPv4</gui> et modifiez la <gui>Méthode</gui> sur <gui>Manuel</gui>.</p>
+ </item>
+
+ <item>
+  <p>Cliquez sur <gui>Ajouter</gui>, saisissez l'<gui>adresse IP</gui>, le <em>masque de réseau</em> et l'<em>adresse IP de la passerelle par défaut</em>dans les colonnes correspondantes de la liste des <gui>Adresses</gui>. Appuyez à chaque fois sur <key>Entrée</key> ou sur <key>Tab</key> pour valider chaque adresse.</p>
+  <p>Ces trois adresses doivent être des adresses IP ; c'est-à-dire qu'elles doivent se composer de quatre nombres séparés par des points (comme 123.45.6.78).</p>
+ </item>
+
+ <item>
+  <p>Saisissez les adresses IP des serveurs DNS que vous souhaitez utiliser dans les champs correspondants, en les séparant par des virgules.</p>
+ </item>
+
+ <item>
+  <p>Cliquez sur <gui>Enregistrer</gui>. Si vous n'êtes pas connecté au réseau, cliquez sur l'icône réseau de la barre supérieure et connectez-vous. Testez les paramètres réseau en essayant d'aller sur un site Web ou en vous connectant au partage de fichiers du réseau, par exemple.</p>
+ </item>
+
+</steps>
 
 </page>

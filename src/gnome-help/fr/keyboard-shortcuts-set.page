@@ -1,38 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" version="1.0 ui/1.0" id="keyboard-shortcuts-set" xml:lang="fr">
-
+<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" id="keyboard-shortcuts-set" xml:lang="fr">
   <info>
     <link type="guide" xref="keyboard"/>
     <link type="seealso" xref="shell-keyboard-shortcuts"/>
 
     <revision pkgversion="3.8.0" version="0.3" date="2013-03-23" status="review"/>
-    <revision pkgversion="3.9.92" date="2013-10-11" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.17.90" date="2015-08-30" status="candidate"/>
 
     <credit type="author">
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="author">
-      <name>Julita Inca</name>
-      <email>yrazes@gmail.com</email>
+       <name>Julita Inca</name>
+       <email>yrazes@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Juanjo Marín</name>
       <email>juanj.marin@juntadeandalucia.es</email>
     </credit>
-    <credit type="editor">
-      <name>Shobha Tyagi</name>
-      <email>tyagishobha@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
     <desc>Définir ou modifier les raccourcis clavier dans les paramètres <gui>Clavier</gui>.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -50,13 +35,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Julien Hardelin</mal:name>
       <mal:email>jhardlin@orange.fr</mal:email>
-      <mal:years>2011, 2013</mal:years>
+      <mal:years>2011</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -82,34 +67,38 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Alexandre Franke</mal:name>
-      <mal:email>alexandre.franke@gmail.com</mal:email>
-      <mal:years>2015</mal:years>
-    </mal:credit>
   </info>
 
   <title>Définition de raccourcis clavier</title>
+
+  <comment>
+    <cite date="2012-02-19" href="mailto:shaunm@gnome.org">Shaun McCance</cite>
+    <p>Define shortcuts, using Shortcuts tab in Keyboard settings. Provide
+    reference for what everything is (can group for conciseness). Explain
+    custom shortcuts.</p>
+    <p>Important: the window says "To edit a shortcut, click the row and hold
+    down the new keys or press Backspace to clear." This is actually wrong.
+    You have to click the row, then click again on the shortcut within the
+    row. File bug against control-center about the faulty message (or better,
+    about the confusing interaction), but make sure to explain correctly in
+    the help regardless.</p>
+  </comment>
 
 <p>Pour modifier la ou les touches d'un raccourci clavier :</p>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Keyboard</gui>.</p>
+	<p>Click your name on the top bar and select <gui>Settings</gui>.</p></item>
+    <item><p>Ouvrez <gui>Clavier</gui> et sélectionnez l'onglet <gui>Raccourcis</gui>.</p>
     </item>
     <item>
-      <p>Cliquez sur <gui>Clavier</gui> pour ouvrir le panneau.</p>
+      <p>Select a category in the left pane, and the row for the desired action
+      on the right. The current shortcut definition will change to
+      <gui>New accelerator...</gui></p>
     </item>
     <item>
-      <p>Cliquez sur l'onglet <gui>Raccourcis</gui>.</p>
-    </item>
-    <item>
-      <p>Sélectionnez une catégorie dans le panneau de gauche, et le rang pour l'action désirée à droite. La définition du raccourci actuel devient <gui>Nouvel Accélérateur…</gui>.</p>
-    </item>
-    <item>
-      <p>Effectuez la combinaison de touches désirée ou appuyez sur <key>Retour Arrière</key> pour l'effacer.</p>
+      <p>Hold down the desired key combination, or press <key>Backspace</key> to
+      clear.</p>
     </item>
   </steps>
 
@@ -126,23 +115,23 @@
   </tr>
   <tr>
 	<td><p>Lancer la calculatrice</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-calculator.svg"> <key>Calculator</key> key symbol</media> or <key>Calculator</key></p></td>
+	<td><p>Calculatrice</p></td>
   </tr>
   <tr>
 	<td><p>Démarrer le client de messagerie</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-mail.svg"> <key>Mail</key> key symbol</media> or <key>Mail</key></p></td>
+	<td><p>Courriel</p></td>
   </tr>
   <tr>
 	<td><p>Démarrer le navigateur Web</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-world.svg"> <key>WWW</key> key symbol</media> or <media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-home.svg"> <key>WWW</key> key symbol</media> or <key>WWW</key></p></td>
+	<td><p>WWW</p></td>
   </tr>
   <tr>
 	<td><p>Dossier personnel</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-folder.svg"> <key>Explorer</key> key symbol</media> or <media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-computer.svg"> <key>Explorer</key> key symbol</media> or <key>Explorer</key></p></td>
+	<td><p>Explorer</p></td>
   </tr>
   <tr>
 	<td><p>Recherche</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-search.svg"> <key>Search</key> key symbol</media> or <key>Search</key></p></td>
+	<td><p>Recherche</p></td>
   </tr>
 </table>
 
@@ -174,18 +163,20 @@
   </tr>
   <tr>
 	<td><p>Déplacer la fenêtre d'un espace de travail vers le haut</p></td>
-	<td><p><keyseq><key>Maj</key><key xref="keyboard-key-super">Logo</key> <key>Page haut</key></keyseq></p></td>
+	<td><p><keyseq><key>Shift</key><key xref="keyboard-key-super">Super</key>
+  <key>Page Up</key></keyseq></p></td>
   </tr>
   <tr>
 	<td><p>Déplacer la fenêtre d'un espace de travail vers le bas</p></td>
-	<td><p><keyseq><key>Maj</key><key>Logo</key><key>page bas</key></keyseq></p></td>
+	<td><p><keyseq><key>Shift</key><key>Super</key><key>Page Down</key></keyseq>
+  </p></td>
   </tr>
   <tr>
 	<td><p>Basculer entre les applications</p></td>
-	<td><p><keyseq><key>Logo</key><key>Tab</key></keyseq></p></td>
+	<td><p><keyseq><key>Super</key><key>Tab</key></keyseq></p></td>
   </tr>
   <tr>
-  <td><p>Basculement entre fenêtres</p></td>
+  <td><p>Switch windows</p></td>
   <td><p>Désactivé</p></td>
   </tr>
   <tr>
@@ -238,26 +229,26 @@
   </tr>
   <tr>
 	<td><p>Basculer vers l'espace de travail au dessus</p></td>
-	<td><p><keyseq><key>Logo</key><key>Page haut</key></keyseq></p></td>
+	<td><p><keyseq><key>Super</key><key>Page Up</key></keyseq></p></td>
   </tr>
   <tr>
 	<td><p>Basculer vers l'espace de travail en dessous</p></td>
-	<td><p><keyseq><key>Logo</key><key>Page bas</key></keyseq></p></td>
+	<td><p><keyseq><key>Super</key><key>Page Down</key></keyseq></p></td>
   </tr>
 </table>
 
 <table rules="rows" frame="top bottom" ui:expanded="false">
 <title>Captures d'écran</title>
   <tr>
-	<td><p>Save a screenshot to file</p></td>
+	<td><p>Prendre une capture d'écran</p></td>
 	<td><p><key>Impr. écran</key></p></td>
   </tr>
   <tr>
-	<td><p>Save a screenshot of a window to file</p></td>
+	<td><p>Prendre une capture d'écran d'une fenêtre</p></td>
 	<td><p><keyseq><key>Alt</key><key>Impr. écran</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Save a screenshot of an area to file</p></td>
+	<td><p>Prendre une capture d'une partie de l'écran </p></td>
 	<td><p><keyseq><key>Maj</key><key>Impr. écran</key></keyseq></p></td>
   </tr>
   <tr>
@@ -273,8 +264,9 @@
 	<td><p><keyseq><key>Maj</key><key>Ctrl</key><key>Impr. écran</key></keyseq></p></td>
   </tr>
   <tr>
-  <td><p>Enregistrer une vidéo d'écran</p></td>
-  <td><p><keyseq><key>Maj</key><key>Ctrl</key><key>Alt</key><key>R</key></keyseq></p></td>
+  <td><p>Record a screencast</p></td>
+  <td><p><keyseq><key>Shift</key><key>Ctrl</key><key>Alt</key><key>R</key>
+  </keyseq></p></td>
   </tr>
 </table>
 
@@ -282,43 +274,43 @@
 <title>Son et média</title>
   <tr>
 	<td><p>Couper le volume</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-mute.svg"> <key>Mute</key> key symbol</media> (Audio mute)</p></td>
+	<td><p>Extinction du son</p></td>
   </tr>
   <tr>
 	<td><p>Baisser le volume</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-voldown.svg"> <key>Volume Down</key> key symbol</media> (Audio lower volume)</p></td>
+	<td><p>Diminution du volume sonore</p></td>
   </tr>
   <tr>
 	<td><p>Augmenter le volume</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-volup.svg"> <key>Volume Up</key> key symbol</media> (Audio raise volume)</p></td>
+	<td><p>Augmentation du volume sonore</p></td>
   </tr>
   <tr>
 	<td><p>Lancer le lecteur multimédia</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-media.svg"> <key>Media</key> key symbol</media> (Audio media)</p></td>
+	<td><p>Média audio</p></td>
   </tr>
   <tr>
 	<td><p>Lire (ou lecture/pause)</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-play.svg"> <key>Play</key> key symbol</media> (Audio play)</p></td>
+	<td><p>Lecture audio</p></td>
   </tr>
   <tr>
 	<td><p>Mettre en pause la lecture</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-pause.svg"> <key>Pause</key> key symbol</media> (Audio pause)</p></td>
+	<td><p>Mise en pause de l'audio</p></td>
   </tr>
   <tr>
 	<td><p>Stopper la lecture</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-stop.svg"> <key>Stop</key> key symbol</media> (Audio stop)</p></td>
+	<td><p>Arrêt de l'audio</p></td>
   </tr>
   <tr>
 	<td><p>Morceau précédent</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-previous.svg"> <key>Previous</key> key symbol</media> (Audio previous)</p></td>
+	<td><p>Audio précédent</p></td>
   </tr>
   <tr>
 	<td><p>Morceau suivant</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-next.svg"> <key>Next</key> key symbol</media> (Audio next)</p></td>
+	<td><p>Audio suivant</p></td>
   </tr>
   <tr>
 	<td><p>Éjecter</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-eject.svg"> <key>Eject</key> key symbol</media> (Eject)</p></td>
+	<td><p>Éjecter</p></td>
   </tr>
 </table>
 
@@ -338,47 +330,47 @@
   </tr>
   <tr>
 	<td><p>Verrouillage de l'écran</p></td>
-	<td><p><keyseq><key>Logo</key><key>L</key></keyseq></p></td>
+	<td><p><keyseq><key>Ctrl</key><key>Alt</key><key>L</key></keyseq></p></td>
   </tr>
   <tr>
-  <td><p>Afficher le tiroir de messagerie</p></td>
-  <td><p><keyseq><key>Logo</key><key>M</key></keyseq></p></td>
+  <td><p>Show the message tray</p></td>
+  <td><p><keyseq><key>Super</key><key>M</key></keyseq></p></td>
   </tr>
   <tr>
-  <td><p>Focaliser sur la notification active</p></td>
-  <td><p><keyseq><key>logo</key><key>N</key></keyseq></p></td>
+  <td><p>Focus the active notification</p></td>
+  <td><p><keyseq><key>Super</key><key>N</key></keyseq></p></td>
   </tr>
   <tr>
-  <td><p>Afficher toutes les applications</p></td>
-  <td><p><keyseq><key>Logo</key><key>A</key></keyseq></p></td>
+  <td><p>Show all applications</p></td>
+  <td><p><keyseq><key>Super</key><key>A</key></keyseq></p></td>
   </tr>
   <tr>
-  <td><p>Ouvrir le menu de l'application</p></td>
-  <td><p><keyseq><key>logo</key><key>F10</key></keyseq></p></td>
+  <td><p>Open the application menu</p></td>
+  <td><p><keyseq><key>Super</key><key>F10</key></keyseq></p></td>
   </tr>
 </table>
 
 <table rules="rows" frame="top bottom" ui:expanded="false">
-<title>Saisie</title>
+<title>Typing</title>
   <tr>
-  <td><p>Passer à la source d'entrées suivante</p></td>
-  <td><p><keyseq><key>Logo</key><key>Barre d'espace</key></keyseq></p></td>
+  <td><p>Switch to next input source</p></td>
+  <td><p><keyseq><key>Super</key><key>Space</key></keyseq></p></td>
   </tr>
 
   <tr>
-  <td><p>Passer à la source d'entrées précédente</p></td>
+  <td><p>Switch to previous input source</p></td>
   <td><p>Désactivé</p></td>
   </tr>
   <tr>
-  <td><p>Avec les touches de modification seules, basculer vers la source suivante</p></td>
+  <td><p>Modifiers-only switch to next source</p></td>
   <td><p>Désactivé</p></td>
   </tr>
   <tr>
-  <td><p>La touche « compose »</p></td>
+  <td><p>Compose Key</p></td>
   <td><p>Désactivé</p></td>
   </tr>
   <tr>
-  <td><p>Touche de caractères alternatifs</p></td>
+  <td><p>Alternative Characters Key</p></td>
   <td><p>Désactivé</p></td>
   </tr>
 </table>
@@ -387,15 +379,15 @@
 <title>Accès universel</title>
   <tr>
 	<td><p>Activer ou désactiver le zoom</p></td>
-	<td><p><keyseq><key>Alt</key><key>Logo</key><key>8</key></keyseq></p></td>
+	<td><p><keyseq><key>Alt</key><key>Super</key><key>8</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Zoom avant</p></td>
-  <td><p><keyseq><key>Alt</key><key>Logo</key><key>=</key></keyseq></p></td>
+	<td><p>Zoom en avant</p></td>
+  <td><p><keyseq><key>Alt</key><key>Super</key><key>=</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Zoom arrière</p></td>
-  <td><p><keyseq><key>Alt</key><key>Logo</key><key>-</key></keyseq></p></td>
+	<td><p>Zoom en arrière</p></td>
+  <td><p><keyseq><key>Alt</key><key>Super</key><key>-</key></keyseq></p></td>
   </tr>
   <tr>
 	<td><p>Activer ou désactiver le lecteur d'écran</p></td>
@@ -435,11 +427,11 @@
   </tr>
   <tr>
 	<td><p>Maximiser la fenêtre</p></td>
-	<td><p><keyseq><key>Logo</key><key>↑</key></keyseq></p></td>
+	<td><p><keyseq><key>Super</key><key>↑</key></keyseq></p></td>
   </tr>
   <tr>
 	<td><p>Restaurer la fenêtre</p></td>
-  <td><p><keyseq><key>Logo</key><key>↓</key></keyseq></p></td>
+  <td><p><keyseq><key>Super</key><key>↓</key></keyseq></p></td>
   </tr>
   <tr>
 	<td><p>Activer ou désactiver l'état enroulé</p></td>
@@ -450,8 +442,8 @@
 	<td><p><keyseq><key>Alt</key><key>F4</key></keyseq></p></td>
   </tr>
   <tr>
-  <td><p>Masquer la fenêtre</p></td>
-  <td><p><keyseq><key>Logo</key><key>H</key></keyseq></p></td>
+  <td><p>Hide window</p></td>
+  <td><p><keyseq><key>Super</key><key>H</key></keyseq></p></td>
   </tr>
   <tr>
 	<td><p>Déplacer la fenêtre</p></td>
@@ -487,37 +479,75 @@
   </tr>
   <tr>
   <td><p>Séparer l'affichage sur la gauche</p></td>
-  <td><p><keyseq><key>Logo</key><key>←</key></keyseq></p></td>
+  <td><p><keyseq><key>Super</key><key>←</key></keyseq></p></td>
   </tr>
   <tr>
   <td><p>Séparer l'affichage sur la droite</p></td>
-  <td><p><keyseq><key>Logo</key><key>→</key></keyseq></p></td>
+  <td><p><keyseq><key>Super</key><key>→</key></keyseq></p></td>
   </tr>
 </table>
 
 </section>
 
-<section id="custom">
-<title>Raccourcis personnalisés</title>
-
-  <p>Pour créer vos propres raccourcis clavier dans les paramètres <gui>Clavier</gui> :</p>
+<section id="changing-shorcuts">
+  <title>Change keyboard shortcuts</title>
+  <p>This section shows how to change keyboard shortcuts for an application.</p>
 
   <steps>
     <item>
-      <p>Cliquez sur le bouton <gui style="button">+</gui>. La fenêtre <gui>Raccourcis personnalisés</gui> s'ouvre alors.</p>
+	<p>Open the Terminal application.</p>
+     </item>
+    <item><p>Run the <cmd>gsettings set org.gnome.desktop.interface can-change-accels true</cmd> command.</p>
     </item>
-    <item>
-      <p>Saisissez un <gui>Nom</gui> pour identifier le raccourci, et une <gui>Commande</gui> pour lancer une application, puis cliquez sur <gui>Ajouter</gui>. Par exemple, si vous voulez un raccourci pour ouvrir Rhythmbox, vous pouvez le nommer <input>Musique</input> et utiliser la commande <input>rhythmbox</input>.</p>
+       <item>
+      <p>Start the application for which you want to change the keyboard shortcut.</p>
     </item>
-    <item>
-      <p>Cliquez sur <gui>Désactivé</gui> dans le rang qui vient d'être ajouté. Quand il de vient <gui>Nouvel accélérateur...</gui>, puis effectuez la combinaison de touches désirée.</p>
+  <item>
+      <p>Find the menu item for which you want to change the keyboard shortcut.</p>
+    </item>
+<item>
+      <p>Type the shortcut that you want on the keyboard.</p>
     </item>
   </steps>
 
-  <p>Le nom de la commande que vous saisissez doit être une commande système valide. Vous pouvez vérifier que la commande fonctionne en ouvrant un Terminal et en la saisissant dedans. Il est possible que la commande ouvrant une application n'aie pas exactement le même nom que l'application elle-même.</p>
+<note style="note style">
+  <p>Note that this setting is desktop-wide. You can disable it after
+ you make changes by running the
+ <cmd>gsettings set org.gnome.desktop.interface can-change-accels false</cmd>
+ command. You can also use the <app>dconf-editor</app> utility to do this.</p>
+</note>
+</section>
 
-  <p>Si vous voulez modifier la commande qui est associée à un raccourci clavier personnalisé, double-cliquez sur le <em>nom</em> du raccourci. La fenêtre <gui>Raccourci personnalisé</gui> apparaît et vous pouvez modifier la commande.</p>
+<section id="custom">
+<title>Raccourcis personnalisés</title>
 
+<p>Pour créer vos propres raccourcis clavier :</p>
+
+  <steps>
+    <item>
+      <p>Select <gui>Custom Shortcuts</gui> in the left pane, and click the
+      <gui style="button">+</gui> button (or click the
+      <gui style="button">+</gui> button in any category). The
+      <gui>Custom Shortcut</gui> window will appear.</p>
+    </item>
+    <item>
+      <p>Type a <gui>Name</gui> to identify the shortcut, and a
+      <gui>Command</gui> to run an application, then click <gui>Apply</gui>.
+      For example, if you wanted the shortcut to open Rhythmbox, you could name
+      it <input>Music</input> and use the <input>rhythmbox</input> command.</p>
+    </item>
+    <item>
+      <p>Click <gui>Disabled</gui> in the row that was just added. When it
+      changes to <gui>New accelerator...</gui>, hold down the desired shortcut
+      key combination.</p>
+    </item>
+  </steps>
+ <p>The command name that you type should be a valid system command. You
+ can check that the command works by opening a Terminal and typing it in
+ there. The command that opens an application cannot have the same name as
+ the application itself.</p>
+
+ <p>Si vous voulez modifier la commande qui est associée à un raccourci clavier personnalisé, double-cliquez sur le <em>nom</em> du raccourci. La fenêtre <gui>Raccourci personnalisé</gui> apparaît et vous pouvez modifier la commande.</p>
 </section>
 
 </page>

@@ -1,29 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="user-admin-problems" xml:lang="hu">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="user-admin-problems" xml:lang="hu">
 
   <info>
     <link type="guide" xref="user-accounts#privileges"/>
-    <link type="seealso" xref="user-admin-explain"/>
-    <link type="seealso" xref="user-admin-change"/>
+
+    <desc>Egyes feladatokat, például alkalmazások telepítését csak rendszergazdai jogosultságok birtokában hajthat végre.</desc>
 
     <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-03" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <!-- TODO: review that this is actually correct -->
-    <revision pkgversion="3.18" date="2015-09-28" status="candidate"/>
 
-    <credit type="authohar">
+    <credit type="author">
       <name>GNOME dokumentációs projekt</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Egyes feladatokat, például alkalmazások telepítését csak rendszergazdai jogosultságok birtokában hajthat végre.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Griechisch Erika</mal:name>
@@ -34,7 +24,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Kelemen Gábor</mal:name>
       <mal:email>kelemeng at gnome dot hu</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015, 2016, 2017</mal:years>
+      <mal:years>2011, 2012, 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -54,30 +44,24 @@
       <mal:email>lukacs.bence1 at gmail dot com</mal:email>
       <mal:years>2011</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Nagy Zoltán</mal:name>
-      <mal:email>dzodzie at gmail dot com</mal:email>
-      <mal:years>2011</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Rendszergazdai korlátozások által okozott problémák</title>
+<title>Rendszergazdai korlátozások által okozott problémák</title>
 
   <p>Problémákba ütközhet, ha nincs <link xref="user-admin-explain">rendszergazdai jogosultsága</link>. Bizonyos feladatok végrehajtásához rendszergazdai jogosultság szükséges, például:</p>
 
-  <list>
-    <item>
-      <p>Csatlakozás hálózatokhoz vagy vezeték nélküli hálózatokhoz,</p>
-    </item>
-    <item>
-      <p>másik lemezpartíció (például egy Windows partíció) tartalmának megtekintése vagy</p>
-    </item>
-    <item>
-      <p>új alkalmazások telepítése.</p>
-    </item>
-  </list>
+<list>
+ <item>
+  <p>Csatlakozás hálózatokhoz vagy vezeték nélküli hálózatokhoz</p>
+ </item>
+ <item>
+  <p>A számítógéphez csatlakoztatott cserélhető lemez vagy egy másik lemezpartíció tartalmának megtekintése (például egy Windows partíció)</p>
+ </item>
+ <item>
+  <p>Új alkalmazások telepítése</p>
+ </item>
+</list>
 
-  <p><link xref="user-admin-change">Megváltoztathatja, hogy kinek legyen rendszergazdai jogosultsága</link>.</p>
+  <p> <link xref="user-admin-change">Megváltoztathatja, hogy kinek legyen rendszergazdai jogosultsága</link>.</p>
 
 </page>

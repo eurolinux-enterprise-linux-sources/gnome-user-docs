@@ -2,11 +2,10 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="look-display-fuzzy" xml:lang="lv">
 
   <info>
-    <link type="guide" xref="hardware-problems-graphics"/>
+   <link type="guide" xref="hardware-problems-graphics"/>
+   <desc>Varētu būt iestatīta nepareizā ekrāna izšķirtspēja.</desc>
 
     <revision pkgversion="3.8.0" version="0.3" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.9.92" date="2013-10-11" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
 
     <credit type="author">
       <name>GNOME dokumentācijas projekts</name>
@@ -24,48 +23,44 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Shobha Tyagi</name>
-      <email>tyagishobha@gmail.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Varētu būt iestatīta nepareizā ekrāna izšķirtspēja.</desc>
   </info>
 
 <title>Kāpēc viss uz mana ekrāna izskatās miglains vai pikseļots?</title>
 
 <p>Tas varētu notikt tāpēc, ka iestatītā displeja izšķirtspēja nav atbilstoša jūsu ekrānam.</p>
 
-<p>Lai to atrisinātu, atveriet <gui xref="shell-introduction#activities">Aktivitāšu</gui> pārskatu un sāciet rakstīt <gui>Displeji</gui>. Izmēģiniet kādas no <gui>Izšķirtspējas</gui> opcijām un iestatiet to, ar kuru ekrāns izskatās vislabāk.</p>
+<p>To solve this, click your name on the top bar and go to <gui>Settings</gui>. In the Hardware section, choose <gui>Displays</gui>. Try some of the <gui>Resolution</gui> options and set the one that makes the screen look better.</p>
+
+<comment>
+  <cite date="2012-02-19">shaunm</cite>
+  <p>Would like a little more explanation on native resolution, which
+  is generally only applicable on LCDs. There's a stub for using two
+  monitors. Link from section below when it's added.</p>
+</comment>
 
 <section id="multihead">
-  <title>Kad pieslēgti vairāki displeji</title>
+ <title>Kad pieslēgti vairāki displeji</title>
 
-  <p>Ja datoram pieslēgti vairāki displeji (piemēram, monitors un projektors), tiem varētu būt atšķirīgas izšķirtspējas. Taču datora grafikas karte var attēlot ekrānu vienlaikus tikai vienā izšķirtspējā, tāpēc vismaz viens no displejiem varētu izskatīties miglains.</p>
+ <p>Ja datoram pieslēgti vairāki displeji (piemēram, monitors un projektors), tiem varētu būt atšķirīgas izšķirtspējas. Taču datora grafikas karte var attēlot ekrānu vienlaikus tikai vienā izšķirtspējā, tāpēc vismaz viens no displejiem varētu izskatīties miglains.</p>
 
-  <p>Ir iespējams iestatīt displejiem atšķirīgas izšķirtspējas, taču tad uz abiem ekrāniem nevarēs rādīt vienu un to pašu. Būtībā būs vienlaikus pieslēgti divi neatkarīgi ekrāni. Varēsiet pārvietot logus no viena ekrāna uz citu, bet ne rādīt vienu un to pašu logu uz abiem ekrāniem vienlaikus.</p>
+ <p>Ir iespējams iestatīt displejiem atšķirīgas izšķirtspējas, taču tad uz abiem ekrāniem nevarēs rādīt vienu un to pašu. Būtībā būs vienlaikus pieslēgti divi neatkarīgi ekrāni. Varēsiet pārvietot logus no viena ekrāna uz citu, bet ne rādīt vienu un to pašu logu uz abiem ekrāniem vienlaikus.</p>
 
-  <p>Lai iestatītu displejus tā, lai katram būtu sava izšķirtspēja:</p>
+ <p>Lai iestatītu displejus tā, lai katram būtu sava izšķirtspēja:</p>
 
-  <steps>
-    <item>
-      <p>Atveriet <gui xref="shell-introduction#activities">Aktivitāšu</gui> pārskatu un sāciet rakstīt <gui>Displeji</gui>.</p>
-    </item>
-    <item>
-      <p>Spiediet <gui>Displeji</gui>, lai atvērtu paneli.</p>
-    </item>
-    <item>
-      <p>Displejiem jābūt norādītiem <gui>Dublēt</gui>. Izvēlieties galveno displeju.</p>
-    </item>
-    <item>
-      <p>Izvēlieties <gui>Primārais</gui> displeju konfigurācijas sarakstā un tad spiediet <gui style="button">Pielietot</gui>, lai saglabātu.</p>
-    </item>
-    <item>
-      <p>Izvēlieties katru displeju pēc kārtas pelēkajā laukā loga <gui>Ekrāni</gui> augšdaļā. Nomainiet <gui>Izšķirtspēju</gui> uz tādu, ar kuru attiecīgais displejs izskatās labi.</p>
-    </item>
-  </steps>
+ <steps>
+  <item>
+   <p>Click your name on the top bar and click <gui>Settings</gui>. Open <gui>Displays</gui>.</p>
+  </item>
+
+  <item>
+   <p>Izņemiet ķeksi pie <gui>Dublēt ekrānus</gui>.</p>
+  </item>
+
+  <item>
+   <p>Izvēlieties katru displeju pēc kārtas pelēkajā laukā loga <gui>Ekrāni</gui> augšdaļā. Nomainiet <gui>Izšķirtspēju</gui> uz tādu, ar kuru attiecīgais displejs izskatās labi.</p>
+  </item>
+ </steps>
 
 </section>
 

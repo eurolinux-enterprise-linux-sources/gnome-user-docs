@@ -1,38 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" version="1.0 ui/1.0" id="keyboard-shortcuts-set" xml:lang="fi">
-
+<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" id="keyboard-shortcuts-set" xml:lang="fi">
   <info>
     <link type="guide" xref="keyboard"/>
     <link type="seealso" xref="shell-keyboard-shortcuts"/>
 
     <revision pkgversion="3.8.0" version="0.3" date="2013-03-23" status="review"/>
-    <revision pkgversion="3.9.92" date="2013-10-11" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.17.90" date="2015-08-30" status="candidate"/>
 
     <credit type="author">
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="author">
-      <name>Julita Inca</name>
-      <email>yrazes@gmail.com</email>
+       <name>Julita Inca</name>
+       <email>yrazes@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Juanjo Marín</name>
       <email>juanj.marin@juntadeandalucia.es</email>
     </credit>
-    <credit type="editor">
-      <name>Shobha Tyagi</name>
-      <email>tyagishobha@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
     <desc>Määritä tai vaihda pikanäppäimiä <gui>Näppäimistön</gui> asetuksissa.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -40,32 +25,34 @@
       <mal:email>timo.jyrinki@iki.fi</mal:email>
       <mal:years>2012.</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Jiri Grönroos</mal:name>
-      <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
-      <mal:years>2012-2018.</mal:years>
-    </mal:credit>
   </info>
 
   <title>Aseta näppäimistön pikanäppäimet</title>
+
+  <comment>
+    <cite date="2012-02-19" href="mailto:shaunm@gnome.org">Shaun McCance</cite>
+    <p>Define shortcuts, using Shortcuts tab in Keyboard settings. Provide
+    reference for what everything is (can group for conciseness). Explain
+    custom shortcuts.</p>
+    <p>Important: the window says "To edit a shortcut, click the row and hold
+    down the new keys or press Backspace to clear." This is actually wrong.
+    You have to click the row, then click again on the shortcut within the
+    row. File bug against control-center about the faulty message (or better,
+    about the confusing interaction), but make sure to explain correctly in
+    the help regardless.</p>
+  </comment>
 
 <p>Pikanäppäinten muokkaaminen onnistuu seuraavasti:</p>
 
   <steps>
     <item>
-      <p>Avaa <gui xref="shell-introduction#activities">Toiminnot</gui>-yleisnäkymä ja ala kirjoittamaan <gui>Näppäimistö</gui>.</p>
-    </item>
-    <item>
-      <p>Napsauta <gui>Näppäimistö</gui>.</p>
-    </item>
-    <item>
-      <p>Select the <gui>Shortcuts</gui> tab.</p>
+	<p>Napsauta nimeäsi yläpalkista ja valitse <gui>Järjestelmän asetukset</gui></p></item>
+    <item><p>Avaa <gui>Näppäimistö</gui> ja siirry <gui>Pikanäppäimet</gui>-välilehdelle.</p>
     </item>
     <item>
       <p>Select a category in the left pane, and the row for the desired action
       on the right. The current shortcut definition will change to
-      <gui>New accelerator…</gui></p>
+      <gui>New accelerator...</gui></p>
     </item>
     <item>
       <p>Hold down the desired key combination, or press <key>Backspace</key> to
@@ -75,7 +62,7 @@
 
 
 <section id="defined">
-<title>Ennalta määritetyt pikanäppäimet</title>
+<title>Pre-defined shortcuts</title>
   <p>There are a number of pre-configured shortcuts that can be changed,
   grouped into these categories:</p>
 
@@ -87,28 +74,28 @@
   </tr>
   <tr>
 	<td><p>Käynnistä laskin</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-calculator.svg"> <key>Calculator</key> key symbol</media> tai <key>Laskin</key></p></td>
+	<td><p>Laskin</p></td>
   </tr>
   <tr>
 	<td><p>Käynnistä sähköpostiohjelma</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-mail.svg"> <key>Mail</key> key symbol</media> tai <key>Sähköposti</key></p></td>
+	<td><p>Sähköposti</p></td>
   </tr>
   <tr>
 	<td><p>Käynnistä www-selain</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-world.svg"> <key>WWW</key> key symbol</media> tai <media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-home.svg"> <key>WWW</key> key symbol</media> tai <key>WWW</key></p></td>
+	<td><p>WWW</p></td>
   </tr>
   <tr>
 	<td><p>Kotikansio</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-folder.svg"> <key>Explorer</key> key symbol</media> or <media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-computer.svg"> <key>Explorer</key> key symbol</media> or <key>Explorer</key></p></td>
+	<td><p>Explorer</p></td>
   </tr>
   <tr>
 	<td><p>Etsi</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-search.svg"> <key>Search</key> key symbol</media> tai <key>Haku</key></p></td>
+	<td><p>Etsi</p></td>
   </tr>
 </table>
 
 <table rules="rows" frame="top bottom" ui:expanded="false">
-<title>Liikkuminen</title>
+<title>Navigation</title>
   <tr>
 	<td><p>Siirrä ikkuna työtilaan 1</p></td>
 	<td><p>Poissa käytöstä</p></td>
@@ -126,31 +113,33 @@
 	<td><p>Poissa käytöstä</p></td>
   </tr>
   <tr>
-	<td><p>Siirrä ikkuna vasemmalla olevaan työtilaan</p></td>
+	<td><p>Move window one workspace to the left</p></td>
 	<td><p><keyseq><key>Shift</key><key>Ctrl</key><key>Alt</key><key>←</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Siirrä ikkuna oikealla olevaan työtilaan</p></td>
+	<td><p>Move window one workspace to the right</p></td>
 	<td><p><keyseq><key>Shift</key><key>Ctrl</key><key>Alt</key><key>→</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Siirrä ikkuna ylempänä olevaan työtilaan</p></td>
-	<td><p><keyseq><key>Shift</key><key xref="keyboard-key-super">Super</key> <key>Page Up</key></keyseq></p></td>
+	<td><p>Move window one workspace up</p></td>
+	<td><p><keyseq><key>Shift</key><key xref="keyboard-key-super">Super</key>
+  <key>Page Up</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Siirrä ikkuna alempana olevaan työtilaan</p></td>
-	<td><p><keyseq><key>Shift</key><key>Super</key><key>Page Down</key></keyseq></p></td>
+	<td><p>Move window one workspace down</p></td>
+	<td><p><keyseq><key>Shift</key><key>Super</key><key>Page Down</key></keyseq>
+  </p></td>
   </tr>
   <tr>
-	<td><p>Vaihda sovelluksien välillä</p></td>
+	<td><p>Switch applications</p></td>
 	<td><p><keyseq><key>Super</key><key>Tab</key></keyseq></p></td>
   </tr>
   <tr>
-  <td><p>Vaihtele ikkunoiden välillä</p></td>
+  <td><p>Switch windows</p></td>
   <td><p>Poissa käytöstä</p></td>
   </tr>
   <tr>
-	<td><p>Vaihda sovelluksen ikkunoiden välillä</p></td>
+	<td><p>Switch windows of an application</p></td>
 	<td><p>Poissa käytöstä</p></td>
   </tr>
   <tr>
@@ -190,19 +179,19 @@
 	<td><p>Poissa käytöstä</p></td>
   </tr>
   <tr>
-	<td><p>Siirry vasemmalla olevaan työtilaan</p></td>
+	<td><p>Move to workspace left</p></td>
 	<td><p><keyseq><key>Ctrl</key><key>Alt</key><key>←</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Siirry oikealla olevaan työtilaan</p></td>
+	<td><p>Move to workspace right</p></td>
 	<td><p><keyseq><key>Ctrl</key><key>Alt</key><key>→</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Siirry yllä olevaan työtilaan</p></td>
+	<td><p>Move to workspace above</p></td>
 	<td><p><keyseq><key>Super</key><key>Page Up</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Siirry alla olevaan työtilaan</p></td>
+	<td><p>Move to workspace below</p></td>
 	<td><p><keyseq><key>Super</key><key>Page Down</key></keyseq></p></td>
   </tr>
 </table>
@@ -210,87 +199,88 @@
 <table rules="rows" frame="top bottom" ui:expanded="false">
 <title>Kuvakaappaukset</title>
   <tr>
-	<td><p>Tallenna kuvakaappaus tiedostoon</p></td>
+	<td><p>Ota kuvanOta kuvakaappaus</p></td>
 	<td><p><key>Print</key></p></td>
   </tr>
   <tr>
-	<td><p>Tallenna kuvakaappaus ikkunasta tiedostoon</p></td>
+	<td><p>Take a screenshot of a window</p></td>
 	<td><p><keyseq><key>Alt</key><key>Print</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Tallenna kuvakaappaus alueesta tiedostoon</p></td>
+	<td><p>Take a screenshot of an area</p></td>
 	<td><p><keyseq><key>Shift</key><key>Print</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Kopioi kuvakaappaus leikepöydälle</p></td>
+	<td><p>Copy a screenshot to clipboard</p></td>
 	<td><p><keyseq><key>Ctrl</key><key>Print</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Kopioi kuvakaappaus ikkunasta leikepöydälle</p></td>
+	<td><p>Copy a screenshot of a window to clipboard</p></td>
 	<td><p><keyseq><key>Ctrl</key><key>Alt</key><key>Print</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Kopioi kuvakaappaus alueesta leikepöydälle</p></td>
+	<td><p>Copy a screenshot of an area to clipboard</p></td>
 	<td><p><keyseq><key>Shift</key><key>Ctrl</key><key>Print</key></keyseq></p></td>
   </tr>
   <tr>
-  <td><p>Tallenna työpöytävideo</p></td>
-  <td><p><keyseq><key>Shift</key><key>Ctrl</key><key>Alt</key><key>R</key> </keyseq></p></td>
+  <td><p>Record a screencast</p></td>
+  <td><p><keyseq><key>Shift</key><key>Ctrl</key><key>Alt</key><key>R</key>
+  </keyseq></p></td>
   </tr>
 </table>
 
 <table rules="rows" frame="top bottom" ui:expanded="false">
-<title>Ääni ja media</title>
+<title>Sound and Media</title>
   <tr>
 	<td><p>Volume mute</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-mute.svg"> <key>Mute</key> key symbol</media> (Audio mute)</p></td>
+	<td><p>Audio mute</p></td>
   </tr>
   <tr>
 	<td><p>Volume down</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-voldown.svg"> <key>Volume Down</key> key symbol</media> (Audio lower volume)</p></td>
+	<td><p>Audio lower volume</p></td>
   </tr>
   <tr>
 	<td><p>Volume up</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-volup.svg"> <key>Volume Up</key> key symbol</media> (Audio raise volume)</p></td>
+	<td><p>Audio raise volume</p></td>
   </tr>
   <tr>
-	<td><p>Käynnistä mediasoitin</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-media.svg"> <key>Media</key> key symbol</media> (Audio media)</p></td>
+	<td><p>Launch media player</p></td>
+	<td><p>Audio media</p></td>
   </tr>
   <tr>
-	<td><p>Toista (tai toista/keskeytä)</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-play.svg"> <key>Play</key> key symbol</media> (Audio play)</p></td>
+	<td><p>Play (or play/pause)</p></td>
+	<td><p>Audio play</p></td>
   </tr>
   <tr>
-	<td><p>Keskeytä toisto</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-pause.svg"> <key>Pause</key> key symbol</media> (Audio pause)</p></td>
+	<td><p>Pause playback</p></td>
+	<td><p>Audio pause</p></td>
   </tr>
   <tr>
-	<td><p>Pysäytä toisto</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-stop.svg"> <key>Stop</key> key symbol</media> (Audio stop)</p></td>
+	<td><p>Stop playback</p></td>
+	<td><p>Audio stop</p></td>
   </tr>
   <tr>
-	<td><p>Edellinen kappale</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-previous.svg"> <key>Previous</key> key symbol</media> (Audio previous)</p></td>
+	<td><p>Previous track</p></td>
+	<td><p>Audio previous</p></td>
   </tr>
   <tr>
-	<td><p>Seuraava kappale</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-next.svg"> <key>Next</key> key symbol</media> (Audio next)</p></td>
+	<td><p>Next track</p></td>
+	<td><p>Audio next</p></td>
   </tr>
   <tr>
 	<td><p>Eject</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-eject.svg"> <key>Eject</key> key symbol</media> (Eject)</p></td>
+	<td><p>Eject</p></td>
   </tr>
 </table>
 
 <table rules="rows" frame="top bottom" ui:expanded="false">
 <title>Järjestelmä</title>
   <tr>
-	<td><p>Näytä "Syötä komento"-ikkuna</p></td>
+	<td><p>Show the run command prompt</p></td>
 	<td><p><keyseq><key>Alt</key><key>F2</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Näytä Toiminnot-yleisnäkymä</p></td>
+	<td><p>Show the activities overview</p></td>
 	<td><p><keyseq><key>Alt</key><key>F1</key></keyseq></p></td>
   </tr>
   <tr>
@@ -299,35 +289,35 @@
   </tr>
   <tr>
 	<td><p>Lukitse näyttö</p></td>
-	<td><p><keyseq><key>Super</key><key>L</key></keyseq></p></td>
+	<td><p><keyseq><key>Ctrl</key><key>Alt</key><key>L</key></keyseq></p></td>
   </tr>
   <tr>
-  <td><p>Näytä viestialue</p></td>
+  <td><p>Show the message tray</p></td>
   <td><p><keyseq><key>Super</key><key>M</key></keyseq></p></td>
   </tr>
   <tr>
-  <td><p>Kohdista aktiviiseen ilmoitukseen</p></td>
+  <td><p>Focus the active notification</p></td>
   <td><p><keyseq><key>Super</key><key>N</key></keyseq></p></td>
   </tr>
   <tr>
-  <td><p>Näytä kaikki sovellukset</p></td>
+  <td><p>Show all applications</p></td>
   <td><p><keyseq><key>Super</key><key>A</key></keyseq></p></td>
   </tr>
   <tr>
-  <td><p>Avaa sovellusvalikko</p></td>
+  <td><p>Open the application menu</p></td>
   <td><p><keyseq><key>Super</key><key>F10</key></keyseq></p></td>
   </tr>
 </table>
 
 <table rules="rows" frame="top bottom" ui:expanded="false">
-<title>Kirjoittaminen</title>
+<title>Typing</title>
   <tr>
-  <td><p>Vaihda seuraavaan syötelähteeseen</p></td>
+  <td><p>Switch to next input source</p></td>
   <td><p><keyseq><key>Super</key><key>Space</key></keyseq></p></td>
   </tr>
 
   <tr>
-  <td><p>Vaihda edelliseen syötelähteeseen</p></td>
+  <td><p>Switch to previous input source</p></td>
   <td><p>Poissa käytöstä</p></td>
   </tr>
   <tr>
@@ -335,7 +325,7 @@
   <td><p>Poissa käytöstä</p></td>
   </tr>
   <tr>
-  <td><p>Compose-näppäin</p></td>
+  <td><p>Compose Key</p></td>
   <td><p>Poissa käytöstä</p></td>
   </tr>
   <tr>
@@ -345,7 +335,7 @@
 </table>
 
 <table rules="rows" frame="top bottom" ui:expanded="false">
-<title>Esteettömyys</title>
+<title>Universal Access</title>
   <tr>
 	<td><p>Turn zoom on or off</p></td>
 	<td><p><keyseq><key>Alt</key><key>Super</key><key>8</key></keyseq></p></td>
@@ -359,23 +349,23 @@
   <td><p><keyseq><key>Alt</key><key>Super</key><key>-</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Aseta näytönlukija päälle tai pois päältä</p></td>
+	<td><p>Turn screen reader on or off</p></td>
 	<td><p>Poissa käytöstä</p></td>
   </tr>
   <tr>
-	<td><p>Aseta virtuaalinäppäimistö päälle tai pois päältä</p></td>
+	<td><p>Turn on-screen keyboard on or off</p></td>
 	<td><p>Poissa käytöstä</p></td>
   </tr>
   <tr>
-	<td><p>Suurenna tekstin kokoa</p></td>
+	<td><p>Increase text size</p></td>
 	<td><p>Poissa käytöstä</p></td>
   </tr>
   <tr>
-	<td><p>Pienennä tekstin kokoa</p></td>
+	<td><p>Decrease text size</p></td>
 	<td><p>Poissa käytöstä</p></td>
   </tr>
   <tr>
-	<td><p>Suuri kontrasti päälle tai pois</p></td>
+	<td><p>High contrast on or off</p></td>
 	<td><p>Poissa käytöstä</p></td>
   </tr>
 </table>
@@ -387,7 +377,7 @@
 	<td><p><keyseq><key>Alt</key><key>Välilyönti</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Koko näytön tila pois/päälle</p></td>
+	<td><p>Toggle fullscreen mode</p></td>
 	<td><p>Poissa käytöstä</p></td>
   </tr>
   <tr>
@@ -395,11 +385,11 @@
 	<td><p><keyseq><key>Alt</key><key>F10</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Suurenna ikkuna</p></td>
+	<td><p>Maximize window</p></td>
 	<td><p><keyseq><key>Super</key><key>↑</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Palauta ikkunan koko</p></td>
+	<td><p>Restore window</p></td>
   <td><p><keyseq><key>Super</key><key>↓</key></keyseq></p></td>
   </tr>
   <tr>
@@ -411,15 +401,15 @@
 	<td><p><keyseq><key>Alt</key><key>F4</key></keyseq></p></td>
   </tr>
   <tr>
-  <td><p>Piilota ikkuna</p></td>
+  <td><p>Hide window</p></td>
   <td><p><keyseq><key>Super</key><key>H</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Siirrä ikkunaa</p></td>
+	<td><p>Move window</p></td>
 	<td><p><keyseq><key>Alt</key><key>F7</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Muuta ikkunan kokoa</p></td>
+	<td><p>Resize window</p></td>
 	<td><p><keyseq><key>Alt</key><key>F8</key></keyseq></p></td>
   </tr>
   <tr>
@@ -439,11 +429,11 @@
 	<td><p>Poissa käytöstä</p></td>
   </tr>
   <tr>
-	<td><p>Suurenna ikkuna pystysuunnassa</p></td>
+	<td><p>Maximize window vertically</p></td>
 	<td><p>Poissa käytöstä</p></td>
   </tr>
   <tr>
-	<td><p>Suurenna ikkuna vaakasuunnassa</p></td>
+	<td><p>Maximize window horizontally</p></td>
 	<td><p>Poissa käytöstä</p></td>
   </tr>
   <tr>
@@ -458,38 +448,65 @@
 
 </section>
 
-<section id="custom">
-<title>Omat pikanäppäimet</title>
-
-  <p>To create your own application keyboard shortcut in the
-  <app>Keyboard</app> settings:</p>
+<section id="changing-shorcuts">
+  <title>Change keyboard shortcuts</title>
+  <p>This section shows how to change keyboard shortcuts for an application.</p>
 
   <steps>
     <item>
-      <p>Click the <gui style="button">+</gui> button. The <gui>Custom
-      Shortcut</gui> window will appear.</p>
+	<p>Open the Terminal application.</p>
+     </item>
+    <item><p>Run the <cmd>gsettings set org.gnome.desktop.interface can-change-accels true</cmd> command.</p>
     </item>
-    <item>
-      <p>Type a <gui>Name</gui> to identify the shortcut, and a
-      <gui>Command</gui> to run an application, then click <gui>Add</gui>.
-      For example, if you wanted the shortcut to open <app>Rhythmbox</app>, you
-      could name it <input>Music</input> and use the <input>rhythmbox</input>
-      command.</p>
+       <item>
+      <p>Start the application for which you want to change the keyboard shortcut.</p>
     </item>
-    <item>
-      <p>Click <gui>Disabled</gui> in the row that was just added. When it
-      changes to <gui>New accelerator…</gui>, hold down the desired shortcut
-      key combination.</p>
+  <item>
+      <p>Find the menu item for which you want to change the keyboard shortcut.</p>
+    </item>
+<item>
+      <p>Type the shortcut that you want on the keyboard.</p>
     </item>
   </steps>
 
-  <p>The command name that you type should be a valid system command. You can
-  check that the command works by opening a Terminal and typing it in there.
-  The command that opens an application cannot have the same name as the
-  application itself.</p>
+<note style="note style">
+  <p>Note that this setting is desktop-wide. You can disable it after
+ you make changes by running the
+ <cmd>gsettings set org.gnome.desktop.interface can-change-accels false</cmd>
+ command. You can also use the <app>dconf-editor</app> utility to do this.</p>
+</note>
+</section>
 
-  <p>Jos haluat vaihtaa omaan pikanäppäimeen liitettyä komentoa, kaksoisnapsauta pikanäppäimen <em>nimeä</em>. Voit muokata komentoa juuri ilmestyneestä <gui>Oma pikanäppäin</gui> -ikkunasta.</p>
+<section id="custom">
+<title>Omat pikanäppäimet</title>
 
+<p>Luo omavalintainen pikanäppäin:</p>
+
+  <steps>
+    <item>
+      <p>Select <gui>Custom Shortcuts</gui> in the left pane, and click the
+      <gui style="button">+</gui> button (or click the
+      <gui style="button">+</gui> button in any category). The
+      <gui>Custom Shortcut</gui> window will appear.</p>
+    </item>
+    <item>
+      <p>Type a <gui>Name</gui> to identify the shortcut, and a
+      <gui>Command</gui> to run an application, then click <gui>Apply</gui>.
+      For example, if you wanted the shortcut to open Rhythmbox, you could name
+      it <input>Music</input> and use the <input>rhythmbox</input> command.</p>
+    </item>
+    <item>
+      <p>Click <gui>Disabled</gui> in the row that was just added. When it
+      changes to <gui>New accelerator...</gui>, hold down the desired shortcut
+      key combination.</p>
+    </item>
+  </steps>
+ <p>The command name that you type should be a valid system command. You
+ can check that the command works by opening a Terminal and typing it in
+ there. The command that opens an application cannot have the same name as
+ the application itself.</p>
+
+ <p>Jos haluat vaihtaa omaan pikanäppäimeen liitettyä komentoa, kaksoisnapsauta pikanäppäimen <em>nimeä</em>. Voit muokata komentoa juuri ilmestyneestä <gui>Oma pikanäppäin</gui> -ikkunasta.</p>
 </section>
 
 </page>

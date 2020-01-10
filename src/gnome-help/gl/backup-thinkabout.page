@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="backup-thinkabout" xml:lang="gl">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="tip" id="backup-thinkabout" xml:lang="gl">
 
   <info>
     <link type="guide" xref="files#backup"/>
+    <desc>Unha lista de cartafoles onde pode atopar documentos, ficheiros e configuracións que podería querer respaldar.</desc>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -21,13 +21,11 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Unha lista de cartafoles onde pode atopar documentos, ficheiros e configuracións que podería querer respaldar.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2018</mal:years>
+      <mal:years>2011, 2012.</mal:years>
     </mal:credit>
   </info>
 
@@ -38,19 +36,19 @@
 <list>
  <item>
   <p>Ficheiros persoais (documentos, música, fotos e vídeos)</p>
-  <p its:locNote="translators: xdg dirs are localised by package xdg-user-dirs and need to be translated.  You can find the correct translations for your language here: http://translationproject.org/domain/xdg-user-dirs.html">Xeralmente están almacenados no seu cartafol (<file>/home/oseu_nome</file>). Poden estar en subcartafoles como Escritorio, Documentos, Imaxes, Música e Vídeos.</p>
+  <p xmlns:its="http://www.w3.org/2005/11/its" its:locNote="translators: xdg dirs are localised by package xdg-user-dirs and need to be translated.  You can find the correct translations for your language here: http://translationproject.org/domain/xdg-user-dirs.html">Xeralmente están almacenados no seu cartafol (<file>/home/oseu_nome</file>). Poden estar en subcartafoles como Escritorio, Documentos, Imaxes, Música e Vídeos.</p>
   <p>Se o medio que usa para os seus respaldos ten espazo dabondo (se é un disco duro externo, por exemplo), considere respaldar completamente o seu cartafol persoal. pode averiguar canto espazo de disco duro usa o seu cartafol persoal empregando o <app>Analizador de uso de disco</app>.</p>
  </item>
 
  <item>
   <p>Ficheiros ocultos</p>
-  <p>De forma predeterminada ocúltase calquera cartafol ou ficheiro que comece por punto (.). Para ver ficheiros ocultos, prema o botón <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">Opcións de visualización</span></media></gui> ou prema <keyseq><key>Ctrl</key><key>H</key></keyseq>. Pode copialos a unha localización de respaldo como calquera outro tipo de ficheiro.</p>
+  <p>De forma predeterminada ocúltase calquera cartafol ou ficheiro que comece por punto (.). Para ver ficheiros ocultos, prema <guiseq><gui>Ver </gui><gui> Mostrar ficheiro ocultos </gui></guiseq> ou prema <keyseq><key>Ctrl</key><key>H</key></keyseq>. Pode copialos a unha localización de respaldo como calquera outro tipo de ficheiro.</p>
  </item>
 
  <item>
   <p>Preferencias persoais (preferencias de escritorio, temas e preferencias dos aplicativos)</p>
   <p>A maioría dos aplicativos almacenan as súas preferencias en cartafoles ocultos dentro do seu cartafol persoal (vexa máis arriba para obter máis información sobre os ficheiros ocultos).</p>
-  <p>A maioría das preferencias dos seus aplicativos almacénanse en cartafoles ocultos <cmd>.config</cmd> e <cmd>.local</cmd> no seu cartafol persoal.</p>
+  <p>A maioría das preferencias dos seus aplicativos almacénanse en cartafoles ocultos <cmd>.config</cmd>, <cmd>.gconf</cmd>, <cmd>.gnome2</cmd> e <cmd>.local</cmd> no seu cartafol persoal.</p>
  </item>
 
  <item>

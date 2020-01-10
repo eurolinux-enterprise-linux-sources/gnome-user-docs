@@ -5,7 +5,7 @@
     <link type="guide" xref="color#problems"/>
     <link type="guide" xref="color-gettingprofiles"/>
     <link type="guide" xref="color-why-calibrate"/>
-    <desc>Els perfils predeterminats pel monitor per defecte no tenen una data de calibratge.</desc>
+    <desc>Default monitor profiles do not have a calibration date.</desc>
     <credit type="author">
       <name>Richard Hughes</name>
       <email>richard@hughsie.com</email>
@@ -19,16 +19,26 @@
     </mal:credit>
   </info>
 
-  <title>Per què els perfils del monitor per defecte no tenen una data de caducitat de la calibració?</title>
-  <p>El perfil de color predeterminat usat per a cada monitor es genera automàticament en funció de la pantalla<link href="https://en.wikipedia.org/wiki/Extended_Display_Identification_Data"> EDID</link> que s'emmagatzema en un xip de memòria dins del monitor. L'EDID només ens proporciona una instantània dels colors disponibles que era capaç de mostrar quan es va fabricar, i no conté massa informació addicional per a la correcció del color.</p>
+  <title>Why don't the default monitor profiles have a calibration expiry?</title>
+  <p>
+    The default color profile used for each monitor is generated
+    automatically based on the display EDID which is stored in a memory
+    chip inside the monitor.
+    The EDID only gives us a snapshot of the available colors the monitor
+    was capable of displaying when it was manufactured, and does not
+    contain much other information for color correction.
+  </p>
 
   <figure>
-    <desc>Com que l'EDID no es pot actualitzar, no té data de caducitat.</desc>
+    <desc>As the EDID cannot be updated, it has no expiry date.</desc>
     <media type="image" mime="image/png" src="figures/color-profile-default.png"/>
   </figure>
 
   <note style="tip">
-    <p>Obtenir un perfil del proveïdor del monitor o crear un perfil propi portaria a una correcció de color més precisa.</p>
+    <p>
+      Getting a profile from the monitor vendor or creating a profile
+      yourself would lead to more accurate color correction.
+    </p>
   </note>
 
 </page>

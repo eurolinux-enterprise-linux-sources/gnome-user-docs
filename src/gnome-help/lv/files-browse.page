@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-browse" xml:lang="lv">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-browse" xml:lang="lv">
+
 
   <info>
-    <link type="guide" xref="files#common-file-tasks"/>
+    <link type="guide" xref="files" group="#first"/>
     <link type="seealso" xref="files-copy"/>
+    <desc>Pārvaldīt un organizēt datnes ar datņu pārvaldnieku.</desc>
 
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-16" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -25,35 +25,35 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Pārvaldīt un organizēt datnes ar datņu pārvaldnieku.</desc>
   </info>
 
 <title>Pārlūkot datnes un mapes</title>
 
+<comment>
+	<p>This page is a feature overview. There should be a greater visual
+	separation between features. Small illustrative figures should be used
+	to display these features where appropriate, and video demonstrations of
+	some of the features might be useful too. Explain how you can add things to
+	the sidebar (link to a topic or explain it here).</p>
+</comment>
+
 <p>Izmantojiet datņu pārvaldnieku <app>Datnes</app>, lai pārlūkotu un sakārtotu datnes savā datorā. To var izmantot arī, lai pārvaldītu datņu atmiņas ierīcēs  (piemēram, ārējos cietajos diskos), <link xref="nautilus-connect">datņu serveros</link> un tīkla koplietojumos.</p>
 
-<p>Lai atvērtu datņu pārvaldnieku, atveriet <app>Datnes</app> no <gui xref="shell-introduction#activities">Aktivitāšu</gui> pārskata.  Jūs varat arī meklēt datnes un mapes pārskatā tāpat kā <link xref="shell-apps-open">lietotnes</link>.</p>
+<p>Lai atvērtu datņu pārvaldnieku, atveriet <app>Datnes</app> no <gui>Aktivitāšu</gui> pārskata.  Jūs varat arī meklēt datnes un mapes pārskatā tāpat kā <link xref="shell-apps-open">lietotnes</link>.</p>
 
 <section id="files-view-folder-contents">
   <title>Mapju satura pārskatīšana</title>
 
-<p>Datņu pārvaldniekā veiciet dubultklikšķi vai <link xref="mouse-middleclick">vidējo klikšķi</link>uz jebkuras mapes, lai skatītu tās saturu, un uz jebkuras datnes, lai atvērtu to ar atbilstošo noklusējuma lietotni. Vidējais klikšķis uz mapes atvērs to jaunā cilnē. Jūs varat arī veikt labo peles klikšķi uz mapes, lai atvērtu to jaunā cilnē vai logā.</p>
+<p>Datņu pārvaldniekā veiciet dubultklikšķi uz jebkuras mapes, lai skatītu tās saturu, un uz jebkuras datnes, lai atvērtu to ar atbilstošo noklusējuma lietotni. Jūs varat arī veikt labo peles klikšķi uz mapes, lai atvērtu to jaunā cilnē vai logā.</p>
 
 <p>Pārskatot datnes mapē, jūs varat ātri <link xref="files-preview"> priekšskatīt katru datni</link>, nospiežot atstarpes taustiņu, lai pirms datnes atvēršanas, kopēšanas vai dzēšanas pārliecinātos, ka tā ir īstā.</p>
 
-<p><em>Ceļa josla</em> virs datņu un mapju saraksta rāda, kuru mapi jūs aplūkojat, kā arī mapes, kurās tā atrodas. Veiciet klikšķi uz mapes ceļa joslā, lai to atvērtu. Veiciet labo peles klikšķi uz mapes ceļa joslā, lai atvērtu to jaunā cilnē vai logā, vai piekļūtu tās īpašībām.</p>
+<p><em>Ceļa josla</em> virs datņu un mapju saraksta rāda, kuru mapi jūs aplūkojat, kā arī mapes, kurās tā atrodas. Veiciet klikšķi uz mapes ceļa joslā, lai to atvērtu. Veiciet labo peles klikšķi uz mapes ceļa joslā, lai atvērtu to jaunā cilnē vai logā, kopētu vai pārvietotu, vai piekļūtu tās īpašībām.</p>
 
-<p>Ja vēlaties ātri <link xref="files-search">meklēt datnes</link> aktuālajā mapē vai tās apakšmapēs, sāciet rakstīt tās nosaukumu. Loga augšpusē parādīsies <em>meklēšanas josla</em> un parādīsies tikai datnes, kas atbilst meklētajam. Spiediet <key>Esc</key>, lai atceltu meklēšanu.</p>
+<p>Ja vēlaties ātri pārlekt uz datni atvērtajā mapē, sāciet rakstīt tā nosaukumu. Loga augšā parādīsies meklēšanas lauks, un pirmā datne, kuras nosaukums sakrīt ar meklēto, tiks izcelta. Nospiediet bultiņu uz leju vai ritiniet peli, lai izceltu nākamo datni, kuras nosaukums sakrīt ar meklēto.</p>
 
-<p>Jūs varat ātri piekļūt biežāk lietotajām vietām no <em>sānu joslas</em>. Ja to neredzat, nospiediet <gui>Datnes</gui> augšējā joslā un izvēlieties <gui>Sānu josla</gui>. Jūs varat pievienot grāmatzīmes biežāk izmantotajām mapēm, lai tās parādītos sānu joslā. Velciet mapi uz sānu joslu un novietojiet to uz <gui>Jauna grāmatzīme</gui>, kas parādās dinamiski, vai spiediet uz loga izvēlnes un izvēlieties <gui style="menuitem">Pievienot šo vietu grāmatzīmēs</gui>.</p>
+<p>Jūs varat ātri piekļūt biežāk lietotajām vietām no <em>sānu joslas</em>. Ja to neredzat, nospiediet <media type="image" src="figures/go-down.png">uz leju vērsto</media> pogu augšējā labajā loga stūrī un izvēlieties <gui>Rādīt sānu joslu</gui>. Biežāk lietotās mapes var pievienot arī kā grāmatzīmes, kas parādīsies sānu joslā. Lietojiet izvēlni <gui>Grāmatzīmes</gui>, vai vienkārši ievelciet mapi sānu joslā.</p>
 
 </section>
-
 </page>

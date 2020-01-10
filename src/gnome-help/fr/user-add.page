@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="user-add" xml:lang="fr">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="user-add" xml:lang="fr">
 
   <info>
     <link type="guide" xref="user-accounts#manage" group="#first"/>
-
-    <revision pkgversion="3.8" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.13.92" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-
+    <link type="seealso" xref="user-addguest"/>
+    <desc>Ajouter de nouveaux utilisateurs pour que d'autres personnes puissent se connecter à l'ordinateur.</desc>
+    <!-- Setting 3.4.0 version to final for release, but we need to do something
+         about the various comments in here, so incomplete for 3.4.1.
+    -->
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-09" status="candidate"/>
     <credit type="author">
       <name>Le projet de documentation GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
@@ -21,14 +21,8 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Ajouter de nouveaux utilisateurs pour que d'autres personnes puissent se connecter à l'ordinateur.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Luc Pionchon</mal:name>
@@ -45,13 +39,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Julien Hardelin</mal:name>
       <mal:email>jhardlin@orange.fr</mal:email>
-      <mal:years>2011, 2013</mal:years>
+      <mal:years>2011</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -77,68 +71,66 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Alexandre Franke</mal:name>
-      <mal:email>alexandre.franke@gmail.com</mal:email>
-      <mal:years>2015</mal:years>
-    </mal:credit>
   </info>
 
   <title>Ajout d'un nouveau compte utilisateur</title>
 
+<comment>
+  <cite date="2012-02-19">shaunm</cite>
+  <p>We need a note in here about password hints. Share content
+  with user-changepassword</p>
+</comment>
+
+<comment>
+  <cite date="2012-03-24">shaunm</cite>
+  <p>Let's add a "Disable account" page. Click the account, click the dots
+  next to "Password", select "Disable this account" from "Type".</p>
+</comment>
+
+<comment>
+<cite date="2012-03-24">shaunm</cite>
+<p>Much of the password dialog simply does not work:</p>
+<list>
+<item><p><gui>Choose a password at next login</gui> does nothing</p></item>
+<item><p><gui>Log in without a password</gui> does nothing</p></item>
+<item><p><gui>Enable this account</gui> does nothing (and it's not even
+clear to me what it should do):
+<link href="https://bugzilla.gnome.org/show_bug.cgi?id=655914">665914</link></p></item>
+<item><p><gui>Hint</gui> does nothing:
+<link href="https://bugzilla.gnome.org/show_bug.cgi?id=647912">647912</link>,
+<link href="https://bugzilla.gnome.org/show_bug.cgi?id=643445">643445</link></p></item>
+</list>
+</comment>
+
   <p>Vous pouvez ajouter plusieurs comptes d'utilisateurs à votre ordinateur.Créez un compte pour chaque membre de votre famille ou de votre entreprise. Chaque utilisateur possède son dossier personnel, ses documents et ses paramètres.</p>
 
-  <p>Vous devez avoir les <link xref="user-admin-explain">privilèges administrateur</link> pour ajouter des comptes utilisateur.</p>
+<steps>
+  <item><p>Click your name on the top bar and select <gui>Settings</gui>.</p></item>
+  <item><p>Open <gui>Users</gui>.</p></item>
 
-  <steps>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Users</gui>.</p>
-    </item>
-    <item>
-      <p>Cliquez sur <gui>Utilisateurs</gui> pour ouvrir le panneau.</p>
-    </item>
-    <item>
-      <p>Cliquez sur le bouton <gui style="button">Déverrouiller</gui> en haut à droite et saisissez votre mot de passe.</p>
-    </item>
-    <item>
-      <p>Dans la liste de comptes à gauche, cliquez sur le bouton <gui style="button">+</gui> pour ajouter un nouveau compte utilisateur.</p>
-    </item>
-    <item>
-      <p>If you want the new user to have
-      <link xref="user-admin-explain">administrative access</link> to the
-      computer, select <gui>Administrator</gui> for the account type.</p>
-      <p>Administrators can do things like add and delete users, install software
-      and drivers, and change the date and time.</p>
-    </item>
-    <item>
-      <p>Enter the new user’s full name. The username will be filled in
-      automatically based on the full name. If you do not like the proposed
-      username, you can change it.</p>
-    </item>
-    <item>
-      <p>You can choose to set a password for the new user, or let them set it
-      themselves on their first login.</p>
-      <p>If you choose to set the password now,
-      you can press the <gui style="button"><media its:translate="no" type="image" src="figures/system-run-symbolic.svg" width="16" height="16">
-      <span its:translate="yes">generate password</span></media></gui> icon to
-      automatically generate a random password.</p>
-    </item>
-    <item>
-      <p>Cliquez sur <gui>Ajouter</gui>.</p>
-    </item>
-  </steps>
+  <item><p><link xref="user-admin-explain">Les privilèges administrateurs</link> sont requis pour ajouter un compte utilisateur. Cliquez sur <gui>Déverrouiller</gui> dans le coin supérieur droit et saisissez votre mot de passe ou le mot de passe administrateur quand il vous est demandé.</p></item>
 
-  <p>If you want to change the password after creating the account, select the
-  account, <gui style="button">Unlock</gui> the panel and press the current
-  password status.</p>
+  <item><p>In the list of accounts on the left, click the
+  <gui style="button">+</gui> button to add a new user account.</p></item>
 
-  <note>
-    <p>In the <gui>Users</gui> panel, you can click the image next to the
-    user’s name to the right to set an image for the account. This image will
-    be shown in the login window. GNOME provides some stock photos you can use,
-    or you can select your own or take a picture with your webcam.</p>
-  </note>
+  <item><p>Si vous souhaitez donner un <link xref="user-admin-explain">accès administrateur</link> au nouvel utilisateur, sélectionnez <gui>Administrateur</gui>comme type de compte. Les administrateurs peuvent par exemple ajouter et supprimer des utilisateurs, installer des logiciels et des pilotes, ou encore modifier la date et l'heure.</p></item>
+
+  <item><p>Saisissez le nom complet de l'utilisateur. Le champ du nom d'utilisateur est rempli automatiquement d'après le nom complet. Si le nom par défaut ne vous convient pas, vous pouvez le modifier.</p></item>
+
+  <item><p>Click <gui>Add</gui>.</p></item>
+
+  <item><p>The account is initially disabled until you choose what to do about
+  the user's password. Select the new account from the list. Under
+  <gui>Login Options</gui> click <gui>Account disabled</gui> next to
+  <gui>Password</gui>. Select <gui>Set a password now</gui> from the
+  <gui>Action</gui> drop-down list, and have the user type their password in the
+  <gui>New password</gui> and <gui>Confirm password</gui> fields.
+  See <link xref="user-goodpassword"/>.</p>
+  <p>Vous pouvez également cliquer sur le bouton situé à côté du champ <gui>Nouveau mot de passe</gui> pour générer un mot de passe sécurisé de manière aléatoire. Attention : ce type de mot de passe est difficile à deviner, mais peut aussi être difficile à retenir.</p></item>
+  <item><p>Cliquez sur <gui>Modifier</gui>.</p></item>
+</steps>
+
+<note><p>Dans la fenêtre <gui>Comptes utilisateur</gui>, cliquez sur l'image à côté du nom d'utilisateur, sur la droite, pour définir une image pour le compte. Cette image s'affichera dans la fenêtre de connexion. GNOME fournit des échantillons d'images, mais vous pouvez aussi sélectionner une de vos photos ou en prendre une nouvelle avec votre Webcam.</p>
+</note>
 
 </page>

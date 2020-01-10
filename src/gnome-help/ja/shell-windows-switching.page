@@ -1,32 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="shell-windows-switching" xml:lang="ja">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" id="shell-windows-switching" xml:lang="ja">
 
   <info>
     <link type="guide" xref="shell-windows#working-with-windows"/>
     <link type="guide" xref="shell-overview#apps"/>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-07" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
 
     <credit type="author">
       <name>GNOME ドキュメンテーションプロジェクト</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
-    <credit type="editor">
-      <name>Shobha Tyagi</name>
-      <email>tyagishobha@gmail.com</email>
-    </credit>
-
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc><keyseq><key>Super</key><key>Tab</key></keyseq> を押します。</desc>
+    <desc>Press <keyseq><key>Super</key><key>Tab</key></keyseq>.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -48,18 +41,6 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Noriko Mizumoto</mal:name>
-      <mal:email>noriko@fedoraproject.org</mal:email>
-      <mal:years>2013, 2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>坂本 貴史</mal:name>
-      <mal:email>o-takashi@sakamocchi.jp</mal:email>
-      <mal:years>2013, 2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>日本GNOMEユーザー会</mal:name>
       <mal:email>http://www.gnome.gr.jp/</mal:email>
       <mal:years>2011, 2012</mal:years>
@@ -68,41 +49,48 @@
 
 <title>ウィンドウを切り替える</title>
 
-  <p>You can see all the running applications that have a graphical user
-  interface in the <em>window switcher</em>. This makes
-  switching between tasks a single-step process and provides a full picture of
-  which applications are running.</p>
+<comment>
+  <cite date="2012-02-19">shaunm</cite>
+  <p>More prose, talk about Alt+`. Maybe a screenshot. 3.0.1</p>
+</comment>
+  <p>すべてのアプリケーションが<gui>ウィンドウスイッチャー</gui>に表示されるため、タスクの切り替えがシングルステップで実行でき、また、起動中のアプリケーションの一覧を確認することもできます。</p>
 
   <p>ワークスペース上で次の手順を行います。</p>
 
-  <steps>
-    <item>
-      <p><keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq> を押して、<gui>ウィンドウスイッチャー</gui>を表示します。</p>
-    </item>
-    <item>
-      <p><key xref="keyboard-key-super">Super</key> を離すと、ウィンドウスイッチャー上の次の (ハイライトされた) ウィンドウに切り替わります。</p>
-    </item>
-    <item>
-      <p>もしくは、<key xref="keyboard-key-super">Super</key> キーを押したままで、<key>Tab</key> を押すと、開いている各ウィンドウを順に切り替えていき、<keyseq><key>Shift</key><key>Tab</key></keyseq> を押すと、逆の順序で切り替えます。</p>
-    </item>
-  </steps>
+<list>
+  <item><p>Press <keyseq><key xref="keyboard-key-super">Super</key><key>Tab
+  </key></keyseq> to bring up the <gui>window switcher</gui>.</p></item>
+  <item><p>Release <key xref="keyboard-key-super">Super</key> to select the next
+  (highlighted) window in the switcher.</p></item>
+  <item><p>Otherwise, still holding down the <key xref="keyboard-key-super">
+  Super</key> key, press <key>Tab</key> to cycle through the list of open
+  windows, or <keyseq><key>Shift</key><key>Tab</key></keyseq> to cycle
+  backwards.</p></item>
+</list>
 
-  <p if:test="platform:gnome-classic">You can also use the window list on the
+<p if:test="platform:gnome-classic">You can also use the window list on the
   bottom bar to access all your open windows and switch between them.</p>
 
-  <note style="tip" if:test="!platform:gnome-classic">
-    <p>ウィンドウスイッチャー上のウィンドウはアプリケーションごとにまとめられています。複数のウィンドウを持つアプリケーションをクリックすると、プレビューがポップダウンします。<key xref="keyboard-key-super">Super</key>を押しながら<key>`</key> キー (<key>Tab</key> の上にあるキー) を押すと、そのアプリケーションのウィンドウ間で切り替えます (訳注: 日本語キーボードの場合は、一般に <keyseq><key>Alt</key><key>半角/全角</key></keyseq>です)。</p>
-  </note>
+<note style="tip" if:test="!platform:gnome-classic">
+  <p>Windows in the window switcher are grouped by application. Previews of
+  applications with multiple windows pop down as you click through. Hold down
+  <key xref="keyboard-key-super">Super</key> and press <key>`</key> (or the key
+  above <key>Tab</key>) to step through the list.</p>
+</note>
 
-  <p><key>→</key> あるいは <key>←</key> キーでウィンドウスイッチャー上のアプリケーションアイコンを移動したり、あるいはマウスでクリックして選択することもできます。</p>
+<note if:test="!platform:gnome-classic">
+  <p>ウィンドウスイッチャーでは、異なるワークスペースで開いているアプリケーションは縦線で区切られて表示されます。</p>
+</note>
 
-  <p>ウィンドウを 1 つだけ持つアプリケーションのプレビューは、<key>↓</key> キーを押すと表示されます。</p>
+<list>
+  <item><p><key>→</key> あるいは <key>←</key> キーでウィンドウスイッチャー上のアプリケーションアイコンを移動したり、あるいはマウスでクリックして選択することもできます。</p></item>
+  <item><p>ウィンドウを 1 つだけ持つアプリケーションのプレビューは、<key>↓</key> キーを押すと表示されます。</p></item>
+</list>
 
-  <p>From the <gui>Activities</gui> overview, click on a
-  <link xref="shell-windows">window</link> to switch to it and leave the
-  overview. If you have multiple
-  <link xref="shell-windows#working-with-workspaces">workspaces</link> open,
-  you can click on each workspace to view the open windows on each
-  workspace.</p>
+<p><gui>アクティビティ</gui>画面で次の操作を実行します。</p>
+<list>
+  <item><p>どれかウィンドウをクリックすると、そのウィンドウに切り替わり、アクティビティ画面から抜けます。複数のワークスペースを使用している場合、各ワークスペースをクリックすることで、そのワークスペースで開いているウィンドウを表示できます。</p>
+  </item>
+</list>
 
 </page>

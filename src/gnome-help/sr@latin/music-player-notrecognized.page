@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="music-player-notrecognized" xml:lang="sr-Latn">
+  <info>
+    <link type="guide" xref="media#music"/>
+    <link type="seealso" xref="music-player-newipod"/>
+
+
+    <credit type="author">
+      <name>Gnomov projekat dokumentacije</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <desc>Dodajte <input>.is_audio_player</input> datoteku da obavestite vaš računar da je to uređaj za puštanje muzike.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+<title>Zašto moj uređaj za puštanje muzike nije prepoznat kada ga priključim?</title>
+
+<p>Ako je vaš zvučni uređaj (MP3 uređaj itd.) priključen na računar ali ga ne vidite u vašem programu za organizovanje muzike,može biti da nije ispravno prepoznat kao uređaj za puštanje muzike.</p>
+
+<p>Pokušajte da isključite uređaj i da ga ponovo priključite. Ako ovo ne pomogne, otvorite upravnika datoteka. Videćete plejer na spisku pod <gui>Uređaji</gui> u bočnoj površi — kliknite na njega da otvorite fasciklu za zvučni uređaj. Sada, kliknite <guiseq><gui>Datoteka</gui><gui>Novi dokument</gui><gui>Prazan dokument</gui></guiseq>, upišite <input>.is_audio_player</input> i pritisnite <key>Unesi</key> (tačka i donje crtice su važne, i sve treba biti napisano malim slovima). Ova datoteka će reći vašem računaru da prepozna uređaj kao uređaj za puštanje zvuka.</p>
+
+<p>Sada, pronađite audio plejer u bočnoj površi upravnika datoteka i izbacite ga (desni klik i <gui>Izbaci</gui>). Isključite ga, zatim ga ponovo priključite. Ovaj put bi trebao biti prepoznat kao uređaj za puštanje zvuka u vašem programu za organizovanje muzike. Ako nije, probajte da zatvorite program za muziku i zatim ga otvorite ponovo.</p>
+
+<note>
+ <p>Ova uputstva neće raditi za iPodove i neke druge uređaje za puštanje muzike. Trebali bi da rade ako je vaš plejer <em>USB skladišni</em> uređaj, ipak; trebalo bi da piše u uputstvu da li jeste.</p>
+</note>
+
+<note>
+ <p>Kada opet pogledate u fasciklu audio plejera, nećete videti datoteku <input>.is_audio_player</input>. Zato što tačka na početku naziva datoteke govori upravniku datoteka da sakrije ovu datoteku. Možete da proverite da je još uvek tu tako što ćete kliknuti <guiseq><gui>Pregled</gui><gui>Prikaži skrivene datoteke</gui></guiseq>.</p>
+</note>
+
+</page>

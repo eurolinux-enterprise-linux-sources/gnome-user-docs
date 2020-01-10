@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="session-language" xml:lang="gl">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="session-language" xml:lang="gl">
 
   <info>
     <link type="guide" xref="prefs-language"/>
+    <desc>Cambiar a un idioma diferente a interface de usuario e o texto da axuda.</desc>
 
     <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
 
     <credit type="author">
       <name>Proxecto de documentación de GNOME</name>
@@ -25,60 +25,45 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Cambiar a un idioma diferente a interface de usuario e o texto da axuda.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2018</mal:years>
+      <mal:years>2011, 2012.</mal:years>
     </mal:credit>
   </info>
 
   <title>Cambiar o idioma que usa</title>
 
+  <comment>
+    <cite date="2012-02-19">shaunm</cite>
+    <p>Explain how to install support for other languages. Requires us
+    to document software installation.</p>
+  </comment>
+
   <p>Pode usar o seu escritorio e aplicativos en decenas de idiomas, sempre e cando teña instalados no seu computador os paquetes de idiomas axeitados.</p>
 
   <steps>
-    <item>
-      <p>Abra a vista de <gui xref="shell-introduction#activities">Actividades</gui> e comece a escribir <gui>Rexión e idioma</gui>.</p>
-    </item>
-    <item>
-      <p>Prema <gui>Rexión e idioma</gui> para abrir o panel.</p>
-    </item>
-    <item>
-      <p>Prema <gui>Idioma</gui>.</p>
-    </item>
-    <item>
-      <p>Select your desired region and language. If your region and language
-      are not listed, click
-      <gui><media its:translate="no" type="image" mime="image/svg" src="figures/view-more-symbolic.svg"><span its:translate="yes">…</span></media></gui>
-      at the bottom of the list to select from all available regions and
-      languages.</p>
-    </item>
-    <item>
-      <p>Prema <gui style="button">Feito</gui> para gardar.</p>
-    </item>
-    <item>
-      <p>Respond to the prompt, <gui>Your session needs to be restarted for
-      changes to take effect</gui> by clicking
-      <gui style="button">Restart Now</gui>, or click
-      <gui style="button">×</gui> to restart later.</p>
-    </item>
+    <item><p>Prema sobre o nome da barra de enderezos e seleccione <gui>Preferencias</gui>.</p></item>
+    <item><p>Abra <gui>Rexión e idioma</gui> e seleccione a lapela <gui>Idioma</gui>.</p></item>
+    <item><p>Seleccione o idioma desexado. A lista inicial só lle mostra un pequeno subconxunto dos idiomas admitidos. Se o seu idioma non está na lista prema <media type="image" mime="image/svg" src="figures/view-more-symbolic.svg"/>. Algunhas traducións poden estar incompletas e certos aplicativos poden non permitir o seu idioma por completo. Calquera texto non traducido, aparecerá no idioma no que se desenvolveu o software de maneira orixinal, normalmente inglés americano.</p></item>
+    <item><p>Responda á pregunta, <gui>A súa sesión precisa reiniciarse para que os cambios se apliquen</gui> premendo <gui style="button">Reiniciar agora</gui>, ou prema <gui style="button">X</gui> para reiniciar máis tarde.</p></item>
   </steps>
-
-  <p>Some translations may be incomplete, and certain applications may not
-  support your language at all. Any untranslated text will appear in the
-  language in which the software was originally developed, usually American
-  English.</p>
 
   <p>Hai algúns cartafoles especiais no cartafol persoal onde os aplicativos poden almacenar cousas como música, imaxes e documentos. Estes cartafoles usan nomes estándar de acordo ao seu idioma. Cando volva a entrar, preguntaráselle se quere cambiar o nome destes cartafoles cos nomes estándar para o idioma seleccionado. Se vai empregar o novo idioma todo o tempo, debe actualizar os nomes dos cartafoles.</p>
 
-  <note style="tip">
-    <p>If there are multiple user accounts on your system, there is a separate
-    instance of the <gui>Region &amp; Language</gui> panel for the login screen.
-    Click the <gui>Login Screen</gui> button at the top right to toggle between
-    the two instances.</p>
-  </note>
+  <section id="system">
+    <title>Cambiar o idioma</title>
+
+    <p>Cando cambia o idioma, só o cambia para a súa conta despois de iniciar a sesión. Tamén pode cambiar o <em>idioma do sistema</em>, que é o idioma usado en sitios como a pantalla de inicio de sesión.</p>
+
+    <steps>
+      <item><p>Prema sobre o nome da barra de enderezos e seleccione <gui>Preferencias</gui>.</p></item>
+      <item><p>Abra <gui>Rexión e idioma</gui> e seleccione a lapela <gui>Idioma</gui>.</p></item>
+      <item><p>Seleccione o botón <gui style="button">Pantalla de inicio de sesión</gui>.</p></item>
+      <item><p>Requírense <link xref="user-admin-explain">privilexios de administrador</link>. Escriba o seu contrasinal, ou o contrasinal de administrador que se lle pida.</p></item>
+      <item><p>Seleccione o idioma desexado. A lista inicial só lle mostra un pequeno subconxunto dos idiomas admitidos. Se o seu idioma non está na lista prema <media type="image" mime="image/svg" src="figures/view-more-symbolic.svg"/>. Algunhas traducións poden estar incompletas e certos aplicativos poden non permitir o seu idioma por completo. Calquera texto non traducido, aparecerá no idioma no que se desenvolveu o software de maneira orixinal, normalmente inglés americano.</p></item>
+    </steps>
+  </section>
 
 </page>

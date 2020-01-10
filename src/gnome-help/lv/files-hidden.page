@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-hidden" xml:lang="lv">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-hidden" xml:lang="lv">
 
   <info>
     <link type="guide" xref="files#faq"/>
+    <desc>Padarīt datni neredzamu, lai to nerādītu datņu pārvaldnieks.</desc>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-29" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="candidate"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -16,46 +15,35 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Padariet datni neredzamu, lai jūs to nevarētu redzēt datņu pārvaldniekā.</desc>
   </info>
 
 <title>Slēpt datni</title>
 
-  <p><app>Datnes</app> datņu pārvaldnieks dod iespēju pēc izvēles paslēpt vai parādīt atsevišķas datnes. Kad datne ir paslēpta, to nerāda datņu pārvaldnieks, tomēr tā vēl joprojām atrodas mapē.</p>
+  <p>GNOME datņu pārvaldnieks dod iespēju pēc izvēles paslēpt vai parādīt atsevišķas datnes. Kad datne ir paslēpta, to nerāda datņu pārvaldnieks, tomēr tā vēl joprojām atrodas mapē.</p>
 
-  <p>Lai paslēptu datni, <link xref="files-rename">pārdēvējiet to</link> ar <file>.</file> jaunā nosaukuma sākumā. Piemēram, lai noslēptu datni <file>piemērs.txt</file>, tas jāpārdēvē par <file>.piemērs.txt</file>.</p>
+  <p>Lai paslēptu datni, <link xref="files-rename">pārsauciet to</link> ar  <key>.</key> jaunā nosaukuma sākumā. Piemēram, lai noslēptu datni <file>piemērs.txt</file>, tas jāpārsauc par <file>.piemērs.txt</file>.</p>
 
 <note>
-  <p>Jūs varat paslēpt mapes tāpat kā datnes. Pārsauciet mapi, ieliekot <file>.</file> tās nosaukuma sākumā.</p>
+  <p>Jūs varat paslēpt mapes tāpat kā datnes. Pārsauciet mapi, ieliekot <key>.</key> tās nosaukuma sākumā.</p>
 </note>
 
 <section id="show-hidden">
  <title>Parādīt visas slēptās datnes</title>
+  <p>Ja vēlaties redzēt visas slēptās datnes mapē, dodieties uz šo mapi un vai nu spiediet <media type="image" src="figures/go-down.png">uz leju vērsto</media> pogu rīkjoslā un izvēlieties <gui>Rādīt slēptās datnes</gui>, vai nospiediet <keyseq><key>Ctrl</key><key>H</key></keyseq>. Jūs redzēsiet visas slēptās datnes līdzās parastajām datnēm.</p>
 
-  <p>Ja vēlaties redzēt visas slēptās datnes mapē, dodieties uz šo mapi un vai nu spiediet skata opciju pogu rīkjoslā un izvēlieties <gui>Rādīt slēptās datnes</gui>, vai nospiediet <keyseq><key>Ctrl</key><key>H</key></keyseq>. Jūs redzēsiet visas slēptās datnes līdzās parastajām datnēm.</p>
-
-  <p>Lai slēptās datnes atkal padarītu neredzamus, vai nu izvēlieties skata opciju pogu rīkjoslā un izvēlieties <gui>Rādīt slēptās datnes</gui>, vai atkal piespiediet <keyseq><key>Ctrl</key><key>H</key></keyseq>.</p>
+  <p>Lai slēptās datnes atkal padarītu neredzamus, vai nu izvēlieties <media type="image" src="figures/go-down.png">uz leju vērsto</media> pogu rīkjoslā un izvēlieties <gui>Rādīt slēptās datnes</gui>, vai atkal piespiediet <keyseq><key>Ctrl</key><key>H</key></keyseq>.</p>
 
 </section>
 
 <section id="unhide">
  <title>Padarīt slēptu datni par parastu</title>
+  <p>Lai padarītu slēptu datni par parastu, dodieties uz mapi, kurā atrodas slēptās datne, un spiediet <media type="image" src="figures/go-down.png">uz leju vērsto</media> pogu un izvēlieties <gui>Rādīt slēptās datnes</gui>. Tad atrodiet vajadzīgo datni un pārsauciet to tā, lai nosaukums nesāktos ar <key>.</key>. Piemēram, lai padarītu redzamu datni <file>.piemērs.txt</file>, tā būtu jāpārsauc par <file>piemērs.txt</file>.</p>
 
-  <p>Lai padarītu slēptu datni par parastu, dodieties uz mapi, kurā atrodas slēptās datne, un spiediet skata opciju pogu un izvēlieties <gui>Rādīt slēptās datnes</gui>. Tad atrodiet vajadzīgo datni un pārdēvējiet to tā, lai nosaukums nesāktos ar <file>.</file>. Piemēram, lai padarītu redzamu datni <file>.piemērs.txt</file>, tā būtu jāpārdēvē par <file>piemērs.txt</file>.</p>
-
-  <p>Kad datne ir pārdēvēta, jūs varat spiest skata opciju pogu rīkjoslā un izvēlēties <gui>Rādīt slēptās datnes</gui> vai piespiest <keyseq><key>Ctrl</key><key>H</key></keyseq>, lai atkal padarītu slēptās datnes neredzamus.</p>
+  <p>Kad datne ir pārsaukta, jūs varat spiest <media type="image" src="figures/go-down.png">uz leju vērsto</media> pogu rīkjoslā un izvēlēties <gui>Rādīt slēptās datnes</gui> vai piespiest <keyseq><key>Ctrl</key><key>H</key></keyseq>, lai atkal padarītu slēptās datnes neredzamus.</p>
 
   <note><p>Pēc noklusējuma slēptās datnes paliks redzamas līdz datņu pārvaldnieka aizvēršanai. Lai iestatītu slēpto datņu rādīšanu vienmēr, skatiet <link xref="nautilus-views"/>.</p></note>
 
-  <note><p>Vairumam slēpto datņu ir <file>.</file> nosaukuma sākumā, bet citām var būt <file>~</file> nosaukuma beigās. Tās ir rezerves kopiju datnes. Skatiet <link xref="files-tilde"/>, lai uzzinātu vairāk.</p></note>
-
+  <note><p>Vairumam slēpto datņu ir <key>.</key> nosaukuma sākumā, bet citām var būt <key>~</key> nosaukuma beigās. Tās ir rezerves kopiju datnes. Skatiet <link xref="files-tilde"/>, lai uzzinātu vairāk.</p></note>
 </section>
-
 </page>

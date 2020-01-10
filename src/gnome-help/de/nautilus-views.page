@@ -4,8 +4,9 @@
   <info>
     <link type="guide" xref="nautilus-prefs" group="nautilus-views"/>
 
+    <desc>Die Standardansicht, -anordnung und -vergrößerungsstufe der Dateiverwaltung festlegen.</desc>
+
     <revision pkgversion="3.8" version="0.2" date="2013-04-03" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-30" status="candidate"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -23,21 +24,19 @@
       <name>Ekaterina Gerasimova</name>
       <email>kittykat3756@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
     <its:rules xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
-
-    <desc>Die vorgegebene Sortierreihenfolge und Gruppierung der Dateiverwaltung festlegen.</desc>
-
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hendrik Knackstedt</mal:name>
-      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
-      <mal:years>2011.</mal:years>
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -47,39 +46,93 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Christian Kirbach</mal:name>
-      <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Mario Blättermann</mal:name>
-      <mal:email>mario.blaettermann@gmail.com</mal:email>
-      <mal:years>2011-2013, 2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Benjamin Steinwender</mal:name>
-      <mal:email>b@stbe.at</mal:email>
-      <mal:years>2014.</mal:years>
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.to</mal:years>
     </mal:credit>
   </info>
 
-<title>Die Einstellungen von <app>Dateien</app> zeigen</title>
+<title>Views preferences in <app>Files</app></title>
 
-<p>Sie können anpassen, wie Dateien und Ordner standardmäßig gruppiert und sortiert werden. Wählen Sie <guiseq><gui style="menu">Dateien</gui> <gui style="menuitem">Einstellungen</gui></guiseq> im oberen Panel, während <app>Dateien</app> geöffnet ist, und wählen Sie den Reiter <gui style="tab">Ansichten</gui> tab.</p>
+<p>You can change the default view for new folders, how files and folders are
+sorted by default, the zoom level for the icon and compact views, and whether
+files are displayed in the tree sidebar. Select
+<guiseq><gui style="menu">Files</gui>
+<gui style="menuitem">Preferences</gui></guiseq> in the top bar while
+<app>Files</app> is open and select the <gui style="tab">Views</gui> tab.</p>
 
 <section id="default-view">
 <title>Vorgabeansicht</title>
 <terms>
   <item>
+    <title><gui>Neue Ordner anzeigen mit</gui></title>
+    <p>By default, new folders are shown in icon view. If you prefer the list
+    view, you can set it here as the default. Alternatively, you can select a
+    different view for each folder as you browse by clicking the
+    <gui style="button">View items as a list</gui> or <gui style="button">View
+    items as a grid of icons</gui> button in the toolbar.</p>
+  </item>
+  <item>
     <title><gui>Objekte anordnen</gui></title>
-    <p>In der Auswahlliste <gui>Objekte anordnen</gui> in den Einstellungen können Sie die vorgegebene Sortierreihenfolge in Ordnern ändern. Sie können die Objekte nach Name, Dateigröße, Dateityp, letztem Änderungsdatum, letztem Zugriff oder Zeitpunkt des Verschiebens in den Papierkorb sortieren.</p>
-    <p its:locNote="TRANSLATORS: use the translation of the tooltip for the     view selector button that opens the view popover in the main window for     'View options'">Um alle Dateien eines einzelnen Ordners in einer anderen <link xref="files-sort">Reihenfolge zu sortieren</link>, klicken Sie auf den Knopf <gui>Ansichtsoptionen</gui> in der Werkzeugleiste und wählen Sie <gui>Name</gui>, <gui>Größe</gui>, <gui>Typ</gui> oder <gui>Zugriffsdatum</gui>. Alternativ klicken Sie auf die Kopfzeilen der Listenspalten in der Listenansicht.</p>
+    <p>You can change the default sort order that is used in folders using the
+    <gui>Arrange items</gui> drop-down list in the preferences to sort by name,
+    file size, file type, when they were last modified, when they were last
+    accessed or when they were trashed.</p>
+    <p its:locNote="TRANSLATORS: use the translation of the tooltip for the     downwards pointing arrow button that opens the preferences menu in the main     window for 'View options'">You can change how <link xref="files-sort">files
+    are sorted</link> in an individual folder by clicking the
+    <media type="image" src="figures/go-down.png">View options</media> button
+    in the toolbar and choosing <gui>By Name</gui>, <gui>By Size</gui>, <gui>By
+    Type</gui> or <gui>By Modification Date</gui>, or by clicking the list
+    column headers in list view. This menu only affects the current folder.</p>
   </item>
   <item>
     <title><gui>Ordner vor Dateien anzeigen</gui></title>
-    <p>Per Voreinstellung zeigt die Dateiverwaltung nicht mehr alle Ordner vor den Dateien. Aktivieren Sie diese Option, um alle Ordner vor Dateien auflisten zu lassen.</p>
+    <p>By default, the file manager no longer shows all folders before files.
+    To see all folders listed before files, enable this option.</p>
+  </item>
+  <item>
+    <title><gui>Verborgene und Sicherungsdateien anzeigen</gui></title>
+    <p>The file manager does not display <link xref="files-hidden">hidden
+    files</link> and folders by default. You can always show hidden files by
+    selecting this option.</p>
+    <p its:locNote="TRANSLATORS: use the translation of the tooltip for the     downwards pointing arrow button that opens the preferences menu in the main     window for 'View options'">You can also show hidden files in an individual
+    window by selecting <gui>Show Hidden Files</gui>, from the
+    <media type="image" src="figures/go-down.png">View options</media> menu in
+    the toolbar.</p>
+  </item>
+</terms>
+</section>
+
+<section id="icon-view-defaults">
+<title>Vorgaben für Symbolansicht</title>
+<terms>
+  <item>
+    <title><gui>Voreingestellte Vergrößerungsstufe</gui></title>
+    <p its:locNote="TRANSLATORS: use the translation of the tooltip for the     downwards pointing arrow button that opens the preferences menu in the main     window for 'View options'">You can make the icons and text larger or
+    smaller by default in icon view using this option. You can also change this
+    setting in an individual folder by clicking the
+    <media type="image" src="figures/go-down.png">View options</media> button
+    in the toolbar and selecting <gui>Zoom In</gui>, <gui>Zoom Out</gui> or
+    <gui>Normal Size</gui>. If you frequently use a larger or smaller zoom
+    level, you can set the default with this option.</p>
+    <p>In icon view, more or fewer
+    <link xref="nautilus-display#icon-captions">captions</link> are shown based
+    on your zoom level.</p>
+   </item>
+  </terms>
+</section>
+
+<section id="list-view-defaults">
+<title>Vorgaben für Listenansicht</title>
+<terms>
+  <item>
+    <title><gui>Voreingestellte Vergrößerungsstufe</gui></title>
+    <p its:locNote="TRANSLATORS: use the translation of the tooltip for the     downwards pointing arrow button that opens the preferences menu in the main     window for 'View options'">You can make the icons and text larger or
+    smaller in list view using this option. You can also do this in an
+    individual folder by clicking the
+    <media type="image" src="figures/go-down.png">View options</media> button
+    in the toolbar and selecting <gui>Zoom In</gui>, <gui>Zoom Out</gui> or
+    <gui>Normal Size</gui>.</p>
   </item>
 </terms>
 </section>

@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="wacom-multi-monitor" xml:lang="gl">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="wacom-multi-monitor" xml:lang="gl">
   <info>
-    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+
+    <revision pkgversion="3.8.0" version="0.2" date="2013-03-09" status="candidate"/>
 
     <link type="guide" xref="wacom"/>
 
@@ -14,47 +11,33 @@
       <email>mdhillca@gmail.com</email>
       <years>2012</years>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-      <years>2015</years>
-    </credit>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <desc>Mapear a tableta Wacom a unha pantala específica.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2018</mal:years>
+      <mal:years>2011, 2012.</mal:years>
     </mal:credit>
   </info>
 
   <title>Seleccione unha pantalla</title>
 
+  <comment>
+    <cite date="2012-04-21" href="mailto:mdhillca@gmail.com">Michael Hill</cite>
+    <p>In a multi-monitor setup, the user is able to select which monitor is
+     mapped by the graphics tablet.</p>
+  </comment>
+
 <steps>
-  <item>
-    <p>Abra a vista de <gui xref="shell-introduction#activities">Actividades</gui> e comece a escribir <gui>Tableta Wacom</gui>.</p>
-  </item>
-  <item>
-    <p>Prema na <gui>Tableta Wacom</gui>para abrir o panel.</p>
-    <!-- TODO: document how to connet the tablet using Bluetooth/add link -->
-    <note style="tip"><p>Se non se detecta ningunha tableta, pediráselle que <gui>Conecte ou acenda a súa tableta Wacom</gui>.
-Prema a ligazón <gui>Preferencias de Bluetooth</gui> para conectar unha tableta inarámica.</p></note>
+  <item><p>Prema sobre o nome da barra de enderezos e seleccione <gui>Preferencias</gui>.</p></item>
+  <item><p>Abra <gui>Tableta Wacom</gui>.</p>
+     <note style="tip"><p>Se non se detecta ningunha tableta, pediráselle que <gui>Conecte ou acenda a súa tableta Wacom</gui>.</p></note>
   </item>
   <item><p>Prema <gui>Mapa que monitorizar…</gui>.</p></item>
   <item><p>Marque <gui>Mapear a unha única pantalla</gui>.</p></item>
   <item><p>Ao carón de <gui>Saída</gui>, seleccione a pantalla que quere recibir a entrada da súa tableta gráfica.</p>
      <note style="tip"><p>Só se pode seleccionar as pantallas que están configuradas.</p></note>
-  </item>
-  <item>
-    <p>Switch <gui>Keep aspect ratio (letterbox)</gui> to <gui>ON</gui> to
-    match the drawing area of the tablet to the proportions of the monitor.
-      This setting, also called <em>force proportions</em>,
-      <em>letterboxes</em> the drawing area on a tablet to correspond more
-      directly to a display. For example, a 4∶3 tablet would be mapped so that
-      the drawing area would correspond to a widescreen display.</p>
   </item>
   <item><p>Prema <gui>Pechar</gui>.</p></item>
 </steps>

@@ -1,33 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="accounts-remove" xml:lang="ca">
 
-  <info>
-    <link type="guide" xref="accounts" group="remove"/>
-    <link type="seealso" xref="accounts-disable-service"/>
+<info>
+  <desc>Completely remove an online account.</desc>
+  <link type="guide" xref="accounts"/>
+  <link type="seealso" xref="accounts-disable-service"/>
+  <revision pkgversion="3.5.5" version="0.1" date="2012-08-15" status="draft"/>
+  <credit type="author">
+    <name>Michael Hill</name>
+    <email>mdhillca@gmail.com</email>
+  </credit>
 
-    <revision pkgversion="3.5.5" date="2012-08-15" status="draft"/>
-    <revision pkgversion="3.9.92" date="2013-09-18" status="draft"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-
-    <credit type="author">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Shaun McCance</name>
-      <email>shaunm@gnome.org</email>
-      <years>2015</years>
-    </credit>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Traieu l'accés a un proveïdor de serveis en línia de les vostres aplicacions.</desc>
-  
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>David Aguilera</mal:name>
       <mal:email>david.aguilera.moncusi@gmail.com</mal:email>
@@ -35,35 +18,21 @@
     </mal:credit>
   </info>
 
-  <title>Suprimiu un compte</title>
+<title>Remove an account</title>
 
-  <p>Podeu eliminar un compte en línia que ja no voleu utilitzar.</p>
+<steps>
+  <item><p>Open the <app>Online Accounts</app> settings from the Activities
+  overview.</p></item>
+  <item><p>Select the account you wish to remove.</p></item>
+  <item><p>Click the <key>-</key> button in the lower-left portion of the
+   window.</p></item>
+ <item><p>Click <gui>Remove</gui>.</p></item>
+</steps>
 
-  <note style="tip">
-    <p>Molts serveis en línia proporcionen un testimoni d'autorització que GNOME emmagatzema en comptes de la vostra contrasenya. Si elimineu un compte, també heu de revocar aquest certificat en el servei en línia. Això garantirà que cap altra aplicació o lloc web es pugui connectar amb aquest servei utilitzant l'autorització del GNOME.</p>
+<note style="tip">
+  <p>Instead of deleting the account completely, it's possible to
+   <link xref="accounts-disable-service">restrict the services</link> accessed
+   by your desktop.</p>
+</note>
 
-    <p>La forma de revocar l'autorització depèn del proveïdor del servei. Comproveu la vostra configuració al lloc web del proveïdor per a aplicacions o llocs connectats o autoritzats. Busqueu una aplicació anomenada "GNOME" i suprimiu-la.</p>
-  </note>
-
-  <steps>
-    <item>
-      <p>Obriu el resum de les <gui xref="shell-introduction#activities">Activititats</gui> i comenceu a escriure <gui>Comptes en línia</gui>.</p>
-    </item>
-    <item>
-      <p>Feu clic a <gui>Comptes en línia</gui> per obrir el panell.</p>
-    </item>
-    <item>
-      <p>Seleccioneu el compte que voleu suprimir.</p>
-    </item>
-    <item>
-      <p>Cliqueu al botó <gui>-</gui> a la cantonada inferior esquerra de la finestra.</p>
-    </item>
-    <item>
-      <p>Cliqueu <gui>Suprimir</gui> al diàleg de confirmació.</p>
-    </item>
-  </steps>
-
-  <note style="tip">
-    <p>En comptes d'esborrar totalment el compte, es possible <link xref="accounts-disable-service">restringir els serveis</link> als qual accedeix el vostre escriptori.</p>
-  </note>
 </page>

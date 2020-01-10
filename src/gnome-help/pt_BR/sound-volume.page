@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="sound-volume" xml:lang="pt-BR">
-
   <info>
     <link type="guide" xref="media#sound"/>
-
-    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-30" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -18,9 +13,10 @@
       <email>shaunm@gnome.org</email>
     </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
 
     <desc>Configure o volume sonoro para o computador e controle a sonoridade de cada aplicativo.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Rodolfo Ribeiro Gomes</mal:name>
@@ -29,56 +25,31 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Enrico Nicoletto</mal:name>
       <mal:email>liverig@gmail.com</mal:email>
       <mal:years>2013.</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>João Santana</mal:name>
-      <mal:email>joaosantana@outlook.com</mal:email>
-      <mal:years>2013.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Fontenelle</mal:name>
-      <mal:email>rafaelff@gnome.org</mal:email>
-      <mal:years>2012-2018.</mal:years>
-    </mal:credit>
   </info>
 
-<title>Alterando o volume do som</title>
+<title>Alterar o volume do som</title>
 
-  <p>Para alterar o volume sonoro, abra o <gui xref="shell-introduction#yourname">menu de sistema</gui> no lado direito na barra superior e mova a barra deslizante de volume para esquerda ou direita. Você pode desligar completamente arrastando-o completamente para a esquerda.</p>
+  <p>Para alterar o volume sonoro, clique no ícone de som na barra superior (ele se parece com um alto-falante) e mova a barra deslizante de volume. Você pode desligar completamente arrastando-o completamente para a esquerda.</p>
 
-  <p>Alguns teclados têm teclas que lhe permitem controlar o volume. Normalmente elas se parecem com alto-falantes estilizados com ondas saindo deles. Elas costumam ficar próximas às teclas “F” (teclas de função) na parte superior. Em teclados de notebooks, ficam frequentemente nas teclas “F”. Mantenha pressionada a tecla <key>Fn</key> do teclado para usá-las.</p>
+  <p>Alguns teclados têm teclas que lhe permitem controlar o volume. Normalmente elas se parecem com alto-falantes estilizados com ondas saindo deles. Elas costumam ficar próximas às teclas "F" (teclas de função) na parte superior. Em teclados de laptops, ficam frequentemente nas teclas "F". Mantenha pressionada a tecla <key>Fn</key> do teclado para usá-las.</p>
 
-  <p>Se você tem alto-falantes externos, você também pode alterar o volume usando o controle de volume dos alto-falantes. Alguns fones de ouvido têm um controle de volume próprio também.</p>
+  <p>Claro, se você tem alto-falantes externos, você também pode alterar o volume usando o controle disponível neles mesmos. Alguns fones de ouvido tem controle próprio também.</p>
 
 <section id="apps">
  <title>Alterando o volume sonoro para aplicativos individuais</title>
-
-  <p>Você pode alterar o volume de um aplicativo e deixar o volume inalterado para outros. Isso é útil se você estiver ouvindo música e navegando pela web, por exemplo. Você pode desligar o áudio no navegador de forma que os sons de sites não interrompam a música.</p>
-
-  <p>Alguns aplicativos possuem controles de volume nas janelas principais. Se seu aplicativo possui seu controle de volume, use aquele para alterar o volume. Se não:</p>
-
-    <steps>
-    <item>
-      <p>Abra o panorama de <gui xref="shell-introduction#activities">Atividades</gui> e comece a digitar <gui>Som</gui>.</p>
-    </item>
-    <item>
-      <p>Clique em <gui>Som</gui> para abrir o painel.</p>
-    </item>
-    <item>
-      <p>Acesse a aba <gui>Aplicativos</gui> e altere o volume do aplicativo listado lá.</p>
-
-  <note style="tip">
-    <p>Somente aplicativos que estejam reproduzindo sons serão listados. Se um aplicativo está reproduzindo sons e não está listado, pode não haver suporte para ele que lhe permita controlar seu volume desta maneira. Nesse caso, você não pode alterar seu volume.</p>
-  </note>
-    </item>
-
-  </steps>
-
+ <p>Você pode alterar o volume de um aplicativo, mas deixar inalterado para os demais. Isso é útil se você estiver escutando música e navegando pela web, por exemplo. Você pode desligar o volume no navegador para que os sons das páginas web não interrompam a música.</p>
+ <p>Alguns aplicativos têm controles de volume nas suas janelas principais. Se seu aplicativo tem um desses, use-o para alterar o volume. Do contrário, clique no ícone de som na barra superior e selecione <gui>Preferências de som</gui>. Vá para a aba <gui>Aplicativos</gui> e altere o volume do aplicativo lá.</p>
+ <p>Somente aplicativos que estejam reproduzindo sons estarão listados. Se um aplicativo está emitindo sons e não está listado, pode não haver suporte para ele que lhe permita controlar seu volume desta maneira. Nesse caso, você não pode alterar seu volume.</p>
 </section>
 
 </page>

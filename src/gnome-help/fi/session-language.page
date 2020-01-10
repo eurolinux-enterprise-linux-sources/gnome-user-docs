@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="session-language" xml:lang="fi">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="session-language" xml:lang="fi">
 
   <info>
     <link type="guide" xref="prefs-language"/>
+    <desc>Vaihda käyttöliittymän ja ohjeiden kieltä.</desc>
 
     <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
 
     <credit type="author">
       <name>Gnomen dokumentointiprojekti</name>
@@ -25,63 +25,64 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Vaihda käyttöliittymän ja ohjeiden kieltä.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Timo Jyrinki</mal:name>
       <mal:email>timo.jyrinki@iki.fi</mal:email>
       <mal:years>2012.</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Jiri Grönroos</mal:name>
-      <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
-      <mal:years>2012-2018.</mal:years>
-    </mal:credit>
   </info>
 
   <title>Vaihda käytettävä kieli</title>
 
+  <comment>
+    <cite date="2012-02-19">shaunm</cite>
+    <p>Explain how to install support for other languages. Requires us
+    to document software installation.</p>
+  </comment>
+
   <p>Voit käyttää tietokonettasi ja sovelluksiasi kymmenillä eri kielillä, jos olet asentanut kielipaketit tietokoneeseen.</p>
 
   <steps>
-    <item>
-      <p>Avaa <gui xref="shell-introduction#activities">Toiminnot</gui>-yleisnäkymä ja ala kirjoittamaan <gui>Alue ja kielet</gui>.</p>
-    </item>
-    <item>
-      <p>Napsauta <gui>Alue ja kielet</gui> avataksesi paneelin.</p>
-    </item>
-    <item>
-      <p>Napsauta <gui>Kieli</gui>.</p>
-    </item>
-    <item>
-      <p>Select your desired region and language. If your region and language
-      are not listed, click
-      <gui><media its:translate="no" type="image" mime="image/svg" src="figures/view-more-symbolic.svg"><span its:translate="yes">…</span></media></gui>
-      at the bottom of the list to select from all available regions and
-      languages.</p>
-    </item>
-    <item>
-      <p>Click <gui style="button">Done</gui> to save.</p>
-    </item>
-    <item>
-      <p>Respond to the prompt, <gui>Your session needs to be restarted for
-      changes to take effect</gui> by clicking
-      <gui style="button">Restart Now</gui>, or click
-      <gui style="button">×</gui> to restart later.</p>
-    </item>
+    <item><p>Napsauta nimeäsi yläpalkista ja valitse <gui>Järjestelmän asetukset</gui></p></item>
+    <item><p>Open <gui>Region &amp; Language</gui> and select the
+    <gui>Language</gui> tab.</p></item>
+    <item><p>Select your desired language.
+    The initial list only shows a small subset of the supported languages.
+    If your language is not listed, click
+    <media type="image" mime="image/svg" src="figures/view-more-symbolic.svg"/>.
+    Some translations may be incomplete, and certain applications may not
+    support your language at all. Any untranslated text will appear in the
+    language in which the software was originally developed, usually American
+    English.</p></item>
+    <item><p>Respond to the prompt, <gui>Your session needs to be restarted for
+    these changes to take effect</gui> by clicking
+    <gui style="button">Restart Now</gui>, or click <gui style="button">X</gui>
+    to restart later.</p></item>
   </steps>
-
-  <p>Jotkin käännökset voivat olla puutteellisia, ja jotkin sovellukset eivät välttämättä sisällä lainkaan tukea kielellesi. Kaikki kääntämättömät viestit näkyvät ohjelmiston kehityksen aikaisella alkuperäiskielellä, yleensä amerikanenglantina.</p>
 
   <p>Jotkin kansiot käyttävät kielikohtaista nimeä. Näissä kansioissa säilytetään muun muassa musiikkia, kuvia ja asiakirjoja. Kun kirjaudut kielen vaihtamisen jälkeen seuraavan kerran sisään, sinulta kysytään haluatko vaihtaa näiden kansioiden nimet omalle kielellesi. Jos aiot käyttää kieltä jatkossa, sinun kannattaa päivittää kansioiden nimet.</p>
 
-  <note style="tip">
-    <p>If there are multiple user accounts on your system, there is a separate
-    instance of the <gui>Region &amp; Language</gui> panel for the login screen.
-    Click the <gui>Login Screen</gui> button at the top right to toggle between
-    the two instances.</p>
-  </note>
+  <section id="system">
+    <title>Vaihda järjestelmän kieli</title>
+
+    <p>Kun vaihdat kieltä, muutos otetaan käyttöön vain tililläsi kirjautumisen jälkeen. Voit myös vaihtaa <em>järjestelmän kieltä</em>, jota käytetään mm. kirjautumisruudussa.</p>
+
+    <steps>
+      <item><p>Napsauta nimeäsi yläpalkista ja valitse <gui>Järjestelmän asetukset</gui></p></item>
+      <item><p>Open <gui>Region &amp; Language</gui> and select the
+      <gui>Language</gui> tab.</p></item>
+      <item><p>Select the <gui style="button">Login Screen</gui> button.</p></item>
+      <item><p>Tarvitset <link xref="user-admin-explain">ylläpitäjän oikeudet</link>. Anna salasanasi tai pyydetyn ylläpitotilin salasana.</p></item>
+      <item><p>Select your desired language.
+      The initial list only shows a small subset of the supported languages.
+      If your language is not listed, click
+      <media type="image" mime="image/svg" src="figures/view-more-symbolic.svg"/>.
+      Some translations may be incomplete, and certain applications may not
+      support your language at all. Any untranslated text will appear in the
+      language in which the software was originally developed, usually American
+      English.</p></item>
+    </steps>
+  </section>
 
 </page>

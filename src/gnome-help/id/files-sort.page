@@ -2,11 +2,10 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-sort" xml:lang="id">
 
   <info>
-    <link type="guide" xref="files#common-file-tasks"/>
+    <link type="guide" xref="files"/>
+    <desc>Atur berkas berdasarkan nama, ukuran, jenis, atau kapan mereka diubah.</desc>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-25" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -20,25 +19,20 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Atur berkas berdasarkan nama, ukuran, jenis, atau kapan mereka diubah.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Andika Triwidada</mal:name>
       <mal:email>andika@gmail.com</mal:email>
-      <mal:years>2011-2014, 2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Ahmad Haris</mal:name>
-      <mal:email>ahmadharis1982@gmail.com</mal:email>
-      <mal:years>2017.</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
 
 <title>Urutkan berkas dan folder</title>
+
+<comment>
+ <p>May benefit from figures illustrating the different views.</p>
+</comment>
 
 <p>You can sort files in different ways in a folder, for example by sorting them
 in order of date or file size. See <link xref="#ways"/> below for a list of
@@ -50,60 +44,62 @@ are using. You can change the current view using the list or icon buttons in the
 toolbar.</p>
 
 <section id="icon-view">
-  <title>Tilikan ikon</title>
-
-  <p>To sort files in a different order, click the view options button in the
-  <!-- FIXME: Get a tooltip added for "View options" -->
-  toolbar and choose <gui>By Name</gui>, <gui>By Size</gui>, <gui>By
-  Type</gui>, <gui>By Modification Date</gui>, or <gui>By Access
-  Date</gui>.</p>
-
-  <p>As an example, if you select <gui>By Name</gui>, the files will be sorted
-  by their names, in alphabetical order. See <link xref="#ways"/> for other
-  options.</p>
-
-  <p>You can sort in the reverse order by selecting <gui>Reversed Order</gui>
-  from the menu.</p>
-
+ <title>Tilikan ikon</title>
+ <p>To sort files in a different order, click the
+ <media type="image" src="figures/go-down.png">down</media> button in the
+ toolbar and choose <gui>By Name</gui>, <gui>By Size</gui>, <gui>By Type</gui>
+ or <gui>By Modification Date</gui>.</p>
+ <p>As an example, if you select <gui>By Name</gui>, the files will be sorted by
+ their names, in alphabetical order. See <link xref="#ways"/> for other options.</p>
+ <p>You can sort in the reverse order by selecting <gui>Reversed Order</gui>
+ from the pull-down menu.</p>
 </section>
 
 <section id="list-view">
-  <title>Tilikan daftar</title>
-
-  <p>To sort files in a different order, click one of the column headings in
-  the file manager. For example, click <gui>Type</gui> to sort by file type.
-  Click the column heading again to sort in the reverse order.</p>
-  <p>In list view, you can show columns with more attributes and sort on those
-  columns. Click the view options button in the toolbar, pick <gui>Visible
-  <!-- FIXME: Get a tooltip added for "View options" -->
-  Columns…</gui> and select the columns that you want to be visible. You will
-  then be able to sort by those columns. See <link xref="nautilus-list"/> for
-  descriptions of available columns.</p>
-
+ <title>Tilikan daftar</title>
+ <p>To sort files in a different order, click one of the column headings in the
+ file manager. For example, click <gui>Type</gui> to sort by file type. Click
+ the column heading again to sort in the reverse order.</p>
+ <p>In list view, you can show columns with more attributes and sort on those
+ columns. Click the
+ <media type="image" src="figures/go-down.png">down</media> button in the
+ toolbar, pick <gui>Visible Columns</gui> and select the columns that you want
+ to be visible. You will then be able to sort by those columns. See
+ <link xref="nautilus-list"/> for descriptions of available columns.</p>
 </section>
 
+<!--
+<section id="compact-view">
+ <title>Compact view</title>
+ <p>You can sort files in Compact view in the same way that you can sort them in
+ the Icon view. The only difference is that you can't manually position the files
+ anywhere you want; they are always organized as a list in this view.</p>
+</section>
+-->
+
 <section id="ways">
-  <title>Cara mengurutkan berkas</title>
-
-  <terms>
-    <item>
-      <title>Nama</title>
-      <p>Sorts alphabetically by the name of the file.</p>
-    </item>
-    <item>
-      <title>Ukuran</title>
-      <p>Mengurut berdasarkan ukuran berkas (berapa banyak ruang disk yang dia pakai). Urutan baku dari terkecil sampai terbesar.</p>
-    </item>
-    <item>
-      <title>Tipe</title>
-      <p>Mengurut secara alfabetis menurut tipe berkas. Berkas-berkas dengan tipe sama dikelompokkan menjadi satu, lalu diurut berdasarkan nama.</p>
-    </item>
-    <item>
-      <title>Terakhir Diubah</title>
-      <p>Mengurut berdasarkan tanggal dan waktu berkas tersebut terakhir berubah. Urutan baku dari terlama sampai terbaru.</p>
-    </item>
-  </terms>
-
+ <title>Cara mengurutkan berkas</title>
+ <terms>
+  <item>
+   <title>Berdasarkan Nama</title>
+   <p>Sorts alphabetically by the name of the file.</p>
+  </item>
+  <item>
+   <title>Berdasarkan Ukuran</title>
+   <p>Sorts by the size of the file (how much disk space it takes up). Sorts
+ from smallest to largest by default.</p>
+  </item>
+  <item>
+   <title>Berdasarkan Jenis</title>
+   <p>Sorts alphabetically by the file type. Files of the same type are grouped
+ together, then sorted by name.</p>
+  </item>
+  <item>
+   <title>Berdasarkan Tanggal Perubahan</title>
+   <p>Sorts by the date and time that a file was last changed. Sorts from oldest
+ to newest by default.</p>
+  </item>
+ </terms>
 </section>
 
 </page>

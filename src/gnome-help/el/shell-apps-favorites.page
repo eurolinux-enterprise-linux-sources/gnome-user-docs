@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" version="1.0 if/1.0" id="shell-apps-favorites" xml:lang="el">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" id="shell-apps-favorites" xml:lang="el">
 
   <info>
     <link type="seealso" xref="shell-apps-open"/>
-    <link type="guide" xref="shell-overview#desktop"/>
+    <link type="guide" xref="shell-overview#apps"/>
 
-    <revision pkgversion="3.6.0" date="2012-10-14" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <desc>Προσθέστε (ή αφαιρέστε) εικονίδια προγραμμάτων που χρησιμοποιούνται συχνά στο αρχικό πλαίσιο.</desc>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-10-14" status="review"/>
 
     <credit type="author">
       <name>Έργο Τεκμηρίωσης GNOME</name>
@@ -23,66 +24,57 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Προσθέστε (ή αφαιρέστε) εικονίδια προγραμμάτων που χρησιμοποιούνται συχνά στο ταμπλό.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
-      <mal:email>team@gnome.gr</mal:email>
-      <mal:years>2009-2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
       <mal:email>dmtrs32@gmail.com</mal:email>
-      <mal:years>2012-2015</mal:years>
+      <mal:years>2012, 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:name> Φώτης Τσάμης</mal:name>
       <mal:email>ftsamis@gmail.com</mal:email>
       <mal:years>2009</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:name> Μάριος Ζηντίλης</mal:name>
       <mal:email>m.zindilis@dmajor.org</mal:email>
       <mal:years>2009, 2010</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Θάνος Τρυφωνίδης</mal:name>
-      <mal:email>tomtryf@gnome.org</mal:email>
-      <mal:years>2012-2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Μαρία Μαυρίδου</mal:name>
-      <mal:email>mavridou@gmail.com</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:name> Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
     </mal:credit>
   </info>
 
-  <title>Βάλτε τις αγαπημένες σας εφαρμογές στο ταμπλό</title>
+<title>Βάλτε τις αγαπημένες σας εφαρμογές στο αρχικό πλαίσιο</title>
 
-  <p>Για να προσθέσετε μια εφαρμογή στο <link xref="shell-introduction#activities">ταμπλό</link> για εύκολη πρόσβαση:</p>
-
-  <steps>
-    <item>
-      <p if:test="!platform:gnome-classic">Ανοίξτε την επισκόπηση <gui xref="shell-introduction#activities">Δραστηριότητες</gui> κάνοντας κλικ στις <gui>Δραστηριότητες</gui> πάνω αριστερά της οθόνης</p>
-      <p if:test="platform:gnome-classic">Κάντε κλικ στο μενού <gui xref="shell-introduction#activities">Εφαρμογές</gui> στα πάνω αριστερά της οθόνης και επιλέξτε το στοιχείο <gui>Δραστηριότητες</gui> από το μενού.</p></item>
-    <item>
-      <p>Κάντε κλικ στο κουμπί πλέγματος στο αρχικό πλαίσιο και βρείτε την εφαρμογή που θέλετε να προσθέσετε.</p>
-    </item>
-    <item>
-      <p>Δεξί κλικ στο εικονίδιο εφαρμογής και επιλέξτε <gui>Προσθήκη στα αγαπημένα</gui>.</p>
-      <p>Εναλλακτικά, μπορείτε να κάνετε κλικ και να σύρετε το εικονίδιο στο ταμπλό</p>
-    </item>
+  <p>Για να προσθέσετε μια εφαρμογή στο <link xref="shell-terminology">αρχικό πλαίσιο</link> για εύκολη πρόσβαση:</p>
+ <steps>
+  <item><p if:test="!platform:gnome-classic">Open the
+  <link xref="shell-terminology">Activities overview</link> by clicking
+  <gui>Activities</gui> at the top left of the screen</p>
+  <p if:test="platform:gnome-classic">Click the
+  <link xref="shell-terminology"><gui>Applications</gui> menu</link> at the top 
+  left of the screen and choose the <gui>Activities Overview</gui> item from the 
+  menu.</p></item>
+  <item><p>Click the grid button in the dash and find the application you want to
+  add.</p></item>
+  <item><p>Right-click the application icon and select <gui>Add to
+  Favorites</gui>.</p>
+  <p>Alternatively, you can click-and-drag the icon into the dash.</p></item>
+  
   </steps>
 
-  <p>Για να αφαιρέσετε ένα εικονίδιο εφαρμογής από το ταμπλό, κάντε δεξί κλικ στο εικονίδιο της εφαρμογής και επιλέξτε <gui>Αφαίρεση από τα αγαπημένα</gui>.</p>
+  <p>To remove an application icon from the dash, right-click the application
+  icon and select <gui>Remove from Favorites</gui>.</p>
 
-  <note style="tip" if:test="platform:gnome-classic"><p>Οι αγαπημένες σας εφαρμογές εμφανίζονται επίσης στην ενότητα <gui>Αγαπημένα</gui> του μενού <gui xref="shell-introduction#activities">Εφαρμογές</gui>.</p>
+  <note style="tip" if:test="platform:gnome-classic"><p>Favorite applications also
+  appear in the <gui>Favorites</gui> section of the
+  <link xref="shell-terminology"><gui>Applications</gui> menu</link>.</p>
   </note>
 
 </page>

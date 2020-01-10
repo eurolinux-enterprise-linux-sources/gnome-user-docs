@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task a11y" id="a11y-stickykeys" xml:lang="de">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task a11y" id="a11y-stickykeys" xml:lang="de">
   <info>
     <link type="guide" xref="a11y#mobility" group="keyboard"/>
     <link type="guide" xref="keyboard" group="a11y"/>
 
-    <revision pkgversion="3.8.0" date="2013-03-13" status="candidate"/>
-    <revision pkgversion="3.9.92" date="2013-09-18" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="final"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -24,17 +18,20 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
     <desc>Tastenkombinationen Taste für Taste tippen, statt alle Tasten gleichzeitig gedrückt halten zu müssen.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hendrik Knackstedt</mal:name>
-      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
-      <mal:years>2011.</mal:years>
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -44,42 +41,32 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Christian Kirbach</mal:name>
-      <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Mario Blättermann</mal:name>
-      <mal:email>mario.blaettermann@gmail.com</mal:email>
-      <mal:years>2011-2013, 2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Benjamin Steinwender</mal:name>
-      <mal:email>b@stbe.at</mal:email>
-      <mal:years>2014.</mal:years>
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.to</mal:years>
     </mal:credit>
   </info>
 
   <title>Klebrige Tasten aktivieren</title>
 
-  <p><em>Klebrige Tasten</em> erlauben es Ihnen, Tastenkombinationen Taste für Taste einzugeben, anstatt alle Tasten gleichzeitig drücken zu müssen. Zum Beispiel wechselt die Tastenkombination <keyseq><key xref="keyboard-key-super">Super</key><key>Tabulator</key></keyseq> zwischen Fenstern. Ohne eingeschaltete klebrige Tasten müssten Sie beide Tasten gleichzeitig gedrückt halten; mit eingeschalteten klebrigen Tasten würden Sie <key>Super</key> drücken und dann <key>Tabulator</key>, um dasselbe zu erreichen.</p>
+  <p><em>Sticky keys</em> allows you to type keyboard shortcuts one key at a
+  time rather than having to hold down all of the keys at once. For example,
+  the <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq>
+  shortcut switches between windows. Without sticky keys turned on, you would
+  have to hold down both keys at the same time; with sticky keys turned on, you
+  would press <key>Super</key> and then <key>Tab</key> to do the same.</p>
 
   <p>Sie möchten vielleicht klebrige Tasten einschalten, wenn es Ihnen schwer fällt, mehrere Tasten gleichzeitig gedrückt zu halten.</p>
 
   <steps>
     <item>
-      <p>Öffnen Sie die <gui xref="shell-introduction#activities">Aktivitäten</gui>-Übersicht und tippen Sie <gui>Barrierefreiheit</gui> ein.</p>
+      <p>Klicken Sie auf Ihren Namen im oberen Panel und wählen Sie <gui>Einstellungen</gui>.</p>
     </item>
     <item>
-      <p>Klicken Sie auf <gui>Barrierefreiheit</gui>, um das Panel zu öffnen.</p>
+      <p>Öffnen Sie <gui>Barrierefreiheit</gui> und wählen Sie den Reiter <gui>Texteingabe</gui>.</p>
     </item>
     <item>
-      <p>Öffnen Sie <gui>Tippassistent (AccessX)</gui> und wählen Sie den Reiter <gui>Texteingabe</gui>.</p>
-    </item>
-    <item>
-      <p>Stellen Sie <gui>Klebrige Tasten</gui> auf <gui>AN</gui>.</p>
+      <p>Schalten Sie <gui>Klebrige Tasten</gui> ein.</p>
     </item>
   </steps>
 
@@ -91,7 +78,12 @@
 
   <p>Wenn Sie zwei Tasten gleichzeitig drücken, können Sie klebrige Tasten kurzfristig ausschalten, um eine Tastenkombination auf die »übliche« Art und Weise einzugeben.</p>
 
-  <p>Wenn Sie etwa klebrige Tasten aktiviert haben, aber <key>Super</key> und <key>Tabulator</key> gleichzeitig drücken, würde klebrige Tasten nicht darauf warten, dass Sie eine weitere Taste drücken, wenn Sie diese Option eingeschaltet hatten. Es <em>würde</em> aber warten, wenn Sie nur eine Taste gedrückt hätten. Dies ist nützlich, wenn Sie zwar einige Tastenkombinationen drücken können (zum Beispiel solche, deren Tasten nahe beieinander liegen), aber andere nicht.</p>
+  <p>For example, if you have sticky keys turned on but press <key>Super</key>
+  and <key>Tab</key> simultaneously, sticky keys would not wait for you to
+  press another key if you had this option turned on. It <em>would</em> wait if
+  you only pressed one key, however. This is useful if you are able to press
+  some keyboard shortcuts simultaneously (for example, keys that are close
+  together), but not others.</p>
 
   <p>Wählen Sie <gui>Deaktivieren, wenn zwei Tasten zusammen gedrückt werden</gui>, um das einzuschalten.</p>
 

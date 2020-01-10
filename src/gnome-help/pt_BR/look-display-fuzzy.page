@@ -2,11 +2,10 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="look-display-fuzzy" xml:lang="pt-BR">
 
   <info>
-    <link type="guide" xref="hardware-problems-graphics"/>
+   <link type="guide" xref="hardware-problems-graphics"/>
+   <desc>A resolução da tela pode estar configurada incorretamente.</desc>
 
     <revision pkgversion="3.8.0" version="0.3" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.9.92" date="2013-10-11" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
 
     <credit type="author">
       <name>Projeto de documentação do GNOME</name>
@@ -24,14 +23,7 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Shobha Tyagi</name>
-      <email>tyagishobha@gmail.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>A resolução da tela pode estar configurada incorretamente.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Rodolfo Ribeiro Gomes</mal:name>
@@ -40,21 +32,15 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Enrico Nicoletto</mal:name>
       <mal:email>liverig@gmail.com</mal:email>
       <mal:years>2013.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>João Santana</mal:name>
-      <mal:email>joaosantana@outlook.com</mal:email>
-      <mal:years>2013.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Fontenelle</mal:name>
-      <mal:email>rafaelff@gnome.org</mal:email>
-      <mal:years>2012-2018.</mal:years>
     </mal:credit>
   </info>
 
@@ -62,34 +48,37 @@
 
 <p>Isso ocorre porque a resolução do monitor que você configurou não é a correta para a sua tela.</p>
 
-<p>Para resolver isso, abra o panorama de <gui xref="shell-introduction#activities">Atividades</gui> e comece a digitar <gui>Telas</gui>. Clique em <gui>Telas</gui> para abrir o painel. Experimente algumas opções de <gui>Resolução</gui> e ajuste para aquela que fizer sua tela parecer melhor.</p>
+<p>Para resolver isso, clique no seu nome na barra superior e vá em <gui>Configurações do sistema</gui>. Na seção Hardware, escolha <gui>Monitores</gui>. Experimente algumas opções de <gui>Resolução</gui> e ajuste para aquela que fizer sua tela parecer melhor.</p>
+
+<comment>
+  <cite date="2012-02-19">shaunm</cite>
+  <p>Would like a little more explanation on native resolution, which
+  is generally only applicable on LCDs. There's a stub for using two
+  monitors. Link from section below when it's added.</p>
+</comment>
 
 <section id="multihead">
-  <title>Quando mais de um monitor está conectada</title>
+ <title>Quando mais de um monitor está conectado</title>
 
-  <p>Se você tem dois monitores conectados ao computador (por exemplo, um monitor normal e um projetor), pode ser que eles tenham resoluções diferentes. Entretanto, a placa de vídeo do computador só pode mostrar a tela em uma resolução por vez, então ao menos um dos dois pode aparentar borrado.</p>
+ <p>Se você tem dois monitores conectados ao computador (por exemplo, um monitor normal e um projetor), pode ser que eles tenham resoluções diferentes. Entretanto, a placa de vídeo do computador só pode mostrar a tela em uma resolução por vez, então ao menos um dos dois pode aparentar borrado.</p>
 
-  <p>Você pode configurar para que os dois monitores tenham resoluções diferentes, mas não será capaz de exibir a mesma coisa nas duas telas simultaneamente. De fato, você terá duas telas independentes conectadas ao mesmo tempo. Você pode mover janelas de uma tela para outra, mas não poderá mostrar uma mesma janela nas duas telas ao mesmo tempo.</p>
+ <p>Você pode configurar para que os dois monitores tenham resoluções diferentes, mas não será capaz de exibir a mesma coisa nas duas telas simultaneamente. De fato, você terá duas telas independentes conectadas ao mesmo tempo. Você pode mover janelas de uma tela para outra, mas não poderá mostrar uma mesma janela nas duas telas ao mesmo tempo.</p>
 
-  <p>Para configurar os monitores para que cada um tenha sua própria resolução:</p>
+ <p>Para configurar os monitores para que cada um tenha sua própria resolução:</p>
 
-  <steps>
-    <item>
-      <p>Abra o panorama de <gui xref="shell-introduction#activities">Atividades</gui> e comece a digitar <gui>Telas</gui>.</p>
-    </item>
-    <item>
-      <p>Clique em <gui>Telas</gui> para abrir o painel.</p>
-    </item>
-    <item>
-      <p>Os monitores devem ser listados como telas <gui>Espelhadas</gui>. Selecione sua tela principal.</p>
-    </item>
-    <item>
-      <p>Selecione <gui>Primária</gui> na lista de configurações da tela e, então, clique <gui style="button">Aplicar</gui> para salvar.</p>
-    </item>
-    <item>
-      <p>Selecione cada monitor por vez pela caixa cinza no topo da janela <gui>Telas</gui>. Altere a <gui>Resolução</gui> até que esse monitor pareça estar correto.</p>
-    </item>
-  </steps>
+ <steps>
+  <item>
+   <p>Clique no seu nome na barra superior e clique em <gui>Configurações do sistema</gui>. Abra <gui>Monitores</gui>.</p>
+  </item>
+
+  <item>
+   <p>Desmarque <gui>Espelhar monitores</gui>.</p>
+  </item>
+
+  <item>
+   <p>Selecione cada monitor por vez pela caixa cinza no topo da janela <gui>Monitores</gui>. Altere a <gui>Resolução</gui> até que esse monitor exiba direito.</p>
+  </item>
+ </steps>
 
 </section>
 

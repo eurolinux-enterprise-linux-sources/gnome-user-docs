@@ -1,36 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task a11y" id="mouse-doubleclick" xml:lang="ru">
-
-  <info>
+<info>
     <link type="guide" xref="mouse"/>
     <link type="guide" xref="a11y#mobility" group="clicking"/>
 
-    <revision pkgversion="3.8" date="2013-03-13" status="candidate"/>
-    <revision pkgversion="3.9" date="2013-10-16" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-    <revision pkgversion="3.20" date="20156-06-15" status="final"/>
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
+
+    <desc>Настройте, с какой скоростью нужно нажимать кнопку мыши для выполнения двойного щелчка.</desc>
 
     <credit type="author">
       <name>Фил Булл (Phil Bull)</name>
       <email>philbull@gmail.com</email>
     </credit>
     <credit type="author">
-      <name>Шон МакКенс (Shaun McCance)</name>
+      <name>Shaun McCance</name>
       <email>shaunm@gnome.org</email>
     </credit>
     <credit type="editor">
-      <name>Майкл Хилл (Michael Hill)</name>
+      <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Шобха Тьяги (Shobha Tyagi)</name>
-      <email>tyagishobha@gmail.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Насколько быстро нужно нажимать на клавишу мышки второй раз для выполнения двойного нажатия.</desc>
-  
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Александр Прокудин</mal:name>
       <mal:email>alexandre.prokoudine@gmail.com</mal:email>
@@ -40,44 +31,25 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011-2012</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Станислав Соловей</mal:name>
-      <mal:email>whats_up@tut.by</mal:email>
-      <mal:years>2013-2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Юлия Дронова</mal:name>
-      <mal:email>juliette.tux@gmail.com</mal:email>
-      <mal:years>2013-2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Юрий Мясоедов</mal:name>
-      <mal:email>ymyasoedov@yandex.ru</mal:email>
-      <mal:years>2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
 
-<title>Настройка скорости двойного нажатия</title>
+<title>Настройка скорости двойного щелчка</title>
 
-<p>Double-clicking only happens when you press the mouse button twice
-quickly enough. If the second press is too long after the first, you’ll
-just get two separate clicks, not a double click. If you have difficulty
-pressing the mouse button quickly, you should increase the timeout.</p>
+<p>Двойной щелчок происходит при достаточно быстром двойном нажатии клавиши мыши. Если второе нажатие запаздывает, получается не двойной щелчок, а два одиночных щелчка. Если вам трудно быстро нажимать кнопку мыши, можно увеличить задержку двойного щелчка.</p>
 
 <steps>
-  <item><p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-  start typing <gui>Universal Access</gui>.</p></item>
-  <item><p>Нажмите <gui>Универсальный доступ</gui>, чтобы открыть этот раздел настроек.</p></item>
-  <item><p>Under <gui>Pointing &amp; Clicking</gui>, adjust the <gui>Double-click</gui>
+  <item><p>Click your name on the top bar and select <gui>Settings</gui>.</p></item>
+  <item><p>Откройте <gui>Мышь и сенсорная панель</gui>.</p></item>
+  <item><p>Under <gui>General</gui>, adjust the <gui>Double-click</gui>
   slider to a value you find comfortable.</p></item>
+  <item><p>Click the <gui>Test Your Settings</gui> button to test. A single
+  click in the window will highlight the outer circle. A double-click will
+  highlight the inside circle.</p></item>
 </steps>
 
-<p>Если вместо одиночного нажатия получается двойное даже при увеличенной задержке двойного нажатия, мышь может быть неисправна. Попробуйте подключить к компьютеру другую мышь и посмотрите, как она будет работать. Попробуйте также подключить эту мышь к другому компьютеру и проверьте, воспроизводится ли проблема.</p>
+<p>Если вместо одиночного щелчка получается двойной даже при увеличенной задержке двойного щелчка, мышь может быть неисправна. Попробуйте подключить к компьютеру другую мышь и посмотрите, как она будет работать. Попробуйте также подключить вашу мышь к другому компьютеру и проверьте, вызывает ли она на нём ту же проблему.</p>
 
 <note><p>Эта настройка влияет как на мышь, так и на сенсорную панель или другие указательные устройства.</p></note>
 

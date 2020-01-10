@@ -4,77 +4,57 @@
   <info>
     <link type="guide" xref="printing-booklet"/>
 
+    <desc>Imprimir pasquíns pregados (tipo libro ou panfleto) usando un tamaño de papel normal A4/Carta.</desc>
+
     <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
       <email>tiffany@antopolski.com</email>
     </credit>
-    <credit type="author editor">
-      <name>Petr Kovar</name>
-      <email>pknbe@volny.cz</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Print folded booklets (like a book or pamphlet) from a PDF using normal
-    A4/Letter-size paper.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2018</mal:years>
+      <mal:years>2011, 2012.</mal:years>
     </mal:credit>
   </info>
 
-  <title>Print a booklet on a double-sided printer</title>
+<title>Impresión de pasquíns dobrados</title>
 
-  <p>You can make a folded booklet (like a small book or pamphlet) by printing
-  pages of a document in a special order and changing a couple of printing
-  options.</p>
+<p>Pode facer folletos pregados (como un pequeno libro ou pasquín) mediante a impresión de páxinas dun documento nunha orde especial e cambiando un par de opcións de impresión.</p>
 
-  <p>Estas instrucións son para imprimir un pasquín a partires dun documento PDF.</p>
+<p>Estas instrucións son para imprimir un pasquín a partires dun documento PDF.</p>
+<p>Se ten que imprimir un pasquín desde un documento de <app>LibreOffice</app>, primeiro expórteo a PDF escollendo <guiseq><gui>Ficheiro</gui><gui>Exportar como PDF…</gui></guiseq>. As páxinas do seu documento precisan ser un múltiplo de 4 (4, 8, 12, 16,…). Polo que podería ter que engadir 3 páxinas en branco.</p>
 
-  <p>Se ten que imprimir un pasquín desde un documento de <app>LibreOffice</app>, primeiro expórteo a PDF escollendo <guiseq><gui>Ficheiro</gui><gui>Exportar como PDF…</gui></guiseq>. As páxinas do seu documento precisan ser un múltiplo de 4 (4, 8, 12, 16,…). Polo que podería ter que engadir 3 páxinas en branco.</p>
 
-  <p>Para imprimir un pasquín:</p>
-
-  <steps>
-    <item>
-      <p>Abra o diálogo de impresora. Isto pode facerse normalmente mediante <gui style="menuitem">Imprimir</gui> no menú ou usando o atallo de teclado <keyseq><key>Ctrl</key><key>P</key></keyseq>.</p>
-    </item>
-    <item>
-      <p>Prema sobre o botón <gui>Propiedades…</gui>.</p>
-      <p>In the <gui>Orientation</gui> drop-down list, make sure that
-      <gui>Landscape</gui> is selected.</p>
-      <p>In the <gui>Duplex</gui> drop-down list, select <gui>Short Edge</gui>.
-      </p>
-      <p>Prema <gui>OK</gui> para volver ao diálogo de impresión.</p>
-    </item>
-    <item>
-      <p>Baixo <gui>Rango e copias</gui>, seleccione <gui>Páxina</gui>.</p>
-    </item>
-    <item>
-      <p>Escriba os números das páxinas neste orde (n é o número total de páxinas, múltiplo de 4):</p>
-      <p>n, 1, 2, n-1, n-2, 3, 4, n-3, n-4, 5, 6, n-5, n-6, 7, 8, n-7, n-8, 9, 10, n-9, n-10, 11, 12, n-11…</p>
-      <p>Exemplos:</p>
-      <list>
-        <item><p>Pasquín de 4 páxinas: escriba <input>4,1,2,3</input></p></item>
-        <item><p>Pasquín de 8 páxinas: escriba <input>8,1,2,7,6,3,4,5</input></p></item>
-        <item><p>Pasquín de 20 páxinas: escriba <input>20,1,2,19,18,3,4,17,16,5,6,15,14,7,8,13,12,9,10,11</input></p></item>
-      </list>
-    </item>
-    <item>
-      <p>Seleccione a lapela <gui>Disposición de páxina</gui>.</p>
-      <p>Under <gui>Layout</gui>, select <gui>Brochure</gui>.</p>
-      <p>Under <gui>Page Sides</gui>, in the <gui>Include</gui> drop-down list,
-      select <gui>All pages</gui>.</p>
-    </item>
-    <item>
-      <p>Prema <gui>Imprimir</gui>.</p>
-    </item>
-  </steps>
-
+<p>Para imprimir un pasquín:</p>
+<steps>
+ <item>
+  <p>Prema <guiseq><gui>Ficheiro</gui><gui>Imprimir</gui></guiseq>.</p>
+ </item>
+ <item>
+  <p>Vaia á lapela <gui>Xeral</gui>. Baixo <em>Rango</em>, seleccione <gui>Páxinas</gui>.</p>
+ </item>
+ <item>
+  <p>Escriba os números das páxinas neste orde (n é o número total de páxinas, múltiplo de 4):</p>
+  <p>n, 1, 2, n-1, n-2, 3, 4, n-3, n-4, 5, 6, n-5, n-6, 7, 8, n-7, n-8, 9, 10, n-9, n-10, 11, 12, n-11…</p>
+    <p>Exemplos:</p>
+    <list>
+     <item><p>Pasquín de 4 páxinas: escriba <input>4,1,2,3</input></p></item>
+     <item><p>Pasquín de 8 páxinas: escriba <input>8,1,2,7,6,3,4,5</input></p></item>
+     <item><p>Pasquín de 20 páxinas: escriba <input>20,1,2,19,18,3,4,17,16,5,6,15,14,7,8,13,12,9,10,11</input></p></item>
+    </list>
+ </item>
+ <item>
+  <p>Agora, vaia á lapela <gui>Configuración de páxina</gui>.</p>
+  <p>Baixo <em>Distribución</em>, no opción <gui>Dobre cara</gui> seleccione <gui>Bordo curto (volvetar)</gui>.</p>
+  <p>Na opción <gui>Páxinas por cara</gui>, seleccione <gui>2</gui>.</p>
+  <p>No menú <gui>Ordenación de páxinas</gui> seleccione <gui>Esquerda a dereita</gui>.</p>
+ </item>
+ <item>
+  <p>Prema <gui>Imprimir</gui>.</p>
+ </item>
+</steps>
 </page>

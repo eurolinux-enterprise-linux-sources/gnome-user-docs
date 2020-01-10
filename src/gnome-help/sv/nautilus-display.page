@@ -4,8 +4,9 @@
   <info>
     <link type="guide" xref="nautilus-prefs" group="nautilus-display"/>
 
+    <desc>Control icon captions used in the file manager.</desc>
+
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-30" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -15,56 +16,43 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Styr ikonrubriker som används i filhanteraren.</desc>
-
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Sebastian Rasmussen</mal:name>
-      <mal:email>sebras@gmail.com</mal:email>
-      <mal:years>2014, 2015, 2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Anders Jonsson</mal:name>
-      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
-      <mal:years>2016, 2017</mal:years>
-    </mal:credit>
   </info>
 
-<title>Filhanterarens visningsinställningar</title>
+<title>File manager display preferences</title>
 
-<p>Du kan styra hur filhanteraren visar text under ikoner. Klicka på <gui>Filer</gui> i systemraden, välj <gui>Inställningar</gui> och välj fliken <gui>Visa</gui>.</p>
+<p>You can control how the file manager displays captions under icons.  Click
+<gui>Files</gui> in the top bar, pick <gui>Preferences</gui> and select the
+<gui>Display</gui> tab.</p>
 
 <section id="icon-captions">
-  <title>Ikonrubriker</title>
-  <!-- TODO: update screenshot for 3.18 and above. -->
+  <title>Icon captions</title>
   <media type="image" src="figures/nautilus-icons.png" width="250" height="110" style="floatend floatright">
-    <p>Filhanterarens ikoner med text</p>
+    <p>File manager icons with captions</p>
   </media>
-  <p>När du använder ikonvyn kan du välja att visa extra information om filer och mappar som en text under varje ikon. Detta är till exempel användbart om du ofta behöver se vem som äger en fil eller när den senast modifierades.</p>
-  <p>Du kan zooma i en mapp genom att klicka på knappen visningsalternativ i verktygsfältet och välja en zoomnivå med skjutreglaget. När du zoomar in kommer filhanteraren att visa mer och mer information i rubriker. Du kan välja upp till tre saker att visa i rubrikerna. Den första kommer att visas på de flesta zoomnivåerna. Den sista kommer bara att visas vid väldigt stora storlekar.</p>
-  <p>Informationen du kan visa i ikonrubriker är samma som kolumnerna du kan använda i listvyn. Se <link xref="nautilus-list"/> för mer information.</p>
-</section>
-
-<section id="list-view">
-
-  <title>Listvy</title>
-
-  <p>När du tittar på filer som en lista kan du <gui>Navigera mappar i ett träd</gui>. Detta visar expanderare för varje katalog i fillistan så att innehållet för flera kataloger kan visas samtidigt. Detta är användbart om mappstrukturen är relevant, t.ex. om dina musikfiler är organiserade med en mapp per artist och en undermapp per album.</p>
-
+  <p>When you use icon view, you can choose to have extra information about
+  files and folders displayed in a caption under each icon. This is useful,
+  for example, if you often need to see who owns a file or when it was last
+  modified.</p>
+  <p>You can zoom in a folder by clicking the
+  <media type="image" src="figures/go-down.png">down</media> button in the
+  toolbar and choosing one of the <gui>Zoom</gui> options. As you zoom in, the
+  file manager will display more and more information in captions. You can
+  choose up to three things to show in captions. The first will be displayed at
+  most zoom levels. The last will only be shown at very large sizes.</p>
+  <p>The information you can show in icon captions is the same as the
+  columns you can use in list view. See <link xref="nautilus-list"/>
+  for more information.</p>
+  <note><p>If you have a file manager window open, you may have to reload for icon
+  caption changes to take effect. Click <guiseq><gui>View</gui><gui>Reload</gui></guiseq>
+  or press <keyseq><key>Ctrl</key><key>R</key></keyseq>.</p></note>
 </section>
 
 </page>

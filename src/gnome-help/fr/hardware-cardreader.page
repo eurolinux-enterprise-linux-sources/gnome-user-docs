@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="hardware-cardreader" xml:lang="fr">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="hardware-cardreader" xml:lang="fr">
 
   <info>
     <link type="guide" xref="media#photos"/>
     <link type="guide" xref="hardware#problems"/>
 
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+    <desc>Résoudre les problèmes de lecteurs de cartes de données</desc>
 
     <credit type="author">
       <name>Le projet de documentation GNOME</name>
@@ -13,8 +13,6 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Résoudre les problèmes de lecteurs de cartes de données</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Luc Pionchon</mal:name>
@@ -31,13 +29,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Julien Hardelin</mal:name>
       <mal:email>jhardlin@orange.fr</mal:email>
-      <mal:years>2011, 2013</mal:years>
+      <mal:years>2011</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -63,12 +61,6 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Alexandre Franke</mal:name>
-      <mal:email>alexandre.franke@gmail.com</mal:email>
-      <mal:years>2015</mal:years>
-    </mal:credit>
   </info>
 
 <title>Problèmes de lecteurs de cartes de données</title>
@@ -81,16 +73,11 @@
 </item>
 
 <item>
-  <p>Open <app>Files</app> from the
-  <gui xref="shell-introduction#activities">Activities</gui> overview. Does the inserted
-  card appear in the <gui>Devices</gui> list in the left sidebar? Sometimes the
-  card appears in this list but is not mounted; click it once to mount. (If the
-  sidebar is not visible, press <key>F9</key> or click <gui style="menu">Files</gui> in
-  the top bar and select the <gui style="menuitem">Sidebar</gui>.)</p>
+<p>Ouvrez l'application <app>Fichiers</app> en utilisant la vue d'ensemble des <gui>Activités</gui>. La carte insérée s'affiche-t-elle dans la liste des <gui>Périphériques</gui> du panneau de gauche ? Certaines cartes apparaissent mais ne sont pas montées ; cliquez une fois dessus pour les monter (si vous ne voyez pas le panneau latéral, appuyez sur <key>F9</key> ou cliquez sur <guiseq><gui>Affichage</gui><gui> Panneau latéral</gui><gui> Afficher le panneau latéral</gui></guiseq>).</p>
 </item>
 
 <item>
-  <p>Si votre carte ne s'affiche pas dans le panneau latéral, appuyez sur <keyseq><key>Ctrl</key><key>L</key></keyseq>, saisissez <input>computer:///</input> et faites <key>Entrée</key>. Si votre lecteur de carte est correctement configuré, il doit y apparaître soit sous forme d'un lecteur vide, soit sous forme de la carte elle-même si elle est montée.</p>
+<p>Si votre carte ne s'affiche pas dans le panneau latéral, cliquez sur <guiseq><gui>Aller à</gui><gui>Poste de travail</gui></guiseq>. Si votre lecteur de carte est correctement configuré, il doit y apparaître soit sous forme d'un lecteur vide, soit sous forme de la carte elle-même si elle est montée (voir l'image ci-dessous).</p>
 </item>
 
 <item>

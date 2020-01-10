@@ -1,22 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-manual" xml:lang="hu">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="net-manual" xml:lang="hu">
   <info>
     <link type="guide" xref="net-wired"/>
     <link type="guide" xref="net-wireless"/>
 
     <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
-    <revision pkgversion="3.10" date="2013-11-11" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-    <revision pkgversion="3.28" date="2018-03-28" status="review"/>
 
     <credit type="author">
       <name>Phil Bull</name>
       <email>philbull@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
     </credit>
 
     <desc>Ha a hálózati beállításokat nem kapja meg automatikusan, akkor azokat saját kezűleg kell beírnia.</desc>
@@ -31,7 +23,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Kelemen Gábor</mal:name>
       <mal:email>kelemeng at gnome dot hu</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015, 2016, 2017</mal:years>
+      <mal:years>2011, 2012, 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -51,51 +43,40 @@
       <mal:email>lukacs.bence1 at gmail dot com</mal:email>
       <mal:years>2011</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Nagy Zoltán</mal:name>
-      <mal:email>dzodzie at gmail dot com</mal:email>
-      <mal:years>2011</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Hálózati beállítások kézi megadása</title>
+<title>Hálózati beállítások kézi megadása</title>
 
-  <p>Ha a hálózat nem rendel automatikusan hálózati beállításokat számítógépéhez, akkor szükség lehet a beállítások kézi megadására. Ez a leírás feltételezi, hogy már ismeri a megfelelő beállításokat. Ellenkező esetben kérdezze meg a hálózati rendszergazdát, vagy nézze meg a router vagy switch beállításait.</p>
+<p>Ha a hálózat nem rendel automatikusan hálózati beállításokat számítógépéhez, akkor szükség lehet a beállítások kézi megadására. Ez a leírás feltételezi, hogy már ismeri a megfelelő beállításokat. Ellenkező esetben kérdezze meg a hálózati rendszergazdát, vagy nézze meg a router vagy switch beállításait.</p>
 
-  <steps>
-    <title>Hálózati beállítások megadása saját kezűleg:</title>
-    <item>
-      <p>Nyissa meg a <gui xref="shell-introduction#activities">Tevékenységek</gui> áttekintést, és kezdje el begépelni a <gui>Beállítások</gui> szót</p>
-    </item>
-    <item>
-      <p>Válassza a <gui>Beállítások</gui> lehetőséget.</p>
-    </item>
-    <item>
-      <p>A bal oldali ablaktáblán válassza ki azt a hálózati kapcsolatot, amelyet kézzel szeretne beállítani. Ha kábellel csatlakozott a hálózatra, kattintson a <gui>Hálózat</gui> lehetőségre, egyébként a <gui>Wi-Fi</gui> lehetőségre.</p>
-      <p>Győződjön meg róla, hogy a vezeték nélküli kártya be van kapcsolva, vagy a hálózati kábel be van dugva.</p>
-    </item>
-    <item>      
-      <p>Kattintson a <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">beállítások</span></media> gombra.</p>
-      <note>
-        <p><gui>Wi-Fi</gui> kapcsolat esetén a <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">beállítások</span></media> gomb az aktív hálózat mellett található.</p>
-      </note>
-    </item>
-    <item>
-      <p>Kattintson a bal oldali ablaktáblán az <gui>IPv4</gui> vagy az <gui>IPv6</gui> elemre, és módosítsa a <gui>Címeket</gui> a <em>Kézi</em> értékűre.</p>
-    </item>
-    <item>
-      <p>Írja be az <gui xref="net-what-is-ip-address">IP-címet</gui> és az <gui>Átjárót</gui>, valamint a megfelelő <gui>Hálózati maszkot</gui>.</p>
-    </item>
-    <item>
-      <p>A <gui>DNS</gui> szakaszban kapcsolja <gui>KI</gui> az <gui>Automatikus</gui> beállítást. Írja be a használni kívánt DNS-kiszolgáló IP-címét. A <gui>+</gui> gomb használatával további DNS-kiszolgálók címeit adhatja meg.</p>
-    </item>
-    <item>
-      <p>Az <gui>Útvonalak</gui> szakaszban kapcsolja <gui>KI</gui> az <gui>Automatikus</gui> beállítást. Írja be a használni kívánt útvonal <gui>Címét</gui>, <gui>Hálózati maszkját</gui>, <gui>Átjáróját</gui> és <gui>Metrikáját</gui>. A <gui>+</gui> gomb használatával további útvonalakat adhat meg.</p>
-    </item>
-    <item>
-      <p>Nyomja meg az <gui>Alkalmaz</gui> gombot. Ha nem csatlakozik a hálózatra, a felső sávban kattintson a rendszerállapot területre, és csatlakozzon. Tesztelje a hálózati beállításokat például egy weboldal felkeresésével, vagy a hálózaton megosztott fájlok megjelenítésével.</p>
-    </item>
-  </steps>
+<steps>
+  <title>Hálózati beállítások megadása saját kezűleg:</title>
+ <item>
+  <p>Kattintson a hálózat ikonra a felső sávon, és válassza a <gui>Hálózati beállítások</gui> menüpontot.</p>
+ </item>
+
+ <item>
+  <p>Keresse meg a saját kezűleg beállítani kívánt hálózati kapcsolatot, és nyomja meg a <gui>Beállítások</gui> gombot. Ha például a hálózatra kábellel csatlakozik, akkor a <gui>Vezetékes</gui> alatt keresse.</p>
+  <p>Győződjön meg róla, hogy a vezeték nélküli kártya be van kapcsolva, vagy a hálózati kábel be van dugva. Ellenkező esetben nem fog tudni a <gui>Beállítások</gui> gombra kattintani.</p>
+ </item>
+
+ <item>
+  <p>Lépjen az <gui>IPv4 beállításai</gui> lapra, és módosítsa a <gui>Módszer</gui> beállítást <gui>Kézi</gui> értékűre.</p>
+ </item>
+
+ <item>
+  <p>Nyomja meg a <gui>Hozzáadás</gui> gombot, és írja be az <em>IP-címet</em>, <em>hálózati maszkot</em> és az <em>alap átjáró IP-címét</em> a <gui>Címek</gui> lista megfelelő oszlopaiba. Az egyes címek beírása után nyomja meg az <key>Enter</key> vagy a <key>Tab</key> billentyűt.</p>
+  <p>A három címnek IP-címnek kell lennie, azaz négy, pontokkal elválasztott számnak (például: 123.45.6.78).</p>
+ </item>
+
+ <item>
+  <p>Írja be a használni kívánt DNS-kiszolgálók vesszőkkel elválasztott IP-címeit a megfelelő mezőbe.</p>
+ </item>
+
+ <item>
+  <p>Nyomja meg a <gui>Mentés</gui> gombot. Ha nem csatlakozik a hálózatra, a felső sávban kattintson a hálózat ikonra, és csatlakozzon. Tesztelje a hálózati beállításokat például egy weboldal felkeresésével, vagy a hálózaton megosztott fájlok megjelenítésével.</p>
+ </item>
+
+</steps>
 
 </page>

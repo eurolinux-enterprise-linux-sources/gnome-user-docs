@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="color-whatisspace" xml:lang="es">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="color-whatisspace" xml:lang="es">
 
   <info>
     <link type="guide" xref="color#profiles"/>
@@ -15,7 +15,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2011 - 2018</mal:years>
+      <mal:years>2011 - 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -49,14 +49,14 @@
 
   <figure>
     <desc>sRGB, AdobeRGB and ProPhotoRGB representados por triángulos blancos</desc>
-    <media its:translate="no" type="image" mime="image/png" src="figures/color-space.png"/>
+    <media type="image" mime="image/png" src="figures/color-space.png"/>
   </figure>
 
   <p>Primero, mire al sRGB, que es el menor espacio y que puede codificar el menor número de colores. Es una aproximación de una pantalla CRT de 10 años de antigüedad y la mayoría de los monitores modernos pueden mostrar muchos más colores que estos. sRGB es un estándar del <em>menor-denominador-común</em> y se usa en un gran número de aplicaciones (incluyendo Internet).</p>
   <p>AdobeRGB se usa frecuentemente como un <em>espacio de edición</em>. Puede codificar más colores que sRGB, lo que significa que puede ajustar los colores en una fotografía sin preocuparse mucho de que el brillo de los colores se corte o los negros se pisen.</p>
   <p>PhoPhoto es el mayor sitio disponible y se usa frecuentemente para archivar documentos. Puede codificar casi todo el rango de colores detectados por el ojo humano e incluso codificar colores que el ojo humano no puede detectar.</p>
 
-  <p>Ahora, si ProPhoto es claramente mejor, ¿por qué no usarlo para todo? La respuesta tiene que ver con la <em>cuantización</em>. Si sólo tiene 8 bits (256 niveles) para codificar cada canal, entonces un mayor rango requerirá tener pasos más grandes entre cada valor.</p>
+  <p>Ahora, si PhoPhoto es claramente mejor, ¿por qué no usarlo para todo? La respuesta tiene que ver con la <em>cuantización</em>. Si sólo tiene 8 bits (256 niveles) para codificar cada canal, entonces un mayor rango requerirá tener pasos más grandes entre cada valor.</p>
   <p>Pasos más grandes significan un mayor error entre el color capturado y el color almacenado y para algunos colores es un gran problema. Resulta que los colores clave, como los colores de la piel, son muy importantes e incluso pequeños errores harán que una persona no acostumbrada note que algo está mal en la fotografía.</p>
   <p>Por supuesto, usar 16 bits para la imagen hará que haya más niveles y un error de cuantización mucho más pequeño, pero esto multiplica por dos el tamaño de cada archivo de imagen. La mayoría del contenido existente hoy día tiene 8bpp, es decir, 8 bits por píxel.</p>
   <p>El proceso de gestión de color para convertir de un espacio de color a otro, donde el espacio de color se puede definir bien en un espacio de color sRGB o un espacio de color personalizado tal como el del perfil de su monitor o su impresora.</p>

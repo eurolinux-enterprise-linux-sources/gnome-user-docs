@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-lost" xml:lang="fi">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-lost" xml:lang="fi">
 
   <info>
-    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="files" group="more"/>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-28" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="candidate"/>
+
+    <desc>Seuraa näitä ohjeita, jos et löydä luomaasi tai lataamaasi tiedostoa.</desc>
 
     <credit type="author">
       <name>Gnomen dokumentointiprojekti</name>
@@ -20,40 +20,33 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Seuraa näitä ohjeita, jos et löydä luomaasi tai lataamaasi tiedostoa.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Timo Jyrinki</mal:name>
       <mal:email>timo.jyrinki@iki.fi</mal:email>
       <mal:years>2012.</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Jiri Grönroos</mal:name>
-      <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
-      <mal:years>2012-2018.</mal:years>
-    </mal:credit>
   </info>
 
 <title>Löydä kadonnut tiedosto</title>
 
-<p>Jos teit tai latasit tiedoston, etkä löydä sitä juuri nyt, seuraa näitä ohjeita.</p>
+<p>Jos teit tai latasit tiedoston, etkä löydä sitä nyt, seuraa näitä ohjeita.</p>
 
 <list>
-  <item><p>Jos et muista, mihin tallensit tiedostot, mutta sinulla on jokin muistikuva sen nimestä, voit <link xref="files-search">etsiä tiedostoa sen nimen perusteella</link>.</p></item>
+  <item><p>Jos et muista, mihin tallensit tiedostot, mutta sinulla on jokin havainto sen nimestä, voit etsiä tiedostoa sen nimen perusteella. Lue <link xref="files-search"/> oppiaksesi miten.</p></item>
 
-  <item><p>Jos latasit tiedoston äskettäin, selaimesi on mahdollisesti tallentanut sen yleiseen kansioon. Tarkista kotikansiossasi olevat kansiot nimeltä <file>Lataukset</file> ja <file>Työpöytä</file>.</p></item>
+  <item><p>Jos latasit tiedoston äskettäin, selaimesi on mahdollisesti tallentanut sen yleiseen kansioon. Tarkista kotikansiossa olevat kansiot nimeltä Lataukset ja Työpöytä.</p></item>
 
   <item><p>Olet ehkä vahingossa poistanut tiedoston. Kun poistat tiedoston, se saa siirretään roskakoriin, jossa se ​​säilyy kunnes tyhjennät roskakorin itse. Tutustu ohjeeseen, jossa kerrotaan lisää poistettujen tiedostojen palauttamisesta <link xref="files-recover"/> oppia palauttaa poistetun tiedoston.</p></item>
 
-  <item><p>Olet ehkä nimennyt tiedoston uudelleen tavalla, joka piilottaa sen. Tiedostot, joiden nimet alkavat pisteellä (<file>.</file>) tai loppuvat aaltoviivaan (<file>~</file>), piilotetaan tiedostonhallinnassa. Napsauta <app>tiedostonhallinnassa</app> näkymäpainiketta ja valitse <gui>Näytä piilotiedostot</gui>. Lue <link xref="files-hidden"/>.</p></item>
+  <item><p>You might have renamed the file in a way that made the file hidden.
+  Files that start with a <file>.</file> or end with a <file>~</file> are hidden
+  in the file manager. Click the
+  <media type="image" src="figures/go-down.png">down</media> button in the file
+  manager toolbar and pick <gui>Show Hidden Files</gui> to display them. See
+  <link xref="files-hidden"/> to learn more.</p></item>
 </list>
 
 </page>

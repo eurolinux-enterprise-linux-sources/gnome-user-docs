@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-lost" xml:lang="vi">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-lost" xml:lang="vi">
 
   <info>
-    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="files" group="more"/>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-28" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="candidate"/>
+
+    <desc>Thử những mẹo này nếu bạn không thể tìm thấy tập tin bạn tạo hoặc tải về.</desc>
 
     <credit type="author">
       <name>Dự án tài liệu GNOME</name>
@@ -20,15 +20,8 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Follow these tips if you can’t find a file you created or
-    downloaded.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Nguyễn Thái Ngọc Duy</mal:name>
@@ -39,28 +32,21 @@
 
 <title>Tìm tập tin thất lạc</title>
 
-<p>If you created or downloaded a file, but now you cannot find it, follow
-these tips.</p>
+<p>Nếu bạn tạo hoặc lấy một tập tin về, nhưng bạn không thể tìm lại, làm theo những mẹo sau.</p>
 
 <list>
-  <item><p>If you do not remember where you saved the file, but you have some
-  idea of how you named it, you can <link xref="files-search">search for the
-  file by name</link>.</p></item>
+  <item><p>Nếu bạn không nhớ nơi lưu tập tin, nhưng nhớ mang máng cách đặt tên tập tin, bạn có thể tìm tập tin theo tên. Xem <link xref="files-search"/> để biết chi tiết.</p></item>
 
-  <item><p>If you just downloaded the file, your web browser might
-  have automatically saved it to a common folder. Check the
-  <file>Desktop</file> and <file>Downloads</file> folders in your home
-  folder.</p></item>
+  <item><p>Nếu bạn lấy tập tin về, trình duyệt web của bạn có thể lưu tự động vào thư mục chung. Kiểm tra thư mục Desktop (hoặc Màn hình nền) và Downloads (hoặc Tải về) trong thư mục riêng của mình.</p></item>
 
   <item><p>Bạn có thể vô tình xoá tập tin. Khi bạn xoá tập tin, nó được cho vào sọt rác và ở đó đến khi tự bạn đổ sọt rác. Xem <link xref="files-recover"/> để biết chi tiết cách phục hồi tập tin đã xoá.</p></item>
 
   <item><p>You might have renamed the file in a way that made the file hidden.
-  Files that start with a <file>.</file> or end with a <file>~</file> are
-  hidden in the file manager. Click the
-  <!-- FIXME: Get a tooltip added for "View options" -->
-  view options button in the <app>Files</app> toolbar and enable <gui>Show
-  Hidden Files</gui> to display them. See <link xref="files-hidden"/> to learn
-  more.</p></item>
+  Files that start with a <file>.</file> or end with a <file>~</file> are hidden
+  in the file manager. Click the
+  <media type="image" src="figures/go-down.png">down</media> button in the file
+  manager toolbar and pick <gui>Show Hidden Files</gui> to display them. See
+  <link xref="files-hidden"/> to learn more.</p></item>
 </list>
 
 </page>

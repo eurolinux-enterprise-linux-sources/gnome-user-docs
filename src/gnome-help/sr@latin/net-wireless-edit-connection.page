@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="net-editcon" xml:lang="sr-Latn">
+  <info>
+    <link type="guide" xref="net-wireless" group="first"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+
+    <credit type="author">
+      <name>Šon Mek Kens</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+
+    <credit type="author">
+      <name>Fil Bul</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <desc>Saznajte šta znače opcije na ekranu za uređivanje bežične veze.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+  </info>
+
+<title>Uredite bežičnu vezu</title>
+
+<comment>
+ <p>This topic needs significant revision to be comprehensive. A number of settings remain undocumented.</p>
+</comment>
+
+<p>Ova tema opisuje sve opcije koje su dostupne kada uređujete veze bežične mreže. Da uredite vezu, izaberite u podešavanjima <gui>Mreža</gui>, zatim kliknite <gui>Opcije</gui>.</p>
+
+<note>
+ <p>Većina mreža će lepo raditi ako ostavite ova podešavanja na njihova osnovna, tako da verovatno nećete morati ništa da menjate. Mnoge od opcija ovde su obezbeđene da bi vam dale veću kontrolu nad naprednijim mrežama.</p>
+</note>
+
+<section id="available">
+ <title>Dostupno svim korisnicima / Samostalno povezivanje</title>
+ <terms>
+  <item>
+   <title><gui>Sam se poveži</gui></title>
+   <p>Izaberite ovu opciju ako budete želeli da računar pokuša da se poveže na ovu bežičnu mrežu kad god bude u dometu.</p>
+   <p>Ako se nekoliko mreža koje ste podesili da se samostalno povežu nalaze u dometu, računar će se povezati na prvu prikazanu u jezičku <gui>Bežična</gui> u prozoru <gui>Mrežne veze</gui>. Neće prekinuti vezu sa jednom dostupnom mrežom da bi se povezao na neku drugu koja je upravo našla u dometu.</p>
+  </item>
+
+  <item>
+   <title><gui>Dostupno svim korisnicima</gui></title>
+   <p>Izaberite ovo ako želite da svi korisnici na računaru imaju pristup ovoj bežičnoj mreži. Ako mreža ima <link xref="net-wireless-wepwpa">VEP/VPA lozinku</link> i vi ste izabrali ovu opciju, moraćete samo jednom da unesete lozinku. Svi ostali korisnici na vašem računaru će biti u mogućnosti da se povežu na mrežu a da neće morati da znaju lozinku.</p>
+   <p>Ako je ovo izabrano, morate biti <link xref="user-admin-explain">administrator</link> da biste izmenili neko od podešavanja za ovu mrežu. Može vam biti zatraženo da unesete vašu lozinku administratora.</p>
+  </item>
+ </terms>
+</section>
+
+<section id="wireless">
+ <title>Bežična</title>
+ <terms>
+  <item>
+   <title><gui>SSID</gui></title>
+   <p>Ovo je naziv bežične mreže na koju se povezujete, drugačije poznat kao <em>Pokazatelj skupa usluga</em>. Nemojte da menjate ovo osim ako niste izmenili naziv bežične mreže (na primer, menjajući podešavanja vašeg bežičnog usmerivača ili bazne stanice).</p>
+  </item>
+
+  <item>
+   <title><gui>Režim</gui></title>
+   <p>Koristite ovo da odredite da li se povezujete na <gui>Infrastrukturnu</gui> mrežu (kada se računari bežično povezuju na središnu baznu stanicu ili usmerivač) ili na <gui>Ad-hok</gui> mrežu (kada ne postoji bazna stanica, a računari u mreži se povezuju jedan sa drugim). Većina mreža jesu infrastrukturne; a vi ćete želeti da <link xref="net-adhoc">podesite vašu sopstvenu ad-hok mrežu</link>.</p>
+   <p>Ako izaberete <gui>Ad-hok</gui>, videćete još dve opcije, <gui>Opseg</gui> i <gui>Kanal</gui>. One određuju na kom opsegu bežične učestalosti će raditi ad-hok bežična mreža. Neki računari su u stanju da rade samo na određenim opsezima (na primer, samo na <gui>A</gui> ili samo na <gui>B/G</gui>), tako da ćete morati da postavite opseg koji će moći da koriste svi računari na ad-hok mreži. Na poslovnim mestima, mogu postojati nekoliko bežičnih mreža koje dele isti kanal; ovo može da uspori vašu vezu, tako da možete da izmenite koji kanal koristite.</p>
+  </item>
+
+  <item>
+   <title><gui>BSSID</gui></title>
+   <p>Ovo je <em>Pokazatelj skupa osnovnih usluga</em>. SSID (pogledajte iznad) je naziv mreže koji ljudi treba da čitaju; BSSID je naziv koji razumeju računari (to je niz slova i cifara koji bi trebao da bude jedinstven za bežičnu mrežu). Ako je <link xref="net-wireless-hidden">mreža skrivena</link>, neće imati SSID već BSSID.</p>
+  </item>
+
+  <item>
+   <title><gui>MAK adresa uređaja</gui></title>
+   <p><link xref="net-macaddress">MAK adresa</link> jeste kod koji određuje deo mrežnog hardvera (na primer, bežičnu karticu, kablovsku mrežnu karticu ili usmerivač). Svaki uređaj koji možete da povežete na mrežu ima jedinstvenu MAK adresu koja mu je dodeljena u fabrici.</p>
+   <p>Ova opcija može biti korišćena za promenu MAK adrese vaše mrežne kartice.</p>
+  </item>
+
+  <item>
+   <title><gui>Klonirana MAK adresa</gui></title>
+   <p>Vaš mrežni hardver (bežična kartica) može da se pretvara da ima drugačiju MAK adresu. Ovo je korisno ako imate uređaj ili uslugu koja će komunicirati samo sa određenim MAK adresama (na primer, kablovski širokopojasni modem). Ako stavite ovu MAK adresu u polje <gui>klonirane MAK adrese</gui>, uređaj/usluga će misliti da vaš računar ima kloniranu MAK adresu umesto njegove stvarne.</p>
+  </item>
+
+  <item>
+   <title><gui>MTU</gui></title>
+   <p>Ovo podešavanje menja <em>Najveću jedinicu prenosa</em>, koja je najveća veličina delića podataka koji može biti poslat putem mreže. Prilikom slanja podataka preko mreže, podaci se lome na male delove (ili pakete). Najprimenjivije MTU za vašu mrežu će zavisiti od toga kolika je verovatnoća da paketi mogu biti zagubljeni (usled loše veze) i od brzine veze. Uopšteno, ne biste trebali da menjate ovo podešavanje.</p>
+  </item>
+
+ </terms>
+</section>
+
+<section id="security">
+ <title>Bežična bezbednost</title>
+ <terms>
+  <item>
+   <title><gui>Bezbednost</gui></title>
+   <p>Ovo određuje koju vrstu <em>šifrovanja</em> koristi vaša bežična mreža. Šifrovane veze pomažu u zaštiti vaše mreže od presretanja, tako da neko drugi neće moći da „prisluškuje“ i da vidi koje veb sajtove posećujete i tako dalje.</p>
+   <p>Neke vrste šifrovanja su jače od drugih, ali mogu biti nepodržane starijom opremom bežičnog umrežavanja. Moraćete da ukucate lozinku za vezu; prefinjenije vrste bezbednosti mogu takođe da zahtevaju korisničko ime i digitalno „uverenje“. Pogledajte <link xref="net-wireless-wepwpa"/> za više podataka o poznatijim vrstama bežičnog šifrovanja.</p>
+  </item>
+ </terms>
+</section>
+
+<section id="ipv4">
+ <title>IPv4 podešavanja</title>
+
+<comment>
+<cite>shaunm</cite>
+<p>There's also Shared to other computers</p>
+<p>Then there's addresses and dns servers and ipv4 addressing routes.</p>
+<p>All current info correct, but incomplete</p>
+</comment>
+
+ <p>Koristite ovaj jezičak da odredite podatke kao što je IP adresa vašeg računara i koje DNS servere treba da koristi. Izmenite <gui>Način</gui> da vidite drugačije načine dobavljanja/podešavanja ovog podatka.</p>
+ <p>Dostupni su sledeći načini:</p>
+ <terms>
+  <item>
+   <title><gui>Samostalno (DHCP)</gui></title>
+   <p>Dobavlja podatke kao što je IP adresa i DNS server za korišćenje sa <em>DHCP servera</em>. DHCP server je računar (ili drugi uređaj, kao usmerivač) povezan na mrežu koji odlučuje koja mrežna podešavanja treba da ima vaš računar — kada se prvi put povežete na mrežu, biće vam samostalno dodeljena ispravna podešavanja. Većina mreža koristi DHCP.</p>
+  </item>
+
+  <item>
+   <title><gui>Samostalno (DHCP) samo adrese</gui></title>
+   <p>Ako izaberete ovo podešavanje, vaš računar će dobaviti svoju IP adresu sa DHCP servera, ali ćete vi morati ručno da odredite ostale detalje (kao koji DNS server će se koristiti).</p>
+  </item>
+
+  <item>
+   <title><gui>Ručno</gui></title>
+   <p>Izaberite ovu opciju ako želite sami da odredite sva podešavanja mreže, uključujući koju IP adresu treba da koristi računar.</p>
+  </item>
+
+  <item>
+   <title><gui>Samo veži-lokalno</gui></title>
+   <p><em>Veži lokalno</em> je način međusobnog povezivanja računara na mrežu bez zahteva za DHCP serverom ili ručnim određivanjem IP adrese i ostalih podataka. Ako se povežete na mrežu „Veži lokalno“, računari na mreži će odlučiti među sobom koje će IP adrese da koriste i ostalo. Ovo je korisno ako želite da privremeno povežete nekoliko računara da bi međusobno komunicirali.</p>
+  </item>
+
+  <item>
+   <title><gui>Isključeno</gui></title>
+   <p>Ova opcija će isključiti mrežnu vezu i neće vam dopustiti da se povežete na nju. Znajte da se <gui>IPv4</gui> i <gui>IPv6</gui> smatraju zasebnim vezama čak iako su za istu mrežnu karticu. Ako vam je jedno uključeno, možda ćete želeti da drugo postavite na isključeno.</p>
+  </item>
+
+ </terms>
+</section>
+
+<section id="ipv6">
+ <title>IPv6 podešavanja</title>
+<comment>
+<cite>shaunm</cite>
+<p>The list of methods is a bit different</p>
+</comment>
+ <p>Ovo je slično jezičku <gui>IPv4</gui> izuzev što se bavi novijim IPv6 standardom. Modernije mreže koriste IPv6, ali je trenutno IPv4 još uvek vrlo popularan.</p>
+</section>
+
+</page>

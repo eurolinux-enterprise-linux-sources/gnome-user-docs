@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="session-fingerprint" xml:lang="gl">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="session-fingerprint" xml:lang="gl">
 
   <info>
     <link type="guide" xref="hardware-auth"/>
 
+    <desc>Pode iniciar sesión no seu sistema usando un lector de pegadas dixitais compatíbel.</desc>
+
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
-    <revision pkgversion="3.10" date="2013-11-03" status="review"/>
-    <revision pkgversion="3.12" date="2014-06-16" status="final"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="final"/>
 
     <credit type="author">
       <name>Proxecto de documentación de GNOME</name>
@@ -16,100 +15,69 @@
     <credit type="author">
       <name>Paul W. Frields</name>
       <email>stickster@gmail.com</email>
-      <years>2011</years>
-    </credit>
-    <credit type="author editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-      <years>2013</years>
-    </credit>
-    <credit type="editor">
-      <name>Jim Campbell</name>
-      <email>jcampbell@gnome.org</email>
-      <years>2014</years>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>You can log in to your system using a supported fingerprint scanner
-    instead of typing in your password.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2018</mal:years>
+      <mal:years>2011, 2012.</mal:years>
     </mal:credit>
   </info>
 
   <title>Iniciar sesión con unha pegada dixital</title>
-
-  <p>If your system has a supported fingerprint scanner, you can record your
-  fingerprint and use it to log in.</p>
-
-<section id="record">
-  <title>Rexistrar unha pegada dixital</title>
-
-  <p>Before you can log in with your fingerprint, you need to record it so that
-  the system can use it to identify you.</p>
-
+  <p>Se o seu sistema ten un lector de pegadas dixitais, pode gravar a súa pegada e usala para iniciar sesión. Debe ter permisos de administración para realizar estes pasos.</p>
+  <p>Primeiro, grave unha pegada coa que o sistema lle pode identificar.</p>
   <note style="tip">
     <p>Se o seu dedo está demasiado seco, pode que teña dificultade para rexistrar a súa pegada dixital. Se isto acontece, humedeza lixeiramente o dedo, séqueo cun pano limpo e sen pelusa, e volva a tentalo.</p>
   </note>
-
-  <p>You need <link xref="user-admin-explain">administrator privileges</link>
-  to edit user accounts other than your own.</p>
-
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Users</gui>.</p>
+      <p>Prema sobre o seu nome na barra superior, seleccione <gui>Configuracións do sistema</gui> e abra <gui>Contas de usuario</gui>.</p>
     </item>
     <item>
-      <p>Prema en <gui>Usuarios</gui> para abrir o panel.</p>
+      <p>Prema o botón <gui>Desbloquear</gui> na esquina inferior esquerda e insira un contrasinal.</p>
     </item>
     <item>
-      <p>Press on <gui>Disabled</gui>, next to <gui>Fingerprint Login</gui> to
-      add a fingerprint for the selected account. If you are adding the
-      fingerprint for a different user, you will first need to
-      <gui>Unlock</gui> the panel.</p>
+      <p>Escriba o seu contrasinal no prompt.</p>
     </item>
     <item>
-      <p>Select the finger that you want to use for the fingerprint, then
-      <gui style="button">Next</gui>.</p>
+      <p>Seleccione a opción «Desactivado» xunto a «Inicio de sesión coa pegada dixital».</p>
     </item>
     <item>
-      <p>Follow the instructions in the dialog and swipe your finger at a
-      <em>moderate speed</em> over your fingerprint reader. Once the computer
-      has a good record of your fingerprint, you will see a <gui>Done!</gui>
-      message.</p>
+      <p>Seleccione unha opción para a pegada dixital que desexa rexistrar. Pode elixir o seu dedo índice dereito, o dedo índice esquerdo, ou un dedo diferente. A continuación, seleccione <gui>Continuar</gui>.</p>
     </item>
     <item>
-      <p>Select <gui>Next</gui>. You will see a confirmation message that
-      your fingerprint was saved successfully. Select <gui>Close</gui> to
-      finish.</p>
+      <p>Pase o dedo seleccionado tres veces a unha <em>velocidade moderada</em> por enriba do seu lector de pegadas dixitales. Cada vez que o lector de pegadas dixitais recoñece a pegada dixital correcta, a imaxe correspondente a unha man transformarase nunha imaxe de pegada dixital cunha marca de verificación. Despois da terceira pasada, verá o mensaxe <gui>Feito</gui></p>
+    </item>
+    <item>
+      <p>Seleccione <gui>Continuar</gui>. Verá unha mensaxe de confirmación de que a súa pegada dixital gardouse correctamente. Selecione <gui>Pechar</gui> para finalizar.</p>
     </item>
   </steps>
-
-</section>
-
-<section id="verify">
-  <title>Comprobar que a súa pegada dixital funciona</title>
-
   <p>Agora comprobe que funciona o seu novo inicio de sesión con pegada dixital. Se rexistra unha pegada dixital, aínda ten a opción de iniciar sesión co seu contrasinal.</p>
-
   <steps>
     <item>
-      <p>Garde calquera traballo aberto, e logo <link xref="shell-exit">peche a sesión</link>.</p>
+      <p>Save any open work, and then log out. Select your name in the upper
+      right-hand corner and then select <gui>Log Out</gui>.</p>
     </item>
     <item>
-      <p>Na pantalla de inicio de sesión, seleccione o seu nome de usuario da lista. Aparecerá o formulario de entrada de contrasinal.</p>
+      <p>Aparecerá unha mensaxe de confirmación. Seleccione <gui>Saír da sesión</gui> para confirmar. Aparecerá a pantalla de inicio.</p>
     </item>
     <item>
-      <p>Instead of typing your password, you should be able to swipe your
-      finger on the fingerprint reader.</p>
+      <p>At the login screen, select your name from the list. The password
+      entry form will appear.</p>
+    </item>
+    <item>
+      <p>Nos seguintes 30 segundos, seleccione o botón da pegada dixital de arriba á dereita do seu nome.</p>
+      <note>
+	<p>O botón de pegada dixital está etiquetado cunha imaxe dunha man. Se o contador chega a cero, o botón desaparecerá e só se lle permitirá iniciar sesión cun contrasinal. Se quere tentalo de novo, seleccione o botón <gui>Cancelar</gui> e volva ao paso anterior.</p>
+      </note>
+    </item>
+    <item>
+      <p>Pase o dedo que rexistrou a unha <em>velocidade moderada</em> sobre o escáner de pegada dixital. Iniciarase a sesión.</p>
     </item>
   </steps>
-
-</section>
-
+  <p>Se creou anteriormente un anel de chaves, está asegurando co seu contrasinal. Para desbloquealo escriba o seu contrasinal.</p>
+	
 </page>

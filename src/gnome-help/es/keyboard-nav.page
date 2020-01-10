@@ -6,8 +6,6 @@
     <link type="seealso" xref="shell-keyboard-shortcuts"/>
 
     <revision pkgversion="3.7.5" version="0.2" date="2013-02-23" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.20" date="2016-08-13" status="candidate"/>
 
     <credit type="author">
       <name>Michael Hill</name>
@@ -27,14 +25,12 @@
        <email>kittykat3756@gmail.com</email>
     </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
     <desc>Usar aplicaciones y el escritorio sin ratón.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2011 - 2018</mal:years>
+      <mal:years>2011 - 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -58,6 +54,14 @@
 
   <title>Navegación con el teclado</title>
 
+  <comment>
+    <cite date="2012-03-14" href="mailto:shaunm@gnome.org">Shaun McCance</cite>
+    <p>Do <em>NOT</em> use <code>ui:expanded</code> on this page. I know it's
+    tempting, but the target audience for this page is people who cannot use
+    a mouse, and having to expand sections when you're just figuring out how
+    to drive things with the keyboard is a burden.</p>
+  </comment>
+
   <p>En esta página se detalla la navegación con el teclado para personas que no pueden usar un ratón u otro dispositivo apuntador, o que quiere usar el teclado lo más posible. Para ver los atajos de teclado, útiles para todos los usuarios, consulte la <link xref="shell-keyboard-shortcuts"/> en su lugar.</p>
 
   <note style="tip">
@@ -77,6 +81,7 @@
     <td><p>Teclas de flechas</p></td>
     <td>
       <p>Mover la selección entre elementos de un único control, o entre un conjunto de controles relacionados. Use las teclas de flechas para dar el foco a los botones, seleccionar elementos en una vista de lista o de iconos o para seleccionar un botón de radio en un grupo.</p>
+      <p>En la vista de árbol, use las teclas de flechas derecha e izquierda para contraer y expandir los elementos con hijos.</p>
     </td>
   </tr>
   <tr>
@@ -86,10 +91,6 @@
   <tr>
     <td><p><keyseq><key>Mayús</key>Teclas de flechas</keyseq></p></td>
     <td><p>En la vista de lista o de iconos, seleccionar todos los elementos desde el elemento seleccionado actualmente hasta el nuevo elemento con el foco.</p></td>
-    <td><p>In a tree view, items that have children can be expanded or collapsed,
-    to show or hide their children: expand by pressing
-    <keyseq><key>Shift</key><key>→</key></keyseq>, and collapse by
-    pressing <keyseq><key>Shift</key><key>←</key></keyseq>.</p></td>
   </tr>
   <tr>
     <td><p><key>Espacio</key></p></td>
@@ -148,7 +149,7 @@
   </tr>
   <tr>
     <td><p><keyseq><key>Super</key><key>M</key></keyseq></p></td>
-    <td><p><link xref="shell-notifications#messagetray">Abrir la bandeja de mensajes</link>. Pulse <key>Esc</key> para cerrarla.</p></td>
+    <td><p><link xref="shell-notifications#messagingtray">Abrir la bandeja de mensajes</link>. Pulse <key>Esc</key> para cerrarla.</p></td>
   </tr>
 </table>
 
@@ -171,8 +172,6 @@
     <td><p>Redimensionar la ventana actual. Pulse <keyseq><key>Alt</key><key>F8</key></keyseq> y use las teclas de flechas para redimensionar la ventana. Pulse <key>Intro</key> para dejar de redimensionar la ventana, o <key>Esc</key> para devolverla a su tamaño original.</p></td>
   </tr>
   <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-updown"/>
-  <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-left"/>
-  <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-right"/>
   <tr>
     <td><p><keyseq><key>Alt</key><key>F10</key></keyseq> o <keyseq><key>Super</key><key>↑</key></keyseq></p>
     </td>

@@ -1,60 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="user-admin-problems" xml:lang="fi">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="user-admin-problems" xml:lang="fi">
 
   <info>
     <link type="guide" xref="user-accounts#privileges"/>
-    <link type="seealso" xref="user-admin-explain"/>
-    <link type="seealso" xref="user-admin-change"/>
+
+    <desc>Voit tehdä tiettyjä toimenpiteitä, kuten asentaa sovelluksia, vain jos sinulla on pääkäyttäjän oikeudet.</desc>
 
     <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-03" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <!-- TODO: review that this is actually correct -->
-    <revision pkgversion="3.18" date="2015-09-28" status="candidate"/>
 
-    <credit type="authohar">
+    <credit type="author">
       <name>Gnomen dokumentointiprojekti</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Voit tehdä tiettyjä toimenpiteitä, kuten asentaa sovelluksia, vain jos sinulla on ylläpitäjän oikeudet.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Timo Jyrinki</mal:name>
       <mal:email>timo.jyrinki@iki.fi</mal:email>
       <mal:years>2012.</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Jiri Grönroos</mal:name>
-      <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
-      <mal:years>2012-2018.</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Ylläpitäjäoikeuksien puuttumisesta koituvat rajoitteet</title>
+<title>Pääkäyttäjäoikeuksien puuttumisesta koituvat rajoitteet</title>
 
   <p>Saatat kohdata rajoitteita tietokoneen käytössä, jos sinulla ei ole <link xref="user-admin-explain">ylläpitäjän oikeuksia</link>. Muun muassa seuraavat toiminnot vaativat ylläpitäjän oikeudet:</p>
 
-  <list>
-    <item>
-      <p>connecting to networks or wireless networks,</p>
-    </item>
-    <item>
-      <p>viewing the contents of a different disk partition (for example, a
-      Windows partition), or</p>
-    </item>
-    <item>
-      <p>installing new applications.</p>
-    </item>
-  </list>
+<list>
+ <item>
+  <p>Kiinteisiin ja langattomiin verkkoihin yhdistäminen</p>
+ </item>
+ <item>
+  <p>Erillisten tallennusvälineiden sisällön tarkastelu, tai muiden levyosioiden (esim. Windows-osio) sisällön tarkastelu</p>
+ </item>
+ <item>
+  <p>Uusien sovellusten asennus</p>
+ </item>
+</list>
 
-  <p>Voit <link xref="user-admin-change">valita tilit, joilla on pääkäyttäjän oikeudet</link>.</p>
+  <p>Voit halutessasi <link xref="user-admin-change">valita tilit, joilla on pääkäyttäjän oikeudet</link>.</p>
 
 </page>

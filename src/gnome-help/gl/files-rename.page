@@ -2,11 +2,10 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-rename" xml:lang="gl">
 
   <info>
-    <link type="guide" xref="files#common-file-tasks"/>
+    <link type="guide" xref="files"/>
+    <desc>Cambiarlle o nome a un ficheiro ou cartafol.</desc>
 
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Proxecto de documentación de GNOME</name>
@@ -24,60 +23,43 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Cambiarlle o nome a un ficheiro ou cartafol.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2018</mal:years>
+      <mal:years>2011, 2012.</mal:years>
     </mal:credit>
   </info>
 
   <title>Renomear un ficheiro ou cartafol</title>
 
-  <p>As with other file managers, you can use <app>Files</app> to change the
-  name of a file or folder.</p>
-
+  <p>Ao igual que con outros xestos de ficheiros, pode usar o xestor de ficheiros de GNOME para cambiar o nome dun ficheiro ou dun cartafol.</p>
   <steps>
-    <title>Renomear un ficheiro ou cartafol:</title>
+    <title>Renomear un ficheiro ou cartafol</title>
     <item><p>Prema co botón dereito sobre un elemento e seleccione <gui>Renomear</gui>, ou seleccione o ficheiro e prema <key>F2</key>.</p></item>
-    <item><p>Escriba o novo nome e prema <key>Intro</key> ou prema <key>Renomear</key>.</p></item>
+    <item><p>Escriba o novo nome e prema <key>Intro</key>.</p></item>
   </steps>
 
   <p>Tamén pode renomear un ficheiro desde a xanela de <link xref="nautilus-file-properties-basic#rename">propiedades</link>.</p>
 
-  <p>When you rename a file, only the first part of the name of the file is
-  selected, not the file extension (the part after the last <file>.</file>).
-  The extension normally denotes what type of file it is (for example,
-  <file>file.pdf</file> is a PDF document), and you usually do not want to
-  change that. If you need to change the extension as well, select the entire
-  file name and change it.</p>
+  <p>Cando cambia o nome dun ficheiro, só se selecciona a primeira parte do nome dese ficheiro, sen a extensión (a parte que vai detrás do «.»). A extensión normalmente representa o tipo de ficheiro (p.ex. <file>ficheiro.pdf</file> é un documento PDF), e normalmente non quererá cambiala. Se precisa cambiar a extensión tamén, seleccione o nome completo do ficheiro e cámbieo.</p>
 
   <note style="tip">
-    <p>Se lle cambia o nome de ficheiro incorrecto, ou asigna un nome equivocado ao nome, pode desfacer o renomeado. Para reverter esta acción inmediatamente, prema o botón de menú na barra de ferramentas e seleccione <gui>Desfacer renomeado</gui>, ou prema <keyseq><key>Ctrl</key><key>Z</key></keyseq>, para restaurar o nome.</p>
+    <p>Se cambia o nome de ficheiro incorrecto, ou asigna un nome equivocado ao nome, pode desfacer o renomeado. Para reverter esta acción inmediatamente, prema o botón do engranaxe na barra de ferramentas e seleccione <gui>Desfacer</gui> para restaurar o nome.</p>
   </note>
 
   <section id="valid-chars">
     <title>Caracteres válidos para os nomes de ficheiro</title>
-
-    <p>Pode usar calquera carácter nos nomes de ficheiros, agás a barra inclinada <key>/</key>. Algúns dispositivos, porén, usan <em>sistemas de ficheiros</em> con máis restricións nos nomes de ficheiros. Polo que é recomendábel evitar os seguintes caracteres: <key>|</key>, <key>\</key>, <key>?</key>, <key>*</key>, <key>&lt;</key>, <key>"</key>, <key>&gt;</key>, <key>/</key>.</p>
+    <p>Pode usar calquera carácter nos nomes de ficheiros, agás a barra inclinada <key>/</key>. Algúns dispositivos, porén, usan <em>sistemas de ficheiros</em> con máis restricións nos nomes de ficheiros. Polo que é recomendábel evitar os seguintes caracteres: <key>|</key>, <key>\</key>, <key>?</key>, <key>*</key>, <key>&lt;</key>, <key>"</key>, <key>:</key>, <key>&gt;</key>, <key>/</key>.</p>
 
     <note style="warning">
     <p>Se nomea a un ficheiro cun <key>.</key> como primeiro carácter, o ficheiro estará <link xref="files-hidden">oculto</link> cando tente velo no xestor de ficheiros.</p>
     </note>
-
   </section>
 
   <section id="common-probs">
     <title>Problemas comúns</title>
-
     <terms>
       <item>
         <title>O nome xa está en uso</title>
@@ -86,14 +68,12 @@
       </item>
       <item>
         <title>O nome do ficheiro é demasiado largo</title>
-        <p>Nalgúns sistemas de ficheiros, os nomes de ficheiros non poden ter máis de 255 caracteres. Este límite de 255 caracteres inclúe tanto o nome do ficheiro como a ruta do ficheiro (p.ex. <file>/home/galego/Documentos/traballo/propostas-traballo/… </file>), polo que debería evitar nomes longos en ficheiros e cartafoles cando sexa posíbel.</p>
+        <p>Nalgúns sistemas de ficheiros, os nomes de ficheiros non poden ter máis de 255 caracteres. Este límite de 255 caracteres inclúe tanto o nome do ficheiro como a ruta do ficheiro (p.ex. <file>/home/wanda/Documentos/traballo/propostas-traballo/… </file>), polo que debería evitar nomes longos en ficheiros e cartafoles cando sexa posíbel.</p>
       </item>
       <item>
         <title>A opción para renomear está en gris</title>
         <p>Se a opción <gui>Renomear</gui> aparece en color gris, é que non ten os permisos necesarios para renomear o ficheiro. Debe ter coidado ao tratar de renomear estes ficheiros, xa que cambiar o nome a ficheiros protexidos pode causar problemas ou facer que o seu sistema se volva inestábel. Consulte a <link xref="nautilus-file-properties-permissions"/> para obter máis información.</p>
       </item>
     </terms>
-
   </section>
-
 </page>

@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="bluetooth-remove-connection" xml:lang="lv">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="guide" style="task" id="bluetooth-remove-connection" xml:lang="lv">
 
   <info>
     <link type="guide" xref="bluetooth"/>
 
-    <revision pkgversion="3.4" date="2012-02-19" status="outdated"/>
-    <revision pkgversion="3.10" date="2013-11-07" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-04" status="candidate"/>
-    <revision pkgversion="3.13" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+
+    <desc>Izņemt ierīci no Bluetooth ierīču saraksta.</desc>
 
     <credit type="author">
       <name>Jim Campbell</name>
@@ -18,46 +16,30 @@
       <name>Paul W. Frields</name>
       <email>stickster@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-      <years>2014</years>
-    </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-      <years>2014</years>
-    </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-      <years>2015</years>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Izņemt ierīci no Bluetooth ierīču saraksta.</desc>
   </info>
 
-  <title>Atvienot Bluetooth ierīci</title>
+  <title>Likvidēt savienojumu starp Bluetooth ierīcēm</title>
+
 
   <p>Ja vairāk nevēlaties uzturēt savienojumu ar Bluetooth ierīci, jūs variet to izņemt. Tas noder, ja vairāk nevēlaties izmantot tādu ierīci kā pele vai austiņas, vai arī vairs neplānojat sūtīt vai saņemt datnes no dotās ierīces.</p>
 
   <steps>
     <item>
-      <p>Atveriet <gui xref="shell-introduction#activities">Aktivitāšu</gui> pārskatu un sāciet rakstīt <gui>Bluetooth</gui>.</p>
+      <if:choose>
+        <if:when test="platform:unity">
+      <p>Spiediet Bluetooth ikonu <gui>izvēlnes joslā</gui> un izvēlieties <gui>Bluetooth iestatījumi</gui>.</p>
+        </if:when>
+      <p>Klikšķiniet uz Bluetooth ikonas augšējā joslā un izvēlieties <gui>Bluetooth iestatījumi</gui>.</p>
+      </if:choose>
     </item>
     <item>
-      <p>Spiediet <gui>Bluetooth</gui>, lai atvērtu paneli.</p>
+      <p>Izvēlieties ierīci, ar kuru jūs vēlaties pārtraukt savienojumu, tad klikšķiniet uz <gui>-</gui> zem saraksta.</p>
     </item>
     <item>
-      <p>No saraksta izvēlieties ierīci, kuru jūs vēlaties atvienot.</p>
-    </item>
-    <item>
-      <p>Ierīces dialoglodziņā pārslēdziet <gui>Savienojumu</gui> uz <gui>◯</gui> vai, lai izņemtu ierīci no <gui>Ierīču</gui> saraksta, spiediet <gui>Izņemt ierīci</gui>.</p>
+      <p>Klikšķiniet <gui>Izņemt</gui> apstiprinājuma logā.</p>
     </item>
   </steps>
 
   <p>Jūs varat <link xref="bluetooth-connect-device">atkal pievienot Bluetooth ierīci</link> vēlāk, ja vēlaties.</p>
-
 </page>

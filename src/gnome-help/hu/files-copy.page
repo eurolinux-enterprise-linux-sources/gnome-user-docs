@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" version="1.0 ui/1.0" id="files-copy" xml:lang="hu">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" id="files-copy" xml:lang="hu">
 
   <info>
-    <link type="guide" xref="files#common-file-tasks"/>
+    <link type="guide" xref="files"/>
+    <desc>Elemek új mappába másolása vagy áthelyezése.</desc>
 
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-15" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
 
     <credit type="author">
       <name>Cristopher Thomas</name>
@@ -20,10 +19,7 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Elemek új mappába másolása vagy áthelyezése.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Griechisch Erika</mal:name>
@@ -34,7 +30,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Kelemen Gábor</mal:name>
       <mal:email>kelemeng at gnome dot hu</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015, 2016, 2017</mal:years>
+      <mal:years>2011, 2012, 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -54,12 +50,6 @@
       <mal:email>lukacs.bence1 at gmail dot com</mal:email>
       <mal:years>2011</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Nagy Zoltán</mal:name>
-      <mal:email>dzodzie at gmail dot com</mal:email>
-      <mal:years>2011</mal:years>
-    </mal:credit>
   </info>
 
 <title>Fájlok és mappák másolása vagy mozgatása</title>
@@ -75,7 +65,7 @@
 <item><p>Egy kattintással válassza ki a másolni kívánt fájlt.</p></item>
 <item><p>Kattintson a jobb egérgombbal, és válassza a <gui>Másolás</gui> menüpontot, vagy nyomja meg a <keyseq><key>Ctrl</key><key>C</key></keyseq> kombinációt.</p></item>
 <item><p>Lépjen egy másik mappába, amelybe el kívánja helyezni a fájl másolatát.</p></item>
-<item><p>Kattintson a menü gombra, és válassza a <gui>Beillesztés</gui> menüpontot a fájl másolásának befejezéséhez, vagy nyomja meg a <keyseq><key>Ctrl</key><key>V</key></keyseq> kombinációt. A fájlból ezután lesz egy példány az eredeti mappában és a másik mappában is.</p></item>
+<item><p>Kattintson a fogaskerék ikonra, és válassza a <gui>Beillesztés</gui> menüpontot a fájl másolásának befejezéséhez, vagy nyomja meg a <keyseq><key>Ctrl</key><key>V</key></keyseq> kombinációt. A fájlból ezután lesz egy példány az eredeti mappában és a másik mappában is.</p></item>
 </steps>
 
 <steps ui:expanded="false">
@@ -83,7 +73,7 @@
 <item><p>Egy kattintással válassza ki az áthelyezni kívánt fájlt.</p></item>
 <item><p>Kattintson a jobb egérgombbal, és válassza a <gui>Kivágás</gui> menüpontot, vagy nyomja meg a <keyseq><key>Ctrl</key><key>X</key></keyseq> kombinációt.</p></item>
 <item><p>Lépjen egy másik mappába, amelybe át kívánja helyezni a fájlt.</p></item>
-<item><p>Kattintson a menü gombra az eszköztáron, és válassza a <gui>Beillesztés</gui> menüpontot a fájl áthelyezésének befejezéséhez, vagy nyomja meg a <keyseq><key>Ctrl</key><key>V</key></keyseq> kombinációt. A fájl az eredeti mappából eltűnik, és áthelyezésre kerül a másik mappába.</p></item>
+<item><p>Kattintson a fogaskerék ikonra az eszköztáron, és válassza a <gui>Beillesztés</gui> menüpontot a fájl áthelyezésének befejezéséhez, vagy nyomja meg a <keyseq><key>Ctrl</key><key>V</key></keyseq> kombinációt. A fájl az eredeti mappából eltűnik, és áthelyezésre kerül a másik mappába.</p></item>
 </steps>
 
 <steps ui:expanded="false">
@@ -98,7 +88,7 @@
 </steps>
 
 <note>
-  <p>Nem másolhat vagy helyezhet át egy fájlt <em>írásvédett</em> mappába. Néhány mappa írásvédett, megakadályozandó a tartalmának módosítását. Az írásvédelmet a <link xref="nautilus-file-properties-permissions">fájl jogosultságainak módosításával</link> szüntetheti meg.</p>
+ <p>Nem másolhat vagy helyezhet át egy fájlt <em>írásvédett</em> mappába. Néhány mappa írásvédett, megakadályozandó a tartalmának módosítását. Az írásvédelmet a <link xref="nautilus-file-properties-permissions">fájl jogosultságainak módosításával</link> szüntetheti meg.</p>
 </note>
 
 </page>

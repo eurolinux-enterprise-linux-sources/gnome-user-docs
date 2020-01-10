@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="clock-timezone" xml:lang="el">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="clock-timezone" xml:lang="el">
 
   <info>
     <link type="guide" xref="clock"/>
-
+    <desc>Προσθέστε άλλες ζώνες ώρας έτσι ώστε να μπορείτε να δείτε τι ώρα είναι σε άλλες πόλεις.</desc>
     <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.16" date="2015-01-26" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Έργο Τεκμηρίωσης GNOME</name>
@@ -17,74 +14,43 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
-    <credit type="editor">
-       <name>Jim Campbell</name>
-       <email>jcampbell@gnome.org</email>
-    </credit>
-
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Ενημερώστε τη ζώνη ώρας στην τρέχουσα τοποθεσία έτσι ώστε η ώρα σας να είναι σωστή.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
-      <mal:email>team@gnome.gr</mal:email>
-      <mal:years>2009-2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
       <mal:email>dmtrs32@gmail.com</mal:email>
-      <mal:years>2012-2015</mal:years>
+      <mal:years>2012, 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:name> Φώτης Τσάμης</mal:name>
       <mal:email>ftsamis@gmail.com</mal:email>
       <mal:years>2009</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:name> Μάριος Ζηντίλης</mal:name>
       <mal:email>m.zindilis@dmajor.org</mal:email>
       <mal:years>2009, 2010</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Θάνος Τρυφωνίδης</mal:name>
-      <mal:email>tomtryf@gnome.org</mal:email>
-      <mal:years>2012-2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Μαρία Μαυρίδου</mal:name>
-      <mal:email>mavridou@gmail.com</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:name> Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
     </mal:credit>
   </info>
 
-  <title>Αλλαγή της ζώνης ώρας</title>
+<title>Αλλάξτε την ζώνη ώρας</title>
 
-  <steps>
-    <item>
-      <p>Ανοίξτε την επισκόπηση <gui xref="shell-introduction#activities">Δραστηριότητες</gui> και αρχίστε να πληκτρολογείτε <gui>Ημερομηνία &amp; ώρα</gui>.</p>
-    </item>
-    <item>
-      <p>Κάντε κλικ στο <gui>Ημερομηνία &amp; ώρα</gui> για να ανοίξετε τον πίνακα.</p>
-    </item>
-    <item>
-      <p>Αν έχετε ορίσει το <gui>Αυτόματη ημερομηνία &amp; ώρα</gui> σε <gui>ΝΑΙ</gui>, τότε η ημερομηνία και η ώρα θα πρέπει να ενημερώνονται αυτόματα αν έχετε πρόσβαση στο διαδίκτυο. Για να τα ενημερώσετε χειροκίνητα, τότε ορίστε σε <gui>ΟΧΙ</gui>.</p>
-    </item>
-    <item>
-      <p>Κάντε κλικ στη <gui>Ζώνη ώρας</gui>, έπειτα επιλέξτε την τοποθεσία σας στον χάρτη ή αναζητήστε την τρέχουσα πόλη σας.</p>
-    </item>
-  </steps>
+<steps>
+  <item><p>Πάτημα στο ρολόι που βρίσκεται στο μέσο της πάνω γραμμής.</p></item>
+  <item><p>Επιλέξτε <gui>ρυθμίσεις ημερομηνίας και χρόνου</gui>.</p></item>
+  <item><p>Μπορεί να χρειαστείτε να πατήσετε <gui>ξεκλείδωμα</gui> και να πληκτρολογήσετε τον <link xref="user-admin-explain">κωδικό διαχειριστή</link>.</p></item>
+  <item><p>Πατήστε την τοποθεσία σας στον χάρτη, έπειτα επιλέξτε την τρέχουσα πόλη από την πτυσσόμενη λίστα.</p></item>
+</steps>
 
-  <p>Η ώρα θα ενημερωθεί αυτόματα αν επιλέξετε μια διαφορετική τοποθεσία. Μπορείτε επίσης να <link xref="clock-set">ορίσετε το ρολόι χειροκίνητα</link>.</p>
+  <p>Ο εμφανιζόμενος χρόνος στην πάνω γραμμή θα ενημερωθεί αυτόματα όταν επιλέξετε μια διαφορετική τοποθεσία. Η ώρα στο παράθυρο θα ενημερωθεί την επόμενη φορά που προσπελάζετε το παράθυρο <gui>ρυθμίσεις ημερομηνίας και χρόνου</gui>. Μπορεί επίσης να θέλετε να <link xref="clock-set">ορίσετε το ρολόι χειροκίνητα</link>.</p>
 
 </page>

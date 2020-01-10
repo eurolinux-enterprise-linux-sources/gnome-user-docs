@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-adhoc" xml:lang="es">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="net-adhoc" xml:lang="es">
   <info>
     <link type="guide" xref="net-wireless"/>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
-    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -16,10 +13,6 @@
       <name>Shaun McCance</name>
       <email>shaunm@gnome.org</email>
     </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
 
     <desc>Use una red ad-hoc para permitir que otros dispositivos se conecten a su equipo y a sus conexiones de red.</desc>
 
@@ -28,7 +21,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2011 - 2018</mal:years>
+      <mal:years>2011 - 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -52,21 +45,25 @@
 
 <title>Crear un «hotspot» inalámbrico</title>
 
-  <p>Puede usar su equipo como un «hotspot» inalámbrico. Esto permite a otros dispositivos conectarse a su equipo sin necesidad de una red aparte, y permite a su equipo compartir una conexión a Internet configurada en otra interfaz, como una red cableada o una red de banda ancha móvil.</p>
+<p>Puede usar su equipo como un «hotspot» inalámbrico. Esto permite a otros dispositivos conectarse a su equipo sin necesidad de una red aparte, y permite a su equipo compartir una conexión a Internet configurada en otra interfaz, como una red cableada o una red de banda ancha móvil.</p>
+
+<comment>
+<cite date="2012-02-19">shaunm</cite>
+<p>Things I'm not sure about: Is this actually ad-hoc? It seems to use the
+same icon. What happens if you have multiple wireless adapters? Ought to be
+able to share wireless to wireless, I think, but I don't know what the UI
+looks like. Also, does any of this work? I couldn't successfully test.</p>
+<p>Also, looks like there's no page to set the device name. Make one, then
+link below where it says the name of the network is your device name.</p>
+</comment>
 
 <steps>
-  <item>
-    <p>Abra el <gui xref="shell-introduction#yourname">menú del sistema</gui> en la parte derecha de la barra superior.</p>
-  </item>
-  <item>
-    <p>Seleccione <gui><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-excellent-symbolic.svg" width="16" height="16"/> Inalámbrica no conectada</gui> o el nombre de la red inalámbrica a la que ya está conectado. La sección Inalámbrica del menú se expandirá.</p>
-  </item>
-  <item>
-    <p>Pulse en <gui>Configuración inalámbrica</gui>.</p></item>
-  <item><p>Pulse el botón <gui>Usar como «hotspot»…</gui>.</p></item>
-  <item><p>Si ya está conectado a una red inalámbrica, se le preguntará si quiere desconectarse de esa red. Un adaptador inalámbrico sólo puede conectarse o crear una única red al mismo tiempo. Pulse <gui>Activar</gui> para confirmar.</p></item>
+  <item><p>Pulse el icono de red en la barra superior y seleccione <gui>Configuración de la red</gui>.</p></item>
+  <item><p>Seleccione <gui>Inalámbrica</gui> a la izquierda.</p></item>
+  <item><p>Pulse el botón <gui>Usar como «hotspot»</gui>.</p></item>
+  <item><p>Si ya está conectado a una red inalámbrica, se le preguntará si quiere desconectarse de esa red. Un adaptador inalámbrico sólo puede conectarse o crear una única red al mismo tiempo. Pulse <gui>Crear «hotspot»</gui> para confirmar.</p></item>
 </steps>
 
-<p>Se generan automáticamente un nombre de red (SSID) y una clave de seguridad. El nombre de red estará basado en el nombre de su equipo. Otros dispositivos necesitarán esta información para conectarse al «hotspot» que acaba de crear.</p>
+<p>Se generan automáticamente un nombre de red (SSID) y una clave de seguridad. El nombre de red estará basado en el nombre de su equipo. Otros dispositivos necesitarán esta información para conectarse al «»hotspot que acaba de crear.</p>
 
 </page>

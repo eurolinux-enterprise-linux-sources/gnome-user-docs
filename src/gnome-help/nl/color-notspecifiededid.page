@@ -5,36 +5,34 @@
     <link type="guide" xref="color#problems"/>
     <link type="guide" xref="color-gettingprofiles"/>
     <link type="guide" xref="color-why-calibrate"/>
-    <desc>Standaard monitorprofielen hebben geen kalibratiedatum.</desc>
+    <desc>Default monitor profiles do not have a calibration date.</desc>
     <credit type="author">
       <name>Richard Hughes</name>
       <email>richard@hughsie.com</email>
     </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Waarom verlopen de standaard monitorprofielen niet?</title>
-  <p>Het standaard kleurprofiel dat voor elke monitor gebruikt wordt, wordt automatisch gegenereerd op basis van de monitor <link href="https://en.wikipedia.org/wiki/Extended_Display_Identification_Data"> EDID</link> dat op een geheugenchip in de monitor is opgeslagen. De EDID geeft ons slechts een momentopname van welke kleuren de monitor kon weergeven toen deze werd gefabriceerd, en bevat niet veel andere informatie over  kleurcorrectie.</p>
+  <title>Why don't the default monitor profiles have a calibration expiry?</title>
+  <p>
+    The default color profile used for each monitor is generated
+    automatically based on the display EDID which is stored in a memory
+    chip inside the monitor.
+    The EDID only gives us a snapshot of the available colors the monitor
+    was capable of displaying when it was manufactured, and does not
+    contain much other information for color correction.
+  </p>
 
   <figure>
-    <desc>Omdat de EDID niet kan worden bijgewerkt, verloopt het niet.</desc>
+    <desc>As the EDID cannot be updated, it has no expiry date.</desc>
     <media type="image" mime="image/png" src="figures/color-profile-default.png"/>
   </figure>
 
   <note style="tip">
-    <p>Een profiel van de monitorfabrikant verkrijgen of zelf een profiel aanmaken zou tot een accurater kleurcorrectie leiden.</p>
+    <p>
+      Getting a profile from the monitor vendor or creating a profile
+      yourself would lead to more accurate color correction.
+    </p>
   </note>
 
 </page>

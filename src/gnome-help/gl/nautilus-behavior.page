@@ -7,7 +7,6 @@
     <desc>Unha sola pulsación para abrir ficheiros, executar ou ver ficheiros de texto executábeis, e especificar o comportamento do lixo.</desc>
 
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -25,16 +24,12 @@
       <name>Sindhu S</name>
       <email>sindhus@live.in</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2018</mal:years>
+      <mal:years>2011, 2012.</mal:years>
     </mal:credit>
   </info>
 
@@ -54,7 +49,12 @@
 </section>
 <section id="executable">
 <title>Ficheiros de texto executábeis</title>
- <p>Un ficheiro de texto executábel é un ficheiro que contén un programa que pode iniciarse (executarse). Os <link xref="nautilus-file-properties-permissions">permisos do ficheiro</link> deben tamén permitirlle facelo para executalo como un programa. O máis común son scripts de <sys>Shell</sys>, <sys>Python</sys> e <sys>Perl</sys>. Os cales teñen as extensións <file>.sh</file>, <file>.py</file> e <file>.pl</file>, respectivamente.</p>
+ <p>An executable text file is a file that contains a program that you can run
+ (execute). The <link xref="nautilus-file-properties-permissions">file
+ permissions</link> must also allow for the file to run as a program. The most
+ common are <sys>Shell</sys>, <sys>Python</sys> and <sys>Perl</sys> scripts.
+ These have extensions <file>.sh</file>, <file>.py</file> and <file>.pl</file>,
+ respectively.</p>
  
  <p>Cando abra un ficheiro de texto executábel, pode seleccionar:</p>
  
@@ -72,7 +72,7 @@
 
  <p>Se selecciona <gui>Preguntar cada vez</gui>, aparecerá un diálogo preguntándolle se desexa executar ou ver o ficheiro de texto seleccionado.</p>
 
- <p>Os ficheiros de texto executábeis tamén chámanse <em>scripts</em>. Todos os scripts no cartafol <file>~/.local/share/nautilus/scripts</file> aparecerán no menú contextual para os ficheiros baixo o submenú <gui style="menuitem">Scripts</gui>. Cando se executa un script desde un cartafol local, todos os ficheiros seleccionados pegaranse ao script como parámetros. Para executar un script nun ficheiro:</p>
+ <p>Os ficheiros de texto executábeis tamén se chaman scripts. Todos os scripts no cartafol <file>~/.local/share/nautilus/scripts</file> aparecerán no menú contextual para os ficheiros baixo o submenú <gui style="menuitem">Scripts</gui>. Cando se executa un script desde un cartafol local, todos os ficheiros seleccionados pegaranse ao script como parámetros. Para executar un script nun ficheiro:</p>
 
 <steps>
   <item>
@@ -87,11 +87,11 @@
 </steps>
 
  <note style="important">
-  <p>Non se lle pasarán parámetros a un script cando se execute desde un cartafol remoto como un cartafol web ou contido <sys>ftp</sys>.</p>
+  <p>A script will not be passed any parameters when executed from a remote
+  folder such as a folder showing web or <sys>ftp</sys> content.</p>
  </note>
 
 </section>
-
 <section id="trash">
 <info>
 <link type="seealso" xref="files-delete"/>
@@ -101,8 +101,15 @@
 
 <terms>
  <item>
-  <title><gui>Preguntar antes de baleirar o lixo</gui></title>
+  <title><gui>Preguntar antes de baleirar o lixo ou eliminar ficheiros</gui></title>
   <p>Esta opción está seleccionada por omisión. Cando se vai a baleirar o lixo, aparece un mensaxe confirmando se quere baleirar o lixo ou eliminar os ficheiros.</p>
+ </item>
+ <item>
+  <title><gui>Incluír unha orde para Eliminar que non use o lixo</gui></title>
+  <p>Ao seleccionar esta opción engádese un elemento <gui>Eliminar</gui> no menú que se mostra cando preme co botón dereito sobre un elemento no aplicativo <app>Ficheiros</app>.</p>
+<note style="warning">
+<p>Cando se elimina un elemento usando a opción <gui>Eliminar</gui> do menú, pásase por alto a Papeleira. O elemento elimínase do sistema completamente. Non hai forma de recuperar o elemento eliminado.</p>
+</note>
  </item>
 </terms>
 </section>

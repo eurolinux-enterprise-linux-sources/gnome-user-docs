@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="color-whatisspace" xml:lang="ru">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="color-whatisspace" xml:lang="ru">
 
   <info>
     <link type="guide" xref="color#profiles"/>
@@ -21,25 +21,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011-2012</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Станислав Соловей</mal:name>
-      <mal:email>whats_up@tut.by</mal:email>
-      <mal:years>2013-2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Юлия Дронова</mal:name>
-      <mal:email>juliette.tux@gmail.com</mal:email>
-      <mal:years>2013-2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Юрий Мясоедов</mal:name>
-      <mal:email>ymyasoedov@yandex.ru</mal:email>
-      <mal:years>2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
 
@@ -47,15 +29,31 @@
 
   <p>Цветовое пространство — это определённый диапазон цветов. Примерами хорошо известных цветовых пространств являются sRGB, AdobeRGB и ProPhotoRGB.</p>
 
-  <p>Зрительный механизм человека — это не простой сенсор RGB, но мы можем приблизиться к отклику глаза на цвет с помощью хроматической диаграммы CIE 1931, которая моделирует зрительную реакцию в виде подковы. Можно увидеть, что человеческое зрение фиксирует гораздо большее количество оттенков зелёного, чем синего или красного. С помощью трихроматических цветовых пространств, таких, как RGB, мы воспроизводим цвета в компьютерах с помощью трёх значений, что ограничивает модель рамками цветового <em>треугольника</em>.</p>
+  <p>
+    The human visual system is not a simple RGB sensor, but we can
+    approximate how the eye responds with a CIE 1931 chromaticity diagram
+    that shows the human visual response as a horse-shoe shape.
+    You can see that in human vision there are many more shades of green
+    detected than blue or red.
+    With a trichromatic color space like RGB we represent the colors
+    on the computer using three values, which restricts up to encoding
+    a <em>triangle</em> of colors.
+  </p>
 
   <note>
-    <p>Использование цветовых моделей, таких, как хроматическая диаграмма CIE 1931, является очень сильным упрощением человеческого зрительного механизма, и фактические цветовые гаммы реалистично отображаются скорее в виде трёхмерной видимой оболочки, а не двухмерных проекций. Двухмерная проекция трёхмерного объекта иногда может быть неверной, поэтому, если вам нужна трёхмерная видимая оболочка, используйте приложение <code>gcm-viewer</code>.</p>
+    <p>
+      Using models such as a CIE 1931 chromaticity diagram is a huge
+      simplification of the human visual system, and real gamuts are
+      expressed as 3D hulls, rather than 2D projections.
+      A 2D projection of a 3D shape can sometimes be misleading, so if
+      you want to see the 3D hull, use the <code>gcm-viewer</code>
+      application.
+    </p>
   </note>
 
   <figure>
     <desc>sRGB, AdobeRGB и ProPhotoRGB представлены белыми треугольниками</desc>
-    <media its:translate="no" type="image" mime="image/png" src="figures/color-space.png"/>
+    <media type="image" mime="image/png" src="figures/color-space.png"/>
   </figure>
 
   <p>Сначала взглянем на sRGB — это самое маленькое цветовое пространство, позволяющее закодировать наименьшее количество цветов. Оно примерно соответствует ЭЛТ-монитору десятилетней давности, и современные мониторы способны отображать гораздо больше цветов. sRGB можно рассматривать, как <em>«наименьший общий знаменатель»</em>, и оно имеет много сфер применения (включая Интернет).</p>
@@ -63,13 +61,24 @@
   <p>ProPhoto — самое большое цветовое пространство, и оно часто используется при создании архивных копий документов. Оно позволяет закодировать почти весь диапазон цветов, различаемых человеческим глазом, и даже некоторые цвета, которые человеческий глаз не видит!</p>
 
   <p>
-    Now, if ProPhoto is clearly better, why don’t we use it for everything?
+    Now, if ProPhoto is clearly better, why don't we use it for everything?
     The answer is to do with <em>quantization</em>.
     If you only have 8 bits (256 levels) to encode each channel, then a
     larger range is going to have bigger steps between each value.
   </p>
-  <p>Бо́льшие шаги означают и более глобальные отличия между захваченным и хранимым цветом, а для некоторых цветов это является серьёзной проблемой. Получается, что ключевые цвета, такие, как телесный цвет, — очень важны, и даже незначительные ошибки приведут к тому, что глаз даже неопытного зрителя заметит погрешности в фотографии.</p>
-  <p>Использование 16-ти битового изображения, несомненно, оставит гораздо больше шагов и намного меньшую ошибку дискретизации, но это удваивает размер каждого файла изображения. Самая большая глубина цвета на сегодняшний день составляет 8 бит на пиксель.</p>
-  <p>Управление цветом — это процесс преобразования из одного цветового пространства в другое, где цветовое пространство может быть как стандартным (например, sRGB), так и произвольным, таким, как профиль вашего монитора или принтера.</p>
+  <p>
+    Bigger steps mean a larger error between the captured color and the
+    stored color, and for some colors this is a big problem.
+    It turns out that key colors, like skin colors are very important,
+    and even small errors will make untrained viewers notice that something
+    in a photograph looks wrong.
+  </p>
+  <p>
+    Of course, using a 16 bit image is going to leave many more steps and
+    a much smaller quantization error, but this doubles the size of each
+    image file.
+    Most content in existence today is 8bpp, i.e. 8 bits-per-pixel.
+  </p>
+  <p>Управление цветом — это процесс преобразования из одного цветового пространства в другое, где цветовое пространство может быть как стандартным (например, sRGB), так и произвольным, таким как профиль вашего монитора или принтера.</p>
 
 </page>

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="session-formats" xml:lang="sv">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="session-formats" xml:lang="sv">
 
   <info>
     <link type="guide" xref="prefs-language"/>
     <link type="seealso" xref="session-language"/>
 
-    <revision pkgversion="3.10" version="0.4" date="2013-11-03" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-10" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -17,58 +16,64 @@
       <email>mdhillca@gmail.com</email>
     </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <desc>Choose a region used for date and time, numbers, currency,
+    and measurement.</desc>
 
-    <desc>Välj en region som används för datum och tid, tal, valuta och mätvärden.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Sebastian Rasmussen</mal:name>
-      <mal:email>sebras@gmail.com</mal:email>
-      <mal:years>2014, 2015, 2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Anders Jonsson</mal:name>
-      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
-      <mal:years>2016, 2017</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Ändra datum och mätvärden</title>
+  <title>Change date and measurement formats</title>
 
-  <p>Du kan styra formaten som används för datum, tider, tal, valuta och mätningar så att de matchar lokala seder i din region.</p>
+  <p>You can control the formats that are used for dates, times, numbers,
+  currency, and measurement to match the local customs of your region.</p>
 
   <steps>
-    <item>
-      <p>Öppna översiktsvyn <gui xref="shell-introduction#activities">Aktiviteter</gui> och börja skriv <gui>Region &amp; språk</gui>.</p>
-    </item>
-    <item>
-      <p>Klicka på <gui>Region &amp; språk</gui> för att öppna panelen.</p>
-    </item>
-    <item>
-      <p>Klicka på <gui>Format</gui>.</p>
-    </item>
-    <item>
-      <p>Välj den region som bäst passar formaten som du önskar använda. Om din region och språk inte är listade, klicka på <gui><media its:translate="no" type="image" mime="image/svg" src="figures/view-more-symbolic.svg"><span its:translate="yes">…</span></media></gui> längst ner i listan för att välja bland alla tillgängliga regioner och språk.</p>
-    </item>
-    <item>
-      <p>Klicka på <gui style="button">Färdig</gui> för att spara.</p>
-    </item>
-    <item>
-      <p>Svara på frågan <gui>Din session behöver startas om för att ändringar ska genomföras</gui> genom att klicka på <gui style="button">Starta om nu</gui> eller klicka på <gui style="button">×</gui> för att starta om senare.</p>
-    </item>
+    <item><p>Click your name on the top bar and select
+    <gui>Settings</gui>.</p></item>
+    <item><p>Open <gui>Region &amp; Language</gui> and click
+    <gui>Formats</gui>.</p></item>
+    <item><p>Select the region that most closely matches the formats you'd like
+    to use. By default, the list only shows regions that use the language set on
+    the <gui>Language</gui> tab. Click the <key>...</key> button to
+    select from all available regions.</p></item>
+    <item><p>Respond to the prompt, <gui>Your session needs to be restarted for
+    these changes to take effect</gui> by clicking
+    <gui style="button">Restart Now</gui>, or click <gui style="button">X</gui>
+    to restart later.</p></item>
   </steps>
 
-  <p>Efter att du valt en region, kommer ytan till höger om listan att visa olika exempel på hur datum och andra värden visas. Även om det inte visas i exemplen styr din region även vilken veckodag i veckan som först i kalendrar.</p>
+  <p>After you've selected a region, the area to the right of the list shows
+  various examples of how dates and other values are shown. Although not shown
+  in the examples, your region also controls the starting day of the week in
+  calendars.</p>
 
-  <note style="tip">
-    <p>Om det finns flera användarkonton på ditt system finns det en separat instans av panelen <gui>Region &amp; språk</gui> för inloggningsskärmen. Klicka på <gui>Inloggningsskärm</gui>-knappen längst upp till höger för att växla mellan de två instanserna.</p>
-  </note>
+<!--
+  <section id="system">
+    <info>
+      <link type="seealso" xref="session-language#system"/>
+      <link type="seealso" xref="keyboard-layouts#system"/>
+    </info>
+    <title>Change the system formats</title>
+
+    <p>When you change your region for formats, you only change it for your
+    account after you log in. You can also change the <em>system formats</em>,
+    the formats used in places like the login screen.</p>
+
+    <steps>
+      <item><p>Change your formats, as described above.</p></item>
+      <item><p>Select the <gui>System</gui> tab.</p></item>
+      <item><p>Click <gui>Copy Settings</gui>.</p></item>
+      <item><p><link xref="user-admin-explain">Administrative privileges</link> are
+      required. Enter your password, or the password for the requested administrator
+      account.</p></item>
+    </steps>
+  </section>
+-->
 
 </page>

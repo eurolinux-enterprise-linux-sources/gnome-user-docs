@@ -2,10 +2,8 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="power-lowpower" xml:lang="hu">
 
   <info>
-    <link type="guide" xref="power#faq"/>
+    <link type="guide" xref="power#battery"/>
     <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
-    <revision pkgversion="3.20" date="2016-06-15" status="final"/>
 
     <desc>Az akkumulátort károsítja a teljes kisütés.</desc>
     <credit type="author">
@@ -15,14 +13,6 @@
     <credit type="editor">
       <name>Ekaterina Gerasimova</name>
       <email>kittykat3756@gmail.com</email>
-    </credit>
-    <credit type="author editor">
-      <name>Petr Kovar</name>
-      <email>pknbe@volny.cz</email>
-    </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -36,7 +26,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Kelemen Gábor</mal:name>
       <mal:email>kelemeng at gnome dot hu</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015, 2016, 2017</mal:years>
+      <mal:years>2011, 2012, 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -56,18 +46,14 @@
       <mal:email>lukacs.bence1 at gmail dot com</mal:email>
       <mal:years>2011</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Nagy Zoltán</mal:name>
-      <mal:email>dzodzie at gmail dot com</mal:email>
-      <mal:years>2011</mal:years>
-    </mal:credit>
   </info>
 
-<title>Miért kapcsolt ki a számítógépem, amikor az akkumulátor töltöttsége 10% alá csökkent?</title>
+<title>Miért kapcsolt ki/hibernált a számítógépem, amikor az akkumulátor töltöttsége 10% alá csökkent?</title>
 
-<p>Amikor a töltöttség szintje túl alacsonyra csökken, a számítógép automatikusan kikapcsol. Ennek célja, hogy az akkumulátor ne merüljön le teljesen, ami károsítaná azt. Ha az akkumulátor rögtön lemerülne, a számítógépnek nem lenne ideje megfelelően kikapcsolnia.</p>
+<p>Amikor a töltöttség szintje túl alacsonyra csökken, a számítógép automatikusan <link xref="power-hibernate">hibernál</link>. Ennek célja, hogy az akkumulátor ne merüljön le teljesen, ami károsítaná azt. Ha az akkumulátor rögtön lemerülne, a számítógépnek nem lenne ideje megfelelően kikapcsolnia.</p>
 
-<p>Ne feledje, hogy amikor a számítógép automatikusan kikapcsol, az alkalmazások és dokumentumok <em>nem</em> kerülnek mentésre. A változtatások elvesztésének elkerüléséhez mentse azokat az akkumulátor töltöttségének túlzott lecsökkenése előtt.</p>
+<p>Meg tudja változtatni hogy mi történjen, ha az akkumulátor töltöttségi szintje túl alacsonyra esik a <gui>Tevékenységek</gui> áttekintésből a <app>Energiagazdálkodás</app> panel megnyitásával. A <gui>Ha az akkumulátor energiája kritikus</gui> beállítás segítségével eldöntheti, hogy a számítógép kikapcsoljon vagy hibernáljon; ha a kikapcsolást választja, akkor alkalmazásai és dokumentumai <em>nem</em> kerülnek mentésre a számítógép kikapcsolása előtt.</p>
+
+<p>Egyes számítógépeken nem működik megfelelően a hibernálás, így lehet, hogy nem lesznek képesek visszaállítani a nyitott alkalmazásokat és dokumentumokat a számítógép következő bekapcsolásakor. Emiatt elveszítheti munkája azon részét, amelyet a számítógép hibernálása előtt nem mentett. Ugyanakkor lehetséges, hogy <link xref="power-suspendfail">ki tudja javítani/el tudja hárítani a hibernálással kapcsolatos problémákat</link>.</p>
 
 </page>

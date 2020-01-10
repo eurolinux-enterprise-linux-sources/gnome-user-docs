@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="user-delete" xml:lang="it">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="user-delete" xml:lang="it">
 
   <info>
     <link type="guide" xref="user-accounts#manage"/>
-    <link type="seealso" xref="user-add"/>
-    <link type="seealso" xref="user-admin-explain"/>
-
+    <desc>Rimuovere gli utenti che non utilizzano più il computer.</desc>
     <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -27,14 +22,8 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Rimuovere gli utenti che non utilizzano più il computer.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Luca Ferretti</mal:name>
@@ -48,41 +37,16 @@
       <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
-
   <title>Eliminare un account utente</title>
 
-  <p>You can <link xref="user-add">add multiple user accounts to your
-  computer</link>. If somebody is no longer using your computer, you can delete
-  that user’s account.</p>
+  <p>È possibile aggiungere molteplici account al proprio computer (consultare <link xref="user-add"/>). Se qualcuno di questi account non utilizza più il computer, è possibile rimuoverlo.</p>
 
-  <p>You need <link xref="user-admin-explain">administrator privileges</link>
-  to delete user accounts.</p>
-
-  <steps>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Users</gui>.</p>
-    </item>
-    <item>
-      <p>Click <gui>Users</gui> to open the panel.</p>
-    </item>
-    <item>
-      <p>Press <gui style="button">Unlock</gui> in the top right corner and
-      type in your password when prompted.</p>
-    </item>
-    <item>
-      <p>Select the user that you want to delete and press the
-      <gui style="button">-</gui> button, below the list of accounts on the
-      left, to delete that user account.</p>
-    </item>
-    <item>
-      <p>Each user has their own home folder for their files and settings. You
-      can choose to keep or delete the user’s home folder. Click <gui>Delete
-      Files</gui> if you are sure they will not be used anymore and you need to
-      free up disk space. These files are permanently deleted. They cannot be
-      recovered. You may want to back up the files to an external storage device
-      before deleting them.</p>
-    </item>
-  </steps>
-
+<steps>
+  <item><p>Click your name on the top bar, then click the picture next to your
+  name to open the <gui>Users</gui> window.</p></item>
+  <item><p>Fare clic su <gui>Sblocca</gui> nell'angolo in alto a destra e digitare la propria password. Per poter eliminare degli account è necessario essere un utente con diritti di amministrazione.</p></item>
+  <item><p>Select the user you want to delete and click the
+  <gui style="button">-</gui> button.</p></item>
+  <item><p>Ogni utente dispone della propria cartella personale con i propri file e impostazioni. È possibile scegliere se mantenere o eliminare questa cartella. Fare clic su :<gui>Elimina file</gui>  se si è sicuri non verranno più usati ed è necessario liberare spazio sul disco. I file saranno eliminati per sempre e non sarà possibile ripristinarli. Prima di compiere quest'azione potrebbe essere utile copiarli su un disco esterno o su un CD come copia di backup.</p></item>
+</steps>
 </page>

@@ -5,7 +5,8 @@
     <link type="guide" xref="files#faq"/>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-30" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="review"/>
+
+    <desc>Add, delete, and rename bookmarks in the file manager.</desc>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -15,15 +16,7 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Afegiu, suprimiu i canvieu el nom dels marcadors al gestor de fitxers.</desc>
-
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>David Aguilera</mal:name>
@@ -32,38 +25,39 @@
     </mal:credit>
   </info>
 
-  <title>Edita els marcadors de la carpeta</title>
+<title>Edit folder bookmarks</title>
+<p>Your bookmarks are listed in the sidebar of the file manager.</p>
 
-  <p>Els vostres marcadors apareixen a la barra lateral del gestor de fitxers.</p>
-
-  <steps>
-    <title>Afegir un marcador:</title>
-    <item>
-      <p>Obriu la carpeta (o ubicació) que voleu marcar.</p>
-    </item>
-    <item>
-      <p>Feu clic al menú de la finestra a la barra d'eines i seleccioneu<gui>Marca aquesta ubicació</gui>.</p>
-    </item>
-  </steps>
+    <steps>
+    <title>Add a bookmark:</title>
+    <item><p>Open the folder (or location) that you want to bookmark.</p></item>
+    <item><p>Click the gear button in the toolbar and pick
+    <gui>Bookmark this Location</gui>.</p></item>
+    </steps>
 
   <steps>
-    <title>Esborrar un marcador:</title>
-    <item>
-      <p>Feu clic amb el botó dret al marcador a la barra lateral i seleccioneu <gui>Suprimir</gui> del menú.</p>
-    </item>
+  <title>Delete a bookmark:</title>
+   <item><p>Click on <gui>Files</gui> in the top bar and pick <gui>Bookmarks</gui>
+   from the app menu. </p></item>
+   <item><p>In the <gui>Bookmarks</gui> window, select the bookmark you wish to
+   delete and click the <key>-</key> button.</p></item>
   </steps>
 
-  <steps>
-    <title>Reanomenar un marcador:</title>
-    <item>
-      <p>Feu clic amb el botó dret al marcador a la barra lateral i seleccioneu<gui>Reanomenar…</gui>.</p>
-    </item>
-    <item>
-      <p>A la caixa de text  <gui>Nom</gui>, escriviu el nou nom del marcador.</p>
-      <note>
-        <p>Canviar el nom d'un marcador no canvia el nom de la carpeta. Si teniu adreces d'interès a dues carpetes diferents en dues ubicacions diferents, però que tenen el mateix nom, les adreces d'interès tindran el mateix nom i no podreu separar-les. En aquests casos, és útil donar a un marcador un nom que no sigui el nom de la carpeta al qual apunta.</p>
-      </note>
-    </item>
-  </steps>
+    <steps>
+    <title>Rename a bookmark:</title>
+    <item><p>Click on <gui>Files</gui> in the top bar and pick <gui>Bookmarks</gui>
+     from the app menu.</p></item>
+    <item><p>In the <gui>Bookmarks</gui> window, select the bookmark you wish to
+    rename.</p></item>
+    <item><p>In the <gui>Name</gui> text box, type the new name for the bookmark.</p>
+    <note>
+     <p>Renaming a bookmark does not rename the folder. If you have bookmarks
+     to two different folders in two different locations, but which each have
+     the same name, the bookmarks will have the same name, and you won't be
+     able to tell them apart. In these cases, it is useful to give a bookmark
+     a name other than the name of the folder it points to.</p>
+    </note>
+</item>
+    </steps>
 
 </page>

@@ -2,12 +2,11 @@
 <page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="files-search" xml:lang="fr">
 
   <info>
-    <link type="guide" xref="files#common-file-tasks"/>
+    <link type="guide" xref="files"/>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-25" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
+    <desc>Comment trouver des fichiers par leur nom et leur type et enregistrer les résultats pour un usage ultérieur.</desc>
     <credit type="author">
       <name>Le projet de documentation GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
@@ -20,14 +19,7 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Locate files based on file name and type.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Luc Pionchon</mal:name>
@@ -44,13 +36,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Julien Hardelin</mal:name>
       <mal:email>jhardlin@orange.fr</mal:email>
-      <mal:years>2011, 2013</mal:years>
+      <mal:years>2011</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -76,18 +68,11 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Alexandre Franke</mal:name>
-      <mal:email>alexandre.franke@gmail.com</mal:email>
-      <mal:years>2015</mal:years>
-    </mal:credit>
   </info>
 
   <title>Recherche de fichiers</title>
 
-  <p>You can search for files based on their name or file type directly
-  within the file manager.</p>
+  <p>Vous pouvez rechercher des fichiers par nom ou par type directement dans le gestionnaire de fichiers. Vous pouvez même enregistrer les recherches courantes qui apparaissent alors dans un dossier spécial de votre dossier personnel.</p>
 
   <links type="topic" style="linklist">
     <title>Autres applications de recherche</title>
@@ -97,42 +82,39 @@
 
   <steps>
     <title>Recherche</title>
-    <item>
-      <p>Open the <app>Files</app> application from the
-      <gui xref="shell-introduction#activities">Activities</gui> overview.</p>
+    <item><p>Ouvrez l'application <app>Fichiers</app> à partir de la vue d'ensemble des <gui>Activités </gui>.</p></item>
+    <item><p>Si vous connaissez le nom du dossier contenant les fichiers que vous recherchez, allez à ce dossier.</p></item>
+    <item><p>Click the magnifying glass in the toolbar, or press
+    <keyseq><key>Ctrl</key><key>F</key></keyseq>.</p></item>
+    <item><p>Type a word or words that you know appear in the file name. For
+    example, if you name all your invoices with the word "Invoice", type
+    <input>invoice</input>. Press <key>Enter</key>. Words are matched regardless
+    of case.</p></item>
+    <item><p>You can narrow your results by location and file type.</p>
+    <list>
+      <item><p>Click <gui>Home</gui> to restrict the search results to your
+      <file>Home</file> folder, or <gui>All Files</gui> to search
+      everywhere.</p></item>
+      <item><p>Click <key>+</key> and pick a <gui>File Type</gui> from the
+      drop-down list to narrow the search results based on file type. Click the
+      <key>x</key> button to remove this option and widen the search
+      results.</p></item>
+    </list>
     </item>
-    <item>
-      <p>Si vous connaissez le nom du dossier contenant les fichiers que vous recherchez, allez à ce dossier.</p>
-    </item>
-    <item>
-      <p>Type a word or words that you know appear in the file name, and they
-      will be shown in the search bar. For example, if you name all your
-      invoices with the word “Invoice”, type <input>invoice</input>. Words are
-      matched regardless of case.</p>
-      <note>
-        <p>Plutôt que saisir les mots pour faire apparaître le champ de recherche, cliquez sur la loupe dans la barre d'outils, ou appuyez sur <keyseq><key>Ctrl </key><key>F</key></keyseq>.</p>
-      </note>
-    </item>
-    <item>
-      <p>Vous pouvez réduire les résultats par emplacement et par type de fichier. </p>
-      <list>
-        <item>
-          <p>Cliquez sur <gui>Dossier personnel</gui> pour limiter la recherche à ce dossier, ou sur <gui>Tous les fichiers</gui> pour rechercher partout.</p>
-        </item>
-        <item>
-          <p>Click the <gui>+</gui> button and pick a <gui>File Type</gui> from
-	  the drop-down list to narrow the search results based on file type.
-	  Click the <gui>×</gui> button to remove this option and widen the
-	  search results.</p>
-        </item>
-      </list>
-    </item>
-    <item>
-      <p>Vous pouvez ouvrir, copier, supprimer ou même travaillez avec les fichiers à partir des résultats de la recherche, comme si vous étiez dans n'importe quel dossier du gestionnaire de fichiers.</p>
-    </item>
-    <item>
-      <p>Cliquez sur la loupe dans la barre d'outils pour quitter la recherche et retourner dans le répertoire.</p>
-    </item>
+    <item><p>Vous pouvez ouvrir, copier, supprimer ou même travaillez avec les fichiers à partir des résultats de la recherche, comme si vous étiez dans n'importe quel dossier du gestionnaire de fichiers.</p></item>
+    <item><p>Click the magnifying glass in the toolbar again to exit the search
+    and return to the folder.</p></item>
   </steps>
 
+  <p>Si vous effectuez certaines recherches souvent, vous pouvez les enregistrer pour y accéder rapidement.</p>
+
+  <steps>
+    <title>Enregistrement d'une recherche</title>
+    <item><p>Lancez une recherche comme ci-dessus.</p></item>
+    <item><p>When you're happy with the search parameters, click the gear
+    button and select <gui>Save Search As</gui>.</p></item>
+    <item><p>Donnez un nom à la recherche et cliquez sur <gui>Enregistrer</gui>. Si vous le souhaitez, choisissez un répertoire différent pour y enregistrer la recherche. Lorsque que vous déplacez dans ce répertoire, la sauvegarde de votre recherche apparaît sous la forme d'une icône de dossier orange avec une loupe dessus.</p></item>
+  </steps>
+
+  <p>Pour supprimer le fichier de recherche lorsque vous en avez terminé avec, <link xref="files-delete">supprimez</link> simplement la recherche comme vous le feriez avec n'importe quel autre fichier. Lorsque vous supprimez une recherche sauvegardée, cela ne supprime pas les fichiers qui correspondent aux critères de recherche.</p>
 </page>

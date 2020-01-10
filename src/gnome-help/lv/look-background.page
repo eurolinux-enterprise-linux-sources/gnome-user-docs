@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="look-background" xml:lang="lv">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="look-background" xml:lang="lv">
 
   <info>
     <link type="guide" xref="prefs-display"/>
 
     <revision pkgversion="3.8.0" version="0.3" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-07" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+
+    <desc>Iestatīt attēlu, krāsu vai krāsu pāreju kā darbvirsmas fonu.</desc>
 
     <credit type="author">
       <name>GNOME dokumentācijas projekts</name>
@@ -32,54 +32,33 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Shobha Tyagi</name>
-      <email>tyagishobha@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Iestatīt attēlu, krāsu vai krāsu pāreju kā darbvirsmas fonu vai bloķēšanas ekrāna fonu.</desc>
   </info>
 
-  <title>Nomainīt darbvirsmas un bloķēšanas ekrāna fonus</title>
+<title>Nomainīt darbvirsmas fonu</title>
 
-  <p>Jūs varat nomainīt fona attēlu vai arī aizstāt to ar viendabīgu krāsu.</p>
+<p>Jūs varat nomainīt attēlu jūsu darbvirsmas fonā vai arī aizstāt to ar viendabīgu krāsu vai krāsu pāreju.</p>
 
-  <steps>
-    <item>
-      <p>Atveriet <gui xref="shell-introduction#activities">Aktivitāšu</gui> pārskatu un sāciet rakstīt <gui>Fons</gui>.</p>
-    </item>
-    <item>
-      <p>Spiediet <gui>Fons</gui>, lai atvērtu paneli.</p>
-    </item>
-    <item>
-      <p>Izvēlieties <gui>Fons</gui> vai <gui>Bloķēšanas ekrāns</gui>.</p>
-    </item>
-    <item>
-      <p>Augšā ir attēlotas trīs izvēles iespējas:</p>
-      <list>
-        <item>
-          <p>Izvēlieties <gui>Tapetes</gui>, lai izmantotu kādu no profesionāli veidotajiem fona attēliem, ko piedāvā GNOME. Dažas tapetes dienas laikā maina izskatu. Šīm tapetēm apakšējā labajā stūrī ir mazs pulkstenis.</p>
-        </item>
-        <item>
-          <p>Izvēlieties <gui>Attēli</gui>, ali izmantotu kādu no savām bildēm no <file>Attēlu</file>mapes Vairums fotogrāfiju pārvaldību lietotnes tur glabā fotogrāfijas. Ja vēlaties izmantot attēlu, kas neatrodas mapē “Attēli”, vai nu izmantojiet lietotni <app>Datnes</app>, spiežot labo peles pogu uz attēla datnes un izvēloties <gui>iestatīt kā ekrāntapeti</gui>, vai <app>attēla skatītāju</app>, atverot attēla datni, spiežot izvēlnes pogu virsraksta joslā un izvēloties <gui>iestatīt kā ekrāntapeti</gui>.</p>
-        </item>
-        <item>
-          <p>Izvēlieties <gui>Krāsas</gui>, lai fonam izmantotu viendabīgu krāsu.</p>
-        </item>
-      </list>
-    </item>
-    <item>
-      <p>Iestatījumi tiek pielietoti uzreiz.</p>
-    </item>
-    <item>
-      <p><link xref="shell-workspaces-switch">Pārslēdzieties uz tukšu darbvietu</link>, lai apskatītu darbvirsmu pilnībā.</p>
-    </item>
-  </steps>
+<steps>
+  <item><p>Click your name on the top bar and select <gui>Settings</gui>.</p></item>
+  <item><p>Atveriet sadaļu <gui>Fons</gui>.</p></item>
+  <item><p>Spiediet uz attēla jūsu pašreizējās tapetes vidū.</p></item>
+<item><p>Augšā ir attēlotas trīs izvēles iespējas:</p>
+<list>
+  <item><p>Izvēlieties <gui>Tapetes</gui>, lai izmantotu kādu no profesionāli veidotajiem fona attēliem, ko piedāvā GNOME. Dažas tapetes ir daļēji caurspīdīgas, un caur tām ir redzama fona krāsa. Šīm tapetēm ir pieejama fona krāsas izvēles poga.</p></item>
+  <item><p>Select <gui>Pictures</gui> to use one of your own photos
+  from your Pictures folder. Most photo management applications
+  store photos there.
+  If you would like to use an image that is not in your Pictures folder,
+  either use <app>Files</app> by right-clicking on the image file and
+  selecting <gui>Set as Wallpaper</gui>, or <app>Image Viewer</app> by
+  opening the image file and selecting
+  <guiseq><gui>Image</gui><gui>Set as Desktop Background</gui></guiseq>.</p></item>
+  <item><p>Izvēlieties <gui>Krāsas</gui>, lai izmantotu fonam viendabīgu krāsu vai krāsu pāreju.</p></item>
+</list>
+</item>
+  <item><p>Iestatījumi tiek pielietoti uzreiz.</p></item>
+  <item><p><link xref="shell-workspaces-switch">Pārslēdzieties uz tukšu darbvietu</link>, lai apskatītu darbvirsmu pilnībā.</p></item>
+</steps>
 
 </page>

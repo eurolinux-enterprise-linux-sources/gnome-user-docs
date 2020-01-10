@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-manual" xml:lang="pt-BR">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="net-manual" xml:lang="pt-BR">
   <info>
     <link type="guide" xref="net-wired"/>
     <link type="guide" xref="net-wireless"/>
 
     <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
-    <revision pkgversion="3.10" date="2013-11-11" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-    <revision pkgversion="3.28" date="2018-03-28" status="review"/>
 
     <credit type="author">
       <name>Phil Bull</name>
       <email>philbull@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
 
-    <desc>Você pode ter que informar suas configurações de rede, se elas não forem definidas automaticamente.</desc>
+    <desc>If network settings don't get assigned automatically, you may have to enter them yourself.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -29,68 +21,50 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Enrico Nicoletto</mal:name>
       <mal:email>liverig@gmail.com</mal:email>
       <mal:years>2013.</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>João Santana</mal:name>
-      <mal:email>joaosantana@outlook.com</mal:email>
-      <mal:years>2013.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Fontenelle</mal:name>
-      <mal:email>rafaelff@gnome.org</mal:email>
-      <mal:years>2012-2018.</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Definindo manualmente as configurações de rede</title>
+<title>Configurações de rede definidas manualmente</title>
 
-  <p>Se sua rede não atribuir configurações automaticamente para seu computador, você pode ter que você mesmo digitá-las manualmente. Este tópico presume que você já sabe as configurações corretas a serem usadas. Se não sabe, você pode precisar perguntar a seu administrador de redes ou procurar nas configurações do seu roteador ou switch de rede.</p>
+<p>If your network doesn't automatically assign network settings to your computer, you may have to manually enter the settings yourself. This topic assumes that you already know the correct settings to use. If not, you may need to ask your network administrator or look at the settings of your router or network switch.</p>
 
-  <steps>
-    <title>Para definir manualmente suas configurações de rede:</title>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui>
-      overview and start typing <gui>Settings</gui>.</p>
-    </item>
-    <item>
-      <p>Click on <gui>Settings</gui>.</p>
-    </item>
-    <item>
-      <p>In the left pane, select the network connection that you want to set
-      up manually. If you plug in to the network with a cable, click
-      <gui>Network</gui>. Otherwise click <gui>Wi-Fi</gui>.</p>
-      <p>Certifique-se de que sua placa de rede sem fio está ativada ou um cabo de rede está conectado.</p>
-    </item>
-    <item>      
-      <p>Click the
-      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
-      button.</p>
-      <note>
-        <p>For a <gui>Wi-Fi</gui> connection, the 
-        <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
-        button will be located next to the active network.</p>
-      </note>
-    </item>
-    <item>
-      <p>Clique em <gui>IPv4</gui> ou <gui>IPv6</gui> no painel esquerdo e altere o <gui>Endereço</gui> para <em>Manual</em>.</p>
-    </item>
-    <item>
-      <p>Digite o <gui xref="net-what-is-ip-address">Endereço IP</gui> e o <gui>Gateway</gui>, assim como a <gui>Máscara de rede</gui> apropriada.</p>
-    </item>
-    <item>
-      <p>Na seção <gui>DNS</gui>, alterne <gui>Automático</gui> para <key>○</key>. Digite o endereço IP de um servidor DNS que você deseja usar. Digite endereços de servidores adicionais usando o botão <gui>+</gui>.</p>
-    </item>
-    <item>
-      <p>Na seção <gui>Rotas</gui>, alterne <gui>Automático</gui> para <key>○</key>. Digite o <gui>Endereço</gui>, a <gui>Máscara de rede</gui>, o <gui>Gateway</gui> e a <gui>Métrica</gui> de uma rota que você deseja usar. Insira rotas adicionais usando o botão <gui>+</gui>.</p>
-    </item>
-    <item>
-      <p>Clique em <gui>Aplicar</gui>. Se você não está conectado à rede, clique na área de status do sistema na barra superior e conecte-se. Teste as configurações de rede tentando visitar um site ou procurar por arquivos de compartilhados na rede, por exemplo.</p>
-    </item>
-  </steps>
+<steps>
+  <title>To manually set your network settings:</title>
+ <item>
+  <p>Clique no ícone de rede na barra superior e selecione <gui>Configurações de rede</gui>.</p>
+ </item>
+
+ <item>
+  <p>Select the network connection that you want to set up manually and click <gui>Configure</gui>. For example, if you plug in to the network with a cable, look at <gui>Wired</gui>.</p>
+  <p>Make sure that your wireless card is turned on or a network cable is plugged in. Otherwise, you won't be able to click <gui>Configure</gui>.</p>
+ </item>
+
+ <item>
+  <p>Go to the <gui>IPv4 Settings</gui> tab and change the <gui>Method</gui> to <gui>Manual</gui>.</p>
+ </item>
+
+ <item>
+  <p>Click <gui>Add</gui> and type the <em>IP address</em>, <em>network mask</em> and <em>default gateway IP address</em> into the corresponding columns of the <gui>Addresses</gui> list. Press <key>Enter</key> or <key>Tab</key> after typing each address.</p>
+  <p>These three addresses must be IP addresses; that is, they must be four numbers separated by periods (e.g. 123.45.6.78).</p>
+ </item>
+
+ <item>
+  <p>Type the IP addresses of the DNS servers you want to use in the corresponding field, separated by commas.</p>
+ </item>
+
+ <item>
+  <p>Click <gui>Save</gui>. If you are not connected to the network, click the network icon on the top bar and connect. Test the network settings by trying to visit a website or look at shared files on the network, for example.</p>
+ </item>
+
+</steps>
 
 </page>

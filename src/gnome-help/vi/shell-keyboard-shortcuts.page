@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="tip" version="1.0 ui/1.0" id="shell-keyboard-shortcuts" xml:lang="vi">
-
+<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="tip" id="shell-keyboard-shortcuts" xml:lang="vi">
   <info>
     <link type="guide" xref="tips"/>
     <link type="guide" xref="keyboard"/>
-    <link type="guide" xref="shell-overview#apps"/>
+    <link type="guide" xref="shell-overview"/>
     <link type="seealso" xref="keyboard-key-super"/>
+    <desc>Điều khiển bằng bàn phím.</desc>
 
     <revision pkgversion="3.8.0" version="0.4" date="2013-04-23" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.20" date="2016-08-13" status="candidate"/>
 
     <credit type="author copyright">
       <name>Shaun McCance</name>
@@ -24,10 +22,7 @@
       <name>Ekaterina Gerasimova</name>
       <email>kittykat3756@gmail.com</email>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Điều khiển bằng bàn phím.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Nguyễn Thái Ngọc Duy</mal:name>
@@ -46,10 +41,8 @@ information on navigating user interfaces with only the keyboard.</p>
 <table rules="rows" frame="top bottom" ui:expanded="true">
 <title>Đi vòng màn hình</title>
   <tr xml:id="alt-f1">
-    <td><p>
-      <keyseq><key>Alt</key><key>F1</key></keyseq> or the
-      <key xref="keyboard-key-super">Super</key> key
-    </p></td>
+    <td><p><keyseq><key>Alt</key><key>F1</key></keyseq> or the
+    <key xref="keyboard-key-super">Super</key> key</p></td>
     <td><p>Switch between the <gui>Activities</gui> overview and desktop. In
     the overview, start typing to instantly search your applications, contacts,
     and documents.</p></td>
@@ -73,21 +66,15 @@ information on navigating user interfaces with only the keyboard.</p>
       <key>Super</key> plus the key above <key>Tab</key>.</p>
     </td>
   </tr>
-  <tr xml:id="alt-escape">
-    <td><p><keyseq><key>Alt</key><key>Esc</key></keyseq></p></td>
-    <td>
-      <p>Switch between windows in the current workspace. Hold down
-      <key>Shift</key> for reverse order.</p>
-    </td>
-  </tr>
   <tr xml:id="ctrl-alt-tab">
     <!-- To be updated to <key>Tab</key> in the future. -->
     <td><p><keyseq><key>Ctrl</key><key>Alt</key><key>Tab</key></keyseq></p></td>
     <td>
-      <p>Give keyboard focus to the top bar. In the <gui>Activities</gui>
-      overview, switch keyboard focus between the top bar, dash, windows
-      overview, applications list, search field, and message tray. Use the
-      arrow keys to navigate.</p>
+      <p>Đặt tiêu điểm vào thanh đỉnh. Trong Tổng quan <gui>hoạt động</gui>, chuyển tiêu điểm bàn phím giữa thanh đỉnh, neo ứng dụng, tổng quan cửa sổ, danh sách ứng dụng và ô tìm kiếm. Dùng mũi tên để di chuyển.</p>
+      <p>It is not currently possible to use the arrow keys to navigate the
+      windows overview. To switch windows, exit the overview and use
+      <keyseq><key>Super</key><key>Tab</key></keyseq> and
+      <keyseq><key>Super</key><key>`</key></keyseq>.</p>
     </td>
   </tr>
   <tr xml:id="super-a">
@@ -95,42 +82,30 @@ information on navigating user interfaces with only the keyboard.</p>
     <td><p>Show the list of applications.</p></td>
   </tr>
   <tr xml:id="super-updown">
-    <td><p>
-      <keyseq><key>Super</key><key>Page Up</key></keyseq> or
-      <keyseq><key>Ctrl</key><key>Alt</key><key>Up</key></keyseq>, and
-      <keyseq><key>Super</key><key>Page Down</key></keyseq> or
-      <keyseq><key>Ctrl</key><key>Alt</key><key>Down</key></keyseq>
-    </p></td>
+    <td><p><keyseq><key>Super</key><key>Page Up</key></keyseq> and
+    <keyseq><key>Super</key><key>Page Down</key></keyseq></p></td>
     <td><p><link xref="shell-workspaces-switch">Switch between
      workspaces</link>.</p></td>
   </tr>
   <tr xml:id="super-shift-updown">
-    <td><p>
-      <keyseq><key>Super</key><key>Shift</key><key>Page Up</key></keyseq> and
-      <keyseq><key>Super</key><key>Shift</key><key>Page Down</key></keyseq>
-    </p></td>
+    <td><p><keyseq><key>Super</key><key>Shift</key><key>Page Up</key></keyseq>
+    and <keyseq><key>Super</key><key>Shift</key><key>Page Down</key></keyseq></p></td>
     <td><p><link xref="shell-workspaces-movewindow">Move the current window to a
      different workspace</link>.</p></td>
   </tr>
-  <tr xml:id="super-shift-left">
-    <td><p><keyseq><key>Super</key><key>Shift</key><key>←</key></keyseq></p></td>
-    <td><p>Move the current window one monitor to the left.</p></td>
-  </tr>
-  <tr xml:id="super-shift-right">
-    <td><p><keyseq><key>Super</key><key>Shift</key><key>→</key></keyseq></p></td>
-    <td><p>Move the current window one monitor to the right.</p></td>
-  </tr>
   <tr xml:id="ctrl-alt-Del">
     <td><p><keyseq><key>Ctrl</key><key>Alt</key><key>Delete</key></keyseq></p></td>
-    <td><p><link xref="shell-exit">Power Off</link>.</p></td>
+    <!-- TODO: test, as design team assigns this to 'power off'. -->
+    <td><p><link xref="shell-exit">Log out</link>.</p></td>
   </tr>
   <tr xml:id="ctrl-alt-l">
-    <td><p><keyseq><key>Super</key><key>L</key></keyseq></p></td>
+    <!-- May be renamed to Super+L in the future. -->
+    <td><p><keyseq><key>Ctrl</key><key>Alt</key><key>L</key></keyseq></p></td>
     <td><p><link xref="shell-exit#lock-screen">Khoá màn hình.</link></p></td>
   </tr>
   <tr xml:id="super-m">
     <td><p><keyseq><key>Super</key><key>M</key></keyseq></p></td>
-    <td><p>Open <link xref="shell-notifications#messagetray">the message
+    <td><p>Open <link xref="shell-notifications#messagingtray">the message
     tray</link>. Press <keyseq><key>Super</key><key>M</key></keyseq> again or
     <key>Esc</key> to close.</p></td>
   </tr>

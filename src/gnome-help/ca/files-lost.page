@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-lost" xml:lang="ca">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-lost" xml:lang="ca">
 
   <info>
-    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="files" group="more"/>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-28" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="candidate"/>
+
+    <desc>Follow these tips if you can't find a file you
+    created or downloaded.</desc>
 
     <credit type="author">
       <name>Projecte de documentació del GNOME</name>
@@ -20,14 +21,8 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Seguiu aquests consells si no podeu trobar un fitxer que hagueu creat o baixat.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>David Aguilera</mal:name>
@@ -36,18 +31,31 @@
     </mal:credit>
   </info>
 
-<title>Trobar un fitxer perdut</title>
+<title>Find a lost file</title>
 
-<p>Si heu creat o baixat un fitxer, però ara no el podeu trobar, seguiu aquests consells.</p>
+<p>If you created or downloaded a file, but now you can't find it,
+follow these tips.</p>
 
 <list>
-  <item><p>Si no recordeu on vau desar el fitxer, però teniu una idea de com el vau nomenar, podeu fer-ho <link xref="files-search">cercar el fitxer pel nom</link>.</p></item>
+  <item><p>If you don't remember where you saved the file, but you
+  have some idea of how you named it, you can search for the file
+  by name. See <link xref="files-search"/> to learn how.</p></item>
 
-  <item><p>Si acaba de descarregar el fitxer, el vostre navegador web podria haver-lo guardat automàticament en una carpeta comú. Mireu a les carpetes <file>Escriptori</file> i <file>Baixades</file> al vostre directori 'Inici'.</p></item>
+  <item><p>If you just downloaded the file, your web browser might
+  have automatically saved it to a common folder. Check the
+  Desktop and Downloads folders in your home folder.</p></item>
 
-  <item><p>Podeu haver esborrat el fitxer accidentalment. Quan suprimiu un fitxer, es mou a la paperera, on es manté fins que buideu la paperera manualment. Consultar <link xref="files-recover"/> per per saber-ne més sobre com recuperar un fitxer eliminat.</p></item>
+  <item><p>You might have accidentally deleted the file. When you delete
+  a file, it gets moved to the trash, where it stays until you manually
+  empty the trash. See <link xref="files-recover"/> to learn how to
+  recover a deleted file.</p></item>
 
-  <item><p>És possible que hagueu canviat el nom d'un fitxer de manera que hagueu ocultat el fitxer. Fitxers que comencen per a <file>.</file> o acabin amb <file>~</file> estan ocults al gestor de fitxers. Feu clic al botó Opcions de visualització a la barra d'eines <app>Fitxers</app> i activeu <gui>Mostrar els Fitxers Ocults</gui> per mostrar-los. Consultar <link xref="files-hidden"/> per saber-ne més.</p></item>
+  <item><p>You might have renamed the file in a way that made the file hidden.
+  Files that start with a <file>.</file> or end with a <file>~</file> are hidden
+  in the file manager. Click the
+  <media type="image" src="figures/go-down.png">down</media> button in the file
+  manager toolbar and pick <gui>Show Hidden Files</gui> to display them. See
+  <link xref="files-hidden"/> to learn more.</p></item>
 </list>
 
 </page>

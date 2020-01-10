@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task a11y" id="a11y-slowkeys" xml:lang="ca">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task a11y" id="a11y-slowkeys" xml:lang="ca">
   <info>
     <link type="guide" xref="a11y#mobility" group="keyboard"/>
     <link type="guide" xref="keyboard" group="a11y"/>
 
-    <revision pkgversion="3.8.0" date="2013-03-13" status="candidate"/>
-    <revision pkgversion="3.9.92" date="2013-09-18" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="final"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -22,14 +18,9 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <desc>Com afegir un retard entre prémer una tecla i que la lletra aparegui a la pantalla.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>David Aguilera</mal:name>
@@ -44,27 +35,32 @@
 
   <steps>
     <item>
-      <p>Obriu la descripció general de les <gui xref="shell-introduction#activities">Activities</gui>  i comenceu a escriure  <gui>Accés Universal</gui>.</p>
+      <p>Click your name on the top bar and select <gui>Settings</gui>.</p>
     </item>
     <item>
-      <p>Feu clic a <gui>Accés universal</gui> per obrir el quadre.</p>
+      <p>Obriu l'<gui>Accés universal</gui> i seleccioneu la pestanya <gui>Escriptura</gui>.</p>
     </item>
     <item>
-      <p>Premeu <gui>Assistència d'escriptura (AccessX)</gui> a la secció <gui>Escriptura</gui>.</p>
-    </item>
-    <item>
-      <p>Canvieu les<gui>Tecles lentes</gui> a <gui>ON</gui>.</p>
+      <p>Activeu les <gui>Tecles lentes</gui>.</p>
     </item>
   </steps>
 
   <note style="tip">
-    <title>Activeu i desactiveu les tecles lentes ràpidament</title>
-    <p>A <gui>Activa per Teclat</gui>, seleccioneu <gui>Activar les funcions d'accessibilitat des del teclat</gui> per activar i desactivar les tecles lentes. Quan es selecciona aquesta opció, podeu mantenir premut <key>Shift</key> fdurant vuit segons per activar o desactivar les tecles lentes.</p>
-    <p>També podeu activar les tecles lentes si feu clic a la <link xref="a11y-icon">icona d'accessibilitat</link> de la barra superior i seleccioneu <gui>Tecles lentes</gui>. La icona d'accessibilitat només es mostra si s'ha activat alguna opció en el quadre d'<gui>Accés universal</gui>.</p>
+    <title>Quickly turn slow keys on and off</title>
+    <p>Under <gui>Enable by Keyboard</gui>, select
+    <gui>Turn on accessibility features from the keyboard</gui> to
+    turn slow keys on and off from the keyboard. When this option is selected,
+    you can press and hold <key>Shift</key> for eight seconds to enable or
+    disable slow keys.</p>
+    <p>You can also turn slow keys on and off by clicking the
+    <link xref="a11y-icon">accessibility icon</link> on the top bar and
+    selecting <gui>Slow Keys</gui>. The accessibility icon is visible when
+    one or more settings have been enabled from the <gui>Universal Access</gui>
+    panel.</p>
   </note>
 
   <p>Utilitzeu la barra lliscant del <gui>Retard d'acceptació</gui> per controlar quanta estona heu de mantenir premuda una tecla perquè s'enregistri l'esdeveniment.</p>
 
-  <p>Podeu fer que l'ordinador faci un so quan es prem una tecla, quan s'accepta, o quan es rebutja perquè no ha estat prou temps premuda.</p>
+  <p>Podeu configurar l'ordinador perquè emeti un so quan premeu una tecla, quan s'accepta la pulsació d'una tecla o quan es rebutja la pulsació perquè no heu premut la tecla durant prou estona.</p>
 
 </page>

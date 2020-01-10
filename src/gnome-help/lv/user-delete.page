@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="user-delete" xml:lang="lv">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="user-delete" xml:lang="lv">
 
   <info>
     <link type="guide" xref="user-accounts#manage"/>
-    <link type="seealso" xref="user-add"/>
-    <link type="seealso" xref="user-admin-explain"/>
-
+    <desc>Izņemt no sistēmas lietotājus, kas datoru vairs neizmanto.</desc>
     <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -27,38 +22,19 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Izņemt no sistēmas lietotājus, kas datoru vairs neizmanto.</desc>
   </info>
-
   <title>Dzēst lietotāja kontu</title>
 
-  <p>Jūs varat <link xref="user-add">pievienot vairākus lietotāju kontus</link>. Ja kāds jūsu datoru vairs neizmanto, jūs varat izdzēst atbilstošo lietotāja kontu.</p>
+  <p>Jūs varat pievienot vairākus lietotāju kontus. Spiediet <link xref="user-add"/>, lai izlasītu pamācību. Ja kāds jūsu datoru vairs neizmanto, jūs varat izdzēst atbilstošo lietotāja kontu.</p>
 
-  <p>Jums ir jābūt <link xref="user-admin-explain">administratora tiesībām</link>, lai dzēstu lietotāju kontus.</p>
-
-  <steps>
-    <item>
-      <p>Atveriet <gui xref="shell-introduction#activities">Aktivitāšu</gui> pārskatu un sāciet rakstīt <gui>Lietotāji</gui>.</p>
-    </item>
-    <item>
-      <p>Spiediet <gui>Lietotāji</gui>, lai atvērtu paneli.</p>
-    </item>
-    <item>
-      <p>Spiediet pogu <gui style="button">Atslēgt</gui> un ievadiet savu  paroli.</p>
-    </item>
-    <item>
-      <p>Izvēlieties lietotāju, kuru vēlaties dzēst, un spiediet <gui style="button">-</gui> pogu kontu sarakstā apakšā pa kreisi, lai dzēstu tā lietotāja kontu.</p>
-    </item>
-    <item>
-      <p>Katram lietotājam ir sava mājas mape, kur glabāt datnes un iestatījumus. Jūs varat izvēlēties paturēt vai dzēst lietotāja mājas mapi. Spiediet <gui>Dzēst datnes</gui>, ja esat droši, ka tās vairs nav vajadzīgas, un jums jāatbrīvo vieta diskā. Šīs datnes tiks neatgriezeniski dzēstas un nebūs atgūstamas. Iespējams, pirms dzēšanas vēlēsieties izveidot datņu rezerves kopijas uz ārēja diska.</p>
-    </item>
-  </steps>
-
+<steps>
+  <item><p>Click your name on the top bar, then click the picture next to your
+  name to open the <gui>Users</gui> window.</p></item>
+  <item><p>Spiediet <gui>Atslēgt</gui> augšējā labajā stūrī un ierakstiet savu paroli, lai veiktu izmaiņas. Lai dzēstu lietotājus, nepieciešamas administratora tiesības.</p></item>
+  <item><p>Select the user you want to delete and click the
+  <gui style="button">-</gui> button.</p></item>
+  <item><p>Katram lietotājam ir sava mājas mape, kur glabāt datnes un iestatījumus. Jūs varat izvēlēties paturēt vai dzēst lietotāja mājas mapi. Spiediet <gui>Dzēst datnes</gui>, ja esat droši, ka tās vairs nav vajadzīgas, un jums jāatbrīvo vieta diskā. Šīs datnes tiks neatgriezeniski dzēstas un nebūs atgūstamas. Iespējams, pirms dzēšanas vēlēsieties izveidot datņu rezerves kopijas uz ārēja diska vai CD.</p></item>
+</steps>
 </page>

@@ -2,13 +2,11 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-delete" xml:lang="ca">
 
   <info>
-    <link type="guide" xref="files#common-file-tasks"/>
+    <link type="guide" xref="files"/>
     <link type="seealso" xref="files-recover"/>
+    <desc>Remove files or folders you no longer need.</desc>
 
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-16" status="review"/>
-    <revision pkgversion="3.13.92" date="2013-09-20" status="candidate"/>
-    <revision pkgversion="3.16" date="2015-02-22" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
 
     <credit type="author">
       <name>Cristopher Thomas</name>
@@ -18,22 +16,15 @@
       <name>Shaun McCance</name>
       <email>shaunm@gnome.org</email>
     </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
     <credit type="author">
       <name>Jim Campbell</name>
-      <email>jcampbell@gnome.org</email>
+      <email>jwcampbell@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Eliminar els arxius o carpetes que ja no necessitareu.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>David Aguilera</mal:name>
@@ -42,33 +33,52 @@
     </mal:credit>
   </info>
 
-<title>Eliminar fitxers i carpetes.</title>
+<title>Delete files and folders</title>
 
-  <p>Si ja no voleu un arxiu o una carpeta, podeu suprimir-lo. Quan suprimiu un ítem, es desplaça a la carpeta anomenada <gui>Paperera</gui>, on s'emmagatzema fins que es buidi la paperera. Podeu <link xref="files-recover">restaurar elements</link> de la <gui>Paperera</gui> a la seva ubicació original si decidiu que els necessiteu o si els vàreu eliminar accidentalment.</p>
+  <p>If you don't want a file or folder any more, you can delete it. When you
+  delete an item it is moved to the <gui>Trash</gui> folder, where it is stored
+  until you empty the trash.  You can <link xref="files-recover">restore items
+  </link> in the <gui>Trash</gui> folder to their original location if you
+  decide you need them, or if they were accidentally deleted.</p>
 
   <steps>
-    <title>Per enviar un fitxer a la paperera:</title>
-    <item><p>Feu un sol clic a l'element que voleu enviar a la paperera per seleccionar-lo.</p></item>
-    <item><p>Premeu <key>Esborrar</key> al teclat. Com alternativa, arrossegueu l'element a la<gui>Paperera</gui>a la barra lateral.</p></item>
+    <title>To send a file to the trash:</title>
+    <item><p>Select the item you want to place in the trash by clicking it once.
+    </p></item>
+    <item><p>Press <keyseq><key>Ctrl</key><key>Delete</key></keyseq> on your
+    keyboard. Alternatively, drag the item to the <gui>Trash</gui> in the
+    sidebar.</p></item>
   </steps>
 
-  <p>El fitxer es traslladarà a la paperera i s'ús presentarà una opció<gui>Desfer</gui> l'esborrat. El botó <gui>Desfer</gui> apareix uns segons. Si seleccioneu <gui>Desfer</gui>, el fitxer es restaurarà a la seva ubicació original.</p>
-
-  <p>Per eliminar els fitxers permanentment i alliberar espai al disc a l'ordinador, heu de buidar la paperera. Per buidar la paperera, feu clic amb el botó de la dreta <gui>Paperera</gui> a la barra lateral i seleccioneu <gui>Buidar paperera</gui>.</p>
+  <p>To delete files permanently, and free up disk space on your computer, you
+  need to empty the trash. To empty the trash, right-click <gui>Trash</gui> in
+  the sidebar and select <gui>Empty Trash</gui>.</p>
 
   <section id="permanent">
-    <title>Suprimeix un fitxer permanentment</title>
-    <p>Podeu eliminar immediatament un fitxer de forma permanent, sense haver d'enviar-lo primer a la paperera.</p>
+    <title>Permanently delete a file</title>
+    <p>You can immediately delete a file permanently, without having to send it
+    to the trash first.</p>
 
   <steps>
-    <title>Per suprimir un fitxer de forma permanent:</title>
-    <item><p>Seleccioneu l'element que voleu suprimir.</p></item>
-    <item><p>Mantingui premuda la tecla <key>Shift</key>, aleshores premi la tecla <key>Esborrar</key> del seu teclat.</p></item>
-    <item><p>Com que no ho podeu desfer, s'ús demanarà que confirmeu que voleu eliminar el fitxer o la carpeta</p></item>
+    <title>To permanently delete a file:</title>
+    <item><p>Select the item you want to delete.</p></item>
+    <item><p>Press and hold the <key>Shift</key> key, then press the
+    <key>Delete</key> key on your keyboard.</p></item>
+    <item><p>Because you cannot undo this, you will be asked to confirm that
+    you want to delete the file or folder.</p></item>
   </steps>
 
-  <note><p>Els fitxers esborrats als <link xref="files#removable">dispositius extraïbles</link> poden no ser visibles en altres sistemes operatius, com Windows o Mac OS. Els fitxers encara hi són i estaran disponibles quan torneu a connectar el dispositiu al vostre ordinador.</p></note>
+  <note style="tip"><p>If you frequently need to delete files without using the
+  trash (for example, if you often work with sensitive data), you can add a
+  <gui>Delete</gui> entry to the right-click menu for files and folders.
+  Click <gui>Files</gui> in the top bar, pick <gui>Preferences</gui> and select
+  the <gui>Behavior</gui> tab. Select <gui>Include a Delete command that
+  bypasses Trash</gui>.</p></note>
+
+  <note><p>Deleted files on a <link xref="files#removable">removable device
+  </link> may not be visible on other operating systems, such Windows or Mac
+  OS. The files are still there, and will be available when you plug the device
+  back into your computer.</p></note>
 
   </section>
-
 </page>

@@ -4,10 +4,10 @@
   <info>
     <link type="guide" xref="nautilus-prefs" group="nautilus-behavior"/>
 
-    <desc>Un sol clic per obrir fitxers, executar o visualitzar fitxers de text, i especificar el comportament de la paperera.</desc>
+    <desc>Single-click to open files, run or view executable
+    text files, and specify trash behavior.</desc>
 
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -25,10 +25,6 @@
       <name>Sindhu S</name>
       <email>sindhus@live.in</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -38,17 +34,17 @@
     </mal:credit>
   </info>
 
-<title>Preferències del gestor d'arxius</title>
+<title>File manager behavior preferences</title>
 <p>You can control whether you single-click or double-click files, how
 executable text files are handled, and the trash behavior. Click
 <gui>Files</gui> in the top bar, pick <gui>Preferences</gui> and select the <gui>Behavior</gui> tab.</p>
 
 <section id="behavior">
-<title>Comportament</title>
+<title>Behavior</title>
 <terms>
  <item>
-  <title><gui>Clic simple per obrir els elements</gui></title>
-  <title><gui>Clic doble per obrir els elements</gui></title>
+  <title><gui>Single click to open items</gui></title>
+  <title><gui>Double click to open items</gui></title>
   <p>By default, clicking selects files and double-clicking opens them.
   You can instead choose to have files and folders open when you click on
   them once. When you use single-click mode, you can hold down the
@@ -58,7 +54,7 @@ executable text files are handled, and the trash behavior. Click
 
 </section>
 <section id="executable">
-<title>Fitxer de text executable</title>
+<title>Executable text files</title>
  <p>An executable text file is a file that contains a program that you can run
  (execute). The <link xref="nautilus-file-properties-permissions">file
  permissions</link> must also allow for the file to run as a program. The most
@@ -66,53 +62,67 @@ executable text files are handled, and the trash behavior. Click
  These have extensions <file>.sh</file>, <file>.py</file> and <file>.pl</file>,
  respectively.</p>
  
- <p>Quan obriu un fitxer de text executable, podeu seleccionar entre:</p>
+ <p>When you open an executable text file, you can select from:</p>
  
  <list>
   <item>
-    <p><gui>Executeu fitxers de text executables quan s'obrin</gui></p>
+    <p><gui>Run executable text files when they are opened</gui></p>
   </item>
   <item>
-    <p><gui>Visualitzeu fitxers de text executables quan s'obrin</gui></p>
+    <p><gui>View executable text files when they are opened</gui></p>
   </item>
   <item>
-    <p><gui>Preguntar cada vegada</gui></p>
+    <p><gui>Ask each time</gui></p>
   </item>
  </list>
 
- <p>Si està seleccionat <gui>Preguntar cada vegada</gui>, es mostrarà un diàleg flotant preguntant-vos si el voleu executar o visualitzar.</p>
+ <p>If <gui>Ask each time</gui> is selected, a dialog will pop up asking if you
+ wish to run or view the selected text file.</p>
 
- <p>Els fitxers text executables també s'anomenen <em>scripts</em>. Tots els scripts a la carpeta <file>~/.local/share/nautilus/scripts</file> apareixerà al menú contextual per a un fitxer sota el <gui style="menuitem">Script</gui> submenu. Quan un script s'executa des d'una carpeta local, tots els fitxers seleccionats s'enganxaran al script com a paràmetres. Per executar un script en un fitxer:</p>
+ <p>Executable text files are also called scripts. All scripts in
+ <file>~/.local/share/nautilus/scripts</file> folder will appear in the context
+ menu for a file under the <gui style="menuitem">Scripts</gui> submenu. When a
+ script is executed from a local folder, all selected files will be pasted to
+ the script as parameters. To execute a script on a file:</p>
 
 <steps>
   <item>
-    <p>Navegar a la carpeta desitjada.</p>
+    <p>Navigate to the desired folder.</p>
   </item>
   <item>
-    <p>Seleccioneu l'arxiu desitjat.</p>
+    <p>Select the desired file.</p>
   </item>
   <item>
-    <p>Feu clic amb el botó dret al fitxer per obrir el menú contextual i seleccioneu la seqüència que desitgeu executar des del menú <gui style="menuitem">Scripts</gui>.</p>
+    <p>Right click on the file to open the context menu and select the desired
+    script to execute from the <gui style="menuitem">Scripts</gui> menu.</p>
   </item>
 </steps>
 
  <note style="important">
-  <p>Un script no passarà cap paràmetre quan s'executi des d'una carpeta remota, com ara una carpeta que mostra contingut web o <sys>ftp</sys>.</p>
+  <p>A script will not be passed any parameters when executed from a remote
+  folder such as a folder showing web or <sys>ftp</sys> content.</p>
  </note>
 
 </section>
-
 <section id="trash">
 <info>
 <link type="seealso" xref="files-delete"/>
-<title type="link">Preferències de paperera de l'administrador de fitxers</title>
+<title type="link">File manager trash preferences</title>
 </info>
-<title>Paperera</title>
+<title>Trash</title>
 
 <terms>
  <item>
-  <title><gui>Preguntar abans de buidar la Paperera</gui></title>
-  <p>Aquesta opció es selecciona de manera predeterminada. Quan es buidi la paperera, es mostrarà un missatge per confirmar que voleu buidar la paperera o eliminar els fitxers.</p>
+  <title><gui>Ask before emptying the Trash or deleting files</gui></title>
+  <p>This option is selected by default.  When emptying the trash, a message will be displayed confirming that you would like to empty the trash or delete files.</p>
+ </item>
+ <item>
+  <title><gui>Include a Delete command that bypasses Trash</gui></title>
+  <p>Selecting this option will add a <gui>Delete</gui> item to the menu that
+  pops up when you right-click on an item in the <app>Files</app> application.</p>
+<note style="warning">
+<p>Deleting an item using the <gui>Delete</gui> menu option bypasses the Trash altogether.  The item is removed from the system completely.  There is no way to recover the deleted item.</p>
+</note>
  </item>
 </terms>
 </section>

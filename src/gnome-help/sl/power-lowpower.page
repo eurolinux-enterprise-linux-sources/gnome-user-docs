@@ -2,10 +2,8 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="power-lowpower" xml:lang="sl">
 
   <info>
-    <link type="guide" xref="power#faq"/>
+    <link type="guide" xref="power#battery"/>
     <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
-    <revision pkgversion="3.20" date="2016-06-15" status="final"/>
 
     <desc>Omogočitev popolne izpraznitve baterije je zanjo slaba.</desc>
     <credit type="author">
@@ -16,28 +14,16 @@
       <name>Ekaterina Gerasimova</name>
       <email>kittykat3756@gmail.com</email>
     </credit>
-    <credit type="author editor">
-      <name>Petr Kovar</name>
-      <email>pknbe@volny.cz</email>
-    </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
-<title>Why did my computer turn off when the battery got to 10%?</title>
+<title>Zakaj se je moj računalnik izklopil/je prešel v stanje pripravljenosti/mirovanje, ko je vrednost baterije dosegla 10%?</title>
 
-<p>When the charge level of the battery gets too low, your computer will
-automatically turn off. It does this to make sure that the battery does not
-completely discharge, since this is bad for
-the battery. If the battery just ran out, the computer would not have time to
-shut down properly either.</p>
+<p>Ko se raven polnosti baterije preveč zniža, bo vaš računalnik samodejno prešel v <link xref="power-hibernate">mirovanje</link>. To povzroči, da se baterija ne izprazni popolnoma, saj je to slabo za baterijo. Poleg tega v primeru da bi baterije nenadoma zmanjkalo, računalnik ne bi imel časa za pravilen izklop.</p>
 
-<p>Bear in mind that when your computer automatically turns off, your
-applications and documents <em>are not</em> saved. To avoid losing your
-work, save it before the battery gets too low.</p>
+<p>Kaj se zgodi, ko raven baterije postane prenizka, lahko spremenite s klikom na svoje ime na vrhu zaslona, izbiro <gui>Nastavitve sistema</gui> in odpiranjem nastavitev <gui>Poraba</gui>. Oglejte si nastavite <gui>Ko je napolnjenost baterije kritično nizka</gui>. Izberete lahko, da računalnik preide v stanje pripravljenosti ali pa se izklopi. V primeru da izberete izklop, vaši programi in dokumenti pred izklopom računalnika <em>ne</em> bodo shranjeni.</p>
+
+<p>Nekateri računalniki imajo s prehodom v mirovanje težave in morda ob ponovnem vklopu računalnika ne bodo mogli obnoviti odprtih programov in dokumentov. V tem primeru lahko izgubite nekaj svojega dela, če ga ob prehodu v mirovanje niste shranili. Morda boste lahko <link xref="power-suspendfail">težave z mirovanjem popravili</link>.</p>
 
 </page>

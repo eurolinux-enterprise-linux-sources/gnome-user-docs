@@ -2,13 +2,13 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-connect" xml:lang="pt-BR">
 
   <info>
-    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="files" group="more"/>
     <link type="guide" xref="sharing"/>
 
-    <revision pkgversion="3.6.0" date="2012-10-06" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+    <revision pkgversion="3.6.0" version="0.2" date="2012-10-06" status="review"/>
+
+    <desc>View and edit files on another computer over FTP, SSH, Windows
+    shares, or WebDAV.</desc>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -18,15 +18,7 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Veja e edite arquivos em outro computador via FTP, SSH, compartilhamentos Windows ou WebDAV.</desc>
-
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Rodolfo Ribeiro Gomes</mal:name>
@@ -35,41 +27,48 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Enrico Nicoletto</mal:name>
       <mal:email>liverig@gmail.com</mal:email>
       <mal:years>2013.</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>João Santana</mal:name>
-      <mal:email>joaosantana@outlook.com</mal:email>
-      <mal:years>2013.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Fontenelle</mal:name>
-      <mal:email>rafaelff@gnome.org</mal:email>
-      <mal:years>2012-2018.</mal:years>
-    </mal:credit>
   </info>
 
-<title>Navegando nos arquivos em um servidor ou compartilhamento de rede</title>
+<title>Browse files on a server or network share</title>
 
-<p>Você pode conectar a um servidor ou compartilhamento de rede para navegar e ver arquivos naquele servidor, exatamente como se eles estivessem no seu próprio computador. Esta é uma forma conveniente de fazer baixar e enviar de arquivos na internet ou para compartilhar arquivos com outras pessoas em sua rede local.</p>
+<p>You can connect to a server or network share to browse and
+view files on that server, exactly as if they were on your
+own computer. This is a convenient way to download or upload
+files on the internet, or to share files with other people on
+your local network.</p>
 
-<p>Para acessar arquivos pela rede, abra o aplicativo <app>Arquivos</app> a partir do panorama de <gui>Atividades</gui> e clique em <gui>Outros locais</gui> na barra lateral. O gerenciador de arquivos vai encontrar quaisquer computadores na sua rede local que divulgam sua habilidade de servir arquivos. Se você deseja conectar a um servidor na internet ou se você não consegue encontrar o computador pelo que você está procurando, você pode conectar manualmente a um servidor digitando seu endereço de rede/internet.</p>
+<p>To browse files over the network, open the <app>Files</app>
+application from the <gui>Activities</gui> overview, and click
+<gui>Browse Network</gui> in the sidebar. The file manager
+will find any computers on your local area network that advertise
+their ability to serve files. If you want to connect to a server
+on the internet, or if you do not see the computer you're looking
+for, you can manually connect to a server by typing in its
+internet/network address.</p>
 
 <steps>
   <title>Conectar a um servidor de arquivos</title>
-  <item><p>No gerenciador de arquivos, clique em <gui>Outros locais</gui> na barra superior.</p>
-  </item>
-  <item><p>Em <gui>Conectar ao servidor</gui>, digite o endereço do servidor, na forma de uma <link xref="#urls">URL</link>. Detalhes sobre o suporte a URLs estão <link xref="#types">listadas abaixo</link>.</p>
+  <item><p>In the file manager, click <gui>Files</gui> in the top bar and pick
+  <gui>Connect to Server</gui> from the app menu.</p></item>
+  <item><p>Enter the address of the server, in the form of a
+   <link xref="#urls">URL</link>. Details on supported URLs are
+   <link xref="#types">listed below</link>.</p>
   <note>
-    <p>Se você conectou ao servidor antes, você vai clicar nele na lista de <gui>Servidores recentes</gui>.</p>
+    <p>If you have connected to the server before, you can click on it in the
+    <gui>Recent Servers</gui> list.</p>
   </note>
   </item>
-  <item>
-    <p>Clique em <gui>Conectar</gui>. Os arquivos no servidor serão mostrados. Você pode acessar os arquivos de mesma forma que você faria aqueles do seu próprio computador. O servidor também será adicionado à barra lateral de forma que você possa acessá-lo com mais facilidade no futuro.</p>
+  <item><p>Clique em <gui>Conectar</gui>. Uma nova janela vai abrir mostrando os arquivos do servidor. Você pode acessar os arquivos de mesma forma que você faria aqueles do seu próprio computador. O servidor também será adicionado à barra lateral de forma que você possa acessá-lo com rapidez no futuro</p>
   </item>
 </steps>
 
@@ -78,15 +77,15 @@
 
 <p>Uma <em>URL</em>, ou <em>uniform resource locator</em>, é uma forma de endereço que se refere a uma localização ou arquivo em uma rede. O endereço é formatado assim:</p>
   <example>
-    <p><sys>esquema://servidor.exemplo.com/pasta</sys></p>
+    <p><sys>scheme://servidor.exemplo.com/pasta</sys></p>
   </example>
-<p>O <em>esquema</em> especifica o protocolo ou tipo de servidor. A porção <em>exemplo.com</em> do endereço é chamado o <em>nome de domínio</em>. Se um nome de usuário for exigido, ele deve ser inserido antes do nome do servidor:</p>
+<p>O <em>scheme</em> especifica o protocolo ou tipo de servidor. A porção <em>exemplo.com</em> do endereço é chamado o <em>nome de domínio</em>. Se um nome de usuário for exigido, ele deve ser inserido antes do nome do servidor:</p>
   <example>
-    <p><sys>esquema://usuario@servidor.exemplo.com/pasta</sys></p>
+    <p><sys>scheme://usuario@servidor.exemplo.com/pasta</sys></p>
   </example>
-<p>Alguns esquemas precisam que o número da porta seja especificado. Insira-o o nome do domínio:</p>
+<p>Alguns schemes precisam que o número da porta seja especificado. Insira-o o nome do domínio:</p>
   <example>
-    <p><sys>esquema://servidor.exemplo.com:porta/pasta</sys></p>
+    <p><sys>scheme://servidor.exemplo.com:porta/pasta</sys></p>
   </example>
 <p>Seguem abaixo exemplos específicos para os diversos tipos de servidor que têm suporte.</p>
 </section>
@@ -106,11 +105,15 @@
     <p><sys>ssh://usuario@servidor.exemplo.com/pasta</sys></p>
   </example>
 
-  <p>Quando estiver usando SSH, todos os dados que você enviar (incluindo a sua senha) são criptografados de forma que outras pessoas na sua rede não possam vê-los.</p>
+  <comment><cite>shaunm</cite><p>We should have a topics on encryption
+  keys, possibly rolling the seahorse help into gnome-help. Then link
+  from here.</p></comment>
+
+  <p>Quando estiver usando SSH, todos os dados que você enviar (incluindo a sua senha) é criptografado de forma que outros usuários na sua rede não possam vê-la.</p>
 </item>
 <item>
-  <title>FTP (com login)</title>
-  <p>FTP é uma forma popular de trocar arquivos na Internet. Por os dados não estarem criptografados sobre FTP, muitos servidores agora fornecem acesso por meio de SSH. Alguns servidores, porém, ainda permitem ou exigem que você use FTP para enviar ou baixar arquivos. Sites com FTP com autenticação normalmente vão permitir que você exclua e envie arquivos.</p>
+  <title>FTP (com início de sessão)</title>
+  <p>FTP é uma forma popular de trocar arquivos na Internet. Por os dados não serem criptografados sobre FTP, muitos servidores agora fornecem acesso por meio de SSH. Alguns servidores, porém, ainda permitem ou requerem que você use FTP para enviar ou baixar de arquivos. Sites com FTP com logins normalmente vão permitir que você exclua e envie arquivos.</p>
   <p>Uma URL de FTP comum se parece com isso:</p>
   <example>
     <p><sys>ftp://usuario@ftp.exemplo.com/caminho/</sys></p>
@@ -123,11 +126,11 @@
   <example>
     <p><sys>ftp://ftp.exemplo.com/caminho/</sys></p>
   </example>
-  <p>Alguns sites de FTP anônimo exigem que você se conecte com um nome de usuário e senha públicos ou com um nome de usuário público usando seu endereço de e-mail como a senha. Para esses servidores, use o método de <gui>FTP (com login)</gui> e use as credenciais especificadas por um site FTP.</p>
+  <p>Alguns sites de FTP anônimos exigem que você se conecte com um nome de usuário e senha pública ou com um nome de usuário público usando seu endereço de e-mail como a senha. Para esses servidores, use o método de <gui>FTP (com login)</gui> e use as credenciais especificadas por um site FTP.</p>
 </item>
 <item>
   <title>Compartilhamento Windows</title>
-  <p>Computadores com Windows usam um protocolo proprietário para compartilhar arquivos em uma rede local. Computadores em uma rede Windows em algumas situações são agrupadas em <em>domínios</em> para organização e para melhorar o controle de acesso. Se você tem as permissões de acesso à máquina remota, você pode se conectar a um compartilhamento Windows a partir do gerenciador de arquivos.</p>
+  <p>Computadores Windows usam um protocolo proprietário para compartilhar arquivos em uma rede local. Computadores em uma rede Windows em algumas situações são agrupadas em <em>domínios</em> para organização e para melhorar o acesso de controle. Se você tem as permissões de acesso à máquina remota, você pode se conectar a um compartilhamento windows a partir do gerenciador de arquivos.</p>
   <p>Uma URL de compartilhamento Windows comum se parece com isso:</p>
   <example>
     <p><sys>smb://servidor/Compartilhamento</sys></p>
@@ -135,19 +138,22 @@
 </item>
 <item>
   <title>WebDAV e WebDAV seguro</title>
-  <p>Baseado no protocolo HTTP usado na web, WebDAV algumas vezes é usado para compartilhar arquivos em uma rede local e também para armazenar arquivos na internet. Se o servidor ao qual você está se conectando tem suporte a conexões seguras, você deveria escolher esta opção. WebDAV seguro usa criptografia SSL forte, de forma que outros usuários não conseguem ver sua senha.</p>
-  <p>Uma URL WebDAV se parece com isto:</p>
+  <p>Based on the HTTP protocol used on the web, WebDAV is sometimes used to
+  share files on a local network and to store files on the internet. If the
+  server you're connecting to supports secure connections, you should choose
+  this option. Secure WebDAV uses strong SSL encryption, so that other users
+  can't see your password.</p>
+  <p>Uma URL WebDAV típica se parece com isto:</p>
   <example>
-    <p><sys>dav://exemplo.servidor.com/caminho</sys></p>
+    <p><sys>http://exemplo.nomeservidor.com/caminho</sys></p>
   </example>
-</item>
-<item>
-  <title>Compartilhamento NFS</title>
-  <p>Computadores UNIX tradicionalmente usam o protocolo Network File System (em português, sistema de arquivos de rede) para compartilhar arquivos sobre uma rede local. Com NFS, segurança é baseada no UID do usuário que está acessando o compartilhamento, de forma que nenhuma credencial de autenticação é necessária ao conectar.</p>
-  <p>Uma URL de compartilhamento NFS comum se parece com isso:</p>
-  <example>
-    <p><sys>nfs://servidor/caminho</sys></p>
-  </example>
+  <comment>
+    <cite date="2012-02-19">shaunm</cite>
+    <p>Also used by gnome-user-share, but we're not talking about that
+    in gnome-help for 3.0. Hopefully it will be better integrated in 3.2,
+    and we can discuss it better in the help. If that happens, link from
+    here.</p>
+  </comment>
 </item>
 </terms>
 </section>

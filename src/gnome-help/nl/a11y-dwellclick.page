@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task a11y" id="a11y-dwellclick" xml:lang="nl">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task a11y" id="a11y-dwellclick" xml:lang="nl">
   <info>
     <link type="guide" xref="mouse"/>
     <link type="guide" xref="a11y#mobility" group="clicking"/>
 
-    <revision pkgversion="3.8.0" date="2013-03-13" status="candidate"/>
-    <revision pkgversion="3.9.92" date="2013-09-18" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="final"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -24,55 +18,54 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
-    <desc>Met de functie <gui>ZweefKlik</gui> (Dwell Click) kunt u klikken door de muis stil te houden.</desc>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
+    <desc>The Hover Click (Dwell Click) feature allows you to click by holding
+    the mouse still.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
-  <title>Klikken simuleren door erboven te zweven</title>
+  <title>Simulate clicking by hovering</title>
 
-  <p>U kunt klikken of slepen door simpelweg met de muisaanwijzer boven een knop of object op het scherm te zweven. Dit is nuttig wanneer het voor u moeilijk is de muis te bewegen en gelijktijdig te klikken. Deze functie wordt <gui>ZweefKlik</gui> of ‘Hangklik’ genoemd.</p>
+  <p>You can click or drag simply by hovering your mouse pointer over a control
+  or object on the screen. This is useful if you find it difficult to move the
+  mouse and click at the same time. This feature is called Hover Click or Dwell
+  Click.</p>
 
-  <p>Wanneer <gui>ZweefKlik</gui> is ingeschakeld kunt u de muisaanwijzer boven een knop plaatsen, de muis loslaten en even wachten totdat er voor u op de knop geklikt wordt.</p>
+  <p>When Hover Click is enabled, you can move your mouse pointer over a
+  control, let go of the mouse, and then wait for a while before the button
+  will be clicked for you.</p>
 
   <steps>
     <item>
-      <p>Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht en typ <gui>Universele toegang</gui>.</p>
+      <p>Click your name on the top bar and select <gui>Settings</gui>.</p>
     </item>
     <item>
-      <p>Klik op <gui>Universele toegang</gui> om het paneel te openen.</p>
+      <p>Open <gui>Universal Access</gui> and select the <gui>Pointing and
+      Clicking</gui> tab.</p>
     </item>
     <item>
-      <p>Druk op <gui>Typ-assistent</gui> onder het kopje <gui>Aanwijzen &amp; klikken</gui>.</p>
-    </item>
-    <item>
-      <p>Zet <gui>ZweefKlik</gui> <gui>AAN</gui>.</p>
+      <p>Switch <gui>Hover Click</gui> on.</p>
     </item>
   </steps>
 
-  <p>Het venster <gui>Zweefklik</gui> zal openen en zal zich altijd op de voorgrond bevinden, boven al uw andere vensters. U kunt dit venster gebruiken om te kiezen wat voor soort klik gemaakt moet worden wanneer de muis boven een knop zweeft. Bijvoorbeeld, als u <gui>Secondaire klik</gui> inschakelt, zal de muis automatisch rechtsklikken wanneer u boven een knop zweeft. Na het dubbelklikken, rechtsklikken of slepen, schakelt de muis automatisch terug naar normaal klikken.</p>
+  <p>The <gui>Hover Click</gui> window will open, and will stay above all of
+  your other windows. You can use this to choose what sort of click should
+  happen when you hover. For example, if you select <gui>Secondary Click</gui>,
+  you will right-click when you hover. After you double-click, right-click, or
+  drag, you will be automatically returned to clicking.</p>
 
-  <p>Wanneer u de muisaanwijzer boven een knop laat zweven, en niet beweegt, zal de knop geleidelijk aan van kleur veranderen. Wanneer de knop volledig van kleur veranderd is, zal deze aangeklikt worden.</p>
+  <p>When you hover your mouse pointer over a button and don't move it, it will
+  gradually change color. When it has fully changed color, the button will be
+  clicked.</p>
 
-  <p>Gebruik de <gui>Vertraging</gui>-schuifbalk om in te stellen hoe lang u de muis stil moet houden voordat er een muisklik wordt uitgevoerd.</p>
+  <p>Adjust the <gui>Delay</gui> setting to change how long you have to hold
+  the mouse pointer still before clicking.</p>
 
-  <p>U hoeft de muis niet helemaal stil te houden wanneer u de muisaanwijzer boven een knop laat zweven. De muis mag een klein beetje bewegen, en zal dan nog steeds klikken. Indien de aanwijzer te hevig beweegt, zal de klik niet plaatsvinden.</p>
+  <p>You don't need to hold the mouse perfectly still when hovering to click.
+  The pointer is allowed to move a little bit and will still click after a
+  while. If it moves too much, however, the click will not happen.</p>
 
-  <p>Pas de instelling <gui>Bewegingsdrempel</gui> aan om te wijzigen hoeveel de muisaanwijzer mag bewegen om nog steeds als zweven beschouwd te worden.</p>
+  <p>Adjust the <gui>Motion threshold</gui> setting to change how much the
+  pointer can move and still be considered to be hovering.</p>
 
 </page>

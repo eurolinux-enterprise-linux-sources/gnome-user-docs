@@ -1,43 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="reference" id="net-firewall-ports" xml:lang="sv">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="reference" id="net-firewall-ports" xml:lang="sv">
 
   <info>
     <link type="guide" xref="net-security"/>
     <link type="seealso" xref="net-firewall-on-off"/>
     <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
+    <desc>You need to specify the right network port to enable/disable network access for a program with your firewall.</desc>
     <credit type="author">
       <name>Paul W. Frields</name>
       <email>stickster@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Du behöver ange rätt nätverksport för att aktivera/inaktivera nätverksåtkomst för ett program via din brandvägg.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Sebastian Rasmussen</mal:name>
-      <mal:email>sebras@gmail.com</mal:email>
-      <mal:years>2014, 2015, 2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Anders Jonsson</mal:name>
-      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
-      <mal:years>2016, 2017</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Vanligt förekommande nätverksportar</title>
-
-  <p>Detta är en lista över nätverksportar som ofta används av program som tillhandahåller nätverkstjänster, så som fildelning eller åtkomst till fjärrskrivbord. Du kan ändra ditt systems brandvägg till att <link xref="net-firewall-on-off">blockera eller tillåta åtkomst</link> för dessa program. Det finns tusentals portar som används, så denna tabell är inte fullständig.</p>
+  <title>Commonly-used network ports</title>
+  <p>This is a list of network ports commonly used by applications that provide network services, like file sharing or remote desktop viewing. You can change your system's firewall to <link xref="net-firewall-on-off">block or allow access</link> to these applications. There are thousands of ports in use, so this table isn't complete.</p>
 
   <table shade="rows" frame="top">
     <thead>
@@ -62,7 +47,7 @@
 	  <p>mDNS, Avahi</p>
 	</td>
 	<td>
-	  <p>Låter system att hitta varandra och beskriva vilka tjänster de erbjuder utan att du behöver ange detaljerna manuellt.</p>
+	  <p>Allows systems to find each other, and describe which services they offer, without you having to specify the details manually.</p>
 	</td>
       </tr>
       <tr>
@@ -73,7 +58,7 @@
 	  <p>Utskrifter</p>
 	</td>
 	<td>
-	  <p>Låter dig skicka utskriftsjobb till en skrivare över nätverket.</p>
+	  <p>Allows you to send print jobs to a printer over the network.</p>
 	</td>
       </tr>
       <tr>
@@ -84,7 +69,7 @@
 	  <p>Utskrifter</p>
 	</td>
 	<td>
-	  <p>Låter dig dela din skrivare med andra personer över nätverket.</p>
+	  <p>Allows you to share your printer with other people over the network.</p>
 	</td>
       </tr>
       <tr>
@@ -95,7 +80,7 @@
 	  <p>Närvaro</p>
 	</td>
 	<td>
-	  <p>Låter dig utannonsera din chattmeddelandestatus till andra personer på nätverket, som till exempel ”inloggad” eller ”upptagen”.</p>
+	  <p>Allows you to advertise your instant messaging status to other people on the network, such as "online" or "busy".</p>
 	</td>
       </tr>
       <tr>
@@ -106,7 +91,7 @@
 	  <p>Fjärrskrivbord</p>
 	</td>
 	<td>
-	  <p>Låter dig dela ditt skrivbord så att andra personer kan se det eller erbjuda fjärrassistans.</p>
+	  <p>Allows you to share your desktop so other people can view it or provide remote assistance.</p>
 	</td>
       </tr>
       <tr>
@@ -117,10 +102,9 @@
 	  <p>Musikdelning (DAAP)</p>
 	</td>
 	<td>
-	  <p>Låter dig dela ditt musikbibliotek med andra på ditt nätverk.</p>
+	  <p>Allows you to share your music library with others on your network.</p>
 	</td>
       </tr>
     </tbody>
   </table>
-
 </page>

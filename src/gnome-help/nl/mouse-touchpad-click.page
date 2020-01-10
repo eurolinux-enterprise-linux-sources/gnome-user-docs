@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="mouse-touchpad-click" xml:lang="nl">
-
-  <info>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="mouse-touchpad-click" xml:lang="nl">
+<info>
     <link type="guide" xref="mouse"/>
+    <desc>Click, drag, or scroll using taps and gestures on your touchpad.</desc>
 
-    <revision pkgversion="3.7" date="2012-11-16" status="outdated"/>
-    <revision pkgversion="3.10" date="2013-10-29" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.7.1" version="0.3" date="2012-11-16" status="outdated"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -16,123 +14,94 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-      <years>2013, 2015</years>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+</info>
 
-    <desc>Klik, sleep, of scroll met behulp van tikken en gebaren op uw touchpad.</desc>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
-  </info>
+<title>Click, drag, or scroll with the touchpad</title>
 
-  <title>Klik, sleep, of scroll met het touchpad</title>
+<p>You can click, double-click, drag, and scroll using only your
+touchpad, without separate hardware buttons.</p>
 
-  <p>U kunt klikken, dubbelklikken, slepen en scrollen met alleen uw touchpad, zonder fysieke knoppen.</p>
+<steps>
+  <item><p>Click your name on the top bar and select <gui>Settings</gui>.</p></item>
+  <item><p>Open <gui>Mouse &amp; Touchpad</gui>.</p></item>
+  <item><p>In the <gui>Touchpad</gui> section, check <gui>Tap to click</gui>.</p>
+    <note>
+      <p>The <gui>Touchpad</gui> section only appears if your system has a
+      touchpad.</p>
+    </note>
+  </item>
+</steps>
 
-<section id="tap">
-  <title>Tikken om te klikken</title>
+<list>
+<item><p>To click, tap on the touchpad.</p></item>
+<item><p>To double-click, tap twice.</p></item>
+<item><p>To drag an item, double-tap but don't lift your finger after the second tap.
+Drag the item where you want it, then lift your finger to drop.</p></item>
+<item><p>If your touchpad supports multi-finger taps, right-click by tapping with
+two fingers at once. Otherwise, you still need to use hardware buttons to
+right-click. See <link xref="a11y-right-click"/> for a method of right-clicking
+without a second mouse button.</p></item>
+<item><p>If your touchpad supports multi-finger taps,
+<link xref="mouse-middleclick">middle-click</link> by tapping with three fingers
+at once.</p></item>
+</list>
 
-  <p>U kunt op uw touchpad tikken om te klikken in plaats van via een knop.</p>
-
-  <steps>
-    <item>
-      <p>Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht en typ <gui>Muis &amp; Touchpad</gui>.</p>
-    </item>
-    <item>
-      <p>Klik op <gui>Muis en touchpad</gui> om het paneel te openen.</p>
-    </item>
-    <item>
-      <p>Plaats in de <gui>Touchpad</gui>-sectie een vinkje bij <gui>Tikken om te klikken</gui>.</p>
-      <note>
-        <p>De <gui>Touchpad</gui>-sectie verschijnt alleen als uw systeem een touchpad heeft.</p>
-      </note>
-    </item>
-  </steps>
-
-  <list>
-    <item>
-      <p>Tik op het touchpad om te klikken.</p>
-    </item>
-    <item>
-      <p>Tik twee maal om te dubbelklikken.</p>
-    </item>
-    <item>
-      <p>Om een item te slepen, tik twee maal, maar laat uw vinger niet los na de tweede tik. Sleep het item naar de gewenste plek en laat uw vinger los om het neer te zetten.</p>
-    </item>
-    <item>
-      <p>Als uw touchpad tikken met meerdere vingers ondersteunt, dan kunt u rechtsklikken door met twee vingers tegelijk te tikken. Zo niet, dan moet u nog steeds fysieke knoppen gebruiken om met rechts te klikken. Zie <link xref="a11y-right-click"/> voor een manier om met rechts te klikken zonder een tweede muisknop.</p>
-    </item>
-    <item>
-      <p>Als uw touchpad tikken met meerdere vingers ondersteunt, dan kunt u <link xref="mouse-middleclick">middelklikken</link> door met drie vingers tegelijk te tikken.</p>
-    </item>
-  </list>
-
-  <note>
-    <p>Wanneer u tikt of sleept met meerdere vingers, zorg er dan voor dat uw vingers ver genoeg uit elkaar gespreid zijn. Als uw vingers te dicht tegen elkaar aan zitten, dan kan het zijn dat de computer dit ziet als één vinger.</p>
-  </note>
-
-</section>
+<note><p>When tapping or dragging with multiple fingers, make sure your fingers
+are spread far enough apart. If your fingers are too close, your computer may
+think they're a single finger.</p></note>
 
 <section id="twofingerscroll">
-  <title>Scrollen met twee vingers</title>
 
-  <p>U kunt met uw touchpad scrollen met twee vingers.</p>
+<title>Two finger scroll</title>
 
-  <steps>
-    <item>
-      <p>Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht en typ <gui>Muis &amp; Touchpad</gui>.</p>
-    </item>
-    <item>
-      <p>Klik op <gui>Muis en touchpad</gui> om het paneel te openen.</p>
-    </item>
-    <item>
-      <p>Plaats in de <gui>Touchpad</gui>-sectie een vinkje bij <gui>Scrollen met twee vingers</gui>.</p>
-    </item>
-  </steps>
+<p>You can scroll using your touchpad using two fingers.</p>
 
-  <p>Wanneer dit geselecteerd is, zal tikken en slepen met één vinger normaal werken, maar door met twee vingers over een deel van het touchpad te slepen kunt u scrollen. Wanneer u ook <gui>Horizontaal scrollen inschakelen</gui> selecteert, dan kunt u met uw vingers naar links en rechts gaan om horizontaal te scrollen. Zorg er wel voor dat uw vingers licht gespreid zijn. Wanneer uw vingers te dicht bij elkaar zijn ziet uw touchpad dat als één vinger.</p>
+<steps>
+  <item><p>Click your name on the top bar and select
+   <gui>Settings</gui>.</p></item>
+  <item><p>Open <gui>Mouse &amp; Touchpad</gui>.</p></item>
+  <item><p>In the <gui>Touchpad</gui> section, check
+   <gui>Two finger scroll</gui>.</p></item>
+</steps>
 
-  <note>
-    <p>Het scrollen met twee vingers werkt mogelijk niet op alle touchpads.</p>
-  </note>
+<!--
+<p>Select <gui>Edge scrolling</gui> under <gui>Scrolling</gui> to
+scroll using the edge of your touchpad. When this is selected, dragging
+your finger up and down along the right side of your touchpad will
+scroll vertically. If you also select <gui>Enable horizontal
+scrolling</gui>, dragging your finger left and right along the
+bottom of your touchpad will scroll horizontally.</p>
+-->
+
+<p>When this is selected, tapping and dragging with one finger will work as
+normal, but if you drag two fingers across any part of the touchpad, it will
+scroll instead. If you also select <gui>Enable horizontal scrolling</gui>, you
+can move your fingers left and right to scroll horizontally. Be careful to space
+your fingers a bit apart. If your fingers are too close together, they just look
+like one big finger to your touchpad.</p>
+
+<note><p>Two-finger scrolling may not work on all touchpads.</p></note>
 
 </section>
-
 <section id="contentsticks">
-  <title>Natuurlijk scrollen</title>
 
-  <p>Via het touchpad kunt u inhoud slepen alsof er fysiek een stuk papier wordt versleept.</p>
+<title>Content sticks to fingers</title>
 
-  <steps>
-    <item>
-      <p>Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht en typ <gui>Muis &amp; Touchpad</gui>.</p>
-    </item>
-    <item>
-      <p>Klik op <gui>Muis en touchpad</gui> om het paneel te openen.</p>
-    </item>
-    <item>
-      <p>Plaats in de sectie <gui>Touchpad</gui> een vinkje bij <gui>Natuurlijk scrollen</gui>.</p>
-    </item>
-  </steps>
+<p>You can drag content as if sliding a physical piece of paper using the
+touchpad.</p>
 
-  <note>
-    <p>Deze functie staat ook bekend als <em>Achteruit Scrollen</em>.</p>
-  </note>
+<steps>
+  <item><p>Click your name on the top bar and select
+   <gui>Settings</gui>.</p></item>
+  <item><p>Open <gui>Mouse &amp; Touchpad</gui>.</p></item>
+  <item><p>In the <gui>Touchpad</gui> section, check
+   <gui>Content sticks to fingers</gui>.</p></item>
+</steps>
 
+<note><p>This feature is also known as <em>Natural Scrolling</em> or
+<em>Reverse Scrolling</em>.</p>
+</note>
 </section>
 
 </page>

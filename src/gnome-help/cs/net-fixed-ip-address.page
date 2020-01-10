@@ -1,76 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-fixed-ip-address" xml:lang="cs">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="net-fixed-ip-address" xml:lang="cs">
   <info>
     <link type="guide" xref="net-wired"/>
     <link type="seealso" xref="net-findip"/>
 
     <revision pkgversion="3.4.0" date="2012-03-13" status="final"/>
-    <revision pkgversion="3.15" date="2014-12-04" status="final"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-    <revision pkgversion="3.24" date="2017-03-26" status="final"/>
 
     <credit type="author">
       <name>Jim Campbell</name>
       <email>jwcampbell@gmail.com</email>
     </credit>
-    <credit type="author">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-      <years>2014</years>
-    </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
 
+    <desc>Using a static IP address can make it easier to provide some network services from your computer.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Použití statické adresy IP může usnadnit poskytování některých síťových služeb z vašeho počítač.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
       <mal:email>adamatousek@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Marek Černocký</mal:name>
-      <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014, 2015</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Vytvoření připojení se pevnou adresou IP</title>
+  <title>Create a connection with a fixed IP address</title>
 
-  <p>Většina sítí přiřadí vašemu počítači <link xref="net-what-is-ip-address">adresu IP</link> a další údaje automaticky po připojení k síti. Tyto údaje se mohou pravidelně měnit, ale v některých případech můžete chtít mít pro svůj počítač pevnou adresu IP, abyste ji znali (například, když se jedná o souborový server).</p>
+ <p>Most networks will automatically assign an <link xref="net-what-is-ip-address">IP address</link> and other details to your computer when you connect to the network. These details can change periodically, but you might want to have a fixed IP address for the computer so you always know what its address is (for example, if it is a file server).</p>
+  <p>To give your computer a fixed (static) IP address:</p>
 
-  <steps>
-    <title>Pevnou (statickou) adresu IP přidělíte počítači následovně:</title>
-    <item>
-      <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Síť</gui>.</p>
-    </item>
-    <item>
-      <p>Kliknutím na <gui>Síť</gui> otevřete příslušný panel.</p>
-    </item>
-    <item>
-      <p>V levém panelu vyberte síťové připojení, u kterého chcete mít pevnou adresu.Pokud jste k síti připojeni kabelem, klikněte na <gui>Drátové</gui> a pak klikněte na tlačítko <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">nastavení</span></media> v pravém dolním rohu panelu. U připojení <gui>Wi-Fi</gui> je tlačítko <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">nastavení</span></media> umístěno vedle aktivní sítě.</p>
-    </item>
-    <item>
-      <p>Klikněte na <gui>IPv4</gui> nebo <gui>IPv6</gui> v levém panelu a změňte <gui>Adresy</gui> na <em>Ruční</em>.</p>
-    </item>
-    <item>
-      <p>Zadejte <gui xref="net-what-is-ip-address">Adresu IP</gui> a <gui>Bránu</gui>, včetně příslušné <gui>Masky sítě</gui>.</p>
-    </item>
-    <item>
-      <p>V části <gui>DNS</gui> přepněte <gui>Automatické</gui> na <gui>○</gui> (vypnuto). Zadejte adresu IP serveru DNS, který chcete používat. Pomocí tlačítka <gui>+</gui> můžete přidat další servery DNS.</p>
-    </item>
-    <item>
-      <p>V části <gui>Směrování</gui> přepněte <gui>Automatické</gui> na <gui>○</gui> (vypnuto). Zadejte <gui>Adresu</gui>, <gui>Masku sítě</gui>, <gui>Bránu</gui> a <gui>Metriku</gui> pro cestu, kterou chcete používat. Další cesty můžete přidat tlačítkem <gui>+</gui>.</p>
-    </item>
-    <item>
-      <p>Klikněte na <gui>Použít</gui>. Síťové připojení by nyní mělo mít pevnou adresu IP.</p>
-    </item>
-  </steps>
+<steps>
+<item><p>Click the <gui>network icon</gui> on the <gui>top bar</gui> and select <gui>Network Settings</gui>.</p></item>
+<item><p>Select the network connection from the list (<gui>Wired</gui> or <gui>Wireless</gui>) and click <gui>Configure</gui>.</p></item>
+<item><p>Click on the <gui>IPv4 Settings</gui> tab and change the <gui>Method</gui> to <em>Manual</em>.</p></item>
+<item><p>If no connection information is listed in the <gui>Addresses</gui> list, or if you want to set up a new connection, click <gui>Add</gui>.</p></item>
+<item><p>Enter the <em>IP Address</em>, <em>Netmask</em>, and <em>Gateway</em> information into the appropriate boxes. How you choose these will depend on your network setup; there are specific rules governing which IP addresses and netmasks are valid for a given network.</p></item>
+<item><p>If necessary, enter a <em>Domain Name Server</em> address into the <gui>DNS servers</gui> box. This is the IP address of a server which looks up domain names; most corporate networks and internet providers have dedicated DNS servers.</p></item>
+<item><p>Click <gui>Save</gui>. The network connection should now have a fixed IP address.</p></item>
+</steps>
 
 </page>

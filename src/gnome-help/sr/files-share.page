@@ -2,14 +2,13 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-share" xml:lang="sr">
 
   <info>
-    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="files" group="more"/>
     <link type="guide" xref="sharing"/>
     <link type="seealso" xref="nautilus-connect"/>
+    <desc>Easily transfer files to your email contacts from the file
+    manager.</desc>
 
     <revision pkgversion="3.8.2" version="0.3" date="2013-05-11" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Шон Мек Кенс</name>
@@ -19,34 +18,43 @@
       <name>Мајкл Хил</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>С лакоћом пренесите датотеке до ваших контакта е-поште из управника датотека.</desc>
   </info>
 
-<title>Делите датотеке е-поштом</title>
+<title>Share files by email</title>
 
-<p>Можете с лакоћом да делите датотеке е-поштом са вашим контактима непосредно из управника датотека.</p>
+<comment>
+  <cite date="2012-02-20">jim</cite>
+  <p>If we get gnome-user-share integrated eventually, we should discuss
+  or link that here.</p>
+</comment>
+<comment>
+  <cite date="2013-05-11" href="mailto:mdhillca@gmail.com">mdhill</cite>
+  <p>All functionality except email removed for 3.8 per Bug 680983.</p>
+</comment>
+
+<p>You can easily share files with your contacts by email directly from the
+file manager.</p>
 
   <note style="important">
-    <p>Пре него што почнете, уверите се да је на вашем рачунару инсталирана <app>Еволуција</app> или <app>Зупчинко</app>, и да је подешен ваш налог е-поште.</p>
+    <p>Before you begin, make sure <app>Evolution</app> is installed on your
+    computer, and your email account is configured.</p>
   </note>
 
 <steps>
-  <title>Да делите датотеку е-поштом:</title>
-    <item>
-      <p>Отворите програм <app>Датотеке</app> из прегледа <gui xref="shell-introduction#activities">активности</gui>.</p>
-    </item>
+  <title>To share a file by email:</title>
+  <item><p>Отворите програм <app>Датотеке</app> из прегледа <gui>Активности</gui>.</p></item>
   <item><p>Пронађите датотеку коју желите да пренесете.</p></item>
-    <item>
-      <p>Притисните десним тастером миша на датотеку и изаберите <gui>Пошаљи…</gui>. Појавиће се прозор за састављање порука са прикаченом датотеком.</p>
-    </item>
-  <item><p>Кликните <gui>Коме</gui> да изаберете контакт, или унесите адресу е-поште на коју желите да пошаљете датотеку. Попуните <gui>Наслов</gui> и разраду поруке као што се тражи и кликните <gui>Пошаљи</gui>.</p></item>
+  <item><p>Right-click the file and select <gui>Send To</gui>. The
+  <gui>Compose Message</gui> window will appear with the file attached.</p></item>
+  <item><p>Click <gui>To</gui> to choose a contact, or enter an email address
+  where you want to send the file. Fill in the <gui>Subject</gui> and the body
+  of the message as required and click <gui>Send</gui>.</p></item>
 </steps>
 
 <note style="tip">
-  <p>Можете да пошаљете неколико датотека одједном. Изаберите неколико датотека држећи притиснутим тастер <key>Ктрл</key> док притискате на датотеци, затим кликните десним тастером миша на све изабране датотеке.</p>
+  <p>You can send multiple files at once. Select multiple files by holding
+  down <key>Ctrl</key>, then right-click any selected file.</p>
 </note>
 
 </page>

@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="accounts-which-application" xml:lang="nl">
-
   <info>
-    <link type="guide" xref="accounts"/>
-    <link type="seealso" xref="accounts-disable-service"/>
-
-    <revision pkgversion="3.8.2" date="2013-05-22" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="incomplete"/>
+    <revision pkgversion="3.8.2" version="0.2" date="2013-05-22" status="review"/>
 
     <credit type="author copyright">
       <name>Baptiste Mille-Mathias</name>
       <email>baptistem@gnome.org</email>
-      <years>2012, 2013</years>
+      <years>2012-2013</years>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
@@ -23,80 +17,65 @@
       <email>ak-47@gmx.net</email>
     </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <link type="guide" xref="accounts"/>
+    <link type="seealso" xref="accounts-disable-service"/>
 
-    <desc>Toepassingen kunnen gebruik maken van de in <app>Online-accounts</app> aangemaakte accounts en de diensten die zij benutten.</desc>
-
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
+    <desc>Applications can use the accounts created in <app>Online Accounts</app>
+     and the services they exploit.</desc>
   </info>
 
-  <title>Onlinediensten en toepassingen</title>
+  <title>Which applications take advantage of online accounts?</title>
 
-  <p>Als u een online-account heeft toegevoegd, kan elke toepassing dat account gebruiken voor de beschikbare diensten die u niet heeft <link xref="accounts-disable-service">uitgeschakeld</link>. Verschillende providers leveren verschillende diensten. Deze pagina geeft een overzicht van de verschillende diensten en enkele van de toepassingen waarvan bekend is dat ze ze gebruiken.</p>
+  <p><app>Online Accounts</app> can be used by external applications to
+  automatically configure themselves.</p>
 
-  <terms>
-    <item>
-      <title>Agenda</title>
-      <p>Met de agendadienst kunt u afspraken weergeven, toevoegen en bewerken in een online-agenda. Het wordt gebruikt door toepassingen als <app>Calendar</app>, <app>Evolution</app>, en <app>California</app>.</p>
-    </item>
+  <section id="accounts-google-services">
+   <title>With a Google account</title>
 
-    <item>
-      <title>Chatten</title>
-      <p>Met de Chatdienst kunt u chatten met uw contacten op populaire ‘instant messaging’-platforms. Het wordt gebruikt door de toepassing <app>Empathy</app>.</p>
-    </item>
+   <list>
+    <item><p><app>Evolution</app>, the email application. Your email account will
+    be added to <app>Evolution</app> automatically, so it will retrieve your
+    mail, give you access to your contacts, and display your calendar items in
+    your Google agenda.
+    </p></item>
+    <item><p><app>Empathy</app>, the instant messaging application. Your online
+    account will be added and you will be able to communicate with your friends.
+    </p></item>
+    <item><p><app>Contacts</app>, which will allow to see and edit your contacts.
+    </p></item>
+    <item><p><app>Documents</app> can access your online documents and display
+    them.</p></item>
+   </list>
+  </section>
 
-    <item>
-      <title>Contacten</title>
-      <p>Met de Contactendienst kunt u de gepubliceerde gegevens zien van uw contacten op verschillende diensten. Het wordt gebruikt door toepassingen zoals <app>Contacten</app> en <app>Evolution</app>.</p>
-    </item>
+  <section id="accounts-windows-services">
+   <title>With Windows Live, Facebook or Twitter accounts</title>
 
-    <item>
-      <title>Documenten</title>
-      <p>Met de Documentendienst kunt u uw onlinedocumenten bekijken zoals die in Google docs. U kunt uw documenten bekijken met de toepassing <app>Documenten</app>.</p>
-    </item>
+   <p><app>Empathy</app> can use these accounts to connect you online and chat
+   with your contacts, friends, and followers.</p>
+  </section>
 
-    <item>
-      <title>Bestanden</title>
-      <p>De Bestandendienst voegt een bestandslocatie op afstand toe, op dezelfde manier zoals u zou doen met de <link xref="nautilus-connect">Met server verbinden</link>-functionaliteit in bestandsbeheer. U kunt zowel bestandsbeheer als de Openen- en Opslaan-dialoogvensters in elke toepassing gebruiken voor toegang tot bestanden op afstand.</p>
-    </item>
+  <section id="account-windows-skydrive">
+   <title>With a SkyDrive account</title>
 
-    <item>
-      <title>E-mail</title>
-      <p>Met de E-maildienst kunt u e-mail versturen en ontvangen via een e-mail-provider zoals Google. Het wordt gebruikt door <app>Evolution</app>.</p>
-    </item>
+   <p><app>Documents</app> can access your online documents in Microsoft
+   SkyDrive and display them.</p>
+  </section>
 
-<!-- TODO: Not sure what this does. Doesn't seem to do anything in Maps app.
-    <item>
-      <title>Maps</title>
-    </item>
--->
+  <section id="account-exchange">
+   <title>With a Exchange account</title>
 
-    <item>
-      <title>Foto's</title>
-      <p>Met de Fotodienst kunt u uw onlinefoto's bekijken, zoals de foto's die u heeft geplaatst op Facebook. U kunt uw foto's bekijken met de toepassing <app>Foto's</app>.</p>
-    </item>
+   <p>Once you have created an Exchange account, <app>Evolution</app> will start
+   retrieving mails from this account.</p>
+  </section>
 
-    <item>
-      <title>Printers</title>
-      <p>Met de Printersdienst kunt u een PDF-kopie versturen naar een provider vanuit het afdrukvenster van elke toepassing. De provider levert misschien afdrukdiensten, of dient alleen maar als opslaglocatie voor het PDF-bestand, dat u later kunt downloaden en afdrukken.</p>
-    </item>
+  <section id="accounts-ownCloud">
+   <title>With a ownCloud account</title>
 
-    <item>
-      <title>Later lezen</title>
-      <p>Met de dienst ‘Later lezen’ kunt u een webpagina opslaan naar een externe dienst zodat u hem later kunt lezen op een ander apparaat. Momenteel zijn er geen toepassingen die deze dienst gebruiken.</p>
-    </item>
+   <p>When an ownCloud account is set up, <app>Evolution</app> is able to
+   access and edit contacts and calendar appointments.</p>
 
-  </terms>
-
+   <p><app>Files</app> and other applications will be able to list and access
+   your online files stored in the ownCloud installation.</p>
+  </section>
 </page>

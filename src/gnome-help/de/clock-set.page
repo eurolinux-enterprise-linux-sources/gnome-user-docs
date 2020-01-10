@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="clock-set" xml:lang="de">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="clock-set" xml:lang="de">
 
   <info>
-    <link type="guide" xref="clock" group="#first"/>
-
+    <link type="guide" xref="clock"/>
+    <desc>Klicken Sie auf die Uhr im oberen Panel und wählen Sie <gui>Einstellungen für Datum und Uhrzeit</gui>, um das Datum und die Zeit anzupassen.</desc>
     <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>GNOME-Dokumentationsprojekt</name>
@@ -18,13 +16,17 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Verwenden Sie die Einstellungen für <gui> Datum und Uhrzeit</gui>, um das Datum und die Uhrzeit anzupassen.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hendrik Knackstedt</mal:name>
-      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
-      <mal:years>2011.</mal:years>
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -34,21 +36,9 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Christian Kirbach</mal:name>
-      <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Mario Blättermann</mal:name>
-      <mal:email>mario.blaettermann@gmail.com</mal:email>
-      <mal:years>2011-2013, 2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Benjamin Steinwender</mal:name>
-      <mal:email>b@stbe.at</mal:email>
-      <mal:years>2014.</mal:years>
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.to</mal:years>
     </mal:credit>
   </info>
 
@@ -56,24 +46,23 @@
 
   <p>Falls Datum und Zeit im oberen Panel nicht korrekt oder in einem falschen Format angezeigt werden, können Sie dies folgendermaßen ändern:</p>
 
-  <steps>
-    <item>
-      <p>Öffnen Sie die <gui xref="shell-introduction#activities">Aktivitäten</gui>-Übersicht und tippen Sie <gui>Datum und Uhrzeit</gui> ein.</p>
-    </item>
-    <item>
-      <p>Klicken Sie auf <gui>Datum und Uhrzeit</gui>, um das Panel zu öffnen.</p>
-    </item>
-    <item>
-      <p>Wenn Sie <gui>Datum und Zeit automatisch ermitteln</gui> auf <gui>AN</gui> gestellt haben, sollten sich Datum und Uhrzeit automatisch einstellen, wenn Sie eine Internetverbindung haben. Um Datum und Uhrzeit manuell einzustellen, stellen Sie den Schalter auf <gui>AUS</gui>.</p>
-    </item> 
-    <item>
-      <p>Klicken Sie auf <gui>Datum und Uhrzeit</gui> und passen Sie Datum und Uhrzeit an.</p>
-    </item>
-    <item>
-      <p>Sie können außerdem die Stundenanzeige ändern, indem Sie <gui>24-Stunden-System</gui> oder <gui>12-Stunden-Format</gui> für <gui>Zeitformat</gui> auswählen.</p>
-    </item>
-  </steps>
-
-  <p>Sie können Ihre Zeitzone auch <link xref="clock-timezone">manuell festlegen</link>.</p>
+<steps>
+ <item>
+  <p>Um Zeit und Datum einzustellen, klicken Sie auf die Uhr in der Mitte des oberen Panels und wählen Sie <gui>Einstellungen für Datum und Uhrzeit</gui>.</p>
+ </item>
+ <item>
+  <p>Klicken Sie auf <gui>Entsperren</gui> und geben Sie das <link xref="user-admin-explain">Administratorpasswort ein</link>.</p>
+ </item>
+ <item>
+  <p>Klicken Sie auf die Pfeile, um das Jahr, den Tag, die Stunde und Minute zu ändern. Sie können das Jahr, den Monat und den Tag in einer Auswahlliste wählen.</p>
+ </item>
+ <item>
+  <p>Wenn Sie wollen, können Sie die Uhr sich selbst automatisch aktualisieren lassen, indem Sie <gui>Netzwerkzeit</gui> einschalten.</p>
+  <p>Wenn <em>Netzwerkzeit</em> eingeschaltet ist, wird Ihr Rechner seine Uhr periodisch mit einer sehr genauen Uhr im Internet abgleichen, damit Sie das nicht mehr selbst machen müssen. Das funktioniert nur, wenn Sie mit dem Internet verbunden sind.</p>
+ </item>
+ <item>
+  <p>Sie können außerdem die Stundenanzeige ändern, indem Sie die <gui>24-Stunden-System</gui> oder <gui>12-Stunden-Format</gui> auswählen.</p>
+ </item>
+</steps>
 
 </page>

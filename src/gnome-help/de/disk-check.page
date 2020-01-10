@@ -18,15 +18,20 @@
     </credit>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
-    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
 
     <desc>Sie können die Festplatte auf Probleme testen, um sicher zu stellen, dass sie »gesund« ist.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hendrik Knackstedt</mal:name>
-      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
-      <mal:years>2011.</mal:years>
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -36,21 +41,9 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Christian Kirbach</mal:name>
-      <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Mario Blättermann</mal:name>
-      <mal:email>mario.blaettermann@gmail.com</mal:email>
-      <mal:years>2011-2013, 2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Benjamin Steinwender</mal:name>
-      <mal:email>b@stbe.at</mal:email>
-      <mal:years>2014.</mal:years>
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.to</mal:years>
     </mal:credit>
   </info>
 
@@ -65,18 +58,18 @@
 <steps>
  <title>Überprüfen der Festplattengesundheit mit der Laufwerksverwaltung</title>
 
-  <item>
-    <p>Öffnen Sie <app>Laufwerke</app> in der <gui>Aktivitäten</gui>-Übersicht.</p>
-  </item>
-  <item>
-    <p>Wählen Sie das Laufwerk, das Sie überprüfen wollen, aus der Liste der Speichergeräte. Informationen über das Laufwerk und dessen Status werden angezeigt.</p>
-  </item>
-  <item>
-    <p>Klicken Sie auf den Menü-Knopf und wählen Sie <gui>SMART-Werte und Selbsttests …</gui>. Die <gui>Allgemeine Einschätzung</gui> sollte »Das Laufwerk ist in Ordnung« melden.</p>
-  </item>
-  <item>
-    <p>Weitere Informationen finden Sie unter <gui>SMART-Attribute</gui>, oder klicken Sie auf den Knopf <gui style="button">Selbsttest starten</gui>, um einen Selbsttest auszuführen.</p>
-  </item>
+ <item>
+  <p>Öffnen Sie in der <gui>Aktivitäten</gui>-Übersicht die Anwendung <app>Laufwerke</app>.</p>
+ </item>
+ <item>
+  <p>Wählen Sie das Gerät, das Sie überprüfen wollen, aus der <gui>Speichergeräte</gui>-Liste. Informationen über das Laufwerk und dessen Status werden unter <gui>Laufwerk</gui> angezeigt.</p>
+ </item>
+ <item>
+  <p>Der <gui>SMART-Status</gui> sollte »Laufwerk ist funktionstüchtig« lauten.</p>
+ </item>
+ <item>
+  <p>Klicken Sie auf den Knopf <gui>SMART-Werte</gui>, um mehr Informationen über das Laufwerk zu erhalten oder einen Selbsttest auszuführen.</p>
+ </item>
 
 </steps>
 
@@ -86,7 +79,7 @@
 
  <title>Was tun, wenn das Laufwerk nicht funktionstüchtig ist?</title>
 
-  <p>Selbst wenn die <gui>Allgemeine Einschätzung</gui> angibt, dass das Laufwerk <em>nicht</em> in Ordnung ist, gibt es unter Umständen gar keinen Anlass zur Beunruhigung. Dennoch ist es besser, vorbereitet zu sein und mit einer <link xref="backup-why">Datensicherung</link> Datenverlust zu verhindern.</p>
+  <p>Selbst wenn der <gui>SMART-Status</gui> anzeigt, dass das Laufwerk <em>nicht</em> funktionstüchtig ist, gibt es unter Umständen gar keinen Anlass zur Beunruhigung. Dennoch ist es besser, vorbereitet zu sein und mit einer <link xref="backup-why">Datensicherung</link> Datenverlust zu verhindern.</p>
 
   <p>Wenn der Status »Vor Versagen« lautet, ist das Laufwerk noch halbwegs funktionstüchtig, aber es wurden Verschleißerscheinungen festgestellt, was bedeutet, dass es in naher Zukunft ausfallen könnte. Wenn Ihre Festplatte (oder Ihr Rechner) einige Jahre alt ist, sehen Sie diese Nachricht wahrscheinlich bei zumindest einigen Fehlerüberprüfungen. Sie sollten <link xref="backup-how">Ihre wichtigen Daten regelmäßig sichern</link> und von Zeit zu Zeit überprüfen, ob sich der Laufwerksstatus nicht verschlechtert hat.</p>
 

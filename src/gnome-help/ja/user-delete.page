@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="user-delete" xml:lang="ja">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="user-delete" xml:lang="ja">
 
   <info>
     <link type="guide" xref="user-accounts#manage"/>
-    <link type="seealso" xref="user-add"/>
-    <link type="seealso" xref="user-admin-explain"/>
-
+    <desc>もうコンピューターを使わないユーザーを削除します。</desc>
     <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -27,19 +22,13 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>もうコンピューターを使わないユーザーを削除します。</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -61,58 +50,21 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Noriko Mizumoto</mal:name>
-      <mal:email>noriko@fedoraproject.org</mal:email>
-      <mal:years>2013, 2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>坂本 貴史</mal:name>
-      <mal:email>o-takashi@sakamocchi.jp</mal:email>
-      <mal:years>2013, 2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>日本GNOMEユーザー会</mal:name>
       <mal:email>http://www.gnome.gr.jp/</mal:email>
       <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
-
   <title>ユーザーアカウントを削除する</title>
 
-  <p>You can <link xref="user-add">add multiple user accounts to your
-  computer</link>. If somebody is no longer using your computer, you can delete
-  that user’s account.</p>
+  <p>コンピューターには、複数のユーザーアカウントを追加できます。追加方法については、<link xref="user-add"/> を参照してください。もうコンピューターを使わなくなった人がいれば、そのユーザーのアカウントを削除できます。</p>
 
-  <p>You need <link xref="user-admin-explain">administrator privileges</link>
-  to delete user accounts.</p>
-
-  <steps>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Users</gui>.</p>
-    </item>
-    <item>
-      <p>Click <gui>Users</gui> to open the panel.</p>
-    </item>
-    <item>
-      <p>Press <gui style="button">Unlock</gui> in the top right corner and
-      type in your password when prompted.</p>
-    </item>
-    <item>
-      <p>Select the user that you want to delete and press the
-      <gui style="button">-</gui> button, below the list of accounts on the
-      left, to delete that user account.</p>
-    </item>
-    <item>
-      <p>Each user has their own home folder for their files and settings. You
-      can choose to keep or delete the user’s home folder. Click <gui>Delete
-      Files</gui> if you are sure they will not be used anymore and you need to
-      free up disk space. These files are permanently deleted. They cannot be
-      recovered. You may want to back up the files to an external storage device
-      before deleting them.</p>
-    </item>
-  </steps>
-
+<steps>
+  <item><p>Click your name on the top bar, then click the picture next to your
+  name to open the <gui>Users</gui> window.</p></item>
+  <item><p>アカウント管理を行うために、ウィンドウ右上角の<gui>ロック解除</gui>をクリックし、あなたのパスワードを入力します。ユーザーアカウントを削除するには、管理者である必要があります。</p></item>
+  <item><p>Select the user you want to delete and click the
+  <gui style="button">-</gui> button.</p></item>
+  <item><p>各ユーザーは、自分用のフォルダーにファイルや設定を保存しています。ユーザーのホームフォルダーを残すか、それとも削除するか、選択できます。もうファイルを使うことがないことがわかっており、ディスク領域を解放する必要がある場合は、<gui>ファイルを削除</gui>をクリックします。ファイルは完全に削除されます。復旧できません。削除する前に、外付けドライブや CD にバックアップを取っておくとよいでしょう。</p></item>
+</steps>
 </page>

@@ -4,75 +4,82 @@
       id="login-banner">
 
   <info>
-    <link type="guide" xref="login#appearance"/>
-    <!--<link type="seealso" xref="gdm-restart"/>-->
-    <revision pkgversion="3.8" date="2013-04-19" status="review"/>
-    <revision pkgversion="3.14" date="2014-06-17" status="review"/>
+    <link type="guide" xref="index" group="login" />
+    <revision pkgversion="3.8" version="0.1" date="2013-04-19" status="review"/>
 
     <credit type="author copyright">
       <name>Matthias Clasen</name>
-      <email>matthias.clasen@gmail.com</email>
+      <email its:translate="no">matthias.clasen@gmail.com</email>
       <years>2012</years>
     </credit>
     <credit type="author copyright">
       <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
+      <email its:translate="no">mdhillca@gmail.com</email>
       <years>2012</years>
     </credit>
-    <credit type="editor">
+    <credit type="author copyright">
       <name>Jana Svarova</name>
-      <email>jana.svarova@gmail.com</email>
+      <email its:translate="no">jana.svarova@gmail.com</email>
       <years>2013</years>
     </credit>
     <credit type="author copyright editor">
       <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
+      <email its:translate="no">kittykat3756@gmail.com</email>
       <years>2013</years>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>davidk@gnome.org</email>
-      <years>2014</years>
-    </credit>
 
-    <include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude"/>
-
-    <desc>Show extra text on the login screen.</desc>
+    <desc>Edit a <sys its:translate="no">GDM</sys> <sys its:translate="no">dconf</sys> profile to display a text banner on the login screen.</desc>
   </info>
 
-  <title>Display a text banner on the login screen</title>
+  <title>Add text to the login screen</title>
 
   <comment>
     <cite date="2012-11-07" href="mailto:mdhillca@gmail.com">Michael Hill</cite>
     <p>Adapted from l-g-o SysAdminGuide page.</p>
   </comment>
 
-  <p>You can display extra text on the login screen, such as who to contact for
-  support, by setting the
-  <sys>org.gnome.login-screen.banner-message-enable</sys> and
-  <sys>org.gnome.login-screen.banner-message-text</sys> GSettings keys.</p>
+  <p>The text banner on the login screen is controlled by the
+  <cmd>org.gnome.login-screen.banner-message-enable</cmd> and
+  <cmd>org.gnome.login-screen.banner-message-text</cmd>
+  <sys its:translate="no">GSettings</sys> keys.
+  <sys its:translate="no">GDM</sys> uses its own
+  <sys its:translate="no">dconf</sys> profile. To change settings in this
+  profile, add a key file to the
+  <file its:translate="no">/etc/dconf/db/gdm.d</file> directory and run
+  <cmd its:translate="no">dconf update</cmd>.</p>
 
-  <steps>
-    <title>Display a text banner on the login screen:</title>
-    <include href="dconf-snippets.xml"
-      xpointer="xpointer(/*/*[@xml:id='dconf-profile-gdm'])"
-      xmlns="http://www.w3.org/2001/XInclude"/>
-    <item><p>Create a <sys>gdm</sys> keyfile for machine-wide settings in
-    <file its:translate="no">/etc/dconf/db/gdm.d/01-banner-message</file>:</p>
+  <listing>
+    <title>Sample <file its:translate="no">/etc/dconf/db/gdm.d/01-banner-message</file> file</title>
       <code its:translate="no">[org/gnome/login-screen]
 banner-message-enable=true
 banner-message-text='<input its:translate="yes">Type the banner message here.</input>'
 </code>
-    </item>
-    <include href="dconf-snippets.xml"
-      xpointer="xpointer(/*/*[@xml:id='dconf-update'])"
-      xmlns="http://www.w3.org/2001/XInclude"/>
-  </steps>
+  </listing>
 
   <note>
-    <p>You should keep the banner message short, as longer messages do
-    not fit on the screen. The banner message cannot be read from
-    an external file.</p>
+    <p><sys its:translate="no">dconf</sys> key files are slightly different
+    from <sys its:translate="no">GSettings</sys> override files.</p>
   </note>
+
+<!-- TODO
+<section>
+  <title>What if the banner message does not display?</title>
+
+  <comment>
+    <cite>Kat</cite>
+    <p>Apparently the message may not be displayed if the theme does not
+    support it. Find out if this is really the case and how to check the
+    theme.</p>
+  </comment>
+
+</section>
+
+<section id="prob-update">
+  <title>What if the banner message does not update?</title>
+
+  TODO
+
+</section>
+-->
 
 </page>

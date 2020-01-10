@@ -2,13 +2,11 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-delete" xml:lang="lv">
 
   <info>
-    <link type="guide" xref="files#common-file-tasks"/>
+    <link type="guide" xref="files"/>
     <link type="seealso" xref="files-recover"/>
+    <desc>Izņemt datnes vai mapes, kas vairs nav vajadzīgas.</desc>
 
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-16" status="review"/>
-    <revision pkgversion="3.13.92" date="2013-09-20" status="candidate"/>
-    <revision pkgversion="3.16" date="2015-02-22" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
 
     <credit type="author">
       <name>Cristopher Thomas</name>
@@ -18,22 +16,15 @@
       <name>Shaun McCance</name>
       <email>shaunm@gnome.org</email>
     </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
     <credit type="author">
       <name>Jim Campbell</name>
-      <email>jcampbell@gnome.org</email>
+      <email>jwcampbell@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Izņemt datnes vai mapes, kas vairs nav vajadzīgas.</desc>
   </info>
 
 <title>Dzēst datnes un mapes</title>
@@ -43,10 +34,8 @@
   <steps>
     <title>Lai aizsūtītu datni uz miskasti:</title>
     <item><p>Izvēlieties vienumu, kuru vēlaties izdzēst, uz tā vienreiz uzklikšķinot.</p></item>
-    <item><p>Nospiediet <key>Delete</key> uz tastatūras. Vai arī ievelciet vienumu <gui>Miskastē</gui> sānu joslā.</p></item>
+    <item><p>Nospiediet <keyseq><key>Ctrl</key><key>Delete</key></keyseq> uz tastatūras. Vai arī ievelciet vienumu <gui>Miskastē</gui> sānu joslā.</p></item>
   </steps>
-
-  <p>Datne tiks pārvietota uz miskasti un jums tiks sniegta iespēja <gui>Atsaukt</gui> dzēšanu. Poga <gui>Atsaukt</gui> būs redzama dažas sekundes. Ja izvēlēsities <gui>Atsaukt</gui>, datne tiks atjaunota tās sākotnējā atrašanās vietā.</p>
 
   <p>Lai dzēstu datnes neatgriezeniski un atbrīvotu brīvu vietu jūsu datorā, jāiztukšo miskaste. Lai to izdarītu, veiciet labo peles klikšķi uz <gui>Miskastes</gui> sānu joslā un izvēlieties <gui>Iztukšot miskasti</gui>.</p>
 
@@ -61,8 +50,9 @@
     <item><p>Tā kā šo darbību nevar atsaukt, jums tiks prasīts apstiprinājums, ka tiešām vēlaties izdzēst datni vai mapi.</p></item>
   </steps>
 
+  <note style="tip"><p>Ja jums bieži jādzēš datnes, neizmantojot miskasti (piemēram, ja  bieži strādājat ar konfidenciāliem datiem), jūs varat pievienot komandu <gui>Dzēst</gui> labās peles pogas izvēlnei datnēm un mapēm. Spiediet <gui>Datnes</gui> augšējā joslā, izvēlieties <gui>Iestatījumi</gui> un izvēlieties cilni <gui>Uzvedība</gui>. Atzīmējiet <gui>Iekļaut dzēšanas komandu, kas apiet miskasti</gui>.</p></note>
+
   <note><p>Izdzēstās datnes <link xref="files#removable">noņemamās ierīcēs</link> var būt neredzamas citās operētājsistēmās, piemēram, Windows vai Mac OS. Šīs datnes joprojām tur ir, un būs pieejami, kad ierīce tiks pievienota datoram.</p></note>
 
   </section>
-
 </page>

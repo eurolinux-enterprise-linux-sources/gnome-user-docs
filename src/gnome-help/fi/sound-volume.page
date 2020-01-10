@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="sound-volume" xml:lang="fi">
-
   <info>
     <link type="guide" xref="media#sound"/>
-
-    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-30" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -18,63 +13,36 @@
       <email>shaunm@gnome.org</email>
     </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
 
     <desc>Aseta tietokoneen äänenvoimakkuus ja määritä jokaiselle sovellukselle äänenvoimakkuus erikseen.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Timo Jyrinki</mal:name>
       <mal:email>timo.jyrinki@iki.fi</mal:email>
       <mal:years>2012.</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Jiri Grönroos</mal:name>
-      <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
-      <mal:years>2012-2018.</mal:years>
-    </mal:credit>
   </info>
 
 <title>Muuta äänenvoimakkuutta</title>
 
-  <p>Muuta äänenvoimakkuutta avaamalla <gui xref="shell-introduction#yourname">järjestelmävalikko</gui> yläpalkin oikeasta laidasta ja liikuttamalla äänitason liukusäädintä vasemmalle tai oikealle. Voit mykistää äänen viemällä liukusäätimen aivan vasempaan reunaan.</p>
+  <p>To change the sound volume, click the sound icon on the top bar (it looks
+ like a speaker) and move the volume slider left or right. You can completely
+ turn off sound by dragging the slider all the way to the left.</p>
 
-  <p>Useissa näppäimistöissä on niin sanotut medianäppäimet, joiden avulla on mahdollista muuttaa äänenvoimakkuutta. Kyseisiä näppäimiä korostetaan yleensä kaiuttimien kuvilla, joiden läheisyydessä on "ääniaaltoja". Medianäppäimet sijaitsevat yleensä “F-näppäinten” (esim. <key>F7</key>) lähettyvillä. Kannettavissa tietokoneissa paina <key>Fn</key>-näppäintä pohjassa käyttääksesi medianäppäimiä.</p>
+  <p>Useissa näppäimistöissä on niin sanotut medianäppäimet, joiden avulla on mahdollista muuttaa äänenvoimakkuutta. Kyseiset näppäimet näyttävät yleensä kaiuttimilta, joiden läheisyydessä on "ääniaaltoja". Medianäppäimet sijaitsevat yleensä "F-näppäinten" (esim. <key>F7</key>) lähettyvillä. Kannettavissa paina <key>Fn</key>-näppäintä pohjassa käyttääksesi medianäppäimiä.</p>
 
-  <p>Jos käytössäsi on kaiuttimet, voit toki muuttaa niiden äänenvoimakkuutta itse kaiuttimista tai vahvistimesta. Myös jotkin kuulokkeet sisältävät säätimen äänenvoimakkuudelle.</p>
+  <p>Jos käytössä on kaiuttimet, voit toki muuttaa niiden äänenvoimakkuutta itse kaiuttimista tai vahvistimesta. Myös jotkin kuulokkeet sisältävät säätimen äänenvoimakkuudelle.</p>
 
 <section id="apps">
  <title>Äänenvoimakkuuden asettaminen sovelluskohtaisesti</title>
-
-  <p>You can change the volume for one application and leave the volume for
-  others unchanged. This is useful if you are listening to music and browsing
-  the web, for example. You might want to turn off the audio in the web browser
-  so sounds from websites do not interrupt the music.</p>
-
-  <p>Some applications have volume controls in their main windows. If your
-  application has its volume control, use that to change the volume. If not:</p>
-
-    <steps>
-    <item>
-      <p>Avaa <gui xref="shell-introduction#activities">Toiminnot</gui>-yleisnäkymä ja ala kirjoittamaan <gui>Ääni</gui>.</p>
-    </item>
-    <item>
-      <p>Napsauta <gui>Ääni</gui> avataksesi paneelin.</p>
-    </item>
-    <item>
-      <p>Go to the <gui>Applications</gui> tab and change the volume of the
-      application listed there.</p>
-
-  <note style="tip">
-    <p>Only applications that are playing sounds are listed. If an
-    application is playing sounds but is not listed, it might not support the
-    feature that lets you control its volume in this way. In such case, you
-    cannot change its volume.</p>
-  </note>
-    </item>
-
-  </steps>
-
+ <p>Voit säätää ääntä toistavien tai nauhoittavien toiston (tai nauhoituksen) voimakkuutta sovelluskohtaisesti. Tämä on käytännöllistä esimerkiksi silloin kun kuuntelet musiikkia ja katsot Internetistä videota samaan aikaan. Halutessasi voit myös kytkeä vaikkapa selaimen äänet kokonaan pois, jolloin kuulet vain musiikkisoittimen äänen.</p>
+ <p>Some applications have volume controls in their main windows. If your
+ application has one of these, use that to change the volume. Otherwise, click
+ the sound icon on the top bar and select <gui>Sound Settings</gui>. Go to the
+ <gui>Applications</gui> tab and change the volume of the application there.</p>
+ <p>Vain sovellukset, jotka juuri sillä kyseisellä hetkellä toistavat tai nauhoittavat ääntä, esitetään. Jos ääntä soittava/nauhoittava sovellus ei löydy listasta, se ei välttämättä tue sen äänenvoimakkuuden säätämistä järjestelmän kautta. Tällöin et voi muuttaa sen äänenvoimakkuutta, ellei itse sovelluksesta löydy tukea tälle toiminnolle.</p>
 </section>
 
 </page>

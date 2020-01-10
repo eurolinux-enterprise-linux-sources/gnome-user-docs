@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="look-resolution" xml:lang="gl">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="look-resolution" xml:lang="gl">
 
   <info>
     <link type="guide" xref="prefs-display"/>
     <link type="seealso" xref="look-display-fuzzy"/>
-
     <revision pkgversion="3.8.0" version="0.3" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-07" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
 
+    <desc>Cambiar a resolución da pantalla e a súa orientación (rotación).</desc>
     <credit type="author">
       <name>Proxecto de documentación de GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
@@ -21,74 +19,45 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Shobha Tyagi</name>
-      <email>tyagishobha@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Cambiar a resolución da pantalla e a súa orientación (rotación).</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2018</mal:years>
+      <mal:years>2011, 2012.</mal:years>
     </mal:credit>
   </info>
 
-  <title>Cambiar o tamaño/rotación da pantalla</title>
+<title>Cambiar o tamaño/rotación da pantalla</title>
 
-  <p>Pode cambiar como de grandes (ou detalladas), aparecen as cousas na pantalla cambiando a <em>resolución de pantalla</em>. Pode cambiar a maneira na que se mostran as cousas (por exemplo, se ten unha pantalla xiratoria) cambiando a <em>rotación</em>.</p>
+<p>Pode cambiar como de grandes (ou detalladas), aparecen as cousas na pantalla cambiando a <em>resolución de pantalla</em>. Pode cambiar a maneira na que se mostran as cousas (por exemplo, se ten unha pantalla xiratoria) cambiando a <em>rotación</em>.</p>
 
-  <steps>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Displays</gui>.</p>
-    </item>
-    <item>
-      <p>Prema <gui>Pantallas</gui> para abrir o panel.</p>
-    </item>
-    <item>
-      <p>Se ten varias pantallas e non están en espello, pode ter diferentes configuracións en cada unha. Seleccione unha pantalla no área de previsualización.</p>
-    </item>
-    <item>
-      <p>Seleccione a resolución e rotación.</p>
-    </item>
-    <item>
-      <p>Click <gui>Apply</gui>. The new settings will be applied for 20
-      seconds before reverting back. That way, if you cannot see anything with
-      the new settings, your old settings will be automatically restored. If
-      you are happy with the new settings, click <gui>Keep Changes</gui>.</p>
-    </item>
-  </steps>
+<comment>
+<cite date="2012-02-19">shaunm</cite>
+<p>Link display-2monitors in step 3 when non-stub.</p>
+</comment>
+
+<steps>
+  <item><p>Prema sobre o nome da barra de enderezos e seleccione <gui>Preferencias</gui>.</p></item>
+  <item><p>Desmarque <gui>Espellar pantallas</gui>.</p></item>
+  <item><p>Se ten varias pantallas e non están en espello, pode ter diferentes configuracións en cada unha. Seleccione unha pantalla no área de previsualización.</p></item>
+  <item><p>Seleccione o nome da rede sen fíos que quere.</p></item>
+  <item><p>Prema <gui>Aplicar</gui>. A nova configuración aplicarase durante 30 segundos antes de reverterse. Desta forma, se non pode ver nada coa nova configuración a súa antiga configuración restaurarase automaticamente. Se está satisfeito coa nova configuración, prema <gui>Manter esta configuración</gui>.</p></item>
+</steps>
+
+<note style="tip">
+ <p>Cando se emprega outra pantalla, como un proxector, deberíase detectar automaticamente para que poida cambiar a súa configuración na mesma forma que a pantalla normal. Se isto non se produce, simplemente prema en <gui>Detectar pantallas</gui>.</p>
+</note>
 
 <section id="resolution">
-  <title>Resolución</title>
-
-  <p>The resolution is the number of pixels (dots on the screen) in each
-  direction that can be displayed. Each resolution has an <em>aspect
-  ratio</em>, the ratio of the width to the height. Wide-screen displays use a
-  16∶9 aspect ratio, while traditional displays use 4∶3. If you choose a
-  resolution that does not match the aspect ratio of your display, the screen
-  will be letterboxed to avoid distortion, by adding black bars to the top and
-  bottom or both sides of the screen.</p>
-
-  <p>Pode seleccionar a opción que prefira no menú despregábel <gui>Resolución</gui>. Se escolle unha resolución que non sexa axeitada para a súa pantalla é posíbel que a vexa <link xref="look-display-fuzzy">borrosa ou pixelada</link>.</p>
-
+<title>Resolución</title>
+<p>A resolución é o número de píxeles (puntos na pantalla) que se mostran en cada dirección. Cada resolución ten unha <em>proporción de aspecto</em>, a proporción entre a altura e a anchura. As pantallas anchas usan unha proporción de aspecto de 16:9, mentres que as tradicionais usan 4:3. Se elixe unha resolución que non coincide coa proporción de aspecto, para evitar distorsión, engadiranse bandas negras superiores e inferiores na súa pantalla.</p>
+<p>Pode seleccionar a opción que prefira no menú despregábel <gui>Resolución</gui>. Se escolle unha resolución que non sexa axeitada para a súa pantalla é posíbel que a vexa <link xref="look-display-fuzzy">borrosa ou pixelada</link>.</p>
 </section>
 
 <section id="rotation">
-  <title>Rotación</title>
-
-  <p>On some laptops, you can physically rotate the screen in many directions.
-  It is useful to be able to change the display rotation. You can rotate what
-  you see on your screen by pressing the buttons with the arrows.</p>
-
+<title>Rotación</title>
+<p>Nalgúns portátiles pode xirar fisicamente as súas pantallas en moitas direccións. Isto é útil para poder cambiar a resolución da pantalla. Pode seleccionar a rotación que quere para a súa pantalla na lista despregábel <gui>Rotación</gui>.</p>
 </section>
 
 </page>

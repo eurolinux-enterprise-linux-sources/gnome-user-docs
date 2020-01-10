@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="display-dual-monitors" xml:lang="sr-Latn">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="display-dual-monitors" xml:lang="sr-Latn">
 
   <info>
-    <link type="guide" xref="prefs-display"/>
-
+    <desc>Podesite dva monitora na vašem prenosnom računaru.</desc>
     <revision pkgversion="3.8.0" version="0.3" date="2013-03-09" status="outdated"/>
-    <revision pkgversion="3.9.92" date="2013-09-23" status="review"/>
-
     <credit type="author">
       <name>Tifani Antopoloski</name>
       <email>tiffany.antopolski@gmail.com</email>
@@ -15,85 +12,78 @@
       <name>Majkl Hil</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <link type="guide" xref="prefs-display"/>
 
-    <desc>Podesite dodatni monitor.</desc>
   </info>
 
-<title>Povežite još jedan monitor na vaš računar</title>
+<title>Povežite spoljni monitor na vaš prenosni računar</title>
 
-<!-- TODO: update video
-<section id="video-demo">
-  <title>Video Demo</title>
-  <media its:translate="no" type="video" width="500" mime="video/webm" src="figures/display-dual-monitors.webm">
-    <p its:translate="yes">Demo</p>
-    <tt:tt its:translate="yes" xmlns:tt="http://www.w3.org/ns/ttml">
-      <tt:body>
-        <tt:div begin="1s" end="3s">
-          <tt:p>Type <input>displays</input> in the <gui>Activities</gui>
-          overview to open the <gui>Displays</gui> settings.</tt:p>
-        </tt:div>
-        <tt:div begin="3s" end="9s">
-          <tt:p>Click on the image of the monitor you would like to activate or
-          deactivate, then switch it <gui>ON/OFF</gui>.</tt:p>
-        </tt:div>
-        <tt:div begin="9s" end="16s">
-          <tt:p>The monitor with the top bar is the main monitor. To change
-          which monitor is “main”, click on the top bar and drag it over to
-          the monitor you want to set as the “main” monitor.</tt:p>
-        </tt:div>
-        <tt:div begin="16s" end="25s">
-          <tt:p>To change the “position” of a monitor, click on it and drag it
-          to the desired position.</tt:p>
-        </tt:div>
-        <tt:div begin="25s" end="29s">
-          <tt:p>If you would like both monitors to display the same content,
-          check the <gui>Mirror displays</gui> box.</tt:p>
-        </tt:div>
-        <tt:div begin="29s" end="33s">
-          <tt:p>When you are happy with your settings, click <gui>Apply</gui>
-          and then click <gui>Keep This Configuration</gui>.</tt:p>
-        </tt:div>
-        <tt:div begin="33s" end="37s">
-          <tt:p>To close the <gui>Displays Settings</gui> click on the
-          <gui>×</gui> in the top corner.</tt:p>
-        </tt:div>
-      </tt:body>
-    </tt:tt>
-  </media>
-</section>
--->
+ <section id="video-demo">
+   <title>Probni snimak</title>
+    <media type="video" width="500" mime="video/webm" src="figures/display-dual-monitors.webm">
+    <p>Probni</p>
+    <tt:tt xmlns:tt="http://www.w3.org/ns/ttml">
+        <tt:body>
+          <tt:div begin="1s" end="3s">
+            <tt:p>Upišite <input>ekrani</input> u pregledu aktivnosti da otvorite podešavanja <gui>Ekrana</gui>.</tt:p>
+          </tt:div>
 
-<section id="steps">
-  <title>Podesite dodatni monitor</title>
-  <p>Da podesite dodatni monitor, povežite ga na vaš računar. Ako ga vaš sistem ne prepozna odmah, ili ako želite da doterate podešavanja:</p>
+          <tt:div begin="3s" end="9s">
+            <tt:p>Kliknite na sličicu monitora koji želite da uključite ili da isključite, zatim ga prebacite na <gui>UKLJ/ISK</gui>.</tt:p>
+          </tt:div>
+
+          <tt:div begin="9s" end="16s">
+            <tt:p>Monitor sa gornjom trakom je glavni monitor. Da izmenite koji će monitor biti „glavni“, kliknite na gornju traku i prevucite je na monitor koji želite da podesite kao „glavni“ monitor.</tt:p>
+          </tt:div>
+
+          <tt:div begin="16s" end="25s">
+            <tt:p>Da izmenite „položaj“ monitora, kliknite na nj i prevucite ga na željeni položaj.</tt:p>
+          </tt:div>
+
+          <tt:div begin="25s" end="29s">
+            <tt:p>Ako želite da oba monitora prikazuju isti sadržaj, štiklirajte kvadratić <gui>Kloniraj ekrane</gui>.</tt:p>
+          </tt:div>
+
+          <tt:div begin="29s" end="33s">
+            <tt:p>Kada budete bili zadovoljni vašim podešavanjima, kliknite <gui>Primeni</gui> i nakon toga na <gui>Zadrži ova podešavanja</gui>.</tt:p>
+          </tt:div>
+
+          <tt:div begin="33s" end="37s">
+            <tt:p>Da zatvorite <gui>Podešavanja ekrana</gui> kliknite na <gui>h</gui> u gornjem uglu.</tt:p>
+          </tt:div>
+
+        </tt:body>
+
+      </tt:tt>
+
+    </media>
+  </section>
+
+
+
+  <section id="steps">
+  <title>Podesite spoljni monitor</title>
+  <p>Da podesite spoljni monitor uz vaš prenosni računar, priključite ga na prenosni računar. Ako ga vaš sistem ne prepozna odmah, ili ako želite da doterate podešavanja:</p>
 
   <steps>
-    <item>
-      <p>Otvorite pregled <gui xref="shell-introduction#activities">Aktivnosti</gui> i počnite da kucate <gui>Ekrani</gui>.</p>
-    </item>
-    <item>
-      <p>Kliknite na <gui>Ekrani</gui> da otvorite panel.</p>
-    </item>
-    <item>
-      <p>Pritisnite na monitor koji želite da uključite ili isključite, zatim u spisku podešavanja monitora izaberite <gui>Isključi</gui> da ga isključite, ili <gui>Glavni</gui>, <gui>Sporedni</gui>, ili <gui>Preslikaj</gui> da ga uključite.</p>
-      <note>
-        <p>Glavni monitor je onaj sa <link xref="shell-introduction">gornjom trakom</link>, i na kome se prikazuje pregled <gui>aktivnosti</gui>.</p>
-      </note>
-    </item>
-    <item>
-      <p>Da izmenite okrenutost monitora, koristite dugmad sa sterlicama sve dok pretpregled ne bude zadovoljavajući.</p>
-    </item>
-    <item>
-      <p>Kada budete bili zadovoljni vašim podešavanjima, kliknite <gui>Primeni</gui> i nakon toga na <gui>Zadrži izmene</gui>.</p>
-    </item>
-  </steps>
+  <item><p>Kliknite na vaše ime na gornjoj traci i izaberite <gui>Podešavanja</gui>.</p></item>
 
+  <item><p>Otvorite <gui>Ekrani</gui>.</p></item>
+
+  <item><p>Kliknite na sličicu monitora koji želite da uključite ili da isključite, zatim ga prebacite na <gui>UKLJ/ISK</gui>.</p></item>
+
+  <item><p>Monitor sa <link xref="shell-introduction">gornjom trakom</link> je glavni monitor. Da izmenite koji će monitor biti „glavni“, kliknite na gornju traku i prevucite je na monitor koji želite da podesite kao „glavni“ monitor.</p></item>
+
+  <item><p>Da izmenite „položaj“ monitora, kliknite na nj i prevucite ga na željeni položaj.</p>
+           <note><p>Ako želite da oba monitora prikazuju isti sadržaj, štiklirajte kvadratić <gui>Kloniraj ekrane</gui>.</p></note>
+  </item>
+
+  <item><p>Kada budete bili zadovoljni vašim podešavanjima, kliknite <gui>Primeni</gui> i nakon toga na <gui>Zadrži ova podešavanja</gui>.</p></item>
+
+  <item><p>Da zatvorite <gui>Podešavanja ekrana</gui> kliknite na <gui>h</gui> u gornjem uglu.</p></item>
+  </steps>
 </section>
+
 
 </page>

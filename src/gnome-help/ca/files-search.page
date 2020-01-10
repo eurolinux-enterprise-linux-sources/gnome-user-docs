@@ -2,12 +2,12 @@
 <page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="files-search" xml:lang="ca">
 
   <info>
-    <link type="guide" xref="files#common-file-tasks"/>
+    <link type="guide" xref="files"/>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-25" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
+    <desc>Locate files based on file name and type. Save your searches for
+    later use.</desc>
     <credit type="author">
       <name>Projecte de documentació del GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
@@ -20,14 +20,7 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Localitzi fitxers basats en el nom i el tipus de fitxer.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>David Aguilera</mal:name>
@@ -36,48 +29,64 @@
     </mal:credit>
   </info>
 
-  <title>Cerca fitxers</title>
+  <title>Search for files</title>
 
-  <p>Podeu cercar fitxers basats en el nom o el tipus de fitxer directament dins del gestor de fitxers.</p>
+  <p>You can search for files based on their name or file type directly
+  within the file manager. You can even save common searches, and they
+  will appear as special folders in your home folder.</p>
 
   <links type="topic" style="linklist">
-    <title>Altres aplicacions de cerca</title>
+    <title>Other search applications</title>
     <!-- This is an extension point where search apps can add
     their own topics. It's empty by default. -->
   </links>
 
   <steps>
-    <title>Cercar</title>
-    <item>
-      <p>Open the <app>Files</app> application from the
-      <gui xref="shell-introduction#activities">Activities</gui> overview.</p>
+    <title>Search</title>
+    <item><p>Open the <app>Files</app> application from the <gui>Activities
+    </gui> overview.</p></item>
+    <item><p>If you know the files you want are under a particular folder, go
+    to that folder.</p></item>
+    <item><p>Click the magnifying glass in the toolbar, or press
+    <keyseq><key>Ctrl</key><key>F</key></keyseq>.</p></item>
+    <item><p>Type a word or words that you know appear in the file name. For
+    example, if you name all your invoices with the word "Invoice", type
+    <input>invoice</input>. Press <key>Enter</key>. Words are matched regardless
+    of case.</p></item>
+    <item><p>You can narrow your results by location and file type.</p>
+    <list>
+      <item><p>Click <gui>Home</gui> to restrict the search results to your
+      <file>Home</file> folder, or <gui>All Files</gui> to search
+      everywhere.</p></item>
+      <item><p>Click <key>+</key> and pick a <gui>File Type</gui> from the
+      drop-down list to narrow the search results based on file type. Click the
+      <key>x</key> button to remove this option and widen the search
+      results.</p></item>
+    </list>
     </item>
-    <item>
-      <p>Si sap que els fitxers que vol es troben en una carpeta particular,  vagi a aquesta carpeta.</p>
-    </item>
-    <item>
-      <p>Escrigui una paraula o paraules que sap que apareixen al nom del fitxer, i es mostraran sota la barra de cerca. Per exemple, si citeu totes les vostres factures amb la paraula "Factura", escriviu <input>Factura</input>. Les paraules coincideixen independentment de si estan en majúscula o no.</p>
-      <note>
-        <p>En lloc d'escriure paraules directament per mostrar la barra de cerca, podeu fer clic a la lupa a la barra d'eines, o prémer <keyseq><key>Ctrl</key><key>F</key></keyseq>.</p>
-      </note>
-    </item>
-    <item>
-      <p>Podeu reduir els resultats per ubicació i tipus de fitxer.</p>
-      <list>
-        <item>
-          <p>Feu clic a <gui>Inici</gui> per restringir els resultats de la cerca a la vostra carpeta <file>Inici</file>, o <gui>Tots els fitxers</gui>per cercar a tot arreu.</p>
-        </item>
-        <item>
-          <p>Feu clic al botó <gui>+</gui> i trieu un <gui>Tipus de fitxer</gui>des de la llista desplegable per restringir els resultats de cerca segons el tipus de fitxer. Feu clic al botó <gui>×</gui> per eliminar aquesta opció i ampliar els resultats de la cerca.</p>
-        </item>
-      </list>
-    </item>
-    <item>
-      <p>Pot obrir, copiar, esborrar o treballar amb els seus fitxers des dels resultats de la cerca, tal com ho faria des de qualsevol carpeta del gestor de fitxers.</p>
-    </item>
-    <item>
-      <p>Feu clic a la lupa de la barra d'eines de nou per sortir de la cerca i tornar a la carpeta.</p>
-    </item>
+    <item><p>You can open, copy, delete, or otherwise work with your files from
+    the search results, just as you would from any folder in the file manager.
+    </p></item>
+    <item><p>Click the magnifying glass in the toolbar again to exit the search
+    and return to the folder.</p></item>
   </steps>
 
+  <p>If you perform certain searches often, you can save them to access them
+  quickly.</p>
+
+  <steps>
+    <title>Save a search</title>
+    <item><p>Start a search as above.</p></item>
+    <item><p>When you're happy with the search parameters, click the gear
+    button and select <gui>Save Search As</gui>.</p></item>
+    <item><p>Give the search a name and click <gui>Save</gui>. If you like,
+    select a different folder to save the search in. When you view that folder,
+    you will see your saved search as an orange folder icon with a magnifying
+    glass on it.</p></item>
+  </steps>
+
+  <p>To remove the search file when you are done with it, simply
+  <link xref="files-delete">delete</link> the search as you would any other
+  file. When you delete a saved search, it does not delete the files that the
+  search matched.</p>
 </page>

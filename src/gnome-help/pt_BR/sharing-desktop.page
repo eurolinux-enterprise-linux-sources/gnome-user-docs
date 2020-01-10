@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="sharing-desktop" xml:lang="pt-BR">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="sharing-desktop" xml:lang="pt-BR">
   <info>
     <link type="guide" xref="sharing"/>
-    <link type="guide" xref="prefs-sharing"/>
+    <link type="guide" xref="settings-sharing"/>
 
-    <revision pkgversion="3.14" date="2015-01-25" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+    <revision pkgversion="3.8.2" version="0.3" date="2013-05-09" status="review"/>
 
     <credit type="author">
       <name>Ekaterina Gerasimova</name>
@@ -16,13 +14,9 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="author">
-      <name>Jim Campbell</name>
-      <email>jcampbell@gnome.org</email>
-    </credit>
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <desc>Deixe outras pessoas verem e interagirem com sua área de trabalho usando VNC.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Rodolfo Ribeiro Gomes</mal:name>
@@ -31,30 +25,25 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Enrico Nicoletto</mal:name>
       <mal:email>liverig@gmail.com</mal:email>
       <mal:years>2013.</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>João Santana</mal:name>
-      <mal:email>joaosantana@outlook.com</mal:email>
-      <mal:years>2013.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Fontenelle</mal:name>
-      <mal:email>rafaelff@gnome.org</mal:email>
-      <mal:years>2012-2018.</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Compartilhando sua área de trabalho</title>
+  <title>Compartilhar sua área de trabalho</title>
 
   <p>Você pode deixar que outros vejam e controlem sua área de trabalho a partir de outro computador, através de um aplicativo de visualização de área de trabalho. Configure <gui>Compartilhamento de tela</gui> para permitir que outras pessoas acessem seu ambiente e para configurar as preferências de segurança.</p>
 
   <note style="info package">
-    <p>Você deve ter o pacote <app>Vino</app> instalado para que <gui>Compartilhamento de tela</gui> esteja visível.</p>
+    <p>You must have the <app>Vino</app> package installed for
+     <gui>Screen Sharing</gui> to be visible.</p>
 
     <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
       <if:when test="action:install">
@@ -65,27 +54,25 @@
 
   <steps>
     <item>
-      <p>Abra o panorama de <gui xref="shell-introduction#activities">Atividades</gui> e comece a digitar <gui>Compartilhamento</gui>.</p>
+      <p>Clique em seu nome na barra superior e selecione <gui>Configurações</gui>.</p>
     </item>
     <item>
-      <p>Clique em <gui>Compartilhamento</gui> para abrir o painel.</p>
+      <p>Abra <gui>Compartilhar</gui>.</p>
     </item>
     <item>
-      <p>Se <gui>Compartilhar</gui> estiver em <key>○</key>, alterne-o para <key>❙</key>.</p>
-
-      <note style="info"><p>Se o texto embaixo de <gui>Nome do computador</gui> permite que o edite, você pode <link xref="sharing-displayname">alterar</link> o nome que o seu computador exibe na rede.</p></note>
+      <p>Se <gui>Compartilhar</gui> estiver em <gui>OFF</gui>, alterne-o para <gui>ON</gui>.</p>
     </item>
     <item>
       <p>Selecione <gui>Compartilhamento de tela</gui>.</p>
     </item>
     <item>
-      <p>Para deixar outros verem sua área de trabalho, alterne <gui>Compartilhamento de tela</gui> para <key>❙</key>. Isso significa que outras pessoas serão capazes de tentar se conectar a seu computador e ver o que está na sua tela.</p>
+      <p>Para deixar outros verem sua área de trabalho, alterne <gui>Conexão remota</gui> para <gui>ON</gui>. Isso significa que outras pessoas serão capazes de tentar se conectar ao seu computador e ver o que está na sua tela.</p>
     </item>
     <item>
-      <p>Para deixar outros interagirem com sua área de trabalho, alterne <gui>Permitir acesso remoto</gui> pra <key>❙</key>. Isso pode permitir outra pessoa mover o seu mouse, executar aplicativos e navegar por arquivos em seu computador, dependendo das configurações de segurança que você estiver usando atualmente.</p>
+      <p>Para deixar outros interagirem com sua área de trabalho, alterne <gui>Conexão remota</gui> pra <gui>ON</gui>. Isso pode permitir outra pessoa mover o seu mouse, executar aplicativos e navegar por arquivos em seu computador, dependendo das configurações de segurança que você estiver usando atualmente.</p>
 
       <note style="tip">
-        <p>Essa opção é habilitada por padrão quando <gui>Compartilhamento de tela</gui> está em <key>❙</key>.</p>
+        <p>Essa opção é habilitada por padrão quando <gui>Conexão remota</gui> está em <gui>ON</gui>.</p>
       </note>
 
     </item>
@@ -95,30 +82,28 @@
   <title>Segurança</title>
 
   <p>É importante que pondere por completo o que cada opção de segurança significa antes de alterá-la.</p>
-
   <terms>
     <item>
-      <title>Novas conexões devem solicitar acesso</title>
-      <p>Se você deseja ser capaz de escolher se alguém pode ou não acessar sua área de trabalho, habilite <gui>Novas conexões deve solicitar acesso</gui>. Se você desabilitar essa opção, você não será questionado se deseja permitir que alguém se conecte a seu computador.</p>
+      <title>Aprovar todas as conexões</title>
+      <p>Se você deseja ser capaz de escolher se alguém pode ou não acessar sua área de trabalho, alterne <gui>Aprovar todas as conexões</gui> para <gui>ON</gui>. Se você desabilitar essa opção, você não será questionado se deseja permitir que alguém se conecte ao seu computador.</p>
       <note style="tip">
         <p>Essa opção é habilitada por padrão.</p>
       </note>
     </item>
     <item>
-      <title>Exige uma senha</title>
-      <p>Para exigir que outras pessoas usem uma senha ao se conectar a sua área de trabalho, habilite <gui>Exige uma senha</gui>. Se você não usar essa opção, qualquer um pode tentar ver seu computador.</p>
+      <title>Requer senha</title>
+      <p>Para exigir que outras pessoas usem uma senha ao se conectar à sua área de trabalho, alterne <gui>Requer senha</gui> para <gui>ON</gui>. Se você não usar essa opção, qualquer um pode tentar ver seu computador.</p>
       <note style="tip">
         <p>Essa opção é desabilitada por padrão, mas você deveria habilitá-la e definir uma senha segura.</p>
       </note>
     </item>
-<!-- TODO: check whether this option exists.
-    <item>
+<!--    <item>
       <title>Allow access to your desktop over the Internet</title>
-      <p>If your router supports UPnP Internet Gateway Device Protocol and it
-      is enabled, you can allow other people who are not on your local network
-      to view your desktop. To allow this, select <gui>Automatically configure
-      UPnP router to open and forward ports</gui>. Alternatively, you can
-      configure your router manually.</p>
+      <p>If your router supports UPnP Internet Gateway Device Protocol and it is
+ enabled, you can allow other people who are not on your local network to view
+ your desktop. To allow this, select <gui>Automatically configure UPnP router to
+ open and forward ports</gui>. Alternatively, you can configure your router
+ manually.</p>
       <note style="tip">
         <p>This option is disabled by default.</p>
       </note>
@@ -127,25 +112,17 @@
   </terms>
   </section>
 
-  <section id="networks">
-  <title>Redes</title>
-
-  <p>A seção <gui>Redes</gui> lista as redes às quais você está atualmente conectada. Use o alternador <gui>ON | OFF</gui> próximo a cada um para escolher onde seu ambiente pode ser compartilhado.</p>
-  </section>
-
+<!--
   <section id="notification-icon">
-  <title>Interrompendo o compartilhamento da sua área de trabalho</title>
-
-  <p>Você pode desconectar algum que está visualizando seu ambiente usando o <gui>ícone de notificação</gui> na área de notificação. Para fazer isso:</p>
-    <steps>
-      <item><p>Abra a área de notificação pressionando <keyseq><key>Super</key><key>M</key></keyseq>, ou movendo o ponteiro do seu mouse para a parte inferior da sua tela.</p></item>
-      <item><p>Clique no ícone de <gui>Área de trabalho</gui> na <gui>Área de notificação</gui>. Isso vai abrir o painel <app>Compartilhamento</app>.</p>
-      </item>
-      <item><p>Selecione <gui>Compartilhamento de tela</gui>.</p></item>
-      <item><p>Alterne <gui>Compartilhamento de tela</gui> para <key>○</key>.</p></item>
-    </steps>
-
+  <title>Show notification area icon</title>
+  <p>To be able to disconnect someone who is viewing your desktop, you need to
+ enable this option. If you select <gui>Always</gui>, this icon will be visible
+ regardless of whether someone is viewing your desktop or not.</p>
+    <note style="warning">
+      <p>If this option is disabled, it is possible for someone to connect to
+ your desktop without your knowledge, depending on the security settings.</p>
+    </note>
   </section>
-
+-->
 
 </page>

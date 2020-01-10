@@ -4,10 +4,10 @@
   <info>
     <link type="guide" xref="nautilus-prefs" group="nautilus-behavior"/>
 
-    <desc>Faça clique único para abrir arquivos, execute ou veja arquivos de texto executáveis e especifique o comportamento da lixeira.</desc>
+    <desc>Single-click to open files, run or view executable
+    text files, and specify trash behavior.</desc>
 
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -25,10 +25,6 @@
       <name>Sindhu S</name>
       <email>sindhus@live.in</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -38,59 +34,68 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Enrico Nicoletto</mal:name>
       <mal:email>liverig@gmail.com</mal:email>
       <mal:years>2013.</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>João Santana</mal:name>
-      <mal:email>joaosantana@outlook.com</mal:email>
-      <mal:years>2013.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Fontenelle</mal:name>
-      <mal:email>rafaelff@gnome.org</mal:email>
-      <mal:years>2012-2018.</mal:years>
-    </mal:credit>
   </info>
 
 <title>Preferências de comportamento do gerenciador de arquivos</title>
-<p>Você pode controlar se deve fazer clique único ou clique duplo em arquivos, como arquivos de texto executáveis são manipulados e o comportamento da lixeira. Clique em <gui>Arquivos</gui> na barra superior, clique em <gui>Preferências</gui> e selecione a aba <gui>Comportamento</gui>.</p>
+<p>You can control whether you single-click or double-click files, how
+executable text files are handled, and the trash behavior. Click
+<gui>Files</gui> in the top bar, pick <gui>Preferences</gui> and select the <gui>Behavior</gui> tab.</p>
 
 <section id="behavior">
 <title>Comportamento</title>
 <terms>
  <item>
-  <title><gui>Clique único para abrir itens</gui></title>
-  <title><gui>Clique duplo para abrir itens</gui></title>
-  <p>Por padrão, o clique seleciona arquivos e o clique duplo os abre. Você pode, em vez disso, escolher ter arquivos e pastas abertos ao clicar uma vez neles. Ao usar o modo clique único, você pode manter pressionada a tecla <key>Ctrl</key> enquanto clica para selecionar um ou mais arquivos.</p>
+  <title><gui>Single click to open items</gui></title>
+  <title><gui>Double click to open items</gui></title>
+  <p>By default, clicking selects files and double-clicking opens them.
+  You can instead choose to have files and folders open when you click on
+  them once. When you use single-click mode, you can hold down the
+  <key>Ctrl</key> key while clicking to select one or more files.</p>
  </item>
 </terms>
 
 </section>
 <section id="executable">
 <title>Arquivos de texto executáveis</title>
- <p>Um arquivo de texto executável contém um programa que você pode executar. As <link xref="nautilus-file-properties-permissions">permissões do arquivo</link> devem também permitir o arquivo ser executado como um programa. Os mais comuns são os scripts em <sys>Shell</sys>, <sys>Python</sys> e <sys>Perl</sys>. Eles têm as extensões <file>.sh</file>, <file>.py</file> e <file>.pl</file>, respectivamente.</p>
+ <p>An executable text file is a file that contains a program that you can run
+ (execute). The <link xref="nautilus-file-properties-permissions">file
+ permissions</link> must also allow for the file to run as a program. The most
+ common are <sys>Shell</sys>, <sys>Python</sys> and <sys>Perl</sys> scripts.
+ These have extensions <file>.sh</file>, <file>.py</file> and <file>.pl</file>,
+ respectively.</p>
  
- <p>Quando você abre um arquivo de texto executável, você pode escolher entre:</p>
+ <p>When you open an executable text file, you can select from:</p>
  
  <list>
   <item>
-    <p><gui>Executar arquivos de texto executáveis quando forem abertos</gui></p>
+    <p><gui>Run executable text files when they are opened</gui></p>
   </item>
   <item>
-    <p><gui>Ver arquivos de texto executáveis quando forem abertos</gui></p>
+    <p><gui>View executable text files when they are opened</gui></p>
   </item>
   <item>
     <p><gui>Perguntar a cada vez</gui></p>
   </item>
  </list>
 
- <p>Se <gui>Perguntar a cada vez</gui> estiver selecionado, uma janela vai aparecer perguntando se você deseja executar ou ver o arquivo texto selecionado.</p>
+ <p>If <gui>Ask each time</gui> is selected, a dialog will pop up asking if you
+ wish to run or view the selected text file.</p>
 
- <p>Arquivos de texto executáveis também são chamados de <em>scripts</em>. Todos os scripts na pasta <file>~/.local/share/nautilus/scripts</file> vão aparecer no menu de contexto por um arquivo sob o submenu <gui style="menuitem">Scripts</gui>. Quando um script é executado de uma pasta local, todos os arquivos selecionados serão colados como parâmetros. Para executar um script em um arquivo:</p>
+ <p>Executable text files are also called scripts. All scripts in
+ <file>~/.local/share/nautilus/scripts</file> folder will appear in the context
+ menu for a file under the <gui style="menuitem">Scripts</gui> submenu. When a
+ script is executed from a local folder, all selected files will be pasted to
+ the script as parameters. To execute a script on a file:</p>
 
 <steps>
   <item>
@@ -100,16 +105,17 @@
     <p>Selecione o dispositivo desejado.</p>
   </item>
   <item>
-    <p>Clique com o botão direito do mouse para abrir o menu de contexto e selecione o script desejado para executar a partir do menu <gui style="menuitem">Scripts</gui>.</p>
+    <p>Right click on the file to open the context menu and select the desired
+    script to execute from the <gui style="menuitem">Scripts</gui> menu.</p>
   </item>
 </steps>
 
  <note style="important">
-  <p>Não será passado nenhum parâmetro para um script quando este for executado de uma pasta remota, como, por exemplo, uma pasta mostrando conteúdo da web ou <sys>ftp</sys>.</p>
+  <p>A script will not be passed any parameters when executed from a remote
+  folder such as a folder showing web or <sys>ftp</sys> content.</p>
  </note>
 
 </section>
-
 <section id="trash">
 <info>
 <link type="seealso" xref="files-delete"/>
@@ -119,8 +125,16 @@
 
 <terms>
  <item>
-  <title><gui>Perguntar antes de esvaziar a lixeira</gui></title>
-  <p>Esta opção está selecionada por padrão. Ao esvaziar a lixeira, uma mensagem vai ser exibida confirmando que você deseja esvaziar a lixeira ou excluir arquivos.</p>
+  <title><gui>Ask before emptying the Trash or deleting files</gui></title>
+  <p>This option is selected by default.  When emptying the trash, a message will be displayed confirming that you would like to empty the trash or delete files.</p>
+ </item>
+ <item>
+  <title><gui>Include a Delete command that bypasses Trash</gui></title>
+  <p>Selecting this option will add a <gui>Delete</gui> item to the menu that
+  pops up when you right-click on an item in the <app>Files</app> application.</p>
+<note style="warning">
+<p>Deleting an item using the <gui>Delete</gui> menu option bypasses the Trash altogether.  The item is removed from the system completely.  There is no way to recover the deleted item.</p>
+</note>
  </item>
 </terms>
 </section>

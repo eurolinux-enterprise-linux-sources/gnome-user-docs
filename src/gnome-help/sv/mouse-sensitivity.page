@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="mouse-sensitivity" xml:lang="sv">
-
-  <info>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="mouse-sensitivity" xml:lang="sv">
+<info>
     <link type="guide" xref="mouse"/>
     <link type="guide" xref="a11y#mobility" group="pointing"/>
 
-    <revision pkgversion="3.8" date="2013-03-13" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-10-29" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
+
+    <desc>Change how quickly the pointer moves when you use
+    your mouse or touchpad.</desc>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -25,50 +25,44 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Ändra hur snabbt markören flyttar sig när du använder din mus eller styrplatta.</desc>
-  
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Sebastian Rasmussen</mal:name>
-      <mal:email>sebras@gmail.com</mal:email>
-      <mal:years>2014, 2015, 2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Anders Jonsson</mal:name>
-      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
-      <mal:years>2016, 2017</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Justera hastigheten för musen och styrplattan</title>
+<title>Adjust speed of the mouse and touchpad</title>
 
-  <p>Om din markör flyttar dig för snabbt eller långsamt när du flyttar din mus eller använder din styrplatta kan du justera markörhastigheten för dessa enheter.</p>
+<p>If your pointer moves too fast or slow when you move your mouse
+or use your touchpad, you can adjust the pointer speed for these devices.</p>
 
-  <steps>
-    <item>
-      <p>Öppna översiktsvyn <gui xref="shell-introduction#activities">Aktiviteter</gui> och börja skriv <gui>Mus &amp; styrplatta</gui>.</p>
-    </item>
-    <item>
-      <p>Klicka på <gui>Mus &amp; styrplatta</gui> för att öppna panelen.</p>
-    </item>
-    <item>
-      <p>Justera skjutreglaget <gui>Pekarhastighet</gui> tills markörrörelserna känns behagliga för dig. Du kommer att se ett skjutreglage per pekdon, så som en mus eller styrplatta.</p>
-    </item>
-  </steps>
+<steps>
+  <item><p>Click your name on the top bar and select <gui>Settings</gui>.</p></item>
+  <item><p>Open <gui>Mouse &amp; Touchpad</gui>.</p></item>
+  <item><p>Adjust the <gui>Pointer Speed</gui> slider until the pointer motion
+   is comfortable for you.</p></item>
+</steps>
 
-  <p>Du kan ställa in olika pekarhastighet för varje typ av enhet. Du kan till exempel ha en rullningshastighet för den bärbara datorns styrplatta och en annan för musen. Ibland är den mest behagliga inställningen för en typ av enhet inte den bästa för en annan.</p>
+<!--
+<p>Sensitivity is how much your pointer initially moves when you move your mouse.</p>
 
-  <note>
-    <p>Avsnittet <gui>Styrplatta</gui> visas bara om ditt system har en styrplatta, medan avsnittet <gui>Mus</gui> bara visas när en mus är inkopplad.</p>
-  </note>
+<p>The farther you move your mouse, the faster and faster the pointer moves
+relative to your movement. This helps you get the pointer across the screen
+without lifting your hand, while still letting you point and click accurately.
+Acceleration controls this behavior.</p>
+-->
 
+<note style="tip">
+  <p>You can set the pointer speed differently for your mouse
+  and touchpad. Sometimes the most comfortable settings for one type of
+  device aren't the most comfortable for another. Just set the sliders on
+  both the <gui>Mouse</gui> and <gui>Touchpad</gui> sections.</p>
+</note>
+<note>
+  <p>The <gui>Touchpad</gui> section only appears if your system has a
+  touchpad.</p>
+</note>
 </page>

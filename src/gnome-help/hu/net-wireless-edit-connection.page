@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="net-editcon" xml:lang="hu">
+  <info>
+    <link type="guide" xref="net-wireless" group="first"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <desc>Ismerje meg a vezeték nélküli kapcsolat szerkesztő-képernyőjének beállításait.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Griechisch Erika</mal:name>
+      <mal:email>griechisch.erika at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kucsebár Dávid</mal:name>
+      <mal:email>kucsdavid at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lakatos 'Whisperity' Richárd</mal:name>
+      <mal:email>whisperity at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Vezeték nélküli kapcsolat szerkesztése</title>
+
+<comment>
+ <p>This topic needs significant revision to be comprehensive. A number of settings remain undocumented.</p>
+</comment>
+
+<p>Ez a téma leírja a vezeték nélküli hálózati kapcsolat szerkesztéséhez elérhető beállításokat. Kapcsolat szerkesztéséhez válassza azt ki a <gui>Hálózat</gui> beállításaiban, majd nyomja meg a <gui>Beállítások</gui> gombot.</p>
+
+<note>
+ <p>A legtöbb hálózat megfelelően működik az alapbeállításokkal, emiatt nem kell azokat módosítania. Számos itt ismertetett beállítás célja a speciálisabb hálózatok jobb felügyelete.</p>
+</note>
+
+<section id="available">
+ <title>Elérhető minden felhasználónak / Automatikus csatlakozás</title>
+ <terms>
+  <item>
+   <title><gui>Automatikus csatlakozás</gui></title>
+   <p>Jelölje be ezt a négyzetet, hogy a számítógép mindig megpróbáljon csatlakozni a vezeték nélküli hálózathoz, amikor hatótávon belül van.</p>
+   <p>Ha több automatikus csatlakozásra állított hálózat is hatókörön belül van, akkor a számítógép a <gui>Hálózati kapcsolatok</gui> ablak <gui>Vezeték nélküli</gui> lapján elsőként megjelenő hálózathoz fog csatlakozni. Ha már csatlakozva van egy hálózathoz, akkor ez a kapcsolat nem fog megszakadni azért, hogy egy éppen elérhetővé vált másik hálózathoz csatlakozzon.</p>
+  </item>
+
+  <item>
+   <title><gui>Elérhető minden felhasználónak</gui></title>
+   <p>Jelölje be ezt a négyzetet, ha a számítógép minden felhasználója hozzáférhet ehhez a vezeték nélküli hálózathoz. Ha a hálózat <link xref="net-wireless-wepwpa">WEP/WPA jelszóval</link> védett, és bejelölte ezt a négyzetet, akkor csak egyszer kell megadnia a jelszót. A számítógép minden más felhasználója így anélkül lesz képes csatlakozni a hálózathoz, hogy a jelszót tudnák.</p>
+   <p>Ha ez be van jelölve, akkor a hálózat beállításainak módosításához <link xref="user-admin-explain">rendszergazdai jogokkal</link> kell rendelkeznie. A program bekérheti a rendszergazdai jelszót.</p>
+  </item>
+ </terms>
+</section>
+
+<section id="wireless">
+ <title>Vezeték nélküli</title>
+ <terms>
+  <item>
+   <title><gui>SSID</gui></title>
+   <p>Ez azon vezeték nélküli hálózat neve (angolul <em>Service Set Identifier</em>), amelyhez csatlakozik. Ne módosítsa, hacsak nem változtatta meg a vezeték nélküli hálózat nevét (például a vezeték nélküli router vagy bázisállomás beállításai alatt).</p>
+  </item>
+
+  <item>
+   <title><gui>Mód</gui></title>
+   <p>Itt adhatja meg, hogy <gui>Kiépített</gui> hálózathoz (ahol a számítógépek egy központi bázisállomáshoz vagy routerhez csatlakoznak) vagy <gui>Eseti</gui> hálózathoz (ahol nincs bázisállomás, és a hálózat számítógépei egymáshoz kapcsolódnak). A legtöbb hálózat kiépített típusú, néha hasznos lehet <link xref="net-adhoc">saját eseti hálózatot összeállítani</link>.</p>
+   <p>Ha az <gui>Eseti</gui> beállítást választja, akkor két másik beállítás is megjelenik: a <gui>Sáv</gui> és a <gui>Csatorna</gui>. Ezek megadják, hogy az eseti vezeték nélküli hálózat melyik vezeték nélküli frekvencián működik. Néhány számítógép csak bizonyos sávokon képes működni (például csak az <gui>A</gui> vagy csak a <gui>B/G</gui> sávon), emiatt azt a sávot válassza ki, amelyet az eseti hálózat minden leendő számítógépe képes használni. Forgalmas helyeken több vezeték nélküli hálózat is használhatja ugyanazt a csatornát, ez lelassíthatja a kapcsolatot, emiatt is szükség lehet a csatorna megváltoztatására.</p>
+  </item>
+
+  <item>
+   <title><gui>BSSID</gui></title>
+   <p>Ez a <em>Basic Service Set Identifier</em> rövidítése. Az SSID (lásd fent) a hálózat emberek által olvasható neve, a BSSID a számítógépek által értelmezett név, amely egy számokból és betűkből álló, egyedi karakterlánc. Ha egy <link xref="net-wireless-hidden">hálózat rejtett</link>, akkor nem rendelkezik SSID-vel, csak BSSID-vel.</p>
+  </item>
+
+  <item>
+   <title><gui>Eszköz MAC-címe</gui></title>
+   <p>A <link xref="net-macaddress">MAC-cím</link> egy hálózati hardvert (például vezeték nélküli kártyát, Ethernet hálózati kártyát vagy routert) azonosító kód. Minden eszköz, amelyhez a hálózaton csatlakozhat, rendelkezik egy egyedi, a gyárban kapott MAC-címmel.</p>
+   <p>Ezen beállítás segítségével megváltoztatható a hálózati kártya MAC-címe.</p>
+  </item>
+
+  <item>
+   <title><gui>Klónozott MAC-cím</gui></title>
+   <p>A hálózati hardver (vezeték nélküli kártya) képes másik MAC-címet használni. Ez akkor hasznos, ha egy csak adott MAC-címmel kommunikáló eszközzel (például egy széles sávú kábelmodemmel) vagy szolgáltatással rendelkezik.</p>
+  </item>
+
+  <item>
+   <title><gui>MTU</gui></title>
+   <p>Ez a beállítás megváltoztatja a <em>maximális átviteli egységet</em>, ami a hálózaton egyszerre átküldhető adatcsomag maximális mérete. A fájlok hálózaton való átküldésekor az adatok kis csomagokra lesznek felbontva. A hálózaton optimális MTU a (zajos kapcsolat miatti) csomagvesztés valószínűségétől és a kapcsolat sebességétől függ. Ezt a beállítást általában nem kell módosítani.</p>
+  </item>
+
+ </terms>
+</section>
+
+<section id="security">
+ <title>Vezeték nélküli biztonság</title>
+ <terms>
+  <item>
+   <title><gui>Biztonság</gui></title>
+   <p>Ez megadja a vezeték nélküli hálózat által használat <em>titkosítást</em>. A titkosított kapcsolatok segítenek megvédeni a vezeték nélküli kapcsolatot az eltérítéstől, így mások nem „hallgathatnak bele”, és nem láthatják például, hogy milyen weboldalakat keres fel.</p>
+   <p>Egyes titkosításfajták erősebbek másoknál, de régebbi vezeték nélküli berendezések esetleg nem támogatják. A kapcsolódáshoz általában be kell írnia egy jelszót, a kifinomultabb típusok megkövetelhetnek felhasználónevet és digitális tanúsítványt is. A népszerű vezeték nélküli titkosításfajtákkal kapcsolatos információkért lásd: <link xref="net-wireless-wepwpa"/>.</p>
+  </item>
+ </terms>
+</section>
+
+<section id="ipv4">
+ <title>IPv4 beállításai</title>
+
+<comment>
+<cite>shaunm</cite>
+<p>There's also Shared to other computers</p>
+<p>Then there's addresses and dns servers and ipv4 addressing routes.</p>
+<p>All current info correct, but incomplete</p>
+</comment>
+
+ <p>Ezen a lapon megadhatja például a számítógépének IP-címét, és hogy melyik DNS-kiszolgálókat használja. A <gui>Módszer</gui> lista különböző értékeinek kiválasztásával az információk megadásának különböző módjai közt válogathat.</p>
+ <p>A következő módszerek érhetők el:</p>
+ <terms>
+  <item>
+   <title><gui>Automatikus (DHCP)</gui></title>
+   <p>Az IP-címhez és a használandó DNS-kiszolgálóhoz hasonló információk lekérése egy <em>DHCP-kiszolgálótól</em>. A DHCP-kiszolgáló egy számítógép vagy más eszköz (például router) a hálózaton, amely eldönti, hogy a számítógépe milyen hálózati beállításokat kap - a hálózathoz való első kapcsolódáskor automatikusan a helyes beállításokat kapja. A legtöbb hálózat DHCP-t használ.</p>
+  </item>
+
+  <item>
+   <title><gui>Csak automatikus (DHCP) címek</gui></title>
+   <p>Ha ezt a beállítást választja, akkor a számítógép az IP-címét egy DHCP-kiszolgálótól kapja, de a többi beállítást (például a használandó DNS-kiszolgálót) saját kezűleg kell megadnia.</p>
+  </item>
+
+  <item>
+   <title><gui>Kézi</gui></title>
+   <p>Válassza ezt a lehetőséget, ha minden hálózati beállítást maga szeretne megadni, ideértve a számítógép által használandó IP-címet is.</p>
+  </item>
+
+  <item>
+   <title><gui>Csak közvetlen kapcsolat</gui></title>
+   <p>A <em>közvetlen kapcsolat</em> segítségével a hálózaton a számítógépeket DHCP-kiszolgáló használata vagy az IP-címek és más beállítások kézi megadása nélkül kapcsolhatja össze. Ha közvetlen kapcsolatot használó hálózathoz csatlakozik, akkor a számítógépek egymás közt meghatározzák a használandó IP-címeket és hasonlókat. Ez akkor hasznos, ha ideiglenesen szeretne összekapcsolni néhány számítógépet, hogy egymással kommunikálhassanak.</p>
+  </item>
+
+  <item>
+   <title><gui>Tiltva</gui></title>
+   <p>Ez a beállítás letiltja a hálózati kapcsolatot, és megakadályozza a csatlakozást. Ne feledje, hogy az <gui>IPv4</gui> és <gui>IPv6</gui> külön kapcsolatnak számítanak, még ha ugyanahhoz a hálózati kártyához tartoznak is. Ha az egyik engedélyezett, akkor állítsa a másikat mellőzöttre.</p>
+  </item>
+
+ </terms>
+</section>
+
+<section id="ipv6">
+ <title>IPv6 beállításai</title>
+<comment>
+<cite>shaunm</cite>
+<p>The list of methods is a bit different</p>
+</comment>
+ <p>Ez hasonló az <gui>IPv4</gui> laphoz, csupán az újabb IPv6 szabványt kezeli. A legkorszerűbb hálózatok IPv6-ot használnak, de az IPv4 sokkal népszerűbb.</p>
+</section>
+
+</page>

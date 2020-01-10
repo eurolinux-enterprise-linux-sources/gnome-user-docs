@@ -6,19 +6,17 @@
     <link type="seealso" xref="shell-keyboard-shortcuts"/>
 
     <revision pkgversion="3.7.5" version="0.2" date="2013-02-23" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.20" date="2016-08-13" status="candidate"/>
 
     <credit type="author">
-      <name>Майкл Хилл (Michael Hill)</name>
+      <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="editor">
-       <name>Юлита Инка (Julita Inca)</name>
+       <name>Julita Inca</name>
        <email>yrazes@gmail.com</email>
     </credit>
     <credit type="author copyright">
-      <name>Шон МакКенс (Shaun McCance)</name>
+      <name>Shaun McCance</name>
       <email>shaunm@gnome.org</email>
       <years>2012</years>
     </credit>
@@ -26,8 +24,6 @@
        <name>Екатерина Герасимова (Ekaterina Gerasimova)</name>
        <email>kittykat3756@gmail.com</email>
     </credit>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <desc>Работа с приложениями и рабочим столом без мыши.</desc>
   
@@ -40,29 +36,19 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Алексей Кабанов</mal:name>
       <mal:email>ak099@mail.ru</mal:email>
-      <mal:years>2011-2012</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Станислав Соловей</mal:name>
-      <mal:email>whats_up@tut.by</mal:email>
-      <mal:years>2013-2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Юлия Дронова</mal:name>
-      <mal:email>juliette.tux@gmail.com</mal:email>
-      <mal:years>2013-2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Юрий Мясоедов</mal:name>
-      <mal:email>ymyasoedov@yandex.ru</mal:email>
-      <mal:years>2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
 
   <title>Управление с помощью клавиатуры</title>
+
+  <comment>
+    <cite date="2012-03-14" href="mailto:shaunm@gnome.org">Shaun McCance</cite>
+    <p>Do <em>NOT</em> use <code>ui:expanded</code> on this page. I know it's
+    tempting, but the target audience for this page is people who cannot use
+    a mouse, and having to expand sections when you're just figuring out how
+    to drive things with the keyboard is a burden.</p>
+  </comment>
 
   <p>На этой странице приведены комбинации клавиш для людей, которые не могут использовать мышь или другое указательное устройство, или хотят как можно больше пользоваться клавиатурой. Комбинации клавиш, полезные для всех пользователей смотрите в разделе <link xref="shell-keyboard-shortcuts"/>.</p>
 
@@ -75,7 +61,7 @@
   <tr>
     <td><p><key>Tab</key> и <keyseq><key>Ctrl</key><key>Tab</key></keyseq></p></td>
     <td>
-      <p>Перемещение фокуса клавиатуры между различными элементами управления. <keyseq><key>Ctrl</key> <key>Tab</key></keyseq> перемещает между группами элементов, например, с боковой панели в основную область окна. <keyseq><key>Ctrl</key><key>Tab</key></keyseq> также позволяет выйти из элемента управления, который сам использует <key>Tab</key>, такого как текстовая область.</p>
+      <p>Перемещение фокуса клавиатуры между различными элементами управления. <keyseq><key>Ctrl</key> <key>Tab</key></keyseq> перемещает между группами элементов, например,с боковой панели в основную область окна. <keyseq><key>Ctrl</key><key>Tab</key></keyseq> также позволяет выйти из элемента управления, который сам использует <key>Tab</key>, такого как текстовая область.</p>
       <p>Удерживайте нажатой <key>Shift</key> для перемещения фокуса в обратном порядке.</p>
     </td>
   </tr>
@@ -83,6 +69,7 @@
     <td><p>Клавиши со стрелками</p></td>
     <td>
       <p>Перемещение выбора между частями одного элемента управления или группы взаимосвязанных элементов. Используйте клавиши со стрелками для выбора кнопки на панели инструментов, объектов при просмотре в режиме списка или значков, а также кнопки из группы радиокнопок.</p>
+      <p>При просмотре в виде дерева используйте клавиши со стрелками влево и вправо, чтобы свернуть или развернуть объекты с дочерними элементами.</p>
     </td>
   </tr>
   <tr>
@@ -92,10 +79,6 @@
   <tr>
     <td><p><keyseq><key>Shift</key>клавиши со стрелками</keyseq></p></td>
     <td><p>В режиме списка или значков — выделение группы объектов, начиная с текущего выделенного объекта, и заканчивая вновь выбранным объектом.</p></td>
-    <td><p>In a tree view, items that have children can be expanded or collapsed,
-    to show or hide their children: expand by pressing
-    <keyseq><key>Shift</key><key>→</key></keyseq>, and collapse by
-    pressing <keyseq><key>Shift</key><key>←</key></keyseq>.</p></td>
   </tr>
   <tr>
     <td><p><key>Пробел</key></p></td>
@@ -107,7 +90,7 @@
   </tr>
   <tr>
     <td><p><key>Alt</key></p></td>
-    <td><p>Удерживайте клавишу <key>Alt</key> для показа <em>горячих клавиш</em>: подчёркнутых букв в командах меню, на кнопках и других элементах управления. Нажмите <key>Alt</key> и подчёркнутую букву, чтобы активировать элемент управления, как если бы вы нажали на него мышью.</p></td>
+    <td><p>Удерживайте клавишу <key>Alt</key> для показа <em>горячих клавиш</em>: подчёркнутых букв в командах меню, на кнопках и других элементах управления. Нажмите <key>Alt</key> и подчёркнутую букву, чтобы активировать элемент управления, как если бы вы щёлкнули на нём мышью.</p></td>
   </tr>
   <tr>
     <td><p><key>Esc</key></p></td>
@@ -118,18 +101,20 @@
     <td><p>Открывает первое меню в строке меню окна. Используйте клавиши со стрелками для перемещения по меню.</p></td>
   </tr>
   <tr>
-    <td><p><keyseq><key xref="keyboard-key-super">Super</key> <key>F10</key></keyseq></p></td>
-    <td><p>Открывает меню приложения в верхней панели.</p></td>
+    <td><p><keyseq><key xref="keyboard-key-super">Super</key>
+    <key>F10</key></keyseq></p></td>
+    <td><p>Открывает меню приложения на верхней панели.</p></td>
   </tr>
   <tr>
-    <td><p><keyseq><key>Shift</key><key>F10</key></keyseq> или <key xref="keyboard-key-menu">Меню</key></p></td>
+    <td><p><keyseq><key>Shift</key><key>F10</key></keyseq> or
+    <key xref="keyboard-key-menu">Menu</key></p></td>
     <td>
-      <p>Всплывающее контекстное меню для выбранного объекта, как при нажатии правой кнопкой.</p>
+      <p>Всплывающее контекстное меню для выбранного объекта, как при щелчке правой кнопкой.</p>
     </td>
   </tr>
   <tr>
     <td><p><keyseq><key>Ctrl</key><key>F10</key></keyseq></p></td>
-    <td><p>В менеджере файлов всплывающее контекстное меню для текущей папки, как при нажатии правой кнопкой на пустом месте в папке.</p></td>
+    <td><p>В файловом менеджере всплывающее контекстное меню для текущей папки, как при щелчке правой кнопкой на пустом месте в папке.</p></td>
   </tr>
   <tr>
     <td><p><keyseq><key>Ctrl</key><key>PageUp</key></keyseq> и <keyseq><key>Ctrl</key><key>PageDown</key></keyseq></p></td>
@@ -154,7 +139,7 @@
   </tr>
   <tr>
     <td><p><keyseq><key>Super</key><key>M</key></keyseq></p></td>
-    <td><p><link xref="shell-notifications#messagetray">Открывает панель сообщений.</link> Нажмите <key>Esc</key>, чтобы закрыть панель.</p></td>
+    <td><p><link xref="shell-notifications#messagingtray">Открывает лоток сообщений.</link> Нажмите <key>Esc</key> для его закрытия.</p></td>
   </tr>
 </table>
 
@@ -165,8 +150,9 @@
     <td><p>Закрывает текущее окно.</p></td>
   </tr>
   <tr>
-    <td><p><keyseq><key>Alt</key><key>F5</key></keyseq> или <keyseq><key>Super</key><key>↓</key></keyseq></p></td>
-    <td><p>Восстановление исходных размеров окна. Используйте <keyseq><key>Alt</key> <key>F10</key></keyseq> для разворачивания окна. Повторное нажатие <keyseq><key>Alt</key><key>F10</key></keyseq> восстановит предыдущие размеры окна.</p></td>
+    <td><p><keyseq><key>Alt</key><key>F5</key></keyseq> or
+    <keyseq><key>Super</key><key>↓</key></keyseq></p></td>
+    <td><p>Восстановление развёрнутого окна в его исходный размер. Используйте <keyseq><key>Alt</key> <key>F10</key></keyseq> для разворачивания окна. С помощью <keyseq><key>Alt</key><key>F10</key></keyseq> можно как разворачивть, так и восстанавливать окна.</p></td>
   </tr>
   <tr>
     <td><p><keyseq><key>Alt</key><key>F7</key></keyseq></p></td>
@@ -177,28 +163,36 @@
     <td><p>Изменение размера текущего окна. Нажмите <keyseq><key>Alt</key><key>F8</key></keyseq>, затем используйте клавиши со стрелками для изменения размера окна. Нажмите <key>Enter</key>, чтобы завершить изменение размера, или <key>Esc</key>, чтобы вернуть окну исходный размер.</p></td>
   </tr>
   <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-updown"/>
-  <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-left"/>
-  <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-right"/>
   <tr>
-    <td><p><keyseq><key>Alt</key><key>F10</key></keyseq> или <keyseq><key>Super</key><key>↑</key></keyseq></p>
+    <td><p><keyseq><key>Alt</key><key>F10</key></keyseq> or
+    <keyseq><key>Super</key><key>↑</key></keyseq></p>
     </td>
-    <td><p><link xref="shell-windows-maximize">Разворачивание</link> окна. Чтобы восстановить размер окна до прежних размеров, нажмите <keyseq><key>Alt</key><key>F10</key></keyseq> или <keyseq><key>Super</key><key>↓</key></keyseq>.</p></td>
+    <td><p><link xref="shell-windows-maximize">Maximize</link> a window. Press
+    <keyseq><key>Alt</key><key>F10</key></keyseq> or
+    <keyseq><key>Super</key><key>↓</key></keyseq> to
+    restore a maximized window to its original size.</p></td>
   </tr>
   <tr>
     <td><p><keyseq><key>Super</key><key>H</key></keyseq></p></td>
-    <td><p>Свернуть окно</p></td>
+    <td><p>Minimize a window.</p></td>
   </tr>
   <tr>
     <td><p><keyseq><key>Super</key><key>←</key></keyseq></p></td>
-    <td><p>Разворачивание окна вертикально вдоль левого края экрана. Нажмите снова, чтобы восстановить предыдущий размер окна. Нажмите <keyseq><key>Super</key><key>→</key></keyseq> для смены краёв экрана.</p></td>
+    <td><p>Maximize a window vertically along the left side of the screen.
+    Press again to restore the window to its previous size. Press
+    <keyseq><key>Super</key><key>→</key></keyseq> to switch
+    sides.</p></td>
   </tr>
   <tr>
     <td><p><keyseq><key>Super</key><key>→</key></keyseq></p></td>
-    <td><p>Разворачивание окна вертикально вдоль правого края экрана. Нажмите снова, чтобы восстановить предыдущий размер окна. Нажмите <keyseq><key>Super</key><key>←</key></keyseq> для смены краёв экрана.</p></td>
+    <td><p>Maximize a window vertically along the right side of the screen.
+    Press again to restore the window to its previous size. Press
+    <keyseq><key>Super</key><key>←</key></keyseq> to
+    switch sides.</p></td>
   </tr>
   <tr>
     <td><p><keyseq><key>Alt</key><key>пробел</key></keyseq></p></td>
-    <td><p>Открывает меню окна, как при нажатии правой кнопкой по заголовку окна.</p></td>
+    <td><p>Открывает меню окна, как при щелчке правой кнопкой по заголовку окна.</p></td>
   </tr>
 </table>
 

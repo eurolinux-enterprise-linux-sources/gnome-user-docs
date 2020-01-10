@@ -18,7 +18,6 @@
     </credit>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
-    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
 
     <desc>Pode probar o seu disco duro para buscar problemas e asegurarse de que está san.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -26,7 +25,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2018</mal:years>
+      <mal:years>2011, 2012.</mal:years>
     </mal:credit>
   </info>
 
@@ -39,20 +38,20 @@
   <p>Aínda que SMART execútase automaticamente, tamén pode comprobar a saúde do seu disco executando o aplicativo <app>Utilidade de discos</app>:</p>
 
 <steps>
- <title>Comprobe a saúde do seu disco usando o aplicativo Discos</title>
+ <title>Comprobe a saúde do seu disco usando o aplicativo «Discos»</title>
 
-  <item>
-    <p>Abra <app>Discos</app> desde a vista de <gui>Actividades</gui>.</p>
-  </item>
-  <item>
-    <p>Seleccione o disco duro que quere probar desde a lista de dispositivos de almacenamento. Mostrarase a información e estado dos discos.</p>
-  </item>
-  <item>
-    <p>Prema no botón de menú e seleccoine <gui>Datos SMART e Autoproba…</gui>. A <gui>Valoración completatotal</gui> debería decir «O disco está ben».</p>
-  </item>
-  <item>
-    <p>Vexa máis información baixo os <gui>Atributos de SMART</gui>, ou prema o botón <gui style="button">Comezar autoproba</gui> para executar unha autoproba.</p>
-  </item>
+ <item>
+  <p>Abra o aplicativo <app>Discos</app> desde a vista xeral de <gui>Actividades</gui>.</p>
+ </item>
+ <item>
+  <p>Seleccione o seu disco duro na lista <gui>Dispositivos de almacenamento</gui>. A información sobre o disco e o seu estado aparecerá debaixo de <gui>Unidade</gui>.</p>
+ </item>
+ <item>
+  <p><gui>Estado SMART</gui> debería dicir «O disco está san».</p>
+ </item>
+ <item>
+  <p>Prema o botón <gui>Datos SMART</gui> para ver máis inforamción, ou execute unha autocomprobación.</p>
+ </item>
 
 </steps>
 
@@ -62,7 +61,7 @@
 
  <title>Que pasa se o disco non está san?</title>
 
-  <p>Incluso aínda que a <gui>Valoración completa</gui> indique que o disco <em>non está</em> san, non ten por que ser motivo de alarma. Porén, é mellor estar preparado con unha <link xref="backup-why">copia de respaldo</link> para previr a perda de datos.</p>
+  <p>Incluso aínda que o <gui>Estado SMART</gui> indique que o disco <em>non está</em> san, non ten por que ser motivo de alarma. Porén, é mellor estar preparado con unha <link xref="backup-why">copia de respaldo</link> para previr a perda de datos.</p>
 
   <p>Se o estado dí «Pre-fail», o disco está razoabelmente san pero detectáronse signos de desgaste, o que significa que podería fallar nun futuro cercano. Se o seu disco duro (ou computador) ten uns cantos anos de antigüidade, é probábel que vexa esta mensaxe nalgunhas das comprobacións de saúde. Debería <link xref="backup-how">facer unha copia de respaldo dos seus ficheiros importantes con regularidade</link> e comprobar periodicamente o estado do disco para ver se empeora.</p>
 

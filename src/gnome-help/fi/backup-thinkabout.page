@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="backup-thinkabout" xml:lang="fi">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="tip" id="backup-thinkabout" xml:lang="fi">
 
   <info>
     <link type="guide" xref="files#backup"/>
+    <desc>Kansioluettelo, josta löydät asiakirjoja, tiedostoja ja asetuksia jotka haluat mahdollisesti varmuuskopioida.</desc>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -21,19 +21,11 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Kansioluettelo, josta löydät asiakirjoja, tiedostoja ja asetuksia jotka haluat mahdollisesti varmuuskopioida.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Timo Jyrinki</mal:name>
       <mal:email>timo.jyrinki@iki.fi</mal:email>
       <mal:years>2012.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Jiri Grönroos</mal:name>
-      <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
-      <mal:years>2012-2018.</mal:years>
     </mal:credit>
   </info>
 
@@ -44,24 +36,24 @@
 <list>
  <item>
   <p>Henkilökohtaiset tiedostot (asiakirjat, musiikki, valokuvat ja videot)</p>
-  <p its:locNote="translators: xdg dirs are localised by package xdg-user-dirs and need to be translated.  You can find the correct translations for your language here: http://translationproject.org/domain/xdg-user-dirs.html">Näitä säilytetään yleensä kotikansiossasi (/home/nimesi). Ne voivat olla myös kotikansion alikansioissa, kuten Työpöytä, Tiedostot, Kuvat, Musiikki ja Videot.</p>
-  <p>Jos varmuuskopion tallennuskohteessa on tarpeeksi tilaa (jos se on esimerkiksi ulkoinen kiintolevy), harkitse koko kotikansion varmuuskopioimista. Kotikansion koon saat selville <app>Levynkäytön analysointi</app> -sovelluksella.</p>
+  <p xmlns:its="http://www.w3.org/2005/11/its" its:locNote="translators: xdg dirs are localised by package xdg-user-dirs and need to be translated.  You can find the correct translations for your language here: http://translationproject.org/domain/xdg-user-dirs.html">Näitä säilytetään yleensä kotikansiossasi (/home/nimesi). Ne voivat olla myös kotikansion alikansioissa, kuten Työpöytä, Tiedostot, Kuvat, Musiikki ja Videot.</p>
+  <p>Jos varmuuskopion tallennuskohteessa on tarpeeksi tilaa (jos se on esimerkiksi ulkoinen kiintolevy), koko kotikansion kopioimista kannattaa harkita. Kotikansion koon saat selville <app>Levynkäytön analysointi</app>-ohjelmalla.</p>
  </item>
 
  <item>
   <p>Piilotetut tiedostot</p>
-  <p>Kaikki pisteellä alkavat tiedostot ja kansiot ovat oletuksena piilotiedostoja ja -kansioita. Piilotiedostojen selaaminen onnistuu napsauttamalla <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">Näkymävalinnat</span></media></gui> ja valitsemalla <gui>Näytä piilotiedostot</gui>, tai painamalla näppäimistöstä <keyseq><key>Ctrl</key><key>H</key></keyseq>. Voit varmuuskopioida piilotiedostot aivan kuten tavalliset tiedostot.</p>
+  <p>Kaikki pisteellä alkavat tiedostot ja kansiot ovat oletuksena piilotiedostoja ja -kansioita. Piilotiedostojen selaaminen onnistuu valitsemalla <guiseq><gui>Näytä</gui><gui>Näytä piilotiedostot</gui></guiseq> tai käyttämällä <keyseq><key>Ctrl</key><key>H</key></keyseq> -näppäinyhdistelmää.</p>
  </item>
 
  <item>
   <p>Henkilökohtaiset asetukset (työpöytäasetukset, teemat ja sovellusten asetukset)</p>
   <p>Useimmat sovellukset tallentavat asetuksensa kotikansiossasi oleviin piilokansioihin. Lue lisää piilotiedostoista ylempää.</p>
-  <p>Suurin osa sovellusten asetuksista tallennetaan kotikansiossasi oleviin piilokansioihin <file>.config</file> ja <file>.local</file>.</p>
+  <p>Suurin osa sovellusten asetuksista tallennetaan kotikansiossa oleviin piilokansioihin <file>.config</file>, <file>.gconf</file>, <file>.gnome2</file> ja <file>.local</file>.</p>
  </item>
 
  <item>
   <p>Järjestelmänlaajuiset asetukset</p>
-  <p>Järjestelmän keskeisimpien osien asetuksia ei säilytetä kotikansiossasi. Järjestelmäasetuksia voidaan säilyttää useassa eri hakemistossa, mutta suurin osa löytyy <file>/etc</file>-hakemiston alta. Kotikäytössä olevan koneen järjestelmäasetuksia ei yleensä tarvitse varmuuskopioida. Jos kuitenkin ylläpidät palvelinta, sillä pyörivien palvelujen tiedostot kannattaa varmuuskopioida.</p>
+  <p>Järjestelmän tärkeiden osien asetuksia ei säilytetä kotikansiossasi. Järjestelmäasetuksia voidaan säilyttää useassa eri hakemistossa mutta suurin osa löytyy <file>/etc</file>-hakemiston alta. Kotikäytössä olevan koneen järjestelmäasetuksia ei yleensä tarvitse varmuuskopioida. Jos kuitenkin ylläpidät palvelinta, sillä pyörivien palvelujen tiedostot kannattaa pitää tallessa.</p>
  </item>
 </list>
 

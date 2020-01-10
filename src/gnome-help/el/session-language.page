@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="session-language" xml:lang="el">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="session-language" xml:lang="el">
 
   <info>
     <link type="guide" xref="prefs-language"/>
+    <desc>Αλλάξτε σε διαφορετική γλώσσα για την διεπαφή χρήστη και το κείμενο βοήθειας.</desc>
 
     <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
 
     <credit type="author">
       <name>Έργο Τεκμηρίωσης GNOME</name>
@@ -25,83 +25,63 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Αλλάξτε σε διαφορετική γλώσσα για την διεπαφή χρήστη και το κείμενο βοήθειας.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
-      <mal:email>team@gnome.gr</mal:email>
-      <mal:years>2009-2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
       <mal:email>dmtrs32@gmail.com</mal:email>
-      <mal:years>2012-2015</mal:years>
+      <mal:years>2012, 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:name> Φώτης Τσάμης</mal:name>
       <mal:email>ftsamis@gmail.com</mal:email>
       <mal:years>2009</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:name> Μάριος Ζηντίλης</mal:name>
       <mal:email>m.zindilis@dmajor.org</mal:email>
       <mal:years>2009, 2010</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Θάνος Τρυφωνίδης</mal:name>
-      <mal:email>tomtryf@gnome.org</mal:email>
-      <mal:years>2012-2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Μαρία Μαυρίδου</mal:name>
-      <mal:email>mavridou@gmail.com</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:name> Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
     </mal:credit>
   </info>
 
   <title>Αλλάξτε τη γλώσσα που χρησιμοποιείτε</title>
 
+  <comment>
+    <cite date="2012-02-19">shaunm</cite>
+    <p>Explain how to install support for other languages. Requires us
+    to document software installation.</p>
+  </comment>
+
   <p>Μπορείτε να χρησιμοποιήσετε την επιφάνεια εργασίας σας και τις εφαρμογές σε πολλές γλώσσες, με την προϋπόθεση ότι έχετε τα κατάλληλα πακέτα της γλώσσας εγκατεστημένα στον υπολογιστή σας.</p>
 
   <steps>
-    <item>
-      <p>Ανοίξτε την επισκόπηση <gui xref="shell-introduction#activities">Δραστηριότητες</gui> και αρχίστε να πληκτρολογείτε <gui>Περιοχή &amp; γλώσσα</gui>.</p>
-    </item>
-    <item>
-      <p>Κάντε κλικ στο <gui>Περιοχή &amp; γλώσσα</gui> για να ανοίξετε τον πίνακα.</p>
-    </item>
-    <item>
-      <p>Κάντε κλικ στη <gui>Γλώσσα</gui>.</p>
-    </item>
-    <item>
-      <p>Επιλέξτε την επιθυμητή περιοχή και γλώσσα. Αν η περιοχή και η γλώσσα σας δεν είναι καταχωρισμένες, πατήστε <gui><media its:translate="no" type="image" mime="image/svg" src="figures/view-more-symbolic.svg"><span its:translate="yes">…</span></media></gui> στο κάτω μέρος της λίστας για να επιλέξετε από όλες τις διαθέσιμες περιοχές και γλώσσες.</p>
-    </item>
-    <item>
-      <p>Κάντε κλικ στο <gui style="button">Ολοκλήρωση</gui> για αποθήκευση.</p>
-    </item>
-    <item>
-      <p>Respond to the prompt, <gui>Your session needs to be restarted for
-      changes to take effect</gui> by clicking
-      <gui style="button">Restart Now</gui>, or click
-      <gui style="button">×</gui> to restart later.</p>
-    </item>
+    <item><p>Πατήστε το όνομά σας στην πάνω γραμμή και επιλέξτε <gui>Ρυθμίσεις</gui>.</p></item>
+    <item><p>Ανοίξτε <gui>περιοχή &amp; γλώσσα</gui> και επιλέξτε την καρτέλα <gui>γλώσσα</gui>.</p></item>
+    <item><p>Επιλέξτε την επιθυμητή γλώσσα. Η αρχική λίστα εμφανίζει μόνο ένα μικρό υποσύνολο των υποστηριζόμενων γλωσσών. Εάν η γλώσσα σας δεν είναι καταχωρισμένη, πατήστε <media type="image" mime="image/svg" src="figures/view-more-symbolic.svg"/>. Μερικές μεταφράσεις ενδέχεται να είναι ατελείς και συγκεκριμένες εφαρμογές μπορεί να μην υποστηρίζουν τη γλώσσα σας καθόλου. Κάθε αμετάφραστο κείμενο θα εμφανιστεί στη γλώσσα στην οποία το λογισμικό αναπτύχθηκε αρχικά, συνήθως τα αμερικάνικα αγγλικά.</p></item>
+    <item><p>Απαντήστε στην προτροπή, <gui>Η συνεδρία σας χρειάζεται να ξαναρχίσει για γίνουν αυτές οι αλλαγές</gui> πατώντας <gui style="button">Επανεκκίνηση τώρα</gui>, η πατήστε <gui style="button">Χ</gui> για επανεκκίνηση αργότερα.</p></item>
   </steps>
-
-  <p>Μερικές μεταφράσεις ενδέχεται να είναι ατελείς και συγκεκριμένες εφαρμογές μπορεί να μην υποστηρίζουν τη γλώσσα σας καθόλου. Κάθε αμετάφραστο κείμενο θα εμφανιστεί στη γλώσσα στην οποία το λογισμικό αναπτύχθηκε αρχικά, συνήθως τα αμερικάνικα αγγλικά.</p>
 
   <p>Υπάρχουν μερικοί ειδικοί φάκελοι στον προσωπικό σας φάκελο όπου οι εφαρμογές μπορούν να αποθηκεύσουν πράγματα όπως μουσική, εικόνες και έγγραφα. Αυτοί οι φάκελοι χρησιμοποιούν τυπικά ονόματα σύμφωνα με τη γλώσσα σας. Όταν επανασυνδεθείτε, θα ερωτηθείτε εάν θέλετε να μετονομάσετε αυτούς τους φακέλους στα τυπικά ονόματα για την επιλεγμένη γλώσσα σας. Εάν σκοπεύετε να χρησιμοποιήσετε την νέα γλώσσα συνέχεια, θα πρέπει να ενημερώσετε τα ονόματα των φακέλων.</p>
 
-  <note style="tip">
-    <p>If there are multiple user accounts on your system, there is a separate
-    instance of the <gui>Region &amp; Language</gui> panel for the login screen.
-    Click the <gui>Login Screen</gui> button at the top right to toggle between
-    the two instances.</p>
-  </note>
+  <section id="system">
+    <title>Αλλάξτε τη γλώσσα του συστήματος</title>
+
+    <p>Όταν αλλάζετε τη γλώσσα σας, την αλλάζετε μόνο για λογαριασμό σας, αφού συνδεθείτε. Μπορείτε επίσης να αλλάξετε τη <em>γλώσσα του συστήματος</em>, τη γλώσσα που χρησιμοποιείται σε θέσεις όπως η οθόνη σύνδεσης.</p>
+
+    <steps>
+      <item><p>Πατήστε το όνομά σας στην πάνω γραμμή και επιλέξτε <gui>Ρυθμίσεις</gui>.</p></item>
+      <item><p>Ανοίξτε <gui>περιοχή &amp; γλώσσα</gui> και επιλέξτε την καρτέλα <gui>γλώσσα</gui>.</p></item>
+      <item><p>Επιλέξτε το κουμπί <gui style="button">Κλείδωμα οθόνης</gui>.</p></item>
+      <item><p><link xref="user-admin-explain">προνόμια διαχειριστή</link> απαιτούνται. Εισάγετε τον κωδικό σας, ή τον κωδικό για τον αιτούμενο λογαριασμό διαχειριστή.</p></item>
+      <item><p>Επιλέξτε την επιθυμητή γλώσσα. Η αρχική λίστα εμφανίζει μόνο ένα μικρό υποσύνολο των υποστηριζόμενων γλωσσών. Εάν η γλώσσα σας δεν είναι καταχωρισμένη, πατήστε <media type="image" mime="image/svg" src="figures/view-more-symbolic.svg"/>. Μερικές μεταφράσεις ενδέχεται να είναι ατελείς και συγκεκριμένες εφαρμογές μπορεί να μην υποστηρίζουν τη γλώσσα σας καθόλου. Κάθε αμετάφραστο κείμενο θα εμφανιστεί στη γλώσσα στην οποία το λογισμικό αναπτύχθηκε αρχικά, συνήθως τα αμερικάνικα αγγλικά.</p></item>
+    </steps>
+  </section>
 
 </page>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="session-language" xml:lang="sl">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="session-language" xml:lang="sl">
 
   <info>
     <link type="guide" xref="prefs-language"/>
+    <desc>Preklopite na drug jezik za uporabniški vmesnik in besedilo pomoči.</desc>
 
     <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
 
     <credit type="author">
       <name>Dokumentacijski projekt GNOME</name>
@@ -25,55 +25,56 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Preklopite na drug jezik za uporabniški vmesnik in besedilo pomoči.</desc>
   </info>
 
   <title>Izbira jezika, ki ga uporabljate</title>
 
+  <comment>
+    <cite date="2012-02-19">shaunm</cite>
+    <p>Explain how to install support for other languages. Requires us
+    to document software installation.</p>
+  </comment>
+
   <p>Svoje namizje in programe lahko uporabite v številnih jezikih, če imate na svojem računalniku nameščene ustrezne jezikovne pakete.</p>
 
   <steps>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Region &amp; Language</gui>.</p>
-    </item>
-    <item>
-      <p>Click on <gui>Region &amp; Language</gui> to open the panel.</p>
-    </item>
-    <item>
-      <p>Click <gui>Language</gui>.</p>
-    </item>
-    <item>
-      <p>Select your desired region and language. If your region and language
-      are not listed, click
-      <gui><media its:translate="no" type="image" mime="image/svg" src="figures/view-more-symbolic.svg"><span its:translate="yes">…</span></media></gui>
-      at the bottom of the list to select from all available regions and
-      languages.</p>
-    </item>
-    <item>
-      <p>Click <gui style="button">Done</gui> to save.</p>
-    </item>
-    <item>
-      <p>Respond to the prompt, <gui>Your session needs to be restarted for
-      changes to take effect</gui> by clicking
-      <gui style="button">Restart Now</gui>, or click
-      <gui style="button">×</gui> to restart later.</p>
-    </item>
+    <item><p>Kliknite na svoje ime v vrhnji vrstici in izberite <gui>Nastavitve</gui>.</p></item>
+    <item><p>Odprite <gui>Regija in Jezik</gui> in izberite zavihek <gui>Jezik</gui>.</p></item>
+    <item><p>Select your desired language.
+    The initial list only shows a small subset of the supported languages.
+    If your language is not listed, click
+    <media type="image" mime="image/svg" src="figures/view-more-symbolic.svg"/>.
+    Some translations may be incomplete, and certain applications may not
+    support your language at all. Any untranslated text will appear in the
+    language in which the software was originally developed, usually American
+    English.</p></item>
+    <item><p>Respond to the prompt, <gui>Your session needs to be restarted for
+    these changes to take effect</gui> by clicking
+    <gui style="button">Restart Now</gui>, or click <gui style="button">X</gui>
+    to restart later.</p></item>
   </steps>
-
-  <p>Some translations may be incomplete, and certain applications may not
-  support your language at all. Any untranslated text will appear in the
-  language in which the software was originally developed, usually American
-  English.</p>
 
   <p>V vaši domači mapi so posebne mape v katere programi shranjujejo glasbo, dokumente in slike. Te mape uporabljajo standardna imena glede na vaš jezik. Ko se ponovno prijavite, boste vprašani, če želite te mape preimenovati v standardna imena za svoj izbrani jezik. V primeru da nov jezik nameravate vedno uporabljati, je imena map pametno posodobiti.</p>
 
-  <note style="tip">
-    <p>If there are multiple user accounts on your system, there is a separate
-    instance of the <gui>Region &amp; Language</gui> panel for the login screen.
-    Click the <gui>Login Screen</gui> button at the top right to toggle between
-    the two instances.</p>
-  </note>
+  <section id="system">
+    <title>Sprememba sistemskega jezika</title>
+
+    <p>Ko svoj jezik spremenite, ga lahko spremenite za svoj račun potem ko se prijavite. Spremenite lahko tudi <em>sistemski jezik</em>, ki se uporablja na mestih kot je prijavni zaslon.</p>
+
+    <steps>
+      <item><p>Kliknite na svoje ime v vrhnji vrstici in izberite <gui>Nastavitve</gui>.</p></item>
+      <item><p>Odprite <gui>Regija in Jezik</gui> in izberite zavihek <gui>Jezik</gui>.</p></item>
+      <item><p>Select the <gui style="button">Login Screen</gui> button.</p></item>
+      <item><p>Zahtevana so <link xref="user-admin-explain">skrbniška dovoljenja</link>. Vnesite svoje geslo ali geslo za zahteveni skrbniški račun.</p></item>
+      <item><p>Select your desired language.
+      The initial list only shows a small subset of the supported languages.
+      If your language is not listed, click
+      <media type="image" mime="image/svg" src="figures/view-more-symbolic.svg"/>.
+      Some translations may be incomplete, and certain applications may not
+      support your language at all. Any untranslated text will appear in the
+      language in which the software was originally developed, usually American
+      English.</p></item>
+    </steps>
+  </section>
 
 </page>

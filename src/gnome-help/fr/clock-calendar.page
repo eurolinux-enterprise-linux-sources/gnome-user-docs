@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="clock-calendar" xml:lang="fr">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" id="clock-calendar" xml:lang="fr">
 
   <info>
     <link type="guide" xref="clock"/>
     <link type="guide" xref="shell-overview#desktop"/>
 
+    <desc>Afficher ses rendez-vous sur le calendrier, en haut de l'écran.</desc>
+
     <revision pkgversion="3.8.0" date="2013-03-09" status="outdated"/>
-    <revision pkgversion="3.10" date="2013-11-04" status="review"/>
-    <revision pkgversion="3.16" date="2015-03-02" status="outdated"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
 
     <credit type="author">
       <name>Le projet de documentation GNOME</name>
@@ -18,15 +17,8 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Display your appointments in the calendar area at the top of the
-    screen.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Luc Pionchon</mal:name>
@@ -43,13 +35,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Julien Hardelin</mal:name>
       <mal:email>jhardlin@orange.fr</mal:email>
-      <mal:years>2011, 2013</mal:years>
+      <mal:years>2011</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -75,52 +67,55 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Alexandre Franke</mal:name>
-      <mal:email>alexandre.franke@gmail.com</mal:email>
-      <mal:years>2015</mal:years>
-    </mal:credit>
   </info>
 
- <title>Rendez-vous dans l'agenda</title>
+ <title>Rendez-vous du calendrier</title>
 
-  <note>
-    <p>Cela nécessite le recours à l'agenda d'<gui>Evolution</gui>, à moins que vous ne possédiez un compte en ligne paramétré pour gérer un <gui>Agenda</gui>.</p>
-    <p>Most distributions come with <app>Evolution</app> installed by default.
-    If yours does not, you may need to install it using your distribution’s
-    package manager.</p>
+ <note>
+  <p>Vous devez d'abord installer <app>Évolution</app> sur votre système.</p>
+  <p>La plupart des distributions sont livrées avec <app>Évolution</app> installée par défaut. Si ce n'est pas le cas, installez-le avec le gestionnaire de paquets de votre distribution.</p>
  </note>
 
   <p>Pour consulter vos rendez-vous :</p>
   <steps>
-    <item>
-      <p>Cliquez sur l'horloge située dans la barre supérieure,</p>
-    </item>
-    <item>
-      <p>Dans le calendrier, cliquez sur la date pour laquelle vous voulez connaître les rendez-vous.</p>
-
-    <note>
-       <p>A dot is shown under each date that has an appointment.</p>
-    </note>
-
-      <p>Existing appointments will be displayed to the left of the calendar.
-      As appointments are added to your <app>Evolution</app> calendar, they
-      will appear in the clock’s appointment list.</p>
-    </item>
+   <item>
+    <p>Cliquez sur l'horloge située dans la barre supérieure.</p>
+   </item>
+   <item>
+    <p>Dans le <gui>Calendrier</gui>, sélectionnez la date qui concerne vos rendez-vous.</p>
+   </item>
+   <item>
+    <p>Si des rendez-vous sont enregistrés, ils s'affichent à droite. Chaque fois que vous ajoutez des rendez-vous dans <gui>Évolution</gui>, ils apparaissent aussi dans la liste des rendez-vous de l'horloge.</p>
+   </item>
   </steps>
 
  <if:choose>
  <if:when test="!platform:gnome-classic">
- <media type="image" src="figures/shell-appts.png" width="500">
-  <p>Horloge, agenda et rendez-vous</p>
+ <media type="image" src="figures/shell-appts.png" width="500" height="396">
+  <p>Horloge, calendrier et rendez-vous</p>
  </media>
  </if:when>
  <if:when test="platform:gnome-classic">
  <media type="image" src="figures/shell-appts-classic.png" width="373" height="250">
-  <p>Horloge, agenda et rendez-vous</p>
+  <p>Horloge, calendrier et rendez-vous</p>
  </media>
  </if:when>
  </if:choose>
+
+  <p>Pour accéder rapidement au calendrier d'<gui>Évolution</gui>, cliquez sur l'horloge puis sur <gui>Ouvrir le calendrier</gui>.</p>
+
+ <note>
+  <p>Cette option ne fonctionne que si vous avez déjà paramétré un compte <gui>Évolution</gui> sinon, une fenêtre affiche les différentes étapes à valider pour configurer votre premier compte.</p>
+ </note>
+
+ <comment>
+    <cite date="2012-02-19" href="mailto:nruz@alumnos.inf.utfsm.cl">Natalia Ruz</cite>
+    <p>Should have some information or link to "how to add a mail account to
+    Evolution", and possibly an image (but maybe a screenshot is too big).</p>
+</comment>
+<comment>
+    <cite date="2012-02-19" href="mailto:mdhillca@gmail.com">mdhill</cite>
+    <p>Link to app-evolution-setup.page.stub.</p>
+</comment>
 
 </page>

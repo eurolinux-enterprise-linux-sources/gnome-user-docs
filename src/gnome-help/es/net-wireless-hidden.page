@@ -1,33 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-hidden" xml:lang="es">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="net-wireless-hidden" xml:lang="es">
   <info>
     <link type="guide" xref="net-wireless"/>
+    <link type="seealso" xref="net-editcon#wireless"/>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
-    <revision pkgversion="3.10" date="2013-12-05" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Proyecto de documentación de GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
-    <desc>Conectarse a una red inalámbrica que no aparece en la lista de redes.</desc>
+    <desc>Abra <gui>Configuración de la red</gui> y conéctese a <gui>Otra</gui> red inalámbrica.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2011 - 2018</mal:years>
+      <mal:years>2011 - 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -51,36 +41,26 @@
 
 <title>Conectar a una red inalámbrica oculta</title>
 
-<p>Es posible configurar una red inalámbrica para que esté «oculta». Las redes ocultas no se muestran en la lista de redes que se muestran al pulsar en la configuración de la <gui>Red</gui> (o la lista de redes inalámbricas en cualquier otro equipo). Para conectarse a una red inalámbrica oculta:</p>
+<p>Es posible configurar una red inalámbrica para que esté «oculta». Las redes ocultas no se muestran en la lista de redes que se muestran al pulsar en el icono de red en la barra superior (o la lista de redes inalámbricas en cualquier otro equipo). Para conectarse a una red inalámbrica oculta:</p>
 
 <steps>
-  <item>
-    <p>Abra el <gui xref="shell-introduction#yourname">menú del sistema</gui> en la parte derecha de la barra superior.</p>
-  </item>
-  <item>
-    <p>Seleccione <gui><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-excellent-symbolic.svg" width="16" height="16"/> Inalámbrica no conectada</gui>. La sección Inalámbrica del menú se expandirá.</p>
-  </item>
-  <item>
-    <p>Pulse en <gui>Configuración inalámbrica</gui>.</p>
-  </item>
-  <item><p>Pulse el botón <gui>Conectar a una red oculta...</gui>.</p></item>
  <item>
-  <p>En la ventana que aparece, seleccione una red oculta a la que se hubiese conectado anteriormente usando la lista desplegable <gui>Conexión</gui>, o <gui>Nueva</gui> para crear una nueva.</p>
+  <p>Pulse el icono de red en la barra superior y seleccione <gui>Configuración de la red</gui>.</p>
  </item>
  <item>
-  <p>Para una conexión nueva, escriba el nombre de la red, elija el tipo de seguridad inalámbrica en la lista desplegable <gui>Seguridad inalámbrica</gui>.</p>
+  <p>Seleccione <gui>Inalámbrica</gui> de la lista a la derecha.</p>
  </item>
  <item>
-  <p>Introduzca la contraseña u otros detalles de seguridad.</p>
+  <p>Seleccione <gui>Otra</gui> en la lista desplegable <gui>Nombre de red</gui>.</p>
  </item>
  <item>
-  <p>Pulse <gui>Conectar</gui>.</p>
+  <p>En la ventana que aparece, escriba el nombre de la red, elija el tipo de seguridad inalámbrica y pulse <gui>Conectar</gui>.</p>
  </item>
 </steps>
 
-  <p>Puede tener que comprobar la configuración del punto de acceso inalámbrico/enrutador para ver el nombre de la red. Si no tiene el nombre de la red (SSID) puede usar el <em>BSSID</em> (Identificador básico de conjunto de servicio «Basic Service Set Identifier», la dirección MAC del punto de acceso), y buscar algo parecido a esto: <gui>02:00:01:02:03:04</gui>. Suele estar debajo del punto de acceso.</p>
+<p>Puede tener que comprobar la configuración de la estación base inalámbrica/enrutador para ver el nombre de la red. Normalmente se llama <em>BSSID</em> (Identificador básico de conjunto de servicio «Basic Service Set Identifier»), y buscar algo parecido a esto: <gui>02:00:01:02:03:04</gui>.</p>
 
-  <p>También deberá comprobar la configuración de seguridad del punto de acceso inalámbrico; busque términos del tipo WEP o WPA.</p>
+<p>También deberá comprobar la configuración de seguridad de la estación base inalámbrica; busque términos del tipo WEP o WPA.</p>
 
 <note>
  <p>Puede pensar que esconder su red inalámbrica mejorará la seguridad mediante la prevención de las personas que no conocen la conexión. En la práctica, este no es el caso, la red es un poco más difícil de encontrar, pero todavía es perceptible.</p>

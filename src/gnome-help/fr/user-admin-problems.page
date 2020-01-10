@@ -1,30 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="user-admin-problems" xml:lang="fr">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="user-admin-problems" xml:lang="fr">
 
   <info>
     <link type="guide" xref="user-accounts#privileges"/>
-    <link type="seealso" xref="user-admin-explain"/>
-    <link type="seealso" xref="user-admin-change"/>
+
+    <desc>Certaines actions, comme l'installation d'applications, ne sont réalisables que par un administrateur.</desc>
 
     <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-03" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <!-- TODO: review that this is actually correct -->
-    <revision pkgversion="3.18" date="2015-09-28" status="candidate"/>
 
-    <credit type="authohar">
+    <credit type="author">
       <name>Le projet de documentation GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>You can do some things, like installing applications, only if you
-    have administrative privileges.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Luc Pionchon</mal:name>
@@ -41,13 +30,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Julien Hardelin</mal:name>
       <mal:email>jhardlin@orange.fr</mal:email>
-      <mal:years>2011, 2013</mal:years>
+      <mal:years>2011</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -73,30 +62,23 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Alexandre Franke</mal:name>
-      <mal:email>alexandre.franke@gmail.com</mal:email>
-      <mal:years>2015</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Problèmes liés aux restrictions administratives</title>
+<title>Problèmes liés aux restrictions administratives</title>
 
   <p>Il se peut que vous soyez confrontés à différents problèmes si vous n'avez pas le statut d'administrateur. Certaines tâches exigent un statut d'administrateur pour fonctionner, comme par exemple :</p>
 
-  <list>
-    <item>
-      <p>connecting to networks or wireless networks,</p>
-    </item>
-    <item>
-      <p>viewing the contents of a different disk partition (for example, a
-      Windows partition), or</p>
-    </item>
-    <item>
-      <p>installing new applications.</p>
-    </item>
-  </list>
+<list>
+ <item>
+  <p>la connexion à un réseau ou à un réseau sans fil,</p>
+ </item>
+ <item>
+  <p>l'affichage du contenu d'un périphérique de stockage amovible connecté à l'ordinateur, ou du contenu d'une autre partition du disque (par exemple une partition Windows),</p>
+ </item>
+ <item>
+  <p>l'installation de nouvelles applications.</p>
+ </item>
+</list>
 
   <p>Il est possible de <link xref="user-admin-change">choisir à qui vous attribuez ou non le statut d'administrateur</link>.</p>
 

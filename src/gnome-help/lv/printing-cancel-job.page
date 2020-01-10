@@ -4,81 +4,72 @@
   <info>
     <link type="guide" xref="printing#problems"/>
 
-    <revision pkgversion="3.10.2" date="2013-11-03" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+    <desc>Atceliet rindā esošos drukāšanas darbus un noņemiet tos no saraksta.</desc>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
 
     <credit type="author">
       <name>Phil Bull</name>
-      <email>philbull@gmail.com</email>
+      <email its:translate="no">philbull@gmail.com</email>
     </credit>
     <credit type="author">
       <name>Jim Campbell</name>
-      <email>jcampbell@gnome.org</email>
+      <email its:translate="no">jwcampbell@gmail.com</email>
     </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
     <credit type="editor">
       <name>Jana Svarova</name>
-      <email>jana.svarova@gmail.com</email>
+      <email its:translate="no">jana.svarova@gmail.com</email>
       <years>2013</years>
     </credit>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Atceliet rindā esošos drukāšanas darbus un noņemiet tos no saraksta.</desc>
   </info>
 
-  <title>Atcelt, pauzēt vai atlaist drukāšanas darbus</title>
+<title>Cancel, pause or release a print job</title>
 
-  <p>Printera iestatījumos jūs varat atcelt rindā esošos drukāšanas darbus un noņemt tos no saraksta.</p>
+<p>You can cancel a pending print job and remove it from the queue in the
+ printer settings.</p>
 
-  <section id="cancel-print-job">
-    <title>Atcelt drukāšanas darbus</title>
+<section id="cancel-print-job">
 
-  <p>Ja nejauši esat sākuši drukāšanas dokumentus, jūs varat atcelt drukāšanu, lai neizniekotu tinti vai papīru.</p>
+<title>Atcelt drukāšanas darbus</title>
 
-  <steps>
-    <title>Kā atcelt drukāšanas darbu:</title>
-    <item>
-      <p>Atveriet <gui xref="shell-introduction#activities">Aktivitāšu</gui> pārskatu un sāciet rakstīt <gui>Printeri</gui>.</p>
-    </item>
-    <item>
-      <p>Spiediet <gui>Printeri</gui>, lai atvērtu paneli.</p>
-    </item>
-    <item>
-      <p>Spiediet pogu <gui>Rādīt darbus</gui> dialoglodziņa <gui>Printeri</gui> labajā pusē.</p>
-    </item>
-    <item>
-      <p>Atceliet drukāšanas darbu, spiežot apturēšanas pogu.</p>
-    </item>
-  </steps>
+  <p>If you accidentally started printing a document, you can cancel the
+ print so that you do not need to waste any ink or paper.</p>
 
-  <p>Ja tas neatceļ drukāšanas darbus tā kā jūs gaidījāt, mēģiniet turēt <gui>atcelšanas</gui> pogu uz sava printera.</p>
+<steps>
+  <title>How to cancel a print job:</title>
+  <item><p>Click your name on the top bar and select
+  <gui>Settings</gui>.</p></item>
+  <item><p>Spiediet <gui>Printeri</gui>.</p></item>
+  <item><p>Click the <gui>Show Jobs</gui> button on the right-hand side of the
+  <gui>Printers</gui> dialog.</p></item>
+  <item><p>Cancel the print job by clicking the stop button on the
+  pay-pause-stop symbols.</p></item>
+ </steps>
+
+  <p>If this does not cancel the print job like you expected, try holding down
+ the <gui>Cancel</gui> button on your printer.</p>
 
   <p>Kā pēdējo līdzekli, it īpaši, ja jums ir liels drukas darbs ar daudz lapām, kuras nevar atcelt, izņemiet papīru no printera papīra padeves. Printerim vajadzētu saprast, ka nav papīra un pārtraukt drukāšanu. Pēc tam jūs varat mēģināt atcelt drukāšanas darbus atkārtoti, vai mēģiniet izslēgt un ieslēgt printeri.</p>
 
-  <note style="warning">
-    <p>Esiet uzmanīgi, lai nesabojātu printeri, kad izņemat papīru, lai gan — ja jums ir jāpielieto spēks, lai izņemtu papīru, iespējams, labāk vienkārši atstāt to tur, kur tas ir.</p>
-  </note>
+ <note style="warning">
+  <p>Esiet uzmanīgi, lai nesabojātu printeri, kad izņemat papīru, lai gan — ja jums ir jāpielieto spēks, lai izņemtu papīru, iespējams, labāk vienkārši atstāt to tur, kur tas ir.</p>
+ </note>
+</section>
 
-  </section>
+<section id="pause-release-print-job">
+<title>Pause and release a print job</title>
+  <p>If you want to pause or release a print job, you can do so by going to the
+  jobs dialog in the printer settings and click the appropriate button.</p>
 
-  <section id="pause-release-print-job">
-    <title>Pauzēt un atlaist drukāšanas darbus</title>
+ <steps>
+  <item><p>Click your name on the top bar and select
+  <gui>Settings</gui>.</p></item>
+  <item><p>Spiediet <gui>Printeri</gui>.</p></item>
+  <item><p>Click the <gui>Show Jobs</gui> button on the right-hand side of the
+  <gui>Printers</gui> dialog and either pause or release the print job based on
+  your needs.</p></item>
+ </steps>
 
-  <p>Ja vēlaties pauzēt vai atlaist drukāšanas darbu, jūs varat to izdarīt, printera iestatījumos ejot uz darbu dialoglodziņu un spiežot atbilstošo pogu.</p>
-
-  <steps>
-    <item>
-      <p>Atveriet <gui xref="shell-introduction#activities">Aktivitāšu</gui> pārskatu un sāciet rakstīt <gui>Printeri</gui>.</p>
-    </item>
-    <item>
-      <p>Spiediet <gui>Printeri</gui>, lai atvērtu paneli.</p>
-    </item>
-    <item>
-      <p>Spiediet pogu <gui>Rādīt darbus</gui> dialoglodziņa <gui>Printeri</gui> labajā pusē un vai nu pauzēt vai atlaist drukāšanas darbu, atkarībā no jūsu vajadzībām.</p>
-    </item>
-  </steps>
-
-  </section>
-
+</section>
 </page>

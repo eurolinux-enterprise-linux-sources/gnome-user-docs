@@ -5,12 +5,10 @@
     <link type="guide" xref="privacy"/>
     <link type="seealso" xref="session-screenlocks"/>
     <link type="seealso" xref="shell-exit#lock-screen"/>
-
     <revision pkgversion="3.8" date="2013-05-21" status="candidate"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-30" status="final"/>
 
+    <desc>Prevent other people from using your desktop when you
+    go away from your computer.</desc>
     <credit type="author">
       <name>Shaun McCance</name>
       <email>shaunm@gnome.org</email>
@@ -24,83 +22,59 @@
       <email>jwcampbell@gmail.com</email>
       <years>2013</years>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Αποτρέψτε άλλα άτομα από τη χρήση της επιφάνειας εργασίας όταν φεύγετε από τον υπολογιστή σας.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
-      <mal:email>team@gnome.gr</mal:email>
-      <mal:years>2009-2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
       <mal:email>dmtrs32@gmail.com</mal:email>
-      <mal:years>2012-2015</mal:years>
+      <mal:years>2012, 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:name> Φώτης Τσάμης</mal:name>
       <mal:email>ftsamis@gmail.com</mal:email>
       <mal:years>2009</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:name> Μάριος Ζηντίλης</mal:name>
       <mal:email>m.zindilis@dmajor.org</mal:email>
       <mal:years>2009, 2010</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Θάνος Τρυφωνίδης</mal:name>
-      <mal:email>tomtryf@gnome.org</mal:email>
-      <mal:years>2012-2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Μαρία Μαυρίδου</mal:name>
-      <mal:email>mavridou@gmail.com</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:name> Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
     </mal:credit>
   </info>
 
-  <title>Αυτόματο κλείδωμα της οθόνης</title>
+  <title>Automatically lock your screen</title>
   
   <p>When you leave your computer, you should
   <link xref="shell-exit#lock-screen">lock the screen</link> to prevent
   other people from using your desktop and accessing your files. If you
-  sometimes forget to lock your screen, you may wish to have your computer’s
+  sometimes forget to lock your screen, you may wish to have your computer's
   screen lock automatically after a set period of time. This will help to
-  secure your computer when you aren’t using it.</p>
+  secure your computer when you aren't using it.</p>
 
-  <note><p>Όταν η οθόνη σας είναι κλειδωμένη, οι εφαρμογές σας και οι διεργασίες του συστήματος θα συνεχίσουν να εκτελούνται, αλλά θα χρειαστείτε να εισάγετε τον κωδικό πρόσβασής σας για να αρχίσετε να τις χρησιμοποιείτε ξανά.</p></note>
+  <note><p>When your screen is locked, your applications and system processes
+  will continue to run, but you will need to enter your password to begin using
+  them again.</p></note>
   
   <steps>
-    <title>Για να ορίσετε τη διάρκεια του χρόνου πριν να κλειδωθεί η οθόνη σας αυτόματα:</title>
-    <item>
-      <p>Ανοίξτε την επισκόπηση <gui xref="shell-introduction#activities">Δραστηριότητες</gui> και αρχίστε να πληκτρολογείτε <gui>Ιδιωτικότητα</gui>.</p>
-    </item>
-    <item>
-      <p>Κάντε κλικ στο <gui>Ιδιωτικότητα</gui> για να ανοίξετε τον πίνακα.</p>
-    </item>
-    <item>
-      <p>Επιλέξτε <gui>Κλείδωμα οθόνης</gui>.</p>
-    </item>
-    <item>
-      <p>Βεβαιωθείτε ότι το <gui>Αυτόματο κλείδωμα οθόνης</gui> έχει αλλάξει σε <gui>ΝΑΙ</gui>, έπειτα επιλέξτε τη διάρκεια του χρόνου από την πτυσσόμενο λίστα.</p>
-    </item>
+    <title>To set the length of time before your screen locks
+    automatically:</title>
+    <item><p>Πατήστε το όνομά σας στην πάνω γραμμή και επιλέξτε <gui>Ρυθμίσεις</gui>.</p></item>
+    <item><p>Select <guiseq><gui>Privacy</gui><gui>Screen Lock</gui></guiseq>.
+    </p></item>
+    <item><p>Make sure <gui>Automatic Screen Lock</gui> is switched on, then
+    select a length of time from the drop-down list.</p></item>
   </steps>
 
-  <note style="tip">
-    <p>Applications can present notifications to you that are still displayed
-    on your lock screen. This is convenient, for example, to see if you have
-    any email without unlocking your screen. If you’re concerned about other
-    people seeing these notifications, switch <gui>Show Notifications</gui>
-    off.</p>
-  </note>
-
-  <p>Όταν η οθόνη σας είναι κλειδωμένη και θέλετε να την ξεκλειδώσετε, πατήστε το πλήκτρο <key>Esc</key>, ή σύρετε το ποντίκι σας από πάνω έως κάτω. Έπειτα εισάγετε τον κωδικό πρόσβασής σας και πατήστε το πλήκτρο <key>Enter</key> ή κάντε κλικ στο <gui>Ξεκλείδωμα</gui>. Εναλλακτικά, αρχίστε απλά να πληκτρολογείτε τον κωδικό πρόσβασής σας και θα αναιρεθεί αυτόματα το κλείδωμα καθώς πληκτρολογείτε.</p>
+  <p>When your screen is locked, and you want to unlock it, press
+  <key>Esc</key>, or swipe up from the bottom of your screen with your mouse.
+  Then enter your password, and press <key>Enter</key> or click
+  <gui>Unlock</gui>.</p>
 
 </page>

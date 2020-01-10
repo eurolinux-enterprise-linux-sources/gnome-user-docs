@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task a11y" id="a11y-right-click" xml:lang="es">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task a11y" id="a11y-right-click" xml:lang="es">
   <info>
     <link type="guide" xref="mouse"/>
     <link type="guide" xref="a11y#mobility" group="clicking"/>
 
-    <revision pkgversion="3.8.0" date="2013-03-13" status="candidate"/>
-    <revision pkgversion="3.9.92" date="2013-09-18" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="final"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
 
     <credit type="author copyright">
       <name>Shaun McCance</name>
@@ -25,17 +19,14 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
     <desc>Para realizar una pulsación derecha, pulse y mantenga pulsado el botón izquierdo del ratón.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2011 - 2018</mal:years>
+      <mal:years>2011 - 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -63,29 +54,26 @@
 
   <steps>
     <item>
-      <p>Abra la vista de <gui xref="shell-introduction#activities">Actividades</gui> y empiece a escribir <gui>Acceso universal</gui>.</p>
+      <p>Pulse en su nombre en la barra superior y seleccione <gui>Configuración</gui>.</p>
     </item>
     <item>
-      <p>Pulse en <gui>Acceso universal</gui> para abrir el panel.</p>
+      <p>Abra <gui>Acceso universal</gui> y seleccione la pestaña <gui>Apuntar y pulsar</gui>.</p>
     </item>
     <item>
-      <p>Pulse en <gui>Asistente de pulsación</gui> en la sección <gui>Apuntar y pulsar</gui>.</p>
-    </item>
-    <item>
-      <p>Active la <gui>Pulsación secundaria simulada</gui> (<gui>Encendido</gui>).</p>
+      <p>Active <gui>Pulsación secundaria simulada</gui>.</p>
     </item>
   </steps>
 
-  <p>Puede cambiar la duración de la pulsación del botón izquierdo del ratón antes de que se considere una pulsación con el botón derecho cambiando el <gui>Retardo de aceptación</gui>.</p>
+  <p>Puede cambiar la duración de la pulsación del botón izquierdo del ratón antes de que se considere una pulsación con el botón derecho. En la pestaña <gui>Apuntar y pulsar</gui>, cambie el <gui>Retardo de aceptación</gui> bajo <gui>Pulsación secundaria simulada</gui>.</p>
 
-  <p>Para pulsar con el botón derecho del ratón usando una pulsación secundaria simulada, mantenga pulsado el botón izquierdo del ratón donde normalmente pulsaría con el botón derecho, y después suéltelo. El puntero se rellenará con un color azul mientras mantiene pulsado el botón izquierdo. Cuando esté azul del todo, suelte el botón para hacer la pulsación derecha.</p>
+  <p>Para pulsar con el botón derecho del ratón usando una pulsación secundaria simulada, mantenga pulsado el botón izquierdo del ratón donde normalmente pulsaría con el botón derecho, y después suéltelo.El puntero se rellenará con un color azul mientras mantiene pulsado el botón izquierdo. Cuando esté azul del todo, suelte el botón para hacer la pulsación derecha.</p>
 
-  <p>Algunos punteros especiales, como los punteros de redimensionar, con cambian de color. Sigue pudiendo usar la pulsación secundaria simulada de manera normal, aunque no vea el efecto visual del puntero.</p>
+  <p>Algunos punteros especiales, como los punteros de redimensión, con cambian de color. Sigue pudiendo usar la pulsación secundaria simulada de manera normal, aunque no vea el efecto visual del puntero.</p>
 
   <p>Si usa las <link xref="mouse-mousekeys">Teclas del ratón</link>, esto también le permite simular una pulsación derecha manteniendo pulsada la tecla <key>5</key> de su teclado numérico.</p>
 
   <note>
-    <p>En la vista de <gui>Actividades</gui> siempre puede realizar una pulsación larga para ejecutar una pulsación con el botón derecho, incluso si esta característica está desactivada. La pulsación larga funciona de forma ligeramente diferente en la vista general: no tiene que liberar el botón para realizar la pulsación con el botón derecho.</p>
+    <p>En la vista general de <gui>Actividades</gui> siempre puede realizar una pulsación larga para ejecutar una pulsación con el botón derecho, incluso si esta característica está desactivada. La pulsación larga funciona de forma ligeramente difente en la vista general: no tiene que liberar el botón para realizar la pulsación con el botón derecho.</p>
   </note>
 
 </page>

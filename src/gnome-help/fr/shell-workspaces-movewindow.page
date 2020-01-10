@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" version="1.0 if/1.0" id="shell-workspaces-movewindow" xml:lang="fr">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" id="shell-workspaces-movewindow" xml:lang="fr">
 
   <info>
     <link type="guide" xref="shell-windows#working-with-workspaces"/>
     <link type="seealso" xref="shell-workspaces"/>
 
+    <revision pkgversion="3.8.0" version="0.3" date="2013-04-23" status="review"/>
     <revision pkgversion="3.8" version="0.3" date="2013-05-10" status="review"/>
-    <revision pkgversion="3.10" date="2013-11-04" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
 
     <credit type="author">
       <name>Le projet de documentation GNOME</name>
-      <email>gnome-doc-list@gnome.org</email>
+      <email its:translate="no">gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
+      <email its:translate="no">mdhillca@gmail.com</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Aller dans la vue d'ensemble des <gui>Activités</gui> et déplacer la fenêtre vers un autre espace de travail.</desc>
+    <desc>Aller dans la vue d'ensemble des Activités et déplacer la fenêtre vers un autre espace de travail.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Luc Pionchon</mal:name>
@@ -37,13 +36,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Julien Hardelin</mal:name>
       <mal:email>jhardlin@orange.fr</mal:email>
-      <mal:years>2011, 2013</mal:years>
+      <mal:years>2011</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -69,36 +68,34 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Alexandre Franke</mal:name>
-      <mal:email>alexandre.franke@gmail.com</mal:email>
-      <mal:years>2015</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Déplacement d'une fenêtre vers un autre espace de travail</title>
+<title>Déplacement d'une fenêtre vers un autre espace de travail</title>
 
   <steps>
     <title>Avec la souris :</title>
     <item>
       <p if:test="!platform:gnome-classic">Open the
-      <gui xref="shell-introduction#activities">Activities</gui> overview.</p>
+      <link xref="shell-terminology"><gui>Activities</gui> overview</link>.</p>
       <p if:test="platform:gnome-classic">Open the
-      <gui xref="shell-introduction#activities">Activities Overview</gui> from the
-      <gui xref="shell-introduction#activities">Applications</gui> menu
-      at the top left of the screen.</p>
+      <gui xref="shell-terminology">Activities Overview</gui> from the
+      <link xref="shell-terminology"><gui style="menu">Applications</gui>
+      menu</link> at the top left of the screen.</p>
     </item>
+ <item>
+  <p>Cliquez et déplacez la fenêtre vers la droite de l'écran.</p>
+ </item>
     <item>
-      <p>Cliquez et déplacez la fenêtre vers la droite de l'écran.</p>
-    </item>
-    <item>
-      <p>The <em xref="shell-workspaces">workspace selector</em> will
+      <p>The <em xref="shell-terminology">workspace selector</em> will
       appear.</p>
     </item>
     <item>
-      <p if:test="!platform:gnome-classic">Déposez la fenêtre sur un espace de travail vide. Cet espace de travail contient maintenant la fenêtre que vous avez déposée et un nouvel espace de travail vide apparaît en bas du <em>sélecteur d'espace de travail</em>.</p>
-      <p if:test="platform:gnome-classic">Déposez la fenêtre sur un espace de travail vide. Cet espace de travail contient maintenant la fenêtre que vous avez déposée.</p>
+      <p if:test="!platform:gnome-classic">Drop the window onto an empty
+      workspace. This workspace now contains the window you have dropped, and a
+      new empty workspace appears at the bottom of the <em>workspace
+      selector</em>.</p>
+      <p if:test="platform:gnome-classic">Drop the window onto an empty
+      workspace. This workspace now contains the window you have dropped.</p>
     </item>
   </steps>
 
@@ -107,11 +104,15 @@
     <item>
       <p>Select the window that you want to move (for example, using the
       <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq>
-      <em xref="shell-windows-switching">window switcher</em>).</p>
+      <em xref="shell-terminology">window switcher</em>).</p>
     </item>
     <item>
-      <p>Appuyez sur <keyseq><key>Logo</key><key>Maj</key><key>Page haut</key></keyseq> pour déplacer la fenêtre vers un espace de travail au dessus de l'espace de travail actuel dans le <em>sélecteur d'espace de travail</em>.</p>
-      <p>Appuyez sur <keyseq><key>Logo</key><key>Maj</key><key>Page bas</key></keyseq> pour déplacer la fenêtre vers un espace de travail en dessous de l'espace de travail actuel dans le <em>sélecteur d'espace de travail</em>.</p>
+      <p>Press <keyseq><key>Super</key><key>Shift</key><key>Page
+      Up</key></keyseq> to move the window to a workspace which is above the
+      current workspace on the <em>workspace selector</em>.</p>
+      <p>Press <keyseq><key>Super</key><key>Shift</key><key>Page
+      Down</key></keyseq> to move the window to a workspace which is below the
+      current workspace on the <em>workspace selector</em>.</p>
     </item>
   </steps>
 

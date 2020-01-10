@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" version="1.0 if/1.0" id="status-icons" xml:lang="cs">
-
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="ui" id="status-icons" xml:lang="cs">
   <info>
-    <link type="guide" xref="shell-overview#apps"/>
+    <link type="guide" xref="shell-overview#desktop"/>
 
     <revision version="0.1" date="2013-02-23" status="review"/>
 
@@ -14,33 +13,27 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Vysvětlení významu ikon nacházejících se vpravo na horní liště.</desc>
+    <desc>Explains the meanings of the icons located on the right of the top bar.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
       <mal:email>adamatousek@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Marek Černocký</mal:name>
-      <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014, 2015</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Co znamenají ikony na horní liště?</title>
-<p>Tato kapitola vysvětluje význam jednotlivých ikon nacházejících se v pravém horním rohu obrazovky. Přesněji řečeno, jsou popsány různé varianty ikon poskytovaných rozhraním GNOME.</p>
+  <title>What do the icons in the top bar mean?</title>
+<p>This section explains the meaning of icons located on the top right corner of the screen. More specifically, the different variations of the icons provided by the GNOME interface are described.</p>
 
 <if:choose>
 <if:when test="!platform:gnome-classic">
-<media type="image" src="figures/top-bar-icons.png" style="floatend">
-  <p>Horní lišta GNOME Shellu</p>
+<media type="image" src="figures/top-bar-icons.png" width="395" height="70" style="floatend">
+  <p>GNOME Shell top bar</p>
 </media>
 </if:when>
 <if:when test="platform:gnome-classic">
 <media type="image" src="figures/top-bar-icons-classic.png" width="395" height="70" style="floatend">
-  <p>Horní lišta GNOME Shellu</p>
+  <p>GNOME Shell top bar</p>
 </media>
 </if:when>
 </if:choose>
@@ -48,12 +41,12 @@
 <links type="section"/>
 
 <section id="universalicons">
-<title>Ikony nabídky univerzálního přístupu</title>
+<title>Universal Access Menu Icons</title>
 
  <table shade="rows">
     <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/preferences-desktop-accessibility-symbolic.svg"/></td>
-      <td><p>Vede do nabídky, která slouží k přepínání voleb zpřístupnění.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/preferences-desktop-accessibility-symbolic.svg"/></td>
+      <td><p>Leads to a menu that turns on accessibility settings.</p></td>
     </tr>
     
   </table>
@@ -61,255 +54,255 @@
 
 
 <section id="audioicons">
-<title>Ikony ovládání hlasitosti</title>
+<title>Volume Control Icons</title>
 
  <table shade="rows">
     <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/audio-volume-high-symbolic.svg"/></td>
-      <td><p>Je nastavena vysoká hlasitost.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/audio-volume-high-symbolic.svg "/></td>
+      <td><p>The volume is set to high.</p></td>
     </tr>
     <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/audio-volume-medium-symbolic.svg"/></td>
-      <td><p>Je nastavena střední hlasitost.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/audio-volume-medium-symbolic.svg"/></td>
+      <td><p>The volume is set to medium.</p></td>
     </tr>
     <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/audio-volume-low-symbolic.svg"/></td>
-      <td><p>Je nastavena nízká hlasitost.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/audio-volume-low-symbolic.svg "/></td>
+      <td><p>The volume is set to low.</p></td>
     </tr>
     <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/audio-volume-muted-symbolic.svg"/></td>
-      <td><p>Hlasitost je ztlumena.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/audio-volume-muted-symbolic.svg"/></td>
+      <td><p>The volume is muted.</p></td>
     </tr>
   </table>
 </section>
 
 
 <section id="bluetoothicons">
-<title>Ikony správy Bluetooth</title>
+<title>Bluetooth Manager Icons</title>
 
  <table shade="rows">
     <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/bluetooth-active-symbolic.svg"/></td>
-      <td><p>Bluetooth je aktivováno.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/bluetooth-active-symbolic.svg"/></td>
+      <td><p>Bluetooth has been activated.</p></td>
     </tr>
     <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/bluetooth-disabled-symbolic.svg"/></td>
-      <td><p>Bluetooth je vypnuto.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/bluetooth-disabled-symbolic.svg"/></td>
+      <td><p>Bluetooth has been disabled.</p></td>
     </tr>
   </table>
 </section>
 
 <section id="networkicons">
-<title>Ikony správy sítě</title>
+<title>Network Manager Icons</title>
 <p/>
-<p><app>Mobilní připojení</app></p>
+<p><app>Cellular Connection</app></p>
  <table shade="rows">
 
     <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-3g-symbolic.svg"/></td>
-      <td><p>Připojeno do sítě 3G.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/network-cellular-3g-symbolic.svg"/></td>
+      <td><p>Connected to a 3G network.</p></td>
     </tr>
     <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-4g-symbolic.svg"/></td>
-      <td><p>Připojeno do sítě 4G.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/network-cellular-4g-symbolic.svg"/></td>
+      <td><p>Connected to a 4G network.</p></td>
     </tr>
 <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-edge-symbolic.svg"/></td>
-      <td><p>Připojeno do sítě EDGE.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/network-cellular-edge-symbolic.svg"/></td>
+      <td><p>Connected to an EDGE network.</p></td>
     </tr>
 <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-gprs-symbolic.svg"/></td>
-      <td><p>Připojeno do sítě GPRS.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/network-cellular-gprs-symbolic.svg"/></td>
+      <td><p>Connected to a GPRS network.</p></td>
     </tr>
 <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-umts-symbolic.svg"/></td>
-      <td><p>Připojeno do sítě UMTS.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/network-cellular-umts-symbolic.svg"/></td>
+      <td><p>Connected to a UMTS network.</p></td>
     </tr>
     <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-connected-symbolic.svg"/></td>
-      <td><p>Připojeno do mobilní sítě.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/network-cellular-connected-symbolic.svg"/></td>
+      <td><p>Connected to a cellular network.</p></td>
     </tr>
     <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-acquiring-symbolic.svg"/></td>
-      <td><p>Vyřizuje se připojení k mobilní síti.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/network-cellular-acquiring-symbolic.svg"/></td>
+      <td><p>Acquiring a cellular network connection.</p></td>
     </tr>
 <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-excellent-symbolic.svg"/></td>
-      <td><p>Velmi dobrá síla signálu.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/network-cellular-signal-excellent-symbolic.svg"/></td>
+      <td><p>Very high signal strength.</p></td>
     </tr>
 <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-good-symbolic.svg"/></td>
-      <td><p>Dobrá síla signálu.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/network-cellular-signal-good-symbolic.svg"/></td>
+      <td><p>High signal strength.</p></td>
     </tr>
 <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-ok-symbolic.svg"/></td>
-      <td><p>Střední síla signálu.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/network-cellular-signal-ok-symbolic.svg"/></td>
+      <td><p>Medium signal strength.</p></td>
     </tr>
 <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-weak-symbolic.svg"/></td>
-      <td><p>Slabá síla signálu.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/network-cellular-signal-weak-symbolic.svg"/></td>
+      <td><p>Low signal strength.</p></td>
     </tr>
 <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-cellular-signal-none-symbolic.svg"/></td>
-      <td><p>Velmi slabá síla signálu.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/network-cellular-signal-none-symbolic.svg"/></td>
+      <td><p>Extremely low signal strength.</p></td>
     </tr></table>
 
 
 
 
-<p><app>Přípojení do místní sítě (LAN)</app></p>
+<p><app>Local Area Network (LAN) Connection</app></p>
  <table shade="rows">
 <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-error-symbolic.svg"/></td>
-      <td><p>Při vyhledávání sítě se objevila chyba.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/network-error-symbolic.svg"/></td>
+      <td><p>There has been an error in finding the network.</p></td>
     </tr>
 <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-idle-symbolic.svg"/></td>
-      <td><p>Síť není aktivní.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/network-idle-symbolic.svg"/></td>
+      <td><p>The network is inactive.</p></td>
     </tr>
 <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-no-route-symbolic.svg"/></td>
-      <td><p>Nebylo nalezeno směrování do sítě.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/network-no-route-symbolic.svg"/></td>
+      <td><p>There is no route found for the network.</p></td>
     </tr>
 <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-offline-symbolic.svg"/></td>
-      <td><p>Síť je odpojená.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/network-offline-symbolic.svg"/></td>
+      <td><p>The network is offline.</p></td>
     </tr>
 <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-receive-symbolic.svg"/></td>
-      <td><p>Přijímají se data ze sítě.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/network-receive-symbolic.svg"/></td>
+      <td><p>The network is receiving data.</p></td>
     </tr>
 <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-transmit-receive-symbolic.svg"/></td>
-      <td><p>Přijímají se data z a vysílají do sítě.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/network-transmit-receive-symbolic.svg"/></td>
+      <td><p>The network is transmitting and receiving data.</p></td>
     </tr>
 <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-transmit-symbolic.svg"/></td>
-      <td><p>Vysílají se data do sítě.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/network-transmit-symbolic.svg"/></td>
+      <td><p>The network is transmitting data.</p></td>
     </tr>
 </table>
 
 
 
-<p><app>Připojení do virtuální soukromé sítě (VPN)</app></p>
+<p><app>Virtual Private Network (VPN) Connection</app></p>
  <table shade="rows">
 <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-vpn-acquiring-symbolic.svg"/></td>
-      <td><p>Vyřizuje se připojení k síti.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/network-vpn-acquiring-symbolic.svg"/></td>
+      <td><p>Acquiring a network connection.</p></td>
     </tr>
 <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-vpn-symbolic.svg"/></td>
-      <td><p>Připojeno do sítě VPN.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/network-vpn-symbolic.svg"/></td>
+      <td><p>Connected to a VPN network.</p></td>
     </tr>
 </table>
 
 
-<p><app>Drátové připojení</app></p>
+<p><app>Wired Connection</app></p>
  <table shade="rows">
 <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wired-acquiring-symbolic.svg"/></td>
-      <td><p>Vyřizuje se připojení k síti.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/network-wired-acquiring-symbolic.svg"/></td>
+      <td><p>Acquiring a network connection.</p></td>
     </tr>
 <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wired-disconnected-symbolic.svg"/></td>
-      <td><p>Odpojeno od sítě.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/network-wired-disconnected-symbolic.svg"/></td>
+      <td><p>Disconnected from the network.</p></td>
     </tr>
 <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wired-symbolic.svg"/></td>
-      <td><p>Připojeno k drátové síti.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/network-wired-symbolic.svg"/></td>
+      <td><p>Connected to a wired network.</p></td>
     </tr>
 </table>
 
 
-<p><app>Bezdrátové připojení</app></p>
+<p><app>Wireless Connection</app></p>
  <table shade="rows">
 <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-acquiring-symbolic.svg"/></td>
-      <td><p>Vyřizuje se bezdrátové připojení.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/network-wireless-acquiring-symbolic.svg"/></td>
+      <td><p>Acquiring a wireless connection.</p></td>
     </tr>
 <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-encrypted-symbolic.svg"/></td>
-      <td><p>Bezdrátová síť je šifrovaná.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/network-wireless-encrypted-symbolic.svg"/></td>
+      <td><p>The wireless network is encrypted.</p></td>
     </tr>
 <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-connected-symbolic.svg"/></td>
-      <td><p>Připojeno k bezdrátové síti.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/network-wireless-connected-symbolic.svg"/></td>
+      <td><p>Connected to a wireless network.</p></td>
     </tr>
 <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-excellent-symbolic.svg"/></td>
-      <td><p>Velmi dobrá síla signálu.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/network-wireless-signal-excellent-symbolic.svg"/></td>
+      <td><p>Very high signal strength.</p></td>
     </tr>
 <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-good-symbolic.svg"/></td>
-      <td><p>Dobrá síla signálu.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/network-wireless-signal-good-symbolic.svg"/></td>
+      <td><p>High signal strength.</p></td>
     </tr>
 <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-ok-symbolic.svg"/></td>
-      <td><p>Střední síla signálu.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/network-wireless-signal-ok-symbolic.svg"/></td>
+      <td><p>Medium signal strength.</p></td>
     </tr>
 <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-weak-symbolic.svg"/></td>
-      <td><p>Slabá síla signálu.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/network-wireless-signal-weak-symbolic.svg"/></td>
+      <td><p>Low signal strength.</p></td>
     </tr>
 <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/network-wireless-signal-none-symbolic.svg"/></td>
-      <td><p>Velmi slabá síla signálu.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/network-wireless-signal-none-symbolic.svg"/></td>
+      <td><p>Very low signal strength.</p></td>
     </tr>
 
   </table>
 </section>
 
 <section id="batteryicons">
-<title>Ikony správy napájení.</title>
+<title>Power Manager Icons</title>
 
  <table shade="rows">
    <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-full-symbolic.svg"/></td>
-      <td><p>Baterie je plně nabitá.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/battery-full-symbolic.svg"/></td>
+      <td><p>The battery is full.</p></td>
     </tr>
     <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-good-symbolic.svg"/></td>
-      <td><p>Baterie je částečně vybitá.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/battery-good-symbolic.svg"/></td>
+      <td><p>The battery is partially drained.</p></td>
     </tr>
     <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-low-symbolic.svg"/></td>
-      <td><p>Baterie je málo nabitá.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/battery-low-symbolic.svg"/></td>
+      <td><p>The battery is low.</p></td>
     </tr>
     <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-caution-symbolic.svg"/></td>
-      <td><p>Varování: Baterie je téměř vybitá.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/battery-caution-symbolic.svg"/></td>
+      <td><p>Caution: The battery is very low.</p></td>
     </tr>
     <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-empty-symbolic.svg"/></td>
-      <td><p>Baterie je zcela vybitá.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/battery-empty-symbolic.svg"/></td>
+      <td><p>The battery is extremely low.</p></td>
     </tr>
     <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-missing-symbolic.svg"/></td>
-      <td><p>Baterie byla odpojena.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/battery-missing-symbolic.svg"/></td>
+      <td><p>The battery has been unplugged.</p></td>
     </tr>
     <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-full-charged-symbolic.svg"/></td>
-      <td><p>Baterie byla plně nabita.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/battery-full-charged-symbolic.svg"/></td>
+      <td><p>The battery is fully charged.</p></td>
     </tr>
     <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-full-charging-symbolic.svg"/></td>
-      <td><p>Baterie je téměř plně nabitá a nabíjí se.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/battery-full-charging-symbolic.svg"/></td>
+      <td><p>The battery is full and charging.</p></td>
     </tr>
     <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-good-charging-symbolic.svg"/></td>
-      <td><p>Baterie je částečně nabitá a nabíjí se.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/battery-good-charging-symbolic.svg"/></td>
+      <td><p>The battery is partially full and charging.</p></td>
     </tr>
     <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-low-charging-symbolic.svg"/></td>
-      <td><p>Baterie je málo nabitá a nabíjí se.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/battery-low-charging-symbolic.svg"/></td>
+      <td><p>The battery is low and charging.</p></td>
     </tr>
     <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-caution-charging-symbolic.svg"/></td>
-      <td><p>Baterie je téměř vybitá a nabíjí se.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/battery-caution-charging-symbolic.svg "/></td>
+      <td><p>The battery is very low and charging.</p></td>
     </tr>
     <tr>
-      <td><media its:translate="no" type="image" mime="image/svg" src="figures/battery-empty-charging-symbolic.svg"/></td>
-      <td><p>Baterie je prázdná a nabíjí se.</p></td>
+      <td><media type="image" mime="image/svg" src="figures/battery-empty-charging-symbolic.svg "/></td>
+      <td><p>The battery is empty and charging.</p></td>
     </tr>
   </table>
 </section>

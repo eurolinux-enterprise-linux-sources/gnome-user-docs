@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="tip" version="1.0 ui/1.0" id="shell-keyboard-shortcuts" xml:lang="hu">
-
+<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="tip" id="shell-keyboard-shortcuts" xml:lang="hu">
   <info>
     <link type="guide" xref="tips"/>
     <link type="guide" xref="keyboard"/>
-    <link type="guide" xref="shell-overview#apps"/>
+    <link type="guide" xref="shell-overview"/>
     <link type="seealso" xref="keyboard-key-super"/>
+    <desc>Az asztali környezet használata a billentyűzet segítségével.</desc>
 
     <revision pkgversion="3.8.0" version="0.4" date="2013-04-23" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.20" date="2016-08-13" status="candidate"/>
 
     <credit type="author copyright">
       <name>Shaun McCance</name>
@@ -24,10 +22,7 @@
       <name>Ekaterina Gerasimova</name>
       <email>kittykat3756@gmail.com</email>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Az asztali környezet használata a billentyűzet segítségével.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Griechisch Erika</mal:name>
@@ -38,7 +33,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Kelemen Gábor</mal:name>
       <mal:email>kelemeng at gnome dot hu</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015, 2016, 2017</mal:years>
+      <mal:years>2011, 2012, 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -56,12 +51,6 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Lukács Bence</mal:name>
       <mal:email>lukacs.bence1 at gmail dot com</mal:email>
-      <mal:years>2011</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Nagy Zoltán</mal:name>
-      <mal:email>dzodzie at gmail dot com</mal:email>
       <mal:years>2011</mal:years>
     </mal:credit>
   </info>
@@ -91,18 +80,12 @@
       <p>Ez a gyorsbillentyű az amerikai billentyűzetek <key>`</key> billentyűjét használja, amelyeken a <key>`</key> billentyű a <key>Tab</key> fölött van. Más billentyűzeteken a gyorsbillentyű a <key>Super</key>, és a <key>Tab</key> fölötti billentyű, ez magyar billentyűzeten a <key>0</key>.</p>
     </td>
   </tr>
-  <tr xml:id="alt-escape">
-    <td><p><keyseq><key>Alt</key><key>Esc</key></keyseq></p></td>
-    <td>
-      <p>Switch between windows in the current workspace. Hold down
-      <key>Shift</key> for reverse order.</p>
-    </td>
-  </tr>
   <tr xml:id="ctrl-alt-tab">
     <!-- To be updated to <key>Tab</key> in the future. -->
     <td><p><keyseq><key>Ctrl</key><key>Alt</key><key>Tab</key></keyseq></p></td>
     <td>
-      <p>Billentyűzetfókusz átadása a felső sávra. A <gui>Tevékenységek</gui> áttekintésben a billentyűzetfókusz átváltása a felső sáv, az indítópanel, az ablakok áttekintés, az alkalmazáslista, a keresőmező és az üzenettálca között. A nyílbillentyűk használatával navigálhat.</p>
+      <p>Billentyűzetfókusz átadása a felső sávra. A <gui>Tevékenységek</gui> áttekintésben a billentyűzetfókusz átváltása a felső sáv, az indítópanel, az ablakok áttekintés, az alkalmazáslista és a keresőmező között. A nyílbillentyűk használatával navigálhat.</p>
+      <p>Jelenleg nem használhatja a nyílbillentyűket az ablakok áttekintésében való navigációra. Az ablakok közti váltáshoz lépjen ki az áttekintésből, és használja a <keyseq><key>Super</key><key>Tab</key></keyseq> és <keyseq><key>Super</key><key>0</key></keyseq> billentyűkombinációkat.</p>
     </td>
   </tr>
   <tr xml:id="super-a">
@@ -110,32 +93,26 @@
     <td><p>Az alkalmazások listájának megjelenítése.</p></td>
   </tr>
   <tr xml:id="super-updown">
-    <td><p><keyseq><key>Super</key><key>Page Up</key></keyseq> vagy <keyseq><key>Ctrl</key><key>Alt</key><key>Up</key></keyseq>, és <keyseq><key>Super</key><key>Page Down</key></keyseq> vagy <keyseq><key>Ctrl</key><key>Alt</key><key>Down</key></keyseq></p></td>
+    <td><p><keyseq><key>Super</key><key>Page Up</key></keyseq> és <keyseq><key>Super</key><key>Page Down</key></keyseq></p></td>
     <td><p><link xref="shell-workspaces-switch">Váltás a munkaterületek között</link>.</p></td>
   </tr>
   <tr xml:id="super-shift-updown">
     <td><p><keyseq><key>Super</key><key>Shift</key><key>Page Up</key></keyseq> és <keyseq><key>Super</key><key>Shift</key><key>Page Down</key></keyseq></p></td>
     <td><p><link xref="shell-workspaces-movewindow">Az aktuális ablak áthelyezése másik munkaterületre</link>.</p></td>
   </tr>
-  <tr xml:id="super-shift-left">
-    <td><p><keyseq><key>Super</key><key>Shift</key><key>←</key></keyseq></p></td>
-    <td><p>A jelenlegi ablak áthelyezése a balra lévő monitorra.</p></td>
-  </tr>
-  <tr xml:id="super-shift-right">
-    <td><p><keyseq><key>Super</key><key>Shift</key><key>→</key></keyseq></p></td>
-    <td><p>A jelenlegi ablak áthelyezése a jobbra lévő monitorra.</p></td>
-  </tr>
   <tr xml:id="ctrl-alt-Del">
     <td><p><keyseq><key>Ctrl</key><key>Alt</key><key>Delete</key></keyseq></p></td>
-    <td><p><link xref="shell-exit">Kikapcsolás</link>.</p></td>
+    <!-- TODO: test, as design team assigns this to 'power off'. -->
+    <td><p><link xref="shell-exit">Kijelentkezés</link>.</p></td>
   </tr>
   <tr xml:id="ctrl-alt-l">
-    <td><p><keyseq><key>Super</key><key>L</key></keyseq></p></td>
+    <!-- May be renamed to Super+L in the future. -->
+    <td><p><keyseq><key>Ctrl</key><key>Alt</key><key>L</key></keyseq></p></td>
     <td><p><link xref="shell-exit#lock-screen">A képernyő zárolása.</link></p></td>
   </tr>
   <tr xml:id="super-m">
     <td><p><keyseq><key>Super</key><key>M</key></keyseq></p></td>
-    <td><p>Nyissa meg az <link xref="shell-notifications#messagetray">üzenettálcát</link>. Nyomja meg újra a <keyseq><key>Super</key><key>M</key></keyseq> kombinációt, vagy az <key>Esc</key> billentyűt a bezáráshoz.</p></td>
+    <td><p>Nyissa meg az <link xref="shell-notifications#messagingtray">üzenettálcát</link>. Nyomja meg újra a <keyseq><key>Super</key><key>M</key></keyseq> kombinációt, vagy az <key>Esc</key> billentyűt a bezáráshoz.</p></td>
   </tr>
 </table>
 

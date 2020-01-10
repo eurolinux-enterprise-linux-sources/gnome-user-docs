@@ -2,92 +2,112 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-file-properties-basic" xml:lang="cs">
 
   <info>
-    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="files" group="more"/>
 
-    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+   <desc>View basic file information, set permissions, and choose
+   default applications.</desc>
 
-    <credit type="author">
-      <name>Tiffany Antopolski</name>
-      <email>tiffany@antopolski.com</email>
-    </credit>
-    <credit type="author">
-      <name>Shaun McCance</name>
-      <email>shaunm@gnome.org</email>
-    </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
+   <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
 
+   <credit type="author">
+     <name>Tiffany Antopolski</name>
+     <email>tiffany@antopolski.com</email>
+   </credit>
+   <credit type="author">
+     <name>Shaun McCance</name>
+     <email>shaunm@gnome.org</email>
+   </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Jak zobrazit základní informace o souboru, jak nastavit oprávnění a jak změnit výchozí aplikace.</desc>
-
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
       <mal:email>adamatousek@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Marek Černocký</mal:name>
-      <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014, 2015</mal:years>
-    </mal:credit>
   </info>
+  <title>File properties</title>
 
-  <title>Vlastnosti souboru</title>
+  <p>To view information about a file or folder, right-click it and select
+  <gui>Properties</gui>. You can also select the file and press
+  <keyseq><key>Alt</key><key>Enter</key></keyseq>.</p>
 
-  <p>Kdy se chcete podívat na informace o souboru nebo složce, klikněte na ně pravým tlačítkem a zvolte <gui>Vlastnosti</gui>. Můžete také soubor vybrat a zmáčknout <keyseq><key>Alt</key> <key>Enter</key></keyseq>.</p>
+  <p>The file properties window shows you information like the type of file,
+  the size of the file, and when you last modified it. If you need this
+  information often, you
+  can have it displayed in <link xref="nautilus-list">list view columns</link>
+  or <link xref="nautilus-display#icon-captions">icon captions</link>.</p>
 
-  <p>Okno s vlastnostmi souboru zobrazuje informace, jako je typ souboru, jeho velikost a kdy byl naposled změněn. Pokud tyto informace potřebujete často, můžete je mít zobrazené přímo ve <link xref="nautilus-list">sloupcích seznamového zobrazení</link> nebo v <link xref="nautilus-display#icon-captions">popisech ikon</link>.</p>
-
-  <p>Informace z karty <gui>Základní</gui> jsou vysvětleny níže. Dále najdete karty <gui><link xref="nautilus-file-properties-permissions">Oprávnění</link></gui> a <gui><link xref="files-open#default">Otevřít pomocí</link></gui>. Pro některé typy souborů, jako jsou obrázky nebo videa, se objeví ještě další karty poskytující informace typu rozměry, doba a kodeky.</p>
+  <p>The information given on the <gui>Basic</gui> tab is explained below.
+  There are also
+  <gui><link xref="nautilus-file-properties-permissions">Permissions</link></gui>
+  and <gui><link xref="files-open#default">Open With</link></gui> tabs. For
+  certain types of files, such as images and videos, there will be an extra tab
+  that provides information like the dimensions, duration, and codec.</p>
 
 <section id="basic">
- <title>Základní vlastnosti</title>
+ <title>Basic properties</title>
  <terms>
   <item>
-    <title><gui>Název</gui></title>
-    <p>Změnou tohoto pole můžete soubor přejmenovat. Přejmenování lze provést i jinde, než v okně s podrobnostmi, viz <link xref="files-rename"/>.</p>
+    <title><gui>Name</gui></title>
+    <p>You can rename the file by changing this field.
+    You can also rename a file outside the properties window. See
+    <link xref="files-rename"/>.</p>
   </item>
   <item>
-    <title><gui>Typ</gui></title>
-    <p>Pomáhá vám rozpoznat typ souboru, jako je dokument PDF, text OpenDocument nebo obrázek JPEG. Typ souboru mimo jiné určuje, kterými aplikacemi půjde otevřít. Například nemůžete otevřít obrázek pomocí hudebního přehrávače. Více informací na toto téma viz <link xref="files-open"/>.</p>
-    <p>V závorkách je zobrazen <em>typ MIME</em> souboru. Typ MIME je standardizovaný způsob, kterým počítače označují typ souboru.</p>
-  </item>
-
-  <item>
-    <title>Obsah</title>
-    <p>Toto pole se zobrazí, když se díváte na vlastnosti složky, u souboru schází. Pomůže vám zjistit počet položek ve složce. Pokud složka obsahuje další složky, jsou jednotlivé vnitřní složky počítány jako jedna položka, i když samy obsahují další položky. Rovněž každý soubor je počítán jako jedna položka. Pokud je složka prázdná, zobrazí se u obsahu údaj <gui>nic</gui>.</p>
-  </item>
-
-  <item>
-    <title>Velikost</title>
-    <p>Toto pole se zobrazuje, když se díváte na soubor (ne složku). Velikost souboru vám říká, kolik místa na disku zabírá. Dá se podle toho také odhadnou, jak dlouho bude trvat jeho stažení nebo odeslání e-mailem (u velkých souborů to trvá déle).</p>
-    <p>Velikost může být udána v bajtech, kB, MB nebo GB. U posledních tří jmenovaných je navíc uvedena v závorce i v bajtech. Z technického hlediska 1 kB znamená 1 024 bajtů, 1 MB je 1 024 kB atd.</p>
+    <title><gui>Type</gui></title>
+    <p>This helps you identify the type of the file, such as PDF document,
+    OpenDocument Text, or JPEG image. The file type determines which
+    applications can open the file, among other things. For example, you
+    can't open a picture with a music player. See <link xref="files-open"/>
+    for more information on this.</p>
+  <p>The <em>MIME type</em> of the file is shown in parentheses; MIME type is
+    a standard way that computers use to refer to the file type.</p>
   </item>
 
   <item>
-    <title>Rodičovská složka</title>
-    <p>Umístění jednotlivých souborů v počítači je dáno jejich <em>absolutní cestou</em>. Jedná se o jedinečnou „adresu“ souboru v počítači, která sestává ze seznamu složek, kterými musíte projít, abyste se k souboru dostali. Například, když má Honza v domovské složce soubor s názvem <file>Výsledky.pdf</file>, je jeho rodičovskou složkou <file>/home/honza</file> a jeho umístění je <file>/home/honza/Výsledky.pdf</file>.</p>
+    <title>Contents</title>
+    <p>This field is displayed if you are looking at the properties of a folder rather than a file. It helps you see the number of items in the folder.  If the folder includes other folders, each inner folder is counted as one item, even if it contains further items. Each file is also counted as one item. If the folder is empty, the contents will display <gui>nothing</gui>.</p>
   </item>
 
   <item>
-    <title>Volné místo</title>
-    <p>Zobrazuje se jen u složek. Uvádí množství volného místa, které je dostupné na disku, na kterém se složka nachází. Hodí se pro přehled, jestli není disk plný.</p>
+    <title>Size</title>
+    <p>This field is displayed if you are looking at a file (not a folder). The size of a file tells you how much disk space it takes up. This is also an indicator of how long it will take to download a file or send it in an email (big files take longer to send/receive).</p>
+    <p>Sizes may be given in bytes, KB, MB, or GB; in the case of the last three, the size in bytes will also be given in parentheses. Technically, 1 KB is 1024 bytes, 1 MB is 1024 KB and so on.</p>
   </item>
 
   <item>
-    <title>Použito</title>
-    <p>Datum a čas, kdy byl soubor naposledy otevřen.</p>
+    <title>Location</title>
+    <p>The location of each file on your computer is given by its <em>absolute path</em>. This is a unique "address" of the file on your computer, made up of a list of the folders that you would need to go into to find the file. For example, if Jim had a file called <file>Resume.pdf</file> in his Home folder, its location would be <file>/home/jim/Resume.pdf</file>.</p>
   </item>
 
   <item>
-    <title>Změněno</title>
-    <p>Datum a čas, kdy byl soubor naposledy změněn a uložen.</p>
+    <title>Volume</title>
+    <p>The file system or device that the file is stored on. This shows you
+    where the file is physically stored, for example if it is on the hard disk
+    or on a CD, or a
+    <link xref="nautilus-connect">network share or file server</link>. Hard
+    disks can be split up into several
+    <link xref="disk-partitions">disk partitions</link>; the partition will
+    be displayed under <gui>Volume</gui> too.</p>
+  </item>
+
+  <item>
+    <title>Free Space</title>
+    <p>This is only displayed for folders. It gives the amount of disk space
+    which is available on the disk that the folder is on. This is useful for
+    checking if the hard disk is full.</p>
+  </item>
+
+
+  <item>
+    <title>Accessed</title>
+    <p>The date and time when the file was last opened.</p>
+  </item>
+
+  <item>
+    <title>Modified</title>
+    <p>The date and time when the file was last changed and saved.</p>
   </item>
  </terms>
 </section>

@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task a11y" id="a11y-right-click" xml:lang="nl">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task a11y" id="a11y-right-click" xml:lang="nl">
   <info>
     <link type="guide" xref="mouse"/>
     <link type="guide" xref="a11y#mobility" group="clicking"/>
 
-    <revision pkgversion="3.8.0" date="2013-03-13" status="candidate"/>
-    <revision pkgversion="3.9.92" date="2013-09-18" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="final"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
 
     <credit type="author copyright">
       <name>Shaun McCance</name>
@@ -25,55 +19,53 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
-    <desc>Houd de linkermuisknop ingedrukt voor rechtsklikken.</desc>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
+    <desc>Press and hold the left mouse button to right-click.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
-  <title>Een rechtermuisklik simuleren</title>
+  <title>Simulate a right mouse click</title>
 
-  <p>U kunt rechtsklikken door de linkermuisknop ingedrukt te houden. Dit is nuttig wanneer u de vingers van één hand moeilijk afzonderlijk kunt bewegen, of wanneer u een muis met één knop heeft.</p>
+  <p>You can right-click by holding down the left mouse button. This is useful
+  if you find it difficult to move your fingers individually on one hand, or if
+  your pointing device only has a single button.</p>
 
   <steps>
     <item>
-      <p>Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht en typ <gui>Universele toegang</gui>.</p>
+      <p>Click your name on the top bar and select <gui>Settings</gui>.</p>
     </item>
     <item>
-      <p>Klik op <gui>Universele toegang</gui> om het paneel te openen.</p>
+      <p>Open <gui>Universal Access</gui> and select the <gui>Pointing and
+      Clicking</gui> tab.</p>
     </item>
     <item>
-      <p>Druk op <gui>Typ-assistent</gui> onder het kopje <gui>Aanwijzen &amp; klikken</gui>.</p>
-    </item>
-    <item>
-      <p>Zet <gui>Gesimuleerde secundaire klik</gui> <gui>AAN</gui></p>
+      <p>Switch <gui>Simulated Secondary Click</gui> on.</p>
     </item>
   </steps>
 
-  <p>U kunt wijzigen hoe lang u de linkermuisknop in moet drukken voordat het herkend wordt als een rechtsklik, door de <gui>Vertraging voor accepteren</gui> te wijzigen.</p>
+  <p>You can change how long you must hold down the left mouse button before it
+  is registered as a right click. On the <gui>Pointing and Clicking</gui> tab,
+  change the <gui>Acceptance delay</gui> under <gui>Simulated Secondary
+  Click</gui>.</p>
 
-  <p>Om met rechts te klikken door middel van de gesimuleerde secundaire klik houdt u, waar u normaal gesproken met rechts zou klikken, de linkermuisknop ingedrukt en laat hem vervolgens los. De aanwijzer verandert geleidelijk naar een andere kleur terwijl u de linkermuisknop ingedrukt houdt. Zodra deze helemaal van kleur veranderd is, kunt u de muisknop loslaten om met rechts te klikken.</p>
+  <p>To right-click with simulated secondary click, hold down the left mouse
+  button where you would normally right-click, then release. The pointer fills
+  with blue as you hold down the left mouse button. Once it is entirely blue,
+  release the mouse button to right-click.</p>
 
-  <p>Sommige speciale aanwijzers, waaronder de formaataanwijzers, veranderen niet van kleur. U kunt nog altijd de gesimuleerde secundaire klik als normaal gebruiken, ook al krijgt u geen visuele feedback van de aanwijzer.</p>
+  <p>Some special pointers, such as the resize pointers, do not change colors.
+  You can still use simulated secondary click as normal, even if you don't get
+  visual feedback from the pointer.</p>
 
-  <p>Als u <link xref="mouse-mousekeys">Muistoetsen</link> gebruikt, dan kunt u ook rechtsklikken door de toets <key>5</key> op uw numerieke toetsenbord in te drukken.</p>
+  <p>If you use <link xref="mouse-mousekeys">Mouse Keys</link>, this also
+  allows you to right-click by holding down the <key>5</key> key on your
+  keypad.</p>
 
   <note>
-    <p>In het <gui>Activiteiten</gui>-overzicht kunt u altijd lang indrukken om met rechts te klikken, zelfs wanneer deze functie is uitgeschakeld. Lang indrukken werkt iets anders in het overzicht; u hoeft de knop niet los te laten om met rechts te klikken.</p>
+    <p>In the <gui>Activities</gui> overview, you are always able to long-press
+    to right-click, even with this feature disabled. Long-press works slightly
+    differently in the overview: You do not have to release the button to
+    right-click.</p>
   </note>
 
 </page>

@@ -1,91 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="sharing-media" xml:lang="sv">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="sharing-media" xml:lang="sv">
   <info>
     <link type="guide" xref="sharing"/>
-    <link type="guide" xref="prefs-sharing"/>
+    <link type="guide" xref="settings-sharing"/>
 
-    <revision pkgversion="3.10" version="0.2" date="2013-11-02" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.14" date="2014-10-13" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
+    <revision pkgversion="3.8.2" version="0.1" date="2013-05-11" status="draft"/>
 
     <credit type="author">
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
 
+    <desc>Share media on your local network using Rygel.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Dela media på ditt lokala nätverk via UPnP.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Sebastian Rasmussen</mal:name>
-      <mal:email>sebras@gmail.com</mal:email>
-      <mal:years>2014, 2015, 2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Anders Jonsson</mal:name>
-      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
-      <mal:years>2016, 2017</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Dela din musik, foton och videor</title>
+  <title>Share your music, photos and videos</title>
 
-  <p>Du kan bläddra igenom, söka och spela media på din dator via en enhet med <sys>UPnP</sys>- eller <sys>DLNA</sys>-stöd, som till exempel en telefon, TV eller spelkonsol. Konfigurera <gui>Mediadelning</gui> för att låta dessa enheter få åtkomst till mapparna som innehåller musik, foton och videor.</p>
+  <p>You can browse, search and play the media on your computer using a
+ <sys>UPnP</sys> or <sys>DLNA</sys> enabled device such as a phone, TV or game
+ console. Configure <gui>Media Sharing</gui> to allow these devices to access
+ the folders containing your music, photos and videos.</p>
 
   <note style="info package">
-    <p>Du måste ha paketet <app>Rygel</app> installerat för att <gui>Mediadelning</gui> ska vara synligt.</p>
+    <p>You must have the <app>Rygel</app> package installed for
+     <gui>Media Sharing</gui> to be visible.</p>
 
     <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
       <if:when test="action:install">
-        <p><link action="install:rygel" style="button">Installera Rygel</link></p>
+        <p><link action="install:rygel" style="button">Install Rygel</link></p>
       </if:when>
     </if:choose>
   </note>
 
   <steps>
     <item>
-      <p>Öppna översiktsvyn <gui xref="shell-introduction#activities">Aktiviteter</gui> och börja skriv <gui>Dela</gui>.</p>
+      <p>Click your name on the top bar and select <gui>Settings</gui>.</p>
     </item>
     <item>
-      <p>Klicka på <gui>Dela</gui> för att öppna panelen.</p>
+      <p>Open <gui>Sharing</gui>.</p>
     </item>
     <item>
-      <p>Om <gui>Dela</gui> är <gui>AV</gui>, slå om den till <gui>PÅ</gui>.</p>
-
-      <note style="info"><p>Om texten nedanför <gui>Datornamn</gui> låter dig redigera den, kan du <link xref="sharing-displayname">ändra</link> namnet din dator visar på nätverket.</p></note>
+      <p>If <gui>Sharing</gui> is <gui>OFF</gui>, switch it to
+      <gui>ON</gui>.</p>
     </item>
     <item>
-      <p>Välj <gui>Mediadelning</gui>.</p>
+      <p>Select <gui>Media Sharing</gui>.</p>
     </item>
     <item>
-      <p>Slå om <gui>Mediadelning</gui> till <gui>PÅ</gui>.</p>
+      <p>Switch <gui>Share Media On This Network</gui> to <gui>ON</gui>.</p>
     </item>
     <item>
-      <p>Som standard delas <file>Musik</file>, <file>Bilder</file> och <file>Video</file>. För att ta bort en av dessa, klicka på <gui>×</gui> intill mappnamnet.</p>
+      <p>Click <gui style="button">+</gui> to open the
+      <gui>Choose a folder</gui> window. Navigate <em>into</em> the desired
+      folder, <file>Music</file> in your <file>Home</file> directory for
+      example, and click <gui style="button">Open</gui>. Repeat for the other
+      folders you wish to share, for example <file>Pictures</file> and 
+      <file>Videos</file>.</p>
     </item>
     <item>
-      <p>För att lägga till ytterligare en mapp, klicka på <gui style="button">+</gui> för att öppna fönstret <gui>Välj en mapp</gui>. Navigera <em>in i</em> den önskade mappen och klicka på <gui style="button">Öppna</gui>.</p>
-    </item>
-    <item>
-      <p>Klicka på <gui style="button">×</gui>. Du kommer nu att kunna bläddra genom eller spela media i mapparna du valt via den externa enheten.</p>
+      <p>Click <gui style="button">Close</gui>. You will now be able to browse
+      or play media in the folders you selected using the external device.</p>
     </item>
   </steps>
-
-  <section id="networks">
-  <title>Nätverk</title>
-
-  <p>Sektionslistan <gui>Nätverk</gui> listar nätverken som du för närvarande är ansluten till. Använd <gui>ON | OFF</gui>-knappen intill respektive för att välja var din media kan delas.</p>
-
-  </section>
 
 </page>

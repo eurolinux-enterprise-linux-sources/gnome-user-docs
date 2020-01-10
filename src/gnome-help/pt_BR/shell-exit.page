@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="shell-exit" xml:lang="pt-BR">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" id="shell-exit" xml:lang="pt-BR">
 
   <info>
-    <link type="guide" xref="shell-overview"/>
+
+    <link type="guide" xref="shell-overview#desktop"/>
     <link type="guide" xref="power"/>
+    <link type="seealso" xref="power-hibernate"/>
     <link type="guide" xref="index" group="#first"/>
 
+    <desc>Learn how to leave your user account, by logging out, switching users,
+    and so on.</desc>
+    <!-- Should this be a guide which links to other topics? -->
+
     <revision pkgversion="3.6.0" date="2012-09-15" status="review"/>
-    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.24.2" date="2017-06-11" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -23,19 +26,8 @@
       <name>Alexandre Franke</name>
       <email>afranke@gnome.org</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>David Faour</name>
-      <email>dfaour.gnome@gmail.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Aprenda como deixar sua conta de usuário, encerrando a sessão, alternando usuários e por aí vai.</desc>
-    <!-- Should this be a guide which links to other topics? -->
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Rodolfo Ribeiro Gomes</mal:name>
@@ -44,70 +36,83 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Enrico Nicoletto</mal:name>
       <mal:email>liverig@gmail.com</mal:email>
       <mal:years>2013.</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>João Santana</mal:name>
-      <mal:email>joaosantana@outlook.com</mal:email>
-      <mal:years>2013.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Fontenelle</mal:name>
-      <mal:email>rafaelff@gnome.org</mal:email>
-      <mal:years>2012-2018.</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Encerrando sessão, desligando seu computador ou alternando usuários</title>
+<title>Encerrar sessão, desligar seu computador, alternar usuários</title>
 
-  <p>Quando você acabou de usar o seu computador, você pode desligá-lo, suspendê-lo (para economizar energia) ou deixá-lo ligado e encerrar a sessão.</p>
+<comment>
+  <cite date="2012-02-19">shaunm</cite>
+  <p>More links would be good, especially in #logout. Could go final
+  as-is. Incomplete for now</p>
+</comment>
+
+  <p>When you've finished using your computer, you can turn it off, suspend it
+ (to save power), or leave it powered on and log out.</p>
 
 <section id="logout">
-  <title>Encerrar sessão ou alternar usuários</title>
+<title>Encerrar sessão ou alternar usuários</title>
+  <p>To let other users use your computer, you can either log out, or leave
+  yourself logged in and just switch users. If you switch users, all of
+  your applications will continue running, and everything will be where you
+  left it when you log back in.</p>
+  <p>To <gui>Log Out</gui> or <gui>Switch User</gui>, click your name on the
+  top bar and select the appropriate option.</p>
 
-  <p>Para permitir que outros usuários usem o seu computador, você pode encerrar a sessão ou deixar sua sessão aberta e apenas alterar usuários. Se você alternar usuários, todos os seus aplicativos continuarão em execução e tudo estará onde você deixou quando voltar.</p>
+<note if:test="!platform:gnome-classic">
+  <p>The <gui>Log Out</gui> and <gui>Switch User</gui> entries only appear in
+  the menu if you have more than one user account on your system.</p>
+</note>
 
-  <p>Para <gui>Encerrar sessão</gui> ou <gui>Alternar usuário</gui>, clique no <link xref="shell-introduction#yourname">menu de sistema</link> no lado direito da barra superior, clique no seu nome e, então, escolha a opção correta.</p>
-
-  <note if:test="!platform:gnome-classic">
-    <p>As entradas <gui>Encerrar sessão</gui> e <gui>Alternar usuários</gui> aparecem apenas no menu se você tiver mais de uma conta de usuário no seu sistema.</p>
-  </note>
-
-  <note if:test="platform:gnome-classic">
-    <p>A entrada <gui>Alternar usuários</gui> apenas aparece no menu se você tiver mais do que uma conta de usuário no seu sistema.</p>
-  </note>
-
+<note if:test="platform:gnome-classic">
+  <p>The <gui>Switch User</gui> entry only appears in the menu if you have more
+  than one user account on your system.</p>
+</note>
 </section>
 
 <section id="lock-screen">
-  <info>
-    <link type="seealso" xref="session-screenlocks"/>
-  </info>
+<info>
+  <link type="seealso" xref="session-screenlocks"/>
+</info>
+<title>Bloquear a tela</title>
+  <p>If you're leaving your computer for a short time, you should lock your
+  screen to prevent other people from accessing your files or running
+  applications. When you return, raise the
+  <link xref="shell-lockscreen">lock screen</link> curtain and enter your
+  password to log back in. If you don't lock your screen, it will lock
+  automatically after a certain amount of time.</p>
 
-  <title>Bloquear a tela</title>
+  <p>Para bloquear a sua tela, clique no seu nome na barra superior e selecione <gui>Bloquear</gui>.</p>
 
-  <p>Se você está deixando o seu computador por um pequeno período de tempo, você deveria bloquear sua tela para evitar que outras pessoas acessem os seus arquivos ou executem aplicativos. Ao retornar, levante a cortina do <link xref="shell-lockscreen">bloqueio de tela</link> e digite sua senha para voltar para a sessão. Se você não bloquear a tela, ela será bloqueada automaticamente após um determinado período de tempo.</p>
-
-  <p>Para bloquear sua tela, clique no menu de sistema no lado direito da barra superior e pressione o botão da tela de bloqueio na parte inferior do menu.</p>
-
-  <p>Quando sua tela está bloqueada, outros usuários podem iniciar a sessão com suas próprias contas clicando em <gui>Iniciar sessão como outro usuário</gui> na tela de senha. Você pode alternar de volta para sua área de trabalho quando eles tiverem finalizado.</p>
-
+  <p>When your screen is locked, other users can log in to their own accounts
+  by clicking <gui>Log in as another user</gui> on the password screen. You
+  can switch back to your desktop when they are finished.</p>
 </section>
 
 <section id="suspend">
-  <info>
-    <link type="seealso" xref="power-suspend"/>
-  </info>
+<info>
+  <link type="seealso" xref="power-suspend"/>
+</info>
+<title>Suspender</title>
 
-  <title>Suspender</title>
+  <p>To save power, suspend your computer when you are not using it. If you use
+  a laptop, GNOME suspends your computer automatically when you close the lid.
+  This saves your state to your computer's memory and powers off most of the
+  computer's functions. A very small amount of power is still used during
+  suspend.</p>
 
-  <p>Para economizar energia, suspenda o seu computador quando você não está usando-o. Se você usa um notebook, o GNOME, por padrão, suspende seu computador automaticamente quando você fecha a tampa. Isso salva o estado da memória do seu computador e desliga a maioria de suas funções. Uma pequena quantidade de energia ainda é usada durante a suspensão.</p>
-
-  <p>Para suspender o seu computador manualmente, clique no menu de sistema no lado direito da barra superior. Então, você pode manter pressionada a tecla <key>Alt</key> e clicar no botão de desligar, ou fazer um clique longo no botão de desligar.</p>
+  <p>To suspend your computer manually, click your name on the top bar and
+  hold down the <key>Alt</key> key. The <gui>Power Off</gui> option will
+  change to <gui>Suspend</gui>. Select <gui>Suspend</gui>.</p>
 
 </section>
 
@@ -115,17 +120,22 @@
 <!--<info>
   <link type="seealso" xref="power-off"/>
 </info>-->
+<title>Desligar ou reiniciar</title>
 
-  <title>Desligar ou reiniciar</title>
+  <p>If you want to power off your computer entirely, or do a full restart,
+  click your name on the top bar and select <gui>Power Off</gui>. A dialog will
+  open offering you to either <gui>Restart</gui> or <gui>Power Off</gui>.</p>
 
-  <p>Se você deseja desligar por inteiro o seu computador, ou fazer uma reinicialização completa, clique no menu de sistema no lado direito da barra superior e pressione o botão de desligar na parte inferior do menu. Um diálogo vai abrir oferecendo a você opções para <gui>Reiniciar</gui> ou <gui>Desligar</gui>.</p>
+  <p>If there are other users logged in, you may not be allowed to
+  power off or restart the computer, because this will end their sessions.
+  If you are an administrative user, you may be asked for your password
+  to power off.</p>
 
-  <p>Se ainda há usuários com sessão iniciada, você pode não conseguir desligar ou reiniciar o computador porque isso vai finalizar a sessão deles. Se você é um usuário administrador, pode ser solicitado a você informar sua senha pra desligar.</p>
-
-  <note style="tip">
-    <p>Você pode querer desligar o seu computador se você deseja movê-lo e não tiver bateria, se sua bateria estiver baixa ou não mantiver carga corretamente. Um computador desligado também usa <link xref="power-batterylife">menos bateria</link> do que um que está suspenso.</p>
-  </note>
-
+<note style="tip">
+  <p>You may want to power off your computer if you wish to move it and do not
+  have a battery, if your battery is low or does not hold charge well. A powered
+  off computer also uses <link xref="power-batterylife">less energy</link> than
+  one which is suspended.</p>
+</note>
 </section>
-
 </page>

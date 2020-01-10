@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="net-editcon" xml:lang="de">
+  <info>
+    <link type="guide" xref="net-wireless" group="first"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <desc>Erfahren Sie mehr über die Optionen der drahtlosen Verbindungen.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.to</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Eine Funkverbindung bearbeiten </title>
+
+<comment>
+ <p>This topic needs significant revision to be comprehensive. A number of settings remain undocumented.</p>
+</comment>
+
+<p>In diesem Thema werden alle Optionen beschrieben, die beim Bearbeiten einer Funknetzwerkverbindung verfügbar sind. Um eine Verbindung zu bearbeiten, wählen Sie sie in den <gui>Netzwerk</gui>-Einstellungen aus und klicken Sie auf <gui>Optionen</gui>.</p>
+
+<note>
+ <p>Die meisten Netzwerke arbeiten problemlos, wenn Sie die Optionen auf den Vorgabeeinstellungen belassen. Daher werden Sie wahrscheinlich keine davon ändern müssen. Viele der hier angebotenen Optionen geben Ihnen tiefere Eingriffsmöglichkeiten in kompliziertere Netzwerke.</p>
+</note>
+
+<section id="available">
+ <title>Für alle Benutzer verfügbar / Automatisch verbinden</title>
+ <terms>
+  <item>
+   <title><gui>Automatisch verbinden</gui></title>
+   <p>Aktivieren Sie diese Option, wenn Ihr Rechner versuchen soll, sich immer mit diesem Funknetzwerk zu verbinden, wenn er sich in dessen Sendebereich befindet.</p>
+   <p>Falls mehrere für die automatische Verbindung eingerichtete Netzwerke erreichbar sind, verbindet sich der Rechner mit dem ersten im Reiter <gui>Funknetzwerk</gui> des Fensters <gui>Netzwerkverbindungen</gui> angezeigten Netzwerk. Allerdings wird die bestehende Verbindung zu einem bereits verfügbaren Netzwerk nicht abgebrochen, sobald ein anderes erreichbar wird.</p>
+  </item>
+
+  <item>
+   <title><gui>Für alle Benutzer verfügbar</gui></title>
+   <p>Aktivieren Sie dies, wenn alle Benutzer dieses Rechners auf dieses Funknetzwerk Zugriff erhalten sollen. Falls das Netzwerk ein <link xref="net-wireless-wepwpa">WEP/WPA-Passwort</link> benötigt und Sie diese Option aktiviert haben, müssen Sie dieses Passwort nur einmal angeben. Alle weiteren Benutzer Ihres Rechners können sich mit diesem Netzwerk verbinden, ohne das Passwort selbst zu kennen.</p>
+   <p>Falls dies aktiviert ist, müssen Sie über <link xref="user-admin-explain">Systemverwalterrechte</link> verfügen, um die Einstellungen dieses Netzwerks zu ändern. Sie werden darum gebeten, Ihr Systemverwalterpasswort einzugeben.</p>
+  </item>
+ </terms>
+</section>
+
+<section id="wireless">
+ <title>Funk</title>
+ <terms>
+  <item>
+   <title><gui>SSID</gui></title>
+   <p>Dies ist der Name des Netzwerks, mit dem Sie sich verbinden wollen, auch bekannt als der <em>Service Set Identifier</em>. Ändern Sie dies nicht, es sei denn, Sie haben den Namen des Funknetzwerks geändert. Dies könnte beim Ändern der Einstellungen des Routers oder der Basisstation geschehen sein.</p>
+  </item>
+
+  <item>
+   <title><gui>Modus</gui></title>
+   <p>Geben Sie hier an, ob Sie eine Verbindung zu einem <gui>Infrastruktur</gui>-Netzwerk (einem Netzwerk, in dem sich Rechner drahtlos mit einer zentralen Basisstation oder einem Router verbinden) oder einem <gui>Ad-Hoc</gui>-Netzwerk (bei dem es keine Basisstation gibt und sich die Rechner direkt miteinander verbinden) erstellen wollen. Die meisten Netzwerke sind Infrastruktur-Netzwerke. Sie können jedoch <link xref="net-adhoc">Ihr eigenes Ad-Hoc-Netzwerk</link> erstellen.</p>
+   <p>Wenn Sie <gui>Ad-Hoc</gui> wählen, werden zwei weitere Optionen angezeigt, <gui>Band</gui> und <gui>Kanal</gui>. Diese Einstellungen legen fest, in welchem Funkfrequenzband das Ad-Hoc-Funknetzwerk arbeitet. Bei einigen Rechnern ist die Auswahl auf bestimmte Frequenzbänder beschränkt, zum Beispiel nur <gui>A</gui> oder nur <gui>B/G</gui>, so dass Sie ein Frequenzband auswählen müssen, das jeder der Rechner im Ad-Hoc-Netzwerk nutzen kann. In bestimmten Umgebungen kann es vorkommen, dass verschiedene Funknetzwerke den gleichen Kanal gemeinsam nutzen, so dass Ihre Verbindung dadurch verlangsamt wird. In diesem Fall können Sie den zu nutzenden Kanal ändern.</p>
+  </item>
+
+  <item>
+   <title><gui>BSSID</gui></title>
+   <p>Dies ist der <em>Basic Service Set Identifier</em>. Die SSID (siehe oben) ist der menschenlesbare Name des Netzwerks. Die BSSID hingegen ist der für Rechner verständliche Name, der aus einer Zeichenkette aus Buchstaben und Ziffern besteht, die in dem Funknetzwerk eindeutig ist. Falls ein Netzwerk <link xref="net-wireless-hidden">verborgen</link> ist, gibt es keine SSID, aber eine BSSID.</p>
+  </item>
+
+  <item>
+   <title><gui>MAC-Adresse des Geräts</gui></title>
+   <p>Eine <link xref="net-macaddress">MAC-Adresse</link> ist eine Kennung, die ein einzelnes Netzwerkgerät identifiziert (zum Beispiel eine Funknetzwerkkarte, eine kabelgebundene Netzwerkkarte oder einen Router). Jedes Gerät, das Sie mit einem Netzwerk verbinden können, hat eine eindeutige MAC-Adresse, die es im Werk erhalten hat.</p>
+   <p>Diese Einstellung kann verwendet werden, um die MAC-Adresse Ihrer Netzwerkkarte zu ändern.</p>
+  </item>
+
+  <item>
+   <title><gui>Benutzerdefinierte MAC-Adresse</gui></title>
+   <p>Ihre Netzwerkhardware (Funknetzwerkkarte) kann vorgeben, eine andere MAC-Adresse zu haben. Das ist nützlich, wenn Sie es mit einem Gerät oder Dienst zu tun haben, der ausschließlich mit einer bestimmten MAC-Adresse kommuniziert (zum Beispiel ein Breitband-Kabelmodem). Wenn Sie diese MAC-Adresse in das Feld <gui>Benutzerdefinierte MAC-Adresse</gui> eintragen, wird das Gerät/der Dienst glauben, dass Ihr Rechner die benutzerdefinierte MAC-Adresse hat und nicht seine wirkliche.</p>
+  </item>
+
+  <item>
+   <title><gui>MTU</gui></title>
+   <p>Diese Einstellung ändert die <em>Maximum Transmission Unit</em>, also die maximale Größe eines über das Netzwerk versendeten Datenpakets. Wenn Daten über ein Netzwerk übertragen werden, werden sie in kleine Teilstücke oder Pakete zerlegt. Die für Ihr Netzwerk optimale MTU hängt von der Wahrscheinlichkeit ab, ob Pakete verloren gehen können, zum Beispiel durch eine verrauschte Verbindung, und von der Verbindungsgeschwindigkeit. Im Allgemeinen sollte es nicht erforderlich sein, diese Einstellung zu ändern.</p>
+  </item>
+
+ </terms>
+</section>
+
+<section id="security">
+ <title>Sicherheit des Funknetzwerks</title>
+ <terms>
+  <item>
+   <title><gui>Sicherheit</gui></title>
+   <p>Hier wird festgelegt, welche <em>Verschlüsselung</em> Ihr Netzwerk verwendet. Verschlüsselte Verbindungen können Einbrüche in Ihre Funknetzwerkverbindung verhindern, da niemand »lauschen« und dadurch sehen kann, welche Webseiten Sie besuchen usw.</p>
+   <p>Einige Verschlüsselungstypen sind wohl effektiver als andere, aber könnten durch ältere Netzwerkgeräte nicht unterstützt werden. Normalerweise werden Sie ein Passwort für die Verbindung angeben müssen, aber anspruchsvollere Sicherheitsmechanismen benötigen zusätzlich einen Benutzernamen und ein digitales »Zertifikat«. In <link xref="net-wireless-wepwpa"/> finden Sie weitere Informationen zu den gängigen Arten der Verschlüsselung von Funknetzwerken.</p>
+  </item>
+ </terms>
+</section>
+
+<section id="ipv4">
+ <title>IPv4-Einstellungen</title>
+
+<comment>
+<cite>shaunm</cite>
+<p>There's also Shared to other computers</p>
+<p>Then there's addresses and dns servers and ipv4 addressing routes.</p>
+<p>All current info correct, but incomplete</p>
+</comment>
+
+ <p>In diesem Reiter geben Sie Informationen wie die IP-Adresse Ihres Rechners sowie die zu nutzenden DNS-Server an. Ändern Sie die <gui>Methode</gui>, um die verschiedenen Möglichkeiten zum Ermitteln und Einrichten dieser Einstellungen zu sehen.</p>
+ <p>Die folgenden Methoden sind verfügbar:</p>
+ <terms>
+  <item>
+   <title><gui>Automatisch (DHCP)</gui></title>
+   <p>Informationen wie die IP-Adresse und der zu nutzende DNS-Server werden von einem <em>DHCP-Server</em> bezogen. Ein DHCP-Server ist ein mit dem Netzwerk verbundener Rechner oder ein anderes Gerät (beispielsweise ein Router), der die Netzwerkeinstellungen Ihres Rechners vorgibt. Wenn Sie sich erstmalig mit dem Netzwerk verbinden, werden Ihnen automatisch die korrekten Einstellungen zugewiesen. Die meisten Netzwerke nutzen DHCP.</p>
+  </item>
+
+  <item>
+   <title><gui>Automatisch (DHCP), nur Adressen</gui></title>
+   <p>Wenn Sie diese Einstellung wählen, erhält Ihr Rechner seine IP-Adresse von einem DHCP-Server, aber Sie müssen weitere Details manuell eingeben, zum Beispiel den zu nutzenden DNS-Server.</p>
+  </item>
+
+  <item>
+   <title><gui>Manuell</gui></title>
+   <p>wählen Sie diese Option, falls Sie sämtliche Netzwerkeinstellungen selbst festlegen wollen, einschließlich der IP-Adresse, die Ihr Rechner verwenden soll.</p>
+  </item>
+
+  <item>
+   <title><gui>Nur Link-Local</gui></title>
+   <p><em>Link-Local</em> ist eine Möglichkeit, Rechner in einem Netzwerk miteinander zu verbinden, ohne dass ein DHCP-Server benötigt wird oder weitere Informationen wie die IP-Adressen manuell eingegeben werden müssen. Wenn Sie mit einem Link-Local-Netzwerk verbunden sind, entscheiden die Rechner im Netzwerk selbst über Einstellungen wie die zu nutzenden IP-Adressen. Dies ist sinnvoll, wenn einige Rechner vorübergehend zwecks Kommunikation miteinander verbunden werden sollen.</p>
+  </item>
+
+  <item>
+   <title><gui>Deaktiviert</gui></title>
+   <p>Diese Option deaktiviert die Netzwerkverbindung und verhindert den Aufbau von Verbindungen. Beachten Sie, dass <gui>IPv4</gui> und <gui>IPv6</gui> als separate Verbindungen betrachtet werden, obwohl sie über die gleiche Netzwerkkarte laufen. Falls Sie eine davon aktiviert haben, sollten Sie die andere deaktivieren.</p>
+  </item>
+
+ </terms>
+</section>
+
+<section id="ipv6">
+ <title>IPv6-Einstellungen</title>
+<comment>
+<cite>shaunm</cite>
+<p>The list of methods is a bit different</p>
+</comment>
+ <p>Dies ist ähnlich dem Reiter <gui>IPv4</gui>, mit der Ausnahme, dass es sich um den aktuelleren IPv6-Standard handelt. Moderne Netzwerke nutzen zwar IPv6, aber momentan ist IPv4 weiter verbreitet.</p>
+</section>
+
+</page>

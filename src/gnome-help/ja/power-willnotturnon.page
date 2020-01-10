@@ -4,11 +4,9 @@
   <info>
     <link type="guide" xref="power#problems"/>
     <link type="guide" xref="hardware-problems-graphics" group="#last"/>
-
     <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
-    <desc>電源ケーブルの接触が緩い、ハードウェアに問題があるなどが原因として挙げられます。</desc>
+    <desc>Loose cables and hardware problems are possible reasons.</desc>
     <credit type="author">
       <name>GNOME ドキュメンテーションプロジェクト</name>
       <email>gnome-doc-list@gnome.org</email>
@@ -19,7 +17,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -41,56 +39,60 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Noriko Mizumoto</mal:name>
-      <mal:email>noriko@fedoraproject.org</mal:email>
-      <mal:years>2013, 2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>坂本 貴史</mal:name>
-      <mal:email>o-takashi@sakamocchi.jp</mal:email>
-      <mal:years>2013, 2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>日本GNOMEユーザー会</mal:name>
       <mal:email>http://www.gnome.gr.jp/</mal:email>
       <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
 
-<title>コンピューターの電源が入りません</title>
+<title>My computer will not turn on</title>
 
-<p>コンピューターの電源が入らない原因はいくつか考えられます。ここでは考えられる原因のいくつかを簡単に見ていくことにします。</p>
+<p>There are a number of reasons why your computer will not turn on. This topic
+gives a brief overview of some of the possible reasons.</p>
+
+  <comment>
+   <cite date="2012-02-19" href="mailto:gnome-doc-list@gnome.org">GNOME Documentation Project</cite>
+   <p>This is a complicated topic. Give troubleshooting steps/reasons for why the computer won't turn on. Some of the reasons may be down to hardware failure.</p>
+   <p>This was marked incomplete as of 2011-04-04. I marked it final
+   for 3.0. If there is more to add, revisit for 3.2.</p>
+  </comment>
 	
 <section id="nopower">
-  <title>コンセントが抜けている、バッテリー切れ、電源ケーブルが外れかかっている</title>
-  <p>コンピューターの電源ケーブルがしっかりと挿し込まれていること、コンセントのスイッチがオンになっていることを確認します。また、モニターの電源ケーブルおよびスイッチも同様に確認してください。ラップトップの場合は充電ケーブルを確認します (バッテリー切れの場合があります)。バッテリーが着脱式の場合、正しく取り付けられているか (ラップトップの裏側など) 確認してください。</p>
+  <title>Computer not plugged in, empty battery, or loose cable</title>
+  <p>Make sure that the power cables of the computer are firmly plugged in and
+  the power outlets are switched on. Make sure that the monitor is plugged in
+  and switched on too. If you have a laptop, connect the charging cable (in
+  case it has run out of battery). You may also want to check that the battery
+  is correctly fitted in place (check the underside of the laptop) if it is
+  removable.</p>
 </section>
 
 <section id="hardwareproblem">
-  <title>コンピューターのハードウェアに問題がある</title>
+  <title>Problem with the computer hardware</title>
   <p>A component of your computer may be broken or malfunctioning. If this is
   the case, you will need to get your computer repaired. Common faults include
   a broken power supply unit, incorrectly-fitted components (such as the
-  memory or RAM) and a faulty motherboard.</p>
+  memory/RAM) and a faulty motherboard.</p>
 </section>
 
 <section id="beeps">
-  <title>コンピューターがビープ音を発して電源が切れる</title>
+  <title>The computer beeps and then switches off</title>
   <p>If the computer beeps several times when you turn it on and then turns off
   (or fails to start), it may be indicating that it has detected a problem.
   These beeps are sometimes referred to as <em>beep codes</em>, and the pattern
   of beeps is intended to tell you what the problem with the computer is.
   Different manufacturers use different beep codes, so you will have to consult
-  the manual for your computer’s motherboard, or take your computer in for
+  the manual for your computer's motherboard, or take your computer in for
   repairs.</p>
 </section>
 
 <section id="fans">
-  <title>コンピューターのファンは回っているのに画面には何も表示されません</title>
-  <p>まず最初に、モニターのコンセントが挿し込まれていること、電源が入っていることを確認してください。</p>
-  <p>この問題は、ハードウェアの故障が原因である可能性もあります。電源ボタンを押したときにファンには電源が入るが、他の主要な部分の電源入力に障害が発生している可能性があります。この場合はコンピューターを修理に出してください。</p>
+  <title>The computer fans are spinning but nothing is on the screen</title>
+  <p>The first thing to check is that your monitor is plugged in and turned
+  on.</p>
+  <p>This problem could also be due to a hardware fault. The fans might turn on
+  when you press the power button, but other essential parts of the computer
+  might fail to turn on. In this case, take your computer in for repairs.</p>
 </section>
 
 </page>

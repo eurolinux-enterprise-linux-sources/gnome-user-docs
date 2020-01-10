@@ -4,7 +4,7 @@
   <info>
     <link type="guide" xref="hardware" group="more"/>
 
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <desc>A hardware/device driver allows your computer to use devices that are attached to it.</desc>
 
     <credit type="author">
       <name>GNOME ドキュメンテーションプロジェクト</name>
@@ -12,14 +12,11 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>A hardware/device driver allows your computer to use devices that are
-    attached to it.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -41,18 +38,6 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Noriko Mizumoto</mal:name>
-      <mal:email>noriko@fedoraproject.org</mal:email>
-      <mal:years>2013, 2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>坂本 貴史</mal:name>
-      <mal:email>o-takashi@sakamocchi.jp</mal:email>
-      <mal:years>2013, 2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>日本GNOMEユーザー会</mal:name>
       <mal:email>http://www.gnome.gr.jp/</mal:email>
       <mal:years>2011, 2012</mal:years>
@@ -61,22 +46,14 @@
 
 <title>ドライバーとはなんですか?</title>
 
-<p>Devices are the physical “parts” of your computer. They may be
-<em>external</em> like printers and monitor or <em>internal</em> like graphics
-and audio cards.</p>
+<p>デバイスとはコンピューターの物理的な"部品"です。デバイスは<em>外部デバイス</em>であればプリンターやモニター、<em>内部デバイス</em>であればグラフィックカードやオーディオカードのようなものを指します。</p>
 
 <p>これらのデバイスをコンピューターで利用できるようにするには、デバイスとどのように通信するかを知る必要があります。これを<em>デバイスドライバー</em>と呼ばれるソフトウェアが行います。</p>
 
-<p>When you attach a device to your computer, you must have the correct driver
-installed for that device to work. For example, if you plug in a printer but
-the correct driver is not available, you will not be able to use the printer.
-Normally, each model of device uses a driver that is not compatible with any
-other model.</p>
+<p>デバイスをコンピューターに接続したとき、デバイスが動くように正しいドライバーをインストールしなければなりません。たとえば、プリンターを接続しても正しいドライバーが利用できない場合、プリンターを使うことができません。通常は、デバイスのモデルごとに他のモデルと互換性のないドライバーを利用します。</p>
 
 <p>Linuxでは、多くのデバイスドライバーが標準でインストール済みのため、デバイスを接続すれば動作するでしょう。しかし、ドライバーは、手動でインストールしなければならないこともあれば、まったく利用できないこともあります。</p>
 
-<p>In addition, some existing drivers are incomplete or partially
-non-functional. For example, you might find that your printer cannot do
-double-sided printing, but is otherwise completely functional.</p>
+<p>さらに、いくつかのドライバーは不完全か一部が機能しません。たとえば、プリンターが両面印刷はできないが、その他は完璧に動作するかもしれません。</p>
 
 </page>

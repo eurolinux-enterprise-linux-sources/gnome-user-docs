@@ -4,52 +4,62 @@
   <info>
     <link type="guide" xref="sound-broken"/>
 
+    <desc>Check your audio cables and sound card drivers.</desc>
+
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
-      <name>Dokumentační projekt GNOME</name>
+      <name>GNOME Documentation Project</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Zkontrolujte audiokabely a ovladače zvukové karty.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
       <mal:email>adamatousek@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Marek Černocký</mal:name>
-      <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014, 2015</mal:years>
-    </mal:credit>
   </info>
 
-<title>Při přehrávání zvuku slyším praskání a bzučení</title>
+<title>I hear crackling or buzzing when sounds are playing</title>
 
-  <p>Pokud při přehrávání zvuku na svém počítači slyšíte praskání nebo bzučení, máte nejspíše problém s audiokabelem nebo konektorem a nebo s ovladačem zvukové karty.</p>
+  <p>If you hear crackling or buzzing when sounds are playing on your computer,
+ you may have a problem with the audio cables or connectors, or a problem with
+ the drivers for the sound card.</p>
 
 <list>
  <item>
-  <p>Ujistěte se, že jsou správně připojené reproduktory.</p>
-  <p>Když konektor od reproduktorů není pořádně zasunutý nebo je zasunutý do nesprávné zdířky, můžete slyšet bzučivý zvuk.</p>
+  <p>Check that the speakers are plugged in correctly.</p>
+  <p>If the speakers aren't fully plugged in, or if they are plugged into the
+  wrong socket, you might hear a buzzing sound.</p>
  </item>
 
  <item>
-  <p>Zkontrolujte, jestli není poškozený kabel k reproduktorům/sluchátkům.</p>
-  <p>Zvukové kabely a konektory se používáním postupně opotřebovávají. Zkuste zapojit kabel nebo sluchátka do jiného zvukového zařízení (jako je přehrávače MP3 nebo přehrávač CD), abyste si ověřili, jestli i tam uslyšíte praskavý zvuk. Pokud ano, měli byste kabel či sluchátka vyměnit.</p>
+  <p>Make sure the speaker/headphone cable isn't damaged.</p>
+  <p>Audio cables and connectors can gradually wear with use. Try plugging the
+  cable or headphones into another audio device (like an MP3 player or a CD
+  player) to check if there is still a crackling sound. If there is, you may need
+  to replace the cable or headphones.</p>
  </item>
 
  <item>
-  <p>Zkontrolujte, jestli má ovladač zvukové karty patřičnou kvalitu.</p>
-  <p>Některé zvukové karty nefungují v Linuxu úplně nejlépe, protože nemají kvalitní ovladače. Odhalit takovýto problém je náročnější. Zkuste vyhledat výrobce a model své zvukové karty na Internetu a zároveň hledejte výraz „Linux“, abyste zjistili, jestli obdobný problém nemají i jiní.</p>
-  <p>Abyste získali o zvukové kartě více informací, můžete použít příkaz <cmd>lspci</cmd>.</p>
+  <p>Check if the sound drivers aren't very good.</p>
+  <p>Some sound cards don't work very well on Linux because they don't have very
+  good drivers. This problem is more difficult to identify. Try searching for
+  the make and model of your sound card on the internet, plus the search term
+  "Linux", to see if other people are having the same problem.</p>
+  <p>You can use the <cmd>lspci</cmd> command to get more information about your
+  sound card.</p>
  </item>
 </list>
+
+<comment>
+  <cite date="2012-02-19">shaunm</cite>
+  <p>Are we shipping any sort of device manager? If we do (or even if we
+  recommend one, but people need to install it), and if you can get all
+  the information you need about the sound card from that, we should
+  link to that for getting info on your sound card.</p>
+</comment>
 
 </page>

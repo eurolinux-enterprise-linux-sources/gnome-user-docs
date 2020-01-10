@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" version="1.0 if/1.0" id="shell-windows-maximize" xml:lang="fi">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" id="shell-windows-maximize" xml:lang="fi">
 
   <info>
     <link type="guide" xref="shell-windows#working-with-windows"/>
     <link type="seealso" xref="shell-windows-tiled"/>
 
+    <desc>Ikkunan koon muuttaminen otsikkopalkkia raahaamalla tai kaksoisnapsauttamalla.</desc>
+
     <revision pkgversion="3.4.0" date="2012-03-14" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -14,19 +15,11 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Ikkunan koon muuttaminen otsikkopalkkia raahaamalla tai kaksoisnapsauttamalla.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Timo Jyrinki</mal:name>
       <mal:email>timo.jyrinki@iki.fi</mal:email>
       <mal:years>2012.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Jiri Grönroos</mal:name>
-      <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
-      <mal:years>2012-2018.</mal:years>
     </mal:credit>
   </info>
 
@@ -34,14 +27,21 @@
 
   <p>Ikkunan voi suurentaa koko työpöydän kokoiseksi ja myöhemmin palauttaa takaisin normaalikokoiseksi. Ikkunoita voi myös suurentaa pystysuunnassa työpöydän oikeaan ja vasempaan reunaan mahdollistaen kahden ikkunan käyttämisen samanaikaisesti. Lue <link xref="shell-windows-tiled"/> saadaksesi lisätietoa.</p>
 
-  <p>Suurenna ikkuna ottamalla kiinni ikkunapalkista ja vetämällä ikkuna näytön yläosaan, tai kaksoisnapsauta ikkunapalkkia. Voit suurentaa ikkunan näppäimistö käyttäen painamalla pohjaan <key xref="keyboard-key-super">Super</key> ja painamalla <key>↑</key>, tai paina <keyseq><key>Alt</key><key>F10</key></keyseq>.</p>
+  <p>To maximize a window, grab the titlebar and drag it to the top of the
+  screen, or just double-click the titlebar. To maximize a window using the
+  keyboard, hold down the <key xref="keyboard-key-super">Super</key> key and
+  press <key>↑</key>, or press <keyseq><key>Alt</key><key>F10</key></keyseq>.
+  </p>
 
-  <p if:test="platform:gnome-classic">Voit suurentaa ikkunan myös napsauttamalla ikkunapalkissa olevaa suurennuspainiketta.</p>
+  <p if:test="platform:gnome-classic">You can also maximize a window by
+  clicking the maximize button in the titlebar.</p>
 
-  <p>Palauta ikkuna alkuperäiseen kokoon vetämällä se pois näytön reunasta. Jos ikkuna on suurennettu koko näytön kokoiseksi, voit kaksoisnapsauttaa ikkunapalkkia palauttaaksesi koon. Voit käyttää myös samoja pikanäppäimiä, joita käytit ikkunan suurentamiseksi.</p>
+  <p>To restore a window to its unmaximized size, drag it away from the edges
+  of the screen. If the window is fully maximized, you can double-click the
+  titlebar to restore it. You can also use the same keyboard shortcuts you
+  used to maximize the window.</p>
 
   <note style="tip">
-    <p>Pidä <key>Super</key> pohjassa ja raahaa ikkunaa mistä kohdasta tahansa siirtääksesi kyseistä ikkunaa.</p>
+    <p>Pidä <key>Alt</key> pohjassa ja raahaa ikkunaa mistä kohdasta tahansa siirtääksesi kyseistä ikkunaa.</p>
   </note>
-
 </page>

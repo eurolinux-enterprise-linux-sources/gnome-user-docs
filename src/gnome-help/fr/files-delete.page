@@ -2,13 +2,11 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-delete" xml:lang="fr">
 
   <info>
-    <link type="guide" xref="files#common-file-tasks"/>
+    <link type="guide" xref="files"/>
     <link type="seealso" xref="files-recover"/>
+    <desc>Supprimer des fichiers ou dossiers dont vous n'avez plus besoin.</desc>
 
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-16" status="review"/>
-    <revision pkgversion="3.13.92" date="2013-09-20" status="candidate"/>
-    <revision pkgversion="3.16" date="2015-02-22" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
 
     <credit type="author">
       <name>Cristopher Thomas</name>
@@ -18,22 +16,15 @@
       <name>Shaun McCance</name>
       <email>shaunm@gnome.org</email>
     </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
     <credit type="author">
       <name>Jim Campbell</name>
-      <email>jcampbell@gnome.org</email>
+      <email>jwcampbell@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Supprimer des fichiers ou dossiers dont vous n'avez plus besoin.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Luc Pionchon</mal:name>
@@ -50,13 +41,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Julien Hardelin</mal:name>
       <mal:email>jhardlin@orange.fr</mal:email>
-      <mal:years>2011, 2013</mal:years>
+      <mal:years>2011</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -82,32 +73,17 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Alexandre Franke</mal:name>
-      <mal:email>alexandre.franke@gmail.com</mal:email>
-      <mal:years>2015</mal:years>
-    </mal:credit>
   </info>
 
 <title>Suppression de fichiers et de dossiers</title>
 
-  <p>If you do not want a file or folder any more, you can delete it. When you
-  delete an item it is moved to the <gui>Trash</gui> folder, where it is stored
-  until you empty the trash. You can <link xref="files-recover">restore
-  items</link> in the <gui>Trash</gui> folder to their original location if you
-  decide you need them, or if they were accidentally deleted.</p>
+  <p>Si vous n'avez plus besoin d'un fichier ou d'un dossier, vous pouvez le supprimer. La suppression d'un élément le déplace dans le dossier Corbeille où il est stocké jusqu'à ce que vous vidiez la corbeille. Les éléments de la corbeille peuvent être <link xref="files-recover">restaurés à leur emplacement d'origine</link> si vous changez d'avis et décidez de les conserver, ou s'ils ont été supprimés par inadvertance.</p>
 
   <steps>
     <title>Pour mettre un fichier à la corbeille :</title>
-    <item><p>sélectionnez l'élément à supprimer en cliquant dessus une fois,</p></item>
-    <item><p>appuyez sur la touche <key>Suppr</key> de votre clavier ou faites glisser l'élément jusque dans la <gui>Corbeille</gui> du panneau latéral.</p></item>
+    <item><p>Sélectionnez l'élément à supprimer en cliquant dessus une fois.</p></item>
+    <item><p>Appuyez sur la touche <keyseq><key>Ctrl</key><key>Suppr</key></keyseq> de votre clavier ou faites glisser l'élément jusque dans la <gui>Corbeille</gui> du panneau latéral.</p></item>
   </steps>
-
-  <p>The file will be moved to the trash, and you’ll be presented with an
-  option to <gui>Undo</gui> the deletion. The <gui>Undo</gui> button will appear
-  for a few seconds. If you select <gui>Undo</gui>, the file will be restored
-  to its original location.</p>
 
   <p>Pour effacer les fichiers définitivement et libérer de l'espace disque sur votre ordinateur, vous devez vider la corbeille. Pour vider la corbeille, effectuez un clic-droit sur la <gui>Corbeille</gui> dans la barre latérale et sélectionnez <gui>Vider la corbeille</gui>.</p>
 
@@ -122,8 +98,9 @@
     <item><p>Comme c'est une action irréversible, il vous est demandé une confirmation avant de supprimer définitivement le fichier ou le dossier.</p></item>
   </steps>
 
-  <note><p>Les fichiers supprimés d'un <link xref="files#removable">média amovible</link> peuvent être invisibles pour d'autres systèmes comme Windows ou Mac OS. Malgré tout, les fichiers y sont toujours présents et redeviennent disponibles quand vous reconnectez le média sur votre ordinateur.</p></note>
+  <note style="tip"><p>S'il vous arrive fréquemment de supprimer des fichiers sans passer par la corbeille (par exemple si vous travaillez avec des données sensibles), vous pouvez ajouter une option <gui>Supprimer</gui> au menu contextuel des fichiers et dossiers. Cliquez sur <gui>Fichiers</gui> dans la barre supérieure, choisissez <gui>Préférences</gui> et dans l'onglet <gui>Comportement</gui> cochez la case <gui>Inclure une commande Supprimer qui ignore la corbeille</gui>.</p></note>
+
+  <note><p>Les fichiers supprimés d'un <link xref="files#removable">média amovible</link> peuvent être invisibles pour d'autres systèmes comme Windows ou Mac OS. Malgré tout, les fichiers y sont toujours présent et redeviennent disponibles quand vous reconnectez le média sur votre ordinateur.</p></note>
 
   </section>
-
 </page>

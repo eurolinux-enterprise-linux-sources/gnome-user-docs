@@ -2,12 +2,11 @@
 <page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="files-search" xml:lang="el">
 
   <info>
-    <link type="guide" xref="files#common-file-tasks"/>
+    <link type="guide" xref="files"/>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-25" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
+    <desc>Εντοπίστε τα αρχεία με βάση το όνομα του αρχείου και τον τύπο. Αποθηκεύστε τις αναζητήσεις σας για μελλοντική χρήση.</desc>
     <credit type="author">
       <name>Έργο Τεκμηρίωσης GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
@@ -20,55 +19,36 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Βρείτε αρχεία με βάση το όνομα και τον τύπο τους.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
-      <mal:email>team@gnome.gr</mal:email>
-      <mal:years>2009-2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
       <mal:email>dmtrs32@gmail.com</mal:email>
-      <mal:years>2012-2015</mal:years>
+      <mal:years>2012, 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:name> Φώτης Τσάμης</mal:name>
       <mal:email>ftsamis@gmail.com</mal:email>
       <mal:years>2009</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:name> Μάριος Ζηντίλης</mal:name>
       <mal:email>m.zindilis@dmajor.org</mal:email>
       <mal:years>2009, 2010</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Θάνος Τρυφωνίδης</mal:name>
-      <mal:email>tomtryf@gnome.org</mal:email>
-      <mal:years>2012-2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Μαρία Μαυρίδου</mal:name>
-      <mal:email>mavridou@gmail.com</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:name> Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
     </mal:credit>
   </info>
 
   <title>Αναζήτηση για αρχεία</title>
 
-  <p>Μπορείτε να ψάξετε για αρχεία με βάση το όνομα τους ή τον τύπο τους μέσω του διαχειριστή αρχείων.</p>
+  <p>Μπορείτε να αναζητήσετε αρχεία με βάση το όνομά τους ή τον τύπο του αρχείου άμεσα στον διαχειριστή αρχείων. Μπορείτε ακόμα να αποθηκεύσετε κοινές αναζητήσεις και θα εμφανιστούν ως ειδικοί φάκελοι στον προσωπικό σας φάκελο.</p>
 
   <links type="topic" style="linklist">
     <title>Άλλες εφαρμογές αναζήτησης</title>
@@ -78,41 +58,28 @@
 
   <steps>
     <title>Αναζήτηση</title>
-    <item>
-      <p>Ανοίξτε τα <app>Αρχεία</app> από την επισκόπηση <gui xref="shell-introduction#activities">Δραστηριότητες</gui>.</p>
+    <item><p>Ανοίξτε την εφαρμογή <app>αρχεία</app> από την επισκόπηση <gui>Ενέργειες</gui>.</p></item>
+    <item><p>Εάν ξέρετε ότι τα αρχεία που θέλετε είναι σε συγκεκριμένο φάκελο, πηγαίνετε σε αυτόν τον φάκελο.</p></item>
+    <item><p>Πατήστε τον μεγεθυντικό φακό στην εργαλειοθήκη, ή πατήστε <keyseq><key>Ctrl</key><key>F</key></keyseq>.</p></item>
+    <item><p>Πληκτρολογήστε μια λέξη ή λέξεις που ξέρετε ότι εμφανίζονται στο όνομα του αρχείου. Για παράδειγμα, εάν ονομάζετε όλα τα τιμολόγια με τη λέξη "τιμολόγιο", πληκτρολογήστε <input>τιμολόγιο</input>. Πατήστε <key>εισαγωγή</key>. Οι λέξεις ταιριάζουν ανεξάρτητα από πεζά/κεφαλαία.</p></item>
+    <item><p>Μπορείτε να περιορίσετε τα αποτελέσματά σας κατά τοποθεσία και τύπο αρχείου.</p>
+    <list>
+      <item><p>Πατήστε <gui>προσωπικό</gui> για περιορισμό των αποτελεσμάτων αναζήτησης στον φάκελό σας <file>προσωπικός</file>, ή <gui>όλα τα αρχεία</gui> για αναζήτηση παντού.</p></item>
+      <item><p>Πατήστε <key>+</key> και επιλέξτε <gui>τύπος αρχείου</gui> από την πτυσσόμενη λίστα για να περιορίσετε τα αποτελέσματα αναζήτησης με βάση τον τύπο του αρχείου. Πατήστε το κουμπί <key>x</key> για να αφαιρέσετε αυτήν την επιλογή και να διευρύνετε τα αποτελέσματα αναζήτησης.</p></item>
+    </list>
     </item>
-    <item>
-      <p>Εάν ξέρετε ότι τα αρχεία που θέλετε είναι σε συγκεκριμένο φάκελο, πηγαίνετε σε αυτόν τον φάκελο.</p>
-    </item>
-    <item>
-      <p>Type a word or words that you know appear in the file name, and they
-      will be shown in the search bar. For example, if you name all your
-      invoices with the word “Invoice”, type <input>invoice</input>. Words are
-      matched regardless of case.</p>
-      <note>
-        <p>Αντί να πληκτρολογήσετε λέξεις για να εμφανίσετε τη γραμμή αναζήτησης, μπορείτε να κάνετε κλικ στον μεγεθυντικό φακό στην εργαλειοθήκη, ή να πατήστε <keyseq><key>Ctrl</key><key>F</key></keyseq>.</p>
-      </note>
-    </item>
-    <item>
-      <p>Μπορείτε να περιορίσετε τα αποτελέσματά σας κατά τοποθεσία και τύπο αρχείου.</p>
-      <list>
-        <item>
-          <p>Κάντε κλικ στο <gui>Προσωπικός φάκελος</gui> για να περιορίσετε τα αποτελέσματα αναζήτησης στον φάκελο <file>Προσωπικός φάκελος</file>, ή <gui>Όλα τα αρχεία</gui> για αναζήτηση παντού.</p>
-        </item>
-        <item>
-          <p>Click the <gui>+</gui> button and pick a <gui>File Type</gui> from
-	  the drop-down list to narrow the search results based on file type.
-	  Click the <gui>×</gui> button to remove this option and widen the
-	  search results.</p>
-        </item>
-      </list>
-    </item>
-    <item>
-      <p>Μπορείτε να ανοίξετε, να αντιγράψετε, να διαγράψετε ή αλλιώς να δουλέψετε με τα αρχεία σας από τα αποτελέσματα αναζήτησης, όπως ακριβώς θα κάνατε από κάθε φάκελο στον διαχειριστή αρχείων.</p>
-    </item>
-    <item>
-      <p>Κάντε κλικ στον μεγεθυντικό φακό στην εργαλειοθήκη ξανά για να βγείτε από την αναζήτηση και να επιστρέψετε στον φάκελο.</p>
-    </item>
+    <item><p>Μπορείτε να ανοίξετε, να αντιγράψετε, να διαγράψετε ή αλλιώς να δουλέψετε με τα αρχεία σας από τα αποτελέσματα αναζήτησης, όπως ακριβώς θα κάνατε από κάθε φάκελο στον διαχειριστή αρχείων.</p></item>
+    <item><p>Πατήστε τον μεγεθυντικό φακό στην εργαλειοθήκη ξανά για να βγείτε από την αναζήτηση και να επιστρέψετε στον φάκελο.</p></item>
   </steps>
 
+  <p>Εάν κάνετε συγκεκριμένες αναζητήσεις συχνά, μπορείτε να τις αποθηκεύσετε για να τις προσπελάσετε γρήγορα.</p>
+
+  <steps>
+    <title>Αποθήκευση αναζήτησης</title>
+    <item><p>Αποθήκευση αναζήτησης όπως πιο πάνω.</p></item>
+    <item><p>Όταν είσαστε ικανοποιημένοι με τις παραμέτρους αναζήτησης, πατήστε το κουμπί γραναζιού και επιλέξτε <gui>αποθήκευση αναζήτησης ως</gui>.</p></item>
+    <item><p>Δώστε στην αναζήτηση ένα όνομα και πατήστε <gui>αποθήκευση</gui>. Εάν θέλετε, επιλέξτε έναν διαφορετικό φάκελο για να αποθηκεύσετε την αναζήτηση. Όταν προβάλετε αυτόν τον φάκελο, θα δείτε την αποθηκευμένη αναζήτησή σας ως ένα πορτοκαλί εικονίδιο φακέλου με έναν μεγεθυντικό φακό σε αυτό.</p></item>
+  </steps>
+
+  <p>Για να αφαιρέσετε το αρχείο αναζήτησης όταν τελειώσετε με αυτό, απλά <link xref="files-delete">διαγράψτε</link> την αναζήτηση όπως θα κάνατε με οποιαδήποτε άλλο αρχείο. Όταν διαγράφετε μια αποθηκευμένη αναζήτηση, δεν διαγράφει τα αρχεία που η αναζήτηση βρήκε.</p>
 </page>

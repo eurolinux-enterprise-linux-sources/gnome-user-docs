@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task a11y" id="a11y-stickykeys" xml:lang="ca">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task a11y" id="a11y-stickykeys" xml:lang="ca">
   <info>
     <link type="guide" xref="a11y#mobility" group="keyboard"/>
     <link type="guide" xref="keyboard" group="a11y"/>
 
-    <revision pkgversion="3.8.0" date="2013-03-13" status="candidate"/>
-    <revision pkgversion="3.9.92" date="2013-09-18" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="final"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -24,12 +18,9 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
-    <desc>Com escriure les dreceres de teclat prement una única tecla cada vegada en comptes d'havent-les de mantenir totes premudes alhora.</desc>
+    <desc>Com escriure les dreceres de teclat prement una única tecla cada vegada enlloc d'havent-les de mantenir totes premudes alhora.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>David Aguilera</mal:name>
@@ -40,37 +31,53 @@
 
   <title>Activació les tecles enganxoses</title>
 
-  <p>Les <em>tecles enganxoses</em> us permeten escriure les dreceres de teclat prement les tecles d'una a una en comptes d'haver-les de prémer totes alhora. Per exemple, la drecera de teclat <keyseq><key xref="keyboard-key-super">Súper</key><key>Tabulació</key></keyseq> canvia entre finestres. Sense les tecles enganxoses activades, hauríeu de mantenir premudes les dues tecles alhora. En canvi, amb les tecles enganxoses activades, primer hauríeu de prémer <key>Súper</key> i, després, <key>Tabulació</key> per aconseguir el mateix efecte.</p>
+  <p><em>Sticky keys</em> allows you to type keyboard shortcuts one key at a
+  time rather than having to hold down all of the keys at once. For example,
+  the <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq>
+  shortcut switches between windows. Without sticky keys turned on, you would
+  have to hold down both keys at the same time; with sticky keys turned on, you
+  would press <key>Super</key> and then <key>Tab</key> to do the same.</p>
 
   <p>Activeu les tecles enganxoses si teniu problemes a l'hora de prémer més d'una tecla alhora.</p>
 
   <steps>
     <item>
-      <p>Obriu la descripció general de les <gui xref="shell-introduction#activities">Activities</gui>  i comenceu a escriure  <gui>Accés Universal</gui>.</p>
+      <p>Click your name on the top bar and select <gui>Settings</gui>.</p>
     </item>
     <item>
-      <p>Feu clic a <gui>Accés universal</gui> per obrir el quadre.</p>
+      <p>Obriu l'<gui>Accés universal</gui> i seleccioneu la pestanya <gui>Escriptura</gui>.</p>
     </item>
     <item>
-      <p>Premeu <gui>Assistència d'escriptura (AccessX)</gui> a la secció <gui>Escriptura</gui>.</p>
-    </item>
-    <item>
-      <p>Canvieu les <gui>tecles permanents</gui> a <gui>ON</gui>.</p>
+      <p>Activeu les <gui>Tecles enganxoses</gui>.</p>
     </item>
   </steps>
 
   <note style="tip">
-    <title>Canvieu ràpidament les tecles permanents a ON i OFF</title>
-    <p>A <gui>Activa per Teclat</gui>, seleccioneu <gui>Activar les funcions d'accessibilitat des del teclat</gui> per activar i desactivar les tecles lentes. Quan es selecciona aquesta opció, podeu mantenir premut <key>Shift</key> cinc vegades en una fila per activar o desactivar les tecles lentes.</p>
-    <p>També podeu activar les tecles enganxoses si feu clic a la <link xref="a11y-icon">icona d'accessibilitat</link> del quadre superior i seleccioneu les <gui>Tecles enganxoses</gui>. La icona d'accessibilitat només es mostra si s'ha activat alguna opció en el quadre d'<gui>Accés universal</gui>.</p>
+    <title>Quickly turn sticky keys on and off</title>
+    <p>Under <gui>Enable by Keyboard</gui>, select
+    <gui>Turn on accessibility features from the keyboard</gui>
+    to turn sticky keys on and off from the keyboard. When this option is
+    selected, you can press <key>Shift</key> five times in a row to enable or
+    disable sticky keys.</p>
+    <p>You can also turn sticky keys on and off by clicking the
+    <link xref="a11y-icon">accessibility icon</link> on the top bar and
+    selecting <gui>Sticky Keys</gui>. The accessibility icon is visible when
+    one or more settings have been enabled from the <gui>Universal Access</gui>
+    panel.</p>
   </note>
 
-  <p>Si premeu dues tecles alhora, podeu fer que les tecles enganxoses es desactivin automàticament, de forma temporal, per tal que pugueu introduir una drecera de teclat de la forma «estàndard».</p>
+  <p>If you press two keys at once, you can have sticky keys turn itself off
+  temporarily to let you enter a keyboard shortcut in the normal way.</p>
 
-  <p>Per exemple, si tot i tenint activades les tecles enganxoses premeu <key>Súper</key> i <key>Tabulació</key> simultàniament, les tecles enganxoses no esperaran a què premeu una altra tecla. Només l'<em>esperarien</em> si haguéssiu premut una única tecla. Això és útil si sou capaços de prémer algunes dreceres de teclat alhora (aquelles en què, per exemple, les tecles estan juntes), i d'altres no.</p>
+  <p>For example, if you have sticky keys turned on but press <key>Super</key>
+  and <key>Tab</key> simultaneously, sticky keys would not wait for you to
+  press another key if you had this option turned on. It <em>would</em> wait if
+  you only pressed one key, however. This is useful if you are able to press
+  some keyboard shortcuts simultaneously (for example, keys that are close
+  together), but not others.</p>
 
   <p>Seleccioneu <gui>Inhabilita si es premen dues tecles alhora</gui> per activar-ho.</p>
 
-  <p>Podeu fer que l'ordinador faci un so "beep" quan comenceu a escriure una drecera de teclat amb les tecles permanents activades. Això és útil si voleu saber que les tecles permanents esperen que es teclegi un accés directe pel teclat, de manera que la següent tecla premuda s'interpretarà com a part d'una drecera. Seleccioneu <gui>Beep quan es pressiona una tecla modificadora</gui> per activar-ho.</p>
+  <p>Podeu configurar l'ordinador perquè emeti un so quan comenceu a introduir una drecera de teclat tenint les tecles enganxoses activades. Això és útil si voleu saber quan les tecles enganxoses estan esperant que s'introdueixi una drecera de teclat, per tal que la següent pulsació s'interpreti com a part d'aquesta drecera. Seleccioneu <gui>Fes un avís sonor quan es premi una tecla modificadora</gui> per activar-ho.</p>
 
 </page>

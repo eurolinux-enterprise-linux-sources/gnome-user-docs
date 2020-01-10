@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="mouse-problem-notmoving" xml:lang="pt-BR">
-
-  <info>
+<info>
     <link type="guide" xref="mouse#problems"/>
 
-    <revision pkgversion="3.8" date="2013-03-13" status="candidate"/>
-    <!-- TODO: reorganise page and tidy because it's one ugly wall of text -->
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+    <desc>Como verificar se o seu mouse não está funcionando.</desc>
+
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
 
     <credit type="author">
         <name>Phil Bull</name>
@@ -16,11 +15,8 @@
       <name>Shaun McCance</name>
       <email>shaunm@gnome.org</email>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Como verificar por que o seu mouse não está funcionando.</desc>
-  
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Rodolfo Ribeiro Gomes</mal:name>
       <mal:email>rodolforg@gmail.com</mal:email>
@@ -28,32 +24,58 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Enrico Nicoletto</mal:name>
       <mal:email>liverig@gmail.com</mal:email>
       <mal:years>2013.</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>João Santana</mal:name>
-      <mal:email>joaosantana@outlook.com</mal:email>
-      <mal:years>2013.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Fontenelle</mal:name>
-      <mal:email>rafaelff@gnome.org</mal:email>
-      <mal:years>2012-2018.</mal:years>
-    </mal:credit>
   </info>
 
-<title>O ponteiro do mouse não está movendo</title>
+<title>Ponteiro do mouse não está movendo</title>
 
 <links type="section"/>
 
 <section id="plugged-in">
  <title>Verificar se o mouse está conectado</title>
- <p>Se você tem um mouse com um cabo, certifique-se de que ele está firmemente conectado a seu computador.</p>
+ <p>Se você tem um mouse com um cabo, certifique-se de que ele está firmemente conectado ao seu computador.</p>
  <p>Se ele é um mouse USB (com um conector retangular), tente conectá-lo a uma porta USB diferente. Se for um mouse PS/2 (com um conector redondo e pequeno, com seis pinos), certifique-se de que ele está plugado à porta de mouse, verde, ao invés da porta do teclado, roxa. Você pode ter que reiniciar o computador, se ele não estava conectado antes.</p>
+</section>
+
+<section id="connected">
+ <title>Verificar se o mouse foi reconhecido pelo seu computador</title>
+ <steps>
+  <item><p>Abra o aplicativo <app>Terminal</app> no panorama de <gui>Atividades</gui>.</p></item>
+  <item>
+   <p>Na janela do terminal, digite <cmd>xsetpointer -l | grep Pointer</cmd>, exatamente como se aparecesse aqui e pressione <key>Enter</key>.</p>
+  </item>
+  <item>
+   <p>Uma lista curta de dispositivos de mouse vai aparecer. Confirma se ao menos um dos itens diz <sys>[XExtensionPointer]</sys> próximo a ele e que um dos itens <sys>[XExtensionPointer]</sys> possui o nome do mouse à esquerda dele.</p>
+  </item>
+  <item>
+   <p>Se não houver uma entrada que tiver o nome do mouse seguido por <sys>[XExtensionPointer]</sys>, então o mouse não foi reconhecido pelo seu computador. Se a entrada existir, seu mouse foi reconhecido pelo seu computador. Neste caso, você deveria verificar se o mouse está <link xref="mouse-problem-notmoving#plugged-in">conectado</link> e em <link xref="mouse-problem-notmoving#broken">condição de funcionamento</link>.</p>
+  </item>
+ </steps>
+
+ <comment>
+   <cite date="2012-02-19">shaunm</cite>
+   <p>If we decide to bless a device manager, investigate using that instead
+   of <cmd>xsetpointer</cmd> in these steps.</p>
+ </comment>
+
+ <p>Se seu mouse possuir um conector serial (RS-232), você pode precisar realizar algumas etapas extras para fazê-lo funcionar. As etapas podem depender da marca e modelo do seu mouse.</p>
+
+ <p>Pode ser complicado corrigir problemas de detecção do mouse. Solicite suporte de sua distribuição ou fabricante, se você acha que seu mouse não foi detectado adequadamente.</p>
+
+ <comment>
+ <cite date="2012-02-19">Phil Bull</cite>
+  <p>Should provide some useful advice rather than just saying "you might need
+  to perform extra steps".</p>
+ </comment>
 </section>
 
 <section id="broken">
@@ -66,11 +88,9 @@
 <section id="wireless-mice">
  <title>Verificando mouses sem fio</title>
 
-  <list>
-    <item>
-      <p>Certifique-se de que o seu mouse está ativado. Geralmente há um botão embaixo do mouse para desligar completamente o mouse. Então, você pode movê-lo de um lugar para o outro sem ele ficar consumindo pilha.</p>
-    </item>
-   <item><p>Se estiver usando um mouse Bluetooth, certifique-se de que você realmente pareou o mouse com o seu computador. Veja <link xref="bluetooth-connect-device"/>.</p></item>
+ <list>
+   <item><p>Certifique-se de que o seu mouse está ativado. Geralmente há um botão embaixo do mouse para desligar completamente o mouse. Então, você pode movê-lo de um lugar para o outro sem ele ficar consumindo pilha.</p></item>
+   <item><p>Se estiver usando um mouse Bluetooth, assegure-se de que você realmente pareou o mouse com o seu computador. Veja <link xref="bluetooth-connect-device"/>.</p></item>
   <item>
    <p>Clique em um botão e veja se o ponteiro do mouse move agora. Alguns mouses sem fio entram em modo standby para economizar energia e, então, podem não responder até você clicar em um botão. Veja <link xref="mouse-wakeup"/>.</p>
   </item>
@@ -88,7 +108,13 @@
   </item>
  </list>
 
- <p>A maioria dos mouses sem fio por radiofrequência (RF) devem funcionar automaticamente quando conectados ao computador. Se você tem um mouse sem fim por infravermelho (IR) ou Bluetooth, você pode ter que realizar algumas etapas extras para que ele funcione. As etapas podem depender da marca e modelo do seu mouse.</p>
+ <p>A maioria dos mouses sem fio por radiofrequência devem funcionar automaticamente quando conectados ao computador. Se você tem um mouse sem fim por radiofrequência (infravermelho) ou Bluetooth, você pode ter que realizar algumas etapas extras para que ele funcione. As etapas podem depender da marca e modelo do seu mouse.</p>
+
+<comment>
+ <cite date="2012-02-19">Phil Bull</cite>
+ <p>Should provide some useful advice rather than just saying "you might need to
+ perform extra steps".</p>
+</comment>
 </section>
 
 </page>

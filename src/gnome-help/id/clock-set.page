@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="clock-set" xml:lang="id">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="clock-set" xml:lang="id">
 
   <info>
-    <link type="guide" xref="clock" group="#first"/>
-
+    <link type="guide" xref="clock"/>
+    <desc>Klik pada jam di bilah puncak dan pergilah ke <gui>Pengaturan Tanggal dan Waktu</gui> untuk mengubah tanggal/waktu.</desc>
     <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
-      <name>Proyek Dokumentasi GNOME</name>
+      <name>Projek Dokumentasi GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="editor">
@@ -18,19 +16,11 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Gunakan <gui>Pengaturan Tanggal &amp; Waktu</gui> untuk mengubah tanggal atau waktu.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Andika Triwidada</mal:name>
       <mal:email>andika@gmail.com</mal:email>
-      <mal:years>2011-2014, 2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Ahmad Haris</mal:name>
-      <mal:email>ahmadharis1982@gmail.com</mal:email>
-      <mal:years>2017.</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
 
@@ -38,24 +28,25 @@
 
   <p>Bila tanggal dan waktu yang ditampilkan pada bilah puncak salah atau salah format, Anda dapat mengubahnya:</p>
 
-  <steps>
-    <item>
-      <p>Buka ringkasan <gui xref="shell-introduction#activities">Aktivitas</gui> dan mulai mengetik <gui>Tanggal &amp; Waktu</gui>.</p>
-    </item>
-    <item>
-      <p>Klik <gui>Tanggal &amp; Waktu</gui> untuk membuka panel.</p>
-    </item>
-    <item>
-      <p>Apabila Anda mengatur <gui>Tanggal &amp; Waktu Otomatis</gui> menjadi <gui>ON</gui>, tanggal dan waktu Anda seharusnya akan terbarui secara otomatis saat Anda memiliki koneksi internet. Untuk memperbarui tanggal dan waktu secara manual, atur bagian ini ke <gui>OFF</gui>.</p>
-    </item> 
-    <item>
-      <p>Klik <gui>Tanggal &amp; Waktu</gui>, lalu atur waktu dan tanggal.</p>
-    </item>
-    <item>
-      <p>Anda juga dapat mengubah bagaimana jam ditampilkan dengan memilih format <gui>24-jam</gui> atau <gui>AM/PM</gui> untuk <gui>Format Waktu</gui>.</p>
-    </item>
-  </steps>
-
-  <p>Anda mungkin ingin untuk <link xref="clock-timezone">mengatur zona waktu manual</link>.</p>
+<steps>
+ <item>
+  <p>Klik pada jam di tengah bilah puncak dan pilih <gui>Pengaturan Tanggal dan Waktu</gui>.</p>
+ </item>
+ <item>
+  <p>Anda mungkin perlu mengklik <gui>Buka Kunci</gui> dan mengetikkan <link xref="user-admin-explain">sandi admin</link>.</p>
+ </item>
+ <item>
+  <p>Adjust the date and time by clicking on the arrows to choose the  hour and
+  minute. You can choose the year, month and day from the drop-down lists.</p>
+ </item>
+ <item>
+  <p>Bila Anda suka, Anda dapat membuat jam memutakhirkan dirinya sendiri secara otomatis dengan menyalakan <gui>Waktu Jaringan</gui>.</p>
+  <p>Ketika <em>Waktu Jaringan</em> dinyalakan, komputer akan secara periodik menyelaraskan jamnya dengan suatu jam yang sangat akurat di internet, sehingga Anda tidak perlu melakukannya secara manual. Ini hanya bekerja bila Anda tersambung ke internet.</p>
+ </item>
+ <item>
+  <p>You can also change how the hour is displayed by selecting <gui>24-hour</gui>
+  or <gui>AM/PM</gui> format.</p>
+ </item>
+</steps>
 
 </page>

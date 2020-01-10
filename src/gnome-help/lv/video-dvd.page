@@ -1,48 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="video-dvd" xml:lang="lv">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="video-dvd" xml:lang="lv">
 
   <info>
     <link type="guide" xref="media#videos"/>
+
+    <desc>Iespējams, nav ieinstalēti pareizie kodeki, vai arī DVD varētu būt no nepareizā reģiona.</desc>
+
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
-    <revision pkgversion="3.12.1" date="2014-03-30" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="final"/>
 
     <credit type="author">
       <name>GNOME dokumentācijas projekts</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Iespējams, nav ieinstalēti pareizie kodeki, vai arī DVD varētu būt no nepareizā reģiona.</desc>
   </info>
 
-  <title>Kāpēc neatskaņo DVD?</title>
+<title>Kāpēc neatskaņo DVD?</title>
 
   <p>Ja jūs ievietojat DVD datorā un to neatskaņo, jums varētu nebūt pareizie DVD <em>kodeki</em> ieinstalēti, vai DVD varētu būt no cita <em>reģiona</em>.</p>
 
 <section id="codecs">
-  <title>Pareizo kodeku instalēšana DVD atskaņošanai</title>
+ <title>Pareizo kodeku instalēšana DVD atskaņošanai</title>
+ <p>Lai atskaņotu DVD, ir nepieciešams ieinstalēt pareizos <em>kodekus</em>. Kodeki ir programmatūras daļa, kas ļauj programmai nolasīt video vai audio formātu. Ja filmu atskaņošanas programmai nav pareizo kodeku, tā varētu piedāvāt tos ieinstalēt. Ja nepiedāvā, tad vajadzēs kodekus ieinstalēt pašrocīgi. Lai to izdarītu, jautājiet pēc palīdzības, piemēram, jūsu Linux distributīva atbalsta forumos. Iespējams, vajadzēs ieinstalēt <app>gstreamer0.10-plugins-ugly</app> un <app>libdvd0</app> pakas.</p>
 
-  <p>Lai atskaņotu DVD, ir nepieciešams ieinstalēt pareizos <em>kodekus</em>. Kodeki ir programmatūras daļa, kas ļauj programmai nolasīt video vai audio formātu. Ja filmu atskaņošanas programmai nav pareizo kodeku, tā varētu piedāvāt tos ieinstalēt. Ja nepiedāvā, tad vajadzēs kodekus ieinstalēt pašrocīgi. Lai to izdarītu, jautājiet pēc palīdzības, piemēram, jūsu Linux distributīva atbalsta forumos.</p>
-
-  <p>Ir arī DVD, kas ir <em>kopiju aizsargāti</em>, izmantojot sistēmu CSS. Tas neļauj kopēt DVD, bet tas arī neļauj to atskaņot, ja vien nav papildus programmas, kas apstrādā kopēšanas aizsardzību. Šī programmatūra ir pieejama no vairākām Linux distribūcijām, bet to nevar legāli izmantot visās valstīs. Jūs varat iegādāties komerciālu DVD dekodētāju, kas var apstrādāt kopēšanas aizsardzību, no <link href="http://fluendo.com/shop/product/oneplay-dvd-player/">Fluendo</link>. Tas strādā Linux un tā lietošanai vajadzētu būt legālai visās valstīs.</p>
-
-  </section>
+  <p>Ir arī DVD, kas ir <em>kopiju aizsargāti</em>, izmantojot sistēmu CSS. Tas neļauj kopēt DVD, bet tas arī neļauj to atskaņot, ja vien nav papildus programmas, kas apstrādā kopēšanas aizsardzību. Jūs varat iegādāties komerciālu DVD dekodētāju, kas var apstrādāt kopēšanas aizsardzību, no <link href="http://www.fluendo.com/shop/product/fluendo-dvd-player/">Fluendo</link>. Tas strādā Linux un tā lietošanai vajadzētu būt legālai visās valstīs.</p>
+</section>
 
 <section id="region">
-  <title>DVD reģiona pārbaudīšana</title>
-
+ <title>DVD reģiona pārbaudīšana</title>
   <p>DVD ir <em>reģiona kods</em>, kas norāda, kurā pasaules reģionā tos drīkst atskaņot. Ja datora DVD atskaņotāja reģions nesakrīt ar DVD reģionu, jūs nevarēsit atskaņot šo DVD. Piemēram, ja ir 1. reģiona DVD atskaņotājs, tad varēs atskaņot DVD tikai no Ziemeļamerikas.</p>
 
   <p>Bieži vien ir iespējams mainīt DVD atskaņotāja izmantoto reģiona, bet to var izdarīt tikai pāris reizes, pirms tas noslēdzas vienā reģionā uz visiem laikiem. Lai mainītu DVD reģionu jūsu datora DVD atskaņotājam, izmantojiet <link href="http://linvdr.org/projects/regionset/">regionset</link>.</p>
-
-  <p>Jūs varat atrast <link href="https://en.wikipedia.org/wiki/DVD_region_code">vairāk informācijas par DVD reģioniem Vikipēdijā</link>.</p>
-
 </section>
-
+	
 </page>

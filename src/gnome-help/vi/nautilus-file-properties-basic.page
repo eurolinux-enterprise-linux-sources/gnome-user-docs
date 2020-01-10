@@ -2,28 +2,22 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-file-properties-basic" xml:lang="vi">
 
   <info>
-    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="files" group="more"/>
 
-    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+   <desc>Xem thông tin tập tin cơ bản, đặt quyền, chọn ứng dụng mặc định.</desc>
 
-    <credit type="author">
-      <name>Tiffany Antopolski</name>
-      <email>tiffany@antopolski.com</email>
-    </credit>
-    <credit type="author">
-      <name>Shaun McCance</name>
-      <email>shaunm@gnome.org</email>
-    </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
+   <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
 
+   <credit type="author">
+     <name>Tiffany Antopolski</name>
+     <email>tiffany@antopolski.com</email>
+   </credit>
+   <credit type="author">
+     <name>Shaun McCance</name>
+     <email>shaunm@gnome.org</email>
+   </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Xem thông tin tập tin cơ bản, đặt quyền, chọn ứng dụng mặc định.</desc>
-
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Nguyễn Thái Ngọc Duy</mal:name>
@@ -31,7 +25,6 @@
       <mal:years>2011-2012.</mal:years>
     </mal:credit>
   </info>
-
   <title>Thuộc tính tập tin</title>
 
   <p>Để xem thuộc tính một tập tin hoặc thư mục, nhấn chuột phải và chọn <gui>Thuộc tính</gui>. Bạn cũng có thể chọn tập tin và nhấn <guiseq><gui>Alt</gui><gui>Enter</gui></guiseq>.</p>
@@ -49,17 +42,13 @@
  <title>Thuộc tính cơ bản</title>
  <terms>
   <item>
-    <title><gui>Name</gui></title>
+    <title><gui>Tên</gui></title>
     <p>Bạn có thể đổi tên tập tin bằng cách thay đổi ô này. Bạn cũng có thể đổi tên bên ngoài cửa sổ thuộc tính. Xem <link xref="files-rename"/>.</p>
   </item>
   <item>
-    <title><gui>Type</gui></title>
-    <p>This helps you identify the type of the file, such as PDF document,
-    OpenDocument Text, or JPEG image. The file type determines which
-    applications can open the file, among other things. For example, you
-    can’t open a picture with a music player. See <link xref="files-open"/>
-    for more information on this.</p>
-    <p>The <em>MIME type</em> of the file is shown in parentheses; MIME type is
+    <title><gui>Loại</gui></title>
+    <p>Nó giúp bạn xác định loại tập tin, như tài liệu PDF, văn bản OpenDocument hoặc ảnh JPEG. Loại tập tin xác định ứng dụng nào để mở tập tin và những thứ khác. Ví dụ, bạn không thể mở ảnh bằng trình phát nhạc. Xem <link xref="files-open"/> để biết chi tiết.</p>
+  <p>The <em>MIME type</em> of the file is shown in parentheses; MIME type is
     a standard way that computers use to refer to the file type.</p>
   </item>
 
@@ -75,13 +64,19 @@
   </item>
 
   <item>
-    <title>Parent Folder</title>
-    <p>The location of each file on your computer is given by its <em>absolute
-    path</em>. This is a unique “address” of the file on your computer, made up
-    of a list of the folders that you would need to go into to find the file.
-    For example, if Jim had a file called <file>Resume.pdf</file> in his Home
-    folder, its parent folder would be <file>/home/jim</file> and its location
-    would be <file>/home/jim/Resume.pdf</file>.</p>
+    <title>Địa điểm</title>
+    <p>The location of each file on your computer is given by its <em>absolute path</em>. This is a unique "address" of the file on your computer, made up of a list of the folders that you would need to go into to find the file. For example, if Jim had a file called <file>Resume.pdf</file> in his Home folder, its location would be <file>/home/jim/Resume.pdf</file>.</p>
+  </item>
+
+  <item>
+    <title>Khối tin</title>
+    <p>The file system or device that the file is stored on. This shows you
+    where the file is physically stored, for example if it is on the hard disk
+    or on a CD, or a
+    <link xref="nautilus-connect">network share or file server</link>. Hard
+    disks can be split up into several
+    <link xref="disk-partitions">disk partitions</link>; the partition will
+    be displayed under <gui>Volume</gui> too.</p>
   </item>
 
   <item>
@@ -90,6 +85,7 @@
     which is available on the disk that the folder is on. This is useful for
     checking if the hard disk is full.</p>
   </item>
+
 
   <item>
     <title>Truy cập</title>

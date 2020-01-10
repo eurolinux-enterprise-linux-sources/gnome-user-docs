@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itst="http://itstool.org/extensions/" type="topic" style="task" id="nautilus-file-properties-permissions" xml:lang="sl">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-file-properties-permissions" xml:lang="sl">
 
   <info>
-    <its:rules xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
-
     <link type="guide" xref="files#faq"/>
     <link type="seealso" xref="nautilus-file-properties-basic"/>
 
@@ -24,6 +22,7 @@
       <email>mdhillca@gmail.com</email>
     </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
   </info>
   <title>Nastavitev dovoljenja datotek</title>
 
@@ -34,21 +33,11 @@
   <section id="files">
     <title>Datoteke</title>
 
-    <p>You can set the permissions for the file owner, the group owner,
-    and all other users of the system. For your files, you are the owner,
-    and you can give yourself read-only or read-and-write permission.
-    Set a file to read-only if you don’t want to accidentally change it.</p>
+    <p>Nastavite lahko dovoljenja za  lastnika datotek, skupine lastnika in vse druge uporabnike na sistemu. Za svoje datoteke ste lastnik vi in lahko sebi dodelite pravice le za branje ali za branje in pisanje. Nastavite datoteko na le za branje, če je ne želite po nesreči spremeniti.</p>
 
-    <p>Every user on your computer belongs to a group. On home computers,
-    it is common for each user to have their own group, and group permissions
-    are not often used. In corporate environments, groups are sometimes used
-    for departments or projects. As well as having an owner, each file belongs
-    to a group. You can set the file’s group and control the permissions for
-    all users in that group. You can only set the file’s group to a group you
-    belong to.</p>
+    <p>Vsak uporabnik na vašem računalniku spada v skupino. Na domačih računalnikih ima vsak uporabnik pogosto svojo lastno skupino, zato se skupinska dovoljenja redko uporabljajo. Vsaka datoteka pripada tako lastniku kot skupini. Nastavite lahko skupino datoteke in s tem nastavite dovoljenja za vse uporabnike v tej skupini. Skupino datoteke lahko nastavite le na skupino, kateri pripadate.</p>
 
-    <p>You can also set the permissions for users other than the owner and
-    those in the file’s group.</p>
+    <p>Nastavite lahko tudi dovoljenja za uporabnike, ki niso lastniki in za tiste, ki so v skupini datoteke.</p>
 
     <p>V primeru da je datoteka program kot je skript, morate za njeno poganjanje izbrati <gui>Dovoli izvajanje datoteke kot programa</gui>. Tudi če je ta možnost izbrana, bo morda upravljalnik datotek še vedno odprl datoteko v programu in vas vprašal kaj želite narediti. Za več podrobnosti si oglejte <link xref="nautilus-behavior#executable"/>.</p>
   </section>
@@ -59,7 +48,7 @@
     <p>Dovoljenja, ki jih nastavite za mapo, so drugačna od dovoljenj za datoteko.</p>
     <terms>
       <item>
-        <title><gui itst:context="permission">None</gui></title>
+        <title><gui>Brez</gui></title>
         <p>Uporabnik ne bo mogel niti videti katere datoteke so v mapi.</p>
       </item>
       <item>

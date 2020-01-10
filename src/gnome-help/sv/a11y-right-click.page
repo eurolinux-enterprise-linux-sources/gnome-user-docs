@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task a11y" id="a11y-right-click" xml:lang="sv">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task a11y" id="a11y-right-click" xml:lang="sv">
   <info>
     <link type="guide" xref="mouse"/>
     <link type="guide" xref="a11y#mobility" group="clicking"/>
 
-    <revision pkgversion="3.8.0" date="2013-03-13" status="candidate"/>
-    <revision pkgversion="3.9.92" date="2013-09-18" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="final"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
 
     <credit type="author copyright">
       <name>Shaun McCance</name>
@@ -25,61 +19,59 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
-    <desc>Tryck och håll kvar vänstra musknappen för att högerklicka.</desc>
+    <desc>Press and hold the left mouse button to right-click.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Sebastian Rasmussen</mal:name>
-      <mal:email>sebras@gmail.com</mal:email>
-      <mal:years>2014, 2015, 2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Anders Jonsson</mal:name>
-      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
-      <mal:years>2016, 2017</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Simulera ett högerklick</title>
+  <title>Simulate a right mouse click</title>
 
-  <p>Du kan högerklicka genom att trycka och hålla ned den vänstra musknappen. Detta är användbart om du har svårt att röra fingrarna var för sig eller om muspekaren bara har en knapp.</p>
+  <p>You can right-click by holding down the left mouse button. This is useful
+  if you find it difficult to move your fingers individually on one hand, or if
+  your pointing device only has a single button.</p>
 
   <steps>
     <item>
-      <p>Öppna <gui xref="shell-introduction#activities">Aktiviteter</gui> och börja skriv <gui>Hjälpmedel</gui>.</p>
+      <p>Click your name on the top bar and select <gui>Settings</gui>.</p>
     </item>
     <item>
-      <p>Klicka på <gui>Hjälpmedel</gui> för att öppna panelen.</p>
+      <p>Open <gui>Universal Access</gui> and select the <gui>Pointing and
+      Clicking</gui> tab.</p>
     </item>
     <item>
-      <p>Tryck på <gui>Klickhjälp</gui> i avsnittet <gui>Peka &amp; klicka</gui>.</p>
-    </item>
-    <item>
-      <p>Slå om <gui>Simulerat sekundärklick</gui> till <gui>PÅ</gui>.</p>
+      <p>Switch <gui>Simulated Secondary Click</gui> on.</p>
     </item>
   </steps>
 
-  <p>Du kan ändra hur länge du måste hålla ner vänster musknapp innan den registrerar ett högerklick genom att ändra <gui>Acceptansfördröjning</gui>.</p>
+  <p>You can change how long you must hold down the left mouse button before it
+  is registered as a right click. On the <gui>Pointing and Clicking</gui> tab,
+  change the <gui>Acceptance delay</gui> under <gui>Simulated Secondary
+  Click</gui>.</p>
 
-  <p>För att högerklicka med ett simulerat sekundärklick, håll ner den vänstra musknappen där du vill högerklicka, och släpp. Pekaren fylls med en annan färg medan du håller nere musknappen. När den bytt färg helt, släpp musknappen för att högerklicka.</p>
+  <p>To right-click with simulated secondary click, hold down the left mouse
+  button where you would normally right-click, then release. The pointer fills
+  with blue as you hold down the left mouse button. Once it is entirely blue,
+  release the mouse button to right-click.</p>
 
-  <p>Vissa speciella markörer, exempelvis markören för att ändra storlek, ändrar inte färg. Du kan fortfarande använda simulerade sekundärklick som vanligt, även om du inte får visuell återkoppling från markören.</p>
+  <p>Some special pointers, such as the resize pointers, do not change colors.
+  You can still use simulated secondary click as normal, even if you don't get
+  visual feedback from the pointer.</p>
 
-  <p>Om du använder <link xref="mouse-mousekeys">Mustangenter</link> låter detta dig också högerklicka genom att hålla ner tangenten <key>5</key> på det numeriska tangentbordet.</p>
+  <p>If you use <link xref="mouse-mousekeys">Mouse Keys</link>, this also
+  allows you to right-click by holding down the <key>5</key> key on your
+  keypad.</p>
 
   <note>
-    <p>I översikten <gui>Aktiviteter</gui> kan du alltid klicka länge för att högerklicka, även om denna funktion är inaktiverad. Att klicka länge fungerar lite annorlunda i översikten: du behöver inte släppa knappen för att högerklicka.</p>
+    <p>In the <gui>Activities</gui> overview, you are always able to long-press
+    to right-click, even with this feature disabled. Long-press works slightly
+    differently in the overview: You do not have to release the button to
+    right-click.</p>
   </note>
 
 </page>

@@ -1,82 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-fixed-ip-address" xml:lang="sv">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="net-fixed-ip-address" xml:lang="sv">
   <info>
     <link type="guide" xref="net-wired"/>
     <link type="seealso" xref="net-findip"/>
 
     <revision pkgversion="3.4.0" date="2012-03-13" status="final"/>
-    <revision pkgversion="3.15" date="2014-12-04" status="final"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-    <revision pkgversion="3.24" date="2017-03-26" status="final"/>
 
     <credit type="author">
       <name>Jim Campbell</name>
       <email>jwcampbell@gmail.com</email>
     </credit>
-    <credit type="author">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-      <years>2014</years>
-    </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
 
+    <desc>Using a static IP address can make it easier to provide some network services from your computer.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Att använda en statisk IP-adress kan göra det enklare att erbjuda vissa nätverkstjänster från din dator.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Sebastian Rasmussen</mal:name>
-      <mal:email>sebras@gmail.com</mal:email>
-      <mal:years>2014, 2015, 2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Anders Jonsson</mal:name>
-      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
-      <mal:years>2016, 2017</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Skapa en anslutning med en fast IP-adress</title>
+  <title>Create a connection with a fixed IP address</title>
 
-  <p>De flesta nätverk kommer automatiskt att tilldela en <link xref="net-what-is-ip-address">IP-adress</link> och andra detaljer till din dator när du ansluter till nätverket. Dessa detaljer kan uppdateras regelbundet men du kanske önskar att få en fast IP-adress till din dator så du alltid vet vilken dess adress är (om den till exempel är en filserver).</p>
+ <p>Most networks will automatically assign an <link xref="net-what-is-ip-address">IP address</link> and other details to your computer when you connect to the network. These details can change periodically, but you might want to have a fixed IP address for the computer so you always know what its address is (for example, if it is a file server).</p>
+  <p>To give your computer a fixed (static) IP address:</p>
 
-  <steps>
-    <title>För att ge din dator en fast (statisk) IP-adress:</title>
-    <item>
-      <p>Öppna översiktsvyn <gui xref="shell-introduction#activities">Aktiviteter</gui> och börja skriv <gui>Nätverk</gui>.</p>
-    </item>
-    <item>
-      <p>Klicka på <gui>Nätverk</gui> för att öppna panelen.</p>
-    </item>
-    <item>
-      <p>I vänstra panelen, välj nätverksanslutningen som du vill ska ha en fast adress. Om du ansluter till nätverket med en kabel, klicka på <gui>Trådbundet</gui>, klicka sedan på knappen <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">inställningar</span></media> i nedre högra hörnet av panelen. För en <gui>Trådlös</gui>-anslutning kommer <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">inställningar</span></media>-knappen att finnas intill det aktiva nätverket.</p>
-    </item>
-    <item>
-      <p>Klicka på <gui>IPv4</gui> eller <gui>IPv6</gui> i den vänstra panelen och ändra <gui>Adresser</gui> till <em>Manuell</em>.</p>
-    </item>
-    <item>
-      <p>Skriv in <gui xref="net-what-is-ip-address">IP-adress</gui> och <gui>Gateway</gui> samt en lämplig <gui>Nätmask</gui>.</p>
-    </item>
-    <item>
-      <p>I avsnittet <gui>DNS</gui>, slå om <gui>Automatisk</gui> till <gui>AV</gui>. Mata in IP-adressen för en DNS-server som du vill använda. Mata in ytterligare DNS-serveradresser via <gui>+</gui>-knappen.</p>
-    </item>
-    <item>
-      <p>I avsnittet <gui>Rutter</gui>, slå om <gui>Automatisk</gui> till <gui>AV</gui>. Mata in <gui>Adress</gui>, <gui>Nätmask</gui>, <gui>Rutt</gui> och <gui>Metrisk</gui> för en rutt du vill använda. Mata in ytterligare rutter via <gui>+</gui>-knappen.</p>
-    </item>
-    <item>
-      <p>Klicka på <gui>Verkställ</gui>. Nätverksanslutningen bör nu ha en fast IP-adress.</p>
-    </item>
-  </steps>
+<steps>
+<item><p>Click the <gui>network icon</gui> on the <gui>top bar</gui> and select <gui>Network Settings</gui>.</p></item>
+<item><p>Select the network connection from the list (<gui>Wired</gui> or <gui>Wireless</gui>) and click <gui>Configure</gui>.</p></item>
+<item><p>Click on the <gui>IPv4 Settings</gui> tab and change the <gui>Method</gui> to <em>Manual</em>.</p></item>
+<item><p>If no connection information is listed in the <gui>Addresses</gui> list, or if you want to set up a new connection, click <gui>Add</gui>.</p></item>
+<item><p>Enter the <em>IP Address</em>, <em>Netmask</em>, and <em>Gateway</em> information into the appropriate boxes. How you choose these will depend on your network setup; there are specific rules governing which IP addresses and netmasks are valid for a given network.</p></item>
+<item><p>If necessary, enter a <em>Domain Name Server</em> address into the <gui>DNS servers</gui> box. This is the IP address of a server which looks up domain names; most corporate networks and internet providers have dedicated DNS servers.</p></item>
+<item><p>Click <gui>Save</gui>. The network connection should now have a fixed IP address.</p></item>
+</steps>
 
 </page>

@@ -2,71 +2,40 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-recover" xml:lang="fi">
 
   <info>
-    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="files" group="more"/>
     <link type="seealso" xref="files-lost"/>
+    <desc>Kun poistat tiedoston, se siirretään yleensä roskakoriin. Voit palauttaa tiedostoja roskakorista.</desc>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-28" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="review"/>
 
     <credit type="author">
       <name>Gnomen dokumentointiprojekti</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Kun poistat tiedoston, se siirretään yleensä roskakoriin. Voit palauttaa tiedostoja roskakorista.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Timo Jyrinki</mal:name>
       <mal:email>timo.jyrinki@iki.fi</mal:email>
       <mal:years>2012.</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Jiri Grönroos</mal:name>
-      <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
-      <mal:years>2012-2018.</mal:years>
-    </mal:credit>
   </info>
 
   <title>Palauta roskakoriin siirretty tiedosto</title>
+    <p>Jos poistat tiedoston tiedostonhallinnassa, se siirretään normaalisti <gui>roskakoriin</gui>, josta sen palautus on mahdollista.</p>
+    <steps>
+      <title>Palauta tiedosto roskakorista:</title>
+        <item><p>Open the <app>Files</app> application from the <gui>Activities
+        </gui> overview.</p></item>
+        <item><p>Click <gui>Trash</gui> in the sidebar.</p></item>
+        <item><p>If your deleted file is there, click on it and select <gui>
+        Restore</gui>. It will be restored to the folder from where it was
+        deleted.</p></item>
+    </steps>
 
-  <p>Jos poistat tiedoston tiedostonhallinnassa, se siirretään normaalisti <gui>roskakoriin</gui>, josta sen palautus on mahdollista.</p>
+  <p>Jos poistit tiedoston näppäinyhdistelmällä <keyseq><key>Shift</key><key>Delete</key></keyseq>, tai päätteestä, tiedostoa ei voi palauttaa tällä tavalla <gui>roskakorista</gui>, vaan se on poistettu pysyvästi.</p>
 
-  <steps>
-    <title>Palauta tiedosto roskakorista:</title>
-    <item>
-      <p>Avaa <gui xref="shell-introduction#activities">Toiminnot</gui>-yleisnäkymä ja ala kirjoittamaan <app>Tiedostot</app>.</p>
-    </item>
-    <item>
-      <p>Napsauta <app>Tiedostot</app> avataksesi tiedostonhallinnan.</p>
-    </item>
-    <item>
-      <p>Click <gui>Trash</gui> in the sidebar. If you do not see the sidebar,
-      click <gui>Files</gui> in the top bar and pick <gui>Sidebar</gui>.</p>
-    </item>
-    <item>
-      <p>If your deleted file is there, click on it and select
-      <gui>Restore</gui>. It will be restored to the folder from where it was
-      deleted.</p>
-    </item>
-  </steps>
-
-  <p>If you deleted the file by pressing <keyseq><key>Shift</key><key>Delete
-  </key></keyseq>, or by using the command line, the file has been permanently
-  deleted. Files that have been permanently deleted can’t be recovered from the
-  <gui>Trash</gui>.</p>
-
-  <p>There are a number of recovery tools available that are sometimes able to
-  recover files that were permanently deleted. These tools are generally not
-  very easy to use, however. If you accidentally permanently deleted a file,
-  it’s probably best to ask for advice on a support forum to see if you can
-  recover it.</p>
+  <p>Jos tiedosto on kokonaan poistettu, sen palauttamista varten on saatavilla useita palautusohjelmia. Ne eivät normaalisti kuitenkaan ole kovin helppokäyttöisiä. Jos poistit vahingossa tiedoston kokonaan, lienee parasta kysyä neuvoa sen palauttamisesta keskustelupalstalla.</p>
 
 </page>

@@ -1,27 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-wireless-airplane" xml:lang="fi">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="net-wireless-airplane" xml:lang="fi">
   <info>
     <link type="guide" xref="net-wireless"/>
 
     <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
-    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-    <revision pkgversion="3.24" date="2017-03-26" status="final"/>
 
     <credit type="author">
       <name>Gnomen dokumentointiprojekti</name>
       <email>gnome-doc-list@gnome.org</email>
-    </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-      <years>2015</years>
-    </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-      <years>2015</years>
     </credit>
 
     <desc>Open Network Settings and switch Airplane Mode to ON.</desc>
@@ -32,45 +18,21 @@
       <mal:email>timo.jyrinki@iki.fi</mal:email>
       <mal:years>2012.</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Jiri Grönroos</mal:name>
-      <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
-      <mal:years>2012-2018.</mal:years>
-    </mal:credit>
   </info>
 
 <title>Katkaise langaton yhteys (lentokonetila)</title>
 
-<p>If you have your computer on an airplane (or some other area where wireless
- connections are not allowed), you should switch off your wireless. You may
- also want to switch off your wireless for other reasons (to save battery power,
- for example).</p>
+<p>Kun käytät tietokonetta lentokoneessa (tai jollain muulla alueella, jossa langattomien yhteyksien käyttäminen ei ole sallittua), sinun tulisi sammuttaa kaikki langattomat laitteesi, mukaan lukien tietokoneesi langaton verkkokortti. Langattoman yhteyden katkaiseminen säästää myös virtaa, joten jos et tarvitse Internet-yhteyttä (tai sitä ei ole saatavilla) se kannattaa etenkin akkukäytössä kytkeä pois päältä.</p>
 
-  <note>
-    <p>Using <em>Airplane Mode</em> will completely turn off all wireless
-    connections, including WiFi, 3G and Bluetooth connections.</p>
-  </note>
+<steps>
+ <item>
+  <p>Click the network icon on the top bar and select <gui>Network Settings</gui>.</p>
+ </item>
+ <item>
+  <p>Switch <gui>Airplane Mode</gui> on. This will turn off your wireless connection until you switch off airplane mode again.</p>
+ </item>
+</steps>
 
-  <p>To turn on airplane mode:</p>
-
-  <steps>
-    <item>
-      <p>Avaa <gui xref="shell-introduction#activities">Toiminnot</gui>-yleisnäkymä ja ala kirjoittamaan <gui>Verkko</gui>.</p>
-    </item>
-    <item>
-      <p>Napsauta <gui>Verkko</gui>.</p>
-    </item>
-    <item>
-      <p>Switch <gui>Airplane Mode</gui> to <gui>ON</gui>. This will turn off
-      your wireless connection until you disable airplane mode again.</p>
-    </item>
-  </steps>
-
-  <note style="tip">
-    <p>You can turn off your WiFi connection from the 
-    <gui xref="shell-introduction#yourname">system menu</gui> by clicking on 
-    the connection name and choosing <gui>Turn Off</gui>.</p>
-  </note>
+<note><p>Using <em>Airplane Mode</em> will completely turn off both wireless and Bluetooth connections.</p></note>
 
 </page>

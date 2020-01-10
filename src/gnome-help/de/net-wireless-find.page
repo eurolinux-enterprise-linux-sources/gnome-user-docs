@@ -1,29 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="net-wireless-find" xml:lang="de">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="net-wireless-find" xml:lang="de">
   <info>
     <link type="guide" xref="net-wireless"/>
     <link type="guide" xref="net-problem"/>
     <link type="seealso" xref="net-wireless-hidden"/>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
-    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-10" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>GNOME-Dokumentationsprojekt</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
 
+    <desc>Der Funknetzwerkadapter könnte ausgeschaltet sein, es könnten sich zu viele Funknetzwerke in der Nähe befinden oder Sie befinden sich außerhalb des Funknetzwerkbereichs.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Der Funknetzwerkadapter könnte ausgeschaltet oder defekt sein, oder Sie könnten versucht haben, sich mit einem verborgenen Funknetzwerk zu verbinden.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hendrik Knackstedt</mal:name>
-      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
-      <mal:years>2011.</mal:years>
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -33,47 +34,33 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Christian Kirbach</mal:name>
-      <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Mario Blättermann</mal:name>
-      <mal:email>mario.blaettermann@gmail.com</mal:email>
-      <mal:years>2011-2013, 2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Benjamin Steinwender</mal:name>
-      <mal:email>b@stbe.at</mal:email>
-      <mal:years>2014.</mal:years>
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.to</mal:years>
     </mal:credit>
   </info>
 
 <title>Ich kann mein Funknetzwerk in der Liste nicht finden</title>
 
-  <p>Es gibt eine Reihe von Gründen, warum Ihr Funknetzwerk nicht in der Netzwerkliste zu sehen ist, die in der Liste der verfügbaren Netzwerke im Systemmenü angezeigt wird.</p>
+<p>Es gibt eine Reihe von Gründen, warum Ihr Funknetzwerk nicht in der Netzwerkliste angezeigt wird, die beim Anklicken des Netzwerksymbols im oberen Panel angezeigt wird.</p>
 
 <list>
  <item>
   <p>Falls keine Netzwerke in der Liste erscheinen, könnte Ihr Netzwerkadapter abgeschaltet sein oder <link xref="net-wireless-troubleshooting">nicht korrekt funktionieren</link>. Stellen Sie sicher, dass er eingeschaltet ist.</p>
  </item>
-<!-- Does anyone have lots of wireless networks to test this? Pretty sure it's
-     no longer correct.
-  <item>
-    <p>If there are lots of wireless networks nearby, the network you are
-    looking for might not be on the first page of the list. If this is the
-    case, look at the bottom of the list for an arrow pointing towards the
-    right and hover your mouse over it to display the rest of the wireless
-    networks.</p>
-  </item>-->
+
+ <item>
+  <p>Falls sehr viele Funknetzwerke in der Nähe sind, könnte das Netzwerk, nach dem Sie suchen, nicht in der ersten Seite der Liste enthalten sein. Schauen Sie in diesem Fall am unteren Ende der Liste nach einem nach rechts weisenden Pfeil und verschieben Sie den Mauszeiger dorthin, um den Rest der Funknetzwerke anzeigen zu lassen.</p>
+ </item>
+
  <item>
   <p>Sie könnten sich außerhalb des Bereichs des Netzwerks befinden. Versuchen Sie, näher an die Basisstation oder den Router heranzukommen, und schauen Sie nach, ob nach einer Weile das Netzwerk in der Liste erscheint.</p>
  </item>
+
  <item>
   <p>Die Liste der Funknetzwerke benötigt eine gewisse Zeit zur Aktualisierung. Falls Sie gerade Ihren Rechner eingeschaltet haben oder den Standort gewechselt haben, sollten Sie eine Minute warten und erneut nachschauen, ob Ihr Netzwerk in der Liste erscheint.</p>
  </item>
+
  <item>
   <p>Das Netzwerk könnte verborgen sein. Sie müssen sich <link xref="net-wireless-hidden">auf andere Weise verbinden</link>, wenn es sich um ein verborgenes Netzwerk handelt.</p>
  </item>

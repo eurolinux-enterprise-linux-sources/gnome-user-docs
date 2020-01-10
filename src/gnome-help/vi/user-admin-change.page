@@ -1,28 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="user-admin-change" xml:lang="vi">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="user-admin-change" xml:lang="vi">
 
   <info>
+
     <link type="guide" xref="user-accounts#privileges"/>
     <link type="seealso" xref="user-admin-explain"/>
 
+    <desc>Bạn có thể xác định người dùng nào được phép thay đổi hệ thống bằng cách trao quyền quản trị.</desc>
+
     <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Dự án tài liệu GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>You can allow users to make changes to the system by giving them
-    administrative privileges.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Nguyễn Thái Ngọc Duy</mal:name>
@@ -31,46 +24,45 @@
     </mal:credit>
   </info>
 
-  <title>Cấp quyền quản trị cho người dùng</title>
+<title>Cấp quyền quản trị cho người dùng</title>
 
-  <p>Administrative privileges are a way of deciding who can make changes to
-  important parts of the system. You can change which users have administrative
-  privileges and which ones do not. They are a good way of keeping your system
-  secure and preventing potentially damaging unauthorized changes.</p>
+  <p>Quyền quản trị là cách xác định ai có thể thay đổi hệ thống. Bạn có thể xác định ai có quyền quản trị, ai không có. Cách này giúp giữ hệ thốn bạn an toàn và tránh thay đổi không được phép có khả năng làm hư hệ thống.</p>
 
-  <p>You need <link xref="user-admin-explain">administrator privileges</link>
-  to change account types.</p>
+<steps>
+ <item>
+    <p>Click your name on the top bar, then click the picture next to your name
+ to open the <gui>Users</gui> window.</p>
+ </item>
 
-  <steps>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Users</gui>.</p>
-    </item>
-    <item>
-      <p>Click <gui>Users</gui> to open the panel.</p>
-    </item>
-    <item>
-      <p>Press <gui style="button">Unlock</gui> in the top right corner and
-      type in your password when prompted.</p>
-    </item>
-    <item>
-      <p>Select the user whose privileges you want to change.</p>
-    </item>
-    <item>
-      <p>Click the label <gui>Standard</gui> next to <gui>Account Type</gui>
-      and select <gui>Administrator</gui>.</p>
-    </item>
-    <item>
-      <p>The user’s privileges will be changed when they next log in.</p>
-    </item>
-  </steps>
+ <item>
+  <p>Nhấn <gui>Bỏ khoá</gui> và nhập mật khẩu của bạn để mở khoá thiết lập tài khoản. (Để trao quyền quản trị, bạn phải có quyền quan trị).</p>
+ </item>
 
-  <note>
-    <p>The first user account on the system is usually the one that has
-    administrator privileges. This is the user account that was created when
-    you first installed the system.</p>
-    <p>It is unwise to have too many users with <gui>Administrator</gui>
-    privileges on one system.</p>
-  </note>
+ <item>
+  <p>Select the user whose privileges you want to change.</p>
+  </item>
 
+ <item><p>Click the label <gui>Standard</gui> next to <gui>Account type</gui>
+ and select <gui>Administrator</gui>.</p>
+ </item>
+
+
+ <item>
+  <p>Đóng cửa sổ Tài khoản người dùng. Quyền mới của người dùng sẽ được áp dụng ở lần đăng nhập kế tiếp.</p>
+  </item>
+</steps>
+
+<note>
+ <p>Tài khoản người dùng đầu tiên trên hệ thống thường là tài khoản có quyền quản trị. Đây là tài khoản người dùng được tạo khi bạn cài đặt hệ thống lần đầu tiên.</p>
+ <p> It is unwise to have too many users with <gui>Administrator</gui>
+ privileges on one system.</p>
+</note>
+
+  <comment>
+   <cite date="2012-02-19" href="mailto:gnome-doc-list@gnome.org">GNOME
+ Documentation Project</cite>
+   <p>Explain how admin privileges can be given to other people, or removed.
+ Warn the reader about how it's unwise to have too many admins on a system.</p>
+  </comment>
+	
 </page>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" version="1.0 if/1.0" id="shell-notifications" xml:lang="sr-Latn">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="ui" id="shell-notifications" xml:lang="sr-Latn">
 
   <info>
+
     <link type="guide" xref="shell-overview#desktop"/>
 
+    <desc>Prikazuje oblačiće poruka pri dnu ekrana obaveštavajući vas o dešavanju određenih događaja.</desc>
+
     <revision pkgversion="3.8.0" version="0.3" date="2013-04-23" status="review"/>
-    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.16" date="2015-03-02" status="outdated"/>
 
     <credit type="author">
       <name>Marina Zurakinskaja</name>
@@ -17,72 +17,64 @@
       <name>Majkl Hil</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-      <years>2013, 2015</years>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
 
-    <desc>Prikazuje padajući spisak poruka sa vrha ekrana obaveštavajući vas o dešavanjima određenih događaja.</desc> </info>
 
 <title>Obaveštenja i fioka poruka</title>
 
 <section id="what">
-  <title>Šta je to obaveštenje?</title>
+<title>Šta je to obaveštenje?</title>
+  <p>Ako neki program ili komponenta sistema želi da skrene vašu pažnju, biće prikazano obaveštenje pri dnu ekrana.</p>
+  <p>Na primer, ako vam pristigne nova poruka ćaskanja, ako priključite spoljni uređaj (kao što je USB štapić), ako su dostupna nova ažuriranja za vaš računar, ili ako je baterija računara prazna, biće vam prikazano obaveštenje koje će vas obavestiti o tome.</p>
+  <p>Zarad umanjenja rastrojenosti, neka obaveštenja se prvo pojavljuju u jednom redu. Možete da postavite miša preko njih ako želite da vidite njihov potpuni sadržaj.</p>
 
-  <p>Ako neki program ili komponenta sistema želi da skrene vašu pažnju, biće prikazano obaveštenje u gornjem delu ekrana.</p>
-
-  <p>Na primer, ako vam pristigne nova poruka ćaskanja ili nova pošta, biće vam prikazano obaveštenje koje će vas obavestiti o tome.</p>
-
-<!--  <p>To minimize distraction, some notifications first appear as a single line.
-  You can move your mouse over them to see their full content.</p>-->
+<media type="image" width="700" src="figures/shell-notification.png"/>
 
   <p>Ostala obaveštenja imaju dugmad izbirljivih opcija. Da zatvorite jedno od ovih obaveštenja a da ne izaberete jednu od ovih opcija, kliknite na dugme za zatvaranje.</p>
+
+<media type="image" width="500" src="figures/notification-buttons.png"/>
 
   <p>Klik na dugme za zatvaranje na nekim obaveštenjima ih odbacuje. Drugi, poput Ritam mašine ili programa za ćaskanje će ostati skriveni u fioci poruke.</p>
 
 </section>
 
-<section id="messagetray">
+<section id="messagingtray">
 
-  <title>Fioka poruka</title>
+<title>Fioka poruka</title>
 
-  <p if:test="!platform:gnome-classic">Fioka poruka vam pruža način da pogledate vaša obaveštenja kada vam to bude odgovaralo. Pojavljuje se kada pritisnete na sat, ili kada pritisnete <keyseq><key xref="keyboard-key-super">Super</key><key>M</key></keyseq>. Fioka poruka sadrži sva obaveštenja koja niste pregledali ili koja se tu nalaze za stalno.</p>
+  <p if:test="!platform:gnome-classic">The message tray gives you a way to get
+  back to your notifications when it is convenient for you. It appears when you
+  move your mouse to the bottom-right corner of the screen, or press <keyseq>
+  <key xref="keyboard-key-super">Super</key><key>M</key></keyseq>. The message
+  tray contains all the notifications that you have not acted upon or that
+  permanently reside in it.</p>
 
-  <p if:test="platform:gnome-classic">Fioka poruka vam pruža način da pogledate vaša obaveštenja kada vam to bude odgovaralo. Pojavljuje se kada pomerite miša u donji desni ugao ekrana, ili kada pritisnete <keyseq><key xref="keyboard-key-super">Super</key><key>M</key></keyseq>. Fioku poruka možete takođe da prikažete pritiskom na plavu ikonicu broja na desnoj strani spiska prozora. Fioka poruka sadrži sva obaveštenja koja niste pregledali ili koja se tu nalaze za stalno.</p>
+  <p if:test="platform:gnome-classic">The message tray gives you a way to get
+  back to your notifications when it is convenient for you. It appears when you
+  move your mouse to the bottom-right corner of the screen, or press <keyseq>
+  <key xref="keyboard-key-super">Super</key><key>M</key></keyseq>. You can also
+  show the message tray by clicking the blue number icon at the right-hand
+  side of the window list. The message tray contains all the notifications that
+  you have not acted upon or that permanently reside in it.</p>
 
   <p>Možete da vidite obaveštenja klikom na stavke fioke poruka. To su obično poruke koje su poslali programi. Međutim, obaveštenjima ćaskanja se daje poseban tretman, i predstavljaju se pojedinačnim kontaktima koji su vam poslali poruke ćaskanja.</p>
 
   <p>Možete da zatvorite fioku poruka tako što ćete opet pritisnuti <keyseq><key>Super</key><key>M</key></keyseq> ili <key>Esc</key>.</p>
 
+  <note style="tip"><p>Ako otvorena <link xref="keyboard-osk">tastatura na ekranu</link>, moraćete da kliknete na <gui>dugme fioke</gui> da prikažete fioku poruka.</p>
+  </note>
+
 </section>
 
 <section id="hidenotifications">
+<title>Sakrijte obaveštenja</title>
 
-  <title>Sakrijte obaveštenja</title>
+  <p>If you're working on something and do not want to be bothered, you can
+  switch off notifications. Just click your name on the top bar and change the
+  <gui>Notifications</gui> toggle to <gui>OFF</gui>.</p>
 
-  <p>Ako radite na nečemu i ne želite da budete uznemiravani, možete da isključite obaveštenja.</p>
-
-  <steps>
-    <item>
-      <p>Otvorite pregled <gui xref="shell-introduction#activities">Aktivnosti</gui> i počnite da kucate <gui>Obaveštenja</gui>.</p>
-    </item>
-    <item>
-      <p>Kliknite na <gui>Obaveštenja</gui> da otvorite panel.</p>
-    </item>
-    <item>
-      <p>Prebacite <gui>Vrpce obaveštenja</gui> na <gui>ISKLJ.</gui>.</p>
-    </item>
-  </steps>
-
-  <p if:test="!platform:gnome-classic">Kada je isključeno, većina obaveštenja neće biti prikazana na vrhu ekrana. Obaveštenja će još uvek biti dostupna u fioci poruka kada je prikažete (pritiskom na sat ili na <keyseq><key>Super</key><key>M</key></keyseq>), i biće vam ponovo prikazana kada prebacite preklopnik na <gui>UKLJ.</gui>.</p>
-
-  <p>Možete takođe da isključite ili da ponovo uključite obaveštenja za pojedinačne programe iz panela <gui>obaveštenja</gui>.</p>
-
-  <p if:test="platform:gnome-classic">Kada je isključeno, većina obaveštenja neće biti prikazana pri dnu ekrana. Vrlo važna obaveštenja, kao kada je baterija kritično prazna, će i dalje biti prikazivana. Obaveštenja će još uvek biti dostupna u fioci poruka kada je prikažete (pomeranjem miša u donji desni ugao ekrana, ili pritiskom na <keyseq><key>Super</key><key>M</key></keyseq>), i biće vam ponovo prikazana kada prebacite preklopnik na <gui>UKLJ</gui>.</p>
+  <p>Kada je isključeno, većina obaveštenja neće biti prikazana pri dnu ekrana. Vrlo važna obaveštenja, kao kada je baterija kritično prazna, će i dalje biti prikazivana. Obaveštenja će još uvek biti dostupna u fioci poruka kada je prikažete (pomeranjem miša u donji desni ugao, ili pritiskom na <keyseq><key>Super</key><key>M</key></keyseq>), i biće vam ponovo prikazana kada prebacite preklopnik na <gui>UKLJ</gui>.</p>
 
 </section>
-
 </page>

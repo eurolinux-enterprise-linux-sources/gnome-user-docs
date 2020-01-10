@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="color-whatisspace" xml:lang="cs">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="color-whatisspace" xml:lang="cs">
 
   <info>
     <link type="guide" xref="color#profiles"/>
     <link type="seealso" xref="color-whatisprofile"/>
-    <desc>Prostor barev je definovaný rozsah barev.</desc>
+    <desc>A color space is a defined range of colors.</desc>
 
     <credit type="author">
       <name>Richard Hughes</name>
@@ -17,36 +17,86 @@
       <mal:email>adamatousek@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Marek Černocký</mal:name>
-      <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014, 2015</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Co je to prostor barev?</title>
+  <title>What is a color space?</title>
 
-  <p>Prostor barev je definovaný rozsah barev. Mezi nejznámější patří sRGB, AdobeRGB a ProPhotoRGB.</p>
+  <p>
+    A color space is a defined range of colors.
+    Well known color spaces include sRGB, AdobeRGB and ProPhotoRGB.
+  </p>
 
-  <p>Lidský zrak není jednoduchý senzor RGB, umíme ale napodobit reakci očí pomocí chromatického diagramu CIE 1931, který zobrazuje zobrazuje ve tvaru podkovy reakci lidského zraku. Jak můžete vidět, v lidském vnímání je rozpoznáno více odstínů zelené, než modré a červené. Při použití trichromatického prostoru barev, jako je RGB, dokážeme prezentovat na počítači barvy pomocí tří hodnot, které omezí rozsah barev do tvaru <em>trojúhelníku</em>.</p>
+  <p>
+    The human visual system is not a simple RGB sensor, but we can
+    approximate how the eye responds with a CIE 1931 chromaticity diagram
+    that shows the human visual response as a horse-shoe shape.
+    You can see that in human vision there are many more shades of green
+    detected than blue or red.
+    With a trichromatic color space like RGB we represent the colors
+    on the computer using three values, which restricts up to encoding
+    a <em>triangle</em> of colors.
+  </p>
 
   <note>
-    <p>Používání modelů, jako je chromatický diagram CIE 1931, je velkým zjednodušením lidského zrakového systému a skutečný gamut je vyjádřen spíše 3D útvarem, než projekcí ve 2D. Projekce 3D útvaru do 2D může být někdy matoucí, takže pokud chcete vidět skutečný 3D útvar, použijte aplikaci <code>gcm-viewer</code>.</p>
+    <p>
+      Using models such as a CIE 1931 chromaticity diagram is a huge
+      simplification of the human visual system, and real gamuts are
+      expressed as 3D hulls, rather than 2D projections.
+      A 2D projection of a 3D shape can sometimes be misleading, so if
+      you want to see the 3D hull, use the <code>gcm-viewer</code>
+      application.
+    </p>
   </note>
 
   <figure>
-    <desc>sRGB, AdobeRGB a ProPhotoRGB znázorněné bílými trojúhelníky</desc>
-    <media its:translate="no" type="image" mime="image/png" src="figures/color-space.png"/>
+    <desc>sRGB, AdobeRGB and ProPhotoRGB represented by white triangles</desc>
+    <media type="image" mime="image/png" src="figures/color-space.png"/>
   </figure>
 
-  <p>Nejprve se podívejme na sRGB, což je nejmenší prostor a umí pokrýt nejmenší množství barev. Jedná se o aproximaci pro 10 let staré monitory CRT, takže moderní monitory mohou snadno zobrazit více barev, než je v tomto modelu. sRGB je <em>nejmenším společným základem</em> ostatních standardů a je používán v řadě reálných aplikací (včetně Internetu).</p>
-  <p>AdobeRGB je často používaný <em>prostor pro úpravy</em>. Umí pokrýt více barev než sRGB, což znamená, že můžete změny barvy ve fotografii bez velkých obav, že nejživější barvy budou oříznuty nebo potlačeny do tmava.</p>
-  <p>ProPhoto je nejrozsáhlejší dostupný prostor a je často používán pro dokumenty v archivech. Pokrývá téměř celý rozsah barev, které dokáže zachytit lidské oko a k tomu i barvy, které lidské oko nerozpozná!</p>
+  <p>
+    First, looking at sRGB, which is the smallest space and can encode
+    the least number of colors.
+    It is an approximation of a 10 year old CRT display, and so most
+    modern monitors can easily display more colors than this.
+    sRGB is a <em>least-common-denominator</em> standard and is used
+    in a large number of applications (including the Internet).
+  </p>
+  <p>
+    AdobeRGB is frequently used as an <em>editing space</em>.
+    It can encode more colors than sRGB, which means you can change
+    colors in a photograph without worrying too much that the most vivid
+    colors are being clipped or the blacks crushed.
+  </p>
+  <p>
+    ProPhoto is the largest space available and is frequently used for
+    document archival.
+    It can encode nearly the whole range of colors detected by the human
+    eye, and even encode colors that the eye cannot detect!
+  </p>
 
-  <p>Možná vás teď napadlo, že když je ProPhoto jasně nejlepší, proč jej nepoužíváme všude? Důvodem je <em>nespojitost</em> hodnot. Pokud máme jen 8 bitů (tj. 256 úrovní) pro kódování každého kanálu, způsobí větší rozsah mnohem větší kroky mezi hodnotami.</p>
-  <p>Větší krok znamená větší chybu mezi nasnímanou hodnotou barvy a uloženou barvou a pro některé barvy to může být velký problém. Přijde se tím o klíčové barvy, jako je barva kůže, které jsou velmi důležité a i oko netrénovaného člověka si takové chyby dokáže všimnou a fotografie mu pak přijde špatná.</p>
-  <p>Řešením je samozřejmě použití 16bitových obrázků, u kterých máme mnohem více kratších kroků a tím menší chybu danou nespojitostí, ale za cenu zdvojnásobení velikosti obrázku. Drtivá většina dnes existujícího digitálního obsahu používá 8bpp (8 bitů na pixel).</p>
-  <p>Správa barev je postup převodu z jednoho prostoru barev do druhého, kde prostor barev může být dobře známý definovaný prostor, jako je sRGB, nebo vlastní prostor, jako je profil vašeho monitoru nebo tiskárny.</p>
+  <p>
+    Now, if ProPhoto is clearly better, why don't we use it for everything?
+    The answer is to do with <em>quantization</em>.
+    If you only have 8 bits (256 levels) to encode each channel, then a
+    larger range is going to have bigger steps between each value.
+  </p>
+  <p>
+    Bigger steps mean a larger error between the captured color and the
+    stored color, and for some colors this is a big problem.
+    It turns out that key colors, like skin colors are very important,
+    and even small errors will make untrained viewers notice that something
+    in a photograph looks wrong.
+  </p>
+  <p>
+    Of course, using a 16 bit image is going to leave many more steps and
+    a much smaller quantization error, but this doubles the size of each
+    image file.
+    Most content in existence today is 8bpp, i.e. 8 bits-per-pixel.
+  </p>
+  <p>
+    Color management is a process for converting from one color space to
+    another, where a color space can be a well known defined space like
+    sRGB, or a custom space such as your monitor or printer profile.
+  </p>
 
 </page>

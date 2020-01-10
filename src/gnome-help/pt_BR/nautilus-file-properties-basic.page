@@ -2,28 +2,23 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-file-properties-basic" xml:lang="pt-BR">
 
   <info>
-    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="files" group="more"/>
 
-    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+   <desc>View basic file information, set permissions, and choose
+   default applications.</desc>
 
-    <credit type="author">
-      <name>Tiffany Antopolski</name>
-      <email>tiffany@antopolski.com</email>
-    </credit>
-    <credit type="author">
-      <name>Shaun McCance</name>
-      <email>shaunm@gnome.org</email>
-    </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
+   <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
 
+   <credit type="author">
+     <name>Tiffany Antopolski</name>
+     <email>tiffany@antopolski.com</email>
+   </credit>
+   <credit type="author">
+     <name>Shaun McCance</name>
+     <email>shaunm@gnome.org</email>
+   </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Veja informações básicas de arquivo, defina permissões e escolha os aplicativos padrão.</desc>
-
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Rodolfo Ribeiro Gomes</mal:name>
@@ -32,65 +27,90 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Enrico Nicoletto</mal:name>
       <mal:email>liverig@gmail.com</mal:email>
       <mal:years>2013.</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>João Santana</mal:name>
-      <mal:email>joaosantana@outlook.com</mal:email>
-      <mal:years>2013.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Fontenelle</mal:name>
-      <mal:email>rafaelff@gnome.org</mal:email>
-      <mal:years>2012-2018.</mal:years>
-    </mal:credit>
   </info>
-
   <title>Propriedades do arquivo</title>
 
-  <p>Para ver informações sobre um arquivo ou pasta, clique com botão direito nele(a) e selecione <gui>Propriedades</gui>. Você também pode selecionar o arquivo e pressionar <keyseq><key>Alt</key><key>Enter</key></keyseq>.</p>
+  <p>To view information about a file or folder, right-click it and select
+  <gui>Properties</gui>. You can also select the file and press
+  <keyseq><key>Alt</key><key>Enter</key></keyseq>.</p>
 
-  <p>A janela de propriedades de arquivos mostra a você informações como o tipo de arquivo, o tamanho do arquivo e quando você modificou pela última vez. Se você precisa desta informação com frequência, você pode tê-la exibida em <link xref="nautilus-list">colunas de visão de lista</link> ou <link xref="nautilus-display#icon-captions">legenda de ícones</link>.</p>
+  <p>The file properties window shows you information like the type of file,
+  the size of the file, and when you last modified it. If you need this
+  information often, you
+  can have it displayed in <link xref="nautilus-list">list view columns</link>
+  or <link xref="nautilus-display#icon-captions">icon captions</link>.</p>
 
-  <p>A informação dada na aba <gui>Básico</gui> é explicada abaixo. Também há as abas <gui><link xref="nautilus-file-properties-permissions">Permissões</link></gui> e <gui><link xref="files-open#default">Abrir com</link></gui>. Para determinados tipos de arquivos, como imagens e vídeos, haverá uma aba extra que fornece informações como as dimensões, duração e codec.</p>
+  <p>The information given on the <gui>Basic</gui> tab is explained below.
+  There are also
+  <gui><link xref="nautilus-file-properties-permissions">Permissions</link></gui>
+  and <gui><link xref="files-open#default">Open With</link></gui> tabs. For
+  certain types of files, such as images and videos, there will be an extra tab
+  that provides information like the dimensions, duration, and codec.</p>
 
 <section id="basic">
  <title>Propriedades básicas</title>
  <terms>
   <item>
     <title><gui>Nome</gui></title>
-    <p>Você pode renomear o arquivo alterando este campo. Você também pode renomear um arquivo fora da janela de propriedades. Veja <link xref="files-rename"/>.</p>
+    <p>You can rename the file by changing this field.
+    You can also rename a file outside the properties window. See
+    <link xref="files-rename"/>.</p>
   </item>
   <item>
     <title><gui>Tipo</gui></title>
-    <p>Isso ajuda você a identificar o tipo de arquivo, como um documento PDF, texto OpenDocument (odt) ou imagem JPEG. O tipo de arquivo determina quais aplicativos podem abrir o arquivo, além de outras coisas. Por exemplo, você pode abrir uma imagem com um reprodutor de música. Veja <link xref="files-open"/> para mais informações sobre isto.</p>
-    <p>O <em>tipo MIME</em> do arquivo é mostrado em parênteses; tipo MIME é uma forma padrão que computadores usam para se referir aos tipos de arquivos.</p>
+    <p>This helps you identify the type of the file, such as PDF document,
+    OpenDocument Text, or JPEG image. The file type determines which
+    applications can open the file, among other things. For example, you
+    can't open a picture with a music player. See <link xref="files-open"/>
+    for more information on this.</p>
+  <p>The <em>MIME type</em> of the file is shown in parentheses; MIME type is
+    a standard way that computers use to refer to the file type.</p>
   </item>
 
   <item>
     <title>Conteúdo</title>
-    <p>Este campo é exibido se você estiver procurando pelas propriedades de uma pasta em vez de um arquivo. Isso ajuda você a ver o número de itens na pasta. Se a pasta inclui outras pastas, cada pasta interna é contada como um item, mesmo se ela contiver mais outros itens. Cada arquivo é contado como um único item. Se a pasta estiver vazia, os conteúdos vão exibir <gui>nada</gui>.</p>
+    <p>This field is displayed if you are looking at the properties of a folder rather than a file. It helps you see the number of items in the folder.  If the folder includes other folders, each inner folder is counted as one item, even if it contains further items. Each file is also counted as one item. If the folder is empty, the contents will display <gui>nothing</gui>.</p>
   </item>
 
   <item>
     <title>Tamanho</title>
-    <p>Este campo é exibido se você estiver vendo um arquivo (não uma pasta). O tamanho de um arquivo informa você quanto espaço ela utiliza. Isso também é um indicador de quanto tempo levará para baixar um arquivo ou enviá-lo em um e-mail (arquivos grandes demoram mais para enviar/receber).</p>
-    <p>Tamanhos pode ser mostrados em bytes, KB, MB ou GB; no caso dos últimos três, o tamanho em bytes também vai ser fornecido em parênteses. Tecnicamente, 1 KB é 1024 bytes, 1 MB é 1024 KB e por aí vai.</p>
+    <p>This field is displayed if you are looking at a file (not a folder). The size of a file tells you how much disk space it takes up. This is also an indicator of how long it will take to download a file or send it in an email (big files take longer to send/receive).</p>
+    <p>Sizes may be given in bytes, KB, MB, or GB; in the case of the last three, the size in bytes will also be given in parentheses. Technically, 1 KB is 1024 bytes, 1 MB is 1024 KB and so on.</p>
   </item>
 
   <item>
-    <title>Pastas pai</title>
-    <p>A localização de cada arquivo em seu computador é fornecido pelo seu <em>caminho absoluto</em>. Este é um “endereço” único do arquivo em seu computador, feito de uma lista de pastas que você precisaria acessar para encontrar o arquivo. Por exemplo, se Jim tivesse um arquivo chamado <file>Resumo.pdf</file> em sua pasta pessoal, sua pasta pai seria <file>/home/jim</file> e sua localização seria <file>/home/jim/Resumo.pdf</file>.</p>
+    <title>Local</title>
+    <p>The location of each file on your computer is given by its <em>absolute path</em>. This is a unique "address" of the file on your computer, made up of a list of the folders that you would need to go into to find the file. For example, if Jim had a file called <file>Resume.pdf</file> in his Home folder, its location would be <file>/home/jim/Resume.pdf</file>.</p>
+  </item>
+
+  <item>
+    <title>Volume</title>
+    <p>The file system or device that the file is stored on. This shows you
+    where the file is physically stored, for example if it is on the hard disk
+    or on a CD, or a
+    <link xref="nautilus-connect">network share or file server</link>. Hard
+    disks can be split up into several
+    <link xref="disk-partitions">disk partitions</link>; the partition will
+    be displayed under <gui>Volume</gui> too.</p>
   </item>
 
   <item>
     <title>Espaço livre</title>
-    <p>Isso é exibido apenas para pastas. Isso fornece a quantidade de espaço em disco que está disponível no disco na qual está a pasta. Isso é útil para verificar se o disco rígido está cheio.</p>
+    <p>This is only displayed for folders. It gives the amount of disk space
+    which is available on the disk that the folder is on. This is useful for
+    checking if the hard disk is full.</p>
   </item>
+
 
   <item>
     <title>Acessado</title>
@@ -99,7 +119,7 @@
 
   <item>
     <title>Modificado</title>
-    <p>A data e hora quando o arquivo foi salvo e alterado pela última vez.</p>
+    <p>The date and time when the file was last changed and saved.</p>
   </item>
  </terms>
 </section>

@@ -4,9 +4,9 @@
   <info>
     <link type="guide" xref="sound-broken"/>
 
+    <desc>Uw audiokabels en stuurprogramma's voor de geluidskaart controleren.</desc>
+
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Gnome-documentatieproject</name>
@@ -14,30 +14,16 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Uw audiokabels en stuurprogramma's voor de geluidskaart controleren.</desc>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
   </info>
 
 <title>Ik hoor gekraak of gezoem wanneer er geluid wordt afgespeeld</title>
 
-  <p>Als u gekraak of gezoem hoort wanneer er geluid wordt afgespeeld op uw computer, dan kan het zijn dat u een probleem heeft met de audiokabels of connectoren, of een probleem met het stuurprogramma voor de geluidskaart.</p>
+  <p>als u gekraak of gezoem hoort wanneer er geluid wordt afgespeeld op uw computer, dan kan het zijn dat u een probleem heeft met de audiokabels of connectoren, of een probleem met het stuurprogramma voor de geluidskaart.</p>
 
 <list>
  <item>
   <p>Zorg ervoor dat de luidsprekers op de juiste manier zijn aangesloten.</p>
-  <p>Als de luidsprekers niet helemaal goed zijn aangesloten, of als ze in de verkeerde aansluiting zitten, dan hoort u mogelijk een zoemend geluid.</p>
+  <p>Als de luidsprekers niet helemaal zijn aangesloten, of als ze in de verkeerde aansluiting zitten, dan hoort u mogelijk een zoemend geluid.</p>
  </item>
 
  <item>
@@ -46,10 +32,22 @@
  </item>
 
  <item>
-  <p>Controleer of het stuurprogramma voor de geluidskaart wel helemaal goed functioneert.</p>
-  <p>Sommige geluidskaarten werken niet goed op Linux-systemen omdat ze geen goede stuurprogramma's hebben. Dit probleem is moeilijker te herkennen. Zoek op het internet naar het merk en model van uw geluidskaart in combinatie met de term "Linux" om te zien of anderen hetzelfde probleem hebben.</p>
-  <p>U kunt <cmd>lspci</cmd> in de <app>Terminal</app> uitvoeren om meer informatie te krijgen over uw geluidskaart.</p>
+  <p>Ga na of het stuurprogramma misschien niet al te goed is.</p>
+  <p>Some sound cards don't work very well on Linux because they don't have very
+  good drivers. This problem is more difficult to identify. Try searching for
+  the make and model of your sound card on the internet, plus the search term
+  "Linux", to see if other people are having the same problem.</p>
+  <p>You can use the <cmd>lspci</cmd> command to get more information about your
+  sound card.</p>
  </item>
 </list>
+
+<comment>
+  <cite date="2012-02-19">shaunm</cite>
+  <p>Are we shipping any sort of device manager? If we do (or even if we
+  recommend one, but people need to install it), and if you can get all
+  the information you need about the sound card from that, we should
+  link to that for getting info on your sound card.</p>
+</comment>
 
 </page>

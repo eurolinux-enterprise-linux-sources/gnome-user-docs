@@ -18,7 +18,6 @@
     </credit>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
-    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
 
     <desc>Ispitajte vaš čvrsti disk za problemima da se uverite da je ispravan.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -35,18 +34,18 @@
 <steps>
  <title>Proverite stanje vašeg diska koristeći program Diskovi</title>
 
-  <item>
-    <p>Otvorite program <app>Diskovi</app> iz pregleda <gui>Aktivnosti</gui>.</p>
-  </item>
-  <item>
-    <p>Izaberite disk koji želite da proverite sa spiska skladišnih uređaja na levoj strani. Biće prikazani podaci i stanje diska.</p>
-  </item>
-  <item>
-    <p>Kliknite na dugme izbornika i izaberite <gui>SMART podaci i samo-probe…</gui>. <gui>Zbirna procena</gui> bi trebala reći „Disk je u redu“.</p>
-  </item>
-  <item>
-    <p>Vidite više podataka pod <gui>SMART osobinama</gui>, ili pritisnite dugme <gui style="button">Započni samoprobu</gui> da pokrenete samoprobu.</p>
-  </item>
+ <item>
+  <p>Otvorite program <app>Diskovi</app> iz pregleda <gui>Aktivnosti</gui>.</p>
+ </item>
+ <item>
+  <p>Izaberite disk koji želite da proverite sa spiska <gui>Skladišni uređaji</gui>. Podaci i stanje diska će se pojaviti u odeljku <gui>Uređaj</gui>.</p>
+ </item>
+ <item>
+  <p><gui>SMART stanje</gui> treba da pokaže „Disk je ispravan“.</p>
+ </item>
+ <item>
+  <p>Kliknite na dugme <gui>SMART podaci</gui> da pogledate više podataka o disku, ili da pokrenete samoisprobavanje.</p>
+ </item>
 
 </steps>
 
@@ -56,7 +55,7 @@
 
  <title>Šta ako disk nije ispravan?</title>
 
-  <p>Čak i ako <gui>zbirna procena</gui> ukaže na to da disk <em>nije</em> ispravan, to nije razlog za paniku. Međutim, bolje je biti spreman sa <link xref="backup-why">rezervom</link> zarad sprečavanja gubitka podataka.</p>
+  <p>Čak i ako <gui>SMART stanje</gui> pokaže da disk <em>nije</em> ispravan, možda nema razloga za uzbunjivanje. Međutim, bolje je da budete spremni sa <link xref="backup-why">rezervom</link> kako biste izbegli gubitak podataka.</p>
 
   <p>Ako stanje pokaže „Pred kvarom“, disk je još uvek razumljivo ispravan ali su otkriveni znaci slabosti što znači da se može pokvariti u bliskoj budućnosti. Ako je vaš čvrsti disk (ili računar) star nekoliko godina, verovatno ćete videti ovu poruku na barem nekoj od provera ispravnosti. Trebali biste da <link xref="backup-how">napravite rezerve vaših važnih datoteka redovno</link> i da povremeno proveravate stanje diska da vidite da li se pogoršava.</p>
 

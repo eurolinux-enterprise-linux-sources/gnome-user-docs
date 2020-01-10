@@ -2,13 +2,11 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-list" xml:lang="lv">
 
   <info>
-    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
-
     <link type="guide" xref="nautilus-prefs" group="nautilus-list"/>
 
-    <revision pkgversion="3.5.92" date="2012-09-19" status="review"/>
-    <revision pkgversion="3.14.0" date="2014-09-23" status="review"/>
-    <revision pkgversion="3.18" date="2014-09-30" status="candidate"/>
+    <desc>Kontrolējiet, kāda informācija ir redzama saraksta skata kolonnā.</desc>
+
+    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -18,107 +16,75 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-      <years>2014</years>
-    </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-      <years>2015</years>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Kontrolējiet, kāda informācija ir redzama saraksta skata kolonnā.</desc>
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
   </info>
 
-  <title>Datņu saraksta kolonnu iestatījumi</title>
+<title>Datņu pārvaldnieka saraksta ailes</title>
 
-  <p>Ir vienpadsmit informācijas kolonnas, kas ir redzamas lietotnes <gui>Datnes</gui> saraksta skatā. Spiediet <gui>Datnes</gui> augšējā joslā, izvēlieties <gui>Iestatījumi</gui> un atveriet <gui>Saraksta kolonnas</gui> cilni, lai izvēlētos, kurām kolonnām jābūt redzamām.</p>
+<p>Ir deviņas informācijas kolonnas, kas ir redzamas datņu pārvaldnieka saraksta skatā. Spiediet <gui>Datnes</gui> augšējā joslā, izvēlieties <gui>Iestatījumi</gui> un atveriet <gui>Saraksta kolonnas</gui> cilni, lai izvēlētos, kurām kolonnām jābūt redzamām.</p>
 
-  <note style="tip">
-    <p>Izmantojiet <gui>Pārvietot uz augšu</gui> and <gui>Pārvietot uz leju</gui> pogas, lai izvēlētos secību, kādā izvēlētās ailes būs redzamas. Spiediet <gui>Atstatīt uz noklusējuma</gui>, lai atsaukt visas izmaiņas un atgrieztos pie noklusējuma kolonnām.</p>
-  </note>
-
-  <terms>
-    <item>
-      <title><gui>Nosaukums</gui></title>
-      <p>Mapju un datņu nosaukumi.</p>
-      <note style="tip">
-        <p><gui>Nosaukums</gui> kolonna nevar tikt paslēpta.</p>
-      </note>
-    </item>
-    <item>
-      <title><gui>Izmērs</gui></title>
-      <p>Mapes izmērs ir dots kā vienumu skaits mapē. Datņu izmērs ir dots baitos, KB vai MB.</p>
-    </item>
-    <item>
-      <title><gui>Tips</gui></title>
-      <p>Attēlots kā mape vai datnes veids, piemēram, PDF dokuments, JPEG attēls vai MP3 audio datne u.t.t.</p>
-    </item>
-    <item>
-      <title><gui>Mainīts</gui></title>
-      <p>Rāda datumu, kad datne pēdējo reizi ir rediģēta.</p>
-    </item>
-    <item>
-      <title><gui>Īpašnieks</gui></title>
-      <p>Lietotāja vārds, kuram pieder mape vai datne.</p>
-    </item>
-    <item>
-      <title><gui>Grupa</gui></title>
-      <p>Grupa, kurai pieder datne. Parasti katram lietotājam ir arī sava grupa, bet ir iespējams, ka vairākiem lietotājiem ir viena grupa. Piemēram, uzņēmumā nodaļai var būt sava grupa darba vidē.</p>
-    </item>
-    <item>
-      <title><gui>Atļaujas</gui></title>
-      <p>Attēlo datnes piekļuves atļaujas. Piemēram, <gui>drwxrw-r--</gui></p>
-      <list>
-        <item>
-          <p>Pirmā rakstzīme ir datnes veids. <gui>-</gui> nozīmē parastu datni un <gui>d</gui> nozīmē direktoriju (mapi). Retos gadījumos var parādīties citas rakstzīmes.</p>
-        </item>
-        <item>
-          <p>Nākamās trīs rakstzīmes <gui>rwx</gui> norāda atļaujas lietotājam, kam pieder datne.</p>
-        </item>
-        <item>
-          <p>Nākamās trīs rakstzīmes<gui>rw-</gui> norāda atļaujas visiem grupas locekļiem, kuriem pieder datne.</p>
-        </item>
-        <item>
-          <p>Pēdējās trīs rakstzīmes kolonnā <gui>r--</gui> norāda atļaujas visiem sistēmas lietotājiem.</p>
-        </item>
-      </list>
-      <p>Katrai atļaujai ir sekojošas nozīmes:</p>
-      <list>
-        <item>
-          <p><gui>r</gui>: lasāms, nozīmē, ka jūs varat atvērt datni vai mapi</p>
-        </item>
-        <item>
-          <p><gui>w</gui>: rakstāms, nozīmē, ka jūs varat saglabāt izmaiņas tajā</p>
-        </item>
-        <item>
-          <p><gui>x</gui>: izpildāms, nozīmē, ka jūs varat palaist to, ja tas ir programma vai skripta datne, vai jūs varat piekļūt apakšmapēm vai datnēm, ja tas ir mape</p>
-        </item>
-        <item>
-          <p><gui>-</gui>: atļauja nav iestatīta</p>
-        </item>
-      </list>
-    </item>
-    <item>
-      <title><gui>MIME tips</gui></title>
-      <p>Attēlo vienuma MIME tipu.</p>
-    </item>
-    <item>
-      <title><gui>Atrašanās vieta</gui></title>
-      <p>Ceļš līdz datnes atrašanās vietai.</p>
-    </item>
-    <item>
-      <title><gui>Mainīts — laiks</gui></title>
-      <p>Rāda datumu un laiku, kad datne pēdējo reizi ir rediģēta.</p>
-    </item>
-    <item>
-      <title><gui>Izmantots</gui></title>
-      <p>Rāda datumu vai laiku, kad datne pēdējo reizi ir rediģēta.</p>
-    </item>
-  </terms>
+<note style="tip">
+<p>Izmantojiet <gui>Pārvietot uz augšu</gui> and <gui>Pārvietot uz leju</gui> pogas, lai izvēlētos secību, kādā izvēlētās ailes būs redzamas.</p>
+</note>
+<terms>
+ <item>
+  <title><gui>Nosaukums</gui></title>
+  <p>Datņu un mapju nosaukumi mapē, kuru skatāties.</p>
+ </item>
+ <item>
+  <title><gui>Izmērs</gui></title>
+  <p>Mapes izmērs ir dots kā vienumu skaits mapē. Datņu izmērs ir dots baitos, KB vai MB.</p>
+ </item>
+ <item>
+  <title><gui>Tips</gui></title>
+  <p>Attēlots kā mape vai datnes veids, piemēram, PDF dokuments, JPEG attēls vai MP3 audio datne u.t.t.</p>
+ </item>
+ <item>
+  <title><gui>Mainīts</gui></title>
+  <p>Rāda datumu un laiku, kad datne pēdējo reizi ir rediģēta.</p>
+ </item>
+ <item>
+  <title><gui>Īpašnieks</gui></title>
+  <p>Lietotāja vārds, kuram pieder mape vai datne.</p>
+ </item>
+ <item>
+  <title><gui>Grupa</gui></title>
+  <p>Grupa, kurai pieder datne. Mājas datoros katram lietotājam ir sava grupa. Korporatīvajā vidē dažreiz lietotāju grupas tiek izmantotas nodaļās vai projektos.</p>
+ </item>
+  <item>
+  <title><gui>Atļaujas</gui></title>
+  <p>Attēlo datnes piekļuves atļaujas, piemēram, <gui>drwxrw-r--</gui></p>
+  <list>
+   <item>
+    <p>Pirmā rakstzīme <gui>-</gui> ir datnes veids. <gui>-</gui> nozīmē parastu datni un <gui>d</gui> nozīmē direktoriju (mapi).</p>
+   </item>
+   <item>
+     <p>Nākamās trīs rakstzīmes <gui>rwx</gui> norāda atļaujas lietotājam, kam pieder datne.</p>
+   </item>
+   <item>
+     <p>Nākamās trīs rakstzīmes<gui>rw-</gui> norāda atļaujas visiem grupas locekļiem, kuriem pieder datne.</p>
+   </item>
+   <item>
+    <p>Pēdējās trīs rakstzīmes kolonnā <gui>r--</gui> norāda atļaujas visiem sistēmas lietotājiem.</p>
+   </item>
+  </list>
+  <p>Katrai rakstzīmei ir sava nozīme:</p>
+  <list>
+    <item><p>r : lasīšanas atļauja.</p></item>
+    <item><p>w : rakstīšanas atļauja.</p></item>
+    <item><p>x : izpildes atļauja.</p></item>
+    <item><p>-: nav dota atļauja.</p></item>
+    </list>
+ </item>
+ <item>
+  <title><gui>MIME tips</gui></title>
+  <p>Attēlo vienuma MIME tipu.</p>
+ </item>
+ <item>
+  <title><gui>Atrašanās vieta</gui></title>
+  <p>Ceļš līdz datnes atrašanās vietai.</p>
+ </item>
+</terms>
 
 </page>

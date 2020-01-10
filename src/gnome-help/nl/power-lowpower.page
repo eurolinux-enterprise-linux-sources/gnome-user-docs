@@ -2,12 +2,10 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="power-lowpower" xml:lang="nl">
 
   <info>
-    <link type="guide" xref="power#faq"/>
+    <link type="guide" xref="power#battery"/>
     <revision pkgversion="3.4.0" date="2012-02-20" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
-    <revision pkgversion="3.20" date="2016-06-15" status="final"/>
 
-    <desc>Volledig ontladen is niet goed voor de accu.</desc>
+    <desc>Allowing the battery to completely discharge is bad for it.</desc>
     <credit type="author">
       <name>Gnome-documentatieproject</name>
       <email>gnome-doc-list@gnome.org</email>
@@ -16,34 +14,27 @@
       <name>Ekaterina Gerasimova</name>
       <email>kittykat3756@gmail.com</email>
     </credit>
-    <credit type="author editor">
-      <name>Petr Kovar</name>
-      <email>pknbe@volny.cz</email>
-    </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
   </info>
 
-<title>Waarom schakelde mijn computer uit toen de accu de 10% bereikte?</title>
+<title>Waarom ging mijn computer uit/in slaapstand toen de accu de 10% bereikte?</title>
 
-<p>Wanneer het laadniveau van de accu te laag wordt, zal uw computer automatisch uitgezet worden. Dit wordt gedaan om ervoor te zorgen dat de accu niet volledige leeg raakt, aangezien dat slecht is voor de accu. Als de accu gewoon leeg zou raken, dan zou de computer ook geen tijd meer hebben om goed af te sluiten.</p>
+<p>When the charge level of the battery gets too low, your computer will
+automatically <link xref="power-hibernate">hibernate</link>. It does this to
+make sure that the battery does not completely discharge, since this is bad for
+the battery. If the battery just ran out, the computer would not have time to
+shut down properly either.</p>
 
-<p>Denk eraan dat, wanneer uw computer automatisch wordt uitgezet, uw toepassingen en documenten <em>niet</em> bewaard worden. Om geen werk verloren te laten gaan dient u het op te slaan voordat de accu te laag wordt.</p>
+<p>You can change what happens when the battery level gets too low by opening
+<app>Power</app> from the <gui>Activities</gui> overview. Look at the <gui>When
+power is critically low</gui> setting. You can choose for the computer to
+hibernate or shut down. If you choose shut down, your applications and
+documents <em>will not</em> be saved before the computer turns off.</p>
+
+<p>Some computers have problems hibernating, and may not be able to recover the
+applications and documents you had open when you turn on the computer again. In
+this case, it is possible that you could lose some of your work if you did not
+save it before the computer hibernated. You may be able to <link xref="power-suspendfail">fix problems with hibernation</link> though.</p>
 
 </page>

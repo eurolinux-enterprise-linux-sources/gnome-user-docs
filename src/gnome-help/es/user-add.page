@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="user-add" xml:lang="es">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="user-add" xml:lang="es">
 
   <info>
     <link type="guide" xref="user-accounts#manage" group="#first"/>
-
-    <revision pkgversion="3.8" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.13.92" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-
+    <link type="seealso" xref="user-addguest"/>
+    <desc>Añadir usuarios nuevos de manera que otras personas puedan iniciar sesión en el equipo.</desc>
+    <!-- Setting 3.4.0 version to final for release, but we need to do something
+         about the various comments in here, so incomplete for 3.4.1.
+    -->
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-09" status="candidate"/>
     <credit type="author">
       <name>Proyecto de documentación de GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
@@ -21,19 +21,13 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Añadir usuarios nuevos de manera que otras personas puedan iniciar sesión en el equipo.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2011 - 2018</mal:years>
+      <mal:years>2011 - 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -57,44 +51,55 @@
 
   <title>Añadir una cuenta de usuario nueva</title>
 
+<comment>
+  <cite date="2012-02-19">shaunm</cite>
+  <p>We need a note in here about password hints. Share content
+  with user-changepassword</p>
+</comment>
+
+<comment>
+  <cite date="2012-03-24">shaunm</cite>
+  <p>Let's add a "Disable account" page. Click the account, click the dots
+  next to "Password", select "Disable this account" from "Type".</p>
+</comment>
+
+<comment>
+<cite date="2012-03-24">shaunm</cite>
+<p>Much of the password dialog simply does not work:</p>
+<list>
+<item><p><gui>Choose a password at next login</gui> does nothing</p></item>
+<item><p><gui>Log in without a password</gui> does nothing</p></item>
+<item><p><gui>Enable this account</gui> does nothing (and it's not even
+clear to me what it should do):
+<link href="https://bugzilla.gnome.org/show_bug.cgi?id=655914">665914</link></p></item>
+<item><p><gui>Hint</gui> does nothing:
+<link href="https://bugzilla.gnome.org/show_bug.cgi?id=647912">647912</link>,
+<link href="https://bugzilla.gnome.org/show_bug.cgi?id=643445">643445</link></p></item>
+</list>
+</comment>
+
   <p>Puede añadir varias cuentas de usuario a su equipo. Dar una cuenta a cada persona en su hogar o empresa. Cada usuario tiene su propia carpeta de inicio, documentos y configuración.</p>
 
-  <p>Necesita <link xref="user-admin-explain">privilegios de administrador</link> para añadir cuentas de usuario.</p>
+<steps>
+  <item><p>Pulse en su nombre en la barra superior y seleccione <gui>Configuración</gui>.</p></item>
+  <item><p>Abra <gui>Usuarios</gui>.</p></item>
 
-  <steps>
-    <item>
-      <p>Abra la vista de <gui xref="shell-introduction#activities">Actividades</gui> y empiece a escribir <gui>Usuarios</gui>.</p>
-    </item>
-    <item>
-      <p>Pulse en <gui>Usuarios</gui> para abrir el panel.</p>
-    </item>
-    <item>
-      <p>Pulse <gui style="button">Desbloquear</gui> en la esquina superior derecha e introduzca su contraseña cuando se le pida.</p>
-    </item>
-    <item>
-      <p>Debajo de la lista de cuentas en la izquierda, pulse el botón <gui style="button">+</gui> para añadir una cuenta de usuario nueva.</p>
-    </item>
-    <item>
-      <p>Si quiere que el nuevo usuario tenga <link xref="user-admin-explain">acceso de administrador</link> al equipo, seleccione <gui>Administrador</gui> para el tipo de cuenta.</p>
-      <p>Los administradores pueden hacer cosas como añadir y eliminar usuarios, instalar software y controladores y cambiar la fecha y la hora.</p>
-    </item>
-    <item>
-      <p>Escriba el nombre completo del nuevo usuario. El nombre de usuario se rellenará automáticamente en función del nombre completo. Si no le gusta el nombre de usuario propuesto, puede cambiarlo.</p>
-    </item>
-    <item>
-      <p>Puede elegir entre establecer una contraseña para el nuevo usuario o dejar que la establezca la primera vez que inicie sesión.</p>
-      <p>Si elige establecer ahora la contraseña, puede pulsar el icono <gui style="button"><media its:translate="no" type="image" src="figures/system-run-symbolic.svg" width="16" height="16">
-      <span its:translate="yes">generar contraseña</span></media></gui> para generar automáticamente una contraseña aleatoria.</p>
-    </item>
-    <item>
-      <p>Pulse <gui>Añadir</gui>.</p>
-    </item>
-  </steps>
+  <item><p>Necesita <link xref="user-admin-explain">privilegios de administrador</link> para añadir cuentas de usuario. Pulse <gui>Desbloquear</gui> en la esquina superior derecha e introduzca su contraseña, o la contraseña de administrador cuando se le pida.</p></item>
 
-  <p>Si quiere cambiar la contraseña después de crear la cuenta, seleccione la cuenta, <gui style="button">desbloquee</gui> el panel y pulse sobre el estado actual de la contraseña.</p>
+  <item><p>En la lista de cuentas en la izquierda, pulse el botón <gui style="button">+</gui> para añadir una cuenta de usuario nueva.</p></item>
 
-  <note>
-    <p>En en panel <gui>Usuarios</gui> puede pulsar la imagen junto al nombre del usuario, a la derecha, para establecer una imagen para la cuenta. Esta imagen se mostrará en la ventana de inicio de sesión. GNOME proporciona algunos conjuntos de imágenes que puede usar, o puede seleccionar su propia imagen o hacer una foto con su cámara web.</p>
-  </note>
+  <item><p>Si quiere que el nuevo usuario tenga <link xref="user-admin-explain">acceso de administrador</link> al equipo, seleccione <gui>Administrador</gui> para el tipo de cuenta en el menú desplegable. Los administradores pueden hacer cosas como añadir y eliminar usuarios, instalar software y controladores, y cambiar la fecha y la hora.</p></item>
+
+  <item><p>Escriba el nombre completo del nuevo usuario. El nombre de usuario se rellenará automáticamente en función del nombre completo. El valor predeterminado probablemente sea correcto, pero puede cambiarlo si quiere.</p></item>
+
+  <item><p>Pulse <gui>Añadir</gui>.</p></item>
+
+  <item><p>La cuenta está inicialmente desactivada hasta que decida qué hacer con la contraseña del usuario. Seleccione la cuenta nueva en la lista. Bajo <gui>Opciones de inicio de sesión</gui> pulse en <gui>Cuenta desactivada</gui> junto a <gui>Contraseña</gui>. Seleccione <gui>Establecer una contraseña ahora</gui> en la lista desplegable <gui>Acción</gui> y haga que el usuario escriba la contraseña en los campos <gui>Contraseña nueva</gui> y <gui>Confirmar contraseña</gui>. Consulte la <link xref="user-goodpassword"/>.</p>
+  <p>También puede pulsar el botón junto al campo <gui>Contraseña nueva</gui> para seleccionar de forma aleatoria la generación de una contraseña segura. Estas contraseñas son difíciles de adivinar para los demás, pero también difíciles de recordar, por lo que debe ser cuidadoso.</p></item>
+  <item><p>Pulse <gui>Cambiar</gui>.</p></item>
+</steps>
+
+<note><p>En la ventana de <gui>Cuentas de usuario</gui> puede pulsar la imagen junto al nombre del usuario, a la derecha, para establecer una imagen para la cuenta. Esta imagen se mostrará en la ventana de inicio de sesión. GNOME proporciona algunos conjuntos de imágenes que puede usar, o puede seleccionar su propia imagen o hacer una foto con su cámara web.</p>
+</note>
 
 </page>

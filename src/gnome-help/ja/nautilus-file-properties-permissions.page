@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itst="http://itstool.org/extensions/" type="topic" style="task" id="nautilus-file-properties-permissions" xml:lang="ja">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-file-properties-permissions" xml:lang="ja">
 
   <info>
-    <its:rules xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
-
     <link type="guide" xref="files#faq"/>
     <link type="seealso" xref="nautilus-file-properties-basic"/>
 
@@ -24,11 +22,12 @@
       <email>mdhillca@gmail.com</email>
     </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -50,18 +49,6 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Noriko Mizumoto</mal:name>
-      <mal:email>noriko@fedoraproject.org</mal:email>
-      <mal:years>2013, 2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>坂本 貴史</mal:name>
-      <mal:email>o-takashi@sakamocchi.jp</mal:email>
-      <mal:years>2013, 2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>日本GNOMEユーザー会</mal:name>
       <mal:email>http://www.gnome.gr.jp/</mal:email>
       <mal:years>2011, 2012</mal:years>
@@ -76,21 +63,11 @@
   <section id="files">
     <title>ファイル</title>
 
-    <p>You can set the permissions for the file owner, the group owner,
-    and all other users of the system. For your files, you are the owner,
-    and you can give yourself read-only or read-and-write permission.
-    Set a file to read-only if you don’t want to accidentally change it.</p>
+    <p>ファイルの所有者、所有グループ、およびシステム上のその他のユーザーのアクセス権を設定することができます。あなたのファイルについてはあなたが所有者であり、自分にたいして読み込み専用の権限あるいは読み書き権限を設定できます。誤ってファイルを変更したくない場合は、ファイルを読み込み専用にしてください。</p>
 
-    <p>Every user on your computer belongs to a group. On home computers,
-    it is common for each user to have their own group, and group permissions
-    are not often used. In corporate environments, groups are sometimes used
-    for departments or projects. As well as having an owner, each file belongs
-    to a group. You can set the file’s group and control the permissions for
-    all users in that group. You can only set the file’s group to a group you
-    belong to.</p>
+    <p>お使いのコンピューターのどのユーザーも何らかのグループに所属しています。家庭用コンピューターでは、各ユーザーが自分自身のグループに所属しているのが一般的であり、グループの権限が使用されることはあまりありません。企業環境では、グループが、部署やプロジェクトにあわせてグループを活用することがときどきあります。各ファイルには、1 つの所有者が設定されているのと同じように、1 つの所有グループが設定されています。ファイルのグループを設定することによって、そのグループに属する全ユーザーの権限を制御できます。ファイルに設定できるグループは、あなたが属しているグループだけです。</p>
 
-    <p>You can also set the permissions for users other than the owner and
-    those in the file’s group.</p>
+    <p>ファイルの所有者でも、所有グループに属するユーザーでも無い、その他のユーザーの権限も設定できます。</p>
 
     <p>ファイルがスクリプトなどのプログラムである場合、それを実行するには、<gui>プログラムとして実行できる</gui>のオプションを選択してください。このオプションが設定されていても、ファイルマネージャーはそのファイルを何らかのアプリケーションで開くこともあれば、どうするか確認することもあります。詳細は <link xref="nautilus-behavior#executable"/> を参照してください。</p>
   </section>
@@ -101,7 +78,7 @@
     <p>フォルダーにたいして設定できる権限は、次の点でファイルの権限とは異なります。</p>
     <terms>
       <item>
-        <title><gui itst:context="permission">None</gui></title>
+        <title><gui>なし</gui></title>
         <p>ユーザーは、そのフォルダーに含まれるファイルを確認することもできません。</p>
       </item>
       <item>

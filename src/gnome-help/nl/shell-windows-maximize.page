@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" version="1.0 if/1.0" id="shell-windows-maximize" xml:lang="nl">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" id="shell-windows-maximize" xml:lang="nl">
 
   <info>
     <link type="guide" xref="shell-windows#working-with-windows"/>
     <link type="seealso" xref="shell-windows-tiled"/>
 
+    <desc>Double-click or drag a titlebar to maximize or restore a window.</desc>
+
     <revision pkgversion="3.4.0" date="2012-03-14" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -14,34 +15,31 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Dubbelklik op de titelbalk of versleep deze om een venster te maximaliseren of te herstellen.</desc>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Een venster maximaliseren en weer herstellen</title>
+  <title>Maximize and unmaximize a window</title>
 
-  <p>U kunt een venster maximaliseren zodat alle ruimte op uw bureaublad gebruikt wordt, of een venster terugbrengen naar de vorige afmetingen. U kunt ook vensters in de breedte van het scherm maximaliseren, zodat u gemakkelijk twee vensters tegelijk kunt bekijken. Zie <link xref="shell-windows-tiled"/> voor meer informatie.</p>
+  <p>You can maximize a window to take up all of the space on your desktop
+  and unmaximize a window to restore it to its normal size. You can also
+  maximize windows vertically along the left and right sides of the screen,
+  so you can easily look at two windows at once. See
+  <link xref="shell-windows-tiled"/> for details.</p>
 
-  <p>Om een venster te maximaliseren, klik in de titelbalk en sleep het naar de bovenkant van het scherm, of dubbelklik in de titelbalk. Om een venster te maximaliseren via het toetsenbord, houd de <key xref="keyboard-key-super">Super</key>-toets ingedrukt en druk op <key>↑</key>, of druk op <keyseq><key>Alt</key><key>F10</key></keyseq>.</p>
+  <p>To maximize a window, grab the titlebar and drag it to the top of the
+  screen, or just double-click the titlebar. To maximize a window using the
+  keyboard, hold down the <key xref="keyboard-key-super">Super</key> key and
+  press <key>↑</key>, or press <keyseq><key>Alt</key><key>F10</key></keyseq>.
+  </p>
 
-  <p if:test="platform:gnome-classic">U kunt een venster ook maximaliseren door te klikken op de maximaliseerknop in de titelbalk.</p>
+  <p if:test="platform:gnome-classic">You can also maximize a window by
+  clicking the maximize button in the titlebar.</p>
 
-  <p>Om een venster te herstellen naar de vorige afmetingen, sleept u het weg van de randen van het scherm. Als het venster gemaximaliseerd is, kunt u dubbelklikken in de titelbalk om het te herstellen. U kunt ook de sneltoetsen <keyseq><key>Ctrl</key> <key><link xref="windows-key">Super</link></key> <key>↓</key></keyseq> gebruiken.</p>
+  <p>To restore a window to its unmaximized size, drag it away from the edges
+  of the screen. If the window is fully maximized, you can double-click the
+  titlebar to restore it. You can also use the same keyboard shortcuts you
+  used to maximize the window.</p>
 
   <note style="tip">
-    <p>Houd de <key>Super</key>-toets ingedrukt en verplaats het venster door middel van slepen.</p>
+    <p>Hold down the <key>Alt</key> key and drag anywhere in a window to move it.</p>
   </note>
-
 </page>

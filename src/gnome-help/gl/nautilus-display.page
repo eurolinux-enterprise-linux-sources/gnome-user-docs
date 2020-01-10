@@ -4,8 +4,9 @@
   <info>
     <link type="guide" xref="nautilus-prefs" group="nautilus-display"/>
 
+    <desc>Controlar as lendas das iconas usados polo xestor de ficheiros.</desc>
+
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-30" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -15,20 +16,13 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Controlar as lendas das iconas usados polo xestor de ficheiros.</desc>
-
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2018</mal:years>
+      <mal:years>2011, 2012.</mal:years>
     </mal:credit>
   </info>
 
@@ -38,30 +32,13 @@
 
 <section id="icon-captions">
   <title>Lendas das iconas</title>
-  <!-- TODO: update screenshot for 3.18 and above. -->
   <media type="image" src="figures/nautilus-icons.png" width="250" height="110" style="floatend floatright">
     <p>Iconas do xestor de ficheiros con títulos</p>
   </media>
   <p>Cando se emprega a vista de iconas, pode optar por ter información adicional sobre os ficheiros e cartafoles mostrando unha lenda embaixo de cada icona. Isto é útil, por exemplo, se a miúdo precisa ver que é propietario dun ficheiro ou cando se modificou por última vez.</p>
-  <p>You can zoom in a folder by clicking the view options button in the
-  <!-- FIXME: Get a tooltip added for "View options" -->
-  toolbar and choosing a zoom level with the slider. As you zoom in, the
-  file manager will display more and more information in captions. You can
-  choose up to three things to show in captions. The first will be displayed at
-  most zoom levels. The last will only be shown at very large sizes.</p>
+  <p>Pode facer zoom nun cartafol premendo no botón <media type="image" src="figures/go-down.png">abaixo</media> na barra de ferramentas e seleccionando as opcións de <gui>Zoom</gui>. Canto máis amplíes máis e máis información se mostrará nas lendas do xestor de ficheiros. Pode escoller até tres cousas para mostrar nas lendas. A primeira mostrarase nos niveis máis altos da ampliación. A última só se mostrará nos tamaños máis grandes.</p>
   <p>A información que pode mostrar nas lendas das iconas é a mesma que a das columnas cando usa a visualización en lista. Vexa <link xref="nautilus-list"/> para obter máis información.</p>
-</section>
-
-<section id="list-view">
-
-  <title>Vista de lista</title>
-
-  <p>When viewing files as a list, you can <gui>Navigate folders in a
-  tree</gui>. This shows expanders on each directory in the file list, so
-  that the contents of several folders can be shown at once. This is useful if
-  the folder structure is relevant, such as if your music files are organized
-  with a folder per artist, and a subfolder per album.</p>
-
+  <note><p>Se ten unha xanela do xestor de ficheiros aberta debería ter que recargar para ver os cambios nas lendas das iconas. Prema <guiseq><gui>Ver</gui><gui>Recargar</gui></guiseq> ou prema <keyseq><key>Ctrl</key><key>R</key></keyseq>.</p></note>
 </section>
 
 </page>

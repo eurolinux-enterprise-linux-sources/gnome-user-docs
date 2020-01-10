@@ -4,8 +4,9 @@
   <info>
     <link type="guide" xref="nautilus-prefs" group="nautilus-display"/>
 
+    <desc>A fájlkezelőben használt ikonfeliratok befolyásolása.</desc>
+
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-30" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -15,15 +16,8 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>A fájlkezelőben használt ikonfeliratok befolyásolása.</desc>
-
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Griechisch Erika</mal:name>
@@ -34,7 +28,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Kelemen Gábor</mal:name>
       <mal:email>kelemeng at gnome dot hu</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015, 2016, 2017</mal:years>
+      <mal:years>2011, 2012, 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -54,12 +48,6 @@
       <mal:email>lukacs.bence1 at gmail dot com</mal:email>
       <mal:years>2011</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Nagy Zoltán</mal:name>
-      <mal:email>dzodzie at gmail dot com</mal:email>
-      <mal:years>2011</mal:years>
-    </mal:credit>
   </info>
 
 <title>Fájlkezelő megjelenítési beállításai</title>
@@ -68,21 +56,13 @@
 
 <section id="icon-captions">
   <title>Ikonfeliratok</title>
-  <!-- TODO: update screenshot for 3.18 and above. -->
   <media type="image" src="figures/nautilus-icons.png" width="250" height="110" style="floatend floatright">
     <p>Ikonok a fájlkezelőben feliratokkal</p>
   </media>
   <p>Az ikonnézet használatakor extra információkat jeleníttethet meg a fájlokról és mappákról az ikonok alatti feliratokban. Ez akkor hasznos, ha például gyakran kell megjelenítenie a fájl tulajdonosát, vagy utolsó módosítási dátumát.</p>
-  <p>Kinagyíthat egy mappát az eszköztár nézetbeállítások gombjára kattintva, és a csúszkával egy nagyítási szintet kiválasztva. A nagyítás során a fájlkezelő egyre több és több információt jelenít meg a feliratokban. Legfeljebb három fajta információt választhat a feliratokban történő megjelenítéshez. Az első a legtöbb nagyítási szinten megjelenik, az utolsó csak a nagyon nagy méreteknél.</p>
+  <p>Kinagyíthat egy mappát az eszköztár <media type="image" src="figures/go-down.png">lefelé</media> gombjára kattintva, és az egyik <gui>Nagyítás</gui> lehetőséget kiválasztva. A nagyítás során a fájlkezelő egyre több és több információt jelenít meg a feliratokban. Legfeljebb három fajta információt választhat a feliratokban történő megjelenítéshez. Az első a legtöbb nagyítási szinten megjelenik, az utolsó csak a nagyon nagy méreteknél.</p>
   <p>Az ikonfeliratokban megjeleníthető információk megegyeznek a listanézet oszlopaiban megjeleníthetőkkel. További részletekért lásd: <link xref="nautilus-list"/>.</p>
-</section>
-
-<section id="list-view">
-
-  <title>Listanézet</title>
-
-  <p>Amikor a fájlokat listaként jeleníti meg, <gui>Faként bejárhatja a mappákat</gui>.  Ekkor a fájllistában minden könyvtár előtt kiterjesztők jelennek meg, így egyszerre több mappa tartalma is megjeleníthető. Ez akkor hasznos, ha fontos a mappaszerkezet, például ha a zenefájljai előadónként egy mappában vannak, és albumonként egy almappában.</p>
-
+  <note><p>Ha a fájlkezelő ablak nyitva van, az ikonfelirat módosításainak életbe lépéséhez szükség lehet az újratöltésre. Válassza a <guiseq><gui>Nézet</gui><gui>Újratöltés</gui></guiseq> menüpontot, vagy nyomja meg a <keyseq><key>Ctrl</key><key>R</key></keyseq> kombinációt.</p></note>
 </section>
 
 </page>

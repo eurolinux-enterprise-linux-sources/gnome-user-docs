@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="music-player-notrecognized" xml:lang="fi">
+  <info>
+    <link type="guide" xref="media#music"/>
+    <link type="seealso" xref="music-player-newipod"/>
+
+
+    <credit type="author">
+      <name>Gnomen dokumentointiprojekti</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <desc>Luo <input>.is_audio_player</input> -tiedosto jolla kerrot tietokoneellesi että kyseessä on musiikkisoitin.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Timo Jyrinki</mal:name>
+      <mal:email>timo.jyrinki@iki.fi</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Miksi tietokoneeseen kytkemääni musiikkisoitinta ei tunnisteta?</title>
+
+<p>Jos musiikkisoittimesi (esim. MP3-soitin) on kytketty tietokoneeseen, mutta et näe sitä musiikkisovelluksessa, soitinta ei välttämättä ole tunnistettu musiikkisoittimeksi.</p>
+
+<p>Try unplugging the player and then plugging it in again. If that doesn't help, open the File Manager. You should see the player listed under <gui>Devices</gui> in the sidebar - click it to open the folder for the audio player. Now, click <guiseq><gui>File</gui><gui>New Document</gui><gui>Empty Document</gui></guiseq>, type <input>.is_audio_player</input> and press <key>Enter</key> (the period and underscores are important, and it should be all lower-case). This file tells your computer to recognize the device as an audio player.</p>
+
+<p>Now, find the audio player in the File Manager sidebar and eject it (right-click and click <gui>Eject</gui>). Unplug it, then plug it back in. This time it should have been recognized as an audio player by your music organizer. If not, try closing the music organizer and then re-opening it.</p>
+
+<note>
+ <p>Nämä ohjeet eivät toimi iPodin ja joidenkin muiden musiikkisoittimien kanssa. Ohjeet pätevät, kunhan soitin on <em>USB-massamuistina</em>. Tästä on yleensä maininta laitteen käyttöohjeessa tai valmistajan verkkosivustolla.</p>
+</note>
+
+<note>
+ <p>When you look in the audio player folder again, you won't see the <input>.is_audio_player</input> file. This is because the period in the file's name tells the File Manager to hide the file. You can check that it is still there by clicking <guiseq><gui>View</gui><gui>Show Hidden Files</gui></guiseq>.</p>
+</note>
+
+</page>

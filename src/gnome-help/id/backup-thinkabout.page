@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="backup-thinkabout" xml:lang="id">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="tip" id="backup-thinkabout" xml:lang="id">
 
   <info>
     <link type="guide" xref="files#backup"/>
+    <desc>Daftar folder dimana Anda dapat menemukan dokumen, berkas, dan pengaturan yang mungkin ingin Anda backup.</desc>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
       <email>tiffany.antopolski@gmail.com</email>
     </credit>
     <credit type="author">
-      <name>Proyek Dokumentasi GNOME</name>
+      <name>Projek Dokumentasi GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
     <credit type="editor">
@@ -21,19 +21,11 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Daftar folder dimana Anda dapat menemukan dokumen, berkas, dan pengaturan yang mungkin ingin Anda backup.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Andika Triwidada</mal:name>
       <mal:email>andika@gmail.com</mal:email>
-      <mal:years>2011-2014, 2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Ahmad Haris</mal:name>
-      <mal:email>ahmadharis1982@gmail.com</mal:email>
-      <mal:years>2017.</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
 
@@ -44,19 +36,19 @@
 <list>
  <item>
   <p>Berkas-berkas pribadi (dokumen, musik, foto, dan video)</p>
-  <p its:locNote="translators: xdg dirs are localised by package xdg-user-dirs and need to be translated.  You can find the correct translations for your language here: http://translationproject.org/domain/xdg-user-dirs.html">Ini biasanya disimpan di folder rumah Anda (<file>/home/nama_anda</file>). Mereka bisa berada dalam sub folder seperti misalnya Desktop, Dokumen, Gambar, Musik, dan Video.</p>
+  <p xmlns:its="http://www.w3.org/2005/11/its" its:locNote="translators: xdg dirs are localised by package xdg-user-dirs and need to be translated.  You can find the correct translations for your language here: http://translationproject.org/domain/xdg-user-dirs.html">Ini biasanya disimpan di folder rumah Anda (<file>/home/nama_anda</file>). Mereka bisa berada dalam sub folder seperti misalnya Desktop, Dokumen, Gambar, Musik, dan Video.</p>
   <p>Bila medium backup Anda punya cukup ruang (bila itu adalah hard disk eksternal, misalnya), pertimbangkan untuk membackup seluruh folder Rumah. Anda dapat mengetahui berapa banyak ruang yang dipakai oleh folder Rumah dengan memakai <app>Penganalisa Penggunaan Disk</app>.</p>
  </item>
 
  <item>
   <p>Berkas tersembunyi</p>
-  <p>Sebarang nama berkas atau folder yang diawali dengan titik (.) secara baku tersembunyi. Untuk melihat berkas tersembunyi, klik tombol <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">Opsi tilikan</span></media></gui> dalam bilah alat, lalu pilih <gui>Tampilkan Berkas Tersembunyi</gui>, atau tekan <keyseq><key>Ctrl</key><key>H</key></keyseq>. Anda dapat menyalin ini ke lokasi backup seperti berkas lain.</p>
+  <p>Sebarang nama berkas atau folder yang diawali dengan titik (.) secara baku tersembunyi. Untuk melihat berkas tersembunyi, klik <guiseq><gui>Tilik</gui><gui>Tampilkan Berkas Tersembunyi</gui></guiseq> atau tekan <keyseq><key>Ctrl</key><key>H</key></keyseq>. Anda dapat menyalin ini ke lokasi backup seperti berkas lain.</p>
  </item>
 
  <item>
   <p>Pengaturan pribadi (preferensi dekstop, tema, dan pengaturan perangkat lunak)</p>
   <p>Kebanyakan aplikasi menyimpan pengaturan mereka dalam folder tersembunyi di dalam folder Rumah Anda (lihat di atas untuk informasi tentang berkas tersembunyi).</p>
-  <p>Kebanyakan dari pengaturan aplikasi Anda akan disimpan di dalam folder tersembunyi <file>.config</file> dan <file>.local</file> di dalam folder Rumah Anda.</p>
+  <p>Kebanyakan dari pengaturan aplikasi Anda akan disimpan di dalam folder tersembunyi <file>.config</file>, <file>.gconf</file>, <file>.gnome2</file>, dan <file>.local</file> di dalam folder Rumah Anda.</p>
  </item>
 
  <item>

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="session-formats" xml:lang="cs">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="session-formats" xml:lang="cs">
 
   <info>
     <link type="guide" xref="prefs-language"/>
     <link type="seealso" xref="session-language"/>
 
-    <revision pkgversion="3.10" version="0.4" date="2013-11-03" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-10" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -17,52 +16,64 @@
       <email>mdhillca@gmail.com</email>
     </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <desc>Choose a region used for date and time, numbers, currency,
+    and measurement.</desc>
 
-    <desc>Jak vybrat region určující formát data, času a čísel, měnu a jednotky.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
       <mal:email>adamatousek@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Marek Černocký</mal:name>
-      <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014, 2015</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Změna formátů data a měrných jednotek</title>
+  <title>Change date and measurement formats</title>
 
-  <p>Můžete určit formáty, které se používají pro datum, čas a čísla, měnu a měrné jednotky, aby odpovídaly místním zvyklostem ve vašem regionu.</p>
+  <p>You can control the formats that are used for dates, times, numbers,
+  currency, and measurement to match the local customs of your region.</p>
 
   <steps>
-    <item>
-      <p>Otevřete přehled <gui xref="shell-introduction#activities">Činnosti</gui> a začněte psát <gui>Region a jazyk</gui>.</p>
-    </item>
-    <item>
-      <p>Kliknutím na <gui>Region a jazyk</gui> otevřete příslušný panel.</p>
-    </item>
-    <item>
-      <p>Klikněte na <gui>Formáty</gui>.</p>
-    </item>
-    <item>
-      <p>Vyberte region a jazyk, které nejlépe odpovídají formátům, které byste rádi používali. Pokud váš region a jazyk nejsou na seznamu, klikněte na <gui><media its:translate="no" type="image" mime="image/svg" src="figures/view-more-symbolic.svg"><span its:translate="yes">…</span></media></gui> ve spodní části seznamu, abyste si mohli vybrat ze všech dostupných regionů a jazyků.</p>
-    </item>
-    <item>
-      <p>Kliknutím na <gui style="button">Hotovo</gui> nastavení uložíte.</p>
-    </item>
-    <item>
-      <p>Na výzvu <gui>Aby se změny projevily, musí být sezení restartováno</gui> zareagujte kliknutím na <gui style="button">Restartovat nyní</gui> nebo kliknutím na <gui style="button">×</gui> odložte restart na později.</p>
-    </item>
+    <item><p>Click your name on the top bar and select
+    <gui>Settings</gui>.</p></item>
+    <item><p>Open <gui>Region &amp; Language</gui> and click
+    <gui>Formats</gui>.</p></item>
+    <item><p>Select the region that most closely matches the formats you'd like
+    to use. By default, the list only shows regions that use the language set on
+    the <gui>Language</gui> tab. Click the <key>...</key> button to
+    select from all available regions.</p></item>
+    <item><p>Respond to the prompt, <gui>Your session needs to be restarted for
+    these changes to take effect</gui> by clicking
+    <gui style="button">Restart Now</gui>, or click <gui style="button">X</gui>
+    to restart later.</p></item>
   </steps>
 
-  <p>Po té, co vyberete region, uvidíte v pravé části zobrazený seznam různých příkladů, jak se budou data a jiné údaje zobrazovat. Ačkoliv to není uvedeno v příkladech, výběr regionu ovlivňuje také první den týdne v kalendáři.</p>
+  <p>After you've selected a region, the area to the right of the list shows
+  various examples of how dates and other values are shown. Although not shown
+  in the examples, your region also controls the starting day of the week in
+  calendars.</p>
 
-  <note style="tip">
-    <p>Pokud v systému existuje více uživatelských účtů, je v panelu <gui>Region a jazyk</gui> zvláštní část pro přihlašovací obrazovku. Kliknutím na tlačítko <gui>Přihlašovací obrazovka</gui> v pravém horním rohu se přepínáte mezi oběma nastaveními.</p>
-  </note>
+<!--
+  <section id="system">
+    <info>
+      <link type="seealso" xref="session-language#system"/>
+      <link type="seealso" xref="keyboard-layouts#system"/>
+    </info>
+    <title>Change the system formats</title>
+
+    <p>When you change your region for formats, you only change it for your
+    account after you log in. You can also change the <em>system formats</em>,
+    the formats used in places like the login screen.</p>
+
+    <steps>
+      <item><p>Change your formats, as described above.</p></item>
+      <item><p>Select the <gui>System</gui> tab.</p></item>
+      <item><p>Click <gui>Copy Settings</gui>.</p></item>
+      <item><p><link xref="user-admin-explain">Administrative privileges</link> are
+      required. Enter your password, or the password for the requested administrator
+      account.</p></item>
+    </steps>
+  </section>
+-->
 
 </page>

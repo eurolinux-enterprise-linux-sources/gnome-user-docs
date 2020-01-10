@@ -1,69 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="net-wireless-find" xml:lang="sv">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="net-wireless-find" xml:lang="sv">
   <info>
     <link type="guide" xref="net-wireless"/>
     <link type="guide" xref="net-problem"/>
     <link type="seealso" xref="net-wireless-hidden"/>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
-    <revision pkgversion="3.10" date="2013-11-10" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-10" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Dokumentationsprojekt för GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
 
+    <desc>The wireless could be turned off or broken, there might be too many wireless networks nearby, or you might be out of range.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Det trådlösa nätverket kan vara avstängt eller trasigt eller så kan du försöka ansluta till ett dolt nätverk.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Sebastian Rasmussen</mal:name>
-      <mal:email>sebras@gmail.com</mal:email>
-      <mal:years>2014, 2015, 2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Anders Jonsson</mal:name>
-      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
-      <mal:years>2016, 2017</mal:years>
-    </mal:credit>
   </info>
 
 <title>Jag kan inte se mitt trådlösa nätverk i listan</title>
 
-  <p>Det finns ett antal skäl till varför du kanske inte kan se ditt trådlösa nätverk i listan över tillgängliga nätverk från systemmenyn.</p>
+<p>There are a number of reasons why you might not be able to see your wireless network on the list of networks which appears when you click the network icon on the top bar.</p>
 
 <list>
  <item>
-  <p>Om inga nätverk visas i listan, kan din trådlösa hårdvara vara avstängd, eller så <link xref="net-wireless-troubleshooting">fungerar den inte ordentligt</link>. Säkerställ att den är påslagen.</p>
+  <p>If no networks are shown in the list, your wireless hardware could be turned off, or it <link xref="net-wireless-troubleshooting">may not be working properly</link>. Make sure it is turned on.</p>
  </item>
-<!-- Does anyone have lots of wireless networks to test this? Pretty sure it's
-     no longer correct.
-  <item>
-    <p>If there are lots of wireless networks nearby, the network you are
-    looking for might not be on the first page of the list. If this is the
-    case, look at the bottom of the list for an arrow pointing towards the
-    right and hover your mouse over it to display the rest of the wireless
-    networks.</p>
-  </item>-->
+
  <item>
-  <p>Du kan vara utom räckhåll för nätverket. Försök att flytta dig närmare den trådlösa basstationen/routern och se om nätverket visas i listan efter ett tag.</p>
+  <p>If there are lots of wireless networks nearby, the network you are looking for might not be on the first page of the list. If this is the case, look at the bottom of the list for an arrow pointing towards the right and hover your mouse over it to display the rest of the wireless networks.</p>
  </item>
+
  <item>
-  <p>Listan över trådlösa nätverk tar tid att uppdatera. Om du nyss har slagit på din dator eller flyttat den till en annan plats, vänta en minut eller så och kontrollera sedan om nätverket har dykt upp i listan.</p>
+  <p>You could be out of range of the network. Try moving closer to the wireless base station/router and see if the network appears in the list after a while.</p>
  </item>
+
  <item>
-  <p>Nätverket kan vara dolt. Du måste <link xref="net-wireless-hidden">ansluta på ett annat sätt</link> om det är ett dolt nätverk.</p>
+  <p>The list of wireless networks takes time to update. If you have just turned on your computer or moved to a different location, wait for a minute or so and then check if the network has appeared in the list.</p>
+ </item>
+
+ <item>
+  <p>The network could be hidden. You need to <link xref="net-wireless-hidden">connect in a different way</link> if it is a hidden network.</p>
  </item>
 </list>
 

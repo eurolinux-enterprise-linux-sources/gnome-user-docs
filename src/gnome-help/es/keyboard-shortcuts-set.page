@@ -1,44 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" version="1.0 ui/1.0" id="keyboard-shortcuts-set" xml:lang="es">
-
+<page xmlns="http://projectmallard.org/1.0/" xmlns:ui="http://projectmallard.org/ui/1.0/" type="topic" style="task" id="keyboard-shortcuts-set" xml:lang="es">
   <info>
     <link type="guide" xref="keyboard"/>
     <link type="seealso" xref="shell-keyboard-shortcuts"/>
 
     <revision pkgversion="3.8.0" version="0.3" date="2013-03-23" status="review"/>
-    <revision pkgversion="3.9.92" date="2013-10-11" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.17.90" date="2015-08-30" status="candidate"/>
 
     <credit type="author">
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
     <credit type="author">
-      <name>Julita Inca</name>
-      <email>yrazes@gmail.com</email>
+       <name>Julita Inca</name>
+       <email>yrazes@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Juanjo Marín</name>
       <email>juanj.marin@juntadeandalucia.es</email>
     </credit>
-    <credit type="editor">
-      <name>Shobha Tyagi</name>
-      <email>tyagishobha@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
     <desc>Definir o cambiar atajos de teclado en la configuración del <gui>Teclado</gui>.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2011 - 2018</mal:years>
+      <mal:years>2011 - 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -62,17 +47,25 @@
 
   <title>Establecer atajos de teclado</title>
 
+  <comment>
+    <cite date="2012-02-19" href="mailto:shaunm@gnome.org">Shaun McCance</cite>
+    <p>Define shortcuts, using Shortcuts tab in Keyboard settings. Provide
+    reference for what everything is (can group for conciseness). Explain
+    custom shortcuts.</p>
+    <p>Important: the window says "To edit a shortcut, click the row and hold
+    down the new keys or press Backspace to clear." This is actually wrong.
+    You have to click the row, then click again on the shortcut within the
+    row. File bug against control-center about the faulty message (or better,
+    about the confusing interaction), but make sure to explain correctly in
+    the help regardless.</p>
+  </comment>
+
 <p>Para cambiar las teclas que pulsar para un atajo de teclado:</p>
 
   <steps>
     <item>
-      <p>Abra la vista de <gui xref="shell-introduction#activities">Actividades</gui> y empiece a escribir <gui>Teclado</gui>.</p>
-    </item>
-    <item>
-      <p>Pulse en <gui>Teclado</gui> para abrir el panel.</p>
-    </item>
-    <item>
-      <p>Seleccione la pestaña <gui>Atajos</gui>.</p>
+	<p>Pulse en su nombre en la barra superior y seleccione <gui>Configuración</gui>.</p></item>
+    <item><p>Abra <gui>Teclado</gui> y seleccione la pestaña <gui>Atajos</gui>.</p>
     </item>
     <item>
       <p>Seleccione una categoría en el panel izquierdo y la fila para la acción que quiere en la derecha. La definición de atajo actual cambiará a <gui>Nuevo acelerador…</gui></p>
@@ -95,23 +88,23 @@
   </tr>
   <tr>
 	<td><p>Lanzar la calculadora</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-calculator.svg"> <key>Calculator</key> key symbol</media> o <key>Calculadora</key></p></td>
+	<td><p>Calculadora</p></td>
   </tr>
   <tr>
 	<td><p>Lanzar el cliente de correo-e</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-mail.svg"> <key>Mail</key> key symbol</media> o <key>Correo</key></p></td>
+	<td><p>Correo-e</p></td>
   </tr>
   <tr>
 	<td><p>Lanzar navegador web</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-world.svg"> <key>WWW</key> key symbol</media> o <media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-home.svg"> <key>WWW</key> key symbol</media> o <key>WWW</key></p></td>
+	<td><p>WWW</p></td>
   </tr>
   <tr>
 	<td><p>Carpeta personal</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-folder.svg"> <key>Explorer</key> key symbol</media> o <media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-computer.svg"> <key>Explorer</key> key symbol</media> o <key>Explorador</key></p></td>
+	<td><p>Explorador</p></td>
   </tr>
   <tr>
 	<td><p>Buscar</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-search.svg"> <key>Search</key> key symbol</media> o <key>Buscar</key></p></td>
+	<td><p>Buscar</p></td>
   </tr>
 </table>
 
@@ -218,15 +211,15 @@
 <table rules="rows" frame="top bottom" ui:expanded="false">
 <title>Capturas de pantalla</title>
   <tr>
-	<td><p>Guardar una captura de pantalla en un archivo</p></td>
+	<td><p>Capturar la pantalla</p></td>
 	<td><p><key>Imp</key></p></td>
   </tr>
   <tr>
-	<td><p>Guardar una captura de pantalla de una ventana en un archivo</p></td>
+	<td><p>Capturar una ventana</p></td>
 	<td><p><keyseq><key>Alt</key><key>Imp</key></keyseq></p></td>
   </tr>
   <tr>
-	<td><p>Guardar una captura de de un área de la pantalla en un archivo</p></td>
+	<td><p>Hacer una captura de pantalla de un área</p></td>
 	<td><p><keyseq><key>Mayús</key><key>Imp Pant</key></keyseq></p></td>
   </tr>
   <tr>
@@ -251,43 +244,43 @@
 <title>Sonido y medios</title>
   <tr>
 	<td><p>Silenciar</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-mute.svg"> <key>Mute</key> key symbol</media> (Silencia)</p></td>
+	<td><p>Silenciar</p></td>
   </tr>
   <tr>
 	<td><p>Bajar volumen</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-voldown.svg"> <key>Volume Down</key> key symbol</media> (Bajar el volumen)</p></td>
+	<td><p>Bajar el volumen</p></td>
   </tr>
   <tr>
 	<td><p>Subir volumen</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-volup.svg"> <key>Volume Up</key> key symbol</media> (Subir el volumen)</p></td>
+	<td><p>Subir el volumen</p></td>
   </tr>
   <tr>
 	<td><p>Lanzar el reproductor multimedia</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-media.svg"> <key>Media</key> key symbol</media> (Multimedia)</p></td>
+	<td><p>Dispositivo de sonido</p></td>
   </tr>
   <tr>
 	<td><p>Reproducir (o reproducir/pausar)</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-play.svg"> <key>Play</key> key symbol</media> (Reproducir)</p></td>
+	<td><p>Reproducir</p></td>
   </tr>
   <tr>
 	<td><p>Pausar la reproducción</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-pause.svg"> <key>Pause</key> key symbol</media> (Pausar)</p></td>
+	<td><p>Pausar sonido</p></td>
   </tr>
   <tr>
 	<td><p>Detener la reproducción</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-stop.svg"> <key>Stop</key> key symbol</media> (Detener)</p></td>
+	<td><p>Detener sonido</p></td>
   </tr>
   <tr>
 	<td><p>Pista anterior</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-previous.svg"> <key>Previous</key> key symbol</media> (Anterior)</p></td>
+	<td><p>Anterior</p></td>
   </tr>
   <tr>
 	<td><p>Siguiente pista</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-next.svg"> <key>Next</key> key symbol</media> (Siguiente)</p></td>
+	<td><p>Siguiente</p></td>
   </tr>
   <tr>
 	<td><p>Expulsar</p></td>
-	<td><p><media its:translate="no" type="image" mime="image/svg" src="figures/keyboard-key-eject.svg"> <key>Eject</key> key symbol</media> (Expulsar)</p></td>
+	<td><p>Expulsar</p></td>
   </tr>
 </table>
 
@@ -307,7 +300,7 @@
   </tr>
   <tr>
 	<td><p>Bloquear la pantalla</p></td>
-	<td><p><keyseq><key>Super</key><key>L</key></keyseq></p></td>
+	<td><p><keyseq><key>Ctrl</key><key>Alt</key><key>L</key></keyseq></p></td>
   </tr>
   <tr>
   <td><p>Mostrar la bandeja de mensajes</p></td>
@@ -466,27 +459,51 @@
 
 </section>
 
-<section id="custom">
-<title>Atajos personalizados</title>
-
-  <p>Para crear su propio atajo de teclado para su aplicación en la configuración del <gui>Teclado</gui>:</p>
+<section id="changing-shorcuts">
+  <title>Cambiar los atajos del teclado</title>
+  <p>Esta sección muestra cómo cambiar los atajos del teclado para una aplicación.</p>
 
   <steps>
     <item>
-      <p>Pulse el botón <gui style="button">+</gui>. Aparecerá la ventana <gui>Atajo personalizado</gui>.</p>
+	<p>Abra la aplicación Terminal.</p>
+     </item>
+    <item><p>Ejecute el comando <cmd>gsettings set org.gnome.desktop.interface can-change-accels true</cmd>.</p>
     </item>
-    <item>
-      <p>Escriba un <gui>Nombre</gui> para identificar el atajo y un <gui>Comando</gui> para ejecutar una aplicación y pulse <gui>Añadir</gui>. Por ejemplo, si quiere que el atajo abra <app>Rhythmbox</app>, puede llamarlo <input>Música</input> y usar el comando <input>rhythmbox</input>.</p>
+       <item>
+      <p>Inicie la aplicación para la que quiere cambiar el atajo del teclado.</p>
     </item>
-    <item>
-      <p>Pulse <gui>Desactivado</gui> en la fila que se añadió. Cuando esto cambie a <gui>Nuevo acelerador…</gui>, mantenga pulsada la combinación de teclas que quiere.</p>
+  <item>
+      <p>Busque el elemento de menú para el que quiere cambiar el atajo del teclado.</p>
+    </item>
+<item>
+      <p>Escriba el atajo que quiere en el teclado.</p>
     </item>
   </steps>
 
-  <p>El nombre del comando que escriba debe ser un comando del sistema válido. Puede comprobar que el comando funciona abriendo una terminal y escribiéndolo en ella. El comando que abre una aplicación puede no tener el mismo nombre exacto que la propia aplicación.</p>
+<note style="note style">
+  <p>Tenga en cuenta que esta configuración se aplica a todo el escritorio y que la puede desactivar después de hacer los cambios ejecutando el comando <cmd>gsettings set org.gnome.desktop.interface can-change-accels false</cmd>. También puede usar la herramienta <app>dconf-editor</app> para hacer esto.</p>
+</note>
+</section>
 
-  <p>Si quiere cambiar el comando asociado a un atajo de teclado, pulse dos veces sobre el <em>nombre</em> del atajo. Aparecerá la ventana <gui>Atajo personalizado</gui> y podrá editar el comando.</p>
+<section id="custom">
+<title>Atajos personalizados</title>
 
+<p>Para crear su atajo de teclado personalizado:</p>
+
+  <steps>
+    <item>
+      <p>Seleccione <gui>Atajos personalizados</gui> en el panel izquierdo y pulse el botón <gui style="button">+</gui> (o pulse el botón <gui style="button">+</gui> en cualquier categoría). Aparecerá la ventana <gui>Atajo personalizado</gui>.</p>
+    </item>
+    <item>
+      <p>Escriba un <gui>Nombre</gui> para identificar el atajo y un <gui>Comando</gui> para ejecutar una aplicación y pulse <gui>Aplicar</gui>. Por ejemplo, si quiere que el atajo abra Rhythmbox, puede llamarlo <input>Música</input> y usar el comando <input>rhythmbox</input>.</p>
+    </item>
+    <item>
+      <p>Pulse <gui>Desactivado</gui> en la fila que se añadió. Cuando esto cambie a <gui>Nuevo acelerador…</gui>, mantenga pulsada la combinación de teclas de atajo que quiere.</p>
+    </item>
+  </steps>
+ <p>El nombre del comando que escriba debe ser un comando del sistema válido. Puede comprobar que el comando funciona abriendo una terminal y escribiéndolo en ella. El comando que abre una aplicación puede no tener el mismo nombre exacto que la propia aplicación.</p>
+
+ <p>Si quiere cambiar el comando asociado a un atajo de teclado, pulse dos veces sobre el <em>nombre</em> del atajo. Aparecerá la ventana <gui>Atajo personalizado</gui> y podrá editar el comando.</p>
 </section>
 
 </page>

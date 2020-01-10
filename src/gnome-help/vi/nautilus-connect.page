@@ -2,13 +2,12 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-connect" xml:lang="vi">
 
   <info>
-    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="files" group="more"/>
     <link type="guide" xref="sharing"/>
 
-    <revision pkgversion="3.6.0" date="2012-10-06" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+    <revision pkgversion="3.6.0" version="0.2" date="2012-10-06" status="review"/>
+
+    <desc>Xem và thay đổi tập tin trên máy khác qua FTP, SSH, chia sẻ Windows hoặc WebDAV.</desc>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -18,15 +17,7 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Xem và thay đổi tập tin trên máy khác qua FTP, SSH, chia sẻ Windows hoặc WebDAV.</desc>
-
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Nguyễn Thái Ngọc Duy</mal:name>
@@ -41,20 +32,18 @@
 
 <p>To browse files over the network, open the <app>Files</app>
 application from the <gui>Activities</gui> overview, and click
-<gui>Other Locations</gui> in the sidebar. The file manager
-will find any computers on your local area network that advertize
+<gui>Browse Network</gui> in the sidebar. The file manager
+will find any computers on your local area network that advertise
 their ability to serve files. If you want to connect to a server
-on the internet, or if you do not see the computer you’re looking
+on the internet, or if you do not see the computer you're looking
 for, you can manually connect to a server by typing in its
 internet/network address.</p>
 
 <steps>
   <title>Kết nối đến máy chủ tập tin</title>
-  <item><p>In the file manager, click <gui>Other Locations</gui> in the
-   sidebar.</p>
-  </item>
-  <item><p>In <gui>Connect to Server</gui>, enter the address of the server, in
-  the form of a
+  <item><p>In the file manager, click <gui>Files</gui> in the top bar and pick
+  <gui>Connect to Server</gui> from the app menu.</p></item>
+  <item><p>Enter the address of the server, in the form of a
    <link xref="#urls">URL</link>. Details on supported URLs are
    <link xref="#types">listed below</link>.</p>
   <note>
@@ -62,11 +51,10 @@ internet/network address.</p>
     <gui>Recent Servers</gui> list.</p>
   </note>
   </item>
-  <item>
-    <p>Click <gui>Connect</gui>. The files on the server will be shown. You
-    can browse the files just as you would for those on your own computer. The
-    server will also be added to the sidebar so you can access it quickly in
-    the future.</p>
+  <item><p>Click <gui>Connect</gui>. A new window will open showing you the
+  files on the server. You can browse the files just as you would for those on
+  your own computer. The server will also be added to the sidebar so you can
+  access it quickly in the future</p>
   </item>
 </steps>
 
@@ -112,8 +100,11 @@ internet/network address.</p>
     <p><sys>ssh://username@servername.example.com/folder</sys></p>
   </example>
 
-  <p>When using SSH, all the data you send (including your password)
-  is encrypted so that other users on your network can’t see it.</p>
+  <comment><cite>shaunm</cite><p>We should have a topics on encryption
+  keys, possibly rolling the seahorse help into gnome-help. Then link
+  from here.</p></comment>
+
+  <p>Khi dùng SSH, mọi dữ liệu bạn gửi (kể cả mật khẩu) đều được mã hoá nên không ai có thể theo dõi dữ liệu của bạn.</p>
 </item>
 <item>
   <title>FTP (kèm đăng nhập)</title>
@@ -149,26 +140,18 @@ internet/network address.</p>
 </item>
 <item>
   <title>WebDAV và WebDAV An toàn</title>
-  <p>Based on the HTTP protocol used on the web, WebDAV is sometimes used to
-  share files on a local network and to store files on the internet. If the
-  server you’re connecting to supports secure connections, you should choose
-  this option. Secure WebDAV uses strong SSL encryption, so that other users
-  can’t see your password.</p>
-  <p>A WebDAV URL looks like this:</p>
+  <p>Dựa trên giao thức HTTP dùng trên web, WebDAV đôi khi được dùng để chia sẻ tập tin trên mạng cục bộ hoặc lưu tập tin trên Internet. Nếu máy chủ bạn truy cập hỗ trợ kết nối an toàn, bạn nên chọn tuỳ chọn này. WebDAV An toàn dùng mã hoá SSL mạnh, người khác không thể theo dõi dữ liệu hoặc mật khẩu của bạn.</p>
+  <p>A typical WebDAV URL looks like this:</p>
   <example>
-    <p><sys>dav://example.hostname.com/path</sys></p>
+    <p><sys>http://example.hostname.com/path</sys></p>
   </example>
-</item>
-<item>
-  <title>NFS share</title>
-  <p>UNIX computers traditionally use the Network File System protocol to
-  share files over a local network. With NFS, security is based on the UID of
-  the user accessing the share, so no authentication credentials are
-  needed when connecting.</p>
-  <p>A typical NFS share URL looks like this:</p>
-  <example>
-    <p><sys>nfs://servername/path</sys></p>
-  </example>
+  <comment>
+    <cite date="2012-02-19">shaunm</cite>
+    <p>Also used by gnome-user-share, but we're not talking about that
+    in gnome-help for 3.0. Hopefully it will be better integrated in 3.2,
+    and we can discuss it better in the help. If that happens, link from
+    here.</p>
+  </comment>
 </item>
 </terms>
 </section>

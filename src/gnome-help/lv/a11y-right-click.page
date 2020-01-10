@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task a11y" id="a11y-right-click" xml:lang="lv">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task a11y" id="a11y-right-click" xml:lang="lv">
   <info>
     <link type="guide" xref="mouse"/>
     <link type="guide" xref="a11y#mobility" group="clicking"/>
 
-    <revision pkgversion="3.8.0" date="2013-03-13" status="candidate"/>
-    <revision pkgversion="3.9.92" date="2013-09-18" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="final"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
 
     <credit type="author copyright">
       <name>Shaun McCance</name>
@@ -25,12 +19,9 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
     <desc>Spiediet un turiet kreiso peles pogu, lai veiktu klikšķi ar labo taustiņu.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
   <title>Simulēt peles labā taustiņa klikšķi</title>
@@ -39,22 +30,19 @@
 
   <steps>
     <item>
-      <p>Atveriet <gui xref="shell-introduction#activities">Aktivitāšu</gui> pārskatu un sāciet rakstīt <gui>Universālā piekļuve</gui>.</p>
+      <p>Click your name on the top bar and select <gui>Settings</gui>.</p>
     </item>
     <item>
-      <p>Spiediet <gui>Universālā piekļuve</gui>, lai atvērtu paneli.</p>
+      <p>Atveriet <gui>Universālā piekļuve</gui> un izvēlieties <gui>Norādīšana un klikšķināšana</gui> cilni.</p>
     </item>
     <item>
-      <p>Spiediet <gui>Klikšķa asistēšana</gui> sadaļā <gui>Norādīšana un klikšķināšana</gui>.</p>
-    </item>
-    <item>
-      <p>Pārslēdziet <gui>Simulētais sekundārais klikšķis</gui> uz <gui>|</gui>.</p>
+      <p>Ieslēgt <gui>Simulēt sekundāro klikšķi</gui>.</p>
     </item>
   </steps>
 
-  <p>Jūs varat norādīt, cik ilgi jums jātur nospiests kreisais peles taustiņš, lai tas tiktu reģistrēts kā labais klikšķis, mainot <gui>Pieņemšanas aizturi</gui></p>
+  <p>Jūs varat norādīt, cik ilgi jums jātur nospiests kreisais peles taustiņš, lai tas tiktu reģistrēts kā labais klikšķis. <gui>Norādīšana un klikšķināšana</gui> cilnē norādiet <gui>Pieņemšanas aizture</gui> zem <gui>Simulēt sekundāro klikšķi</gui>.</p>
 
-  <p>Lai veiktu labo klikšķi ar simulēto sekundāro klikšķi, turiet nospiestu peles kreiso pogu tajā vietā, kur jūs parasti vēlētos veikt klikšķi ar labo pogu, pēc tam atlaidiet. Piespiešanas laikā peles rādītājs piepildīsies ar citu krāsu. Kad tas būs pilnībā nomainījis krāsu, atlaidiet peles pogu, lai veiktu labo klikšķi.</p>
+  <p>Lai veiktu labo klikšķi ar simulēto sekundāro klikšķi, turiet nospiestu peles kreiso pogu tajā vietā, kur jūs parasti vēlētos veikt klikšķi ar labo pogu, pēc tam atlaidiet. Piespiešanas laikā peles rādītājs piepildīsies ar zilo krāsu. Kad tas būs kļuvis pilnīgi zils, atlaidiet peles pogu, lai veiktu labo klikšķi.</p>
 
   <p>Daži rādītāji nemaina krāsas, piemēram, izmēra maiņas rādītājs. Jūs varat veikt simulēto labo klikšķi kā parasti, pat ja nesaņemat vizuālo atgriezenisko saiti no rādītāja.</p>
 

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="hardware-cardreader" xml:lang="de">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="hardware-cardreader" xml:lang="de">
 
   <info>
     <link type="guide" xref="media#photos"/>
     <link type="guide" xref="hardware#problems"/>
 
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
+    <desc>Fehlerbeseitigung bei Speicherkartenlesern</desc>
 
     <credit type="author">
       <name>GNOME-Dokumentationsprojekt</name>
@@ -13,13 +13,17 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Fehlerbeseitigung bei Speicherkartenlesern</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hendrik Knackstedt</mal:name>
-      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
-      <mal:years>2011.</mal:years>
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -29,21 +33,9 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Christian Kirbach</mal:name>
-      <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Mario Blättermann</mal:name>
-      <mal:email>mario.blaettermann@gmail.com</mal:email>
-      <mal:years>2011-2013, 2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Benjamin Steinwender</mal:name>
-      <mal:email>b@stbe.at</mal:email>
-      <mal:years>2014.</mal:years>
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.to</mal:years>
     </mal:credit>
   </info>
 
@@ -57,11 +49,11 @@
 </item>
 
 <item>
-  <p>Öffnen Sie <app>Dateien</app> mit Hilfe der <gui xref="shell-introduction#activities">Aktivitäten</gui>-Übersicht. Erscheint die eingelegte Karte in der <gui>Geräte</gui>-Liste in der linken Seitenleiste? Manchmal ist die Karte in dieser Liste aufgeführt, aber nicht eingehängt; klicken Sie einmal darauf, um sie einzuhängen. (Falls die Seitenleiste nicht sichtbar ist, drücken Sie die <key>F9</key>-Taste oder klicken Sie auf den Ansichtsoptionen-Knopf in der oberen Leiste und wählen Sie <gui>Seitenleiste</gui>.)</p>
+<p>Öffnen Sie <app>Dateien</app> mit Hilfe des <gui>Aktivitäten</gui>Menüs. Erscheint die eingelegte Karte in der <gui>Geräte</gui>-Liste in der linken Seitenleiste? Manchmal ist die Karte in dieser Liste, ist aber nicht eingehängt; klicken Sie einmal darauf, um sie einzuhängen. (Falls die Seitenleiste nicht sichtbar ist, drücken Sie die <key>F9</key>-Taste oder klicken Sie <guiseq><gui>Ansicht</gui><gui>Seitenleiste</gui><gui>Seitenleiste anzeigen</gui></guiseq>.)</p>
 </item>
 
 <item>
-  <p>Falls Ihre Karte nicht in der Seitenleiste angezeigt wird, drücken Sie <keyseq><key>Strg</key><key>L</key></keyseq> und geben Sie dann <input>computer:///</input> ein und bestätigen Sie die Eingabe mit der <key>Eingabetaste</key>. Wenn der Kartenleser korrekt eingerichtet ist, wird er als Laufwerk angezeigt, falls keine Karte vorhanden ist, oder als Karte, wenn diese eingelegt wurde.</p>
+<p>Falls Ihre Karte nicht in der Seitenleiste angezeigt wird, wählen Sie <guiseq><gui>Gehe zu</gui><gui>Rechner</gui></guiseq>. Falls der Kartenleser korrekt eingerichtet ist, sollte er als Laufwerk angezeigt werden, falls keine Karte vorhanden ist, oder die Karte selbst, wenn Sie eingehängt wurde (siehe Bild unten).</p>
 </item>
 
 <item>
@@ -69,6 +61,6 @@
 </item>
 </steps>
 
-<p>Wenn keine Karten oder Laufwerke im Ordner <gui>Rechner</gui> sichtbar sind, funktioniert Ihr Kartenleser möglicherweise aufgrund von Treiberproblemen nicht unter Linux. Wenn es sich um einen internen Kartenleser handelt (im Rechner eingebaut statt außen angeschlossen), ist das umso wahrscheinlicher. Die beste Lösung ist es, Ihr Gerät (Kamera, Mobiltelefon etc.) direkt über den USB-Anschluss mit dem Rechner zu verbinden. Es gibt auch externe USB-Kartenleser, die unter Linux weitaus besser unterstützt sind.</p>
+<p>Wenn keine Karten oder Laufwerke im Ordner <gui>Rechner</gui> sichtbar sind, funktioniert Ihr Kartenleser möglicherweise aufgrund von Treiberproblemen nicht unter Linux. Wenn es sich um einen internen Kartenleser handelt (im Rechner statt außen angehängt), ist das umso wahrscheinlicher. Die beste Lösung ist es, Ihr Gerät (Kamera, Handy etc.) direkt über den USB-Anschluss mit dem Rechner zu verbinden. Es gibt auch externe USB-Kartenleser, die unter Linux weitaus besser unterstützt sind.</p>
 
 </page>

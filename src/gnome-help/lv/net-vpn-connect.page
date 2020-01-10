@@ -1,32 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-vpn-connect" xml:lang="lv">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="net-vpn-connect" xml:lang="lv">
   <info>
     <link type="guide" xref="net-wireless"/>
     <link type="guide" xref="net-wired"/>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
-    <revision pkgversion="3.10" date="2013-12-05" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>GNOME dokumentācijas projekts</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
-    <desc>Iestatiet VPN savienojumu uz privātu tīklu cauri internetam.</desc>
+    <desc>VPN ļauj pievienoties lokālam tīklam ar savienojumu, kas iet cauri internetam. Uzziniet, kā iestatīt VPN savienojumu.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
-<title>Savienoties ar VPN</title>
+<title>Izveidojiet savienojumu ar VPN</title>
 
 <p>VPN (no angļu valodas <em>Virtual Private Network</em>, Virtuālais privātais tīkls) ir veids, kā savienoties iekšējā tīklā caur internetu. Piemēram, pieņemsim, ka jūs vēlaties izveidot savienojumu ar jūsu darba vietas iekšējo tīklu, kamēr jūs esat komandējumā. Jūs varētu atrast kaut kur interneta savienojumu (piemēram, kādā viesnīcā) un pēc tam izveidot savienojumu ar jūsu darba vietas VPN. Tas būtu tā pat, it kā jūs būtu tieši pieslēdzies tīklam darbā, bet faktiski tīkla savienojums būtu caur viesnīcas interneta savienojumu. VPN savienojumi parasti ir <em>šifrēti</em>, lai novērstu iespēju, ka cilvēki pieslēdzas jūsu iekšējam tīkla bez pilnvarošanas.</p>
 
@@ -36,36 +25,40 @@
  <p>Ja nav NetworkManager pakotnes, kas paredzēta jūsu VPN tipam, jums, iespējams, vajadzēs lejupielādēt un iestatīt kādu klienta programmu no kompānijas, kas nodrošina VPN programmatūru. Jums, iespējams, vajadzēs sekot vairākām dažādām instrukcijām, lai tas strādātu.</p>
 </note>
 
-<p>Lai iestatītu VPN savienojumu:</p>
+<p>Kad tas ir paveikts, jūs varat veidot VPN savienojumu:</p>
 
-  <steps>
-    <item>
-      <p>Atveriet <gui xref="shell-introduction#activities">Aktivitāšu</gui> pārskatu un sāciet rakstīt <gui>Tīkls</gui>.</p>
-    </item>
-    <item>
-      <p>Spiediet <gui>Tīkls</gui>, lai atvērtu paneli.</p>
-    </item>
-    <item>
-      <p>Kreisajā saraksta pusē spiediet <gui>+</gui> pogu, lai pievienotu jaunu savienojumu.</p>
-    </item>
-    <item>
-      <p>Izvēlieties <gui>VPN</gui> saskarņu sarakstā.</p>
-    </item>
-    <item>
-      <p>Izvēlieties, kāda veida VPN savienojums jums ir.</p>
-    </item>
-    <item>
-      <p>Aizpildiet informāciju par VPN, beigās spiediet <gui>Pievienot</gui>.</p>
-    </item>
-    <item>
-      <p>Kad esat beidzis VPN izveidi, atveriet <gui xref="shell-introduction#yourname">sistēmas izvēlni</gui> labajā pusē augšējā joslā, spiediet <gui>VPN ir izslēgts</gui> un izvēlieties <gui>Savienoties</gui>. Jums visdrīzāk būs jāievada paroli, pirms varēs izveidot savienojumu. Kad savienojums ir izveidots, augšējā joslā redzēsiet ikonu, kas izskatās pēc slēdzenes. </p>
-    </item>
-    <item>
-      <p>Cerams, jūs veiksmīgi savienosities ar VPN. Ja nē, varbūt vēlreiz ir nepieciešams pārbaudīt ievadītos VPN iestatījumus. Jūs to varat izdarīt no <gui>Tīkla</gui> paneļa, ko izmantojāt, lai izveidotu savienojumu. No saraksta izvēlieties VPN savienojumu, tad spiediet pogu <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">iestatījumi</span></media>, lai pārskatītu iestatījumus.</p>
-    </item>
-    <item>
-      <p>Lai atvienotos no VPN, spiediet uz sistēmas izvēlnē augšējajā joslā un spiediet <gui>Izslēgt</gui> zem sava VPN savienojuma nosaukuma.</p>
-    </item>
-  </steps>
+<steps>
+ <item>
+  <p>Spiediet uz tīkla ikonas augšējā joslā un izvēlieties <gui>Tīkla iestatījumi</gui>.</p>
+ </item>
+
+ <item>
+  <p>Kreisajā pusē sarakstā spiediet <gui>+</gui>  pogu un pievienojiet jaunu savienojumu.</p>
+ </item>
+
+ <item>
+  <p>Izvēlieties <gui>VPN</gui> saskarņu sarakstā un spiediet <gui>Izveidot...</gui>.</p>
+ </item>
+
+ <item>
+  <p>Spiediet <gui>Pievienot</gui> un izvēlieties, kāda veida VPN savienojums jums ir.</p>
+ </item>
+
+ <item>
+  <p>Spiediet <gui>Izveidot</gui> un sekojiet ekrānā redzamajām instrukcijām, ievadot detaļas, piemēram, jūsu lietotājvārdu un paroli.</p>
+ </item>
+
+ <item>
+  <p>Kad esat beidzis VPN izveidi, spiediet uz tīkla ikonas augšējajā joslā, dodieties uz <gui>VPN savienojumi</gui> un spiediet uz savienojumu, kuru jūs tikko izveidojāt. Tas centīsies izveidot VPN savienojumu — tīkla ikona mainīsies, jo tā mēģinās izveidot savienojumu.</p>
+ </item>
+
+ <item>
+  <p>Cerams, jūs veiksmīgi savienosities ar VPN. Ja nē, varbūt vēlreiz ir nepieciešams pārbaudīt ievadītos VPN iestatījumus. Jūs to varat izdarīt spiežot uz tīkla ikonas, spiediet <gui>Tīkla iestatījumi</gui> un dodieties uz <gui>VPN</gui> cilni.</p>
+ </item>
+
+ <item>
+  <p>Lai atvienotos no VPN, spiediet uz tīkla ikonas augšējajā joslā un spiediet <gui>Atvienot</gui> zem jūsu VPN nosaukuma.</p>
+ </item>
+</steps>
 
 </page>

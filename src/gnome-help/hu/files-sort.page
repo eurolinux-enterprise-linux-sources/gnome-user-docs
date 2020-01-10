@@ -2,11 +2,10 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-sort" xml:lang="hu">
 
   <info>
-    <link type="guide" xref="files#common-file-tasks"/>
+    <link type="guide" xref="files"/>
+    <desc>Fájlok rendezése név, méret, típus vagy módosítási dátum alapján.</desc>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-25" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -20,10 +19,7 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Fájlok rendezése név, méret, típus vagy módosítási dátum alapján.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Griechisch Erika</mal:name>
@@ -34,7 +30,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Kelemen Gábor</mal:name>
       <mal:email>kelemeng at gnome dot hu</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015, 2016, 2017</mal:years>
+      <mal:years>2011, 2012, 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -54,61 +50,60 @@
       <mal:email>lukacs.bence1 at gmail dot com</mal:email>
       <mal:years>2011</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Nagy Zoltán</mal:name>
-      <mal:email>dzodzie at gmail dot com</mal:email>
-      <mal:years>2011</mal:years>
-    </mal:credit>
   </info>
 
 <title>Fájlok és mappák rendezése</title>
+
+<comment>
+ <p>May benefit from figures illustrating the different views.</p>
+</comment>
 
 <p>A fájlokat különböző szempontok, például dátum vagy fájlméret szerint rendezheti a mappákban. A fájlok rendezési módjaival kapcsolatban lásd a <link xref="#ways"/> részt alább. Az alapértelmezett rendezési sorrend módosításával kapcsolatban lásd a <link xref="nautilus-views"/> fejezetet.</p>
 
 <p>A fájlok lehetséges rendezési módjai az éppen használt <em>mappanézettől</em> függenek. Az aktuális nézetet az eszköztáron lévő lista vagy ikon gombok használatával változtathatja meg.</p>
 
 <section id="icon-view">
-  <title>Ikonnézet</title>
-
-  <p>Módosíthatja a fájlok rendezési sorrendjét az eszköztár nézetbeállítások gombjának megnyomásával, és a <gui>Név szerint</gui>, <gui>Méret szerint</gui>, <gui>Típus szerint</gui>, <gui>Módosítás dátuma szerint</gui> vagy <gui>Elérés dátuma szerint</gui> egyikének kiválasztásával.</p>
-
-  <p>Ha például a <gui>Név szerint</gui> menüpontot választja, a fájlok nevük szerint ábécérendbe lesznek rendezve. További lehetőségekért lásd: <link xref="#ways"/>.</p>
-
-  <p>Fordított sorrendbe is rendezhet a menü <gui>Fordított sorrend</gui> pontjának kiválasztásával.</p>
-
+ <title>Ikonnézet</title>
+ <p>Módosíthatja a fájlok rendezési sorrendjét az eszköztár <media type="image" src="figures/go-down.png">lefelé</media> gombjának megnyomásával, és a <gui>Név szerint</gui>, <gui>Méret szerint</gui>, <gui>Típus szerint</gui> vagy <gui>Módosítás dátuma szerint</gui> egyikének kiválasztásával.</p>
+ <p>Ha például a <gui>Név szerint</gui> menüpontot választja, a fájlok nevük szerint ábécérendbe lesznek rendezve. További lehetőségekért lásd: <link xref="#ways"/>.</p>
+ <p>Fordított sorrendbe is rendezhet a legördülő menü <gui>Fordított sorrend</gui> pontjának kiválasztásával.</p>
 </section>
 
 <section id="list-view">
-  <title>Listanézet</title>
-
-  <p>A fájlok más sorrendbe rendezéséhez kattintson a fájlkezelő egyik oszlopfejlécére. A fájlok típus szerinti rendezéséhez például kattintson a <gui>Típus</gui> fejlécre. A sorrend megfordításához kattintson újra az oszlopfejlécre.</p>
-  <p>A listanézetben más attribútumokat tartalmazó oszlopokat is megjeleníthet, és rendezhet azok szerint. Nyomja meg a nézetbeállítások gombot az eszköztáron, válassza a <gui>Látható oszlopok</gui> menüpontot, majd válassza ki a megjelenítendő oszlopokat. Ezután rendezhet ezen oszlopok alapján is. Az összes elérhető oszlop leírását lásd: <link xref="nautilus-list"/>.</p>
-
+ <title>Listanézet</title>
+ <p>A fájlok más sorrendbe rendezéséhez kattintson a fájlkezelő egyik oszlopfejlécére. A fájlok típus szerinti rendezéséhez például kattintson a <gui>Típus</gui> fejlécre. A sorrend megfordításához kattintson újra az oszlopfejlécre.</p>
+ <p>A listanézetben más attribútumokat tartalmazó oszlopokat is megjeleníthet, és rendezhet azok szerint. Nyomja meg a <media type="image" src="figures/go-down.png">lefelé</media> gombot az eszköztáron, válassza a <gui>Látható oszlopok</gui> menüpontot, majd válassza ki a megjelenítendő oszlopokat. Ezután rendezhet ezen oszlopok alapján is. Az összes elérhető oszlop leírását lásd: <link xref="nautilus-list"/>.</p>
 </section>
 
+<!--
+<section id="compact-view">
+ <title>Compact view</title>
+ <p>You can sort files in Compact view in the same way that you can sort them in
+ the Icon view. The only difference is that you can't manually position the files
+ anywhere you want; they are always organized as a list in this view.</p>
+</section>
+-->
+
 <section id="ways">
-  <title>Fájlok rendezési módjai</title>
-
-  <terms>
-    <item>
-      <title>Név</title>
-      <p>Ábécérend a fájlok neve alapján.</p>
-    </item>
-    <item>
-      <title>Méret</title>
-      <p>Rendezés a fájl mérete (mennyi lemezhelyet foglal) alapján. Alapesetben a legkisebbtől a legnagyobbig rendez.</p>
-    </item>
-    <item>
-      <title>Típus</title>
-      <p>Ábécérend a fájlok típusa alapján. Az azonos típusú fájlok csoportosítva, majd név szerint rendezve lesznek.</p>
-    </item>
-    <item>
-      <title>Utoljára módosítva</title>
-      <p>A fájl utolsó módosításának dátuma és ideje szerint rendez. Alapesetben a legrégebbitől a legújabbig rendez.</p>
-    </item>
-  </terms>
-
+ <title>Fájlok rendezési módjai</title>
+ <terms>
+  <item>
+   <title>Név szerint</title>
+   <p>Ábécérend a fájlok neve alapján.</p>
+  </item>
+  <item>
+   <title>Méret szerint</title>
+   <p>Rendezés a fájl mérete (mennyi lemezhelyet foglal) alapján. Alapesetben a legkisebbtől a legnagyobbig rendez.</p>
+  </item>
+  <item>
+   <title>Típus szerint</title>
+   <p>Ábécérend a fájlok típusa alapján. Az azonos típusú fájlok csoportosítva, majd név szerint rendezve lesznek.</p>
+  </item>
+  <item>
+   <title>Módosítás dátuma szerint</title>
+   <p>A fájl utolsó módosításának dátuma és ideje szerint rendez. Alapesetben a legrégebbitől a legújabbig rendez.</p>
+  </item>
+ </terms>
 </section>
 
 </page>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="question" id="color-whatisspace" xml:lang="ja">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="question" id="color-whatisspace" xml:lang="ja">
 
   <info>
     <link type="guide" xref="color#profiles"/>
@@ -15,7 +15,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>松澤 二郎</mal:name>
       <mal:email>jmatsuzawa@gnome.org</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -34,18 +34,6 @@
       <mal:name>Shushi Kurose</mal:name>
       <mal:email>md81bird@hitaki.net</mal:email>
       <mal:years>2012</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Noriko Mizumoto</mal:name>
-      <mal:email>noriko@fedoraproject.org</mal:email>
-      <mal:years>2013, 2014</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>坂本 貴史</mal:name>
-      <mal:email>o-takashi@sakamocchi.jp</mal:email>
-      <mal:years>2013, 2014</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -86,7 +74,7 @@
 
   <figure>
     <desc>sRGB, AdobeRGB and ProPhotoRGB represented by white triangles</desc>
-    <media its:translate="no" type="image" mime="image/png" src="figures/color-space.png"/>
+    <media type="image" mime="image/png" src="figures/color-space.png"/>
   </figure>
 
   <p>
@@ -111,7 +99,7 @@
   </p>
 
   <p>
-    Now, if ProPhoto is clearly better, why don’t we use it for everything?
+    Now, if ProPhoto is clearly better, why don't we use it for everything?
     The answer is to do with <em>quantization</em>.
     If you only have 8 bits (256 levels) to encode each channel, then a
     larger range is going to have bigger steps between each value.

@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="color-assignprofiles" xml:lang="es">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="color-assignprofiles" xml:lang="es">
 
   <info>
     <link type="guide" xref="color"/>
     <link type="seealso" xref="color-whatisprofile"/>
     <link type="seealso" xref="color-why-calibrate"/>
+    <desc>Busque en la <guiseq><gui>Configuración</gui><gui>Color</gui></guiseq> la opción para cambiar esto.</desc>
 
     <revision pkgversion="3.7.1" version="0.2" date="2012-11-16" status="outdated"/>
-    <revision pkgversion="3.10" date="2013-11-04" status="candidate"/>
-    <revision pkgversion="3.28" date="2018-04-04" status="review"/>
 
     <credit type="author">
       <name>Richard Hughes</name>
@@ -18,19 +17,12 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Busque en la <guiseq><gui>Configuración</gui><gui>Color</gui></guiseq> la opción para añadir un perfil de color a su pantalla.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2011 - 2018</mal:years>
+      <mal:years>2011 - 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -54,41 +46,15 @@
 
   <title>¿Cómo asignar perfiles a los dispositivos?</title>
 
-  <p>Puede querer asignar un perfil de color a su pantalla o a su impresora para que los colores que muestren sean más precisos.</p>
-
-  <steps>
-    <item>
-      <p>Abra la vista de <gui xref="shell-introduction#activities">Actividades</gui> y empiece a escribir <gui>Configuración</gui>.</p>
-    </item>
-    <item>
-      <p>Pulse en <gui>Configuración</gui>.</p>
-    </item>
-    <item>
-      <p>Pulse <gui>Dispositivos</gui> en la barra lateral.</p>
-    </item>
-    <item>
-      <p>Pulse <gui>Color</gui> en la barra lateral para abrir el panel.</p>
-    </item>
-    <item>
-      <p>Seleccione el dispositivo para el que quiere añadir un perfil.</p>
-    </item>
-    <item>
-      <p>Pulse <gui>Añadir perfil</gui> puede seleccionar un perfil existente o para importar un archivo nuevo.</p>
-    </item>
-    <item>
-      <p>Pulse <gui>Añadir</gui> para confirmar su selección.</p>
-    </item>
-  </steps>
-
+  <p>Abra <guiseq><gui>Configuración</gui><gui>Color</gui></guiseq> y pulse en el dispositivo al que quiere añadir un perfil.</p>
+  <p>Al pulsar <gui>Añadir perfil</gui> puede seleccionar un perfil existente o importar un archivo nuevo.</p>
   <p>Cada dispositivo puede tener asignados varios perfiles, pero sólo uno de ellos puede ser el perfil <em>predeterminado</em>. El perfil predeterminado se usa cuando no hay información adicional que permita elegir el perfil automáticamente. Un ejemplo de selección automática sería si se crease un perfil para papel satinado y otro para papel normal.</p>
 
-  <!--
   <figure>
-    <desc>You can make a profile default by changing it with the radio button.</desc>
+    <desc>Puede crear un perfil predeterminado cambiándolo con el botón de radio.</desc>
     <media type="image" mime="image/png" src="figures/color-profile-default.png"/>
   </figure>
-  -->
 
-  <p>Si el hardware de calibración está conectado, el botón <gui>Calibrar...</gui> creará un perfil nuevo.</p>
+  <p>Si el hardware de calibración está conectado, el botón <gui>Calibrar...</gui> creará un perfil nuevo.</p>
 
 </page>

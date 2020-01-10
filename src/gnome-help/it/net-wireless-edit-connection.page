@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="net-editcon" xml:lang="it">
+  <info>
+    <link type="guide" xref="net-wireless" group="first"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <desc>Imparare cosa significano le opzioni della schermata di modifica della connessione WiFi.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luca Ferretti</mal:name>
+      <mal:email>lferrett@gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Flavia Weisghizzi</mal:name>
+      <mal:email>flavia.weisghizzi@ubuntu.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Modificare una connessione a una rete WiFi</title>
+
+<comment>
+ <p>This topic needs significant revision to be comprehensive. A number of settings remain undocumented.</p>
+</comment>
+
+<p>This topic describes all of the options that are available when you edit
+a wireless network connection. To edit a connection, select it in the
+<gui>Network</gui> settings, then click <gui>Options</gui>.</p>
+
+<note>
+ <p>Molte reti funzionano bene se queste impostazioni vengono lasciate ai loro valori predefiniti. Molte delle opzioni che seguono sono disponibili per consentire un maggiore controllo su configurazioni di rete più avanzate.</p>
+</note>
+
+<section id="available">
+ <title>Disponibile per tutti gli utenti / Connettere automaticamente</title>
+ <terms>
+  <item>
+   <title><gui>Connettere automaticamente</gui></title>
+   <p>Selezionare questa opzione affinché il computer tenti la connessione a questa rete ogni qual volta entri nel suo raggio d'azione.</p>
+   <p>Se ci si trova nel raggio d'azione di diverse reti per le quali è stata impostata la connessione automatica, il computer tenterà di connettersi a quella che compare per prima nella scheda <gui>Senza fili</gui> della finestra <gui>Connessioni di rete</gui> e non si disconnetterà da una rete disponibile per connettersi a un'altra appena giunta a portata.</p>
+  </item>
+
+  <item>
+   <title><gui>Disponibile per tutti gli utenti</gui></title>
+   <p>Selezionare questa opzione per consentire a tutti gli utenti del computer l'accesso a questa rete senza fili. Se la rete ha una <link xref="net-wireless-wepwpa">password WEP/WPA</link> e questa opzione è stata selezionata, occorrerà digitare la password una volta sola. Tutti gli altri utenti del computer potranno connettersi alla rete senza aver bisogno di conoscere la password.</p>
+   <p>Se questa opzione è selezionata, è necessario essere un <link xref="user-admin-explain">amministratore</link> per modificare le impostazioni della rete. Può essere richiesto l'inserimento della password di amministratore.</p>
+  </item>
+ </terms>
+</section>
+
+<section id="wireless">
+ <title>Senza fili</title>
+ <terms>
+  <item>
+   <title><gui>SSID</gui></title>
+   <p>Questo è il nome della rete senza fili cui ci si sta connettendo, conosciuto anche come <em>Service Set Identifier</em>. Non modificarlo a meno che non sia stato modificato il nome della rete senza fili (per esempio, modificando l'impostazione del router o della stazione fissa WiFi).</p>
+  </item>
+
+  <item>
+   <title><gui>Modo</gui></title>
+   <p>Usare questa opzione per specificare se la connessione è relativa a una rete <gui>Infrastruttura</gui>, nella quale i computer si connettono senza fili a una stazione fissa o a un router, o a una rete <gui>Ad-hoc</gui> dove non c'è alcuna stazione fissa e i computer della rete si connettono uno all'altro. Molte reti sono del tipo infrastruttura, ma si potrebbe voler comunque <link xref="net-adhoc">configurare la propria rete ad-hoc</link>.</p>
+   <p>Nel caso sia selezionata l'opzione <gui>Ad-hoc</gui>, occorre specificare due ulteriori opzioni, <gui>Banda</gui> e <gui>Canale</gui>. utilizzate per determinare su quale banda di frequenza la rete WiFi opererà. Alcuni computer possono operare solo su determinate bande (per esempio, solo <gui>A</gui> o solo <gui>B/G</gui>) ed è pertanto necessario scegliere una banda sulla quale possono operare tutti i computer della rete ad-hoc. In posti affollati, ci potrebbero essere diverse reti senza fili che condividono il medesimo canale; questo potrebbe rallentare la connessione, rendendo necessaria la modifica del canale utilizzato.</p>
+  </item>
+
+  <item>
+   <title><gui>BSSID</gui></title>
+   <p>Questo è il <em>Basic Service Set Identifier</em>. Lo SSID (vedere sopra) è il nome della riconoscibile dalle persone; il BSSID è un nome comprensibile per il computer (è una stringa di lettere e numeri che si suppone essere univoca per la rete WiFi). Se una <link xref="net-wireless-hidden">rete è nascosta</link>, non ha un SSID ma solo un BSSID.</p>
+  </item>
+
+  <item>
+   <title><gui>Indirizzo MAC dispositivo</gui></title>
+   <p>Un <link xref="net-macaddress">indirizzo MAC</link> è un codice che identifica un un'unità hardware di rete (come un scheda wireless o ethernet oppure un router). Qualsiasi dispositivo che è possibile collegare a una rete è dotato di un indirizzo MAC unico assegnato dal produttore.</p>
+   <p>Questa opzione può essere utilizzata per modificare l'indirizzo MAC della propria scheda di rete.</p>
+  </item>
+
+  <item>
+   <title><gui>Indirizzo MAC clonato</gui></title>
+   <p>il componente hardware di rete (scheda WiFi) può fare finta di avere un diverso indirizzo MAC. Ciò è utile se un dispositivo o un servizio è in grado di comunicare solo con un certo indirizzo MAC (per esempio, un modem a banda larga via cavo). Se si inserisce quell'indirizzo MAC nella casella <gui>Indirizzo MAC clonato</gui>, il dispositivo/servizio attribuirà al computer l'indirizzo clonato anziché quello reale.</p>
+  </item>
+
+  <item>
+   <title><gui>MTU</gui></title>
+   <p>Questa impostazione modifica la <em>Maximum Transmission Unit</em>, cioè la dimensione massima di porzione di dati che può essere trasmessa via rete. Quando i file sono trasmessi via rete, i dati sono spezzati in piccole parti (o pacchetti). La MTU ottimale per la propria rete dipende sia dalla probabilità di perdita dei pacchetti (a causa di una connessione disturbata) che dalla velocità della connessione. In generale, non dovrebbe essere necessario modificare questa impostazione.</p>
+  </item>
+
+ </terms>
+</section>
+
+<section id="security">
+ <title>Sicurezza WiFi</title>
+ <terms>
+  <item>
+   <title><gui>Sicurezza</gui></title>
+   <p>Definisce quale tipo di <em>cifratura</em> è utilizzato dalla propria rete senza fili. Le connessioni cifrate aiutano a proteggere la connessione senza fili dalle intercettazioni, in modo tale da non consentire ad altre persone di "ascoltare" e vedere quali siti web vengono visitati e così via.</p>
+   <p>Alcuni tipi di cifratura sono più robusti di altri, ma potrebbero non essere supportati dagli equipaggiamenti per reti senza fili più datati. Normalmente è necessario digitare una password per connettersi; alcuni tipi di sicurezza più sofisticati possono richiedere anche un nome utente e un "certificato" digitale. Per maggiori informazioni sui più popolari tipi di cifratura WiFi, consultare <link xref="net-wireless-wepwpa"/>.</p>
+  </item>
+ </terms>
+</section>
+
+<section id="ipv4">
+ <title>Impostazioni IPv4</title>
+
+<comment>
+<cite>shaunm</cite>
+<p>There's also Shared to other computers</p>
+<p>Then there's addresses and dns servers and ipv4 addressing routes.</p>
+<p>All current info correct, but incomplete</p>
+</comment>
+
+ <p>Usare questa scheda per definire informazioni come l'indirizzo IP del computer e quali server DNS usare. Modificare il <gui>Metodo</gui> per visualizzare diversi modi di ottenere/impostare queste informazioni.</p>
+ <p>Sono disponibili i seguenti metodi:</p>
+ <terms>
+  <item>
+   <title><gui>Automatico (DHCP)</gui></title>
+   <p>Ricava informazioni quali l'indirizzo IP e il server DNS da usare da un <em>server DHCP</em>. Un server DHCP è un computer (o un altro dispositivo, come un router) connesso alla rete che stabilisce quali impostazioni di rete dovrebbe avere il computer: in occasione della prima connessione alla rete saranno automaticamente assegnate le corrette impostazioni. Molte reti utilizzano questo metodo.</p>
+  </item>
+
+  <item>
+   <title><gui>Automatico (DHCP) solo indirizzi</gui></title>
+   <p>Se si sceglie questa impostazione, il computer otterrà l'indirizzo IP da un server DHCP, ma sarà necessario definire manualmente altri dettagli (come il server DNS da utilizzare).</p>
+  </item>
+
+  <item>
+   <title><gui>Manuale</gui></title>
+   <p>Scegliere questa opzione per definire personalmente tutte le impostazioni di rete, compreso quale indirizzo IP deve essere usato dal computer.</p>
+  </item>
+
+  <item>
+   <title><gui>Solo Link-Local</gui></title>
+   <p><em>Link-Local</em> è un modo di collegare computer in rete senza bisogno di usare un server DHCP o di definire manualmente indirizzi IP o altre informazioni. In una connessione a una rete Link-Local, i computer in rete decidono fra loro quale indirizzo IP usare e così via. Questa opzione risulta utile qualora sia necessario collegare temporaneamente pochi computer in modo tale da farli comunicare fra di loro.</p>
+  </item>
+
+  <item>
+   <title><gui>Disabilitato</gui></title>
+   <p>Questa opzione disabilita la connessione di rete e ne impedisce l'utilizzo. Notare che <gui>IPv4</gui> e <gui>IPv6</gui> sono considerate come connessioni separate, anche se si riferiscono alla medesima scheda di rete. Se una di esse è abilitata, potrebbe essere necessario disabilitare l'altra.</p>
+  </item>
+
+ </terms>
+</section>
+
+<section id="ipv6">
+ <title>Impostazioni IPv6</title>
+<comment>
+<cite>shaunm</cite>
+<p>The list of methods is a bit different</p>
+</comment>
+ <p>È simile alla scheda <gui>IPv4</gui> ma gestisce il più recente standard IPv6. Le reti più moderne utilizzano il protocollo IPv6, ma IPv4 è attualmente ancora il più diffuso.</p>
+</section>
+
+</page>

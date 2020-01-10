@@ -3,11 +3,10 @@
 
   <info>
     <link type="guide" xref="printing#problems"/>
-    <link type="seealso" xref="printing-inklevel"/>
+
+    <desc>Ha a nyomatok csíkosak, halványak vagy egyes színek hiányoznak, ellenőrizze a tintaszinteket, vagy tisztítsa meg a nyomtatófejet.</desc>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2012-02-19" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>GNOME dokumentációs projekt</name>
@@ -15,8 +14,6 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Ha a nyomatok csíkosak, halványak vagy egyes színek hiányoznak, ellenőrizze a tintaszinteket, vagy tisztítsa meg a nyomtatófejet.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Griechisch Erika</mal:name>
@@ -27,7 +24,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Kelemen Gábor</mal:name>
       <mal:email>kelemeng at gnome dot hu</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015, 2016, 2017</mal:years>
+      <mal:years>2011, 2012, 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -47,35 +44,38 @@
       <mal:email>lukacs.bence1 at gmail dot com</mal:email>
       <mal:years>2011</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Nagy Zoltán</mal:name>
-      <mal:email>dzodzie at gmail dot com</mal:email>
-      <mal:years>2011</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Miért csíkosak vagy hibás színűek a nyomataim?</title>
+<title>Miért csíkosak vagy hibás színűek a nyomataim?</title>
+
+<comment>
+  <cite date="2012-02-19">shaunm</cite>
+  <p>This had a seealso and two inline links to printing-inklevel. I removed
+  printing-inklevel for 3.0. If it gets written, add the links back.</p>
+</comment>
 
   <p>Ha a nyomatai csíkosak, halványak, váratlan helyeken tartalmaznak vonalakat vagy más módon rossz minőségűek, akkor az a nyomtatóval kapcsolatos hibát jelezhet, illetve alacsony tinta- vagy tonerszintet.</p>
 
-  <terms>
-     <item>
-       <title>Halvány szöveg vagy képek</title>
-       <p>Lehet, hogy a tinta vagy toner kifogyóban van. Ellenőrizze a tinta vagy toner szintjét, és szükség esetén vásároljon új patront.</p>
-     </item>
-     <item>
-       <title>Csíkok és vonalak</title>
-       <p>Ha tintasugaras nyomtatója van, akkor a nyomtatófej piszkos lehet, vagy részlegesen eltömődött. Próbálja megtisztítani a nyomtatófejet, utasításokért lásd a nyomtató kézikönyvét.</p>
-     </item>
-     <item>
-       <title>Hibás színek</title>
-       <p>Lehet, hogy az egyik színű tinta vagy toner kifogyóban van. Ellenőrizze a tinta vagy toner szintjét, és szükség esetén vásároljon új patront.</p>
-     </item>
-     <item>
-       <title>Cakkos vagy nem egyenes vonalak</title>
-       <p>Ha az egyenesnek szánt vonalak a nyomaton cakkosak, akkor igazítani kell a nyomtatófejen. A részletekért nézze meg a nyomtató kézikönyvét.</p>
-     </item>
-  </terms>
+<list>
+ <item>
+  <p>Halvány szöveg vagy képek</p>
+  <p>Lehet, hogy a tinta vagy toner kifogyóban van. Ellenőrizze a tinta vagy toner szintjét, és szükség esetén vásároljon új patront.</p>
+ </item>
+
+ <item>
+  <p>Csíkok és vonalak</p>
+  <p>Ha tintasugaras nyomtatója van, akkor a nyomtatófej piszkos lehet, vagy részlegesen eltömődött. Próbálja megtisztítani a nyomtatófejet (utasításokért lásd a nyomtató kézikönyvét).</p>
+ </item>
+
+ <item>
+  <p>Hibás színek</p>
+  <p>Lehet, hogy az egyik színű tinta vagy toner kifogyóban van. Ellenőrizze a tinta vagy toner szintjét, és szükség esetén vásároljon új patront.</p>
+ </item>
+
+ <item>
+  <p>Cakkos vagy nem egyenes vonalak</p>
+  <p>Ha az egyenesnek szánt vonalak a nyomaton cakkosak, akkor igazítani kell a nyomtatófejen. A részletekért nézze meg a nyomtató kézikönyvét.</p>
+ </item>
+</list>
 
 </page>

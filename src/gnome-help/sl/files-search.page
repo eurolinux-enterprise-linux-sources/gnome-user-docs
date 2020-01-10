@@ -2,12 +2,11 @@
 <page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="files-search" xml:lang="sl">
 
   <info>
-    <link type="guide" xref="files#common-file-tasks"/>
+    <link type="guide" xref="files"/>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-25" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
+    <desc>Najdite datoteke na osnovi njihovega imena in vrste. Shranite svoje rezultate za kasnejšo uporabo.</desc>
     <credit type="author">
       <name>Dokumentacijski projekt GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
@@ -20,20 +19,12 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Locate files based on file name and type.</desc>
   </info>
 
   <title>Iskanje datotek</title>
 
-  <p>You can search for files based on their name or file type directly
-  within the file manager.</p>
+  <p>Datoteke lahko iščete na osnovi njihovega imena ali vrste neposredno iz upravljalnika datotek. Pogosta iskanja lahko shranite in pojavila se bodo kot posebne mape v vaši domači mapi.</p>
 
   <links type="topic" style="linklist">
     <title>Drugi programi za iskanje</title>
@@ -43,46 +34,34 @@
 
   <steps>
     <title>Iskanje</title>
-    <item>
-      <p>Open the <app>Files</app> application from the
-      <gui xref="shell-introduction#activities">Activities</gui> overview.</p>
+    <item><p>Odprite program <app>Datoteke</app> iz pregleda <gui>Dejavnosti</gui>.</p></item>
+    <item><p>V primeru da veste, da so datoteke, ki jih želite, v določeni mapi, pojdite v to mapo.</p></item>
+    <item><p>V orodni vrstici kliknite povečevalno steklo ali pritisnite <keyseq><key>krmilka</key><key>F</key></keyseq>.</p></item>
+    <item><p>Type a word or words that you know appear in the file name. For
+    example, if you name all your invoices with the word "Invoice", type
+    <input>invoice</input>. Press <key>Enter</key>. Words are matched regardless
+    of case.</p></item>
+    <item><p>Svoje rezultate lahko zožite glede na mesto in vrsto datoteke.</p>
+    <list>
+      <item><p>Click <gui>Home</gui> to restrict the search results to your
+      <file>Home</file> folder, or <gui>All Files</gui> to search
+      everywhere.</p></item>
+      <item><p>Kliknite na gumb <gui>+</gui> za nastavitev več iskalnih kriterijev in izberite <gui>Vrsta datoteke</gui> iz spustnega seznama za omejitev rezultatov iskanja glede na vrsto datoteke. Kliknite gumb <key>x</key>, da odstranite to možnost in razširite obseg zadetkov.</p></item>
+    </list>
     </item>
-    <item>
-      <p>V primeru da veste, da so datoteke, ki jih želite, v določeni mapi, pojdite v to mapo.</p>
-    </item>
-    <item>
-      <p>Type a word or words that you know appear in the file name, and they
-      will be shown in the search bar. For example, if you name all your
-      invoices with the word “Invoice”, type <input>invoice</input>. Words are
-      matched regardless of case.</p>
-      <note>
-        <p>Instead of typing words directly to bring up the search bar, you can
-	click the magnifying glass in the toolbar, or press
-        <keyseq><key>Ctrl</key><key>F</key></keyseq>.</p>
-      </note>
-    </item>
-    <item>
-      <p>Svoje rezultate lahko zožite glede na mesto in vrsto datoteke.</p>
-      <list>
-        <item>
-          <p>Click <gui>Home</gui> to restrict the search results to your
-          <file>Home</file> folder, or <gui>All Files</gui> to search
-          everywhere.</p>
-        </item>
-        <item>
-          <p>Click the <gui>+</gui> button and pick a <gui>File Type</gui> from
-	  the drop-down list to narrow the search results based on file type.
-	  Click the <gui>×</gui> button to remove this option and widen the
-	  search results.</p>
-        </item>
-      </list>
-    </item>
-    <item>
-      <p>Svoje datoteke lahko iz rezultatov iskanja odpirate, kopirate, izbrišete in delate kot bi iz katerekoli mape v upravljalniku datotek.</p>
-    </item>
-    <item>
-      <p>V orodni vrstici znova kliknite povečevalno steklo za končanje iskanja in vrnitev v mapo.</p>
-    </item>
+    <item><p>Svoje datoteke lahko iz rezultatov iskanja odpirate, kopirate, izbrišete in delate kot bi iz katerekoli mape v upravljalniku datotek.</p></item>
+    <item><p>V orodni vrstici znova kliknite povečevalno steklo za končanje iskanja in vrnitev v mapo.</p></item>
   </steps>
 
+  <p>V primeru da določena iskanja pogosto izvajate, jih lahko shranite za hiter dostop.</p>
+
+  <steps>
+    <title>Shranitev iskanja</title>
+    <item><p>Začnite iskanje kot je prikazano zgoraj.</p></item>
+    <item><p>When you're happy with the search parameters, click the gear
+    button and select <gui>Save Search As</gui>.</p></item>
+    <item><p>Iskanju dajte ime in kliknite <gui>Shrani</gui>. Če želite, lahko za shranjevanje iskanja izberete drugo mapo. Ko si to mapo ogledate, boste svoje shranjeno iskanje videli kot oranžno ikono mape s povečevalnim steklom na njej.</p></item>
+  </steps>
+
+  <p>Za odstranitev iskanja datoteke enostavno <link xref="files-delete">izbrišite</link> iskanje kot bi izbrisali katerokoli drugo datoteko. Ko izbrišete shranjeno iskanje, datoteke, ki se ujemajo z iskanjem, niso izbrisane.</p>
 </page>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="backup-thinkabout" xml:lang="ca">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="tip" id="backup-thinkabout" xml:lang="ca">
 
   <info>
     <link type="guide" xref="files#backup"/>
+    <desc>Llista de directoris on podeu trobar documents, fitxers i paràmetres de configuració dels que possiblement voldreu tenir una còpia de seguretat.</desc>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -21,8 +21,6 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Llista de directoris on podeu trobar documents, fitxers i paràmetres de configuració dels que possiblement voldreu tenir una còpia de seguretat.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>David Aguilera</mal:name>
@@ -37,25 +35,32 @@
 
 <list>
  <item>
-  <p>Arxius personals (documents, música, fotos i vídeos)</p>
-  <p its:locNote="translators: xdg dirs are localised by package xdg-user-dirs and need to be translated.  You can find the correct translations for your language here: http://translationproject.org/domain/xdg-user-dirs.html">Normalment s'ubiquen al directori personal (<file>/home/el_vostre_nom</file>). Poden ser dins d'algun subdirectori com Escriptori, Documents, Imatges, Música i Vídeos.</p>
-  <p>Si el vostre mitjà de còpia de seguretat té espai suficient (si es tracta d'un disc dur extern, per exemple), considereu fer una còpia de seguretat de la carpeta d'inici. Podeu trobar quant espai ocuparà usant l'<app>Analitzador d'us del disc</app>.</p>
+  <p>Personal files (documents, music, photos and videos)</p>
+  <p xmlns:its="http://www.w3.org/2005/11/its" its:locNote="translators: xdg dirs are localised by package xdg-user-dirs and need to be translated.  You can find the correct translations for your language here: http://translationproject.org/domain/xdg-user-dirs.html">Normalment s'ubiquen al directori personal (<cmd>/home/el_vostre_nom</cmd>). Poden ser dins d'algun subdirectori com Escriptori, Documents, Imatges, Música i Vídeos.</p>
+  <p>Si el suport on voleu fer la còpia de seguretat té prou espai (per exemple, és un disc dur extern), considereu copiar el directori d'usuari sencer. Podeu veure quan espai ocupa el vostre directori personal al disc utilitzant l'<app>Analitzador de l'ús dels discs</app>.</p>
  </item>
 
  <item>
   <p>Fitxers ocults</p>
-  <p>Qualsevol nom d'arxiu o carpeta que comenci amb un punt (.) S'oculta per defecte. Per veure els fitxers ocults, feu clic al botó <gui><media its:translate="no" type="image" src="figures/go-down.png"><span its:translate="yes">Opcions de visualització</span></media> </gui> de la barra d'eines, i aleshores seleccioneu <gui>Mostrar arxius ocults</gui>, o premeu <keyseq><key>Ctrl</key><key>H</key></keyseq>. Podeu copiar aquests fitxers a una ubicació de la còpia de seguretat com qualsevol altre fitxer.</p>
+  <p>Per defecte, qualsevol fitxer o directori que comenci amb un punt (.) és ocult. Per veure els fitxers ocults feu clic a <guiseq><gui>Visualitza</gui><gui>Mostra els fitxers ocults</gui></guiseq> o premeu <keyseq><key>Ctrl</key><key>H</key></keyseq>. Podeu copiar els fitxers ocults a una còpia de seguretat de la mateixa manera que qualsevol altre fitxer.</p>
  </item>
 
  <item>
-  <p>Configuració personal (preferències d'escriptori, temes i configuració del programari)</p>
-  <p>La majoria de les aplicacions emmagatzemen la seva configuració en carpetes amagades dins de la carpeta d'inici (mireu més amunt per obtenir informació sobre els fitxers ocults).</p>
-  <p>La major part de les opcions de configuració de les vostres aplicacions s'emmagatzemen en carpetes ocultes <file>.config</file> i <file>.local</file> a la carpeta Home..</p>
+  <p>Personal settings (desktop preferences, themes, and software settings)</p>
+  <p>Most applications store their settings in hidden folders inside your Home
+ folder (see above for information on hidden files).</p>
+  <p>Most of your application settings will be stored in the hidden folders
+ <file>.config</file>, <file>.gconf</file>, <file>.gnome2</file>, and <file>.local</file>
+ in your Home folder.</p>
  </item>
 
  <item>
   <p>Paràmetres del sistema</p>
-  <p>La configuració de les parts importants del sistema no s'emmagatzemen a la carpeta d'inici. Hi ha diverses ubicacions on es podrien emmagatzemar, però la majoria s'emmagatzemen a la carpeta <file>/etc</file>. En general, no necessitareu fer una còpia de seguretat d'aquests fitxers en un ordinador personal. Si esteu executant un servidor, però, hauríeu de fer una còpia de seguretat dels fitxers dels serveis que s'estiguin executant.</p>
+  <p>Settings for important parts of the system aren't stored in your Home
+ folder. There are a number of locations that they could be stored, but most are
+ stored in the <file>/etc</file> folder. In general, you won't need to back up
+ these files on a home computer. If you are running a server, however, you
+ should back up the files for the services that it is running.</p>
  </item>
 </list>
 

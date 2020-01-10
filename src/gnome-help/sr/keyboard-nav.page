@@ -6,8 +6,6 @@
     <link type="seealso" xref="shell-keyboard-shortcuts"/>
 
     <revision pkgversion="3.7.5" version="0.2" date="2013-02-23" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.20" date="2016-08-13" status="candidate"/>
 
     <credit type="author">
       <name>Мајкл Хил</name>
@@ -27,12 +25,18 @@
        <email>kittykat3756@gmail.com</email>
     </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
     <desc>Користите програме и радну површ без миша.</desc>
   </info>
 
   <title>Навигација тастатуром</title>
+
+  <comment>
+    <cite date="2012-03-14" href="mailto:shaunm@gnome.org">Shaun McCance</cite>
+    <p>Do <em>NOT</em> use <code>ui:expanded</code> on this page. I know it's
+    tempting, but the target audience for this page is people who cannot use
+    a mouse, and having to expand sections when you're just figuring out how
+    to drive things with the keyboard is a burden.</p>
+  </comment>
 
   <p>Ова страница описује навигацију тастатуром за људе који не могу да користе миша или други показивачки уређај, или који желе што више да користе тастатуру. За пречице тастатуре које су корисне свим корисницима, погледајте <link xref="shell-keyboard-shortcuts"/>.</p>
 
@@ -53,6 +57,7 @@
     <td><p>Тастери стрелица</p></td>
     <td>
       <p>Премештајте избор између ставки у једном управљању, или уз скуп односних управљања. Користите тастере стрелица да поставите у први план дугмад на траци алата, изаберете ставке на списку или у прегледу иконицама, или да изаберете радио дугме из групе.</p>
+      <p>У прегледу стаблом, користите леву и десну стрелицу да скупите и раширите ставке са садржајем.</p>
     </td>
   </tr>
   <tr>
@@ -62,7 +67,6 @@
   <tr>
     <td><p><keyseq><key>Шифт</key>Тастери стрелица</keyseq></p></td>
     <td><p>У прегледу списком или иконицама, изаберите све ставке од тренутно изабране све до новофокусиране ставке.</p></td>
-    <td><p>У прегледу стаблом, ставке које садрже друге ставке се могу раширити или скупити, да прикажете или да сакријете њихов садржај: притисните <keyseq><key>Помак</key><key>→</key></keyseq> да раширите, или <keyseq><key>Помак</key><key>←</key></keyseq> да скупите.</p></td>
   </tr>
   <tr>
     <td><p><key>Размак</key></p></td>
@@ -121,7 +125,7 @@
   </tr>
   <tr>
     <td><p><keyseq><key>Супер</key><key>М</key></keyseq></p></td>
-    <td><p><link xref="shell-notifications#messagetray">Отворите фиоку порука.</link> Притисните <key>Есц</key> да затворите.</p></td>
+    <td><p><link xref="shell-notifications#messagingtray">Отворите фиоку порука.</link> Притисните <key>Есц</key> да затворите.</p></td>
   </tr>
 </table>
 
@@ -133,7 +137,7 @@
   </tr>
   <tr>
     <td><p><keyseq><key>Алт</key><key>Ф5</key></keyseq> или <keyseq><key>Супер</key><key>↓</key></keyseq></p></td>
-    <td><p>Повратите увећани прозор на његову првобитну величину. Користите <keyseq><key>Алт</key><key>Ф10</key></keyseq> да увећате. <keyseq><key>Алт</key><key>Ф10</key></keyseq> и увећава и враћа величину.</p></td>
+    <td><p>Повратите увећани прозор на његову првобитну величину. Користите <keyseq><key>Алт</key> <key>Ф10</key></keyseq> да увећате. <keyseq><key>Алт</key><key>Ф10</key></keyseq> и увећава и враћа величину.</p></td>
   </tr>
   <tr>
     <td><p><keyseq><key>Алт</key><key>Ф7</key></keyseq></p></td>
@@ -144,8 +148,6 @@
     <td><p>Промените величину текућег прозора. Притисните <keyseq><key>Алт</key><key>Ф8</key></keyseq>, затим користите стрелице да промените величину прозора. Притисните <key>Унеси</key> да завршите са променом величине прозора, или <key>Изађи</key> да га вратите на његову првобитну величину.</p></td>
   </tr>
   <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-updown"/>
-  <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-left"/>
-  <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-right"/>
   <tr>
     <td><p><keyseq><key>Алт</key><key>Ф10</key></keyseq> или <keyseq><key>Супер</key><key>↑</key></keyseq></p>
     </td>

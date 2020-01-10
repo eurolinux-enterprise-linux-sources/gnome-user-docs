@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:if="http://projectmallard.org/if/1.0/" type="guide" style="task" version="1.0 if/1.0" id="bluetooth-connect-device" xml:lang="sr-Latn">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="guide" style="task" id="bluetooth-connect-device" xml:lang="sr-Latn">
 
   <info>
     <link type="guide" xref="bluetooth"/>
     <link type="seealso" xref="sharing-bluetooth"/>
-    <link type="seealso" xref="bluetooth-remove-connection"/>
+    
+    <revision pkgversion="3.8.2" version="0.2" date="2013-05-16" status="review"/>
 
-    <revision pkgversion="3.8" date="2013-05-16" status="review"/>
-    <revision pkgversion="3.10" date="2013-11-09" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.13" date="2014-09-22" status="final"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
+    <desc>Uparite Blutut uređaje.</desc>
 
     <credit type="author">
       <name>Džim Kembel</name>
@@ -28,58 +25,57 @@
       <name>Majkl Hil</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Dejvid King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Uparite Blutut uređaje.</desc>
   </info>
 
   <title>Povežite vaš računar na Blutut uređaj</title>
 
-  <p>Pre nego što ćete moći da koristite Blutut uređaj kao što je miš ili slušalice sa mikrofonom, kao prvo morate da povežete vaš računar na uređaj. Ovo se takođe naziva <em>uparivanjem</em> Blutut uređaja.</p>
+  <p>Pre nego što ćete moći da koristite Blutut uređaj kao što je miš ili slušalice sa mikrofonom, kao prvo morate da povežete vaš računar na uređaj. Ovo se takođe naziva uparivanjem Blutut uređaja.</p>
+
+  <note style="important">
+    <p>Pre nego što počnete, uverite se da je uključen Blutut na vašem računaru. Pogledajte <link xref="bluetooth-turn-on-off"/>.</p>
+  </note>
 
   <steps>
     <item>
-      <p>Otvorite pregled <gui xref="shell-introduction#activities">Aktivnosti</gui> i počnite da kucate <gui>Blutut</gui>.</p>
+      <if:choose>
+        <if:when test="platform:unity">
+          <p>Kliknite na ikonicu Blututa na traci izbornika i izaberite <gui>Podesi novi uređaj</gui>.</p>
+        </if:when>
+        <p>Kliknite na ikonicu Blututa na gornjoj traci i izaberite <gui>Podesi novi uređaj</gui>.</p>
+      </if:choose>
     </item>
     <item>
-      <p>Kliknite na <gui>Blutut</gui> da otvorite panel.</p>
+      <p>Učinite da ostali Blutut uređaji budu <link xref="bluetooth-visibility">otkriveni ili vidljivi</link> i postavite ga na 10 metara od vašeg računara. Kliknite <gui>Nastavi</gui>. Vaš računar će početi da traži uređaje.</p>
     </item>
     <item>
-      <p>Uverite se da je blutut uključen: prekidač na vrhu treba biti postavljen na <gui>UKLJ.</gui>. Sa otvorenim panelom i <gui>UKLJ.</gui> prekidačem, vaš računar će početi da traži uređaje.</p>
+      <p>Ako ima previše uređaja na spisku, koristite padajući spisak <gui>Vrsta uređaja</gui> da prikažete samo uređaje jedne vrste na spisku.</p>
     </item>
     <item>
-      <p>Namestite da drugi Blutut uređaj bude <link xref="bluetooth-visibility">otkriven ili vidljiv</link> i postavite ga na 5-10 metara od vašeg računara.</p>
+      <p>Kliknite <gui>PIN opcije</gui> da podesite na koji način će PIN biti isporučen drugim uređajima.</p>
+      <note>
+	<p>Samostalno podešavanje PIN-a će koristiti šestocifreni brojni kod. Uređaj bez ulaznih ključeva ili ekrana, kao što je miš ili slušalice sa mikrofonom, mogu da zatraže poseban PIN kao 0000, ili čak bez PIN-a. Ručno proverite vaše uređaje za vlastitim podešavanjima.</p>
+      </note>
+      <p>Izaberite odgovarajuće podešavanje PIN-a za vaš uređaj, zatim kliknite <gui>Zatvori</gui>.</p>
     </item>
     <item>
-      <p>Kliknite na uređaj u spisku <gui>Uređaji</gui>. Otvoriće se panel za uređaje.</p>
+      <p>Kliknite <gui>Nastavi</gui> za sledeće. Ako niste izabrali PIN pretpodešavanja, PIN će biti prikazan na ekranu.</p>
     </item>
     <item>
-      <p>Ako je zatraženo, potvrdite PIN na vašem drugom uređaju. Uređaj treba da vam pokaže PIN koji ste videli na ekranu vašeg računara. Potvrdite PIN na uređaju (možda ćete morati da kliknete na <gui>Upari</gui> ili <gui>Potvrdi</gui>), zatim na računaru kliknite <gui>Potvrdi</gui>.</p>
+      <p>Ako je zatraženo, potvrdite PIN na vašem drugom uređaju. Uređaj treba da vam pokaže PIN koji ste videli na ekranu vašeg računara, ili može da vam zatraži da unesete PIN. Potvrdite PIN na uređaju, zatim kliknite <gui>Poklopi</gui>.</p>
       <p>Morate da završite vaš unos za 20 sekunde na većini uređaja, ili veza neće biti uspostavljena. Ako do ovoga dođe, vratite se na spisak uređaja i počnite opet.</p>
     </item>
     <item>
-      <p>Unos za uređaj u spisku <gui>uređaja</gui> prikazaće stanje <gui>Povezan</gui>.</p>
-    </item>
-    <item>
-      <p>Da uredite uređaj, kliknite na njega u spisku <gui>uređaja</gui>. Videćete naročiti panel za uređaj. Može prikazivati dodatne opcije primenjive na vrstu uređaja na koji se povezujete.</p>
-    </item>
-    <item>
-      <p>Zatvorite panel kada izmenite podešavanja.</p>
+      <p>Poruka će se pojaviti kada veza bude uspešno uspostavljena. Kliknite <gui>Zatvori</gui>.</p>
     </item>
   </steps>
 
-  <media its:translate="no" type="image" src="figures/bluetooth-menu.png" style="floatend">
-    <p its:translate="yes">Ikonica blututa na gornjoj traci</p>
-  </media>
-  <p>Kada je povezan jedan ili više blutut uređaja, ikonica blututa se pojavljuje u oblasti stanja sistema.</p>
+  <p>Kasnije, ako želite, možete da <link xref="bluetooth-remove-connection">uklonite Blutut vezu</link>.</p>
+
+      <note style="tip">
+        <p>To control access to your shared files, refer to the
+        <gui>Bluetooth Sharing</gui> settings. See
+        <link xref="sharing-bluetooth"/>.</p>
+      </note>
 
 </page>

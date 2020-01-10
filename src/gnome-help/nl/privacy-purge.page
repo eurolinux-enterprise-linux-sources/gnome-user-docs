@@ -1,76 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="privacy-purge" xml:lang="nl">
 
-  <info>
-    <link type="guide" xref="privacy"/>
-    <link type="guide" xref="files#more-file-tasks"/>
+<info>
+  <link type="guide" xref="privacy"/>
+  <desc>Set how often your trash and temporary files will be cleared
+  from your computer.</desc>
+  <revision pkgversion="3.8" date="2013-03-06" status="candidate"/>
+  <credit type="author">
+    <name>Jim Campbell</name>
+    <email>jwcampbell@gmail.com</email>
+  </credit>
+  <credit type="editor">
+    <name>Michael Hill</name>
+    <email>mdhillca@gmail.com</email>
+  </credit>
+</info>
+  <title>Purge trash &amp; temporary files</title>
 
-    <revision pkgversion="3.10" date="2013-09-29" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-30" status="candidate"/>
-
-    <credit type="author">
-      <name>Jim Campbell</name>
-      <email>jwcampbell@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Shaun McCance</name>
-      <email>mdhillca@gmail.com</email>
-      <years>2015</years>
-    </credit>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Geef op hoe vaak bestanden in uw prullenbak en tijdelijke bestanden van uw computer zullen worden verwijderd.</desc>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
-  </info>
-
-  <title>Prullenbak legen &amp; tijdelijke bestanden definitief verwijderen</title>
-
-  <p>Het verwijderen van bestanden in de prullenbak en tijdelijke bestanden zorgt ervoor dat ongewenste en onnodige bestanden van uw computer verwijderd worden, en ook dat er meer schijfruimte op uw harde schijf wordt vrijgemaakt. U kunt handmatig uw prullenbak legen en tijdelijke bestanden verwijderen, maar u kunt dit ook automatisch door uw computer laten doen.</p>
-
-  <p>Tijdelijke bestanden zijn bestanden die automatisch op de achtergrond aangemaakt worden door toepassingen. Ze kunnen de prestatie verbeteren door te voorzien in een kopie van gegevens die gedownload of berekend zijn.</p>
+  <p>Clearing out your trash and temporary files removes
+  unwanted and unneeded files from your computer, and also frees up more
+  space on your hard drive. You can manually empty your trash and clear
+  your temporary files, but you can also set your computer to automatically
+  do this for you.</p>
 
   <steps>
-    <title>Automatisch uw prullenbak legen en tijdelijke bestanden verwijderen</title>
-    <item>
-      <p>Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht en typ <gui>Privacy</gui>.</p>
-    </item>
-    <item>
-      <p>Klik op <gui>Privacy</gui> om het paneel te openen.</p>
-    </item>
-    <item>
-      <p>Kies <gui>Prullenbak &amp; tijdelijke bestanden verwijderen</gui>.</p>
-    </item>
-    <item>
-      <p>Zet <gui>Automatisch prullenbak legen</gui> en/of <gui>Automatisch tijdelijke bestanden verwijderen</gui> op <gui>AAN</gui>.</p>
-    </item>
-    <item>
-      <p>Instellen hoe vaak u wilt dat uw <em>Prullenbak</em> en <em>Tijdelijke bestanden</em> worden gewist door de waarde <gui>Verwijderen na</gui> te wijzigen.</p>
-    </item>
-    <item>
-      <p>Gebruik de knoppen <gui>Prullenbak legen</gui> of <gui>Tijdelijke bestanden verwijderen</gui> om deze acties direct uit te voeren.</p>
-    </item>
+    <title>Automatically empty your trash and clear your temporary files after
+    a set period of time:</title>
+    <item><p>Click your name on the <gui>top bar</gui>.</p></item>
+    <item><p>Select <gui>Settings</gui> and click the <gui>Privacy</gui>
+    icon.</p></item>
+    <item><p>Select <gui>Purge Trash &amp; Temporary Files</gui>.</p></item>
+    <item><p>Set the <gui>Automatically Purge Trash</gui> or
+    <gui>Automatically Purge Temporary Files</gui> sliders to <gui>On</gui>.
+    </p></item>
+    <item><p>Set how often you would like your <em>Trash</em> and
+    <em>Temporary Files</em> to be purged by changing the
+    <gui>Purge After</gui> value.</p></item>
+    <item><p>Click <gui>Close</gui>.</p></item>
   </steps>
 
-  <note style="tip">
-    <p>U kunt bestanden direct en permanent verwijderen zonder de prullenbak te gebruiken. Zie <link xref="files-delete#permanent"/> voor meer informatie.</p>
-  </note>
-
+  <note style="warning"><p>Use the <em>Purge After: Immediately</em> setting
+  with caution. Setting your trash to be purged immediately will
+  cause any files you delete to skip your trash and be permanently
+  deleted. Files that are deleted are much more difficult to recover than files
+  that are in your trash.</p>
+  
+  <p>Unless you have a specific need to immediately delete files from
+  your trash, it is probably safer to set a longer <gui>Purge After</gui>
+  value.</p></note>
+  
 </page>

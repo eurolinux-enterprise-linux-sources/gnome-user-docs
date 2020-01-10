@@ -1,50 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="contacts-setup" xml:lang="cs">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="contacts-setup" xml:lang="cs">
   <info>
     <link type="guide" xref="contacts" group="#first"/>
 
     <revision pkgversion="3.5.5" date="2012-08-13" status="draft"/>
-    <revision pkgversion="3.12" date="2014-02-26" status="final"/>
-    <revision pkgversion="3.13.91" date="2014-09-05" status="final"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="review"/>
-    <revision pkgversion="3.22" date="2017-03-19" status="draft"/>
 
     <credit type="author copyright">
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
       <years>2012</years>
     </credit>
-    
-    <credit type="author copyright">
-      <name>Paul Cutler</name>
-      <email>pcutler@gnome.org</email>
-      <years>2017</years>
-    </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Jak ukládat své kontakty do místního adresáře nebo do účtu on-line.</desc>
+    <desc>Store your contacts in a local address book or in an online account.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
       <mal:email>adamatousek@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Marek Černocký</mal:name>
-      <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014, 2015</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Prvotní spuštění Kontaktů</title>
+  <title>Starting Contacts for the first time</title>
 
-  <p>Při prvním spuštění <app>Kontatků</app> se otevře okno <gui>Výběr adresáře</gui>.</p>
+  <comment>
+    <cite date="2012-08-13" href="mailto:mdhillca@gmail.com">Michael Hill</cite>
+    <p>This assumes the reader knows how to…. By the end of this page,
+    the reader will be able to….</p>
+  </comment>
+
+  <p>When you run <app>Contacts</app> for the first time, the
+   <gui>Contacts Setup</gui> window opens.</p>
    
-  <p>Pokud máte nastaveny <link xref="accounts">účty on-line</link>, jsou vypsány spolu s <gui>Místním adresářem</gui>. Vyberte některou položku v seznamu a klikněte na <gui style="button">Hotovo</gui>. Všechny nové kontakty, které vytvoříte, se uloží do adresáře, který jste zvolili. Bude zároveň moci prohlížet a upravovat kontakty v ostatních adresářích.</p>
+   <p>If you have <link xref="accounts">online accounts</link> configured, they
+    are listed with <gui>Local Address Book</gui>. Select an item from the list
+    and click <gui style="button">Select</gui>.</p>
   
-  <p>Pokud účty on-line nemáte nastaveny, klikněte na <gui style="button">Účty on-line</gui>, aby se zahájilo jejich nastavení. Jestliže si nepřejete účty on-line nastavit v tuto chvíli, klikněte na <gui style="button">Místní adresář</gui>.</p>
+  <note>
+    <p>Click the <gui style="button">Online Account Settings</gui> to edit
+     existing account settings.</p>
+  </note>
+  
+   <p>If you have no online accounts configured, click
+    <gui style="button">Online Accounts</gui> to begin the setup. If you don't
+    wish to set up online accounts at this time, click
+    <gui style="button">Local Address Book</gui>.</p>
+
 
 </page>

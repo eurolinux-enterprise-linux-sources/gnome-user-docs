@@ -6,8 +6,6 @@
     <link type="seealso" xref="shell-keyboard-shortcuts"/>
 
     <revision pkgversion="3.7.5" version="0.2" date="2013-02-23" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.20" date="2016-08-13" status="candidate"/>
 
     <credit type="author">
       <name>Michael Hill</name>
@@ -27,14 +25,18 @@
        <email>kittykat3756@gmail.com</email>
     </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
     <desc>Benutzen Sie Anwendungen und die Arbeitsumgebung ohne Maus.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hendrik Knackstedt</mal:name>
-      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
-      <mal:years>2011.</mal:years>
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -44,30 +46,26 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Christian Kirbach</mal:name>
-      <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Mario Blättermann</mal:name>
-      <mal:email>mario.blaettermann@gmail.com</mal:email>
-      <mal:years>2011-2013, 2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Benjamin Steinwender</mal:name>
-      <mal:email>b@stbe.at</mal:email>
-      <mal:years>2014.</mal:years>
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.to</mal:years>
     </mal:credit>
   </info>
 
   <title>Tastatursteuerung</title>
 
+  <comment>
+    <cite date="2012-03-14" href="mailto:shaunm@gnome.org">Shaun McCance</cite>
+    <p>Do <em>NOT</em> use <code>ui:expanded</code> on this page. I know it's
+    tempting, but the target audience for this page is people who cannot use
+    a mouse, and having to expand sections when you're just figuring out how
+    to drive things with the keyboard is a burden.</p>
+  </comment>
+
   <p>Dieser Abschnitt beschreibt detailliert die Tastaturnavigation für Benutzer, die keine Maus oder ein anderes Zeigegerät verwenden können, oder die ihre Tastatur so viel wie möglich nutzen wollen. In <link xref="shell-keyboard-shortcuts"/> finden Sie Tastenkombinationen, die für alle Benutzer nützlich sind.</p>
 
   <note style="tip">
-    <p>Wenn es Ihnen schwer fällt, eine Maus oder andere Zeigegeräte zu verwenden, können Sie den Mauszeiger mit Hilfe des Nummernblocks Ihrer Tastatur bewegen. Weitere Details finden Sie in <link xref="mouse-mousekeys"/>.</p>
+    <p>Wenn es Ihnen schwer fällt, eine Maus oder andere Zeigegeräte zu verwenden, können Sie den Mauszeiger mit Hilfe des Nummernblocks Ihrer Tastatur bewegen. Weitere Details finden Sie in <link xref="mouse-mousekeys"/></p>
   </note>
 
 <table frame="top bottom" rules="rows">
@@ -83,6 +81,7 @@
     <td><p>Pfeiltasten</p></td>
     <td>
       <p>Bewegen Sie die Auswahl zwischen Objekten in einem einzelnen Bedienelement, oder in einem Bereich aus aufeinander bezogenen Elementen. Verwenden Sie die Pfeiltasten, um die Knöpfe in einer Werkzeugleiste zu fokussieren oder die Objekte einer Listen- oder Symbolansicht oder einen Radioknopf aus einer Gruppe auszuwählen.</p>
+      <p>In einer Baumansicht können Sie die linke und rechte Pfeiltaste verwenden, um Objekte mit Unterelementen aus- oder einzuklappen.</p>
     </td>
   </tr>
   <tr>
@@ -92,7 +91,6 @@
   <tr>
     <td><p><keyseq><key>Umschalttaste</key><key>Pfeiltasten</key></keyseq></p></td>
     <td><p>In einer Listen- oder Symbolansicht wählen Sie alle Objekte vom aktuell ausgewählten Objekt bis zum neu fokussierten Objekt aus.</p></td>
-    <td><p>In einer Baumansicht können Objekte eingeklappt oder ausgeklappt sein. Um diese anzuzeigen, drücken Sie <keyseq><key>Umschalttaste</key><key>→</key></keyseq> oder zum Einklappen <keyseq><key>Umschalttaste</key><key>←</key></keyseq>.</p></td>
   </tr>
   <tr>
     <td><p><key>Leertaste</key></p></td>
@@ -108,7 +106,7 @@
   </tr>
   <tr>
     <td><p><key>Esc</key></p></td>
-    <td><p>Ein Menü, Aufklappfenster, Dialogfenster oder einen Wechsler beenden.</p></td>
+    <td><p>Ein Menü, Aufklappfenster, Wechlser oder Dialogfenster beenden.</p></td>
   </tr>
   <tr>
     <td><p><key>F10</key></p></td>
@@ -129,7 +127,7 @@
     <td><p>In der Dateiverwaltung das Kontextmenü für den aktuellen Ordner öffnen, wie mit einem Klick mit der rechten Maustaste auf den Hintergrund und nicht auf ein Objekt. </p></td>
   </tr>
   <tr>
-    <td><p><keyseq><key>Strg</key><key>Bild auf</key></keyseq> und <keyseq><key>Strg</key><key>Bild ab</key></keyseq></p></td>
+    <td><p>Durch Drücken von <keyseq><key>Strg</key><key>Bild auf</key></keyseq> und <keyseq><key>Strg</key><key>Bild ab</key></keyseq>.</p></td>
     <td><p>Wechseln Sie in einer Reiteransicht zum Reiter links oder rechts.</p></td>
   </tr>
 </table>
@@ -151,7 +149,7 @@
   </tr>
   <tr>
     <td><p><keyseq><key>Super</key><key>M</key></keyseq></p></td>
-    <td><p><link xref="shell-notifications#messagetray">Öffnen Sie das Benachrichtigungsfeld.</link> Drücken Sie <key>Esc</key> zum Schließen.</p></td>
+    <td><p><link xref="shell-notifications#messagingtray">Öffnen Sie das Benachrichtigungsfeld.</link> Drücken Sie <key>Esc</key> zum Schließen.</p></td>
   </tr>
 </table>
 
@@ -163,7 +161,7 @@
   </tr>
   <tr>
     <td><p><keyseq><key>Alt</key><key>F5</key></keyseq> oder <keyseq><key>Super</key><key>↓</key></keyseq></p></td>
-    <td><p>Ein maximiertes Fenster auf seine ursprüngliche Größe wiederherstellen. Verwenden Sie <keyseq><key>Alt</key><key>F10</key></keyseq> zum Maximieren. <keyseq><key>Alt</key><key>F10</key></keyseq> wird sowohl maximieren als auch wiederherstellen.</p></td>
+    <td><p>Ein maximiertes Fenster auf seine ursprügliche Größe wiederherstellen. Verwenden Sie <keyseq><key>Alt</key><key>F10</key></keyseq> zum Maximieren. <keyseq><key>Alt</key><key>F10</key></keyseq> wird sowohl maximieren als auch wiederherstellen.</p></td>
   </tr>
   <tr>
     <td><p><keyseq><key>Alt</key><key>F7</key></keyseq></p></td>
@@ -174,8 +172,6 @@
     <td><p>Das aktuelle Fenster wiederherstellen. Drücken Sie <keyseq><key>Alt</key><key>F8</key></keyseq> und verwenden Sie dann die Pfeiltasten, um die Größe des Fensters zu ändern. Drücken Sie die <key>Eingabetaste</key>, um die Größenänderung zu beenden oder <key>Esc</key>, um zur ursprünglichen Größe zurückzukehren.</p></td>
   </tr>
   <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-updown"/>
-  <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-left"/>
-  <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-right"/>
   <tr>
     <td><p><keyseq><key>Alt</key><key>F10</key></keyseq> oder <keyseq><key>Super</key><key>↑</key></keyseq></p>
     </td>

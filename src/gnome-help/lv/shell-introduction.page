@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" version="1.0 if/1.0" id="shell-introduction" xml:lang="lv">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="ui" id="shell-introduction" xml:lang="lv">
 
   <info>
     <link type="guide" xref="shell-overview" group="#first"/>
     <link type="guide" xref="index" group="#first"/>
 
-    <revision pkgversion="3.6.0" date="2012-10-13" status="review"/>
-    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
+    <desc>Vizuāls ievads — darbvirsma, augšējā josla un aktivitāšu pārskats.</desc>
+
+    <revision pkgversion="3.6.0" version="0.2" date="2012-10-13" status="review"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -17,155 +17,135 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Vizuāls ievads — darbvirsma, augšējā josla un <gui>Aktivitāšu</gui> pārskats.</desc>
   </info>
 
-  <title>Ievads GNOME vidē</title>
+<title>Ievads GNOME vidē</title>
 
-  <p>GNOME 3 ir izstrādāta pilnīgi jauna lietotāja saskarne, kuras uzdevums ir neuzkrītoši novērst traucējumus jūsu darbā un palīdzēt efektīvi paveikt iecerēto. Pirmo reizi ierakstoties, jūs redzēsiet tukšu darbvirsmu un augšējo joslu.</p>
+<p>GNOME 3 ir izstrādāta pilnīgi jauna lietotāja saskarne, kuras uzdevums ir neuzkrītoši novērst traucējumus jūsu darbā un palīdzēt efektīvi paveikt iecerēto. Pirmo reizi ierakstoties, jūs redzēsiet tukšu darbvirsmu un augšējo joslu.</p>
 
 <if:choose>
-  <if:when test="!platform:gnome-classic">
-    <media type="image" src="figures/shell-top-bar.png" width="600" if:test="!target:mobile">
-      <p>GNOME čaulas augšējā josla</p>
-    </media>
-  </if:when>
-  <if:when test="platform:gnome-classic">
-    <media type="image" src="figures/shell-top-bar-classic.png" width="500" height="40" if:test="!target:mobile">
-      <p>GNOME čaulas augšējā josla</p>
-    </media>
-  </if:when>
+<if:when test="!platform:gnome-classic">
+<media type="image" src="figures/shell-top-bar.png" width="500" height="40" if:test="!target:mobile">
+  <p>GNOME čaulas augšējā josla</p>
+</media>
+</if:when>
+<if:when test="platform:gnome-classic">
+<media type="image" src="figures/shell-top-bar-classic.png" width="500" height="40" if:test="!target:mobile">
+  <p>GNOME čaulas augšējā josla</p>
+</media>
+</if:when>
 </if:choose>
 
-  <p>Augšējā josla dod pieeju jūsu logiem un lietotnēm, jūsu kalendāram un pierakstiem, un <link xref="status-icons">sistēmas īpašībām</link> kā skaņa, tīklošana un barošana. Statusa izvēlnē augšējā joslā jūs varat mainīt ekrāna gaišumu, rediģēt <gui>Wi-Fi</gui> savienojuma īpašības, pārbaudīt baterijas statusu, izrakstīties vai pārslēgt lietotāju, un izslēgt datoru.</p>
+  <p>Augšējā josla dod pieeju jūsu logiem un lietotnēm, jūsu kalendāram un pierakstiem, un <link xref="status-icons">sistēmas īpašībām</link> kā skaņa, tīklošana un barošana. Zem sava vārda augšējā joslā jūs varat iestatīt pieejamību, manīt savu profilu vai iestatījumus, izrakstīties vai mainīt lietotājus, kā arī izslēgt savu datoru.</p>
 
 <links type="section"/>
 
 <section id="activities">
-  <title><gui>Aktivitāšu</gui> pārskats</title>
+<title>Aktivitāšu pārskats</title>
 
 <if:choose>
-  <if:when test="!platform:gnome-classic">
-    <media type="image" src="figures/shell-activities.png" style="floatend floatright" if:test="!target:mobile">
-      <p>Aktivitāšu poga</p>
-    </media>
-  </if:when>
-  <if:when test="platform:gnome-classic">
-    <media type="image" src="figures/shell-activities-classic.png" width="108" height="69" style="floatend floatright" if:test="!target:mobile">
-      <p>Aktivitāšu poga</p>
-    </media>
-  </if:when>
+<if:when test="!platform:gnome-classic">
+<media type="image" src="figures/shell-activities.png" width="128" height="75" style="floatend floatright" if:test="!target:mobile">
+  <p>Aktivitāšu poga</p>
+</media>
+</if:when>
+<if:when test="platform:gnome-classic">
+<media type="image" src="figures/shell-activities-classic.png" width="108" height="69" style="floatend floatright" if:test="!target:mobile">
+  <p>Aktivitāšu poga</p>
+</media>
+</if:when>
 </if:choose>
 
-  <p if:test="!platform:gnome-classic">Lai piekļūtu saviem logiem un lietotnēm, spiediet <gui>Aktivitāšu</gui> pogu vai pārvietojiet peles kursoru uz augšējo kreiso ekrāna stūri. Jūs varat arī spiest <key xref="keyboard-key-super">Super taustiņu</key> uz tastatūras. Pārskatā var redzēt savas atvērtās lietotnes un logus. Jūs varat arī sākt rakstīt, lai meklētu savas lietotnes, datnes, mapes un tīmekli.</p>
+  <p if:test="!platform:gnome-classic">To access your windows and applications,
+  click the <gui>Activities</gui> button, or just move your mouse pointer to
+  the top-left hot corner. You can also press the
+  <key xref="keyboard-key-super">Super</key> key on your keyboard. You can
+  see your windows and applications in the overview. You can also just start
+  typing to search your applications, files, and folders.</p>
 
-  <p if:test="platform:gnome-classic">Lai piekļūtu saviem logiem un lietotnēm, spiediet izvēlni <gui xref="shell-introduction#activities">Lietotnes</gui> ekrāna augšējā kreisā stūrī un izvēlēties <gui>aktivitāšu pārskata</gui> vienumu. Jūs varat arī spiest <key xref="keyboard-key-super">Super</key> taustiņu, lai redzētu savus logus un lietotnes <gui>Aktivitāšu</gui> pārskatā. Vienkārši sāciet rakstīt, lai meklētu savas lietotnes, datnes un mapes.</p>
+  <p if:test="platform:gnome-classic">To access your windows and applications,
+  click the <link xref="shell-terminology"><gui>Applications</gui> menu</link>
+  at the top left of the screen and select the <gui>Activities Overview</gui> item. 
+  You can also press the <key xref="keyboard-key-super">Super</key> key to see 
+  your windows and applications in the <gui>Activities</gui> overview. 
+  Just start typing to search your applications, files, and folders.</p>
 
-  <!-- TODO: retake without the flashy bit -->
-  <media type="image" src="figures/shell-dash.png" height="300" style="floatstart floatleft" if:test="!target:mobile">
-    <p>Panelis</p>
-  </media>
+<media type="image" src="figures/shell-dash.png" width="49" height="300" style="floatstart floatleft" if:test="!target:mobile">
+  <p>Panelis</p>
+</media>
 
   <p>Pa kreisi no pārskata ir <em>panelis</em>. Tajā redzamas izlases un palaistās lietotnes. Spiediet jebkuru ikonu panelī, lai palaistu atbilstošo lietotni; ja lietotne jau ir palaista, tā izskatās izcelta. Klikšķis uz izceltas ikonas pacels visnesenāk lietoto lietotnes logu. Ikonu var arī aizvilkt uz pārskatu vai uz jebkuru darbvietu pa labi.</p>
 
   <p>Veiciet labo klikšķi uz ikonas, parādās izvēlne, kas ļauj izvēlēties jebkuru logu palaistajā lietotnē, vai arī atvērt jaunu logu. Jūs varat arī klikšķināt uz ikonas, turot piespiestu <key>Ctrl</key>, lai atvērtu jaunu logu.</p>
 
-  <p>Atverot pārskatu, sākotnēji būs redzams logu pārskats. Tajā ir redzami pašreizējā darba vietā atvērto lietotņu logu sīktēli.</p>
+  <p>Atverot pārskatu, sākotnēji būs redzams logu pārskats. Tajā ir redzami pašreizējā darba vietā atvērto lietotņu logu sīktēli. Spiediet jebkuru logu, lai uz to fokusētos un izietu no pārskata. Jūs varat arī izmantot peles rullīti, lai pietuvinātu jebkuru lietotnes logu sīktēlu.</p>
 
   <p>Spiediet režģa pogu paneļa apakšā, lai parādītu lietotņu pārskatu. Tajā redzamas visas lietotnes, kas ir uzinstalētas jūsu datorā. Spiediet jebkuru lietotni, lai to palaistu vai velciet lietotni uz pārskatu vai uz darbvietas ikonu. Jūs varat arī vilkt lietotni uz paneļa, lai to pievienotu izlasei. Izlases lietotnes paliek panelī, pat ja tās nav palaistas, lai tām varētu ātrāk piekļūt.</p>
 
-  <list style="compact">
-    <item>
-      <p><link xref="shell-apps-open">Uzziniet vairāk par lietotņu palaišanu.</link></p>
-    </item>
-    <item>
-      <p><link xref="shell-windows">Uzziniet vairāk par logiem un darbvietām.</link></p>
-    </item>
-  </list>
-
-</section>
-
-<section id="appmenu">
-  <title>Lietotnes izvēlne</title>
-  <if:choose>
-    <if:when test="!platform:gnome-classic">
-      <media type="image" src="figures/shell-appmenu-shell.png" width="250" style="floatend floatright" if:test="!target:mobile">
-        <p><app>Terminal</app> lietotnes izvēlne</p>
-      </media>
-      <p>Lietotnes izvēlne, kas atrodas pie <gui>Aktivitāšu</gui> pogas, rāda aktīvās lietotnes nosaukumu un blakus tās ikonu, un tā sniedz ātru piekļuvi lietotnes iestatījumiem vai palīdzībai. Vienumi, kas ir pieejami lietotnes izvēlnē ir atkarīgi no lietotnes.</p>
-    </if:when>
-    <if:when test="platform:gnome-classic">
-      <media type="image" src="figures/shell-appmenu-classic.png" width="154" height="133" style="floatend floatright" if:test="!target:mobile">
-        <p><app>Terminal</app> lietotnes izvēlne</p>
-      </media>
-      <p>Lietotnes izvēlne, kas atrodas pie <gui>Lietotnes</gui> un <gui>Vietas</gui> izvēlnes, rāda aktīvās lietotnes nosaukumu un blakus tās ikonu, un tā sniedz ātru piekļuvi lietotnes iestatījumiem vai palīdzībai. Vienumi, kas ir pieejami lietotnes izvēlnē ir atkarīgi no lietotnes.</p>
-    </if:when>
-  </if:choose>
-
+<list style="compact">
+  <item><p><link xref="shell-apps-open">Learn more about starting applications.
+  </link></p></item>
+  <item><p><link xref="shell-windows">Learn more about windows and workspaces.
+  </link></p></item>
+</list>
 </section>
 
 <section id="clock">
-  <title>Pulkstenis, kalendārs un ieplānotie pasākumi</title>
-
+<title>Pulkstenis, kalendārs un ieplānotie pasākumi</title>
 <if:choose>
-  <if:when test="!platform:gnome-classic">
-    <media type="image" src="figures/shell-appts.png" width="250" style="floatend floatright" if:test="!target:mobile">
-      <p>Pulkstenis, kalendārs, tikšanās un paziņojumi</p>
-    </media>
-  </if:when>
-  <if:when test="platform:gnome-classic">
-    <media type="image" src="figures/shell-appts-classic.png" width="373" height="250" style="floatend floatright" if:test="!target:mobile">
-      <p>Pulkstenis, kalendārs un tikšanās</p>
-    </media>
-  </if:when>
+<if:when test="!platform:gnome-classic">
+<media type="image" src="figures/shell-appts.png" width="250" height="198" style="floatend floatright" if:test="!target:mobile">
+  <p>Pulkstenis, kalendārs un tikšanās</p>
+</media>
+</if:when>
+<if:when test="platform:gnome-classic">
+<media type="image" src="figures/shell-appts-classic.png" width="373" height="250" style="floatend floatright" if:test="!target:mobile">
+  <p>Pulkstenis, kalendārs un tikšanās</p>
+</media>
+</if:when>
 </if:choose>
 
-  <p>Spiediet uz pulksteņa augšējā joslā, lai redzētu pašreizējo datumu, ikmēneša kalendāru un tuvāko ieplānoto pasākumu sarakstu. Varat arī atvērt kalendāru, spiežot <keyseq><key>Super</key><key>M</key></keyseq>. Piekļūt datuma un laika iestatījumiem un atvērt pilno <app>Evolution</app> kalendāru var arī no izvēlnes.</p>
+  <p>Click the clock on the top bar to see the current date,
+  a month-by-month calendar, and a list of your upcoming appointments.
+  You can also access the date and time settings and open your full
+  <app>Evolution</app> calendar directly from the menu.</p>
 
-  <list style="compact">
-    <item>
-      <p><link xref="clock-calendar">Uzziniet vairāk par kalendāru un plānotajiem pasākumiem.</link></p>
-    </item>
-    <item>
-      <p><link xref="shell-notifications">Uzziniet vairāk par paziņojumiem un ziņojumu paplāti.</link></p>
-    </item>
-  </list>
-
+<list style="compact">
+  <item><p><link xref="clock-calendar">Uzziniet vairāk par kalendāru un plānotajiem pasākumiem.</link></p></item>
+</list>
 </section>
 
-
 <section id="yourname">
-  <title>Jūs un jūsu dators</title>
+<title>Jūs un jūsu dators</title>
 
 <if:choose>
-  <if:when test="!platform:gnome-classic">
-    <media type="image" src="figures/shell-exit.png" width="250" style="floatend floatright" if:test="!target:mobile">
-      <p>Lietotāja izvēlne</p>
-    </media>
-  </if:when>
-  <if:when test="platform:gnome-classic">
-    <media type="image" src="figures/shell-exit-classic.png" width="250" height="200" style="floatend floatright" if:test="!target:mobile">
-      <p>Lietotāja izvēlne</p>
-    </media>
-  </if:when>
+<if:when test="!platform:gnome-classic">
+<media type="image" src="figures/shell-exit.png" width="250" height="200" style="floatend floatright" if:test="!target:mobile">
+  <p>Lietotāja izvēlne</p>
+</media>
+</if:when>
+<if:when test="platform:gnome-classic">
+<media type="image" src="figures/shell-exit-classic.png" width="250" height="200" style="floatend floatright" if:test="!target:mobile">
+  <p>Lietotāja izvēlne</p>
+</media>
+</if:when>
 </if:choose>
 
-  <p>Spiediet uz sistēmas izvēlnes augšējā labajā stūrī, lai pārvaldītu savus sistēmas iestatījumus un datoru.</p>
+  <p>Spiediet uz sava vārda augšējā labajā stūrī, lai pārvaldītu savu profilu un datoru.</p>
 
-<!-- Apparently not anymore. TODO: figure out how to update status.
-  <p>You can quickly set your availability directly from the menu. This will set
-  your status for your contacts to see in instant messaging applications such as
-  <app>Empathy</app>.</p>-->
+  <p>Jūs varat ātri iestatīt savu pieejamību tieši no izvēlnes. Tas iestatīs jūsu statusu, ko redzēs kontaktpersonas tūlītējās ziņojumapmaiņas lietotnēs, piemēram, <app>Empathy</app> .</p>
+
+<comment>
+<cite date="2012-02-19">shaunm</cite>
+  <p>These are separate now. Write another blurb about "Notifications".
+  I'm also dropping shell-session-status UNTIL the docs for this get
+  cleared up. It was orphaned and incorrect.</p>
+</comment>
 
 <!--
-<p>If you set yourself to Unavailable, you won’t be bothered by message popups
+<p>If you set yourself to Unavailable, you won't be bothered by message popups
 at the bottom of your screen. Messages will still be available in the message
 tray when you move your mouse to the bottom-right corner. But only urgent
 messages will be presented, such as when your battery is critically low.</p>
@@ -176,55 +156,87 @@ messages will be presented, such as when your battery is critically low.</p>
 </list>
 -->
 
-  <p>Pametot savu datoru, jūs varat bloķēt ekrānu, lai liegtu citiem cilvēkiem pieeju savam datoram. Jūs varat arī ātri mainīt lietotājus, ne izrakstoties pilnībā, lai kādam citam dotu pieeju datoram, kā arī varat iesnaudināt vai izslēgt datoru no izvēlnes. Ja jums ir ekrāns kas atbalsta horizontālo vai vertikālo pagriešanu, jūs varat ātri pagriezt monitoru no sistēmas izvēlnes. Ja jūsu ekrāns neatbalsta pagriešanu, jūs neredzēsiet to pogu.</p>
+  <p>Izvēlne jums ļauj arī mainīt personīgo informāciju un sistēmas iestatījumus.</p>
 
-  <list style="compact">
-    <item>
-      <p><link xref="shell-exit">Uzziniet vairāk par lietotāju pārslēgšanu, izrakstīšanos un datora izslēgšanu.</link></p>
-    </item>
-  </list>
+  <p>Pametot savu datoru, jūs varat bloķēt ekrānu, lai liegtu citiem cilvēkiem pieeju savam datoram. Jūs varat ātri mainīt lietotājus, ne izrakstoties pilnībā, lai kādam citam dotu pieeju datoram. Kā arī varat iesnaudināt vai izslēgt datoru no izvēlnes.</p>
 
+<list style="compact">
+  <item><p><link xref="shell-exit">Uzziniet vairāk par lietotāju pārslēgšanu, izrakstīšanos un datora izslēgšanu.</link></p></item>
+</list>
 </section>
 
 <section id="lockscreen">
-  <title>Bloķēt ekrānu</title>
+<title>Lock Screen</title>
 
-  <media type="image" src="figures/shell-lock.png" width="250" style="floatend floatright" if:test="!target:mobile">
-    <p>Bloķēt ekrānu</p>
-  </media>
+<media type="image" src="figures/shell-lock.png" width="250" height="156" style="floatend floatright" if:test="!target:mobile">
+  <p>Lock Screen</p>
+</media>
 
-  <p>Bloķēšanas ekrāns parādās, kad jūs to bloķējat, vai kad tas notiek automātiski. Tas ne tikai aizsargā jūsu darbvirsmu, kad neesat klāt, bet arī parāda datumu un laiku. Tas arī parāda informāciju par jūsu bateriju un tīkla statusu, un ļauj jums kontrolēt multimediju atskaņošanu.</p>
+  <p>When you lock your screen, or it locks automatically, the lock screen is
+  displayed. In addition to protecting your desktop while you're away from your
+  computer, the lock screen displays the date, time, and your name as the
+  logged-in user. It also shows information about your battery and network
+  status, and allows you to control media playback.</p>
 
-  <list style="compact">
-    <item>
-      <p><link xref="shell-lockscreen">Uzziniet vairāk par bloķēšanas ekrānu.</link></p>
-    </item>
-  </list>
+<list style="compact">
+  <item><p><link xref="shell-lockscreen">Learn more about the lock screen.</link>
+  </p></item>
+</list>
+</section>
 
+<section id="message-tray">
+<title>Ziņojumu paplāte</title>
+
+<media type="image" src="figures/shell-message-tray.png" width="344" height="50" style="floatend floatright">
+  <p>Message tray</p>
+</media>
+
+<p>The message tray can be brought into view by pushing your mouse pointer
+against the bottom of the screen or by pressing
+<keyseq><key>Super</key><key>M</key></keyseq>. This is where your
+notifications are stored until you are ready to view them.</p>
+
+<list style="compact">
+<item><p><link xref="shell-notifications">Uzziniet vairāk par paziņojumiem un ziņojumu paplāti.</link></p></item>
+</list>
 </section>
 
 <section id="window-list">
-  <title>Logu saraksts</title>
+<title>Window List</title>
 
 <if:choose>
-  <if:when test="!platform:gnome-classic">
-    <p>GNOME izmanto citu veidu, kā pārslēgties starp logiem, nevis redzamu logu sarakstu, kā tas ir citās darbvirsmās. Tas jums ļauj pievērst uzmanību aktīvajam uzdevumam bet uzmanības novēršanas.</p>
-    <list style="compact">
-      <item>
-        <p><link xref="shell-windows-switching">Uzziniet vairāk par pārslēgšanos starp logiem.</link></p>
-      </item>
-    </list>
-  </if:when>
-  <if:when test="platform:gnome-classic">
-    <media type="image" src="figures/shell-window-list-classic.png" width="500" height="34" style="floatend floatright" if:test="!target:mobile">
-      <p>Logu saraksts</p>
-    </media>
-    <p>Ekrāna apakšā esošais logu saraksts dod pieeju visiem atvērtajiem logiem un lietotnēm, kā arī ļauj tos minimizēt un atjaunot.</p>
-    <p>Logu saraksta labajā pusē GNOME parāda pašreizējās darbvietas identifikatoru, piemēram, <gui>1</gui> pirmajai (augšējai) darbvietai. Identifikators arī attēlo kopējo pieejamo darbvietu skaitu. Lai pārslēgtos uz citu darbvietu, varat spiest uz identifikatora un izvēlēties vēlamo darbvietu no izvēlnes.</p>
-    <p>Ja kāda lietotne vai sistēmas komponente vēlas pievērst sev uzmanību, tā parādīs zilu ikonu logu saraksta labajā pusē. Nospiežot zilo ikonu, parādīsies ziņojumu paplāte.</p>
-  </if:when>
-</if:choose>
+<if:when test="!platform:gnome-classic">
 
+  <p>GNOME features a different approach to switching windows than a
+  permanently visible window list found in other desktop environments.
+  This lets you focus on the task at hand without distractions.</p>
+
+<list style="compact">
+<item><p><link xref="shell-windows-switching">Learn more about switching windows.
+</link></p></item>
+</list>
+
+</if:when>
+<if:when test="platform:gnome-classic">
+<media type="image" src="figures/shell-window-list-classic.png" width="500" height="34" style="floatend floatright" if:test="!target:mobile">
+  <p>Window List</p>
+</media>
+
+  <p>The window list at the bottom of the screen provides access to
+  all your open windows and applications and lets you quickly minimize
+  and restore them.</p>
+
+  <p>At the right-hand side of the window list, GNOME displays a short
+  identifier for the current worskpace, such as <gui>1</gui> for the first
+  (top) workspace. In addition, the identifier also displays the total number
+  of available workspaces. To switch to a different workspace, you can click
+  the identifier and select the workspace you want to use from the menu.</p>
+
+  <p>If an application or a system component wants to get your attention, it
+  will display a blue icon at the right-hand side of the window list. Clicking
+  the blue icon shows the message tray.</p>
+</if:when>
+</if:choose>
 </section>
 
 </page>

@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="video-sending" xml:lang="el">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="video-sending" xml:lang="el">
 
   <info>
     <link type="guide" xref="media#videos"/>
+    <desc>Ελέγξετε ότι έχετε εγκατεστημένους τους σωστούς κωδικοποιητές-αποκωδικοποιητές βίντεο.</desc>
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
-    <revision pkgversion="3.12.1" date="2014-03-30" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
-    <revision pkgversion="3.17.90" date="2015-08-30" status="final"/>
 
     <credit type="author">
       <name>Έργο Τεκμηρίωσης GNOME</name>
@@ -14,87 +12,49 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Ελέγξετε ότι έχετε εγκατεστημένους τους σωστούς κωδικοποιητές-αποκωδικοποιητές βίντεο.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
-      <mal:email>team@gnome.gr</mal:email>
-      <mal:years>2009-2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
       <mal:email>dmtrs32@gmail.com</mal:email>
-      <mal:years>2012-2015</mal:years>
+      <mal:years>2012, 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Φώτης Τσάμης</mal:name>
+      <mal:name> Φώτης Τσάμης</mal:name>
       <mal:email>ftsamis@gmail.com</mal:email>
       <mal:years>2009</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:name> Μάριος Ζηντίλης</mal:name>
       <mal:email>m.zindilis@dmajor.org</mal:email>
       <mal:years>2009, 2010</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Θάνος Τρυφωνίδης</mal:name>
-      <mal:email>tomtryf@gnome.org</mal:email>
-      <mal:years>2012-2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Μαρία Μαυρίδου</mal:name>
-      <mal:email>mavridou@gmail.com</mal:email>
-      <mal:years>2014</mal:years>
+      <mal:name> Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
     </mal:credit>
   </info>
 
-  <title>Other people can’t play the videos I made</title>
+<title>Άλλα άτομα δεν μπορούν να παίξουν τα βίντεο που έκανα</title>
 
-  <p>Εάν κάνατε ένα βίντεο στον υπολογιστή σας Linux και το στείλατε σε κάποιον που χρησιμοποιεί Windows ή Mac OS, μπορεί να βρείτε ότι έχουν προβλήματα να παίξουν το βίντεο.</p>
+  <p>Εάν κάνατε ένα βίντεο στον υπολογιστή σας Λίνουξ και το στείλατε σε κάποιον που χρησιμοποιεί Windows ή Mac OS, μπορεί να βρείτε ότι έχουν προβλήματα να παίξουν το βίντεο.</p>
 
   <p>Για να μπορέσει να παίξει το βίντεό σας, το άτομο που του το στείλατε πρέπει να έχει τους σωστούς <em>κωδικοποιητές-αποκωδικοποιητές</em> εγκατεστημένους. Ένας κωδικοποιητής-αποκωδικοποιητής είναι ένα μικρό κομμάτι λογισμικού που ξέρει πώς να πάρει το βίντεο και να το εμφανίσει στην οθόνη. Υπάρχουν πολλές διαφορετικές μορφές βίντεο και καθεμιά τους απαιτεί έναν διαφορετικό κωδικοποιητή-αποκωδικοποιητή για να το παίξει. Μπορείτε να ελέγξετε ποιας μορφής είναι το βίντεό σας κάνοντας:</p>
+<list>
+    <item><p>Ανοίξτε την εφαρμογή <app>αρχεία</app> από την επισκόπηση <gui>Ενέργειες</gui>.</p></item>
+    <item><p>Δεξιοπατήστε στο αρχείο βίντεο και επιλέξτε <gui>ιδιότητες</gui>.</p></item>
+    <item><p>Πηγαίνετε στην καρτέλα <gui>ηχος/βίντεο</gui> και κοιτάξτε ποιος <gui>κωδικοποιητής-αποκωδικοποιητής</gui> είναι καταχωρισμένος στο <gui>βίντεο</gui>.</p></item>
+</list>
 
-  <list>
-    <item>
-      <p>Ανοίξτε τα <app>Αρχεία</app> από την επισκόπηση <gui xref="shell-introduction#activities">Δραστηριότητες</gui>.</p>
-    </item>
-    <item>
-      <p>Κάντε δεξί κλικ στο αρχείο βίντεο και επιλέξτε <gui>Ιδιότητες</gui>.</p>
-    </item>
-    <item>
-      <p>Πηγαίνετε στην καρτέλα <gui>Ήχος/βίντεο</gui> ή <gui>Βίντεο</gui> και κοιτάξτε ποιος <gui>κωδικοποιητής</gui> είναι καταχωρισμένος στο <gui>Βίντεο</gui> και στο <gui>Ήχος</gui> (αν το βίντεο έχει και ήχο).</p>
-    </item>
-  </list>
+  <p>Ρωτήστε το άτομο που έχει προβλήματα με την αναπαραγωγή εάν έχει εγκατεστημένο το σωστό κωδικοποιητή-αποκωδικοποιητή. Μπορεί να βρουν χρήσιμη την αναζήτηση του ιστού για το όνομα του κωδικοποιητή-αποκωδικοποιητή συν το όνομα της εφαρμογής αναπαραγωγής βίντεο. Για παράδειγμα, εάν το βίντεο σας χρησιμοποιεί τη μορφή <em>Theora</em> και έχετε έναν φίλο που χρησιμοποιεί αναπαραγωγό μέσων Windows για να το δοκιμάσετε και να το παρακολουθήσετε, αναζητήστε "theora windows media player". Θα μπορείτε συχνά να κατεβάσετε τον σωστό κωδικοποιητή-αποκωδικοποιητή δωρεάν, εάν δεν είναι εγκατεστημένος.</p>
 
-  <p>Ask the person having problems with playback if they have the right codec
-  installed. They may find it helpful to search the web for the name of the
-  codec plus the name of their video playback application. For example, if your
-  video uses the <em>Theora</em> format and you have a friend using Windows
-  Media Player to try and watch it, search for “theora windows media player”.
-  You will often be able to download the right codec for free if it’s not
-  installed.</p>
+  <p>Εάν δεν μπορείτε να βρείτε τον σωστό κωδικοποιητή-αποκωδικοποιητή, δοκιμάστε τον <link href="http://www.videolan.org/vlc/">αναπαραγωγό μέσων VLC</link>. Δουλεύει στα Windows και Mac OS καθώς και στα Λίνουξ και υποστηρίζει πολλές διαφορετικές μορφές βίντεο. Αν αποτύχει αυτό, δοκιμάστε να μετατρέψετε το βίντεό σας σε μια διαφορετική μορφή. Οι περισσότεροι επεξεργαστές βίντεο μπορούν να το κάνουν και ειδικές εφαρμογές μετατροπής βίντεο είναι διαθέσιμες. Ελέγξετε την εφαρμογή εγκατάστασης λογισμικού για να δείτε τι είναι διαθέσιμο.</p>
 
-  <p>If you can’t find the right codec, try the
-  <link href="http://www.videolan.org/vlc/">VLC media player</link>. It works
-  on Windows and Mac OS as well as Linux, and supports a lot of different video
-  formats. Failing that, try converting your video into a different format.
-  Most video editors are able to do this, and specific video converter
-  applications are available. Check the software installer application to see
-  what’s available.</p>
-
-  <note>
-    <p>There are a few other problems which might prevent someone from playing
-    your video. The video could have been damaged when you sent it to them
-    (sometimes big files aren’t copied across perfectly), they could have
-    problems with their video playback application, or the video may not have
-    been created properly (there could have been some errors when you saved the
-    video).</p>
-  </note>
-
+<note>
+  <p>Υπάρχουν λίγα άλλα προβλήματα που μπορεί να αποτρέψουν κάποιον από την αναπαραγωγή του βίντεό σας. Το βίντεο μπορεί να έχει χαλάσει όταν το στείλατε (μερικές φορές μεγάλα αρχεία δεν αντιγράφονται τέλεια), μπορεί να έχουν προβλήματα με την εφαρμογή αναπαραγωγής βίντεο, ή το βίντεο μπορεί να μην δημιουργήθηκε σωστά (μπορεί να υπήρχαν κάποια σφάλματα όταν αποθηκεύσατε το βίντεο).</p>
+</note>
+	
 </page>

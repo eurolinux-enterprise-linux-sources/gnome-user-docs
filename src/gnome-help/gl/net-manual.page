@@ -1,90 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-manual" xml:lang="gl">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="net-manual" xml:lang="gl">
   <info>
     <link type="guide" xref="net-wired"/>
     <link type="guide" xref="net-wireless"/>
 
     <revision pkgversion="3.4.0" date="2012-02-20" status="final"/>
-    <revision pkgversion="3.10" date="2013-11-11" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-    <revision pkgversion="3.28" date="2018-03-28" status="review"/>
 
     <credit type="author">
       <name>Phil Bull</name>
       <email>philbull@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
 
-    <desc>You may have to enter network settings if they don’t get assigned
-    automatically.</desc>
+    <desc>Se as preferencias dunha rede non se lle asignan automaticamente debería ter que escribila vostede.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2018</mal:years>
+      <mal:years>2011, 2012.</mal:years>
     </mal:credit>
   </info>
 
-  <title>Estabelecer a configuración da rede manualmente</title>
+<title>Estabelecer a configuración da rede manualmente</title>
 
-  <p>Se a súa rede non asigna a configuración de rede automaticamente ao seu computador, debe configurala manualmente inserindo as configuracións vostede mesmo. Este punto asume que vostede sabe as configuracións correctas para poder usalas. Se non é así, pregúntelle ao administrador de rede ou busque polas configuracións no seu «router» ou «switch» de rede</p>
+<p>Se a súa rede non asigna a configuración de rede automaticamente ao seu computador, debe configurala manualmente inserindo as configuracións vostede mesmo. Este punto asume que vostede sabe as configuracións correctas para poder usalas. Se non é así, pregúntelle ao administrador de rede ou busque polas configuracións no seu «router» ou «switch»</p>
 
-  <steps>
-    <title>Para estabelecer a configuración de rede manualmente:</title>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui>
-      overview and start typing <gui>Settings</gui>.</p>
-    </item>
-    <item>
-      <p>Click on <gui>Settings</gui>.</p>
-    </item>
-    <item>
-      <p>In the left pane, select the network connection that you want to set
-      up manually. If you plug in to the network with a cable, click
-      <gui>Network</gui>. Otherwise click <gui>Wi-Fi</gui>.</p>
-      <p>Make sure that your wireless card is turned on or a network cable is
-      plugged in.</p>
-    </item>
-    <item>      
-      <p>Click the
-      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
-      button.</p>
-      <note>
-        <p>For a <gui>Wi-Fi</gui> connection, the 
-        <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
-        button will be located next to the active network.</p>
-      </note>
-    </item>
-    <item>
-      <p>Click on <gui>IPv4</gui> or <gui>IPv6</gui> in the left pane
-      and change the <gui>Addresses</gui> to <em>Manual</em>.</p>
-    </item>
-    <item>
-      <p>Type in the <gui xref="net-what-is-ip-address">IP Address</gui> and
-      <gui>Gateway</gui>, as well as the appropriate <gui>Netmask</gui>.</p>
-    </item>
-    <item>
-      <p>In the <gui>DNS</gui> section, switch <gui>Automatic</gui> to
-      <gui>OFF</gui>. Enter the IP address of a DNS server you want to use.
-      Enter additional DNS server addresses using the <gui>+</gui> button.</p>
-    </item>
-    <item>
-      <p>In the <gui>Routes</gui> section, switch <gui>Automatic</gui> to
-      <gui>OFF</gui>. Enter the <gui>Address</gui>, <gui>Netmask</gui>,
-      <gui>Gateway</gui> and <gui>Metric</gui> for a route you want to use.
-      Enter additional routes using the <gui>+</gui> button.</p>
-    </item>
-    <item>
-      <p>Click <gui>Apply</gui>. If you are not connected to the network, click
-      the system status area on the top bar and connect. Test the network
-      settings by trying to visit a website or look at shared files on the
-      network, for example.</p>
-    </item>
-  </steps>
+<steps>
+  <title>Para estabelecer a configuración de rede manualmente:</title>
+ <item>
+  <p>Prema sobre a icona de rede na barra superior e seleccione <gui>Opcións de rede</gui>.</p>
+ </item>
+
+ <item>
+  <p>Seleccione a conexión de rede que quere configurar manualmente e prema <gui>Configurar</gui>. Por exemplo, se conectou unha rede con un cable, busque por <gui>Con fíos</gui>.</p>
+  <p>Asegúrese de que a súa tarxeta sen fíos está acendida ou que o cable de rede está conectado. Noutro caso non poderá premer <gui>Configurar</gui>.</p>
+ </item>
+
+ <item>
+  <p>Prema na lapela <gui>Preferencias IPv4</gui> e cambie o <gui>Método</gui> a <em>Manual</em>.</p>
+ </item>
+
+ <item>
+  <p>Prema <gui>Engadir</gui> e escriba o <em>enderezo IP</em>, <em>máscara de rede</em> e o <em>enderezo IP da pasarela predeterminada</em> nas columnas correspondentes da lista <gui>Enderezos</gui>. Prema <key>Intro</key> ou <key>Tabulador</key> despois de escribir cada enderezo.</p>
+  <p>Estes tres enderezos deben ser enderezos IP; isto é, deben ter catro números separados por puntos (p.ex. 123.45.6.78).</p>
+ </item>
+
+ <item>
+  <p>Escriba os enderezos IP dos servidores DNS que quere usar no campo correspondente, separados por comas.</p>
+ </item>
+
+ <item>
+  <p>Prema <gui>Gardar</gui>. Se non está conectado á rede, prema a icona de rede na barra superior e conéctese. Probe as configuracións da rede tentando visitar un sitio web ou busque por ficheiros compartidos na rede, por exemplo.</p>
+ </item>
+
+</steps>
 
 </page>

@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="clock-timezone" xml:lang="es">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="clock-timezone" xml:lang="es">
 
   <info>
     <link type="guide" xref="clock"/>
-
+    <desc>Añadir otras zonas horarias de manera que pueda ver la hora en otras ciudades.</desc>
     <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.16" date="2015-01-26" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Proyecto de documentación de GNOME</name>
@@ -17,24 +14,13 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
-    <credit type="editor">
-       <name>Jim Campbell</name>
-       <email>jcampbell@gnome.org</email>
-    </credit>
-
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Actualice su zona horaria con su ubicación actual para que su hora sea correcta.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2011 - 2018</mal:years>
+      <mal:years>2011 - 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -56,23 +42,15 @@
     </mal:credit>
   </info>
 
-  <title>Cambiar su zona horaria</title>
+<title>Cambiar su zona horaria</title>
 
-  <steps>
-    <item>
-      <p>Abra la vista de <gui xref="shell-introduction#activities">Actividades</gui> y empiece a escribir <gui>Fecha y hora</gui>.</p>
-    </item>
-    <item>
-      <p>Pulse en <gui>Fecha y hora</gui> para abrir el panel.</p>
-    </item>
-    <item>
-      <p>Si tiene <gui>Activada</gui> la <gui>Zona horaria automática</gui>, su zona horaria se debería actualizar automáticamente si tiene una conexión a Internet. Para actualizar su zona horaria manualmente, <gui>Desactívela</gui>.</p>
-    </item>
-    <item>
-      <p>Pulse <gui>Zona horaria</gui> y seleccione su ubicación en el mapa o busque su ciudad actual.</p>
-    </item>
-  </steps>
+<steps>
+  <item><p>Pulse en el reloj, situado en el centro de la barra superior.</p></item>
+  <item><p>Seleccione <gui>Configuración de fecha y hora</gui>.</p></item>
+  <item><p>Puede que necesite <gui>Desbloquear</gui> y escribir la <link xref="user-admin-explain">contraseña de administrador</link>.</p></item>
+  <item><p>Pulse en su ubicación actual en el mapa, a continuación, seleccione su ciudad actual en la lista desplegable.</p></item>
+</steps>
 
-  <p>La hora se actualizará automáticamente cuando seleccione una ubicación diferente. También puede querer <link xref="clock-set">configurar el reloj manualmente</link>.</p>
+  <p>La hora que muestra el reloj no se actualizará automáticamente cuando seleccione una ubicación diferente. La hora en la ventana se actualizará la siguiente vez que acceda a la ventana <gui>Configuración de fecha y hora</gui>. Puede querer <link xref="clock-set">establecer la hora manualmente</link>.</p>
 
 </page>

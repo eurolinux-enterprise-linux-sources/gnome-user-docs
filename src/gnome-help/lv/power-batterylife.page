@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="power-batterylife" xml:lang="lv">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="tip" id="power-batterylife" xml:lang="lv">
 
   <info>
     <link type="guide" xref="power"/>
     <link type="seealso" xref="power-suspend"/>
-    <link type="seealso" xref="shell-exit#suspend"/>
+    <link type="seealso" xref="power-hibernate"/>
     <link type="seealso" xref="shell-exit#shutdown"/>
-    <link type="seealso" xref="display-brightness"/>
-    <link type="seealso" xref="power-whydim"/>
-
     <revision pkgversion="3.7.1" version="0.2" date="2012-11-16" status="outdated"/>
-    <revision pkgversion="3.10" date="2013-11-07" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-    <revision pkgversion="3.20" date="2016-06-15" status="final"/>
+
+    <desc>Ieteikumi, lai samazinātu jūsu datora enerģijas patēriņu.</desc>
 
     <credit type="author">
       <name>GNOME dokumentācijas projekts</name>
@@ -32,52 +28,63 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Ieteikumi, lai samazinātu jūsu datora enerģijas patēriņu.</desc>
   </info>
 
-  <title>Lietot mazāk enerģijas un paildzināt bateriju mūžu</title>
+<title>Lietot mazāk enerģijas un paildzināt bateriju mūžu</title>
 
-  <p>Datori var patērēt daudz enerģijas. Izmantojot dažas vienkāršas enerģijas taupīšanas stratēģijas, jūs varat samazināt savu elektrības rēķinu un saudzēt apkārtējo vidi.</p>
+<p>Datori var patērēt daudz enerģijas. Izmantojot dažas vienkāršas enerģijas taupīšanas stratēģijas, jūs varat samazināt savu elektrības rēķinu un saudzēt apkārtējo vidi.</p>
 
 <section id="general">
-  <title>Vispārīgi ieteikumu</title>
 
+<title>Vispārīgi ieteikumu</title>
 <list>
   <item>
     <p><link xref="shell-exit#suspend">Iesnaudiniet savu datoru</link>, kad to nelietojat. Tas būtiski samazina patērējamās enerģijas apjomu, un datoru var ļoti ātri pamodināt.</p>
   </item>
   <item>
-    <p><link xref="shell-exit#shutdown">Izslēdziet datoru</link>, ja nelietosiet to ilgāku laiku. Daži cilvēki uztraucas, ka dators varētu ātrāk nolietoties, to regulāri izslēdzot, taču šīm bažām nav pamata.</p>
+    <p><link xref="shell-exit#shutdown">Turn off</link> the computer when you
+    will not be using it for longer periods. Some people worry that turning off
+    a computer regularly may cause it to wear out faster, but this is not the
+    case.</p>
   </item>
   <item>
-    <p>Izmantojiet <gui>Barošanas</gui> paneli <app>Iestatījumos</app>, lai nomainītu datora barošanas iestatījumus. Ir pieejamas vairākas iespējas, kas palīdzēs taupīt enerģiju: jūs varat <link xref="display-blank">automātiski aptumšot ekrānu</link> pēc noteikta laika, mazināt <link xref="display-brightness">ekrāna spilgtumu</link> un ļaut datoram <link xref="power-suspend">automātiski iesnausties</link>, ja tas noteiktu laiku netiek lietots.</p>
+    <p>Use the <gui>Power</gui> preferences in <app>Settings</app> to change
+    your power settings. There are a number of options that will help to save
+    power: you can <!--display-dimscreen is a stub. Please add the link back
+    when it's unstubbed.-Aruna<link xref="display-dimscreen">--> automatically
+    dim the display after a certain time; <!--display-dimscreen is a stub.
+    Please add the link back when it's unstubbed.-Aruna
+    <link xref="display-dimscreen">-->reduce the display brightness (for laptops);
+    and have the computer
+    <link xref="power-suspend">automatically suspend</link> if you have not
+    used it for a certain period of time.</p>
   </item>
   <item>
     <p>Izslēdziet ārējās ierīces (tādas kā printeri un skeneri), kad jūs tās nelietojat.</p>
   </item>
-</list>
-
+ </list>
 </section>
 
 <section id="laptop">
-  <title>Klēpjdatori un citas ierīces ar baterijām</title>
+ <title>Klēpjdatori un citas ierīces ar baterijām</title>
 
  <list>
    <item>
-     <p>Maziniet <link xref="display-brightness">ekrāna spilgtumu</link>. Spilgtumam atbilstoša ekrāna apgāde veido lielu daļu no klēpjdatora enerģijas patēriņa.</p>
+     <p><!--display-dimscreen is a stub. Please add the link back when it's
+     unstubbed.-Aruna<link xref="display-dimscreen">--> Reduce the screen
+     brightness; powering the screen accounts for a significant fraction of a
+     laptop power consumption.</p>
      <p>Daudziem klēpjdatoriem ir tastatūras pogas (vai saīsnes), ar kurām var samazināt spilgtumu.</p>
    </item>
    <item>
-     <p>Ja jums kādu laiku nav vajadzīgs interneta pieslēgums, izslēdziet bezvadu vai Bluetooth kartes. Šīs ierīces strādā, pārraidot radio viļņus, kas prasa diezgan daudz strāvas.</p>
+     <p>Ja jums kādu laiku nav vajadzīgs interneta pieslēgums, izslēdziet bezvadu vai Bluetooth karti. Šīs ierīces strādā, pārraidot radio viļņus, kas prasa diezgan daudz strāvas.</p>
      <p>Dažiem datoriem ir fizisks slēdzis, ar kuru tās var izslēgt, bet citiem tā vietā ir tastatūras saīsne. Jūs varat atkal ieslēgt tīkla ierīces, kad jums tās būs vajadzīgas.</p>
    </item>
  </list>
-
 </section>
 
 <section id="advanced">
-  <title>Padomi pieredzējušiem lietotājiem</title>
+ <title>Padomi pieredzējušiem lietotājiem</title>
 
  <list>
    <item>
@@ -85,7 +92,6 @@
      <p>Vairums palaisto lietotņu neko daudz nedara, kad jūs tās aktīvi nelietojat. Taču lietotnes, kas bieži iegūst datus no interneta vai atskaņo mūziku vai filmas var ietekmēt jūsu enerģijas patēriņu.</p>
    </item>
  </list>
-
 </section>
 
 </page>

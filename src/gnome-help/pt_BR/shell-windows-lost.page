@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" version="1.0 if/1.0" id="shell-windows-lost" xml:lang="pt-BR">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" id="shell-windows-lost" xml:lang="pt-BR">
 
   <info>
+
     <link type="guide" xref="shell-windows#working-with-windows"/>
 
-    <revision pkgversion="3.8.0" date="2013-04-23" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-
+    <desc>Verifique o panorama de atividades ou outros espaços de trabalho.</desc>
+    <revision pkgversion="3.8.0" version="0.3" date="2013-04-23" status="review"/>
     <credit type="author">
       <name>Projeto de documentação do GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
@@ -17,8 +17,6 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Verifique o panorama de <gui>Atividades</gui> ou outros espaços de trabalho.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Rodolfo Ribeiro Gomes</mal:name>
@@ -27,49 +25,51 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Enrico Nicoletto</mal:name>
       <mal:email>liverig@gmail.com</mal:email>
       <mal:years>2013.</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>João Santana</mal:name>
-      <mal:email>joaosantana@outlook.com</mal:email>
-      <mal:years>2013.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Fontenelle</mal:name>
-      <mal:email>rafaelff@gnome.org</mal:email>
-      <mal:years>2012-2018.</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Localizando uma janela perdida</title>
+<title>Localizar uma janela perdida</title>
+  <p>A window on a different workspace, or hidden behind another window, is easily
+  found using the <link xref="shell-terminology">activities overview</link>:</p>
 
-  <p>Uma janela em um espaço de trabalho diferente, ou escondida atrás de outra janela, é facilmente encontrada usando o panorama de <gui xref="shell-introduction#activities">Atividades</gui>:</p>
-
-  <list>
-    <item>
-      <p>Abra o panorama de <gui>Atividades</gui>. Se a janela perdida está no <link xref="shell-windows#working-with-workspaces">espaço de trabalho</link> atual, ela será mostrada aqui em miniatura. Basta clicar na miniatura para exibir novamente a janela, ou</p>
-    </item>
-    <item>
-      <p>Clique em espaços de trabalho diferentes no <link xref="shell-workspaces">seletor de espaços de trabalho</link> no canto direito da tela para localizar a tela para ver sua janela ou</p>
-    </item>
-    <item>
-      <p>Clique com botão direito no aplicativo no dash e suas janelas abertas serão listadas. Clique na janela na lista para alterar o foco para ela.</p>
-    </item>
-  </list>
+<list>
+ <item>
+  <p>Open the <em>activities overview</em>. If the missing window is on the
+  current <link xref="shell-windows#working-with-workspaces">workspace</link>,
+  it will be shown here in thumbnail. Simply click the thumbnail to redisplay
+  the window, or</p>
+ </item>
+ <item>
+  <p>Clique em espaços de trabalho diferentes no <link xref="shell-terminology">seletor de espaços de trabalho</link> no canto direito da tela para localizar a tela para ver sua janela ou</p>
+ </item>
+ <item>
+  <p>Right-click the application in the dash and its open windows will be
+  listed. Click the window in the list to switch to it.</p>
+ </item>
+</list>
 
   <p>Usando o alternador de janelas:</p>
-
-  <list>
-    <item>
-      <p>Pressione <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq> para exibir o <link xref="shell-windows-switching">alternador de janela</link>. Continue a segurar a tecla <key>Super</key> e pressione <key>Tab</key> para alternar entre as janelas abertas, ou <keyseq><key>Shift</key><key>Tab</key></keyseq> para alternar no sentido contrário.</p>
-    </item>
-    <item if:test="!platform:gnome-classic">
-      <p>Se um aplicativo possui múltiplas janelas abertas, mantenha pressionada <key>Super</key> e pressione <key>`</key> (ou a tecla acima de <key>Tab</key>) para passar por todas elas.</p>
-    </item>
-  </list>
+<list>
+ <item>
+  <p>Press <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key>
+  </keyseq> to display the <link xref="shell-terminology">window switcher</link>.
+  Continue to hold down the <key>Super</key> key and press <key>Tab</key> to
+  cycle through the open windows, or <keyseq><key>Shift</key><key>Tab</key>
+  </keyseq> to cycle backwards.</p>
+ </item>
+ <item if:test="!platform:gnome-classic">
+  <p>If an application has multiple open windows, hold down <key>Super</key> and
+  press <key>`</key> (or the key above <key>Tab</key>) to step through them.</p>
+ </item>
+</list>
 
 </page>

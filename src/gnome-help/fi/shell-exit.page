@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" version="1.0 if/1.0" id="shell-exit" xml:lang="fi">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" id="shell-exit" xml:lang="fi">
 
   <info>
-    <link type="guide" xref="shell-overview"/>
+
+    <link type="guide" xref="shell-overview#desktop"/>
     <link type="guide" xref="power"/>
+    <link type="seealso" xref="power-hibernate"/>
     <link type="guide" xref="index" group="#first"/>
 
+    <desc>Opi kuinka poistua käyttäjätililtä kirjautumalla ulos, vaihtamalla käyttäjää ja niin edelleen.</desc>
+    <!-- Should this be a guide which links to other topics? -->
+
     <revision pkgversion="3.6.0" date="2012-09-15" status="review"/>
-    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.24.2" date="2017-06-11" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -23,79 +25,78 @@
       <name>Alexandre Franke</name>
       <email>afranke@gnome.org</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>David Faour</name>
-      <email>dfaour.gnome@gmail.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Opi kuinka poistua käyttäjätililtä kirjautumalla ulos, vaihtamalla käyttäjää ja niin edelleen.</desc>
-    <!-- Should this be a guide which links to other topics? -->
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Timo Jyrinki</mal:name>
       <mal:email>timo.jyrinki@iki.fi</mal:email>
       <mal:years>2012.</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Jiri Grönroos</mal:name>
-      <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
-      <mal:years>2012-2018.</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Uloskirjautuminen, sammuttaminen ja käyttäjän vaihtaminen</title>
+<title>Uloskirjautuminen, sammuttaminen ja käyttäjän vaihtaminen</title>
 
-  <p>Kun olet valmis lopettamaan tietokoneen käytön, voit sammuttaa sen, asettaa tietokoneen valmiustilaan säästääksesi virtaa tai kirjautua ulos.</p>
+<comment>
+  <cite date="2012-02-19">shaunm</cite>
+  <p>More links would be good, especially in #logout. Could go final
+  as-is. Incomplete for now</p>
+</comment>
+
+  <p>Kun olet valmis lopettamaan tietokoneen käytön, voit sammuttaa sen, asettaa tietokoneen valmiustilaan säästääksesi virtaa tai pelkästään kirjautua ulos.</p>
 
 <section id="logout">
-  <title>Uloskirjautuminen tai käyttäjän vaihtaminen</title>
-
+<title>Ulos kirjautuminen tai käyttäjän vaihtaminen</title>
   <p>Jos haluat muiden pystyvän käyttää tietokonetta, voit kirjautua ulos tai vaihtaa käyttäjää. Jos vaihdat käyttäjää, kaikki käynnissä olevat sovellukset ovat edelleen käynnissä, kun kirjaudut takaisin koneelle.</p>
+  <p>To <gui>Log Out</gui> or <gui>Switch User</gui>, click your name on the
+  top bar and select the appropriate option.</p>
 
-  <p><gui>Kirjaudu ulos</gui> tai <gui>vaihda käyttäjää</gui> napsauttamalla yläpalkin oikeassa laidassa olevaa <link xref="shell-introduction#yourname">järjestelmävalikkoa</link>, jonka jälkeen napsauta nimeäsi ja valitse sitten haluamasi toiminto.</p>
+<note if:test="!platform:gnome-classic">
+  <p>The <gui>Log Out</gui> and <gui>Switch User</gui> entries only appear in
+  the menu if you have more than one user account on your system.</p>
+</note>
 
-  <note if:test="!platform:gnome-classic">
-    <p>Valinnat <gui>Kirjaudu ulos</gui> ja <gui>Vaihda käyttäjää</gui> näkyvät valikossa, jos koneella on enemmän kuin yksi käyttäjätili.</p>
-  </note>
-
-  <note if:test="platform:gnome-classic">
-    <p><gui>Vaihda käyttäjää</gui> -valinta näkyy valikossa, jos koneella on enemmän kuin yksi käyttäjätili.</p>
-  </note>
-
+<note if:test="platform:gnome-classic">
+  <p>The <gui>Switch User</gui> entry only appears in the menu if you have more
+  than one user account on your system.</p>
+</note>
 </section>
 
 <section id="lock-screen">
-  <info>
-    <link type="seealso" xref="session-screenlocks"/>
-  </info>
+<info>
+  <link type="seealso" xref="session-screenlocks"/>
+</info>
+<title>Näytön lukitseminen</title>
+  <p>If you're leaving your computer for a short time, you should lock your
+  screen to prevent other people from accessing your files or running
+  applications. When you return, raise the
+  <link xref="shell-lockscreen">lock screen</link> curtain and enter your
+  password to log back in. If you don't lock your screen, it will lock
+  automatically after a certain amount of time.</p>
 
-  <title>Näytön lukitseminen</title>
+  <p>To lock your screen, click your name on the top bar and select
+  <gui>Lock</gui>.</p>
 
-  <p>Jos poistut tietokoneelta hetkeksi, lukitse näyttö estääksesi muita ihmisiä käyttämästä tiedostojasi ja sovelluksia. Kun palaat, avaa <link xref="shell-lockscreen">lukitusnäytön näkymä</link> ja kirjaudu takaisin sisään antamalla salasanasi. Jos et lukitse näyttöä itse, se lukitaan automaattisesti tietyn ajan kuluttua.</p>
-
-  <p>Lukitse näyttö napsauttamalla yläpalkin oikeassa laidassa olevaa järjestelmävalikkoa, ja napsauta avautuvan valikon alaosasta lukon kuvaketta.</p>
-
-  <p>Kun näyttö on lukittu, muut käyttäjät voivat kirjautua omilla tunnuksillaan sisään napsauttamalla <gui>Vaihda käyttäjää</gui>. Voit taas jatkaa työskentelyä, kun he ovat lopettaneet omansa.</p>
-
+  <p>When your screen is locked, other users can log in to their own accounts
+  by clicking <gui>Log in as another user</gui> on the password screen. You
+  can switch back to your desktop when they are finished.</p>
 </section>
 
 <section id="suspend">
-  <info>
-    <link type="seealso" xref="power-suspend"/>
-  </info>
+<info>
+  <link type="seealso" xref="power-suspend"/>
+</info>
+<title>Valmiustila</title>
 
-  <title>Valmiustila</title>
+  <p>To save power, suspend your computer when you are not using it. If you use
+  a laptop, GNOME suspends your computer automatically when you close the lid.
+  This saves your state to your computer's memory and powers off most of the
+  computer's functions. A very small amount of power is still used during
+  suspend.</p>
 
-  <p>Säästä sähköä laittamalla tietokoneesi lepotilaan, kun et käytä sitä. Jos käytät kannettavaa tietokonetta, Gnome asettaa sen lepotilaan sulkiessasi koneen kannen. Lepotila tallentaa tietokoneen tilan muistiin ja sammuttaa suurimman osan tietokoneen toiminnoista. Lepotila kuluttaa kuitenkin jonkin verran sähköä, mutta kulutus on hyvin alhainen verrattuna koneen päällä pitämiseen.</p>
-
-  <p>Siirrä kone valmiustilaan itse napsauttamalla järjestelmävalikkoa yläpalkin oikeasta laidasta. Pidä pohjassa <key>Alt</key>-näppäin ja napsauta <gui>Sammuta</gui>-painiketta, jonka kuvake esittää nyt keskeytystä. Voit myös vaihtoehtoisesti painaa pitkään sammutuspainiketta.</p>
+  <p>To suspend your computer manually, click your name on the top bar and
+  hold down the <key>Alt</key> key. The <gui>Power Off</gui> option will
+  change to <gui>Suspend</gui>. Select <gui>Suspend</gui>.</p>
 
 </section>
 
@@ -103,17 +104,19 @@
 <!--<info>
   <link type="seealso" xref="power-off"/>
 </info>-->
+<title>Sammutus tai uudelleenkäynnistys</title>
 
-  <title>Sammutus tai uudelleenkäynnistys</title>
+  <p>If you want to power off your computer entirely, or do a full restart,
+  click your name on the top bar and select <gui>Power Off</gui>. A dialog will
+  open offering you to either <gui>Restart</gui> or <gui>Power Off</gui>.</p>
 
-  <p>Jos haluat sammuttaa tietokoneesi kokonaan tai käynnistää sen uudelleen, napsauta yläpalkin oikeassa laidassa olevaa järjestelmävalikkoa, ja napsauta avautuvan valikon alaosassa olevaa sammutuspainiketta. Nyt avautuu ikkuna, jossa on valinnat <gui>Käynnistä uudelleen</gui> ja <gui>Sammuta</gui>. Valitse haluamasi toiminto.</p>
+  <p>Jos muita käyttäjiä on kirjautuneena sisään, et ehkä voi sammuttaa tai käynnistää tietokonetta uudelleen. Pääkäyttäjät voivat mahdollisesti sammuttaa tietokoneen salasanallaan.</p>
 
-  <p>Jos muita käyttäjiä on kirjautuneena sisään, et ehkä voi sammuttaa tai käynnistää tietokonetta uudelleen, koska se päättäisi muiden käyttäjien istunnot. Pääkäyttäjät voivat tällöin sammuttaa tietokoneen salasanallaan.</p>
-
-  <note style="tip">
-    <p>Saatat haluta sammuttaa koneen kokonaan, jos olet aikeissa siirtää sitä, eikä käytössä ole akkua, akku on vähissä tai akun varauskapasiteetti on huono. Sammutettu kone käyttää <link xref="power-batterylife">vähemmän virtaa</link> kuin valmiustilassa oleva kone.</p>
-  </note>
-
+<note style="tip">
+  <p>You may want to power off your computer if you wish to move it and do not
+  have a battery, if your battery is low or does not hold charge well. A powered
+  off computer also uses <link xref="power-batterylife">less energy</link> than
+  one which is suspended.</p>
+</note>
 </section>
-
 </page>

@@ -3,49 +3,37 @@
 
   <info>
     <link type="guide" xref="printing#setup"/>
-    <link type="seealso" xref="user-admin-explain"/>
 
-    <revision pkgversion="3.7.1" date="2012-11-16" status="outdated"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+    <desc>Izberite tiskalnik, ki ga najpogosteje uporabljate.</desc>
+
+    <revision pkgversion="3.7.1" version="0.2" date="2012-11-16" status="outdated"/>
 
     <credit type="author">
       <name>Jim Campbell</name>
-      <email>jcampbell@gnome.org</email>
+      <email its:translate="no">jwcampbell@gmail.com</email>
     </credit>
     <credit type="author">
       <name>Paul W. Frields</name>
-      <email>stickster@gmail.com</email>
+      <email its:translate="no">stickster@gmail.com</email>
     </credit>
     <credit type="editor">
       <name>Jana Svarova</name>
-      <email>jana.svarova@gmail.com</email>
+      <email its:translate="no">jana.svarova@gmail.com</email>
       <years>2013</years>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-      <years>2014</years>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Izberite tiskalnik, ki ga najpogosteje uporabljate.</desc>
   </info>
 
   <title>Nastavitev privzetega tiskalnika</title>
-
   <p>V primeru da imate na voljo več kot en tiskalnik, lahko izberete svoj privzeti tiskalnik. Morda želite izbrati tiskalnik, ki ga najbolj pogosto uporabljate.</p>
 
   <note>
-    <p>You need <link xref="user-admin-explain">administrative privileges</link>
-    on the system to set the default printer.</p>
+  <p>Za nastavitev privzetega tiskalnika potrebujete skrbniške pravice.</p>
   </note>
 
   <steps>
     <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Printers</gui>.</p>
+      <p>Kliknite na svoje ime v vrhnji vrstici in izberite <gui>Nastavitve</gui>.</p>
     </item>
     <item>
       <p>Kliknite <gui>Tiskalniki</gui>.</p>
@@ -57,11 +45,16 @@
       <p>Kliknite gumb <gui>Odkleni</gui> v zgornjem desnem kotu in vnesite svoje geslo.</p>
     </item>
     <item>
-      <p>Select the <gui>Default printer</gui> checkbox.</p>
+      <p>Izberite možnost <gui>Privzeto</gui>.</p>
     </item>
   </steps>
 
-  <p>When you print in an application, the default printer is automatically
-  used, unless you choose a different printer.</p>
+  <note>
+  <p>When choosing from the list of available printers, you can
+  filter the printer search results by specifying a name or location of the
+  printer (for example, <input>1st floor</input> or <input>entrance</input>).</p>
+  <p>The search results filtering is available only in the dialog for addition of new printers.</p>
+  </note>
 
+  <p>Ko tiskate v programu, je privzeti tiskalnik samodejno uporabljen, razen če za določen izhod izberete drug tiskalnik.</p>
 </page>

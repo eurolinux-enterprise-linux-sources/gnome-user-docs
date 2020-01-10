@@ -4,93 +4,78 @@
   <info>
     <link type="guide" xref="printing#problems"/>
 
-    <revision pkgversion="3.10.2" date="2013-11-03" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+    <desc>Een afdruktaak in de wacht annuleren en hem uit de wachtrij verwijderen.</desc>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
 
     <credit type="author">
       <name>Phil Bull</name>
-      <email>philbull@gmail.com</email>
+      <email its:translate="no">philbull@gmail.com</email>
     </credit>
     <credit type="author">
       <name>Jim Campbell</name>
-      <email>jcampbell@gnome.org</email>
+      <email its:translate="no">jwcampbell@gmail.com</email>
     </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
     <credit type="editor">
       <name>Jana Svarova</name>
-      <email>jana.svarova@gmail.com</email>
+      <email its:translate="no">jana.svarova@gmail.com</email>
       <years>2013</years>
     </credit>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Een afdruktaak in de wacht annuleren en hem uit de wachtrij verwijderen.</desc>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Een printopdracht annuleren, pauzeren, of  vrijgeven</title>
+<title>Cancel, pause or release a print job</title>
 
-  <p>U kunt een wachtende printopdracht annuleren, en het in de printerinstellingen uit de wachtrij verwijderen.</p>
+<p>You can cancel a pending print job and remove it from the queue in the
+ printer settings.</p>
 
-  <section id="cancel-print-job">
-    <title>Een afdruktaak annuleren</title>
+<section id="cancel-print-job">
 
-  <p>Als u per ongeluk een document bent beginnen te printen, dan kunt u de printopdracht annuleren zodat u geen inkt of papier hoeft te verspillen.</p>
+<title>Een afdruktaak annuleren</title>
 
-  <steps>
-    <title>Een printopdracht annuleren:</title>
-    <item>
-      <p>Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht en typ <gui>Printers</gui>.</p>
-    </item>
-    <item>
-      <p>Klik op <gui>Printers</gui> om het paneel te openen.</p>
-    </item>
-    <item>
-      <p>Klik de <gui>Taken weergeven</gui>-knop aan de rechterkant van het <gui>Printers</gui>-dialoogvenster.</p>
-    </item>
-    <item>
-      <p>Annuleer de printopdracht door op de stopknop te klikken.</p>
-    </item>
-  </steps>
+  <p>If you accidentally started printing a document, you can cancel the
+ print so that you do not need to waste any ink or paper.</p>
 
-  <p>Als dit de printopdracht niet annuleert zoals u had verwacht, probeer dan de knop <em>Annuleren</em> van de printer ingedrukt te houden.</p>
+<steps>
+  <title>How to cancel a print job:</title>
+  <item><p>Click your name on the top bar and select
+  <gui>Settings</gui>.</p></item>
+  <item><p>Click <gui>Printers</gui>.</p></item>
+  <item><p>Click the <gui>Show Jobs</gui> button on the right-hand side of the
+  <gui>Printers</gui> dialog.</p></item>
+  <item><p>Cancel the print job by clicking the stop button on the
+  pay-pause-stop symbols.</p></item>
+ </steps>
 
-  <p>Als laatste redmiddel, vooral als u een grote afdruktaak heeft met veel pagina's en wanneer deze zich niet laat annuleren, kunt u het papier uit de papierlade halen. De printer zal merken dat er geen papier is en stoppen met afdrukken. Daarna kunt u weer proberen om de afdruktaak te annuleren, of de printer uit en weer aan te zetten.</p>
+  <p>If this does not cancel the print job like you expected, try holding down
+ the <gui>Cancel</gui> button on your printer.</p>
 
-  <note style="warning">
-    <p>Pas wel op dat u de printer niet beschadigt bij het verwijderen van het papier. Als u te hard moet trekken om het papier te verwijderen, kunt u het beter laten zitten.</p>
-  </note>
+  <p>As a last resort, especially if you have a big print job with a lot of
+ pages that won't cancel, remove the paper from the printer's paper input tray.
+ The printer should realize that there is no paper and will stop printing. You
+ can then try canceling the print job again, or try turning the printer off and
+ then on again.</p>
 
-  </section>
+ <note style="warning">
+  <p>Be careful that you don't damage the printer when removing the paper,
+ though - if you would have to pull hard on the paper to remove it, you should
+ probably just leave it where it is.</p>
+ </note>
+</section>
 
-  <section id="pause-release-print-job">
-    <title>Een printopdracht pauzeren en vrijgeven.</title>
+<section id="pause-release-print-job">
+<title>Pause and release a print job</title>
+  <p>If you want to pause or release a print job, you can do so by going to the
+  jobs dialog in the printer settings and click the appropriate button.</p>
 
-  <p>Als u een printopdracht wil pauzeren of vrijgeven, dan kunt u dat doen door in de printerinstellingen naar de taken-dialoog te gaan en de juiste knop te klikken.</p>
+ <steps>
+  <item><p>Click your name on the top bar and select
+  <gui>Settings</gui>.</p></item>
+  <item><p>Click <gui>Printers</gui>.</p></item>
+  <item><p>Click the <gui>Show Jobs</gui> button on the right-hand side of the
+  <gui>Printers</gui> dialog and either pause or release the print job based on
+  your needs.</p></item>
+ </steps>
 
-  <steps>
-    <item>
-      <p>Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht en typ <gui>Printers</gui>.</p>
-    </item>
-    <item>
-      <p>Klik op <gui>Printers</gui> om het paneel te openen.</p>
-    </item>
-    <item>
-      <p>Klik de <gui>Taken weergeven</gui>-knop aan de rechterkant van het <gui>Printers</gui>-dialoogvenster en pauzeer de printopdracht of geef deze vrij, afhankelijk van wat u wenst.</p>
-    </item>
-  </steps>
-
-  </section>
-
+</section>
 </page>

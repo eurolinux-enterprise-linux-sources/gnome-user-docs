@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" version="1.0 if/1.0" id="shell-apps-open" xml:lang="lv">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="task" id="shell-apps-open" xml:lang="lv">
 
   <info>
-    <link type="guide" xref="shell-overview"/>
+    <link type="guide" xref="shell-overview#apps"/>
     <link type="guide" xref="index" group="#first"/>
 
-    <revision pkgversion="3.6.0" date="2012-10-14" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-
+    <desc>Palaidiet lietotnes no aktivitāšu pārskata.</desc>
+    <revision pkgversion="3.6.0" version="0.2" date="2012-10-14" status="review"/>
     <credit type="author">
       <name>GNOME dokumentācijas projekts</name>
       <email>gnome-doc-list@gnome.org</email>
@@ -22,39 +21,66 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Palaidiet lietotnes no <gui>Aktivitāšu</gui> pārskata.</desc>
   </info>
 
-  <title>Palaist lietotnes</title>
+<title>Palaist lietotnes</title>
 
-  <p if:test="!platform:gnome-classic">Novietojiet peles kursoru uz <gui>Aktivitātes</gui> stūri augšējā kreisajā ekrāna stūrī, lai redzētu <gui xref="shell-introduction#activities">Aktivitāšu</gui> pārskatu. Šeit varēsiet atrast visas savas lietotnes. (Jūs varat arī atvērt pārskatu, nospiežot <key xref="keyboard-key-super">Super taustiņu</key>.)</p>
+<comment>
+<cite>shaunm</cite>
+<p>If an app is running, it's focused. You can create a new window by dragging
+to the windows overview or onto a workspace thumbnail. (Also mention dragging
+to overview in list item below, not just workspace thumbnail.) Right-click
+icon to choose a window to focus or get new window. Mention middle-click?</p>
+</comment>
+
+  <p if:test="!platform:gnome-classic">Move your mouse pointer to the
+  <gui>Activities</gui> corner at the top left of the screen to show the
+  <gui>activities overview</gui>. This is where you can find all of your
+  applications. You can also open the overview by pressing the
+  <key xref="keyboard-key-super">Super</key> key.</p>
   
-  <p if:test="platform:gnome-classic">Jūs varat palaist lietotnes no <gui xref="shell-introduction#activities">Lietotņu</gui> izvēlnes ekrāna augšējā kreisajā stūrī, vai varat izmantot <gui>Aktivitāšu</gui> pārskatu, spiežot taustiņu <key xref="keyboard-key-super">Super</key>.</p>
+  <p if:test="platform:gnome-classic">You can start applications from the
+  <link xref="shell-terminology"><gui>Applications</gui> menu</link> at the top
+  left of the screen, or you can use the <gui>activities overview</gui> by
+  pressing the <key xref="keyboard-key-super">Super</key> key.</p>
 
-  <p>Ir vairāki veidi, kā atvērt lietotni, esot <gui>Aktivitāšu</gui> pārskatā:</p>
+  <p>There are several ways of opening an application once you're in the
+  <gui>activities overview</gui>:</p>
 
-  <list>
-    <item>
-      <p>Iesākat rakstīt lietotnes nosaukumu — meklēšana sāksies nekavējoties (ja tā nenotiek, spiediet meklēšanas joslu augšējā ekrāna daļā un sāciet rakstīt). Ja nezināt precīzu lietotnes nosaukumu, mēģiniet ievadīt saistītu vārdu. Spiediet uz lietojumikonas, lai palaistu lietotni.</p>
-    </item>
-    <item>
-      <p>Dažām lietotnēm <em>panelī</em> ir ikonas, vertikālajā ikonu joslā kreisajā <gui>Aktivitāšu</gui> pārskata pusē. Spiediet uz vienu no tām, lai palaistu atbilstošo lietotni.</p>
-      <p>Ja jums ir lietotnes, kuras lietojiet ļoti bieži, jūs varat <link xref="shell-apps-favorites">pievienot tās pie paneļa</link> pats.</p>
-    </item>
-    <item>
-      <p>Spiediet uz režģa pogas paneļa apakšā. Jūs redzēsiet biežāk izmantotās lietotnes, ja būs aktivēts skats <gui style="button">Biežāk izmantotās</gui>. Ja vēlaties palaist jaunu lietotni, spiediet pogu <gui style="button">Visas</gui> apakšā, lai redzētu visas lietotnes. Spiediet uz lietotnes, lai to palaistu.</p>
-    </item>
-    <item>
-      <p>Lietotni var palaist atsevišķā <link xref="shell-workspaces">darbvietā</link>, ievelkot tās ikonu no paneļa kādā no darbavietām ekrāna labajā pusē. Lietotne tiks atvērta izvēlētajā darbavietā.</p>
-      <p>Jūs varat palaist lietotni <em>jaunā</em> darbvietā, velkot tā ikonu uz tukšu darbvietu, kas atrodas darbvietu pārslēdzēja apakšā, vai uz nelielo atstarpi starp divām darbvietām.</p>
-    </item>
-  </list>
+<list>
 
-  <note style="tip">
-    <title>Palaist komandu ātri</title>
-    <p>Vēl viens veids, kā palaist lietotni, ir spiest <keyseq><key>Alt</key><key>F2</key></keyseq>, ievadīt tās <em>komandas nosaukumu</em>, un spiest <key>Enter</key> taustiņu.</p>
-    <p>Piemēram, lai palaistu <app>Rhythmbox</app>, spiediet <keyseq><key>Alt</key><key>F2</key></keyseq> un rakstiet “<cmd>rhythmbox</cmd>” (bez pēdiņām). Lietotnes nosaukums ir arī komanda, ar ko palaiž programmu.</p>
-  </note>
+ <item>
+  <p>Iesākat rakstīt lietotnes nosaukumu — meklēšana sāksies nekavējoties. (Jā tā nenotiek, spiediet meklēšanas joslu augšējā ekrāna daļā un sāciet rakstīt.) Spiediet uz lietojumikonas, lai palaistu lietotni.</p>
+ </item>
+
+ <item>
+  <p>Some applications have icons in the <em>dash</em>, the vertical strip of
+  icons on the left-hand side of the <gui>activities overview</gui>. Click one of
+  these to start the corresponding application.</p>
+  <p>Ja jums ir lietotnes, kuras lietojiet ļoti bieži, jūs varat <link xref="shell-apps-favorites">pievienot tās pie paneļa</link> pats.</p>
+  </item>
+
+ <item>
+  <p>Click the grid button at the bottom of the dash. You will see the
+  frequently used applications if the <gui style="button">Frequent</gui> view
+  is enabled. If you want to run a new application, press the
+  <gui style="button">All</gui> button at the bottom to view all the
+  applications. Press on the application to start it.</p>
+  </item>
+
+ <item>
+  <p>Lietotni var palaist atsevišķā <link xref="shell-workspaces">darbvietā</link>, ievelkot tās ikonu no paneļa (vai no lietotņu saraksta) kādā no darbavietām ekrāna labajā pusē. Lietotne tiks atvērta izvēlētajā darbavietā.</p>
+  <p>Jūs varat palaist lietotni <em>jaunā</em> darbvietā, klikšķinot ar peles vidējo pogu uz lietojumikonas lietotņu sarakstā.</p>
+ </item>
+
+</list>
+
+<note style="tip">
+ <title>Palaist komandu ātri</title>
+  <p>Another way of launching an application is to press
+  <keyseq><key>Alt</key><key>F2</key></keyseq>, enter its <em>command name</em>,
+  and then press the <key>Enter</key> key.</p>
+  <p>Piemēram, lai palaistu <app>Rhythmbox</app>, spiediet <keyseq><key>Alt</key><key>F2</key></keyseq> un rakstiet 'rhythmbox' (bez pēdiņām). Lietotnes nosaukums ir arī komanda, ar ko palaiž programmu.</p>
+</note>
 
 </page>

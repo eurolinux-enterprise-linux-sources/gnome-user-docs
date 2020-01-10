@@ -2,92 +2,106 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="nautilus-file-properties-basic" xml:lang="nl">
 
   <info>
-    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="files" group="more"/>
 
-    <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+   <desc>View basic file information, set permissions, and choose
+   default applications.</desc>
 
-    <credit type="author">
-      <name>Tiffany Antopolski</name>
-      <email>tiffany@antopolski.com</email>
-    </credit>
-    <credit type="author">
-      <name>Shaun McCance</name>
-      <email>shaunm@gnome.org</email>
-    </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
+   <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
 
+   <credit type="author">
+     <name>Tiffany Antopolski</name>
+     <email>tiffany@antopolski.com</email>
+   </credit>
+   <credit type="author">
+     <name>Shaun McCance</name>
+     <email>shaunm@gnome.org</email>
+   </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Basis-bestandsinformatie bekijken, rechten instellen en standaardtoepassingen kiezen.</desc>
-
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
   </info>
+  <title>File properties</title>
 
-  <title>Bestandseigenschappen</title>
+  <p>To view information about a file or folder, right-click it and select
+  <gui>Properties</gui>. You can also select the file and press
+  <keyseq><key>Alt</key><key>Enter</key></keyseq>.</p>
 
-  <p>Om informatie over een bestand of map te bekijken klikt u er met rechts op en kiest u <gui>Eigenschappen</gui>.  U kunt ook het bestand selecteren en daarna drukken op <guiseq><gui>Alt</gui><gui>Enter</gui></guiseq>.</p>
+  <p>The file properties window shows you information like the type of file,
+  the size of the file, and when you last modified it. If you need this
+  information often, you
+  can have it displayed in <link xref="nautilus-list">list view columns</link>
+  or <link xref="nautilus-display#icon-captions">icon captions</link>.</p>
 
-  <p>Het bestandseigenschappenvenster toont u informatie zoals het bestandstype, de bestandsgrootte, en de datum waarop u het bestand voor het laatst gewijzigd heeft. Als u deze informatie vaak nodig heeft, dan kunt u die laten weergeven in <link xref="nautilus-list">lijstkolommen</link> of <link xref="nautilus-display#icon-captions">pictogrambijschriften</link>.</p>
-
-  <p>De informatie op het tabblad <gui>Eenvoudig</gui> wordt hieronder uitgelegd. Er zijn ook nog de volgende tabbladen: <gui><link xref="nautilus-file-properties-permissions">Rechten</link></gui> en <gui><link xref="files-open#default">Openen met</link></gui>. Voor bepaalde bestandstypes, zoals afbeeldingen en video's, is er een extra tabblad met informatie zoals afmetingen, duur en codec.</p>
+  <p>The information given on the <gui>Basic</gui> tab is explained below.
+  There are also
+  <gui><link xref="nautilus-file-properties-permissions">Permissions</link></gui>
+  and <gui><link xref="files-open#default">Open With</link></gui> tabs. For
+  certain types of files, such as images and videos, there will be an extra tab
+  that provides information like the dimensions, duration, and codec.</p>
 
 <section id="basic">
- <title>Basiseigenschappen</title>
+ <title>Basic properties</title>
  <terms>
   <item>
-    <title><gui>Naam</gui></title>
-    <p>U kunt het bestand hernoemen door dit veld te wijzigen. U kunt een bestand ook buiten het eigenschappenvenster hernoemen. Zie <link xref="files-rename"/>.</p>
+    <title><gui>Name</gui></title>
+    <p>You can rename the file by changing this field.
+    You can also rename a file outside the properties window. See
+    <link xref="files-rename"/>.</p>
   </item>
   <item>
     <title><gui>Type</gui></title>
-    <p>Dit helpt u het type van het bestand, zoals PDF-document, OpenDocument-tekst, of JPEG-afbeelding, te identificeren. Het bestandstype bepaalt onder andere welke toepassing het bestand kan openen. U kunt bijvoorbeeld geen foto met een muziekspeler openen. Zie <link xref="files-open"/> voor meer informatie hierover.</p>
-    <p>Het <em>MIME-type</em> van het bestand wordt tussen haakjes getoond; MIME is een door computers gebruikte standaard manier om naar een bestandstype te verwijzen.</p>
+    <p>This helps you identify the type of the file, such as PDF document,
+    OpenDocument Text, or JPEG image. The file type determines which
+    applications can open the file, among other things. For example, you
+    can't open a picture with a music player. See <link xref="files-open"/>
+    for more information on this.</p>
+  <p>The <em>MIME type</em> of the file is shown in parentheses; MIME type is
+    a standard way that computers use to refer to the file type.</p>
   </item>
 
   <item>
-    <title>Inhoud</title>
-    <p>Dit veld wordt weergegeven als u de eigenschappen van een map bekijkt. Hier ziet u het aantal items in de map. Als de map andere mappen bevat, dan wordt elke submap geteld als één item, zelfs als deze nog meer items bevat. Elk bestand wordt ook als één item geteld. Als de map leeg is, dan staat er bij Inhoud ‘niets’.</p>
+    <title>Contents</title>
+    <p>This field is displayed if you are looking at the properties of a folder rather than a file. It helps you see the number of items in the folder.  If the folder includes other folders, each inner folder is counted as one item, even if it contains further items. Each file is also counted as one item. If the folder is empty, the contents will display <gui>nothing</gui>.</p>
   </item>
 
   <item>
-    <title>Grootte</title>
-    <p>Dit veld wordt weergegeven als u een bestand (niet een map) bekijkt. De grootte van een bestand vertelt u hoeveel schijfruimte het in beslag neemt. Dit vertelt ook iets over hoe lang het zal duren om een bestand te downloaden of mee te sturen in een e-mail (bij grote bestanden duurt het lang om ze te versturen of te ontvangen).</p>
-    <p>De grootte kan opgegeven zijn in bytes, KB, MB of GB; bij de laatste drie wordt ook tussel haakjes de grootte in bytes gegeven. 1 KB is 1024 bytes, 1 MB is 1024 KB enz.</p>
+    <title>Size</title>
+    <p>This field is displayed if you are looking at a file (not a folder). The size of a file tells you how much disk space it takes up. This is also an indicator of how long it will take to download a file or send it in an email (big files take longer to send/receive).</p>
+    <p>Sizes may be given in bytes, KB, MB, or GB; in the case of the last three, the size in bytes will also be given in parentheses. Technically, 1 KB is 1024 bytes, 1 MB is 1024 KB and so on.</p>
   </item>
 
   <item>
-    <title>Bovenliggende map</title>
-    <p>De gegeven locatie van een bestand op uw computer is het <em>absolute pad</em> van dat bestand. Dit is een uniek ‘adres’ van het bestand op uw computer, bestaande uit een lijst van de mappen waar u doorheen zou moeten bladeren om het bestand te vinden. Bijvoorbeeld, als Jan in zijn persoonlijke map een bestand heeft met de naam <file>Samenvatting.pdf</file>, dan is de locatie ervan <file>/home/jan/Samenvatting.pdf</file>.</p>
+    <title>Location</title>
+    <p>The location of each file on your computer is given by its <em>absolute path</em>. This is a unique "address" of the file on your computer, made up of a list of the folders that you would need to go into to find the file. For example, if Jim had a file called <file>Resume.pdf</file> in his Home folder, its location would be <file>/home/jim/Resume.pdf</file>.</p>
   </item>
 
   <item>
-    <title>Vrije ruimte</title>
-    <p>Dit wordt alleen weergegeven voor mappen. Hier wordt de hoeveelheid schijfruimte opgegeven die beschikbaar is op de schijf waarop de map zich bevindt. Dit is nuttig om te controleren of de harde schijf vol is.</p>
+    <title>Volume</title>
+    <p>The file system or device that the file is stored on. This shows you
+    where the file is physically stored, for example if it is on the hard disk
+    or on a CD, or a
+    <link xref="nautilus-connect">network share or file server</link>. Hard
+    disks can be split up into several
+    <link xref="disk-partitions">disk partitions</link>; the partition will
+    be displayed under <gui>Volume</gui> too.</p>
   </item>
 
   <item>
-    <title>Benaderd</title>
-    <p>De datum en tijd waarop het bestand voor het laatst geopend werd.</p>
+    <title>Free Space</title>
+    <p>This is only displayed for folders. It gives the amount of disk space
+    which is available on the disk that the folder is on. This is useful for
+    checking if the hard disk is full.</p>
+  </item>
+
+
+  <item>
+    <title>Accessed</title>
+    <p>The date and time when the file was last opened.</p>
   </item>
 
   <item>
-    <title>Gewijzigd</title>
-    <p>De datum en tijd waarop het bestand voor het laatst werd gewijzigd en opgeslagen.</p>
+    <title>Modified</title>
+    <p>The date and time when the file was last changed and saved.</p>
   </item>
  </terms>
 </section>

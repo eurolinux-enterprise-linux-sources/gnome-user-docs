@@ -4,10 +4,10 @@
   <info>
     <link type="guide" xref="nautilus-prefs" group="nautilus-behavior"/>
 
-    <desc>Met één muisklik bestanden openen, uitvoerbare tekstbestanden uitvoeren of bekijken, en het gedrag van de prullenbak specificeren.</desc>
+    <desc>Single-click to open files, run or view executable
+    text files, and specify trash behavior.</desc>
 
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -25,90 +25,98 @@
       <name>Sindhu S</name>
       <email>sindhus@live.in</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
   </info>
 
-<title>Gedragsvoorkeuren bestandsbeheer</title>
-<p>U kunt instellen of u bestanden opent door er één keer of dubbel op te klikken, hoe uitvoerbare tekstbestanden worden behandeld, en het gedrag van de prullenbak. Klik in de bovenbalk op  <gui>Bestanden</gui>, kies <gui>Voorkeuren</gui> en ga naar het tabblad <gui>Gedrag</gui>.</p>
+<title>File manager behavior preferences</title>
+<p>You can control whether you single-click or double-click files, how
+executable text files are handled, and the trash behavior. Click
+<gui>Files</gui> in the top bar, pick <gui>Preferences</gui> and select the <gui>Behavior</gui> tab.</p>
 
 <section id="behavior">
-<title>Gedrag</title>
+<title>Behavior</title>
 <terms>
  <item>
-  <title><gui>Enkele muisklik om items te openen</gui></title>
-  <title><gui>Dubbelklikken om items te openen</gui></title>
-  <p>Standaard worden bestanden met één muisklik geselecteerd en met een dubbelklik geopend. In plaats daarvan kunt u ervoor kiezen bestanden en mappen te openen met één muisklik. Als u éénmalig klikken gebruikt, dan kunt u de <key>Ctrl</key>-toets ingedrukt houden terwijl u klikt om één of meer bestanden te selecteren.</p>
+  <title><gui>Single click to open items</gui></title>
+  <title><gui>Double click to open items</gui></title>
+  <p>By default, clicking selects files and double-clicking opens them.
+  You can instead choose to have files and folders open when you click on
+  them once. When you use single-click mode, you can hold down the
+  <key>Ctrl</key> key while clicking to select one or more files.</p>
  </item>
 </terms>
 
 </section>
 <section id="executable">
-<title>Uitvoerbare tekstbestanden</title>
- <p>Een uitvoerbaar tekstbestand is een bestand dat een programma bevat dat u kan uitvoeren. De <link xref="nautilus-file-properties-permissions">bestandspermissies</link> moeten ook zo zijn ingesteld dat het bestand als programma uitgevoerd kan worden. De meest gangbare zijn <sys>Shell</sys>, <sys>Python</sys> en <sys>Perl</sys> scripts. Deze hebben respectievelijk de extensies <file>.sh</file>, <file>.py</file> en <file>.pl</file>.</p>
+<title>Executable text files</title>
+ <p>An executable text file is a file that contains a program that you can run
+ (execute). The <link xref="nautilus-file-properties-permissions">file
+ permissions</link> must also allow for the file to run as a program. The most
+ common are <sys>Shell</sys>, <sys>Python</sys> and <sys>Perl</sys> scripts.
+ These have extensions <file>.sh</file>, <file>.py</file> and <file>.pl</file>,
+ respectively.</p>
  
- <p>Als u een uitvoerbaar tekstbestand opent, kunt u kiezen uit:</p>
+ <p>When you open an executable text file, you can select from:</p>
  
  <list>
   <item>
-    <p><gui>Uitvoerbare tekstbestanden uitvoeren zodra ze worden geopend</gui></p>
+    <p><gui>Run executable text files when they are opened</gui></p>
   </item>
   <item>
-    <p><gui>Uitvoerbare tekstbestanden bekijken zodra ze worden geopend</gui></p>
+    <p><gui>View executable text files when they are opened</gui></p>
   </item>
   <item>
-    <p><gui>Vraag iedere keer</gui></p>
+    <p><gui>Ask each time</gui></p>
   </item>
  </list>
 
- <p>Als <gui>Vraag iedere keer</gui> is geselecteerd, zal er een dialoogvenster worden weergegeven waarin u kunt aangeven of u het tekstbestand wil weergeven of uitvoeren.</p>
+ <p>If <gui>Ask each time</gui> is selected, a dialog will pop up asking if you
+ wish to run or view the selected text file.</p>
 
- <p>Uitvoerbare tekstbestanden worden ook wel scripts genoemd. Alle scripts in de map <file>~/.local/share/nautilus/scripts</file> worden in het contextmenu van een bestand onder het <gui style="menuitem">Scripts</gui> submenu weergegeven. Zodra een script vanuit een lokale map wordt uitgevoerd, zullen alle geselecteerde bestanden als parameters aan het script worden doorgegeven. Om een script op een bestand uit te voeren:</p>
+ <p>Executable text files are also called scripts. All scripts in
+ <file>~/.local/share/nautilus/scripts</file> folder will appear in the context
+ menu for a file under the <gui style="menuitem">Scripts</gui> submenu. When a
+ script is executed from a local folder, all selected files will be pasted to
+ the script as parameters. To execute a script on a file:</p>
 
 <steps>
   <item>
-    <p>Blader naar de gewenste map.</p>
+    <p>Navigate to the desired folder.</p>
   </item>
   <item>
-    <p>Kies het gewenste bestand.</p>
+    <p>Select the desired file.</p>
   </item>
   <item>
-    <p>Rechtsklik op het bestand om de het contextmenu te openen en kies vanuit het <gui style="menuitem">Scripts</gui>-menu het script dat u wil uitvoeren.</p>
+    <p>Right click on the file to open the context menu and select the desired
+    script to execute from the <gui style="menuitem">Scripts</gui> menu.</p>
   </item>
 </steps>
 
  <note style="important">
-  <p>Een script zal geen parameters meekrijgen indien het vanuit een online map wordt uitgevoerd, zoals een map waarin web- of <sys>ftp</sys>-inhoud wordt weergegeven.</p>
+  <p>A script will not be passed any parameters when executed from a remote
+  folder such as a folder showing web or <sys>ftp</sys> content.</p>
  </note>
 
 </section>
-
 <section id="trash">
 <info>
 <link type="seealso" xref="files-delete"/>
-<title type="link">Voorkeuren voor de prullenbak in bestandsbeheer</title>
+<title type="link">File manager trash preferences</title>
 </info>
-<title>Prullenbak</title>
+<title>Trash</title>
 
 <terms>
  <item>
-  <title><gui>Bevestiging vragen bij het legen van de prullenbak</gui></title>
-  <p>Deze optie is standaard geselecteerd. Bij het legen van de prullenbak zal een bericht worden weergegeven om te vragen of u zeker weet dat u de prullenbak wilt legen of bestanden wilt verwijderen.</p>
+  <title><gui>Ask before emptying the Trash or deleting files</gui></title>
+  <p>This option is selected by default.  When emptying the trash, a message will be displayed confirming that you would like to empty the trash or delete files.</p>
+ </item>
+ <item>
+  <title><gui>Include a Delete command that bypasses Trash</gui></title>
+  <p>Selecting this option will add a <gui>Delete</gui> item to the menu that
+  pops up when you right-click on an item in the <app>Files</app> application.</p>
+<note style="warning">
+<p>Deleting an item using the <gui>Delete</gui> menu option bypasses the Trash altogether.  The item is removed from the system completely.  There is no way to recover the deleted item.</p>
+</note>
  </item>
 </terms>
 </section>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="session-language" xml:lang="pt-BR">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="session-language" xml:lang="pt-BR">
 
   <info>
     <link type="guide" xref="prefs-language"/>
+    <desc>Alterne para um idioma diferente para a interface com usuário e para o texto de ajuda.</desc>
 
     <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
 
     <credit type="author">
       <name>Projeto de documentação do GNOME</name>
@@ -25,8 +25,6 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Alterne para um idioma diferente para a interface com usuário e para o texto de ajuda.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Rodolfo Ribeiro Gomes</mal:name>
@@ -35,55 +33,52 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Enrico Nicoletto</mal:name>
       <mal:email>liverig@gmail.com</mal:email>
       <mal:years>2013.</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>João Santana</mal:name>
-      <mal:email>joaosantana@outlook.com</mal:email>
-      <mal:years>2013.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Rafael Fontenelle</mal:name>
-      <mal:email>rafaelff@gnome.org</mal:email>
-      <mal:years>2012-2018.</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Alterando que idioma você usa</title>
+  <title>Alterar que idioma você usa</title>
+
+  <comment>
+    <cite date="2012-02-19">shaunm</cite>
+    <p>Explain how to install support for other languages. Requires us
+    to document software installation.</p>
+  </comment>
 
   <p>Você pode usar sua área de trabalho e seus aplicativos em qualquer um dos muitos idiomas disponíveis, desde que tenha os pacotes de idioma adequados no seu computador.</p>
 
   <steps>
-    <item>
-      <p>Abra o panorama de <gui xref="shell-introduction#activities">Atividades</gui> e comece a digitar <gui>Região &amp; idioma</gui>.</p>
-    </item>
-    <item>
-      <p>Clique em <gui>Região &amp; idioma</gui> para abrir o painel.</p>
-    </item>
-    <item>
-      <p>Clique em <gui>Idioma</gui>.</p>
-    </item>
-    <item>
-      <p>Selecione sua região e seu idioma desejados. Se sua região e idioma não estiverem listados, clique em <gui><media its:translate="no" type="image" mime="image/svg" src="figures/view-more-symbolic.svg"><span its:translate="yes">…</span></media></gui> logo abaixo da lista para selecionar todas regiões e idiomas disponíveis.</p>
-    </item>
-    <item>
-      <p>Clique em <gui style="button">Concluído</gui> para salvar.</p>
-    </item>
-    <item>
-      <p>Responda a confirmação, <gui>Sua sessão precisa ser reiniciada para que as alterações tenham efeito</gui> clicando em <gui style="button">Reiniciar agora</gui> ou em <gui style="button">×</gui> para reiniciar posteriormente.</p>
-    </item>
+    <item><p>Clique em seu nome na barra superior e selecione <gui>Configurações</gui>.</p></item>
+    <item><p>Abra <gui>Região &amp; idioma</gui> e selecione a aba <gui>Idioma</gui>.</p></item>
+    <item><p>Selecione o seu idioma desejado. Esta lista inicial mostra apenas um pequeno subgrupo de idiomas suportados. Se seu idioma não estiver listado, clique em <media type="image" mime="image/svg" src="figures/view-more-symbolic.svg"/>. Algumas traduções podem estar incompletas e certos aplicativos podem não oferecer suporte algum a esse idioma. Quaisquer textos não traduzidos aparecerão no idioma em que o programa foi originalmente desenvolvido, normalmente em Inglês americano.</p></item>
+    <item><p>Respond to the prompt, <gui>Your session needs to be restarted for
+    these changes to take effect</gui> by clicking
+    <gui style="button">Restart Now</gui>, or click <gui style="button">X</gui>
+    to restart later.</p></item>
   </steps>
-
-  <p>Algumas traduções podem estar incompletas e certos aplicativos podem não oferecer suporte algum a esse idioma. Quaisquer textos não traduzidos aparecerão no idioma em que o programa foi originalmente desenvolvido, normalmente em inglês americano.</p>
 
   <p>Existem algumas pastas especiais na sua pasta pessoal, onde aplicativos podem armazenar coisas como música, figuras e documentos. Essas pastas usam nomes padrões conforme seu idioma. Quando você iniciar uma nova sessão, você será questionado se deseja renomeá-las para os nomes padrões para seu idioma selecionado. Se você planeja usa o novo idioma o tempo todo, você deveria atualizar os nomes das pastas.</p>
 
-  <note style="tip">
-    <p>Se houver várias contas de usuário em seu sistema, há uma instância separada da região e do painel <gui>Região &amp; idioma</gui> para a tela de início de sessão. Clique no botão <gui>Tela de início de sessão</gui> no canto superior direito para alternar entre as duas instâncias.</p>
-  </note>
+  <section id="system">
+    <title>Alterar o idioma do sistema</title>
+
+    <p>Quando você altera seu idioma, você só mudará para sua conta após iniciar uma nova sessão. Você também pode alterar o <em>idioma do sistema</em>, o idioma usado em lugares como a tela de início de sessão.</p>
+
+    <steps>
+      <item><p>Clique em seu nome na barra superior e selecione <gui>Configurações</gui>.</p></item>
+      <item><p>Abra <gui>Região &amp; idioma</gui> e selecione a aba <gui>Idioma</gui>.</p></item>
+      <item><p>Selecione o botão de <gui style="button">Tela de início de sessão</gui>.</p></item>
+      <item><p>São obrigatórios <link xref="user-admin-explain">privilégios administrativos</link>. Informe sua senha ou a senha para a conta de administrador que for requisitada.</p></item>
+      <item><p>Selecione o seu idioma desejado. Esta lista inicial mostra apenas um pequeno subgrupo de idiomas suportados. Se seu idioma não estiver listado, clique em <media type="image" mime="image/svg" src="figures/view-more-symbolic.svg"/>. Algumas traduções podem estar incompletas e certos aplicativos podem não oferecer suporte algum a esse idioma. Quaisquer textos não traduzidos aparecerão no idioma em que o programa foi originalmente desenvolvido, normalmente em Inglês americano.</p></item>
+    </steps>
+  </section>
 
 </page>

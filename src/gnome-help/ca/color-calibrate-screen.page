@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="color-calibrate-screen" xml:lang="ca">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="color-calibrate-screen" xml:lang="ca">
 
   <info>
     <link type="guide" xref="color#calibration"/>
     <link type="seealso" xref="color-calibrate-printer"/>
     <link type="seealso" xref="color-calibrate-scanner"/>
     <link type="seealso" xref="color-calibrate-camera"/>
+    <desc>Calibrating your screen is important to display accurate colors.</desc>
 
     <revision pkgversion="3.7.1" version="0.2" date="2012-11-16" status="outdated"/>
-    <revision pkgversion="3.10" date="2013-11-04" status="candidate"/>
-    <revision pkgversion="3.28" date="2018-04-05" status="review"/>
 
     <credit type="author">
       <name>Richard Hughes</name>
@@ -19,14 +18,7 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Calibrar la seva pantalla és important per veure els colors precisos.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>David Aguilera</mal:name>
@@ -35,39 +27,31 @@
     </mal:credit>
   </info>
 
-  <title>Com calibro la meva pantalla?</title>
+  <title>How do I calibrate my screen?</title>
 
-  <p>Podeu calibrar la pantalla per a que mostri un color més precís. Això és especialment útil si està involucrat en la fotografia digital, el disseny, o el treball artístic.</p>
+  <p>
+    Calibrating your screen is very easy to do and should be a hard
+    requirement if you're involved in computer design or artwork.
+  </p>
+  <p>
+    By using a device called colorimeter you accurately measure the
+    different colors that your screen is able to display.
+    By running <guiseq><gui>Settings</gui><gui>Color</gui></guiseq>
+    you can easily create a profile, and the wizard will show you how
+    to attach the colorimeter device and what settings to adjust.
+  </p>
 
-  <p>Necessitarà un colorímetre o un espectrofotòmetre per fer-ho. Ambdós dispositius s'utilitzen per a definir el  perfil de les pantalles, però funcionen de manera lleugerament diferent.</p>
-
-  <steps>
-    <item>
-      <p>Asseguris que el dispositiu de calibració està connectat a l'ordinador. </p>
-    </item>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Settings</gui>.</p>
-    </item>
-    <item>
-      <p>Click on <gui>Settings</gui>.</p>
-    </item>
-    <item>
-      <p>Click <gui>Devices</gui> in the sidebar.</p>
-    </item>
-    <item>
-      <p>Click <gui>Color</gui> in the sidebar to open the panel.</p>
-    </item>
-    <item>
-      <p>Select your screen.</p>
-    </item>
-    <item>
-      <p>Premeu <gui style="button">Calibrar…</gui> per iniciar la calibració.</p>
-    </item>
-  </steps>
-
-  <p>Les pantalles canvien contínuament: la llum de fons en una pantalla TFT es reduirà a la meitat en quant a brillantor cada 18 mesos aproximadament, i s'engroguiràc a mesura que envelleixi. Això vol dir que haureu recalibrar la vostra pantalla quan la icona [!] apareixi al panell <gui>Color</gui>.</p>
-
-  <p>Les pantalles LED també canvien amb el temps, però molt més a poc a poc que les TFT.</p>
+  <note style="tip">
+    <p>
+      Screens change all the time - the backlight in a TFT will half in
+      brightness approximately every 18 months, and will get yellower
+      as it gets older.
+      This means you should recalibrate your screen when the [!] icon
+      appears in the color control panel.
+    </p>
+    <p>
+      LED screens also change over time, but a much slower rate than TFTs.
+    </p>
+  </note>
 
 </page>

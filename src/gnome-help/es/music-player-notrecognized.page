@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="music-player-notrecognized" xml:lang="es">
+  <info>
+    <link type="guide" xref="media#music"/>
+    <link type="seealso" xref="music-player-newipod"/>
+
+
+    <credit type="author">
+      <name>Proyecto de documentación de GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <desc>Añadir un archivo <input>.is_audio_player</input> para decirle a su equipo que es un reproductor de sonido.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolás Satragno</mal:name>
+      <mal:email>nsatragno@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Molinero</mal:name>
+      <mal:email>paco@byasl.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>¿Por qué no se reconoce mi reproductor de audio cuando lo conecto?</title>
+
+<p>Si su reproductor de sonido (reproductor MP3, etc.) está conectado al equipo pero no puede verlo en su aplicación de organización musical, puede que no haya sido reconocido correctamente como un reproductor de sonido.</p>
+
+<p>Intente desconectar el reproductor y volverlo a conectar. Si esto no ayuda, abra el gestor de archivos. Debería poder ver el reproductor listado bajo <gui>Dispositivos</gui> en la barra lateral, pulse para abrir la carpeta del reproductor de sonido. Ahora, pulse <guiseq><gui>Archivos</gui><gui>Documento nuevo</gui><gui>Documento vacío</gui></guiseq>, teclee <input>.is_audio_player</input> y pulse <key>Intro</key> (el punto y los guiones son importantes y todo debe estar en minúsculas). Este archivo le permite a su equipo reconocer que es un reproductor de sonido.</p>
+
+<p>Ahora busque el reproductor de sonido en la barra lateral del gestor de archivos y expúlselo (pulse con el botón derecho y seleccione <gui>Expulsar</gui>). Desconéctelo y vuelva a conectarlo. Esta vez, su organizador de música debería reconocerlo como un dispositivo de sonido. En caso contrario. Pruebe a cerrar el organizador de música y volverlo a abrir.</p>
+
+<note>
+ <p>Estas instrucciones no funcionan con iPods y algunos otros reproductores de sonido. En cambio, deberían funcionar si su reproductor es un dispositivo <em>de almacenamiento masivo USB</em>; en el manual del dispositivo debería decir si lo es.</p>
+</note>
+
+<note>
+ <p>Cuando mire de nuevo en la carpeta del reproductor de sonido, ya no verá el archivo <input>.is_audio_player</input>. Esto se debe a que el punto que aparece al principio del nombre del archivo le dice al gestor de archivos que oculte ese archivo. Puede comprobar que el archivo está todavía ahí pulsando en <guiseq><gui>Ver</gui><gui>Mostrar los archivos ocultos</gui></guiseq>.</p>
+</note>
+
+</page>

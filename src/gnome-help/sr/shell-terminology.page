@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="reference" id="shell-terminology" xml:lang="sr">
+
+  <info>
+    <link type="guide" xref="shell-overview#desktop"/>
+
+    <desc>Преглед термина коришћених за описивање различитих делова радне површи.</desc>
+
+    <revision pkgversion="3.8.0" version="0.4" date="2013-04-23" status="outdated"/>
+
+    <credit type="author">
+      <name>Гномов пројекат документације</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Мајкл Хил</name>
+      <email>mdhillca@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+<title>Активности, полетник, горња трака… Шта је то?</title>
+
+<!-- THIS SHOULD BE ALPHABETICALLY SORTED… it is. -->
+
+<terms>
+ <item>
+  <title>Преглед активности</title>
+  <p if:test="!platform:gnome-classic">The <em>activities overview</em> is the
+  screen that is displayed when you click <gui>Activities</gui> at the top
+  left of the screen.</p>
+  <p if:test="platform:gnome-classic">The <em>activities overview</em> is the
+  screen that is displayed when you select <gui>Activities Overview</gui> in
+  the <gui>Applications</gui> menu at the top left of the screen.</p>
+ </item>
+
+ <item if:test="platform:gnome-classic">
+  <title>Applications menu</title>
+  <p>You can find the <gui>Applications</gui> menu at the at the top left of
+  the screen. It gives you access to applications organized into categories.
+  The <em>activities overview</em> is available by selecting the <gui>Activities
+  Overview</gui> item from the menu.</p> 
+ </item>
+
+ <item>
+  <title>Super-Tab window switcher</title>
+  <p>When you hold down the <key xref="keyboard-key-super">Super</key> key and
+  then press <key>Tab</key>, a <em>window switcher</em> appears. This shows the
+  icons of the applications you have currently open.</p>
+ </item>
+
+ <item>
+  <title>Полетник</title>
+  <p><em>Полетник</em> је списак ваших омиљених програма који се приказује на левој страни прегледа активности. Програми који су тренутно покренути се такође приказују овде. Полетник се некада назива <em>лука</em>.</p>
+ </item>
+
+ <item>
+  <title>Врући угао</title>
+  <p><em>Врући угао</em> је горњи леви угао екрана. Када померите показивач у овај угао, отвара се преглед активности.</p>
+ </item>
+
+ <item>
+  <title>Закључавање екрана</title>
+  <p><em>Екран закључавања</em> приказује слику на екрану док је рачунар закључан. Пружа корисне информације о томе шта се дешавало док сте били далеко, и омогућава вам да управљате пуштањем медија а да не морате да откључате.</p>
+ </item>
+
+ <item>
+  <title>Обавештења</title>
+  <p><em>Notifications</em> are messages that pop up at the bottom of the
+  screen, telling you that something just happened. For example, when someone
+  chatting with you sends a message, a notification will pop up to tell you. If
+  you don't want to deal with a message right now, it is hidden in your
+  message tray. Move your mouse to the bottom-right corner (or press
+  <keyseq><key xref="keyboard-key-super">Super</key><key>M</key></keyseq>) to
+  see your message tray.</p>
+ </item>
+
+ <item if:test="platform:gnome-classic">
+  <title>Places menu</title>
+  <p>The <em>places menu</em> is opened when you click <gui>Places</gui>
+  on the <gui>top bar</gui>. It gives you quick access to important folders,
+  for example <gui>Downloads</gui> or <gui>Pictures</gui>.</p>
+ </item>
+
+ <item>
+  <title>Подешавања</title>
+  <p><em>Подешавања</em> је место где можете да измените поставке и остало, слично управљачкој плочи у Виндоузу или системским поставкама у Мек ОС-у. Кликните на ваше име на десној страни горње траке и изаберите <gui>Подешавања</gui> да им приступите.</p>
+ </item>
+
+ <item>
+  <title>Горња трака</title>
+  <p if:test="!platform:gnome-classic"><em>Горња трака</em> је трака која се протеже дуж горње ивице екрана. Веза <gui>Активности</gui> се налази на левом крају горње траке а ваше корисничко име на десном.</p>
+  <p if:test="platform:gnome-classic">The <em>top bar</em> is the bar that runs
+  along the very top of the screen. The <gui>Applications</gui> menu is on one
+  end of the top bar and your username is on the other.</p> 
+ </item>
+
+ <item>
+  <title>Радни простор</title>
+  <p>Можете да поставите прозоре на различите <em>радне просторе</em>. Представљају прикладан начин груписања и одвајања прозора.</p>
+ </item>
+
+ <item>
+  <title>Бирач радног простора</title>
+  <p><em>Бирач радних прозора</em> је списак радних простора који се приказује на десној страни прегледа <gui>Прозора</gui> у прегледу активности.</p>
+ </item>
+
+ <item if:test="platform:gnome-classic">
+  <title>Window list</title>
+  <p>The <em>window list</em> is the bar at the very bottom of the screen, which
+  shows buttons for all your open windows.</p>
+ </item>
+
+</terms>
+
+</page>

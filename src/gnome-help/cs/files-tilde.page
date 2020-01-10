@@ -4,10 +4,9 @@
   <info>
     <link type="guide" xref="files#faq"/>
     <link type="seealso" xref="files-hidden"/>
+    <desc>These are backup files. They are hidden by default.</desc>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-28" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -17,34 +16,30 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Jedná se o záložní soubory. Standardně bývají skryté.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Adam Matoušek</mal:name>
       <mal:email>adamatousek@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Marek Černocký</mal:name>
-      <mal:email>marek@manet.cz</mal:email>
-      <mal:years>2014, 2015</mal:years>
-    </mal:credit>
   </info>
 
-<title>Co je to za soubor s <file>~</file> na konci názvu?</title>
+<title>What is a file with a "~" at the end of its name?</title>
 
-  <p>Soubory s <file>~</file> na konci názvu (například <file>příklad.txt~</file>) jsou automaticky vytvořené záložní kopie dokumentů upravovaných v textovém editoru <file>gedit</file> a v dalších aplikacích. Můžete je bez následků smazat, ale když je v počítači necháte, také se nic nestane.</p>
+  <p>Files with a "~" at the end of their names (for example,
+ <file>example.txt~</file>) are automatically created backup copies of documents
+ edited in the <app>gedit</app> text editor or other applications. It is
+ safe to delete them, but there's no harm to leave them on your computer.</p>
 
-  <p>Tyto soubory jsou ve výchozím stavu skryté. Pokud je vidíte, je to proto, že jste buď vybrali <gui>Zobrazovat skryté soubory</gui> (v nabídce zobrazení na nástrojové liště aplikace <app>Soubory</app>) nebo jste zmáčkli <keyseq><key>Ctrl</key> <key>H</key></keyseq>. Znovu je skrýt můžete zopakováním jednoho ze dvou právě zmíněných postupů.</p>
+  <p>These files are hidden by default. If you are seeing them, that is because
+ you either selected <gui>Show Hidden Files</gui> (in the
+ <media type="image" src="figures/go-down.png">down</media> menu of the
+ <app>Files</app> toolbar) or pressed
+ <keyseq><key>Ctrl</key><key>H</key></keyseq>. You can hide them again by
+ repeating either of these steps.</p>
 
-  <p>S těmito soubory je nakládáno stejně, jako s normálními skrytými soubory. Viz <link xref="files-hidden"/> ohledně rady, jak smazat skryté soubory.</p>
+  <p>These files are treated in the same way as normal hidden files. See
+ <link xref="files-hidden"/> for advice on dealing with hidden files.</p>
 
 </page>

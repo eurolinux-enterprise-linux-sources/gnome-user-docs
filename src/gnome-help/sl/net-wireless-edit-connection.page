@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="net-editcon" xml:lang="sl">
+  <info>
+    <link type="guide" xref="net-wireless" group="first"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <desc>Izvedite kaj pomenijo možnosti na zaslonu urejanja brezžičnih povezav. </desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+  </info>
+
+<title>Urejanje brezžične povezave</title>
+
+<comment>
+ <p>This topic needs significant revision to be comprehensive. A number of settings remain undocumented.</p>
+</comment>
+
+<p>Ta tema opisuje vse možnosti, ki so na voljo, ko urejate brezžično omrežno povezavo. Za urejanje povezave jo izberite v nastavitvah <gui>Omrežje</gui> in nato kliknite <gui>Možnosti</gui>.</p>
+
+<note>
+ <p>Večina omrežij bo delovala povsem dobro, če te nastavitve pustite na privzetih vrednostih, zato vam jih verjetno ni treba spremeniti. Veliko možnosti tukaj vam zagotavlja večji nadzor nad naprednejšimi omrežji.</p>
+</note>
+
+<section id="available">
+ <title>Na voljo vsem uporabnikom / samodejna povezava</title>
+ <terms>
+  <item>
+   <title><gui>Samodejna povezava</gui></title>
+   <p>To možnost izberite, če želite, da se računalnik poskuša povezati s tem brezžičnim omrežjem kadar je v njegovem obsegu.</p>
+   <p>V primeru da ste na dosegu več omrežij, ki so nastavljena za samodejno povezovanje, se bo računalnik povezal z omrežjem, ki je prvo prikazano v zavihku <gui>Brezžično</gui> v oknu <gui>Omrežne povezave</gui>.  Računalnik za povezavo z drugim omrežjem v doseg katerega je pravkar prišel ne bo prekinil povezave z obstoječim omrežjem.</p>
+  </item>
+
+  <item>
+   <title><gui>Na voljo vsem uporabnikom</gui></title>
+   <p>Izberite to možnost, če želite, da imajo vsi uporabniki računalnika dostop do tega brezžičnega omrežja. V primeru da ima omrežje <link xref="net-wireless-wepwpa">geslo WEP/WPA</link>, boste geslo morali vnesti le enkrat. Vsi drugi uporabniki na vašem računalniku se bodo lahko z omrežjem povezali, ne da bi jim bilo treba vedeti geslo.</p>
+   <p>V primeru da je ta možnost izbrana, morate biti za spreminjanje možnosti tega omrežja <link xref="user-admin-explain">skrbnik</link>. Morda boste morali vnesti svoje skrbniško geslo.</p>
+  </item>
+ </terms>
+</section>
+
+<section id="wireless">
+ <title>Brezžično</title>
+ <terms>
+  <item>
+   <title><gui>SSID</gui></title>
+   <p>To je ime brezžičnega omrežja s katerim se povezujete, znano tudi pod kratico <em>SSID</em>. Tega ne spreminjajte, če niste spremenili imena brezžičnega omrežja (na primer s spremembo nastavitev svojega brezžičnega usmerjevalnika ali osnovne postaje).</p>
+  </item>
+
+  <item>
+   <title><gui>Način</gui></title>
+   <p>To uporabite za navedbo ali se povezujete z <gui>Infrastrukturnim</gui> omrežjem (tistim, kjer se računalniki povežejo z osrednjo postajo ali usmerjevalnikom) ali omrežjem <gui>Ad-hoc</gui> (kjer ni osnovne postaje in se računalniki povežejo eden z drugim. Večina omrežij je infrastrukturnih, vendar pa lahko <link xref="net-adhoc"> vzpostavite svoje omrežje ad-hoc</link>.</p>
+   <p>V primeru da izberete <gui>Ad-hoc</gui>, boste videli dve drugi možnosti, <gui>Pas</gui> in <gui>Kanal</gui>. Ti možnosti določita v katerem frekvenčnem pasu bo ad-hoc brezžično omrežje delovalo. Nekateri računalniki lahko delujejo le na nekaterih pasovih (na primer le <gui>A</gui> ali le <gui>B</gui>), zato boste morda želeli izbrati pas, ki ga lahko uporabijo vsi računalniki na ad-hoc omrežju. Na zaposlenih mestih je morda na istem kanalu na voljo več omrežij. To lahko vašo povezavo upočasni, zato lahko spremenite tudi kanal, ki ga uporabljate.</p>
+  </item>
+
+  <item>
+   <title><gui>BSSID</gui></title>
+   <p>To je <em>Osnovno določilo zbirke storitev</em>. SSID (glejte zgoraj) je ime omrežja, ki naj bi ga brali ljudje. BSSID je ime, ki ga razume računalnik (to je niz črk in števil, ki je za določeno brezžično omrežje edinstven). Če je <link xref="net-wireless-hidden">omrežje skrito</link>, ne bo imelo SSID, vendar bo imelo BSSID.</p>
+  </item>
+
+  <item>
+   <title><gui>MAC naslov naprave</gui></title>
+   <p><link xref="net-macaddress">Naslov MAC</link> je koda, ki določi kos omrežne strojne opreme (na primer brezžično kartico, omrežno kartico Eternet ali usmerjevalnik). Vsaka naprava, ki jo povežete z omrežjem, ima edinstven naslov MAC, ki ji je bil dodeljen v tovarni.</p>
+   <p>To možnost lahko uporabite za spremembo naslova MAC svoje omrežne kartice.</p>
+  </item>
+
+  <item>
+   <title><gui>Kloniran naslov MAC</gui></title>
+   <p>Vaša omrežna strojna oprema (brezžična kartica) se lahko pretvarja, da ima drugačen naslov MAC. To je uporabno, če imate napravo ali storitev, ki se bo sporazumevala le z določenimi naslovi MAC (na primer širokopasovni kabelski modem). V primeru da naslov MAC vnesete v polje <gui>kloniran naslov MAC</gui>, bo naprava/storitev mislila, da ima vaš računalnik kloniran naslov MAC in ne pravi naslov MAC.</p>
+  </item>
+
+  <item>
+   <title><gui>MTU</gui></title>
+   <p>Ta nastavitev spremeni <em>Največjo enoto prenosa</em>, ki je največji kos podatkov, ki ga je mogoče poslati preko omrežja. Ko so datoteke poslane preko omrežja, so podatki razdeljeni v majhne koščke (znane pod imenom paketi). Optimalni MTU za vaše omrežje je odvisen od tega kako verjetno je, da se bodo paketi izgubili (zaradi šuma v povezavi) in kako hitra je povezava. Ponavadi vam te nastavitve ni treba spreminjati.</p>
+  </item>
+
+ </terms>
+</section>
+
+<section id="security">
+ <title>Brezžična varnost</title>
+ <terms>
+  <item>
+   <title><gui>Varnost</gui></title>
+   <p>To določi katero vrsto <em>šifriranja</em> uporablja vaše brezžično omrežje. Šifrirana omrežja pomagajo pri zaščiti vaše brezžične povezave pred prestrezanjem, zato drugi ljudje ne morejo "prisluškovati" in videti katera spletišča obiskujete in tako naprej.</p>
+   <p>Nekatere vrste šifriranja so močnejše kot druge, vendar jih morda starejša oprema brezžičnega omrežja ne podpira. Običajno boste morali za povezavo vnesti geslo. Bolj izpopolnjene vrste varnosti morda zahtevajo tudi uporabniško ime in digitalno potrdilo. Za več podrobnosti o priljubljenih vrstah brezžičnega šifriranja si oglejte <link xref="net-wireless-wepwpa"/>.</p>
+  </item>
+ </terms>
+</section>
+
+<section id="ipv4">
+ <title>Nastavitve IPv4</title>
+
+<comment>
+<cite>shaunm</cite>
+<p>There's also Shared to other computers</p>
+<p>Then there's addresses and dns servers and ipv4 addressing routes.</p>
+<p>All current info correct, but incomplete</p>
+</comment>
+
+ <p>Uporabite ta zavihek za določitev podrobnosti kot sta naslov IP vašega računalnika in strežniki DNS, ki naj jih uporabi. Spremenite <gui>Način</gui> za ogled različnih načinov dobivanja/nastavljanja teh podrobnosti.</p>
+ <p>Na voljo so naslednji načini:</p>
+ <terms>
+  <item>
+   <title><gui>Samodejno (DHCP)</gui></title>
+   <p>Dobite podatke kot sta naslov IP in strežnik DNS od <em>strežnika DHCP</em>. Strežnik DHCP je računalnik (ali druga naprava kot je usmernik), ki je povezan na omrežje in se odloči katere omrežne nastavitve naj ima računalnik. Ko se prvič povežete na omrežje, vam bodo pravilne nastavitve samodejno dodeljene. Večina omrežij uporablja DHCP.</p>
+  </item>
+
+  <item>
+   <title><gui>Le samodejni (DHCP) naslovi</gui></title>
+   <p>V primeru da izberete to nastavitev, bo vaš računalnik svoj naslov IP dobil od strežnika DHCP, vendar boste morali druge podrobnosti določiti ročno (kot je strežnik DNS, ki ga želite uporabiti).</p>
+  </item>
+
+  <item>
+   <title><gui>Ročno</gui></title>
+   <p>Izberite to možnost, če želite sami določiti vse nastavitve omrežja, vključno z naslovom IP.</p>
+  </item>
+
+  <item>
+   <title><gui>Poveži le krajevno</gui></title>
+   <p><em>Poveži krajevno</em> je način povezave računalnikov na omrežju brez zahteve po strežniku DHCP ali ročnemu določevanju naslovov IP in drugih podatkov. V primeru da se povežete na omrežje Poveži krajevno, se bodo računalniki na omrežju med sabo odločili katere naslove IP bodo uporabili in tako naprej. To je uporabno, če želite nekaj računalnikov začasno povezati, da se lahko sporazumevajo med sabo.</p>
+  </item>
+
+  <item>
+   <title><gui>Onemogočeno</gui></title>
+   <p>Ta možnost bo onemogočila omrežno povezavo in vam preprečila povezovanje z njo. <gui>IPv4</gui> in <gui>IPv6</gui> se obravnavata kot ločeni povezavi, čeprav veljata za isto omrežno kartico. V primeru da imate eno omogočeno, boste morda želeli drugo onemogočiti.</p>
+  </item>
+
+ </terms>
+</section>
+
+<section id="ipv6">
+ <title>Nastavitve IPv6</title>
+<comment>
+<cite>shaunm</cite>
+<p>The list of methods is a bit different</p>
+</comment>
+ <p>To je podobno zavihku <gui>IPv4</gui>, vendar upravlja z novejšim standardom IPv6. Zelo moderna omrežja uporabljajo IPv6, vendar je trenutno IPv4 še vedno bolj priljubljen.</p>
+</section>
+
+</page>

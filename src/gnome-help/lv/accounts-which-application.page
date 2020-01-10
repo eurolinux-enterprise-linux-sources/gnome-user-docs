@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="accounts-which-application" xml:lang="lv">
-
   <info>
-    <link type="guide" xref="accounts"/>
-    <link type="seealso" xref="accounts-disable-service"/>
-
-    <revision pkgversion="3.8.2" date="2013-05-22" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="incomplete"/>
+    <revision pkgversion="3.8.2" version="0.2" date="2013-05-22" status="review"/>
 
     <credit type="author copyright">
       <name>Baptiste Mille-Mathias</name>
       <email>baptistem@gnome.org</email>
-      <years>2012, 2013</years>
+      <years>2012-2013</years>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
@@ -23,68 +17,55 @@
       <email>ak-47@gmx.net</email>
     </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <link type="guide" xref="accounts"/>
+    <link type="seealso" xref="accounts-disable-service"/>
 
     <desc>Lietotnes, kas var izmantot sadaļā <app>Tiešsaistes konti</app> iestatītos kontus un servisus, kuriem tās var piekļūt.</desc>
-
   </info>
 
-  <title>Tiešsaistes servisi un lietotnes</title>
+  <title>Kuras lietotnes izmanto tiešsaistes kontu iespējas?</title>
 
-  <p>Pēc tiešsaistes konta pievienošanas, jebkura lietotne var izmantot to kontu jebkuram pieejamam pakalpojumam, ko neesat <link xref="accounts-disable-service">izslēdzis</link>. Dažādi pakalpojumu sniedzēji nodrošina dažādus pakalpojumus. Šajā lapā ir uzskaitīti dažādi pakalpojumi un dažas lietotnes, kuras šos pakalpojumus izmanto.</p>
+  <p>Ārējās lietotnes var izmantot <app>Tiešsaistes kontu</app> iestatījumus, lai veiktu automātisku konfigurēšanu.</p>
 
-  <terms>
-    <item>
-      <title>Kalendārs</title>
-      <p>Kalendāra pakalpojums jums ļauj skatīt, pievienot un rediģēt notikumus tiešsaistes kalendārā. To izmanto <app>Kalendārs</app>, <app>Evolution</app> un <app>California</app> lietotnes.</p>
-    </item>
+  <section id="accounts-google-services">
+   <title>Ar Google kontu</title>
 
-    <item>
-      <title>Tērzēšana</title>
-      <p>Tērzēšanas pakalpojums jums ļauj tērzēt ar saviem kontaktiem populārās tūlītējās tērzēšanas platformās. To izmanto <app>Empathy</app> lietotne.</p>
-    </item>
+   <list>
+    <item><p><app>Evolution</app> e-pasta lietotne. Jūsu e-pasta konts tiks automātiski pievienots <app>Evolution</app>, tādējādi tā pieņems jūsu e-pastu, dos pieeju kontaktiem, un kalendārs rādīs Google kontā izveidotos notikumus.</p></item>
+    <item><p><app>Empathy</app>, the instant messaging application. Your online
+    account will be added and you will be able to communicate with your friends.
+    </p></item>
+    <item><p><app>Contacts</app>, kas dod iespēju apskatīt un rediģēt jūsu kontaktus.</p></item>
+    <item><p><app>Documents</app> var piekļūt jūsu tiešsaistes dokumentiem un attēlot tos.</p></item>
+   </list>
+  </section>
 
-    <item>
-      <title>Kontakti</title>
-      <p>Kontaktu pakalpojums jums ļauj redzēt publicēto informāciju par jūsu kontaktiem dažādos pakalpojumos. To izmanto <app>Kontaktu</app> un <app>Evolution</app> lietotnes.</p>
-    </item>
+  <section id="accounts-windows-services">
+   <title>Ar Windows Live, Facebook vai Twitter kontu</title>
 
-    <item>
-      <title>Dokumenti</title>
-      <p>Dokumentu pakalpojums jums ļauj skatīt tiešsaistes dokumentus, piemēram Google docs. Jūs varat skatīt savus dokumentus, izmantojot <app>Dokumentu</app> lietotni.</p>
-    </item>
+   <p><app>Empathy</app> var izmantot šos kontus, lai izveidotu tiešsaistes savienojumu tērzēšanai ar jūsu kontaktiem, draugiem un sekotājiem.</p>
+  </section>
 
-    <item>
-      <title>Datnes</title>
-      <p>Datņu pakalpojums pievieno attālināto datņu atrašanās vietas, it kā tās būtu pievienotas ar <link xref="nautilus-connect">Savienoties ar serveri</link> funkcionalitāti datņu pārvaldniekā. Jūs varat piekļūt attālinātām datnēm, izmantojot datņu pārvaldnieku, kā arī caur datņu atvēršanas un saglabāšanas dialoglodziņiem jebkurā lietotnē.</p>
-    </item>
+  <section id="account-windows-skydrive">
+   <title>With a SkyDrive account</title>
 
-    <item>
-      <title>E-pasts</title>
-      <p>Pasta pakalpojums jums ļauj sūtīt un saņemt e-pastu, izmantojot pasta pakalpojuma sniedzēju, piemēram, Google. To izmanto <app>Evolution</app>.</p>
-    </item>
+   <p><app>Documents</app> var piekļūt jūsu tiešsaistes dokumentiem Microsoft SkyDrive servisā un attēlot tos.</p>
+  </section>
 
-<!-- TODO: Not sure what this does. Doesn't seem to do anything in Maps app.
-    <item>
-      <title>Maps</title>
-    </item>
--->
+  <section id="account-exchange">
+   <title>With a Exchange account</title>
 
-    <item>
-      <title>Fotogrāfijas</title>
-      <p>Fotogrāfiju pakalpojums jums ļauj skatīt tiešsaistes fotogrāfijas, piemēram Facebook. Jūs varat skatīt savas fotogrāfijas, izmantojot <app>Fotogrāfiju</app> lietotni.</p>
-    </item>
+   <p>Once you have created an Exchange account, <app>Evolution</app> will start
+   retrieving mails from this account.</p>
+  </section>
 
-    <item>
-      <title>Printeri</title>
-      <p>Printeru pakalpojums jums ļauj sūtīt PDF kopiju pakalpojuma sniedzējam, izmantojot drukāšanas dialoglodziņu jebkurā lietotnē. Pakalpojuma sniedzējs var sniegt drukāšanas pakalpojumu, vai arī tikai kalpot kā PDF dokumentu krātuve, kuru varat lejupielādēt un izdrukāt vēlāk.</p>
-    </item>
+  <section id="accounts-ownCloud">
+   <title>With a ownCloud account</title>
 
-    <item>
-      <title>Lasīt vēlāk</title>
-      <p>Vēlākas lasīšanas pakalpojums ļauj saglabāt tīmekļa lapu ārējā pakalpojumā, lai to varētu vēlāk izlasīt uz citas ierīces. Pašlaik neviena lietotne neizmanto šo pakalpojumu.</p>
-    </item>
+   <p>When an ownCloud account is set up, <app>Evolution</app> is able to
+   access and edit contacts and calendar appointments.</p>
 
-  </terms>
-
+   <p><app>Files</app> and other applications will be able to list and access
+   your online files stored in the ownCloud installation.</p>
+  </section>
 </page>

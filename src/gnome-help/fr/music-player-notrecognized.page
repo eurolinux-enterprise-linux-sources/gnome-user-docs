@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="music-player-notrecognized" xml:lang="fr">
+  <info>
+    <link type="guide" xref="media#music"/>
+    <link type="seealso" xref="music-player-newipod"/>
+
+
+    <credit type="author">
+      <name>Le projet de documentation GNOME</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+
+    <desc>Ajouter un fichier <input>.is_audio_player</input> pour indiquer à votre système que c'est un lecteur de musique.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>yanngnome</mal:name>
+      <mal:email>yannubuntu@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nicolas Delvaux</mal:name>
+      <mal:email>contact@nicolas-delvaux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Non reconnaissance de mon lecteur de musique après connexion</title>
+
+<p>Quand vous branchez votre lecteur de musique à votre ordinateur et que vous ne le voyez pas apparaître dans votre application de gestion de la musique, c'est sans doute qu'il n'a pas été bien reconnu comme un lecteur de musique.</p>
+
+<p>Essayez de le débrancher et de le rebrancher. Si cela ne change rien, ouvrez le gestionnaire de fichiers. Il devrait apparaître dans le panneau latéral parmi les <gui>Périphériques</gui> - cliquez dessus pour ouvrir le dossier du lecteur de musique. Ensuite, cliquez sur <guiseq><gui>Fichier</gui><gui>Nouveau</gui><gui>Document vide</gui></guiseq>, saisissez <input>.is_audio_player</input> et appuyez sur <key>Entrée</key> (le point et les caractères soulignement sont importants et tout doit être en minuscule). Ce fichier indique à votre système que ce volume est un lecteur de musique.</p>
+
+<p>Recherchez maintenant ce lecteur de musique dans le panneau latéral du gestionnaire de fichiers et éjectez-le (clic droit puis <gui>Éjecter</gui>). Débranchez-le et rebranchez-le. Cette fois, il devrait être reconnu comme lecteur de musique par votre application de gestion de la musique. Sinon, fermez l'application et ouvrez-la à nouveau.</p>
+
+<note>
+ <p>Ces instructions ne sont pas applicables aux iPods et autres lecteurs multimédias. Elles ne sont valables que si votre lecteur est un volume <em>de stockage de masse USB</em>. Consultez son manuel pour le savoir.</p>
+</note>
+
+<note>
+ <p>Si vous regardez dans le dossier du lecteur de musique, vous ne voyez pas le fichier <input>.is_audio_player</input> car le point devant son nom indique au gestionnaire de fichiers qu'il s'agit d'un fichier caché. Vous pouvez vérifiez qu'il existe bien en cliquant sur <guiseq><gui>Affichage</gui><gui>Afficher les fichiers cachés</gui></guiseq>.</p>
+</note>
+
+</page>

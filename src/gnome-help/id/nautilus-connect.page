@@ -2,13 +2,13 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="nautilus-connect" xml:lang="id">
 
   <info>
-    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="files" group="more"/>
     <link type="guide" xref="sharing"/>
 
-    <revision pkgversion="3.6.0" date="2012-10-06" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
+    <revision pkgversion="3.6.0" version="0.2" date="2012-10-06" status="review"/>
+
+    <desc>View and edit files on another computer over FTP, SSH, Windows
+    shares, or WebDAV.</desc>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -18,27 +18,12 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>View and edit files on another computer over FTP, SSH, Windows
-    shares, or WebDAV.</desc>
-
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Andika Triwidada</mal:name>
       <mal:email>andika@gmail.com</mal:email>
-      <mal:years>2011-2014, 2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Ahmad Haris</mal:name>
-      <mal:email>ahmadharis1982@gmail.com</mal:email>
-      <mal:years>2017.</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
 
@@ -52,20 +37,18 @@ your local network.</p>
 
 <p>To browse files over the network, open the <app>Files</app>
 application from the <gui>Activities</gui> overview, and click
-<gui>Other Locations</gui> in the sidebar. The file manager
-will find any computers on your local area network that advertize
+<gui>Browse Network</gui> in the sidebar. The file manager
+will find any computers on your local area network that advertise
 their ability to serve files. If you want to connect to a server
-on the internet, or if you do not see the computer you’re looking
+on the internet, or if you do not see the computer you're looking
 for, you can manually connect to a server by typing in its
 internet/network address.</p>
 
 <steps>
   <title>Menyambung ke suatu server berkas</title>
-  <item><p>In the file manager, click <gui>Other Locations</gui> in the
-   sidebar.</p>
-  </item>
-  <item><p>In <gui>Connect to Server</gui>, enter the address of the server, in
-  the form of a
+  <item><p>In the file manager, click <gui>Files</gui> in the top bar and pick
+  <gui>Connect to Server</gui> from the app menu.</p></item>
+  <item><p>Enter the address of the server, in the form of a
    <link xref="#urls">URL</link>. Details on supported URLs are
    <link xref="#types">listed below</link>.</p>
   <note>
@@ -73,11 +56,10 @@ internet/network address.</p>
     <gui>Recent Servers</gui> list.</p>
   </note>
   </item>
-  <item>
-    <p>Click <gui>Connect</gui>. The files on the server will be shown. You
-    can browse the files just as you would for those on your own computer. The
-    server will also be added to the sidebar so you can access it quickly in
-    the future.</p>
+  <item><p>Click <gui>Connect</gui>. A new window will open showing you the
+  files on the server. You can browse the files just as you would for those on
+  your own computer. The server will also be added to the sidebar so you can
+  access it quickly in the future</p>
   </item>
 </steps>
 
@@ -120,13 +102,16 @@ internet/network address.</p>
   can connect using this method. Many web hosts provide SSH accounts
   to members so they can securely upload files. SSH servers always
   require you to log in.</p>
-  <p>Biasanya URL SSH nampak seperti ini:</p>
+  <p>A typical SSH URL looks like this:</p>
   <example>
     <p><sys>ssh://nama@servername.example.com/folder</sys></p>
   </example>
 
-  <p>When using SSH, all the data you send (including your password)
-  is encrypted so that other users on your network can’t see it.</p>
+  <comment><cite>shaunm</cite><p>We should have a topics on encryption
+  keys, possibly rolling the seahorse help into gnome-help. Then link
+  from here.</p></comment>
+
+  <p>Ketika memakai SSH, semua data yang Anda kirim (termasuk sandi Anda) dienkripsi sehingga pengguna lain pada jaringan Anda tak bisa melihatnya.</p>
 </item>
 <item>
   <title>FTP (dengan login)</title>
@@ -135,7 +120,7 @@ internet/network address.</p>
   access through SSH. Some servers, however, still allow or require
   you to use FTP to upload or download files. FTP sites with logins
   will usually allow you to delete and upload files.</p>
-  <p>Biasanya URL FTP nampak seperti ini:</p>
+  <p>A typical FTP URL looks like this:</p>
   <example>
     <p><sys>ftp://nama@ftp.example.com/path/</sys></p>
   </example>
@@ -146,7 +131,7 @@ internet/network address.</p>
   public or anonymous FTP access. These servers do not require a
   username and password, and will usually not allow you to delete
   or upload files.</p>
-  <p>Biasanya URL FTP anonim nampak seperti ini:</p>
+  <p>A typical anonymous FTP URL looks like this:</p>
   <example>
     <p><sys>ftp://ftp.example.com/path/</sys></p>
   </example>
@@ -163,33 +148,25 @@ internet/network address.</p>
   <em>domains</em> for organization and to better control access. If you have
   the right permissions on the remote computer, you can connect to a Windows
   share from the file manager.</p>
-  <p>Biasanya URL share Windows nampak seperti ini:</p>
+  <p>A typical Windows share URL looks like this:</p>
   <example>
     <p><sys>smb://servername/Share</sys></p>
   </example>
 </item>
 <item>
   <title>WebDAV dan WebDAV Aman</title>
-  <p>Based on the HTTP protocol used on the web, WebDAV is sometimes used to
-  share files on a local network and to store files on the internet. If the
-  server you’re connecting to supports secure connections, you should choose
-  this option. Secure WebDAV uses strong SSL encryption, so that other users
-  can’t see your password.</p>
-  <p>A WebDAV URL looks like this:</p>
+  <p>Berdasarkan protokol HTTP digunakan di web, WebDAV kadang-kadang digunakan untuk berbagi file pada jaringan lokal dan untuk menyimpan file di internet. Jika server yang anda hubungi mendukung koneksi yang aman, Anda harus memilih opsi ini. Aman WebDAV menggunakan enkripsi SSL kuat, sehingga pengguna lain tidak dapat melihat password Anda.</p>
+  <p>A typical WebDAV URL looks like this:</p>
   <example>
-    <p><sys>dav://example.hostname.com/path</sys></p>
+    <p><sys>http://example.hostname.com/path</sys></p>
   </example>
-</item>
-<item>
-  <title>NFS share</title>
-  <p>UNIX computers traditionally use the Network File System protocol to
-  share files over a local network. With NFS, security is based on the UID of
-  the user accessing the share, so no authentication credentials are
-  needed when connecting.</p>
-  <p>A typical NFS share URL looks like this:</p>
-  <example>
-    <p><sys>nfs://servername/path</sys></p>
-  </example>
+  <comment>
+    <cite date="2012-02-19">shaunm</cite>
+    <p>Also used by gnome-user-share, but we're not talking about that
+    in gnome-help for 3.0. Hopefully it will be better integrated in 3.2,
+    and we can discuss it better in the help. If that happens, link from
+    here.</p>
+  </comment>
 </item>
 </terms>
 </section>

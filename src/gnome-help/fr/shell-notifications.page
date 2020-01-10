@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="ui" version="1.0 if/1.0" id="shell-notifications" xml:lang="fr">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="topic" style="ui" id="shell-notifications" xml:lang="fr">
 
   <info>
+
     <link type="guide" xref="shell-overview#desktop"/>
 
+    <desc>À propos des messages qui apparaissent en bas de l'écran, pour avertir d'un événement.</desc>
+
     <revision pkgversion="3.8.0" version="0.3" date="2013-04-23" status="review"/>
-    <revision pkgversion="3.10" date="2013-11-02" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.16" date="2015-03-02" status="outdated"/>
 
     <credit type="author">
       <name>Marina Zhurakhinskaya</name>
@@ -17,15 +17,8 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-      <years>2013, 2015</years>
-    </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Les messages apparaissent dans un menu déroulant en haut de l'écran, pour avertir d'un événement.</desc> 
+  
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Luc Pionchon</mal:name>
       <mal:email>pionchon.luc@gmail.com</mal:email>
@@ -41,13 +34,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Julien Hardelin</mal:name>
       <mal:email>jhardlin@orange.fr</mal:email>
-      <mal:years>2011, 2013</mal:years>
+      <mal:years>2011</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -73,86 +66,72 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Alexandre Franke</mal:name>
-      <mal:email>alexandre.franke@gmail.com</mal:email>
-      <mal:years>2015</mal:years>
-    </mal:credit>
   </info>
 
-<title>Notifications et tiroir de messagerie</title>
+
+<title>Notifications et le tiroir de messagerie</title>
 
 <section id="what">
-  <title>Qu'est-ce qu'une notification ?</title>
+<title>Qu'est-ce qu'une notification ?</title>
+  <p>Si une application ou un composant du système veut attirer votre attention, une notification s'affiche en bas de l'écran.</p>
+  <p>Par exemple, si un nouveau message de discussion arrive, un périphérique externe est connecté (comme une clé USB), de nouvelles mises à jour sont disponibles pour votre ordinateur ou la batterie de votre ordinateur est faible, vous recevez une notification qui vous en informe.</p>
+  <p>Pour ne pas vous gêner, la notification apparaît dans un premier temps sur une seule ligne. Déplacez votre souris au dessus d'elle si vous voulez voir l'intégralité de son contenu.</p>
 
-  <p>Si une application ou un composant du système veut attirer votre attention, une notification s'affiche en haut de l'écran.</p>
+<media type="image" width="700" src="figures/shell-notification.png"/>
 
-  <p>For example, if you get a new chat message or a new email, you will get a
-  notification informing you.</p>
+  <p>Other notifications have selectable option buttons. To close one of these
+  notifications without selecting one of its options, click the close button.</p>
 
-<!--  <p>To minimize distraction, some notifications first appear as a single line.
-  You can move your mouse over them to see their full content.</p>-->
+<media type="image" width="500" src="figures/notification-buttons.png"/>
 
-  <p>Les autres notifications ont des boutons d'options sélectionnables. Pour fermer l'une de ces notifications sans sélectionner une de ses options, cliquez sur le bouton fermer.</p>
-
-  <p>En cliquant sur fermer, certaines notifications disparaissent, tandis que d'autres (comme celles de Rythmbox ou d'applications de discussion) restent masquées dans le tiroir de messagerie.</p>
+  <p>Clicking the close button on some notifications dismisses them. Others,
+  like Rhythmbox or your chat application, will stay hidden in the message 
+  tray.</p>
 
 </section>
 
-<section id="messagetray">
+<section id="messagingtray">
 
-  <title>Le tiroir de messagerie</title>
+<title>Le tiroir de messagerie</title>
 
-  <p if:test="!platform:gnome-classic">Le tiroir de messagerie vous permet de récupérer vos notifications quand bon vous semble. Il apparaît lorsque vous cliquez sur l'horloge, ou lorsque vous appuyez sur <keyseq><key xref="keyboard-key-super">Logo</key><key>M</key></keyseq>. Il contient toutes les notifications sur lesquelles vous n'avez pas encore agi ou qui y résident en permanence.</p>
+  <p if:test="!platform:gnome-classic">The message tray gives you a way to get
+  back to your notifications when it is convenient for you. It appears when you
+  move your mouse to the bottom-right corner of the screen, or press <keyseq>
+  <key xref="keyboard-key-super">Super</key><key>M</key></keyseq>. The message
+  tray contains all the notifications that you have not acted upon or that
+  permanently reside in it.</p>
 
-  <p if:test="platform:gnome-classic">Le tiroir de messagerie vous permet de récupérer vos notifications quand bon vous semble. Il apparaît lorsque vous déplacez votre souris dans le coin inférieur droit de l'écran, lorsque vous appuyez sur <keyseq><key xref="keyboard-key-super">Logo</key><key>M</key></keyseq>, ou encore en cliquant sur l'icône bleue qui apparaît à droite de la liste des fenêtres. Il contient toutes les notifications sur lesquelles vous n'avez pas encore agi ou qui y résident en permanence.</p>
+  <p if:test="platform:gnome-classic">The message tray gives you a way to get
+  back to your notifications when it is convenient for you. It appears when you
+  move your mouse to the bottom-right corner of the screen, or press <keyseq>
+  <key xref="keyboard-key-super">Super</key><key>M</key></keyseq>. You can also
+  show the message tray by clicking the blue number icon at the right-hand
+  side of the window list. The message tray contains all the notifications that
+  you have not acted upon or that permanently reside in it.</p>
 
   <p>Vous pouvez afficher les notifications en cliquant sur les éléments du tiroir de messagerie. Ce sont en général des messages envoyés par des applications. Néanmoins, les notifications de discussion reçoivent un traitement spécial et sont représentées par les contacts individuels qui vous ont envoyé les messages.</p>
 
-  <p>Pour fermer le tiroir de messagerie, appuyez de nouveau sur <keyseq><key>Logo</key><key>M</key></keyseq> ou sur <key>Échap</key>.</p>
+  <p>You can close the message tray by pressing
+  <keyseq><key>Super</key><key>M</key></keyseq> again or <key>Esc</key>.</p>
+
+  <note style="tip"><p>Si le <link xref="keyboard-osk">clavier visuel</link> est ouvert, vous devez cliquer sur le <gui>bouton du tiroir</gui> pour afficher le tiroir de messagerie.</p>
+  </note>
 
 </section>
 
 <section id="hidenotifications">
+<title>Masquage des notifications</title>
 
-  <title>Masquage des notifications</title>
+  <p>If you're working on something and do not want to be bothered, you can
+  switch off notifications. Just click your name on the top bar and change the
+  <gui>Notifications</gui> toggle to <gui>OFF</gui>.</p>
 
-  <p>If you’re working on something and do not want to be bothered, you can
-  switch off notifications.</p>
-
-  <steps>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Notifications</gui>.</p>
-    </item>
-    <item>
-      <p>Cliquez sur <gui>Notifications</gui> pour ouvrir le panneau.</p>
-    </item>
-    <item>
-      <p>Switch <gui>Notification Banners</gui> to <gui>OFF</gui>.</p>
-    </item>
-  </steps>
-
-  <p if:test="!platform:gnome-classic">When switched off, most notifications
-  will not pop up at the top of the screen. <!--Very important notifications, such
-  as when your battery is critically low, will still pop up.--> Notifications will
-  still be available in the message tray when you display it (by clicking on
-  the clock, or by pressing <keyseq><key>Super</key><key>M</key></keyseq>), and
-  they will start popping up again when you switch the toggle to <gui>ON</gui>
-  again.</p>
-
-  <p>You can also disable or re-enable notifications for individual
-  applications from the <gui>Notifications</gui> panel.</p>
-
-  <p if:test="platform:gnome-classic">When switched off, most notifications will
-  not pop up at the bottom of the screen. Very important notifications, such as
-  when your battery is critically low, will still pop up. Notifications will
-  still be available in the message tray when you display it (by moving your mouse
-  to the bottom-right corner of the screen, or by pressing <keyseq><key>Super</key>
-  <key>M</key></keyseq>), and they will start popping up again when you switch the
-  toggle to <gui>ON</gui> again.</p>
+  <p>When switched off, most notifications will not pop up at the bottom of the
+  screen. Very important notifications, such as when your battery is critically
+  low, will still pop up. Notifications will still be available in the messaging
+  tray when you display it (by moving your mouse to the bottom right corner, or
+  pressing <keyseq><key>Super</key><key>M</key></keyseq>), and they will
+  redisplay when you switch the toggle to <gui>ON</gui> again.</p>
 
 </section>
-
 </page>

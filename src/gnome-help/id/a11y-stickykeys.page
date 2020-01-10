@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task a11y" id="a11y-stickykeys" xml:lang="id">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task a11y" id="a11y-stickykeys" xml:lang="id">
   <info>
     <link type="guide" xref="a11y#mobility" group="keyboard"/>
     <link type="guide" xref="keyboard" group="a11y"/>
 
-    <revision pkgversion="3.8.0" date="2013-03-13" status="candidate"/>
-    <revision pkgversion="3.9.92" date="2013-09-18" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="final"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-13" status="candidate"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -24,41 +18,34 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
     <desc>Ketikkan pintasan papan tik satu tombol setiap saat, bukan dengan menekan semua tombol sekaligus.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Andika Triwidada</mal:name>
       <mal:email>andika@gmail.com</mal:email>
-      <mal:years>2011-2014, 2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Ahmad Haris</mal:name>
-      <mal:email>ahmadharis1982@gmail.com</mal:email>
-      <mal:years>2017.</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   </info>
 
   <title>Nyalakan tombol lengket</title>
 
-  <p><em>Tombol lengket</em> memungkinkan Anda untuk mengetik pintasan papan tik satu tombol setiap saat daripada harus menekan semua tombol sekaligus. Sebagai contoh, pintasan <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq> memindah antara jendela. Tanpa kunci lengket diaktifkan, Anda harus menahan kedua tombol pada saat yang sama, dengan tombol lengket diaktifkan, Anda perlu menekan <key>Super</key> dan kemudian <key>Tab</key> untuk melakukan hal yang sama .</p>
+  <p><em>Sticky keys</em> allows you to type keyboard shortcuts one key at a
+  time rather than having to hold down all of the keys at once. For example,
+  the <keyseq><key xref="keyboard-key-super">Super</key><key>Tab</key></keyseq>
+  shortcut switches between windows. Without sticky keys turned on, you would
+  have to hold down both keys at the same time; with sticky keys turned on, you
+  would press <key>Super</key> and then <key>Tab</key> to do the same.</p>
 
   <p>Anda mungkin ingin menyalakan tombol lengket apabila Anda merasa sulit menekan beberapa tombol sekaligus.</p>
 
   <steps>
     <item>
-      <p>Buka ringkasan <gui xref="shell-introduction#activities">Aktivitas</gui> dan mulai mengetik <gui>Akses Universal</gui>.</p>
+      <p>Click your name on the top bar and select <gui>Settings</gui>.</p>
     </item>
     <item>
-      <p>Klik pada <gui>Akses Universal</gui> untuk membuka panel.</p>
-    </item>
-    <item>
-      <p>Tekan <gui>Bantuan Mengetik (AccessX)</gui> dalam bagian <gui>Pengetikan</gui>.</p>
+      <p>Buka <gui>Akses Universal</gui> dan pilih tab <gui>Pengetikan</gui>.</p>
     </item>
     <item>
       <p>Nyalakan <gui>Tombol Lengket</gui>.</p>
@@ -67,13 +54,26 @@
 
   <note style="tip">
     <title>Nyalakan dan matikan tombol lengket secara cepat</title>
-    <p>Di bawah <gui>Aktifkan dari Papan Tik</gui>, pilih <gui>Hidupkan fitur aksesibilitas dari papan tik</gui> (di atas <gui>Tombol Lengket</gui>) untuk menghidupkan dan mematikan tombol lengket dari papan tik. Ketika opsi ini dipilih, Anda dapat menekan <key>Shift</key> lima kali berturut-turut untuk mengaktifkan atau menonaktifkan tombol lengket.</p>
-    <p>Anda juga dapat menyalakan dan mematikan tombol lengket dengan mengklik <link xref="a11y-icon">ikon aksesibilitas</link> pada bilah puncak dan memilih <gui>Tombol Lengket</gui>. Ikon aksesibilitas nampak ketika satu atau lebih pengaturan telah diaktifkan dari panel <gui>Akses Universal</gui>.</p>
+    <p>Under <gui>Enable by Keyboard</gui>, select
+    <gui>Turn on accessibility features from the keyboard</gui>
+    to turn sticky keys on and off from the keyboard. When this option is
+    selected, you can press <key>Shift</key> five times in a row to enable or
+    disable sticky keys.</p>
+    <p>You can also turn sticky keys on and off by clicking the
+    <link xref="a11y-icon">accessibility icon</link> on the top bar and
+    selecting <gui>Sticky Keys</gui>. The accessibility icon is visible when
+    one or more settings have been enabled from the <gui>Universal Access</gui>
+    panel.</p>
   </note>
 
   <p>Bila Anda menekan dua tombol sekaligus, Anda dapat mematikan sementara tombol lengket agar Anda dapat memasukkan pintasan papan tik dengan cara normal.</p>
 
-  <p>Misalnya, jika kunci lengket dihidupkan tetapi Anda menekan <key>Super</key> dan <key>Tab</key> secara bersamaan, kunci lengket tidak akan menunggu Anda untuk menekan tombol lain jika opsi ini diaktifkan. Namun ini <em>akan</em> menunggu jika Anda hanya menekan satu tombol. Ini berguna jika Anda dapat menekan beberapa pintasan papan tik secara bersamaan (misalnya, tombol yang berdekatan), tapi bukan yang lainnya.</p>
+  <p>For example, if you have sticky keys turned on but press <key>Super</key>
+  and <key>Tab</key> simultaneously, sticky keys would not wait for you to
+  press another key if you had this option turned on. It <em>would</em> wait if
+  you only pressed one key, however. This is useful if you are able to press
+  some keyboard shortcuts simultaneously (for example, keys that are close
+  together), but not others.</p>
 
   <p>Pilih <gui>Nonaktifkan bila dua tombol ditekan bersama</gui> untuk mengaktifkan ini.</p>
 

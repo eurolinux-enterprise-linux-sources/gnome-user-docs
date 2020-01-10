@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="keyboard-layouts" xml:lang="sv">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="keyboard-layouts" xml:lang="sv">
   <info>
     <link type="guide" xref="prefs-language"/>
     <link type="guide" xref="keyboard" group="i18n"/>
     <link type="guide" xref="keyboard-shortcuts-set"/>
 
     <revision pkgversion="3.8" version="0.3" date="2013-04-30" status="review"/>
-    <revision pkgversion="3.10" date="2013-10-28" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
 
     <credit type="author copyright">
       <name>Shaun McCance</name>
@@ -27,70 +24,93 @@
       <name>Juanjo Marín</name>
       <email>juanj.marin@juntadeandalucia.es</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-      <years>2013</years>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Lägg till tangentbordslayouter och växla mellan dem.</desc>
+    <desc>Add keyboard layouts and switch between them.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Sebastian Rasmussen</mal:name>
-      <mal:email>sebras@gmail.com</mal:email>
-      <mal:years>2014, 2015, 2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Anders Jonsson</mal:name>
-      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
-      <mal:years>2016, 2017</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Använd alternativa tangentbordslayouter</title>
+  <title>Use alternative keyboard layouts</title>
 
-  <p>Tangentbord levereras i hundratals olika layouter för olika språk. Ofta finns det till och med flera tangentbordslayouter för ett och samma språk, exempelvis Dvorak-layouten för engelska. Du kan få ditt tangentbord att bete sig som ett tangentbord med en annan layout, oavsett bokstäverna och symbolerna som står skrivna på tangenterna. Detta är användbart om du ofta växlar mellan flera språk.</p>
+  <p>Keyboards come in hundreds of different layouts for different languages.
+  Even for a single language, there are often multiple keyboard layouts, such
+  as the Dvorak layout for English. You can make your keyboard behave like a
+  keyboard with a different layout, regardless of the letters and symbols
+  printed on the keys. This is useful if you often switch between multiple
+  languages.</p>
 
   <steps>
     <item>
-      <p>Öppna översiktsvyn <gui xref="shell-introduction#activities">Aktiviteter</gui> och börja skriv <gui>Region &amp; språk</gui>.</p>
+     <p>Click your name on the top bar and select <gui>Settings</gui>.</p>
     </item>
     <item>
-      <p>Klicka på <gui>Region &amp; språk</gui> för att öppna panelen.</p>
+     <p>Open <gui>Region &amp; Language</gui>.</p>
     </item>
     <item>
-      <p>Klicka på <gui>+</gui>-knappen i avsnittet <gui>Inmatningskällor</gui>, välj språket som är associerat med layouten, välj sedan en layout och tryck på <gui>Add</gui>.</p>
+     <p>Click the <key>+</key> button, select a layout, and click
+     <gui>Add</gui>.</p>
     </item>
+    <!--
+    https://bugzilla.gnome.org/show_bug.cgi?id=640774
+    &
+    https://bugzilla.gnome.org/show_bug.cgi?id=689853
+    -->
   </steps>
 
-  <note style="tip">
-    <p>Om det finns flera användarkonton på ditt system finns det en separat instans av panelen <gui>Region &amp; språk</gui> för inloggningsskärmen. Klicka på <gui>Inloggningsskärm</gui>-knappen längst upp till höger för att växla mellan de två instanserna.</p>
-
-    <p>Några sällan använda varianter av tangentbordslayout finns inte tillgängliga som standard då du klickar på <gui>+</gui>-knappen. För att även göra dessa inmatningskällor tillgängliga kan du öppna ett terminalfönster genom att trycka ned <keyseq><key>Ctrl</key><key>Alt</key><key>T</key></keyseq> och köra detta kommando:</p>
-    <p><cmd its:translate="no">gsettings set org.gnome.desktop.input-sources show-all-sources true</cmd></p>
-  </note>
-
   <note style="sidebar">
-    <p>Du kan förhandsgranska en bild av vilken layout som helst genom att välja den i listan av <gui>Inmatningskällor</gui> och klicka på <gui><media its:translate="no" type="image" src="figures/input-keyboard-symbolic.png" width="16" height="16"><span its:translate="yes">förhandsgranska</span></media></gui></p>
+    <p>You can preview an image of any layout by selecting it in the list and
+    clicking <gui><media type="image" src="figures/input-keyboard-symbolic.png" width="16" height="16">preview</media></gui></p>
   </note>
 
-  <p>Vissa språk erbjuder extra konfigurationsalternativ. Du kan identifiera dessa språk eftersom de har en <gui><media its:translate="no" type="image" src="figures/system-run-symbolic.svg" width="16" height="16"><span its:translate="yes">förhandsgranska</span></media></gui>-ikon intill dem. Om du vill nå dessa extra parametrar, välj språket från listan <gui>Inmatningskällor</gui> så kommer en ny <gui style="button"><media its:translate="no" type="image" src="figures/emblem-system-symbolic.svg" width="16" height="16"><span its:translate="yes">inställningar</span></media></gui>-knapp att ge dig tillgång till de extra inställningarna.</p>
+  <p>Certain languages offer some extra configuration options. You can
+  identify those languages because they have an icon
+  <gui><media type="image" src="figures/system-run-symbolic.svg" width="16" height="16">preview</media></gui> depicted. If you want to access these
+  extra parameters, select the language from the <gui>Input Source</gui> list 
+  and a new
+  <gui style="button"><media type="image" src="figures/emblem-system-symbolic.svg" width="16" height="16">preview</media></gui> button will give you access to
+  the extra settings.</p>
 
-  <p>När du använder flera layouter kan du välja att låta alla fönster ha samma layout eller ställa in olika layouter för varje fönster. Att använda olika layouter för varje fönster är användbart om du till exempel skriver en artikel på ett annat språk i ett ordbehandlarfönster. Ditt tangentbordsval kommer att kommas ihåg för varje fönster när du växlar mellan fönster. Tryck på <gui style="button">Alternativ</gui>-knappen för att välja hur du vill hantera flera layouter.</p>
+  <p>When you use multiple layouts, you can choose to have all windows use the
+  same layout or to set a different layout for each window. Using a different
+  layout for each window is useful, for example, if you're writing an article
+  in another language in a word processor window. Your keyboard selection will
+  be remembered for each window as you switch between windows. Press the
+  <gui style="button">Options</gui> button to select how you want to manage
+  multiple layouts.</p>
 
-  <p>Systemraden kommer att visa ett kort namn på den aktuella layouten, som till exempel <gui>en</gui> för engelskans standardlayout. Klicka på layout-indikatorn och välj layouten du vill använda från menyn. Om det valda språket har några extra inställningar kommer dessa att visa under listan av tillgängliga layouter. Detta ger dig en snabb överblick av dina inställningar. Du kan också öppna en bild med den aktuella tangentbordslayouten för referens.</p>
+  <p>The top bar will display a short identifier for the current layout, such as
+  <gui>en</gui> for the standard English layout. Click the layout indicator and
+  select the layout you want to use from the menu. If the selected language has
+  any extra settings, they will be shown below the list of available layouts.
+  This gives you a quick overview of your settings. You can also open an image
+  with the current keyboard layout for reference.</p>
 
-  <p>Det snabbaste sättet att byta till en annan layout är genom att använda <gui>snabbtangenter</gui> för <gui>Inmatningskällor</gui>. Dessa snabbtangenter öppnar väljaren av <gui>Inmatningskällor</gui> där du kan flytta framåt eller bakåt. Som standard kan du växla till nästa inmatningskälla med <keyseq><key xref="keyboard-key-super">Super</key><key>Mellanslag</key></keyseq> och till föregående med <keyseq><key>Skift</key><key>Super</key><key>Mellanslag</key></keyseq>. Du kan ändra dessa snabbtangenter i inställningarna <gui>Tangentbord</gui>.</p>
+  <p>The fastest way to change to another layout is by using the 
+  <gui>Input Source</gui> <gui>Keyboard Shortcuts</gui>. These shortcuts open 
+  the <gui>Input Source</gui> chooser where you can move forward and backward. 
+  By default, you can switch to the next input source with 
+  <keyseq><key xref="keyboard-key-super">Super</key><key>Space</key>
+  </keyseq> and to the previous one with <keyseq><key>Shift</key><key>Super</key>
+  <key>Space</key></keyseq>. You can change these shortcuts in the 
+  <gui>Keyboard</gui> settings.</p>
 
   <p><media type="image" src="figures/input-methods-switcher.png"/></p>
+
+  <comment>
+    <cite date="2012-02-19">shaunm</cite>
+    <p>We're totally copping out on the custom options. That dialog is a
+    monster, and needs a reference. Note that the options in there are
+    dynamic from the X server. We might not get a definitive reference
+    of everything ever, but let's do our best. Make a separate page.
+    Don't clutter this page with that crap.</p>
+    <p>Also, we should identify common uses of those options and create
+    task pages for them.</p>
+  </comment>
 
 </page>

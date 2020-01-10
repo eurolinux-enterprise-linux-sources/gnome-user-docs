@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="net-macaddress" xml:lang="hu">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="tip" id="net-macaddress" xml:lang="hu">
   <info>
     <link type="guide" xref="net-general"/>
 
     <revision pkgversion="3.7.1" version="0.2" date="2012-11-16" status="outdated"/>
-    <revision pkgversion="3.10" date="2013-10-30" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -20,14 +17,9 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <desc>A hálózati hardver egyedi azonosítója.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Griechisch Erika</mal:name>
@@ -38,7 +30,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Kelemen Gábor</mal:name>
       <mal:email>kelemeng at gnome dot hu</mal:email>
-      <mal:years>2011, 2012, 2013, 2014, 2015, 2016, 2017</mal:years>
+      <mal:years>2011, 2012, 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -58,12 +50,6 @@
       <mal:email>lukacs.bence1 at gmail dot com</mal:email>
       <mal:years>2011</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Nagy Zoltán</mal:name>
-      <mal:email>dzodzie at gmail dot com</mal:email>
-      <mal:years>2011</mal:years>
-    </mal:credit>
   </info>
 
   <title>Mi az a MAC-cím?</title>
@@ -73,22 +59,12 @@
   <p>A MAC-cím hat, két karakterből álló és kettősponttal elválasztott csoportból áll, például: <code>00:1B:44:11:3A:B7</code>.</p>
 
   <p>A hálózati hardver MAC-címének azonosítása:</p>
-
   <steps>
-    <item>
-      <p>Nyissa meg a <gui xref="shell-introduction#activities">Tevékenységek</gui> áttekintést, és kezdje el begépelni a <gui>Hálózat</gui> szót.</p>
-    </item>
-    <item>
-      <p>Kattintson a <gui>Hálózat</gui> elemre a panel megnyitásához.</p>
-    </item>
-    <item>
-      <p>Válassza a bal oldali listából a <gui>Wi-Fi</gui> vagy <gui>Vezetékes</gui> eszközt.</p>
-      <p>A vezetékes eszköz MAC-címe a jobb oldalon a <gui>Hardvercím</gui> mellett jelenik meg.</p>
-      
-      <p>Kattintson a <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">beállítások</span></media> gombra a vezeték nélküli kapcsolat MAC-címének megjelenítéséhez a <gui>Részletek</gui> panel jobb oldalán, a <gui>Hardvercím</gui> mellett.</p>
-    </item>
+    <item><p>Kattintson a nevére a felső sávban, és válassza a <gui>Beállítások</gui> menüpontot.</p></item>
+    <item><p>Kattintson a <gui>Hálózat</gui> ikonra, és válassza a bal oldali lista <gui>Vezetékes</gui> vagy <gui>Vezeték nélküli</gui> pontját, az ellenőrizni kívánt eszköznek megfelelően.</p></item>
+    <item><p>A MAC-cím a <gui>Hardvercím</gui> után jelenik meg.</p></item>
   </steps>
 
-  <p>A gyakorlatban szükség lehet a MAC-cím módosítására, vagy „hamisítására”. Egyes internetszolgáltatók például megkövetelhetik egy adott MAC-cím használatát a szolgáltatásuk használatához. Ha a hálózati kártya elromlik, és ki kell cserélni, akkor esetleg nem tudja elérni a szolgáltatást. Ilyen esetekben meg kell hamisítani a MAC-címet.</p>
+  <p>A gyakorlatban szükség lehet a <link xref="net-editcon">MAC-cím módosítására, vagy „hamisítására”</link>. Egyes internetszolgáltatók például megkövetelhetik egy adott MAC-cím használatát a szolgáltatásuk használatához. Ha a hálózati kártya elromlik, és ki kell cserélni, akkor esetleg nem tudja elérni a szolgáltatást. Ilyen esetekben meg kell hamisítani a MAC-címet.</p>
 
 </page>

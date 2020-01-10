@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="printing-setup" xml:lang="nl">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="printing-setup" xml:lang="nl">
 
   <info>
     <link type="guide" xref="printing#setup" group="#first"/>
-    <link type="seealso" xref="printing-setup-default-printer" group="#first"/>
 
-    <revision pkgversion="3.10.2" date="2013-11-03" status="candidate"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="final"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
+    <desc>Een printer die aangesloten is op uw computer instellen.</desc>
+
+    <revision pkgversion="3.7.1" version="0.2" date="2012-11-16" status="outdated"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -15,7 +14,7 @@
     </credit>
     <credit type="author">
       <name>Jim Campbell</name>
-      <email>jcampbell@gnome.org</email>
+      <email>jwcampbell@gmail.com</email>
     </credit>
     <credit type="author">
       <name>Paul W. Frields</name>
@@ -29,66 +28,56 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Een printer die aangesloten is op uw computer instellen.</desc>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
   </info>
 
   <title>Een lokale printer instellen</title>
-
   <p>Uw systeem kan vele soorten printers automatisch herkennen wanneer die eenmaal aangesloten zijn. De meeste printers worden aangesloten op de computer met een USB-kabel.</p>
 
-  <note style="tip">
-    <p>U hoeft nog niet te kiezen of u een netwerk- of lokale printer wilt installeren. Ze worden in één venster weergegeven.</p>
-  </note>
+ <note style="tip">
+  <p>You do not need to select whether you want to install network or local
+  printer now. They are listed in one window.</p>
+ </note>
+
+  <comment>
+    <cite date="2012-02-19">shaunm</cite>
+    <p>Do we have anything on what to do when your printer isn't found? 3.0.1?</p>
+  </comment>
 
   <steps>
-    <item>
-      <p>Zorg ervoor dat de printer aan staat.</p>
+    <item><p>Zorg ervoor dat de printer aan staat.</p>
     </item>
-    <item>
-      <p>Sluit de kabel van de printer aan op uw systeem. Het kan zijn dat u activiteit ziet op het scherm terwijl het systeem zoekt naar stuurprogramma's, en mogelijk wordt u gevraagd om  authenticatie om die te installeren.</p>
+    <item><p>Sluit de kabel van de printer aan op uw systeem. Het kan zijn dat u activiteit ziet op het scherm terwijl het systeem zoekt naar stuurprogramma's, en mogelijk wordt u gevraagd om  authenticatie om die te installeren.</p>
     </item>
-    <item>
-      <p>Zodra het systeem klaar is met het installeren van de nieuwe printer zal er een melding worden weergegeven. Kies <gui>Testpagina afdrukken</gui> om een testpagina te printen, of <gui>Opties</gui> om de printerinstellingen verder te wijzigen.</p>
+    <item><p>A message will appear when the system is finished installing the
+ printer. Select <gui>Print Test Page</gui> to print a test page, or
+ <gui>Options</gui> to make additional changes in the printer setup.</p>
     </item>
   </steps>
 
   <p>Als uw printer niet automatisch werd ingesteld, dan kunt u hem toevoegen bij de printerinstellingen.</p>
 
   <steps>
-    <item>
-      <p>Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht en typ <gui>Printers</gui>.</p>
+    <item><p>Click your name on the top bar and select
+    <gui>Settings</gui>.</p></item>
+    <item><p>Click <gui>Printers</gui>.</p></item>
+    <item><p>Click the <key>Unlock</key> button in the top-right corner and enter
+    your password.</p>
     </item>
-    <item>
-      <p>Klik op <gui>Printers</gui>.</p>
-    </item>
-    <item>
-      <p>Klik op de knop <gui>Ontgrendelen</gui> in de rechterbovenhoek en voer uw wachtwoord in.</p>
-    </item>
-    <item>
-      <p>Klik op de <gui>+</gui>-knop.</p>
-    </item>
-    <item>
-      <p>In het net verschenen venster, selecteer uw nieuwe printer. Klik op Click <gui>Toevoegen</gui>.</p>
-    </item>
+    <item><p>Click the <key>+</key> button.</p></item>
+    <item><p>In the pop-up window, select your new printer.
+    Click <gui>Add</gui>.</p></item>
   </steps>
 
-  <p>Als uw printer niet verschijnt in het venster Een nieuwe printer toevoegen, moet u wellicht printer-stuurprogramma's installeren.</p>
+  <p>If your printer does not appear in the Add Printer pop-up, you may need to
+ install print drivers.</p>
 
-  <p>Nadat u de printer heeft geïnstalleerd wilt u misschien <link xref="printing-setup-default-printer"> de standaardprinter wijzigen</link>.</p>
+<comment>
+<p>Add link to above when page is ready.
+xref="printing-setup-drivers" install print drivers.</p>
+</comment>
+
+  <p>After you install the printer, you may wish to
+ <link xref="printing-setup-default-printer">change your default printer</link>.</p>
 
 </page>

@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="keyboard-layouts" xml:lang="sr">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="keyboard-layouts" xml:lang="sr">
   <info>
     <link type="guide" xref="prefs-language"/>
     <link type="guide" xref="keyboard" group="i18n"/>
     <link type="guide" xref="keyboard-shortcuts-set"/>
 
     <revision pkgversion="3.8" version="0.3" date="2013-04-30" status="review"/>
-    <revision pkgversion="3.10" date="2013-10-28" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
 
     <credit type="author copyright">
       <name>Шон Мек Кенс</name>
@@ -27,58 +24,74 @@
       <name>Хуанхо Марин</name>
       <email>juanj.marin@juntadeandalucia.es</email>
     </credit>
-    <credit type="editor">
-      <name>Екатерина Герасимова</name>
-      <email>kittykat3756@gmail.com</email>
-      <years>2013</years>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Додајте распореде тастатуре и пребацујте се између њих.</desc>
+    <desc>Add keyboard layouts and switch between them.</desc>
   </info>
 
-  <title>Користите другачије распореде тастатуре</title>
+  <title>Use alternative keyboard layouts</title>
 
-  <p>Постоје на стотине различитих распореда тастатура за различите језике. Чак и за један језик, често имамо неколико распореда тастатуре, као што је распоред Дворак за енглески. Можете да учините да се ваша тастатура понаша као тастатура са другачијим распоредом, без обзира на слова и симболе који су одштампани на тастерима. Ово је корисно ако се често пребацујете са једног језика на други.</p>
+  <p>Keyboards come in hundreds of different layouts for different languages.
+  Even for a single language, there are often multiple keyboard layouts, such
+  as the Dvorak layout for English. You can make your keyboard behave like a
+  keyboard with a different layout, regardless of the letters and symbols
+  printed on the keys. This is useful if you often switch between multiple
+  languages.</p>
 
   <steps>
     <item>
-      <p>Отворите преглед <gui xref="shell-introduction#activities">Активности</gui> и почните да куцате <gui>Регион и језик</gui>.</p>
+     <p>Кликните на ваше име на горњој траци и изаберите <gui>Подешавања</gui>.</p>
     </item>
     <item>
-      <p>Кликните на <gui>Регион и језик</gui> да отворите панел.</p>
+     <p>Отворите <gui>Регион и језик</gui>.</p>
     </item>
     <item>
-      <p>Притисните дугме <gui>+</gui> у одељку <gui>Извори улаза</gui>, изаберите језик који је придружен распореду, затим изаберите распоред и притисните <gui>Додај</gui>.</p>
+     <p>Кликните на дугме <key>+</key>, изаберите распоред, и кликните <gui>Додај</gui>.</p>
     </item>
+    <!--
+    https://bugzilla.gnome.org/show_bug.cgi?id=640774
+    &
+    https://bugzilla.gnome.org/show_bug.cgi?id=689853
+    -->
   </steps>
 
-  <note style="tip">
-    <p>If there are multiple user accounts on your system, there is a separate
-    instance of the <gui>Region &amp; Language</gui> panel for the login screen.
-    Click the <gui>Login Screen</gui> button at the top right to toggle between
-    the two instances.</p>
-
-    <p>Some rarely used keyboard layout variants are not available by default when you click
-    the <gui>+</gui> button. To make also those input sources available you can open a terminal
-    window by pressing <keyseq><key>Ctrl</key><key>Alt</key><key>T</key></keyseq>
-    and run this command:</p>
-    <p><cmd its:translate="no">gsettings set org.gnome.desktop.input-sources show-all-sources true</cmd></p>
-  </note>
-
   <note style="sidebar">
-    <p>Можете да прикажете слику неког распореда тако што ћете га изабрати на списку <gui>Извори улаза</gui> и кликнути на <gui><media its:translate="no" type="image" src="figures/input-keyboard-symbolic.png" width="16" height="16"><span its:translate="yes">преглед</span></media></gui></p>
+    <p>Можете да прикажете слику распореда тако што ћете га изабрати и кликнути на иконицу <gui><media type="image" src="figures/input-keyboard-symbolic.png" width="16" height="16">преглед</media></gui></p>
   </note>
 
-  <p>Неки језици нуде неке посебне могућности подешавања. Можете да препознате те језике зато што имају нацртану иконицу <gui><media its:translate="no" type="image" src="figures/system-run-symbolic.svg" width="16" height="16"><span its:translate="yes">преглед</span></media></gui> поред њих. Ако желите да приступите тим посебним параметрима, изаберите језик са списка <gui>Извора улаза</gui> а дугме нових <gui style="button"><media its:translate="no" type="image" src="figures/emblem-system-symbolic.svg" width="16" height="16"><span its:translate="yes">поставке</span></media></gui> ће вам дати приступ посебним подешавањима.</p>
+  <p>Certain languages offer some extra configuration options. You can
+  identify those languages because they have an icon
+  <gui><media type="image" src="figures/system-run-symbolic.svg" width="16" height="16">preview</media></gui> depicted. If you want to access these
+  extra parameters, select the language from the <gui>Input Source</gui> list 
+  and a new
+  <gui style="button"><media type="image" src="figures/emblem-system-symbolic.svg" width="16" height="16">preview</media></gui> button will give you access to
+  the extra settings.</p>
 
   <p>Када користите више распореда, можете да изаберете да сви прозори користе исти распоред или да подесите различит распоред за сваки прозор. Коришћење различитог распореда за сваки прозор је корисно, на пример, ако пишете неки чланак на другом језику у прозору обрађивача текста. Ваш избор тастатуре ће бити упамћен за сваки прозор понаособ када се будете пребацивали између њих. Притисните дугме <gui style="button">Опције</gui> да изаберете како желите да управљате са више распореда.</p>
 
   <p>Горња трака ће приказати кратак одредник за текући распоред, као што је <gui>en</gui> за уобичајени енглески језик. Кликните на показивач и из изборника изаберите распоред који желите да користите. Ако изабрани језик има додатна подешавања, иста ће бити приказана испод списка доступних распореда. То вам даје брз преглед ваших подешавања. Можете такође да отворите и слику са текућим распоредом тастатуре за увид.</p>
 
-  <p>Најбржи начин да промените распоред је да користите <gui>Пречице тастатуре</gui> <gui>Извора улаза</gui>. Те пречице отварају бирача <gui>Извора улаза</gui> у коме можете да се крећете напред и назад. По основи, можете да се пребаците на следећи извор улаза тастерима <keyseq><key xref="keyboard-key-super">Супер</key><key>Размак</key> </keyseq> а на следећи тастерима <keyseq><key>Шифт</key><key>Супер</key> <key>Размак</key></keyseq>. Можете да измените ове пречице у подешавањима <gui>Тастатуре</gui>.</p>
+  <p>The fastest way to change to another layout is by using the 
+  <gui>Input Source</gui> <gui>Keyboard Shortcuts</gui>. These shortcuts open 
+  the <gui>Input Source</gui> chooser where you can move forward and backward. 
+  By default, you can switch to the next input source with 
+  <keyseq><key xref="keyboard-key-super">Super</key><key>Space</key>
+  </keyseq> and to the previous one with <keyseq><key>Shift</key><key>Super</key>
+  <key>Space</key></keyseq>. You can change these shortcuts in the 
+  <gui>Keyboard</gui> settings.</p>
 
   <p><media type="image" src="figures/input-methods-switcher.png"/></p>
+
+  <comment>
+    <cite date="2012-02-19">shaunm</cite>
+    <p>We're totally copping out on the custom options. That dialog is a
+    monster, and needs a reference. Note that the options in there are
+    dynamic from the X server. We might not get a definitive reference
+    of everything ever, but let's do our best. Make a separate page.
+    Don't clutter this page with that crap.</p>
+    <p>Also, we should identify common uses of those options and create
+    task pages for them.</p>
+  </comment>
 
 </page>

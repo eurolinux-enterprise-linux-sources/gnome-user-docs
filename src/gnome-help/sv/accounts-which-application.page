@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="accounts-which-application" xml:lang="sv">
-
   <info>
-    <link type="guide" xref="accounts"/>
-    <link type="seealso" xref="accounts-disable-service"/>
-
-    <revision pkgversion="3.8.2" date="2013-05-22" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="incomplete"/>
+    <revision pkgversion="3.8.2" version="0.2" date="2013-05-22" status="review"/>
 
     <credit type="author copyright">
       <name>Baptiste Mille-Mathias</name>
       <email>baptistem@gnome.org</email>
-      <years>2012, 2013</years>
+      <years>2012-2013</years>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
@@ -23,86 +17,71 @@
       <email>ak-47@gmx.net</email>
     </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <link type="guide" xref="accounts"/>
+    <link type="seealso" xref="accounts-disable-service"/>
 
-    <desc>Program kan använda de konton som skapats i <app>Nätkonton</app> och tjänsterna de utnyttjar.</desc>
-
+    <desc>Applications can use the accounts created in <app>Online Accounts</app>
+     and the services they exploit.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Sebastian Rasmussen</mal:name>
-      <mal:email>sebras@gmail.com</mal:email>
-      <mal:years>2014, 2015, 2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Anders Jonsson</mal:name>
-      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
-      <mal:years>2016, 2017</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Nättjänster och program</title>
+  <title>Which applications take advantage of online accounts?</title>
 
-  <p>När du har lagt till ett nätkonto kan vilket program som helst använda det kontot för vilken tillgänglig tjänst som helst som du inte har <link xref="accounts-disable-service">inaktiverat</link>. Olika leverantörer tillhandahåller olika tjänster. Denna sida listar de olika tjänsterna och några av programmen som använder dem.</p>
+  <p><app>Online Accounts</app> can be used by external applications to
+  automatically configure themselves.</p>
 
-  <terms>
-    <item>
-      <title>Kalender</title>
-      <p>Kalender-tjänsten låter dig visa, lägga till och redigera händelser i en nätkalender. Den används av program så som <app>Kalender</app>, <app>Evolution</app> och <app>California</app>.</p>
-    </item>
+  <section id="accounts-google-services">
+   <title>With a Google account</title>
 
-    <item>
-      <title>Chatt</title>
-      <p>Chatt-tjänsten låter dig chatta med dina kontakter på populära snabbmeddelande-plattformar. Den används av programmet <app>Empathy</app>.</p>
-    </item>
+   <list>
+    <item><p><app>Evolution</app>, the email application. Your email account will
+    be added to <app>Evolution</app> automatically, so it will retrieve your
+    mail, give you access to your contacts, and display your calendar items in
+    your Google agenda.
+    </p></item>
+    <item><p><app>Empathy</app>, the instant messaging application. Your online
+    account will be added and you will be able to communicate with your friends.
+    </p></item>
+    <item><p><app>Contacts</app>, which will allow to see and edit your contacts.
+    </p></item>
+    <item><p><app>Documents</app> can access your online documents and display
+    them.</p></item>
+   </list>
+  </section>
 
-    <item>
-      <title>Kontakter</title>
-      <p>Kontakter-tjänsten låter dig se de publicerade detaljerna om dina kontakter på diverse tjänster. Den används av program så som <app>Kontakter</app> och <app>Evolution</app>.</p>
-    </item>
+  <section id="accounts-windows-services">
+   <title>With Windows Live, Facebook or Twitter accounts</title>
 
-    <item>
-      <title>Dokument</title>
-      <p>Dokument-tjänsten låter dig visa dina nätdokument, t.ex. de i Google docs. Du kan visa dina dokument via programmet <app>Dokument</app>.</p>
-    </item>
+   <p><app>Empathy</app> can use these accounts to connect you online and chat
+   with your contacts, friends, and followers.</p>
+  </section>
 
-    <item>
-      <title>Filer</title>
-      <p>Filer-tjänsten lägger till en plats för fjärrfiler, som om du hade lagt till en via funktionaliteten <link xref="nautilus-connect">Anslut till server</link> i filhanteraren. Du kan nå fjärrfiler genom filhanteraren, samt genom dialoger för att öppna och spara filer i vilket program som helst.</p>
-    </item>
+  <section id="account-windows-skydrive">
+   <title>With a SkyDrive account</title>
 
-    <item>
-      <title>E-post</title>
-      <p>E-post-tjänsten låter dig skicka och ta emot e-post via en e-post-leverantör så som Google. Den används av <app>Evolution</app>.</p>
-    </item>
+   <p><app>Documents</app> can access your online documents in Microsoft
+   SkyDrive and display them.</p>
+  </section>
 
-<!-- TODO: Not sure what this does. Doesn't seem to do anything in Maps app.
-    <item>
-      <title>Maps</title>
-    </item>
--->
+  <section id="account-exchange">
+   <title>With a Exchange account</title>
 
-    <item>
-      <title>Foton</title>
-      <p>Foton-tjänsten låter dig visa dina nätfoton så som de du postar på Facebook. Du kan visa dina foton via programmet <app>Foton</app>.</p>
-    </item>
+   <p>Once you have created an Exchange account, <app>Evolution</app> will start
+   retrieving mails from this account.</p>
+  </section>
 
-    <item>
-      <title>Skrivare</title>
-      <p>Skrivare-tjänsten låter dig skicka en PDF-kopia till en leverantör inifrån utskriftsdialogen i vilket program som helst. Leverantören kan tillhandahålla utskriftstjänster, eller så kan den bara agera som lagring av PDF:en som du senare kan hämta ner och skriva ut.</p>
-    </item>
+  <section id="accounts-ownCloud">
+   <title>With a ownCloud account</title>
 
-    <item>
-      <title>Läs senare</title>
-      <p>Läs senare-tjänsten låter dig spara en webbsida hos externa tjänster så att du kan läsa den senare på en annan enhet. Inga program använder för närvarande denna tjänst.</p>
-    </item>
+   <p>When an ownCloud account is set up, <app>Evolution</app> is able to
+   access and edit contacts and calendar appointments.</p>
 
-  </terms>
-
+   <p><app>Files</app> and other applications will be able to list and access
+   your online files stored in the ownCloud installation.</p>
+  </section>
 </page>

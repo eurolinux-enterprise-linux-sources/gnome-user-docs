@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="ui" id="net-editcon" xml:lang="lv">
+  <info>
+    <link type="guide" xref="net-wireless" group="first"/>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+
+    <desc>Iemācieties, ko nozīmē opcijas bezvadu tīkla savienojuma rediģēšanas logā.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" xlink:type="simple" xlink:href="gnome-help.its"/>
+  </info>
+
+<title>Rediģēt bezvadu tīklu</title>
+
+<comment>
+ <p>This topic needs significant revision to be comprehensive. A number of settings remain undocumented.</p>
+</comment>
+
+<p>Šis temats aprakstīs visas opcijas, kas ir pieejamas, kad jūs rediģējat bezvadu tīkla savienojumus. Lai rediģētu savienojumus, izvēlieties to <gui>Tīkla</gui> iestatījumos, tad spiediet <gui>Opcijas</gui>.</p>
+
+<note>
+ <p>Lielākā daļa tīklu strādās labi, ja atstāsiet šos iestatījumus kā noklusētos, tādēļ visdrīzāk jums nevajadzētu tur neko mainīt. Daudzas no šīm opcijām ir paredzētas, lai dotu jums lielāku kontroli pār īpaši konfigurētiem tīkliem.</p>
+</note>
+
+<section id="available">
+ <title>Pieejams visiem lietotājiem / savienoties automātiski</title>
+ <terms>
+  <item>
+   <title><gui>Savienoties automātiski</gui></title>
+   <p>Atzīmējiet šo opciju, ja vēlaties, lai dators automātiski savienojas ar šo bezvadu tīklu, kad vien tas ir sasniedzams.</p>
+   <p>Ja ir pieejami vairāki tīkli, kas ir atzīmēti kā automātiski savienojami, dators savienosies ar pirmo, kurš parādīsies <gui>Bezvadu</gui> cilnē <gui>Tīkla savienojumu</gui> logā. Tas neatvienosies no pieejama tīkla, lai savienotos ar citu tīklu, kas kļuvis pieejams.</p>
+  </item>
+
+  <item>
+   <title><gui>Pieejams visiem lietotājiem</gui></title>
+   <p>Atzīmējiet šo, ja jūs vēlaties lai visiem šī datora lietotājiem būtu pieeja šim bezvadu tīklam. Ja tīklam ir <link xref="net-wireless-wepwpa">WEP/WPA parole</link> un jūs esat atzīmējis šo opciju, jums vajadzēs ievadīt paroli tikai vienu reizi. Visiem datora lietotājiem būs iespējams savienoties ar šo tīklu, nezinot paroli.</p>
+   <p>Ja šis ir atzīmēts, jums jābūt <link xref="user-admin-explain">administratoram</link>, lai mainītu jebkuru no šī tīkla iestatījumiem. Jums varētu jautāt, lai ievadiet administratora paroli.</p>
+  </item>
+ </terms>
+</section>
+
+<section id="wireless">
+ <title>Bezvadu tīkls</title>
+ <terms>
+  <item>
+   <title><gui>SSID</gui></title>
+   <p>Šis ir nosaukums bezvadu tīklam, ar kuru jūs esat savienots, zināms arī kā <em>Service Set Identifier</em>. Nemainiet šo, ja vien neesat nomainījuši bezvadu tīkla nosaukumu (piemēram, mainot bezvadu maršrutētāja vai bāzes stacijas iestatījumus).</p>
+  </item>
+
+  <item>
+   <title><gui>Režīms</gui></title>
+   <p>Izmantojiet šo, lai norādītu, vai jūs esat pieslēgušies <gui>Infrastruktūras</gui> tīklam (kad dators bez vadiem pieslēdzas centrālajai bāzes stacijai vai maršrutētājam) vai <gui>Ekspromta</gui> tīklam (kad nav bāzes stacijas, un datori ir saslēgti tīklā savā starpā). Visvairāk ir infrastruktūras tīklu; taču jūs varētu vēlēties <link xref="net-adhoc">iestatīt savu ekspromta tīklu</link>.</p>
+   <p>Ja izvēlaties <gui>Ekspromtu</gui>, redzēsiet divas citas opcijas, <gui>Josla</gui> un <gui>Kanāls</gui>. Tie nosaka, kurā bezvadu frekvenču joslā ekspromta bezvadu tīkls strādās. Daži datori var strādāt tikai dažās joslās (piemēram, tikai <gui>A</gui> vai tikai <gui>B/G</gui>), tādēļ jūs varētu vēlēties izvēlēties joslu, kuru var izmantot visi tīkla datori. Rosīgās vietās var būt vairāki bezvadu tīkli, kas dala vienu kanālu; tas var palēnināt jūsu savienojumu, tādēļ varat izvēlēties, kuru kanālu izmantosiet.</p>
+  </item>
+
+  <item>
+   <title><gui>BSSID</gui></title>
+   <p>Tas ir <em>Basic Service Set Identifier</em>. SSID (skatīt iepriekš) ir tādas tīkla nosaukuma, kādu cilvēkiem ir paredzēts lasīt; BSSID ir nosaukums kādu saprot dators (tā ir rinda ar burtiem un cipariem kam ir jābūt unikāliem katram bezvadu tīklam). Ja <link xref="net-wireless-hidden">tīkls ir paslēpts</link>, tam nebūs SSID bet būs BSSID.</p>
+  </item>
+
+  <item>
+   <title><gui>Ierīces MAC adrese</gui></title>
+   <p><link xref="net-macaddress">MAC adrese</link> ir kods, kas identificē tīkla ierīces (piemēram, bezvadu tīkla karti, vadu tīkla karti vai maršrutētāju). Katrai ierīcei, kuru jūs varat pieslēgt tīklam, ir unikāla MAC adrese, ko tai iedod rūpnīca.</p>
+   <p>Ar šo opciju var nomainīt MAC adresi jūsu tīkla kartei.</p>
+  </item>
+
+  <item>
+   <title><gui>Klonēta MAC adrese</gui></title>
+   <p>Jūsu tīkla kartei (bezvadu tīkla kartei) var izlikties, ka tai ir cita MAC adrese. Tas noder, ja jums ir ierīce vai serviss, kas sazinās tikai ar noteiktām MAC adresēm (piemēram, modems). Ja ielieksiet to MAC adresi <gui>Klonēta MAC adrese</gui> ailē, ierīce/serviss uzskatīs, ka jums ir klonētā MAC adrese nevis reālā.</p>
+  </item>
+
+  <item>
+   <title><gui>MTU</gui></title>
+   <p>Šis iestatījums maina <em>Maximum Transmission Unit</em>, kas ir maksimālais daudzums datu, kurus var nosūtīt pa tīklu. Kad datnes tiek sūtītias pa tīklu, tās tiek sadalīti vairākās mazās daļiņās (vai pakās). Optimālais MTU jūsu tīklam būs atkarīgs no tā, kāda ir varbūtība, ka paciņa pazudīs (ja ir slikts savienojums) un cik ātrs ir savienojums. Parasti jums nevajadzētu mainīt šos iestatījumus.</p>
+  </item>
+
+ </terms>
+</section>
+
+<section id="security">
+ <title>Bezvadu tīkla drošība</title>
+ <terms>
+  <item>
+   <title><gui>Drošība</gui></title>
+   <p>Tas nosaka, kādu <em>šifrēšanas</em> veidu izmanto bezvadu tīkls. Šifrētie savienojumi palīdz aizsargāt jūsu bezvadu savienojumu no pārķeršanas, tātad citi cilvēki nevar "noklausīties" un redzēt, kādas adreses jūs aplūkojiet un tā tālāk.</p>
+   <p>Daži šifrēšanas veidi ir stiprāki par citiem, bet to var neatbalstīti vecāka bezvadu tīkla aparatūra. Jums parasti vajadzēs ievadīt paroli, lai savienotos; modernākiem drošības veidiem vajag ievadīt lietotāja vārdu un digitālu "sertifikātu". Apskatiet <link xref="net-wireless-wepwpa"/>, lai uzzinātu vairāk par populārie, bezvadu šifrēšanas veidiem.</p>
+  </item>
+ </terms>
+</section>
+
+<section id="ipv4">
+ <title>IPv4 iestatījumi</title>
+
+<comment>
+<cite>shaunm</cite>
+<p>There's also Shared to other computers</p>
+<p>Then there's addresses and dns servers and ipv4 addressing routes.</p>
+<p>All current info correct, but incomplete</p>
+</comment>
+
+ <p>Izmantojiet šo cilni, lai norādītu informāciju, piemēram, datora IP adresi un kādu DNS serveri tam ir jāizmanto. Nomainiet <gui>Metodi</gui>, lai  redzētu dažādus veidus, kā saņemt/iestatīt šo informāciju.</p>
+ <p>Ir pieejamas sekojošas metodes:</p>
+ <terms>
+  <item>
+   <title><gui>Automātiski (DHCP)</gui></title>
+   <p>Saņemiet informāciju, piemēram, IP adresi un DNS serveri, ko izmantot, no <em>DHCP servera</em>. DHCP serveris ir dators (vai cita ierīce, piemēram, maršrutētājs) savienots tīklā, kas nosaka, kādus tīkla iestatījumus jūsu datoram jāizmanto — vispirms savienojoties ar tīklu, datoram automātiski tiks piešķirti pareizie iestatījumi. Pārsvarā tīkli izmanto DHCP.</p>
+  </item>
+
+  <item>
+   <title><gui>Automātiski (DHCP) tikai adreses</gui></title>
+   <p>Izvēloties šos iestatījumus, jūsu dators saņems IP adreses no DHCP servera, bet jums pašrocīgi būs jānorāda cita informācija (piemēram, kādu DNS serveri izmantot).</p>
+  </item>
+
+  <item>
+   <title><gui>Pašrocīgi</gui></title>
+   <p>Izvēlieties šo opciju, ja vēlaties paši definēt visus tīkla iestatījumus, tai skaitā, kādas IP adreses datoram vajadzētu izmantot.</p>
+  </item>
+
+  <item>
+   <title><gui>Tikai lokālais tīkls</gui></title>
+   <p><em>Link-Local</em> ir veids, kā savienot datorus  tīklā bez DHCP servera vai pašrocīgas IP adreses un citas informācijas norādīšanas. Ja savienojaties ar Link-Local tīklu, datori tīklā paši izlems, kādas IP adreses izmantot un tā tālāk. Tas noder, ja vēlaties uz laiku savienot vairākus datorus kopā, lai tie varētu savā starpā sazināties.</p>
+  </item>
+
+  <item>
+   <title><gui>Atslēgts</gui></title>
+   <p>Šī opcija deaktivēs tīkla savienojumu un liegs jums ar to savienoties. Atcerieties, ka <gui>IPv4</gui> un <gui>IPv6</gui> tiek apstrādāti kā dažādi savienojumi, kaut gan tie ir no vienas tīkla kartes. Ja jums viens ir aktivēts, jūs varētu vēlēties otru deaktivēt.</p>
+  </item>
+
+ </terms>
+</section>
+
+<section id="ipv6">
+ <title>IPv6 iestatījumi</title>
+<comment>
+<cite>shaunm</cite>
+<p>The list of methods is a bit different</p>
+</comment>
+ <p>Šis ir līdzīgs <gui>IPv4</gui> cilnei, izņemot tajā konfigurē jaunāku IPv6 standartu. Ļoti moderni tīkli izmanto IPv6, bet IPv4 vēl aizvien ir ļoti populārs.</p>
+</section>
+
+</page>

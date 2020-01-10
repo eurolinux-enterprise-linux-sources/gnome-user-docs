@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-lost" xml:lang="it">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-lost" xml:lang="it">
 
   <info>
-    <link type="guide" xref="files#more-file-tasks"/>
+    <link type="guide" xref="files" group="more"/>
 
     <revision pkgversion="3.6.0" version="0.2" date="2012-09-28" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="candidate"/>
+
+    <desc>Suggerimenti da seguire quando non si riesce a trovare un file creato o scaricato.</desc>
 
     <credit type="author">
       <name>Progetto documentazione di GNOME</name>
@@ -20,15 +20,8 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Follow these tips if you can’t find a file you created or
-    downloaded.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Luca Ferretti</mal:name>
@@ -45,28 +38,21 @@
 
 <title>Trovare un file perso</title>
 
-<p>If you created or downloaded a file, but now you cannot find it, follow
-these tips.</p>
+<p>Se è stato creato oppure scaricato un file, ma ora non è più possibile trovarlo, seguire questi suggerimenti.</p>
 
 <list>
-  <item><p>If you do not remember where you saved the file, but you have some
-  idea of how you named it, you can <link xref="files-search">search for the
-  file by name</link>.</p></item>
+  <item><p>Se non si ricorda più dove è stato salvato il file, ma si ha un'idea di quale era il suo nome, è possibile cercare il file per nome. Per maggiori informazioni, consultare <link xref="file-search"/>.</p></item>
 
-  <item><p>If you just downloaded the file, your web browser might
-  have automatically saved it to a common folder. Check the
-  <file>Desktop</file> and <file>Downloads</file> folders in your home
-  folder.</p></item>
+  <item><p>Se il file è stato scaricato, il proprio browser potrebbe averlo salvato automaticamente in una cartella che solitamente è «Scrivania» oppure «Scaricati» all'interno della propria cartella home.</p></item>
 
   <item><p>Il file potrebbe essere stato accidentalmente eliminato. Quando un file viene eliminato, esso viene spostato nel cestino dove rimane fino al momento in cui questo viene svuotato manualmente. Per maggiori informazioni su come ripristinare un file eliminato, consultare <link xref="files-recover"/>.</p></item>
 
   <item><p>You might have renamed the file in a way that made the file hidden.
-  Files that start with a <file>.</file> or end with a <file>~</file> are
-  hidden in the file manager. Click the
-  <!-- FIXME: Get a tooltip added for "View options" -->
-  view options button in the <app>Files</app> toolbar and enable <gui>Show
-  Hidden Files</gui> to display them. See <link xref="files-hidden"/> to learn
-  more.</p></item>
+  Files that start with a <file>.</file> or end with a <file>~</file> are hidden
+  in the file manager. Click the
+  <media type="image" src="figures/go-down.png">down</media> button in the file
+  manager toolbar and pick <gui>Show Hidden Files</gui> to display them. See
+  <link xref="files-hidden"/> to learn more.</p></item>
 </list>
 
 </page>

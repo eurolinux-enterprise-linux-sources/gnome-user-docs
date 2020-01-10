@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="problem" id="net-othersedit" xml:lang="gl">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="problem" id="net-othersedit" xml:lang="gl">
   <info>
     <link type="guide" xref="net-problem"/>
     <link type="seealso" xref="user-admin-explain"/>
 
     <revision pkgversion="3.7.1" version="0.2" date="2012-11-16" status="outdated"/>
-    <revision pkgversion="3.10" date="2013-10-31" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Phil Bull</name>
@@ -17,68 +14,52 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <desc>Debe desmarcar a opción <gui>Dispoñibel para todos os usuarios</gui> nas configuracións de conexión da rede.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2018</mal:years>
+      <mal:years>2011, 2012.</mal:years>
     </mal:credit>
   </info>
 
-  <title>Outros usuarios non poden editar as conexións de rede</title>
+<title>Outros usuarios non poden controlar as conexións de rede</title>
 
-  <p>If you can edit a network connection but other users on your computer
-  can’t, you may have set the connection to be <em>available to all users</em>.
-  This makes it so that everyone on the computer can <em>connect</em> using
-  that connection<!--, but only users
-  <link xref="user-admin-explain">with administrative rights</link> are allowed
-  to change its settings-->.</p>
+<comment>
+<cite date="2012-02-19">shaunm</cite>
+<p>I know there were polkit policy changes. Not sure if this is
+100% on the money for 3.2. Double-check when possible</p>
+</comment>
 
-<!--
-  <p>The reason for this is that, since everyone is affected if the settings
-  are changed, only highly-trusted (administrator) users should be allowed to
-  modify the connection.</p>
+<p>Se pode editar unha conexión de rede pero outros usuarios no seu computador non poden, o máis seguro é que vostede fixera esa conexión <gui>dispoñíbel para todos os usuarios</gui>. Isto fai que todos os usuarios do seu computador poidan <em>conectarse</em> empregando esa conexión, pero só os usuarios con <link xref="user-admin-explain">permisos de administración</link> poden cambiar a configuración.</p>
 
-  <p>If other users really need to be able to change the connection themselves,
-  make it so the connection is <em>not</em> set to be available to everyone on
-  the computer. This way, everyone will be able to manage their own connection
-  settings rather than relying on one set of shared, system-wide settings for
-  the connection.</p>
--->
+<p>A razón de isto é que, xa que todos están afectados polo cambio nesta configuración, só os usuarios con confianza alta (administradores) poderán modificar a conexión.</p>
 
-  <steps>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Network</gui>.</p>
-    </item>
-    <item>
-      <p>Prema en <gui>Rede</gui> para abrir o panel.</p>
-    </item>
-    <item>
-      <p>Seleccione <gui>Wifi</gui> desde a lista da esquerda.</p>
-    </item>
-    <item>
-      <p>Prema o botón <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">preferencias</span></media> para abrir os detalles da conexión.</p>
-    </item>
-    <item>
-      <p>Seleccione <gui>Identidade</gui> desde o panel da esquerda.</p>
-    </item>
-    <item>
-      <p>At the bottom of the <gui>Identity</gui> panel, check the <gui>Make
-      available to other users</gui> option to allow other users to use the
-      network connection.</p>
-    </item>
-    <item>
-      <p>Press <gui style="button">Apply</gui> to save the changes.</p>
-    </item>
-  </steps>
+<p>Se outros usuarios realmente precisan cambiar a conexión por si mesmos, faga que a conexión <em>non</em> estea dispoñíbel para todos. Desta forma todos poderán configurar a súa propia configuración fronte a usar unha conexión global do sistema e compartida.</p>
+
+<steps>
+ <title>Fágao para que a conexión non se comparta nunca máis</title>
+ <item>
+  <p>Prema sobre o nome da barra de enderezos e seleccione <gui>Preferencias</gui>.</p>
+ </item>
+
+ <item>
+  <p>Abrar <gui>Información do sistema</gui> e escolla <gui>Aplicativos predeterminados</gui> da lista no lado esquerdo da xanela.</p>
+ </item>
+
+ <item>
+  <p>Desde a lista despregábel <gui>Nome da rede</gui>, seleccione a conexión que quere que todos poidan manexar/editar por si mesmos e logo prema <gui>Opcións</gui>.</p>
+ </item>
+
+ <item>
+  <p>Terá que escribir o seu contrasinal de administración para cambiar a conexión. Só os usuarios administradores poden facer isto.</p>
+ </item>
+
+ <item>
+  <p>Deseleccione <gui>Dispoñíbel para todos os usuarios</gui> e prema <gui>Gardar</gui>. Agora outros usuarios do computador poderán xestionar a conexión por eles mesmos.</p>
+ </item>
+</steps>
 
 </page>

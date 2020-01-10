@@ -4,9 +4,9 @@
   <info>
     <link type="guide" xref="sound-broken"/>
 
+    <desc>Compruebe que no está silenciado, que los cables están enchufados correctamente y que la tarjeta de sonido se ha detectado.</desc>
+
     <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="final"/>
 
     <credit type="author">
       <name>Proyecto de documentación de GNOME</name>
@@ -14,13 +14,11 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Compruebe que el sonido no está silenciado, que los cables están enchufados correctamente y que la tarjeta de sonido se ha detectado.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2011 - 2018</mal:years>
+      <mal:years>2011 - 2013</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -44,85 +42,68 @@
 
 <title>No puedo oír ningún sonido del equipo</title>
 
-  <p>Si no puede escuchar ningún sonido en su equipo, por ejemplo, cuando intenta reproducir música, siga estos pasos para ver si puede solucionar el problema.</p>
+  <p>Si no puede escuchar ningún sonido en su equipo, por ejemplo, cuando intenta reproducir música, siga estos pasos de solución de problemas para ver si puede solucionar el problema.</p>
 
 <section id="mute">
-  <title>Asegúrese de que el sonido no está silenciado</title>
-
-  <p>Abra el <gui xref="shell-introduction#yourname">menú del sistema</gui> en la parte derecha de la barra superior y asegúrese de que el sonido no esté silenciado o en la posición hacia abajo.</p>
-
-  <p>Algunos equipos portátiles tienen interruptores de silencio en sus teclados, pruebe a pulsar esa tecla para ver si se activa el sonido.</p>
-
-  <p>También debe comprobar que no ha silenciado la aplicación que está usando para reproducir el sonido (por ejemplo, su reproductor de música o su reproductor de películas). La aplicación puede tener un botón de silencio o de volumen en su ventana principal, por lo que debe comprobarlo.</p>
-
-  <p>También puede revisar la pestaña <gui>Aplicaciones</gui> en la interfaz de usuario de <gui>Sonido</gui>.</p>
-  <steps>
-    <item>
-    <p>Abra la <app>Configuración</app> desde la vista de <gui>Actividades</gui>.</p>
-    </item>
-    <item>
-      <p>Pulse <gui>Sonido</gui>.</p>
-    </item>
-    <item>
-      <p>Vaya a la pestaña <gui>Aplicaciones</gui> y compruebe que su aplicación está silenciada.</p>
-    </item>
-  </steps>
-
+ <title>Asegúrese de que el sonido no está silenciado</title>
+ <p>Pulse en el icono de sonido en el panel superior (se parece a un altavoz) y asegúrese de que el sonido no esté silenciado o en la posición hacia abajo.</p>
+ <p>Algunos equipos portátiles tienen interruptores de silencio o teclas en sus teclados, pruebe a pulsar esa tecla para ver si se activa el sonido.</p>
+ <p>También debe comprobar que no ha silenciado la aplicación que está usando para reproducir el sonido (por ejemplo, su reproductor de música o reproductor de películas). La aplicación puede tener un botón de silencio o de volumen en su ventana principal, por lo que debe comprobarlo. También puede pulsar en el icono de sonido en el panel superior y seleccionar <gui>Preferencias de sonido</gui>. Cuando la aparezca la ventana de <gui>Sonido</gui>, vaya a la pestaña <gui>Aplicaciones</gui> y compruebe que su aplicación no está silenciada.</p>
 </section>
 
 <section id="speakers">
-  <title>Compruebe que los altavoces estén encendidos y conectados adecuadamente</title>
-  <p>Si su equipo tiene altavoces externos, asegúrese de que están encendidos y de que el volumen está activado. Asegúrese de que el cable del altavoz esté conectado al zócalo de la «salida» en la parte posterior del equipo. Esta toma es, por lo general, de color verde claro.</p>
+ <title>Compruebe que los altavoces estén encendidos y conectados adecuadamente</title>
+ <p>Si su equipo tiene altavoces externos, asegúrese de que están encendidos y que el volumen está activado. Asegúrese de que el cable del altavoz esté conectado al zócalo de la «salida» en la parte posterior del equipo. Esta toma es por lo general de color verde claro.</p>
 
-  <p>Algunas tarjetas de sonido son capaces de cambiar el zócalo que usan para la salida (de los altavoces) y la entrada (desde el micrófono, por ejemplo). El zócalo de salida puede ser diferente cuando se ejecuta GNU/Linux, Windows o Mac OS. Pruebe a conectar el cable del altavoz a los diferentes zócalos de audio en el equipo sucesivamente, para ver si funciona.</p>
+ <p>Algunas tarjetas de sonido son capaces de cambiar el zócalo que usan para la salida (de los altavoces) y la entrada (desde el micrófono, por ejemplo). El zócalo de salida puede ser diferente cuando se ejecuta GNU/Linux en vez de Windows o Mac OS. Intente conectar el cable del altavoz a los diferentes zócalos de audio en el equipo sucesivamente, para ver si funciona.</p>
 
  <p>Una última cosa que comprobar es que el cable de sonido esté conectado correctamente en la parte trasera de los altavoces. Algunos altavoces tienen más de una entrada.</p>
 </section>
 
 <section id="device">
-  <title>Compruebe que está seleccionado el dispositivo de sonido correcto</title>
-
-  <p>Algunos equipos tienen varios «dispositivos de sonido» instalados. Algunos de estos son capaces de hacer salir el sonido y otros no, así que usted debe comprobar que tiene seleccionado el correcto. Esto podría implicar algún ensayo y error para elegir el correcto.</p>
-
-  <steps>
-    <item>
-      <p>Abra la vista de <gui xref="shell-introduction#activities">Actividades</gui> y empiece a escribir <gui>Sonido</gui>.</p>
-    </item>
-    <item>
-      <p>Pulse en <gui>Sonido</gui> para abrir el panel.</p>
-    </item>
-    <item>
-      <p>En la pestaña <gui>Salida</gui>, cambie la configuración del <gui>Perfil</gui> para el dispositivo seleccionado y reproduzca un sonido para comprobar que funciona. Puede necesitar ir a través de la lista y probar cada perfil.</p>
-
-      <p>Si eso no funciona, puede intentar hacer lo mismo con cualquiera de los dispositivos que se muestran.</p>
-    </item>
-  </steps>
-
+ <title>Compruebe que está seleccionado el dispositivo de sonido correcto</title>
+ <p>Algunos equipos tienen varios «dispositivos de sonido» instalados. Algunos de estos son capaces de hacer salir el sonido y otros no, así que usted debe comprobar que tiene seleccionado el correcto. Esto podría implicar algún ensayo y error para elegir el correcto.</p>
+ <steps>
+  <item>
+   <p>Pulse en el icono de sonido en el panel superior y seleccione <gui>Preferencias de sonido</gui>.</p>
+  </item>
+  <item>
+   <p>En la ventana de <gui>Sonido</gui> que aparece, vaya a la pestaña <gui>Salida</gui>. Tome nota de qué dispositivo y perfil están seleccionados (para que pueda volver a la selección predeterminada si el cambio no funciona).</p>
+  </item>
+  <item>
+   <p>Para el dispositivo seleccionado, intentar cambiar el perfil; reproducir un sonido después de cambiar el perfil, para comprobar que funciona. Puede necesitar ir a través de la lista y probar cada perfil.</p>
+  </item>
+  <item>
+   <p>Si eso no funciona, puede intentar hacer lo mismo con cualquiera de los dispositivos que se muestran.</p>
+  </item>
+  <item>
+   <p>Intente cambiar la opción <gui>Conector</gui> en la pestaña <gui>Salida</gui>.</p>
+  </item>
+ </steps>
 </section>
 
 <section id="hardware-detected">
-
  <title>Compruebe que la tarjeta de sonido se detectó correctamente.</title>
+ <p>Puede que su tarjeta de sonido no se haya detectado correctamente. Si ha sucedido esto, el equipo va a pensar que no es capaz de reproducir el sonido. Una posible razón para que no se detecte la tarjeta correctamente es que los controladores de la tarjeta no están instalados.</p>
+ <steps>
+  <item>
+   <p>Vaya a la vista de <gui>Actividades</gui> y abra una Terminal.</p>
+  </item>
+  <item>
+   <p>Escriba <cmd>aplay -l</cmd> y pulse <key>Intro</key>.</p>
+  </item>
+  <item>
+   <p>Se mostrará una lista de dispositivos. Si no hay ningún <gui>dispositivo hardware de reproducción</gui>, su tarjeta no se ha detectado.</p>
+  </item>
+ </steps>
 
-  <p>Puede que su tarjeta de sonido no se haya detectado correctamente porque los controladores de la tarjeta no estén instalados. Puede necesitar instalar manualmente los controladores de la tarjeta. Cómo hacer esto depende del tipo de tarjeta que tenga.</p>
+ <p>Si no se detecta su tarjeta de sonido, puede que tenga que instalar manualmente los controladores. La forma de hacerlo dependerá de la tarjeta que tenga.</p>
 
-  <p>Ejecute el comando <cmd>lspci</cmd> en la terminal para obtener más información acerca de su tarjeta de sonido:</p>
-  <steps>
-    <item>
-      <p>Vaya a la vista de <gui>Actividades</gui> y abra una Terminal.</p>
-    </item>
-    <item>
-      <p>Ejecute <cmd>lspci</cmd> como <link xref="user-admin-explain">superusuario</link>; o bien escriba <cmd>sudo lspci</cmd> y escriba su contraseña, o escriba <cmd>su</cmd>, introduzca la contraseña de <em>root</em> (administrador) y luego escriba <cmd>lspci</cmd>.</p>
-    </item>
-    <item>
-      <p>Compruebe si se muestra un <em>controlador de sonido</em> o un <em>dispositivo de sonido</em>: en ese caso, debería ver el número de serie y el modelo de la tarjeta de sonido. También <cmd>lspci -v</cmd> muestra una lista con información más detallada.</p>
-    </item>
-  </steps>
+ <p>Puede ver que tarjeta de sonido tiene, usando el comando <cmd>lspci</cmd> en el terminal. Debe ejecutar <cmd>lspci</cmd> como <link xref="user-admin-explain">superusuario</link>; teclee <cmd>sudo lspci</cmd> y su contraseña, o <cmd>su</cmd>, introduzca la contraseña de <em>root</em> (administrador), luego teclee <cmd>lspci</cmd>. Observe si se lista un <em>controlador de audio</em> o <em>dispositivo de audio</em> que tendrá la marca de la tarjeta de sonido y el número de modelo. <cmd>lspci -v</cmd> le mostrará una lista con más información.</p>
 
-  <p>Puede que encuentre y pueda instalar los controladores para su tarjeta. Lo mejor es pedir instrucciones en los foros de soporte (o similares) para su distribución de GNU/Linux.</p>
+ <p>Puede que encuentre y sepa instalar los controladores para su tarjeta. Lo mejor es pedir instrucciones en los foros de soporte (o similares) para su distribución de GNU/Linux.</p>
 
-  <p>Si no puede conseguir los controladores para la tarjeta de sonido, es posible que prefiera comprar una tarjeta de sonido nueva. Puede obtener tarjetas de sonido que se puedan instalar en el equipo y tarjetas de sonido externas USB.</p>
-
+ <p>Si no puede conseguir los controladores para la tarjeta de sonido, es posible que prefiera comprar una tarjeta de sonido nueva. Puede obtener tarjetas de sonido que se puedan instalar en el equipo y tarjetas de sonido externas USB.</p>
 </section>
 
 </page>

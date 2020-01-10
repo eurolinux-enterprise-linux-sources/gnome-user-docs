@@ -18,7 +18,6 @@
     </credit>
 
     <revision pkgversion="3.4.0" date="2012-02-19" status="review"/>
-    <revision pkgversion="3.13.91" date="2014-09-05" status="review"/>
 
     <desc>Pārbaudiet, vai jūsu cietajam diskam nav problēmu, lai pārliecinātos, ka ar to viss ir kārtībā.</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -35,18 +34,18 @@
 <steps>
  <title>Pārbaudiet jūsu diska veselību, izmantojot “Disku” lietotni</title>
 
-  <item>
-    <p>Atveriet lietotni <app>Diski</app> no <gui>Aktivitāšu</gui> pārskata.</p>
-  </item>
-  <item>
-    <p>Izvēlieties disku, kuru vēlaties pārbaudīt krātuvju ierīču saraksta pa kreisi. Diska informācija un status tiks parādīts.</p>
-  </item>
-  <item>
-    <p>Spiediet uz izvēlnes pogas un izvēlieties <gui>SMART dati un paštesti…</gui>. <gui>Kopējais novērtējums</gui> jābūt “Disks ir kārtībā”.</p>
-  </item>
-  <item>
-    <p>Skatiet vairāk informācijas zem <gui>SMART atribūti</gui>, vai spiediet <gui style="button">Sākt paštestu</gui> pogu un palaidiet paštestu.</p>
-  </item>
+ <item>
+  <p>Atveriet <app>Disku</app> lietotni no <gui>Aktivitāšu</gui> pārskata.</p>
+ </item>
+ <item>
+  <p>Izvēlieties disku, kuru vēlaties pārbaudīt no <gui>Krātuves ierīces</gui> saraksta. Diska informācija un status parādīsies zem <gui>Dzinis</gui>.</p>
+ </item>
+ <item>
+  <p><gui>SMART Status</gui> vajadzētu paziņot "Disks ir veselīgs".</p>
+ </item>
+ <item>
+  <p>Spiediet <gui>SMART Dati</gui> pogu, lai apskatītu vairāk informācijas par ierīci, vai lai palaistu paštestēšanu.</p>
+ </item>
 
 </steps>
 
@@ -56,9 +55,9 @@
 
  <title>Ko darīt, ja disks nav veselīgs?</title>
 
-  <p>Pat ja <gui>Kopējais novērtējums</gui> parāda, ka disks <em>nav</em> veselīgs, trauksmei varētu nebūt pamata. Tomēr būtu vēlams sagatavot <link xref="backup-why">rezerves kopiju</link>, lai novērstu datu zaudēšanu.</p>
+  <p>Pat ja <gui>SMART Status</gui> parāda, ka disks <em>nav</em> veselīgs, trauksmei varētu nebūt pamata. Tomēr būtu vēlams sagatavot <link xref="backup-why">rezerves kopiju</link>, lai novērstu datu zaudēšanu.</p>
 
-  <p>Ja statuss paziņo “Pre-fail”, tad disks joprojām ir samērā veselīgs, bet ir atklātas nolietošanās pazīmes, kas nozīmē, ka var rasties kļūda tuvākajā nākotnē. Ja cietais disks (vai dators) ir vairākus gadus vecs, jums ir lielāka iespēja redzēt šo ziņojumu vismaz dažās veselības pārbaudēs. Jums regulāri vajadzētu <link xref="backup-how">veidot rezerves kopijas svarīgajām datnēm</link> un periodiski pārbaudīt diska statusu, lai pārliecinātos vai nekļūst sliktāk.</p>
+  <p>Ja statuss paziņo "Pre-fail", tad disks joprojām ir samērā veselīgs, bet ir atklātas nolietošanās pazīmes, kas nozīmē, ka var rasties kļūda tuvākajā nākotnē. Ja cietais disks (vai dators) ir vairākus gadus vecs, jums ir lielāka iespēja redzēt šo ziņojumu vismaz dažās veselības pārbaudēs. Jums regulāri vajadzētu <link xref="backup-how">veidot rezerves kopijas svarīgajām datnēm</link> un periodiski pārbaudīt diska statusu, lai pārliecinātos vai nekļūst sliktāk.</p>
 
   <p>Ja stāvoklis pasliktinās,ieteicams aiznest datoru/cieto disku profesionālim pilnīgākai diagnostikai vai remontam.</p>
 

@@ -6,8 +6,6 @@
     <link type="seealso" xref="shell-keyboard-shortcuts"/>
 
     <revision pkgversion="3.7.5" version="0.2" date="2013-02-23" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.20" date="2016-08-13" status="candidate"/>
 
     <credit type="author">
       <name>Michael Hill</name>
@@ -27,12 +25,18 @@
        <email>kittykat3756@gmail.com</email>
     </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
     <desc>Uporaba programov in namizja brez miške.</desc>
   </info>
 
   <title>Krmarjenje s tipkami</title>
+
+  <comment>
+    <cite date="2012-03-14" href="mailto:shaunm@gnome.org">Shaun McCance</cite>
+    <p>Do <em>NOT</em> use <code>ui:expanded</code> on this page. I know it's
+    tempting, but the target audience for this page is people who cannot use
+    a mouse, and having to expand sections when you're just figuring out how
+    to drive things with the keyboard is a burden.</p>
+  </comment>
 
   <p>Ta stran opisuje krmarjenje s tipkovnico za ljudi, ki ne morejo uporabiti miške ali druge kazalne naprave ali za tiste, ki želijo tipkovnico uporabljati kolikor je le mogoče. Za tipkovne bližnjice, ki so uporabne za vse uporabnike, si oglejte <link xref="shell-keyboard-shortcuts"/>.</p>
 
@@ -53,6 +57,7 @@
     <td><p>Smerne tipke</p></td>
     <td>
       <p>Premika izbiro med predmeti v enem nadzorniku ali med zbirko pvoezanih nadzornikov. Uporabite smerne tipke za osredotočenje na gumbe v orodni vrstici, izbiro predmetov v seznamskem ali ikonskem pogledu ali izbiro izbrinega gumba iz skupine.</p>
+      <p>V drevesnem pogledu izberite tipki leve in desne puščice za zlaganje in razširitev predmetov s podrejenimi predmeti.</p>
     </td>
   </tr>
   <tr>
@@ -62,10 +67,6 @@
   <tr>
     <td><p><keyseq><key>Shift</key>Smerne tipke</keyseq></p></td>
     <td><p>V seznamskem ali ikonskem pogledu izberite vse predmete iz trenutno izbranega predmeta na predmet, ki je na novo v žarišču.</p></td>
-    <td><p>In a tree view, items that have children can be expanded or collapsed,
-    to show or hide their children: expand by pressing
-    <keyseq><key>Shift</key><key>→</key></keyseq>, and collapse by
-    pressing <keyseq><key>Shift</key><key>←</key></keyseq>.</p></td>
   </tr>
   <tr>
     <td><p><key>Preslednica</key></p></td>
@@ -126,8 +127,7 @@
   </tr>
   <tr>
     <td><p><keyseq><key>Super</key><key>M</key></keyseq></p></td>
-    <td><p><link xref="shell-notifications#messagetray">Open the message
-    tray.</link> Press <key>Esc</key> to close.</p></td>
+    <td><p><link xref="shell-notifications#messagingtray">Odprite pladenj s sporočili.</link> Pritisnite <key>ubežnico</key>, da ga zaprete.</p></td>
   </tr>
 </table>
 
@@ -140,10 +140,7 @@
   <tr>
     <td><p><keyseq><key>Alt</key><key>F5</key></keyseq> or
     <keyseq><key>Super</key><key>↓</key></keyseq></p></td>
-    <td><p>Restore a maximized window to its original size. Use
-    <keyseq><key>Alt</key><key>F10</key></keyseq> to maximize.
-    <keyseq><key>Alt</key><key>F10</key></keyseq> both maximizes and
-    restores.</p></td>
+    <td><p>Obnovite razpeto okno na njegovo izvirno velikost. Za razpenjanje uporabite <keyseq><key>Alt</key> <key>F10</key></keyseq>. <keyseq><key>Alt</key><key>F10</key></keyseq> tako razpne in skrči okna.</p></td>
   </tr>
   <tr>
     <td><p><keyseq><key>Alt</key><key>F7</key></keyseq></p></td>
@@ -154,8 +151,6 @@
     <td><p>Spremeni velikost trenutnega okna. Pritisnite<keyseq><key>Alt</key><key>F8</key></keyseq> in nato uporabite smerne tipke za spremembo velikosti okna. Pritisnite <key>Enter</key> za končanje spreminjanja velikosti okna ali <key>Esc</key> za njegovo vrnitev na izvirno velikost.</p></td>
   </tr>
   <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-updown"/>
-  <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-left"/>
-  <include xmlns="http://www.w3.org/2001/XInclude" href="shell-keyboard-shortcuts.page" xpointer="super-shift-right"/>
   <tr>
     <td><p><keyseq><key>Alt</key><key>F10</key></keyseq> or
     <keyseq><key>Super</key><key>↑</key></keyseq></p>

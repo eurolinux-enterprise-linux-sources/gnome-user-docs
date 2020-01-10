@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="user-add" xml:lang="sr">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="user-add" xml:lang="sr">
 
   <info>
     <link type="guide" xref="user-accounts#manage" group="#first"/>
-
-    <revision pkgversion="3.8" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.13.92" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-
+    <link type="seealso" xref="user-addguest"/>
+    <desc>Додајте нове кориснике тако да неко други може да се пријави на рачунар.</desc>
+    <!-- Setting 3.4.0 version to final for release, but we need to do something
+         about the various comments in here, so incomplete for 3.4.1.
+    -->
+    <revision pkgversion="3.8.0" version="0.3" date="2013-03-09" status="candidate"/>
     <credit type="author">
       <name>Гномов пројекат документације</name>
       <email>gnome-doc-list@gnome.org</email>
@@ -21,56 +21,61 @@
       <name>Мајкл Хил</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Екатерина Герасимова</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Додајте нове кориснике тако да неко други може да се пријави на рачунар.</desc>
   </info>
 
   <title>Додајте налог новог корисника</title>
 
+<comment>
+  <cite date="2012-02-19">shaunm</cite>
+  <p>We need a note in here about password hints. Share content
+  with user-changepassword</p>
+</comment>
+
+<comment>
+  <cite date="2012-03-24">shaunm</cite>
+  <p>Let's add a "Disable account" page. Click the account, click the dots
+  next to "Password", select "Disable this account" from "Type".</p>
+</comment>
+
+<comment>
+<cite date="2012-03-24">shaunm</cite>
+<p>Much of the password dialog simply does not work:</p>
+<list>
+<item><p><gui>Choose a password at next login</gui> does nothing</p></item>
+<item><p><gui>Log in without a password</gui> does nothing</p></item>
+<item><p><gui>Enable this account</gui> does nothing (and it's not even
+clear to me what it should do):
+<link href="https://bugzilla.gnome.org/show_bug.cgi?id=655914">665914</link></p></item>
+<item><p><gui>Hint</gui> does nothing:
+<link href="https://bugzilla.gnome.org/show_bug.cgi?id=647912">647912</link>,
+<link href="https://bugzilla.gnome.org/show_bug.cgi?id=643445">643445</link></p></item>
+</list>
+</comment>
+
   <p>Можете да додате више корисничких налога на ваш рачунар. Доделите један налог свакој особи у вашем домаћинству или предузећу. Сваки корисник има своју личну фасциклу, документа, и подешавања.</p>
 
-  <p>Потребна су вам <link xref="user-admin-explain">администраторска права</link> за додавање корисничких налога.</p>
+<steps>
+  <item><p>Кликните на ваше име на горњој траци и изаберите <gui>Подешавања</gui>.</p></item>
+  <item><p>Отворите <gui>Корисници</gui>.</p></item>
 
-  <steps>
-    <item>
-      <p>Отворите преглед <gui xref="shell-introduction#activities">Активности</gui> и почните да куцате <gui>Корисници</gui>.</p>
-    </item>
-    <item>
-      <p>Кликните на <gui>Корисници</gui> да отворите панел.</p>
-    </item>
-    <item>
-      <p>Притисните <gui style="button">Откључај</gui> у горњем десном углу и унесите вашу лозинку.</p>
-    </item>
-    <item>
-      <p>Притисните дугме <gui style="button">+</gui>, испод списка налога на левој страни, да додате налог новог корисника.</p>
-    </item>
-    <item>
-      <p>Ако желите да нови корисник има <link xref="user-admin-explain">администраторски приступ</link> рачунару, за врсту налога изаберите <gui>Администратор</gui>.</p>
-      <p>Администратори могу да додају и да бришу кориснике, инсталирају софтвер и управљачке програме и да измене датум и време.</p>
-    </item>
-    <item>
-      <p>Унесите име и презиме новог корисника. Корисничко име ће бити попуњено на основу имена и презимена. Ако вам се не свиђа предложено, можете да га измените.</p>
-    </item>
-    <item>
-      <p>Можете изабрати да подесите лозинку за новог корисника, или да оставите да је он сам подеси приликом првог пријављивања.</p>
-      <p>Ако изаберете да сада подесите лозинку, можете да притиснете иконицу за <gui style="button"><media its:translate="no" type="image" src="figures/system-run-symbolic.svg" width="16" height="16">
-      <span its:translate="yes">створите лозинку</span></media></gui> да сами створите насумичну лозинку.</p>
-    </item>
-    <item>
-      <p>Кликните <gui>Додај</gui>.</p>
-    </item>
-  </steps>
+  <item><p>Потребна су вам <link xref="user-admin-explain">Администраторска права</link> да додате корисничке налоге. Кликните <gui>Откључај</gui> у горњем десном углу и унесите вашу лозинку или лозинку администратора, када будете били упитани.</p></item>
 
-  <p>Ако желите да измените лозинку након стврања налога, изаберите налог, <gui style="button">откључајте</gui> панел и притисните на стање текуће лозинке.</p>
+  <item><p>На списку налога на левој страни, кликните на дугме <gui style="button">+</gui> да додате налог новог корисника.</p></item>
 
-  <note>
-    <p>У панелу <gui>Корисници</gui>, можете да кликнете на слику поред имена корисника да подесите слику за налог. Ова слика ће бити приказана у прозору пријављивања. Гном обезбеђује неке слике које можете да користите, или можете да изаберете неку вашу или да направите слику вашом веб камерицом.</p>
-  </note>
+  <item><p>Ако желите да нови корисник има <link xref="user-admin-explain">администраторски приступ</link> рачунару, изаберите <gui>Администратор</gui> за врсту налога. Администратори могу да додају и да бришу кориснике, инсталирају програме и управљачке програме, и да измене датум и време.</p></item>
+
+  <item><p>Унесите име и презиме новог корисника. Корисничко име ће бити попуњено на основу имена и презимена. Основно је вероватно у реду, али га можете изменити ако желите.</p></item>
+
+  <item><p>Кликните <gui>Додај</gui>.</p></item>
+
+  <item><p>Налог је на почетку искључен све док не одлучите шта ћете са корисничком лозинком. Изаберите нови налог са списка. Под <gui>Опције пријављивања</gui> кликните на <gui>Налог је искључен</gui> поред <gui>Лозинке</gui>. Изаберите <gui>Постави лозинку сада</gui> из падајућег списка <gui>Радња</gui>, и дајте кориснику да упише своју лозинку у пољима <gui>Нова лозинка</gui> и <gui>Потврди лозинку</gui>. Погледајте <link xref="user-goodpassword"/>.</p>
+  <p>Можете такође да кликнете на дугме са десне стране поља <gui>Нова лозинка</gui> да изаберете насумично створену безбедну лозинку. Другима ће бити тешко да погоде ове лозинке, али ће бити тешке и за памћење, зато будите пажљиви.</p></item>
+  <item><p>Кликните <gui>Промени</gui>.</p></item>
+</steps>
+
+<note><p>У прозору <gui>Кориснички налози</gui> можете да кликнете на слику поред имена корисника да подесите слику за налог. Ова слика ће бити приказана у прозору пријављивања. Гном обезбеђује неке слике које можете да користите, или можете да изаберете неку вашу или да направите слику вашом веб камерицом.</p>
+</note>
 
 </page>

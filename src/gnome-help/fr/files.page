@@ -1,28 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="files" xml:lang="fr">
-
+<page xmlns="http://projectmallard.org/1.0/" xmlns:if="http://projectmallard.org/if/1.0/" type="guide" style="task" id="files" xml:lang="fr">
   <info>
-    <link type="guide" xref="index" group="files"/>
 
-    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
-    <revision pkgversion="3.10" date="2013-11-07" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-02" status="review"/>
-    <revision pkgversion="3.16" date="2015-01-27" status="review"/>
+    <link type="guide" xref="index" group="files"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
       <email>shaunm@gnome.org</email>
     </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Jim Campbell</name>
-      <email>jcampbell@gnome.org</email>
-    </credit>
 
     <title type="link" role="trail">Fichiers</title>
+
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
 
     <desc><link xref="files-search">Recherche</link>, <link xref="files-delete">suppression de fichiers</link>, <link xref="files#backup">sauvegarde</link>, <link xref="files#removable">gestion des disques amovibles</link>…</desc>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
@@ -42,13 +31,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Alain Lojewski</mal:name>
       <mal:email>allomervan@gmail.com</mal:email>
-      <mal:years>2011-2015</mal:years>
+      <mal:years>2011, 2012</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Julien Hardelin</mal:name>
       <mal:email>jhardlin@orange.fr</mal:email>
-      <mal:years>2011, 2013</mal:years>
+      <mal:years>2011</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -74,24 +63,25 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Alexandre Franke</mal:name>
-      <mal:email>alexandre.franke@gmail.com</mal:email>
-      <mal:years>2015</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Fichiers, dossiers &amp; recherches</title>
+<title>Fichiers, dossiers &amp; recherches</title>
 
-<section id="common-file-tasks">
+<media type="image" src="figures/nautilus.png" style="floatend floatright" width="250" height="219" if:test="!target:mobile">
+  <p>Le gestionnaire de fichiers <app>Nautilus</app></p>
+</media>
+
+<links type="topic" style="linklist nodesc bold">
   <title>Tâches courantes</title>
-  <links type="topic" style="2column"/>
-</section>
+</links>
 
-<section id="more-file-tasks">
-  <title>Davantage de tâches concernant les fichiers</title>
-  <links type="topic" style="2column"/>
+<links type="topic" groups="more" style="linklist nodesc bold">
+  <title>Autres rubriques</title>
+</links>
+
+<section id="documents">
+  <title>Documents</title>
+  <links type="topic"/>
 </section>
 
 <section id="removable">

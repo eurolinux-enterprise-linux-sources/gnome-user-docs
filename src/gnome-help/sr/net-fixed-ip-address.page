@@ -1,64 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="net-fixed-ip-address" xml:lang="sr">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="net-fixed-ip-address" xml:lang="sr">
   <info>
     <link type="guide" xref="net-wired"/>
     <link type="seealso" xref="net-findip"/>
 
     <revision pkgversion="3.4.0" date="2012-03-13" status="final"/>
-    <revision pkgversion="3.15" date="2014-12-04" status="final"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
-    <revision pkgversion="3.24" date="2017-03-26" status="final"/>
 
     <credit type="author">
       <name>Џим Кембел</name>
       <email>jwcampbell@gmail.com</email>
     </credit>
-    <credit type="author">
-      <name>Екатерина Герасимова</name>
-      <email>kittykat3756@gmail.com</email>
-      <years>2014</years>
-    </credit>
-    <credit type="editor">
-      <name>Мајкл Хил</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <desc>Коришћење статичке ИП адресе може да олакша обезбеђивање неких мрежних услуга са вашег рачунара.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   </info>
 
   <title>Направите везу са сталном ИП адресом</title>
 
-  <p>Већина мрежа ће сама да додели <link xref="net-what-is-ip-address">ИП адресу</link> и остале детаље вашем рачунару када се прикључите на мрежу. Ови детаљи могу да се промене с времена на време, али ви ћете можда желети да имате сталну ИП адресу за рачунар тако да знате увек која је његова адреса (на пример, ако је то сервер датотека).</p>
+ <p>Већина мрежа ће сама да додели <link xref="net-what-is-ip-address">ИП адресу</link> и остале детаље вашем рачунару када се прикључите на мрежу. Ови детаљи могу да се промене с времена на време, али ви ћете можда желети да имате сталну ИП адресу за рачунар тако да знате увек која је његова адреса (на пример, ако је то сервер датотека).</p>
+  <p>Да дате вашем рачунару сталну (статичку) ИП адресу:</p>
 
-  <steps>
-    <title>Да дате вашем рачунару сталну (статичку) ИП адресу:</title>
-    <item>
-      <p>Отворите преглед <gui xref="shell-introduction#activities">Активности</gui> и почните да куцате <gui>Мрежа</gui>.</p>
-    </item>
-    <item>
-      <p>Кликните на <gui>Мрежа</gui> да отворите панел.</p>
-    </item>
-    <item>
-      <p>У левом окну, изаберите мрежну везу којој желите да доделите сталну адресу. Ако се каблом прикључите на мрежу, кликните <gui>Жичана</gui>, затим кликните на дугме <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">подешавања</span></media> у доњем десном углу панела. За <gui>Бежичну</gui> везу, дугме <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">подешавања</span></media> ће се налазити поред радне мреже.</p>
-    </item>
-    <item>
-      <p>Кликните на <gui>ИПв4</gui> или <gui>ИПв6</gui> у левом окну и измените <gui>Адресе</gui> на <em>Ручно</em>.</p>
-    </item>
-    <item>
-      <p>Укуцајте <gui xref="net-what-is-ip-address">Адресу</gui> и <gui>Мрежни пролаз</gui>, као и одговарајућу <gui>Мрежну маску</gui>.</p>
-    </item>
-    <item>
-      <p>У одељку <gui>ДНС</gui>, пребаците <gui>Самостално</gui> на <gui>ИСКЉ.</gui>. Унесите ИП адресу ДНС сервера који желите да користите. Унесите додатне адресе ДНС сервера користећи дугме <gui>+</gui>.</p>
-    </item>
-    <item>
-      <p>У одељку <gui>Руте</gui>, пребаците <gui>Самостално</gui> на <gui>ИСКЉ.</gui>. Унесите <gui>Адресу</gui>, <gui>Мрежну маску</gui>, <gui>Мрежни пролаз</gui> и <gui>Метрички</gui> за руту коју желите да користите. Унесите додатне руте користећи дугме <gui>+</gui>.</p>
-    </item>
-    <item>
-      <p>Притисните <gui>Примени</gui>. Мрежна веза ће сада имати сталну ИП адресу.</p>
-    </item>
-  </steps>
+<steps>
+<item><p>Кликните на <gui>иконицу мреже</gui> на <gui>горњој траци</gui> и изаберите <gui>Подешавања мреже</gui>.</p></item>
+<item><p>Изаберите мрежну везу са списка (<gui>Жичана</gui> или <gui>Бежична</gui>) и кликните <gui>Подеси</gui>.</p></item>
+<item><p>Кликните на језичак <gui>ИПв4 подешавања</gui> и измените <gui>Начин</gui> на <em>Ручно</em>.</p></item>
+<item><p>Ако никакви подаци о вези нису наведени на списку <gui>Адресе</gui>, или ако желите да подесите нову везу, кликните <gui>Додај</gui>.</p></item>
+<item><p>Унесите податке за <em>ИП адресу</em>, <em>Мрежну маску</em>, и <em>Мрежни пролаз</em> у одговарајућа поља. Како ћете ово изабрати зависиће од вашег подешавања мреже; постоје нарочита правила која одлучују које ИП адресе и мрежне маске су исправне за дату мрежу.</p></item>
+<item><p>Ако је неопходно, унесите адресу <em>Сервера назива домена</em> у поље <gui>ДНС сервери</gui>. Ово је ИП адреса сервера који претражује називе домена; већина мрежних удружења и интернет достављача имају посвећене ДНС сервере.</p></item>
+<item><p>Кликните <gui>Сачувај</gui>. Мрежна веза ће сада имати сталну ИП адресу.</p></item>
+</steps>
 
 </page>

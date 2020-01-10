@@ -7,7 +7,6 @@
     <desc>Tiedostojen avaaminen, suorittaminen ja roskakorin toiminta.</desc>
 
     <revision pkgversion="3.5.92" version="0.2" date="2012-09-19" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-29" status="candidate"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -25,22 +24,12 @@
       <name>Sindhu S</name>
       <email>sindhus@live.in</email>
     </credit>
-    <credit type="editor">
-      <name>David King</name>
-      <email>amigadave@amigadave.com</email>
-    </credit>
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Timo Jyrinki</mal:name>
       <mal:email>timo.jyrinki@iki.fi</mal:email>
       <mal:years>2012.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Jiri Grönroos</mal:name>
-      <mal:email>jiri.gronroos+l10n@iki.fi</mal:email>
-      <mal:years>2012-2018.</mal:years>
     </mal:credit>
   </info>
 
@@ -79,14 +68,14 @@ executable text files are handled, and the trash behavior. Click
     <p><gui>View executable text files when they are opened</gui></p>
   </item>
   <item>
-    <p><gui>Kysy joka kerta</gui></p>
+    <p><gui>Ask each time</gui></p>
   </item>
  </list>
 
  <p>If <gui>Ask each time</gui> is selected, a dialog will pop up asking if you
  wish to run or view the selected text file.</p>
 
- <p>Executable text files are also called <em>scripts</em>. All scripts in the
+ <p>Executable text files are also called scripts. All scripts in
  <file>~/.local/share/nautilus/scripts</file> folder will appear in the context
  menu for a file under the <gui style="menuitem">Scripts</gui> submenu. When a
  script is executed from a local folder, all selected files will be pasted to
@@ -97,7 +86,7 @@ executable text files are handled, and the trash behavior. Click
     <p>Navigate to the desired folder.</p>
   </item>
   <item>
-    <p>Valitse haluttu tiedosto.</p>
+    <p>Select the desired file.</p>
   </item>
   <item>
     <p>Right click on the file to open the context menu and select the desired
@@ -111,7 +100,6 @@ executable text files are handled, and the trash behavior. Click
  </note>
 
 </section>
-
 <section id="trash">
 <info>
 <link type="seealso" xref="files-delete"/>
@@ -121,8 +109,16 @@ executable text files are handled, and the trash behavior. Click
 
 <terms>
  <item>
-  <title><gui>Kysy ennen roskakorin tyhjennystä</gui></title>
+  <title><gui>Kysy ennen roskakorin tyhjennystä tai tiedostojen poistoa</gui></title>
   <p>Tämä valinta on oletuksena valittu. Roskakorin tyhjennyksen yhteydessä voit valita roskakorin tyhjennyksen tai tiedostojen poistaminen.</p>
+ </item>
+ <item>
+  <title><gui>Include a Delete command that bypasses Trash</gui></title>
+  <p>Selecting this option will add a <gui>Delete</gui> item to the menu that
+  pops up when you right-click on an item in the <app>Files</app> application.</p>
+<note style="warning">
+<p>Tiedoston poistaminen käyttämällä <gui>Poista</gui>-vaihtoehtoa ohittaa roskakorin käytön. Kohde poistetaan järjestelmänlaajuisesti, ja sen palauttaminen ei ole mahdollista.</p>
+</note>
  </item>
 </terms>
 </section>

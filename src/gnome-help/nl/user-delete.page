@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="user-delete" xml:lang="nl">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="user-delete" xml:lang="nl">
 
   <info>
     <link type="guide" xref="user-accounts#manage"/>
-    <link type="seealso" xref="user-add"/>
-    <link type="seealso" xref="user-admin-explain"/>
-
+    <desc>Verwijder gebruikers die niet langer gebruik maken van uw computer.</desc>
     <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Tiffany Antopolski</name>
@@ -27,50 +22,26 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Verwijder gebruikers die niet langer gebruik maken van uw computer.</desc>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Justin van Steijn</mal:name>
-      <mal:email>justin50@live.nl</mal:email>
-      <mal:years>2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hannie Dumoleyn</mal:name>
-      <mal:email>hannie@ubuntu-nl.org</mal:email>
-      <mal:years>2017</mal:years>
-    </mal:credit>
   </info>
-
   <title>Een gebruikersaccount verwijderen</title>
 
-  <p>U kunt <link xref="user-add">meerdere gebruikersaccounts aan uw computer toevoegen</link>. Als iemand uw computer niet meer gebruikt, dan kunt u het account van die gebruiker verwijderen.</p>
+  <p>U kunt meerdere gebruikersaccounts aan uw computer toevoegen. Hoe dat moet ziet u in <link xref="user-add"/>. Als iemand niet langer uw computer gebruikt, dan kunt u het account van die gebruiker verwijderen.</p>
 
-  <p>Om gebruikersaccounts te kunnen verwijderen dient u <link xref="user-admin-explain">beheerder</link> te zijn.</p>
-
-  <steps>
-    <item>
-      <p>Open het <gui xref="shell-introduction#activities">Activiteiten</gui>-overzicht en typ <gui>Gebruikers</gui>.</p>
-    </item>
-    <item>
-      <p>Klik op <gui>Gebruikersaccounts</gui> om het paneel te openen.</p>
-    </item>
-    <item>
-      <p>Klik op <gui style="button">Ontgrendelen</gui> rechtsboven in de hoek en voer uw wachtwoord in wanneer daar om gevraagd wordt.</p>
-    </item>
-    <item>
-      <p>Selecteer de gebruiker die u wilt verwijderen en druk op de knop <gui style="button">-</gui>, onder de lijst met accounts links, om die gebruikersaccount te verwijderen.</p>
-    </item>
-    <item>
-      <p>Iedere gebruiker heeft zijn eigen persoonlijke map voor het bewaren van diens bestanden en instellingen. U kunt ervoor kiezen de persoonlijke map van de gebruiker te behouden of te verwijderen. Klik op <gui>Bestanden verwijderen</gui> als u er zeker van bent dat ze niet meer gebruikt worden en u schijfruimte wilt vrijmaken. Deze bestanden zullen permanent verwijderd worden. Ze kunnen niet teruggehaald worden. Voordat u de bestanden verwijdert kunt u er een reservekopie van maken op een externe opslagapparaat.</p>
-    </item>
-  </steps>
-
+<steps>
+  <item><p>Click your name on the top bar, then click the picture next to your
+  name to open the <gui>Users</gui> window.</p></item>
+  <item><p>Click <gui>Unlock</gui> in the top right corner and type your
+  password to make changes. You must be an administrative user to delete user
+  accounts.</p></item>
+  <item><p>Select the user you want to delete and click the
+  <gui style="button">-</gui> button.</p></item>
+  <item><p>Each user has their own home folder for their files and settings.
+  You can choose to keep or delete the user's home folder. Click <gui>Delete
+  Files</gui> if you're sure they won't be used anymore and you need to free up
+  disk space. These files are permanently deleted. They can't be recovered. You
+  may want to back up the files to an external drive or CD before deleting
+  them.</p></item>
+</steps>
 </page>

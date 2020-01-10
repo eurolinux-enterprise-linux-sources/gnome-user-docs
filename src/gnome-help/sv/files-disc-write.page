@@ -1,82 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="files-disc-write" xml:lang="sv">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="files-disc-write" xml:lang="sv">
   <info>
-    <link type="guide" xref="files#more-file-tasks"/>
-
-    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
+    <link type="guide" xref="files" group="more"/>
 
     <credit type="author">
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <revision pkgversion="3.4.0" date="2012-02-19" status="outdated"/>
 
-    <desc>Spara undan filer och dokument på en blank cd eller dvd med hjälp av en cd/dvd-brännare.</desc>
+    <desc>Put files and documents onto a blank CD or DVD using a CD/DVD burner.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Nylander</mal:name>
       <mal:email>po@danielnylander.se</mal:email>
       <mal:years>2012</mal:years>
     </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Sebastian Rasmussen</mal:name>
-      <mal:email>sebras@gmail.com</mal:email>
-      <mal:years>2014, 2015, 2016</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Anders Jonsson</mal:name>
-      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
-      <mal:years>2016, 2017</mal:years>
-    </mal:credit>
   </info>
 
-  <title>Skriv filer till en cd- eller dvd-skiva</title>
+  <title>Skriv filer till en cd eller dvd-skiva</title>
 
-  <p>Du kan spara filer på en blank skiva genom att använda <gui>Cd/dvd-skaparen</gui>. Alternativet att skapa en cd eller dvd kommer att synas i filhanteraren så snart du placerat en cd i din cd/dvd-skrivare. Filhanteraren låter dig överföra filer till andra datorer eller utföra <link xref="backup-why">säkerhetskopiering</link> genom att spara filer på en blank skiva. För att skriva filer till en cd eller dvd:</p>
+  <p>You can put files onto a blank disc by using <gui>CD/DVD Creator</gui>. The
+ option to create a CD or DVD will appear in the file manager as soon as you
+ place the CD into your CD/DVD writer. The file manager lets you transfer files
+ to other computers or perform <link xref="backup-why">backups</link> by putting
+ files onto a blank disc. To write files to a CD or DVD:</p>
 
   <steps>
     <item>
-      <p>Mata in en tom skiva i din cd-/dvd-brännarenhet.</p></item>
+     <p>Place an empty disc into your CD/DVD writable drive.</p></item>
     <item>
-      <p>I aviseringen <gui>Tom cd/dvd-r-skiva</gui> soom visas i botten på skärmen, välj <gui>Öppna med Cd/dvd-skaparen</gui>. Mappfönstret <gui>Cd/dvd-skaparen</gui> kommer att öppnas.</p>
-      <p>(Du kan också klicka på <gui>Tom cd/dvd-r skiva</gui> under <gui>Enheter</gui> i filhanterarens sidopanel.)</p>
+     <p>In the <gui>Blank CD/DVD-R Disc</gui> notification that pops up
+     at the bottom of the screen, select <gui>Open with CD/DVD Creator</gui>.
+     The <gui>CD/DVD Creator</gui> folder window will open.</p>
+     <p>(You can also click on <gui>Blank CD/DVD-R Disc</gui> under
+     <gui>Devices</gui> in the file manager sidebar.)</p>
     </item>
     <item>
-      <p>I fältet <gui>Skivnamn</gui>, skriv in ett namn på skivan.</p>
+     <p>In the <gui>Disc Name</gui> field, type a name for the disc.</p>
     </item>
     <item>
-      <p>Dra eller kopiera de önskade filerna in i fönstret.</p>
+     <p>Drag or copy the desired files into the window.</p>
     </item>
     <item>
-      <p>Klicka på <gui>Skriv till skiva</gui>.</p>
+     <p>Click <gui>Write to Disc</gui>.</p>
     </item>
     <item>
-      <p>Under <gui>Välj en skiva att skriva till</gui>, välj den tomma skivan.</p>
-      <p>(Du kan välja <gui>Avbildningsfil</gui> istället. Detta kommer att spara filerna i en <em>skivavbildning</em> vilken kommer att sparas på din dator. Du kan sedan bränna den skivavbildningen på en tom skiva vid ett senare tillfälle.)</p>
+     <p>Under <gui>Select a disc to write to</gui>, choose the blank disc.</p>
+     <p>(You could choose <gui>Image file</gui> instead. This will put the files
+     in a <em>disc image</em>, which will be saved on your computer. You can
+     then burn that disc image onto a blank disc at a later date.)</p>
     </item>
     <item>
-      <p>Klicka på <gui>Egenskaper</gui> om du vill justera brännhastighet, plats för tillfälliga filer eller andra inställningar. Standardinställningarna bör duga fint.</p>
+     <p>Click <gui>Properties</gui> if you want to adjust burning speed, the
+     location of temporary files, and other options. The default options should
+     be fine.</p>
     </item>
     <item>
-      <p>Klicka på knappen <gui>Bränn</gui> för att börja skrivningen.</p>
-      <p>Om <gui>Bränn flera kopior</gui> markeras kommer du tillfrågas om ytterligare skivor.</p>
+     <p>Click the <gui>Burn</gui> button to begin recording.</p>
+     <p>If <gui>Burn Several Copies</gui> is selected, you will be prompted for
+     additional discs.</p>
     </item>
     <item>
-      <p>När skivbränningen är färdig kommer skivan matas ut automatiskt. Välj <gui>Gör fler kopior</gui> eller <gui>Stäng</gui> för att avsluta.</p>
+     <p>When the disc burning is complete, it will eject automatically. Choose
+     <gui>Make More Copies</gui> or <gui>Close</gui> to exit.</p>
     </item>
   </steps>
 
 <section id="problem">
-  <title>Om skivan inte brändes korrekt</title>
+ <title>If the disc wasn't burned properly</title>
+  <p>Sometimes the computer doesn't record the data correctly, and you won't be
+ able to see the files you put onto the disc when you insert it into a computer.</p>
 
-  <p>Ibland bränns skivan inte korrekt, och du kommer inte kunna se filerna på skivan när du matar in den i en dator.</p>
-
-  <p>Om detta händer, försöka att bränna skivan igen men använd en lägre brännhastighet, till exempel 12x istället för 48x. Att bränna på lägre hastigheter är mer tillförlitligt. Du kan välja hastighet genom att klicka på <gui>Egenskaper</gui> i fönstret <gui>Cd/dvd-skaparen</gui>.</p>
-
+  <p>In this case, try burning the disc again but use a lower burning speed, e.g.
+ 12x rather than 48x. Burning at slower speeds is more reliable. You can choose
+ the speed by clicking the <gui>Properties</gui> button in the
+ <gui>CD/DVD Creator</gui> window.</p>
 </section>
 
 </page>

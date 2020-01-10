@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="tip" id="net-macaddress" xml:lang="gl">
-
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="tip" id="net-macaddress" xml:lang="gl">
   <info>
     <link type="guide" xref="net-general"/>
 
     <revision pkgversion="3.7.1" version="0.2" date="2012-11-16" status="outdated"/>
-    <revision pkgversion="3.10" date="2013-10-30" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Shaun McCance</name>
@@ -20,19 +17,14 @@
       <name>Michael Hill</name>
       <email>mdhillca@gmail.com</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
     <desc>O código único asignado ao hardware de rede.</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2018</mal:years>
+      <mal:years>2011, 2012.</mal:years>
     </mal:credit>
   </info>
 
@@ -43,32 +35,12 @@
   <p>Un enderezo MAC consiste en seis conxuntos de dous caracteres, cada un deles separados por dous puntos. <code>00:1B:44:11:3A:B7</code> é un exemplo dun enderezo MAC.</p>
 
   <p>Pode identificar de maneira sinxela o enderezo MAC do seu propio hardware de rede:</p>
-
   <steps>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Network</gui>.</p>
-    </item>
-    <item>
-      <p>Prema en <gui>Rede</gui> para abrir o panel.</p>
-    </item>
-    <item>
-      <p>Choose which device, <gui>Wi-Fi</gui> or <gui>Wired</gui>, from
-      the left pane.</p>
-      <p>The MAC address for the wired device will be displayed as the
-      <gui>Hardware Address</gui> on the right.</p>
-      
-      <p>Click the
-      <media its:translate="no" type="image" src="figures/emblem-system.png"><span its:translate="yes">settings</span></media>
-      button to see the MAC address for the wireless device displayed as the
-      <gui>Hardware Address</gui> in the <gui>Details</gui> panel.</p>
-    </item>
+    <item><p>Prema sobre o nome da barra de enderezos e seleccione <gui>Preferencias</gui>.</p></item>
+    <item><p>Abrar <gui>Información do sistema</gui> e escolla <gui>Aplicativos predeterminados</gui> da lista no lado esquerdo da xanela.</p></item>
+    <item><p>O seu enderezo MAC mostrarase como o <gui>Enderezo hardware</gui>.</p></item>
   </steps>
 
-  <p>In practice, you may need to modify or “spoof” a MAC address. For example,
-  some internet service providers may require that a specific MAC address be
-  used to access their service. If the network card stops working, and you need
-  to swap a new card in, the service won’t work anymore. In such cases, you
-  would need to spoof the MAC address.</p>
+  <p>Na práctica, podería necesitar <link xref="net-editcon">modificar ou «suplantar» o enderezo MAC</link>. Por exemplo, algúns fornecedores de servizos de internet requiren o uso dun enderezo MAC específico para acceder ao seu servizo. Se a súa tarxeta de rede non funciona e debe substituíla por unha nova, o servizo non funcionará de novo. Nese caso, debe suplantar o enderezo MAC.</p>
 
 </page>

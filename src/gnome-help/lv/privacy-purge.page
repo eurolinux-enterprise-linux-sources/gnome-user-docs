@@ -1,64 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="privacy-purge" xml:lang="lv">
 
-  <info>
-    <link type="guide" xref="privacy"/>
-    <link type="guide" xref="files#more-file-tasks"/>
+<info>
+  <link type="guide" xref="privacy"/>
+  <desc>Set how often your trash and temporary files will be cleared
+  from your computer.</desc>
+  <revision pkgversion="3.8" date="2013-03-06" status="candidate"/>
+  <credit type="author">
+    <name>Jim Campbell</name>
+    <email>jwcampbell@gmail.com</email>
+  </credit>
+  <credit type="editor">
+    <name>Michael Hill</name>
+    <email>mdhillca@gmail.com</email>
+  </credit>
+</info>
+  <title>Purge trash &amp; temporary files</title>
 
-    <revision pkgversion="3.10" date="2013-09-29" status="review"/>
-    <revision pkgversion="3.12" date="2014-03-23" status="candidate"/>
-    <revision pkgversion="3.14" date="2014-10-12" status="candidate"/>
-    <revision pkgversion="3.18" date="2015-09-30" status="candidate"/>
-
-    <credit type="author">
-      <name>Jim Campbell</name>
-      <email>jwcampbell@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Michael Hill</name>
-      <email>mdhillca@gmail.com</email>
-    </credit>
-    <credit type="editor">
-      <name>Shaun McCance</name>
-      <email>mdhillca@gmail.com</email>
-      <years>2015</years>
-    </credit>
-
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Iestatiet, cik bieži datorā tiks tīrīta miskaste un izmestas pagaidu datnes.</desc>
-  </info>
-
-  <title>Iztīrīt miskasti un pagaidu datnes</title>
-
-  <p>Jūsu miskastes iztīrīšana un pagaidu datņu dzēšana izņem nevajadzīgās datnes no jūsu datora, un arī atbrīvo vietu uz cietā diska. Jūs varat arī pašrocīgi iztīrīt miskasti un izmest pagaidu datnes, bet jūs varat arī iestatīt datoru, lai tas notiktu automātiski.</p>
-
-  <p>Pagaidu datnes ir datnes, ko fonā automātiski izveido lietotnes.Tās var uzlabot veiktspēju, sniedzot lejupielādētu vai izskaitļotu datu kopiju.</p>
+  <p>Clearing out your trash and temporary files removes
+  unwanted and unneeded files from your computer, and also frees up more
+  space on your hard drive. You can manually empty your trash and clear
+  your temporary files, but you can also set your computer to automatically
+  do this for you.</p>
 
   <steps>
-    <title>Automātiski tīrīt miskasti un izmest pagaidu datnes</title>
-    <item>
-      <p>Atveriet <gui xref="shell-introduction#activities">Aktivitāšu</gui> pārskatu un sāciet rakstīt <gui>Privātums</gui>.</p>
-    </item>
-    <item>
-      <p>Spiediet <gui>Privātums</gui>, lai atvērtu paneli.</p>
-    </item>
-    <item>
-      <p>Izvēlieties <gui>Iztīrīt miskasti un pagaidu datnes</gui>.</p>
-    </item>
-    <item>
-      <p>Iestatiet vienu vai abus slēdžus <gui>Automātiski iztukšot miskasti</gui> vai <gui>Automātiski izmest pagaidu datnes</gui> uz <gui>|</gui>.</p>
-    </item>
-    <item>
-      <p>Iestatīt, cik bieži vēlaties iztīrīt <em>Miskasti</em> un <em>Pagaidu datnes</em>, mainot vērtību <gui>Izmest pēc</gui>.</p>
-    </item>
-    <item>
-      <p>Izmantojiet pogas <gui>Iztukšot miskasti</gui> vai <gui>Izmest pagaidu datnes</gui>, lai uzreiz veiktu šīs darbības.</p>
-    </item>
+    <title>Automatically empty your trash and clear your temporary files after
+    a set period of time:</title>
+    <item><p>Click your name on the <gui>top bar</gui>.</p></item>
+    <item><p>Select <gui>Settings</gui> and click the <gui>Privacy</gui>
+    icon.</p></item>
+    <item><p>Select <gui>Purge Trash &amp; Temporary Files</gui>.</p></item>
+    <item><p>Set the <gui>Automatically Purge Trash</gui> or
+    <gui>Automatically Purge Temporary Files</gui> sliders to <gui>On</gui>.
+    </p></item>
+    <item><p>Set how often you would like your <em>Trash</em> and
+    <em>Temporary Files</em> to be purged by changing the
+    <gui>Purge After</gui> value.</p></item>
+    <item><p>Spiediet <gui>Aizvērt</gui>.</p></item>
   </steps>
 
-  <note style="tip">
-    <p>Jūs varat nekavējoties un pilnībā izdzēst datnes, izmantojot miskasti. Skatiet <link xref="files-delete#permanent"/>, lai uzzinātu vairāk.</p>
-  </note>
-
+  <note style="warning"><p>Use the <em>Purge After: Immediately</em> setting
+  with caution. Setting your trash to be purged immediately will
+  cause any files you delete to skip your trash and be permanently
+  deleted. Files that are deleted are much more difficult to recover than files
+  that are in your trash.</p>
+  
+  <p>Unless you have a specific need to immediately delete files from
+  your trash, it is probably safer to set a longer <gui>Purge After</gui>
+  value.</p></note>
+  
 </page>

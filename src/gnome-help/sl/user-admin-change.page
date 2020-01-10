@@ -1,69 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="user-admin-change" xml:lang="sl">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="user-admin-change" xml:lang="sl">
 
   <info>
+
     <link type="guide" xref="user-accounts#privileges"/>
     <link type="seealso" xref="user-admin-explain"/>
 
+    <desc>Uporabnike, ki lahko spreminjajo sistem, lahko dodate tako, da jim dodate skrbniška dovoljenja.</desc>
+
     <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-22" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Dokumentacijski projekt GNOME</name>
       <email>gnome-doc-list@gnome.org</email>
     </credit>
-    <credit type="editor">
-      <name>Ekaterina Gerasimova</name>
-      <email>kittykat3756@gmail.com</email>
-    </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>You can allow users to make changes to the system by giving them
-    administrative privileges.</desc>
   </info>
 
-  <title>Sprememba kdo ima skrbniška dovoljenja</title>
+<title>Sprememba kdo ima skrbniška dovoljenja</title>
 
-  <p>Administrative privileges are a way of deciding who can make changes to
-  important parts of the system. You can change which users have administrative
-  privileges and which ones do not. They are a good way of keeping your system
-  secure and preventing potentially damaging unauthorized changes.</p>
+  <p>Skrbniška dovoljenja so način za odločanje kdo lahko naredi spremembe pomembnih delov sistema. Spremenite lahko uporabnike, ki imajo ali nimajo skrbniških dovoljenj. To je dober način za ohranjanje vašega sistema varnega in preprečevanje morebitnih škodljivih neoverjenih sprememb.</p>
 
-  <p>You need <link xref="user-admin-explain">administrator privileges</link>
-  to change account types.</p>
+<steps>
+ <item>
+    <p>Click your name on the top bar, then click the picture next to your name
+ to open the <gui>Users</gui> window.</p>
+ </item>
 
-  <steps>
-    <item>
-      <p>Open the <gui xref="shell-introduction#activities">Activities</gui> overview and
-      start typing <gui>Users</gui>.</p>
-    </item>
-    <item>
-      <p>Click <gui>Users</gui> to open the panel.</p>
-    </item>
-    <item>
-      <p>Press <gui style="button">Unlock</gui> in the top right corner and
-      type in your password when prompted.</p>
-    </item>
-    <item>
-      <p>Izberite uporabnika katerega dovoljenja želite spremeniti.</p>
-    </item>
-    <item>
-      <p>Click the label <gui>Standard</gui> next to <gui>Account Type</gui>
-      and select <gui>Administrator</gui>.</p>
-    </item>
-    <item>
-      <p>The user’s privileges will be changed when they next log in.</p>
-    </item>
-  </steps>
+ <item>
+  <p>Da odklenete nastavitve računa, kliknite <gui>Odkleni</gui> in vnesite svoje geslo. (Da nekomu dodelite skrbniške pravice, morate imeti tudi sami skrbniške pravice.)</p>
+ </item>
 
-  <note>
-    <p>The first user account on the system is usually the one that has
-    administrator privileges. This is the user account that was created when
-    you first installed the system.</p>
-    <p>Na sistemu ni dobro imeti preveč uporabnikov s pravico <gui>Skrbnik</gui>.</p>
-  </note>
+ <item>
+  <p>Izberite uporabnika katerega dovoljenja želite spremeniti.</p>
+  </item>
 
+ <item><p>Kliknite na oznako <gui>Običajen</gui> poleg <gui>Vrsta računa</gui> in nato izberite <gui>Skrbnik</gui>.</p>
+ </item>
+
+
+ <item>
+  <p>Zaprite okno Uporabniški računi. Dovoljenja uporabnikov bodo spremenjena ob njihovi naslednji prijavi.</p>
+  </item>
+</steps>
+
+<note>
+ <p>Prvi uporabniški račun na sistemu ima običajno skrbniška dovoljenja. To je račun, ki je bil ustvarjen ob prvi namestitvi sistema.</p>
+ <p>Na sistemu ni dobro imeti preveč uporabnikov s pravico <gui>Skrbnik</gui>.</p>
+</note>
+
+  <comment>
+   <cite date="2012-02-19" href="mailto:gnome-doc-list@gnome.org">GNOME
+ Documentation Project</cite>
+   <p>Explain how admin privileges can be given to other people, or removed.
+ Warn the reader about how it's unwise to have too many admins on a system.</p>
+  </comment>
+	
 </page>

@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="clock-set" xml:lang="gl">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="clock-set" xml:lang="gl">
 
   <info>
-    <link type="guide" xref="clock" group="#first"/>
-
+    <link type="guide" xref="clock"/>
+    <desc>Prema no reloxo na barra superior e seleccione <gui>Preferencias de data e hora</gui> para cambiar a data e/ou hora.</desc>
     <revision pkgversion="3.8.0" date="2013-03-09" status="candidate"/>
-    <revision pkgversion="3.10" date="2013-11-01" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="final"/>
 
     <credit type="author">
       <name>Proxecto de documentación de GNOME</name>
@@ -18,13 +16,11 @@
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
-
-    <desc>Prema nas <gui>Preferencias de data e hora</gui> para cambiar a data e hora.</desc>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Fran Dieguez</mal:name>
       <mal:email>frandieguez@gnome.org</mal:email>
-      <mal:years>2011-2018</mal:years>
+      <mal:years>2011, 2012.</mal:years>
     </mal:credit>
   </info>
 
@@ -32,24 +28,23 @@
 
   <p>Se a data e hora mostradas na barra superior son incorrectas, ou teñen o formato incorrecto, pode cambialas:</p>
 
-  <steps>
-    <item>
-      <p>Abra a vista de <gui xref="shell-introduction#activities">Actividades</gui> e comece a escribir <gui>Data e hora </gui>.</p>
-    </item>
-    <item>
-      <p>Prema en <gui>Data e hora</gui> para abrir o panel.</p>
-    </item>
-    <item>
-      <p>Se configurou <gui>Data e hora automática</gui> a <gui>Activado</gui>, a súa data e hora debería actualizarse automaticamente se conta con conexión a internet. Para actualizar a súa data e hora manualmente, <gui>Desactivea</gui>.</p>
-    </item> 
-    <item>
-      <p>Prema <gui>Data e hora</gui>, para axustar a data e hora.</p>
-    </item>
-    <item>
-      <p>Pode cambiar o formato da hora mostrada seleccionando os formatos <gui>24 horas</gui> ou <gui>AM/PM</gui> para o <gui>Formato da hora</gui>.</p>
-    </item>
-  </steps>
-
-  <p>Tamén pode querer <link xref="clock-timezone">estabelecer o fuso horario manualmente</link>.</p>
+<steps>
+ <item>
+  <p>Prema no reloxo situado no centro da barra superior e seleccione <gui>Preferencias de data e hora</gui>.</p>
+ </item>
+ <item>
+  <p>Pode que precise <gui>Desbloquear</gui> e escribir o <link xref="user-admin-explain">contrasinal de administrador</link>.</p>
+ </item>
+ <item>
+  <p>Axuste a data e hora premendo nas frechas para elixir a hora e minuto. Pode elixir o ano, mes e día desde as listas despregabeis.</p>
+ </item>
+ <item>
+  <p>Se quere, pode ter o seu reloxo actualizado automáticamente activado á <gui>Hora de rede</gui>.</p>
+  <p>Cando <em>hora de rede</em> estea activado, o computador sincronizará periodicamente o seu reloxo con un reloxo moi preciso en Internet, de maneira que non terá que facelo manualmente. Isto só funcionará se está conectado a Internet.</p>
+ </item>
+ <item>
+  <p>Tamén pode cambiar o formato da hora mostrada seleccionando os formatos <gui>24 horas</gui> ou <gui>AM/PM</gui></p>
+ </item>
+</steps>
 
 </page>

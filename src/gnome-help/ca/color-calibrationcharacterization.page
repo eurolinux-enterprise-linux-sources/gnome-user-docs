@@ -5,7 +5,7 @@
 
     <link type="guide" xref="color#calibration"/>
 
-    <desc>El calibratge i la caracterització són coses completament diferents.</desc>
+    <desc>Calibration and characterization are different things entirely.</desc>
 
     <credit type="author">
       <name>Richard Hughes</name>
@@ -20,17 +20,49 @@
     </mal:credit>
   </info>
 
-  <title>Quina és la diferència entre el calibratge i la caracterització?.</title>
-  <p>Moltes persones es confonen inicialment sobre la diferència entre calibratge i caracterització. El calibratge és el procés de modificar el comportament del color d'un dispositiu. Normalment es fa amb dos mecanismes:</p>
+  <title>What's the difference between calibration and characterization?</title>
+  <p>
+    Many people are initially confused about the difference between calibration
+    and characterization.
+    Calibration is the process of modifying the color behavior of a device.
+    This is typically done using two mechanisms:
+  </p>
   <list>
-    <item><p>Canviant els controls o la configuració interna que té</p></item>
-    <item><p>Aplicant corbes als seus canals de color</p></item>
+    <item><p>Changing controls or internal settings that it has</p></item>
+    <item><p>Applying curves to its color channels</p></item>
   </list>
-  <p>La idea del calibratge és posar un dispositiu en un estat definit pel que fa a la seva resposta al color. Moltes vegades s'utilitza com a mitjà per mantenir un comportament reproduïble. Normalment, el calibratge s'emmagatzema en formats de fitxer específics del dispositiu o fitxers específics del sistema que registren la configuració del dispositiu o les corbes de calibratge per canal.</p>
-  <p>La caracterització (o perfilat) <em>grava</em> la manera en què un dispositiu reprodueix o respon al color. Normalment, el resultat s'emmagatzema en un perfil ICC de dispositiu. Aquest perfil no modifica de cap manera el color. Permet que un sistema com un CMM (Mòdul de gestió de colors) o una aplicació de color, modifiqui el color quan es combini amb un altre perfil de dispositiu. Només coneixent les característiques de dos dispositius, es pot aconseguir la transferència de la representació del color de l'un  a l'altre.</p>
+  <p>
+    The idea of calibration is to put a device in a defined state with regard
+    to its color response.
+    Often this is used as a day to day means of maintaining reproducible behavior.
+    Typically calibration will be stored in device or systems specific file
+    formats that record the device settings or per-channel calibration curves.
+  </p>
+  <p>
+    Characterization (or profiling) is <em>recording</em> the way
+    a device reproduces or responds to color.
+    Typically the result is stored in a device ICC profile.
+    Such a profile does not in itself modify color in any way.
+    It allows a system such as a CMM (Color Management Module) or a color aware
+    application to modify color when combined with another device profile.
+    Only by knowing the characteristics of two devices, can a way of
+    transferring color from one device representation to another be achieved.
+  </p>
   <note>
-    <p>Tingueu en compte que una caracterització (perfil) només serà vàlida per a un dispositiu si es troba en el mateix estat de calibratge que quan es va caracteritzar.</p>
+    <p>
+      Note that a characterization (profile) will only be valid for a device
+      if it's in the same state of calibration as it was when it was
+      characterized.
+    </p>
   </note>
-  <p>En el cas dels perfils de visualització, hi ha certa confusió addicional perquè, sovint, la informació de calibratge s'emmagatzema al perfil per obtenir-ne la comoditat. Per convenció, s'emmagatzema en una etiqueta anomenada etiqueta <em>vcgt</em>.  Encara que s'emmagatzema al perfil, cap de les eines o aplicacions basades en ICC normals ho tenen en compte ni en fan res. El mateix passa amb les eines i aplicacions de calibratge de visualització típiques, que no tindran en compte ni faran res amb la informació de la caracterització de la informació ICC (perfil).</p>
+  <p>
+    In the case of display profiles there is some additional confusion because
+    often the calibration information is stored in the profile for convenience.
+    By convention it is stored in a tag called the <em>vcgt</em> tag.
+    Although it is stored in the profile, none of the normal ICC based tools
+    or applications are aware of it, or do anything with it.
+    Similarly, typical display calibration tools and applications will not be
+    aware of, or do anything with the ICC characterization (profile) information.
+  </p>
 
 </page>

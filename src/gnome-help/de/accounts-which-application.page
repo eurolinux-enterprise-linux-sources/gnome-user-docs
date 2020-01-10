@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="accounts-which-application" xml:lang="de">
-
   <info>
-    <link type="guide" xref="accounts"/>
-    <link type="seealso" xref="accounts-disable-service"/>
-
-    <revision pkgversion="3.8.2" date="2013-05-22" status="review"/>
-    <revision pkgversion="3.13.92" date="2014-09-20" status="review"/>
-    <revision pkgversion="3.18" date="2015-09-28" status="incomplete"/>
+    <revision pkgversion="3.8.2" version="0.2" date="2013-05-22" status="review"/>
 
     <credit type="author copyright">
       <name>Baptiste Mille-Mathias</name>
       <email>baptistem@gnome.org</email>
-      <years>2012, 2013</years>
+      <years>2012-2013</years>
     </credit>
     <credit type="editor">
       <name>Michael Hill</name>
@@ -23,15 +17,21 @@
       <email>ak-47@gmx.net</email>
     </credit>
 
-    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <link type="guide" xref="accounts"/>
+    <link type="seealso" xref="accounts-disable-service"/>
 
     <desc>Anwendungen können die in <app>Online-Konten</app> erstellten Konten und deren angebotene Dienste nutzen.</desc>
-
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Hendrik Knackstedt</mal:name>
-      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
-      <mal:years>2011.</mal:years>
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -41,80 +41,55 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Christian Kirbach</mal:name>
-      <mal:email>christian.kirbach@gmail.com</mal:email>
-      <mal:years>2011-2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Mario Blättermann</mal:name>
-      <mal:email>mario.blaettermann@gmail.com</mal:email>
-      <mal:years>2011-2013, 2017.</mal:years>
-    </mal:credit>
-  
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Benjamin Steinwender</mal:name>
-      <mal:email>b@stbe.at</mal:email>
-      <mal:years>2014.</mal:years>
+      <mal:name>Hendrik Knackstedt</mal:name>
+      <mal:email>hendrik.knackstedt@t-online.de</mal:email>
+      <mal:years>2011.to</mal:years>
     </mal:credit>
   </info>
 
-  <title>Internet-Dienste und Anwendungen</title>
+  <title>Welche Anwendungen machen von Online-Konten Gebrauch?</title>
 
-  <p>Sobald Sie ein Online-Konto hinzugefügt haben, kann jede Anwendung dieses Konto für jeden der verfügbaren Dienste nutzen, sofern Sie bestimmte Dienste nicht <link xref="accounts-disable-service">deaktiviert</link> haben. Verschiedene Dienstanbieter stellen verschiedene Dienste bereit. Diese Seite listet die Dienste und verschiedene Anwendungen auf, die diese bekanntermaßen nutzen.</p>
+  <p><app>Online-Konten</app> können von externen Anwendungen für deren automatische Konfiguration verwendet werden.</p>
 
-  <terms>
-    <item>
-      <title>Kalender</title>
-      <p>Mit dem Kalenderdienst betrachten, fügen Sie hinzu und bearbeiten Sie Termine in einem Internet-Kalender. Er wird durch die Anwendungen <app>Kalender</app>, <app>Evolution</app> und <app>California</app> verwendet.</p>
-    </item>
+  <section id="accounts-google-services">
+   <title>Mit einem Google-Konto</title>
 
-    <item>
-      <title>Unterhaltung</title>
-      <p>Mit dem Unterhaltungsdienst unterhalten Sie sich mit Ihren Kontakten auf beliebten Plattformen für Sofortnachrichten. Er wird von der Anwendung <app>Empathy</app> verwendet.</p>
-    </item>
+   <list>
+    <item><p>In der E-Mail-Anwendung <app>Evolution</app> wird Ihr E-Mail-Konto automatisch hinzugefügt, so dass Ihre E-Mail-Nachrichten abgerufen werden, Ihre Kontakte verfügbar werden und der Kalender die Einträge des Google-Kalenders anzeigt.</p></item>
+    <item><p><app>Empathy</app>, the instant messaging application. Your online
+    account will be added and you will be able to communicate with your friends.
+    </p></item>
+    <item><p>In <app>Kontakte</app> sehen Sie Ihre Kontakte und können sie bearbeiten.</p></item>
+    <item><p>In <app>Dokumente</app> können Sie auf Ihre Online-Dokumente zugreifen und diese anzeigen.</p></item>
+   </list>
+  </section>
 
-    <item>
-      <title>Kontakte</title>
-      <p>Der Kontakte-Dienst ermöglicht Ihnen den Zugriff auf Details Ihrer Kontakte bei verschiedenen Diensten. Er wird von Anwendungen wie <app>Kontakte</app> und <app>Evolution</app> verwendet.</p>
-    </item>
+  <section id="accounts-windows-services">
+   <title>Mit Windows-Live-, Facebook- oder Twitter-Konten</title>
 
-    <item>
-      <title>Dokumente</title>
-      <p>Der Dokumente-Dienst ermöglicht Ihnen die Ansicht Ihrer Online-Dokumente, zum Beispiel in Google Docs. Sie können Ihre Dokumente mit der Anwendung <app>Dokumente</app> betrachten.</p>
-    </item>
+   <p><app>Empathy</app> kann diese Konten nutzen, um Sie online zu halten und Sofortnachrichtenverbindungen mit Ihren Kontakten und Freunden herzustellen.</p>
+  </section>
 
-    <item>
-      <title>Dateien</title>
-      <p>Der Dateien-Dienst fügt entfernte Orte für Dateien hinzu, so als ob Sie sie mit der Funktion <link xref="nautilus-connect">Mit Server verbinden</link> in der Dateiverwaltung hinzugefügt hätten. Sie können auf ferne Dateien sowohl mit der Dateiverwaltung zugreifen als auch über die Dialoge zum Öffnen und Speichern in jeder Anwendung.</p>
-    </item>
+  <section id="account-windows-skydrive">
+   <title>With a SkyDrive account</title>
 
-    <item>
-      <title>E-Mail</title>
-      <p>Mit dem E-Mail-Dienst können Sie E-Mails über einen E-Mail-Dienst wie Google senden und empfangen. Er wird von <app>Evolution</app> verwendet.</p>
-    </item>
+   <p>In <app>Dokumente</app> können Sie auf Ihre Online-Dokumente auf Microsoft SkyDrive zugreifen und diese anzeigen.</p>
+  </section>
 
-<!-- TODO: Not sure what this does. Doesn't seem to do anything in Maps app.
-    <item>
-      <title>Maps</title>
-    </item>
--->
+  <section id="account-exchange">
+   <title>With a Exchange account</title>
 
-    <item>
-      <title>Fotos</title>
-      <p>Mit dem Fotos-Dienst können Sie Ihre Online-Fotos betrachten, zum Beispiel jene, die Sie auf Facebook gepostet haben. Sie können Ihre Fotos mit der Anwendung <app>Fotos</app> betrachten.</p>
-    </item>
+   <p>Once you have created an Exchange account, <app>Evolution</app> will start
+   retrieving mails from this account.</p>
+  </section>
 
-    <item>
-      <title>Drucken</title>
-      <p>Der Drucker-Dienst ermöglicht Ihnen das Senden eines PDFs zu einem Anbieter innerhalb des Druckdialogs jeder Anwendung. Der Anbieter könnte Druckdienste bereitstellen oder einfach als Speicher für das PDF fungieren, so dass Sie es später herunterladen und ausdrucken können.</p>
-    </item>
+  <section id="accounts-ownCloud">
+   <title>With a ownCloud account</title>
 
-    <item>
-      <title>Später lesen</title>
-      <p>Der Später-Lesen-Dienst ermöglicht Ihnen die Speicherung einer Webseite bei externen Diensten, so dass Sie sie später auf einem anderen Gerät lesen können. Derzeit nutzt keine Anwendung diesen Dienst.</p>
-    </item>
+   <p>When an ownCloud account is set up, <app>Evolution</app> is able to
+   access and edit contacts and calendar appointments.</p>
 
-  </terms>
-
+   <p><app>Files</app> and other applications will be able to list and access
+   your online files stored in the ownCloud installation.</p>
+  </section>
 </page>
