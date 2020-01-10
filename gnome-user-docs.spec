@@ -1,7 +1,7 @@
 Summary:        GNOME User Documentation
 Name:           gnome-user-docs
 Version:        3.8.2
-Release:        2%{?dist}
+Release:        4%{?dist}
 License:        CC-BY-SA
 URL:            http://help.gnome.org/
 #VCS: git:git://git.gnome.org/gnome-user-docs
@@ -14,12 +14,15 @@ BuildRequires: gettext
 BuildRequires: itstool
 BuildRequires: yelp-tools
 
+Patch0: gnome-user-docs-3.8.2_translation-updates.patch
+
 %description
 This package contains end-user documentation for the GNOME desktop
 environment.
 
 %prep
 %setup -q -n gnome-user-docs-%{version}
+%patch0 -p2 -b .translation-updates
 
 %build
 %configure
@@ -34,6 +37,13 @@ make install DESTDIR=$RPM_BUILD_ROOT INSTALL="install -p"
 %doc COPYING AUTHORS NEWS README
 
 %changelog
+* Wed Jan 29 2014 Ray Strode <rstrode@redhat.com> 3.8.2-4
+- update tranlsations
+  Resolves: #1030353
+
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 3.8.2-3
+- Mass rebuild 2013-12-27
+
 * Fri Jul 12 2013 Matthias Clasen <mclasen@redhat.com> -3.8.2-2
 - Rebuild
 
